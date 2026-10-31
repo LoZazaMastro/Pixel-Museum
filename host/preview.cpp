@@ -54,7 +54,7 @@ int main(int argc,char**argv){
     const bool onboarding_structure=onboarding_pong||(argc>1&&std::string(argv[1])=="onboarding-structure");
     const bool intro_saved=std::getenv("MUSEUM_HOST_SAVED_ACCESS")!=nullptr;
     const bool collection_e2e=argc>3&&std::string(argv[1])=="collection-end-to-end";
-    const std::string preview_data=collection_e2e?argv[3]:onboarding_structure?(intro_saved?"build/onboarding-offline-saved-data":"build/onboarding-offline-fresh-data"):"build/preview-data";
+    const std::string preview_data=std::filesystem::absolute(collection_e2e?argv[3]:onboarding_structure?(intro_saved?"build/onboarding-offline-saved-data":"build/onboarding-offline-fresh-data"):"build/preview-data").lexically_normal().string();
     std::filesystem::create_directories(preview_data);
     if(onboarding_structure){const auto auth=preview_data+"/youtube-auth.json";if(intro_saved){std::ofstream fixture(auth);fixture<<"{\"offline_metadata_fixture_only\":true}";}else std::filesystem::remove(auth);}
     museum::Screen screen;if(!screen.init(preview_root?preview_root:".",preview_data))return 4;
