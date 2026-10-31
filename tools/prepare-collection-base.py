@@ -81,6 +81,9 @@ def main():
     parameter_path = base / 'sce_sys/param.json'
     parameters = json.loads(parameter_path.read_text(encoding='utf-8'))
     parameters['contentVersion'] = '00.001.001'
+    # /download0 holds the full persistent image collection plus one verified
+    # temporary pack and bounded caches. The stable source dist stays untouched.
+    parameters['downloadDataSize'] = 16384
     parameter_text = json.dumps(parameters, ensure_ascii=False, indent=2) + '\n'
     if parameter_path.read_text(encoding='utf-8') != parameter_text:
         parameter_path.write_text(parameter_text, encoding='utf-8')
@@ -93,6 +96,7 @@ def main():
               'copied_files_this_run': copied,
               'updated_resources': ['content/ui-locales from current source', 'assets/fonts from current source'],
               'contentVersion': '00.001.001',
+              'downloadDataSize': 16384,
               'parameter_override': 'Only staged sce_sys/param.json; published stable dist untouched',
               'files': files, 'bytes': sum(row['bytes'] for row in files),
               'installation_note': 'An internet connection is required for the initial image collection download. Original-quality images are stored persistently for later use. The full preloaded-image package is also available.'}

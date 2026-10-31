@@ -70,8 +70,8 @@ if not re.fullmatch(r"\d{2}\.\d{2}", param.get("masterVersion", "")):
 size = param.get("downloadDataSize")
 if isinstance(size, bool) or not isinstance(size, int) or size < 0:
     raise SystemExit("param.json downloadDataSize must be a non-negative integer")
-if size != 1024:
-    raise SystemExit("Pixel Museum downloadDataSize must be 1024 MiB; it reserves /download0, not package bytes")
+if size != 16384:
+    raise SystemExit("Pixel Museum downloadDataSize must be 16384 MiB for the collection, one temporary pack and caches in /download0")
 category = param.get("applicationCategoryType")
 if (category, param.get("contentBadgeType")) not in {(0, 1), (65536, 2)}:
     raise SystemExit("param.json category and badge must describe a game or media app")

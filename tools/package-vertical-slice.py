@@ -58,7 +58,7 @@ assert any(entry.get("videos") for entry in catalog["entries"]),"Slice needs arc
 assert (source/"eboot.bin").is_file(),"Build native app first"
 param=read(source/"sce_sys/param.json")
 validate_native_profile(param)
-assert param.get("downloadDataSize")==1024,"Reserve 1024 MiB for /download0; source staging metadata is stale"
+assert param.get("downloadDataSize")==16384,"Reserve 16384 MiB for the collection, one temporary pack and caches in /download0; source staging metadata is stale"
 parent=(ROOT/args.output_dir).resolve()
 assert parent.is_relative_to((ROOT/"dist").resolve()),"Stage only below this project's dist directory"
 folder=parent/TITLE

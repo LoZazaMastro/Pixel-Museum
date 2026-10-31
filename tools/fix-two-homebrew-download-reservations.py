@@ -9,7 +9,7 @@ import argparse,io,json,hashlib,datetime
 
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/'build/research/storage-size-urgent-2026-10-23'
-TITLES={'PPSA98427':256,'PPSA70421':1024}
+TITLES={'PPSA98427':256,'PPSA70421':16384}
 EXPECTED_OLD_BYTES=18763546624
 parser=argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--apply',action='store_true')

@@ -13,7 +13,7 @@ def validate_native_profile(param):
         'attribute': 1644167168,
         'attribute2': 0,
         'attribute3': 1048576,
-        'downloadDataSize': 1024,
+        'downloadDataSize': 16384,
         'amm': {
             'multimapVaRangeInGib': 512,
             'pagetableMemorySizeInMib': 256,
