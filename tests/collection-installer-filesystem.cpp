@@ -1,0 +1,39 @@
+// Native manifest regression: unavailable lstat must not bypass first-run setup.
+// SPDX-License-Identifier: GPL-3.0-or-later
+#include "museum/collection_installer.hpp"
+#include "third_party/nlohmann/json.hpp"
+#include <cassert>
+#include <cerrno>
+#include <cstdarg>
+#include <fcntl.h>
+#include <fstream>
+#include <iostream>
+#include <string>
+#include <sys/stat.h>
+#include <unistd.h>
+namespace {std::string denied,unconfirmed;unsigned lstat_calls=0;}
+extern "C" int __real_open(const char*,int,...);
+extern "C" int __wrap_open(const char*path,int flags,...){
+    mode_t mode=0;if(flags&O_CREAT){va_list args;va_start(args,flags);mode=va_arg(args,int);va_end(args);}
+    if(path==denied){errno=EACCES;return -1;}if(path==unconfirmed){errno=ENOENT;return -1;}
+    return flags&O_CREAT?__real_open(path,flags,mode):__real_open(path,flags);
+}
+extern "C" int __wrap_lstat(const char*,struct stat*){++lstat_calls;errno=ENOSYS;return -1;}
+namespace museum::media {bool packaged_images_complete(const std::string&){return false;}}
+int main(){
+    char pattern[]="/tmp/pm-installer-fs-XXXXXX";char*temporary=mkdtemp(pattern);assert(temporary);const std::string root=temporary,path=root+"/collection-packs.json";
+    const auto write=[&](const std::string&name,const std::string&value){std::ofstream stream(name);stream<<value;stream.close();assert(stream);};
+    using C=museum::CollectionInstaller;using P=C::Phase;C installer;
+    const nlohmann::json manifest={{"schema_version",1},{"collection_id","fixture"},{"packs",nlohmann::json::array({{{"id","one"},{"url","https://example.invalid/one.tar"},{"bytes",10240u},{"sha256",std::string(64,'0')},{"format","tar"}}})}};
+    write(path,manifest.dump());assert(installer.configure(path,root+"/data"));assert(installer.snapshot().phase==P::idle);assert(!lstat_calls);
+    denied=path;assert(!installer.configure(path,root+"/data"));auto s=installer.snapshot();assert(s.phase==P::failed&&s.filesystem_errno==EACCES);assert(s.diagnostic.find(path)!=std::string::npos&&s.diagnostic.find("open")!=std::string::npos);assert(!installer.start());denied.clear();
+    unconfirmed=path;assert(!installer.configure(path,root+"/data"));s=installer.snapshot();assert(s.phase==P::failed&&s.filesystem_errno==ENOENT);unconfirmed.clear();
+    write(path,"");assert(!installer.configure(path,root+"/data"));assert(installer.snapshot().phase==P::failed);
+    write(path,"{");assert(!installer.configure(path,root+"/data"));assert(installer.snapshot().phase==P::failed);
+    write(path,std::string((1u<<20)+1,'x'));assert(!installer.configure(path,root+"/data"));s=installer.snapshot();assert(s.phase==P::failed&&s.filesystem_errno==EFBIG);
+    assert(!installer.configure(root,root+"/data"));s=installer.snapshot();assert(s.phase==P::failed&&s.filesystem_errno==EISDIR);
+    assert(!installer.configure(root+"/absent.json",root+"/data"));assert(installer.snapshot().phase==P::unconfigured);
+    assert(!installer.configure(root+"/unavailable/absent.json",root+"/data"));assert(installer.snapshot().phase==P::failed);
+    assert(!lstat_calls);unlink(path.c_str());rmdir(root.c_str());
+    std::cout<<"PASS: lstat unavailable, valid manifest, EACCES, contradictory ENOENT, empty/malformed/oversize/directory, verified legacy absence, unavailable parent\n";
+}

@@ -7,6 +7,21 @@
 #include <cctype>
 
 namespace museum {
+void Screen::handle_language_choice(const hui::InputFrame& input,hui::ui::Feedback& feedback){
+    using hui::Action;using hui::Direction;using hui::audio::Cue;
+    if(input.focus_lost||!input.connected)return;
+    const int previous=language_focus_;
+    if(input.nav==Direction::down||input.nav==Direction::right)language_focus_=std::min(4,language_focus_+1);
+    if(input.nav==Direction::up||input.nav==Direction::left)language_focus_=std::max(0,language_focus_-1);
+    if(previous!=language_focus_)feedback.play(Cue::focus);
+    if(input.is_pressed(Action::confirm)){
+        static constexpr const char* locales[]={"en","it","es","fr","de"};
+        language_=locales[language_focus_];language_chosen_=true;language_choice_=false;
+        theme_choice_=true;theme_confirming_=false;theme_confirm_progress_=0;
+        apply_language();save_settings();feedback.play(Cue::select);
+    }
+}
+
 bool Screen::start_collection_media(){
     if(collection_media_started_)return true;
     if(!cache_.images_from_package(root_,collection_installer_.cache_root())||!cache_.start(data_+"/cache")){
@@ -67,7 +82,9 @@ void Screen::handle_collection_startup(const hui::InputFrame& input,hui::ui::Fee
 
 void Screen::update_collection_startup(float delta){
     const float elapsed=std::isfinite(delta)?std::clamp(delta,0.f,.1f):0.f;
-    dt_=elapsed;collection_elapsed_+=elapsed;
+    dt_=elapsed;
+    if(language_choice_){language_selection_.target=float(language_focus_);language_selection_.update(dt_,reduced_?60.f:16.f);return;}
+    collection_elapsed_+=elapsed;
     if(quit_)return;
     if(!collection_started_){
         collection_started_=true;collection_installer_.start();
@@ -76,6 +93,7 @@ void Screen::update_collection_startup(float delta){
     const int phase=int(state.phase),progress=state.total_bytes?int(std::min(10.,double(state.downloaded_bytes)*10./double(state.total_bytes))):-1;
     if(phase!=collection_phase_log_||progress>collection_progress_log_){
         hui::sys::log("[Museum] collection %s / pack %zu of %zu / %llu of %llu bytes / %s",state.stage.c_str(),state.pack_count?state.pack_index+1:0,state.pack_count,static_cast<unsigned long long>(state.downloaded_bytes),static_cast<unsigned long long>(state.total_bytes),state.error.empty()?"OK":state.error.c_str());
+        if(!state.diagnostic.empty())hui::sys::log("[Museum] collection filesystem errno %d / %s",state.filesystem_errno,state.diagnostic.c_str());
         collection_phase_log_=phase;collection_progress_log_=std::max(collection_progress_log_,progress);
     }
     if(collection_installer_.is_ready()&&!collection_media_error_){

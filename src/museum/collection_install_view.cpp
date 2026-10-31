@@ -58,6 +58,8 @@ void draw_collection_install_view(hui::gfx::DrawList& d,const hui::ui::Fonts& fo
     const bool known=s.progress>=0.f||s.total_bytes>0;
     const float fraction=complete?1.f:std::clamp(s.progress>=0.f?s.progress:(s.total_bytes?float(double(s.downloaded_bytes)/double(s.total_bytes)):0.f),0.f,1.f);
     d.rounded_rect({0,0,1920,1080},0,p.paper);
+    const float arrival=reduced_motion?1.f:std::clamp(time/.32f,0.f,1.f);
+    d.push_opacity(arrival*arrival*(3.f-2.f*arrival));
     logo(d,96,66,6.8f,p.ink);
     ui::text(d,fonts.semibold,"PIXEL MUSEUM",150,93,22,p.ink,Align::left,2);
     d.line(96,139,1824,139,1,p.rule);
@@ -84,7 +86,7 @@ void draw_collection_install_view(hui::gfx::DrawList& d,const hui::ui::Fonts& fo
     const int moving=reduced_motion?count/2:int(time*10.f)%count;
     for(int i=0;i<count;++i){
         auto c=p.ink.with_alpha(.10f);
-        if(known&&!waiting&&float(i)<fraction*count)c=p.ink.with_alpha(.82f);
+        if(known&&float(i)<fraction*count)c=p.ink.with_alpha(.82f);
         if(complete)c=p.ink.with_alpha(.82f);
         else if(waiting||(active&&!known)){if(i>=moving&&i<moving+3)c=p.ink.with_alpha(.45f);}
         else if(active&&fraction<1.f&&i==std::min(count-1,int(fraction*count)))c=Color::rgb(0xc49b51,reduced_motion?.8f:.5f+.35f*std::sin(time*3));
@@ -108,5 +110,6 @@ void draw_collection_install_view(hui::gfx::DrawList& d,const hui::ui::Fonts& fo
         auto style=ui::GlyphStyle::mono(p.ink,Color::rgb(0,0));style.label=p.ink;
         ui::draw_hints(d,fonts,style,hints,count,260,false,l);
     }
+    d.pop_opacity();
 }
 }

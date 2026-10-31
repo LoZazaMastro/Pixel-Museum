@@ -43,8 +43,15 @@ bool safe_relative(const std::string& path){
 bool component(const std::string& value){return !value.empty()&&value.size()<=64&&value!="."&&value!=".."&&value.find_first_not_of("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_.-")==std::string::npos;}
 bool hex_sha(const std::string& value){return value.size()==64&&value.find_first_not_of("0123456789abcdef")==std::string::npos;}
 std::string storage_error(const char*operation,int code=errno){return(code==ENOSPC||code==EDQUOT)?"Not enough free space in collection storage":std::string(operation)+": collection storage error ("+std::strerror(code)+")";}
-bool regular(const std::string& path,std::uint64_t* bytes=nullptr){struct stat st{};if(lstat(path.c_str(),&st)||!S_ISREG(st.st_mode))return false;if(bytes)*bytes=st.st_size;return true;}
-bool directory(const std::string& path){struct stat st{};return lstat(path.c_str(),&st)==0&&S_ISDIR(st.st_mode);}
+// The payload SDK imports lstat separately from the proven open/stat path.
+// Inspect an already opened descriptor instead: O_NOFOLLOW remains enforced
+// by the kernel, and O_NONBLOCK prevents an unexpected FIFO from blocking us.
+bool nofollow_info(const std::string&path,struct stat&info){
+    int fd=open(path.c_str(),O_RDONLY|O_NOFOLLOW|O_NONBLOCK);if(fd<0)return false;
+    const int result=fstat(fd,&info);const int saved=errno;close(fd);errno=saved;return result==0;
+}
+bool regular(const std::string& path,std::uint64_t* bytes=nullptr){struct stat st{};if(!nofollow_info(path,st))return false;if(!S_ISREG(st.st_mode)||st.st_size<0){errno=EINVAL;return false;}if(bytes)*bytes=st.st_size;return true;}
+bool directory(const std::string& path){const int fd=open(path.c_str(),O_RDONLY|O_DIRECTORY|O_NOFOLLOW);if(fd<0)return false;const int saved=errno;close(fd);errno=saved;return true;}
 bool mkdirs(const std::string& path){
     if(path.empty()||path.front()!='/')return false;
     std::size_t at=1;for(;;){at=path.find('/',at);const auto part=at==std::string::npos?path:path.substr(0,at);if(!part.empty()&&!directory(part)){if(mkdir(part.c_str(),0700)||!directory(part))return false;}if(at==std::string::npos)break;++at;}return true;
@@ -52,7 +59,7 @@ bool mkdirs(const std::string& path){
 bool sync_directory(const std::string& path){int fd=open(path.c_str(),O_RDONLY|O_DIRECTORY);if(fd<0)return false;const bool ok=fsync(fd)==0;close(fd);return ok;}
 std::uint64_t staged_bytes(const std::string&path){
     if(!directory(path))return 0;DIR*dir=opendir(path.c_str());if(!dir)return 0;std::uint64_t bytes=0;
-    while(auto*entry=readdir(dir)){const std::string name=entry->d_name;if(name=="."||name=="..")continue;const auto file=path+"/"+name;struct stat st{};if(lstat(file.c_str(),&st))continue;if(S_ISREG(st.st_mode))bytes+=st.st_size;else if(S_ISDIR(st.st_mode))bytes+=staged_bytes(file);}closedir(dir);return bytes;
+    while(auto*entry=readdir(dir)){const std::string name=entry->d_name;if(name=="."||name=="..")continue;const auto file=path+"/"+name;struct stat st{};if(!nofollow_info(file,st))continue;if(S_ISREG(st.st_mode))bytes+=st.st_size;else if(S_ISDIR(st.st_mode))bytes+=staged_bytes(file);}closedir(dir);return bytes;
 }
 bool available_bytes(const std::string&path,std::uint64_t&bytes){
 #if defined(PM_COLLECTION_STATVFS)
@@ -61,8 +68,23 @@ bool available_bytes(const std::string&path,std::uint64_t&bytes){
     (void)path;(void)bytes;return false;
 #endif
 }
-std::string read_small(const std::string& path,std::size_t maximum=4u<<20){
-    std::uint64_t size=0;if(!regular(path,&size)||size>maximum)return{};FILE* f=std::fopen(path.c_str(),"rb");if(!f)return{};std::string bytes(size,'\0');const bool ok=std::fread(bytes.data(),1,size,f)==size;std::fclose(f);return ok?bytes:std::string();
+struct SmallRead {bool ok=false;std::string bytes,operation;int code=0;};
+SmallRead read_bounded(const std::string&path,std::size_t maximum,bool trusted_bundle=false){
+    // Match hui::save::read_file's working open/read path for the bundled
+    // read-only manifest. Private worker JSON keeps the no-follow protection.
+    SmallRead result;const int fd=open(path.c_str(),O_RDONLY|(trusted_bundle?0:O_NOFOLLOW|O_NONBLOCK));
+    if(fd<0){result.code=errno;result.operation="open";return result;}
+    std::array<char,4096>buffer{};
+    for(;;){const auto n=::read(fd,buffer.data(),buffer.size());if(n<0){if(errno==EINTR)continue;result.code=errno;result.operation="read";break;}if(!n){result.ok=true;break;}if(std::size_t(n)>maximum-result.bytes.size()){result.code=EFBIG;result.operation="bounded read";break;}result.bytes.append(buffer.data(),std::size_t(n));}
+    close(fd);if(!result.ok)result.bytes.clear();errno=result.code;return result;
+}
+std::string read_small(const std::string& path,std::size_t maximum=4u<<20){return read_bounded(path,maximum).bytes;}
+bool verified_missing_bundle(const std::string&path,int open_errno){
+    if(open_errno!=ENOENT)return false;
+    // Only the trusted bundled path may use stat: never staging or extracted
+    // data. An unavailable /app0 parent is not a legacy missing-manifest case.
+    struct stat info{};if(::stat(path.c_str(),&info)==0||errno!=ENOENT)return false;
+    return ::stat(parent(path).c_str(),&info)==0&&S_ISDIR(info.st_mode);
 }
 bool atomic_text(const std::string& path,const std::string& text){
     const auto tmp=path+".tmp";int fd=open(tmp.c_str(),O_WRONLY|O_CREAT|O_TRUNC|O_NOFOLLOW,0600);if(fd<0)return false;
@@ -89,7 +111,8 @@ struct CollectionInstaller::Impl {
     std::thread worker;
     std::uint64_t completed=0;
     std::uint64_t expanded_bytes=0,maximum_pack=0;
-    void update(Phase phase,const std::string& stage,const std::string& error={}){std::lock_guard<std::mutex>lock(mutex);status.phase=phase;status.stage=stage;status.error=error;status.bytes_per_second=0;}
+    void update(Phase phase,const std::string& stage,const std::string& error={},int code=0,const std::string&diagnostic={}){std::lock_guard<std::mutex>lock(mutex);status.phase=phase;status.stage=stage;status.error=error;status.bytes_per_second=0;status.filesystem_errno=code;status.diagnostic=diagnostic;}
+    void storage_failure(const char*operation,const std::string&path,int code){update(Phase::failed,"Installation storage unavailable",storage_error(operation,code),code,std::string(operation)+" ["+path+"] errno="+std::to_string(code)+" ("+std::strerror(code)+")");}
     bool interrupted()const{return command.load(std::memory_order_acquire)!=0;}
     void interrupted_status(){const auto c=command.load();update(c==1?Phase::paused:Phase::cancelled,c==1?"Paused":"Stopped");}
     std::string marker(std::size_t n,const std::string&root={})const{return(root.empty()?stage_root:root)+"/.pack-"+std::to_string(n)+".json";}
@@ -173,7 +196,7 @@ struct CollectionInstaller::Impl {
             if(!seen.insert(name).second){error="Duplicate collection archive path";ok=false;break;}
             const auto destination=stage_root+"/"+name;const auto tmp=destination+".install-tmp";
             if(!mkdirs(parent(destination))){error="Unsafe collection directory";ok=false;break;}
-            struct stat old{};if(lstat(destination.c_str(),&old)==0&&!S_ISREG(old.st_mode)){error="Non-regular collection destination";ok=false;break;}
+            struct stat old{};if(nofollow_info(destination,old)){if(!S_ISREG(old.st_mode)){error="Non-regular collection destination";ok=false;break;}}else if(errno!=ENOENT){error=storage_error("Unsafe or unreadable collection destination");ok=false;break;}
             int fd=open(tmp.c_str(),O_WRONLY|O_CREAT|O_TRUNC|O_NOFOLLOW,0600);if(fd<0){error=storage_error("Cannot stage collection file");ok=false;break;}
             std::uint64_t remaining=bytes;while(remaining&&ok&&!interrupted()){
                 const auto want=std::min<std::uint64_t>(remaining,buffer.size());const auto got=std::fread(buffer.data(),1,want,tar);if(got!=want){error="Truncated collection file";ok=false;break;}
@@ -196,13 +219,13 @@ struct CollectionInstaller::Impl {
         struct Finish {Impl*p;~Finish(){p->running.store(false,std::memory_order_release);}}finish{this};
         if(!bundled.empty()){update(Phase::verifying,"Checking installed collection");if(media::packaged_images_complete(bundled)){if(interrupted()){interrupted_status();return;}std::lock_guard<std::mutex>lock(mutex);active_root.clear();status.phase=Phase::ready;status.stage="Bundled collection ready";status.downloaded_bytes=status.total_bytes;return;}}
         if(interrupted()){interrupted_status();return;}
-        if(!mkdirs(base)||!mkdirs(base+"/downloads")){update(Phase::failed,"Installation unavailable","Collection storage is not writable");return;}
+        if(!mkdirs(base)||!mkdirs(base+"/downloads")){storage_failure("Cannot create collection storage",base,errno);return;}
         if(ready_on_disk()){std::lock_guard<std::mutex>lock(mutex);active_root=ready_root;status.phase=Phase::ready;status.stage="Collection ready";status.downloaded_bytes=status.total_bytes;return;}
         if(interrupted()){interrupted_status();return;}
         // Repair an incomplete same-version tree in private staging. Preserve
         // its checkpoints and all good files; the worker re-fetches only bad packs.
         if(directory(ready_root)&&!directory(stage_root)&&std::rename(ready_root.c_str(),stage_root.c_str())){update(Phase::failed,"Installation failed",storage_error("Cannot stage collection repair"));return;}
-        if(!mkdirs(stage_root)){update(Phase::failed,"Installation unavailable","Cannot create safe collection staging directory");return;}
+        if(!mkdirs(stage_root)){storage_failure("Cannot create safe staging directory",stage_root,errno);return;}
         std::uint64_t free=0;const auto present=std::min(expanded_bytes,staged_bytes(stage_root+"/assets/images"));const auto required=expanded_bytes-present+maximum_pack;
         if(available_bytes(base,free)&&free<required){update(Phase::failed,"Not enough storage","Not enough free space in collection storage: "+std::to_string(required)+" additional bytes required");return;}
         static std::once_flag curl_once;static CURLcode curl_status=CURLE_FAILED_INIT;std::call_once(curl_once,[]{curl_status=curl_global_init(CURL_GLOBAL_DEFAULT);});if(curl_status!=CURLE_OK){update(Phase::failed,"Download unavailable","Cannot initialize network");return;}
@@ -231,8 +254,13 @@ CollectionInstaller::CollectionInstaller():impl_(new Impl){}
 CollectionInstaller::~CollectionInstaller(){shutdown();}
 bool CollectionInstaller::configure(const std::string& manifest_path,const std::string& data_directory,const std::string& bundled_root,bool allow_http_for_tests){
     shutdown();auto&p=*impl_;std::lock_guard<std::mutex>control(p.lifecycle);std::lock_guard<std::mutex>lock(p.mutex);p.status={};p.configured=false;p.active_root.clear();p.packs.clear();
-    const auto raw=read_small(manifest_path,1u<<20);if(raw.empty())return false;auto j=Json::parse(raw,nullptr,false);
-    const auto reject=[&](const char*why){p.status.phase=Phase::failed;p.status.error=why;p.status.stage="Invalid collection manifest";return false;};
+    const auto source=read_bounded(manifest_path,1u<<20,true);
+    if(!source.ok){
+        if(source.operation=="open"&&verified_missing_bundle(manifest_path,source.code)){p.status.diagnostic="Legacy bundled manifest confirmed absent: "+manifest_path;return false;}
+        p.status.phase=Phase::failed;p.status.stage="Cannot read collection manifest";p.status.filesystem_errno=source.code;p.status.error="The bundled collection manifest could not be read";p.status.diagnostic=source.operation+" ["+manifest_path+"] errno="+std::to_string(source.code)+" ("+std::strerror(source.code)+"); legacy bypass refused";return false;
+    }
+    const auto&raw=source.bytes;auto j=Json::parse(raw,nullptr,false);
+    const auto reject=[&](const char*why){p.status.phase=Phase::failed;p.status.error=why;p.status.stage="Invalid collection manifest";p.status.diagnostic=std::string(why)+" ["+manifest_path+"]";return false;};
     if(data_directory.empty()||data_directory.front()!='/'||data_directory=="/app0"||data_directory.rfind("/app0/",0)==0||data_directory.find("..")!=std::string::npos||data_directory.find('\\')!=std::string::npos)return reject("Persistent writable collection directory required");
     if(!j.is_object()||!j.contains("schema_version")||!j["schema_version"].is_number_integer()||j["schema_version"].get<int>()!=1||!j.contains("collection_id")||!j["collection_id"].is_string()||!component(j["collection_id"].get<std::string>())||!j.contains("packs")||!j["packs"].is_array()||j["packs"].empty()||j["packs"].size()>256)return reject("Invalid collection manifest schema");
     std::set<std::string>ids;p.maximum_pack=0;p.expanded_bytes=0;

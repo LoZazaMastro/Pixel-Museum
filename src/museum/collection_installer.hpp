@@ -15,6 +15,8 @@ public:
         std::size_t pack_index=0,pack_count=0;
         double bytes_per_second=0;
         std::string error,stage;
+        int filesystem_errno=0;
+        std::string diagnostic; // Operation/path/errno for native troubleshooting.
     };
     CollectionInstaller();
     ~CollectionInstaller();

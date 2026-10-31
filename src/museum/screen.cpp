@@ -38,7 +38,7 @@ void Screen::apply_language(){
     if(!catalog_.set_locale(root_,language_))sys::log("[Museum] locale %s: %s",language_.c_str(),catalog_.locale_error().c_str());
     if(!history_catalog_all_.entries.empty()&&!history_catalog_all_.set_locale(root_,language_))sys::log("[Museum] history locale %s: %s",language_.c_str(),history_catalog_all_.locale_error().c_str());
     rebuild_history_filter();
-    if(ready_&&!history_focus_)prepare_story();
+    if(ready_&&!history_focus_&&!collection_pending_)prepare_story();
 }
 bool Screen::font(const std::string&p,gfx::Font&f,ui::FontRef&r){
     // The existing fallback can be 2048x4096 R8 plus bounded glyph/run
@@ -299,7 +299,7 @@ void Screen::preview(int mode){
 }
 void Screen::prepare_gallery(bool reset){const auto*e=current();if(!e)return;std::vector<ui::ViewerImage> images;for(size_t n=0;n<e->images.size();++n){const auto&i=e->images[n];const auto a=int(n)==image_index_?cache_.request(image_url(i)):cache_.get(image_url(i));ui::ViewerImage v;v.title=i.title;v.caption.clear();v.texture=a.texture;v.aspect=a.width&&a.height?float(a.width)/a.height:1.f;v.pixel_width=float(a.width);images.push_back(v);}if(reset){viewer_.set_images(std::move(images));viewer_.set_index(image_index_);}else viewer_.refresh_images(std::move(images));}
 void Screen::handle(const InputFrame&i,ui::Feedback&f){
-    if(collection_pending_){handle_collection_startup(i,f);return;}
+    if(collection_pending_){if(language_choice_)handle_language_choice(i,f);else handle_collection_startup(i,f);return;}
     const bool rail_input=!onboarding_&&!settings_&&!credits_&&!year_guide_&&!chapters_&&!detail_&&!gallery_&&!screening_&&!object_inspect_&&!experience_active_&&!workshop_active_&&!image_dialog_&&!connection_panel_&&!(history_transition_&&fade_<1)&&!(i.pressed&~(action_bit(Action::left)|action_bit(Action::right)));
     auto&rail_position=history_focus_?history_position_:timeline_;
     timeline_motion_.input(i,dt_,history_focus_?history_focus_index_:focus_,rail_input,rail_position);
@@ -395,14 +395,7 @@ void Screen::handle(const InputFrame&i,ui::Feedback&f){
     if(onboarding_){
         if(onboarding_leaving_)return;
         if(language_choice_){
-            const int before=language_focus_;
-            if(i.nav==Direction::down||i.nav==Direction::right)language_focus_=std::min(4,language_focus_+1);
-            if(i.nav==Direction::up||i.nav==Direction::left)language_focus_=std::max(0,language_focus_-1);
-            if(before!=language_focus_)f.play(audio::Cue::focus);
-            if(i.is_pressed(Action::confirm)){
-                static constexpr const char*locales[]={"en","it","es","fr","de"};
-                language_=locales[language_focus_];language_chosen_=true;language_choice_=false;theme_choice_=true;theme_confirming_=false;theme_confirm_progress_=0;apply_language();dirty_=true;save_delay_=0;f.play(audio::Cue::select);
-            }
+            handle_language_choice(i,f);
             return;
         }
         if(theme_choice_){
@@ -1052,8 +1045,9 @@ void Screen::draw(int width,int height,unsigned framebuffer){
     const auto palette=colours();[[maybe_unused]] const auto paper=palette.paper,ink=palette.ink,muted=palette.muted,rule=palette.rule;
     output_width_=width;output_height_=height;viewer_.style.pixel_scale=1920.f/std::max(1,width);
     if(collection_pending_){
-        boot_.clear();draw_collection_install_view(boot_,fonts_,collection_install_view_state(),theme_mix_.value,collection_elapsed_,reduced_);
-        mark(0);renderer_.begin();renderer_.draw(boot_);renderer_.present(framebuffer,width,height);mark(2);return;
+        if(language_choice_){welcome_.clear();draw_onboarding();mark(0);renderer_.begin();renderer_.draw(welcome_);}
+        else{boot_.clear();draw_collection_install_view(boot_,fonts_,collection_install_view_state(),theme_mix_.value,collection_elapsed_,reduced_);mark(0);renderer_.begin();renderer_.draw(boot_);}
+        renderer_.present(framebuffer,width,height);mark(2);return;
     }
     if(onboarding_&&onboarding_fade_.value>.999f&&!onboarding_leaving_){
         welcome_.clear();draw_onboarding();mark(0);renderer_.begin();renderer_.draw(welcome_);renderer_.present(framebuffer,width,height);mark(2);return;

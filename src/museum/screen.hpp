@@ -82,6 +82,7 @@ private:
     bool start_collection_media();
     void update_collection_startup(float);
     void handle_collection_startup(const hui::InputFrame&,hui::ui::Feedback&);
+    void handle_language_choice(const hui::InputFrame&,hui::ui::Feedback&);
     CollectionInstallViewState collection_install_view_state()const;
     hui::gfx::Renderer renderer_;
     hui::gfx::Font regular_,bold_,display_,mono_,cjk_,unicode_;

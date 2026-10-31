@@ -13,6 +13,7 @@ struct CollectionStartupInspection {
     }
     static bool download(Screen& screen,const std::string& manifest,const std::string& data){
         if(!screen.collection_pending_||screen.collection_media_started_||!screen.collection_installer_.configure(manifest,data,screen.root_,true))return false;
+        if(screen.language_choice_){hui::InputFrame choose;choose.connected=true;choose.pressed=hui::action_bit(hui::Action::confirm);hui::ui::Feedback feedback;screen.handle(choose,feedback);}
         bool saw_download=false,saw_complete=false;
         for(int frame=0;frame<2000&&screen.collection_pending_;++frame){
             const auto phase=screen.collection_installer_.snapshot().phase;
@@ -39,9 +40,14 @@ struct CollectionStartupInspection {
         // Keep the installer idle: this test exercises the real first frame and
         // input/update gate; the separate installer harness tests local HTTP.
         screen.collection_started_=true;
+        screen.language_choice_=true;screen.language_chosen_=false;
+        for(int frame=0;frame<30;++frame)screen.update(1.f/60);
+        const bool language_first=screen.collection_pending_&&!screen.collection_media_started_&&screen.collection_installer_.snapshot().phase==CollectionInstaller::Phase::idle;
+        hui::ui::Feedback feedback;hui::InputFrame choose;choose.connected=true;choose.pressed=hui::action_bit(hui::Action::confirm);screen.handle(choose,feedback);
+        const bool download_second=!screen.language_choice_&&screen.language_chosen_&&screen.collection_pending_&&screen.theme_choice_;
         const float boot=screen.boot_time_,intro=screen.onboarding_position_.value;
         const int step=screen.onboarding_step_,language=screen.language_focus_,focus=screen.focus_;
-        hui::ui::Feedback feedback;hui::InputFrame input;
+        hui::InputFrame input;
         input.connected=true;input.nav=hui::Direction::right;
         input.pressed=hui::action_bit(hui::Action::confirm);
         for(int frame=0;frame<30;++frame){screen.handle(input,feedback);screen.update(1.f/60);}
@@ -52,8 +58,8 @@ struct CollectionStartupInspection {
         hui::gfx::Canvas target;if(!target.create(1920,1080,1))return false;
         screen.draw(1920,1080,target.framebuffer());target.destroy();
         input={};input.connected=true;input.pressed=hui::action_bit(hui::Action::back);screen.handle(input,feedback);
-        const bool passed=held&&screen.wants_quit();
-        std::printf("%s: first-run download precedes onboarding, navigation, audio notes and image workers; Close remains usable.\n",passed?"PASS":"FAIL");
+        const bool passed=language_first&&download_second&&held&&screen.wants_quit();
+        std::printf("%s: language first, download second, then remaining onboarding; no early image workers or startup notes; Close remains usable.\n",passed?"PASS":"FAIL");
         return passed;
     }
 };
