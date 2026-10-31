@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "publication_status": "visual_validated",
+  "catalog_sha256": "95e461787332ea4473508793f1018b75d30908cf18d7842a10d1207397e7a8c1",
+  "entries": {
+    "wikipedia-20937332": {
+      "image": {
+        "url": "https://spelunkyworld.com/images/spelunky-pc-screen.png",
+        "source_page": "https://spelunkyworld.com/original.html",
+        "recovery_local_source": "build/research/modern-game-cover-visual-qa/spelunky-original-creator-screenshot.png",
+        "width": 640,
+        "height": 480,
+        "title": "Spelunky Classic: original creator-published screenshot",
+        "creator": "Derek Yu / Mossmouth",
+        "credit": "Derek Yu / Mossmouth; screenshot published on the original freeware Spelunky website",
+        "license": "Original game imagery and publisher copyright retained; historical editorial illustration, not an open licence.",
+        "cover_art": false,
+        "visual_review": "Full native640x480 creator screenshot read: original freeware pixel-art game, not2012HD remake. Historical exception where no original retail box exists; no enlargement or false4K claim.",
+        "verification": {
+          "sha256": "1ae4e109b1ad15e9513aa25c5d2af66b577339cf309d3e1f5138cc53694d212b",
+          "native_dimensions": [
+            640,
+            480
+          ],
+          "no_upscale": true
+        },
+        "identity_evidence": {
+          "original_game_creator_page": true,
+          "author_page_local": "build/research/modern-game-cover-visual-qa/spelunky-classic-author-page.html",
+          "original_game_creator": "Derek Yu",
+          "edition": "Original freeware, author labels it SpelunkyClassic; page explicitly distinguishes HD2012."
+        }
+      },
+      "supersedes_preferred_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/239350/library_600x900_2x.jpg"
+    }
+  },
+  "rejected_alternatives": [
+    {
+      "local_file": "remaining-originals/d96c2b31-937a-4b95-b56d-6863e4b181de.jpg",
+      "reason": "Unknown poster creator/provenance; originalpixel theme alone does not establish official artwork."
+    }
+  ],
+  "reviewed_candidate": {
+    "local_path": "build/research/modern-game-cover-visual-qa/spelunky-classic-firstparty-image-candidate.json",
+    "sha256": "c1f8ae2c3a4d865355a65489a9ff920d121cad8c9bfa1e14e9c666171163f621"
+  },
+  "independent_review_receipt": "build/research/modern-game-cover-visual-qa/spelunky-classic-firstparty-image-root-review.json"
+}

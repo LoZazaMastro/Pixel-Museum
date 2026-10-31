@@ -1,0 +1,455 @@
+{
+  "batch_id": "047-catalog",
+  "status": "completed",
+  "sources": [
+    {
+      "source_id": "047-S01",
+      "url": "https://www.lua.org/versions.html",
+      "title": "Lua: version history",
+      "publisher": "Lua.org / autori di Lua",
+      "accessed_at": "2026-10-30",
+      "scope": "La versione 1.0 non fu mai pubblicata: era funzionante il 28 luglio 1993, probabilmente anche prima. La prima release pubblica è Lua 1.1, 8 luglio 1994.",
+      "limitation": "Il 28 luglio 1993 documenta uno stato di sviluppo interno, non la disponibilità pubblica. Non trasformato in data di nascita personale o di fondazione."
+    },
+    {
+      "source_id": "047-S02",
+      "url": "https://www.lua.org/history.html",
+      "title": "The evolution of an extension language: a history of Lua",
+      "publisher": "Roberto Ierusalimschy, Luiz Henrique de Figueiredo e Waldemar Celes",
+      "accessed_at": "2026-10-30",
+      "scope": "Lettura mirata del resoconto degli autori su DEL, Sol e necessità applicative industriali.",
+      "limitation": "Nessun nuovo esempio di gioco o nuova funzionalità aggiunto per ampliare il testo."
+    },
+    {
+      "source_id": "047-S03",
+      "url": "https://vc.sega.jp/vc_shinobi2/",
+      "title": "The Super Shinobi II — archivio Virtual Console Mega Drive",
+      "publisher": "Sega",
+      "accessed_at": "2026-10-30",
+      "scope": "Scheda ufficiale indicizzata: uscita originale giapponese del 23 luglio 1993.",
+      "limitation": "Data dell’originale Mega Drive, distinta dalla riedizione Virtual Console e dal titolo occidentale."
+    },
+    {
+      "source_id": "047-S04",
+      "url": "https://www.sega.jp/mdmini/soft/gunstar-heroes.html",
+      "title": "Gunstar Heroes — Mega Drive Mini",
+      "publisher": "Sega",
+      "accessed_at": "2026-10-30",
+      "scope": "Scheda ufficiale: release originale Mega Drive giapponese del 10 settembre 1993.",
+      "limitation": "Usata per precisare la regione della data già fornita; non è data della pubblicazione di Mega Drive Mini."
+    },
+    {
+      "source_id": "047-S05",
+      "url": "https://www.sega.jp/fb/album/12_gunstar/interview1.html",
+      "title": "Meisaku Album: Gunstar Heroes — intervista a Masato Maegawa, prima parte",
+      "publisher": "Sega / Masato Maegawa",
+      "accessed_at": "2026-10-30",
+      "scope": "Intervista letta: sviluppo parallelo, contratto Gunstar dopo McDonald’s, McDonald’s completato prima e Gunstar scelto come prima pubblicazione del nuovo studio.",
+      "limitation": "Correzione della distinzione fra primo gioco completato e primo gioco pubblicato; non importati altri aneddoti dell’intervista."
+    },
+    {
+      "source_id": "047-S06",
+      "url": "https://www.jp.square-enix.com/seiken_collection/seiken2.html",
+      "title": "Seiken Densetsu 2 — Seiken Densetsu Collection",
+      "publisher": "Square Enix",
+      "accessed_at": "2026-10-30",
+      "scope": "Scheda ufficiale dell’originale: 6 agosto 1993 su Super Famicom.",
+      "limitation": "Data giapponese dell’originale, non del remake o della raccolta. Le date delle altre riedizioni già fornite sono conservate senza pretendere una nuova verifica di ognuna."
+    },
+    {
+      "source_id": "047-S07",
+      "url": "https://en.wikipedia.org/wiki/Super_Street_Fighter_II",
+      "title": "Super Street Fighter II — infobox e riferimento della release",
+      "publisher": "Wikipedia contributors, CC BY-SA",
+      "accessed_at": "2026-10-30",
+      "scope": "La fonte fornita attribuisce il 10 settembre 1993 alla versione arcade giapponese e rimanda alla cronologia del 35º anniversario Capcom.",
+      "limitation": "Giorno non adottato: contraddetto dalla notizia commerciale contemporanea di Game Machine. La pagina Capcom collegata non è stata leggibile. Le date identificative delle build ROM non dimostrano la disponibilità al pubblico."
+    },
+    {
+      "source_id": "047-S08",
+      "url": "https://onitama.tv/gamemachine/pdf/19931015p.pdf",
+      "title": "Game Machine, n. 459, 15 ottobre 1993, pagina stampata 24: nuovo CP System II e vendita di Super Street Fighter II",
+      "publisher": "Amusement Press / Game Machine",
+      "accessed_at": "2026-10-30",
+      "scope": "Scansione primaria contemporanea letta visivamente: vendita del set competitivo con due cabinati Q Grandam dal 14 settembre 1993; del set torneo da quattro cabinati per otto persone dal 17 settembre. La sola scheda è indicata in uscita a metà ottobre. Articolo nella metà destra della tredicesima pagina PDF, numero stampato 24.",
+      "limitation": "Data giapponese della disponibilità commerciale del primo allestimento descritto. Non è una data mondiale né quella della sola scheda. La voce bibliografica secondaria che indica pagina 25 è imprecisa: verificata la pagina stampata 24 direttamente nella scansione."
+    }
+  ],
+  "decisions": [
+    {
+      "target_id": "workbook-07-28-lua",
+      "problem": "La data 28 luglio 1993 è trattata nei metadati come release e la voce è classificata come gioco.",
+      "conclusion": "Distinte nel testo la versione interna 1.0 già funzionante entro il 28 luglio 1993 e la prima release pubblica 1.1 dell’8 luglio 1994. Proposta ricollocazione alla disponibilità pubblica e classificazione come linguaggio di programmazione.",
+      "source_ids": [
+        "047-S01",
+        "047-S02"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-1261600",
+      "problem": "Il testo chiama Gunstar Heroes il primo gioco sviluppato da Treasure, ma anche McDonald’s era in lavorazione.",
+      "conclusion": "La testimonianza di Maegawa distingue completamento e uscita: McDonald’s fu terminato prima; Gunstar Heroes uscì per primo. La formulazione corretta è prima pubblicazione dello studio.",
+      "source_ids": [
+        "047-S05"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "workbook-07-23-shinobi-iii-return-of-the-ninja-master",
+      "problem": "La data originale non specifica la regione.",
+      "conclusion": "La fonte ufficiale identifica la release originale giapponese; proposta la regione Japan senza cambiare il giorno documentato.",
+      "source_ids": [
+        "047-S03"
+      ],
+      "text_applied": false
+    },
+    {
+      "target_id": "wikipedia-306470",
+      "problem": "La data originale non specifica la regione.",
+      "conclusion": "La fonte ufficiale identifica la release originale giapponese; proposta la regione Japan senza cambiare il giorno documentato.",
+      "source_ids": [
+        "047-S06"
+      ],
+      "text_applied": false
+    },
+    {
+      "target_id": "wikipedia-1261600",
+      "problem": "La data originale non specifica la regione.",
+      "conclusion": "La fonte ufficiale identifica la release originale giapponese; proposta la regione Japan senza cambiare il giorno documentato.",
+      "source_ids": [
+        "047-S04"
+      ],
+      "text_applied": false
+    },
+    {
+      "target_id": "wikipedia-707510",
+      "problem": "La data 10 settembre 1993 del metadato e della fonte secondaria non coincide con la vendita documentata dalla stampa arcade contemporanea.",
+      "conclusion": "Adottato il 14 settembre 1993, Giappone, per la prima configurazione commerciale descritta da Game Machine: due cabinati collegati. Il set torneo per otto persone seguì il 17 settembre; la sola scheda era prevista a metà ottobre. La data di una build ROM non vale come prova di release. Il testo pubblicato, che riporta soltanto 1993, rimane corretto e invariato.",
+      "source_ids": [
+        "047-S07",
+        "047-S08"
+      ],
+      "text_applied": false
+    },
+    {
+      "target_id": "console-gap-rocket-knight-adventures",
+      "problem": "La formula first released in Japan può essere interpretata come primato mondiale non documentato nel lotto.",
+      "conclusion": "Conservata la release giapponese del 6 agosto 1993 senza estenderla a una prima uscita mondiale. Non inventata una diversa data nordamericana.",
+      "source_ids": [],
+      "text_applied": true
+    }
+  ],
+  "metadata_proposals": [
+    {
+      "target_id": "workbook-07-28-lua",
+      "action": "align_to_first_public_release_and_correct_object_type",
+      "original_date": {
+        "year": 1993,
+        "month": 7,
+        "day": 28,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed_date": {
+        "year": 1994,
+        "month": 7,
+        "day": 8,
+        "precision": "day",
+        "region": "",
+        "version": "Lua 1.1, first public release"
+      },
+      "proposed_kind": "programming_language",
+      "reason": "Lua 1.0 era interna; la richiesta utente privilegia la release pubblica. Classificazione proposta semanticamente corretta, da mappare alla tassonomia effettiva senza cambiare il catalogo.",
+      "source_ids": [
+        "047-S01"
+      ],
+      "catalog_modified": false
+    },
+    {
+      "target_id": "workbook-07-23-shinobi-iii-return-of-the-ninja-master",
+      "action": "specify_regional_scope",
+      "proposed_date": {
+        "year": 1993,
+        "month": 7,
+        "day": 23,
+        "precision": "day",
+        "region": "Japan",
+        "version": "Mega Drive"
+      },
+      "source_ids": [
+        "047-S03"
+      ],
+      "catalog_modified": false
+    },
+    {
+      "target_id": "wikipedia-306470",
+      "action": "specify_regional_scope",
+      "proposed_date": {
+        "year": 1993,
+        "month": 8,
+        "day": 6,
+        "precision": "day",
+        "region": "Japan",
+        "version": "Super Famicom"
+      },
+      "source_ids": [
+        "047-S06"
+      ],
+      "catalog_modified": false
+    },
+    {
+      "target_id": "wikipedia-1261600",
+      "action": "specify_regional_scope",
+      "proposed_date": {
+        "year": 1993,
+        "month": 9,
+        "day": 10,
+        "precision": "day",
+        "region": "Japan",
+        "version": "Mega Drive"
+      },
+      "source_ids": [
+        "047-S04"
+      ],
+      "catalog_modified": false
+    },
+    {
+      "target_id": "wikipedia-707510",
+      "action": "correct_release_date_and_specify_regional_configuration",
+      "proposed_date": {
+        "year": 1993,
+        "month": 9,
+        "day": 14,
+        "precision": "day",
+        "region": "Japan",
+        "version": "Arcade, two linked Q Grandam cabinets"
+      },
+      "source_ids": [
+        "047-S08"
+      ],
+      "catalog_modified": false,
+      "original_date": {
+        "year": 1993,
+        "month": 9,
+        "day": 10,
+        "precision": "day",
+        "region": ""
+      },
+      "reason": "Disponibilità commerciale documentata da una notizia contemporanea, distinta dalla data di compilazione della ROM e dalle successive configurazioni."
+    }
+  ],
+  "expansion_assessments": [
+    {
+      "target_id": "workbook-07-23-shinobi-iii-return-of-the-ninja-master",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": 5,
+      "missing_cards": 1,
+      "rationale": "Sviluppo rilevante del movimento nella serie Shinobi e successivo lavoro di adattamento stereoscopico."
+    },
+    {
+      "target_id": "workbook-07-28-lua",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": null,
+      "missing_cards": 0,
+      "rationale": "Lua è un linguaggio di programmazione, non un gioco: le soglie previste per giochi e console non si applicano."
+    },
+    {
+      "target_id": "console-gap-general-chaos",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": null,
+      "missing_cards": 0,
+      "rationale": "La voce illustra specialisti, comandi e campagna; il materiale fornito non ne determina una priorità di ampliamento fra i giochi più importanti. Nessuna quota applicata automaticamente."
+    },
+    {
+      "target_id": "console-gap-rocket-knight-adventures",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": 5,
+      "missing_cards": 2,
+      "rationale": "Titolo rappresentativo dell’azione Konami su Mega Drive, costruito intorno al propulsore di Sparkster."
+    },
+    {
+      "target_id": "wikipedia-306470",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": 5,
+      "missing_cards": 2,
+      "rationale": "Titolo centrale della serie Mana e dell’avventura cooperativa su Super Nintendo."
+    },
+    {
+      "target_id": "plok-1993",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": 5,
+      "missing_cards": 2,
+      "rationale": "Caso distintivo del platform a mascotte per l’uso degli arti staccabili e la storia produttiva."
+    },
+    {
+      "target_id": "wikipedia-1261600",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": 5,
+      "missing_cards": 2,
+      "rationale": "Esordio pubblicato di Treasure e titolo rilevante dell’azione a 16 bit."
+    },
+    {
+      "target_id": "wikipedia-707510",
+      "main_cards": 2,
+      "feature_cards": 0,
+      "threshold_applicable": 5,
+      "missing_cards": 3,
+      "rationale": "Revisione principale di Street Fighter II e primo gioco su CP System II."
+    },
+    {
+      "target_id": "console-gap-fatal-fury-special",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": 5,
+      "missing_cards": 2,
+      "rationale": "Revisione importante per combo, cast e incontro fra serie SNK."
+    },
+    {
+      "target_id": "console-gap-sonic-cd",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": 5,
+      "missing_cards": 2,
+      "rationale": "Episodio principale di Sonic con viaggi nel tempo e struttura audiovisiva legata al CD."
+    }
+  ],
+  "editorial_review": {
+    "languages": [
+      "en",
+      "it",
+      "fr",
+      "de",
+      "es"
+    ],
+    "english_written_first": true,
+    "reviewer": "/root/resume_remaining_a",
+    "checks": [
+      "Letto l’intero INPUT, poi scritti e salvati inglese e adattamenti nelle quattro lingue successive.",
+      "Riletti tutti i 155 testi: conservati ruoli di produzione, sequenze di uscita, nomi dei combattenti, numeri e meccaniche presenti.",
+      "Esplicitata la coppia dei Gunstars; conservate tutte le date delle riedizioni di Secret of Mana e i cinque compositori delle due colonne sonore di Sonic CD.",
+      "Controllati incipit, titoli specifici, sommari inglesi di 25–45 parole e paragrafi brevi nelle card più lunghe.",
+      "Nessun titolo proprio, ID, card, media o fonte originale modificato. Testi privi di Markdown e HTML."
+    ],
+    "scope_limit": "Ricerca mirata a dubbi e metadati non circoscritti. Le fonti inaccessibili non sono dichiarate lette; le altre informazioni fornite non sono presentate come oggetto di una verifica universale.",
+    "expansion_issues": 8,
+    "future_cards_requested": 16,
+    "root_review": {
+      "reviewed_at": "2026-10-30T02:03:47.765026+00:00",
+      "checks": [
+        "L’unica differenza numerica segnalata riguarda versioni e date Lua, documentate nell’audit. La successiva correzione della release SSFII è nello stesso audit e lascia invariato l’OUTPUT."
+      ],
+      "scope": "Controllo mirato degli avvisi automatici e dei campi nominati, non attestazione universale di tutti i fatti."
+    }
+  },
+  "validation": {
+    "valid": true,
+    "batch_id": "047-catalog",
+    "completed": true,
+    "entry_count": 10,
+    "card_count_per_language": 31,
+    "language_count": 5,
+    "translated_card_count": 155,
+    "entry_card_counts": {
+      "workbook-07-23-shinobi-iii-return-of-the-ninja-master": 4,
+      "workbook-07-28-lua": 4,
+      "console-gap-general-chaos": 3,
+      "console-gap-rocket-knight-adventures": 3,
+      "wikipedia-306470": 3,
+      "plok-1993": 3,
+      "wikipedia-1261600": 3,
+      "wikipedia-707510": 2,
+      "console-gap-fatal-fury-special": 3,
+      "console-gap-sonic-cd": 3
+    },
+    "issue_counts": {
+      "workbook-07-23-shinobi-iii-return-of-the-ninja-master": 1,
+      "workbook-07-28-lua": 0,
+      "console-gap-general-chaos": 0,
+      "console-gap-rocket-knight-adventures": 1,
+      "wikipedia-306470": 1,
+      "plok-1993": 1,
+      "wikipedia-1261600": 1,
+      "wikipedia-707510": 1,
+      "console-gap-fatal-fury-special": 1,
+      "console-gap-sonic-cd": 1
+    },
+    "summary_checks": [
+      {
+        "entry_id": "workbook-07-23-shinobi-iii-return-of-the-ninja-master",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "workbook-07-28-lua",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "console-gap-general-chaos",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "console-gap-rocket-knight-adventures",
+        "feature_id": null,
+        "english_summary_words": 40
+      },
+      {
+        "entry_id": "wikipedia-306470",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "plok-1993",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "wikipedia-1261600",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "wikipedia-707510",
+        "feature_id": null,
+        "english_summary_words": 40
+      },
+      {
+        "entry_id": "console-gap-fatal-fury-special",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "console-gap-sonic-cd",
+        "feature_id": null,
+        "english_summary_words": 35
+      }
+    ],
+    "editorial_review": [],
+    "failures": []
+  },
+  "output_sha256": "f08061ca94a045d49b2c4d0952e1766ed5c9162c3cec05d4d2ec87da8277b8a5",
+  "postpublication_review": [
+    {
+      "date": "2026-10-30",
+      "reviewer": "/root/resume_remaining_a",
+      "target_id": "wikipedia-707510",
+      "before": "La proposta di metadato manteneva il 10 settembre 1993 con regione Japan sulla sola fonte secondaria.",
+      "after": "Proposta corretta al 14 settembre 1993, Japan, configurazione commerciale a due cabinati collegati, sulla notizia primaria contemporanea.",
+      "source_ids": [
+        "047-S08"
+      ],
+      "output_modified": false,
+      "output_sha256_before": "f08061ca94a045d49b2c4d0952e1766ed5c9162c3cec05d4d2ec87da8277b8a5",
+      "output_sha256_after": "f08061ca94a045d49b2c4d0952e1766ed5c9162c3cec05d4d2ec87da8277b8a5"
+    }
+  ]
+}

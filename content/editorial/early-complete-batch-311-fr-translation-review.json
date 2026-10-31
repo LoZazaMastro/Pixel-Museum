@@ -1,0 +1,102 @@
+{
+  "status": "PASS",
+  "locale": "fr",
+  "entries": [
+    {
+      "entry_id": "workbook-10-15-disco-elysium",
+      "source_fields_sha256": "b55920de877a5292aa3a7a95ed9758788c93d1c693d4fff9b4b5a065f7b6fbf0",
+      "translation_sha256": "3380ad011442dba63a2b0eae8721bdeba83a17ac69b5a6a95016efed17e8a2e1",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch311/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "d70331b3f89b5178634ed758402acd3827b47fcf6e9a05efbb386b3e0a69ac9d"
+    },
+    {
+      "entry_id": "wikipedia-60883053",
+      "source_fields_sha256": "b2e919064b1ae8b598bc9fa1dbf00148e865e38d0f883c5ebf84dcdf745ac9bd",
+      "translation_sha256": "30be6eb25f65325d7f07ede62b7a82e28af810c4fdf5ce89615096e2e04545dd",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch311/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "d70331b3f89b5178634ed758402acd3827b47fcf6e9a05efbb386b3e0a69ac9d"
+    },
+    {
+      "entry_id": "workbook-10-31-luigi-s-mansion-3",
+      "source_fields_sha256": "6d6d5689757f41db85170567cbcd71c4807e319842d5a9725528ca2dc49456f3",
+      "translation_sha256": "b99388c242c8b98c52a6c16587a671dc76c5b9085a2b7f6f85a7425a3537bd74",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch311/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "d70331b3f89b5178634ed758402acd3827b47fcf6e9a05efbb386b3e0a69ac9d"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "root",
+    "actual_receipt": "build/research/catalog-2019-chronological/october-three-private/independent-root-approval.json",
+    "actual_receipt_sha256": "af329065ad820be1c8cc0d93b75fc7d100e4ce98d22fd4839699d599c6e8d4ae",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "root",
+      "reviewed_index": "build/research/catalog-2019-chronological/october-three-private/three-private-index.json",
+      "reviewed_index_sha256": "2c30510a212dbc2fd12b8a299b36e15620e2bb0e6bf8f98f3c4b72586ccee4bd",
+      "owners": [
+        {
+          "entry_id": "workbook-10-15-disco-elysium",
+          "slug": "disco",
+          "source": "build/research/catalog-2019-chronological/october-three-private/disco/complete-original-source-media-private-candidate.json",
+          "source_sha256": "b568b7b6084135c59b8ffcf456ec0a86dba738dea5e9c2fbd4e0a229de77d22b",
+          "target": "build/research/catalog-2019-chronological/october-three-private/disco/complete-four-language-private-candidate.json",
+          "target_sha256": "6633eaafc63d3caa5ba88e056531f38adb97bcc3b301aa98dfba80bfbb25f249",
+          "english_cards": 7,
+          "localized_cards": 28,
+          "images": 9,
+          "tracks": 27,
+          "contact": "build/research/catalog-2019-chronological/october-three-private/disco/final-selected-media-contact.jpg",
+          "contact_sha256": "0b38d6720a707e28839feeac02ef0a7bbe04d1a6fe6f3a2bd9695750d903d7fa",
+          "finite_errata": 0
+        },
+        {
+          "entry_id": "wikipedia-60883053",
+          "slug": "modern-warfare",
+          "source": "build/research/catalog-2019-chronological/october-three-private/modern-warfare/complete-original-source-media-private-candidate.json",
+          "source_sha256": "5903fe3189ae9a92123487b363b73bf7f72bf7acb7ba684e5d538ff11ad57b01",
+          "target": "build/research/catalog-2019-chronological/october-three-private/modern-warfare/complete-four-language-private-candidate.json",
+          "target_sha256": "4f4e9e3ae6a0db430ef5b76f654bdb9b558a18144264e1f4e83e4c867d357aaa",
+          "english_cards": 4,
+          "localized_cards": 16,
+          "images": 6,
+          "tracks": 3,
+          "contact": "build/research/catalog-2019-chronological/october-three-private/modern-warfare/final-selected-media-contact.jpg",
+          "contact_sha256": "d2c136fa2846e26cb786593198ca1f954d2a92876e9155cbef644ede8ee32367",
+          "finite_errata": 1
+        },
+        {
+          "entry_id": "workbook-10-31-luigi-s-mansion-3",
+          "slug": "luigi",
+          "source": "build/research/catalog-2019-chronological/october-three-private/luigi/complete-original-source-media-private-candidate.json",
+          "source_sha256": "06fed1a8493e428f6a491ccebca36cf227b8f02d138b26558d08528c237edd66",
+          "target": "build/research/catalog-2019-chronological/october-three-private/luigi/complete-four-language-private-candidate.json",
+          "target_sha256": "ee05c6cd7a7827e59b4d9aeb5ba3c934cabab4a83e957e0e74b6547bea1df7be",
+          "english_cards": 4,
+          "localized_cards": 16,
+          "images": 6,
+          "tracks": 318,
+          "contact": "build/research/catalog-2019-chronological/october-three-private/luigi/final-selected-media-contact.jpg",
+          "contact_sha256": "a906ca52d38406548097a0122466ea0dc1b047ce2d540e30f447e7240bd48beb",
+          "finite_errata": 0
+        }
+      ],
+      "review_scope": {
+        "english_paragraphs_read": 15,
+        "localized_paragraphs_read": 60,
+        "final_media_images_viewed": 21,
+        "new_music_public_metadata_read": 2,
+        "primary_sources_read": [
+          "https://store.steampowered.com/app/632470/",
+          "https://blog.activision.com/pt/call-of-duty/2019-10/Getting-Started-in-Modern-Warfare-Multiplayer",
+          "https://blog.activision.com/au/en/call-of-duty/2019-10/Available-Now-The-Soundtrack-of-Call-of-Duty-Modern-Warfare",
+          "https://www.nintendo.com/en-gb/News/2019/July/Prepare-for-a-scare-Luigi-s-Mansion-3-haunts-Nintendo-Switch-on-October-31st--1601125.html"
+        ]
+      },
+      "resolved_findings": [
+        "Custom maps claim replaced with supported Private Match functionality. Later Final Cut screenshots explicitly qualified. Modern Warfare official soundtrack 2019 matched to Sarah Schachner metadata."
+      ],
+      "production_writes": false
+    }
+  }
+}

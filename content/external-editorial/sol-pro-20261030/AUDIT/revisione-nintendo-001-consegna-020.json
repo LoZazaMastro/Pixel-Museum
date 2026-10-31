@@ -1,0 +1,362 @@
+{
+  "schema": "pixel-museum-factual-audit-v1",
+  "delivery": "019-020",
+  "checked_at": "2026-10-29",
+  "scope": {
+    "batch_id": "001-catalog",
+    "entry_id": "daily-09-23",
+    "title": "Nintendo",
+    "card_ids": [
+      "main:4",
+      "main:6",
+      "main:18"
+    ]
+  },
+  "status": "scoped_editorial_questions_resolved",
+  "english_rewritten_before_adaptations": true,
+  "languages": [
+    "en",
+    "it",
+    "fr",
+    "de",
+    "es"
+  ],
+  "sources": [
+    {
+      "source_id": "nintendo-history",
+      "title": "Company History",
+      "publisher": "Nintendo",
+      "url": "https://www.nintendo.co.jp/corporate/en/history/index.html",
+      "locator": "1980: Game & Watch; 1989: Game Boy; 1990: Super Famicom; 2025: Nintendo Switch 2",
+      "supports": "Anni di uscita ufficiali, distinti dagli annunci."
+    },
+    {
+      "source_id": "iwata-game-watch",
+      "title": "Iwata Asks: Game & Watch — 4. Absorbed in Development",
+      "publisher": "Nintendo",
+      "url": "https://www.nintendo.com/en-gb/Iwata-Asks/Iwata-Asks-Game-Watch/Iwata-Asks-Game-Watch/4-Absorbed-in-Development/4-Absorbed-in-Development-223140.html",
+      "locator": "Intervento di Satoru Iwata sulle vendite: 12,87 milioni in Giappone, 30,53 milioni all’estero, 43,4 milioni totali.",
+      "supports": "Grande successo commerciale della serie; non è una prova che sia il primo successo di Nintendo in assoluto."
+    },
+    {
+      "source_id": "nintendo-gameboy-series",
+      "title": "ニンテンドーDSシリーズ１億台販売",
+      "publisher": "Nintendo",
+      "url": "https://www.nintendo.co.jp/corporate/release/2009/090311.html",
+      "publication_date": "2009-03-11",
+      "locator": "Nota di riferimento: la serie Game Boy raggiunse 118 milioni; Game Boy Advance è conteggiato separatamente.",
+      "supports": "Il totale riguarda una famiglia di dispositivi, non il solo modello del 1989."
+    },
+    {
+      "source_id": "nintendo-gameboy-color-family",
+      "title": "Game Boy Color — Portable Power",
+      "publisher": "Nintendo",
+      "url": "https://www.nintendo.com/en-gb/Hardware/Nintendo-History/Game-Boy-Color/Game-Boy-Color-627137.html",
+      "locator": "Primo paragrafo: Game Boy Color appartiene alla gamma Game Boy, descritta attraverso il totale cumulativo della gamma.",
+      "supports": "Appartenenza di Game Boy Color alla famiglia Game Boy; lettura congiunta con il comunicato sul totale della serie."
+    },
+    {
+      "source_id": "nintendo-hardware-totals",
+      "title": "Dedicated Video Game Sales Units — Total Unit Sales",
+      "publisher": "Nintendo",
+      "url": "https://www.nintendo.co.jp/ir/en/finance/hard_soft/index.html",
+      "locator": "Game Boy: hardware 118,69 milioni; Game Boy Advance figura separatamente.",
+      "supports": "Totale cumulativo mondiale superiore a 118 milioni, senza aggiungere nei testi precisione superflua."
+    },
+    {
+      "source_id": "switch2-after-release",
+      "title": "Nintendo Switch 2 Sells Over 3.5 Million Units Worldwide in First Four Days",
+      "publisher": "Nintendo",
+      "url": "https://www.nintendo.co.jp/corporate/release/en/2025/250611.html",
+      "publication_date": "2025-06-11",
+      "locator": "Primo paragrafo: quattro giorni successivi all’uscita del 5 giugno 2025; paragrafo seguente: Mario Kart World uscito lo stesso giorno.",
+      "supports": "Conferma successiva al lancio effettivo di hardware e software, non soltanto data programmata."
+    },
+    {
+      "source_id": "switch2-feature-specification",
+      "title": "Nintendo Switch 2 to be released on June 5, 2025",
+      "publisher": "Nintendo",
+      "url": "https://www.nintendo.co.jp/corporate/release/en/2025/250402.html",
+      "publication_date": "2025-04-02",
+      "locator": "Schermo, Joy-Con 2 magnetici, funzione mouse solo nei giochi supportati e compatibilità con i giochi Switch con eccezioni.",
+      "supports": "Caratteristiche già contenute nel materiale, confermate senza trasformare la retrocompatibilità in compatibilità universale."
+    }
+  ],
+  "decisions": [
+    {
+      "target_id": "main:4",
+      "status": "resolved",
+      "original_question": "Il testo di partenza definisce Game & Watch il primo prodotto Nintendo di grande successo, senza precisare il criterio del primato né fornire elementi per confrontarlo con carte e giocattoli precedenti. Il primato non è verificato; la riscrittura conserva i dati della serie senza presentarlo come accertato.",
+      "conclusion": "Il primato assoluto non viene riproposto. La formulazione già presente nelle cinque lingue descrive correttamente il successo e il totale verificato di 43,4 milioni. La verifica chiude il problema editoriale mediante una formulazione sostenuta dalla fonte, senza attribuire ad altro prodotto un primato non studiato.",
+      "source_ids": [
+        "iwata-game-watch",
+        "nintendo-history"
+      ],
+      "text_changed_this_delivery": false
+    },
+    {
+      "target_id": "main:6",
+      "status": "resolved",
+      "original_question": "Il totale di 118 milioni è attribuito genericamente alla linea Game Boy: il materiale non esplicita quali modelli includa. La riscrittura mantiene il numero attribuendolo alla ricostruzione fornita, senza assegnarlo al solo modello del 1989.",
+      "conclusion": "Il totale cumulativo riguarda la famiglia Game Boy, compreso Game Boy Color; Game Boy Advance è una famiglia separata. L’inclusione di Color deriva dalla lettura congiunta della pagina Nintendo che lo identifica come membro della gamma e del comunicato con il totale della serie. Il testo esplicita questo perimetro.",
+      "source_ids": [
+        "nintendo-gameboy-series",
+        "nintendo-gameboy-color-family",
+        "nintendo-hardware-totals"
+      ],
+      "text_changed_this_delivery": true
+    },
+    {
+      "target_id": "main:6",
+      "status": "resolved_for_release_editorial_scope",
+      "original_question": "Il materiale colloca nel 1989 l'annuncio del Super Famicom, ma non distingue annuncio iniziale e successiva presentazione né riporta il passaggio della fonte a sostegno. La data è conservata come attribuzione alla ricostruzione fornita e resta da verificare.",
+      "conclusion": "Secondo l’ultima istruzione dell’utente, la card ora riporta l’uscita giapponese del Super Famicom nel 1990, verificata nella cronologia ufficiale. Non ripropone il 1989 come annuncio e non dichiara verificata la cronologia degli annunci: quel dato è sostituito, non reinterpretato come release.",
+      "source_ids": [
+        "nintendo-history"
+      ],
+      "text_changed_this_delivery": true,
+      "release": {
+        "year": 1990,
+        "precision": "year",
+        "region": "JP"
+      }
+    },
+    {
+      "target_id": "main:18",
+      "status": "resolved",
+      "original_question": "Il riferimento specifico per Switch 2 è un annuncio ufficiale, mentre il testo di partenza parla di nuovi giochi come già disponibili. Il materiale fornito non contiene una conferma separata dell'uscita. La riscrittura descrive quindi le caratteristiche annunciate senza dichiarare avvenuto il lancio.",
+      "conclusion": "Nintendo conferma dopo il fatto l’uscita di Switch 2 il 5 giugno 2025 e quella di software lo stesso giorno. Titolo e testo ora descrivono il prodotto uscito, conservando le cautele sulla compatibilità e sulla funzione mouse.",
+      "source_ids": [
+        "switch2-after-release",
+        "switch2-feature-specification",
+        "nintendo-history"
+      ],
+      "text_changed_this_delivery": true,
+      "release": {
+        "year": 2025,
+        "month": 6,
+        "day": 5,
+        "precision": "day",
+        "region": "worldwide_initial_launch"
+      }
+    }
+  ],
+  "text_edits": [
+    {
+      "entry_id": "daily-09-23",
+      "feature_id": null,
+      "card_id": "main:6",
+      "language": "en",
+      "field": "text",
+      "before": "Nintendo released Game Boy in 1989 with Super Mario Land among its launch games. Tetris also became closely associated with the handheld. Price, durability and popular games helped the Game Boy line reach the 118 million sales reported in the supplied history; Super Mario Land alone sold 14 million copies. That account also places the announcement of Nintendo's next home console, Super Famicom, in 1989, as the company continued developing both portable and television-based systems.",
+      "after": "Nintendo released Game Boy in 1989, with Super Mario Land among its launch games. Tetris also became closely associated with the handheld. Price, durability and popular games helped the Game Boy family, including Game Boy Color, sell over 118 million units worldwide; Super Mario Land alone sold 14 million copies. Nintendo continued developing portable and home consoles in parallel, releasing Super Famicom in Japan in 1990."
+    },
+    {
+      "entry_id": "daily-09-23",
+      "feature_id": null,
+      "card_id": "main:18",
+      "language": "en",
+      "field": "heading",
+      "before": "2025 / Nintendo presents Switch 2",
+      "after": "2025 / Nintendo Switch 2 arrives"
+    },
+    {
+      "entry_id": "daily-09-23",
+      "feature_id": null,
+      "card_id": "main:18",
+      "language": "en",
+      "field": "text",
+      "before": "Nintendo presented Switch 2 as a continuation of its hybrid console design, with a larger display and redesigned magnetic Joy-Con 2 controllers. The announcement described controllers that could also work like a mouse in supported software and backward compatibility with much of the original Switch library. New games were to make use of the successor's capabilities. These features extended the company's work on different controls and ways of playing, a history also represented by its playing cards and mechanical toys.",
+      "after": "Nintendo released Switch 2 on 5 June 2025, continuing its hybrid console design with a larger display and redesigned Joy-Con 2 controllers that attach magnetically. The controllers also work like a mouse in games that support the feature. Backward compatibility gives players access to much of the original Switch library, while games made for the successor use its new capabilities. From playing cards and mechanical toys to evolving controllers, Nintendo has continued to change the objects people use to play."
+    },
+    {
+      "entry_id": "daily-09-23",
+      "feature_id": null,
+      "card_id": "main:6",
+      "language": "it",
+      "field": "text",
+      "before": "Nintendo lanciò il Game Boy nel 1989, con Super Mario Land tra i giochi disponibili al debutto. Anche Tetris finì per essere strettamente associato alla console portatile. Prezzo, resistenza e giochi molto popolari contribuirono a portare la linea Game Boy ai 118 milioni di vendite riportati nella ricostruzione fornita; Super Mario Land, da solo, raggiunse 14 milioni di copie. La stessa ricostruzione colloca nel 1989 anche l'annuncio del Super Famicom, la successiva console da casa, mentre Nintendo continuava a sviluppare sia sistemi portatili sia macchine da collegare al televisore.",
+      "after": "Nintendo lanciò il Game Boy nel 1989, con Super Mario Land tra i giochi disponibili all’uscita. Anche Tetris divenne uno dei titoli più legati alla console portatile. Il prezzo, la resistenza e la popolarità dei giochi contribuirono a portare la famiglia Game Boy, compreso il Game Boy Color, oltre i 118 milioni di unità vendute nel mondo; Super Mario Land raggiunse da solo 14 milioni di copie. Nintendo continuò a sviluppare in parallelo console portatili e da casa: nel 1990 uscì in Giappone il Super Famicom."
+    },
+    {
+      "entry_id": "daily-09-23",
+      "feature_id": null,
+      "card_id": "main:18",
+      "language": "it",
+      "field": "heading",
+      "before": "2025 / Nintendo presenta Switch 2",
+      "after": "2025 / Arriva Nintendo Switch 2"
+    },
+    {
+      "entry_id": "daily-09-23",
+      "feature_id": null,
+      "card_id": "main:18",
+      "language": "it",
+      "field": "text",
+      "before": "Nintendo presentò Switch 2 come un'evoluzione della propria console ibrida, con uno schermo più grande e nuovi controller magnetici Joy-Con 2. L'annuncio descriveva la possibilità di utilizzare i controller come un mouse nei programmi compatibili e di giocare a gran parte del catalogo della prima Switch. I nuovi giochi avrebbero sfruttato le capacità del sistema successivo. Queste caratteristiche proseguivano la ricerca dell'azienda sui comandi e sui modi di giocare, una storia rappresentata anche dalle sue carte e dai giocattoli meccanici.",
+      "after": "Nintendo Switch 2 è uscita il 5 giugno 2025. Riprende la formula ibrida della prima Switch, con uno schermo più grande e nuovi controller Joy-Con 2 ad aggancio magnetico, utilizzabili anche come un mouse nei giochi che lo prevedono. La retrocompatibilità permette di giocare a gran parte del catalogo della Switch originale, mentre i titoli destinati al nuovo modello ne sfruttano le caratteristiche. Dalle carte ai giocattoli meccanici fino ai controller, Nintendo ha continuato a cambiare gli oggetti con cui si gioca."
+    },
+    {
+      "entry_id": "daily-09-23",
+      "feature_id": null,
+      "card_id": "main:6",
+      "language": "fr",
+      "field": "text",
+      "before": "Nintendo a lancé Game Boy en 1989, avec Super Mario Land parmi les jeux disponibles au départ. Tetris est également devenu étroitement associé à la console portable. Le prix, la robustesse et la popularité des jeux ont contribué aux 118 millions de ventes de la gamme Game Boy rapportés dans l'historique fourni ; Super Mario Land s'est vendu à lui seul à 14 millions d'exemplaires. Ce même historique situe aussi en 1989 l'annonce de la prochaine console de salon, Super Famicom. Nintendo poursuivait ainsi le développement de ses systèmes portables comme de ceux destinés au téléviseur.",
+      "after": "Nintendo a lancé la Game Boy en 1989, avec Super Mario Land parmi les jeux disponibles dès sa sortie. Tetris est lui aussi devenu étroitement associé à cette console portable. Son prix, sa robustesse et la popularité de ses jeux ont contribué à porter les ventes de la gamme Game Boy, Game Boy Color comprise, au-delà de 118 millions de consoles dans le monde. Super Mario Land s’est vendu à lui seul à 14 millions d’exemplaires. Nintendo a poursuivi en parallèle le développement de ses consoles portables et de salon, avec la sortie de la Super Famicom au Japon en 1990."
+    },
+    {
+      "entry_id": "daily-09-23",
+      "feature_id": null,
+      "card_id": "main:18",
+      "language": "fr",
+      "field": "heading",
+      "before": "2025 / Nintendo présente Switch 2",
+      "after": "2025 / L’arrivée de la Nintendo Switch 2"
+    },
+    {
+      "entry_id": "daily-09-23",
+      "feature_id": null,
+      "card_id": "main:18",
+      "language": "fr",
+      "field": "text",
+      "before": "Nintendo a présenté Switch 2 comme la suite de sa console hybride, avec un écran plus grand et de nouveaux Joy-Con 2 à fixation magnétique. L'annonce décrivait des contrôleurs utilisables comme une souris dans les logiciels compatibles, ainsi qu'une rétrocompatibilité avec une grande partie du catalogue de la première Switch. De nouveaux jeux devaient exploiter les capacités de cette nouvelle machine. Ces fonctions prolongeaient les recherches de l'entreprise sur les commandes et les façons de jouer, dont témoignent aussi ses cartes à jouer et ses jouets mécaniques.",
+      "after": "Sortie le 5 juin 2025, la Nintendo Switch 2 reprend le principe de la console hybride avec un écran plus grand et de nouveaux Joy-Con 2 à fixation magnétique. Ces manettes peuvent aussi servir de souris dans les jeux qui prennent cette fonction en charge. La rétrocompatibilité donne accès à une grande partie du catalogue de la première Switch, tandis que les jeux conçus pour la nouvelle console en exploitent les nouvelles possibilités. Des cartes à jouer aux jouets mécaniques, puis aux manettes, Nintendo a continué à faire évoluer les objets avec lesquels on joue."
+    },
+    {
+      "entry_id": "daily-09-23",
+      "feature_id": null,
+      "card_id": "main:6",
+      "language": "de",
+      "field": "text",
+      "before": "Nintendo veröffentlichte den Game Boy 1989 mit Super Mario Land als einem der Spiele zum Marktstart. Auch Tetris wurde eng mit dem Handheld verbunden. Preis, Robustheit und beliebte Spiele trugen dazu bei, dass die Reihe Game Boy die in der vorliegenden historischen Darstellung genannten 118 Millionen Verkäufe erreichte. Super Mario Land allein verkaufte sich 14 Millionen Mal. Dieselbe Darstellung datiert auch die Ankündigung der nächsten Heimkonsole, des Super Famicom, auf 1989. Nintendo entwickelte damit weiterhin sowohl tragbare Systeme als auch Konsolen für den Fernseher.",
+      "after": "Nintendo brachte den Game Boy 1989 auf den Markt; Super Mario Land gehörte zu den Spielen, die von Beginn an erhältlich waren. Auch Tetris wurde eng mit dem Handheld verbunden. Der Preis, die Robustheit und beliebte Spiele trugen dazu bei, dass weltweit mehr als 118 Millionen Geräte der Game-Boy-Familie einschließlich des Game Boy Color verkauft wurden. Super Mario Land allein erreichte 14 Millionen verkaufte Exemplare. Nintendo entwickelte weiterhin parallel tragbare Geräte und Heimkonsolen: 1990 erschien in Japan das Super Famicom."
+    },
+    {
+      "entry_id": "daily-09-23",
+      "feature_id": null,
+      "card_id": "main:18",
+      "language": "de",
+      "field": "heading",
+      "before": "2025 / Nintendo stellt Switch 2 vor",
+      "after": "2025 / Nintendo Switch 2 kommt auf den Markt"
+    },
+    {
+      "entry_id": "daily-09-23",
+      "feature_id": null,
+      "card_id": "main:18",
+      "language": "de",
+      "field": "text",
+      "before": "Nintendo stellte Switch 2 als Fortsetzung seines Hybridkonsolenkonzepts vor, mit einem größeren Bildschirm und neu gestalteten, magnetisch befestigten Joy-Con 2. Die Ankündigung beschrieb Controller, die in unterstützter Software auch wie eine Maus verwendet werden könnten, sowie Abwärtskompatibilität mit einem großen Teil des Spieleangebots der ersten Switch. Neue Spiele sollten die Möglichkeiten des Nachfolgers nutzen. Damit setzte Nintendo seine Arbeit an unterschiedlichen Steuerungen und Spielweisen fort, deren Geschichte auch von Spielkarten und mechanischem Spielzeug erzählt.",
+      "after": "Nintendo veröffentlichte die Switch 2 am 5. Juni 2025. Sie führt das Hybridkonzept mit einem größeren Bildschirm und neu gestalteten Joy-Con 2 fort, die magnetisch an der Konsole befestigt werden. In Spielen, die diese Funktion unterstützen, lassen sich die Controller auch wie eine Maus verwenden. Dank Abwärtskompatibilität bleibt ein großer Teil des Spieleangebots der ersten Switch zugänglich, während Spiele für die Nachfolgerin deren neue Möglichkeiten nutzen. Von Spielkarten und mechanischem Spielzeug bis hin zu immer neuen Controllern hat Nintendo die Gegenstände, mit denen Menschen spielen, laufend verändert."
+    },
+    {
+      "entry_id": "daily-09-23",
+      "feature_id": null,
+      "card_id": "main:6",
+      "language": "es",
+      "field": "text",
+      "before": "Nintendo lanzó Game Boy en 1989, con Super Mario Land entre los juegos disponibles desde el principio. Tetris también quedó estrechamente ligado a la portátil. El precio, la resistencia y la popularidad de sus juegos contribuyeron a que la gama Game Boy alcanzara los 118 millones de ventas que recoge la historia facilitada; Super Mario Land vendió por sí solo 14 millones de copias. Esa misma historia sitúa en 1989 el anuncio de la siguiente consola doméstica, Super Famicom. Nintendo seguía desarrollando tanto sistemas portátiles como máquinas para jugar en el televisor.",
+      "after": "Nintendo lanzó Game Boy en 1989, con Super Mario Land entre los juegos disponibles desde el primer día. Tetris también quedó estrechamente ligado a la portátil. El precio, la resistencia y la popularidad de sus juegos contribuyeron a que la familia Game Boy, incluida Game Boy Color, superara los 118 millones de unidades vendidas en todo el mundo. Super Mario Land alcanzó por sí solo los 14 millones de copias. Nintendo siguió desarrollando en paralelo consolas portátiles y de sobremesa: en 1990 puso a la venta Super Famicom en Japón."
+    },
+    {
+      "entry_id": "daily-09-23",
+      "feature_id": null,
+      "card_id": "main:18",
+      "language": "es",
+      "field": "heading",
+      "before": "2025 / Nintendo presenta Switch 2",
+      "after": "2025 / Llega Nintendo Switch 2"
+    },
+    {
+      "entry_id": "daily-09-23",
+      "feature_id": null,
+      "card_id": "main:18",
+      "language": "es",
+      "field": "text",
+      "before": "Nintendo presentó Switch 2 como una continuación de su consola híbrida, con una pantalla más grande y unos Joy-Con 2 rediseñados con fijación magnética. El anuncio describía mandos que también podían utilizarse como un ratón en programas compatibles, además de retrocompatibilidad con buena parte del catálogo de la primera Switch. Los nuevos juegos aprovecharían las capacidades de la sucesora. Estas funciones prolongaban el trabajo de la empresa sobre los controles y las formas de jugar, una historia que también reflejan sus cartas y sus juguetes mecánicos.",
+      "after": "Nintendo Switch 2 salió a la venta el 5 de junio de 2025. Conserva el planteamiento híbrido de la primera Switch, con una pantalla más grande y unos nuevos Joy-Con 2 que se acoplan mediante imanes. Los mandos también pueden utilizarse como un ratón en los juegos que admiten esta función. La retrocompatibilidad permite acceder a buena parte del catálogo de la Switch original, mientras que los títulos creados para su sucesora aprovechan sus nuevas posibilidades. Desde las cartas y los juguetes mecánicos hasta los sucesivos mandos, Nintendo ha seguido cambiando los objetos con los que se juega."
+    }
+  ],
+  "closed_issues": [
+    {
+      "target_id": "main:4",
+      "problem": "Il testo di partenza definisce Game & Watch il primo prodotto Nintendo di grande successo, senza precisare il criterio del primato né fornire elementi per confrontarlo con carte e giocattoli precedenti. Il primato non è verificato; la riscrittura conserva i dati della serie senza presentarlo come accertato.",
+      "suggested_action": "Verificare nelle fonti già citate se l'affermazione riguarda i prodotti Nintendo in generale oppure uno specifico settore. Conservare il dato di 43,4 milioni distinguendolo da un eventuale primato, finché quest'ultimo non sia documentato."
+    },
+    {
+      "target_id": "main:6",
+      "problem": "Il totale di 118 milioni è attribuito genericamente alla linea Game Boy: il materiale non esplicita quali modelli includa. La riscrittura mantiene il numero attribuendolo alla ricostruzione fornita, senza assegnarlo al solo modello del 1989.",
+      "suggested_action": "Controllare il perimetro del dato nella fonte citata e specificare i modelli inclusi prima della pubblicazione definitiva."
+    },
+    {
+      "target_id": "main:6",
+      "problem": "Il materiale colloca nel 1989 l'annuncio del Super Famicom, ma non distingue annuncio iniziale e successiva presentazione né riporta il passaggio della fonte a sostegno. La data è conservata come attribuzione alla ricostruzione fornita e resta da verificare.",
+      "suggested_action": "Verificare nella fonte già indicata a quale evento si riferisca il 1989. Correggere o precisare la formulazione solo dopo questa verifica, senza dedurre la data dal lancio del 1990."
+    },
+    {
+      "target_id": "main:18",
+      "problem": "Il riferimento specifico per Switch 2 è un annuncio ufficiale, mentre il testo di partenza parla di nuovi giochi come già disponibili. Il materiale fornito non contiene una conferma separata dell'uscita. La riscrittura descrive quindi le caratteristiche annunciate senza dichiarare avvenuto il lancio.",
+      "suggested_action": "Se la card deve descrivere il prodotto dopo l'uscita, verificare l'effettivo lancio e la disponibilità dei giochi con documentazione appropriata; altrimenti mantenere il punto di vista dell'annuncio."
+    }
+  ],
+  "closed_issue_count": 4,
+  "output_file": "001-catalog/OUTPUT-001-catalog.json",
+  "output_sha256_before": "cfca41ea4616967cc2127cb8e1f42449f9894ba98d05f2ffdd1c7c707740d149",
+  "output_sha256_after": "8d9699a5a84b142478102e277f644cca61c6a50ed9b06142de92fac0f462d420",
+  "preservation": {
+    "all_other_entries_and_fields_unchanged": true,
+    "all_original_inputs_and_templates_unchanged": true,
+    "catalog_modified": false,
+    "original_attributions_and_licenses_preserved_in_input": true
+  },
+  "unresolved_factual_questions_in_listed_editorial_scope": [],
+  "scope_limit": "Questa verifica riguarda soltanto i quattro issues Nintendo elencati. Gli altri issues del lotto 001 e degli altri lotti non sono dichiarati risolti.",
+  "independent_review_adjustments": [
+    {
+      "file": "OUTPUT-001-catalog.json",
+      "entry_id": "daily-09-23",
+      "feature_id": null,
+      "card_id": "main:6",
+      "language": "fr",
+      "field": "text",
+      "before": "Nintendo a lancé la Game Boy en 1989, avec Super Mario Land parmi les jeux disponibles dès sa sortie. Tetris est lui aussi devenu indissociable de la console portable. Son prix, sa robustesse et la popularité de ses jeux ont contribué au succès de la famille Game Boy, qui, Game Boy Color comprise, a dépassé les 118 millions d’exemplaires vendus dans le monde. Super Mario Land s’est vendu à lui seul à 14 millions d’exemplaires. Nintendo a poursuivi en parallèle le développement de ses consoles portables et de salon, avec la sortie de la Super Famicom au Japon en 1990.",
+      "after": "Nintendo a lancé la Game Boy en 1989, avec Super Mario Land parmi les jeux disponibles dès sa sortie. Tetris est lui aussi devenu étroitement associé à cette console portable. Son prix, sa robustesse et la popularité de ses jeux ont contribué à porter les ventes de la gamme Game Boy, Game Boy Color comprise, au-delà de 118 millions de consoles dans le monde. Super Mario Land s’est vendu à lui seul à 14 millions d’exemplaires. Nintendo a poursuivi en parallèle le développement de ses consoles portables et de salon, avec la sortie de la Super Famicom au Japon en 1990.",
+      "reason": "Indissociable intensifica l’inglese closely associated. La nuova frase riallinea la portata e scioglie l’inciso qui, ... , a; gamme è naturale per una serie di prodotti e consoles distingue chiaramente hardware e copie del gioco citate subito dopo."
+    },
+    {
+      "file": "OUTPUT-001-catalog.json",
+      "entry_id": "daily-09-23",
+      "feature_id": null,
+      "card_id": "main:6",
+      "language": "de",
+      "field": "text",
+      "before": "Nintendo brachte den Game Boy 1989 auf den Markt; Super Mario Land gehörte zu den Spielen, die von Beginn an erhältlich waren. Auch Tetris wurde eng mit dem Handheld verbunden. Der Preis, die Robustheit und beliebte Spiele trugen dazu bei, dass sich die Game-Boy-Familie einschließlich des Game Boy Color weltweit mehr als 118 Millionen Mal verkaufte. Super Mario Land allein erreichte 14 Millionen verkaufte Exemplare. Nintendo entwickelte weiterhin parallel tragbare Geräte und Heimkonsolen: 1990 erschien in Japan das Super Famicom.",
+      "after": "Nintendo brachte den Game Boy 1989 auf den Markt; Super Mario Land gehörte zu den Spielen, die von Beginn an erhältlich waren. Auch Tetris wurde eng mit dem Handheld verbunden. Der Preis, die Robustheit und beliebte Spiele trugen dazu bei, dass weltweit mehr als 118 Millionen Geräte der Game-Boy-Familie einschließlich des Game Boy Color verkauft wurden. Super Mario Land allein erreichte 14 Millionen verkaufte Exemplare. Nintendo entwickelte weiterhin parallel tragbare Geräte und Heimkonsolen: 1990 erschien in Japan das Super Famicom.",
+      "reason": "Formulazione più concreta e idiomatica: si vendono i dispositivi, non la famiglia come oggetto singolo. Perimetro, numero e nomi restano identici. Game-Boy-Familie è un composto tedesco grammaticalmente normale e non richiede una correzione del nome ufficiale."
+    },
+    {
+      "file": "OUTPUT-001-catalog.json",
+      "entry_id": "daily-09-23",
+      "feature_id": null,
+      "card_id": "main:18",
+      "language": "fr",
+      "field": "text",
+      "before": "Sortie le 5 juin 2025, la Nintendo Switch 2 reprend le principe de la console hybride avec un écran plus grand et de nouveaux Joy-Con 2 à fixation magnétique. Ces manettes peuvent aussi servir de souris dans les jeux compatibles. La rétrocompatibilité donne accès à une grande partie du catalogue de la première Switch, tandis que les jeux conçus pour sa remplaçante en exploitent les nouvelles possibilités. Des cartes à jouer aux jouets mécaniques, puis aux manettes, Nintendo a continué à faire évoluer les objets avec lesquels on joue.",
+      "after": "Sortie le 5 juin 2025, la Nintendo Switch 2 reprend le principe de la console hybride avec un écran plus grand et de nouveaux Joy-Con 2 à fixation magnétique. Ces manettes peuvent aussi servir de souris dans les jeux qui prennent cette fonction en charge. La rétrocompatibilité donne accès à une grande partie du catalogue de la première Switch, tandis que les jeux conçus pour la nouvelle console en exploitent les nouvelles possibilités. Des cartes à jouer aux jouets mécaniques, puis aux manettes, Nintendo a continué à faire évoluer les objets avec lesquels on joue.",
+      "reason": "Rende esplicito che compatibilità significa supporto della funzione mouse, distinto dalla retrocompatibilità della frase successiva. Nouvelle console alleggerisce il riferimento alla successora senza far pensare a un ritiro della prima Switch."
+    },
+    {
+      "file": "OUTPUT-001-catalog.json",
+      "entry_id": "daily-09-23",
+      "feature_id": null,
+      "card_id": "main:18",
+      "language": "es",
+      "field": "text",
+      "before": "Nintendo Switch 2 salió a la venta el 5 de junio de 2025. Conserva el planteamiento híbrido de la primera Switch, con una pantalla más grande y unos nuevos Joy-Con 2 que se acoplan mediante imanes. Los mandos también pueden utilizarse como un ratón en los juegos compatibles. La retrocompatibilidad permite acceder a buena parte del catálogo de la Switch original, mientras que los títulos creados para su sucesora aprovechan sus nuevas posibilidades. Desde las cartas y los juguetes mecánicos hasta los sucesivos mandos, Nintendo ha seguido cambiando los objetos con los que se juega.",
+      "after": "Nintendo Switch 2 salió a la venta el 5 de junio de 2025. Conserva el planteamiento híbrido de la primera Switch, con una pantalla más grande y unos nuevos Joy-Con 2 que se acoplan mediante imanes. Los mandos también pueden utilizarse como un ratón en los juegos que admiten esta función. La retrocompatibilidad permite acceder a buena parte del catálogo de la Switch original, mientras que los títulos creados para su sucesora aprovechan sus nuevas posibilidades. Desde las cartas y los juguetes mecánicos hasta los sucesivos mandos, Nintendo ha seguido cambiando los objetos con los que se juega.",
+      "reason": "Esplicita la limitazione della funzione mouse ai giochi che la supportano; evita la possibile confusione con compatibilità generale o retrocompatibilità. È una precisazione semantica, non un nuovo fatto."
+    }
+  ],
+  "independent_language_review_completed": true
+}

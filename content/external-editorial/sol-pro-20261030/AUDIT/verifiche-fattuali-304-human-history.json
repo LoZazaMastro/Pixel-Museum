@@ -1,0 +1,742 @@
+{
+  "batch_id": "304-human-history",
+  "sources": [
+    {
+      "source_id": "mac_release",
+      "title": "Apple Introduces Macintosh Advanced Personal Computer, 24 January 1984, Stanford archive",
+      "url": "https://web.stanford.edu/dept/SUL/sites/mac/primary/docs/pr1.html",
+      "verification_scope": "Comunicato originale Apple consultato: disponibilità immediata presso i concessionari il 24 gennaio, prezzo 2.495 dollari. Non soltanto annuncio di futura vendita."
+    },
+    {
+      "source_id": "mac_specs",
+      "title": "Macintosh 128K technical specifications, Apple",
+      "url": "https://support.apple.com/en-ke/112190",
+      "verification_scope": "Scheda del produttore consultata per identità e introduzione del modello."
+    },
+    {
+      "source_id": "mac_collection",
+      "title": "Apple Macintosh 128K, Centre for Computing History",
+      "url": "https://www.computinghistory.org.uk/det/16643/Apple-Macintosh-128K/",
+      "verification_scope": "Catalogazione della collezione: involucro, schermo, commercial, 70.000 unità al 3 maggio e rinomina. Per la cifra di vendita ripete un dato presente nell'INPUT: non trattata come prova primaria indipendente di contabilità Apple."
+    },
+    {
+      "source_id": "mac_dtp",
+      "title": "Desktop Publishing, Computer History Museum",
+      "url": "https://www.computerhistory.org/revolution/personal-computers/17/306",
+      "verification_scope": "Ricostruzione museale: ruolo successivo di Macintosh con PageMaker e LaserWriter nel 1985. Corretto il nesso temporale, senza aggiungere una nuova card o attribuire tutto al solo modello 128K."
+    },
+    {
+      "source_id": "cpi_1984",
+      "title": "BLS annual CPI-U, Federal Reserve Bank of St Louis",
+      "url": "https://fred.stlouisfed.org/data/USACPIBLS",
+      "verification_scope": "Media 1984 103,9 già consultata nel lotto303; riuso dello stesso riscontro."
+    },
+    {
+      "source_id": "cpi_2025",
+      "title": "Federal Register, dato statistico BLS 2025",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-09-30/html/2026-20016.htm",
+      "verification_scope": "Media CPI-U 2025 321,943 già verificata nel lotto303; 2495×321,943/103,9=7730,9700. La cifra originale circa 7.700 resta corretta arrotondando alle centinaia."
+    },
+    {
+      "source_id": "neuromancer_library",
+      "title": "Neuromancer, Salina Public Library catalogue",
+      "url": "https://discover.salinapubliclibrary.org/Record/63?page=1&recordIndex=1&referred=resultIndex&searchId=28001957",
+      "verification_scope": "Nota bibliografica consultata che trascrive il verso del frontespizio: prima edizione paperback Ace luglio 1984. Nessun giorno dedotto dal primo del mese delle ristampe digitali."
+    },
+    {
+      "source_id": "neuromancer_bibliography",
+      "title": "William Gibson bibliography, Readercon 8 souvenir book",
+      "url": "https://fanac.org/conpubs/Readercon/Readercon%208/Readercon%208%20Souvenir%20Book.pdf",
+      "verification_scope": "Estratto della bibliografia dell'evento: Neuromancer luglio1984, Count Zero1986, Mona Lisa Overdrive1988, Burning Chrome su Omni luglio1982. Non letto integralmente il volume."
+    },
+    {
+      "source_id": "gibson_interview",
+      "title": "Intervista a William Gibson in Interzone13, citata in The Metaphysical Review11/12/13",
+      "url": "https://fanac.org/fanzines/Metaphysical_Review/Metaphysical_Review11.pdf",
+      "verification_scope": "Letto il passaggio a p.27: Gibson identifica esplicitamente Omni luglio1982 come fascicolo del suo Burning Chrome. Non letti integralmente tutti i124 fogli; nessuna imitazione dello stile dell'autore."
+    },
+    {
+      "source_id": "neverending_ffa",
+      "title": "Filmhitliste, Filmförderungsanstalt",
+      "url": "https://www.ffa.de/files/ffa/foerderungen-ffa/sonderfoerderung%20kino/Filmhitliste_2025_sortiert_2025_03_13.pdf",
+      "verification_scope": "Consultata riga p.26 del PDF: Die unendliche Geschichte I, uscita6aprile1984. Non dichiarata lettura integrale delle89pagine."
+    },
+    {
+      "source_id": "neverending_premiere",
+      "title": "Die unendliche Geschichte, filmportal",
+      "url": "https://www.filmportal.de/film/die-unendliche-geschichte_2ca928f44e76401c976a0fa0fd0bdba6",
+      "verification_scope": "Scheda: prima mondiale4aprile1984Monaco. Distinta dall'uscita commerciale6aprile già corretta nell'INPUT."
+    },
+    {
+      "source_id": "neverending_credits",
+      "title": "Die unendliche Geschichte, Deutsche Film- und Medienbewertung",
+      "url": "https://www.fbw-filmbewertung.com/film/die_unendliche_geschichte",
+      "verification_scope": "Letti crediti ufficiali e sinossi: Petersen, Ende e Doldinger. Non trasferiti nuovi interpreti o giudizi della commissione nella riscrittura."
+    },
+    {
+      "source_id": "neverending_moroder",
+      "title": "The NeverEnding Story, Giorgio Moroder",
+      "url": "https://www.giorgiomoroder.com/music/the-neverending-story/",
+      "verification_scope": "Letta la scheda del compositore con contributo alla colonna sonora e Limahl. Nessun ascolto o visione dei contenuti incorporati dichiarato; nessun verso citato."
+    },
+    {
+      "source_id": "st_distribution",
+      "title": "More ST Products Coming, Antic1985",
+      "url": "https://www.atarimagazines.com/v4n5/morestproducts.php",
+      "verification_scope": "Articolo contemporaneo con dichiarazioni del vicepresidente Atari: computer già sugli scaffali canadesi e dell'Europa occidentale entro giugno, negozi specializzati USA in luglio. Distinte unità per gruppi di utenti e distribuzione ordinaria."
+    },
+    {
+      "source_id": "st_interview",
+      "title": "Three Years with the ST, Jeffrey Daniels, STart summer1988",
+      "url": "https://www.atarimagazines.com/startv3n1/threeyearsofst.html",
+      "verification_scope": "Letto articolo con interviste originali Shivji/Frick: prototipi agli sviluppatori in primavera, prima produzione giugno1985, progettazione e port GEM da PC; 1040ST e soglia prezzo/memoria documentata in Byte marzo1986. Non letto l'intero fascicolo."
+    },
+    {
+      "source_id": "gem_contemporary",
+      "title": "Personal Computer World, febbraio1985, catalogazione del fascicolo",
+      "url": "https://www.computinghistory.org.uk/det/800/Personal-Computer-World-February-1985/",
+      "verification_scope": "Indice contemporaneo conservato dal museo: GEM già disponibile per Acorn, IBM, Apricot e Atari. Riscontro del contesto febbraio1985; non letta integralmente la rivista. Evitato il primato assoluto dell'ST come primo PC con GUI a colori."
+    },
+    {
+      "source_id": "future_official",
+      "title": "Back to the Future, official film page",
+      "url": "https://www.backtothefuture.com/movies/backtothefuture1",
+      "verification_scope": "Scheda ufficiale consultata: uscita3luglio1985, autore/regista e vicenda. Non visionati film o materiali incorporati."
+    },
+    {
+      "source_id": "liveaid_venue",
+      "title": "About Live Aid, Wembley Stadium",
+      "url": "https://www.wembleystadium.com/about/Live-Aid-40th-Anniversary/About-Live-Aid",
+      "verification_scope": "Fonte del luogo ospitante:13luglio1985, due stadi e scopo benefico. Offre una diversa stima di audience: non usata per fingere consenso su1,9miliardi."
+    },
+    {
+      "source_id": "liveaid_exhibit",
+      "title": "Live Aid40, British Music Experience",
+      "url": "https://www.britishmusicexperience.com/liveaid40",
+      "verification_scope": "Mostra basata sull'archivio personale di Geldof: stime diverse e limite superiore1,9miliardi, circa40% popolazione, oltre150paesi. Cifra presentata come stima attribuita."
+    },
+    {
+      "source_id": "liveaid_mccartney",
+      "title": "On This Day: Live Aid, Paul McCartney",
+      "url": "https://www.paulmccartney.com/news/on-this-day-live-aid",
+      "verification_scope": "Ricordo ufficiale di un partecipante: organizzazione Geldof/Ure, global jukebox e stima1,9miliardi/150paesi. Non aggiunte cifre discordanti sugli spettatori negli stadi."
+    },
+    {
+      "source_id": "ghibli_company",
+      "title": "Studio Ghibli company profile",
+      "url": "https://www.ghibli.jp/profile/",
+      "verification_scope": "Pagina aziendale aggiornata giugno2026 letta: sede Koganei, nascita delle attività giugno1985 sotto Tokuma, successiva storia societaria.1985 non equivale automaticamente alla costituzione della società legale attuale del2005."
+    },
+    {
+      "source_id": "ghibli_history",
+      "title": "Studio Ghibli history",
+      "url": "https://www.ghibli.jp/history/",
+      "verification_scope": "Letta storia ufficiale: Miyazaki,Takahata,Suzuki,Tokuma,trasferimentoKoganei e Totoro come emblema. Nessuna equiparazione del giugno1985 con nascita dei registi."
+    },
+    {
+      "source_id": "ghibli_opening",
+      "title": "Studio Ghibli Monogatari, a cura di Toshio Suzuki, estratto su President Online",
+      "url": "https://president.jp/articles/-/70712?page=3",
+      "verification_scope": "Estratto del libro sotto la responsabilità editoriale di Suzuki: apertura studio15giugno1985. Non letto il libro intero."
+    },
+    {
+      "source_id": "ghibli_topcraft",
+      "title": "Studio Ghibli Monogatari, estratto sulla formazione dello studio",
+      "url": "https://president.jp/articles/-/70712?page=2",
+      "verification_scope": "Passaggio letto: Toru Hara da Topcraft entra nella direzione operativa; società collegata a Tokuma e ricerca dei locali. Il legame con Topcraft è descritto come continuità di persone, senza attestare un acquisto di beni non documentato qui."
+    },
+    {
+      "source_id": "world_breskin",
+      "title": "We Are the World: Historic Songfest, David Breskin, Life aprile1985",
+      "url": "https://davidbreskin.com/magazines/3-features/historic-songfest/",
+      "verification_scope": "Letto reportage originale del giornalista presente in studio: base registrata22gennaio, revisioni anche in quella sessione, demo inviata24gennaio e grande sessione28. Risolve la falsa prima sessione del28 e la scrittura finita tutta la notte prima."
+    },
+    {
+      "source_id": "world_official",
+      "title": "USA for Africa official site",
+      "url": "https://usaforafrica.org/",
+      "verification_scope": "Pagina ufficiale: autori, produttore e sessione collettiva28gennaio1985. Nessuna equiparazione a prima registrazione."
+    },
+    {
+      "source_id": "world_artist_release",
+      "title": "We Are the World, official artist video description",
+      "url": "https://www.youtube.com/watch?v=182f6dTagkU",
+      "verification_scope": "Letta soltanto descrizione del canale ufficiale USA for Africa, pubblicata20novembre2025: uscita originale7marzo1985. Nessuna visione integrale dichiarata."
+    },
+    {
+      "source_id": "world_label_metadata",
+      "title": "We Are the World, Apple Music, ©1985USAforAfrica",
+      "url": "https://music.apple.com/us/album/we-are-the-world-single/41737866",
+      "verification_scope": "Metadati distributivi del titolare:7marzo1985. Concordano con descrizione ufficiale dedicata al brano."
+    },
+    {
+      "source_id": "world_timeline_conflict",
+      "title": "Hands Across America, USA for Africa",
+      "url": "https://usaforafrica.org/hands-across-america/",
+      "verification_scope": "Cronologia generale consultata riporta8marzo. Valutata contro metadati specifici del singolo e recente descrizione ufficiale che concordano sul7; non nascosta la divergenza nell'audit."
+    },
+    {
+      "source_id": "world_sales",
+      "title": "We Are the World at30, ABC News",
+      "url": "https://abcnews.com/amp/Entertainment/world-30-years-recording-classic-song/story?id=28547921",
+      "verification_scope": "Articolo2015: oltre20milioni di copie. Riscontro giornalistico secondario, non certificazione delle vendite fisiche globali; nel testo quantità qualificata come riportata."
+    },
+    {
+      "source_id": "world_foundation",
+      "title": "The Song, We Are the World Foundation",
+      "url": "https://wearetheworldfoundation.org/the-song/",
+      "verification_scope": "Pagina ufficiale del progetto2010: cifre aggregate di album/singoli/cassette e download con perimetro diverso, non una classifica comparabile universale. Non usata per attestare l'ottavo posto dell'INPUT."
+    },
+    {
+      "source_id": "amiga_cloanto",
+      "title": "Amiga ROM/Kickstart machine documentation, Cloanto",
+      "url": "https://cloanto.com/amiga/roms/help/machine.html",
+      "verification_scope": "Documentazione tecnica del produttore di Amiga Forever letta: caricamento da floppy in256KBWCS, poi protezione in scrittura. Corretto l'errato riferimento a una ROM fissa sull'A1000."
+    },
+    {
+      "source_id": "amiga_manual",
+      "title": "Commodore Amiga1000 Assembly and Component Level Repair, copia del manuale",
+      "url": "https://amiga.net.au/files/Tech_Amiga/Commodore_Amiga_Computer_Model_1000_Assembly_and_Component_Level_Repair.pdf",
+      "verification_scope": "Consultato estratto indicizzato originale sulle procedure con Kickstart/Workbench. PDF integrale non aperto dal motore per dimensione eccessiva: nessuna lettura completa dichiarata."
+    },
+    {
+      "source_id": "amiga_programmer",
+      "title": "Amiga System Programmer's Guide, Abacus1988",
+      "url": "https://www.ikod.se/wp-content/uploads/2018/10/Amiga_System_Programmers_Guide_1988_Abacus.pdf",
+      "verification_scope": "Estratto tecnico originale: RAM Kickstart256KB resa non scrivibile dopo caricamento; distinzione fra RAM di sistema e memoria di lavoro."
+    },
+    {
+      "source_id": "amiga_release_retrospective",
+      "title": "Chicago Tribune, intervista a Thomas Rattigan, riproduzione contemporanea Usenet3marzo1987",
+      "url": "https://groups.google.com/g/comp.sys.amiga/c/ax165dtbGs8",
+      "verification_scope": "Letta riproduzione del resoconto con dichiarazioni del presidente Commodore: introduzione sul mercato settembre1985 e vendite fino a fine1986. Fonte di stampa riportata da terzi, non archivio originale Tribune; utilizzata per precisione mensile con riscontro storico, senza inventare il primo giorno o uniformità di consegne."
+    },
+    {
+      "source_id": "amiga_history",
+      "title": "Commodore Amiga1000, IT History Society",
+      "url": "https://www.ithistory.org/node/11608",
+      "verification_scope": "Scheda storica: presentazione23luglio e spedizioni settembre1985. Questa sola scheda non dimostra giorno di vendita: la proposta resta mensile e la prosa annuale."
+    },
+    {
+      "source_id": "chernobyl_iaea",
+      "title": "Chernobyl's Legacy, IAEA/Chernobyl Forum",
+      "url": "https://www.iaea.org/sites/default/files/chernobyl.pdf",
+      "verification_scope": "Consultati estratti del rapporto: circa600.000liquidatori, decessi immediati da trauma distinti da28decessi per sindrome acuta nel1986. Conservato oltre500.000 dell'INPUT e chiarito il tipo di mortalità, senza nuovo totale dei decessi a lungo termine."
+    },
+    {
+      "source_id": "chernobyl_who",
+      "title": "Radiation: The Chernobyl accident, WHO",
+      "url": "https://www.who.int/news-room/questions-and-answers/item/radiation-the-chernobyl-accident",
+      "verification_scope": "Pagina consultata:26aprile1986, rilascio radioattivo e28lavoratori morti nei primi tre mesi. L'esplosione da sola non viene descritta come causa immediata di decine di morti."
+    },
+    {
+      "source_id": "chernobyl_archive",
+      "title": "Chernobyl accident, IAEA Archives",
+      "url": "https://archives-catalogue.iaea.org/Search6/search/simple",
+      "verification_scope": "Scheda istituzionale: reattore4, test a bassa potenza, perdita di controllo e rilascio. Nessuna nuova ricostruzione tecnica oltre il perimetro della voce."
+    }
+  ],
+  "decisions": [
+    {
+      "target_id": "history-1984-macintosh-128k",
+      "problem": "Non attribuire al solo128K tutta la successiva diffusione del desktop publishing; distinguere spot e vendita.",
+      "conclusion": "Mantenuti tutti i componenti, dimensioni, periferi­che, prezzo, equivalenza2025 arrotondata, vendite70.000 e rinomina. Il ruolo nell'impaginazione è collocato come sviluppo successivo della piattaforma. Confermata disponibilità24gennaio1984.",
+      "source_ids": [
+        "mac_release",
+        "mac_specs",
+        "mac_collection",
+        "mac_dtp",
+        "cpi_1984",
+        "cpi_2025"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1984-neuromancer",
+      "problem": "Burning Chrome è datato1981 nell'INPUT, ma la pubblicazione è del1982.",
+      "conclusion": "Corretto al1982 usando dichiarazione di Gibson e bibliografia;1981 è associato a una lettura pubblica e non diventa release. Neuromancer collocato a luglio1984 con precisione mensile. Conservati trama, trilogia, influenze, cyberspazio e collegamento corporeo.",
+      "source_ids": [
+        "neuromancer_library",
+        "neuromancer_bibliography",
+        "gibson_interview"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1984-the-neverending-story",
+      "problem": "Sommario lungo e identico alla prima card; distinguere prima4aprile da uscita6aprile.",
+      "conclusion": "Sommario breve sul rapporto fra lettore e avventura. Conservate tutte e tre le card nell'ordine originale, trama, materiali, Falkor e doppia identità musicale. Data6aprile1984 confermata.",
+      "source_ids": [
+        "neverending_ffa",
+        "neverending_premiere",
+        "neverending_credits",
+        "neverending_moroder"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1985-atari-st",
+      "problem": "Distribuzione agli sviluppatori non equivale a vendita; primato assoluto sulla GUI a colori troppo ampio.",
+      "conclusion": "Distinte macchine agli sviluppatori in primavera, negozi canadesi/europei entrogiugno e USA luglio. GEM già disponibile su altri computer entrofebbraio, perciò non assegnato un primato universale. Conservati ogni dato tecnico, nome, famiglia confrontata, rapporto prezzo/RAM e cinque mesi di sviluppo. Timeline annuale1985 mantenuta.",
+      "source_ids": [
+        "st_distribution",
+        "st_interview",
+        "gem_contemporary"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1985-back-to-the-future",
+      "problem": "Legare il film alla disponibilità cinematografica, conservando genesi e intreccio.",
+      "conclusion": "Uscita USA3luglio1985. Conservati Marty, DeLorean,1955/1985, genitori, Brown, autori,1980, rifiuti,Universal eFox.",
+      "source_ids": [
+        "future_official"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1985-live-aid",
+      "problem": "Stima di audience presentata come conteggio uniforme.",
+      "conclusion": "1,9miliardi,150paesi e circa40% mantenuti ma resi esplicitamente limite superiore stimato e attribuito alla mostra basata sull'archivio di Geldof. Conservati entrambi gli stadi, sabato13luglio,organizzatori,carestia1983–1985,singolo dicembre1984 e tutti i sette paesi degli altri concerti.",
+      "source_ids": [
+        "liveaid_venue",
+        "liveaid_exhibit",
+        "liveaid_mccartney"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1985-studio-ghibli",
+      "problem": "Non confondere avvio dello studio, società attuale, ruoli fondativi e acquisto di beni; non attribuire intenzioni visive non documentate.",
+      "conclusion": "Apertura15giugno1985 attestata dall'estratto del libro curato daSuzuki. Preservati Miyazaki,Takahata,Suzuki e legameTopcraft mediante continuità di personale documentata; esplicitatoTokuma. La specifica acquisizione di beni non è confermata da queste fonti e non viene affermata. Totoro descritto per somiglianze animali dell'INPUT, senza dichiarare motivazioni diMiyazaki. Mantenuti tutti i film/anni e due filmTV.",
+      "source_ids": [
+        "ghibli_company",
+        "ghibli_history",
+        "ghibli_opening",
+        "ghibli_topcraft"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1985-we-are-the-world",
+      "problem": "Cronologia delle sessioni errata; giorno7/8marzo diverge; ottavo posto universale privo di perimetro verificabile.",
+      "conclusion": "Prima sessione22gennaio distinta dalla collettiva28, con revisioni durante il lavoro. Uscita7marzo privilegiata per concordanza tra descrizione ufficiale dedicata e metadati del titolare, rispetto al prospetto generale8marzo. Oltre20milioni conservato come cifra riportata, non certificata. Eliminato il solo ottavo posto assoluto: non è dimostrato con una graduatoria mondiale comparabile e non viene dichiarato verificato. Tutti gli artisti,ruoli,album e scopo restano.",
+      "source_ids": [
+        "world_breskin",
+        "world_official",
+        "world_artist_release",
+        "world_label_metadata",
+        "world_timeline_conflict",
+        "world_sales",
+        "world_foundation"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1985-amiga-1000",
+      "problem": "23luglio è presentazione; Kickstart non risiede in una ROM fissa; memoria di sistema distinta dalla RAM di lavoro.",
+      "conclusion": "Proposta commercializzazione settembre1985 con precisione mensile, prosa annuale per non promettere un giorno universale. Corretto caricamento256KBWCS protetta e preservati256KBstandard,modulo256,total512 ed espansione8,5MB,68000 e multitasking spiegato.",
+      "source_ids": [
+        "amiga_cloanto",
+        "amiga_manual",
+        "amiga_programmer",
+        "amiga_release_retrospective",
+        "amiga_history"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1986-chernobyl-disaster",
+      "problem": "L'esplosione non uccise immediatamente tutte le decine di vittime dirette.",
+      "conclusion": "Distinte lesioni ed effetti acuti delle radiazioni, conservati test,calo di potenza,instabilità,difetti,surge,spegnimento,zona di esclusione,oltre500.000addetti,scalaINES e conseguenze. Nessun totale ipotetico delle vittime a lungo termine introdotto.",
+      "source_ids": [
+        "chernobyl_iaea",
+        "chernobyl_who",
+        "chernobyl_archive"
+      ],
+      "text_applied": true
+    }
+  ],
+  "metadata_proposals": [
+    {
+      "target_id": "history-1984-macintosh-128k",
+      "field": "timeline_date",
+      "original": {
+        "year": 1984,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1984,
+        "month": 1,
+        "day": 24,
+        "precision": "day",
+        "event_semantics": "Disponibilità commerciale del Macintosh",
+        "region": "Stati Uniti"
+      },
+      "source_ids": [
+        "mac_release"
+      ],
+      "reason": "Proposta documentata separata; nessuna modifica a INPUT,TEMPLATE,media o catalogo."
+    },
+    {
+      "target_id": "history-1984-neuromancer",
+      "field": "timeline_date",
+      "original": {
+        "year": 1984,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1984,
+        "month": 7,
+        "day": 0,
+        "precision": "month",
+        "event_semantics": "Pubblicazione prima edizione Ace",
+        "region": "Stati Uniti"
+      },
+      "source_ids": [
+        "neuromancer_library",
+        "neuromancer_bibliography"
+      ],
+      "reason": "Proposta documentata separata; nessuna modifica a INPUT,TEMPLATE,media o catalogo."
+    },
+    {
+      "target_id": "history-1985-back-to-the-future",
+      "field": "timeline_date",
+      "original": {
+        "year": 1985,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1985,
+        "month": 7,
+        "day": 3,
+        "precision": "day",
+        "event_semantics": "Uscita cinematografica commerciale",
+        "region": "Stati Uniti"
+      },
+      "source_ids": [
+        "future_official"
+      ],
+      "reason": "Proposta documentata separata; nessuna modifica a INPUT,TEMPLATE,media o catalogo."
+    },
+    {
+      "target_id": "history-1985-live-aid",
+      "field": "timeline_date",
+      "original": {
+        "year": 1985,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1985,
+        "month": 7,
+        "day": 13,
+        "precision": "day",
+        "event_semantics": "Concerto benefico e trasmissione Live Aid",
+        "region": "Londra e Filadelfia"
+      },
+      "source_ids": [
+        "liveaid_venue",
+        "liveaid_exhibit"
+      ],
+      "reason": "Proposta documentata separata; nessuna modifica a INPUT,TEMPLATE,media o catalogo."
+    },
+    {
+      "target_id": "history-1985-studio-ghibli",
+      "field": "timeline_date",
+      "original": {
+        "year": 1985,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1985,
+        "month": 6,
+        "day": 15,
+        "precision": "day",
+        "event_semantics": "Apertura dello studio d'animazione",
+        "region": "Giappone"
+      },
+      "source_ids": [
+        "ghibli_opening",
+        "ghibli_company"
+      ],
+      "reason": "Proposta documentata separata; nessuna modifica a INPUT,TEMPLATE,media o catalogo."
+    },
+    {
+      "target_id": "history-1985-we-are-the-world",
+      "field": "timeline_date",
+      "original": {
+        "year": 1985,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1985,
+        "month": 3,
+        "day": 7,
+        "precision": "day",
+        "event_semantics": "Uscita commerciale del singolo",
+        "region": "Stati Uniti"
+      },
+      "source_ids": [
+        "world_artist_release",
+        "world_label_metadata"
+      ],
+      "reason": "Proposta documentata separata; nessuna modifica a INPUT,TEMPLATE,media o catalogo."
+    },
+    {
+      "target_id": "history-1985-amiga-1000",
+      "field": "timeline_date",
+      "original": {
+        "year": 1985,
+        "month": 7,
+        "day": 23,
+        "precision": "day"
+      },
+      "proposed": {
+        "year": 1985,
+        "month": 9,
+        "day": 0,
+        "precision": "month",
+        "event_semantics": "Introduzione sul mercato dell'Amiga1000",
+        "region": "Stati Uniti"
+      },
+      "source_ids": [
+        "amiga_release_retrospective",
+        "amiga_history"
+      ],
+      "reason": "Proposta documentata separata; nessuna modifica a INPUT,TEMPLATE,media o catalogo."
+    },
+    {
+      "target_id": "history-1986-chernobyl-disaster",
+      "field": "timeline_date",
+      "original": {
+        "year": 1986,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1986,
+        "month": 4,
+        "day": 26,
+        "precision": "day",
+        "event_semantics": "Incidente al reattore4",
+        "region": "Ucraina sovietica"
+      },
+      "source_ids": [
+        "chernobyl_who",
+        "chernobyl_archive"
+      ],
+      "reason": "Proposta documentata separata; nessuna modifica a INPUT,TEMPLATE,media o catalogo."
+    }
+  ],
+  "editorial_review": {
+    "fidelity": "Confrontate12card conINPUT. Sostanza e dati conservati salvo rettifiche documentate: primati e graduatorie assolute non sostenute sostituiti da formulazioni verificabili; nessuna quota di card ottenuta dividendo il materiale.",
+    "language_review": "EN prima, poiIT/FR/DE/ES. Rilettura: corretti riferimento francese alla trilogiaSprawl, formulazione italiana della potenza del reattore e sintassi relativa alla memoria. Titoli ufficiali e brani invariati.",
+    "dates": "Release distinte da spot,annunci,sessioni musicali,prototipi,première; fondazione studio/eventi storici conservati come tali. Date proposte separate, originali e catalogo immutati.",
+    "rights": "Provenienza,revisioni e licenze originali mantenute. Audit distingue fonti primarie,riscontri secondari e riproduzioni; descrizioni di video lette senza dichiarare visione. Nessuna riproduzione di testi o versi delle opere.",
+    "english_written_first": true,
+    "languages": [
+      "en",
+      "it",
+      "fr",
+      "de",
+      "es"
+    ],
+    "entry_count": 10,
+    "card_count_per_language": 12,
+    "reviewed_at": "2026-10-30T07:12:32.257593+00:00",
+    "english_summary_word_range": [
+      33,
+      40
+    ],
+    "structural_checks": "Schema, ID, ordine, numero di card e cinque lingue verificati dal validatore. Tutti i titoli presenti; nessun HTML o Markdown nei testi."
+  },
+  "status": "completed",
+  "validation": {
+    "valid": true,
+    "batch_id": "304-human-history",
+    "completed": true,
+    "entry_count": 10,
+    "card_count_per_language": 12,
+    "language_count": 5,
+    "translated_card_count": 60,
+    "entry_card_counts": {
+      "history-1984-macintosh-128k": 1,
+      "history-1984-neuromancer": 1,
+      "history-1984-the-neverending-story": 3,
+      "history-1985-atari-st": 1,
+      "history-1985-back-to-the-future": 1,
+      "history-1985-live-aid": 1,
+      "history-1985-studio-ghibli": 1,
+      "history-1985-we-are-the-world": 1,
+      "history-1985-amiga-1000": 1,
+      "history-1986-chernobyl-disaster": 1
+    },
+    "issue_counts": {
+      "history-1984-macintosh-128k": 0,
+      "history-1984-neuromancer": 0,
+      "history-1984-the-neverending-story": 0,
+      "history-1985-atari-st": 0,
+      "history-1985-back-to-the-future": 0,
+      "history-1985-live-aid": 0,
+      "history-1985-studio-ghibli": 0,
+      "history-1985-we-are-the-world": 0,
+      "history-1985-amiga-1000": 0,
+      "history-1986-chernobyl-disaster": 0
+    },
+    "summary_checks": [
+      {
+        "entry_id": "history-1984-macintosh-128k",
+        "feature_id": null,
+        "english_summary_words": 40
+      },
+      {
+        "entry_id": "history-1984-neuromancer",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "history-1984-the-neverending-story",
+        "feature_id": null,
+        "english_summary_words": 33
+      },
+      {
+        "entry_id": "history-1985-atari-st",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "history-1985-back-to-the-future",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "history-1985-live-aid",
+        "feature_id": null,
+        "english_summary_words": 34
+      },
+      {
+        "entry_id": "history-1985-studio-ghibli",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "history-1985-we-are-the-world",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "history-1985-amiga-1000",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "history-1986-chernobyl-disaster",
+        "feature_id": null,
+        "english_summary_words": 38
+      }
+    ],
+    "editorial_review": [
+      "history-1986-chernobyl-disaster/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1986-chernobyl-disaster/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1986-chernobyl-disaster/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1986-chernobyl-disaster/main/es: main title changed; check that this is a descriptive title and not an altered official name"
+    ],
+    "failures": []
+  },
+  "output_sha256": "ea0476a72fe7e4217da3e6a53bd59457f1dc28ed399b6649b820731bded2ef16",
+  "expansion_assessments": [
+    {
+      "target_id": "history-1984-macintosh-128k",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1984-neuromancer",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1984-the-neverending-story",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1985-atari-st",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1985-back-to-the-future",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1985-live-aid",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1985-studio-ghibli",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1985-we-are-the-world",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1985-amiga-1000",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1986-chernobyl-disaster",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    }
+  ]
+}

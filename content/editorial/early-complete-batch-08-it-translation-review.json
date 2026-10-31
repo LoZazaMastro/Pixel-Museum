@@ -1,0 +1,61 @@
+{
+  "status": "PASS",
+  "locale": "it",
+  "review": "Binding of exact independently approved complete candidate members; no new linguistic review substituted. Every full candidate SHA and independent PASS receipt checked, all current English five fields and translation hashes validated.",
+  "entries": [
+    {
+      "entry_id": "workbook-01-19-nobuyoshi-sano",
+      "source_fields_sha256": "7c078a129e9d8cb5aac89658ff5a9a1db709430c21123295e6a49ab6ae10136f",
+      "translation_sha256": "444b46cd2d32e4ec6c325bad7f55171fcd594342f239ad9e37a961a004b6efe9",
+      "independent_peer": "build/research/earliest-four-owners-translations/independent-sano-sakurai-eight-whole-paragraphs-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "25c3b1766869ab3c392f562c62b78a007294fb1fb519f8ded466d07909688bc0",
+      "candidate_path": "build/research/earliest-four-owners-translations/sano-sakurai-four-language-full-clause-fidelity-candidate.json",
+      "candidate_sha256": "630daa3166e968706467e1db03bafa17939816b60c19b731f0e9e84a74e26e4b"
+    },
+    {
+      "entry_id": "workbook-08-03-masahiro-sakurai",
+      "source_fields_sha256": "3b5d19ad7c624cb1316d111fa7af31330fb3683b19a116694c7c1b3ea34c255d",
+      "translation_sha256": "58c3ff9c884576fbbd2ae8665cb2e5eed6bfd3ba2073ff3af9add75e1c01aec8",
+      "independent_peer": "build/research/earliest-four-owners-translations/independent-sano-sakurai-eight-whole-paragraphs-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "25c3b1766869ab3c392f562c62b78a007294fb1fb519f8ded466d07909688bc0",
+      "candidate_path": "build/research/earliest-four-owners-translations/sano-sakurai-four-language-full-clause-fidelity-candidate.json",
+      "candidate_sha256": "630daa3166e968706467e1db03bafa17939816b60c19b731f0e9e84a74e26e4b"
+    },
+    {
+      "entry_id": "wikipedia-292879",
+      "source_fields_sha256": "8abc565fbd2986d25bc18cd78f83cffd35abbaa61bbe569d7bacd31be9e8a37f",
+      "translation_sha256": "e0ff5c2c84a26a5d2e75dca314d2327e64b39dc65eba9de8872811e7b358f8d3",
+      "independent_peer": "build/research/computer-space1971-four-language-legacy-review/independent-three-whole-historical-paragraphs-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "b9257241b978d221d9d831a5ffb8a01816bfda35e6b7028b31d910be81633a9b",
+      "candidate_path": "build/research/computer-space1971-four-language-legacy-review/computer-space1971-four-language-unchanged-historical-complete-candidate.json",
+      "candidate_sha256": "456d1d1d84f3f99152dbdca806504095404d2200ade7eacd65f7e22554dd96d5"
+    },
+    {
+      "entry_id": "odyssey",
+      "source_fields_sha256": "51482ffa6a615f7eae76fcdc9f5d53681e942cd9a4975e807f81d1b77cf0e724",
+      "translation_sha256": "3a4cc4e845d44d56b3f854f72b0f472390760ec1d980748fb95cea8a6e86229d",
+      "independent_peer": "build/research/odyssey1972-four-language-completion/odyssey1972-main-and-complete-overlays-feature-four-language-source-bound-candidate-root-independent-peer.json",
+      "independent_peer_sha256": "81eb4521d81c55ddb38628208e4148ad3a2092017ad7e9b32c7b4cfc69f7f01a",
+      "candidate_path": "build/research/odyssey1972-four-language-completion/odyssey1972-main-and-complete-overlays-feature-four-language-source-bound-candidate.json",
+      "candidate_sha256": "3f70a4137daaba04f0ece8813938a5d5e8377c4c9d6f069b6c068070f2f78e2e"
+    },
+    {
+      "entry_id": "feature-odyssey-overlays",
+      "source_fields_sha256": "c50e5ae6da730619c7d7b63ae5f3ff7a4a437cd94fee184e75075dca6a4f6c9b",
+      "translation_sha256": "314fd272c46da5cc024c4c000998a2ec86580286f018ac97c082ec732be10a15",
+      "independent_peer": "build/research/odyssey1972-four-language-completion/odyssey1972-main-and-complete-overlays-feature-four-language-source-bound-candidate-root-independent-peer.json",
+      "independent_peer_sha256": "81eb4521d81c55ddb38628208e4148ad3a2092017ad7e9b32c7b4cfc69f7f01a",
+      "candidate_path": "build/research/odyssey1972-four-language-completion/odyssey1972-main-and-complete-overlays-feature-four-language-source-bound-candidate.json",
+      "candidate_sha256": "3f70a4137daaba04f0ece8813938a5d5e8377c4c9d6f069b6c068070f2f78e2e"
+    },
+    {
+      "entry_id": "wikipedia-6896436",
+      "source_fields_sha256": "a58462ccfc5326f8ca868ba2616920a5fa9c11e53462a18e7675415b035bfd99",
+      "translation_sha256": "c5ae1c6fb6cfd65240fc29ea31482a12924cb898a575e03d9839d373e78f6af9",
+      "independent_peer": "build/research/empire1972-four-language-completion/independent-two-whole-paragraphs-all-five-fields-four-language-peer.json",
+      "independent_peer_sha256": "ae6af92e933b557a6e8236353fa8ccf9687177227c97de7d221c4900c71967de",
+      "candidate_path": "build/research/empire1972-four-language-completion/empire1972-two-whole-paragraphs-four-language-complete-candidate.json",
+      "candidate_sha256": "7a608be4eb799e0633405ed1b79984e5ae1da335a8441175db71999a0e37fb78"
+    }
+  ]
+}

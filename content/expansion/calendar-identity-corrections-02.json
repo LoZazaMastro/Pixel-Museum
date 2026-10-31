@@ -1,0 +1,1051 @@
+{
+  "schema_version": 1,
+  "reviewed": "2026-10-21",
+  "status": "reviewed_identity_migration_pending_assembly_review",
+  "source_import_sha256": "27673228e5e389f43ffb2cee7fb435f017e5551c4292824df4afac15e4f62f0e",
+  "source_catalog_sha256_snapshot": "959060a6290ec1990226c4ca3ce5a240b7e1a4385fb380501839f10e19208d6e",
+  "source_original_playhub_sha256": "49d7f954896f415b062367393d297e851fd43056ae56618d3c8e0bc58d5e9a2c",
+  "scope": "Two reviewed metadata/body identity mismatches; exact published prose and eight source translations preserved. Opaque old IDs remain real game destinations.",
+  "cases": [
+    {
+      "edition_id": "daily-05-21",
+      "original_title": "Senua's Saga: Hellblade II",
+      "original_year": 2024,
+      "original_canonical_id": "workbook-05-21-senua-s-saga-hellblade-ii",
+      "expected_source_body_sha256": "7105340208d110e4599209c5eb97203d77fcb3f89e3885cc83378fd87d1f5743",
+      "expected_source_heading_sha256": "f6b871b0e6b55e11d19e507868b2a09fd04ae34d5a151a2c0dcb93b8fc3dbfc0",
+      "corrected_title": "Never Alone",
+      "corrected_year": 2014,
+      "corrected_canonical_id": "never-alone",
+      "canonical_date": {
+        "month": 11,
+        "day": 18,
+        "precision": "day",
+        "region": "PC release listed by the publisher on Steam"
+      },
+      "schedule_semantics": "commemorative_scheduling",
+      "archived_published_edition": {
+        "id": "daily-05-21",
+        "title": "Senua's Saga: Hellblade II",
+        "subtitle": "Never Alone Uses the Video Game as a Meeting Place Between Story and Community",
+        "year": 2024,
+        "kind": "game",
+        "era_id": "living-history",
+        "date": {
+          "month": 0,
+          "day": 0,
+          "precision": "year",
+          "region": ""
+        },
+        "calendar_only": true,
+        "calendar": {
+          "month": 5,
+          "day": 21
+        },
+        "linked_exhibit_id": "workbook-05-21-senua-s-saga-hellblade-ii",
+        "event_semantics": "Scheduled published Playhub edition. The calendar slot is not asserted as a historical anniversary; the year is the source's historical anchor.",
+        "summary": "The United Nations observes the World Day for Cultural Diversity for Dialogue and Development on May 21.",
+        "body": [
+          "The United Nations observes the World Day for Cultural Diversity for Dialogue and Development on May 21. Never Alone is a particularly useful case for discussing representation not as decoration but as production process. Upper One Games and the Cook Inlet Tribal Council worked with Iñupiat elders, storytellers and community members to build a game inspired by Alaskan stories, environments and knowledge. Nuna and the fox cross the cold together, while documentary material connects fiction to real people and a living culture.",
+          "Never Alone does not take an Iñupiat story as distant material to be adapted without participation. The project involves the Cook Inlet Tribal Council and community members who contribute stories, voice, context and standards of representation. This changes where expertise sits during development. Designers and artists are not the only people deciding what is authentic or meaningful. Collaboration becomes part of the production method, making the game important also as a model for relationships between cultural industries and represented communities. The point is not complexity for its own sake. In World Day for Cultural Diversity · Never Alone, Iñupiat collaboration and production links what the player observes to what must be decided, preparing the next movement of the article.",
+          "Nuna and the fox have different abilities, and many situations require switching or coordinating between them. The girl interacts with tools and objects, while the fox is more agile and can influence spiritual elements. In co-op, two people share the task. In solo play, the player switches between characters. The idea of not being alone therefore does not remain in the title. It is repeated through puzzles and movement, where progress comes from complementarity. The relationship is readable because neither character can fully replace the other.",
+          "During play, Cultural Insights can be unlocked in which real people discuss practices, places and meanings connected to the experience. The choice avoids pretending that fiction alone can explain a complex culture. Players can move from symbolic storytelling to testimony and recognize the difference between those registers. The material does not automatically turn the game into a lesson, but it creates a threshold toward other voices. Never Alone therefore uses digital form to place entertainment and context side by side without confusing them. This is where a design detail becomes language. In World Day for Cultural Diversity · Never Alone, documentary, context and learning guides attention and expectation, so technique stops being invisible and begins producing meaning through play."
+        ],
+        "story_headings": [
+          "Never Alone Uses the Video Game as a Meeting Place Between Story and Community",
+          "Consultation Enters the Creative Process",
+          "Nuna and the Fox Are a Mechanical Pair",
+          "Cultural Insights Open a Second Reading"
+        ],
+        "layout": "essay",
+        "featured": false,
+        "tags": [
+          "Daily feature",
+          "Playhub collection"
+        ],
+        "related_ids": [
+          "workbook-05-21-senua-s-saga-hellblade-ii"
+        ],
+        "images": [],
+        "videos": [],
+        "models": [],
+        "sources": [
+          {
+            "title": "news.xbox.com",
+            "url": "https://news.xbox.com/en-us/2024/05/21/hellblade-2-launch-blog/",
+            "publisher": "news.xbox.com"
+          },
+          {
+            "title": "news.xbox.com",
+            "url": "https://news.xbox.com/en-us/2024/01/18/senuas-saga-hellblade-2-developer-direct-2024/",
+            "publisher": "news.xbox.com"
+          },
+          {
+            "title": "Playhub: original published daily edition",
+            "url": "https://github.com/LoZazaMastro/Playhub/blob/main/catalog/on-this-day.json",
+            "publisher": "Playhub / LoZazaMastro",
+            "attribution": "Original published Playhub English introduction and chapter text retained without rewriting."
+          }
+        ],
+        "editorial_mode": "playhub_story",
+        "editorial_credit": "Playhub historical collection / LoZazaMastro. Original published English text and chapter headings retained.",
+        "source_subject": "Senua's Saga: Hellblade II",
+        "source_topic": "Senua's Saga: Hellblade II",
+        "source_feature_title": "Never Alone Uses the Video Game as a Meeting Place Between Story and Community",
+        "provenance": {
+          "source_url": "https://github.com/LoZazaMastro/Playhub/blob/main/catalog/on-this-day.json",
+          "source_origin": "editions.entries",
+          "source_record_id": "workbook-05-21-senua-s-saga-hellblade-ii",
+          "source_revision": 1,
+          "source_updated_at": "2026-10-19",
+          "year_resolution": "published_edition_historical_anchor",
+          "subject_resolution": "exact_published_workbook_id",
+          "source_anniversary_metadata": {
+            "date": "05-21",
+            "year": 2024,
+            "kind": "release"
+          },
+          "source_theme_kind": "uscita_mondiale",
+          "matched_entry_id": "workbook-05-21-senua-s-saga-hellblade-ii",
+          "matched_title": "Senua's Saga: Hellblade II"
+        },
+        "research_media_refs": {
+          "media": {},
+          "media_id": "workbook-05-21-senua-s-saga-hellblade-ii",
+          "images": [
+            {
+              "file": "jan-jun-review-05-21-steam-2461850-0.jpg",
+              "url": "https://raw.githubusercontent.com/LoZazaMastro/Playhub/0c5c103403813431e23b40f90c75fba6d51a9759/assets/on-this-day/v1/jan-jun-review-05-21-steam-2461850-0.jpg",
+              "subject": "Hellblade II: Senua’s Saga",
+              "kind": "screenshot",
+              "sha256": "8bdf127c9d52de726f9e4626e07a8ebaf380b33803e4e92a67d84ce58e103ef1",
+              "bytes": 202484
+            },
+            {
+              "file": "jan-jun-review-05-21-steam-2461850-1.jpg",
+              "url": "https://raw.githubusercontent.com/LoZazaMastro/Playhub/0c5c103403813431e23b40f90c75fba6d51a9759/assets/on-this-day/v1/jan-jun-review-05-21-steam-2461850-1.jpg",
+              "subject": "Hellblade II: Senua’s Saga",
+              "kind": "screenshot",
+              "sha256": "e952a34463f0b5533b285c94ad3f6d5b7c6b9d210532f300077ff19e013b1e6c",
+              "bytes": 182782
+            },
+            {
+              "file": "jan-jun-review-05-21-steam-2461850-2.jpg",
+              "url": "https://raw.githubusercontent.com/LoZazaMastro/Playhub/0c5c103403813431e23b40f90c75fba6d51a9759/assets/on-this-day/v1/jan-jun-review-05-21-steam-2461850-2.jpg",
+              "subject": "Hellblade II: Senua’s Saga",
+              "kind": "screenshot",
+              "sha256": "3e58c970e08a82b2ae18c052d3886d446f92c0138cda48bf61060ccd6d1872e9",
+              "bytes": 258866
+            },
+            {
+              "file": "jan-jun-review-05-21-steam-2461850-3.jpg",
+              "url": "https://raw.githubusercontent.com/LoZazaMastro/Playhub/0c5c103403813431e23b40f90c75fba6d51a9759/assets/on-this-day/v1/jan-jun-review-05-21-steam-2461850-3.jpg",
+              "subject": "Hellblade II: Senua’s Saga",
+              "kind": "screenshot",
+              "sha256": "4fa92b4db2b65f7049f69fa72814afb78d77962fccd30ef642284c05921c22ce",
+              "bytes": 308213
+            },
+            {
+              "file": "cover-review-05-21-steam-2461850.jpg",
+              "url": "https://raw.githubusercontent.com/LoZazaMastro/Playhub/main/assets/on-this-day/v1/cover-review-05-21-steam-2461850.jpg",
+              "subject": "Senua's Saga: Hellblade II",
+              "kind": "cover",
+              "credit": "Publisher-provided Steam library cover",
+              "sha256": "a429701a9910c6123d6239c8b3bc1e782b8a123ee5597c29f5967fcc57f25690",
+              "bytes": 28964
+            }
+          ],
+          "intro_image_file": "jan-jun-review-05-21-steam-2461850-3.jpg",
+          "cover_image_file": "cover-review-05-21-steam-2461850.jpg",
+          "chapters": [
+            {
+              "order": 1,
+              "subject": "Senua's Saga: Hellblade II",
+              "image_brief": "Schermata orizzontale di Senua's Saga: Hellblade II, versione originale 2024 su Xbox Series o PC, con Senua in primo piano in una scena percettivamente intensa. Cercare materiale editoriale legato al sound design o alle Furies. Evitare Enhanced 2025, versione PlayStation e immagini del primo Hellblade.",
+              "image_file": "jan-jun-review-05-21-steam-2461850-0.jpg",
+              "source_url": "https://news.xbox.com/en-us/2024/05/10/senuas-psychosis-hellblade-2-mental-health-feature/",
+              "quote": null,
+              "image_subject": "Hellblade II: Senua’s Saga"
+            },
+            {
+              "order": 2,
+              "subject": "Senua's Saga: Hellblade II",
+              "image_brief": "Fotografia orizzontale editoriale del set di performance capture di Hellblade II con Melina Juergens o altri interpreti in costume/marker, affiancabile a una scena di combattimento del gioco 2024. Utile per mostrare origine fisica dell'animazione. Evitare materiale del primo Hellblade e aggiornamento Enhanced.",
+              "image_file": "jan-jun-review-05-21-steam-2461850-1.jpg",
+              "source_url": "https://news.xbox.com/en-us/2024/05/21/hellblade-2-launch-blog/",
+              "quote": null,
+              "image_subject": "Hellblade II: Senua’s Saga"
+            },
+            {
+              "order": 3,
+              "subject": "Senua's Saga: Hellblade II",
+              "image_brief": "Fotografia orizzontale di sviluppo di Hellblade II in Islanda con team sul posto, scansione/fotogrammetria o confronto fra località reale e ambiente 3D finale. Deve documentare il processo produttivo 2019-2024. Evitare semplici panorami turistici senza legame con il gioco e materiale Enhanced 2025.",
+              "image_file": "jan-jun-review-05-21-steam-2461850-2.jpg",
+              "source_url": "https://news.xbox.com/en-us/2024/05/21/hellblade-2-launch-blog/",
+              "quote": null,
+              "image_subject": "Hellblade II: Senua’s Saga"
+            }
+          ]
+        }
+      },
+      "archived_mislabeled_candidate": {
+        "id": "workbook-05-21-senua-s-saga-hellblade-ii",
+        "title": "Senua's Saga: Hellblade II",
+        "year": 2024,
+        "date": {
+          "month": 5,
+          "day": 21,
+          "precision": "day",
+          "region": ""
+        },
+        "kind": "game",
+        "subtitle": "Never Alone Uses the Video Game as a Meeting Place Between Story and Community",
+        "summary": "The United Nations observes the World Day for Cultural Diversity for Dialogue and Development on May 21. Never Alone is a particularly useful case for discussing representation not as decoration but as production process. Upper One Games and the Cook Inlet Tribal Council worked with Iñupiat elders, storytellers and community members to build a game inspired by Alaskan stories, environments and knowledge. Nuna and the fox cross the cold together, while documentary material connects fiction to real people and a living culture.",
+        "body": [
+          "Never Alone does not take an Iñupiat story as distant material to be adapted without participation. The project involves the Cook Inlet Tribal Council and community members who contribute stories, voice, context and standards of representation. This changes where expertise sits during development. Designers and artists are not the only people deciding what is authentic or meaningful. Collaboration becomes part of the production method, making the game important also as a model for relationships between cultural industries and represented communities. The point is not complexity for its own sake. In World Day for Cultural Diversity · Never Alone, Iñupiat collaboration and production links what the player observes to what must be decided, preparing the next movement of the article.",
+          "Nuna and the fox have different abilities, and many situations require switching or coordinating between them. The girl interacts with tools and objects, while the fox is more agile and can influence spiritual elements. In co-op, two people share the task. In solo play, the player switches between characters. The idea of not being alone therefore does not remain in the title. It is repeated through puzzles and movement, where progress comes from complementarity. The relationship is readable because neither character can fully replace the other.",
+          "During play, Cultural Insights can be unlocked in which real people discuss practices, places and meanings connected to the experience. The choice avoids pretending that fiction alone can explain a complex culture. Players can move from symbolic storytelling to testimony and recognize the difference between those registers. The material does not automatically turn the game into a lesson, but it creates a threshold toward other voices. Never Alone therefore uses digital form to place entertainment and context side by side without confusing them. This is where a design detail becomes language. In World Day for Cultural Diversity · Never Alone, documentary, context and learning guides attention and expectation, so technique stops being invisible and begins producing meaning through play."
+        ],
+        "era_id": "living-history",
+        "layout": "essay",
+        "tags": [
+          "Playhub collection",
+          "release"
+        ],
+        "related_ids": [],
+        "images": [],
+        "videos": [],
+        "models": [],
+        "sources": [
+          {
+            "title": "news.xbox.com",
+            "url": "https://news.xbox.com/en-us/2024/05/21/hellblade-2-launch-blog/",
+            "publisher": "news.xbox.com"
+          },
+          {
+            "title": "news.xbox.com",
+            "url": "https://news.xbox.com/en-us/2024/01/18/senuas-saga-hellblade-2-developer-direct-2024/",
+            "publisher": "news.xbox.com"
+          },
+          {
+            "title": "news.xbox.com",
+            "url": "https://news.xbox.com/en-us/2024/05/10/senuas-psychosis-hellblade-2-mental-health-feature/",
+            "publisher": "news.xbox.com"
+          }
+        ],
+        "featured": false,
+        "factual_note": "Imported dated English Playhub editorial. Adapt its calendar wording, review publisher dates and assign rights-cleared media before presenting as a finished museum stop.",
+        "editorial_status": "existing_English_copy_requires_museum_adaptation",
+        "source_corpus": "Playhub history_imported.json",
+        "source_record_id": "workbook-05-21-senua-s-saga-hellblade-ii",
+        "event_semantics": "release",
+        "original_editorial_kind": "uscita_mondiale",
+        "source_verification": "existing_local_provenance_not_live_reverified"
+      },
+      "archived_mislabeled_master_snapshot": {
+        "id": "workbook-05-21-senua-s-saga-hellblade-ii",
+        "title": "Senua's Saga: Hellblade II",
+        "year": 2024,
+        "date": {
+          "month": 5,
+          "day": 21,
+          "precision": "day",
+          "region": ""
+        },
+        "kind": "game",
+        "subtitle": "Never Alone Uses the Video Game as a Meeting Place Between Story and Community",
+        "summary": "The United Nations observes the World Day for Cultural Diversity for Dialogue and Development on May 21.",
+        "body": [
+          "The United Nations observes the World Day for Cultural Diversity for Dialogue and Development on May 21. Never Alone is a particularly useful case for discussing representation not as decoration but as production process. Upper One Games and the Cook Inlet Tribal Council worked with Iñupiat elders, storytellers and community members to build a game inspired by Alaskan stories, environments and knowledge. Nuna and the fox cross the cold together, while documentary material connects fiction to real people and a living culture.",
+          "Never Alone does not take an Iñupiat story as distant material to be adapted without participation. The project involves the Cook Inlet Tribal Council and community members who contribute stories, voice, context and standards of representation. This changes where expertise sits during development. Designers and artists are not the only people deciding what is authentic or meaningful. Collaboration becomes part of the production method, making the game important also as a model for relationships between cultural industries and represented communities. The point is not complexity for its own sake. In World Day for Cultural Diversity · Never Alone, Iñupiat collaboration and production links what the player observes to what must be decided, preparing the next movement of the article.",
+          "Nuna and the fox have different abilities, and many situations require switching or coordinating between them. The girl interacts with tools and objects, while the fox is more agile and can influence spiritual elements. In co-op, two people share the task. In solo play, the player switches between characters. The idea of not being alone therefore does not remain in the title. It is repeated through puzzles and movement, where progress comes from complementarity. The relationship is readable because neither character can fully replace the other.",
+          "During play, Cultural Insights can be unlocked in which real people discuss practices, places and meanings connected to the experience. The choice avoids pretending that fiction alone can explain a complex culture. Players can move from symbolic storytelling to testimony and recognize the difference between those registers. The material does not automatically turn the game into a lesson, but it creates a threshold toward other voices. Never Alone therefore uses digital form to place entertainment and context side by side without confusing them. This is where a design detail becomes language. In World Day for Cultural Diversity · Never Alone, documentary, context and learning guides attention and expectation, so technique stops being invisible and begins producing meaning through play."
+        ],
+        "era_id": "living-history",
+        "layout": "essay",
+        "tags": [
+          "Playhub collection",
+          "release"
+        ],
+        "related_ids": [],
+        "images": [],
+        "videos": [],
+        "models": [],
+        "sources": [
+          {
+            "title": "news.xbox.com",
+            "url": "https://news.xbox.com/en-us/2024/05/21/hellblade-2-launch-blog/",
+            "publisher": "news.xbox.com"
+          },
+          {
+            "title": "news.xbox.com",
+            "url": "https://news.xbox.com/en-us/2024/01/18/senuas-saga-hellblade-2-developer-direct-2024/",
+            "publisher": "news.xbox.com"
+          },
+          {
+            "title": "news.xbox.com",
+            "url": "https://news.xbox.com/en-us/2024/05/10/senuas-psychosis-hellblade-2-mental-health-feature/",
+            "publisher": "news.xbox.com"
+          },
+          {
+            "title": "Playhub: original published daily edition",
+            "url": "https://github.com/LoZazaMastro/Playhub/blob/main/catalog/on-this-day.json",
+            "publisher": "Playhub / LoZazaMastro",
+            "attribution": "Original published Playhub English introduction and chapter text retained without rewriting."
+          }
+        ],
+        "featured": false,
+        "factual_note": "Imported dated English Playhub editorial. Adapt its calendar wording, review publisher dates and assign rights-cleared media before presenting as a finished museum stop.",
+        "editorial_status": "existing_English_copy_requires_museum_adaptation",
+        "source_corpus": "Playhub history_imported.json",
+        "source_record_id": "workbook-05-21-senua-s-saga-hellblade-ii",
+        "event_semantics": "release",
+        "original_editorial_kind": "uscita_mondiale",
+        "source_verification": "existing_local_provenance_not_live_reverified",
+        "editorial_mode": "calendar_feature_story",
+        "editorial_credit": "Playhub historical collection / LoZazaMastro. Original published English text and chapter headings retained.",
+        "story_headings": [
+          "Never Alone Uses the Video Game as a Meeting Place Between Story and Community",
+          "Consultation Enters the Creative Process",
+          "Nuna and the Fox Are a Mechanical Pair",
+          "Cultural Insights Open a Second Reading"
+        ],
+        "calendar_editorial": {
+          "source_feature_id": "daily-05-21",
+          "schedule": {
+            "month": 5,
+            "day": 21
+          },
+          "provenance": {
+            "source_url": "https://github.com/LoZazaMastro/Playhub/blob/main/catalog/on-this-day.json",
+            "source_origin": "editions.entries",
+            "source_record_id": "workbook-05-21-senua-s-saga-hellblade-ii",
+            "source_revision": 1,
+            "source_updated_at": "2026-10-19",
+            "year_resolution": "published_edition_historical_anchor",
+            "subject_resolution": "exact_published_workbook_id",
+            "source_anniversary_metadata": {
+              "date": "05-21",
+              "year": 2024,
+              "kind": "release"
+            },
+            "source_theme_kind": "uscita_mondiale",
+            "matched_entry_id": "workbook-05-21-senua-s-saga-hellblade-ii",
+            "matched_title": "Senua's Saga: Hellblade II"
+          },
+          "original_record_archive": "content/calendar-editorial-originals.json"
+        },
+        "publication_readiness": {
+          "status": "requires_review",
+          "editorial_signoff": false,
+          "blockers": [
+            "verified_hd_cover_missing",
+            "majority_contextual_card_images_unreviewed"
+          ],
+          "hd_images": 0,
+          "contextual_sections": []
+        }
+      },
+      "restored_original_destination": {
+        "id": "workbook-05-21-senua-s-saga-hellblade-ii",
+        "title": "Senua's Saga: Hellblade II",
+        "year": 2024,
+        "date": {
+          "month": 5,
+          "day": 21,
+          "precision": "day",
+          "region": "Windows and Xbox Series X/S launch"
+        },
+        "subtitle": "From the reference collection",
+        "summary": "Senua's Saga: Hellblade II is a 2024 action-adventure game developed by Ninja Theory and published by Xbox Game Studios.",
+        "body": [
+          "Senua's Saga: Hellblade II was created with a higher budget and a larger team when compared with its predecessor. The gameplay is similar; it features combo-based combat, as well as puzzles. The gameplay and visuals have been revamped: faster-paced combat, and improved visuals built on Unreal Engine 5, while retaining the psychological horror and focus on Senua's struggle with psychosis.",
+          "Senua's Saga: Hellblade II was released for Windows and Xbox Series X/S on May 21, 2024. A PlayStation 5 version launched on August 12, 2025 alongside an \"Enhanced\" update across all platforms, including features such as a higher-framerate Performance Mode, new game modes and additions to Photo Mode. The game received generally positive reviews from critics, who praised its art direction, visuals and sound design, though some noted pacing issues and a combat system favoring spectacle over depth."
+        ],
+        "story_headings": [
+          "Gameplay and psychological horror",
+          "Release, enhancement and reception"
+        ],
+        "editorial_mode": "reference",
+        "editorial_credit": "Selected complete English paragraphs from 'Senua's Saga: Hellblade II', by Wikipedia contributors, under CC BY-SA 4.0. Paragraph selection and editorial headings are identified; selected paragraph text is unchanged.",
+        "attribution": {
+          "text": "Selected complete English paragraphs from 'Senua's Saga: Hellblade II', by Wikipedia contributors, under CC BY-SA 4.0. Paragraph selection and editorial headings are identified; selected paragraph text is unchanged.",
+          "source_url": "https://en.wikipedia.org/w/index.php?oldid=1380861089",
+          "article_url": "https://en.wikipedia.org/wiki/Senua%27s_Saga:_Hellblade_II",
+          "contributors_url": "https://en.wikipedia.org/wiki/Senua%27s_Saga:_Hellblade_II?action=history",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "revision_id": 1380861089,
+          "revision_timestamp": "2026-10-18T11:57:53Z",
+          "changes": "Complete source paragraphs selected in original order; plain-text formatting; English editorial headings added. First paragraph omitted because its century claim conflicts with current publisher description."
+        },
+        "provenance": {
+          "provider": "English Wikipedia",
+          "page_id": 72144348,
+          "article_title": "Senua's Saga: Hellblade II",
+          "retrieved": "2026-10-21",
+          "opaque_museum_id_retained": true,
+          "source_revision": 1380861089,
+          "selected_intro_paragraph_indices": [
+            1,
+            2
+          ]
+        },
+        "sources": [
+          {
+            "title": "Senua's Saga: Hellblade II - immutable article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1380861089",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/Senua%27s_Saga:_Hellblade_II?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          },
+          {
+            "title": "A Note From Ninja Theory: Hellblade II is Out Now",
+            "url": "https://news.xbox.com/en-us/2024/05/21/hellblade-2-launch-blog/",
+            "publisher": "Dom Matthews / Ninja Theory / Xbox Wire",
+            "checked": "2026-10-21",
+            "locator": "Launch post dated May 21, 2024: Xbox Series X/S and PC. Current publisher description says 10th century; disputed Wiki 9th-century paragraph omitted."
+          }
+        ],
+        "tags": [
+          "reference",
+          "Wikipedia"
+        ],
+        "factual_note": "Exact attributed reference paragraphs replace an inherited unrelated subject narrative; original published writing is retained under its actual subject and in the identity review archive. Identity review is not complete historical signoff.",
+        "date_provenance": {
+          "event": "Original game release, separate from edition scheduling",
+          "source": {
+            "title": "A Note From Ninja Theory: Hellblade II is Out Now",
+            "url": "https://news.xbox.com/en-us/2024/05/21/hellblade-2-launch-blog/",
+            "publisher": "Dom Matthews / Ninja Theory / Xbox Wire",
+            "checked": "2026-10-21",
+            "locator": "Launch post dated May 21, 2024: Xbox Series X/S and PC. Current publisher description says 10th century; disputed Wiki 9th-century paragraph omitted."
+          },
+          "verified_date": "2024-05-21"
+        }
+      },
+      "wikipedia_source_snapshot": {
+        "pageid": 72144348,
+        "ns": 0,
+        "title": "Senua's Saga: Hellblade II",
+        "extract": "Senua's Saga: Hellblade II is a 2024 action-adventure game developed by Ninja Theory and published by Xbox Game Studios. It is the second installment in the Hellblade series. The game serves as the sequel to Hellblade: Senua's Sacrifice (2017) and is set in 9th century Iceland, drawing inspiration from Norse mythology and culture.\nSenua's Saga: Hellblade II was created with a higher budget and a larger team when compared with its predecessor. The gameplay is similar; it features combo-based combat, as well as puzzles. The gameplay and visuals have been revamped: faster-paced combat, and improved visuals built on Unreal Engine 5, while retaining the psychological horror and focus on Senua's struggle with psychosis.\nSenua's Saga: Hellblade II was released for Windows and Xbox Series X/S on May 21, 2024. A PlayStation 5 version launched on August 12, 2025 alongside an \"Enhanced\" update across all platforms, including features such as a higher-framerate Performance Mode, new game modes and additions to Photo Mode. The game received generally positive reviews from critics, who praised its art direction, visuals and sound design, though some noted pacing issues and a combat system favoring spectacle over depth.",
+        "revisions": [
+          {
+            "revid": 1380861089,
+            "parentid": 1373026710,
+            "timestamp": "2026-10-18T11:57:53Z"
+          }
+        ],
+        "contentmodel": "wikitext",
+        "pagelanguage": "en",
+        "pagelanguagehtmlcode": "en",
+        "pagelanguagedir": "ltr",
+        "touched": "2026-10-18T11:57:53Z",
+        "lastrevid": 1380861089,
+        "length": 50840,
+        "fullurl": "https://en.wikipedia.org/wiki/Senua%27s_Saga:_Hellblade_II",
+        "editurl": "https://en.wikipedia.org/w/index.php?title=Senua%27s_Saga:_Hellblade_II&action=edit",
+        "canonicalurl": "https://en.wikipedia.org/wiki/Senua%27s_Saga:_Hellblade_II"
+      },
+      "publisher_evidence": [
+        {
+          "title": "Never Alone: publisher product page",
+          "url": "https://store.steampowered.com/app/295790/Never_Alone_Kisima_Ingitchuna/",
+          "publisher": "E-Line Media / Steam",
+          "checked": "2026-10-21",
+          "locator": "Release Date 18 November 2014; Upper One Games/E-Line Media; Nuna/Fox; community collaboration and video insights."
+        },
+        {
+          "title": "World Day for Cultural Diversity for Dialogue and Development",
+          "url": "https://www.unesco.org/en/days/cultural-diversity-dialogue-development",
+          "publisher": "UNESCO",
+          "checked": "2026-10-21",
+          "locator": "Opening date and description: held every year on 21 May. Scheduling observance, not Never Alone release."
+        }
+      ],
+      "media_policy": "Never copy media between the old mislabeled destination and corrected subject; matching imagery requires explicit curation.",
+      "historical_date_review": "Never Alone PC release verified; May21 is UNESCO scheduling, not release.",
+      "canonical_date_provenance": {
+        "event": "PC release listed by publisher on Steam",
+        "source": {
+          "title": "Never Alone: publisher product page",
+          "url": "https://store.steampowered.com/app/295790/Never_Alone_Kisima_Ingitchuna/",
+          "publisher": "E-Line Media / Steam",
+          "checked": "2026-10-21",
+          "locator": "Release Date 18 November 2014; Upper One Games/E-Line Media; Nuna/Fox; community collaboration and video insights."
+        },
+        "verified_date": "2014-11-18"
+      }
+    },
+    {
+      "edition_id": "daily-08-30",
+      "original_title": "Astral Chain",
+      "original_year": 2019,
+      "original_canonical_id": "workbook-08-30-astral-chain",
+      "expected_source_body_sha256": "340ef22d1d1d9b336f68a64f9e61e6b62d414dee7251de285cf46bc8c48e7053",
+      "expected_source_heading_sha256": "05618501f6dbcad61fd5bc7f21334992be2d4265622ab43b1f1eb4ee500d6972",
+      "corrected_title": "Street Fighter",
+      "corrected_year": 1987,
+      "corrected_canonical_id": "wikipedia-2829113",
+      "canonical_date": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": "Exact regional launch day not independently verified"
+      },
+      "schedule_semantics": "source_schedule_exact_release_day_unverified",
+      "archived_published_edition": {
+        "id": "daily-08-30",
+        "title": "Astral Chain",
+        "subtitle": "Before the Perfect Combo There Was a Noisy Experiment",
+        "year": 2019,
+        "kind": "game",
+        "era_id": "everywhere",
+        "date": {
+          "month": 0,
+          "day": 0,
+          "precision": "year",
+          "region": ""
+        },
+        "calendar_only": true,
+        "calendar": {
+          "month": 8,
+          "day": 30
+        },
+        "linked_exhibit_id": "workbook-08-30-astral-chain",
+        "event_semantics": "Scheduled published Playhub edition. The calendar slot is not asserted as a historical anniversary; the year is the source's historical anchor.",
+        "summary": "Street Fighter reached Japanese arcades on August 30, 1987.",
+        "body": [
+          "Street Fighter reached Japanese arcades on August 30, 1987. Seen after the global success of Street Fighter II, the first game can feel almost like a prototype: harder controls, a small playable roster and a competitive form still under construction. Yet decisive ideas are already present. Ryu and Ken fight one on one, special moves require gestures on the joystick, and the Hadoken and Shoryuken turn the discovery of an input sequence into shared knowledge. Some cabinets even experimented with large pressure-sensitive buttons before the more practical six-button layout. Street Fighter matters precisely because it exposes the laboratory. The genre did not arrive complete. It emerged through experiments that gradually separated space, timing, distance and intention.",
+          "The first Street Fighter is remembered in part for an early cabinet configuration using large pressure-sensitive buttons. The idea was to translate the player's physical force into the strength of an on-screen punch or kick, seeking a direct link between real and virtual gestures. The solution proved impractical and was replaced by a six-button layout with light, medium and heavy attacks. That change is crucial: rather than measuring how hard a command is pressed, the game makes choices explicit. A discrete grammar emerges, more reliable and much better suited to being learned, combined and compared between players.",
+          "In the first Street Fighter, one player controls Ryu while a second can use Ken. They share most of their moves, and that symmetry makes the duel readable: when the tools are similar, differences appear to come from the decisions of the people holding the joysticks. A broad and highly differentiated cast will arrive mainly with Street Fighter II, but the competitive core of the series is already visible here. Fighting is not only about defeating computer-controlled opponents; it is about placing two people inside the same rules and letting timing, distance and risk decide who can impose a rhythm.",
+          "Hadoken, Shoryuken and Tatsumaki Senpukyaku introduce an idea that will become fundamental: some actions are not attached to one button but to a short sequence of directions and an attack. Performing a special move means possessing knowledge that must be embodied in the hands. In 1987 the inputs can feel strict and unforgiving, yet their very existence suggests a layer of mastery beyond the immediate use of buttons. Players do not merely discover what a character can do; they learn a vocabulary. Street Fighter II will make this language far more accessible and deep, but the first game already establishes its essential words."
+        ],
+        "story_headings": [
+          "Before the Perfect Combo There Was a Noisy Experiment",
+          "The First Experiment Tries to Measure the Strength of a Hit",
+          "Two Nearly Identical Fighters Create a Space for Human Comparison",
+          "Hadoken and Shoryuken Turn an Input Sequence into Knowledge"
+        ],
+        "layout": "essay",
+        "featured": false,
+        "tags": [
+          "Daily feature",
+          "Playhub collection"
+        ],
+        "related_ids": [
+          "workbook-08-30-astral-chain"
+        ],
+        "images": [],
+        "videos": [],
+        "models": [],
+        "sources": [
+          {
+            "title": "platinumgames.com",
+            "url": "https://www.platinumgames.com/works/astral-chain",
+            "publisher": "platinumgames.com"
+          },
+          {
+            "title": "nintendo.com",
+            "url": "https://www.nintendo.com/en-gb/News/2019/July/Discover-the-excitement-of-ASTRAL-CHAIN-for-Nintendo-Switch-with-Nintendo-Treehouse-Live-1593654.html",
+            "publisher": "nintendo.com"
+          },
+          {
+            "title": "Playhub: original published daily edition",
+            "url": "https://github.com/LoZazaMastro/Playhub/blob/main/catalog/on-this-day.json",
+            "publisher": "Playhub / LoZazaMastro",
+            "attribution": "Original published Playhub English introduction and chapter text retained without rewriting."
+          }
+        ],
+        "editorial_mode": "playhub_story",
+        "editorial_credit": "Playhub historical collection / LoZazaMastro. Original published English text and chapter headings retained.",
+        "source_subject": "Astral Chain",
+        "source_topic": "Astral Chain",
+        "source_feature_title": "Before the Perfect Combo There Was a Noisy Experiment",
+        "provenance": {
+          "source_url": "https://github.com/LoZazaMastro/Playhub/blob/main/catalog/on-this-day.json",
+          "source_origin": "editions.entries",
+          "source_record_id": "workbook-08-30-astral-chain",
+          "source_revision": 1,
+          "source_updated_at": "2026-10-19",
+          "year_resolution": "published_edition_historical_anchor",
+          "subject_resolution": "exact_published_workbook_id",
+          "source_anniversary_metadata": {
+            "date": "08-30",
+            "year": 2019,
+            "kind": "release"
+          },
+          "source_theme_kind": "release",
+          "matched_entry_id": "workbook-08-30-astral-chain",
+          "matched_title": "Astral Chain"
+        },
+        "research_media_refs": {
+          "media": {},
+          "media_id": "workbook-08-30-astral-chain",
+          "images": [
+            {
+              "file": "jul-dec-review-08-30-retro-0.jpg",
+              "url": "https://raw.githubusercontent.com/LoZazaMastro/Playhub/0c5c103403813431e23b40f90c75fba6d51a9759/assets/on-this-day/v1/jul-dec-review-08-30-retro-0.jpg",
+              "subject": "Astral Chain",
+              "kind": "screenshot",
+              "sha256": "4af3ed1ff07278cdd18a7ea452538a7b6b76af0b42bb5f418418e9a493b47d9c",
+              "bytes": 124790
+            },
+            {
+              "file": "jul-dec-review-08-30-retro-1.jpg",
+              "url": "https://raw.githubusercontent.com/LoZazaMastro/Playhub/0c5c103403813431e23b40f90c75fba6d51a9759/assets/on-this-day/v1/jul-dec-review-08-30-retro-1.jpg",
+              "subject": "Astral Chain",
+              "kind": "screenshot",
+              "sha256": "2ab796c4605d73ea379023a3e989034d56b10d71de85b00804e1869b5cc1af99",
+              "bytes": 83730
+            },
+            {
+              "file": "jul-dec-review-08-30-retro-2.jpg",
+              "url": "https://raw.githubusercontent.com/LoZazaMastro/Playhub/0c5c103403813431e23b40f90c75fba6d51a9759/assets/on-this-day/v1/jul-dec-review-08-30-retro-2.jpg",
+              "subject": "Astral Chain",
+              "kind": "screenshot",
+              "sha256": "595123dcda9e4c2a5b206dc55a553d1a1dc038969fa2c53467cd9e3ae5b7ab6e",
+              "bytes": 105814
+            },
+            {
+              "file": "jul-dec-review-08-30-retro-3.jpg",
+              "url": "https://raw.githubusercontent.com/LoZazaMastro/Playhub/0c5c103403813431e23b40f90c75fba6d51a9759/assets/on-this-day/v1/jul-dec-review-08-30-retro-3.jpg",
+              "subject": "Astral Chain",
+              "kind": "screenshot",
+              "sha256": "d0ca9dd404bcdcd129c79c32ab3899253c603893c39ad1fec8e2da387108c311",
+              "bytes": 104652
+            },
+            {
+              "file": "cover-review-08-30-tgdb-63378.jpg",
+              "url": "https://raw.githubusercontent.com/LoZazaMastro/Playhub/main/assets/on-this-day/v1/cover-review-08-30-tgdb-63378.jpg",
+              "subject": "Astral Chain",
+              "kind": "cover",
+              "credit": "Original game packaging: respective publisher; scan catalogued by TheGamesDB",
+              "sha256": "cafb34f2f94924dc2b7a95b71d056d77aa86b8caa467a161761a95f3f0dce815",
+              "bytes": 712064
+            }
+          ],
+          "intro_image_file": "jul-dec-review-08-30-retro-0.jpg",
+          "cover_image_file": "cover-review-08-30-tgdb-63378.jpg",
+          "chapters": [
+            {
+              "order": 1,
+              "subject": "Astral Chain",
+              "image_brief": "Immagine coerente con Astral Chain e il capitolo «La catena disegna il combattimento»; niente cover, niente ripetizioni interne.",
+              "image_file": "jul-dec-review-08-30-retro-1.jpg",
+              "source_url": "https://www.platinumgames.com/works/astral-chain",
+              "quote": null,
+              "image_subject": "Astral Chain"
+            },
+            {
+              "order": 2,
+              "subject": "Astral Chain",
+              "image_brief": "Immagine coerente con Astral Chain e il capitolo «Indagare prima di colpire»; niente cover, niente ripetizioni interne.",
+              "image_file": "jul-dec-review-08-30-retro-2.jpg",
+              "source_url": "https://www.nintendo.com/en-gb/News/2019/July/Discover-the-excitement-of-ASTRAL-CHAIN-for-Nintendo-Switch-with-Nintendo-Treehouse-Live-1593654.html",
+              "quote": null,
+              "image_subject": "Astral Chain"
+            },
+            {
+              "order": 3,
+              "subject": "Astral Chain",
+              "image_brief": "Immagine coerente con Astral Chain e il capitolo «Un'identità costruita da molte mani»; niente cover, niente ripetizioni interne.",
+              "image_file": "jul-dec-review-08-30-retro-3.jpg",
+              "source_url": "https://www.platinumgames.co.jp/dev-astral-chain/article/484",
+              "quote": null,
+              "image_subject": "Astral Chain"
+            }
+          ]
+        }
+      },
+      "archived_mislabeled_candidate": {
+        "id": "workbook-08-30-astral-chain",
+        "title": "Astral Chain",
+        "year": 2019,
+        "date": {
+          "month": 8,
+          "day": 30,
+          "precision": "day",
+          "region": ""
+        },
+        "kind": "game",
+        "subtitle": "Before the Perfect Combo There Was a Noisy Experiment",
+        "summary": "Street Fighter reached Japanese arcades on August 30, 1987. Seen after the global success of Street Fighter II, the first game can feel almost like a prototype: harder controls, a small playable roster and a competitive form still under construction. Yet decisive ideas are already present. Ryu and Ken fight one on one, special moves require gestures on the joystick, and the Hadoken and Shoryuken turn the discovery of an input sequence into shared knowledge. Some cabinets even experimented with large pressure-sensitive buttons before the more practical six-button layout. Street Fighter matters precisely because it exposes the laboratory. The genre did not arrive complete. It emerged through experiments that gradually separated space, timing, distance and intention.",
+        "body": [
+          "The first Street Fighter is remembered in part for an early cabinet configuration using large pressure-sensitive buttons. The idea was to translate the player's physical force into the strength of an on-screen punch or kick, seeking a direct link between real and virtual gestures. The solution proved impractical and was replaced by a six-button layout with light, medium and heavy attacks. That change is crucial: rather than measuring how hard a command is pressed, the game makes choices explicit. A discrete grammar emerges, more reliable and much better suited to being learned, combined and compared between players.",
+          "In the first Street Fighter, one player controls Ryu while a second can use Ken. They share most of their moves, and that symmetry makes the duel readable: when the tools are similar, differences appear to come from the decisions of the people holding the joysticks. A broad and highly differentiated cast will arrive mainly with Street Fighter II, but the competitive core of the series is already visible here. Fighting is not only about defeating computer-controlled opponents; it is about placing two people inside the same rules and letting timing, distance and risk decide who can impose a rhythm.",
+          "Hadoken, Shoryuken and Tatsumaki Senpukyaku introduce an idea that will become fundamental: some actions are not attached to one button but to a short sequence of directions and an attack. Performing a special move means possessing knowledge that must be embodied in the hands. In 1987 the inputs can feel strict and unforgiving, yet their very existence suggests a layer of mastery beyond the immediate use of buttons. Players do not merely discover what a character can do; they learn a vocabulary. Street Fighter II will make this language far more accessible and deep, but the first game already establishes its essential words."
+        ],
+        "era_id": "everywhere",
+        "layout": "essay",
+        "tags": [
+          "Playhub collection",
+          "release"
+        ],
+        "related_ids": [],
+        "images": [],
+        "videos": [],
+        "models": [],
+        "sources": [
+          {
+            "title": "www.platinumgames.com",
+            "url": "https://www.platinumgames.com/works/astral-chain",
+            "publisher": "www.platinumgames.com"
+          },
+          {
+            "title": "www.nintendo.com",
+            "url": "https://www.nintendo.com/en-gb/News/2019/July/Discover-the-excitement-of-ASTRAL-CHAIN-for-Nintendo-Switch-with-Nintendo-Treehouse-Live-1593654.html",
+            "publisher": "www.nintendo.com"
+          },
+          {
+            "title": "www.platinumgames.co.jp",
+            "url": "https://www.platinumgames.co.jp/dev-astral-chain/article/484",
+            "publisher": "www.platinumgames.co.jp"
+          }
+        ],
+        "featured": false,
+        "factual_note": "Imported dated English Playhub editorial. Adapt its calendar wording, review publisher dates and assign rights-cleared media before presenting as a finished museum stop.",
+        "editorial_status": "existing_English_copy_requires_museum_adaptation",
+        "source_corpus": "Playhub history_imported.json",
+        "source_record_id": "workbook-08-30-astral-chain",
+        "event_semantics": "release",
+        "original_editorial_kind": "release",
+        "source_verification": "existing_local_provenance_not_live_reverified"
+      },
+      "archived_mislabeled_master_snapshot": {
+        "id": "workbook-08-30-astral-chain",
+        "title": "Astral Chain",
+        "year": 2019,
+        "date": {
+          "month": 8,
+          "day": 30,
+          "precision": "day",
+          "region": ""
+        },
+        "kind": "game",
+        "subtitle": "Before the Perfect Combo There Was a Noisy Experiment",
+        "summary": "Street Fighter reached Japanese arcades on August 30, 1987.",
+        "body": [
+          "Street Fighter reached Japanese arcades on August 30, 1987. Seen after the global success of Street Fighter II, the first game can feel almost like a prototype: harder controls, a small playable roster and a competitive form still under construction. Yet decisive ideas are already present. Ryu and Ken fight one on one, special moves require gestures on the joystick, and the Hadoken and Shoryuken turn the discovery of an input sequence into shared knowledge. Some cabinets even experimented with large pressure-sensitive buttons before the more practical six-button layout. Street Fighter matters precisely because it exposes the laboratory. The genre did not arrive complete. It emerged through experiments that gradually separated space, timing, distance and intention.",
+          "The first Street Fighter is remembered in part for an early cabinet configuration using large pressure-sensitive buttons. The idea was to translate the player's physical force into the strength of an on-screen punch or kick, seeking a direct link between real and virtual gestures. The solution proved impractical and was replaced by a six-button layout with light, medium and heavy attacks. That change is crucial: rather than measuring how hard a command is pressed, the game makes choices explicit. A discrete grammar emerges, more reliable and much better suited to being learned, combined and compared between players.",
+          "In the first Street Fighter, one player controls Ryu while a second can use Ken. They share most of their moves, and that symmetry makes the duel readable: when the tools are similar, differences appear to come from the decisions of the people holding the joysticks. A broad and highly differentiated cast will arrive mainly with Street Fighter II, but the competitive core of the series is already visible here. Fighting is not only about defeating computer-controlled opponents; it is about placing two people inside the same rules and letting timing, distance and risk decide who can impose a rhythm.",
+          "Hadoken, Shoryuken and Tatsumaki Senpukyaku introduce an idea that will become fundamental: some actions are not attached to one button but to a short sequence of directions and an attack. Performing a special move means possessing knowledge that must be embodied in the hands. In 1987 the inputs can feel strict and unforgiving, yet their very existence suggests a layer of mastery beyond the immediate use of buttons. Players do not merely discover what a character can do; they learn a vocabulary. Street Fighter II will make this language far more accessible and deep, but the first game already establishes its essential words."
+        ],
+        "era_id": "everywhere",
+        "layout": "essay",
+        "tags": [
+          "Playhub collection",
+          "release"
+        ],
+        "related_ids": [],
+        "images": [],
+        "videos": [],
+        "models": [],
+        "sources": [
+          {
+            "title": "www.platinumgames.com",
+            "url": "https://www.platinumgames.com/works/astral-chain",
+            "publisher": "www.platinumgames.com"
+          },
+          {
+            "title": "www.nintendo.com",
+            "url": "https://www.nintendo.com/en-gb/News/2019/July/Discover-the-excitement-of-ASTRAL-CHAIN-for-Nintendo-Switch-with-Nintendo-Treehouse-Live-1593654.html",
+            "publisher": "www.nintendo.com"
+          },
+          {
+            "title": "www.platinumgames.co.jp",
+            "url": "https://www.platinumgames.co.jp/dev-astral-chain/article/484",
+            "publisher": "www.platinumgames.co.jp"
+          },
+          {
+            "title": "Playhub: original published daily edition",
+            "url": "https://github.com/LoZazaMastro/Playhub/blob/main/catalog/on-this-day.json",
+            "publisher": "Playhub / LoZazaMastro",
+            "attribution": "Original published Playhub English introduction and chapter text retained without rewriting."
+          }
+        ],
+        "featured": false,
+        "factual_note": "Imported dated English Playhub editorial. Adapt its calendar wording, review publisher dates and assign rights-cleared media before presenting as a finished museum stop.",
+        "editorial_status": "existing_English_copy_requires_museum_adaptation",
+        "source_corpus": "Playhub history_imported.json",
+        "source_record_id": "workbook-08-30-astral-chain",
+        "event_semantics": "release",
+        "original_editorial_kind": "release",
+        "source_verification": "existing_local_provenance_not_live_reverified",
+        "editorial_mode": "calendar_feature_story",
+        "editorial_credit": "Playhub historical collection / LoZazaMastro. Original published English text and chapter headings retained.",
+        "story_headings": [
+          "Before the Perfect Combo There Was a Noisy Experiment",
+          "The First Experiment Tries to Measure the Strength of a Hit",
+          "Two Nearly Identical Fighters Create a Space for Human Comparison",
+          "Hadoken and Shoryuken Turn an Input Sequence into Knowledge"
+        ],
+        "calendar_editorial": {
+          "source_feature_id": "daily-08-30",
+          "schedule": {
+            "month": 8,
+            "day": 30
+          },
+          "provenance": {
+            "source_url": "https://github.com/LoZazaMastro/Playhub/blob/main/catalog/on-this-day.json",
+            "source_origin": "editions.entries",
+            "source_record_id": "workbook-08-30-astral-chain",
+            "source_revision": 1,
+            "source_updated_at": "2026-10-19",
+            "year_resolution": "published_edition_historical_anchor",
+            "subject_resolution": "exact_published_workbook_id",
+            "source_anniversary_metadata": {
+              "date": "08-30",
+              "year": 2019,
+              "kind": "release"
+            },
+            "source_theme_kind": "release",
+            "matched_entry_id": "workbook-08-30-astral-chain",
+            "matched_title": "Astral Chain"
+          },
+          "original_record_archive": "content/calendar-editorial-originals.json"
+        },
+        "publication_readiness": {
+          "status": "requires_review",
+          "editorial_signoff": false,
+          "blockers": [
+            "verified_hd_cover_missing",
+            "majority_contextual_card_images_unreviewed"
+          ],
+          "hd_images": 0,
+          "contextual_sections": []
+        }
+      },
+      "restored_original_destination": {
+        "id": "workbook-08-30-astral-chain",
+        "title": "Astral Chain",
+        "year": 2019,
+        "date": {
+          "month": 8,
+          "day": 30,
+          "precision": "day",
+          "region": "Nintendo Switch release"
+        },
+        "subtitle": "From the reference collection",
+        "summary": "Astral Chain is a 2019 action-adventure game developed by PlatinumGames and published by Nintendo for the Nintendo Switch.",
+        "body": [
+          "Astral Chain is a 2019 action-adventure game developed by PlatinumGames and published by Nintendo for the Nintendo Switch. It was directed by Takahisa Taura, who was previously lead game designer for Nier: Automata, under supervision by Devil May Cry and Bayonetta series creator Hideki Kamiya, and character designs from manga artist Masakazu Katsura.",
+          "Set in a dystopian future Earth, the game follows the events of a special police task force that protect remnants of humanity from interdimensional creatures and aberrations that invade the planet, with the story centering on the task force's two new twin recruits. Utilizing the titular Astral Chain, the twins restrain and tether the creatures, employing them in combat and investigation, referring to them as Legions. The setting of the game draws heavy inspiration from various cyberpunk manga and anime, while the gameplay combines hack and slash combat with role-playing elements and investigative open-world adventure game sections. The gameplay segments revolve heavily around the simultaneous controlling of two characters; the player character twin and their Legion.",
+          "Astral Chain was estimated to have had a five-year long development cycle and follows a slate of previous collaborations between PlatinumGames and Nintendo, with both companies having previously worked together on titles such as The Wonderful 101 and Bayonetta 2. The game was announced February 2019 as a part of that month's Nintendo Direct presentation. Astral Chain received highly positive reviews from critics who praised its dual-character gameplay, world building, presentation, customization, and soundtrack, though it received some criticism for its usage of a silent protagonist. As of December 2022, the game has sold over 1.3 million copies worldwide."
+        ],
+        "story_headings": [
+          "A game from PlatinumGames",
+          "Twins and their Legions",
+          "Development and reception"
+        ],
+        "editorial_mode": "reference",
+        "editorial_credit": "Selected complete English paragraphs from 'Astral Chain', by Wikipedia contributors, under CC BY-SA 4.0. Paragraph selection and editorial headings are identified; selected paragraph text is unchanged.",
+        "attribution": {
+          "text": "Selected complete English paragraphs from 'Astral Chain', by Wikipedia contributors, under CC BY-SA 4.0. Paragraph selection and editorial headings are identified; selected paragraph text is unchanged.",
+          "source_url": "https://en.wikipedia.org/w/index.php?oldid=1379560259",
+          "article_url": "https://en.wikipedia.org/wiki/Astral_Chain",
+          "contributors_url": "https://en.wikipedia.org/wiki/Astral_Chain?action=history",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "revision_id": 1379560259,
+          "revision_timestamp": "2026-10-10T18:42:44Z",
+          "changes": "Complete source paragraphs selected in original order; plain-text formatting; English editorial headings added."
+        },
+        "provenance": {
+          "provider": "English Wikipedia",
+          "page_id": 59947770,
+          "article_title": "Astral Chain",
+          "retrieved": "2026-10-21",
+          "opaque_museum_id_retained": true,
+          "source_revision": 1379560259,
+          "selected_intro_paragraph_indices": [
+            0,
+            1,
+            2
+          ]
+        },
+        "sources": [
+          {
+            "title": "Astral Chain - immutable article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1379560259",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/Astral_Chain?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          },
+          {
+            "title": "ASTRAL CHAIN official product page",
+            "url": "https://www.platinumgames.com/works/astral-chain",
+            "publisher": "PlatinumGames",
+            "checked": "2026-10-21",
+            "locator": "Product metadata: Nintendo Switch, release August 30 2019; twin officers/Legions, Taura/Kamiya/Katsura."
+          }
+        ],
+        "tags": [
+          "reference",
+          "Wikipedia"
+        ],
+        "factual_note": "Exact attributed reference paragraphs replace an inherited unrelated subject narrative; original published writing is retained under its actual subject and in the identity review archive. Identity review is not complete historical signoff.",
+        "date_provenance": {
+          "event": "Original game release, separate from edition scheduling",
+          "source": {
+            "title": "ASTRAL CHAIN official product page",
+            "url": "https://www.platinumgames.com/works/astral-chain",
+            "publisher": "PlatinumGames",
+            "checked": "2026-10-21",
+            "locator": "Product metadata: Nintendo Switch, release August 30 2019; twin officers/Legions, Taura/Kamiya/Katsura."
+          },
+          "verified_date": "2019-08-30"
+        }
+      },
+      "wikipedia_source_snapshot": {
+        "pageid": 59947770,
+        "ns": 0,
+        "title": "Astral Chain",
+        "extract": "Astral Chain is a 2019 action-adventure game developed by PlatinumGames and published by Nintendo for the Nintendo Switch. It was directed by Takahisa Taura, who was previously lead game designer for Nier: Automata, under supervision by Devil May Cry and Bayonetta series creator Hideki Kamiya, and character designs from manga artist Masakazu Katsura.\nSet in a dystopian future Earth, the game follows the events of a special police task force that protect remnants of humanity from interdimensional creatures and aberrations that invade the planet, with the story centering on the task force's two new twin recruits. Utilizing the titular Astral Chain, the twins restrain and tether the creatures, employing them in combat and investigation, referring to them as Legions. The setting of the game draws heavy inspiration from various cyberpunk manga and anime, while the gameplay combines hack and slash combat with role-playing elements and investigative open-world adventure game sections. The gameplay segments revolve heavily around the simultaneous controlling of two characters; the player character twin and their Legion.\nAstral Chain was estimated to have had a five-year long development cycle and follows a slate of previous collaborations between PlatinumGames and Nintendo, with both companies having previously worked together on titles such as The Wonderful 101 and Bayonetta 2. The game was announced February 2019 as a part of that month's Nintendo Direct presentation. Astral Chain received highly positive reviews from critics who praised its dual-character gameplay, world building, presentation, customization, and soundtrack, though it received some criticism for its usage of a silent protagonist. As of December 2022, the game has sold over 1.3 million copies worldwide.\n\n",
+        "revisions": [
+          {
+            "revid": 1379560259,
+            "parentid": 1364921161,
+            "timestamp": "2026-10-10T18:42:44Z"
+          }
+        ],
+        "contentmodel": "wikitext",
+        "pagelanguage": "en",
+        "pagelanguagehtmlcode": "en",
+        "pagelanguagedir": "ltr",
+        "touched": "2026-10-18T10:16:33Z",
+        "lastrevid": 1379560259,
+        "length": 47464,
+        "fullurl": "https://en.wikipedia.org/wiki/Astral_Chain",
+        "editurl": "https://en.wikipedia.org/w/index.php?title=Astral_Chain&action=edit",
+        "canonicalurl": "https://en.wikipedia.org/wiki/Astral_Chain"
+      },
+      "publisher_evidence": [
+        {
+          "title": "ASTRAL CHAIN official product page",
+          "url": "https://www.platinumgames.com/works/astral-chain",
+          "publisher": "PlatinumGames",
+          "checked": "2026-10-21",
+          "locator": "Product metadata: Nintendo Switch, release August 30 2019; twin officers/Legions, Taura/Kamiya/Katsura."
+        }
+      ],
+      "media_policy": "Never copy media between the old mislabeled destination and corrected subject; matching imagery requires explicit curation.",
+      "historical_date_review": "Street Fighter1987 year retained; August30 remains original prose, not verified metadata."
+    }
+  ],
+  "archived_street_fighter_reference": {
+    "id": "wikipedia-2829113",
+    "title": "Street Fighter",
+    "year": 1987,
+    "date": {
+      "month": 0,
+      "day": 0,
+      "precision": "year",
+      "region": "Original release year category; regional dates may differ"
+    },
+    "kind": "game",
+    "subtitle": "From the reference collection",
+    "summary": "Street Fighter is a 1987 fighting game developed and published by Capcom for arcades.",
+    "body": [
+      "Street Fighter is a 1987 fighting game developed and published by Capcom for arcades. It is the first competitive fighting game produced by the company and the first installment in the Street Fighter series. It was a commercial success in arcades and introduced special attacks and some of the conventions made standard in later fighting games, such as the six-button controls and the use of command-based special moves.",
+      "Street Fighter was directed by Takashi Nishiyama, who conceived it by adapting the boss battles of his earlier beat 'em up game Kung-Fu Master (1984), for a one-on-one fighting game, and by drawing influence from popular Japanese shōnen manga. A port for the TurboGrafx-CD was released as Fighting Street in 1988, and was re-released via emulation for the Wii's Virtual Console in 2009.",
+      "Its sequel, Street Fighter II (1991), evolved its gameplay with phenomenal worldwide success. Street Fighter also spawned two spiritual successors: Capcom's beat 'em up Final Fight (working title Street Fighter '89) and SNK's fighting game Fatal Fury: King of Fighters (1991), the latter designed by Nishiyama."
+    ],
+    "era_id": "personal",
+    "tags": [
+      "reference",
+      "Wikipedia"
+    ],
+    "related_ids": [],
+    "layout": "editorial",
+    "images": [],
+    "videos": [],
+    "models": [],
+    "featured": false,
+    "sources": [
+      {
+        "title": "Street Fighter (video game) — article revision",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1380552055",
+        "publisher": "English Wikipedia contributors"
+      },
+      {
+        "title": "1988 in video games — annual context",
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1375108616",
+        "publisher": "English Wikipedia contributors"
+      },
+      {
+        "title": "Contributors and article history",
+        "url": "https://en.wikipedia.org/wiki/Street_Fighter_(video_game)?action=history",
+        "publisher": "English Wikipedia contributors"
+      },
+      {
+        "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "publisher": "Creative Commons"
+      }
+    ],
+    "attribution": {
+      "text": "Text reproduced from 'Street Fighter (video game)', by Wikipedia contributors, under CC BY-SA 4.0. No substantive text changes; lead paragraphs selected and formatting removed.",
+      "source_url": "https://en.wikipedia.org/w/index.php?oldid=1380552055",
+      "article_url": "https://en.wikipedia.org/wiki/Street_Fighter_(video_game)",
+      "contributors_url": "https://en.wikipedia.org/wiki/Street_Fighter_(video_game)?action=history",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "revision_id": 1380552055,
+      "revision_timestamp": "2026-10-16T12:37:26Z",
+      "changes": "Lead section selected; plain-text formatting. Text otherwise reproduced."
+    },
+    "provenance": {
+      "provider": "English Wikipedia",
+      "page_id": 2829113,
+      "article_title": "Street Fighter (video game)",
+      "year_index_discovery_years": [
+        1988
+      ],
+      "discovery_method": "Annual release/awards tables; supplemented by release-year category members for1970s/2020s",
+      "release_year_basis": "Earliest filtered YYYY video games category; no month/day inferred",
+      "page_image_filename": null,
+      "retrieved": "2026-10-20"
+    },
+    "factual_note": "Reference article introduction reproduced under its stated licence. Year comes from the article's release-year category; regional/port dates may differ.",
+    "editorial_mode": "reference",
+    "story_headings": [],
+    "editorial_credit": "Text reproduced from 'Street Fighter (video game)', by Wikipedia contributors, under CC BY-SA 4.0. No substantive text changes; lead paragraphs selected and formatting removed.",
+    "publication_readiness": {
+      "status": "requires_review",
+      "editorial_signoff": false,
+      "blockers": [
+        "verified_hd_cover_missing",
+        "majority_contextual_card_images_unreviewed"
+      ],
+      "hd_images": 0,
+      "contextual_sections": []
+    }
+  },
+  "source_locale_file_sha256_before_metadata_migration": {
+    "de": "3da843403c96a7fe8283e5a39f80b3a71424b7a100e58255d808c23fdd61ae55",
+    "en": "f662eda46e9366b399ae3a33cce8d61d2ec6d90c83cfa43e13881a55e7213138",
+    "es": "84b96983aebba818b632357e5c2adb9e65896fdad962263bbcebc734f70c390f",
+    "fr": "e73c54eb3d41cca36d6af4f1361da3b99be421a253ae82fb7d93be980a860d2f",
+    "it": "6b7fe7143f445d079858925c7e7d9f2c493d19ac7ec193a3d0427f4cff231ca9",
+    "pt": "c740bb6c56a3479e74d2b17855563f01a216ea83aed2c3308ac82017677b9e3e",
+    "ru": "964d3ee47a46622a41940133d070f235255eca544c7b569f08e9e114ce1cf73f",
+    "uk": "d94ac5afd7048e519d5d2af9ea2fb16b7514a90ac7126e8d464ee4db8dd8ca9b"
+  }
+}

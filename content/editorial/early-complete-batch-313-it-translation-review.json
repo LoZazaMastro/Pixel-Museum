@@ -1,0 +1,98 @@
+{
+  "status": "PASS",
+  "locale": "it",
+  "entries": [
+    {
+      "entry_id": "wikipedia-36495663",
+      "source_fields_sha256": "afe3de8de97adf324802fff412e092c73cf69da99dcf24c6be8f6fca3218b2ad",
+      "translation_sha256": "a65ce8b5961103affdaa3f018387cd2a4997130f1dcbbf4616e8f703308f3aa6",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch313/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "79b532ed7546a1467a3297126e221dfa5a27addb4e702382d9fbcfba7292e839"
+    },
+    {
+      "entry_id": "workbook-03-10-call-of-duty-warzone",
+      "source_fields_sha256": "e2b94d8f020a23212f88a4a2006beb80243c2e39f0af21651f667a062fa96c05",
+      "translation_sha256": "d105d86de3235919b1f8cfed7407dda91d78afd3965321adabcf6ad2da349d61",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch313/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "79b532ed7546a1467a3297126e221dfa5a27addb4e702382d9fbcfba7292e839"
+    },
+    {
+      "entry_id": "wikipedia-54280556",
+      "source_fields_sha256": "efc50745ffd8f3aaa9496a1241e82ffe1600249dced70acddfef667f12c7fb51",
+      "translation_sha256": "ecee878b1cc23233e545e4755b2326e1343b370fe6680ed210a8bcd78ef993f5",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch313/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "79b532ed7546a1467a3297126e221dfa5a27addb4e702382d9fbcfba7292e839"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "root",
+    "actual_receipt": "build/research/catalog-2020-chronological/first-three-private/independent-root-approval.json",
+    "actual_receipt_sha256": "45f0ee785015ea5583e238a1568df0f5e92a463bc6c4a3fad81e827dad9c3926",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "root",
+      "reviewed_index": "build/research/catalog-2020-chronological/first-three-private/three-original-source-media-four-language-private-index.json",
+      "reviewed_index_sha256": "bd8a4bb0e6777500cf70099ddb681c7bb91c42c0a45a2e9ef7140607c30e6269",
+      "owners": [
+        {
+          "entry_id": "wikipedia-36495663",
+          "slug": "yakuza",
+          "source": "build/research/catalog-2020-chronological/first-three-private/yakuza/complete-original-source-media-private-candidate.json",
+          "source_sha256": "e4eafdeb8343ddaa31a36a2b921f91bf385a452f8d0630788ae9578d5c99132f",
+          "target": "build/research/catalog-2020-chronological/first-three-private/yakuza/complete-four-language-private-candidate.json",
+          "target_sha256": "c47e39f1b1db86394c61624b93fa19213659a67e2958d6fa36c3a590cd1479d0",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 6,
+          "tracks": 2,
+          "contact": "build/research/catalog-2020-chronological/first-three-private/yakuza/final-selected-media-contact.jpg",
+          "contact_sha256": "1809b51d15a0ba878db466966b61837d9ded689b7f5a5c92c5cff24a982f4e35"
+        },
+        {
+          "entry_id": "workbook-03-10-call-of-duty-warzone",
+          "slug": "warzone",
+          "source": "build/research/catalog-2020-chronological/first-three-private/warzone/complete-original-source-media-private-candidate.json",
+          "source_sha256": "abaf07c043a0ae2aad8be01ac546f9cd46c66464fcd48550d960f2beff99ec6f",
+          "target": "build/research/catalog-2020-chronological/first-three-private/warzone/complete-four-language-private-candidate.json",
+          "target_sha256": "176741322c361df1d0781d7f397779bf003f151eba9600f9daf6626cac750f80",
+          "english_cards": 4,
+          "localized_cards": 16,
+          "images": 6,
+          "tracks": 3,
+          "contact": "build/research/catalog-2020-chronological/first-three-private/warzone/final-selected-media-contact.jpg",
+          "contact_sha256": "81e815ecd5abc7bbde5213efa37bc78f41019d200e10e0808b62b3833b0e2a9e"
+        },
+        {
+          "entry_id": "wikipedia-54280556",
+          "slug": "ori",
+          "source": "build/research/catalog-2020-chronological/first-three-private/ori/complete-original-source-media-private-candidate.json",
+          "source_sha256": "b17fa2e453d8178bb5f59926a40e5481a267abcf08f385af3e82fef338de26a1",
+          "target": "build/research/catalog-2020-chronological/first-three-private/ori/complete-four-language-private-candidate.json",
+          "target_sha256": "f27e3186868b386bcc39382b900420c28f4d5ca4f506f457ca13fa91b8892375",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 6,
+          "tracks": 59,
+          "contact": "build/research/catalog-2020-chronological/first-three-private/ori/final-selected-media-contact.jpg",
+          "contact_sha256": "09d45582c94d828cfb66a420ecfd44c473360d7b528d0a76e577c2786f030821"
+        }
+      ],
+      "review_scope": {
+        "english_paragraphs_read": 10,
+        "localized_paragraphs_read": 40,
+        "final_media_images_viewed": 18,
+        "new_music_public_metadata_read": 3,
+        "primary_sources_read": [
+          "https://www.sega.jp/topics/detail/200116_5/",
+          "https://blog.activision.com/call-of-duty/2020-03/Warzone-Mode-Recon-Plunder",
+          "https://news.xbox.com/en-us/2020/03/11/ori-and-the-will-of-the-wisps-available-now/"
+        ]
+      },
+      "notes": [
+        "Warzone first lobby loop 3:55 directly stated by uploader; Season6 deployment exact0:45-2:09 chapters read; not official uploader or PS5 playback claims. Existing61 music objects preserved."
+      ],
+      "production_writes": false
+    }
+  }
+}

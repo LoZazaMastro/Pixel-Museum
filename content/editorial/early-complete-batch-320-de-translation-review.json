@@ -1,0 +1,105 @@
+{
+  "status": "PASS",
+  "locale": "de",
+  "entries": [
+    {
+      "entry_id": "wikipedia-63528316",
+      "source_fields_sha256": "3413627a611e96c9cb8d0a9d2607c394fbdce3dd106ed1ea14ab6c9d9b16b141",
+      "translation_sha256": "8ebced3dc581e962b921e74a4ef167b7a550ea737c6f4691a8c046997049fe53",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch320/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "612f3b28c238f602435071f23907d8dcc3060da4e051421d3a91970ebd388912"
+    },
+    {
+      "entry_id": "wikipedia-70662101",
+      "source_fields_sha256": "7c15d475329b07b366b6d5bccd45054e896b8e63326781ec797e8a096507d804",
+      "translation_sha256": "7e9b142a620f145bf297b66bde1e8524ab720142146163b5b79786c85aa5c2d3",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch320/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "612f3b28c238f602435071f23907d8dcc3060da4e051421d3a91970ebd388912"
+    },
+    {
+      "entry_id": "wikipedia-61416573",
+      "source_fields_sha256": "daaf8e8faca1cedf0f896914c25521ec115ef539d40f004e1ea246b36331a3b3",
+      "translation_sha256": "5e0a723fca625667840b47844e9e5772d9c0fb6decbf0bb362be72a0c6e279a3",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch320/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "612f3b28c238f602435071f23907d8dcc3060da4e051421d3a91970ebd388912"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "/root/package_audit",
+    "actual_receipt": "build/research/catalog-2020-chronological/september-three-private/independent-package-audit-approval.json",
+    "actual_receipt_sha256": "0bb92dd18d4510b6e37ee70a6582f6220703d87b55c4ac0bf8a517fec54cb2a3",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "/root/package_audit",
+      "index": "build/research/catalog-2020-chronological/september-three-private/three-private-index.json",
+      "index_sha256": "e13593f350adaef6306af943201137ab95a71c0d2f971463247b53a8a3c558a8",
+      "owners": [
+        {
+          "entry_id": "wikipedia-63528316",
+          "slug": "mario",
+          "source": "build/research/catalog-2020-chronological/september-three-private/mario/complete-original-source-media-private-candidate.json",
+          "source_sha256": "b77189641e2a54ee05bcf6558c64302b6fb28c848fc973d4186c0d8c6c517d01",
+          "target": "build/research/catalog-2020-chronological/september-three-private/mario/complete-four-language-private-candidate.json",
+          "target_sha256": "91f63599387318975c1e099688d7095a0d4912edb4e6cb840f8e6c62f73ed631",
+          "english_cards": 2,
+          "localized_cards": 8,
+          "images": 5,
+          "tracks": 3,
+          "contact": "build/research/catalog-2020-chronological/september-three-private/mario/final-selected-media-contact.jpg",
+          "contact_sha256": "07feae54db134e6aa42c87bdb9170e1f09f735b9afd51584a3f629194a452418",
+          "finite_errata": 1
+        },
+        {
+          "entry_id": "wikipedia-70662101",
+          "slug": "rally",
+          "source": "build/research/catalog-2020-chronological/september-three-private/rally/complete-original-source-media-private-candidate.json",
+          "source_sha256": "8642ffedc6de4c3a4bf17d33ab0e67bcd623e1c2dabaa70242b5e7dd128e7f84",
+          "target": "build/research/catalog-2020-chronological/september-three-private/rally/complete-four-language-private-candidate.json",
+          "target_sha256": "34306e419cf95431e17383b79c02352b66b67decaa5511724b25ef1018b79d63",
+          "english_cards": 2,
+          "localized_cards": 8,
+          "images": 6,
+          "tracks": 3,
+          "contact": "build/research/catalog-2020-chronological/september-three-private/rally/final-selected-media-contact.jpg",
+          "contact_sha256": "2902445c4787fb308be7348fe616a58f21d59e2242f3d104f997956e955347b9",
+          "finite_errata": 1
+        },
+        {
+          "entry_id": "wikipedia-61416573",
+          "slug": "genshin",
+          "source": "build/research/catalog-2020-chronological/september-three-private/genshin/complete-original-source-media-private-candidate.json",
+          "source_sha256": "f42f63ce6083d64b32573eb75639c3bf44b7f727057baccc0d1c1984be122ea5",
+          "target": "build/research/catalog-2020-chronological/september-three-private/genshin/complete-four-language-private-candidate.json",
+          "target_sha256": "7e4730ffd11dcc63a1558ab64076979c638dd683058f6ab5b29c5e9b668c418e",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 5,
+          "tracks": 3,
+          "contact": "build/research/catalog-2020-chronological/september-three-private/genshin/final-selected-media-contact.jpg",
+          "contact_sha256": "ff692da1abc57bea0c83988ff0fb6bc69e64da2e51629ac59a24b8c9cfaa57ba",
+          "finite_errata": 1
+        }
+      ],
+      "scope": {
+        "english_paragraphs_read": 7,
+        "localized_paragraphs_read": 28,
+        "final_contact_images_seen": 16,
+        "new_recording_metadata_read": 4,
+        "existing_tracks_preserved": 5
+      },
+      "findings_resolved": [],
+      "evidence": [
+        "All EN and IT/FR/DE/ES paragraphs, summaries and headings read; three final selected contact sheets personally viewed. Mario original Nintendo images cover all three component games, no modern box backs.",
+        "Developer Steam March26,2024 Android announcement independently opened and read; iOS/Android dates are distinct. Tatreal Bandcamp independently opened and original soundtrack identity read; two selected Funselektor metadata identify original2020 publisher score previews.",
+        "Genshin two exact Believe/miHoYo delivery metadata read with album2020 release dates and public AAC. Images explicitly distinguish2019concept and2021Mondstadt from original2020cinematic.",
+        "PocketGamer September27,2024 article read independently:6.3billion is AppMagic estimated gross AppStore/GooglePlay revenue, correctly qualified in EN and four locales.",
+        "Nintendo9.01million is sell-in, not consumer sell-through. Existing Mario component-score collection remains explicitly qualified, not an invented175-track complete claim."
+      ],
+      "limits": [
+        "Editorial, visual and publication metadata review only; no PS5 playback or audio audition asserted. Untouched soundtrack recordings were not redundantly probed."
+      ],
+      "production_writes": false
+    }
+  }
+}

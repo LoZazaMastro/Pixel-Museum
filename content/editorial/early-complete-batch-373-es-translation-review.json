@@ -1,0 +1,119 @@
+{
+  "status": "PASS",
+  "locale": "es",
+  "entries": [
+    {
+      "entry_id": "wikipedia-74017718",
+      "source_fields_sha256": "307b458905fd8c269dd18aa1d2d9d432cf0bb6311a5617be7806c9dd2e01885f",
+      "translation_sha256": "b71afde1e0ab26f04f126104fac5620c04a32b1d391442f28a6219e6eb64ed38",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch373/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "647aedf1f7c663716b541ee192b53e9dbbf1ea3a61ddf0593c920729bf9f8502"
+    },
+    {
+      "entry_id": "wikipedia-76786178",
+      "source_fields_sha256": "f63a819b5fc3b6cc16ddf8ef80214f74f74aedb2955d6ec040ab0db79cb79f2d",
+      "translation_sha256": "01210b0ad01277d96453ccfd0736debf9b4826cd876daa5e41d0617219c31b1f",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch373/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "647aedf1f7c663716b541ee192b53e9dbbf1ea3a61ddf0593c920729bf9f8502"
+    },
+    {
+      "entry_id": "wikipedia-75726993",
+      "source_fields_sha256": "c69e16ff793b0a0f35f3c8a1a095254ec44ca87c969c74fc9758c4cf7928618c",
+      "translation_sha256": "b13a261bd380d5011de25749f70ad8b16d040bbba7cc7cf08ec9bd13b8211452",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch373/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "647aedf1f7c663716b541ee192b53e9dbbf1ea3a61ddf0593c920729bf9f8502"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "editorial_continue",
+    "actual_receipt": "build/research/catalog-2024-chronological/october-final-three-private/independent-editorial-peer-approval.json",
+    "actual_receipt_sha256": "26d80391ed40ab4bb0e4215d561408689af1f1278c34cf2c8ed074ec78a5974f",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "editorial_continue",
+      "index": "build/research/catalog-2024-chronological/october-final-three-private/three-private-index.json",
+      "index_sha256": "b3e97ff15b852673ac214b865ee5453b1081e5be1baecca92e056f7ebc8df2fd",
+      "scope": "Actually read all eleven English and forty-four localized paragraphs and all five fields. Actually viewed eighteen final images in three contact sheets. Read all four new public AAC metadata receipts. Sixty-three existing selections preserved without redundant stream requests. Checked source/target/contact and recovery-byte bindings.",
+      "primary_sources_actually_read": [
+        {
+          "url": "https://www.segasammy.co.jp/en/release/57172/",
+          "finding": "Original October 11, 2024 investor notice defines first-day million as physical shipments plus digital sales."
+        },
+        {
+          "url": "https://www.sega.co.jp/en/release/260610_1.html",
+          "finding": "June 10, 2026 original publisher announcement confirms November 12, 2026 Switch 2 release and distinguishes original October 2024 game; also confirms original awards."
+        },
+        {
+          "url": "https://www.dc.com/games/batman-arkham-shadow-2024",
+          "finding": "Quest 3 and 3S, October 22, 2024, Rat King and original game gallery; first-person VR combat and earlier versions of familiar characters."
+        },
+        {
+          "url": "https://www.watertower-music.com/release/batman-arkham-shadow-original-video-game-soundtrack/",
+          "finding": "February 27, 2025 album of the original 2024 VR game, with individual Kazuma Jinnouchi credits on all three selected pieces."
+        },
+        {
+          "url": "https://www.callofduty.com/blog/2024/06/call-of-duty-black-ops-6-worldwide-reveal-announcement",
+          "finding": "Original June 9, 2024 reveal, October 25 release, Treyarch/Raven roles, early-1990s campaign and Omnimovement; two launch Zombies maps are distinguished from the later total in the article."
+        },
+        {
+          "url": "https://www.callofduty.com/blog/2024/08/call-of-duty-black-ops-6-zombies-deep-dive-terminus-map-intel",
+          "finding": "Original Treyarch round-based systems, Terminus crew and gameplay source images."
+        }
+      ],
+      "music_notes": "Three WaterTower Kazuma Jinnouchi Batman cues are original Arkham Shadow music, not the earlier Arkham VR score. Iraq is Jack Wall official Activision/Symphonic October 25, 2024 original cue, 266 seconds; producer Brandon Young is not mislabeled composer. No downloaded audio.",
+      "resolved_findings": [
+        {
+          "field": "Music context fields",
+          "resolution": "Only missing spaces around dates/years corrected before the final pin, with recording IDs, media and article text unchanged."
+        }
+      ],
+      "findings": [],
+      "owners": [
+        {
+          "entry_id": "wikipedia-74017718",
+          "slug": "metaphor",
+          "source": "build/research/catalog-2024-chronological/october-final-three-private/metaphor-source-private-candidate.json",
+          "source_sha256": "51a8296b0ebd3fd577099abda8cfeaf36d09e5634b6985087a0a7f6009df49f2",
+          "target": "build/research/catalog-2024-chronological/october-final-three-private/metaphor-four-language-private-candidate.json",
+          "target_sha256": "b6612a1075f2ef3f41247aaef7611d69b9273dda638dd64e08feba7c4cc67bdf",
+          "contact": "build/research/catalog-2024-chronological/october-final-three-private/metaphor-final-contact.jpg",
+          "contact_sha256": "232a5d503437eeb7d46a91a0a286e8784572ec817b348dfda7730331ddec857d",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 6,
+          "tracks": 61
+        },
+        {
+          "entry_id": "wikipedia-76786178",
+          "slug": "batman",
+          "source": "build/research/catalog-2024-chronological/october-final-three-private/batman-source-private-candidate.json",
+          "source_sha256": "1bb6bb068b2edcc886642f3db41780d8ef68a26e912b3a2727e5a6276ca0e122",
+          "target": "build/research/catalog-2024-chronological/october-final-three-private/batman-four-language-private-candidate.json",
+          "target_sha256": "f49dcff2c90f0ca4db166f638d0b10ee00e328321eed77889af0011d19a7940b",
+          "contact": "build/research/catalog-2024-chronological/october-final-three-private/batman-final-contact.jpg",
+          "contact_sha256": "7fabe5c3914e22318f41b3f604165c105b2215efe8912c8a04583dd4adbfac87",
+          "english_cards": 2,
+          "localized_cards": 8,
+          "images": 4,
+          "tracks": 3
+        },
+        {
+          "entry_id": "wikipedia-75726993",
+          "slug": "cod",
+          "source": "build/research/catalog-2024-chronological/october-final-three-private/cod-source-private-candidate.json",
+          "source_sha256": "8a9fb1e0833bc93a4a9bee34ab4656d2541500a6372aaacc231faaa4f27e0541",
+          "target": "build/research/catalog-2024-chronological/october-final-three-private/cod-four-language-private-candidate.json",
+          "target_sha256": "5de650971925b3e65f1530ff34997555d819353dea7e803fb6db6fcf5bccbec4",
+          "contact": "build/research/catalog-2024-chronological/october-final-three-private/cod-final-contact.jpg",
+          "contact_sha256": "099701d2579764e9003bc2fd5d7c153ec6999c55b4eea471df06d5f519ec21d6",
+          "english_cards": 6,
+          "localized_cards": 24,
+          "images": 8,
+          "tracks": 3
+        }
+      ],
+      "production_writes": false
+    }
+  }
+}

@@ -1,0 +1,668 @@
+{
+  "batch_id": "305-human-history",
+  "sources": [
+    {
+      "source_id": "nobel_facts",
+      "title": "Rita Levi-Montalcini — Nobel Prize facts",
+      "url": "https://www.nobelprize.org/prizes/medicine/1986/levi-montalcini/facts/",
+      "verification_scope": "Scheda ufficiale: nascita 22 aprile 1909, premio 1986, morte nel 2012. La cronologia della voce resta quella dell’evento Nobel."
+    },
+    {
+      "source_id": "nobel_award",
+      "title": "The Nobel Prize in Physiology or Medicine 1986",
+      "url": "https://www.nobelprize.org/prizes/medicine/1986/summary/",
+      "verification_scope": "Motivazione e attribuzione congiunta a Stanley Cohen e Rita Levi-Montalcini."
+    },
+    {
+      "source_id": "senate",
+      "title": "Rita Levi-Montalcini, XVI Legislatura",
+      "url": "https://www.senato.it/legislature/16/composizione/senatori/elenco-alfabetico/scheda-attivita?did=00018431",
+      "verification_scope": "Scheda istituzionale indicizzata: nascita, nomina a vita del 1 agosto 2001 e morte il 30 dicembre 2012."
+    },
+    {
+      "source_id": "rita_centennial",
+      "title": "Il Cnr dice due volte: buon compleanno Rita",
+      "url": "https://www.cnr.it/en/press-release/4842/il-cnr-dice-due-volte-buon-compleanno-rita",
+      "verification_scope": "Comunicato del 17 aprile 2009: programma delle celebrazioni del centenario, compreso l’incontro del 22 aprile in Campidoglio. È un programma preventivo, non un resoconto successivo."
+    },
+    {
+      "source_id": "rita_hundred",
+      "title": "A century of Rita",
+      "url": "https://www.nature.com/articles/4581090b",
+      "verification_scope": "Notizia del centenario: prima persona premiata con il Nobel a raggiungere cento anni. Non usata per affermazioni mediche."
+    },
+    {
+      "source_id": "rita_celebration",
+      "title": "Festa in Campidoglio per i 100 anni della Montalcini",
+      "url": "https://giornalesm.com/festa-in-campidoglio-per-i-100-anni-della-montalcini-la-gelmini-sei-milioni-contro-la-fuga-dei-cervelli/",
+      "verification_scope": "Resoconto datato 22 aprile 2009 consultato nell’estratto indicizzato: celebrazione effettiva in Aula Giulio Cesare. Non riprese le dichiarazioni politiche estranee alla voce."
+    },
+    {
+      "source_id": "watchmen_sale",
+      "title": "Watchmen #1 — Grand Comics Database",
+      "url": "https://www.comics.org/issue/41815/",
+      "verification_scope": "Scheda bibliografica indicizzata: vendita il 13 maggio 1986, copertina settembre 1986; la nota del compilatore cita DC Releases #28. Non si dichiara consultato direttamente quel bollettino."
+    },
+    {
+      "source_id": "gsm_history",
+      "title": "Global Mobile Communication is 20 years old",
+      "url": "https://www.gsma.com/newsroom/press-release/global-mobile-communication-is-20-years-old/",
+      "verification_scope": "Comunicato GSMA del 6 settembre 2007: accordo iniziale del 7 settembre 1987 a Copenaghen, quindici operatori e tredici paesi. Nota: la Spagna aderì il 10 settembre, perciò il testo collettivo mantiene il mese."
+    },
+    {
+      "source_id": "gsm_timeline",
+      "title": "GSMA — Our history",
+      "url": "https://www.gsma.com/about-us/who-we-are/our-history/",
+      "verification_scope": "Cronologia istituzionale: memorandum di settembre 1987 e impegno a implementare GSM. Non identifica quella firma con l’inizio dei servizi commerciali."
+    },
+    {
+      "source_id": "u2_release",
+      "title": "The Joshua Tree — U2 official website",
+      "url": "https://www.u2.com/products/u2-the-joshua-tree",
+      "verification_scope": "Pagina ufficiale consultata: 9 marzo 1987, produzione Daniel Lanois e Brian Eno. Le esperienze e i temi già forniti restano attribuiti al materiale INPUT."
+    },
+    {
+      "source_id": "emperor_release",
+      "title": "L’ultimo imperatore — Archivio Bernardo Bertolucci",
+      "url": "https://bernardobertolucci.org/film/lultimo-imperatore/",
+      "verification_scope": "Scheda dell’archivio del regista: uscita nazionale il 23 ottobre 1987. Data commerciale italiana, distinta da altre presentazioni."
+    },
+    {
+      "source_id": "emperor_credits",
+      "title": "The Last Emperor — Criterion Collection",
+      "url": "https://www.criterion.com/films/254",
+      "verification_scope": "Scheda dell’edizione approvata dal regista consultata: cast, fotografia, scenografie e tre compositori. Non è stata visionata l’edizione video."
+    },
+    {
+      "source_id": "emperor_oscars",
+      "title": "The 60th Academy Awards — 1988",
+      "url": "https://www.oscars.org/oscars/ceremonies/embed/1988",
+      "verification_scope": "Archivio Academy: nove candidature e nove vittorie per The Last Emperor, inclusi film e regia. I premi sono della cerimonia 1988 per film del 1987."
+    },
+    {
+      "source_id": "akira_release",
+      "title": "AKIRA — TMS Entertainment",
+      "url": "https://www.tms-e.co.jp/alltitles/1980s/059301.html",
+      "verification_scope": "Scheda del produttore: uscita giapponese 16 luglio 1988, crediti e sinossi. L’incidente coinvolge un bambino con poteri psichici; evitata l’affermazione non necessaria che Tetsuo lo colpisca fisicamente."
+    },
+    {
+      "source_id": "totoro_release",
+      "title": "My Neighbor Totoro — Studio Ghibli",
+      "url": "https://www.ghibli.jp/works/totoro/",
+      "verification_scope": "Pagina ufficiale consultata integralmente: uscita 16 aprile 1988, autore e voci. Nessuna nuova musica aggiunta ai metadati."
+    },
+    {
+      "source_id": "totoro_kinema",
+      "title": "My Neighbor Totoro — KINENOTE",
+      "url": "https://www.kinenote.com/sp/public/cinema/detail.aspx?cinema_id=17955",
+      "verification_scope": "Scheda e dati bibliografici del servizio Kinema Junpo; separati dai commenti degli utenti presenti nella stessa pagina. L’anno 1988 è quello del film e della selezione, non una data attribuita a tutte le cerimonie."
+    },
+    {
+      "source_id": "totoro_awards",
+      "title": "Studio Ghibli films — award list",
+      "url": "https://ghibli.jpn.org/スタジオジブリ作品-映画賞-受賞一覧/",
+      "verification_scope": "Elenco secondario consultato nell’estratto indicizzato: Kinema Junpo 1988, Mainichi 1988 e Blue Ribbon 31. Non presentato come sito ufficiale Studio Ghibli."
+    },
+    {
+      "source_id": "totoro_animage",
+      "title": "My Neighbor Totoro — work information",
+      "url": "https://ghibli-goods.net/jiblog/data-my-neighbor-totoro/",
+      "verification_scope": "Elenco secondario indicizzato che include l’undicesimo Anime Grand Prix di Animage. I riconoscimenti erano già nel materiale originale; non si dichiarano consultati i fascicoli d’epoca."
+    },
+    {
+      "source_id": "paradiso_release",
+      "title": "Nuovo cinema Paradiso — Cinematografo",
+      "url": "https://www.cinematografo.it/film/nuovo-cinema-paradiso-x9mcol3u",
+      "verification_scope": "Scheda della Fondazione Ente dello Spettacolo consultata: uscita 17 novembre 1988; Andrea Morricone per il tema d’amore; riconoscimenti Cannes e Oscar."
+    },
+    {
+      "source_id": "paradiso_archive",
+      "title": "Nuovo Cinema Paradiso — ANICA",
+      "url": "https://www.archiviodelcinemaitaliano.it/risultati/scheda?codice=MM7898",
+      "verification_scope": "Crediti e sinossi consultati. L’11 novembre 1988 è il visto di censura, non la data di uscita."
+    },
+    {
+      "source_id": "andrea_music",
+      "title": "Andrea Morricone — official biography",
+      "url": "https://www.andreamorricone.com/about.html",
+      "verification_scope": "Dichiarazione diretta del compositore: autore del tema d’amore di Cinema Paradiso e collaboratore del padre. Il testo integra il contributo senza modificare i metadati musicali né introdurre titoli tradotti."
+    },
+    {
+      "source_id": "paradiso_context",
+      "title": "Nuovo cinema Paradiso — Cineteca di Bologna",
+      "url": "https://cinetecadibologna.it/programmazione/proiezione/nuovo-cinema-paradiso/",
+      "verification_scope": "Scheda di programmazione consultata come contesto già fornito; non copiate le formulazioni critiche citate dalla Cineteca."
+    },
+    {
+      "source_id": "tiananmen_archive",
+      "title": "Tiananmen Square, 1989: The Declassified History",
+      "url": "https://nsarchive2.gwu.edu/NSAEBB/NSAEBB16/",
+      "verification_scope": "Introduzione e descrizioni dei documenti declassificati consultate: repressione a Pechino, avanzata notturna tra 3 e 4 giugno. Non si attribuiscono tutte le uccisioni all’interno della piazza e non si introduce un bilancio non richiesto."
+    },
+    {
+      "source_id": "tiananmen_documents",
+      "title": "Tiananmen documents index",
+      "url": "https://nsarchive2.gwu.edu/NSAEBB/NSAEBB16/documents/index.html",
+      "verification_scope": "Indice e descrizioni archivistiche: legge marziale dal 20 maggio. Non si dichiara la lettura integrale di tutti i documenti PDF."
+    },
+    {
+      "source_id": "berlin_demolition",
+      "title": "Vor 30 Jahren: Abriss der Berliner Mauer — bpb",
+      "url": "https://www.bpb.de/kurz-knapp/hintergrund-aktuell/311300/vor-30-jahren-abriss-der-berliner-mauer/",
+      "verification_scope": "Ricostruzione istituzionale: apertura 9 novembre 1989 e demolizione organizzata dal 13 giugno 1990."
+    },
+    {
+      "source_id": "berlin_border",
+      "title": "Abbau der Grenzanlagen — Deutsche Einheit 1990",
+      "url": "https://deutsche-einheit-1990.de/ministerien/ministerium-fuer-abruestung-und-verteidigung/abbau-der-grenzanlagen/",
+      "verification_scope": "Ricostruzione storica con documenti: apertura dei passaggi e rimozioni successive, distinta la frontiera dal muro materiale."
+    },
+    {
+      "source_id": "malta_archive",
+      "title": "Bush and Gorbachev at Malta — National Security Archive",
+      "url": "https://nsarchive2.gwu.edu/NSAEBB/NSAEBB298/",
+      "verification_scope": "Introduzione archivistica e descrizione dei verbali consultate. Il vertice è trattato come passo nel superamento della contrapposizione; non come trattato che abbia formalmente dichiarato conclusa la Guerra fredda."
+    }
+  ],
+  "decisions": [
+    {
+      "target_id": "history-1986-rita-levi-montalcini",
+      "problem": "Distinguere una voce dedicata al Nobel da una voce biografica collocata alla nascita.",
+      "conclusion": "Conservato il 1986 come evento esplicito. Nel testo indicata la nascita verificata il 22 aprile 1909 e mantenuti Nobel condiviso, NGF, senato a vita, morte e centenario celebrato a Roma. Nessun trasferimento arbitrario della voce al 1909.",
+      "source_ids": [
+        "nobel_facts",
+        "nobel_award",
+        "senate",
+        "rita_centennial",
+        "rita_hundred",
+        "rita_celebration"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1986-watchmen",
+      "problem": "Distinguere la vendita del numero 1 dalla data di copertina.",
+      "conclusion": "Inserito il 13 maggio 1986 come data di uscita riportata dal repertorio bibliografico con riferimento al bollettino DC. Conservati dodici episodi, tutti e tre i creatori, Charlton Comics e il quadro politico; settembre non usato come vendita.",
+      "source_ids": [
+        "watchmen_sale"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1987-gsm",
+      "problem": "Non confondere il memorandum GSM con l’avvio commerciale, né attribuire tutte le firme allo stesso giorno.",
+      "conclusion": "La prosa mantiene settembre 1987 per quindici operatori di tredici paesi. Nell’audit distinta la prima firma del 7 settembre dall’adesione spagnola del 10. Conservati TDMA, GPRS, EDGE, compatibilità e roaming.",
+      "source_ids": [
+        "gsm_history",
+        "gsm_timeline"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1987-the-joshua-tree",
+      "problem": "Conservare i dettagli di produzione e le esperienze all’origine dei testi senza aggiungere canzoni o citazioni.",
+      "conclusion": "Confermata l’uscita del 9 marzo 1987. Mantenuti entrambi i produttori, tradizioni americane e irlandesi, case irlandesi, Amnesty International, viaggi in America centrale e Greg Carroll.",
+      "source_ids": [
+        "u2_release"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1987-the-last-emperor",
+      "problem": "Separare uscita del film e anno della cerimonia Oscar, mantenendo le tre card e tutti i crediti.",
+      "conclusion": "Uscita commerciale italiana documentata il 23 ottobre 1987. Conservati 1908, Puyi, John Lone, Joan Chen, Peter O’Toole, Storaro, Scarfiotti e i tre compositori. Nove Oscar su nove candidature confermati; nessuna nuova card.",
+      "source_ids": [
+        "emperor_release",
+        "emperor_credits",
+        "emperor_oscars"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1988-akira-1988-film",
+      "problem": "L’incidente non va presentato come collisione fisica verificata con il bambino o come spiegazione meccanica completa dei poteri.",
+      "conclusion": "Usata la formulazione incidente che coinvolge un bambino dotato di poteri psichici. Conservati tutti i crediti, manga 1982, ambientazione 2019, differenze di trama, prosecuzione del manga per due anni e riferimenti musicali. Uscita 16 luglio 1988.",
+      "source_ids": [
+        "akira_release"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1988-my-neighbor-totoro",
+      "problem": "L’anno di un premio può designare l’annata dei film anziché il giorno della cerimonia; l’incasso cumulativo non è un totale aggiornato al 2026.",
+      "conclusion": "I premi sono riferiti al film del 1988 senza affermare che tutte le cerimonie si siano svolte in quell’anno. La cifra di oltre 41 milioni resta una soglia storica già fornita, non un nuovo totale attuale. Conservati temi, voci, ricavi home video e merchandising. Uscita confermata al 16 aprile 1988.",
+      "source_ids": [
+        "totoro_release",
+        "totoro_kinema",
+        "totoro_awards",
+        "totoro_animage"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1988-nuovo-cinema-paradiso",
+      "problem": "Distinguere visto di censura, prima festivaliera e uscita in sala; evitare un’attribuzione musicale incompleta.",
+      "conclusion": "Usata l’uscita italiana del 17 novembre 1988. Integrato il contributo di Andrea Morricone accanto alla colonna sonora di Ennio Morricone, confermato dal compositore. Le tre card mantengono amicizia, mestiere, pubblico, censura dei baci, ritorno, dono finale e premi.",
+      "source_ids": [
+        "paradiso_release",
+        "paradiso_archive",
+        "andrea_music",
+        "paradiso_context"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1989-1989-tiananmen-square-protests-and-massacre",
+      "problem": "La repressione si svolse nella notte tra 3 e 4 giugno e non soltanto all’interno della piazza; la legge marziale precedette la fine del mese.",
+      "conclusion": "Precisati 20 maggio e notte 3–4 giugno. Descritta l’avanzata con forza letale nel centro di Pechino, mantenendo motivazioni, partecipanti, Hu Yaobang, negoziati e denominazioni. La collocazione annuale comprende il movimento di aprile–giugno.",
+      "source_ids": [
+        "tiananmen_archive",
+        "tiananmen_documents"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1989-fall-of-the-berlin-wall",
+      "problem": "La caduta del muro non inaugurò da sola tutti i processi dell’Europa orientale; apertura, demolizione e fine della Guerra fredda sono eventi differenti.",
+      "conclusion": "Riformulata come tappa decisiva in processi più ampi già in corso. Conservati 9 novembre 1989, successiva apertura della frontiera interna, demolizione da giugno 1990, vertice di Malta e riunificazione nell’ottobre 1990; eliminata l’idea di una dichiarazione formale conclusiva a Malta.",
+      "source_ids": [
+        "berlin_demolition",
+        "berlin_border",
+        "malta_archive"
+      ],
+      "text_applied": true
+    }
+  ],
+  "metadata_proposals": [
+    {
+      "target_id": "history-1986-watchmen",
+      "field": "timeline_date",
+      "original": {
+        "year": 1986,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1986,
+        "month": 5,
+        "day": 13,
+        "precision": "day",
+        "event_semantics": "Pubblicazione commerciale di Watchmen #1",
+        "region": "Stati Uniti"
+      },
+      "source_ids": [
+        "watchmen_sale"
+      ],
+      "reason": "Proposta documentata separata; nessuna modifica a INPUT, TEMPLATE, media o catalogo."
+    },
+    {
+      "target_id": "history-1987-gsm",
+      "field": "timeline_date",
+      "original": {
+        "year": 1987,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1987,
+        "month": 9,
+        "day": 7,
+        "precision": "day",
+        "event_semantics": "Prima firma del memorandum GSM",
+        "region": "Copenaghen, cooperazione europea"
+      },
+      "source_ids": [
+        "gsm_history"
+      ],
+      "reason": "Proposta documentata separata; nessuna modifica a INPUT, TEMPLATE, media o catalogo."
+    },
+    {
+      "target_id": "history-1987-the-joshua-tree",
+      "field": "timeline_date",
+      "original": {
+        "year": 1987,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1987,
+        "month": 3,
+        "day": 9,
+        "precision": "day",
+        "event_semantics": "Pubblicazione dell’album The Joshua Tree",
+        "region": "Uscita originale"
+      },
+      "source_ids": [
+        "u2_release"
+      ],
+      "reason": "Proposta documentata separata; nessuna modifica a INPUT, TEMPLATE, media o catalogo."
+    },
+    {
+      "target_id": "history-1987-the-last-emperor",
+      "field": "timeline_date",
+      "original": {
+        "year": 1987,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1987,
+        "month": 10,
+        "day": 23,
+        "precision": "day",
+        "event_semantics": "Uscita cinematografica commerciale",
+        "region": "Italia"
+      },
+      "source_ids": [
+        "emperor_release"
+      ],
+      "reason": "Proposta documentata separata; nessuna modifica a INPUT, TEMPLATE, media o catalogo."
+    },
+    {
+      "target_id": "history-1988-akira-1988-film",
+      "field": "timeline_date",
+      "original": {
+        "year": 1988,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1988,
+        "month": 7,
+        "day": 16,
+        "precision": "day",
+        "event_semantics": "Uscita cinematografica commerciale",
+        "region": "Giappone"
+      },
+      "source_ids": [
+        "akira_release"
+      ],
+      "reason": "Proposta documentata separata; nessuna modifica a INPUT, TEMPLATE, media o catalogo."
+    },
+    {
+      "target_id": "history-1988-my-neighbor-totoro",
+      "field": "timeline_date",
+      "original": {
+        "year": 1988,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1988,
+        "month": 4,
+        "day": 16,
+        "precision": "day",
+        "event_semantics": "Uscita cinematografica commerciale",
+        "region": "Giappone"
+      },
+      "source_ids": [
+        "totoro_release"
+      ],
+      "reason": "Proposta documentata separata; nessuna modifica a INPUT, TEMPLATE, media o catalogo."
+    },
+    {
+      "target_id": "history-1988-nuovo-cinema-paradiso",
+      "field": "timeline_date",
+      "original": {
+        "year": 1988,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1988,
+        "month": 11,
+        "day": 17,
+        "precision": "day",
+        "event_semantics": "Uscita cinematografica commerciale",
+        "region": "Italia"
+      },
+      "source_ids": [
+        "paradiso_release"
+      ],
+      "reason": "Proposta documentata separata; nessuna modifica a INPUT, TEMPLATE, media o catalogo."
+    },
+    {
+      "target_id": "history-1989-fall-of-the-berlin-wall",
+      "field": "timeline_date",
+      "original": {
+        "year": 1989,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1989,
+        "month": 11,
+        "day": 9,
+        "precision": "day",
+        "event_semantics": "Apertura del confine attraverso il muro di Berlino",
+        "region": "Berlino"
+      },
+      "source_ids": [
+        "berlin_demolition"
+      ],
+      "reason": "Proposta documentata separata; nessuna modifica a INPUT, TEMPLATE, media o catalogo."
+    }
+  ],
+  "editorial_review": {
+    "fidelity": "Rilette le 10 voci e tutte le 14 card in ciascuna delle cinque lingue rispetto all’INPUT. Mantenuta l’unità delle tre card di The Last Emperor e Cinema Paradiso; paragrafi interni per Akira, Totoro, GSM e Levi-Montalcini. Sommari inglesi 31–40 parole, titoli specifici, nomi giapponesi in caratteri latini.",
+    "rights": "Fonti, attribuzioni, revisioni e licenze restano nel materiale originale e non vengono cancellate dalla riscrittura. Le integrazioni fattuali sono documentate separatamente; nessuna riproduzione di testi critici o video non visionati.",
+    "review_changes": [
+      "Resa esplicita la natura di evento Nobel per Rita Levi-Montalcini.",
+      "Corretto il nesso logico tra potere ufficiale di Puyi e dipendenza: la prima non è presentata come causa della seconda.",
+      "Resa più naturale l’apertura inglese di Akira e precisato l’ambito geografico del sommario sul muro.",
+      "Il contributo musicale di Andrea Morricone è espresso senza tradurre o aggiungere un titolo di brano."
+    ],
+    "english_written_first": true,
+    "languages": [
+      "en",
+      "it",
+      "fr",
+      "de",
+      "es"
+    ],
+    "entry_count": 10,
+    "card_count_per_language": 14,
+    "reviewed_at": "2026-10-30T07:31:02.240005+00:00",
+    "english_summary_word_range": [
+      31,
+      40
+    ],
+    "structural_checks": "Schema, ID, ordine, numero di card e cinque lingue verificati dal validatore. Tutti i titoli presenti; nessun HTML o Markdown nei testi."
+  },
+  "status": "completed",
+  "validation": {
+    "valid": true,
+    "batch_id": "305-human-history",
+    "completed": true,
+    "entry_count": 10,
+    "card_count_per_language": 14,
+    "language_count": 5,
+    "translated_card_count": 70,
+    "entry_card_counts": {
+      "history-1986-rita-levi-montalcini": 1,
+      "history-1986-watchmen": 1,
+      "history-1987-gsm": 1,
+      "history-1987-the-joshua-tree": 1,
+      "history-1987-the-last-emperor": 3,
+      "history-1988-akira-1988-film": 1,
+      "history-1988-my-neighbor-totoro": 1,
+      "history-1988-nuovo-cinema-paradiso": 3,
+      "history-1989-1989-tiananmen-square-protests-and-massacre": 1,
+      "history-1989-fall-of-the-berlin-wall": 1
+    },
+    "issue_counts": {
+      "history-1986-rita-levi-montalcini": 0,
+      "history-1986-watchmen": 0,
+      "history-1987-gsm": 0,
+      "history-1987-the-joshua-tree": 0,
+      "history-1987-the-last-emperor": 0,
+      "history-1988-akira-1988-film": 0,
+      "history-1988-my-neighbor-totoro": 0,
+      "history-1988-nuovo-cinema-paradiso": 0,
+      "history-1989-1989-tiananmen-square-protests-and-massacre": 0,
+      "history-1989-fall-of-the-berlin-wall": 0
+    },
+    "summary_checks": [
+      {
+        "entry_id": "history-1986-rita-levi-montalcini",
+        "feature_id": null,
+        "english_summary_words": 31
+      },
+      {
+        "entry_id": "history-1986-watchmen",
+        "feature_id": null,
+        "english_summary_words": 34
+      },
+      {
+        "entry_id": "history-1987-gsm",
+        "feature_id": null,
+        "english_summary_words": 33
+      },
+      {
+        "entry_id": "history-1987-the-joshua-tree",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "history-1987-the-last-emperor",
+        "feature_id": null,
+        "english_summary_words": 34
+      },
+      {
+        "entry_id": "history-1988-akira-1988-film",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "history-1988-my-neighbor-totoro",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "history-1988-nuovo-cinema-paradiso",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "history-1989-1989-tiananmen-square-protests-and-massacre",
+        "feature_id": null,
+        "english_summary_words": 34
+      },
+      {
+        "entry_id": "history-1989-fall-of-the-berlin-wall",
+        "feature_id": null,
+        "english_summary_words": 40
+      }
+    ],
+    "editorial_review": [
+      "history-1986-rita-levi-montalcini/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1986-rita-levi-montalcini/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1986-rita-levi-montalcini/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1986-rita-levi-montalcini/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1987-gsm/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1987-gsm/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1987-gsm/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1987-gsm/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1989-1989-tiananmen-square-protests-and-massacre/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1989-1989-tiananmen-square-protests-and-massacre/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1989-1989-tiananmen-square-protests-and-massacre/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1989-1989-tiananmen-square-protests-and-massacre/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1989-fall-of-the-berlin-wall/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1989-fall-of-the-berlin-wall/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1989-fall-of-the-berlin-wall/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1989-fall-of-the-berlin-wall/main/es: main title changed; check that this is a descriptive title and not an altered official name"
+    ],
+    "failures": []
+  },
+  "output_sha256": "b2b7d37c7160a3d48f6a6cc2668235a83d745b7d62db1b75a4f90365f3173158",
+  "expansion_assessments": [
+    {
+      "target_id": "history-1986-rita-levi-montalcini",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1986-watchmen",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1987-gsm",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1987-the-joshua-tree",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1987-the-last-emperor",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1988-akira-1988-film",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1988-my-neighbor-totoro",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1988-nuovo-cinema-paradiso",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1989-1989-tiananmen-square-protests-and-massacre",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1989-fall-of-the-berlin-wall",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    }
+  ]
+}

@@ -1,0 +1,704 @@
+{
+  "batch_id": "069-catalog",
+  "status": "completed",
+  "sources": [
+    {
+      "source_id": "ddr-konami-month",
+      "url": "https://www.konami.com/amusement/corporate/ja/topics/20230706/",
+      "title": "DanceDanceRevolution — annuncio delle celebrazioni del venticinquesimo anniversario",
+      "publisher": "Konami Amusement, 6 luglio 2023",
+      "accessed_at": "2026-10-30",
+      "scope": "Il comunicato ufficiale colloca l’inizio dell’attività nelle sale giapponesi nel settembre 1998.",
+      "limitation": "Fonte ufficiale retrospettiva letta; non specifica il 26 settembre. Il dato mensile non viene trasformato in un giorno preciso."
+    },
+    {
+      "source_id": "ddr-day-secondary",
+      "url": "https://www.mobygames.com/game/3794/dance-dance-revolution/",
+      "title": "Dance Dance Revolution — releases",
+      "publisher": "MobyGames",
+      "accessed_at": "2026-10-30",
+      "scope": "Il database riporta 26 settembre 1998 per l’arcade, come l’INPUT.",
+      "limitation": "Fonte secondaria: non prova da sola la natura della prima disponibilità né un primo giorno mondiale."
+    },
+    {
+      "source_id": "ddr-first-version-context",
+      "url": "https://w.atwiki.jp/gcmatome/pages/3329.html",
+      "title": "Dance Dance Revolution — prima versione",
+      "publisher": "Game Catalog Wiki",
+      "accessed_at": "2026-10-30",
+      "scope": "La ricostruzione distingue la prima versione del 26 settembre e ne discute lo statuto di versione iniziale dimostrativa.",
+      "limitation": "Contesto secondario indicizzato, non dichiarazione Konami originale. La qualifica di prototipo non viene presentata come fatto accertato; è un motivo per preferire il mese ufficialmente documentato."
+    },
+    {
+      "source_id": "mario-party-nintendo",
+      "url": "https://www.nintendo.com/jp/switch/az82a/minigame/index.html",
+      "title": "Mario Party Superstars — minigiochi e storia delle edizioni originali",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "La sezione sul Mario Party originale indica 18 dicembre 1998.",
+      "limitation": "Retrospettiva ufficiale letta: la data appartiene all’originale giapponese, non a Superstars."
+    },
+    {
+      "source_id": "starcraft-release",
+      "url": "https://news.blizzard.com/en-us/article/9369230/fifteen-years-in-the-koprulu-sector",
+      "title": "Fifteen Years in the Koprulu Sector",
+      "publisher": "Blizzard Entertainment, 31 marzo 2013",
+      "accessed_at": "2026-10-30",
+      "scope": "L’anniversario ufficiale indica 31 marzo 1998 per l’uscita di StarCraft.",
+      "limitation": "Fonte ufficiale retrospettiva, senza prova di uscita simultanea in tutte le regioni. La regione statunitense è distinta nel catalogo secondario."
+    },
+    {
+      "source_id": "starcraft-us-region",
+      "url": "https://gamefaqs.gamespot.com/pc/25418-starcraft/data",
+      "title": "StarCraft — release data",
+      "publisher": "GameFAQs",
+      "accessed_at": "2026-10-30",
+      "scope": "La scheda della versione Windows statunitense indica 31 marzo 1998.",
+      "limitation": "Database secondario usato per circoscrivere la regione, affiancato all’anniversario ufficiale sul giorno."
+    },
+    {
+      "source_id": "theboy-interview",
+      "url": "https://news.blizzard.com/en-gb/article/20899046/from-starcraft-pro-gamer-to-a-seat-at-blizzard-theboy-interview",
+      "title": "From StarCraft Pro-Gamer to a Seat at Blizzard: TheBOy Interview",
+      "publisher": "Blizzard Entertainment; testimonianza di Kook Kibong",
+      "accessed_at": "2026-10-30",
+      "scope": "Ricordi dell’Australia nel 1998, osservazione degli amici, Daytona USA, Battle.net, manager, sponsor, preparazione e competizioni coreane nel 1999.",
+      "limitation": "Testimonianza diretta retrospettiva, già fornita e riletta integralmente. Nessun dato biografico o numero aggiunto; la feature riguarda una pratica e degli eventi, non la nascita del protagonista."
+    },
+    {
+      "source_id": "starcraft-seoul-invitation",
+      "url": "https://news.blizzard.com/ko-kr/article/20928383/pc-gg-at-seoul",
+      "title": "PC GG at Seoul — StarCraft: Remastered preview invitation",
+      "publisher": "Blizzard Entertainment, 2017",
+      "accessed_at": "2026-10-30",
+      "scope": "Invito al PC bang Gameinus di Sinnonhyeon: trasmissione, partite notturne, tornei, ospiti, registrazione, sorteggio e verifica dell’identità; accesso riservato agli adulti per l’orario previsto.",
+      "limitation": "È un programma annunciato, non un resoconto consuntivo. Il testo mantiene tale distinzione; la regola d’ingresso è circoscritta a quell’evento storico e non presentata come norma attuale."
+    },
+    {
+      "source_id": "blazing-credits",
+      "url": "https://www.mobygames.com/game/57589/blazing-star/credits/arcade/",
+      "title": "Blazing Star — Arcade credits",
+      "publisher": "Crediti originali trascritti da MobyGames",
+      "accessed_at": "2026-10-30",
+      "scope": "Attribuisce musica a Harumi Fujita e riporta Seisuke Ito come non accreditato.",
+      "limitation": "Trascrizione indicizzata, non visione diretta dei titoli di coda. Non basta a stabilire l’autore di ogni traccia del gioco."
+    },
+    {
+      "source_id": "blazing-album",
+      "url": "https://www.neo-geo.com/wiki/index.php?title=Blazing_Star_OST",
+      "title": "Blazing Star OST — PCCB-00306",
+      "publisher": "Trascrizione specialistica dei crediti dell’album",
+      "accessed_at": "2026-10-30",
+      "scope": "Il disco attribuisce composizione e arrangiamento a Harumi Fujita e Seisuke Ito, includendo anche brani inutilizzati.",
+      "limitation": "La presenza di tracce inutilizzate impedisce di trasferire automaticamente ogni credito dell’album all’intera colonna sonora nel gioco. Conservata Fujita senza dichiararla unica compositrice."
+    },
+    {
+      "source_id": "fighters-contemporary",
+      "url": "https://web.archive.org/web/20230404225815/https://www.ign.com/articles/1998/01/27/destiny-ships",
+      "title": "Destiny Ships",
+      "publisher": "IGN staff; dichiarazioni dirette di Ocean, 27 gennaio 1998 nel timestamp archiviato",
+      "accessed_at": "2026-10-30",
+      "scope": "Ocean comunica l’invio delle copie principali e prevede acquisti dal giorno seguente; il pezzo riferisce anche che alcuni negozi statunitensi avevano già ricevuto poche copie.",
+      "limitation": "Articolo contemporaneo letto integralmente. Il titolo e la data di spedizione non identificano il primo giorno di vendita. Alcune bibliografie citano 26 gennaio: nessuna deduzione dal fuso orario o dal timestamp per imporre un giorno di release."
+    },
+    {
+      "source_id": "fighters-release-database",
+      "url": "https://www.mobygames.com/game/8514/fighters-destiny/releases/",
+      "title": "Fighters Destiny — releases",
+      "publisher": "MobyGames",
+      "accessed_at": "2026-10-30",
+      "scope": "Il catalogo riporta 27 gennaio 1998 negli Stati Uniti, diverso dal 26 dell’INPUT.",
+      "limitation": "Fonte secondaria. Il coordinatore ha inoltre rilevato 31 gennaio in altri database; la maggioranza numerica non decide il giorno. La conclusione è gennaio 1998, mese di disponibilità attestato dalla cronaca contemporanea."
+    },
+    {
+      "source_id": "panzer-sega-list",
+      "url": "https://www.sega.jp/history/hard/segasaturn/software.html",
+      "title": "Sega Saturn — elenco ufficiale software",
+      "publisher": "Sega",
+      "accessed_at": "2026-10-30",
+      "scope": "Azel: Panzer Dragoon RPG, GS-9076, 29 gennaio 1998; la lista comprende i precedenti Panzer Dragoon e Panzer Dragoon Zwei su Saturn.",
+      "limitation": "Catalogo ufficiale retrospettivo letto. Il terzo episodio è circoscritto ai titoli Saturn, evitando di ignorare Panzer Dragoon Mini su Game Gear nel conteggio dell’intera serie."
+    },
+    {
+      "source_id": "resident-japan",
+      "url": "https://www.famitsu.com/news/202201/29249113.html",
+      "title": "Biohazard 2 — anniversario dell’uscita PlayStation",
+      "publisher": "Famitsu, Uwaaman, 29 gennaio 2022",
+      "accessed_at": "2026-10-30",
+      "scope": "Ricorda il rilascio giapponese del 29 gennaio 1998 e descrive i due dischi e gli scenari collegati.",
+      "limitation": "Fonte editoriale retrospettiva già fornita, letta. Conferma il contesto giapponese; non documenta da sola il primo giorno nordamericano."
+    },
+    {
+      "source_id": "resident-us",
+      "url": "https://www.evilresource.com/resident-evil-2",
+      "title": "Resident Evil 2 — releases",
+      "publisher": "Evil Resource",
+      "accessed_at": "2026-10-30",
+      "scope": "Distingue PlayStation Nord America 21 gennaio 1998 e Giappone 29 gennaio 1998.",
+      "limitation": "Catalogo specialistico secondario coerente con il rapporto di otto giorni già esplicito nell’INPUT. Non presentato come comunicato Capcom contemporaneo."
+    },
+    {
+      "source_id": "resident-capcom-month",
+      "url": "https://www.capcom.co.jp/ir/english/news/html/e220714.html",
+      "title": "Resident Evil 2 Ships Over 10 Million Units Globally!",
+      "publisher": "Capcom, 14 luglio 2022",
+      "accessed_at": "2026-10-30",
+      "scope": "La nota sul gioco originale lo colloca nel gennaio 1998, distinguendolo dal remake 2019.",
+      "limitation": "Fonte primaria retrospettiva indicizzata: conferma soltanto il mese del 1998. Il dato di vendite del remake non è importato nella voce originale."
+    }
+  ],
+  "decisions": [
+    {
+      "target_id": "dance-dance-revolution",
+      "problem": "La data originale del 26 settembre è precisa al giorno, ma le prove ufficiali lette attestano soltanto settembre e il contesto secondario distingue una prima versione dimostrativa.",
+      "conclusion": "Adottare settembre 1998, Giappone arcade, con precisione mensile. Non dichiarare falso il 26 né accertato il suo statuto di test.",
+      "source_ids": [
+        "ddr-konami-month",
+        "ddr-day-secondary",
+        "ddr-first-version-context"
+      ],
+      "text_applied": "Card main:2 nelle cinque lingue; proposta separata di metadati."
+    },
+    {
+      "target_id": "mario-party-1998",
+      "problem": "Collocazione soltanto annuale e regione vuota.",
+      "conclusion": "18 dicembre 1998, Giappone, per Mario Party originale Nintendo 64.",
+      "source_ids": [
+        "mario-party-nintendo"
+      ],
+      "text_applied": "Card main:0 nelle cinque lingue e proposta di metadati."
+    },
+    {
+      "target_id": "starcraft",
+      "problem": "Collocazione soltanto annuale, mentre il giorno è documentato dall’anniversario ufficiale.",
+      "conclusion": "31 marzo 1998, versione Windows statunitense, con la regione corroborata separatamente dal catalogo. Nessuna presunzione di prima mondiale simultanea.",
+      "source_ids": [
+        "starcraft-release",
+        "starcraft-us-region"
+      ],
+      "text_applied": "Proposta di metadati; la prosa conserva il 1998 già fornito."
+    },
+    {
+      "target_id": "feature-korean-pc-bang",
+      "problem": "Un invito del 2017 può diventare erroneamente prova che ogni parte dell’evento si sia svolta.",
+      "conclusion": "Descrivere l’invito e il programma annunciato, mantenendo registrazione e condizioni d’accesso come storiche. Conservati separatamente i ricordi diretti di TheBOy.",
+      "source_ids": [
+        "theboy-interview",
+        "starcraft-seoul-invitation"
+      ],
+      "text_applied": "Tutte le quattro card della feature nelle cinque lingue; intestazioni della terza card rese coerenti con la natura di anteprima prevista."
+    },
+    {
+      "target_id": "console-gap-blazing-star",
+      "problem": "Il credito alla sola Harumi Fujita potrebbe suggerire un’autorialità esclusiva non dimostrata dai crediti del disco.",
+      "conclusion": "La colonna sonora comprende composizioni di Harumi Fujita. Non eliminare l’attribuzione fornita né trasferire senza prova al gioco tutti i crediti di un album che contiene tracce inutilizzate.",
+      "source_ids": [
+        "blazing-credits",
+        "blazing-album"
+      ],
+      "text_applied": "Card main:2 nelle cinque lingue; crediti originali non modificati."
+    },
+    {
+      "target_id": "fighters-destiny-1998",
+      "problem": "26 gennaio nell’INPUT, 27 e 31 gennaio in cataloghi; il pezzo IGN riguarda spedizioni e prime copie già presenti in alcuni negozi.",
+      "conclusion": "Gennaio 1998 negli Stati Uniti è la precisione attestabile per la disponibilità. Il primo giorno esatto resta non dimostrato e non viene sostituito con una data di spedizione.",
+      "source_ids": [
+        "fighters-contemporary",
+        "fighters-release-database"
+      ],
+      "text_applied": "Proposta mensile separata; la prosa mantiene il 1998 senza giorno arbitrario. Genki, Opus e Anchor conservati dal sottotitolo originale."
+    },
+    {
+      "target_id": "panzer-dragoon-saga-1998",
+      "problem": "La formula terzo gioco Panzer Dragoon può ignorare il capitolo Game Gear.",
+      "conclusion": "Terzo titolo Panzer Dragoon su Saturn; data giapponese del 29 gennaio 1998 confermata dall’elenco Sega.",
+      "source_ids": [
+        "panzer-sega-list"
+      ],
+      "text_applied": "Card main:0 nelle cinque lingue, senza nuovo excursus su altri capitoli."
+    },
+    {
+      "target_id": "workbook-01-29-resident-evil-2-1998-video-game",
+      "problem": "Il campo originale indica 21 gennaio senza regione; il corpo parla del 29 gennaio giapponese otto giorni dopo il debutto nordamericano.",
+      "conclusion": "Sono due edizioni regionali: 21 gennaio Nord America, 29 gennaio Giappone. I due giorni restano distinti nella prosa; il mese è attestato anche da Capcom, i giorni dai dati originali e dai riscontri secondari specificati.",
+      "source_ids": [
+        "resident-japan",
+        "resident-us",
+        "resident-capcom-month"
+      ],
+      "text_applied": "Card main:0 nelle cinque lingue e proposta di aggiunta regione al 21 gennaio esistente. Non confusa con la data del remake."
+    }
+  ],
+  "metadata_proposals": [
+    {
+      "target_id": "dance-dance-revolution",
+      "field": "timeline_release",
+      "original": {
+        "year": 1998,
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": ""
+      },
+      "proposed": {
+        "year": 1998,
+        "month": 9,
+        "day": null,
+        "precision": "month",
+        "region": "Japan",
+        "version": "Arcade"
+      },
+      "source_ids": [
+        "ddr-konami-month"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "mario-party-1998",
+      "field": "timeline_release",
+      "original": {
+        "year": 1998,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1998,
+        "month": 12,
+        "day": 18,
+        "precision": "day",
+        "region": "Japan",
+        "version": "Nintendo 64"
+      },
+      "source_ids": [
+        "mario-party-nintendo"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "starcraft",
+      "field": "timeline_release",
+      "original": {
+        "year": 1998,
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": ""
+      },
+      "proposed": {
+        "year": 1998,
+        "month": 3,
+        "day": 31,
+        "precision": "day",
+        "region": "United States",
+        "version": "Windows"
+      },
+      "source_ids": [
+        "starcraft-release",
+        "starcraft-us-region"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "workbook-01-29-resident-evil-2-1998-video-game",
+      "field": "timeline_release",
+      "original": {
+        "year": 1998,
+        "month": 1,
+        "day": 21,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed": {
+        "year": 1998,
+        "month": 1,
+        "day": 21,
+        "precision": "day",
+        "region": "North America",
+        "version": "PlayStation"
+      },
+      "source_ids": [
+        "resident-us",
+        "resident-japan"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "fighters-destiny-1998",
+      "field": "timeline_release",
+      "original": {
+        "year": 1998,
+        "month": 1,
+        "day": 26,
+        "precision": "day",
+        "region": "North America"
+      },
+      "proposed": {
+        "year": 1998,
+        "month": 1,
+        "day": null,
+        "precision": "month",
+        "region": "United States",
+        "version": "Nintendo 64"
+      },
+      "source_ids": [
+        "fighters-contemporary"
+      ],
+      "applied_to_catalog": false
+    }
+  ],
+  "expansion_assessments": [
+    {
+      "target_id": "dance-dance-revolution",
+      "main_cards": 5,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 0,
+      "rationale": "Priorità editoriale per la diffusione del ballo fisico negli arcade."
+    },
+    {
+      "target_id": "dynamite-cop-1998",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 1,
+      "rationale": "Priorità editoriale per lo sviluppo del combattimento cooperativo di Sega AM1."
+    },
+    {
+      "target_id": "mario-party-1998",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 1,
+      "rationale": "Priorità editoriale per l’avvio della serie Mario Party."
+    },
+    {
+      "target_id": "starcraft",
+      "main_cards": 2,
+      "feature_cards": 4,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 3,
+      "rationale": "Priorità editoriale per la storia della strategia in tempo reale e della competizione pubblica."
+    },
+    {
+      "target_id": "console-gap-blazing-star",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Priorità editoriale per la tradizione degli sparatutto Neo Geo e il passaggio da Pulstar a Yumekobo."
+    },
+    {
+      "target_id": "workbook-01-29-resident-evil-2-1998-video-game",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 1,
+      "rationale": "Priorità editoriale per l’ampliamento urbano del survival horror e il sistema dei due scenari."
+    },
+    {
+      "target_id": "fighters-destiny-1998",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Priorità editoriale per la sperimentazione dei sistemi di punteggio nei picchiaduro Nintendo 64."
+    },
+    {
+      "target_id": "panzer-dragoon-saga-1998",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 1,
+      "rationale": "Priorità editoriale per il passaggio di Panzer Dragoon al gioco di ruolo."
+    },
+    {
+      "target_id": "skullmonkeys-1998",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "required_main_cards": null,
+      "missing_cards": 0,
+      "rationale": "Voce specialistica con tre nuclei autonomi, non selezionata qui fra i giochi di massima priorità ai quali applicare automaticamente la soglia di cinque card."
+    },
+    {
+      "target_id": "james-bond-007-1998",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "required_main_cards": null,
+      "missing_cards": 0,
+      "rationale": "Voce specialistica con tre nuclei autonomi, non selezionata qui fra i giochi di massima priorità ai quali applicare automaticamente la soglia di cinque card."
+    }
+  ],
+  "editorial_review": {
+    "english_first": true,
+    "five_languages_reviewed": [
+      "en",
+      "it",
+      "fr",
+      "de",
+      "es"
+    ],
+    "checks": [
+      "10 voci, 35 card principali e 4 card di feature per lingua: 195 versioni complete",
+      "Inglese scritto e salvato prima degli adattamenti IT FR DE ES; checkpoint separati e rilettura delle cinque lingue",
+      "Sommari inglesi di 36–40 parole, compresa la feature; tutti i titoli propri principali e gli ID invariati",
+      "Preservati giudizi Perfect Great Good Boo Miss, grado SS/E, combo da quattro, due giocatori e tre agenti, sei astronavi, due dischi, undici livelli e tre barre di azione",
+      "Riletti ruolo di Hudson, Sega AM1, Yumekobo, The Neverhood Inc., Saffire, Harumi Fujita e Terry Scott Taylor; nomi e attribuzioni forniti conservati",
+      "Terminologia nativa, correzione di calchi in italiano e francese e intestazioni della preview rese coerenti con una fonte di annuncio",
+      "Separati il credito dell’album Blazing Star, la disponibilità effettiva e le spedizioni di Fighters Destiny, le regioni delle release e i programmi annunciati",
+      "Sette voci prioritarie richiedono undici nuove card principali; StarCraft conta separatamente le quattro card della feature"
+    ],
+    "external_verification_limit": "Ricerca mirata sui dubbi, non certificazione universale di tutte le meccaniche o date. DDR e Fighters Destiny hanno una proposta con precisione mensile; nessun primo giorno non provato inventato. Fonti secondarie esplicitamente distinte dalle primarie e dalle testimonianze. Manuali e scansioni non letti non dichiarati consultati. Le due vecchie pagine game.capcom.com presenti nelle fonti originali hanno restituito accesso negato e non sono usate come nuove prove. Attribuzioni, licenze e fonti fornite restano negli INPUT; originali, media e catalogo intatti.",
+    "book_style_references_consulted": false
+  },
+  "review_changes": [
+    {
+      "target_id": "starcraft",
+      "feature_id": "feature-korean-pc-bang",
+      "card_id": "feature:feature-korean-pc-bang:2",
+      "language": "en",
+      "field": "heading",
+      "before": "A Seoul PC bang hosts a preview invitation",
+      "after": "A preview planned for a Seoul PC bang"
+    },
+    {
+      "target_id": "starcraft",
+      "feature_id": "feature-korean-pc-bang",
+      "card_id": "feature:feature-korean-pc-bang:2",
+      "language": "it",
+      "field": "heading",
+      "before": "Un PC bang di Seul ospita l’invito all’anteprima",
+      "after": "L’invito a un’anteprima in un PC bang di Seul"
+    },
+    {
+      "target_id": "skullmonkeys-1998",
+      "feature_id": null,
+      "card_id": "main:2",
+      "language": "it",
+      "field": "text",
+      "before": "Le musiche di Terry Scott Taylor sostengono l'atmosfera comica e inquietante, con brani volutamente rilassati per i livelli bonus. Questo tono comune collega Skullmonkeys a The Neverhood anche nel passaggio a un altro genere. La critica apprezza l'aspetto d'argilla e la musica, ma trova meno varietà nel gioco. L'edizione europea segue nel febbraio 1998. Scenari che mostrano la propria costruzione conservano le tracce di un lavoro manuale nella stagione PlayStation dell'espansione della grafica tridimensionale.",
+      "after": "Le musiche di Terry Scott Taylor sostengono l'atmosfera comica e inquietante, con brani volutamente rilassati per i livelli bonus. Questo tono comune collega Skullmonkeys a The Neverhood anche nel passaggio a un altro genere. La critica apprezza l'aspetto d'argilla e la musica, ma trova meno varietà nel gioco. L'edizione europea segue nel febbraio 1998. Mentre su PlayStation si diffonde la grafica tridimensionale, questi scenari lasciano riconoscere il lavoro manuale da cui nascono."
+    },
+    {
+      "target_id": "dynamite-cop-1998",
+      "feature_id": null,
+      "card_id": "main:0",
+      "language": "fr",
+      "field": "text",
+      "before": "Dynamite Cop est le jeu de combat de rue développé par Sega AM1 en 1998 pour les bornes Model 2. Sorti au Japon sous le titre Dynamite Deka 2, il est adapté sur Dreamcast en 1999. Il reprend et développe le système de combat de Die Hard Arcade dans une mission de sauvetage sur un paquebot détourné et une île de pirates. Jusqu'à deux joueurs choisissent parmi trois agents, utilisant les objets alentour en plus de leurs coups de poing et de pied.",
+      "after": "Dynamite Cop est le beat’em up développé par Sega AM1 en 1998 pour les bornes Model 2. Sorti au Japon sous le titre Dynamite Deka 2, il est adapté sur Dreamcast en 1999. Il reprend et développe le système de combat de Die Hard Arcade dans une mission de sauvetage sur un paquebot détourné et une île de pirates. Jusqu'à deux joueurs choisissent parmi trois agents, utilisant les objets alentour en plus de leurs coups de poing et de pied."
+    },
+    {
+      "target_id": "dynamite-cop-1998",
+      "feature_id": null,
+      "card_id": "main:0",
+      "language": "es",
+      "field": "text",
+      "before": "Dynamite Cop es el juego de lucha de avance de Sega AM1 para la placa recreativa Model 2, publicado en 1998. En Japón se llamó Dynamite Deka 2 y en 1999 tuvo una adaptación para Dreamcast. Desarrolla el sistema de combate de Die Hard Arcade mediante un rescate en un crucero secuestrado y una isla de piratas. Hasta dos jugadores eligen entre tres policías, que emplean los objetos del entorno junto con sus puñetazos y patadas.",
+      "after": "Dynamite Cop es el juego de acción y peleas de Sega AM1 para la placa recreativa Model 2, publicado en 1998. En Japón se llamó Dynamite Deka 2 y en 1999 tuvo una adaptación para Dreamcast. Desarrolla el sistema de combate de Die Hard Arcade mediante un rescate en un crucero secuestrado y una isla de piratas. Hasta dos jugadores eligen entre tres policías, que emplean los objetos del entorno junto con sus puñetazos y patadas."
+    },
+    {
+      "target_id": "starcraft",
+      "feature_id": null,
+      "card_id": null,
+      "language": "it",
+      "field": "summary",
+      "before": "StarCraft unisce la gestione di produzione, informazioni e movimenti allo scontro fra tre forze distinte. La competizione multigiocatore diventa una cultura pubblica soprattutto in Corea del Sud, sostenuta da luoghi in cui giocare, trasmissioni e spettatori.",
+      "after": "StarCraft unisce la gestione di produzione, informazioni e movimenti allo scontro fra tre forze distinte. La competizione multigiocatore si afferma soprattutto in Corea del Sud come spettacolo condiviso, sostenuto da luoghi in cui giocare, trasmissioni e spettatori."
+    },
+    {
+      "target_id": "starcraft",
+      "feature_id": null,
+      "card_id": "main:1",
+      "language": "it",
+      "field": "text",
+      "before": "In Corea del Sud, sale PC, competizioni organizzate e trasmissioni contribuiscono a trasformare StarCraft in uno spettacolo pubblico. I luoghi in cui si gioca operano insieme alle infrastrutture di rete, ai commentatori e agli spettatori. Ne nasce una cultura competitiva in cui disputare una partita e guardarne una diventano attività strettamente collegate.",
+      "after": "In Corea del Sud, sale PC, competizioni organizzate e trasmissioni contribuiscono a trasformare StarCraft in uno spettacolo pubblico. Attorno ai luoghi in cui si gioca si organizzano infrastrutture di rete, commentatori e spettatori. Ne nasce una cultura competitiva in cui disputare una partita e guardarne una diventano attività strettamente collegate."
+    },
+    {
+      "target_id": "workbook-01-29-resident-evil-2-1998-video-game",
+      "feature_id": null,
+      "card_id": null,
+      "language": "fr",
+      "field": "summary",
+      "before": "Resident Evil 2 étend le survival horror à une ville dont les rues et les intérieurs sont liés par la même catastrophe. Leon et Claire empruntent des parcours distincts, avec des ressources limitées et des scénarios connectés qui font agir un voyage sur l'autre.",
+      "after": "Resident Evil 2 étend le survival horror à une ville dont les rues et les intérieurs sont liés par la même catastrophe. Leon et Claire empruntent des parcours distincts, avec des ressources limitées et des scénarios liés où certaines actions ont des conséquences sur l'autre itinéraire."
+    },
+    {
+      "target_id": "workbook-01-29-resident-evil-2-1998-video-game",
+      "feature_id": null,
+      "card_id": "main:2",
+      "language": "fr",
+      "field": "text",
+      "before": "Le Raccoon Police Department se trouve au centre de ce labyrinthe. Ancien musée, le bâtiment conserve de grands escaliers, des statues et des couloirs élaborés à côté des bureaux et des cellules. Revenir avec des clés et résoudre des mécanismes ouvre des raccourcis qui rendent son agencement plus clair. D'autres passages mènent sous le commissariat, vers les égouts et les laboratoires d'Umbrella.",
+      "after": "Le Raccoon Police Department se trouve au centre de ce labyrinthe. Ancien musée, le bâtiment conserve de grands escaliers, des statues et des couloirs élaborés parmi les tables de travail des policiers, les cellules et les bureaux. Revenir avec des clés et résoudre des mécanismes ouvre des raccourcis qui rendent son agencement plus clair. D'autres passages mènent sous le commissariat, vers les égouts et les laboratoires d'Umbrella."
+    },
+    {
+      "target_id": "fighters-destiny-1998",
+      "feature_id": null,
+      "card_id": null,
+      "language": "fr",
+      "field": "summary",
+      "before": "Fighters Destiny donne des valeurs différentes aux sorties de ring, aux projections et aux knockouts. Le score change l'intérêt d'une ouverture : une petite occasion peut suffire à gagner, tandis qu'un retard plus important peut justifier une technique plus exigeante.",
+      "after": "Fighters Destiny donne des valeurs différentes aux sorties de ring, aux projections et aux K.-O. Le score change l'intérêt d'une ouverture : une petite occasion peut suffire à gagner, tandis qu'un retard plus important peut justifier une technique plus exigeante."
+    },
+    {
+      "target_id": "fighters-destiny-1998",
+      "feature_id": null,
+      "card_id": "main:0",
+      "language": "fr",
+      "field": "text",
+      "before": "Fighters Destiny est le jeu de combat Nintendo 64 développé par Genki, Opus et Anchor. Les matchs accordent un nombre de points différent selon le résultat, comme une sortie de ring, une projection ou un knockout. Le score aide à choisir l'approche suivante. Une petite ouverture peut suffire à gagner, alors qu'une autre situation appelle un mouvement plus risqué. Coups de poing, coups de pied et déplacements sont familiers, mais leur valeur dépend aussi de la manière dont l'échange se termine.",
+      "after": "Fighters Destiny est le jeu de combat Nintendo 64 développé par Genki, Opus et Anchor. Les matchs accordent un nombre de points différent selon le résultat, comme une sortie de ring, une projection ou un K.-O.. Le score aide à choisir l'approche suivante. Une petite ouverture peut suffire à gagner, alors qu'une autre situation appelle un mouvement plus risqué. Coups de poing, coups de pied et déplacements sont familiers, mais leur valeur dépend aussi de la manière dont l'échange se termine."
+    },
+    {
+      "target_id": "fighters-destiny-1998",
+      "feature_id": null,
+      "card_id": "main:1",
+      "language": "fr",
+      "field": "text",
+      "before": "Réduire la santé de l'adversaire peut le laisser étourdi un bref instant, offrant une chance de terminer l'échange. S'il traverse cet état sans être achevé, il peut récupérer : il faut donc exploiter l'avantage. Le bord de l'arène constitue une autre façon de marquer des points, donnant de l'importance à la position autant qu'à la santé. Le joueur choisit entre poursuivre les dégâts, tenter une projection ou pousser son rival dehors. Le mouvement utile transforme l'ouverture en résultat nécessaire au score.",
+      "after": "Réduire la santé de l'adversaire peut le laisser étourdi un bref instant, offrant une chance de terminer l'échange. S'il traverse cet état sans être achevé, il peut récupérer : il faut donc exploiter l'avantage. Le bord de l'arène constitue une autre façon de marquer des points, donnant de l'importance à la position autant qu'à la santé. Le joueur choisit entre infliger encore des dégâts, tenter une projection ou pousser son rival dehors. Il cherche le mouvement capable de convertir cette ouverture en points suffisants pour gagner."
+    },
+    {
+      "target_id": "fighters-destiny-1998",
+      "feature_id": null,
+      "card_id": "main:1",
+      "language": "fr",
+      "field": "text",
+      "before": "Réduire la santé de l'adversaire peut le laisser étourdi un bref instant, offrant une chance de terminer l'échange. S'il traverse cet état sans être achevé, il peut récupérer : il faut donc exploiter l'avantage. Le bord de l'arène constitue une autre façon de marquer des points, donnant de l'importance à la position autant qu'à la santé. Le joueur choisit entre infliger encore des dégâts, tenter une projection ou pousser son rival dehors. Il cherche le mouvement capable de convertir cette ouverture en points suffisants pour gagner.",
+      "after": "Réduire la santé de l'adversaire peut le laisser étourdi un bref instant, offrant une chance de terminer l'échange. S'il traverse cet état sans être achevé, il peut récupérer : il faut donc exploiter l'avantage. Le bord de l'arène constitue une autre façon de marquer des points, donnant de l'importance à la position autant qu'à la santé. Le joueur choisit entre infliger encore des dégâts, tenter une projection ou pousser son rival dehors. Il cherche le mouvement qui rapporte les points dont il a besoin."
+    },
+    {
+      "target_id": "console-gap-blazing-star",
+      "feature_id": null,
+      "card_id": "main:2",
+      "language": "it",
+      "field": "text",
+      "before": "Blazing Star segue Pulstar di Aicom dopo che lo studio è diventato Yumekobo. Cerca una difficoltà più accessibile e sviluppa la grafica prerenderizzata e gli scontri con boss elaborati. La colonna sonora comprende composizioni di Harumi Fujita. SNK pubblica sia l'edizione arcade sia quella domestica AES, arrivata nel febbraio 1998. Il gioco porta questa spettacolarità Neo Geo negli ultimi anni dell'hardware, offrendo modi diversi di superare una sequenza fissa di livelli attraverso la varietà delle astronavi e degli attacchi.",
+      "after": "Blazing Star segue Pulstar di Aicom dopo che lo studio è diventato Yumekobo. Cerca una difficoltà più accessibile e sviluppa la grafica prerenderizzata e gli scontri con boss elaborati. La colonna sonora comprende composizioni di Harumi Fujita. SNK pubblica sia l'edizione arcade sia quella domestica AES, arrivata nel febbraio 1998. Il gioco porta questa spettacolarità Neo Geo in una fase avanzata della vita della piattaforma, offrendo modi diversi di superare una sequenza fissa di livelli attraverso la varietà delle astronavi e degli attacchi."
+    },
+    {
+      "target_id": "console-gap-blazing-star",
+      "feature_id": null,
+      "card_id": "main:2",
+      "language": "fr",
+      "field": "text",
+      "before": "Blazing Star succède à Pulstar d'Aicom après que le studio est devenu Yumekobo. Il cherche à proposer un défi plus accessible tout en développant les graphismes précalculés et les affrontements spectaculaires contre les boss. La bande originale comprend des compositions de Harumi Fujita. SNK publie l'édition arcade et la version domestique AES, qui suit en février 1998. Le jeu prolonge ce spectacle Neo Geo dans les dernières années du matériel, avec différents vaisseaux et attaques pour parcourir autrement une même succession de niveaux.",
+      "after": "Blazing Star succède à Pulstar d'Aicom après que le studio est devenu Yumekobo. Il cherche à proposer un défi plus accessible tout en développant les graphismes précalculés et les affrontements spectaculaires contre les boss. La bande originale comprend des compositions de Harumi Fujita. SNK publie l'édition arcade et la version domestique AES, qui suit en février 1998. Le jeu prolonge ce spectacle Neo Geo à un stade avancé de la vie du matériel, avec différents vaisseaux et attaques pour parcourir autrement une même succession de niveaux."
+    },
+    {
+      "target_id": "console-gap-blazing-star",
+      "feature_id": null,
+      "card_id": "main:2",
+      "language": "es",
+      "field": "text",
+      "before": "Blazing Star llegó después de Pulstar, de Aicom, una vez que el estudio se convirtió en Yumekobo. El objetivo era ofrecer un reto más accesible que desarrollara los gráficos prerrenderizados y los elaborados combates contra jefes. Su banda sonora incluye composiciones de Harumi Fujita. SNK publicó la versión recreativa y la doméstica para AES, que llegó en febrero de 1998. El juego prolonga esta forma de espectáculo visual de Neo Geo durante los años avanzados de la máquina. La variedad de naves y ataques permite abordar de distintas maneras una secuencia fija de fases.",
+      "after": "Blazing Star llegó después de Pulstar, de Aicom, una vez que el estudio se convirtió en Yumekobo. El objetivo era ofrecer un reto más accesible que desarrollara los gráficos prerrenderizados y los elaborados combates contra jefes. Su banda sonora incluye composiciones de Harumi Fujita. SNK publicó la versión recreativa y la doméstica para AES, que llegó en febrero de 1998. El juego prolonga esta forma de espectáculo visual de Neo Geo en una etapa avanzada de la vida de la máquina. La variedad de naves y ataques permite abordar de distintas maneras una secuencia fija de fases."
+    }
+  ],
+  "validation": {
+    "valid": true,
+    "batch_id": "069-catalog",
+    "completed": true,
+    "entry_count": 10,
+    "card_count_per_language": 39,
+    "language_count": 5,
+    "translated_card_count": 195,
+    "entry_card_counts": {
+      "dance-dance-revolution": 5,
+      "dynamite-cop-1998": 4,
+      "mario-party-1998": 4,
+      "starcraft": 6,
+      "console-gap-blazing-star": 3,
+      "workbook-01-29-resident-evil-2-1998-video-game": 4,
+      "fighters-destiny-1998": 3,
+      "panzer-dragoon-saga-1998": 4,
+      "skullmonkeys-1998": 3,
+      "james-bond-007-1998": 3
+    },
+    "issue_counts": {
+      "dance-dance-revolution": 0,
+      "dynamite-cop-1998": 1,
+      "mario-party-1998": 1,
+      "starcraft": 1,
+      "console-gap-blazing-star": 1,
+      "workbook-01-29-resident-evil-2-1998-video-game": 1,
+      "fighters-destiny-1998": 1,
+      "panzer-dragoon-saga-1998": 1,
+      "skullmonkeys-1998": 0,
+      "james-bond-007-1998": 0
+    },
+    "summary_checks": [
+      {
+        "entry_id": "dance-dance-revolution",
+        "feature_id": null,
+        "english_summary_words": 39
+      },
+      {
+        "entry_id": "dynamite-cop-1998",
+        "feature_id": null,
+        "english_summary_words": 40
+      },
+      {
+        "entry_id": "mario-party-1998",
+        "feature_id": null,
+        "english_summary_words": 39
+      },
+      {
+        "entry_id": "starcraft",
+        "feature_id": null,
+        "english_summary_words": 40
+      },
+      {
+        "entry_id": "starcraft",
+        "feature_id": "feature-korean-pc-bang",
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "console-gap-blazing-star",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "workbook-01-29-resident-evil-2-1998-video-game",
+        "feature_id": null,
+        "english_summary_words": 39
+      },
+      {
+        "entry_id": "fighters-destiny-1998",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "panzer-dragoon-saga-1998",
+        "feature_id": null,
+        "english_summary_words": 39
+      },
+      {
+        "entry_id": "skullmonkeys-1998",
+        "feature_id": null,
+        "english_summary_words": 39
+      },
+      {
+        "entry_id": "james-bond-007-1998",
+        "feature_id": null,
+        "english_summary_words": 36
+      }
+    ],
+    "editorial_review": [],
+    "failures": []
+  },
+  "output_sha256": "b6b04dc6f6d9bd2b01ffe54cf92355664a1814c58fae873f1b9e2721f8f23cd4",
+  "root_review": {
+    "automated_flag_review": "Confrontata integralmente la card del sistema DDR: Step Zone, cinque giudizi, barra inizialmente a metà, effetti di ciascun giudizio, fallimento e combo da quattro passi sono tutti presenti. Le variazioni sulle date sono coperte dalle fonti dell’audit."
+  }
+}

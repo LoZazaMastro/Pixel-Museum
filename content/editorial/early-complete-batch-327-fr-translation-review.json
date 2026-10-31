@@ -1,0 +1,78 @@
+{
+  "status": "PASS",
+  "locale": "fr",
+  "entries": [
+    {
+      "entry_id": "feature-games-in-museums",
+      "source_fields_sha256": "84e7a91d60d11b54f397d70d7ab747f59be7543e21f15186380beed405771277",
+      "translation_sha256": "df550308de2919e5fc6cfdce4d098d75dcb6654e844b9d0a18acc96c2c7d5188",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch327/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "d7fcd57cbf87e5c1a3a1494f50ea4dab983365392a26b5de48f9e6808b6d7f7c"
+    },
+    {
+      "entry_id": "feature-kazuko-shibuya-pixel-art",
+      "source_fields_sha256": "35ef3bb631a39a98feace86637f8ee809eb9fa0705f70947733105b288622137",
+      "translation_sha256": "e45529fc4b81418b22f2fe1fc2304cc9e8bcf9e6cd5ed9626cf3f745c1e4fc13",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch327/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "d7fcd57cbf87e5c1a3a1494f50ea4dab983365392a26b5de48f9e6808b6d7f7c"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "editorial_continue",
+    "actual_receipt": "build/research/catalog-2021-chronological/year-features-two-private/independent-editorial-peer-approval.json",
+    "actual_receipt_sha256": "a96fd631bd3c992cd6b23fda87dbc3bd701e30eaa6fa9c56c32fdd78b67d21ee",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "editorial_continue",
+      "author": "category_audit",
+      "index_sha256": "fb231421015e8ca8d3a6f0175ed06045e710ace7bd526090edfa24a6b49283ac",
+      "owners": [
+        {
+          "entry_id": "feature-kazuko-shibuya-pixel-art",
+          "slug": "shibuya",
+          "source": "build/research/catalog-2021-chronological/year-features-two-private/shibuya/complete-original-source-media-private-candidate.json",
+          "source_sha256": "66fc1a84240ec191d66e171e436bc78aeb3a94c74ffa745430271c4201ef9be3",
+          "target": "build/research/catalog-2021-chronological/year-features-two-private/shibuya/complete-four-language-private-candidate.json",
+          "target_sha256": "925b0aa05080c6ca80cdf4f5fe71be4b8882c6501f500f6aaafcb1d80f14d2bf",
+          "english_cards": 4,
+          "localized_cards": 16,
+          "images": 3,
+          "tracks": 0,
+          "contact": "build/research/catalog-2021-chronological/year-features-two-private/shibuya/final-selected-media-contact.jpg",
+          "contact_sha256": "460a4ce233621ba166975c35793b26897e5a70dd2b72eef7d9815850ebe34e58"
+        },
+        {
+          "entry_id": "feature-games-in-museums",
+          "slug": "preservation",
+          "source": "build/research/catalog-2021-chronological/year-features-two-private/preservation/complete-original-source-media-private-candidate.json",
+          "source_sha256": "694f55da36ccd38bfefaf9a719b7a910e1187d6cf942bd2f94b4085c1fe95cda",
+          "target": "build/research/catalog-2021-chronological/year-features-two-private/preservation/complete-four-language-private-candidate.json",
+          "target_sha256": "02e6d603a7e22f920cbc69daa15f8c43ef4028e0c8a47cda04b5b2e8c3d8f067",
+          "english_cards": 4,
+          "localized_cards": 16,
+          "images": 4,
+          "tracks": 0,
+          "contact": "build/research/catalog-2021-chronological/year-features-two-private/preservation/final-selected-media-contact.jpg",
+          "contact_sha256": "b82fe17fe4b2f9f63b46b79f13baa69cb33396e8cc5feac39e2a89b8aad96ad9"
+        }
+      ],
+      "read_english_paragraphs": 8,
+      "read_localized_paragraphs": 32,
+      "actual_final_contact_sheets_viewed": 2,
+      "actual_selected_images_viewed": 7,
+      "production_writes": false,
+      "source_review": "Directly read UNIQLO June16,2022 first-person Shibuya account (bridge landscape, preserved printout, CRT), Square Enix Sept16,2021 programme record and Pixel Remaster FAQ. ACMI Sept8,2021 primary retrieved and read through local saved acmi-primary-peer.html after web timeout; DiGRA2023 three-page research-team PDF directly read, including50titles, imaging hardware and game-specific emulator configurations.",
+      "date_review": "Feature dates are explicitly programme/publication dates, not birth dates or false dates for the original game art. Later interview2022 and research report2023 remain identified. Original body preserved.",
+      "media_review": "Seven final images actually viewed. Current portrait not falsely dated2021; Square Enix original programme thumbnail and original2021 PixelRemaster screenshot qualified. Shadowrun1993 artwork is the ACMI article image, EaaSI/LOC apparatus and configuration images are honestly contextual, not falsely photographed at ACMI.",
+      "source_access_limitation": {
+        "url": "https://na.finalfantasy.com/topics/176",
+        "finding": "Direct endpoint returned404 for this reviewer. Category_audit reports directly reading the indexed primary interview result with Ishii/Tokita/Shibuya production handovers and2020/2025 publication context. That one paragraph confirmation is explicitly delegated, not falsely described as this reviewer’s successful HTTP fetch. Other five primary records independently read."
+      },
+      "music_review": "No music invented for institutional/artist features.",
+      "resolved_findings": [
+        "Old EU Ishii endpoint changed only to the same primary interview on NA, retaining all prose and artwork; access limitation recorded explicitly."
+      ]
+    }
+  }
+}

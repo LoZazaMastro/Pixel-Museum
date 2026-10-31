@@ -1,0 +1,128 @@
+{
+  "status": "PASS",
+  "locale": "de",
+  "entries": [
+    {
+      "entry_id": "wikipedia-76665108",
+      "source_fields_sha256": "9b61c8fdbdf53116311bf4f3a231706e2785ee3cc73ac94143f746d0624b9b9d",
+      "translation_sha256": "7a27dfb8e8eb7b2dce0e9d314a639289f65c2aece573d8ae1acc8dc5cd815ee3",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch376/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "b9526ffea587d09b03cd21f1b557f693ed3da6ec62e2cab63b8f87893e9c72b7"
+    },
+    {
+      "entry_id": "wikipedia-64638432",
+      "source_fields_sha256": "cf8d42803769562b8ba7280437cae22f230c86d6ba2bf904a8487c978d243633",
+      "translation_sha256": "befd02786884b07c7002f402759b14973926367847ab0435e3c70643fae7b2be",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch376/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "b9526ffea587d09b03cd21f1b557f693ed3da6ec62e2cab63b8f87893e9c72b7"
+    },
+    {
+      "entry_id": "wikipedia-75513268",
+      "source_fields_sha256": "7103d9ade736749d400c94972e0884428a6a70f8faf862880f4c232119432f9d",
+      "translation_sha256": "4c5f549c5affed74cbf81f597fef91f64b16d083916a11489f9ac0758e001171",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch376/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "b9526ffea587d09b03cd21f1b557f693ed3da6ec62e2cab63b8f87893e9c72b7"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "/root/package_audit",
+    "actual_receipt": "build/research/catalog-2025-chronological/first-three-private/independent-package-audit-approval.json",
+    "actual_receipt_sha256": "10b4d3809a1e3479d149477cb61a9980ed782806deb582caced598dced8b0bc8",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "/root/package_audit",
+      "index": "build/research/catalog-2025-chronological/first-three-private/three-private-index.json",
+      "index_sha256": "6e16c6244811a57d677887c9db8ffcf0dc33e8fbe742a996f741c7b6f1834c1d",
+      "owners": [
+        {
+          "entry_id": "wikipedia-76665108",
+          "slug": "kingdom",
+          "source": "build/research/catalog-2025-chronological/first-three-private/kingdom-source-private-candidate.json",
+          "source_sha256": "415fde653e19047336f45876ea8c92d16c1cad9958f05e8d8eab6f31d5fd72ea",
+          "target": "build/research/catalog-2025-chronological/first-three-private/kingdom-four-language-private-candidate.json",
+          "target_sha256": "c9741701dde22d66bad1d7e223144af573549af94f402514088fbbac16bbf661",
+          "contact": "build/research/catalog-2025-chronological/first-three-private/kingdom-final-contact.jpg",
+          "contact_sha256": "dc5ac50919991f4424be4b2bbc1bca37520afd28d9ca6bb740a5fd10496834f9",
+          "english_cards": 7,
+          "localized_cards": 28,
+          "images": 9,
+          "tracks": 3
+        },
+        {
+          "entry_id": "wikipedia-64638432",
+          "slug": "avowed",
+          "source": "build/research/catalog-2025-chronological/first-three-private/avowed-source-private-candidate.json",
+          "source_sha256": "80a5160abaf23e47361de0c921e7eee595daba8eaac737a9de51ff917c982481",
+          "target": "build/research/catalog-2025-chronological/first-three-private/avowed-four-language-private-candidate.json",
+          "target_sha256": "5ecb355455ff09b12dac1a6d41011fac56f7475e49f4819e6d88dcf6a0e77850",
+          "contact": "build/research/catalog-2025-chronological/first-three-private/avowed-final-contact.jpg",
+          "contact_sha256": "c244ee2da55490e847bcf6bd0e867281c510778c7e7b28190c67cb96c6be7356",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 4,
+          "tracks": 3
+        },
+        {
+          "entry_id": "wikipedia-75513268",
+          "slug": "wilds",
+          "source": "build/research/catalog-2025-chronological/first-three-private/wilds-source-private-candidate.json",
+          "source_sha256": "9f9003b1b42a6158c07f225df295994151e30f8b24e4e9f9c2802c3128f4663c",
+          "target": "build/research/catalog-2025-chronological/first-three-private/wilds-four-language-private-candidate.json",
+          "target_sha256": "cd2feafbfa3dad7bff8aa291cbdc0c7a8f0f97370ce44f94b8f03cc2c17d0682",
+          "contact": "build/research/catalog-2025-chronological/first-three-private/wilds-final-contact.jpg",
+          "contact_sha256": "501584c860f4a376ae52287eaeeff6cc1eccab935430709a4a322a481a16bb44",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 5,
+          "tracks": 3
+        }
+      ],
+      "scope": {
+        "english_paragraphs_actually_read": 13,
+        "localized_paragraphs_actually_read": 52,
+        "selected_images_actually_viewed": 18,
+        "final_contacts_actually_viewed": 3,
+        "selected_new_public_metadata_actually_read": 9
+      },
+      "findings": [],
+      "primary_evidence": [
+        {
+          "url": "https://press.plaion.com/en-AU/KINGDOM-COME-DELIVERANCE-II-SURPASSES-6-MILLION-COPIES-SOLD-WORLDWIDE",
+          "checked": "June25/2026 actual six million copies milestone"
+        },
+        {
+          "url": "https://presse.plaion.com/en/KINGDOM-COME-DELIVERANCE-II-ROYAL-EDITION-ANNOUNCED-FOR-NINTENDO-SWITC",
+          "checked": "Actual September9/2026 announcement: Royal Edition planned2027, preserved"
+        },
+        {
+          "url": "https://www.deepsilver.com/games/kingdom-come-deliverance-ii/news/enjoy-kingdom-come-deliverance-music",
+          "checked": "Publisher score credits Jan Valta / Adam Sporka; concert context not confused with selected studio recordings"
+        },
+        {
+          "url": "https://music.apple.com/us/album/avowed-official-game-soundtrack/1794084569",
+          "checked": "Microsoft Studios Music album February11/2025. Saved official metadata explicitly credit composer Cameron Gorham and producer Ryan Warden separately."
+        },
+        {
+          "url": "https://www.capcom.co.jp/ir/english/news/html/e260910.html",
+          "checked": "Actual original2025 Wilds launch and Switch2 December4/2026 date; future qualification retained."
+        },
+        {
+          "url": "https://www.e-capcom.com/sp/monsterhunter/wilds/ost/",
+          "checked": "Original 2025 soundtrack tracklist, not orchestra2024 publication"
+        },
+        {
+          "url": "https://ototoy.jp/_/default/p/2900860",
+          "checked": "Live fetch timed out; actually read cached label-tracklist.html: Chinone main theme229s, Morimoto ReyDau277s/Arkveld354s album credits. Selected battle clips295s/225s explicitly qualified as game versions, not album-edit matches."
+        }
+      ],
+      "music_version_review": {
+        "kingdom": "Semine original2025 Essentials; Trosky Music of Trosky extended2026 and Road Ahead Cutscenes I extended2026 are explicit official album collections, not extended-loop edits or live concerts. Panychida featured, not reassigned as sole composer.",
+        "avowed": "Three Republic of Music / Microsoft official original2025 studio recordings.",
+        "wilds": "Three honest independent Taneomi archives. Official2024 orchestra discovery9RBJche61_o excluded; individual composer credits corroborated in saved label source. No PS5 playback claimed."
+      },
+      "production_writes": false,
+      "mechanical_amendment": "Two new Kingdom Come screenshot objects now explicitly carry width=1920,height=1080, matching already verified native_dimensions. No pixel, English, locale or music change. All other semantic review inherited unchanged."
+    }
+  }
+}

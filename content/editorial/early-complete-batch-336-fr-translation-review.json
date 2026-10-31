@@ -1,0 +1,93 @@
+{
+  "status": "PASS",
+  "locale": "fr",
+  "entries": [
+    {
+      "entry_id": "wikipedia-69120012",
+      "source_fields_sha256": "fdacd8b69b8b63597de128ce0f42b2c7a95d6528375c8c82e7ead43d4a96f506",
+      "translation_sha256": "fb3a358aa4ae52aba9f422c663d5ac3e80ce50d99e8f1fecc72110b92515ef25",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch336/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "e695054d8a1fa3e621b81cc3f51fdbac65a16ba79e8162135ee73c95e0b6925d"
+    },
+    {
+      "entry_id": "wikipedia-69075366",
+      "source_fields_sha256": "0180d180d8d1eb024cdfb18a6d9d4c3245f76cb1c01d416290140812c10a4e24",
+      "translation_sha256": "cca60d708c166e3e6b0ff81c0da5668cb595237e79fcbd9e703fc95ce3e6204d",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch336/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "e695054d8a1fa3e621b81cc3f51fdbac65a16ba79e8162135ee73c95e0b6925d"
+    },
+    {
+      "entry_id": "wikipedia-53486069",
+      "source_fields_sha256": "088d68762f3d037417d85db0395cc9b20c33cb68b51a4e285395aa80d6f978bd",
+      "translation_sha256": "b5853203cb20e3c02047b37ba1ad5b786f2affe80a4e4feb0eeaedfdddfdc535",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch336/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "e695054d8a1fa3e621b81cc3f51fdbac65a16ba79e8162135ee73c95e0b6925d"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "package_audit",
+    "actual_receipt": "build/research/catalog-2021-chronological/october-second-three-private/independent-package-audit-approval.json",
+    "actual_receipt_sha256": "e2f5662151f362bfeee1c7f606c348915435929191dd1ac102f00f48bc910ce4",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "package_audit",
+      "independent_of_author": "editorial_continue",
+      "index_path": "build/research/catalog-2021-chronological/october-second-three-private/three-original-source-media-four-language-private-index.json",
+      "index_sha256": "5957a2d46d1278749392d12cb9d817f826f38d978fe57d45c61bbb800ea9df16",
+      "owners": [
+        {
+          "entry_id": "wikipedia-69120012",
+          "source_sha256": "c638ab98b32fdc497a1ce48e275f042f206ee4c5b48b02fe45ed9382029c9d5f",
+          "target_sha256": "9748969cc6b5f924161beb81539cca8420bd989eba9f5daca2c304684ade640d",
+          "contact_sha256": "43bea0ef0b23708a46fbe0d2bd05a10b64eb26b99358911f044a8115530228b8",
+          "english_paragraphs_read": 3,
+          "localized_paragraphs_read": 12,
+          "images_personally_viewed": 5,
+          "preserved_music_objects_exact": 0
+        },
+        {
+          "entry_id": "wikipedia-69075366",
+          "source_sha256": "777e04e316a7bceb2f79f22aad77ced6bebdbd42be7917bc457025c3317efe81",
+          "target_sha256": "637a6330aabc36e374f9c31180866d6982f137d7a381b6f1b6a3f207143ae763",
+          "contact_sha256": "206929cef064418cc5e08d29196371e2267fcf23e64d182ff08dedecb346ee86",
+          "english_paragraphs_read": 3,
+          "localized_paragraphs_read": 12,
+          "images_personally_viewed": 5,
+          "preserved_music_objects_exact": 3
+        },
+        {
+          "entry_id": "wikipedia-53486069",
+          "source_sha256": "481858107f16e13658c07f729b6111c6f77a0f560e57ee9272dc2d4b7e007b0a",
+          "target_sha256": "6417fb5157858af3d8d3152a0d7e9752dfa18c54e5c25df5eea67e70ebbc76cf",
+          "contact_sha256": "d923a545e89764ba5b12b8592063e03c443c631c97c7131c2afb4a8306174579",
+          "english_paragraphs_read": 3,
+          "localized_paragraphs_read": 12,
+          "images_personally_viewed": 6,
+          "preserved_music_objects_exact": 1
+        }
+      ],
+      "scope": "Read all9English and36IT/FR/DE/ES paragraphs and localized headings/summary/subtitle. Viewed all16selectedmedia in three finalcontacts. Read both new official StarLordmusic metadata receipts; originalRichardJacques and3Inscryption objects preserved exactly. Englishbodies exact preimages.",
+      "findings": [],
+      "primary_checks": [
+        {
+          "url": "https://store.playstation.com/en-us/product/UP8103-PPSA18454_00-0936750542714392/",
+          "finding": "Actuallyread official PS5 platform releaseDecember20,2023, confirming the Poppy port date instead of assuming backwardscompatibility."
+        },
+        {
+          "url": "https://press.plaion.com/MARVELS-GUARDIANS-OF-THE-GALAXY-ENCORE-EDITION-COMING-TO-NINTENDO-SWIT",
+          "finding": "Actuallyread official EncoreEdition November5,2026 announcement; preserve futureport clause, do not removebasedonolderknowledge."
+        },
+        {
+          "file": "build/research/catalog-2021-chronological/october-second-three-private/guardians/space-riders-public-metadata.json",
+          "finding": "Original2021MarvelMusicUniversalalbum234seconds, explicitSteveSzczepkowski+YohannBoudreault composerlyricistcredits."
+        },
+        {
+          "file": "build/research/catalog-2021-chronological/october-second-three-private/guardians/zero-hero-full-public-metadata.json",
+          "finding": "Official MarvelMusicVEVO209seconds, fullsong writtenperformedSteve+Yohann, gameexplicitlyidentified, not81secondanimatedexcerpt."
+        }
+      ],
+      "production_writes": false
+    }
+  }
+}

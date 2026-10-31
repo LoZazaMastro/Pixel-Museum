@@ -1,0 +1,107 @@
+{
+  "status": "PASS",
+  "locale": "fr",
+  "entries": [
+    {
+      "entry_id": "wikipedia-77961727",
+      "source_fields_sha256": "87a760ea37bcc06f3367549e975aa9c0cf84148fedbb1ea2535cc72b8ab0a92c",
+      "translation_sha256": "741c8981a691c84183478ba9ea6b0424e5aad8f8b691020a66f53c32014d34e5",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch381/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "d13237649098db4466d175fdb10c1edc4b4236b5cbbcee0b9e32eac342eb2bdc"
+    },
+    {
+      "entry_id": "wikipedia-67905295",
+      "source_fields_sha256": "e15a8a73a78817640fc287bcde22f251280d6fe8d010436221c9aa4188a0fee8",
+      "translation_sha256": "583e53640eb9bdf617c90031f7c794a1e79104872ac2fb73e3992ccf8ed4bad3",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch381/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "d13237649098db4466d175fdb10c1edc4b4236b5cbbcee0b9e32eac342eb2bdc"
+    },
+    {
+      "entry_id": "wikipedia-76197150",
+      "source_fields_sha256": "23c6a2291888533f15fc231209ac298bfc33e006eeb622cba27f8eb37c4c8d04",
+      "translation_sha256": "557d0ee42ffaea5057032e482fe45f288be9eec6d2e9050e6f11df5fd2216387",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch381/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "d13237649098db4466d175fdb10c1edc4b4236b5cbbcee0b9e32eac342eb2bdc"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "package_audit",
+    "actual_receipt": "build/research/catalog-2025-chronological/october-first-three-private/independent-package-audit-approval.json",
+    "actual_receipt_sha256": "70eaa6259c3c25941d5cf3f2e2689a1e0cddc96a818f19167d74bc68c56a8d83",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "package_audit",
+      "independent_of_author": true,
+      "index": "build/research/catalog-2025-chronological/october-first-three-private/three-private-index.json",
+      "index_sha256": "3542a0400bf6019dfbf3616b6f7846aaabcb5be2c1ff3ab4ab29abf8f2745765",
+      "owners": [
+        {
+          "entry_id": "wikipedia-77961727",
+          "slug": "yotei",
+          "source": "build/research/catalog-2025-chronological/october-first-three-private/yotei-source-private-candidate.json",
+          "source_sha256": "f1ca3c23be49e393df093f5502756ee16482e06fc6f3cfe3b7bc17e605fcc0e3",
+          "target": "build/research/catalog-2025-chronological/october-first-three-private/yotei-four-language-private-candidate.json",
+          "target_sha256": "f32c4b4e6a062067b9daeaa2b0a3c105751cf17156211b87b6c00a9ebc15ab31",
+          "contact": "build/research/catalog-2025-chronological/october-first-three-private/yotei-final-contact.jpg",
+          "contact_sha256": "158f7aa0dd1d7c0c9ac471ef96b09290fdfa50e166af65cc14886841a691d759",
+          "english_cards": 2,
+          "localized_cards": 8,
+          "images": 4,
+          "tracks": 2
+        },
+        {
+          "entry_id": "wikipedia-67905295",
+          "slug": "battlefield",
+          "source": "build/research/catalog-2025-chronological/october-first-three-private/battlefield-source-private-candidate.json",
+          "source_sha256": "746aac1c1c73eb707df050bbf44bcdbf50aa5ea60b45fc7880461e31203747ec",
+          "target": "build/research/catalog-2025-chronological/october-first-three-private/battlefield-four-language-private-candidate.json",
+          "target_sha256": "a5bfeebd55392c73fb42be960bcc8144b1c61fd42b39316b5de4ee63a1acbb4a",
+          "contact": "build/research/catalog-2025-chronological/october-first-three-private/battlefield-final-contact.jpg",
+          "contact_sha256": "82cb2bdadebf5c6d19892a137b3dd34bca9191ec396a9057f27ca1e0c694f860",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 5,
+          "tracks": 3
+        },
+        {
+          "entry_id": "wikipedia-76197150",
+          "slug": "za",
+          "source": "build/research/catalog-2025-chronological/october-first-three-private/za-source-private-candidate.json",
+          "source_sha256": "c882e27b7344e1ee75ed30461795f2ad1638087251e9cce70a531bb206fc671a",
+          "target": "build/research/catalog-2025-chronological/october-first-three-private/za-four-language-private-candidate.json",
+          "target_sha256": "7abda087cebde73a56476cc10f45d0c90100b8d534ca932cc302b8a844ad59a7",
+          "contact": "build/research/catalog-2025-chronological/october-first-three-private/za-final-contact.jpg",
+          "contact_sha256": "b10c5f5316b92129f8b3ebcc87a943ad51b2c33bcf8ad8d81dc5a5366329af97",
+          "english_cards": 4,
+          "localized_cards": 16,
+          "images": 5,
+          "tracks": 133
+        }
+      ],
+      "actually_reviewed": {
+        "english_paragraphs": 9,
+        "localized_paragraphs": 36,
+        "selected_images_viewed": 14,
+        "new_public_metadata_read": 3,
+        "existing_music_objects_preserved_exactly": 135
+      },
+      "findings": [],
+      "primary_sources_read": [
+        "https://blog.playstation.com/?p=421529",
+        "https://www.interactive.org/awards/2026_dice_awards_winners.asp",
+        "https://www.ea.com/news/battlefield-6-shatters-records",
+        "https://news.ea.com/press-releases/press-releases-details/2025/EA-Music-and-Battlefield-Studios-Launch-Official-Battlefield-Playlist-Featuring-All-star-Talent-Available-Now-In-game-and-on-Spotify/default.aspx",
+        "https://www.qobuz.com/gb-en/album/battlefield-6-henry-jackman/lyxqio89ojduc",
+        "https://legends.pokemon.com/fr-fr/story-world/characters/urbain-or-taunie"
+      ],
+      "notes": [
+        "Ghost Complete Edition October2026 contents confirmed by actual primary; no removal based on assumed future status.",
+        "BF6 three original label score selections: Jackman/Eriksson composers on Main Theme and A Changed World; Jackman on Unconquerable Spirit. Visualizer durations longer than album explicitly qualified.",
+        "All nine English bodies exact against before.json; both Yotei and133ZA soundtrack objects exact.",
+        "No PS5 playback claim and no media files changed."
+      ],
+      "production_writes": false
+    }
+  }
+}

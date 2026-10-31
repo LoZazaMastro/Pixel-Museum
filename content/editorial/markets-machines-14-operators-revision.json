@@ -1,0 +1,288 @@
+{
+  "schema_version": 1,
+  "reason": "Root independent review found cumulative real-publication reuse of Alcorn2008 between02 and14. Removed both new Alcorn-derived paragraphs; this is a real replacement from distinct original publication, not a mirror or counting exemption.",
+  "before_batch_sha256": "f6967eee005e13b5852f508015df145dbf8524a583c43ea5846933069174b438",
+  "after_batch_sha256": "b7b13c4d248c5f8b0dbbdd6d2a5b0e07397ba1d071d1aacf842b71b6adc8d142",
+  "before_record": {
+    "id": "feature-pong-operators",
+    "title": "Keeping the next game ready",
+    "summary": "A cabinet needed care between customers.",
+    "year": 1975,
+    "date": {
+      "precision": "year"
+    },
+    "event_semantics": "1975 anchors the operator handbook, alongside explicitly2008 recollections of earlyPong manufacture. Not another1972 launch or claim that the handbook instructions were all followed.",
+    "factual_note": "1975 anchors the operator handbook, alongside explicitly2008 recollections of earlyPong manufacture. Not another1972 launch or claim that the handbook instructions were all followed.",
+    "era_id": "public-play",
+    "related_ids": [
+      "pong"
+    ],
+    "kind": "feature",
+    "layout": "story",
+    "language": "en",
+    "editorial_mode": "original_additive_feature",
+    "editorial_credit": "Original English feature for Pixel Museum. Interviewers, translators, makers and institutions are credited per card.",
+    "body": [
+      "Al Alcorn remembered a practical fault in early Pong installations: collecting the money meant opening the back and moving the machine. The game could earn its place in a venue while making the operator's routine awkward. His 2008 oral history also describes the container used for the takings, a bread pan that could overflow. These details belong beside the familiar image of two paddles. Every paid match left something physical for somebody to collect, and the cabinet had to accommodate that work.",
+      "Manufacturing introduced another test. Alcorn recalled considering fibreglass cabinets, then recognising that the available process could not expand quickly enough. A nearby cabinet maker, Hurlbut, had equipment that could support larger production. The shape around the television was therefore also a decision about suppliers, time and repeatability. A successful location was not yet a fleet of reliable machines. Somebody had to make the next enclosure, fit its parts and leave a product that could survive being delivered, installed and repeatedly opened.",
+      "Atari's operator handbook gave maintenance a direct relationship with fairness. Its paddle-adjustment instructions warned that an incorrectly positioned paddle could discourage people from continuing to use a machine. The technician moved the player control to its limit, then adjusted the circuit so that the paddle reached the correct boundary. A player might experience that result simply as a responsive knob. Behind it was an alignment between the hand, a variable electrical component and the visible edge of the court on the screen.",
+      "The same handbook put cleaning, locks and the power cord beside electronic adjustments. It advised against cleaners that left residue and distinguished ordinary cabinet care from work better left to qualified monitor technicians. Play time also mattered: its guidance favoured giving a customer slightly more time rather than too little. These were commercial instructions, not an account of how every arcade operated. They nevertheless show the range of work hidden behind an available game, from an unobstructed coin door to a picture adjusted correctly."
+    ],
+    "story_headings": [
+      "Collecting the takings",
+      "A cabinet that could be built",
+      "Adjusting a fair contest",
+      "The work outside the screen"
+    ],
+    "cards": [
+      {
+        "body_index": 0,
+        "heading": "Collecting the takings",
+        "source_ids": [
+          "alcorn08"
+        ],
+        "citations": [
+          {
+            "source_id": "alcorn08",
+            "url": "https://archive.computerhistory.org/resources/access/text/2012/09/102658257-05-01-acc.pdf",
+            "locator": "Alcorn oral history: original back access to coins, moving cabinet, bread-pan takings container; printedpp13/15–16."
+          }
+        ],
+        "media_brief": {
+          "description": "Authentic rear/coin-door view of an identified early Atari cabinet; no generic coin pile.",
+          "selected_asset": null,
+          "existing_context_ids": [
+            "pong"
+          ],
+          "status": "identity_rights_resolution_and_card_fit_review_pending"
+        }
+      },
+      {
+        "body_index": 1,
+        "heading": "A cabinet that could be built",
+        "source_ids": [
+          "alcorn08"
+        ],
+        "citations": [
+          {
+            "source_id": "alcorn08",
+            "url": "https://archive.computerhistory.org/resources/access/text/2012/09/102658257-05-01-acc.pdf",
+            "locator": "Alcorn printedpp15–16: Hurlbut cabinet supplier, fiberglass tooling/throughput alternative."
+          }
+        ],
+        "media_brief": {
+          "description": "Identified Hurlbut/Atari cabinet production document or a rights-cleared cabinet photograph with supplier claim separately sourced.",
+          "selected_asset": null,
+          "existing_context_ids": [
+            "pong"
+          ],
+          "status": "identity_rights_resolution_and_card_fit_review_pending"
+        }
+      },
+      {
+        "body_index": 2,
+        "heading": "Adjusting a fair contest",
+        "source_ids": [
+          "ponghandbook"
+        ],
+        "citations": [
+          {
+            "source_id": "ponghandbook",
+            "url": "https://arcarc.xmission.com/PDF_Misc/Atari_TM-043_Video_Game_Operators_Handbook.pdf",
+            "locator": "Atari TM043 ChapterIII printedp25: paddle-position trim, discouraging players with misadjustment."
+          }
+        ],
+        "media_brief": {
+          "description": "Original printedp25 adjustment diagram/text excerpt only after reproduction permission; optional original labelled functional illustration.",
+          "selected_asset": null,
+          "existing_context_ids": [
+            "pong"
+          ],
+          "status": "identity_rights_resolution_and_card_fit_review_pending"
+        }
+      },
+      {
+        "body_index": 3,
+        "heading": "The work outside the screen",
+        "source_ids": [
+          "ponghandbook"
+        ],
+        "citations": [
+          {
+            "source_id": "ponghandbook",
+            "url": "https://arcarc.xmission.com/PDF_Misc/Atari_TM-043_Video_Game_Operators_Handbook.pdf",
+            "locator": "Atari TM043 ChapterIII printedpp25–26: cleaning, locks/cord,playtime,monitor qualifications."
+          }
+        ],
+        "media_brief": {
+          "description": "Identified cabinet cleaning/control/monitor documentation,not unsafe unlabelled repair instructions.",
+          "selected_asset": null,
+          "existing_context_ids": [
+            "pong"
+          ],
+          "status": "identity_rights_resolution_and_card_fit_review_pending"
+        }
+      }
+    ],
+    "source_ids": [
+      "alcorn08",
+      "ponghandbook"
+    ],
+    "sources": [
+      {
+        "id": "alcorn08",
+        "title": "Oral History of Allan (Al) Alcorn",
+        "url": "https://archive.computerhistory.org/resources/access/text/2012/09/102658257-05-01-acc.pdf",
+        "publisher": "Henry Lowood / Computer History Museum; interviews26April and23May2008",
+        "source_type": "primary_testimony_or_contemporary_original_document",
+        "checked": "2026-10-21",
+        "source_budget_group": "alcorn08",
+        "locator": "Alcorn oral history: original back access to coins, moving cabinet, bread-pan takings container; printedpp13/15–16.; Alcorn printedpp15–16: Hurlbut cabinet supplier, fiberglass tooling/throughput alternative.",
+        "limits": "Primary retrospective oral history; named suppliers and collection practices, not a production ledger.",
+        "rights": "Citation only. Original prose contains no direct quotation; source documents, translations and media retain their separate rights.",
+        "verification": "Specific primary passages read through web tool; local download unavailable or not claimed. No fabricated snapshot.",
+        "snapshot": {
+          "path": "build/research/editorial-computing-02/alcorn-2008.pdf",
+          "sha256": "b7a73814326591ab3b824ee8ca0c4f43656285e02b7cbf0f5a13bd43117c0853"
+        }
+      },
+      {
+        "id": "ponghandbook",
+        "title": "Video Game Operator’s Handbook, TM-043",
+        "url": "https://arcarc.xmission.com/PDF_Misc/Atari_TM-043_Video_Game_Operators_Handbook.pdf",
+        "publisher": "Atari; original copyright1975 handbook, preserved by Arcade Archive",
+        "source_type": "primary_testimony_or_contemporary_original_document",
+        "checked": "2026-10-21",
+        "source_budget_group": "ponghandbook",
+        "locator": "Atari TM043 ChapterIII printedp25: paddle-position trim, discouraging players with misadjustment.; Atari TM043 ChapterIII printedpp25–26: cleaning, locks/cord,playtime,monitor qualifications.",
+        "limits": "Original manufacturer handbook; ChapterIII printedpp25–26 rendered and inspected. Not a claim every operator followed its advice.",
+        "rights": "Citation only. Original prose contains no direct quotation; source documents, translations and media retain their separate rights.",
+        "snapshot": {
+          "path": "build/research/editorial14/ponghandbook.pdf",
+          "sha256": "e0ac954b0e6169559bd96f9e4e5c0372d9d9f965aef665ae5883cc817163a510",
+          "bytes": 5526850
+        }
+      }
+    ],
+    "source_budget_audit": [
+      {
+        "source_budget_group": "alcorn08",
+        "body_indices": [
+          0,
+          1
+        ],
+        "whitespace_words": 183,
+        "unicode_lexical_words": 184,
+        "strict_unicode_words": 184,
+        "charged_words": 184,
+        "maximum_words": 200,
+        "verbatim_words": 0
+      },
+      {
+        "source_budget_group": "ponghandbook",
+        "body_indices": [
+          2,
+          3
+        ],
+        "whitespace_words": 186,
+        "unicode_lexical_words": 187,
+        "strict_unicode_words": 188,
+        "charged_words": 188,
+        "maximum_words": 200,
+        "verbatim_words": 0
+      }
+    ],
+    "integration": {
+      "mode": "proposed_attachment",
+      "proposed_parent_id": "pong",
+      "recommendation": "Attach as an additive, distinctly titled case to pong. Existing original body and every source locale remain intact. Read complete parent and existing attached features before comparison; new paragraphs address the cited production/operating details rather than another release record.",
+      "overwrite_existing_body": false,
+      "preserve_original_playhub_sections": true,
+      "net_new_destination_claim": false
+    },
+    "review_status": {
+      "narrative": "complete_draft",
+      "independent_factual_review": "pending",
+      "media_rights_and_card_fit": "pending",
+      "native_layout_review": "pending"
+    },
+    "editorial_audit": {
+      "body_sha256": "f915ed66e3cd2c674177ea3f54a2958f13296175b12d106328de327999d0afcd",
+      "body_words": [
+        83,
+        81,
+        83,
+        84
+      ],
+      "existing_articles_read_in_full": [
+        "pong"
+      ],
+      "existing_body_sha256": {
+        "pong": "9330d984ea91d508fae1c09b90bdc7b80a1b802a4aff4623669b592a804db8f1"
+      },
+      "comparison_catalog_sha256": "d1dee290c291906e6a507edbaea1136ea00bca21c808423d7d5b5f5516bec1cf",
+      "limitations": "1975 anchors the operator handbook, alongside explicitly2008 recollections of earlyPong manufacture. Not another1972 launch or claim that the handbook instructions were all followed."
+    }
+  },
+  "after_record_sha256": "007d9237344c19046455d40f7e42ebcc3c9309afd87b55043b93515541042629",
+  "after_body_sha256": "f273f1895b2af541e8707a494cbe08fc75bccfbb54d67530c21bbff093e54046",
+  "original_batch_archive": "build/research/editorial14/editorial-markets-machines-14-original.json",
+  "new_primary_source": {
+    "id": "breakout76",
+    "title": "Breakout: Operation, Maintenance, Service Manual, TM-058 first edition",
+    "url": "https://arcarc.xmission.com/PDF_Arcade_Atari_Kee/Breakout/Breakout_TM-058_1st_Edition.pdf",
+    "publisher": "Atari, Inc., copyright 1976; original manual preserved by Arcade Archive",
+    "source_type": "primary_contemporary_manufacturer_manual",
+    "checked": "2026-10-21",
+    "source_budget_group": "breakout76",
+    "locator": "Printed p.3: owner/operator options for structuring play; printed pp.13–14: receiving/shipping inspection and game structuring. PDF pages7/17/18 rendered and inspected directly.",
+    "limits": "A genuinely different 1976 publication and game, not another mirror or chapter of the reused Alcorn 2008 interview. Instructions describe available settings and expected receiving practice, not proof that every operator followed them. No modern PONG4P, home Ultra Pong or schematic-only document substituted.",
+    "rights": "Citation only. Original prose contains no direct quotation. Reproduction of scans, diagrams and associated media requires separate review.",
+    "snapshot": {
+      "path": "build/research/editorial14/breakout76.pdf",
+      "sha256": "7923dd2a2a92b35883a1d25b47aade057b440e9d09f7941b27bf6fdf84f71811",
+      "bytes": 3159723
+    }
+  },
+  "changed_body_indices": [
+    0,
+    1
+  ],
+  "unchanged_body_indices": [
+    2,
+    3
+  ],
+  "unchanged_other_features": 8,
+  "new_parent_proposal": "wikipedia-453246",
+  "related_original_parent": "pong",
+  "source_budget_audit": [
+    {
+      "source_budget_group": "breakout76",
+      "body_indices": [
+        0,
+        1
+      ],
+      "whitespace_words": 192,
+      "unicode_lexical_words": 195,
+      "strict_unicode_words": 195,
+      "charged_words": 195,
+      "maximum_words": 200,
+      "verbatim_words": 0
+    },
+    {
+      "source_budget_group": "ponghandbook",
+      "body_indices": [
+        2,
+        3
+      ],
+      "whitespace_words": 188,
+      "unicode_lexical_words": 189,
+      "strict_unicode_words": 190,
+      "charged_words": 190,
+      "maximum_words": 200,
+      "verbatim_words": 0
+    }
+  ],
+  "review_status": "independent_targeted_revision_review_pending",
+  "master_assembler_locales_written": false
+}

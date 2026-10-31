@@ -1,0 +1,985 @@
+{
+  "schema": "pixel-museum-editorial-input-v1",
+  "batch_id": "229-catalog",
+  "source_file": "content/catalog.json",
+  "source_sha256": "0b077b3f8628f921ab84574d286f9d9943fb8ae6acb8f136ffadde6e01cae241",
+  "entries": [
+    {
+      "entry_id": "feature-umurangi-looking",
+      "kind": "feature",
+      "year_context_only": 2020,
+      "date_context_only": {
+        "month": 5,
+        "day": 19,
+        "precision": "day",
+        "region": "Feature anchored to the original Windows release of Umurangi Generation on May 19, 2020, not to a publication date of this editorial essay. The separate real photograph is dated 2019."
+      },
+      "event_semantics": "Year anchors the work discussed; this is not a birth, publication-calendar slot or assumed worldwide release date.",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "A camera makes the future visible",
+        "subtitle": "",
+        "summary": "What changes when a dystopian game asks the player to photograph rather than fight?",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "The camera is the working tool",
+            "text": "Umurangi Generation places a camera in the player's hands and gives them photographic work in Tauranga, Aotearoa. Its official description identifies the player as a courier for the Tauranga Express, with lenses and equipment becoming available along the way. The action is therefore organised around looking, framing and making an image. A location can hold several possible photographs rather than a single target. This changes how an urban scene is approached: distance, angle and what fits inside the frame become practical decisions, made through a familiar tool."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "A place with a specific point of view",
+            "text": "ACMI places the game within M?ori science fiction and its concerns with climate crisis and militarised disaster response. Mauao, visible from the first level, is significant to the Ng?i Te Rangi people of creator Naphtali Faulkner. These references connect the futuristic city to a particular place and perspective."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "A photograph outside the game",
+            "text": "ACMI also holds Faulkner?s photograph of his family home after the Black Summer fires reached Lismore in 2019. This real image offers context for the creator?s concerns alongside the game?s fictional city. The collection preserves it as a separate photographic work."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "A score for how you look",
+            "text": "The game assesses photographs for colour, content and composition, awarding cash towards the courier?s payout. Players choose their distance, angle and framing to meet the assignment. Unlocking more lenses and equipment offers further ways to photograph the same surroundings."
+          }
+        ],
+        "sources": [
+          {
+            "id": "umurangi-game",
+            "title": "Umurangi Generation: official Steam publication",
+            "url": "https://store.steampowered.com/app/1223500/Umurangi_Generation/",
+            "publisher": "ORIGAME DIGITAL / PLAYISM",
+            "source_type": "primary_developer_store_publication",
+            "locator": "Release date and About This Game: camera, lenses, grading",
+            "checked": "2026-10-20",
+            "access_note": "Text inspected on 2026-10-20",
+            "story_paragraphs": [
+              0,
+              3
+            ]
+          },
+          {
+            "id": "umurangi-acmi",
+            "title": "Umurangi Generation,2020",
+            "url": "https://www.acmi.net.au/works/122801--umurangi-generation/",
+            "publisher": "ACMI / Naphtali Faulkner",
+            "source_type": "primary_institutional_record_with_creator_context",
+            "locator": "Work 122801: description, place and Courtesy line; not in ACMI collection",
+            "checked": "2026-10-20",
+            "access_note": "Indexed record content inspected; direct fetch timed out twice. Ownership wording is treated cautiously.",
+            "story_paragraphs": [
+              1
+            ]
+          },
+          {
+            "id": "umurangi-photo",
+            "title": "Naphtali Faulkner’s family home after the Black Summer fires hit Lismore",
+            "url": "https://www.acmi.net.au/works/120413--naphtali-faulkners-family-home-after-the-black-summer-fires-hit-lismore/",
+            "publisher": "ACMI / Naphtali Faulkner",
+            "source_type": "primary_archival_object_metadata",
+            "locator": "ObjectP190414:2019, creator and collection status",
+            "checked": "2026-10-20",
+            "access_note": "Text inspected on 2026-10-20",
+            "story_paragraphs": [
+              2
+            ]
+          },
+          {
+            "url": "https://store.steampowered.com/app/1223500/Umurangi_Generation/",
+            "title": "Original Windows game release date and photography systems",
+            "publisher": "ORIGAME DIGITAL / PLAYISM"
+          },
+          {
+            "url": "https://store.steampowered.com/app/1320820",
+            "title": "Original soundtrack identifies ThorHighHeels and Adolf Nomura as the same creator",
+            "publisher": "ORIGAME DIGITAL / PLAYISM"
+          },
+          {
+            "url": "https://www.acmi.net.au/works/120413--naphtali-faulkners-family-home-after-the-black-summer-fires-hit-lismore/",
+            "title": "Actual 2019 photograph and object metadata P190414",
+            "publisher": "ACMI / Naphtali Faulkner"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "workbook-06-02-valorant",
+      "kind": "game",
+      "year_context_only": 2020,
+      "date_context_only": {
+        "month": 6,
+        "day": 2,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "The existing2020 release remains the historical anchor. Two2020 engineering accounts describe their production-era systems and goals; no perfect fairness, zero-latency or universal anti-cheat efficacy claim is made.",
+      "factual_note": "Imported dated English Playhub editorial. Adapt its calendar wording, review publisher dates and assign rights-cleared media before presenting as a finished museum stop.",
+      "main": {
+        "feature_id": null,
+        "title": "VALORANT",
+        "subtitle": "Agents and tactical firefights",
+        "summary": "VALORANT is Riot?s team-based tactical shooter, combining gunplay, distinct Agent abilities and rounds fought over the Spike.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Information the client should not receive",
+            "text": "VALORANT is Riot?s team-based tactical shooter, with five attackers facing five defenders in its main mode. Agents bring distinct abilities to rounds that also depend on gunplay and equipment purchases. To restrict cheating, anti-cheat engineer Paul Chamberlain describes a server system that withholds enemy positions until a client needs them."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Making protection arrive in time",
+            "text": "Early tests showed enemies appearing late or remaining invisible because a simple line-of-sight check missed visible parts of their bodies. Chamberlain describes trying additional rays, enlarging bounds and eventually using a precomputed visibility approach. The system also had to restore the correct animation state when a hidden opponent became relevant. Concealing positions was only one part of the task. A player rounding a corner still needed to see an enemy performing the right action at the right moment, with the security machinery kept out of the way."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "The corner looks different online",
+            "text": "Network delay means two players may see a corner encounter at slightly different times. Local prediction keeps movement responsive, while buffering smooths uneven updates at the cost of additional delay. Riot engineers Matt deWet and David Straily describe reducing these costs so that planning and execution remain decisive."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "Agents, weapons and the round economy",
+            "text": "Two teams of five enter each round with different attacking or defending objectives. Choosing an Agent adds particular abilities to the team's guns, but charges must be managed and the strongest power needs to be earned. Money from earlier rounds, kills and completed objectives buys equipment for the next attempt. This makes an individual purchase part of the team's longer situation rather than a permanent upgrade. Weapons have distinct firing patterns, so aiming accurately also requires learning their behaviour. The combination gives each short encounter a preparation stage before anyone reaches the contested ground."
+          },
+          {
+            "card_id": "main:4",
+            "original_index": 4,
+            "heading": "Planting and defending the Spike",
+            "text": "In the standard non-ranked mode, the match is played as best of 25, with the first team to win 13 rounds winning the match. The attacking team has a bomb-type device called the Spike. They must deliver and activate the Spike on one of the multiple specified locations (bomb sites, with each map having two or three sites). If the attacking team successfully protects the activated Spike for 45 seconds it detonates, destroying everything in a specific area, and they receive a point. If the defending team can deactivate the Spike, or the 100-second round timer expires without the attacking team activating the spike, the defending team receives a point. If all the members of a team are eliminated before the Spike is activated, or if all members of the defending team are eliminated after the Spike is activated, the opposing team earns a point."
+          },
+          {
+            "card_id": "main:5",
+            "original_index": 5,
+            "heading": "Short rounds in Spike Rush",
+            "text": "In the Spike Rush mode, the match is played as best of 7 rounds, with the first team to win 4 rounds winning the match. Players begin the round with all abilities fully charged except their ultimate, which charges twice as fast as in standard games. All players on the attacking team carry a spike, but only one spike may be activated per round. Guns are randomized in every round and every player begins with the same gun. Ultimate point orbs in the standard game are present, as well as multiple different power-up orbs."
+          },
+          {
+            "card_id": "main:6",
+            "original_index": 6,
+            "heading": "Practising gunplay in Deathmatch",
+            "text": "The Deathmatch mode was introduced on August 5, 2020. Under the rules introduced in October 2020, 14 players enter a 9-minute free-for-all match and the first person to reach 40 kills or the player who has the most kills when time is up wins the match. The players will spawn with a random agent, equipped with a max shield and an infinite supply of credits to buy any weapons from the buy menu. All abilities are disabled during the match, which indulges pure gunplay. Green health packs drop on every kill, which reset the player to maximum health, armor, and replenish the ammunition in each of their guns."
+          }
+        ],
+        "sources": [
+          {
+            "title": "www.riotgames.com",
+            "url": "https://www.riotgames.com/en/news/starting-the-valorant-journey",
+            "publisher": "www.riotgames.com"
+          },
+          {
+            "title": "playvalorant.com",
+            "url": "https://playvalorant.com/en-us/news/announcements/valorant-closed-beta-ends-may-28/",
+            "publisher": "playvalorant.com"
+          },
+          {
+            "title": "playvalorant.com",
+            "url": "https://playvalorant.com/en-gb/news/game-updates/valorant-patch-notes-1-0/",
+            "publisher": "playvalorant.com"
+          },
+          {
+            "title": "playvalorant.com",
+            "url": "https://playvalorant.com/en-gb/news/dev/how-we-got-to-the-best-performing-valorant-servers-since-launch/",
+            "publisher": "playvalorant.com"
+          },
+          {
+            "title": "playvalorant.com",
+            "url": "https://playvalorant.com/en-gb/news/game-updates/02-on-vanguard-errors-solutions-gun-skins-and-agent-progression/",
+            "publisher": "playvalorant.com"
+          },
+          {
+            "id": "chamberlain20fog",
+            "title": "Demolishing Wallhacks with VALORANT's Fog of War",
+            "url": "https://www.riotgames.com/en/news/demolishing-wallhacks-valorants-fog-war",
+            "publisher": "Paul Arkem Chamberlain / Riot Games Technology Blog,14April2020",
+            "source_type": "Primary engineering account; current mirror and original technology.riotgames.com publication grouped together; no claim that this eliminates all cheats",
+            "locator": "Withheld enemy positions, first raycast prototype, visibility/popping failures, PVS solution and animation/state reconciliation",
+            "checked_on": "2026-10-21",
+            "rights": "Bibliographic reference; source publication, interview, translation, documents and any associated media remain with their respective rights holders.",
+            "source_budget_group": "chamberlain20fog",
+            "research_snapshot": {
+              "snapshot": "F:\\Playhub\\PS5\\Pixel Museum\\build\\research\\canonical07\\valorant-fog2020.html",
+              "sha256": "7c9cd095b0e89ac282a157147baad4197744dbcd9fc819669ec11b81efed2767",
+              "bytes": 3002466,
+              "resolved_url": "https://www.riotgames.com/en/news/demolishing-wallhacks-valorants-fog-war"
+            }
+          },
+          {
+            "id": "dewetstraily20netcode",
+            "title": "Peeking into VALORANT's Netcode",
+            "url": "https://www.riotgames.com/en/news/peeking-valorants-netcode",
+            "publisher": "Matt deWet and David Straily / Riot Games Technology Blog,28July2020",
+            "source_type": "Separate primary engineering publication, about the2020 system and design goals rather than every subsequent patch",
+            "locator": "Movement prediction; peeker's advantage packet path; buffering incoming data and latency trade-offs",
+            "checked_on": "2026-10-21",
+            "rights": "Bibliographic reference; source publication, interview, translation, documents and any associated media remain with their respective rights holders.",
+            "source_budget_group": "dewetstraily20netcode",
+            "research_snapshot": {
+              "snapshot": "F:\\Playhub\\PS5\\Pixel Museum\\build\\research\\canonical07\\valorant-netcode2020.html",
+              "sha256": "b022dad181f62ca24ccd6900022ab1383e9845cee548f425bc326e6b737b567a",
+              "bytes": 3012461,
+              "resolved_url": "https://www.riotgames.com/en/news/peeking-valorants-netcode"
+            }
+          },
+          {
+            "title": "Valorant — original release infobox, Wikipedia revision 1381019659",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1381019659",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Official standard map site counts",
+            "url": "https://playvalorant.com/en-gb/maps/",
+            "publisher": "Riot Games"
+          },
+          {
+            "title": "October 2020 Deathmatch rules",
+            "url": "https://playvalorant.com/en-us/news/game-updates/valorant-patch-notes-1-10/",
+            "publisher": "Riot Games / Jeff Landa"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "console-gap-clubhouse-games-51-worldwide-classics",
+      "kind": "game",
+      "year_context_only": 2020,
+      "date_context_only": {
+        "month": 6,
+        "day": 5,
+        "precision": "day",
+        "region": "WW"
+      },
+      "event_semantics": "",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "Clubhouse Games: 51 Worldwide Classics",
+        "subtitle": "A small table for games from around the world",
+        "summary": "Clubhouse Games: 51 Worldwide Classics is NDcube's collection of board, card and tabletop games, released for Nintendo Switch on 5 June 2020.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "A small table for games from around the world",
+            "text": "Clubhouse Games: 51 Worldwide Classics is NDcube's collection of board, card and tabletop games, released for Nintendo Switch on 5 June 2020. Known as 51 Worldwide Games in Europe and Australia, it places familiar pastimes beside games a player may never have encountered. Chess, shogi, mancala and toy sports share a compact presentation. Short explanations introduce their rules before play begins, allowing the collection to move between learning something unfamiliar and returning to a game already understood by everyone around the table."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Learn a rule by trying a turn",
+            "text": "Computer opponents provide different levels of challenge for solo play, while local and online options turn many of the games into encounters with other people. The rules stay close to the tabletop activity, but the software handles setup, legal moves and scoring. That makes it easier to begin an unfamiliar game without first mastering all its procedures. The toy figures used as guides contribute small pieces of background information, connecting the current match to the histories and traditions represented in the collection."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "The screen becomes a shared playing surface",
+            "text": "Some activities use motion controls, and Mosaic Mode can join several Switch screens into a larger playing surface for compatible games such as Slot Cars. The free Guest Pass lets nearby players join a host who owns the full collection. Toshiki Aida composed the music. The appeal comes from the ease of changing the scale and character of the gathering: a quiet strategic match, a quick card game and a small physical contest can follow one another without requiring another box on the table."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Clubhouse Games: 51 Worldwide Classics — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Clubhouse_Games%3A_51_Worldwide_Classics"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "workbook-06-16-desperados-iii",
+      "kind": "game",
+      "year_context_only": 2020,
+      "date_context_only": {
+        "month": 6,
+        "day": 16,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "The existing2020 release remains the anchor. Abé's contemporary account distinguishes repeatable planned actions from random AI investigation/search. Showdown does not freeze time on the hardest setting.",
+      "factual_note": "Imported dated English Playhub editorial. Adapt its calendar wording, review publisher dates and assign rights-cleared media before presenting as a finished museum stop.",
+      "main": {
+        "feature_id": null,
+        "title": "Desperados III",
+        "subtitle": "Stopping time to coordinate an ambush",
+        "summary": "A plan should fail for a readable reason.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Saving makes experimentation possible",
+            "text": "Desperados III makes repeated attempts part of planning an ambush. Creative director Dominik Abé explains that frequent saving reduces the punishment for failure and encourages experimentation. It also places a demand on the designers: recreating a moment should produce sufficiently consistent behaviour for the player to understand what happened. Most combat outcomes therefore avoid random hit chances. Visible guard information helps someone analyse a failed plan and change it. The challenge lies in arranging a better sequence, rather than repeatedly loading until the same decision becomes lucky."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "A pause with a deliberate limit",
+            "text": "Showdown Mode lets the player coordinate the team's abilities, pausing time except on the hardest difficulty. Abé describes a deliberate restriction: the system does not offer long chains of prepared main actions. A character might execute one planned move while the player handles another in real time. That boundary keeps the game from becoming an entirely different kind of command puzzle. The satisfying result is a short coordinated intervention inside an ongoing scene, leaving the player responsible for what happens before and after the prepared moment."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Different people change the approach",
+            "text": "The five protagonists give that scene several possible readings. Cooper carries quiet and loud weapons; Hector brings strength and a trap; McCoy offers lures, gas and a long-range pistol. Kate's disguise changes how she can approach people, while Isabelle adds another set of possibilities. The publisher also presents non-lethal attacks as an alternative to killing. A route is therefore not only a gap between vision cones. It is a question about which person can get into position, what that person can do there, and how the others can support the attempt."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "Reading enemy vision cones",
+            "text": "Enemies in each mission will react to seeing a character in their sight - represented by a view cone, divided between two zones: a dashed area in which characters can avoid detection if crouched; a full colour area, in which detection is unavoidable if entered, unless the character is hiding in a bush; and a dull faded area in which the enemy's view is obscured by an obstacle (such as a high rooftop). Some missions at night will reduce an enemy's ability to see, unless they use a lamp or view an area illuminated by a source of light. Once an enemy detects a character, their viewcone starts filling to yellow until it reaches the character, whereupon it turns red and causes the enemy to raise the alarm and begin attacking the character; until they are either dead or manage to lose sight of them. Players can view an enemy's viewcone, or plant a marker to see which enemies are able to see an area."
+          },
+          {
+            "card_id": "main:4",
+            "original_index": 4,
+            "heading": "Civil zones and reinforcements",
+            "text": "In some missions, the game features a neutral \"Civil Zone\" area, in which enemies will not detect characters unless they do something suspicious; civilians will also react negatively to a character's presence if they do something suspicious in their presence. Some buildings also house reserve enemies, who will be brought in if an alarm is raised and become active when the situation has calmed; a guardhouse will stop supplying reinforcements when no more guards remain within."
+          },
+          {
+            "card_id": "main:5",
+            "original_index": 5,
+            "heading": "Hiding bodies and avoiding alarms",
+            "text": "Players can either knock out and tie up enemies or eliminate them with lethal methods, including through environmental kills (dropping a boulder, or making an animal lash out on nearby enemies). Any enemy that is dead or incapacitated can be hidden inside bushes, wells, empty buildings, or into rivers or down cliffs; if any body is found by patrolling enemies, a dashed line appears, which fills up until it reaches the body, whereupon the enemy raises the alarm."
+          },
+          {
+            "card_id": "main:6",
+            "original_index": 6,
+            "heading": "Different abilities for each specialist",
+            "text": "Each character in the game comes equipped with different abilities, and different strengths and weaknesses - for example some characters move faster than others, while others can climb up vines and ropes. Alongside lethal and non-lethal takedowns, each character's abilities include: ranged attacks; a distraction/lure method (which is less effective on certain enemies); and healing abilities. Abilities have a recharge time, meaning they can't be used in quick succession, while certain abilities and actions have a limit on the number of times they can be used - guns have limited ammo, which can be replenished through containers for specific characters."
+          }
+        ],
+        "sources": [
+          {
+            "title": "thqnordic.com",
+            "url": "https://thqnordic.com/article/best-west-desperados-iii-launches-today-pc-consoles",
+            "publisher": "thqnordic.com"
+          },
+          {
+            "title": "thqnordic.com",
+            "url": "https://thqnordic.com/news/gunslinger-s-paradise-john-cooper-reveals-desperados-iii-s-release-date",
+            "publisher": "thqnordic.com"
+          },
+          {
+            "id": "abe20harris",
+            "title": "Designing the real-time stealth and combat of Desperados III",
+            "url": "https://www.gamedeveloper.com/design/designing-the-real-time-stealth-and-combat-of-i-desperados-iii-i-",
+            "publisher": "John Harris / Gamasutra,16July2020; Dominik Abé,Mimimi Games",
+            "source_type": "Primary creative-director interview; no universal claim of perfectly deterministic AI search behaviour",
+            "locator": "Quicksave/reload consequences; restricted randomness; Showdown Mode pause exception and one-main-action limit",
+            "checked_on": "2026-10-21",
+            "rights": "Bibliographic reference; source publication, interview, translation, documents and any associated media remain with their respective rights holders.",
+            "source_budget_group": "abe20harris",
+            "research_snapshot": {
+              "snapshot": "F:\\Playhub\\PS5\\Pixel Museum\\build\\research\\canonical07\\desperados-abe2020.html",
+              "sha256": "c11fc456ce013e7072272267e30c5ec776e5bae83084f31e437e6562ccb2cf9a",
+              "bytes": 492614,
+              "resolved_url": "https://www.gamedeveloper.com/design/designing-the-real-time-stealth-and-combat-of-i-desperados-iii-i-"
+            }
+          },
+          {
+            "id": "desperadospublisher",
+            "title": "Desperados III:publisher game description",
+            "url": "https://store.steampowered.com/app/610370/Desperados_III/",
+            "publisher": "THQ Nordic / Mimimi Games,official Steam listing",
+            "source_type": "Primary publisher description; unsupported sweeping marketing claims excluded; harder-mode pause exception checked against Abé interview",
+            "locator": "About This Game:Cooper,Hector,McCoy,Kate and Isabelle; lethal/non-lethal choices and complementary skills",
+            "checked_on": "2026-10-21",
+            "rights": "Bibliographic reference; source publication, interview, translation, documents and any associated media remain with their respective rights holders.",
+            "source_budget_group": "desperadospublisher",
+            "research_snapshot": {
+              "snapshot": "F:\\Playhub\\PS5\\Pixel Museum\\build\\research\\canonical07\\desperados-publisher-store.html",
+              "sha256": "7ef70643afccc1eaefcd5d268a719708c5e826dc44634ec6b8e983c75b97cb2b",
+              "bytes": 166699,
+              "resolved_url": "https://store.steampowered.com/app/610370/Desperados_III/"
+            }
+          },
+          {
+            "title": "Desperados III — original release infobox, Wikipedia revision 1375743214",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1375743214",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Official music publication: Desperados III Main Theme",
+            "url": "https://www.youtube.com/watch?v=q7ywCfgkess",
+            "publisher": "Filippo Beck Peccoz",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Filippo Beck Peccoz",
+            "url": "https://en.wikipedia.org/wiki/Desperados_III",
+            "publisher": "Filippo Beck Peccoz"
+          },
+          {
+            "title": "Publisher original game and screenshot gallery",
+            "url": "https://store.steampowered.com/app/610370/",
+            "publisher": "Mimimi Games / THQ Nordic"
+          },
+          {
+            "title": "Composer credit and original soundtrack selections",
+            "url": "https://blackscreenrecords.com/products/desperados-3",
+            "publisher": "Black Screen Records / THQ Nordic"
+          },
+          {
+            "title": "Original June 16, 2020 Vol. 1 soundtrack release",
+            "url": "https://music.apple.com/us/album/desperados-iii-vol-1-official-game-soundtrack/1515963792",
+            "publisher": "Filippo Beck Peccoz / Cobalt Lane Records"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-52464953",
+      "kind": "game",
+      "year_context_only": 2020,
+      "date_context_only": {
+        "month": 6,
+        "day": 19,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Reference article introduction reproduced under its stated licence. Year comes from the article's release-year category; regional/port dates may differ.",
+      "main": {
+        "feature_id": null,
+        "title": "The Last of Us Part II",
+        "subtitle": "",
+        "summary": "The Last of Us Part II is a 2020 action-adventure game developed by Naughty Dog and published by Sony Interactive Entertainment.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Two lives intertwined by revenge",
+            "text": "The Last of Us Part II is a 2020 action-adventure game developed by Naughty Dog and published by Sony Interactive Entertainment. Set five years after The Last of Us (2013), the game focuses on two playable characters in a post-apocalyptic United States whose lives intertwine: Ellie, who sets out in revenge for Joel's murder, and Abby, a soldier who killed Joel and becomes involved in a conflict between her militia and a religious cult. The game uses a third-person perspective; the player must fight human enemies and zombie-like creatures with firearms, improvised weapons, and stealth."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Writing, performances and production",
+            "text": "The game's development began in 2014, after the release of The Last of Us Remastered. Neil Druckmann returned as creative director, co-writing the story with Halley Gross. The themes of revenge and retribution were inspired by Druckmann's experiences growing up in Israel. Ashley Johnson reprises her role as Ellie, while Laura Bailey was cast as Abby. Their performances included the simultaneous recording of motion and voice. Gustavo Santaolalla returned to compose and perform the score. The developers pushed the PlayStation 4's technical capabilities. Development reportedly included a crunch schedule of 12-hour workdays and cost around US$220 million, making it one of the most expensive video games to develop."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Release, responses and awards",
+            "text": "Following delays, partly due to the COVID-19 pandemic, The Last of Us Part II was released for the PlayStation 4 in June 2020. A remastered version was released for the PlayStation 5 in January 2024 and for Windows in April 2025. The game received acclaim for its gameplay, audio design, score, performances, characters, and visual fidelity, though its narrative and themes divided critics. Discourse became adversarial and the game was review bombed on Metacritic, with some players criticizing the story and characters. It is one of the best-selling PlayStation 4 games and the fastest-selling PlayStation 4 exclusive, with over four million units sold in its release weekend and ten million by 2022. It won multiple accolades from awards shows and gaming publications, including 326 Game of the Year awards, and is considered one of the most significant eighth-generation console games and among the best video games."
+          }
+        ],
+        "sources": [
+          {
+            "title": "The Last of Us Part II — article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1381068683",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "2020 in video games — annual context",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1380483411",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/The_Last_of_Us_Part_II?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          },
+          {
+            "title": "The Last of Us Part II — original release infobox, Wikipedia revision 1381287180",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1381287180",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Official music publication: The Last of Us Part II",
+            "url": "https://www.youtube.com/watch?v=fAdpMMNeiuM",
+            "publisher": "SonySoundtracksVEVO",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Gustavo Santaolalla",
+            "url": "https://www.qobuz.com/us-en/album/the-last-of-us-part-ii-original-soundtrack-gustavo-santaolalla-mac-quayle/glm0nel3uk1wb",
+            "publisher": "Gustavo Santaolalla"
+          },
+          {
+            "title": "Official music publication: Unbound",
+            "url": "https://www.youtube.com/watch?v=5E3NzTeMiTM",
+            "publisher": "SonySoundtracksVEVO",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Gustavo Santaolalla",
+            "url": "https://www.qobuz.com/us-en/album/the-last-of-us-part-ii-original-soundtrack-gustavo-santaolalla-mac-quayle/glm0nel3uk1wb",
+            "publisher": "Gustavo Santaolalla"
+          },
+          {
+            "title": "Official music publication: Longing",
+            "url": "https://www.youtube.com/watch?v=tLZGgKvazRc",
+            "publisher": "SonySoundtracksVEVO",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Gustavo Santaolalla",
+            "url": "https://www.qobuz.com/us-en/album/the-last-of-us-part-ii-original-soundtrack-gustavo-santaolalla-mac-quayle/glm0nel3uk1wb",
+            "publisher": "Gustavo Santaolalla"
+          },
+          {
+            "title": "Official music publication: Eye for an Eye",
+            "url": "https://www.youtube.com/watch?v=kF2R_7MKN48",
+            "publisher": "SonySoundtracksVEVO",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Mac Quayle",
+            "url": "https://www.qobuz.com/us-en/album/the-last-of-us-part-ii-original-soundtrack-gustavo-santaolalla-mac-quayle/glm0nel3uk1wb",
+            "publisher": "Mac Quayle"
+          },
+          {
+            "title": "Official music publication: It Can't Last",
+            "url": "https://www.youtube.com/watch?v=_dnJSHV7-y0",
+            "publisher": "SonySoundtracksVEVO",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Gustavo Santaolalla",
+            "url": "https://www.qobuz.com/us-en/album/the-last-of-us-part-ii-original-soundtrack-gustavo-santaolalla-mac-quayle/glm0nel3uk1wb",
+            "publisher": "Gustavo Santaolalla"
+          },
+          {
+            "title": "Official music publication: The Cycle of Violence",
+            "url": "https://www.youtube.com/watch?v=jHHAp9gKWik",
+            "publisher": "SonySoundtracksVEVO",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Mac Quayle",
+            "url": "https://www.qobuz.com/us-en/album/the-last-of-us-part-ii-original-soundtrack-gustavo-santaolalla-mac-quayle/glm0nel3uk1wb",
+            "publisher": "Mac Quayle"
+          },
+          {
+            "title": "Official music publication: Reclaimed Memories",
+            "url": "https://www.youtube.com/watch?v=eoNXPcqB3V4",
+            "publisher": "SonySoundtracksVEVO",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Gustavo Santaolalla",
+            "url": "https://www.qobuz.com/us-en/album/the-last-of-us-part-ii-original-soundtrack-gustavo-santaolalla-mac-quayle/glm0nel3uk1wb",
+            "publisher": "Gustavo Santaolalla"
+          },
+          {
+            "title": "Official music publication: Cordyceps",
+            "url": "https://www.youtube.com/watch?v=e0L9C_4t_Iw",
+            "publisher": "SonySoundtracksVEVO",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Mac Quayle",
+            "url": "https://www.qobuz.com/us-en/album/the-last-of-us-part-ii-original-soundtrack-gustavo-santaolalla-mac-quayle/glm0nel3uk1wb",
+            "publisher": "Mac Quayle"
+          },
+          {
+            "title": "Official music publication: Longing (Redemptions)",
+            "url": "https://www.youtube.com/watch?v=-94RVkJ9vQo",
+            "publisher": "SonySoundtracksVEVO",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Gustavo Santaolalla",
+            "url": "https://www.qobuz.com/us-en/album/the-last-of-us-part-ii-original-soundtrack-gustavo-santaolalla-mac-quayle/glm0nel3uk1wb",
+            "publisher": "Gustavo Santaolalla"
+          },
+          {
+            "title": "Official music publication: Restless Spirits",
+            "url": "https://www.youtube.com/watch?v=WLudL_YNOpk",
+            "publisher": "SonySoundtracksVEVO",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Gustavo Santaolalla",
+            "url": "https://www.qobuz.com/us-en/album/the-last-of-us-part-ii-original-soundtrack-gustavo-santaolalla-mac-quayle/glm0nel3uk1wb",
+            "publisher": "Gustavo Santaolalla"
+          },
+          {
+            "title": "Official music publication: Chasing a Rumor",
+            "url": "https://www.youtube.com/watch?v=-0eEdQ1o27U",
+            "publisher": "SonySoundtracksVEVO",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Gustavo Santaolalla",
+            "url": "https://www.qobuz.com/us-en/album/the-last-of-us-part-ii-original-soundtrack-gustavo-santaolalla-mac-quayle/glm0nel3uk1wb",
+            "publisher": "Gustavo Santaolalla"
+          },
+          {
+            "title": "Official music publication: They're Still Out There",
+            "url": "https://www.youtube.com/watch?v=RY1zpGntqzU",
+            "publisher": "SonySoundtracksVEVO",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Mac Quayle",
+            "url": "https://www.qobuz.com/us-en/album/the-last-of-us-part-ii-original-soundtrack-gustavo-santaolalla-mac-quayle/glm0nel3uk1wb",
+            "publisher": "Mac Quayle"
+          },
+          {
+            "title": "Official music publication: Unbroken",
+            "url": "https://www.youtube.com/watch?v=NXFBUohmR14",
+            "publisher": "SonySoundtracksVEVO",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Gustavo Santaolalla",
+            "url": "https://www.qobuz.com/us-en/album/the-last-of-us-part-ii-original-soundtrack-gustavo-santaolalla-mac-quayle/glm0nel3uk1wb",
+            "publisher": "Gustavo Santaolalla"
+          },
+          {
+            "title": "Official music publication: The Rattlers",
+            "url": "https://www.youtube.com/watch?v=tCViBYxYpDY",
+            "publisher": "SonySoundtracksVEVO",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Mac Quayle",
+            "url": "https://www.qobuz.com/us-en/album/the-last-of-us-part-ii-original-soundtrack-gustavo-santaolalla-mac-quayle/glm0nel3uk1wb",
+            "publisher": "Mac Quayle"
+          },
+          {
+            "title": "Official music publication: The Obsession",
+            "url": "https://www.youtube.com/watch?v=G3YfWYkeHGg",
+            "publisher": "SonySoundtracksVEVO",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Gustavo Santaolalla",
+            "url": "https://www.qobuz.com/us-en/album/the-last-of-us-part-ii-original-soundtrack-gustavo-santaolalla-mac-quayle/glm0nel3uk1wb",
+            "publisher": "Gustavo Santaolalla"
+          },
+          {
+            "title": "Official music publication: Soft Descent",
+            "url": "https://www.youtube.com/watch?v=li1IjTgBr2k",
+            "publisher": "SonySoundtracksVEVO",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Gustavo Santaolalla",
+            "url": "https://www.qobuz.com/us-en/album/the-last-of-us-part-ii-original-soundtrack-gustavo-santaolalla-mac-quayle/glm0nel3uk1wb",
+            "publisher": "Gustavo Santaolalla"
+          },
+          {
+            "title": "Official music publication: The WLF",
+            "url": "https://www.youtube.com/watch?v=Ho5Y_03dI-Q",
+            "publisher": "SonySoundtracksVEVO",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Mac Quayle",
+            "url": "https://www.qobuz.com/us-en/album/the-last-of-us-part-ii-original-soundtrack-gustavo-santaolalla-mac-quayle/glm0nel3uk1wb",
+            "publisher": "Mac Quayle"
+          },
+          {
+            "title": "Official music publication: A Wolf's Ghost",
+            "url": "https://www.youtube.com/watch?v=NbcjtVq-RQU",
+            "publisher": "SonySoundtracksVEVO",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Gustavo Santaolalla",
+            "url": "https://www.qobuz.com/us-en/album/the-last-of-us-part-ii-original-soundtrack-gustavo-santaolalla-mac-quayle/glm0nel3uk1wb",
+            "publisher": "Gustavo Santaolalla"
+          },
+          {
+            "title": "Official music publication: Masks On",
+            "url": "https://www.youtube.com/watch?v=vubR_W89-zI",
+            "publisher": "Mac Quayle",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Mac Quayle",
+            "url": "https://www.qobuz.com/us-en/album/the-last-of-us-part-ii-original-soundtrack-gustavo-santaolalla-mac-quayle/glm0nel3uk1wb",
+            "publisher": "Mac Quayle"
+          },
+          {
+            "title": "Official music publication: It Can't Last (Home)",
+            "url": "https://www.youtube.com/watch?v=wMBbBv8VGTM",
+            "publisher": "SonySoundtracksVEVO",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Gustavo Santaolalla",
+            "url": "https://www.qobuz.com/us-en/album/the-last-of-us-part-ii-original-soundtrack-gustavo-santaolalla-mac-quayle/glm0nel3uk1wb",
+            "publisher": "Gustavo Santaolalla"
+          },
+          {
+            "title": "Official music publication: Inextinguishable Flames",
+            "url": "https://www.youtube.com/watch?v=CptT4HAOAYs",
+            "publisher": "SonySoundtracksVEVO",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Gustavo Santaolalla",
+            "url": "https://www.qobuz.com/us-en/album/the-last-of-us-part-ii-original-soundtrack-gustavo-santaolalla-mac-quayle/glm0nel3uk1wb",
+            "publisher": "Gustavo Santaolalla"
+          },
+          {
+            "title": "Official music publication: Allowed to be Happy",
+            "url": "https://www.youtube.com/watch?v=CwdVkPhb10M",
+            "publisher": "SonySoundtracksVEVO",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Gustavo Santaolalla",
+            "url": "https://www.qobuz.com/us-en/album/the-last-of-us-part-ii-original-soundtrack-gustavo-santaolalla-mac-quayle/glm0nel3uk1wb",
+            "publisher": "Gustavo Santaolalla"
+          },
+          {
+            "title": "Official music publication: Collateral",
+            "url": "https://www.youtube.com/watch?v=AbA3Xy_ds10",
+            "publisher": "SonySoundtracksVEVO",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Gustavo Santaolalla",
+            "url": "https://www.qobuz.com/us-en/album/the-last-of-us-part-ii-original-soundtrack-gustavo-santaolalla-mac-quayle/glm0nel3uk1wb",
+            "publisher": "Gustavo Santaolalla"
+          },
+          {
+            "title": "Official music publication: The Cycle Continues",
+            "url": "https://www.youtube.com/watch?v=ye9yyxX6lYo",
+            "publisher": "SonySoundtracksVEVO",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Mac Quayle",
+            "url": "https://www.qobuz.com/us-en/album/the-last-of-us-part-ii-original-soundtrack-gustavo-santaolalla-mac-quayle/glm0nel3uk1wb",
+            "publisher": "Mac Quayle"
+          },
+          {
+            "title": "Official music publication: All Gone (The Promise)",
+            "url": "https://www.youtube.com/watch?v=Y_cElQm5TDI",
+            "publisher": "SonySoundtracksVEVO",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Gustavo Santaolalla",
+            "url": "https://www.qobuz.com/us-en/album/the-last-of-us-part-ii-original-soundtrack-gustavo-santaolalla-mac-quayle/glm0nel3uk1wb",
+            "publisher": "Gustavo Santaolalla"
+          },
+          {
+            "title": "Official music publication: Grieving",
+            "url": "https://www.youtube.com/watch?v=JizDhC-JHfs",
+            "publisher": "SonySoundtracksVEVO",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Gustavo Santaolalla",
+            "url": "https://www.qobuz.com/us-en/album/the-last-of-us-part-ii-original-soundtrack-gustavo-santaolalla-mac-quayle/glm0nel3uk1wb",
+            "publisher": "Gustavo Santaolalla"
+          },
+          {
+            "title": "Official music publication: The Island",
+            "url": "https://www.youtube.com/watch?v=ubN41bnDKqw",
+            "publisher": "SonySoundtracksVEVO",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Mac Quayle",
+            "url": "https://www.qobuz.com/us-en/album/the-last-of-us-part-ii-original-soundtrack-gustavo-santaolalla-mac-quayle/glm0nel3uk1wb",
+            "publisher": "Mac Quayle"
+          },
+          {
+            "title": "Official music publication: Beyond Desolation",
+            "url": "https://www.youtube.com/watch?v=35UTD2Sm4NU",
+            "publisher": "SonySoundtracksVEVO",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Gustavo Santaolalla",
+            "url": "https://www.qobuz.com/us-en/album/the-last-of-us-part-ii-original-soundtrack-gustavo-santaolalla-mac-quayle/glm0nel3uk1wb",
+            "publisher": "Gustavo Santaolalla"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=Jmt-IS7-4l0",
+            "title": "Official music publication: Future Days",
+            "publisher": "SonySoundtracksVEVO"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=45gPUVBbVh4",
+            "title": "Official music publication: True Faith",
+            "publisher": "SonySoundtracksVEVO"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=GALcAEvqX3Q",
+            "title": "Official music publication: Through the Valley",
+            "publisher": "SonySoundtracksVEVO"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=axsIHXxQox4",
+            "title": "Official music publication: Take on Me",
+            "publisher": "SonySoundtracksVEVO"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=129aAae_0fs",
+            "title": "Official music publication: Wayfaring Stranger",
+            "publisher": "SonySoundtracksVEVO"
+          },
+          {
+            "title": "Original PS4 story chronology, release and 2020 screenshot gallery",
+            "url": "https://www.playstation.com/en-us/games/the-last-of-us-part-ii/",
+            "publisher": "Naughty Dog / Sony Interactive Entertainment"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-69396931",
+      "kind": "game",
+      "year_context_only": 2020,
+      "date_context_only": {
+        "month": 6,
+        "day": 30,
+        "precision": "day",
+        "region": "Version 1.0 release, June 30, 2020. The earlier Steam Early Access debut on March 31, 2020 is explicitly distinguished in the text."
+      },
+      "event_semantics": "",
+      "factual_note": "Reference article introduction reproduced under its stated licence. Year comes from the article's release-year category; regional/port dates may differ.",
+      "main": {
+        "feature_id": null,
+        "title": "Automobilista 2",
+        "subtitle": "",
+        "summary": "Automobilista 2 is a sim racing video game created by Brazilian video game developer Reiza Studios and is the sequel to the studio's 2016 video game Automobilista.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Reiza returns to simulation racing",
+            "text": "Automobilista 2 is a sim racing video game created by Brazilian video game developer Reiza Studios and is the sequel to the studio's 2016 video game Automobilista. The game was initially released as an Early Access title on March 31, 2020, via Steam, with the official V1.0 release taking place on June 30, 2020."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Cars, circuits and simulator setups",
+            "text": "Automobilista 2 features a wide variety of cars and tracks. Its main focus is on Brazilian content, which includes licensed Brazilian racing series such as Stock Car Brazil and Copa Truck. There is also an emphasis on Formula racing cars of many different eras, and includes licensed and generic vehicles. Other racing classes represented in Automobilista 2 include, but are not limited to: Retro touring cars, 1990s American open-wheel cars, GT3 and karts. Automobilista 2 supports VR, triple screen and full motion racing simulator setups."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Automobilista 2 — article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1372248918",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "2020 in video games — annual context",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1380483411",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/Automobilista_2?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          },
+          {
+            "title": "Automobilista 2 — original release infobox, Wikipedia revision 1372248918",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1372248918",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Reiza announces March 31, 2020 Steam Early Access debut",
+            "url": "https://forum.reizastudios.com/threads/reiza-march-2020-development-update-an-update-on-ams2-release.9294/",
+            "publisher": "Reiza Studios / Renato Simioni"
+          },
+          {
+            "title": "Reiza confirms June 30, 2020 version 1.0 release",
+            "url": "https://forum.reizastudios.com/threads/automobilista-2-june-development-update-its-official-release-time.11692/",
+            "publisher": "Reiza Studios / Renato Simioni"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-63668523",
+      "kind": "game",
+      "year_context_only": 2020,
+      "date_context_only": {
+        "month": 7,
+        "day": 10,
+        "precision": "day",
+        "region": "Standard Seventy Edition launch, July 10, 2020; the Michael Schumacher Deluxe Edition allowed access from July 7, as distinguished in the text."
+      },
+      "event_semantics": "",
+      "factual_note": "Reference article introduction reproduced under its stated licence. Year comes from the article's release-year category; regional/port dates may differ.",
+      "main": {
+        "feature_id": null,
+        "title": "F1 2020",
+        "subtitle": "",
+        "summary": "F1 2020 is the official video game of the 2020 Formula 1 and Formula 2 Championships developed and published by Codemasters.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "The 2020 championship before the postponements",
+            "text": "F1 2020 is the official video game of the 2020 Formula 1 and Formula 2 Championships developed and published by Codemasters. It was released on 7 July for pre-orders of the Michael Schumacher Edition and 10 July for the Seventy Edition on Microsoft Windows, PlayStation 4, Xbox One and, for the first time, Stadia. The game features the twenty-two circuits, twenty drivers and ten teams proposed in the provisional 2020 Formula 1 World Championship."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "A virtual season distinct from the real one",
+            "text": "F1 2020 features the championship as it was originally intended to be run before the COVID-19 pandemic led to the postponement or cancellation of several races. This was the final F1 game to be released independently by Codemasters before the studio was bought by EA in February 2021. The game was delisted on consoles by the end of May 2022; the Steam version followed in March 2023."
+          }
+        ],
+        "sources": [
+          {
+            "title": "F1 2020 (video game) — article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1351504715",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "2020 in video games — annual context",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1380483411",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/F1_2020_(video_game)?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          },
+          {
+            "title": "F1 2020 (video game) — original release infobox, Wikipedia revision 1351504715",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1351504715",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Codemasters announcement and Schumacher three-day early access",
+            "url": "https://www.formula1.com/en/latest/article/be-the-grids-11th-team-with-the-new-f1-2020-videogame.dqdZ1FH1Se4uD8jBY6Ekp",
+            "publisher": "Formula 1 / Codemasters"
+          },
+          {
+            "title": "Original gameplay trailer and July 10 release",
+            "url": "https://www.formula1.com/en/latest/article/watch-first-gameplay-trailer-for-codemasters-f1-2020-revealed.1byo4Gyx1aKYrGZxEEkiHV.1byo4Gyx1aKYrGZxEEkiHV",
+            "publisher": "Formula 1 / Codemasters"
+          }
+        ]
+      },
+      "features": []
+    }
+  ]
+}

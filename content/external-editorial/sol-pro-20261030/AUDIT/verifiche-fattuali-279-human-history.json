@@ -1,0 +1,357 @@
+{
+  "batch_id": "279-human-history",
+  "sources": [
+    {
+      "source_id": "279-howe",
+      "url": "https://www.americanhistory.si.edu/collections/object/nmah_630930?form=FUNPYRYGFFP",
+      "title": "1846 — Elias Howe Jr.’s Sewing Machine Patent Model",
+      "publisher": "National Museum of American History, Smithsonian Institution",
+      "accessed_at": "2026-10-30",
+      "scope": "Brevetto statunitense n. 4750, 10 settembre 1846.",
+      "limitation": "Scheda primaria indicizzata; la data appartiene al brevetto, non a una release commerciale."
+    },
+    {
+      "source_id": "279-saint",
+      "url": "https://collection.sciencemuseumgroup.org.uk/objects/co44734/saints-sewing-machine-1874",
+      "title": "Saint’s sewing machine, 1874",
+      "publisher": "Science Museum Group",
+      "accessed_at": "2026-10-30",
+      "scope": "Il modello conservato è una ricostruzione del 1874 tratta dal brevetto Saint del 1790; non prova una macchina costruita da Saint nel 1790.",
+      "limitation": "Scheda letta. Non aggiunta al testo la storia della ricostruzione, estranea al nucleo della voce."
+    },
+    {
+      "source_id": "279-bessemer-acs",
+      "url": "https://www.acs.org/education/whatischemistry/landmarks/kelly-iron.html",
+      "title": "William Kelly Pneumatic Iron Refining Process",
+      "publisher": "American Chemical Society",
+      "accessed_at": "2026-10-30",
+      "scope": "Esperimenti indipendenti di Kelly dal 1851, brevetto britannico Bessemer 1855, statunitense 1856, controversia sulla priorità e necessità di perfezionamenti industriali.",
+      "limitation": "Letti i passaggi pertinenti. L’esito della controversia è esplicitamente attribuito alla ricostruzione ACS."
+    },
+    {
+      "source_id": "279-bessemer-patent",
+      "url": "https://patents.google.com/patent/US16082A/en",
+      "title": "Manufacture of iron and steel — US16082A",
+      "publisher": "United States Patent Office / Google Patents",
+      "accessed_at": "2026-10-30",
+      "scope": "Brevetto statunitense pubblicato e concesso l’11 novembre 1856.",
+      "limitation": "Record primario letto; nel testo si usa soltanto l’anno, senza trasformare il brevetto in messa in commercio."
+    },
+    {
+      "source_id": "279-bessemer-public",
+      "url": "https://collection.sciencemuseumgroup.org.uk/people/ap24523/bessemer-henry",
+      "title": "Bessemer, Henry",
+      "publisher": "Science Museum Group",
+      "accessed_at": "2026-10-30",
+      "scope": "Presentazione del metodo alla British Association for the Advancement of Science, Cheltenham, 1856.",
+      "limitation": "Scheda istituzionale indicizzata."
+    },
+    {
+      "source_id": "279-otis",
+      "url": "https://www.otis.com/en/au/our-company/history",
+      "title": "Our history",
+      "publisher": "Otis",
+      "accessed_at": "2026-10-30",
+      "scope": "Il 20 settembre 2023 celebra 170 anni dalla prima vendita; il riferimento è il 20 settembre 1853, non una distinta prova della data di incorporazione legale.",
+      "limitation": "Letti i passaggi pertinenti della storia ufficiale. Il testo attribuisce alla società il significato dell’anniversario."
+    }
+  ],
+  "decisions": [
+    {
+      "target_id": "history-1846-sewing-machine",
+      "problem": "La formulazione originale poteva far apparire come costruita la macchina descritta nel brevetto Saint del 1790.",
+      "conclusion": "Riferimento circoscritto al progetto brevettato. Confermata la data del brevetto Howe, 10 settembre 1846. Conservati funzionamento, impieghi domestici e successione degli azionamenti.",
+      "source_ids": [
+        "279-howe",
+        "279-saint"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1853-otis-worldwide",
+      "problem": "Il 20 settembre 1853 era privo di semantica esplicita e poteva sembrare la data legale di fondazione.",
+      "conclusion": "L’anno di fondazione resta 1853; il giorno è identificato come prima vendita secondo la storia ufficiale Otis. Nessuna data legale di incorporazione dedotta.",
+      "source_ids": [
+        "279-otis"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1856-bessemer-process",
+      "problem": "La data generica del brevetto 1856 e il riferimento dubbio alla priorità Kelly confondevano giurisdizioni ed esperimenti indipendenti.",
+      "conclusion": "Distinti brevetto britannico 1855, brevetto USA e presentazione pubblica 1856. La ricostruzione ACS della contestazione di Kelly è attribuita esplicitamente; nessuna incertezza eliminata per intuizione.",
+      "source_ids": [
+        "279-bessemer-acs",
+        "279-bessemer-patent",
+        "279-bessemer-public"
+      ],
+      "text_applied": true
+    }
+  ],
+  "metadata_proposals": [
+    {
+      "target_id": "history-1846-sewing-machine",
+      "field": "event_semantics",
+      "proposed": "US patent 4750 granted to Elias Howe, 10 September 1846",
+      "reason": "Avvenimento brevettuale esplicito, distinto dalla nascita dell’inventore e dalla disponibilità commerciale.",
+      "source_ids": [
+        "279-howe"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "history-1853-otis-worldwide",
+      "field": "event_semantics",
+      "proposed": "First sale of an Otis elevator with a safety brake, 20 September 1853; business established 1853",
+      "reason": "La fonte aziendale collega il giorno alla prima vendita.",
+      "source_ids": [
+        "279-otis"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "history-1856-bessemer-process",
+      "field": "event_semantics",
+      "proposed": "Public presentation and US patent of the Bessemer process, 1856",
+      "reason": "Il brevetto britannico è precedente; non dichiarata una release industriale completa nel 1856.",
+      "source_ids": [
+        "279-bessemer-acs",
+        "279-bessemer-patent",
+        "279-bessemer-public"
+      ],
+      "applied_to_catalog": false
+    }
+  ],
+  "editorial_review": {
+    "checks": [
+      "INPUT letto integralmente prima della stesura inglese. Inglese salvato per primo e adattato nelle altre quattro lingue.",
+      "Conservati fatti, ruoli, nomi, date e riferimenti del materiale, salvo le correzioni documentate. Titolo completo del libro di Boole e titoli propri in lingua originale.",
+      "Distinta la rotazione terrestre di circa ventiquattro ore dalla variazione del piano di oscillazione, che dipende dalla latitudine.",
+      "Tutte le card hanno incipit identificativo e titolo specifico; paragrafi brevi nelle card più lunghe. Nessuna card aggiunta, eliminata o riordinata."
+    ],
+    "scope_limit": "Ricerca circoscritta ai problemi documentati. Le altre informazioni derivano dal materiale fornito; non dichiarata una verifica estesa di tutte le affermazioni.",
+    "english_written_first": true,
+    "languages": [
+      "en",
+      "it",
+      "fr",
+      "de",
+      "es"
+    ],
+    "entry_count": 10,
+    "card_count_per_language": 10,
+    "reviewed_at": "2026-10-30T02:22:28.428578+00:00",
+    "english_summary_word_range": [
+      32,
+      38
+    ],
+    "structural_checks": "Schema, ID, ordine, numero di card e cinque lingue verificati dal validatore. Tutti i titoli presenti; nessun HTML o Markdown nei testi."
+  },
+  "status": "completed",
+  "validation": {
+    "valid": true,
+    "batch_id": "279-human-history",
+    "completed": true,
+    "entry_count": 10,
+    "card_count_per_language": 10,
+    "language_count": 5,
+    "translated_card_count": 50,
+    "entry_card_counts": {
+      "history-1846-sewing-machine": 1,
+      "history-1851-foucault-pendulum": 1,
+      "history-1851-great-exhibition": 1,
+      "history-1853-otis-worldwide": 1,
+      "history-1854-the-laws-of-thought": 1,
+      "history-1856-bessemer-process": 1,
+      "history-1858-transatlantic-telegraph-cable": 1,
+      "history-1859-on-the-origin-of-species": 1,
+      "history-1860-internal-combustion-engine": 1,
+      "history-1861-american-civil-war": 1
+    },
+    "issue_counts": {
+      "history-1846-sewing-machine": 0,
+      "history-1851-foucault-pendulum": 0,
+      "history-1851-great-exhibition": 0,
+      "history-1853-otis-worldwide": 0,
+      "history-1854-the-laws-of-thought": 0,
+      "history-1856-bessemer-process": 0,
+      "history-1858-transatlantic-telegraph-cable": 0,
+      "history-1859-on-the-origin-of-species": 0,
+      "history-1860-internal-combustion-engine": 0,
+      "history-1861-american-civil-war": 0
+    },
+    "summary_checks": [
+      {
+        "entry_id": "history-1846-sewing-machine",
+        "feature_id": null,
+        "english_summary_words": 33
+      },
+      {
+        "entry_id": "history-1851-foucault-pendulum",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "history-1851-great-exhibition",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "history-1853-otis-worldwide",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "history-1854-the-laws-of-thought",
+        "feature_id": null,
+        "english_summary_words": 32
+      },
+      {
+        "entry_id": "history-1856-bessemer-process",
+        "feature_id": null,
+        "english_summary_words": 33
+      },
+      {
+        "entry_id": "history-1858-transatlantic-telegraph-cable",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "history-1859-on-the-origin-of-species",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "history-1860-internal-combustion-engine",
+        "feature_id": null,
+        "english_summary_words": 34
+      },
+      {
+        "entry_id": "history-1861-american-civil-war",
+        "feature_id": null,
+        "english_summary_words": 36
+      }
+    ],
+    "editorial_review": [
+      "history-1846-sewing-machine/main/en: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1846-sewing-machine/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1846-sewing-machine/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1846-sewing-machine/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1846-sewing-machine/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1851-foucault-pendulum/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1851-foucault-pendulum/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1851-foucault-pendulum/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1851-foucault-pendulum/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1853-otis-worldwide/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1853-otis-worldwide/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1853-otis-worldwide/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1853-otis-worldwide/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1856-bessemer-process/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1856-bessemer-process/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1856-bessemer-process/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1856-bessemer-process/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1858-transatlantic-telegraph-cable/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1858-transatlantic-telegraph-cable/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1858-transatlantic-telegraph-cable/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1858-transatlantic-telegraph-cable/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1860-internal-combustion-engine/main/en: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1860-internal-combustion-engine/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1860-internal-combustion-engine/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1860-internal-combustion-engine/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1860-internal-combustion-engine/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1861-american-civil-war/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1861-american-civil-war/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1861-american-civil-war/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1861-american-civil-war/main/es: main title changed; check that this is a descriptive title and not an altered official name"
+    ],
+    "failures": []
+  },
+  "output_sha256": "c4ea17a0b856d78c484aa4e9946dd5b4886cec18057e1ede06eb2e5ebfae0e07",
+  "expansion_assessments": [
+    {
+      "target_id": "history-1846-sewing-machine",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1851-foucault-pendulum",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1851-great-exhibition",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1853-otis-worldwide",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1854-the-laws-of-thought",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1856-bessemer-process",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1858-transatlantic-telegraph-cable",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1859-on-the-origin-of-species",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1860-internal-combustion-engine",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1861-american-civil-war",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    }
+  ],
+  "root_review": {
+    "reviewed_at": "2026-10-30T02:30:32.406612+00:00",
+    "scope": "Controllo delle segnalazioni automatiche e confronto mirato con l’INPUT. Nessuna omissione residua nei passaggi riletti: numeri resi in lettere, decadi e punteggi localizzati; le nuove date dei lotti storici sono documentate nelle decisioni.",
+    "changes": []
+  }
+}

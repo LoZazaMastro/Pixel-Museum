@@ -1,0 +1,97 @@
+{
+  "status": "PASS",
+  "locale": "es",
+  "entries": [
+    {
+      "entry_id": "workbook-05-25-biomutant",
+      "source_fields_sha256": "ced86f82f269f7a5858b84c44d1b55e953429c5f4635c5d94e366c9652d9ef90",
+      "translation_sha256": "2716d0eff1007a7a03d4248b9e72a0aacdb9d47994ad6670c2ed5198e6aedc32",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch332/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "fdd9dbe0fa912e7726e8675d1e832192f2d906a8ee70a63e1243cc8691de20ea"
+    },
+    {
+      "entry_id": "daily-04-15",
+      "source_fields_sha256": "ae8f928c26cc29013a4d2268b520df945c221e0c294abbb0bfdaf4c94a25feb7",
+      "translation_sha256": "f01153b8296e51d2c790d12532853bfc078c1d12abca1f4c84b28ea854269890",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch332/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "fdd9dbe0fa912e7726e8675d1e832192f2d906a8ee70a63e1243cc8691de20ea"
+    },
+    {
+      "entry_id": "workbook-06-11-ratchet-clank-rift-apart",
+      "source_fields_sha256": "0b1308e29dfa2da6bf37a6599267ed8bd67fb7c2b6c2483d45cdeedca3b03e7c",
+      "translation_sha256": "e90ff0d082c073db19df3c02b4465c27dded629c1639c5c24bd632a0d6f43f62",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch332/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "fdd9dbe0fa912e7726e8675d1e832192f2d906a8ee70a63e1243cc8691de20ea"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "/root/category_audit",
+    "actual_receipt": "build/research/catalog-2021-chronological/may-june-three-private/independent-category-audit-approval.json",
+    "actual_receipt_sha256": "33a3e8e3068898e31af1194b96dbcc17c1ba187f6e4065c4a30bb6c81b49e03e",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "/root/category_audit",
+      "index_sha256": "7128029a139c02ac4d0a9f8bd9e78464c102d47b746e5158c6f53f531abeea16",
+      "scope": {
+        "english_paragraphs_actually_read": 15,
+        "localized_paragraphs_actually_read": 60,
+        "languages": [
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "images_actually_viewed": 21,
+        "final_contact_sheets_actually_viewed": 3,
+        "new_cue_metadata_actually_read": 2
+      },
+      "findings": [],
+      "primary_sources_read": [
+        {
+          "url": "https://thqnordic.com/news/welcome-to-biomutant-highly-anticipated-open-world-rpg-is-out-today",
+          "finding": "Original May25,2021 PS4XboxOnePC release and postapocalyptic WungFu/mutation context confirmed."
+        },
+        {
+          "url": "https://radicaldreamland.bandcamp.com/album/chicory-a-colorful-tale-original-soundtrack",
+          "finding": "OriginalJune10,2021 score, ProbablyAncientEvil3:27 and MountainTop4:18, LenaRainecomposer and EmiEvansvocalist roles independently confirmed; not piano2022 arrangement."
+        },
+        {
+          "url": "https://sonyinteractive.com/en/news/blog/inside-the-accessibility-features-of-ratchet-clank-rift-apart/",
+          "finding": "MicheleZorrilla first-person2021 source supports actual contrast categories, selected speed shortcuts, Enforcer two-stageTrigger functions and firing toggles; two originalPS5illustrations correspond to P0/P1."
+        },
+        {
+          "url": "https://blog.playstation.com/2021/06/09/the-interdimensional-melodies-of-ratchet-clank-rift-apart-out-july-11/",
+          "finding": "MarcusSmith/ScottHanau first-person2021 score discussion confirms MarkMothersbaugh/WataruHokoyama and orchestral/electronic recording approach."
+        }
+      ],
+      "review_notes": [
+        "All15English bodies and60locale bodies read fully, including Rift7paragraphs. Chicory summary now concerns the actual game and its June10release, while WorldArtDay contextual interpretation in body3 stays preserved.",
+        "All21images viewed. Two originalPS5accessibility images and laterPC2023 scenes are clearly distinguished in captions. Original2021 soundtrackart includes both named composers. No boxback substitutes.",
+        "Existing Biomutant2 and Rift3 recordings preserved, no redundant availability checks. New2Chicory actualIIPDDS metadata read; no audio downloaded or physicalPS5audition claimed."
+      ],
+      "owners": [
+        {
+          "entry_id": "workbook-05-25-biomutant",
+          "source_sha256": "86909b8ba225b05d52ec0d54009a38b6b42dbbccdd2750676a1f06ddadf7e304",
+          "target_sha256": "9959922a08fd6a0d9712372d6f03ebec5571b9c6d09b8db86c50ca99c685a57e",
+          "contact_sha256": "8b37d3412e3976d217f7b62cf31f6ded2e5560d36c8108444b0aefb516cc5969"
+        },
+        {
+          "entry_id": "daily-04-15",
+          "source_sha256": "673bf7bc97d4e2d217762b1dcf6288df9c756c3a9a5e94c03ad0918edaab59e2",
+          "target_sha256": "f00269ca9d601c78e6bb68a44c37703418ec1de175829e47fdc5780b3ce7e838",
+          "contact_sha256": "45f6192b40ec570dd76a7b1334dccf23445b4f1fed33b0039e2372923c02a3f6"
+        },
+        {
+          "entry_id": "workbook-06-11-ratchet-clank-rift-apart",
+          "source_sha256": "eee600cffb270542a5db26872bde5be94ccae97d307a4e77a9b4eb314418d155",
+          "target_sha256": "7b0f5569e4abe5fb77c402f62436486f685ff201af7adf2669c3ac0d143b9f43",
+          "contact_sha256": "dbcff10e9f0737d7e596e8eae003ff06e98a6213b7ba4eee3311ce809eb0949c"
+        }
+      ],
+      "production_writes": false,
+      "authorization": "Root approval for admission remains separate. No global writes performed."
+    }
+  }
+}

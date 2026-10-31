@@ -1,0 +1,738 @@
+{
+  "schema": "pixel-museum-editorial-output-v1",
+  "batch_id": "288-human-history",
+  "source_sha256": "321103d99931a36ee20c1a8e4e3378023e9a284dd1646ccdff6c6b9d2d17798e",
+  "completed": true,
+  "entries": [
+    {
+      "entry_id": "history-1936-turing-machine",
+      "main": {
+        "feature_id": null,
+        "en": {
+          "title": "Turing describes a universal model of computation",
+          "subtitle": "A tape, a reading head and a set of rules",
+          "summary": "Alan Turing’s 1936 model reduced computation to a sequence of precisely defined operations. A machine that reads and writes symbols on a tape gave mathematics a way to examine what algorithms can compute.",
+          "cards": [
+            {
+              "card_id": "main:0",
+              "heading": "Calculating one operation at a time",
+              "text": "Alan Turing introduced his mathematical model of computation in the 1936 paper On Computable Numbers. It describes a head that reads symbols on a tape divided into cells. A table of rules determines what the head writes, which way it moves and whether it stops, according to its current state and the symbol being read. With sufficient tape, this simple arrangement can carry out any computer algorithm. It made calculation a sequence of explicit operations that could itself be studied, allowing Turing to investigate the possibilities and limits of computation."
+            }
+          ]
+        },
+        "it": {
+          "title": "Turing descrive un modello universale di calcolo",
+          "subtitle": "Un nastro, una testina e un insieme di regole",
+          "summary": "Nel 1936 Alan Turing riduce il calcolo a una sequenza di operazioni definite con precisione. Una macchina capace di leggere e scrivere simboli su un nastro offre alla matematica uno strumento per studiare ciò che gli algoritmi possono calcolare.",
+          "cards": [
+            {
+              "card_id": "main:0",
+              "heading": "Calcolare un’operazione alla volta",
+              "text": "Alan Turing presenta il suo modello matematico di calcolo nell’articolo On Computable Numbers del 1936. Descrive una testina che legge simboli su un nastro diviso in caselle. Una tabella di regole stabilisce che cosa scrivere, in quale direzione spostarsi e quando fermarsi, in base allo stato della macchina e al simbolo letto. Con una quantità sufficiente di nastro, questo semplice sistema può eseguire qualsiasi algoritmo informatico. Il calcolo diventa così una sequenza di operazioni esplicite, a sua volta studiabile: Turing può indagare le possibilità e i limiti di ciò che una procedura riesce a calcolare."
+            }
+          ]
+        },
+        "fr": {
+          "title": "Turing décrit un modèle universel de calcul",
+          "subtitle": "Un ruban, une tête de lecture et des règles",
+          "summary": "En 1936, Alan Turing ramène le calcul à une suite d’opérations définies avec précision. Une machine qui lit et écrit des symboles sur un ruban donne aux mathématiques un moyen d’étudier ce que les algorithmes peuvent calculer.",
+          "cards": [
+            {
+              "card_id": "main:0",
+              "heading": "Calculer une opération après l’autre",
+              "text": "Alan Turing présente son modèle mathématique du calcul dans l’article On Computable Numbers de 1936. Il décrit une tête de lecture qui examine les symboles d’un ruban divisé en cases. Une table de règles détermine ce qu’elle écrit, son sens de déplacement et son éventuel arrêt, selon l’état de la machine et le symbole lu. Avec suffisamment de ruban, ce dispositif simple peut exécuter n’importe quel algorithme informatique. Le calcul devient une suite d’opérations explicites que l’on peut elle-même étudier, ce qui permet à Turing d’en explorer les possibilités et les limites."
+            }
+          ]
+        },
+        "de": {
+          "title": "Turing beschreibt ein universelles Rechenmodell",
+          "subtitle": "Ein Band, ein Lesekopf und feste Regeln",
+          "summary": "Alan Turing führte das Rechnen 1936 auf eine Folge genau festgelegter Operationen zurück. Eine Maschine, die Zeichen auf einem Band liest und schreibt, gab der Mathematik ein Modell, um die Möglichkeiten von Algorithmen zu untersuchen.",
+          "cards": [
+            {
+              "card_id": "main:0",
+              "heading": "Eine Rechenoperation nach der anderen",
+              "text": "Alan Turing stellte sein mathematisches Rechenmodell 1936 in On Computable Numbers vor. Darin liest ein Kopf Zeichen auf einem Band, das in einzelne Felder unterteilt ist. Eine Regeltabelle bestimmt, was geschrieben wird, in welche Richtung sich der Kopf bewegt und ob die Maschine anhält. Entscheidend sind dabei ihr aktueller Zustand und das gerade gelesene Zeichen. Mit ausreichend Band kann diese einfache Anordnung jeden Computeralgorithmus ausführen. Rechnen wurde damit zu einer Folge eindeutig beschriebener Operationen, die selbst untersucht werden konnte. So ließ sich erforschen, was Berechnungsverfahren leisten und wo ihre Grenzen liegen."
+            }
+          ]
+        },
+        "es": {
+          "title": "Turing describe un modelo universal de computación",
+          "subtitle": "Una cinta, un cabezal y un conjunto de reglas",
+          "summary": "En 1936, Alan Turing redujo la computación a una secuencia de operaciones definidas con precisión. Una máquina capaz de leer y escribir símbolos en una cinta ofreció a las matemáticas una forma de estudiar lo que pueden calcular los algoritmos.",
+          "cards": [
+            {
+              "card_id": "main:0",
+              "heading": "Calcular una operación tras otra",
+              "text": "Alan Turing presentó su modelo matemático de computación en el artículo On Computable Numbers de 1936. Describe un cabezal que lee símbolos en una cinta dividida en casillas. Una tabla de reglas determina qué debe escribir, en qué dirección moverse y cuándo detenerse, según el estado de la máquina y el símbolo leído. Con suficiente cinta, este sencillo sistema puede ejecutar cualquier algoritmo informático. El cálculo se convierte así en una secuencia de operaciones explícitas que también puede estudiarse, lo que permitió a Turing investigar las posibilidades y los límites de la computación."
+            }
+          ]
+        }
+      },
+      "features": [],
+      "issues": []
+    },
+    {
+      "entry_id": "history-1937-a-symbolic-analysis-of-relay-and-switching-circuits",
+      "main": {
+        "feature_id": null,
+        "en": {
+          "title": "A Symbolic Analysis of Relay and Switching Circuits",
+          "subtitle": "Shannon connects Boolean logic with electrical switches",
+          "summary": "Claude Shannon showed how Boolean algebra could describe and simplify relay circuits. Developed in his MIT thesis work in 1937 and published as a paper in 1938, the method helped establish the principles of digital circuit design.",
+          "cards": [
+            {
+              "card_id": "main:0",
+              "heading": "Turning logical relations into circuits",
+              "text": "A Symbolic Analysis of Relay and Switching Circuits grew from Claude E. Shannon’s master’s thesis work at the Massachusetts Institute of Technology in 1937 and appeared as a paper in 1938. Shannon had graduated from the University of Michigan with two degrees. At MIT, he showed that Boolean algebra could simplify arrangements of relays, the switches used in the electromechanical automatic telephone exchanges of the time. The relationship also worked in reverse: relay networks could be built to solve problems expressed in Boolean algebra.\n\nAn electrical switch has two states, open and closed. Using those binary states to carry out logical operations became a basic principle of electronic digital computers. As Shannon’s work spread through electrical engineering during and after the Second World War, it provided a practical foundation for designing digital circuits."
+            }
+          ]
+        },
+        "it": {
+          "title": "A Symbolic Analysis of Relay and Switching Circuits",
+          "subtitle": "Shannon mette in relazione la logica booleana e gli interruttori",
+          "summary": "Claude Shannon dimostra che l’algebra booleana può descrivere e semplificare i circuiti a relè. Sviluppato per la tesi al MIT nel 1937 e pubblicato come articolo nel 1938, il metodo contribuisce a fondare la progettazione dei circuiti digitali.",
+          "cards": [
+            {
+              "card_id": "main:0",
+              "heading": "Dalle relazioni logiche ai circuiti elettrici",
+              "text": "A Symbolic Analysis of Relay and Switching Circuits nasce dal lavoro svolto da Claude E. Shannon per la tesi di master al Massachusetts Institute of Technology nel 1937 e viene pubblicato come articolo nel 1938. Shannon aveva conseguito due lauree all’Università del Michigan. Al MIT dimostra che l’algebra booleana può semplificare le reti di relè, gli interruttori impiegati nelle centrali telefoniche automatiche elettromeccaniche dell’epoca. Il rapporto funziona anche in senso inverso: si possono costruire reti di relè per risolvere problemi espressi attraverso l’algebra booleana.\n\nUn interruttore elettrico ha due stati, aperto e chiuso. Usare questi stati binari per compiere operazioni logiche diventa uno dei principi alla base dei calcolatori elettronici digitali. Il lavoro di Shannon si diffonde fra gli ingegneri elettrici durante e dopo la seconda guerra mondiale, offrendo un fondamento pratico alla progettazione dei circuiti digitali."
+            }
+          ]
+        },
+        "fr": {
+          "title": "A Symbolic Analysis of Relay and Switching Circuits",
+          "subtitle": "Shannon relie la logique booléenne aux interrupteurs électriques",
+          "summary": "Claude Shannon montre comment l’algèbre de Boole peut décrire et simplifier les circuits à relais. Développée dans ses travaux de mémoire au MIT en 1937 et publiée en 1938, cette méthode contribue aux fondements de la conception des circuits numériques.",
+          "cards": [
+            {
+              "card_id": "main:0",
+              "heading": "Traduire les relations logiques en circuits",
+              "text": "A Symbolic Analysis of Relay and Switching Circuits est issu des travaux menés par Claude E. Shannon pour son mémoire de master au Massachusetts Institute of Technology en 1937, puis paraît sous forme d’article en 1938. Shannon a auparavant obtenu deux diplômes à l’université du Michigan. Au MIT, il montre que l’algèbre de Boole permet de simplifier les réseaux de relais utilisés dans les centraux téléphoniques automatiques électromécaniques. La relation fonctionne aussi en sens inverse : des réseaux de relais peuvent résoudre des problèmes exprimés en algèbre booléenne.\n\nUn interrupteur possède deux états, ouvert et fermé. L’utilisation de ces états binaires pour effectuer des opérations logiques devient un principe fondamental des ordinateurs électroniques numériques. Les travaux de Shannon se diffusent parmi les ingénieurs électriciens pendant et après la Seconde Guerre mondiale, offrant une base pratique à la conception des circuits numériques."
+            }
+          ]
+        },
+        "de": {
+          "title": "A Symbolic Analysis of Relay and Switching Circuits",
+          "subtitle": "Shannon verbindet boolesche Logik mit elektrischen Schaltern",
+          "summary": "Claude Shannon zeigte, wie sich Relaisschaltungen mit boolescher Algebra beschreiben und vereinfachen lassen. Die Methode entstand 1937 bei seiner Masterarbeit am MIT und erschien 1938 als Aufsatz. Sie schuf wesentliche Grundlagen für den Entwurf digitaler Schaltungen.",
+          "cards": [
+            {
+              "card_id": "main:0",
+              "heading": "Logische Beziehungen werden zu Schaltungen",
+              "text": "A Symbolic Analysis of Relay and Switching Circuits ging aus Claude E. Shannons Arbeit an seiner Masterarbeit am Massachusetts Institute of Technology im Jahr 1937 hervor und erschien 1938 als Aufsatz. Zuvor hatte Shannon zwei Studienabschlüsse an der University of Michigan erworben. Am MIT zeigte er, dass die boolesche Algebra Anordnungen von Relais vereinfachen konnte, wie sie damals in elektromechanischen automatischen Telefonvermittlungen eingesetzt wurden. Die Beziehung ließ sich auch umkehren: Mit Relaisnetzen konnten Probleme gelöst werden, die in boolescher Algebra formuliert waren.\n\nEin elektrischer Schalter kennt zwei Zustände: offen und geschlossen. Diese binären Zustände für logische Operationen zu nutzen, wurde zu einem Grundprinzip elektronischer Digitalrechner. Während und nach dem Zweiten Weltkrieg verbreitete sich Shannons Arbeit in der Elektrotechnik und lieferte eine praktische Grundlage für den Entwurf digitaler Schaltungen."
+            }
+          ]
+        },
+        "es": {
+          "title": "A Symbolic Analysis of Relay and Switching Circuits",
+          "subtitle": "Shannon relaciona la lógica booleana con los interruptores eléctricos",
+          "summary": "Claude Shannon mostró cómo el álgebra booleana podía describir y simplificar circuitos de relés. Desarrollado para su tesis en el MIT en 1937 y publicado como artículo en 1938, el método contribuyó a establecer los principios del diseño de circuitos digitales.",
+          "cards": [
+            {
+              "card_id": "main:0",
+              "heading": "Convertir relaciones lógicas en circuitos",
+              "text": "A Symbolic Analysis of Relay and Switching Circuits surgió del trabajo de Claude E. Shannon para su tesis de máster en el Massachusetts Institute of Technology en 1937 y se publicó como artículo en 1938. Shannon se había graduado en dos titulaciones en la Universidad de Michigan. En el MIT demostró que el álgebra booleana podía simplificar las redes de relés utilizadas en las centrales telefónicas automáticas electromecánicas de la época. La relación también funcionaba a la inversa: podían construirse redes de relés para resolver problemas expresados mediante álgebra booleana.\n\nUn interruptor eléctrico tiene dos estados, abierto y cerrado. El uso de esos estados binarios para realizar operaciones lógicas se convirtió en un principio básico de los ordenadores electrónicos digitales. El trabajo de Shannon se difundió entre los ingenieros eléctricos durante y después de la Segunda Guerra Mundial, proporcionando una base práctica para diseñar circuitos digitales."
+            }
+          ]
+        }
+      },
+      "features": [],
+      "issues": []
+    },
+    {
+      "entry_id": "history-1937-guernica-picasso",
+      "main": {
+        "feature_id": null,
+        "en": {
+          "title": "Guernica",
+          "subtitle": "Picasso’s response to the bombing of a Basque town",
+          "summary": "Pablo Picasso painted Guernica in 1937 after the bombing of the Basque town. Its large canvas gathers wounded and grieving figures in black, white and grey, making the suffering of war the painting’s central subject.",
+          "cards": [
+            {
+              "card_id": "main:0",
+              "heading": "Violence across a black-and-white canvas",
+              "text": "Guernica is Pablo Picasso’s 1937 response to the bombing of the Basque town by German and Italian forces on 26 April. Across its enormous grey, black and white canvas, a wounded horse, screaming women, a dead child, a fallen soldier and flames convey the suffering caused by violence. The painting was exhibited in the Spanish pavilion at the Paris International Exposition, then travelled to raise funds for Spanish war relief. Now displayed at Madrid’s Museo Reina Sofía, it has become one of the most widely recognised paintings against war."
+            }
+          ]
+        },
+        "it": {
+          "title": "Guernica",
+          "subtitle": "La risposta di Picasso al bombardamento della città basca",
+          "summary": "Pablo Picasso dipinge Guernica nel 1937 dopo il bombardamento della città basca. Sulla grande tela, figure ferite e straziate dal dolore si dispongono in bianco, nero e grigio, rendendo la sofferenza della guerra il centro dell’opera.",
+          "cards": [
+            {
+              "card_id": "main:0",
+              "heading": "La violenza su una tela in bianco e nero",
+              "text": "Guernica è la risposta dipinta da Pablo Picasso nel 1937 al bombardamento della città basca, colpita dalle forze tedesche e italiane il 26 aprile. Sull’enorme tela grigia, nera e bianca, un cavallo ferito, donne che urlano, un bambino morto, un soldato caduto e le fiamme mostrano la sofferenza provocata dalla violenza. Il quadro viene esposto nel padiglione spagnolo dell’Esposizione internazionale di Parigi, poi viaggia per raccogliere fondi a favore delle vittime della guerra in Spagna. Oggi conservato al Museo Reina Sofía di Madrid, è diventato una delle immagini pittoriche contro la guerra più riconoscibili."
+            }
+          ]
+        },
+        "fr": {
+          "title": "Guernica",
+          "subtitle": "La réponse de Picasso au bombardement d’une ville basque",
+          "summary": "Pablo Picasso peint Guernica en 1937 après le bombardement de la ville basque. Sur cette vaste toile en noir, blanc et gris, les figures blessées ou endeuillées placent la souffrance de la guerre au cœur de l’œuvre.",
+          "cards": [
+            {
+              "card_id": "main:0",
+              "heading": "La violence sur une toile en noir et blanc",
+              "text": "Guernica est la réponse peinte par Pablo Picasso en 1937 au bombardement de la ville basque par les forces allemandes et italiennes le 26 avril. Sur l’immense toile grise, noire et blanche, un cheval blessé, des femmes qui hurlent, un enfant mort, un soldat tombé et des flammes expriment les souffrances de la violence. Présentée dans le pavillon espagnol de l’Exposition internationale de Paris, l’œuvre voyage ensuite pour recueillir des fonds destinés aux victimes de la guerre en Espagne. Aujourd’hui exposée au Museo Reina Sofía de Madrid, elle est devenue l’une des peintures contre la guerre les plus connues."
+            }
+          ]
+        },
+        "de": {
+          "title": "Guernica",
+          "subtitle": "Picassos Antwort auf die Bombardierung einer baskischen Stadt",
+          "summary": "Pablo Picasso malte Guernica 1937 nach der Bombardierung der baskischen Stadt. Auf der großen Leinwand versammeln sich verletzte und trauernde Figuren in Schwarz, Weiß und Grau. Das Leid des Krieges steht im Mittelpunkt des Bildes.",
+          "cards": [
+            {
+              "card_id": "main:0",
+              "heading": "Gewalt auf einer schwarz-weißen Leinwand",
+              "text": "Guernica ist Pablo Picassos 1937 gemalte Antwort auf die Bombardierung der baskischen Stadt durch deutsche und italienische Truppen am 26. April. Ein verwundetes Pferd, schreiende Frauen, ein totes Kind, ein gefallener Soldat und Flammen zeigen auf der riesigen grauen, schwarzen und weißen Leinwand das Leid, das Gewalt verursacht. Das Bild wurde im spanischen Pavillon der Pariser Weltausstellung gezeigt und ging anschließend auf Reisen, um Geld für die Kriegshilfe in Spanien zu sammeln. Heute hängt es im Museo Reina Sofía in Madrid und zählt zu den bekanntesten Gemälden gegen den Krieg."
+            }
+          ]
+        },
+        "es": {
+          "title": "Guernica",
+          "subtitle": "La respuesta de Picasso al bombardeo de la localidad vasca",
+          "summary": "Pablo Picasso pintó Guernica en 1937 tras el bombardeo de la localidad vasca. El gran lienzo reúne figuras heridas y desgarradas por el dolor en blanco, negro y gris, situando el sufrimiento de la guerra en el centro de la obra.",
+          "cards": [
+            {
+              "card_id": "main:0",
+              "heading": "La violencia sobre un lienzo en blanco y negro",
+              "text": "Guernica es la respuesta que Pablo Picasso pintó en 1937 al bombardeo de la localidad vasca por fuerzas alemanas e italianas el 26 de abril. En el enorme lienzo gris, negro y blanco, un caballo herido, mujeres que gritan, un niño muerto, un soldado caído y las llamas expresan el sufrimiento causado por la violencia. La pintura se expuso en el pabellón español de la Exposición Internacional de París y después viajó para recaudar fondos de ayuda a las víctimas de la guerra en España. Hoy se exhibe en el Museo Reina Sofía de Madrid y es una de las pinturas contra la guerra más reconocidas."
+            }
+          ]
+        }
+      },
+      "features": [],
+      "issues": []
+    },
+    {
+      "entry_id": "history-1937-snow-white-and-the-seven-dwarfs-1937-film",
+      "main": {
+        "feature_id": null,
+        "en": {
+          "title": "Snow White and the Seven Dwarfs",
+          "subtitle": "Disney brings animation to feature length",
+          "summary": "Snow White and the Seven Dwarfs carried Disney’s animation into a full-length fairy tale in 1937. Its reception and international earnings showed that audiences would follow an animated story far beyond the length of a short.",
+          "cards": [
+            {
+              "card_id": "main:0",
+              "heading": "A feature film finds its audience",
+              "text": "Snow White and the Seven Dwarfs premiered in Los Angeles on 21 December 1937. Produced by Walt Disney from the Brothers Grimm story, it was the first American animated feature and the first feature made with cel animation, using drawings on transparent sheets. David Hand supervised the sequence directors who shaped the film’s different sections. Despite doubts within the industry, it became a success with critics and audiences. Its initial international earnings exceeded $8 million against a production cost of about $1.5 million, demonstrating a substantial audience for feature-length animation."
+            }
+          ]
+        },
+        "it": {
+          "title": "Snow White and the Seven Dwarfs",
+          "subtitle": "L’animazione Disney diventa un lungometraggio",
+          "summary": "Nel 1937 Snow White and the Seven Dwarfs porta l’animazione Disney alla durata di un lungometraggio fiabesco. L’accoglienza e gli incassi internazionali dimostrano che il pubblico è disposto a seguire una storia animata ben oltre i tempi di un corto.",
+          "cards": [
+            {
+              "card_id": "main:0",
+              "heading": "Un lungometraggio trova il suo pubblico",
+              "text": "Snow White and the Seven Dwarfs debutta a Los Angeles il 21 dicembre 1937. Prodotto da Walt Disney a partire dalla fiaba dei fratelli Grimm, è il primo lungometraggio animato americano e il primo realizzato con disegni su fogli trasparenti, la tecnica dei cel. David Hand coordina i registi delle singole sequenze. Nonostante i dubbi diffusi nell’industria cinematografica, il film conquista critica e pubblico. Gli incassi internazionali della prima distribuzione superano gli 8 milioni di dollari, a fronte di un costo produttivo di circa 1,5 milioni, mostrando l’ampiezza del pubblico interessato all’animazione di lunga durata."
+            }
+          ]
+        },
+        "fr": {
+          "title": "Snow White and the Seven Dwarfs",
+          "subtitle": "Disney porte l’animation au long métrage",
+          "summary": "En 1937, Snow White and the Seven Dwarfs donne à l’animation Disney la durée d’un conte en long métrage. Son accueil et ses recettes internationales montrent que le public peut suivre une histoire animée bien au-delà d’un court métrage.",
+          "cards": [
+            {
+              "card_id": "main:0",
+              "heading": "Un long métrage rencontre son public",
+              "text": "Snow White and the Seven Dwarfs est présenté pour la première fois à Los Angeles le 21 décembre 1937. Produit par Walt Disney d’après le conte des frères Grimm, il est le premier long métrage d’animation américain et le premier réalisé avec des dessins sur feuilles transparentes, selon la technique du cellulo. David Hand supervise les réalisateurs des différentes séquences. Malgré les doutes de l’industrie cinématographique, le film conquiert la critique et le public. Ses premières recettes internationales dépassent 8 millions de dollars, pour un coût de production d’environ 1,5 million : un résultat qui révèle l’ampleur du public prêt à voir un long métrage d’animation."
+            }
+          ]
+        },
+        "de": {
+          "title": "Snow White and the Seven Dwarfs",
+          "subtitle": "Disney erweitert den Zeichentrickfilm auf Spielfilmlänge",
+          "summary": "Snow White and the Seven Dwarfs machte Disneys Animation 1937 zu einem Märchen in Spielfilmlänge. Die Aufnahme beim Publikum und die internationalen Einnahmen zeigten, dass eine gezeichnete Geschichte auch weit über das Kurzfilmformat hinaus tragen konnte.",
+          "cards": [
+            {
+              "card_id": "main:0",
+              "heading": "Ein abendfüllender Zeichentrickfilm findet sein Publikum",
+              "text": "Snow White and the Seven Dwarfs feierte am 21. Dezember 1937 in Los Angeles Premiere. Walt Disney produzierte den Film nach dem Märchen der Brüder Grimm. Es war der erste amerikanische Animationsfilm in Spielfilmlänge und der erste abendfüllende Film mit Cel-Animation, bei der auf transparenten Folien gezeichnet wird. David Hand beaufsichtigte die Regisseure der einzelnen Sequenzen. Trotz der Zweifel in der Filmbranche wurde das Werk bei Kritik und Publikum ein Erfolg. Die ersten internationalen Einnahmen lagen bei mehr als acht Millionen Dollar, die Produktionskosten bei rund 1,5 Millionen. Damit zeigte sich ein großes Publikum für abendfüllende Animation."
+            }
+          ]
+        },
+        "es": {
+          "title": "Snow White and the Seven Dwarfs",
+          "subtitle": "Disney lleva la animación al largometraje",
+          "summary": "En 1937, Snow White and the Seven Dwarfs convirtió la animación de Disney en un cuento de duración cinematográfica completa. Su recepción y sus ingresos internacionales demostraron que el público estaba dispuesto a seguir una historia animada mucho más allá de un corto.",
+          "cards": [
+            {
+              "card_id": "main:0",
+              "heading": "Un largometraje encuentra a su público",
+              "text": "Snow White and the Seven Dwarfs se estrenó en Los Ángeles el 21 de diciembre de 1937. Producida por Walt Disney a partir del cuento de los hermanos Grimm, fue el primer largometraje de animación estadounidense y el primero realizado con dibujos sobre láminas transparentes, mediante la técnica de animación por acetatos. David Hand supervisó a los directores de las distintas secuencias. Pese a las dudas de la industria, la película triunfó entre la crítica y el público. Sus primeros ingresos internacionales superaron los 8 millones de dólares, frente a un coste de producción de unos 1,5 millones, mostrando que existía un público amplio para los largometrajes animados."
+            }
+          ]
+        }
+      },
+      "features": [],
+      "issues": []
+    },
+    {
+      "entry_id": "history-1937-the-hobbit",
+      "main": {
+        "feature_id": null,
+        "en": {
+          "title": "The Hobbit",
+          "subtitle": "Bilbo leaves home and learns to rely on his wits",
+          "summary": "The Hobbit sends the home-loving Bilbo Baggins on a journey with Gandalf and thirteen dwarves. Published in 1937, Tolkien’s adventure builds its episodes around an unwilling traveller whose confidence grows as he faces unfamiliar dangers.",
+          "cards": [
+            {
+              "card_id": "main:0",
+              "heading": "A reluctant traveller in a much larger world",
+              "text": "The Hobbit, published in 1937, takes J. R. R. Tolkien’s Bilbo Baggins away from his quiet home into the wider world of Middle-earth. Gandalf and thirteen dwarves enlist him to help reclaim their home and treasure from the dragon Smaug. Each stage of the journey brings new dangers, and Bilbo learns to trust his wit and common sense as his confidence develops. The episodic adventure won critical praise and became a classic of children’s fantasy. Its appeal follows the changing relationship between a reluctant traveller and a world far larger than the one he knows."
+            }
+          ]
+        },
+        "it": {
+          "title": "The Hobbit",
+          "subtitle": "Bilbo lascia casa e impara a fidarsi del proprio ingegno",
+          "summary": "The Hobbit conduce Bilbo Baggins, amante della vita domestica, in viaggio con Gandalf e tredici nani. Pubblicata nel 1937, l’avventura di Tolkien segue un viaggiatore riluttante che acquista fiducia in sé affrontando pericoli sempre nuovi.",
+          "cards": [
+            {
+              "card_id": "main:0",
+              "heading": "Un viaggiatore riluttante in un mondo molto più grande",
+              "text": "The Hobbit, pubblicato nel 1937, porta Bilbo Baggins, il protagonista creato da J. R. R. Tolkien, lontano dalla quiete di casa e nel più vasto mondo della Terra di Mezzo. Gandalf e tredici nani lo coinvolgono nella riconquista della loro dimora e del tesoro sottratti dal drago Smaug. Ogni tappa presenta nuovi pericoli: Bilbo impara ad affidarsi all’ingegno e al buon senso, mentre cresce la sua sicurezza. L’avventura a episodi ottiene il favore della critica e diventa un classico del fantasy per ragazzi. Il suo fascino accompagna il mutare del rapporto fra un viaggiatore poco propenso a partire e un mondo molto più grande di quello che conosce."
+            }
+          ]
+        },
+        "fr": {
+          "title": "The Hobbit",
+          "subtitle": "Bilbo quitte sa maison et apprend à compter sur son ingéniosité",
+          "summary": "The Hobbit entraîne le casanier Bilbo Baggins dans un voyage avec Gandalf et treize nains. Publiée en 1937, l’aventure de Tolkien suit un voyageur réticent dont l’assurance grandit à mesure qu’il affronte des dangers inconnus.",
+          "cards": [
+            {
+              "card_id": "main:0",
+              "heading": "Un voyageur réticent dans un monde bien plus vaste",
+              "text": "The Hobbit, publié en 1937, conduit Bilbo Baggins, le personnage de J. R. R. Tolkien, loin de sa paisible maison, dans le vaste monde de la Terre du Milieu. Gandalf et treize nains le recrutent pour les aider à reprendre leur demeure et leur trésor au dragon Smaug. Chaque étape apporte de nouveaux dangers. Bilbo apprend à se fier à son ingéniosité et à son bon sens, tout en gagnant en assurance. Cette aventure par épisodes, saluée par la critique, devient un classique de la fantasy pour la jeunesse. Son attrait tient à l’évolution du rapport entre un voyageur peu disposé au départ et un monde beaucoup plus vaste que celui qu’il connaît."
+            }
+          ]
+        },
+        "de": {
+          "title": "The Hobbit",
+          "subtitle": "Bilbo verlässt sein Zuhause und vertraut zunehmend auf seinen Verstand",
+          "summary": "The Hobbit schickt den häuslichen Bilbo Baggins mit Gandalf und dreizehn Zwergen auf Reisen. Tolkiens 1937 veröffentlichtes Abenteuer begleitet einen widerwilligen Reisenden, dessen Selbstvertrauen wächst, während er sich immer neuen Gefahren stellt.",
+          "cards": [
+            {
+              "card_id": "main:0",
+              "heading": "Ein widerwilliger Reisender in einer viel größeren Welt",
+              "text": "The Hobbit, 1937 veröffentlicht, führt J. R. R. Tolkiens Bilbo Baggins aus seinem ruhigen Zuhause in die weitere Welt von Mittelerde. Gandalf und dreizehn Zwerge gewinnen ihn dafür, ihnen bei der Rückeroberung ihrer Heimat und ihres Schatzes vom Drachen Smaug zu helfen. Jede Etappe bringt neue Gefahren. Bilbo lernt, sich auf Einfallsreichtum und gesunden Menschenverstand zu verlassen, und gewinnt dabei an Selbstvertrauen. Das in Episoden erzählte Abenteuer wurde von der Kritik gelobt und zu einem Klassiker der Kinderfantasy. Sein Reiz liegt in der sich verändernden Beziehung zwischen einem wenig reiselustigen Helden und einer Welt, die weit über sein bisheriges Leben hinausreicht."
+            }
+          ]
+        },
+        "es": {
+          "title": "The Hobbit",
+          "subtitle": "Bilbo deja su hogar y aprende a confiar en su ingenio",
+          "summary": "The Hobbit lleva al hogareño Bilbo Baggins de viaje con Gandalf y trece enanos. Publicada en 1937, la aventura de Tolkien sigue a un viajero reacio cuya confianza aumenta a medida que afronta peligros desconocidos.",
+          "cards": [
+            {
+              "card_id": "main:0",
+              "heading": "Un viajero reacio en un mundo mucho más grande",
+              "text": "The Hobbit, publicado en 1937, aleja a Bilbo Baggins, el personaje de J. R. R. Tolkien, de la tranquilidad de su casa para llevarlo al vasto mundo de la Tierra Media. Gandalf y trece enanos lo reclutan para ayudarles a recuperar su hogar y su tesoro del dragón Smaug. Cada etapa presenta nuevos peligros, y Bilbo aprende a confiar en su ingenio y su sentido común mientras gana seguridad. La aventura por episodios recibió elogios de la crítica y se convirtió en un clásico de la fantasía infantil. Su atractivo acompaña la transformación de la relación entre un viajero poco dispuesto a partir y un mundo mucho mayor que el que conoce."
+            }
+          ]
+        }
+      },
+      "features": [],
+      "issues": []
+    },
+    {
+      "entry_id": "history-1938-nuclear-fission",
+      "main": {
+        "feature_id": null,
+        "en": {
+          "title": "Nuclear fission",
+          "subtitle": "A heavy nucleus splits and releases energy",
+          "summary": "The discovery of nuclear fission began with uranium experiments in December 1938. Theoretical explanation and further research soon showed how splitting a nucleus could release energy and neutrons, raising the possibility of a chain reaction.",
+          "cards": [
+            {
+              "card_id": "main:0",
+              "heading": "From uranium experiments to a chain reaction",
+              "text": "In December 1938, Otto Hahn and Fritz Strassmann found the chemical evidence that uranium nuclei had split. Lise Meitner and Otto Robert Frisch developed the theoretical explanation the following month, and Frisch named the process fission. When a heavy nucleus splits, it releases energy and forms smaller nuclei, often accompanied by neutrons and gamma rays. In February 1939, Hahn and Strassmann predicted the release of additional neutrons. This suggested a chain reaction: neutrons from one split could cause further nuclei to divide, provided enough suitable fissile material was present."
+            }
+          ]
+        },
+        "it": {
+          "title": "La fissione nucleare",
+          "subtitle": "Un nucleo pesante si divide e libera energia",
+          "summary": "La scoperta della fissione nucleare nasce dagli esperimenti sull’uranio del dicembre 1938. La spiegazione teorica e le ricerche successive chiariscono come la divisione di un nucleo possa liberare energia e neutroni, aprendo la possibilità di una reazione a catena.",
+          "cards": [
+            {
+              "card_id": "main:0",
+              "heading": "Dagli esperimenti sull’uranio alla reazione a catena",
+              "text": "Nel dicembre 1938 Otto Hahn e Fritz Strassmann trovano le prove chimiche della divisione dei nuclei di uranio. Il mese successivo Lise Meitner e Otto Robert Frisch ne sviluppano la spiegazione teorica; Frisch chiama il processo fissione. Quando un nucleo pesante si divide, libera energia e forma nuclei più piccoli, spesso emettendo anche neutroni e raggi gamma. Nel febbraio 1939 Hahn e Strassmann prevedono il rilascio di ulteriori neutroni. Si apre così la possibilità di una reazione a catena: i neutroni prodotti da una divisione possono provocarne altre, purché sia presente abbastanza materiale fissile adatto."
+            }
+          ]
+        },
+        "fr": {
+          "title": "La fission nucléaire",
+          "subtitle": "Un noyau lourd se divise et libère de l’énergie",
+          "summary": "La découverte de la fission nucléaire commence avec des expériences sur l’uranium en décembre 1938. L’explication théorique et les recherches suivantes montrent comment la division d’un noyau libère de l’énergie et des neutrons, laissant envisager une réaction en chaîne.",
+          "cards": [
+            {
+              "card_id": "main:0",
+              "heading": "Des expériences sur l’uranium à la réaction en chaîne",
+              "text": "En décembre 1938, Otto Hahn et Fritz Strassmann trouvent les preuves chimiques de la division de noyaux d’uranium. Le mois suivant, Lise Meitner et Otto Robert Frisch en élaborent l’explication théorique ; Frisch nomme le processus fission. Lorsqu’un noyau lourd se divise, il libère de l’énergie et forme des noyaux plus petits, souvent accompagnés de neutrons et de rayons gamma. En février 1939, Hahn et Strassmann prédisent la libération de neutrons supplémentaires. Une réaction en chaîne devient alors envisageable : les neutrons d’une première division pourraient en provoquer d’autres, à condition de disposer d’une quantité suffisante de matière fissile appropriée."
+            }
+          ]
+        },
+        "de": {
+          "title": "Kernspaltung",
+          "subtitle": "Ein schwerer Atomkern zerfällt und setzt Energie frei",
+          "summary": "Die Entdeckung der Kernspaltung begann im Dezember 1938 mit Uranexperimenten. Die theoretische Erklärung und weitere Forschungen zeigten bald, dass die Spaltung eines Atomkerns Energie und Neutronen freisetzt. Damit rückte eine Kettenreaktion in den Bereich des Möglichen.",
+          "cards": [
+            {
+              "card_id": "main:0",
+              "heading": "Vom Uranexperiment zur Kettenreaktion",
+              "text": "Im Dezember 1938 fanden Otto Hahn und Fritz Strassmann die chemischen Belege für die Spaltung von Urankernen. Im folgenden Monat entwickelten Lise Meitner und Otto Robert Frisch die theoretische Erklärung; Frisch gab dem Vorgang den Namen Fission. Bei der Spaltung eines schweren Atomkerns entstehen kleinere Kerne und Energie wird frei, häufig zusammen mit Neutronen und Gammastrahlung. Im Februar 1939 sagten Hahn und Strassmann die Freisetzung zusätzlicher Neutronen voraus. Daraus ergab sich die Möglichkeit einer Kettenreaktion: Neutronen aus einer Spaltung könnten weitere Kerne spalten, sofern genügend geeignetes spaltbares Material vorhanden ist."
+            }
+          ]
+        },
+        "es": {
+          "title": "La fisión nuclear",
+          "subtitle": "Un núcleo pesado se divide y libera energía",
+          "summary": "El descubrimiento de la fisión nuclear comenzó con experimentos sobre el uranio en diciembre de 1938. La explicación teórica y las investigaciones posteriores mostraron cómo la división de un núcleo liberaba energía y neutrones, planteando la posibilidad de una reacción en cadena.",
+          "cards": [
+            {
+              "card_id": "main:0",
+              "heading": "De los experimentos con uranio a la reacción en cadena",
+              "text": "En diciembre de 1938, Otto Hahn y Fritz Strassmann encontraron las pruebas químicas de que se habían dividido núcleos de uranio. Al mes siguiente, Lise Meitner y Otto Robert Frisch desarrollaron la explicación teórica; Frisch llamó fisión al proceso. Cuando un núcleo pesado se divide, libera energía y forma núcleos más pequeños, a menudo acompañados de neutrones y rayos gamma. En febrero de 1939, Hahn y Strassmann predijeron la liberación de neutrones adicionales. Esto planteó una reacción en cadena: los neutrones de una división podrían provocar otras, siempre que hubiera suficiente material fisible adecuado."
+            }
+          ]
+        }
+      },
+      "features": [],
+      "issues": []
+    },
+    {
+      "entry_id": "history-1938-the-war-of-the-worlds-1938-radio-drama",
+      "main": {
+        "feature_id": null,
+        "en": {
+          "title": "The War of the Worlds",
+          "subtitle": "A radio drama borrows the form of live news",
+          "summary": "Orson Welles’s 1938 radio adaptation of The War of the Worlds used urgent news bulletins to make its Martian invasion sound immediate. Some listeners mistook the fiction for news; the much-repeated story of widespread panic remains disputed.",
+          "cards": [
+            {
+              "card_id": "main:0",
+              "heading": "An invasion told through simulated bulletins",
+              "text": "The War of the Worlds aired live on the CBS Radio Network at 8 p.m. Eastern Time on 30 October 1938, as a Halloween episode of The Mercury Theatre on the Air. Orson Welles directed and narrated the adaptation of H. G. Wells’s novel. Its first half adopted the sound of breaking news, with fictional reporters describing a destructive Martian invasion and the fall of New York City.\n\nThe programme’s lack of regular commercial interruptions allowed this account to continue until the first break, after the invasion had already unfolded. Some listeners became confused or frightened, believing the reports described real events. Reports of nationwide hysteria gave the broadcast a lasting reputation, although the extent of listeners’ reactions remains disputed."
+            }
+          ]
+        },
+        "it": {
+          "title": "The War of the Worlds",
+          "subtitle": "Un radiodramma adotta la forma delle notizie in diretta",
+          "summary": "L’adattamento radiofonico di The War of the Worlds diretto da Orson Welles nel 1938 racconta l’invasione marziana attraverso notiziari urgenti. Alcuni ascoltatori credono alla finzione, ma la diffusissima storia di un panico generalizzato resta controversa.",
+          "cards": [
+            {
+              "card_id": "main:0",
+              "heading": "Un’invasione raccontata da finti notiziari",
+              "text": "The War of the Worlds va in onda in diretta sulla rete radiofonica CBS alle 20, ora della costa orientale statunitense, il 30 ottobre 1938. È la puntata di Halloween della serie The Mercury Theatre on the Air, diretta e narrata da Orson Welles a partire dal romanzo di H. G. Wells. La prima metà riproduce il tono delle notizie urgenti: cronisti immaginari descrivono una devastante invasione marziana e la caduta di New York.\n\nL’assenza di regolari interruzioni pubblicitarie permette al racconto di proseguire fino alla prima pausa, quando l’invasione è già stata narrata. Alcuni ascoltatori si confondono o si spaventano, convinti che i resoconti riguardino fatti reali. Le notizie di un’isteria estesa a tutto il paese danno alla trasmissione una fama duratura, ma la portata delle reazioni del pubblico rimane discussa."
+            }
+          ]
+        },
+        "fr": {
+          "title": "The War of the Worlds",
+          "subtitle": "Une fiction radiophonique prend la forme d’un direct d’information",
+          "summary": "L’adaptation radiophonique de The War of the Worlds par Orson Welles, en 1938, raconte l’invasion martienne sous forme de bulletins urgents. Certains auditeurs prennent la fiction pour des nouvelles réelles ; l’ampleur de la panique souvent évoquée reste contestée.",
+          "cards": [
+            {
+              "card_id": "main:0",
+              "heading": "Une invasion racontée par de faux bulletins",
+              "text": "The War of the Worlds est diffusé en direct sur le réseau radiophonique CBS le 30 octobre 1938, à 20 heures sur la côte est des États-Unis. Cet épisode d’Halloween de The Mercury Theatre on the Air adapte le roman de H. G. Wells, sous la direction d’Orson Welles, qui en est aussi le narrateur. La première moitié adopte le ton de bulletins d’information urgents : des reporters fictifs décrivent une invasion martienne dévastatrice et la chute de New York.\n\nL’absence de coupures publicitaires régulières permet au récit de se poursuivre jusqu’à la première pause, alors que l’invasion a déjà été racontée. Certains auditeurs, troublés ou effrayés, croient entendre le récit d’événements réels. Les articles évoquant une hystérie à l’échelle du pays donnent à l’émission une réputation durable, mais l’ampleur des réactions demeure discutée."
+            }
+          ]
+        },
+        "de": {
+          "title": "The War of the Worlds",
+          "subtitle": "Ein Hörspiel im Ton einer Live-Nachrichtensendung",
+          "summary": "Orson Welles erzählte die Marsinvasion in seiner Radiofassung von The War of the Worlds 1938 durch dringende Nachrichtenmeldungen. Manche Zuhörer hielten die Fiktion für Wirklichkeit. Wie weit die oft beschriebene Panik tatsächlich reichte, ist umstritten.",
+          "cards": [
+            {
+              "card_id": "main:0",
+              "heading": "Eine Invasion in nachgestellten Nachrichtenmeldungen",
+              "text": "The War of the Worlds wurde am 30. Oktober 1938 um 20 Uhr amerikanischer Ostküstenzeit live im CBS Radio Network ausgestrahlt. Die Halloween-Folge von The Mercury Theatre on the Air adaptierte H. G. Wells’ Roman unter der Regie von Orson Welles, der auch als Erzähler auftrat. In der ersten Hälfte klang die Sendung wie eine Folge von Eilmeldungen. Fiktive Reporter beschrieben eine verheerende Marsinvasion und den Fall New Yorks.\n\nDa regelmäßige Werbeunterbrechungen fehlten, lief dieser Bericht bis zur ersten Pause weiter; die Invasion war bis dahin bereits geschildert worden. Einige Zuhörer waren verwirrt oder verängstigt und glaubten, von wirklichen Ereignissen zu hören. Berichte über eine landesweite Hysterie begründeten den anhaltenden Ruf der Sendung. Wie groß die Reaktionen des Publikums tatsächlich waren, bleibt jedoch umstritten."
+            }
+          ]
+        },
+        "es": {
+          "title": "The War of the Worlds",
+          "subtitle": "Un radiodrama adopta la forma de las noticias en directo",
+          "summary": "La adaptación radiofónica de The War of the Worlds de Orson Welles, emitida en 1938, utilizó boletines urgentes para hacer inmediata la invasión marciana. Algunos oyentes confundieron la ficción con noticias reales; la magnitud del supuesto pánico generalizado sigue discutida.",
+          "cards": [
+            {
+              "card_id": "main:0",
+              "heading": "Una invasión narrada mediante falsos boletines",
+              "text": "The War of the Worlds se emitió en directo por CBS Radio Network a las ocho de la tarde, hora de la costa este estadounidense, el 30 de octubre de 1938. Era el episodio de Halloween de The Mercury Theatre on the Air, dirigido y narrado por Orson Welles a partir de la novela de H. G. Wells. La primera mitad adoptaba el tono de las noticias de última hora: reporteros ficticios describían una devastadora invasión marciana y la caída de Nueva York.\n\nLa ausencia de interrupciones publicitarias regulares permitió que el relato continuara hasta la primera pausa, cuando la invasión ya se había narrado. Algunos oyentes se confundieron o se asustaron, convencidos de que los boletines describían hechos reales. Las informaciones sobre una histeria extendida por todo el país dieron al programa una fama duradera, aunque la magnitud de las reacciones del público sigue siendo objeto de discusión."
+            }
+          ]
+        }
+      },
+      "features": [],
+      "issues": []
+    },
+    {
+      "entry_id": "history-1939-gone-with-the-wind",
+      "main": {
+        "feature_id": null,
+        "en": {
+          "title": "Gone with the Wind",
+          "subtitle": "Scarlett O’Hara’s attachment to Tara survives upheaval",
+          "summary": "Gone with the Wind follows Scarlett O’Hara through the American Civil War and Reconstruction. The 1939 adaptation joins her struggle to preserve Tara with turbulent relationships, while its portrayal of the slaveholding South remains part of its contested legacy.",
+          "cards": [
+            {
+              "card_id": "main:0",
+              "heading": "Scarlett’s life through war and Reconstruction",
+              "text": "Gone with the Wind is the 1939 film adaptation of Margaret Mitchell’s novel, produced by David O. Selznick and directed by Victor Fleming. Vivien Leigh plays Scarlett O’Hara, the determined daughter of a Georgia plantation owner, as the American Civil War and Reconstruction overturn her earlier life. Throughout those changes, her attachment to the family home, Tara, endures. The film gives this personal story an expansive historical setting."
+            },
+            {
+              "card_id": "main:1",
+              "heading": "The home Scarlett saves and the relationships she damages",
+              "text": "Scarlett’s pursuit of Ashley Wilkes and her difficult relationship with Rhett Butler unfold amid battles, displacement and the struggle to keep Tara. Colour, crowded scenes and large settings give the upheavals a visible scale. Max Steiner’s recurring Tara theme expresses her attachment to the land through music. Scarlett’s resourcefulness drives the story, yet the decisions she makes to secure her future often damage the relationships she expects to make her happy."
+            },
+            {
+              "card_id": "main:2",
+              "heading": "Hattie McDaniel’s award in a segregated industry",
+              "text": "The film’s romantic image of the slaveholding South and its racial stereotypes are part of its historical legacy. In 1940, Hattie McDaniel’s performance as Mammy earned the first competitive Oscar awarded to a Black performer. At the segregated ceremony, she and her guest sat apart from the film’s other nominees. The award recognised her work, while her treatment at the event exposed the barriers that still surrounded that recognition in Hollywood."
+            }
+          ]
+        },
+        "it": {
+          "title": "Gone with the Wind",
+          "subtitle": "Il legame di Scarlett O’Hara con Tara resiste agli sconvolgimenti",
+          "summary": "Gone with the Wind segue Scarlett O’Hara durante la guerra civile americana e la Ricostruzione. Il film del 1939 intreccia la difesa di Tara e relazioni tormentate, lasciando un’eredità controversa nella rappresentazione del Sud schiavista.",
+          "cards": [
+            {
+              "card_id": "main:0",
+              "heading": "La vita di Scarlett fra guerra e Ricostruzione",
+              "text": "Gone with the Wind è l’adattamento cinematografico del 1939 del romanzo di Margaret Mitchell, prodotto da David O. Selznick e diretto da Victor Fleming. Vivien Leigh interpreta Scarlett O’Hara, la determinata figlia di un proprietario di piantagioni della Georgia, la cui esistenza viene sconvolta dalla guerra civile americana e dalla Ricostruzione. In mezzo a questi cambiamenti resta saldo il suo legame con Tara, la casa di famiglia. Il film inserisce la vicenda personale in una ricostruzione storica di ampio respiro."
+            },
+            {
+              "card_id": "main:1",
+              "heading": "La casa da salvare e i rapporti messi in pericolo",
+              "text": "La passione di Scarlett per Ashley Wilkes e il difficile rapporto con Rhett Butler si intrecciano a battaglie, spostamenti forzati e tentativi di conservare Tara. Il colore, le scene affollate e i grandi ambienti rendono visibile la portata di questi sconvolgimenti. Il tema ricorrente di Tara, composto da Max Steiner, esprime attraverso la musica il legame della protagonista con la terra. La capacità di trovare soluzioni sostiene il suo percorso, ma le decisioni prese per garantirsi sicurezza spesso compromettono proprio i rapporti da cui si aspetta la felicità."
+            },
+            {
+              "card_id": "main:2",
+              "heading": "Il premio a Hattie McDaniel in un’industria segregata",
+              "text": "L’immagine romantica del Sud schiavista e gli stereotipi razziali del film fanno parte della sua eredità storica. Nel 1940 l’interpretazione di Mammy vale a Hattie McDaniel il primo Oscar competitivo assegnato a una persona nera. Alla cerimonia, soggetta alla segregazione razziale, lei e il suo accompagnatore siedono separati dagli altri candidati del film. Il premio riconosce il suo lavoro, mentre il trattamento ricevuto durante la serata mostra le barriere che ancora circondano quel riconoscimento a Hollywood."
+            }
+          ]
+        },
+        "fr": {
+          "title": "Gone with the Wind",
+          "subtitle": "L’attachement de Scarlett O’Hara à Tara résiste aux bouleversements",
+          "summary": "Gone with the Wind suit Scarlett O’Hara pendant la guerre de Sécession et la Reconstruction. Le film de 1939 mêle la défense de Tara à des relations tumultueuses, tandis que son image du Sud esclavagiste demeure au cœur d’un héritage contesté.",
+          "cards": [
+            {
+              "card_id": "main:0",
+              "heading": "La vie de Scarlett entre guerre et Reconstruction",
+              "text": "Gone with the Wind est l’adaptation cinématographique de 1939 du roman de Margaret Mitchell, produite par David O. Selznick et réalisée par Victor Fleming. Vivien Leigh incarne Scarlett O’Hara, fille déterminée d’un propriétaire de plantation de Géorgie, dont la vie est bouleversée par la guerre de Sécession et la Reconstruction. Son attachement à Tara, la demeure familiale, persiste au fil de ces changements. Le film inscrit cette histoire personnelle dans un vaste cadre historique."
+            },
+            {
+              "card_id": "main:1",
+              "heading": "La maison à sauver et les relations mises à mal",
+              "text": "L’amour de Scarlett pour Ashley Wilkes et sa relation difficile avec Rhett Butler se développent au milieu des batailles, des déplacements forcés et des efforts pour conserver Tara. La couleur, les scènes peuplées de figurants et les grands décors donnent une ampleur visible à ces bouleversements. Le thème récurrent de Tara, composé par Max Steiner, traduit en musique son attachement à la terre. L’ingéniosité de Scarlett fait avancer le récit, mais les choix qu’elle fait pour assurer son avenir abîment souvent les relations dont elle attend le bonheur."
+            },
+            {
+              "card_id": "main:2",
+              "heading": "Le prix de Hattie McDaniel dans une industrie ségréguée",
+              "text": "La vision romantique du Sud esclavagiste et les stéréotypes raciaux du film font partie de son héritage historique. En 1940, l’interprétation de Mammy vaut à Hattie McDaniel le premier Oscar compétitif décerné à une personne noire. Lors de la cérémonie, soumise à la ségrégation raciale, elle et son invité sont assis à l’écart des autres artistes du film nommés aux Oscars. Le prix reconnaît son travail ; le traitement qu’elle reçoit ce soir-là révèle les barrières qui entourent encore cette reconnaissance à Hollywood."
+            }
+          ]
+        },
+        "de": {
+          "title": "Gone with the Wind",
+          "subtitle": "Scarlett O’Haras Bindung an Tara überdauert die Umbrüche",
+          "summary": "Gone with the Wind begleitet Scarlett O’Hara durch den amerikanischen Bürgerkrieg und die Reconstruction. Der Film von 1939 verbindet ihren Kampf um Tara mit schwierigen Beziehungen. Seine Darstellung des sklavenhaltenden Südens gehört zu seinem umstrittenen Vermächtnis.",
+          "cards": [
+            {
+              "card_id": "main:0",
+              "heading": "Scarletts Leben zwischen Bürgerkrieg und Reconstruction",
+              "text": "Gone with the Wind ist die 1939 erschienene Verfilmung von Margaret Mitchells Roman, produziert von David O. Selznick und inszeniert von Victor Fleming. Vivien Leigh spielt Scarlett O’Hara, die entschlossene Tochter eines Plantagenbesitzers aus Georgia, deren bisheriges Leben durch den amerikanischen Bürgerkrieg und die anschließende Reconstruction aus den Fugen gerät. Ihre Bindung an Tara, das Familienanwesen, bleibt über diese Veränderungen hinweg bestehen. Der Film bettet die persönliche Geschichte in eine weit angelegte historische Darstellung ein."
+            },
+            {
+              "card_id": "main:1",
+              "heading": "Das gerettete Zuhause und die beschädigten Beziehungen",
+              "text": "Scarletts Werben um Ashley Wilkes und ihre schwierige Beziehung zu Rhett Butler entwickeln sich inmitten von Schlachten, Vertreibung und dem Kampf um den Erhalt Taras. Farbe, dicht bevölkerte Szenen und große Schauplätze machen das Ausmaß der Umbrüche sichtbar. Max Steiners wiederkehrendes Tara-Thema verleiht ihrer Bindung an das Land einen musikalischen Ausdruck. Scarletts Einfallsreichtum treibt die Handlung voran. Doch die Entscheidungen, mit denen sie sich Sicherheit verschaffen will, beschädigen oft gerade die Beziehungen, von denen sie ihr Glück erwartet."
+            },
+            {
+              "card_id": "main:2",
+              "heading": "Hattie McDaniels Oscar in einer segregierten Filmindustrie",
+              "text": "Das romantisierende Bild des sklavenhaltenden Südens und die rassistischen Stereotype des Films gehören zu seinem historischen Vermächtnis. Hattie McDaniel gewann 1940 für ihre Darstellung der Mammy als erste Schwarze Darstellerin einen Oscar in einer Wettbewerbskategorie. Bei der von Rassentrennung geprägten Verleihung saßen sie und ihr Begleiter getrennt von den übrigen Nominierten des Films. Der Preis würdigte ihre Arbeit, während ihre Behandlung bei der Veranstaltung die Grenzen dieser Anerkennung im damaligen Hollywood offenlegte."
+            }
+          ]
+        },
+        "es": {
+          "title": "Gone with the Wind",
+          "subtitle": "El vínculo de Scarlett O’Hara con Tara sobrevive a los cambios",
+          "summary": "Gone with the Wind sigue a Scarlett O’Hara durante la guerra de Secesión y la Reconstrucción. La película de 1939 entrelaza su lucha por conservar Tara con relaciones turbulentas, mientras su visión del Sur esclavista forma parte de un legado controvertido.",
+          "cards": [
+            {
+              "card_id": "main:0",
+              "heading": "La vida de Scarlett entre la guerra y la Reconstrucción",
+              "text": "Gone with the Wind es la adaptación cinematográfica de 1939 de la novela de Margaret Mitchell, producida por David O. Selznick y dirigida por Victor Fleming. Vivien Leigh interpreta a Scarlett O’Hara, la decidida hija de un propietario de plantaciones de Georgia, cuya vida cambia radicalmente con la guerra de Secesión y la Reconstrucción. Su apego a Tara, el hogar familiar, perdura a través de esos cambios. La película sitúa esta historia personal en un amplio marco histórico."
+            },
+            {
+              "card_id": "main:1",
+              "heading": "La casa que salva y las relaciones que daña",
+              "text": "El interés de Scarlett por Ashley Wilkes y su difícil relación con Rhett Butler se desarrollan entre batallas, desplazamientos y la lucha por conservar Tara. El color, las escenas multitudinarias y los grandes escenarios hacen visible la dimensión de esos cambios. El tema recurrente de Tara, compuesto por Max Steiner, expresa mediante la música su vínculo con la tierra. La capacidad de Scarlett para encontrar soluciones impulsa la historia, pero sus decisiones para asegurarse el futuro suelen dañar las relaciones de las que espera obtener la felicidad."
+            },
+            {
+              "card_id": "main:2",
+              "heading": "El premio de Hattie McDaniel en una industria segregada",
+              "text": "La imagen romántica del Sur esclavista y los estereotipos raciales de la película forman parte de su legado histórico. En 1940, la interpretación de Mammy le valió a Hattie McDaniel el primer Óscar en una categoría competitiva otorgado a una intérprete negra. Durante la ceremonia, sometida a la segregación racial, ella y su acompañante se sentaron separados de los demás nominados de la película. El premio reconocía su trabajo, mientras el trato recibido aquella noche dejaba al descubierto las barreras que aún rodeaban ese reconocimiento en Hollywood."
+            }
+          ]
+        }
+      },
+      "features": [],
+      "issues": []
+    },
+    {
+      "entry_id": "history-1939-the-wizard-of-oz-1939-film",
+      "main": {
+        "feature_id": null,
+        "en": {
+          "title": "The Wizard of Oz",
+          "subtitle": "Fantasy, Technicolor and Judy Garland’s voice",
+          "summary": "The Wizard of Oz adapted L. Frank Baum’s fantasy as an MGM musical in 1939. Three-strip Technicolor shaped its imagined world, while Judy Garland’s performance and the music brought the film lasting recognition and Academy Awards.",
+          "cards": [
+            {
+              "card_id": "main:0",
+              "heading": "A fantasy world built through colour and music",
+              "text": "The Wizard of Oz is MGM’s 1939 musical adaptation of L. Frank Baum’s fantasy. Judy Garland leads a cast directed primarily by Victor Fleming, with songs composed by Harold Arlen, lyrics by Yip Harburg and a score adapted by Herbert Stothart. Three-strip Technicolor gives the imagined world its distinctive colour. The film received five Academy Award nominations and won for Over the Rainbow and Stothart’s score. Garland also received an Academy Juvenile Award for her work that year, including her performance in this film."
+            }
+          ]
+        },
+        "it": {
+          "title": "The Wizard of Oz",
+          "subtitle": "Il fantastico, il Technicolor e la voce di Judy Garland",
+          "summary": "The Wizard of Oz adatta il mondo fantastico di L. Frank Baum in un musical MGM del 1939. Il Technicolor a tre pellicole ne definisce l’immagine, mentre Judy Garland e la musica contribuiscono alla fama del film e ai suoi Oscar.",
+          "cards": [
+            {
+              "card_id": "main:0",
+              "heading": "Un mondo fantastico costruito con colore e musica",
+              "text": "The Wizard of Oz è il musical MGM del 1939 tratto dal mondo fantastico di L. Frank Baum. Judy Garland guida un cast diretto principalmente da Victor Fleming, con canzoni composte da Harold Arlen, testi di Yip Harburg e musica adattata da Herbert Stothart. Il Technicolor a tre pellicole conferisce a quel mondo immaginario colori caratteristici. Il film ottiene cinque candidature agli Oscar e vince per Over the Rainbow e per la partitura di Stothart. Garland riceve inoltre un Academy Juvenile Award per le interpretazioni di quell’anno, compresa quella nel film."
+            }
+          ]
+        },
+        "fr": {
+          "title": "The Wizard of Oz",
+          "subtitle": "Le fantastique, le Technicolor et la voix de Judy Garland",
+          "summary": "The Wizard of Oz adapte l’univers de L. Frank Baum en comédie musicale pour la MGM en 1939. Le Technicolor trichrome façonne son monde imaginaire, tandis que Judy Garland et la musique contribuent à sa renommée et à ses Oscars.",
+          "cards": [
+            {
+              "card_id": "main:0",
+              "heading": "Un monde imaginaire construit par la couleur et la musique",
+              "text": "The Wizard of Oz est l’adaptation musicale de l’univers de L. Frank Baum réalisée pour la MGM en 1939. Judy Garland tient le premier rôle dans une distribution dirigée principalement par Victor Fleming. Harold Arlen compose les chansons, Yip Harburg en écrit les paroles et Herbert Stothart adapte la partition. Le Technicolor trichrome donne au monde imaginaire ses couleurs caractéristiques. Le film obtient cinq nominations aux Oscars et remporte les prix pour Over the Rainbow et la musique de Stothart. Garland reçoit aussi un Academy Juvenile Award pour ses interprétations de l’année, dont celle de ce film."
+            }
+          ]
+        },
+        "de": {
+          "title": "The Wizard of Oz",
+          "subtitle": "Fantasie, Technicolor und Judy Garlands Stimme",
+          "summary": "The Wizard of Oz brachte L. Frank Baums Fantasiewelt 1939 als MGM-Musical ins Kino. Das Dreistreifen-Technicolorverfahren prägte die Bildwelt, während Judy Garlands Darstellung und die Musik zu anhaltender Anerkennung und mehreren Auszeichnungen der Academy beitrugen.",
+          "cards": [
+            {
+              "card_id": "main:0",
+              "heading": "Eine Fantasiewelt aus Farbe und Musik",
+              "text": "The Wizard of Oz ist MGMs Musicalverfilmung von L. Frank Baums Fantasiewelt aus dem Jahr 1939. Judy Garland führt die Besetzung an; Regie führte überwiegend Victor Fleming. Die Lieder stammen von Harold Arlen, die Texte von Yip Harburg und die musikalische Bearbeitung von Herbert Stothart. Das Dreistreifen-Technicolorverfahren verleiht der erfundenen Welt ihre charakteristische Farbigkeit. Der Film erhielt fünf Oscar-Nominierungen und gewann für Over the Rainbow sowie für Stotharts Filmmusik. Garland wurde außerdem mit einem Academy Juvenile Award für ihre Leistungen in diesem Jahr ausgezeichnet, zu denen auch ihre Rolle in diesem Film gehörte."
+            }
+          ]
+        },
+        "es": {
+          "title": "The Wizard of Oz",
+          "subtitle": "La fantasía, el Technicolor y la voz de Judy Garland",
+          "summary": "The Wizard of Oz adaptó el mundo fantástico de L. Frank Baum como un musical de MGM en 1939. El Technicolor de tres tiras definió su imagen, mientras Judy Garland y la música contribuyeron a su reconocimiento y a sus premios Óscar.",
+          "cards": [
+            {
+              "card_id": "main:0",
+              "heading": "Un mundo fantástico construido con color y música",
+              "text": "The Wizard of Oz es la adaptación musical del mundo de L. Frank Baum producida por MGM en 1939. Judy Garland encabeza un reparto dirigido principalmente por Victor Fleming, con canciones de Harold Arlen, letras de Yip Harburg y una partitura adaptada por Herbert Stothart. El Technicolor de tres tiras da al mundo imaginario sus colores característicos. La película recibió cinco nominaciones al Óscar y ganó por Over the Rainbow y por la música de Stothart. Garland obtuvo además un Academy Juvenile Award por sus interpretaciones de aquel año, incluida la de esta película."
+            }
+          ]
+        }
+      },
+      "features": [],
+      "issues": []
+    },
+    {
+      "entry_id": "history-1939-world-war-ii",
+      "main": {
+        "feature_id": null,
+        "en": {
+          "title": "World War II",
+          "subtitle": "A global conflict with an immense civilian toll",
+          "summary": "The Second World War brought the Allies and Axis powers into a global conflict involving nearly every country. Warfare, genocide, starvation and disease killed tens of millions, most of them civilians, before the Allied victory in 1945.",
+          "cards": [
+            {
+              "card_id": "main:0",
+              "heading": "The war’s origins, human cost and aftermath",
+              "text": "The Second World War, conventionally dated from 1 September 1939 to 2 September 1945, was fought between the Allies and the Axis powers. Nearly all the world’s countries participated, many committing their societies and economies to total war. It became the deadliest conflict in history. Estimates of the death toll range from around 60 million to more than 75 million, with civilians making up the majority. Massacres, starvation, disease and genocides, including the Holocaust, killed millions. After the Allied victory, Germany, Austria, Japan and Korea came under occupation, and German and Japanese leaders faced war-crimes trials.\n\nThe conflict grew from unresolved tensions after the First World War, the rise of fascism in Europe and militarism in Japan. Its background included Japan’s invasion of Manchuria in 1931, the Spanish Civil War, the outbreak of the Second Sino-Japanese War in 1937, and Germany’s annexations of Austria and the Sudetenland."
+            }
+          ]
+        },
+        "it": {
+          "title": "La seconda guerra mondiale",
+          "subtitle": "Un conflitto globale con un’immensa perdita di vite civili",
+          "summary": "La seconda guerra mondiale contrappone Alleati e potenze dell’Asse in un conflitto che coinvolge quasi tutti i paesi. Combattimenti, genocidi, fame e malattie uccidono decine di milioni di persone, soprattutto civili, prima della vittoria alleata del 1945.",
+          "cards": [
+            {
+              "card_id": "main:0",
+              "heading": "Le origini della guerra, le vittime e il dopoguerra",
+              "text": "La seconda guerra mondiale, convenzionalmente collocata fra il 1º settembre 1939 e il 2 settembre 1945, contrappone gli Alleati alle potenze dell’Asse. Vi partecipa quasi ogni paese del mondo e molti mobilitano società ed economia in una guerra totale. È il conflitto più letale della storia: le stime delle vittime vanno da circa 60 milioni a oltre 75 milioni, in maggioranza civili. Massacri, fame, malattie e genocidi, fra cui la Shoah, provocano milioni di morti. Dopo la vittoria alleata, Germania, Austria, Giappone e Corea vengono occupati, mentre dirigenti tedeschi e giapponesi sono processati per crimini di guerra.\n\nAlle origini del conflitto vi sono le tensioni rimaste irrisolte dopo la prima guerra mondiale, l’ascesa del fascismo in Europa e del militarismo in Giappone. Fra gli avvenimenti che lo precedono figurano l’invasione giapponese della Manciuria nel 1931, la guerra civile spagnola, l’inizio della seconda guerra sino-giapponese nel 1937 e le annessioni tedesche dell’Austria e dei Sudeti."
+            }
+          ]
+        },
+        "fr": {
+          "title": "La Seconde Guerre mondiale",
+          "subtitle": "Un conflit mondial au bilan civil immense",
+          "summary": "La Seconde Guerre mondiale oppose les Alliés aux puissances de l’Axe dans un conflit auquel participe presque chaque pays. Combats, génocides, famine et maladies tuent des dizaines de millions de personnes, surtout des civils, avant la victoire alliée de 1945.",
+          "cards": [
+            {
+              "card_id": "main:0",
+              "heading": "Les origines de la guerre, son bilan humain et ses suites",
+              "text": "La Seconde Guerre mondiale, généralement datée du 1er septembre 1939 au 2 septembre 1945, oppose les Alliés aux puissances de l’Axe. Presque tous les pays du monde y participent, beaucoup mobilisant leur société et leur économie dans une guerre totale. C’est le conflit le plus meurtrier de l’histoire. Les estimations vont d’environ 60 millions à plus de 75 millions de morts, en majorité des civils. Massacres, famine, maladies et génocides, dont la Shoah, font des millions de victimes. Après la victoire alliée, l’Allemagne, l’Autriche, le Japon et la Corée sont occupés, et des dirigeants allemands et japonais sont jugés pour crimes de guerre.\n\nLe conflit trouve ses origines dans les tensions non résolues après la Première Guerre mondiale, la montée du fascisme en Europe et celle du militarisme au Japon. Parmi ses antécédents figurent l’invasion japonaise de la Mandchourie en 1931, la guerre civile espagnole, le début de la seconde guerre sino-japonaise en 1937, ainsi que les annexions de l’Autriche et des Sudètes par l’Allemagne."
+            }
+          ]
+        },
+        "de": {
+          "title": "Der Zweite Weltkrieg",
+          "subtitle": "Ein globaler Konflikt mit unermesslichen Verlusten unter Zivilisten",
+          "summary": "Im Zweiten Weltkrieg standen sich die Alliierten und die Achsenmächte in einem globalen Konflikt gegenüber, an dem fast jedes Land beteiligt war. Kämpfe, Völkermord, Hunger und Krankheiten töteten bis zum alliierten Sieg 1945 Millionen Menschen, überwiegend Zivilisten.",
+          "cards": [
+            {
+              "card_id": "main:0",
+              "heading": "Ursachen, Opfer und Folgen des Krieges",
+              "text": "Der Zweite Weltkrieg wird gewöhnlich auf den Zeitraum vom 1. September 1939 bis zum 2. September 1945 datiert. Die Alliierten kämpften gegen die Achsenmächte, und nahezu alle Länder der Welt waren beteiligt. Viele mobilisierten Gesellschaft und Wirtschaft für einen totalen Krieg. Es wurde der tödlichste Konflikt der Geschichte. Schätzungen der Opferzahl reichen von etwa 60 Millionen bis zu mehr als 75 Millionen, überwiegend Zivilisten. Massaker, Hunger, Krankheiten und Völkermorde, darunter der Holocaust, forderten Millionen Menschenleben. Nach dem Sieg der Alliierten wurden Deutschland, Österreich, Japan und Korea besetzt; deutsche und japanische Führungspersonen mussten sich in Kriegsverbrecherprozessen verantworten.\n\nZu den Ursachen zählten ungelöste Spannungen nach dem Ersten Weltkrieg, der Aufstieg des Faschismus in Europa und der Militarismus in Japan. Zur Vorgeschichte gehörten Japans Einmarsch in die Mandschurei 1931, der Spanische Bürgerkrieg, der Beginn des Zweiten Japanisch-Chinesischen Krieges 1937 und die deutschen Annexionen Österreichs und des Sudetenlands."
+            }
+          ]
+        },
+        "es": {
+          "title": "La Segunda Guerra Mundial",
+          "subtitle": "Un conflicto global con una inmensa pérdida de vidas civiles",
+          "summary": "La Segunda Guerra Mundial enfrentó a los Aliados y las potencias del Eje en un conflicto que implicó a casi todos los países. Combates, genocidios, hambre y enfermedades mataron a decenas de millones de personas, sobre todo civiles, antes de la victoria aliada de 1945.",
+          "cards": [
+            {
+              "card_id": "main:0",
+              "heading": "Los orígenes de la guerra, sus víctimas y la posguerra",
+              "text": "La Segunda Guerra Mundial, fechada convencionalmente entre el 1 de septiembre de 1939 y el 2 de septiembre de 1945, enfrentó a los Aliados con las potencias del Eje. Participaron casi todos los países del mundo, muchos de ellos movilizando sus sociedades y economías para una guerra total. Fue el conflicto más mortífero de la historia. Las estimaciones oscilan entre unos 60 millones y más de 75 millones de muertos, en su mayoría civiles. Masacres, hambre, enfermedades y genocidios, entre ellos el Holocausto, causaron millones de muertes. Tras la victoria aliada, Alemania, Austria, Japón y Corea quedaron bajo ocupación, y dirigentes alemanes y japoneses fueron juzgados por crímenes de guerra.\n\nEl conflicto surgió de las tensiones sin resolver tras la Primera Guerra Mundial, el ascenso del fascismo en Europa y el militarismo en Japón. Entre sus antecedentes estuvieron la invasión japonesa de Manchuria en 1931, la guerra civil española, el inicio de la segunda guerra sino-japonesa en 1937 y las anexiones alemanas de Austria y los Sudetes."
+            }
+          ]
+        }
+      },
+      "features": [],
+      "issues": []
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "status": "PASS",
+  "locale": "it",
+  "entries": [
+    {
+      "entry_id": "workbook-11-08-death-stranding",
+      "source_fields_sha256": "01d061de7386c0f1f2f01b2d6ad17827feb9d45f0401b99b23909d03769d6554",
+      "translation_sha256": "8e9b695e50652519d7959fe88971667fe748ec5a1a79df8f96c66ce13314a1bc",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch312/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "857bf3c5324a9f2da87b74cfc5c98937d26a39eb22b344afbcff73c068a29361"
+    },
+    {
+      "entry_id": "wikipedia-57645522",
+      "source_fields_sha256": "8dc63457dee632ba8838faa9addef50dcab673315be9b6b03d8ddca4ce85287f",
+      "translation_sha256": "c13d520466045e4ff1b32738bc3bff5ec6662c6e8bb53c8aa935a1a2c3484205",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch312/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "857bf3c5324a9f2da87b74cfc5c98937d26a39eb22b344afbcff73c068a29361"
+    },
+    {
+      "entry_id": "the-game-awards-2019",
+      "source_fields_sha256": "ff69afc6aad2e29af24c981620e0e859760be485b40ac94503375616d474dd3a",
+      "translation_sha256": "3970a0cd03bdfc76913dc4c0044f08a4819d635e3e31d2ee4240ea25f9d0fb93",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch312/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "857bf3c5324a9f2da87b74cfc5c98937d26a39eb22b344afbcff73c068a29361"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "package_audit",
+    "actual_receipt": "build/research/catalog-2019-chronological/final-three-private/independent-package-audit-approval.json",
+    "actual_receipt_sha256": "2d9dcddb60da53af7c412ed225de49c34a42984af9afc134b398f1de8967355d",
+    "actual_review_scope": {
+      "status": "APPROVED_INDEPENDENT_PEER",
+      "reviewer": "package_audit",
+      "author": "editorial_continue",
+      "reviewed_at": "2026-10-27T03:41:07.059229",
+      "index": "build/research/catalog-2019-chronological/final-three-private/three-original-source-media-four-language-private-index.json",
+      "index_sha256": "d401a8b8baa405af0c7caeae8be6ec82dafb73ab8848a8e0dce5bf6c353dfdce",
+      "owners": [
+        {
+          "entry_id": "workbook-11-08-death-stranding",
+          "slug": "death-stranding",
+          "source": "build/research/catalog-2019-chronological/final-three-private/death-stranding/complete-original-source-media-private-candidate.json",
+          "source_sha256": "0705b58c4a68fda97e0659126af7fe80667803d4b27226801a527b45c20d171f",
+          "target": "build/research/catalog-2019-chronological/final-three-private/death-stranding/complete-four-language-private-candidate.json",
+          "target_sha256": "2a0a329df451c86dd906c0cc91854a9e615b5089e71fc2f66e3abd4589a7565b",
+          "contact": "build/research/catalog-2019-chronological/final-three-private/death-stranding/final-selected-media-contact.jpg",
+          "contact_sha256": "f7247a82ee6b1dee92bbb3681386cd528e5d924652630d0aef7fc85b46a9bfe7",
+          "english_cards": 7,
+          "localized_cards": 28,
+          "images": 9,
+          "tracks": 51,
+          "finite_errata": 1
+        },
+        {
+          "entry_id": "wikipedia-57645522",
+          "slug": "jedi",
+          "source": "build/research/catalog-2019-chronological/final-three-private/jedi/complete-original-source-media-private-candidate.json",
+          "source_sha256": "5361dfb748350d1112bc20a452c2cac64c255a9a32450ad0dbfd09e60df3ef6b",
+          "target": "build/research/catalog-2019-chronological/final-three-private/jedi/complete-four-language-private-candidate.json",
+          "target_sha256": "0d4040fe5fb5c8c630fb6426feb73fa990423a72c78e34db6df27886726373db",
+          "contact": "build/research/catalog-2019-chronological/final-three-private/jedi/final-selected-media-contact.jpg",
+          "contact_sha256": "56cfb861affb6936e26ec1f092191f809bc9c6f72afd402b4f202d01a69753db",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 4,
+          "tracks": 3,
+          "finite_errata": 0
+        },
+        {
+          "entry_id": "the-game-awards-2019",
+          "slug": "tga",
+          "source": "build/research/catalog-2019-chronological/final-three-private/tga/complete-original-source-media-private-candidate.json",
+          "source_sha256": "74487b8f842cb35b09a419868c0113afe8f5a4f2f4462d31c66a8cb4e7bc9cff",
+          "target": "build/research/catalog-2019-chronological/final-three-private/tga/complete-four-language-private-candidate.json",
+          "target_sha256": "578318b71732e1fbf4ee9f838a1cc24c41265ebd9c8470e853897a35e74ea9eb",
+          "contact": "build/research/catalog-2019-chronological/final-three-private/tga/final-selected-media-contact.jpg",
+          "contact_sha256": "3e52aff6549a8f9093d885db102ce825be51f75f67ace2071d1a5caf97e1a092",
+          "english_cards": 14,
+          "localized_cards": 56,
+          "images": 14,
+          "tracks": 0,
+          "finite_errata": 0
+        }
+      ],
+      "review_scope": {
+        "english_game_paragraphs_read": 10,
+        "localized_game_paragraphs_read": 40,
+        "final_contacts_personally_viewed": 3,
+        "images_in_contacts": 27,
+        "shared_tga_archive": "All 14 EN records, headings, images, sources, subtitle, summary and preferred_image exactly equal admitted 2018; all 56 locale paragraphs exactly equal independently approved 2018 candidate. Own ID/year/12 December 2019 date retained.",
+        "music": "51 Death Stranding and 3 Jedi track objects exactly equal current catalog; no redundant stream acquisition or playback claimed.",
+        "primary_references_read": [
+          "https://blog.playstation.com/archive/2017/02/23/the-hideo-kojima-death-stranding-interview-strands-decima-and-guerrilla-games/",
+          "https://blog.playstation.com/2019/05/29/death-stranding-available-november-8-on-ps4/",
+          "https://news.ea.com/press-releases/press-releases-details/2019/EA-and-Respawn-Announce-Star-Wars-Jedi-Fallen-Order-Will-Launch-November-15-2019/default.aspx"
+        ],
+        "finite_errata": "Death Stranding duplicate eighth Decima paragraph removed; retained paragraph distinguishes independent Kojima Productions and Sony-owned Guerrilla, consistent with primary interview. New translations read in all four languages.",
+        "hashes": "All nine candidate/target/contact hashes checked against actual bytes."
+      },
+      "findings": [],
+      "production_writes": false
+    }
+  }
+}

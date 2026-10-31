@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "audited_utc": "2026-10-21T01:34:35.486002+00:00",
+  "catalog_sha256_snapshot": "cbdc1b4ded0d636af2d2e80850a959303be3271bcff9ecc43bef3fbc85882bc8",
+  "snapshot_note": "Read-only audit snapshot; parent integration may change current master later. Counts use exactly the production-register distinct-destination rule.",
+  "counts": {
+    "raw_records": 1408,
+    "distinct_destinations": 1096,
+    "direct_reference_ids": 16,
+    "direct_reference_translation_pairs": 64,
+    "attached_features_english_only": 80
+  },
+  "runtime_locale_input_hashes_match": true,
+  "runtime_locale_output_hashes_match": true,
+  "language_coverage": {
+    "it": {
+      "distinct_destinations": 1096,
+      "with_original_base_override": 304,
+      "with_runtime_override": 320,
+      "english_base_fallback": 776,
+      "byte_identical_body_to_english_overrides": []
+    },
+    "es": {
+      "distinct_destinations": 1096,
+      "with_original_base_override": 304,
+      "with_runtime_override": 320,
+      "english_base_fallback": 776,
+      "byte_identical_body_to_english_overrides": []
+    },
+    "fr": {
+      "distinct_destinations": 1096,
+      "with_original_base_override": 304,
+      "with_runtime_override": 320,
+      "english_base_fallback": 776,
+      "byte_identical_body_to_english_overrides": []
+    },
+    "de": {
+      "distinct_destinations": 1096,
+      "with_original_base_override": 304,
+      "with_runtime_override": 320,
+      "english_base_fallback": 776,
+      "byte_identical_body_to_english_overrides": []
+    },
+    "pt": {
+      "distinct_destinations": 1096,
+      "with_original_base_override": 304,
+      "with_runtime_override": 304,
+      "english_base_fallback": 792,
+      "byte_identical_body_to_english_overrides": []
+    },
+    "ru": {
+      "distinct_destinations": 1096,
+      "with_original_base_override": 304,
+      "with_runtime_override": 304,
+      "english_base_fallback": 792,
+      "byte_identical_body_to_english_overrides": []
+    },
+    "uk": {
+      "distinct_destinations": 1096,
+      "with_original_base_override": 304,
+      "with_runtime_override": 304,
+      "english_base_fallback": 792,
+      "byte_identical_body_to_english_overrides": []
+    }
+  },
+  "separate_feature_coverage_note": "A translated original parent does not translate its new nested feature. No nested translations are admitted by the current reference overlay helper.",
+  "feasible_intervention": {
+    "scope": "Direct translations of these four complete illustrated English reference bodies/headings into it/es/fr/de, preserving exact source revision and field hashes through the existing separate overlay workflow.",
+    "candidates": [
+      {
+        "entry_id": "wikipedia-1055604",
+        "title": "Gun Fight",
+        "paragraphs": 3,
+        "headings": 3,
+        "english_words": 164,
+        "images": 1,
+        "body_sha256": "2122469371a35199c15cc14e8c0b90ed616305f593f00874491db2be952fd231",
+        "revision_url": "https://en.wikipedia.org/w/index.php?oldid=1376644487",
+        "revision_id": 1376644487,
+        "status": "candidate_only_no_translation_written_no_reservation"
+      },
+      {
+        "entry_id": "wikipedia-595917",
+        "title": "Space Harrier",
+        "paragraphs": 3,
+        "headings": 3,
+        "english_words": 247,
+        "images": 1,
+        "body_sha256": "7a4cb48f934fb120516bc51b4229e79fa406d831c7efff24ca51b5713722979a",
+        "revision_url": "https://en.wikipedia.org/w/index.php?oldid=1376671325",
+        "revision_id": 1376671325,
+        "status": "candidate_only_no_translation_written_no_reservation"
+      },
+      {
+        "entry_id": "wikipedia-1159581",
+        "title": "Ultima IV: Quest of the Avatar",
+        "paragraphs": 3,
+        "headings": 3,
+        "english_words": 156,
+        "images": 1,
+        "body_sha256": "38ade48d440869663904e9ef6a9dfc5b4a58980245a600d8dfc26786f3dd1339",
+        "revision_url": "https://en.wikipedia.org/w/index.php?oldid=1379892943",
+        "revision_id": 1379892943,
+        "status": "candidate_only_no_translation_written_no_reservation"
+      },
+      {
+        "entry_id": "wikipedia-15448272",
+        "title": "World of Goo",
+        "paragraphs": 3,
+        "headings": 3,
+        "english_words": 170,
+        "images": 1,
+        "body_sha256": "92625ecb5c4821f9e92a2a4c0e53fb0ea4a96b7e516ef9d5abf1029c44c06dcc",
+        "revision_url": "https://en.wikipedia.org/w/index.php?oldid=1370760711",
+        "revision_id": 1370760711,
+        "status": "candidate_only_no_translation_written_no_reservation"
+      }
+    ],
+    "excluded_source_bound_lanes": [
+      "content/expansion/calendar-template-revisions-curation.json",
+      "content/expansion/calendar-template-revisions-native-07.json",
+      "content/expansion/calendar-template-revisions-native.json",
+      "content/expansion/calendar-template-revisions-soundtrack.json",
+      "content/expansion/calendar-identity-corrections-02.json",
+      "content/expansion/calendar-identity-corrections-03.json",
+      "content/expansion/calendar-prose-restorations-05.json",
+      "content/expansion/editorial-systems-authors-06.json"
+    ],
+    "estimated_english_words": 737,
+    "estimated_target_words_basis": "Four direct language renditions, no new historical claims. No translation or native signoff claimed.",
+    "hook_changes": "Future explicit review/allowlist admission by parent; no current helper or locale changes."
+  },
+  "writes": "Only this new audit and companion notes; no catalog, original source, generated locale, assembler, runtime or console changes."
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Selective streamed culture recollections",
+  "type": "object",
+  "required": ["schema", "cues"],
+  "properties": {
+    "schema": {"const": 1},
+    "cues": {
+      "type": "array", "maxItems": 32,
+      "items": {
+        "type": "object",
+        "required": ["entry_id", "youtube_id", "start_seconds", "end_seconds", "kind", "reverb", "evidence"],
+        "properties": {
+          "entry_id": {"type": "string", "minLength": 1},
+          "youtube_id": {"type": "string", "pattern": "^[A-Za-z0-9_-]{11}$"},
+          "start_seconds": {"type": "number", "minimum": 0},
+          "end_seconds": {"type": "number", "exclusiveMinimum": 0},
+          "kind": {"enum": ["music", "voice"]},
+          "reverb": {"type": "boolean"},
+          "gain": {"type": "number", "exclusiveMinimum": 0, "maximum": 1},
+          "loudness": {"type": "object", "description": "Runtime RMS normalization policy or honestly measured source metadata; never invented measurements."},
+          "evidence": {"oneOf": [{"type": "string", "minLength": 1}, {"type": "object", "minProperties": 1}]}
+        },
+        "allOf": [{"if": {"properties": {"kind": {"const": "music"}}}, "then": {"properties": {"reverb": {"const": false}}}}]
+      }
+    }
+  },
+  "description": "Runtime additionally enforces unique entry_id, end > start, and a maximum 600-second passage. Streaming only, one Video service, no download assets."
+}

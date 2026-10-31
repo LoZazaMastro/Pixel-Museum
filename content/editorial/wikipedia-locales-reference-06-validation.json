@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "validated": "2026-10-21",
+  "validation_type": "translation_author_structural_source_hash_and_pure_integration_fixture_not_independent_language_approval",
+  "batch_file": "content/expansion/wikipedia-locales-reference-06.json",
+  "batch_sha256": "6f6acf10ad367cd846fde2b038a83f5316c5aab5e317cfed00c44d8f48a530d8",
+  "status": "authoring_validated_pending_independent_language_review_and_admission",
+  "source_catalog_sha256_snapshot": "d5812aa3a8ce0693ae26073bb72b23716dccfb1841a45a70ed26eb9fb34df92e",
+  "checks": {
+    "pure_join": true,
+    "source_entries": 4,
+    "translation_pairs": 16,
+    "body_paragraphs": 48,
+    "existing_headings": 48,
+    "all_preexisting_base_locale_entries_preserved": true,
+    "non_target_languages_unchanged": true,
+    "english_body_tamper_rejected": true,
+    "english_heading_tamper_rejected": true,
+    "translation_license_tamper_rejected": true,
+    "source_revision_tamper_rejected": true,
+    "paragraph_count_tamper_rejected": true,
+    "protected_playhub_locale_collision_rejected": true
+  },
+  "numeric_and_proper_names": "Authoring finalizer compared each paragraph decimal-value occurrence counter (thousands punctuation preserves the same decimal-value occurrence components), names, positions and all English source fields against the frozen and current reference. Written number meanings additionally read during translation.",
+  "pure_fixture_admission_only": "The helper allowlist was changed in memory for this fixture; no production allowlist, generated output, master or locale file was written.",
+  "human_or_native_signoff": false,
+  "native_parser_test_of_new_batch": false,
+  "tracked_inputs_sha256_unchanged": {
+    "content/catalog.json": "d5812aa3a8ce0693ae26073bb72b23716dccfb1841a45a70ed26eb9fb34df92e",
+    "content/expansion/integrate_wikipedia_locales.py": "b891d69be97908b8c60e650a0cbbd12adba2ddc1f4ad8a64bd0f7eeaef1ea2e5",
+    "content/locales/de.json": "84a7668aa1f3f1e07d2801b777c15ac396833cdcd1728681151d9d34e256dc76",
+    "content/locales/en.json": "1d21f1ce575882ea1783e1e0bbf5efb410f2fcfc884e6f6d0c3a41129bb67e23",
+    "content/locales/es.json": "c7b67d72f81f6e87f159587cb2d1f4bad9cf56c449742331f2dfcb9589e71330",
+    "content/locales/fr.json": "f1a80b27930a5c99255d44609f5b1063edf03e860bd5266bae0ea118ed530e8a",
+    "content/locales/it.json": "cce38707acf86cc4991177163af298504ed74cf4eb43e1e2ba4c485867a8e194",
+    "content/locales/pt.json": "09c55ece640b1fdf9cc36a4162df8f20732b1a20200993570ed01d12a22d6b80",
+    "content/locales/ru.json": "d9e986879c4803df7346c66acb2c5ec8b067b357ced7451bf53b0583a5aea7ca",
+    "content/locales/uk.json": "865c459662d6b045f5464168378afc55031558804e2d9b96d3f0006643084a97"
+  }
+}

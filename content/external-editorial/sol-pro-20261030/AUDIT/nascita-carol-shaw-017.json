@@ -1,0 +1,87 @@
+{
+  "schema": "pixel-museum-birth-date-research-v1",
+  "batch_id": "017-catalog",
+  "entry_id": "carol-shaw",
+  "person_name": "Carol Shaw",
+  "researched_on": "2026-10-29",
+  "status": "birth_date_resolved_at_year_precision",
+  "research_for_this_delivery_completed": true,
+  "reason_for_research": "La voce person è collocata nel 1982, anno di River Raid, senza una nascita nel testo o nei metadati. L’utente richiede una collocazione biografica basata sulla nascita e autorizza la ricerca autonoma delle date mancanti o dubbie.",
+  "original_metadata": {
+    "kind": "person",
+    "title": "Carol Shaw and River Raid",
+    "year_context_only": 1982,
+    "date_context_only": {
+      "month": 0,
+      "day": 0,
+      "precision": "year",
+      "region": ""
+    },
+    "event_semantics": ""
+  },
+  "verified_birth_date": "1955",
+  "birth_year": 1955,
+  "precision": "year",
+  "day_and_month_verified": false,
+  "sources": [
+    {
+      "title": "VC&G Interview: Carol Shaw, Atari’s First Female Video Game Developer",
+      "publisher": "Vintage Computing and Gaming / Benj Edwards",
+      "url": "https://www.vintagecomputing.com/index.php/archives/800/vcg-interview-carol-shaw-female-video-game-pioneer-2",
+      "source_type": "Intervista primaria: dichiarazione diretta di Carol Shaw",
+      "publication_date": "2011-10-12",
+      "accessed_on": "2026-10-29",
+      "locator": "Personal Background, prima domanda su quando e dove è nata",
+      "supports": "Shaw dichiara esplicitamente il 1955. La risposta non specifica giorno o mese.",
+      "already_referenced_in_input": true,
+      "title_caveat": "Il titolo bibliografico è conservato come pubblicato. Non viene usato per introdurre o avallare un primato femminile nel testo riscritto."
+    },
+    {
+      "title": "Finding Aid to the Carol Shaw Papers, 1960–2017",
+      "publisher": "Brian Sutton-Smith Library and Archives of Play, The Strong National Museum of Play",
+      "url": "https://www.museumofplay.org/app/uploads/2022/01/Finding-Aid-to-the-Carol-Shaw-papers_013122.pdf",
+      "source_type": "Guida archivistica ufficiale a una raccolta donata dall’interessata; nota biografica del museo",
+      "publication_date": "2022-01",
+      "accessed_on": "2026-10-29",
+      "locator": "Pagina 2, Biographical Note, riga iniziale",
+      "supports": "La nota biografica riporta il 1955 come anno di nascita, coerente con la dichiarazione diretta nell’intervista. Non aggiunge giorno o mese.",
+      "already_referenced_in_input": true
+    }
+  ],
+  "assessment": "Il 1955 è documentato direttamente dalla persona e confermato nella nota archivistica. La ricerca mirata non ha trovato una fonte attendibile per una data più precisa. Le date complete comparse in aggregatori privi di documentazione e i risultati relativi a omonime non sono stati adottati; non costituiscono motivo per sostituire la dichiarazione primaria con una nascita ipotetica.",
+  "selected_sources_conflict": false,
+  "text_action": "Nascita nel 1955 integrata in main:0 nelle cinque lingue; il 1982 resta l’anno di River Raid.",
+  "language_integration": {
+    "card_id": "main:0",
+    "languages": [
+      "en",
+      "it",
+      "fr",
+      "de",
+      "es"
+    ],
+    "precision": "year"
+  },
+  "metadata_action": {
+    "biographical_realignment_required": true,
+    "proposed_year_context_only": 1955,
+    "proposed_date_context_only": {
+      "month": 0,
+      "day": 0,
+      "precision": "year"
+    },
+    "proposed_event_semantics": "birth",
+    "status": "proposal_only_original_input_and_catalog_unchanged",
+    "reason": "Il profilo individuale include la progettazione e la conservazione del lavoro di Shaw; il 1982 identifica un’opera e non è documentato come avvenimento biografico a cui limitare la voce. L’approfondimento sul progetto conserva il proprio contesto storico.",
+    "original_input_modified": false,
+    "original_template_modified": false,
+    "catalog_modified": false
+  },
+  "issue_target_id": "carol-shaw",
+  "remaining_issue": null,
+  "next_batch_blocked": false,
+  "previous_audits": "Il controllo 001–014 resta concluso. Il caso Dona Bailey del lotto 016 resta irrisolto come già documentato: questa ricerca su Carol Shaw non lo riapre né lo risolve.",
+  "text_applied_in_all_five_languages": true,
+  "metadata_integration_pending": true,
+  "precision_note": "Collocazione biografica risolta al 1955 con precisione annuale; giorno e mese non sono affermati."
+}

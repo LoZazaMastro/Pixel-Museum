@@ -1,0 +1,202 @@
+{
+  "schema_version": 1,
+  "recorded_utc": "2026-10-22T09:31:43.279463+00:00",
+  "source": "Explicit user requests and verified implementation checkpoints; statuses distinguish local work from prior console deployments.",
+  "active_scope": "Continue chronological videogame editorial, existing-prose illustration, requested cover and soundtrack corrections, recent major-game coverage, and offline full-package verification. PS5 powered off: no FTP. Prepare the final FileZilla folder when complete or remaining usage reaches 2 percent. Leave the PC on: the user revoked shutdown on 2026-10-23.",
+  "shutdown_allowed": false,
+  "requests": [
+    {
+      "id": "timeline-same-year-selection",
+      "status": "technical_build_deployed_sha256_verified_physical_test_pending",
+      "request": "When switching between gaming and culture timelines without changing the year, restore the previously selected gaming entry, not the first game of that year. When the year actually changes, select the nearest appropriate entry as before."
+    },
+    {
+      "id": "experience-haptics",
+      "status": "technical_build_deployed_sha256_verified_physical_test_pending",
+      "request": "Every interactive experience must provide meaningful haptic feedback for its interactions."
+    },
+    {
+      "id": "flight-controls",
+      "status": "technical_build_deployed_sha256_verified_physical_test_pending",
+      "request": "At experience start, clearly show that the player moves the controller and must hold it still for initial calibration/start. Correct both inverted gyro axes (up/down and left/right). Make the tunnel at least ten times longer, gradually reaching twice the initial speed over progression; space portals sufficiently to keep it achievable."
+    },
+    {
+      "id": "invaders-score",
+      "status": "technical_build_deployed_sha256_verified_physical_test_pending",
+      "request": "Award points for every enemy spaceship destroyed in Space Invaders."
+    },
+    {
+      "id": "touch-pong-arkanoid-score",
+      "status": "technical_build_deployed_sha256_verified_physical_test_pending",
+      "request": "Add touchpad control to both Pong and Arkanoid. Add scoring to Arkanoid; preserve existing Pong scoring."
+    },
+    {
+      "id": "sonic-loops-rings-finish",
+      "status": "technical_build_deployed_sha256_verified_physical_test_pending",
+      "request": "Create a recognizably Sonic-style 2D level, beyond movement alone: tunnels, loops, typical ring arrangements and a spinning end-of-level sign."
+    },
+    {
+      "id": "mario-square-run-elements",
+      "status": "technical_build_deployed_sha256_verified_physical_test_pending",
+      "request": "Create a recognizably Super Mario-style level: pipes, hold the Square button to run faster, typical coin placements, and a tall finish flagpole. Attach the character to the pole and award more points for reaching a higher position."
+    },
+    {
+      "id": "experience-options-pause",
+      "status": "technical_build_deployed_sha256_verified_physical_test_pending",
+      "request": "For every experience, Options opens a pause menu with Continue and Exit experience. Exit through this menu; keep Square available for gameplay rather than exiting. Render controller buttons with icons in the interface."
+    },
+    {
+      "id": "jump-workshop-difficulty",
+      "status": "technical_build_deployed_sha256_verified_physical_test_pending",
+      "request": "Make jump-workshop obstacles challenging enough to require experimenting with the movement parameters, while keeping them achievable rather than impossible."
+    },
+    {
+      "id": "lawson-concept",
+      "status": "technical_build_deployed_sha256_verified_physical_test_pending",
+      "request": "Reconsider the Jerry Lawson experience: its current concept does not make sense to the user. Develop a meaningful connection to his work instead of retaining an arbitrary activity.",
+      "resolution": "Arbitrary cartridge-rules activity withdrawn from published experience catalogue. Article retained; a genuinely relevant replacement remains deferred, not claimed finished."
+    },
+    {
+      "id": "celeste-portal-levels",
+      "status": "technical_build_deployed_sha256_verified_physical_test_pending",
+      "request": "Add multiple additional levels to both Celeste and Portal experiences."
+    },
+    {
+      "id": "remove-nine-series",
+      "status": "technical_build_deployed_sha256_verified_physical_test_pending",
+      "request": "Remove all games in the 9-nine series from the museum, including related references and aliases. Do not implement this removal in the urgent culture-only packaging fix.",
+      "evidence": "build/research/requested-catalog-music-corrections/isolated-proof.json"
+    },
+    {
+      "id": "ffvii-rebirth-english-tracknames",
+      "status": "technical_build_deployed_sha256_verified_physical_test_pending",
+      "request": "Use English track names instead of Japanese titles for Final Fantasy VII Rebirth and other affected soundtracks. Keep the actual recordings; verify English titles rather than inventing names.",
+      "resolution": "All 357 affected track display titles now use documented English publisher names:147 Rebirth and210 across ten other albums. No Japanese display track names remain. Original recordings, playlist order and credits unchanged.",
+      "evidence": "build/research/requested-catalog-music-corrections/remaining-english-names/localized210-assembly-runtime-proof.json"
+    },
+    {
+      "id": "god-of-war-reboot-track-cover",
+      "status": "technical_build_deployed_sha256_verified_physical_test_pending",
+      "request": "The first track in the first Norse God of War reboot soundtrack is a cover. Replace it with the original recording when usage is restored. User called the game the 2016 reboot; target the first Norse game, God of War (2018), not the 2005 Greek game.",
+      "user_note": "First track is a cover; replace with the original recording later.",
+      "canonical_game": "God of War (2018)",
+      "resolution": "The Sony Soundtracks original 2018 main theme is first. The user-rejected Farewell to Faye alternate recording is removed; remaining original recordings are preserved.",
+      "evidence": "build/research/requested-catalog-music-corrections/gow-original-ytdlp.json"
+    },
+    {
+      "id": "timeline-wrap-stability-text-scale",
+      "status": "technical_build_deployed_sha256_verified_physical_test_pending",
+      "request": "Keep each timeline title on the same number of lines when selection changes. Do not squeeze an unfocused title into two lines when its focused version fits on one line. Slightly scale down unfocused title/date elements instead of changing their wrapping; ensure smooth, stable browsing."
+    },
+    {
+      "id": "optional-local-streaming-onboarding",
+      "status": "standby_explicit_user_until_editorial_plan_and_corrections_complete",
+      "request": "Only if straightforward and safe: after language selection offer illustrated animated Local versus Streaming experience. Local shows approximate PS5 space required, downloads images/content for minimal subsequent loads. Streaming uses longer loads but no additional persistent content storage. Download view has attractive progress bar and background squares appearing/disappearing. Keep video/music streamed. Do not implement if it requires a major rewrite or destabilizes current work; first inspect existing cache/network paths. Do not promise literally zero loading or zero runtime storage. User clarified: bundle converted/required files, offer download/streaming only for eligible direct online assets; settings can switch modes, deleting downloaded optional contents when returning to streaming and downloading them when selecting local. Explicitly keep all of this in standby until the entire editorial plan and corrections are complete."
+    },
+    {
+      "id": "video-preview-thumbnails",
+      "status": "secondary_polish_not_blocking_critical_corrections",
+      "request": "Some videos lack preview thumbnails. Verify effective native video-card poster associations and local thumbnails; user explicitly said this is not serious, so prioritize editorial completeness and important corrections first."
+    },
+    {
+      "id": "restore-4k-console-render",
+      "request": "Restore console 3D rendering to native4K display density; user rejects aliasing at1080. Keep the heavy-model GPUtexture budget/memory fix and avoid CPU framebuffer blits.",
+      "status": "in_progress_local_not_installed"
+    },
+    {
+      "id": "remove-gamecube-3d",
+      "request": "Remove GameCube 3D from the application and use a faithful transparent PNG cover instead. Preserve source originals in research/archive.",
+      "status": "in_progress_local_not_installed"
+    },
+    {
+      "id": "transparent-console-fallbacks",
+      "request": "Every console without a3Dmodel uses a high-quality PNG of the hardware on transparent background, without decorative frames. Current inventory Odyssey/GBA/originalDS/Xbox360 plusGameCube.",
+      "status": "in_progress_local_not_installed"
+    },
+    {
+      "id": "remove-rear-console-cables",
+      "request": "Remove rear cables from PS1 and N64 display models by selecting authored console/controller nodes while preserving ports, geometry and materials. PS1local selection ready; N64 dedicated n64_cables subtree identified.",
+      "status": "in_progress_local_not_installed"
+    }
+  ],
+  "recording_note": "Original requests retained. The current complete offline package is not yet ready; PS5 is off and delivery is manual FileZilla.",
+  "release_objective": "Definitive complete editorial plan and corrections first; physical PS5 validation required before claiming perfect operation. Streaming explicitly on standby until then.",
+  "technical_checkpoint": {
+    "elf_sha256": "2e7f64d8d7617ff0fba570abfcb6de7743eb875041f9a384576bab1195690eb4",
+    "self_sha256": "e47a59014f5598e1baa7b0fc6bd1539bfce928874253cb870a080f0b222421a4",
+    "receipt": "build/verified-executable/receipt.json",
+    "three_d_policy": "3840x1920 antialiased transparent object stage in4K UI. Async models estimated above768MiB use role-specific GPU mip chains capped2048. Original GLBs retained. Physical120FPS3D not verified.",
+    "physical_validation_pending": true,
+    "editorial_app_complete": false,
+    "deployment_receipt": "Previous deployment only: build/research/critical-corrections-staging/deployment-verified-ftp.json"
+  },
+  "stop_rule": "Continue until actual completion or usage remaining <=2 percent. Build and verify the full local dist/PPSA70421 folder; no FTP while PS5 is off. Leave the PC on. The user revoked shutdown and removed the Explorer-transfer dependency on 2026-10-23.",
+  "translation_next_phase": "After all English editorial and correction work is finished, translate all supported app content, interface, onboarding and experience instructions into Italian, Spanish, French and German, as requested on 2026-10-23. Do not treat partial projections as complete translations.",
+  "latest_display_corrections": {
+    "culture_titles": "35 visible titles cleaned:18film disambiguations+17redundant event years; actual numeric work titles retained; native343projectionPASS",
+    "culture_under_image_credit": "HardcodedWikipedia label removed; attribution metadata remains accessible in Credits; nativecompilePASS",
+    "rita_selected_portrait": "Exact user-selected original portrait integrated in culture timeline; local offline package pending",
+    "native_4k_build": "Current signed executable: build/verified-executable/receipt.json. Local only, not deployed.",
+    "usage": "21percent used/79percent remaining at latest check; not a stopping threshold"
+  },
+  "new_requested_exhibits": [
+    {
+      "title": "Nintendo Museum",
+      "event": "Opening in Uji, Kyoto",
+      "status": "Integrated complete illustrated local article; current1352nativecomposition reviewed; finalpackagepending",
+      "chronology_policy": "Continue oldest-to-newest editorial review; queue at actualopeningdate",
+      "date": "2024-10-02",
+      "primary_source": "https://www.nintendo.co.jp/corporate/release/en/2024/240820.html"
+    },
+    {
+      "title": "Super Nintendo World",
+      "event": "Original Osaka opening",
+      "status": "Integrated complete illustrated local article; current1352nativecomposition reviewed; finalpackagepending",
+      "chronology_policy": "Continue oldest-to-newest editorial review; queue at actualopeningdate",
+      "date": "2021-03-18",
+      "primary_source": "https://www.usj.co.jp/company/news/2021/0318/"
+    }
+  ],
+  "editorial_method_current": {
+    "order": "Strict catalog chronological oldest-to-newest, beginning Nintendo1889",
+    "first_pass": "Redistribute existing exact paragraph blocks among existing relevant images; remove orphan image-only cards where prose can accompany them; avoid new prose research.",
+    "second_pass": "Only genuine missing images prompt targeted visual research; further content research only after redistribution reveals real gaps.",
+    "owners": {
+      "root": "Native QA, packaging, exact requested cover review and coordination",
+      "experience_corrections": "Sole catalog assembler; missing recentmajor games and Nintendoexhibits",
+      "timeline_corrections": "Chronological illustration gaps, actual native composition and independent peers",
+      "catalog_music_corrections": "Soundtrack expansion and chronological illustration gaps during YouTube metadata cooldown"
+    },
+    "chronological_frontier": "Nintendo1889 and earlypersonalities reviewed; Mabel1964 candidate awaitingpeer; Tecmo1967 and1970s genuineimagegaps underreview. No global completion claim.",
+    "new_native_elf": "2e7f64d8d7617ff0fba570abfcb6de7743eb875041f9a384576bab1195690eb4",
+    "kojima_requested_video": "LaUtp1vkpnM replaces first clip; Hamiltonremoved; all11bodyparagraphsretained"
+  },
+  "chronological_media_review_flags": [
+    {
+      "entry": "pac-man",
+      "issue": "Existing cabinet asset identified as modern Arcade1Up reproduction. Replace with actual1980cabinet/flyer or honest reconstructionlabel when chronologicalreview reachesentry.",
+      "status": "Flagged; removed from Iwatani candidate, currentPacManownerstillpending"
+    },
+    {
+      "entry": "daily-09-23",
+      "issue": "Playhub nintendo-7alpha depicts1979BlockKuzushi, not1977ColorTVGame6.",
+      "status": "Rejectedfor1977slot; realTVGame15PNG sourcedandpeerreviewed"
+    }
+  ],
+  "et_requested_story": {
+    "entry_id": "wikipedia-106289",
+    "status": "Source-admitted existing-prose illustrated history and2linkedfilms; local verification receipts in build/research/et1982-desert-existing-story; final full package pending",
+    "requirement": "ActualAtari2600releasecontext,1983Alamogordoburial,2014excavation, meaningfulvideos; no inventedexactreleaseday",
+    "verified_current_body_paragraphs": 4,
+    "verified_current_video_count": 2
+  },
+  "delivery_override": {
+    "source": "Latest explicit user instruction, 2026-10-23",
+    "console": "PS5 powered off; do not use FTP",
+    "delivery": "Complete local dist/PPSA70421 folder for manual FileZilla import, with instructions outside payload",
+    "shutdown": "Do not shut down the PC; user explicitly revoked shutdown on 2026-10-23.",
+    "preferences": "Preserve console /download0/pixelmuseum/preferences.json",
+    "shutdown_transfer_guard": "No shutdown and no transfer dependency; user explicitly removed both on 2026-10-23.",
+    "pending_transfer_application": "No longer relevant to this task; do not interrupt or alter the Explorer transfer."
+  }
+}

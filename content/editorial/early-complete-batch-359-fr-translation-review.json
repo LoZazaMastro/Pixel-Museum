@@ -1,0 +1,108 @@
+{
+  "status": "PASS",
+  "locale": "fr",
+  "entries": [
+    {
+      "entry_id": "wikipedia-72449126",
+      "source_fields_sha256": "44cf6b398a5767d508bf93febd3571fe9cad360b469ba5f266a7fbe0bc093afb",
+      "translation_sha256": "213612ce01fc9b6395e452b4784c9fd2ab564df943899eef7bb1b857c9c9838c",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch359/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "142c07118b2191eda1e6f36bbe3df1a1171c16edb7c156b0c54cac298ed3f4a1"
+    },
+    {
+      "entry_id": "wikipedia-74817120",
+      "source_fields_sha256": "33991d2a51abb9983373f63240fbfaa8842d27d5dda4b2aeb9f28cbeffa8d64c",
+      "translation_sha256": "ba10e0bd6b11857def1f01d4a84eeb2e47da82083e2595161717bf8f5ff7fd8d",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch359/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "142c07118b2191eda1e6f36bbe3df1a1171c16edb7c156b0c54cac298ed3f4a1"
+    },
+    {
+      "entry_id": "wikipedia-73499260",
+      "source_fields_sha256": "39ce41d66b13d6d642f5d0bf89c42704ba666d22fa743f78b9cc85e388a7768e",
+      "translation_sha256": "9c56779a4db68801cf31ce131459a47a094eea5b31c17284f1f76012c703efa2",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch359/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "142c07118b2191eda1e6f36bbe3df1a1171c16edb7c156b0c54cac298ed3f4a1"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "/root/package_audit",
+    "actual_receipt": "build/research/catalog-2023-chronological/august-september-three-private/independent-package-audit-approval.json",
+    "actual_receipt_sha256": "d4b51e6de08c8b59f95a4543afa8583f0f30dd33c4e35148640756e6838c16ec",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "/root/package_audit",
+      "author": "/root/category_audit",
+      "independent": true,
+      "index_sha256": "ab99a8847857ffd4d7337cb3033f601f6993e12ab14968872bf05e885450728f",
+      "owners": [
+        {
+          "entry_id": "wikipedia-72449126",
+          "slug": "armored",
+          "source": "build/research/catalog-2023-chronological/august-september-three-private/armored-source-private-candidate.json",
+          "source_sha256": "4d0b2cae2b0f750df0d03ca3fc7b5bafe510896eb8abdf6b11eff5c622994229",
+          "target": "build/research/catalog-2023-chronological/august-september-three-private/armored-four-language-private-candidate.json",
+          "target_sha256": "d0d1e0ede19ed3b1449095ff50059eef3344452b462d40c1e3adc96d7ee8274a",
+          "contact": "build/research/catalog-2023-chronological/august-september-three-private/armored-final-contact.jpg",
+          "contact_sha256": "f1f5f4c2d8c6f8f176504c6032e58237350d91077d66b2a5c312cdffe42a15f1",
+          "english_cards": 2,
+          "localized_cards": 8,
+          "images": 5,
+          "tracks": 3
+        },
+        {
+          "entry_id": "wikipedia-74817120",
+          "slug": "sennaar",
+          "source": "build/research/catalog-2023-chronological/august-september-three-private/sennaar-source-private-candidate.json",
+          "source_sha256": "0fe5655dc05b56322a2f170ed40de2e2bdbe1726792dd572836964bcaf7235cd",
+          "target": "build/research/catalog-2023-chronological/august-september-three-private/sennaar-four-language-private-candidate.json",
+          "target_sha256": "4af82605ab13bfeb7b377c27738e4f2a72bfee48b769bacb3db3e4f17a35b07d",
+          "contact": "build/research/catalog-2023-chronological/august-september-three-private/sennaar-final-contact.jpg",
+          "contact_sha256": "db13edc7e185700ea83e836bab24e5020d8f9fad1a79b3751dff23756440f4e2",
+          "english_cards": 2,
+          "localized_cards": 8,
+          "images": 5,
+          "tracks": 3
+        },
+        {
+          "entry_id": "wikipedia-73499260",
+          "slug": "lies",
+          "source": "build/research/catalog-2023-chronological/august-september-three-private/lies-source-private-candidate.json",
+          "source_sha256": "65926ac9a153eeee66e5bfbef569d682df7042a7117a1495f75f2188839242a4",
+          "target": "build/research/catalog-2023-chronological/august-september-three-private/lies-four-language-private-candidate.json",
+          "target_sha256": "89c916b331af01a3afe3db83141a5c62b91a904916a0c8be7c9be346ee6b6523",
+          "contact": "build/research/catalog-2023-chronological/august-september-three-private/lies-final-contact.jpg",
+          "contact_sha256": "f104405976da8e80804f4677d3759481bce51569241eb331d2f2187b6d776f84",
+          "english_cards": 4,
+          "localized_cards": 16,
+          "images": 8,
+          "tracks": 3
+        }
+      ],
+      "scope": {
+        "english_paragraphs_read": 8,
+        "localized_paragraphs_read": 32,
+        "selected_images_actually_viewed": 18,
+        "final_contacts_actually_viewed": 3,
+        "existing_music_objects_verified_exact": 5,
+        "new_recording_metadata_read": 4,
+        "additional_vocal_credit_evidence_read": 1,
+        "old_audio_not_refetched": true
+      },
+      "findings": [],
+      "observations": [
+        "Read all8English paragraphs/final five fields and all32localizations; date/edition qualifications in LiesofP retained accurately.",
+        "Personally viewed all18selected images. Covers are unbranded, actual-game and critical-acclaim artwork are correctly distinguished. Overture2025 snow scene belongs solely to its later-expansion paragraph.",
+        "Read four new publicAAC recording metadata: ContactWithYou original2023NexTone242s, and three LiesofP NHNBUGS/NEOWIZ original2023album recordings. Composer/collective team and SeoJayeong vocalist roles are not confused. Her separate LIVE video is evidence only and is not selected for playback.",
+        "Checked real Nintendo August6,2026 CompleteEdition listing and original developer Rundisc glyph/Babel/stealth account. Existing NOUGH name verified as genuine against NEOWIZ original August7,2026 press release on GamesPress and Japanese publisher announcement; no speculative removal of current facts."
+      ],
+      "primary_sources_read": [
+        "https://www.rundisc.io/chants-of-sennaar/",
+        "https://www.nintendo.com/en-gb/News/2026/August/Nintendo-eShop-Highlights-06-08-2026-3153637.html",
+        "https://www.gamespress.com/fr/NEOWIZ-and-NOUGH-Studio-Provide-an-Inside-Look-at-the-Development-of-L",
+        "https://prtimes.jp/main/html/rd/p/000001867.000010988.html"
+      ],
+      "production_writes": false
+    }
+  }
+}

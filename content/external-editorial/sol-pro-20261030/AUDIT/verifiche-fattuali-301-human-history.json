@@ -1,0 +1,663 @@
+{
+  "batch_id": "301-human-history",
+  "sources": [
+    {
+      "source_id": "starwars",
+      "title": "Star Wars: Episode IV – A New Hope, Lucasfilm",
+      "url": "https://www.starwars.com/films/star-wars-episode-iv-a-new-hope",
+      "verification_scope": "Scheda ufficiale e risultati letti: uscita statunitense 25 maggio 1977 e identità del film. Cast e trama conservati dal materiale fornito."
+    },
+    {
+      "source_id": "suspiria_anica",
+      "title": "Suspiria, Appuntamento al Cinema / ANICA",
+      "url": "https://www.appuntamentoalcinema.it/film/suspiria/cast-tecnico",
+      "verification_scope": "Scheda professionale consultata: nelle sale dal 1 febbraio 1977, Italia; crediti tecnici."
+    },
+    {
+      "source_id": "suspiria_cineteca",
+      "title": "Suspiria, Cineteca Milano",
+      "url": "https://www.cinetecamilano.it/film/suspiria/",
+      "verification_scope": "Scheda ed estratti letti su trama, cast e trilogia. Ultima interpretazione di Bennett qualificata come lungometraggio cinematografico, senza escludere successivi lavori televisivi."
+    },
+    {
+      "source_id": "trs_catalog",
+      "title": "Radio Shack RSC-1 Computer Catalog, 1977",
+      "url": "https://colorcomputerarchive.com/coco/Documents/Catalogs/Radio%20Shack/RSC-1%20Computer%20Catalog%20%281977%29%28Radio%20Shack%29.pdf",
+      "verification_scope": "Estratti del catalogo originale: pacchetto da 599,95 dollari, BASIC in ROM, ordini con deposito e disponibilità subordinata alle scorte. Non dedotto il giorno di prima vendita dalla presentazione."
+    },
+    {
+      "source_id": "trs_press",
+      "title": "TRS-80 Model I, comunicato Tandy riprodotto",
+      "url": "https://www.trs-80.org/model-1/",
+      "verification_scope": "Consultato il testo del comunicato del 3 agosto 1977: annuncio distinto dalla successiva disponibilità. Conservata la precisione annuale."
+    },
+    {
+      "source_id": "voyager_jpl",
+      "title": "Voyager 1, NASA Jet Propulsion Laboratory",
+      "url": "https://www.jpl.nasa.gov/missions/voyager-1/",
+      "verification_scope": "Scheda ufficiale letta negli estratti: lancio 5 settembre 1977 e ingresso nello spazio interstellare nell'agosto 2012. Non affermato che tutti gli strumenti siano tuttora operativi."
+    },
+    {
+      "source_id": "voyager_interstellar",
+      "title": "Voyager Interstellar Mission, NASA",
+      "url": "https://science.nasa.gov/mission/voyager/interstellar-mission/",
+      "verification_scope": "Cronologia ufficiale: ingresso nello spazio interstellare 25 agosto 2012. Il testo usa mese e anno per correggere la formulazione ormai superata dell'INPUT."
+    },
+    {
+      "source_id": "laser_pioneer",
+      "title": "Pioneer History, 1980",
+      "url": "https://global.pioneer/en/corp/info/history/chronology/archives/1980/",
+      "verification_scope": "Archivio del produttore: ruolo successivo di Pioneer e VP-1000 nel giugno 1980. Non importata nel testo la data del lettore, assente dall'originale."
+    },
+    {
+      "source_id": "laser_philips",
+      "title": "The Emergence of the Compact Disc, Philips",
+      "url": "https://www.philips.com/c-dam/corporate/research/technologies/cd/The-Emergence-of-the-Compact-Disc_v2.pdf",
+      "verification_scope": "Estratti della ricostruzione tecnica: VLP analogico da 30 centimetri, dimostrazione 1972 e commercializzazione statunitense 1978. Non adottate altre date ambigue del documento."
+    },
+    {
+      "source_id": "laser_chm",
+      "title": "Optical laser disc player is demonstrated, Computer History Museum",
+      "url": "https://www.computerhistory.org/storageengine/optical-laser-disc-player-is-demonstrated/",
+      "verification_scope": "Contesto archivistico consultato su sviluppo Philips/MCA, DiscoVision e segnale analogico. La cronologia del prodotto Pioneer è stata verificata sul produttore, senza riprendere discrepanze della scheda."
+    },
+    {
+      "source_id": "laser_magnavox",
+      "title": "1978 Magnavision, Magnavox Historical Preservation Association",
+      "url": "https://magnavoxhistory.com/showcases/1978-magnavision/",
+      "verification_scope": "Scheda museale: disponibilità ad Atlanta nel dicembre 1978. Non adottato un giorno univoco a fronte della discordanza 11/15 dicembre nelle ricostruzioni; l'anno fornito rimane appropriato."
+    },
+    {
+      "source_id": "superman_afi",
+      "title": "Superman, AFI Catalog",
+      "url": "https://catalog.afi.com/Film/57040-SUPERMAN",
+      "verification_scope": "Scheda ed estratti consultati: apertura commerciale New York e Los Angeles 15 dicembre 1978, distinta dalle première precedenti. Conservati tutti gli sceneggiatori e gli interpreti dell'INPUT."
+    },
+    {
+      "source_id": "iran_archives",
+      "title": "Iran Hostage Crisis, National Archives",
+      "url": "https://www.archives.gov/research/foreign-policy/iran-hostage-crisis",
+      "verification_scope": "Cronologia istituzionale: partenza dello scià 16 gennaio, ritorno di Khomeini 1 febbraio, caduta della monarchia 11 febbraio, repubblica 1 aprile 1979. La voce complessiva conserva l'anno, senza fondere eventi diversi in un solo giorno."
+    },
+    {
+      "source_id": "iran_frus",
+      "title": "Foreign Relations of the United States, Iran, documento 31",
+      "url": "https://history.state.gov//historicaldocuments/frus1951-54IranEd2/d31",
+      "verification_scope": "Documento diplomatico originale consultato negli estratti: nazionalizzazione dell'industria petrolifera iraniana e Anglo-Iranian Oil Company. Non nazionalizzazione dell'intera società internazionale."
+    },
+    {
+      "source_id": "iran_cia",
+      "title": "The Agency and the Hill, CIA Center for the Study of Intelligence",
+      "url": "https://www.cia.gov/resources/csi/static/The-Agency-and-Hill.pdf",
+      "verification_scope": "Estratti della storia istituzionale: colpo di Stato del 1953, cooperazione britannica e ripristino del potere dello scià. Non importati giudizi politici del documento."
+    },
+    {
+      "source_id": "iran_company",
+      "title": "Anglo-Persian Oil Company, Encyclopaedia Iranica",
+      "url": "https://doi.org/10.1163/2330-4804_EIRO_COM_5455",
+      "verification_scope": "Ricostruzione storica consultata per denominazione Anglo-Iranian nel 1951 e precedente nome Anglo-Persian."
+    },
+    {
+      "source_id": "afghan_state_history",
+      "title": "The Soviet Invasion of Afghanistan and the U.S. Response, Department of State",
+      "url": "https://history.state.gov/milestones/1977-1980/soviet-invasion-afghanistan",
+      "verification_scope": "Cronologia consultata: conflitto civile già in corso dal 1978, invasione nel dicembre 1979 e conseguenze sulle relazioni internazionali. Eliminato il conteggio mobile di 47 anni."
+    },
+    {
+      "source_id": "afghan_state_deaths",
+      "title": "Background Note: Afghanistan, Department of State",
+      "url": "https://2009-2017.state.gov/outofdate/bgn/afghanistan/28624.htm",
+      "verification_scope": "Stima istituzionale esplicitamente attribuita: circa un milione di afghani morti fra 1979 e ritiro sovietico; ritiro completato nel febbraio 1989. Non presentata come conteggio esatto."
+    },
+    {
+      "source_id": "afghan_unhcr",
+      "title": "Afghanistan: 10 years after the Soviet pull-out, UNHCR",
+      "url": "https://www.unhcr.org/us/news/briefing-notes/afghanistan-10-years-after-soviet-pull-out",
+      "verification_scope": "Resoconto del 1999: milioni di rifugiati in Pakistan e Iran, con esodo iniziato prima dell'invasione. Nessun automatismo fra inizio guerra sovietica e inizio di tutto il conflitto afgano."
+    },
+    {
+      "source_id": "afghan_un",
+      "title": "UNGOMAP Background, United Nations",
+      "url": "https://peacekeeping.un.org/sites/default/files/past/ungomap/background.html",
+      "verification_scope": "Cronologia ONU letta: dicembre 1979 e ritiro nel 1989. La differenza tra ingresso delle truppe e rovesciamento del governo non viene ridotta a un giorno unico della voce complessiva."
+    },
+    {
+      "source_id": "wall_official",
+      "title": "Pink Floyd History, 1979",
+      "url": "https://archive.pinkfloyd.com/history/timeline_1979",
+      "verification_scope": "Timeline del gruppo: album nel Regno Unito il 30 novembre, negli Stati Uniti l'8 dicembre 1979. Il 30 novembre non è presentato come uscita simultanea mondiale."
+    },
+    {
+      "source_id": "wall_album",
+      "title": "The Wall, Pink Floyd",
+      "url": "https://www.pinkfloyd.com/albums/the-wall/",
+      "verification_scope": "Scheda del gruppo letta: progetto di Waters, tournée 1977, personaggio Pink e ruolo di Bob Ezrin."
+    },
+    {
+      "source_id": "wall_interview",
+      "title": "Roger Waters and David Gilmour discuss The Wall, Guitar World interviews",
+      "url": "https://www.guitarworld.com/features/interview-roger-waters-david-gilmour-discuss-making-wall-2000-guitar-world-interview",
+      "verification_scope": "Estratti delle interviste dirette a Waters, Gilmour ed Ezrin: struttura del progetto, difficoltà finanziarie e vicenda Wright. La data errata in un cappello editoriale non sostituisce l'archivio del gruppo."
+    },
+    {
+      "source_id": "wall_wright",
+      "title": "Musician, August 1988, Richard Wright interview, riproduzione",
+      "url": "https://www.brain-damage.co.uk/pink-floyd-band-interviews/august-1988-musician-magazine.html",
+      "verification_scope": "Testimonianza diretta riprodotta: allontanamento di Wright e successiva partecipazione alla tournée come musicista stipendiato."
+    },
+    {
+      "source_id": "walkman_sony",
+      "title": "Walkman 20th Anniversary, Sony, July 1999",
+      "url": "https://www.sony.com/en/SonyInfo/News/Press/199907/99-059/",
+      "verification_scope": "Comunicato del produttore: prima vendita giapponese il 1 luglio 1979, distinta dall'annuncio stampa del giugno precedente."
+    },
+    {
+      "source_id": "walkman_production",
+      "title": "Sony Retires Walkman in Japan, Associated Press, 25 October 2010",
+      "url": "https://www.manufacturing.net/industry40/news/13075737/sony-retires-walkman-in-japan",
+      "verification_scope": "Resoconto con dichiarazione diretta della portavoce Sony Hiroko Nakamura: produzione giapponese terminata nel 2010, produzione cinese per esportazione ancora attiva, circa 220 milioni venduti. Non dichiarata una cessazione mondiale nel 2010."
+    },
+    {
+      "source_id": "walkman_sony_history",
+      "title": "Sony History, The Walkman",
+      "url": "https://www.sony.com/en/SonyInfo/CorporateInfo/History/SonyHistory/2-03.html",
+      "verification_scope": "Storia aziendale consultata: estensione del marchio a cassette, CD, MiniDisc e lettori digitali; ingresso nell'Oxford English Dictionary nel 1986."
+    },
+    {
+      "source_id": "walkman_cd_sale",
+      "title": "CD Walkman D-EJ002 disponibile in tutti i colori, Sony shop TecStaff, 23 agosto 2014",
+      "url": "https://tecstaff.jp/cd%E3%82%A6%E3%82%A9%E3%83%BC%E3%82%AF%E3%83%9E%E3%83%B3%E3%80%8Ed-ej002%E3%80%8F%E3%81%8C%E5%85%A8%E8%89%B2%E5%9C%A8%E5%BA%AB%E5%BE%A9%E6%B4%BB-2.html",
+      "verification_scope": "Registrazione commerciale diretta del rivenditore: lettore CD Walkman ancora ordinabile nel 2014. Prova di vendita successiva al 2011, senza inferire una data di fabbricazione dalle scorte."
+    },
+    {
+      "source_id": "walkman_cd_archive",
+      "title": "D-EJ002, Sony product archive",
+      "url": "https://www.sony.jp/walkman/products/archive/D-EJ002/",
+      "verification_scope": "Pagina del produttore: identità CD Walkman del prodotto. L'attuale dicitura fuori produzione non stabilisce da sola il giorno di cessazione."
+    },
+    {
+      "source_id": "cassette_riaa",
+      "title": "Statistical Abstract of the United States 1985, table 381, RIAA data",
+      "url": "https://www2.census.gov/library/publications/1984/compendia/statab/105ed/1985-04.pdf",
+      "verification_scope": "Letto l'estratto della tabella RIAA sulle spedizioni domestiche: nel 1983 cassette 237 milioni, LP 209 milioni. Il confronto riguarda album in vinile negli Stati Uniti, non tutti i dischi inclusi i singoli né vendite mondiali."
+    },
+    {
+      "source_id": "walkman_effect",
+      "title": "The Walkman Effect, Shuhei Hosokawa, Popular Music 4 (1984), JSTOR",
+      "url": "https://www.jstor.org/stable/853362?item_view=read_online",
+      "verification_scope": "Consultata la scheda bibliografica e l'estratto, non l'articolo integrale. Termine già presente nel materiale; non aggiunta una nuova interpretazione teorica."
+    }
+  ],
+  "decisions": [
+    {
+      "target_id": "history-1977-star-wars-film",
+      "problem": "Ordine di uscita e cronologia narrativa sono diversi.",
+      "conclusion": "Identificato il film del 1977 come primo distribuito e quarto episodio della cronologia interna. Titolo proprio originale, titolo successivo, dieci interpreti e tutti gli elementi narrativi mantenuti.",
+      "source_ids": [
+        "starwars"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1977-suspiria",
+      "problem": "Precisare la fine della carriera di Bennett senza includere impropriamente ogni lavoro televisivo.",
+      "conclusion": "Ultimo lungometraggio per il cinema; conservati tutti i crediti, De Quincey 1845, trilogia e giudizio critico attribuito. Proposta data italiana da ANICA.",
+      "source_ids": [
+        "suspiria_anica",
+        "suspiria_cineteca"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1977-trs-80",
+      "problem": "Annuncio del 3 agosto non equivale a prima vendita.",
+      "conclusion": "Anno 1977 mantenuto. Conservati pacchetto da circa 600 dollari, BASIC ROM, Z80, rete commerciale, espansioni e problemi hardware.",
+      "source_ids": [
+        "trs_catalog",
+        "trs_press"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1977-voyager-1",
+      "problem": "L'INPUT presenta la sonda ancora diretta verso lo spazio interstellare.",
+      "conclusion": "Precisato l'ingresso nell'agosto 2012. Lancio del 5 settembre 1977 trattato come evento della missione, non nascita di una persona o release di un prodotto. Nessuna affermazione sul numero attuale di strumenti attivi.",
+      "source_ids": [
+        "voyager_jpl",
+        "voyager_interstellar"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1978-laserdisc",
+      "problem": "Ruolo delle aziende e successione dei nomi eccessivamente semplificati.",
+      "conclusion": "Distinti sviluppo Philips/MCA e successivo ruolo Pioneer. Mantenuti DiscoVision, LaserVision e origine del marchio LaserDisc senza attribuire una ridenominazione unilaterale a Pioneer. Segnale analogico e dimensioni conservati; anno 1978 appropriato.",
+      "source_ids": [
+        "laser_pioneer",
+        "laser_philips",
+        "laser_chm",
+        "laser_magnavox"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1978-superman-1978-film",
+      "problem": "Distinguere première e apertura cinematografica commerciale.",
+      "conclusion": "Proposto il 15 dicembre 1978 per New York e Los Angeles. Conservati quattro film Reeve, tutti i quattro sceneggiatori e tredici interpreti, origini e vicenda a Metropolis.",
+      "source_ids": [
+        "superman_afi"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1979-iranian-revolution",
+      "problem": "La nazionalizzazione non riguardava l'intera Anglo-Persian; denominazione anacronistica.",
+      "conclusion": "Precisata l'industria petrolifera iraniana e il nome Anglo-Iranian, già Anglo-Persian. Conservati ruolo CIA/MI6, Mossadegh, scià, Khomeini e conseguenze. Anno 1979 mantiene distinti caduta della monarchia e istituzione della repubblica.",
+      "source_ids": [
+        "iran_archives",
+        "iran_frus",
+        "iran_cia",
+        "iran_company"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1979-soviet-afghan-war",
+      "problem": "Inizio del conflitto, conteggio mobile di anni, causalità della fine della distensione e ampia stima dei morti richiedono rettifica.",
+      "conclusion": "Invasione come fase di una guerra civile già in corso; nessun conteggio mobile. Conseguenze internazionali attribuite all'invasione e alle risposte. Conservato il dettaglio quantitativo attraverso una stima di circa un milione esplicitamente attribuita al Dipartimento di Stato. Tutti i paesi sostenitori, Operation Cyclone, arabi afghani e rifugiati mantenuti.",
+      "source_ids": [
+        "afghan_state_history",
+        "afghan_state_deaths",
+        "afghan_unhcr",
+        "afghan_un"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1979-the-wall",
+      "problem": "Data regionale e ruolo di Wright da distinguere.",
+      "conclusion": "30 novembre 1979 specificato come uscita britannica. Preservati Pink, Waters, Barrett, 1977, Ezrin, difficoltà personali/finanziarie e Wright stipendiato per la tournée.",
+      "source_ids": [
+        "wall_official",
+        "wall_album",
+        "wall_interview",
+        "wall_wright"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1979-walkman",
+      "problem": "Esclusività flash dal 2011 e fine mondiale nel 2010 sono inesatte; sorpasso delle cassette privo di mercato e misura.",
+      "conclusion": "Distinta cessazione giapponese da produzione cinese; documentata vendita di CD Walkman dopo il 2011. Conservati 220 milioni, anni Ottanta, aerobica, ascolto privato, effetto Walkman, OED1986 e marchio generico. Sorpasso 1983 circoscritto a spedizioni statunitensi di cassette rispetto agli album in vinile.",
+      "source_ids": [
+        "walkman_sony",
+        "walkman_production",
+        "walkman_sony_history",
+        "walkman_cd_sale",
+        "walkman_cd_archive",
+        "cassette_riaa",
+        "walkman_effect"
+      ],
+      "text_applied": true
+    }
+  ],
+  "metadata_proposals": [
+    {
+      "target_id": "history-1977-star-wars-film",
+      "field": "timeline_date",
+      "original": {
+        "year": 1977,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1977,
+        "month": 5,
+        "day": 25,
+        "precision": "day",
+        "event_semantics": "Apertura cinematografica commerciale",
+        "region": "Stati Uniti"
+      },
+      "source_ids": [
+        "starwars"
+      ],
+      "reason": "Proposta documentata separata; originali e catalogo non modificati."
+    },
+    {
+      "target_id": "history-1977-suspiria",
+      "field": "timeline_date",
+      "original": {
+        "year": 1977,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1977,
+        "month": 2,
+        "day": 1,
+        "precision": "day",
+        "event_semantics": "Uscita cinematografica commerciale",
+        "region": "Italia"
+      },
+      "source_ids": [
+        "suspiria_anica"
+      ],
+      "reason": "Proposta documentata separata; originali e catalogo non modificati."
+    },
+    {
+      "target_id": "history-1977-voyager-1",
+      "field": "timeline_date",
+      "original": {
+        "year": 1977,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1977,
+        "month": 9,
+        "day": 5,
+        "precision": "day",
+        "event_semantics": "Lancio della missione spaziale",
+        "region": "Stati Uniti"
+      },
+      "source_ids": [
+        "voyager_jpl"
+      ],
+      "reason": "Proposta documentata separata; originali e catalogo non modificati."
+    },
+    {
+      "target_id": "history-1978-superman-1978-film",
+      "field": "timeline_date",
+      "original": {
+        "year": 1978,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1978,
+        "month": 12,
+        "day": 15,
+        "precision": "day",
+        "event_semantics": "Apertura cinematografica commerciale",
+        "region": "Stati Uniti, New York e Los Angeles"
+      },
+      "source_ids": [
+        "superman_afi"
+      ],
+      "reason": "Proposta documentata separata; originali e catalogo non modificati."
+    },
+    {
+      "target_id": "history-1979-soviet-afghan-war",
+      "field": "timeline_date",
+      "original": {
+        "year": 1979,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1979,
+        "month": 12,
+        "day": 0,
+        "precision": "month",
+        "event_semantics": "Inizio dell'intervento militare sovietico",
+        "region": "Afghanistan"
+      },
+      "source_ids": [
+        "afghan_state_history",
+        "afghan_un"
+      ],
+      "reason": "Proposta documentata separata; originali e catalogo non modificati."
+    },
+    {
+      "target_id": "history-1979-the-wall",
+      "field": "timeline_date",
+      "original": {
+        "year": 1979,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1979,
+        "month": 11,
+        "day": 30,
+        "precision": "day",
+        "event_semantics": "Uscita commerciale dell'album",
+        "region": "Regno Unito"
+      },
+      "source_ids": [
+        "wall_official"
+      ],
+      "reason": "Proposta documentata separata; originali e catalogo non modificati."
+    },
+    {
+      "target_id": "history-1979-walkman",
+      "field": "timeline_date",
+      "original": {
+        "year": 1979,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1979,
+        "month": 7,
+        "day": 1,
+        "precision": "day",
+        "event_semantics": "Prima commercializzazione del lettore a cassette",
+        "region": "Giappone"
+      },
+      "source_ids": [
+        "walkman_sony"
+      ],
+      "reason": "Proposta documentata separata; originali e catalogo non modificati."
+    }
+  ],
+  "editorial_review": {
+    "fidelity": "Confrontate tutte le dieci card con l'INPUT, inclusi cast, crediti, dimensioni, cronologie e dati quantitativi. Rettifiche motivate senza usare limiti arbitrari di lunghezza.",
+    "language_review": "Inglese scritto per primo, poi adattato in italiano, francese, tedesco e spagnolo. Riletti incipit e titoli; corrette formulazioni poco naturali in italiano e concordanze in francese e spagnolo. Tutte le card mantengono paragrafi coesi.",
+    "dates": "Opere e prodotti riferiti a uscita commerciale regionale; missione e guerre a eventi espliciti. TRS-80, LaserDisc e rivoluzione iraniana conservano precisione annuale appropriata.",
+    "rights": "Provenienza, attribuzioni, revisioni e licenze dei testi forniti restano negli INPUT. Le fonti supplementari riportano il perimetro effettivo di consultazione; nessun articolo, PDF o video non letto integralmente è dichiarato tale.",
+    "english_written_first": true,
+    "languages": [
+      "en",
+      "it",
+      "fr",
+      "de",
+      "es"
+    ],
+    "entry_count": 10,
+    "card_count_per_language": 10,
+    "reviewed_at": "2026-10-30T06:26:42.487366+00:00",
+    "english_summary_word_range": [
+      33,
+      39
+    ],
+    "structural_checks": "Schema, ID, ordine, numero di card e cinque lingue verificati dal validatore. Tutti i titoli presenti; nessun HTML o Markdown nei testi."
+  },
+  "status": "completed",
+  "validation": {
+    "valid": true,
+    "batch_id": "301-human-history",
+    "completed": true,
+    "entry_count": 10,
+    "card_count_per_language": 10,
+    "language_count": 5,
+    "translated_card_count": 50,
+    "entry_card_counts": {
+      "history-1977-star-wars-film": 1,
+      "history-1977-suspiria": 1,
+      "history-1977-trs-80": 1,
+      "history-1977-voyager-1": 1,
+      "history-1978-laserdisc": 1,
+      "history-1978-superman-1978-film": 1,
+      "history-1979-iranian-revolution": 1,
+      "history-1979-soviet-afghan-war": 1,
+      "history-1979-the-wall": 1,
+      "history-1979-walkman": 1
+    },
+    "issue_counts": {
+      "history-1977-star-wars-film": 0,
+      "history-1977-suspiria": 0,
+      "history-1977-trs-80": 0,
+      "history-1977-voyager-1": 0,
+      "history-1978-laserdisc": 0,
+      "history-1978-superman-1978-film": 0,
+      "history-1979-iranian-revolution": 0,
+      "history-1979-soviet-afghan-war": 0,
+      "history-1979-the-wall": 0,
+      "history-1979-walkman": 0
+    },
+    "summary_checks": [
+      {
+        "entry_id": "history-1977-star-wars-film",
+        "feature_id": null,
+        "english_summary_words": 33
+      },
+      {
+        "entry_id": "history-1977-suspiria",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "history-1977-trs-80",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "history-1977-voyager-1",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "history-1978-laserdisc",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "history-1978-superman-1978-film",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "history-1979-iranian-revolution",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "history-1979-soviet-afghan-war",
+        "feature_id": null,
+        "english_summary_words": 39
+      },
+      {
+        "entry_id": "history-1979-the-wall",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "history-1979-walkman",
+        "feature_id": null,
+        "english_summary_words": 37
+      }
+    ],
+    "editorial_review": [
+      "history-1979-iranian-revolution/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1979-iranian-revolution/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1979-iranian-revolution/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1979-iranian-revolution/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1979-soviet-afghan-war/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1979-soviet-afghan-war/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1979-soviet-afghan-war/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1979-soviet-afghan-war/main/es: main title changed; check that this is a descriptive title and not an altered official name"
+    ],
+    "failures": []
+  },
+  "output_sha256": "034e2ac54cdd68090b290ae39b6e89004be9c7017417e8a71edd138ab1d39d07",
+  "expansion_assessments": [
+    {
+      "target_id": "history-1977-star-wars-film",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1977-suspiria",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1977-trs-80",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1977-voyager-1",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1978-laserdisc",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1978-superman-1978-film",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1979-iranian-revolution",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1979-soviet-afghan-war",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1979-the-wall",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1979-walkman",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    }
+  ]
+}

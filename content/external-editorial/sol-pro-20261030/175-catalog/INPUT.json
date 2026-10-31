@@ -1,0 +1,708 @@
+{
+  "schema": "pixel-museum-editorial-input-v1",
+  "batch_id": "175-catalog",
+  "source_file": "content/catalog.json",
+  "source_sha256": "0b077b3f8628f921ab84574d286f9d9943fb8ae6acb8f136ffadde6e01cae241",
+  "entries": [
+    {
+      "entry_id": "wikipedia-38242124",
+      "kind": "game",
+      "year_context_only": 2013,
+      "date_context_only": {
+        "month": 8,
+        "day": 7,
+        "precision": "day",
+        "region": "Xbox360 original release"
+      },
+      "event_semantics": "",
+      "factual_note": "Original 7 August 2013 Xbox 360 release date from cached original article infobox; later platforms and 2024 remake are not substituted.",
+      "main": {
+        "feature_id": null,
+        "title": "Brothers: A Tale of Two Sons",
+        "subtitle": "Two brothers, two controls and one journey",
+        "summary": "Brothers: A Tale of Two Sons is a 2013 adventure game developed by Starbreeze Studios and published by 505 Games.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Two brothers set out to save their father",
+            "text": "Brothers: A Tale of Two Sons is a 2013 adventure developed by Starbreeze Studios and published by 505 Games. Two young brothers travel through a fantasy world to find a cure for their father's illness. One player controls both characters together, solving puzzles that depend on their different strengths. The game received positive reviews and had sold more than 800,000 copies by January 2015."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Solving puzzles by controlling both brothers",
+            "text": "Brothers: A Tale of Two Sons is presented from a third-person view overlooking the two brothers. The brothers are moved individually by two thumbsticks on the controller. The controller triggers cause the respective brother to interact with the game world, such as talking to a non-player character or grabbing onto a ledge or object. The older brother is the stronger of the two and can pull levers or boost his younger brother to higher spaces, while the younger one can pass between narrow bars. The player progresses by manipulating the two brothers at the same time to complete various puzzles, often requiring the player to manipulate both brothers to perform differing functions (such as one distracting a hostile non-player character while the other makes his way around). Should either brother fall from a great height or get injured, the game restarts at a recent checkpoint. All of the in-game dialogue is spoken in a fictional language based on Lebanese Arabic, thus the story is conveyed through actions, gestures and expressions."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Starbreeze collaborates with film director Josef Fares",
+            "text": "Brothers: A Tale of Two Sons was developed by Starbreeze Studios and was the first game to come from the publishing partnership with 505 Games. During development, its working title was P13. The game uses Unreal Engine 3, and was developed in collaboration with Swedish-Lebanese award-winning film director Josef Fares."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Original game article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1347624719",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Original 2013 PC publisher media",
+            "url": "https://store.steampowered.com/app/225080/",
+            "publisher": "505 Games /Starbreeze Studios"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "papers-please",
+      "kind": "game",
+      "year_context_only": 2013,
+      "date_context_only": {
+        "month": 8,
+        "day": 8,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "Papers, Please",
+        "subtitle": "The desk is the difficult part",
+        "summary": "Lucas Pope turns paperwork into a system of observation, pressure and moral decisions.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Rules and pressure at the desk",
+            "text": "Papers, Please puts the player at a fictional border checkpoint. Documents must be compared under changing rules while time, wages and a household's needs apply pressure from outside the desk."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "An interface that tells the story",
+            "text": "The interface does much of the storytelling. Moving a passport, discovering a mismatch or deciding to make an exception makes an abstract policy personal. A deliberately small work space can expose a large system."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Papers, Please — press kit",
+            "url": "https://papersplea.se/presskit/",
+            "publisher": "3909 / Lucas Pope"
+          },
+          {
+            "title": "Games by Lucas Pope: Papers, Please",
+            "url": "https://dukope.com/",
+            "publisher": "Lucas Pope",
+            "type": "Primary: date verification",
+            "supports": "Developer catalogue places August 8, 2013 below the Papers, Please original release record, separately from the public beta and later games."
+          },
+          {
+            "title": "Papers, Please — original release infobox, Wikipedia revision 1381040702",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1381040702",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Official music publication: Papers, Please: Theme Song",
+            "url": "https://www.youtube.com/watch?v=OBQE_TNI7zw",
+            "publisher": "Lucas Pope",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Lucas Pope",
+            "url": "https://music.apple.com/us/album/papers-please-original-game-soundtrack-single/1697267966",
+            "publisher": "Lucas Pope"
+          }
+        ]
+      },
+      "features": [
+        {
+          "feature_id": "feature-paperwork-ethical-systems",
+          "title": "How a paperwork game learns to make mistakes",
+          "subtitle": "",
+          "summary": "What had to be balanced before checking documents could become Papers, Please?",
+          "cards": [
+            {
+              "card_id": "feature:feature-paperwork-ethical-systems:0",
+              "original_index": 0,
+              "heading": "Learning the rules in stages",
+              "text": "In his February 2013 development notes, Lucas Pope discusses introducing the game's concepts gradually and balancing incorrect documents against legitimate entrants. This is also a production problem. If every visitor has an obvious fault, checking stops feeling like a decision. If the rules arrive too quickly, the player may not understand what they are being asked to inspect. The notes show Pope arranging the conditions under which an error can be meaningful, rather than simply adding more paperwork to make a border checkpoint seem complicated."
+            },
+            {
+              "card_id": "feature:feature-paperwork-ethical-systems:1",
+              "original_index": 1,
+              "heading": "More errors can make a person easier to reject",
+              "text": "An April entry identifies a counterintuitive balancing problem: putting more errors into one entrant's documents can make the inspection easier, because the player only needs to notice one of them. Difficulty does not rise neatly with the quantity of wrong information. A single subtle mismatch may demand more attention than several obvious contradictions. The observation shifts the discussion from the appearance of a crowded desk to the logic of a decision. What matters is the evidence needed for a verdict, and how readily a person working under pressure can find it."
+            },
+            {
+              "card_id": "feature:feature-paperwork-ethical-systems:2",
+              "original_index": 2,
+              "heading": "Keeping the pixels was a decision",
+              "text": "Pope considered both pixel and vector graphics after feedback around the 2013 Game Developers Conference, then retained pixel art. The choice was part of an ongoing discussion about the presentation, including how clearly names, marks and document edges could be read at the inspection desk."
+            },
+            {
+              "card_id": "feature:feature-paperwork-ethical-systems:3",
+              "original_index": 3,
+              "heading": "The prototype was not the finished system",
+              "text": "By February, native Windows and Mac builds contained rough versions of the first five days. Night screens remained unfinished, and some systems were not yet visible to the player. The development logs track those separate pieces taking shape as Pope tested how the inspection routine would fit into a full working day."
+            }
+          ],
+          "sources": [
+            {
+              "id": "papers-feb",
+              "title": "Papers, Please development log: February 2013",
+              "url": "https://dukope.com/devlogs/papers-please/tig-03/",
+              "publisher": "Lucas Pope",
+              "source_type": "primary_developer_production_log",
+              "locator": "Posts 152/153 and February sound/UI entries; author posts distinguished from replies",
+              "checked": "2026-10-20",
+              "access_note": "Text inspected on 2026-10-20",
+              "story_paragraphs": [
+                0,
+                3
+              ]
+            },
+            {
+              "id": "papers-apr",
+              "title": "Papers, Please development log: April 2013",
+              "url": "https://dukope.com/devlogs/papers-please/tig-05/",
+              "publisher": "Lucas Pope",
+              "source_type": "primary_developer_production_log",
+              "locator": "Post 307 Pixels vs Vectors;27 April encounter/error discussion",
+              "checked": "2026-10-20",
+              "access_note": "Text inspected on 2026-10-20",
+              "story_paragraphs": [
+                1,
+                2
+              ]
+            },
+            {
+              "id": "papers-game",
+              "title": "Papers, Please: official site",
+              "url": "https://www.papersplea.se/",
+              "publisher": "3909 / Lucas Pope",
+              "source_type": "primary_developer_publication",
+              "locator": "Original desktop version,8 August 2013, media gallery and development-log link",
+              "checked": "2026-10-20",
+              "access_note": "Text inspected on 2026-10-20"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entry_id": "wikipedia-38241142",
+      "kind": "game",
+      "year_context_only": 2013,
+      "date_context_only": {
+        "month": 8,
+        "day": 15,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Regional and platform release dates may differ. Where shown, the exact day is taken only from the article release infobox.",
+      "main": {
+        "feature_id": null,
+        "title": "Gone Home",
+        "subtitle": "Exploring a house to uncover a family story",
+        "summary": "Gone Home is a first-person walking simulator video game developed and published by The Fullbright Company.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Gone Home makes its debut",
+            "text": "Gone Home is a first-person walking simulator video game developed and published by The Fullbright Company. Gone Home was first released for Microsoft Windows, OS X, and Linux computers in August 2013, followed by console releases for the PlayStation 4 and Xbox One in January 2016, the Nintendo Switch in September 2018, and iOS in December 2018."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "A story discovered by exploring the house",
+            "text": "In 1995, a young woman returns from overseas to her family home in rural Oregon and finds it empty. Exploring its rooms at her own pace, the player reads journals and examines the belongings left behind to discover what has happened. The Fullbright team had worked on BioShock 2: Minerva's Den; here, searching a single house lets a small team tell a family story through objects and spaces encountered in different orders."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Gone Home - article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1378073835",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Article contributors and history",
+            "url": "https://en.wikipedia.org/wiki/Gone_Home?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          },
+          {
+            "title": "Gone Home: official library cover",
+            "url": "https://store.steampowered.com/app/232430/",
+            "publisher": "Fullbright / Serenity Forge"
+          },
+          {
+            "title": "Gone Home — original release infobox, Wikipedia revision 1378073835",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1378073835",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Official music publication: The House, Part 1 (Original)",
+            "url": "https://www.youtube.com/watch?v=ab6VKGdPDsg",
+            "publisher": "Chris Remo",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Chris Remo",
+            "url": "https://en.wikipedia.org/wiki/Gone_Home",
+            "publisher": "Chris Remo"
+          },
+          {
+            "title": "Official music publication: Just Gone",
+            "url": "https://www.youtube.com/watch?v=GFtYS85kCGc",
+            "publisher": "Chris Remo",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Chris Remo",
+            "url": "https://en.wikipedia.org/wiki/Gone_Home",
+            "publisher": "Chris Remo"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-36042660",
+      "kind": "game",
+      "year_context_only": 2013,
+      "date_context_only": {
+        "month": 8,
+        "day": 20,
+        "precision": "day",
+        "region": "North America"
+      },
+      "event_semantics": "",
+      "factual_note": "Original 2013 release date from the cached original-game article infobox; later ports and editions are contextual only.",
+      "main": {
+        "feature_id": null,
+        "title": "Tom Clancy's Splinter Cell: Blacklist",
+        "subtitle": "Stealth, darkness and surveillance gadgets",
+        "summary": "Tom Clancy's Splinter Cell: Blacklist is a 2013 action-adventure stealth game developed by Ubisoft Toronto and published by Ubisoft.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Sam Fisher returns with Fourth Echelon",
+            "text": "Tom Clancy's Splinter Cell: Blacklist is a 2013 action-adventure stealth game developed by Ubisoft Toronto and published by Ubisoft. The game is the sequel to Splinter Cell: Conviction and the seventh installment of the Splinter Cell series. Players control Sam Fisher, a highly trained operative working for the Fourth Echelon, in a mission to stop the Engineers, a group of terrorists which is trying to coerce the United States into recalling all of its troops stationed abroad. The gameplay is similar to its predecessors, with players tasked with completing objectives and defeating enemies. Blacklist marks the return of the asymmetrical multiplayer mode Spies vs. Mercs, which was introduced in Pandora Tomorrow."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Stealth, darkness and surveillance gadgets",
+            "text": "Sam Fisher can work through an area quietly or turn a broken cover story into an aggressive fight. Climbing ledges, hiding bodies and destroying lamps help keep him unnoticed; leaving a corpse in view can alert the next guard. Night-vision and sonar goggles reveal threats in darkness or behind walls. The compact Tri-Rotor drone lets him inspect a room, distract someone or deliver an electric shock before entering. These tools support different routes through the same objective, combining the older games' caution with the faster, more forceful movement introduced in Conviction."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Spies and mercenaries play by different rules",
+            "text": "The \"Spies vs. Mercs\" competitive mode introduced in Pandora Tomorrow again appears in Blacklist. An asymmetrical multiplayer mode, it pits two teams (with different gadgets, playing as spies or mercenaries) against each other. Spies, in third-person perspective, are equipped with smoke grenades and flashbangs and are tasked with hacking computer stations heavily guarded by mercenaries. Spies have more versatile movements as they can also climb onto rooftops, hide inside air vents and scale ledges. Mercenaries, in first person, can access lethal and longer-range weapons despite being unable to stealth-kill enemies or move very fast. The mode has two varieties: Classic, supporting teams of 2v2, and Blacklist, supporting 4v4 action. This mode features a progressive leveling system, allowing players to customise and upgrade the two character classes."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Original game article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1381272271",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Original game publisher imagery",
+            "url": "https://store.steampowered.com/app/235600/",
+            "publisher": "Ubisoft Toronto / Ubisoft"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-38821465",
+      "kind": "game",
+      "year_context_only": 2013,
+      "date_context_only": {
+        "month": 8,
+        "day": 20,
+        "precision": "day",
+        "region": "North America"
+      },
+      "event_semantics": "",
+      "factual_note": "Original 2013 release date from the cached original-game article infobox; later ports and editions are contextual only.",
+      "main": {
+        "feature_id": null,
+        "title": "Saints Row IV",
+        "subtitle": "Superpowers inside a simulation of Steelport",
+        "summary": "Saints Row IV is a 2013 action-adventure game developed by Volition and published by Deep Silver.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "The fourth Saints Row makes its debut",
+            "text": "Saints Row IV is a 2013 action-adventure game developed by Volition and published by Deep Silver. It is the sequel to 2011's Saints Row: The Third, the fourth game in the Saints Row series, and the final main installment of the original series that began with 2006's Saints Row. The game was released in August 2013 for Microsoft Windows, PlayStation 3, and Xbox 360, and was later ported to the PlayStation 4, Xbox One, and Linux in 2015. A Nintendo Switch port was released on March 27, 2020, and a Google Stadia port was released on November 1, 2021."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Superpowers inside a simulation of Steelport",
+            "text": "The game's open world nature allows players to freely explore a simulation of the fictional city of Steelport while completing main and side missions at their leisure. It incorporates science fiction elements, and continues the series' reputation for over-the-top parody. The single-player story follows the same player-created character from the previous games, who is elected President of the United States after thwarting a terrorist threat. Five years into their governance, they find themselves trapped in the Steelport simulation along with members of their gang, the 3rd Street Saints, after an alien empire known as the Zin attacks the Earth and captures them. With the help of their allies who managed to escape and hacked the simulation to give them superpowers, the player attempts to rescue their captured friends, escape the simulation, and defeat the Zin."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "From Enter the Dominatrix to a full sequel",
+            "text": "Saints Row IV was the first game developed by Volition after its acquisition by Koch Media in early 2013, following the bankruptcy proceedings of the franchise's original publisher, THQ. The supernatural and superpower concept for the game started in Enter the Dominatrix, a cancelled expansion planned for Saints Row: The Third, which the team expanded into Saints Row IV. Volition later released a \"director's cut\" of Enter the Dominatrix as a downloadable content for Saints Row IV alongside another expansion, How the Saints Saved Christmas, as well as various weapons, costumes, and vehicle packs. A standalone expansion, Saints Row: Gat out of Hell, was released in January 2015, serving as an epilogue to the base game."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Original game article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1377661519",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Original game publisher imagery",
+            "url": "https://www.gematsu.com/2013/03/saints-row-iv-announced",
+            "publisher": "Volition / Deep Silver"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-36049497",
+      "kind": "game",
+      "year_context_only": 2013,
+      "date_context_only": {
+        "month": 8,
+        "day": 23,
+        "precision": "day",
+        "region": "Europe"
+      },
+      "event_semantics": "",
+      "factual_note": "Original 2013 release date from the cached original-game article infobox; later ports and editions are contextual only.",
+      "main": {
+        "feature_id": null,
+        "title": "The Wonderful 101",
+        "subtitle": "Drawing shapes to unite the heroes",
+        "summary": "The Wonderful 101 is a 2013 action-adventure game developed by PlatinumGames and published by Nintendo for the Wii U.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "PlatinumGames brings a superhero team to Wii U",
+            "text": "The Wonderful 101 is a 2013 action-adventure game developed by PlatinumGames and published by Nintendo for the Wii U. The game was directed by Hideki Kamiya and produced by Atsushi Inaba. It was released in August 2013 in all major regions except North America, where it was released the following month. The Wonderful 101 received generally positive reviews, but failed to meet sales expectations."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Drawing shapes to unite the heroes",
+            "text": "The superheroes move as a crowd, then combine into tools and weapons through Unite Morphs. Drawing an L creates a gun; another shape produces a whip. The player uses the GamePad touchscreen or right stick to make these commands, turning a mass of individuals into one useful form. Rescuing citizens enlarges the group and strengthens its transformations. Morphs consume battery power, which ordinary attacks and dropped batteries restore. Enemies also leave currency for upgrades. Some enclosed areas shift to a closer GamePad view, asking the player to read the surroundings at a different scale."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Campaign ratings and five-player cooperation",
+            "text": "The single-player campaign is broken into levels. Each level ends with a grade depending on several factors, such as how long it takes the player to complete the level and how much damage the player took. In addition to a single-player mode, the game has a cooperative mode that supports up to five players, with one person utilizing the Wii U GamePad and the four others each using their own Wii U Pro Controllers."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Original game article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1377452987",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Original game publisher imagery",
+            "url": "https://www.nintendo.com/en-gb/Games/Wii-U-games/The-Wonderful-101-641216.html",
+            "publisher": "PlatinumGames / Nintendo"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-35432670",
+      "kind": "game",
+      "year_context_only": 2013,
+      "date_context_only": {
+        "month": 8,
+        "day": 27,
+        "precision": "day",
+        "region": "North America"
+      },
+      "event_semantics": "",
+      "factual_note": "Original 2013 release date from cached Wikipedia infobox. Later Windows edition of Killer Is Dead is contextual text only; its media are original 2013 console publisher images.",
+      "main": {
+        "feature_id": null,
+        "title": "Lost Planet 3",
+        "subtitle": "Jim Peyton joins an expedition to support his family",
+        "summary": "Lost Planet 3 is a third-person action adventure developed by Spark Unlimited and published by Capcom. Set before the earlier games, it follows a worker on the frozen planet E.D.N. III.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "A prequel returns to the frozen planet E.D.N. III",
+            "text": "Lost Planet 3 is a third-person action adventure developed by Spark Unlimited and published by Capcom for Windows, PlayStation 3 and Xbox 360. It returns to E.D.N. III before the events of the first two games, following Jim Peyton as he works on a mining expedition. Matt Sophos directed the game, with series creator Kenji Oguro serving as franchise creative director."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Jim Peyton joins an expedition to support his family",
+            "text": "Jim Peyton travels to E.D.N. III to earn money for his family. The NEVEC-funded expedition hopes to extract thermal energy, a substance that could help solve Earth's energy shortage. Repair jobs take Jim away from the base and into the frozen landscape, where damaged communications equipment raises suspicions of sabotage. His work brings him into contact with researchers, technicians and other rig pilots."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Exploration, side quests and utility rigs",
+            "text": "Jim can follow the main missions or help fellow colonists through side quests. Talking to people, gathering resources and upgrading equipment fill the time between encounters with the planet's indigenous Akrid. His bipedal utility rig lets him undertake heavy work outside the base. Thermal energy serves primarily as currency rather than a constantly draining life-support supply, leaving more time to explore."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Original game article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1373763983",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Original 2013 publisher media gallery",
+            "url": "https://www.gematsu.com/2013/03/lost-planet-3-release-date-set",
+            "publisher": "Spark Unlimited / Capcom"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-38080015",
+      "kind": "game",
+      "year_context_only": 2013,
+      "date_context_only": {
+        "month": 8,
+        "day": 27,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Regional and platform release dates may differ. Where shown, the exact day is taken only from the article release infobox.",
+      "main": {
+        "feature_id": null,
+        "title": "Final Fantasy XIV",
+        "subtitle": "A Realm Reborn rebuilds the world of Eorzea",
+        "summary": "Final Fantasy XIV is a subscription-based massively multiplayer online role-playing game (MMORPG) developed and published by Square Enix.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "A Realm Reborn rebuilds the world of Eorzea",
+            "text": "Final Fantasy XIV: A Realm Reborn is a subscription-based online role-playing game developed and published by Square Enix. Directed and produced by Naoki Yoshida, it launched on PlayStation 3 and Windows in August 2013, replacing the 2010 version. Its story begins in Eorzea five years after the Seventh Umbral Calamity, when Bahamut escaped from the artificial moon Dalamud and devastated the land. As the region recovers, the Garlean Empire prepares a renewed invasion."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "A new team and Version 2.0",
+            "text": "The original Final Fantasy XIV was a commercial and critical failure. Then-Square Enix President Yoichi Wada announced that a new team, led by Yoshida, would assume control and address the game's flaws. The new team both continued to develop and improve the original version, and secretly worked on a completely new replacement. This new game, codenamed \"Version 2.0\", used a new engine, improved server infrastructure, and revamped gameplay, interface, and story. The original version shut down in November 2012, followed by an alpha test for Version 2.0."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "The recovery of the game and its expansions",
+            "text": "The relaunch received largely positive reviews for its mechanics and progression, with particular praise for Yoshida's recovery of the project. Square Enix attributed part of its return to profitability in 2014 to the game's sales and subscriptions. By October 2021 it had attracted more than 24 million registered players. Major expansions continued the story through Heavensward, Stormblood, Shadowbringers, Endwalker and Dawntrail."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Final Fantasy XIV - article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1377258678",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Article contributors and history",
+            "url": "https://en.wikipedia.org/wiki/Final_Fantasy_XIV?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          },
+          {
+            "title": "Final Fantasy XIV — original-edition box - front (Sony Playstation 3)",
+            "url": "https://gamesdb.launchbox-app.com/games/details/17912",
+            "publisher": "Square Enix"
+          },
+          {
+            "title": "Final Fantasy XIV — original release infobox, Wikipedia revision 1377258678",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1377258678",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Official music publication: With Hearts Aligned (Endwalker, 2022 soundtrack)",
+            "url": "https://www.youtube.com/watch?v=l2lqJ-GN2t0",
+            "publisher": "SQUARE ENIX MUSIC Channel",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Masayoshi Soken",
+            "url": "https://store.steampowered.com/app/3372310/ENDWALKER_FINAL_FANTASY_XIV_Original_Soundtrack/",
+            "publisher": "Masayoshi Soken"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "rayman-legends",
+      "kind": "game",
+      "year_context_only": 2013,
+      "date_context_only": {
+        "month": 8,
+        "day": 29,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "release",
+      "factual_note": "Imported dated English Playhub editorial. Adapt its calendar wording, review publisher dates and assign rights-cleared media before presenting as a finished museum stop.",
+      "main": {
+        "feature_id": null,
+        "title": "Rayman Legends",
+        "subtitle": "Running, Jumping and Playing Music in the Same Motion",
+        "summary": "Rayman Legends builds on Origins with illustrated stages, musical courses and Murfy's interactions with the environment.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Rayman returns in Legends",
+            "text": "Ubisoft released Rayman Legends in 2013, with its official PC release dated August 29. UbiArt Framework continues the illustrated style of Rayman Origins, while musical stages arrange jumps and attacks around a beat. Murfy supplies another way to interact with platforms, ropes and hazards."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Illustration through UbiArt",
+            "text": "UbiArt Framework brings detailed backgrounds and drawn characters into responsive platforming. Animation and scenery must keep hazards and landing surfaces readable as the player moves. Legends expands the approach developed for Rayman Origins while preserving the precision needed for fast routes."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Platforming to the music",
+            "text": "Musical stages synchronise enemies, ropes and obstacles with their accompanying tracks. The player continues using platform controls, but jumps and attacks fall into a rhythmic sequence. Learning the timing helps a run flow from one event to the next."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "Murfy changes the route",
+            "text": "Murfy can cut ropes, move platforms and manipulate hazards while the main character travels through a stage. The role grew from the game's Wii U origins, with control adapted for other versions. It adds moments where the player changes the environment directly to open the next route."
+          }
+        ],
+        "sources": [
+          {
+            "title": "store.steampowered.com",
+            "url": "https://store.steampowered.com/app/242550/Rayman_Legends/",
+            "publisher": "store.steampowered.com"
+          },
+          {
+            "title": "www.gamespot.com",
+            "url": "https://www.gamespot.com/games/rayman-legends/reviews/",
+            "publisher": "www.gamespot.com"
+          },
+          {
+            "title": "www.ubisoft.com",
+            "url": "https://www.ubisoft.com/en-US/games/53b13e5f-f671-41a6-a807-25155954de9d",
+            "publisher": "www.ubisoft.com"
+          },
+          {
+            "title": "Rayman Legends — original release infobox, Wikipedia revision 1380753629",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1380753629",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Official music publication: Rayman Legends OST - Grannies World Tour (Track 43)",
+            "url": "https://www.youtube.com/watch?v=kD2salaVNzQ",
+            "publisher": "Ubisoft Music",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Christophe Héral",
+            "url": "https://en.wikipedia.org/wiki/Rayman_Legends",
+            "publisher": "Christophe Héral"
+          },
+          {
+            "title": "Official music publication: Rayman Legends OST - Trip to the Jungle (Track 11)",
+            "url": "https://www.youtube.com/watch?v=FSBELomq1Eo",
+            "publisher": "Ubisoft Music",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Christophe Héral",
+            "url": "https://en.wikipedia.org/wiki/Rayman_Legends",
+            "publisher": "Christophe Héral"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-36305970",
+      "kind": "game",
+      "year_context_only": 2013,
+      "date_context_only": {
+        "month": 9,
+        "day": 3,
+        "precision": "day",
+        "region": "Worldwide"
+      },
+      "event_semantics": "",
+      "factual_note": "Original 2013 release date from the cached original-game article infobox; later ports and editions are contextual only.",
+      "main": {
+        "feature_id": null,
+        "title": "Total War: Rome II",
+        "subtitle": "A turn-based campaign and real-time battles",
+        "summary": "Total War: Rome II is a strategy video game developed by Creative Assembly and published by Sega.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Rome II returns the series to the ancient world",
+            "text": "Total War: Rome II is a strategy video game developed by Creative Assembly and published by Sega. It was released on 3 September 2013, for Microsoft Windows as the eighth standalone game in the Total War series of video games and the successor to the 2004 game Rome: Total War.\n\nRome II received generally positive reviews from critics on release, but was criticized for its significant technical problems. However, it proved a commercial success, surpassing all other games in the Total War series in both sales and number of concurrent players on its release day. In September 2014, an Emperor Edition was released, which added macOS support and addressed many of the technical problems in the game, as well as overhauled AI battles and upgraded certain visual elements. It was offered as a standalone edition and a free upgrade to all current players."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "A turn-based campaign and real-time battles",
+            "text": "Total War: Rome II is set in Europe, the Mediterranean, and the Near East in the Classical antiquity period. The grand single-player campaign begins in 272 BC at the end of the Pyrrhic War, lasting for 300 years. However, the player also has the option to play further, as there are no timed victory conditions.\n\nLike its predecessor, Rome II blends turn-based grand strategy and civilization management with real-time tactical battles. The Warscape engine powers the game's visuals and new unit cameras allow players to focus on individual soldiers on the real-time battlefield, which may contain thousands of combatants at the same time. Creative Assembly has stated that it wished to bring out the more human side of war, with soldiers reacting as their comrades get killed around them, and officers inspiring men with heroic speeches."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Different cultures, armies and cities",
+            "text": "Rome II features more sophisticated portrayals of each culture and civilization of the period, which in its predecessor had been portrayed anachronistically. The Creative Assembly tried to ensure the uniqueness of different cultures and fighting forces. Lead unit designer Jack Lusted stated that instead of the \"rebel nation\" used to represent minor states in the original Rome: Total War, Rome II features a large number of smaller, individual nations and city-states represented by their own factions. Each ethnic group has a unique play-style. A tribe of Gallic barbarians looks and feels different from a disciplined Roman legion. Different agents and technologies are implemented for different factions. There are over 500 different land units in the game, including mercenaries. Over 30 different city variants avoid siege battles feeling and playing out the same every time."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Original game article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1374019502",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Original game publisher imagery",
+            "url": "https://www.gamereactor.eu/new-screens-for-total-war-rome-ii/",
+            "publisher": "Creative Assembly / Sega"
+          }
+        ]
+      },
+      "features": []
+    }
+  ]
+}

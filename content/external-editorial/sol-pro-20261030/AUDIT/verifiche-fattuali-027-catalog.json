@@ -1,0 +1,407 @@
+{
+  "batch_id": "027-catalog",
+  "status": "completed",
+  "sources": [
+    {
+      "source_id": "kojima-bafta",
+      "url": "https://www.bafta.org/stories/the-fellowship-2020-hideo-kojima/",
+      "title": "The Fellowship2020: Hideo Kojima",
+      "publisher": "BAFTA / Chris Schilling; intervista a Hideo Kojima",
+      "accessed_at": "2026-10-30",
+      "scope": "Kojima descrive Metal Gear come il primo titolo importante a cui partecipò in modo sostanziale.",
+      "limitation": "Il testo non viene usato per affermare che non avesse svolto alcun lavoro su videogiochi precedenti."
+    },
+    {
+      "source_id": "ys-switch",
+      "url": "https://www.falcom.co.jp/archives/101293",
+      "title": "EGG Console Ys PC-8801mkIISR: distribuzione su Nintendo Switch",
+      "publisher": "Nihon Falcom",
+      "accessed_at": "2026-10-30",
+      "scope": "Comunicato di disponibilità del15febbraio2024, riferito esplicitamente alla versionePC-8801mkIISR.",
+      "limitation": "Nessun contenuto aggiuntivo della riedizione viene importato nella voce."
+    },
+    {
+      "source_id": "street-release",
+      "url": "https://www.capcom.co.jp/ir/english/news/html/e220830.html",
+      "title": "Capcom agreement with Kashihara City,30August2022",
+      "publisher": "Capcom",
+      "accessed_at": "2026-10-30",
+      "scope": "La sezione sulla serie dichiara la prima pubblicazione arcade il30agosto1987.",
+      "limitation": "La data non è ricavata dal giorno del comunicato: è esplicitamente riportata nella storia della serie."
+    },
+    {
+      "source_id": "street-controls",
+      "url": "https://shmuplations.com/streetfighter/",
+      "title": "Street Fighter –1987Developer Interview",
+      "publisher": "Gamest; Takashi Nishiyama e Hiroshi Matsumoto; traduzione Shmuplations",
+      "accessed_at": "2026-10-30",
+      "scope": "Testimonianza coeva dei due autori: pulsanti pneumatici sensibili alla forza e versione a sei pulsanti.",
+      "limitation": "Letta la traduzione inglese, non il fascicolo giapponese originale. Nessuna nuova descrizione del prototipo importata."
+    },
+    {
+      "source_id": "street-moves",
+      "url": "https://news.capcomusa.com/strumslinger/blog/2018/05/03/street-fighter-30th-anniversary-collection-retrospective-series-street-fighter-street-fighter-ii",
+      "title": "Street Fighter30th Anniversary Collection retrospective",
+      "publisher": "Capcom / Andy Wong",
+      "accessed_at": "2026-10-30",
+      "scope": "ConfermaRyu eKen come due personaggi giocabili e le tre mosse speciali con input difficili.",
+      "limitation": "Il controllo riguarda personaggi e mosse; non l’intera storia commerciale."
+    },
+    {
+      "source_id": "larry-shipment",
+      "url": "https://www.wired.com/2007/06/leisure-suit-la/",
+      "title": "Leisure Suit Larry Turns20",
+      "publisher": "WIRED / Chris Kohler",
+      "accessed_at": "2026-10-30",
+      "scope": "Riscontro sul4giugno1987 come spedizione del gioco ai rivenditori, collegato all’anniversario comunicato daAlLowe.",
+      "limitation": "Fonte secondaria che rimanda alla comunicazione diLowe; non prova un orario o una disponibilità simultanea in ogni negozio."
+    },
+    {
+      "source_id": "doki-nintendo",
+      "url": "https://www.nintendo.com/it-it/Iwata-Chiede/Iwata-Chiede-Paper-Mario-Sticker-Star/Paper-Mario-Sticker-Star/1-Parliamone-da-Iwata/1-Parliamone-da-Iwata-690475.html",
+      "title": "Iwata Chiede: Paper Mario: Sticker Star,1.Parliamone daIwata",
+      "publisher": "Nintendo / Kensuke Tanabe",
+      "accessed_at": "2026-10-30",
+      "scope": "Tanabe ricorda DokiDokiPanic come il primo gioco diretto, poi adattato comeSuperMarioBros.2; Nintendo identifica FujiTelevision editore e luglio1987.",
+      "limitation": "Il giorno10luglio è conservato dal materiale fornito; il passaggio consultato documenta soltanto mese e anno."
+    }
+  ],
+  "decisions": [
+    {
+      "target_id": "wikipedia-30873608",
+      "problem": "L’INPUT definisce MetalGear il primo videogioco sviluppato daKojima, formula che può escludere erroneamente contributi precedenti.",
+      "conclusion": "Usata la formulazione primo progetto di rilievo, coerente con la testimonianza dell’autore aBAFTA.",
+      "source_ids": [
+        "kojima-bafta"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-5282226",
+      "problem": "La riedizioneSwitch è riferita genericamente aPC-8800 e a37anni compiuti dopo il debutto1987, pur essendo uscita nel febbraio2024.",
+      "conclusion": "Specificata la versionePC-8801; scritto quasi37anni. La data di disponibilità è15febbraio2024, documentata daFalcom.",
+      "source_ids": [
+        "ys-switch"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-2829113",
+      "problem": "Controllo mirato della data e delle due modalità di controllo, per evitare di confondere un annuncio con una release o descrivere una configurazione unica.",
+      "conclusion": "Confermati il lancio30agosto1987 e l’esistenza di configurazioni a pressione e a sei pulsanti; nessun primato assoluto di invenzione del picchiaduro.",
+      "source_ids": [
+        "street-release",
+        "street-controls",
+        "street-moves"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "workbook-06-04-leisure-suit-larry-in-the-land-of-the-lounge-lizards",
+      "problem": "Distinguere uscita e data tematica per il4giugno1987.",
+      "conclusion": "La ricorrenza rimanda alla spedizione ai rivenditori, un fatto di distribuzione. Conservata la data del materiale senza estenderla a tutti i mercati.",
+      "source_ids": [
+        "larry-shipment"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "workbook-07-10-yume-kojo-doki-doki-panic",
+      "problem": "Chiarire il rapporto fra pubblicazioneFujiTV, sviluppoNintendo e successiva identitàMario.",
+      "conclusion": "Mantenuti i ruoli distinti e le differenze fra il gioco originale e la conversione internazionale; le frasi diMiyamoto nel materiale sono parafrasate con attribuzione, senza nuove citazioni letterali.",
+      "source_ids": [
+        "doki-nintendo"
+      ],
+      "text_applied": true
+    }
+  ],
+  "metadata_proposals": [
+    {
+      "target_id": "wikipedia-2829113",
+      "field": "timeline_release_region",
+      "original": {
+        "year": 1987,
+        "month": 8,
+        "day": 30,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed": {
+        "year": 1987,
+        "month": 8,
+        "day": 30,
+        "precision": "day",
+        "region": "Japan",
+        "version": "Arcade"
+      },
+      "source_ids": [
+        "street-release"
+      ],
+      "applied_to_catalog": false
+    }
+  ],
+  "expansion_assessments": [
+    {
+      "target_id": "workbook-06-04-leisure-suit-larry-in-the-land-of-the-lounge-lizards",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "missing_cards": 1,
+      "rationale": "Gioco di rilievo storico: soglia di cinque card principali."
+    },
+    {
+      "target_id": "wikipedia-5282226",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "missing_cards": 2,
+      "rationale": "Gioco di rilievo storico: soglia di cinque card principali."
+    },
+    {
+      "target_id": "wikipedia-1564417",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "missing_cards": 2,
+      "rationale": "Gioco di rilievo storico: soglia di cinque card principali."
+    },
+    {
+      "target_id": "workbook-07-10-yume-kojo-doki-doki-panic",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "missing_cards": 1,
+      "rationale": "Gioco di rilievo storico: soglia di cinque card principali."
+    },
+    {
+      "target_id": "wikipedia-30873608",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "missing_cards": 2,
+      "rationale": "Gioco di rilievo storico: soglia di cinque card principali."
+    },
+    {
+      "target_id": "wikipedia-2829113",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "missing_cards": 1,
+      "rationale": "Gioco di rilievo storico: soglia di cinque card principali."
+    },
+    {
+      "target_id": "workbook-09-11-digital-devil-story-megami-tensei",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "missing_cards": 1,
+      "rationale": "Gioco di rilievo storico: soglia di cinque card principali."
+    },
+    {
+      "target_id": "wikipedia-19668",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "missing_cards": 2,
+      "rationale": "Gioco di rilievo storico: soglia di cinque card principali."
+    },
+    {
+      "target_id": "faxanadu-1987",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Le tre card presentano aspetti autonomi del gioco; la soglia riservata ai giochi più importanti non viene applicata automaticamente a ogni titolo."
+    },
+    {
+      "target_id": "wizards-warriors-1987",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Le tre card presentano aspetti autonomi del gioco; la soglia riservata ai giochi più importanti non viene applicata automaticamente a ogni titolo."
+    }
+  ],
+  "editorial_review": {
+    "english_first": true,
+    "five_languages_reviewed": [
+      "en",
+      "it",
+      "fr",
+      "de",
+      "es"
+    ],
+    "checks": [
+      "Incipit e sommari distinti dalla prima card",
+      "Informazioni, versioni, date e numeri conservati",
+      "Titoli propri, mosse e nomi dei giochi invariati",
+      "Elenco di otto lingueAndroid diYs conservato",
+      "Sequenza completa delle riedizioni e dei seguiti diBasesLoaded preservata",
+      "Comandi digitati diLarry mantenuti nella lingua dell’interfaccia originale",
+      "DokiDokiPanic: prototipo distinto dal gioco distribuito e conversioneMario",
+      "Revisione dei calchi e dei titoli generici nelle cinque lingue",
+      "ID, ordine, struttura e assenza diHTML/Markdown"
+    ],
+    "external_verification_limit": "Le fonti nuove riguardano i controlli elencati; non tutti i dati di vendite, riedizioni e ricezione dell’INPUT sono stati verificati indipendentemente.",
+    "book_style_references_consulted": false,
+    "last_language_edits": [
+      {
+        "target_id": "wikipedia-5282226",
+        "language": "it",
+        "card_id": "main:2",
+        "field": "heading",
+        "reason": "Sostituito lettori con pubblici."
+      },
+      {
+        "target_id": "workbook-07-10-yume-kojo-doki-doki-panic",
+        "language": "de",
+        "card_id": "main:1",
+        "field": "text",
+        "reason": "Eliminata la ridondanza schnell schlagenden Herzschlag."
+      },
+      {
+        "target_id": "workbook-06-04-leisure-suit-larry-in-the-land-of-the-lounge-lizards",
+        "language": "it",
+        "card_id": "main:1",
+        "field": "text",
+        "reason": "Restituita la disperazione della ricerca descritta nell’originale."
+      }
+    ],
+    "root_review": {
+      "date": "2026-10-30",
+      "scope": "Riletti i confronti numerici e le card segnalate come più brevi per Larry, Ys, Doki Doki Panic e Metal Gear. Ripristinato in tutte le lingue l’anno di Pac-Man presente nell’INPUT. Le quantità espresse in lettere e gli anni Ottanta/Novanta non sono omissioni numeriche.",
+      "output_before_sha256": "5da6a69a4e67bf3ef8f7c08621d759df4c0334dd2683a71d06ea05b69a4c13d9",
+      "output_after_sha256": "f75b225516426044d474c1342797afb04f7b93e0fe3237307153f1f144510b36",
+      "field_revisions": [
+        {
+          "entry_id": "wikipedia-30873608",
+          "language": "en",
+          "card_id": "main:1",
+          "field": "text",
+          "before": "Metal Gear began as a straightforward action project, but Kojima redirected it towards evading enemies. At a time when shoot-'em-ups were prominent, its emphasis on avoidance drew a comparison with Pac-Man. Weapons and other equipment remain important, including a portable radio transceiver that carries conversations and advances the story. A later international Famicom/NES version was made without Kojima's involvement and substantially changed the game, including its level layouts.",
+          "after": "Metal Gear began as a straightforward action project, but Kojima redirected it towards evading enemies. At a time when shoot-'em-ups were prominent, its emphasis on avoidance drew a comparison with Pac-Man (1980). Weapons and other equipment remain important, including a portable radio transceiver that carries conversations and advances the story. A later international Famicom/NES version was made without Kojima's involvement and substantially changed the game, including its level layouts."
+        },
+        {
+          "entry_id": "wikipedia-30873608",
+          "language": "it",
+          "card_id": "main:1",
+          "field": "text",
+          "before": "Nato come un normale progetto d'azione, Metal Gear fu ripensato da Kojima attorno alla possibilità di eludere i nemici. In un periodo dominato dagli sparatutto, l'importanza della fuga e dell'aggiramento richiamava Pac-Man. Armi ed equipaggiamento restano essenziali, compresa una ricetrasmittente portatile che ospita dialoghi e porta avanti la storia. La successiva versione internazionale per Famicom e NES fu realizzata senza Kojima e introdusse modifiche sostanziali, anche nella disposizione dei livelli.",
+          "after": "Nato come un normale progetto d'azione, Metal Gear fu ripensato da Kojima attorno alla possibilità di eludere i nemici. In un periodo dominato dagli sparatutto, l'importanza della fuga e dell'aggiramento richiamava Pac-Man (1980). Armi ed equipaggiamento restano essenziali, compresa una ricetrasmittente portatile che ospita dialoghi e porta avanti la storia. La successiva versione internazionale per Famicom e NES fu realizzata senza Kojima e introdusse modifiche sostanziali, anche nella disposizione dei livelli."
+        },
+        {
+          "entry_id": "wikipedia-30873608",
+          "language": "fr",
+          "card_id": "main:1",
+          "field": "text",
+          "before": "D'abord envisagé comme un jeu d'action classique, Metal Gear est réorienté par Kojima vers l'évitement des ennemis. À une époque où les shoot-'em-ups sont très présents, cette priorité donnée à l'esquive rappelle Pac-Man. Les armes et les objets restent importants, notamment un émetteur-récepteur radio portable qui porte les dialogues et fait avancer l'histoire. Une version internationale pour Famicom et NES est ensuite réalisée sans la participation de Kojima et transforme largement le jeu, jusque dans l'agencement des niveaux.",
+          "after": "D'abord envisagé comme un jeu d'action classique, Metal Gear est réorienté par Kojima vers l'évitement des ennemis. À une époque où les shoot-'em-ups sont très présents, cette priorité donnée à l'esquive rappelle Pac-Man (1980). Les armes et les objets restent importants, notamment un émetteur-récepteur radio portable qui porte les dialogues et fait avancer l'histoire. Une version internationale pour Famicom et NES est ensuite réalisée sans la participation de Kojima et transforme largement le jeu, jusque dans l'agencement des niveaux."
+        },
+        {
+          "entry_id": "wikipedia-30873608",
+          "language": "de",
+          "card_id": "main:1",
+          "field": "text",
+          "before": "Metal Gear war zunächst als reines Actionspiel geplant. Kojima arbeitete es zu einem Spiel um, bei dem man Gegnern möglichst ausweicht. In einer Zeit populärer Shoot-'em-ups erinnerte dieser Schwerpunkt an Pac-Man. Waffen und andere Ausrüstung bleiben wichtig, darunter ein tragbares Funkgerät, das Dialoge vermittelt und die Handlung voranbringt. Eine spätere internationale Fassung für Famicom und NES entstand ohne Kojimas Beteiligung und veränderte vieles, besonders die Gestaltung der Level.",
+          "after": "Metal Gear war zunächst als reines Actionspiel geplant. Kojima arbeitete es zu einem Spiel um, bei dem man Gegnern möglichst ausweicht. In einer Zeit populärer Shoot-'em-ups erinnerte dieser Schwerpunkt an Pac-Man (1980). Waffen und andere Ausrüstung bleiben wichtig, darunter ein tragbares Funkgerät, das Dialoge vermittelt und die Handlung voranbringt. Eine spätere internationale Fassung für Famicom und NES entstand ohne Kojimas Beteiligung und veränderte vieles, besonders die Gestaltung der Level."
+        },
+        {
+          "entry_id": "wikipedia-30873608",
+          "language": "es",
+          "card_id": "main:1",
+          "field": "text",
+          "before": "Metal Gear comenzó como un proyecto de acción convencional, pero Kojima lo reorientó hacia la evasión de los enemigos. En una época de gran presencia de los juegos de disparos, ese énfasis en eludir amenazas recordaba a Pac-Man. Las armas y otros objetos siguen siendo importantes, incluido un radiotransmisor portátil que permite conversar y hace avanzar la historia. Una posterior versión internacional para Famicom y NES se desarrolló sin Kojima y modificó profundamente el juego, incluida la distribución de los niveles.",
+          "after": "Metal Gear comenzó como un proyecto de acción convencional, pero Kojima lo reorientó hacia la evasión de los enemigos. En una época de gran presencia de los juegos de disparos, ese énfasis en eludir amenazas recordaba a Pac-Man (1980). Las armas y otros objetos siguen siendo importantes, incluido un radiotransmisor portátil que permite conversar y hace avanzar la historia. Una posterior versión internacional para Famicom y NES se desarrolló sin Kojima y modificó profundamente el juego, incluida la distribución de los niveles."
+        }
+      ]
+    }
+  },
+  "validation": {
+    "valid": true,
+    "batch_id": "027-catalog",
+    "completed": true,
+    "entry_count": 10,
+    "card_count_per_language": 34,
+    "language_count": 5,
+    "translated_card_count": 170,
+    "entry_card_counts": {
+      "workbook-06-04-leisure-suit-larry-in-the-land-of-the-lounge-lizards": 4,
+      "wikipedia-5282226": 3,
+      "wikipedia-1564417": 3,
+      "workbook-07-10-yume-kojo-doki-doki-panic": 4,
+      "wikipedia-30873608": 3,
+      "wikipedia-2829113": 4,
+      "workbook-09-11-digital-devil-story-megami-tensei": 4,
+      "wikipedia-19668": 3,
+      "faxanadu-1987": 3,
+      "wizards-warriors-1987": 3
+    },
+    "issue_counts": {
+      "workbook-06-04-leisure-suit-larry-in-the-land-of-the-lounge-lizards": 1,
+      "wikipedia-5282226": 1,
+      "wikipedia-1564417": 1,
+      "workbook-07-10-yume-kojo-doki-doki-panic": 1,
+      "wikipedia-30873608": 1,
+      "wikipedia-2829113": 1,
+      "workbook-09-11-digital-devil-story-megami-tensei": 1,
+      "wikipedia-19668": 1,
+      "faxanadu-1987": 0,
+      "wizards-warriors-1987": 0
+    },
+    "summary_checks": [
+      {
+        "entry_id": "workbook-06-04-leisure-suit-larry-in-the-land-of-the-lounge-lizards",
+        "feature_id": null,
+        "english_summary_words": 31
+      },
+      {
+        "entry_id": "wikipedia-5282226",
+        "feature_id": null,
+        "english_summary_words": 33
+      },
+      {
+        "entry_id": "wikipedia-1564417",
+        "feature_id": null,
+        "english_summary_words": 33
+      },
+      {
+        "entry_id": "workbook-07-10-yume-kojo-doki-doki-panic",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "wikipedia-30873608",
+        "feature_id": null,
+        "english_summary_words": 33
+      },
+      {
+        "entry_id": "wikipedia-2829113",
+        "feature_id": null,
+        "english_summary_words": 33
+      },
+      {
+        "entry_id": "workbook-09-11-digital-devil-story-megami-tensei",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "wikipedia-19668",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "faxanadu-1987",
+        "feature_id": null,
+        "english_summary_words": 33
+      },
+      {
+        "entry_id": "wizards-warriors-1987",
+        "feature_id": null,
+        "english_summary_words": 34
+      }
+    ],
+    "editorial_review": [],
+    "failures": []
+  },
+  "output_sha256": "f75b225516426044d474c1342797afb04f7b93e0fe3237307153f1f144510b36"
+}

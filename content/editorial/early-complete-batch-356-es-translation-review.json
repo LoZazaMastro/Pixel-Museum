@@ -1,0 +1,107 @@
+{
+  "status": "PASS",
+  "locale": "es",
+  "entries": [
+    {
+      "entry_id": "wikipedia-70886321",
+      "source_fields_sha256": "e10b52e77d5d937d650d864621ba29aefccced561bbc6a056d1dd07092969faf",
+      "translation_sha256": "f00f6a3bdda778105e73124ac2f18ae51b365bee6057892fabfa66bc81974daf",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch356/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "a7f69f104b75255e5afd3d6ef39531df3e4c428fc6fa0e71e5cdeea11ddba938"
+    },
+    {
+      "entry_id": "workbook-05-02-age-of-wonders-4",
+      "source_fields_sha256": "a0f2053dbf4bcf6bcaaf68d4758171aff4a0f1a4b3c67a1fe8e7b3b3577627e3",
+      "translation_sha256": "5dad8a0bb740fc26c83c40f1732d64443d3996cb136ca1332d91978ecb0ef9be",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch356/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "a7f69f104b75255e5afd3d6ef39531df3e4c428fc6fa0e71e5cdeea11ddba938"
+    },
+    {
+      "entry_id": "wikipedia-67760003",
+      "source_fields_sha256": "e1069803acdadf906057592871b05996a4a5bc4c5169dc3b43043695a039fe0b",
+      "translation_sha256": "6f1d9fe93f54e66a6deefb916e405a1db870cc333a6e4f613190e74bb78e2b4d",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch356/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "a7f69f104b75255e5afd3d6ef39531df3e4c428fc6fa0e71e5cdeea11ddba938"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "category_audit",
+    "actual_receipt": "build/research/catalog-2023-chronological/april-may-three-private/independent-category-audit-approval.json",
+    "actual_receipt_sha256": "e9e2cdeec3c3b237f3f5707e02c66c6da2affb9c8f7c5f62ed4d40ad8c4d59e3",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "category_audit",
+      "index": "build/research/catalog-2023-chronological/april-may-three-private/three-original-source-media-four-language-private-index.json",
+      "index_sha256": "2d9addbd22e44b210c717f1adfb39e83d9fa6c50c05061db03b830de15c6845a",
+      "scope": "Actually read all ten English paragraphs and all forty localized paragraphs, titles, full summaries and headings. Actually viewed all sixteen final images in the three supplied contacts. Existing forty-one soundtrack objects compared exactly to author preimages; no redundant fetch or claim of audition.",
+      "primary_sources_actually_read": [
+        {
+          "url": "https://www.starwars.com/news/star-wars-jedi-survivor-is-here",
+          "finding": "Original April 28, 2023 launch; five years after Fallen Order and original PS5/Series/PC platforms."
+        },
+        {
+          "url": "https://www.paradoxinteractive.com/games/age-of-wonders-4/news/age-of-wonders-4-dev-diary-1",
+          "finding": "Original January 19 announcement, May 2 launch, 54 Tomes/six affinities, spring art direction and development history."
+        },
+        {
+          "url": "https://www.paradoxinteractive.com/games/age-of-wonders-4/news/age-of-wonders-4-dev-diary-2",
+          "finding": "Developer account of cultures, society traits, Tome of Faith and seven Empire Tree branches; images visibly match."
+        },
+        {
+          "url": "https://www.nintendo.co.jp/ir/en/finance/software/switch.html",
+          "finding": "Actual June 30, 2026 table reports 22.71 million and places Tears of the Kingdom eighth."
+        }
+      ],
+      "findings": [],
+      "owners": [
+        {
+          "entry_id": "wikipedia-70886321",
+          "slug": "jedi",
+          "source": "build/research/catalog-2023-chronological/april-may-three-private/jedi/complete-original-source-media-private-candidate.json",
+          "source_sha256": "6183b3417e3f0a55fc2f234c4b2f7e961628adc91a8c25378eda3edaf8dec1bb",
+          "target": "build/research/catalog-2023-chronological/april-may-three-private/jedi/complete-four-language-private-candidate.json",
+          "target_sha256": "401c7facfb299f0bfbf6f3dc01d7d8246d5c579ea7d0df5f823b9b361951b218",
+          "contact": "build/research/catalog-2023-chronological/april-may-three-private/jedi/final-selected-media-contact.jpg",
+          "contact_sha256": "8ea088b20645459e93b7e3f7bc3eeab2854804ddcbf8b86bb8e350e72406101d",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 5,
+          "tracks": 6,
+          "finite_errata": 0
+        },
+        {
+          "entry_id": "workbook-05-02-age-of-wonders-4",
+          "slug": "wonders",
+          "source": "build/research/catalog-2023-chronological/april-may-three-private/wonders/complete-original-source-media-private-candidate.json",
+          "source_sha256": "547ef0af866615c4012db6c2090ec8b9bc8065f55b6ae9f250676f8e1291479b",
+          "target": "build/research/catalog-2023-chronological/april-may-three-private/wonders/complete-four-language-private-candidate.json",
+          "target_sha256": "ddf53cb0537e05b77a243d0767150a02e8acb9a6e0ffb65bfdef2c49212ead98",
+          "contact": "build/research/catalog-2023-chronological/april-may-three-private/wonders/final-selected-media-contact.jpg",
+          "contact_sha256": "30f9ff5dbdeb3e9aa84bd656660034c7c7ddb7f73de06856afb33612eb7f18e4",
+          "english_cards": 4,
+          "localized_cards": 16,
+          "images": 6,
+          "tracks": 3,
+          "finite_errata": 0
+        },
+        {
+          "entry_id": "wikipedia-67760003",
+          "slug": "zelda",
+          "source": "build/research/catalog-2023-chronological/april-may-three-private/zelda/complete-original-source-media-private-candidate.json",
+          "source_sha256": "d45b913e5ff94055b761e3e8fbcc02c5dd9619d1ae7e2f518c15ac027d323d76",
+          "target": "build/research/catalog-2023-chronological/april-may-three-private/zelda/complete-four-language-private-candidate.json",
+          "target_sha256": "9a9a627eefe96c53bdeb508d70101bf604c78eea4b0c3410631b9e698209a41a",
+          "contact": "build/research/catalog-2023-chronological/april-may-three-private/zelda/final-selected-media-contact.jpg",
+          "contact_sha256": "be2c1675497186299cdfafab78a683755ee16fc206f48e8a34211e344fe50961",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 5,
+          "tracks": 32,
+          "finite_errata": 1
+        }
+      ],
+      "production_writes": false
+    }
+  }
+}

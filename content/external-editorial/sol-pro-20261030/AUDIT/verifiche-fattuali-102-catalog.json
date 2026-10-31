@@ -1,0 +1,841 @@
+{
+  "batch_id": "102-catalog",
+  "status": "completed",
+  "sources": [
+    {
+      "source_id": "eve-announcement",
+      "url": "https://community.eveonline.com/news/news-channels/press-releases/new-release-date-for-eve-online-the-second-genesis-announced-1/",
+      "title": "New Release Date for EVE Online: The Second Genesis Announced",
+      "publisher": "CCP, comunicato del marzo 2003",
+      "accessed_at": "2026-10-30",
+      "scope": "Previsione di distribuzione il 6 maggio in Nord America ed Europa; promessa del mondo condiviso; publisher regionali SSI e Crucial.",
+      "limitation": "Annuncio, non prova consuntiva della presenza nei negozi. CCP è presentata come sviluppatore, senza attribuirle indistintamente l’autopubblicazione regionale; il footer aziendale moderno non viene retrodatato."
+    },
+    {
+      "source_id": "eve-first-login",
+      "url": "https://www.eveonline.com/news/view/happy-birthday-everyone",
+      "title": "Happy birthday everyone!",
+      "publisher": "CCP Hellmar, 6 maggio 2004",
+      "accessed_at": "2026-10-30",
+      "scope": "Ricorda il primo personaggio creato da un cliente su Tranquility il 6 maggio 2003 alle 08:57.",
+      "limitation": "Testimonianza diretta retrospettiva aperta e letta. Attesta disponibilità del servizio, non l’identico arrivo delle confezioni in ogni negozio."
+    },
+    {
+      "source_id": "eve-projects",
+      "url": "https://www.eveonline.com/news/view/stronger-organizations",
+      "title": "Stronger Organizations",
+      "publisher": "CCP, 1 novembre 2023",
+      "accessed_at": "2026-10-30",
+      "scope": "Descrive Corporation Projects e i piani Havoc: pagamenti automatici, copia progetti, delega a manager, scansioni e fabbricazione.",
+      "limitation": "Pagina aperta e letta. È un’anteprima dell’espansione prevista per il 14 novembre, quindi la feature mantiene la semantica annunciato/proposto e non dichiara l’attuazione sulla sola base di questa fonte."
+    },
+    {
+      "source_id": "eve-rescue",
+      "url": "https://forums.eveonline.com/t/eve-scout-rescues-5000th-stranded-capsuleer/441477",
+      "title": "EvE-Scout rescues 5000th stranded capsuleer",
+      "publisher": "Katia Sae, forum ufficiale EVE, 2 marzo 2024",
+      "accessed_at": "2026-10-30",
+      "scope": "Il partecipante riferisce il cinquemillesimo soccorso e descrive operazioni di ricerca e depositi nello spazio dei wormhole.",
+      "limitation": "Letto il messaggio. Il numero è un traguardo dichiarato dall’organizzazione, non un conteggio indipendente verificato dall’assistente."
+    },
+    {
+      "source_id": "eve-community",
+      "url": "https://www.eveonline.com/news/view/community-beat-for-17-january",
+      "title": "Community Beat for 17 January",
+      "publisher": "CCP, 17 gennaio 2025",
+      "accessed_at": "2026-10-30",
+      "scope": "Ricorda il prossimo decimo anniversario di EvE-Scout e descrive sito delle connessioni Thera/Turnur e segnalibri pubblici.",
+      "limitation": "Resoconto del publisher aperto e letto; non attestazione diretta dell’assistente di tutte le operazioni di soccorso."
+    },
+    {
+      "source_id": "matrix-sales",
+      "url": "https://www.gamespot.com/articles/ataris-finances-down-psp-and-ds-support-up/1100-6095614/",
+      "title": "Atari’s finances down, PSP and DS support up",
+      "publisher": "GameSpot, resoconto finanziario contemporaneo del maggio 2004",
+      "accessed_at": "2026-10-30",
+      "scope": "Riporta la vendita di oltre cinque milioni di copie dall’uscita del precedente 15 maggio.",
+      "limitation": "Letto il contenuto indicizzato. Dato dichiarato da Atari e riportato dalla stampa; non rapporto finanziario originale direttamente esaminato. La prosa conserva cinque milioni al maggio 2004, non un totale aggiornato."
+    },
+    {
+      "source_id": "lost-release",
+      "url": "https://www.nintendoworldreport.com/pr/8688/lost-kingdoms-ii-ships",
+      "title": "Activision Deals a New Hand of RPG Adventure With the Release of Lost Kingdoms II",
+      "publisher": "Activision, 22 maggio 2003, riprodotto da Nintendo World Report",
+      "accessed_at": "2026-10-30",
+      "scope": "Il comunicato dichiara esplicitamente il gioco già disponibile nei negozi nordamericani; conferma FromSoftware, Tara e carte trasformazione.",
+      "limitation": "Comunicato riprodotto aperto e letto. La pagina investor.activision.com risponde 403 e non è dichiarata letta. Disponibilità attestata entro il 22; non prova l’ora del primo acquisto in ogni negozio. Non importati nuovi numeri di carte o mondi."
+    },
+    {
+      "source_id": "wario-manual",
+      "url": "https://manualzz.com/doc/22716298/nintendo-wario-world-video-game-instruction-booklet",
+      "title": "Wario World — instruction booklet",
+      "publisher": "Nintendo / Treasure, manuale riprodotto da Manualzz",
+      "accessed_at": "2026-10-30",
+      "scope": "Distingue tesori negli scrigni colorati, altri oggetti nelle stanze delle botole e salvataggio degli Spritelings.",
+      "limitation": "Letti i passaggi pertinenti nell’OCR, piuttosto imperfetto. Scansione non visionata e gioco non eseguito; la prosa usa ricompense/oggetti da raccogliere senza confondere tutte le categorie con Treasure."
+    },
+    {
+      "source_id": "wario-release",
+      "url": "https://www.nintendo.com/en-gb/Games/Nintendo-GameCube/Wario-World-269336.html",
+      "title": "Wario World — Nintendo GameCube",
+      "publisher": "Nintendo UK",
+      "accessed_at": "2026-10-30",
+      "scope": "La scheda ufficiale indica 20 giugno 2003; descrive il Black Jewel e il ruolo di Wario nell’avventura tridimensionale.",
+      "limitation": "Scheda aperta e letta. Il campo moderno Developer Nintendo non sostituisce Treasure già documentato nel materiale; nessun automatismo fra campo catalografico attuale e credito storico."
+    },
+    {
+      "source_id": "aw2-region",
+      "url": "https://www.mobygames.com/game/9610/advance-wars-2-black-hole-rising/",
+      "title": "Advance Wars 2: Black Hole Rising",
+      "publisher": "MobyGames",
+      "accessed_at": "2026-10-30",
+      "scope": "Riscontro catalografico del 23 giugno 2003 e del contesto Nintendo of America, utile a sostituire il falso valore regionale Original commercial release.",
+      "limitation": "Letto il risultato indicizzato, non un comunicato consuntivo Nintendo. Il giorno fornito viene mantenuto senza rivendicare una nuova verifica primaria universale; i calendari europei del giugno 2003 non sono usati come prova USA."
+    },
+    {
+      "source_id": "joe-conference",
+      "url": "https://www.gamedeveloper.com/business/postcard-from-gdc-2005-lessons-from-viewtiful-joe-making-a-creatively-and-financially-successful-new-game",
+      "title": "Postcard from GDC 2005: Lessons from Viewtiful Joe",
+      "publisher": "Brandon Sheffield, Gamasutra / Game Developer, 11 marzo 2005",
+      "accessed_at": "2026-10-30",
+      "scope": "Resoconto diretto del discorso di Atsushi Inaba: progetto di crescita del personale, 12 mesi previsti diventati 21, piccolo budget, VFX come punto fermo.",
+      "limitation": "Articolo aperto e letto; non video integrale della conferenza. La produzione non viene spiegata con motivazioni ulteriori rispetto alla testimonianza riportata."
+    },
+    {
+      "source_id": "joe-conversation",
+      "url": "https://www.platinumgames.com/official-blog/article/7064",
+      "title": "Atsushi Inaba and Hideki Kamiya — interview",
+      "publisher": "PlatinumGames, pubblicazione 6 febbraio 2015 di un’intervista del 6 giugno 2012",
+      "accessed_at": "2026-10-30",
+      "scope": "Inaba ricorda squadra piccola e responsabilità di Kamiya; conversazione sul rapporto fra director e producer.",
+      "limitation": "Pagina ufficiale aperta e letta. La conversazione passa anche a Okami: gli episodi specifici di quell’altro gioco non vengono attribuiti automaticamente a Viewtiful Joe."
+    },
+    {
+      "source_id": "joe-release",
+      "url": "https://www.nintendo.co.jp/ngc/before/03_0108.html",
+      "title": "2003年1月～8月発売 ライセンシーソフト",
+      "publisher": "Nintendo, catalogo storico GameCube",
+      "accessed_at": "2026-10-30",
+      "scope": "Elenco ufficiale: Viewtiful Joe, Capcom, 26 giugno 2003; conferma regione giapponese.",
+      "limitation": "Pagina aperta e letta. L’elenco distingue anche Lost Kingdoms II / Rune II del 23 maggio e Enter the Matrix del 19 giugno in Giappone; il 15 maggio del testo Matrix non viene chiamato data universale di tutte le regioni."
+    },
+    {
+      "source_id": "joe-manual",
+      "url": "https://www.scribd.com/document/1041498413/Viewtiful-Joe-Capcom-Co-Ltd",
+      "title": "Viewtiful Joe — manual",
+      "publisher": "Capcom, manuale riprodotto",
+      "accessed_at": "2026-10-30",
+      "scope": "Passaggi su Life Marks, hamburger, VFX, bottiglie, forma normale, Slow/Mach/Zoom, Viewtifuls e V-Points.",
+      "limitation": "Letta la trascrizione OCR disponibile, non la scansione. Il testo consultato non esplicita il danno subito con Zoom; non gli viene attribuita una conferma che non contiene."
+    },
+    {
+      "source_id": "joe-guide",
+      "url": "https://gamefaqs.gamespot.com/gamecube/562548-viewtiful-joe/faqs/26257",
+      "title": "Viewtiful Joe FAQ / Walkthrough, versione 2.5",
+      "publisher": "Andrew Bautista / Warrior of Zarona, 5 febbraio 2004, GameFAQs",
+      "accessed_at": "2026-10-30",
+      "scope": "Guida di prima mano su mosse, effetti Slow/Mach/Zoom e condizioni di gioco.",
+      "limitation": "Testo aperto e letto nei passaggi pertinenti. Non manuale ufficiale; nomi delle mosse dichiarati non ufficiali dall’autore non vengono aggiunti."
+    },
+    {
+      "source_id": "joe-study",
+      "url": "https://www.researchgate.net/publication/234817368_Educating_the_fighter_buttonmashing_seeing_being",
+      "title": "Educating the fighter: buttonmashing, seeing, being",
+      "publisher": "Kurt D. Squire, On the Horizon 13(2), 2005, DOI 10.1108/10748120510608106",
+      "accessed_at": "2026-10-30",
+      "scope": "Studio basato su circa quaranta ore di gioco dell’autore e osservazione di altri giocatori. Tabella 3: Zoom aumenta tutti i danni; Slow/Mach e consumo risorsa.",
+      "limitation": "Letti metodo e tabella nel testo reso disponibile dall’autore. Riscontro di osservazione diretta, non specifica Capcom: la formula all damage sostiene il mantenimento del dato fornito ma non documenta coefficienti numerici, che non vengono inventati."
+    },
+    {
+      "source_id": "eyetoy-credits",
+      "url": "https://raido.moe/staff/ps2/ps2_eyetoy_play.html",
+      "title": "EyeToy: Play — credits, edizione giapponese",
+      "publisher": "Crediti originali trascritti su Raido",
+      "accessed_at": "2026-10-30",
+      "scope": "Ron Festejo Producer; Pete Marshall Lead Programmer; Jamie MacDonald Development Director.",
+      "limitation": "Trascrizione aperta e letta; non titoli di coda personalmente riprodotti. Development Director viene reso come supervisione dello sviluppo, senza confonderlo con l’unico autore creativo."
+    },
+    {
+      "source_id": "kirby-release",
+      "url": "https://www.nintendo.co.jp/ngc/gkyj/index.html",
+      "title": "Kirby Air Ride — sito originale",
+      "publisher": "Nintendo / HAL Laboratory",
+      "accessed_at": "2026-10-30",
+      "scope": "La pagina ufficiale indica 11 luglio 2003 e 1–4 giocatori.",
+      "limitation": "Pagina aperta e letta; dati presenti anche nell’alternativa testuale degli elementi grafici. Non dichiarata visione o esecuzione del gioco."
+    },
+    {
+      "source_id": "kirby-manual-conversion",
+      "url": "https://manuals.plus/m/ed11addd49967fd1fd6ab3a3ce98668793484a36dcdb7d031b836c3021abb584",
+      "title": "Kirby Air Ride — manual, testo convertito",
+      "publisher": "Manuals.plus, conversione di un manuale Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "Passaggi su tre modalità, comandi e veicoli; la pagina distingue Wagon Star senza boost dalla guida ordinaria.",
+      "limitation": "La pagina dichiara di essere una conversione e può contenere errori: non equivale alla lettura della scansione originale. Il riferimento a modem/adattatori non viene importato. La prosa descrive i comandi usuali, senza estendere ogni proprietà a tutte le macchine."
+    },
+    {
+      "source_id": "kotor-anniversary",
+      "url": "https://www.bioware.com/bioware-celebrates-the-tenth-anniversary-of-knights-of-the-old-republic/",
+      "title": "BioWare Celebrates the Tenth Anniversary of Knights of the Old Republic",
+      "publisher": "BioWare, 15 luglio 2013",
+      "accessed_at": "2026-10-30",
+      "scope": "Lo sviluppatore identifica esplicitamente il 15 luglio come decimo anniversario.",
+      "limitation": "Fonte primaria retrospettiva aperta e letta, non un registro contemporaneo delle vendite nei negozi. Usata come data del lancio celebrato ufficialmente, circoscritta all’Xbox nordamericano."
+    },
+    {
+      "source_id": "kotor-xbox-preview",
+      "url": "https://worthplaying.com/article/2003/7/9/news/11108-star-wars-knights-of-the-old-republic-xbox-goes-gold/",
+      "title": "Star Wars: Knights of the Old Republic — Xbox Goes Gold",
+      "publisher": "LucasArts, 9 luglio 2003, comunicato riprodotto da WorthPlaying",
+      "accessed_at": "2026-10-30",
+      "scope": "Il 16 luglio era la disponibilità futura indicata nell’annuncio gold.",
+      "limitation": "Riscontro individuato e letto dal coordinatore nel lavoro parallelo. Previsione, distinta dall’anniversario ufficiale del 15; non prova di prima disponibilità effettiva il 16."
+    },
+    {
+      "source_id": "kotor-pc-store",
+      "url": "https://store.steampowered.com/app/32370/",
+      "title": "STAR WARS — Knights of the Old Republic",
+      "publisher": "Pagina ufficiale del gioco su Steam",
+      "accessed_at": "2026-10-30",
+      "scope": "Indica 19 novembre 2003 per la versione PC.",
+      "limitation": "Pagina aperta e letta. Metadato retrospettivo attuale, non comunicato consuntivo di vendita del 2003; mantiene la data già fornita, senza vantare una prova autonoma del primo acquisto."
+    },
+    {
+      "source_id": "kotor-pc-preview",
+      "url": "https://www.gamespot.com/articles/pc-knights-of-the-old-republic-golden/1100-6081750/",
+      "title": "PC Knights of the Old Republic golden",
+      "publisher": "Tor Thorsen, GameSpot, 11 novembre 2003",
+      "accessed_at": "2026-10-30",
+      "scope": "Indica come prevista una data di spedizione del 18 novembre.",
+      "limitation": "Testo pertinente letto nell’indicizzazione. Non dimostra disponibilità retail il 18 e non contraddice da solo il 19 della scheda commerciale; nessun arbitraggio basato sulla sola maggioranza dei database."
+    },
+    {
+      "source_id": "kotor-manual",
+      "url": "https://store.steampowered.com/manual/32370",
+      "title": "Star Wars: Knights of the Old Republic — PC manual",
+      "publisher": "LucasArts / BioWare",
+      "accessed_at": "2026-10-30",
+      "scope": "Allineamento, classi iniziali e successivo addestramento Jedi; poteri di allineamento opposto costano più punti Forza; padronanza di un lato dà abilità specifiche.",
+      "limitation": "PDF letto nei passaggi pertinenti, incluse pagine PDF 8 e 20–21. Scansione non visionata e gioco non eseguito. Corretta la generica idea che la scelta di allineamento renda indiscriminatamente indisponibili le abilità opposte."
+    },
+    {
+      "source_id": "kotor-remake-status",
+      "url": "https://tech.yahoo.com/gaming/articles/still-development-thats-star-wars-120051155.html",
+      "title": "Yes, It’s Still in Development — Star Wars KOTOR Remake",
+      "publisher": "Simon Cardy, IGN, 6 marzo 2026, ripubblicazione Yahoo",
+      "accessed_at": "2026-10-30",
+      "scope": "Intervista diretta: Tim Willits conferma che il remake è ancora in sviluppo.",
+      "limitation": "Testo indicizzato letto; apertura diretta restituisce 403. Ultimo riscontro diretto consultato del marzo 2026, non annuncio di uscita. Non importate voci su cancellazioni o nuovi studi non presenti nell’INPUT."
+    },
+    {
+      "source_id": "kotor-fate",
+      "url": "https://www.arcanautstudios.com/press-release",
+      "title": "Star Wars: Fate of the Old Republic — announcement",
+      "publisher": "Arcanaut Studios / Lucasfilm Games",
+      "accessed_at": "2026-10-30",
+      "scope": "Annuncio ufficiale di gioco di ruolo d’azione in sviluppo con Casey Hudson, presentato come erede spirituale.",
+      "limitation": "Pagina ufficiale aperta e letta. Conferma natura del progetto e stato di sviluppo iniziale, non disponibilità al pubblico; nessuna data futura inventata."
+    }
+  ],
+  "decisions": [
+    {
+      "target_id": "workbook-05-06-eve-online",
+      "problem": "La promessa di un mondo unico rischia di essere estesa a qualsiasi server e regione; CCP non va confusa con tutti gli editori regionali.",
+      "conclusion": "Racconto circoscritto a Tranquility e a CCP come sviluppatore. Il 6 maggio 2003 è sostenuto dal primo accesso di un cliente ricordato direttamente dallo sviluppatore, insieme alla previsione regionale originaria.",
+      "source_ids": [
+        "eve-announcement",
+        "eve-first-login"
+      ],
+      "text_applied": "Quattro card preservano persistenza, economia, logistica, diplomazia e storia dei giocatori senza nuove statistiche di affluenza."
+    },
+    {
+      "target_id": "workbook-05-06-eve-online",
+      "problem": "La feature deve distinguere piani Havoc, conteggio dichiarato dei soccorsi e resoconto del publisher.",
+      "conclusion": "Havoc resta annuncio di strumenti; 5.000 è traguardo riferito da Katia Sae per l’organizzazione; decimo anniversario, Thera, Turnur e segnalibri restano attribuiti a CCP nel gennaio 2025.",
+      "source_ids": [
+        "eve-projects",
+        "eve-rescue",
+        "eve-community"
+      ],
+      "text_applied": "Tutte e quattro le card della feature complete in cinque lingue; titolo descrittivo adattato, ID e separazione dal corpo principale conservati."
+    },
+    {
+      "target_id": "wikipedia-232766",
+      "problem": "Il dato delle vendite necessita di un ambito temporale; il 15 maggio non è la data di ogni edizione regionale.",
+      "conclusion": "Conservati cinque milioni dichiarati entro maggio 2004 e uscita originaria del 15 maggio 2003, senza chiamarla universale. Il catalogo Nintendo documenta l’edizione giapponese successiva.",
+      "source_ids": [
+        "matrix-sales",
+        "joe-release"
+      ],
+      "text_applied": "Sette card conservano ora di filmati originali, regia e cast, entrambi i personaggi e interpreti, tutti i sistemi, 250.000 Sentinelle e successione degli eventi. Eliminato dalla prima bozza un nesso causale non fornito fra legame cinematografico e vendite."
+    },
+    {
+      "target_id": "lost-kingdoms-ii-2003",
+      "problem": "La data nordamericana del 22 maggio va distinta da un annuncio di spedizione e da quella giapponese.",
+      "conclusion": "Il comunicato Activision del 22 maggio dichiara disponibilità retail in Nord America. Il catalogo Nintendo indica 23 maggio in Giappone.",
+      "source_ids": [
+        "lost-release",
+        "joe-release"
+      ],
+      "text_applied": "Conservato il metadato fornito 22 maggio/Nord America; tre card preservano Tara, Katia, True Runestone, trasformazioni, combinazioni, ritorni nelle aree, tutti e sei gli elementi e Kota Hoshino."
+    },
+    {
+      "target_id": "wario-world-2003",
+      "problem": "Treasure nelle stanze delle botole rischia di confondere ricompense generiche e categoria specifica dei tesori negli scrigni.",
+      "conclusion": "Usati oggetti o ricompense da raccogliere, mantenendo enigmi ed esplorazione; nessuna nuova lista di oggetti non necessaria. Data europea 20 giugno confermata dalla scheda Nintendo.",
+      "source_ids": [
+        "wario-manual",
+        "wario-release"
+      ],
+      "text_applied": "Tre card complete con Black Jewel, mosse, armi ambientali, Spritelings e produzione Treasure 2003."
+    },
+    {
+      "target_id": "advance-wars-2-black-hole-rising-2003",
+      "problem": "Original commercial release non è una regione.",
+      "conclusion": "Proposta regione North America per il 23 giugno 2003 già fornito. Il riscontro è catalografico, non una nuova prova consuntiva primaria del giorno.",
+      "source_ids": [
+        "aw2-region"
+      ],
+      "text_applied": "Mantenuti comandanti, Super CO Powers, scelta spesa/attesa, teatri nazionali, War Room, Versus e mappe create dai giocatori."
+    },
+    {
+      "target_id": "workbook-06-26-viewtiful-joe",
+      "problem": "Date del progetto e discorsi retrospettivi devono restare attribuiti; alcuni episodi dell’intervista riguardano anche Okami.",
+      "conclusion": "Conservati il resoconto di Inaba e il rapporto professionale generale con Kamiya, senza importare episodi specifici di Okami. Release 26 giugno 2003 circoscritta al Giappone.",
+      "source_ids": [
+        "joe-conference",
+        "joe-conversation",
+        "joe-release"
+      ],
+      "text_applied": "Sette card, 12/21 mesi, priorità del personale e VFX preservati. Prosa concreta al posto dell’equivalenza retorica fra montaggio e combattimento."
+    },
+    {
+      "target_id": "workbook-06-26-viewtiful-joe",
+      "problem": "Effetti VFX, risorse e danni di Zoom richiedono distinzione fra manuale e osservazioni dei giocatori.",
+      "conclusion": "Mantenute le meccaniche fornite. Manuale e guida confermano il quadro; lo studio di Squire descrive Zoom come incremento di tutti i danni. Non aggiunti coefficienti o mosse dalla ricerca.",
+      "source_ids": [
+        "joe-manual",
+        "joe-guide",
+        "joe-study"
+      ],
+      "text_applied": "Preservati Slow/Mach/Zoom, combinazione di due effetti, ritorno alla forma normale, bottiglie, Life Marks, hamburger, Viewtifuls/V-Points, negozi, valutazioni e Dante PS2."
+    },
+    {
+      "target_id": "eyetoy-play-2003",
+      "problem": "Direzione di Jamie MacDonald può essere letta come unico ruolo creativo, mentre il credito è Development Director.",
+      "conclusion": "Resa come supervisione dello sviluppo. Restano Ron Festejo produttore e Pete Marshall responsabile della programmazione.",
+      "source_ids": [
+        "eyetoy-credits"
+      ],
+      "text_applied": "Tre card complete; rilettura ripristina esplicitamente il rapporto fra London Studio, prima raccolta e nuova telecamera Sony. Conservati dodici giochi, foto sui record, illuminazione e uscite regionali."
+    },
+    {
+      "target_id": "kirby-air-ride-2003",
+      "problem": "L’affermazione sui comandi può estendere carica e boost a tutte le macchine; il testo convertito di un manuale non equivale alla scansione originale.",
+      "conclusion": "Descritti i comandi abituali, senza universalizzare caratteristiche di ogni macchina. Nintendo conferma il contesto giapponese dell’11 luglio e fino a quattro giocatori.",
+      "source_ids": [
+        "kirby-release",
+        "kirby-manual-conversion"
+      ],
+      "text_applied": "Quattro card conservano tutte e tre le modalità, aspirazione, volo, potenziamenti trasferiti, macchina pesante, eventi, attacchi degli avversari e checklist. Nessuna compatibilità modem o altro elemento dubbio importato."
+    },
+    {
+      "target_id": "wikipedia-563196",
+      "problem": "Il 16 luglio Xbox dell’INPUT deriva dalla disponibilità prevista nel comunicato gold; la data commemorata da BioWare è il 15.",
+      "conclusion": "Proposta 15 luglio 2003 Nord America come lancio ufficialmente riconosciuto da BioWare, distinguendo previsione del 16 e testimonianza retrospettiva.",
+      "source_ids": [
+        "kotor-anniversary",
+        "kotor-xbox-preview"
+      ],
+      "text_applied": "Prima card nelle cinque lingue attribuisce a BioWare la data. Originali e collocazione del catalogo non modificati."
+    },
+    {
+      "target_id": "wikipedia-563196",
+      "problem": "Per Windows alcuni cataloghi indicano il 18 novembre, ma il pezzo contemporaneo usato come riferimento parla di spedizione prevista.",
+      "conclusion": "Mantenuto 19 novembre 2003 dell’INPUT e della scheda Steam; il 18 non è trattato come consuntivo retail. Limite della fonte retrospettiva esplicito.",
+      "source_ids": [
+        "kotor-pc-store",
+        "kotor-pc-preview"
+      ],
+      "text_applied": "Conservati tutti i port e tutte le console retrocompatibili, abbreviazioni KOTOR/KotOR e Switch 11 novembre 2021."
+    },
+    {
+      "target_id": "wikipedia-563196",
+      "problem": "La descrizione delle abilità può far pensare che allineamento e classe Jedi coincidano con un blocco generale dei poteri opposti.",
+      "conclusion": "Classi iniziali Scout/Soldier/Scoundrel distinte dal divenire Jedi. Allineamento modifica i costi dei poteri e padronanza di un lato dà abilità specifiche.",
+      "source_ids": [
+        "kotor-manual"
+      ],
+      "text_applied": "Seconda card mantiene storia, epoca, Malak, Repubblica, personalizzazione, pianeti, combattimenti per round e scelte dialogiche, con la precisazione necessaria del sistema."
+    },
+    {
+      "target_id": "wikipedia-563196",
+      "problem": "Remake e Fate of the Old Republic sono progetti annunciati, non opere già pubblicate.",
+      "conclusion": "Il remake è descritto in sviluppo sulla base dell’intervista diretta del marzo 2026; Fate resta il gioco di ruolo d’azione annunciato nel dicembre 2025 con Casey Hudson, erede spirituale in sviluppo.",
+      "source_ids": [
+        "kotor-remake-status",
+        "kotor-fate"
+      ],
+      "text_applied": "Preservati i seguiti 2004/2011, studi, suggerimento di BioWare, annuncio 2021 e passaggio ad altri sviluppatori riportato nel materiale. Nessuna release futura inventata."
+    }
+  ],
+  "metadata_proposals": [
+    {
+      "target_id": "workbook-05-06-eve-online",
+      "field": "timeline_release",
+      "original": {
+        "year": 2003,
+        "month": 5,
+        "day": 6,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed": {
+        "year": 2003,
+        "month": 5,
+        "day": 6,
+        "precision": "day",
+        "region": "North America and Europe",
+        "version": "Servizio online Windows / Tranquility; disponibilità del servizio documentata"
+      },
+      "source_ids": [
+        "eve-announcement",
+        "eve-first-login"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "advance-wars-2-black-hole-rising-2003",
+      "field": "timeline_release",
+      "original": {
+        "year": 2003,
+        "month": 6,
+        "day": 23,
+        "precision": "day",
+        "region": "Original commercial release"
+      },
+      "proposed": {
+        "year": 2003,
+        "month": 6,
+        "day": 23,
+        "precision": "day",
+        "region": "North America",
+        "version": "Game Boy Advance; regione corregge la dicitura non geografica, giorno mantenuto dal materiale"
+      },
+      "source_ids": [
+        "aw2-region"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "workbook-06-26-viewtiful-joe",
+      "field": "timeline_release",
+      "original": {
+        "year": 2003,
+        "month": 6,
+        "day": 26,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed": {
+        "year": 2003,
+        "month": 6,
+        "day": 26,
+        "precision": "day",
+        "region": "Japan",
+        "version": "GameCube"
+      },
+      "source_ids": [
+        "joe-release"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "wikipedia-563196",
+      "field": "timeline_release",
+      "original": {
+        "year": 2003,
+        "month": 7,
+        "day": 16,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed": {
+        "year": 2003,
+        "month": 7,
+        "day": 15,
+        "precision": "day",
+        "region": "North America",
+        "version": "Xbox; data del lancio riconosciuta ufficialmente da BioWare"
+      },
+      "source_ids": [
+        "kotor-anniversary",
+        "kotor-xbox-preview"
+      ],
+      "applied_to_catalog": false
+    }
+  ],
+  "expansion_assessments": [
+    {
+      "target_id": "workbook-05-06-eve-online",
+      "main_cards": 4,
+      "feature_cards": 4,
+      "entry_kind": "game",
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 1,
+      "rationale": "Priorità editoriale per la costruzione di una società persistente e di un’economia condivisa."
+    },
+    {
+      "target_id": "wikipedia-232766",
+      "main_cards": 7,
+      "feature_cards": 0,
+      "entry_kind": "game",
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 0,
+      "rationale": "Priorità editoriale per il rapporto produttivo e narrativo fra videogioco e film."
+    },
+    {
+      "target_id": "lost-kingdoms-ii-2003",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "entry_kind": "game",
+      "threshold_applicable": false,
+      "required_main_cards": null,
+      "missing_cards": 0,
+      "rationale": "Lost Kingdoms II ha tre nuclei pertinenti e autonomi. Il materiale non ne impone da solo la classificazione fra i giochi prioritari; la soglia non si applica automaticamente a ogni titolo."
+    },
+    {
+      "target_id": "midtown-madness-3-2003",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "entry_kind": "game",
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Priorità editoriale per il debutto su console della serie e l’organizzazione delle città aperte."
+    },
+    {
+      "target_id": "wario-world-2003",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "entry_kind": "game",
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Priorità editoriale per il lavoro di Treasure sul personaggio di Wario e sul combattimento fisico."
+    },
+    {
+      "target_id": "advance-wars-2-black-hole-rising-2003",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "entry_kind": "game",
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Priorità editoriale per l’evoluzione dello strategico portatile e delle decisioni sui poteri dei comandanti."
+    },
+    {
+      "target_id": "workbook-06-26-viewtiful-joe",
+      "main_cards": 7,
+      "feature_cards": 0,
+      "entry_kind": "game",
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 0,
+      "rationale": "Priorità editoriale per la relazione fra effetti cinematografici, combattimento e lavoro del piccolo gruppo di sviluppo."
+    },
+    {
+      "target_id": "eyetoy-play-2003",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "entry_kind": "game",
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Priorità editoriale per l’introduzione del corpo del giocatore come comando attraverso una telecamera."
+    },
+    {
+      "target_id": "kirby-air-ride-2003",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "entry_kind": "game",
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 1,
+      "rationale": "Priorità editoriale per il rapporto fra guida semplificata, modalità diverse e preparazione in City Trial."
+    },
+    {
+      "target_id": "wikipedia-563196",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "entry_kind": "game",
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 1,
+      "rationale": "Priorità editoriale per il gioco di ruolo di BioWare in Star Wars e le scelte di allineamento."
+    }
+  ],
+  "editorial_review": {
+    "english_first": true,
+    "five_languages_reviewed": [
+      "en",
+      "it",
+      "fr",
+      "de",
+      "es"
+    ],
+    "checks": [
+      "10 voci, 41 card principali e 4 di feature: 45 card per lingua e 225 versioni complete",
+      "Inglese salvato e riletto prima degli adattamenti; checkpoint distinti per ciascuna lingua",
+      "Sommari inglesi da 32 a 37 parole; quello della feature ha 31 parole; tutti identificano contenuto e tratto distintivo",
+      "Confronto con INPUT di date, cifre, nomi, crediti, meccaniche, eventi di trama, piattaforme e stato dei progetti",
+      "Le card più compatte di Enter the Matrix eliminano ripetizioni sui ruoli già presentati, mantenendo i sistemi e tutti i passaggi narrativi; KOTOR distingue classi e allineamento senza tagliare le scelte iniziali",
+      "16 interventi finali registrati prima/dopo: bullet time conservato, ruolo della prima raccolta EyeToy ripristinato in cinque lingue, lessico e sintassi tedesca/francese/spagnola migliorati",
+      "Nove giochi valutati prioritari; sette voci richiedono undici nuove card principali in proposte separate. EVE ha quattro card principali più quattro di feature, conteggiate separatamente",
+      "ID, ordine, titoli propri, associazioni media, fonti e licenze originali conservati; nessun HTML o Markdown nei campi"
+    ],
+    "external_verification_limit": "Ricerca mirata ai dubbi emersi, senza dichiarare una nuova verifica primaria di ogni affermazione dell’INPUT. Distinti comunicati preventivi e consuntivi, metadati retrospettivi, trascrizioni, OCR, conversioni e osservazioni dirette di terzi. Nessun gioco eseguito né scansione dichiarata vista quando era disponibile solo testo. Le date fornite senza nuovi conflitti e i crediti non problematici restano nei rispettivi ambiti.",
+    "book_style_references_consulted": false
+  },
+  "review_changes": [
+    {
+      "target_id": "wikipedia-232766",
+      "language": "en",
+      "card_id": "main:3",
+      "field": "text",
+      "reason": "Conservare il nome del procedimento cinematografico già presente nell’INPUT, spiegato attraverso Focus.",
+      "before": "Choosing Niobe or Ghost brings small variations to the story and to how particular missions play out. Most levels use a third-person view, with gunfire and martial arts helping the player defeat opponents and complete objectives. Focus slows time, allowing actions such as shooting in midair and dodging bullets. Some encounters concentrate on a martial arts duel with a single opponent.\n\nVehicle sections, including car journeys and flights aboard the Logos, change with the selected character. Niobe usually steers around obstacles, while Ghost fires at approaching enemies. A separate hacking system accepts codes that unlock special abilities, weapons and secrets, including a two-player versus mode.",
+      "after": "Choosing Niobe or Ghost brings small variations to the story and to how particular missions play out. Most levels use a third-person view, with gunfire and martial arts helping the player defeat opponents and complete objectives. Focus, the game’s bullet-time effect, slows time, allowing actions such as shooting in midair and dodging bullets. Some encounters concentrate on a martial arts duel with a single opponent.\n\nVehicle sections, including car journeys and flights aboard the Logos, change with the selected character. Niobe usually steers around obstacles, while Ghost fires at approaching enemies. A separate hacking system accepts codes that unlock special abilities, weapons and secrets, including a two-player versus mode."
+    },
+    {
+      "target_id": "wikipedia-232766",
+      "language": "it",
+      "card_id": "main:3",
+      "field": "text",
+      "reason": "Conservare il nome del procedimento cinematografico già presente nell’INPUT, spiegato attraverso Focus.",
+      "before": "Scegliere Niobe o Ghost introduce piccole variazioni nella storia e nello svolgimento di alcune missioni. La maggior parte dei livelli adotta una visuale in terza persona: armi da fuoco e arti marziali servono a sconfiggere i nemici e raggiungere gli obiettivi. Focus rallenta il tempo e permette, per esempio, di sparare a mezz'aria o schivare proiettili. Alcuni incontri si concentrano su un duello di arti marziali contro un solo avversario.\n\nLe sezioni a bordo dei veicoli, dalle automobili alla Logos, cambiano in base al personaggio scelto. Di solito Niobe guida evitando gli ostacoli, mentre Ghost spara ai nemici in arrivo. Un sistema di hacking separato consente di inserire codici per sbloccare abilità, armi e segreti, fra cui una modalità versus per due giocatori.",
+      "after": "Scegliere Niobe o Ghost introduce piccole variazioni nella storia e nello svolgimento di alcune missioni. La maggior parte dei livelli adotta una visuale in terza persona: armi da fuoco e arti marziali servono a sconfiggere i nemici e raggiungere gli obiettivi. Focus, la versione del bullet time usata dal gioco, rallenta il tempo e permette, per esempio, di sparare a mezz'aria o schivare proiettili. Alcuni incontri si concentrano su un duello di arti marziali contro un solo avversario.\n\nLe sezioni a bordo dei veicoli, dalle automobili alla Logos, cambiano in base al personaggio scelto. Di solito Niobe guida evitando gli ostacoli, mentre Ghost spara ai nemici in arrivo. Un sistema di hacking separato consente di inserire codici per sbloccare abilità, armi e segreti, fra cui una modalità versus per due giocatori."
+    },
+    {
+      "target_id": "wikipedia-232766",
+      "language": "fr",
+      "card_id": "main:3",
+      "field": "text",
+      "reason": "Conservare il nome del procedimento cinematografico già presente nell’INPUT, spiegato attraverso Focus.",
+      "before": "Le choix de Niobe ou de Ghost entraîne de petites variations dans le récit et le déroulement de certaines missions. La plupart des niveaux adoptent une vue à la troisième personne : armes à feu et arts martiaux servent à vaincre les adversaires et à remplir les objectifs. Focus ralentit le temps, permettant notamment de tirer en plein saut ou d'éviter les balles. Certains affrontements prennent la forme d'un duel d'arts martiaux.\n\nLes passages en véhicule, en voiture ou à bord du Logos, changent selon le personnage choisi. Niobe conduit généralement en évitant les obstacles, tandis que Ghost tire sur les ennemis qui approchent. Un système de piratage distinct accepte des codes débloquant capacités, armes et secrets, dont un mode versus à deux joueurs.",
+      "after": "Le choix de Niobe ou de Ghost entraîne de petites variations dans le récit et le déroulement de certaines missions. La plupart des niveaux adoptent une vue à la troisième personne : armes à feu et arts martiaux servent à vaincre les adversaires et à remplir les objectifs. Focus, l’effet de bullet time du jeu, ralentit le temps, permettant notamment de tirer en plein saut ou d'éviter les balles. Certains affrontements prennent la forme d'un duel d'arts martiaux.\n\nLes passages en véhicule, en voiture ou à bord du Logos, changent selon le personnage choisi. Niobe conduit généralement en évitant les obstacles, tandis que Ghost tire sur les ennemis qui approchent. Un système de piratage distinct accepte des codes débloquant capacités, armes et secrets, dont un mode versus à deux joueurs."
+    },
+    {
+      "target_id": "wikipedia-232766",
+      "language": "de",
+      "card_id": "main:3",
+      "field": "text",
+      "reason": "Conservare il nome del procedimento cinematografico già presente nell’INPUT, spiegato attraverso Focus.",
+      "before": "Je nachdem, ob man Niobe oder Ghost wählt, verändern sich kleinere Teile der Handlung und der Ablauf bestimmter Missionen. Die meisten Abschnitte nutzen eine Verfolgerperspektive. Schusswaffen und Kampfkünste helfen dabei, Gegner zu besiegen und die Aufgaben zu erfüllen. Focus verlangsamt die Zeit und ermöglicht etwa Schüsse mitten im Sprung oder das Ausweichen vor Kugeln. Manche Begegnungen konzentrieren sich auf ein Kampfkunstduell gegen einen einzelnen Gegner.\n\nFahrzeugabschnitte, darunter Autofahrten und Flüge mit der Logos, unterscheiden sich ebenfalls nach der gewählten Figur. Meist steuert Niobe an Hindernissen vorbei, während Ghost auf herannahende Feinde schießt. Ein separates Hacking-System nimmt Codes entgegen, die Fähigkeiten, Waffen und Geheimnisse freischalten, darunter einen Versus-Modus für zwei Personen.",
+      "after": "Je nachdem, ob man Niobe oder Ghost wählt, verändern sich kleinere Teile der Handlung und der Ablauf bestimmter Missionen. Die meisten Abschnitte nutzen eine Verfolgerperspektive. Schusswaffen und Kampfkünste helfen dabei, Gegner zu besiegen und die Aufgaben zu erfüllen. Focus, der Bullet-Time-Effekt des Spiels, verlangsamt die Zeit und ermöglicht etwa Schüsse mitten im Sprung oder das Ausweichen vor Kugeln. Manche Begegnungen konzentrieren sich auf ein Kampfkunstduell gegen einen einzelnen Gegner.\n\nFahrzeugabschnitte, darunter Autofahrten und Flüge mit der Logos, unterscheiden sich ebenfalls nach der gewählten Figur. Meist steuert Niobe an Hindernissen vorbei, während Ghost auf herannahende Feinde schießt. Ein separates Hacking-System nimmt Codes entgegen, die Fähigkeiten, Waffen und Geheimnisse freischalten, darunter einen Versus-Modus für zwei Personen."
+    },
+    {
+      "target_id": "wikipedia-232766",
+      "language": "es",
+      "card_id": "main:3",
+      "field": "text",
+      "reason": "Conservare il nome del procedimento cinematografico già presente nell’INPUT, spiegato attraverso Focus.",
+      "before": "Elegir a Niobe o a Ghost introduce pequeñas variaciones en la historia y en algunas misiones. La mayoría de los niveles utiliza una perspectiva en tercera persona, con armas de fuego y artes marciales para derrotar a los enemigos y cumplir los objetivos. Focus ralentiza el tiempo y permite, por ejemplo, disparar en pleno salto o esquivar balas. Algunos encuentros se centran en un duelo de artes marciales contra un solo rival.\n\nLos tramos en vehículos, incluidos coches y la Logos, cambian según el personaje elegido. Normalmente Niobe conduce evitando obstáculos, mientras Ghost dispara a los enemigos que se acercan. Un sistema de hackeo independiente admite códigos que desbloquean habilidades, armas y secretos, entre ellos un modo versus para dos jugadores.",
+      "after": "Elegir a Niobe o a Ghost introduce pequeñas variaciones en la historia y en algunas misiones. La mayoría de los niveles utiliza una perspectiva en tercera persona, con armas de fuego y artes marciales para derrotar a los enemigos y cumplir los objetivos. Focus, el efecto de bullet time del juego, ralentiza el tiempo y permite, por ejemplo, disparar en pleno salto o esquivar balas. Algunos encuentros se centran en un duelo de artes marciales contra un solo rival.\n\nLos tramos en vehículos, incluidos coches y la Logos, cambian según el personaje elegido. Normalmente Niobe conduce evitando obstáculos, mientras Ghost dispara a los enemigos que se acercan. Un sistema de hackeo independiente admite códigos que desbloquean habilidades, armas y secretos, entre ellos un modo versus para dos jugadores."
+    },
+    {
+      "target_id": "eyetoy-play-2003",
+      "language": "en",
+      "card_id": "main:2",
+      "field": "text",
+      "reason": "Ripristinare esplicitamente il rapporto fra prima raccolta, London Studio e nuovo accessorio Sony.",
+      "before": "Jamie MacDonald oversaw development, with Ron Festejo producing and Pete Marshall serving as lead programmer. EyeToy: Play's first release paired the camera with its game collection; it reached North America in November 2003 and Japan in February 2004. Further EyeToy games expanded the uses of the device. Seeing their own body respond on screen helped players understand the controls, giving people unfamiliar with a conventional controller another way into the games.",
+      "after": "Jamie MacDonald oversaw development, with Ron Festejo producing and Pete Marshall serving as lead programmer. London Studio designed this first collection around Sony's new camera accessory. It reached North America in November 2003 and Japan in February 2004. Further EyeToy games expanded the uses of the device. Seeing their own body respond on screen helped players understand the controls, giving people unfamiliar with a conventional controller another way into the games."
+    },
+    {
+      "target_id": "eyetoy-play-2003",
+      "language": "it",
+      "card_id": "main:2",
+      "field": "text",
+      "reason": "Ripristinare esplicitamente il rapporto fra prima raccolta, London Studio e nuovo accessorio Sony.",
+      "before": "Jamie MacDonald supervisionò lo sviluppo, con Ron Festejo alla produzione e Pete Marshall come responsabile della programmazione. EyeToy: Play esordì abbinando la telecamera alla raccolta di giochi; raggiunse il Nordamerica nel novembre 2003 e il Giappone nel febbraio 2004. Altri titoli EyeToy ampliarono poi gli impieghi della periferica. Vedere il proprio corpo rispondere sullo schermo aiutava a capire i comandi, offrendo un modo di avvicinarsi ai giochi anche a chi aveva poca familiarità con il controller tradizionale.",
+      "after": "Jamie MacDonald supervisionò lo sviluppo, con Ron Festejo alla produzione e Pete Marshall come responsabile della programmazione. London Studio progettò questa prima raccolta attorno alla nuova telecamera di Sony. Raggiunse il Nordamerica nel novembre 2003 e il Giappone nel febbraio 2004. Altri titoli EyeToy ampliarono poi gli impieghi della periferica. Vedere il proprio corpo rispondere sullo schermo aiutava a capire i comandi, offrendo un modo di avvicinarsi ai giochi anche a chi aveva poca familiarità con il controller tradizionale."
+    },
+    {
+      "target_id": "eyetoy-play-2003",
+      "language": "fr",
+      "card_id": "main:2",
+      "field": "text",
+      "reason": "Ripristinare esplicitamente il rapporto fra prima raccolta, London Studio e nuovo accessorio Sony.",
+      "before": "Jamie MacDonald a supervisé le développement, avec Ron Festejo à la production et Pete Marshall à la tête de la programmation. EyeToy: Play a été lancé en associant la caméra à sa collection de jeux ; il est arrivé en Amérique du Nord en novembre 2003, puis au Japon en février 2004. D'autres jeux EyeToy ont ensuite élargi les usages de l'accessoire. Voir son propre corps réagir à l'écran aidait à comprendre les commandes, offrant une porte d'entrée aux personnes peu habituées à une manette classique.",
+      "after": "Jamie MacDonald a supervisé le développement, avec Ron Festejo à la production et Pete Marshall à la tête de la programmation. London Studio a conçu cette première collection autour de la nouvelle caméra de Sony. Elle est arrivée en Amérique du Nord en novembre 2003, puis au Japon en février 2004. D'autres jeux EyeToy ont ensuite élargi les usages de l'accessoire. Voir son propre corps réagir à l'écran aidait à comprendre les commandes, offrant une porte d'entrée aux personnes peu habituées à une manette classique."
+    },
+    {
+      "target_id": "eyetoy-play-2003",
+      "language": "de",
+      "card_id": "main:2",
+      "field": "text",
+      "reason": "Ripristinare esplicitamente il rapporto fra prima raccolta, London Studio e nuovo accessorio Sony.",
+      "before": "Jamie MacDonald beaufsichtigte die Entwicklung, Ron Festejo übernahm die Produktion und Pete Marshall die Leitung der Programmierung. Die erste Veröffentlichung von EyeToy: Play verband Kamera und Spielesammlung; im November 2003 folgte Nordamerika, im Februar 2004 Japan. Weitere EyeToy-Spiele erweiterten später die Einsatzmöglichkeiten des Zubehörs. Den eigenen Körper auf dem Bildschirm reagieren zu sehen erleichterte das Verständnis der Steuerung und gab Menschen ohne Erfahrung mit gewöhnlichen Controllern einen anderen Zugang.",
+      "after": "Jamie MacDonald beaufsichtigte die Entwicklung, Ron Festejo übernahm die Produktion und Pete Marshall die Leitung der Programmierung. London Studio entwickelte diese erste Sammlung rund um Sonys neue Kamera. Im November 2003 erschien sie in Nordamerika, im Februar 2004 in Japan. Weitere EyeToy-Spiele erweiterten später die Einsatzmöglichkeiten des Zubehörs. Den eigenen Körper auf dem Bildschirm reagieren zu sehen erleichterte das Verständnis der Steuerung und gab Menschen ohne Erfahrung mit gewöhnlichen Controllern einen anderen Zugang."
+    },
+    {
+      "target_id": "eyetoy-play-2003",
+      "language": "es",
+      "card_id": "main:2",
+      "field": "text",
+      "reason": "Ripristinare esplicitamente il rapporto fra prima raccolta, London Studio e nuovo accessorio Sony.",
+      "before": "Jamie MacDonald supervisó el desarrollo, con Ron Festejo como productor y Pete Marshall al frente de la programación. EyeToy: Play se estrenó combinando la cámara con su colección de juegos; llegó a Norteamérica en noviembre de 2003 y a Japón en febrero de 2004. Otros títulos EyeToy ampliaron después los usos del accesorio. Ver el propio cuerpo responder en pantalla ayudaba a comprender los controles, ofreciendo otra forma de acercarse al juego a quienes tenían poca experiencia con un mando convencional.",
+      "after": "Jamie MacDonald supervisó el desarrollo, con Ron Festejo como productor y Pete Marshall al frente de la programación. London Studio diseñó esta primera colección alrededor de la nueva cámara de Sony. Llegó a Norteamérica en noviembre de 2003 y a Japón en febrero de 2004. Otros títulos EyeToy ampliaron después los usos del accesorio. Ver el propio cuerpo responder en pantalla ayudaba a comprender los controles, ofreciendo otra forma de acercarse al juego a quienes tenían poca experiencia con un mando convencional."
+    },
+    {
+      "target_id": "workbook-05-06-eve-online",
+      "language": "de",
+      "card_id": "main:1",
+      "field": "text",
+      "reason": "Eliminare un composto artificioso e rendere naturale il riferimento alle reputazioni.",
+      "before": "Zur Veröffentlichung stellte CCP ein Universum in Aussicht, in dem Zehntausende Menschen zusammenkommen könnten, ohne ihre Geschichten auf getrennte Serverwelten zu verteilen. Auf Tranquility begegnen weit voneinander entfernte Gruppen denselben Preisen, Kriegen und Rufgeschichten. Ereignisse verändern diese gemeinsame Welt auch während der Abwesenheit einzelner Mitglieder: Eine Corporation kann sich bis zum nächsten Einloggen wandeln, der Markt auf einen Krieg reagieren oder eine vertraute Route gefährlich werden. Wer zurückkehrt, erfährt auch, was andere inzwischen getan haben.",
+      "after": "Zur Veröffentlichung stellte CCP ein Universum in Aussicht, in dem Zehntausende Menschen zusammenkommen könnten, ohne ihre Geschichten auf getrennte Serverwelten zu verteilen. Auf Tranquility gelten auch für weit voneinander entfernte Gruppen dieselben Preise; Kriege und der Ruf einzelner Beteiligter sind Teil ihrer gemeinsamen Welt. Ereignisse verändern diese gemeinsame Welt auch während der Abwesenheit einzelner Mitglieder: Eine Corporation kann sich bis zum nächsten Einloggen wandeln, der Markt auf einen Krieg reagieren oder eine vertraute Route gefährlich werden. Wer zurückkehrt, erfährt auch, was andere inzwischen getan haben."
+    },
+    {
+      "target_id": "workbook-05-06-eve-online",
+      "language": "de",
+      "card_id": null,
+      "field": "summary",
+      "reason": "Evitare di attribuire necessariamente il lavoro a un gruppo distinto da chi combatte; sintassi più diretta.",
+      "before": "Die Menschen in EVE organisieren Rettungen, teilen Routen und koordinieren Aufgaben neben ihren Kriegen. Dafür müssen andere Aufzeichnungen führen, Bedürfnisse erklären und Informationen pflegen, die Pilotinnen und Piloten bei ihren Reisen helfen.",
+      "after": "Die Menschen in EVE organisieren auch Rettungen, teilen Routen und koordinieren Aufgaben. Dafür braucht es jemanden, der Aufzeichnungen führt, Bedürfnisse erklärt und Informationen pflegt, die anderen bei ihren Reisen helfen."
+    },
+    {
+      "target_id": "kirby-air-ride-2003",
+      "language": "de",
+      "card_id": null,
+      "field": "summary",
+      "reason": "Lessico tedesco naturale per i comandi di un gioco.",
+      "before": "Kirby Air Ride verbindet einfache Rennspielbefehle mit drei unterschiedlichen Modi. Man fährt auf Strecken, verfolgt das Rennen aus der Vogelperspektive oder erkundet eine Stadt, um sein Fahrzeug für eine abschließende Prüfung vorzubereiten.",
+      "after": "Kirby Air Ride verbindet eine einfache Steuerung mit drei unterschiedlichen Modi. Man fährt auf Strecken, verfolgt das Rennen aus der Vogelperspektive oder erkundet eine Stadt, um sein Fahrzeug für eine abschließende Prüfung vorzubereiten."
+    },
+    {
+      "target_id": "workbook-05-06-eve-online",
+      "language": "fr",
+      "card_id": "feature:feature-mmo-community-work:1",
+      "field": "text",
+      "reason": "Lessico più naturale per una scansione nel contesto del gioco.",
+      "before": "Dans ses projets pour Havoc, CCP annonçait des paiements automatiques pour les contributions accomplies, la copie de projets récurrents et un rôle de responsable auquel déléguer leur gestion. Les nouveaux types de contribution comprenaient le balayage de signatures et la fabrication d'objets. Ces outils devaient intégrer la coordination quotidienne au jeu, aidant les groupes à exprimer leurs besoins et à reconnaître un travail facilement oublié. Suivre les personnes, les matériaux et les projets communs demande du temps : les changements envisagés répondaient à cette contrainte concrète de la vie collective.",
+      "after": "Dans ses projets pour Havoc, CCP annonçait des paiements automatiques pour les contributions accomplies, la copie de projets récurrents et un rôle de responsable auquel déléguer leur gestion. Les nouveaux types de contribution comprenaient l’analyse de signatures et la fabrication d'objets. Ces outils devaient intégrer la coordination quotidienne au jeu, aidant les groupes à exprimer leurs besoins et à reconnaître un travail facilement oublié. Suivre les personnes, les matériaux et les projets communs demande du temps : les changements envisagés répondaient à cette contrainte concrète de la vie collective."
+    },
+    {
+      "target_id": "workbook-05-06-eve-online",
+      "language": "es",
+      "card_id": "feature:feature-mmo-community-work:1",
+      "field": "text",
+      "reason": "Ruolo organizzativo, non personaggio interpretato.",
+      "before": "En sus planes para Havoc, CCP anunció pagos automáticos por contribuciones completadas, la posibilidad de copiar proyectos recurrentes y un papel de responsable en el que delegar su administración. Los nuevos tipos de contribución incluían el escaneo de firmas y la fabricación de objetos. Estas herramientas pretendían incorporar la coordinación cotidiana al juego, ayudando a los grupos a expresar sus necesidades y reconocer tareas fáciles de pasar por alto. Seguir a las personas, los materiales y los planes compartidos requiere esfuerzo; los cambios propuestos abordaban esa carga práctica de mantener una comunidad.",
+      "after": "En sus planes para Havoc, CCP anunció pagos automáticos por contribuciones completadas, la posibilidad de copiar proyectos recurrentes y un puesto de responsable al que delegar su administración. Los nuevos tipos de contribución incluían el escaneo de firmas y la fabricación de objetos. Estas herramientas pretendían incorporar la coordinación cotidiana al juego, ayudando a los grupos a expresar sus necesidades y reconocer tareas fáciles de pasar por alto. Seguir a las personas, los materiales y los planes compartidos requiere esfuerzo; los cambios propuestos abordaban esa carga práctica de mantener una comunidad."
+    },
+    {
+      "target_id": "workbook-05-06-eve-online",
+      "language": "es",
+      "card_id": "feature:feature-mmo-community-work:1",
+      "field": "text",
+      "reason": "Evitare che il calco firmas sia letto come sottoscrizioni; mantenuto il rilevamento dei segnali.",
+      "before": "En sus planes para Havoc, CCP anunció pagos automáticos por contribuciones completadas, la posibilidad de copiar proyectos recurrentes y un puesto de responsable al que delegar su administración. Los nuevos tipos de contribución incluían el escaneo de firmas y la fabricación de objetos. Estas herramientas pretendían incorporar la coordinación cotidiana al juego, ayudando a los grupos a expresar sus necesidades y reconocer tareas fáciles de pasar por alto. Seguir a las personas, los materiales y los planes compartidos requiere esfuerzo; los cambios propuestos abordaban esa carga práctica de mantener una comunidad.",
+      "after": "En sus planes para Havoc, CCP anunció pagos automáticos por contribuciones completadas, la posibilidad de copiar proyectos recurrentes y un puesto de responsable al que delegar su administración. Los nuevos tipos de contribución incluían el escaneo de señales y la fabricación de objetos. Estas herramientas pretendían incorporar la coordinación cotidiana al juego, ayudando a los grupos a expresar sus necesidades y reconocer tareas fáciles de pasar por alto. Seguir a las personas, los materiales y los planes compartidos requiere esfuerzo; los cambios propuestos abordaban esa carga práctica de mantener una comunidad."
+    }
+  ],
+  "validation": {
+    "valid": true,
+    "batch_id": "102-catalog",
+    "completed": true,
+    "entry_count": 10,
+    "card_count_per_language": 45,
+    "language_count": 5,
+    "translated_card_count": 225,
+    "entry_card_counts": {
+      "workbook-05-06-eve-online": 8,
+      "wikipedia-232766": 7,
+      "lost-kingdoms-ii-2003": 3,
+      "midtown-madness-3-2003": 3,
+      "wario-world-2003": 3,
+      "advance-wars-2-black-hole-rising-2003": 3,
+      "workbook-06-26-viewtiful-joe": 7,
+      "eyetoy-play-2003": 3,
+      "kirby-air-ride-2003": 4,
+      "wikipedia-563196": 4
+    },
+    "issue_counts": {
+      "workbook-05-06-eve-online": 1,
+      "wikipedia-232766": 0,
+      "lost-kingdoms-ii-2003": 0,
+      "midtown-madness-3-2003": 1,
+      "wario-world-2003": 1,
+      "advance-wars-2-black-hole-rising-2003": 1,
+      "workbook-06-26-viewtiful-joe": 0,
+      "eyetoy-play-2003": 1,
+      "kirby-air-ride-2003": 1,
+      "wikipedia-563196": 1
+    },
+    "summary_checks": [
+      {
+        "entry_id": "workbook-05-06-eve-online",
+        "feature_id": null,
+        "english_summary_words": 32
+      },
+      {
+        "entry_id": "workbook-05-06-eve-online",
+        "feature_id": "feature-mmo-community-work",
+        "english_summary_words": 31
+      },
+      {
+        "entry_id": "wikipedia-232766",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "lost-kingdoms-ii-2003",
+        "feature_id": null,
+        "english_summary_words": 34
+      },
+      {
+        "entry_id": "midtown-madness-3-2003",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "wario-world-2003",
+        "feature_id": null,
+        "english_summary_words": 34
+      },
+      {
+        "entry_id": "advance-wars-2-black-hole-rising-2003",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "workbook-06-26-viewtiful-joe",
+        "feature_id": null,
+        "english_summary_words": 33
+      },
+      {
+        "entry_id": "eyetoy-play-2003",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "kirby-air-ride-2003",
+        "feature_id": null,
+        "english_summary_words": 34
+      },
+      {
+        "entry_id": "wikipedia-563196",
+        "feature_id": null,
+        "english_summary_words": 37
+      }
+    ],
+    "editorial_review": [],
+    "failures": []
+  },
+  "output_sha256": "52ccf2f182bdbcb90cd2874e97a2a018967851316e186fb03c4fc005de0d45c7"
+}

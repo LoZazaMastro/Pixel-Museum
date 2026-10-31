@@ -1,0 +1,168 @@
+{
+  "schema_version": 1,
+  "reviewed": "2026-10-21",
+  "review_type": "independent_specific_source_schema_prose_and_semantic_placement_review",
+  "batch_file": "content\\expansion\\editorial-composer-methods-06.json",
+  "batch_sha256": "f31daafccfb1656f65da1b85b18e839cf31c98a7e0b38de550b6dd0cbc5a156b",
+  "pre_review_batch_sha256": "bbe613e7d25c7790f3c3bba98e73727a098a4e1b579803e372e96a109f38258d",
+  "catalog_sha256_snapshot": "3c50a1f93bcaaa1197a4334ec8563a2a87dfaf8d25479f5a9d8449e0f083b1d7",
+  "status": "text_review_passed_with_explicit_placement_and_media_gates",
+  "features": 2,
+  "cards": 8,
+  "body_words": 650,
+  "source_publications": 4,
+  "body_paragraphs_unchanged": true,
+  "lexical_token_rule": "Unicode re.findall(\\b\\w+\\b); charge max with whitespace split",
+  "factual_blockers": [],
+  "resolved_findings": [
+    {
+      "id": "C06-01",
+      "detail": "Feature title now describes evidenced hardware/music overlap rather than promoting the interviewer's blurring premise to an unqualified creator claim. Body unchanged."
+    },
+    {
+      "id": "C06-02",
+      "detail": "Corrupted question-mark source-title separator replaced by ASCII hyphen; notes punctuation repaired."
+    }
+  ],
+  "specific_source_checks": [
+    {
+      "source_id": "tanaka14",
+      "detail": "Actual Tokyo2014 transcript read: simultaneous composition/programming/GameBoy sound hardware; size/cost limits, left/right output, shorter sounds and two noise types. Engineering details remain attributed recollection, not independently measured circuitry."
+    },
+    {
+      "source_id": "tanaka18",
+      "detail": "Actual translated interview read, including suitable Metroid sounds, Brinstar entry contrast, programming iteration and explicit mistranslation correction. Japanese original is linked; this review does not claim to independently audit the translation."
+    },
+    {
+      "source_id": "phillips21",
+      "detail": "Actual composer-authored June14,2021 edited GDC2020Q&A read: component assembly, activity/emotion and repeated musical signposts. Body accurately calls it2021publication, not2021event."
+    },
+    {
+      "source_id": "phillips19",
+      "detail": "Actual LibraryOfCongress April4,2019 direct email interview read: RadioTales, Waldron, TombRaider, studio rooms, remote orchestral sessions, full/team scores and technical/style briefs."
+    }
+  ],
+  "entries": [
+    {
+      "feature_id": "feature-hirokazu-tanaka-sound",
+      "body_sha256": "c409f9e57911c883b9e6af0d7d36ed5dea427bfa35060a5b6a7810c24e95e333",
+      "body_hash_encoding": "UTF8 compact JSON list; ensure_ascii=False",
+      "author_body_hash_verified_encoding": "UTF8 default Python json.dumps list; ensure_ascii=False",
+      "cards": 4,
+      "body_words": 321,
+      "content_decision": "independent_specific_source_review_passed",
+      "source_charges": [
+        {
+          "source_id": "tanaka14",
+          "body_indices": [
+            0,
+            1
+          ],
+          "whitespace_words": 187,
+          "unicode_lexical_tokens": 187,
+          "charged_maximum": 187
+        },
+        {
+          "source_id": "tanaka18",
+          "body_indices": [
+            2,
+            3
+          ],
+          "whitespace_words": 186,
+          "unicode_lexical_tokens": 188,
+          "charged_maximum": 188
+        }
+      ],
+      "selected_assets": 0,
+      "human_signoff": false,
+      "native_layout_signoff": false,
+      "placement_decision": "attach_one_parent",
+      "parent_id": "game-boy",
+      "semantic_reason": "Specific sound-hardware/composition practice complements the existing portability, power, Tetris and cable account. Existing Yokoi attached feature concerns earlier GameAndWatch/Ball/BalloonFight visual engineering, not these sound decisions. The second half must stay explicitly labelled Metroid1986, with related link to that original game; no claim that it describes GameBoy Metroid software.",
+      "unicode_lexical_body_tokens": 323
+    },
+    {
+      "feature_id": "feature-winifred-phillips-adaptive",
+      "body_sha256": "efab7f23d8e5ace211ad4092c7870cf249aaeb8174397c5ff45d9a790dfb9969",
+      "body_hash_encoding": "UTF8 compact JSON list; ensure_ascii=False",
+      "author_body_hash_verified_encoding": "UTF8 default Python json.dumps list; ensure_ascii=False",
+      "cards": 4,
+      "body_words": 329,
+      "content_decision": "independent_specific_source_review_passed",
+      "source_charges": [
+        {
+          "source_id": "phillips21",
+          "body_indices": [
+            0,
+            1
+          ],
+          "whitespace_words": 190,
+          "unicode_lexical_tokens": 191,
+          "charged_maximum": 191
+        },
+        {
+          "source_id": "phillips19",
+          "body_indices": [
+            2,
+            3
+          ],
+          "whitespace_words": 188,
+          "unicode_lexical_tokens": 189,
+          "charged_maximum": 189
+        }
+      ],
+      "selected_assets": 0,
+      "human_signoff": false,
+      "native_layout_signoff": false,
+      "placement_decision": "distinct_proposal_pending_media_and_explicit_admission",
+      "parent_id": null,
+      "semantic_reason": "No matching Phillips biography or general composer-workflow destination found. RadioTales-to-games, looping/component structure and team/studio working method are broader than one named game, so do not attach it to GodOfWar or TombRaider solely because either is mentioned.",
+      "unicode_lexical_body_tokens": 331
+    }
+  ],
+  "source_snapshots": [
+    {
+      "source_id": "tanaka14",
+      "url": "https://www.redbullmusicacademy.com/lectures/hip-tanaka/",
+      "resolved_url": "https://www.redbullmusicacademy.com/lectures/hip-tanaka/",
+      "path": "build\\research\\editorial-composer-06\\tanaka14.html",
+      "sha256": "ef19e13a788301376b61f0e03ebcf68016738d762a1958752109c4e53fe98f0f",
+      "bytes": 278487
+    },
+    {
+      "source_id": "tanaka18",
+      "url": "https://shinesparkers.net/interviews/hirokazu-tanaka/",
+      "resolved_url": "https://shinesparkers.net/interviews/hirokazu-tanaka/",
+      "path": "build\\research\\editorial-composer-06\\tanaka18.html",
+      "sha256": "b890f953d1dab6ed233a09390bd44e3182ecd860ef8244c00eee4aecd104d6bc",
+      "bytes": 160545
+    },
+    {
+      "source_id": "phillips21",
+      "url": "https://www.gamedeveloper.com/audio/game-developers-conference-ask-me-anything-about-being-a-video-game-music-composer",
+      "resolved_url": "https://www.gamedeveloper.com/audio/game-developers-conference-ask-me-anything-about-being-a-video-game-music-composer",
+      "path": "build\\research\\editorial-composer-06\\phillips21.html",
+      "sha256": "8263d12bd99713160857e56b416587007c478063de1ae1a83d7284f4801deaaf",
+      "bytes": 532146
+    },
+    {
+      "source_id": "phillips19",
+      "url": "https://blogs.loc.gov/loc/2019/04/winifred-phillips-the-music-of-the-game/",
+      "resolved_url": "https://blogs.loc.gov/loc/2019/04/winifred-phillips-the-music-of-the-game/",
+      "path": "build\\research\\editorial-composer-06\\phillips19.html",
+      "sha256": "dd0f80f6e9f0ca3fff10bbb6f66a6a4b83e92520a6f1972f7243bad46f3447b1",
+      "bytes": 82579
+    }
+  ],
+  "production_gates": [
+    "All8 contextual-media briefs remain open; public source access does not grant portrait, diagram, recording or game-image rights.",
+    "Tanaka attachment must keep both1989GameBoy and1986Metroid contexts clear. Phillips remains a distinct proposal pending explicit admission/media.",
+    "No human editorial, media-rights or native-layout signoff is supplied."
+  ],
+  "scope_limits": [
+    "All8 full bodies/headings and the specifically assigned passages of all4 publications read. GameBoy body and existing Yokoi feature read for overlap.",
+    "No original published source, master, locale, runtime, assembler, package or console writes."
+  ],
+  "body_words_counting_rule": "Whitespace split",
+  "unicode_lexical_body_tokens": 654
+}

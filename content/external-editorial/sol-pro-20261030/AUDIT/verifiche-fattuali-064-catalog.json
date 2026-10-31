@@ -1,0 +1,717 @@
+{
+  "batch_id": "064-catalog",
+  "status": "completed",
+  "entries": 10,
+  "main_cards_per_language": 31,
+  "feature_cards_per_language": 0,
+  "cards_per_language": 31,
+  "languages": [
+    "en",
+    "it",
+    "fr",
+    "de",
+    "es"
+  ],
+  "sources": [
+    {
+      "source_id": "064-hercules-manual",
+      "url": "https://store.steampowered.com/manual/987400",
+      "title": "Disney’s Hercules — manuale originale",
+      "publisher": "Disney Interactive; copia pubblicata su Steam",
+      "accessed_at": "2026-10-30",
+      "scope": "Letti i passaggi del manuale su movimento verso lo sfondo, spada, pugno caricato, attacco verso il basso, poteri temporanei e quattro vasi nei livelli selezionati. Il codice viene mostrato dopo il completamento del livello.",
+      "limitation": "Consultazione del testo, non dichiarata visione delle illustrazioni. Il giorno di release mondiale resta non determinato come nell’INPUT. I crediti musicali sono conservati dal materiale fornito, non verificati qui su una nuova scansione dei titoli."
+    },
+    {
+      "source_id": "064-hercules-it",
+      "url": "https://www.disneyplus.com/it-it/browse/entity-ae19dd2f-a945-442b-a18e-d57fa8f5091f",
+      "title": "Hercules — sinossi italiana",
+      "publisher": "Disney+",
+      "accessed_at": "2026-10-30",
+      "scope": "Il testo ufficiale italiano usa Ercole, Filottete e Ade. Questi nomi sono impiegati per i personaggi; Disney’s Hercules resta il titolo del gioco.",
+      "limitation": "Letto il testo indicizzato. La pagina del film non è una fonte sulla release o sulle meccaniche del videogioco."
+    },
+    {
+      "source_id": "064-hercules-fr",
+      "url": "https://www.disneyplus.com/fr-fr/browse/entity-dc6c97e1-ab46-4b22-90c8-2a9a59560074",
+      "title": "Hercule — presentazione francese della serie",
+      "publisher": "Disney+",
+      "accessed_at": "2026-10-30",
+      "scope": "Il testo ufficiale francese conferma Hercule, Phil e Hadès per i personaggi.",
+      "limitation": "Pagina della serie animata usata soltanto per i nomi localizzati, non per aggiungere fatti sul film o sul gioco."
+    },
+    {
+      "source_id": "064-hercules-es",
+      "url": "https://www.disneyplus.com/es-es/browse/entity-ae19dd2f-a945-442b-a18e-d57fa8f5091f",
+      "title": "Hércules — sinossi spagnola",
+      "publisher": "Disney+",
+      "accessed_at": "2026-10-30",
+      "scope": "Il testo ufficiale spagnolo conferma Hércules, Phil e Hades.",
+      "limitation": "Letto il testo indicizzato; conservato senza traduzione il titolo proprio del videogioco."
+    },
+    {
+      "source_id": "064-museum",
+      "url": "https://www.computerspielemuseum.de/Museum/27-Ueber-das-Museum.htm",
+      "title": "Über das Museum",
+      "publisher": "Computerspielemuseum",
+      "accessed_at": "2026-10-30",
+      "scope": "Letta la presentazione: prima mostra permanente nel 1997, nuova esposizione nel 2011, inventario 2022 con oltre 35.000 supporti software, Förderverein, progetto KEEP con tre biblioteche nazionali ed EFGAMP.",
+      "limitation": "Il totale è esplicitamente legato all’inventario 2022, non presentato come censimento aggiornato al 2026."
+    },
+    {
+      "source_id": "064-gamefest",
+      "url": "https://old.computerspielemuseum.de/mediabase/pdf/960.pdf",
+      "title": "Gamefest 2014 — comunicato del 31 marzo 2014",
+      "publisher": "Computerspielemuseum",
+      "accessed_at": "2026-10-30",
+      "scope": "Letta la prima pagina del comunicato: venti giochi francesi e polacchi giocabili, allestimento bilingue, visita con Andreas Lange e maratona benefica di speedrunning annunciati.",
+      "limitation": "Il documento annuncia un programma futuro: i testi conservano la forma prevista, senza certificare retrospettivamente ogni evento. Le regole del torneo Mario Kart Wii restano dal materiale fornito; l’apertura della pagina successiva non è riuscita."
+    },
+    {
+      "source_id": "064-guncon",
+      "url": "https://www.bandainamcoent.co.jp/corporate/press/namco/1997/1997_july/news_july03.html",
+      "title": "Time Crisis e GunCon — comunicato Namco",
+      "publisher": "Namco",
+      "accessed_at": "2026-10-30",
+      "scope": "Il testo indicizzato presenta il collegamento al segnale video e indica una data prevista del 27 giugno 1997 per il pacchetto.",
+      "limitation": "È un annuncio: non usato da solo per alzare il metadato da anno a giorno di effettiva release. Conservato il 1997 giapponese fornito. La necessità del CRT resta dal materiale originale."
+    },
+    {
+      "source_id": "064-kirby",
+      "url": "https://www.hallab.co.jp/works/detail/000740/",
+      "title": "Kirby’s Dream Land 3 — scheda dell’opera",
+      "publisher": "HAL Laboratory",
+      "accessed_at": "2026-10-30",
+      "scope": "La scheda distingue la release giapponese del 27 marzo 1998 dal copyright 1997.",
+      "limitation": "Il 1997 nordamericano resta dal materiale fornito, non dedotto dal copyright."
+    },
+    {
+      "source_id": "064-blitz-late-hits",
+      "url": "https://gameinformer.com/b/news/archive/2011/11/19/nfl-blitz-won-39-t-have-late-hits",
+      "title": "NFL Blitz Won’t Have Late Hits",
+      "publisher": "Game Informer, 19 novembre 2011",
+      "accessed_at": "2026-10-30",
+      "scope": "Articolo contemporaneo con dichiarazione del produttore Dave Ross sulla richiesta NFL di rimuovere i colpi a gioco fermo.",
+      "limitation": "La precedente intervista di ottobre descriveva una versione ancora in valutazione e non è usata per contraddire la modifica successiva. Nessuna nuova data di release ricavata da questa anteprima."
+    },
+    {
+      "source_id": "064-blitz-arcade1up",
+      "url": "https://arstechnica.com/gaming/2022/08/nfl-blitz-arcade-games-will-relaunch-as-arcade1up-cabinet-exclusive/",
+      "title": "NFL Blitz arcade games will relaunch as Arcade1Up cabinet exclusive",
+      "publisher": "Ars Technica, agosto 2022",
+      "accessed_at": "2026-10-30",
+      "scope": "Riporta conferma diretta del produttore sulla rimozione dei colpi dopo il fischio e di specifici placcaggi.",
+      "limitation": "Articolo di annuncio usato per le modifiche del prodotto, non come prova autonoma del giorno di effettiva disponibilità. Conservato soltanto l’anno 2022 già fornito."
+    },
+    {
+      "source_id": "064-beatmania-history",
+      "url": "https://www.konami.com/corporate/ja/history/license.html",
+      "title": "Konami — cronologia dei prodotti",
+      "publisher": "Konami",
+      "accessed_at": "2026-10-30",
+      "scope": "Il risultato ufficiale colloca Beatmania nel 1997, coerentemente con l’anno originale.",
+      "limitation": "Il mese di dicembre è già nel testo fornito; le fonti di anniversario non concordano sul giorno e non è aggiunto un giorno preciso."
+    },
+    {
+      "source_id": "064-ez2dj-patents",
+      "url": "https://www.ampress.co.jp/backnumber/bn2007.08.15.htm",
+      "title": "Game Machine — notiziario del 15 agosto 2007",
+      "publisher": "Amusement Press",
+      "accessed_at": "2026-10-30",
+      "scope": "Letto il resoconto contemporaneo della decisione del tribunale di Seul: il contenzioso EZ2DJ riguarda brevetti, non copyright.",
+      "limitation": "Non consultata la sentenza integrale. Non aggiunti al corpo del catalogo date del processo, somme o dettagli tecnici nuovi."
+    },
+    {
+      "source_id": "064-ascii-contemporary",
+      "url": "https://retrocdn.net/images/c/cc/EDGE.N062.1998.09.pdf",
+      "title": "Edge 62 — notizia sul controller Beatmania",
+      "publisher": "Edge, settembre 1998; copia RetroCDN",
+      "accessed_at": "2026-10-30",
+      "scope": "Il passaggio indicizzato documenta il controller ASCII destinato alla versione PlayStation.",
+      "limitation": "Non conferma da solo l’esclusività contrattuale né la frequenza delle confezioni abbinate, conservate dall’INPUT in assenza di contraddizione. Non dichiarata ispezione visiva della pagina."
+    },
+    {
+      "source_id": "064-iidx",
+      "url": "https://www.konami.com/arcadegames/corporate/ja/topics/2026/0916/",
+      "title": "beatmania IIDX 34 ZINRAI — avvio del servizio",
+      "publisher": "Konami, 16 settembre 2026",
+      "accessed_at": "2026-10-30",
+      "scope": "La pagina ufficiale documenta una nuova edizione effettivamente avviata nel 2026, a riscontro della prosecuzione di IIDX dopo la serie originale.",
+      "limitation": "Il nome e le nuove funzioni dell’edizione 2026 non sono importati. Il riferimento all’assenza di conversioni per computer è circoscritto alla serie arcade originale a cinque tasti."
+    },
+    {
+      "source_id": "064-virtua-original",
+      "url": "https://www.sega.jp/history/arcade/product/9081/",
+      "title": "Virtua Striker — Arcade History",
+      "publisher": "Sega",
+      "accessed_at": "2026-10-30",
+      "scope": "La scheda ufficiale indica l’entrata in funzione dell’originale nel maggio 1995.",
+      "limitation": "Corregge il 1994 fornito; non ricavata una release da una data di fabbricazione."
+    },
+    {
+      "source_id": "064-gm-1998",
+      "url": "https://onitama.tv/gamemachine/pdf/19990201p.pdf",
+      "title": "Game Machine, 1 febbraio 1999, pagina 22 — classifica annuale 1998",
+      "publisher": "Amusement Press",
+      "accessed_at": "2026-10-30",
+      "scope": "Pagina 22 letta nel testo e ispezionata visivamente. La categoria software colloca Tekken 3 al primo posto e Virtua Striker 2, incluso ver. 98, al secondo. Il metodo somma rilevazioni periodiche degli incassi nelle sale del campione. Lo stesso articolo indica circa 15.000 unità Tekken 3 distribuite in Giappone e 20.000 all’estero.",
+      "limitation": "È una classifica di categoria basata sul campione della rivista, non una misura di tutti gli incassi arcade giapponesi. Le unità Tekken sono distribuite, non vendite dirette ai giocatori. La scansione di ricerca non viene ripubblicata nel pacchetto."
+    },
+    {
+      "source_id": "064-gm-1999",
+      "url": "https://onitama.tv/gamemachine/pdf/20000201p.pdf",
+      "title": "Game Machine, 1 febbraio 2000, pagina 18 — classifica annuale 1999",
+      "publisher": "Amusement Press",
+      "accessed_at": "2026-10-30",
+      "scope": "Pagina 18 letta nel testo e ispezionata visivamente: Virtua Striker 2 ver. 99 guida la categoria software nel 1999; i cabinati dedicati hanno una classifica distinta.",
+      "limitation": "Le date di spedizione riportate nell’articolo non sono trasformate in giorni di disponibilità al pubblico. La scansione resta materiale di ricerca non incluso nel pacchetto."
+    },
+    {
+      "source_id": "064-tekken-sales-context",
+      "url": "https://en.wikipedia.org/wiki/Tekken_3",
+      "title": "Tekken 3 — note sulle vendite",
+      "publisher": "Wikipedia contributors",
+      "accessed_at": "2026-10-30",
+      "scope": "La nota riproduce una dichiarazione di Katsuhiro Harada del 18 febbraio 2014 con 8,36 milioni per la versione domestica, dato già fornito.",
+      "limitation": "Non recuperato il messaggio originale di Harada; la cifra e il quinto posto PlayStation sono conservati dall’INPUT e non certificati qui come lettura autonoma di una fonte primaria."
+    },
+    {
+      "source_id": "064-diablo-blizzard",
+      "url": "https://news.blizzard.com/en-us/article/22887361/diablo-now-available-on-gog-com",
+      "title": "Diablo Now Available on GOG.com",
+      "publisher": "Blizzard Entertainment",
+      "accessed_at": "2026-10-30",
+      "scope": "La pagina ufficiale identifica esplicitamente il debutto storico del gioco il 31 dicembre 1996.",
+      "limitation": "Si usa la dichiarazione storica, non la data di pubblicazione della riedizione GOG."
+    },
+    {
+      "source_id": "064-diablo-brevik",
+      "url": "https://arstechnica.com/gaming/2016/03/post-mortem-ms-pac-man-diablo-dissected-by-their-original-devs/",
+      "title": "Post-mortem: Ms. Pac-Man, Diablo dissected by their original devs",
+      "publisher": "Ars Technica, resoconto della GDC 2016",
+      "accessed_at": "2026-10-30",
+      "scope": "Riporta la testimonianza diretta di David Brevik: alcune copie erano acquistabili sulla costa occidentale degli Stati Uniti il 31 dicembre 1996.",
+      "limitation": "Letto il resoconto del giornalista presente, non dichiarata visione del video integrale. La disponibilità locale non viene estesa all’intero mondo."
+    },
+    {
+      "source_id": "064-diablo-gdc",
+      "url": "https://gdcvault.com/play/1023469/Classic-Game-Postmortem",
+      "title": "Classic Game Postmortem: Diablo",
+      "publisher": "GDC / David Brevik",
+      "accessed_at": "2026-10-30",
+      "scope": "La presentazione ufficiale descrive l’origine del progetto come titolo DOS a turni con animazione in plastilina.",
+      "limitation": "Letta la descrizione della sessione; il video non è stato riprodotto. Il racconto dello scheletro è conservato dal materiale fornito con attribuzione a Brevik."
+    },
+    {
+      "source_id": "064-diablo-announcement",
+      "url": "https://diablo.blizzplanet.com/blog/comments/diablo-will-celebrate-15th-anniversary-on-december-31-2011",
+      "title": "Diablo — ricostruzione con comunicato del 3 gennaio 1997",
+      "publisher": "Blizzplanet; riproduzione del comunicato Blizzard",
+      "accessed_at": "2026-10-30",
+      "scope": "Il testo indicizzato del comunicato del 3 gennaio descrive il gioco già nei negozi e spedito durante la settimana.",
+      "limitation": "La spedizione non è usata da sola come prova di acquisto. La collocazione viene corretta sulla base della testimonianza Brevik e della dichiarazione Blizzard, non sulla data del comunicato."
+    },
+    {
+      "source_id": "064-ffvii-release",
+      "url": "https://jp.finalfantasy.com/news/4378",
+      "title": "Final Fantasy VII — anniversario del 31 gennaio",
+      "publisher": "Square Enix, 31 gennaio 2023",
+      "accessed_at": "2026-10-30",
+      "scope": "La dichiarazione di Yoshinori Kitase identifica esplicitamente la release del 31 gennaio 1997.",
+      "limitation": "Non confusa la ricorrenza commemorativa con la release storica; regione giapponese da esplicitare."
+    },
+    {
+      "source_id": "064-ffvii-kitase",
+      "url": "https://blog.playstation.com/?p=353736",
+      "title": "Final Fantasy VII — riflessioni di Yoshinori Kitase",
+      "publisher": "Yoshinori Kitase / PlayStation Blog, 17 settembre 2021",
+      "accessed_at": "2026-10-30",
+      "scope": "Letti i passaggi sullo spazio dei CD, i caricamenti all’ingresso e all’uscita da battaglie e filmati, e la progettazione delle Materia per ampliare i sistemi di ruolo.",
+      "limitation": "Conservati soltanto i temi già nel materiale, senza aggiungere altri ricordi del testo."
+    },
+    {
+      "source_id": "064-ffvii-story",
+      "url": "https://jp.finalfantasy.com/titles/finalfantasy7/",
+      "title": "Final Fantasy VII — scheda ufficiale",
+      "publisher": "Square Enix",
+      "accessed_at": "2026-10-30",
+      "scope": "Letta la presentazione ufficiale per controllare il contesto di Cloud, Midgar, mako e Shinra.",
+      "limitation": "Non importati personaggi o sviluppi narrativi ulteriori."
+    },
+    {
+      "source_id": "064-diablo-schaefer-recheck",
+      "url": "https://www.gamedeveloper.com/design/postmortem-blizzard-s-i-diablo-ii-i-",
+      "title": "Postmortem: Blizzard’s Diablo II — sezione Simultaneous worldwide release",
+      "publisher": "Erich Schaefer, Game Developer, ottobre 2000",
+      "accessed_at": "2026-10-30",
+      "scope": "La sezione 5 dichiara che per il primo Diablo il master fu terminato il 26 dicembre 1996 e alcune copie erano già sugli scaffali entro il 30.",
+      "limitation": "Testimonianza primaria contemporanea letta nel testo, riga 103. Entro il 30 non identifica un identico primo giorno per tutti i negozi; il master del 26 non è una release. La data ufficiale retrospettiva del 31 e il ricordo di Brevik restano nella storia della verifica."
+    }
+  ],
+  "decisions": [
+    {
+      "target_id": "disney-hercules-1997",
+      "problem": "Chiarezza delle password e naturalezza dei nomi dei personaggi nelle lingue locali.",
+      "conclusion": "Conservati quattro vasi nei livelli selezionati, con il nome ufficiale dell’oggetto spiegato. Ercole, Filottete e Ade in italiano; Hercule e Hadès in francese; Hércules in spagnolo. Il titolo del gioco resta invariato.",
+      "source_ids": [
+        "064-hercules-manual",
+        "064-hercules-it",
+        "064-hercules-fr",
+        "064-hercules-es"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "feature-berlin-game-museum",
+      "problem": "Distinguere apertura del museo, nuovo allestimento e programma annunciato.",
+      "conclusion": "La voce resta legata alla prima esposizione permanente del 1997; 2011 riguarda il nuovo allestimento, 2022 il censimento. Gli eventi 2014 restano programmi annunciati, senza attribuirne lo svolgimento come fatto verificato.",
+      "source_ids": [
+        "064-museum",
+        "064-gamefest"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "hardware-guncon-ps1",
+      "problem": "Il collegamento video può essere erroneamente attribuito al televisore; un annuncio non basta per fissare una release giornaliera.",
+      "conclusion": "Specificato il collegamento all’uscita video della console oltre alla porta controller. Conservata la precisione annuale 1997.",
+      "source_ids": [
+        "064-guncon"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "kirbys-dream-land-3",
+      "problem": "Il copyright 1997 non dimostra la data dell’edizione giapponese.",
+      "conclusion": "Conservato il 1997 nordamericano e distinta la release giapponese del 27 marzo 1998, confermata da HAL.",
+      "source_ids": [
+        "064-kirby"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-1956221",
+      "problem": "Le anteprime iniziali e le versioni successive differiscono sui colpi a gioco fermo.",
+      "conclusion": "Il corpo descrive la rimozione nella versione EA e nella riedizione Arcade1Up, coerente con le dichiarazioni successive; nessuna data precisa ricavata da un annuncio.",
+      "source_ids": [
+        "064-blitz-late-hits",
+        "064-blitz-arcade1up"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-234683",
+      "problem": "L’INPUT chiama copyright il contenzioso EZ2DJ e contiene affermazioni potenzialmente atemporali su PC e cabine statunitensi.",
+      "conclusion": "Corretto in violazione di brevetti. L’assenza di conversione per computer è limitata alla serie originale a cinque tasti; la diffusione presso i collezionisti è raccontata storicamente. La continuità di IIDX è riscontrata senza aggiungere il catalogo 2026.",
+      "source_ids": [
+        "064-ez2dj-patents",
+        "064-iidx",
+        "064-beatmania-history"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-4338343",
+      "problem": "Anno del primo Virtua Striker errato e classifica Game Machine presentata come primato assoluto degli incassi arcade.",
+      "conclusion": "Corretto 1994 in 1995. Esplicitate categoria software, inclusione di ver. 98 nel secondo posto 1998 e primato di ver. 99 nella stessa categoria nel 1999; spiegata la base campionaria della rilevazione.",
+      "source_ids": [
+        "064-virtua-original",
+        "064-gm-1998",
+        "064-gm-1999"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-739181",
+      "problem": "Il totale arcade non distingue distribuzione e vendita.",
+      "conclusion": "Le circa 35.000 unità sono descritte come distribuite, coerentemente con il documento contemporaneo. Il dato domestico resta 8,36 milioni come nell’INPUT, con limite della verifica registrato.",
+      "source_ids": [
+        "064-gm-1998",
+        "064-tekken-sales-context"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "workbook-01-03-diablo-video-game",
+      "problem": "Il 31 dicembre 1996 proposto come primo giorno è successivo alla disponibilità presso alcuni negozi documentata da Schaefer entro il 30.",
+      "conclusion": "Collocare a dicembre 1996, precisione mese, per la disponibilità in alcuni negozi nordamericani; conservare la diffusione più ampia nel gennaio 1997. La testimonianza contemporanea di Schaefer e quella retrospettiva di Brevik documentano acquisti a fine dicembre, mentre il 31 è la data adottata dalla ricostruzione ufficiale Blizzard. Non dedurre dal limite entro il 30 un primo giorno comune.",
+      "source_ids": [
+        "064-diablo-blizzard",
+        "064-diablo-brevik",
+        "064-diablo-announcement",
+        "064-diablo-schaefer-recheck"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "final-fantasy-vii",
+      "problem": "Occorre esplicitare la regione della release e conservare l’attribuzione dei ricordi tecnici.",
+      "conclusion": "Confermato il 31 gennaio 1997 in Giappone. I passaggi su caricamenti e Materia restano attribuiti a Kitase e coerenti con la sua testimonianza.",
+      "source_ids": [
+        "064-ffvii-release",
+        "064-ffvii-kitase"
+      ],
+      "text_applied": true
+    }
+  ],
+  "metadata_proposals": [
+    {
+      "target_id": "workbook-01-03-diablo-video-game",
+      "original_year": 1997,
+      "original_date": {
+        "month": 1,
+        "day": 3,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed_date": {
+        "year": 1996,
+        "month": 12,
+        "day": null,
+        "precision": "month",
+        "region": "North America — availability in some stores"
+      },
+      "event_semantics": "release",
+      "source_ids": [
+        "064-diablo-blizzard",
+        "064-diablo-brevik",
+        "064-diablo-schaefer-recheck"
+      ],
+      "reason": "Proposta mensile aggiornata: disponibilità in alcuni negozi a fine dicembre 1996; il 31 ufficiale non può essere presentato come prima disponibilità rispetto al limite entro il 30 indicato da Schaefer. Nessun primo giorno universale dedotto."
+    },
+    {
+      "target_id": "final-fantasy-vii",
+      "original_year": 1997,
+      "original_date": {
+        "month": 1,
+        "day": 31,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed_date": {
+        "year": 1997,
+        "month": 1,
+        "day": 31,
+        "precision": "day",
+        "region": "JP"
+      },
+      "event_semantics": "release",
+      "source_ids": [
+        "064-ffvii-release"
+      ],
+      "reason": "Esplicitare la regione giapponese della data già presente."
+    }
+  ],
+  "expansion_assessments": [
+    {
+      "target_id": "disney-hercules-1997",
+      "main_cards": 2,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 3,
+      "rationale": "Platform cinematografico significativo della produzione Disney del 1997."
+    },
+    {
+      "target_id": "feature-berlin-game-museum",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "required_main_cards": null,
+      "missing_cards": 0,
+      "rationale": "Voce dedicata a un museo o a una periferica, non a una console: la soglia non si applica."
+    },
+    {
+      "target_id": "hardware-guncon-ps1",
+      "main_cards": 2,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "required_main_cards": null,
+      "missing_cards": 0,
+      "rationale": "Voce dedicata a un museo o a una periferica, non a una console: la soglia non si applica."
+    },
+    {
+      "target_id": "kirbys-dream-land-3",
+      "main_cards": 2,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 3,
+      "rationale": "Capitolo significativo della serie Kirby su Super NES."
+    },
+    {
+      "target_id": "wikipedia-1956221",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Capostipite importante del football arcade di Midway."
+    },
+    {
+      "target_id": "wikipedia-234683",
+      "main_cards": 6,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 0,
+      "rationale": "Le sei card principali soddisfano già la soglia."
+    },
+    {
+      "target_id": "wikipedia-4338343",
+      "main_cards": 2,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 3,
+      "rationale": "Titolo importante del calcio arcade Sega."
+    },
+    {
+      "target_id": "wikipedia-739181",
+      "main_cards": 2,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 3,
+      "rationale": "Picchiaduro importante per sala giochi e PlayStation."
+    },
+    {
+      "target_id": "workbook-01-03-diablo-video-game",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 1,
+      "rationale": "Titolo importante per la definizione del gioco di ruolo d’azione."
+    },
+    {
+      "target_id": "final-fantasy-vii",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 1,
+      "rationale": "Gioco di ruolo importante nella diffusione internazionale della serie."
+    }
+  ],
+  "editorial_review": {
+    "english_first": true,
+    "english_checkpoint": "064-catalog/OUTPUT-064-catalog.json, ramo en; bozza separata nello scratch",
+    "summary_word_counts_en": [
+      36,
+      39,
+      35,
+      37,
+      37,
+      35,
+      34,
+      37,
+      37,
+      36
+    ],
+    "fidelity": "Confrontati i testi e i 31 paragrafi originali con le riscritture nelle cinque lingue. Conservati nomi, luoghi, versioni, cifre, controlli, attribuzioni e caratteristiche presenti; registrate separatamente le correzioni documentate. Nessuna card unita, divisa o riordinata. Le fonti originali restano negli INPUT.",
+    "naturalness": "Adattamenti separati per italiano, francese, tedesco e spagnolo; titoli specifici e frasi collegate. Riletti i nomi localizzati di Hercules, la terminologia dei controller, la distinzione fra spedizioni e vendite e il racconto degli eventi annunciati.",
+    "limits": "La ricerca riguarda i punti elencati e non certifica ogni dettaglio dell’INPUT. Nessuna biografia autonoma. Ispezionate visivamente solo le due pagine Game Machine indicate; altre immagini originali non dichiarate esaminate.",
+    "diablo_release_recheck": {
+      "date": "2026-10-30",
+      "languages": [
+        "en",
+        "it",
+        "fr",
+        "de",
+        "es"
+      ],
+      "scope": "Rivista soltanto la frase della card main:0 relativa alla disponibilità. Identità, titoli, ordine, altre card, fonti originarie e altri nove soggetti invariati. Conservata la storia della proposta precedente e documentata la nuova precisione."
+    }
+  },
+  "validation": {
+    "valid": true,
+    "batch_id": "064-catalog",
+    "completed": true,
+    "entry_count": 10,
+    "card_count_per_language": 31,
+    "language_count": 5,
+    "translated_card_count": 155,
+    "entry_card_counts": {
+      "disney-hercules-1997": 2,
+      "feature-berlin-game-museum": 4,
+      "hardware-guncon-ps1": 2,
+      "kirbys-dream-land-3": 2,
+      "wikipedia-1956221": 3,
+      "wikipedia-234683": 6,
+      "wikipedia-4338343": 2,
+      "wikipedia-739181": 2,
+      "workbook-01-03-diablo-video-game": 4,
+      "final-fantasy-vii": 4
+    },
+    "issue_counts": {
+      "disney-hercules-1997": 1,
+      "feature-berlin-game-museum": 0,
+      "hardware-guncon-ps1": 0,
+      "kirbys-dream-land-3": 1,
+      "wikipedia-1956221": 1,
+      "wikipedia-234683": 0,
+      "wikipedia-4338343": 1,
+      "wikipedia-739181": 1,
+      "workbook-01-03-diablo-video-game": 1,
+      "final-fantasy-vii": 1
+    },
+    "summary_checks": [
+      {
+        "entry_id": "disney-hercules-1997",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "feature-berlin-game-museum",
+        "feature_id": null,
+        "english_summary_words": 39
+      },
+      {
+        "entry_id": "hardware-guncon-ps1",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "kirbys-dream-land-3",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "wikipedia-1956221",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "wikipedia-234683",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "wikipedia-4338343",
+        "feature_id": null,
+        "english_summary_words": 34
+      },
+      {
+        "entry_id": "wikipedia-739181",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "workbook-01-03-diablo-video-game",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "final-fantasy-vii",
+        "feature_id": null,
+        "english_summary_words": 36
+      }
+    ],
+    "editorial_review": [
+      "feature-berlin-game-museum/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "feature-berlin-game-museum/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "feature-berlin-game-museum/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "feature-berlin-game-museum/main/es: main title changed; check that this is a descriptive title and not an altered official name"
+    ],
+    "failures": []
+  },
+  "output_sha256": "e1a3d612768d50737655b4df0192170bb1505620aab13c2c73b3fa0e00dbc0ca",
+  "root_review": {
+    "date": "2026-10-30",
+    "scope": "Confronto mirato delle segnalazioni numeriche e della riduzione di lunghezza; rilettura di Beatmania e KOF 97, classifiche e date delle voci storiche. Non equivale a consultazione indipendente di ogni fonte dei lotti.",
+    "result": "Le differenze numeriche esaminate dipendono da cifre scritte in lettere, punteggiatura locale o correzioni documentate. KOF 97 conserva piattaforme, arco narrativo, crediti e riferimenti; nessuna omissione sostanziale rilevata nelle card segnalate."
+  },
+  "recheck_history": [
+    {
+      "date": "2026-10-30",
+      "target_id": "workbook-01-03-diablo-video-game",
+      "reason": "Nuova testimonianza primaria emersa durante il controllo di Diablo II nel lotto 084; correzione circoscritta autorizzata dal coordinatore.",
+      "previous_output_sha256": "3c8e789512a6ba11ec7e579cd2ee11a6cc526708f75a6573bdc06738507ed58d",
+      "superseded_decision": {
+        "target_id": "workbook-01-03-diablo-video-game",
+        "problem": "Il 3 gennaio 1997 della voce coincide con un comunicato, dopo una disponibilità pubblica precedente.",
+        "conclusion": "Proposta la release del 31 dicembre 1996 limitata alla costa occidentale statunitense. Il corpo distingue questa disponibilità dalla diffusione più ampia nel gennaio 1997. Il titolo e gli ID originari non cambiano.",
+        "source_ids": [
+          "064-diablo-blizzard",
+          "064-diablo-brevik",
+          "064-diablo-announcement"
+        ],
+        "text_applied": true
+      },
+      "superseded_metadata_proposal": {
+        "target_id": "workbook-01-03-diablo-video-game",
+        "original_year": 1997,
+        "original_date": {
+          "month": 1,
+          "day": 3,
+          "precision": "day",
+          "region": ""
+        },
+        "proposed_date": {
+          "year": 1996,
+          "month": 12,
+          "day": 31,
+          "precision": "day",
+          "region": "United States — West Coast availability"
+        },
+        "event_semantics": "release",
+        "source_ids": [
+          "064-diablo-blizzard",
+          "064-diablo-brevik"
+        ],
+        "reason": "Sostituire la data del comunicato del 3 gennaio con la precedente disponibilità pubblica documentata, senza estenderla alle altre regioni."
+      },
+      "new_source_ids": [
+        "064-diablo-schaefer-recheck"
+      ]
+    }
+  ],
+  "review_changes": [
+    {
+      "target_id": "workbook-01-03-diablo-video-game",
+      "language": "en",
+      "card_id": "main:0",
+      "field": "text",
+      "before": "Diablo is Blizzard’s action role-playing game set in a dungeon beneath Tristram, filled with monsters, equipment and changing rooms. Mouse commands direct movement, attacks and item collection, while Battle.net supports cooperative play. Copies were available in parts of the US West Coast by 31 December 1996, ahead of wider availability in January 1997. Accessible controls and variable rewards helped establish a lasting approach to action role-playing games.",
+      "after": "Diablo is Blizzard’s action role-playing game set in a dungeon beneath Tristram, filled with monsters, equipment and changing rooms. Mouse commands direct movement, attacks and item collection, while Battle.net supports cooperative play. Copies reached some North American stores in late December 1996, before broader availability in January 1997. Accessible controls and variable rewards helped establish a lasting approach to action role-playing games.",
+      "reason": "La testimonianza contemporanea di Schaefer documenta disponibilità presso alcuni negozi entro il 30 dicembre; la collocazione giornaliera del 31 non identifica quindi il primo accesso al pubblico."
+    },
+    {
+      "target_id": "workbook-01-03-diablo-video-game",
+      "language": "it",
+      "card_id": "main:0",
+      "field": "text",
+      "before": "Diablo è il gioco di ruolo e azione di Blizzard ambientato in un sotterraneo sotto Tristram, fra mostri, equipaggiamento e stanze che cambiano. Il mouse controlla movimenti, attacchi e raccolta degli oggetti, mentre Battle.net permette di giocare in cooperazione. Alcune copie erano disponibili sulla costa occidentale degli Stati Uniti già il 31 dicembre 1996, prima della diffusione più ampia nel gennaio 1997. Comandi accessibili e ricompense variabili contribuirono a definire un modello duraturo per i giochi di ruolo d’azione.",
+      "after": "Diablo è il gioco di ruolo e azione di Blizzard ambientato in un sotterraneo sotto Tristram, fra mostri, equipaggiamento e stanze che cambiano. Il mouse controlla movimenti, attacchi e raccolta degli oggetti, mentre Battle.net permette di giocare in cooperazione. Il gioco era in vendita in alcuni negozi nordamericani a fine dicembre 1996, prima della diffusione più ampia nel gennaio 1997. Comandi accessibili e ricompense variabili contribuirono a definire un modello duraturo per i giochi di ruolo d’azione.",
+      "reason": "La testimonianza contemporanea di Schaefer documenta disponibilità presso alcuni negozi entro il 30 dicembre; la collocazione giornaliera del 31 non identifica quindi il primo accesso al pubblico."
+    },
+    {
+      "target_id": "workbook-01-03-diablo-video-game",
+      "language": "fr",
+      "card_id": "main:0",
+      "field": "text",
+      "before": "Diablo est le jeu de rôle et d’action de Blizzard situé dans un donjon sous Tristram, peuplé de monstres, d’équipement et de salles changeantes. La souris dirige déplacements, attaques et ramassage des objets, tandis que Battle.net permet de jouer en coopération. Des exemplaires étaient disponibles dans certaines régions de la côte ouest des États-Unis dès le 31 décembre 1996, avant une diffusion plus large en janvier 1997. Des commandes accessibles et des récompenses variables contribuèrent à définir une approche durable du jeu de rôle d’action.",
+      "after": "Diablo est le jeu de rôle et d’action de Blizzard situé dans un donjon sous Tristram, peuplé de monstres, d’équipement et de salles changeantes. La souris dirige déplacements, attaques et ramassage des objets, tandis que Battle.net permet de jouer en coopération. Des exemplaires étaient en vente dans certains magasins d’Amérique du Nord fin décembre 1996, avant une diffusion plus large en janvier 1997. Des commandes accessibles et des récompenses variables contribuèrent à définir une approche durable du jeu de rôle d’action.",
+      "reason": "La testimonianza contemporanea di Schaefer documenta disponibilità presso alcuni negozi entro il 30 dicembre; la collocazione giornaliera del 31 non identifica quindi il primo accesso al pubblico."
+    },
+    {
+      "target_id": "workbook-01-03-diablo-video-game",
+      "language": "de",
+      "card_id": "main:0",
+      "field": "text",
+      "before": "Diablo ist Blizzards Action-Rollenspiel in einem Dungeon unter Tristram, voller Monster, Ausrüstung und wechselnder Räume. Mausbefehle steuern Bewegung, Angriffe und das Aufsammeln von Gegenständen; Battle.net ermöglicht gemeinsames Spielen. Bei einzelnen Händlern an der US-Westküste waren Exemplare spätestens am 31. Dezember 1996 erhältlich, bevor das Spiel im Januar 1997 breiter verfügbar wurde. Zugängliche Steuerung und wechselnde Belohnungen halfen dabei, eine dauerhafte Form des Action-Rollenspiels zu etablieren.",
+      "after": "Diablo ist Blizzards Action-Rollenspiel in einem Dungeon unter Tristram, voller Monster, Ausrüstung und wechselnder Räume. Mausbefehle steuern Bewegung, Angriffe und das Aufsammeln von Gegenständen; Battle.net ermöglicht gemeinsames Spielen. Ende Dezember 1996 war das Spiel bereits bei einzelnen Händlern in Nordamerika erhältlich, bevor es im Januar 1997 breiter verfügbar wurde. Zugängliche Steuerung und wechselnde Belohnungen halfen dabei, eine dauerhafte Form des Action-Rollenspiels zu etablieren.",
+      "reason": "La testimonianza contemporanea di Schaefer documenta disponibilità presso alcuni negozi entro il 30 dicembre; la collocazione giornaliera del 31 non identifica quindi il primo accesso al pubblico."
+    },
+    {
+      "target_id": "workbook-01-03-diablo-video-game",
+      "language": "es",
+      "card_id": "main:0",
+      "field": "text",
+      "before": "Diablo es el juego de rol y acción de Blizzard ambientado en una mazmorra bajo Tristram, entre monstruos, equipo y salas cambiantes. El ratón controla los movimientos, los ataques y la recogida de objetos, mientras Battle.net permite jugar en cooperación. Ya había copias disponibles en algunas zonas de la costa oeste de Estados Unidos el 31 de diciembre de 1996, antes de una distribución más amplia en enero de 1997. Los controles accesibles y las recompensas variables ayudaron a establecer un modelo duradero para los juegos de rol y acción.",
+      "after": "Diablo es el juego de rol y acción de Blizzard ambientado en una mazmorra bajo Tristram, entre monstruos, equipo y salas cambiantes. El ratón controla los movimientos, los ataques y la recogida de objetos, mientras Battle.net permite jugar en cooperación. Algunas tiendas norteamericanas ya vendían el juego a finales de diciembre de 1996, antes de una distribución más amplia en enero de 1997. Los controles accesibles y las recompensas variables ayudaron a establecer un modelo duradero para los juegos de rol y acción.",
+      "reason": "La testimonianza contemporanea di Schaefer documenta disponibilità presso alcuni negozi entro il 30 dicembre; la collocazione giornaliera del 31 non identifica quindi il primo accesso al pubblico."
+    }
+  ]
+}

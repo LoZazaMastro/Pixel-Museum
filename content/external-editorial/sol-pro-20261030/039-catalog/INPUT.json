@@ -1,0 +1,955 @@
+{
+  "schema": "pixel-museum-editorial-input-v1",
+  "batch_id": "039-catalog",
+  "source_file": "content/catalog.json",
+  "source_sha256": "0b077b3f8628f921ab84574d286f9d9943fb8ae6acb8f136ffadde6e01cae241",
+  "entries": [
+    {
+      "entry_id": "sonic",
+      "kind": "game",
+      "year_context_only": 1991,
+      "date_context_only": {
+        "month": 6,
+        "day": 23,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "The existing North American1991 Genesis launch is retained as anchor. Creator interviews distinguish contemporary1991 design discussion from1997/2001 recollections. No worldwide launch date, first-ever voice sample or Sonic2 mechanic is inferred.",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "Sonic the Hedgehog",
+        "subtitle": "Speed becomes Sega’s identity",
+        "summary": "Sega's platformer combines speed, rolling attacks and rings that give players a chance to recover from a hit.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "A shape that can roll",
+            "text": "Sonic the Hedgehog is Sega's fast-moving platform game built around a character who attacks by rolling. Naoto Ohshima's early designs changed from a rabbit to a hedgehog whose spines suited Yuji Naka's movement idea. Planner Hirokazu Yasuhara repeatedly rebuilt the opening maps to balance speed with enemy collisions. Character design, attacks and terrain developed together."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Fast players change the rules",
+            "text": "Naka expected beginners to learn routes carefully and accelerate on later attempts. Playtesters instead ran as quickly as possible from the start. He linked that behaviour to the ring system: carrying even one ring lets Sonic survive an otherwise damaging collision. Players still benefit from learning the route, but a mistake offers a chance to recover rather than immediately ending the attempt."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "A voice in the remaining space",
+            "text": "A 1997 interview preserves another production decision behind Sonic's public identity. Naka describes a planned sound-test screen in which a band would perform while Sonic danced. The feature was dropped near the deadline, leaving cartridge space available. He recalls using that opportunity for the sung Sega startup sample. The familiar opening was thus connected to a discarded feature and a late allocation choice. The sung name made the company audible before the first level, using space that had been intended for another kind of performance."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "Speed becomes Sega’s identity",
+            "text": "On June 23, 1991 Sega launched Sonic the Hedgehog in North America and Europe. Speed is not merely a character trait: it becomes a demonstration of the Mega Drive, a way to stage scrolling, slopes and acceleration as brand identity. Yet the levels work because they alternate momentum and reading, rewarding players who learn routes, inertia and risk. The result changes Sega's public face and the rhythm of the platform game."
+          },
+          {
+            "card_id": "main:4",
+            "original_index": 4,
+            "heading": "Designing Sega's new mascot",
+            "text": "Development began in 1990 when Sega ordered its developers to create a game featuring a mascot for the company. The developers chose a blue hedgehog designed by Naoto Ohshima of Sega R&D9 after he won an internal character design contest, and named themselves Sonic Team to match their character. It uses a novel technique that allows Sonic's sprite to roll along curved scenery which was based on a concept by Oshima from 1989. Sonic the Hedgehog, designed for fast gameplay, was influenced by games by the Mario creator, Shigeru Miyamoto. The music was composed by Masato Nakamura, bassist of the J-pop band Dreams Come True."
+          },
+          {
+            "card_id": "main:5",
+            "original_index": 5,
+            "heading": "Speed stored in a slope",
+            "text": "Rolling downhill makes the terrain contribute to Sonic’s acceleration. Speed is therefore not only a command held down by the player; it is a relationship between a body and a curve. A well-read slope can prepare the momentum needed for an obstacle beyond the screen."
+          },
+          {
+            "card_id": "main:6",
+            "original_index": 6,
+            "heading": "The ring that saves a run",
+            "text": "Taking damage scatters collected rings across the screen, making a mistake spectacular but sometimes recoverable. Retrieving even one can restore a margin of safety. The scramble changes the rhythm from forward momentum to a brief, urgent search around the place where everything went wrong."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Sonic Channel — 1991 chronology",
+            "url": "https://sonic.sega.jp/SonicChannelOld/chara/history/1991/index.html",
+            "publisher": "Sega"
+          },
+          {
+            "title": "gamefaqs.gamespot.com",
+            "url": "https://gamefaqs.gamespot.com/genesis/454495-sonic-the-hedgehog/data",
+            "publisher": "gamefaqs.gamespot.com"
+          },
+          {
+            "id": "sonic91collection",
+            "title": "Sonic the Hedgehog developer interviews",
+            "url": "https://shmuplations.com/sonic/",
+            "publisher": "Naoto Ohshima,Hirokazu Yasuhara and Yuji Naka; English translation by shmuplations",
+            "source_type": "Primary1991 interview plus later Naka retrospective; all interviews and mirrors in this collection conservatively grouped as one publication",
+            "locator": "1991 Ohshima/Yasuhara: rolling animal, maps and difficulty;2001 Naka: intended gradual route learning, full-speed testers and ring system",
+            "checked_on": "2026-10-21",
+            "rights": "Bibliographic reference; source publication, interview, translation, documents and any associated media remain with their respective rights holders.",
+            "source_budget_group": "sonic91collection",
+            "research_snapshot": {
+              "snapshot": "F:\\Playhub\\PS5\\Pixel Museum\\build\\research\\canonical07\\sonic-collection.html",
+              "sha256": "c41da67a88d007c12783eeb974c4a896936f03473de49cf90aaaeaa00eee09da",
+              "bytes": 173579,
+              "resolved_url": "https://shmuplations.com/sonic/"
+            }
+          },
+          {
+            "id": "sonic97team",
+            "title": "The Story of Sonic Team:1997 developer interview",
+            "url": "https://shmuplations.com/sonicteam/",
+            "publisher": "Sega Magazine,January1997; Yuji Naka/Naoto Ohshima; English translation by shmuplations",
+            "source_type": "Separate original primary interview, translated; retrospective claims attributed and speculative first-voice claim excluded",
+            "locator": "Design Secrets and Memories:Sonic the Hedgehog, discarded Sonic Band sound test and late startup voice sample",
+            "checked_on": "2026-10-21",
+            "rights": "Bibliographic reference; source publication, interview, translation, documents and any associated media remain with their respective rights holders.",
+            "source_budget_group": "sonic97team",
+            "research_snapshot": {
+              "snapshot": "F:\\Playhub\\PS5\\Pixel Museum\\build\\research\\canonical07\\sonic-team-1997.html",
+              "sha256": "6c2adcf1d7ab65c25f967c59d7d58a34ac643bb31664d8410b68fe06e468242d",
+              "bytes": 162530,
+              "resolved_url": "https://shmuplations.com/sonicteam/"
+            }
+          },
+          {
+            "title": "Soundtrack publication: Best VGM 398 - Sonic the Hedgehog - Marble Zone",
+            "url": "https://www.youtube.com/watch?v=DXgAw6XylHk",
+            "publisher": "SD Archives Part 1",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Masato Nakamura",
+            "url": "https://en.wikipedia.org/wiki/Sonic_the_Hedgehog_%281991_video_game%29",
+            "publisher": "Masato Nakamura"
+          },
+          {
+            "title": "Soundtrack publication: Best VGM 800 - Sonic the Hedgehog - Green Hill Zone",
+            "url": "https://www.youtube.com/watch?v=xQ78kw5PRRA",
+            "publisher": "SD Archives Part 2",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Masato Nakamura",
+            "url": "https://en.wikipedia.org/wiki/Sonic_the_Hedgehog_%281991_video_game%29",
+            "publisher": "Masato Nakamura"
+          },
+          {
+            "title": "Soundtrack publication: Best VGM 1190 - Sonic the Hedgehog - Star Light Zone",
+            "url": "https://www.youtube.com/watch?v=IJ96SqX48N8",
+            "publisher": "SD Archives Part 2",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Masato Nakamura",
+            "url": "https://en.wikipedia.org/wiki/Sonic_the_Hedgehog_%281991_video_game%29",
+            "publisher": "Masato Nakamura"
+          },
+          {
+            "title": "Historical reference retained from the source exhibition",
+            "url": "https://en.wikipedia.org/wiki/Sonic_the_Hedgehog_(1991_video_game)"
+          },
+          {
+            "title": "Historical reference retained from the source exhibition",
+            "url": "https://sonic.sega.jp/SonicChannel/gametitle/SonicTheHedgehog.html"
+          },
+          {
+            "title": "Historical reference retained from the source exhibition",
+            "url": "https://info.sonicretro.org/images/7/7a/Sonic1_MD_US_manual.pdf"
+          },
+          {
+            "title": "Sonic the Hedgehog (1991 video game)",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1379821529",
+            "publisher": "English Wikipedia contributors",
+            "license": "Creative Commons Attribution-ShareAlike 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "attribution": "Complete source paragraphs reproduced verbatim; card headings supplied editorially."
+          }
+        ]
+      },
+      "features": [
+        {
+          "feature_id": "feature-sonic-team-art",
+          "title": "Drawing a rival for Sonic",
+          "subtitle": "",
+          "summary": "A machine needs its own movement.",
+          "cards": [
+            {
+              "card_id": "feature:feature-sonic-team-art:0",
+              "original_index": 0,
+              "heading": "A figurine becomes an introduction",
+              "text": "Artist Kazuyuki Hoshino recalled seeking a distinctive identity for Sonic CD. Fascinated by the polished metallic look associated with computer graphics, the team photographed a Sonic figurine using a Polaroid camera and scanned the images as a starting point for the title animation. A metallic emblem added contrast around the character."
+            },
+            {
+              "card_id": "feature:feature-sonic-team-art:1",
+              "original_index": 1,
+              "heading": "A race shapes the machine",
+              "text": "Metal Sonic began with a clear relationship: an opponent who could stand beside Sonic as his double and rival. Hoshino describes imagining the red iris inside a dark eye, then designing for a direct contest between the characters. Simply repeating Sonic's movement seemed insufficient. A robot allowed another answer, and the imagined force of a drag racer's launch suggested the large booster on its back. The machine's appearance expressed a different source of speed before the race itself demonstrated what that difference could do."
+            },
+            {
+              "card_id": "feature:feature-sonic-team-art:2",
+              "original_index": 2,
+              "heading": "The picture explains an action",
+              "text": "In a 2013 interview, Hoshino explained how character drawing communicates game actions. Sonic's spiked ball shows the attacking, protective shape used during a jump. He also described seeking feedback from colleagues elsewhere in Sega, including European staff and marketing, through a consultation process that had become more formal over time."
+            },
+            {
+              "card_id": "feature:feature-sonic-team-art:3",
+              "original_index": 3,
+              "heading": "Another side of the character",
+              "text": "Hoshino identifies another change when characters move from flat images into three dimensions. A two-dimensional game can repeatedly show a figure from its most effective angles. A three-dimensional model must also work from behind and from views the earlier sprite never exposed. The task is not finished by copying a familiar face. Parts that once remained unseen need decisions of their own. His explanation makes the adaptation a problem of sustained readability around a body, with the original appeal tested against a much larger range of viewpoints."
+            }
+          ],
+          "sources": [
+            {
+              "id": "soniccd",
+              "title": "Sonic CD developer interview collection",
+              "url": "https://shmuplations.com/soniccd/",
+              "publisher": "Kazuyuki Hoshino and Sonic CD staff; 2011 anniversary recollections and 1993 interviews; English translation shmuplations",
+              "source_type": "First-person recollections; entire collection treated as one publication budget",
+              "locator": "2011 anniversary collection: Kazuyuki Hoshino, Designer; CG theme and Polaroid title-screen production; 2011 anniversary collection: About Metal Sonic, rival race and booster engine",
+              "rights": "Reference only. Original publications, English translations, scans and associated media remain with their respective rights holders.",
+              "story_paragraphs": [
+                0,
+                1
+              ],
+              "paragraph_locators": {
+                "0": "2011 anniversary collection: Kazuyuki Hoshino, Designer; CG theme and Polaroid title-screen production",
+                "1": "2011 anniversary collection: About Metal Sonic, rival race and booster engine"
+              }
+            },
+            {
+              "id": "hoshino2013",
+              "title": "Interview: Sonic Team artist and designer Kazuyuki Hoshino",
+              "url": "https://www.seganerds.com/2013/08/09/interview-sonic-team-artistdesigner-kazuyuki-hoshino/",
+              "publisher": "Kazuyuki Hoshino interviewed by Diogo Miguel / Sega Nerds, 9 August 2013",
+              "source_type": "Independent original interview with the artist, not a secondary report",
+              "locator": "2013 Diogo Miguel interview: character/gameplay connection and feedback from Sega Europe/marketing; Same interview: particular challenges going from 2D to 3D and views from behind",
+              "rights": "Reference only. Original publications, English translations, scans and associated media remain with their respective rights holders.",
+              "story_paragraphs": [
+                2,
+                3
+              ],
+              "paragraph_locators": {
+                "2": "2013 Diogo Miguel interview: character/gameplay connection and feedback from Sega Europe/marketing",
+                "3": "Same interview: particular challenges going from 2D to 3D and views from behind"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entry_id": "workbook-06-28-final-fantasy-adventure",
+      "kind": "game",
+      "year_context_only": 1991,
+      "date_context_only": {
+        "month": 6,
+        "day": 28,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "The existing1991 Japanese Seiken Densetsu release anchors the article. Western titles are named without assuming identical release dates. The2021 retrospective and1991 soundtrack messages remain distinct sources.",
+      "factual_note": "Imported dated English Playhub editorial. Adapt its calendar wording, review publisher dates and assign rights-cleared media before presenting as a finished museum stop.",
+      "main": {
+        "feature_id": null,
+        "title": "Final Fantasy Adventure",
+        "subtitle": "Final Fantasy Adventure Brings the Action RPG into a Pocket-Sized Adventure",
+        "summary": "Square's Game Boy action RPG began the Mana series as Seiken Densetsu in Japan, Final Fantasy Adventure in North America and Mystic Quest in Europe.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "An action game inside the fantasy",
+            "text": "Square's Seiken Densetsu is a Game Boy action RPG, released overseas as Final Fantasy Adventure and Mystic Quest. It began the Mana series while retaining connections to Final Fantasy. Director Koichi Ishii wanted players to explore and fight through immediate movement, combining an action adventure with role-playing progression."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "A story with something to lose",
+            "text": "Ishii recalled wanting the adventure to include the exhilaration of action alongside encounters and separation from important people. Those aims guided both its movement and its story. Becoming stronger carried the player through a journey in which relationships and loss also mattered."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Music joins the new team's work",
+            "text": "The original soundtrack notes describe several contributions. Yoshinori Kitase emphasised narrative drama, while Kazuko Shibuya recalled visual experiments. Kenji Ito identified it as his first complete responsibility for music and effects at Square after contributing to SaGa 2. He credited ideas from colleagues and discussions with Ishii as part of the score's development."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "Final Fantasy Adventure Brings the Action RPG into a Pocket-Sized Adventure",
+            "text": "On June 28, 1991 Square released Seiken Densetsu for Game Boy, later known in the West as Final Fantasy Adventure and destined to become the first entry in the Mana series. Real-time combat, equipment and role-playing progression must coexist on a tiny screen with minimal controls. From that compression comes an adventure that is quick to read yet surprisingly broad, opening an independent line in Square's history."
+          },
+          {
+            "card_id": "main:4",
+            "original_index": 4,
+            "heading": "Exploring the world and visiting its towns",
+            "text": "The gameplay is similar to the original The Legend of Zelda for the NES: the world is viewed from a top-down camera angle, it is divided up into many different squares that can fit on the screen, and the main character can move up, down, left, and right across the screen. The player can interact with individuals within towns by gathering information and buying or selling items and equipment."
+          },
+          {
+            "card_id": "main:5",
+            "original_index": 5,
+            "heading": "Magic, experience and a charging attack",
+            "text": "The main character possesses several statistics, including hit points, power, and stamina, which can all increase upon gaining an experience level. Magic spells, which expend the character's MP, can be used to heal oneself or damage enemies. These spells can only be found in certain locations or obtained from other characters at specific plot intervals. In addition, the protagonist has a power gauge that affects his attack strength—the higher the gauge, the stronger his attack will be. The speed at which it fills is directly affected by the character's will level. The gauge will slowly fill up over time, but once the main character attacks, the gauge is emptied. When the gauge is completely filled up and the main character attacks with a weapon, he will perform a special attack."
+          },
+          {
+            "card_id": "main:6",
+            "original_index": 6,
+            "heading": "Weapons clear a path through dungeons",
+            "text": "A variety of enemies can be battled on a field screen to gain experience, GP, and items. Within dungeon areas, a number of puzzles may be present and required to be solved in order for the player to advance. The player can also save at any point. A number of weapons can be found throughout the game to maneuver through obstacles such as cutting through trees and thorns."
+          }
+        ],
+        "sources": [
+          {
+            "title": "na.finalfantasy.com",
+            "url": "https://na.finalfantasy.com/topics/90",
+            "publisher": "na.finalfantasy.com"
+          },
+          {
+            "title": "www.mobygames.com",
+            "url": "https://www.mobygames.com/game/4520/final-fantasy-adventure/releases/",
+            "publisher": "www.mobygames.com"
+          },
+          {
+            "id": "mana21ishii",
+            "title": "30years of Mana:Koichi Ishii looks back",
+            "url": "https://www.square-enix-games.com/en_US/news/30-years-mana-koichi-ishii",
+            "publisher": "Square Enix / Koichi Ishii",
+            "source_type": "Primary anniversary interview,2021; later recollection not a contemporary production diary",
+            "locator": "Questions about Final Fantasy Adventure beginnings, choosing directorial responsibility and action rather than turn-based play",
+            "checked_on": "2026-10-21",
+            "rights": "Bibliographic reference; source publication, interview, translation, documents and any associated media remain with their respective rights holders.",
+            "source_budget_group": "mana21ishii",
+            "research_snapshot": {
+              "snapshot": "F:\\Playhub\\PS5\\Pixel Museum\\build\\research\\canonical07\\mana-2021-ishii.html",
+              "sha256": "335cd70e670a1cd99570432e5a0bae3a87174ca6a15175f2dee195de5271304e",
+              "bytes": 679674,
+              "resolved_url": "https://www.square-enix-games.com/en_US/news/30-years-mana-koichi-ishii"
+            }
+          },
+          {
+            "id": "mana91notes",
+            "title": "Final Fantasy Adventure:1991 developer messages",
+            "url": "https://shmuplations.com/seikendensetsu/",
+            "publisher": "Seiken Densetsu original soundtrack liner notes; English translation by shmuplations",
+            "source_type": "Primary1991 creator messages and separate2005 Nintendo Dream interview in translation; the full collection and its mirrors conservatively grouped as one publication",
+            "locator": "2005 Koichi Ishii interview:encounters,parting and defending the sad ending;1991 Yoshinori Kitase planning,Kazuko Shibuya graphics and Kenji Ito music/effects messages",
+            "checked_on": "2026-10-21",
+            "rights": "Bibliographic reference; source publication, interview, translation, documents and any associated media remain with their respective rights holders.",
+            "source_budget_group": "mana91notes",
+            "research_snapshot": {
+              "snapshot": "F:\\Playhub\\PS5\\Pixel Museum\\build\\research\\canonical07\\mana-1991-messages.html",
+              "sha256": "beeca893f7a25866978371e856464294df4adb21b3945d6fbc0fe1a2183b8dba",
+              "bytes": 145174,
+              "resolved_url": "https://shmuplations.com/seikendensetsu/"
+            }
+          },
+          {
+            "title": "Final Fantasy Adventure — original release infobox, Wikipedia revision 1343313550",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1343313550",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Soundtrack publication: Best VGM 264 - Final Fantasy Adventure - In Search of the Sacred Sword",
+            "url": "https://www.youtube.com/watch?v=XJgGXuy64TE",
+            "publisher": "SD Archives 0",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Kenji Ito",
+            "url": "https://en.wikipedia.org/wiki/Final_Fantasy_Adventure",
+            "publisher": "Kenji Ito"
+          },
+          {
+            "title": "Soundtrack publication: Best VGM 546 - Final Fantasy Adventure - Fight 2",
+            "url": "https://www.youtube.com/watch?v=XNRKMI67fgU",
+            "publisher": "SD Archives 0",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Kenji Ito",
+            "url": "https://en.wikipedia.org/wiki/Final_Fantasy_Adventure",
+            "publisher": "Kenji Ito"
+          },
+          {
+            "title": "Soundtrack publication: Best VGM 798 - Final Fantasy Adventure - Endless Battlefield",
+            "url": "https://www.youtube.com/watch?v=zJRjNFm8xLQ",
+            "publisher": "SD Archives 0",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Kenji Ito",
+            "url": "https://en.wikipedia.org/wiki/Final_Fantasy_Adventure",
+            "publisher": "Kenji Ito"
+          },
+          {
+            "title": "Collection of Mana: original Final Fantasy Adventure images",
+            "url": "https://mana.square-enix-games.com/en-us/games/collection-of-mana",
+            "publisher": "Square Enix"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "workbook-07-01-duke-nukem",
+      "kind": "game",
+      "year_context_only": 1991,
+      "date_context_only": {
+        "month": 7,
+        "day": 1,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "release",
+      "factual_note": "Imported dated English Playhub editorial. Adapt its calendar wording, review publisher dates and assign rights-cleared media before presenting as a finished museum stop.",
+      "main": {
+        "feature_id": null,
+        "title": "Duke Nukem",
+        "subtitle": "Before the Shooter, Duke Nukem Was a Shareware Platformer",
+        "summary": "On July 1, 1991 Apogee released version 1.0 of Duke Nukem for DOS.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Before the Shooter, Duke Nukem Was a Shareware Platformer",
+            "text": "On July 1, 1991 Apogee released version 1.0 of Duke Nukem for DOS. Before the character became the face of a first-person shooter, he starred in a scrolling platform game distributed through Apogee's shareware model: an accessible episode designed to persuade players to buy the rest. EGA graphics, levels full of destructible objects and a hero already built as a caricature define an origin very different from the one most often remembered. The date also tells the story of an alternative way to sell PC games."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Three episodes and a shareware first chapter",
+            "text": "The 2D, multidirectional scrolling game follows the adventures of fictional character Duke Nukem across three episodes of ten levels each. The game's first episode was distributed as shareware."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Shooting scenery, collecting upgrades and finding the exit",
+            "text": "The main objective of the game is to get to the exit of each level, while destroying enemies and collecting points. Many objects onscreen can be shot including boxes, obstacles and blocks. Besides points, some collectibles include health power-ups, gun power-ups, and some inventory items with special abilities. The final level of each episode has no exit, and is instead completed by finding and defeating Dr. Proton."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "Eight-pixel scrolling and the origin of Duke’s name",
+            "text": "According to programmer and co-creator Todd Replogle, John Carmack helped him program some low-level parts of the game code in assembly language. The game world scrolls by shifting 8x8 \"blocks\" rather than individual pixels. The game's original title was Heavy Metal, but producer Scott Miller hated the name and chose to name it after the lead character, similar to comic books. He proposed Duke, which he felt sounded strong, and Replogle proposed Nukem as his last name."
+          }
+        ],
+        "sources": [
+          {
+            "title": "www.mobygames.com",
+            "url": "https://www.mobygames.com/game/559/duke-nukem/releases/",
+            "publisher": "www.mobygames.com"
+          },
+          {
+            "title": "en.wikipedia.org",
+            "url": "https://en.wikipedia.org/wiki/Duke_Nukem_(video_game)",
+            "publisher": "en.wikipedia.org"
+          },
+          {
+            "title": "fabiensanglard.net",
+            "url": "https://fabiensanglard.net/duke3d/id%20as%20Super-Ego-%20The%20Creation%20of%20Duke%20Nukem%203D.pdf",
+            "publisher": "fabiensanglard.net"
+          },
+          {
+            "title": "Duke Nukem (video game)",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1375538604",
+            "publisher": "English Wikipedia contributors",
+            "license": "Creative Commons Attribution-ShareAlike 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "attribution": "Consecutive complete source sentences reproduced verbatim; remaining text omitted and card heading supplied editorially."
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "workbook-07-12-castlevania-ii-belmont-s-revenge",
+      "kind": "game",
+      "year_context_only": 1991,
+      "date_context_only": {
+        "month": 7,
+        "day": 12,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "release",
+      "factual_note": "Imported dated English Playhub editorial. Adapt its calendar wording, review publisher dates and assign rights-cleared media before presenting as a finished museum stop.",
+      "main": {
+        "feature_id": null,
+        "title": "Castlevania II: Belmont's Revenge",
+        "subtitle": "Belmont's Revenge Shows How Much Castlevania Can Fit into Four Shades",
+        "summary": "On July 12, 1991 Konami released Dracula Densetsu II in Japan, known in the West as Castlevania II: Belmont's Revenge.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Belmont's Revenge Shows How Much Castlevania Can Fit into Four Shades",
+            "text": "Konami released Dracula Densetsu II for Game Boy in Japan on July 12, 1991, later known overseas as Castlevania II: Belmont's Revenge. Four themed castles can be tackled in any order. Ropes, traps and projectile weapons shape the routes through the monochrome stages, with passwords allowing progress to carry between sessions."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Four themed castles, sub-weapons and passwords",
+            "text": "Unlike the previous Game Boy title, sub-weapons in the form of holy water and axes (or the cross in the Japanese version) are available in the game. There are four initial levels, each taking place in a separate castle with a unique theme such as air, plant, earth, and crystal, and can be completed in any order, similar to Mega Man. There are large trap rooms in the levels. The game utilizes a password system."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "The Japanese cross and North American axe",
+            "text": "The North American version of the game changes one of the sub-weapons, replacing the cross with an axe. The cross had a long-range horizontal trajectory similar to the fireball whip, while the axe can go in an upward arc motion that can go through walls and barriers. The Konami GB Collection, released in Japan and Europe only, restores the original cross."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "Reviews notice cleaner graphics and the return of sub-weapons",
+            "text": "IGN thought the game made better use of the Game Boy's hardware than the first Castlevania handheld game, and applauded its inclusion of traditional Castlevania items, weapons, and having a cleaner graphical aesthetic. It was still hurt, however, by a lack of character speed and its short play time. GameSpy called it one of the best action games on the original Game Boy. Game Informer's Tim Turi considers it the best Castlevania game on the original Game Boy; he cited the improved graphics and use of sub-weapons."
+          }
+        ],
+        "sources": [
+          {
+            "title": "www.mobygames.com",
+            "url": "https://www.mobygames.com/game/5414/castlevania-ii-belmonts-revenge/releases/",
+            "publisher": "www.mobygames.com"
+          },
+          {
+            "title": "gamefaqs.gamespot.com",
+            "url": "https://gamefaqs.gamespot.com/gameboy/563277-castlevania-ii-belmonts-revenge/data",
+            "publisher": "gamefaqs.gamespot.com"
+          },
+          {
+            "title": "en.wikipedia.org",
+            "url": "https://en.wikipedia.org/wiki/Castlevania_II:_Belmont%27s_Revenge",
+            "publisher": "en.wikipedia.org"
+          },
+          {
+            "title": "Castlevania II: Belmont's Revenge — original release infobox, Wikipedia revision 1379613705",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1379613705",
+            "publisher": "English Wikipedia contributors"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "workbook-07-13-super-r-type",
+      "kind": "game",
+      "year_context_only": 1991,
+      "date_context_only": {
+        "month": 7,
+        "day": 13,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "release",
+      "factual_note": "Imported dated English Playhub editorial. Adapt its calendar wording, review publisher dates and assign rights-cleared media before presenting as a finished museum stop.",
+      "main": {
+        "feature_id": null,
+        "title": "Super R-Type",
+        "subtitle": "Super R-Type Brings Arcade Shooter Discipline to Nintendo's New Console",
+        "summary": "On July 13, 1991 Irem released Super R-Type for Super Famicom in Japan.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Super R-Type Brings Arcade Shooter Discipline to Nintendo's New Console",
+            "text": "On July 13, 1991 Irem released Super R-Type for Super Famicom in Japan. The game reworks material from R-Type II and adds content of its own, bringing the series' deliberate rhythm to Nintendo's new console: the Force can attach to the front or rear of the ship, the charged shot turns waiting into power, and enemy placement demands memory and precision. It is also a game marked by the machine's technical limits, especially slowdown, which became an unintended part of how this version is remembered."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Seven stages, no checkpoints",
+            "text": "Super R-Type borrows four stages from R-Type II and adds three new ones. Dying sends the player back to the beginning of the level, because there are no checkpoints."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "When the screen slows down",
+            "text": "The game suffers from slowdown, a problem shared by many early Super Nintendo games. Super R-Type can slow almost to a standstill when many objects appear on-screen. This also gives players more time to avoid crowded obstacles."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "Later releases",
+            "text": "Super R-Type reached the Wii Virtual Console in March 2008, before being removed from that service in March 2012. It returned through Nintendo Classics in April 2024. Retro-Bit also issued a SNES-compatible cartridge with Super R-Type and R-Type III in July 2018."
+          }
+        ],
+        "sources": [
+          {
+            "title": "www.nintendo.co.jp",
+            "url": "https://www.nintendo.co.jp/wii/vc/vc_srt/vc_srt_01.html",
+            "publisher": "www.nintendo.co.jp"
+          },
+          {
+            "title": "www.mobygames.com",
+            "url": "https://www.mobygames.com/game/7148/super-r-type/releases/",
+            "publisher": "www.mobygames.com"
+          },
+          {
+            "title": "en.wikipedia.org",
+            "url": "https://en.wikipedia.org/wiki/Super_R-Type",
+            "publisher": "en.wikipedia.org"
+          },
+          {
+            "title": "Super R-Type — original release infobox, Wikipedia revision 1369936388",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1369936388",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "console-gap-bonk-s-revenge",
+      "kind": "game",
+      "year_context_only": 1991,
+      "date_context_only": {
+        "month": 7,
+        "day": 19,
+        "precision": "day",
+        "region": "JP"
+      },
+      "event_semantics": "",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "Bonk's Revenge",
+        "subtitle": "Another headlong prehistoric journey",
+        "summary": "Bonk's Revenge is the second PC Engine adventure of Hudson's caveman hero, first released in Japan on 19 July 1991.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Another headlong prehistoric journey",
+            "text": "Bonk's Revenge is the second PC Engine adventure of Hudson's caveman hero, first released in Japan on 19 July 1991. King Drool III has stolen half the Moon, sending Bonk through another cartoon world to recover it. The stages range from outdoor landscapes to trains, water and space. Bonk's head remains his principal weapon, and the sequel builds around the pleasure of turning a simple jump into a forceful landing while the setting supplies another unusual surface or creature to cross."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Climbing with a bite",
+            "text": "Holding the attack button in midair lets Bonk spin and hover, stretching the distance and control of a jump. His mouth can grip certain surfaces for climbing, opening another route through the scenery. Hearts represent health, fruit restores it, and blue hearts can extend the available supply. Smileys collected along the way contribute to bonus opportunities after a boss. These systems make the path through a stage more than a dash to its exit, rewarding careful movement and attention to items placed above or beyond the most obvious route."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "A stronger appetite for spectacle",
+            "text": "Meat powers Bonk into stronger temporary forms. At an intermediate stage, his attacks can freeze enemies; at full power, fire and invulnerability turn movement through a crowded screen into a brief advantage. The player can use that window to press forward or tackle a difficult section. Red Company and Mutech developed the game, with music by Hirohiko Takayama. Its expanded movement and expressive transformations continue the first game's central idea: a character's comically oversized body can supply an entire platform game's vocabulary."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Bonk's Revenge — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Bonk%27s_Revenge"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "workbook-07-19-final-fantasy-iv",
+      "kind": "game",
+      "year_context_only": 1991,
+      "date_context_only": {
+        "month": 7,
+        "day": 19,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "release",
+      "factual_note": "Imported dated English Playhub editorial. Adapt its calendar wording, review publisher dates and assign rights-cleared media before presenting as a finished museum stop.",
+      "main": {
+        "feature_id": null,
+        "title": "Final Fantasy IV",
+        "subtitle": "Final Fantasy IV Makes Time Flow Inside Turn-Based Combat",
+        "summary": "On July 19, 1991 Square released Final Fantasy IV for Super Famicom in Japan.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Final Fantasy IV Makes Time Flow Inside Turn-Based Combat",
+            "text": "Square released Final Fantasy IV for the Super Famicom in Japan on July 19, 1991. Its Active Time Battle system gives characters and enemies action timers, adding pressure while players choose commands. The story follows Cecil, a dark knight seeking a different path. Companions join and leave as the plot develops, changing the abilities available in battle."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Battles in real time",
+            "text": "Final Fantasy IV introduced Square's Active Time Battle system. Players enter commands while battle continues, rather than waiting through a fixed sequence of turns. Hiroyuki Ito conceived the idea after watching Formula One cars pass each other at different speeds; the battle system was developed by Kazuhiko Aoki, Ito and Akihiko Matsui."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Cecil at Mount Ordeals",
+            "text": "The people of Mysidia resent Cecil for his earlier attack on their town. Their elder tells him that defeating Golbez requires him to climb Mount Ordeals and become a Paladin. Palom and Porom accompany him, and he encounters Tellah on the mountain. Cecil's change of vocation follows his decision to cast aside the darkness within himself."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "A party with distinct roles",
+            "text": "The player can control as many as five party members, compared with four in earlier entries. Each character has different strengths and weaknesses: a powerful magic user may have weak defence, while a physical fighter may have low agility. White magic supplies healing and support, Black magic attacks, and Summon magic calls monsters to perform specialised tasks. Abilities arrive through experience levels and fixed story events."
+          }
+        ],
+        "sources": [
+          {
+            "title": "www.jp.square-enix.com",
+            "url": "https://www.jp.square-enix.com/game/?pf=26",
+            "publisher": "www.jp.square-enix.com"
+          },
+          {
+            "title": "gamefaqs.gamespot.com",
+            "url": "https://gamefaqs.gamespot.com/snes/588330-final-fantasy-ii/data",
+            "publisher": "gamefaqs.gamespot.com"
+          },
+          {
+            "title": "www.mobygames.com",
+            "url": "https://www.mobygames.com/game/4572/final-fantasy-ii/",
+            "publisher": "www.mobygames.com"
+          },
+          {
+            "title": "Final Fantasy IV — original release infobox, Wikipedia revision 1379845395",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1379845395",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "workbook-07-26-mega-man-dr-wily-s-revenge",
+      "kind": "game",
+      "year_context_only": 1991,
+      "date_context_only": {
+        "month": 7,
+        "day": 26,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "release",
+      "factual_note": "Imported dated English Playhub editorial. Adapt its calendar wording, review publisher dates and assign rights-cleared media before presenting as a finished museum stop.",
+      "main": {
+        "feature_id": null,
+        "title": "Mega Man: Dr. Wily's Revenge",
+        "subtitle": "Mega Man Learns to Fit the Game Boy Without Becoming a Simple Copy",
+        "summary": "On July 26, 1991 Capcom released Rockman World for Game Boy in Japan, later localized as Mega Man: Dr. Wily's Revenge.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Mega Man Learns to Fit the Game Boy Without Becoming a Simple Copy",
+            "text": "Capcom released Rockman World for Game Boy in Japan on July 26, 1991, later titled Mega Man: Dr. Wily's Revenge overseas. The series' first portable entry combines Robot Masters and other material from the first two NES games with a new opponent, Enker. Four selectable stages begin a route that continues into Wily's fortress, with acquired weapons and passwords supporting progress."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Choosing a route",
+            "text": "Mega Man: Dr. Wily's Revenge is an action-platformer that shares many similarities with its NES counterparts. The player, as Mega Man, is able to choose among four stages to complete in whatever order desired. Each stage contains various enemies to blast through and obstacles to overcome, such as leaping between disappearing blocks over deadly spikes and bottomless pits. Mega Man's primary weapon is an arm cannon that has unlimited ammunition. Destroyed enemies typically leave items that replenish Mega Man's health or extra lives. At the end of every stage is a boss battle with a robot master, and defeating it earns the player its special weapon. Each boss is weak to another's weapon, allowing the player to strategize the order in which they are beaten."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Two games recombined",
+            "text": "Dr. Wily's Revenge reuses and mixes stage components, enemies, and robot masters from the first two NES games in the Mega Man series. The initial four stages and bosses (Cut Man, Ice Man, Fire Man, and Elec Man) come from the original Mega Man. A password system allows the player to return to the game after any or all of these first four stages are cleared or when the player suffers a game over. Once the player completes these stages and travels through Wily's fortress, four more robot masters must be fought in order to progress. These bosses (Quick Man, Bubble Man, Flash Man, and Heat Man) are taken from Mega Man 2 for NES. Although they do not have their own stages, the player earns the special weapons of these bosses. Once all four are defeated, the player faces a new robot master created for the game, Enker."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "An outside team and a new boss",
+            "text": "According to series artist and producer Keiji Inafune, Mega Man: Dr. Wily's Revenge was the first Mega Man game to be outsourced by Capcom for its development. He felt the game turned out well because the project's leader was a \"huge Mega Man fan\" who appeared to understand the games better than some of Capcom's own people. Because he thought much of his artwork from the original Mega Man was not aging well, Inafune redrew many of his old illustrations to be used for the game's enemy character sprites. Beginning with Mega Man 2 for the NES, Capcom began accepting boss ideas from fans. It was not until Dr. Wily's Revenge that Inafune was able to design a boss character from scratch. To keep with the musical motif of naming characters, the new character Enker was named after the Japanese genre enka."
+          }
+        ],
+        "sources": [
+          {
+            "title": "gamefaqs.gamespot.com",
+            "url": "https://gamefaqs.gamespot.com/gameboy/563283-mega-man-dr-wilys-revenge/data",
+            "publisher": "gamefaqs.gamespot.com"
+          },
+          {
+            "title": "www.mobygames.com",
+            "url": "https://www.mobygames.com/game/7109/mega-man-dr-wilys-revenge/releases/",
+            "publisher": "www.mobygames.com"
+          },
+          {
+            "title": "www.mobygames.com",
+            "url": "https://www.mobygames.com/game/7109/mega-man-dr-wilys-revenge/",
+            "publisher": "www.mobygames.com"
+          },
+          {
+            "title": "Mega Man: Dr. Wily's Revenge: English Wikipedia revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1373064182",
+            "publisher": "English Wikipedia contributors",
+            "attribution": "Adapted and abridged under Creative Commons Attribution-ShareAlike 4.0."
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "game-informer-magazine",
+      "kind": "feature",
+      "year_context_only": 1991,
+      "date_context_only": {
+        "month": 8,
+        "precision": "month",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "Game Informer",
+        "subtitle": "A game shop's newsletter becomes a national magazine",
+        "summary": "Founded by FuncoLand in August 1991, Game Informer grew from a retailer's publication into a magazine known for reviews and extensive cover stories.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "The first issues at FuncoLand",
+            "text": "Game Informer debuted in August 1991 as a publication of the American game retailer FuncoLand. Elizabeth Olson was its first editor-in-chief, with Andy McNamara working as her editorial assistant. They later shared the editorship before McNamara became the sole editor-in-chief. Initially published every two months, the magazine adopted a monthly schedule in November 1994. Its articles, reviews and strategies gave customers something to read about the games surrounding them in the shop."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "A magazine on the shop counter",
+            "text": "GameStop acquired FuncoLand and Game Informer in 2000. The magazine became part of the retailer's customer loyalty programme, giving it a route into readers' hands through physical stores as well as subscriptions. Its editorial identity included long cover features, reviews and reporting on games and consoles. Print pages and the accompanying website offered different ways to follow a game from its announcement through development and release."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Closure, an archive and a return",
+            "text": "GameStop closed Game Informer in August 2024 after 33 years and 368 issues. Its website also went offline and the digital archive disappeared. In March 2025, the publication announced its acquisition by Gunzilla Games and its return as a separate business. The website and archive were restored, the laid-off staff returned, and the print magazine resumed publication in June 2025. Its history therefore includes both the vulnerability of a long-running publication and the recovery of its accumulated work."
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Game_Informer",
+            "title": "Game Informer history"
+          },
+          {
+            "url": "https://www.gameinformer.com/covers",
+            "title": "Official Game Informer cover archive"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "workbook-08-02-streets-of-rage",
+      "kind": "game",
+      "year_context_only": 1991,
+      "date_context_only": {
+        "month": 8,
+        "day": 2,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "release",
+      "factual_note": "Imported dated English Playhub editorial. Adapt its calendar wording, review publisher dates and assign rights-cleared media before presenting as a finished museum stop.",
+      "main": {
+        "feature_id": null,
+        "title": "Streets of Rage",
+        "subtitle": "Streets of Rage Brings the Arcade Brawler Home Without Simply Copying It",
+        "summary": "On August 2, 1991 Sega released Bare Knuckle, known in the West as Streets of Rage, for Mega Drive in Japan.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Streets of Rage Brings the Arcade Brawler Home Without Simply Copying It",
+            "text": "Sega released Bare Knuckle for the Mega Drive in Japan on August 2, 1991, later known overseas as Streets of Rage. One or two players fight through night-time streets, using attacks, grabs and collected weapons to keep enemies from surrounding them. Limited police-support specials provide help against crowded screens. Its club-influenced music became a distinctive part of the series."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Building a street fighter",
+            "text": "The working title for Streets of Rage was DSWAT. This was to signify the idea that it took place in the same universe as ESWAT: City Under Siege, an earlier Sega game. The cop car from the ending of ESWAT on the Genesis is the same as the support car in this title. Lead designer Noriyoshi Oba broached the idea of doing a street fighting game along the lines of Final Fight and Double Dragon with Yuzo Koshiro. Oba was also influenced by action television shows such as Starsky & Hutch and The A-Team. The game was designed for players to focus on preventing enemies from swarming them, as well as to work with a second player using various cooperative team moves."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Clearing the streets",
+            "text": "Adam Hunter, Axel Stone and Blaze Fielding fight through eight rounds. Weapons found along the way include knives, bottles, pipes and baseball bats; apples and chicken restore energy. Enemies arrive from both sides of the screen, and each opponent must be defeated before the players can advance. All rounds except the seventh end with a boss."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "Calling the police",
+            "text": "Players also have a limited number of special attacks that allow them to call their former comrades, the police and summon a police car which fires explosives, damaging all enemies on-screen. The player is given one special attack per life or per level and power-ups shaped like police cars can sometimes be found to supply additional specials."
+          }
+        ],
+        "sources": [
+          {
+            "title": "www.mobygames.com",
+            "url": "https://www.mobygames.com/game/6599/streets-of-rage/releases/",
+            "publisher": "www.mobygames.com"
+          },
+          {
+            "title": "www.mobygames.com",
+            "url": "https://www.mobygames.com/game/6599/streets-of-rage/releases/genesis/",
+            "publisher": "www.mobygames.com"
+          },
+          {
+            "title": "www.mobygames.com",
+            "url": "https://www.mobygames.com/game/6599/streets-of-rage/",
+            "publisher": "www.mobygames.com"
+          },
+          {
+            "title": "Official music publication: The Street of Rage",
+            "url": "https://www.youtube.com/watch?v=VA1V47h3IOk",
+            "publisher": "Yuzo Koshiro - Topic",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Official music publication: Fighting in the Street",
+            "url": "https://www.youtube.com/watch?v=l0mLlosOQxY",
+            "publisher": "Yuzo Koshiro - Topic",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Soundtrack publication: Good VGM 284 - Streets of Rage - Attack the Barbarian",
+            "url": "https://www.youtube.com/watch?v=5BYyPnldN1c",
+            "publisher": "Good Video Game Music",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Yuzo Koshiro",
+            "url": "https://data-discs.com/products/streets-of-rage",
+            "publisher": "Yuzo Koshiro"
+          },
+          {
+            "title": "Soundtrack publication: Good VGM 092 - Streets of Rage - Fighting in the Street",
+            "url": "https://www.youtube.com/watch?v=SPJadT838mk",
+            "publisher": "Good Video Game Music",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Yuzo Koshiro",
+            "url": "https://data-discs.com/products/streets-of-rage",
+            "publisher": "Yuzo Koshiro"
+          },
+          {
+            "title": "Streets of Rage (video game): English Wikipedia revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1380359765",
+            "publisher": "English Wikipedia contributors",
+            "attribution": "Adapted and abridged under Creative Commons Attribution-ShareAlike 4.0."
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          }
+        ]
+      },
+      "features": []
+    }
+  ]
+}

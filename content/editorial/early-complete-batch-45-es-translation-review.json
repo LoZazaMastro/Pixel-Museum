@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "locale": "es",
+  "review": "Binding of exact independently approved complete candidate members; no new linguistic review substituted. Every full candidate SHA and independent PASS receipt checked, all current English five fields and translation hashes validated.",
+  "entries": [
+    {
+      "entry_id": "workbook-04-07-atlus",
+      "source_fields_sha256": "7bec93cee68e78317111036c50e9c0e62ec3af0589019399d1a4414a83d21dae",
+      "translation_sha256": "7b39b839b404ed66155579c28ace37571a139e43da8da582e08b8cb061b0c6ef",
+      "independent_peer": "build/research/atlus1986-four-language-completion/independent-final-all-fields-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "2915f0f5844750f82a52e12ed143322273c4d97f4d478498acc065960a4eff8f",
+      "candidate_path": "build/research/atlus1986-four-language-completion/atlus-four-language-peer-precise-final-candidate.json",
+      "candidate_sha256": "043de717b9cb06ef0d8a5f3962d2c5a315a3814e4c4e35265616eb84c6d3f82b"
+    },
+    {
+      "entry_id": "wikipedia-11496692",
+      "source_fields_sha256": "bdfd3056fa9012013d4873d07e98f8a6a4c9d017dc2bb5fadf3c7b65aaca4af0",
+      "translation_sha256": "0088468b8e844b23ae2254b1f2c45745a832a40e1a75a152f0da97e64bceba85",
+      "independent_peer": "build/research/ninja-kid1986-four-language-completion/independent-final-all-fields-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "6c8652699c3d0919eff116ff4dacf3c7c5973c64380d2433f9fa9d2692114925",
+      "candidate_path": "build/research/ninja-kid1986-four-language-completion/ninja-kid-four-language-final-german-coordination-candidate.json",
+      "candidate_sha256": "20dc71923c5d47e611e059e6b2c35831bf29a8cbe9836d3d487ccbd7dd51cecb"
+    },
+    {
+      "entry_id": "workbook-06-13-star-soldier",
+      "source_fields_sha256": "9c0ce74e625d57d3ae9a4f02e99b957b91db4df0f9b75afbcc5b7bc28cf32112",
+      "translation_sha256": "3c65211d446ca3b6677e208a151584b7675ea9ff0b8ce9ecd6e77acedaecf12c",
+      "independent_peer": "build/research/star-soldier1986-four-language-completion/independent-final-all-fields-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "485bc4096801e97f32a16a6dce91bd7402d16e9681c5e9c37808d131d5ce833c",
+      "candidate_path": "build/research/star-soldier1986-four-language-completion/star-soldier-four-language-peer-precise-final-candidate.json",
+      "candidate_sha256": "a671f5345e19b71845ab77781920c280abad13dbf6ebdcd3624084d471dd6dfd"
+    }
+  ]
+}

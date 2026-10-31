@@ -1,0 +1,76 @@
+﻿/* Footer components. Loaded after style.css to keep the footer layout explicit. */
+footer.wrap{padding-top:12px}
+.footer-opening{display:grid;grid-template-columns:112px minmax(0,1fr);align-items:center;gap:30px;padding:22px 0 34px}
+.footer-opening>.support-art{width:112px;height:112px;object-fit:contain;image-rendering:pixelated;justify-self:start}
+.footer-opening>div{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:28px;align-items:center;width:100%;min-width:0}
+.footer-opening p{margin:0;max-width:660px;font-size:14px;line-height:1.65}
+.footer-opening .support-button{display:inline-flex;align-items:center;justify-content:space-between;gap:32px;white-space:nowrap;margin:0;padding:18px 26px;font-size:16px;border:0;border-radius:0;background:var(--ink);color:var(--paper)}
+.support-button svg{width:20px;height:20px;fill:currentColor;flex:none}
+.preservation{padding:14px 0 28px}
+.preservation h2{font-size:24px;line-height:1.2}
+.preservation>p{margin:10px 0 17px;font-size:13px}
+.preservation-links{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));align-items:center;gap:14px}
+.preservation-links a,.preservation-links a.logo-white-lettering{display:flex;align-items:center;justify-content:center;width:100%;height:104px;min-width:0;max-width:none;padding:10px 4px;margin:0;grid-column:auto;background:transparent!important;border:0;border-radius:0}
+.preservation-links a:last-child{grid-column:auto}
+.preservation-links img{display:block;width:auto;height:auto;max-width:min(100%,142px);max-height:66px;object-fit:contain;padding:0!important}
+/* Tight alpha bounds are already present in every PNG. Optical size therefore
+   depends on the visible mark, rather than a padded source canvas. */
+.preservation-links a[href="https://gamehistory.org/"] img{max-width:92px;max-height:80px}
+.preservation-links a[href="https://gamepres.org/en/"] img{max-width:min(100%,124px);max-height:91px}
+.preservation-links a[href="https://efgamp.eu/"] img{max-width:min(100%,148px);max-height:88px}
+.preservation-links a[href="https://hitsave.org/"] img{max-width:min(100%,145px);max-height:64px}
+/* Official dark variants already carry readable text; avoid legacy inversion. */
+:root[data-theme=dark] .preservation-links img{filter:none!important}
+:root:not([data-theme=dark]) .preservation-links a.logo-white-lettering img{filter:brightness(0)}
+.source-credit{padding-block:20px}
+.legal{padding-top:16px;font-size:10px}
+.legal>p{margin:0 0 12px;max-width:1050px;line-height:1.6}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;gap:24px;border-top:1px solid var(--line);padding:19px 0 22px;margin-top:20px}
+.footer-bottom .copyright{padding:0;margin:0;border:0;font-size:10px;color:var(--muted)}
+.back-to-top{display:inline-flex;align-items:center;gap:11px;padding:8px 0;font-size:11px;white-space:nowrap}
+.back-to-top svg{width:14px;height:14px;fill:currentColor;transition:transform .2s}
+.back-to-top:hover svg{transform:translateY(-3px)}
+@media(max-width:1100px){
+ .footer-opening>div{grid-template-columns:1fr;gap:15px}
+ .footer-opening .support-button{justify-self:start;padding:16px 22px;font-size:15px}
+ .preservation-links{grid-template-columns:repeat(4,minmax(0,1fr));gap:8px 20px}
+ .preservation-links a{height:98px}
+}
+@media(max-width:700px){
+ .footer-opening{grid-template-columns:84px minmax(0,1fr);gap:22px;padding:22px 0 26px}
+ .footer-opening>.support-art{width:84px;height:84px;align-self:start;margin-top:4px}
+ .footer-opening>div{display:grid;gap:15px}
+ .footer-opening p{margin:0;font-size:13px}
+ .footer-opening .support-button{font-size:14px;gap:24px;padding:15px 19px}
+ .preservation{padding:14px 0 22px}
+ .preservation h2{font-size:22px}
+ .preservation-links{grid-template-columns:repeat(3,minmax(0,1fr));gap:7px 15px}
+ .preservation-links a{height:96px}
+ .preservation-links a:last-child{grid-column:2}
+ .preservation-links img{max-width:min(100%,140px);max-height:66px}
+}
+@media(max-width:480px){
+ .footer-opening{grid-template-columns:64px minmax(0,1fr);gap:17px}
+ .footer-opening>.support-art{width:64px;height:64px}
+ .footer-opening .support-button{font-size:12px;gap:16px;padding:14px 15px}
+ .preservation-links{grid-template-columns:repeat(2,minmax(0,1fr));gap:5px 20px}
+ .preservation-links a:last-child{grid-column:1/-1;width:50%}
+ .footer-bottom{gap:14px;align-items:flex-end}
+ .footer-bottom .copyright{max-width:210px;line-height:1.6}
+ .back-to-top{font-size:10px;gap:7px}
+}
+@media(prefers-reduced-motion:reduce){.back-to-top svg{transition:none}}
+
+/* Support is one deliberate split-colour card. */
+footer .footer-opening{grid-template-columns:150px minmax(0,1fr);gap:0;background:var(--surface);border:1px solid var(--line);padding:0;margin:20px 0 38px;overflow:hidden;align-items:stretch}footer .footer-opening>.support-art{width:100%;height:100%;min-height:180px;max-height:none;padding:42px;background:var(--mint);align-self:stretch;justify-self:stretch;color:var(--ink)}footer .footer-opening>div{padding:30px 32px;gap:30px}footer .footer-opening p{font-size:15px}footer .source-credit{padding:0;background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);margin-block:20px}footer .source-credit summary{font-size:17px;font-weight:500;padding:24px;gap:24px}footer .source-credit summary span{font-size:23px}footer .source-credit>p{margin-inline:24px}footer .source-credit .source-sites{width:calc(100% - 48px);margin-bottom:24px}footer .source-credit summary:hover{background:var(--mint)}
+@media(max-width:1100px){footer .footer-opening>div{padding:26px}}@media(max-width:700px){footer .footer-opening{grid-template-columns:92px minmax(0,1fr);margin-bottom:28px}footer .footer-opening>.support-art{padding:22px;min-height:180px}footer .footer-opening>div{padding:24px;gap:17px}footer .footer-opening p{font-size:14px}footer .source-credit summary{padding:21px;font-size:16px}}@media(max-width:480px){footer .footer-opening{grid-template-columns:72px minmax(0,1fr)}footer .footer-opening>.support-art{padding:18px}footer .footer-opening>div{padding:20px 17px}footer .source-credit summary{font-size:15px}}
+
+/* Flush colour panels: no inherited SVG top margin or hairline frame. */
+footer .footer-opening{border:0}footer .footer-opening>.support-art{margin:0;border:0}
+
+/* Compact source disclosure: 20% smaller type, 30% lower closed height. */
+footer .source-credit{border-left:1px solid var(--line)}
+footer .source-credit summary{font-size:13.6px;padding:14.775px 24px}
+footer .source-credit summary span{font-size:18.4px}
+@media(max-width:700px){footer .source-credit summary{font-size:12.8px;padding:12.675px 21px}}
+@media(max-width:480px){footer .source-credit summary{font-size:12px}}

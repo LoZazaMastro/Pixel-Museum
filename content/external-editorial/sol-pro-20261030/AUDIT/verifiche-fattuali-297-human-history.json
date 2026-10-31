@@ -1,0 +1,717 @@
+{
+  "batch_id": "297-human-history",
+  "sources": [
+    {
+      "source_id": "space_afi",
+      "title": "2001: A Space Odyssey, AFI Catalog",
+      "url": "https://catalog.afi.com/Film/23399-2001-A-SPACE-ODYSSEy",
+      "verification_scope": "Scheda consultata negli estratti: prima Washington 2 aprile 1968, New York 3, Los Angeles 4. Il 3 aprile dell’intestazione non sostituisce la prima apertura documentata."
+    },
+    {
+      "source_id": "king_stanford",
+      "title": "Assassination of Martin Luther King Jr., King Institute",
+      "url": "https://kinginstitute.stanford.edu/assassination-martin-luther-king-jr",
+      "verification_scope": "Ricostruzione istituzionale letta: attentato, ospedale, condanna, ritrattazione e azione civile della famiglia. Le accuse di complotto rimangono attribuite e non sono esposte come fatto accertato."
+    },
+    {
+      "source_id": "king_committee",
+      "title": "Findings on MLK Assassination, National Archives",
+      "url": "https://www.archives.gov/research/jfk/select-committee-report/part-2a.html",
+      "verification_scope": "Rapporto primario della commissione parlamentare: 4 aprile 1968, arresto Heathrow 8 giugno, dichiarazione di colpevolezza 10 marzo 1969 e 99 anni."
+    },
+    {
+      "source_id": "intel_history",
+      "title": "Intel’s Founding, archivio aziendale",
+      "url": "https://www.intel.com/content/www/us/en/history/virtual-vault/articles/intels-founding.html",
+      "verification_scope": "Fondazione/incorporazione il 18 luglio 1968 da Noyce e Moore dopo Fairchild. L’evento è fondazione societaria, non nascita di una persona."
+    },
+    {
+      "source_id": "intel_ir",
+      "title": "Intel Investor Relations FAQ",
+      "url": "https://www.intc.com/stock-info/faq",
+      "verification_scope": "Cronologia giuridica: NM Electronics Inc. 18 luglio 1968, cambio di nome Intel 6 agosto 1968, reincorporazione Delaware 1989. Il cambio di nome non sostituisce la fondazione."
+    },
+    {
+      "source_id": "prague_bundesarchiv",
+      "title": "21. August 1968: Einmarsch – kein Einmarsch, Bundesarchiv",
+      "url": "https://www.bundesarchiv.de/themen-entdecken/online-entdecken/geschichtsgalerien/21-august-1968-einmarsch-kein-einmarsch/",
+      "verification_scope": "Fonte archivistica letta: preparativi NVA, 7ª divisione corazzata e 11ª motorizzata rimaste nella DDR; nessun impiego di queste truppe da combattimento nell’invasione. URSS, Bulgaria, Ungheria e Polonia distinti dalla partecipazione preparatoria della DDR."
+    },
+    {
+      "source_id": "prague_parliament",
+      "title": "Storia dell’Assemblea federale, Parlamento ceco",
+      "url": "https://www.psp.cz/eknih/1969fs/rejstrik/info.htm",
+      "verification_scope": "Legge costituzionale n. 143/1968 adottata 27 ottobre 1968, efficace 1 gennaio 1969. La federazione non è già istituita prima dell’invasione di agosto."
+    },
+    {
+      "source_id": "demo_institute",
+      "title": "Firsts: The Demo, Doug Engelbart Institute",
+      "url": "https://www.dougengelbart.org/content/view/209/448/",
+      "verification_scope": "Pagina letta: 9 dicembre 1968, Fall Joint Computer Conference, 90 minuti, lavoro del gruppo ARC, NLS e denominazione retrospettiva."
+    },
+    {
+      "source_id": "demo_primary",
+      "title": "The Demo at 30, Engelbart Institute archive",
+      "url": "https://dougengelbart.org/archives/chi98demo.htm",
+      "verification_scope": "Ricostruzione del gruppo: editing bidimensionale, finestre, ipermedia e controllo delle versioni in NLS. Distinta evoluzione del sistema da primato assoluto di ogni singola funzione nel giorno della demo."
+    },
+    {
+      "source_id": "demo_smithsonian",
+      "title": "The Mother of All Demos, Smithsonian Lemelson Center",
+      "url": "https://www.invention.si.edu/invention-stories/mother-all-demos",
+      "verification_scope": "Saggio museale con testimonianze e filmato della dimostrazione: conferma associazione ACM/IEEE, integrazione di mouse, comandi, collaborazione e presentazione. Nessuna nuova funzione estranea all’INPUT aggiunta."
+    },
+    {
+      "source_id": "demo_chm",
+      "title": "Net@50: Did Engelbart’s Mother of All Demos Launch the Connected World?",
+      "url": "https://computerhistory.org/blog/net-50-did-engelbart-s-mother-of-all-demos-launch-the-connected-world/",
+      "verification_scope": "Ricostruzione CHM: passaggio di idee e personale ARC allo Xerox PARC, con continuità e differenze. Macintosh e Atari ST restano esempi successivi già forniti, senza inventare un coinvolgimento diretto di Engelbart nel loro sviluppo."
+    },
+    {
+      "source_id": "apollo_nasa",
+      "title": "Apollo 11, NASA NSSDC",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/lunar/apollo11info.html",
+      "verification_scope": "Scheda NASA: lancio 16 luglio 1969 alle 13:32 UTC, allunaggio 20 luglio e ritorno 24; equipaggio e ruoli."
+    },
+    {
+      "source_id": "apollo_mission",
+      "title": "Apollo 11 Mission Overview, NASA",
+      "url": "https://www.nasa.gov/history/apollo-11-mission-overview/",
+      "verification_scope": "Riepilogo della missione; lancio da Kennedy Space Center con Saturn V. Conservate funzioni e sigle CM/SM/LM e distinzione fra stadi di discesa e risalita già presenti."
+    },
+    {
+      "source_id": "arpanet_pioneers",
+      "title": "A Brief History of the Internet, Internet Society",
+      "url": "https://www.internetsociety.org/internet/history-internet/brief-history-internet/",
+      "verification_scope": "Testo degli stessi pionieri, fra cui Roberts, Cerf e Kahn: idee Davies/Baran sviluppate indipendentemente e poi note a Roberts. Non presentati come membri del medesimo gruppo ARPANET."
+    },
+    {
+      "source_id": "arpanet_darpa",
+      "title": "ARPANET, DARPA",
+      "url": "https://www.darpa.mil/news/features/arpanet",
+      "verification_scope": "Storia dell’agenzia committente: rete operativa 1969, BBN/IMP e passaggio TCP/IP. Il primo messaggio del 29 ottobre non è chiamato uscita commerciale della rete."
+    },
+    {
+      "source_id": "woodstock_museum",
+      "title": "Bethel Woods Press & Media Resources, mostra 2025",
+      "url": "https://www.bethelwoodscenter.org/about/press",
+      "verification_scope": "Museo sul sito del festival: stima di 450.000 presenze. Usata come quantità approssimata, non conteggio esatto."
+    },
+    {
+      "source_id": "woodstock_organisers",
+      "title": "About, Woodstock",
+      "url": "https://www.woodstock.com/about/",
+      "verification_scope": "Sito degli organizzatori: Bethel, 15–18 agosto 1969 e 32 artisti/gruppi. La propria stima oltre mezzo milione documenta la variabilità dei conteggi; non trasformata in soglia precisa."
+    },
+    {
+      "source_id": "italy_culture",
+      "title": "Anni Settanta, portale Memoria del Ministero della Cultura",
+      "url": "https://memoria.cultura.gov.it/anni-settanta",
+      "verification_scope": "Estratti indicizzati consultati; apertura diretta in timeout. Distinzione fra terrorismo neofascista/di estrema destra e terrorismo rosso. Non dichiarata lettura completa."
+    },
+    {
+      "source_id": "italy_fontana",
+      "title": "Scheda sul processo per la strage di piazza Fontana, Francesco Lisanti",
+      "url": "https://memoria.cultura.gov.it/w/scheda-sul-processo-per-la-strage-di-piazza-fontana-procura-)",
+      "verification_scope": "Scheda archivistica primaria sul fondo processuale: strage 12 dicembre 1969. Data usata come ancoraggio della voce sul periodo, non come inizio matematico di ogni violenza politica."
+    },
+    {
+      "source_id": "italy_trials",
+      "title": "I terrorismi politici in Italia, portale Memoria",
+      "url": "https://memoria.cultura.gov.it/documents/37629/142238/I%2Bterrorismi%2Bpolitici%2Bin%2BItalia.pdf/2d9deacc-6117-5072-cfc2-e0044b4fe5c8?t=1686919891828",
+      "verification_scope": "Estratto indicizzato sui processi e le attribuzioni della matrice neofascista; non aggiunte condanne individuali inesistenti per piazza Fontana."
+    },
+    {
+      "source_id": "italy_quirinale",
+      "title": "Dichiarazione per il 41° anniversario della strage di Bologna",
+      "url": "https://www.quirinale.it/it/notizie/dichiarazione-presidente-mattarella-occasione-41-anniversario-strage-bologna-1",
+      "verification_scope": "Dichiarazione istituzionale sulla matrice neofascista accertata giudiziariamente e sull’attacco del 2 agosto 1980."
+    },
+    {
+      "source_id": "italy_drake",
+      "title": "The Revolutionary Mystique and Terrorism in Contemporary Italy, introduzione alla seconda edizione, Richard Drake",
+      "url": "https://www.jstor.org/stable/j.ctv1g248xb",
+      "verification_scope": "Estratto indicizzato della ricerca di Drake: periodo 1969–1988, conteggio AIVITER di 428 morti e circa 2.000 feriti, variabilità dei perimetri statistici. Libro e pagina AIVITER originaria non letti integralmente; la fonte è citata attraverso l’estratto effettivamente disponibile."
+    },
+    {
+      "source_id": "italy_senate_provided",
+      "title": "Senato, seduta 18 novembre 2010, fonte fornita",
+      "url": "https://www.senato.it/service/PDF/PDFServer/BGT/00512478.pdf",
+      "verification_scope": "Consultati indice e metadati della seduta; accesso successivo bloccato da verifica JavaScript, download privo di dati. Non usato come prova dei numeri 428/2.000 e non aggirato il blocco."
+    },
+    {
+      "source_id": "sabbath_iommi",
+      "title": "Biography, Tony Iommi official site",
+      "url": "https://www.iommi.com/biography/",
+      "verification_scope": "Biografia con dichiarazioni dirette letta: uscita britannica venerdì 13 febbraio 1970; incidente industriale alle dita e adattamento della tecnica."
+    },
+    {
+      "source_id": "sabbath_band",
+      "title": "History, Black Sabbath official site",
+      "url": "https://www.blacksabbath.com/history.html",
+      "verification_scope": "Ricostruzione ufficiale: sessione nel novembre 1969 e repertorio dei concerti. Conferma del contesto di produzione, non dei due giorni esatti dell’INPUT."
+    },
+    {
+      "source_id": "sabbath_rhino",
+      "title": "January 1971: Black Sabbath Release Paranoid in America, Rhino",
+      "url": "https://www.rhino.com/article/january-1971-black-sabbath-release-paranoid-in-america",
+      "verification_scope": "L’etichetta colloca l’esordio USA nel giugno 1970. Conservata la precisione mensile a fronte di 1 giugno nell’INPUT e 30 giugno sul sito di Geezer Butler."
+    },
+    {
+      "source_id": "sabbath_butler",
+      "title": "Black Sabbath Discography, Geezer Butler official site",
+      "url": "https://www.geezerbutler.com/discog_sabbath/",
+      "verification_scope": "Conferma 13 febbraio UK; riporta 30 giugno USA, divergente dal 1 giugno dell’INPUT. Non scelto arbitrariamente uno dei due giorni."
+    },
+    {
+      "source_id": "sabbath_interview",
+      "title": "Tony Iommi: I’d Like To Remember Black Sabbath as a Groundbreaking Album",
+      "url": "https://blabbermouth.net/news/tony-iommi-i-d-like-to-remember-black-sabbath-as-a-groundbreaking-album",
+      "verification_scope": "Trascrizione di dichiarazioni dirette dell’intervista Ultimate-Guitar: registrazione in un giorno, missaggio il seguente, repertorio dal vivo."
+    },
+    {
+      "source_id": "sabbath_recording_conflict",
+      "title": "The Gear Used by Tony Iommi on Black Sabbath’s Debut Album, Guitar.com",
+      "url": "https://guitar.com/features/artist-rigs/guitar-gear-used-by-tony-iommi-on-black-sabbath-debut-album/",
+      "verification_scope": "Fonte secondaria che attribuisce a Iommi una sessione di dodici ore il 16 ottobre 1969; diverge dai 10/17 novembre del materiale. Non dichiarata verifica di documenti di studio mancanti."
+    },
+    {
+      "source_id": "sabbath_rs",
+      "title": "The 100 Greatest Heavy Metal Songs of All Time, Rolling Stone",
+      "url": "https://au.rollingstone.com/music/music-lists/100-greatest-heavy-metal-songs-all-time-45771/black-sabbath-black-sabbath-3-45871/",
+      "verification_scope": "Classifica della stessa rivista: Black Sabbath al primo posto. Giudizio conservato con attribuzione e nessun testo di canzone copiato."
+    },
+    {
+      "source_id": "prague_radio",
+      "title": "Alexander Dubček: hope and despair in 1968, archivio Czech Radio",
+      "url": "https://english.radio.cz/alexander-dubcek-hope-and-despair-1968-8556558",
+      "verification_scope": "Trascrizione pubblica del programma radiofonico con registrazioni originali del 1968: elezione il 5 gennaio 1968; prima trasmissione del programma 22 gennaio 2009 distinta dalla ripubblicazione recente."
+    }
+  ],
+  "decisions": [
+    {
+      "target_id": "history-1968-2001-a-space-odyssey",
+      "problem": "La data dell’intestazione AFI è New York; Washington aprì il giorno precedente.",
+      "conclusion": "Prima 2 aprile 1968 a Washington. Conservati autore/regista/produttore, racconti con anni, quattro interpreti distinguendo la voce di HAL, fisica spaziale, musica e tutti i compositori.",
+      "source_ids": [
+        "space_afi"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1968-assassination-of-martin-luther-king-jr",
+      "problem": "Evento esplicito di morte, non voce biografica da spostare alla nascita; tesi successive da attribuire.",
+      "conclusion": "4 aprile 1968 mantenuto come assassinio. Conservati arresto, estradizione, dichiarazione di colpevolezza, pena e successiva causa civile senza presentare un complotto come accertato.",
+      "source_ids": [
+        "king_stanford",
+        "king_committee"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1968-intel",
+      "problem": "Fondazione societaria distinta da cambio di nome, reincorporazione e nascita dei fondatori.",
+      "conclusion": "18 luglio 1968; resta la progressione memoria, processori, x86, chipset, Core e Arc. Nessuna sostituzione con la data del nome Intel.",
+      "source_ids": [
+        "intel_history",
+        "intel_ir"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1968-prague-spring",
+      "problem": "L’INPUT presenta la Germania Est come esercito invasore e la federazione come già istituita prima dell’invasione.",
+      "conclusion": "Distinta la preparazione DDR dall’impiego delle divisioni combattenti, rimaste in Germania Est. Entrata in vigore della federazione gennaio 1969; conservata l’ipotesi precedente di tre repubbliche e la soluzione ceca/slovacca.",
+      "source_ids": [
+        "prague_bundesarchiv",
+        "prague_parliament"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1968-the-mother-of-all-demos",
+      "problem": "Elenco di primati assoluti e influenza successiva richiedono una formulazione storicamente delimitata.",
+      "conclusion": "Tutte le funzioni originali restano spiegate entro l’integrazione di NLS; non attribuita a un solo giorno l’invenzione di ogni elemento. Conservati ACM/IEEE, 90 minuti, ARC, Xerox PARC, Macintosh e Atari ST.",
+      "source_ids": [
+        "demo_institute",
+        "demo_primary",
+        "demo_smithsonian",
+        "demo_chm"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1969-apollo-11",
+      "problem": "Missione, lancio e allunaggio sono eventi diversi.",
+      "conclusion": "Missione 16–24 luglio; lancio 16 alle 13:32 UTC, allunaggio 20. Tutti i ruoli dell’equipaggio e le funzioni dei tre moduli restano, compreso secondo/ultimo volo di ciascuno.",
+      "source_ids": [
+        "apollo_nasa",
+        "apollo_mission"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1969-arpanet",
+      "problem": "Contributions può far credere che Davies e Baran appartenessero al gruppo di Roberts; il circuito non è riservato a un singolo messaggio.",
+      "conclusion": "Idee indipendenti recepite dal progetto; circuito riferito alla sessione di comunicazione. Conservati scopo di condivisione, BBN, IMP e TCP/IP.",
+      "source_ids": [
+        "arpanet_pioneers",
+        "arpanet_darpa"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1969-woodstock",
+      "problem": "More than 460,000 è una soglia eccessivamente precisa per un pubblico stimato.",
+      "conclusion": "Circa 450.000 secondo il museo Bethel Woods; date 15–18 agosto, 32 artisti/gruppi, pioggia, documentario/album 1970 e canzone di Joni Mitchell conservati.",
+      "source_ids": [
+        "woodstock_museum",
+        "woodstock_organisers"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1969-years-of-lead-italy",
+      "problem": "1968–1988 e cifre assolute non coincidono con il perimetro della fonte rintracciata; responsabilità di Bologna non va ridotta a un unico livello organizzativo.",
+      "conclusion": "Stima AIVITER citata da Richard Drake per 1969–1988: 428 morti e circa 2.000 feriti. Bologna: membri NAR condannati per la partecipazione, senza escludere altri responsabili. Piazza Fontana resta l’ancoraggio del 12 dicembre 1969 e non definisce da sola l’inizio dell’intero periodo.",
+      "source_ids": [
+        "italy_culture",
+        "italy_fontana",
+        "italy_trials",
+        "italy_quirinale",
+        "italy_drake"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1970-black-sabbath-album",
+      "problem": "Giorno USA e giorni esatti delle sessioni divergono tra i riferimenti; primati di genere sono giudizi storici.",
+      "conclusion": "Uscita UK 13 febbraio 1970; USA giugno 1970. Registrazioni a fine 1969, senza scegliere per intuito fra ottobre e novembre. Conservati separazione Trident/Regent Sounds, due brani, dodici ore, repertorio live e incidente alle dita. Primati heavy/doom qualificati come letture critiche, classifica attribuita a Rolling Stone.",
+      "source_ids": [
+        "sabbath_iommi",
+        "sabbath_band",
+        "sabbath_rhino",
+        "sabbath_butler",
+        "sabbath_interview",
+        "sabbath_recording_conflict",
+        "sabbath_rs"
+      ],
+      "text_applied": true
+    }
+  ],
+  "metadata_proposals": [
+    {
+      "target_id": "history-1968-2001-a-space-odyssey",
+      "field": "timeline_date",
+      "original": {
+        "year": 1968,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1968,
+        "month": 4,
+        "day": 2,
+        "precision": "day",
+        "event_semantics": "Prima apertura cinematografica documentata",
+        "region": "Stati Uniti, Washington"
+      },
+      "source_ids": [
+        "space_afi"
+      ],
+      "reason": "Proposta separata e documentata; i metadati originali del catalogo non sono modificati. La voce su un periodo mantiene un ancoraggio dichiarato, senza equipararlo a una data di nascita."
+    },
+    {
+      "target_id": "history-1968-assassination-of-martin-luther-king-jr",
+      "field": "timeline_date",
+      "original": {
+        "year": 1968,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1968,
+        "month": 4,
+        "day": 4,
+        "precision": "day",
+        "event_semantics": "Assassinio di Martin Luther King Jr.",
+        "region": "Stati Uniti, Memphis"
+      },
+      "source_ids": [
+        "king_stanford",
+        "king_committee"
+      ],
+      "reason": "Proposta separata e documentata; i metadati originali del catalogo non sono modificati. La voce su un periodo mantiene un ancoraggio dichiarato, senza equipararlo a una data di nascita."
+    },
+    {
+      "target_id": "history-1968-intel",
+      "field": "timeline_date",
+      "original": {
+        "year": 1968,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1968,
+        "month": 7,
+        "day": 18,
+        "precision": "day",
+        "event_semantics": "Fondazione/incorporazione della società poi denominata Intel",
+        "region": "Stati Uniti"
+      },
+      "source_ids": [
+        "intel_history",
+        "intel_ir"
+      ],
+      "reason": "Proposta separata e documentata; i metadati originali del catalogo non sono modificati. La voce su un periodo mantiene un ancoraggio dichiarato, senza equipararlo a una data di nascita."
+    },
+    {
+      "target_id": "history-1968-prague-spring",
+      "field": "timeline_date",
+      "original": {
+        "year": 1968,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1968,
+        "month": 1,
+        "day": 5,
+        "precision": "day",
+        "event_semantics": "Avvio convenzionale della Primavera di Praga con elezione di Dubček",
+        "region": "Cecoslovacchia"
+      },
+      "source_ids": [
+        "prague_radio",
+        "prague_bundesarchiv"
+      ],
+      "reason": "Proposta separata e documentata; i metadati originali del catalogo non sono modificati. La voce su un periodo mantiene un ancoraggio dichiarato, senza equipararlo a una data di nascita."
+    },
+    {
+      "target_id": "history-1968-the-mother-of-all-demos",
+      "field": "timeline_date",
+      "original": {
+        "year": 1968,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1968,
+        "month": 12,
+        "day": 9,
+        "precision": "day",
+        "event_semantics": "Dimostrazione pubblica esplicitamente oggetto della voce",
+        "region": "Stati Uniti, San Francisco"
+      },
+      "source_ids": [
+        "demo_institute",
+        "demo_smithsonian"
+      ],
+      "reason": "Proposta separata e documentata; i metadati originali del catalogo non sono modificati. La voce su un periodo mantiene un ancoraggio dichiarato, senza equipararlo a una data di nascita."
+    },
+    {
+      "target_id": "history-1969-apollo-11",
+      "field": "timeline_date",
+      "original": {
+        "year": 1969,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1969,
+        "month": 7,
+        "day": 16,
+        "precision": "day",
+        "event_semantics": "Inizio della missione Apollo 11, distinta dall’allunaggio del 20 luglio",
+        "region": "Stati Uniti, Florida"
+      },
+      "source_ids": [
+        "apollo_nasa"
+      ],
+      "reason": "Proposta separata e documentata; i metadati originali del catalogo non sono modificati. La voce su un periodo mantiene un ancoraggio dichiarato, senza equipararlo a una data di nascita."
+    },
+    {
+      "target_id": "history-1969-woodstock",
+      "field": "timeline_date",
+      "original": {
+        "year": 1969,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1969,
+        "month": 8,
+        "day": 15,
+        "precision": "day",
+        "event_semantics": "Primo giorno del festival, proseguito fino al 18 agosto",
+        "region": "Stati Uniti, Bethel"
+      },
+      "source_ids": [
+        "woodstock_organisers"
+      ],
+      "reason": "Proposta separata e documentata; i metadati originali del catalogo non sono modificati. La voce su un periodo mantiene un ancoraggio dichiarato, senza equipararlo a una data di nascita."
+    },
+    {
+      "target_id": "history-1969-years-of-lead-italy",
+      "field": "timeline_date",
+      "original": {
+        "year": 1969,
+        "month": 12,
+        "day": 12,
+        "precision": "day"
+      },
+      "proposed": {
+        "year": 1969,
+        "month": 12,
+        "day": 12,
+        "precision": "day",
+        "event_semantics": "Strage di piazza Fontana come ancoraggio della voce su un periodo più ampio",
+        "region": "Italia, Milano"
+      },
+      "source_ids": [
+        "italy_fontana"
+      ],
+      "reason": "Proposta separata e documentata; i metadati originali del catalogo non sono modificati. La voce su un periodo mantiene un ancoraggio dichiarato, senza equipararlo a una data di nascita."
+    },
+    {
+      "target_id": "history-1970-black-sabbath-album",
+      "field": "timeline_date",
+      "original": {
+        "year": 1970,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1970,
+        "month": 2,
+        "day": 13,
+        "precision": "day",
+        "event_semantics": "Prima pubblicazione dell’album",
+        "region": "Regno Unito"
+      },
+      "source_ids": [
+        "sabbath_iommi",
+        "sabbath_butler"
+      ],
+      "reason": "Proposta separata e documentata; i metadati originali del catalogo non sono modificati. La voce su un periodo mantiene un ancoraggio dichiarato, senza equipararlo a una data di nascita."
+    }
+  ],
+  "editorial_review": {
+    "fidelity": "Rilette tutte le undici card rispetto al materiale. Conservati nomi, istituzioni, compositori, sigle, quantità tecniche e funzioni dei sistemi. Le date dubbie sono rese alla precisione documentata; i valori di pubblico e vittime hanno fonte e natura di stima.",
+    "language_review": "EN scritto prima delle quattro lingue. Riletti incipit e titoli specifici; rimossa una chiusa generica nella demo e tenuta nell’audit la comparazione fra statistiche. Francese, tedesco, italiano e spagnolo adattati con sintassi autonoma.",
+    "dates": "Opere secondo uscita; Intel secondo fondazione; Nobel/assassinio/dimostrazione/missione/festival restano eventi espliciti. ARPANET mantiene il 1969 senza inventare una release commerciale il giorno del primo messaggio.",
+    "rights": "Attribuzioni originali e riferimenti completi conservati in INPUT. Nuove fonti descritte con perimetro di lettura: estratti, testi direttamente consultati e accessi bloccati distinti. Nessun testo musicale copiato o titolo di canzone tradotto.",
+    "english_written_first": true,
+    "languages": [
+      "en",
+      "it",
+      "fr",
+      "de",
+      "es"
+    ],
+    "entry_count": 10,
+    "card_count_per_language": 11,
+    "reviewed_at": "2026-10-30T05:38:50.896077+00:00",
+    "english_summary_word_range": [
+      32,
+      39
+    ],
+    "structural_checks": "Schema, ID, ordine, numero di card e cinque lingue verificati dal validatore. Tutti i titoli presenti; nessun HTML o Markdown nei testi."
+  },
+  "status": "completed",
+  "validation": {
+    "valid": true,
+    "batch_id": "297-human-history",
+    "completed": true,
+    "entry_count": 10,
+    "card_count_per_language": 11,
+    "language_count": 5,
+    "translated_card_count": 55,
+    "entry_card_counts": {
+      "history-1968-2001-a-space-odyssey": 1,
+      "history-1968-assassination-of-martin-luther-king-jr": 1,
+      "history-1968-intel": 1,
+      "history-1968-prague-spring": 1,
+      "history-1968-the-mother-of-all-demos": 1,
+      "history-1969-apollo-11": 1,
+      "history-1969-arpanet": 1,
+      "history-1969-woodstock": 1,
+      "history-1969-years-of-lead-italy": 2,
+      "history-1970-black-sabbath-album": 1
+    },
+    "issue_counts": {
+      "history-1968-2001-a-space-odyssey": 0,
+      "history-1968-assassination-of-martin-luther-king-jr": 0,
+      "history-1968-intel": 0,
+      "history-1968-prague-spring": 0,
+      "history-1968-the-mother-of-all-demos": 0,
+      "history-1969-apollo-11": 0,
+      "history-1969-arpanet": 0,
+      "history-1969-woodstock": 0,
+      "history-1969-years-of-lead-italy": 0,
+      "history-1970-black-sabbath-album": 0
+    },
+    "summary_checks": [
+      {
+        "entry_id": "history-1968-2001-a-space-odyssey",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "history-1968-assassination-of-martin-luther-king-jr",
+        "feature_id": null,
+        "english_summary_words": 39
+      },
+      {
+        "entry_id": "history-1968-intel",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "history-1968-prague-spring",
+        "feature_id": null,
+        "english_summary_words": 32
+      },
+      {
+        "entry_id": "history-1968-the-mother-of-all-demos",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "history-1969-apollo-11",
+        "feature_id": null,
+        "english_summary_words": 34
+      },
+      {
+        "entry_id": "history-1969-arpanet",
+        "feature_id": null,
+        "english_summary_words": 33
+      },
+      {
+        "entry_id": "history-1969-woodstock",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "history-1969-years-of-lead-italy",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "history-1970-black-sabbath-album",
+        "feature_id": null,
+        "english_summary_words": 38
+      }
+    ],
+    "editorial_review": [
+      "history-1968-assassination-of-martin-luther-king-jr/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1968-assassination-of-martin-luther-king-jr/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1968-assassination-of-martin-luther-king-jr/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1968-assassination-of-martin-luther-king-jr/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1968-intel/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1968-intel/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1968-intel/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1968-intel/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1968-prague-spring/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1968-prague-spring/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1968-prague-spring/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1968-prague-spring/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1969-years-of-lead-italy/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1969-years-of-lead-italy/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1969-years-of-lead-italy/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1969-years-of-lead-italy/main/es: main title changed; check that this is a descriptive title and not an altered official name"
+    ],
+    "failures": []
+  },
+  "output_sha256": "59e926c9c5682a108752593f162ea95609aeb0d3643f5600a9a6bc92e2e6be6b",
+  "expansion_assessments": [
+    {
+      "target_id": "history-1968-2001-a-space-odyssey",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1968-assassination-of-martin-luther-king-jr",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1968-intel",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1968-prague-spring",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1968-the-mother-of-all-demos",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1969-apollo-11",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1969-arpanet",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1969-woodstock",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1969-years-of-lead-italy",
+      "main_cards": 2,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1970-black-sabbath-album",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    }
+  ]
+}

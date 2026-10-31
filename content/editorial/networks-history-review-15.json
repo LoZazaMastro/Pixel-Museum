@@ -1,0 +1,871 @@
+{
+  "schema_version": 1,
+  "reviewed_utc": "2026-10-21T01:45:18.354672+00:00",
+  "reviewer": "independent editorial_review agent",
+  "draft_path": "content/expansion/editorial-networks-history-15.json",
+  "draft_sha256": "477ad2fd42810d444bd123cda9e5b25826df72385b9f77695f83106a53a1eec9",
+  "initial_reviewed_sha256": "05f85962ae1df9047e926562e4b19add1addb118516c693402d6808fe980eaeb",
+  "status": "source_schema_budgets_and_placement_pass_media_pending",
+  "scope": "All32initial cards and every final prose/title/summary/source delta read, including new2023CODE-CWAprimary. All23final actual publications and four complete parents read. Source/identity/date distinctions and original raster PDF pages checked. No claim of universal historical accuracy, legal clearance, image permission or native signoff.",
+  "counts": {
+    "features": 8,
+    "cards": 32,
+    "body_words": 2747,
+    "primary_publications": 23,
+    "snapshots_matched": 23,
+    "supported_existing_parent_proposals": 4,
+    "standalone_proposals_pending_media": 4
+  },
+  "budget_method": "max(len(text.split()),len(re.findall(r'\\b\\w+\\b',text))) in default Unicode Python3; text includes full feature title,summary,publication title and every associated heading/body; repeated citations receive full whole-card charge.",
+  "checks": [
+    {
+      "id": "feature-china-game-networks",
+      "body_sha256": "44067bb35b7c3e0b50a333c01504319d91b7b005a63f5ce32c1d6b16bec41e5f",
+      "card_words": [
+        83,
+        88,
+        81,
+        88
+      ],
+      "schema_indices_citations": "PASS",
+      "budgets": [
+        {
+          "source_id": "crossfire18",
+          "body_indices": [
+            0,
+            1
+          ],
+          "whitespace_words": 191,
+          "unicode_lexical_words": 197,
+          "charged_words": 197,
+          "maximum_words": 200,
+          "declared_charged_words": 197,
+          "within_limit": true
+        },
+        {
+          "source_id": "tencent22",
+          "body_indices": [
+            2,
+            3
+          ],
+          "whitespace_words": 192,
+          "unicode_lexical_words": 200,
+          "charged_words": 200,
+          "maximum_words": 200,
+          "declared_charged_words": 200,
+          "within_limit": true
+        }
+      ]
+    },
+    {
+      "id": "feature-steam-library-ownership",
+      "body_sha256": "edb2cbd55997d4de5e56c2cd4a5c289e1a19af7981f3cddf4b587e7b99371116",
+      "card_words": [
+        90,
+        88,
+        89,
+        91
+      ],
+      "schema_indices_citations": "PASS",
+      "budgets": [
+        {
+          "source_id": "steam03",
+          "body_indices": [
+            0
+          ],
+          "whitespace_words": 111,
+          "unicode_lexical_words": 114,
+          "charged_words": 114,
+          "maximum_words": 200,
+          "declared_charged_words": 114,
+          "within_limit": true
+        },
+        {
+          "source_id": "steam20",
+          "body_indices": [
+            0
+          ],
+          "whitespace_words": 112,
+          "unicode_lexical_words": 115,
+          "charged_words": 115,
+          "maximum_words": 200,
+          "declared_charged_words": 115,
+          "within_limit": true
+        },
+        {
+          "source_id": "steam-ssa",
+          "body_indices": [
+            1
+          ],
+          "whitespace_words": 109,
+          "unicode_lexical_words": 110,
+          "charged_words": 110,
+          "maximum_words": 200,
+          "declared_charged_words": 110,
+          "within_limit": true
+        },
+        {
+          "source_id": "steam-drm",
+          "body_indices": [
+            2
+          ],
+          "whitespace_words": 109,
+          "unicode_lexical_words": 111,
+          "charged_words": 111,
+          "maximum_words": 200,
+          "declared_charged_words": 111,
+          "within_limit": true
+        },
+        {
+          "source_id": "steam-families24",
+          "body_indices": [
+            3
+          ],
+          "whitespace_words": 113,
+          "unicode_lexical_words": 113,
+          "charged_words": 113,
+          "maximum_words": 200,
+          "declared_charged_words": 113,
+          "within_limit": true
+        }
+      ]
+    },
+    {
+      "id": "feature-mmo-community-work",
+      "body_sha256": "70dd11d915cb2b22019b7a47641a66c1461e5f6b9e7c69cfbb10e852b43e471c",
+      "card_words": [
+        86,
+        87,
+        85,
+        89
+      ],
+      "schema_indices_citations": "PASS",
+      "budgets": [
+        {
+          "source_id": "eve-projects23",
+          "body_indices": [
+            0,
+            1
+          ],
+          "whitespace_words": 196,
+          "unicode_lexical_words": 197,
+          "charged_words": 197,
+          "maximum_words": 200,
+          "declared_charged_words": 197,
+          "within_limit": true
+        },
+        {
+          "source_id": "eve-rescue24",
+          "body_indices": [
+            2
+          ],
+          "whitespace_words": 110,
+          "unicode_lexical_words": 118,
+          "charged_words": 118,
+          "maximum_words": 200,
+          "declared_charged_words": 118,
+          "within_limit": true
+        },
+        {
+          "source_id": "eve-community25",
+          "body_indices": [
+            3
+          ],
+          "whitespace_words": 112,
+          "unicode_lexical_words": 118,
+          "charged_words": 118,
+          "maximum_words": 200,
+          "declared_charged_words": 118,
+          "within_limit": true
+        }
+      ]
+    },
+    {
+      "id": "feature-app-store-change",
+      "body_sha256": "e7eb015340857228f0d876993862024c5ba1d0b03817f100d9c6571edd83464b",
+      "card_words": [
+        80,
+        83,
+        87,
+        86
+      ],
+      "schema_indices_citations": "PASS",
+      "budgets": [
+        {
+          "source_id": "apple-store08",
+          "body_indices": [
+            0,
+            1
+          ],
+          "whitespace_words": 193,
+          "unicode_lexical_words": 200,
+          "charged_words": 200,
+          "maximum_words": 200,
+          "declared_charged_words": 200,
+          "within_limit": true
+        },
+        {
+          "source_id": "apple-arcade19",
+          "body_indices": [
+            2,
+            3
+          ],
+          "whitespace_words": 197,
+          "unicode_lexical_words": 199,
+          "charged_words": 199,
+          "maximum_words": 200,
+          "declared_charged_words": 199,
+          "within_limit": true
+        }
+      ]
+    },
+    {
+      "id": "feature-streamers-and-play",
+      "body_sha256": "70ec5eaa9889088a55ae763b1655071ca1204f4aa3805f3e74044be23caef025",
+      "card_words": [
+        89,
+        89,
+        83,
+        85
+      ],
+      "schema_indices_citations": "PASS",
+      "budgets": [
+        {
+          "source_id": "twitch-fever14",
+          "body_indices": [
+            0
+          ],
+          "whitespace_words": 110,
+          "unicode_lexical_words": 112,
+          "charged_words": 112,
+          "maximum_words": 200,
+          "declared_charged_words": 112,
+          "within_limit": true
+        },
+        {
+          "source_id": "twitch-victory14",
+          "body_indices": [
+            1
+          ],
+          "whitespace_words": 115,
+          "unicode_lexical_words": 116,
+          "charged_words": 116,
+          "maximum_words": 200,
+          "declared_charged_words": 116,
+          "within_limit": true
+        },
+        {
+          "source_id": "gdq-about",
+          "body_indices": [
+            2,
+            3
+          ],
+          "whitespace_words": 197,
+          "unicode_lexical_words": 200,
+          "charged_words": 200,
+          "maximum_words": 200,
+          "declared_charged_words": 200,
+          "within_limit": true
+        }
+      ]
+    },
+    {
+      "id": "feature-labour-and-credit",
+      "body_sha256": "99ac720fc0958500bbe07c76ce9e4b8d84eb06e952ba2f5a0941d1be33b1d67c",
+      "card_words": [
+        80,
+        80,
+        83,
+        86
+      ],
+      "schema_indices_citations": "PASS",
+      "budgets": [
+        {
+          "source_id": "sega-election23",
+          "body_indices": [
+            0,
+            1
+          ],
+          "whitespace_words": 187,
+          "unicode_lexical_words": 190,
+          "charged_words": 190,
+          "maximum_words": 200,
+          "declared_charged_words": 190,
+          "within_limit": true
+        },
+        {
+          "source_id": "sega-cwa24",
+          "body_indices": [
+            2,
+            3
+          ],
+          "whitespace_words": 195,
+          "unicode_lexical_words": 198,
+          "charged_words": 198,
+          "maximum_words": 200,
+          "declared_charged_words": 198,
+          "within_limit": true
+        }
+      ]
+    },
+    {
+      "id": "feature-pandemic-shared-spaces",
+      "body_sha256": "d15809fa7d9c3e349f0c9834bad50c6567da1c63ed8386277cc2b600635ed1fd",
+      "card_words": [
+        83,
+        82,
+        92,
+        90
+      ],
+      "schema_indices_citations": "PASS",
+      "budgets": [
+        {
+          "source_id": "getty20",
+          "body_indices": [
+            0,
+            1
+          ],
+          "whitespace_words": 193,
+          "unicode_lexical_words": 199,
+          "charged_words": 199,
+          "maximum_words": 200,
+          "declared_charged_words": 199,
+          "within_limit": true
+        },
+        {
+          "source_id": "aquarium-aam21",
+          "body_indices": [
+            2
+          ],
+          "whitespace_words": 117,
+          "unicode_lexical_words": 118,
+          "charged_words": 118,
+          "maximum_words": 200,
+          "declared_charged_words": 118,
+          "within_limit": true
+        },
+        {
+          "source_id": "nvmdiaries20",
+          "body_indices": [
+            3
+          ],
+          "whitespace_words": 109,
+          "unicode_lexical_words": 111,
+          "charged_words": 111,
+          "maximum_words": 200,
+          "declared_charged_words": 111,
+          "within_limit": true
+        }
+      ]
+    },
+    {
+      "id": "feature-living-history-method",
+      "body_sha256": "71a40c370fbb7fa4d234b470a633039eb52eb0ea5c4fb62f76c15fe63effccb3",
+      "card_words": [
+        86,
+        85,
+        87,
+        86
+      ],
+      "schema_indices_citations": "PASS",
+      "budgets": [
+        {
+          "source_id": "vghf-library25",
+          "body_indices": [
+            0,
+            1
+          ],
+          "whitespace_words": 195,
+          "unicode_lexical_words": 199,
+          "charged_words": 199,
+          "maximum_words": 200,
+          "declared_charged_words": 199,
+          "within_limit": true
+        },
+        {
+          "source_id": "mechner-archive12",
+          "body_indices": [
+            2,
+            3
+          ],
+          "whitespace_words": 196,
+          "unicode_lexical_words": 198,
+          "charged_words": 198,
+          "maximum_words": 200,
+          "declared_charged_words": 198,
+          "within_limit": true
+        },
+        {
+          "source_id": "mechner-source-readme",
+          "body_indices": [
+            3
+          ],
+          "whitespace_words": 104,
+          "unicode_lexical_words": 104,
+          "charged_words": 104,
+          "maximum_words": 200,
+          "declared_charged_words": 104,
+          "within_limit": true
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "crossfire18",
+      "url": "https://newsroom.smilegate.com/en/eng/CrossFire_Records_as_Global_No_1_Online_FPS_Game_EN",
+      "snapshot": {
+        "path": "build/research/editorial-networks-15/crossfire18.html",
+        "sha256": "5b6746adcea1ed66205d8c06cb39f63dc762363c228e034dc443bdbd656c314d",
+        "evidence_type": "actual_source_response"
+      },
+      "snapshot_matches": true,
+      "reading_scope": "Actual Smilegate24October2018 retrospective read: Korean2007start, QQ/Tencent partnership, Chinese2008service and CFS from2013. Unsupported commercial superlatives and inconsistent anniversary arithmetic excluded from story."
+    },
+    {
+      "id": "tencent22",
+      "url": "https://static.www.tencent.com/uploads/2022/11/16/33aad36dea97848eb75aa988d785e9f8.pdf",
+      "snapshot": {
+        "path": "build/research/editorial-networks-15/tencent22.pdf",
+        "sha256": "02775e906294f5bd7198f8cd82a9b28565547fecf222910e9dfadf129bf7640c",
+        "evidence_type": "actual_source_response"
+      },
+      "snapshot_matches": true,
+      "reading_scope": "Actual original16November2022results PDF p4 read and raster inspected:14years PC operation, PvE/ranked work and2015TiMi-developed mobile publication. Financial/market superlatives not adopted."
+    },
+    {
+      "id": "steam03",
+      "url": "https://store.steampowered.com/oldnews/183",
+      "snapshot": {
+        "path": "build/research/editorial-networks-15/steam03.html",
+        "sha256": "fee2046d5557d7d1389b23df91f4f5f7409d3e0e6c1589fdbeec1407583b8779",
+        "evidence_type": "actual_source_response"
+      },
+      "snapshot_matches": true,
+      "reading_scope": "Actual original Valve12September2003Steam Client Released notice and date read."
+    },
+    {
+      "id": "steam20",
+      "url": "https://store.steampowered.com/sale/steam20?l=english",
+      "snapshot": {
+        "path": "build/research/editorial-networks-15/steam20.html",
+        "sha256": "78e5f9cdf14dd92a673ccba2a0fc3722a37121c0bc527aa5278c0b61161e84ae",
+        "evidence_type": "actual_source_response"
+      },
+      "snapshot_matches": true,
+      "reading_scope": "Actual English anniversary text embedded in downloaded Valve2023page read: yearly releases, illustrations/pop culture and2003start. Embedded material is substantive source evidence, not an empty HTML shell."
+    },
+    {
+      "id": "steam-ssa",
+      "url": "https://store.steampowered.com/subscriber_agreement/?l=english",
+      "snapshot": {
+        "path": "build/research/editorial-networks-15/steam-ssa.html",
+        "sha256": "f4670c64b9263d5db59781e5915a8dfc1ad1db45bf9d8dead398ff7e0e59c9e9",
+        "evidence_type": "actual_source_response"
+      },
+      "snapshot_matches": true,
+      "reading_scope": "Actual saved agreement clauses1C/2A/2F read and live official page independently reopened: personal account/nontransferability exceptions, licence and intellectual-property distinction. Present document not retroactively assigned to2003."
+    },
+    {
+      "id": "steam-drm",
+      "url": "https://partner.steamgames.com/doc/features/drm?l=english",
+      "snapshot": {
+        "path": "build/research/editorial-networks-15/steam-drm.html",
+        "sha256": "c4ae8797024a73d1bc9774d4fa96aa73af6fecc2b9e5a776fea4dc9814abcbf8",
+        "evidence_type": "actual_source_response"
+      },
+      "snapshot_matches": true,
+      "reading_scope": "Actual saved Steamworks DRM overview and live official page independently read. Wrapper checks ownership/starts Steam; no universal DRM or anti-piracy guarantee asserted."
+    },
+    {
+      "id": "steam-families24",
+      "url": "https://steamcommunity.com/ogg/593110/announcements/detail/4605582245626919824",
+      "snapshot": {
+        "path": "build/research/editorial-networks-15/steam-families24.html",
+        "sha256": "8076dd1f7de5a84d41bcf55d393aa7675c821df79aae6113aebf954912145479",
+        "evidence_type": "actual_source_response"
+      },
+      "snapshot_matches": true,
+      "reading_scope": "Actual2024Families body in downloaded embedded event data read: shareable titles, separate saves/achievements, multiple copies and opt-outs. Web reader returns a shell, so saved substantive embedded data is the source."
+    },
+    {
+      "id": "eve-projects23",
+      "url": "https://www.eveonline.com/news/view/stronger-organizations",
+      "snapshot": {
+        "path": "build/research/editorial-networks-15/eve-projects23.html",
+        "sha256": "89dfa03fc526ffa0c5a2fc13a7a44c7a3d32285e78cb630f0895ef0ce85e42f2",
+        "evidence_type": "actual_source_response"
+      },
+      "snapshot_matches": true,
+      "reading_scope": "Actual1November2023CCP Stronger Organizations article read through full corporation-project section: administrative work, automatic payouts, cloning, manager role and contribution categories; announced for Havoc."
+    },
+    {
+      "id": "eve-rescue24",
+      "url": "https://forums.eveonline.com/t/eve-scout-rescues-5000th-stranded-capsuleer/441477",
+      "snapshot": {
+        "path": "build/research/editorial-networks-15/eve-rescue24.html",
+        "sha256": "80a8d9c022a97772a02fcaa79c528237dabc04eb5a240925ed383eb0715ef33e",
+        "evidence_type": "actual_source_response"
+      },
+      "snapshot_matches": true,
+      "reading_scope": "Actual2March2024Katia Sae forum contribution read:5000rescues participant milestone, search/rescue and seeded caches. Comments not substituted for organisational evidence."
+    },
+    {
+      "id": "eve-community25",
+      "url": "https://www.eveonline.com/news/view/community-beat-for-17-january",
+      "snapshot": {
+        "path": "build/research/editorial-networks-15/eve-community25.html",
+        "sha256": "b22033041fab6992d191ccc6fe5a067a471edec30eaccdba125257d42e9c5f56",
+        "evidence_type": "actual_source_response"
+      },
+      "snapshot_matches": true,
+      "reading_scope": "Actual17January2025CCP community report EvE-Scout section read: approaching23Januarytenth anniversary, Thera/Turnur connections and public bookmarks. Celebration remains attributed publisher account."
+    },
+    {
+      "id": "apple-store08",
+      "url": "https://www.apple.com/newsroom/2008/07/14iPhone-App-Store-Downloads-Top-10-Million-in-First-Weekend/",
+      "snapshot": {
+        "path": "build/research/editorial-networks-15/apple-store08.html",
+        "sha256": "c59b65423cfa1bf1c349ed415c03b55ff757b1c378c86731832ac947c8fd7ba8",
+        "evidence_type": "actual_source_response"
+      },
+      "snapshot_matches": true,
+      "reading_scope": "Actual14July2008Apple release read in full relevant body: first-weekend10million downloads/800apps, account/wireless connection, inputs and updates. Figures encompass all app categories."
+    },
+    {
+      "id": "apple-arcade19",
+      "url": "https://www.apple.com/newsroom/2019/03/apple-introduces-apple-arcade-the-worlds-first-game-subscription-service-for-mobile-desktop-and-the-living-room/",
+      "snapshot": {
+        "path": "build/research/editorial-networks-15/apple-arcade19.html",
+        "sha256": "767f2a2e51405919aa3cb1ae9d0e8843908bd3054430f39cb7fa2c82c315a88d",
+        "evidence_type": "actual_source_response"
+      },
+      "snapshot_matches": true,
+      "reading_scope": "Actual25March2019Apple release read through development funding, subscription/catalogue, offline/complete-game conditions and fall forecast. Announcement not conflated with launch or current terms."
+    },
+    {
+      "id": "twitch-fever14",
+      "url": "https://blog.twitch.tv/en/2014/02/17/twitch-community-catches-the-twitch-plays-pokemon-fever-b5befe898666/",
+      "snapshot": {
+        "path": "build/research/editorial-networks-15/twitch-fever14.html",
+        "sha256": "64ef077ad0c152df36671156fa12174dc5b33f172b6d232cfe92b2befad877bd",
+        "evidence_type": "actual_source_response"
+      },
+      "snapshot_matches": true,
+      "reading_scope": "Actual17February2014Jason Maestas Twitch article read: commands, single protagonist, community art/subreddit/Google document. Broad universal-first claims excluded."
+    },
+    {
+      "id": "twitch-victory14",
+      "url": "https://blog.twitch.tv/en/2014/03/01/tpp-victory-the-thundershock-heard-around-the-world-3128a5b1cdf5/",
+      "snapshot": {
+        "path": "build/research/editorial-networks-15/twitch-victory14.html",
+        "sha256": "adac0e558b6ae0fd78f5aa80d85ed8e69fa3dfd7de45466c938eacdb9df57ddb",
+        "evidence_type": "actual_source_response"
+      },
+      "snapshot_matches": true,
+      "reading_scope": "Actual1March2014Twitch completion announcement read:16days-plus duration, shared myth/nicknames and Anarchy/Democracy. Platform claims remain attributed."
+    },
+    {
+      "id": "gdq-about",
+      "url": "https://gamesdonequick.com/",
+      "snapshot": {
+        "path": "build/research/editorial-networks-15/gdq-about.html",
+        "sha256": "8d75dd8c8b6a76eaeffe6254241c96e55a438bf952fcc14ad8c4712e23066cf5",
+        "evidence_type": "actual_source_response"
+      },
+      "snapshot_matches": true,
+      "reading_scope": "Actual saved current organiser page read: marathon description, Frame Fatales/Black in a Flash/Games Done Queer/Hotfix definitions and2026thanks to runners/commentators/hosts/volunteers. No unsupported claim of uniform audience benefit."
+    },
+    {
+      "id": "sega-election23",
+      "url": "https://code-cwa.org/news/sega-workers-win-union-election-cwa-becoming",
+      "snapshot": {
+        "path": "build/research/editorial-networks-15/sega-election23.html",
+        "sha256": "c279c3bda4c538718feed00c41e119fdf6fb140231248b9d34810b6dcb813d5e",
+        "evidence_type": "actual_source_response"
+      },
+      "snapshot_matches": true,
+      "reading_scope": "Actual full10July2023CODE-CWA election announcement read:91–26vote, Irvine/Burbank departments, translator Ángel Gómez and bargaining goals. Distinct2023publication from2024ratification. Demands are not treated as terms secured by election."
+    },
+    {
+      "id": "sega-cwa24",
+      "url": "https://cwa-union.org/news/releases/sega-workers-reach-landmark-collective-bargaining-agreement",
+      "snapshot": {
+        "path": "build/research/editorial-networks-15/sega-cwa24.html",
+        "sha256": "f8f466d578a52fc194075e05177a0097f8cce0c712514d51519fac03d4db7b16",
+        "evidence_type": "actual_source_response"
+      },
+      "snapshot_matches": true,
+      "reading_scope": "Actual27March2024CWA release read: March26ratification, range of jobs, early QA credit provision, pay/discipline/layoff and committee terms; specific California bargaining unit and union account."
+    },
+    {
+      "id": "getty20",
+      "url": "https://www.getty.edu/news/how-to-build-an-art-museum-in-animal-crossing/",
+      "snapshot": {
+        "path": "build/research/editorial-networks-15/getty20.html",
+        "sha256": "92c045b0518d8fcc0e2b19a97d24e14293519ec1c93000b6647d851345663aa2",
+        "evidence_type": "actual_source_response"
+      },
+      "snapshot_matches": true,
+      "reading_scope": "Actual16April2020Selina Chang-Yi Zawacki/Sarah Waldorf maker article read: artworks/patterns, open-content collection, community source code, IIIF converter and independent-of-Nintendo statement. Availability not blanket image permission."
+    },
+    {
+      "id": "aquarium-aam21",
+      "url": "https://www.aam-us.org/wp-content/uploads/2024/03/15_Exhibition_21FA_LevelUp.pdf",
+      "snapshot": {
+        "path": "build/research/editorial-networks-15/aquarium-aam21.pdf",
+        "sha256": "3334bfc5b5d4507cc7a537d64964152485a55140486aa9b622e3155a862e8eeb",
+        "evidence_type": "actual_source_response"
+      },
+      "snapshot_matches": true,
+      "reading_scope": "Actual Dana Allen-Greil/Emily Simpson Fall2021article read on PDF2/4/6/8 and relevant closing notes; p8raster inspected. Closure March2020, organism interpretation and sunfish conversation match."
+    },
+    {
+      "id": "nvmdiaries20",
+      "url": "https://thenvm.org/blog/open-the-animal-crossing-diaries/",
+      "snapshot": {
+        "path": "build/research/editorial-networks-15/nvmdiaries-web-reader-response.json",
+        "sha256": "6c6699f2688be07e8d0d97e81348045798b77ca2470e9a6a13a489f727b0d525",
+        "evidence_type": "publisher_text_recovered_by_web_reader_direct_GET403_retained"
+      },
+      "snapshot_matches": true,
+      "reading_scope": "Actual NVM call text recovered through web reader read: everyday routines/celebrations, submissions, planned interviews/articles. No exact original publication date inferred from current2026footer."
+    },
+    {
+      "id": "vghf-library25",
+      "url": "https://gamehistory.org/vghf-library-launch/",
+      "snapshot": {
+        "path": "build/research/editorial-networks-15/vghf-library25.html",
+        "sha256": "281483747363cb28edb957a5f96a449bf8a89b4bf25608b77aad1ed08065ed1a",
+        "evidence_type": "actual_source_response"
+      },
+      "snapshot_matches": true,
+      "reading_scope": "Actual Phil Salvador30January2025launch article and entire relevant FAQ read: Flitman/Cyan holdings, cataloguing/text recognition, processed versus pending materials and permissions. Distinct from2023availability study and individual Riven item records."
+    },
+    {
+      "id": "mechner-archive12",
+      "url": "https://www.jordanmechner.com/en/archive/#2012-04-source",
+      "snapshot": {
+        "path": "build/research/editorial-networks-15/mechner-archive12.html",
+        "sha256": "585f8f52c63967fe9f44e1805af8bca0ce0faaeb6148ab82bdfae659a6745594",
+        "evidence_type": "actual_source_response"
+      },
+      "snapshot_matches": true,
+      "reading_scope": "Actual main17April2012Source archive post read, distinct from its comments: found disks, Scott/Diaz recovery and Gustafsson18sectorRWTS expertise. Original disk programmer role must be specific."
+    },
+    {
+      "id": "mechner-source-readme",
+      "url": "https://raw.githubusercontent.com/jmechner/Prince-of-Persia-Apple-II/master/README.md",
+      "snapshot": {
+        "path": "build/research/editorial-networks-15/mechner-source-readme.html",
+        "sha256": "511d615ce1a351c145bb7b036f445f81b8e6e29f828bdce78c381ed2c96378e4",
+        "evidence_type": "actual_source_response"
+      },
+      "snapshot_matches": true,
+      "reading_scope": "Actual full author README UpdatedSeptember2024 read: code1985–1989, recovery contributors, studying/modifying versus continuing Ubisoft franchise rights. One publication group, not permission for all franchise assets."
+    }
+  ],
+  "source_reuse_collisions": [],
+  "placement": {
+    "feature-china-game-networks": {
+      "recommendation": "attach",
+      "parent_id": "wikipedia-33952595",
+      "reason": "Specific CrossFire China service/partnership and maintenance adds production/network detail to existing global-release/revenue/franchise overview. Not a claim to survey all China."
+    },
+    "feature-steam-library-ownership": {
+      "recommendation": "attach",
+      "parent_id": "steam",
+      "reason": "Adds dated access/account/software/sharing details to existing short platform account. Present agreement explicitly2026, separate from2003launch."
+    },
+    "feature-mmo-community-work": {
+      "recommendation": "attach",
+      "parent_id": "workbook-05-06-eve-online",
+      "reason": "Concrete administration/rescue work complements parent economy/diplomacy discussion; announced2023Havoc and participant2024/publisher2025reports clearly separated."
+    },
+    "feature-app-store-change": {
+      "recommendation": "distinct_subject_hold_for_media",
+      "parent_id": null,
+      "reason": "Mobile-distribution platform practice, not a second NokiaSnake or AppleII subject.2008first-weekend and2019announcement remain different events."
+    },
+    "feature-streamers-and-play": {
+      "recommendation": "distinct_subject_hold_for_media",
+      "parent_id": null,
+      "reason": "Collective input and staged performance/audience participation, not a duplicate particular game release. Current GDQ programmes must retain retrieval-date context."
+    },
+    "feature-labour-and-credit": {
+      "recommendation": "distinct_subject_hold_for_media",
+      "parent_id": null,
+      "reason": "Revised2023AEGIS-CWAelection and2024contract form a specific worker-organising episode distinct from Robinett/IGDAcrediting practice. IGDAremoved entirely, and election demands remain distinct from ratified terms. No universal industry-first claim."
+    },
+    "feature-pandemic-shared-spaces": {
+      "recommendation": "attach",
+      "parent_id": "animal-crossing",
+      "reason": "Actual Getty/aquarium/NVMcases add concrete2020use and collecting practices to original NewHorizons systems account. No universal pandemic-experience claim."
+    },
+    "feature-living-history-method": {
+      "recommendation": "distinct_subject_hold_for_media",
+      "parent_id": null,
+      "reason": "Specific archive description/access/recovery method differs from09commercial availability study, PDP1repair and individual Riven performance record. Gustafsson role must remain disk-code-specific."
+    }
+  },
+  "parents_read": [
+    {
+      "id": "wikipedia-33952595",
+      "title": "Crossfire",
+      "sections": 3,
+      "body_sha256": "88422923c9e49481c78afbafc38077a7641ffcf916e2952231c9cb110304729e",
+      "read_in_full": true
+    },
+    {
+      "id": "steam",
+      "title": "Steam",
+      "sections": 2,
+      "body_sha256": "b4fd0a102132859237a972bb521ddd2e74ef5d7ec6f0ae60d29b85cc486bd473",
+      "read_in_full": true
+    },
+    {
+      "id": "workbook-05-06-eve-online",
+      "title": "EVE Online",
+      "sections": 4,
+      "body_sha256": "540e14f2deb54fa335a674cdd5058e243b2334f5dc7bef7ce63e299aa0630d32",
+      "read_in_full": true
+    },
+    {
+      "id": "animal-crossing",
+      "title": "Animal Crossing: New Horizons",
+      "sections": 3,
+      "body_sha256": "03606b484692dfb5ad43afcbc3fecfb42f6d60b904b3910c5deafc50c29aeb00",
+      "read_in_full": true
+    }
+  ],
+  "parent_comparison_snapshot_sha256": "37d81b0abff1f58d7cb796ad155af9cdf40d5147396d9d311a738f11028ce2de",
+  "parent_snapshot_note": "Snapshot only; parent may integrate other batches concurrently. Parent body hashes identify compared text.",
+  "findings": [
+    {
+      "id": "NH15-01",
+      "severity": "high",
+      "status": "resolved_source_replaced",
+      "finding": "IGDA10.1same publication is already charged in feature-credits-as-historical-record batch10; a new feature/source ID cannot create another allowance.",
+      "evidence": [],
+      "required_action": "Replace labour cards0–1with genuinely distinct primary evidence or explicitly merge without adding duplicate charged prose."
+    },
+    {
+      "id": "NH15-02",
+      "severity": "high",
+      "status": "resolved_recomputed_unicode_budgets",
+      "finding": "Initial validator counted whitespace only. Full declared scope must use max(whitespace, Unicode lexical tokens). Nine initial groups exceeded200.",
+      "initial_over_limit": {
+        "crossfire18": 202,
+        "tencent22": 206,
+        "apple-store08": 206,
+        "apple-arcade19": 201,
+        "igda-credits23": 204,
+        "sega-cwa24": 203,
+        "getty20": 206,
+        "vghf-library25": 203,
+        "mechner-archive12": 202
+      },
+      "current_over_limit": [],
+      "required_action": "Recompute exact whole-card/title/summary/publication-title charges after copyedit; every card must stay80–100words."
+    },
+    {
+      "id": "NH15-03",
+      "severity": "low",
+      "status": "resolved_month_spacing",
+      "finding": "Possessive/month joins survived author mechanical check.",
+      "current_occurrences": []
+    },
+    {
+      "id": "NH15-04",
+      "severity": "medium",
+      "status": "resolved_role_specificity",
+      "finding": "Original programmer Roland Gustafsson can misattribute whole-game programming; Mechner identifies him as the author of special18sectorRWTSdisk routines.",
+      "required_action": "Specify disk programmer or author of the disk routines; preserve Mechner game authorship."
+    }
+  ],
+  "source_provenance_note": "NVM actual web-reader response retained after direct403. Steam anniversary/Families substantive English is embedded in the saved original HTML. Successful status alone is not evidence; each actual paragraph sequence was read. Live Steam SSA/DRM independently reopened; no present legal interpretation imposed on2003.",
+  "writes": "Review receipt and private evidence/raster files only. Author draft, master, original source/locales, generated locales, assembler/runtime and console unchanged.",
+  "revision_note": "Single bounded author revision independently read in full diff: IGDAcards replaced by distinct2023election record, all budgets recomputed with Unicode/whitespace maximum, month joins fixed and Gustafsson disk role specified. Initial draft preserved at build/research/editorial-networks-15/editorial-networks-history-15-first-review.json with initial reviewed SHA.",
+  "reviewed_revision_delta": [
+    {
+      "feature_id": "feature-china-game-networks",
+      "initial_body_sha256": "fddeecafb7af47548c4bb35df1c083f40638dd2405372e14ec321575cd711e9c",
+      "final_body_sha256": "44067bb35b7c3e0b50a333c01504319d91b7b005a63f5ce32c1d6b16bec41e5f",
+      "changed_body_indices": [
+        2
+      ],
+      "title_changed": true,
+      "summary_changed": true
+    },
+    {
+      "feature_id": "feature-steam-library-ownership",
+      "initial_body_sha256": "edb2cbd55997d4de5e56c2cd4a5c289e1a19af7981f3cddf4b587e7b99371116",
+      "final_body_sha256": "edb2cbd55997d4de5e56c2cd4a5c289e1a19af7981f3cddf4b587e7b99371116",
+      "changed_body_indices": [],
+      "title_changed": false,
+      "summary_changed": false
+    },
+    {
+      "feature_id": "feature-mmo-community-work",
+      "initial_body_sha256": "22028d8fe5382982c4a7a1dd8a7d6ef12cf08139fd4ab535d21b71c9077e655e",
+      "final_body_sha256": "70dd11d915cb2b22019b7a47641a66c1461e5f6b9e7c69cfbb10e852b43e471c",
+      "changed_body_indices": [
+        3
+      ],
+      "title_changed": false,
+      "summary_changed": false
+    },
+    {
+      "feature_id": "feature-app-store-change",
+      "initial_body_sha256": "d2fd500d6ba2be3a672812d6ec25124333aedde499011c71044dd1cc050c56fa",
+      "final_body_sha256": "e7eb015340857228f0d876993862024c5ba1d0b03817f100d9c6571edd83464b",
+      "changed_body_indices": [
+        0,
+        2
+      ],
+      "title_changed": true,
+      "summary_changed": true
+    },
+    {
+      "feature_id": "feature-streamers-and-play",
+      "initial_body_sha256": "70ec5eaa9889088a55ae763b1655071ca1204f4aa3805f3e74044be23caef025",
+      "final_body_sha256": "70ec5eaa9889088a55ae763b1655071ca1204f4aa3805f3e74044be23caef025",
+      "changed_body_indices": [],
+      "title_changed": false,
+      "summary_changed": false
+    },
+    {
+      "feature_id": "feature-labour-and-credit",
+      "initial_body_sha256": "c0565ec30faa8dda7c01e1acb382bce32f1f118c22bcbb1fd82d45721ec788c1",
+      "final_body_sha256": "99ac720fc0958500bbe07c76ce9e4b8d84eb06e952ba2f5a0941d1be33b1d67c",
+      "changed_body_indices": [
+        0,
+        1
+      ],
+      "title_changed": true,
+      "summary_changed": true
+    },
+    {
+      "feature_id": "feature-pandemic-shared-spaces",
+      "initial_body_sha256": "4f76833dd4c4ee12323ba66da225a80984e349540a709cbba15e63ff9b878568",
+      "final_body_sha256": "d15809fa7d9c3e349f0c9834bad50c6567da1c63ed8386277cc2b600635ed1fd",
+      "changed_body_indices": [
+        0,
+        1,
+        2
+      ],
+      "title_changed": true,
+      "summary_changed": true
+    },
+    {
+      "feature_id": "feature-living-history-method",
+      "initial_body_sha256": "19480cf7b4a6a259b523bc72bf2ad2328dbbe1243aeb4ccb3be0956f2a80bad5",
+      "final_body_sha256": "71a40c370fbb7fa4d234b470a633039eb52eb0ea5c4fb62f76c15fe63effccb3",
+      "changed_body_indices": [
+        2
+      ],
+      "title_changed": true,
+      "summary_changed": true
+    }
+  ]
+}

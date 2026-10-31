@@ -1,0 +1,689 @@
+{
+  "batch_id": "088-catalog",
+  "status": "completed",
+  "entries": 10,
+  "main_cards_per_language": 36,
+  "feature_cards_per_language": 4,
+  "cards_per_language": 40,
+  "languages": [
+    "en",
+    "it",
+    "fr",
+    "de",
+    "es"
+  ],
+  "sources": [
+    {
+      "source_id": "088-gba-hardware",
+      "url": "https://www.nintendo.co.jp/n08/hardware/gba/index.html",
+      "title": "Game Boy Advance — hardware",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "Scheda del modello originale: uscita giapponese il 21 marzo 2001, schermo riflettente da 2,9 pollici, processore a 32 bit e compatibilità con le precedenti cartucce.",
+      "limitation": "Non confusi i dati del modello AGB-001 con quelli di SP o Micro."
+    },
+    {
+      "source_id": "088-gba-spec",
+      "url": "https://www.nintendo.co.jp/n08/hardware/spec/index.html",
+      "title": "Game Boy Advance — specifiche comparative",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "La colonna del Game Boy Advance originale conferma 240 × 160 pixel, 32.000 colori, processore a 32 bit e collegamento fino a quattro giocatori.",
+      "limitation": "Conservata la cifra di 32.000 colori pubblicata da Nintendo e già nell’INPUT. Nessuna correzione intuitiva a una cifra binaria diversa."
+    },
+    {
+      "source_id": "088-gba-curiosity",
+      "url": "https://curiosity.jp/works/gameboy-advance.html",
+      "title": "Gameboy Advance",
+      "publisher": "Curiosity Inc.",
+      "accessed_at": "2026-10-30",
+      "scope": "Il portfolio dello studio documenta il progetto di design industriale del 2000 e il lancio nel marzo 2001. Riscontra il contributo di Gwénaël Nicolas e Curiosity.",
+      "limitation": "La testimonianza non assegna a Nicolas da solo tutte le decisioni architetturali della console. Il testo parla di partecipazione al design industriale, senza attribuire l’intero hardware a un singolo autore."
+    },
+    {
+      "source_id": "088-gba-games",
+      "url": "https://www.nintendo.co.jp/n08/before/n2005_b01.html",
+      "title": "Game Boy Advance — software già pubblicato",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "L’archivio indica F-Zero for Game Boy Advance e Kuru Kuru Kururin il 21 marzo 2001 in Giappone.",
+      "limitation": "Usato per chiarire la regione di release; nessuna data nordamericana o europea dedotta dal lancio giapponese."
+    },
+    {
+      "source_id": "088-castlevania-history",
+      "url": "https://www.konami.com/games/castlevania/jp/ja/page/history_2001_gba",
+      "title": "Castlevania — cronologia, 2001 Game Boy Advance",
+      "publisher": "Konami",
+      "accessed_at": "2026-10-30",
+      "scope": "La pagina ufficiale giapponese indica Circle of the Moon il 21 marzo 2001.",
+      "limitation": "La pagina statunitense riguarda un’altra regione e non è stata usata per sostituire la data giapponese."
+    },
+    {
+      "source_id": "088-kururin-interview",
+      "url": "https://web.archive.org/web/20220311161110/https://www.nintendo.co.jp/nom/0103/033/index.html",
+      "title": "Nintendo Online Magazine, marzo 2001 — intervista agli sviluppatori di Kuru Kuru Kururin",
+      "publisher": "Nintendo; copia Internet Archive",
+      "accessed_at": "2026-10-30",
+      "scope": "Letta la copia dell’intervista giapponese dopo decompressione e decodifica Shift_JIS. Masato Toyoshima collega il problema di gioco al passaggio di mobili lunghi intorno agli angoli durante un trasloco.",
+      "limitation": "L’URL Nintendo corrente restituisce 404. Il ricordo non viene trasformato in una storia autobiografica inventata né attribuito a un altro partecipante. L’intervista è una conversazione con Hiroshi Sato, Masato Toyoshima e Yasunari Watanabe."
+    },
+    {
+      "source_id": "088-kururin-manual",
+      "url": "https://www.nintendo.com/eu/media/downloads/games_8/emanuals/game_boy_advance_8/Manual_GameBoyAdvance_KuruKuruKururin_EN_DE_FR_ES_IT.pdf",
+      "title": "Kuru Kuru Kururin — manuale europeo Game Boy Advance",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "Scaricato il PDF e lette visivamente le pagine inglesi stampate 6–11. Le pagine 8–9 chiamano Check Points le zone che ripristinano i cuori; il contatto con le pareti causa danni.",
+      "limitation": "Il manuale contiene 49 pagine PDF con tavole a doppia pagina. Non dichiarata lettura integrale di tutte le lingue. Il testo chiarisce che l’Helirin continua a girare quando si smette di spostarlo, senza sostenere che giri mentre il gioco è in pausa."
+    },
+    {
+      "source_id": "088-kururin-credits",
+      "url": "https://www.mobygames.com/game/8086/kuru-kuru-kururin/credits/gameboy-advance/",
+      "title": "Kuru Kuru Kururin — credits",
+      "publisher": "MobyGames, trascrizione dei crediti",
+      "accessed_at": "2026-10-30",
+      "scope": "I crediti riportano Hiroshi Sato e Masato Toyoshima come Director. La qualifica di direttore di Toyoshima già nell’INPUT viene conservata.",
+      "limitation": "La presentazione dell’intervista usa una qualifica di produzione; non sostituiti intuitivamente i crediti del gioco con il titolo impiegato nella conversazione."
+    },
+    {
+      "source_id": "088-conker-credits",
+      "url": "https://www.mobygames.com/game/3622/conkers-bad-fur-day/credits/n64/",
+      "title": "Conker’s Bad Fur Day — Nintendo 64 credits",
+      "publisher": "MobyGames, trascrizione dei crediti",
+      "accessed_at": "2026-10-30",
+      "scope": "Riscontrati i ruoli vocali di Chris Seavor e Louise O’Connor e il sound design di Robin Beanland.",
+      "limitation": "Letta la trascrizione pertinente; non dichiarata visione dei titoli di coda. Il collegamento GameFAQs sulle release, presente nell’INPUT, non era accessibile in questa verifica."
+    },
+    {
+      "source_id": "088-klonoa-namco",
+      "url": "https://www.bandainamcoent.co.jp/corporate/press/namco/48/48-036.pdf",
+      "title": "Comunicato Namco 48-036, 11 dicembre 2002",
+      "publisher": "Namco",
+      "accessed_at": "2026-10-30",
+      "scope": "La cronologia della serie nella seconda pagina indica Klonoa 2: Lunatea’s Veil per PlayStation 2 il 22 marzo 2001 in Giappone. Corregge il 21 marzo presente nell’INPUT.",
+      "limitation": "Letto il testo estratto dal PDF; non dichiarata verifica visiva della scansione. L’annuncio di Klonoa Heroes non viene confuso con la release del gioco del 2001."
+    },
+    {
+      "source_id": "088-klonoa-review",
+      "url": "https://game.watch.impress.co.jp/docs/20010413/kuro2.htm",
+      "title": "Recensione di Klonoa 2, 13 aprile 2001",
+      "publisher": "Game Watch / Impress",
+      "accessed_at": "2026-10-30",
+      "scope": "La recensione contemporanea indica l’uscita del 22 marzo 2001 e descrive il gioco come già pubblicato da tre settimane.",
+      "limitation": "Usata come riscontro posteriore all’uscita, distinto dalle anteprime che annunciano soltanto una data futura."
+    },
+    {
+      "source_id": "088-klonoa-credits",
+      "url": "https://www.mobygames.com/game/4692/klonoa-2-lunateas-veil/credits/ps2/",
+      "title": "Klonoa 2: Lunatea’s Veil — credits",
+      "publisher": "MobyGames, trascrizione dei crediti",
+      "accessed_at": "2026-10-30",
+      "scope": "Riscontra Yoshihiko Arawi nei crediti del gioco, accanto a Hideo Yoshizawa per la storia.",
+      "limitation": "Il cognome Arawi non viene corretto intuitivamente in Arai."
+    },
+    {
+      "source_id": "088-arawi-alias",
+      "url": "https://www.mobygames.com/person/178410/yoshihiko-arawi/credits/",
+      "title": "Yoshihiko Arawi — credits",
+      "publisher": "MobyGames",
+      "accessed_at": "2026-10-30",
+      "scope": "La scheda documenta le forme Arawi e Arai e il contributo allo scenario di Klonoa 2.",
+      "limitation": "Verifica del nome nei crediti, non ricerca biografica e non assegnazione di una nascita."
+    },
+    {
+      "source_id": "088-animal-original",
+      "url": "https://www.nintendo.co.jp/n01/n64/software/nus_p_nafj/index.html",
+      "title": "Dōbutsu no Mori — Nintendo 64",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "La scheda originale indica il 14 aprile 2001 e la piattaforma Nintendo 64. Permette di rendere esplicito l’incipit della voce.",
+      "limitation": "Non importati nuovi dettagli di collegamento o numero di residenti; le celebrazioni delle card successive sono esplicitamente riferite alla serie e alle edizioni indicate."
+    },
+    {
+      "source_id": "088-animal-clock",
+      "url": "https://www.nintendo.co.jp/etc/seminar2008/doubutsu/02.html",
+      "title": "Nintendo Game Seminar 2008 — The Road to Completing Animal Crossing, capitolo 2",
+      "publisher": "Nintendo; Hisashi Nogami e Katsuya Eguchi",
+      "accessed_at": "2026-10-30",
+      "scope": "Nella discussione del passaggio dal progetto 64DD a Nintendo 64, i partecipanti distinguono l’orologio della piattaforma precedente da quello inserito nella cartuccia del gioco per Nintendo 64.",
+      "limitation": "Corretto soltanto il riferimento errato all’orologio della console nel primo gioco. Non aggiunte le precedenti fasi del progetto come nuovi approfondimenti."
+    },
+    {
+      "source_id": "088-newleaf-mayor",
+      "url": "https://iwataasks.nintendo.com/interviews/3ds/animalcrossing-newleaf/0/1/",
+      "title": "Iwata Asks: Animal Crossing: New Leaf — Being the Mayor",
+      "publisher": "Nintendo; Satoru Iwata con Aya Kyogoku, Isao Moro e colleghi",
+      "accessed_at": "2026-10-30",
+      "scope": "Letti i passaggi indicizzati della fonte primaria su rientro dal lavoro, negozi chiusi, ordinanze e sostegno iniziale richiesto al sindaco. Distinto tale requisito dall’assenza di un indice continuo di gradimento.",
+      "limitation": "L’apertura diretta ha dato timeout; consultato il contenuto indicizzato, non una pagina integralmente caricata. I passaggi sulle cerimonie e sul finanziamento sono già forniti con locatore nel materiale del lotto."
+    },
+    {
+      "source_id": "088-animal-seminar-translation",
+      "url": "https://www.nintendoworldreport.com/feature/42993/iwata-asks-in-commemoration-part-1-nintendo-game-seminar-2008-nintendo-game-seminar-2008-the-road-to-completing-animal-crossing-part-4",
+      "title": "Nintendo Game Seminar 2008 — The Road to Completing Animal Crossing, part 4",
+      "publisher": "Matt Walker / Nintendo World Report, traduzione inglese pubblicata l’11 luglio 2016",
+      "accessed_at": "2026-10-30",
+      "scope": "Letti i passaggi su messaggi tra familiari che giocano a orari diversi, numero totale degli oggetti non annunciato e soddisfazione personale nel collezionismo.",
+      "limitation": "Conservati nel testo l’anno del seminario, i nomi Nogami ed Eguchi e l’attribuzione della traduzione a Matt Walker. Il 2016 è la data della traduzione, non della discussione originale."
+    },
+    {
+      "source_id": "088-animal-holidays",
+      "url": "https://play.nintendo.com/news-tips/news/acnh-in-game-holiday-events/",
+      "title": "Animal Crossing: New Horizons — in-game holiday events",
+      "publisher": "Nintendo / Play Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "La pagina ufficiale distingue la festa Countdown del 31 dicembre in New Horizons dalle altre ricorrenze.",
+      "limitation": "Non estesi automaticamente personaggi e visite multigiocatore al primo episodio Nintendo 64. Non aggiunti orari assenti dall’INPUT."
+    },
+    {
+      "source_id": "088-gt3-name",
+      "url": "https://sony.mediaroom.com/2000-12-22-Gran-Turismo-3-A-spec-Delivers-the-Most-Technologically-Advanced-Racing-Experience-Exclusively-on-Playstation-2",
+      "title": "Gran Turismo 3 A-spec Delivers the Most Technologically Advanced Racing Experience Exclusively on PlayStation 2",
+      "publisher": "Sony Computer Entertainment America, 22 dicembre 2000",
+      "accessed_at": "2026-10-30",
+      "scope": "Il comunicato usa già il nome definitivo Gran Turismo 3 A-spec prima dell’E3 2001. Conferma inoltre il lavoro sulle capacità del nuovo hardware.",
+      "limitation": "È un annuncio con data futura prevista, non prova dell’avvenuta release. Usato per correggere il nome e il contesto produttivo."
+    },
+    {
+      "source_id": "088-gt3-e3",
+      "url": "https://www.gamespot.com/articles/e3-2001-sony-announces-new-playstation-2-software/1100-2761512/",
+      "title": "E3 2001: Sony announces new PlayStation 2 software",
+      "publisher": "GameSpot, resoconto della conferenza Sony del 18 maggio 2001",
+      "accessed_at": "2026-10-30",
+      "scope": "Il resoconto contemporaneo della presentazione di Andrew House usa Gran Turismo 3 A-spec all’E3 2001.",
+      "limitation": "Il luglio annunciato in conferenza non viene usato come prova di disponibilità commerciale."
+    },
+    {
+      "source_id": "088-gt3-evolution",
+      "url": "https://www.gtplanet.net/look-evolution-gran-turismo-series/",
+      "title": "A Look at the Evolution of the Gran Turismo Series",
+      "publisher": "GTPlanet, ricostruzione storica del 2017",
+      "accessed_at": "2026-10-30",
+      "scope": "La ricostruzione descrive circa 180 auto in Gran Turismo 3; il dato dell’INPUT viene conservato come valore approssimativo nel confronto con Gran Turismo 2.",
+      "limitation": "Fonte secondaria. I comunicati Sony di lancio parlano di oltre 150 auto, non provano un conteggio esatto di 180. La pagina commerciale corrente di una regione riporta oltre 200: tale cifra non è stata usata per correggere intuitivamente il contenuto storico."
+    },
+    {
+      "source_id": "088-gt3-launch",
+      "url": "https://sony.mediaroom.com/2001-07-10-Highly-Anticipated-PlayStation-2-Racing-Game-Gran-Turismo-3-A-spec-Races-Onto-Store-Shelves-Today",
+      "title": "Gran Turismo 3 A-spec Races Onto Store Shelves Today",
+      "publisher": "Sony Computer Entertainment America, 10 luglio 2001",
+      "accessed_at": "2026-10-30",
+      "scope": "Il comunicato dichiara disponibilità effettiva negli Stati Uniti e descrive la selezione come superiore a 150 auto.",
+      "limitation": "Non confusa la release statunitense con quella giapponese e non usata la soglia promozionale come conteggio esatto dei veicoli."
+    },
+    {
+      "source_id": "088-gt3-shipments",
+      "url": "https://sonyinteractive.com/en/press-releases/2008/gran-turismo-series-shipment-exceeds-50-million-units-worldwide/",
+      "title": "Gran Turismo Series Shipment Exceeds 50 Million Units Worldwide",
+      "publisher": "Sony Computer Entertainment, 9 maggio 2008",
+      "accessed_at": "2026-10-30",
+      "scope": "La tabella delle spedizioni mondiali al 30 aprile 2008 indica 14,89 milioni per Gran Turismo 3, il valore più alto del confronto pubblicato. Riporta anche le release giapponesi: GT3 il 28 aprile 2001 e GT4 il 28 dicembre 2004.",
+      "limitation": "Il dato riguarda copie distribuite, non vendite documentate al consumatore. Il primato nella serie viene ancorato al confronto del 2008, senza affermare una classifica attuale del 2026."
+    },
+    {
+      "source_id": "088-polyphony-products",
+      "url": "https://www.polyphony.co.jp/products/",
+      "title": "Products",
+      "publisher": "Polyphony Digital",
+      "accessed_at": "2026-10-30",
+      "scope": "L’archivio ufficiale conferma le release giapponesi del 28 aprile 2001 per Gran Turismo 3 e del 28 dicembre 2004 per Gran Turismo 4.",
+      "limitation": "Il dato aggregato corrente della serie non permette di dedurre i risultati del singolo gioco e non è stato importato nella voce."
+    }
+  ],
+  "decisions": [
+    {
+      "target_id": "klonoa-2-lunateas-veil-2001",
+      "problem": "L’INPUT colloca la release giapponese al 21 marzo 2001 e il cognome Arawi poteva sembrare un refuso.",
+      "conclusion": "Corretto il giorno in 22 marzo 2001 nelle cinque lingue in base alla cronologia Namco, riscontrata da una recensione contemporanea. Conservato Yoshihiko Arawi, attestato nei crediti.",
+      "source_ids": [
+        "088-klonoa-namco",
+        "088-klonoa-review",
+        "088-klonoa-credits",
+        "088-arawi-alias"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "kuru-kuru-kururin-2001",
+      "problem": "Il verbo pauses poteva suggerire che la rotazione continui nel menu di pausa; occorreva verificare il significato dei checkpoint e l’attribuzione dell’idea dei mobili.",
+      "conclusion": "Esplicitato che la rotazione continua quando si smette di spostare il mezzo. Il manuale conferma Check Points come zone di ripristino dei cuori. L’idea dei mobili rimane collegata a Toyoshima e non viene trasformata in un episodio autobiografico aggiunto.",
+      "source_ids": [
+        "088-kururin-manual",
+        "088-kururin-interview",
+        "088-kururin-credits"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "workbook-03-21-game-boy-advance",
+      "problem": "La frase sul design poteva attribuire tutte le decisioni della forma e dell’hardware a Nicolas; serviva distinguere il modello originale dai successivi.",
+      "conclusion": "Conservati AGB-001, disposizione orizzontale, L/R, schermo riflettente, specifiche e retrocompatibilità. Nicolas e Curiosity sono presentati per il contributo al design industriale. Nessuna immagine o informazione del modello SP sostituisce il modello originale.",
+      "source_ids": [
+        "088-gba-hardware",
+        "088-gba-spec",
+        "088-gba-curiosity"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-540952",
+      "problem": "Il testo del primo Animal Crossing parlava dell’orologio della console e poteva attribuire a Nintendo 64 celebrazioni e personaggi di capitoli successivi.",
+      "conclusion": "Identificato il primo episodio per Nintendo 64, pubblicato in Giappone il 14 aprile 2001, con orologio nella cartuccia. Le card successive parlano della serie e identificano espressamente New Horizons e le edizioni con visite multigiocatore.",
+      "source_ids": [
+        "088-animal-original",
+        "088-animal-clock",
+        "088-animal-holidays"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "feature-animal-crossing-time",
+      "problem": "L’assenza di un indice continuo di approvazione del sindaco poteva essere intesa come assenza di ogni requisito iniziale; mantenere le attribuzioni delle due interviste.",
+      "conclusion": "Distinto il sostegno iniziale degli abitanti dall’assenza di una valutazione permanente. Conservate ordinanze, cerimonie, contributo al finanziamento, messaggi differiti e collezionismo personale. Espliciti Iwata, Kyogoku, Nogami, Eguchi e la traduzione di Matt Walker.",
+      "source_ids": [
+        "088-newleaf-mayor",
+        "088-animal-seminar-translation"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-1917117",
+      "problem": "Gran Turismo 2000 era indicato anche all’E3 2001; il dato commerciale confondeva vendite e distribuzione e affermava un primato attuale senza una data di riferimento.",
+      "conclusion": "Gran Turismo 2000 resta il titolo provvisorio della presentazione 2000, mentre l’E3 2001 usa il nome finale. Il confronto dei veicoli conserva circa 180 contro 650. Il dato Sony è espresso come 14,89 milioni di copie distribuite entro aprile 2008 e il primato di serie è riferito alla tabella pubblicata allora. GT4 segue in Giappone nel dicembre 2004.",
+      "source_ids": [
+        "088-gt3-name",
+        "088-gt3-e3",
+        "088-gt3-evolution",
+        "088-gt3-launch",
+        "088-gt3-shipments",
+        "088-polyphony-products"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "conkers-bad-fur-day",
+      "problem": "Fra le fonti dell’INPUT figura una pagina di Oddworld: Soulstorm estranea a Conker; controllare anche il ruolo di Robin Beanland.",
+      "conclusion": "La pagina Oddworld non è utilizzata come prova per Conker. URL e attribuzioni originali restano nel materiale conservato, senza una sostituzione silenziosa. Il sound design di Beanland è riscontrato nei crediti trascritti.",
+      "source_ids": [
+        "088-conker-credits"
+      ],
+      "excluded_source_url": "https://www.oddworld.com/2021/04/oddworld-soulstorm-is-now-available/",
+      "text_applied": false
+    }
+  ],
+  "metadata_proposals": [
+    {
+      "target_id": "castlevania-circle-of-the-moon-2001",
+      "original_year": 2001,
+      "original_date": {
+        "month": 3,
+        "day": 21,
+        "precision": "day",
+        "region": "Original commercial release"
+      },
+      "proposed_date": {
+        "year": 2001,
+        "month": 3,
+        "day": 21,
+        "precision": "day",
+        "region": "JP"
+      },
+      "event_semantics": "release",
+      "source_ids": [
+        "088-castlevania-history"
+      ],
+      "reason": "Il 21 marzo 2001 è la release giapponese; Original commercial release non è una regione."
+    },
+    {
+      "target_id": "f-zero-maximum-velocity-2001",
+      "original_year": 2001,
+      "original_date": {
+        "month": 3,
+        "day": 21,
+        "precision": "day",
+        "region": "Original commercial release"
+      },
+      "proposed_date": {
+        "year": 2001,
+        "month": 3,
+        "day": 21,
+        "precision": "day",
+        "region": "JP"
+      },
+      "event_semantics": "release",
+      "source_ids": [
+        "088-gba-games"
+      ],
+      "reason": "Il 21 marzo 2001 appartiene all’uscita giapponese di F-Zero per Game Boy Advance."
+    },
+    {
+      "target_id": "klonoa-2-lunateas-veil-2001",
+      "original_year": 2001,
+      "original_date": {
+        "month": 3,
+        "day": 21,
+        "precision": "day",
+        "region": "Japan"
+      },
+      "proposed_date": {
+        "year": 2001,
+        "month": 3,
+        "day": 22,
+        "precision": "day",
+        "region": "JP"
+      },
+      "event_semantics": "release",
+      "source_ids": [
+        "088-klonoa-namco",
+        "088-klonoa-review"
+      ],
+      "reason": "La cronologia ufficiale Namco e il riscontro contemporaneo indicano il 22 marzo, non il 21."
+    },
+    {
+      "target_id": "kuru-kuru-kururin-2001",
+      "original_year": 2001,
+      "original_date": {
+        "month": 3,
+        "day": 21,
+        "precision": "day",
+        "region": "Original commercial release"
+      },
+      "proposed_date": {
+        "year": 2001,
+        "month": 3,
+        "day": 21,
+        "precision": "day",
+        "region": "JP"
+      },
+      "event_semantics": "release",
+      "source_ids": [
+        "088-gba-games"
+      ],
+      "reason": "La data è la release giapponese di Kuru Kuru Kururin, non un’uscita uniforme internazionale."
+    },
+    {
+      "target_id": "workbook-03-21-game-boy-advance",
+      "original_year": 2001,
+      "original_date": {
+        "month": 3,
+        "day": 21,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed_date": {
+        "year": 2001,
+        "month": 3,
+        "day": 21,
+        "precision": "day",
+        "region": "JP"
+      },
+      "event_semantics": "release",
+      "source_ids": [
+        "088-gba-hardware"
+      ],
+      "reason": "La data della console originale riguarda il Giappone."
+    },
+    {
+      "target_id": "wikipedia-540952",
+      "original_year": 2001,
+      "original_date": {
+        "month": 4,
+        "day": 14,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed_date": {
+        "year": 2001,
+        "month": 4,
+        "day": 14,
+        "precision": "day",
+        "region": "JP"
+      },
+      "event_semantics": "release",
+      "source_ids": [
+        "088-animal-original"
+      ],
+      "reason": "La data appartiene a Dōbutsu no Mori per Nintendo 64 in Giappone, distinto dalle edizioni successive della serie."
+    },
+    {
+      "target_id": "wikipedia-1917117",
+      "original_year": 2001,
+      "original_date": {
+        "month": 4,
+        "day": 28,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed_date": {
+        "year": 2001,
+        "month": 4,
+        "day": 28,
+        "precision": "day",
+        "region": "JP"
+      },
+      "event_semantics": "release",
+      "source_ids": [
+        "088-gt3-shipments",
+        "088-polyphony-products"
+      ],
+      "reason": "La release del 28 aprile 2001 è giapponese; annunci e spedizioni commerciali del 2008 non sono eventi sostitutivi della timeline."
+    }
+  ],
+  "expansion_assessments": [
+    {
+      "target_id": "zone-of-the-enders-2001",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Primo capitolo della serie di combattimenti mecha di Konami su PlayStation 2, con autori e seguito documentati; selezionato per un approfondimento completo."
+    },
+    {
+      "target_id": "conkers-bad-fur-day",
+      "main_cards": 6,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 0,
+      "rationale": "Opera importante del catalogo Rare e della commedia per adulti su Nintendo 64; le sei card esistenti coprono già produzione, azioni, parodia, voci, multigiocatore e distribuzione."
+    },
+    {
+      "target_id": "castlevania-circle-of-the-moon-2001",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Avvio di Castlevania su Game Boy Advance e titolo di lancio della console, con esplorazione e sistema di combinazione delle carte distintivi."
+    },
+    {
+      "target_id": "f-zero-maximum-velocity-2001",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "required_main_cards": null,
+      "missing_cards": 0,
+      "rationale": "Capitolo portatile della serie, già descritto attraverso presentazione, turbo e progressione. Non applicata automaticamente la soglia a ogni gioco o a ogni titolo di lancio."
+    },
+    {
+      "target_id": "klonoa-2-lunateas-veil-2001",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Avventura importante nella storia di Klonoa, rappresentativa del passaggio alla grafica tridimensionale su PlayStation 2 e successivamente riproposta in raccolta."
+    },
+    {
+      "target_id": "kuru-kuru-kururin-2001",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "required_main_cards": null,
+      "missing_cards": 0,
+      "rationale": "Esperimento portatile distintivo, già spiegato attraverso comandi, rapporto fra forma e spazio e origine del progetto. Non selezionato automaticamente fra tutte le opere soggette alla quota minima."
+    },
+    {
+      "target_id": "workbook-03-21-game-boy-advance",
+      "main_cards": 5,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 6,
+      "missing_cards": 1,
+      "rationale": "Console centrale della storia delle portatili Nintendo; applicata la soglia specifica di sei card principali."
+    },
+    {
+      "target_id": "console-gap-illbleed",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "required_main_cards": null,
+      "missing_cards": 0,
+      "rationale": "Esperimento horror originale, con tre card già dedicate a struttura del parco, lettura dei segnali e risorse corporee. La singolarità del sistema non comporta automaticamente una quota minima per ogni gioco."
+    },
+    {
+      "target_id": "wikipedia-540952",
+      "main_cards": 4,
+      "feature_cards": 4,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 1,
+      "rationale": "Origine di una serie importante di simulazione sociale; le quattro card principali sono però concentrate sul calendario e sulle celebrazioni. Le quattro card della feature restano distinte dal conteggio principale."
+    },
+    {
+      "target_id": "wikipedia-1917117",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Passaggio principale di Gran Turismo a PlayStation 2, con rilevanza commerciale e tecnica documentata. La voce necessita anche di una spiegazione concreta delle attività del giocatore."
+    }
+  ],
+  "editorial_review": {
+    "english_first": true,
+    "english_checkpoint": "088-catalog/OUTPUT-088-catalog.json, ramo en; bozza inglese salvata prima degli adattamenti",
+    "summary_word_counts_en": [
+      39,
+      37,
+      39,
+      39,
+      40,
+      40,
+      38,
+      38,
+      41,
+      40
+    ],
+    "feature_summary_word_counts_en": [
+      37
+    ],
+    "fidelity": "Confrontate tutte le 40 card nelle cinque lingue. Conservati Leo, Jehuty, Orbital Frame, distanza, missioni civili, autori e seguito; Conker’s Quest, Twelve Tales, B, sette varianti per quattro persone, voci e THQ; Nathan, salvataggio del mentore, Dual Set-Up System e ritorno ai percorsi; piloti, rotazione delle piste, turbo, salti, qualificazione e sblocchi di F-Zero; Lolo, Popka, regni delle emozioni, Vision, tavole, crediti e riedizione Klonoa; fratelli, Helirin, checkpoint e origine dell’idea; ogni dato tecnico e di compatibilità del Game Boy Advance; Eriko, sei attrazioni, Climax Graphics, Horror Monitor, adrenalina e valori corporei; calendario, oggetti, feste, tutte le quattro card della feature e attribuzioni Animal Crossing; quantità, aspetti tecnici, risultati commerciali e successione Gran Turismo. Nessuna card aggiunta, eliminata, unita, divisa o riordinata.",
+    "naturalness": "Riletti tutti i titoli, incipit e paragrafi nelle cinque lingue. Sommari inglesi di 37–41 parole, feature di 37. Chiarito in italiano il salvataggio del mentore di Nathan; riformulato il periodo sulle cerimonie per evitare calchi nelle cinque lingue; reso esplicito il senso commerciale delle copie distribuite. Corretto un soggetto implicito non coerente nel francese della card sulle voci di Conker.",
+    "expansions": "Sei voci sotto soglia richiedono complessivamente dieci nuove card principali, da sviluppare separatamente nelle cinque lingue. Animal Crossing e Gran Turismo richiedono sostanza sulle azioni concrete, oltre al conteggio. Conker possiede già sei card. F-Zero: Maximum Velocity, Kuru Kuru Kururin e Illbleed non ricevono automaticamente una quota solo perché presenti nel catalogo. Le quattro card della feature Animal Crossing restano separate dalle quattro principali.",
+    "limits": "Nessuna biografia autonoma: i nomi degli autori nei crediti non vengono trasformati in voci di nascita. Conservati INPUT, fonti, diritti, date strutturate e media originali; le correzioni dei metadati sono proposte in questo audit e non applicate al catalogo. La ricerca risolve i dubbi identificati senza certificare indistintamente ogni affermazione. Per Gran Turismo, il confronto delle vendite fra titoli PlayStation 2 è conservato dall’INPUT; il dato primario Sony verificato riguarda distribuzione e confronto interno alla serie nel 2008. Nessun video dichiarato visionato."
+  },
+  "source_artifacts": [
+    {
+      "filename": "Manual_GameBoyAdvance_KuruKuruKururin_EN_DE_FR_ES_IT.pdf",
+      "sha256": "9629e6acb68da55120b24608c344508a370cac764dba650f64b5ae8787b4afc5",
+      "bytes": 12017144,
+      "observed_pages": "Pagine stampate inglesi 6–11, corrispondenti alle tavole PDF 3–5; la tavola 4 contiene le pagine 8–9.",
+      "included_in_package": false
+    }
+  ],
+  "validation": {
+    "valid": true,
+    "batch_id": "088-catalog",
+    "completed": true,
+    "entry_count": 10,
+    "card_count_per_language": 40,
+    "language_count": 5,
+    "translated_card_count": 200,
+    "entry_card_counts": {
+      "zone-of-the-enders-2001": 3,
+      "conkers-bad-fur-day": 6,
+      "castlevania-circle-of-the-moon-2001": 3,
+      "f-zero-maximum-velocity-2001": 3,
+      "klonoa-2-lunateas-veil-2001": 3,
+      "kuru-kuru-kururin-2001": 3,
+      "workbook-03-21-game-boy-advance": 5,
+      "console-gap-illbleed": 3,
+      "wikipedia-540952": 8,
+      "wikipedia-1917117": 3
+    },
+    "issue_counts": {
+      "zone-of-the-enders-2001": 1,
+      "conkers-bad-fur-day": 0,
+      "castlevania-circle-of-the-moon-2001": 1,
+      "f-zero-maximum-velocity-2001": 0,
+      "klonoa-2-lunateas-veil-2001": 1,
+      "kuru-kuru-kururin-2001": 0,
+      "workbook-03-21-game-boy-advance": 1,
+      "console-gap-illbleed": 0,
+      "wikipedia-540952": 1,
+      "wikipedia-1917117": 1
+    },
+    "summary_checks": [
+      {
+        "entry_id": "zone-of-the-enders-2001",
+        "feature_id": null,
+        "english_summary_words": 39
+      },
+      {
+        "entry_id": "conkers-bad-fur-day",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "castlevania-circle-of-the-moon-2001",
+        "feature_id": null,
+        "english_summary_words": 39
+      },
+      {
+        "entry_id": "f-zero-maximum-velocity-2001",
+        "feature_id": null,
+        "english_summary_words": 39
+      },
+      {
+        "entry_id": "klonoa-2-lunateas-veil-2001",
+        "feature_id": null,
+        "english_summary_words": 40
+      },
+      {
+        "entry_id": "kuru-kuru-kururin-2001",
+        "feature_id": null,
+        "english_summary_words": 40
+      },
+      {
+        "entry_id": "workbook-03-21-game-boy-advance",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "console-gap-illbleed",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "wikipedia-540952",
+        "feature_id": null,
+        "english_summary_words": 41
+      },
+      {
+        "entry_id": "wikipedia-540952",
+        "feature_id": "feature-animal-crossing-time",
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "wikipedia-1917117",
+        "feature_id": null,
+        "english_summary_words": 40
+      }
+    ],
+    "editorial_review": [],
+    "failures": []
+  },
+  "output_sha256": "3a2654313b3aaa8ad325e92ea8bee4601c41ac04d3563b9389421506d8fcfded"
+}

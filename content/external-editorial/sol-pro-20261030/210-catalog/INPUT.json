@@ -1,0 +1,388 @@
+{
+  "schema": "pixel-museum-editorial-input-v1",
+  "batch_id": "210-catalog",
+  "source_file": "content/catalog.json",
+  "source_sha256": "0b077b3f8628f921ab84574d286f9d9943fb8ae6acb8f136ffadde6e01cae241",
+  "entries": [
+    {
+      "entry_id": "dandara",
+      "kind": "game",
+      "year_context_only": 2018,
+      "date_context_only": {
+        "month": 2,
+        "day": 6,
+        "precision": "day",
+        "region": "Original 2018 release, before the 2020 Trials of Fear update. Developer primary confirms the PS4 date; publisher launch trailer identifies the same launch week across console, PC and mobile."
+      },
+      "event_semantics": "",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "Dandara",
+        "subtitle": "Remove walking. Discover another world.",
+        "summary": "Long Hat House began with the problem of fast action on a touchscreen. Dandara's unusual movement grew from taking that surface seriously.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "A different way to cross a room",
+            "text": "Dandara cannot simply walk to the other side of a room. She moves by aiming and leaping between surfaces. A wall can become the next place to stand, and a familiar-looking platform room becomes a network of possible jumps. The movement rule changes how the whole world has to be read."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Designing first for touch",
+            "text": "João Brant and Lucas Mattos, the founders of Brazil's Long Hat House, began the project with touchscreens in mind. They wanted action and exploration that felt native to touching and releasing a screen, rather than a console control scheme placed on glass. Limited access to console publishing helped direct that early choice. Raw Fury later joined as publisher, and adapting the idea to gamepads became another design problem rather than an automatic port."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Choosing a cultural reference",
+            "text": "The team also reconsidered whose story the game should evoke. A generic soldier gave way to a heroine inspired by Dandara dos Palmares and by ideas of resistance in Brazilian history. The developers have been explicit that the game's Dandara is fictional: this is a cultural reference, not a reconstruction of a documented life."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "One idea across different devices",
+            "text": "The 2018 release connects those decisions. An unfamiliar way of moving makes room for an unfamiliar world, while references closer to the creators' own culture give that world a particular identity. The history here is a small team choosing what to keep, what to change and how to reach players on more than one kind of device."
+          }
+        ],
+        "sources": [
+          {
+            "title": "A warrior from Brazil",
+            "url": "https://apps.apple.com/br/iphone/story/id1450220912",
+            "publisher": "Apple App Store editorial / Long Hat House"
+          },
+          {
+            "title": "Game Design Deep Dive: Dandara's unique jump-only movement mechanic",
+            "url": "https://www.gamedeveloper.com/design/game-design-deep-dive-i-dandara-i-s-unique-jump-only-movement-mechanic",
+            "publisher": "Game Developer / Joao Brant",
+            "type": "Primary: developer-authored design account",
+            "supports": "Founders,touchfirst mechanics,consolepublishing constraints,RawFury,gamepad adaptation."
+          },
+          {
+            "title": "Long Hat House on Dandara's origin and women representation",
+            "url": "https://intothespine.com/2018/02/05/interview-long-hat-house/",
+            "publisher": "Into the Spine",
+            "type": "Primary: interview with Joao Brant and Lucas Mattos",
+            "supports": "Generic soldier prototype replaced,cultural influences,Dandara reference explicitly fictional rather than historical biography."
+          },
+          {
+            "title": "Official music publication: Weight of a Doubt",
+            "url": "https://www.youtube.com/watch?v=hBG3T9yhEug",
+            "publisher": "Thommaz Kauffmann - Topic",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Thommaz Kauffmann",
+            "url": "https://en.wikipedia.org/wiki/Dandara_%28video_game%29",
+            "publisher": "Thommaz Kauffmann"
+          },
+          {
+            "title": "Developer confirms February 6, 2018 release and original movement",
+            "url": "https://blog.playstation.com/?p=197909",
+            "publisher": "Lucas Mattos / Long Hat House"
+          },
+          {
+            "title": "Original February 2018 soundtrack and composer credits",
+            "url": "https://thommazk.bandcamp.com/album/dandara",
+            "publisher": "Thommaz Kauffmann"
+          }
+        ]
+      },
+      "features": [
+        {
+          "feature_id": "feature-latin-american-art-voices",
+          "title": "Finding Dandara's own world",
+          "subtitle": "",
+          "summary": "Touch controls and cultural references shape a fictional heroine.",
+          "cards": [
+            {
+              "card_id": "feature:feature-latin-american-art-voices:0",
+              "original_index": 0,
+              "heading": "A touch becomes a movement",
+              "text": "João Brant and Lucas Mattos founded Long Hat House after meeting while studying computer science. For Dandara, they worked with artist Victor Leão and musician Thommaz Kauffman. Brant's design account starts with touchscreens: touching, giving a direction and releasing could make a complete action. Rather than place familiar controller buttons on glass, the team built around that sequence. Their heroine would attach to surfaces and jump between them. A decision about a finger's movement therefore became a rule for how a world could be explored."
+            },
+            {
+              "card_id": "feature:feature-latin-american-art-voices:1",
+              "original_index": 1,
+              "heading": "Changing the rules for a controller",
+              "text": "Supporting gamepads created another design problem. Brant explains that the project began without a publisher or access to console self-publishing; Raw Fury later helped the team work full time and reach other platforms. The change did not make the original control problem disappear. An action designed around touching and releasing had to become comfortable with buttons and sticks. His account follows that adaptation as part of making the game, rather than treating the console version as a finished idea with a different connector attached to it."
+            },
+            {
+              "card_id": "feature:feature-latin-american-art-voices:2",
+              "original_index": 2,
+              "heading": "Leaving the generic soldier behind",
+              "text": "In their Into The Spine interview, the founders recall an early soldier character whose story felt detached from their own lives. They began looking instead at familiar culture and at resistance in Brazilian history. Dandara dos Palmares became an inspiration. Yet the team also recognised the research and care that a story directly about slavery would require. They moved towards a fictional world, retaining ideas of freedom and a heroine whose name had acquired significance during development. Changing the premise was a decision about responsibility as well as identity."
+            },
+            {
+              "card_id": "feature:feature-latin-american-art-voices:3",
+              "original_index": 3,
+              "heading": "References with limits",
+              "text": "The founders also drew on things encountered in daily life, school and friendships. These references helped give their fictional world a recognisably Brazilian identity. They describe the game?s Dandara as a fictional heroine inspired by Dandara dos Palmares, rather than a reconstruction of her life."
+            }
+          ],
+          "sources": [
+            {
+              "id": "brant18",
+              "title": "Game Design Deep Dive: Dandara's unique jump-only movement mechanic",
+              "url": "https://www.gamedeveloper.com/design/game-design-deep-dive-i-dandara-i-s-unique-jump-only-movement-mechanic",
+              "publisher": "Game Developer / João Brant",
+              "source_type": "Creator-authored design account, 20 April 2018",
+              "locator": "Who / Why / Touch Release and Swipes; gamepad adaptation",
+              "checked": "2026-10-21",
+              "rights": "Bibliographic reference only; access to text does not grant reproduction rights for photographs, artwork, recordings or game footage.",
+              "story_paragraphs": [
+                0,
+                1
+              ],
+              "paragraph_locators": {
+                "0": "Who and Touch Release / Swipes",
+                "1": "Why and gamepad adaptation"
+              }
+            },
+            {
+              "id": "longhat18",
+              "title": "Interview: Long Hat House on Dandara’s origin and women representation in games",
+              "url": "https://intothespine.com/2018/02/05/interview-long-hat-house/",
+              "publisher": "Into The Spine / Diego Nicolás Argüello",
+              "source_type": "Direct interview with João Brant and Lucas Mattos, 5 February 2018",
+              "locator": "Character origins, historical research, familiar references and representation questions",
+              "checked": "2026-10-21",
+              "rights": "Bibliographic reference only; access to text does not grant reproduction rights for photographs, artwork, recordings or game footage.",
+              "story_paragraphs": [
+                2,
+                3
+              ],
+              "paragraph_locators": {
+                "2": "Character inspiration and research questions",
+                "3": "Familiar references and fictional-character qualification"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entry_id": "wikipedia-41358217",
+      "kind": "game",
+      "year_context_only": 2018,
+      "date_context_only": {
+        "month": 2,
+        "day": 8,
+        "precision": "day",
+        "region": "Original Windows/macOS full release out of Steam Early Access; not December 2013 early access or the separate May 2021 console edition."
+      },
+      "event_semantics": "",
+      "factual_note": "Reference introduction with one bounded correction to the wipe paragraph. The dated timeline entry refers to the February 8, 2018 PC full release; later console releases and continuing-game developments are identified separately.",
+      "main": {
+        "feature_id": null,
+        "title": "Rust",
+        "subtitle": "Surviving means facing other people",
+        "summary": "Rust is a 2018 multiplayer survival video game developed by Facepunch Studios.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "From Early Access to full release",
+            "text": "Rust is a 2018 multiplayer survival video game developed by Facepunch Studios. It was first released in early access in December 2013 and received its full release in February 2018. Rust is available on Windows and macOS. Console versions for PlayStation 4 and Xbox One developed in conjunction with Double Eleven were released in May 2021. Native versions for PlayStation 5 and Xbox Series X/S were released in June 2025. Rust was initially created as a clone of DayZ, a popular mod for ARMA 2, with crafting elements akin to those in Minecraft."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Other players are the main threat",
+            "text": "The objective of Rust is to survive in the wilderness using gathered or stolen materials. Players must successfully manage their hunger, thirst, and health, or risk dying. Despite the presence of hostile animals such as bears, wolves and big cats such as panthers, the primary threat to the player is other players due to the game being solely multiplayer. Combat is accomplished through firearms and various weapons, such as bows. In addition, vehicles controlled by non-player characters will occasionally roam, attacking armed players. Rust features crafting, though initially limited until the discovery of specific items in the game's open world. To stay protected, players must build bases or join clans to improve their chance of survival. Raiding is a major aspect of Rust. Rust supports modded servers which can add additional content."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "A world starts again",
+            "text": "The game operates through server 'wipes', which can reset progress weekly, every two weeks or monthly. Facepunch's monthly update on the first Thursday of each month forces a reset of the map and player structures. Resetting learned crafting blueprints is a separate operation: it can accompany the map wipe, depending on server rules and Facepunch's changes, but is not an automatic consequence of every map reset."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "A project that keeps changing",
+            "text": "Rust was first released in December 2013 to the Steam Early Access program. During this period of development, the gameplay was changed significantly. Dangerous wildlife replaced zombies as the primary environmental threat and several fundamental revisions to the crafting system were released, along with general improvements and feature additions. While in Early Access, Rust was ported to the Unity 5 game engine, providing substantial graphical changes. The game also introduced immutable, predetermined skin colour tied to players' Steam account details. Despite being fully released, the game continues to receive updates."
+          },
+          {
+            "card_id": "main:4",
+            "original_index": 4,
+            "heading": "The price of survival",
+            "text": "Throughout Rust's alpha release, critical reviews were mixed, with many comparisons made to other survival games. Rust was commonly explained as being a mixture of DayZ and Minecraft. During this period, reviewers frequently noted the game's unfinished nature. During its pre-release phase, critics praised the concept and gameplay and by March 2017, Rust had sold over five million copies. After leaving Early Access, it received mixed reviews from critics. The player vs player combat and survival aspects were highlighted by those who enjoyed the game, though reviewers were critical of the harsh beginner experience and the constant need to grind for materials. The game has continued to be successful post-release and has been listed as one of the best survival games."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Rust (video game) — article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1380725070",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "2025 in video games — annual context",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1380483746",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/Rust_(video_game)?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          },
+          {
+            "title": "Rust (video game) — original release infobox, Wikipedia revision 1380725070",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1380725070",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Rust leaves Early Access on February 8, 2018",
+            "url": "https://rust.facepunch.com/news/devblog-197",
+            "publisher": "Facepunch Studios"
+          },
+          {
+            "title": "Map saves and player blueprints are separate reset operations",
+            "url": "https://wiki.facepunch.com/rust/Getting-Started_w-Server",
+            "publisher": "Facepunch official Rust Wiki"
+          },
+          {
+            "title": "Original Rust soundtrack by Alex Rehberg, Volume 1 released 2022",
+            "url": "https://facepunch.bandcamp.com/album/rust-original-game-soundtrack-vol-1",
+            "publisher": "Facepunch Studios / Alex Rehberg"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "workbook-02-13-kingdom-come-deliverance",
+      "kind": "game",
+      "year_context_only": 2018,
+      "date_context_only": {
+        "month": 2,
+        "day": 13,
+        "precision": "day",
+        "region": "Original Windows, PlayStation 4 and Xbox One release; not the later Switch conversion or Kingdom Come: Deliverance II."
+      },
+      "event_semantics": "release",
+      "factual_note": "Imported dated English Playhub editorial. Adapt its calendar wording, review publisher dates and assign rights-cleared media before presenting as a finished museum stop.",
+      "main": {
+        "feature_id": null,
+        "title": "Kingdom Come: Deliverance",
+        "subtitle": "Henry learns to survive in medieval Bohemia",
+        "summary": "Warhorse Studios' Kingdom Come: Deliverance places Henry, the son of a blacksmith, in medieval Bohemia.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "A blacksmith's son",
+            "text": "Warhorse Studios? Kingdom Come: Deliverance places Henry, the son of a blacksmith, in medieval Bohemia. An attack on his village draws him into a wider political conflict. The 2018 role-playing game follows his progress through settlements, work and encounters with people from different parts of society."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "A skill to practise",
+            "text": "A sword is not an automatic solution. Position, weapon choice and learned combat techniques matter, while quests can also be approached through persuasion, stealth or other decisions. Henry's developing abilities make early vulnerability part of the experience: the player and the character have things to learn."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "People remember actions",
+            "text": "The surrounding population reacts to what Henry does. Theft, violence and persuasion are ways of moving through a quest, but they also affect the people he must return to. The historical setting supplies more than scenery; it gives those encounters different expectations, restrictions and consequences."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Kingdom Come: Deliverance launch",
+            "url": "https://www.crytek.com/news/achieved-with-cryengine-kingdom-come-deliverance-launches-today",
+            "publisher": "Crytek"
+          },
+          {
+            "title": "Kingdom Come: Deliverance: developer description",
+            "url": "https://store.steampowered.com/app/379430/Kingdom_Come_Deliverance/",
+            "publisher": "Warhorse Studios / Steam"
+          },
+          {
+            "title": "Kingdom Come: Deliverance — original release infobox, Wikipedia revision 1380898135",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1380898135",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Official music publication: Rattay Feasts",
+            "url": "https://www.youtube.com/watch?v=EKk075jTkLk",
+            "publisher": "Jan Valta and Adam Sporka",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Jan Valta, Adam Sporka",
+            "url": "https://en.wikipedia.org/wiki/Kingdom_Come%3A_Deliverance",
+            "publisher": "Jan Valta, Adam Sporka"
+          },
+          {
+            "title": "Original February 13, 2018 worldwide release, with Warhorse interview",
+            "url": "https://www.cryengine.com/news/view/achieved-with-cryengine-kingdom-come-deliverance-launches-today",
+            "publisher": "Crytek / Tobias Stolz-Zwilling, Warhorse Studios"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "fist-north-star-lost-paradise-2018",
+      "kind": "game",
+      "year_context_only": 2018,
+      "date_context_only": {
+        "month": 3,
+        "day": 8,
+        "precision": "day",
+        "region": "Japan"
+      },
+      "event_semantics": "",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "Fist of the North Star: Lost Paradise",
+        "subtitle": "Kenshiro enters a city built for more than fighting",
+        "summary": "Fist of the North Star: Lost Paradise is Ryu Ga Gotoku Studio's PlayStation 4 action role-playing game, first released in Japan on 8 March 2018. Kenshiro explores the city of Eden in a story based on Buronson and Tetsuo Hara's manga. The studio brings systems familiar from Yakuza into the wasteland, combining violent martial-arts encounters with side activities and local personalities. The contrast is deliberate. A world associated with devastating punches also contains people asking for smaller favours, giving the player reasons to return to the city between journeys through the surrounding ruins.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Kenshiro enters a city built for more than fighting",
+            "text": "Fist of the North Star: Lost Paradise is Ryu Ga Gotoku Studio's PlayStation 4 action role-playing game, first released in Japan on 8 March 2018. Kenshiro explores the city of Eden in a story based on Buronson and Tetsuo Hara's manga. The studio brings systems familiar from Yakuza into the wasteland, combining violent martial-arts encounters with side activities and local personalities. The contrast is deliberate. A world associated with devastating punches also contains people asking for smaller favours, giving the player reasons to return to the city between journeys through the surrounding ruins."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Turn pressure points into the next opening",
+            "text": "Combat centres on Hokuto Shinken and its hidden channeling points, with attacks leading into spectacular finishing sequences. Experience and abilities develop Kenshiro's options as enemies and situations become more demanding. Outside those fights, Eden offers activities such as bartending and baseball, allowing the character's strength to take on deliberately comic uses. The player moves between the serious struggle of the main story and smaller encounters that change its tone. That alternation gives the adaptation a particular identity, expressing the manga's excess through both brutal action and the unexpected business of everyday life."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "A manga adaptation through the studio's own tools",
+            "text": "Jun Orihara and Nobuhiro Suzuki directed, with Masayoshi Yokoyama contributing to production and writing. The soundtrack includes work by Hidenori Shoji and other Ryu Ga Gotoku composers. Salvaged arcade machines allow older Sega games to be played, including Space Harrier and Out Run, linking the wasteland to another part of the publisher's history. International release followed in October 2018. Lost Paradise works as a meeting of two recognisable identities: the powers and imagery of Fist of the North Star are organised through the city, diversions and character encounters associated with the studio's games."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Fist of the North Star: Lost Paradise - English Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Fist_of_the_North_Star%3A_Lost_Paradise",
+            "publisher": "Wikipedia contributors",
+            "facts": "Original release, gameplay and production context."
+          },
+          {
+            "title": "Fist of the North Star: Lost Paradise - LaunchBox media",
+            "url": "https://gamesdb.launchbox-app.com/games/details/105909-fist-of-the-north-star-lost-paradise",
+            "publisher": "LaunchBox Games Database",
+            "facts": "Complete cover and original console gameplay media."
+          }
+        ]
+      },
+      "features": []
+    }
+  ]
+}

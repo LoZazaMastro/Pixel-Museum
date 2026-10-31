@@ -1,0 +1,778 @@
+{
+  "batch_id": "091-catalog",
+  "status": "completed",
+  "entries": 10,
+  "main_cards_per_language": 33,
+  "feature_cards_per_language": 4,
+  "cards_per_language": 37,
+  "languages": [
+    "en",
+    "it",
+    "fr",
+    "de",
+    "es"
+  ],
+  "sources": [
+    {
+      "source_id": "091-sh2-release",
+      "url": "https://gamefaqs.gamespot.com/ps2/437029-silent-hill-2/data",
+      "title": "Silent Hill 2 — release data",
+      "publisher": "GameFAQs",
+      "accessed_at": "2026-10-30",
+      "scope": "La scheda indicizzata collega il 25 settembre 2001 alla versione statunitense SLUS-20228.",
+      "limitation": "Fonte secondaria di catalogazione. Non prova da sola la distinzione fra spedizione e arrivo nei singoli negozi; alcune ricostruzioni meno recenti riportano il 24. Non inserito un giorno nel testo."
+    },
+    {
+      "source_id": "091-sh2-moby",
+      "url": "https://www.mobygames.com/game/5870/silent-hill-2/releases/",
+      "title": "Silent Hill 2 — releases",
+      "publisher": "MobyGames",
+      "accessed_at": "2026-10-30",
+      "scope": "La tabella indicizzata riscontra Stati Uniti 25 settembre 2001 e Giappone 27 settembre.",
+      "limitation": "La data giapponese non sostituisce quella americana; conservato il giorno dell’INPUT con esplicitazione della regione proposta nell’audit."
+    },
+    {
+      "source_id": "091-sh2-konami",
+      "url": "https://www.konami.com/games/jp/ja/products/silenthill2/",
+      "title": "Silent Hill 2 — scheda giapponese",
+      "publisher": "Konami",
+      "accessed_at": "2026-10-30",
+      "scope": "La pagina ufficiale indica il 27 settembre 2001 in Giappone.",
+      "limitation": "Usata per distinguere regioni. La pagina europea corrente riporta il 21 novembre, mentre altri cataloghi il 23: nessuna di queste date viene importata come data americana."
+    },
+    {
+      "source_id": "091-sh2-remake",
+      "url": "https://www.konami.com/games/us/en/topics/2779/",
+      "title": "Silent Hill 2 remake — comunicato del 29 gennaio 2025",
+      "publisher": "Konami",
+      "accessed_at": "2026-10-30",
+      "scope": "Il comunicato successivo all’uscita conferma il lancio dell’8 ottobre 2024 su PlayStation 5 e PC.",
+      "limitation": "Nessun nuovo dato commerciale del remake importato nel testo."
+    },
+    {
+      "source_id": "091-sh2-film",
+      "url": "https://www.cineverse.com/now-playing/",
+      "title": "Now Playing — Return to Silent Hill",
+      "publisher": "Cineverse",
+      "accessed_at": "2026-10-30",
+      "scope": "Il film compare fra i titoli disponibili con invito alla visione, confermando che non si tratta più soltanto di un annuncio.",
+      "limitation": "Il testo conserva il solo anno 2026 fornito nell’INPUT. Il comunicato del 18 giugno 2025 annunciava il 23 gennaio 2026: la sola data programmata non sarebbe prova di uscita effettiva."
+    },
+    {
+      "source_id": "091-sh2-film-site",
+      "url": "https://returntosilenthillmovie.com/",
+      "title": "Return to Silent Hill — sito ufficiale",
+      "publisher": "Cineverse",
+      "accessed_at": "2026-10-30",
+      "scope": "Letto il sito ufficiale con il film e il riferimento al 2026, insieme alla disponibilità riscontrata su Cineverse.",
+      "limitation": "Le formule promozionali di prenotazione home video non sono state confuse con un futuro debutto cinematografico."
+    },
+    {
+      "source_id": "091-ico-yoshida",
+      "url": "https://blog.playstation.com/2022/11/02/shuhei-yoshida-recommends-10-games-from-the-playstation-plus-premium-classics-catalog/",
+      "title": "Shuhei Yoshida recommends 10 games from the PlayStation Plus Premium Classics catalog",
+      "publisher": "PlayStation Blog / Shuhei Yoshida, 2 novembre 2022",
+      "accessed_at": "2026-10-30",
+      "scope": "Letta la sezione Ico: primo gioco diretto da Ueda, video preparato per mesi e decisione di formare il gruppo di produzione.",
+      "limitation": "Non ricavata una data precisa di sviluppo dal ricordo. La frase non afferma che tutti i mesi del video siano necessariamente successivi all’assunzione."
+    },
+    {
+      "source_id": "091-ico-ueda",
+      "url": "https://blog.playstation.com/archive/2010/09/17/fumito-ueda-interview/",
+      "title": "Fumito Ueda Interview",
+      "publisher": "PlayStation Blog, 17 settembre 2010",
+      "accessed_at": "2026-10-30",
+      "scope": "Letto il passaggio in cui Ueda descrive le vedute profonde previste per Ico e Shadow of the Colossus.",
+      "limitation": "L’intervista riguarda anche le riedizioni HD. Non importati annunci o previsioni su altri progetti presenti nell’introduzione."
+    },
+    {
+      "source_id": "091-ico-sony",
+      "url": "https://sony.mediaroom.com/2011-09-27-The-ICO-Shadow-of-the-Colossus-Collection-Arrives-in-Full-HD-Exclusively-on-PlayStation-3",
+      "title": "The ICO & Shadow of the Colossus Collection Arrives in Full HD",
+      "publisher": "Sony Computer Entertainment America, 27 settembre 2011",
+      "accessed_at": "2026-10-30",
+      "scope": "Il comunicato ricorda il debutto originale nordamericano nell’autunno 2001.",
+      "limitation": "Non specifica il giorno e non risolve da solo il conflitto 24/25 settembre; la data del comunicato riguarda la raccolta PS3, non l’originale."
+    },
+    {
+      "source_id": "091-ico-gamefaqs",
+      "url": "https://gamefaqs.gamespot.com/ps2/367472-ico/data/1000",
+      "title": "ICO — release data",
+      "publisher": "GameFAQs",
+      "accessed_at": "2026-10-30",
+      "scope": "La tabella indicizzata riporta 24 settembre 2001 per SCUS-97113, edizione statunitense.",
+      "limitation": "Dato secondario in conflitto con il 25 dell’INPUT e di altri cataloghi. Non interpretato automaticamente come spedizione."
+    },
+    {
+      "source_id": "091-ico-moby",
+      "url": "https://www.mobygames.com/game/5158/ico/",
+      "title": "Ico",
+      "publisher": "MobyGames",
+      "accessed_at": "2026-10-30",
+      "scope": "La scheda indicizzata indica il 24 settembre 2001.",
+      "limitation": "Fonte secondaria; non sostituisce un documento contemporaneo sulla disponibilità effettiva nei negozi."
+    },
+    {
+      "source_id": "091-ico-gamespot",
+      "url": "https://www.gamespot.com/games/ico/",
+      "title": "ICO",
+      "publisher": "GameSpot",
+      "accessed_at": "2026-10-30",
+      "scope": "La scheda consultata indica First released: 24 settembre 2001.",
+      "limitation": "Il dato concorda con due cataloghi ma non documenta la differenza tra 24 e 25."
+    },
+    {
+      "source_id": "091-ico-25",
+      "url": "https://www.pushsquare.com/games/ps2/ico",
+      "title": "ICO — game profile",
+      "publisher": "Push Square",
+      "accessed_at": "2026-10-30",
+      "scope": "La scheda riporta 25 settembre 2001 in Nord America.",
+      "limitation": "Dato secondario, con richiamo a Wikipedia; documenta la divergenza, non una prova indipendente più forte."
+    },
+    {
+      "source_id": "091-aa-original",
+      "url": "https://www.nintendo.com/jp/topics/article/f141655c-c8da-11e7-8cda-063b7ac45a6d",
+      "title": "Riepilogo della serie Ace Attorney in occasione di Ace Attorney 4 per 3DS",
+      "publisher": "Nintendo, 22 novembre 2017",
+      "accessed_at": "2026-10-30",
+      "scope": "La cronologia ufficiale indica il 12 ottobre 2001 per Gyakuten Saiban su Game Boy Advance e il 15 settembre 2005 per il rifacimento DS giapponese.",
+      "limitation": "Date giapponesi, non internazionali."
+    },
+    {
+      "source_id": "091-aa-europe",
+      "url": "https://www.nintendo.com/en-gb/Games/Nintendo-DS/Phoenix-Wright-Ace-Attorney-272222.html",
+      "title": "Phoenix Wright Ace Attorney — Nintendo DS",
+      "publisher": "Nintendo UK",
+      "accessed_at": "2026-10-30",
+      "scope": "La scheda ufficiale riporta il 31 marzo 2006, confermando che l’uscita europea DS non appartiene al 2005.",
+      "limitation": "Nel testo usato il solo anno 2006 per chiarire la frase originale; non aggiunte altre informazioni promozionali."
+    },
+    {
+      "source_id": "091-aa-ios-jp",
+      "url": "https://dengekionline.com/elem/000/000/455/455290/",
+      "title": "Gyakuten Saiban 123 HD — disponibilità iOS",
+      "publisher": "Dengeki Online, 7 febbraio 2012; resoconto dell’annuncio Capcom",
+      "accessed_at": "2026-10-30",
+      "scope": "L’articolo contemporaneo presenta la disponibilità iOS dal 7 febbraio 2012.",
+      "limitation": "Non attribuisce la stessa uscita ad Android. È un resoconto contemporaneo di un annuncio di disponibilità, non una pagina Capcom direttamente ospitata."
+    },
+    {
+      "source_id": "091-aa-mobile-archive",
+      "url": "https://www.4gamer.net/games/146/G014689/index_news.html",
+      "title": "Gyakuten Saiban 123 HD — archivio notizie",
+      "publisher": "4Gamer",
+      "accessed_at": "2026-10-30",
+      "scope": "L’archivio contiene la notizia di uscita iOS del 7 febbraio 2012 e la promozione Capcom dell’agosto 2012 per iOS e Android.",
+      "limitation": "L’intestazione della scheda riporta 27 febbraio, in contraddizione con la notizia contemporanea del 7. La data del titolo della notizia e il riscontro Dengeki prevalgono su quell’intestazione."
+    },
+    {
+      "source_id": "091-aa-android",
+      "url": "https://www.inside-games.jp/article/2012/08/20/59067.html?from=image-page-title",
+      "title": "Promozione estiva Capcom per Gyakuten Saiban 123 HD",
+      "publisher": "Inside Games, 20 agosto 2012; comunicazione Capcom",
+      "accessed_at": "2026-10-30",
+      "scope": "La notizia documenta che l’edizione Android era già disponibile in Giappone nel 2012.",
+      "limitation": "Sostiene l’anno, non il giorno iniziale. Non usato il 7 febbraio di iOS né un aggiornamento del 2015 come lancio Android."
+    },
+    {
+      "source_id": "091-aa-ios-west",
+      "url": "https://news.capcomusa.com/lets/browse/phoenix-wright-ace-attorney-trilogy-hd-is-out-now-in-app-store",
+      "title": "Phoenix Wright: Ace Attorney Trilogy HD is out now in App Store",
+      "publisher": "Capcom USA, 30 maggio 2013",
+      "accessed_at": "2026-10-30",
+      "scope": "Comunicato di disponibilità occidentale su iOS, a conferma del 30 maggio 2013.",
+      "limitation": "Distinte la versione mobile HD e la successiva raccolta per Nintendo 3DS."
+    },
+    {
+      "source_id": "091-vt2-sega",
+      "url": "https://powersmash4.sega.jp/others/about.html",
+      "title": "Power Smash — storia della serie",
+      "publisher": "Sega",
+      "accessed_at": "2026-10-30",
+      "scope": "Cronologia ufficiale: Power Smash 2 in arcade nell’ottobre 2001; Dreamcast giapponese il 15 novembre 2001 e PlayStation 2 giapponese il 7 novembre 2002.",
+      "limitation": "Conferma la finestra 2001–2002 e impone di distinguere piattaforme e regioni. Non trasforma il 23 ottobre dell’INPUT in giorno arcade giapponese. Non importata una discutibile generalizzazione della pagina su World Tour."
+    },
+    {
+      "source_id": "091-gta-original",
+      "url": "https://web.archive.org/web/20011113185851/http://www.rockstargames.com/GrandTheftAuto3/html/news.html",
+      "title": "Grand Theft Auto III — news, 23 ottobre 2001",
+      "publisher": "Rockstar Games; copia Internet Archive del 13 novembre 2001",
+      "accessed_at": "2026-10-30",
+      "scope": "Scaricata e letta la pagina originale archiviata. La notizia del 23 ottobre dichiara IN STORES NOW e l’arrivo sugli scaffali in quel momento. È la prova contemporanea usata per conservare il 23 come disponibilità al pubblico.",
+      "limitation": "Il recupero è avvenuto con il suffisso id_ della stessa cattura. Nessuna data di annuncio o spedizione viene sostituita alla disponibilità descritta nella notizia."
+    },
+    {
+      "source_id": "091-gta-current",
+      "url": "https://www.rockstargames.com/games/grandtheftauto3?m=wap",
+      "title": "Grand Theft Auto III — scheda corrente",
+      "publisher": "Rockstar Games",
+      "accessed_at": "2026-10-30",
+      "scope": "La scheda retrospettiva riporta 22 ottobre 2001.",
+      "limitation": "Il dato diverge dall’annuncio contemporaneo di presenza nei negozi del 23. Per la richiesta dell’utente sulla disponibilità pubblica prevale la pagina del 2001; la divergenza resta documentata."
+    },
+    {
+      "source_id": "091-gta-npd",
+      "url": "https://ir.take2games.com/static-files/bea5ae29-d8bf-4f27-bf34-b0acb37bda29",
+      "title": "Grand Theft Auto III — tenth anniversary announcement",
+      "publisher": "Take-Two / Rockstar Games, 13 ottobre 2011",
+      "accessed_at": "2026-10-30",
+      "scope": "Il comunicato attribuisce a NPD il primato del 2001 nelle vendite al dettaglio statunitensi di giochi per console.",
+      "limitation": "Corretto l’ambito troppo ampio dell’INPUT: non un primato mondiale di ogni videogioco. Il comunicato celebrativo usa il 22 ottobre; tale ricorrenza non annulla la notizia originale del 23."
+    },
+    {
+      "source_id": "091-gta-sales",
+      "url": "https://www.sec.gov/Archives/edgar/data/946581/000104746908003471/a2184226zex-99_1.htm",
+      "title": "Take-Two Interactive Software — presentazione agli investitori, marzo 2008",
+      "publisher": "Take-Two; documento depositato presso SEC",
+      "accessed_at": "2026-10-30",
+      "scope": "La diapositiva 12 riporta 14,5 milioni di unità per Grand Theft Auto III. Usato come totale storico del marzo 2008, non come aggiornamento del 2026.",
+      "limitation": "La tabella usa una cifra arrotondata. Il testo dice 14,5 milioni, non inventa una cifra esatta ulteriore né trasforma il dato in una misura di vendite odierne."
+    },
+    {
+      "source_id": "091-gta-remaster",
+      "url": "https://www.rockstargames.com/intl/newswire/article/25ak3481oa1384/grand-theft-auto-the-trilogy-the-definitive-edition-now-available",
+      "title": "Grand Theft Auto: The Trilogy — The Definitive Edition now available",
+      "publisher": "Rockstar Games, 11 novembre 2021",
+      "accessed_at": "2026-10-30",
+      "scope": "Comunicato di disponibilità del remaster del 2021, già menzionato nell’INPUT.",
+      "limitation": "La ricorrenza originale citata nel comunicato non viene usata per sovrascrivere la prova contemporanea del 2001."
+    },
+    {
+      "source_id": "091-pikmin-release",
+      "url": "https://www.nintendo.co.jp/ngc/before/n2005_b.html",
+      "title": "GameCube — archivio software",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "L’archivio ufficiale indica Pikmin il 26 ottobre 2001 in Giappone.",
+      "limitation": "La regione è resa esplicita nella proposta di metadati; il catalogo originale rimane invariato."
+    },
+    {
+      "source_id": "091-thps3-mac",
+      "url": "https://www.mactech.com/2003/01/31/aspyr-ships-tony-hawks-pro-skater-3/",
+      "title": "Aspyr ships Tony Hawk’s Pro Skater 3",
+      "publisher": "MacTech, 31 gennaio 2003; comunicazione Aspyr",
+      "accessed_at": "2026-10-30",
+      "scope": "La notizia contemporanea documenta la versione Mac nel gennaio 2003, correggendo l’inclusione fra le versioni del 2002 nell’INPUT.",
+      "limitation": "La formulazione ships non viene usata per imporre un giorno di disponibilità. Il testo conserva soltanto l’anno 2003."
+    },
+    {
+      "source_id": "091-thps3-mac-catalog",
+      "url": "https://www.mobygames.com/game/5279/tony-hawks-pro-skater-3/releases/",
+      "title": "Tony Hawk’s Pro Skater 3 — releases",
+      "publisher": "MobyGames",
+      "accessed_at": "2026-10-30",
+      "scope": "La scheda delle edizioni colloca la versione Mac americana nel gennaio 2003 e quella per mercati germanofoni nel maggio 2003.",
+      "limitation": "Riscontro secondario dell’anno; non aggiunta una data uniforme mondiale."
+    },
+    {
+      "source_id": "091-n64-end",
+      "url": "https://www.nintendolife.com/features/talking-point-how-does-switchs-year-7-compare-to-previous-nintendo-consoles",
+      "title": "How Does Switch’s Year 7 Compare To Previous Nintendo Consoles?",
+      "publisher": "Nintendo Life",
+      "accessed_at": "2026-10-30",
+      "scope": "La ricostruzione distingue il termine commerciale di Nintendo 64 per regione e riporta date del 2003, incompatibili con una semplice cessazione globale tre mesi prima del gioco del 2002.",
+      "limitation": "Non trovata una prova primaria dell’intervallo di tre mesi. Rimosso quell’intervallo indimostrato; non sostituito con un’altra data di cessazione presunta."
+    },
+    {
+      "source_id": "091-thps3-metacritic",
+      "url": "https://www.metacritic.com/game/tony-hawks-pro-skater-3/",
+      "title": "Tony Hawk’s Pro Skater 3 — reviews",
+      "publisher": "Metacritic",
+      "accessed_at": "2026-10-30",
+      "scope": "La pagina della versione PlayStation 2 riporta 97; riscontrato il punteggio associato al confronto già presente nell’INPUT.",
+      "limitation": "Il giudizio critico è attribuito all’aggregatore e alle selezioni del settore, non formulato come superlativo editoriale oggettivo."
+    },
+    {
+      "source_id": "091-thps3-remake",
+      "url": "https://news.blizzard.com/en-gb/article/24223573/tony-hawks-pro-skater-3-4-available-now",
+      "title": "Tony Hawk’s Pro Skater 3 + 4 — Available Now",
+      "publisher": "Activision Blizzard / Dan Noel, 2025",
+      "accessed_at": "2026-10-30",
+      "scope": "Il comunicato dell’editore dichiara il remake effettivamente disponibile nel 2025.",
+      "limitation": "Usato per distinguere uscita e semplice annuncio. Nessun contenuto nuovo della raccolta importato come meccanica dell’originale."
+    },
+    {
+      "source_id": "091-mgs2-production",
+      "url": "https://www.independent.co.uk/news/science/toby-gard-let-the-battle-begin-559868.html",
+      "title": "Toby Gard: Let the battle begin",
+      "publisher": "Johnny Davis / The Independent, 18 aprile 2004",
+      "accessed_at": "2026-10-30",
+      "scope": "L’articolo riporta per Metal Gear Solid 2 quattro anni di lavoro e oltre cento persone, riscontrando le quantità dell’INPUT.",
+      "limitation": "È una ricostruzione giornalistica, non una dichiarazione di Kojima. Il soggetto principale dell’articolo è Toby Gard; il passaggio su MGS2 è un confronto produttivo circoscritto."
+    },
+    {
+      "source_id": "091-substance-jp",
+      "url": "https://www.konami.com/mg/archive/mgs2_sub/japanese/topics.html",
+      "title": "Metal Gear Solid 2: Substance — topics",
+      "publisher": "Konami",
+      "accessed_at": "2026-10-30",
+      "scope": "La notizia originale del 19 dicembre 2002 dichiara l’avvenuta uscita giapponese di Substance.",
+      "limitation": "Altre righe della pagina hanno refusi nell’anno; usata soltanto la voce di uscita pertinente, senza ricavare una data unica per tutte le piattaforme."
+    },
+    {
+      "source_id": "091-substance-regions",
+      "url": "https://www.mobygames.com/game/7715/metal-gear-solid-2-substance/releases/",
+      "title": "Metal Gear Solid 2: Substance — releases",
+      "publisher": "MobyGames",
+      "accessed_at": "2026-10-30",
+      "scope": "Le tabelle distinguono Xbox nordamericano e PS2 giapponese nel 2002 dalle successive versioni e regioni del 2003.",
+      "limitation": "Usata la finestra 2002–2003, senza scegliere i giorni controversi 3/4 marzo o 4/5 novembre presenti nei cataloghi. Non riprodotta la generalizzazione the following year in each region dell’INPUT."
+    },
+    {
+      "source_id": "091-shinkawa-konami",
+      "url": "https://www.konami.com/mg/archive/mgs2/art/second.html",
+      "title": "The Art of Metal Gear Solid 2 — interview, second segment",
+      "publisher": "Konami; intervista a Yoji Shinkawa",
+      "accessed_at": "2026-10-30",
+      "scope": "Letti i passaggi sulle immagini di Raiden per collaboratori e pubblicazioni, sugli spazi bianchi e sull’uso di inchiostro, fotocopia e pennello Photoshop.",
+      "limitation": "L’intervista non mostra un anno esplicito: non è stata datata automaticamente al 2001 per coincidenza con il gioco."
+    },
+    {
+      "source_id": "091-shinkawa-leftalive",
+      "url": "https://blog.playstation.com/2019/02/11/inside-the-artwork-an-interview-with-yoji-shinkawa/",
+      "title": "Inside the Artwork: An Interview with Yoji Shinkawa",
+      "publisher": "Justin Massongill / PlayStation Blog, 11 febbraio 2019",
+      "accessed_at": "2026-10-30",
+      "scope": "Letti i passaggi su tre profili, Leonid, riscontri di Shinji Hashimoto e Toshifumi Nabeshima, modelli, movimenti, equipaggiamento e strumenti di disegno.",
+      "limitation": "Le due card finali riguardano Left Alive e questa intervista del 2019, non una testimonianza contemporanea alla produzione di MGS2. Nessun numero supplementare di revisioni aggiunto."
+    }
+  ],
+  "decisions": [
+    {
+      "target_id": "wikipedia-1955720",
+      "problem": "Le riedizioni, il remake e il film richiedevano una distinzione fra regioni e annunci futuri; i superlativi non avevano attribuzione.",
+      "conclusion": "Dicembre 2001 per Xbox è esplicitamente nordamericano. Remake 8 ottobre 2024 e film del 2026 sono opere pubblicate, con disponibilità verificata. La reputazione è espressa attraverso critica e selezioni, conservando tutti gli aspetti lodati e i dati del gioco originale.",
+      "source_ids": [
+        "091-sh2-release",
+        "091-sh2-moby",
+        "091-sh2-konami",
+        "091-sh2-remake",
+        "091-sh2-film",
+        "091-sh2-film-site"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "workbook-09-24-ico",
+      "problem": "Il giorno 25 dell’INPUT diverge dal 24 nei cataloghi dettagliati; il ricordo del prototipo non deve acquistare una cronologia più precisa della testimonianza.",
+      "conclusion": "La ricerca primaria e comparata conferma la finestra settembre/autunno 2001 in Nord America ma non risolve documentalmente il singolo giorno. Proposta una collocazione a settembre 2001 con giorno nullo. Conservati gli originali e l’ID contenente 09-24. Nessun giorno aggiunto al testo; rimane esplicito il limite delle prove, senza inventare una distinzione spedizione/negozio. Il ricordo del video resta attribuito a Yoshida.",
+      "source_ids": [
+        "091-ico-yoshida",
+        "091-ico-ueda",
+        "091-ico-sony",
+        "091-ico-gamefaqs",
+        "091-ico-moby",
+        "091-ico-gamespot",
+        "091-ico-25"
+      ],
+      "text_applied": true,
+      "exact_day_verified": false
+    },
+    {
+      "target_id": "wikipedia-1983945",
+      "problem": "La frase sul DS poteva far ricadere anche l’Europa nel 2005; la card sulle raccolte assegnava a iOS e Android la stessa data del 7 febbraio 2012.",
+      "conclusion": "Precisata l’Europa DS nel 2006. Conservato il 7 febbraio 2012 per iOS giapponese e usato il solo anno 2012 per Android, già disponibile entro agosto. Distinte tutte le edizioni mobili, 3DS e del 2019; la localizzazione negli Stati Uniti è riferita alla versione inglese.",
+      "source_ids": [
+        "091-aa-original",
+        "091-aa-europe",
+        "091-aa-ios-jp",
+        "091-aa-mobile-archive",
+        "091-aa-android",
+        "091-aa-ios-west"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-1501508",
+      "problem": "I nomi regionali e la finestra 2001–2002 potevano essere applicati in modo indistinto a tutte le piattaforme.",
+      "conclusion": "Tennis 2K2 è il titolo Dreamcast nordamericano, Sega Sports Tennis quello PlayStation 2 nordamericano, Power Smash 2 quello giapponese. Conservati tutti gli otto tennisti, slice, doppio misto, Hitmaker e Acclaim. La fonte Sega conferma la distribuzione su più piattaforme tra 2001 e 2002.",
+      "source_ids": [
+        "091-vt2-sega"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-362641",
+      "problem": "I comunicati celebrativi indicano 22 ottobre, mentre l’INPUT indica 23. Il primato commerciale non specificava mercato e il totale complessivo non aveva riferimento temporale.",
+      "conclusion": "Conservato 23 ottobre 2001 sulla base della notizia originale Rockstar IN STORES NOW e della disponibilità sugli scaffali descritta allora. Primato limitato al mercato statunitense dei giochi per console secondo NPD. Totale complessivo espresso come 14,5 milioni al marzo 2008; circa 11,6 milioni PS2 e posizione fra i titoli più venduti della piattaforma conservati. Non corretta la data in 22 sulla sola base di anniversari posteriori.",
+      "source_ids": [
+        "091-gta-original",
+        "091-gta-current",
+        "091-gta-npd",
+        "091-gta-sales",
+        "091-gta-remaster"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-879817",
+      "problem": "La versione Mac era collocata nel 2002; la parentesi Nintendo 64 assumeva una cessazione mondiale tre mesi prima, senza riscontro; il remake del 2025 richiedeva verifica di effettiva uscita.",
+      "conclusion": "Mac corretto al 2003. Eliminato l’intervallo indimostrato di tre mesi, conservando ultima uscita ufficiale Nintendo 64 e unico gioco del 2002. Il remake è uscito nel 2025. Riscontrato il punteggio PS2 di 97 e mantenuto il confronto attribuito a Metacritic.",
+      "source_ids": [
+        "091-thps3-mac",
+        "091-thps3-mac-catalog",
+        "091-n64-end",
+        "091-thps3-metacritic",
+        "091-thps3-remake"
+      ],
+      "text_applied": true,
+      "unverified_claim_removed": "Nintendo 64 discontinued three months prior"
+    },
+    {
+      "target_id": "wikipedia-595618",
+      "problem": "Substance era descritto come uscito l’anno seguente in ogni regione per tutte le piattaforme; quattro anni e oltre cento persone richiedevano un riscontro; i temi successivi potevano diventare una previsione attribuita a Kojima.",
+      "conclusion": "Substance distribuito nel 2002–2003 secondo piattaforma e regione. Conservate le quantità produttive già nell’INPUT, riscontrate in una ricostruzione del 2004 e non trasformate in citazione di Kojima. La lettura su post-verità e media sintetici è attribuita alla critica successiva. Conservati memetica, intelligenza artificiale dei nemici in squadra, mira e ambienti su più livelli.",
+      "source_ids": [
+        "091-mgs2-production",
+        "091-substance-jp",
+        "091-substance-regions"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "feature-yoji-shinkawa-design",
+      "problem": "La feature mescola una fonte Konami non datata e un’intervista del 2019 su Left Alive, con rischio di attribuire tutto alla produzione di MGS2.",
+      "conclusion": "La prima intervista resta attribuita a Konami e The Art of Metal Gear Solid 2 senza anno inventato. Le card su Leonid, Hashimoto, Nabeshima, modelli e movimento identificano Left Alive e l’intervista PlayStation del 2019. Conservati strumenti, passaggi e funzioni delle immagini.",
+      "source_ids": [
+        "091-shinkawa-konami",
+        "091-shinkawa-leftalive"
+      ],
+      "text_applied": true
+    }
+  ],
+  "metadata_proposals": [
+    {
+      "target_id": "wikipedia-1955720",
+      "original_year": 2001,
+      "original_date": {
+        "month": 9,
+        "day": 25,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed_date": {
+        "year": 2001,
+        "month": 9,
+        "day": 25,
+        "precision": "day",
+        "region": "US"
+      },
+      "event_semantics": "release",
+      "source_ids": [
+        "091-sh2-release",
+        "091-sh2-moby"
+      ],
+      "reason": "Il giorno già presente nell’INPUT è associato alla release statunitense nei cataloghi dettagliati consultati; non esteso al Giappone."
+    },
+    {
+      "target_id": "workbook-09-24-ico",
+      "original_year": 2001,
+      "original_date": {
+        "month": 9,
+        "day": 25,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed_date": {
+        "year": 2001,
+        "month": 9,
+        "day": null,
+        "precision": "month",
+        "region": "North America"
+      },
+      "event_semantics": "release",
+      "source_ids": [
+        "091-ico-sony",
+        "091-ico-gamefaqs",
+        "091-ico-moby",
+        "091-ico-gamespot",
+        "091-ico-25"
+      ],
+      "reason": "Il confronto non consente di attestare il singolo giorno 24/25 con una prova contemporanea di disponibilità. Mese e regione sono comuni ai riscontri; giorno nullo, non giorno 1."
+    },
+    {
+      "target_id": "wikipedia-1983945",
+      "original_year": 2001,
+      "original_date": {
+        "month": 10,
+        "day": 12,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed_date": {
+        "year": 2001,
+        "month": 10,
+        "day": 12,
+        "precision": "day",
+        "region": "JP"
+      },
+      "event_semantics": "release",
+      "source_ids": [
+        "091-aa-original"
+      ],
+      "reason": "Il 12 ottobre 2001 è l’uscita originale giapponese per Game Boy Advance; la versione DS internazionale ha una cronologia distinta."
+    },
+    {
+      "target_id": "wikipedia-362641",
+      "original_year": 2001,
+      "original_date": {
+        "month": 10,
+        "day": 23,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed_date": {
+        "year": 2001,
+        "month": 10,
+        "day": 23,
+        "precision": "day",
+        "region": "North America"
+      },
+      "event_semantics": "release",
+      "source_ids": [
+        "091-gta-original"
+      ],
+      "reason": "Conservare il 23 ottobre: la pagina Rockstar contemporanea documenta l’arrivo nei negozi quel giorno. Il 22 delle ricorrenze posteriori non prevale sulla disponibilità richiesta dall’utente."
+    },
+    {
+      "target_id": "wikipedia-581020",
+      "original_year": 2001,
+      "original_date": {
+        "month": 10,
+        "day": 26,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed_date": {
+        "year": 2001,
+        "month": 10,
+        "day": 26,
+        "precision": "day",
+        "region": "JP"
+      },
+      "event_semantics": "release",
+      "source_ids": [
+        "091-pikmin-release"
+      ],
+      "reason": "La data del primo Pikmin è giapponese, come attesta l’archivio Nintendo."
+    }
+  ],
+  "expansion_assessments": [
+    {
+      "target_id": "wikipedia-1955720",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Opera centrale della serie Silent Hill e dell’orrore psicologico. Le tre card coprono trama, edizioni, influenze e ricezione, ma non una situazione concreta di gioco."
+    },
+    {
+      "target_id": "workbook-09-24-ico",
+      "main_cards": 6,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 0,
+      "rationale": "Avventura importante per il rapporto fra spazio, comandi e relazione fra i protagonisti. Sei card principali già presenti; nessuna espansione necessaria per la quota."
+    },
+    {
+      "target_id": "wikipedia-1983945",
+      "main_cards": 5,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 0,
+      "rationale": "Primo capitolo di Ace Attorney e opera importante nella diffusione occidentale delle visual novel. Cinque card principali già presenti."
+    },
+    {
+      "target_id": "wikipedia-1501508",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 4,
+      "rationale": "Capitolo importante del tennis arcade di Sega e del catalogo Dreamcast. L’unica card descrive novità, tennisti e distribuzione, senza sviluppare come si costruisce e si gioca una partita."
+    },
+    {
+      "target_id": "wikipedia-362641",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 1,
+      "rationale": "Passaggio fondamentale della serie alla città interamente tridimensionale, con rilevanza commerciale e influenza sul mondo aperto già documentate nel materiale."
+    },
+    {
+      "target_id": "wikipedia-581020",
+      "main_cards": 2,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 3,
+      "rationale": "Primo episodio della serie Pikmin, con un sistema originale di comando delle creature. Due sole card principali richiedono altri approfondimenti autonomi."
+    },
+    {
+      "target_id": "crash-wrath-of-cortex-2001",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "required_main_cards": null,
+      "missing_cards": 0,
+      "rationale": "Capitolo della serie Crash già descritto attraverso struttura, casse, veicoli e ritorni nei livelli. Non applicata automaticamente la quota a ogni seguito presente nel catalogo."
+    },
+    {
+      "target_id": "wikipedia-313907",
+      "main_cards": 2,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 3,
+      "rationale": "Terzo episodio principale di una serie centrale nella strategia a turni. Le due card riassumono autori e attività ma lasciano spazio a spiegazioni distinte di decisioni e produzione."
+    },
+    {
+      "target_id": "wikipedia-879817",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Capitolo importante della serie di skateboard, con gioco online su PlayStation 2 e forte ricezione critica. Le tre card si concentrano su piattaforme, risultati e remake: manca una situazione concreta sulla tavola."
+    },
+    {
+      "target_id": "wikipedia-595618",
+      "main_cards": 3,
+      "feature_cards": 4,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Capitolo principale di Metal Gear con rilevanza narrativa, tecnica e critica. Le tre card principali sono distinte dalle quattro della feature Shinkawa e non raggiungono la soglia di cinque."
+    }
+  ],
+  "editorial_review": {
+    "english_first": true,
+    "english_checkpoint": "091-catalog/OUTPUT-091-catalog.json, ramo en; bozza inglese salvata prima dei quattro adattamenti",
+    "summary_word_counts_en": [
+      38,
+      40,
+      39,
+      37,
+      40,
+      38,
+      42,
+      39,
+      40,
+      40
+    ],
+    "feature_summary_word_counts_en": [
+      36
+    ],
+    "fidelity": "Rilette tutte le 37 card nelle cinque lingue. Conservati ogni versione e data sostanziale di Silent Hill 2, gli autori letterari e visivi e gli aspetti della ricezione; sei argomenti e attribuzioni di Ico; personaggi, casi, sette persone, dieci mesi e tutte le raccolte di Ace Attorney; otto tennisti e nomi regionali di Virtua Tennis 2; 23 persone, luoghi, isole, missioni, versioni e cifre di GTA III; trenta giorni, varietà dei Pikmin e ritorni su Wii e Switch; quattro maschere, tipologie di casse, Death Routes, Atlasphere, Coco e prove a tempo di Crash; 4000 a.C., autori e attività di Civilization III; piattaforme, dati e remake di Pro Skater 3; capitoli, personaggi, organizzazioni, temi, meccaniche, musicisti e riedizioni di MGS2; tutti i quattro passaggi della feature Shinkawa. Nessuna card aggiunta, eliminata, divisa, unita o riordinata.",
+    "naturalness": "Sommari inglesi di 37–42 parole, feature di 36. Ogni card possiede un titolo specifico. Paragrafi brevi dentro le card lunghe per versioni, processi e ricezione. Riletti gli adattamenti per sintassi e lessico propri delle quattro lingue; corretta una costruzione relativa tedesca nell’elenco dei sistemi di MGS2 e reso esplicito il riferimento alle missioni nel francese di GTA III. I giudizi di valore sono attribuiti alla critica, senza superlativi presentati come fatti universali.",
+    "expansions": "Sette opere selezionate richiedono complessivamente diciassette nuove card principali in proposte separate complete nelle cinque lingue. Ico ha già sei card e Ace Attorney cinque. Crash non riceve automaticamente una quota minima solo perché appartiene a una serie. Le quattro card della feature MGS2 restano separate dalle tre principali.",
+    "limits": "La ricerca risolve i punti problematici senza attestare ogni frase dell’INPUT con nuove fonti. Nessuna biografia autonoma: autori e Shinkawa sono trattati nei processi dei giochi, non collocati sulla data di nascita. Il giorno nordamericano di Ico resta non dimostrato fra 24 e 25: proposta precisione mensile, non una correzione intuitiva. Le fonti di catalogazione restano distinte dalle prove primarie di disponibilità. INPUT, TEMPLATE, catalogo, fonti e diritti originari, ID, media e date strutturate non modificati. Nessun filmato dichiarato visionato."
+  },
+  "source_artifacts": [
+    {
+      "filename": "gta3-original-news.html",
+      "sha256": "bf0a97b2a2a471d996163d6ba676619fb93c848eb60fdae855d9cf84c2b85f69",
+      "bytes": 5058,
+      "observed_scope": "Pagina Rockstar archiviata il 13 novembre 2001, notizia 10/23 IN STORES NOW e relativo paragrafo di disponibilità.",
+      "included_in_package": false
+    }
+  ],
+  "validation": {
+    "valid": true,
+    "batch_id": "091-catalog",
+    "completed": true,
+    "entry_count": 10,
+    "card_count_per_language": 37,
+    "language_count": 5,
+    "translated_card_count": 185,
+    "entry_card_counts": {
+      "wikipedia-1955720": 3,
+      "workbook-09-24-ico": 6,
+      "wikipedia-1983945": 5,
+      "wikipedia-1501508": 1,
+      "wikipedia-362641": 4,
+      "wikipedia-581020": 2,
+      "crash-wrath-of-cortex-2001": 4,
+      "wikipedia-313907": 2,
+      "wikipedia-879817": 3,
+      "wikipedia-595618": 7
+    },
+    "issue_counts": {
+      "wikipedia-1955720": 1,
+      "workbook-09-24-ico": 0,
+      "wikipedia-1983945": 0,
+      "wikipedia-1501508": 1,
+      "wikipedia-362641": 1,
+      "wikipedia-581020": 1,
+      "crash-wrath-of-cortex-2001": 0,
+      "wikipedia-313907": 1,
+      "wikipedia-879817": 1,
+      "wikipedia-595618": 1
+    },
+    "summary_checks": [
+      {
+        "entry_id": "wikipedia-1955720",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "workbook-09-24-ico",
+        "feature_id": null,
+        "english_summary_words": 40
+      },
+      {
+        "entry_id": "wikipedia-1983945",
+        "feature_id": null,
+        "english_summary_words": 39
+      },
+      {
+        "entry_id": "wikipedia-1501508",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "wikipedia-362641",
+        "feature_id": null,
+        "english_summary_words": 40
+      },
+      {
+        "entry_id": "wikipedia-581020",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "crash-wrath-of-cortex-2001",
+        "feature_id": null,
+        "english_summary_words": 42
+      },
+      {
+        "entry_id": "wikipedia-313907",
+        "feature_id": null,
+        "english_summary_words": 39
+      },
+      {
+        "entry_id": "wikipedia-879817",
+        "feature_id": null,
+        "english_summary_words": 40
+      },
+      {
+        "entry_id": "wikipedia-595618",
+        "feature_id": null,
+        "english_summary_words": 40
+      },
+      {
+        "entry_id": "wikipedia-595618",
+        "feature_id": "feature-yoji-shinkawa-design",
+        "english_summary_words": 36
+      }
+    ],
+    "editorial_review": [],
+    "failures": []
+  },
+  "output_sha256": "aad745f1383e5c942500c0ae05fd40eaf8dad701dd9f049355ddd71495424db8"
+}

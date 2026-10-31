@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "locale": "es",
+  "review": "Binding of exact independently approved complete candidate members; no new linguistic review substituted. Every full candidate SHA and independent PASS receipt checked, all current English five fields and translation hashes validated.",
+  "entries": [
+    {
+      "entry_id": "workbook-06-06-the-legend-of-zelda-link-s-awakening",
+      "source_fields_sha256": "87012f39e67a86cf0432e0fb52bb6b3a7348490d486946abbc29ee114d7183b2",
+      "translation_sha256": "d3d0cf05451b54b02a1bfb03ee613ccc50a67c99b3b277fb574102f3033ebf47",
+      "independent_peer": "build/research/links-awakening1993-four-language-completion/independent-all-fields-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "33441f7009b0392170b026c787a88b2de00f4a24556caa045a3237cb6f62e7d2",
+      "candidate_path": "build/research/links-awakening1993-four-language-completion/links-awakening-four-language-final-natural-peer-units-candidate.json",
+      "candidate_sha256": "7561122f2a876145d6988f0fd49e24235a078cc72b7c8f521d08e1179e71f823"
+    },
+    {
+      "entry_id": "wikipedia-8090",
+      "source_fields_sha256": "11fa3edaa1374f81cbe7366a7ec128b6caad3b695d69b2a9227cbfb2ee82017d",
+      "translation_sha256": "87bbe76a83d6d6ba56bfb499c4c2b5c71cb720afdf128391d7735166fa09a705",
+      "independent_peer": "build/research/day-tentacle1993-four-language-completion/independent-all-fields-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "4829f7795ff0682fdf507f906aa294fdc188be28522983d9e48779264918bea2",
+      "candidate_path": "build/research/day-tentacle1993-four-language-completion/day-tentacle-four-language-final-natural-peer-units-candidate.json",
+      "candidate_sha256": "c356aace2406304dc5b07bacb522231c2336ffca01467a6620fd5491f651a1f0"
+    }
+  ]
+}

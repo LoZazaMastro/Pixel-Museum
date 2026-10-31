@@ -1,0 +1,894 @@
+{
+  "schema": "pixel-museum-editorial-input-v1",
+  "batch_id": "003-catalog",
+  "source_file": "content/catalog.json",
+  "source_sha256": "0b077b3f8628f921ab84574d286f9d9943fb8ae6acb8f136ffadde6e01cae241",
+  "entries": [
+    {
+      "entry_id": "daily-11-25",
+      "kind": "person",
+      "year_context_only": 1962,
+      "date_context_only": {
+        "month": 11,
+        "day": 25,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "Scheduled published Playhub edition. The calendar slot is not asserted as a historical anniversary; the year is the source's historical anchor.",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "Hironobu Sakaguchi",
+        "subtitle": "Hironobu Sakaguchi and the Game as a Journey Built Together",
+        "summary": "Hironobu Sakaguchi, born on 25 November 1962, created Final Fantasy at Square and later founded Mistwalker.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "From Square to Mistwalker",
+            "text": "Hironobu Sakaguchi (born November 25, 1962) is a Japanese game designer, director, producer, and writer. Originally working for Square (later Square Enix) from 1983 to 2003, he departed the company and founded independent studio Mistwalker in 2004. He is known as the creator of the Final Fantasy franchise, in addition to other titles during his time at Square. At Mistwalker, he is known for creating the Blue Dragon and Terra Battle series among several standalone titles like Lost Odyssey, as well as later moving away from home consoles and creating titles for mobile platforms."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "A Title That Becomes a Working Method",
+            "text": "Final Fantasy brought Sakaguchi's name to a wider audience in 1987. Square's Famicom role-playing game combined turn-based battles, character classes, towns and a world that gradually opened to the party. Sakaguchi helped direct and organise the project, with Nobuo Uematsu's music and Yoshitaka Amano's visual work among its defining contributions. The team adapted ideas from computer role-playing games into a journey built for Nintendo's console."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Growing Means Learning to Delegate",
+            "text": "As Final Fantasy grew, Sakaguchi moved from direct development towards supervision and production. Larger projects involved new directors, writers, artists and programmers, with their work requiring coordination across the team. His responsibilities changed alongside the scale of Square's games. Later entries therefore reflect different creative groups, while Sakaguchi's production role helped organise the work needed to bring them together."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "The Technological Leap Requires New Roles",
+            "text": "On Final Fantasy VII, released in 1997, Sakaguchi was producer and Yoshinori Kitase directed. The move to PlayStation brought polygonal characters, pre-rendered backgrounds, computer-generated scenes and CD-ROM storage. Supporting this larger production required coordination across a substantially expanded team. Sakaguchi's role involved the overall project and its narrative direction as Square built a game intended to reach an international audience."
+          },
+          {
+            "card_id": "main:4",
+            "original_index": 4,
+            "heading": "After Square, a Smaller Structure",
+            "text": "Sakaguchi founded Mistwalker in 2004 after leaving Square. The smaller studio worked with outside development teams on projects including the Xbox 360 role-playing games Blue Dragon and Lost Odyssey. Nobuo Uematsu returned as a musical collaborator. This arrangement allowed Sakaguchi to concentrate on concepts, scenarios and overall direction while partner studios handled substantial parts of technical production."
+          },
+          {
+            "card_id": "main:5",
+            "original_index": 5,
+            "heading": "Changing Combat Without Losing the Group",
+            "text": "The Last Story on Wii brought Sakaguchi back to a more direct directing role. Its combat runs in real time, with cover, positioning and abilities that can change the space around the party. Players need to follow what is happening on the field while considering how their companions work together. The characters' relationships remain central to the journey, with the altered battle system giving their cooperation a different form."
+          },
+          {
+            "card_id": "main:6",
+            "original_index": 6,
+            "heading": "Fantasian: more than 150 dioramas",
+            "text": "Fantasian uses photographs of physical dioramas to create its environments. Not counting smaller variations, over 150 dioramas were created by ten companies across Japan. Several of the modellers had never worked on a video game project before, encountering some difficulties creating objects and environments from the illustrations provided. Diorama modeller Tomohiro Yatsubo remembered them modeling their environment \"down to the millimeter\" to properly reflect Sakaguchi's plan. The Quail airship was created by Marbling Fine Arts's Hiroshi Ihara based on the concept of \"a boat with beautiful curves\". LED lights were used in the models as light sources, such as interior lights and fires in the Quail. A notable contributor was Akira Toriyama, with whom Sakaguchi had worked on a number of projects, who submitted a diorama under a pseudonym. As the dioramas took shape, Sakaguchi used them to inform his work on the game's design."
+          }
+        ],
+        "sources": [
+          {
+            "title": "snl.no",
+            "url": "https://snl.no/Hironobu_Sakaguchi",
+            "publisher": "snl.no"
+          },
+          {
+            "title": "apps.apple.com",
+            "url": "https://apps.apple.com/it/iphone/story/id1558958834",
+            "publisher": "apps.apple.com"
+          },
+          {
+            "title": "Hironobu Sakaguchi",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1380908509",
+            "publisher": "English Wikipedia contributors",
+            "license": "Creative Commons Attribution-ShareAlike 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "attribution": "Complete English Wikipedia paragraph; one disclosed full-name clarification in Fantasian; headings supplied editorially."
+          },
+          {
+            "title": "Fantasian",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1362426454",
+            "publisher": "English Wikipedia contributors",
+            "license": "Creative Commons Attribution-ShareAlike 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "attribution": "Adapted from English Wikipedia paragraph28 with a subject-setting sentence from paragraph27, one full-name clarification and one omitted technical clause; all changes recorded in provenance. Heading supplied editorially."
+          }
+        ]
+      },
+      "features": [
+        {
+          "feature_id": "feature-hironobu-sakaguchi-production",
+          "title": "Choosing a story from many hands",
+          "subtitle": "",
+          "summary": "A world built from shared contributions.",
+          "cards": [
+            {
+              "card_id": "feature:feature-hironobu-sakaguchi-production:0",
+              "original_index": 0,
+              "heading": "A proposal crosses the desk",
+              "text": "Tetsuya Nomura recalled staff submitting story proposals for Final Fantasy VI to Sakaguchi and other senior colleagues. Although Nomura worked on monsters and battle visuals, a document he wrote with another employee helped introduce machinery alongside magic. Its ideas included the Magitek walkers in the snow. The setting developed through contributions from people working in different parts of the team."
+            },
+            {
+              "card_id": "feature:feature-hironobu-sakaguchi-production:1",
+              "original_index": 1,
+              "heading": "Shadow belongs to several people",
+              "text": "Nomura contributed Shadow's broad character outline, his dog and an inn scene, while colleagues added further elements. Director Yoshinori Kitase decided that leaving the Floating Continent without waiting could cause the player to lose Shadow permanently. The character's role therefore took shape through both story proposals and a rule that made the player's decision during an escape consequential."
+            }
+          ],
+          "sources": [
+            {
+              "id": "nomura24vi",
+              "title": "FINAL FANTASY VI30th Anniversary Interview",
+              "url": "https://eu.finalfantasy.com/topics/528",
+              "publisher": "Tetsuya Nomura / Square Enix",
+              "source_type": "Primary creator interview, 7 June 2024",
+              "locator": "Staff story proposals and greenlighting; shared Magitek document; Shadow contributions and Kitase's decision",
+              "checked": "2026-10-21",
+              "rights": "Bibliographic reference only; underlying articles, art, images, game footage and recordings retain their respective rights.",
+              "story_paragraphs": [
+                0,
+                1
+              ],
+              "paragraph_locators": {
+                "0": "Nomura responses on responsibilities and which ideas made the cut: Sakaguchi and other key staff; document co-written with another employee",
+                "1": "Nomura responses on Shadow's inn scene, Floating Continent and additions by others; Kitase named as director"
+              }
+            }
+          ]
+        },
+        {
+          "feature_id": "feature-hironobu-sakaguchi-production-team",
+          "title": "Learning what a producer carries",
+          "subtitle": "",
+          "summary": "A world built from shared contributions.",
+          "cards": [
+            {
+              "card_id": "feature:feature-hironobu-sakaguchi-production-team:0",
+              "original_index": 0,
+              "heading": "Learning what a producer carries",
+              "text": "Tetsuya Takahashi recalled leaving the Final Fantasy team during VII to attempt worlds built entirely in three dimensions. Leading a separate group introduced responsibilities he had previously seen Sakaguchi handle. He needed to help inexperienced colleagues, discuss their concerns and keep the project organised while its methods were still developing. The team was learning new tools at the same time as learning how to work together."
+            }
+          ],
+          "sources": [
+            {
+              "id": "iwatasaka11",
+              "title": "Iwata Asks: In Conversation with Takahashi & Sakaguchi",
+              "url": "https://www.nintendo.com/en-gb/Iwata-Asks/Iwata-Asks-In-Conversation-with-Takahashi-Sakaguchi/In-Conversation-with-Takahashi-Sakaguchi/2-Going-Solo/2-Going-Solo-211236.html",
+              "publisher": "Satoru Iwata, Hironobu Sakaguchi and Tetsuya Takahashi / Nintendo",
+              "source_type": "Primary developer roundtable, 2011; parts 2–3 grouped as one publication",
+              "locator": "Going Solo: independent team and 3D management; Empathy for the Staff: experts and hands-on direction",
+              "checked": "2026-10-21",
+              "rights": "Bibliographic reference only; underlying articles, art, images, game footage and recordings retain their respective rights.",
+              "chapter_urls": [
+                "https://www.nintendo.com/en-za/Iwata-Asks/Iwata-Asks-In-Conversation-with-Takahashi-Sakaguchi/In-Conversation-with-Takahashi-Sakaguchi/3-Empathy-for-the-Staff/3-Empathy-for-the-Staff-211278.html"
+              ],
+              "story_paragraphs": [
+                0
+              ],
+              "paragraph_locators": {
+                "0": "Part2 Going Solo: Takahashi leaves the Final Fantasy team during VII; new 3D team and psychological management"
+              },
+              "paragraph_urls": {}
+            },
+            {
+              "id": "iwatasaka11-chapter-2",
+              "title": "Iwata Asks: In Conversation with Takahashi & Sakaguchi / cited chapter",
+              "url": "https://www.nintendo.com/en-za/Iwata-Asks/Iwata-Asks-In-Conversation-with-Takahashi-Sakaguchi/In-Conversation-with-Takahashi-Sakaguchi/3-Empathy-for-the-Staff/3-Empathy-for-the-Staff-211278.html",
+              "publisher": "Satoru Iwata, Hironobu Sakaguchi and Tetsuya Takahashi / Nintendo",
+              "rights": "Bibliographic reference only; underlying articles, art, images, game footage and recordings retain their respective rights.",
+              "publication_group": "iwatasaka11"
+            }
+          ]
+        },
+        {
+          "feature_id": "feature-hironobu-sakaguchi-production-team-art",
+          "title": "Leaving room for another imagination",
+          "subtitle": "",
+          "summary": "A world built from shared contributions.",
+          "cards": [
+            {
+              "card_id": "feature:feature-hironobu-sakaguchi-production-team-art:0",
+              "original_index": 0,
+              "heading": "Leaving room for another imagination",
+              "text": "Discussing his return to everyday direction on The Last Story, Sakaguchi explained that he needed artists to realise the world he imagined. He could describe what he wanted but depended on specialists to draw and develop it. Giving those colleagues room to contribute could bring visual ideas beyond his own. Direct involvement in the project therefore went alongside delegating work to people with different skills."
+            }
+          ],
+          "sources": [
+            {
+              "id": "iwatasaka11",
+              "title": "Iwata Asks: In Conversation with Takahashi & Sakaguchi",
+              "url": "https://www.nintendo.com/en-gb/Iwata-Asks/Iwata-Asks-In-Conversation-with-Takahashi-Sakaguchi/In-Conversation-with-Takahashi-Sakaguchi/2-Going-Solo/2-Going-Solo-211236.html",
+              "publisher": "Satoru Iwata, Hironobu Sakaguchi and Tetsuya Takahashi / Nintendo",
+              "source_type": "Primary developer roundtable, 2011; parts 2–3 grouped as one publication",
+              "locator": "Going Solo: independent team and 3D management; Empathy for the Staff: experts and hands-on direction",
+              "checked": "2026-10-21",
+              "rights": "Bibliographic reference only; underlying articles, art, images, game footage and recordings retain their respective rights.",
+              "chapter_urls": [
+                "https://www.nintendo.com/en-za/Iwata-Asks/Iwata-Asks-In-Conversation-with-Takahashi-Sakaguchi/In-Conversation-with-Takahashi-Sakaguchi/3-Empathy-for-the-Staff/3-Empathy-for-the-Staff-211278.html"
+              ],
+              "story_paragraphs": [
+                0
+              ],
+              "paragraph_locators": {
+                "0": "Part3 Empathy for the Staff: Sakaguchi's day-to-day Last Story role and experts building a world beyond his drawing ability"
+              },
+              "paragraph_urls": {
+                "0": "https://www.nintendo.com/en-za/Iwata-Asks/Iwata-Asks-In-Conversation-with-Takahashi-Sakaguchi/In-Conversation-with-Takahashi-Sakaguchi/3-Empathy-for-the-Staff/3-Empathy-for-the-Staff-211278.html"
+              }
+            },
+            {
+              "id": "iwatasaka11-chapter-2",
+              "title": "Iwata Asks: In Conversation with Takahashi & Sakaguchi / cited chapter",
+              "url": "https://www.nintendo.com/en-za/Iwata-Asks/Iwata-Asks-In-Conversation-with-Takahashi-Sakaguchi/In-Conversation-with-Takahashi-Sakaguchi/3-Empathy-for-the-Staff/3-Empathy-for-the-Staff-211278.html",
+              "publisher": "Satoru Iwata, Hironobu Sakaguchi and Tetsuya Takahashi / Nintendo",
+              "rights": "Bibliographic reference only; underlying articles, art, images, game footage and recordings retain their respective rights.",
+              "publication_group": "iwatasaka11"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entry_id": "daily-08-24",
+      "kind": "person",
+      "year_context_only": 1963,
+      "date_context_only": {
+        "month": 8,
+        "day": 24,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "Scheduled published Playhub edition. The calendar slot is not asserted as a historical anniversary; the year is the source's historical anchor.",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "Hideo Kojima",
+        "subtitle": "Between a frame and a choice",
+        "summary": "Hideo Kojima, born on 24 August 1963, is a Japanese game designer, writer, director and producer known for Metal Gear and Death Stranding.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Hideo Kojima: designer, writer and director",
+            "text": "Hideo Kojima is a Japanese game designer, writer, director and producer born on 24 August 1963. His work includes the Metal Gear series and Death Stranding. An interest in cinema and literature began during childhood and carried into games combining lengthy stories, voice performances and staged sequences with direct player control. After working at Konami, he established an independent Kojima Productions in 2015."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Before video games, images",
+            "text": "Born in Tokyo in 1963 and raised in Kansai, Kojima encountered cinema early through family movie nights. He wanted to draw, write and direct films; losing his father as a teenager made that ambition harder without erasing it. When he chose video games, he carried that visual education with him: editing, off-screen space and rhythm would become interactive tools."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Entering through an unexpected door",
+            "text": "Kojima joined Konami in 1986 as a designer and planner. His early work required translating his interest in cinematic storytelling into projects that fitted the available memory and hardware. The following year, a war game for MSX2 became Metal Gear. Its design developed around what the machine could show and how the player could move through a guarded environment."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "When a limit invents stealth",
+            "text": "The MSX2 had difficulty handling many enemies and projectiles at once. For Metal Gear in 1987, Kojima built the action around avoiding detection. Solid Snake studies patrols, infiltrates guarded areas and tries to stay out of combat. Keeping fewer enemies active on screen became part of the game's rules, with observation and movement taking priority over constant shooting."
+          },
+          {
+            "card_id": "main:4",
+            "original_index": 4,
+            "heading": "The player enters the frame",
+            "text": "Metal Gear Solid moved stealth into PlayStation's three-dimensional environments, combining movement, voice acting and staged sequences. Psycho Mantis also uses features outside the visible game world. He refers to information on the memory card and asks the player to put the controller on the floor. The encounter draws attention to the equipment in the player's hands while the story unfolds at Shadow Moses."
+          },
+          {
+            "card_id": "main:5",
+            "original_index": 5,
+            "heading": "When information chooses for us",
+            "text": "Metal Gear Solid 2 initially presents the prospect of another Solid Snake adventure before making Raiden its main playable character. That change puts the player's expectations alongside the story's concerns about control and identity. Released in 2001, the game also examines how digital systems select and circulate information, including which accounts and memories remain visible."
+          },
+          {
+            "card_id": "main:6",
+            "original_index": 6,
+            "heading": "History transforms the hero",
+            "text": "Metal Gear Solid 3 takes the series back to 1964 and follows Naked Snake's path towards becoming Big Boss. Survival and camouflage affect how the player approaches the environment. The Cold War setting and confrontation with The Boss place those actions inside an earlier part of the series' history, giving familiar characters and loyalties a different context."
+          },
+          {
+            "card_id": "main:7",
+            "original_index": 7,
+            "heading": "Direction makes room for systems",
+            "text": "The Phantom Pain opens infiltration across larger territories, with day and night cycles, weather, companions and tools that can be combined. Players can observe a site, choose an approach and adjust when noise or enemy responses change the situation. It was Kojima's last Metal Gear as director before he separated from Konami in 2015."
+          },
+          {
+            "card_id": "main:8",
+            "original_index": 8,
+            "heading": "The author enters the frame",
+            "text": "Kojima's productions combine actors, music, visual design, editing and game systems. His interest in film extends into the casting and presentation surrounding the games, including photographic campaigns. Collaborators from cinema, fashion and music contribute to the wider identity of his projects alongside the teams developing their interactive systems."
+          },
+          {
+            "card_id": "main:9",
+            "original_index": 9,
+            "heading": "Starting again under his own name",
+            "text": "In December 2015, Kojima established an independent studio in Tokyo after leaving Konami. Sony announced an agreement for its first project. The studio later introduced Ludens as its emblem, using the phrase 'those who play' to describe the team. Its work led to Death Stranding, beginning a new phase after Kojima's long involvement with Metal Gear."
+          },
+          {
+            "card_id": "main:10",
+            "original_index": 10,
+            "heading": "Connecting people",
+            "text": "Death Stranding follows Sam across a fractured America as he delivers cargo and reconnects isolated communities. Terrain and the weight of a load affect the route he can take. Ladders, ropes and paths left by other players can help with the journey. This asynchronous cooperation lets one person's work become useful to someone travelling through the same landscape later."
+          }
+        ],
+        "sources": [
+          {
+            "title": "en.wikipedia.org",
+            "url": "https://en.wikipedia.org/wiki/Hideo_Kojima",
+            "publisher": "en.wikipedia.org"
+          },
+          {
+            "title": "bafta.org",
+            "url": "https://www.bafta.org/stories/the-fellowship-2020-hideo-kojima/",
+            "publisher": "bafta.org"
+          },
+          {
+            "url": "https://www.kojimaproductions.jp/en/company",
+            "title": "Source for Hideo Kojima and his work",
+            "publisher": "www.kojimaproductions.jp"
+          },
+          {
+            "url": "https://www.konami.com/mg/history/jp/ja/",
+            "title": "Source for Hideo Kojima and his work",
+            "publisher": "www.konami.com"
+          },
+          {
+            "url": "https://www.bafta.org/media-centre/press-releases/bafta-annual-games-lecture-2012-hideo-kojima/",
+            "title": "Source for Hideo Kojima and his work",
+            "publisher": "www.bafta.org"
+          },
+          {
+            "url": "https://www.konami.com/mg/archive/mgs/about_mgs/index.html",
+            "title": "Source for Hideo Kojima and his work",
+            "publisher": "www.konami.com"
+          },
+          {
+            "url": "https://www.konami.com/mg/archive/mgs_tlc/",
+            "title": "Source for Hideo Kojima and his work",
+            "publisher": "www.konami.com"
+          },
+          {
+            "url": "https://www.konami.com/games/eu/en/products/mgsv_tde/",
+            "title": "Source for Hideo Kojima and his work",
+            "publisher": "www.konami.com"
+          },
+          {
+            "title": "Hideo Kojima",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1381241278",
+            "publisher": "English Wikipedia contributors",
+            "license": "Creative Commons Attribution-ShareAlike4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "attribution": "Complete source paragraphs reproduced verbatim; card heading supplied editorially."
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "feature-mabel-addis-classroom",
+      "kind": "feature",
+      "year_context_only": 1964,
+      "date_context_only": {
+        "precision": "range",
+        "start_year": 1964,
+        "end_year": 1966,
+        "region": ""
+      },
+      "event_semantics": "Educational development and classroom revision, 1964–1966; primary final report published June 1967. No commercial release date asserted.",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "The ruler of Lagash has to decide",
+        "subtitle": "",
+        "summary": "Addis shaped an economic simulation around a pupil’s changing responsibilities.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Writing an instructional world",
+            "text": "The 1967 project report credits Mabel Addis with writing The Sumerian Game's instructional version and IBM's William McKay with programming it. Children played Luduga, ruler of Lagash, receiving reports about an ancient economy and deciding how to respond. Addis provided a situation in which the calculations related to choices the pupil could understand, combining writing and economic simulation within a classroom exercise."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Revising the lesson",
+            "text": "After an earlier group played, Addis revised the game during summer 1966. The report describes shorter, less repetitive messages and a clearer connection between economic concepts and the script. Recorded discussions among advisers broke up the reading, while charts and other visuals were made more useful to the lesson. Later stages were also reorganized to move routine calculations to the computer. The revision changed what demanded attention, giving the human more room to concentrate on the decisions the exercise was meant to teach."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "A session on paper",
+            "text": "The Strong preserves three long teletype printouts, 39 introductory slides and the research report. The printouts record messages, responses and the changing state of particular sessions. The slides document material shown alongside the terminal. Together they preserve parts of a lesson that combined the pupil's decisions with printed reports and projected images."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "Recognition beyond the classroom",
+            "text": "In 2023, the Game Developers Choice Awards selected Addis for its posthumous Pioneer Award. The organizers highlighted the narrated decisions and the slides accompanied by synchronized sound in The Sumerian Game. Addis drew on her training in ancient history at Barnard College while working as a grade-school teacher. Her classroom project brings together subject knowledge, writing and computer simulation around the choices of a pupil."
+          }
+        ],
+        "sources": [
+          {
+            "id": "wing67",
+            "title": "The Production and Evaluation of Three Computer-Based Economics Games for the Sixth Grade",
+            "url": "https://files.eric.ed.gov/fulltext/ED014227.pdf",
+            "publisher": "Richard L. Wing with Mabel Addis, Walter Goodman, Jimmer Leonard and William McKay, June 1967",
+            "source_type": "primary_contemporary_research_report",
+            "locator": "ERIC ED014227; PDF pp. 3, 22–25 / printed title, 13–16; 12, 375, 609-byte PDF read in memory using pypdf",
+            "checked": "2026-10-20",
+            "rights": "Bibliographic reference; source text and images retain their own rights. Card prose is original and contains no direct quotations. Image permissions require separate review.",
+            "story_paragraphs": [
+              0,
+              1
+            ],
+            "paragraph_locators": {
+              "0": "Final project report, PDF p. 22 / printed p. 13, with report author credits on PDF p. 3.",
+              "1": "Final project report, PDF p. 25 / printed p. 16: summer 1966 revision and the pupil’s changing responsibilities."
+            }
+          },
+          {
+            "id": "sumer_aid",
+            "title": "Sumerian Game collection, 116.sumer",
+            "url": "https://www.museumofplay.org/app/uploads/2021/09/Finding-Aid-to-the-Sumerian-Game-collection_2021.pdf",
+            "publisher": "The Strong, January 2016",
+            "source_type": "primary_archive_finding_aid",
+            "locator": "pp.1, 3–5; three printout scrolls, 39 slides, report, donor/access conditions",
+            "checked": "2026-10-20",
+            "rights": "Bibliographic reference; source text and images retain their own rights. Card prose is original and contains no direct quotations. Image permissions require separate review.",
+            "story_paragraphs": [
+              2
+            ]
+          },
+          {
+            "title": "Mabel Addis: Teaching through interactive storytelling & games",
+            "url": "https://womenofixd.com/stories/mabel-addis",
+            "publisher": "Erin Malone / Women of Interaction Design",
+            "source_type": "research_publication_of_contemporary_press_photograph_and_report_figure",
+            "rights": "Original rights retained; no free image licence claimed. Publicly published illustration originals retained unchanged."
+          },
+          {
+            "title": "Legendary game designers John Romero and Mabel Addis honored at GDCA 2023",
+            "url": "https://gdconf.com/article/legendary-game-designers-john-romero-and-mabel-addis-honored-at-gdca-2023/",
+            "publisher": "Game Developers Conference / Game Developers Choice Awards",
+            "source_type": "Primary award organizer announcement",
+            "story_paragraphs": [
+              3
+            ],
+            "locator": "Mabel Addis Pioneer Award selection; narrated decisions and slides with synchronized audio; Barnard ancient-history degree and grade-school teaching.",
+            "rights": "Bibliographic reference; replacement paragraph is an original English paraphrase, not a quotation."
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "workbook-02-22-ed-boon",
+      "kind": "person",
+      "year_context_only": 1964,
+      "date_context_only": {
+        "month": 2,
+        "day": 22,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "Birthdate anchor 1964-02-22. Later career dates belong to the specifically dated reference paragraphs, not to the birth year.",
+      "factual_note": "Selected source-bound biography replaces inherited false birthyear-as-production narration in the canonical presentation only. Source editions and their eight-language prose remain archived unchanged. This reference is not a global primary-source historical signoff.",
+      "main": {
+        "feature_id": null,
+        "title": "Ed Boon",
+        "subtitle": "A life in games",
+        "summary": "Ed Boon co-created Mortal Kombat with John Tobias.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Co-creating Mortal Kombat",
+            "text": "Edward Boon (born February 22, 1964) is an American video game programmer, voice actor, and director. Boon is best known for co-creating the fighting game series Mortal Kombat along with John Tobias, and directing the Injustice series. In 2009, he was chosen by IGN as one of the top 100 game creators of all time for his involvement in the Mortal Kombat series."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Recognition in 2022",
+            "text": "He was inducted into the Academy of Interactive Arts & Sciences Hall of Fame in 2022."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Education and roots",
+            "text": "Boon graduated from high school at Loyola Academy in Wilmette.  Boon is of Hispanic descent, and his mother came from the Dominican Republic while his father is Dutch-American. He earned a Bachelor of Science degree in mathematics and computer science from the University of Illinois at Urbana-Champaign."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "From pinball to Mortal Kombat",
+            "text": "After graduation, he was employed by Williams Entertainment in their pinball department, working on approximately 20 pinball games over the next two years. During this time, he was called the Mortal Master, an early indicator towards a future creation."
+          },
+          {
+            "card_id": "main:4",
+            "original_index": 4,
+            "heading": "Programming Mortal Kombat",
+            "text": "He is the co-creator of the Mortal Kombat fighting game series, along with John Tobias, and served as the series' lead programmer, with Tobias as the lead designer, until their partnership dissolved with Tobias' departure from Midway in 2000. Boon named series characters Sonya and Tanya after his sisters Sonia and Tania, while another character, Noob Saibot, was named after Boon and Tobias' reversed surnames. Programmer Mike Boon is Ed's younger brother and has been a part of his team since Mortal Kombat 4."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Ed Boon - immutable reference revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1380274358",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/Ed_Boon?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          },
+          {
+            "title": "Ed Boon: Hall of Fame biography",
+            "url": "https://www.interactive.org/special_awards/details.asp?idSpecialAwards=42",
+            "publisher": "Academy of Interactive Arts & Sciences / Chris Kohler"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "workbook-01-24-takashi-tokita",
+      "kind": "person",
+      "year_context_only": 1965,
+      "date_context_only": {
+        "month": 1,
+        "day": 24,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "birth",
+      "factual_note": "Imported dated English Playhub editorial. Adapt its calendar wording, review publisher dates and assign rights-cleared media before presenting as a finished museum stop.",
+      "main": {
+        "feature_id": null,
+        "title": "Takashi Tokita",
+        "subtitle": "From Pixel to Stage: Telling an RPG Like a Scene",
+        "summary": "Takashi Tokita was born on January 24, 1965.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "From Pixel to Stage: Telling an RPG Like a Scene",
+            "text": "Takashi Tokita was born on 24 January 1965. He worked on graphics and sprites at Square before moving into game design on Final Fantasy IV, contributing to characters, events and dialogue. His later projects included Live A Live, Chrono Trigger and Parasite Eve. Work on scenes brought together character placement, scripts, timing and music, while Live A Live let him build a role-playing game around several shorter stories."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Before Directing, Tokita Inputs Sprites and Thinks About Stories",
+            "text": "Tokita entered the industry at eighteen in a part-time role and joined Square at twenty. His early graphics work included entering sprites, helping design monsters and contributing to Aliens 2, Final Fantasy and Hanjuku Hero. He was also developing story ideas. The practical work could cross several tasks, from making a character's image to placing it on screen and contributing dialogue or events."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "The Move into Game Design Coincides with a More Theatrical RPG",
+            "text": "On Final Fantasy IV, Tokita became a permanent Square employee and moved from sprites into game design. He recalled staff proposing characters and events, then implementing their placement, scripts and dialogue. For a scene in which Rosa meets Cecil, he and Nobuo Uematsu experimented with the entrance of music and sound effects. The effect of a scene depended on how those elements were timed together."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "Seven Short Stories Instead of One Epic March",
+            "text": "Live A Live was the first game Tokita planned from the ground up. Developed between Final Fantasy IV and Chrono Trigger, it divided the role-playing adventure into shorter stories set in different periods. Players could choose their initial order, and each chapter changed its tone and mechanics, from stealth and duels to science fiction aboard a spacecraft. Different manga artists designed the protagonists, giving the stories distinct visual identities."
+          }
+        ],
+        "sources": [
+          {
+            "title": "www.chronowiki.org",
+            "url": "https://www.chronowiki.org/wiki/Takashi_Tokita",
+            "publisher": "www.chronowiki.org"
+          },
+          {
+            "title": "na.finalfantasy.com",
+            "url": "https://na.finalfantasy.com/topics/296",
+            "publisher": "na.finalfantasy.com"
+          },
+          {
+            "title": "blog.it.playstation.com",
+            "url": "https://blog.it.playstation.com/2023/05/02/il-produttore-takashi-tokita-ci-svela-i-segreti-di-live-a-live/",
+            "publisher": "blog.it.playstation.com"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "daily-09-17",
+      "kind": "person",
+      "year_context_only": 1965,
+      "date_context_only": {
+        "month": 9,
+        "day": 17,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "Scheduled published Playhub edition. The calendar slot is not asserted as a historical anniversary; the year is the source's historical anchor.",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "Yuji Naka",
+        "subtitle": "Programming Becomes a Sensation",
+        "summary": "Yuji Naka was born on September 17, 1965, a Japanese programmer and producer whose career intersects with several decisive transformations at Sega.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Programming Becomes a Sensation",
+            "text": "Yuji Naka was born on 17 September 1965 and joined Sega in 1984. His early work included Girl's Garden, conversions and Phantasy Star, before he became lead programmer on Sonic the Hedgehog for Mega Drive. Later projects with Sonic Team included NiGHTS into Dreams and Phantasy Star Online. Across these games, his work connected software development with movement, controllers and networked play, alongside increasing responsibilities as a producer and team leader."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Learning by Building Games",
+            "text": "Girl's Garden belongs to Naka's early years at Sega, which he joined in 1984. Programming, conversion work and game design often overlapped in the company's small teams. Learning a machine involved trying ideas, checking their response and adapting the program to its limitations. These early projects gave Naka experience that he would bring to Sega's later hardware and software."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Making Depth Perceptible",
+            "text": "Phantasy Star combines a role-playing adventure with first-person dungeons. The corridors change as the player moves, giving a sense of travelling through a space rather than looking at a fixed picture. Making those transitions continuous enough to follow was part of the programming work. The result supported orientation inside the dungeons alongside the wider game's exploration and story."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "Speed Is a Relationship",
+            "text": "Sonic the Hedgehog's movement depends on acceleration and the shape of the ground. Curves, slopes and changes of direction affect how speed develops as the player moves through a level. Naka's programming worked alongside the team's character design and course construction. The sensation of controlling Sonic came from these elements fitting together: the program's movement needed terrain that gave the player useful places to build and manage speed."
+          },
+          {
+            "card_id": "main:4",
+            "original_index": 4,
+            "heading": "The Controller Is Born Together With the Movement",
+            "text": "During NiGHTS into Dreams, Sonic Team explored how to make flight feel fluid. In a 1996 interview, Naka recalled an earlier version that relied more heavily on buttons and aggressive action. The team developed numerous prototypes while considering another approach to control. Work on the Saturn analog pad supported the continuous curves and direction changes the game required."
+          },
+          {
+            "card_id": "main:5",
+            "original_index": 5,
+            "heading": "Distance Becomes a Design Problem",
+            "text": "Phantasy Star Online brought players from different regions onto Dreamcast's network. Naka identified communication across languages as an early challenge. Lobbies, symbols and conversation tools gave players ways to recognise one another and cooperate beyond ordinary text chat. The console's built-in modem provided the connection; the software still needed to make meeting and coordinating with other people workable."
+          },
+          {
+            "card_id": "main:6",
+            "original_index": 6,
+            "heading": "The Console Suggests New Questions",
+            "text": "On Dreamcast, Sonic Team explored controllers, peripherals and online communication across projects including Sonic Adventure and Phantasy Star Online. These features offered different ways to connect the player with the game and with other people. By this stage, Naka's role included production and team leadership. Technical possibilities became projects for programmers, designers and other specialists to develop together."
+          }
+        ],
+        "sources": [
+          {
+            "title": "mobygames.com",
+            "url": "https://www.mobygames.com/person/43207/yuji-naka/",
+            "publisher": "mobygames.com"
+          },
+          {
+            "title": "shmuplations.com",
+            "url": "https://shmuplations.com/sonicteam/",
+            "publisher": "shmuplations.com"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "workbook-07-31-tecmo",
+      "kind": "organization",
+      "year_context_only": 1967,
+      "date_context_only": {
+        "month": 7,
+        "day": 31,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "foundation",
+      "factual_note": "Imported dated English Playhub editorial. Adapt its calendar wording, review publisher dates and assign rights-cleared media before presenting as a finished museum stop.",
+      "main": {
+        "feature_id": null,
+        "title": "Tecmo",
+        "subtitle": "From Nippon Yacht to Tecmo",
+        "summary": "On July 31, 1967 Nippon Yacht was founded, the company that would pass through the Tehkan name before becoming Tecmo.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Tecmo Moves from Amusement Business to a Catalogue Built on Rhythm, Risk and Spectacle",
+            "text": "The company that became Tecmo was founded as Nippon Yacht on 31 July 1967. It later used the Tehkan name before adopting Tecmo in 1986. Its game business developed across arcades and home consoles, with titles and series including Pleiads, Tecmo Bowl, Ninja Gaiden and Dead or Alive. These ranged from shooting and sports to platform action and three-dimensional fighting, before the company's later merger with Koei."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "From Nippon Yacht to Tehkan: the company comes before the games",
+            "text": "Nippon Yacht's transition through the amusement business preceded the characters and series associated with Tecmo. The company used the Tehkan name during its early arcade period and became Tecmo in 1986. As its products changed, it built the development and publishing business that would bring games such as Ninja Gaiden to home consoles."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Pleiads and arcade design teach the value of a few intense minutes",
+            "text": "Pleiads belongs to Tehkan's arcade period, when a game must quickly make clear what players should avoid and what they should shoot. A spacecraft faces successive enemies with different movements and formations. Changing the pattern renews attention without demanding a new set of controls each time. Score and survival provide an immediate measure of performance, while repetition makes attacks recognizable. This approach is closely tied to the arcade: the game must welcome someone trying it while giving returning players something to learn. A short session does not remove progression; it concentrates progression in the development of skill."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "Ninja Gaiden uses editing to give action narrative weight",
+            "text": "Ninja Gaiden on Famicom and NES frames Ryu Hayabusa's action through illustrated scenes. Close-ups, changes of viewpoint and dialogue interrupt the movement between levels, giving opponents a face and the pursuit a direction. The game alternates between two rhythms: action demands reactions to jumps and attacks, while narrative sequences hand control of the pace to editing. That distinction strengthens the return to play, because a new level follows a piece of information or a threat. With far fewer resources than cinema, Tecmo uses a sequence of images to make individual stages feel like episodes in an unfolding story."
+          }
+        ],
+        "sources": [
+          {
+            "title": "www.koeitecmo.co.jp",
+            "url": "https://www.koeitecmo.co.jp/ir/docs/20080221cp_e.pdf",
+            "publisher": "www.koeitecmo.co.jp"
+          },
+          {
+            "title": "www.mobygames.com",
+            "url": "https://www.mobygames.com/company/1460/tecmo-ltd/history/",
+            "publisher": "www.mobygames.com"
+          },
+          {
+            "title": "www.koeitecmo.co.jp",
+            "url": "https://www.koeitecmo.co.jp/recruit/company/history/",
+            "publisher": "www.koeitecmo.co.jp"
+          },
+          {
+            "title": "www.koeitecmo.co.jp",
+            "url": "https://www.koeitecmo.co.jp/e/company/history/",
+            "publisher": "www.koeitecmo.co.jp"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "daily-12-12",
+      "kind": "person",
+      "year_context_only": 1967,
+      "date_context_only": {
+        "month": 12,
+        "day": 12,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "Scheduled published Playhub edition. The calendar slot is not asserted as a historical anniversary; the year is the source's historical anchor.",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "Yuzo Koshiro",
+        "subtitle": "The city had already found its rhythm",
+        "summary": "Yuzo Koshiro, born in Tokyo on 12 December 1967, composed music for Ys, ActRaiser, Streets of Rage and many other games while developing his own music-programming tools.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "The city had already found its rhythm",
+            "text": "Yuzo Koshiro was born in Tokyo on 12 December 1967. His game music includes the FM sound of Ys, ActRaiser's sampled orchestration and the house and techno of Streets of Rage. Composition and programming have remained closely connected in his work. He studies a machine's sound capabilities, develops tools and adapts the music he hears outside games to the hardware available for each project."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Before professional video games, there was the PC-8801",
+            "text": "As a student, Koshiro recreated music from Namco and Sega games on his PC-8801. Working out the pieces by ear also meant learning how the computer produced their sounds, from envelopes and timbres to rhythms. He joined Falcom in 1986 and brought that experience to Japanese computer games. Composing for FM sound required considering the chip's capabilities alongside the notes and arrangement."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Ys turns the FM timbre into a signature",
+            "text": "Koshiro valued FM synthesis for its distinctive timbres and modest memory requirements. On Ys, bright sounds, energetic melodies and clear bass lines accompanied exploration and combat. He later described appreciating FM's unrealistic character. The computer's sound was something to compose for directly, with musical parts chosen to remain recognisable while the player moved through the game."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "ActRaiser shows that a new chip requires a new language",
+            "text": "ActRaiser used the Super Famicom's PCM sampling to suggest strings, brass and percussion. These timbres encouraged more orchestral arrangements than the FM sound of Koshiro's earlier computer work. Samples still had to fit in limited memory, making the choice and distribution of instruments important. Koshiro distinguished PCM's ability to imitate acoustic sounds from FM's more abstract character, and ActRaiser made that change in hardware audible."
+          },
+          {
+            "card_id": "main:4",
+            "original_index": 4,
+            "heading": "Streets of Rage brings the club into the Mega Drive",
+            "text": "For Streets of Rage, Koshiro drew on house, techno and hip hop heard in Tokyo clubs. He also considered audiences in North America and Europe, where dance music had a strong presence. The challenge was to reproduce the bass lines, percussion and repeating sequences of contemporary club records through the Mega Drive's sound hardware. Those rhythms gave the game's street fights a musical character tied to the period in which they appeared."
+          },
+          {
+            "card_id": "main:5",
+            "original_index": 5,
+            "heading": "Streets of Rage 3 also uses programming as composition",
+            "text": "For Streets of Rage 3, Koshiro developed a C++ sequencing program that introduced randomness into musical phrases. He was interested in more radical techno and used the software to generate material he could work with. This changed the role of his tools: the program participated in producing musical ideas. The resulting soundtrack divided opinion, especially among listeners expecting the more melodic approach of the earlier games."
+          },
+          {
+            "card_id": "main:6",
+            "original_index": 6,
+            "heading": "Ancient broadens the composer's role",
+            "text": "After Falcom and freelance work, Koshiro founded Ancient with his mother and became its president. His responsibilities expanded across composition, supervision and development. Later work included orchestral productions and deliberately retro computer-style music in the Etrian Odyssey series. These different approaches continued his interest in understanding both the hardware and the musical style suited to a project."
+          }
+        ],
+        "sources": [
+          {
+            "title": "wayorecords.net",
+            "url": "https://www.wayorecords.net/wayo/yuzo-koshiro/",
+            "publisher": "wayorecords.net"
+          },
+          {
+            "title": "daily.redbullmusicacademy.com",
+            "url": "https://daily.redbullmusicacademy.com/2014/09/yuzo-koshiro-interview/",
+            "publisher": "daily.redbullmusicacademy.com"
+          }
+        ]
+      },
+      "features": [
+        {
+          "feature_id": "feature-yuzo-koshiro-fm",
+          "title": "Yuzo Koshiro: programming a dance floor",
+          "subtitle": "",
+          "summary": "Tools decide which sounds become practical.",
+          "cards": [
+            {
+              "card_id": "feature:feature-yuzo-koshiro-fm:0",
+              "original_index": 0,
+              "heading": "Kawashima opens another door",
+              "text": "Koshiro recalled Motohiro Kawashima, his Streets of Rage 2 collaborator, inviting him to clubs including Yellow. Their shared listening brought new rhythms into their composing work. Koshiro wanted the sequel to sound current, drawing on the music they encountered outside the studio. The collaboration connected their visits to the dance floor with the sounds being developed for a cartridge game."
+            },
+            {
+              "card_id": "feature:feature-yuzo-koshiro-fm:1",
+              "original_index": 1,
+              "heading": "Spend the sample carefully",
+              "text": "Discussing the PC-88's added sampling channel, Koshiro described dividing sounds among the available sources. Short drums and orchestral hits could use samples, while other parts used FM and PSG. A single sampled voice was a limited resource, so the arrangement had to give it a specific job. Choosing which sound belonged on which channel helped make the available hardware serve the whole piece."
+            },
+            {
+              "card_id": "feature:feature-yuzo-koshiro-fm:2",
+              "original_index": 2,
+              "heading": "A tool grows through help",
+              "text": "In 2019, Koshiro credited a friend and technical reading when explaining how he built MUCOM88. The music-programming tool ran on the PC-88, a computer he knew well. Information shared within its user community helped him turn the software into a working part of his composing setup. It gave him a tool he could understand and modify for his own needs."
+            },
+            {
+              "card_id": "feature:feature-yuzo-koshiro-fm:3",
+              "original_index": 3,
+              "heading": "Keep a workable instrument",
+              "text": "Koshiro continued using the PC-88 to compose Mega Drive music because he was comfortable with the setup and could revise his own tools. He acknowledged that the two machines sounded different. Keeping the familiar computer nevertheless gave him control over his working process as musical styles changed, while the completed music would ultimately run on the console's hardware."
+            }
+          ],
+          "sources": [
+            {
+              "id": "koshiro14rbma",
+              "title": "Interview: Streets of Rage Composer Yuzo Koshiro",
+              "url": "https://daily.redbullmusicacademy.com/2014/09/yuzo-koshiro-interview/",
+              "publisher": "Nick Dwyer / Yuzo Koshiro / Red Bull Music Academy",
+              "source_type": "Primary composer interview; edited and condensed Diggin in the Carts sessions, retrospective",
+              "checked": "2026-10-21",
+              "rights": "Bibliographic citation only. Original commissioned prose is not a licence to use the source article, pictures, scores, game assets, performances or recordings.",
+              "publication_date": "2014-09-25",
+              "story_paragraphs": [
+                0,
+                1
+              ],
+              "paragraph_locators": {
+                "0": "RBMA Streets of Rage 2 direction and favourite DJ questions: Kawashima invitations, Yellow and current techno rather than simply next level",
+                "1": "RBMA PCM question: Sound Board 2 addition, one PCM channel, short drums/hits versus FM/PSG"
+              }
+            },
+            {
+              "id": "koshiro19nl",
+              "title": "Streets Of Rage Legend Yuzo Koshiro On Music, Game Dev And Nintendo Switch",
+              "url": "https://www.timeextension.com/news/2019/08/feature_streets_of_rage_legend_yuzo_koshiro_on_music_game_dev_and_nintendo_switch",
+              "publisher": "Jake Baldwin / Yuzo Koshiro / Nintendo Life; now hosted by Time Extension",
+              "source_type": "Primary composer interview, retrospective; Nintendo Life original moved within same publisher",
+              "checked": "2026-10-21",
+              "rights": "Bibliographic citation only. Original commissioned prose is not a licence to use the source article, pictures, scores, game assets, performances or recordings.",
+              "publication_date": "2019-08-24",
+              "story_paragraphs": [
+                2,
+                3
+              ],
+              "paragraph_locators": {
+                "2": "Nintendo Life 2019 PC-88 for Mega Drive answer: MUCOM88, friend's help and community technical information",
+                "3": "Same 2019 answer: laterPC-88 chip proximity, sound differences, updating own tool and ease of creation"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "status": "PASS",
+  "locale": "es",
+  "entries": [
+    {
+      "entry_id": "wikipedia-77176762",
+      "source_fields_sha256": "f00daa2540c435d27710c2e24058ed9f923d932ad4ee2493a83e1d3a8bfa592a",
+      "translation_sha256": "30a00f688b4270a134e2d4627335dcd412e4151161071600e899bb764e655527",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch372/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "2333fb134a96421e4215cddb41dd6089fad099906482751f35a8a95fa545043e"
+    },
+    {
+      "entry_id": "wikipedia-76283342",
+      "source_fields_sha256": "239aa64cd5d27c74a5bfa0126f71b4fcd3b2149ca130706dfbf66d512d78f358",
+      "translation_sha256": "ccefedd215e10f0243e78a1fe1c427406065b484137e740f812bc6343c12dcf9",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch372/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "2333fb134a96421e4215cddb41dd6089fad099906482751f35a8a95fa545043e"
+    },
+    {
+      "entry_id": "wikipedia-72056239",
+      "source_fields_sha256": "6609435b74ce06433a06b571ea2ae9fe908a12cf603cbcdf329cab93727de763",
+      "translation_sha256": "76bdcbbdf7261dd5281052af3f4d0208514e36cf1e1ec380529fb68f4d2f56bb",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch372/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "2333fb134a96421e4215cddb41dd6089fad099906482751f35a8a95fa545043e"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "editorial_continue",
+    "actual_receipt": "build/research/catalog-2024-chronological/root-september-october-three-private/independent-editorial-peer-approval.json",
+    "actual_receipt_sha256": "18df3797d220511338efdc4b03682503e1bc728ba28f1e4906a53acb7949bacd",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "editorial_continue",
+      "index": "build/research/catalog-2024-chronological/root-september-october-three-private/three-private-index.json",
+      "index_sha256": "7993858b66894b7c4c232cdcadea1c23af21fad729cdc5899914814525d58b0c",
+      "scope": "Actually read all thirteen English paragraphs and all fifty-two localized paragraphs and five localized fields. Viewed all nineteen final images across the three final contacts. Read the three actual Konami/Virgin Music metadata receipts and compared the three titles and durations with the indexed official Apple Music album. Checked source/target/contact hashes and actual recovery-byte bindings.",
+      "resolved_findings": [
+        "Localized Zelda ability names now follow Nintendo terminology: sincronia/sincronia inversa, synchronisation/synchronisation inversée, Einklang/Umgekehrter Einklang, vínculo/vínculo invertido. Italian and Spanish replica terminology now follows Nintendo repliche/réplicas. No English, image or recording changed by this finite correction."
+      ],
+      "primary_sources_actually_read": [
+        {
+          "url": "https://www.nintendo.co.jp/corporate/release/en/2024/240820.html",
+          "finding": "October 2, 2024 opening; historical exhibits, modern interactive exhibits, Hanafuda craft workshop with reservation and separate fee."
+        },
+        {
+          "url": "https://www.konami.com/games/silenthill/2r/jp/ja/",
+          "finding": "Original October 8, 2024 release, November 20, 2024 remake soundtrack and November 21, 2025 Xbox/Windows release; later player totals include subscription players and are not confused with the historical sales statement."
+        },
+        {
+          "url": "https://music.apple.com/us/album/theme-of-laura-ii/1778178109?i=1778178110",
+          "access": "Indexed official album text actually read; album base URL direct fetch returned 404.",
+          "finding": "93-track original Konami album, November 20, 2024. Theme Of Laura II 4:00, Promise of the Forgotten 4:51 and Laura Plays the Piano (2024) 5:04; selected YouTube metadata durations differ by at most one second."
+        },
+        {
+          "url": "https://www.nintendo.com/it-it/Giochi/Giochi-per-Nintendo-Switch/The-Legend-of-Zelda-Echoes-of-Wisdom-2590490.html",
+          "finding": "Actual official localized game terminology checked against the localized paragraphs."
+        },
+        {
+          "url": "https://www.nintendo.com/fr-fr/Jeux/Jeux-Nintendo-Switch/The-Legend-of-Zelda-Echoes-of-Wisdom-2590490.html",
+          "finding": "Actual official localized game terminology checked against the localized paragraphs."
+        },
+        {
+          "url": "https://www.nintendo.com/de-de/Spiele/Nintendo-Switch-Spiele/The-Legend-of-Zelda-Echoes-of-Wisdom-2590490.html",
+          "finding": "Actual official localized game terminology checked against the localized paragraphs."
+        },
+        {
+          "url": "https://www.nintendo.com/es-es/Juegos/Juegos-de-Nintendo-Switch/The-Legend-of-Zelda-Echoes-of-Wisdom-2590490.html",
+          "finding": "Actual official localized game terminology checked against the localized paragraphs."
+        }
+      ],
+      "music": "All 109 inherited Zelda selections preserved without redundant acquisition. Three new Silent Hill selections are original remake recordings officially distributed by Virgin Music Group; current 2026 publication metadata honestly identifies the original November 2024 album. No audio downloaded or bundled. PS5 playback not claimed.",
+      "source_limits": [
+        "The historical 2.5-million shipment/digital-sales milestone remains the preserved article statement; this review did not independently play the Konami News video that announced it. No claim to firsthand playback is made."
+      ],
+      "findings": [],
+      "owners": [
+        {
+          "entry_id": "wikipedia-77176762",
+          "slug": "zelda",
+          "source": "build/research/catalog-2024-chronological/root-september-october-three-private/zelda-source-private-candidate.json",
+          "source_sha256": "0535df2f4c6029e4b48e058ea3ca4da7f1736a0920bf18e50d5010a49d432bb7",
+          "target": "build/research/catalog-2024-chronological/root-september-october-three-private/zelda-four-language-private-candidate.json",
+          "target_sha256": "3a99db7547cb25fed7ea89d0b0a107a5c807f67eead53a7bc00ad6cb2543d760",
+          "contact": "build/research/catalog-2024-chronological/root-september-october-three-private/zelda-final-contact.jpg",
+          "contact_sha256": "f7d4f9b7950d50535ba21fe06b8972d2f8f73cf36a211b6fe5e6e3d0248785f8",
+          "english_cards": 7,
+          "localized_cards": 28,
+          "images": 9,
+          "tracks": 109
+        },
+        {
+          "entry_id": "wikipedia-76283342",
+          "slug": "museum",
+          "source": "build/research/catalog-2024-chronological/root-september-october-three-private/museum-source-private-candidate.json",
+          "source_sha256": "36758dd17dce2dc81003e87dd0d8b335607ff975e320ab17abb0fa049eda8d82",
+          "target": "build/research/catalog-2024-chronological/root-september-october-three-private/museum-four-language-private-candidate.json",
+          "target_sha256": "13f814b27c5680e49496632a036b0437f003b3d26465764042c4110d5a08782a",
+          "contact": "build/research/catalog-2024-chronological/root-september-october-three-private/museum-final-contact.jpg",
+          "contact_sha256": "3db229670ca21d22dabdfc767fea64f12ec6f7bd415352dfe47f864246bae68d",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 5,
+          "tracks": 0
+        },
+        {
+          "entry_id": "wikipedia-72056239",
+          "slug": "silent",
+          "source": "build/research/catalog-2024-chronological/root-september-october-three-private/silent-source-private-candidate.json",
+          "source_sha256": "51076cda6f93bcd8d7ea95e728bd61f26ceedc390ed71219eb7b7e7c60c9fc6a",
+          "target": "build/research/catalog-2024-chronological/root-september-october-three-private/silent-four-language-private-candidate.json",
+          "target_sha256": "94a7f7a79749ba240dcf90f57267a15789ec60c90f50e1b1cd56030f6499de98",
+          "contact": "build/research/catalog-2024-chronological/root-september-october-three-private/silent-final-contact.jpg",
+          "contact_sha256": "8be283c65211ab16ef359b7cf492af3f88e637d404773034a5b9a2bc2fa49811",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 5,
+          "tracks": 3
+        }
+      ],
+      "production_writes": false
+    }
+  }
+}

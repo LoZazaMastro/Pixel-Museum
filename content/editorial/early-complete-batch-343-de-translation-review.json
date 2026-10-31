@@ -1,0 +1,93 @@
+{
+  "status": "PASS",
+  "locale": "de",
+  "entries": [
+    {
+      "entry_id": "wikipedia-69752856",
+      "source_fields_sha256": "67480c6a0b4b1c0819eb9f59f300ccfa8403b612588beaffd1136ef35dd0a8d3",
+      "translation_sha256": "c61eb779ad82e7e97b92a9ad1b3813b6b49515f544f0d9dd99e314ef04c4329f",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch343/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "119138c3ae555c4a230e71607257079bb272a64a654a1602b005955685a1acfa"
+    },
+    {
+      "entry_id": "wikipedia-67913856",
+      "source_fields_sha256": "06ec795c8b7a315eb5d1e34ea6b4f52d5b0f42304d9b0bf5b2de58dd66889728",
+      "translation_sha256": "1947ff7547010192bc8f72f42c518351c413ce3208a54115f1905e90e426714e",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch343/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "119138c3ae555c4a230e71607257079bb272a64a654a1602b005955685a1acfa"
+    },
+    {
+      "entry_id": "workbook-04-05-lego-star-wars-the-skywalker-saga",
+      "source_fields_sha256": "04be95943621b7859cc4adc8f0c187e4a3f3af5a2a6fd7e5e7b33a699a4f41cb",
+      "translation_sha256": "d5eef956dd4208b2020e8a79669a027bd955b3ac0f32b4c8400effb47e938a8f",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch343/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "119138c3ae555c4a230e71607257079bb272a64a654a1602b005955685a1acfa"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "/root/category_audit",
+    "actual_receipt": "build/research/catalog-2022-chronological/march-april-three-private/independent-category-audit-approval.json",
+    "actual_receipt_sha256": "30bfea327300318dcb1fe5390987eaee6769c27462a4af843e3ed43abf114ad5",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "/root/category_audit",
+      "index_sha256": "2e69396783e0602fa8d27b11089fede93de8d08b01ae90568c31dd321b1e3afd",
+      "scope": {
+        "english_paragraphs_actually_read": 11,
+        "localized_paragraphs_actually_read": 44,
+        "languages": [
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "images_actually_viewed": 15,
+        "final_contact_sheets_actually_viewed": 3,
+        "new_cue_metadata_actually_read": 3
+      },
+      "findings": [],
+      "primary_sources_read": [
+        {
+          "url": "https://www.nintendo.com/au/news-and-articles/ask-the-developer-vol-4-kirby-and-the-forgotten-land/",
+          "finding": "Original March24,2022 Nintendo/HAL interview confirms March25launch, firstmainline3D, deliberatelylimitedenemydensity and perspective-adjusted hitdetection. Candidate faithful to directdevelopers."
+        },
+        {
+          "url": "https://music.apple.com/us/album/tiny-tinas-wonderlands-original-soundtrack/1745068424",
+          "finding": "Officiallabelalbum confirms JoshuaCarro,35songs,April1,2022 originalalbum andGearbox/Lacedownership. ThreeTopicreceipts are officialIIPDDS2024 republications of2022recordings."
+        },
+        {
+          "url": "https://www.starwars.com/news/lego-star-wars-the-skywalker-saga-is-here",
+          "finding": "Lucasfilm April5,2022 launch,ninefilms,explorableplanets andunlockablecharacters confirm candidatecontext."
+        }
+      ],
+      "review_notes": [
+        "All11EN and44locale bodies fullyread, summaries/headings/officiallocalizedtitles coherent; no contentomission or semanticfinding. Kirby only agreed missinggrammaticalsubject andleadingspace repaired.",
+        "All15images actually viewed: originalKirbyfull3Dscenes, authenticTinyTinaOverworld and spellcombat, LEGOgameplay andcinematicMumblescene notincorrectlyidentifiedasmenu. Duplicatedcoverremoved, nofanart/redraws.",
+        "Kirby92musicobjects exact, no redundantqueries. New3TinyTina officialJoshuaCarrooriginalalbum recordings matchpublicAACmetadata;2024redistribution explicit. Noaudiofilesdownloaded orPS5playbackclaim."
+      ],
+      "owners": [
+        {
+          "entry_id": "wikipedia-69752856",
+          "source_sha256": "015455d7e7d7573188f60ad35d798512e438e0f33b56696c92a67ee5cb654a66",
+          "target_sha256": "1fef72a0c16d49efc9a1b1258914af6fa86eaa3ba817fce57730b7f25534e0b4",
+          "contact_sha256": "91576be563ac78dbe343716ea60fc3b1f1a75e076638002bd43d02f50dc7269c"
+        },
+        {
+          "entry_id": "wikipedia-67913856",
+          "source_sha256": "cfd89c45b08cfd6318f75b346a1ff4942ed15e7e3142dcfae66f4e5c95857a96",
+          "target_sha256": "915bf963aa063946f64aae4ee15b22d06718793894be0b104efd610b32b95ba1",
+          "contact_sha256": "8541db768a9fb8d730ea3b82c581b4138ed6515e2b9fd23b787773fb0acc90f0"
+        },
+        {
+          "entry_id": "workbook-04-05-lego-star-wars-the-skywalker-saga",
+          "source_sha256": "3123a8a7b527c2ae84f159c173d6d4d185939aae7e3e590d31e80fac042c5610",
+          "target_sha256": "6a023621bf2ffa86e7997c00fd3d9b23f79fa7e9d8c722ab8e62d2a650e6044f",
+          "contact_sha256": "c1d3536eab38232f0865cca0edd1a8b0c60bbcc0ce6e1e2bdc35ab668b60bc0a"
+        }
+      ],
+      "production_writes": false,
+      "authorization": "Root admission remains separate."
+    }
+  }
+}

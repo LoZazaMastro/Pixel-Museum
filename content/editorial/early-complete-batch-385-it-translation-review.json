@@ -1,0 +1,66 @@
+{
+  "status": "PASS",
+  "locale": "it",
+  "entries": [
+    {
+      "entry_id": "wikipedia-81838290",
+      "source_fields_sha256": "84d161acdbf29c3ddaee9796f83152a7aad9a32b249bfd362ff07d9b195dfc69",
+      "translation_sha256": "55fccd953f88f287999342627697e0d758b906339684c658ac3a721cea336a77",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch385/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "6f2eba3caa0115e7395319d46bbf577862166d75f799d93c02d29caeff9f1922"
+    },
+    {
+      "entry_id": "wikipedia-80139823",
+      "source_fields_sha256": "d80de0abb7757e2d2b5ed9d3ece147c2ec103ecab1ad0e995833b1a8d549b203",
+      "translation_sha256": "116720b1d9df91fd552f1fedeca0e5f663c54756cddf9ee4978e7ed24b7cc772",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch385/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "6f2eba3caa0115e7395319d46bbf577862166d75f799d93c02d29caeff9f1922"
+    },
+    {
+      "entry_id": "wikipedia-80139082",
+      "source_fields_sha256": "d3b172ca5adf599dfa6d961993ba85d932acc5d53d44c7374c7f7a880038765c",
+      "translation_sha256": "2e4a373b2398b215cba651984bc69da2a0866820909851bf4fcffc85ffe32cbe",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch385/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "6f2eba3caa0115e7395319d46bbf577862166d75f799d93c02d29caeff9f1922"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "editorial_continue",
+    "actual_receipt": "build/research/catalog-2026-chronological/first-three-private/independent-editorial-peer-approval.json",
+    "actual_receipt_sha256": "e96b380fad47092fb6874ae24b76f47057be820f0523c195ead3963cdc77974b",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "editorial_continue",
+      "index": "build/research/catalog-2026-chronological/first-three-private/three-private-index.json",
+      "index_sha256": "f75742ce19fade316bc817148df76cdfe66cdb4a2989a13a8b3ec7d5dfed2bea",
+      "actually_read": {
+        "english_paragraphs": 18,
+        "localized_paragraphs": 72,
+        "localized_fields": "All five fields in all four languages, not samples.",
+        "selected_images_actually_viewed": 24,
+        "final_contacts": [
+          "code-final-contact.jpg",
+          "nioh-final-contact.jpg",
+          "requiem-final-contact.jpg"
+        ],
+        "new_music_metadata_read": 9
+      },
+      "primary_review": [
+        "Bandai Namco Studios product page: Japanese console January 29 versus Steam January 30; international date separately qualified.",
+        "Team Ninja outline actually read: 1622 opening, Takechiyo and subsequent time travel.",
+        "Team Ninja system actually read: Arts Proficiency strengthens Strong Attacks and Martial Arts, Ki Pulse, two styles and open fields.",
+        "NVIDIA July 16, 2026 direct Capcom rendering-team interview actually read; existing technical English preserved.",
+        "Bandai Namco official vinyl list actually read, including Thread in Hand and Hallowed.",
+        "Team Ninja February 6, 2026 announcement actually read: Akihiro Manabe and 51 original Nioh 3 pieces.",
+        "Saved actual Qobuz HTML inspected for Foreboding / Found You / Night Haze and individual label-supplied artist names."
+      ],
+      "finite_findings_resolved": [
+        "Four Code Vein II localized final headings now describe player feedback naturally instead of literally responding to a game.",
+        "Hallowed is the selected vinyl title; Hollowed remains the digital mini-OST/archive variant. No claim that the uploader invented the spelling. Same recording ID and duration preserved."
+      ],
+      "no_audio_downloaded_or_packaged": true,
+      "production_writes": false
+    }
+  }
+}

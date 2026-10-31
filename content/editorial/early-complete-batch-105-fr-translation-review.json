@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "locale": "fr",
+  "review": "Binding of exact independently approved complete candidate members; no new linguistic review substituted. Every full candidate SHA and independent PASS receipt checked, all current English five fields and translation hashes validated.",
+  "entries": [
+    {
+      "entry_id": "nintendo-64",
+      "source_fields_sha256": "533f24cb66b7d87bbf9728e4a466e9b150298d7971574f65af40e92cfaff42f3",
+      "translation_sha256": "c347aba6b9c9f9667725680d0f97cb600b5125d80abb915721f8a623aeb3c111",
+      "independent_peer": "build/research/nintendo641996-four-language-completion/independent-all-fields-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "32eb0241eb5a23c3f3abdb8f9dfe68506fa28e7c75d70f710541e148d39fc294",
+      "candidate_path": "build/research/nintendo641996-four-language-completion/nintendo64-four-language-final-natural-use-and-movement-candidate.json",
+      "candidate_sha256": "d55ae156996fc2a7812a2bd22072677f2900d6401826819ece71f220d6458e3b"
+    },
+    {
+      "entry_id": "workbook-07-05-nights-into-dreams",
+      "source_fields_sha256": "71d1641f0fda57e21695305b81d7624a85d4f11e7744f0f3dfd877a33f31f1a1",
+      "translation_sha256": "54cf2a542c050f2b8560543ddd4935f7391c652d1fe74f9409316a92b3fda375",
+      "independent_peer": "build/research/nights1996-four-language-completion/independent-all-fields-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "e08c114e1c43049fe5152ba6e7715856e236630f6eece5f62fa794a13fd2d33f",
+      "candidate_path": "build/research/nights1996-four-language-completion/nights-four-language-final-natural-german-development-candidate.json",
+      "candidate_sha256": "5cd98134ef1a3375b96ae5800e77da57595d010067b14aad46bcc9039ce41dfe"
+    }
+  ]
+}

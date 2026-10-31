@@ -1,0 +1,181 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-21T01:05:32.518070+00:00",
+  "status": "Bounded superseding quarantine proposal, not assembled; prior review and image originals preserved.",
+  "source_index": 343,
+  "original_sha256": "a9cfe96e6f58ca34347900e98907a2e27dfd39409cb9da20e158e48fcc5ec4ab",
+  "original_research_file": "build\\research\\legacy-playhub-media-audit\\originals\\0343.jpg",
+  "correction_to": "content/editorial/legacy-image-visual-review-08-14.json, index343",
+  "previous_review": {
+    "index": 343,
+    "url": "https://raw.githubusercontent.com/LoZazaMastro/Playhub/0c5c103403813431e23b40f90c75fba6d51a9759/assets/on-this-day/v1/day-03-11-0.jpg",
+    "sha256": "a9cfe96e6f58ca34347900e98907a2e27dfd39409cb9da20e158e48fcc5ec4ab",
+    "decoded_dimensions": [
+      3840,
+      644
+    ],
+    "owners": [
+      {
+        "id": "daily-01-12",
+        "title": "Nintendo Switch presentation",
+        "year": 2017
+      },
+      {
+        "id": "switch",
+        "title": "Nintendo Switch",
+        "year": 2017
+      }
+    ],
+    "observed_visual_content": "An actual original Nintendo Switch tablet profile with top buttons and vent.",
+    "decision": "approve_subject_match",
+    "reason": "Observed characters, environment, interface or visible product identity match the named subject. This finding does not authenticate a capture date, original platform, rights clearance or narrative paragraph.",
+    "owner_decisions": [
+      {
+        "owner_id": "daily-01-12",
+        "owner_title": "Nintendo Switch presentation",
+        "decision": "approve_subject_match",
+        "reason": "Observed characters, environment, interface or visible product identity match the named subject. This finding does not authenticate a capture date, original platform, rights clearance or narrative paragraph."
+      },
+      {
+        "owner_id": "switch",
+        "owner_title": "Nintendo Switch",
+        "decision": "approve_subject_match",
+        "reason": "Observed characters, environment, interface or visible product identity match the named subject. This finding does not authenticate a capture date, original platform, rights clearance or narrative paragraph."
+      }
+    ],
+    "rights_review": "Unchanged inherited rights metadata; visual subject relevance is not permission or a rights signoff.",
+    "association_note": "The same actual2017 Switch hardware view is pertinent to both the launch-presentation article and the console article; neither association implies this is a photograph of the presentation event."
+  },
+  "visual_finding": "The full-size photograph shows Nintendo Switch2 hardware with blue/orange stick surrounds, a wide U-shaped rear support and the 2025 body configuration. The source filename and description explicitly identify Nintendo Switch2. It is not the original2017 Switch.",
+  "reason": "A flat hardware profile was misidentified in the earlier contact-sheet review. It cannot illustrate a2017 console or January2017 presentation as original hardware.",
+  "entries": [
+    {
+      "entry_id": "switch",
+      "action": "quarantine_unrelated_hardware_revision",
+      "remove_match": {
+        "source_page": "https://commons.wikimedia.org/wiki/File:Nintendo_Switch_2_20250605_HOF4739_RAW-Export.png",
+        "sha256": "a9cfe96e6f58ca34347900e98907a2e27dfd39409cb9da20e158e48fcc5ec4ab",
+        "legacy_url": "https://raw.githubusercontent.com/LoZazaMastro/Playhub/0c5c103403813431e23b40f90c75fba6d51a9759/assets/on-this-day/v1/day-03-11-0.jpg"
+      },
+      "original_assignments": [
+        {
+          "url": "https://raw.githubusercontent.com/LoZazaMastro/Playhub/0c5c103403813431e23b40f90c75fba6d51a9759/assets/on-this-day/v1/day-03-11-0.jpg",
+          "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Nintendo_Switch_2_20250605_HOF4739_RAW-Export.png/3840px-Nintendo_Switch_2_20250605_HOF4739_RAW-Export.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_page": "https://commons.wikimedia.org/wiki/File:Nintendo_Switch_2_20250605_HOF4739_RAW-Export.png",
+          "title": "Nintendo Switch: console from the Playhub collection",
+          "creator": "Original image creator not identified in the Playhub record",
+          "license": "PantheraLeo1359531 · CC BY 4.0",
+          "credit": "Original image creator not identified in the Playhub record / Playhub historical collection / PantheraLeo1359531 · CC BY 4.0",
+          "width": 3840,
+          "height": 644,
+          "native_long_edge": 3840,
+          "quality_verified": "Pinned remote GET and full decode; SHA-256 matches the read-only Playhub asset. No resizing or generated enlargement by Pixel Museum.",
+          "verification": {
+            "verified": true,
+            "status": 200,
+            "width": 3840,
+            "height": 644,
+            "sha256": "a9cfe96e6f58ca34347900e98907a2e27dfd39409cb9da20e158e48fcc5ec4ab",
+            "checked_utc": "2026-10-20T20:58:57.640625+00:00"
+          },
+          "provenance": {
+            "playhub_file": "day-03-11-0.jpg",
+            "playhub_subject": "Nintendo Switch",
+            "original_metadata": {
+              "file": "day-03-11-0.jpg",
+              "subject": "Nintendo Switch",
+              "kind": "console",
+              "credit": "PantheraLeo1359531 · CC BY 4.0",
+              "rights": "PantheraLeo1359531 · CC BY 4.0",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nintendo_Switch_2_20250605_HOF4739_RAW-Export.png",
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Nintendo_Switch_2_20250605_HOF4739_RAW-Export.png/3840px-Nintendo_Switch_2_20250605_HOF4739_RAW-Export.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            }
+          },
+          "rights_review": "Source attribution requires review"
+        }
+      ],
+      "retained_correct_subject_candidates": [
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Nintendo-Switch-Console-Docked-wJoyConRB.jpg/1920px-Nintendo-Switch-Console-Docked-wJoyConRB.jpg",
+          "original_url": "https://upload.wikimedia.org/wikipedia/commons/7/76/Nintendo-Switch-Console-Docked-wJoyConRB.jpg",
+          "source_page": "https://commons.wikimedia.org/wiki/File:Nintendo-Switch-Console-Docked-wJoyConRB.jpg",
+          "title": "Original Nintendo Switch docked with Joy-Con",
+          "creator": "Evan-Amos",
+          "license": "Public domain",
+          "license_url": "",
+          "credit": "Evan-Amos / Wikimedia Commons / Public domain",
+          "width": 1920,
+          "height": 1097,
+          "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+          "native_long_edge": 1920
+        }
+      ],
+      "candidate_note": "The existing original docked Switch photograph remains a candidate only where present. No console photo is represented as a photograph of the January2017 presentation event."
+    },
+    {
+      "entry_id": "daily-01-12",
+      "action": "quarantine_unrelated_hardware_revision",
+      "remove_match": {
+        "source_page": "https://commons.wikimedia.org/wiki/File:Nintendo_Switch_2_20250605_HOF4739_RAW-Export.png",
+        "sha256": "a9cfe96e6f58ca34347900e98907a2e27dfd39409cb9da20e158e48fcc5ec4ab",
+        "legacy_url": "https://raw.githubusercontent.com/LoZazaMastro/Playhub/0c5c103403813431e23b40f90c75fba6d51a9759/assets/on-this-day/v1/day-03-11-0.jpg"
+      },
+      "original_assignments": [
+        {
+          "url": "https://raw.githubusercontent.com/LoZazaMastro/Playhub/0c5c103403813431e23b40f90c75fba6d51a9759/assets/on-this-day/v1/day-03-11-0.jpg",
+          "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Nintendo_Switch_2_20250605_HOF4739_RAW-Export.png/3840px-Nintendo_Switch_2_20250605_HOF4739_RAW-Export.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "source_page": "https://commons.wikimedia.org/wiki/File:Nintendo_Switch_2_20250605_HOF4739_RAW-Export.png",
+          "title": "Nintendo Switch: console from the Playhub collection",
+          "creator": "Original image creator not identified in the Playhub record",
+          "license": "PantheraLeo1359531 · CC BY 4.0",
+          "credit": "Original image creator not identified in the Playhub record / Playhub historical collection / PantheraLeo1359531 · CC BY 4.0",
+          "width": 3840,
+          "height": 644,
+          "native_long_edge": 3840,
+          "quality_verified": "Pinned remote GET and full decode; SHA-256 matches the read-only Playhub asset. No resizing or generated enlargement by Pixel Museum.",
+          "verification": {
+            "verified": true,
+            "status": 200,
+            "width": 3840,
+            "height": 644,
+            "sha256": "a9cfe96e6f58ca34347900e98907a2e27dfd39409cb9da20e158e48fcc5ec4ab",
+            "checked_utc": "2026-10-20T20:58:57.640625+00:00"
+          },
+          "provenance": {
+            "playhub_file": "day-03-11-0.jpg",
+            "playhub_subject": "Nintendo Switch",
+            "original_metadata": {
+              "file": "day-03-11-0.jpg",
+              "subject": "Nintendo Switch",
+              "kind": "console",
+              "credit": "PantheraLeo1359531 · CC BY 4.0",
+              "rights": "PantheraLeo1359531 · CC BY 4.0",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nintendo_Switch_2_20250605_HOF4739_RAW-Export.png",
+              "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Nintendo_Switch_2_20250605_HOF4739_RAW-Export.png/3840px-Nintendo_Switch_2_20250605_HOF4739_RAW-Export.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+            }
+          },
+          "rights_review": "Source attribution requires review"
+        }
+      ],
+      "retained_correct_subject_candidates": [
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Nintendo-Switch-Console-Docked-wJoyConRB.jpg/1920px-Nintendo-Switch-Console-Docked-wJoyConRB.jpg",
+          "original_url": "https://upload.wikimedia.org/wikipedia/commons/7/76/Nintendo-Switch-Console-Docked-wJoyConRB.jpg",
+          "source_page": "https://commons.wikimedia.org/wiki/File:Nintendo-Switch-Console-Docked-wJoyConRB.jpg",
+          "title": "Original Nintendo Switch docked with Joy-Con",
+          "creator": "Evan-Amos",
+          "license": "Public domain",
+          "license_url": "",
+          "credit": "Evan-Amos / Wikimedia Commons / Public domain",
+          "width": 1920,
+          "height": 1097,
+          "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+          "native_long_edge": 1920
+        }
+      ],
+      "candidate_note": "The existing original docked Switch photograph remains a candidate only where present. No console photo is represented as a photograph of the January2017 presentation event."
+    }
+  ],
+  "preservation": "Do not delete or modify Playhub source files, pinned remote assets or the previous review. Exclude only these incorrect runtime associations; do not relabel this image as an older model.",
+  "editorial_signoffs": 0
+}

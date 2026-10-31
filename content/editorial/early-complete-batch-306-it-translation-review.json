@@ -1,0 +1,108 @@
+{
+  "status": "PASS",
+  "locale": "it",
+  "entries": [
+    {
+      "entry_id": "the-division-2",
+      "source_fields_sha256": "1e3641ff4435f72766b1771c0fd086cfef3debad8b7aebd11ab04cb0a89d5a9a",
+      "translation_sha256": "bc4779d7b344d51e8f9d505d285b710aed6589f5e451842def53fe8333f0a836",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch306/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "45c9e5495a188e90e9463c3e0663c241dce5b773f95c6ba3aaffd3eeb53f9bd7"
+    },
+    {
+      "entry_id": "wikipedia-57651025",
+      "source_fields_sha256": "a21f1112246b23a29955fbdab223f7a0b8d97528eaf5c21b9ac48a3c7d289a02",
+      "translation_sha256": "f5c273dd884d67ebf45514d770bdbe03dcafbf6f2c1117be58b79554fe5507d9",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch306/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "45c9e5495a188e90e9463c3e0663c241dce5b773f95c6ba3aaffd3eeb53f9bd7"
+    },
+    {
+      "entry_id": "workbook-03-29-yoshi-s-crafted-world",
+      "source_fields_sha256": "5a28c1405fbf72805f20021026b7bdc1086f16a0dd0eca55680d02f6af6285eb",
+      "translation_sha256": "5f51c90e9e50898b0a743bdb407ab58d06a44389b28a5ffa9f3211ca7add1566",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch306/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "45c9e5495a188e90e9463c3e0663c241dce5b773f95c6ba3aaffd3eeb53f9bd7"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "package_audit",
+    "actual_receipt": "build/research/catalog-2019-chronological/march-three-private/independent-package-audit-approval.json",
+    "actual_receipt_sha256": "52b141467cd7ba143063a6d4ec540bbd6ca977e2aa0a6f4fd0a4cc2ebfb3f1a6",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "package_audit",
+      "reviewed_index": "build/research/catalog-2019-chronological/march-three-private/three-original-source-media-four-language-private-index.json",
+      "reviewed_index_sha256": "acbf0d7a37376b81c40ee47ef5660407dcaa3341caedb2f4723e26f5d8af3bef",
+      "owners": [
+        {
+          "entry_id": "the-division-2",
+          "slug": "division-2",
+          "source": "build/research/catalog-2019-chronological/march-three-private/division-2/complete-original-source-media-private-candidate.json",
+          "source_sha256": "1e093a0a03dd5f4b9ed7694bf6114d12bf4b9522d0894e7ef8e916bb665d2864",
+          "target": "build/research/catalog-2019-chronological/march-three-private/division-2/complete-four-language-private-candidate.json",
+          "target_sha256": "5dc8f67b4544635e558088fa99cfe9286b4a2cfdd336b95af37261c7dd21a627",
+          "contact": "build/research/catalog-2019-chronological/march-three-private/division-2/final-selected-media-contact.jpg",
+          "contact_sha256": "19eb4fa206c2e166c2867c38c0e6ec62c97a5b7143325cd57ed982c7a4eeccdc",
+          "english_cards": 5,
+          "localized_cards": 20,
+          "images": 7,
+          "tracks": 3,
+          "finite_errata": 1
+        },
+        {
+          "entry_id": "wikipedia-57651025",
+          "slug": "sekiro",
+          "source": "build/research/catalog-2019-chronological/march-three-private/sekiro/complete-original-source-media-private-candidate.json",
+          "source_sha256": "1eb7110bf43abec8f6efae5b4cc8f302699aef4918a222d8d7986d21aeacbfa5",
+          "target": "build/research/catalog-2019-chronological/march-three-private/sekiro/complete-four-language-private-candidate.json",
+          "target_sha256": "961c771a2fb0c45317dd97153f443d820d09b13af058825a078ee92d5ae936e1",
+          "contact": "build/research/catalog-2019-chronological/march-three-private/sekiro/final-selected-media-contact.jpg",
+          "contact_sha256": "5378bd7220f0ab61ae0dac8f600c480929c06a1f10abf94dbde5cdbd436534b5",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 5,
+          "tracks": 3,
+          "finite_errata": 0
+        },
+        {
+          "entry_id": "workbook-03-29-yoshi-s-crafted-world",
+          "slug": "yoshi",
+          "source": "build/research/catalog-2019-chronological/march-three-private/yoshi/complete-original-source-media-private-candidate.json",
+          "source_sha256": "a82d1195d31d538e1e83552518b530e37f9fab596510e19cf02e5753df161aa9",
+          "target": "build/research/catalog-2019-chronological/march-three-private/yoshi/complete-four-language-private-candidate.json",
+          "target_sha256": "bc37acbf03c451e66dad500db60dc2181b09e93cc246698bd2c2da054330cffe",
+          "contact": "build/research/catalog-2019-chronological/march-three-private/yoshi/final-selected-media-contact.jpg",
+          "contact_sha256": "fea410dc1f42e449a7af7f966908e36c0109728070cc9e9ed1d8ae8c7f2b898e",
+          "english_cards": 4,
+          "localized_cards": 16,
+          "images": 6,
+          "tracks": 3,
+          "finite_errata": 0
+        }
+      ],
+      "review_scope": {
+        "english_paragraphs_read": 12,
+        "localized_paragraphs_read": 48,
+        "final_media_images_viewed": 18,
+        "new_music_public_metadata_read": 4,
+        "preserved_music_not_reverified": true,
+        "primary_sources_read": [
+          "https://www.fromsoftware.jp/ww/pressrelease/20180910_sekiro_shadowsdietwice_releasedate.html",
+          "https://blog.playstation.com/?p=207853",
+          "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-games/Yoshi-s-Crafted-World-1233953.html"
+        ]
+      },
+      "resolved_findings": [
+        "Removed unrelated Homefront launch source from The Division 2.",
+        "Corrected masculine article for localized Sundream Stone names in Italian, French and Spanish."
+      ],
+      "limitations": [
+        "Public metadata verifies stream identity and advertised AAC availability; PS5 playback is not claimed."
+      ],
+      "production_writes": false,
+      "prior_approved_index_sha256": "ea0b67354fba68271040b3470fa0fd516cca76414ce5024dd8e70669122667cb",
+      "mechanical_addendum": "Two inherited Division 2 screenshots lacked creator. Only the creator metadata was supplied as Ubisoft Massive / Ubisoft (game); original capture contributor not identified. Pixel bytes, URLs and existing rights statements are unchanged."
+    }
+  }
+}

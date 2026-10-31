@@ -1,0 +1,619 @@
+{
+  "batch_id": "296-human-history",
+  "sources": [
+    {
+      "source_id": "king_stanford",
+      "title": "Nobel Peace Prize, King Institute",
+      "url": "https://kinginstitute.stanford.edu/nobel-peace-prize",
+      "verification_scope": "Pagina fornita e letta: annuncio 14 ottobre 1964 e accettazione a Oslo 10 dicembre; riconoscimento del movimento nel suo insieme."
+    },
+    {
+      "source_id": "king_nobel",
+      "title": "Martin Luther King Jr., biografia Nobel",
+      "url": "https://www.nobelprize.org/prizes/peace/1964/king/biographical/?hss_channel=fbp-1451703848411077",
+      "verification_scope": "Estratto indicizzato ufficiale: trentacinque anni e più giovane destinatario del premio per la pace all’epoca. L’elenco generale fornito risponde 403: non dichiarato letto."
+    },
+    {
+      "source_id": "dune_library",
+      "title": "Dive into Dune, Toronto Public Library",
+      "url": "https://blogs.tpl.ca/bookbuzz/2021/10/dive-into-dune/",
+      "verification_scope": "Articolo della biblioteca sulla prima edizione posseduta dalla Merril Collection: volume Chilton pubblicato nell’agosto 1965."
+    },
+    {
+      "source_id": "dune_sfwa",
+      "title": "1965 Nebula Awards",
+      "url": "https://nebulas.sfwa.org/award-year/1965/",
+      "verification_scope": "Archivio ufficiale SFWA: premi relativi al 1965 presentati l’11 marzo 1966; Dune primo vincitore del Nebula per il romanzo."
+    },
+    {
+      "source_id": "dune_award",
+      "title": "Dune, SFWA",
+      "url": "https://nebulas.sfwa.org/nominated-work/dune/",
+      "verification_scope": "Scheda dell’ente premiante: primo Nebula e Hugo condiviso. Nessun autore o titolo del co-vincitore aggiunto al testo."
+    },
+    {
+      "source_id": "dylan_archive",
+      "title": "Bob Dylan Archive, serie 12",
+      "url": "https://woodyguthriecenter.org/archives/collections/bob-dylan-archive/",
+      "verification_scope": "Catalogo dei materiali archivistici di Dylan: data di Highway 61 Revisited 30 agosto 1965."
+    },
+    {
+      "source_id": "dylan_official",
+      "title": "Highway 61 Revisited, sito ufficiale",
+      "url": "https://www.bobdylan.com/albums/highway-61-revisited/",
+      "verification_scope": "Elenco ufficiale dell’album; titoli delle canzoni conservati in inglese in tutte le lingue. Nessun testo musicale riprodotto."
+    },
+    {
+      "source_id": "moore_intel",
+      "title": "Moore’s Law, Intel",
+      "url": "https://www.intel.com/content/www/us/en/newsroom/resources/moores-law.htm",
+      "verification_scope": "Pagina letta: osservazione annuale 1965, revisione biennale 1975, aumento contenuto del costo e dipendenza da innovazione; articolo originale su Electronics del 19 aprile 1965."
+    },
+    {
+      "source_id": "programma_archive",
+      "title": "Alle origini del personal computer: l’Olivetti Programma 101",
+      "url": "https://www.storiaolivetti.it/articolo/87-alle-origini-del-personal-computer-lolivetti-pr/",
+      "verification_scope": "Archivio aziendale letto: BEMA New York ottobre 1965, squadra Perotto, prezzo iniziale 3.200 dollari. La sua data 1967 per HP9100 non è stata importata."
+    },
+    {
+      "source_id": "programma_desandre",
+      "title": "Microstoria del progetto della Programma 101, Giovanni De Sandre",
+      "url": "https://www.italianculturepodcast.com/2019/10/18/microstoria-del-progetto-della-programma-101/",
+      "verification_scope": "Testimonianza del progettista, riprodotta con il suo permesso: avviamento della produzione e preparazione del lancio BEMA dopo la presentazione interna del 1964. Fonte primaria letta."
+    },
+    {
+      "source_id": "programma_research",
+      "title": "Early Italian computers: Pier Giorgio Perotto’s P101, Massimo Guarnieri",
+      "url": "https://www.research.unipd.it/retrieve/e14fb26e-3e4d-3de1-e053-1705fe0ac030/P101.pdf",
+      "verification_scope": "Articolo di ricerca storica, pp. 5–6 lette: industrializzazione per produzione in serie nel 1965, collaudi dei primi esemplari e prezzo USA. Il diverso 1966 in un catalogo museale non sostituisce l’avviamento documentato nel 1965."
+    },
+    {
+      "source_id": "vra_nara",
+      "title": "Voting Rights Act (1965), National Archives",
+      "url": "https://www.archives.gov/milestone-documents/voting-rights-act",
+      "verification_scope": "Fonte istituzionale: firma il 6 agosto 1965 e significato nei rapporti fra potere federale e Stati. Giudizio storico attribuito, non assunto come superlativo redazionale."
+    },
+    {
+      "source_id": "vra_revisions",
+      "title": "Laws and Court Cases, National Archives",
+      "url": "https://www.archives.gov/research/african-americans/vote/laws-and-courts",
+      "verification_scope": "Conferma cinque ampliamenti; formulazione resa cinque importanti interventi, senza affermare che esauriscano ogni modifica tecnica. Non importata l’imprecisa descrizione dell’intera legge come soggetta a scadenza."
+    },
+    {
+      "source_id": "vra_doj",
+      "title": "Introduction to Federal Voting Rights Laws, Department of Justice",
+      "url": "https://www.justice.gov/crt/introduction-federal-voting-rights-laws-0",
+      "verification_scope": "Fonte istituzionale: garanzie del XIV e XV emendamento; giudizio di efficacia attribuito al Dipartimento."
+    },
+    {
+      "source_id": "persona_foundation",
+      "title": "Persona, Ingmar Bergman Foundation",
+      "url": "https://www.ingmarbergman.se/en/production/persona",
+      "verification_scope": "Scheda letta: regia/sceneggiatura Bergman, società produttrice Svensk Filmindustri; prima al cinema Spegeln di Stoccolma il 18 ottobre 1966. Censura e riprese non usate come release."
+    },
+    {
+      "source_id": "persona_bfi",
+      "title": "Persona, BFI Southbank programme notes",
+      "url": "https://bfidatadigipres.github.io/big%20screen%20classics/2022/08/05/persona/",
+      "verification_scope": "Crediti della cineteca: Svensk Filmindustri, Lars-Owe Carlberg production manager, Bergman regia e sceneggiatura. Non trasformato il responsabile di produzione in produttore personale."
+    },
+    {
+      "source_id": "revolver_official",
+      "title": "Albums, The Beatles",
+      "url": "https://www.thebeatles.com/albums",
+      "verification_scope": "Catalogo ufficiale: Revolver 5 agosto 1966 e Rubber Soul 3 dicembre 1965. Fine delle tournée distinta dalla cessazione di ogni successiva esibizione."
+    },
+    {
+      "source_id": "trek_official",
+      "title": "The Star Trek Canadian Connections You May Have Missed",
+      "url": "https://www.startrek.com/news/the-star-trek-canadian-connections-you-may-have-missed",
+      "verification_scope": "Fonte ufficiale della serie: prima mondiale canadese CTV il 6 settembre 1966, seguita dalla prima NBC statunitense l’8."
+    },
+    {
+      "source_id": "pepper_may",
+      "title": "Sgt. Pepper, anniversario 26 maggio, The Beatles",
+      "url": "https://www.thebeatles.com/otd-1967-uk-lp-sgt-peppers-lonely-hearts-club-band-was-released",
+      "verification_scope": "Pagina ufficiale che ricorda il 26 maggio 1967; confrontata con le pagine ufficiali che riportano 1 giugno."
+    },
+    {
+      "source_id": "pepper_june",
+      "title": "Sgt. Pepper’s Lonely Hearts Club Band, The Beatles",
+      "url": "https://www.thebeatles.com/sgt-peppers-lonely-hearts-club-band-0",
+      "verification_scope": "Scheda ufficiale che indica 1 giugno 1967. La data della ristampa 26 maggio 2017 non è usata come prova sull’originale."
+    },
+    {
+      "source_id": "pepper_lewisohn",
+      "title": "Sgt. Pepper: I Don’t Want to Spoil the Party, The Beatles Story",
+      "url": "https://www.beatlesstory.com/blog/sgt-pepper-i-dont-want-to-spoil-the-party/",
+      "verification_scope": "Pagina letta e dichiarazione diretta di Mark Lewisohn: uscita britannica anticipata dal 1 giugno al 26 maggio; copie in alcuni negozi di Londra già il 25. La collocazione mensile risolve senza inventare un giorno unico di prima disponibilità."
+    }
+  ],
+  "decisions": [
+    {
+      "target_id": "history-1964-king-nobel-peace",
+      "problem": "Voce esplicitamente relativa al Nobel, non biografia da ricollocare alla nascita.",
+      "conclusion": "Mantenuto 14 ottobre 1964 per l’annuncio della scelta. Nel testo distinta la consegna del 10 dicembre; primato anagrafico limitato al premio per la pace e all’epoca.",
+      "source_ids": [
+        "king_stanford",
+        "king_nobel"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1965-dune-novel",
+      "problem": "Pubblicazione seriale, volume e anno del premio possono confondersi.",
+      "conclusion": "Volume agosto 1965; primo Nebula presentato nel 1966 per l’annata 1965 e Hugo condiviso nel 1966. Nessuna retrodatazione del volume alla serializzazione.",
+      "source_ids": [
+        "dune_library",
+        "dune_sfwa",
+        "dune_award"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1965-highway-61-revisited",
+      "problem": "Occorre una data di pubblicazione del disco, non delle sessioni.",
+      "conclusion": "30 agosto 1965 confermato nel catalogo dell’archivio Dylan. Conservati tutti i brani citati, undici minuti e funzione geografica del titolo.",
+      "source_ids": [
+        "dylan_archive",
+        "dylan_official"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1965-moore-s-law",
+      "problem": "La frase che la previsione abbia sempre retto dal 1975 è assoluta e aperta sul presente.",
+      "conclusion": "Resa una previsione empirica divenuta obiettivo industriale nei decenni successivi, dipendente da innovazione. Conservati annualità iniziale, revisione biennale e crescita composta approssimata del 41%. Il riferimento alla curva di esperienza è spiegato in linguaggio comune.",
+      "source_ids": [
+        "moore_intel"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1965-programma-101",
+      "problem": "Presentazione fieristica, avviamento produttivo e disponibilità commerciale non sono la stessa data.",
+      "conclusion": "Ottobre 1965 riguarda esplicitamente BEMA; mantenuto il 1965 per l’avvio della produzione, confermato da testimonianza del progettista e studio storico. Nessun giorno di vendita dedotto dalla fiera. Conservati Perottina/P101, Ivrea, prezzo e stima monetaria 2025 già fornita.",
+      "source_ids": [
+        "programma_archive",
+        "programma_desandre",
+        "programma_research"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1965-voting-rights-act-of-1965",
+      "problem": "I giudizi di efficacia e rilievo costituzionale hanno una fonte; cinque modifiche non va inteso come conteggio di ogni emendamento tecnico.",
+      "conclusion": "Entrambi i giudizi restano attribuiti. Conservati XIV/XV emendamento, copertura nazionale e particolare rilievo del Sud. Data di firma 6 agosto 1965.",
+      "source_ids": [
+        "vra_nara",
+        "vra_revisions",
+        "vra_doj"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1966-persona-1966-film",
+      "problem": "L’INPUT attribuisce anche la produzione personalmente a Bergman; i crediti istituzionali consultati distinguono autore/regista, società produttrice e responsabile di produzione.",
+      "conclusion": "Il testo usa i crediti positivamente documentati: scritto/diretto da Bergman, prodotto da Svensk Filmindustri. Non asserisce che Lars-Owe Carlberg fosse il produttore. Conservate tutte le interpretazioni tematiche come letture critiche e il riferimento a Peter Cowie in parafrasi attribuita.",
+      "source_ids": [
+        "persona_foundation",
+        "persona_bfi"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1966-revolver-beatles-album",
+      "problem": "Retirement as live performers è più assoluto della fine delle tournée regolari.",
+      "conclusion": "Reso fine delle tournée regolari; conservati tre mesi di pausa, settimo album, doppio lato A, Rubber Soul, Londra, LSD, filosofia orientale, avanguardia, morte e superamento delle preoccupazioni materiali.",
+      "source_ids": [
+        "revolver_official"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1966-star-trek-the-original-series",
+      "problem": "La prima NBC dell’8 settembre non è la prima trasmissione mondiale.",
+      "conclusion": "Prima disponibilità televisiva CTV Canada 6 settembre 1966; seguito NBC 8 settembre esplicitato. Tre stagioni, 79 episodi e cancellazione 1969 conservati.",
+      "source_ids": [
+        "trek_official"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1967-sgt-pepper-s-lonely-hearts-club-band",
+      "problem": "26 maggio e 1 giugno figurano entrambi nelle pagine ufficiali; la testimonianza diretta distingue anche copie londinesi il 25 maggio.",
+      "conclusion": "Testo: arrivo nei negozi britannici a fine maggio 1967. Proposta di collocazione maggio 1967, precisione mensile fondata sulla disponibilità effettiva. Nessun giorno unico non dimostrato; la data tradizionale di giugno non sostituisce le vendite precedenti.",
+      "source_ids": [
+        "pepper_may",
+        "pepper_june",
+        "pepper_lewisohn"
+      ],
+      "text_applied": true
+    }
+  ],
+  "metadata_proposals": [
+    {
+      "target_id": "history-1965-dune-novel",
+      "field": "timeline_date",
+      "original": {
+        "year": 1965,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1965,
+        "month": 8,
+        "day": 0,
+        "precision": "month",
+        "event_semantics": "Pubblicazione della prima edizione in volume",
+        "region": "Stati Uniti"
+      },
+      "source_ids": [
+        "dune_library"
+      ],
+      "reason": "Proposta documentata separata: nessuna modifica diretta al catalogo, ai file originali o ai metadati del template."
+    },
+    {
+      "target_id": "history-1965-highway-61-revisited",
+      "field": "timeline_date",
+      "original": {
+        "year": 1965,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1965,
+        "month": 8,
+        "day": 30,
+        "precision": "day",
+        "event_semantics": "Pubblicazione dell’album",
+        "region": "Stati Uniti"
+      },
+      "source_ids": [
+        "dylan_archive"
+      ],
+      "reason": "Proposta documentata separata: nessuna modifica diretta al catalogo, ai file originali o ai metadati del template."
+    },
+    {
+      "target_id": "history-1965-moore-s-law",
+      "field": "timeline_date",
+      "original": {
+        "year": 1965,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1965,
+        "month": 4,
+        "day": 19,
+        "precision": "day",
+        "event_semantics": "Pubblicazione dell’articolo originale su Electronics",
+        "region": "Stati Uniti"
+      },
+      "source_ids": [
+        "moore_intel"
+      ],
+      "reason": "Proposta documentata separata: nessuna modifica diretta al catalogo, ai file originali o ai metadati del template."
+    },
+    {
+      "target_id": "history-1965-voting-rights-act-of-1965",
+      "field": "timeline_date",
+      "original": {
+        "year": 1965,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1965,
+        "month": 8,
+        "day": 6,
+        "precision": "day",
+        "event_semantics": "Firma della legge, evento della voce",
+        "region": "Stati Uniti"
+      },
+      "source_ids": [
+        "vra_nara"
+      ],
+      "reason": "Proposta documentata separata: nessuna modifica diretta al catalogo, ai file originali o ai metadati del template."
+    },
+    {
+      "target_id": "history-1966-persona-1966-film",
+      "field": "timeline_date",
+      "original": {
+        "year": 1966,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1966,
+        "month": 10,
+        "day": 18,
+        "precision": "day",
+        "event_semantics": "Prima uscita cinematografica documentata",
+        "region": "Svezia, Stoccolma"
+      },
+      "source_ids": [
+        "persona_foundation"
+      ],
+      "reason": "Proposta documentata separata: nessuna modifica diretta al catalogo, ai file originali o ai metadati del template."
+    },
+    {
+      "target_id": "history-1966-revolver-beatles-album",
+      "field": "timeline_date",
+      "original": {
+        "year": 1966,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1966,
+        "month": 8,
+        "day": 5,
+        "precision": "day",
+        "event_semantics": "Pubblicazione dell’album",
+        "region": "Regno Unito"
+      },
+      "source_ids": [
+        "revolver_official"
+      ],
+      "reason": "Proposta documentata separata: nessuna modifica diretta al catalogo, ai file originali o ai metadati del template."
+    },
+    {
+      "target_id": "history-1966-star-trek-the-original-series",
+      "field": "timeline_date",
+      "original": {
+        "year": 1966,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1966,
+        "month": 9,
+        "day": 6,
+        "precision": "day",
+        "event_semantics": "Prima trasmissione televisiva pubblica",
+        "region": "Canada, CTV"
+      },
+      "source_ids": [
+        "trek_official"
+      ],
+      "reason": "Proposta documentata separata: nessuna modifica diretta al catalogo, ai file originali o ai metadati del template."
+    },
+    {
+      "target_id": "history-1967-sgt-pepper-s-lonely-hearts-club-band",
+      "field": "timeline_date",
+      "original": {
+        "year": 1967,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1967,
+        "month": 5,
+        "day": 0,
+        "precision": "month",
+        "event_semantics": "Prima disponibilità commerciale documentata dell’album",
+        "region": "Regno Unito"
+      },
+      "source_ids": [
+        "pepper_may",
+        "pepper_lewisohn"
+      ],
+      "reason": "Proposta documentata separata: nessuna modifica diretta al catalogo, ai file originali o ai metadati del template."
+    }
+  ],
+  "editorial_review": {
+    "fidelity": "Confrontate tutte le dieci card con INPUT: mantenuti contenuti distintivi, fatti e attribuzioni. Duplicazione nella Programma 101 consolidata nella stessa card, senza perdere informazioni. Temi interpretativi di Persona mantenuti integralmente; nessun brano musicale tradotto.",
+    "dates": "Nobel a King mantenuto come evento esplicito. Opere collocate secondo pubblicazione/disponibilità: volume Dune distinto da seriale e premio, Star Trek prima canadese distinta da NBC, Sgt. Pepper precisione mensile con distribuzione documentata. Per Programma 101 la fiera non diventa un giorno di vendita.",
+    "language_review": "EN scritto per primo, poi IT/FR/DE/ES; riletti introduzioni, titoli, paragrafi, nomi e numeri. Conservata la forma Paul Atreides in tutte le lingue. Titoli descrittivi adattati; titoli delle opere e delle canzoni conservati.",
+    "rights": "Tutti i riferimenti, revisioni, licenze e attribuzioni originali restano nell’INPUT intatto. Nuove verifiche registrate con URL e perimetro di consultazione. Nessuna attribuzione dei testi originali cancellata.",
+    "english_written_first": true,
+    "languages": [
+      "en",
+      "it",
+      "fr",
+      "de",
+      "es"
+    ],
+    "entry_count": 10,
+    "card_count_per_language": 10,
+    "reviewed_at": "2026-10-30T05:27:13.527401+00:00",
+    "english_summary_word_range": [
+      34,
+      39
+    ],
+    "structural_checks": "Schema, ID, ordine, numero di card e cinque lingue verificati dal validatore. Tutti i titoli presenti; nessun HTML o Markdown nei testi."
+  },
+  "status": "completed",
+  "validation": {
+    "valid": true,
+    "batch_id": "296-human-history",
+    "completed": true,
+    "entry_count": 10,
+    "card_count_per_language": 10,
+    "language_count": 5,
+    "translated_card_count": 50,
+    "entry_card_counts": {
+      "history-1964-king-nobel-peace": 1,
+      "history-1965-dune-novel": 1,
+      "history-1965-highway-61-revisited": 1,
+      "history-1965-moore-s-law": 1,
+      "history-1965-programma-101": 1,
+      "history-1965-voting-rights-act-of-1965": 1,
+      "history-1966-persona-1966-film": 1,
+      "history-1966-revolver-beatles-album": 1,
+      "history-1966-star-trek-the-original-series": 1,
+      "history-1967-sgt-pepper-s-lonely-hearts-club-band": 1
+    },
+    "issue_counts": {
+      "history-1964-king-nobel-peace": 0,
+      "history-1965-dune-novel": 0,
+      "history-1965-highway-61-revisited": 0,
+      "history-1965-moore-s-law": 0,
+      "history-1965-programma-101": 0,
+      "history-1965-voting-rights-act-of-1965": 0,
+      "history-1966-persona-1966-film": 0,
+      "history-1966-revolver-beatles-album": 0,
+      "history-1966-star-trek-the-original-series": 0,
+      "history-1967-sgt-pepper-s-lonely-hearts-club-band": 0
+    },
+    "summary_checks": [
+      {
+        "entry_id": "history-1964-king-nobel-peace",
+        "feature_id": null,
+        "english_summary_words": 34
+      },
+      {
+        "entry_id": "history-1965-dune-novel",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "history-1965-highway-61-revisited",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "history-1965-moore-s-law",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "history-1965-programma-101",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "history-1965-voting-rights-act-of-1965",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "history-1966-persona-1966-film",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "history-1966-revolver-beatles-album",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "history-1966-star-trek-the-original-series",
+        "feature_id": null,
+        "english_summary_words": 34
+      },
+      {
+        "entry_id": "history-1967-sgt-pepper-s-lonely-hearts-club-band",
+        "feature_id": null,
+        "english_summary_words": 39
+      }
+    ],
+    "editorial_review": [
+      "history-1964-king-nobel-peace/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1964-king-nobel-peace/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1964-king-nobel-peace/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1964-king-nobel-peace/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1965-moore-s-law/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1965-moore-s-law/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1965-moore-s-law/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1965-moore-s-law/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1965-programma-101/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1965-programma-101/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1965-programma-101/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1965-programma-101/main/es: main title changed; check that this is a descriptive title and not an altered official name"
+    ],
+    "failures": []
+  },
+  "output_sha256": "094834872a6c1282ec1436353bd010391a6d6ce3f7468ef3aab46c14b82dee98",
+  "expansion_assessments": [
+    {
+      "target_id": "history-1964-king-nobel-peace",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1965-dune-novel",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1965-highway-61-revisited",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1965-moore-s-law",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1965-programma-101",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1965-voting-rights-act-of-1965",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1966-persona-1966-film",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1966-revolver-beatles-album",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1966-star-trek-the-original-series",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1967-sgt-pepper-s-lonely-hearts-club-band",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    }
+  ]
+}

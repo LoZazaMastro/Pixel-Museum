@@ -1,0 +1,570 @@
+{
+  "batch_id": "294-human-history",
+  "sources": [
+    {
+      "source_id": "benhur_afi",
+      "title": "American Film Institute, Ben-Hur",
+      "url": "https://catalog.afi.com/Film/52827-BEN-HUR",
+      "verification_scope": "Scheda consultata: prima mondiale New York 18 novembre 1959, produzione Cinecittà e MGM Camera 65. Fonte già fornita; conservati interpreti e osservazioni editoriali presenti in INPUT."
+    },
+    {
+      "source_id": "benhur_score",
+      "title": "Film Score Monthly, note della colonna sonora",
+      "url": "https://www.filmscoremonthly.com/fsmNotes/notes/fsmcdxv_i_notes.pdf",
+      "verification_scope": "URL originale preservato. La consultazione restituisce 403; non dichiarata lettura del PDF. Attribuzione a Miklós Rózsa e temi ricorrenti conservati dal materiale fornito."
+    },
+    {
+      "source_id": "laser_hrl",
+      "title": "Hughes Research Laboratories, The Laser",
+      "url": "https://www.hrl.com/about/laser",
+      "verification_scope": "Storia del laboratorio consultata nell’estratto indicizzato: primo laser funzionante 16 maggio 1960; conferenza stampa 7 luglio distinta dalla realizzazione."
+    },
+    {
+      "source_id": "pdp_dec",
+      "title": "Digital Equipment Corporation, 18-bit timeline, archivio CHM",
+      "url": "https://archive.computerhistory.org/resources/text/DEC/dec.digital_%28DEC%29_timeline_1957-1997.102630354/18-bit.htm",
+      "verification_scope": "Cronologia aziendale originale nell’estratto indicizzato: progetto 1959 e consegna del primo PDP-1 a BBN novembre 1960."
+    },
+    {
+      "source_id": "pdp_timeline",
+      "title": "Digital Equipment Corporation, Timeline Text",
+      "url": "https://archive.computerhistory.org/resources/text/DEC/dec.digital_%28DEC%29_timeline_1957-1997.102630354/timelinetext.htm",
+      "verification_scope": "Cronologia originale: prototipo presentato nel dicembre 1959; nessuna disponibilità di serie retrodatata al prototipo."
+    },
+    {
+      "source_id": "psycho_afi",
+      "title": "American Film Institute, Psycho",
+      "url": "https://catalog.afi.com/Film/53260-PSYCHO?cp=1&cxt=Filmography1&pos=0&sid=05f0bf97-6bc0-48df-ac67-6ecf9164533c&sr=2.2939005",
+      "verification_scope": "Scheda consultata nell’estratto indicizzato: apertura New York 16 giugno 1960 distinta da distribuzione generale agosto."
+    },
+    {
+      "source_id": "berlin_archive",
+      "title": "Bundesarchiv, Bau der Berliner Mauer",
+      "url": "https://www.bundesarchiv.de/themen-entdecken/online-entdecken/dokumente-zur-zeitgeschichte/bau-der-berliner-mauer/",
+      "verification_scope": "Documenti d’archivio e descrizione istituzionale: chiusura 13 agosto 1961; prime barriere e successiva costruzione in cemento. Non descritta la configurazione finale come già completa il primo giorno."
+    },
+    {
+      "source_id": "catch_publisher",
+      "title": "Simon & Schuster, Catch-22",
+      "url": "https://www.simonandschuster.com/books/Catch-22/Joseph-Heller/9781451621174",
+      "verification_scope": "Materiale storico dell’editore nell’estratto indicizzato: prima pubblicazione 10 ottobre 1961, distinta dalla data prevista in precedenza."
+    },
+    {
+      "source_id": "vostok_launch",
+      "title": "NASA Goddard StarChild, The launch of Vostok 1",
+      "url": "https://starchild.gsfc.nasa.gov/docs/StarChild/space_level2/vostok1.html",
+      "verification_scope": "Lancio 12 aprile 1961 e prima orbita umana; i 108 minuti descritti nel testo finale come durata lancio–atterraggio, non permanenza interamente in orbita."
+    },
+    {
+      "source_id": "vostok_flight",
+      "title": "NASA, April 1961 – First Human Entered Space",
+      "url": "https://www.nasa.gov/image-article/april-1961-first-human-entered-space/",
+      "verification_scope": "Durata di 108 minuti e atterraggio separato in paracadute. Il metadato di pagina 1 aprile non usato come data della missione."
+    },
+    {
+      "source_id": "vostok_table",
+      "title": "Leland L. Dubach e Carolyn Ng, NASA-TM-102924, tabella 17 Vostok Program",
+      "url": "https://ntrs.nasa.gov/api/citations/19900009927/downloads/19900009927.pdf",
+      "verification_scope": "Tabella originale NASA del 1988 consultata nell’estratto indicizzato: 12 aprile 1961, apogeo/perigeo 327/181 km. PDF completo oltre il limite di dimensione del lettore; non dichiarata lettura integrale. Record bibliografico https://ntrs.nasa.gov/citations/19900009927."
+    },
+    {
+      "source_id": "vostok_ros",
+      "title": "Agenția Spațială Română, Gagarin 50",
+      "url": "https://rosa.ro/ro/gagarin-50/",
+      "verification_scope": "Scheda dell’agenzia spaziale: 108 minuti, espulsione a 7 km; riporta perigeo 169 km. La differenza con il valore NASA è gestita attribuendo esplicitamente in prosa i parametri alla tabella NASA, senza presentare 181 come valore concordemente riportato."
+    },
+    {
+      "source_id": "cuba_nara",
+      "title": "National Archives, Cuban Missile Crisis",
+      "url": "https://www.archives.gov/news/topics/cuban-missile-crisis",
+      "verification_scope": "Periodo 16–28 ottobre 1962 e tredici giorni, consultato nell’estratto indicizzato."
+    },
+    {
+      "source_id": "cuba_state",
+      "title": "Office of the Historian, The Cuban Missile Crisis, October 1962",
+      "url": "https://history.state.gov/milestones/1961-1968/cuban-missile-crisis",
+      "verification_scope": "Contesto delle operazioni contro Cuba e delle installazioni sovietiche. La data delle fotografie non sostituisce l’inizio della crisi."
+    },
+    {
+      "source_id": "cuba_frus",
+      "title": "Foreign Relations of the United States, documento 247",
+      "url": "https://history.state.gov/historicaldocuments/frus1961-63v05/d247",
+      "verification_scope": "Documentazione primaria: Kennedy informato il 16 ottobre 1962."
+    },
+    {
+      "source_id": "cuba_testimony",
+      "title": "CIA Studies in Intelligence, The U-2 Program: A Russian Officer Remembers",
+      "url": "https://www.cia.gov/resources/csi/studies-in-intelligence/archives/vol-42-no-5/the-u-2-program-a-russian-officer-remembers/",
+      "verification_scope": "Testimonianza diretta consultata nell’estratto: missili intermedi in Gran Bretagna, Italia e Turchia e risposta sovietica. Conservati i paesi già presenti in INPUT; nessuna specifica di armamento aggiunta."
+    },
+    {
+      "source_id": "lawrence_bfi",
+      "title": "British Film Institute, Lawrence of Arabia",
+      "url": "https://whatson.bfi.org.uk/Online/default.asp?BOparam%3A%3AWScontent%3A%3AloadArticle%3A%3Apermalink=lawrence-of-arabia",
+      "verification_scope": "Fonte fornita letta: anno, regista, interprete, Freddie Young e Maurice Jarre; ambivalenza del personaggio e contesto politico."
+    },
+    {
+      "source_id": "lawrence_sony",
+      "title": "Sony Pictures, Lawrence of Arabia",
+      "url": "https://www.sonypictures.com/movies/lawrenceofarabia",
+      "verification_scope": "Fonte ufficiale fornita letta: film 1962 e rivolta araba durante la Prima guerra mondiale."
+    },
+    {
+      "source_id": "lawrence_premiere",
+      "title": "BFI, Watching Lawrence of Arabia for the first time",
+      "url": "https://www.bfi.org.uk/features/watching-lawrence-arabia-first-time-story-world-premiere",
+      "verification_scope": "Articolo della cineteca letto: prima mondiale all’Odeon Leicester Square 10 dicembre 1962. Distinta dalle proiezioni interne alla troupe del giorno precedente e dall’uscita americana."
+    },
+    {
+      "source_id": "amazing_register",
+      "title": "U.S. Copyright Office, Catalog of Copyright Entries 1962, Periodicals, vol. 16 part 2",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/95/Catalog_of_Copyright_Entries_1962_Periodicals_Jan-Dec_3D_Ser_Vol_16_Pt_2_%28IA_catalogofcopyrig3162libr%29.pdf",
+      "verification_scope": "Registro originale nell’estratto indicizzato: Amazing Fantasy vol.1 n.15, Sep62, ©5Jun, B976775. Documento integrale oltre il limite di dimensione del lettore; nessuna lettura integrale dichiarata."
+    },
+    {
+      "source_id": "amazing_marvel_filing",
+      "title": "Marvel, atto depositato presso USPTO, opposizione 91265262",
+      "url": "https://ttabvue.uspto.gov/ttabvue/ttabvue-91265262-OPP-1.pdf",
+      "verification_scope": "Atto della titolare del marchio nell’estratto indicizzato: prima apparizione in Amazing Fantasy n.15 giugno 1962."
+    },
+    {
+      "source_id": "amazing_gcd",
+      "title": "Grand Comics Database, Amazing Fantasy #15",
+      "url": "https://www.comics.org/issue/17099/",
+      "verification_scope": "Trascrizione bibliografica specialistica indicizzata: 5 giugno, agosto copertina e settembre indicia; citati registro iniziale e rinnovo. Accesso diretto 403, non aggirato. Serve a interpretare la documentazione primaria, non come unica fonte."
+    },
+    {
+      "source_id": "amazing_loc",
+      "title": "Library of Congress, Comics and Comic Books: A Research Guide",
+      "url": "https://guides.loc.gov/comic-books",
+      "verification_scope": "Immagine e descrizione della copertina agosto 1962; conservata esplicitamente come cover date, non uscita in edicola."
+    }
+  ],
+  "decisions": [
+    {
+      "target_id": "history-1960-pdp-1",
+      "problem": "Il paragrafo iniziale duplicava informazioni già presenti e confondeva il primo prototipo con la macchina consegnata.",
+      "conclusion": "Conservate tutte le informazioni uniche in un paragrafo coeso: 1959 prototipo, novembre 1960 prima consegna di serie a BBN, cultura hacker e Spacewar! 1962. Nessuna card rimossa o unita.",
+      "source_ids": [
+        "pdp_dec",
+        "pdp_timeline"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1961-berlin-wall",
+      "problem": "La descrizione poteva far apparire il sistema completo di cemento e torrette già presente il 13 agosto.",
+      "conclusion": "Distinte le prime chiusure dalla successiva trasformazione nelle fortificazioni descritte da INPUT; conservati funzione, perimetro, Brandt e 1989.",
+      "source_ids": [
+        "berlin_archive"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1961-vostok-1",
+      "problem": "Il perigeo è indicato come 181 km in INPUT e nella tabella NASA, ma altre schede riportano 169 km; esistevano inoltre voli di prova non abitati.",
+      "conclusion": "Attribuiti espressamente 327/181 km alle tabelle storiche NASA, conservando le conversioni originali; specificata prima missione con equipaggio. Non affermato che tutte le fonti concordino, né trasformato il volo in prima prova senza equipaggio.",
+      "source_ids": [
+        "vostok_table",
+        "vostok_ros",
+        "vostok_launch"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1962-amazing-fantasy",
+      "problem": "Agosto è una data di copertina, non l’uscita effettiva, e il sommario provvisorio suggeriva erroneamente un cambio di numerazione.",
+      "conclusion": "Confermato 5 giugno 1962 dal registro B976775 e giugno dall’atto Marvel; agosto resta esplicitamente in copertina. Conservata la continuità dal n.7 di Amazing Adult Fantasy, senza inventare una rinumerazione.",
+      "source_ids": [
+        "amazing_register",
+        "amazing_marvel_filing",
+        "amazing_gcd",
+        "amazing_loc"
+      ],
+      "text_applied": true
+    }
+  ],
+  "metadata_proposals": [
+    {
+      "target_id": "history-1960-laser",
+      "field": "timeline_date",
+      "original": {
+        "year": 1960,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1960,
+        "month": 5,
+        "day": 16,
+        "precision": "day",
+        "event_semantics": "Primo laser funzionante, evento di realizzazione scientifica; non annuncio né rilascio di un modello commerciale",
+        "region": "Stati Uniti"
+      },
+      "source_ids": [
+        "laser_hrl"
+      ],
+      "reason": "Proposta separata non applicata al catalogo o agli originali. Per le opere usata la disponibilità; per le voci di evento storico conservato il significato dell’avvenimento."
+    },
+    {
+      "target_id": "history-1960-pdp-1",
+      "field": "timeline_date",
+      "original": {
+        "year": 1960,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1960,
+        "month": 11,
+        "day": 0,
+        "precision": "month",
+        "event_semantics": "Prima consegna di un PDP-1 di serie a un cliente",
+        "region": "Stati Uniti"
+      },
+      "source_ids": [
+        "pdp_dec"
+      ],
+      "reason": "Proposta separata non applicata al catalogo o agli originali. Per le opere usata la disponibilità; per le voci di evento storico conservato il significato dell’avvenimento."
+    },
+    {
+      "target_id": "history-1960-psycho-1960-film",
+      "field": "timeline_date",
+      "original": {
+        "year": 1960,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1960,
+        "month": 6,
+        "day": 16,
+        "precision": "day",
+        "event_semantics": "Prima uscita cinematografica a New York",
+        "region": "Stati Uniti"
+      },
+      "source_ids": [
+        "psycho_afi"
+      ],
+      "reason": "Proposta separata non applicata al catalogo o agli originali. Per le opere usata la disponibilità; per le voci di evento storico conservato il significato dell’avvenimento."
+    },
+    {
+      "target_id": "history-1961-berlin-wall",
+      "field": "timeline_date",
+      "original": {
+        "year": 1961,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1961,
+        "month": 8,
+        "day": 13,
+        "precision": "day",
+        "event_semantics": "Chiusura del confine e inizio costruzione del Muro",
+        "region": "Berlino"
+      },
+      "source_ids": [
+        "berlin_archive"
+      ],
+      "reason": "Proposta separata non applicata al catalogo o agli originali. Per le opere usata la disponibilità; per le voci di evento storico conservato il significato dell’avvenimento."
+    },
+    {
+      "target_id": "history-1961-catch-22",
+      "field": "timeline_date",
+      "original": {
+        "year": 1961,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1961,
+        "month": 10,
+        "day": 10,
+        "precision": "day",
+        "event_semantics": "Prima pubblicazione del romanzo",
+        "region": "Stati Uniti"
+      },
+      "source_ids": [
+        "catch_publisher"
+      ],
+      "reason": "Proposta separata non applicata al catalogo o agli originali. Per le opere usata la disponibilità; per le voci di evento storico conservato il significato dell’avvenimento."
+    },
+    {
+      "target_id": "history-1961-vostok-1",
+      "field": "timeline_date",
+      "original": {
+        "year": 1961,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1961,
+        "month": 4,
+        "day": 12,
+        "precision": "day",
+        "event_semantics": "Lancio della prima missione umana orbitale",
+        "region": "Unione Sovietica"
+      },
+      "source_ids": [
+        "vostok_launch"
+      ],
+      "reason": "Proposta separata non applicata al catalogo o agli originali. Per le opere usata la disponibilità; per le voci di evento storico conservato il significato dell’avvenimento."
+    },
+    {
+      "target_id": "history-1962-cuban-missile-crisis",
+      "field": "timeline_date",
+      "original": {
+        "year": 1962,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1962,
+        "month": 10,
+        "day": 16,
+        "precision": "day",
+        "event_semantics": "Inizio del confronto della crisi dei missili",
+        "region": "Cuba / Stati Uniti / Unione Sovietica"
+      },
+      "source_ids": [
+        "cuba_nara",
+        "cuba_frus"
+      ],
+      "reason": "Proposta separata non applicata al catalogo o agli originali. Per le opere usata la disponibilità; per le voci di evento storico conservato il significato dell’avvenimento."
+    },
+    {
+      "target_id": "history-1962-lawrence-of-arabia",
+      "field": "timeline_date",
+      "original": {
+        "year": 1962,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1962,
+        "month": 12,
+        "day": 10,
+        "precision": "day",
+        "event_semantics": "Prima mondiale cinematografica a Londra",
+        "region": "Regno Unito"
+      },
+      "source_ids": [
+        "lawrence_premiere"
+      ],
+      "reason": "Proposta separata non applicata al catalogo o agli originali. Per le opere usata la disponibilità; per le voci di evento storico conservato il significato dell’avvenimento."
+    }
+  ],
+  "editorial_review": {
+    "fidelity": "Tutte le 14 card confrontate con INPUT: conservati cast e crediti, Cinecittà e Camera 65, letture del conflitto in Ben-Hur e Lawrence, funzionamento e applicazioni del laser, acronimo PDP, struttura narrativa di Catch-22, quantità e conversioni di Vostok, contesto cubano e successione dei titoli Marvel. Eliminata soltanto ridondanza verbale del PDP-1, non sostanza.",
+    "language_review": "EN salvato per primo, poi IT, FR, DE ed ES. Titoli propri conservati; termini comuni tradotti, incluso Láser in spagnolo. Rilette le cinque versioni per incipit, coesione, registro e corrispondenza dei numeri. In italiano precisato il ruolo di Yossarian come addetto al puntamento, evitando di confonderlo con un aereo.",
+    "rights": "Fonti originali, URL, attribuzioni e licenze presenti negli INPUT restano integralmente nel pacchetto. Nuove verifiche documentate con il loro effettivo perimetro di consultazione.",
+    "english_written_first": true,
+    "languages": [
+      "en",
+      "it",
+      "fr",
+      "de",
+      "es"
+    ],
+    "entry_count": 10,
+    "card_count_per_language": 14,
+    "reviewed_at": "2026-10-30T05:02:03.057537+00:00",
+    "english_summary_word_range": [
+      31,
+      37
+    ],
+    "structural_checks": "Schema, ID, ordine, numero di card e cinque lingue verificati dal validatore. Tutti i titoli presenti; nessun HTML o Markdown nei testi."
+  },
+  "status": "completed",
+  "validation": {
+    "valid": true,
+    "batch_id": "294-human-history",
+    "completed": true,
+    "entry_count": 10,
+    "card_count_per_language": 14,
+    "language_count": 5,
+    "translated_card_count": 70,
+    "entry_card_counts": {
+      "history-1959-ben-hur": 3,
+      "history-1960-laser": 1,
+      "history-1960-pdp-1": 1,
+      "history-1960-psycho-1960-film": 1,
+      "history-1961-berlin-wall": 1,
+      "history-1961-catch-22": 1,
+      "history-1961-vostok-1": 1,
+      "history-1962-cuban-missile-crisis": 1,
+      "history-1962-lawrence-of-arabia": 3,
+      "history-1962-amazing-fantasy": 1
+    },
+    "issue_counts": {
+      "history-1959-ben-hur": 0,
+      "history-1960-laser": 0,
+      "history-1960-pdp-1": 0,
+      "history-1960-psycho-1960-film": 0,
+      "history-1961-berlin-wall": 0,
+      "history-1961-catch-22": 0,
+      "history-1961-vostok-1": 0,
+      "history-1962-cuban-missile-crisis": 0,
+      "history-1962-lawrence-of-arabia": 0,
+      "history-1962-amazing-fantasy": 0
+    },
+    "summary_checks": [
+      {
+        "entry_id": "history-1959-ben-hur",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "history-1960-laser",
+        "feature_id": null,
+        "english_summary_words": 33
+      },
+      {
+        "entry_id": "history-1960-pdp-1",
+        "feature_id": null,
+        "english_summary_words": 34
+      },
+      {
+        "entry_id": "history-1960-psycho-1960-film",
+        "feature_id": null,
+        "english_summary_words": 31
+      },
+      {
+        "entry_id": "history-1961-berlin-wall",
+        "feature_id": null,
+        "english_summary_words": 31
+      },
+      {
+        "entry_id": "history-1961-catch-22",
+        "feature_id": null,
+        "english_summary_words": 32
+      },
+      {
+        "entry_id": "history-1961-vostok-1",
+        "feature_id": null,
+        "english_summary_words": 34
+      },
+      {
+        "entry_id": "history-1962-cuban-missile-crisis",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "history-1962-lawrence-of-arabia",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "history-1962-amazing-fantasy",
+        "feature_id": null,
+        "english_summary_words": 34
+      }
+    ],
+    "editorial_review": [
+      "history-1960-laser/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1960-pdp-1/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1960-pdp-1/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1960-pdp-1/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1960-pdp-1/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1961-berlin-wall/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1961-berlin-wall/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1961-berlin-wall/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1961-berlin-wall/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1962-cuban-missile-crisis/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1962-cuban-missile-crisis/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1962-cuban-missile-crisis/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1962-cuban-missile-crisis/main/es: main title changed; check that this is a descriptive title and not an altered official name"
+    ],
+    "failures": []
+  },
+  "output_sha256": "1458d381c6c6edc0aa8fa0b129bb5f6647821b503c33b13911274bab47b57e03",
+  "expansion_assessments": [
+    {
+      "target_id": "history-1959-ben-hur",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1960-laser",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1960-pdp-1",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1960-psycho-1960-film",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1961-berlin-wall",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1961-catch-22",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1961-vostok-1",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1962-cuban-missile-crisis",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1962-lawrence-of-arabia",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1962-amazing-fantasy",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    }
+  ]
+}

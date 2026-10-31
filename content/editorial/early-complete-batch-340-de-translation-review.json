@@ -1,0 +1,101 @@
+{
+  "status": "PASS",
+  "locale": "de",
+  "entries": [
+    {
+      "entry_id": "workbook-01-28-pok-mon-legends-arceus",
+      "source_fields_sha256": "28cd20743f12f73799f7431b2e10ed81a45174295243fd0fbf72904ebee17c0d",
+      "translation_sha256": "3178a056db15db3e853d58d7ce24ec2b629279e528d9407b5972dfb133dbabd5",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch340/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "6810241139a793f396ebf924b0433297695512aaa4da87688b4ed23becc84674"
+    },
+    {
+      "entry_id": "wikipedia-57651352",
+      "source_fields_sha256": "57aab8890da67e0ec7750d765198410253abdeea79aa8784fa08fc43b5001c9b",
+      "translation_sha256": "3bde5c50c8bbb36e4ef25563561d95765e53577cb2b48b4e629063508d4610fb",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch340/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "6810241139a793f396ebf924b0433297695512aaa4da87688b4ed23becc84674"
+    },
+    {
+      "entry_id": "steam-deck",
+      "source_fields_sha256": "ec0289bf6221cdc73b5d403c7b58c782fcc08447dbffb45d55e5f32c033a15c8",
+      "translation_sha256": "522297a8b8455752c97a4564b41f0b6309002f33db6139909f61509f95f3de7a",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch340/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "6810241139a793f396ebf924b0433297695512aaa4da87688b4ed23becc84674"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "/root/category_audit",
+    "actual_receipt": "build/research/catalog-2022-chronological/first-three-private/independent-category-audit-approval.json",
+    "actual_receipt_sha256": "07d2c30468a3c873a822491e669ab160f2c00ee44bf4dfe7ec6e1cacbcbdd096",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "/root/category_audit",
+      "index_sha256": "700dd453635d7c32634eef9cba5ee7fc9fd3fa4706519cfdc106f48664a0fe3e",
+      "scope": {
+        "english_paragraphs_actually_read": 9,
+        "localized_paragraphs_actually_read": 36,
+        "languages": [
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "images_actually_viewed": 14,
+        "final_contact_sheets_actually_viewed": 3,
+        "new_cue_metadata_actually_read": 3
+      },
+      "findings": [],
+      "primary_sources_read": [
+        {
+          "url": "https://www.codeweavers.com/about/news/press/20220225",
+          "finding": "Direct Proton collaborator confirms February25,2022 launch and ongoing LinuxSteamOS/Windows compatibility work."
+        },
+        {
+          "path": "build/research/catalog-2022-chronological/first-three-private/steam-deck/valve-launch-news.json",
+          "finding": "Actual Valve API news body read: first order emailsFebruary25,first units shippedFebruary28; candidate date distinguishes commercialorderlaunch and shipment."
+        },
+        {
+          "url": "https://legends.arceus.pokemon.com/en-us/gameplay/",
+          "finding": "Originalgame publisher primary describes aim/throw, creaturedispositions, weather/time habitats and researchmechanics; native researchtasksUI matches P3."
+        },
+        {
+          "url": "https://techland.net/news/release-date-update-for-dying-light-2-stay-human-february-4th-2022",
+          "finding": "Techland confirms February4,2022 originalrelease."
+        },
+        {
+          "url": "https://olivierderiviere.bandcamp.com/album/dying-light-2-stay-human",
+          "finding": "Original2022 composer album,LondonContemporaryOrchestra context and selected score cues confirmed; RunJumpFight separate2021single qualified by actualCDBaby metadata."
+        }
+      ],
+      "review_notes": [
+        "All9EN and36locale bodies fullyread, allfivefields coherent; onlyDyingLight grammaticalrelativeclause repaired, no alterednightmechanics or substantiveEnglishrewrite.",
+        "All14images viewed. OriginalSteamDeckLCD userapprovedfront exact, publisherhardware/VerifiedUI contextualimages; four originalPokémon screenshots include realResearchTasksUI, not artbook. DyingLight originalE32019promotionalart explicitlyqualified, cleanoriginalgameplay retained.",
+        "Arceus107existingtrackobjects exact, no repeatedavailabilityqueries. Three newDyingLight officialcomposer CDBaby/Techland recordings publicAAC; first2021single andtwo2022album cues distinguished. No audio download or PS5audition asserted."
+      ],
+      "owners": [
+        {
+          "entry_id": "steam-deck",
+          "source_sha256": "cb26bb4fac8ad753aa1691230f4afb1a6a5a55b6ff436c57f387b59d683b5988",
+          "target_sha256": "c380352d9f5a9097fbdb20463828509d7906e25bce4db19c2822082a09a4d001",
+          "contact_sha256": "a7131544971d3bc825b55d9ff6a08fcddb98826c4376e6f02ace6e4a32c580ac"
+        },
+        {
+          "entry_id": "workbook-01-28-pok-mon-legends-arceus",
+          "source_sha256": "f6e4654830f18d6ab04aa95c7bbaf59e985e86ce965e8442994788e2c5a6fd2e",
+          "target_sha256": "e74b670dca80c724fc704cd7e633bc7d342d690d207cbfc246f0219c90b83097",
+          "contact_sha256": "9d3a70d087c894b722fa0697f7974c50798226169b912026d61d9e85adef6b7b"
+        },
+        {
+          "entry_id": "wikipedia-57651352",
+          "source_sha256": "9b666de0e573075c1bc505492d7b1302b3e95914c33081eb0b9a304e9a7fae70",
+          "target_sha256": "bb7b138cf863e5f7bb541a5cd770225a99981e12e47ff339dea3fdee825f6bf0",
+          "contact_sha256": "71a8108a85c49a5c9d82da92556005ec74ffb328b5fffaf58a45d2a58a42c0d8"
+        }
+      ],
+      "production_writes": false,
+      "authorization": "Root admission remains separate."
+    }
+  }
+}

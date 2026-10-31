@@ -1,0 +1,108 @@
+{
+  "status": "PASS",
+  "locale": "es",
+  "entries": [
+    {
+      "entry_id": "wikipedia-64250594",
+      "source_fields_sha256": "f7ac942e28e58aa9beb14c334068ffdfa522a7efdb918607bf313f1b0cda3278",
+      "translation_sha256": "549479e60aa3feb32b88acd03e9ba88edc2fcb363c92f0a8c505984e53d00373",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch386/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "05310c9b1a57adcf1f1ba012ce636e8ba5efa50e28f551ef503055a5d3c085cf"
+    },
+    {
+      "entry_id": "wikipedia-79215083",
+      "source_fields_sha256": "1ab9293b1d93d6a91e6e801268da14df9cb2d932908f48f568252c655cf2781e",
+      "translation_sha256": "00a21a924985ed0af0652a67987b2471a4fd24ea044e1dfe93bb60b42e8b9846",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch386/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "05310c9b1a57adcf1f1ba012ce636e8ba5efa50e28f551ef503055a5d3c085cf"
+    },
+    {
+      "entry_id": "wikipedia-81179631",
+      "source_fields_sha256": "7ade7eccd44510519bc795d5fbde50a70d2d8ba3b19b6ced437e8d4c1d9fda92",
+      "translation_sha256": "2e5c48e995616071223d2f2bdeb922a542588b6b9820c0d74db95325810d4917",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch386/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "05310c9b1a57adcf1f1ba012ce636e8ba5efa50e28f551ef503055a5d3c085cf"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "package_audit",
+    "actual_receipt": "build/research/catalog-2026-chronological/april-may-three-private/independent-package-audit-approval.json",
+    "actual_receipt_sha256": "5af7c09f2c74b2fa005aac37d147742f63ed4e8f34a62b425eb783c80a5e0390",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "package_audit",
+      "independent_of_author": true,
+      "index": "build/research/catalog-2026-chronological/april-may-three-private/three-private-index.json",
+      "index_sha256": "d969e930fcf52bb52ebe8a83b26fdd2c0b9d1e1ee85e10dfb6c8370966196722",
+      "owners": [
+        {
+          "entry_id": "wikipedia-64250594",
+          "slug": "pragmata",
+          "source": "build/research/catalog-2026-chronological/april-may-three-private/pragmata-source-private-candidate.json",
+          "source_sha256": "061c6ba7d88d622f30196e76602cd1e5d464ce69df7cb1d89006a41c19e174fb",
+          "target": "build/research/catalog-2026-chronological/april-may-three-private/pragmata-four-language-private-candidate.json",
+          "target_sha256": "0a0a920e603e0abd68e478f7ee605431142bf95040f5809b30748cfb1e4ded90",
+          "contact": "build/research/catalog-2026-chronological/april-may-three-private/pragmata-final-contact.jpg",
+          "contact_sha256": "09b34f35f9f4dc8674100ee57bd72a7bfc86d8b505d9ecdd8d217a9b56ae7bdd",
+          "english_cards": 6,
+          "localized_cards": 24,
+          "images": 8,
+          "tracks": 3
+        },
+        {
+          "entry_id": "wikipedia-79215083",
+          "slug": "saros",
+          "source": "build/research/catalog-2026-chronological/april-may-three-private/saros-source-private-candidate.json",
+          "source_sha256": "80f1057de8d2c3af300962f64b4a160fbd51678b53f768de5816039a4dcbdac0",
+          "target": "build/research/catalog-2026-chronological/april-may-three-private/saros-four-language-private-candidate.json",
+          "target_sha256": "014b89cc1f04eb8a018f5217ae0751e3ee0d95b16eb3a3015af7342193e10b80",
+          "contact": "build/research/catalog-2026-chronological/april-may-three-private/saros-final-contact.jpg",
+          "contact_sha256": "49ebe8743eea602a878902ed156cd634d7357f5beee547e27db6f90aa460a6f1",
+          "english_cards": 5,
+          "localized_cards": 20,
+          "images": 6,
+          "tracks": 3
+        },
+        {
+          "entry_id": "wikipedia-81179631",
+          "slug": "forza",
+          "source": "build/research/catalog-2026-chronological/april-may-three-private/forza-source-private-candidate.json",
+          "source_sha256": "16939fc2147c93c927a82d008ee65dcbc3ea42709e1b6574e517c52718f955aa",
+          "target": "build/research/catalog-2026-chronological/april-may-three-private/forza-four-language-private-candidate.json",
+          "target_sha256": "58e2a46c81956ca83024378f313ea02347fa92f8e5eecda93ff0ef6e777448ec",
+          "contact": "build/research/catalog-2026-chronological/april-may-three-private/forza-final-contact.jpg",
+          "contact_sha256": "72f17fdeb3d6fc302911818a2d560e48c126523875c87fb4bebd103f0d8009fb",
+          "english_cards": 7,
+          "localized_cards": 28,
+          "images": 8,
+          "tracks": 3
+        }
+      ],
+      "actually_reviewed": {
+        "english_paragraphs": 18,
+        "localized_paragraphs": 72,
+        "selected_images_viewed": 22,
+        "new_metadata_receipts_read": 9
+      },
+      "resolved_findings": [],
+      "primary_sources_read": [
+        "https://www.capcom.co.jp/ir/english/news/html/e260420.html",
+        "https://store.steampowered.com/app/4621820/PRAGMATA_Original_Soundtrack/",
+        "https://sonyinteractive.com/en/press-releases/2026/saros-launches-worldwide-exclusively-on-playstation5/",
+        "https://blog.playstation.com/?p=409849",
+        "https://blog.playstation.com/?p=418604",
+        "https://forza.net/news/forza-horizon-6-pre-order-ps5",
+        "https://forza.net/news/forza-horizon-6-radio"
+      ],
+      "notes": [
+        "All five English fields and IT/FR/DE/ES complete translations actually read; no truncated paragraphs or English fallback. Pragmata April17 standard release and April24 Japan/partsAsia Switch2 exception accurate.",
+        "Nine actual AAC public metadata read. Pragmata Thoughts189s and ToTheMoon249s match official album titles and lengths; MemoriesAreYou official video458s distinguished from album453s, performerYU-KA and composerKitagawa confirmed in publisher credits. Two independent archives are not mislabeled official.",
+        "Saros original Sam Slater music and SonyMilan recordings accurately identified. Publisher launch and permanent progression confirmed. Original gameplay/gallery images with precise source border crops retain original screenshot content.",
+        "FH6 PS5 January26,2027 general release is future, distinct from premiumJanuary21. Selected original artist recordingsYou/Cheerleader/CherryBlossom appear in official radio list; recordingartists not invented individual composers.",
+        "Source/target/contact hashes and actual image bytes/dimensions/creator/credit/license/source_page verified. All22images viewed in three finalcontact sheets. No global writes, no media downloads beyond existing evidence and no PS5 playback claim."
+      ],
+      "production_writes": false
+    }
+  }
+}

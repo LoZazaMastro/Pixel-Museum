@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "audited": "2026-10-20",
+  "purpose": "Primary collection discovery and source links. A public catalogue is not a blanket media reuse licence.",
+  "institutions": [
+    {
+      "id": "vghf",
+      "name": "Video Game History Foundation",
+      "catalogue_url": "https://library.gamehistory.org/",
+      "digital_archive_url": "https://archive.gamehistory.org/",
+      "access": "Public ArchivesSpace catalogue and public digital archive. Some holdings are not catalogued or digitised.",
+      "api_status": "No supported public bulk API verified during this bounded audit.",
+      "media_reuse": "Rights must be checked for the individual magazine, recording, artwork or document. No blanket download permission inferred.",
+      "records": [
+        {
+          "id": "MAG-CGW",
+          "title": "Computer Gaming World",
+          "record_url": "https://library.gamehistory.org/repositories/2/resources/29",
+          "archive_url": "https://archive.gamehistory.org/folder/1de5cb2a-cc63-427a-a06e-adc4959d74c6",
+          "kind": "magazine_collection",
+          "date_start": "1981-11",
+          "date_end": "2008-04",
+          "date_semantics": "Publication range of the collection, including successor Games for Windows: The Official Magazine; not a single title's uninterrupted publication range.",
+          "extent": {"quantity": 284, "unit": "magazines"},
+          "language": "English",
+          "creators": ["Golden Empire Publications, Inc.", "Ziff Davis, Inc."],
+          "story_relevance": "Contemporary reviews, advertisements and letters can show how computer-game audiences and business expectations changed. Reference individual issues after checking rights.",
+          "selected_media": []
+        },
+        {
+          "id": "cgdc-1989-recordings",
+          "title": "Computer Game Developers' Conference 1989 talk recordings",
+          "archive_url": "https://archive.gamehistory.org/folder/ccdbd662-971d-4296-87a8-7a7e6473b41b",
+          "kind": "conference_recording_collection",
+          "year": 1989,
+          "verification": "Official collection page title verified; no individual recording metadata or media rights imported.",
+          "story_relevance": "Developers speaking to their peers provide first-person evidence about craft and working conditions.",
+          "selected_media": []
+        },
+        {
+          "id": "michael-shorrock-sega-channel",
+          "title": "Michael Shorrock Sega Channel collection",
+          "archive_url": "https://archive.gamehistory.org/folder/4cdb4e35-216f-46e8-9215-04ab8b6b49c1",
+          "kind": "development_collection",
+          "verification": "Official featured collection link; item contents, precise date range and rights require item-level inspection.",
+          "selected_media": []
+        },
+        {
+          "id": "gamepro-press-cds",
+          "title": "GamePro press CD collection",
+          "archive_url": "https://archive.gamehistory.org/folder/a5823d80-320b-41c9-9e3c-4dc28f79f2a2",
+          "kind": "press_material_collection",
+          "verification": "Official featured collection link; no original press assets have been reproduced or treated as freely licensed.",
+          "selected_media": []
+        }
+      ]
+    },
+    {
+      "id": "computerspielemuseum-berlin",
+      "name": "Computerspielemuseum Berlin",
+      "source_url": "https://www.computerspielemuseum.de/Museum/27-Ueber-das-Museum.htm",
+      "opened_year": 1997,
+      "current_permanent_exhibition_opened_year": 2011,
+      "collection_snapshot_year": 2022,
+      "holdings_lower_bounds": {"original_game_and_application_carriers": 35000, "console_and_computer_systems": 350, "magazines": 12000},
+      "api_status": "No public item-level collection API verified. Holdings figures are explicitly the institution's 2022 snapshot.",
+      "story_relevance": "A museum opening and its preservation network are part of the medium's cultural history; its collection can guide research into surviving hardware and original exhibits.",
+      "media_reuse": "Institutional website images are not assumed free to reuse. Separately licensed Commons photographs require their own creator, licence and original-vs-reconstruction caption.",
+      "selected_media": []
+    },
+    {
+      "id": "acmi",
+      "name": "ACMI",
+      "source_url": "https://www.acmi.net.au/about/videogames-museum/",
+      "api_documentation": "https://www.acmi.net.au/api",
+      "official_metadata_archive": "https://github.com/ACMILabs/acmi-api",
+      "snapshot_url": "https://raw.githubusercontent.com/ACMILabs/acmi-api/main/app/tsv/works.tsv",
+      "local_seed_file": "acmi-seeds.json",
+      "public_work_records": 43445,
+      "public_videogame_records": 257,
+      "dated_videogame_records_1950_2026": 184,
+      "physical_games_mentioned_by_institution": 7000,
+      "coverage_note": "Physical holdings and public database coverage are different. Do not claim 7000 downloadable game records.",
+      "date_semantics": "first_production_date is a collection claim and may differ from first public release. Research seeds are not safe chronology dates without review.",
+      "metadata_license": "CC0 for the official JSON collection metadata; TSV is the documented spreadsheet representation of those records.",
+      "license_source": "https://github.com/ACMILabs/acmi-api#licences",
+      "media_reuse": "Images and videos are not licensed by the metadata CC0 statement. No images were selected or downloaded by this adapter.",
+      "software_note": "No ACMI API software was copied; the adapter reads the institution's documented metadata export.",
+      "selected_media": []
+    }
+  ]
+}

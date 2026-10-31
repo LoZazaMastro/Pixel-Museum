@@ -1,0 +1,94 @@
+{
+  "status": "PASS",
+  "locale": "de",
+  "entries": [
+    {
+      "entry_id": "wikipedia-64249568",
+      "source_fields_sha256": "e150a8ab1ef2c9cc5b3b2b84261ebc5a7739348d9f7289f84e3531447b05c917",
+      "translation_sha256": "d2148ba33428ac4fed5cd2e8d22195e713e418acf4bc34c372e63e56e3704c0a",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch328/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "67ce41d5a67ecd2e11276bbd467ebfe98f01c946d0a3b3762082b6da4c67a9b0"
+    },
+    {
+      "entry_id": "workbook-02-12-super-mario-3d-world-bowser-s-fury",
+      "source_fields_sha256": "0d9be76693eb88efa911b943a18034e20b010f13db8f5999ae5804b5e781c21b",
+      "translation_sha256": "afae66b90c645e7c4da77813222b8b03a27738f0a200f79e41234f1655a6969d",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch328/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "67ce41d5a67ecd2e11276bbd467ebfe98f01c946d0a3b3762082b6da4c67a9b0"
+    },
+    {
+      "entry_id": "wikipedia-64399235",
+      "source_fields_sha256": "0990c5d0a3ed0af7e3aa58de31ee8b13d3243af69fa01d62bb54b23b8ba45102",
+      "translation_sha256": "0ceca6ea542dc31e58208e60e2fd5403c94d0e98b6c5e4f757ab3f8bedb41595",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch328/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "67ce41d5a67ecd2e11276bbd467ebfe98f01c946d0a3b3762082b6da4c67a9b0"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "editorial_continue",
+    "actual_receipt": "build/research/catalog-2021-chronological/first-three-private/independent-editorial-peer-approval.json",
+    "actual_receipt_sha256": "37af4089d0733d6f21d345171f1c48e9e0ee902fd68d2e404f6566a0204ad955",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "editorial_continue",
+      "author": "package_audit",
+      "index_sha256": "3946bb588085e0b24c7d3aa42cad337ed3b416a129477b8b54199e4070120fc7",
+      "owners": [
+        {
+          "entry_id": "wikipedia-64249568",
+          "slug": "hitman",
+          "source": "build/research/catalog-2021-chronological/first-three-private/hitman/complete-original-source-media-private-candidate.json",
+          "source_sha256": "ccd78813c56da6babf02daddb54c6dc253405b1e59d1d0aaa6ca2003776fa1a2",
+          "target": "build/research/catalog-2021-chronological/first-three-private/hitman/complete-four-language-private-candidate.json",
+          "target_sha256": "4fdac1f1976eac11ab5a5cb3ef51608be7c15a806d00df1027b4d56dfb5b3f4f",
+          "contact": "build/research/catalog-2021-chronological/first-three-private/hitman/final-selected-media-contact.jpg",
+          "contact_sha256": "5b7db1c9f9f594544183a21932a99acf0be8b788983adada46b8c7c7a4a4d758",
+          "english_cards": 4,
+          "localized_cards": 16,
+          "images": 5,
+          "tracks": 3
+        },
+        {
+          "entry_id": "workbook-02-12-super-mario-3d-world-bowser-s-fury",
+          "slug": "mario",
+          "source": "build/research/catalog-2021-chronological/first-three-private/mario/complete-original-source-media-private-candidate.json",
+          "source_sha256": "612262f3d5da2318f91b8eb76a51b7dee1e035520437370ec7e9019d68ca57fe",
+          "target": "build/research/catalog-2021-chronological/first-three-private/mario/complete-four-language-private-candidate.json",
+          "target_sha256": "a1c3434b2a6b8037b6048a85cb534c6c7844db3a8fdc6fc2c338c86fe3ba3fbd",
+          "contact": "build/research/catalog-2021-chronological/first-three-private/mario/final-selected-media-contact.jpg",
+          "contact_sha256": "9eb184c903d87f8e16f8abe7c57d637206aa807f82a35dd16eb951bf7440bc16",
+          "english_cards": 4,
+          "localized_cards": 16,
+          "images": 6,
+          "tracks": 107
+        },
+        {
+          "entry_id": "wikipedia-64399235",
+          "slug": "bravely",
+          "source": "build/research/catalog-2021-chronological/first-three-private/bravely/complete-original-source-media-private-candidate.json",
+          "source_sha256": "1d64b3fe3b68b80af9a1f114732a3742954c91481c814f17016307ac1bf02d8b",
+          "target": "build/research/catalog-2021-chronological/first-three-private/bravely/complete-four-language-private-candidate.json",
+          "target_sha256": "dd5362d6358a0c07cf88e801493fbd80955c8b57bc94edd19f718e7961f8fe9f",
+          "contact": "build/research/catalog-2021-chronological/first-three-private/bravely/final-selected-media-contact.jpg",
+          "contact_sha256": "62ed0588099c029d8d59a8f9a0334512044b9c3f57eff224807d411a445bf7e9",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 4,
+          "tracks": 3
+        }
+      ],
+      "read_english_paragraphs": 11,
+      "read_localized_paragraphs": 44,
+      "actual_final_contact_sheets_viewed": 3,
+      "actual_selected_images_viewed": 15,
+      "production_writes": false,
+      "source_review": "Directly read Nintendo original Switch Mario/Bravely product pages for dates, original publisher, job/Brave/Default and BowserFury mechanics. XboxWire original January20,2021 Hitman launch record read. Laced original label product page read: Niels Bye Nielsen and HITMAN III are explicitly identified separately from HITMAN2016/HITMAN2.",
+      "music_review": "Six selected public AAC metadata records read in full:3original HITMANIII cues officially distributed by Laced/IIP-DDS in2026, honestly labelled reissue rather than2021upload;3BravelyDefaultII original2021 archival pieces, uploader status and ending vocalist distinguished, no2012original or cover substituted. All107Mario soundtrack track objects preserved exactly; no resolver repeats or audio downloads.",
+      "media_review": "All15selected images in3final contacts actually viewed: original HitmanIII cover/Dubai/Dartmoor/disguise, original2021 Nintendo Mario/BowserFury captures, originalBravelyIIcast/turnbattle/Excillant town. No modern platform boxback or wrongly claimed game edition.",
+      "resolved_findings": [
+        "Hitman German P1 missing space after period corrected exactly to «vorgegeben. 47s»; all other text/media unchanged."
+      ]
+    }
+  }
+}

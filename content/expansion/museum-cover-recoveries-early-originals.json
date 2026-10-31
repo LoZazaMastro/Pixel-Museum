@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "status": "three_specific_game_artifacts_ready; Empire_remaining_rights_and_source_hold",
+  "entries": {
+    "wikipedia-878616": {
+      "url": "https://www.bitsavers.org/pdf/dec/_Books/101_BASIC_Computer_Games_Mar75.pdf#page=201",
+      "source_page": "https://www.bitsavers.org/pdf/dec/_Books/101_BASIC_Computer_Games_Mar75.pdf#page=201",
+      "creator": "Digital Equipment Corporation / David H. Ahl (editor and illustration); Mike Mayfield (original program), Mary Cole (DEC adaptation)",
+      "license": "Historical publication; original rights retained. Archival reproduction.",
+      "credit": "Digital Equipment Corporation / David H. Ahl (editor and illustration); Mike Mayfield (original program), Mary Cole (DEC adaptation) / historical publication, original rights retained",
+      "width": 2583,
+      "height": 3321,
+      "source_width": 2583,
+      "source_height": 3321,
+      "recovery_local_source": "build/research/cover-duplicates/early-originals/star-trek-dec101-hd-201.jpg",
+      "title": "Star Trek (SPACWR), DEC adaptation: original manual page in 101 BASIC Computer Games, third printing, 1975, p. 201.",
+      "caption": "Star Trek (SPACWR), DEC adaptation: original manual page in 101 BASIC Computer Games, third printing, 1975, p. 201.",
+      "identity_evidence": "The printed Program Author section explicitly identifies Mary Cole modifying Mike Mayfield's original. The signed D. Ahl drawing appears on this exact game page. This is the 1975 printing of the DEC adaptation, not a claimed 1971 screenshot.",
+      "quality_verified": "Full native artifact/crop visually reviewed 2026-10-21. No local upscaling; source and derivative hashes recorded.",
+      "sha256": "83a0cd6c4158d64815ebca49d25264026956ff5fec1cd008b50bf9a2fce804cc"
+    },
+    "wikipedia-13136650": {
+      "url": "https://archive.computerhistory.org/resources/access/text/2017/09/102661095/102661095-05-v2-n3-acc.pdf#page=5",
+      "source_page": "https://archive.computerhistory.org/resources/access/text/2017/09/102661095/102661095-05-v2-n3-acc.pdf#page=5",
+      "creator": "People's Computer Company; archival scan preserved by the Computer History Museum",
+      "license": "Historical publication; original rights retained. Archival reproduction.",
+      "credit": "People's Computer Company; archival scan preserved by the Computer History Museum / historical publication, original rights retained",
+      "width": 780,
+      "height": 870,
+      "source_width": 780,
+      "source_height": 870,
+      "recovery_local_source": "build/research/cover-duplicates/early-originals/trek73-pcc-original-announcement.jpg",
+      "title": "Trek73: original announcement naming Bill Char, People's Computer Company, Vol. 2 No. 3, January 1974, p. 5.",
+      "caption": "Trek73: original announcement naming Bill Char, People's Computer Company, Vol. 2 No. 3, January 1974, p. 5.",
+      "identity_evidence": "Original article explicitly names TREK73, Bill Char, five chained tapes and timed tactical combat. Crop excludes the unrelated Star Trader diagram and transcript on the same page. Native 1650 x 2550 scan; 780 x 870 crop with no enlargement.",
+      "quality_verified": "Full native artifact/crop visually reviewed 2026-10-21. No local upscaling; source and derivative hashes recorded.",
+      "sha256": "1dc5ef0e081130365221a0c9fe864681858685d61535116bb6c8310c3795f3ff"
+    },
+    "wikipedia-59439565": {
+      "url": "https://github.com/shmup/wander/tree/d3f0780736f8d511429388cef2acd96b238caa49#pixel-museum-restored-terminal-output",
+      "source_page": "https://github.com/shmup/wander/tree/d3f0780736f8d511429388cef2acd96b238caa49",
+      "creator": "Peter Langston; modern restoration contributors; Pixel Museum (restored-game capture)",
+      "license": "GPL-3.0 (restored game); original authorship retained.",
+      "license_url": "https://github.com/shmup/wander/blob/d3f0780736f8d511429388cef2acd96b238caa49/LICENSE",
+      "credit": "Peter Langston / preserved1980release, GNU GPLv3 restoration / modern Xterm capture by Pixel Museum",
+      "width": 1920,
+      "height": 1200,
+      "source_width": 1920,
+      "source_height": 1200,
+      "recovery_local_source": "build/research/cover-duplicates/early-originals/wander-1980-restored-xterm-capture.png",
+      "title": "Wander: opening of the preserved1980version, running through the GPL restoration in a modern terminal. Not a1974screenshot.",
+      "caption": "Wander: opening of the preserved1980version, running through the GPL restoration in a modern terminal. Not a1974screenshot.",
+      "identity_evidence": "Unmodified restored sources revisiond3f0780736f8d511429388cef2acd96b238caa49 compiled GNU89/fcommon. Actual ./Wander castle process running in Xterm, captured directly from isolated Xvfb1920x1200 display. No invented game image or rendered transcript substituted. Authorpermission corroborated by issue9discussion and2022GPLgrantcommitd08e91ff006817aad6fc2bc55e0818dbc9f4b0bb. No restricted historical manual or binary bundled.",
+      "quality_verified": "Actual Xterm/Xvfb framebuffer1920x1200 screenshot visually reviewed2026-10-21. No bitmap upscaling. Temporary display/processes terminated after capture.",
+      "sha256": "d3faece24c70dc0f8d52c52db246f5122b060e1852594a99d54a504b527be390",
+      "process_transcript_source": "build/research/cover-duplicates/early-originals/wander-restored-transcript.txt",
+      "source_revision": "d3f0780736f8d511429388cef2acd96b238caa49"
+    }
+  },
+  "pending": {
+    "wikipedia-6896436": "Peter Langston Empire: original 1978 manual source located, server currently403. Never substitute Walter Bright Empire."
+  }
+}

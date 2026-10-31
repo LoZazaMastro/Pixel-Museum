@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "locale": "es",
+  "review": "Binding of exact independently approved complete candidate members; no new linguistic review substituted. Every full candidate SHA and independent PASS receipt checked, all current English five fields and translation hashes validated.",
+  "entries": [
+    {
+      "entry_id": "workbook-12-20-phantasy-star",
+      "source_fields_sha256": "08707594a4d0580bc54398b7b2b833d27a825ec86552d4e1fe143c12f8b338bc",
+      "translation_sha256": "2ef98a6f4e587182742f63c1abbf65dafe05fc233bc758fec9f9a4e46b627d97",
+      "independent_peer": "build/research/phantasy-star1987-four-language-completion/independent-five-whole-paragraphs-four-language-four-precise-clauses-peer.json",
+      "independent_peer_sha256": "d48f35a7fdce91861a6761d3cbb241f9cfbb63405801af838cb21b14cf0217a8",
+      "candidate_path": "build/research/phantasy-star1987-four-language-completion/phantasy-star-five-whole-paragraphs-four-language-four-precise-clauses-candidate.json",
+      "candidate_sha256": "4ab07852e13a5fce16820f79283ab36ccc00a07029fa9fae88c9c1807683759c"
+    },
+    {
+      "entry_id": "workbook-12-18-final-fantasy",
+      "source_fields_sha256": "19e334eaf9d68547631d5545e79e714d9e4db45781d30d5c526ea6e1179f78e7",
+      "translation_sha256": "97066385564b6b291d054de408db1944fbc5bd2fe071045402cd5fdd270fab66",
+      "independent_peer": "build/research/final-fantasy1987-four-language-completion/final-fantasy1987-four-language-readable-aeronave-and-fiends-final-candidate-root-independent-peer.json",
+      "independent_peer_sha256": "0ad257b13bbdd9ea603d608076f64ad1efd833442d1da651056ed96bc1ba3abf",
+      "candidate_path": "build/research/final-fantasy1987-four-language-completion/final-fantasy1987-four-language-readable-aeronave-and-fiends-final-candidate.json",
+      "candidate_sha256": "b9c08f89aade1fc8f739911cab62a0be29f2ccaf079068483e032bba1a3c9df1"
+    }
+  ]
+}

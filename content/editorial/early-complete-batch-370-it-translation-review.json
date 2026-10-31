@@ -1,0 +1,115 @@
+{
+  "status": "PASS",
+  "locale": "it",
+  "entries": [
+    {
+      "entry_id": "wikipedia-83404081",
+      "source_fields_sha256": "42fd2c4382884da57ab5be5c6b2e565a103ca929ea770c290875b20cb02f7697",
+      "translation_sha256": "02169201a4894e1cec59b27ece57c5c433e8f9de35855c44011e9c11b6fb0682",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch370/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "04bf48c6fd65c5a6df3a70062d12ad1aaf2becddf9d9d9cfcf0bb25fea97a3c8"
+    },
+    {
+      "entry_id": "wikipedia-65063196",
+      "source_fields_sha256": "b488498cfbd9ecf8dc6ff44010d34e0844dbe7839381b93520f2354205f5b7a4",
+      "translation_sha256": "5de1b9254c081a98ba86c6fbd50cd1ab8247d615ccfe132026a66e7566221fc2",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch370/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "04bf48c6fd65c5a6df3a70062d12ad1aaf2becddf9d9d9cfcf0bb25fea97a3c8"
+    },
+    {
+      "entry_id": "wikipedia-68243376",
+      "source_fields_sha256": "b7543d372289f90683c54eacb4cb80ba9d3b531d6f3244f284734052723aa08b",
+      "translation_sha256": "2d98a4c26290c161f29855fd94ad23c1a581a2be95e8e7e6385067c72b1b5ed0",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch370/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "04bf48c6fd65c5a6df3a70062d12ad1aaf2becddf9d9d9cfcf0bb25fea97a3c8"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "/root/package_audit",
+    "actual_receipt": "build/research/catalog-2024-chronological/june-august-three-private/independent-package-audit-approval.json",
+    "actual_receipt_sha256": "06a06d86562f86cfc49ebee0f6d250510276ae259abbc55fee9d540a8d5f2509",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "/root/package_audit",
+      "index": "build/research/catalog-2024-chronological/june-august-three-private/three-private-index.json",
+      "index_sha256": "8f48067fa0578da794cc2f8081a3b22707027317bfaff563f9bfd887201f5bae",
+      "owners": [
+        {
+          "entry_id": "wikipedia-83404081",
+          "slug": "elden",
+          "source": "build/research/catalog-2024-chronological/june-august-three-private/elden-source-private-candidate.json",
+          "source_sha256": "e4314ae9ee8768824354df43317525f5a0becdf93a01236f67a586a2bc5d987a",
+          "target": "build/research/catalog-2024-chronological/june-august-three-private/elden-four-language-private-candidate.json",
+          "target_sha256": "7fc5deb5831904e45452985b0eb1ef4bf8908ef835ca4ffba7bc2f1a01a9272a",
+          "contact": "build/research/catalog-2024-chronological/june-august-three-private/elden-final-contact.jpg",
+          "contact_sha256": "278dc455bcb90c615431fd1f7a66e09fa643ef4de7c934411269d76645c5ad3a",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 5,
+          "tracks": 3
+        },
+        {
+          "entry_id": "wikipedia-65063196",
+          "slug": "wukong",
+          "source": "build/research/catalog-2024-chronological/june-august-three-private/wukong-source-private-candidate.json",
+          "source_sha256": "303cf2ddd80185b5d2fad0733fe354911d33ca57a9fcf5c7cd42f31f9f2ef83a",
+          "target": "build/research/catalog-2024-chronological/june-august-three-private/wukong-four-language-private-candidate.json",
+          "target_sha256": "fbbbfee3124fbcde00a8159075c1c61615ad7d78f530a6bcaa1d37b069bf174c",
+          "contact": "build/research/catalog-2024-chronological/june-august-three-private/wukong-final-contact.jpg",
+          "contact_sha256": "c4ba66ac468604eeb385e63a120cb8b3d12ee5c6c884293edc71121382f70538",
+          "english_cards": 2,
+          "localized_cards": 8,
+          "images": 5,
+          "tracks": 3
+        },
+        {
+          "entry_id": "wikipedia-68243376",
+          "slug": "outlaws",
+          "source": "build/research/catalog-2024-chronological/june-august-three-private/outlaws-source-private-candidate.json",
+          "source_sha256": "f24a99bcd5b17c44ae2e8be9c58aca0a7ca59ed8e5d4706a61df35dd0cf35bea",
+          "target": "build/research/catalog-2024-chronological/june-august-three-private/outlaws-four-language-private-candidate.json",
+          "target_sha256": "b39f0fa72d8313a41f77fa051ed598e02e3189fdf210710fbc79aad141a86dda",
+          "contact": "build/research/catalog-2024-chronological/june-august-three-private/outlaws-final-contact.jpg",
+          "contact_sha256": "23411f184bd84b627de96de611b57f1048c786121b3f072a7ace6e628fec3177",
+          "english_cards": 4,
+          "localized_cards": 16,
+          "images": 5,
+          "tracks": 3
+        }
+      ],
+      "scope": {
+        "english_paragraphs_read": 9,
+        "localized_paragraphs_read": 36,
+        "selected_images_actually_viewed": 15,
+        "final_contacts_actually_viewed": 3,
+        "new_selected_public_music_metadata_read": 9
+      },
+      "findings": [],
+      "primary_evidence": [
+        {
+          "url": "https://www.fromsoftware.jp/ww/pressrelease/20240222_eldenring_dlc_debut.html",
+          "checked": "Original expansion release June 21, 2024 and Miquella/Land of Shadow premise."
+        },
+        {
+          "url": "https://group.kadokawa.co.jp/global/information/media-download/1695/8a44b9c939296b05/",
+          "checked": "July 24, 2025 announcement: ten million shipments including digital, note 1/2."
+        },
+        {
+          "url": "https://www.bandainamcoent.com/news/elden-ring-tarnished-edition-now-available-on-nintendo-switch-2",
+          "checked": "Actual August 28, 2026 Switch 2 release, retained."
+        },
+        {
+          "url": "https://gamesci.cn/wukong/news/detail?id=192",
+          "checked": "Game Science June 6, 2025 announcement indexed full text confirms Xbox August 20, 2025; direct open returned no article."
+        },
+        {
+          "url": "https://www.ubisoft.com/en-gb/game/star-wars/outlaws/news-updates/2IR062oHAAtJNmnlj34wsM/faq",
+          "checked": "August 30, 2024 launch, Kay/Nix setting, syndicates and composer Wilbert Roget II."
+        }
+      ],
+      "music_review": "Nine selected original 2024 game/expansion recordings have saved public AAC metadata and individual composer credits. Qiuvox discovery result is not selected. No audio downloaded, no PS5 playback claimed.",
+      "production_writes": false
+    }
+  }
+}

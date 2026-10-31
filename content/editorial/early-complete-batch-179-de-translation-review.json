@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "locale": "de",
+  "review": "Binding of exact independently approved complete candidate members; no new linguistic review substituted. Every full candidate SHA and independent PASS receipt checked, all current English five fields and translation hashes validated.",
+  "entries": [
+    {
+      "entry_id": "wikipedia-1745270",
+      "source_fields_sha256": "233779638b9adbbe2ff41631f6966f4476c4f4b3f62b77e58d6d4a7e70d6f1ab",
+      "translation_sha256": "12ed9b80738201cd774f847a2ba22bd169e725597834dc966a08cc5889d16fbb",
+      "independent_peer": "build/research/khii2005-four-language-completion/independent-all-fields-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "933ccf77be92ead076d06501ef182f48bb3e728561639eb021f4ca8f37fd4012",
+      "candidate_path": "build/research/khii2005-four-language-completion/khii-all-five-fields-four-language-full-reuse-fidelity-candidate.json",
+      "candidate_sha256": "821ed8f1a67556bfe25652f5d9a4e360efab9803098a48346cf9dfc7ffd82282"
+    },
+    {
+      "entry_id": "wikipedia-773468",
+      "source_fields_sha256": "25a3aa4b3219b3e7a6e5bb266980e89ce2666a26235307b16b5627de446e0ee3",
+      "translation_sha256": "7e9aa0fbfdd8d2cca39a686d5155c1820b89661f2718a104d6fd071396f463fd",
+      "independent_peer": "build/research/wild-world2005-four-language-completion/independent-all-fields-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "75402d16d3973efbe981d633040d877b48b7ff209daa9746dc3098f3e5e580b6",
+      "candidate_path": "build/research/wild-world2005-four-language-completion/wild-world-all-five-fields-four-language-full-reuse-fidelity-candidate.json",
+      "candidate_sha256": "174ce47b66593e3800613873f28583bb5d61967a9903090387e4080e773baa21"
+    },
+    {
+      "entry_id": "workbook-12-08-yakuza",
+      "source_fields_sha256": "5ccd7859896b6b2312f217e7e592019e10a49a4db4bf8cc2c96261dead463e57",
+      "translation_sha256": "0f8259245928eaeb7c1011b3245f5d098fc57c2443da6d1b08c6536871165e26",
+      "independent_peer": "build/research/yakuza2005-four-language-completion/independent-all-fields-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "ad822d925bb8b1a02bef09059323b7336a7c394bfc99890bea46a20c84ed1512",
+      "candidate_path": "build/research/yakuza2005-four-language-completion/yakuza-four-language-final-four-natural-independent-peer-units-candidate.json",
+      "candidate_sha256": "bc33ea288d6824e018035fdfa3bcec34d210237702383e9f99bf0287d1db628c"
+    }
+  ]
+}

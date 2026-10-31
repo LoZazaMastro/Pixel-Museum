@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "batch": "priority-feature-context-media-14",
+  "created_utc": "2026-10-21T02:52:39.112242+00:00",
+  "status": "Frozen one precise physical-control association after complete reading of four unillustrated features. Independent admission pending; three explicit holds.",
+  "source_catalog_sha256": "280a4e335f8bbeb6230e4e1b24a12894a7adec36d073b44689b01dee928eba36",
+  "entries": [
+    {
+      "feature_id": "feature-coin-op-location-test",
+      "feature_body_sha256": "9adfab08477d37725bed0d1b2dc6ced30d71c26fb603d402e5981d981a5d8ce8",
+      "images": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/32/Signed_Pong_Cabinet.jpg",
+          "source_page": "https://commons.wikimedia.org/wiki/File:Signed_Pong_Cabinet.jpg",
+          "title": "The two rotary paddle controls on a production Pong cabinet, photographed at Neville Public Museum in 2013.",
+          "creator": "Chris Rand",
+          "license": "CC BY-SA 3.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "credit": "Chris Rand / CC BY-SA 3.0",
+          "width": 2990,
+          "height": 4912,
+          "native_long_edge": 4912,
+          "quality_verified": "Existing complete remote original from the publishing audit, re-decoded and visually inspected locally. Actual2990x4912 bytes; SHA-256 verified. No new HTTP, retouch, crop or enlargement.",
+          "story_paragraph": 2,
+          "verification": {
+            "sha256": "ab216164aa8a045fabb39b0f64ca40f330dbab3424279cdd61efa6650b93d8a0",
+            "checked_utc": "2026-10-21T02:52:39.111242+00:00",
+            "local_proof": "F:/Playhub/PS5/Pixel Museum/build/research/publishing/pong-original.jpg",
+            "verification_scope": "Existing original byte/native identity recheck; no fresh availability claim"
+          },
+          "representation_note": "Photographed31May2013. A preserved Pong cabinet, not a photograph of its1972 prototype test.",
+          "caption": "The two rotary paddle controls on a production Pong cabinet, photographed at Neville Public Museum in 2013.",
+          "context_heading": "What a worn knob reveals",
+          "context_review_note": "The exact original shows both player knobs and the coin slot on a commercial cabinet signed by Al Alcorn. It directly identifies the physical rotary controls discussed in the card. This is a2013 museum photograph, not AndyCapp's original prototype, a documented worn potentiometer, a repair session or evidence of the failure rate.",
+          "rights_review": "Original photographer and explicit Commons CC BY-SA3.0 grant preserved; underlying cabinet artwork and trademarks retain their rights. No additional licence or process-photo claim.",
+          "association_provenance": {
+            "from_entry_id": "pong",
+            "from_source": "build/research/publishing/pong-proof.json",
+            "metadata_sha256": "b86d61cdde655a5f18f44f11cf4193e06219cc96d4ee22309dcd5e69ade5da0d",
+            "same_already_verified_image": true,
+            "no_new_remote_request": true
+          }
+        }
+      ]
+    }
+  ],
+  "holds": [
+    {
+      "feature_id": "feature-space-invaders-space",
+      "feature_body_sha256": "3ee40ce3291bcd37a5088031ea7bfd64e2d22b436ba86f13d97f6ed4bdc3b93c",
+      "body_read_in_full": true,
+      "reason": "The admitted SpaceInvaders photograph is a standing arcade cabinet. It does not demonstrate the last-target acceleration, Nagoya projectile gap, Nishikado's light-pen animation tool or the genuine Taito table format described by the four cards. No exact local HD process/gameplay/table source is substituted."
+    },
+    {
+      "feature_id": "feature-loading-screen-culture",
+      "feature_body_sha256": "35244a4e691e8b3514cd9a43431c656d00beae6d3cd01741961deb875a1423e8",
+      "body_read_in_full": true,
+      "reason": "Verified C64/SID hardware photographs do not show Docherty's Leviathan or DruidII loading artwork, a running Freeload audiovisual sequence or the HitSquad duplicating process. The existing small source illustrations are not enlarged into HD, and no generic keyboard is labelled as that production process."
+    },
+    {
+      "feature_id": "feature-spectrum-bedroom-networks",
+      "feature_body_sha256": "eea66874a9046d7877cc8b10f8a05a041647bf9882ad9a8ac37298dcbd751be5",
+      "body_read_in_full": true,
+      "reason": "No verified local HD image identifies Wetherill's actual demo tape/household workspace or Pape's Quill/Rampage demo and Fareham collaboration. Generic cassettes or a Spectrum alone would not establish the named postal/production events. No unverified obsolete Playhub tape assignment is revived."
+    }
+  ],
+  "counts": {
+    "features_read_fully": 4,
+    "paragraphs_read_fully": 16,
+    "proposed_images": 1,
+    "new_remote_images": 0,
+    "previously_verified_image_reassociations": 1,
+    "illustrated_cards": 1,
+    "features_with_majority_of_four_cards": 0,
+    "independent_editorial_signoffs": 0
+  },
+  "scope": "No network, master, body, heading, date, licence/source attribution or package modifications. One actual control photo is not a completion claim for a four-card process narrative."
+}

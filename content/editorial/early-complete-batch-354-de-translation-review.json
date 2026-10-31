@@ -1,0 +1,121 @@
+{
+  "status": "PASS",
+  "locale": "de",
+  "entries": [
+    {
+      "entry_id": "workbook-03-03-wo-long-fallen-dynasty",
+      "source_fields_sha256": "cfc4a1ee5b8df610c29416082c267067b7f523c795bbc43a7844f04a6a9bc009",
+      "translation_sha256": "4d04772e5849fb834d360f88f1557fbac7d2e6bb42ad488bd125f7dde73282cc",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch354/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "e0c2dbb294b543199f37131c44382afe27f90612940a89c2b3bb3070244cd836"
+    },
+    {
+      "entry_id": "wikipedia-70944656",
+      "source_fields_sha256": "16832c9dc86e92b54992f87bb805948ee8a60b9faecbff0fea287a786d1a5d62",
+      "translation_sha256": "d5f1298f641042dd4f0fad24b8965a0225e47ae0e2c8db63fc33c20b57af2b79",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch354/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "e0c2dbb294b543199f37131c44382afe27f90612940a89c2b3bb3070244cd836"
+    },
+    {
+      "entry_id": "workbook-04-18-minecraft-legends",
+      "source_fields_sha256": "e8cd94ab54994230155bee4876b2896cd3b683fbe3e5aa7cbd15dbeecf4fa30c",
+      "translation_sha256": "026e403ad33614ed1d25080461de6675ed364adbe81a3b195ef89dcc4a4984c5",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch354/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "e0c2dbb294b543199f37131c44382afe27f90612940a89c2b3bb3070244cd836"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "/root/package_audit",
+    "actual_receipt": "build/research/catalog-2023-chronological/root-march-april-three-private/independent-package-audit-approval.json",
+    "actual_receipt_sha256": "b22d525494c957a3f5358d040e605c0fdd7ac7a76e4adb7a5f83b42c8c4ca8b5",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "/root/package_audit",
+      "author": "/root (English/media/music); /root/category_audit (translations)",
+      "independent": true,
+      "index_sha256": "e697e57db43f719e71787f6e2987516d0686933a559d7fa6a319405156edb94a",
+      "owners": [
+        {
+          "entry_id": "workbook-03-03-wo-long-fallen-dynasty",
+          "slug": "wolong",
+          "source": "build/research/catalog-2023-chronological/root-march-april-three-private/wolong-source-private-candidate.json",
+          "source_sha256": "03a392c7e5853c080788f40da63560613573718fd0ecd5232136d7b4ec59696b",
+          "target": "build/research/catalog-2023-chronological/root-march-april-three-private/wolong-four-language-private-candidate.json",
+          "target_sha256": "42188ecab682b2bbcf9f2be17ae401445d0ad02bb7874ac22ae7e3bf3b605499",
+          "contact": "build/research/catalog-2023-chronological/root-march-april-three-private/wolong-final-contact.jpg",
+          "contact_sha256": "4c09353c1a72a2e9428d97baa8268f857f84f8eec63fb1554b08721899ebcbb4",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 9,
+          "tracks": 3
+        },
+        {
+          "entry_id": "wikipedia-70944656",
+          "slug": "re4",
+          "source": "build/research/catalog-2023-chronological/root-march-april-three-private/re4-source-private-candidate.json",
+          "source_sha256": "0747a8669025d5835e4df04f0ff381d9d96c2f529db052447864ba48c5750a53",
+          "target": "build/research/catalog-2023-chronological/root-march-april-three-private/re4-four-language-private-candidate.json",
+          "target_sha256": "5889c70d1bb40df32e42a57959f4eaec034c874e9aca0082571f81b06085b803",
+          "contact": "build/research/catalog-2023-chronological/root-march-april-three-private/re4-final-contact.jpg",
+          "contact_sha256": "93baf6cb2347f7a9ee7e7d056619336edca01f8734c2c2f9cff9c607a690f6d7",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 5,
+          "tracks": 80
+        },
+        {
+          "entry_id": "workbook-04-18-minecraft-legends",
+          "slug": "minecraft",
+          "source": "build/research/catalog-2023-chronological/root-march-april-three-private/minecraft-source-private-candidate.json",
+          "source_sha256": "ceadb47b1a853d715569aa0361de20b5a513bab3fe2c8d636916034729562597",
+          "target": "build/research/catalog-2023-chronological/root-march-april-three-private/minecraft-four-language-private-candidate.json",
+          "target_sha256": "24cdb1ba190aa7f621a35ca8cc540630732f9e3613748d93680b03247ffe526a",
+          "contact": "build/research/catalog-2023-chronological/root-march-april-three-private/minecraft-final-contact.jpg",
+          "contact_sha256": "81f444c65471d57d7442a1e886708500b7ef6a582c946993397e6cf59fa17ef4",
+          "english_cards": 5,
+          "localized_cards": 20,
+          "images": 7,
+          "tracks": 5
+        }
+      ],
+      "scope": {
+        "english_paragraphs_read": 11,
+        "localized_paragraphs_read": 44,
+        "selected_images_actually_viewed": 21,
+        "contacts_actually_viewed": 3,
+        "existing_soundtrack_objects_verified_exact": 87,
+        "new_track_metadata_read": 1,
+        "old_audio_not_refetched": true
+      },
+      "resolved_findings": [
+        {
+          "owner": "workbook-04-18-minecraft-legends",
+          "field": "body[4] and four translations",
+          "finding": "Lapis was incorrectly grouped with resources requiring Well of Fate gathering upgrades.",
+          "resolution": "Root separated redstone upgrade prerequisite from lapis obtained by defeating piglins or opening village chests; all four localized paragraphs now match.",
+          "primary_sources": [
+            "https://www.minecraft.net/en-us/article/the-overworld-minecraft-legends",
+            "https://www.minecraft.net/en-us/article/minecraft-legends-campaign-tips"
+          ]
+        }
+      ],
+      "remaining_findings": [],
+      "observations": [
+        "Read all11 English chapters, prepare finite changes and all44 localized paragraphs/five fields. RE4 and Minecraft localized subtitles use natural first-heading text while empty English subtitle stays unchanged.",
+        "Viewed all21 selected images in three final sheets. Clean covers and gameplay cover all11 chapters; platform brand is confined to preserved official trailer posters. WoLong retained promotional imagery is unbound; new combat scenes are actual publisher screenshots, not numbered manual diagrams.",
+        "Read saved168second TheYellowHeaven metadata: KenichiroSuehiro Topic, NexTone, original soundtrack released3March2023, publicAAC. Read official TeamNINJA soundtrack announcement; no new playback claim.",
+        "Verified Capcom ten-million milestone is specifically fastest to that threshold; verified Nintendo Switch2 GoldEdition16October2026 is real current primary, not presumed false future data. Minecraft developer announcement distinguishes end of new content from game closure."
+      ],
+      "primary_sources_read": [
+        "https://www.capcom.co.jp/ir/english/news/html/e250425.html",
+        "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-2-games/Resident-Evil-4-Gold-Edition-3183693.html",
+        "https://teamninja-studio.com/wolong/jp/news/20230303_2.html",
+        "https://www.minecraft.net/en-us/article/lost-legends-snow-vs-snouts",
+        "https://www.minecraft.net/en-us/article/the-overworld-minecraft-legends",
+        "https://www.minecraft.net/fr-fr/article/minecraft-legends-campaign-tips"
+      ],
+      "production_writes": false
+    }
+  }
+}

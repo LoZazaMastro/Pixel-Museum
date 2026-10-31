@@ -1,0 +1,992 @@
+{
+  "batch_id": "087-catalog",
+  "status": "completed",
+  "sources": [
+    {
+      "source_id": "pso-history",
+      "url": "https://phantasystar.sega.jp/20th/history/",
+      "title": "Phantasy Star — storia per il ventesimo anniversario",
+      "publisher": "Sega",
+      "accessed_at": "2026-10-30",
+      "scope": "La cronologia ufficiale indica 21 dicembre 2000 per Phantasy Star Online.",
+      "limitation": "Letto l’estratto indicizzato. Data giapponese; non importati primati o altri fatti estranei dal resto della pagina."
+    },
+    {
+      "source_id": "pso-manual",
+      "url": "https://www.digitpress.com/library/manuals/dreamcast/phantasy_star_online.pdf",
+      "title": "Phantasy Star Online — manuale originale Dreamcast",
+      "publisher": "Sega / Sonic Team; conservato da Digital Press",
+      "accessed_at": "2026-10-30",
+      "scope": "Pagine 12 e 25: Word Select, Symbol Chat con parti grafiche, Balloon Chat separata; Guild Card, ricerca e Simple Mail. Pagine 4–5 e 26: salvataggi, uscita e disconnessione.",
+      "limitation": "Letta l’estrazione testuale di 17 pagine. La fonte dell’INPUT riporta una precedente ispezione visiva: questo riesame non pretende di aver visionato le scansioni. I fatti già forniti nella feature restano attribuiti al manuale."
+    },
+    {
+      "source_id": "pso-naka-provided",
+      "url": "https://www.sonicstadium.org/timewarp/v7/interviews-v7/yuji7/",
+      "title": "Yuji Naka interview for Sega.com, 2001",
+      "publisher": "Yuji Naka intervistato da Marc Cellucci / Sega.com; traduzione Osamu Shibamiya; copia accreditata The Sonic Stadium",
+      "accessed_at": "2026-10-30",
+      "scope": "Fonte e passaggi già forniti nell’INPUT: prove di rete, ChuChu Rocket, reti nazionali, Internet Time e coordinamento dei server.",
+      "limitation": "Il nuovo tentativo di apertura restituisce 403. La riscrittura si basa sul testo e sui riferimenti già forniti, senza dichiarare nuova lettura dell’intervista, né confonderla con l’intervista GameSpot."
+    },
+    {
+      "source_id": "luigi-publisher",
+      "url": "https://www.nintendo.com/en-gb/Games/Nintendo-GameCube/Luigi-s-Mansion-268236.html",
+      "title": "Luigi’s Mansion — descrizione originale del publisher",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "La descrizione distingue torcia di Luigi e Poltergust introdotto dal professore; conferma cattura, resistenza dei fantasmi, Game Boy Horror e poteri elementali.",
+      "limitation": "Pagina letta. Il 3 maggio 2002 riguarda l’edizione europea e non sostituisce il 2001 del gioco originale. Non importati numero di stanze o dettagli extra assenti dal lotto."
+    },
+    {
+      "source_id": "runescape-launch",
+      "url": "https://www.jagex.com/news/runescape-launches-on-ios-and-android",
+      "title": "RuneScape launches on iOS and Android",
+      "publisher": "Jagex, 2021",
+      "accessed_at": "2026-10-30",
+      "scope": "La sezione storica identifica esplicitamente il lancio originario del 4 gennaio 2001.",
+      "limitation": "Pagina letta. L’intestazione e il corpo contengono incongruenze sulla data mobile del 2021, irrilevante per il lotto e non importata. Il lancio originale accessibile al pubblico è distinto dall’annuncio e da una prova privata."
+    },
+    {
+      "source_id": "onimusha-date",
+      "url": "https://www.capcom.co.jp/ir/news/pdf/051019.pdf",
+      "title": "Annuncio Shin Onimusha: Curtain of Darkness",
+      "publisher": "Capcom, 19 ottobre 2005",
+      "accessed_at": "2026-10-30",
+      "scope": "Il comunicato ricorda esplicitamente l’uscita originale del 25 gennaio 2001 per PlayStation 2.",
+      "limitation": "Letto il testo del PDF di due pagine. Si usa il riferimento storico all’originale, non la data dell’annuncio del gioco mobile."
+    },
+    {
+      "source_id": "onimusha-domestic",
+      "url": "https://www.capcom.co.jp/ir/company/history.html",
+      "title": "Storia di Capcom",
+      "publisher": "Capcom",
+      "accessed_at": "2026-10-30",
+      "scope": "La cronologia giapponese precisa il primo milione domestico per un gioco PlayStation 2.",
+      "limitation": "Letta la sezione 2001: la parola domestico circoscrive il primato. La versione inglese abbreviata non deve essere estesa automaticamente a un primato mondiale di sell-through."
+    },
+    {
+      "source_id": "onimusha-awards",
+      "url": "https://sonyinteractive.com/uploads/sites/5/2023/02/010612.pdf",
+      "title": "PlayStation Awards 2001 — titoli premiati",
+      "publisher": "Sony Computer Entertainment, 12 giugno 2001",
+      "accessed_at": "2026-10-30",
+      "scope": "La tabella riporta Onimusha, 25 gennaio 2001, fra i premi Platinum per un milione–due milioni di copie distribuite.",
+      "limitation": "Letta l’estrazione del PDF di due pagine. Il criterio dichiara spedizioni cumulative, non acquisti finali dei consumatori. Non prova da solo quale titolo abbia raggiunto per primo la soglia."
+    },
+    {
+      "source_id": "onimusha-platinum",
+      "url": "https://www.capcom.co.jp/ir/english/business/million.html",
+      "title": "Platinum Titles",
+      "publisher": "Capcom",
+      "accessed_at": "2026-10-30",
+      "scope": "Tabella ufficiale: Onimusha: Warlords, PlayStation 2, gennaio 2001, 2,02 milioni di unità.",
+      "limitation": "Pagina e voce lette. Il testo mantiene il dato già fornito di oltre due milioni senza aggiornamenti numerici superflui o somma con la rimasterizzazione."
+    },
+    {
+      "source_id": "onimusha-shipments",
+      "url": "https://game.watch.impress.co.jp/docs/20020207/capcom.htm",
+      "title": "Onimusha supera due milioni di copie distribuite",
+      "publisher": "GAME Watch, 7 febbraio 2002; comunicazione Capcom",
+      "accessed_at": "2026-10-30",
+      "scope": "Resoconto contemporaneo: 2,01 milioni distribuiti al 31 gennaio 2002, ripartiti Giappone 1,10, Nord America 0,62, Europa 0,29.",
+      "limitation": "Il comunicato originale collegato /ir/zaimu/pdf/020207.pdf non è accessibile dal tool: non dichiarata lettura primaria integrale. Il resoconto esplicita 出荷, quindi distribuzioni."
+    },
+    {
+      "source_id": "onimusha-xbox-jp",
+      "url": "https://www.xbox.com/ja-jp/games/store/ProductName/bvt0l7dzj5vc",
+      "title": "Onimusha — Xbox One, mercato giapponese",
+      "publisher": "Capcom / Xbox Store",
+      "accessed_at": "2026-10-30",
+      "scope": "Scheda letta: rilascio 20 dicembre 2018.",
+      "limitation": "Conferma che il 2018 dell’INPUT non era errato per Xbox One: occorre precisare la regione. Non importati prezzi, bonus o caratteristiche della rimasterizzazione."
+    },
+    {
+      "source_id": "onimusha-remaster-jp",
+      "url": "https://www.4gamer.net/games/431/G043162/",
+      "title": "Onimusha Xbox One — notizia del lancio",
+      "publisher": "4Gamer, 20 dicembre 2018",
+      "accessed_at": "2026-10-30",
+      "scope": "La notizia contemporanea dice uscito oggi e include PS4, Xbox One e Switch; Windows segue nel 2019.",
+      "limitation": "Fonte giornalistica contemporanea per le tre console; corroborata per Xbox dalla scheda diretta del negozio. Non convertita una previsione in prova del giorno."
+    },
+    {
+      "source_id": "onimusha-taiwan",
+      "url": "https://web.archive.org/web/20050218174440/http://www.ea.com.tw/products/products_info.asp?no=501422",
+      "title": "Onimusha CT — versione PC cinese",
+      "publisher": "Electronic Arts Taiwan, pagina originale archiviata",
+      "accessed_at": "2026-10-30",
+      "scope": "Pagina letta: PC, edizione cinese, commercializzazione a Taiwan e ordine di acquisto.",
+      "limitation": "La dicitura fine maggio non è usata per inventare un giorno. Il catalogo prova un territorio omesso dall’esclusiva Cina/Russia dell’INPUT."
+    },
+    {
+      "source_id": "onimusha-hongkong",
+      "url": "https://web.archive.org/web/20030625142959/http://www.typhoongames.com/us/games.php?action=games/onimusha",
+      "title": "Onimusha — PC CD-ROM",
+      "publisher": "Typhoon Games Hong Kong, pagina originale archiviata nel giugno 2003",
+      "accessed_at": "2026-10-30",
+      "scope": "Pagina letta: PC su quattro dischi, lingua cinese e distribuzione tramite Typhoon Games Hong Kong.",
+      "limitation": "Usata per il perimetro geografico. Il 3 giugno riportato non viene aggiunto alla prosa del lotto, che non necessita una nuova cronologia di tutte le conversioni."
+    },
+    {
+      "source_id": "onimusha-china",
+      "url": "https://web.archive.org/web/20040805204224/http://www.ubisoft.com.cn:80/product/product_detail.aspx?id=2",
+      "title": "Onimusha — scheda cinese del prodotto",
+      "publisher": "Ubisoft China, pagina originale archiviata",
+      "accessed_at": "2026-10-30",
+      "scope": "Pagina letta: versione cinese, release 8 luglio 2003 e requisiti PC.",
+      "limitation": "Conferma l’uscita già descritta nell’INPUT; nessun contenuto aggiuntivo importato dai testi promozionali."
+    },
+    {
+      "source_id": "onimusha-russia",
+      "url": "https://web.archive.org/web/20060103143403/http://www.akella.com/ru/games/onimusha/",
+      "title": "Onimusha — pagina del prodotto",
+      "publisher": "Akella, pagina originale archiviata",
+      "accessed_at": "2026-10-30",
+      "scope": "Pagina letta: edizione russa, Capcom sviluppatore, Electronic Arts Taiwan editore d’origine, Akella editore russo.",
+      "limitation": "Il 7 dicembre 2005 vicino all’autore non viene assunto automaticamente come release; il campo data non è leggibile nell’estrazione. La verifica riguarda l’esistenza e il territorio dell’edizione."
+    },
+    {
+      "source_id": "onimusha-2026",
+      "url": "https://www.capcom.co.jp/ir/english/news/html/e260907.html",
+      "title": "Onimusha: Way of the Sword Sells Over 1 Million Units on Launch Day",
+      "publisher": "Capcom, 7 settembre 2026",
+      "accessed_at": "2026-10-30",
+      "scope": "Il comunicato consuntivo conferma che il nuovo episodio è uscito nel 2026.",
+      "limitation": "Pagina letta dopo ricerca recente: non soltanto un annuncio. Non importati nuovi dati di vendita o meccaniche estranei all’originale; revival non equivale a reset dimostrato della continuità."
+    },
+    {
+      "source_id": "paper-original-jp",
+      "url": "https://www.nintendo.co.jp/wii/vc/vc_ms/vc_ms_01.html",
+      "title": "Mario Story — gioco originale",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "La pagina ufficiale identifica l’originale giapponese dell’11 agosto 2000.",
+      "limitation": "Pagina letta. La voce del lotto descrive esplicitamente l’arrivo nordamericano nel 2001: non spostata a una release regionale diversa solo perché precedente."
+    },
+    {
+      "source_id": "paper-northamerica",
+      "url": "https://gamefaqs.gamespot.com/n64/198849-paper-mario/data/1000",
+      "title": "Paper Mario — edizione nordamericana",
+      "publisher": "GameFAQs / GameSpot",
+      "accessed_at": "2026-10-30",
+      "scope": "Il dato fornito è 5 febbraio 2001, concorde con la scheda GameSpot consultata.",
+      "limitation": "Fonte di catalogo secondaria, già presente nell’INPUT. Non dichiarato ritrovato un comunicato Nintendo contemporaneo del giorno. La sola data di una recensione non sarebbe prova sufficiente."
+    },
+    {
+      "source_id": "fear-shipping",
+      "url": "https://www.gamespot.com/articles/fear-effect-2-retro-helix-ship-date-set/1100-2688010/",
+      "title": "Fear Effect 2: Retro Helix ship date set",
+      "publisher": "GameSpot, dichiarazione Eidos contemporanea nel corpo dell’articolo",
+      "accessed_at": "2026-10-30",
+      "scope": "Il corpo annuncia spedizione il 21 febbraio e disponibilità attesa presso i rivenditori entro quella settimana.",
+      "limitation": "L’header attuale del 2006 è incoerente con il contenuto ed è escluso dal ragionamento cronologico. Non prova l’acquisto effettivo il 21."
+    },
+    {
+      "source_id": "fear-catalogues",
+      "url": "https://www.mobygames.com/game/3682/fear-effect-2-retro-helix/releases/playstation/",
+      "title": "Fear Effect 2: Retro Helix — release PlayStation",
+      "publisher": "MobyGames",
+      "accessed_at": "2026-10-30",
+      "scope": "Il catalogo riporta 20 febbraio 2001 Stati Uniti, mentre GameSpot e INPUT riportano 21.",
+      "limitation": "La divergenza dei cataloghi non si risolve a maggioranza. PlayStation Museum conferma soltanto febbraio 2001; nessuna prova consuntiva del primo giorno recuperata nella ricerca."
+    },
+    {
+      "source_id": "oracle-original",
+      "url": "https://www.nintendo.co.jp/n02/dmg/index.html",
+      "title": "Game Boy — elenco dei giochi",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "La lista ufficiale assegna a entrambi gli Oracle il 27 febbraio 2001.",
+      "limitation": "Letto l’indice ufficiale. La pagina originale del gioco ha testo in parte corrotto dalla codifica ma numeri leggibili; la lista e la cronologia Nintendo confermano il giorno giapponese."
+    },
+    {
+      "source_id": "oracle-history",
+      "url": "https://www.nintendo.com/jp/character/zelda/history/index.html",
+      "title": "The Legend of Zelda — storia della serie",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "La cronologia distingue Holodrum e Labrynna, i due antagonisti e il lancio simultaneo giapponese del 27 febbraio 2001.",
+      "limitation": "Letto il testo pertinente; non introdotti nuovi personaggi o meccaniche esterni al lotto."
+    },
+    {
+      "source_id": "oracle-sales-citation",
+      "url": "https://en.wikipedia.org/wiki/The_Legend_of_Zelda:_Oracle_of_Seasons_and_Oracle_of_Ages",
+      "title": "Oracle of Seasons and Oracle of Ages — Reception e References",
+      "publisher": "Wikipedia, rimando al 2020 CESA Games White Paper, p. 242, ISBN 978-4-902346-42-8",
+      "accessed_at": "2026-10-30",
+      "scope": "Il coordinatore ha letto il rimando bibliografico del totale combinato di 3,99 milioni, già fornito nel lotto.",
+      "limitation": "Il volume CESA non è stato consultato direttamente. Conservato il totale riportato per i due giochi insieme, non per ciascuno; nessuna pretesa di nuova verifica primaria della tabella di vendita."
+    }
+  ],
+  "decisions": [
+    {
+      "target_id": "workbook-12-21-phantasy-star-online",
+      "problem": "Symbol Chat include impropriamente brevi testi; data senza regione.",
+      "conclusion": "I messaggi visivi di Symbol Chat sono composti da elementi grafici; i testi appartengono a Balloon Chat. Word Select mostra i messaggi nella lingua del destinatario. Il 21 dicembre 2000 è giapponese.",
+      "source_ids": [
+        "pso-history",
+        "pso-manual"
+      ],
+      "text_applied": "Quattro card principali nelle cinque lingue; correzione della distinzione fra strumenti di comunicazione e proposta di regione."
+    },
+    {
+      "target_id": "feature-online-console-ritual",
+      "problem": "Preservare l’attribuzione delle testimonianze e distinguere l’ora Internet dall’ora locale o UTC.",
+      "conclusion": "Conservare le informazioni fornite e attribuite a Naka e al manuale. L’orologio Swatch dipende dai server; la disconnessione corretta e i file di salvataggio hanno funzioni diverse.",
+      "source_ids": [
+        "pso-naka-provided",
+        "pso-manual"
+      ],
+      "text_applied": "Quattro card di feature nelle cinque lingue, stessi ID; nessuna falsa dichiarazione di nuova lettura dell’intervista bloccata."
+    },
+    {
+      "target_id": "amped-freestyle-snowboarding-2001",
+      "problem": "Non confondere la dimostrazione Gamestock con la release né aggiungere un giorno non fornito.",
+      "conclusion": "Conservare il 2001 annuale e i sistemi già documentati nel testo fornito. Non è emersa una contraddizione che richieda una nuova ricerca estesa.",
+      "source_ids": [],
+      "text_applied": "Quattro card conservano piste reali, preparazione dei salti, prese, ringhiere, telecamere, sponsor, professionisti, punti abilità, Quick Start, gruppi indipendenti e disco fisso."
+    },
+    {
+      "target_id": "looney-tunes-sheep-raider-2001",
+      "problem": "Titoli regionali e crediti da conservare; precisione annuale adeguata.",
+      "conclusion": "Conservare il 2001, i titoli distinti per Europa e Nord America e il credito Eric Caspar già fornito. Nessun giorno dedotto dai cataloghi discordi citati nell’INPUT.",
+      "source_ids": [],
+      "text_applied": "Due card conservano concorso televisivo, Daffy Duck, Ralph Wolf, Sam Sheepdog, destinazioni, pattuglie, ACME, cassette postali e musica."
+    },
+    {
+      "target_id": "luigis-mansion-2001",
+      "problem": "La frase attribuisce al professore anche la fornitura della torcia.",
+      "conclusion": "La descrizione Nintendo distingue la torcia di Luigi dal Poltergust introdotto da E. Gadd. Attribuire al professore l’aspirapolvere e mantenere la torcia come strumento senza un’origine non documentata.",
+      "source_ids": [
+        "luigi-publisher"
+      ],
+      "text_applied": "Correzione dell’incipit nelle cinque lingue; conservati chiavi, luce delle stanze, Game Boy Horror, resistenza dei fantasmi ed elementi."
+    },
+    {
+      "target_id": "workbook-01-04-runescape",
+      "problem": "La data riguarda una beta pubblica, che non va scambiata per un annuncio o una prova chiusa.",
+      "conclusion": "Il 4 gennaio 2001 è riconosciuto da Jagex come lancio originario. La disponibilità pubblica nel browser rende corretta la collocazione, conservando nella prosa la natura di beta.",
+      "source_ids": [
+        "runescape-launch"
+      ],
+      "text_applied": "Quattro card mantengono i due Gower, grafica mista, accesso, tutte le attività, aggiornamenti, abbonamento febbraio 2002 e RuneScape 2 del 2004."
+    },
+    {
+      "target_id": "wikipedia-5571442",
+      "problem": "Primato del milione senza regione, vendite/distribuzioni, edizione PC limitata impropriamente a Cina e Russia, riedizione 2018 senza ambito, stato del titolo 2026.",
+      "conclusion": "Il primato Capcom riguarda il milione in Giappone; i dati contemporanei del totale mondiale sono distribuzioni. La versione PC raggiunge anche Taiwan e Hong Kong, confermate da pagine originali dei distributori. Il remaster console del 2018 è giapponese; il 2019 riguarda la diffusione successiva e Windows. Way of the Sword è effettivamente uscito nel 2026. Il progetto PS1 viene trasferito a PS2, senza far credere cancellato l’intero gioco.",
+      "source_ids": [
+        "onimusha-date",
+        "onimusha-domestic",
+        "onimusha-awards",
+        "onimusha-platinum",
+        "onimusha-shipments",
+        "onimusha-xbox-jp",
+        "onimusha-remaster-jp",
+        "onimusha-taiwan",
+        "onimusha-hongkong",
+        "onimusha-china",
+        "onimusha-russia",
+        "onimusha-2026"
+      ],
+      "text_applied": "Quattro card corrette nelle cinque lingue; 25 gennaio 2001 proposto con regione Giappone. Nessun nuovo giorno aggiunto alla cronologia PC."
+    },
+    {
+      "target_id": "workbook-02-05-paper-mario-video-game",
+      "problem": "La data nordamericana potrebbe essere confusa con la prima uscita mondiale.",
+      "conclusion": "Conservare il 5 febbraio 2001 per l’evento nordamericano esplicito. L’originale giapponese dell’11 agosto 2000 non lo rende falso né impone di sostituirlo.",
+      "source_ids": [
+        "paper-original-jp",
+        "paper-northamerica"
+      ],
+      "text_applied": "Proposta di regione Nord America; quattro card conservano stile, ricordo di Intelligent Systems, turni, badge, punti, compagni, Star Rod e Star Spirits."
+    },
+    {
+      "target_id": "fear-effect-2-2001",
+      "problem": "Il 21 febbraio corrisponde a una spedizione; alcuni cataloghi riportano 20.",
+      "conclusion": "La ricerca non documenta un primo giorno di effettiva vendita. Usare febbraio 2001, precisione mese e Nord America, senza trasformare l’annuncio di spedizione in release giornaliera.",
+      "source_ids": [
+        "fear-shipping",
+        "fear-catalogues"
+      ],
+      "text_applied": "Incipit corretto nelle cinque lingue e proposta mensile; preservati 2048, pandemia, protagonisti, tutti i luoghi, Stanley Liu e David Rovin."
+    },
+    {
+      "target_id": "zelda-oracle-of-ages",
+      "problem": "Dati in comune fra i due Oracle rischiano di sembrare propri di una sola avventura; totale vendite da qualificare.",
+      "conclusion": "Distinguere otto Essences of Time in Ages e otto Essences of Nature in Seasons. Le 3,99 milioni di copie sono il totale riportato per la coppia. La data del 27 febbraio 2001 è giapponese.",
+      "source_ids": [
+        "oracle-original",
+        "oracle-history",
+        "oracle-sales-citation"
+      ],
+      "text_applied": "Quattro card orientate a Labrynna, conservando le informazioni sul compagno e tutti gli ID; titoli propri invariati, appellativo di Din adattato alla lingua della prosa."
+    },
+    {
+      "target_id": "zelda-oracle-of-seasons",
+      "problem": "Stesso materiale della voce Ages: conservarlo senza scambiare protagonisti, strumenti, essenze o vendite.",
+      "conclusion": "La presentazione parte da Holodrum e dal cambio di stagione; conserva il collegamento ad Ages, gli otto oggetti di ciascun gioco e il dato combinato, senza inventare approfondimenti.",
+      "source_ids": [
+        "oracle-original",
+        "oracle-history",
+        "oracle-sales-citation"
+      ],
+      "text_applied": "Quattro card complete nelle cinque lingue, stessa struttura e proposta di regione. Nessuna fusione delle due voci o eliminazione dei paragrafi ripetuti nell’INPUT."
+    }
+  ],
+  "metadata_proposals": [
+    {
+      "target_id": "workbook-12-21-phantasy-star-online",
+      "field": "timeline_release",
+      "original": {
+        "year": 2000,
+        "month": 12,
+        "day": 21,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed": {
+        "year": 2000,
+        "month": 12,
+        "day": 21,
+        "precision": "day",
+        "region": "Japan",
+        "version": "Dreamcast"
+      },
+      "source_ids": [
+        "pso-history"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "wikipedia-5571442",
+      "field": "timeline_release",
+      "original": {
+        "year": 2001,
+        "month": 1,
+        "day": 25,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed": {
+        "year": 2001,
+        "month": 1,
+        "day": 25,
+        "precision": "day",
+        "region": "Japan",
+        "version": "PlayStation 2"
+      },
+      "source_ids": [
+        "onimusha-date",
+        "onimusha-awards"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "workbook-02-05-paper-mario-video-game",
+      "field": "timeline_release",
+      "original": {
+        "year": 2001,
+        "month": 2,
+        "day": 5,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed": {
+        "year": 2001,
+        "month": 2,
+        "day": 5,
+        "precision": "day",
+        "region": "North America",
+        "version": "Nintendo 64"
+      },
+      "source_ids": [
+        "paper-northamerica"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "fear-effect-2-2001",
+      "field": "timeline_release",
+      "original": {
+        "year": 2001,
+        "month": 2,
+        "day": 21,
+        "precision": "day",
+        "region": "North America"
+      },
+      "proposed": {
+        "year": 2001,
+        "month": 2,
+        "day": null,
+        "precision": "month",
+        "region": "North America",
+        "version": "PlayStation"
+      },
+      "source_ids": [
+        "fear-shipping",
+        "fear-catalogues"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "zelda-oracle-of-ages",
+      "field": "timeline_release",
+      "original": {
+        "year": 2001,
+        "month": 2,
+        "day": 27,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed": {
+        "year": 2001,
+        "month": 2,
+        "day": 27,
+        "precision": "day",
+        "region": "Japan",
+        "version": "Game Boy Color"
+      },
+      "source_ids": [
+        "oracle-original",
+        "oracle-history"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "zelda-oracle-of-seasons",
+      "field": "timeline_release",
+      "original": {
+        "year": 2001,
+        "month": 2,
+        "day": 27,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed": {
+        "year": 2001,
+        "month": 2,
+        "day": 27,
+        "precision": "day",
+        "region": "Japan",
+        "version": "Game Boy Color"
+      },
+      "source_ids": [
+        "oracle-original",
+        "oracle-history"
+      ],
+      "applied_to_catalog": false
+    }
+  ],
+  "expansion_assessments": [
+    {
+      "target_id": "workbook-12-21-phantasy-star-online",
+      "main_cards": 4,
+      "feature_cards": 4,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 1,
+      "rationale": "Priorità editoriale per l’incontro fra gioco di ruolo e cooperazione online su console."
+    },
+    {
+      "target_id": "amped-freestyle-snowboarding-2001",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 1,
+      "rationale": "Priorità editoriale per la carriera sportiva e la libertà di percorso nell’offerta iniziale di Xbox."
+    },
+    {
+      "target_id": "looney-tunes-sheep-raider-2001",
+      "main_cards": 2,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "required_main_cards": null,
+      "missing_cards": 0,
+      "rationale": "La presenza nel catalogo non determina automaticamente l’applicazione della soglia dei giochi più importanti. I nuclei disponibili sono pertinenti; conservare struttura e quantità di informazioni senza dividerli per raggiungere una quota."
+    },
+    {
+      "target_id": "luigis-mansion-2001",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 1,
+      "rationale": "Priorità editoriale per la costruzione di un’avventura di Luigi attorno a cattura e osservazione."
+    },
+    {
+      "target_id": "workbook-01-04-runescape",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 1,
+      "rationale": "Priorità editoriale per la diffusione di un mondo online accessibile dal browser."
+    },
+    {
+      "target_id": "wikipedia-5571442",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 1,
+      "rationale": "Priorità editoriale per l’affermazione di Onimusha su PlayStation 2."
+    },
+    {
+      "target_id": "workbook-02-05-paper-mario-video-game",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 1,
+      "rationale": "Priorità editoriale per la costruzione del gioco di ruolo attraverso l’identità visiva di Paper Mario."
+    },
+    {
+      "target_id": "fear-effect-2-2001",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "required_main_cards": null,
+      "missing_cards": 0,
+      "rationale": "La presenza nel catalogo non determina automaticamente l’applicazione della soglia dei giochi più importanti. I nuclei disponibili sono pertinenti; conservare struttura e quantità di informazioni senza dividerli per raggiungere una quota."
+    },
+    {
+      "target_id": "zelda-oracle-of-ages",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 1,
+      "rationale": "Priorità editoriale per il rapporto fra viaggio temporale e collegamento fra giochi nella serie Zelda."
+    },
+    {
+      "target_id": "zelda-oracle-of-seasons",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 1,
+      "rationale": "Priorità editoriale per il rapporto fra trasformazione del paesaggio e collegamento fra giochi nella serie Zelda."
+    }
+  ],
+  "editorial_review": {
+    "english_first": true,
+    "five_languages_reviewed": [
+      "en",
+      "it",
+      "fr",
+      "de",
+      "es"
+    ],
+    "checks": [
+      "10 voci, 37 card principali e 4 card della feature PSO; 205 versioni complete",
+      "Inglese scritto e salvato prima degli adattamenti, con checkpoint per ciascuna lingua",
+      "Sommari inglesi 35–41 parole; feature 38 parole; titoli propri, feature_id, card_id e ordine invariati",
+      "Conservate le attribuzioni a Yuji Naka, Sega.com, traduttore e manuale nei riferimenti; nessuna nuova ispezione visiva dichiarata",
+      "Riletti sistemi di comunicazione PSO, carriera Amped, osservazione e congegni Sheep Raider, cattura e poteri Luigi’s Mansion",
+      "Distinte beta pubblica e annuncio in RuneScape, territori e distribuzioni Onimusha, release regionale Paper Mario, spedizioni Fear Effect 2",
+      "Nelle due voci Oracle preservati tutti i dettagli condivisi, con ordine narrativo orientato a ciascun gioco e dato di vendita combinato",
+      "Trenta modifiche di rilettura documentate, incluse correzioni nelle cinque lingue di perimetri geografici, quantità e data Fear Effect 2",
+      "Otto necessità di ampliamento, una card principale ciascuna; PSO ha anche quattro card di feature contate separatamente"
+    ],
+    "external_verification_limit": "Ricerca mirata sui punti problematici, non certificazione di ogni frase del lotto. Le fonti nuove distinguono primarie ufficiali, archivi di distributori, testimonianze fornite e cataloghi secondari. L’intervista Naka non è stata nuovamente accessibile e il volume CESA non è stato letto. Fear Effect 2 conserva precisione mensile perché il primo giorno non è dimostrato. Non modificati originali, template, catalogo, date, media o crediti; attribuzioni e licenze dell’INPUT restano necessarie.",
+    "book_style_references_consulted": false
+  },
+  "review_changes": [
+    {
+      "target_id": "zelda-oracle-of-ages",
+      "feature_id": null,
+      "language": "en",
+      "card_id": "main:3",
+      "field": "text",
+      "before": "After experimenting with a Game Boy Color adaptation of the original The Legend of Zelda from 1986, Capcom’s Flagship team, supervised by Yoshiki Okamoto, began developing connected adventures that could be played in either order. Oracle of Ages and Oracle of Seasons sold a combined 3.99 million copies. Reviewers praised the gameplay, colourful design and graphics, while finding the sound quality uneven. Both returned on Nintendo 3DS Virtual Console in 2013 and Nintendo Classics in 2023.",
+      "after": "After experimenting with a Game Boy Color adaptation of the original The Legend of Zelda from 1986, Capcom’s Flagship team, supervised by Yoshiki Okamoto, began developing connected adventures that could be played in either order. Reported combined sales of Oracle of Ages and Oracle of Seasons reached 3.99 million copies. Reviewers praised the gameplay, colourful design and graphics, while finding the sound quality uneven. Both returned on Nintendo 3DS Virtual Console in 2013 and Nintendo Classics in 2023.",
+      "reason": "Totale combinato riportato nella fonte; il volume CESA citato non è stato letto direttamente."
+    },
+    {
+      "target_id": "zelda-oracle-of-seasons",
+      "feature_id": null,
+      "language": "en",
+      "card_id": "main:3",
+      "field": "text",
+      "before": "Capcom’s Flagship team first experimented with adapting the original The Legend of Zelda from 1986 for Game Boy Color. Under Yoshiki Okamoto’s supervision, the project developed into interconnected adventures that could be played in either order. Oracle of Seasons and Oracle of Ages sold 3.99 million copies together. Critics praised the play, colourful designs and graphics, although the sound quality drew mixed reactions. Both games returned on Nintendo 3DS Virtual Console in 2013 and Nintendo Classics in 2023.",
+      "after": "Capcom’s Flagship team first experimented with adapting the original The Legend of Zelda from 1986 for Game Boy Color. Under Yoshiki Okamoto’s supervision, the project developed into interconnected adventures that could be played in either order. Reported combined sales of Oracle of Seasons and Oracle of Ages reached 3.99 million copies. Critics praised the play, colourful designs and graphics, although the sound quality drew mixed reactions. Both games returned on Nintendo 3DS Virtual Console in 2013 and Nintendo Classics in 2023.",
+      "reason": "Totale combinato riportato nella fonte; il volume CESA citato non è stato letto direttamente."
+    },
+    {
+      "target_id": "fear-effect-2-2001",
+      "feature_id": null,
+      "language": "en",
+      "card_id": "main:0",
+      "field": "text",
+      "before": "Fear Effect 2: Retro Helix is Kronos Digital Entertainment’s PlayStation action adventure, first released in North America on 21 February 2001. Set in 2048, before the original game, it follows the circumstances that bring Hana, Glas and Deke together with Rain Qin. A degenerative pandemic has changed their world, where freelance assignments and personal aims draw them into a larger conspiracy. Action, puzzles and cinematic scenes develop the relationships behind the original cast, beginning with characters whose immediate concerns are still separate.",
+      "after": "Fear Effect 2: Retro Helix is Kronos Digital Entertainment’s PlayStation action adventure, released in North America in February 2001. Set in 2048, before the original game, it follows the circumstances that bring Hana, Glas and Deke together with Rain Qin. A degenerative pandemic has changed their world, where freelance assignments and personal aims draw them into a larger conspiracy. Action, puzzles and cinematic scenes develop the relationships behind the original cast, beginning with characters whose immediate concerns are still separate.",
+      "reason": "Il 21 febbraio è documentato come spedizione; i cataloghi riportano 20 o 21. La disponibilità resta a precisione mensile senza inventare il giorno."
+    },
+    {
+      "target_id": "fear-effect-2-2001",
+      "feature_id": null,
+      "language": "it",
+      "card_id": "main:0",
+      "field": "text",
+      "before": "Fear Effect 2: Retro Helix è l’avventura d’azione di Kronos Digital Entertainment per PlayStation, uscita inizialmente in Nord America il 21 febbraio 2001. Ambientata nel 2048, prima del gioco originale, racconta come Hana, Glas e Deke si ritrovino insieme a Rain Qin. Una pandemia degenerativa ha cambiato il loro mondo, dove incarichi da indipendenti e obiettivi personali li attirano in un complotto più ampio. Azione, enigmi e scene cinematografiche approfondiscono i legami fra i protagonisti, che all’inizio seguono ancora interessi separati.",
+      "after": "Fear Effect 2: Retro Helix è l’avventura d’azione di Kronos Digital Entertainment per PlayStation, uscita in Nord America nel febbraio 2001. Ambientata nel 2048, prima del gioco originale, racconta come Hana, Glas e Deke si ritrovino insieme a Rain Qin. Una pandemia degenerativa ha cambiato il loro mondo, dove incarichi da indipendenti e obiettivi personali li attirano in un complotto più ampio. Azione, enigmi e scene cinematografiche approfondiscono i legami fra i protagonisti, che all’inizio seguono ancora interessi separati.",
+      "reason": "Il 21 febbraio è documentato come spedizione; i cataloghi riportano 20 o 21. La disponibilità resta a precisione mensile senza inventare il giorno."
+    },
+    {
+      "target_id": "fear-effect-2-2001",
+      "feature_id": null,
+      "language": "fr",
+      "card_id": "main:0",
+      "field": "text",
+      "before": "Fear Effect 2: Retro Helix est le jeu d’action-aventure de Kronos Digital Entertainment pour PlayStation, d’abord sorti en Amérique du Nord le 21 février 2001. Situé en 2048, avant l’épisode original, il raconte comment Hana, Glas et Deke se retrouvent avec Rain Qin. Une pandémie dégénérative a transformé leur monde, où missions en indépendants et objectifs personnels les attirent dans un complot plus vaste. Action, énigmes et séquences cinématographiques approfondissent les liens entre ces protagonistes, dont les préoccupations sont encore séparées au début.",
+      "after": "Fear Effect 2: Retro Helix est le jeu d’action-aventure de Kronos Digital Entertainment pour PlayStation, sorti en Amérique du Nord en février 2001. Situé en 2048, avant l’épisode original, il raconte comment Hana, Glas et Deke se retrouvent avec Rain Qin. Une pandémie dégénérative a transformé leur monde, où missions en indépendants et objectifs personnels les attirent dans un complot plus vaste. Action, énigmes et séquences cinématographiques approfondissent les liens entre ces protagonistes, dont les préoccupations sont encore séparées au début.",
+      "reason": "Il 21 febbraio è documentato come spedizione; i cataloghi riportano 20 o 21. La disponibilità resta a precisione mensile senza inventare il giorno."
+    },
+    {
+      "target_id": "fear-effect-2-2001",
+      "feature_id": null,
+      "language": "de",
+      "card_id": "main:0",
+      "field": "text",
+      "before": "Fear Effect 2: Retro Helix ist das PlayStation-Action-Adventure von Kronos Digital Entertainment, das zunächst am 21. Februar 2001 in Nordamerika erschien. Die Handlung spielt 2048, vor dem Original, und zeigt, wie Hana, Glas und Deke mit Rain Qin zusammentreffen. Eine degenerative Pandemie hat ihre Welt verändert. Freie Aufträge und persönliche Ziele verwickeln sie in eine größere Verschwörung. Action, Rätsel und filmische Szenen vertiefen die Beziehungen der bekannten Figuren, die anfangs noch eigenen Anliegen nachgehen.",
+      "after": "Fear Effect 2: Retro Helix ist das PlayStation-Action-Adventure von Kronos Digital Entertainment, das im Februar 2001 in Nordamerika erschien. Die Handlung spielt 2048, vor dem Original, und zeigt, wie Hana, Glas und Deke mit Rain Qin zusammentreffen. Eine degenerative Pandemie hat ihre Welt verändert. Freie Aufträge und persönliche Ziele verwickeln sie in eine größere Verschwörung. Action, Rätsel und filmische Szenen vertiefen die Beziehungen der bekannten Figuren, die anfangs noch eigenen Anliegen nachgehen.",
+      "reason": "Il 21 febbraio è documentato come spedizione; i cataloghi riportano 20 o 21. La disponibilità resta a precisione mensile senza inventare il giorno."
+    },
+    {
+      "target_id": "fear-effect-2-2001",
+      "feature_id": null,
+      "language": "es",
+      "card_id": "main:0",
+      "field": "text",
+      "before": "Fear Effect 2: Retro Helix es la aventura de acción de Kronos Digital Entertainment para PlayStation, publicada primero en Norteamérica el 21 de febrero de 2001. Ambientada en 2048, antes del original, explica cómo Hana, Glas y Deke se encuentran con Rain Qin. Una pandemia degenerativa ha transformado su mundo, donde los encargos por cuenta propia y las metas personales los atraen hacia una conspiración mayor. Acción, puzles y escenas cinematográficas profundizan en las relaciones del reparto original, cuyos intereses inmediatos todavía están separados al comienzo.",
+      "after": "Fear Effect 2: Retro Helix es la aventura de acción de Kronos Digital Entertainment para PlayStation, publicada en Norteamérica en febrero de 2001. Ambientada en 2048, antes del original, explica cómo Hana, Glas y Deke se encuentran con Rain Qin. Una pandemia degenerativa ha transformado su mundo, donde los encargos por cuenta propia y las metas personales los atraen hacia una conspiración mayor. Acción, puzles y escenas cinematográficas profundizan en las relaciones del reparto original, cuyos intereses inmediatos todavía están separados al comienzo.",
+      "reason": "Il 21 febbraio è documentato come spedizione; i cataloghi riportano 20 o 21. La disponibilità resta a precisione mensile senza inventare il giorno."
+    },
+    {
+      "target_id": "wikipedia-5571442",
+      "feature_id": null,
+      "language": "en",
+      "card_id": "main:0",
+      "field": "text",
+      "before": "Onimusha: Warlords, called Onimusha in Japan, is Capcom’s 2001 action adventure for PlayStation 2. The first entry in the series later received an expanded Xbox version, Genma Onimusha, in 2002. Windows editions of the original Warlords also appeared in China and Russia. A remaster reached Switch, PlayStation 4 and Xbox One in Japan in 2018, followed by its wider release and a Windows version in 2019.",
+      "after": "Onimusha: Warlords, called Onimusha in Japan, is Capcom’s 2001 action adventure for PlayStation 2. The first entry in the series later received an expanded Xbox version, Genma Onimusha, in 2002. Windows editions of the original Warlords appeared in China, Taiwan, Hong Kong and Russia. A remaster reached Switch, PlayStation 4 and Xbox One in Japan in 2018, followed by its wider release and a Windows version in 2019.",
+      "reason": "Pagine originali EA Taiwan, Typhoon Games Hong Kong, Ubisoft China e Akella lette: il perimetro non si limita a Cina e Russia."
+    },
+    {
+      "target_id": "wikipedia-5571442",
+      "feature_id": null,
+      "language": "it",
+      "card_id": "main:0",
+      "field": "text",
+      "before": "Onimusha: Warlords, intitolato Onimusha in Giappone, è l’avventura d’azione di Capcom per PlayStation 2 del 2001. Il primo episodio della serie riceve una versione ampliata per Xbox, Genma Onimusha, nel 2002. Edizioni Windows del Warlords originale arrivano anche in Cina e Russia. La rimasterizzazione esce su Switch, PlayStation 4 e Xbox One in Giappone nel 2018, seguita dalla distribuzione negli altri mercati e dalla versione Windows nel 2019.",
+      "after": "Onimusha: Warlords, intitolato Onimusha in Giappone, è l’avventura d’azione di Capcom per PlayStation 2 del 2001. Il primo episodio della serie riceve una versione ampliata per Xbox, Genma Onimusha, nel 2002. Edizioni Windows del Warlords originale arrivano in Cina, Taiwan, Hong Kong e Russia. La rimasterizzazione esce su Switch, PlayStation 4 e Xbox One in Giappone nel 2018, seguita dalla distribuzione negli altri mercati e dalla versione Windows nel 2019.",
+      "reason": "Pagine originali EA Taiwan, Typhoon Games Hong Kong, Ubisoft China e Akella lette: il perimetro non si limita a Cina e Russia."
+    },
+    {
+      "target_id": "wikipedia-5571442",
+      "feature_id": null,
+      "language": "fr",
+      "card_id": "main:0",
+      "field": "text",
+      "before": "Onimusha: Warlords, intitulé Onimusha au Japon, est le jeu d’action-aventure de Capcom pour PlayStation 2 sorti en 2001. Ce premier épisode reçoit une version enrichie pour Xbox, Genma Onimusha, en 2002. Des éditions Windows du Warlords original paraissent aussi en Chine et en Russie. Une version remastérisée arrive sur Switch, PlayStation 4 et Xbox One au Japon en 2018, avant sa diffusion plus large et sa version Windows en 2019.",
+      "after": "Onimusha: Warlords, intitulé Onimusha au Japon, est le jeu d’action-aventure de Capcom pour PlayStation 2 sorti en 2001. Ce premier épisode reçoit une version enrichie pour Xbox, Genma Onimusha, en 2002. Des éditions Windows du Warlords original paraissent en Chine, à Taïwan, à Hong Kong et en Russie. Une version remastérisée arrive sur Switch, PlayStation 4 et Xbox One au Japon en 2018, avant sa diffusion plus large et sa version Windows en 2019.",
+      "reason": "Pagine originali EA Taiwan, Typhoon Games Hong Kong, Ubisoft China e Akella lette: il perimetro non si limita a Cina e Russia."
+    },
+    {
+      "target_id": "wikipedia-5571442",
+      "feature_id": null,
+      "language": "de",
+      "card_id": "main:0",
+      "field": "text",
+      "before": "Onimusha: Warlords, in Japan Onimusha genannt, ist Capcoms Action-Adventure für PlayStation 2 von 2001. Der erste Teil erhielt 2002 mit Genma Onimusha eine erweiterte Xbox-Fassung. Windows-Ausgaben des ursprünglichen Warlords erschienen zudem in China und Russland. Eine überarbeitete Fassung kam 2018 in Japan für Switch, PlayStation 4 und Xbox One heraus; 2019 folgten die Veröffentlichung in weiteren Märkten und eine Windows-Version.",
+      "after": "Onimusha: Warlords, in Japan Onimusha genannt, ist Capcoms Action-Adventure für PlayStation 2 von 2001. Der erste Teil erhielt 2002 mit Genma Onimusha eine erweiterte Xbox-Fassung. Windows-Ausgaben des ursprünglichen Warlords erschienen in China, Taiwan, Hongkong und Russland. Eine überarbeitete Fassung kam 2018 in Japan für Switch, PlayStation 4 und Xbox One heraus; 2019 folgten die Veröffentlichung in weiteren Märkten und eine Windows-Version.",
+      "reason": "Pagine originali EA Taiwan, Typhoon Games Hong Kong, Ubisoft China e Akella lette: il perimetro non si limita a Cina e Russia."
+    },
+    {
+      "target_id": "wikipedia-5571442",
+      "feature_id": null,
+      "language": "es",
+      "card_id": "main:0",
+      "field": "text",
+      "before": "Onimusha: Warlords, llamado Onimusha en Japón, es la aventura de acción de Capcom para PlayStation 2 publicada en 2001. La primera entrega recibió una versión ampliada para Xbox, Genma Onimusha, en 2002. También aparecieron ediciones para Windows del Warlords original en China y Rusia. La remasterización llegó a Switch, PlayStation 4 y Xbox One en Japón en 2018, antes de su distribución en otros mercados y de la versión para Windows en 2019.",
+      "after": "Onimusha: Warlords, llamado Onimusha en Japón, es la aventura de acción de Capcom para PlayStation 2 publicada en 2001. La primera entrega recibió una versión ampliada para Xbox, Genma Onimusha, en 2002. Aparecieron ediciones para Windows del Warlords original en China, Taiwán, Hong Kong y Rusia. La remasterización llegó a Switch, PlayStation 4 y Xbox One en Japón en 2018, antes de su distribución en otros mercados y de la versión para Windows en 2019.",
+      "reason": "Pagine originali EA Taiwan, Typhoon Games Hong Kong, Ubisoft China e Akella lette: il perimetro non si limita a Cina e Russia."
+    },
+    {
+      "target_id": "wikipedia-5571442",
+      "feature_id": null,
+      "language": "en",
+      "card_id": "main:3",
+      "field": "text",
+      "before": "According to Capcom, Onimusha became the first PlayStation 2 game to sell a million copies in Japan. Worldwide sales of the original eventually passed two million. Reviews were positive, and the game later appeared in selections of the system’s best titles. Three further main entries followed on PlayStation 2, alongside spin-offs. The series returned in 2026 with Onimusha: Way of the Sword.",
+      "after": "Capcom identifies Onimusha as the first PlayStation 2 game to reach the million-copy mark in Japan. Worldwide shipments of the original eventually passed two million. Reviews were positive, and the game later appeared in selections of the system’s best titles. Three further main entries followed on PlayStation 2, alongside spin-offs. The series returned in 2026 with Onimusha: Way of the Sword.",
+      "reason": "Distinguere distribuzioni dichiarate e vendite finali al consumatore, preservando il primato domestico riportato da Capcom."
+    },
+    {
+      "target_id": "wikipedia-5571442",
+      "feature_id": null,
+      "language": "it",
+      "card_id": "main:3",
+      "field": "text",
+      "before": "Secondo Capcom, Onimusha è il primo gioco PlayStation 2 a vendere un milione di copie in Giappone. Il totale mondiale dell’originale supera poi i due milioni. Le recensioni sono positive e il gioco compare in seguito nelle selezioni dei migliori titoli della console. Su PlayStation 2 arrivano altri tre episodi principali, affiancati da spin-off. Nel 2026 la serie ritorna con Onimusha: Way of the Sword.",
+      "after": "Secondo Capcom, Onimusha è il primo gioco PlayStation 2 a raggiungere il milione di copie in Giappone. La distribuzione mondiale dell’originale supera poi i due milioni. Le recensioni sono positive e il gioco compare in seguito nelle selezioni dei migliori titoli della console. Su PlayStation 2 arrivano altri tre episodi principali, affiancati da spin-off. Nel 2026 la serie ritorna con Onimusha: Way of the Sword.",
+      "reason": "Distinguere distribuzioni dichiarate e vendite finali al consumatore, preservando il primato domestico riportato da Capcom."
+    },
+    {
+      "target_id": "wikipedia-5571442",
+      "feature_id": null,
+      "language": "fr",
+      "card_id": "main:3",
+      "field": "text",
+      "before": "Selon Capcom, Onimusha devient le premier jeu PlayStation 2 à vendre un million d’exemplaires au Japon. Les ventes mondiales de l’original dépassent ensuite les deux millions. La critique l’accueille favorablement et il apparaît plus tard dans des sélections des meilleurs jeux de la console. Trois autres épisodes principaux suivent sur PlayStation 2, ainsi que des titres dérivés. La série revient en 2026 avec Onimusha: Way of the Sword.",
+      "after": "Selon Capcom, Onimusha devient le premier jeu PlayStation 2 à atteindre le million d’exemplaires au Japon. Les exemplaires de l’original distribués dans le monde dépassent ensuite les deux millions. La critique l’accueille favorablement et il apparaît plus tard dans des sélections des meilleurs jeux de la console. Trois autres épisodes principaux suivent sur PlayStation 2, ainsi que des titres dérivés. La série revient en 2026 avec Onimusha: Way of the Sword.",
+      "reason": "Distinguere distribuzioni dichiarate e vendite finali al consumatore, preservando il primato domestico riportato da Capcom."
+    },
+    {
+      "target_id": "wikipedia-5571442",
+      "feature_id": null,
+      "language": "de",
+      "card_id": "main:3",
+      "field": "text",
+      "before": "Laut Capcom war Onimusha das erste PlayStation-2-Spiel, das in Japan eine Million Exemplare verkaufte. Die weltweiten Verkäufe des Originals überschritten später zwei Millionen. Die Kritiken fielen positiv aus, und das Spiel wurde später in Auswahlen der besten Titel der Konsole aufgenommen. Drei weitere Hauptteile folgten auf PlayStation 2, hinzu kamen Ableger. 2026 kehrte die Reihe mit Onimusha: Way of the Sword zurück.",
+      "after": "Capcom führt Onimusha als erstes PlayStation-2-Spiel an, das in Japan die Marke von einer Million Exemplaren erreichte. Die weltweiten Auslieferungen des Originals überschritten später zwei Millionen. Die Kritiken fielen positiv aus, und das Spiel wurde später in Auswahlen der besten Titel der Konsole aufgenommen. Drei weitere Hauptteile folgten auf PlayStation 2, hinzu kamen Ableger. 2026 kehrte die Reihe mit Onimusha: Way of the Sword zurück.",
+      "reason": "Distinguere distribuzioni dichiarate e vendite finali al consumatore, preservando il primato domestico riportato da Capcom."
+    },
+    {
+      "target_id": "wikipedia-5571442",
+      "feature_id": null,
+      "language": "es",
+      "card_id": "main:3",
+      "field": "text",
+      "before": "Según Capcom, Onimusha fue el primer juego de PlayStation 2 en vender un millón de copias en Japón. Las ventas mundiales del original superaron después los dos millones. Las críticas fueron positivas y más tarde apareció en selecciones de los mejores títulos de la consola. Hubo otras tres entregas principales para PlayStation 2, además de juegos derivados. La serie regresó en 2026 con Onimusha: Way of the Sword.",
+      "after": "Capcom señala a Onimusha como el primer juego de PlayStation 2 en alcanzar el millón de copias en Japón. La distribución mundial del original superó después los dos millones. Las críticas fueron positivas y más tarde apareció en selecciones de los mejores títulos de la consola. Hubo otras tres entregas principales para PlayStation 2, además de juegos derivados. La serie regresó en 2026 con Onimusha: Way of the Sword.",
+      "reason": "Distinguere distribuzioni dichiarate e vendite finali al consumatore, preservando il primato domestico riportato da Capcom."
+    },
+    {
+      "target_id": "zelda-oracle-of-ages",
+      "feature_id": null,
+      "language": "it",
+      "card_id": "main:2",
+      "field": "text",
+      "before": "La Triforce trasporta Link a Labrynna, dove Veran si impossessa di Nayru. Per raggiungere la torre di Veran, Link deve recuperare otto Essences of Time nei sotterranei sorvegliati dai boss. Nell’altra avventura, la Triforce lo porta a Holodrum, dove Onox rapisce Din, l’Oracle of Seasons. Qui le otto Essences of Nature precedono il viaggio al castello di Onox. Completare entrambi i giochi rivela il disegno più ampio della trama e la conclusione che li collega.",
+      "after": "La Triforce trasporta Link a Labrynna, dove Veran si impossessa di Nayru. Per raggiungere la torre di Veran, Link deve recuperare otto Essences of Time nei sotterranei sorvegliati dai boss. Nell’altra avventura, la Triforce lo porta a Holodrum, dove Onox rapisce Din, l’oracolo delle stagioni. Qui le otto Essences of Nature precedono il viaggio al castello di Onox. Completare entrambi i giochi rivela il disegno più ampio della trama e la conclusione che li collega.",
+      "reason": "L’appellativo descrittivo di Din va reso nella lingua della prosa; i titoli dei giochi restano invariati."
+    },
+    {
+      "target_id": "zelda-oracle-of-ages",
+      "feature_id": null,
+      "language": "fr",
+      "card_id": "main:2",
+      "field": "text",
+      "before": "La Triforce transporte Link à Labrynna, où Veran prend possession de Nayru. Pour atteindre la tour de Veran, il doit réunir huit Essences of Time dans des donjons gardés par des boss. Dans l’autre aventure, la Triforce l’envoie à Holodrum, où Onox enlève Din, l’Oracle of Seasons. Huit Essences of Nature y précèdent le voyage au château d’Onox. Achever les deux jeux révèle l’intrigue plus vaste et la conclusion qui les relie.",
+      "after": "La Triforce transporte Link à Labrynna, où Veran prend possession de Nayru. Pour atteindre la tour de Veran, il doit réunir huit Essences of Time dans des donjons gardés par des boss. Dans l’autre aventure, la Triforce l’envoie à Holodrum, où Onox enlève Din, l’oracle des saisons. Huit Essences of Nature y précèdent le voyage au château d’Onox. Achever les deux jeux révèle l’intrigue plus vaste et la conclusion qui les relie.",
+      "reason": "L’appellativo descrittivo di Din va reso nella lingua della prosa; i titoli dei giochi restano invariati."
+    },
+    {
+      "target_id": "zelda-oracle-of-ages",
+      "feature_id": null,
+      "language": "de",
+      "card_id": "main:2",
+      "field": "text",
+      "before": "Die Triforce bringt Link nach Labrynna, wo Veran von Nayru Besitz ergreift. Um Verans Turm zu erreichen, muss er acht Essences of Time aus Dungeons mit Endgegnern sammeln. Im Partnerspiel führt die Triforce ihn nach Holodrum, wo Onox Din, die Oracle of Seasons, entführt. Dort gehen acht Essences of Nature dem Weg zu Onox’ Burg voraus. Wer beide Spiele abschließt, erfährt die größere Handlung und ihren gemeinsamen Ausgang.",
+      "after": "Die Triforce bringt Link nach Labrynna, wo Veran von Nayru Besitz ergreift. Um Verans Turm zu erreichen, muss er acht Essences of Time aus Dungeons mit Endgegnern sammeln. Im Partnerspiel führt die Triforce ihn nach Holodrum, wo Onox Din, das Orakel der Jahreszeiten, entführt. Dort gehen acht Essences of Nature dem Weg zu Onox’ Burg voraus. Wer beide Spiele abschließt, erfährt die größere Handlung und ihren gemeinsamen Ausgang.",
+      "reason": "L’appellativo descrittivo di Din va reso nella lingua della prosa; i titoli dei giochi restano invariati."
+    },
+    {
+      "target_id": "zelda-oracle-of-ages",
+      "feature_id": null,
+      "language": "es",
+      "card_id": "main:2",
+      "field": "text",
+      "before": "La Triforce transporta a Link a Labrynna, donde Veran posee a Nayru. Para llegar a la torre de Veran debe reunir ocho Essences of Time en mazmorras custodiadas por jefes. En la otra aventura, la Triforce lo lleva a Holodrum, donde Onox secuestra a Din, la Oracle of Seasons. Allí, ocho Essences of Nature preceden al viaje hasta el castillo de Onox. Terminar ambos juegos revela la trama más amplia y su conclusión enlazada.",
+      "after": "La Triforce transporta a Link a Labrynna, donde Veran posee a Nayru. Para llegar a la torre de Veran debe reunir ocho Essences of Time en mazmorras custodiadas por jefes. En la otra aventura, la Triforce lo lleva a Holodrum, donde Onox secuestra a Din, el oráculo de las estaciones. Allí, ocho Essences of Nature preceden al viaje hasta el castillo de Onox. Terminar ambos juegos revela la trama más amplia y su conclusión enlazada.",
+      "reason": "L’appellativo descrittivo di Din va reso nella lingua della prosa; i titoli dei giochi restano invariati."
+    },
+    {
+      "target_id": "zelda-oracle-of-seasons",
+      "feature_id": null,
+      "language": "it",
+      "card_id": "main:2",
+      "field": "text",
+      "before": "La Triforce conduce Link a Holodrum, dove assiste al rapimento di Din, l’Oracle of Seasons, da parte di Onox. Prima di entrare nel castello del nemico deve raccogliere le otto Essences of Nature, nascoste nei sotterranei e protette dai boss. Oracle of Ages lo porta invece a Labrynna, dove Veran si impossessa di Nayru: qui cerca le otto Essences of Time prima di raggiungere la torre di Veran. Completando entrambi i giochi si scopre come le storie si intrecciano e si accede alla conclusione comune.",
+      "after": "La Triforce conduce Link a Holodrum, dove assiste al rapimento di Din, l’oracolo delle stagioni, da parte di Onox. Prima di entrare nel castello del nemico deve raccogliere le otto Essences of Nature, nascoste nei sotterranei e protette dai boss. Oracle of Ages lo porta invece a Labrynna, dove Veran si impossessa di Nayru: qui cerca le otto Essences of Time prima di raggiungere la torre di Veran. Completando entrambi i giochi si scopre come le storie si intrecciano e si accede alla conclusione comune.",
+      "reason": "L’appellativo descrittivo di Din va reso nella lingua della prosa; i titoli dei giochi restano invariati."
+    },
+    {
+      "target_id": "zelda-oracle-of-seasons",
+      "feature_id": null,
+      "language": "fr",
+      "card_id": "main:2",
+      "field": "text",
+      "before": "La Triforce conduit Link à Holodrum, où il voit Onox enlever Din, l’Oracle of Seasons. Avant de pénétrer dans le château d’Onox, il doit réunir les huit Essences of Nature cachées dans des donjons protégés par des boss. Oracle of Ages l’envoie à Labrynna, où Veran possède Nayru ; il y cherche huit Essences of Time avant d’atteindre la tour de Veran. Terminer les deux jeux dévoile les liens entre leurs histoires et ouvre la conclusion commune.",
+      "after": "La Triforce conduit Link à Holodrum, où il voit Onox enlever Din, l’oracle des saisons. Avant de pénétrer dans le château d’Onox, il doit réunir les huit Essences of Nature cachées dans des donjons protégés par des boss. Oracle of Ages l’envoie à Labrynna, où Veran possède Nayru ; il y cherche huit Essences of Time avant d’atteindre la tour de Veran. Terminer les deux jeux dévoile les liens entre leurs histoires et ouvre la conclusion commune.",
+      "reason": "L’appellativo descrittivo di Din va reso nella lingua della prosa; i titoli dei giochi restano invariati."
+    },
+    {
+      "target_id": "zelda-oracle-of-seasons",
+      "feature_id": null,
+      "language": "de",
+      "card_id": "main:2",
+      "field": "text",
+      "before": "Die Triforce führt Link nach Holodrum, wo er sieht, wie Onox Din, die Oracle of Seasons, entführt. Vor dem Eintritt in Onox’ Burg muss er acht Essences of Nature sammeln, verborgen in Dungeons und bewacht von Endgegnern. Oracle of Ages schickt ihn nach Labrynna, wo Veran von Nayru Besitz ergreift. Dort sucht er acht Essences of Time, bevor er Verans Turm erreicht. Der Abschluss beider Spiele enthüllt die Verbindung ihrer Geschichten und öffnet das gemeinsame Ende.",
+      "after": "Die Triforce führt Link nach Holodrum, wo er sieht, wie Onox Din, das Orakel der Jahreszeiten, entführt. Vor dem Eintritt in Onox’ Burg muss er acht Essences of Nature sammeln, verborgen in Dungeons und bewacht von Endgegnern. Oracle of Ages schickt ihn nach Labrynna, wo Veran von Nayru Besitz ergreift. Dort sucht er acht Essences of Time, bevor er Verans Turm erreicht. Der Abschluss beider Spiele enthüllt die Verbindung ihrer Geschichten und öffnet das gemeinsame Ende.",
+      "reason": "L’appellativo descrittivo di Din va reso nella lingua della prosa; i titoli dei giochi restano invariati."
+    },
+    {
+      "target_id": "zelda-oracle-of-seasons",
+      "feature_id": null,
+      "language": "es",
+      "card_id": "main:2",
+      "field": "text",
+      "before": "La Triforce lleva a Link a Holodrum, donde ve cómo Onox secuestra a Din, la Oracle of Seasons. Antes de entrar en el castillo de Onox debe reunir ocho Essences of Nature ocultas en mazmorras protegidas por jefes. Oracle of Ages lo envía a Labrynna, donde Veran posee a Nayru; allí busca ocho Essences of Time antes de llegar a la torre de Veran. Completar ambos juegos revela la conexión entre sus historias y abre la conclusión común.",
+      "after": "La Triforce lleva a Link a Holodrum, donde ve cómo Onox secuestra a Din, el oráculo de las estaciones. Antes de entrar en el castillo de Onox debe reunir ocho Essences of Nature ocultas en mazmorras protegidas por jefes. Oracle of Ages lo envía a Labrynna, donde Veran posee a Nayru; allí busca ocho Essences of Time antes de llegar a la torre de Veran. Completar ambos juegos revela la conexión entre sus historias y abre la conclusión común.",
+      "reason": "L’appellativo descrittivo di Din va reso nella lingua della prosa; i titoli dei giochi restano invariati."
+    },
+    {
+      "target_id": "workbook-12-21-phantasy-star-online",
+      "feature_id": "feature-online-console-ritual",
+      "language": "it",
+      "card_id": "feature:feature-online-console-ritual:1",
+      "field": "text",
+      "before": "PSO mostra il sistema di ora universale di Swatch per aiutare i giocatori a darsi appuntamento. Naka spiega che il valore arriva dal server, invece che dall’orologio del Dreamcast. I server in fusi orari diversi devono concordare e una console con l’ora sbagliata non può diventare il riferimento di tutti. Quel piccolo indicatore sullo schermo dipende dunque da un coordinamento esterno: chi accede da macchine diverse può indicare lo stesso momento per incontrarsi.",
+      "after": "PSO mostra l’ora Internet di Swatch per aiutare i giocatori a darsi appuntamento. Naka spiega che il valore arriva dal server, invece che dall’orologio del Dreamcast. I server in fusi orari diversi devono concordare e una console con l’ora sbagliata non può diventare il riferimento di tutti. Quel piccolo indicatore sullo schermo dipende dunque da un coordinamento esterno: chi accede da macchine diverse può indicare lo stesso momento per incontrarsi.",
+      "reason": "Terminologia precisa: non confondere Internet Time con UTC."
+    },
+    {
+      "target_id": "zelda-oracle-of-seasons",
+      "feature_id": null,
+      "language": "it",
+      "card_id": "main:3",
+      "field": "text",
+      "before": "Il gruppo di Flagship di Capcom sperimenta inizialmente un adattamento del primo The Legend of Zelda del 1986 per Game Boy Color. Sotto la supervisione di Yoshiki Okamoto, il progetto diventa una coppia di avventure collegate, giocabili in entrambi gli ordini. Per Oracle of Seasons e Oracle of Ages viene riportato un totale di 3,99 milioni di copie vendute. La critica apprezza il gioco, i disegni colorati e la grafica, con giudizi più contrastanti sulla qualità del suono. I due titoli tornano sulla Virtual Console di Nintendo 3DS nel 2013 e su Nintendo Classics nel 2023.",
+      "after": "Il gruppo di Flagship di Capcom sperimenta inizialmente un adattamento del primo The Legend of Zelda del 1986 per Game Boy Color. Sotto la supervisione di Yoshiki Okamoto, il progetto diventa una coppia di avventure collegate, giocabili in entrambi gli ordini. Per Oracle of Seasons e Oracle of Ages viene riportato un totale di 3,99 milioni di copie vendute. La critica apprezza le dinamiche di gioco, i disegni colorati e la grafica, con giudizi più contrastanti sulla qualità del suono. I due titoli tornano sulla Virtual Console di Nintendo 3DS nel 2013 e su Nintendo Classics nel 2023.",
+      "reason": "Espressione italiana più concreta per gameplay."
+    },
+    {
+      "target_id": "zelda-oracle-of-ages",
+      "feature_id": null,
+      "language": "fr",
+      "card_id": "main:3",
+      "field": "text",
+      "before": "Après avoir expérimenté une adaptation sur Game Boy Color du premier The Legend of Zelda de 1986, l’équipe Flagship de Capcom, supervisée par Yoshiki Okamoto, entreprend des aventures connectées jouables dans l’ordre de son choix. Les ventes cumulées d’Oracle of Ages et d’Oracle of Seasons sont données à 3,99 millions d’exemplaires. Les critiques apprécient le jeu, les dessins colorés et les graphismes, mais jugent la qualité sonore inégale. Les deux titres reviennent sur la Console virtuelle de la Nintendo 3DS en 2013 et sur Nintendo Classics en 2023.",
+      "after": "Après avoir expérimenté une adaptation sur Game Boy Color du premier The Legend of Zelda de 1986, l’équipe Flagship de Capcom, supervisée par Yoshiki Okamoto, entreprend des aventures connectées jouables dans l’ordre de son choix. Les ventes cumulées d’Oracle of Ages et d’Oracle of Seasons sont données à 3,99 millions d’exemplaires. Les critiques apprécient la jouabilité, les dessins colorés et les graphismes, mais jugent la qualité sonore inégale. Les deux titres reviennent sur la Console virtuelle de la Nintendo 3DS en 2013 et sur Nintendo Classics en 2023.",
+      "reason": "Espressione francese più concreta per gameplay."
+    },
+    {
+      "target_id": "zelda-oracle-of-seasons",
+      "feature_id": null,
+      "language": "fr",
+      "card_id": "main:3",
+      "field": "text",
+      "before": "L’équipe Flagship de Capcom expérimente d’abord une adaptation du premier The Legend of Zelda de 1986 sur Game Boy Color. Sous la supervision de Yoshiki Okamoto, le projet devient un ensemble d’aventures reliées, jouables dans l’ordre de son choix. Les ventes cumulées d’Oracle of Seasons et d’Oracle of Ages sont données à 3,99 millions d’exemplaires. La critique salue le jeu, les dessins colorés et les graphismes, avec un accueil plus partagé pour le son. Les deux titres reviennent sur la Console virtuelle de la Nintendo 3DS en 2013 et sur Nintendo Classics en 2023.",
+      "after": "L’équipe Flagship de Capcom expérimente d’abord une adaptation du premier The Legend of Zelda de 1986 sur Game Boy Color. Sous la supervision de Yoshiki Okamoto, le projet devient un ensemble d’aventures reliées, jouables dans l’ordre de son choix. Les ventes cumulées d’Oracle of Seasons et d’Oracle of Ages sont données à 3,99 millions d’exemplaires. La critique salue la jouabilité, les dessins colorés et les graphismes, avec un accueil plus partagé pour le son. Les deux titres reviennent sur la Console virtuelle de la Nintendo 3DS en 2013 et sur Nintendo Classics en 2023.",
+      "reason": "Espressione francese più concreta per gameplay."
+    },
+    {
+      "target_id": "looney-tunes-sheep-raider-2001",
+      "feature_id": null,
+      "language": "es",
+      "card_id": null,
+      "field": "summary",
+      "before": "Looney Tunes: Sheep Raider convierte los intentos de Ralph Wolf de robar ovejas en puzles de observación y coordinación. Sam Sheepdog vigila el rebaño, mientras los aparatos ACME encargados por correo aportan disfraces y distracciones para poner en marcha un plan elaborado.",
+      "after": "Looney Tunes: Sheep Raider convierte los intentos de Ralph Wolf de robar ovejas en puzles que exigen observar y actuar en el momento justo. Sam Sheepdog vigila el rebaño, mientras los aparatos ACME encargados por correo aportan disfraces y distracciones para poner en marcha un plan elaborado.",
+      "reason": "Timing reso come scelta del momento opportuno, senza calco."
+    }
+  ],
+  "validation": {
+    "valid": true,
+    "batch_id": "087-catalog",
+    "completed": true,
+    "entry_count": 10,
+    "card_count_per_language": 41,
+    "language_count": 5,
+    "translated_card_count": 205,
+    "entry_card_counts": {
+      "workbook-12-21-phantasy-star-online": 8,
+      "amped-freestyle-snowboarding-2001": 4,
+      "looney-tunes-sheep-raider-2001": 2,
+      "luigis-mansion-2001": 4,
+      "workbook-01-04-runescape": 4,
+      "wikipedia-5571442": 4,
+      "workbook-02-05-paper-mario-video-game": 4,
+      "fear-effect-2-2001": 3,
+      "zelda-oracle-of-ages": 4,
+      "zelda-oracle-of-seasons": 4
+    },
+    "issue_counts": {
+      "workbook-12-21-phantasy-star-online": 1,
+      "amped-freestyle-snowboarding-2001": 1,
+      "looney-tunes-sheep-raider-2001": 0,
+      "luigis-mansion-2001": 1,
+      "workbook-01-04-runescape": 1,
+      "wikipedia-5571442": 1,
+      "workbook-02-05-paper-mario-video-game": 1,
+      "fear-effect-2-2001": 0,
+      "zelda-oracle-of-ages": 1,
+      "zelda-oracle-of-seasons": 1
+    },
+    "summary_checks": [
+      {
+        "entry_id": "workbook-12-21-phantasy-star-online",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "workbook-12-21-phantasy-star-online",
+        "feature_id": "feature-online-console-ritual",
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "amped-freestyle-snowboarding-2001",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "looney-tunes-sheep-raider-2001",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "luigis-mansion-2001",
+        "feature_id": null,
+        "english_summary_words": 41
+      },
+      {
+        "entry_id": "workbook-01-04-runescape",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "wikipedia-5571442",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "workbook-02-05-paper-mario-video-game",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "fear-effect-2-2001",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "zelda-oracle-of-ages",
+        "feature_id": null,
+        "english_summary_words": 39
+      },
+      {
+        "entry_id": "zelda-oracle-of-seasons",
+        "feature_id": null,
+        "english_summary_words": 38
+      }
+    ],
+    "editorial_review": [],
+    "failures": []
+  },
+  "output_sha256": "116cf92c83ed3f0e9e03a7d60a9a371f0a07d16ca9c8d91d4527711de8871b08"
+}

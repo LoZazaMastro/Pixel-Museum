@@ -1,0 +1,79 @@
+{
+  "status": "PASS",
+  "locale": "it",
+  "entries": [
+    {
+      "entry_id": "preserving-play",
+      "source_fields_sha256": "a15cff9ac52ce7e70177193e617990bb3e8eb150d59916236cfe9c6d0ab790ed",
+      "translation_sha256": "32fabc42873c9c689b3078ee404016fd1dc7149617942909b3a50c95fb34b805",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch351/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "ea5767947de5a308e057e33ba8e3828ab1aa9e86af50f8620b78e328e3150d86"
+    },
+    {
+      "entry_id": "workbook-09-06-starfield",
+      "source_fields_sha256": "6d646f01a2b38525d7c0d4c90d81ff60b3a01e63d140f26ccaf51d8d3cea3ab4",
+      "translation_sha256": "e5a15d85b5ecd0904f38ea2966a299667d6a71511cdd9dfb732b198231a4da9e",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch351/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "ea5767947de5a308e057e33ba8e3828ab1aa9e86af50f8620b78e328e3150d86"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "editorial_continue",
+    "actual_receipt": "build/research/catalog-2023-chronological/root-year-features-two-private/independent-editorial-peer-approval.json",
+    "actual_receipt_sha256": "e48bb2062f4e808afe9f9665d427f0e48ee44cd779f02c794aa374f717ad10f3",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "editorial_continue",
+      "index": "build/research/catalog-2023-chronological/root-year-features-two-private/two-private-index.json",
+      "index_sha256": "40a41279f54abfabc7ebfc933d2320177255a34cd62b7d56837eb38c63693241",
+      "scope": "Actually read all six English and twenty-four localized paragraphs and all five text fields; actually viewed eleven final selected images in both contact sheets. Verified existing 79 Starfield soundtrack objects equal the exact before snapshot, without redundant extraction.",
+      "primary_sources_actually_read": [
+        {
+          "url": "https://news.xbox.com/en-us/2023/08/29/gold-master-series-the-making-of-karateka/amp/",
+          "finding": "Firsthand Chris Kohler interview confirms first Gold Master title in 2023, contextual documents, prototypes and playable iterations."
+        },
+        {
+          "url": "https://bethesda.net/en-US/news/starfield-launch-details-pc-specs-and-more",
+          "finding": "Original Bethesda August 24, 2023 announcement confirms September 6 midnight UTC general release and up to five days premium early access."
+        },
+        {
+          "url": "https://news.xbox.com/en-us/2021/06/13/starfield-coming-november-11-2022/?ver=3.7.1",
+          "finding": "Original announcement explicitly identifies Creation Engine 2; its then-announced 2022 release was delayed and is not reused as the actual launch date."
+        }
+      ],
+      "owners": [
+        {
+          "entry_id": "preserving-play",
+          "slug": "preserving",
+          "source": "build/research/catalog-2023-chronological/root-year-features-two-private/preserving-source-private-candidate.json",
+          "source_sha256": "c5f1f056cea5ac1eaf170b3ff897420fb218be9f4e1a413dd90b6b09bbe3fcfd",
+          "target": "build/research/catalog-2023-chronological/root-year-features-two-private/preserving-four-language-private-candidate.json",
+          "target_sha256": "2927ea524fe9a880ba12890cc21f7b5059cd11f747f6007876dcba0feb01ea4f",
+          "contact": "build/research/catalog-2023-chronological/root-year-features-two-private/preserving-final-contact.jpg",
+          "contact_sha256": "4f68111a1a56c0cb4ff5f5a5b0c0fa0f78f9f3b7afe04d1e04ffa18d0d910dbe",
+          "english_cards": 4,
+          "localized_cards": 16,
+          "images": 4,
+          "tracks": 0
+        },
+        {
+          "entry_id": "workbook-09-06-starfield",
+          "slug": "starfield",
+          "source": "build/research/catalog-2023-chronological/root-year-features-two-private/starfield-source-private-candidate.json",
+          "source_sha256": "211d7391de6fc94255645119343d86f0ee657999502272d2a6614ced685e95f2",
+          "target": "build/research/catalog-2023-chronological/root-year-features-two-private/starfield-four-language-private-candidate.json",
+          "target_sha256": "d107c105ba3cb244e226c53387ddf86339a73400f9e4b77b2bec2f21fdd70d31",
+          "contact": "build/research/catalog-2023-chronological/root-year-features-two-private/starfield-final-contact.jpg",
+          "contact_sha256": "a5b1ca5641beefedbdcebe8da1007c30e0e77ca6ef6d878dd3cb4b64514dade9",
+          "english_cards": 2,
+          "localized_cards": 8,
+          "images": 7,
+          "tracks": 79
+        }
+      ],
+      "findings": [],
+      "production_writes": false
+    }
+  }
+}

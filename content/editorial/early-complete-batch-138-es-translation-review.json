@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "locale": "es",
+  "review": "Binding of exact independently approved complete candidate members; no new linguistic review substituted. Every full candidate SHA and independent PASS receipt checked, all current English five fields and translation hashes validated.",
+  "entries": [
+    {
+      "entry_id": "wikipedia-452428",
+      "source_fields_sha256": "3b22ab867d8b6f49c9675ac948c3d96545be2f9adee9306084a4446a14ea3c8e",
+      "translation_sha256": "9118d79218be2ffb20208b0f9dc04179ae9673d4a9a1ae088d99564953def08b",
+      "independent_peer": "build/research/dqvii2000-four-language-completion/independent-all-fields-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "e1673d3014728caf98bf8acd7639187e93ea0c041da28d51730a63a40651d561",
+      "candidate_path": "build/research/dqvii2000-four-language-completion/dqvii-all-five-fields-four-language-full-reuse-fidelity-candidate.json",
+      "candidate_sha256": "b49556a652be3136f08c5cbfed5b5b6975918a27dd530c6dae4bd711aa7aad5c"
+    },
+    {
+      "entry_id": "wikipedia-736173",
+      "source_fields_sha256": "7402454f7f543d8151f451a244f3ea2cfad2f9eb21cc484c7e8ac10c2e9b56c7",
+      "translation_sha256": "20c26dab20342a356af0a32e26c67946a18a8ddaf1b596ef358452031e0ccf0a",
+      "independent_peer": "build/research/thps2-2000-four-language-completion/independent-all-fields-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "0b3d5c754ea2996a7a520dfa3d64da25460239d9c6abaa4245e751bba8abf635",
+      "candidate_path": "build/research/thps2-2000-four-language-completion/thps2-all-five-fields-four-language-full-reuse-fidelity-candidate.json",
+      "candidate_sha256": "ebfb37118ea626e8df95e862e447894cbdc88735e80a18b361fe4dd4b727e961"
+    },
+    {
+      "entry_id": "wikipedia-904955",
+      "source_fields_sha256": "7eac356f10c35e7d8e1089fb8e7fa2f3ef28ea416fdaf68a6e1db3e2450b2990",
+      "translation_sha256": "e6b9f21c1916674cb0c8a0f4bcc78b1227f5793564aa048e286de955269e6d87",
+      "independent_peer": "build/research/bg2-2000-four-language-completion/independent-all-fields-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "64fe3ab572c835324b6108f8b7d92d3f965044150a08ed577500187d63bef5db",
+      "candidate_path": "build/research/bg2-2000-four-language-completion/bg2-all-five-fields-four-language-full-reuse-fidelity-candidate.json",
+      "candidate_sha256": "73c38e2a067ea92882805cec95dfe53c4c2ca78a9a1532717f7296899b739333"
+    },
+    {
+      "entry_id": "workbook-11-14-skies-of-arcadia",
+      "source_fields_sha256": "73418c97c47ac96aed881eedd8ecd31e7878afa7e9af6b009b792908e50d77e9",
+      "translation_sha256": "d8a5fa19c368c524665db8aed04a152544217b7b580f1986caa58e3e418722a7",
+      "independent_peer": "build/research/skies2000-four-language-completion/independent-all-fields-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "db96dae65ac629bae75caf7cb9cd31b852a5c2f136e1bad2a15424c56ccf1665",
+      "candidate_path": "build/research/skies2000-four-language-completion/skies-all-five-fields-four-language-full-reuse-fidelity-candidate.json",
+      "candidate_sha256": "a5a55dcec129531581c208cbe45321a6f14e80c8a241af4b68a85da457a8969c"
+    }
+  ]
+}

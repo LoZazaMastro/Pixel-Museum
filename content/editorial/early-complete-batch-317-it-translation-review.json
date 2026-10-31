@@ -1,0 +1,98 @@
+{
+  "status": "PASS",
+  "locale": "it",
+  "entries": [
+    {
+      "entry_id": "wikipedia-69396931",
+      "source_fields_sha256": "aa1b9091780cbacfec0c5b381a691e51fcf8636a6ba6a623eb39cb80a7b20907",
+      "translation_sha256": "c94c47089cb5dda9b6c493cefb2755a7d528ba67faf7c6b452f5692e0e304f4b",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch317/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "42b455af0919c870372bb90bdaaecd6e9284fa7c8d79584ca7d0edcb4573864e"
+    },
+    {
+      "entry_id": "wikipedia-63668523",
+      "source_fields_sha256": "903e168ca58d51ed47b376ebaa5b874793b7ed7f2f4c86f10fb5fddf7ab7b2e4",
+      "translation_sha256": "b00ce52988b46b2e82439a0d447cca1f971d891ba31aee9d9955fe860f5c02b7",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch317/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "42b455af0919c870372bb90bdaaecd6e9284fa7c8d79584ca7d0edcb4573864e"
+    },
+    {
+      "entry_id": "wikipedia-63956111",
+      "source_fields_sha256": "61c2431f84827909119a7f58a9600dc46c1a02a9a15d34eaad5f01d3f5258de9",
+      "translation_sha256": "7f1eb35a4f988c71ff27c8be0d78a951b5b63d56e79d16bb7329a33c75a7d4ec",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch317/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "42b455af0919c870372bb90bdaaecd6e9284fa7c8d79584ca7d0edcb4573864e"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "root",
+    "actual_receipt": "build/research/catalog-2020-chronological/june-july-three-private/independent-root-approval.json",
+    "actual_receipt_sha256": "66d12c95331abd22ebbb4cefcaab80ff7bb3acad9dd7c345926275ce9c1643db",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "root",
+      "reviewed_index": "build/research/catalog-2020-chronological/june-july-three-private/three-original-source-media-four-language-private-index.json",
+      "reviewed_index_sha256": "03db0e13d426f9a906ffe80db70f9f07282a4ea6490b2eb77dbc042e66b7dc6f",
+      "owners": [
+        {
+          "entry_id": "wikipedia-69396931",
+          "slug": "automobilista",
+          "source": "build/research/catalog-2020-chronological/june-july-three-private/automobilista/complete-original-source-media-private-candidate.json",
+          "source_sha256": "2114369457641ef19ec6a3279f7fa98966a8542f08850b48f702a29f7d2663b0",
+          "target": "build/research/catalog-2020-chronological/june-july-three-private/automobilista/complete-four-language-private-candidate.json",
+          "target_sha256": "d902927a35009d52e777c620d41e0974c37d09d46ee4b9a8e910313b14d4afaa",
+          "contact": "build/research/catalog-2020-chronological/june-july-three-private/automobilista/final-selected-media-contact.jpg",
+          "contact_sha256": "fecd5c5e7cced3f557a9f763582df930702939e47200b8d3d27ab0c595850890",
+          "english_cards": 2,
+          "localized_cards": 8,
+          "images": 6,
+          "tracks": 0
+        },
+        {
+          "entry_id": "wikipedia-63668523",
+          "slug": "f1",
+          "source": "build/research/catalog-2020-chronological/june-july-three-private/f1/complete-original-source-media-private-candidate.json",
+          "source_sha256": "02f21f12cf66d925babb63c4f58403382acb6c7a51f344056a22bdbf4b525c29",
+          "target": "build/research/catalog-2020-chronological/june-july-three-private/f1/complete-four-language-private-candidate.json",
+          "target_sha256": "75159a5caea42ed1dec72dd8946bb94202267144a5e6e8fe85cf720c7e96f3d5",
+          "contact": "build/research/catalog-2020-chronological/june-july-three-private/f1/final-selected-media-contact.jpg",
+          "contact_sha256": "84e293ee515abbdf40be4cfb6c893f80c72870fdea017b82716dc031c08bdb06",
+          "english_cards": 2,
+          "localized_cards": 8,
+          "images": 6,
+          "tracks": 0
+        },
+        {
+          "entry_id": "wikipedia-63956111",
+          "slug": "paper",
+          "source": "build/research/catalog-2020-chronological/june-july-three-private/paper/complete-original-source-media-private-candidate.json",
+          "source_sha256": "ee289aa9a1a9222a160323e4e7d95672aa802180e4ef54d586b46cbda1bdfc06",
+          "target": "build/research/catalog-2020-chronological/june-july-three-private/paper/complete-four-language-private-candidate.json",
+          "target_sha256": "b280e3cecc5684f34649d961509086826b2aecf786cfb95f3d97d2a043c63ff6",
+          "contact": "build/research/catalog-2020-chronological/june-july-three-private/paper/final-selected-media-contact.jpg",
+          "contact_sha256": "79a60ab3c2f1eb1e5a563ab9d5a40c316d2e83ae7bda3dbfad9b399c5d0b5f56",
+          "english_cards": 5,
+          "localized_cards": 20,
+          "images": 7,
+          "tracks": 122
+        }
+      ],
+      "review_scope": {
+        "english_paragraphs_read": 9,
+        "localized_paragraphs_read": 36,
+        "final_media_images_viewed": 19,
+        "preserved_music_objects": 122,
+        "primary_sources_read": [
+          "https://forum.reizastudios.com/threads/automobilista-2-june-development-update-its-official-release-time.11692/",
+          "https://www.formula1.com/en/latest/article/be-the-grids-11th-team-with-the-new-f1-2020-videogame.dqdZ1FH1Se4uD8jBY6Ekp",
+          "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-games/Paper-Mario-The-Origami-King-1782440.html"
+        ]
+      },
+      "resolved_findings": [
+        "F1 original Formula1 images added alongside appropriately retained Formula2 image; clean covers. Reiza1.0 June30 distinguished from Early Access March31. No uncertain menu-music composer invented."
+      ],
+      "production_writes": false
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "status": "PASS",
+  "locale": "de",
+  "entries": [
+    {
+      "entry_id": "wikipedia-78968864",
+      "source_fields_sha256": "c37ddac8b9afbad66702e09b1c8db6a81f47086120c0200f1fbb439b79b264ca",
+      "translation_sha256": "d0a0b017600faa3204a3a45de22ad2826b2647aae3d94148a7f1913f6e183588",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch382/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "0b9b0f196deb50b1e88a7576da771390afa6e99afaaca7a7488c02b3cb536544"
+    },
+    {
+      "entry_id": "wikipedia-78591702",
+      "source_fields_sha256": "4269634b7ae9898fcd6ccd749b995b2aba2246d7ca8de587111abdf1704783b5",
+      "translation_sha256": "a86e272baa926261466773bef24329258c4613dacc9dce482d32fa254fbcc480",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch382/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "0b9b0f196deb50b1e88a7576da771390afa6e99afaaca7a7488c02b3cb536544"
+    },
+    {
+      "entry_id": "wikipedia-67938951",
+      "source_fields_sha256": "af084a66bfb1cc294990891bf6a137e38e9da5ba52664c460ea5a74b7a7f4ad2",
+      "translation_sha256": "e099af2f09d09f46aeb13cf4e590c5c07147319e42c4283409af93d1f978bc71",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch382/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "0b9b0f196deb50b1e88a7576da771390afa6e99afaaca7a7488c02b3cb536544"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "category_audit",
+    "actual_receipt": "build/research/catalog-2025-chronological/october-late-three-private/independent-category-audit-approval.json",
+    "actual_receipt_sha256": "531e406ea0cf6c2be0f7dd5b908088d7dbeca6a097b00e8086b8db8c7d1692e3",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "category_audit",
+      "index": "build/research/catalog-2025-chronological/october-late-three-private/three-original-source-media-four-language-private-index.json",
+      "index_sha256": "8634defc77ba4fcf271715cd15a9bcfa9c35e172beadf02c1dabb116309f0686",
+      "owners": [
+        {
+          "entry_id": "wikipedia-78968864"
+        },
+        {
+          "entry_id": "wikipedia-78591702"
+        },
+        {
+          "entry_id": "wikipedia-67938951"
+        }
+      ],
+      "scope": {
+        "english_paragraphs_read": 14,
+        "localized_paragraphs_read": 56,
+        "images_personally_viewed": 19,
+        "new_audio_metadata_receipts_read": 9
+      },
+      "findings": [],
+      "review": [
+        "Read all fourteen English paragraphs and all fifty-six complete Italian/French/German/Spanish paragraphs, summaries and headings. EN bodies are byte-equivalent strings to the exact owner preimages. Existing empty English subtitles for Ninja/Outer and corresponding locale subtitle choices are preserved rather than an invented rewrite.",
+        "Personally viewed all nineteen selected images in the three final contacts. Original 2025 publisher gameplay and genuine artwork are used; Dispatch scenes attached to development-history paragraphs are explicitly contextual finished-game scenes, not falsely described as cancelled live-action prototypes. Two existing Dispatch interview previews retained. No back boxes.",
+        "Read all nine selected public AAC metadata receipts, including full descriptions and individual credits. Raven/Soar are Masahiro Miyauchi, VORTEX Takumi Higuchi, Victor Borba vocals distinguished from composition. Soar publication is March2026, but the original2025 end-credit song and matching composition credit are corroborated by indexed original PS5 credits; it is not misidentified as a new DLC song. No replacement with an independent archive.",
+        "Read firsthand PlatinumGames October2025 sound-design and engine-optimization accounts, supporting vocalist/sound roles and the supported-hardware 120FPS mode. Read AdHoc studio origin timeline directly, confirming live-action start, pandemic suspension, animated revival and withdrawn funding.",
+        "Read AdHoc English GamesPress release directly: January28 Switch release and720p30/1440p60/free upgrade. The body dateline2025 typo is correctly qualified against January2026 publication, not copied as a real date. Read Amazon July2,2026 publication explicitly listing Dispatch now available and Xbox July24,2026 primary schedule explicitly listing July29; real later ports remain qualified.",
+        "Read Xbox/Obsidian October29,2025 launch and the firsthand Brandon Adler interview confirming third-person implementation. Read Antonio Gradanti portfolio identifying original2025 in-world music and Expedition to Dorado. Label metadata separates Oleksa Lozowchuk composer/producer from Antonio Gradanti and does not invent Interleave as an individual composer.",
+        "Source/target/contact SHA, target-source binding, English five-field equivalence, locale paragraph/headings cardinalities, every image title/source_page/creator/credit/license, actual decoded width/height and recovery SHA verified. All nine selected metadata IDs/durations/public availability/AAC match their track objects. No music files downloaded or packaged; no console playback asserted."
+      ],
+      "limitations": [
+        "Original NinjaGaiden4 PS5 credits endpoint returned403 on direct open; indexed original-credit transcription was actually read and identifies Soar in the2025 original credits. Main composition/performer credits are independently explicit in official TeamNinja publication metadata."
+      ],
+      "production_writes": false
+    }
+  }
+}

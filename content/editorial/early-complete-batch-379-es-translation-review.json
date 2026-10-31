@@ -1,0 +1,120 @@
+{
+  "status": "PASS",
+  "locale": "es",
+  "entries": [
+    {
+      "entry_id": "wikipedia-79613463",
+      "source_fields_sha256": "a97a40561c6c0239b0336505de0e2c264c0d1d8f790c2110b5c827fea7f16520",
+      "translation_sha256": "4892e8b95a549d3f85e0261d3c6bafac29591928150478fe28aa6810cbbe3b7a",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch379/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "97ad5a39d22974ac2281d2716797d9e3c0759e751052dd456ea0ac6f797e018f"
+    },
+    {
+      "entry_id": "wikipedia-71017328",
+      "source_fields_sha256": "4a1ca1e90aac216446ec580b9f2ec7fdb974ad4809e75cbd55c9cbe34e99556c",
+      "translation_sha256": "f7d13a36db9b01f4016883d1c4ee30d5b0d8ebe938cc984b8af8814a7e2b2336",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch379/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "97ad5a39d22974ac2281d2716797d9e3c0759e751052dd456ea0ac6f797e018f"
+    },
+    {
+      "entry_id": "wikipedia-79613753",
+      "source_fields_sha256": "ca50b6eba6e986d9f4a262638a04b99e6c230bcd4d2df9e9cc647f916119c3de",
+      "translation_sha256": "eaade360d6cdf606f985294213c764dc3c095cf33bd27ad4c273f248bbe44562",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch379/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "97ad5a39d22974ac2281d2716797d9e3c0759e751052dd456ea0ac6f797e018f"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "/root/package_audit",
+    "actual_receipt": "build/research/catalog-2025-chronological/june-july-three-private/independent-package-audit-approval.json",
+    "actual_receipt_sha256": "1ca1ae2af2412f551f7ee9e87f4d24a0122e4032a5ee09e4b69b52602c4caf51",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "/root/package_audit",
+      "index": "build/research/catalog-2025-chronological/june-july-three-private/three-original-source-media-four-language-private-index.json",
+      "index_sha256": "b5ae06b3d0b228587ca7874181817562b83c7068a422a2626883385c53bf0bd3",
+      "owners": [
+        {
+          "entry_id": "wikipedia-79613463",
+          "slug": "kart",
+          "source": "build/research/catalog-2025-chronological/june-july-three-private/kart/complete-original-source-media-private-candidate.json",
+          "source_sha256": "8645ec6d810f6d5217eb59723a877a820f378b31f1c4d8ea2493014b9d130881",
+          "target": "build/research/catalog-2025-chronological/june-july-three-private/kart/complete-four-language-private-candidate.json",
+          "target_sha256": "3aaf1cd31adddb97d9171b18bdf03695f354c602795fd059a8d0954021108666",
+          "contact": "build/research/catalog-2025-chronological/june-july-three-private/kart/final-selected-media-contact.jpg",
+          "contact_sha256": "d78a3dcef0b8b4faea66413e47c08aaa09c76a7b2c9ed0f98120757dd66922f4",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 5,
+          "tracks": 348,
+          "finite_errata": 1
+        },
+        {
+          "entry_id": "wikipedia-71017328",
+          "slug": "ds2",
+          "source": "build/research/catalog-2025-chronological/june-july-three-private/ds2/complete-original-source-media-private-candidate.json",
+          "source_sha256": "a1e0377c63a35c6c3dc58764a2c4c879a13e6a39cf0c9d37394034aa141e7c66",
+          "target": "build/research/catalog-2025-chronological/june-july-three-private/ds2/complete-four-language-private-candidate.json",
+          "target_sha256": "99edab8c643402ab51f0cf9e91fd5a59ddc08238df8f2b86b0e8a01fee641385",
+          "contact": "build/research/catalog-2025-chronological/june-july-three-private/ds2/final-selected-media-contact.jpg",
+          "contact_sha256": "18f88858cb743d832123c01fa2116ddc6055527b9f17b6a5f3740b8c62d82834",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 5,
+          "tracks": 16,
+          "finite_errata": 0
+        },
+        {
+          "entry_id": "wikipedia-79613753",
+          "slug": "bananza",
+          "source": "build/research/catalog-2025-chronological/june-july-three-private/bananza/complete-original-source-media-private-candidate.json",
+          "source_sha256": "cedf0e34f421c60812fe52abb643d6e290756869e5f21eff49ee78f6f4682c53",
+          "target": "build/research/catalog-2025-chronological/june-july-three-private/bananza/complete-four-language-private-candidate.json",
+          "target_sha256": "4b0c23565c3bfdf58a911771d22ecf74a67132f9e4c3cedd57e49aa8700fbe0a",
+          "contact": "build/research/catalog-2025-chronological/june-july-three-private/bananza/final-selected-media-contact.jpg",
+          "contact_sha256": "930b55d077620563a8ac0146612cb9d72a726ec4012e84f4b31c415551f3cffc",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 5,
+          "tracks": 107,
+          "finite_errata": 1
+        }
+      ],
+      "scope": {
+        "english_paragraphs_actually_read": 9,
+        "localized_paragraphs_actually_read": 36,
+        "selected_images_actually_viewed": 15,
+        "final_contacts_actually_viewed": 3,
+        "preserved_tracks_exact": {
+          "kart": 348,
+          "ds2": 16,
+          "bananza": 107
+        },
+        "total_preserved_tracks_exact": 471
+      },
+      "findings": [],
+      "arithmetic_clarification": "348 + 16 + 107 = 471 preserved track objects. A previous message claiming 571 was an addition error, not missing or new music. Actual three soundtrack objects compare exactly with the per-owner original preimages; no recording re-fetch.",
+      "primary_evidence": [
+        {
+          "url": "https://www.nintendo.co.jp/ir/en/finance/software/index.html",
+          "checked": "Actual table as of June30/2026: Mario Kart World15.39million, Bananza4.78million ranked second, units consolidated worldwide including bundles/downloads."
+        },
+        {
+          "url": "https://www.nintendo.com/au/news-and-articles/ask-the-developer-vol-18-mario-kart-world-chapter-2/",
+          "checked": "Firsthand Nintendo developers identify move toward Switch2 around2020 and original hardware framerate limits."
+        },
+        {
+          "url": "https://www.nintendo.com/au/news-and-articles/ask-the-developer-vol-19-donkey-kong-bananza-chapter-2/",
+          "checked": "Firsthand Nintendo destruction/voxel experiments following Odyssey."
+        },
+        {
+          "url": "https://blog.playstation.com/?p=415073",
+          "checked": "Actual Kojima Productions February12/2026 announcement: PC release March19/2026, Australia/Chiral network premise; retained separately from original PS5June2025."
+        }
+      ],
+      "media_review": "All15 selected originals seen in three final contacts. Clean unbranded artwork covers; original Nintendo interview staff image contextual to development chapter. DS2 original PS5 preview screenshots replace unrelated advertising. Video-publication platform logos remain poster-only, not cover artwork.",
+      "production_writes": false
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "locale": "fr",
+  "review": "Binding of exact independently approved complete candidate members; no new linguistic review substituted. Every full candidate SHA and independent PASS receipt checked, all current English five fields and translation hashes validated.",
+  "entries": [
+    {
+      "entry_id": "zelda-oracle-of-seasons",
+      "source_fields_sha256": "24ee781610b7be481268c34495bbee11780309366a5a4ae32c3b9688978c7d87",
+      "translation_sha256": "902103ec5ae42664bc02d8318f6fa930f5c5af07dd7308301f03f872be1beeb9",
+      "independent_peer": "build/research/oracle-seasons2001-four-language-completion/independent-all-fields-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "7ee03e02bca6f15660dd89178717b9db045c2ff12df738f38f348cab06f668b4",
+      "candidate_path": "build/research/oracle-seasons2001-four-language-completion/oracle-seasons-four-language-final-natural-companion-units-candidate.json",
+      "candidate_sha256": "394acc87c4d17041df0ce1c4e40b09d35d5f074a44d59f4544983284b47fb43b"
+    },
+    {
+      "entry_id": "conkers-bad-fur-day",
+      "source_fields_sha256": "1ec2df6c1177f55611140e9ce3ef780b0bb2816d91c87c6176f4618fe90bdd5b",
+      "translation_sha256": "92344f2986281ae039f739bb05a04452018a2fb4136e275e625a95dee8dc74ac",
+      "independent_peer": "build/research/conker2001-four-language-completion/independent-all-fields-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "d313146bfe91f9d27e41fded5cf2787282e9d46244862a65607ce48398c58b08",
+      "candidate_path": "build/research/conker2001-four-language-completion/conker-all-five-fields-four-language-full-reuse-fidelity-candidate.json",
+      "candidate_sha256": "4e976165c36afe7d756a3584b50cf4277060c8dad506870ee52776e154792856"
+    },
+    {
+      "entry_id": "workbook-03-21-game-boy-advance",
+      "source_fields_sha256": "304a3d41b9d4277fed89c253bd2cb969b8846c8942161e7c9cc2c04f5b83159b",
+      "translation_sha256": "fd2bfa37c4eba133e904b6f3aa2d872e2463a504b2a1236f5e44f18a09caf908",
+      "independent_peer": "build/research/gba2001-four-language-completion/independent-all-fields-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "22d087236efb19a54b18c5aa29e8cf33b8f0b2ff4bc5a77120fec66698b21b91",
+      "candidate_path": "build/research/gba2001-four-language-completion/gba-four-language-final-natural-italian-specification-unit-candidate.json",
+      "candidate_sha256": "2f73cdd7b094e723da6c6f1419149cff8d34e60652439834d4b162390a7486d2"
+    }
+  ]
+}

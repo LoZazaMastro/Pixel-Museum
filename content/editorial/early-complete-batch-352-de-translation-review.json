@@ -1,0 +1,117 @@
+{
+  "status": "PASS",
+  "locale": "de",
+  "entries": [
+    {
+      "entry_id": "wikipedia-71748594",
+      "source_fields_sha256": "a89c279ca52c53d0f1fef4c211de7e175e8b295f082fa13e891e7532f0b46452",
+      "translation_sha256": "af2281c0c94937aa2984614f621f6358a79a3b30ed879ffdd2ec5febf457e334",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch352/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "c2eaa9755e1ea19f66d7b40ec866227b3575c1255dc63efccf5475b5ee8d6cf9"
+    },
+    {
+      "entry_id": "wikipedia-72850021",
+      "source_fields_sha256": "1d0d13f5e7c25b904a43996472b29936a0c7f2cb3aecbd5efeb09a55b03883d0",
+      "translation_sha256": "091d147dd9e80f47d0d03d474ff1db6fe1452b06f971575b50bea6931ec4a0b4",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch352/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "c2eaa9755e1ea19f66d7b40ec866227b3575c1255dc63efccf5475b5ee8d6cf9"
+    },
+    {
+      "entry_id": "wikipedia-68325076",
+      "source_fields_sha256": "bec98473a35477b4dc9671c825cf5e0e7c6cbe92220dc06e33c16fe3baa0541b",
+      "translation_sha256": "9e19b5bf0a8dfdcc50a9c96745426c09904338c02c23bf307ca7746c38186ffc",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch352/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "c2eaa9755e1ea19f66d7b40ec866227b3575c1255dc63efccf5475b5ee8d6cf9"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "/root/package_audit",
+    "actual_receipt": "build/research/catalog-2023-chronological/first-three-private/independent-package-audit-approval.json",
+    "actual_receipt_sha256": "c0bc2a2e82837a213cf8de1105c7c1abd741d6a94e2788e5668e94ec6d906232",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "/root/package_audit",
+      "author": "/root/editorial_continue",
+      "independent": true,
+      "index_sha256": "25f50a25c9808ba331de10b6d54f263c1d35514f5a401f72f72d42b3b8598671",
+      "owners": [
+        {
+          "entry_id": "wikipedia-71748594",
+          "slug": "engage",
+          "source": "build/research/catalog-2023-chronological/first-three-private/engage/complete-original-source-media-private-candidate.json",
+          "source_sha256": "88f2f940faeef5b131d311a5465a7a99dec0ed77ec28274bf1ac22a7404fc5d9",
+          "target": "build/research/catalog-2023-chronological/first-three-private/engage/complete-four-language-private-candidate.json",
+          "target_sha256": "48e50c5267ee393908829e116d57417ea1d4687b9321cf21991b39c495c961e9",
+          "contact": "build/research/catalog-2023-chronological/first-three-private/engage/final-selected-media-contact.jpg",
+          "contact_sha256": "9e284b99524a5a60593db1e03ce9932108a5d01784e69df5e26777ee097d6ab2",
+          "english_cards": 5,
+          "localized_cards": 20,
+          "images": 7,
+          "tracks": 68,
+          "finite_errata": 0
+        },
+        {
+          "entry_id": "wikipedia-72850021",
+          "slug": "hifi",
+          "source": "build/research/catalog-2023-chronological/first-three-private/hifi/complete-original-source-media-private-candidate.json",
+          "source_sha256": "2b3427ff51ebf4314caecd26c4426ad34d825003f6151713672d795dbb289016",
+          "target": "build/research/catalog-2023-chronological/first-three-private/hifi/complete-four-language-private-candidate.json",
+          "target_sha256": "dc5b91f3030111b4f94d52e785b91a5c42fa287cb0a4a575e77f5b315a1ec77d",
+          "contact": "build/research/catalog-2023-chronological/first-three-private/hifi/final-selected-media-contact.jpg",
+          "contact_sha256": "9912bc80ae7d22feb1a7b3f3990f1078ea0b7c65c198e28e2e11abf3fe854126",
+          "english_cards": 4,
+          "localized_cards": 16,
+          "images": 6,
+          "tracks": 66,
+          "finite_errata": 0
+        },
+        {
+          "entry_id": "wikipedia-68325076",
+          "slug": "dead-space",
+          "source": "build/research/catalog-2023-chronological/first-three-private/dead-space/complete-original-source-media-private-candidate.json",
+          "source_sha256": "e587e0a98e28a1c360d5da8d744aa3ed555a115c51c617afd7aa9d9f0759b188",
+          "target": "build/research/catalog-2023-chronological/first-three-private/dead-space/complete-four-language-private-candidate.json",
+          "target_sha256": "a8e626c6a47fa95a2c31a20f5be9c4d0012e74c8732d699e0b8af847eb758be8",
+          "contact": "build/research/catalog-2023-chronological/first-three-private/dead-space/final-selected-media-contact.jpg",
+          "contact_sha256": "48b458832b6087dadce2dd88cb851f8b050dcdae753469c4dc3f664e85600301",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 4,
+          "tracks": 17,
+          "finite_errata": 0
+        }
+      ],
+      "scope": {
+        "english_paragraphs_read": 12,
+        "localized_paragraphs_read": 48,
+        "languages": [
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "selected_images_actually_viewed": 17,
+        "contacts_actually_viewed": 3,
+        "existing_soundtrack_objects_verified_exact": 151,
+        "new_tracks": 0,
+        "audio_metadata_not_refetched": true
+      },
+      "findings": [],
+      "observations": [
+        "All twelve English body paragraphs match the owner preimages; four-language summaries are complete, including Engage opening paragraph populated by finalizer.",
+        "Read all48 localized paragraphs, headings, subtitles and summaries; the source translation JSON empty Engage summary fields are correctly populated in the actual final candidates.",
+        "Personally viewed all three final contact sheets: clean unbranded covers and contextual original-game scenes for all12 chapters. Hi-Fi Xbox logo is only on official trailer poster, not cover.",
+        "Checked January20 Nintendo primary for Engage and twelve Emblem Rings, Xbox January25 surprise release, EA Motive firsthand peeling-system explanation, and Krafton official November14,2025 publishing/service transfer. No need to rewrite valid current publishing information.",
+        "Public existing soundtrack objects68+66+17 preserved exactly; no redundant per-track extraction."
+      ],
+      "primary_sources_read": [
+        "https://www.nintendo.com/sg/switch/ayfn/index.html",
+        "https://news.xbox.com/en-us/2023/01/25/game-pass-january-2023-wave-2-announce/",
+        "https://www.ea.com/ea-studios/motive/news/inside-dead-space-2-new-necromorph-nightmare",
+        "https://support.krafton.com/hc/en-us/articles/52410315858201--Notice-Change-in-Service-Operator-for-Hi-Fi-RUSH"
+      ],
+      "production_writes": false
+    }
+  }
+}

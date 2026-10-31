@@ -1,0 +1,409 @@
+{
+  "batch_id": "278-human-history",
+  "sources": [
+    {
+      "source_id": "278-babbage-sm",
+      "url": "https://collection.sciencemuseumgroup.org.uk/objects/co62243/step-reckoner-calculating-machine-calculating-machine",
+      "title": "Difference Engine No.1",
+      "publisher": "Science Museum Group",
+      "accessed_at": "2026-10-30",
+      "scope": "Sezione assemblata nel 1832; macchina completa non terminata.",
+      "limitation": "Scheda museale indicizzata; nessun primato commerciale dedotto da una dimostrazione."
+    },
+    {
+      "source_id": "278-babbage-chm",
+      "url": "https://www.computerhistory.org/babbage/history/",
+      "title": "A Brief History — The Babbage Engine",
+      "publisher": "Computer History Museum",
+      "accessed_at": "2026-10-30",
+      "scope": "Sezione funzionante 1832, dimostrazioni, incontro con Lovelace 1833; concezione Analytical Engine 1834 e problemi di costruzione.",
+      "limitation": "Pagina letta. Il 1833 è mantenuto come avvenimento dimostrativo, non assemblaggio o nascita di Babbage."
+    },
+    {
+      "source_id": "278-babbage-architecture",
+      "url": "https://www.computerhistory.org/babbage/engines/",
+      "title": "The Engines",
+      "publisher": "Computer History Museum",
+      "accessed_at": "2026-10-30",
+      "scope": "Distinzione fra calcolatrice differenziale e progetto programmabile; memoria, elaborazione, cicli e diramazioni.",
+      "limitation": "Terminologia moderna usata per descrivere il progetto, senza affermare che la macchina fu completata."
+    },
+    {
+      "source_id": "278-babbage-1837",
+      "url": "https://hsm.ox.ac.uk/manuscripts",
+      "title": "Manuscripts — MS Buxton7",
+      "publisher": "History of Science Museum, University of Oxford",
+      "accessed_at": "2026-10-30",
+      "scope": "Catalogo del manoscritto On the mathematical powers of the Calculating Engine,1837.",
+      "limitation": "Catalogo archivistico consultato; non dichiarata una lettura completa del manoscritto originale."
+    },
+    {
+      "source_id": "278-z3",
+      "url": "https://www.computerhistory.org/tdih/may/12/",
+      "title": "Zuse Completes Z3 Machine",
+      "publisher": "Computer History Museum",
+      "accessed_at": "2026-10-30",
+      "scope": "Completamento 1941 e definizione di primo calcolatore digitale elettromeccanico controllato da programma.",
+      "limitation": "Precisata la categoria, evitando di estendere il primato a ogni possibile definizione di computer universale."
+    },
+    {
+      "source_id": "278-penny",
+      "url": "https://staging1.postalmuseum.org/collections/highlights/the-first-ever-stamp-the-penny-black/",
+      "title": "The first ever stamp: the Penny Black",
+      "publisher": "The Postal Museum",
+      "accessed_at": "2026-10-30",
+      "scope": "Vendita a Londra1 maggio 1840, validità postale 6 maggio; effigie derivata dall’immagine di Victoria a15 anni.",
+      "limitation": "Testo museale indicizzato; apertura del dominio principale403 e del sottodominio401. Non dichiarato accesso al contenuto riservato."
+    },
+    {
+      "source_id": "278-lovelace",
+      "url": "https://collection.sciencemuseumgroup.org.uk/objects/co8652385/book-sketch-of-the-analytical-engine-invented-by-charles-babbage-esq",
+      "title": "Sketch of the analytical engine invented by Charles Babbage, Esq.",
+      "publisher": "Science Museum Group",
+      "accessed_at": "2026-10-30",
+      "scope": "Catalogo del volume 1843 di Menabrea e Lovelace con aggiunte.",
+      "limitation": "Scheda completa letta; data della pubblicazione, non data di nascita della matematica."
+    },
+    {
+      "source_id": "278-baseball",
+      "url": "https://blogs.loc.gov/bibliomania/2025/05/28/if-you-print-it-they-will-come-baseballs-early-years/",
+      "title": "If You Print It, They Will Come: Baseball’s Early Years",
+      "publisher": "Patrick Hastings / Library of Congress",
+      "accessed_at": "2026-10-30",
+      "scope": "Partita19 giugno 1846, lancio dal basso,21 punti e diffusione di regole scritte.",
+      "limitation": "Fonte museale già nell’INPUT, letta nella parte pertinente. Nessuna invenzione del baseball attribuita a un singolo evento."
+    },
+    {
+      "source_id": "278-rugby",
+      "url": "https://www.world.rugby/halloffame/inductees/704759",
+      "title": "William Webb Ellis — Hall of Fame",
+      "publisher": "World Rugby",
+      "accessed_at": "2026-10-30",
+      "scope": "Tre allievi, regole scritte 1845, volume tascabile e termine try.",
+      "limitation": "Fonte già nell’INPUT letta; non ripresa come fatto la leggenda Webb Ellis, esplicitamente discussa anche dalla fonte."
+    }
+  ],
+  "decisions": [
+    {
+      "target_id": "history-1833-difference-engine",
+      "problem": "La dimostrazione 1833 rischia di sembrare data di costruzione della sezione o completamento dell’intera macchina.",
+      "conclusion": "Precisato assemblaggio della sezione 1832 e dimostrazione 1833; progetto completo rimasto incompiuto. Conservate differenze finite, polinomi, coefficienti e applicazioni.",
+      "source_ids": [
+        "278-babbage-sm",
+        "278-babbage-chm"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1837-analytical-engine",
+      "problem": "La prima descrizione 1837 può essere confusa con l’inizio della progettazione; il primato Z3 è espresso in modo troppo generico.",
+      "conclusion": "Distinti concezione negli anni 1830 e manoscritto 1837. Lo Z3 del 1941 è definito precisamente come primo calcolatore digitale elettromeccanico controllato da programma. Memoria, unità aritmetica e logica, cicli e diramazioni conservati.",
+      "source_ids": [
+        "278-babbage-chm",
+        "278-babbage-architecture",
+        "278-babbage-1837",
+        "278-z3"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1840-penny-black",
+      "problem": "L’INPUT descrive il profilo di una Victoria ventunenne; occorre anche distinguere messa in vendita e validità postale.",
+      "conclusion": "Effigie basata sul ritratto a 15 anni, secondo il museo postale. Conservati 1 maggio 1840 vendita e 6 maggiovalidità, con vendita circoscritta a Londra.",
+      "source_ids": [
+        "278-penny"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1843-ada-lovelace",
+      "problem": "L’intitolazione a una persona potrebbe indurre a spostare la voce alla nascita.",
+      "conclusion": "È esplicitamente la pubblicazione delle note 1843; resta un evento. Conservato anche il dato biografico 1815 senza dedurre giorno o mese.",
+      "source_ids": [
+        "278-lovelace"
+      ],
+      "text_applied": false
+    }
+  ],
+  "metadata_proposals": [
+    {
+      "target_id": "history-1833-difference-engine",
+      "field": "event_semantics",
+      "proposed": "Demonstration of a working section of Difference Engine No.1 in 1833; assembled 1832",
+      "reason": "Avvenimento dimostrativo del progetto, non release commerciale né biografia.",
+      "source_ids": [
+        "278-babbage-sm",
+        "278-babbage-chm"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "history-1837-analytical-engine",
+      "field": "event_semantics",
+      "proposed": "1837 manuscript description of the proposed Analytical Engine",
+      "reason": "Macchina progettata, non calcolatore già costruito o disponibile al pubblico.",
+      "source_ids": [
+        "278-babbage-1837"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "history-1840-penny-black",
+      "field": "release_region",
+      "proposed": "London, United Kingdom — first public sale",
+      "reason": "La data1 maggio 1840 riguarda la vendita documentata;6 maggio è l’inizio della validità postale.",
+      "source_ids": [
+        "278-penny"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "history-1843-ada-lovelace",
+      "field": "event_semantics",
+      "proposed": "Publication of the translation and Analytical Engine notes,1843",
+      "reason": "Evento editoriale esplicito distinto dalla nascita.",
+      "source_ids": [
+        "278-lovelace"
+      ],
+      "applied_to_catalog": false
+    }
+  ],
+  "editorial_review": {
+    "checks": [
+      "Letto l’INPUT completo prima della stesura. Inglese scritto e salvato prima delle altre lingue; tutte le versioni rilette durante l’adattamento.",
+      "Conservati tutti i concetti originari, le attribuzioni, le cifre e le date salvo le correzioni motivate. Rimosse ripetizioni interne alla card della macchina differenziale.",
+      "Incipit identificativi e titoli specifici; spiegati operazioni, materiali e regole con frasi collegate. Nessuna card aggiunta, eliminata o suddivisa.",
+      "Termini storici Fantascope e Stroboscopische Scheiben conservati, con resa idiomatica; nome Augusta Ada Byron e ruoli Morse/Vail/Gerke presenti in tutte le lingue."
+    ],
+    "scope_limit": "Fonti nuove consultate per i problemi descritti; le altre informazioni rimangono derivate dal materiale fornito. Non dichiarata una verifica estesa di ogni primato o data non controversa.",
+    "english_written_first": true,
+    "languages": [
+      "en",
+      "it",
+      "fr",
+      "de",
+      "es"
+    ],
+    "entry_count": 10,
+    "card_count_per_language": 10,
+    "reviewed_at": "2026-10-30T02:13:21.326589+00:00",
+    "english_summary_word_range": [
+      34,
+      37
+    ],
+    "structural_checks": "Schema, ID, ordine, numero di card e cinque lingue verificati dal validatore. Tutti i titoli presenti; nessun HTML o Markdown nei testi."
+  },
+  "status": "completed",
+  "validation": {
+    "valid": true,
+    "batch_id": "278-human-history",
+    "completed": true,
+    "entry_count": 10,
+    "card_count_per_language": 10,
+    "language_count": 5,
+    "translated_card_count": 50,
+    "entry_card_counts": {
+      "history-1833-difference-engine": 1,
+      "history-1833-phenakistiscope": 1,
+      "history-1837-analytical-engine": 1,
+      "history-1837-electrical-telegraph": 1,
+      "history-1839-daguerreotype": 1,
+      "history-1840-penny-black": 1,
+      "history-1843-ada-lovelace": 1,
+      "history-1844-morse-code": 1,
+      "history-1845-knickerbocker-baseball-rules": 1,
+      "history-1845-rugby-school-laws": 1
+    },
+    "issue_counts": {
+      "history-1833-difference-engine": 0,
+      "history-1833-phenakistiscope": 0,
+      "history-1837-analytical-engine": 0,
+      "history-1837-electrical-telegraph": 0,
+      "history-1839-daguerreotype": 0,
+      "history-1840-penny-black": 0,
+      "history-1843-ada-lovelace": 0,
+      "history-1844-morse-code": 0,
+      "history-1845-knickerbocker-baseball-rules": 0,
+      "history-1845-rugby-school-laws": 0
+    },
+    "summary_checks": [
+      {
+        "entry_id": "history-1833-difference-engine",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "history-1833-phenakistiscope",
+        "feature_id": null,
+        "english_summary_words": 34
+      },
+      {
+        "entry_id": "history-1837-analytical-engine",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "history-1837-electrical-telegraph",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "history-1839-daguerreotype",
+        "feature_id": null,
+        "english_summary_words": 34
+      },
+      {
+        "entry_id": "history-1840-penny-black",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "history-1843-ada-lovelace",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "history-1844-morse-code",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "history-1845-knickerbocker-baseball-rules",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "history-1845-rugby-school-laws",
+        "feature_id": null,
+        "english_summary_words": 34
+      }
+    ],
+    "editorial_review": [
+      "history-1833-difference-engine/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1833-difference-engine/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1833-difference-engine/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1833-difference-engine/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1833-phenakistiscope/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1833-phenakistiscope/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1833-phenakistiscope/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1833-phenakistiscope/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1837-analytical-engine/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1837-analytical-engine/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1837-analytical-engine/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1837-analytical-engine/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1837-electrical-telegraph/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1837-electrical-telegraph/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1837-electrical-telegraph/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1837-electrical-telegraph/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1839-daguerreotype/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1839-daguerreotype/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1839-daguerreotype/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1839-daguerreotype/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1843-ada-lovelace/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1843-ada-lovelace/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1843-ada-lovelace/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1843-ada-lovelace/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1844-morse-code/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1844-morse-code/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1844-morse-code/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1844-morse-code/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1845-knickerbocker-baseball-rules/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1845-knickerbocker-baseball-rules/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1845-knickerbocker-baseball-rules/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1845-knickerbocker-baseball-rules/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1845-rugby-school-laws/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1845-rugby-school-laws/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1845-rugby-school-laws/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1845-rugby-school-laws/main/es: main title changed; check that this is a descriptive title and not an altered official name"
+    ],
+    "failures": []
+  },
+  "output_sha256": "20f837b80eb77ddd2ed58e2f81282172db8d8f5b8882281cbd6a5169fbfea6b7",
+  "expansion_assessments": [
+    {
+      "target_id": "history-1833-difference-engine",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1833-phenakistiscope",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1837-analytical-engine",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1837-electrical-telegraph",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1839-daguerreotype",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1840-penny-black",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1843-ada-lovelace",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1844-morse-code",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1845-knickerbocker-baseball-rules",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1845-rugby-school-laws",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    }
+  ],
+  "root_review": {
+    "reviewed_at": "2026-10-30T02:30:32.405447+00:00",
+    "scope": "Controllo delle segnalazioni automatiche e confronto mirato con l’INPUT. Nessuna omissione residua nei passaggi riletti: numeri resi in lettere, decadi e punteggi localizzati; le nuove date dei lotti storici sono documentate nelle decisioni.",
+    "changes": []
+  }
+}

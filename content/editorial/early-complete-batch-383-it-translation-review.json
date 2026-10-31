@@ -1,0 +1,117 @@
+{
+  "status": "PASS",
+  "locale": "it",
+  "entries": [
+    {
+      "entry_id": "wikipedia-79715822",
+      "source_fields_sha256": "c92ffcf4bf4ba273f8d64d5f4ff5fbbdcce75dfc1a8cdd104030278cc64d9dee",
+      "translation_sha256": "dfb10ec7fe35e6f73834b0813c41d453115b694f25b27a606cf9db15d00f47ca",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch383/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "eba2936958c9c24ba9cdb7f3ab684ac37bc674f74890bcfac4c267202c23f5ed"
+    },
+    {
+      "entry_id": "wikipedia-77133067",
+      "source_fields_sha256": "6b3f426e1c028b6ca1674da5a45d6475dd38d3f08e2c558d25c2f55565357066",
+      "translation_sha256": "fbcb2345413ebec6e4629063e147a7fe9d715eafcd4968aa1829a2286e3bca08",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch383/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "eba2936958c9c24ba9cdb7f3ab684ac37bc674f74890bcfac4c267202c23f5ed"
+    },
+    {
+      "entry_id": "wikipedia-79613736",
+      "source_fields_sha256": "2810d44e6c5dec2bf6bd4ec15cc72d67927ba26e7b18e5084f7a101cc1f21b08",
+      "translation_sha256": "d22bd347c6b658f3bd27fec5c7007df423b35aa1862b96f6a3abf4e65bff92f4",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch383/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "eba2936958c9c24ba9cdb7f3ab684ac37bc674f74890bcfac4c267202c23f5ed"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "package_audit",
+    "actual_receipt": "build/research/catalog-2025-chronological/root-november-three-private/independent-package-audit-approval.json",
+    "actual_receipt_sha256": "2da9c338fc6726b88d7fa10582e698bac9daab1a9c8eceaf6ac2e11e045c9bc8",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "package_audit",
+      "independent_of_author": true,
+      "index": "build/research/catalog-2025-chronological/root-november-three-private/three-private-index.json",
+      "index_sha256": "86ee41379fe4064fca18730bb4bc473ee8cb13e6a3cfa14026f21495aa823668",
+      "owners": [
+        {
+          "entry_id": "wikipedia-79715822",
+          "slug": "hyrule",
+          "source": "build/research/catalog-2025-chronological/root-november-three-private/hyrule-source-private-candidate.json",
+          "source_sha256": "91e474923c29b5086cb4bb1d164643da18ab7ad8274f0d1b042c9e3e9e5a269e",
+          "target": "build/research/catalog-2025-chronological/root-november-three-private/hyrule-four-language-private-candidate.json",
+          "target_sha256": "8adc7b8e3e4980188d207c84ffab8c474da141742391846b1bb5bfb78eafc7a9",
+          "contact": "build/research/catalog-2025-chronological/root-november-three-private/hyrule-final-contact.jpg",
+          "contact_sha256": "498a77816fa654384e46a30a9aa5d9a7989a4b360113e528c4b99bc60526676c",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 4,
+          "tracks": 3
+        },
+        {
+          "entry_id": "wikipedia-77133067",
+          "slug": "anno",
+          "source": "build/research/catalog-2025-chronological/root-november-three-private/anno-source-private-candidate.json",
+          "source_sha256": "f02c0864717ce12998a4e3c86a2789ccfc39746f2b17612518528d82115156b6",
+          "target": "build/research/catalog-2025-chronological/root-november-three-private/anno-four-language-private-candidate.json",
+          "target_sha256": "1209350aaa7b134af037fd4d06a9b6bff42dcb6af19f123e99d1f8e8de827191",
+          "contact": "build/research/catalog-2025-chronological/root-november-three-private/anno-final-contact.jpg",
+          "contact_sha256": "05641f30032b2239309403e3d167a152c0c67a9e49c44e7fb0d68f216802c78f",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 4,
+          "tracks": 65
+        },
+        {
+          "entry_id": "wikipedia-79613736",
+          "slug": "kirby",
+          "source": "build/research/catalog-2025-chronological/root-november-three-private/kirby-source-private-candidate.json",
+          "source_sha256": "0485e1202201953ff9df263e5b98a638a6c364d88f1a78526159cc4839669472",
+          "target": "build/research/catalog-2025-chronological/root-november-three-private/kirby-four-language-private-candidate.json",
+          "target_sha256": "89725789ed935692c9fa569cfd088fecedcc5a10867483d3bd8806c157c6df13",
+          "contact": "build/research/catalog-2025-chronological/root-november-three-private/kirby-final-contact.jpg",
+          "contact_sha256": "c2833db7a7af1e3cb39bfd919f36a360ab2084051ca8a219e5feaa99f226e91f",
+          "english_cards": 5,
+          "localized_cards": 20,
+          "images": 6,
+          "tracks": 16
+        }
+      ],
+      "actually_reviewed": {
+        "english_paragraphs": 11,
+        "localized_paragraphs": 44,
+        "selected_images_viewed": 14,
+        "new_metadata_receipts_read": 5,
+        "anno_chapter_boundaries_verified": 65,
+        "kirby_existing_music_objects_exact": 16
+      },
+      "resolved_findings": [
+        {
+          "id": "wikipedia-77133067",
+          "field": "images[0].story_paragraph",
+          "before": -1,
+          "after": 2,
+          "root_authorized": true,
+          "note": "Associate existing original cover with release/reception paragraph; cover_art=true. No text, original image pixels, URL or soundtrack changed. Producer/source/English-prepared/target binding/index synchronized."
+        }
+      ],
+      "primary_sources_read": [
+        "https://www.nintendo.com/sg/news/article/5Y0woMuaGwysrHpMBk9SKS",
+        "https://www.nintendo.com/us/whatsnew/a-second-kirby-air-riders-direct-presentation-shares-more-new-features-modes-and-customizable-fun/",
+        "https://dynamedion.com/news/anno_117_pax_romana-3/",
+        "https://www.ubisoft.com/en-au/game/anno/117-pax-romana/news-updates/4jz0kxVkH6JAk5ChEciaZf",
+        "https://deutscher-computerspielpreis.de/chronik/anno-117-pax-romana/?lang=en",
+        "https://de.linkedin.com/in/tommasojakob"
+      ],
+      "notes": [
+        "Hyrule MONACA attribution supported by reported game/studio credits; project-level group credit does not invent individual cue composition. Uploads explicitly independent Zelda Universe archives.",
+        "Anno65 titles, starts, ends and UI durations match actual Ubisoft Music publication description, not inferred evenly spaced tracks. Dynamedion studio and original score production confirmed firsthand.",
+        "Anno April2026 expansion, award and1.17million players supported by developer/organizer sources. No contrary removal based on assumed future status.",
+        "No audio files downloaded and no PS5 playback claim."
+      ],
+      "production_writes": false
+    }
+  }
+}

@@ -1,0 +1,863 @@
+{
+  "schema": "pixel-museum-editorial-input-v1",
+  "batch_id": "048-catalog",
+  "source_file": "content/catalog.json",
+  "source_sha256": "0b077b3f8628f921ab84574d286f9d9943fb8ae6acb8f136ffadde6e01cae241",
+  "entries": [
+    {
+      "entry_id": "myst",
+      "kind": "game",
+      "year_context_only": 1993,
+      "date_context_only": {
+        "month": 9,
+        "day": 24,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "Myst",
+        "subtitle": "An island made for looking closely",
+        "summary": "Cyan's CD-ROM adventure used stillness, sound and detail to make a place feel worth investigating.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Learning to look and listen",
+            "text": "Rand and Robyn Miller's Myst placed the player on an unfamiliar island with little explanation. Moving between carefully composed views, listening and noticing recurring details became the main tools of discovery."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "The possibilities of the CD-ROM",
+            "text": "CD-ROM storage helped support its rendered images and recorded audio. The result offered a different account of immersion from the speed of DOOM in the same year: a world can pull someone in by asking them to slow down."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Exploring the Ages",
+            "text": "To complete the game, the player must fully explore the island of Myst. There, the player discovers and follows clues to be transported via \"linking books\" to several \"Ages\", each of which is a self-contained mini-world. Each of the Ages—named Selenitic, Stoneship, Mechanical, and Channelwood—requires the user to solve a series of logical, interrelated puzzles to complete its exploration. Each Age must be explored to solve the game's primary puzzle on Myst."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "Two voices in the library",
+            "text": "Players assume the role of an unnamed person who stumbles across an unusual book titled \"Myst\". The player reads the book and discovers a detailed description of an island world. Placing their hand on the last page, the player is transported to the world described and is left with no choice but to explore the island. In the island's library, two books can be found, colored red and blue. These books are traps that hold Sirrus and Achenar, the sons of Atrus, who once lived on Myst island with his wife Catherine. Atrus writes special linking books that transport people to the Ages that the books describe. From the panels of their books, Sirrus and Achenar tell the player that Atrus is dead; each brother blames the other for the death of their family, as well as the destruction of much of Atrus's library. Both plead for help to escape. The books are missing several pages, rendering the sons' messages unclear and riddled with static."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Myst",
+            "url": "https://cyan.com/games/myst/",
+            "publisher": "Cyan"
+          },
+          {
+            "title": "Cyan collection",
+            "url": "https://library.gamehistory.org/repositories/2/resources/228",
+            "publisher": "Video Game History Foundation",
+            "attribution": "Collection conditions allow attribution-based research and educational reproduction of non-restricted material to the extent Cyan controls the rights. Credit Cyan and VGHF. Other rights and restricted records remain outside that permission. Not CC0 or a blanket open licence."
+          },
+          {
+            "title": "Myst, estimated 1992-1994",
+            "url": "https://library.gamehistory.org/repositories/2/archival_objects/16866",
+            "publisher": "Video Game History Foundation",
+            "attribution": "See Cyan collection conditions; estimated archival dates are not asserted release dates."
+          },
+          {
+            "title": "Myst promotion, 1993",
+            "url": "https://library.gamehistory.org/repositories/2/digital_objects/4235",
+            "publisher": "Video Game History Foundation",
+            "attribution": "See Cyan collection conditions; no media file is included by this bibliography."
+          },
+          {
+            "title": "Myst — original release infobox, Wikipedia revision 1380601477",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1380601477",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Historical reference retained from the source exhibition",
+            "url": "https://en.wikipedia.org/wiki/Myst"
+          }
+        ]
+      },
+      "features": [
+        {
+          "feature_id": "feature-myst-handcrafted-world",
+          "title": "Building somewhere to explore",
+          "subtitle": "",
+          "summary": "Robyn Miller describes Myst's workshop.",
+          "cards": [
+            {
+              "card_id": "feature:feature-myst-handcrafted-world:0",
+              "original_index": 0,
+              "heading": "A different audience, a small team",
+              "text": "Cyan had made children's software when Sunsoft offered Rand and Robyn Miller the opportunity to develop a world for an older audience. The commission gave the brothers room to pursue Myst. In Robyn's account, Chuck Carter contributed art, Chris Brandkamp worked on sound, and Richard Watson handled HyperCard scripting. Their work brought together the island's pictures, behaviour and recorded sound."
+            },
+            {
+              "card_id": "feature:feature-myst-handcrafted-world:1",
+              "original_index": 1,
+              "heading": "An interface made of familiar things",
+              "text": "Robyn describes taking inspiration for the interface from ordinary objects: doors, switches and other things a visitor already knows how to use. He imagined a novice, including his grandmother, approaching the island without familiarity with a game controller. The team revised its ideas as development progressed, rejecting one solution when a better one appeared. Familiar actions gave players a way into the unfamiliar setting."
+            },
+            {
+              "card_id": "feature:feature-myst-handcrafted-world:2",
+              "original_index": 2,
+              "heading": "Walking through a world on paper",
+              "text": "In a separate interview, Robyn recalls an early planning period spent drawing maps, devices and puzzles, then explaining the world aloud to collaborators. He likens it to tabletop role-playing: describing arrival at the dock and asking what someone would do next. Plans involved collecting keys before the designers settled on pages. The scene was being tested as a sequence of expectations before every view existed. A drawing could expose a missing connection, and another person's question could send the imagined walk in a different direction."
+            },
+            {
+              "card_id": "feature:feature-myst-handcrafted-world:3",
+              "original_index": 3,
+              "heading": "The picture suggests the music",
+              "text": "Robyn remembered composing by looking at a particular area of the game and waiting for an idea to emerge. He identifies the Proteus MPS+ as the limited synthesizer setup used for sounds, effects and mixing. Chris Brandkamp also contributed sound work. An early version of Myst had no music; the publisher then asked the team to try adding it. Robyn developed the score in response to the images and places already taking shape."
+            }
+          ],
+          "sources": [
+            {
+              "id": "miller12mcferran",
+              "title": "The Making of Myst",
+              "url": "https://www.nintendolife.com/news/2012/11/feature_the_making_of_myst",
+              "publisher": "Damien McFerran / Nintendo Life; Robyn Miller",
+              "source_type": "Primary retrospective interview, 17 November 2012; quoted developer answers distinguished from journalist's broader sales/first claims",
+              "locator": "Sunsoft older-audience proposal, creative freedom, named collaborators, familiar-object interface and revision answers",
+              "checked": "2026-10-21",
+              "rights": "Bibliographic reference only; original publication, interview, translation and any associated photographs remain with their respective rights holders.",
+              "story_paragraphs": [
+                0,
+                1
+              ]
+            },
+            {
+              "id": "miller12douglas",
+              "title": "Robyn Miller interview",
+              "url": "https://www.adventureclassicgaming.com/index.php/site/interviews/740/",
+              "publisher": "Rich Douglas / Adventure Classic Gaming; Robyn Miller",
+              "source_type": "Primary retrospective interview, 10 December 2012; introductory casting claim not relied upon",
+              "locator": "Planning maps/devices and tabletop walkthrough; keys before pages; visual inspiration, Proteus MPS+, Brandkamp and initial music-free version",
+              "checked": "2026-10-21",
+              "rights": "Bibliographic reference only; original publication, interview, translation and any associated photographs remain with their respective rights holders.",
+              "story_paragraphs": [
+                2,
+                3
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entry_id": "console-gap-shining-force-ii",
+      "kind": "game",
+      "year_context_only": 1993,
+      "date_context_only": {
+        "month": 10,
+        "day": 1,
+        "precision": "day",
+        "region": "JP"
+      },
+      "event_semantics": "",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "Shining Force II",
+        "subtitle": "A company worth coming back to",
+        "summary": "Bowie leads a growing group through an explorable fantasy world and battles fought one character at a time.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Bowie leaves Granseal",
+            "text": "Shining Force II is Sonic! Software Planning’s tactical role-playing game for Mega Drive, first released in Japan on 1 October 1993. Bowie and his companions investigate a disturbance that grows into a struggle against the demon Zeon. Exploring towns and travelling between them gives way to turn-based battles on a square grid. The army includes characters with different abilities and personalities, and new recruits gradually broaden the group. Between engagements, the player can revisit places, look for hidden treasures and prepare the force for the next encounter."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "One square, one decision",
+            "text": "Each character’s turn allows movement followed by an action such as attacking, casting a spell or using an item. A knight, an archer and a healer reach different squares and contribute in different ways, so their positions matter before an attack begins. Experience makes the characters stronger, and promotion opens more powerful classes once they reach the required level. Some recruits have an alternative promotion linked to a hidden item. Building the army therefore involves both battlefield choices and discoveries made while exploring the world."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "The people between battles",
+            "text": "Away from the grid, towns provide conversations, equipment and opportunities to learn more about the companions. The journey can return to earlier locations rather than closing each chapter behind the party, making the world feel connected across successive battles. Headquarters offer places to meet allies who are currently outside the active force. Motoaki Takenouchi composed the soundtrack for this mixture of travel and tactical encounters. The result is an adventure whose larger company remains visible even when only a selection of its members takes the field."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Shining Force II — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Shining_Force_II"
+          },
+          {
+            "title": "LaunchBox original-platform media",
+            "url": "https://gamesdb.launchbox-app.com/games/details/175-shining-force-ii"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "actraiser-2-1993",
+      "kind": "game",
+      "year_context_only": 1993,
+      "date_context_only": {
+        "month": 10,
+        "precision": "day",
+        "region": "Japan",
+        "day": 29
+      },
+      "event_semantics": "",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "ActRaiser 2",
+        "subtitle": "Quintet / Ancient · Super Nintendo Entertainment System",
+        "summary": "ActRaiser 2 is a Super Nintendo action platformer that sends the Master into lands suffering under demonic influence. A floating palace provides the view over the world, and the player descends to confront the forces responsible for each region's plight. The sequel concentrates on the fighting and movement that formed one half of the original game. A winged body changes those encounters, allowing the player to glide and negotiate more elaborate arrangements of enemies and platforms while choosing when to strike with the sword.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "The Master returns with wings",
+            "text": "ActRaiser 2 is a Super Nintendo action platformer that sends the Master into lands suffering under demonic influence. A floating palace provides the view over the world, and the player descends to confront the forces responsible for each region's plight. The sequel concentrates on the fighting and movement that formed one half of the original game. A winged body changes those encounters, allowing the player to glide and negotiate more elaborate arrangements of enemies and platforms while choosing when to strike with the sword."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Position determines the spell",
+            "text": "Magic is prepared by charging an attack and released in a form determined by the Master's position. Standing, jumping or using another posture can therefore change the tool available against an enemy. Limited scrolls make the decision worth considering before a difficult encounter. Wings provide further control in the air, while a shield can turn aside some incoming attacks. The challenge depends on learning how those abilities fit together, because a safe landing and a useful attack often have to be prepared as part of the same movement."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "A more concentrated kind of journey",
+            "text": "The regions draw on the seven deadly sins, with their inhabitants' troubles supplying the reason to enter the next dangerous area. Two acts develop each location's conflict before the campaign moves onward. Yuzo Koshiro returned to compose the score, supporting the sequel's more solemn visual character. Released in Japan in 1993, the game places greater demands on precise movement and the use of magic. Its change of emphasis gives the series a different identity, built around mastering the physical abilities of the figure descending from the palace."
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/ActRaiser_2",
+            "title": "ActRaiser 2 — gameplay, development and release",
+            "publisher": "Wikipedia contributors"
+          },
+          {
+            "title": "ActRaiser 2 - LaunchBox media",
+            "url": "https://gamesdb.launchbox-app.com/games/details/1017-actraiser-2",
+            "publisher": "LaunchBox Games Database",
+            "facts": "Complete cover and original console gameplay media."
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "workbook-10-29-castlevania-rondo-of-blood",
+      "kind": "game",
+      "year_context_only": 1993,
+      "date_context_only": {
+        "month": 10,
+        "day": 29,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "release",
+      "factual_note": "Imported dated English Playhub editorial. Adapt its calendar wording, review publisher dates and assign rights-cleared media before presenting as a finished museum stop.",
+      "main": {
+        "feature_id": null,
+        "title": "Castlevania: Rondo of Blood",
+        "subtitle": "The Castle Hides More Than One Path",
+        "summary": "On October 29, 1993, Akumajō Dracula X: Chi no Rondo, known as Castlevania: Rondo of Blood, was released in Japan for PC Engine Super CD-ROM².",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Richter enters the castle",
+            "text": "Castlevania: Rondo of Blood was released in Japan on October 29, 1993, for PC Engine Super CD-ROM². Richter Belmont enters Dracula's castle with his whip, while hidden paths and captives give players reasons to revisit the stages. Rescuing Maria Renard unlocks a second playable character whose agility and animal attacks change how the same obstacles are approached. The CD format accommodates recorded voices, animated scenes and an expanded musical presentation."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Voices, music and animated scenes",
+            "text": "Rondo was the first Castlevania released on CD-ROM. Konami used the additional capacity for recorded voices, animated scenes and a richer soundtrack around its side-scrolling action. Preparing these scenes still required careful adaptation to the PC Engine: the developers recalled reducing detailed backgrounds and large animations to fit its available colours. Sound and animation gave the journey a stronger theatrical presentation while the action retained its precise timing."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Routes worth finding twice",
+            "text": "In a 1993 interview, the lead programmer described branching paths as one of the project's strengths. A hidden passage, a fall or a choice of route can reveal another stage, a captive or a different boss. Finishing the adventure once therefore leaves places to discover on another visit. The stages remain compact and individually arranged, but their connections reward players who investigate the edges of the main route."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "Richter and Maria",
+            "text": "The lead programmer described Maria as the easier character and Richter as the harder one. Richter's whip and more restricted movement demand careful positioning. Maria moves more freely and attacks with her animal familiars, opening different ways through familiar encounters. Unlocking her gives players a practical reason to return to stages: a jump or attack that was difficult with Richter may invite another approach with Maria."
+          },
+          {
+            "card_id": "main:4",
+            "original_index": 4,
+            "heading": "Drawing for the PC Engine",
+            "text": "The artists' original drawings sometimes contained more colour and detail than the PC Engine could reproduce. Backgrounds and scene animations had to be reduced as they moved from artwork to the game. Programmers and artists also worked together on enemy behaviour, clear silhouettes and economical animation. Choosing which details to preserve helped keep creatures and attacks legible during play, even as the CD allowed more elaborate scenes between stages."
+          }
+        ],
+        "sources": [
+          {
+            "title": "www.konami.com",
+            "url": "https://www.konami.com/games/castlevania/eu/en/page/history_1993_pce",
+            "publisher": "www.konami.com"
+          },
+          {
+            "title": "shmuplations.com",
+            "url": "https://shmuplations.com/chinorondo2/",
+            "publisher": "shmuplations.com"
+          },
+          {
+            "title": "shmuplations.com",
+            "url": "https://shmuplations.com/chinorondo/",
+            "publisher": "shmuplations.com"
+          },
+          {
+            "title": "Castlevania: Rondo of Blood — original release infobox, Wikipedia revision 1380819018",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1380819018",
+            "publisher": "English Wikipedia contributors"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "illusion-of-gaia-1993",
+      "kind": "game",
+      "year_context_only": 1993,
+      "date_context_only": {
+        "month": 11,
+        "precision": "day",
+        "region": "Japan",
+        "day": 27
+      },
+      "event_semantics": "",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "Illusion of Gaia",
+        "subtitle": "Quintet · Super Nintendo Entertainment System",
+        "summary": "Illusion of Gaia is Quintet's Super Nintendo action role-playing adventure about Will, a boy drawn into a journey through a fantasy version of Earth. Ancient ruins and monuments provide its destinations, including places inspired by the Great Wall and the pyramids. Will travels with friends whose relationships give the expedition a personal story alongside its larger danger. The adventure connects discovering old places with learning about the young people crossing them, allowing a distant landmark to become the setting for a small, immediate human problem.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "A boy follows the traces of an older world",
+            "text": "Illusion of Gaia is Quintet's Super Nintendo action role-playing adventure about Will, a boy drawn into a journey through a fantasy version of Earth. Ancient ruins and monuments provide its destinations, including places inspired by the Great Wall and the pyramids. Will travels with friends whose relationships give the expedition a personal story alongside its larger danger. The adventure connects discovering old places with learning about the young people crossing them, allowing a distant landmark to become the setting for a small, immediate human problem."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Another form opens another route",
+            "text": "Will can transform through Dark Space into Freedan and, later, Shadow. Each form offers different strengths and abilities, giving obstacles more than one possible relationship to the controlled character. Freedan's sword provides greater reach in combat, while Will's techniques are especially useful for finding routes through the environment. The player learns to recognise where a change is needed. A passage seen earlier can become accessible after another ability has been learned, connecting the character's development to the shape of the ruins being explored."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Progress has a visible destination",
+            "text": "Clearing a room of enemies grants a permanent improvement to attack, defence or health, tying development to completing an area rather than repeatedly gathering experience. The journey advances through a sequence of places with limited opportunities to return, making attention to optional Red Jewels useful along the way. Mariko Ōhara contributed the story and Moto Hagio the artwork. Released in Europe as Illusion of Time, the game gives its growing cast and transformations a shared setting in the remnants of civilisations whose stories are still affecting the present."
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Illusion_of_Gaia",
+            "title": "Illusion of Gaia — gameplay, development and release",
+            "publisher": "Wikipedia contributors"
+          },
+          {
+            "title": "Illusion of Gaia - LaunchBox media",
+            "url": "https://gamesdb.launchbox-app.com/games/details/1884-illusion-of-gaia",
+            "publisher": "LaunchBox Games Database",
+            "facts": "Complete cover and original console gameplay media."
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-5311222",
+      "kind": "game",
+      "year_context_only": 1993,
+      "date_context_only": {
+        "month": 11,
+        "day": 30,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Regional and platform release dates may differ. Where shown, the exact day is taken only from the article release infobox.",
+      "main": {
+        "feature_id": null,
+        "title": "Ridge Racer",
+        "subtitle": "",
+        "summary": "Ridge Racer is a 1993 racing video game developed and published by Namco for arcades.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Ridge Racer",
+            "text": "Ridge Racer is a 1993 racing video game developed and published by Namco for arcades. It is the first installment in Namco's Ridge Racer series. It was released initially on the Namco System 22 arcade system board and ported to the PlayStation home console in 1994. Ridge Racer was notable for being the first arcade video game with 3D texture-mapped graphics, with its System 22 hardware capable of texture mapping and Gouraud shading."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Mountain drifting comes to PlayStation",
+            "text": "Development took eight months, and the game is based on a trend among Japanese car enthusiasts, which involves racing on mountain roads while drifting around corners.  The first home version was released in Japan in 1994 as a launch title for the PlayStation; the versions for North America and Europe were released in 1995, also as a launch title for both regions. While an accurate conversion, its frame rate was halved to 30 per second (25 for PAL) due to PlayStation hardware limitations. Ridge Racer played a major role in establishing the new system and gave it an early edge over its nearest competitor, the Sega Saturn; it was considered a rival to Sega's Daytona USA."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "The design",
+            "text": "Ridge Racer received critical acclaim; journalists praised its 3D texture-mapped graphics, audio, drifting mechanics, and arcade racing gameplay, although some were critical of the lack of strong artificial intelligence and a multiplayer mode. It has retrospectively been considered one of the greatest video games of all time. It was followed by an arcade update in 1994, Ridge Racer 2, and a fully-fledged sequel, Rave Racer, in 1995; the PlayStation received a separate sequel, Ridge Racer Revolution, released in 1995 in Japan, and in 1996 in North America and PAL regions. The soundtrack was remixed and released on the Namco Game Sound Express Vol. 11 album."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Ridge Racer (1993 video game) - article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1374555008",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Article contributors and history",
+            "url": "https://en.wikipedia.org/wiki/Ridge_Racer_(1993_video_game)?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          },
+          {
+            "title": "Ridge Racer - advertisement flyer - front (Arcade)",
+            "url": "https://gamesdb.launchbox-app.com/games/details/39037",
+            "publisher": "Namco"
+          },
+          {
+            "title": "Ridge Racer (1993 video game) — original release infobox, Wikipedia revision 1374555008",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1374555008",
+            "publisher": "English Wikipedia contributors"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "console-gap-toejam-earl-in-panic-on-funkotron",
+      "kind": "game",
+      "year_context_only": 1993,
+      "date_context_only": {
+        "month": 12,
+        "day": 0,
+        "precision": "month",
+        "region": "NA"
+      },
+      "event_semantics": "",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "ToeJam & Earl in Panic on Funkotron",
+        "subtitle": "Earthlings on Funkotron",
+        "summary": "ToeJam & Earl in Panic on Funkotron is Johnson Voorsanger Productions' platform game, first released for Genesis in North America in December 1993.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Earthlings on Funkotron",
+            "text": "ToeJam & Earl in Panic on Funkotron is Johnson Voorsanger Productions' platform game, first released for Genesis in North America in December 1993. After returning home, ToeJam and Earl discover that Earthlings have stowed away on their ship and are causing trouble on Funkotron. One or two players search the planet, capture the visitors in jars and arrange their return to Earth. The sequel exchanges the original game's overhead exploration for side-scrolling stages, bringing its comic aliens into a more direct platforming structure while retaining cooperative play."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Finding the hidden visitors",
+            "text": "The Earthlings hide throughout each area, so simply reaching the far side does not finish the job. A radar helps locate visitors that remain out of sight, and throwing jars captures them after the player has found a suitable position. Clearing the area allows the pair to continue. Presents provide useful bonuses, including equipment that helps with the search or movement. The task gives each stage a reason to explore its platforms and concealed corners, with two players able to share the search and deal with troublesome visitors together."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Music around the detour",
+            "text": "Funkotron also contains musical diversions and hidden places that interrupt the capture mission. Jam Out and the Fungus Olympics turn a detour into a small separate challenge, while the HyperFunk Zone offers another unusual space to discover. Collecting objects associated with Lamont contributes to the best ending. These extras preserve the sense that ToeJam and Earl inhabit a place with its own habits and pleasures. The sequel's more conventional platform structure becomes a setting for that personality, with the invading humans supplying much of its humour and the search giving cooperation a clear purpose."
+          }
+        ],
+        "sources": [
+          {
+            "title": "ToeJam & Earl in Panic on Funkotron — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/ToeJam_%26_Earl_in_Panic_on_Funkotron"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-32722",
+      "kind": "game",
+      "year_context_only": 1993,
+      "date_context_only": {
+        "month": 12,
+        "day": 6,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Reference article introduction reproduced under its stated licence. Year comes from the article's release-year category; regional/port dates may differ.",
+      "main": {
+        "feature_id": null,
+        "title": "Virtua Fighter",
+        "subtitle": "",
+        "summary": "Virtua Fighter is a 1993 fighting game developed and published by Sega for arcades.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Model 1 brings polygon fighters to arcades",
+            "text": "Virtua Fighter is a 1993 fighting game developed and published by Sega for arcades. It was developed for the Sega Model 1 arcade platform by AM2, a development group within Sega headed by Yu Suzuki. An early prototype version was location tested in Japan by August 1993, before the complete game was released worldwide in December 1993. It was the first arcade fighting game to feature fully 3D polygon graphics. The game was ported to Sega Saturn as a global launch title in 1994 and 1995, and also received a port to the Sega 32X."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Arcade success helps launch the Saturn",
+            "text": "The game was critically acclaimed and a major hit, becoming one of Sega's best-selling arcade games of all time with more than 40,000 arcade units sold while the Saturn versions sold over 1 million copies. Virtua Fighter was highly regarded for its in-depth 3D fighting engine and real-world fighting techniques, and has been revolutionary and highly influential in the evolution of the genre and video games in general. Its success led to the Virtua Fighter series, with its sequel Virtua Fighter 2 released in 1994."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Remix and a tenth-anniversary edition",
+            "text": "In 1995, an update titled Virtua Fighter Remix was developed and released by AM1, featuring drastic graphical improvements. This improved version was quickly ported to the Saturn console and later received a port to Windows. The game's remake, Virtua Fighter 10th Anniversary, was released for the PlayStation 2 in 2003 as a standalone title in Japan and as a bonus in Virtua Fighter 4: Evolution in North America."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Virtua Fighter (video game) — article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1379743126",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "1993 in video games — annual context",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1367346127",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/Virtua_Fighter_(video_game)?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          },
+          {
+            "title": "Virtua Fighter (video game) — original release infobox, Wikipedia revision 1379743126",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1379743126",
+            "publisher": "English Wikipedia contributors"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "doom",
+      "kind": "game",
+      "year_context_only": 1993,
+      "date_context_only": {
+        "month": 12,
+        "day": 10,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "DOOM",
+        "subtitle": "Space becomes an opponent",
+        "summary": "id Software made a fast, forceful first-person game. Players gave it further lives by sharing it, competing in it and rebuilding its spaces.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Space becomes an opponent",
+            "text": "id Software released DOOM for PC as shareware on December 10, 1993. Its first-person action combines fast movement, distinct weapons and enemies with maps using angled walls, height changes and variable light. Cooperative play and deathmatch connect players over local networks. Separating game data into WAD files also made new levels and modifications practical for the community."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "The engine frees the level from right angles",
+            "text": "DOOM expanded on Wolfenstein 3D's right-angled corridors with angled walls, stairs, platforms and spaces at different heights. Romero identified binary space partitioning as important to rendering those environments quickly. Windows, elevators and overlooks connect views of different map areas. The engine gives designers more ways to shape routes, conceal threats and establish landmarks."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Weapons build a vocabulary of distances",
+            "text": "Weapons suit different distances and situations. The shotgun's timing differs from the chaingun's sustained fire, while rockets make nearby walls and enemies dangerous. Ammunition availability adds another reason to change weapons. Fast movement lets players reposition while choosing which tool will handle the current group of enemies."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "Every enemy occupies a different tactical space",
+            "text": "Enemy sounds, silhouettes and projectiles signal different threats. Some opponents attack from a distance, while others close in and restrict movement. Combining them changes how a corridor or arena can be crossed. Shooters at different heights and creatures blocking an exit make the layout part of the fight."
+          },
+          {
+            "card_id": "main:4",
+            "original_index": 4,
+            "heading": "Deathmatch gives a name to a new ritual",
+            "text": "Local networks support cooperative games and competitive deathmatch. Doors, weapon pickups and an opponent's likely route become useful information during a match. Learning where resources appear helps players plan movement through the same spaces others are using. The fast campaign controls also support pursuit and evasion against people."
+          },
+          {
+            "card_id": "main:5",
+            "original_index": 5,
+            "heading": "The WAD file separates the game from its content",
+            "text": "WAD files store levels, textures, sounds and other game data separately from the executable. Community tools let authors change those resources and build maps without replacing the engine. Romero recalled the team's interest in seeing what players would create. Shared levels and conversions extended play beyond the spaces released by id."
+          },
+          {
+            "card_id": "main:6",
+            "original_index": 6,
+            "heading": "Source code extends an already open culture",
+            "text": "id released DOOM's engine source code in 1997. Carmack's accompanying README encouraged ports, new features and rendering experiments. Commercial game data remained separate, while the code allowed programmers to study and adapt the engine. Community work could bring the game to different hardware and develop tools or variants around its existing content."
+          }
+        ],
+        "sources": [
+          {
+            "title": "DOOM",
+            "url": "https://www.museumofplay.org/games/doom/",
+            "publisher": "The Strong National Museum of Play"
+          },
+          {
+            "title": "DOOM Turns 22!",
+            "url": "https://bethesda.net/tr-TR/news/doom-turns-22",
+            "publisher": "Bethesda / id Software",
+            "type": "Primary: date verification",
+            "supports": "Publisher anniversary article explicitly dates the original DOOM to December 10, 1993. The article body is English despite its locale path."
+          },
+          {
+            "title": "bethesda.net",
+            "url": "https://bethesda.net/ko-KR/news/doom-turns-22",
+            "publisher": "bethesda.net"
+          },
+          {
+            "title": "rome.ro",
+            "url": "https://rome.ro/news/2018/12/10/reflections-on-dooms-development",
+            "publisher": "rome.ro"
+          }
+        ]
+      },
+      "features": [
+        {
+          "feature_id": "feature-john-romero-levels",
+          "title": "A level is played again",
+          "subtitle": "",
+          "summary": "Romero's maps connect testing, tools and community.",
+          "cards": [
+            {
+              "card_id": "feature:feature-john-romero-levels:0",
+              "original_index": 0,
+              "heading": "A minor edit earns another playthrough",
+              "text": "Romero described testing SIGIL after each edit, beginning with a pistol on Ultra-Violence. Starting without weapons carried from an earlier map meant each level needed its own workable route and resources. A small change to the layout led to another full attempt, checking the revised space through play."
+            },
+            {
+              "card_id": "feature:feature-john-romero-levels:1",
+              "original_index": 1,
+              "heading": "The engine contributes to the atmosphere",
+              "text": "Asked about DOOM's engine, Romero highlighted diminished lighting: corridors become darker with distance. The renderer contributes atmosphere and affects how the depth of a room appears. A designer therefore judges geometry through the lighting behaviour of the engine as well as the arrangement drawn in the editor."
+            },
+            {
+              "card_id": "feature:feature-john-romero-levels:2",
+              "original_index": 2,
+              "heading": "An original creator uses community tools",
+              "text": "Romero used Doom Builder2 for SIGIL, crediting Pascal vd Heiden and its other contributors. A shortcut launched GZDoom to test a change quickly. Returning to the original game's format meant using tools and engines developed by its continuing community, making repeated revisions more convenient."
+            },
+            {
+              "card_id": "feature:feature-john-romero-levels:3",
+              "original_index": 3,
+              "heading": "One file holds different starting situations",
+              "text": "SIGIL contains nine distinct level files, with solo and deathmatch spaces organised inside them. Different starting locations send players into the appropriate areas, and cooperative games begin in the solo section. Entry points and game modes determine which part of the stored map players encounter."
+            }
+          ],
+          "sources": [
+            {
+              "id": "romeroama20",
+              "title": "John Romero answers the DOOM community",
+              "url": "https://www.reddit.com/r/Doom/comments/ih673u/hi_reddit_my_name_is_john_romero_and_i_am_the/",
+              "publisher": "John Romero / Netflix-hosted Reddit r/Doom AMA",
+              "source_type": "Primary creator question-and-answer session, 2020",
+              "locator": "Question about replaying SIGIL: repeated UV pistol-start testing; question about favourite engine feature: diminished lighting",
+              "checked": "2026-10-21",
+              "rights": "Bibliographic reference only; underlying articles, art, images, game footage and recordings retain their respective rights.",
+              "story_paragraphs": [
+                0,
+                1
+              ],
+              "paragraph_locators": {
+                "0": "2020 AMA response to Do you play Sigil yourself: repeated full-level tests, pistol start and Ultra-Violence",
+                "1": "2020 AMA response to favourite DOOM engine feature: diminished lighting and ease of level making"
+              }
+            },
+            {
+              "id": "romerosigil",
+              "title": "SIGIL: a megawad interview with John Romero",
+              "url": "https://romero.com/sigil",
+              "publisher": "John Romero / Romero Games",
+              "source_type": "Primary creator project interview and official project page,2018–2019 material retained on current page",
+              "locator": "Doom Builder 2 and Pascal vd Heiden; fast editor-to-test loop; shared WAD areas for solo/co-op/deathmatch",
+              "checked": "2026-10-21",
+              "rights": "Bibliographic reference only; underlying articles, art, images, game footage and recordings retain their respective rights.",
+              "story_paragraphs": [
+                2,
+                3
+              ],
+              "paragraph_locators": {
+                "2": "Official SIGIL Q How did you create the levels: Doom Builder 2, Pascal vd Heiden and contributors, hotkey launch",
+                "3": "Official SIGIL Q nine single-player and nine deathmatch levels: nine distinct level files with different spawn areas"
+              }
+            }
+          ]
+        },
+        {
+          "feature_id": "feature-doom-mod-authorship",
+          "title": "Building the tools to build",
+          "subtitle": "",
+          "summary": "DOOM authorship spreads through editors and teams.",
+          "cards": [
+            {
+              "card_id": "feature:feature-doom-mod-authorship:0",
+              "original_index": 0,
+              "heading": "The map becomes editable",
+              "text": "The 1994 DEU package offered DOOM players a map they could alter. Brendon Wyber's early editor grew through Raphaël Quinet's work on the interface, geometry and automatic node building. A maker could move objects, reshape rooms and save a new level for the game to load. The editor translated an unfamiliar file structure into things a person could select and change. Its credits also named Matt Fell's unofficial specifications: understanding somebody else's format was part of making a usable tool for further authors."
+            },
+            {
+              "card_id": "feature:feature-doom-mod-authorship:1",
+              "original_index": 1,
+              "heading": "A manual needs contributors",
+              "text": "DEU's documentation was itself a collaborative project. Steve Bareman rewrote the manual and supplied a tutorial, while the package asked readers to send corrections as clearly identified sections. Code contributions had their own instructions, including a preferred patch format and consistent style. Bug reporters were asked for enough detail to reproduce a failure. These small procedures made distant contributions easier to combine. The expanding credits recorded work on menus, textures, compatibility and explanation, revealing how much support a new level required before its first room existed."
+            },
+            {
+              "card_id": "feature:feature-doom-mod-authorship:2",
+              "original_index": 2,
+              "heading": "A group finds its project",
+              "text": "Ty Halderman remembered TeamTNT growing from a DOOM editing mailing list around the end of 1994 and beginning of 1995. Members disagreed about the kind of project to make: one group wanted existing DOOM II sprites and rules, while another wanted more extensive changes. The latter project did not materialise; the former developed into the work associated with TeamTNT. A community's output emerged through choosing an achievable shared direction. The group formed around making the levels, before a settled identity could stand in for the work."
+            },
+            {
+              "card_id": "feature:feature-doom-mod-authorship:3",
+              "original_index": 3,
+              "heading": "From planned upload to shop",
+              "text": "Halderman's 1998 account places a publishing offer close to Evilution's online release. John Romero contacted him in October 1995, and the project's leadership discussed the possibility on IRC. Preparing the work for id Software then involved replacing and revising levels over several months. A community project moving into a commercial box acquired another round of decisions about space and scale. Evilution's path into Final DOOM was therefore a negotiation among contributors and publisher, with work between the offer and the version sold."
+            }
+          ],
+          "sources": [
+            {
+              "id": "deu94",
+              "title": "Doom Editing Utilities 5.21: README.1ST and credits",
+              "url": "https://ftpmirror1.infania.net/pub/idgames/utils/level_edit/deu/deu521.zip",
+              "publisher": "Brendon Wyber, Raphaël Quinet, Steve Bareman and credited contributors; original distribution mirrored by Infania",
+              "source_type": "Contemporary tool-author documentation and change log",
+              "checked": "2026-10-21",
+              "rights": "Bibliographic citation only. Original commissioned prose contains no direct quotation. Source text, code, photographs, documents, recordings and game assets retain their own rights; availability is not reproduction permission.",
+              "publication_date": "1994-05-21",
+              "story_paragraphs": [
+                0,
+                1
+              ],
+              "paragraph_locators": {
+                "0": "DEU 5.21 README.1ST What is DEU, changes and CREDITS: Wyber, Quinet, geometry/nodes, PWAD saving and Matt Fell specifications.",
+                "1": "Same README How can you help? and CREDITS: Steve Bareman manual/tutorial, sectioned document updates, context diffs, coding style and reproducible bug reports."
+              }
+            },
+            {
+              "id": "halderman98",
+              "title": "5 Years of Doom: Ty Halderman interview, page 1",
+              "url": "https://web.archive.org/web/20240927035339/https://5years.doomworld.com/interviews/tyhalderman/",
+              "publisher": "Doomworld / direct Ty Halderman interview, Wayback capture 27 September 2024",
+              "source_type": "Primary project coordinator interview, retrospective",
+              "checked": "2026-10-21",
+              "rights": "Bibliographic citation only. Original commissioned prose contains no direct quotation. Source text, code, photographs, documents, recordings and game assets retain their own rights; availability is not reproduction permission.",
+              "publication_date": "1998",
+              "story_paragraphs": [
+                2,
+                3
+              ],
+              "paragraph_locators": {
+                "2": "5 Years of Doom Ty Halderman interview page 1: When was TeamTNT formed? Alpha/Beta alternatives, late 1994/early 1995 uncertainty and product-first organisation.",
+                "3": "Same page: id contact October 24,1995 and final boxed Evilution question; replaced/hacked levels and months of work. No exact retail date inferred."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entry_id": "wikipedia-2975597",
+      "kind": "game",
+      "year_context_only": 1993,
+      "date_context_only": {
+        "month": 12,
+        "day": 10,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Reference article introduction reproduced under its stated licence. Year comes from the article's release-year category; regional/port dates may differ.",
+      "main": {
+        "feature_id": null,
+        "title": "Romancing SaGa 2",
+        "subtitle": "",
+        "summary": "Romancing SaGa 2 is a 1993 role-playing video game developed and published by Square for the Super Famicom (Super Nintendo Entertainment System).",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "A kingdom passes from ruler to ruler",
+            "text": "Romancing SaGa 2 is a 1993 role-playing video game developed and published by Square for the Super Famicom (Super Nintendo Entertainment System). Originally exclusive to Japan, a remaster was released worldwide on home consoles, mobile devices, and Windows from 2016 to 2017. The fifth entry in the SaGa series and second in the Romancing SaGa trilogy, the story follows the fate of Avalon, a nation that must fight against a group dubbed the Seven Heroes. Gameplay features nonlinear exploration and expansion of the game world and narrative, with the turn-based battles featuring group formations. As with other SaGa titles, there are no experience points; character attributes and skills are dependent on actions taken in battle. A key mechanic is choosing the next ruler of Avalon, who will inherit the abilities of the previous ruler."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Reworking the focus around a dynasty",
+            "text": "Production began in 1992 after a prolonged concept period during which staff were working on the Final Fantasy series. Returning staff members included series creator Akitoshi Kawazu as director, lead designer, and writer; illustrator Tomomi Kobayashi; and composer Kenji Ito. The delayed start allowed Kawazu to rethink the game design, changing the focus from the multiple protagonists of Romancing SaGa to a single dynastic line. The remaster's production, which was initiated by Kawazu, focused on removing bugs and preserving the sprite artwork."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Systems praised, difficulty debated",
+            "text": "Romancing SaGa 2 is the best-selling of the three Romancing SaGa titles, having sold over 1.5 million copies in Japan. Reviews of the original praised its gameplay systems but found its characters lacking in depth. The remaster also saw praise from critics for its battle system and inheritance mechanic while faulting its story and difficulty. The original Japanese release was supplemented by multiple guidebooks and a manga adaptation."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "Revisiting the Seven Heroes in 3D",
+            "text": "A 3D remake, Romancing SaGa 2: Revenge of the Seven, was developed by Xeen and released by Square Enix for Nintendo Switch, PlayStation 4, PlayStation 5, and Windows in 2024. Ports to the Nintendo Switch 2 and Xbox Series S and X followed in 2025. Developed by the staff who created the Trials of Mana remake, the team wanted to create a modernised version of Romancing SaGa 2 that would be both faithful to the original and accessible for series newcomers. Ito returned to arrange and expand the soundtrack, while Yoshiro Ambe reworked the character designs. The remake was praised by journalists for its expanded gameplay, graphical, and audio design."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Romancing SaGa 2 — article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1374542125",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "1993 in video games — annual context",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1367346127",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/Romancing_SaGa_2?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          },
+          {
+            "title": "Romancing SaGa 2 — original release infobox, Wikipedia revision 1374542125",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1374542125",
+            "publisher": "English Wikipedia contributors"
+          }
+        ]
+      },
+      "features": []
+    }
+  ]
+}

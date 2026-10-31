@@ -1,0 +1,618 @@
+{
+  "batch_id": "073-catalog",
+  "status": "completed",
+  "entries": 10,
+  "main_cards_per_language": 40,
+  "feature_cards_per_language": 0,
+  "cards_per_language": 40,
+  "languages": [
+    "en",
+    "it",
+    "fr",
+    "de",
+    "es"
+  ],
+  "sources": [
+    {
+      "source_id": "073-grim-making",
+      "url": "https://www.doublefine.com/games/grim-fandango-remastered/making",
+      "title": "The Making of Grim Fandango Remastered",
+      "publisher": "Double Fine",
+      "accessed_at": "2026-10-30",
+      "scope": "Il testo introduttivo descrive il recupero dei materiali e i diari di Tim Schafer scritti nel 1998 per la guida ufficiale.",
+      "limitation": "Consultato il testo della pagina; non dichiarata visione dei filmati o lettura integrale delle immagini dei diari."
+    },
+    {
+      "source_id": "073-grim-credits",
+      "url": "https://www.doublefine.com/games/grim-fandango-remastered/credits",
+      "title": "Grim Fandango Remastered — Original Credits",
+      "publisher": "Double Fine / LucasArts",
+      "accessed_at": "2026-10-30",
+      "scope": "I crediti originali elencano Tim Schafer, Peter McConnell, Tony Plana come Manuel Calavera e iMUSE Music System.",
+      "limitation": "Precisato che Tony Plana è la voce inglese; il credito non viene trasferito ai doppiaggi locali."
+    },
+    {
+      "source_id": "073-grim-date",
+      "url": "https://www.timeextension.com/news/2023/10/anniversary-classic-lucasarts-adventure-game-grim-fandango-turns-25-today",
+      "title": "Classic LucasArts Adventure Game Grim Fandango Turns 25 Today",
+      "publisher": "Time Extension, 30 ottobre 2023",
+      "accessed_at": "2026-10-30",
+      "scope": "Conferma retrospettivamente l’uscita Windows del 30 ottobre 1998, già nell’INPUT.",
+      "limitation": "Fonte secondaria. Le schede GameSpot/GameFAQs mostrano anche il 14 ottobre: non trattate come prova sufficiente per cancellare il giorno di arrivo nei negozi dato dall’INPUT."
+    },
+    {
+      "source_id": "073-grim-historical-notice",
+      "url": "https://the--adventuress.blogspot.com/1998/",
+      "title": "Archivio 1998 — Grim Fandango in stores",
+      "publisher": "The Adventuress / Jennifer McMurray",
+      "accessed_at": "2026-10-30",
+      "scope": "Una voce datata 30 ottobre 1998 annuncia che il gioco è nei negozi.",
+      "limitation": "Archivio ripubblicato su Blogger, servizio successivo al 1998: non presentato come pagina originale immutata o prova primaria autonoma della data."
+    },
+    {
+      "source_id": "073-half-date",
+      "url": "https://www.half-life.com/en/halflife/25th",
+      "title": "Half-Life — 25th Anniversary",
+      "publisher": "Valve",
+      "accessed_at": "2026-10-30",
+      "scope": "La pagina ufficiale indica esplicitamente il 19 novembre 1998.",
+      "limitation": "Consultata la pagina testuale; non dichiarata visione del documentario incorporato."
+    },
+    {
+      "source_id": "073-tomb-triangles",
+      "url": "https://core-design.com/interview7.html",
+      "title": "Adrian Smith — intervista GameSpot UK del 1998",
+      "publisher": "GameSpot UK; riproduzione Core Design fan archive",
+      "accessed_at": "2026-10-30",
+      "scope": "La testimonianza del produttore distingue il precedente editor a blocchi dalle nuove forme triangolari applicate agli ambienti e parla di efficienza del motore.",
+      "limitation": "Intervista primaria riprodotta da un archivio di appassionati, non dal sito aziendale attuale. Le promesse di anteprima non pertinenti non sono state importate nel testo."
+    },
+    {
+      "source_id": "073-tomb-date-series",
+      "url": "https://www.tombraider.com/products/games/tomb-raider-iii-adventures-of-lara-croft",
+      "title": "Tomb Raider III: Adventures of Lara Croft",
+      "publisher": "Tomb Raider / Crystal Dynamics",
+      "accessed_at": "2026-10-30",
+      "scope": "La scheda ufficiale riporta 23 novembre 1998.",
+      "limitation": "La scheda non chiarisce regione o piattaforma a cui appartiene quel giorno e diverge dall’altro sito ufficiale."
+    },
+    {
+      "source_id": "073-tomb-date-studio",
+      "url": "https://www.crystaldynamics.com/projects/tomb-raider-iii/",
+      "title": "Tomb Raider III",
+      "publisher": "Crystal Dynamics",
+      "accessed_at": "2026-10-30",
+      "scope": "La pagina ufficiale dello studio riporta 24 novembre 1998.",
+      "limitation": "Conflitto reale con il 23 sul sito della serie e con il 20 dell’INPUT. Non attribuito a una differenza shipping/retail senza prove."
+    },
+    {
+      "source_id": "073-tomb-date-secondary",
+      "url": "https://www.pcgamingwiki.com/wiki/Tomb_Raider_III%3A_Adventures_of_Lara_Croft",
+      "title": "Tomb Raider III — release dates",
+      "publisher": "PCGamingWiki contributors",
+      "accessed_at": "2026-10-30",
+      "scope": "Riporta il 20 novembre 1998 per Windows, corrispondente al giorno dell’INPUT.",
+      "limitation": "Riscontro secondario; non elimina il conflitto dei due siti ufficiali."
+    },
+    {
+      "source_id": "073-zelda-japan",
+      "url": "https://www.nintendo.co.jp/n01/n64/software/1998.html",
+      "title": "Nintendo 64 — software 1998",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "L’elenco ufficiale giapponese colloca Ocarina of Time il 21 novembre 1998.",
+      "limitation": "La data riguarda il Giappone, non un’uscita mondiale simultanea."
+    },
+    {
+      "source_id": "073-zelda-script",
+      "url": "https://www.nintendo.com/en-gb/Iwata-Asks/Iwata-Asks-The-Legend-of-Zelda-Ocarina-of-Time-3D/Vol-3-Original-Development-Staff-Part-2/1-Fun-Days/1-Fun-Days-216248.html",
+      "title": "Iwata Asks — Original Development Staff, Part 2: Fun Days",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "Aonuma e Morita descrivono il contributo ai dialoghi e identificano Toru Osawa come responsabile della sceneggiatura.",
+      "limitation": "Non ridotto il processo di scrittura a un autore unico."
+    },
+    {
+      "source_id": "073-zelda-credit-list",
+      "url": "https://www.mobygames.com/game/3549/the-legend-of-zelda-ocarina-of-time/credits/n64/",
+      "title": "Ocarina of Time — Nintendo 64 credits",
+      "publisher": "MobyGames, trascrizione dei crediti",
+      "accessed_at": "2026-10-30",
+      "scope": "La voce indicizzata Script Writer elenca Toru Osawa e Kensuke Tanabe.",
+      "limitation": "La pagina diretta restituisce 403; consultato l’estratto indicizzato, non osservato il filmato originale dei crediti. La testimonianza Nintendo riscontra separatamente il ruolo di Osawa."
+    },
+    {
+      "source_id": "073-zelda-rank",
+      "url": "https://www.guinnessworldrecords.com/world-records/455351-most-critically-acclaimed-videogame-metacritic",
+      "title": "Most critically acclaimed videogame — Metacritic",
+      "publisher": "Guinness World Records",
+      "accessed_at": "2026-10-30",
+      "scope": "Distingue il primo posto su Metacritic (99) dal secondo su GameRankings (97,54), dietro Super Mario Galaxy.",
+      "limitation": "Rilevazione dichiarata del 3 marzo 2020; il testo evita di attribuire il primo posto a entrambi gli aggregatori o di dichiarare una nuova rilevazione completa delle classifiche."
+    },
+    {
+      "source_id": "073-zelda-remake",
+      "url": "https://www.nintendo.com/us/store/products/the-legend-of-zelda-ocarina-of-time-switch-2/",
+      "title": "The Legend of Zelda: Ocarina of Time — Nintendo Switch 2",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "La scheda ufficiale del remake mostra la release prevista 5 novembre 2026.",
+      "limitation": "Al 30 ottobre 2026 è una data futura: il testo dice annunciato per, senza presentare il gioco come già pubblicato. Nessun dettaglio nuovo del remake importato."
+    },
+    {
+      "source_id": "073-nancy-original",
+      "url": "https://www.herinteractive.com/shop-games/nancy-drew-secrets-can-kill/",
+      "title": "Nancy Drew: Secrets Can Kill",
+      "publisher": "HeR Interactive",
+      "accessed_at": "2026-10-30",
+      "scope": "La scheda ufficiale dichiara Retail Release November 23, 1998.",
+      "limitation": "Le caratteristiche riassuntive nominano soltanto Junior e Senior; non usate per cancellare Master, documentato dalla recensione diretta dell’originale."
+    },
+    {
+      "source_id": "073-nancy-manual",
+      "url": "https://d2.xp.myabandonware.com/f/o9qs/Nancy-Drew-Secrets-Can-Kill_Manual_Win_EN.pdf",
+      "title": "Nancy Drew: Secrets Can Kill — manuale originale",
+      "publisher": "HeR Interactive; copia pubblica My Abandonware",
+      "accessed_at": "2026-10-30",
+      "scope": "PDF scaricato e pagine PDF 2–4 ispezionate visivamente. La pagina stampata 2 descrive variazioni degli indizi e dei tempi al crescere della difficoltà.",
+      "limitation": "La sezione letta non enumera i tre nomi dei livelli: non presentata come prova autonoma del loro numero. Le altre pagine non sono dichiarate lette integralmente."
+    },
+    {
+      "source_id": "073-nancy-difficulties",
+      "url": "https://www.justadventure.com/2012/09/06/nancy-drew-secrets-can-kill2/",
+      "title": "Nancy Drew: Secrets Can Kill — review",
+      "publisher": "Audrey Wells / Just Adventure",
+      "accessed_at": "2026-10-30",
+      "scope": "La recensora descrive direttamente Master e Senior e dichiara di avere provato anche Junior, confermando i tre livelli dell’originale.",
+      "limitation": "La pagina attuale è datata 2012 e include una nota successiva sul remake: l’esperienza descritta nel corpo riguarda l’originale con personaggi 2D, non il remake."
+    },
+    {
+      "source_id": "073-nancy-remake",
+      "url": "https://www.herinteractive.com/about-us/news/back-to-school-with-nancy-drew-secrets-can-kill-remastered-now-available-08242010/",
+      "title": "Back to School with Nancy Drew: Secrets Can Kill Remastered — Now Available",
+      "publisher": "HeR Interactive, 24 agosto 2010",
+      "accessed_at": "2026-10-30",
+      "scope": "Il comunicato dichiara la disponibilità del remake il 24 agosto 2010.",
+      "limitation": "Non adottato il 23 agosto riportato da una pagina fan."
+    },
+    {
+      "source_id": "073-nancy-discontinued",
+      "url": "https://www.herinteractive.com/2014/04/secrets-can-kill-discontinued/",
+      "title": "Secrets Can Kill Discontinued",
+      "publisher": "HeR Interactive",
+      "accessed_at": "2026-10-30",
+      "scope": "La FAQ ufficiale conferma il ritiro dell’originale e la sostituzione con il rifacimento del 2010.",
+      "limitation": "La FAQ ripubblicata nel 2014 non indica il giorno del ritiro; il 1 agosto resta il dato originario, corroborato da cronologie secondarie, non certificato qui come giorno primario indipendente."
+    },
+    {
+      "source_id": "073-nancy-chronology",
+      "url": "https://www.ndwalkthroughs.ca/nancy-drew-secrets-can-kill.html",
+      "title": "Nancy Drew: Secrets Can Kill — game specifications",
+      "publisher": "ND Walkthroughs",
+      "accessed_at": "2026-10-30",
+      "scope": "La scheda riporta esplicitamente Discontinued: August 1, 2010.",
+      "limitation": "Riscontro secondario della data già fornita; non confondere il ritiro delle vendite con la release del remake."
+    },
+    {
+      "source_id": "073-dreamcast-official",
+      "url": "https://www.sega.jp/history/hard/dreamcast/",
+      "title": "Dreamcast — Sega Hard Encyclopedia",
+      "publisher": "Sega",
+      "accessed_at": "2026-10-30",
+      "scope": "Conferma 27 novembre 1998 in Giappone, modem, GD-ROM, SH-4, PowerVR2, Windows CE e Visual Memory. La cronologia distingue la decisione annunciata nel gennaio 2001 dalla fine della produzione nel marzo 2001.",
+      "limitation": "Il testo conserva la precisione mensile per la fine della produzione; non usa l’annuncio di gennaio come data di cessazione o release."
+    },
+    {
+      "source_id": "073-dreamcast-design",
+      "url": "https://www.sega.jp/history/hard/column/column_06.html",
+      "title": "Sega Hard Story — Dreamcast",
+      "publisher": "Sega, 5 novembre 2018",
+      "accessed_at": "2026-10-30",
+      "scope": "Descrive lavoro precedente al 1997, piano consolidato nel 1997, SH-4 adattato alle richieste Sega e PowerVR2 di VideoLogic/NEC. Conferma le funzioni portatili della Visual Memory.",
+      "limitation": "Corrette le formulazioni semplicistiche iniziato nel 1997 e componenti interamente già pronti. Nessuna nuova specifica tecnica oltre ai chiarimenti necessari."
+    },
+    {
+      "source_id": "073-dreamcast-sales",
+      "url": "https://www.meti.go.jp/meti_lib/report/2022FY/060454.pdf",
+      "title": "Rapporto sull’industria dei videogiochi, anno fiscale 2022",
+      "publisher": "METI, Giappone",
+      "accessed_at": "2026-10-30",
+      "scope": "L’estratto indicizzato riporta Dreamcast e 913万, corroborando il totale di 9,13 milioni già nell’INPUT.",
+      "limitation": "Il PDF diretto restituisce 403; non dichiarata lettura integrale né recupero dei conti finali Sega. Nel testo il numero è presentato come totale riportato, non come nuova misurazione."
+    },
+    {
+      "source_id": "073-thief-remaster-announcement",
+      "url": "https://www.gamespress.com/es/Quiet-As-A-Shadow-Thief-The-Dark-Project-Remastered-Redefines-Stealth-",
+      "title": "Quiet As A Shadow: Thief: The Dark Project Remastered Redefines Stealth",
+      "publisher": "Nightdive Studios / Eidos-Montréal / Atari; Games Press, 7 giugno 2026",
+      "accessed_at": "2026-10-30",
+      "scope": "Il comunicato ufficiale annuncia il remaster per l’inverno 2026.",
+      "limitation": "Non aggiunti nuovi sistemi, piattaforme o promesse. Non importato il passaggio estraneo e impreciso sulle frecce del comunicato."
+    },
+    {
+      "source_id": "073-thief-remaster-store",
+      "url": "https://store.steampowered.com/app/4200960/Thief_The_Dark_Project_Remastered/",
+      "title": "Thief: The Dark Project Remastered",
+      "publisher": "Nightdive Studios / Atari / Eidos Interactive, scheda Steam",
+      "accessed_at": "2026-10-30",
+      "scope": "Distingue Nightdive come sviluppatore da Atari ed Eidos Interactive come editori; il prodotto non è ancora disponibile.",
+      "limitation": "La scheda riporta To be announced per il giorno di release; il periodo stagionale resta quello del comunicato, non viene inventato un giorno."
+    }
+  ],
+  "decisions": [
+    {
+      "target_id": "workbook-10-30-grim-fandango",
+      "problem": "Occorre distinguere l’arrivo nei negozi dalle spedizioni e non attribuire Tony Plana ai doppiaggi locali.",
+      "conclusion": "Conservati il 30 ottobre 1998 statunitense e la distinzione dalle spedizioni precedenti; specificata la voce inglese di Manny. Riscontrati iMUSE e il recupero documentale di Double Fine.",
+      "source_ids": [
+        "073-grim-making",
+        "073-grim-credits",
+        "073-grim-date",
+        "073-grim-historical-notice"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "workbook-11-19-half-life",
+      "problem": "La formulazione Valve released può confondere lo sviluppatore con l’editore.",
+      "conclusion": "La frase identifica Half-Life come sparatutto di Valve e descrive la release Windows del 19 novembre senza assegnare a Valve un credito editoriale non previsto.",
+      "source_ids": [
+        "073-half-date"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-2322240",
+      "problem": "Il giorno 20 novembre dell’INPUT diverge da due siti ufficiali, che indicano rispettivamente 23 e 24. Il riferimento a triangular polygons può sembrare l’introduzione assoluta dei triangoli nella grafica.",
+      "conclusion": "La prosa conserva l’anno delle versioni già previsto. Per la collocazione si propone novembre 1998, precisione comune documentata, senza scegliere arbitrariamente un giorno. Chiarito che le nuove forme triangolari riguardano la costruzione degli ambienti del motore.",
+      "source_ids": [
+        "073-tomb-triangles",
+        "073-tomb-date-series",
+        "073-tomb-date-studio",
+        "073-tomb-date-secondary"
+      ],
+      "text_applied": true,
+      "evidence_limit": "Il conflitto sui giorni non è dichiarato eliminato: risoluzione operativa con precisione mensile, senza motivazioni shipping/retail o regionali inventate."
+    },
+    {
+      "target_id": "wikipedia-165561",
+      "problem": "L’INPUT attribuisce la scrittura soltanto a Kensuke Tanabe, il primo posto a entrambi gli aggregatori e le riedizioni a ogni console domestica Nintendo. Il remake 2026 deve restare futuro.",
+      "conclusion": "Incluso Toru Osawa nel credito della sceneggiatura; distinti primo posto Metacritic e secondo GameRankings. Riedizioni circoscritte alle console successive. La pagina ufficiale conferma il 5 novembre 2026 per il remake Switch 2: formulato come annuncio, non uscita già avvenuta.",
+      "source_ids": [
+        "073-zelda-script",
+        "073-zelda-credit-list",
+        "073-zelda-rank",
+        "073-zelda-remake"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-3170415",
+      "problem": "La pagina prodotto attuale elenca due difficoltà, mentre l’INPUT ne indica tre; le cronologie secondarie divergono su alcune date.",
+      "conclusion": "Conservati Junior, Senior e Master: la recensione diretta di Wells documenta di avere provato tutti e tre, mentre il manuale originale conferma il principio di variazione di indizi e tempi. Usate le date retail ufficiali 23 novembre 1998 e 24 agosto 2010. Il ritiro del 1 agosto 2010 conserva riscontro secondario, distinto dalla release.",
+      "source_ids": [
+        "073-nancy-original",
+        "073-nancy-manual",
+        "073-nancy-difficulties",
+        "073-nancy-remake",
+        "073-nancy-discontinued",
+        "073-nancy-chronology"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "dreamcast",
+      "problem": "Lo sviluppo è presentato come iniziato nel 1997 con componenti interamente pronti; la fine della produzione ha un giorno più preciso della fonte ufficiale consultata; Crazy Taxi 1999 può essere scambiato per il port Dreamcast.",
+      "conclusion": "Descritto il lavoro in corso nel 1997 e l’adattamento della tecnologia dei chip, riconoscendo VideoLogic insieme a NEC. Fine della produzione marzo 2001. Crazy Taxi identificato come conversione dell’arcade del 1999. Conservati 9,13 milioni e oltre 600 giochi, senza fingere una verifica primaria integrale dei consuntivi.",
+      "source_ids": [
+        "073-dreamcast-official",
+        "073-dreamcast-design",
+        "073-dreamcast-sales"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-1400006",
+      "problem": "Nightdive è indicata come editore del remaster; un primato assoluto sull’uso di luce e suono richiederebbe il confronto con tutti i precedenti.",
+      "conclusion": "Nightdive identificata come sviluppatore, Atari ed Eidos Interactive come editori. Conservata la finestra annunciata inverno 2026 senza inventare il giorno o presentarla come release avvenuta. Descritti concretamente luce, suono e simulazione senza trasformare il significato storico del gioco in un primato universale non dimostrato.",
+      "source_ids": [
+        "073-thief-remaster-announcement",
+        "073-thief-remaster-store"
+      ],
+      "text_applied": true
+    }
+  ],
+  "metadata_proposals": [
+    {
+      "target_id": "workbook-10-30-grim-fandango",
+      "original_year": 1998,
+      "original_date": {
+        "month": 10,
+        "day": 30,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed_date": {
+        "year": 1998,
+        "month": 10,
+        "precision": "day",
+        "day": 30,
+        "region": "US"
+      },
+      "event_semantics": "release",
+      "source_ids": [
+        "073-grim-date",
+        "073-grim-historical-notice"
+      ],
+      "reason": "Precisare che la data già presente riguarda l’arrivo nei negozi statunitensi della versione Windows."
+    },
+    {
+      "target_id": "wikipedia-2322240",
+      "original_year": 1998,
+      "original_date": {
+        "month": 11,
+        "day": 20,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed_date": {
+        "year": 1998,
+        "month": 11,
+        "precision": "month"
+      },
+      "event_semantics": "release",
+      "source_ids": [
+        "073-tomb-date-series",
+        "073-tomb-date-studio",
+        "073-tomb-date-secondary"
+      ],
+      "reason": "Usare il mese comune documentato: giorno e attribuzione regionale non univoci nelle fonti consultate."
+    },
+    {
+      "target_id": "wikipedia-165561",
+      "original_year": 1998,
+      "original_date": {
+        "month": 11,
+        "day": 21,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed_date": {
+        "year": 1998,
+        "month": 11,
+        "precision": "day",
+        "day": 21,
+        "region": "JP"
+      },
+      "event_semantics": "release",
+      "source_ids": [
+        "073-zelda-japan"
+      ],
+      "reason": "Specificare il Giappone per il giorno già presente, senza estenderlo a Nord America e territori PAL."
+    },
+    {
+      "target_id": "dreamcast",
+      "original_year": 1998,
+      "original_date": {
+        "month": 11,
+        "day": 27,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed_date": {
+        "year": 1998,
+        "month": 11,
+        "precision": "day",
+        "day": 27,
+        "region": "JP"
+      },
+      "event_semantics": "release",
+      "source_ids": [
+        "073-dreamcast-official"
+      ],
+      "reason": "Specificare il lancio giapponese per la data già presente."
+    }
+  ],
+  "expansion_assessments": [
+    {
+      "target_id": "workbook-10-30-grim-fandango",
+      "main_cards": 7,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 0,
+      "rationale": "Avventura LucasArts centrale per estetica, interfaccia e scrittura; sette card già presenti."
+    },
+    {
+      "target_id": "colony-wars-vengeance-1998",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Seguito significativo per prospettiva narrativa e campagna ramificata del combattimento spaziale su PlayStation."
+    },
+    {
+      "target_id": "wikipedia-1305244",
+      "main_cards": 2,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 3,
+      "rationale": "Terzo episodio principale della serie Crash, con rilevante successo internazionale e giapponese."
+    },
+    {
+      "target_id": "workbook-11-19-half-life",
+      "main_cards": 7,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 0,
+      "rationale": "Sparatutto centrale per integrazione narrativa e sviluppo delle comunità di mod; sette card già presenti."
+    },
+    {
+      "target_id": "wikipedia-2322240",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Capitolo principale di Tomb Raider, con cambiamenti nella geometria degli ambienti e diffusione ampia."
+    },
+    {
+      "target_id": "wikipedia-165561",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 1,
+      "rationale": "Primo Zelda tridimensionale, con sistemi influenti e ampia storia di riproposizioni."
+    },
+    {
+      "target_id": "wikipedia-3170415",
+      "main_cards": 2,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 3,
+      "rationale": "Avvio della serie di avventure investigative Nancy Drew."
+    },
+    {
+      "target_id": "console-gap-the-last-blade-2",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Seguito rilevante nel catalogo dei picchiaduro SNK e nel combattimento con armi."
+    },
+    {
+      "target_id": "dreamcast",
+      "main_cards": 6,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 6,
+      "missing_cards": 0,
+      "rationale": "Ultima console domestica Sega, rilevante per modem, VMU e catalogo; sei card già presenti."
+    },
+    {
+      "target_id": "wikipedia-1400006",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Opera centrale per lo sviluppo dei giochi di infiltrazione e delle simulazioni immersive."
+    }
+  ],
+  "editorial_review": {
+    "english_first": true,
+    "english_checkpoint": "073-catalog/OUTPUT-073-catalog.json, ramo en; bozza separata salvata prima degli adattamenti",
+    "summary_word_counts_en": [
+      35,
+      34,
+      35,
+      35,
+      34,
+      35,
+      35,
+      36,
+      33,
+      33
+    ],
+    "fidelity": "Rilette tutte le 40 card e le cinque lingue confrontando i nomi, le date, i numeri, le attribuzioni e le regole. Conservati Land of the Dead nelle forme linguistiche corrispondenti, Rubacava, El Marrow, i tre film citati, Colonial Navy, League e Sentinels, Uka Uka e Nefarious Tropy, HECU, quattro frammenti, cinque direttori, sette milioni, tre difficoltà, sei livelli di The Lost Artefact, le quantità e i titoli del catalogo Dreamcast. Nessuna card aggiunta, eliminata, divisa o riordinata.",
+    "naturalness": "Incipit con genere o natura dell’entità e tratto distintivo; titoli specifici in ogni card, comprese le quattro intestazioni prima vuote di Ocarina of Time. Card lunghe articolate in brevi paragrafi interni. Le voci molto brevi Dreamcast e Nancy sono mantenute senza inventare materiale per allungarle.",
+    "limits": "Tutte le voci riguardano giochi o hardware, non biografie: i nomi di sviluppatori e interpreti non determinano collocazioni per nascita. Ricerca mirata, non verifica indipendente di ogni fatto fornito. Per Tomb Raider III resta documentato il conflitto sui giorni e si propone una precisione mensile. La citazione first-person sneaker resta in inglese in tutte le lingue. I video collegati non sono dichiarati visionati."
+  },
+  "validation": {
+    "valid": true,
+    "batch_id": "073-catalog",
+    "completed": true,
+    "entry_count": 10,
+    "card_count_per_language": 40,
+    "language_count": 5,
+    "translated_card_count": 200,
+    "entry_card_counts": {
+      "workbook-10-30-grim-fandango": 7,
+      "colony-wars-vengeance-1998": 3,
+      "wikipedia-1305244": 2,
+      "workbook-11-19-half-life": 7,
+      "wikipedia-2322240": 3,
+      "wikipedia-165561": 4,
+      "wikipedia-3170415": 2,
+      "console-gap-the-last-blade-2": 3,
+      "dreamcast": 6,
+      "wikipedia-1400006": 3
+    },
+    "issue_counts": {
+      "workbook-10-30-grim-fandango": 0,
+      "colony-wars-vengeance-1998": 1,
+      "wikipedia-1305244": 1,
+      "workbook-11-19-half-life": 0,
+      "wikipedia-2322240": 1,
+      "wikipedia-165561": 1,
+      "wikipedia-3170415": 1,
+      "console-gap-the-last-blade-2": 1,
+      "dreamcast": 0,
+      "wikipedia-1400006": 1
+    },
+    "summary_checks": [
+      {
+        "entry_id": "workbook-10-30-grim-fandango",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "colony-wars-vengeance-1998",
+        "feature_id": null,
+        "english_summary_words": 34
+      },
+      {
+        "entry_id": "wikipedia-1305244",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "workbook-11-19-half-life",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "wikipedia-2322240",
+        "feature_id": null,
+        "english_summary_words": 34
+      },
+      {
+        "entry_id": "wikipedia-165561",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "wikipedia-3170415",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "console-gap-the-last-blade-2",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "dreamcast",
+        "feature_id": null,
+        "english_summary_words": 33
+      },
+      {
+        "entry_id": "wikipedia-1400006",
+        "feature_id": null,
+        "english_summary_words": 33
+      }
+    ],
+    "editorial_review": [],
+    "failures": []
+  },
+  "output_sha256": "f33388819234092bb45135462b145b6d6a4659ffd1b2d1b26adee2a39a735272",
+  "root_review": {
+    "automated_flag_review": "Confrontate integralmente le card brevi di Warped e Tomb Raider III: numeri di vendita, territori, riedizioni, seguiti, piattaforme, meteorite e attività del giocatore sono tutti conservati. Dreamcast distingue annuncio e fine produzione."
+  }
+}

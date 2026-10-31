@@ -1,0 +1,427 @@
+{
+  "batch_id": "051-catalog",
+  "status": "completed",
+  "sources": [
+    {
+      "source_id": "centy-sega",
+      "url": "https://www.sega.jp/mdmini2/soft/crusader-of-centy.html",
+      "title": "Crusader of Centy — Mega Drive Mini 2",
+      "publisher": "Sega",
+      "accessed_at": "2026-10-30",
+      "scope": "La scheda indica 17 giugno 1994 e precisa che date e produttori si riferiscono alle edizioni Mega Drive originali.",
+      "limitation": "Pagina della riedizione usata soltanto per i metadati storici esplicitamente distinti; il 1994 non è la data di Mini 2."
+    },
+    {
+      "source_id": "robotrek-famitsu",
+      "url": "https://www.famitsu.com/game/title/17106/page/1",
+      "title": "Slapstick — scheda Super Famicom",
+      "publisher": "Famitsu / KADOKAWA Game Linkage",
+      "accessed_at": "2026-10-30",
+      "scope": "La scheda identifica Slapstick, Super Famicom, Enix e uscita 8 luglio 1994.",
+      "limitation": "Catalogo della stampa specializzata, non comunicato contemporaneo Enix. Il link ufficiale Square Enix presente nella scheda non è risultato accessibile."
+    },
+    {
+      "source_id": "robotrek-archive-unavailable",
+      "url": "http://www.square-enix.com/jp/archive/slapstick/",
+      "title": "Slapstick — collegamento storico indicato da Famitsu",
+      "publisher": "Square Enix",
+      "accessed_at": "2026-10-30",
+      "scope": "Individuato il collegamento all’archivio del titolare.",
+      "limitation": "Pagina non accessibile: non usata come conferma del giorno, dei crediti o delle meccaniche."
+    },
+    {
+      "source_id": "shining-sega",
+      "url": "https://shining-world.jp/portal/game/retro.shtml",
+      "title": "Shining World — giochi storici",
+      "publisher": "Sega",
+      "accessed_at": "2026-10-30",
+      "scope": "La sezione Shining Force CD indica Mega-CD e 22 luglio 1994; descrive Gaiden e Gaiden II con scenari successivi.",
+      "limitation": "Testo ufficiale letto nell’indicizzazione; apertura diretta in timeout. Nessun giorno dedotto dalla data delle riedizioni."
+    },
+    {
+      "source_id": "pulseman-sega",
+      "url": "https://vc.sega.jp/vc_pulseman/",
+      "title": "Pulseman — Mega Drive Virtual Console",
+      "publisher": "Sega",
+      "accessed_at": "2026-10-30",
+      "scope": "Data originale 22 luglio 1994. Il testo descrive carica attraverso la corsa, Volteccer e rimbalzi sulle superfici.",
+      "limitation": "La pagina è dedicata alla riedizione Wii, ma distingue la data storica di apparizione. I dettagli aggiuntivi non necessari alla correzione non sono importati."
+    },
+    {
+      "source_id": "policenauts-konami",
+      "url": "https://www.konami.com/mg/archive/other/psonebooks/policenauts/staff01.html",
+      "title": "Policenauts — staff, prima pagina",
+      "publisher": "Konami",
+      "accessed_at": "2026-10-30",
+      "scope": "Riconosce la versione PC9821 come prima uscita nel 1994.",
+      "limitation": "Fonte del titolare; non specifica il giorno 29 luglio. Non viene presentata come prova ufficiale di quel giorno."
+    },
+    {
+      "source_id": "policenauts-retailer",
+      "url": "https://www.suruga-ya.jp/kaitori/kaitori_detail/145001979",
+      "title": "Policenauts — catalogo PC-9821, RA710",
+      "publisher": "Suruga-ya",
+      "accessed_at": "2026-10-30",
+      "scope": "La scheda del prodotto RA710, JAN 4988602625318, indica uscita 29 luglio 1994.",
+      "limitation": "Catalogo commerciale diretto del rivenditore consultato oggi, non comunicato originale Konami."
+    },
+    {
+      "source_id": "policenauts-anniversary",
+      "url": "https://game.watch.impress.co.jp/docs/kikaku/1611168.html",
+      "title": "Policenauts compie trent’anni",
+      "publisher": "Hiroyuki Endo / GAME Watch, 29 luglio 2024",
+      "accessed_at": "2026-10-30",
+      "scope": "La retrospettiva riporta esplicitamente 29 luglio 1994 come uscita originale.",
+      "limitation": "Conferma della stampa professionale retrospettiva; nessun nuovo fatto narrativo estratto dall’articolo."
+    },
+    {
+      "source_id": "policenauts-kojima",
+      "url": "https://shmuplations.com/policenauts/",
+      "title": "Policenauts — intervista agli sviluppatori del 1996",
+      "publisher": "Hideo Kojima, traduzione shmuplations pubblicata il 4 gennaio 2022",
+      "accessed_at": "2026-10-30",
+      "scope": "Kojima racconta la lettera di un giocatore con disabilità uditiva dopo l’uscita PC-98, la scelta iniziale di omettere sottotitoli per l’effetto cinematografico e la successiva priorità all’esperienza dei giocatori.",
+      "limitation": "Testimonianza primaria in traduzione retrospettiva, conservata come tale. Nessuna citazione letterale, nessuna generalizzazione a tutti i futuri giochi di Kojima."
+    },
+    {
+      "source_id": "kof-snk",
+      "url": "https://www.snk-corp.co.jp/us/games/kof-portal/series/94/",
+      "title": "The King of Fighters ’94 — series portal",
+      "publisher": "SNK",
+      "accessed_at": "2026-10-30",
+      "scope": "Distingue disponibilità arcade MVS il 25 agosto 1994 dalle successive uscite domestiche AES e Neo Geo CD.",
+      "limitation": "La prosa mantiene la data della versione MVS; non confonde il torneo annuale con un annuncio del prodotto."
+    }
+  ],
+  "decisions": [
+    {
+      "target_id": "workbook-07-08-robotrek",
+      "problem": "La collocazione originale omette la regione e la nota Playhub richiede un controllo della data.",
+      "conclusion": "Conservato 8 luglio 1994 per Slapstick in Giappone, con riscontro Famitsu. L’archivio del titolare non accessibile non viene dichiarato verificato.",
+      "source_ids": [
+        "robotrek-famitsu",
+        "robotrek-archive-unavailable"
+      ],
+      "text_applied": "Primo paragrafo nelle cinque lingue: uscita giapponese di Slapstick, successiva edizione nordamericana Robotrek. Nessuna data nordamericana inventata."
+    },
+    {
+      "target_id": "workbook-07-22-pulseman",
+      "problem": "Regione assente nei metadati e necessità di distinguere originale Mega Drive da riedizione e annuncio Spark.",
+      "conclusion": "22 luglio 1994, Giappone, Mega Drive, confermato da Sega. Spark resta soltanto il titolo inizialmente annunciato nella storia della produzione.",
+      "source_ids": [
+        "pulseman-sega"
+      ],
+      "text_applied": "Data e piattaforma conservate nelle cinque lingue; carica e rimbalzi spiegati senza aggiungere comandi o durata non forniti."
+    },
+    {
+      "target_id": "workbook-07-29-policenauts",
+      "problem": "Regione omessa e rischio di attribuire a Konami una conferma del giorno che la sua pagina non contiene.",
+      "conclusion": "Conservato 29 luglio 1994 per PC-9821 in Giappone. Konami conferma versione e anno; catalogo commerciale e retrospettiva professionale concordano sul giorno.",
+      "source_ids": [
+        "policenauts-konami",
+        "policenauts-retailer",
+        "policenauts-anniversary"
+      ],
+      "text_applied": "Prima card nelle cinque lingue. La prima conversione 3DO e il Pilot Disk restano eventi successivi nel racconto, non nuove date della voce."
+    },
+    {
+      "target_id": "workbook-07-29-policenauts",
+      "problem": "La lettera relativa ai sottotitoli richiede un’attribuzione attendibile e un ambito preciso.",
+      "conclusion": "Il ricordo è attestato direttamente da Kojima nell’intervista del 1996. Il testo conserva la barriera causata dai dialoghi soltanto vocali e la modifica nelle versioni successive di Policenauts.",
+      "source_ids": [
+        "policenauts-kojima"
+      ],
+      "text_applied": "Card main:3 nelle cinque lingue, senza citazioni inventate né estensioni a tutta la produzione futura."
+    },
+    {
+      "target_id": "console-gap-the-king-of-fighters-94",
+      "problem": "La data deve riferirsi alla disponibilità arcade, distinta dalle versioni domestiche.",
+      "conclusion": "SNK conferma MVS 25 agosto 1994.",
+      "source_ids": [
+        "kof-snk"
+      ],
+      "text_applied": "Data mantenuta nella prima card nelle cinque lingue; non importate le date domestiche estranee al materiale."
+    }
+  ],
+  "metadata_proposals": [
+    {
+      "target_id": "workbook-07-08-robotrek",
+      "field": "timeline_release",
+      "original": {
+        "year": 1994,
+        "month": 7,
+        "day": 8,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed": {
+        "year": 1994,
+        "month": 7,
+        "day": 8,
+        "precision": "day",
+        "region": "Japan",
+        "version": "Super Famicom"
+      },
+      "source_ids": [
+        "robotrek-famitsu"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "workbook-07-22-pulseman",
+      "field": "timeline_release",
+      "original": {
+        "year": 1994,
+        "month": 7,
+        "day": 22,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed": {
+        "year": 1994,
+        "month": 7,
+        "day": 22,
+        "precision": "day",
+        "region": "Japan",
+        "version": "Mega Drive"
+      },
+      "source_ids": [
+        "pulseman-sega"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "workbook-07-29-policenauts",
+      "field": "timeline_release",
+      "original": {
+        "year": 1994,
+        "month": 7,
+        "day": 29,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed": {
+        "year": 1994,
+        "month": 7,
+        "day": 29,
+        "precision": "day",
+        "region": "Japan",
+        "version": "PC-9821"
+      },
+      "source_ids": [
+        "policenauts-konami",
+        "policenauts-retailer",
+        "policenauts-anniversary"
+      ],
+      "applied_to_catalog": false
+    }
+  ],
+  "expansion_assessments": [
+    {
+      "target_id": "console-gap-crusader-of-centy",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Priorità editoriale per rilevanza nella proposta di avventure d’azione per Mega Drive."
+    },
+    {
+      "target_id": "pocky-rocky-2-1994",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "required_main_cards": null,
+      "missing_cards": 0,
+      "rationale": "Voce pertinente alla serie o al genere, ma non selezionata in questo lotto fra i giochi di massima priorità per la soglia minima; i tre nuclei disponibili coprono distintamente premessa, sistema e produzione o seguito."
+    },
+    {
+      "target_id": "workbook-07-08-robotrek",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 1,
+      "rationale": "Priorità editoriale per sistema di invenzione e collocazione nella produzione di Quintet."
+    },
+    {
+      "target_id": "console-gap-shining-force-cd",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Priorità editoriale per ruolo nella serie Shining e nel catalogo Mega-CD."
+    },
+    {
+      "target_id": "workbook-07-22-pulseman",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 1,
+      "rationale": "Priorità editoriale per progetto Game Freak precedente a Pokémon e particolare sistema di movimento."
+    },
+    {
+      "target_id": "workbook-07-29-policenauts",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 1,
+      "rationale": "Priorità editoriale per ruolo nella ricerca narrativa e nella produzione di Hideo Kojima."
+    },
+    {
+      "target_id": "monster-max-1994",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "required_main_cards": null,
+      "missing_cards": 0,
+      "rationale": "Voce pertinente alla serie o al genere, ma non selezionata in questo lotto fra i giochi di massima priorità per la soglia minima; i tre nuclei disponibili coprono distintamente premessa, sistema e produzione o seguito."
+    },
+    {
+      "target_id": "dynamite-headdy",
+      "main_cards": 2,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 3,
+      "rationale": "Priorità editoriale per progetto Treasure significativo per i platform Mega Drive."
+    },
+    {
+      "target_id": "wild-guns-1994",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Priorità editoriale per formula di tiro e cooperazione caratteristica del catalogo Super Nintendo."
+    },
+    {
+      "target_id": "console-gap-the-king-of-fighters-94",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Priorità editoriale per inizio di una serie centrale nei picchiaduro SNK."
+    }
+  ],
+  "editorial_review": {
+    "english_first": true,
+    "five_languages_reviewed": [
+      "en",
+      "it",
+      "fr",
+      "de",
+      "es"
+    ],
+    "checks": [
+      "10 voci e 32 card principali, nessuna feature: 160 versioni complete",
+      "Inglese salvato prima delle quattro adattazioni; incipit, titoli e corrispondenza dei dati riletti",
+      "Sommari inglesi fra 25 e 45 parole; ID e ordine conservati",
+      "Conservati due poteri animali, tre robot e tre nemici, turni e barra E/F, quattro libri, cartuccia RAM, diciassette teste, sei livelli, otto squadre e tre componenti",
+      "Conservati i crediti Natsume, Rare, Quintet/Ancient, Sonic! Software Planning, Yayoi Onda, Game Freak, Anime International Company, Motoaki Takenouchi, Ritman/Drummond/Wise e l’intero gruppo musicale di Dynamite Headdy",
+      "Corretto in revisione il riferimento inglese non necessario ad anni trascorsi da Doc Yoshiyama: il materiale indica solo una lunga permanenza",
+      "Precisato nelle cinque lingue che l’assenza di testo impediva al giocatore con disabilità uditiva di seguire i giochi",
+      "Nessuna voce biografica; le persone citate restano crediti e testimonianze legate ai giochi",
+      "Otto richieste di ampliamento, 14 nuove card principali; Pocky & Rocky 2 e Monster Max non selezionati qui fra i titoli di massima priorità"
+    ],
+    "external_verification_limit": "Controlli mirati ai punti elencati, non verifica indipendente di ogni fatto. Le fonti originali, le attribuzioni Playhub, le licenze CC BY-SA, i crediti e i riferimenti musicali restano negli INPUT. I manuali di Dynamite Headdy già indicati nel materiale non sono dichiarati nuovamente esaminati. Il catalogo Ancient è stato consultato ma non contiene Robotrek e non è usato per confermare né negare quel credito. Nessuna verifica autonoma dei diritti dei media e nessuna modifica a immagini o video.",
+    "book_style_references_consulted": false
+  },
+  "validation": {
+    "valid": true,
+    "batch_id": "051-catalog",
+    "completed": true,
+    "entry_count": 10,
+    "card_count_per_language": 32,
+    "language_count": 5,
+    "translated_card_count": 160,
+    "entry_card_counts": {
+      "console-gap-crusader-of-centy": 3,
+      "pocky-rocky-2-1994": 3,
+      "workbook-07-08-robotrek": 4,
+      "console-gap-shining-force-cd": 3,
+      "workbook-07-22-pulseman": 4,
+      "workbook-07-29-policenauts": 4,
+      "monster-max-1994": 3,
+      "dynamite-headdy": 2,
+      "wild-guns-1994": 3,
+      "console-gap-the-king-of-fighters-94": 3
+    },
+    "issue_counts": {
+      "console-gap-crusader-of-centy": 1,
+      "pocky-rocky-2-1994": 0,
+      "workbook-07-08-robotrek": 1,
+      "console-gap-shining-force-cd": 1,
+      "workbook-07-22-pulseman": 1,
+      "workbook-07-29-policenauts": 1,
+      "monster-max-1994": 0,
+      "dynamite-headdy": 1,
+      "wild-guns-1994": 1,
+      "console-gap-the-king-of-fighters-94": 1
+    },
+    "summary_checks": [
+      {
+        "entry_id": "console-gap-crusader-of-centy",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "pocky-rocky-2-1994",
+        "feature_id": null,
+        "english_summary_words": 34
+      },
+      {
+        "entry_id": "workbook-07-08-robotrek",
+        "feature_id": null,
+        "english_summary_words": 32
+      },
+      {
+        "entry_id": "console-gap-shining-force-cd",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "workbook-07-22-pulseman",
+        "feature_id": null,
+        "english_summary_words": 34
+      },
+      {
+        "entry_id": "workbook-07-29-policenauts",
+        "feature_id": null,
+        "english_summary_words": 33
+      },
+      {
+        "entry_id": "monster-max-1994",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "dynamite-headdy",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "wild-guns-1994",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "console-gap-the-king-of-fighters-94",
+        "feature_id": null,
+        "english_summary_words": 36
+      }
+    ],
+    "editorial_review": [],
+    "failures": []
+  },
+  "output_sha256": "cf33b21bb60b2b474074a644996c87da46acc26ad797eacb484b603f24323289",
+  "root_review": {
+    "reviewed_at": "2026-10-30T02:30:32.403561+00:00",
+    "scope": "Controllo delle segnalazioni automatiche e confronto mirato con l’INPUT. Nessuna omissione residua nei passaggi riletti: numeri resi in lettere, decadi e punteggi localizzati; le nuove date dei lotti storici sono documentate nelle decisioni.",
+    "changes": []
+  }
+}

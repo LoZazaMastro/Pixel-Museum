@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "locale": "fr",
+  "source_language": "en",
+  "publication_status": "validated",
+  "translation_method": "Complete source-bound translations independently read clause-by-clause, including exact-source reused units; explicit semantic repairs retained.",
+  "independent_review": "content/editorial/early-complete-batch-163-fr-translation-review.json",
+  "entries": [
+    {
+      "entry_id": "steam",
+      "source": {
+        "title": "Steam",
+        "subtitle": "The library becomes a service",
+        "summary": "Valve's platform helped reshape how PC games are distributed, updated and kept together.",
+        "body": [
+          "Steam began in 2003 and developed from a way of delivering updates into a large PC storefront and social platform. A game library increasingly became an account linked to downloads, automatic updates and online features.",
+          "Convenience also changed the responsibilities of preservation. Installers, dependencies and particular versions can matter as much as a boxed disc. A service-based library raises new questions about continuity when software and infrastructure keep changing."
+        ],
+        "story_headings": [
+          "The library becomes an account",
+          "Preserving software that keeps changing"
+        ]
+      },
+      "source_fields_sha256": "49dadf62b1ce1829d057228dbfa7a5c5d636800b74b782deaa93c3c3d7f2b27c",
+      "translation": {
+        "title": "Steam",
+        "subtitle": "La bibliothèque devient un service",
+        "summary": "La plateforme de Valve a contribué à transformer la distribution, la mise à jour et le regroupement des jeux PC.",
+        "body": [
+          "Steam vit le jour en 2003 et passa d’un moyen de distribuer des mises à jour à une vaste boutique de jeux PC et une plateforme sociale. Une bibliothèque de jeux devint de plus en plus un compte lié à des téléchargements, des mises à jour automatiques et des fonctions en ligne.",
+          "La commodité transforma aussi les responsabilités liées à la préservation. Les programmes d’installation, les dépendances et les versions particulières peuvent compter autant qu’un disque dans sa boîte. Une bibliothèque reposant sur un service soulève de nouvelles questions de continuité lorsque les logiciels et les infrastructures ne cessent d’évoluer."
+        ],
+        "story_headings": [
+          "La bibliothèque devient un compte",
+          "Préserver un logiciel qui ne cesse d’évoluer"
+        ]
+      },
+      "translation_sha256": "4a29bc5c97507e85d4c90b8446c12c516b043ff35f9bab92ee1c8515e4723f2a"
+    },
+    {
+      "entry_id": "feature-steam-library-ownership",
+      "source": {
+        "title": "What sits behind a library",
+        "subtitle": "",
+        "summary": "An account changes how a collection works.",
+        "body": [
+          "Valve announced the Steam client's release on 12 September 2003. Twenty years later, its anniversary page arranged the service's history around each year's leading releases, mixing games with illustrations and memories of popular culture. That was one way to make an expanding service understandable: start with the titles people encountered there. Yet a library view tells only part of the story. Behind the remembered games are accounts, software and rules of access. Following those less visible parts shows how a collection can depend on a continuing relationship with a platform.",
+          "The Steam Subscriber Agreement describes access to software as a licence. In the version consulted in 2026, buying content does not transfer ownership of its intellectual property, and an account or subscription cannot simply be transferred except where Valve permits it. The everyday idea of a personal collection therefore sits inside a specific agreement. This distinction helps explain the design of a digital library, without treating today's contract as evidence of every rule in 2003. The relevant questions are which account has access and what that access includes.",
+          "Valve's developer documentation explains another connection between a game and its platform. The Steam DRM wrapper checks ownership and starts Steam before starting the game so that Steamworks features can function. It is a particular integration tool, not evidence that every title uses the same protection. For a developer, launching a game can involve services outside its own executable. For a player, those steps may appear as one ordinary click. The documentation makes that small sequence legible, showing some of the software relationships hidden behind the library's Play button.",
+          "Steam Families, released in 2024, made eligible games accessible across a family group while keeping personal saves and achievements. Multiple copies determined how many people could play the same title together. Developers could also exclude games, and technical requirements could limit sharing. These details show why a shared library is more than a row of borrowed covers. It has to organise separate people, available copies and progress. The result offers a particular kind of household access, shaped by software and participation rules rather than by passing a physical disc between hands."
+        ],
+        "story_headings": [
+          "Remember a service by its games",
+          "A familiar word, a specific licence",
+          "The client becomes part of starting",
+          "Sharing is also a designed system"
+        ]
+      },
+      "source_fields_sha256": "15e465170299d238122d89d41bc3bf0f4ef04abffca452afaa7dcdba7c9020f0",
+      "translation": {
+        "title": "Ce qui se cache derrière une bibliothèque",
+        "subtitle": "",
+        "summary": "Un compte change le fonctionnement d’une collection.",
+        "body": [
+          "Valve annonça la sortie du client Steam le 12 septembre 2003. Vingt ans plus tard, sa page anniversaire organisait l’histoire du service autour des principales sorties de chaque année, mêlant jeux, illustrations et souvenirs de la culture populaire. C’était une manière de rendre compréhensible un service en pleine expansion : partir des titres que les gens y avaient découverts. Pourtant, la vue de la bibliothèque ne raconte qu’une partie de l’histoire. Derrière les jeux dont on se souvient se trouvent des comptes, des logiciels et des règles d’accès. Suivre ces aspects moins visibles montre comment une collection peut dépendre d’une relation continue avec une plateforme.",
+          "L’Accord de souscription Steam décrit l’accès aux logiciels comme une licence. Dans la version consultée en 2026, l’achat de contenus ne transfère pas la propriété intellectuelle correspondante, et un compte ou un abonnement ne peut pas simplement être transféré, sauf si Valve le permet. L’idée courante d’une collection personnelle s’inscrit donc dans un accord précis. Cette distinction aide à expliquer la conception d’une bibliothèque numérique, sans prendre le contrat actuel comme preuve de toutes les règles en vigueur en 2003. Les questions pertinentes sont de savoir quel compte dispose d’un accès et ce que cet accès comprend.",
+          "La documentation de Valve destinée aux développeurs explique un autre lien entre un jeu et sa plateforme. Le wrapper DRM de Steam vérifie la propriété et lance Steam avant de démarrer le jeu afin que les fonctions Steamworks puissent fonctionner. Il s’agit d’un outil d’intégration particulier, et non d’une preuve que tous les titres utilisent la même protection. Pour un développeur, lancer un jeu peut faire intervenir des services extérieurs à son propre exécutable. Pour un joueur, ces étapes peuvent se présenter comme un simple clic ordinaire. La documentation rend cette courte séquence compréhensible et révèle certaines des relations logicielles cachées derrière le bouton Jouer de la bibliothèque.",
+          "Steam Families, lancé en 2024, rendit les jeux admissibles accessibles au sein d’un groupe familial tout en conservant les sauvegardes et les succès personnels. Le nombre d’exemplaires disponibles déterminait combien de personnes pouvaient jouer ensemble au même titre. Les développeurs pouvaient aussi exclure des jeux, et les exigences techniques pouvaient limiter le partage. Ces détails montrent pourquoi une bibliothèque partagée est plus qu’une rangée de jaquettes empruntées. Elle doit organiser des personnes distinctes, des exemplaires disponibles et des progressions. Le résultat offre une forme particulière d’accès au sein du foyer, façonnée par les logiciels et les règles de participation plutôt que par le passage d’un disque physique de main en main."
+        ],
+        "story_headings": [
+          "Se souvenir d’un service à travers ses jeux",
+          "Un mot familier, une licence précise",
+          "Le client intervient dans le démarrage",
+          "Le partage est aussi un système conçu"
+        ]
+      },
+      "translation_sha256": "95a1df2731ef1986f3453c8121f4be0495c391beda4c7658cc0c0fa6802865cb"
+    },
+    {
+      "entry_id": "wikipedia-1127169",
+      "source": {
+        "title": "Puyo Pop Fever",
+        "subtitle": "",
+        "summary": "Puyo Pop Fever is a 2003 puzzle video game developed by Sonic Team and published by Sega.",
+        "body": [
+          "Puyo Pop Fever is a 2003 puzzle video game developed by Sonic Team and published by Sega. It is the fifth main installment in the Puyo Puyo series, and the second Puyo Puyo game to be programmed by Sonic Team after Puyo Pop (which was released just after the series' original developer, Compile, went bankrupt). This was the start of what can be considered a reboot of the Puyo Puyo franchise, with this entry's plot revolving around Professor Accord losing her flying cane.",
+          "Sega, which acquired the series' character rights from Compile in 1998, and eventually the full rights in 2001, published all the Japanese releases of the game, and also published the arcade and GameCube versions internationally. The game was scarcely released internationally, and certain versions were released by other publishers in those areas."
+        ],
+        "story_headings": []
+      },
+      "source_fields_sha256": "69f42650b9f4b5e6c603b997cff198b48b3e41ea359ea65a57bd756192379af4",
+      "translation": {
+        "title": "Puyo Pop Fever",
+        "subtitle": "",
+        "summary": "Puyo Pop Fever est un jeu vidéo de réflexion de 2003 développé par Sonic Team et édité par Sega.",
+        "body": [
+          "Puyo Pop Fever est un jeu vidéo de réflexion de 2003 développé par Sonic Team et édité par Sega. Il s’agit du cinquième volet principal de la série Puyo Puyo et du deuxième jeu Puyo Puyo programmé par Sonic Team après Puyo Pop, sorti juste après la faillite de Compile, le développeur d’origine de la série. Il marqua le début de ce que l’on peut considérer comme un reboot de la franchise Puyo Puyo, l’intrigue de cet épisode tournant autour de la perte de la canne volante de la professeure Accord.",
+          "Sega, qui acquit auprès de Compile les droits sur les personnages de la série en 1998, puis l’ensemble des droits en 2001, édita toutes les versions japonaises du jeu ainsi que les versions arcade et GameCube à l’international. La diffusion internationale du jeu fut limitée et certaines versions furent éditées par d’autres sociétés dans ces territoires."
+        ],
+        "story_headings": []
+      },
+      "translation_sha256": "3741bd6bbeecadfe3bf58b0faddd0044d453b7f47289b6855069965dbc3f305f"
+    },
+    {
+      "entry_id": "wikipedia-875392",
+      "source": {
+        "title": "Project Gotham Racing 2",
+        "subtitle": "",
+        "summary": "Project Gotham Racing 2 is a 2003 arcade-style racing video game developed by Bizarre Creations and published by Microsoft Game Studios.",
+        "body": [
+          "Project Gotham Racing 2 is a 2003 arcade-style racing video game developed by Bizarre Creations and published by Microsoft Game Studios. It was released exclusively for the Xbox in 2003 as the successor to 2001's Project Gotham Racing.",
+          "Development began shortly after the completion of the first game and was first made official in August 2002. Bill Gates himself had emailed suggestions to the developer team of what he wished to see in it. The Kudos system, challenges set, available cars, and the tracks around which players race were expanded greatly from the original. The Kudos system was made to be slightly more forgiving than before and expanded to include new moves like drafting a rival or performing a 360. Alongside the 10 new real-world cities (and the Nürburgring) track, two additional packs were released as DLC.",
+          "Project Gotham Racing 2 was critically acclaimed and is often considered one of the Xbox's greatest exclusive titles. It was followed up by Project Gotham Racing 3 in 2005."
+        ],
+        "story_headings": [
+          "Project Gotham Racing 2",
+          "Making the game",
+          "Project Gotham Racing 2"
+        ]
+      },
+      "source_fields_sha256": "c52d57be6f8139504ea2a80398bb36c5f98e9dc3d0ef6b1835ff64814a856d19",
+      "translation": {
+        "title": "Project Gotham Racing 2",
+        "subtitle": "",
+        "summary": "Project Gotham Racing 2 est un jeu vidéo de course de style arcade de 2003, développé par Bizarre Creations et édité par Microsoft Game Studios.",
+        "body": [
+          "Project Gotham Racing 2 est un jeu vidéo de course de style arcade de 2003, développé par Bizarre Creations et édité par Microsoft Game Studios. Il sortit exclusivement sur Xbox en 2003 pour succéder à Project Gotham Racing, paru en 2001.",
+          "Le développement commença peu après l’achèvement du premier jeu et fut annoncé officiellement pour la première fois en août 2002. Bill Gates lui-même avait envoyé par courriel à l’équipe de développement des suggestions sur ce qu’il souhaitait y voir. Le système Kudos, l’ensemble des défis, les voitures disponibles et les circuits furent considérablement enrichis par rapport au premier jeu. Le système Kudos devint légèrement plus indulgent et prit en compte de nouvelles manœuvres, comme profiter de l’aspiration d’un adversaire ou effectuer un tour à 360 degrés. Outre les tracés dans dix nouvelles villes réelles et sur le Nürburgring, deux packs supplémentaires furent publiés sous forme de DLC.",
+          "Project Gotham Racing 2 fut acclamé par la critique et est souvent considéré comme l’un des meilleurs titres exclusifs de la Xbox. Project Gotham Racing 3 lui succéda en 2005."
+        ],
+        "story_headings": [
+          "Project Gotham Racing 2",
+          "La création du jeu",
+          "Project Gotham Racing 2"
+        ]
+      },
+      "translation_sha256": "14c48af7f85e9594aea3c9e8b001c6ab2e6a83c3b5a9d197fe47984c86cabe4b"
+    }
+  ]
+}

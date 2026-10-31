@@ -1,0 +1,338 @@
+{
+  "schema_version": 1,
+  "locale": "fr",
+  "source_language": "en",
+  "publication_status": "validated",
+  "translation_method": "Complete source-bound translations independently read clause-by-clause, including exact-source reused units; explicit semantic repairs retained.",
+  "independent_review": "content/editorial/early-complete-batch-31-fr-translation-review.json",
+  "entries": [
+    {
+      "entry_id": "dona-bailey",
+      "source": {
+        "title": "Dona Bailey and Centipede",
+        "subtitle": "A new way to move through the arcade",
+        "summary": "Dona Bailey brought programming experience from car electronics to Atari, then helped make a mushroom field feel immediate beneath a player's hand.",
+        "body": [
+          "Dona Bailey was already programming microprocessors when she encountered Space Invaders. Her work at General Motors and the machines in an arcade were different products, but they shared a technical language she knew. In 1980 she moved into Atari's coin-operated games division. The question was no longer how to control a car's electronics; it was how to make a game that people wanted to play.",
+          "Centipede grew from a brief idea in Atari's notebook: a segmented insect descending onto the screen. Bailey worked with Ed Logg to turn that premise into the 1981 game. The centipede threaded through mushrooms, while other creatures disrupted the space around the player. The trackball made movement continuous and physical. A quick sweep of the hand could carry the shooter across the bottom of the screen.",
+          "Bailey wanted the game to look appealing in a dark arcade and its controls to feel approachable. The familiar insects, changing colours and direct movement gave it a character of its own. She has described hoping that everyone would enjoy it, rather than designing it only for a particular gender.",
+          "Her later interviews also describe the isolation of being the only woman software engineer in that division. Centipede's history includes both the pleasure of its control and the conditions under which it was made. Bailey's account restores a person, with specific skills and decisions, to a game that millions encountered without knowing her name."
+        ],
+        "story_headings": [
+          "From microprocessors to Atari",
+          "A field beneath the trackball",
+          "An invitation to more players",
+          "Restoring the programmer to the story"
+        ]
+      },
+      "source_fields_sha256": "7f8389955c27623a5bdf9b05dd1db4e9481a69543f6726c7f7435bdca519a8e6",
+      "translation": {
+        "title": "Dona Bailey et Centipede",
+        "subtitle": "Une nouvelle façon de bouger en salle d'arcade",
+        "summary": "Dona Bailey apporte à Atari son expérience de programmation dans l'électronique automobile, puis contribue à rendre un champ de champignons immédiatement réactif sous la main du joueur.",
+        "body": [
+          "Dona Bailey programme déjà des microprocesseurs lorsqu'elle découvre Space Invaders. Son travail chez General Motors et les machines d'une salle d'arcade sont des produits différents, mais ils partagent un langage technique qu'elle connaît. En 1980, elle rejoint la division des jeux à pièces d'Atari. La question n'est plus de savoir comment piloter l'électronique d'une voiture, mais comment créer un jeu auquel les gens aient envie de jouer.",
+          "Centipede naît d'une brève idée inscrite dans un carnet d'Atari : un insecte segmenté descendant à l'écran. Bailey travaille avec Ed Logg pour transformer cette idée de départ en jeu en 1981. Le mille-pattes se faufile entre les champignons, tandis que d'autres créatures perturbent l'espace autour du joueur. La boule de commande rend le mouvement continu et physique. Un rapide balayage de la main peut déplacer le tireur d'un bout à l'autre du bas de l'écran.",
+          "Bailey souhaite que le jeu soit attrayant dans l'obscurité d'une salle d'arcade et que ses commandes soient faciles à aborder. Les insectes familiers, les couleurs changeantes et le mouvement direct lui donnent une personnalité propre. Elle a expliqué avoir espéré qu'il plaise à tout le monde, plutôt que de le concevoir pour un sexe en particulier.",
+          "Ses entretiens ultérieurs décrivent aussi l'isolement qu'elle ressent en étant la seule ingénieure logiciel de cette division. L'histoire de Centipede comprend à la fois le plaisir de ses commandes et les conditions dans lesquelles il a été créé. Le récit de Bailey redonne une place à une personne, avec ses compétences et ses décisions précises, dans un jeu que des millions de personnes ont découvert sans connaître son nom."
+        ],
+        "story_headings": [
+          "Des microprocesseurs à Atari",
+          "Un champ sous la boule de commande",
+          "Une invitation à davantage de joueurs",
+          "Redonner sa place à la programmeuse dans l'histoire"
+        ]
+      },
+      "translation_sha256": "788f5509b1ffa630136a1c07a92e33fbc3ef85bb2733262dcccad7b92defea89"
+    },
+    {
+      "entry_id": "feature-dona-bailey-arcade",
+      "source": {
+        "title": "Making Centipede ready for people",
+        "subtitle": "",
+        "summary": "Making, testing and teaching an arcade game.",
+        "body": [
+          "A descending insect was only the start of Centipede's development. In her Arcade Attack interview, Dona Bailey describes beginning with an existing hardware board already proved dependable. Graphics, play, scoring and sound arrived in stages. Other work would rarely be visible to a visitor watching a single game: test facilities, an attract sequence, coin handling and support for the cocktail cabinet. These were part of making an arcade product. The program had to behave usefully before someone paid, during a contest and when a technician examined it.",
+          "Bailey's account places a focus group and arcade testing before the production line began shipping machines in May 1981. Those encounters gave the team something different from its own familiarity with the game. She describes wanting an appealing, shimmering display and a trackball people would enjoy using, while resisting the assumption that she designed only for women. The intended invitation was broader. Visual pleasure and accessible movement were choices about how a person might approach the machine, rather than decoration after its rules were finished.",
+          "In her 2007 interview with Leigh Alexander, Bailey explains programming through syntax, structure and rules. She had liked reading and writing before discovering code, and did not describe her interest as a passion for calculation. That account widens the skills visible in the finished game. Assembly language could organise an image and an interaction as well as control machinery. It also qualifies a familiar biography shortcut: recognising a microprocessor did not mean that every question of game development already had an answer she could find in a book.",
+          "By 2007, Bailey was teaching writing and multimedia in Arkansas. She identified the cost of professional software as a barrier to learning and welcomed free tools such as Blender. Her teaching addressed a practical problem she remembered from entering game development: finding a way to learn when information or equipment was difficult to obtain. This is a later chapter, rather than another explanation for Centipede's success. It follows what a programmer did with accumulated experience, making technical practice available to students who had not yet reached an industry's door."
+        ],
+        "story_headings": [
+          "The invisible parts of an arcade game",
+          "Letting unfamiliar players try",
+          "Programming as a language",
+          "Making tools reachable"
+        ]
+      },
+      "source_fields_sha256": "40e18d4f7c101cc7fa450480ea261dd3159d966d086879534522dbc08da1b357",
+      "translation": {
+        "title": "Préparer Centipede pour le public",
+        "subtitle": "",
+        "summary": "Créer, tester et enseigner un jeu d'arcade.",
+        "body": [
+          "Un insecte descendant à l'écran n'est que le début du développement de Centipede. Dans son entretien avec Arcade Attack, Dona Bailey raconte être partie d'une carte matérielle existante dont la fiabilité était déjà éprouvée. Les graphismes, le jeu, le score et le son arrivent par étapes. D'autres travaux restent rarement visibles pour un visiteur qui regarde une seule partie : fonctions de test, séquence de démonstration, gestion des pièces et prise en charge de la borne cocktail. Tout cela participe à la création d'un produit d'arcade. Le programme doit se comporter de façon utile avant que quelqu'un ne paie, pendant une partie et lorsqu'un technicien l'examine.",
+          "Le récit de Bailey situe un groupe de discussion et des essais en salle avant que la chaîne de production ne commence à expédier les machines en mai 1981. Ces rencontres apportent à l'équipe autre chose que sa propre familiarité avec le jeu. Bailey décrit son souhait d'un affichage attrayant et scintillant et d'une boule de commande agréable à utiliser, tout en rejetant l'idée qu'elle conçoit uniquement pour les femmes. L'invitation qu'elle souhaite lancer est plus large. Le plaisir visuel et le mouvement accessible sont des choix concernant la manière dont une personne peut aborder la machine, plutôt que des décorations ajoutées une fois ses règles achevées.",
+          "Dans son entretien de 2007 avec Leigh Alexander, Bailey explique la programmation à travers la syntaxe, la structure et les règles. Elle aimait lire et écrire avant de découvrir le code et ne décrivait pas son intérêt comme une passion pour le calcul. Ce récit élargit les compétences que l'on peut discerner dans le jeu achevé. Le langage assembleur peut organiser une image et une interaction tout autant que commander des machines. Il nuance aussi un raccourci biographique courant : reconnaître un microprocesseur ne signifie pas que toutes les questions du développement de jeux ont déjà une réponse qu'elle peut trouver dans un livre.",
+          "En 2007, Bailey enseigne l'écriture et le multimédia dans l'Arkansas. Elle considère le coût des logiciels professionnels comme un obstacle à l'apprentissage et accueille favorablement des outils gratuits comme Blender. Son enseignement répond à un problème pratique qu'elle se rappelle avoir rencontré à ses débuts dans le développement de jeux : trouver comment apprendre lorsque l'information ou le matériel sont difficiles à obtenir. Il s'agit d'un chapitre ultérieur, et non d'une autre explication du succès de Centipede. Il suit ce qu'une programmeuse fait de l'expérience accumulée en rendant la pratique technique accessible à des étudiants qui n'ont pas encore franchi les portes d'un secteur professionnel."
+        ],
+        "story_headings": [
+          "Les parties invisibles d'un jeu d'arcade",
+          "Faire essayer le jeu à ceux qui ne le connaissent pas",
+          "La programmation comme langage",
+          "Rendre les outils accessibles"
+        ]
+      },
+      "translation_sha256": "f575c4724ba87298eaef9db4c73063088e7f75a14162a6343c2f3bb7fe7ac043"
+    },
+    {
+      "entry_id": "wikipedia-547616",
+      "source": {
+        "title": "Qix",
+        "subtitle": "",
+        "summary": "Qix ( KIKS) is a 1981 puzzle video game developed and published by Taito for arcades.",
+        "body": [
+          "Qix ( KIKS) is a 1981 puzzle video game developed and published by Taito for arcades. Designed by husband and wife team Randy and Sandy Pfeiffer, Qix is one of a handful of games made by Taito's American division (another is Zoo Keeper). At the start of each level, the playing field is a large, empty rectangle, containing the Qix, an abstract stick-like entity that performs graceful but unpredictable motions within the confines of the rectangle. The objective is to draw lines that close off parts of the rectangle to fill in a set amount of the playfield.",
+          "Qix was ported to the contemporary Atari 5200 (1982), Atari 8-bit computers (1983), and Commodore 64 (1983), then was brought to a wide variety of systems in the late 1980s and early 1990s: MS-DOS (1989), Amiga (1989), another version for the C64 (1989), Apple IIGS (1990), Game Boy (1990), Nintendo Entertainment System (1991), and Atari Lynx (1991).",
+          "Multiple home and arcade sequels followed and the concept was widely cloned. In the Gals Panic series from Kaneko, each captured area is not filled with a color, but reveals part of an image of a woman; this itself has been cloned into erotic-oriented games based on the concept of Qix."
+        ],
+        "story_headings": []
+      },
+      "source_fields_sha256": "810ebb852acdedb7da0430ca41f20ea6754e82fcebb2845c644e5b4c16a59bdc",
+      "translation": {
+        "title": "Qix",
+        "subtitle": "",
+        "summary": "Qix (prononcé KIKS) est un jeu vidéo de réflexion développé et édité par Taito en 1981 pour les salles d'arcade.",
+        "body": [
+          "Qix (prononcé KIKS) est un jeu vidéo de réflexion développé et édité par Taito en 1981 pour les salles d'arcade. Conçu par le couple Randy et Sandy Pfeiffer, Qix est l'un des rares jeux réalisés par la division américaine de Taito ; Zoo Keeper en est un autre. Au début de chaque niveau, le terrain de jeu est un grand rectangle vide contenant le Qix, une entité abstraite en forme de bâton qui effectue des mouvements gracieux mais imprévisibles à l'intérieur du rectangle. Le but est de tracer des lignes qui délimitent des parties du rectangle afin de remplir une portion déterminée du terrain de jeu.",
+          "Qix est adapté sur les systèmes de l'époque : Atari 5200 (1982), ordinateurs Atari 8 bits (1983) et Commodore 64 (1983). Il arrive ensuite sur un large éventail de machines à la fin des années 1980 et au début des années 1990 : MS-DOS (1989), Amiga (1989), une autre version pour C64 (1989), Apple IIGS (1990), Game Boy (1990), Nintendo Entertainment System (1991) et Atari Lynx (1991).",
+          "De nombreuses suites sur systèmes domestiques et en arcade suivent, et le concept est largement copié. Dans la série Gals Panic de Kaneko, chaque zone conquise n'est pas remplie d'une couleur, mais révèle une partie de l'image d'une femme ; cette variante est elle-même copiée dans des jeux à caractère érotique fondés sur le concept de Qix."
+        ],
+        "story_headings": []
+      },
+      "translation_sha256": "fb724535b9f752663f5677176e19ee5d3a829e3fb73efa9fb57bc6f638043b25"
+    },
+    {
+      "entry_id": "wikipedia-622127",
+      "source": {
+        "title": "Galaga",
+        "subtitle": "",
+        "summary": "Galaga is a 1981 fixed shooter video game developed and published by Namco for arcades.",
+        "body": [
+          "Galaga is a 1981 fixed shooter video game developed and published by Namco for arcades. It was released by Midway Manufacturing in North America. It is the sequel to 1979's Galaxian, and the second game in the Galaxian series. Controlling a starship, the player is tasked with destroying the Galaga forces in each stage while avoiding enemies and projectiles. \"Boss Galaga\" enemies can capture a player's ship via a tractor beam, which can be rescued by another ship to give the player a \"dual fighter\" with additional firepower.",
+          "Shigeru Yokoyama led development with a small team. Initial planning took about two months to finish. Originally developed for the Namco Galaxian arcade board, it was instead shifted to a new system as suggested by Namco's Research and Development division. Inspiration for the dual fighter mechanic was taken from a film that Yokoyama had seen prior to development, in which a ship was captured using a large circular beam. The project became immensely popular around the company, with Namco's president Masaya Nakamura even taking interest.",
+          "Although early location tests were unsuccessful, Galaga went on to become one of the most successful titles of the golden age of arcade video games, routinely appearing on Japanese and American arcade charts through 1987. It was acclaimed by critics for its engaging gameplay and for its improvements made over its predecessor, and is widely regarded as one of the greatest video games of all time. Several home ports were released for a multitude of platforms, including the MSX, Atari 7800, and NES, alongside releases on digital distribution platforms such as Xbox Live Arcade and appearances in many Namco compilations. It was followed by Gaplus in 1984."
+        ],
+        "story_headings": [
+          "A captured ship becomes a dual fighter",
+          "Yokoyama's team changes arcade hardware",
+          "From poor location tests to a lasting arcade hit"
+        ]
+      },
+      "source_fields_sha256": "9e853160ca424877ab6b90a5444fdfaaaec61e06c46fa03389eaabf810dad5d1",
+      "translation": {
+        "title": "Galaga",
+        "subtitle": "",
+        "summary": "Galaga est un jeu vidéo de tir à écran fixe développé et édité par Namco en 1981 pour les salles d'arcade.",
+        "body": [
+          "Galaga est un jeu vidéo de tir à écran fixe développé et édité par Namco en 1981 pour les salles d'arcade. Il est distribué par Midway Manufacturing en Amérique du Nord. C'est la suite de Galaxian, sorti en 1979, et le deuxième jeu de la série Galaxian. Aux commandes d'un vaisseau spatial, le joueur doit détruire les forces Galaga à chaque niveau tout en évitant les ennemis et les projectiles. Les ennemis « Boss Galaga » peuvent capturer son vaisseau à l'aide d'un rayon tracteur. Un autre vaisseau peut le secourir et donner au joueur un « chasseur double » doté d'une puissance de feu accrue.",
+          "Shigeru Yokoyama dirige le développement avec une petite équipe. La planification initiale prend environ deux mois. D'abord développé pour la carte d'arcade Namco Galaxian, le jeu passe finalement sur un nouveau système à la suggestion de la division Recherche et développement de Namco. La mécanique du chasseur double s'inspire d'un film que Yokoyama a vu avant le développement, dans lequel un vaisseau est capturé à l'aide d'un grand rayon circulaire. Le projet devient immensément populaire au sein de l'entreprise et suscite même l'intérêt du président de Namco, Masaya Nakamura.",
+          "Malgré l'échec des premiers essais en salle, Galaga devient l'un des titres les plus populaires de l'âge d'or des jeux vidéo d'arcade, figurant régulièrement dans les classements des salles japonaises et américaines jusqu'en 1987. La critique salue son jeu captivant et les améliorations apportées par rapport à son prédécesseur. Il est largement considéré comme l'un des meilleurs jeux vidéo de tous les temps. De nombreuses adaptations domestiques sortent sur une multitude de plateformes, dont le MSX, l'Atari 7800 et la NES, auxquelles s'ajoutent des sorties sur des plateformes de distribution numérique comme Xbox Live Arcade et des apparitions dans de nombreuses compilations Namco. Gaplus lui succède en 1984."
+        ],
+        "story_headings": [
+          "Un vaisseau capturé devient un chasseur double",
+          "L'équipe de Yokoyama change de matériel d'arcade",
+          "Des essais décevants à un succès durable en arcade"
+        ]
+      },
+      "translation_sha256": "1ec42ac308b20ce38c52636a621ad1db5dbc612ead46df19ceafec904fb0a4b4"
+    },
+    {
+      "entry_id": "wikipedia-305180",
+      "source": {
+        "title": "Centipede",
+        "subtitle": "",
+        "summary": "Centipede is a 1981 fixed shooter video game developed and published by Atari, Inc. for arcades.",
+        "body": [
+          "Centipede is a 1981 fixed shooter video game developed and published by Atari, Inc. for arcades. Designed by Dona Bailey and Ed Logg, it was one of the most commercially successful games from the golden age of arcade video games, and one of the first widely played by women and girls. The primary objective is to shoot all the segments of a centipede that winds down the playing field.",
+          "Centipede was ported to Atari's own 2600, 5200, 7800, and 8-bit computers. Under the Atarisoft label, the game was sold for the Apple II, Commodore 64, ColecoVision, VIC-20, IBM PC (as a self-booting disk), Intellivision, and TI-99/4A. Superior Software published the port for the BBC Micro. Versions for the Game Boy and Game Boy Color were also produced, as well as a version for the short-lived Game.com. Other developers released more than 25 Centipede clones for home computers. It was followed by the arcade sequel Millipede in 1982. In 1998, a 3D remake for Windows, Mac, PlayStation, and Dreamcast was published by Hasbro Interactive."
+        ],
+        "story_headings": []
+      },
+      "source_fields_sha256": "de4afdea335b84feabda0615e5db1e0674750ae165ea2e98f931f79c4f29bfe3",
+      "translation": {
+        "title": "Centipede",
+        "subtitle": "",
+        "summary": "Centipede est un jeu vidéo de tir à écran fixe de 1981, développé et publié par Atari, Inc. pour les salles d'arcade.",
+        "body": [
+          "Centipede est un jeu vidéo de tir à écran fixe de 1981, développé et publié par Atari, Inc. pour les salles d'arcade. Conçu par Dona Bailey et Ed Logg, il fut l'un des plus grands succès commerciaux de l'âge d'or de l'arcade et l'un des premiers jeux largement pratiqués par les femmes et les filles. L'objectif principal est de tirer sur tous les segments d'un centipède qui descend en serpentant sur le terrain.",
+          "Centipede fut porté sur Atari 2600, 5200, 7800 et ordinateurs Atari 8 bits. Sous le label Atarisoft, il fut vendu sur Apple II, Commodore 64, ColecoVision, VIC-20, IBM PC, sur disque à démarrage autonome, Intellivision et TI-99/4A. Superior Software publia le portage BBC Micro. Des versions Game Boy et Game Boy Color furent aussi produites, ainsi qu'une version pour l'éphémère Game.com. D'autres développeurs publièrent plus de vingt-cinq clones sur ordinateurs domestiques. Le jeu fut suivi de la suite d'arcade Millipede en 1982. En 1998, Hasbro Interactive publia un remake 3D sur Windows, Mac, PlayStation et Dreamcast."
+        ],
+        "story_headings": []
+      },
+      "translation_sha256": "7d61e4ffb72d051def9447d92e8a975df75633a900e0dcff0d8c6f6b1d89a6d6"
+    },
+    {
+      "entry_id": "wikipedia-737579",
+      "source": {
+        "title": "Warlords",
+        "subtitle": "",
+        "summary": "Warlords is a 1981 action video game developed and published by Atari, Inc. for arcades; in Japan, it was distributed by Sega.",
+        "body": [
+          "Warlords is a 1981 action video game developed and published by Atari, Inc. for arcades; in Japan, it was distributed by Sega. The gameplay resembles a combination of Atari's earlier games Quadrapong (1974) and Breakout (1976), and has the player (or up to four players) attempt to destroy other castles in different corners of the screen by deflecting one or more fireballs with a shield. As with Pong and Breakout, players use paddle controllers to manipulate their shield.",
+          "Unlike most Atari arcade games of the time, Warlords began development as an Atari 2600 game that was later converted to an arcade game; the 2600 version was released shortly after the arcade version. The arcade version of Warlords came in both a two-player upright version and a four-player cocktail version. The game was considered a success, although a redesign for a smaller cabinet was necessary, as the large cabinet made it impossible to produce in large quantities and difficult to install."
+        ],
+        "story_headings": []
+      },
+      "source_fields_sha256": "1cb9e64c18a6853d386f8d9e2f7258d26c01370cf77a31e1541b65f5cae99f31",
+      "translation": {
+        "title": "Warlords",
+        "subtitle": "",
+        "summary": "Warlords est un jeu vidéo d'action de 1981, développé et publié par Atari, Inc. pour les salles d'arcade ; Sega le distribua au Japon.",
+        "body": [
+          "Warlords est un jeu vidéo d'action de 1981, développé et publié par Atari, Inc. pour les salles d'arcade ; Sega le distribua au Japon. Son fonctionnement ressemble à une combinaison des précédents jeux Atari Quadrapong de 1974 et Breakout de 1976. Le joueur, ou jusqu'à quatre joueurs, tente de détruire les châteaux des autres coins de l'écran en déviant une ou plusieurs boules de feu avec un bouclier. Comme dans Pong et Breakout, des manettes à molette de type paddle servent à déplacer le bouclier.",
+          "Contrairement à la plupart des jeux d'arcade Atari de l'époque, Warlords commença comme jeu Atari 2600 avant d'être converti en arcade ; la version 2600 parut peu après celle d'arcade. Cette dernière existait en borne verticale à deux joueurs et en borne-table à quatre joueurs. Le jeu fut considéré comme un succès, mais dut être remanié pour une borne plus petite : le grand modèle rendait impossible une production en quantité et compliquait l'installation."
+        ],
+        "story_headings": []
+      },
+      "translation_sha256": "0bc37e88084cbd5f416eaa100233450c9a2392620b145284b4c6abfa85579482"
+    },
+    {
+      "entry_id": "wikipedia-512076",
+      "source": {
+        "title": "Defender",
+        "subtitle": "",
+        "summary": "Defender is a horizontally scrolling shooter video game developed and published by Williams Electronics for arcades in 1981.",
+        "body": [
+          "Defender is a horizontally scrolling shooter video game developed and published by Williams Electronics for arcades in 1981. Set on a mountainous planet, the player pilots a space ship to defeat waves invading aliens that vary in appearance and behavior. While attacking enemies, the player must protect and rescue astronauts on the surface from aliens.",
+          "A pinball developer at the time, Williams aimed to expand into video games and selected Eugene Jarvis to lead development. The development team initially focused on designing the game's arcade hardware, aiming to portray Williams as a technologically advanced developer. When creating early prototypes, Jarvis drew inspiration from Space Invaders and Asteroids. He progressively added offensive and defensive action to the game design, which culminated in gameplay that was more complex and challenging than contemporary video games.",
+          "Defender debuted at trade shows in late 1980 before releasing to arcades in March 1981. Williams licensed it to local video game companies in Japan and the United Kingdom when exporting overseas, eventually selling 70,000 units worldwide. The company registered copyrights and trademarks related to Defender, which it used to litigate companies that produced unauthorized clones and copies. Ports were developed for contemporary game systems by either Atari, Inc. or its software label for non-Atari platforms, Atarisoft. Midway Games handled many of the later ports and re-releases. Defender was followed by sequels and remade in different formats.",
+          "The game was commercially successful, becoming one of the highest-grossing arcade games. It quickly increased Williams net income and eventually earned the company US$1 billion. Defender's challenging gameplay and complex control scheme were frequently discussed in contemporary commentary. The ports met with varying degrees of mixed reception. The 1982 Atari 2600 version was one of the best-selling games for the system, selling over 3 million cartridges. Retrospective reviews frequently rank Defender among the top video games, citing its innovative and challenging gameplay. It is often listed as one of Jarvis's best contributions and cited as the inspiration for other games as well as several songs."
+        ],
+        "story_headings": []
+      },
+      "source_fields_sha256": "d840ed3c49e5645fdda252fccad38703bf1ebb17e4d6d851f7b3d8d0b15dbed7",
+      "translation": {
+        "title": "Defender",
+        "subtitle": "",
+        "summary": "Defender est un jeu de tir à défilement horizontal, développé et publié par Williams Electronics pour les salles d'arcade en 1981.",
+        "body": [
+          "Defender est un jeu de tir à défilement horizontal, développé et publié par Williams Electronics pour les salles d'arcade en 1981. Sur une planète montagneuse, le joueur pilote un vaisseau contre des vagues d'extraterrestres envahisseurs d'apparence et de comportement variés. Tout en attaquant les ennemis, il doit protéger les astronautes présents à la surface et les sauver des extraterrestres.",
+          "Williams, alors fabricant de flippers, souhaitait se diversifier dans les jeux vidéo et choisit Eugene Jarvis pour diriger le développement. L'équipe se concentra d'abord sur le matériel d'arcade afin de présenter Williams comme un développeur à la pointe de la technologie. Pour ses premiers prototypes, Jarvis s'inspira de Space Invaders et d'Asteroids. Il ajouta progressivement des actions offensives et défensives jusqu'à obtenir un gameplay plus complexe et difficile que celui des jeux vidéo contemporains.",
+          "Defender fut présenté dans des salons professionnels fin 1980 avant sa sortie en arcade en mars 1981. Pour l'exporter, Williams accorda des licences à des entreprises locales de jeux vidéo au Japon et au Royaume-Uni, vendant finalement soixante-dix mille exemplaires dans le monde. L'entreprise enregistra des droits d'auteur et des marques liés à Defender, qu'elle utilisa pour poursuivre les sociétés produisant des clones et copies non autorisés. Atari, Inc. ou son label Atarisoft destiné aux plateformes non Atari développèrent les portages pour les systèmes de l'époque. Midway Games réalisa de nombreux portages et rééditions ultérieurs. Defender eut des suites et fut recréé sous différentes formes.",
+          "Le jeu connut un succès commercial et devint l'un des jeux d'arcade générant le plus de recettes. Il augmenta rapidement le bénéfice net de Williams et finit par lui rapporter un milliard de dollars américains. Son gameplay exigeant et ses commandes complexes revenaient souvent dans les commentaires de l'époque. Les portages reçurent des avis partagés à des degrés divers. La version Atari 2600 de 1982 fut l'un des jeux les plus vendus du système, avec plus de trois millions de cartouches. Les critiques rétrospectives placent souvent Defender parmi les meilleurs jeux vidéo pour son gameplay novateur et exigeant. Il est fréquemment cité parmi les meilleures contributions de Jarvis et comme source d'inspiration pour d'autres jeux et plusieurs chansons."
+        ],
+        "story_headings": []
+      },
+      "translation_sha256": "f6f1c49c2e38656bd2231b344a2feebeefcccfbecb1ea2a8bf0ce1f7f6eae9e2"
+    },
+    {
+      "entry_id": "workbook-07-09-donkey-kong",
+      "source": {
+        "title": "Donkey Kong",
+        "subtitle": "Donkey Kong Turns a Jump into a Grammar for Video Games",
+        "summary": "On July 9, 1981 Nintendo began the limited Japanese arcade release of Donkey Kong.",
+        "body": [
+          "On July 9, 1981 Nintendo began the limited Japanese arcade release of Donkey Kong. Shigeru Miyamoto built four screens in which a simple story, rescuing Lady from the gorilla, is told through ramps, barrels, elevators and jumps. Jumpman, the future Mario, is born here, bringing a new emphasis on character to the action game. Donkey Kong matters not only because it creates two icons: it shows how animation, readable goals and changing environments can turn an arcade challenge into a small interactive story.",
+          "The circuit board of Radar Scope was restructured for Donkey Kong. The Radar Scope hardware, originally inspired by the Namco Galaxian hardware, was designed for a large number of enemies moving around at high speeds, which Donkey Kong does not require, so the development team removed unnecessary functions and reduced the scale of the circuit board. The gameplay and graphics were reworked for updated ROM chips; the existing CPU, sound hardware, and monitor were left intact. The character set, scoreboard, upper HUD display, and font are almost identical to Radar Scope, with palette differences. The Donkey Kong hardware has the memory capacity for displaying 128 foreground sprites at 16x16 pixels each and 256 background tiles at 8x8 pixels each. Mario and all moving objects use single sprites, the taller Pauline uses two sprites, and the larger Donkey Kong uses six sprites.",
+          "Each of the four single-screen stages represents 25 meters of the structure Donkey Kong has climbed: 25, 50, 75, and 100 meters. Stage one involves Mario scaling a construction site made of crooked girders and ladders while jumping over or hammering barrels and oil drums tossed by Donkey Kong. Stage two involves climbing a five-story structure of conveyor belts, each of which transport cement pans. The third stage involves the player riding elevators while avoiding bouncing springs. The final stage requires Mario to remove eight rivets from the platforms supporting Donkey Kong; this causes Donkey Kong to fall and the hero to be reunited with Pauline. These four stages combine to form one level.",
+          "The game uses graphics and animation for characterization. Donkey Kong smirks upon Mario's demise. Pauline has a pink dress and long hair, and a speech balloon crying \"HELP!\". Mario, depicted in red overalls and a red cap, is an everyman character, a type common in Japan. Graphical limitations and the low pixel resolution of the small sprites prompted his design. A mustache implies a mouth, a cap obviates the animation of hair, and colored overalls distinguish his arm movements. The artwork of the cabinets and promotional materials make these cartoon-like character designs even more explicit. Pauline, for example, is disheveled like King Kong's Fay Wray in a torn dress and stiletto heels."
+        ],
+        "story_headings": [
+          "Donkey Kong Turns a Jump into a Grammar for Video Games",
+          "Turning Radar Scope hardware into Donkey Kong",
+          "Four screens, from rolling barrels to the final rivets",
+          "Characters made legible through animation and a few pixels"
+        ]
+      },
+      "source_fields_sha256": "d8a3e45445ccbc147dce4c34c38f6f7297d01328689a3475fe1e9e271eb866fb",
+      "translation": {
+        "title": "Donkey Kong",
+        "subtitle": "Donkey Kong fait du saut une grammaire du jeu vidéo",
+        "summary": "Le 9 juillet 1981, Nintendo lança la diffusion limitée de Donkey Kong dans les salles d'arcade japonaises.",
+        "body": [
+          "Le 9 juillet 1981, Nintendo lança la diffusion limitée de Donkey Kong dans les salles d'arcade japonaises. Shigeru Miyamoto conçut quatre écrans où une histoire simple, sauver Lady du gorille, se raconte au moyen de rampes, de tonneaux, d'ascenseurs et de sauts. Jumpman, le futur Mario, naît ici et donne une nouvelle importance au personnage dans le jeu d'action. Donkey Kong compte non seulement parce qu'il crée deux icônes : il montre comment l'animation, des objectifs lisibles et des environnements changeants peuvent transformer un défi d'arcade en petit récit interactif.",
+          "La carte électronique de Radar Scope fut remaniée pour Donkey Kong. Le matériel de Radar Scope, initialement inspiré de celui du Galaxian de Namco, était conçu pour de nombreux ennemis se déplaçant à grande vitesse, ce dont Donkey Kong n'avait pas besoin. L'équipe supprima donc les fonctions inutiles et réduisit la taille de la carte. Le gameplay et les graphismes furent retravaillés pour des puces ROM actualisées ; le processeur, le matériel sonore et le moniteur existants restèrent intacts. Le jeu de caractères, le tableau des scores, l'affichage supérieur de l'interface et la police sont presque identiques à ceux de Radar Scope, avec des différences de palette. Le matériel de Donkey Kong possède assez de mémoire pour afficher 128 sprites de premier plan de 16×16 pixels chacun et 256 tuiles d'arrière-plan de 8×8 pixels chacune. Mario et tous les objets mobiles utilisent un seul sprite chacun, Pauline, plus grande, en utilise deux et Donkey Kong, plus imposant, six.",
+          "Chacune des quatre phases sur un seul écran représente 25 mètres de la structure escaladée par Donkey Kong : 25, 50, 75 et 100 mètres. Dans la première, Mario gravit un chantier fait de poutres inclinées et d'échelles en sautant par-dessus les tonneaux et les fûts d'huile lancés par Donkey Kong, ou en les frappant au marteau. Dans la deuxième, il monte une structure de cinq étages dont les tapis roulants transportent chacun des bacs de ciment. La troisième impose d'emprunter des ascenseurs tout en évitant des ressorts rebondissants. Dans la dernière, Mario doit enlever huit rivets des plateformes qui soutiennent Donkey Kong : le gorille tombe et le héros retrouve Pauline. Ces quatre phases forment un niveau.",
+          "Le jeu utilise les graphismes et l'animation pour caractériser ses personnages. Donkey Kong ricane lorsque Mario meurt. Pauline porte une robe rose, a les cheveux longs et une bulle qui crie « HELP! ». Mario, représenté avec une salopette et une casquette rouges, est un homme ordinaire, un type de personnage courant au Japon. Les contraintes graphiques et la faible résolution des petits sprites ont guidé son apparence. Une moustache suggère une bouche, une casquette évite d'animer les cheveux et la salopette colorée permet de distinguer les mouvements des bras. Les illustrations des bornes et des supports promotionnels rendent encore plus explicite cette allure de dessin animé. Pauline, par exemple, est débraillée comme Fay Wray dans King Kong, avec une robe déchirée et des talons aiguilles."
+        ],
+        "story_headings": [
+          "Donkey Kong fait du saut une grammaire du jeu vidéo",
+          "Transformer le matériel de Radar Scope en Donkey Kong",
+          "Quatre écrans, des tonneaux roulants aux derniers rivets",
+          "Des personnages lisibles grâce à l'animation et à quelques pixels"
+        ]
+      },
+      "translation_sha256": "76e75d5f880086efcfeaa157afd6e781399cdfafa2f32809b9e45c4057c1e657"
+    },
+    {
+      "entry_id": "daily-02-02",
+      "source": {
+        "title": "Frogger",
+        "subtitle": "The River That Teaches You to Read Movement",
+        "summary": "On February 2, World Wetlands Day recalls the convention adopted at Ramsar in 1971.",
+        "body": [
+          "Frogger is a 1981 action video game developed by Konami and published by Sega for arcades. It was released in North America by Sega/Gremlin. The object of the game is to direct five frogs to their homes by dodging traffic on a busy road, then crossing a river by jumping on floating logs, turtles, and alligators.",
+          "Frogger divides each crossing into two halves that can be read at a glance. First comes the road, where vehicles moving across horizontal lanes must be avoided; then comes the river, where the rule reverses. Touching the water costs a life, so moving objects become support: logs and turtles carry the frog while alligators and snakes turn some routes into threats. The official Arcade Archives description preserves exactly this structure of risk. The river does not imitate a real ecosystem, but it creates a change of grammar without changing the screen. After learning to avoid moving objects, the player must learn to stand on them. The aquatic environment exists because it forces a reinterpretation of the same basic idea of movement.",
+          "The frog does not slide freely. It advances in discrete hops across a grid while cars, logs and animals continue moving sideways. A correct decision therefore depends not only on where an object is, but on where it will be when the hop ends. The timer prevents players from waiting indefinitely for a perfect pattern and turns observation into rhythm. With very few elements, Frogger asks players to read relative speeds, empty spaces and opposing directions. Difficulty grows by increasing density and variation rather than introducing a new vocabulary at every stage. It is spatial prediction compressed into seconds. The river in the second half makes this logic even clearer because the safe point keeps moving after the frog has landed on it.",
+          "Frogger begins in 1981 with Konami and reaches Western arcades through Sega and Gremlin. Its premise quickly enters popular memory because it can be explained in one sentence and recognized in seconds, yet it is not exhausted by simplicity. Progression demands precision, memory of traffic flows and risk control, qualities that have sustained ports, sequels and references for decades. The Strong named it among the 2026 World Video Game Hall of Fame finalists and emphasized its broad appeal. Linking it to World Wetlands Day does not mean assigning the game an ecological message it never had. It means noticing how a river reduced to a few rows of pixels can become one of the most recognizable environmental rules in arcade history."
+        ],
+        "story_headings": [
+          "Crossing the road and river",
+          "Water Is a Rule, Not a Background",
+          "Every Hop Is a Prediction",
+          "A Simple Frog Crosses Four Decades"
+        ]
+      },
+      "source_fields_sha256": "080044c70a46e069a461dc3cf219c18a3e57048e2bc11a48880a45f020edffa9",
+      "translation": {
+        "title": "Frogger",
+        "subtitle": "La rivière qui apprend à lire le mouvement",
+        "summary": "Le 2 février, la Journée mondiale des zones humides rappelle la convention adoptée à Ramsar en 1971.",
+        "body": [
+          "Frogger est un jeu vidéo d'action de 1981 développé par Konami et publié par Sega pour les salles d'arcade. En Amérique du Nord, il fut distribué par Sega/Gremlin. Le but est de conduire cinq grenouilles chez elles en évitant la circulation d'une route très fréquentée, puis en traversant une rivière en sautant sur des troncs flottants, des tortues et des alligators.",
+          "Frogger divise chaque traversée en deux moitiés lisibles d'un coup d'œil. D'abord vient la route, où il faut éviter les véhicules qui circulent sur des voies horizontales ; puis la rivière, où la règle s'inverse. Toucher l'eau coûte une vie : les objets mobiles deviennent donc des appuis. Troncs et tortues portent la grenouille, tandis qu'alligators et serpents rendent certains itinéraires dangereux. La description officielle d'Arcade Archives conserve précisément cette structure du risque. La rivière n'imite pas un écosystème réel, mais change la grammaire du jeu sans changer d'écran. Après avoir appris à éviter les objets mobiles, le joueur doit apprendre à s'y tenir. Le milieu aquatique existe parce qu'il impose de réinterpréter la même idée fondamentale du mouvement.",
+          "La grenouille ne glisse pas librement. Elle progresse par bonds distincts sur une grille, tandis que voitures, troncs et animaux continuent de se déplacer latéralement. Une bonne décision dépend donc non seulement de l'emplacement d'un objet, mais aussi de l'endroit où il sera à la fin du saut. Le compte à rebours empêche d'attendre indéfiniment une configuration parfaite et transforme l'observation en rythme. Avec très peu d'éléments, Frogger demande de lire les vitesses relatives, les espaces libres et les directions opposées. La difficulté augmente par la densité et la variation plutôt qu'en introduisant un nouveau vocabulaire à chaque phase. C'est une anticipation spatiale condensée en quelques secondes. La rivière de la seconde moitié rend cette logique encore plus nette, car le point sûr continue de bouger après que la grenouille s'y est posée.",
+          "Frogger naît en 1981 chez Konami et rejoint les salles d'arcade occidentales par l'intermédiaire de Sega et Gremlin. Son principe entre rapidement dans la mémoire populaire parce qu'il s'explique en une phrase et se reconnaît en quelques secondes, sans pour autant se réduire à sa simplicité. Progresser demande de la précision, une mémoire des flux de circulation et une maîtrise du risque, des qualités qui ont nourri adaptations, suites et références pendant des décennies. The Strong l'a retenu parmi les finalistes de 2026 du World Video Game Hall of Fame, en soulignant son attrait pour un large public. Le relier à la Journée mondiale des zones humides ne signifie pas lui attribuer un message écologique qu'il n'a jamais eu. C'est remarquer comment une rivière réduite à quelques rangées de pixels peut devenir l'une des règles liées à l'environnement les plus reconnaissables de l'histoire de l'arcade."
+        ],
+        "story_headings": [
+          "Traverser la route et la rivière",
+          "L'eau est une règle, pas un décor",
+          "Chaque saut est une anticipation",
+          "Une simple grenouille traverse quatre décennies"
+        ]
+      },
+      "translation_sha256": "ec3822a5874a4b3094b80cad34fdeb12915ae5c63d19431a61cbfac2991d4d29"
+    },
+    {
+      "entry_id": "wikipedia-1405692",
+      "source": {
+        "title": "Bosconian",
+        "subtitle": "",
+        "summary": "Bosconian is a 1981 multidirectional shooter video game developed and published by Namco for arcades.",
+        "body": [
+          "Bosconian is a 1981 multidirectional shooter video game developed and published by Namco for arcades. It was released by Midway Manufacturing in North America. The goal is to earn as many points as possible by destroying enemy missiles and bases using a ship which shoots simultaneously both the front and back.",
+          "Bosconian was commercially successful in Japan and received positive critical reception, but did not achieve the global commercial success of other shoot 'em ups from the golden age of arcade video games. It was ported to home computers as Bosconian '87 (1987) and spawned two sequels: Blast Off (1989) and Final Blaster (1990). Since its release, Bosconian has been regarded by critics as influential in the shoot 'em up genre."
+        ],
+        "story_headings": [
+          "Shooting in both directions",
+          "An influential arcade shooter"
+        ]
+      },
+      "source_fields_sha256": "2809dfcf1ad0a4788e77de8b4b8347bb5069a74384ef6831c704f475668e9b4c",
+      "translation": {
+        "title": "Bosconian",
+        "subtitle": "",
+        "summary": "Bosconian est un jeu vidéo de tir multidirectionnel de 1981, développé et publié par Namco pour les salles d'arcade.",
+        "body": [
+          "Bosconian est un jeu vidéo de tir multidirectionnel de 1981, développé et publié par Namco pour les salles d'arcade. Il fut publié par Midway Manufacturing en Amérique du Nord. Le but est de marquer autant de points que possible en détruisant les missiles et les bases ennemis avec un vaisseau qui tire simultanément vers l'avant et vers l'arrière.",
+          "Bosconian connut un succès commercial au Japon et reçut un accueil critique favorable, sans atteindre le succès commercial mondial d'autres jeux de tir de l'âge d'or du jeu vidéo d'arcade. Il fut adapté sur ordinateurs domestiques sous le titre Bosconian '87 en 1987 et donna naissance à deux suites : Blast Off en 1989 et Final Blaster en 1990. Depuis sa sortie, les critiques le considèrent comme un jeu influent dans le genre du shoot 'em up."
+        ],
+        "story_headings": [
+          "Tirer dans les deux directions",
+          "Un jeu de tir d'arcade influent"
+        ]
+      },
+      "translation_sha256": "31b56800e5de2b0f6610ee1e7a303a2c1a65b20ab94b9e52ec884f0a3dde407d"
+    }
+  ]
+}

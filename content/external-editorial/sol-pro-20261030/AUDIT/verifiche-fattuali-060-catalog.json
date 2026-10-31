@@ -1,0 +1,638 @@
+{
+  "batch_id": "060-catalog",
+  "status": "completed",
+  "sources": [
+    {
+      "source_id": "soul-namco-dates",
+      "url": "https://www.bandainamcoent.co.jp/corporate/press/namco/51/51-046refer.pdf",
+      "title": "Namco — elenco delle uscite della serie Soul",
+      "publisher": "Namco",
+      "accessed_at": "2026-10-30",
+      "scope": "Tabella ufficiale: Soul Edge arcade 20 febbraio 1996, PlayStation 20 dicembre 1996.",
+      "limitation": "Riscontro testuale indicizzato raccolto dal coordinatore; riapertura dal worker bloccata 403. Nessuna dichiarazione di visione della scansione."
+    },
+    {
+      "source_id": "soul-namco-2002",
+      "url": "https://www.bandainamcoent.co.jp/corporate/press/namco/48/48-011.pdf",
+      "title": "Comunicato Namco n.48-011, 25 giugno 2002",
+      "publisher": "Namco",
+      "accessed_at": "2026-10-30",
+      "scope": "Il riepilogo generico parla di arcade 1995 e PlayStation 1996.",
+      "limitation": "Passaggio letto nell’indicizzazione; conflitto conservato nell’audit, risolto operativamente privilegiando la successiva tabella con le singole release esatte. Non dichiarata unanimità delle fonti ufficiali."
+    },
+    {
+      "source_id": "jamma-calendar",
+      "url": "https://onitama.tv/gamemachine/pdf/19950501p.pdf",
+      "title": "Game Machine, 1 maggio 1995 — calendario delle fiere",
+      "publisher": "Amusement Press / archivio Game Machine",
+      "accessed_at": "2026-10-30",
+      "scope": "Calendario contemporaneo: JAMMA a Chiba dal 13 al 15 settembre 1995.",
+      "limitation": "Riscontro del coordinatore nel testo indicizzato; il PDF intero supera il limite di apertura dello strumento. Non dichiarata visione delle pagine."
+    },
+    {
+      "source_id": "maximum-report",
+      "url": "https://www.outofprintarchive.com/catalogue/maximum/Maximum002.html",
+      "title": "Maximum n.2, novembre 1995 — contenuti e resoconto JAMMA",
+      "publisher": "Maximum / Out-of-Print Archive",
+      "accessed_at": "2026-10-30",
+      "scope": "Novembre è il mese di copertina del numero che riporta il resoconto della fiera, non quello in cui si svolse JAMMA.",
+      "limitation": "Catalogazione del fascicolo, non visione dichiarata di tutte le scansioni."
+    },
+    {
+      "source_id": "soul-radio",
+      "url": "https://www.bandainamcoent.co.jp/cs/list/souledge/souledgecm.html",
+      "title": "Soul Edge — testi degli spot radiofonici",
+      "publisher": "Namco / Bandai Namco",
+      "accessed_at": "2026-10-30",
+      "scope": "Spot originale prima dell’uscita indica 20 dicembre per PlayStation; la variante successiva dice disponibile.",
+      "limitation": "Testo dello spot letto nell’indicizzazione; non ascoltato il file audio. Anno riscontrato nella tabella Namco."
+    },
+    {
+      "source_id": "pokemon-jp",
+      "url": "https://www.pokemon.co.jp/game/other/gb-rg/",
+      "title": "Pokémon Red and Green — scheda originale",
+      "publisher": "The Pokémon Company",
+      "accessed_at": "2026-10-30",
+      "scope": "Conferma 27 febbraio 1996 in Giappone, 150 specie ordinariamente raccolte e differenze fra le versioni.",
+      "limitation": "Pagina ufficiale letta; distinta dalle date internazionali di Red e Blue."
+    },
+    {
+      "source_id": "pokemon-mew",
+      "url": "https://www.nintendo.com/en-gb/Iwata-Asks/Iwata-Asks-Pokemon-HeartGold-Version-SoulSilver-Version/Iwata-Asks-Pokemon-HeartGold-Version-SoulSilver-Version/1-Just-Making-The-Last-Train/1-Just-Making-The-Last-Train-225842.html",
+      "title": "Iwata Asks — Just Making The Last Train",
+      "publisher": "Nintendo; Satoru Iwata, Tsunekazu Ishihara, Shigeki Morimoto",
+      "accessed_at": "2026-10-30",
+      "scope": "Testimonianza diretta: Mew non compariva nel gioco ordinario e fu offerto tramite iniziative speciali.",
+      "limitation": "Usata per distinguere Mew dalla collezione normale; nessuna istruzione su bug né nuovi aneddoti aggiunti."
+    },
+    {
+      "source_id": "pokemon-firered2026",
+      "url": "https://www.pokemon.com/us/news/play-the-pokemon-firered-version-and-pokemon-leafgreen-version-games-on-nintendo-switch-systems",
+      "title": "Play Pokémon FireRed and LeafGreen on Nintendo Switch Systems",
+      "publisher": "The Pokémon Company, 27 febbraio 2026",
+      "accessed_at": "2026-10-30",
+      "scope": "Disponibilità effettiva delle riedizioni Switch dei giochi GBA 2004; si tratta del ritorno di quelle versioni.",
+      "limitation": "Testo completo letto nell’indicizzazione; apertura diretta restituisce solo un iframe. Non descritto come annuncio futuro o nuovo remake per Switch."
+    },
+    {
+      "source_id": "pokemon-switch-press",
+      "url": "https://press.pokemon.com/en/Pokemon-FireRed-Version-and-Pokemon-LeafGreen-Version",
+      "title": "FireRed / LeafGreen — product information",
+      "publisher": "The Pokémon Company official press site",
+      "accessed_at": "2026-10-30",
+      "scope": "Scheda ufficiale: Nintendo Switch, release 27 febbraio 2026.",
+      "limitation": "Conferma puntuale della data, mantenuta al mese nel testo perché l’INPUT richiedeva soprattutto il tipo di riedizione."
+    },
+    {
+      "source_id": "pikachu-creators",
+      "url": "https://pokemonblog.com/2018/08/06/learn-pikachus-origin-story-from-pokemon-creators-ken-sugimori-koji-nishino-and-atsuko-nishida/",
+      "title": "Learn Pikachu’s origin story — intervista ai creatori",
+      "publisher": "Ken Sugimori, Koji Nishino, Atsuko Nishida; intervista The Pokémon Company ripubblicata da Pokémon Blog il 6 agosto 2018",
+      "accessed_at": "2026-10-30",
+      "scope": "Testimonianza diretta ripubblicata: pixel inizialmente monocromatici, colore Super Game Boy deciso alla fine; Gorochu rimosso per equilibrio e spazio.",
+      "limitation": "Pagina ufficiale fornita nell’INPUT oggi restituisce solo iframe; letto il testo integrale della ripubblicazione, che rimanda all’originale. Non aggiunti dettagli biografici o altri disegni."
+    },
+    {
+      "source_id": "mickey-credits",
+      "url": "https://www.mobygames.com/game/7541/mickey-mania/credits/playstation/",
+      "title": "Mickey Mania — crediti PlayStation trascritti",
+      "publisher": "Crediti originali / trascrizione MobyGames",
+      "accessed_at": "2026-10-30",
+      "scope": "Programmazione PlayStation Paul Hunter e David Dootson presso Traveller’s Tales; contributi Psygnosis a grafica, audio e collaudo.",
+      "limitation": "Trascrizione letta nell’indicizzazione; apertura diretta 403. Non dichiarata visione dei titoli di coda originali."
+    },
+    {
+      "source_id": "mickey-release",
+      "url": "https://psxdatacenter.com/games/P/D/SCES-00163.html",
+      "title": "Mickey’s Wild Adventure — SCES-00163",
+      "publisher": "PSX Data Center",
+      "accessed_at": "2026-10-30",
+      "scope": "Attribuisce lo sviluppo a Traveller’s Tales e indica uscita europea 1 marzo 1996; descrive inseguimento e finale della versione PlayStation.",
+      "limitation": "Catalogo specialistico secondario già fornito. Non adottate altre affermazioni irrilevanti o contraddittorie della scheda."
+    },
+    {
+      "source_id": "mickey-music",
+      "url": "https://www.vgmpf.com/Wiki/index.php?title=Michael_Giacchino",
+      "title": "Michael Giacchino — gameography",
+      "publisher": "Video Game Music Preservation Foundation Wiki",
+      "accessed_at": "2026-10-30",
+      "scope": "Riporta contributo musicale aggiuntivo non accreditato di Giacchino alla versione PlayStation, coerente con il contenuto dell’INPUT.",
+      "limitation": "Fonte specialistica secondaria; non presentata come nuovo credito letto direttamente nel gioco."
+    },
+    {
+      "source_id": "mariorpg-date",
+      "url": "https://www.nintendo.co.jp/clvs/soft/mario_rpg.html",
+      "title": "Super Mario RPG — Nintendo Classic Mini",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "Specificata la release originale Super Famicom del 9 marzo 1996, distinta dall’uscita della mini console.",
+      "limitation": "Letta la pagina testuale. Il manuale scansionato fornito nell’INPUT non viene dichiarato visionato."
+    },
+    {
+      "source_id": "re-mikami",
+      "url": "https://shmuplations.com/residentevil/",
+      "title": "Resident Evil — 1999 Developer Interview",
+      "publisher": "Shinji Mikami / Game Maestro; traduzione shmuplations",
+      "accessed_at": "2026-10-30",
+      "scope": "Testimonianza diretta sulla paura prima dell’attacco, sperimentazione in prima persona, inquadrature fisse e margine di risposta dato al giocatore.",
+      "limitation": "Intervista tradotta, non audio originale. Non usata come prova autonoma delle date Super NES 1993 e prima persona 1994, che restano informazioni fornite senza nuova certificazione."
+    },
+    {
+      "source_id": "re4-kobayashi",
+      "url": "https://shmuplations.com/residentevil4/",
+      "title": "Resident Evil 4 — Developer Interviews",
+      "publisher": "Hiroyuki Kobayashi; traduzione shmuplations",
+      "accessed_at": "2026-10-30",
+      "scope": "Testimonianza diretta sulle revisioni del progetto, arrivo di Mikami alla direzione e interazioni con Ashley.",
+      "limitation": "Feature distinta dal gioco originale: non attribuite al Resident Evil del 1996 le meccaniche del quarto episodio. Nessun nuovo dettaglio tecnico aggiunto."
+    },
+    {
+      "source_id": "re-historical-account",
+      "url": "https://en.wikipedia.org/wiki/Resident_Evil_(1996_video_game)",
+      "title": "Resident Evil (1996) — sales and references",
+      "publisher": "English Wikipedia contributors",
+      "accessed_at": "2026-10-30",
+      "scope": "Riporta quattro milioni e oltre 200 milioni di dollari al dicembre 1997, con rinvio a The Guinness Book of Records 1999 p.170.",
+      "limitation": "È la fonte secondaria effettivamente letta, coincidente con il materiale di partenza. La pagina del libro non è stata accessibile; conservata attribuzione esplicita a Wikipedia, senza inventare il perimetro delle piattaforme o dichiarare verificato il dato primario."
+    },
+    {
+      "source_id": "re-capcom-sales",
+      "url": "https://www.capcom.co.jp/ir/english/business/million.html",
+      "title": "Platinum Titles — dati al 30 giugno 2026",
+      "publisher": "Capcom",
+      "accessed_at": "2026-10-30",
+      "scope": "Distingue Resident Evil PS 1996: 2,75 milioni, Director’s Cut 1,13 milioni e Dual Shock 1,20 milioni.",
+      "limitation": "Dati cumulativi per edizione, non equivalenti alla stima storica del 1997. Non usati per correggere automaticamente un totale dal perimetro non verificato e non aggiunti alla prosa."
+    },
+    {
+      "source_id": "alpha2-source",
+      "url": "https://en.wikipedia.org/wiki/Street_Fighter_Alpha_2",
+      "title": "Street Fighter Alpha 2 — sviluppo, sistemi e bibliografia",
+      "publisher": "English Wikipedia contributors",
+      "accessed_at": "2026-10-30",
+      "scope": "L’attribuzione a Shinji Mikami rimanda a The Capcom Interview, Sega Saturn Magazine n.12, ottobre 1996, p.19; confermata la formulazione originaria e distinta la limitazione dei due personaggi EX.",
+      "limitation": "Rinvio bibliografico e citazione trascritta letti, non visione della pagina originale. Nessuna correzione intuitiva del nome Mikami. La cronologia primaria Capcom collegata dalla pagina è risultata 403."
+    },
+    {
+      "source_id": "anvil-launch",
+      "url": "https://news.microsoft.com/source/1997/02/19/microsoft-inks-deal-with-newly-formed-digital-anvil/",
+      "title": "Microsoft Inks Deal With Newly Formed Digital Anvil",
+      "publisher": "Microsoft, 19 febbraio 1997",
+      "accessed_at": "2026-10-30",
+      "scope": "Comunicato originale: lancio pubblico dello studio e accordo editoriale con investimento, descritti come eventi del giorno.",
+      "limitation": "Non prova che la costituzione societaria coincida con il 19 febbraio 1997. Non usato per sostituire l’anno di fondazione 1996."
+    },
+    {
+      "source_id": "anvil-history",
+      "url": "https://starcitizen.tools/Digital_Anvil",
+      "title": "Digital Anvil — storia dello studio",
+      "publisher": "Star Citizen Wiki contributors",
+      "accessed_at": "2026-10-30",
+      "scope": "Fonte già fornita: riporta 8 aprile 1996 e scioglimento gennaio 2006; i rinvii permettono di distinguere i fatti dagli annunci.",
+      "limitation": "Wiki non ufficiale. Il giorno 8 aprile non è stato convalidato sul registro societario; la data di gennaio è corretta sulla base della dichiarazione Microsoft contemporanea."
+    },
+    {
+      "source_id": "anvil-registry",
+      "url": "https://opencorporates.com/companies/us_tx/0139603400",
+      "title": "Digital Anvil — record Texas 0139603400",
+      "publisher": "OpenCorporates / registro Texas citato",
+      "accessed_at": "2026-10-30",
+      "scope": "Individuato il riferimento societario pertinente alla data di costituzione.",
+      "limitation": "Robots impedisce la consultazione: non è una prova letta dell’8 aprile e non viene presentato come verifica primaria conclusa."
+    },
+    {
+      "source_id": "anvil-acquisition",
+      "url": "https://news.microsoft.com/source/2000/12/05/microsoft-to-acquire-digital-anvil/",
+      "title": "Microsoft to Acquire Digital Anvil",
+      "publisher": "Microsoft, 5 dicembre 2000",
+      "accessed_at": "2026-10-30",
+      "scope": "Comunicato di accordo preliminare per acquisizione e uscita di Roberts dalla guida, con permanenza come consulente.",
+      "limitation": "Il 5 dicembre è giorno dell’annuncio di un accordo ancora preliminare. La prosa conserva il periodo dell’acquisizione senza affermare completamento giuridico in quel preciso giorno."
+    },
+    {
+      "source_id": "anvil-closure",
+      "url": "https://www.gamedeveloper.com/game-platforms/microsoft-confirms-closure-of-digital-anvil",
+      "title": "Microsoft Confirms Closure Of Digital Anvil",
+      "publisher": "David Jenkins / Gamasutra, 2 dicembre 2005",
+      "accessed_at": "2026-10-30",
+      "scope": "La dichiarazione Microsoft distingue studio già chiuso nel 2005 e ricollocazione prevista entro gennaio 2006; l’articolo indica fondazione nel 1996.",
+      "limitation": "Fonte contemporanea con dichiarazione diretta della società. Gennaio 2006 è il termine annunciato per il personale, non una prova di scioglimento legale della società."
+    }
+  ],
+  "decisions": [
+    {
+      "target_id": "wikipedia-173426",
+      "problem": "JAMMA collocata a novembre 1995; conflitto tra 1995 generico e release arcade febbraio 1996; giorno Ver. II non riscontrato.",
+      "conclusion": "JAMMA si svolse a settembre. Novembre è il mese della rivista che ne pubblica il resoconto. Mantenuta release giapponese 20 febbraio 1996 dalla tabella Namco; PlayStation 20 dicembre. Per Ver. II conservato soltanto 1996, evitando il giorno 16 maggio non confermato.",
+      "source_ids": [
+        "soul-namco-dates",
+        "soul-namco-2002",
+        "jamma-calendar",
+        "maximum-report",
+        "soul-radio"
+      ],
+      "text_applied": "Card main:0 nelle cinque lingue; proposta regione Japan per la release. Il confronto documentario non finge certezza sul giorno di Ver. II."
+    },
+    {
+      "target_id": "pokemon",
+      "problem": "Le prime uscite Red/Green vengono sovrapposte a Red/Blue internazionali e il collezionamento ordinario viene esteso a tutti i 151 Pokémon.",
+      "conclusion": "Ancoraggio giapponese 27 febbraio 1996 preservato; sequenza Blue giapponese e Red/Blue internazionali distinta. Collezione ordinaria di 150 specie; Mew reso disponibile con distribuzioni speciali.",
+      "source_ids": [
+        "pokemon-jp",
+        "pokemon-mew"
+      ],
+      "text_applied": "Card main:0, main:5 e main:6 nelle cinque lingue. Non dedotto che collegare due cartucce prive di Mew lo generi."
+    },
+    {
+      "target_id": "pokemon",
+      "problem": "La parentetica Switch può far credere a un nuovo remake sviluppato per il trentesimo anniversario.",
+      "conclusion": "FireRed e LeafGreen sono i remake GBA del 2004, ripubblicati effettivamente su Switch nel febbraio 2026.",
+      "source_ids": [
+        "pokemon-firered2026",
+        "pokemon-switch-press"
+      ],
+      "text_applied": "Card main:7 in tutte le lingue; mantenute le altre date, la valutazione storica 89% e il superamento dei 400 milioni come traguardo, non come totale attuale."
+    },
+    {
+      "target_id": "pokemon",
+      "problem": "La card Pikachu attribuisce i primi sprite alle limitazioni cromatiche del Super Game Boy e riduce la cancellazione di Gorochu al solo spazio.",
+      "conclusion": "Pixel inizialmente monocromatici; colore stabilito più tardi per Super Game Boy e ripreso nelle illustrazioni. Gorochu eliminato per equilibrio e spazio, entrambi dichiarati dai creatori.",
+      "source_ids": [
+        "pikachu-creators"
+      ],
+      "text_applied": "Card main:10 nelle cinque lingue, conservando Nishida, Sugimori, Raichu e Pichu."
+    },
+    {
+      "target_id": "mickeys-wild-adventure",
+      "problem": "L’INPUT attribuisce esclusivamente a Psygnosis lo sviluppo della versione PlayStation.",
+      "conclusion": "I crediti trascritti attribuiscono la programmazione a Traveller’s Tales e diversi contributi a Psygnosis.",
+      "source_ids": [
+        "mickey-credits",
+        "mickey-release",
+        "mickey-music"
+      ],
+      "text_applied": "Card main:0 corretta in tutte le lingue. Il credito musicale aggiuntivo di Giacchino fornito viene conservato senza dichiarare che appaia nei titoli di coda PS."
+    },
+    {
+      "target_id": "wikipedia-1789064",
+      "problem": "Chris e Jill sembrano controllati insieme; cifre storiche di vendita possono essere confuse con un singolo SKU.",
+      "conclusion": "Il giocatore sceglie Chris oppure Jill. Quattro milioni e 200 milioni di dollari vengono esplicitamente attribuiti alla ricostruzione Wikipedia e al suo rinvio Guinness 1999; non dichiarata lettura della pagina del libro né dedotto un perimetro multipiattaforma.",
+      "source_ids": [
+        "re-historical-account",
+        "re-capcom-sales"
+      ],
+      "text_applied": "Card main:0 e main:2 nelle cinque lingue. Il limite della verifica primaria rimane esplicito nell’audit, non viene dichiarato risolto falsamente."
+    },
+    {
+      "target_id": "feature-shinji-mikami-team",
+      "problem": "La feature attraversa due giochi e due contesti produttivi distinti.",
+      "conclusion": "Conservate quattro card distinte, con attribuzione al racconto di Mikami per il primo Resident Evil e a Kobayashi per Resident Evil 4.",
+      "source_ids": [
+        "re-mikami",
+        "re4-kobayashi"
+      ],
+      "text_applied": "Sommario e tutte le card della feature nelle cinque lingue; nessuna meccanica di Ashley attribuita all’episodio del 1996."
+    },
+    {
+      "target_id": "wikipedia-790288",
+      "problem": "Il riferimento a Shinji Mikami appare insolito; l’assenza della barra Super Combo può essere estesa per errore a Evil Ryu.",
+      "conclusion": "Conservato Mikami sulla base della citazione e del preciso rimando all’intervista del 1996, senza sostituirlo per intuizione. L’assenza di barra riguarda EX Dhalsim ed EX Zangief.",
+      "source_ids": [
+        "alpha2-source"
+      ],
+      "text_applied": "Card main:4 e main:6 in tutte le lingue; mantenute tutte le specifiche dei comandi e degli incontri segreti."
+    },
+    {
+      "target_id": "workbook-04-08-digital-anvil",
+      "problem": "L’8 aprile 1996 non è verificabile sul registro raggiungibile; il comunicato Microsoft del 1997 parla invece di lancio pubblico.",
+      "conclusion": "Proposto ancoraggio alla fondazione nel 1996 con precisione anno. Il 19 febbraio 1997 è lancio pubblico documentato, non sostituto della data di costituzione.",
+      "source_ids": [
+        "anvil-launch",
+        "anvil-history",
+        "anvil-registry",
+        "anvil-closure"
+      ],
+      "text_applied": "Card main:0 e metadata proposal; nessun giorno inventato o verifica primaria dell’8 aprile dichiarata."
+    },
+    {
+      "target_id": "workbook-04-08-digital-anvil",
+      "problem": "Gennaio 2006 viene presentato come scioglimento formale, ma il rinvio contemporaneo descrive il termine previsto per la ricollocazione dei dipendenti.",
+      "conclusion": "Studio già chiuso nel 2005; Microsoft annunciava il completamento della ricollocazione per gennaio 2006. Il comunicato del dicembre 2000 riguarda un accordo preliminare e non prova da solo un closing in quel giorno.",
+      "source_ids": [
+        "anvil-closure",
+        "anvil-acquisition"
+      ],
+      "text_applied": "Card main:3 nelle cinque lingue: chiusura e successivo termine annunciato distinti, senza affermare uno scioglimento legale non documentato."
+    }
+  ],
+  "metadata_proposals": [
+    {
+      "target_id": "wikipedia-173426",
+      "field": "timeline_release",
+      "original": {
+        "year": 1996,
+        "month": 2,
+        "day": 20,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed": {
+        "year": 1996,
+        "month": 2,
+        "day": 20,
+        "precision": "day",
+        "region": "Japan",
+        "version": "Arcade, Namco System 11"
+      },
+      "source_ids": [
+        "soul-namco-dates"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "pokemon",
+      "field": "timeline_release",
+      "original": {
+        "year": 1996,
+        "month": 2,
+        "day": 27,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed": {
+        "year": 1996,
+        "month": 2,
+        "day": 27,
+        "precision": "day",
+        "region": "Japan",
+        "version": "Game Boy, Pocket Monsters Red / Green"
+      },
+      "source_ids": [
+        "pokemon-jp",
+        "pokemon-mew"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "workbook-03-09-super-mario-rpg",
+      "field": "timeline_release",
+      "original": {
+        "year": 1996,
+        "month": 3,
+        "day": 9,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed": {
+        "year": 1996,
+        "month": 3,
+        "day": 9,
+        "precision": "day",
+        "region": "Japan",
+        "version": "Super Famicom"
+      },
+      "source_ids": [
+        "mariorpg-date"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "workbook-04-08-digital-anvil",
+      "field": "timeline_foundation",
+      "original": {
+        "year": 1996,
+        "month": 4,
+        "day": 8,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed": {
+        "year": 1996,
+        "month": null,
+        "day": null,
+        "precision": "year",
+        "region": "Austin, Texas, United States"
+      },
+      "source_ids": [
+        "anvil-history",
+        "anvil-closure",
+        "anvil-launch"
+      ],
+      "applied_to_catalog": false,
+      "reason": "Anno documentato, giorno non convalidato sul registro; non sostituire con il lancio pubblico del 1997."
+    }
+  ],
+  "expansion_assessments": [
+    {
+      "target_id": "wikipedia-173426",
+      "main_cards": 2,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 3,
+      "rationale": "Priorità editoriale per esordio della serie Soulcalibur e sviluppo del combattimento tridimensionale con armi."
+    },
+    {
+      "target_id": "pokemon",
+      "main_cards": 12,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 0,
+      "rationale": "Gioco di massima priorità; soglia di cinque card principali già raggiunta."
+    },
+    {
+      "target_id": "mickeys-wild-adventure",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "required_main_cards": null,
+      "missing_cards": 0,
+      "rationale": "Edizione PlayStation di un platform già esistente, non selezionata qui fra i giochi di massima priorità. Conservati i tre nuclei distinti forniti, senza ripeterli per raggiungere una quota."
+    },
+    {
+      "target_id": "workbook-03-09-super-mario-rpg",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 1,
+      "rationale": "Priorità editoriale per primo incontro fra Mario e il gioco di ruolo Square."
+    },
+    {
+      "target_id": "kirby-super-star",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Priorità editoriale per progetto cooperativo di Sakurai e formato a raccolta nella serie Kirby."
+    },
+    {
+      "target_id": "console-gap-panzer-dragoon-ii-zwei",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Priorità editoriale per evoluzione dello sparatutto Saturn e sviluppo della serie Panzer Dragoon."
+    },
+    {
+      "target_id": "wikipedia-1789064",
+      "main_cards": 4,
+      "feature_cards": 4,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 1,
+      "rationale": "Priorità editoriale per primo Resident Evil e definizione del survival horror."
+    },
+    {
+      "target_id": "wikipedia-790288",
+      "main_cards": 7,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 0,
+      "rationale": "Gioco di massima priorità; soglia di cinque card principali già raggiunta."
+    },
+    {
+      "target_id": "console-gap-dragon-force",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Priorità editoriale per gioco di ruolo strategico centrale del catalogo Saturn."
+    },
+    {
+      "target_id": "workbook-04-08-digital-anvil",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "required_main_cards": null,
+      "missing_cards": 0,
+      "rationale": "Organizzazione, non gioco o console: nessuna soglia quantitativa applicabile."
+    }
+  ],
+  "editorial_review": {
+    "english_first": true,
+    "five_languages_reviewed": [
+      "en",
+      "it",
+      "fr",
+      "de",
+      "es"
+    ],
+    "checks": [
+      "10 voci, 45 card principali e 4 card di feature per lingua: 245 versioni complete",
+      "Inglese scritto e salvato prima delle quattro adattazioni; checkpoint separati per lingua e revisione trasversale finale",
+      "Sommari EN di 34–39 parole e feature di 41 parole; incipit e titoli specifici, nessuna card unita, aggiunta, divisa o riordinata",
+      "Riletti testo, nomi, cifre e relazioni nelle cinque lingue; conservati tutti gli ID e i titoli propri dei giochi",
+      "Confrontate le quantità d’informazione con l’INPUT: conservati comandi Custom Combo, due Alpha Counter, otto incontri, tredici personaggi, 100 soldati per generale e tutte le tappe delle edizioni Pokémon",
+      "Corrette sfumature linguistiche in tedesco e rimosso un riferimento anagrafico non necessario a Lundi; revisione Digital Anvil propagata in tutte le lingue",
+      "Restano distinti originali, riedizioni, fondazione, lancio pubblico, chiusura dello studio e piano di ricollocazione del personale",
+      "Sei giochi prioritari necessitano di undici nuove card principali nel flusso separato; le quattro feature di Resident Evil sono contate a parte"
+    ],
+    "external_verification_limit": "Ricerca mirata ai problemi elencati, non certificazione esterna universale. Fonti, licenze, crediti e attribuzioni originali restano intatti negli INPUT. Non dichiarata visione delle scansioni, dei libri o delle pagine bloccate. Il dato Guinness rimane un’attribuzione secondaria esplicita: quantità e perimetro primari non certificati. Giorno di Ver. II e giorno di fondazione Digital Anvil non certificati; adottata precisione anno nei punti pertinenti. Nessuna modifica al catalogo, alle date o ai media originali.",
+    "book_style_references_consulted": false
+  },
+  "validation": {
+    "valid": true,
+    "batch_id": "060-catalog",
+    "completed": true,
+    "entry_count": 10,
+    "card_count_per_language": 49,
+    "language_count": 5,
+    "translated_card_count": 245,
+    "entry_card_counts": {
+      "wikipedia-173426": 2,
+      "pokemon": 12,
+      "mickeys-wild-adventure": 3,
+      "workbook-03-09-super-mario-rpg": 4,
+      "kirby-super-star": 3,
+      "console-gap-panzer-dragoon-ii-zwei": 3,
+      "wikipedia-1789064": 8,
+      "wikipedia-790288": 7,
+      "console-gap-dragon-force": 3,
+      "workbook-04-08-digital-anvil": 4
+    },
+    "issue_counts": {
+      "wikipedia-173426": 1,
+      "pokemon": 0,
+      "mickeys-wild-adventure": 0,
+      "workbook-03-09-super-mario-rpg": 1,
+      "kirby-super-star": 1,
+      "console-gap-panzer-dragoon-ii-zwei": 1,
+      "wikipedia-1789064": 1,
+      "wikipedia-790288": 0,
+      "console-gap-dragon-force": 1,
+      "workbook-04-08-digital-anvil": 0
+    },
+    "summary_checks": [
+      {
+        "entry_id": "wikipedia-173426",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "pokemon",
+        "feature_id": null,
+        "english_summary_words": 39
+      },
+      {
+        "entry_id": "mickeys-wild-adventure",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "workbook-03-09-super-mario-rpg",
+        "feature_id": null,
+        "english_summary_words": 34
+      },
+      {
+        "entry_id": "kirby-super-star",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "console-gap-panzer-dragoon-ii-zwei",
+        "feature_id": null,
+        "english_summary_words": 39
+      },
+      {
+        "entry_id": "wikipedia-1789064",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "wikipedia-1789064",
+        "feature_id": "feature-shinji-mikami-team",
+        "english_summary_words": 39
+      },
+      {
+        "entry_id": "wikipedia-790288",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "console-gap-dragon-force",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "workbook-04-08-digital-anvil",
+        "feature_id": null,
+        "english_summary_words": 36
+      }
+    ],
+    "editorial_review": [],
+    "failures": []
+  },
+  "output_sha256": "996e06948a21cf88cf0d2d80bd2089eda23897b087cb4c692181111de8142ba7",
+  "root_review": {
+    "reviewed_at": "2026-10-30T03:26:33.792474+00:00",
+    "scope": "Rilettura mirata degli avvisi quantitativi e dei punti fattuali segnalati, successiva alla revisione del redattore; non verifica universale indipendente di ogni fonte.",
+    "finding": "Controllati gli avvisi numerici: Mew centocinquantunesimo, anni Duemila e altri numeri scritti in lettere conservano i valori. Rilette le due card Alpha 2 segnalate per brevità: cast, rivali, condizioni e ordine Shin Akuma/finale presenti. Correzioni delle date e disponibilità confrontate con le decisioni dell’audit.",
+    "additional_text_edits": false
+  }
+}

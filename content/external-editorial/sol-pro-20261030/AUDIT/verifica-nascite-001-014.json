@@ -1,0 +1,2707 @@
+{
+  "audit_schema": "pixel-museum-person-birth-audit-v1",
+  "audit_id": "verify_completed_person_birth_dates_after_014",
+  "audit_date": "2026-10-29",
+  "requested_by_user": "Fai una verifica al prossimo giro anche dei pacchetti che hai già fatto per le date dei personaggi se ci sono e non hanno una data",
+  "status": "completed_with_documented_output_correction",
+  "scope_batches": "001-catalog–014-catalog",
+  "scope_description": "Presenza e coerenza di nascite e collocazioni nei metadati INPUT e nei testi OUTPUT delle cinque lingue; ricognizione di tutti i titoli, tipi e semantiche delle voci e delle feature completate per distinguere biografie, progetti e avvenimenti. Non è una verifica esterna generale di tutte le date già presenti.",
+  "counts": {
+    "completed_entries_scanned": 133,
+    "nested_features_scanned": 20,
+    "person_kind_entries": 23,
+    "individual_biographies": 21,
+    "individual_biographies_with_full_birth_in_all_five_languages_before_change": 20,
+    "individual_biographies_without_any_birth_date": 0,
+    "project_or_team_entries_marked_person": 2,
+    "other_standalone_project_features_with_named_people": 2,
+    "internal_birth_date_conflicts_found": 0,
+    "additional_unclassified_individual_biographies_found": 0,
+    "individual_biographies_with_full_birth_in_all_five_languages_after_change": 21,
+    "individual_biographies_with_only_birth_year_in_prose_after_change": 0,
+    "individual_biographies_with_only_birth_year_in_prose_before_change": 1
+  },
+  "inventory": [
+    {
+      "batch_id": "001-catalog",
+      "entry_id": "josef-kates",
+      "title": "Josef Kates",
+      "source_kind": "person",
+      "source_year_context_only": 1921,
+      "source_date_context_only": {
+        "month": 5,
+        "day": 5,
+        "precision": "day",
+        "region": ""
+      },
+      "source_event_semantics": "",
+      "source_factual_note": "",
+      "editorial_semantics": "biography_birth",
+      "birth_date_from_metadata": "1921-05-05",
+      "language_checks": {
+        "en": {
+          "card_id": "main:0",
+          "expected_full_date_text": "5 May 1921",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "it": {
+          "card_id": "main:0",
+          "expected_full_date_text": "5 maggio 1921",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "fr": {
+          "card_id": "main:0",
+          "expected_full_date_text": "5 mai 1921",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "de": {
+          "card_id": "main:0",
+          "expected_full_date_text": "5. Mai 1921",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "es": {
+          "card_id": "main:0",
+          "expected_full_date_text": "5 de mayo de 1921",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        }
+      },
+      "internal_consistency": "data completa coerente nelle cinque lingue",
+      "external_verification_scope": "Nessuna nuova verifica esterna: controllo di presenza e coerenza dei dati forniti."
+    },
+    {
+      "batch_id": "001-catalog",
+      "entry_id": "wikipedia-292874",
+      "title": "Ralph Baer",
+      "source_kind": "person",
+      "source_year_context_only": 1922,
+      "source_date_context_only": {
+        "month": 3,
+        "day": 8,
+        "precision": "day",
+        "region": ""
+      },
+      "source_event_semantics": "Birthdate anchor 1922-03-08. Later career dates belong to the specifically dated reference paragraphs, not to the birth year.",
+      "source_factual_note": "Selected source-bound biography replaces inherited false birthyear-as-production narration in the canonical presentation only. Source editions and their eight-language prose remain archived unchanged. This reference is not a global primary-source historical signoff.",
+      "editorial_semantics": "biography_birth",
+      "birth_date_from_metadata": "1922-03-08",
+      "language_checks": {
+        "en": {
+          "card_id": "main:0",
+          "expected_full_date_text": "8 March 1922",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "it": {
+          "card_id": "main:0",
+          "expected_full_date_text": "8 marzo 1922",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "fr": {
+          "card_id": "main:0",
+          "expected_full_date_text": "8 mars 1922",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "de": {
+          "card_id": "main:0",
+          "expected_full_date_text": "8. März 1922",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "es": {
+          "card_id": "main:0",
+          "expected_full_date_text": "8 de marzo de 1922",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        }
+      },
+      "internal_consistency": "data completa coerente nelle cinque lingue",
+      "external_verification_scope": "Nessuna nuova verifica esterna: controllo di presenza e coerenza dei dati forniti."
+    },
+    {
+      "batch_id": "001-catalog",
+      "entry_id": "daily-01-18",
+      "title": "Takeshi Kitano",
+      "source_kind": "person",
+      "source_year_context_only": 1947,
+      "source_date_context_only": {
+        "month": 1,
+        "day": 18,
+        "precision": "day",
+        "region": ""
+      },
+      "source_event_semantics": "Scheduled published Playhub edition. The calendar slot is not asserted as a historical anniversary; the year is the source's historical anchor.",
+      "source_factual_note": "",
+      "editorial_semantics": "biography_birth",
+      "birth_date_from_metadata": "1947-01-18",
+      "language_checks": {
+        "en": {
+          "card_id": "main:0",
+          "expected_full_date_text": "18 January 1947",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "it": {
+          "card_id": "main:0",
+          "expected_full_date_text": "18 gennaio 1947",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "fr": {
+          "card_id": "main:0",
+          "expected_full_date_text": "18 janvier 1947",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "de": {
+          "card_id": "main:0",
+          "expected_full_date_text": "18. Januar 1947",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "es": {
+          "card_id": "main:0",
+          "expected_full_date_text": "18 de enero de 1947",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        }
+      },
+      "internal_consistency": "data completa coerente nelle cinque lingue",
+      "external_verification_scope": "Nessuna nuova verifica esterna: controllo di presenza e coerenza dei dati forniti."
+    },
+    {
+      "batch_id": "001-catalog",
+      "entry_id": "daily-11-16",
+      "title": "Shigeru Miyamoto",
+      "source_kind": "person",
+      "source_year_context_only": 1952,
+      "source_date_context_only": {
+        "month": 11,
+        "day": 16,
+        "precision": "day",
+        "region": ""
+      },
+      "source_event_semantics": "Scheduled published Playhub edition. The calendar slot is not asserted as a historical anniversary; the year is the source's historical anchor.",
+      "source_factual_note": "",
+      "editorial_semantics": "biography_birth",
+      "birth_date_from_metadata": "1952-11-16",
+      "language_checks": {
+        "en": {
+          "card_id": "main:0",
+          "expected_full_date_text": "16 November 1952",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "it": {
+          "card_id": "main:0",
+          "expected_full_date_text": "16 novembre 1952",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "fr": {
+          "card_id": "main:0",
+          "expected_full_date_text": "16 novembre 1952",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "de": {
+          "card_id": "main:0",
+          "expected_full_date_text": "16. November 1952",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "es": {
+          "card_id": "main:0",
+          "expected_full_date_text": "16 de noviembre de 1952",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        }
+      },
+      "internal_consistency": "data completa coerente nelle cinque lingue",
+      "external_verification_scope": "Nessuna nuova verifica esterna: controllo di presenza e coerenza dei dati forniti."
+    },
+    {
+      "batch_id": "002-catalog",
+      "entry_id": "workbook-02-24-sid-meier",
+      "title": "Sid Meier",
+      "source_kind": "person",
+      "source_year_context_only": 1954,
+      "source_date_context_only": {
+        "month": 2,
+        "day": 24,
+        "precision": "day",
+        "region": ""
+      },
+      "source_event_semantics": "Birthdate anchor 1954-02-24. Later career dates belong to the specifically dated reference paragraphs, not to the birth year.",
+      "source_factual_note": "Selected source-bound biography replaces inherited false birthyear-as-production narration in the canonical presentation only. Source editions and their eight-language prose remain archived unchanged. This reference is not a global primary-source historical signoff.",
+      "editorial_semantics": "biography_birth",
+      "birth_date_from_metadata": "1954-02-24",
+      "language_checks": {
+        "en": {
+          "card_id": "main:0",
+          "expected_full_date_text": "24 February 1954",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "it": {
+          "card_id": "main:0",
+          "expected_full_date_text": "24 febbraio 1954",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "fr": {
+          "card_id": "main:0",
+          "expected_full_date_text": "24 février 1954",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "de": {
+          "card_id": "main:0",
+          "expected_full_date_text": "24. Februar 1954",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "es": {
+          "card_id": "main:0",
+          "expected_full_date_text": "24 de febrero de 1954",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        }
+      },
+      "internal_consistency": "data completa coerente nelle cinque lingue",
+      "external_verification_scope": "Nessuna nuova verifica esterna: controllo di presenza e coerenza dei dati forniti."
+    },
+    {
+      "batch_id": "002-catalog",
+      "entry_id": "workbook-01-25-t-ru-iwatani",
+      "title": "Tōru Iwatani",
+      "source_kind": "person",
+      "source_year_context_only": 1955,
+      "source_date_context_only": {
+        "month": 1,
+        "day": 25,
+        "precision": "day",
+        "region": ""
+      },
+      "source_event_semantics": "birth",
+      "source_factual_note": "Imported dated English Playhub editorial. Adapt its calendar wording, review publisher dates and assign rights-cleared media before presenting as a finished museum stop.",
+      "editorial_semantics": "biography_birth",
+      "birth_date_from_metadata": "1955-01-25",
+      "language_checks": {
+        "en": {
+          "card_id": "main:0",
+          "expected_full_date_text": "25 January 1955",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "it": {
+          "card_id": "main:0",
+          "expected_full_date_text": "25 gennaio 1955",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "fr": {
+          "card_id": "main:0",
+          "expected_full_date_text": "25 janvier 1955",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "de": {
+          "card_id": "main:0",
+          "expected_full_date_text": "25. Januar 1955",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "es": {
+          "card_id": "main:0",
+          "expected_full_date_text": "25 de enero de 1955",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        }
+      },
+      "internal_consistency": "data completa coerente nelle cinque lingue",
+      "external_verification_scope": "Nessuna nuova verifica esterna: controllo di presenza e coerenza dei dati forniti."
+    },
+    {
+      "batch_id": "002-catalog",
+      "entry_id": "workbook-01-17-shinichi-nakamoto",
+      "title": "Shinichi Nakamoto",
+      "source_kind": "person",
+      "source_year_context_only": 1958,
+      "source_date_context_only": {
+        "month": 1,
+        "day": 17,
+        "precision": "day",
+        "region": ""
+      },
+      "source_event_semantics": "birth",
+      "source_factual_note": "Imported dated English Playhub editorial. Adapt its calendar wording, review publisher dates and assign rights-cleared media before presenting as a finished museum stop.",
+      "editorial_semantics": "biography_birth",
+      "birth_date_from_metadata": "1958-01-17",
+      "language_checks": {
+        "en": {
+          "card_id": "main:0",
+          "expected_full_date_text": "17 January 1958",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "it": {
+          "card_id": "main:0",
+          "expected_full_date_text": "17 gennaio 1958",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "fr": {
+          "card_id": "main:0",
+          "expected_full_date_text": "17 janvier 1958",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "de": {
+          "card_id": "main:0",
+          "expected_full_date_text": "17. Januar 1958",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "es": {
+          "card_id": "main:0",
+          "expected_full_date_text": "17 de enero de 1958",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        }
+      },
+      "internal_consistency": "data completa coerente nelle cinque lingue",
+      "external_verification_scope": "Nessuna nuova verifica esterna: controllo di presenza e coerenza dei dati forniti."
+    },
+    {
+      "batch_id": "002-catalog",
+      "entry_id": "workbook-06-10-yu-suzuki",
+      "title": "Yu Suzuki",
+      "source_kind": "person",
+      "source_year_context_only": 1958,
+      "source_date_context_only": {
+        "month": 6,
+        "day": 10,
+        "precision": "day",
+        "region": ""
+      },
+      "source_event_semantics": "birth",
+      "source_factual_note": "",
+      "editorial_semantics": "biography_birth",
+      "birth_date_from_metadata": "1958-06-10",
+      "language_checks": {
+        "en": {
+          "card_id": "main:0",
+          "expected_full_date_text": "10 June 1958",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day",
+          "checked_after_correction": true
+        },
+        "it": {
+          "card_id": "main:0",
+          "expected_full_date_text": "10 giugno 1958",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day",
+          "checked_after_correction": true
+        },
+        "fr": {
+          "card_id": "main:0",
+          "expected_full_date_text": "10 juin 1958",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day",
+          "checked_after_correction": true
+        },
+        "de": {
+          "card_id": "main:0",
+          "expected_full_date_text": "10. Juni 1958",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day",
+          "checked_after_correction": true
+        },
+        "es": {
+          "card_id": "main:0",
+          "expected_full_date_text": "10 de junio de 1958",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day",
+          "checked_after_correction": true
+        }
+      },
+      "internal_consistency": "Data completa coerente con i metadati e ora presente in main:0 nelle cinque lingue; prima della correzione la prosa riportava solo il 1958.",
+      "external_verification_scope": "Riutilizzata verifica ufficiale YS NET del lotto014",
+      "precision_after_integration": "day",
+      "full_birth_date_in_all_five_languages_after_integration": true,
+      "language_checks_before_correction": {
+        "en": {
+          "card_id": "main:0",
+          "expected_full_date_text": "10 June 1958",
+          "full_date_present": false,
+          "birth_year_present": true,
+          "precision": "year"
+        },
+        "it": {
+          "card_id": "main:0",
+          "expected_full_date_text": "10 giugno 1958",
+          "full_date_present": false,
+          "birth_year_present": true,
+          "precision": "year"
+        },
+        "fr": {
+          "card_id": "main:0",
+          "expected_full_date_text": "10 juin 1958",
+          "full_date_present": false,
+          "birth_year_present": true,
+          "precision": "year"
+        },
+        "de": {
+          "card_id": "main:0",
+          "expected_full_date_text": "10. Juni 1958",
+          "full_date_present": false,
+          "birth_year_present": true,
+          "precision": "year"
+        },
+        "es": {
+          "card_id": "main:0",
+          "expected_full_date_text": "10 de junio de 1958",
+          "full_date_present": false,
+          "birth_year_present": true,
+          "precision": "year"
+        }
+      }
+    },
+    {
+      "batch_id": "002-catalog",
+      "entry_id": "daily-12-06",
+      "title": "Satoru Iwata",
+      "source_kind": "person",
+      "source_year_context_only": 1959,
+      "source_date_context_only": {
+        "month": 12,
+        "day": 6,
+        "precision": "day",
+        "region": ""
+      },
+      "source_event_semantics": "Scheduled published Playhub edition. The calendar slot is not asserted as a historical anniversary; the year is the source's historical anchor.",
+      "source_factual_note": "",
+      "editorial_semantics": "biography_birth",
+      "birth_date_from_metadata": "1959-12-06",
+      "language_checks": {
+        "en": {
+          "card_id": "main:0",
+          "expected_full_date_text": "6 December 1959",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "it": {
+          "card_id": "main:0",
+          "expected_full_date_text": "6 dicembre 1959",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "fr": {
+          "card_id": "main:0",
+          "expected_full_date_text": "6 décembre 1959",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "de": {
+          "card_id": "main:0",
+          "expected_full_date_text": "6. Dezember 1959",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "es": {
+          "card_id": "main:0",
+          "expected_full_date_text": "6 de diciembre de 1959",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        }
+      },
+      "internal_consistency": "data completa coerente nelle cinque lingue",
+      "external_verification_scope": "Nessuna nuova verifica esterna: controllo di presenza e coerenza dei dati forniti."
+    },
+    {
+      "batch_id": "002-catalog",
+      "entry_id": "workbook-01-20-will-wright-game-designer",
+      "title": "Will Wright",
+      "source_kind": "person",
+      "source_year_context_only": 1960,
+      "source_date_context_only": {
+        "month": 1,
+        "day": 20,
+        "precision": "day",
+        "region": ""
+      },
+      "source_event_semantics": "birth",
+      "source_factual_note": "Imported dated English Playhub editorial. Adapt its calendar wording, review publisher dates and assign rights-cleared media before presenting as a finished museum stop.",
+      "editorial_semantics": "biography_birth",
+      "birth_date_from_metadata": "1960-01-20",
+      "language_checks": {
+        "en": {
+          "card_id": "main:0",
+          "expected_full_date_text": "20 January 1960",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "it": {
+          "card_id": "main:0",
+          "expected_full_date_text": "20 gennaio 1960",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "fr": {
+          "card_id": "main:0",
+          "expected_full_date_text": "20 janvier 1960",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "de": {
+          "card_id": "main:0",
+          "expected_full_date_text": "20. Januar 1960",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "es": {
+          "card_id": "main:0",
+          "expected_full_date_text": "20 de enero de 1960",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        }
+      },
+      "internal_consistency": "data completa coerente nelle cinque lingue",
+      "external_verification_scope": "Nessuna nuova verifica esterna: controllo di presenza e coerenza dei dati forniti."
+    },
+    {
+      "batch_id": "003-catalog",
+      "entry_id": "daily-11-25",
+      "title": "Hironobu Sakaguchi",
+      "source_kind": "person",
+      "source_year_context_only": 1962,
+      "source_date_context_only": {
+        "month": 11,
+        "day": 25,
+        "precision": "day",
+        "region": ""
+      },
+      "source_event_semantics": "Scheduled published Playhub edition. The calendar slot is not asserted as a historical anniversary; the year is the source's historical anchor.",
+      "source_factual_note": "",
+      "editorial_semantics": "biography_birth",
+      "birth_date_from_metadata": "1962-11-25",
+      "language_checks": {
+        "en": {
+          "card_id": "main:0",
+          "expected_full_date_text": "25 November 1962",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "it": {
+          "card_id": "main:0",
+          "expected_full_date_text": "25 novembre 1962",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "fr": {
+          "card_id": "main:0",
+          "expected_full_date_text": "25 novembre 1962",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "de": {
+          "card_id": "main:0",
+          "expected_full_date_text": "25. November 1962",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "es": {
+          "card_id": "main:0",
+          "expected_full_date_text": "25 de noviembre de 1962",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        }
+      },
+      "internal_consistency": "data completa coerente nelle cinque lingue",
+      "external_verification_scope": "Nessuna nuova verifica esterna: controllo di presenza e coerenza dei dati forniti."
+    },
+    {
+      "batch_id": "003-catalog",
+      "entry_id": "daily-08-24",
+      "title": "Hideo Kojima",
+      "source_kind": "person",
+      "source_year_context_only": 1963,
+      "source_date_context_only": {
+        "month": 8,
+        "day": 24,
+        "precision": "day",
+        "region": ""
+      },
+      "source_event_semantics": "Scheduled published Playhub edition. The calendar slot is not asserted as a historical anniversary; the year is the source's historical anchor.",
+      "source_factual_note": "",
+      "editorial_semantics": "biography_birth",
+      "birth_date_from_metadata": "1963-08-24",
+      "language_checks": {
+        "en": {
+          "card_id": "main:0",
+          "expected_full_date_text": "24 August 1963",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "it": {
+          "card_id": "main:0",
+          "expected_full_date_text": "24 agosto 1963",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "fr": {
+          "card_id": "main:0",
+          "expected_full_date_text": "24 août 1963",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "de": {
+          "card_id": "main:0",
+          "expected_full_date_text": "24. August 1963",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "es": {
+          "card_id": "main:0",
+          "expected_full_date_text": "24 de agosto de 1963",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        }
+      },
+      "internal_consistency": "data completa coerente nelle cinque lingue",
+      "external_verification_scope": "Nessuna nuova verifica esterna: controllo di presenza e coerenza dei dati forniti."
+    },
+    {
+      "batch_id": "003-catalog",
+      "entry_id": "workbook-02-22-ed-boon",
+      "title": "Ed Boon",
+      "source_kind": "person",
+      "source_year_context_only": 1964,
+      "source_date_context_only": {
+        "month": 2,
+        "day": 22,
+        "precision": "day",
+        "region": ""
+      },
+      "source_event_semantics": "Birthdate anchor 1964-02-22. Later career dates belong to the specifically dated reference paragraphs, not to the birth year.",
+      "source_factual_note": "Selected source-bound biography replaces inherited false birthyear-as-production narration in the canonical presentation only. Source editions and their eight-language prose remain archived unchanged. This reference is not a global primary-source historical signoff.",
+      "editorial_semantics": "biography_birth",
+      "birth_date_from_metadata": "1964-02-22",
+      "language_checks": {
+        "en": {
+          "card_id": "main:0",
+          "expected_full_date_text": "22 February 1964",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "it": {
+          "card_id": "main:0",
+          "expected_full_date_text": "22 febbraio 1964",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "fr": {
+          "card_id": "main:0",
+          "expected_full_date_text": "22 février 1964",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "de": {
+          "card_id": "main:0",
+          "expected_full_date_text": "22. Februar 1964",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "es": {
+          "card_id": "main:0",
+          "expected_full_date_text": "22 de febrero de 1964",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        }
+      },
+      "internal_consistency": "data completa coerente nelle cinque lingue",
+      "external_verification_scope": "Nessuna nuova verifica esterna: controllo di presenza e coerenza dei dati forniti."
+    },
+    {
+      "batch_id": "003-catalog",
+      "entry_id": "workbook-01-24-takashi-tokita",
+      "title": "Takashi Tokita",
+      "source_kind": "person",
+      "source_year_context_only": 1965,
+      "source_date_context_only": {
+        "month": 1,
+        "day": 24,
+        "precision": "day",
+        "region": ""
+      },
+      "source_event_semantics": "birth",
+      "source_factual_note": "Imported dated English Playhub editorial. Adapt its calendar wording, review publisher dates and assign rights-cleared media before presenting as a finished museum stop.",
+      "editorial_semantics": "biography_birth",
+      "birth_date_from_metadata": "1965-01-24",
+      "language_checks": {
+        "en": {
+          "card_id": "main:0",
+          "expected_full_date_text": "24 January 1965",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "it": {
+          "card_id": "main:0",
+          "expected_full_date_text": "24 gennaio 1965",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "fr": {
+          "card_id": "main:0",
+          "expected_full_date_text": "24 janvier 1965",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "de": {
+          "card_id": "main:0",
+          "expected_full_date_text": "24. Januar 1965",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "es": {
+          "card_id": "main:0",
+          "expected_full_date_text": "24 de enero de 1965",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        }
+      },
+      "internal_consistency": "data completa coerente nelle cinque lingue",
+      "external_verification_scope": "Nessuna nuova verifica esterna: controllo di presenza e coerenza dei dati forniti."
+    },
+    {
+      "batch_id": "003-catalog",
+      "entry_id": "daily-09-17",
+      "title": "Yuji Naka",
+      "source_kind": "person",
+      "source_year_context_only": 1965,
+      "source_date_context_only": {
+        "month": 9,
+        "day": 17,
+        "precision": "day",
+        "region": ""
+      },
+      "source_event_semantics": "Scheduled published Playhub edition. The calendar slot is not asserted as a historical anniversary; the year is the source's historical anchor.",
+      "source_factual_note": "",
+      "editorial_semantics": "biography_birth",
+      "birth_date_from_metadata": "1965-09-17",
+      "language_checks": {
+        "en": {
+          "card_id": "main:0",
+          "expected_full_date_text": "17 September 1965",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "it": {
+          "card_id": "main:0",
+          "expected_full_date_text": "17 settembre 1965",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "fr": {
+          "card_id": "main:0",
+          "expected_full_date_text": "17 septembre 1965",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "de": {
+          "card_id": "main:0",
+          "expected_full_date_text": "17. September 1965",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "es": {
+          "card_id": "main:0",
+          "expected_full_date_text": "17 de septiembre de 1965",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        }
+      },
+      "internal_consistency": "data completa coerente nelle cinque lingue",
+      "external_verification_scope": "Nessuna nuova verifica esterna: controllo di presenza e coerenza dei dati forniti."
+    },
+    {
+      "batch_id": "003-catalog",
+      "entry_id": "daily-12-12",
+      "title": "Yuzo Koshiro",
+      "source_kind": "person",
+      "source_year_context_only": 1967,
+      "source_date_context_only": {
+        "month": 12,
+        "day": 12,
+        "precision": "day",
+        "region": ""
+      },
+      "source_event_semantics": "Scheduled published Playhub edition. The calendar slot is not asserted as a historical anniversary; the year is the source's historical anchor.",
+      "source_factual_note": "",
+      "editorial_semantics": "biography_birth",
+      "birth_date_from_metadata": "1967-12-12",
+      "language_checks": {
+        "en": {
+          "card_id": "main:0",
+          "expected_full_date_text": "12 December 1967",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "it": {
+          "card_id": "main:0",
+          "expected_full_date_text": "12 dicembre 1967",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "fr": {
+          "card_id": "main:0",
+          "expected_full_date_text": "12 décembre 1967",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "de": {
+          "card_id": "main:0",
+          "expected_full_date_text": "12. Dezember 1967",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "es": {
+          "card_id": "main:0",
+          "expected_full_date_text": "12 de diciembre de 1967",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        }
+      },
+      "internal_consistency": "data completa coerente nelle cinque lingue",
+      "external_verification_scope": "Nessuna nuova verifica esterna: controllo di presenza e coerenza dei dati forniti."
+    },
+    {
+      "batch_id": "004-catalog",
+      "entry_id": "brown-box",
+      "title": "Brown Box: Baer, Harrison and Rusch",
+      "source_kind": "person",
+      "source_year_context_only": 1968,
+      "source_date_context_only": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": ""
+      },
+      "source_event_semantics": "",
+      "source_factual_note": "The Brown Box was developed during 1967–1968; 1968 is used as an exhibition anchor, not an exact release date.",
+      "editorial_semantics": "project_or_team_event",
+      "birth_date_required_for_current_entry": false,
+      "reason": "La voce riguarda un progetto e il gruppo che lo realizza, con collocazione legata al progetto; non è una biografia individuale."
+    },
+    {
+      "batch_id": "004-catalog",
+      "entry_id": "workbook-01-19-nobuyoshi-sano",
+      "title": "Nobuyoshi Sano",
+      "source_kind": "person",
+      "source_year_context_only": 1969,
+      "source_date_context_only": {
+        "month": 1,
+        "day": 19,
+        "precision": "day",
+        "region": ""
+      },
+      "source_event_semantics": "birth",
+      "source_factual_note": "Imported dated English Playhub editorial. Adapt its calendar wording, review publisher dates and assign rights-cleared media before presenting as a finished museum stop.",
+      "editorial_semantics": "biography_birth",
+      "birth_date_from_metadata": "1969-01-19",
+      "language_checks": {
+        "en": {
+          "card_id": "main:0",
+          "expected_full_date_text": "19 January 1969",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "it": {
+          "card_id": "main:0",
+          "expected_full_date_text": "19 gennaio 1969",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "fr": {
+          "card_id": "main:0",
+          "expected_full_date_text": "19 janvier 1969",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "de": {
+          "card_id": "main:0",
+          "expected_full_date_text": "19. Januar 1969",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "es": {
+          "card_id": "main:0",
+          "expected_full_date_text": "19 de enero de 1969",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        }
+      },
+      "internal_consistency": "data completa coerente nelle cinque lingue",
+      "external_verification_scope": "Nessuna nuova verifica esterna: controllo di presenza e coerenza dei dati forniti."
+    },
+    {
+      "batch_id": "004-catalog",
+      "entry_id": "workbook-08-03-masahiro-sakurai",
+      "title": "Masahiro Sakurai",
+      "source_kind": "person",
+      "source_year_context_only": 1970,
+      "source_date_context_only": {
+        "month": 8,
+        "day": 3,
+        "precision": "day",
+        "region": ""
+      },
+      "source_event_semantics": "birth",
+      "source_factual_note": "Imported dated English Playhub editorial. Adapt its calendar wording, review publisher dates and assign rights-cleared media before presenting as a finished museum stop.",
+      "editorial_semantics": "biography_birth",
+      "birth_date_from_metadata": "1970-08-03",
+      "language_checks": {
+        "en": {
+          "card_id": "main:0",
+          "expected_full_date_text": "3 August 1970",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "it": {
+          "card_id": "main:0",
+          "expected_full_date_text": "3 agosto 1970",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "fr": {
+          "card_id": "main:0",
+          "expected_full_date_text": "3 août 1970",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "de": {
+          "card_id": "main:0",
+          "expected_full_date_text": "3. August 1970",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "es": {
+          "card_id": "main:0",
+          "expected_full_date_text": "3 de agosto de 1970",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        }
+      },
+      "internal_consistency": "data completa coerente nelle cinque lingue",
+      "external_verification_scope": "Nessuna nuova verifica esterna: controllo di presenza e coerenza dei dati forniti."
+    },
+    {
+      "batch_id": "004-catalog",
+      "entry_id": "workbook-08-20-john-carmack",
+      "title": "John Carmack",
+      "source_kind": "person",
+      "source_year_context_only": 1970,
+      "source_date_context_only": {
+        "month": 8,
+        "day": 20,
+        "precision": "day",
+        "region": ""
+      },
+      "source_event_semantics": "birth",
+      "source_factual_note": "Imported dated English Playhub editorial. Adapt its calendar wording, review publisher dates and assign rights-cleared media before presenting as a finished museum stop.",
+      "editorial_semantics": "biography_birth",
+      "birth_date_from_metadata": "1970-08-20",
+      "language_checks": {
+        "en": {
+          "card_id": "main:0",
+          "expected_full_date_text": "20 August 1970",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "it": {
+          "card_id": "main:0",
+          "expected_full_date_text": "20 agosto 1970",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "fr": {
+          "card_id": "main:0",
+          "expected_full_date_text": "20 août 1970",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "de": {
+          "card_id": "main:0",
+          "expected_full_date_text": "20. August 1970",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "es": {
+          "card_id": "main:0",
+          "expected_full_date_text": "20 de agosto de 1970",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        }
+      },
+      "internal_consistency": "data completa coerente nelle cinque lingue",
+      "external_verification_scope": "Nessuna nuova verifica esterna: controllo di presenza e coerenza dei dati forniti."
+    },
+    {
+      "batch_id": "007-catalog",
+      "entry_id": "channel-f",
+      "title": "Jerry Lawson and the Channel F team",
+      "source_kind": "person",
+      "source_year_context_only": 1976,
+      "source_date_context_only": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": ""
+      },
+      "source_event_semantics": "",
+      "source_factual_note": "",
+      "editorial_semantics": "project_or_team_event",
+      "birth_date_required_for_current_entry": false,
+      "reason": "La voce riguarda un progetto e il gruppo che lo realizza, con collocazione legata al progetto; non è una biografia individuale."
+    },
+    {
+      "batch_id": "012-catalog",
+      "entry_id": "daily-04-17",
+      "title": "Tarn Adams",
+      "source_kind": "person",
+      "source_year_context_only": 1978,
+      "source_date_context_only": {
+        "month": 4,
+        "day": 17,
+        "precision": "day",
+        "region": ""
+      },
+      "source_event_semantics": "April17 birth commemoration;1978 is not Dwarf Fortress production date",
+      "source_factual_note": "Reviewed subject correction: the original published narrative and bibliography are preserved. Some inherited bibliography/media labels described the wrong game and remain unverified for this story. The calendar day does not establish an exact release date.",
+      "editorial_semantics": "biography_birth",
+      "birth_date_from_metadata": "1978-04-17",
+      "language_checks": {
+        "en": {
+          "card_id": "main:0",
+          "expected_full_date_text": "17 April 1978",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "it": {
+          "card_id": "main:0",
+          "expected_full_date_text": "17 aprile 1978",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "fr": {
+          "card_id": "main:0",
+          "expected_full_date_text": "17 avril 1978",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "de": {
+          "card_id": "main:0",
+          "expected_full_date_text": "17. April 1978",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "es": {
+          "card_id": "main:0",
+          "expected_full_date_text": "17 de abril de 1978",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        }
+      },
+      "internal_consistency": "data completa coerente nelle cinque lingue",
+      "external_verification_scope": "Nessuna nuova verifica esterna: controllo di presenza e coerenza dei dati forniti."
+    },
+    {
+      "batch_id": "012-catalog",
+      "entry_id": "daily-12-05",
+      "title": "Neil Druckmann",
+      "source_kind": "person",
+      "source_year_context_only": 1978,
+      "source_date_context_only": {
+        "month": 12,
+        "day": 5,
+        "precision": "day",
+        "region": ""
+      },
+      "source_event_semantics": "Scheduled published Playhub edition. The calendar slot is not asserted as a historical anniversary; the year is the source's historical anchor.",
+      "source_factual_note": "",
+      "editorial_semantics": "biography_birth",
+      "birth_date_from_metadata": "1978-12-05",
+      "language_checks": {
+        "en": {
+          "card_id": "main:0",
+          "expected_full_date_text": "5 December 1978",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "it": {
+          "card_id": "main:0",
+          "expected_full_date_text": "5 dicembre 1978",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "fr": {
+          "card_id": "main:0",
+          "expected_full_date_text": "5 décembre 1978",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "de": {
+          "card_id": "main:0",
+          "expected_full_date_text": "5. Dezember 1978",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        },
+        "es": {
+          "card_id": "main:0",
+          "expected_full_date_text": "5 de diciembre de 1978",
+          "full_date_present": true,
+          "birth_year_present": true,
+          "precision": "day"
+        }
+      },
+      "internal_consistency": "data completa coerente nelle cinque lingue",
+      "external_verification_scope": "Nessuna nuova verifica esterna: controllo di presenza e coerenza dei dati forniti."
+    }
+  ],
+  "additional_project_exceptions": [
+    {
+      "batch_id": "003-catalog",
+      "entry_id": "feature-mabel-addis-classroom",
+      "kind": "feature",
+      "title": "The ruler of Lagash has to decide",
+      "anchor": "1964–1966",
+      "basis": "event_semantics esplicito: sviluppo educativo e revisione in classe nel 1964–1966; rapporto del 1967. Le card riguardano The Sumerian Game, i materiali conservati e il premio del 2023.",
+      "decision": "Conservare la collocazione del progetto; non ricavare la nascita di Mabel Addis dal 1964 e non aggiungere una data biografica a questo approfondimento."
+    },
+    {
+      "batch_id": "010-catalog",
+      "entry_id": "feature-ed-smith-apf",
+      "kind": "feature",
+      "title": "The console that left room for a computer",
+      "anchor": "1978",
+      "basis": "event_semantics esplicito: periodo APF MP 1000 nel 1978 e successiva Imagination Machine. Le card collegano i ricordi di Ed Smith al lavoro su APF.",
+      "decision": "Conservare la collocazione del progetto; il 1978 non è una nascita. Nessuna data di nascita necessaria per questa voce di progetto."
+    }
+  ],
+  "miyamoto_event_exception": "001/daily-11-16 è una biografia con nascita 1952-11-16. Le card dei riconoscimenti conservano le date specifiche: main:11, Fellowship BAFTA nel 2010; main:12, annuncio del 23 ottobre 2026 per l’Ordine della Cultura e cerimonia del 3 novembre ancora prevista nel materiale. Nessun evento spostato alla nascita e nessuna cerimonia futura trasformata in fatto già avvenuto.",
+  "recommended_previous_output_changes": {
+    "status": "applied_to_output_and_validated",
+    "reason": "Integrare il giorno e il mese già verificati sul profilo ufficiale YS NET, così anche la prosa di Yu Suzuki esplicita la nascita completa in tutte le lingue. Nessun cambiamento della collocazione, già corretta al 1958-06-10.",
+    "patches": [
+      {
+        "batch_id": "002-catalog",
+        "entry_id": "workbook-06-10-yu-suzuki",
+        "feature_id": null,
+        "card_id": "main:0",
+        "language": "en",
+        "field": "text",
+        "old_fragment": "born in 1958",
+        "new_fragment": "born on 10 June 1958",
+        "before": "Yu Suzuki, born in 1958, joined Sega in 1983 after studying electronic science at Okayama University of Science. Hang-On and Space Harrier followed in 1985. Their arcade machines used motorcycle controls, moving cabinets and scenery that rapidly changed scale to give players a physical sense of movement. Space Harrier took that speed into a fantastical landscape, making the cabinet and the image on screen parts of the same experience.",
+        "after": "Yu Suzuki, born on 10 June 1958, joined Sega in 1983 after studying electronic science at Okayama University of Science. Hang-On and Space Harrier followed in 1985. Their arcade machines used motorcycle controls, moving cabinets and scenery that rapidly changed scale to give players a physical sense of movement. Space Harrier took that speed into a fantastical landscape, making the cabinet and the image on screen parts of the same experience."
+      },
+      {
+        "batch_id": "002-catalog",
+        "entry_id": "workbook-06-10-yu-suzuki",
+        "feature_id": null,
+        "card_id": "main:0",
+        "language": "it",
+        "field": "text",
+        "old_fragment": "Nato nel 1958",
+        "new_fragment": "Nato il 10 giugno 1958",
+        "before": "Nato nel 1958, Yu Suzuki entrò in Sega nel 1983 dopo aver studiato elettronica alla Okayama University of Science. Nel 1985 arrivarono Hang-On e Space Harrier. Comandi da motocicletta, cabinati mobili e scenari che cambiavano rapidamente scala davano ai giocatori una sensazione fisica del movimento. Space Harrier portava quella velocità in un paesaggio fantastico: ciò che accadeva sullo schermo e la macchina su cui si giocava concorrevano alla stessa esperienza.",
+        "after": "Nato il 10 giugno 1958, Yu Suzuki entrò in Sega nel 1983 dopo aver studiato elettronica alla Okayama University of Science. Nel 1985 arrivarono Hang-On e Space Harrier. Comandi da motocicletta, cabinati mobili e scenari che cambiavano rapidamente scala davano ai giocatori una sensazione fisica del movimento. Space Harrier portava quella velocità in un paesaggio fantastico: ciò che accadeva sullo schermo e la macchina su cui si giocava concorrevano alla stessa esperienza."
+      },
+      {
+        "batch_id": "002-catalog",
+        "entry_id": "workbook-06-10-yu-suzuki",
+        "feature_id": null,
+        "card_id": "main:0",
+        "language": "fr",
+        "field": "text",
+        "old_fragment": "Né en 1958",
+        "new_fragment": "Né le 10 juin 1958",
+        "before": "Né en 1958, Yu Suzuki a rejoint Sega en 1983 après des études d’électronique à Okayama University of Science. Hang-On et Space Harrier ont suivi en 1985. Commandes de moto, bornes mobiles et décors changeant rapidement d’échelle donnaient aux joueurs une sensation physique du mouvement. Space Harrier transportait cette vitesse dans un paysage fantastique : la machine et les images à l’écran participaient à la même expérience.",
+        "after": "Né le 10 juin 1958, Yu Suzuki a rejoint Sega en 1983 après des études d’électronique à Okayama University of Science. Hang-On et Space Harrier ont suivi en 1985. Commandes de moto, bornes mobiles et décors changeant rapidement d’échelle donnaient aux joueurs une sensation physique du mouvement. Space Harrier transportait cette vitesse dans un paysage fantastique : la machine et les images à l’écran participaient à la même expérience."
+      },
+      {
+        "batch_id": "002-catalog",
+        "entry_id": "workbook-06-10-yu-suzuki",
+        "feature_id": null,
+        "card_id": "main:0",
+        "language": "de",
+        "field": "text",
+        "old_fragment": "wurde 1958 geboren",
+        "new_fragment": "wurde am 10. Juni 1958 geboren",
+        "before": "Yu Suzuki wurde 1958 geboren und kam 1983 nach einem Elektronikstudium an der Okayama University of Science zu Sega. 1985 folgten Hang-On und Space Harrier. Motorradbedienelemente, bewegliche Automatengehäuse und Landschaften mit rasch wechselnder Größe machten Bewegung für die Spieler körperlich erfahrbar. Space Harrier versetzte dieses Tempo in eine fantastische Landschaft. Der Automat und die Bilder auf dem Bildschirm wirkten dabei zusammen.",
+        "after": "Yu Suzuki wurde am 10. Juni 1958 geboren und kam 1983 nach einem Elektronikstudium an der Okayama University of Science zu Sega. 1985 folgten Hang-On und Space Harrier. Motorradbedienelemente, bewegliche Automatengehäuse und Landschaften mit rasch wechselnder Größe machten Bewegung für die Spieler körperlich erfahrbar. Space Harrier versetzte dieses Tempo in eine fantastische Landschaft. Der Automat und die Bilder auf dem Bildschirm wirkten dabei zusammen."
+      },
+      {
+        "batch_id": "002-catalog",
+        "entry_id": "workbook-06-10-yu-suzuki",
+        "feature_id": null,
+        "card_id": "main:0",
+        "language": "es",
+        "field": "text",
+        "old_fragment": "nació en 1958",
+        "new_fragment": "nació el 10 de junio de 1958",
+        "before": "Yu Suzuki nació en 1958 y se incorporó a Sega en 1983, después de estudiar electrónica en Okayama University of Science. Hang-On y Space Harrier llegaron en 1985. Los mandos de motocicleta, las cabinas móviles y los escenarios que cambiaban rápidamente de escala daban al jugador una sensación física del movimiento. Space Harrier trasladaba esa velocidad a un paisaje fantástico: la máquina y las imágenes de la pantalla formaban parte de una misma experiencia.",
+        "after": "Yu Suzuki nació el 10 de junio de 1958 y se incorporó a Sega en 1983, después de estudiar electrónica en Okayama University of Science. Hang-On y Space Harrier llegaron en 1985. Los mandos de motocicleta, las cabinas móviles y los escenarios que cambiaban rápidamente de escala daban al jugador una sensación física del movimiento. Space Harrier trasladaba esa velocidad a un paisaje fantástico: la máquina y las imágenes de la pantalla formaban parte de una misma experiencia."
+      }
+    ],
+    "sources_reused": {
+      "batch_id": "002-catalog",
+      "entry_id": "workbook-06-10-yu-suzuki",
+      "person_name": "Yu Suzuki",
+      "birth_date": "1958-06-10",
+      "precision": "day",
+      "verified_on": "2026-10-29",
+      "status": "confermata da una fonte primaria ufficiale",
+      "reason_for_lookup": "La prosa fornita e quella già riscritta riportavano soltanto il 1958; il giorno e il mese erano nei metadati birth. Ricerca mirata autorizzata dall’utente per confermare la data completa.",
+      "sources": [
+        {
+          "title": "Yu Suzuki — YS NET",
+          "publisher": "YS NET Inc.",
+          "url": "https://www.ysnet.games/en/yu-suzuki",
+          "source_type": "Profilo biografico ufficiale sul sito dello studio dell’interessato",
+          "accessed_on": "2026-10-29",
+          "locator": "Profile, primo paragrafo biografico dopo l’introduzione",
+          "supports": "Data di nascita: 10 giugno 1958."
+        },
+        {
+          "title": "Yu Suzuki — YS NET, versione giapponese",
+          "publisher": "YS NET Inc.",
+          "url": "https://www.ysnet.games/jp/suzuki-yu",
+          "source_type": "Versione giapponese dello stesso profilo ufficiale; non una seconda fonte indipendente",
+          "accessed_on": "2026-10-29",
+          "locator": "Profilo, riga che inizia con 1958",
+          "supports": "Stessa data di nascita: 10 giugno 1958."
+        }
+      ],
+      "integration_action": "Conservare la collocazione già corretta al 10 giugno 1958. La fonte è pronta per esplicitare la data completa se la voce verrà riaperta; non è necessario cambiare gli OUTPUT precedenti per allineare la timeline.",
+      "previous_output_changed": false,
+      "original_input_changed": false
+    },
+    "applied_on": "2026-10-29",
+    "output_file": "002-catalog/OUTPUT-002-catalog.json",
+    "output_sha256_before": "92d18a92ac0fee1cbf285a8105c98f4e603607e8d48bdafa3a3a40d440cfedd2",
+    "output_sha256_after": "bb29de84e0e567cc3b8e7839925e261685c030b53b1f1aec0938e5915311d5c4",
+    "modified_fields_count": 5,
+    "validation": {
+      "valid": true,
+      "batch_id": "002-catalog",
+      "completed": true,
+      "entry_count": 8,
+      "card_count_per_language": 50,
+      "language_count": 5,
+      "translated_card_count": 250,
+      "entry_card_counts": {
+        "workbook-02-24-sid-meier": 7,
+        "workbook-01-25-t-ru-iwatani": 4,
+        "workbook-01-17-shinichi-nakamoto": 4,
+        "workbook-06-10-yu-suzuki": 6,
+        "tennis-for-two": 7,
+        "daily-12-06": 11,
+        "workbook-01-20-will-wright-game-designer": 4,
+        "spacewar": 7
+      },
+      "issue_counts": {
+        "workbook-02-24-sid-meier": 0,
+        "workbook-01-25-t-ru-iwatani": 1,
+        "workbook-01-17-shinichi-nakamoto": 1,
+        "workbook-06-10-yu-suzuki": 0,
+        "tennis-for-two": 1,
+        "daily-12-06": 2,
+        "workbook-01-20-will-wright-game-designer": 2,
+        "spacewar": 1
+      },
+      "summary_checks": [
+        {
+          "entry_id": "workbook-02-24-sid-meier",
+          "feature_id": null,
+          "english_summary_words": 31
+        },
+        {
+          "entry_id": "workbook-02-24-sid-meier",
+          "feature_id": "feature-sid-meier-systems",
+          "english_summary_words": 33
+        },
+        {
+          "entry_id": "workbook-01-25-t-ru-iwatani",
+          "feature_id": null,
+          "english_summary_words": 35
+        },
+        {
+          "entry_id": "workbook-01-17-shinichi-nakamoto",
+          "feature_id": null,
+          "english_summary_words": 36
+        },
+        {
+          "entry_id": "workbook-06-10-yu-suzuki",
+          "feature_id": null,
+          "english_summary_words": 35
+        },
+        {
+          "entry_id": "tennis-for-two",
+          "feature_id": null,
+          "english_summary_words": 36
+        },
+        {
+          "entry_id": "tennis-for-two",
+          "feature_id": "feature-tennis-open-house",
+          "english_summary_words": 34
+        },
+        {
+          "entry_id": "daily-12-06",
+          "feature_id": null,
+          "english_summary_words": 33
+        },
+        {
+          "entry_id": "daily-12-06",
+          "feature_id": "feature-satoru-iwata-listening",
+          "english_summary_words": 34
+        },
+        {
+          "entry_id": "workbook-01-20-will-wright-game-designer",
+          "feature_id": null,
+          "english_summary_words": 34
+        },
+        {
+          "entry_id": "spacewar",
+          "feature_id": null,
+          "english_summary_words": 34
+        },
+        {
+          "entry_id": "spacewar",
+          "feature_id": "feature-spacewar-sharing",
+          "english_summary_words": 37
+        }
+      ],
+      "editorial_review": [],
+      "failures": []
+    },
+    "original_input_changed": false,
+    "catalog_changed": false
+  },
+  "current_batch_missing_birth_research": {
+    "batch_id": "015-catalog",
+    "entry_id": "roberta-williams",
+    "person_name": "Roberta Williams",
+    "original_kind": "person",
+    "original_title": "Roberta Williams and Mystery House",
+    "original_year_context_only": 1980,
+    "original_event_semantics": "",
+    "birth_date": "1953-02-16",
+    "precision": "day",
+    "verified_on": "2026-10-29",
+    "status": "birth_date_verified_official_primary_source",
+    "sources": [
+      {
+        "title": "Roberta Williams Biography — King's Quest Creator",
+        "publisher": "Roberta Williams, sito ufficiale",
+        "url": "https://robertawilliams.com/about-roberta/",
+        "source_type": "Biografia ufficiale sul sito della persona",
+        "accessed_on": "2026-10-29",
+        "locator": "Her Story; 1953–1971 · Origins; A girl from Claremont, primo paragrafo (riga 22 nella lettura web)",
+        "supports": "Nascita il 16 febbraio 1953."
+      },
+      {
+        "title": "Roberta Williams — Sierra Gamers",
+        "publisher": "Sierra Gamers",
+        "url": "https://www.sierragamers.com/roberta-williams/",
+        "source_type": "Profilo nell’archivio ufficiale Sierra Gamers, dichiaratamente ripreso da MobyGames; riscontro secondario, non una fonte primaria indipendente",
+        "accessed_on": "2026-10-29",
+        "locator": "Developer Profile (From Mobygames), primo paragrafo",
+        "supports": "Stessa data: 16 febbraio 1953."
+      }
+    ],
+    "date_conflicts_found": false,
+    "other_conflicts_outside_scope": "Nessun luogo di nascita o altro dato biografico importato. La ricerca autorizzata riguarda soltanto la data.",
+    "allowed_fact_to_import": "Soltanto la nascita il 16 febbraio 1953; non importare informazioni sullo sviluppo dei giochi dalla biografia consultata.",
+    "editorial_semantics_recommendation": "Voce person dedicata a una singola autrice, con Mystery House come opera centrale e una feature che segue il lavoro in altre opere fino all’intervista del 2022; event_semantics vuoto. Il titolo composito non equivale di per sé a una data di evento esplicita. In base alla nuova regola dell’utente, esplicitare la nascita nelle cinque lingue e preparare un riallineamento alla nascita per l’integrazione. Conservare il 1980 come anno di Mystery House nel testo, non come nascita. Mabel Addis ed Ed Smith, invece, sono approfondimenti autonomi con periodi di progetto dichiarati esplicitamente nei metadati.",
+    "recommended_metadata_integration": {
+      "entry_id": "roberta-williams",
+      "year": 1953,
+      "date": {
+        "month": 2,
+        "day": 16,
+        "precision": "day"
+      },
+      "event_semantics": "birth",
+      "status": "proposal_only_original_input_and_catalog_unchanged"
+    },
+    "recommended_prose_action": "Data completa integrata nel sommario e in main:0 nelle cinque lingue; il 1980 resta associato a Mystery House. Il solo riallineamento dei metadati è ancora proposto per l’integrazione.",
+    "parent_decision_received": "Applicata la nascita ai testi; nomi propri e ID invariati, adattata soltanto la congiunzione del titolo editoriale composito. INPUT e catalogo non modificati.",
+    "prose_integration_status": "applied_to_015_main_summary_and_main_0_in_all_five_languages"
+  },
+  "all_entry_inventory": [
+    {
+      "batch_id": "001-catalog",
+      "entry_id": "daily-09-23",
+      "kind": "technology",
+      "title": "Nintendo",
+      "event_semantics": "Scheduled published Playhub edition. The calendar slot is not asserted as a historical anniversary; the year is the source's historical anchor."
+    },
+    {
+      "batch_id": "001-catalog",
+      "entry_id": "josef-kates",
+      "kind": "person",
+      "title": "Josef Kates",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "001-catalog",
+      "entry_id": "wikipedia-292874",
+      "kind": "person",
+      "title": "Ralph Baer",
+      "event_semantics": "Birthdate anchor 1922-03-08. Later career dates belong to the specifically dated reference paragraphs, not to the birth year."
+    },
+    {
+      "batch_id": "001-catalog",
+      "entry_id": "daily-01-18",
+      "kind": "person",
+      "title": "Takeshi Kitano",
+      "event_semantics": "Scheduled published Playhub edition. The calendar slot is not asserted as a historical anniversary; the year is the source's historical anchor."
+    },
+    {
+      "batch_id": "001-catalog",
+      "entry_id": "nimrod",
+      "kind": "technology",
+      "title": "Nimrod",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "001-catalog",
+      "entry_id": "oxo",
+      "kind": "game",
+      "title": "OXO",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "001-catalog",
+      "entry_id": "daily-11-16",
+      "kind": "person",
+      "title": "Shigeru Miyamoto",
+      "event_semantics": "Scheduled published Playhub edition. The calendar slot is not asserted as a historical anniversary; the year is the source's historical anchor."
+    },
+    {
+      "batch_id": "002-catalog",
+      "entry_id": "workbook-02-24-sid-meier",
+      "kind": "person",
+      "title": "Sid Meier",
+      "event_semantics": "Birthdate anchor 1954-02-24. Later career dates belong to the specifically dated reference paragraphs, not to the birth year."
+    },
+    {
+      "batch_id": "002-catalog",
+      "entry_id": "workbook-01-25-t-ru-iwatani",
+      "kind": "person",
+      "title": "Tōru Iwatani",
+      "event_semantics": "birth"
+    },
+    {
+      "batch_id": "002-catalog",
+      "entry_id": "workbook-01-17-shinichi-nakamoto",
+      "kind": "person",
+      "title": "Shinichi Nakamoto",
+      "event_semantics": "birth"
+    },
+    {
+      "batch_id": "002-catalog",
+      "entry_id": "workbook-06-10-yu-suzuki",
+      "kind": "person",
+      "title": "Yu Suzuki",
+      "event_semantics": "birth"
+    },
+    {
+      "batch_id": "002-catalog",
+      "entry_id": "tennis-for-two",
+      "kind": "game",
+      "title": "Tennis for Two",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "002-catalog",
+      "entry_id": "daily-12-06",
+      "kind": "person",
+      "title": "Satoru Iwata",
+      "event_semantics": "Scheduled published Playhub edition. The calendar slot is not asserted as a historical anniversary; the year is the source's historical anchor."
+    },
+    {
+      "batch_id": "002-catalog",
+      "entry_id": "workbook-01-20-will-wright-game-designer",
+      "kind": "person",
+      "title": "Will Wright",
+      "event_semantics": "birth"
+    },
+    {
+      "batch_id": "002-catalog",
+      "entry_id": "spacewar",
+      "kind": "game",
+      "title": "Spacewar!",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "003-catalog",
+      "entry_id": "daily-11-25",
+      "kind": "person",
+      "title": "Hironobu Sakaguchi",
+      "event_semantics": "Scheduled published Playhub edition. The calendar slot is not asserted as a historical anniversary; the year is the source's historical anchor."
+    },
+    {
+      "batch_id": "003-catalog",
+      "entry_id": "daily-08-24",
+      "kind": "person",
+      "title": "Hideo Kojima",
+      "event_semantics": "Scheduled published Playhub edition. The calendar slot is not asserted as a historical anniversary; the year is the source's historical anchor."
+    },
+    {
+      "batch_id": "003-catalog",
+      "entry_id": "feature-mabel-addis-classroom",
+      "kind": "feature",
+      "title": "The ruler of Lagash has to decide",
+      "event_semantics": "Educational development and classroom revision, 1964–1966; primary final report published June 1967. No commercial release date asserted."
+    },
+    {
+      "batch_id": "003-catalog",
+      "entry_id": "workbook-02-22-ed-boon",
+      "kind": "person",
+      "title": "Ed Boon",
+      "event_semantics": "Birthdate anchor 1964-02-22. Later career dates belong to the specifically dated reference paragraphs, not to the birth year."
+    },
+    {
+      "batch_id": "003-catalog",
+      "entry_id": "workbook-01-24-takashi-tokita",
+      "kind": "person",
+      "title": "Takashi Tokita",
+      "event_semantics": "birth"
+    },
+    {
+      "batch_id": "003-catalog",
+      "entry_id": "daily-09-17",
+      "kind": "person",
+      "title": "Yuji Naka",
+      "event_semantics": "Scheduled published Playhub edition. The calendar slot is not asserted as a historical anniversary; the year is the source's historical anchor."
+    },
+    {
+      "batch_id": "003-catalog",
+      "entry_id": "workbook-07-31-tecmo",
+      "kind": "organization",
+      "title": "Tecmo",
+      "event_semantics": "foundation"
+    },
+    {
+      "batch_id": "003-catalog",
+      "entry_id": "daily-12-12",
+      "kind": "person",
+      "title": "Yuzo Koshiro",
+      "event_semantics": "Scheduled published Playhub edition. The calendar slot is not asserted as a historical anniversary; the year is the source's historical anchor."
+    },
+    {
+      "batch_id": "004-catalog",
+      "entry_id": "brown-box",
+      "kind": "person",
+      "title": "Brown Box: Baer, Harrison and Rusch",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "004-catalog",
+      "entry_id": "workbook-01-19-nobuyoshi-sano",
+      "kind": "person",
+      "title": "Nobuyoshi Sano",
+      "event_semantics": "birth"
+    },
+    {
+      "batch_id": "004-catalog",
+      "entry_id": "workbook-08-03-masahiro-sakurai",
+      "kind": "person",
+      "title": "Masahiro Sakurai",
+      "event_semantics": "birth"
+    },
+    {
+      "batch_id": "004-catalog",
+      "entry_id": "workbook-08-20-john-carmack",
+      "kind": "person",
+      "title": "John Carmack",
+      "event_semantics": "birth"
+    },
+    {
+      "batch_id": "004-catalog",
+      "entry_id": "oregon-trail",
+      "kind": "game",
+      "title": "The Oregon Trail",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "004-catalog",
+      "entry_id": "wikipedia-292879",
+      "kind": "game",
+      "title": "Computer Space",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "004-catalog",
+      "entry_id": "wikipedia-6526451",
+      "kind": "game",
+      "title": "Galaxy Game",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "004-catalog",
+      "entry_id": "wikipedia-878616",
+      "kind": "game",
+      "title": "Star Trek",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "004-catalog",
+      "entry_id": "odyssey",
+      "kind": "console",
+      "title": "Magnavox Odyssey",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "004-catalog",
+      "entry_id": "wikipedia-6896436",
+      "kind": "game",
+      "title": "Empire",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "005-catalog",
+      "entry_id": "workbook-06-27-atari",
+      "kind": "organization",
+      "title": "Atari",
+      "event_semantics": "foundation"
+    },
+    {
+      "batch_id": "005-catalog",
+      "entry_id": "pong",
+      "kind": "game",
+      "title": "Pong",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "005-catalog",
+      "entry_id": "wikipedia-1120399",
+      "kind": "game",
+      "title": "Maze",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "005-catalog",
+      "entry_id": "wikipedia-13136650",
+      "kind": "game",
+      "title": "Trek73",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "005-catalog",
+      "entry_id": "wikipedia-14323",
+      "kind": "game",
+      "title": "Hunt the Wumpus",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "005-catalog",
+      "entry_id": "wikipedia-3989467",
+      "kind": "game",
+      "title": "Lemonade Stand",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "005-catalog",
+      "entry_id": "wikipedia-6336052",
+      "kind": "game",
+      "title": "Space Race",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "005-catalog",
+      "entry_id": "wikipedia-5143231",
+      "kind": "game",
+      "title": "Gotcha",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "005-catalog",
+      "entry_id": "wikipedia-14924978",
+      "kind": "game",
+      "title": "Qwak!",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "005-catalog",
+      "entry_id": "wikipedia-15050884",
+      "kind": "game",
+      "title": "Rebound",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "006-catalog",
+      "entry_id": "wikipedia-312108",
+      "kind": "game",
+      "title": "Spasim",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "006-catalog",
+      "entry_id": "wikipedia-33200143",
+      "kind": "game",
+      "title": "Speed Race",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "006-catalog",
+      "entry_id": "wikipedia-3387098",
+      "kind": "game",
+      "title": "Tank",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "006-catalog",
+      "entry_id": "wikipedia-3426165",
+      "kind": "game",
+      "title": "Gran Trak 10",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "006-catalog",
+      "entry_id": "wikipedia-3467400",
+      "kind": "game",
+      "title": "Star Trader",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "006-catalog",
+      "entry_id": "wikipedia-5527524",
+      "kind": "game",
+      "title": "Touch Me",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "006-catalog",
+      "entry_id": "wikipedia-59439565",
+      "kind": "game",
+      "title": "Wander",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "006-catalog",
+      "entry_id": "wikipedia-1055604",
+      "kind": "game",
+      "title": "Gun Fight",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "006-catalog",
+      "entry_id": "wikipedia-1064371",
+      "kind": "game",
+      "title": "Dnd",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "006-catalog",
+      "entry_id": "wikipedia-3160774",
+      "kind": "game",
+      "title": "Pedit5",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "007-catalog",
+      "entry_id": "wikipedia-6905299",
+      "kind": "game",
+      "title": "Doctor Pong",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "007-catalog",
+      "entry_id": "wikipedia-15420996",
+      "kind": "game",
+      "title": "Shark Jaws",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "007-catalog",
+      "entry_id": "channel-f",
+      "kind": "person",
+      "title": "Jerry Lawson and the Channel F team",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "007-catalog",
+      "entry_id": "wikipedia-1030025",
+      "kind": "game",
+      "title": "Night Driver",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "007-catalog",
+      "entry_id": "wikipedia-11415956",
+      "kind": "game",
+      "title": "Sea Wolf",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "007-catalog",
+      "entry_id": "wikipedia-12647317",
+      "kind": "game",
+      "title": "F-1",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "007-catalog",
+      "entry_id": "wikipedia-12773630",
+      "kind": "game",
+      "title": "Stunt Cycle",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "007-catalog",
+      "entry_id": "wikipedia-14909816",
+      "kind": "game",
+      "title": "Outlaw",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "007-catalog",
+      "entry_id": "wikipedia-1631185",
+      "kind": "game",
+      "title": "Tanktics: Computer Game of Armored Combat on the Eastern Front",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "007-catalog",
+      "entry_id": "wikipedia-22815518",
+      "kind": "game",
+      "title": "Fonz",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "008-catalog",
+      "entry_id": "wikipedia-261798",
+      "kind": "game",
+      "title": "Colossal Cave Adventure",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "008-catalog",
+      "entry_id": "wikipedia-43440042",
+      "kind": "game",
+      "title": "Death Race",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "008-catalog",
+      "entry_id": "wikipedia-43958708",
+      "kind": "game",
+      "title": "Fairchild Channel F Videocarts",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "008-catalog",
+      "entry_id": "wikipedia-57884008",
+      "kind": "game",
+      "title": "Trek-80",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "008-catalog",
+      "entry_id": "wikipedia-6150793",
+      "kind": "game",
+      "title": "Mattel Auto Race",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "008-catalog",
+      "entry_id": "wikipedia-7748212",
+      "kind": "game",
+      "title": "Blockade",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "008-catalog",
+      "entry_id": "wikipedia-8661812",
+      "kind": "game",
+      "title": "Heavyweight Champ",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "008-catalog",
+      "entry_id": "wikipedia-453246",
+      "kind": "game",
+      "title": "Breakout",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "008-catalog",
+      "entry_id": "wikipedia-6407873",
+      "kind": "game",
+      "title": "Microchess",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "008-catalog",
+      "entry_id": "atari-vcs",
+      "kind": "console",
+      "title": "Atari Video Computer System",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "009-catalog",
+      "entry_id": "wikipedia-1038195",
+      "kind": "game",
+      "title": "Combat",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "009-catalog",
+      "entry_id": "wikipedia-24209616",
+      "kind": "game",
+      "title": "Super Bug",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "009-catalog",
+      "entry_id": "wikipedia-28346465",
+      "kind": "game",
+      "title": "Surround",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "009-catalog",
+      "entry_id": "wikipedia-2893905",
+      "kind": "game",
+      "title": "Air-Sea Battle",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "009-catalog",
+      "entry_id": "wikipedia-34080300",
+      "kind": "game",
+      "title": "DND",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "009-catalog",
+      "entry_id": "wikipedia-34419",
+      "kind": "game",
+      "title": "Zork",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "009-catalog",
+      "entry_id": "wikipedia-37849828",
+      "kind": "game",
+      "title": "Triple Hunt",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "009-catalog",
+      "entry_id": "wikipedia-4131576",
+      "kind": "game",
+      "title": "Basic Math",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "009-catalog",
+      "entry_id": "wikipedia-4153178",
+      "kind": "game",
+      "title": "Blackjack (Atari 2600 video game)",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "009-catalog",
+      "entry_id": "wikipedia-4166154",
+      "kind": "game",
+      "title": "Star Ship",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "010-catalog",
+      "entry_id": "wikipedia-53395791",
+      "kind": "game",
+      "title": "Shoot Away",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "010-catalog",
+      "entry_id": "wikipedia-60355975",
+      "kind": "game",
+      "title": "Target",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "010-catalog",
+      "entry_id": "wikipedia-6028366",
+      "kind": "game",
+      "title": "Indy 500",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "010-catalog",
+      "entry_id": "feature-ed-smith-apf",
+      "kind": "feature",
+      "title": "The console that left room for a computer",
+      "event_semantics": "APF MP 1000 console period, 1978, and the subsequent Imagination Machine expansion; no exact development or retail day asserted."
+    },
+    {
+      "batch_id": "010-catalog",
+      "entry_id": "mud",
+      "kind": "technology",
+      "title": "MUD",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "010-catalog",
+      "entry_id": "wikipedia-10439211",
+      "kind": "game",
+      "title": "Santa Paravia en Fiumaccio",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "010-catalog",
+      "entry_id": "wikipedia-11123702",
+      "kind": "game",
+      "title": "Starfleet Orion",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "010-catalog",
+      "entry_id": "wikipedia-1706173",
+      "kind": "game",
+      "title": "Decwar",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "010-catalog",
+      "entry_id": "wikipedia-21772968",
+      "kind": "game",
+      "title": "Slot Racers",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "010-catalog",
+      "entry_id": "wikipedia-23964910",
+      "kind": "game",
+      "title": "Football",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "011-catalog",
+      "entry_id": "wikipedia-2669815",
+      "kind": "game",
+      "title": "Star Fire",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "011-catalog",
+      "entry_id": "wikipedia-28187371",
+      "kind": "game",
+      "title": "Beneath Apple Manor",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "011-catalog",
+      "entry_id": "wikipedia-28566279",
+      "kind": "game",
+      "title": "A Game of Concentration",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "011-catalog",
+      "entry_id": "wikipedia-29587533",
+      "kind": "game",
+      "title": "Brain Games",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "011-catalog",
+      "entry_id": "wikipedia-3331986",
+      "kind": "game",
+      "title": "Cosmic Conflict",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "011-catalog",
+      "entry_id": "wikipedia-33547270",
+      "kind": "game",
+      "title": "The Cottage",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "011-catalog",
+      "entry_id": "wikipedia-4269341",
+      "kind": "game",
+      "title": "Basketball",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "011-catalog",
+      "entry_id": "wikipedia-4410557",
+      "kind": "game",
+      "title": "Gee Bee",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "011-catalog",
+      "entry_id": "wikipedia-4567330",
+      "kind": "game",
+      "title": "Super Breakout",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "011-catalog",
+      "entry_id": "wikipedia-55710489",
+      "kind": "game",
+      "title": "Air Traffic Controller",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "012-catalog",
+      "entry_id": "wikipedia-61670331",
+      "kind": "game",
+      "title": "Codebreaker",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "012-catalog",
+      "entry_id": "wikipedia-6343531",
+      "kind": "game",
+      "title": "Avalanche",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "012-catalog",
+      "entry_id": "wikipedia-6623677",
+      "kind": "game",
+      "title": "Mystery Mansion",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "012-catalog",
+      "entry_id": "wikipedia-66830767",
+      "kind": "game",
+      "title": "Home Run",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "012-catalog",
+      "entry_id": "wikipedia-79160172",
+      "kind": "game",
+      "title": "Dungeon Campaign",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "012-catalog",
+      "entry_id": "wikipedia-9675437",
+      "kind": "game",
+      "title": "Frogs",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "012-catalog",
+      "entry_id": "daily-04-17",
+      "kind": "person",
+      "title": "Tarn Adams",
+      "event_semantics": "April17 birth commemoration;1978 is not Dwarf Fortress production date"
+    },
+    {
+      "batch_id": "012-catalog",
+      "entry_id": "space-invaders",
+      "kind": "game",
+      "title": "Space Invaders",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "012-catalog",
+      "entry_id": "workbook-07-25-koei",
+      "kind": "organization",
+      "title": "Koei",
+      "event_semantics": "foundation"
+    },
+    {
+      "batch_id": "012-catalog",
+      "entry_id": "daily-12-05",
+      "kind": "person",
+      "title": "Neil Druckmann",
+      "event_semantics": "Scheduled published Playhub edition. The calendar slot is not asserted as a historical anniversary; the year is the source's historical anchor."
+    },
+    {
+      "batch_id": "013-catalog",
+      "entry_id": "adventure",
+      "kind": "game",
+      "title": "Adventure",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "013-catalog",
+      "entry_id": "wikipedia-1022715",
+      "kind": "game",
+      "title": "Starhawk",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "013-catalog",
+      "entry_id": "wikipedia-12781319",
+      "kind": "game",
+      "title": "Monaco GP",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "013-catalog",
+      "entry_id": "wikipedia-13991276",
+      "kind": "game",
+      "title": "Lunar Lander",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "013-catalog",
+      "entry_id": "wikipedia-16743508",
+      "kind": "game",
+      "title": "Tail Gunner",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "013-catalog",
+      "entry_id": "wikipedia-17216673",
+      "kind": "game",
+      "title": "Superman",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "013-catalog",
+      "entry_id": "wikipedia-18668889",
+      "kind": "game",
+      "title": "Heiankyo Alien",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "013-catalog",
+      "entry_id": "wikipedia-19560129",
+      "kind": "game",
+      "title": "HAUNT",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "013-catalog",
+      "entry_id": "wikipedia-21018400",
+      "kind": "game",
+      "title": "Head On",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "013-catalog",
+      "entry_id": "wikipedia-24309673",
+      "kind": "game",
+      "title": "Deep Scan",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "014-catalog",
+      "entry_id": "wikipedia-3333468",
+      "kind": "game",
+      "title": "Avatar",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "014-catalog",
+      "entry_id": "wikipedia-3659175",
+      "kind": "game",
+      "title": "Space Invaders Part II",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "014-catalog",
+      "entry_id": "wikipedia-410696",
+      "kind": "game",
+      "title": "Akalabeth: World of Doom",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "014-catalog",
+      "entry_id": "wikipedia-4410574",
+      "kind": "game",
+      "title": "Bomb Bee",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "014-catalog",
+      "entry_id": "wikipedia-4410578",
+      "kind": "game",
+      "title": "Cutie Q",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "014-catalog",
+      "entry_id": "wikipedia-51010494",
+      "kind": "game",
+      "title": "Dog Star Adventure",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "014-catalog",
+      "entry_id": "wikipedia-5902299",
+      "kind": "game",
+      "title": "Sheriff",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "014-catalog",
+      "entry_id": "wikipedia-61666756",
+      "kind": "game",
+      "title": "Human Cannonball",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "014-catalog",
+      "entry_id": "wikipedia-6888212",
+      "kind": "game",
+      "title": "Space",
+      "event_semantics": ""
+    },
+    {
+      "batch_id": "014-catalog",
+      "entry_id": "wikipedia-69126374",
+      "kind": "game",
+      "title": "Zero Zap",
+      "event_semantics": ""
+    }
+  ],
+  "nested_feature_inventory": [
+    {
+      "batch_id": "002-catalog",
+      "entry_id": "workbook-02-24-sid-meier",
+      "feature_id": "feature-sid-meier-systems",
+      "title": "A new build on the chair"
+    },
+    {
+      "batch_id": "002-catalog",
+      "entry_id": "tennis-for-two",
+      "feature_id": "feature-tennis-open-house",
+      "title": "Two controls at a laboratory open day"
+    },
+    {
+      "batch_id": "002-catalog",
+      "entry_id": "daily-12-06",
+      "feature_id": "feature-satoru-iwata-listening",
+      "title": "Ask where the decision came from"
+    },
+    {
+      "batch_id": "002-catalog",
+      "entry_id": "spacewar",
+      "feature_id": "feature-spacewar-sharing",
+      "title": "A game improved by the next pair of hands"
+    },
+    {
+      "batch_id": "003-catalog",
+      "entry_id": "daily-11-25",
+      "feature_id": "feature-hironobu-sakaguchi-production",
+      "title": "Choosing a story from many hands"
+    },
+    {
+      "batch_id": "003-catalog",
+      "entry_id": "daily-11-25",
+      "feature_id": "feature-hironobu-sakaguchi-production-team",
+      "title": "Learning what a producer carries"
+    },
+    {
+      "batch_id": "003-catalog",
+      "entry_id": "daily-11-25",
+      "feature_id": "feature-hironobu-sakaguchi-production-team-art",
+      "title": "Leaving room for another imagination"
+    },
+    {
+      "batch_id": "003-catalog",
+      "entry_id": "daily-12-12",
+      "feature_id": "feature-yuzo-koshiro-fm",
+      "title": "Yuzo Koshiro: programming a dance floor"
+    },
+    {
+      "batch_id": "004-catalog",
+      "entry_id": "brown-box",
+      "feature_id": "feature-brown-box-team",
+      "title": "A game takes shape on the workbench"
+    },
+    {
+      "batch_id": "004-catalog",
+      "entry_id": "workbook-08-20-john-carmack",
+      "feature_id": "feature-john-carmack-engineering",
+      "title": "What an engine leaves behind"
+    },
+    {
+      "batch_id": "004-catalog",
+      "entry_id": "odyssey",
+      "feature_id": "feature-odyssey-overlays",
+      "title": "Odyssey beyond the circuit"
+    },
+    {
+      "batch_id": "005-catalog",
+      "entry_id": "pong",
+      "feature_id": "feature-coin-op-location-test",
+      "title": "The machine meets its location"
+    },
+    {
+      "batch_id": "007-catalog",
+      "entry_id": "channel-f",
+      "feature_id": "feature-lawson-cartridge-team",
+      "title": "A cartridge has to survive the living room"
+    },
+    {
+      "batch_id": "007-catalog",
+      "entry_id": "channel-f",
+      "feature_id": "feature-video-soft-business",
+      "title": "VideoSoft beyond the cartridge"
+    },
+    {
+      "batch_id": "008-catalog",
+      "entry_id": "wikipedia-261798",
+      "feature_id": "feature-colossal-cave-language",
+      "title": "A cave made of decisions"
+    },
+    {
+      "batch_id": "008-catalog",
+      "entry_id": "wikipedia-453246",
+      "feature_id": "feature-pong-operators",
+      "title": "Keeping the next game ready"
+    },
+    {
+      "batch_id": "008-catalog",
+      "entry_id": "atari-vcs",
+      "feature_id": "feature-programmable-living-room",
+      "title": "Learning the new box"
+    },
+    {
+      "batch_id": "010-catalog",
+      "entry_id": "mud",
+      "feature_id": "feature-mud-online-identity",
+      "title": "Who shares the dark?"
+    },
+    {
+      "batch_id": "012-catalog",
+      "entry_id": "space-invaders",
+      "feature_id": "feature-space-invaders-space",
+      "title": "Pressure across the screen"
+    },
+    {
+      "batch_id": "013-catalog",
+      "entry_id": "adventure",
+      "feature_id": "feature-credits-as-historical-record",
+      "title": "Keeping the makers' names"
+    }
+  ],
+  "audited_file_hashes": [
+    {
+      "batch_id": "001-catalog",
+      "input_sha256": "784a9ddeea05858ef79b5d22451fe83cad0f1ed7a92ba58d78749328336f3f2b",
+      "output_sha256_before_audit_changes": "cfca41ea4616967cc2127cb8e1f42449f9894ba98d05f2ffdd1c7c707740d149",
+      "output_sha256_after_audit_changes": "cfca41ea4616967cc2127cb8e1f42449f9894ba98d05f2ffdd1c7c707740d149"
+    },
+    {
+      "batch_id": "002-catalog",
+      "input_sha256": "653062c3046ab0ed5bddc2084d9a321916ef3a1fce2a2adf88c5eaf660a7ed43",
+      "output_sha256_before_audit_changes": "92d18a92ac0fee1cbf285a8105c98f4e603607e8d48bdafa3a3a40d440cfedd2",
+      "output_sha256_after_audit_changes": "bb29de84e0e567cc3b8e7839925e261685c030b53b1f1aec0938e5915311d5c4"
+    },
+    {
+      "batch_id": "003-catalog",
+      "input_sha256": "0f2c88eab6c6c33f22192316bf8044c6c13e3cd567e588f23bd7f16a422b0b95",
+      "output_sha256_before_audit_changes": "000c1ac98b06c2d5f84d1d0c63cb2c408aec77b76b56f600ae16101c168021de",
+      "output_sha256_after_audit_changes": "000c1ac98b06c2d5f84d1d0c63cb2c408aec77b76b56f600ae16101c168021de"
+    },
+    {
+      "batch_id": "004-catalog",
+      "input_sha256": "76537f496163f91d688d42c9da44bc4ef15c62f5c479e07631cad568821e8485",
+      "output_sha256_before_audit_changes": "99c452b915918820f3b1ae2043f7d5c8da4ac7e1b5cc17c7f5feb741c8ef3a59",
+      "output_sha256_after_audit_changes": "99c452b915918820f3b1ae2043f7d5c8da4ac7e1b5cc17c7f5feb741c8ef3a59"
+    },
+    {
+      "batch_id": "005-catalog",
+      "input_sha256": "69fa69915596bd9424cfe61f0539753f01a68a6e36b80a89508a8918b53f2412",
+      "output_sha256_before_audit_changes": "2f168f63eb52f1637fb75f767b1cdf673de5a316fa40d97b5c667c9f07445044",
+      "output_sha256_after_audit_changes": "2f168f63eb52f1637fb75f767b1cdf673de5a316fa40d97b5c667c9f07445044"
+    },
+    {
+      "batch_id": "006-catalog",
+      "input_sha256": "8e1fb1b46df46ee1554c58e12a63d5921fa745c2cb046d2feafec1ab9a78e5c2",
+      "output_sha256_before_audit_changes": "8ff1b73ced2b9cb545bc3ce74acf39f19259a249666068ea882e1066eb6a0f46",
+      "output_sha256_after_audit_changes": "8ff1b73ced2b9cb545bc3ce74acf39f19259a249666068ea882e1066eb6a0f46"
+    },
+    {
+      "batch_id": "007-catalog",
+      "input_sha256": "68dce23c037222ccc37283daf3146a73dd350c55695d36c0b68feec7f07e1d7c",
+      "output_sha256_before_audit_changes": "e3a4a77ddf8428f38730ead595d1475d9ad142e0e4ad2bfcd9cc5f37691dbf7a",
+      "output_sha256_after_audit_changes": "e3a4a77ddf8428f38730ead595d1475d9ad142e0e4ad2bfcd9cc5f37691dbf7a"
+    },
+    {
+      "batch_id": "008-catalog",
+      "input_sha256": "254886c000e42d42d31244c463c0e49871bf056229108e0dcbbe4c77cf075a67",
+      "output_sha256_before_audit_changes": "be9f02a521b4ceadd451567b9344b49c00c2794133a5fc7e5e09f1d5efe57d3b",
+      "output_sha256_after_audit_changes": "be9f02a521b4ceadd451567b9344b49c00c2794133a5fc7e5e09f1d5efe57d3b"
+    },
+    {
+      "batch_id": "009-catalog",
+      "input_sha256": "3e219a2e879f70aea5265f7706f0f8e8848579e92f28819acc862932ec456576",
+      "output_sha256_before_audit_changes": "2f3760c3004ca681836958798d60fedfdd5f5c719bcd82636d7875fa3794220d",
+      "output_sha256_after_audit_changes": "2f3760c3004ca681836958798d60fedfdd5f5c719bcd82636d7875fa3794220d"
+    },
+    {
+      "batch_id": "010-catalog",
+      "input_sha256": "fb1955221fc3b0a8311cbd955716c31e86ed6db987410f0af7869cc71ce6c323",
+      "output_sha256_before_audit_changes": "160ec55dcc7b36d52a9129e288180272cfc6c23a7259ce04d2fae651539c212a",
+      "output_sha256_after_audit_changes": "160ec55dcc7b36d52a9129e288180272cfc6c23a7259ce04d2fae651539c212a"
+    },
+    {
+      "batch_id": "011-catalog",
+      "input_sha256": "c596ea04d7319f90f137da31a7eee4c72595474aafca636081ac32d85df71ded",
+      "output_sha256_before_audit_changes": "09f13df2483d534e9d54f7a56b0a233d7679a4ec5629a35e5b9493cc4fba1f61",
+      "output_sha256_after_audit_changes": "09f13df2483d534e9d54f7a56b0a233d7679a4ec5629a35e5b9493cc4fba1f61"
+    },
+    {
+      "batch_id": "012-catalog",
+      "input_sha256": "15d2fd9e60d7002d21d66544ede8d1730e543f81bc2fab1128a5654aca457128",
+      "output_sha256_before_audit_changes": "cf40d9cf124e2ddd7fcf31c04a867e1dd15a9ccdeb461ce00385e799c008bc82",
+      "output_sha256_after_audit_changes": "cf40d9cf124e2ddd7fcf31c04a867e1dd15a9ccdeb461ce00385e799c008bc82"
+    },
+    {
+      "batch_id": "013-catalog",
+      "input_sha256": "6adba564cc183a24ea9d95f6eaa8341b743befec324019921bf48907b6d9a788",
+      "output_sha256_before_audit_changes": "eda1d44094f965112e5e812c327c023ffcfbbaa3f50c68a716f1b6326d768c7b",
+      "output_sha256_after_audit_changes": "eda1d44094f965112e5e812c327c023ffcfbbaa3f50c68a716f1b6326d768c7b"
+    },
+    {
+      "batch_id": "014-catalog",
+      "input_sha256": "36ff5217c724a8b3aa03192fc566ec10eed37f2d4b1722c3d9b28fc58ca7a383",
+      "output_sha256_before_audit_changes": "03315e0a4c3f980d859cd59c8fcffd70d8da413b2efb4b1bc57aad951a1f77e7",
+      "output_sha256_after_audit_changes": "03315e0a4c3f980d859cd59c8fcffd70d8da413b2efb4b1bc57aad951a1f77e7"
+    }
+  ],
+  "files_modified_by_auditor": [],
+  "protected_content_modified": false,
+  "limitations": [
+    "Verifica retrospettiva di presenza e coerenza, non nuova verifica esterna universale delle 21 nascite.",
+    "Yu Suzuki riutilizza fonti già consultate nel014; il controllo non deve essere presentato come nuova ricerca su quella persona.",
+    "Le sole cinque integrazioni di giorno e mese in main:0 di Yu Suzuki sono applicate; i metadati originali erano già corretti e restano invariati."
+  ],
+  "files_modified_by_root": [
+    "002-catalog/OUTPUT-002-catalog.json"
+  ],
+  "reused_sources_reopened_by_root_on": "2026-10-29",
+  "completed_delivery": "015-catalog",
+  "verified_after_integration": true
+}

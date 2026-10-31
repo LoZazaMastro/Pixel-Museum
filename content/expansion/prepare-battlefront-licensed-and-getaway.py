@@ -1,0 +1,35 @@
+import hashlib,importlib.util,json
+from pathlib import Path
+R=Path(__file__).resolve().parents[2]
+def mod(n,f):
+ s=importlib.util.spec_from_file_location(n,f);m=importlib.util.module_from_spec(s);s.loader.exec_module(m);return m
+p=mod('p',R/'content/expansion/soundtrack-broad-pipeline.py');v=mod('v',R/'tools/discover-museum-videos.py');D=p.RESEARCH/'battlefront-classics'
+cat=json.loads((R/'content/catalog.json').read_text(encoding='utf8'));cat=cat if isinstance(cat,list) else cat['entries'];add=json.loads((R/'content/expansion/user-requested-game-additions.json').read_text(encoding='utf8'))['entries'];ids={(p.norm(e['title']),e['year']):e['id'] for e in cat+add}
+groups=[
+ ('Star Wars: Battlefront',2004,'https://cdn.cloudflare.steamstatic.com/steam/apps/1058020/manuals/STAR_WARS_Battlefront_manual.pdf',[
+  ('RRMa33_zmBc','The Clash of Lightsabers — original film recording','https://www.youtube.com/watch?v=BMRSNIqU3TU','1980 original film performance, 1997 expanded soundtrack album edition, credited archival upload. Composition licensed for the 2004 game main menu; full album cue rather than the game edit or a fan loop.',False)]),
+ ('Star Wars: Battlefront II',2005,'https://cdn.cloudflare.steamstatic.com/steam/apps/6060/manuals/BF2_Manual-English.pdf',[
+  ('u7HF4JG1pOg','The Imperial March — original film recording','https://www.youtube.com/watch?v=weC5FzhZQZs','Original Empire Strikes Back recording; official 1997 Lucasfilm soundtrack edition. Composition present in the 2005 game menu; full commercial cue, not the short game edit.',True),
+  ('FHuD5y-PZM0','Battle of the Heroes — original film recording','https://www.youtube.com/watch?v=weC5FzhZQZs','Original 2005 Revenge of the Sith recording, official Lucasfilm publication. Composition present in the 2005 game menu; full commercial cue, not the short game edit.',True),
+  ('D_2bluVPsb0','Duel of the Fates — original film recording','https://www.youtube.com/watch?v=weC5FzhZQZs','Original 1999 Phantom Menace recording, official 2018 Universal/Lucasfilm digital reissue. Composition present in the 2005 game menu; full commercial cue rather than the short game edit.',True)])]
+entries=[]
+for game,year,manual,rows in groups:
+ eid=ids.get((p.norm(game),year))
+ if not eid: print('ARTICLE_HOLD',game,flush=True);continue
+ tracks=[]
+ for vid,title,association,version,official in rows:
+  a=p.watch(vid)
+  try:c=v.metadata(vid,{'title':a['title'],'channel':a['author']});assert c.get('native_compatible_avc_aac')
+  except Exception as ex:print('CODEC_HOLD',vid,str(ex),flush=True);continue
+  roles={'game_music_editing':'Peter McConnell' if year==2004 else 'Jesse Harlin (music editing and implementation)'}
+  if vid=='D_2bluVPsb0':roles.update({'orchestra':'London Symphony Orchestra','choirs':'London Voices; New London Children\'s Choir','additional_conductor':'Ronald Corp','conductor_and_producer':'John Williams','recording_and_mixing':'Shawn Murphy'})
+  t={'youtube_id':vid,'url':'https://www.youtube.com/watch?v='+vid,'title':title,'creator':'John Williams','recording_artist':'John Williams','composer_source':manual,'game_music_context_source':manual,'licensed_game_track_context_source':association,'recording_context_source':'https://www.youtube.com/watch?v='+vid,'recording_version':version,'uploader':a['author'],'channel_url':'https://www.youtube.com/channel/'+a['channelId'],'source_page':'https://www.youtube.com/watch?v='+vid,'official_uploader_verified':official,'publishing_kind':'official_licensed_recording' if official else 'archival_licensed_original_recording','duration_seconds':int(a['lengthSeconds']),'additional_recording_roles':roles,'verification_receipt':'build/research/soundtrack-broad/watch/'+vid+'.json','native_codec_metadata_receipt':'build/research/video-discovery/video-'+vid+'.json','native_codec_metadata_verified':True,'playback_verified_on_ps5':False,'rights':'Composition and recording rights remain with John Williams, Lucasfilm, the original recording performers and labels. This is a licensed-film-music selection associated with the exact 2004/2005 game, not an original Gordy Haab game score.'}
+  if vid=='D_2bluVPsb0':t['recording_release_year']=2018
+  tracks.append(t);print(game,title,'AVC_AAC',flush=True)
+ if tracks:entries.append({'entry_id':eid,'match_title':game,'match_year':year,'title':'Listen to '+game,'composer':'John Williams','curator_note':'Listen to music by John Williams from '+game+'.','replace_existing_tracks':True,'music_kind':'licensed_playlist','tracks':tracks})
+f=D/'battlefront-original-two-games4-licensed-candidate.json';f.write_text(json.dumps({'publication_status':'awaiting_independent_review','entries':entries},ensure_ascii=False,indent=2)+'\n',encoding='utf8');print('BF_FINAL',len(entries),sum(len(e['tracks']) for e in entries),hashlib.sha256(f.read_bytes()).hexdigest(),flush=True)
+
+vid='Y3GllkdvHzs';a=p.watch(vid);c=v.metadata(vid,{'title':a['title'],'channel':a['author']});assert c.get('native_compatible_avc_aac')
+game='The Getaway';year=2002;eid=ids[(p.norm(game),year)]
+t={'youtube_id':vid,'url':'https://www.youtube.com/watch?v='+vid,'title':'Intro / Main Menu Theme','creator':'Andrew Hale','composer_source':'https://www.mobygames.com/game/8241/the-getaway/credits/ps2/','recording_version':'Original 2002 PlayStation 2 game score, credited archival upload. Original game credits distinguish Andrew Hale composition from Simon Hale orchestral arranging.','recording_context_source':'https://www.youtube.com/watch?v='+vid,'additional_recording_roles':{'orchestral_arranging':'Simon Hale','orchestra':'London Session Orchestra','orchestral_lead':'Gavyn Wright'},'credit_scope':'Original game-credit transcription assigns composition to Andrew Hale and orchestral arranging to Simon Hale; archive uploader joint composer wording is not copied as an individual composition assertion.','uploader':a['author'],'channel_url':'https://www.youtube.com/channel/'+a['channelId'],'source_page':'https://www.youtube.com/watch?v='+vid,'official_uploader_verified':False,'publishing_kind':'credited_archival_game_recording','duration_seconds':int(a['lengthSeconds']),'verification_receipt':'build/research/soundtrack-broad/watch/'+vid+'.json','native_codec_metadata_receipt':'build/research/video-discovery/video-'+vid+'.json','native_codec_metadata_verified':True,'playback_verified_on_ps5':False,'rights':'Composition and recording rights remain with Sony, the game score composers, orchestral arranger and performers. Archive uploader credit does not imply official endorsement.'}
+e={'entry_id':eid,'match_title':game,'match_year':year,'title':'Listen to '+game,'composer':'Andrew Hale','curator_note':'Listen to music by Andrew Hale from The Getaway.','tracks':[t]};f=D/'getaway-original-theme-candidate.json';f.write_text(json.dumps({'publication_status':'awaiting_independent_credit_review','entries':[e]},ensure_ascii=False,indent=2)+'\n',encoding='utf8');print('GETAWAY_FINAL',hashlib.sha256(f.read_bytes()).hexdigest(),flush=True)

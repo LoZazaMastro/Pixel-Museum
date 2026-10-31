@@ -1,0 +1,538 @@
+{
+  "schema": "pixel-museum-editorial-input-v1",
+  "batch_id": "226-catalog",
+  "source_file": "content/catalog.json",
+  "source_sha256": "0b077b3f8628f921ab84574d286f9d9943fb8ae6acb8f136ffadde6e01cae241",
+  "entries": [
+    {
+      "entry_id": "workbook-11-08-death-stranding",
+      "kind": "game",
+      "year_context_only": 2019,
+      "date_context_only": {
+        "month": 11,
+        "day": 8,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "release",
+      "factual_note": "Imported dated English Playhub editorial. Adapt its calendar wording, review publisher dates and assign rights-cleared media before presenting as a finished museum stop.",
+      "main": {
+        "feature_id": null,
+        "title": "Death Stranding",
+        "subtitle": "Connecting People",
+        "summary": "Death Stranding follows Sam as he delivers cargo across difficult terrain and reconnects isolated communities, using equipment and structures shared by other players.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Connecting isolated communities",
+            "text": "Death Stranding is Kojima Productions? 2019 action game, first released for PlayStation 4 on November 8. Sam carries cargo across rough terrain to connect isolated communities. Routes, weight distribution and equipment determine how safely he travels, while structures left by other players can help along the way."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Balancing cargo across difficult terrain",
+            "text": "Cargo weight, slopes and footing affect Sam?s balance. Players stabilise him with the triggers and manage stamina while crossing rocks, rivers and inclines. Footwear, ladders, ropes and the distribution of parcels all matter when preparing a delivery."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Planning a route",
+            "text": "The map shows contour lines, rivers and obstacles for planning a route. A shorter path may require equipment or a risky crossing, while a longer detour can protect stamina and cargo. Waypoints let the player mark a proposed journey before setting out."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "Structures shared between players",
+            "text": "Ladders, ropes, bridges and signs left by one player can appear in another?s world. These structures help travellers who do not meet directly. Likes provide a way to acknowledge useful contributions to the shared network."
+          },
+          {
+            "card_id": "main:4",
+            "original_index": 4,
+            "heading": "Building with Guerrilla?s Decima engine",
+            "text": "Guerrilla Games shared its engine code with Kojima Productions after Hideo Kojima visited studios looking for suitable technology. The two teams continued exchanging changes and knowledge. The resulting Decima collaboration supported Death Stranding?s landscapes, weather and detailed characters."
+          },
+          {
+            "card_id": "main:5",
+            "original_index": 5,
+            "heading": "Reading the Odradek?s signals",
+            "text": "An Odradek scan marks surfaces, lost cargo and useful objects. Players read its indicators alongside the actual shape of the terrain. In areas with BTs, the device also turns towards invisible threats and signals their proximity."
+          },
+          {
+            "card_id": "main:6",
+            "original_index": 6,
+            "heading": "Songs along the journey",
+            "text": "Songs by Low Roar and other licensed artists often enter as the landscape opens up after a difficult section. These passages accompany continued travel rather than playing throughout every activity. Ludvig Forssell?s score and the separate Timefall album complete the game?s broader musical project."
+          }
+        ],
+        "sources": [
+          {
+            "title": "blog.playstation.com",
+            "url": "https://blog.playstation.com/archive/2019/05/29/death-stranding-release-date-confirmed-special-editions-revealed/",
+            "publisher": "blog.playstation.com"
+          },
+          {
+            "title": "www.kojimaproductions.jp",
+            "url": "https://www.kojimaproductions.jp/en/DS10million-porters",
+            "publisher": "www.kojimaproductions.jp"
+          },
+          {
+            "title": "blog.playstation.com",
+            "url": "https://blog.playstation.com/2019/09/12/death-stranding-new-tgs-gameplay-video/",
+            "publisher": "blog.playstation.com"
+          },
+          {
+            "title": "blog.playstation.com",
+            "url": "https://blog.playstation.com/archive/2017/02/23/the-hideo-kojima-death-stranding-interview-strands-decima-and-guerrilla-games/",
+            "publisher": "blog.playstation.com"
+          },
+          {
+            "title": "blog.playstation.com",
+            "url": "https://blog.playstation.com/archive/2019/10/01/listen-to-death-stranding-inspired-track-by-chvrches/",
+            "publisher": "blog.playstation.com"
+          },
+          {
+            "title": "Company history: independent studio and Sony agreement",
+            "url": "https://kojimaproductions.jp/en/company",
+            "publisher": "Kojima Productions"
+          },
+          {
+            "title": "Sony Computer Entertainment acquires Guerrilla Games",
+            "url": "https://sonyinteractive.com/en/press-releases/2005/sony-computer-entertainment-acquires-guerrilla-games-leading-developer-of-killzone-franchise/",
+            "publisher": "Sony Computer Entertainment"
+          },
+          {
+            "title": "Death Stranding — original release infobox, Wikipedia revision 1381286782",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1381286782",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Soundtrack publication: Good VGM 207 - Death Stranding - BRIDGES",
+            "url": "https://www.youtube.com/watch?v=GddfvlEsAHY",
+            "publisher": "Good Video Game Music",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Ludvig Forssell",
+            "url": "https://en.wikipedia.org/wiki/Death_Stranding",
+            "publisher": "Ludvig Forssell"
+          },
+          {
+            "title": "Soundtrack publication: Once, There Was an Explosion",
+            "url": "https://www.youtube.com/watch?v=NRsvwTydwJo",
+            "publisher": "Versus Music Official",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Ludvig Forssell",
+            "url": "https://www.qobuz.com/us-en/album/death-stranding-original-score-ludvig-forssell/mgvhvavvxxw9b",
+            "publisher": "Ludvig Forssell"
+          },
+          {
+            "title": "Music credit source: Ludvig Forssell",
+            "url": "https://www.qobuz.com/us-en/album/death-stranding-original-score-ludvig-forssell/mgvhvavvxxw9b",
+            "publisher": "Ludvig Forssell"
+          },
+          {
+            "title": "Music credit source: Ludvig Forssell",
+            "url": "https://en.wikipedia.org/wiki/Death_Stranding",
+            "publisher": "Ludvig Forssell"
+          },
+          {
+            "title": "Music credit source: Ludvig Forssell",
+            "url": "https://www.qobuz.com/us-en/album/death-stranding-original-score-ludvig-forssell/mgvhvavvxxw9b",
+            "publisher": "Ludvig Forssell"
+          },
+          {
+            "title": "Music credit source: Ludvig Forssell",
+            "url": "https://www.qobuz.com/us-en/album/death-stranding-original-score-ludvig-forssell/mgvhvavvxxw9b",
+            "publisher": "Ludvig Forssell"
+          },
+          {
+            "title": "Music credit source: Ludvig Forssell",
+            "url": "https://www.qobuz.com/us-en/album/death-stranding-original-score-ludvig-forssell/mgvhvavvxxw9b",
+            "publisher": "Ludvig Forssell"
+          },
+          {
+            "title": "Music credit source: Ludvig Forssell",
+            "url": "https://www.qobuz.com/us-en/album/death-stranding-original-score-ludvig-forssell/mgvhvavvxxw9b",
+            "publisher": "Ludvig Forssell"
+          },
+          {
+            "title": "Music credit source: Ludvig Forssell",
+            "url": "https://www.qobuz.com/us-en/album/death-stranding-original-score-ludvig-forssell/mgvhvavvxxw9b",
+            "publisher": "Ludvig Forssell"
+          },
+          {
+            "title": "Music credit source: Ludvig Forssell",
+            "url": "https://www.qobuz.com/us-en/album/death-stranding-original-score-ludvig-forssell/mgvhvavvxxw9b",
+            "publisher": "Ludvig Forssell"
+          },
+          {
+            "title": "Music credit source: Ludvig Forssell",
+            "url": "https://www.qobuz.com/us-en/album/death-stranding-original-score-ludvig-forssell/mgvhvavvxxw9b",
+            "publisher": "Ludvig Forssell"
+          },
+          {
+            "title": "Music credit source: Ludvig Forssell",
+            "url": "https://www.qobuz.com/us-en/album/death-stranding-original-score-ludvig-forssell/mgvhvavvxxw9b",
+            "publisher": "Ludvig Forssell"
+          },
+          {
+            "title": "Music credit source: Ludvig Forssell",
+            "url": "https://www.qobuz.com/us-en/album/death-stranding-original-score-ludvig-forssell/mgvhvavvxxw9b",
+            "publisher": "Ludvig Forssell"
+          },
+          {
+            "title": "Music credit source: Ludvig Forssell",
+            "url": "https://www.qobuz.com/us-en/album/death-stranding-original-score-ludvig-forssell/mgvhvavvxxw9b",
+            "publisher": "Ludvig Forssell"
+          },
+          {
+            "title": "Music credit source: Ludvig Forssell",
+            "url": "https://www.qobuz.com/us-en/album/death-stranding-original-score-ludvig-forssell/mgvhvavvxxw9b",
+            "publisher": "Ludvig Forssell"
+          },
+          {
+            "title": "Music credit source: Ludvig Forssell",
+            "url": "https://www.qobuz.com/us-en/album/death-stranding-original-score-ludvig-forssell/mgvhvavvxxw9b",
+            "publisher": "Ludvig Forssell"
+          },
+          {
+            "title": "Music credit source: Ludvig Forssell",
+            "url": "https://www.qobuz.com/us-en/album/death-stranding-original-score-ludvig-forssell/mgvhvavvxxw9b",
+            "publisher": "Ludvig Forssell"
+          },
+          {
+            "title": "Music credit source: Ludvig Forssell",
+            "url": "https://www.qobuz.com/us-en/album/death-stranding-original-score-ludvig-forssell/mgvhvavvxxw9b",
+            "publisher": "Ludvig Forssell"
+          },
+          {
+            "title": "Music credit source: Ludvig Forssell & Jenny Plant",
+            "url": "https://www.qobuz.com/us-en/album/death-stranding-original-score-ludvig-forssell/mgvhvavvxxw9b",
+            "publisher": "Ludvig Forssell & Jenny Plant"
+          },
+          {
+            "title": "Music credit source: Ludvig Forssell",
+            "url": "https://www.qobuz.com/us-en/album/death-stranding-original-score-ludvig-forssell/mgvhvavvxxw9b",
+            "publisher": "Ludvig Forssell"
+          },
+          {
+            "title": "Music credit source: Joel Corelitz",
+            "url": "https://www.qobuz.com/us-en/album/death-stranding-original-score-ludvig-forssell/mgvhvavvxxw9b",
+            "publisher": "Joel Corelitz"
+          },
+          {
+            "title": "Music credit source: Joel Corelitz",
+            "url": "https://www.qobuz.com/us-en/album/death-stranding-original-score-ludvig-forssell/mgvhvavvxxw9b",
+            "publisher": "Joel Corelitz"
+          },
+          {
+            "title": "Music credit source: Ludvig Forssell",
+            "url": "https://www.qobuz.com/us-en/album/death-stranding-original-score-ludvig-forssell/mgvhvavvxxw9b",
+            "publisher": "Ludvig Forssell"
+          },
+          {
+            "title": "Music credit source: Ludvig Forssell",
+            "url": "https://www.qobuz.com/us-en/album/death-stranding-original-score-ludvig-forssell/mgvhvavvxxw9b",
+            "publisher": "Ludvig Forssell"
+          },
+          {
+            "title": "Music credit source: Ludvig Forssell",
+            "url": "https://www.qobuz.com/us-en/album/death-stranding-original-score-ludvig-forssell/mgvhvavvxxw9b",
+            "publisher": "Ludvig Forssell"
+          },
+          {
+            "title": "Music credit source: Ludvig Forssell",
+            "url": "https://www.qobuz.com/us-en/album/death-stranding-original-score-ludvig-forssell/mgvhvavvxxw9b",
+            "publisher": "Ludvig Forssell"
+          },
+          {
+            "title": "Music credit source: Ludvig Forssell",
+            "url": "https://www.qobuz.com/us-en/album/death-stranding-original-score-ludvig-forssell/mgvhvavvxxw9b",
+            "publisher": "Ludvig Forssell"
+          },
+          {
+            "title": "Music credit source: Ludvig Forssell",
+            "url": "https://www.qobuz.com/us-en/album/death-stranding-original-score-ludvig-forssell/mgvhvavvxxw9b",
+            "publisher": "Ludvig Forssell"
+          },
+          {
+            "title": "Music credit source: Ludvig Forssell",
+            "url": "https://www.qobuz.com/us-en/album/death-stranding-original-score-ludvig-forssell/mgvhvavvxxw9b",
+            "publisher": "Ludvig Forssell"
+          },
+          {
+            "title": "Music credit source: Ludvig Forssell",
+            "url": "https://www.qobuz.com/us-en/album/death-stranding-original-score-ludvig-forssell/mgvhvavvxxw9b",
+            "publisher": "Ludvig Forssell"
+          },
+          {
+            "url": "https://www.kojimaproductions.jp/en/death-stranding-ps4",
+            "title": "Official original PS4 product and gameplay gallery",
+            "publisher": "Kojima Productions"
+          },
+          {
+            "url": "https://blog.playstation.com/archive/2017/02/23/the-hideo-kojima-death-stranding-interview-strands-decima-and-guerrilla-games/",
+            "title": "Hideo Kojima on the shared development of Decima",
+            "publisher": "PlayStation Blog"
+          },
+          {
+            "url": "https://blog.playstation.com/2019/05/29/death-stranding-available-november-8-on-ps4/",
+            "title": "Original PS4 release confirmed for November 8, 2019",
+            "publisher": "Sony Interactive Entertainment"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "console-gap-pok-mon-sword-and-shield",
+      "kind": "game",
+      "year_context_only": 2019,
+      "date_context_only": {
+        "month": 11,
+        "day": 15,
+        "precision": "day",
+        "region": "WW"
+      },
+      "event_semantics": "",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "Pokémon Sword and Shield",
+        "subtitle": "The Gym Challenge fills a stadium",
+        "summary": "Pokémon Sword and Shield are Game Freak's role-playing games, released for Nintendo Switch on 15 November 2019.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "The Gym Challenge fills a stadium",
+            "text": "Pokémon Sword and Shield are Game Freak's role-playing games, released for Nintendo Switch on 15 November 2019. A young Trainer travels through Galar, a region inspired by the United Kingdom, to challenge its Gym Leaders and compete for the championship. Catching creatures and building a team remain central, but the journey gives official battles the spectacle of a popular sport. Stadium crowds, uniforms and the reigning champion Leon make each Gym encounter another step towards a public contest watched across the region."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "A broad wilderness between the towns",
+            "text": "The Wild Area connects varied habitats through a broad space with a freely controlled camera. Visible Pokémon and changing weather encourage the player to return and look for different encounters. Away from the stadiums, camping provides a quieter way to spend time with the team. The paired versions contain different Pokémon, preserving trading as a reason to meet another player. Together, the structured Gym Challenge and the more open wilderness give the adventure two different rhythms of progress and discovery."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Three turns at a different scale",
+            "text": "Dynamax temporarily enlarges a Pokémon and replaces its moves with powerful Max Moves for three turns. Certain species have distinct Gigantamax forms as well. Cooperative Max Raid Battles let four Trainers face a giant wild opponent and attempt to catch it after victory. The 2020 Isle of Armor and Crown Tundra expansions added further areas and adventures to the original games. Their use of an expansion pass extended Galar directly, continuing the existing journey instead of asking the player to begin another enhanced edition."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Pokémon Sword and Shield — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Pok%C3%A9mon_Sword_and_Shield"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "golden-joystick-awards-2019",
+      "kind": "event",
+      "year_context_only": 2019,
+      "date_context_only": {
+        "precision": "day",
+        "month": 11,
+        "day": 15
+      },
+      "event_semantics": "",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "Golden Joystick Awards 2019",
+        "subtitle": "",
+        "summary": "The Golden Joystick Awards, with every category winner of the 2019 edition.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "The players' awards",
+            "text": "The Golden Joystick Awards celebrate games through a public vote, bringing players into the choice of each year's winners. The awards began in Britain with the 1983 season and later reached an international audience through online voting. Their changing categories trace the growth of games: home computers and consoles, handhelds, online play, independent studios, performance and music. Alongside the public vote, special honours recognise individual contributions to the industry. Each edition preserves its own category names, so the results also show what players and the awards organisers considered worth celebrating at the time."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Winners — 2019",
+            "text": "Best Storytelling\nDays Gone (Sony Interactive Entertainment)\n\nBest Multiplayer Game\nApex Legends (Electronic Arts)\n\nBest Visual Design\nDevil May Cry 5 (Capcom)\n\nBest Indie Game\nOuter Wilds (Annapurna Interactive)\n\nBest Audio\nResident Evil 2 (Capcom)\n\nStill Playing Award\nMinecraft (Mojang)\n\nBest Performer\nLogan Marshall-Green as David Smith (Telling Lies)\n\neSports Game of the Year\nFortnite Battle Royale (Epic Games)\n\nBest VR/AR Game\nBeat Saber (Beat Games)\n\nStudio of the Year\nEpic Games\n\nBest New Streamer/Broadcaster\nEwok\n\nMobile Game of the Year\nBTS World (Takeone Company)\n\nPC Game of the Year\nWorld of Warcraft Classic (Blizzard Entertainment)\n\nPlayStation Game of the Year\nDays Gone (Sony Interactive Entertainment)\n\nXbox Game of the Year\nGears 5 (Xbox Game Studios)\n\nNintendo Game of the Year\nSuper Smash Bros. Ultimate (Nintendo)\n\nBreakthrough Award\nHouse House\n\nMost Wanted Award\nCyberpunk 2077 (CD Projekt)\n\nCritics' Choice Award\nControl (505 Games)\n\nLifetime Achievement\nYu Suzuki\n\nOutstanding Contribution\nLife is Strange (Dontnod Entertainment)\n\nUltimate Game of the Year\nResident Evil 2 (Capcom)"
+          }
+        ],
+        "sources": [
+          {
+            "title": "Golden Joystick Awards — 2019 category winners",
+            "url": "https://en.wikipedia.org/wiki/Golden_Joystick_Awards#2019",
+            "publisher": "Wikipedia contributors",
+            "license": "CC BY-SA 4.0",
+            "attribution": "Category and winner facts transcribed from the archived table. Original Pixel Museum introduction; no source prose reproduced."
+          },
+          {
+            "title": "Golden Joystick Awards",
+            "url": "https://www.gamesradar.com/goldenjoystickawards/",
+            "publisher": "Future Publishing Limited"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-57645522",
+      "kind": "game",
+      "year_context_only": 2019,
+      "date_context_only": {
+        "month": 11,
+        "day": 15,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Regional and platform release dates may differ. Where shown, the exact day is taken only from the article release infobox.",
+      "main": {
+        "feature_id": null,
+        "title": "Star Wars Jedi: Fallen Order",
+        "subtitle": "",
+        "summary": "Star Wars Jedi: Fallen Order is a 2019 action-adventure game developed by Respawn Entertainment and published by Electronic Arts.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Cal Kestis evades the Empire",
+            "text": "Star Wars Jedi: Fallen Order is a 2019 action-adventure game developed by Respawn Entertainment and published by Electronic Arts. The story is set in the Star Wars universe, five years after Star Wars: Episode III – Revenge of the Sith. It follows Cal Kestis, a Jedi Padawan who becomes a target of the Galactic Empire and is hunted throughout the galaxy by Imperial Inquisitors while attempting to complete his training, reconcile with his troubled past, and rebuild the fallen Jedi Order. The player can use Cal's lightsaber and Force powers to defeat enemies, including stormtroopers, wild beasts, and bounty hunters. The game adopts a Metroidvania-style level design where new areas are accessed as Cal unlocks skills and abilities."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Respawn builds a Star Wars adventure",
+            "text": "Star Wars Jedi: Fallen Order was directed by Stig Asmussen, who joined Respawn in 2014. The game began development as an original title unrelated to Star Wars, but Electronic Arts felt the action would work well as a Star Wars game, convincing Lucasfilm to authorize and consult on the project. The game's visuals were influenced by Rogue One and Star Wars Rebels, while the combat and levels were inspired by Metroid Prime, Dark Souls, and The Legend of Zelda: The Wind Waker. The game's voice cast includes Cameron Monaghan as Cal Kestis and Debra Wilson as his mentor Cere Junda. Ben Burtt provided the voice for Cal's companion droid BD-1, while Forest Whitaker reprised his role from Rogue One as Saw Gerrera. The music, composed by Stephen Barton and Gordy Haab, was recorded at Abbey Road Studios with the London Symphony Orchestra and the Bach Choir of London."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Reception and the sequel",
+            "text": "Star Wars Jedi: Fallen Order was released for the PlayStation 4, Windows, and Xbox One in November 2019, and for the PlayStation 5 and Xbox Series X/S in June 2021. The game received generally favorable reviews from critics, who praised its combat, characters, performance, and world design, though it received criticisms for the technical issues at release. It sold over 10 million units by 2020. It was nominated for several end-of-the-year accolades, including Best Action/Adventure Game at The Game Awards 2020, and won several awards, including Adventure Game of the Year at the 23rd Annual D.I.C.E. Awards. A sequel, Star Wars Jedi: Survivor, was released in April 2023."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Star Wars Jedi: Fallen Order - article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1380829843",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Article contributors and history",
+            "url": "https://en.wikipedia.org/wiki/Star_Wars_Jedi:_Fallen_Order?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          },
+          {
+            "title": "Star Wars Jedi: Fallen Order - box - front (Sony Playstation 4)",
+            "url": "https://gamesdb.launchbox-app.com/games/details/187258",
+            "publisher": "Electronic Arts"
+          },
+          {
+            "title": "Official music publication: Eno Cordova's Theme",
+            "url": "https://www.youtube.com/watch?v=9r_xDCR03Q8",
+            "publisher": "Stephen Barton - Topic",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Stephen Barton, Gordy Haab",
+            "url": "https://www.ea.com/ea-play/news/star-wars-jedi-fallen-order-official-soundtrack-release",
+            "publisher": "Stephen Barton, Gordy Haab"
+          },
+          {
+            "title": "Official music publication: Bogano",
+            "url": "https://www.youtube.com/watch?v=7UsZM2k9_dQ",
+            "publisher": "Stephen Barton - Topic",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Stephen Barton, Gordy Haab",
+            "url": "https://www.ea.com/ea-play/news/star-wars-jedi-fallen-order-official-soundtrack-release",
+            "publisher": "Stephen Barton, Gordy Haab"
+          },
+          {
+            "title": "Official music publication: Fight and Flight",
+            "url": "https://www.youtube.com/watch?v=u_jRAzzP-1s",
+            "publisher": "Stephen Barton - Topic",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Stephen Barton, Gordy Haab",
+            "url": "https://www.ea.com/ea-play/news/star-wars-jedi-fallen-order-official-soundtrack-release",
+            "publisher": "Stephen Barton, Gordy Haab"
+          },
+          {
+            "url": "https://news.ea.com/press-releases/press-releases-details/2019/EA-and-Respawn-Announce-Star-Wars-Jedi-Fallen-Order-Will-Launch-November-15-2019/default.aspx",
+            "title": "EA and Respawn announce the original November 15, 2019 release",
+            "publisher": "Electronic Arts"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "sakura-wars-2019",
+      "kind": "game",
+      "year_context_only": 2019,
+      "date_context_only": {
+        "month": 12,
+        "day": 12,
+        "precision": "day",
+        "region": "Japan / Asia"
+      },
+      "event_semantics": "",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "Sakura Wars",
+        "subtitle": "A struggling theatre company has another duty",
+        "summary": "Sakura Wars is Sega's PlayStation 4 adventure and action role-playing game, first released in Asia on 12 December 2019. Captain Seijuro Kamiyama takes command of Tokyo's Imperial Combat Revue, a company whose performers also pilot machines against demonic threats. The fictional 1940 setting joins theatre, relationships and combat within the same group. Kamiyama must help the company recover its standing while preparing for a tournament between Revues. The adventure gives time spent with the performers a purpose beyond dialogue, because the people sharing the stage are also those expected to fight together.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "A struggling theatre company has another duty",
+            "text": "Sakura Wars is Sega's PlayStation 4 adventure and action role-playing game, first released in Asia on 12 December 2019. Captain Seijuro Kamiyama takes command of Tokyo's Imperial Combat Revue, a company whose performers also pilot machines against demonic threats. The fictional 1940 setting joins theatre, relationships and combat within the same group. Kamiyama must help the company recover its standing while preparing for a tournament between Revues. The adventure gives time spent with the performers a purpose beyond dialogue, because the people sharing the stage are also those expected to fight together."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "A conversation belongs to the larger campaign",
+            "text": "Exploration and dialogue allow Kamiyama to learn about the company and influence his relationships with its members. Those intervals sit beside action battles, where the machines and their pilots face a more immediate threat. The change from earlier tactical combat gives the revival another pace while retaining the importance of the cast between missions. A successful company requires attention to both kinds of activity. The player moves from the public performance to the personal exchange and then into battle, seeing different aspects of the same people rather than meeting separate casts for each system."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "An established name returns with new collaborators",
+            "text": "The project followed a positive response at Sega Fes in 2016 and became the first main Sakura Wars since 2005. Tetsuya Otsubo directed, Tite Kubo designed the principal cast and Kohei Tanaka returned to compose the music. Jiro Ishii and Takaaki Suzuki contributed to the writing, while guest artists supplied supporting characters. The international edition arrived in April 2020. Its revival gathers new and returning staff around the series' essential combination, using a different combat approach without removing the theatre company and relationships that make its imagined world distinctive."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Sakura Wars - English Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Sakura_Wars_%282019_video_game%29",
+            "publisher": "Wikipedia contributors",
+            "facts": "Original release, gameplay and production context."
+          },
+          {
+            "title": "Sakura Wars - LaunchBox media",
+            "url": "https://gamesdb.launchbox-app.com/games/details/123863-sakura-wars",
+            "publisher": "LaunchBox Games Database",
+            "facts": "Complete cover and original console gameplay media."
+          }
+        ]
+      },
+      "features": []
+    }
+  ]
+}

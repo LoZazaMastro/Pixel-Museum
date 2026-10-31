@@ -1,0 +1,19 @@
+import json,importlib.util,re,hashlib
+from pathlib import Path
+R=Path('.');s=importlib.util.spec_from_file_location('p',R/'content/expansion/soundtrack-broad-pipeline.py');p=importlib.util.module_from_spec(s);s.loader.exec_module(p)
+r=p.RESEARCH;sp=r/'checkpoints/official-individual-direct-credits-identity-2026-10-21.json';d=json.loads(sp.read_text());cat=json.loads((R/'content/catalog.json').read_text());cat=cat if isinstance(cat,list) else cat['entries'];games={e['id']:e for e in cat}
+holds={'P1p-AZrxRhs':'Named original-album guest PassarellaDeathSquad needs independent cue-role corroboration; generic Garcia match cannot validate whole combined artist name. Keep the other two individually Garcia-credited cues.','qXxRB8lVrPM':'ForTheDarkSoul is associated with TheRingedCity additional content rather than original base-game2016 soundtrack; explicit expansion context not yet carried by player.','juVZ0TN_2EA':'Label also namesJapanese artistKaoruWada; transliteration/arrangement role must not be silently dropped by an empty ASCII-normalized string.'}
+corrections={'KoOpFGuq2Kk':{'creator':'Ilan Eshkeri','independently_matched_composers':['Ilan Eshkeri'],'credit_role_note':'Original label explicitly namesIlanEshkeri Composer/Performer; ShigeruUmebayashi appears only as Producer on THIS recording, not cuecomposer.'},'B7cuGQBjN04':{'creator':'David García Díaz','credit_role_note':'Label full name DavidGarcíaDíaz identifies game composer credited in game article asDavidGarcía; retain one credited recording artist rather than duplicate shortened/full name.'},'4CnPBr0yqLE':{'creator':'David García Díaz','credit_role_note':'Label full name DavidGarcíaDíaz identifies game composer credited in game article asDavidGarcía.'},'K04WmBtVsOs':{'creator':'Lifeformed & Janice Kwan','credit_role_note':'Exact recording artist pair corresponds to independently documented game composersTerenceLee(Lifeformed) andJaniceKwan; avoid repeating alias asanotherperson.'}}
+rows=[]
+for e in d['entries'][30:60]:
+ entry=games[e['entry_id']];names,url,ev=p.composer(entry);srcok=bool(names) and p.composer_source_identity_verified(entry,url);rr=[]
+ for t in e['tracks']:
+  vid=t['youtube_id'];v=p.watch(vid);err=p.album_identity_error(entry,v) or p.recording_identity_policy(vid,entry['id'],v)
+  state='HOLD' if vid in holds or err or not srcok else 'PASS'
+  note=holds.get(vid) or err or 'Actual official individual recording names exact game album; independent exact-game source corroborates cue composer, no adaptation/sequel/cover claim. Release date of label reissue is not misrepresented as game release date.'
+  row={'youtube_id':vid,'status':state,'evidence':note,'source_page':url,'source_identity_verified':srcok,'actual_title':v['title'],'actual_uploader':v['author'],'watch_receipt':t['verification_receipt']}
+  if vid in corrections:row['corrected_track_fields']=corrections[vid]
+  if vid in ['vzgEpQ0cLX4','AJyzjV50tS8']:row['additional_recording_roles']=[line for line in v['shortDescription'].splitlines() if re.match(r'Arranger',line)]
+  rr.append(row)
+ rows.append({'entry_id':entry['id'],'title':entry['title'],'status':'PASS' if all(t['status']=='PASS' for t in rr) else 'PARTIAL_PASS','tracks':rr,'composer_source':url,'composer_evidence':ev})
+out=r/'official-direct-credits-editorial-audit-30-59.json';p.write(out,{'snapshot':sp.relative_to(R.resolve()).as_posix(),'snapshot_sha256':hashlib.sha256(sp.read_bytes()).hexdigest(),'reviewer':'experience_refinement editorial source/recording review','scope':'Read actual publication metadata and independent source identities; precise role fixes/holds retained. NativeAVC/AAC and independent reconciliation still required for production.','entries':rows});print(len(rows),'games',sum(t['status']=='PASS' for e in rows for t in e['tracks']),'pass tracks',sum(t['status']=='HOLD' for e in rows for t in e['tracks']),'holds')

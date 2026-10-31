@@ -1,0 +1,574 @@
+{
+  "batch_id": "285-human-history",
+  "sources": [
+    {
+      "source_id": "fellini_museum",
+      "url": "https://fellinimuseum.it/fellini/",
+      "title": "Fellini: biografia",
+      "publisher": "Fellini Museum",
+      "scope": "Nascita a Rimini il 20 gennaio 1920, radio e Masina, scrittura con Rossellini; titoli originali italiani.",
+      "limitation": "Passaggi pertinenti consultati nel testo indicizzato; non dichiarata lettura integrale di documenti o allegati.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "rur_theatre",
+      "url": "https://www.klicperovodivadlo.cz/o-divadle/historie",
+      "title": "Historie Klicperova divadla a Studia Beseda",
+      "publisher": "Klicperovo divadlo",
+      "scope": "Prima mondiale del 2 gennaio 1921 a Hradec Králové, distinta dalla prima di Praga del 25 gennaio.",
+      "limitation": "Letto il testo storico del teatro che rinvia al manifesto conservato nell’archivio distrettuale; non dichiarata ispezione del manifesto.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "rur_embassy",
+      "url": "https://mzv.gov.cz/tirana/en/about_the_czech_republic/x100_year_ago_robot_was_born.html",
+      "title": "100 Year Ago Robot Was Born",
+      "publisher": "Ambasciata della Repubblica Ceca a Tirana",
+      "scope": "Pubblicazione nel 1920, prima 2 gennaio 1921, separazione da Praga.",
+      "limitation": "Passaggi pertinenti consultati nel testo indicizzato; non dichiarata lettura integrale di documenti o allegati.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "bbc_history",
+      "url": "https://downloads.bbc.co.uk/historyofthebbc/1920s.pdf",
+      "title": "The BBC Story: 1920s",
+      "publisher": "BBC",
+      "scope": "Società 18 ottobre 1922, prime trasmissioni quotidiane 14 novembre, Corporation dal 1 gennaio 1927.",
+      "limitation": "Passaggi pertinenti consultati nel testo indicizzato; non dichiarata lettura integrale di documenti o allegati.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "bbc_archives",
+      "url": "https://blog.archiveshub.jisc.ac.uk/2022/11/01/birth-of-a-broadcasting-institution-british-broadcasting-company-papers-and-reith-diaries-at-the-bbc-written-archives-centre/",
+      "title": "Birth of a Broadcasting Institution",
+      "publisher": "BBC Written Archives Centre / Archives Hub",
+      "scope": "Distinzione fra costituzione della società, registrazione successiva e attività radiofonica.",
+      "limitation": "Passaggi pertinenti consultati nel testo indicizzato; non dichiarata lettura integrale di documenti o allegati.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "gr_limit",
+      "url": "https://www.aei.mpg.de/140019/theoretical-gravitational-dynamics-and-radiation",
+      "title": "Theoretical Gravitational Dynamics and Radiation",
+      "publisher": "Max Planck Institute for Gravitational Physics",
+      "scope": "Il limite newtoniano richiede campo debole e velocità ridotte rispetto alla luce.",
+      "limitation": "Passaggi pertinenti consultati nel testo indicizzato; non dichiarata lettura integrale di documenti o allegati.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "flu_cdc",
+      "url": "https://archive.cdc.gov/www_cdc_gov/flu/pandemic-resources/1918-pandemic-h1n1.html",
+      "title": "1918 Pandemic (H1N1 virus)",
+      "publisher": "US Centers for Disease Control and Prevention",
+      "scope": "Circa 500 milioni di contagiati e un terzo della popolazione; stima diffusa di almeno 50 milioni di morti, origine non consensuale.",
+      "limitation": "Passaggi pertinenti consultati nel testo indicizzato; non dichiarata lettura integrale di documenti o allegati.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "flu_study",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7314216/",
+      "title": "Reassessing the Global Mortality Burden of the 1918 Influenza Pandemic",
+      "publisher": "Peter Spreeuwenberg, Madelon Kroneman e John Paget, American Journal of Epidemiology, 2018",
+      "scope": "Stima alternativa di 17,4 milioni, risultato di uno studio e non minimo certo universale.",
+      "limitation": "Letti abstract e passaggi pertinenti indicizzati. Nessuna nuova rianalisi dei dati svolta.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "flu_period",
+      "url": "https://www.census.gov/about/history/stories/monthly/2023/march-2023.html",
+      "title": "History and the Census: The 1918 Influenza Pandemic",
+      "publisher": "US Census Bureau",
+      "scope": "Intervallo 1918–1920 della pandemia; non aggiunta al testo la diversa stima di 100 milioni riportata dalla pagina.",
+      "limitation": "Passaggi pertinenti consultati nel testo indicizzato; non dichiarata lettura integrale di documenti o allegati.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "russia_calendar",
+      "url": "https://www.marx-memorial-library.org.uk/project/russian-revolution/russian-revolution",
+      "title": "The Russian Revolution 1917–1922",
+      "publisher": "Marx Memorial Library",
+      "scope": "Ricerca su materiali d’archivio: calendario giuliano usato nel 1917, differenza di tredici giorni rispetto al gregoriano.",
+      "limitation": "Passaggi pertinenti consultati nel testo indicizzato; non dichiarata lettura integrale di documenti o allegati.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "versailles_archives",
+      "url": "https://weimar.bundesarchiv.de/WEIMAR/DE/Content/Dokumente-zur-Zeitgeschichte/1920-01-10_versailler-vertrag-inKraft.html",
+      "title": "Versailler Vertrag tritt in Kraft",
+      "publisher": "Bundesarchiv",
+      "scope": "Firma 28 giugno 1919, entrata in vigore 10 gennaio 1920, inizio dell’attività del Völkerbund lo stesso giorno.",
+      "limitation": "Passaggi pertinenti consultati nel testo indicizzato; non dichiarata lettura integrale di documenti o allegati.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "league_un",
+      "url": "https://www.ungeneva.org/en/about/league-of-nations/overview",
+      "title": "The League of Nations",
+      "publisher": "United Nations Office at Geneva",
+      "scope": "Compiti della Società e successiva trasmissione di funzioni alle Nazioni Unite.",
+      "limitation": "Passaggi pertinenti consultati nel testo indicizzato; non dichiarata lettura integrale di documenti o allegati.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "amendment_records",
+      "url": "https://guides.loc.gov/19th-amendment/digital-collections",
+      "title": "19th Amendment: Digital Collections",
+      "publisher": "Library of Congress",
+      "scope": "Rinvii al Congressional Record: Camera 21 maggio, Senato 4 giugno 1919, certificazione 26 agosto 1920.",
+      "limitation": "Passaggi pertinenti consultati nel testo indicizzato; non dichiarata lettura integrale di documenti o allegati.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "amendment_archives",
+      "url": "https://www.archives.gov/exhibits/featured-documents/amendment-19",
+      "title": "The 19th Amendment",
+      "publisher": "US National Archives",
+      "scope": "Trentaseiesima ratifica 18 agosto 1920; il divieto di discriminazione per sesso non equivale alla scomparsa di ogni altra barriera al voto.",
+      "limitation": "Passaggi pertinenti consultati nel testo indicizzato; non dichiarata lettura integrale di documenti o allegati.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "amendment_prior",
+      "url": "https://www.nps.gov/articles/2020-crash-course.htm",
+      "title": "The 19th Amendment: A Crash Course",
+      "publisher": "US National Park Service",
+      "scope": "Un testo sul suffragio era già passato alla Camera nel 1918: non corretto definire maggio 1919 la prima approvazione in assoluto.",
+      "limitation": "Passaggi pertinenti consultati nel testo indicizzato; non dichiarata lettura integrale di documenti o allegati.",
+      "accessed_at": "2026-10-30"
+    }
+  ],
+  "decisions": [
+    {
+      "target_id": "history-1914-world-war-i",
+      "problem": "La data convenzionale di fine guerra può confondersi con la successiva conclusione giuridica della pace.",
+      "conclusion": "L’11 novembre 1918 è esplicitamente l’armistizio e la fine convenzionale; la voce Versailles precisa la successiva entrata in vigore del trattato.",
+      "source_ids": [
+        "versailles_archives"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1915-general-relativity",
+      "problem": "L’approssimazione newtoniana nell’INPUT omette il requisito delle velocità basse.",
+      "conclusion": "Precisati campo debole quasi stazionario e velocità piccole rispetto alla luce; conservati 1915 e pubblicazione dettagliata del maggio 1916.",
+      "source_ids": [
+        "gr_limit"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1917-russian-revolution",
+      "problem": "Febbraio/ottobre sono nomi basati sul calendario giuliano; 15 marzo è gregoriano.",
+      "conclusion": "Esplicitati i calendari senza spostare a intuito la voce né confondere una rivoluzione con la nascita di Nicola II.",
+      "source_ids": [
+        "russia_calendar"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1918-1918-influenza-pandemic",
+      "problem": "Almeno 17 milioni rischia di trasformare la stima di uno studio in un minimo certo.",
+      "conclusion": "Indicati circa 17,4 milioni stimati da uno studio del 2018 e la più diffusa stima di 50 milioni o oltre. Conservati 500 milioni, un terzo, H1N1, censura e origine geografica incerta.",
+      "source_ids": [
+        "flu_cdc",
+        "flu_study",
+        "flu_period"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1919-treaty-of-versailles",
+      "problem": "Firma ed efficacia giuridica non coincidono; una descrizione del processo al Kaiser può farlo sembrare avvenuto.",
+      "conclusion": "Distinti 28 giugno 1919 e 10 gennaio 1920. Il trattato prevedeva un processo, senza affermare che si svolse.",
+      "source_ids": [
+        "versailles_archives"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1920-nineteenth-amendment-to-the-united-states-constitution",
+      "problem": "L’INPUT dice che nessun emendamento sul suffragio passò la Camera prima del maggio 1919, ma una versione era passata nel 1918.",
+      "conclusion": "La frase riguarda ora il testo effettivamente adottato nel 1919. Conservati 1878, entrambe le votazioni, trentasei ratifiche, 18 agosto e certificazione del 26.",
+      "source_ids": [
+        "amendment_records",
+        "amendment_archives",
+        "amendment_prior"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1920-federico-fellini-birth",
+      "problem": "Verifica della collocazione biografica richiesta dall’utente.",
+      "conclusion": "Confermati Rimini e 20 gennaio 1920 dal museo dedicato; data già corretta, nessuna modifica proposta. In italiano usati i titoli ufficiali Roma città aperta, Paisà e Le notti di Cabiria.",
+      "source_ids": [
+        "fellini_museum"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1921-r-u-r",
+      "problem": "Occorre distinguere la prima mondiale da quella più nota di Praga.",
+      "conclusion": "Confermato 2 gennaio 1921 a Hradec Králové; non sostituito con 25 gennaio.",
+      "source_ids": [
+        "rur_theatre",
+        "rur_embassy"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1922-bbc",
+      "problem": "L’INPUT può attribuire la Royal Charter alla società del 1922; il titolo riguarda l’inizio delle trasmissioni.",
+      "conclusion": "Distinte società del 18 ottobre 1922, trasmissioni del 14 novembre e Corporation dal 1 gennaio 1927.",
+      "source_ids": [
+        "bbc_history",
+        "bbc_archives"
+      ],
+      "text_applied": true
+    }
+  ],
+  "metadata_proposals": [
+    {
+      "target_id": "history-1914-world-war-i",
+      "field": "timeline_date",
+      "original": {
+        "year": 1914,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1914,
+        "month": 7,
+        "day": 28,
+        "precision": "day",
+        "event_semantics": "Inizio della Prima guerra mondiale"
+      },
+      "source_ids": [],
+      "reason": "Evento esplicito descritto; non data di nascita. Proposta separata, originali e catalogo intatti. Data già presente nel testo INPUT."
+    },
+    {
+      "target_id": "history-1919-treaty-of-versailles",
+      "field": "timeline_date",
+      "original": {
+        "year": 1919,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1919,
+        "month": 6,
+        "day": 28,
+        "precision": "day",
+        "event_semantics": "Firma del Trattato di Versailles"
+      },
+      "source_ids": [
+        "versailles_archives"
+      ],
+      "reason": "Evento esplicito descritto; non data di nascita. Proposta separata, originali e catalogo intatti."
+    },
+    {
+      "target_id": "history-1920-league-of-nations",
+      "field": "timeline_date",
+      "original": {
+        "year": 1920,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1920,
+        "month": 1,
+        "day": 10,
+        "precision": "day",
+        "event_semantics": "Inizio dell’attività della Società delle Nazioni"
+      },
+      "source_ids": [
+        "versailles_archives"
+      ],
+      "reason": "Evento esplicito descritto; non data di nascita. Proposta separata, originali e catalogo intatti."
+    },
+    {
+      "target_id": "history-1920-nineteenth-amendment-to-the-united-states-constitution",
+      "field": "timeline_date",
+      "original": {
+        "year": 1920,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1920,
+        "month": 8,
+        "day": 18,
+        "precision": "day",
+        "event_semantics": "Ratifica ed entrata in vigore del XIX emendamento"
+      },
+      "source_ids": [
+        "amendment_archives"
+      ],
+      "reason": "Evento esplicito descritto; non data di nascita. Proposta separata, originali e catalogo intatti."
+    },
+    {
+      "target_id": "history-1921-r-u-r",
+      "field": "timeline_date",
+      "original": {
+        "year": 1921,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1921,
+        "month": 1,
+        "day": 2,
+        "precision": "day",
+        "event_semantics": "Prima rappresentazione pubblica di R.U.R."
+      },
+      "source_ids": [
+        "rur_theatre"
+      ],
+      "reason": "Evento esplicito descritto; non data di nascita. Proposta separata, originali e catalogo intatti."
+    },
+    {
+      "target_id": "history-1922-bbc",
+      "field": "timeline_date",
+      "original": {
+        "year": 1922,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1922,
+        "month": 11,
+        "day": 14,
+        "precision": "day",
+        "event_semantics": "Inizio delle trasmissioni quotidiane BBC"
+      },
+      "source_ids": [
+        "bbc_history"
+      ],
+      "reason": "Evento esplicito descritto; non data di nascita. Proposta separata, originali e catalogo intatti."
+    }
+  ],
+  "editorial_review": {
+    "fidelity": "Tutte le dodici card conservate nelle cinque lingue. Controllati numeri, successione degli eventi, titoli delle opere e tre card Fellini; titolo e ID R.U.R. invariati. Le fonti e licenze originali restano negli INPUT protetti.",
+    "style": "EN scritto e salvato per primo; adattamenti idiomatici con paragrafi interni per le card lunghe. Le spiegazioni distinguono storia istituzionale, firma/entrata in vigore e fatti biografici.",
+    "attributions": "Nuove fonti usate per verifiche circoscritte; nessuna ricerca per inventare nuove card. Per l’influenza la stima rivista è attribuita a uno studio del 2018, non resa più certa dalla riscrittura.",
+    "english_written_first": true,
+    "languages": [
+      "en",
+      "it",
+      "fr",
+      "de",
+      "es"
+    ],
+    "entry_count": 10,
+    "card_count_per_language": 12,
+    "reviewed_at": "2026-10-30T03:23:45.125402+00:00",
+    "english_summary_word_range": [
+      33,
+      40
+    ],
+    "structural_checks": "Schema, ID, ordine, numero di card e cinque lingue verificati dal validatore. Tutti i titoli presenti; nessun HTML o Markdown nei testi."
+  },
+  "status": "completed",
+  "validation": {
+    "valid": true,
+    "batch_id": "285-human-history",
+    "completed": true,
+    "entry_count": 10,
+    "card_count_per_language": 12,
+    "language_count": 5,
+    "translated_card_count": 60,
+    "entry_card_counts": {
+      "history-1914-world-war-i": 1,
+      "history-1915-general-relativity": 1,
+      "history-1917-russian-revolution": 1,
+      "history-1918-1918-influenza-pandemic": 1,
+      "history-1919-treaty-of-versailles": 1,
+      "history-1920-league-of-nations": 1,
+      "history-1920-nineteenth-amendment-to-the-united-states-constitution": 1,
+      "history-1920-federico-fellini-birth": 3,
+      "history-1921-r-u-r": 1,
+      "history-1922-bbc": 1
+    },
+    "issue_counts": {
+      "history-1914-world-war-i": 0,
+      "history-1915-general-relativity": 0,
+      "history-1917-russian-revolution": 0,
+      "history-1918-1918-influenza-pandemic": 0,
+      "history-1919-treaty-of-versailles": 0,
+      "history-1920-league-of-nations": 0,
+      "history-1920-nineteenth-amendment-to-the-united-states-constitution": 0,
+      "history-1920-federico-fellini-birth": 0,
+      "history-1921-r-u-r": 0,
+      "history-1922-bbc": 0
+    },
+    "summary_checks": [
+      {
+        "entry_id": "history-1914-world-war-i",
+        "feature_id": null,
+        "english_summary_words": 39
+      },
+      {
+        "entry_id": "history-1915-general-relativity",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "history-1917-russian-revolution",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "history-1918-1918-influenza-pandemic",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "history-1919-treaty-of-versailles",
+        "feature_id": null,
+        "english_summary_words": 40
+      },
+      {
+        "entry_id": "history-1920-league-of-nations",
+        "feature_id": null,
+        "english_summary_words": 40
+      },
+      {
+        "entry_id": "history-1920-nineteenth-amendment-to-the-united-states-constitution",
+        "feature_id": null,
+        "english_summary_words": 39
+      },
+      {
+        "entry_id": "history-1920-federico-fellini-birth",
+        "feature_id": null,
+        "english_summary_words": 40
+      },
+      {
+        "entry_id": "history-1921-r-u-r",
+        "feature_id": null,
+        "english_summary_words": 33
+      },
+      {
+        "entry_id": "history-1922-bbc",
+        "feature_id": null,
+        "english_summary_words": 37
+      }
+    ],
+    "editorial_review": [
+      "history-1914-world-war-i/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1914-world-war-i/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1914-world-war-i/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1914-world-war-i/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1915-general-relativity/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1915-general-relativity/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1915-general-relativity/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1915-general-relativity/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1917-russian-revolution/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1917-russian-revolution/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1917-russian-revolution/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1917-russian-revolution/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1918-1918-influenza-pandemic/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1918-1918-influenza-pandemic/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1918-1918-influenza-pandemic/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1918-1918-influenza-pandemic/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1919-treaty-of-versailles/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1919-treaty-of-versailles/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1919-treaty-of-versailles/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1919-treaty-of-versailles/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1920-league-of-nations/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1920-league-of-nations/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1920-league-of-nations/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1920-league-of-nations/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1920-nineteenth-amendment-to-the-united-states-constitution/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1920-nineteenth-amendment-to-the-united-states-constitution/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1920-nineteenth-amendment-to-the-united-states-constitution/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1920-nineteenth-amendment-to-the-united-states-constitution/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1922-bbc/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1922-bbc/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1922-bbc/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1922-bbc/main/es: main title changed; check that this is a descriptive title and not an altered official name"
+    ],
+    "failures": []
+  },
+  "output_sha256": "6564700a26f1ead666bdd63e9d8fca550b0c8d9398e3d03f214e9d01e7c405dd",
+  "expansion_assessments": [
+    {
+      "target_id": "history-1914-world-war-i",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1915-general-relativity",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1917-russian-revolution",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1918-1918-influenza-pandemic",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1919-treaty-of-versailles",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1920-league-of-nations",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1920-nineteenth-amendment-to-the-united-states-constitution",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1920-federico-fellini-birth",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1921-r-u-r",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1922-bbc",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    }
+  ],
+  "root_review": {
+    "reviewed_at": "2026-10-30T03:26:33.799426+00:00",
+    "scope": "Rilettura mirata degli avvisi quantitativi e dei punti fattuali segnalati, successiva alla revisione del redattore; non verifica universale indipendente di ogni fonte.",
+    "finding": "Controllati i dieci avvisi: vittime della guerra, cinquecento milioni di contagi, trentasei ratifiche scritti in lettere; altri numeri introdotti da correzioni esplicite e documentate.",
+    "additional_text_edits": false
+  }
+}

@@ -1,0 +1,298 @@
+{
+  "schema_version": 1,
+  "checked_utc": "2026-10-21T01:38:00.154960+00:00",
+  "checker_role": "author_primary_evidence_check_supporting_root_independent_review",
+  "scope": "Nine specifically requested primary passages. This is not an independent approval of the author’s own prose, a complete source review, a media-rights clearance or an admission decision. Root owns final editorial review. No master, locales or assembly changed.",
+  "batch_path": "content/expansion/editorial-markets-machines-14.json",
+  "before_sha256": "b7b13c4d248c5f8b0dbbdd6d2a5b0e07397ba1d071d1aacf842b71b6adc8d142",
+  "batch_sha256": "71a9ce0dce565da858c9bdb8ae69e247d7302967c87810f3bc2f78dabcfc7921",
+  "before_archive": "build/research/editorial14/editorial-markets-machines-14-before-locator-check.json",
+  "changes": [
+    {
+      "path": "entries.feature-nintendo-license-network.cards[2].citations[0].locator",
+      "before": "Steiger1May1991printedp7: proposedconsent,resalepricefixing allegations,dealersfreeprices.",
+      "after": "Steiger, 1 May 1991, PDF page 7 (one-based; web-reader page 6), Proposed consent, retail-price allegations and dealer prices."
+    },
+    {
+      "path": "entries.feature-nintendo-license-network.cards[3].citations[0].locator",
+      "before": "Samep7:39states/Maryland/NewYork matching prospective relief anduniformrules.",
+      "after": "Steiger, 1 May 1991, PDF page 7 (one-based; web-reader page 6), Maryland/New York-led cooperation and matching prospective relief in 39 states."
+    },
+    {
+      "path": "entries.feature-nintendo-license-network.sources.steiger91.publisher",
+      "before": "Janet D.Steiger,FTC chair,Chicago,1May1991,printedp7",
+      "after": "Janet D. Steiger, FTC chair, Chicago, 1 May 1991; cited PDF page 7 (one-based)"
+    },
+    {
+      "path": "entries.feature-nintendo-license-network.sources.steiger91.locator",
+      "before": "Steiger1May1991printedp7: proposedconsent,resalepricefixing allegations,dealersfreeprices.; Samep7:39states/Maryland/NewYork matching prospective relief anduniformrules.",
+      "after": "PDF page 7 (one-based; web-reader page 6), Nintendo consent and federal/state cooperation paragraphs, including footnote 5. Text read in official FTC PDF through web reader; printed page number not certified by a raster inspection."
+    },
+    {
+      "path": "entries.feature-playstation2-production.cards[3].citations[0].locator",
+      "before": "White2002printedpp52–53/PDFpp37–38: GOAL liveupdates andsingle-programmer maintenancebottleneck.",
+      "after": "White, April 2002, printed pages 52 and 54 / PDF pages 37 and 38 (one-based): GOAL live updates and single-programmer maintenance bottleneck."
+    },
+    {
+      "path": "entries.feature-playstation2-production.sources.ps2white02.publisher",
+      "before": "Stephen White / Game Developer,April2002,printedpp48–55",
+      "after": "Stephen White / Game Developer, April 2002; cited printed pages 50, 52 and 54"
+    },
+    {
+      "path": "entries.feature-playstation2-production.sources.ps2white02.locator",
+      "before": "White2002printedp50/PDFp35: seamlessworld,memorylayout,LOD,artconstraints.; White2002printedpp52–53/PDFpp37–38: GOAL liveupdates andsingle-programmer maintenancebottleneck.",
+      "after": "Printed page 50 / PDF page 35: seamless world, memory, LOD and art constraints. Printed pages 52 and 54 / PDF pages 37 and 38: GOAL live updates and single-programmer maintenance bottleneck. All PDF page numbers are one-based."
+    },
+    {
+      "path": "entries.feature-playstation2-production.sources.ps2white02.limits",
+      "before": "First-person studio postmortem; world/LOD and GOAL advantages/maintenance costs treated together. Exact original PDFpp35/37 inspected visually.",
+      "after": "First-person studio postmortem. World/LOD and GOAL advantages/maintenance costs are read together. Original PDF pages 35, 37 and 38 inspected visually; their printed page labels are 50, 52 and 54."
+    }
+  ],
+  "reader_prose_unchanged": true,
+  "other_seven_entries_unchanged": true,
+  "evidence": [
+    {
+      "source_id": "iwatani86",
+      "entry_id": "feature-pac-man-audience",
+      "body_indices": [
+        0,
+        1
+      ],
+      "url": "https://www.programmersatwork.net/toru-iwatani",
+      "actual_passage_read": "Author’s current authorized 1985 interview excerpt: design/communication and taberu question; hardest-part ghost-algorithm answer and notebook-diagram note.",
+      "method": "local HTML and complete extracted excerpt read",
+      "evidence_files": [
+        {
+          "path": "build/research/editorial14/iwatani86.html",
+          "bytes": 254416,
+          "sha256": "59f7c7277f7ac189b7c38814f4318ac52438aefae9d7fbd19303a54a05323392"
+        },
+        {
+          "path": "build/research/editorial14/iwatani86.txt",
+          "bytes": 7437,
+          "sha256": "c518473ae840c1e19f03b7917edcd74385735a4ddbbb1d760a910a6b187d0f0a"
+        }
+      ],
+      "limits": "Retrospective intent, not a demographic measurement; 1985 interview distinguished from 1986 book.",
+      "result": "requested_primary_passage_checked"
+    },
+    {
+      "source_id": "invaders08",
+      "entry_id": "feature-space-invaders-space",
+      "body_indices": [
+        2,
+        3
+      ],
+      "url": "https://shmuplations.com/spaceinvaders/",
+      "actual_passage_read": "Nishikado answers on unaffordable workstation, translated documentation, two-pattern animation tool and light pen; Wada cafe/table/control recollections.",
+      "method": "local HTML and complete interview text read",
+      "evidence_files": [
+        {
+          "path": "build/research/editorial14/invaders08.html",
+          "bytes": 147439,
+          "sha256": "3aeab47cec872c41de0762a605c2df50baea65ca2ff06e114ace08129562231b"
+        },
+        {
+          "path": "build/research/editorial14/invaders08.txt",
+          "bytes": 13690,
+          "sha256": "c180f8cc95d78103a438208968b7185b040530a4d10d2c4d6dc919f5ff4cd53e"
+        }
+      ],
+      "limits": "Do not adopt interview’s contested first-microprocessor-game claim.",
+      "result": "requested_primary_passage_checked"
+    },
+    {
+      "source_id": "sato98",
+      "entry_id": "feature-sega-saturn-multiple-markets",
+      "body_indices": [
+        0,
+        1
+      ],
+      "url": "https://shmuplations.com/segahistory/",
+      "actual_passage_read": "The Eve of the Saturn: sprite personnel/technology, paired sprite/CG engines, insufficient libraries and third-party difficulty; Sega Saturn section retains both design traditions.",
+      "method": "local HTML and relevant complete sections read",
+      "evidence_files": [
+        {
+          "path": "build/research/editorial14/sato98.html",
+          "bytes": 172177,
+          "sha256": "368df01f52ba38ba69aa33b2772caa1825990909ada3616eda9f8876f74d69bb"
+        },
+        {
+          "path": "build/research/editorial14/sato98.txt",
+          "bytes": 30843,
+          "sha256": "71808c343113637f8326b58e05aa2d3744a47d94b8c10741803e0bfe950495c6"
+        }
+      ],
+      "limits": "First-person retrospective; no new precise sales or causal claim added.",
+      "result": "requested_primary_passage_checked"
+    },
+    {
+      "source_id": "wiiware08",
+      "entry_id": "feature-digital-indie-console",
+      "body_indices": [
+        2,
+        3
+      ],
+      "url": "https://www.nintendo.com/en-gb/News/2008/WiiWare-arrives-in-Europe-250910.html",
+      "actual_passage_read": "Announcement dated 13 May 2008, European launch 20 May; opening access, control-method and price paragraphs, named launch list and future-project paragraph.",
+      "method": "local official HTML and full announcement text read",
+      "evidence_files": [
+        {
+          "path": "build/research/editorial14/wiiware08.html",
+          "bytes": 148029,
+          "sha256": "529f65b769f22a110bcca4834c73e6a88fc7b9e54bde4030851eafa586bc6838"
+        },
+        {
+          "path": "build/research/editorial14/wiiware08.txt",
+          "bytes": 8168,
+          "sha256": "ddf8d697422a246386ebb5c407abfcde05140c9ec71d5b50e2d2107488c8201a"
+        }
+      ],
+      "limits": "Platform-holder aims distinguished from achieved commercial outcomes.",
+      "result": "requested_primary_passage_checked"
+    },
+    {
+      "source_id": "gbmanual89",
+      "entry_id": "feature-portable-engineering",
+      "body_indices": [
+        0,
+        1
+      ],
+      "url": "https://manualzz.com/doc/22866609/nintendo-game-boy-handheld-game-console-user-manual",
+      "actual_passage_read": "Original manual transcription: feature/contrast and battery sections; Things to Remember; troubleshooting; Specifications (printed page 12).",
+      "method": "actual web-reader manual text read; local original PDF unavailable",
+      "evidence_files": [],
+      "limits": "Ignore host AI summary/FAQ. No raster or original PDF download claimed; exact revision retained. Battery-life numbers are deliberately not compared to later support pages.",
+      "result": "requested_primary_passage_checked"
+    },
+    {
+      "source_id": "lynx89",
+      "entry_id": "feature-portable-engineering",
+      "body_indices": [
+        2,
+        3
+      ],
+      "url": "https://oldcrap.org/wp-content/uploads/2024/06/atari-lynx-i-user-manual.pdf",
+      "actual_passage_read": "C301139-001 Rev. B: printed pages 2–3 controls/idle shutdown; printed page 4 power; original copyright/revision visible.",
+      "method": "local original PDF text plus all four rendered spreads inspected",
+      "evidence_files": [
+        {
+          "path": "build/research/editorial14/lynx89.pdf",
+          "bytes": 397391,
+          "sha256": "2a0a9010f0733d1b3e1227914437c0781e63c00d9f5b79ce634e003529f8ef7f"
+        },
+        {
+          "path": "build/research/editorial14/lynx89-p1.png",
+          "bytes": 237709,
+          "sha256": "49433add6795d7a5b343a7f3feec00547bf27bf7871f390622aac7d1e5409174"
+        },
+        {
+          "path": "build/research/editorial14/lynx89-p2.png",
+          "bytes": 301810,
+          "sha256": "f45cb6b6b8bdbc9e619ea0ed618e3e8b7f80fa53ff9e85d376dcab1ec9c3017a"
+        },
+        {
+          "path": "build/research/editorial14/lynx89-p3.png",
+          "bytes": 281989,
+          "sha256": "05b063b83006a863d42c3bf87769b7cf289fa100bfa04a2a2b7bed8546c2bb3d"
+        },
+        {
+          "path": "build/research/editorial14/lynx89-p4.png",
+          "bytes": 344174,
+          "sha256": "f9465e0795ca0b596fff1dde4eb5548c3cf368bdd5322058399d8e9cb937e3aa"
+        }
+      ],
+      "limits": "First Lynx manual revision; no substitution of Lynx II instructions or controlled battery comparison.",
+      "result": "requested_primary_passage_checked"
+    },
+    {
+      "source_id": "cgw84",
+      "entry_id": "feature-north-american-crash",
+      "body_indices": [
+        2,
+        3
+      ],
+      "url": "https://www.cgwmuseum.org/galleries/issues/cgw_4.1.pdf",
+      "actual_passage_read": "Dana Lombardy, Inside the Industry, printed/PDF page 5: October 1983 questionnaire, response categories and overlapping game activities.",
+      "method": "original page-5 raster inspected and full column text read",
+      "evidence_files": [
+        {
+          "path": "build/research/editorial14/cgw84.pdf",
+          "bytes": 21125088,
+          "sha256": "4acd649d68c70bfb0a78a031697feb88484e3c1a1dd360cb3d0110389bcd7fdc"
+        },
+        {
+          "path": "build/research/editorial14/cgw84-p5.png",
+          "bytes": 505652,
+          "sha256": "18206fd69e14798e892c849d6acbf8b8f9cc34a6f4f3c8d46a3ea6d5c33eff9c"
+        }
+      ],
+      "limits": "Self-selected readership survey, not population-wide or worldwide market evidence.",
+      "result": "requested_primary_passage_checked"
+    },
+    {
+      "source_id": "ps2white02",
+      "entry_id": "feature-playstation2-production",
+      "body_indices": [
+        2,
+        3
+      ],
+      "url": "https://media.gdcvault.com/GD_Mag_Archives/GDM_April_2002.pdf",
+      "actual_passage_read": "Printed page 50/PDF35 seamless-world paragraph and LOD/art constraints; printed page 52/PDF37 GOAL live changes; printed page 54/PDF38 What Went Wrong maintenance/tooling paragraphs.",
+      "method": "original PDF text and exact three rendered pages inspected",
+      "evidence_files": [
+        {
+          "path": "build/research/editorial14/ps2white02.pdf",
+          "bytes": 14469580,
+          "sha256": "83134ad97f050b491da07b54e8f7731f63b111157f25da2b739f0fa90048d9e1"
+        },
+        {
+          "path": "build/research/editorial14/ps2white02-p35.png",
+          "bytes": 320205,
+          "sha256": "ca115447bba396890ea8820c72bf1c420dbec9454bf04c9f87b55d542bb3c403"
+        },
+        {
+          "path": "build/research/editorial14/ps2white02-p37.png",
+          "bytes": 406333,
+          "sha256": "0b8e562c4b2b805244b92f0f3e0f1f86198d9dd3973b3c4a42f4c09399716118"
+        },
+        {
+          "path": "build/research/editorial14/ps2white02-p38.png",
+          "bytes": 502545,
+          "sha256": "3ea2f7ccbbaf60a872546e5294358d96ec8913229696cd297a3f4b37af8d0c7c"
+        }
+      ],
+      "limits": "Printed labels verified directly as 50, 52 and 54; no printed page 53 claim retained.",
+      "result": "requested_primary_passage_checked"
+    },
+    {
+      "source_id": "steiger91",
+      "entry_id": "feature-nintendo-license-network",
+      "body_indices": [
+        2,
+        3
+      ],
+      "url": "https://www.ftc.gov/system/files/documents/public_statements/694031/19910501_steiger_remarks_before_the_mid-american_committee.pdf",
+      "actual_passage_read": "Official speech header, PDF page 7 (one-based), Nintendo consent/cooperation paragraphs and footnote 5.",
+      "method": "actual official PDF web-reader text read; direct download returned HTTP404; raster unavailable",
+      "evidence_files": [],
+      "limits": "Personal views disclaimer retained; accepted for public comment on 10 April, not a final trial verdict. Printed label not certified.",
+      "result": "requested_primary_passage_checked"
+    }
+  ],
+  "web_reader_receipts": [
+    {
+      "source_id": "steiger91",
+      "url": "https://www.ftc.gov/system/files/documents/public_statements/694031/19910501_steiger_remarks_before_the_mid-american_committee.pdf",
+      "read_method": "Official PDF returned text with header and Nintendo paragraphs; page index6 corresponds to one-based PDF7. Direct urllib404 and screenshot failure are not treated as successful download or raster inspection."
+    },
+    {
+      "source_id": "gbmanual89",
+      "url": "https://manualzz.com/doc/22866609/nintendo-game-boy-handheld-game-console-user-manual",
+      "read_method": "Manual text lines16–279; publisher-original document identified as DMG-GB-USA-1, copyright1989. Site-generated summary/AI-chat/FAQ excluded."
+    }
+  ],
+  "independent_review_status": "pending_root_targeted_review",
+  "operator_revision_receipt": "content/editorial/markets-machines-14-operators-revision.json"
+}

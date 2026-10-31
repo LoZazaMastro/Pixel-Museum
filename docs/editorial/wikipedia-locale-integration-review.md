@@ -1,0 +1,21 @@
+# Reference locale overlay review
+
+The reviewed batch covers Breakout (`wikipedia-453246`), Elite (`wikipedia-286774`), Rez (`wikipedia-101230`) and Bastion (`wikipedia-30602654`) in Italian, Spanish, French and German: 16 article/language pairs, 60 body paragraphs and 12 existing headings. Independent agent source/semantic review passed. Human native-language and device typography signoff remain pending and are explicitly false in the integration receipt.
+
+Every paragraph was compared with the exact English reference. No new dates, platforms, sales figures or historical claims were introduced. Names remain identifiable; punctuation and thousands separators follow the target language. Breakout preserves its repeated 1978 dates and distinguishes revenue from profitability. Elite retains the supplied source's sequel chronology and ownership wording. Bastion's truncated summary still ends at “Warner Bros.” while its first body paragraph retains the full publisher. These source boundaries are documented rather than silently rewritten. Rez, Bastion and Elite have no English headings; their empty arrays remain empty. Breakout retains three translated editorial headings per locale.
+
+The batches retain immutable English revision links, contributor-history links and CC BY-SA 4.0 adaptation notices. All four text fields plus subtitle and both arrays bind to exact current English content; original attribution and source lists are also checked. Breakout/Elite now include localized generic subtitles and active localized translation credits. The separate original-English attribution is preserved in authoring provenance. The runtime restores the original English credit together with the original prose when the language changes.
+
+## Integration and preservation
+
+`content/expansion/integrate_wikipedia_locales.py` reads the two authoring batches and eight original Playhub locale documents, validates them, and writes compact derived documents to `content/runtime-locales`. It never writes the master catalogue or original `content/locales` files. The assembler calls it after final catalogue serialization. Both packagers verify source/output hashes before copying the generated documents to their normal packaged `content/locales` location. Slice packaging filters these documents and translation credits by selected exhibit IDs.
+
+Only the four explicitly reviewed reference IDs are admitted. Any ID already present in any original Playhub locale is protected. Attached original features, media, source record bodies, dates and paragraph indices are unchanged. English, Portuguese, Russian and Ukrainian generated documents retain their original JSON values. The runtime currently offers English, Italian, Spanish, French and German; generating the other original source documents does not claim additional UI support.
+
+`content/editorial/wikipedia-locale-review.json` freezes the reviewed batch file hashes. `content/wikipedia-locale-integration-audit.json` records the current assembly snapshot, all source hashes, eight generated output hashes, per-pair source/translation hashes and full translation credit metadata. This audit is regenerated when assembly changes; its catalogue digest is a snapshot, not a permanent master identifier. Packaging rejects stale or modified output. The master credits inventory separately retains all 16 translation attributions and their revision/licence links.
+
+## Verification
+
+`python content/expansion/check_wikipedia_locale_overlays.py` passes six regression groups: exact join/input preservation; all five source-field mutations; source attribution/revision drift; protected Playhub/nonreference collisions; malformed/shortened/oversized/NUL translations and incorrect credits; review hash, generated-output and package freshness checks. Temporary-tree writer tests confirm source bytes never change.
+
+`bash tools/test-reference-locales.sh` also compiles and runs `tests/wikipedia_locale_overlay_test.cpp` against the actual C++ parser. All translated text and active credits match the generated locale rows; English restoration is exact; missing rows retain English; attached original features and non-text metadata/media remain intact. This is a host regression check and makes no device layout claim. No package, console installation or FTP operation was performed for this review.

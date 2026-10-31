@@ -1,0 +1,968 @@
+{
+  "batch_id": "043-catalog",
+  "status": "completed",
+  "sources": [
+    {
+      "source_id": "043-recca-manual",
+      "url": "https://manualzz.com/doc/4799172/任天堂-サマーカーニバル--92-烈火-ゲーム-取扱説明書",
+      "title": "Summer Carnival ’92 Recca — manuale Nintendo 3DS Virtual Console, CTR-N-TAVJ-JPN",
+      "publisher": "Nintendo; riproduzione testuale Manualzz",
+      "accessed_at": "2026-10-30",
+      "scope": "Sezione 5: Score Attack di due minuti; Time Attack fino a un milione di punti entro cinque minuti, con controllo a due minuti. Sezione 10: cinque tipi di Option.",
+      "limitation": "Letta la trascrizione del manuale, non dichiarata ispezione visiva del PDF. Il dettaglio del controllo sostituisce l’erroneo obiettivo di completare due livelli."
+    },
+    {
+      "source_id": "043-recca-nintendo",
+      "url": "https://www.nintendo.com/it-it/Giochi/NES/Summer-Carnival-92-RECCA-790679.html",
+      "title": "Summer Carnival ’92: RECCA",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "Descrizione ufficiale del torneo, della rapidità su NES e del sistema che carica lo scudo interrompendo il fuoco.",
+      "limitation": "La data della riedizione nel 2013 non è stata usata come uscita Famicom del 1992."
+    },
+    {
+      "source_id": "043-thunder-manual",
+      "url": "https://www.sega.jp/mdmini2/en/assets/manual/pdf/EU_Thunder-Force-IV.pdf",
+      "title": "Thunder Force IV — manuale europeo Mega Drive",
+      "publisher": "Technosoft / Sega",
+      "accessed_at": "2026-10-30",
+      "scope": "Il testo indicizzato del manuale identifica le forze Orn e la minaccia alla Galactic Federation; distingue i dieci livelli.",
+      "limitation": "PDF privo di estrazione leggibile nel browser; il download diretto ha restituito 403 e le immagini non erano disponibili. Non dichiarata lettura integrale o visiva. Confronto con la trascrizione del racconto del manuale nella fonte seguente."
+    },
+    {
+      "source_id": "043-thunder-manual-transcription",
+      "url": "https://shmup.fandom.com/wiki/Thunder_Force_IV",
+      "title": "Thunder Force IV — Story, adattata dal manuale statunitense",
+      "publisher": "Shmup Wiki contributors; racconto del manuale Technosoft / Sega",
+      "accessed_at": "2026-10-30",
+      "scope": "Forze Orn sopravvissute e alleati minacciano la Galactic Federation dopo Thunder Force III; la fonte distingue il manuale dalla sintesi che parla di estinzione umana.",
+      "limitation": "Trascrizione secondaria esplicitamente attribuita al manuale; non riprodotti nomi e retroscena nuovi fuori dal punto da correggere."
+    },
+    {
+      "source_id": "043-arai-interview",
+      "url": "https://shmuplations.com/thunderforceiii/",
+      "title": "Thunder Force III — 2016 Developer Interview",
+      "publisher": "Famitsu / Naosuke Arai; traduzione Shmuplations",
+      "accessed_at": "2026-10-30",
+      "scope": "Arai distingue il gruppo di sviluppo di Thunder Force IV da quello precedente e ne ricorda il lavoro sulla conversione di Devil’s Crush; il gruppo sonoro conserva continuità.",
+      "limitation": "Non contiene la descrizione della chitarra distorta: quel dettaglio è mantenuto dal materiale fornito, la cui bibliografia rimanda a PlayStation Anthology del 2014. Non dichiarata consultazione di quel libro."
+    },
+    {
+      "source_id": "043-dq-jerauld",
+      "url": "https://gaming.moe/?p=331",
+      "title": "Interview: Robert Jerauld, former Enix USA producer",
+      "publisher": "Gaming.moe / Heidi Kemps, novembre 2014",
+      "accessed_at": "2026-10-30",
+      "scope": "L’intervistatrice ricorda la newsletter Enix sui problemi tecnici. Dopo aver distinto Dragon Quest V da VI, Jerauld ricorda che il costo di localizzazione del V non aveva ottenuto approvazione giapponese.",
+      "limitation": "Letto il passaggio indicizzato dell’intervista; pagina diretta non accessibile. Non consultata la newsletter originale né adottato l’iniziale ricordo confuso sulla traduzione di Dragon Quest VI."
+    },
+    {
+      "source_id": "043-dq-date",
+      "url": "https://www.dragonquest.jp/products/list/page/20/base/16/",
+      "title": "Dragon Quest V: Tenkuu no Hanayome — catalogo dei titoli",
+      "publisher": "Square Enix / Dragon Quest Paradise",
+      "accessed_at": "2026-10-30",
+      "scope": "Scheda ufficiale: Super Famicom, 27 settembre 1992; sottotitolo giapponese Tenkuu no Hanayome.",
+      "limitation": "Data giapponese, non mondiale. Il significato del sottotitolo è distinto dai titoli ufficiali delle edizioni inglesi."
+    },
+    {
+      "source_id": "043-airzonk-manual",
+      "url": "https://www.tg-16.com/contributors/bernie/Air_Zonk/Air_Zonk.pdf",
+      "title": "Air Zonk — manuale originale TurboGrafx-16",
+      "publisher": "Red Company / Naxat Soft; scansione TG-16.com",
+      "accessed_at": "2026-10-30",
+      "scope": "Pagine stampate 2, 6–9: un grande smiley fa apparire il compagno, il successivo consente la fusione; dopo aver finito una fase con quel compagno non lo si può scegliere per un’altra.",
+      "limitation": "Letto testo estratto del PDF; download diretto non riuscito e nessuna immagine effettivamente visualizzata. Il manuale non conta la soglia degli smiley piccoli."
+    },
+    {
+      "source_id": "043-airzonk-weapons",
+      "url": "https://strategywiki.org/wiki/Air_Zonk",
+      "title": "Air Zonk — guida di gioco",
+      "publisher": "StrategyWiki contributors",
+      "accessed_at": "2026-10-30",
+      "scope": "La forma Mini-Zonk è l’eccezione alle armi con attacco caricato; la pagina conta otto faccine per il ciclo dei compagni.",
+      "limitation": "Fonte secondaria di meccaniche, confrontata con la fonte successiva. Il conteggio delle faccine non è stato assunto come certo: il testo usa il criterio del grande smiley attestato dal manuale."
+    },
+    {
+      "source_id": "043-airzonk-corroboration",
+      "url": "https://konami.fandom.com/wiki/Air_Zonk",
+      "title": "Air Zonk — armi e compagni",
+      "publisher": "Konami Wiki contributors",
+      "accessed_at": "2026-10-30",
+      "scope": "Conferma l’eccezione Mini-Zonk, ma conta sette faccine prima del richiamo: prova della divergenza di conteggio fra fonti secondarie.",
+      "limitation": "Il conflitto numerico non viene mascherato scegliendo una cifra a intuito; la meccanica operativa è descritta secondo il manuale originale."
+    },
+    {
+      "source_id": "043-mk2-manual",
+      "url": "https://www.gamesdatabase.org/Media/SYSTEM/Nintendo_Game_Boy/Manual/formated/Mortal_Kombat_II_-_1994_-_Acclaim_Entertainment.pdf",
+      "title": "Mortal Kombat II — manuale Game Boy, introduzione",
+      "publisher": "Acclaim / Midway; scansione Games Database",
+      "accessed_at": "2026-10-30",
+      "scope": "La pagina narrativa del seguito espone il bando di Shang Tsung cinquecento anni prima e il rapporto con Goro e Shao Kahn.",
+      "limitation": "Letto il testo indicizzato del manuale; non attribuito questo passaggio all’introduzione del primo arcade."
+    },
+    {
+      "source_id": "043-mk1-manual",
+      "url": "https://56k.es/downloads/mortal_kombat_manual.pdf",
+      "title": "Mortal Kombat — manuale PC",
+      "publisher": "Midway / Acclaim; scansione 56k.es",
+      "accessed_at": "2026-10-30",
+      "scope": "Il racconto del primo gioco insiste su Shang Tsung, Goro e i cinquecento anni del campione, senza il medesimo sviluppo successivo della mitologia.",
+      "limitation": "Edizione PC: il suo conteggio dei fondali non è trasferito all’arcade. Conservati i sette luoghi del materiale relativo alla versione arcade."
+    },
+    {
+      "source_id": "043-mk-lore-origin",
+      "url": "https://www.mortalkombatonline.com/t/overallmk/origin-of-the-10-tournaments-rule/v8jQLfmR7r3D",
+      "title": "Origin of the 10 tournaments rule",
+      "publisher": "Mortal Kombat Online; trascrizione del fumetto Mortal Kombat II di John Tobias",
+      "accessed_at": "2026-10-30",
+      "scope": "Discussione che riporta la regola dei dieci tornei dal fumetto promozionale del secondo episodio, distinguendola dalla presentazione del primo gioco.",
+      "limitation": "Fonte secondaria con citazione del fumetto; non dichiarata consultazione della tavola originale. Usata per collocare prudentemente il dettaglio nella mitologia successiva, già presente nell’INPUT."
+    },
+    {
+      "source_id": "043-mk-release",
+      "url": "https://www.gog.com/blog/finish-him-experience-the-classic-mortal-kombat-games-once-more/",
+      "title": "Finish him! Experience the classic Mortal Kombat games once more",
+      "publisher": "GOG",
+      "accessed_at": "2026-10-30",
+      "scope": "Retrospettiva del distributore: 8 ottobre 1992 come uscita arcade, distinta dai test precedenti.",
+      "limitation": "Fonte retrospettiva del distributore, non registro contemporaneo di tutte le installazioni."
+    },
+    {
+      "source_id": "043-sml2-date",
+      "url": "https://www.nintendo.com/jp/character/mario/archives/land2/index.html",
+      "title": "Super Mario Land 2: 6 Golden Coins — Mario Portal",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "Scheda storica: 21 ottobre 1992 e racconto tratto dal manuale originale.",
+      "limitation": "Data giapponese. Nuovi particolari della trama non aggiunti alle card."
+    },
+    {
+      "source_id": "043-sml2-switch",
+      "url": "https://www.nintendo.com/au/news-and-articles/game-boy-and-game-boy-advance-are-available-now-on-nintendo-switch/",
+      "title": "Game Boy and Game Boy Advance are available now on Nintendo Switch",
+      "publisher": "Nintendo, febbraio 2023",
+      "accessed_at": "2026-10-30",
+      "scope": "Super Mario Land 2 è nel primo catalogo Game Boy di Nintendo Switch Online del 2023.",
+      "limitation": "Fonte già consultata nel lavoro del lotto 037 e riutilizzata qui. La data dell’articolo non viene scambiata per il primo giorno di disponibilità del servizio."
+    },
+    {
+      "source_id": "043-landstalker-date",
+      "url": "https://www.sega.jp/mdmini/soft/landstalker.html",
+      "title": "Landstalker — Mega Drive Mini",
+      "publisher": "Sega",
+      "accessed_at": "2026-10-30",
+      "scope": "Scheda ufficiale: uscita originale Mega Drive il 30 ottobre 1992; descrive la stessa avventura con Friday presente nelle due voci del lotto.",
+      "limitation": "Nomi occidentali Nigel e King Nole conservati dall’INPUT; nessuna sostituzione con quelli giapponesi."
+    },
+    {
+      "source_id": "043-landstalker-steam",
+      "url": "https://help.steampowered.com/en/wizard/HelpWithGameTechnicalIssue?appid=71118",
+      "title": "Steam Support — Landstalker: The Treasures of King Nole",
+      "publisher": "Valve / Steam; scheda Sega",
+      "accessed_at": "2026-10-30",
+      "scope": "L’applicazione 71118 corrisponde a Landstalker. Il riferimento 71110 nell’INPUT della voce console-gap-landstalker riguarda invece ESWAT.",
+      "limitation": "La scheda di assistenza identifica il prodotto, ma non prova la disponibilità commerciale attuale. L’URL originale non è modificato nel lotto."
+    },
+    {
+      "source_id": "043-smt-date",
+      "url": "https://www.nintendo.co.jp/wii/vc/vc_smt/vc_smt_01.html",
+      "title": "Shin Megami Tensei — Virtual Console",
+      "publisher": "Nintendo / Atlus",
+      "accessed_at": "2026-10-30",
+      "scope": "Pagina ufficiale: prima uscita il 30 ottobre 1992; negoziazione con i demoni, fusione di due o tre e ruolo delle scelte fra Law e Chaos.",
+      "limitation": "La data è quella giapponese Super Famicom. Non importati i nuovi esempi di negoziazione descritti nella pagina."
+    },
+    {
+      "source_id": "043-smt-switch",
+      "url": "https://www.nintendo.com/jp/topics/article/eb3a4926-30d8-429c-b8b2-a46108db71af",
+      "title": "Shin Megami Tensei V e aggiornamenti della serie — disponibilità del primo episodio",
+      "publisher": "Nintendo, luglio 2020",
+      "accessed_at": "2026-10-30",
+      "scope": "L’articolo dice che Shin Megami Tensei è già entrato nel catalogo Super Famicom Nintendo Switch Online.",
+      "limitation": "Non trattato il precedente annuncio come release: questo testo documenta disponibilità effettiva. Mantenuto il solo anno 2020 già fornito."
+    },
+    {
+      "source_id": "043-smt-interview",
+      "url": "https://shmuplations.com/smt/",
+      "title": "Shin Megami Tensei — 1992 Developer Interviews",
+      "publisher": "Interviste agli sviluppatori; traduzione Shmuplations",
+      "accessed_at": "2026-10-30",
+      "scope": "Testimonianze sul progetto, sulle scelte morali e sui riferimenti personali e mitologici del disegno di Kazuma Kaneko.",
+      "limitation": "Non contiene la formulazione sul remake citata dalla bibliografia dell’articolo originale. Tale formulazione è conservata come approccio della squadra alla rielaborazione, senza dichiarare lettura del libro Game Shokunin del 2007."
+    },
+    {
+      "source_id": "043-steven-name",
+      "url": "https://megatenwiki.com/wiki/Shin_Megami_Tensei_Character_Profile%3A_Steven_Report",
+      "title": "Shin Megami Tensei Character Profile: Steven Report",
+      "publisher": "Megaten Wiki; scheda del volume Kadokawa Shoten / Atlus, 2001",
+      "accessed_at": "2026-10-30",
+      "scope": "Il titolo latino Steven Report documenta l’uso di Steven, coerente con il nome già fornito nel lotto.",
+      "limitation": "Scheda bibliografica secondaria del volume autorizzato. Non confuso questo uso con successive localizzazioni che adottano Stephen; non inventata un’identità diversa."
+    }
+  ],
+  "decisions": [
+    {
+      "target_id": "workbook-07-17-summer-carnival-92-recca",
+      "problem": "Time Attack era descritto come completamento di due livelli entro cinque minuti.",
+      "conclusion": "Corretto secondo il manuale Nintendo: raggiungere un milione di punti nel minor tempo, entro cinque minuti e con controllo intermedio a due minuti. Conservati Score Attack di due minuti, cinquanta vite di Zanki Attack e cinque tipi di armi secondarie.",
+      "status": "resolved",
+      "source_ids": [
+        "043-recca-manual"
+      ],
+      "text_applied": {
+        "languages": [
+          "en",
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "cards": [
+          "main:3"
+        ]
+      }
+    },
+    {
+      "target_id": "workbook-07-24-thunder-force-iv",
+      "problem": "La trama riassumeva il nemico come impero che vuole estinguere l’umanità.",
+      "conclusion": "Riformulato sulla base del racconto del manuale: forze Orn superstiti e alleati minacciano la Galactic Federation due anni dopo Thunder Force III. Non aggiunti i nomi dei nuovi alleati o altre vicende fuori dal punto da correggere.",
+      "status": "resolved",
+      "source_ids": [
+        "043-thunder-manual",
+        "043-thunder-manual-transcription"
+      ],
+      "text_applied": {
+        "languages": [
+          "en",
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "cards": [
+          "main:1"
+        ]
+      }
+    },
+    {
+      "target_id": "workbook-07-24-thunder-force-iv",
+      "problem": "La frase sulla distorsione poteva implicare un effetto hardware dedicato non dimostrato.",
+      "conclusion": "Conservato il lavoro del gruppo di Naosuke Arai su sintesi FM, chitarra e distorsione, senza inventare un circuito o un effetto preimpostato. Verificato separatamente il precedente lavoro della squadra su Devil’s Crush.",
+      "status": "resolved",
+      "source_ids": [
+        "043-arai-interview"
+      ],
+      "text_applied": {
+        "languages": [
+          "en",
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "cards": [
+          "main:3"
+        ]
+      }
+    },
+    {
+      "target_id": "workbook-08-27-super-mario-kart",
+      "problem": "La protezione con un oggetto poteva essere letta come la meccanica di trascinamento dietro al kart delle versioni successive.",
+      "conclusion": "Descritte la scelta di conservare l’oggetto per difendersi e quella di aspettare una posizione migliore, senza aggiungere la meccanica di trascinamento. Conservata l’attribuzione del racconto di sviluppo a Hideki Konno.",
+      "status": "resolved",
+      "source_ids": [],
+      "text_applied": {
+        "languages": [
+          "en",
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "cards": [
+          "main:3"
+        ]
+      }
+    },
+    {
+      "target_id": "wikipedia-1580726",
+      "problem": "Il sottotitolo giapponese era presentato soltanto come un titolo ufficiale inglese; la mancata localizzazione aveva una causa unica troppo sicura.",
+      "conclusion": "Distinti Tenkuu no Hanayome, la sua traduzione di senso e i titoli ufficiali inglesi. Attribuite separatamente la spiegazione tecnica alla newsletter citata e quella economica al ricordo di Jerauld.",
+      "status": "resolved",
+      "source_ids": [
+        "043-dq-jerauld",
+        "043-dq-date"
+      ],
+      "text_applied": {
+        "languages": [
+          "en",
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "cards": [
+          "main:0"
+        ]
+      }
+    },
+    {
+      "target_id": "wikipedia-1580726",
+      "problem": "Il periodo giocabile durante la gravidanza lasciava ambiguo chi fosse incinta.",
+      "conclusion": "Precisato che si tratta della moglie del protagonista, mantenendo la vicenda familiare di circa trent’anni e tutti i port e adattamenti citati.",
+      "status": "resolved",
+      "source_ids": [],
+      "text_applied": {
+        "languages": [
+          "en",
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "cards": [
+          "main:2"
+        ]
+      }
+    },
+    {
+      "target_id": "console-gap-air-zonk",
+      "problem": "Le fonti secondarie divergono sul conteggio delle faccine; la disponibilità una volta sola del compagno era imprecisa.",
+      "conclusion": "Usato il criterio operativo del manuale: primo grande smiley richiama il compagno, secondo grande smiley attiva la fusione. Il divieto di riuso vale dopo il completamento di una fase con quel compagno. Il numero delle faccine piccole non viene dichiarato verificato.",
+      "status": "resolved",
+      "source_ids": [
+        "043-airzonk-manual",
+        "043-airzonk-weapons",
+        "043-airzonk-corroboration"
+      ],
+      "text_applied": {
+        "languages": [
+          "en",
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "cards": [
+          "main:1"
+        ]
+      }
+    },
+    {
+      "target_id": "console-gap-air-zonk",
+      "problem": "Tutte e sette le forme d’arma erano descritte come dotate di attacco caricato.",
+      "conclusion": "Esplicitata l’eccezione Mini-Zonk, concorde nelle due descrizioni consultate; mantenuti i sette potenziamenti e la bomba a carica prolungata.",
+      "status": "resolved",
+      "source_ids": [
+        "043-airzonk-weapons",
+        "043-airzonk-corroboration"
+      ],
+      "text_applied": {
+        "languages": [
+          "en",
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "cards": [
+          "main:2"
+        ]
+      }
+    },
+    {
+      "target_id": "workbook-10-08-mortal-kombat",
+      "problem": "L’introduzione del primo arcade riceveva dettagli sviluppati nel seguito, come il bando di Shang Tsung e la regola per la conquista di Earthrealm.",
+      "conclusion": "Conservati tutti i dettagli forniti, ma attribuiti i relativi sviluppi alla mitologia successiva della serie. Il primo torneo resta descritto attraverso Goro imbattuto da cinquecento anni.",
+      "status": "resolved",
+      "source_ids": [
+        "043-mk2-manual",
+        "043-mk1-manual",
+        "043-mk-lore-origin"
+      ],
+      "text_applied": {
+        "languages": [
+          "en",
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "cards": [
+          "main:3"
+        ]
+      }
+    },
+    {
+      "target_id": "workbook-10-08-mortal-kombat",
+      "problem": "Il testo attribuiva implicitamente a Mortal Kombat il primato universale del juggling.",
+      "conclusion": "Spiegato concretamente il concatenamento di colpi contro un avversario in aria e la sua diffusione nel genere, senza trasformare la presenza di questa tecnica in un primato storico non necessario.",
+      "status": "resolved",
+      "source_ids": [],
+      "text_applied": {
+        "languages": [
+          "en",
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "cards": [
+          "main:4"
+        ]
+      }
+    },
+    {
+      "target_id": "wikipedia-100464",
+      "problem": "Nintendo Classics era usato come se fosse il nome storico del servizio nel 2023.",
+      "conclusion": "Ripristinato Nintendo Switch Online per il catalogo Game Boy del 2023. Le valutazioni assolute sul miglioramento rispetto al predecessore restano attribuite ai recensori.",
+      "status": "resolved",
+      "source_ids": [
+        "043-sml2-switch"
+      ],
+      "text_applied": {
+        "languages": [
+          "en",
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "cards": [
+          "main:1"
+        ]
+      }
+    },
+    {
+      "target_id": "console-gap-landstalker",
+      "problem": "Il riferimento Steam originale punta a un’applicazione di un altro gioco.",
+      "conclusion": "Identificata Landstalker con appid 71118. Preparata proposta per l’integrazione; INPUT e URL originali conservati.",
+      "status": "resolved",
+      "source_ids": [
+        "043-landstalker-steam"
+      ],
+      "text_applied": {
+        "languages": [
+          "en",
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "cards": []
+      }
+    },
+    {
+      "target_id": "console-gap-landstalker",
+      "problem": "Due entry_id descrivono lo stesso gioco e la stessa release.",
+      "conclusion": "Confermata l’identità comune delle due voci Landstalker. Entrambe riscritte senza unire o eliminare card; decisione sulla struttura demandata al passaggio di integrazione e registrata negli issues.",
+      "status": "identity_resolved_integration_required",
+      "source_ids": [
+        "043-landstalker-date"
+      ],
+      "text_applied": {
+        "languages": [
+          "en",
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "cards": []
+      }
+    },
+    {
+      "target_id": "wikipedia-466100",
+      "problem": "Il titolo era chiamato terzo della serie senza distinguere i primi due giochi dai rami collaterali; Nintendo Classics era anacronistico per il 2020.",
+      "conclusion": "Definito successore dei due Megami Tensei originari e inizio della linea principale Shin Megami Tensei. Usato il nome storico Nintendo Switch Online per la disponibilità del 2020.",
+      "status": "resolved",
+      "source_ids": [
+        "043-smt-date",
+        "043-smt-switch"
+      ],
+      "text_applied": {
+        "languages": [
+          "en",
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "cards": [
+          "main:0"
+        ]
+      }
+    },
+    {
+      "target_id": "wikipedia-466100",
+      "problem": "Remake poteva essere scambiato per la classificazione oggettiva del gioco; Steven poteva essere corretto a intuito con una romanizzazione diversa.",
+      "conclusion": "L’approccio della squadra è descritto come rielaborazione del predecessore. Conservato Steven, già nell’INPUT e attestato nel titolo del volume Steven Report; nessuna sostituzione arbitraria basata sulle localizzazioni successive.",
+      "status": "resolved",
+      "source_ids": [
+        "043-smt-interview",
+        "043-steven-name"
+      ],
+      "text_applied": {
+        "languages": [
+          "en",
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "cards": [
+          "main:1",
+          "main:2"
+        ]
+      }
+    }
+  ],
+  "metadata_proposals": [
+    {
+      "target_id": "wikipedia-1580726",
+      "field": "release_region",
+      "proposed": {
+        "year": 1992,
+        "month": 9,
+        "day": 27,
+        "precision": "day",
+        "region": "JP",
+        "platform": "Super Famicom"
+      },
+      "reason": "Regione mancante nel contesto, identificata dalla scheda ufficiale della release originale.",
+      "source_ids": [
+        "043-dq-date"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "wikipedia-100464",
+      "field": "release_region",
+      "proposed": {
+        "year": 1992,
+        "month": 10,
+        "day": 21,
+        "precision": "day",
+        "region": "JP",
+        "platform": "Game Boy"
+      },
+      "reason": "Regione mancante nel contesto, identificata dalla scheda ufficiale della release originale.",
+      "source_ids": [
+        "043-sml2-date"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "landstalker-treasures-king-nole-1992",
+      "field": "release_region",
+      "proposed": {
+        "year": 1992,
+        "month": 10,
+        "day": 30,
+        "precision": "day",
+        "region": "JP",
+        "platform": "Mega Drive"
+      },
+      "reason": "Regione mancante nel contesto, identificata dalla scheda ufficiale della release originale.",
+      "source_ids": [
+        "043-landstalker-date"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "wikipedia-466100",
+      "field": "release_region",
+      "proposed": {
+        "year": 1992,
+        "month": 10,
+        "day": 30,
+        "precision": "day",
+        "region": "JP",
+        "platform": "Super Famicom"
+      },
+      "reason": "Regione mancante nel contesto, identificata dalla scheda ufficiale della release originale.",
+      "source_ids": [
+        "043-smt-date"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "workbook-10-08-mortal-kombat",
+      "field": "release_region",
+      "proposed": {
+        "year": 1992,
+        "month": 10,
+        "day": 8,
+        "precision": "day",
+        "region": "US",
+        "platform": "arcade"
+      },
+      "reason": "Data già nel testo originale e corroborata dalla retrospettiva del distributore; distinta dai test.",
+      "source_ids": [
+        "043-mk-release"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "console-gap-landstalker",
+      "field": "source_url",
+      "proposed": {
+        "correct_appid": 71118,
+        "identification_url": "https://help.steampowered.com/en/wizard/HelpWithGameTechnicalIssue?appid=71118"
+      },
+      "reason": "L’appid 71110 nel riferimento fornito identifica ESWAT; 71118 identifica Landstalker. Non presunta disponibilità attuale nel negozio.",
+      "source_ids": [
+        "043-landstalker-steam"
+      ],
+      "applied_to_catalog": false
+    }
+  ],
+  "expansion_assessments": [
+    {
+      "target_id": "workbook-07-17-summer-carnival-92-recca",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 1,
+      "rationale": "Titolo di rilievo per le prestazioni su Famicom e la tradizione dei tornei.",
+      "conditional_on_duplicate_resolution": false
+    },
+    {
+      "target_id": "workbook-07-24-thunder-force-iv",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 1,
+      "rationale": "Capitolo importante di Thunder Force e del catalogo Mega Drive.",
+      "conditional_on_duplicate_resolution": false
+    },
+    {
+      "target_id": "workbook-08-27-super-mario-kart",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 1,
+      "rationale": "Primo Mario Kart, fondamentale per la serie.",
+      "conditional_on_duplicate_resolution": false
+    },
+    {
+      "target_id": "wikipedia-1580726",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Capitolo importante di Dragon Quest, raccontato in tre card.",
+      "conditional_on_duplicate_resolution": false
+    },
+    {
+      "target_id": "console-gap-air-zonk",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Rilevante trasformazione della mascotte nel catalogo TurboGrafx-16.",
+      "conditional_on_duplicate_resolution": false
+    },
+    {
+      "target_id": "workbook-10-08-mortal-kombat",
+      "main_cards": 7,
+      "feature_cards": 4,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 0,
+      "rationale": "Mortal Kombat dispone già di sette card principali e quattro card della feature ESRB: soglia principale soddisfatta.",
+      "conditional_on_duplicate_resolution": false
+    },
+    {
+      "target_id": "wikipedia-100464",
+      "main_cards": 2,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 3,
+      "rationale": "Capitolo importante di Mario e debutto di Wario, descritto in sole due card.",
+      "conditional_on_duplicate_resolution": false
+    },
+    {
+      "target_id": "console-gap-landstalker",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Avventura importante del Mega Drive, presente anche con un secondo entry_id nello stesso lotto.",
+      "conditional_on_duplicate_resolution": true
+    },
+    {
+      "target_id": "landstalker-treasures-king-nole-1992",
+      "main_cards": 2,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 3,
+      "rationale": "Seconda voce dedicata allo stesso Landstalker: due card, da valutare insieme alla voce console-gap-landstalker.",
+      "conditional_on_duplicate_resolution": true
+    },
+    {
+      "target_id": "wikipedia-466100",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Primo Shin Megami Tensei, centrale nella storia della serie e di Atlus.",
+      "conditional_on_duplicate_resolution": false
+    }
+  ],
+  "editorial_review": {
+    "english_first": true,
+    "languages": [
+      "en",
+      "it",
+      "fr",
+      "de",
+      "es"
+    ],
+    "entry_count": 10,
+    "main_card_count_per_language": 35,
+    "feature_card_count_per_language": 4,
+    "card_count_per_language": 39,
+    "english_summary_word_counts": [
+      35,
+      37,
+      38,
+      37,
+      37,
+      36,
+      42,
+      36,
+      36,
+      37
+    ],
+    "checks": [
+      "Inglese completo salvato prima degli adattamenti; tutte le 39 card rilette nelle cinque lingue.",
+      "Conservati ID, ordine, titoli propri principali, nomi, attribuzioni e quantità; ogni card ha un titolo specifico e un testo coeso.",
+      "Controllati cinque più cinque armi di Recca, sette livelli del secondo giro, due minuti, cinque minuti, un milione di punti e cinquanta vite.",
+      "Controllati dieci livelli di Thunder Force IV, primi quattro liberamente selezionabili, due satelliti, due anni dopo il predecessore e attribuzione a Naosuke Arai.",
+      "Conservate tutte le edizioni di Dragon Quest V, la durata familiare di circa trent’anni, i titoli inglesi regionali e gli autori dei remake.",
+      "Controllati cinque livelli e sette armi di Air Zonk; distinte l’icona grande per il compagno e l’eccezione Mini-Zonk.",
+      "Conservati cinque pulsanti, otto direzioni, sette luoghi, cinquecento anni e nove vittorie in Mortal Kombat, distinguendo il racconto del primo episodio dalla mitologia successiva.",
+      "Feature ESRB completa: due audizioni datate, cinque categorie, diciassette descrittori, 1994, 1995, 1998, 2000 e nomi dei testimoni invariati. Titolo descrittivo tradotto, non titolo proprio di un’opera.",
+      "Nessuna biografia autonoma da spostare alla nascita. Le date di pubblicazione restano distinte da annunci, test e date delle riedizioni.",
+      "INPUT, TEMPLATE, fonti, licenze, URL, crediti e associazioni media preservati. Nessun HTML o Markdown nei testi."
+    ],
+    "limits": "Ricerca mirata sui problemi emersi, non verifica universale. Le fonti della feature ESRB e le interviste già documentate nell’INPUT restano attribuzioni preesistenti: non dichiarata una nuova consultazione indiscriminata. Due voci Landstalker duplicate richiedono una decisione di integrazione. Nove valutazioni di ampliamento corrispondono a 17 card condizionali se entrambe le voci duplicate rimangono autonome; non sono 17 nuovi contenuti già prodotti.",
+    "title_warning_review": "Controllata manualmente la traduzione della domanda descrittiva Who gets to rate a game? in IT, FR, DE ed ES; gli ID e tutti i titoli propri principali sono invariati. Il validatore non segnala anomalie."
+  },
+  "validation": {
+    "valid": true,
+    "batch_id": "043-catalog",
+    "completed": true,
+    "entry_count": 10,
+    "card_count_per_language": 39,
+    "language_count": 5,
+    "translated_card_count": 195,
+    "entry_card_counts": {
+      "workbook-07-17-summer-carnival-92-recca": 4,
+      "workbook-07-24-thunder-force-iv": 4,
+      "workbook-08-27-super-mario-kart": 4,
+      "wikipedia-1580726": 3,
+      "console-gap-air-zonk": 3,
+      "workbook-10-08-mortal-kombat": 11,
+      "wikipedia-100464": 2,
+      "console-gap-landstalker": 3,
+      "landstalker-treasures-king-nole-1992": 2,
+      "wikipedia-466100": 3
+    },
+    "issue_counts": {
+      "workbook-07-17-summer-carnival-92-recca": 1,
+      "workbook-07-24-thunder-force-iv": 1,
+      "workbook-08-27-super-mario-kart": 1,
+      "wikipedia-1580726": 1,
+      "console-gap-air-zonk": 1,
+      "workbook-10-08-mortal-kombat": 0,
+      "wikipedia-100464": 1,
+      "console-gap-landstalker": 2,
+      "landstalker-treasures-king-nole-1992": 2,
+      "wikipedia-466100": 1
+    },
+    "summary_checks": [
+      {
+        "entry_id": "workbook-07-17-summer-carnival-92-recca",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "workbook-07-24-thunder-force-iv",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "workbook-08-27-super-mario-kart",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "wikipedia-1580726",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "console-gap-air-zonk",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "workbook-10-08-mortal-kombat",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "workbook-10-08-mortal-kombat",
+        "feature_id": "feature-rating-hearings",
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "wikipedia-100464",
+        "feature_id": null,
+        "english_summary_words": 42
+      },
+      {
+        "entry_id": "console-gap-landstalker",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "landstalker-treasures-king-nole-1992",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "wikipedia-466100",
+        "feature_id": null,
+        "english_summary_words": 37
+      }
+    ],
+    "editorial_review": [],
+    "failures": []
+  },
+  "output_sha256": "0aef99c7070c10981e3c37d99c9b4d4f8caad0f825f1b3ed5cd12da70c6c41e6",
+  "root_review": {
+    "reviewed_at": "2026-10-30T01:36:18.671236+00:00",
+    "scope": "Confronto INPUT/EN/IT delle card segnalate dal controllo di lunghezza e cifre: Thunder Force IV main:2, Mortal Kombat main:2 e main:3, Super Mario Land 2 main:1.",
+    "findings": [
+      "La card sulle armi di Thunder Force IV conserva raccolta, missili e laser, traiettorie, vantaggi e limiti, selezione libera, scudi, satelliti, attacco Thunder Sword a metà gioco e requisito dei due satelliti. La riduzione di parole non elimina queste informazioni.",
+      "Mortal Kombat mantiene tutti i comandi e le regole di parata; i numeri sono scritti in lettere. La card narrativa conserva anche i dettagli della mitologia successiva, con attribuzione temporale verificata nell’audit del lotto.",
+      "Super Mario Land 2 conserva gli undici milioni di copie, scritti in lettere, e le date delle riedizioni."
+    ],
+    "changes": [
+      {
+        "target_id": "workbook-07-24-thunder-force-iv",
+        "card_id": "main:2",
+        "language": "it",
+        "field": "text",
+        "before": "Alcuni nemici lasciano potenziamenti che forniscono nuove armi, fra cui missili e laser con traiettorie diverse. Ciascuna ha pregi e difetti e si adatta meglio a determinate situazioni. Si possono conservare più armi e selezionarle quando servono. Altri oggetti danno scudi o navicelle satelliti che orbitano attorno al caccia e ne aumentano il fuoco. A metà avventura diventa disponibile il potente Thunder Sword, un attacco che richiede la presenza di entrambi i satelliti.",
+        "after": "Alcuni nemici lasciano potenziamenti che forniscono nuove armi, fra cui missili e laser con traiettorie diverse. Ciascuna ha pregi e difetti e si adatta meglio a determinate situazioni. Si possono conservare più armi e selezionarle quando servono. Altri oggetti danno scudi o navicelle satelliti che orbitano attorno al caccia e ne aumentano la potenza di fuoco. A metà avventura diventa disponibile il potente Thunder Sword, un attacco che richiede la presenza di entrambi i satelliti.",
+        "reason": "Resa idiomatica di potenza di fuoco."
+      }
+    ],
+    "validation": {
+      "valid": true,
+      "batch_id": "043-catalog",
+      "completed": true,
+      "entry_count": 10,
+      "card_count_per_language": 39,
+      "language_count": 5,
+      "translated_card_count": 195,
+      "entry_card_counts": {
+        "workbook-07-17-summer-carnival-92-recca": 4,
+        "workbook-07-24-thunder-force-iv": 4,
+        "workbook-08-27-super-mario-kart": 4,
+        "wikipedia-1580726": 3,
+        "console-gap-air-zonk": 3,
+        "workbook-10-08-mortal-kombat": 11,
+        "wikipedia-100464": 2,
+        "console-gap-landstalker": 3,
+        "landstalker-treasures-king-nole-1992": 2,
+        "wikipedia-466100": 3
+      },
+      "issue_counts": {
+        "workbook-07-17-summer-carnival-92-recca": 1,
+        "workbook-07-24-thunder-force-iv": 1,
+        "workbook-08-27-super-mario-kart": 1,
+        "wikipedia-1580726": 1,
+        "console-gap-air-zonk": 1,
+        "workbook-10-08-mortal-kombat": 0,
+        "wikipedia-100464": 1,
+        "console-gap-landstalker": 2,
+        "landstalker-treasures-king-nole-1992": 2,
+        "wikipedia-466100": 1
+      },
+      "summary_checks": [
+        {
+          "entry_id": "workbook-07-17-summer-carnival-92-recca",
+          "feature_id": null,
+          "english_summary_words": 35
+        },
+        {
+          "entry_id": "workbook-07-24-thunder-force-iv",
+          "feature_id": null,
+          "english_summary_words": 37
+        },
+        {
+          "entry_id": "workbook-08-27-super-mario-kart",
+          "feature_id": null,
+          "english_summary_words": 38
+        },
+        {
+          "entry_id": "wikipedia-1580726",
+          "feature_id": null,
+          "english_summary_words": 37
+        },
+        {
+          "entry_id": "console-gap-air-zonk",
+          "feature_id": null,
+          "english_summary_words": 37
+        },
+        {
+          "entry_id": "workbook-10-08-mortal-kombat",
+          "feature_id": null,
+          "english_summary_words": 36
+        },
+        {
+          "entry_id": "workbook-10-08-mortal-kombat",
+          "feature_id": "feature-rating-hearings",
+          "english_summary_words": 38
+        },
+        {
+          "entry_id": "wikipedia-100464",
+          "feature_id": null,
+          "english_summary_words": 42
+        },
+        {
+          "entry_id": "console-gap-landstalker",
+          "feature_id": null,
+          "english_summary_words": 36
+        },
+        {
+          "entry_id": "landstalker-treasures-king-nole-1992",
+          "feature_id": null,
+          "english_summary_words": 36
+        },
+        {
+          "entry_id": "wikipedia-466100",
+          "feature_id": null,
+          "english_summary_words": 37
+        }
+      ],
+      "editorial_review": [],
+      "failures": []
+    }
+  }
+}

@@ -1,0 +1,26 @@
+# Local configuration and generated files
+.env
+.env.*
+.deps/
+build/
+dist/
+__pycache__/
+*.py[cod]
+*.log
+# Restore the large authoring datasets with tools/restore-source-data.py
+/content/catalog.json
+/content/credits.json
+/content/expansion/acmi-works.tsv
+/content/expansion/museum-reviewed-midyear2013-post165-owner-layer.json
+/content/museum-locales/de.json
+/content/museum-locales/es.json
+/content/museum-locales/fr.json
+/content/museum-locales/it.json
+# Media restored from the release package
+/assets/*
+!/assets/README.md
+!/assets/images/
+/assets/images/*
+!/assets/images/manifest.json
+/models/*.glb
+/models/*.pmc

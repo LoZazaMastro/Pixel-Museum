@@ -1,0 +1,476 @@
+{
+  "batch_id": "070-catalog",
+  "status": "completed",
+  "entries": 10,
+  "main_cards_per_language": 29,
+  "feature_cards_per_language": 0,
+  "cards_per_language": 29,
+  "languages": [
+    "en",
+    "it",
+    "fr",
+    "de",
+    "es"
+  ],
+  "sources": [
+    {
+      "source_id": "070-metal-snk",
+      "url": "https://www.snk-corp.co.jp/us/anniversary/metalslug30th/history/",
+      "title": "Metal Slug — storia ufficiale della serie",
+      "publisher": "SNK",
+      "accessed_at": "2026-10-30",
+      "scope": "Conferma Metal Slug 2 per MVS nel febbraio 1998 e l’ampliamento del cast.",
+      "limitation": "La cronologia ufficiale ha precisione mensile; non dimostra autonomamente il giorno 23, già fornito dall’INPUT."
+    },
+    {
+      "source_id": "070-metal-date",
+      "url": "https://snk.fandom.com/wiki/Metal_Slug_2",
+      "title": "Metal Slug 2 — dati di release",
+      "publisher": "SNK Wiki contributors",
+      "accessed_at": "2026-10-30",
+      "scope": "Il 23 febbraio 1998 è associato alla versione arcade giapponese, mentre AES e CD hanno altre date.",
+      "limitation": "Riscontro secondario del giorno già nell’INPUT; nessun giorno nuovo ricavato dalla cronologia mensile SNK."
+    },
+    {
+      "source_id": "070-burning-date",
+      "url": "https://www.sega.jp/history/hard/segasaturn/software.html",
+      "title": "Sega Saturn — software pubblicato da Sega",
+      "publisher": "Sega",
+      "accessed_at": "2026-10-30",
+      "scope": "La sezione 1998 elenca Burning Rangers, GS-9174, il 26 febbraio.",
+      "limitation": "La data riguarda il prodotto giapponese, non un’uscita mondiale."
+    },
+    {
+      "source_id": "070-burning-manual",
+      "url": "https://www.gamesdatabase.org/Media/SYSTEM/Sega_Saturn//Manual/formated/Burning_Rangers_-_1998_-_Sega.pdf",
+      "title": "Burning Rangers — instruction manual",
+      "publisher": "Sega / Sonic Team, 1998; copia Games Database",
+      "accessed_at": "2026-10-30",
+      "scope": "Letto il testo del manuale: pagine PDF 22–24 su colpi normali, minimo di cinque cristalli, scudo e navigazione da parte di Chris; pagina PDF 27 sul generatore dopo le quattro missioni.",
+      "limitation": "Lettura del testo estratto, non dichiarata ispezione visiva di ogni pagina. Non importati nuovi dettagli del manuale salvo chiarimenti necessari alle meccaniche già presenti. Il diverso mirror REG-Vault non è stato accessibile."
+    },
+    {
+      "source_id": "070-nfs-dates",
+      "url": "https://en.wikipedia.org/wiki/Need_for_Speed_III%3A_Hot_Pursuit",
+      "title": "Need for Speed III: Hot Pursuit — release e riferimenti",
+      "publisher": "Wikipedia contributors",
+      "accessed_at": "2026-10-30",
+      "scope": "Distingue 25 marzo 1998 PlayStation e 23 settembre 1998 Windows, entrambe in Nord America.",
+      "limitation": "L’ambito regionale è chiarito usando la fonte già alla base dell’INPUT. La notizia In Stores This Week citata non è stata ispezionata nell’archivio originale."
+    },
+    {
+      "source_id": "070-nfs-us",
+      "url": "https://gamefaqs.gamespot.com/ps/198115-need-for-speed-iii-hot-pursuit/data",
+      "title": "Need for Speed III: Hot Pursuit — release data",
+      "publisher": "GameFAQs",
+      "accessed_at": "2026-10-30",
+      "scope": "Il prodotto statunitense PlayStation SLUS-00620 è associato al 25 marzo 1998; il prodotto giapponese ha una data diversa.",
+      "limitation": "Corroborazione secondaria; nessuna confusione fra Windows nordamericano e PlayStation giapponese."
+    },
+    {
+      "source_id": "070-baroque-original",
+      "url": "https://www.sting.co.jp/bqov/",
+      "title": "BAROQUE -ORIGINAL VERSION-",
+      "publisher": "Sting",
+      "accessed_at": "2026-10-30",
+      "scope": "La pagina ufficiale dichiara esplicitamente il 21 maggio 1998 per Saturn e il 12 novembre 2020 per Switch.",
+      "limitation": "I dettagli aggiuntivi dell’edizione Switch non vengono trasferiti al gioco Saturn."
+    },
+    {
+      "source_id": "070-baroque-remakes",
+      "url": "https://www.sting.co.jp/game/page/6/",
+      "title": "STING — catalogo giochi, pagina 6",
+      "publisher": "Sting",
+      "accessed_at": "2026-10-30",
+      "scope": "Elenca Baroque PS2 il 28 giugno 2007 e Baroque for Wii il 13 marzo 2008.",
+      "limitation": "Entrambe sono date di release, distinte da annunci, copyright e anniversari."
+    },
+    {
+      "source_id": "070-baroque-legacy",
+      "url": "https://www.sting.co.jp/games/index.htm",
+      "title": "STING — vecchio catalogo giochi",
+      "publisher": "Sting",
+      "accessed_at": "2026-10-30",
+      "scope": "L’indice di ricerca conserva le date Saturn 21 maggio 1998, PlayStation 28 ottobre 1999, PS2 28 giugno 2007 e Wii 13 marzo 2008.",
+      "limitation": "La vecchia pagina restituisce 404 in apertura diretta: i riscontri principali usano le due pagine ufficiali ancora accessibili. Non dichiarata lettura diretta completa di questa versione archiviata."
+    },
+    {
+      "source_id": "070-unreal-epic",
+      "url": "https://www.gamingonlinux.com/2024/11/classic-unreal-tournament-and-unreal-now-easier-to-download-free-thanks-to-oldunreal/",
+      "title": "Classic Unreal Tournament and Unreal now easier to download free thanks to OldUnreal",
+      "publisher": "Liam Squires-Hand / GamingOnLinux, 14 novembre 2024",
+      "accessed_at": "2026-10-30",
+      "scope": "L’aggiornamento delle 17:28 UTC riporta la risposta ricevuta direttamente da un portavoce Epic: le versioni su Internet Archive sono liberamente collegabili e giocabili.",
+      "limitation": "Fonte primaria per la dichiarazione ricevuta dal giornalista. Non prova una rinuncia al copyright, una licenza aperta o il pubblico dominio."
+    },
+    {
+      "source_id": "070-radiant-arcade",
+      "url": "https://www.treasure-inc.co.jp/products3.html",
+      "title": "Treasure — catalogo arcade",
+      "publisher": "Treasure",
+      "accessed_at": "2026-10-30",
+      "scope": "La scheda riporta Radiant Silvergun in esercizio dal 28 maggio 1998.",
+      "limitation": "La data si riferisce all’arcade giapponese; non attribuita al port Saturn."
+    },
+    {
+      "source_id": "070-radiant-saturn",
+      "url": "https://www.sega.jp/history/hard/segasaturn/software_l.html",
+      "title": "Sega Saturn — software dei licenziatari",
+      "publisher": "Sega",
+      "accessed_at": "2026-10-30",
+      "scope": "Il catalogo elenca Radiant Silvergun, Treasure/ESP, il 23 luglio 1998, coerente con i due mesi dopo l’arcade.",
+      "limitation": "Il corpo conserva la precisione mensile già presente; nessun nuovo credito o campo media aggiunto."
+    },
+    {
+      "source_id": "070-devil-manual",
+      "url": "https://db.hfsplay.fr/files/2021/01/21/devil_dice_english_WviqaVa.pdf",
+      "title": "Devil Dice — manuale inglese PlayStation",
+      "publisher": "Sony Computer Entertainment; copia HFSPlay",
+      "accessed_at": "2026-10-30",
+      "scope": "Scaricato il PDF e lette visivamente le pagine PDF 7–9: i gruppi richiedono tanti dadi quanto il valore, con un’eccezione distinta per l’uno. La pagina 8 spiega anche l’aggiunta durante l’affondamento.",
+      "limitation": "La regola speciale dell’uno non viene sviluppata come nuovo approfondimento: il paragrafo esistente viene delimitato alle facce da due a sei. Nessuna immagine del manuale aggiunta al catalogo."
+    },
+    {
+      "source_id": "070-devil-yaroze",
+      "url": "https://www.timeextension.com/features/ps1-puzzler-devil-dice-was-never-a-net-yaroze-title-so-why-does-the-internet-think-it-was",
+      "title": "PS1 Puzzler Devil Dice Was Never A Net Yaroze Title",
+      "publisher": "John Szczepaniak / Time Extension, 19 settembre 2023",
+      "accessed_at": "2026-10-30",
+      "scope": "Il giornalista riporta la risposta diretta di Shift tramite Shota Tsuboi e rimanda alla testimonianza Sony di Yuichi Sugiyama: Game Yarōze è distinto da Net Yaroze.",
+      "limitation": "La comunicazione diretta sostiene la distinzione già nell’INPUT. L’intervista Sony archiviata è descritta e collegata dall’articolo, non dichiarata consultata separatamente."
+    }
+  ],
+  "decisions": [
+    {
+      "target_id": "burning-rangers-1998",
+      "problem": "Il testo parla genericamente di fiamme spente e di cinque cristalli; controller può far pensare al dispositivo fisico.",
+      "conclusion": "Precisato che sono i colpi normali a lasciare cristalli e che cinque è il minimo necessario. Il controller è reso come navigatrice della squadra, coerentemente con il ruolo descritto dal manuale. Confermati scudo e generatore dei percorsi senza importare nuove sezioni.",
+      "source_ids": [
+        "070-burning-manual",
+        "070-burning-date"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-4877668",
+      "problem": "Due date precise sono presentate senza regione e il seguito 2002 può sembrare il capitolo principale immediatamente successivo.",
+      "conclusion": "Esplicitato il Nord America per le due uscite e chiarito che il seguito 2002 e il riavvio 2010 appartengono al filone Hot Pursuit. Non inventato un nuovo ordine di release della serie principale.",
+      "source_ids": [
+        "070-nfs-dates",
+        "070-nfs-us"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-15255153",
+      "problem": "L’INPUT accomuna PlayStation 2 e Wii sotto una release giapponese del 2007.",
+      "conclusion": "Distinte PS2 nel 2007 e Wii nel 2008 secondo il catalogo Sting. Conservati originale Saturn 1998, PlayStation 1999, estero 2008, iOS 2012 e Switch 2020.",
+      "source_ids": [
+        "070-baroque-original",
+        "070-baroque-remakes",
+        "070-baroque-legacy"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-32193",
+      "problem": "L’affermazione officially became freeware può attribuire una trasformazione generale dei diritti non dimostrata.",
+      "conclusion": "Descritta la conferma Epic del 2024 relativa all’accesso gratuito e al gioco delle versioni conservate su Internet Archive. Nessuna dichiarazione di pubblico dominio o licenza aperta; Fusion Map Pack è descritto come distribuzione gratuita storica, non promessa sulla disponibilità corrente.",
+      "source_ids": [
+        "070-unreal-epic"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-52727",
+      "problem": "La data arcade non ha regione e la prosa tratta il giudizio sul rilancio del genere come consenso assoluto; professional gamers può implicare un mestiere non dimostrato.",
+      "conclusion": "Confermati arcade giapponese maggio 1998 e Saturn luglio. Il giudizio sulla ripresa del genere resta attribuito alla critica; i collaudatori sono giocatori esperti con punteggi elevati, conservando la competenza descritta senza postulare impiego professionale.",
+      "source_ids": [
+        "070-radiant-arcade",
+        "070-radiant-saturn"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "devil-dice-1998",
+      "problem": "Il titolo A six needs six neighbours implica sette dadi totali; la regola generale ignora l’eccezione dell’uno.",
+      "conclusion": "Il titolo indica sei dadi con il sei. Il testo limita la regola ordinaria alle facce da due a sei e conserva aggiunta di dadi durante l’affondamento, orientamento e posizione. Confermata la distinzione produttiva Game Yarōze/Net Yaroze.",
+      "source_ids": [
+        "070-devil-manual",
+        "070-devil-yaroze"
+      ],
+      "text_applied": true
+    }
+  ],
+  "metadata_proposals": [
+    {
+      "target_id": "wikipedia-4877668",
+      "original_year": 1998,
+      "original_date": {
+        "month": 3,
+        "day": 25,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed_date": {
+        "year": 1998,
+        "month": 3,
+        "day": 25,
+        "precision": "day",
+        "region": "North America"
+      },
+      "event_semantics": "release",
+      "source_ids": [
+        "070-nfs-dates",
+        "070-nfs-us"
+      ],
+      "reason": "Specificare la regione e la versione della release già collocata, senza cambiare il giorno originale."
+    },
+    {
+      "target_id": "wikipedia-15255153",
+      "original_year": 1998,
+      "original_date": {
+        "month": 5,
+        "day": 21,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed_date": {
+        "year": 1998,
+        "month": 5,
+        "day": 21,
+        "precision": "day",
+        "region": "JP"
+      },
+      "event_semantics": "release",
+      "source_ids": [
+        "070-baroque-original"
+      ],
+      "reason": "Specificare la regione e la versione della release già collocata, senza cambiare il giorno originale."
+    },
+    {
+      "target_id": "wikipedia-52727",
+      "original_year": 1998,
+      "original_date": {
+        "month": 5,
+        "day": 28,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed_date": {
+        "year": 1998,
+        "month": 5,
+        "day": 28,
+        "precision": "day",
+        "region": "JP"
+      },
+      "event_semantics": "release",
+      "source_ids": [
+        "070-radiant-arcade"
+      ],
+      "reason": "Specificare la regione e la versione della release già collocata, senza cambiare il giorno originale."
+    }
+  ],
+  "expansion_assessments": [
+    {
+      "target_id": "console-gap-metal-slug-2",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Capitolo che amplia il cast e i sistemi di una serie arcade importante."
+    },
+    {
+      "target_id": "burning-rangers-1998",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 1,
+      "rationale": "Progetto di Sonic Team che sperimenta soccorso, navigazione vocale e movimento tridimensionale su Saturn."
+    },
+    {
+      "target_id": "tenchu-stealth-assassins-1998",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Gioco rilevante per lo sviluppo dell’infiltrazione tridimensionale su PlayStation."
+    },
+    {
+      "target_id": "bushido-blade-2-1998",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Esponente distintivo del combattimento con armi e colpi risolutivi su PlayStation."
+    },
+    {
+      "target_id": "wikipedia-4877668",
+      "main_cards": 2,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 3,
+      "rationale": "Capitolo centrale del filone Hot Pursuit e della serie automobilistica."
+    },
+    {
+      "target_id": "tail-concerto-1998",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Opera di esordio di CyberConnect con un’ambientazione e sistemi di cattura autonomi."
+    },
+    {
+      "target_id": "wikipedia-15255153",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Roguelike di rilievo per l’incontro fra esplorazione tridimensionale e narrazione legata alla morte."
+    },
+    {
+      "target_id": "wikipedia-32193",
+      "main_cards": 2,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 3,
+      "rationale": "Opera di avvio della serie Unreal e dell’omonimo motore."
+    },
+    {
+      "target_id": "wikipedia-52727",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Sparatutto significativo nel catalogo Treasure e Saturn, poi riproposto su più piattaforme."
+    },
+    {
+      "target_id": "devil-dice-1998",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Puzzle PlayStation significativo per il sistema dei dadi e il percorso produttivo Game Yarōze."
+    }
+  ],
+  "editorial_review": {
+    "english_first": true,
+    "english_checkpoint": "070-catalog/OUTPUT-070-catalog.json, ramo en; bozza separata salvata prima degli adattamenti",
+    "summary_word_counts_en": [
+      33,
+      37,
+      33,
+      34,
+      35,
+      37,
+      35,
+      37,
+      37,
+      36
+    ],
+    "fidelity": "Rilette tutte le 29 card confrontando fatti, nomi, crediti, anni, quantità, regole e ordine. Conservati i titoli ufficiali, il nome Prairie, i protagonisti, gli studi, i compositori, i sei tipi di tiro, le 17 missioni e le 1,5 milioni di copie. For Little Tail resta invariato nelle cinque lingue. Nessuna card aggiunta, divisa o riordinata.",
+    "naturalness": "Riletti EN/IT/FR/DE/ES per incipit che identifichino gioco e tratto distintivo, titoli specifici e paragrafi coesi. Le card lunghe di Baroque e Unreal hanno brevi paragrafi interni. Corretti nella revisione interna il possibile equivoco su Sonic Team come editore e il riferimento alla Terra in francese.",
+    "limits": "Tutte le voci sono opere, non biografie: non assegnate date di nascita alle persone soltanto citate. La ricerca mirata non certifica autonomamente ogni dato originario. Il giorno 23 febbraio per Metal Slug 2 conserva il riscontro secondario già presente, mentre la fonte SNK conferma il mese. Ispezionate visivamente soltanto le pagine del manuale Devil Dice indicate nelle fonti; il manuale Burning Rangers è stato consultato nel testo estratto."
+  },
+  "validation": {
+    "valid": true,
+    "batch_id": "070-catalog",
+    "completed": true,
+    "entry_count": 10,
+    "card_count_per_language": 29,
+    "language_count": 5,
+    "translated_card_count": 145,
+    "entry_card_counts": {
+      "console-gap-metal-slug-2": 3,
+      "burning-rangers-1998": 4,
+      "tenchu-stealth-assassins-1998": 3,
+      "bushido-blade-2-1998": 3,
+      "wikipedia-4877668": 2,
+      "tail-concerto-1998": 3,
+      "wikipedia-15255153": 3,
+      "wikipedia-32193": 2,
+      "wikipedia-52727": 3,
+      "devil-dice-1998": 3
+    },
+    "issue_counts": {
+      "console-gap-metal-slug-2": 1,
+      "burning-rangers-1998": 1,
+      "tenchu-stealth-assassins-1998": 1,
+      "bushido-blade-2-1998": 1,
+      "wikipedia-4877668": 1,
+      "tail-concerto-1998": 1,
+      "wikipedia-15255153": 1,
+      "wikipedia-32193": 1,
+      "wikipedia-52727": 1,
+      "devil-dice-1998": 1
+    },
+    "summary_checks": [
+      {
+        "entry_id": "console-gap-metal-slug-2",
+        "feature_id": null,
+        "english_summary_words": 33
+      },
+      {
+        "entry_id": "burning-rangers-1998",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "tenchu-stealth-assassins-1998",
+        "feature_id": null,
+        "english_summary_words": 33
+      },
+      {
+        "entry_id": "bushido-blade-2-1998",
+        "feature_id": null,
+        "english_summary_words": 34
+      },
+      {
+        "entry_id": "wikipedia-4877668",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "tail-concerto-1998",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "wikipedia-15255153",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "wikipedia-32193",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "wikipedia-52727",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "devil-dice-1998",
+        "feature_id": null,
+        "english_summary_words": 36
+      }
+    ],
+    "editorial_review": [],
+    "failures": []
+  },
+  "output_sha256": "10e6ae4fdc159420de18907cd3f0b19e4a061266c6059eeabf9ad7ac1ca0a868",
+  "root_review": {
+    "automated_flag_review": "I flag numerici principali riflettono la correzione delle edizioni Baroque, abbreviazioni dei titoli e formattazione locale di decimali; il conteggio di card non cambia."
+  }
+}

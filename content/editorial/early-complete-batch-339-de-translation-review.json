@@ -1,0 +1,59 @@
+{
+  "status": "PASS",
+  "locale": "de",
+  "entries": [
+    {
+      "entry_id": "the-game-awards-2021",
+      "source_fields_sha256": "ff69afc6aad2e29af24c981620e0e859760be485b40ac94503375616d474dd3a",
+      "translation_sha256": "d4ea8a82e49e793ee36320ec055ab50ed0a07f609dfd899e247a0c080118235e",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch339/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "e5f9fc5af9f9cc24f7d9985752d6b015888a3f80fb0107b3afc28a923c8252d2"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "/root/category_audit",
+    "actual_receipt": "build/research/catalog-2021-chronological/tga-single-private/independent-category-audit-approval.json",
+    "actual_receipt_sha256": "49f21423317e766ac3857d09fea8b302c032dfa70431b30a2a4db92d19d8ad6e",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "/root/category_audit",
+      "index_sha256": "3e693b0d03f0408777ce034eaf795151b22a736a4d3213d6e516d29529274691",
+      "owners": [
+        {
+          "entry_id": "the-game-awards-2021",
+          "slug": "tga",
+          "source": "build/research/catalog-2021-chronological/tga-single-private/tga-source-private-candidate.json",
+          "source_sha256": "8088a1eb4de25329a1eb7af081c4261a3f9a312f08b0565d58e9f94f7858d77e",
+          "target": "build/research/catalog-2021-chronological/tga-single-private/tga-four-language-private-candidate.json",
+          "target_sha256": "438faccf7ca3ed14f8e94a1054f3e769ab1effc98f8f222e2986c0c33b7fd022",
+          "contact": "build/research/catalog-2021-chronological/tga-single-private/tga-final-contact.jpg",
+          "contact_sha256": "0eebd0d55553f41d17cf6da6786a19039acf16fc262eec1d4d7d21c5f66711b8",
+          "english_cards": 14,
+          "localized_cards": 56,
+          "images": 14,
+          "tracks": 0
+        }
+      ],
+      "scope": {
+        "review_kind": "Mechanical exact-reuse verification; semantic and visual review delegated to the pinned previous independent approval.",
+        "english_records_compared_exact": 14,
+        "localized_records_compared_exact": 56,
+        "image_records_compared_exact": 14,
+        "new_annual_reports_researched": 0
+      },
+      "previous_approval": {
+        "path": "build/research/catalog-2020-chronological/root-final-three-private/independent-package-audit-approval.json",
+        "sha256": "a5ef3d80c4bbd40f0d16b2f58706bfede2c2168619098a891bd493b922eff321",
+        "index_sha256": "534762edf6bc1608673079e2de87712879c1b25df5b06062f9a07c88fa915a52"
+      },
+      "findings": [],
+      "evidence": [
+        "All five English display fields and all four complete locale objects match the independently admitted2020 archive exactly.",
+        "All14image objects, source records, preferred image and other source fields unchanged except identity/year/date/readiness. Contact sheet SHA exactly matches earlier approved contact.",
+        "Current own identity is the-game-awards-2021, year2021 and dateDecember9. No re-research or reinterpretation of14annual reports."
+      ],
+      "production_writes": false
+    }
+  }
+}

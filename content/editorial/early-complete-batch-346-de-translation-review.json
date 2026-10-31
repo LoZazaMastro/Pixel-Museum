@@ -1,0 +1,107 @@
+{
+  "status": "PASS",
+  "locale": "de",
+  "entries": [
+    {
+      "entry_id": "wikipedia-69931283",
+      "source_fields_sha256": "1f346533fed474f22bef6b05e12c662d7ed28eb8b61ff2bf5dae7ae147e993b3",
+      "translation_sha256": "504d7faf3a00ad57082c45bf0d8c67e32647390c27824d7cb9f7ff109e04ccc4",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch346/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "71ae397a26ecf0533aac8791ffcd1102da41934e162303f862ea7ae322682947"
+    },
+    {
+      "entry_id": "wikipedia-67928357",
+      "source_fields_sha256": "f8882d822c70536a53050314cbd7f09bd517fa0e7b1deb8c8e40fe94f347c8a3",
+      "translation_sha256": "7f2ae454636a1dab24c3666a31c127ccc543b12b89d034eb073565d79dd20193",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch346/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "71ae397a26ecf0533aac8791ffcd1102da41934e162303f862ea7ae322682947"
+    },
+    {
+      "entry_id": "wikipedia-65045980",
+      "source_fields_sha256": "e53236d58092c59d1332105c7c5eed647b80b805b467b941d0b72429e0de1174",
+      "translation_sha256": "69e29785ed9cca38b4f5f018bbea49bc391c863fa8c3ea92feff25efbc3c756f",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch346/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "71ae397a26ecf0533aac8791ffcd1102da41934e162303f862ea7ae322682947"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "/root/category_audit",
+    "actual_receipt": "build/research/catalog-2022-chronological/october-three-private/independent-category-audit-approval.json",
+    "actual_receipt_sha256": "074971b7cee5eb9eb56f072c6640d515ba4db2024cd1a2914d3ab138b01d2d48",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "/root/category_audit",
+      "index": "build/research/catalog-2022-chronological/october-three-private/three-original-source-media-four-language-private-index.json",
+      "index_sha256": "1e437c8ca48ec1600eb47c44e1979d02905e69086034a621800963d5f27d6095",
+      "owners": [
+        {
+          "entry_id": "wikipedia-69931283",
+          "slug": "vampire",
+          "source": "build/research/catalog-2022-chronological/october-three-private/vampire/complete-original-source-media-private-candidate.json",
+          "source_sha256": "e95a5ec982a3454b17b3cee14e0de397b0773c90d9127c1c0befed3c2688b1b9",
+          "target": "build/research/catalog-2022-chronological/october-three-private/vampire/complete-four-language-private-candidate.json",
+          "target_sha256": "707886c327f44c7002fb1f3ea9eb34db431acee7eb7ee153f96b2b16e6ca739d",
+          "contact": "build/research/catalog-2022-chronological/october-three-private/vampire/final-selected-media-contact.jpg",
+          "contact_sha256": "cfc9ca65e1ec058bc8e126ef3dddb8ea80c88f8cdc345b2b48ac54807e1acf96",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 5,
+          "tracks": 3
+        },
+        {
+          "entry_id": "wikipedia-67928357",
+          "slug": "rabbids",
+          "source": "build/research/catalog-2022-chronological/october-three-private/rabbids/complete-original-source-media-private-candidate.json",
+          "source_sha256": "a5e79231e4fa892d82d91ebd894589435d84c6b5429ceec0d68128c9fa9dea21",
+          "target": "build/research/catalog-2022-chronological/october-three-private/rabbids/complete-four-language-private-candidate.json",
+          "target_sha256": "bbc7abaa6613fc30ab8bc4cbb1e48c4266e7c1b802803609f5d1137601e71eab",
+          "contact": "build/research/catalog-2022-chronological/october-three-private/rabbids/final-selected-media-contact.jpg",
+          "contact_sha256": "03a3b8c510e2100868966b9df636c8c43ac0e9194462936620f22a1857fbb1ea",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 4,
+          "tracks": 52
+        },
+        {
+          "entry_id": "wikipedia-65045980",
+          "slug": "gotham",
+          "source": "build/research/catalog-2022-chronological/october-three-private/gotham/complete-original-source-media-private-candidate.json",
+          "source_sha256": "02b3e3b767b6b4b6eedbca3396b95650ab8a7b5c62d160e8e401714234e13a34",
+          "target": "build/research/catalog-2022-chronological/october-three-private/gotham/complete-four-language-private-candidate.json",
+          "target_sha256": "6def8859d0a3685707d7febb5a08d288edde7aec9930261920fa617307691d77",
+          "contact": "build/research/catalog-2022-chronological/october-three-private/gotham/final-selected-media-contact.jpg",
+          "contact_sha256": "731264f6b5bcfb7a7c537d721d36139421a9474ae48cbe3713e13655ec18b32d",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 4,
+          "tracks": 3
+        }
+      ],
+      "scope": {
+        "english_paragraphs_read": 9,
+        "localized_paragraphs_read": 36,
+        "images_visually_viewed": 13,
+        "new_music_metadata_read": 4
+      },
+      "findings": [],
+      "notes": [
+        "All nine English body paragraphs exactly match their preimage. Gotham summary completes the publisher name; translations preserve all content, including faithful indirect rendering of the long Rabbids designer quotation.",
+        "All three final contact sheets personally viewed: clean covers and distinct actual gameplay; no modern box backs. Chapter bindings cover all nine paragraphs; video poster remains outside story cards.",
+        "Publisher June 6, 2026 Steam announcement directly read, including First Survivaton explanation; no removal of real later naming. poncle FAQ directly confirms Vampire Crawlers April21,2026.",
+        "Nintendo product page directly confirms original Sparks of Hope October20,2022 and team/Sparks premise. All52 existing cue objects remain exact, without new network checks.",
+        "WB official FAQ directly confirms October21 release, four characters, two-player campaign and separate Heroic Assault November29,2022/30floors. WaterTower original album tracklist and October21,2022 date directly read.",
+        "Four newly selected metadata records read: official poncle dxx6fvhf5Pc178s October13,2022 with direct FilippoVicarelli composer/arranger credit, and WaterTower Vir5B51X-Vw102s/M49n0HsqvDU251s/WGM3FSKMNDM113s with TheFlight/JorisdeMan credit. All publicAAC observed. No audio downloads, no claim of audition.",
+        "Two previous Vampire cues and52Rabbids cues preserved exactly. No production writes."
+      ],
+      "primary_sources_read": [
+        "https://store.steampowered.com/news/posts/?enddate=1780776151&feed=steam_community_announcements",
+        "https://poncle.games/vampire-crawlers-faq",
+        "https://www.nintendo.com/us/store/products/mario-plus-rabbids-sparks-of-hope-switch/",
+        "https://dcgamessupport.wbgames.com/hc/en-us/articles/6098350523539-Gotham-Knights-FAQ",
+        "https://www.watertower-music.com/release/gotham-knights-original-video-game-soundtrack/"
+      ],
+      "production_writes": false
+    }
+  }
+}

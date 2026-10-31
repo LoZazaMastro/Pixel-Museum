@@ -1,0 +1,153 @@
+{
+  "schema": "pixel-museum-editorial-input-v1",
+  "batch_id": "199-catalog",
+  "source_file": "content/catalog.json",
+  "source_sha256": "0b077b3f8628f921ab84574d286f9d9943fb8ae6acb8f136ffadde6e01cae241",
+  "entries": [
+    {
+      "entry_id": "switch",
+      "kind": "console",
+      "year_context_only": 2017,
+      "date_context_only": {
+        "month": 3,
+        "day": 3,
+        "precision": "day",
+        "region": "Worldwide; original Nintendo Switch model, not Lite, OLED or Switch 2."
+      },
+      "event_semantics": "",
+      "factual_note": "Initial markets launched together; the source says additional countries followed by the end of March, so the date is not labelled universal availability.",
+      "main": {
+        "feature_id": null,
+        "title": "Nintendo Switch",
+        "subtitle": "One game, different places",
+        "summary": "A portable screen and a television dock let the same session move between private and shared space.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "From the television to your hands",
+            "text": "Nintendo Switch launched on 3 March 2017. Its detachable Joy-Con controllers and television dock combined portable and home-console arrangements in one system."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "A landscape at launch",
+            "text": "The Legend of Zelda: Breath of the Wild accompanied the launch, offering a landscape built around observation, experimentation and routes chosen by the player. Hardware flexibility and open-ended software made different forms of personal exploration part of the same invitation."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "The January presentation",
+            "text": "Nintendo presented the system in Tokyo on January 13, 2017, following its reveal the previous October. The presentation detailed the portable screen, television dock, detachable Joy-Con and worldwide launch date. TV, tabletop and handheld play were the three principal arrangements."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "Continuing away from the TV",
+            "text": "In the dock, Switch displays on a television. Removed from it, the game continues on the built-in 6.2-inch screen. The same software and save remain available as the player moves between home-console and handheld use."
+          },
+          {
+            "card_id": "main:4",
+            "original_index": 4,
+            "heading": "Sharing the Joy-Con",
+            "text": "Joy-Con attach to the sides of the screen for handheld play. Detached, they can be held separately, fitted into a grip or shared between two players in supported games. A kickstand supports the screen on a table."
+          },
+          {
+            "card_id": "main:5",
+            "original_index": 5,
+            "heading": "Motion sensors and HD Rumble",
+            "text": "Both Joy-Con detect motion, and the right controller includes an infrared camera that can recognise shapes and distances. HD Rumble adds more detailed vibration. Nintendo demonstrated the idea through the suggested sensation of ice cubes moving inside a glass."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Nintendo Switch launch announcement, 13 January 2017",
+            "url": "https://www.nintendo.co.jp/corporate/release/en/2017/170113.html",
+            "publisher": "Nintendo"
+          },
+          {
+            "title": "nintendo.com",
+            "url": "https://www.nintendo.com/en-gb/News/2016/October/Nintendo-Switch-Presentation-2017-coming-January-13th-2017-1149971.html",
+            "publisher": "nintendo.com"
+          },
+          {
+            "title": "nintendo.com",
+            "url": "https://www.nintendo.com/it-it/Notizie/2017/gennaio/Nintendo-Switch-arriva-il-3-marzo--1173122.html",
+            "publisher": "nintendo.com"
+          },
+          {
+            "title": "Nintendo January 13, 2017 launch announcement and original hardware photographs",
+            "url": "https://www.nintendo.co.jp/corporate/release/en/2017/170113.html",
+            "publisher": "Nintendo"
+          }
+        ]
+      },
+      "features": [
+        {
+          "feature_id": "feature-switch-hybrid-routine",
+          "title": "A console changes its setting",
+          "subtitle": "",
+          "summary": "Moving the screen changes the arrangement.",
+          "cards": [
+            {
+              "card_id": "feature:feature-switch-hybrid-routine:0",
+              "original_index": 0,
+              "heading": "Lift the game away",
+              "text": "Nintendo introduced Switch in October 2016 through a change of setting. At home, its dock connected the console to a television. Lifting the machine out carried the same game into handheld use. The announcement pictured that movement into places such as a train or a friend's apartment. The hardware proposal linked those situations through one object, with a screen that travelled and controls that could remain attached. Continuing play became a matter of rearranging the equipment around a moment in someone's day."
+            },
+            {
+              "card_id": "feature:feature-switch-hybrid-routine:1",
+              "original_index": 1,
+              "heading": "Give another person a controller",
+              "text": "The detachable Joy-Con gave that rearrangement another social possibility. Nintendo's announcement described one player holding a controller in each hand, or two people taking one apiece. The same pieces could slide back onto the console or join a grip resembling a more conventional controller. A pair of small objects therefore carried several possible arrangements. Inviting another person to play could begin by handing over something already attached to the machine, turning the hardware's separable parts into a practical way to change the group around it."
+            },
+            {
+              "card_id": "feature:feature-switch-hybrid-routine:2",
+              "original_index": 2,
+              "heading": "A larger picture needs smaller parts",
+              "text": "The later OLED model made that portable screen larger without simply enlarging every part around it. In Nintendo's 2021 developer conversation, Ko Shiota describes fitting circuits and cables into a narrower border. Working with the display manufacturer, the team placed circuitry on a film that folded back into the bezel. The visible improvement depended on work hidden around the image. Screen size was a negotiation with packaging, strength and the other components, rather than an isolated choice of a more impressive display."
+            },
+            {
+              "card_id": "feature:feature-switch-hybrid-routine:3",
+              "original_index": 3,
+              "heading": "Make room for a different angle",
+              "text": "Toru Yamashita describes another negotiation behind the OLED model's adjustable stand. A thinner display, larger hinges and a metal support had to share the available space. The console grew only three millimetres wider while retaining its height and thickness. Keeping its fit with existing docks and Joy-Con limited the options. The resulting stand let someone change the screen's angle on a table. A small physical adjustment could improve a familiar way of playing, but depended on coordination across the parts inside the machine."
+            }
+          ],
+          "sources": [
+            {
+              "id": "switch-reveal16",
+              "title": "Nintendo Switch world premiere demonstrates new entertainment experiences",
+              "url": "https://www.nintendo.com/en-gb/News/2016/October/Nintendo-Switch-world-premiere-demonstrates-new-entertainment-experiences-from-a-home-gaming-system-1148687.html",
+              "publisher": "Nintendo Europe",
+              "source_type": "Primary manufacturer publication or named participant interview",
+              "locator": "Dock-to-handheld transition; detachable Joy-Con in separate hands, shared between two players or attached to grip.",
+              "checked": "2026-10-21",
+              "rights": "Bibliographic citation only; text, photographs, industrial designs and trademarks retain their own rights.",
+              "publication_date": "2016-10-20",
+              "story_paragraphs": [
+                0,
+                1
+              ]
+            },
+            {
+              "id": "switch-oled21",
+              "title": "Ask the Developer Vol2: Nintendo Switch OLED Model",
+              "url": "https://www.nintendo.com/au/news-and-articles/ask-the-developer-vol-2-nintendo-switch-oled-model",
+              "publisher": "Nintendo / Toru Yamashita and Ko Shiota",
+              "source_type": "Primary manufacturer publication or named participant interview",
+              "locator": "Visible changes: display circuits folded into bezel; adjustable metal stand, larger hinges, width3mm and existing dock/Joy-Con fit.",
+              "checked": "2026-10-21",
+              "rights": "Bibliographic citation only; text, photographs, industrial designs and trademarks retain their own rights.",
+              "publication_date": "2021-10-12",
+              "story_paragraphs": [
+                2,
+                3
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

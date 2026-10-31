@@ -1,0 +1,560 @@
+{
+  "batch_id": "023-catalog",
+  "status": "completed",
+  "sources": [
+    {
+      "source_id": "soccer-jp",
+      "url": "https://www.nintendo.com/jp/famicom/software/hvc-sc/index.html",
+      "title": "Soccer — Family Computer",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "Release giapponese9aprile1985; presentazione e regole generali.",
+      "limitation": "La fonte include un giorno della settimana incoerente, che non viene riprodotto; data numerica corroborata dalla pagina Virtual Console giapponese."
+    },
+    {
+      "source_id": "soccer-jp-vc",
+      "url": "https://www.nintendo.co.jp/wii/vc/vc_fb/vc_fb_01.html",
+      "title": "Soccer — Virtual Console",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "Release Famicom9aprile1985 e uno/due giocatori.",
+      "limitation": ""
+    },
+    {
+      "source_id": "soccer-vc",
+      "url": "https://www.nintendo.com/en-gb/Games/NES/Soccer-279019.html",
+      "title": "Soccer — Nintendo UK",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "Distingue Wii europeo22dicembre2006 e Wii U europeo12giugno2014.",
+      "limitation": ""
+    },
+    {
+      "source_id": "intsys-history",
+      "url": "https://www.intsys.co.jp/company/history.html",
+      "title": "Company history",
+      "publisher": "Intelligent Systems",
+      "accessed_at": "2026-10-30",
+      "scope": "I futuri fondatori lavoravano al reparto di Iwasaki Giken incaricato da Nintendo; Soccer è fra i giochi cui parteciparono. Fondazione Intelligent Systems dicembre1986.",
+      "limitation": "Si conserva l’attribuzione alla partecipazione dei futuri fondatori; non si assegna loro l’intera produzione in esclusiva."
+    },
+    {
+      "source_id": "soccer-manual",
+      "url": "https://bdjogos.com.br/manuais/758-soccer-nes-manual-usa.pdf",
+      "title": "Soccer — NES instruction booklet",
+      "publisher": "Nintendo of America; scansione conservata da BDJogos / Games Database",
+      "accessed_at": "2026-10-30",
+      "scope": "B passaggio, A tiro; numero sul destinatario del passaggio e freccia per la direzione del tiro; cinque difficoltà e durata dei tempi.",
+      "limitation": "Manuale originale letto tramite estrazione indicizzata; pagine3–4 richieste anche come screenshot. Non eseguito il gioco."
+    },
+    {
+      "source_id": "gradius-konami",
+      "url": "https://www.konami.com/games/eu/fr/topics/4838/",
+      "title": "Happy30th Birthday Gradius!",
+      "publisher": "Konami",
+      "accessed_at": "2026-10-30",
+      "scope": "Articolo ufficiale29maggio2015 che indica esordioarcade29maggio1985.",
+      "limitation": ""
+    },
+    {
+      "source_id": "hangon-sega",
+      "url": "https://www.sega.jp/history/arcade/product/9364/",
+      "title": "Hang-On — arcade history",
+      "publisher": "Sega",
+      "accessed_at": "2026-10-30",
+      "scope": "Data di messa in esercizio luglio1985; cabinato moto, inclinazione, rappresentazione della strada.",
+      "limitation": "La fonte primaria sostiene mese e anno, non il2luglio indicato nei metadati originali."
+    },
+    {
+      "source_id": "hangon-sg1000",
+      "url": "https://www.sega.jp/history/hard/sg1000-2/software.html",
+      "title": "SG-1000II software list",
+      "publisher": "Sega",
+      "accessed_at": "2026-10-30",
+      "scope": "Identifica il gioco per SG-1000 come Hang-On II.",
+      "limitation": "Il titolo è distinto; non si presume una conversione identica alla versione arcade."
+    },
+    {
+      "source_id": "gyromite-jp",
+      "url": "https://www.nintendo.com/jp/famicom/software/hvc-gy/index.html",
+      "title": "Family Computer Robot Gyro Set",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "Release13agosto1985, lettura ottica, Direct/Game A/Game B, controlli e abbassamento dei cancelli.",
+      "limitation": "I ricordi di Phillips, Tilden e James provengono dall’INPUT, non da nuove interviste consultate."
+    },
+    {
+      "source_id": "gyromite-manual",
+      "url": "https://www.digitpress.com/library/manuals/nes/Gyromite.pdf",
+      "title": "Gyromite — instruction booklet",
+      "publisher": "Nintendo of America; scansione Digital Press",
+      "accessed_at": "2026-10-30",
+      "scope": "Game B comprende25percorsi e controlla direttamente R.O.B.; il ciclo successivo aumenta la velocità.",
+      "limitation": "Usato per corroborare25percorsi e controlli già presenti, senza aggiungere una nuova card o nuove meccaniche nel testo."
+    },
+    {
+      "source_id": "battlecity-hamster",
+      "url": "https://www.hamster.co.jp/en/release/1689/",
+      "title": "Arcade Archives VS. BATTLE CITY now available!",
+      "publisher": "Hamster",
+      "accessed_at": "2026-10-30",
+      "scope": "Uscita12settembre2024 suSwitch/PS4; originaleVS.del1985.",
+      "limitation": ""
+    },
+    {
+      "source_id": "spaceharrier-sega",
+      "url": "https://www.sega.jp/history/arcade/product/9351/",
+      "title": "Space Harrier — arcade history",
+      "publisher": "Sega",
+      "accessed_at": "2026-10-30",
+      "scope": "Messa in esercizio dicembre1985 e movimento del cabinato.",
+      "limitation": "La cronologia ufficiale contrasta con2ottobre1985 in fonti aggregate. Proposta basata sulla primaria, con precisione mensile."
+    },
+    {
+      "source_id": "carmen-packaging",
+      "url": "https://elisoftware.org/wiki/Where_In_The_World_Is_Carmen_Sandiego%3F_Deluxe_%28PC%2C_3_1/2%22_Disk_and_5_1/4%22_Disk%29_Broderbund_Software_-_1990_USA%2C_Canada_Release",
+      "title": "Where in the World Is Carmen Sandiego? Deluxe — packaging transcription",
+      "publisher": "Broderbund packaging, reproduced by Eli’s Software Encyclopedia",
+      "accessed_at": "2026-10-30",
+      "scope": "La confezione floppy menziona45paesi e2.500indizi; il testo originario univa dati delle edizioni floppy eCD.",
+      "limitation": "Trascrizione del materiale originale, non prova autonoma del giorno di uscita; i numeri3.200/60/16 della versioneCD sono già forniti dall’INPUT."
+    },
+    {
+      "source_id": "carmen-byte-ad",
+      "url": "https://device.report/m/44c25b3854473648787fc55228c73a7d22fd48bbaaa60c02d4eb7f43fe42c120.pdf",
+      "title": "BYTE — December1990, software advertising",
+      "publisher": "BYTE / inserzionista commerciale",
+      "accessed_at": "2026-10-30",
+      "scope": "Annuncio di vendita di Where in the World Is Carmen Sandiego Deluxe Edition nel dicembre1990, distinto dalla successiva edizioneCD.",
+      "limitation": "Consultata l’estrazione indicizzata pertinente; non utilizzato il copyright della scatola come data di release."
+    },
+    {
+      "source_id": "carmen-contemporary-cd",
+      "url": "https://www.latimes.com/archives/la-xpm-1992-05-30-ca-90-story.html",
+      "title": "Globe-Trotting Gangsters",
+      "publisher": "Jeane deCoster e David Crook, Los Angeles Times,30maggio1992",
+      "accessed_at": "2026-10-30",
+      "scope": "Recensione contemporanea dell’edizioneCD-ROM appena pubblicata.",
+      "limitation": "Usata solo per la separazione cronologica fra floppy1990 eCD1992; nessuna lunga parafrasi o citazione riprodotta."
+    },
+    {
+      "source_id": "cgw-index",
+      "url": "https://www.cgwmuseum.org/galleries/index.php?id=148&pub=2&year=1996",
+      "title": "Computer Gaming World148 — November1996",
+      "publisher": "Computer Gaming World / CGW Museum",
+      "accessed_at": "2026-10-30",
+      "scope": "Identifica la selezione Top150GamesofAllTime.",
+      "limitation": "Il PDF completo non è stato restituito per limite di dimensione; il secondo posto di UltimaIV resta quello già documentato nell’INPUT. Non si attribuisce alla lista un’esclusività IBM non sostenuta dal suo titolo."
+    },
+    {
+      "source_id": "root-cgw-full-scan",
+      "url": "https://www.cgwmuseum.org/galleries/issues/cgw_148.pdf",
+      "title": "Computer Gaming World no.148, November1996,150BestGamesofAllTime,p.64",
+      "publisher": "Computer Gaming World / ZiffDavis; copiaCGWMuseum",
+      "accessed_at": "2026-10-30",
+      "scope": "Scansione completa scaricata e pagina64letta visivamente(PDFpagina68):UltimaIValn.2;M.U.L.E.aln.3conriferimento esplicito alle versioniC64eAtari800.",
+      "limitation": "Verifica della posizione edell’assenza diesclusivitàIBM; gli anni d’uscita stampati nelle schede presentano errori e non sono stati adottati. Nessuna copia della pagina aggiunta ai media delcatalogo."
+    }
+  ],
+  "decisions": [
+    {
+      "target_id": "wikipedia-1563847",
+      "problem": "Soccer era attribuito a una società che nacque dopo il gioco.",
+      "conclusion": "Parteciparono futuri fondatori di Intelligent Systems ancora presso Iwasaki Giken; evitata l’attribuzione anacronistica alla società già costituita.",
+      "source_ids": [
+        "intsys-history"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-1563847",
+      "problem": "La stessa data2014 era assegnata a Wii eWii U.",
+      "conclusion": "Le due riedizioni europee sono distinte:22dicembre2006Wii,12giugno2014Wii U.",
+      "source_ids": [
+        "soccer-vc"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-1563847",
+      "problem": "Il testo descriveva un misuratore dell’altezza del tiro e una selezione automatica del compagno più vicino.",
+      "conclusion": "Il manuale descrive selezione del destinatario con croce e numero lampeggiante e una freccia che determina la direzione del tiro; testo corretto nelle cinque lingue.",
+      "source_ids": [
+        "soccer-manual"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-37538502",
+      "problem": "I contenuti della versioneCD erano accostati alla Deluxe1990 senza distinguere il supporto.",
+      "conclusion": "La Deluxe floppy è documentata nel1990; le edizioniCD del1992 sono separate e vi sono riferiti i dati già forniti su3.200indizi e60paesi.",
+      "source_ids": [
+        "carmen-packaging",
+        "carmen-byte-ad",
+        "carmen-contemporary-cd"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "workbook-05-29-gradius",
+      "problem": "Necessità di confermare il giorno di debuttoarcade.",
+      "conclusion": "Konami conferma29maggio1985; data conservata.",
+      "source_ids": [
+        "gradius-konami"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-1389449",
+      "problem": "Precisione del2luglio1985 non sostenuta dalla cronologia ufficiale consultata.",
+      "conclusion": "Testo riferito a luglio1985; riallineamento proposto con precisione mensile.",
+      "source_ids": [
+        "hangon-sega"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-1389449",
+      "problem": "Conversioni domestiche aggregate sotto un unico titolo.",
+      "conclusion": "Identificato esplicitamente Hang-On II perSG-1000, conservando le altre piattaforme.",
+      "source_ids": [
+        "hangon-sg1000"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "workbook-08-13-gyromite",
+      "problem": "Ambiguità fra cancelli alzati o abbassati mentre il pulsante è premuto.",
+      "conclusion": "Le istruzioni indicano che la pressione del vassoio abbassa il cancello del medesimo colore; formulazione resa precisa.",
+      "source_ids": [
+        "gyromite-jp"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "workbook-08-13-gyromite",
+      "problem": "Verifica della release e dei25percorsi diGame B.",
+      "conclusion": "13agosto1985 perGyro Set;25percorsi e comando diretto diR.O.B. confermati.",
+      "source_ids": [
+        "gyromite-jp",
+        "gyromite-manual"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-1466637",
+      "problem": "Riedizione2024 da distinguere dall’arcade originale.",
+      "conclusion": "Hamster documenta12settembre2024Switch/PS4, mentreVS.Battle City è del1985.",
+      "source_ids": [
+        "battlecity-hamster"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-1159581",
+      "problem": "La listaCGW era presentata come esclusivamente percompatibiliIBM.",
+      "conclusion": "Confermati direttamente il secondo posto diUltimaIV e l’ambito non esclusivo dei compatibiliIBM: la stessa pagina comprendeM.U.L.E. e citaC64eAtari800. Il titolo della selezione viene mantenuto senza aggiungere un limite di piattaforma.",
+      "source_ids": [
+        "cgw-index",
+        "root-cgw-full-scan"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-595917",
+      "problem": "Data originale2ottobre1985 in contrasto con la storiaufficialeSega.",
+      "conclusion": "Proposta dicembre1985perla messa in esercizio giapponese, conprecisionemensile; il racconto usa1985.",
+      "source_ids": [
+        "spaceharrier-sega"
+      ],
+      "text_applied": true
+    }
+  ],
+  "metadata_proposals": [
+    {
+      "target_id": "wikipedia-1563847",
+      "field": "release_date_region",
+      "proposed_value": {
+        "year": 1985,
+        "month": 4,
+        "day": 9,
+        "precision": "day",
+        "region": "Japan",
+        "version": "Famicom"
+      },
+      "source_ids": [
+        "soccer-jp",
+        "soccer-jp-vc"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "workbook-05-29-gradius",
+      "field": "release_date_region",
+      "proposed_value": {
+        "year": 1985,
+        "month": 5,
+        "day": 29,
+        "precision": "day",
+        "region": "Japan",
+        "version": "Arcade"
+      },
+      "source_ids": [
+        "gradius-konami"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "wikipedia-1389449",
+      "field": "release_date_region",
+      "proposed_value": {
+        "year": 1985,
+        "month": 7,
+        "precision": "month",
+        "region": "Japan",
+        "version": "Arcade"
+      },
+      "source_ids": [
+        "hangon-sega"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "workbook-08-13-gyromite",
+      "field": "release_date_region",
+      "proposed_value": {
+        "year": 1985,
+        "month": 8,
+        "day": 13,
+        "precision": "day",
+        "region": "Japan",
+        "version": "Family Computer Robot Gyro Set"
+      },
+      "source_ids": [
+        "gyromite-jp"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "wikipedia-595917",
+      "field": "release_date_region",
+      "proposed_value": {
+        "year": 1985,
+        "month": 12,
+        "precision": "month",
+        "region": "Japan",
+        "version": "Arcade"
+      },
+      "source_ids": [
+        "spaceharrier-sega"
+      ],
+      "applied_to_catalog": false
+    }
+  ],
+  "expansion_assessments": [
+    {
+      "target_id": "wikipedia-1563847",
+      "main_cards": 5,
+      "feature_cards": 0,
+      "threshold_applicable": 5,
+      "missing_cards": 0,
+      "rationale": "Gioco di rilievo storico; corpo principale già pari o superiore alla soglia."
+    },
+    {
+      "target_id": "wikipedia-37538502",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": 5,
+      "missing_cards": 2,
+      "rationale": "Gioco di rilievo storico; il materiale presente è già utilizzato e non permette di creare altre card autonome senza nuove fonti."
+    },
+    {
+      "target_id": "workbook-05-29-gradius",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": 5,
+      "missing_cards": 1,
+      "rationale": "Gioco di rilievo storico; il materiale presente è già utilizzato e non permette di creare altre card autonome senza nuove fonti."
+    },
+    {
+      "target_id": "wikipedia-1389449",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": 5,
+      "missing_cards": 2,
+      "rationale": "Gioco di rilievo storico; il materiale presente è già utilizzato e non permette di creare altre card autonome senza nuove fonti."
+    },
+    {
+      "target_id": "workbook-08-13-gyromite",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": null,
+      "missing_cards": 0,
+      "rationale": "Voce sul rapporto fra Gyromite e la periferica R.O.B.; non è una console. Nessuna quota di sei card applicata automaticamente."
+    },
+    {
+      "target_id": "wikipedia-1011342",
+      "main_cards": 2,
+      "feature_cards": 0,
+      "threshold_applicable": 5,
+      "missing_cards": 3,
+      "rationale": "Gioco di rilievo storico; il materiale presente è già utilizzato e non permette di creare altre card autonome senza nuove fonti."
+    },
+    {
+      "target_id": "wikipedia-1466637",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": 5,
+      "missing_cards": 2,
+      "rationale": "Gioco di rilievo storico; il materiale presente è già utilizzato e non permette di creare altre card autonome senza nuove fonti."
+    },
+    {
+      "target_id": "super-mario-bros",
+      "main_cards": 9,
+      "feature_cards": 4,
+      "threshold_applicable": 5,
+      "missing_cards": 0,
+      "rationale": "Gioco di rilievo storico; corpo principale già pari o superiore alla soglia."
+    },
+    {
+      "target_id": "wikipedia-1159581",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": 5,
+      "missing_cards": 2,
+      "rationale": "Gioco di rilievo storico; il materiale presente è già utilizzato e non permette di creare altre card autonome senza nuove fonti."
+    },
+    {
+      "target_id": "wikipedia-595917",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": 5,
+      "missing_cards": 2,
+      "rationale": "Gioco di rilievo storico; il materiale presente è già utilizzato e non permette di creare altre card autonome senza nuove fonti."
+    }
+  ],
+  "editorial_review": {
+    "english_first_checkpoint": "Inglese salvato prima delle quattro adattazioni; checkpoint conservato durante la lavorazione.",
+    "languages": [
+      "en",
+      "it",
+      "fr",
+      "de",
+      "es"
+    ],
+    "reviewed_entries": 10,
+    "reviewed_cards_per_language": 43,
+    "checks": [
+      "Corrispondenza ID,ordine e struttura al template",
+      "Conservazione della sostanza dei paragrafi e dei riferimenti a persone,edizioni,cifre",
+      "Incipit e sommari;11sommariinglesi25–45parole",
+      "Titoli specifici per43card; paragrafi brevi nelle card lunghe",
+      "Rilettura delle cinque lingue: direzione dei tiri, posizione delleOptions, comandi dei cancelli e attribuzioni",
+      "Nessuna nuova biografia: la featureMiyamoto riguarda il lavoro delgruppo, non una nascita"
+    ],
+    "independent_language_review": false,
+    "limitation": "Revisione da parte dell’agente autore; non si dichiara revisione indipendente o verifica esterna universale. Le statistiche commerciali, i ricordi e le altre informazioni non elencate nelle decisioni sono conservati dal materiale fornito. I riferimenti originali e le licenze restano negli INPUT.",
+    "root_review": {
+      "scope": "Confronto delle card segnalate per numeri o riduzione testuale; rilettura mirata EN/IT/DE e controllo della fonteCGW. Non una seconda verifica universale del lotto.",
+      "findings": [
+        "CarmenSandiego main:1conserva ruolo, organizzazioni, indizi, almanacco, progressione eobiettivo finale.",
+        "Le variazioni dei numeri rispecchiano cifre scritte inlettere, separatori locali o correzioni già documentate.",
+        "UltimaIV: seconda posizione e ambito della selezione verificati sulla scansione originale.",
+        "Hang-On: tecnologia di scaling mantenuta senza attribuire automaticamente la denominazione commercialeSuperScaler alla scheda specifica."
+      ]
+    }
+  },
+  "validation": {
+    "valid": true,
+    "batch_id": "023-catalog",
+    "completed": true,
+    "entry_count": 10,
+    "card_count_per_language": 43,
+    "language_count": 5,
+    "translated_card_count": 215,
+    "entry_card_counts": {
+      "wikipedia-1563847": 5,
+      "wikipedia-37538502": 3,
+      "workbook-05-29-gradius": 4,
+      "wikipedia-1389449": 3,
+      "workbook-08-13-gyromite": 4,
+      "wikipedia-1011342": 2,
+      "wikipedia-1466637": 3,
+      "super-mario-bros": 13,
+      "wikipedia-1159581": 3,
+      "wikipedia-595917": 3
+    },
+    "issue_counts": {
+      "wikipedia-1563847": 0,
+      "wikipedia-37538502": 1,
+      "workbook-05-29-gradius": 1,
+      "wikipedia-1389449": 1,
+      "workbook-08-13-gyromite": 0,
+      "wikipedia-1011342": 1,
+      "wikipedia-1466637": 1,
+      "super-mario-bros": 0,
+      "wikipedia-1159581": 1,
+      "wikipedia-595917": 1
+    },
+    "summary_checks": [
+      {
+        "entry_id": "wikipedia-1563847",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "wikipedia-37538502",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "workbook-05-29-gradius",
+        "feature_id": null,
+        "english_summary_words": 34
+      },
+      {
+        "entry_id": "wikipedia-1389449",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "workbook-08-13-gyromite",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "wikipedia-1011342",
+        "feature_id": null,
+        "english_summary_words": 30
+      },
+      {
+        "entry_id": "wikipedia-1466637",
+        "feature_id": null,
+        "english_summary_words": 33
+      },
+      {
+        "entry_id": "super-mario-bros",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "super-mario-bros",
+        "feature_id": "feature-shigeru-miyamoto-team",
+        "english_summary_words": 34
+      },
+      {
+        "entry_id": "wikipedia-1159581",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "wikipedia-595917",
+        "feature_id": null,
+        "english_summary_words": 32
+      }
+    ],
+    "editorial_review": [],
+    "failures": []
+  },
+  "output_sha256": "38d7b1608f143b7f233b2c5acab7ba6967a7955b3b4c406aa337b56ec64f6a30"
+}

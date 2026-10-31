@@ -1,0 +1,121 @@
+{
+  "status": "PASS",
+  "locale": "es",
+  "entries": [
+    {
+      "entry_id": "workbook-06-02-valorant",
+      "source_fields_sha256": "f383e7e098dfbe64edad9a3c6402dbc668660054617a0e873f08628d722f5ed2",
+      "translation_sha256": "bfa06a3baf59dc726678da519d72263bcf88e6b6ba60e856e1d54352b99cb7d4",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch316/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "2d2851bc70624d120edca14cb876ac5e69b142658006e3d2d58f92720960ad70"
+    },
+    {
+      "entry_id": "workbook-06-16-desperados-iii",
+      "source_fields_sha256": "e5d4ceb9a58d9ff7261a1ea0d4419af99935b811dea51b892cdbe6e5e86853b4",
+      "translation_sha256": "e6fa6c02af050e4638b92790102f122ea562d4c0aff1bd9241859bf9a12c9b8f",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch316/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "2d2851bc70624d120edca14cb876ac5e69b142658006e3d2d58f92720960ad70"
+    },
+    {
+      "entry_id": "wikipedia-52464953",
+      "source_fields_sha256": "f6edc6a3b370182140f417610c6f7dbe9dba5d9fa52891902a6feef5866a071a",
+      "translation_sha256": "dde266321ea25f18dfeb5bf2c0f1e84f2a57bf05f61bb4dd6658db4e68ae89be",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch316/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "2d2851bc70624d120edca14cb876ac5e69b142658006e3d2d58f92720960ad70"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "editorial_continue",
+    "actual_receipt": "build/research/catalog-2020-chronological/june-three-private/independent-editorial-peer-approval.json",
+    "actual_receipt_sha256": "7272e7a5a2142f8c722b30fa5392207142eca2b94c2bc9cc811b7a77a2a0e819",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "editorial_continue",
+      "author": "category_audit",
+      "index_sha256": "d7046a7b7bf7ac11ca4fa2050732a808fc5751bf884be4e7664c868120355f52",
+      "owners": [
+        {
+          "entry_id": "workbook-06-02-valorant",
+          "slug": "valorant",
+          "source": "build/research/catalog-2020-chronological/june-three-private/valorant/complete-original-source-media-private-candidate.json",
+          "source_sha256": "4a2efa38701f835d1ded200bedb435119d0adeb8e8171eac85b7f273610e5408",
+          "target": "build/research/catalog-2020-chronological/june-three-private/valorant/complete-four-language-private-candidate.json",
+          "target_sha256": "ed33979361f59ac5a1991fc63b408808af1acf3727a750e25051a98ad681f9bb",
+          "english_cards": 7,
+          "localized_cards": 28,
+          "images": 9,
+          "tracks": 3,
+          "contact": "build/research/catalog-2020-chronological/june-three-private/valorant/final-selected-media-contact.jpg",
+          "contact_sha256": "5c8edfc4a22dc674973f602f39ae0be7bda2b0324fcfb85690bfc8dd7144cd8e",
+          "finite_errata": 2
+        },
+        {
+          "entry_id": "workbook-06-16-desperados-iii",
+          "slug": "desperados",
+          "source": "build/research/catalog-2020-chronological/june-three-private/desperados/complete-original-source-media-private-candidate.json",
+          "source_sha256": "6f5ce079c64683b8e8f475631d4125468f3af3d8981e9d0f6e4e61c3eb53240a",
+          "target": "build/research/catalog-2020-chronological/june-three-private/desperados/complete-four-language-private-candidate.json",
+          "target_sha256": "d0b5d947b4a702cedb3613503e7aaf174ac087b270818b7669819c12328e3443",
+          "english_cards": 7,
+          "localized_cards": 28,
+          "images": 10,
+          "tracks": 3,
+          "contact": "build/research/catalog-2020-chronological/june-three-private/desperados/final-selected-media-contact.jpg",
+          "contact_sha256": "0d5bae6054c58ee1ec35c83950c34c9fe869b158a8a356f4a792c595097e3338",
+          "finite_errata": 0
+        },
+        {
+          "entry_id": "wikipedia-52464953",
+          "slug": "tlou",
+          "source": "build/research/catalog-2020-chronological/june-three-private/tlou/complete-original-source-media-private-candidate.json",
+          "source_sha256": "d4f01e4527db9465ebb38db107a02f5d0acafc079333678bc49dddcd020c9f80",
+          "target": "build/research/catalog-2020-chronological/june-three-private/tlou/complete-four-language-private-candidate.json",
+          "target_sha256": "a4b3f1bf7f69d86007a236edae164e335b56c07f217fd8d847670ed2a574c916",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 6,
+          "tracks": 28,
+          "contact": "build/research/catalog-2020-chronological/june-three-private/tlou/final-selected-media-contact.jpg",
+          "contact_sha256": "73e334d4620d14f92d80567d940b682fa4be626a2bfa2328d7fce0e98e91000c",
+          "finite_errata": 1
+        }
+      ],
+      "read_english_paragraphs": 17,
+      "read_localized_paragraphs": 68,
+      "actual_final_contact_sheets_viewed": 3,
+      "actual_selected_images_viewed": 25,
+      "source_review": [
+        {
+          "url": "https://www.riotgames.com/en/news/demolishing-wallhacks-valorants-fog-war",
+          "finding": "Primary engineering account supports withheld positions, earlier raycast failures, precomputed visibility and animation-state repair."
+        },
+        {
+          "url": "https://www.riotgames.com/en/news/peeking-valorants-netcode",
+          "finding": "Saved complete primary page read directly: named engineers, local prediction, buffering and peeker/server/holder timelines support the chapter."
+        },
+        {
+          "url": "https://playvalorant.com/en-us/news/game-updates/valorant-patch-notes-1-10/",
+          "finding": "October 13, 2020 primary explicitly changes Deathmatch from ten to fourteen players, thirty to forty eliminations, and six to nine minutes."
+        },
+        {
+          "url": "https://playvalorant.com/en-gb/maps/",
+          "finding": "Publisher map descriptions explicitly distinguish two-site maps and three-site maps; one-site claim correctly removed."
+        },
+        {
+          "url": "https://www.gamedeveloper.com/design/designing-the-real-time-stealth-and-combat-of-i-desperados-iii-i-",
+          "finding": "First-person creative-director interview read: repeated saves, deterministic hit outcomes, Showdown single-action restriction and non-pausing highest difficulty support the text."
+        },
+        {
+          "url": "https://www.playstation.com/en-us/games/the-last-of-us-part-ii/",
+          "finding": "Original PS4 product page explicitly states five years after the original journey; original release June 19, 2020 and selected original publisher imagery agree."
+        }
+      ],
+      "music_review": "Five newly selected exact public metadata records read: three official Riot 2021 recordings are explicitly distinguished from 2020 launch music; two Desperados III Cobalt Lane/DistroKid original June 2020 recordings have public AAC formats and matching composer/album credits. All 28 Last of Us Part II track objects remain exactly unchanged. No redundant resolver run or audio download.",
+      "media_review": "Three engineering diagrams illustrate their actual technical subjects. Valorant ability and rifle images are honestly contextual rather than falsely asserted as Spike Rush/Deathmatch captures. Desperados images show original environments, sight cones, civilians and skills. Last of Us uses native original PS4 images; all actual candidate chapter bindings are valid.",
+      "resolved_findings": [],
+      "review_note": "An initial concern from a stale-looking P3 contact label was withdrawn after directly reading the immutable TLOU candidate: actual binding is paragraph2, not3. No candidate change was needed.",
+      "production_writes": false
+    }
+  }
+}

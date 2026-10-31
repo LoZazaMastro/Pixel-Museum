@@ -1,0 +1,116 @@
+{
+  "status": "PASS",
+  "locale": "es",
+  "entries": [
+    {
+      "entry_id": "wikipedia-64676774",
+      "source_fields_sha256": "5caa49f413921ec33a37b2c5420e11d64cddd133dbd6dc6ca544314ce077fd97",
+      "translation_sha256": "0c628908b7df677b5c67e44a59f26baa9882877192d5bc96fefce46ced0ea2cb",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch374/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "c6baf20ccf55608aa7f21b7bd317f9f78dfae69b1c3051218f749da32dcf9a0e"
+    },
+    {
+      "entry_id": "wikipedia-66364908",
+      "source_fields_sha256": "abdc954d98a60815d6162a36fcea90e75161abe6cbfef0a18be09728d47c2d84",
+      "translation_sha256": "73c29b70e06702003de2bcf56fd4b1ca992268b7c5811d0faa4068f8d2933b87",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch374/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "c6baf20ccf55608aa7f21b7bd317f9f78dfae69b1c3051218f749da32dcf9a0e"
+    },
+    {
+      "entry_id": "wikipedia-77113557",
+      "source_fields_sha256": "de20b6f22da8253cd410e909e2e224b70de0e5d4f3624b14bc4c580ba5926596",
+      "translation_sha256": "d540798f62f39027d273c87b8bfa536658d0aca38a8d6e5b59b97397fdadaa7d",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch374/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "c6baf20ccf55608aa7f21b7bd317f9f78dfae69b1c3051218f749da32dcf9a0e"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "editorial_continue",
+    "actual_receipt": "build/research/catalog-2024-chronological/final-three-private/independent-editorial-peer-approval.json",
+    "actual_receipt_sha256": "6d57a1a1209233190a7b1ac4f4c486073a820b108e57ebae230471a906f4b3b0",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "editorial_continue",
+      "index": "build/research/catalog-2024-chronological/final-three-private/three-private-index.json",
+      "index_sha256": "b570efa9da8a70dec5cf17a5b2d191eac7af1a29f02b966e771b4c5775bf51e7",
+      "scope": "Actually read all ten English and forty localized paragraphs and all five fields. Viewed all fourteen final images. Read all seven unique metadata receipts underlying nine UI selections, including the full independent Alien chapter list and the individual Indiana John Williams composition credits. Checked source/target/contact and recovery-byte bindings.",
+      "primary_sources_actually_read": [
+        {
+          "url": "https://www.sarabaronemusic.com/home",
+          "finding": "Composer firsthand portfolio explicitly identifies the original Survios Alien VR score and soundtrack teaser."
+        },
+        {
+          "url": "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-2-games/Alien-Rogue-Incursion-Evolved-Edition-3077148.html",
+          "finding": "Original publisher product content confirms April 21, 2026 non-VR Switch 2 edition, distinct from the earlier VR game."
+        },
+        {
+          "url": "https://music.apple.com/us/album/dragon-age-the-veilguard-original-soundtrack/1772114262",
+          "access": "Indexed official label catalog text read.",
+          "finding": "Hans Zimmer and Lorne Balfe original score, November 1, 2024, Electronic Arts Music; consistent with actual Orchard metadata."
+        },
+        {
+          "url": "https://news.xbox.com/en-us/2024/06/14/indiana-jones-and-the-great-circle-details/",
+          "access": "Indexed original Xbox account read.",
+          "finding": "Firsthand MachineGames/Lucasfilm production account identifies Gordy Haab as game composer."
+        },
+        {
+          "url": "https://www.lucasfilm.com/news/craig-derrick-great-circle/",
+          "access": "Indexed original Lucasfilm account read.",
+          "finding": "Original December 9, 2024 Xbox/PC general release; early access separately linked."
+        }
+      ],
+      "source_limits": [
+        "The EA composer announcement direct fetch timed out in this review. Its original author reading remains delegated; the official label catalog and all three actual publication descriptions were independently read. No claim to successful direct fetch is made."
+      ],
+      "music_notes": "Alien is honestly an independent original-score archive, not an official album: UI chapter boundaries 0/303/587/726 follow its actual description, and labels are explicitly uploader labels. Indiana cue credits distinguish Gordy Haab, John Williams and performing orchestras. No audio file downloaded or redistributed.",
+      "findings": [],
+      "owners": [
+        {
+          "entry_id": "wikipedia-64676774",
+          "slug": "dragon",
+          "source": "build/research/catalog-2024-chronological/final-three-private/dragon-source-private-candidate.json",
+          "source_sha256": "cbfd0103960f19235e481788921a9ff92a9f36520af2f001a0f126c4369ed2d7",
+          "target": "build/research/catalog-2024-chronological/final-three-private/dragon-four-language-private-candidate.json",
+          "target_sha256": "a4c4551384cee74433b9a3490ba56fd0768a3d73ef7c47eb20fad6beeaf4da3c",
+          "contact": "build/research/catalog-2024-chronological/final-three-private/dragon-final-contact.jpg",
+          "contact_sha256": "48af1835fd58129844ad50e8118f58bd92b3efb2b87098f6e98a00272121a2b0",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 4,
+          "tracks": 3
+        },
+        {
+          "entry_id": "wikipedia-66364908",
+          "slug": "indiana",
+          "source": "build/research/catalog-2024-chronological/final-three-private/indiana-source-private-candidate.json",
+          "source_sha256": "72a0a7ebab515c4334cdd1811c5169d4ffc558c642b0ed96776c3e855c9c7f78",
+          "target": "build/research/catalog-2024-chronological/final-three-private/indiana-four-language-private-candidate.json",
+          "target_sha256": "3e717f2caf0d130afe0328202b9ceef021b9a658d030d3d9adc58bed02b0650e",
+          "contact": "build/research/catalog-2024-chronological/final-three-private/indiana-final-contact.jpg",
+          "contact_sha256": "8b52a3281d16d9d414aa62b55e1a79990b72f03c02a078afb13b74994f449787",
+          "english_cards": 4,
+          "localized_cards": 16,
+          "images": 5,
+          "tracks": 3
+        },
+        {
+          "entry_id": "wikipedia-77113557",
+          "slug": "alien",
+          "source": "build/research/catalog-2024-chronological/final-three-private/alien-source-private-candidate.json",
+          "source_sha256": "d10322e6a6840106c0e2ec77d533431acf3c2305cf8de0123d7626d770016681",
+          "target": "build/research/catalog-2024-chronological/final-three-private/alien-four-language-private-candidate.json",
+          "target_sha256": "784fa18f71a73d335f4d39b215b16691d24b3d5cbe540cc2bd4d1fe5faa1490b",
+          "contact": "build/research/catalog-2024-chronological/final-three-private/alien-final-contact.jpg",
+          "contact_sha256": "7cfb02fec56ad7d8914aaa456a1524f4229170d87cf0a50cd29c05528ab9a25d",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 5,
+          "tracks": 3
+        }
+      ],
+      "production_writes": false,
+      "metadata_only_addendum": "Re-pinned after the author added missing credit/license fields and numeric1920x1080 dimensions to two Alien publisher screenshots. Actual image bytes and native dimensions unchanged. No pixels, URLs, text or music changed; prior actual semantic and visual review remains valid."
+    }
+  }
+}

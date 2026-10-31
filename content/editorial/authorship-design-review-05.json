@@ -1,0 +1,427 @@
+{
+  "schema_version": 1,
+  "reviewed": "2026-10-21",
+  "review_type": "independent_specific_source_schema_prose_and_semantic_placement_review",
+  "batch_file": "content\\expansion\\editorial-authorship-design-05.json",
+  "batch_sha256": "184ee4519c07670ad49c1b42e8bbe56c8723fb3aa72ea658dfc92d66d0cdd05d",
+  "catalog_sha256_snapshot": "55277c78ac4cf40ced31d4940c22f832e5326fbd6365b6244be5741ee337a821",
+  "status": "text_review_passed_with_placement_and_media_gates",
+  "features": 8,
+  "cards": 32,
+  "body_words": 2737,
+  "body_words_range": [
+    80,
+    89
+  ],
+  "publications": 17,
+  "publication_charge_range": [
+    111,
+    199
+  ],
+  "all_allocations_within_limit": true,
+  "factual_blockers": [],
+  "entries": [
+    {
+      "feature_id": "feature-brenda-romero-systems",
+      "body_sha256": "54509b4c98f0f34e66d3983054f8253f52716fb16ea9974ad5a2834c083c6cdf",
+      "body_hash_encoding": "UTF8 compact JSON list; ensure_ascii=False",
+      "cards": 4,
+      "body_words": 343,
+      "content_decision": "independent_specific_source_review_passed",
+      "placement_decision": "distinct_proposal_pending_media_and_explicit_admission",
+      "parent_id": null,
+      "parent_body_sha256_snapshot": null,
+      "semantic_reason": "Specific handmade historical-game practice and creator testimony; no matching Brenda/Train destination found. Retain intention-versus-demonstrated-outcome qualification.",
+      "source_budget_maximum": 199,
+      "selected_assets": 0,
+      "native_layout_signoff": false
+    },
+    {
+      "feature_id": "feature-amy-hennig-storycraft",
+      "body_sha256": "d31b802d929bb631fb25a85dd18e77de3e5cffbdc050c89532e91f77690d84b2",
+      "body_hash_encoding": "UTF8 compact JSON list; ensure_ascii=False",
+      "cards": 4,
+      "body_words": 343,
+      "content_decision": "independent_specific_source_review_passed",
+      "placement_decision": "attach_one_parent",
+      "parent_id": "workbook-11-01-uncharted-3-drake-s-deception",
+      "parent_body_sha256_snapshot": "b76d97f49270c6517bb717370cdebbff97eb8ff074d19c755fd024e4fd8bff53",
+      "semantic_reason": "Adds specific casting, keyframed faces, editing and collaborative writing to the existing set-piece account. Label the feature as Uncharted2 production, not a claim that all methods or credits belong to Uncharted3.",
+      "source_budget_maximum": 195,
+      "selected_assets": 0,
+      "native_layout_signoff": false
+    },
+    {
+      "feature_id": "feature-bob-bates-adventure",
+      "body_sha256": "ccb6d9f837b95141f9369c574608c17889fee1330b9abd8b15272086f3f4e80a",
+      "body_hash_encoding": "UTF8 compact JSON list; ensure_ascii=False",
+      "cards": 4,
+      "body_words": 342,
+      "content_decision": "independent_specific_source_review_passed",
+      "placement_decision": "distinct_proposal_pending_media_and_explicit_admission",
+      "parent_id": null,
+      "parent_body_sha256_snapshot": null,
+      "semantic_reason": "A named designer, fair-puzzle practice and archival trail differ from general interactive-fiction history. No matching BobBates/Blackstone/Sherlock/Arthur destination found.",
+      "source_budget_maximum": 199,
+      "selected_assets": 0,
+      "native_layout_signoff": false
+    },
+    {
+      "feature_id": "feature-jane-jensen-mystery",
+      "body_sha256": "ace84e86a329a1c3ed74ffc9b16cc05de91aac7273d09fde20d232375af4d35e",
+      "body_hash_encoding": "UTF8 compact JSON list; ensure_ascii=False",
+      "cards": 4,
+      "body_words": 344,
+      "content_decision": "independent_specific_source_review_passed",
+      "placement_decision": "distinct_proposal_pending_media_and_explicit_admission",
+      "parent_id": null,
+      "parent_body_sha256_snapshot": null,
+      "semantic_reason": "Specific GabrielKnight research and interaction practice has no matching Jensen/GabrielKnight destination found. Occult fiction remains distinguished from established history.",
+      "source_budget_maximum": 199,
+      "selected_assets": 0,
+      "native_layout_signoff": false
+    },
+    {
+      "feature_id": "feature-nasir-gebelli-and-teams",
+      "body_sha256": "cf93cde556a6c2110d7dfab9f1f59d2792805763e7865a2d5dd57d09b45487aa",
+      "body_hash_encoding": "UTF8 compact JSON list; ensure_ascii=False",
+      "cards": 4,
+      "body_words": 340,
+      "content_decision": "independent_specific_source_review_passed",
+      "placement_decision": "attach_one_parent",
+      "parent_id": "wikipedia-52753",
+      "parent_body_sha256_snapshot": "5cae82d564c4b5a982ad0885ea5b57f780bf5e30c219dca64541b345b55abed5",
+      "semantic_reason": "The existing FFII reference already names Gebelli, Terada, Sakaguchi and Kawazu. These four cards supply concrete division of work; separately date the FFI examples and FFIII1990 travel recollection rather than create another biography stop.",
+      "source_budget_maximum": 199,
+      "selected_assets": 0,
+      "native_layout_signoff": false
+    },
+    {
+      "feature_id": "feature-fukio-mitsuji-families",
+      "body_sha256": "8ade07d29e8b929005dc788b358f2323f8c806e8ea1363c8d51ea9ebf07b110b",
+      "body_hash_encoding": "UTF8 compact JSON list; ensure_ascii=False",
+      "cards": 4,
+      "body_words": 343,
+      "content_decision": "independent_specific_source_review_passed",
+      "placement_decision": "distinct_proposal_pending_media_and_explicit_admission",
+      "parent_id": null,
+      "parent_body_sha256_snapshot": null,
+      "semantic_reason": "Specific BubbleBobble/RainbowIslands/Syvalion design practice has no matching destination found. Existing PuzzleBobble is a different game; a mention of BubbleBobble there is not a suitable automatic parent.",
+      "source_budget_maximum": 199,
+      "selected_assets": 0,
+      "native_layout_signoff": false
+    },
+    {
+      "feature_id": "feature-keita-takahashi-play",
+      "body_sha256": "b9aadeac73f709782d0136ea40c24aaf4d1a2758b444cffe08ace2c7c433e59f",
+      "body_hash_encoding": "UTF8 compact JSON list; ensure_ascii=False",
+      "cards": 4,
+      "body_words": 342,
+      "content_decision": "independent_specific_source_review_passed",
+      "placement_decision": "attach_one_parent",
+      "parent_id": "katamari-damacy",
+      "parent_body_sha256_snapshot": "9462d0a729dbe2c8308162096ac2c6b1e99eb35b0af9f43233edeabc301f9d12",
+      "semantic_reason": "Adds the same creator's explicitly dated NobyNobyBoy2009 practice and communication account to existing rolling/scale/music text. Preserve the distinct game identity and announced-update status.",
+      "source_budget_maximum": 199,
+      "selected_assets": 0,
+      "native_layout_signoff": false
+    },
+    {
+      "feature_id": "feature-disco-elysium-authorship",
+      "body_sha256": "c363ab64e759963d8caa91f561f2e08cabae91223ad6b52c14e86766715b200b",
+      "body_hash_encoding": "UTF8 compact JSON list; ensure_ascii=False",
+      "cards": 4,
+      "body_words": 340,
+      "content_decision": "independent_specific_source_review_passed",
+      "placement_decision": "attach_one_parent",
+      "parent_id": "workbook-10-15-disco-elysium",
+      "parent_body_sha256_snapshot": "37b38da5656e421a83a7caa09f08cfce22f5d8ee04d033c2d673f51726b10865",
+      "semantic_reason": "Existing seven sections already discuss skills, failure, politics and worldbuilding. Keep optional production/authorship cards on writing tools, collaborative labour and FinalCut2021 performance; do not create a duplicate timeline destination.",
+      "source_budget_maximum": 199,
+      "selected_assets": 0,
+      "native_layout_signoff": false
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "romeroted11",
+      "original_url": "https://www.ted.com/talks/brenda_romero_gaming_for_understanding?view=transcript",
+      "retrieval_url": "https://nntrn.github.io/read-tedx/transcripts/brenda_romero_gaming_for_understanding.html",
+      "resolved_url": "https://nntrn.github.io/read-tedx/transcripts/brenda_romero_gaming_for_understanding.html",
+      "path": "build\\research\\editorial-authorship-05\\romeroted11.html",
+      "sha256": "6d2d1e0b8c033fa657265c70597c0889bfb5e850a7b521708e9684b4416504a9",
+      "bytes": 15298,
+      "specific_source_review": "TEDx transcript MiddlePassage exercise, family questions, TheNewWorld and multi-piece projects read; child privacy and creator testimony remain explicit."
+    },
+    {
+      "source_id": "romerovox15",
+      "original_url": "https://shebuildsgames.dev/2015/04/30/brenda-romero/",
+      "retrieval_url": "https://shebuildsgames.dev/2015/04/30/brenda-romero/",
+      "resolved_url": "https://shebuildsgames.dev/2015/04/30/brenda-romero/",
+      "path": "build\\research\\editorial-authorship-05\\romerovox15.html",
+      "sha256": "18598d1c7a613593d440e4b09458ac500146580cb9c90a247b84defaac5339f4",
+      "bytes": 116945,
+      "specific_source_review": "Actual coffee-shop role alternatives and Train complicity intention read; hypothetical system example and intended response remain qualified."
+    },
+    {
+      "source_id": "unchartedart09",
+      "original_url": "https://mcvuk.com/development-news/the-cinematics-of-uncharted-2/",
+      "retrieval_url": "https://mcvuk.com/development-news/the-cinematics-of-uncharted-2/",
+      "resolved_url": "https://mcvuk.com/development-news/the-cinematics-of-uncharted-2/",
+      "path": "build\\research\\editorial-authorship-05\\unchartedart09.html",
+      "sha256": "137b63ad5f50019b8ccbd283fb0ed66aacab555f9fdf55fbea9a72b678481fc2",
+      "bytes": 91072,
+      "specific_source_review": "MCV production extract by Hennig/Scherr read, including auditions, simultaneous voice/movement, keyframed faces, edited hands/feet and Kurosaki coverage. Page is dated 3August2010; stable source ID is not asserted publication date."
+    },
+    {
+      "source_id": "henniggi10",
+      "original_url": "https://gameinformer.com/b/features/archive/2010/12/02/storytellers-of-the-decade:-amy-henning-interview",
+      "retrieval_url": "https://gameinformer.com/b/features/archive/2010/12/02/storytellers-of-the-decade:-amy-henning-interview",
+      "resolved_url": "https://gameinformer.com/b/features/archive/2010/12/02/storytellers-of-the-decade:-amy-henning-interview",
+      "path": "build\\research\\editorial-authorship-05\\henniggi10.html",
+      "sha256": "2bb42e929b4de3bec25514601ca2bb7d0320f1c83188ab3ac1934a875d115bb3",
+      "bytes": 108543,
+      "specific_source_review": "GameInformer2010 responsibilities, earlier team drafts, holistic revision and combined inspiration answers read."
+    },
+    {
+      "source_id": "bates97",
+      "original_url": "https://www.scribd.com/document/490738054/Designing-The-Puzzle-Bob-Bates",
+      "retrieval_url": "https://www.scribd.com/document/490738054/Designing-The-Puzzle-Bob-Bates",
+      "resolved_url": "https://www.scribd.com/document/490738054/Designing-The-Puzzle-Bob-Bates",
+      "path": "build\\research\\editorial-authorship-05\\bates97.html",
+      "sha256": "fd385572ea6c11af7b4f284de0d677926b4e4a76c7680d981c44f521d350006e",
+      "bytes": 1142650,
+      "specific_source_review": "Identified primary1997GDC paper in third-party copy read at fairness/setting and PlayerEmpathy sections; boulder boundary example confirmed, mirror availability does not establish reproduction permission."
+    },
+    {
+      "source_id": "bates98",
+      "original_url": "https://www.justadventure.com/1998/09/30/interview-with-bob-bates/",
+      "retrieval_url": "https://www.justadventure.com/1998/09/30/interview-with-bob-bates/",
+      "resolved_url": "https://www.justadventure.com/1998/09/30/interview-with-bob-bates/",
+      "path": "build\\research\\editorial-authorship-05\\bates98.html",
+      "sha256": "78e968ccf36fd3985e45df05986694dc2110d6d0e2e5c464bd92a30e0f33a604",
+      "bytes": 38520,
+      "specific_source_review": "Actual1998creator interview collaboration answer confirms parallel Saul work, separate turf and frequent contact."
+    },
+    {
+      "source_id": "batesarchive22",
+      "original_url": "https://www.museumofplay.org/app/uploads/2022/09/Finding-Aid-to-the-Robert-Bob-Bates-papers_090722.pdf",
+      "retrieval_url": "https://www.museumofplay.org/app/uploads/2022/09/Finding-Aid-to-the-Robert-Bob-Bates-papers_090722.pdf",
+      "resolved_url": "https://www.museumofplay.org/app/uploads/2022/09/Finding-Aid-to-the-Robert-Bob-Bates-papers_090722.pdf",
+      "path": "build\\research\\editorial-authorship-05\\batesarchive22.pdf",
+      "sha256": "9eb575be1a22fae4585039dcb95e38d9bf9658a58bb6663185a9d2da6a4b29a9",
+      "bytes": 263011,
+      "specific_source_review": "Actual institutional finding-aid PDF ordinal5/printed5 raster inspected: Box2 folders3/7 and Box3 folders1-4 match. Underlying archival documents were not inspected or admitted."
+    },
+    {
+      "source_id": "jensen98sno",
+      "original_url": "https://www.adventureclassicgaming.com/index.php/site/interviews/128/",
+      "retrieval_url": "https://www.adventureclassicgaming.com/index.php/site/interviews/128/",
+      "snapshot_error": "HTTP Error 406: Not Acceptable",
+      "independent_access": "Relevant primary text read through web extraction; this local request is not evidence of access or permission.",
+      "specific_source_review": "ACG-preserved SierraNewsOne1998 interview read: mystery origins, werewolf character struggle, five/nine-month writing, Germany research, FMV and3D. Local snapshot request406; web extraction succeeded."
+    },
+    {
+      "source_id": "jensenbellatti",
+      "original_url": "https://www.justadventure.com/2005/01/01/jane-jensen/",
+      "retrieval_url": "https://www.justadventure.com/2005/01/01/jane-jensen/",
+      "resolved_url": "https://www.justadventure.com/2005/01/01/jane-jensen/",
+      "path": "build\\research\\editorial-authorship-05\\jensenbellatti.html",
+      "sha256": "d974956bd85ff68638875680c51e2d78881edfbc40f9196de03676db7b731b7b",
+      "bytes": 41323,
+      "specific_source_review": "Actual page states interview lateApril1998 despite2005web date. Research scenario, dialogue/difficulty lessons and3D/FMV replies read; draft avoids confusing interview plans with launch chronology."
+    },
+    {
+      "source_id": "tanaka20",
+      "original_url": "https://eu.finalfantasy.com/topics/171",
+      "retrieval_url": "https://eu.finalfantasy.com/topics/171",
+      "resolved_url": "https://eu.finalfantasy.com/topics/171",
+      "path": "build\\research\\editorial-authorship-05\\tanaka20.html",
+      "sha256": "a8737e56f81adf6d5af15e6d0b104399ca793ad5e23461b1020b647e24453001",
+      "bytes": 39103,
+      "specific_source_review": "Official SquareEnix retrospective read: page explicitly says first published2020 despite2025republishing; AppleII familiarity, MasafumiMiyamoto, data tables and visa/equipment travel remain participant recollection."
+    },
+    {
+      "source_id": "teradasakaguchi88",
+      "original_url": "https://shmuplations.com/kenjiterada/",
+      "retrieval_url": "https://shmuplations.com/kenjiterada/",
+      "resolved_url": "https://shmuplations.com/kenjiterada/",
+      "path": "build\\research\\editorial-authorship-05\\teradasakaguchi88.html",
+      "sha256": "6da18df5af548068c03a10d8aac4aad823b8bc056fcf20ab5f781ae32b4ee8d7",
+      "bytes": 159575,
+      "specific_source_review": "Exact1988FFII subsection read, not separate2015excerpt: first-game airship/hidden game, staff gameplay systems and negotiated story scope."
+    },
+    {
+      "source_id": "mitsuji88",
+      "original_url": "https://shmuplations.com/bubblebobble/",
+      "retrieval_url": "https://shmuplations.com/bubblebobble/",
+      "resolved_url": "https://shmuplations.com/bubblebobble/",
+      "path": "build\\research\\editorial-authorship-05\\mitsuji88.html",
+      "sha256": "2f5feddd760b2ff474dd37c8ae11553535d40077ca65414d6a400512b615ed2d",
+      "bytes": 156436,
+      "specific_source_review": "Creator interview read: list and bubbles, robots/dinosaur back ridges, rainbow functions and regretted secret equipment. Audience assumptions attributed rather than universalised."
+    },
+    {
+      "source_id": "mitsuji89",
+      "original_url": "https://shmuplations.com/mtj/",
+      "retrieval_url": "https://shmuplations.com/mtj/",
+      "resolved_url": "https://shmuplations.com/mtj/",
+      "path": "build\\research\\editorial-authorship-05\\mitsuji89.html",
+      "sha256": "760b58015fe848d6d5ee16e1e1fead44378e9f733f7b151175849e48085f97f7",
+      "bytes": 158158,
+      "specific_source_review": "Creator column read: adaptive yet readable enemies, beginner course, death hints and scoring/repeated-trick criticism. No independently audited source-code claim."
+    },
+    {
+      "source_id": "takahashi09",
+      "original_url": "https://www.gamedeveloper.com/design/think-like-takahashi-noby-katamari-creativity-and-carpet",
+      "retrieval_url": "https://www.gamedeveloper.com/design/think-like-takahashi-noby-katamari-creativity-and-carpet",
+      "resolved_url": "https://www.gamedeveloper.com/design/think-like-takahashi-noby-katamari-creativity-and-carpet",
+      "path": "build\\research\\editorial-authorship-05\\takahashi09.html",
+      "sha256": "78c0486041cea4c48919b0082539e6119ce5de0c825a600d7f746769bc923009",
+      "bytes": 503929,
+      "specific_source_review": "Drawing interview read: animal/camera reaction, language, trophy requirement, restriction and actual carpet-pattern drawing. Date29May2009 confirmed."
+    },
+    {
+      "source_id": "takahashiblog09",
+      "original_url": "https://blog.playstation.com/2009/04/23/noby-noby-boy-multiplayer-update/",
+      "retrieval_url": "https://blog.playstation.com/2009/04/23/noby-noby-boy-multiplayer-update/",
+      "resolved_url": "https://blog.playstation.com/2009/04/23/noby-noby-boy-multiplayer-update/",
+      "path": "build\\research\\editorial-authorship-05\\takahashiblog09.html",
+      "sha256": "41db654ce2d5c0faa6d284e3e7aa7ecb8e39bad2e507843b5377b33487529ae6",
+      "bytes": 161816,
+      "specific_source_review": "Creator-authored23April2009post read: Player1head/Player2rear, four-player confusion, future update, interpreter and GDC note preparation."
+    },
+    {
+      "source_id": "kurvitz18",
+      "original_url": "https://www.gameanalytics.com/blog/disco-elysium-rezzed-2018-interview",
+      "retrieval_url": "https://www.gameanalytics.com/blog/disco-elysium-rezzed-2018-interview",
+      "resolved_url": "https://www.gameanalytics.com/blog/disco-elysium-rezzed-2018-interview",
+      "path": "build\\research\\editorial-authorship-05\\kurvitz18.html",
+      "sha256": "f47c2967ed3dca0894b6d48c11936cee05d98681af5e35f6f93f4e0dce14815f",
+      "bytes": 116846,
+      "specific_source_review": "Rezzed2018primary interview read: visual writing software, eight-person team, central synopsis, jokes/consequences and side-case reconnection. Page-update2025 not treated as interview date; plans remain qualified."
+    },
+    {
+      "source_id": "keenan21",
+      "original_url": "https://www.rpgfan.com/feature/dream-quests-and-desires-an-interview-with-disco-elysiums-justin-keenan/",
+      "retrieval_url": "https://www.rpgfan.com/feature/dream-quests-and-desires-an-interview-with-disco-elysiums-justin-keenan/",
+      "resolved_url": "https://www.rpgfan.com/feature/dream-quests-and-desires-an-interview-with-disco-elysiums-justin-keenan/",
+      "path": "build\\research\\editorial-authorship-05\\keenan21.html",
+      "sha256": "d80c9e9d9d967348590674e0487e3f6c4bb3d64e18e29975d893cfbb530f6f2e",
+      "bytes": 200662,
+      "specific_source_review": "RPGFan2021interview read: Brown voice, Rubio animation, political criticism and previously cut quests restored for FinalCut. No claim that this describes original2019content."
+    }
+  ],
+  "production_gates": [
+    "Four distinct proposals require explicit admission and suitable contextual imagery.",
+    "All32 selected_asset fields remain null. No image, licence, sensitive-subject presentation or native-layout signoff is supplied by this text review.",
+    "Each attachment must retain its own dated game/edition scope and all original parent body/headings/locales.",
+    "Participant accounts remain situated testimony, not independently proven immigration records, audience outcomes or source-code audits."
+  ],
+  "scope_limits": [
+    "All32 complete paragraphs and headings were read against the relevant specifically assigned source passages; all4 proposed existing parent bodies read in full.",
+    "This is an independent agent review, not human editorial signoff or global verification of every historical statement in the collection.",
+    "No master, original published Playhub source, locale, assembler, package or console writes. Bibliographic snapshots are research evidence, not cleared exhibit assets."
+  ],
+  "before_metadata_copyedit_batch_sha256": "e3e9a59180fcad64b476c6b2a7e6a83cbacd02edde9e548a5cb114b9266936ed",
+  "root_metadata_copyedit": {
+    "body_or_heading_changes": 0,
+    "source_or_citation_changes": 0,
+    "summary_ids": [
+      "feature-jane-jensen-mystery",
+      "feature-nasir-gebelli-and-teams",
+      "feature-fukio-mitsuji-families",
+      "feature-keita-takahashi-play",
+      "feature-disco-elysium-authorship"
+    ],
+    "reason": "Tighten summaries while independently charging hyphenated/apostrophe forms under both counters.",
+    "prior_frozen_source": "build/research/editorial-summary-copyedit/editorial-authorship-design-05.json"
+  },
+  "source_budget_allocations": [
+    {
+      "feature_id": "feature-brenda-romero-systems",
+      "publication": "romeroted11",
+      "charged_words": 199
+    },
+    {
+      "feature_id": "feature-brenda-romero-systems",
+      "publication": "romerovox15",
+      "charged_words": 199
+    },
+    {
+      "feature_id": "feature-amy-hennig-storycraft",
+      "publication": "unchartedart09",
+      "charged_words": 197
+    },
+    {
+      "feature_id": "feature-amy-hennig-storycraft",
+      "publication": "henniggi10",
+      "charged_words": 197
+    },
+    {
+      "feature_id": "feature-bob-bates-adventure",
+      "publication": "bates97",
+      "charged_words": 200
+    },
+    {
+      "feature_id": "feature-bob-bates-adventure",
+      "publication": "bates98",
+      "charged_words": 114
+    },
+    {
+      "feature_id": "feature-bob-bates-adventure",
+      "publication": "batesarchive22",
+      "charged_words": 115
+    },
+    {
+      "feature_id": "feature-jane-jensen-mystery",
+      "publication": "jensen98sno",
+      "charged_words": 195
+    },
+    {
+      "feature_id": "feature-jane-jensen-mystery",
+      "publication": "jensenbellatti",
+      "charged_words": 194
+    },
+    {
+      "feature_id": "feature-nasir-gebelli-and-teams",
+      "publication": "tanaka20",
+      "charged_words": 199
+    },
+    {
+      "feature_id": "feature-nasir-gebelli-and-teams",
+      "publication": "teradasakaguchi88",
+      "charged_words": 196
+    },
+    {
+      "feature_id": "feature-fukio-mitsuji-families",
+      "publication": "mitsuji88",
+      "charged_words": 195
+    },
+    {
+      "feature_id": "feature-fukio-mitsuji-families",
+      "publication": "mitsuji89",
+      "charged_words": 194
+    },
+    {
+      "feature_id": "feature-keita-takahashi-play",
+      "publication": "takahashi09",
+      "charged_words": 194
+    },
+    {
+      "feature_id": "feature-keita-takahashi-play",
+      "publication": "takahashiblog09",
+      "charged_words": 193
+    },
+    {
+      "feature_id": "feature-disco-elysium-authorship",
+      "publication": "kurvitz18",
+      "charged_words": 196
+    },
+    {
+      "feature_id": "feature-disco-elysium-authorship",
+      "publication": "keenan21",
+      "charged_words": 194
+    }
+  ]
+}

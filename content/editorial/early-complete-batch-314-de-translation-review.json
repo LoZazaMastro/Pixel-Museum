@@ -1,0 +1,107 @@
+{
+  "status": "PASS",
+  "locale": "de",
+  "entries": [
+    {
+      "entry_id": "animal-crossing",
+      "source_fields_sha256": "4acdb4da1f3f392926c4144f00ac247324169221dbb69e38f59d1177791c1d8f",
+      "translation_sha256": "6454886316dcc4158385a2819335d33ab64225608087d61618fdf179bc1462b9",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch314/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "1bf9d034a3a3b304e353f7955a4eb4fadd50a2726be86aca5e665631fd41a992"
+    },
+    {
+      "entry_id": "wikipedia-57652736",
+      "source_fields_sha256": "1abca37d84c66fcfd8b5fd67efe4b4339b975f3aa08f1daf86aa90d00d0d28c1",
+      "translation_sha256": "d75c42113a11bd844cd579e66187d08374aca9eb64691e42a79e47ef1c354d7e",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch314/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "1bf9d034a3a3b304e353f7955a4eb4fadd50a2726be86aca5e665631fd41a992"
+    },
+    {
+      "entry_id": "workbook-03-23-half-life-alyx",
+      "source_fields_sha256": "2f349cbfdcd8206c1eafcff9077bd8e630bba7a6cd1f2c50522047e855d518f1",
+      "translation_sha256": "a89826eb562756458816dcb489bacf3b22bb846df3acbbcb6dfe392d05f5ee80",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch314/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "1bf9d034a3a3b304e353f7955a4eb4fadd50a2726be86aca5e665631fd41a992"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "package_audit",
+    "actual_receipt": "build/research/catalog-2020-chronological/root-march-three-private/independent-package-audit-approval.json",
+    "actual_receipt_sha256": "3b22c2ce7cd1f63e32051d5f748314d77a9e96097155df4554454d11242dfb90",
+    "actual_review_scope": {
+      "status": "APPROVED_INDEPENDENT_PEER",
+      "reviewer": "package_audit",
+      "authors": [
+        "root English/media/music",
+        "category_audit four-language translations"
+      ],
+      "reviewed_at": "2026-10-27T03:44:13.612296",
+      "index": "build/research/catalog-2020-chronological/root-march-three-private/three-private-index.json",
+      "index_sha256": "5f0c66bbd55624cb748537a9204aae0c130ca9ec8edfd4e7a8682537df07f2a1",
+      "owners": [
+        {
+          "entry_id": "animal-crossing",
+          "slug": "animal",
+          "source": "build/research/catalog-2020-chronological/root-march-three-private/animal-source-private-candidate.json",
+          "source_sha256": "a52a276f6271ec8e1d704a22362616437e2c2a7568e85e93a52312726a49973a",
+          "target": "build/research/catalog-2020-chronological/root-march-three-private/animal-four-language-private-candidate.json",
+          "target_sha256": "19fab6d7a647b24d70816a435101e99529d9b932e668e6e44df88c6642e5ecb9",
+          "english_cards": 4,
+          "localized_cards": 16,
+          "images": 8,
+          "tracks": 3,
+          "contact": "build/research/catalog-2020-chronological/root-march-three-private/animal-final-contact.jpg",
+          "contact_sha256": "cd00ced41d648723e8a26760f8d7dafad001bf7bc74d674206c696c4cb5c43da"
+        },
+        {
+          "entry_id": "wikipedia-57652736",
+          "slug": "doom",
+          "source": "build/research/catalog-2020-chronological/root-march-three-private/doom-source-private-candidate.json",
+          "source_sha256": "e9b175adbe00f1cb065266516df97459a91cc19ea524f97256195d8f419fa782",
+          "target": "build/research/catalog-2020-chronological/root-march-three-private/doom-four-language-private-candidate.json",
+          "target_sha256": "5987eb7d07b250c67f36ec141c3804001caf6741e167305ff10626c136c379f5",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 5,
+          "tracks": 3,
+          "contact": "build/research/catalog-2020-chronological/root-march-three-private/doom-final-contact.jpg",
+          "contact_sha256": "eda6fe4ec716a435f045005749ed50bb10cf23da94c79c6f07a1df58489f66a7"
+        },
+        {
+          "entry_id": "workbook-03-23-half-life-alyx",
+          "slug": "alyx",
+          "source": "build/research/catalog-2020-chronological/root-march-three-private/alyx-source-private-candidate.json",
+          "source_sha256": "c368ddf6626ca1b02e51b917837fd4f1c2d87e308761a980de2ac930341e97b2",
+          "target": "build/research/catalog-2020-chronological/root-march-three-private/alyx-four-language-private-candidate.json",
+          "target_sha256": "ccdd78694c60ff89f99363f5e06e23cc203318da2e431e07c120ac51b8b697f5",
+          "english_cards": 4,
+          "localized_cards": 16,
+          "images": 7,
+          "tracks": 2,
+          "contact": "build/research/catalog-2020-chronological/root-march-three-private/alyx-final-contact.jpg",
+          "contact_sha256": "e457cd11ac9fce0b8306abdd418e9f3c03f43885b92dd98d10b8da4c868168eb"
+        }
+      ],
+      "scope": {
+        "english_paragraphs_read": 11,
+        "localized_paragraphs_read": 44,
+        "contacts_personally_viewed": 3,
+        "images_in_contacts": 20,
+        "finite_errata": "Read prepare.py. Toy Day correctly qualified as November 2020 update; DOOM resource recovery three actions correctly distinguished, Gordon base-game score qualified, numbered-series ambiguity removed. Alyx original English retained.",
+        "media": "All covers unbranded; actual original-game illustrations cover chapters. Animal winter photograph explicitly contextual rather than false Toy Day depiction. Unrelated DOOM pinball advertisement absent. Surviving Phobos trailer medal poster is genuine PlayStation Europe gameplay promotion, 409 seconds, receipt 6eMhs6VFG0o. No generated artwork.",
+        "music": "Read all four new public AAC metadata receipts: two Nintendo in-game cues and two explicitly archival DOOM Eternal May 2020 score publications. False official-upload claims absent. Original Alyx recordings not redundantly re-acquired. Animal album track table corroborates Yumi Takahashi for Nook Cranny Closing Time and Yasuaki Iwata for Opening and 3AM clear; primary Nippon Columbia publication lists original cue titles. No audio files downloaded or PS5 playback asserted.",
+        "primary_pages_read": [
+          "https://columbia.jp/prod-info/COCX-41441-7/",
+          "https://slayersclub.bethesda.net/en-AU/news/doom-eternal-demon-slaying-101",
+          "https://en-americas-support.nintendo.com/app/answers/detail/a_id/49112",
+          "https://www.half-life.com/en/alyx/"
+        ],
+        "credit_transcription_checked": "https://nookipedia.com/wiki/Atsumare_D%C5%8Dbutsu_no_Mori:_Original_Soundtrack",
+        "hashes": "All nine source/target/contact digests match actual bytes."
+      },
+      "findings": [],
+      "production_writes": false
+    }
+  }
+}

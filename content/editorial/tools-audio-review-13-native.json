@@ -1,0 +1,272 @@
+{
+  "schema_version": 1,
+  "reviewed_utc": "2026-10-21T01:26:03.737377+00:00",
+  "reviewer": "native_video_independent_review",
+  "batch_path": "content/expansion/editorial-tools-audio-13.json",
+  "batch_sha256": "5a191c184608126627785681ac66ad150869fb4766b90fa69328eaeea6f84180",
+  "comparison_catalog_sha256": "4d8e7ed7089580a70ef19e784b72b2a31d9f91d5d0122a072b726faeda18c6c5",
+  "scope": "All32 cards and specific primary passages independently read. Four complete proposed parents read; no assembly/master/source edits, media clearance, layout or publishing signoff.",
+  "entry_count": 8,
+  "card_count": 32,
+  "source_count": 16,
+  "source_snapshots": {
+    "raine18": {
+      "path": "build/research/editorial-tools-13/raine18.html",
+      "sha256": "99521c33f28ef67bdeb2e037d69e3ebfe4a9eb2c2819f7b470b1217f50c680b8"
+    },
+    "raine20": {
+      "path": "build/research/editorial-tools-13/raine20.html",
+      "sha256": "b2f91661e3428b122367905cb5996e1c738259ce9c2bf9475a1e572d530d26f6"
+    },
+    "miller17": {
+      "path": "build/research/editorial-tools-13/miller17.html",
+      "sha256": "a15f2d899045c8e18861d9ad5a7b863af1000c876d0da6991dde7c8b99817fcc"
+    },
+    "zzt91": {
+      "path": "build/research/editorial-tools-13/zzt91.zip",
+      "sha256": "d439301a901da1e61529a0fbddf80c2c72e9730369e188483078571fa6ec65d1"
+    },
+    "deu94": {
+      "path": "build/research/editorial-tools-13/deu94.zip",
+      "sha256": "37a73db7642ae26547e37a0a111b0f260e45d8e0a66e39b3a11f1996db5da899"
+    },
+    "halderman98": {
+      "path": "build/research/editorial-tools-13/halderman98.html",
+      "sha256": "25bf64f8391ad41ab863a4a3b97b06f2b8a85bc68736d67b48520ba7e28a6b3b"
+    },
+    "yannes96": {
+      "path": "build/research/editorial-tools-13/yannes96.html",
+      "sha256": "fac3987eadd35081b87c92ee2ac202895fe63a36a8aacb0e5b3dee37b3849ddd"
+    },
+    "c64sound": {
+      "path": "build/research/editorial-tools-13/c64sound.pdf",
+      "sha256": "2443142849c62022d1b6c67dc87fdf71997541810f7139a477993fe617d7693d"
+    },
+    "imuse94": {
+      "path": "build/research/editorial-tools-13/imuse94.pdf",
+      "sha256": "a71de745da9b475c49b0a6358e5ac6652e1db3ff76b1576bf13649f54553db63"
+    },
+    "mcconnell11": {
+      "path": "build/research/editorial-tools-13/mcconnell11.html",
+      "sha256": "431af961e56bcff52957d525518e2d33c2479fad060c42b1448a15f4200c7c3f"
+    },
+    "burgess13": {
+      "path": "build/research/editorial-tools-13/burgess13.html",
+      "sha256": "aba1b9fbddb6bbe4bbcd038adbfef460ae33a448fa9a06868da951d5d0b2852f"
+    },
+    "klafke": {
+      "path": "build/research/editorial-tools-13/web-reader-recoveries.json",
+      "sha256": "2911e2ec21e4758975a833448b77784bc41304b86195a1521ff3d90678ad0c45"
+    },
+    "epic14": {
+      "path": "build/research/editorial-tools-13/web-reader-recoveries.json",
+      "sha256": "2911e2ec21e4758975a833448b77784bc41304b86195a1521ff3d90678ad0c45"
+    },
+    "epic15": {
+      "path": "build/research/editorial-tools-13/web-reader-recoveries.json",
+      "sha256": "2911e2ec21e4758975a833448b77784bc41304b86195a1521ff3d90678ad0c45"
+    },
+    "bitsy21": {
+      "path": "build/research/editorial-tools-13/bitsy21.html",
+      "sha256": "08c2401a946c0741211271ad60989d7bc5c6054b96b8966c99e27ff1688e0d0e"
+    },
+    "pico26": {
+      "path": "build/research/editorial-tools-13/pico26.html",
+      "sha256": "058854130b95682c07644bc859cc484194cfe0fb078d186793273d485ac69d7c"
+    }
+  },
+  "budget": {
+    "policy": "max whitespace / Unicode lexical / strict Unicode; full title/summary and assigned headings/body, publication chapters/mirrors grouped",
+    "groups": 16,
+    "minimum": 189,
+    "maximum": 195,
+    "pass": true
+  },
+  "additional_overlap_reading": [
+    "Celeste assistance all4cards: movement/menu/code differs from Raine music.",
+    "Romero levels all4cards: SIGIL/DoomBuilder2 differs from DEU/TeamTNT.",
+    "Hubbard all4cards and loading culture all4cards: replay-code/loader practice differs from instrument design and learner guide.",
+    "Skyrim seven original sections: visual coherence/ruins/modding differs from kit naming/pivots/handoffs; Zest kept separate."
+  ],
+  "entries": [
+    {
+      "id": "feature-lena-raine-movement",
+      "body_sha256": "e01ab7d84abffa3afc192db587f18667af35a27d18679c14c654ecfbe76aaf4e",
+      "headings_sha256": "44d85fb130d492a1648629c6767a9695aa0cb098d6ba6d090559f4c55cc15c4a",
+      "cards_read": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "specific_source_passages_read": "Raine2018: second-half2016 involvement, Kirby first attempt, methodical pace, piano and Kevin/PowerUp dynamic fades/layers. Minecraft2020: portal transformation, bowed/plucked/effected piano, ambience, more melody requested by Mojang and Aberg collective audio identity.",
+      "factual_result": "pass",
+      "blocking_findings": [],
+      "placement": {
+        "parent_id": "celeste",
+        "parent_body_sha256": "043b33a3c4ea18e842901eac441536a6b0db1ab3f97807b490839ed02580fec5",
+        "parent_read_in_full": true,
+        "recommendation": "additive_attachment_preserve_body",
+        "net_new_destination_claim": false
+      },
+      "media": "not_cleared_unselected_briefs"
+    },
+    {
+      "id": "feature-shareware-distribution",
+      "body_sha256": "11037a21d044ad0f60b6a87c9c5f2365ceae1ac00d1998db38e5f187d82e5c0b",
+      "headings_sha256": "f9f78f1a0a5122ecbdf1122c648c6830609a1bba761c1e8d33d6c8f8977ed20d",
+      "cards_read": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "specific_source_passages_read": "Miller2017: rejected games, first-episode model, funding after Romero/Carmack scrolling demo. Original ZZT3.0 README/ORDER: PotomacComputerSystems1991, editor/ZZT-OOP, copies/BBS, cheque/money-order/disk sizes, registered Town plus Caves and separate worlds. Actual original files read without execution.",
+      "factual_result": "pass",
+      "blocking_findings": [],
+      "placement": {
+        "parent_id": null,
+        "parent_body_sha256": null,
+        "parent_read_in_full": false,
+        "recommendation": "hold_distinct_until_media_layout",
+        "net_new_destination_claim": false
+      },
+      "media": "not_cleared_unselected_briefs"
+    },
+    {
+      "id": "feature-doom-mod-authorship",
+      "body_sha256": "96ff19e0f9e6852b97f8079f0b12a0876d1492d76213165e8ae2aabb162f3fcd",
+      "headings_sha256": "da730aae9043404a33a437b311c0de0b2cc7c3e63812042d229931328ca38e25",
+      "cards_read": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "specific_source_passages_read": "Original DEU5.21 README: Wyber initial editor, Quinet interface/geometry/nodes, MattFell specs, Bareman manual/tutorial, numbered updates and reproducible bugs. Halderman1998: late94/early95 uncertainty, Alpha/Beta split, October24,1995 offer/IRC and months of revisions.",
+      "factual_result": "pass",
+      "blocking_findings": [],
+      "placement": {
+        "parent_id": "doom",
+        "parent_body_sha256": "9b6c6d16f329f0618ea399dd5e2815d64030d5de702e91c6e5ed0edc7be2c419",
+        "parent_read_in_full": true,
+        "recommendation": "additive_attachment_preserve_body",
+        "net_new_destination_claim": false
+      },
+      "media": "not_cleared_unselected_briefs"
+    },
+    {
+      "id": "feature-c64-sid-instrument",
+      "body_sha256": "5e8f85a6eb3ef059b89f547c2ece5246f9668decdd7a4124ef393f38145ffaeb",
+      "headings_sha256": "88b0f94cde3e1c055645b51410c10a754f3320bbb7bc8ec61fe2ecfe40df3584",
+      "cards_read": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "specific_source_passages_read": "Yannes1996: nonmultiplexed oscillators/time/chip-area, omitted equal-temperament table, Pro1 envelope times by ear. C64guide intro/Example1/line explanation and Example3 sawtooth→triangle comparison; original raster PDFp204/printed185 inspected. Copyright1982 vs printing1984 retained.",
+      "factual_result": "pass",
+      "blocking_findings": [],
+      "placement": {
+        "parent_id": "commodore-64",
+        "parent_body_sha256": "128a7c430c7dd97e296a3ee282cc046c04ae7391279940f119e7f7b99cc93535",
+        "parent_read_in_full": true,
+        "recommendation": "additive_attachment_preserve_body",
+        "net_new_destination_claim": false
+      },
+      "media": "not_cleared_unselected_briefs"
+    },
+    {
+      "id": "feature-game-audio-adaptive",
+      "body_sha256": "00bcf85b6e76d592f7c7e559a385c93241fbb833d839a62c86d3aadb71ce327b",
+      "headings_sha256": "53eb0200a2bcc3d42611cd3f3d579625e480de9e578ff7e68fb833354e1d2729",
+      "cards_read": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "specific_source_passages_read": "Land/McConnell patent identity/dates and PDFpp21–23: conditional decision points, prepared fight/victory/defeat transitions and instrument enabling. Raster PDFp23 inspected. McConnell2011: geographic collaboration, shared Land themes, dispute to project lead and fanciful listener/game loop.",
+      "factual_result": "pass",
+      "blocking_findings": [],
+      "placement": {
+        "parent_id": null,
+        "parent_body_sha256": null,
+        "parent_read_in_full": false,
+        "recommendation": "hold_distinct_until_media_layout",
+        "net_new_destination_claim": false
+      },
+      "media": "not_cleared_unselected_briefs"
+    },
+    {
+      "id": "feature-3d-art-labour",
+      "body_sha256": "96b2582c06f623015a4c79262fed8c81d4ae9eca6a1a4aab4fe9ab9e227fe683",
+      "headings_sha256": "63291bbc10df3707951229442495e3e7f750f9716655ea3ebdbd873b7117ae50",
+      "cards_read": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "specific_source_passages_read": "Burgess/Purkeypile2013: functional-but-ugly kits, art/design dependency, Fallout3 naming example and pivot propagation. Klafke original recovered text: personal Zest, early export/repetition, three main categories plus extra textures, trims/vertex colour and individual pivot preference.",
+      "factual_result": "pass",
+      "blocking_findings": [],
+      "placement": {
+        "parent_id": "workbook-11-11-the-elder-scrolls-v-skyrim",
+        "parent_body_sha256": "86924aee38e2ecdb71eb5462a46cd653c8d5d0aa9811324dd3b54c605baa89ff",
+        "parent_read_in_full": true,
+        "recommendation": "additive_attachment_preserve_body",
+        "net_new_destination_claim": false
+      },
+      "media": "not_cleared_unselected_briefs"
+    },
+    {
+      "id": "feature-engine-licensing",
+      "body_sha256": "347af0dd9245756ab95e0fb3992899adcd88ff71e48fc052ad56a782e5df3821",
+      "headings_sha256": "e03187b8120c401e314c5c774ce9392c75dfd0f8cab7cc240fa85badc1910c8d",
+      "cards_read": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "specific_source_passages_read": "Epic2014/2015 complete original web-reader recoveries: subscription/source, Blueprint/material/animation/cinematic tools and forums; then subscription removal with retained royalty, templates/marketplace/community. Historical terms, no open-source/GPL or current-pricing claim.",
+      "factual_result": "pass",
+      "blocking_findings": [],
+      "placement": {
+        "parent_id": null,
+        "parent_body_sha256": null,
+        "parent_read_in_full": false,
+        "recommendation": "hold_distinct_until_media_layout",
+        "net_new_destination_claim": false
+      },
+      "media": "not_cleared_unselected_briefs"
+    },
+    {
+      "id": "feature-indie-tools-web",
+      "body_sha256": "de80030328cfb8b026db76231f96a0b3ba90e72a8b3a984d64209460c6915ff5",
+      "headings_sha256": "25cc2237a35955df361f2c659a44c19c838b84ef215c3255ee55d7cc0c87385a",
+      "cards_read": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "specific_source_passages_read": "LeDoux2021 complete post: almost50 forms, Discord, workflows/hacks/tutorials, compatibility/complexity, pause/smallerbeta/optionalextension proposals and dialog discoverability. PICO8 official overview+FAQ: bounded screen/palette/audio, integrated editors, PNG cartridges reopenable, SPLORE. Current features not assigned to launch.",
+      "factual_result": "pass",
+      "blocking_findings": [],
+      "placement": {
+        "parent_id": null,
+        "parent_body_sha256": null,
+        "parent_read_in_full": false,
+        "recommendation": "hold_distinct_until_media_layout",
+        "net_new_destination_claim": false
+      },
+      "media": "not_cleared_unselected_briefs"
+    }
+  ],
+  "blocking_findings": [],
+  "copyedits_required": [],
+  "result": "content_pass_four_attachments_four_distinct_media_holds"
+}

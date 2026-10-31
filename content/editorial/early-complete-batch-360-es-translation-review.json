@@ -1,0 +1,108 @@
+{
+  "status": "PASS",
+  "locale": "es",
+  "entries": [
+    {
+      "entry_id": "wikipedia-71659721",
+      "source_fields_sha256": "5ce9c25f00f7eb89ae13851bb312720d24bf2c31c9b96def8f2f5d8aa1564e0d",
+      "translation_sha256": "4c2ecf6b95dce89645f2afee68c7d659a30a93d5bb9305bbbb5a9c28db1aada9",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch360/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "449328e6ec78f9786ecccaf79b7cb3692a653abf28df76caef39b850ddb3dcfb"
+    },
+    {
+      "entry_id": "wikipedia-73886145",
+      "source_fields_sha256": "7240ecf31d8a668118dcb71d0c39c52c10d78dfa36ecf046043f23b9cbc301c1",
+      "translation_sha256": "1334e884cefe64eb20d8bffb1028cd50fa2ead7385d1ba9ac0e3c65e5c20ba19",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch360/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "449328e6ec78f9786ecccaf79b7cb3692a653abf28df76caef39b850ddb3dcfb"
+    },
+    {
+      "entry_id": "wikipedia-73854166",
+      "source_fields_sha256": "0c18c0433fe3958ffe0395da112014b3eb71baecfaa2d58155adcb36113fee28",
+      "translation_sha256": "bb564830ad5de55dbca252e5907b6f3ac061793e16a839368c6a20755a4cc00f",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch360/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "449328e6ec78f9786ecccaf79b7cb3692a653abf28df76caef39b850ddb3dcfb"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "category_audit",
+    "actual_receipt": "build/research/catalog-2023-chronological/root-october-three-private/independent-category-audit-approval.json",
+    "actual_receipt_sha256": "d5488d97d2217e5098586690751cb87bf3f48ff36582cb0f46577170a02e97f0",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "category_audit",
+      "index": "build/research/catalog-2023-chronological/root-october-three-private/three-private-index.json",
+      "index_sha256": "371350a379d4c5483f45e460598121b8d0ad76cc26d189bf770a6f32be451e7b",
+      "scope": "Personally read all nine English and all 36 localized paragraphs plus all five fields. Personally viewed all 14 images in three final contact sheets. Read seven new public AAC music metadata receipts covering eight selected UI tracks and the 95-second official Xbox launch-trailer receipt. Verified Mirage three English bodies exactly preserved and the old cue changed only by UI title plus retained original publication title. No audio download, listening test or PS5 playback test claimed.",
+      "primary_sources_actually_read": [
+        {
+          "url": "https://news.xbox.com/en-us/2026/09/22/continuing-our-reset/",
+          "finding": "Real primary September 22, 2026 statement explicitly merges Playground and Turn 10 as one studio; this subsequent event is correctly retained and dated."
+        },
+        {
+          "url": "https://necmusic.edu/about/news/assassins-creed-mirage-score-orchestrated-cma-faculty-akram-haddad/",
+          "finding": "October 6, 2023 firsthand institutional account distinguishes Angelides composition from Haddad orchestration and conducting; confirms October 5 launch."
+        },
+        {
+          "url": "https://www.lordsofthefallen.com/lords-of-the-fallen-2023/lords-of-the-fallen-unleashes-the-darkness-on-friday-13th-october-2023/",
+          "finding": "Original publisher confirms October 13, 2023 launch and Velasco/Haugen score, distinct from the 2014 game."
+        },
+        {
+          "url": "https://store.steampowered.com/app/2387900/",
+          "finding": "Publisher original soundtrack listing confirms the three named opening cues, collective composers and Budapest performers; Steam release date is distinguished from the October 11 album metadata."
+        },
+        {
+          "url": "https://www.qobuz.com/us-en/album/forza-motorsport-original-soundtrack-kaveh-cohen-michael-nielsen/axkthqikw7gyc",
+          "finding": "Original album publication and individual credit listing checked against the three independent archives, which are correctly not described as official channels."
+        }
+      ],
+      "findings": [],
+      "owners": [
+        {
+          "entry_id": "wikipedia-71659721",
+          "slug": "mirage",
+          "source": "build/research/catalog-2023-chronological/root-october-three-private/mirage-source-private-candidate.json",
+          "source_sha256": "558d23c2f0642f03bafb52710f69a02c5a1755a7cfaeba51f1ad77b60080d14e",
+          "target": "build/research/catalog-2023-chronological/root-october-three-private/mirage-four-language-private-candidate.json",
+          "target_sha256": "b1dd7a2b46d695421c62ab75ca6cbe58774dfbb93982db0312aa9c7ae67a44af",
+          "contact": "build/research/catalog-2023-chronological/root-october-three-private/mirage-final-contact.jpg",
+          "contact_sha256": "fccf9d04bf25a34014949aa30ab358fd071f7dc56157bd164a36a23ece41b85c",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 6,
+          "tracks": 3
+        },
+        {
+          "entry_id": "wikipedia-73886145",
+          "slug": "forza",
+          "source": "build/research/catalog-2023-chronological/root-october-three-private/forza-source-private-candidate.json",
+          "source_sha256": "7c1c9cbf761482c3420109f43f71fb88e0c5af1d38cae906bb1e46a74f57e4d3",
+          "target": "build/research/catalog-2023-chronological/root-october-three-private/forza-four-language-private-candidate.json",
+          "target_sha256": "d2ac4cb20457e43568c16b2aa9fcb305e03b2dcb04fbf3288a2660ec322a7fa6",
+          "contact": "build/research/catalog-2023-chronological/root-october-three-private/forza-final-contact.jpg",
+          "contact_sha256": "e7991116a436f50698a9aa964635581175b3db971d00cd8081e3ea51617cec20",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 4,
+          "tracks": 3
+        },
+        {
+          "entry_id": "wikipedia-73854166",
+          "slug": "lords",
+          "source": "build/research/catalog-2023-chronological/root-october-three-private/lords-source-private-candidate.json",
+          "source_sha256": "cc202df3c96374ff2c30e35e2e3872827670ed5a1b7c7c9375aaec0a3c3f423a",
+          "target": "build/research/catalog-2023-chronological/root-october-three-private/lords-four-language-private-candidate.json",
+          "target_sha256": "fe6eeda494c5cb2f6898098ec6dbc18bdeceb01296a2e4d9b33408652cf670a8",
+          "contact": "build/research/catalog-2023-chronological/root-october-three-private/lords-final-contact.jpg",
+          "contact_sha256": "518f51bc0c61492d967a0142ed4d2ace09aaab2d03aeb5b098debc956a82f9e0",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 4,
+          "tracks": 3
+        }
+      ],
+      "production_writes": false
+    }
+  }
+}

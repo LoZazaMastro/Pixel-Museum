@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "reviewed": "2026-10-21",
+  "review_type": "independent_heading_to_paragraph_reading_flow_only",
+  "batch_file": "content/expansion/reference-heading-additions-03.json",
+  "before_batch_sha256": "5da941cde112e5fa63719b6b6ec734fd99c41c51dfeca9b9a6306bd8ec963ad0",
+  "reviewed_batch_sha256": "c1bf9f28e7b57d52ccb41831f68cf72706acb2b2d958c3bc503b56f742ecd0c4",
+  "catalog_sha256_snapshot": "4c938139b57935a1ed873733142120cf6f4df37d6fee1da1b83aa4e550f54669",
+  "entries": 21,
+  "paragraphs_and_headings": 70,
+  "all_bound_paragraph_hashes_match": true,
+  "complete_paragraphs_read": true,
+  "corrections": [
+    {
+      "entry_id": "wikipedia-52924170",
+      "index": 0,
+      "before": "A first-person anthology reaches new platforms",
+      "after": "A first-person story reaches new platforms"
+    },
+    {
+      "entry_id": "wikipedia-65260678",
+      "index": 0,
+      "before": "A small social-deduction game across platforms",
+      "after": "A social-deduction game across platforms"
+    },
+    {
+      "entry_id": "wikipedia-65333536",
+      "index": 0,
+      "before": "Kratos and Atreus face Ragnar?k",
+      "after": "Kratos and Atreus face Ragnarok"
+    },
+    {
+      "entry_id": "wikipedia-76141126",
+      "index": 1,
+      "before": "A side project shaped by two card games",
+      "after": "A side project shaped by two influences",
+      "reason": "The paragraph distinguishes the card game big two from the roguelike video game Luck Be a Landlord. Heading avoids incorrectly calling both card games.",
+      "approved_by_root": "2026-10-21"
+    }
+  ],
+  "body_changes": 0,
+  "status": "heading_alignment_passed",
+  "historical_factual_signoff": false,
+  "separate_source_verification_flags": [
+    {
+      "entry_id": "wikipedia-38438490",
+      "status": "root_has_live_primary_receipt",
+      "receipt": "content/editorial/reference-current-check-witcher3.json",
+      "detail": "Recent remaster/third-expansion statements flagged for verification; root supplied specific live CDPR verification receipt. This heading-only review neither contradicts nor independently repeats that factual check."
+    },
+    {
+      "entry_id": "wikipedia-43011121",
+      "status": "root_investigating",
+      "detail": "Specific2026 sequel/spinoff announcements require current publisher evidence; no falsity inferred from older model knowledge."
+    },
+    {
+      "entry_id": "wikipedia-65260678",
+      "status": "verification_flag_not_factual_rejection",
+      "detail": "Specific2026 TV/spinoff assertions require contemporary publisher evidence before whole-history signoff. Heading avoids adding unsupported production-size claim."
+    }
+  ],
+  "scope": "All21 complete current English bodies and70 paragraph/heading pairs read. Only3 misleading/corrupted headings corrected; no source prose, date, image, attribution or locale rewritten.",
+  "subsequent_heading_check_note": "Only Balatro index1 changed in the approved follow-up. Original body hashes and reading-flow review scope remain unchanged."
+}

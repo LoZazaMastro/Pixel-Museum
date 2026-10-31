@@ -1,0 +1,76 @@
+{
+  "status": "PASS",
+  "locale": "it",
+  "entries": [
+    {
+      "entry_id": "wikipedia-54294075",
+      "source_fields_sha256": "f9018fd09ad9fd9690119af291946471b965197404b7daf87f897c8045b8e47b",
+      "translation_sha256": "a5b0a730fd29cdaeae5918c5c29a9f2583ad21a8656fb836ccb75c61b06ca413",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch384/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "11e2f9c0e77efe25707c02d508de05c084ac43fb9cec83f6b09abb844128cfdf"
+    },
+    {
+      "entry_id": "the-game-awards-2025",
+      "source_fields_sha256": "ff69afc6aad2e29af24c981620e0e859760be485b40ac94503375616d474dd3a",
+      "translation_sha256": "3970a0cd03bdfc76913dc4c0044f08a4819d635e3e31d2ee4240ea25f9d0fb93",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch384/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "11e2f9c0e77efe25707c02d508de05c084ac43fb9cec83f6b09abb844128cfdf"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "category_audit",
+    "actual_receipt": "build/research/catalog-2025-chronological/root-final-two-private/independent-category-audit-approval.json",
+    "actual_receipt_sha256": "f0ec7a19f35301aed28ef6904f3382af938acfc33496b0d9e61cf8256ca1c647",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "category_audit",
+      "index": "build/research/catalog-2025-chronological/root-final-two-private/two-private-index.json",
+      "index_sha256": "af0232eabf184ae4b12a29d1fd518663a000eff158cb35664448432c1f20d03d",
+      "owners": [
+        {
+          "entry_id": "wikipedia-54294075"
+        },
+        {
+          "entry_id": "the-game-awards-2025"
+        }
+      ],
+      "scope": {
+        "new_english_paragraphs_read": 4,
+        "new_localized_paragraphs_read": 16,
+        "new_images_personally_viewed": 6,
+        "mechanically_reused_tga_english_paragraphs": 14,
+        "mechanically_reused_tga_localized_paragraphs": 56,
+        "mechanically_reused_tga_images": 14,
+        "existing_music_objects_exact": 47
+      },
+      "findings": [],
+      "review": [
+        "All four Metroid English paragraphs and sixteen complete localized paragraphs with summaries/headings read. The sole English body amendment replaces unsupported exact June2026 retirement timing with the documented Nintendo Dream interview statement, aligned in all four locales. Remaining text preserved.",
+        "Personally viewed all six final Metroid images: authentic clean artwork, four Nintendo publisher game images and preserved genuine Direct preview. First-person combat attached to development-history paragraph is described as the completed game, not as a2017prototype. No back boxes.",
+        "Read Nintendo official original Switch page confirming December4,2025 release, Viewros, psychic powers, Vi-O-La, Sylux and separate Switch2 upgrade/mouse controls. Read firsthand Nintendo Dream staff interview in its preserved Shinesparkers English translation, confirming Tanabe?s statement that Beyond was his final Nintendo-produced title.",
+        "All47existing complete soundtrack objects are exactly equal to the immutable before snapshot. No redundant stream checks or audio downloads.",
+        "TGA is a mechanical exact reuse of the admitted2024owner. All five English fields, images, videos, sources and all56locale paragraphs/complete locale objects are equal to the pinned canonical2024source/target. Canonical source, target and independent-category approval SHA all match reuse proof. The2025owner ID,year and December11 date remain unchanged. Semantic/image review is explicitly delegated to that earlier independent approval, not falsely reread.",
+        "Source/target/contact SHA, source binding, locale cardinalities, actual recovery SHA, decoded numeric dimensions and all five image provenance/rights fields passed for both owners. No global writes or console playback assertions."
+      ],
+      "canonical_tga_review_reuse": {
+        "status": "EXACT_ADMITTED_SHARED_ARCHIVE_REUSE",
+        "canonical_source": {
+          "path": "build/research/catalog-2024-chronological/tga-single-private/tga-source-private-candidate.json",
+          "sha256": "029dc1fd3bbd7d7901b5e0f645d4f758743d7e86c32bb71eafd37f950c8d8768"
+        },
+        "canonical_translations": {
+          "path": "build/research/catalog-2024-chronological/tga-single-private/tga-four-language-private-candidate.json",
+          "sha256": "d52ce53a1ff0c250c3813f542e2de56766f968c751b4f7f82ee2c08497aca9c3"
+        },
+        "canonical_peer": {
+          "path": "build/research/catalog-2024-chronological/tga-single-private/independent-category-audit-approval.json",
+          "sha256": "1baf86bc69f98cba0f5f47773399e1244d4b8fe097d184a4758ed5d1e197ac17"
+        },
+        "fields_exact": true,
+        "images_exact": true
+      },
+      "production_writes": false
+    }
+  }
+}

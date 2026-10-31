@@ -1,0 +1,96 @@
+{
+  "status": "PASS",
+  "locale": "it",
+  "entries": [
+    {
+      "entry_id": "workbook-04-30-returnal",
+      "source_fields_sha256": "7ecdff54f39504bc0ebf2f2b5bf12704c4beaccb4f9c74b4665859865531ebc8",
+      "translation_sha256": "cf7427bbe333b4a7ad34476b2b32c67ab9a92fe65f8919f0aee9823e293616fe",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch331/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "7d7712a37468a14a210f75fdf34902aed8597232a1e610878d634b39f2fce642"
+    },
+    {
+      "entry_id": "workbook-05-07-resident-evil-village",
+      "source_fields_sha256": "79b497ecf20c4c309c31932d060295136c59888c7079d04279bbdd49ed949ac5",
+      "translation_sha256": "a2edced0f5d92419d61871ec16801d0250e2410fadc80bdd8a1eedcb552a123c",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch331/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "7d7712a37468a14a210f75fdf34902aed8597232a1e610878d634b39f2fce642"
+    },
+    {
+      "entry_id": "wikipedia-65786018",
+      "source_fields_sha256": "9b887258fc7efecf075e70881ea043f3996fd8792ca3baa3f27c99548641dcf2",
+      "translation_sha256": "8b972d3175d735f5d7085ccc0ff1247e01dff3ae48ec0184d9f1d390d00a6524",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch331/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "7d7712a37468a14a210f75fdf34902aed8597232a1e610878d634b39f2fce642"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "/root/category_audit",
+    "actual_receipt": "build/research/catalog-2021-chronological/april-may-three-private/independent-category-audit-approval.json",
+    "actual_receipt_sha256": "763841d9c859bcb989e39e3f46a82bda78e9bdcaad6048e0aa9029a3e8eb88f7",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "/root/category_audit",
+      "index_sha256": "c963b25bb9b1a61d32945a9342c631c07096045985d97c2dba834079845d6768",
+      "scope": {
+        "english_paragraphs_actually_read": 10,
+        "localized_paragraphs_actually_read": 40,
+        "languages": [
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "images_actually_viewed": 17,
+        "final_contact_sheets_actually_viewed": 3,
+        "new_cue_metadata_actually_read": 4
+      },
+      "findings": [],
+      "resolved_findings": [
+        "Returnal and Village empty localized subtitles filled with the exact translated first heading in all four languages; verified final candidates."
+      ],
+      "primary_sources_read": [
+        {
+          "url": "https://blog.playstation.com/2021/04/01/returnal-hands-on-preview/",
+          "finding": "April30 PS5 release, procedural runs, Selene/Atropos, arcade combat and adaptive trigger/haptic features confirmed."
+        },
+        {
+          "url": "https://www.capcom.co.jp/ir/english/news/html/e210122.html",
+          "finding": "May7 worldwide outside Japan / May8 Japan and original platforms confirmed, direct sequel to Resident Evil7."
+        },
+        {
+          "url": "https://www.wearemasseffect.com/looking-back-at-mass-effects-music-a-conversation-with-sam-hulick/",
+          "finding": "Direct SamHulick interview explicitly confirms old unused composition remixed/remastered for Legendary launcher; candidate qualifies Resynthesis accurately."
+        }
+      ],
+      "review_notes": [
+        "All10English bodies and40locale bodies read fully; summaries and headings coherent, full meanings preserved.",
+        "All17images actually viewed on three final contacts: clean covers, original Village scenes, explicitly qualified Returnal PC2023 media, original DualSense contextual illustration, remastered Legendary gameplay. No boxback replacements.",
+        "Returnal9 and Village25 soundtrack objects remain exact. Four Legendary UI chapters match official MassEffect compilation metadata with88chapters and publicAAC. No audio download or physicalPS5audition claimed."
+      ],
+      "owners": [
+        {
+          "entry_id": "workbook-04-30-returnal",
+          "source_sha256": "d60d3386c33b15841a7efc709f41751598bc1a3eb8894e286e559e8dcbd6d00a",
+          "target_sha256": "0f982266fb7446834007a8eec995d4b6f2797ddbed89fbd9ba83571034e9a321",
+          "contact_sha256": "d86407ddcf3c5ff1ab9c289892719f288714747d9c904a900813b3268f24630d"
+        },
+        {
+          "entry_id": "workbook-05-07-resident-evil-village",
+          "source_sha256": "82053a57675173cf6aa200b5063f342e0dfcc250c0731232a20590bda325bf96",
+          "target_sha256": "753a998b15492d5808d18b9ce4db5ba96d37bd6b50961b96e8911ef035f015a8",
+          "contact_sha256": "4c8d1e6c8ac77d85194b401b126b5c4f5b9c3c4a16ef1fb576d0bf8d5cbbd2a3"
+        },
+        {
+          "entry_id": "wikipedia-65786018",
+          "source_sha256": "ba58fb981a69117962469658b3b991a0e7eeab6e7d82b9aa77c060c2ed9b3d24",
+          "target_sha256": "86f0d48f1319779506d2e3884009396a5214175bb8165991f4b3040d4c02faf5",
+          "contact_sha256": "c131f22f9c72b0a932dd5c9d6b4372fcd195632586be87aa89665b946d480a13"
+        }
+      ],
+      "production_writes": false,
+      "authorization": "Admission remains a separate root action."
+    }
+  }
+}

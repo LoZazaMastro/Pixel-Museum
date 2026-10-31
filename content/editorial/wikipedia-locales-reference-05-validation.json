@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "validated": "2026-10-21",
+  "validation_type": "translation_author_structural_source_hash_and_pure_integration_fixture_not_independent_language_approval",
+  "batch_file": "content/expansion/wikipedia-locales-reference-05.json",
+  "batch_sha256": "0f8e8b12adc31700d94ed80982f0293af05466606c8a496559fb95093fcfd656",
+  "status": "authoring_validated_pending_independent_language_review_and_admission",
+  "source_catalog_sha256_snapshot": "3c11e399198469a97776a4ce2cb680a6199d81886cf91f9fafab801965185fc6",
+  "checks": {
+    "pure_join": true,
+    "source_entries": 6,
+    "translation_pairs": 24,
+    "body_paragraphs": 72,
+    "existing_headings": 72,
+    "all_preexisting_base_locale_entries_preserved": true,
+    "non_target_languages_unchanged": true,
+    "english_body_tamper_rejected": true,
+    "english_heading_tamper_rejected": true,
+    "translation_license_tamper_rejected": true,
+    "source_revision_tamper_rejected": true,
+    "paragraph_count_tamper_rejected": true,
+    "protected_playhub_locale_collision_rejected": true
+  },
+  "numeric_and_proper_names": "Authoring finalizer compared each paragraph decimal-value occurrence counter (Roman XVIII/XVIIIe normalized to18), names, positions and all English source fields against the frozen and current reference. Written number meanings additionally read during translation.",
+  "pure_fixture_admission_only": "The helper allowlist was changed in memory for this fixture; no production allowlist, generated output, master or locale file was written.",
+  "human_or_native_signoff": false,
+  "native_parser_test_of_new_batch": false,
+  "tracked_inputs_sha256_unchanged": {
+    "content/catalog.json": "3c11e399198469a97776a4ce2cb680a6199d81886cf91f9fafab801965185fc6",
+    "content/expansion/integrate_wikipedia_locales.py": "05babffba7f6e06b791a2f3b5d36fabf7f77834f046aaa0bdb1f910e44be2ce8",
+    "content/locales/de.json": "c7588e555733a45d4f0da537b628c3648d0f0d443c3881a354f70d8940b40e5e",
+    "content/locales/en.json": "09ffcbb2bc40238d916280ec9bcd4681c7ee3ce8ed2c1c946588a27a5be04fc8",
+    "content/locales/es.json": "54b21ea389fab4be4f9ac105bf13ea2eddf491190ae76695c4a45ca21a603c6d",
+    "content/locales/fr.json": "1fc8fba0c3fe09ec1640049ff6eee320ac03908a30f8c1ad82fcddb63dc8f611",
+    "content/locales/it.json": "73afc3da914edbc73388774483ce098887c87fad2afa266ade461db7aa0fa252",
+    "content/locales/pt.json": "006d2136ea7a7e078308a9aaa96144b97fe4f43ee0a1a21e4ffdc388b53ba84c",
+    "content/locales/ru.json": "dd84e6a14818b1d8b6b280dc2d29f789b2298502c46bc36481e56245ad837781",
+    "content/locales/uk.json": "248490cd1e05784cd95eedb20bee44af745dfa74a9277cc0db9bf69b2ec7ff04"
+  }
+}

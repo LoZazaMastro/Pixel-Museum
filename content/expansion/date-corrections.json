@@ -1,0 +1,697 @@
+{
+  "schema_version": 1,
+  "checked_date": "2026-10-20",
+  "policy": "Historical event dates only. A scheduled calendar slot is not an anniversary. Retain year-only precision when an exact day has not been established, especially person-focused stories anchored to a work rather than a birthday. Region qualifiers distinguish launches.",
+  "overrides": [
+    {
+      "id": "tennis-for-two",
+      "year": 1958,
+      "date": {
+        "month": 10,
+        "day": 18,
+        "precision": "day",
+        "region": "United States"
+      },
+      "event": "First public demonstration",
+      "source": {
+        "title": "The First Video Game?",
+        "url": "https://www.bnl.gov/about/history/firstvideo.php",
+        "publisher": "Brookhaven National Laboratory",
+        "type": "Primary: date verification",
+        "supports": "The laboratory dates the first public introduction to October 18, 1958, at its visitors day."
+      },
+      "note": "",
+      "verified_date": "2026-10-20"
+    },
+    {
+      "id": "game-boy",
+      "year": 1989,
+      "date": {
+        "month": 4,
+        "day": 21,
+        "precision": "day",
+        "region": "Japan"
+      },
+      "event": "Original Game Boy Japanese launch",
+      "source": {
+        "title": "Game Boy (DMG-01): original hardware catalogue",
+        "url": "https://www.nintendo.co.jp/n02/dmg/hardware/gb/index.html",
+        "publisher": "Nintendo",
+        "type": "Primary: date verification",
+        "supports": "Original manufacturer page directly states release date 1989-04-21. HTML decoded as CP932/Shift-JIS; the date is text, not inferred from Super Mario Land."
+      },
+      "note": "",
+      "verified_date": "2026-10-20"
+    },
+    {
+      "id": "playstation-2",
+      "year": 2000,
+      "date": {
+        "month": 3,
+        "day": 4,
+        "precision": "day",
+        "region": "Japan"
+      },
+      "event": "Japanese hardware launch",
+      "source": {
+        "title": "PlayStation 2 reaches 50 million units",
+        "url": "https://sonyinteractive.com/en/press-releases/2003/playstation2-achieves-cumulative-worldwide-shipment-of-50-million-units/",
+        "publisher": "Sony Computer Entertainment",
+        "type": "Primary: date verification",
+        "supports": "The retrospective press release states Japan March 4, 2000; North America October 26; Europe/PAL November 24."
+      },
+      "note": "Date shown is the Japanese launch, not a single worldwide release date.",
+      "verified_date": "2026-10-20"
+    },
+    {
+      "id": "nintendo-3ds",
+      "year": 2011,
+      "date": {
+        "month": 2,
+        "day": 26,
+        "precision": "day",
+        "region": "Japan"
+      },
+      "event": "Original Nintendo 3DS Japanese launch",
+      "source": {
+        "title": "Nintendo 3DS: original hardware page",
+        "url": "https://www.nintendo.co.jp/hardware/3dsseries/3ds/index.html",
+        "publisher": "Nintendo",
+        "type": "Primary: date verification",
+        "supports": "Manufacturer page states 2011.2.26 release. Also confirmed by Nintendo June 2, 2011 corporate announcement."
+      },
+      "note": "Date refers to the original Japanese hardware launch, not the later Zelda anniversary finish depicted by some models.",
+      "verified_date": "2026-10-20"
+    },
+    {
+      "id": "doom",
+      "year": 1993,
+      "date": {
+        "month": 12,
+        "day": 10,
+        "precision": "day",
+        "region": ""
+      },
+      "event": "Original PC shareware release",
+      "source": {
+        "title": "DOOM Turns 22!",
+        "url": "https://bethesda.net/tr-TR/news/doom-turns-22",
+        "publisher": "Bethesda / id Software",
+        "type": "Primary: date verification",
+        "supports": "Publisher anniversary article explicitly dates the original DOOM to December 10, 1993. The article body is English despite its locale path."
+      },
+      "note": "",
+      "verified_date": "2026-10-20"
+    },
+    {
+      "id": "journey",
+      "year": 2012,
+      "date": {
+        "month": 3,
+        "day": 13,
+        "precision": "day",
+        "region": "North America"
+      },
+      "event": "General PlayStation Network release",
+      "source": {
+        "title": "Journey Takes Its First Steps This March",
+        "url": "https://blog.playstation.com/2012/02/16/journey-takes-its-first-steps-this-march/",
+        "publisher": "Jenova Chen / thatgamecompany / PlayStation Blog",
+        "type": "Primary: date verification",
+        "supports": "Creative director announces March 13, 2012 general PSN availability."
+      },
+      "note": "Date marks the North American general release. PlayStation Plus early access preceded it, and European general release followed on March 14; it is not claimed as the first availability anywhere.",
+      "verified_date": "2026-10-20"
+    },
+    {
+      "id": "papers-please",
+      "year": 2013,
+      "date": {
+        "month": 8,
+        "day": 8,
+        "precision": "day",
+        "region": ""
+      },
+      "event": "Original desktop release",
+      "source": {
+        "title": "Games by Lucas Pope: Papers, Please",
+        "url": "https://dukope.com/",
+        "publisher": "Lucas Pope",
+        "type": "Primary: date verification",
+        "supports": "Developer catalogue places August 8, 2013 below the Papers, Please original release record, separately from the public beta and later games."
+      },
+      "note": "",
+      "verified_date": "2026-10-20"
+    },
+    {
+      "id": "celeste",
+      "year": 2018,
+      "date": {
+        "month": 1,
+        "day": 25,
+        "precision": "day",
+        "region": ""
+      },
+      "event": "Original 2018 release, Xbox One availability verified",
+      "source": {
+        "title": "Celeste Is Now Available For Xbox One",
+        "url": "https://news.xbox.com/en-us/2018/01/25/celeste-is-now-available-for-xbox-one/",
+        "publisher": "Xbox Wire / Microsoft",
+        "type": "Primary: date verification",
+        "supports": "Platform holder published its now-available launch notice on January 25, 2018; this corroborates the original 2018 release rather than later platform ports."
+      },
+      "note": "",
+      "verified_date": "2026-10-20"
+    },
+    {
+      "id": "switch",
+      "year": 2017,
+      "date": {
+        "month": 3,
+        "day": 3,
+        "precision": "day",
+        "region": "Initial markets"
+      },
+      "event": "Original Nintendo Switch launch",
+      "source": {
+        "title": "Switch and Play: A More Active Game Life",
+        "url": "https://www.nintendo.co.jp/corporate/release/en/2017/170113.html",
+        "publisher": "Nintendo",
+        "type": "Primary: date verification",
+        "supports": "Corporate announcement identifies March 3, 2017 simultaneous launch in Japan, United States, Canada, major European countries, Australia and Hong Kong."
+      },
+      "note": "Initial markets launched together; the source says additional countries followed by the end of March, so the date is not labelled universal availability.",
+      "verified_date": "2026-10-20"
+    },
+    {
+      "id": "workbook-10-20-super-mario-bros-wonder",
+      "year": 2023,
+      "date": {
+        "month": 10,
+        "day": 20,
+        "precision": "day",
+        "region": "Europe"
+      },
+      "event": "Original Nintendo Switch release",
+      "source": {
+        "title": "Super Mario Bros. Wonder: Nintendo Switch product record",
+        "url": "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-games/Super-Mario-Bros-Wonder-2404150.html",
+        "publisher": "Nintendo",
+        "type": "Primary: date verification",
+        "supports": "Official original Nintendo Switch product details state 20/10/2023 for both game card and download version. Later Switch 2 edition promotions do not replace that original record."
+      },
+      "note": "",
+      "verified_date": "2026-10-20"
+    },
+    {
+      "id": "daily-01-12",
+      "year": 2017,
+      "date": {
+        "month": 1,
+        "day": 12,
+        "precision": "day",
+        "region": "North America"
+      },
+      "event": "Nintendo Switch presentation livestream in North American time zones",
+      "source": {
+        "title": "Nintendo Switch Presentation 2017 coming January 13th 2017",
+        "url": "https://www.nintendo.com/en-gb/News/2016/October/Nintendo-Switch-Presentation-2017-coming-January-13th-2017-1149971.html",
+        "publisher": "Nintendo",
+        "type": "Primary: presentation schedule and explicit time-zone conversion",
+        "supports": "Official updated schedule states live from Tokyo on January 13, 2017 at 04:00 UK time. January UK time is GMT; this instant is January 12 at 23:00 EST / 20:00 PST. The North American calendar day is an explicit time-zone conversion, not a guessed launch date."
+      },
+      "note": "Presentation occurred January 13 in Tokyo/Europe and January 12 in North America. This stop is separate from the March 3 hardware launch.",
+      "verified_date": "2026-10-20"
+    },
+    {
+      "id": "workbook-03-14-dark-souls-ii",
+      "year": 2014,
+      "date": {
+        "month": 3,
+        "day": 11,
+        "precision": "day",
+        "region": "North America"
+      },
+      "event": "Dark Souls II: original PS3 North American release",
+      "source": {
+        "title": "Dark Souls II: original PS3 North American release",
+        "url": "https://blog.playstation.com/2014/03/11/dark-souls-ii-out-today-on-ps3/",
+        "publisher": "Bandai Namco / PlayStation",
+        "type": "Primary: date verification",
+        "supports": "Explicit release date in the cited manufacturer, publisher or developer record; platform and regional qualifier retained."
+      },
+      "note": "The published calendar slot is independent scheduling metadata, not evidence for this release day.",
+      "verified_date": "2026-10-20"
+    },
+    {
+      "id": "workbook-03-16-kirby-star-allies",
+      "year": 2018,
+      "date": {
+        "month": 3,
+        "day": 16,
+        "precision": "day",
+        "region": "Europe"
+      },
+      "event": "Kirby Star Allies: Nintendo Switch release",
+      "source": {
+        "title": "Kirby Star Allies: Nintendo Switch release",
+        "url": "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-games/Kirby-Star-Allies-1233956.html",
+        "publisher": "Nintendo",
+        "type": "Primary: date verification",
+        "supports": "Explicit release date in the cited manufacturer, publisher or developer record; platform and regional qualifier retained."
+      },
+      "note": "The published calendar slot is independent scheduling metadata, not evidence for this release day.",
+      "verified_date": "2026-10-20"
+    },
+    {
+      "id": "workbook-03-17-grand-theft-auto-chinatown-wars",
+      "year": 2009,
+      "date": {
+        "month": 3,
+        "day": 20,
+        "precision": "day",
+        "region": "United Kingdom"
+      },
+      "event": "Chinatown Wars: regional Nintendo DS release",
+      "source": {
+        "title": "Chinatown Wars: regional Nintendo DS release",
+        "url": "https://www.nintendo.com/en-gb/Games/Nintendo-DS/Grand-Theft-Auto-Chinatown-Wars-270913.html",
+        "publisher": "Nintendo / Rockstar Games",
+        "type": "Primary: date verification",
+        "supports": "Explicit release date in the cited manufacturer, publisher or developer record; platform and regional qualifier retained."
+      },
+      "note": "The published calendar slot is independent scheduling metadata, not evidence for this release day.",
+      "verified_date": "2026-10-20"
+    },
+    {
+      "id": "workbook-03-18-metal-gear-solid-v-ground-zeroes",
+      "year": 2014,
+      "date": {
+        "month": 3,
+        "day": 18,
+        "precision": "day",
+        "region": "North, Central and South America"
+      },
+      "event": "Ground Zeroes: original console release in the Americas",
+      "source": {
+        "title": "Ground Zeroes: original console release in the Americas",
+        "url": "https://www.konami.com/games/ca/en/topics/10/",
+        "publisher": "Konami",
+        "type": "Primary: date verification",
+        "supports": "Explicit release date in the cited manufacturer, publisher or developer record; platform and regional qualifier retained."
+      },
+      "note": "The published calendar slot is independent scheduling metadata, not evidence for this release day.",
+      "verified_date": "2026-10-20"
+    },
+    {
+      "id": "workbook-03-19-gears-of-war-judgment",
+      "year": 2013,
+      "date": {
+        "month": 3,
+        "day": 19,
+        "precision": "day",
+        "region": "North America"
+      },
+      "event": "Gears of War: Judgment: original Xbox 360 launch",
+      "source": {
+        "title": "Gears of War: Judgment: original Xbox 360 launch",
+        "url": "https://blogs.microsoft.com/blog/2013/03/19/gears-of-war-judgment-unleashed-on-xbox-360/",
+        "publisher": "Microsoft",
+        "type": "Primary: date verification",
+        "supports": "Explicit release date in the cited manufacturer, publisher or developer record; platform and regional qualifier retained."
+      },
+      "note": "The published calendar slot is independent scheduling metadata, not evidence for this release day.",
+      "verified_date": "2026-10-20"
+    },
+    {
+      "id": "animal-crossing",
+      "year": 2020,
+      "date": {
+        "month": 3,
+        "day": 20,
+        "precision": "day",
+        "region": "Europe"
+      },
+      "event": "Animal Crossing: New Horizons: original Nintendo Switch release",
+      "source": {
+        "title": "Animal Crossing: New Horizons: original Nintendo Switch release",
+        "url": "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-games/Animal-Crossing-New-Horizons-1438623.html",
+        "publisher": "Nintendo",
+        "type": "Primary: date verification",
+        "supports": "Explicit release date in the cited manufacturer, publisher or developer record; platform and regional qualifier retained."
+      },
+      "note": "The published calendar slot is independent scheduling metadata, not evidence for this release day.",
+      "verified_date": "2026-10-20"
+    },
+    {
+      "id": "workbook-03-21-game-boy-advance",
+      "year": 2001,
+      "date": {
+        "month": 3,
+        "day": 21,
+        "precision": "day",
+        "region": "Japan"
+      },
+      "event": "Game Boy Advance: original AGB-001 Japanese hardware launch",
+      "source": {
+        "title": "Game Boy Advance: original AGB-001 Japanese hardware launch",
+        "url": "https://www.nintendo.co.jp/n08/hardware/gba/index.html",
+        "publisher": "Nintendo",
+        "type": "Primary: date verification",
+        "supports": "Explicit release date in the cited manufacturer, publisher or developer record; platform and regional qualifier retained."
+      },
+      "note": "The published calendar slot is independent scheduling metadata, not evidence for this release day.",
+      "verified_date": "2026-10-20"
+    },
+    {
+      "id": "workbook-03-22-god-of-war",
+      "year": 2005,
+      "date": {
+        "month": 3,
+        "day": 22,
+        "precision": "day",
+        "region": "North America"
+      },
+      "event": "God of War: original PlayStation 2 release",
+      "source": {
+        "title": "God of War: original PlayStation 2 release",
+        "url": "https://sony.mediaroom.com/2005-03-22-Rave-Reviews-Nationwide-Spark-High-Anticipation-for-God-of-War-as-the-2005-Must-Have-Game-on-PlayStation-2",
+        "publisher": "Sony Computer Entertainment America",
+        "type": "Primary: date verification",
+        "supports": "Explicit release date in the cited manufacturer, publisher or developer record; platform and regional qualifier retained."
+      },
+      "note": "The published calendar slot is independent scheduling metadata, not evidence for this release day.",
+      "verified_date": "2026-10-20"
+    },
+    {
+      "id": "workbook-03-23-half-life-alyx",
+      "year": 2020,
+      "date": {
+        "month": 3,
+        "day": 23,
+        "precision": "day",
+        "region": "Original Windows / SteamVR release"
+      },
+      "event": "Half-Life: Alyx: original release",
+      "source": {
+        "title": "Half-Life: Alyx: original release",
+        "url": "https://www.half-life.com/en/alyx",
+        "publisher": "Valve",
+        "type": "Primary: date verification",
+        "supports": "Explicit release date in the cited manufacturer, publisher or developer record; platform and regional qualifier retained."
+      },
+      "note": "The published calendar slot is independent scheduling metadata, not evidence for this release day.",
+      "verified_date": "2026-10-20"
+    },
+    {
+      "id": "workbook-03-24-bloodborne",
+      "year": 2015,
+      "date": {
+        "month": 3,
+        "day": 24,
+        "precision": "day",
+        "region": "North America"
+      },
+      "event": "Bloodborne: original PlayStation 4 release",
+      "source": {
+        "title": "Bloodborne: original PlayStation 4 release",
+        "url": "https://blog.playstation.com/2015/03/24/bloodborne-out-now-only-on-ps4-let-the-hunt-begin/",
+        "publisher": "PlayStation / FromSoftware",
+        "type": "Primary: date verification",
+        "supports": "Explicit release date in the cited manufacturer, publisher or developer record; platform and regional qualifier retained."
+      },
+      "note": "The published calendar slot is independent scheduling metadata, not evidence for this release day.",
+      "verified_date": "2026-10-20"
+    },
+    {
+      "id": "workbook-03-25-diablo-iii-reaper-of-souls",
+      "year": 2014,
+      "date": {
+        "month": 3,
+        "day": 25,
+        "precision": "day",
+        "region": "Initial Windows and Mac availability"
+      },
+      "event": "Reaper of Souls: original desktop expansion release",
+      "source": {
+        "title": "Reaper of Souls: original desktop expansion release",
+        "url": "https://investor.activision.com/node/20936",
+        "publisher": "Blizzard Entertainment",
+        "type": "Primary: date verification",
+        "supports": "Explicit release date in the cited manufacturer, publisher or developer record; platform and regional qualifier retained."
+      },
+      "note": "The published calendar slot is independent scheduling metadata, not evidence for this release day.",
+      "verified_date": "2026-10-20"
+    },
+    {
+      "id": "workbook-03-26-pillars-of-eternity",
+      "year": 2015,
+      "date": {
+        "month": 3,
+        "day": 26,
+        "precision": "day",
+        "region": "Original Windows, Mac and Linux release"
+      },
+      "event": "Pillars of Eternity: original desktop release",
+      "source": {
+        "title": "Pillars of Eternity: original desktop release",
+        "url": "https://eternity.obsidian.net/eternity/news/pillars-of-eternity-has-gone-gold",
+        "publisher": "Obsidian Entertainment",
+        "type": "Primary: date verification",
+        "supports": "Explicit release date in the cited manufacturer, publisher or developer record; platform and regional qualifier retained."
+      },
+      "note": "The published calendar slot is independent scheduling metadata, not evidence for this release day.",
+      "verified_date": "2026-10-20"
+    },
+    {
+      "id": "workbook-03-27-monster-hunter-freedom-2g",
+      "year": 2008,
+      "date": {
+        "month": 3,
+        "day": 27,
+        "precision": "day",
+        "region": "Japan"
+      },
+      "event": "Monster Hunter Portable 2nd G: Japanese PSP release",
+      "source": {
+        "title": "Monster Hunter Portable 2nd G: Japanese PSP release",
+        "url": "https://www.capcom.co.jp/ir/english/news/pdf/e080424.pdf",
+        "publisher": "Capcom",
+        "type": "Primary: date verification",
+        "supports": "Explicit release date in the cited manufacturer, publisher or developer record; platform and regional qualifier retained."
+      },
+      "note": "The published calendar slot is independent scheduling metadata, not evidence for this release day.",
+      "verified_date": "2026-10-20"
+    },
+    {
+      "id": "workbook-03-28-kingdom-hearts",
+      "year": 2002,
+      "date": {
+        "month": 3,
+        "day": 28,
+        "precision": "day",
+        "region": "Japan"
+      },
+      "event": "Kingdom Hearts: original Japanese PlayStation 2 release",
+      "source": {
+        "title": "Kingdom Hearts: original Japanese PlayStation 2 release",
+        "url": "https://www.jp.square-enix.com/kingdom/archives/index.html",
+        "publisher": "Square Enix",
+        "type": "Primary: date verification",
+        "supports": "Explicit release date in the cited manufacturer, publisher or developer record; platform and regional qualifier retained."
+      },
+      "note": "The published calendar slot is independent scheduling metadata, not evidence for this release day.",
+      "verified_date": "2026-10-20"
+    },
+    {
+      "id": "workbook-03-29-yoshi-s-crafted-world",
+      "year": 2019,
+      "date": {
+        "month": 3,
+        "day": 29,
+        "precision": "day",
+        "region": "Europe"
+      },
+      "event": "Yoshi’s Crafted World: original Nintendo Switch release",
+      "source": {
+        "title": "Yoshi’s Crafted World: original Nintendo Switch release",
+        "url": "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-games/Yoshi-s-Crafted-World-1233953.html",
+        "publisher": "Nintendo",
+        "type": "Primary: date verification",
+        "supports": "Explicit release date in the cited manufacturer, publisher or developer record; platform and regional qualifier retained."
+      },
+      "note": "The published calendar slot is independent scheduling metadata, not evidence for this release day.",
+      "verified_date": "2026-10-20"
+    },
+    {
+      "id": "workbook-03-30-thimbleweed-park",
+      "year": 2017,
+      "date": {
+        "month": 3,
+        "day": 30,
+        "precision": "day",
+        "region": "Original desktop and Xbox One release"
+      },
+      "event": "Thimbleweed Park: developer launch announcement",
+      "source": {
+        "title": "Thimbleweed Park: developer launch announcement",
+        "url": "https://blog.thimbleweedpark.com/released.html",
+        "publisher": "Ron Gilbert / Terrible Toybox",
+        "type": "Primary: date verification",
+        "supports": "Explicit release date in the cited manufacturer, publisher or developer record; platform and regional qualifier retained."
+      },
+      "note": "The published calendar slot is independent scheduling metadata, not evidence for this release day.",
+      "verified_date": "2026-10-20"
+    },
+    {
+      "id": "workbook-03-31-hyper-light-drifter",
+      "year": 2016,
+      "date": {
+        "month": 3,
+        "day": 31,
+        "precision": "day",
+        "region": "Original desktop release"
+      },
+      "event": "Hyper Light Drifter: original release",
+      "source": {
+        "title": "Hyper Light Drifter: original release",
+        "url": "https://store.steampowered.com/app/257850/Hyper_Light_Drifter/",
+        "publisher": "Heart Machine",
+        "type": "Primary: date verification",
+        "supports": "Explicit release date in the cited manufacturer, publisher or developer record; platform and regional qualifier retained."
+      },
+      "note": "The published calendar slot is independent scheduling metadata, not evidence for this release day.",
+      "verified_date": "2026-10-20"
+    },
+    {
+      "id": "workbook-04-01-goat-simulator",
+      "year": 2014,
+      "date": {
+        "month": 4,
+        "day": 1,
+        "precision": "day",
+        "region": "Original desktop release"
+      },
+      "event": "Goat Simulator: original release",
+      "source": {
+        "title": "Goat Simulator: original release",
+        "url": "https://store.steampowered.com/app/265930/Goat_Simulator/",
+        "publisher": "Coffee Stain Studios",
+        "type": "Primary: date verification",
+        "supports": "Explicit release date in the cited manufacturer, publisher or developer record; platform and regional qualifier retained."
+      },
+      "note": "The published calendar slot is independent scheduling metadata, not evidence for this release day.",
+      "verified_date": "2026-10-20"
+    },
+    {
+      "id": "workbook-04-02-final-fantasy-vi",
+      "year": 1994,
+      "date": {
+        "month": 4,
+        "day": 2,
+        "precision": "day",
+        "region": "Japan"
+      },
+      "event": "Final Fantasy VI: original Super Famicom release",
+      "source": {
+        "title": "Final Fantasy VI: original Super Famicom release",
+        "url": "https://jp.finalfantasy.com/titles/finalfantasy6",
+        "publisher": "Square Enix",
+        "type": "Primary: date verification",
+        "supports": "Explicit release date in the cited manufacturer, publisher or developer record; platform and regional qualifier retained."
+      },
+      "note": "The published calendar slot is independent scheduling metadata, not evidence for this release day.",
+      "verified_date": "2026-10-20"
+    },
+    {
+      "id": "workbook-04-03-monument-valley",
+      "year": 2014,
+      "date": {
+        "month": 4,
+        "day": 3,
+        "precision": "day",
+        "region": "Original iOS release"
+      },
+      "event": "Monument Valley: original release",
+      "source": {
+        "title": "Monument Valley: original release",
+        "url": "https://ustwo.com/blog/monument-valley-out-now/",
+        "publisher": "ustwo",
+        "type": "Primary: date verification",
+        "supports": "Explicit release date in the cited manufacturer, publisher or developer record; platform and regional qualifier retained."
+      },
+      "note": "The published calendar slot is independent scheduling metadata, not evidence for this release day.",
+      "verified_date": "2026-10-20"
+    },
+    {
+      "id": "workbook-04-04-the-elder-scrolls-online",
+      "year": 2014,
+      "date": {
+        "month": 4,
+        "day": 4,
+        "precision": "day",
+        "region": "Original PC and Mac release"
+      },
+      "event": "The Elder Scrolls Online: original desktop launch",
+      "source": {
+        "title": "The Elder Scrolls Online: original desktop launch",
+        "url": "https://www.prnewswire.com/news-releases/bethesda-softworks-launches-the-elder-scrolls-online-253889861.html",
+        "publisher": "Bethesda Softworks / PR Newswire",
+        "type": "Primary: date verification",
+        "supports": "Explicit release date in the cited manufacturer, publisher or developer record; platform and regional qualifier retained."
+      },
+      "note": "The published calendar slot is independent scheduling metadata, not evidence for this release day.",
+      "verified_date": "2026-10-20"
+    },
+    {
+      "id": "workbook-04-05-lego-star-wars-the-skywalker-saga",
+      "year": 2022,
+      "date": {
+        "month": 4,
+        "day": 5,
+        "precision": "day",
+        "region": "Initial multi-platform release"
+      },
+      "event": "LEGO Star Wars: The Skywalker Saga: original release",
+      "source": {
+        "title": "LEGO Star Wars: The Skywalker Saga: original release",
+        "url": "https://www.lego.com/en-us/aboutus/news/2022/april/lego-star-wars-the-skywalker-saga",
+        "publisher": "LEGO / Warner Bros. Games / TT Games",
+        "type": "Primary: date verification",
+        "supports": "Explicit release date in the cited manufacturer, publisher or developer record; platform and regional qualifier retained."
+      },
+      "note": "The published calendar slot is independent scheduling metadata, not evidence for this release day.",
+      "verified_date": "2026-10-20"
+    }
+  ],
+  "unresolved": [
+    {
+      "id": "brown-box",
+      "reason": "Prototype development spans a period; no exact event day established in the reviewed primary evidence."
+    },
+    {
+      "id": "channel-f",
+      "reason": "1976 hardware introduction retained; no exact launch day established here."
+    },
+    {
+      "id": "roberta-williams",
+      "reason": "1980 story concerns Mystery House, not the designer birthday; no exact release day established."
+    },
+    {
+      "id": "carol-shaw",
+      "reason": "1982 River Raid/design story, not a birthday; no exact original release day established."
+    },
+    {
+      "id": "karateka",
+      "reason": "Original 1984 game story retained; do not substitute the 2023 documentary release date."
+    },
+    {
+      "id": "tetris",
+      "reason": "Official creation-year record retained. June 6 is a later commemorative anniversary with historical uncertainty; no exact original completion day asserted."
+    },
+    {
+      "id": "preserving-play",
+      "reason": "2023 is a curatorial theme anchor spanning preservation practice, not one day-long event."
+    }
+  ]
+}

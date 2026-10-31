@@ -1,0 +1,123 @@
+{
+  "status": "PASS",
+  "locale": "de",
+  "entries": [
+    {
+      "entry_id": "playstation-5",
+      "source_fields_sha256": "dc0f890f07e72bd9943e79a1345b4363cbc2d608433f6f60247a93fd968e7412",
+      "translation_sha256": "560df9cc60e3e4f4c6b2f7079a9b5d93a8770f5e22c576acf5d178fa4390e12e",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch324/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "9acc7770addccbad9454df4f20924e4ac26b2a51b474f3bd4f424f8bfff31d89"
+    },
+    {
+      "entry_id": "wikipedia-64248753",
+      "source_fields_sha256": "8ecb642a3c0195c21909519ca2eab8a599eb457442ec2ec9cbd2bcfa849ca343",
+      "translation_sha256": "6e3b045c7b0197b5022d25f109c5e13406838e1a5ed2b9158e97f941c6dd8cfe",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch324/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "9acc7770addccbad9454df4f20924e4ac26b2a51b474f3bd4f424f8bfff31d89"
+    },
+    {
+      "entry_id": "wikipedia-64248811",
+      "source_fields_sha256": "761d8f8b15a72283a2b713771d590fbd3d319fba206e69c7f784e7059960753e",
+      "translation_sha256": "ee4c16f2caf105cef0f39144d0bfc0bba4667d175984149dcc9285b126a599f4",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch324/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "9acc7770addccbad9454df4f20924e4ac26b2a51b474f3bd4f424f8bfff31d89"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "editorial_continue",
+    "actual_receipt": "build/research/catalog-2020-chronological/root-november-third-three-private/independent-editorial-peer-approval.json",
+    "actual_receipt_sha256": "bc63d7696888b0bb69b2ede9c6c02e6f47f193cfc134082cecf09074f3dcf9a1",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "editorial_continue",
+      "author": "root / package_audit localized text",
+      "index_sha256": "27a29f82b0035690381f6d61b44379c7371205f1412ffd8de6698a41a1018a16",
+      "owners": [
+        {
+          "entry_id": "playstation-5",
+          "slug": "ps5",
+          "source": "build/research/catalog-2020-chronological/root-november-third-three-private/ps5-source-private-candidate.json",
+          "source_sha256": "b8b924dc025e337565dfa9436bdc52d49790d5a0d651bcde34ca27695b867349",
+          "target": "build/research/catalog-2020-chronological/root-november-third-three-private/ps5-four-language-private-candidate.json",
+          "target_sha256": "d15026ec3686c7c856db5e078c78cff768c75e7b31ab30f8b0e603cffb508bc1",
+          "contact": "build/research/catalog-2020-chronological/root-november-third-three-private/ps5-final-contact.jpg",
+          "contact_sha256": "23da74770ff885803b4174378a56187d8bbbc19f68b1a425cb3df09307c4f070",
+          "english_cards": 8,
+          "localized_cards": 32,
+          "images": 9,
+          "tracks": 0
+        },
+        {
+          "entry_id": "wikipedia-64248753",
+          "slug": "miles",
+          "source": "build/research/catalog-2020-chronological/root-november-third-three-private/miles-source-private-candidate.json",
+          "source_sha256": "f94c44a7cb5082e9bfe5f30a3de420b77795a534d0004e5fb76b9b2b9a4620e1",
+          "target": "build/research/catalog-2020-chronological/root-november-third-three-private/miles-four-language-private-candidate.json",
+          "target_sha256": "d6aefed4e4f3ba22f324a069deb2b1da3b41fe8b056b9c2c9f6f755719dfcc43",
+          "contact": "build/research/catalog-2020-chronological/root-november-third-three-private/miles-final-contact.jpg",
+          "contact_sha256": "36e47d644338bcb949f40f6355c74a751d2d901fd02ccc39d1607c5e46f249bf",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 4,
+          "tracks": 19
+        },
+        {
+          "entry_id": "wikipedia-64248811",
+          "slug": "sackboy",
+          "source": "build/research/catalog-2020-chronological/root-november-third-three-private/sackboy-source-private-candidate.json",
+          "source_sha256": "268cef5ca24f864939e2209493836133ee57030d4498eb9dcb6b405c541abaf7",
+          "target": "build/research/catalog-2020-chronological/root-november-third-three-private/sackboy-four-language-private-candidate.json",
+          "target_sha256": "1fb97ada420793172cfcf5357c2c1ff6e5beb38be3f2b43dc5e20d118e36c657",
+          "contact": "build/research/catalog-2020-chronological/root-november-third-three-private/sackboy-final-contact.jpg",
+          "contact_sha256": "a55cf18c2f4ec881fef6472e2eede041a1b5b43db47096bc2e0607266c2c39ea",
+          "english_cards": 4,
+          "localized_cards": 16,
+          "images": 5,
+          "tracks": 3
+        }
+      ],
+      "read_english_paragraphs": 15,
+      "read_localized_paragraphs": 60,
+      "actual_final_contact_sheets_viewed": 3,
+      "actual_selected_images_viewed": 18,
+      "source_review": [
+        {
+          "url": "https://blog.playstation.com/2020/11/09/ps5-the-ultimate-faq/",
+          "finding": "Primary FAQ directly read: launch regions, original optical/digital model equivalence, more than 4000 PS4 titles, compatibility and controller features agree."
+        },
+        {
+          "url": "https://blog.playstation.com/2020/12/17/sackboy-a-big-adventure-update-adds-online-multiplayer-today/",
+          "finding": "First-person Sumo Digital account directly read: December17 online patch, four players, dedicated teamwork stages support original-game text."
+        },
+        {
+          "url": "https://blog.playstation.com/2022/10/13/marvels-spider-man-miles-morales-is-coming-to-pc-on-november-18/",
+          "finding": "Nixxes primary confirms November18,2022 PC port separately from original PS4/PS5 release."
+        },
+        {
+          "url": "https://blog.playstation.com/2021/03/09/threading-together-the-sackboy-a-big-adventure-theme/",
+          "finding": "Composer first-person account directly read; original theme and score/licensed-song distinction consistent."
+        }
+      ],
+      "music_review": "All three new public AAC metadata receipts read: two SonySoundtracksVEVO original videos and one Sony Classical Topic original recording. Main theme credits Joe Thwaites and Jay Waters; Vex Theme credits Nick Foster. The Journey video names performer Jay Waters; additional Joe Thwaites composition credit is retained on root’s explicit report of directly read label-supplied Qobuz track2 credits, not falsely reported as an independently successful fetch by this reviewer. All19 Miles Morales tracks remain unchanged; hardware has no soundtrack. No redundant extraction or audio download.",
+      "delegated_credit_confirmation": {
+        "url": "https://www.qobuz.com/ca-en/album/sackboy-a-big-adventure-original-soundtrack-nick-foster-joe-thwaites-and-jay-waters/nilzzd7jj36yc",
+        "reader": "root",
+        "track": 2,
+        "reported_primary_credit": "Jay Waters, MainArtist, AssociatedPerformer, Composer - Joe Thwaites, Composer - Glen Brown, Producer",
+        "reviewer_fetch": "Initial page opened, later track fetch timed out; root confirmed actual prior direct reading."
+      },
+      "resolved_findings": [
+        {
+          "finding": "Detached white exterior fragments in existing transparent PS5 cover",
+          "resolution": "Alpha-only removal of isolated connected components in private candidate, all RGB bytes and two authentic main silhouettes preserved. Parent root personally viewed light/dark before/after and approved this precise change before candidate binding. Old pinned production PNG untouched.",
+          "proof": "build/research/catalog-2020-chronological/root-november-third-three-private/ps5-alpha-cleanup-private/proof.json",
+          "root_visual_approval": true
+        }
+      ],
+      "translation_review": "All60 localized paragraphs read against all15 English paragraphs, including summaries/headings; natural complete IT/FR/DE/ES, no truncation or dropped paragraphs. Sackboy item names honestly retain original English where localized terminology is not asserted.",
+      "production_writes": false
+    }
+  }
+}

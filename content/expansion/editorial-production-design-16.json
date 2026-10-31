@@ -1,0 +1,1509 @@
+{
+  "schema_version": 1,
+  "written": "2026-10-21",
+  "scope": "Eight specific English production/design cases; no source overwrites or new runtime admission.",
+  "entries": [
+    {
+      "id": "feature-japanese-rpg-writing",
+      "title": "A party acquires a voice",
+      "summary": "Writing must survive the rules.",
+      "year": 1990,
+      "body": [
+        "Dragon Quest IV's companions could choose their own actions in battle. In a 1989 interview, Yuji Horii and programmer Koichi Nakamura describe the difficulty of making that proposal work. Simply selecting the strongest response did not necessarily make an interesting game. The player needed a meaningful directing role too. Their account preserves uncertainty inside a famous series: a party could suggest independent people through its behaviour, while the same independence risked taking decisions away from the person responsible for getting everyone home alive.",
+        "The wagon made that relationship physical. Characters waiting outside a battle could still gain experience while the group travelled across the overworld. Dungeons complicated the arrangement because leaving everyone behind could eventually make those companions too weak to use. Horii and Nakamura describe allowing the wagon into some dungeons to address that problem. A group of characters was therefore also a set of rules about absence. Someone outside the immediate scene still needed a route back into the player's future choices.",
+        "In the later Dragon Quest VI interviews, Horii describes writing new town dialogue as events change. Returning to a village after becoming lost could produce another useful conversation instead of exactly the same response. The writing served the player's uncertain route through the world. A line was more than a small piece of exposition placed beside a house. Its availability depended on what had happened, and another version might be needed when the player returned with different knowledge and a different immediate problem.",
+        "Programmer Manabu Yamana identifies a less glamorous difficulty: the party might reach an event in many different conditions. A townsperson calling for Hassan would create an awkward scene if Hassan were currently represented by a coffin. The software had to account for such possibilities. Dialogue and party rules could not be finished independently and joined without further work. A convincing conversation depended on checking who was actually present, what state they were in, and whether the words still made sense in that situation."
+      ],
+      "kind": "feature",
+      "layout": "story",
+      "language": "en",
+      "era_id": "dimensions",
+      "date": {
+        "precision": "year"
+      },
+      "story_headings": [
+        "Companions make their own choices",
+        "The wagon changes the group",
+        "A village remembers the event",
+        "The wrong person answers"
+      ],
+      "related_ids": [
+        "wikipedia-760191"
+      ],
+      "editorial_mode": "original_additive_feature",
+      "editorial_credit": "Original English feature written for Pixel Museum. Creators, interviewers, translators and original publications are credited per card.",
+      "event_semantics": "Existing work year anchors an attachment. Standalone proposed years are research anchors, not newly verified release dates. Retrospective interviews and later revisions remain distinct in the text.",
+      "integration": {
+        "mode": "proposed_attachment",
+        "proposed_parent_id": "wikipedia-760191",
+        "overwrite_existing_body": false,
+        "requires_semantic_merge_review": true,
+        "net_new_destination_claim": false
+      },
+      "review_status": "complete_english_prose_pending_independent_claim_and_placement_review",
+      "media_status": "Individual card briefs only; no image, film or audio rights approval claimed.",
+      "parent_body_review": {
+        "entry_id": "wikipedia-760191",
+        "body_sha256": "4b246f47ff96ae4d754b5c0f1c5f94731645eb4b63d440350d6cb9ea13d6293a",
+        "complete_body_read": true
+      },
+      "cards": [
+        {
+          "body_index": 0,
+          "heading": "Companions make their own choices",
+          "source_ids": [
+            "dq4"
+          ],
+          "citations": [
+            {
+              "source_id": "dq4",
+              "url": "https://shmuplations.com/dragonquestiv/",
+              "locator": "1989 interview: algorithms too smart, manual mode and general directing commands"
+            }
+          ],
+          "media_brief": {
+            "description": "Original Famicom battle with tactics menu, accurately captioned; no DS manual-control screen.",
+            "selected_asset": null,
+            "status": "exact_identity_rights_native_resolution_and_card_fit_review_required"
+          }
+        },
+        {
+          "body_index": 1,
+          "heading": "The wagon changes the group",
+          "source_ids": [
+            "dq4"
+          ],
+          "citations": [
+            {
+              "source_id": "dq4",
+              "url": "https://shmuplations.com/dragonquestiv/",
+              "locator": "Same interview: wagon experience, dungeon exclusion and later access"
+            }
+          ],
+          "media_brief": {
+            "description": "Original game's wagon and actual party display, with version identified.",
+            "selected_asset": null,
+            "status": "exact_identity_rights_native_resolution_and_card_fit_review_required"
+          }
+        },
+        {
+          "body_index": 2,
+          "heading": "A village remembers the event",
+          "source_ids": [
+            "dq6"
+          ],
+          "citations": [
+            {
+              "source_id": "dq6",
+              "url": "https://shmuplations.com/dragonquestvi/",
+              "locator": "1995 interviews, Horii: dialogue changes after events and returning when lost"
+            }
+          ],
+          "media_brief": {
+            "description": "Actual Dragon Quest VI town dialogue in the original Super Famicom release.",
+            "selected_asset": null,
+            "status": "exact_identity_rights_native_resolution_and_card_fit_review_required"
+          }
+        },
+        {
+          "body_index": 3,
+          "heading": "The wrong person answers",
+          "source_ids": [
+            "dq6"
+          ],
+          "citations": [
+            {
+              "source_id": "dq6",
+              "url": "https://shmuplations.com/dragonquestvi/",
+              "locator": "Same publication, Manabu Yamana: party lineup and Hassan in a coffin"
+            }
+          ],
+          "media_brief": {
+            "description": "Original game party/coffin state or a credited programming document; never invent a development screenshot.",
+            "selected_asset": null,
+            "status": "exact_identity_rights_native_resolution_and_card_fit_review_required"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "dq4",
+          "title": "Dragon Quest IV: 1989 developer interview",
+          "publisher": "Yuji Horii and Koichi Nakamura / Famicom Tsuushin, November1989; English translation shmuplations",
+          "url": "https://shmuplations.com/dragonquestiv/",
+          "publication_date": "1989-11",
+          "checked": "2026-10-21",
+          "source_type": "Original named participant interview, production account or publisher technical document",
+          "locator": "1989 interview: algorithms too smart, manual mode and general directing commands; Same interview: wagon experience, dungeon exclusion and later access",
+          "rights": "Bibliographic citation only. Original text, translations, photographs, trademarks and performances retain their respective rights.",
+          "snapshot": {
+            "path": "build/research/editorial16/dq4.html",
+            "sha256": "f01824de6636e3bb7f8d835c7c2457f584412d7fffd51defa103a1c541468a6f",
+            "bytes": 176891
+          }
+        },
+        {
+          "id": "dq6",
+          "title": "Dragon Quest VI: 1995 developer interviews",
+          "publisher": "Yuji Horii, Manabu Yamana and Koichi Sugiyama / Famicom Tsuushin; English translation shmuplations",
+          "url": "https://shmuplations.com/dragonquestvi/",
+          "publication_date": "1995",
+          "checked": "2026-10-21",
+          "source_type": "Original named participant interview, production account or publisher technical document",
+          "locator": "1995 interviews, Horii: dialogue changes after events and returning when lost; Same publication, Manabu Yamana: party lineup and Hassan in a coffin",
+          "rights": "Bibliographic citation only. Original text, translations, photographs, trademarks and performances retain their respective rights.",
+          "snapshot": {
+            "path": "build/research/editorial16/dq6.html",
+            "sha256": "f15dd1ed2687762df26cdd559365227c36842779c8c9cab648b9779132bec319",
+            "bytes": 167949
+          }
+        }
+      ],
+      "source_ids": [
+        "dq4",
+        "dq6"
+      ],
+      "source_budget_audit": [
+        {
+          "source_budget_group": "dq4",
+          "body_indices": [
+            0,
+            1
+          ],
+          "whitespace_words": 184,
+          "unicode_lexical_words": 186,
+          "charged_words": 186,
+          "maximum_words": 200,
+          "verbatim_quoted_words": 0
+        },
+        {
+          "source_budget_group": "dq6",
+          "body_indices": [
+            2,
+            3
+          ],
+          "whitespace_words": 185,
+          "unicode_lexical_words": 186,
+          "charged_words": 186,
+          "maximum_words": 200,
+          "verbatim_quoted_words": 0
+        }
+      ]
+    },
+    {
+      "id": "feature-musicians-fm-pcm",
+      "title": "Choosing what a machine can sing",
+      "summary": "More voices still need musical decisions.",
+      "year": 1990,
+      "body": [
+        "In a 1986 roundtable, Capcom composer Ayako Mori remembers finishing Gunsmoke's music away from her normal instruments. The pieces went directly into the software, leaving no ordinary score behind. Other participants describe working beside programmers or changing tones inside development tools. Composition crossed several forms before a cabinet could play it. A musical idea might begin on a keyboard, in a short phrase or during a commute, but someone still had to turn that idea into instructions the particular machine could perform.",
+        "The same conversation refuses a simple story in which better chips automatically make better music. The composers discuss thin sounds, different circuit layouts and several cabinets competing in one room. Kenji Yoshida asks for headphone sockets; Yoshiki Okamoto imagines cabinets that could shelter both the picture and its sound. These were observations about listening conditions as much as specifications. A tune reached its audience through a board, an amplifier, a speaker and an arcade full of other games, each affecting what could remain clear.",
+        "Ayako Saso's 2010 account of Rolling Thunder 2 joins those constraints to musical taste. She describes bringing jazz, soul and R&B into the score, drawing on her experience playing an electric organ. The FM8 and PCM24 modules helped her through a process of trial and error. Hardware supplied possibilities rather than a finished identity. The question was what those possibilities could do for a particular game, and how a composer could make an unfamiliar production system carry styles she already understood through playing music.",
+        "Saso describes Sampling Masters as another setting for that experimentation. The project with Shinji Hosoe provided a place to make music influenced by underground techno and present it through Troubadour Records. Increasing technical scope did not remove the composer's personal decisions about rhythm, texture or intention. It changed the conditions under which those decisions could be heard. A musician known through a cabinet could also address a listener outside it, allowing the same creative practice to circulate through games, records and performances with different expectations."
+      ],
+      "kind": "feature",
+      "layout": "story",
+      "language": "en",
+      "era_id": "dimensions",
+      "date": {
+        "precision": "year"
+      },
+      "story_headings": [
+        "A phrase becomes instructions",
+        "The room joins the circuit",
+        "Jazz enters the hardware",
+        "An instrument leaves the cabinet"
+      ],
+      "related_ids": [],
+      "editorial_mode": "original_additive_feature",
+      "editorial_credit": "Original English feature written for Pixel Museum. Creators, interviewers, translators and original publications are credited per card.",
+      "event_semantics": "Existing work year anchors an attachment. Standalone proposed years are research anchors, not newly verified release dates. Retrospective interviews and later revisions remain distinct in the text.",
+      "integration": {
+        "mode": "proposed_distinct_subject_pending_deduplication_and_media",
+        "proposed_parent_id": null,
+        "overwrite_existing_body": false,
+        "requires_semantic_merge_review": true,
+        "net_new_destination_claim": false
+      },
+      "review_status": "complete_english_prose_pending_independent_claim_and_placement_review",
+      "media_status": "Individual card briefs only; no image, film or audio rights approval claimed.",
+      "cards": [
+        {
+          "body_index": 0,
+          "heading": "A phrase becomes instructions",
+          "source_ids": [
+            "gameaudio86"
+          ],
+          "citations": [
+            {
+              "source_id": "gameaudio86",
+              "url": "https://shmuplations.com/gamemusic1986/",
+              "locator": "Beep June1986 roundtable: Mori Gunsmoke directly programmed; Yoshida sitting beside programmer"
+            }
+          ],
+          "media_brief": {
+            "description": "Actual composer portrait and original Gunsmoke sound production material with rights confirmed.",
+            "selected_asset": null,
+            "status": "exact_identity_rights_native_resolution_and_card_fit_review_required"
+          }
+        },
+        {
+          "body_index": 1,
+          "heading": "The room joins the circuit",
+          "source_ids": [
+            "gameaudio86"
+          ],
+          "citations": [
+            {
+              "source_id": "gameaudio86",
+              "url": "https://shmuplations.com/gamemusic1986/",
+              "locator": "Same publication: individual PCB sound, noisy arcades and headphone/cockpit proposals"
+            }
+          ],
+          "media_brief": {
+            "description": "Legible period arcade speakers or circuit board identified to the actual hardware, not generic electronics.",
+            "selected_asset": null,
+            "status": "exact_identity_rights_native_resolution_and_card_fit_review_required"
+          }
+        },
+        {
+          "body_index": 2,
+          "heading": "Jazz enters the hardware",
+          "source_ids": [
+            "saso10"
+          ],
+          "citations": [
+            {
+              "source_id": "saso10",
+              "url": "https://www.squareenixmusic.com/features/interviews/ayakosaso.shtml",
+              "locator": "Chris Greening May2010 interview, Rolling Thunder2 answer and FM8/PCM24 modules"
+            }
+          ],
+          "media_brief": {
+            "description": "Actual original Rolling Thunder2 sound hardware or clearly credited score artwork.",
+            "selected_asset": null,
+            "status": "exact_identity_rights_native_resolution_and_card_fit_review_required"
+          }
+        },
+        {
+          "body_index": 3,
+          "heading": "An instrument leaves the cabinet",
+          "source_ids": [
+            "saso10"
+          ],
+          "citations": [
+            {
+              "source_id": "saso10",
+              "url": "https://www.squareenixmusic.com/features/interviews/ayakosaso.shtml",
+              "locator": "Same interview, Sampling Masters/Troubadour Records answer"
+            }
+          ],
+          "media_brief": {
+            "description": "Real Sampling Masters release with catalogue identity and creators, no unrelated techno compilation.",
+            "selected_asset": null,
+            "status": "exact_identity_rights_native_resolution_and_card_fit_review_required"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "gameaudio86",
+          "title": "1986 game music roundtable",
+          "publisher": "Beep, June1986; named Capcom, Nichibutsu and SNK participants; English translation shmuplations",
+          "url": "https://shmuplations.com/gamemusic1986/",
+          "publication_date": "1986-06",
+          "checked": "2026-10-21",
+          "source_type": "Original named participant interview, production account or publisher technical document",
+          "locator": "Beep June1986 roundtable: Mori Gunsmoke directly programmed; Yoshida sitting beside programmer; Same publication: individual PCB sound, noisy arcades and headphone/cockpit proposals",
+          "rights": "Bibliographic citation only. Original text, translations, photographs, trademarks and performances retain their respective rights.",
+          "snapshot": {
+            "path": "build/research/editorial16/gameaudio86.html",
+            "sha256": "511616ced11327a58ada00dead30e3cade5ba6d7240dac0f6e7a5432e6592693",
+            "bytes": 166201
+          }
+        },
+        {
+          "id": "saso10",
+          "title": "Interview with Ayako Saso",
+          "publisher": "Chris Greening / Square Enix Music Online; translation Shota Nakama and Marc Friedman",
+          "url": "https://www.squareenixmusic.com/features/interviews/ayakosaso.shtml",
+          "publication_date": "2010-05",
+          "checked": "2026-10-21",
+          "source_type": "Original named participant interview, production account or publisher technical document",
+          "locator": "Chris Greening May2010 interview, Rolling Thunder2 answer and FM8/PCM24 modules; Same interview, Sampling Masters/Troubadour Records answer",
+          "rights": "Bibliographic citation only. Original text, translations, photographs, trademarks and performances retain their respective rights.",
+          "snapshot": {
+            "path": "build/research/editorial16/saso10.html",
+            "sha256": "222035682edc62888d1f20faff8a7e3a99703d8cfeed2c7d689bc049bb5a20cd",
+            "bytes": 31839
+          }
+        }
+      ],
+      "source_ids": [
+        "gameaudio86",
+        "saso10"
+      ],
+      "source_budget_audit": [
+        {
+          "source_budget_group": "gameaudio86",
+          "body_indices": [
+            0,
+            1
+          ],
+          "whitespace_words": 187,
+          "unicode_lexical_words": 188,
+          "charged_words": 188,
+          "maximum_words": 200,
+          "verbatim_quoted_words": 0
+        },
+        {
+          "source_budget_group": "saso10",
+          "body_indices": [
+            2,
+            3
+          ],
+          "whitespace_words": 190,
+          "unicode_lexical_words": 193,
+          "charged_words": 193,
+          "maximum_words": 200,
+          "verbatim_quoted_words": 0
+        }
+      ]
+    },
+    {
+      "id": "feature-survival-horror-sound",
+      "title": "A frightening place needs a voice",
+      "summary": "SOMA makes its spaces audible.",
+      "year": 2015,
+      "body": [
+        "SOMA's audio director Samuel Justice describes two contrasting environments: the underwater world and the air inside Pathos-II. He wanted players to distinguish them through sound even without the picture. That ambition turned atmosphere into a way of locating a body. A machine, a movement or a voice needed to belong to the space around it. Horror could emerge from hearing something almost familiar in the distance, but the surrounding acoustics first had to establish what this particular place normally sounded like.",
+        "Foley artist Tapio Liukkonen sought real locations of different sizes for the player's movements. Justice explains that the game could select material according to the room, rather than relying only on the surface underfoot. For underwater dialogue, the team also recorded Simon binaurally at SIDE in London alongside the ordinary recording. These were distinct practical choices. One connected movement to surrounding architecture; the other brought a voice into the listener's apparent position inside a helmet. The environment and the person occupying it acquired different audible relationships.",
+        "Writer Mikael Hedberg's account shows that a recognizable voice was not available from the beginning. SOMA went through several recording rounds as its characters and tone changed. A tougher interpretation of Simon pulled away from the everyday person Hedberg had been writing, and the team eventually returned to Jared Zeus. Casting supplied a test of the script's intentions. Hearing a line could expose a mismatch that looked less obvious on paper, sending the production back to a decision it had already seemed to settle.",
+        "Catherine's eventual performer, Nell Mooney, had originally auditioned for another role. Hedberg heard qualities in that reading which suited the relationship he wanted, and the team tried her as Catherine. Later sessions brought the two principal actors back each morning, letting him hear the story develop and adjust small parts around their delivery. A game's voice work therefore included finding a collaborator, arranging time and revising written material. The final conversation carried the accumulated work of performers, directors, writers and engineers into the player's headphones."
+      ],
+      "kind": "feature",
+      "layout": "story",
+      "language": "en",
+      "era_id": "everywhere",
+      "date": {
+        "precision": "year"
+      },
+      "story_headings": [
+        "Hear which world surrounds you",
+        "A room changes a footstep",
+        "The wrong voice reveals a problem",
+        "A conversation finds its rhythm"
+      ],
+      "related_ids": [],
+      "editorial_mode": "original_additive_feature",
+      "editorial_credit": "Original English feature written for Pixel Museum. Creators, interviewers, translators and original publications are credited per card.",
+      "event_semantics": "Existing work year anchors an attachment. Standalone proposed years are research anchors, not newly verified release dates. Retrospective interviews and later revisions remain distinct in the text.",
+      "integration": {
+        "mode": "proposed_distinct_subject_pending_deduplication_and_media",
+        "proposed_parent_id": null,
+        "overwrite_existing_body": false,
+        "requires_semantic_merge_review": true,
+        "net_new_destination_claim": false
+      },
+      "review_status": "complete_english_prose_pending_independent_claim_and_placement_review",
+      "media_status": "Individual card briefs only; no image, film or audio rights approval claimed.",
+      "cards": [
+        {
+          "body_index": 0,
+          "heading": "Hear which world surrounds you",
+          "source_ids": [
+            "somasound"
+          ],
+          "citations": [
+            {
+              "source_id": "somasound",
+              "url": "https://frictionalgames.com/2015-09-soma-behind-the-sound/",
+              "locator": "Samuel Justice17September2015: underwater versus air soundscapes"
+            }
+          ],
+          "media_brief": {
+            "description": "Actual2015 SOMA underwater and interior images with edition/rights identified.",
+            "selected_asset": null,
+            "status": "exact_identity_rights_native_resolution_and_card_fit_review_required"
+          }
+        },
+        {
+          "body_index": 1,
+          "heading": "A room changes a footstep",
+          "source_ids": [
+            "somasound"
+          ],
+          "citations": [
+            {
+              "source_id": "somasound",
+              "url": "https://frictionalgames.com/2015-09-soma-behind-the-sound/",
+              "locator": "Same publication: room-size system, TapioLiukkonen Foley locations and SIDE binaural recording"
+            }
+          ],
+          "media_brief": {
+            "description": "The actual credited Foley/session material, not a generic recording studio.",
+            "selected_asset": null,
+            "status": "exact_identity_rights_native_resolution_and_card_fit_review_required"
+          }
+        },
+        {
+          "body_index": 2,
+          "heading": "The wrong voice reveals a problem",
+          "source_ids": [
+            "somavoices"
+          ],
+          "citations": [
+            {
+              "source_id": "somavoices",
+              "url": "https://frictionalgames.com/2015-10-the-voices-of-soma/",
+              "locator": "Mikael Hedberg16October2015:2013verticalslice,2014tougherSimon and return to JaredZeus"
+            }
+          ],
+          "media_brief": {
+            "description": "Credited Jared Zeus portrait or actual SOMA recording photograph.",
+            "selected_asset": null,
+            "status": "exact_identity_rights_native_resolution_and_card_fit_review_required"
+          }
+        },
+        {
+          "body_index": 3,
+          "heading": "A conversation finds its rhythm",
+          "source_ids": [
+            "somavoices"
+          ],
+          "citations": [
+            {
+              "source_id": "somavoices",
+              "url": "https://frictionalgames.com/2015-10-the-voices-of-soma/",
+              "locator": "Same publication: NellMooney AliceKoster audition;2015morning sessions and small script revisions"
+            }
+          ],
+          "media_brief": {
+            "description": "Actual NellMooney and JaredZeus session material with participants verified.",
+            "selected_asset": null,
+            "status": "exact_identity_rights_native_resolution_and_card_fit_review_required"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "somasound",
+          "title": "SOMA: Behind the Sound",
+          "publisher": "Samuel Justice and credited Kpow Audio contributors / Frictional Games",
+          "url": "https://frictionalgames.com/2015-09-soma-behind-the-sound/",
+          "publication_date": "2015-09-17",
+          "checked": "2026-10-21",
+          "source_type": "Original named participant interview, production account or publisher technical document",
+          "locator": "Samuel Justice17September2015: underwater versus air soundscapes; Same publication: room-size system, TapioLiukkonen Foley locations and SIDE binaural recording",
+          "rights": "Bibliographic citation only. Original text, translations, photographs, trademarks and performances retain their respective rights.",
+          "snapshot": {
+            "path": "build/research/editorial16/somasound.html",
+            "sha256": "3b82acf33ed9dac9b58007389526a5567e5be2a5447283549c47b2d5553af744",
+            "bytes": 300292
+          }
+        },
+        {
+          "id": "somavoices",
+          "title": "The Voices of SOMA",
+          "publisher": "Mikael Hedberg / Frictional Games",
+          "url": "https://frictionalgames.com/2015-10-the-voices-of-soma/",
+          "publication_date": "2015-10-16",
+          "checked": "2026-10-21",
+          "source_type": "Original named participant interview, production account or publisher technical document",
+          "locator": "Mikael Hedberg16October2015:2013verticalslice,2014tougherSimon and return to JaredZeus; Same publication: NellMooney AliceKoster audition;2015morning sessions and small script revisions",
+          "rights": "Bibliographic citation only. Original text, translations, photographs, trademarks and performances retain their respective rights.",
+          "snapshot": {
+            "path": "build/research/editorial16/somavoices.html",
+            "sha256": "24fbb96e3ebcf3215f328b3b605a3f42e8d95b15c2c1d48ae8f6a391dad5f537",
+            "bytes": 297810
+          }
+        }
+      ],
+      "source_ids": [
+        "somasound",
+        "somavoices"
+      ],
+      "source_budget_audit": [
+        {
+          "source_budget_group": "somasound",
+          "body_indices": [
+            0,
+            1
+          ],
+          "whitespace_words": 188,
+          "unicode_lexical_words": 192,
+          "charged_words": 192,
+          "maximum_words": 200,
+          "verbatim_quoted_words": 0
+        },
+        {
+          "source_budget_group": "somavoices",
+          "body_indices": [
+            2,
+            3
+          ],
+          "whitespace_words": 191,
+          "unicode_lexical_words": 196,
+          "charged_words": 196,
+          "maximum_words": 200,
+          "verbatim_quoted_words": 0
+        }
+      ]
+    },
+    {
+      "id": "feature-animal-crossing-time",
+      "title": "The town meets your timetable",
+      "summary": "Everyday time creates design decisions.",
+      "year": 2001,
+      "body": [
+        "During New Leaf's development, Aya Kyogoku faced a familiar problem: coming home late could mean finding Tom Nook's shop already closed. Keeping every shop open around the clock would erase part of the difference between day and night. The team's answer connected time to the player's new position as mayor. Ordinances could adjust opening hours while preserving a town that followed ordinary time. The design addressed a particular working routine by changing the rules inside the fiction, rather than asking everyone to change the console clock.",
+        "The mayoral role also needed to feel present without turning the game into a demanding job. Nintendo's interview describes ceremonies added after completed projects, giving public recognition to something the player had funded. Yet the team reassures Iwata that neglected duties do not produce an approval rating or angry demands to improve. The town acknowledges participation while leaving room to decline it. A small celebration changes the emotional meaning of a bridge without requiring a new system for measuring whether someone has been a sufficiently industrious resident.",
+        "An earlier Nintendo seminar connects this attention to daily routines with the original Animal Crossing. Hisashi Nogami and Katsuya Eguchi discuss messages that could pass between people playing at different times. A parent arriving home late could leave something for a child to discover later. Their discussion is preserved in Matt Walker's English translation of the 2008 session. The shared village did not require simultaneous attendance to create a relationship: the same place could hold one person's action until another person was ready to encounter it.",
+        "The seminar also challenges the assumption that a collection needs a published completion target. Eguchi and Nogami explain wanting enough objects that people could feel satisfied according to their own interests, without knowing exactly where the total ended. Furniture could give a visit purpose without making exhaustive acquisition the declared goal. This is a specific account of the team's intention, rather than a rule about how every player behaved. Someone might still collect obsessively, but the designers were trying to leave another kind of stopping point available."
+      ],
+      "kind": "feature",
+      "layout": "story",
+      "language": "en",
+      "era_id": "connected",
+      "date": {
+        "precision": "year"
+      },
+      "story_headings": [
+        "A shop closes before you arrive",
+        "Authority without a punishment meter",
+        "A message waits for another player",
+        "Enough is different for everyone"
+      ],
+      "related_ids": [
+        "wikipedia-540952"
+      ],
+      "editorial_mode": "original_additive_feature",
+      "editorial_credit": "Original English feature written for Pixel Museum. Creators, interviewers, translators and original publications are credited per card.",
+      "event_semantics": "Existing work year anchors an attachment. Standalone proposed years are research anchors, not newly verified release dates. Retrospective interviews and later revisions remain distinct in the text.",
+      "integration": {
+        "mode": "proposed_attachment",
+        "proposed_parent_id": "wikipedia-540952",
+        "overwrite_existing_body": false,
+        "requires_semantic_merge_review": true,
+        "net_new_destination_claim": false
+      },
+      "review_status": "complete_english_prose_pending_independent_claim_and_placement_review",
+      "media_status": "Individual card briefs only; no image, film or audio rights approval claimed.",
+      "parent_body_review": {
+        "entry_id": "wikipedia-540952",
+        "body_sha256": "115b12475c06970921224ea74c98f9e083beb3416a28a8eb3a8f7cffa950cef7",
+        "complete_body_read": true
+      },
+      "cards": [
+        {
+          "body_index": 0,
+          "heading": "A shop closes before you arrive",
+          "source_ids": [
+            "acnewleaf"
+          ],
+          "citations": [
+            {
+              "source_id": "acnewleaf",
+              "url": "https://iwataasks.nintendo.com/interviews/3ds/animalcrossing-newleaf/0/1/",
+              "locator": "IwataAsksNewLeaf chapter2: Kyogoku closed shop, Moro shared time and ordinances"
+            }
+          ],
+          "media_brief": {
+            "description": "Actual NewLeaf shop at night and ordinance menu from the3DS release.",
+            "selected_asset": null,
+            "status": "exact_identity_rights_native_resolution_and_card_fit_review_required"
+          }
+        },
+        {
+          "body_index": 1,
+          "heading": "Authority without a punishment meter",
+          "source_ids": [
+            "acnewleaf"
+          ],
+          "citations": [
+            {
+              "source_id": "acnewleaf",
+              "url": "https://iwataasks.nintendo.com/interviews/3ds/animalcrossing-newleaf/0/1/",
+              "locator": "Same chapter: approvalrating absent; Eguchi test feedback and project ceremonies"
+            }
+          ],
+          "media_brief": {
+            "description": "A completed NewLeaf public works ceremony, not a NewHorizons ceremony.",
+            "selected_asset": null,
+            "status": "exact_identity_rights_native_resolution_and_card_fit_review_required"
+          }
+        },
+        {
+          "body_index": 2,
+          "heading": "A message waits for another player",
+          "source_ids": [
+            "acseminar"
+          ],
+          "citations": [
+            {
+              "source_id": "acseminar",
+              "url": "https://www.nintendoworldreport.com/feature/42993/iwata-asks-in-commemoration-part-1-nintendo-game-seminar-2008-nintendo-game-seminar-2008-the-road-to-completing-animal-crossing-part-4",
+              "locator": "NintendoGameSeminar2008 part4 translatedMattWalker11July2016: Iwata father's letters/Nogami bulletin board"
+            }
+          ],
+          "media_brief": {
+            "description": "A real original AnimalCrossing letter interface with hardware/version identified.",
+            "selected_asset": null,
+            "status": "exact_identity_rights_native_resolution_and_card_fit_review_required"
+          }
+        },
+        {
+          "body_index": 3,
+          "heading": "Enough is different for everyone",
+          "source_ids": [
+            "acseminar"
+          ],
+          "citations": [
+            {
+              "source_id": "acseminar",
+              "url": "https://www.nintendoworldreport.com/feature/42993/iwata-asks-in-commemoration-part-1-nintendo-game-seminar-2008-nintendo-game-seminar-2008-the-road-to-completing-animal-crossing-part-4",
+              "locator": "Same seminar: unannounced furniture total and each player's own satisfaction threshold"
+            }
+          ],
+          "media_brief": {
+            "description": "A clearly identified original village interior and furniture arrangement, not a fabricated catalogue total.",
+            "selected_asset": null,
+            "status": "exact_identity_rights_native_resolution_and_card_fit_review_required"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "acnewleaf",
+          "title": "Iwata Asks: Animal Crossing New Leaf, Being the Mayor",
+          "publisher": "Satoru Iwata with Aya Kyogoku, Isao Moro and Nintendo colleagues",
+          "url": "https://iwataasks.nintendo.com/interviews/3ds/animalcrossing-newleaf/0/1/",
+          "publication_date": null,
+          "checked": "2026-10-21",
+          "source_type": "Original named participant interview, production account or publisher technical document",
+          "locator": "IwataAsksNewLeaf chapter2: Kyogoku closed shop, Moro shared time and ordinances; Same chapter: approvalrating absent; Eguchi test feedback and project ceremonies",
+          "rights": "Bibliographic citation only. Original text, translations, photographs, trademarks and performances retain their respective rights.",
+          "snapshot": {
+            "path": "build/research/editorial16/acnewleaf.html",
+            "sha256": "afc0c9448d1d545644411f06c20b385ada8c64207adc3cbf2e187a47bd486f5a",
+            "bytes": 82777
+          }
+        },
+        {
+          "id": "acseminar",
+          "title": "Nintendo Game Seminar2008: The Road to Completing Animal Crossing, part4",
+          "publisher": "Nintendo seminar participants; English translation Matt Walker / Nintendo World Report",
+          "url": "https://www.nintendoworldreport.com/feature/42993/iwata-asks-in-commemoration-part-1-nintendo-game-seminar-2008-nintendo-game-seminar-2008-the-road-to-completing-animal-crossing-part-4",
+          "publication_date": "2016-07-11",
+          "checked": "2026-10-21",
+          "source_type": "Original named participant interview, production account or publisher technical document",
+          "locator": "NintendoGameSeminar2008 part4 translatedMattWalker11July2016: Iwata father's letters/Nogami bulletin board; Same seminar: unannounced furniture total and each player's own satisfaction threshold",
+          "rights": "Bibliographic citation only. Original text, translations, photographs, trademarks and performances retain their respective rights.",
+          "snapshot": {
+            "path": "build/research/editorial16/acseminar.html",
+            "sha256": "5b65a82655630f7c92c9946eb8652fe681ba2e7d0027b2b48d07320a9a33df93",
+            "bytes": 22387
+          }
+        }
+      ],
+      "source_ids": [
+        "acnewleaf",
+        "acseminar"
+      ],
+      "source_budget_audit": [
+        {
+          "source_budget_group": "acnewleaf",
+          "body_indices": [
+            0,
+            1
+          ],
+          "whitespace_words": 194,
+          "unicode_lexical_words": 199,
+          "charged_words": 199,
+          "maximum_words": 200,
+          "verbatim_quoted_words": 0
+        },
+        {
+          "source_budget_group": "acseminar",
+          "body_indices": [
+            2,
+            3
+          ],
+          "whitespace_words": 194,
+          "unicode_lexical_words": 197,
+          "charged_words": 197,
+          "maximum_words": 200,
+          "verbatim_quoted_words": 0
+        }
+      ]
+    },
+    {
+      "id": "feature-minecraft-making-together",
+      "title": "A world made together",
+      "summary": "Shared rules make collaboration readable.",
+      "year": 2011,
+      "body": [
+        "In his February 2011 postmortem, Markus Persson describes players finding purposes in Minecraft that he had not originally prioritized. Free building from an early engine test became Creative mode because people continued to enjoy it. He also recalls changing his mind about custom textures after seeing a player made Portal server. The work arriving from outside the studio could make an argument through something playable. A modification showed what an option might accomplish more directly than a request for another feature alone could do.",
+        "Persson's account also identifies the cost of postponing multiplayer during a rewrite. New systems had accumulated assumptions about a single player, mixing parts of their rules with the code that drew them. Moving inventory to the server required substantial further work. Shared building therefore depended on less visible agreements beneath the blocks. The software had to determine which state belonged to everyone, rather than letting each screen behave like a complete private world. His postmortem describes a change toward testing new features in both modes earlier.",
+        "Jens Bergensten explains another shared rule in a 2016 interview: building remains an action involving one block at a time. An efficient editor could place more at once, but he wanted another person to understand a construction as it happened. Two builders could also work faster together. The limit gives collaboration an immediately visible form. Someone can follow the next placement, contribute a neighbouring piece and recognize how an unfinished structure is becoming a larger plan through actions that remain small enough to read.",
+        "A 2017 snapshot announcement shows another scale of improvement. Creative players could save and reload toolbars, preserving a chosen set of materials instead of repeatedly assembling it. The same experimental release introduced concrete, concrete powder and glazed terracotta. The publication asks players to report bugs and protect their worlds before testing. New building possibilities arrived alongside a practical testing routine. A public update could supply tools for making things while also inviting the audience to help discover how those tools behaved outside the development team's own examples."
+      ],
+      "kind": "feature",
+      "layout": "story",
+      "language": "en",
+      "era_id": "everywhere",
+      "date": {
+        "precision": "year"
+      },
+      "story_headings": [
+        "Players change the proposal",
+        "One world needs several viewpoints",
+        "One block at a time",
+        "A toolbar remembers your materials"
+      ],
+      "related_ids": [
+        "minecraft"
+      ],
+      "editorial_mode": "original_additive_feature",
+      "editorial_credit": "Original English feature written for Pixel Museum. Creators, interviewers, translators and original publications are credited per card.",
+      "event_semantics": "Existing work year anchors an attachment. Standalone proposed years are research anchors, not newly verified release dates. Retrospective interviews and later revisions remain distinct in the text.",
+      "integration": {
+        "mode": "proposed_attachment",
+        "proposed_parent_id": "minecraft",
+        "overwrite_existing_body": false,
+        "requires_semantic_merge_review": true,
+        "net_new_destination_claim": false
+      },
+      "review_status": "complete_english_prose_pending_independent_claim_and_placement_review",
+      "media_status": "Individual card briefs only; no image, film or audio rights approval claimed.",
+      "parent_body_review": {
+        "entry_id": "minecraft",
+        "body_sha256": "2c7fe66bb4b9804693dfb1b2356e94759cd1bb124cb73008ca151ff246ddff71",
+        "complete_body_read": true
+      },
+      "cards": [
+        {
+          "body_index": 0,
+          "heading": "Players change the proposal",
+          "source_ids": [
+            "minecraft11"
+          ],
+          "citations": [
+            {
+              "source_id": "minecraft11",
+              "url": "https://media.gdcvault.com/GD_Mag_Archives/GDM_February_2011.pdf",
+              "locator": "Persson postmortem, WhatWentRight2Listening: Creative mode and Portal custom-texture server"
+            }
+          ],
+          "media_brief": {
+            "description": "The real early Minecraft building mode or documented original Portal server, with capture edition explicit.",
+            "selected_asset": null,
+            "status": "exact_identity_rights_native_resolution_and_card_fit_review_required"
+          }
+        },
+        {
+          "body_index": 1,
+          "heading": "One world needs several viewpoints",
+          "source_ids": [
+            "minecraft11"
+          ],
+          "citations": [
+            {
+              "source_id": "minecraft11",
+              "url": "https://media.gdcvault.com/GD_Mag_Archives/GDM_February_2011.pdf",
+              "locator": "Same article, WhatWentWrong5: late multiplayer, distributed inventory and testing both modes"
+            }
+          ],
+          "media_brief": {
+            "description": "Actual early multiplayer building, not current Bedrock shown as2011.",
+            "selected_asset": null,
+            "status": "exact_identity_rights_native_resolution_and_card_fit_review_required"
+          }
+        },
+        {
+          "body_index": 2,
+          "heading": "One block at a time",
+          "source_ids": [
+            "jens16"
+          ],
+          "citations": [
+            {
+              "source_id": "jens16",
+              "url": "https://time.com/4568843/minecraft-exploration-update-jens-bergensten-interview/",
+              "locator": "TIME interview14November2016: one-block interaction and cooperation, single card within100-word source ceiling"
+            }
+          ],
+          "media_brief": {
+            "description": "A real shared build in the stated edition; no invented image of the interview event.",
+            "selected_asset": null,
+            "status": "exact_identity_rights_native_resolution_and_card_fit_review_required"
+          }
+        },
+        {
+          "body_index": 3,
+          "heading": "A toolbar remembers your materials",
+          "source_ids": [
+            "snapshot17"
+          ],
+          "citations": [
+            {
+              "source_id": "snapshot17",
+              "url": "https://www.minecraft.net/en-us/article/minecraft-snapshot-17w06a",
+              "locator": "JensBergensten8February2017 announcement: savedtoolbars, concrete/terracotta and bugreport/backups"
+            }
+          ],
+          "media_brief": {
+            "description": "Actual17w06a blocks and saved-toolbar controls, version identified.",
+            "selected_asset": null,
+            "status": "exact_identity_rights_native_resolution_and_card_fit_review_required"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "minecraft11",
+          "title": "Minecraft postmortem",
+          "publisher": "Markus Persson / Game Developer, February2011",
+          "url": "https://media.gdcvault.com/GD_Mag_Archives/GDM_February_2011.pdf",
+          "publication_date": "2011-02",
+          "checked": "2026-10-21",
+          "source_type": "Original named participant interview, production account or publisher technical document",
+          "locator": "Persson postmortem, WhatWentRight2Listening: Creative mode and Portal custom-texture server; Same article, WhatWentWrong5: late multiplayer, distributed inventory and testing both modes",
+          "rights": "Bibliographic citation only. Original text, translations, photographs, trademarks and performances retain their respective rights.",
+          "snapshot": {
+            "path": "build/research/editorial16/minecraft11.pdf",
+            "sha256": "c5cb7b80301dfc08e0efefb98cead30a20824bd2eddcf8d2150ecbb6d7a5401b",
+            "bytes": 36203440
+          }
+        },
+        {
+          "id": "jens16",
+          "title": "Minecraft luminary Jens Bergensten talks about the game",
+          "publisher": "Matt Peckham interviewing Jens Bergensten / TIME",
+          "url": "https://time.com/4568843/minecraft-exploration-update-jens-bergensten-interview/",
+          "publication_date": "2016-11-14",
+          "checked": "2026-10-21",
+          "source_type": "Original named participant interview, production account or publisher technical document",
+          "locator": "TIME interview14November2016: one-block interaction and cooperation, single card within100-word source ceiling",
+          "rights": "Bibliographic citation only. Original text, translations, photographs, trademarks and performances retain their respective rights.",
+          "snapshot": {
+            "path": "build/research/editorial16/jens16.html",
+            "sha256": "b9617267df8bc58a53c45dc15db70f0493e65af02554e31dde5066f4e5e11daa",
+            "bytes": 411295
+          }
+        },
+        {
+          "id": "snapshot17",
+          "title": "Minecraft Snapshot17w06a",
+          "publisher": "Jens Bergensten / Mojang",
+          "url": "https://www.minecraft.net/en-us/article/minecraft-snapshot-17w06a",
+          "publication_date": "2017-02-08",
+          "checked": "2026-10-21",
+          "source_type": "Original named participant interview, production account or publisher technical document",
+          "locator": "JensBergensten8February2017 announcement: savedtoolbars, concrete/terracotta and bugreport/backups",
+          "rights": "Bibliographic citation only. Original text, translations, photographs, trademarks and performances retain their respective rights.",
+          "snapshot": {
+            "path": "build/research/editorial16/snapshot17.html",
+            "sha256": "63972102189955391a962081a8aec5c90d3626300c4a44189fc0cff4df05313b",
+            "bytes": 394952
+          }
+        }
+      ],
+      "source_ids": [
+        "minecraft11",
+        "jens16",
+        "snapshot17"
+      ],
+      "source_budget_audit": [
+        {
+          "source_budget_group": "minecraft11",
+          "body_indices": [
+            0,
+            1
+          ],
+          "whitespace_words": 188,
+          "unicode_lexical_words": 189,
+          "charged_words": 189,
+          "maximum_words": 200,
+          "verbatim_quoted_words": 0
+        },
+        {
+          "source_budget_group": "jens16",
+          "body_indices": [
+            2
+          ],
+          "whitespace_words": 98,
+          "unicode_lexical_words": 98,
+          "charged_words": 98,
+          "maximum_words": 100,
+          "verbatim_quoted_words": 0
+        },
+        {
+          "source_budget_group": "snapshot17",
+          "body_indices": [
+            3
+          ],
+          "whitespace_words": 101,
+          "unicode_lexical_words": 102,
+          "charged_words": 102,
+          "maximum_words": 200,
+          "verbatim_quoted_words": 0
+        }
+      ]
+    },
+    {
+      "id": "feature-souls-learning-communities",
+      "title": "A difficult world remains shared",
+      "summary": "Challenge carries an account of its audience.",
+      "year": 2013,
+      "body": [
+        "When Hidetaka Miyazaki discussed Dark Souls in February 2011, he described multiplayer surrounding each person's individual journey. People would cross paths and might cooperate or compete according to their circumstances. That was an announced design intention before release, rather than a measurement of every eventual player's experience. It helps explain why connection could alter the feeling of solitude without replacing it with a permanently assembled party. Another person could become important for a particular encounter, then disappear while the player's own route continued through the world.",
+        "Miyazaki called the planned Beacon Fire a place for emotional communication as well as recovery. In that early interview, its warmth was a contrast to the surrounding world, giving people a brief chance to relax. The account assigns an expressive purpose to a system that also organizes return after death. A safe point can mean more when other people appear to need it too. Reading this proposal alongside the later game requires care: the interview records what the director wanted the feature to convey before players encountered it.",
+        "Looking back at Demon's Souls in January 2013, Miyazaki resisted explaining its audience through separate national preferences. He said the team had concentrated on interests shared by people who loved games, while acknowledging that he could not perfectly explain the result. That qualification matters. A creator's explanation of an audience is evidence of an intention and a retrospective interpretation, not a complete account of why thousands of different people kept playing. The game's subsequent history also belongs to those players and the meanings they found themselves.",
+        "The same conversation asks whether Miyazaki would change the original Demon's Souls. Apart from bugs, he expresses a wish to keep the version that had grown alongside its fans. He connects a game to the generation in which it appeared, even while recognizing possible improvements. This is a dated statement about that original version, not a promise governing later remakes. It gives preservation a personal dimension: changing a system can also change something through which players learned, compared experiences and came to recognize one another's achievements."
+      ],
+      "kind": "feature",
+      "layout": "story",
+      "language": "en",
+      "era_id": "everywhere",
+      "date": {
+        "precision": "year"
+      },
+      "story_headings": [
+        "A meeting inside a solitary journey",
+        "Warmth becomes a design intention",
+        "An audience exceeds the market map",
+        "Keep the version people remember"
+      ],
+      "related_ids": [],
+      "editorial_mode": "original_additive_feature",
+      "editorial_credit": "Original English feature written for Pixel Museum. Creators, interviewers, translators and original publications are credited per card.",
+      "event_semantics": "Existing work year anchors an attachment. Standalone proposed years are research anchors, not newly verified release dates. Retrospective interviews and later revisions remain distinct in the text.",
+      "integration": {
+        "mode": "proposed_distinct_subject_pending_deduplication_and_media",
+        "proposed_parent_id": null,
+        "overwrite_existing_body": false,
+        "requires_semantic_merge_review": true,
+        "net_new_destination_claim": false
+      },
+      "review_status": "complete_english_prose_pending_independent_claim_and_placement_review",
+      "media_status": "Individual card briefs only; no image, film or audio rights approval claimed.",
+      "cards": [
+        {
+          "body_index": 0,
+          "heading": "A meeting inside a solitary journey",
+          "source_ids": [
+            "souls11"
+          ],
+          "citations": [
+            {
+              "source_id": "souls11",
+              "url": "https://blog.playstation.com/archive/2011/02/04/dark-souls-qa-variety-is-the-spice-of-death/",
+              "locator": "SidShuman4February2011: onlineco-op/competitive crossingpaths answer"
+            }
+          ],
+          "media_brief": {
+            "description": "Actual original2011 network encounter with participant/context accurately described.",
+            "selected_asset": null,
+            "status": "exact_identity_rights_native_resolution_and_card_fit_review_required"
+          }
+        },
+        {
+          "body_index": 1,
+          "heading": "Warmth becomes a design intention",
+          "source_ids": [
+            "souls11"
+          ],
+          "citations": [
+            {
+              "source_id": "souls11",
+              "url": "https://blog.playstation.com/archive/2011/02/04/dark-souls-qa-variety-is-the-spice-of-death/",
+              "locator": "Same interview, BeaconFire favourite addition and emotionalcommunication; prelaunch proposal"
+            }
+          ],
+          "media_brief": {
+            "description": "Original DarkSouls bonfire image, not a later remake or invented gathering.",
+            "selected_asset": null,
+            "status": "exact_identity_rights_native_resolution_and_card_fit_review_required"
+          }
+        },
+        {
+          "body_index": 2,
+          "heading": "An audience exceeds the market map",
+          "source_ids": [
+            "souls13"
+          ],
+          "citations": [
+            {
+              "source_id": "souls13",
+              "url": "https://blog.playstation.com/archive/2013/01/22/demons-souls-creator-looks-back-at-the-making-of-an-rpg-classic/",
+              "locator": "FredDutton22January2013: cannot fully analyse reception; game lovers versus nationalmarket targeting"
+            }
+          ],
+          "media_brief": {
+            "description": "A real contemporary fan event with identified participants and date; no generic crowd.",
+            "selected_asset": null,
+            "status": "exact_identity_rights_native_resolution_and_card_fit_review_required"
+          }
+        },
+        {
+          "body_index": 3,
+          "heading": "Keep the version people remember",
+          "source_ids": [
+            "souls13"
+          ],
+          "citations": [
+            {
+              "source_id": "souls13",
+              "url": "https://blog.playstation.com/archive/2013/01/22/demons-souls-creator-looks-back-at-the-making-of-an-rpg-classic/",
+              "locator": "Same interview: bugs, preserving2009version and game growing with fans; not later remake policy"
+            }
+          ],
+          "media_brief": {
+            "description": "Original2009PS3 DemonsSouls packaging or title screen, clearly distinguished from2020remake.",
+            "selected_asset": null,
+            "status": "exact_identity_rights_native_resolution_and_card_fit_review_required"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "souls11",
+          "title": "Dark Souls Q&A: Variety Is the Spice of Death",
+          "publisher": "Sid Shuman interviewing Hidetaka Miyazaki / PlayStation Blog",
+          "url": "https://blog.playstation.com/archive/2011/02/04/dark-souls-qa-variety-is-the-spice-of-death/",
+          "publication_date": "2011-02-04",
+          "checked": "2026-10-21",
+          "source_type": "Original named participant interview, production account or publisher technical document",
+          "locator": "SidShuman4February2011: onlineco-op/competitive crossingpaths answer; Same interview, BeaconFire favourite addition and emotionalcommunication; prelaunch proposal",
+          "rights": "Bibliographic citation only. Original text, translations, photographs, trademarks and performances retain their respective rights.",
+          "snapshot": {
+            "path": "build/research/editorial16/souls11.html",
+            "sha256": "e97462aeec9151ab62d3ade5386a4f162427874dd472b07d82a9182f2eef5b4e",
+            "bytes": 172562
+          }
+        },
+        {
+          "id": "souls13",
+          "title": "Demon's Souls creator looks back at an RPG classic",
+          "publisher": "Fred Dutton interviewing Hidetaka Miyazaki / PlayStation Blog",
+          "url": "https://blog.playstation.com/archive/2013/01/22/demons-souls-creator-looks-back-at-the-making-of-an-rpg-classic/",
+          "publication_date": "2013-01-22",
+          "checked": "2026-10-21",
+          "source_type": "Original named participant interview, production account or publisher technical document",
+          "locator": "FredDutton22January2013: cannot fully analyse reception; game lovers versus nationalmarket targeting; Same interview: bugs, preserving2009version and game growing with fans; not later remake policy",
+          "rights": "Bibliographic citation only. Original text, translations, photographs, trademarks and performances retain their respective rights.",
+          "snapshot": {
+            "path": "build/research/editorial16/souls13.html",
+            "sha256": "27e850254af532f37dc2988e87bfc3b74c2f3e13901a780e15c5404323d7b8fc",
+            "bytes": 179919
+          }
+        }
+      ],
+      "source_ids": [
+        "souls11",
+        "souls13"
+      ],
+      "source_budget_audit": [
+        {
+          "source_budget_group": "souls11",
+          "body_indices": [
+            0,
+            1
+          ],
+          "whitespace_words": 197,
+          "unicode_lexical_words": 200,
+          "charged_words": 200,
+          "maximum_words": 200,
+          "verbatim_quoted_words": 0
+        },
+        {
+          "source_budget_group": "souls13",
+          "body_indices": [
+            2,
+            3
+          ],
+          "whitespace_words": 195,
+          "unicode_lexical_words": 200,
+          "charged_words": 200,
+          "maximum_words": 200,
+          "verbatim_quoted_words": 0
+        }
+      ]
+    },
+    {
+      "id": "feature-vr-presence-comfort",
+      "title": "The person behind the viewpoint",
+      "summary": "A virtual camera belongs to a body.",
+      "year": 2020,
+      "body": [
+        "Jed Ashforth's 2014 presentation on Project Morpheus lists differences between a virtual world and the body experiencing it. A chair and controller remain physically present. A represented sword has no matching weight, and a wall cannot supply the expected resistance. These are design conditions, not details automatically solved by a more convincing image. The presentation puts the player's expectations beside the sensations the equipment can actually provide. A world must accommodate that gap while inviting someone to believe they have entered its space.",
+        "Ashforth's instruction to preserve the player's control of their head follows from that changed viewpoint. Moving a camera for dramatic effect can conflict with someone looking around through a headset. His slides place comfort among the basic priorities of design rather than treating it as a finishing option. This is a historical presentation, not medical advice or a guarantee of comfort for everyone. It documents a shift in responsibility: framing an event now also means considering the movement of the person whose eyes provide the view.",
+        "Alex Vlachos's 2015 rendering presentation makes the technical side of that responsibility concrete. Its HTC Vive developer hardware runs at ninety refreshes per second, leaving about eleven milliseconds for each frame. The slides examine scheduling work around display timing and predicting the viewpoint. These are specifications and methods from that particular development period, not measurements of every headset. They show why smoothness belongs to the experience itself. A detailed room still has to reach the display at the right moment as the user continues to move.",
+        "Tracking also changes what counts as a small visual effect. Vlachos warns that users can approach objects inside the tracked space, so an expensive detail cannot safely be treated as a permanently tiny item in a corner. Nearby floors and surfaces need attention too. A player who bends closer changes the production problem simply by looking. The design of a virtual place therefore includes the range of distances at which its materials remain convincing, alongside the frame timing needed to keep that moving observation coherent."
+      ],
+      "kind": "feature",
+      "layout": "story",
+      "language": "en",
+      "era_id": "living-history",
+      "date": {
+        "precision": "year"
+      },
+      "story_headings": [
+        "The room does not disappear",
+        "Let the head remain yours",
+        "A frame has a deadline",
+        "A distant detail becomes reachable"
+      ],
+      "related_ids": [
+        "workbook-03-23-half-life-alyx"
+      ],
+      "editorial_mode": "original_additive_feature",
+      "editorial_credit": "Original English feature written for Pixel Museum. Creators, interviewers, translators and original publications are credited per card.",
+      "event_semantics": "Existing work year anchors an attachment. Standalone proposed years are research anchors, not newly verified release dates. Retrospective interviews and later revisions remain distinct in the text.",
+      "integration": {
+        "mode": "proposed_attachment",
+        "proposed_parent_id": "workbook-03-23-half-life-alyx",
+        "overwrite_existing_body": false,
+        "requires_semantic_merge_review": true,
+        "net_new_destination_claim": false
+      },
+      "review_status": "complete_english_prose_pending_independent_claim_and_placement_review",
+      "media_status": "Individual card briefs only; no image, film or audio rights approval claimed.",
+      "parent_body_review": {
+        "entry_id": "workbook-03-23-half-life-alyx",
+        "body_sha256": "0844ca0d670fff0b0801929f3400509eac60becd017552cb614de7a1a026e9a3",
+        "complete_body_read": true
+      },
+      "cards": [
+        {
+          "body_index": 0,
+          "heading": "The room does not disappear",
+          "source_ids": [
+            "vr14"
+          ],
+          "citations": [
+            {
+              "source_id": "vr14",
+              "url": "https://media.gdcvault.com/gdceurope2014/Presentations/830397_Ashforth_Jed_RebootingGameDesignVR.pdf",
+              "locator": "JedAshforthGDC Europe2014 slides12–14: fragile immersion and real-body mismatches"
+            }
+          ],
+          "media_brief": {
+            "description": "Actual2014ProjectMorpheus tracking/headset context from licensed original photography.",
+            "selected_asset": null,
+            "status": "exact_identity_rights_native_resolution_and_card_fit_review_required"
+          }
+        },
+        {
+          "body_index": 1,
+          "heading": "Let the head remain yours",
+          "source_ids": [
+            "vr14"
+          ],
+          "citations": [
+            {
+              "source_id": "vr14",
+              "url": "https://media.gdcvault.com/gdceurope2014/Presentations/830397_Ashforth_Jed_RebootingGameDesignVR.pdf",
+              "locator": "Same presentation slides15–25: control of head and comfort priority"
+            }
+          ],
+          "media_brief": {
+            "description": "An identified tracked user in a real room, no falsely universal ergonomic diagram.",
+            "selected_asset": null,
+            "status": "exact_identity_rights_native_resolution_and_card_fit_review_required"
+          }
+        },
+        {
+          "body_index": 2,
+          "heading": "A frame has a deadline",
+          "source_ids": [
+            "vr15"
+          ],
+          "citations": [
+            {
+              "source_id": "vr15",
+              "url": "https://media.steampowered.com/apps/valve/2015/Alex_Vlachos_Advanced_VR_Rendering_GDC2015.pdf",
+              "locator": "AlexVlachosGDC2015 slides4,16–23:90Hz11.11ms, prediction/scheduling and runningstart"
+            }
+          ],
+          "media_brief": {
+            "description": "Original2015Vive developer equipment or a permission-cleared original timing slide.",
+            "selected_asset": null,
+            "status": "exact_identity_rights_native_resolution_and_card_fit_review_required"
+          }
+        },
+        {
+          "body_index": 3,
+          "heading": "A distant detail becomes reachable",
+          "source_ids": [
+            "vr15"
+          ],
+          "citations": [
+            {
+              "source_id": "vr15",
+              "url": "https://media.steampowered.com/apps/valve/2015/Alex_Vlachos_Advanced_VR_Rendering_GDC2015.pdf",
+              "locator": "Same presentation slide9: no small effects and tracked-volume surface fidelity"
+            }
+          ],
+          "media_brief": {
+            "description": "An actual tracked-volume demonstration showing a person approaching an object; no fabricated performance chart.",
+            "selected_asset": null,
+            "status": "exact_identity_rights_native_resolution_and_card_fit_review_required"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "vr14",
+          "title": "Rebooting Game Design for Virtual Reality",
+          "publisher": "Jed Ashforth / Sony Computer Entertainment Europe, GDC Europe2014",
+          "url": "https://media.gdcvault.com/gdceurope2014/Presentations/830397_Ashforth_Jed_RebootingGameDesignVR.pdf",
+          "publication_date": "2014",
+          "checked": "2026-10-21",
+          "source_type": "Original named participant interview, production account or publisher technical document",
+          "locator": "JedAshforthGDC Europe2014 slides12–14: fragile immersion and real-body mismatches; Same presentation slides15–25: control of head and comfort priority",
+          "rights": "Bibliographic citation only. Original text, translations, photographs, trademarks and performances retain their respective rights.",
+          "snapshot": {
+            "path": "build/research/editorial16/vr14.pdf",
+            "sha256": "b295173e9b5c2a5a7db794b9f6df09e51dd0a1e90746116c66e90892c59c8afb",
+            "bytes": 9701070
+          }
+        },
+        {
+          "id": "vr15",
+          "title": "Advanced VR Rendering",
+          "publisher": "Alex Vlachos / Valve, GDC2015",
+          "url": "https://media.steampowered.com/apps/valve/2015/Alex_Vlachos_Advanced_VR_Rendering_GDC2015.pdf",
+          "publication_date": "2015-03",
+          "checked": "2026-10-21",
+          "source_type": "Original named participant interview, production account or publisher technical document",
+          "locator": "AlexVlachosGDC2015 slides4,16–23:90Hz11.11ms, prediction/scheduling and runningstart; Same presentation slide9: no small effects and tracked-volume surface fidelity",
+          "rights": "Bibliographic citation only. Original text, translations, photographs, trademarks and performances retain their respective rights.",
+          "snapshot": {
+            "path": "build/research/editorial16/vr15.pdf",
+            "sha256": "3084573fa0d0a24b83fa3c22186f5aeacbad284d4b80385a3dbd700b9ff06dfc",
+            "bytes": 8895826
+          }
+        }
+      ],
+      "source_ids": [
+        "vr14",
+        "vr15"
+      ],
+      "source_budget_audit": [
+        {
+          "source_budget_group": "vr14",
+          "body_indices": [
+            0,
+            1
+          ],
+          "whitespace_words": 191,
+          "unicode_lexical_words": 195,
+          "charged_words": 195,
+          "maximum_words": 200,
+          "verbatim_quoted_words": 0
+        },
+        {
+          "source_budget_group": "vr15",
+          "body_indices": [
+            2,
+            3
+          ],
+          "whitespace_words": 193,
+          "unicode_lexical_words": 194,
+          "charged_words": 194,
+          "maximum_words": 200,
+          "verbatim_quoted_words": 0
+        }
+      ]
+    },
+    {
+      "id": "feature-valve-team-tools",
+      "title": "Build the tool beside its user",
+      "summary": "A production method shapes the playable world.",
+      "year": 2004,
+      "body": [
+        "Ken Birdwell's 1999 account of Half-Life describes a prototype assembled from the promising parts of an unsatisfying game. A small group put working ideas into one level, kept the enjoyable variations and cut others. A new software feature had to become something practical enough to build quickly. Playing that shared result gave the wider team a direction it could recognize. The prototype was therefore more than a demonstration for someone outside the studio: it helped colleagues discover what they wanted the rest of the game to become.",
+        "Birdwell also advises programmers to work directly beside artists while introducing technology into a sample part of the game. Watching what someone attempts can reveal where an interface needs simplification, documentation or another capability. He then suggests letting that artist demonstrate the result to colleagues. The account treats adoption as part of building a useful tool. A feature can exist in code without yet becoming something a team understands, trusts and regularly uses to create the places a player will eventually encounter.",
+        "The later Half-Life 2 production account describes several small design groups rather than one central group. Each included programmers and level designers who depended on one another's work, including an engine programmer able to supply required technology. Sharing an office helped them decide which requests mattered most. The authors describe those relationships as a way to keep practical customers close to the people building a system. A proposed capability could be examined against the level that needed it instead of waiting for a distant handover.",
+        "Artists, acting specialists and sound production also had to meet those groups inside the levels. The 2005 account describes provisional sounds supporting prototypes before the final treatment followed a more stable design. Acting work supplied goals, rewards and animation, with some story heavy spaces receiving its own design attention. These stages did not make each craft independent. A changed encounter could affect a model, a line or a sound, so the playable level became the place where several kinds of work had to function together."
+      ],
+      "kind": "feature",
+      "layout": "story",
+      "language": "en",
+      "era_id": "connected",
+      "date": {
+        "precision": "year"
+      },
+      "story_headings": [
+        "A small level changes the direction",
+        "A feature needs someone to use it",
+        "The group has a demanding customer",
+        "Several crafts meet in one level"
+      ],
+      "related_ids": [
+        "wikipedia-575509"
+      ],
+      "editorial_mode": "original_additive_feature",
+      "editorial_credit": "Original English feature written for Pixel Museum. Creators, interviewers, translators and original publications are credited per card.",
+      "event_semantics": "Existing work year anchors an attachment. Standalone proposed years are research anchors, not newly verified release dates. Retrospective interviews and later revisions remain distinct in the text.",
+      "integration": {
+        "mode": "proposed_attachment",
+        "proposed_parent_id": "wikipedia-575509",
+        "overwrite_existing_body": false,
+        "requires_semantic_merge_review": true,
+        "net_new_destination_claim": false
+      },
+      "review_status": "complete_english_prose_pending_independent_claim_and_placement_review",
+      "media_status": "Individual card briefs only; no image, film or audio rights approval claimed.",
+      "parent_body_review": {
+        "entry_id": "wikipedia-575509",
+        "body_sha256": "38308c14688bd26dab75f7af2a937a6fc13672f9dfcdf3abff4c858cca49fe91",
+        "complete_body_read": true
+      },
+      "cards": [
+        {
+          "body_index": 0,
+          "heading": "A small level changes the direction",
+          "source_ids": [
+            "cabal99"
+          ],
+          "citations": [
+            {
+              "source_id": "cabal99",
+              "url": "https://media.gdcvault.com/GD_Mag_Archives/GDM_December_1999.pdf",
+              "locator": "KenBirdwellDecember1999 TheCabal, original magazine printedpp40–49: small prototype and simplified software features"
+            }
+          ],
+          "media_brief": {
+            "description": "Actual originalHalfLife prototype evidence from its makers, not a fan reconstruction.",
+            "selected_asset": null,
+            "status": "exact_identity_rights_native_resolution_and_card_fit_review_required"
+          }
+        },
+        {
+          "body_index": 1,
+          "heading": "A feature needs someone to use it",
+          "source_ids": [
+            "cabal99"
+          ],
+          "citations": [
+            {
+              "source_id": "cabal99",
+              "url": "https://media.gdcvault.com/GD_Mag_Archives/GDM_December_1999.pdf",
+              "locator": "Same article, lessons: work directly with artists and have artists demonstrate technology"
+            }
+          ],
+          "media_brief": {
+            "description": "A genuine original editor/tool demonstration with edition and permission identified.",
+            "selected_asset": null,
+            "status": "exact_identity_rights_native_resolution_and_card_fit_review_required"
+          }
+        },
+        {
+          "body_index": 2,
+          "heading": "The group has a demanding customer",
+          "source_ids": [
+            "cabal05"
+          ],
+          "citations": [
+            {
+              "source_id": "cabal05",
+              "url": "https://media.gdcvault.com/GD_Mag_Archives/GDM_November_2005.pdf",
+              "locator": "BrianJacobson/DavidSpeyrerNovember2005 ScalingTheCabal, printedp22: four/fivepeople, engineprogrammer and demandingcustomer"
+            }
+          ],
+          "media_brief": {
+            "description": "The actual HalfLife2 production group or credited design document; no generic office.",
+            "selected_asset": null,
+            "status": "exact_identity_rights_native_resolution_and_card_fit_review_required"
+          }
+        },
+        {
+          "body_index": 3,
+          "heading": "Several crafts meet in one level",
+          "source_ids": [
+            "cabal05"
+          ],
+          "citations": [
+            {
+              "source_id": "cabal05",
+              "url": "https://media.gdcvault.com/GD_Mag_Archives/GDM_November_2005.pdf",
+              "locator": "Same article printedp22: art/acting/sound teams and stand-in sounds before stable design"
+            }
+          ],
+          "media_brief": {
+            "description": "A credited original HalfLife2 level with its sound/acting production context, edition distinguished.",
+            "selected_asset": null,
+            "status": "exact_identity_rights_native_resolution_and_card_fit_review_required"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "cabal99",
+          "title": "The Cabal: Valve's Design Process for Creating Half-Life",
+          "publisher": "Ken Birdwell / Game Developer, December1999",
+          "url": "https://media.gdcvault.com/GD_Mag_Archives/GDM_December_1999.pdf",
+          "publication_date": "1999-12",
+          "checked": "2026-10-21",
+          "source_type": "Original named participant interview, production account or publisher technical document",
+          "locator": "KenBirdwellDecember1999 TheCabal, original magazine printedpp40–49: small prototype and simplified software features; Same article, lessons: work directly with artists and have artists demonstrate technology",
+          "rights": "Bibliographic citation only. Original text, translations, photographs, trademarks and performances retain their respective rights.",
+          "snapshot": {
+            "path": "build/research/editorial16/cabal99.pdf",
+            "sha256": "925b6eb5f05b3c1010de60744820fcf4d6d150d84c2a20095f3ec919c36de519",
+            "bytes": 1090322
+          }
+        },
+        {
+          "id": "cabal05",
+          "title": "Scaling the Cabal: Valve's Design Process for Creating Half-Life2",
+          "publisher": "Brian Jacobson and David Speyrer / Game Developer, November2005",
+          "url": "https://media.gdcvault.com/GD_Mag_Archives/GDM_November_2005.pdf",
+          "publication_date": "2005-11",
+          "checked": "2026-10-21",
+          "source_type": "Original named participant interview, production account or publisher technical document",
+          "locator": "BrianJacobson/DavidSpeyrerNovember2005 ScalingTheCabal, printedp22: four/fivepeople, engineprogrammer and demandingcustomer; Same article printedp22: art/acting/sound teams and stand-in sounds before stable design",
+          "rights": "Bibliographic citation only. Original text, translations, photographs, trademarks and performances retain their respective rights.",
+          "snapshot": {
+            "path": "build/research/editorial16/cabal05.pdf",
+            "sha256": "77facde39f4c256463f5d59fa7aaf9cc636ab225d914ab41e802d8c881e74786",
+            "bytes": 8795047
+          }
+        }
+      ],
+      "source_ids": [
+        "cabal99",
+        "cabal05"
+      ],
+      "source_budget_audit": [
+        {
+          "source_budget_group": "cabal99",
+          "body_indices": [
+            0,
+            1
+          ],
+          "whitespace_words": 195,
+          "unicode_lexical_words": 197,
+          "charged_words": 197,
+          "maximum_words": 200,
+          "verbatim_quoted_words": 0
+        },
+        {
+          "source_budget_group": "cabal05",
+          "body_indices": [
+            2,
+            3
+          ],
+          "whitespace_words": 195,
+          "unicode_lexical_words": 197,
+          "charged_words": 197,
+          "maximum_words": 200,
+          "verbatim_quoted_words": 0
+        }
+      ]
+    }
+  ]
+}

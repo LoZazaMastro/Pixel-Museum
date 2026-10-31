@@ -1,0 +1,96 @@
+{
+  "status": "PASS",
+  "locale": "es",
+  "entries": [
+    {
+      "entry_id": "wikipedia-65303340",
+      "source_fields_sha256": "f50770a658ce1d0a1a2f69adb1d2bfecc8955e8ec2d2c35fd7d7a31cfac94d58",
+      "translation_sha256": "ee66d4820e892f9354a9a6bb50ae79bdae8411aed5812c2c2fd02b1f1261ec41",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch337/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "b6e84a3c773c1d76815efac05c2641a25767caf800d9455111d540a3f086062c"
+    },
+    {
+      "entry_id": "wikipedia-67971343",
+      "source_fields_sha256": "a0d52f5d5f828b9db91e063e222d92806935a0b9c761bf3d01f4bdbb1a0289ac",
+      "translation_sha256": "7f4d69186a3ac6ce5ea62d8e0e26ab193720553c04589ba8bace05150a308bb3",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch337/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "b6e84a3c773c1d76815efac05c2641a25767caf800d9455111d540a3f086062c"
+    },
+    {
+      "entry_id": "wikipedia-67878456",
+      "source_fields_sha256": "455774076bf2ca52b6767f7593aadd55149b2c7494043abd3c0238b2d28dc78d",
+      "translation_sha256": "ddfaa60b8676b97fa74750fedaf33dedb659679421abe3ecc59aba56d45f6cc9",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch337/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "b6e84a3c773c1d76815efac05c2641a25767caf800d9455111d540a3f086062c"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "editorial_continue",
+    "actual_receipt": "build/research/catalog-2021-chronological/root-october-november-three-private/independent-editorial-peer-approval.json",
+    "actual_receipt_sha256": "5d772deed3786fcbe1818800632c31771f42040517057c0e1be6d5172e5d390f",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "editorial_continue",
+      "authors": [
+        "root",
+        "category_audit"
+      ],
+      "index_sha256": "2a9e4614f003f0ee6d504845f4a8610ab6fcf5ad4112ac0e7b160bcf25a21d91",
+      "owners": [
+        {
+          "entry_id": "wikipedia-65303340",
+          "slug": "riders",
+          "source": "build/research/catalog-2021-chronological/root-october-november-three-private/riders-source-private-candidate.json",
+          "source_sha256": "4fc3ab8298fb46525436f0323fd7f59fc599c03a450d16101f699fab0a25dcdb",
+          "target": "build/research/catalog-2021-chronological/root-october-november-three-private/riders-four-language-private-candidate.json",
+          "target_sha256": "ea528f79d9c163c7e2a71cdf5a2c74fa45e6a8ef28df4d59735204a9977373e4",
+          "contact": "build/research/catalog-2021-chronological/root-october-november-three-private/riders-final-contact.jpg",
+          "contact_sha256": "96484822553fae276e7b7f210e77a5051dc66d4fabd7face048910206709d9aa",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 4,
+          "tracks": 3
+        },
+        {
+          "entry_id": "wikipedia-67971343",
+          "slug": "forza",
+          "source": "build/research/catalog-2021-chronological/root-october-november-three-private/forza-source-private-candidate.json",
+          "source_sha256": "e389e7e399f145fdd7b42d4e666ac70650e62d95ab50bf94d69f5c50231844c0",
+          "target": "build/research/catalog-2021-chronological/root-october-november-three-private/forza-four-language-private-candidate.json",
+          "target_sha256": "7d5acf9286c8c6a1eec0edda8c0f387b7d12a444569f2e82927bbac6b9a533c5",
+          "contact": "build/research/catalog-2021-chronological/root-october-november-three-private/forza-final-contact.jpg",
+          "contact_sha256": "52fb1f675ab86bd05835cbc6776db8401510aa6b25f5fe200e5905dcac14065f",
+          "english_cards": 2,
+          "localized_cards": 8,
+          "images": 6,
+          "tracks": 3
+        },
+        {
+          "entry_id": "wikipedia-67878456",
+          "slug": "battlefield",
+          "source": "build/research/catalog-2021-chronological/root-october-november-three-private/battlefield-source-private-candidate.json",
+          "source_sha256": "9babc3f27b8c658f2ad1d2f15bc460c3ef88556a49a07bd75acf981e484e69db",
+          "target": "build/research/catalog-2021-chronological/root-october-november-three-private/battlefield-four-language-private-candidate.json",
+          "target_sha256": "bbf52885d5c411573ecb0fdfef7ea23d6d6e00b5e227d1d7da0f22707ba94262",
+          "contact": "build/research/catalog-2021-chronological/root-october-november-three-private/battlefield-final-contact.jpg",
+          "contact_sha256": "93e6dbc931606f7729d7416d83ccca2af22d1b19a6e1a3e2a9b108f4214c130d",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 4,
+          "tracks": 3
+        }
+      ],
+      "read_english_paragraphs": 8,
+      "read_localized_paragraphs": 32,
+      "actual_final_contact_sheets_viewed": 3,
+      "actual_selected_images_viewed": 14,
+      "production_writes": false,
+      "source_review": "Directly read Ubisoft October22,2021 original soundtrack article: main13track album by Justin Boreta, Edward Ma and Josh Mayer distinguished from the additional Kid Koala album, original game launch October28. Directly read DICE February2023 development update and linked class-system article: January31 class return and gadgets linked to classes. Directly read EA soundtrack composer interview, which explicitly identifies both Hildur Guðnadóttir and Sam Slater. Directly read official Forza January22,2026 announcement confirming May19 release and May15 separate early access; existing FH6 sentence retained, not dismissed as an assumed fictional future event.",
+      "music_review": "All four new publication metadata receipts read in full: official Ubisoft Music original2021 album with actual named chapters; two official Orchard artist-distributed2021 EA tracks and official Lakeshore Records2021 full-album title-cue chapter. Six UI tracks total, chapter bounds agree with source descriptions, both Battlefield composers and all three Riders composers retained. All three existing Forza soundtrack track objects preserved exactly. No redundant codec checks or audio downloads.",
+      "media_review": "All14 final images actually viewed: Riders original clean cover, canyon wingsuit, mass bicycle race, outfit screen; Forza original clean Mexican landscape artwork, car/garage/off-road/weather images and gameplay poster; Battlefield clean cover and original soldier/helicopter/large-scale battlefield imagery. No new box backs or platform banners introduced. Images attached to reception remain contextual gameplay rather than false photographs of awards.",
+      "finite_changes_review": "Riders sole English change gears→gear; Forza both English paragraphs exact; Battlefield two clauses explicitly separate original2021 unrestricted specialists from the January31,2023 Assault/Engineer/Support/Recon and gadget restrictions. All32 translations preserve these distinctions and the multiplayer platform/player-count split. German Riders final polish zum UCI Cup verified in the final pin.",
+      "findings": []
+    }
+  }
+}

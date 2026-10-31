@@ -1,0 +1,79 @@
+{
+  "status": "PASS",
+  "locale": "fr",
+  "review": "Binding of exact independently approved complete candidate members; no new linguistic review substituted. Every full candidate SHA and independent PASS receipt checked, all current English five fields and translation hashes validated.",
+  "entries": [
+    {
+      "entry_id": "workbook-07-31-tecmo",
+      "source_fields_sha256": "586d7da8008f411ccecf60a8ecd37fded9c15eb0e1d4f800e24ca78d9929dd6b",
+      "translation_sha256": "8715ad43a124cf2b69f43317407b713ac712a5b45981a50dc7f79288c2b6a84f",
+      "independent_peer": "build/research/tecmo1967-four-language-completion/tecmo1967-four-language-full-clause-fidelity-source-bound-candidate-root-independent-peer.json",
+      "independent_peer_sha256": "399a831c091d749046cdfeb839cabd5747ff6a444289e8b758a2de11df45a87f",
+      "candidate_path": "build/research/tecmo1967-four-language-completion/tecmo1967-four-language-full-clause-fidelity-source-bound-candidate.json",
+      "candidate_sha256": "0609f71f43a9cc1066dd04c2f313032dfc5e73cd856c61c8791c7bf7ec35936f"
+    },
+    {
+      "entry_id": "brown-box",
+      "source_fields_sha256": "492fa0a1df63f64e1dd63b66295bbcd528521f662806e4e9a5265505fbd49ccd",
+      "translation_sha256": "2481b2f585f1a0ce6cbee92222ebcfc5a1d3e10561d875b4377f86cf6c885a8b",
+      "independent_peer": "build/research/brown-box1967-four-language-completion/independent-root-brown-box-main-and-feature-complete-four-language-peer.json",
+      "independent_peer_sha256": "613606957f1f01715bb21fea6ddcc1b899b6c94ae45aa3c9a23c868c59f53057",
+      "candidate_path": "build/research/brown-box1967-four-language-completion/brown-box-main-and-team-four-language-complete-source-bound-candidate.json",
+      "candidate_sha256": "8d7dbf2308a2c2b4438588a7794edabc22fe33b13293cbf751801b5220c3b629"
+    },
+    {
+      "entry_id": "feature-brown-box-team",
+      "source_fields_sha256": "b8d21c04fa9d6faf88aecdfde2f8e4b32c764a968f4befece58de3433d739ba2",
+      "translation_sha256": "2f2ccde9c727ef6ef118d6f49fa20581e1a5563ff99b6a2d0b7171a836b1d0e1",
+      "independent_peer": "build/research/brown-box1967-four-language-completion/independent-root-brown-box-main-and-feature-complete-four-language-peer.json",
+      "independent_peer_sha256": "613606957f1f01715bb21fea6ddcc1b899b6c94ae45aa3c9a23c868c59f53057",
+      "candidate_path": "build/research/brown-box1967-four-language-completion/brown-box-main-and-team-four-language-complete-source-bound-candidate.json",
+      "candidate_sha256": "8d7dbf2308a2c2b4438588a7794edabc22fe33b13293cbf751801b5220c3b629"
+    },
+    {
+      "entry_id": "daily-12-12",
+      "source_fields_sha256": "980e435a02bbd50ccad76bf9120ca5651427da6b73233682aafcd238a3a95118",
+      "translation_sha256": "2b3d586db4c7a177001e2df54fd5849bae301b7e0d6c2c33eee8a628d8a57331",
+      "independent_peer": "build/research/yuzo-koshiro1967-four-language-completion/yuzo-koshiro1967-main-feature-four-language-spanish-genre-gender-candidate-root-independent-peer.json",
+      "independent_peer_sha256": "c9ecacdf90a079c0bf20bf04abde537ecbf1f6bab2d62416e02dfd1119fce668",
+      "candidate_path": "build/research/yuzo-koshiro1967-four-language-completion/yuzo-koshiro1967-main-feature-four-language-spanish-genre-gender-candidate.json",
+      "candidate_sha256": "32fe3eeb46b3e530b8ddefc21ff715392643beb3c4ad322eedacce033629b025"
+    },
+    {
+      "entry_id": "feature-yuzo-koshiro-fm",
+      "source_fields_sha256": "dcd83c00c34b52e8ffb12c0afdd866e0bb7a9d83a7897dd711d40805b76bfb72",
+      "translation_sha256": "d9bb8f4ce5f5b9edc76b2fef2c973ba216bd40a645655bc9b8a0d59d7e03dabb",
+      "independent_peer": "build/research/yuzo-koshiro1967-four-language-completion/yuzo-koshiro1967-main-feature-four-language-spanish-genre-gender-candidate-root-independent-peer.json",
+      "independent_peer_sha256": "c9ecacdf90a079c0bf20bf04abde537ecbf1f6bab2d62416e02dfd1119fce668",
+      "candidate_path": "build/research/yuzo-koshiro1967-four-language-completion/yuzo-koshiro1967-main-feature-four-language-spanish-genre-gender-candidate.json",
+      "candidate_sha256": "32fe3eeb46b3e530b8ddefc21ff715392643beb3c4ad322eedacce033629b025"
+    },
+    {
+      "entry_id": "workbook-08-20-john-carmack",
+      "source_fields_sha256": "6955a1c9c86c461390c9449c609d458518486caea7d732825eb3588fbb118181",
+      "translation_sha256": "e2f3d9954a445f1c17a8866c4f4e6268ae01b2361f57a3e94b6f57c4546c3c2e",
+      "independent_peer": "build/research/carmack1970-four-language-completion/independent-four-main-paragraphs-four-language-two-italian-delta-peer.json",
+      "independent_peer_sha256": "01ace000dc2bbf35a5291d2d180e5d15015bb07f3eab429c3557b4e485340e0d",
+      "candidate_path": "build/research/carmack1970-four-language-completion/carmack1970-main-four-language-source-code-and-purpose-precise-candidate.json",
+      "candidate_sha256": "be289e4ab2b53cc935b35a50099a225bec36d60a7a5f0cd924c29b843c5d73df"
+    },
+    {
+      "entry_id": "feature-john-carmack-engineering",
+      "source_fields_sha256": "24871acdbdcbcf581dee94c4d599209f9d1e548ee82d485559ac8bba372ce933",
+      "translation_sha256": "30a3bbbf82bf2a7485017a5b6ddc9e08eda304cb4a5fe15cecd5627b0985c5d2",
+      "independent_peer": "build/research/carmack1970-four-language-completion/independent-engineering-feature-four-whole-paragraphs-four-language-peer.json",
+      "independent_peer_sha256": "d4e6c112974c3ad9ee548534ba67f0043f6396d08ab93f052cf0f871dda9fe34",
+      "candidate_path": "build/research/carmack1970-four-language-completion/carmack1970-engineering-feature-four-paragraphs-four-language-complete-candidate.json",
+      "candidate_sha256": "b4f9eb3985fd37e599daddb8db8f5124d87ae7fd03d2c9deaaced8dea49dc14b"
+    },
+    {
+      "entry_id": "oregon-trail",
+      "source_fields_sha256": "36a16c1084eb33625faf980ec13aca1ef33d3a9cc18906466c821895188486a2",
+      "translation_sha256": "9976fc301b6ba37921db6b6e52a89aa9e1dbf3f1042fbf42541913ebf93742a3",
+      "independent_peer": "build/research/oregon-trail1971-four-language-completion/oregon-trail1971-five-complete-paragraphs-four-language-source-bound-candidate-root-independent-peer.json",
+      "independent_peer_sha256": "cd4a9e83f67242c14f03a1a924b7cf4e4b96b95fdb13e74ed97e3c00df296a60",
+      "candidate_path": "build/research/oregon-trail1971-four-language-completion/oregon-trail1971-five-complete-paragraphs-four-language-source-bound-candidate.json",
+      "candidate_sha256": "da9c20bd14fadaa3a0a255b1a4449f06145711c9d494c87c12e72c7574aedcbb"
+    }
+  ]
+}

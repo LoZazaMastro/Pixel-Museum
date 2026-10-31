@@ -1,0 +1,375 @@
+{
+  "batch_id": "280-human-history",
+  "sources": [
+    {
+      "source_id": "280-emancipation",
+      "url": "https://www.archives.gov/milestone-documents/emancipation-proclamation",
+      "title": "Emancipation Proclamation (1863)",
+      "publisher": "National Archives",
+      "accessed_at": "2026-10-30",
+      "scope": "1 gennaio 1863, preliminare 22 settembre 1862, limiti territoriali e rapporto fra dichiarazione di libertà e avanzata militare.",
+      "limitation": "Letta la presentazione archivistica e il testo pertinente; precisazione necessaria per non estendere la portata a tutti gli Stati schiavisti."
+    },
+    {
+      "source_id": "280-emancipation-number",
+      "url": "https://history.state.gov/historicaldocuments/frus1863p2/d639",
+      "title": "Department of State to Diplomatic and Consular Officers, 3 January 1863",
+      "publisher": "US Department of State, Office of the Historian",
+      "accessed_at": "2026-10-30",
+      "scope": "Seward indica circa tre milioni e mezzo di persone e gli Stati/parti di Stati interessati.",
+      "limitation": "Documento primario indicizzato. Usato circa, evitando di rafforzare il più di 3,5 milioni dell’INPUT."
+    },
+    {
+      "source_id": "280-typewriter-smg",
+      "url": "https://collection.sciencemuseumgroup.org.uk/objects/co38206/hansens-writing-ball-also-known-as-malling-hansen-writing-ball-typewriters",
+      "title": "Hansen’s Writing Ball",
+      "publisher": "Science Museum Group",
+      "accessed_at": "2026-10-30",
+      "scope": "Produzione commerciale della Writing Ball dal 1870; Sholes e Glidden introdotta da Remington nel 1874.",
+      "limitation": "Letta la scheda. Le didascalie riportano un anno di brevetto diverso dal testo; nessun anno di brevetto Malling-Hansen trasferito nell’OUTPUT. Il confronto è limitato alla produzione commerciale."
+    },
+    {
+      "source_id": "280-typewriter-smithsonian",
+      "url": "https://invention.si.edu/invention-stories/was-patent-application-typewriter-handwritten",
+      "title": "Was the Patent Application for the Typewriter Handwritten?",
+      "publisher": "Lemelson Center, Smithsonian Institution",
+      "accessed_at": "2026-10-30",
+      "scope": "Domanda Sholes, Glidden e Soule dell’ottobre 1867; antecedenti e Writing Ball in produzione dal 1870.",
+      "limitation": "Testo istituzionale indicizzato; apertura diretta non riuscita. Non dichiarata lettura integrale."
+    },
+    {
+      "source_id": "280-periodic",
+      "url": "https://periodic-table.rsc.org/about",
+      "title": "Development of the periodic table",
+      "publisher": "Royal Society of Chemistry",
+      "accessed_at": "2026-10-30",
+      "scope": "Mendeleev organizzava per peso atomico nel 1869; il numero atomico appartiene all’ordinamento moderno.",
+      "limitation": "Passaggi pertinenti indicizzati consultati. Nessun giorno preciso aggiunto alla data annuale del lotto."
+    },
+    {
+      "source_id": "280-nobel",
+      "url": "https://www.nobelprize.org/alfred-nobel/",
+      "title": "Alfred Nobel — timeline",
+      "publisher": "NobelPrize.org",
+      "accessed_at": "2026-10-30",
+      "scope": "Invenzione della dinamite 1866, brevetto svedese 1867.",
+      "limitation": "Cronologia ufficiale indicizzata; apertura diretta 403. Non dichiarato accesso oltre quanto fornito dal motore di ricerca."
+    }
+  ],
+  "decisions": [
+    {
+      "target_id": "history-1863-emancipation-proclamation",
+      "problem": "La formulazione generica sulla Confederazione ometteva eccezioni territoriali e dava una precisione eccessiva al numero di persone.",
+      "conclusion": "Precisati territori designati, Stati fedeli esclusi e aree confederate già controllate dall’Unione. Circa 3,5 milioni secondo il documento contemporaneo; libertà effettiva legata all’uscita dal controllo degli schiavisti. Conservati numeri dei due proclami, date e accesso alle forze armate.",
+      "source_ids": [
+        "280-emancipation",
+        "280-emancipation-number"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1867-typewriter",
+      "problem": "L’INPUT estende il 1874 a un primato mondiale per tutte le macchine per scrivere commerciali.",
+      "conclusion": "Il 1874 è riferito alla versione commerciale Sholes e Glidden. Il primato mondiale è smentito dalla produzione Writing Ball del 1870; questa informazione serve a correggere il perimetro, senza aggiungere una digressione al testo.",
+      "source_ids": [
+        "280-typewriter-smg",
+        "280-typewriter-smithsonian"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1869-periodic-table",
+      "problem": "La card passa dalla classificazione 1869 all’ordinamento per numero atomico senza distinguere le epoche.",
+      "conclusion": "Distinti peso atomico nella classificazione Mendeleev e numero atomico nella tavola moderna. Conservati gruppi, periodi, quattro blocchi e tutti gli andamenti descritti.",
+      "source_ids": [
+        "280-periodic"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1865-maxwell-s-equations",
+      "problem": "Applicabilità universale può risultare assoluta se isolata dalla cornice classica presente nell’INPUT.",
+      "conclusion": "La portata della formulazione microscopica è esplicitamente circoscritta all’elettromagnetismo classico già indicato nel materiale; nessuna digressione quantistica aggiunta.",
+      "source_ids": [],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1866-dynamite",
+      "problem": "Occorre distinguere invenzione e brevetto e non presentare la manipolazione come priva di rischio.",
+      "conclusion": "Confermati 1866 e 1867; il testo conserva la riduzione del rischio senza assolutizzarla come sicurezza totale.",
+      "source_ids": [
+        "280-nobel"
+      ],
+      "text_applied": true
+    }
+  ],
+  "metadata_proposals": [
+    {
+      "target_id": "history-1867-typewriter",
+      "field": "event_semantics",
+      "proposed": "Development of the Sholes and Glidden prototype, 1867; commercial introduction of this typewriter, 1874",
+      "reason": "Il 1867 identifica il prototipo; la commercializzazione documentata del modello è successiva. Nessuna modifica diretta al catalogo.",
+      "source_ids": [
+        "280-typewriter-smg",
+        "280-typewriter-smithsonian"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "history-1865-maxwell-s-equations",
+      "field": "event_semantics",
+      "proposed": "Publication of Maxwell’s electromagnetic theory, 1865; presentation 1864",
+      "reason": "Distinzione fra pubblicazione e presentazione già nel materiale. La voce non è una biografia.",
+      "source_ids": [],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "history-1866-dynamite",
+      "field": "event_semantics",
+      "proposed": "Invention of dynamite, 1866; patent 1867",
+      "reason": "La cronologia ufficiale conferma la distinzione; non dedotta una data di vendita dal brevetto.",
+      "source_ids": [
+        "280-nobel"
+      ],
+      "applied_to_catalog": false
+    }
+  ],
+  "editorial_review": {
+    "checks": [
+      "INPUT completo letto prima della stesura inglese, poi adattamenti IT/FR/DE/ES scritti e riletti.",
+      "Conservati dati e contenuti delle dieci card. La spiegazione dei termini hacking, down e typewriter è adattata alla lingua del lettore senza introdurre meccaniche nuove.",
+      "Mantenuti tutti i ruoli, i nomi, gli anni, i punteggi e i numeri di giocatori. La differenza fra football 1869 e successivo gridiron è esplicita.",
+      "Nessun cambiamento di ID, media o fonti originali. Le correzioni di ambito sono motivate nell’audit."
+    ],
+    "scope_limit": "Verifiche esterne mirate ai punti elencati; il resto della sostanza proviene dall’INPUT. Le proposte di metadati non sono applicate al catalogo.",
+    "english_written_first": true,
+    "languages": [
+      "en",
+      "it",
+      "fr",
+      "de",
+      "es"
+    ],
+    "entry_count": 10,
+    "card_count_per_language": 10,
+    "reviewed_at": "2026-10-30T02:28:25.947027+00:00",
+    "english_summary_word_range": [
+      34,
+      38
+    ],
+    "structural_checks": "Schema, ID, ordine, numero di card e cinque lingue verificati dal validatore. Tutti i titoli presenti; nessun HTML o Markdown nei testi."
+  },
+  "status": "completed",
+  "validation": {
+    "valid": true,
+    "batch_id": "280-human-history",
+    "completed": true,
+    "entry_count": 10,
+    "card_count_per_language": 10,
+    "language_count": 5,
+    "translated_card_count": 50,
+    "entry_card_counts": {
+      "history-1863-emancipation-proclamation": 1,
+      "history-1863-london-underground": 1,
+      "history-1863-football-association": 1,
+      "history-1864-international-workingmen-s-association": 1,
+      "history-1865-maxwell-s-equations": 1,
+      "history-1866-dynamite": 1,
+      "history-1867-typewriter": 1,
+      "history-1869-periodic-table": 1,
+      "history-1869-rutgers-princeton-football": 1,
+      "history-1869-suez-canal": 1
+    },
+    "issue_counts": {
+      "history-1863-emancipation-proclamation": 0,
+      "history-1863-london-underground": 0,
+      "history-1863-football-association": 0,
+      "history-1864-international-workingmen-s-association": 0,
+      "history-1865-maxwell-s-equations": 0,
+      "history-1866-dynamite": 0,
+      "history-1867-typewriter": 0,
+      "history-1869-periodic-table": 0,
+      "history-1869-rutgers-princeton-football": 0,
+      "history-1869-suez-canal": 0
+    },
+    "summary_checks": [
+      {
+        "entry_id": "history-1863-emancipation-proclamation",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "history-1863-london-underground",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "history-1863-football-association",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "history-1864-international-workingmen-s-association",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "history-1865-maxwell-s-equations",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "history-1866-dynamite",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "history-1867-typewriter",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "history-1869-periodic-table",
+        "feature_id": null,
+        "english_summary_words": 34
+      },
+      {
+        "entry_id": "history-1869-rutgers-princeton-football",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "history-1869-suez-canal",
+        "feature_id": null,
+        "english_summary_words": 37
+      }
+    ],
+    "editorial_review": [
+      "history-1863-emancipation-proclamation/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1863-emancipation-proclamation/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1863-emancipation-proclamation/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1863-emancipation-proclamation/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1863-football-association/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1863-football-association/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1863-football-association/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1863-football-association/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1864-international-workingmen-s-association/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1864-international-workingmen-s-association/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1864-international-workingmen-s-association/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1864-international-workingmen-s-association/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1865-maxwell-s-equations/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1865-maxwell-s-equations/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1865-maxwell-s-equations/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1865-maxwell-s-equations/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1866-dynamite/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1866-dynamite/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1866-dynamite/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1867-typewriter/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1867-typewriter/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1867-typewriter/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1867-typewriter/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1869-periodic-table/main/en: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1869-periodic-table/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1869-periodic-table/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1869-periodic-table/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1869-periodic-table/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1869-rutgers-princeton-football/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1869-rutgers-princeton-football/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1869-rutgers-princeton-football/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1869-rutgers-princeton-football/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1869-suez-canal/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1869-suez-canal/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1869-suez-canal/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1869-suez-canal/main/es: main title changed; check that this is a descriptive title and not an altered official name"
+    ],
+    "failures": []
+  },
+  "output_sha256": "026ddbf58211e1367f0d70c7d6e1284d69da4071b861923764431e22b61da258",
+  "expansion_assessments": [
+    {
+      "target_id": "history-1863-emancipation-proclamation",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1863-london-underground",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1863-football-association",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1864-international-workingmen-s-association",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1865-maxwell-s-equations",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1866-dynamite",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1867-typewriter",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1869-periodic-table",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1869-rutgers-princeton-football",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1869-suez-canal",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    }
+  ],
+  "root_review": {
+    "reviewed_at": "2026-10-30T02:30:32.407826+00:00",
+    "scope": "Controllo delle segnalazioni automatiche e confronto mirato con l’INPUT. Nessuna omissione residua nei passaggi riletti: numeri resi in lettere, decadi e punteggi localizzati; le nuove date dei lotti storici sono documentate nelle decisioni.",
+    "changes": []
+  }
+}

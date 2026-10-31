@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "locale": "fr",
+  "review": "Binding of exact independently approved complete candidate members; no new linguistic review substituted. Every full candidate SHA and independent PASS receipt checked, all current English five fields and translation hashes validated.",
+  "entries": [
+    {
+      "entry_id": "workbook-02-10-vagrant-story",
+      "source_fields_sha256": "e9f7d01a5acf23898d06a968938cf4fe826bb3d57d8a5e0fa4f65e8db2d91c9e",
+      "translation_sha256": "1458bdc4040cea905bb4f3772ef9acbf03f41e65814888aa3732bcba985485c8",
+      "independent_peer": "build/research/vagrant2000-four-language-completion/independent-all-fields-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "159bef3bb13f6e4159ddbf54e545c64b354e19f9e8d574b7f11cbf369564e76d",
+      "candidate_path": "build/research/vagrant2000-four-language-completion/vagrant-all-five-fields-four-language-full-reuse-fidelity-candidate.json",
+      "candidate_sha256": "6dcc3e61f4f9bfc47cbcc24bd7d9e12d9b1ab2c3428eb7105174d5dd60d298c8"
+    },
+    {
+      "entry_id": "wikipedia-1557018",
+      "source_fields_sha256": "e4d2981a24ee0c5572cea2a626703d9af433bedc01ba7ee191fc7661d0e0fa1f",
+      "translation_sha256": "3d91acaa0fd25d8784d0fb1fe21694ee08272adef1902c023e375e9877c2c1ab",
+      "independent_peer": "build/research/ridge64-2000-four-language-completion/independent-all-fields-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "de75360acbde5e2180386e6f433e6a516a22a34b058f14499a147bb0c53c6440",
+      "candidate_path": "build/research/ridge64-2000-four-language-completion/ridge64-all-five-fields-four-language-full-reuse-fidelity-candidate.json",
+      "candidate_sha256": "b54dc6b4f0f074d31cace981524c0d208de94ec2665a3d590e4cfdefa01834ba"
+    },
+    {
+      "entry_id": "playstation-2",
+      "source_fields_sha256": "ca582f712b3206214a199eb2439328ad3c5623837eacdebda674cd64b10033e9",
+      "translation_sha256": "fc14a07f5aaaa674218485de841354e852cee1f5c224ec352fa74b33b703decc",
+      "independent_peer": "build/research/playstation2-2000-four-language-completion/independent-all-fields-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "4389bc0eee368f1987c01303bcf1fc87142e773617c4abdaa1504bc6f63d67ae",
+      "candidate_path": "build/research/playstation2-2000-four-language-completion/playstation2-four-language-final-dvd-reading-precision-candidate.json",
+      "candidate_sha256": "3f85f9c8247b941820a3496183d7ea8146f1850f146ab30ec299273e89647873"
+    },
+    {
+      "entry_id": "feature-playstation2-production",
+      "source_fields_sha256": "26b7704f3db99628681ffd60e7cf6ebb58638ae8b4ce656e02efa62708a13065",
+      "translation_sha256": "15d796a8017704ee3349c243644eddefc15647fa705fb2cea704df8e87ce62d6",
+      "independent_peer": "build/research/ps2-production2000-four-language-completion/independent-all-fields-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "61a7d1e6a32892dce2ea372d67fabdbb2e55592e9cc86abef5d31ac1d08eb937",
+      "candidate_path": "build/research/ps2-production2000-four-language-completion/ps2-production-four-language-final-natural-german-specifications-candidate.json",
+      "candidate_sha256": "1b85ec951bee8ae9aa149763dc89a17a2f8fb0d0433dd70b4199c34aa49c7b92"
+    }
+  ]
+}

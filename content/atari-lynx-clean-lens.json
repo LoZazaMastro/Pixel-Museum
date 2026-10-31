@@ -1,0 +1,59 @@
+{
+  "title": "Atari Lynx Mk1 - clean lens derivation",
+  "checked_date": "2026-10-20",
+  "source": {
+    "path": "build\\research\\model-validation\\Lynx-19163d8c-official.glb",
+    "sha256": "d681ab2c19fd498317b379656e8a1670510a51d4c914563927961b14d5df243f",
+    "bytes": 21814236,
+    "creator": "Prix Studios",
+    "source_page": "https://sketchfab.com/3d-models/atari-lynx-mk1-19163d8c9a464eda85977f245b3e6525",
+    "license": "CC BY4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "derived": {
+    "path": "models\\atari-lynx-clean-lens.glb",
+    "sha256": "c850fd022413f4ae265abda69f4c37ab7a4b8cacef95fd7715ba27b7a4d836c1",
+    "bytes": 22570212,
+    "license": "CC BY4.0",
+    "modifications": [
+      "Changed only the source Screen mesh's materials and partitioned its front triangles at the LCD UV boundary.",
+      "Removed scratched base-colour, normal and packed roughness maps from the derived screen/lens materials. Source atlases remain embedded and unchanged for every other mesh.",
+      "Added native fine contour geometry from the cited public-domain SVG's actual ATARI/Fuji and LYNX paths. Retained source screen-wordmark locations, orange/grey print colours and orientation; no approximate font substitution.",
+      "Retained every source image byte, every non-screen mesh definition, original body wear, all hierarchy transforms and original shared material."
+    ]
+  },
+  "wordmark_source": {
+    "title": "Atari Lynx logo-01-01.svg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Atari_Lynx_logo-01-01.svg",
+    "license": "Public domain / PD-textlogo",
+    "metadata_evidence": "build/research/model-validation/lynx-wordmarks-provenance.json",
+    "svg_sha256": "a5e03f1d21fdd16ec2082943c5b269252a41cd8f3162434ef2f33132344ada39",
+    "contour_sampling": "2048pixel-wide cited SVG raster, alpha threshold128 converted to native horizontal contour strips; not a hand-drawn or generated typeface.",
+    "geometry_rows": {
+      "Lynx_original_ATARI_screen_wordmark_SVG": 1432,
+      "Lynx_original_orange_screen_wordmark_SVG": 1642
+    }
+  },
+  "preservation_checks": {
+    "all_original_binary_bytes_unchanged": true,
+    "original_material_unchanged": true,
+    "all_non_screen_meshes_unchanged": true,
+    "original_file_unchanged": true
+  },
+  "native_4k_proof": {
+    "status": "Two native ObjectScene captures visually reviewed: clean screen, readable LYNX and ATARI/Fuji marks, original shell wear retained.",
+    "captures": [
+      "models/atari-lynx-clean-lens.glb-0.png",
+      "models/atari-lynx-clean-lens.glb-1.png"
+    ],
+    "resolution": [
+      3840,
+      2160
+    ],
+    "triangles": 28056,
+    "mesh_draws": 5,
+    "gl_errors": 0,
+    "eligible_for_root_review": true,
+    "scope": "Screen/lens cosmetic derivation; not a claim of newly scanned or dimensionally measured hardware."
+  }
+}

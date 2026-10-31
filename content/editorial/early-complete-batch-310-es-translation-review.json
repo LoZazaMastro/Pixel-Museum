@@ -1,0 +1,101 @@
+{
+  "status": "PASS",
+  "locale": "es",
+  "entries": [
+    {
+      "entry_id": "workbook-09-20-untitled-goose-game",
+      "source_fields_sha256": "9a39b410d01204b9bf205357b95e39c388c96d9ad6bd3d7f87ed85925d77a851",
+      "translation_sha256": "5eb369ab39333d4fd25311849bb862a032ee5bf72a543908a7ce40774444f05f",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch310/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "5b11d67f4ddbbebd281998bb6bad3774fed1acb900724ad45c841b49515984cd"
+    },
+    {
+      "entry_id": "wikipedia-56464502",
+      "source_fields_sha256": "c0272a3e8dea670bac39b91d81f32f78ceff0647c10ef54586aff728df8fbc75",
+      "translation_sha256": "5fa804c63252e93e79d46849f160d3c8c6fa9e4a4746943e37694be7a4a6f7c8",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch310/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "5b11d67f4ddbbebd281998bb6bad3774fed1acb900724ad45c841b49515984cd"
+    },
+    {
+      "entry_id": "workbook-09-27-code-vein",
+      "source_fields_sha256": "ea50c7371fb936cade47fe579e7ee6869e0457de84d55a7a4604ed4d9d25c1f8",
+      "translation_sha256": "4057b94e0910c2fdd6f0673a19ed99eb06acef49d1273ffcef082ece20d3ca6f",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch310/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "5b11d67f4ddbbebd281998bb6bad3774fed1acb900724ad45c841b49515984cd"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "root",
+    "actual_receipt": "build/research/catalog-2019-chronological/september-three-private/independent-root-approval.json",
+    "actual_receipt_sha256": "abd6722f67eddacd411fb2dd5d3b4eb3f9a6f197248228175af3bec9a46f76c3",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "root",
+      "reviewed_index": "build/research/catalog-2019-chronological/september-three-private/three-private-index.json",
+      "reviewed_index_sha256": "f846ebec09ce78f99e0900906223df31422896f18b7f1fc37a8b9e66d5b6854e",
+      "owners": [
+        {
+          "entry_id": "workbook-09-20-untitled-goose-game",
+          "slug": "goose",
+          "source": "build/research/catalog-2019-chronological/september-three-private/goose/complete-original-source-media-private-candidate.json",
+          "source_sha256": "7f0ae306b7b9ea2a9673ccb1fe0f0595b57510a8167ee5bd8b54f292a82a5dbc",
+          "target": "build/research/catalog-2019-chronological/september-three-private/goose/complete-four-language-private-candidate.json",
+          "target_sha256": "2a77a5646a91f1671a8fb7d6f6ec99a7c59d418013f1f84b3137d6922608eac2",
+          "english_cards": 4,
+          "localized_cards": 16,
+          "images": 7,
+          "tracks": 2,
+          "contact": "build/research/catalog-2019-chronological/september-three-private/goose/final-selected-media-contact.jpg",
+          "contact_sha256": "625d43f0146d65b987b2ae0823ae5fbad4e297cd7adf26a0c8cf1a87929dcace",
+          "finite_errata": 0
+        },
+        {
+          "entry_id": "wikipedia-56464502",
+          "slug": "mario-tour",
+          "source": "build/research/catalog-2019-chronological/september-three-private/mario-tour/complete-original-source-media-private-candidate.json",
+          "source_sha256": "86a6fbbbce148f82e26edce97b52e908ab3c6c90a6fa60894e172fa8717f0a11",
+          "target": "build/research/catalog-2019-chronological/september-three-private/mario-tour/complete-four-language-private-candidate.json",
+          "target_sha256": "ec98d5c3dc631e1ab84bd13e919e49755ca9a1e25910c8ca6986a4622c92f632",
+          "english_cards": 2,
+          "localized_cards": 8,
+          "images": 4,
+          "tracks": 103,
+          "contact": "build/research/catalog-2019-chronological/september-three-private/mario-tour/final-selected-media-contact.jpg",
+          "contact_sha256": "08a9f40712aa5e3743f3c7c4d754dfe6ebe5fc8cf84ee3d605c488959c2df3ae",
+          "finite_errata": 0
+        },
+        {
+          "entry_id": "workbook-09-27-code-vein",
+          "slug": "code-vein",
+          "source": "build/research/catalog-2019-chronological/september-three-private/code-vein/complete-original-source-media-private-candidate.json",
+          "source_sha256": "c2d57c90dfd415a0aa5858b5edaafcbe1533bd8976a20a28b32d77971d1c5f3c",
+          "target": "build/research/catalog-2019-chronological/september-three-private/code-vein/complete-four-language-private-candidate.json",
+          "target_sha256": "4ec2ad2169923775e3abab9e4e8c88183dd116b38366374743cdd909ab2a87f9",
+          "english_cards": 4,
+          "localized_cards": 16,
+          "images": 7,
+          "tracks": 3,
+          "contact": "build/research/catalog-2019-chronological/september-three-private/code-vein/final-selected-media-contact.jpg",
+          "contact_sha256": "30bd783213c9c431ed91005190686f17456921016b19c1296d11977a98f9aba5",
+          "finite_errata": 0
+        }
+      ],
+      "review_scope": {
+        "english_paragraphs_read": 10,
+        "localized_paragraphs_read": 40,
+        "final_media_images_viewed": 18,
+        "new_music_public_metadata_read": 3,
+        "primary_sources_read": [
+          "https://en-americas-support.nintendo.com/app/answers/detail/a_id/71752/p/172",
+          "https://gamemusic.bn-ent.net/release/251/",
+          "https://goose.game/"
+        ]
+      },
+      "resolved_findings": [
+        "Mario Kart Tour mobile screenshots replaced with original Apple CDN 1242x2208 sources; no artificial upscale. Later gallery controls correctly qualified."
+      ],
+      "production_writes": false
+    }
+  }
+}

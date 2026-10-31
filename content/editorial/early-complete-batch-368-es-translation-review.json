@@ -1,0 +1,121 @@
+{
+  "status": "PASS",
+  "locale": "es",
+  "entries": [
+    {
+      "entry_id": "wikipedia-71061987",
+      "source_fields_sha256": "24c7feec90cebcb63d164a5975a9ad6d56fc7dd0f0afa0ab4505464aadb1d756",
+      "translation_sha256": "b2523c7b95b8cb8c8bd5a5f631ce990d17305229209416f6f4f75531c8345964",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch368/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "3d0c78e63832aa3e7dff317e1045819e2b70ea1a67331d2e867efe4390186ce6"
+    },
+    {
+      "entry_id": "wikipedia-72746539",
+      "source_fields_sha256": "2d3987f7ec642212e9b66b6119fcb2556d8daf1bfd8557061d8c46c7dd2645bf",
+      "translation_sha256": "7485a9e19f50c61a9fccab4a3b43be9543fd4c927fa3de068c33f0aa0bbd82b9",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch368/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "3d0c78e63832aa3e7dff317e1045819e2b70ea1a67331d2e867efe4390186ce6"
+    },
+    {
+      "entry_id": "wikipedia-72707421",
+      "source_fields_sha256": "460fb6f7c96175cac011aae43cacb245b9217ba09c3dfdabfaa5abe08e344133",
+      "translation_sha256": "4cd4e6c075edbb00bec66e896f805607cafc06ece06c769fff59a91d9d4c69df",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch368/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "3d0c78e63832aa3e7dff317e1045819e2b70ea1a67331d2e867efe4390186ce6"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "editorial_continue",
+    "actual_receipt": "build/research/catalog-2024-chronological/march-may-three-private/independent-editorial-peer-approval.json",
+    "actual_receipt_sha256": "baaaff2e1a6e945ba85377f1768546409aa13674e176cc631b7ebedf12f32290",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "editorial_continue",
+      "index": "build/research/catalog-2024-chronological/march-may-three-private/three-private-index.json",
+      "index_sha256": "9cb3c3624d7d5389900bd657dd5f96a098c676a24360b3a2907ef087afd25831",
+      "scope": "Actually read all ten English and forty localized paragraphs and all five fields. Actually viewed fourteen selected images in the three final contacts. Read all five new public AAC metadata receipts; preserved 177 Stellar Blade selections and the existing Animal Well recording without redundant resolution. Checked source, target, contact and recovery-byte bindings.",
+      "primary_sources_actually_read": [
+        {
+          "url": "https://classical.music.apple.com/au/album/1780496524",
+          "finding": "November 21, 2024 Capcom album; Satoshi Hori on title/main, Hana Kimura on Battle Theme - Vermund; three durations match archival recordings."
+        },
+        {
+          "url": "https://game.capcom.com/manual/dd2/en/ps5/page/1/5",
+          "access": "Indexed primary search text read; direct fetch returned 403.",
+          "finding": "Warrior and sorcerer supplement basic vocations; four named Arisen-exclusive vocations include Mystic Spearhand with duospear."
+        },
+        {
+          "url": "https://www.playstation.com/en-au/games/stellar-blade/",
+          "access": "Indexed official product content read.",
+          "finding": "Attacks charge Beta energy; Perfect Dodge, Blink and Repulse charge Burst energy. Official guide corroborates combat context."
+        },
+        {
+          "url": "https://www.animalwell.net/",
+          "finding": "Original May 9, 2024 release; sole developer Billy Basso, custom engine and renderer, almost seven years of development and Dan Adelman joining in 2021."
+        },
+        {
+          "url": "https://www.interactive.org/awards/award_category_details.asp?idAward=2025&idGameAwardType=143",
+          "finding": "Animal Well won the 2025 Outstanding Achievement in Game Direction award."
+        },
+        {
+          "url": "https://synthesizer-radish-5527.squarespace.com/animalwellmusic",
+          "finding": "Lost In Cult identifies Billy Basso as composer; record product distinguishes original soundtrack from extra ambient material."
+        }
+      ],
+      "music_notes": "Three Julian117 Dogma and two raflcoopter Animal Well uploads are identified honestly as independent archives of original game compositions, not official channels. Existing Animal Well UI title shortened only, original upload title retained separately. No audio file downloaded.",
+      "resolved_findings": [
+        {
+          "field": "Dogma curator_note",
+          "resolution": "Professional spacing corrected only; no recording, pixel, text body or localized field changed."
+        }
+      ],
+      "findings": [],
+      "owners": [
+        {
+          "entry_id": "wikipedia-71061987",
+          "slug": "dogma",
+          "source": "build/research/catalog-2024-chronological/march-may-three-private/dogma-source-private-candidate.json",
+          "source_sha256": "dd669e1dbe006531b129245c9b10d841e874a8ccc7699f23b36c2a02b54af353",
+          "target": "build/research/catalog-2024-chronological/march-may-three-private/dogma-four-language-private-candidate.json",
+          "target_sha256": "dc29b2f40e5ed656de2fb42773066dbd61aa461df877e5c76371274644b33a9d",
+          "contact": "build/research/catalog-2024-chronological/march-may-three-private/dogma-final-contact.jpg",
+          "contact_sha256": "95608f2efabb9012dd52da3b3b3a819235312a2be2ec73b8cee92607e7367bf0",
+          "english_cards": 4,
+          "localized_cards": 16,
+          "images": 5,
+          "tracks": 3
+        },
+        {
+          "entry_id": "wikipedia-72746539",
+          "slug": "stellar",
+          "source": "build/research/catalog-2024-chronological/march-may-three-private/stellar-source-private-candidate.json",
+          "source_sha256": "1e038cdd173c6db71463e20a64687d48a458512bac8f100c844da85fd87a4061",
+          "target": "build/research/catalog-2024-chronological/march-may-three-private/stellar-four-language-private-candidate.json",
+          "target_sha256": "8efad260243455e3b0e976e03f93bbca18afd68c7f0af075daaf485259fa102c",
+          "contact": "build/research/catalog-2024-chronological/march-may-three-private/stellar-final-contact.jpg",
+          "contact_sha256": "00382042687a3ec79ac674fcc3294dfa8e7663a82462d1ef060c9d02d75cc632",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 4,
+          "tracks": 177
+        },
+        {
+          "entry_id": "wikipedia-72707421",
+          "slug": "well",
+          "source": "build/research/catalog-2024-chronological/march-may-three-private/well-source-private-candidate.json",
+          "source_sha256": "913fe46203ff2479b51b949de0292ca8d1dabbf83beaaa47dd4f6d664db972c5",
+          "target": "build/research/catalog-2024-chronological/march-may-three-private/well-four-language-private-candidate.json",
+          "target_sha256": "dd1cfd5c88833e00a4600bd58c14fad53480c0ca9458cf22e48ae3b67bf54c41",
+          "contact": "build/research/catalog-2024-chronological/march-may-three-private/well-final-contact.jpg",
+          "contact_sha256": "9634b6a06fcb4d5bfdbfb0b684a6265a5baf1b083e456c06bcfde62b677f6df0",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 5,
+          "tracks": 3
+        }
+      ],
+      "production_writes": false
+    }
+  }
+}

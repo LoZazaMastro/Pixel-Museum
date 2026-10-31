@@ -1,0 +1,484 @@
+{
+  "schema_version": 1,
+  "reviewed_utc": "2026-10-20T21:19:56.408158+00:00",
+  "reviewer": "independent editorial QA",
+  "scope": "Read-only review of import fidelity, register completeness and editorial/media commissioning honesty. Only these review artifacts are authored; no console access or writes. This is not paragraph-by-paragraph historical fact checking, a fresh decode audit or an on-device review.",
+  "catalog_sha256_snapshot": "f3f072dad6fde46afaa51ee6dda45ca5b2ccfd3ef843eb5e79e08ee50ff1557a",
+  "input_sha256_snapshots": {
+    "content/playhub-import-receipt.json": "f435e3ea94eb9efefb2bb611ac3c613226d01bd2b031e70fed0ee7c16f8bd7a3",
+    "content/editorial/production-plan.json": "3c3640e4ce5b1a8da075d69211577c982dfa6aedaa9922b1984103a5b2b3357c",
+    "content/editorial/history-backlog.json": "481e3ee0d96e3816d1fe3a5221c4355c6d55ed2689bf1777d7043d894839aff4",
+    "content/editorial/media-backlog.json": "28aba906b6bbfd015adef4093a0f86fbf148d718742f0e58e5c870e02a5abcc7"
+  },
+  "verified_inventory": {
+    "raw_records": 1397,
+    "noncalendar_destinations": 1032,
+    "independent_daily_destinations": 32,
+    "calendar_aliases": 333,
+    "distinct_destinations": 1064,
+    "narrative_sections": 3801,
+    "published_daily_editions": 365,
+    "source_introductions": 365,
+    "source_chapters": 1291,
+    "source_sections": 1656,
+    "production_article_records": 1064,
+    "media_article_records": 1064,
+    "media_work_unit_assigned_ids": 1064,
+    "strict_majority_section_slots": 2745,
+    "history_briefs": 140,
+    "history_distinct_ids": 140,
+    "editorial_signoffs": 0
+  },
+  "passed_checks": [
+    "All raw article IDs are unique; production and media registers cover exactly the 1,064 distinct destinations.",
+    "Every narrative body section is accounted for; media section hashes exactly match the reviewed prose.",
+    "Each distinct article belongs to one bounded media work unit; 333 calendar aliases separately identify an acquisition owner.",
+    "All 365 source bodies and headings, including 1,656 English sections, match the actual source strings. All eight complete original language editions match source body and heading strings.",
+    "All 333 same-year canonical alias bodies match; deduplication has not removed source prose.",
+    "All 140 history commission IDs are unique; none collides with an existing ID, and all existing_related_ids resolve.",
+    "Calendar publication slots remain separate from historical dates; source fidelity does not establish historical sign-off.",
+    "Missing media does not exclude historical articles from either register.",
+    "The media contract requires native decode, identity, context, rights and 4K inspection separately; public access is not permission.",
+    "Written experience plans retain paper and ink, abstract geometry and one accent.",
+    "History scope rejects arbitrary per-decade quotas and describes commissions as unwritten.",
+    "All 1,064 production records retain historical_date_review.status=requires_claim_level_review. The 365 destinations associated with daily editions explicitly state calendar_slot_is_not_proof_of_event_date=true."
+  ],
+  "localization_distinct_destination_coverage": {
+    "en": {
+      "original_locale_override": 53,
+      "base_english_used_without_override": 1011
+    },
+    "it": {
+      "original_locale_override": 365,
+      "base_english_used_without_override": 699
+    },
+    "es": {
+      "original_locale_override": 365,
+      "base_english_used_without_override": 699
+    },
+    "fr": {
+      "original_locale_override": 365,
+      "base_english_used_without_override": 699
+    },
+    "de": {
+      "original_locale_override": 365,
+      "base_english_used_without_override": 699
+    },
+    "pt": {
+      "original_locale_override": 365,
+      "base_english_used_without_override": 699
+    },
+    "ru": {
+      "original_locale_override": 365,
+      "base_english_used_without_override": 699
+    },
+    "uk": {
+      "original_locale_override": 365,
+      "base_english_used_without_override": 699
+    }
+  },
+  "history_source_url_frequency_snapshot": {
+    "https://www.gdcvault.com/": 66,
+    "https://www.museumofplay.org/collections/icheg/": 20,
+    "https://www.computerhistory.org/collections/": 9,
+    "https://iwataasks.nintendo.com/": 8,
+    "https://www.vam.ac.uk/collections/digital-art-design": 6,
+    "https://www.acmi.net.au/about/videogames-museum/": 6,
+    "https://library.gamehistory.org/repositories/2/resources/29": 5,
+    "https://library.gamehistory.org/": 5,
+    "https://www.museumofplay.org/blog/jerry-lawson-video-soft-and-the-history-of-the-first-black-owned-video-game-development-company/": 2,
+    "https://www.computerspielemuseum.de/Museum/27-Ueber-das-Museum.htm": 2,
+    "https://www.acmi.net.au/works/121855--more-than-just-a-game/": 2,
+    "https://www.museumofplay.org/app/uploads/2021/09/Finding-Aid-to-the-Sumerian-Game-collection_2021.pdf": 1,
+    "https://www.vintagecomputing.com/index.php/archives/1230/ed-smith-interview": 1,
+    "https://iwataasks.nintendo.com/interviews/wii/super-mario-all-stars/0/3/": 1,
+    "https://news.xbox.com/fr-fr/2021/03/10/les-portraits-du-jeu-video-muriel-tramis/": 1,
+    "https://library.gamehistory.org/repositories/2/resources/228": 1,
+    "https://library.gamehistory.org/repositories/2/digital_objects/909": 1,
+    "https://static9.cdn.ubisoft.com/ubigroupstatic/en-US/global/img/company/Studio_profiles_September_2016_English_268341.pdf": 1,
+    "https://www.acmi.net.au/works/122801--umurangi-generation/": 1,
+    "https://gamehistory.org/87percent/": 1
+  },
+  "findings": [
+    {
+      "id": "R01",
+      "severity": "high",
+      "status": "resolved_verified",
+      "area": "readiness",
+      "finding": "Collection audit embeds editorially_ready_articles=4 without an audit timestamp/catalog hash, while current readiness explicitly has zero editorially ready articles.",
+      "files": [
+        "content/editorial-collection-audit.json",
+        "content/publication-readiness.json"
+      ],
+      "required_fix": "Remove obsolete editorial readiness wording or explicitly name the earlier automated snapshot and its limitations.",
+      "resolution": "Collection audit regenerated with audit_utc and catalog_sha256; editorially_ready_articles is now 0 and automated_checks_clear_articles is separate."
+    },
+    {
+      "id": "R02",
+      "severity": "medium",
+      "status": "resolved_verified",
+      "area": "image_quality",
+      "finding": "Production register names metadata-qualified image counts verified HD covers; its builder only reads hd_images metadata. This is not independent decode, rights, identity or 4 K crop evidence.",
+      "files": [
+        "tools/editorial-plan.py",
+        "content/editorial/production-plan.json",
+        "docs/editorial/plan.md"
+      ],
+      "required_fix": "Rename metrics to metadata-qualified HD candidate covers; retain separate decode/rights/context/device evidence.",
+      "observed_count": null,
+      "resolution": "Production fields renamed metadata_hd_cover / with_metadata_hd_cover and public table now states metadata-qualified HD covers. Independent asset/decode/rights review remains required."
+    },
+    {
+      "id": "R03",
+      "severity": "medium",
+      "status": "plan_resolved_production_decision_pending",
+      "area": "duplicate_topics",
+      "finding": "Unique feature IDs do not establish distinct stories. Several proposed author/design features omit existing same-subject exhibits from their duplicate review anchors.",
+      "examples": {
+        "feature-sid-meier-systems": [
+          "workbook-02-24-sid-meier"
+        ],
+        "feature-animal-crossing-time": [
+          "wikipedia-540952",
+          "animal-crossing"
+        ],
+        "feature-shigeru-miyamoto-team": [
+          "daily-11-16"
+        ],
+        "feature-satoru-iwata-listening": [
+          "daily-12-06"
+        ],
+        "feature-hideo-kojima-interface": [
+          "daily-08-24"
+        ],
+        "feature-kim-swift-spatial-puzzles": [
+          "workbook-10-10-portal"
+        ],
+        "feature-handheld-two-screens": [
+          "daily-12-02"
+        ],
+        "feature-minecraft-making-together": [
+          "minecraft",
+          "daily-05-17"
+        ]
+      },
+      "required_fix": "Add explicit existing anchors and decide expansion, connection or a demonstrably different new article before counting net additions.",
+      "resolution": "All eight missing anchor sets are now present. All 140 commissions have an explicit merge_expand_vs_distinct decision pending_editorial_review; final expansion versus distinct-feature decisions remain production work."
+    },
+    {
+      "id": "R04",
+      "severity": "medium",
+      "status": "scope_pending_honest",
+      "area": "source_specificity",
+      "finding": "Most history briefs currently point only to archive or collection roots. These are useful commissioning leads but do not supply article-specific claim evidence.",
+      "broad_only_briefs": 120,
+      "broad_only_ids": [
+        "feature-origins-definitions",
+        "feature-bertie-fair",
+        "feature-nimrod-demonstration",
+        "feature-oxo-research",
+        "feature-tennis-open-house",
+        "feature-spacewar-sharing",
+        "feature-brown-box-team",
+        "feature-education-timesharing",
+        "feature-coin-op-location-test",
+        "feature-odyssey-overlays",
+        "feature-pong-operators",
+        "feature-plato-community",
+        "feature-colossal-cave-language",
+        "feature-joyce-weisbecker-work",
+        "feature-programmable-living-room",
+        "feature-space-invaders-space",
+        "feature-mud-online-identity",
+        "feature-activision-credit",
+        "feature-pac-man-audience",
+        "feature-roberta-williams-authorship",
+        "feature-dona-bailey-arcade",
+        "feature-carol-shaw-river",
+        "feature-c64-sid-instrument",
+        "feature-dani-bunten-social",
+        "feature-nintendo-license-network",
+        "feature-tetris-travel",
+        "feature-sprites-readable-art",
+        "feature-yoko-shimomura-craft",
+        "feature-french-graphic-adventures",
+        "feature-japanese-rpg-writing",
+        "feature-musicians-fm-pcm",
+        "feature-tectoy-localization",
+        "feature-portable-engineering",
+        "feature-demoscene-tools",
+        "feature-localization-authorship",
+        "feature-fighting-game-communities",
+        "feature-maestro-nobuo-uematsu",
+        "feature-sonic-team-art",
+        "feature-korean-pc-bang",
+        "feature-doom-mod-authorship",
+        "feature-rating-hearings",
+        "feature-polygon-camera-language",
+        "feature-3d-art-labour",
+        "feature-playstation-industrial-design",
+        "feature-latin-american-making",
+        "feature-survival-horror-sound",
+        "feature-finnish-demos-to-games",
+        "feature-engine-licensing",
+        "feature-online-console-ritual",
+        "feature-china-game-networks",
+        "feature-russia-eastern-europe-development",
+        "feature-playstation2-production",
+        "feature-animal-crossing-time",
+        "feature-halo-accessible-fps",
+        "feature-mobile-before-appstores",
+        "feature-indie-tools-web",
+        "feature-steam-library-ownership",
+        "feature-mmo-community-work",
+        "feature-handheld-two-screens",
+        "feature-digital-indie-console",
+        "feature-wii-social-design",
+        "feature-game-audio-adaptive",
+        "feature-accessibility-player-knowledge",
+        "feature-app-store-change",
+        "feature-minecraft-making-together",
+        "feature-african-development-networks",
+        "feature-middle-east-independent-scenes",
+        "feature-journey-music-companionship",
+        "feature-twine-personal-stories",
+        "feature-paperwork-ethical-systems",
+        "feature-streamers-and-play",
+        "feature-labour-and-credit",
+        "feature-monument-valley-art",
+        "feature-souls-learning-communities",
+        "feature-vr-presence-comfort",
+        "feature-switch-hybrid-routine",
+        "feature-latin-american-art-voices",
+        "feature-celeste-assistance",
+        "feature-disco-elysium-authorship",
+        "feature-pandemic-shared-spaces",
+        "feature-accessibility-hardware",
+        "feature-portable-pc-return",
+        "feature-server-dependent-worlds",
+        "feature-games-in-museums",
+        "feature-credits-as-historical-record",
+        "feature-living-history-method",
+        "feature-shigeru-miyamoto-team",
+        "feature-hironobu-sakaguchi-production",
+        "feature-hideo-kojima-interface",
+        "feature-shinji-mikami-team",
+        "feature-sid-meier-systems",
+        "feature-will-wright-simulation",
+        "feature-john-carmack-engineering",
+        "feature-john-romero-levels",
+        "feature-valve-team-tools",
+        "feature-rebecca-heineman-ports",
+        "feature-brenda-romero-systems",
+        "feature-amy-hennig-storycraft",
+        "feature-kazuko-shibuya-pixel-art",
+        "feature-yoshitaka-amano-images",
+        "feature-yoji-shinkawa-design",
+        "feature-tetsuya-mizuguchi-synesthesia",
+        "feature-rob-hubbard-c64",
+        "feature-yuzo-koshiro-fm",
+        "feature-hirokazu-tanaka-sound",
+        "feature-david-wise-dkc",
+        "feature-yasunori-mitsuda-rpg",
+        "feature-akira-yamaoka-noise",
+        "feature-jessica-curry-worlds",
+        "feature-darren-korb-ashley-barrett",
+        "feature-lena-raine-movement",
+        "feature-winifred-phillips-adaptive",
+        "feature-bob-bates-adventure",
+        "feature-jane-jensen-mystery",
+        "feature-nasir-gebelli-and-teams",
+        "feature-fukio-mitsuji-families",
+        "feature-keita-takahashi-play",
+        "feature-kim-swift-spatial-puzzles",
+        "feature-gunpei-yokoi-engineering",
+        "feature-satoru-iwata-listening"
+      ],
+      "required_fix": "Describe these as research commissions, strengthen priority briefs with exact records/talks/pages and paragraph outlines, and keep claim/date/credit verification pending.",
+      "resolution": "21 P0 briefs now have specific primary or holding-institution anchors plus four-card outlines (84 outline-only cards). The other 119 explicitly require equivalent article-specific research. Every commission has priority, owner_role and research_deliverable. No brief is represented as a finished article.",
+      "current_specific_anchor_and_outline_briefs": 21,
+      "current_equivalent_research_pending_briefs": 119
+    },
+    {
+      "id": "R05",
+      "severity": "medium",
+      "status": "resolved_verified",
+      "area": "narrative_structure",
+      "finding": "Blank chapter headings occur in 2,024 sections across 652 distinct articles. Sections are enumerated correctly but card-heading production must be explicit.",
+      "blank_sections": 2024,
+      "affected_articles": 652,
+      "examples": [
+        [
+          "bertie-the-brain",
+          0
+        ],
+        [
+          "bertie-the-brain",
+          1
+        ],
+        [
+          "bertie-the-brain",
+          2
+        ],
+        [
+          "oxo",
+          0
+        ],
+        [
+          "oxo",
+          1
+        ],
+        [
+          "oxo",
+          2
+        ]
+      ],
+      "required_fix": "Add per-article missing-heading tasks; retain source prose and mark headings pending instead of inventing completed titles.",
+      "resolution": "Register explicitly records missing_heading_indices, per-section heading_status, specific heading-writing tasks, and aggregate 652 articles / 2,024 sections. These are pending work, not finished headings."
+    },
+    {
+      "id": "R06",
+      "severity": "medium",
+      "status": "resolved_verified",
+      "area": "localization",
+      "finding": "available_source_languages is an override-file inventory, not total language availability. It is empty on 699 articles even though the base body is English. English override entries cover 53 restored editions, not all English availability.",
+      "required_fix": "Separate base English content language, original source locale overrides, and actual English fallback counts. Seven complete non-English locales each cover 365 distinct destinations;699 each fall back English.",
+      "resolution": "Register explicitly identifies base_content_language=en, available_original_locale_overrides and a separate English restoration override. Documentation explains 365 translated destinations and 699 English fallbacks per complete non-English locale."
+    },
+    {
+      "id": "R07",
+      "severity": "info",
+      "status": "accepted_snapshot",
+      "area": "snapshot_drift",
+      "finding": "History/media plans describe an earlier catalog snapshot with 123 image-bearing destinations; the reviewed production snapshot has 254. Distinct IDs and narrative sections still match completely.",
+      "required_fix": "Keep hashes/time and snapshot labels; refresh acquisition evidence or final production register when integration completes. Do not silently present the earlier media counts as current.",
+      "resolution": "Final frozen catalog, production, media, readiness and collection audit agree on 0651bb2112edaa53b92f36368c5ee26bfed05bf6049e40fa9bd219492816b639. Current candidate counts are 257 any cover and 255 metadata-HD. Initial review and history baseline hashes remain explicitly historical snapshots."
+    },
+    {
+      "id": "R08",
+      "severity": "info",
+      "status": "production_gate",
+      "area": "collection_target",
+      "finding": "The current 1,064 distinct destinations are 31 below 3 x 365.140 planned briefs are unwritten and include related existing topics.1,204 is a hypothetical maximum before duplicate/expansion decisions, not a delivered meaningful-article count.",
+      "required_fix": "Count only authored, fact-checked, distinct articles toward the eventual 1,095 minimum. No arbitrary decade quota is needed."
+    },
+    {
+      "id": "R09",
+      "severity": "medium",
+      "status": "resolved_verified",
+      "area": "machine_readable_evidence",
+      "finding": "Final history integration briefly inserted spaces into the baseline catalog SHA-256.",
+      "resolution": "Exact d856419adfc50bf1b0d02a0713548a3e0f29c70b40f694477f3312a3fd954d71 restored and independently rechecked. Recursive ID/URL/hash string scan finds no embedded whitespace.",
+      "required_fix": "Preserve exact machine identifiers when polishing prose."
+    }
+  ],
+  "overall_status": "complete_inventory_and_honest_commissioning_plan; writing_fact_checking_media_rights_localization_and_device_review_remain_production_work",
+  "integration_rechecked_utc": "2026-10-20T21:27:21.993418+00:00",
+  "latest_catalog_observed_sha256": "0651bb2112edaa53b92f36368c5ee26bfed05bf6049e40fa9bd219492816b639",
+  "latest_catalog_observed_inventory": {
+    "raw_records": 1397,
+    "distinct_destinations": 1064,
+    "narrative_sections": 3801,
+    "with_any_image": 257
+  },
+  "history_final_structure_checks": {
+    "total_commissions": 140,
+    "specific_anchor_and_outline_briefs": 21,
+    "outline_only_cards": 84,
+    "equivalent_article_specific_research_pending": 119,
+    "all_have_owner_priority_deliverable": true,
+    "all_merge_expand_vs_distinct_decisions_pending": true,
+    "all_eight_missing_anchor_sets_fixed": true,
+    "exact_id_collisions": 0,
+    "broken_existing_related_ids": 0
+  },
+  "independent_live_source_sample": [
+    {
+      "url": "https://www.computerhistory.org/timeline/1951/",
+      "result": "Fetched; the page contains the specific Nimrod demonstration entry."
+    },
+    {
+      "url": "https://www.computerhistory.org/timeline/1952/",
+      "result": "Fetched; the page contains the specific OXO/EDSAC entry."
+    },
+    {
+      "url": "https://publications.gc.ca/collections/collection_2018/mstc-cstm/NM33-1-17-eng.pdf",
+      "result": "Fetched; CSTM 2009 monograph includes Bertie at printed page16/PDF page33, Figure6. Caption traces the image through John Vardalas to a Rogers Majestic publication; the monograph states all rights reserved. Research access is not image permission."
+    },
+    {
+      "url": "https://www.bnl.gov/about/history/firstvideo.php",
+      "result": "Timeout on independent re-fetch. Research-lane content inspection is recorded but universal current availability is not asserted."
+    }
+  ],
+  "history_source_url_frequency_final_snapshot": {
+    "https://www.gdcvault.com/": 66,
+    "https://www.museumofplay.org/collections/icheg/": 20,
+    "https://www.computerhistory.org/collections/": 8,
+    "https://iwataasks.nintendo.com/": 8,
+    "https://www.vam.ac.uk/collections/digital-art-design": 6,
+    "https://www.acmi.net.au/about/videogames-museum/": 6,
+    "https://library.gamehistory.org/repositories/2/resources/29": 5,
+    "https://library.gamehistory.org/": 5,
+    "https://www.bnl.gov/about/history/firstvideo.php": 2,
+    "https://www.museumofplay.org/blog/jerry-lawson-video-soft-and-the-history-of-the-first-black-owned-video-game-development-company/": 2,
+    "https://www.computerspielemuseum.de/Museum/27-Ueber-das-Museum.htm": 2,
+    "https://www.acmi.net.au/works/121855--more-than-just-a-game/": 2,
+    "https://publications.gc.ca/collections/collection_2018/mstc-cstm/NM33-1-17-eng.pdf": 1,
+    "https://ethw.org/w/images/b/b4/Bertie_the_Brain_Flyer.pdf": 1,
+    "https://www.canadashistory.ca/explore/science-technology/game-on!": 1,
+    "https://www.computerhistory.org/timeline/1951/": 1,
+    "https://www.computerhistory.org/timeline/1952/": 1,
+    "https://www.computerhistory.org/pdp-1/spacewar/": 1,
+    "https://www.museumofplay.org/app/uploads/2021/09/Finding-Aid-to-the-Sumerian-Game-collection_2021.pdf": 1,
+    "https://sirismm.si.edu/EADpdfs/NMAH.AC.0854.pdf": 1,
+    "https://www.vintagecomputing.com/index.php/archives/545/vcg-interview-jerry-lawson-black-video-game-pioneer": 1,
+    "https://www.vintagecomputing.com/index.php/archives/1230/ed-smith-interview": 1,
+    "https://www.arcadeattack.co.uk/dona-bailey/": 1,
+    "https://www.vintagecomputing.com/index.php/archives/800/vcg-interview-carol-shaw-female-video-game-pioneer-2": 1,
+    "https://www.atarimagazines.com/v3n9/profiles.php": 1,
+    "https://iwataasks.nintendo.com/interviews/wii/super-mario-all-stars/0/3/": 1,
+    "https://news.xbox.com/fr-fr/2021/03/10/les-portraits-du-jeu-video-muriel-tramis/": 1,
+    "https://www.loja.tectoy.com.br/quem-somos/": 1,
+    "https://library.gamehistory.org/repositories/2/resources/228": 1,
+    "https://library.gamehistory.org/repositories/2/digital_objects/909": 1,
+    "https://static9.cdn.ubisoft.com/ubigroupstatic/en-US/global/img/company/Studio_profiles_September_2016_English_268341.pdf": 1,
+    "https://www.acmi.net.au/works/122801--umurangi-generation/": 1,
+    "https://gamehistory.org/87percent/": 1,
+    "https://iwataasks.nintendo.com/interviews/wii/nsmb/1/6/": 1
+  },
+  "final_frozen_checkpoint": {
+    "verified_utc": "2026-10-20T21:27:21.993418+00:00",
+    "catalog_sha256": "0651bb2112edaa53b92f36368c5ee26bfed05bf6049e40fa9bd219492816b639",
+    "catalog_production_media_readiness_collection_audit_hashes_agree": true,
+    "raw_records": 1397,
+    "noncalendar_destinations": 1032,
+    "independent_daily_destinations": 32,
+    "calendar_aliases": 333,
+    "distinct_destinations": 1064,
+    "narrative_sections": 3801,
+    "words": 365311,
+    "any_cover_candidates": 257,
+    "metadata_hd_cover_candidates": 255,
+    "explicit_majority_image_mappings": 77,
+    "metadata_hd_qualified_majority_image_mappings": 76,
+    "missing_specific_headings": 2024,
+    "articles_missing_specific_headings": 652,
+    "editorial_signoffs": 0,
+    "source_edition_fidelity_rechecked": true,
+    "source_sections": 1656,
+    "complete_source_locales_rechecked": 8,
+    "installed_trial_overlay_entries": 35,
+    "trial_alias_to_owner": {
+      "daily-10-20": "workbook-10-20-super-mario-bros-wonder"
+    },
+    "trial_file_hash_verified": true,
+    "history_baseline_remains_original_snapshot": "d856419adfc50bf1b0d02a0713548a3e0f29c70b40f694477f3312a3fd954d71",
+    "explicit_raw_and_metadata_hd_mapping_metrics_agree_across_registers": true,
+    "history_markdown_original_snapshot_label_verified": true
+  },
+  "input_document_sha256_snapshots": {
+    "docs/editorial/history-coverage-plan.md": "baa21436744a1d6b348ffb466ec89d52557d422f6966da4f6b5a4e97623a15a1",
+    "docs/editorial/media-and-experiences-plan.md": "2fb1232c6ae479332125fd97c75403230d8b38e65dcc860de25d5a845c08f5a9",
+    "docs/editorial/plan.md": "3086d91583903949f2cac8e016ce82f85f961fe1ca11bbcde17fbf02dea384c6"
+  }
+}

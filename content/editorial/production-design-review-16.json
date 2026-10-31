@@ -1,0 +1,591 @@
+{
+  "schema_version": 1,
+  "reviewed_utc": "2026-10-21T01:28:38.079574+00:00",
+  "reviewer": "independent editorial_review agent",
+  "draft_path": "content/expansion/editorial-production-design-16.json",
+  "draft_sha256": "d22443eca42bb57466d2648e455ffe2a2c26a05d6c483afe254e01045c117986",
+  "status": "source_schema_budget_pass_with_Souls_distinct_placement_hold_and_FM_year_recommendation",
+  "scope": "All32cards and named primary passages independently read,17snapshot hashes and all visible title/summary/headings/body budgets checked. Five PDF documents inspected in their relevant original pages, with raster confirmation. Original parent text read for placement. No claim of full historical/legal/media clearance.",
+  "counts": {
+    "features": 8,
+    "cards": 32,
+    "body_words": 2713,
+    "primary_publication_groups": 17,
+    "source_hashes_matched": 17,
+    "proposed_attachments_supported": 5,
+    "distinct_subjects_with_media_pending": 2,
+    "distinct_subject_hold": 1
+  },
+  "checks": [
+    {
+      "id": "feature-japanese-rpg-writing",
+      "body_sha256": "21f2881cef5ee4596bfbc14485bb649cf533afc0b6ae8d0ca5b6a9ebbd4b4090",
+      "card_words": [
+        83,
+        81,
+        83,
+        83
+      ],
+      "schema_indices_citation_join": "PASS",
+      "source_derivation": "PASS_with_attributed_intent_and_retrospective_scope",
+      "budgets": [
+        {
+          "source_id": "dq4",
+          "body_indices": [
+            0,
+            1
+          ],
+          "whitespace_words": 184,
+          "unicode_lexical_words": 186,
+          "charged_words": 186,
+          "maximum_words": 200
+        },
+        {
+          "source_id": "dq6",
+          "body_indices": [
+            2,
+            3
+          ],
+          "whitespace_words": 185,
+          "unicode_lexical_words": 186,
+          "charged_words": 186,
+          "maximum_words": 200
+        }
+      ]
+    },
+    {
+      "id": "feature-musicians-fm-pcm",
+      "body_sha256": "f65f95459b6475546e8a95057cf0ee8161fea90ad97b25e1291ca48c89cd06e8",
+      "card_words": [
+        82,
+        84,
+        84,
+        85
+      ],
+      "schema_indices_citation_join": "PASS",
+      "source_derivation": "PASS_with_attributed_intent_and_retrospective_scope",
+      "budgets": [
+        {
+          "source_id": "gameaudio86",
+          "body_indices": [
+            0,
+            1
+          ],
+          "whitespace_words": 187,
+          "unicode_lexical_words": 188,
+          "charged_words": 188,
+          "maximum_words": 200
+        },
+        {
+          "source_id": "saso10",
+          "body_indices": [
+            2,
+            3
+          ],
+          "whitespace_words": 190,
+          "unicode_lexical_words": 193,
+          "charged_words": 193,
+          "maximum_words": 200
+        }
+      ]
+    },
+    {
+      "id": "feature-survival-horror-sound",
+      "body_sha256": "b6983b46f5294ccab770228116970f2330648ac70d3503550a026a3146609252",
+      "card_words": [
+        81,
+        86,
+        84,
+        85
+      ],
+      "schema_indices_citation_join": "PASS",
+      "source_derivation": "PASS_with_attributed_intent_and_retrospective_scope",
+      "budgets": [
+        {
+          "source_id": "somasound",
+          "body_indices": [
+            0,
+            1
+          ],
+          "whitespace_words": 188,
+          "unicode_lexical_words": 192,
+          "charged_words": 192,
+          "maximum_words": 200
+        },
+        {
+          "source_id": "somavoices",
+          "body_indices": [
+            2,
+            3
+          ],
+          "whitespace_words": 191,
+          "unicode_lexical_words": 196,
+          "charged_words": 196,
+          "maximum_words": 200
+        }
+      ]
+    },
+    {
+      "id": "feature-animal-crossing-time",
+      "body_sha256": "9c6324147d61f54c6701697da317b7e33e4a84a64a2d003c72fedfbc345a1790",
+      "card_words": [
+        86,
+        87,
+        86,
+        87
+      ],
+      "schema_indices_citation_join": "PASS",
+      "source_derivation": "PASS_with_attributed_intent_and_retrospective_scope",
+      "budgets": [
+        {
+          "source_id": "acnewleaf",
+          "body_indices": [
+            0,
+            1
+          ],
+          "whitespace_words": 194,
+          "unicode_lexical_words": 199,
+          "charged_words": 199,
+          "maximum_words": 200
+        },
+        {
+          "source_id": "acseminar",
+          "body_indices": [
+            2,
+            3
+          ],
+          "whitespace_words": 194,
+          "unicode_lexical_words": 197,
+          "charged_words": 197,
+          "maximum_words": 200
+        }
+      ]
+    },
+    {
+      "id": "feature-minecraft-making-together",
+      "body_sha256": "0bc83d3ad5053f4fd3ea07d1d0922d07568311b3eac7df6f97c9c36801265273",
+      "card_words": [
+        84,
+        86,
+        84,
+        87
+      ],
+      "schema_indices_citation_join": "PASS",
+      "source_derivation": "PASS_with_attributed_intent_and_retrospective_scope",
+      "budgets": [
+        {
+          "source_id": "minecraft11",
+          "body_indices": [
+            0,
+            1
+          ],
+          "whitespace_words": 188,
+          "unicode_lexical_words": 189,
+          "charged_words": 189,
+          "maximum_words": 200
+        },
+        {
+          "source_id": "jens16",
+          "body_indices": [
+            2
+          ],
+          "whitespace_words": 98,
+          "unicode_lexical_words": 98,
+          "charged_words": 98,
+          "maximum_words": 100
+        },
+        {
+          "source_id": "snapshot17",
+          "body_indices": [
+            3
+          ],
+          "whitespace_words": 101,
+          "unicode_lexical_words": 102,
+          "charged_words": 102,
+          "maximum_words": 200
+        }
+      ]
+    },
+    {
+      "id": "feature-souls-learning-communities",
+      "body_sha256": "b5d4ed0bbdfd3a0808d9a9fdeb1433a00b9a3d1c1ca978f851b877c7e20714cc",
+      "card_words": [
+        86,
+        88,
+        86,
+        86
+      ],
+      "schema_indices_citation_join": "PASS",
+      "source_derivation": "PASS_with_attributed_intent_and_retrospective_scope",
+      "budgets": [
+        {
+          "source_id": "souls11",
+          "body_indices": [
+            0,
+            1
+          ],
+          "whitespace_words": 197,
+          "unicode_lexical_words": 200,
+          "charged_words": 200,
+          "maximum_words": 200
+        },
+        {
+          "source_id": "souls13",
+          "body_indices": [
+            2,
+            3
+          ],
+          "whitespace_words": 195,
+          "unicode_lexical_words": 200,
+          "charged_words": 200,
+          "maximum_words": 200
+        }
+      ]
+    },
+    {
+      "id": "feature-vr-presence-comfort",
+      "body_sha256": "d3393e44490111cde556a89dbee47f2f1489a20c8741f139b55bda7f67626bbd",
+      "card_words": [
+        83,
+        86,
+        86,
+        85
+      ],
+      "schema_indices_citation_join": "PASS",
+      "source_derivation": "PASS_with_attributed_intent_and_retrospective_scope",
+      "budgets": [
+        {
+          "source_id": "vr14",
+          "body_indices": [
+            0,
+            1
+          ],
+          "whitespace_words": 191,
+          "unicode_lexical_words": 195,
+          "charged_words": 195,
+          "maximum_words": 200
+        },
+        {
+          "source_id": "vr15",
+          "body_indices": [
+            2,
+            3
+          ],
+          "whitespace_words": 193,
+          "unicode_lexical_words": 194,
+          "charged_words": 194,
+          "maximum_words": 200
+        }
+      ]
+    },
+    {
+      "id": "feature-valve-team-tools",
+      "body_sha256": "c08768ba37e8c1ad86b07dd32c15866d74f43c4cebff91683d54704ad0fefbb0",
+      "card_words": [
+        87,
+        82,
+        85,
+        85
+      ],
+      "schema_indices_citation_join": "PASS",
+      "source_derivation": "PASS_with_attributed_intent_and_retrospective_scope",
+      "budgets": [
+        {
+          "source_id": "cabal99",
+          "body_indices": [
+            0,
+            1
+          ],
+          "whitespace_words": 195,
+          "unicode_lexical_words": 197,
+          "charged_words": 197,
+          "maximum_words": 200
+        },
+        {
+          "source_id": "cabal05",
+          "body_indices": [
+            2,
+            3
+          ],
+          "whitespace_words": 195,
+          "unicode_lexical_words": 197,
+          "charged_words": 197,
+          "maximum_words": 200
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "dq4",
+      "path": "build/research/editorial16/dq4.html",
+      "sha256": "f01824de6636e3bb7f8d835c7c2457f584412d7fffd51defa103a1c541468a6f",
+      "snapshot_match": true,
+      "actual_passages_read": "Actual shmuplations translated participant interview: AI/general strategy answers and full wagon/overworld/dungeon answer sequence; original November1989 context."
+    },
+    {
+      "id": "dq6",
+      "path": "build/research/editorial16/dq6.html",
+      "sha256": "f15dd1ed2687762df26cdd559365227c36842779c8c9cab648b9779132bec319",
+      "snapshot_match": true,
+      "actual_passages_read": "Actual translated Horii event-dependent village dialogue and Yamana party-condition/Hassan-coffin answers, with surrounding development context."
+    },
+    {
+      "id": "gameaudio86",
+      "path": "build/research/editorial16/gameaudio86.html",
+      "sha256": "511616ced11327a58ada00dead30e3cade5ba6d7240dac0f6e7a5432e6592693",
+      "snapshot_match": true,
+      "actual_passages_read": "Actual Beep June1986 translated roundtable: composition process/commute, Gunsmoke instruments/direct programming, PCB sound and headphone/cockpit proposal answer sequences."
+    },
+    {
+      "id": "saso10",
+      "path": "build/research/editorial16/saso10.html",
+      "sha256": "222035682edc62888d1f20faff8a7e3a99703d8cfeed2c7d689bc049bb5a20cd",
+      "snapshot_match": true,
+      "actual_passages_read": "Actual Greening interview credits, background, full Rolling Thunder2 FM8/PCM24 and Sampling Masters/Troubadour answer sequences. No invented release chronology."
+    },
+    {
+      "id": "somasound",
+      "path": "build/research/editorial16/somasound.html",
+      "sha256": "3b82acf33ed9dac9b58007389526a5567e5be2a5447283549c47b2d5553af744",
+      "snapshot_match": true,
+      "actual_passages_read": "Actual maker-authored Samuel Justice17September2015 article: opening/role, air versus underwater, room-size/Foley recording and binaural SIDE sections."
+    },
+    {
+      "id": "somavoices",
+      "path": "build/research/editorial16/somavoices.html",
+      "sha256": "24fbb96e3ebcf3215f328b3b605a3f42e8d95b15c2c1d48ae8f6a391dad5f537",
+      "snapshot_match": true,
+      "actual_passages_read": "Actual Hedberg article16October2015:2013/2014/2015 chronology, tougher Simon reversal, Jared Zeus, Nell Mooney Alice Koster audition and repeated morning sessions/script changes."
+    },
+    {
+      "id": "acnewleaf",
+      "path": "build/research/editorial16/acnewleaf.html",
+      "sha256": "afc0c9448d1d545644411f06c20b385ada8c64207adc3cbf2e187a47bd486f5a",
+      "snapshot_match": true,
+      "actual_passages_read": "Entire actual official Iwata Asks Being the Mayor chapter: Kyogoku late shop, Moro clock/time rationale, ordinances, ceremonies and approval-rating exchange."
+    },
+    {
+      "id": "acseminar",
+      "path": "build/research/editorial16/acseminar.html",
+      "sha256": "5b65a82655630f7c92c9946eb8652fe681ba2e7d0027b2b48d07320a9a33df93",
+      "snapshot_match": true,
+      "actual_passages_read": "Entire actual Matt Walker11July2016 translation of2008 Nintendo seminar part4: Iwata/Nogami/Eguchi asynchronous family letters and satisfaction without declared furniture total."
+    },
+    {
+      "id": "minecraft11",
+      "path": "build/research/editorial16/minecraft11.pdf",
+      "sha256": "c5cb7b80301dfc08e0efefb98cead30a20824bd2eddcf8d2150ecbb6d7a5401b",
+      "snapshot_match": true,
+      "actual_passages_read": "Actual original PDF printed26 and30 /PDF28 and32: open development/Creative/Portal-texture account and delayed multiplayer/server inventory rewrite. PDF28 raster inspected."
+    },
+    {
+      "id": "jens16",
+      "path": "build/research/editorial16/jens16.html",
+      "sha256": "b9617267df8bc58a53c45dc15db70f0493e65af02554e31dde5066f4e5e11daa",
+      "snapshot_match": true,
+      "actual_passages_read": "Actual original page header confirms Matt Peckham and14November2016. Complete Creative one-block-at-a-time/cooperation answer read. Only one card charged98words against100maximum."
+    },
+    {
+      "id": "snapshot17",
+      "path": "build/research/editorial16/snapshot17.html",
+      "sha256": "63972102189955391a962081a8aec5c90d3626300c4a44189fc0cff4df05313b",
+      "snapshot_match": true,
+      "actual_passages_read": "Actual official8February2017 snapshot announcement: Creative toolbar save/load, new block list, backups and issue reporting; experimental release kept distinct from final1.12."
+    },
+    {
+      "id": "souls11",
+      "path": "build/research/editorial16/souls11.html",
+      "sha256": "e97462aeec9151ab62d3ade5386a4f162427874dd472b07d82a9182f2eef5b4e",
+      "snapshot_match": true,
+      "actual_passages_read": "Actual Sid Shuman4February2011 interview, cooperative/competitive crossing-path answer and full Beacon Fire answer; prelaunch intent, not retrospective observation."
+    },
+    {
+      "id": "souls13",
+      "path": "build/research/editorial16/souls13.html",
+      "sha256": "27e850254af532f37dc2988e87bfc3b74c2f3e13901a780e15c5404323d7b8fc",
+      "snapshot_match": true,
+      "actual_passages_read": "Actual Fred Dutton22January2013 interview, audience/market answer and original2009version modification answer. No later remake policy inferred."
+    },
+    {
+      "id": "vr14",
+      "path": "build/research/editorial16/vr14.pdf",
+      "sha256": "b295173e9b5c2a5a7db794b9f6df09e51dd0a1e90746116c66e90892c59c8afb",
+      "snapshot_match": true,
+      "actual_passages_read": "Original Jed Ashforth GDC Europe2014 PDF text, slides14–18 and comfort/head-control sequence; actual slide14 raster inspected."
+    },
+    {
+      "id": "vr15",
+      "path": "build/research/editorial16/vr15.pdf",
+      "sha256": "3084573fa0d0a24b83fa3c22186f5aeacbad284d4b80385a3dbd700b9ff06dfc",
+      "snapshot_match": true,
+      "actual_passages_read": "Original Alex Vlachos GDC2015 PDF, slides4,9,16–23; raster4/9 inspected.90Hz11.11ms developer kit, tracked-volume detail and prediction/scheduling match."
+    },
+    {
+      "id": "cabal99",
+      "path": "build/research/editorial16/cabal99.pdf",
+      "sha256": "925b6eb5f05b3c1010de60744820fcf4d6d150d84c2a20095f3ec919c36de519",
+      "snapshot_match": true,
+      "actual_passages_read": "Original Ken Birdwell December1999 magazine PDF, printed42/PDF22 prototype and printed49/PDF27 Technology Integration Tips; rasterPDF22 inspected."
+    },
+    {
+      "id": "cabal05",
+      "path": "build/research/editorial16/cabal05.pdf",
+      "sha256": "77facde39f4c256463f5d59fa7aaf9cc636ab225d914ab41e802d8c881e74786",
+      "snapshot_match": true,
+      "actual_passages_read": "Original November2005 magazine PDF, printed22/PDF24 full cabals/art/acting/sound section; rasterPDF24 inspected. Original author box prints Speyer; independent official Valve pages confirm Speyrer."
+    }
+  ],
+  "placement": {
+    "feature-japanese-rpg-writing": {
+      "recommendation": "attach",
+      "parent_id": "wikipedia-760191",
+      "reason": "DQIV production is specific to the parent; later DQVI comparison is explicitly introduced. Parent currently covers release/chapter structure, not these AI/wagon/dialogue labour accounts."
+    },
+    "feature-musicians-fm-pcm": {
+      "recommendation": "distinct_subject_pending_media_and_explicit_year_anchor",
+      "parent_id": null,
+      "reason": "Comparative hardware/listening/practice subject. Not a duplicate Kondo/Koshiro/Hubbard biography. Prefer1986document year over unexplained1990research anchor; later2010testimony remains dated in prose."
+    },
+    "feature-survival-horror-sound": {
+      "recommendation": "distinct_SOMA_subject_pending_media",
+      "parent_id": null,
+      "reason": "No exact SOMA canonical found. Retarget from broad/ResidentEvil commission to actual2015SOMA case should be explicit in register; no attachment to unrelated1996ResidentEvil."
+    },
+    "feature-animal-crossing-time": {
+      "recommendation": "attach",
+      "parent_id": "wikipedia-540952",
+      "reason": "Original calendar article explains seasonal presence; New Leaf ordinances and original asynchronous messages add concrete creator decisions.2001parent anchor is not the New Leaf launch date."
+    },
+    "feature-minecraft-making-together": {
+      "recommendation": "attach",
+      "parent_id": "minecraft",
+      "reason": "Adds actual production and multiplayer-rule decisions to the short existing account; sources2011/2016/2017separated. No new Minecraft stop."
+    },
+    "feature-souls-learning-communities": {
+      "recommendation": "hold_distinct_admission_requires_editorial_merge_or_retarget",
+      "parent_id": "workbook-09-22-dark-souls",
+      "reason": "Cards0–1 duplicate existing canonical bonfire/body3 and permeable multiplayer/body5, using the same creator-intention themes. Cards2–3 add2013DemonSouls audience/preservation testimony but do not establish a separate player-learning-community subject. An explicit additive merge/enrichment decision may preserve them; do not count this as a new destination. Existing DemonSouls canonical is2020remake, unsuitable as a simple2009parent."
+    },
+    "feature-vr-presence-comfort": {
+      "recommendation": "attach_historical_context",
+      "parent_id": "workbook-03-23-half-life-alyx",
+      "reason": "Sony2014design principles and Valve2015technical presentation supply dated context for the parent real-body/room discussion. Do not imply these slides document Alyx2020production or universal headset behaviour."
+    },
+    "feature-valve-team-tools": {
+      "recommendation": "attach",
+      "parent_id": "wikipedia-575509",
+      "reason": "Original1999HalfLife method compared with2005HalfLife2production; final two cards directly match parent. Substantial new production detail beyond existing engine/development overview."
+    }
+  },
+  "findings": [
+    {
+      "id": "PD16-01",
+      "severity": "medium",
+      "status": "open_placement_hold_already_anticipated_by_author",
+      "entry_id": "feature-souls-learning-communities",
+      "body_indices": [
+        0,
+        1
+      ],
+      "finding": "A distinct admission would duplicate the existing Dark Souls bonfire and online-presence chapters; the later DemonSouls retrospective does not by itself form a new learning-community case.",
+      "required_action": "Retain distinct hold. Decide explicit additive enrichment under workbook-09-22-dark-souls or retarget toward actual community learning evidence. Preserve original parent and all drafts; do not fabricate a new destination count."
+    },
+    {
+      "id": "PD16-02",
+      "severity": "low",
+      "status": "metadata_recommendation_pending_author_decision",
+      "entry_id": "feature-musicians-fm-pcm",
+      "finding": "year1990has only generic research-anchor semantics, while the actual first contemporary document is June1986and the other publication is2010. No prose release-date claim is wrong.",
+      "recommended_action": "Use1986as explicitly named document anchor or document a primary basis for1990. Do not pass a research window as a launch event."
+    },
+    {
+      "id": "PD16-03",
+      "severity": "low",
+      "status": "nonblocking_style_recommendation",
+      "entry_ids": [
+        "feature-souls-learning-communities",
+        "feature-vr-presence-comfort"
+      ],
+      "finding": "Some public sentences explain audit scope rather than history: Souls2 complete-account qualification, Souls1 records-what-director-wanted qualification, and VR1 medical-advice/guarantee disclaimer. Dates and attributed accounts already establish useful scope.",
+      "recommended_action": "At copyedit, retain essential attribution/date distinctions while moving routine research limitations into notes. Any replacement must preserve80wordcard minimum and publication budgets; no reviewer prose edits applied."
+    },
+    {
+      "id": "PD16-04",
+      "severity": "informational",
+      "status": "resolved_independent_verification",
+      "entry_id": "feature-valve-team-tools",
+      "finding": "Magazine author box prints David Speyer. Official Valve People and Publications use David Speyrer, so the draft bibliographic spelling is correct.",
+      "evidence_urls": [
+        "https://www.valvesoftware.com/pl/people",
+        "https://www.valvesoftware.com/en/publications"
+      ]
+    },
+    {
+      "id": "PD16-05",
+      "severity": "informational",
+      "status": "resolved_independent_verification",
+      "entry_id": "feature-minecraft-making-together",
+      "finding": "Actual TIME header confirms Matt Peckham,14November2016; full one-block/cooperation answer supports card2. Recomputed full-visible charge98fits its stricter100word allowance."
+    }
+  ],
+  "source_grouping": "All answer sequences/chapters/mirrors within each publication charged together. TIME one-card group98/100. Entire original Birdwell article, Jacobson/Speyrer article and each VRpresentation one group. No same-source-URL or commission-ID collision with other original batches found.",
+  "source_reuse_collisions": [],
+  "parent_comparison_snapshot_sha256": "4d8e7ed7089580a70ef19e784b72b2a31d9f91d5d0122a072b726faeda18c6c5",
+  "parent_snapshot_note": "Snapshot only; concurrent parent assembly may change master. These parent body hashes identify the actual text compared, not current-master guarantees.",
+  "parents_read": [
+    {
+      "id": "wikipedia-760191",
+      "title": "Dragon Quest IV",
+      "body_sha256": "8c92906f88ea7253cd012eacb001585f1fb6143383de00fb8c1c6bc629353c30",
+      "sections": 3,
+      "read_in_full": true
+    },
+    {
+      "id": "wikipedia-540952",
+      "title": "Animal Crossing",
+      "body_sha256": "d96ecd7ad332b900fc5da2cd98c5d0e1f41a3726cf1cffdd86f86d8b11a9811f",
+      "sections": 4,
+      "read_in_full": true
+    },
+    {
+      "id": "minecraft",
+      "title": "Minecraft",
+      "body_sha256": "1fda66f09c0b6e5b80acc183516bb88694d5a4af108e74e0df060f70e94483c4",
+      "sections": 2,
+      "read_in_full": true
+    },
+    {
+      "id": "workbook-03-23-half-life-alyx",
+      "title": "Half-Life: Alyx",
+      "body_sha256": "a1d4ef5b4c7bcb3989de780f9c275414d67f50583fd374f8fb9d03e07d31b763",
+      "sections": 3,
+      "read_in_full": true
+    },
+    {
+      "id": "wikipedia-575509",
+      "title": "Half-Life 2",
+      "body_sha256": "db7e236cd391bc493e0fc9fc3bd13312a2c436d695a4d8c4989e497f6dec4b4a",
+      "sections": 4,
+      "read_in_full": true
+    },
+    {
+      "id": "workbook-09-22-dark-souls",
+      "title": "Dark Souls",
+      "body_sha256": "8c6534c711863d4059effb7fe796fbd62df73496a1fed6165b2a598699ab0acf",
+      "sections": 7,
+      "read_in_full": true
+    },
+    {
+      "id": "wikipedia-64249122",
+      "title": "Demon's Souls",
+      "body_sha256": "d5584ac53c0508496e233e2f37d3d87cb36c59a7ef586364f22e3e06812f11cd",
+      "sections": 1,
+      "read_in_full": true
+    }
+  ],
+  "media": "All32briefs remain unselected; availability does not grant source/page/game-asset permissions. No source image, diagram or document reproduction approved by this review.",
+  "originals": "No catalog, original Playhub source, generated locales, assembler, integration hooks, runtime, package or console writes.",
+  "evidence_page_map": "build/research/editorial16/independent-review-page-map.json",
+  "review_modifies_author_draft": false
+}

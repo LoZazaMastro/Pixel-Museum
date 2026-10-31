@@ -1,0 +1,77 @@
+{
+  "schema": "pixel-museum-birth-date-research-v1",
+  "batch_id": "016-catalog",
+  "entry_id": "dona-bailey",
+  "person_name": "Dona Bailey",
+  "researched_on": "2026-10-29",
+  "status": "unresolved_conflicting_birth_years",
+  "research_for_this_delivery_completed": true,
+  "reason_for_research": "L’utente richiede di collegare le biografie alla nascita documentata e autorizza la ricerca autonoma quando la data manca o è dubbia. Il lotto non fornisce una nascita per Dona Bailey.",
+  "original_metadata": {
+    "kind": "person",
+    "title": "Dona Bailey and Centipede",
+    "year_context_only": 1981,
+    "date_context_only": {
+      "month": 0,
+      "day": 0,
+      "precision": "year",
+      "region": ""
+    },
+    "event_semantics": ""
+  },
+  "editorial_semantics": "Profilo individuale che comprende il lavoro a Centipede, testimonianze successive e insegnamento. Il 1981 fornito è l’anno dell’opera, non una nascita documentata; il testo non è limitato a un singolo avvenimento esplicitamente datato.",
+  "verified_birth_date": null,
+  "precision": "unresolved",
+  "conflicting_years": [
+    1955,
+    1956
+  ],
+  "day_and_month_verified": false,
+  "sources": [
+    {
+      "title": "Dona Bailey",
+      "publisher": "Wikipedia, edizione inglese",
+      "url": "https://en.wikipedia.org/wiki/Dona_Bailey",
+      "source_type": "Fonte secondaria collaborativa; consultata per risalire alla fonte della data, non accettata da sola come prova conclusiva",
+      "accessed_on": "2026-10-29",
+      "locator": "Infobox, introduzione, Early life and education e nota 4",
+      "finding": "Indica il 1955. La nota 4 rimanda al profilo AtariWomen, che nella versione consultata non esplicita l’anno di nascita.",
+      "proves_birth_date": false
+    },
+    {
+      "title": "Dona Bailey – atariwomen",
+      "publisher": "AtariWomen",
+      "url": "https://www.atariwomen.org/stories/dona-bailey/",
+      "source_type": "Profilo di ricerca con testimonianze dell’interessata, citato dalla voce Wikipedia",
+      "accessed_on": "2026-10-29",
+      "locator": "Intero testo del profilo biografico consultato",
+      "finding": "Il testo riporta ricordi ed età relative alla formazione, ma non una data o un anno di nascita. Non conferma quindi il 1955 mediante una dichiarazione esplicita.",
+      "proves_birth_date": false
+    },
+    {
+      "title": "Dona Bailey - Computing History",
+      "publisher": "The Centre for Computing History",
+      "url": "https://www.computinghistory.org.uk/det/47371/Dona-Bailey/",
+      "source_type": "Scheda biografica museale; non è un documento anagrafico o una dichiarazione diretta dell’interessata",
+      "accessed_on": "2026-10-29",
+      "locator": "Inizio della scheda, campo Born",
+      "finding": "Indica il 1956, in contrasto con il 1955 della voce Wikipedia. La pagina consultata non espone la documentazione da cui ricava questo anno.",
+      "proves_birth_date": false
+    }
+  ],
+  "assessment": "La ricerca mirata non ha trovato una prova sufficientemente affidabile per risolvere il contrasto fra 1955 e 1956 né per stabilire giorno e mese. La frequenza di un anno nei risultati di ricerca non è una conferma indipendente; età, studi e date lavorative non vengono usati per ricavare una nascita a intuito.",
+  "text_action": "Completare la voce e la feature nelle cinque lingue con i soli fatti di carriera forniti. Non inserire una nascita incerta, un segnaposto o dati biografici ulteriori tratti dalla ricerca online. Mantenere distinti l’ingresso in Atari nel 1980 e Centipede nel 1981.",
+  "metadata_action": {
+    "biographical_realignment_required": true,
+    "status": "deferred_until_reliable_birth_evidence",
+    "proposed_birth_date": null,
+    "original_input_modified": false,
+    "original_template_modified": false,
+    "catalog_modified": false,
+    "next_evidence_needed": "Una fonte primaria attendibile che dichiari la nascita, o una documentazione verificabile che permetta di spiegare il contrasto fra gli anni. Solo allora proporre la nuova collocazione biografica con la precisione effettivamente documentata."
+  },
+  "issue_target_id": "dona-bailey",
+  "issue_remains_open": true,
+  "next_batch_blocked": false,
+  "retrospective_audit_note": "Il controllo delle nascite nei lotti 001–014, concluso nella consegna 015, resta concluso e invariato. Questa ricerca riguarda soltanto la nuova voce Dona Bailey nel lotto 016."
+}

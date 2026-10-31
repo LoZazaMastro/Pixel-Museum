@@ -1,0 +1,105 @@
+{
+  "status": "PASS",
+  "locale": "fr",
+  "entries": [
+    {
+      "entry_id": "wikipedia-64515728",
+      "source_fields_sha256": "782c61be58d833d8abafe26e6abcafe520e9b20689a09b7a58e84816d110dd46",
+      "translation_sha256": "94476ab2d65d0a2d09ba9c2c0ae47f31160d574b4ea2d646fe046a1eee879e08",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch335/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "4e53a1f74d1f7bf69c2ea800fd72ec180026b76d60ed883ab4fde940230d550f"
+    },
+    {
+      "entry_id": "wikipedia-2369138",
+      "source_fields_sha256": "c5732c92c9ef70d26e4a0c8c6c41fdbf6346c7cd73aa250fd94896bd945cf8cb",
+      "translation_sha256": "5d56ff3584a27124467a7cf9a20676929e9e1ea5910f2bdb3ed2c581c1996459",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch335/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "4e53a1f74d1f7bf69c2ea800fd72ec180026b76d60ed883ab4fde940230d550f"
+    },
+    {
+      "entry_id": "workbook-10-12-back-4-blood",
+      "source_fields_sha256": "57ad7f8b3b1165b84ea029d527c4e51d93ba9a348217e7a5bfdd8c2cee453082",
+      "translation_sha256": "ca25754808a0addb698bca9afb97ce41c367c30b2f799df42c21adcdc6f3a630",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch335/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "4e53a1f74d1f7bf69c2ea800fd72ec180026b76d60ed883ab4fde940230d550f"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "/root/category_audit",
+    "actual_receipt": "build/research/catalog-2021-chronological/october-three-private/independent-category-audit-approval.json",
+    "actual_receipt_sha256": "e88d65ed9e852d4c1e6992fef39ebaa497d1531dec27387414bf54b7f3a5f3f4",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "/root/category_audit",
+      "index_sha256": "b17ac18ec1ea5fe212ad05f41d377484a7a6fd865f2a46a39d34c64e411e33f4",
+      "scope": {
+        "english_paragraphs_actually_read": 11,
+        "localized_paragraphs_actually_read": 44,
+        "languages": [
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "images_actually_viewed": 16,
+        "final_contact_sheets_actually_viewed": 3,
+        "new_cue_metadata_actually_read": 6
+      },
+      "findings": [],
+      "primary_sources_read": [
+        {
+          "url": "https://news.ubisoft.com/en-us/article/5z4l6plGjUiCPd6E5sGCPl",
+          "finding": "Original September30,2021 soundtrack, PedroBromfman,21tracks and October7 game launch confirmed; three selected official publications are original2021 UbisoftMusic."
+        },
+        {
+          "url": "https://www.nintendo.com/au/news-and-articles/metroid-dread-report-vol-4-unravelling-a-saga-35-years-in-the-making/",
+          "finding": "Nintendo explicitly numbers Dread fifth2DMetroid and identifies Fusion as directprequel. Finitecorrection supported."
+        },
+        {
+          "url": "https://www.nintendo.com/us/store/products/metroid-ravenous-switch-2/",
+          "finding": "Actualcurrentprimarypage confirms January28,2027 Switch2 sequel; laterclaim preserved rather than removed on assumptions."
+        },
+        {
+          "url": "https://turtlerockstudios.com/news/b4b-2223/",
+          "finding": "February2,2023 contentend announcement, threeexpansions and continuedoperation support candidate wording."
+        },
+        {
+          "url": "https://back4blood.com/en-sg/patch-notes/june-2022-update",
+          "finding": "June7,2022 FullDeckDraw across all difficulties distinct from progressivecards at launch."
+        },
+        {
+          "url": "https://www.asoundeffect.com/back-4-blood-sound/",
+          "finding": "FirstpersonAnderseninterview confirms co-composerNathanWhitehead and modular originalgame scoring; composerwebsite currently429, so directinterview used without claiming currentwebsitefetch."
+        }
+      ],
+      "review_notes": [
+        "All11EN and44locales fully read. Back4Blood completeexistingtranslations preserved with finite chronology/mechanics corrections; no omissions found.",
+        "All16images viewed: clean unbrandedcovers and originalgame screenshots, Dread oldmodernboxbacks removed. Video thumbnails remain contextual linkedvideo previews.",
+        "Dread72recordings left intact without redundant networkqueries. Sixnewcue metadata read:3officialUbisoft2021 and3clearlyqualifiedBack4Blood archivalgame recordings; extendedloop/EPICarrangement/DLC alternatives excluded. No audio download or consoleplayback claimed."
+      ],
+      "owners": [
+        {
+          "entry_id": "wikipedia-64515728",
+          "source_sha256": "4ace165953a397159bf12b0879356fd21354c47f31316b12cfbb5892d3255366",
+          "target_sha256": "0d5d2dd5630da4b96e52dee01b72a5523471905428e4c328a579bbcc9f5e9824",
+          "contact_sha256": "1030534b3e5b5355a249eaf35d4944512ba852d9c92f0a448198b5b545dcb2d9"
+        },
+        {
+          "entry_id": "wikipedia-2369138",
+          "source_sha256": "050ddc8c076f0395ed6fc4a3fcc75579dd593340013dbd7beeb899ef68295ed1",
+          "target_sha256": "c612cb6038d9dbc923a75737fac15ba7d47c352c0b213787648109b80d61417f",
+          "contact_sha256": "bd3a55802475a51821a7eb1c46d224da7f23003379c27d4aa2f361176764fb2c"
+        },
+        {
+          "entry_id": "workbook-10-12-back-4-blood",
+          "source_sha256": "9304e8bd6c03067bd53bcb389cfdafae136a8c3ddc11e05c95fc1b500aa577d5",
+          "target_sha256": "d59a7495823b62252531a75b8b1bc00373fa09f24f3579f9f4135966a35e0c3b",
+          "contact_sha256": "ed7c07862876f4878e3babd4b1244b52a1fa5232a281c2d6533e8aae47ea582c"
+        }
+      ],
+      "production_writes": false,
+      "authorization": "No global writes; root admission remains separate."
+    }
+  }
+}

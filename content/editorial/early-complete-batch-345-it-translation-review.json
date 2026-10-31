@@ -1,0 +1,81 @@
+{
+  "status": "PASS",
+  "locale": "it",
+  "entries": [
+    {
+      "entry_id": "wikipedia-68802923",
+      "source_fields_sha256": "a80f43106cf3eb7f913b4173b4ce61551a226141df56a40321dd81d95b03f2f1",
+      "translation_sha256": "1c34e41b36244699da3f5bb80ef6a5c956153cf29cd5883e39545230fbdee675",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch345/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "b72c9a3efe5e0e16f31aea3576eb80960641851b7e4a524e9d272becf293d98b"
+    },
+    {
+      "entry_id": "wikipedia-72536576",
+      "source_fields_sha256": "46bfef22ffe91df05e4c13077833237dda23d4376dfe7ce54acaa174e8b8b0b6",
+      "translation_sha256": "1ae20fdab4631df84f369da3aff2a049105740287aa4fb751b8147940762e6b2",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch345/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "b72c9a3efe5e0e16f31aea3576eb80960641851b7e4a524e9d272becf293d98b"
+    },
+    {
+      "entry_id": "wikipedia-67975227",
+      "source_fields_sha256": "784038373c58f1cbd8f925d43d13d39951f92d405c4ea9a4437376abbedea5b7",
+      "translation_sha256": "c01583a17d1db0a16c829521109c50d8f64eee54f52a2e9230a4d76b39d696f5",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch345/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "b72c9a3efe5e0e16f31aea3576eb80960641851b7e4a524e9d272becf293d98b"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "package_audit",
+    "actual_receipt": "build/research/catalog-2022-chronological/september-october-three-private/independent-package-audit-approval.json",
+    "actual_receipt_sha256": "8b5b122c2c62843dde26480bece8677e0a2011b48eeaaa27d965926020593b5d",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "package_audit",
+      "independent_of_author": true,
+      "index_sha256": "75ef431d3c7c30269f20e977f1467d3bf426cf834c3bc7809cebcd896a0bc039",
+      "owners": [
+        {
+          "entry_id": "wikipedia-68802923",
+          "source_sha256": "473e27c6ec595ae60cd4e70bd7229701e32c6f8b283d8626edfe74f3ab45af6c",
+          "target_sha256": "04f661c77c8af74cd99dd7ef879a0623af9e7cc03cc5b5a09aa19a3e3b39a99f",
+          "contact_sha256": "cd7683e339090ee1d90b6d99da46252d2b59d989ab24eab660ed8172996713b4"
+        },
+        {
+          "entry_id": "wikipedia-72536576",
+          "source_sha256": "66a080f873204e40c42b69d634d416dac511194e63aee9ef29bf1c04259ac065",
+          "target_sha256": "3f1ed09cd238777736aab908375ba97b7d030f03c45b93e3a7cb22c497d840c3",
+          "contact_sha256": "e231e40697714667af86cd500c5b905157f9c9afdccd0d26453c1b5d7b999ee8"
+        },
+        {
+          "entry_id": "wikipedia-67975227",
+          "source_sha256": "1fa1add791d3ee8402dbeb1755bbf89ae5c4663b4572afb014f2c6555d1e53ce",
+          "target_sha256": "27153a55e514c76eb8a76384e9b44dbc04835c074de0ae455c84cee815041cfb",
+          "contact_sha256": "114763ad02607fdc2c0d5b9fbd2fab2db503a7d21a367eb1fc35a6ddb692995c"
+        }
+      ],
+      "scope": {
+        "english_paragraphs_read": 7,
+        "localized_paragraphs_read": 28,
+        "images_personally_viewed": 13,
+        "new_metadata_receipts_read": 4,
+        "unchanged_splatoon_cues": 70
+      },
+      "resolved_findings": [
+        "GoldenIdol thirteen tracks reordered to actual composer album sequence. Two existing individual recordings at positions11and12 retain all fields except clean UI title and replacement of Wikipedia composer link by direct composer primary; these two small improvements approved. All eleven chapter boundaries match literal composer metadata."
+      ],
+      "notes": [
+        "All seven English paragraphs, all four localized versions, all13selected images and four actual new metadata receipts read/viewed. No further finding.",
+        "Splatoon70cue objects unchanged, not refetched. Launch/date/recordthree-day-sales confirmed by Nintendo primary.",
+        "GoldenIdol2022score publishercomposer upload2024 correctly identified; complete13chaptertracklist and existing2individualrecordings coherent. Composer website timed out in web retrieval; its firsthand YouTube full-album description and literal chapters were actually read in saved native metadata instead.",
+        "Requiem finite correction from Inquisition to hostile soldiers avoids importing Innocence antagonist into sequel. Original2022CDBabyrecordings identify performers without making them all composers. Focusprimary confirms Sophia prequelAugust27,2026; not removed by obsolete assumptions."
+      ],
+      "primary_sources_read": [
+        "https://www.nintendo.co.jp/corporate/release/en/2022/220912.html",
+        "https://www.focus-entmt.com/en/news/resonance-a-plague-tale-legacy-unveils-its-gripping-new-story-trailer-and-exclusive-content",
+        "https://www.youtube.com/watch?v=W78aoMP31A4"
+      ],
+      "production_writes": false
+    }
+  }
+}

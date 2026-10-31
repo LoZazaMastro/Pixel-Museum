@@ -1,0 +1,545 @@
+{
+  "batch_id": "295-human-history",
+  "sources": [
+    {
+      "source_id": "jfk_warren",
+      "title": "Warren Commission Report, chapter 4",
+      "url": "https://www.archives.gov/research/jfk/warren-commission-report/chapter-4.html",
+      "verification_scope": "Documento primario consultato negli estratti: arresto circa 13:50, non settanta minuti dopo 12:30; ricostruzione del ritorno a casa e del delitto Tippit. Le conclusioni sui responsabili sono attribuite alla commissione."
+    },
+    {
+      "source_id": "jfk_report",
+      "title": "Pool Report, Dallas to Washington, 22 novembre 1963, JFK Library",
+      "url": "https://static.jfklibrary.org/cf00b4n27sk041u7p25pmt02s7eyvu4u.pdf?odc=20231115180513-0500",
+      "verification_scope": "Resoconto contemporaneo del giornalista presente, estratto indicizzato: giuramento 14:38, 98 minuti dalla dichiarazione di morte; 128 minuti dagli spari."
+    },
+    {
+      "source_id": "jfk_museum",
+      "title": "Sixth Floor Museum, About the Museum / timeline",
+      "url": "https://www.jfk.org/wp-content/uploads/TSFM-About-the-Museum-04-24-26-On-Assignment-Press-Kit-reduced.pdf",
+      "verification_scope": "Cronologia museale indicizzata: arresto 13:50 e giuramento 14:38; non aggiunte al testo informazioni successive all’arco originale."
+    },
+    {
+      "source_id": "fellini_museum",
+      "title": "Fellini Museum, 8½",
+      "url": "https://fellinimuseum.it/8-1-2/",
+      "verification_scope": "Fonte fornita letta: 1963, trama, regia, Mastroianni, Di Venanzo, Gherardi e Rota. Il 6 febbraio è visto censura, non release; non importato il raggruppamento degli Oscar sotto 1963."
+    },
+    {
+      "source_id": "fellini_academy_original",
+      "title": "Academy, URL della retrospettiva fornito",
+      "url": "https://digitalcollections.oscars.org/digital/api/collection/p15759coll4/id/16501/download",
+      "verification_scope": "URL originale conservato; reindirizza alla homepage del nuovo archivio e non al documento. Non dichiarata lettura del documento perduto."
+    },
+    {
+      "source_id": "fellini_awards",
+      "title": "Academy of Motion Picture Arts and Sciences, 1964 ceremony",
+      "url": "https://www.oscars.org/oscars/ceremonies/1964",
+      "verification_scope": "Pagina ufficiale letta: Oscar film in lingua straniera e costumi in bianco e nero a Piero Gherardi; cerimonia 1964 per film 1963. Titolo e data della voce restano quelli dell’opera."
+    },
+    {
+      "source_id": "march_program",
+      "title": "March on Washington, programma originale, SNCC Digital Gateway",
+      "url": "https://snccdigital.org/wp-content/uploads/digitalcollections/mowprog.pdf",
+      "verification_scope": "Programma primario indicizzato: 28 agosto 1963, King ultimo discorso principale, seguito da impegno di Randolph e benedizione. Evitato il falso assoluto di ultima persona a parlare."
+    },
+    {
+      "source_id": "march_king",
+      "title": "Martin Luther King Jr. Research and Education Institute, March on Washington",
+      "url": "https://kinginstitute.stanford.edu/march-washington-jobs-and-freedom",
+      "verification_scope": "Archivio del movimento: data e ruolo delle organizzazioni. La stima circa 250.000 è conservata da INPUT; la scheda dice oltre 200.000 e non contraddice tale ordine di grandezza."
+    },
+    {
+      "source_id": "march_anderson",
+      "title": "Library of Congress, The Sound of Freedom",
+      "url": "https://blogs.loc.gov/loc/2014/04/the-sound-of-freedom-marian-anderson-at-the-lincoln-memorial/",
+      "verification_scope": "Archivio dell’esibizione: Marian Anderson torna a cantare al Lincoln Memorial il 28 agosto 1963. Non trasformato il programma previsto in prova di uno specifico brano effettivamente cantato."
+    },
+    {
+      "source_id": "beatles",
+      "title": "The Beatles, Please Please Me",
+      "url": "https://www.thebeatles.com/please-please-me",
+      "verification_scope": "Fonte ufficiale dell’artista: prima uscita Parlophone 22 marzo 1963. Conservati produzione George Martin, quattordici brani e sedute già documentati nel materiale fornito."
+    },
+    {
+      "source_id": "sketchpad_thesis",
+      "title": "Ivan Sutherland, Sketchpad, tesi ristampata da University of Cambridge",
+      "url": "https://www.cl.cam.ac.uk/techreports/UCAM-CL-TR-574.html",
+      "verification_scope": "Pagina del documento primario letta nell’estratto: tesi presentata gennaio 1963, disegno come interazione con il computer e usi artistici/tecnici. Settembre 2003 è ristampa, non nascita del programma."
+    },
+    {
+      "source_id": "sketchpad_turing",
+      "title": "IEEE Computer Society, Ivan Edward Sutherland",
+      "url": "https://history.computer.org/pioneers/sutherland.html",
+      "verification_scope": "Citazione del premio Turing 1988: contributi iniziati con Sketchpad e proseguiti successivamente; conservata la distinzione fra singolo programma e insieme dei risultati."
+    },
+    {
+      "source_id": "sketchpad_kyoto",
+      "title": "Inamori Foundation, Ivan Edward Sutherland",
+      "url": "https://www.kyotoprize.org/en/laureates/ivan-edward-sutherland/",
+      "verification_scope": "Ente che conferisce il premio: Kyoto 2012 per risultati nella grafica e nelle interfacce, non soltanto per la tesi."
+    },
+    {
+      "source_id": "basic_dartmouth",
+      "title": "Dartmouth Library, The People Behind the Computer",
+      "url": "https://exhibits.library.dartmouth.edu/s/dtss/page/people",
+      "verification_scope": "Archivio del progetto: 1964, Kemeny, Kurtz, accessibilità e contributo degli studenti. Non attribuito ai soli due docenti ogni lavoro esecutivo; non aggiunta la scena controversa su chi fosse presente alla prima esecuzione."
+    },
+    {
+      "source_id": "basic_first_run",
+      "title": "Dartmouth Computer Science, BASIC turns 55",
+      "url": "https://web.cs.dartmouth.edu/news/2019/05/basic-turns-55",
+      "verification_scope": "Prima esecuzione il 1 maggio 1964; non trasformata automaticamente in giorno di distribuzione generale del linguaggio. La precisione annuale della voce resta appropriata."
+    },
+    {
+      "source_id": "civil_act",
+      "title": "National Archives, Civil Rights Act (1964), documento originale",
+      "url": "https://www.archives.gov/milestone-documents/civil-rights-act",
+      "verification_scope": "Legge e descrizione istituzionale: firma 2 luglio 1964 e differenti ambiti dei divieti. Non estesi tutti i motivi protetti a ogni titolo né confusa la promulgazione con l’immediata efficacia di ciascuna disposizione."
+    },
+    {
+      "source_id": "mouse_sri",
+      "title": "SRI, The computer mouse and interactive computing",
+      "url": "https://www.sri.com/hoi/computer-mouse-and-interactive-computing/",
+      "verification_scope": "Storia del laboratorio: prototipo 1964, ruote e dimostrazione 1968. Il metadato della pagina non viene scambiato per giorno della dimostrazione."
+    },
+    {
+      "source_id": "mouse_institute",
+      "title": "Doug Engelbart Institute, Historic Firsts: The Mouse",
+      "url": "https://www.dougengelbart.org/content/view/162/40th/about/40th/",
+      "verification_scope": "Archivio dell’autore: prototipo autunno 1964 distinto dai modelli successivi e da quello mostrato nel 1968. La nuova nota su documenti tecnici acquisiti ottobre 2026 non è presentata come lettura personale di carte non pubbliche."
+    },
+    {
+      "source_id": "strangelove_afi",
+      "title": "American Film Institute, Dr. Strangelove",
+      "url": "https://catalog.afi.com/Catalog/moviedetails/23082",
+      "verification_scope": "Scheda indicizzata con documentazione contemporanea: aperture New York, Londra e Toronto 29 gennaio 1964; 1963 copyright e inizio riprese distinti dalla release. Regista, sceneggiatori e romanzo confermati."
+    },
+    {
+      "source_id": "strangelove_archive",
+      "title": "Stanley Kubrick Archive, SK/11/1/24",
+      "url": "https://archives.arts.ac.uk/CalmView/Record.aspx?id=SK%2F11%2F1%2F24&src=CalmView.Catalog",
+      "verification_scope": "Scheda del copione originale nell’estratto indicizzato: materiali successivi all’uscita del 29 gennaio 1964; apertura integrale in timeout, non dichiarata consultazione del copione."
+    },
+    {
+      "source_id": "ibm_company",
+      "title": "IBM, The IBM System/360",
+      "url": "https://www.ibm.com/history/system-360?mhq=System+360&mhsrc=ibmsearch_a",
+      "verification_scope": "Storia del produttore: architettura comune, annuncio 7 aprile 1964 e compatibilità. Non assunta compatibilità assoluta di ogni modello in contrasto con le eccezioni fornite."
+    },
+    {
+      "source_id": "ibm_delivery",
+      "title": "Smithsonian National Museum of American History, May the circle be unbroken",
+      "url": "https://www.americanhistory.si.edu/explore/stories/may-circle-be-unbroken-ibm-360-and-birth-multipurpose-computers",
+      "verification_scope": "Ricerca museale su documenti e brochure conservati: consegne effettive dal 1965, distinte dall’annuncio del 1964."
+    },
+    {
+      "source_id": "ibm_slt_paper",
+      "title": "Davis, Harding, Schwartz e Corning, Solid Logic Technology, IBM Journal, aprile 1964",
+      "url": "https://bitsavers.org/pdf/ibm/IBM_Journal_of_Research_and_Development/082/ibmrd0802D.pdf",
+      "verification_scope": "Articolo primario, abstract indicizzato: transistor e diodi separati in moduli SLT. Non dichiarata lettura integrale."
+    },
+    {
+      "source_id": "ibm_slt_object",
+      "title": "Computer History Museum, Solid Logic Technology wafers",
+      "url": "https://www.computerhistory.org/revolution/mainframe-computers/7/164/654",
+      "verification_scope": "Scheda dell’oggetto: moduli ibridi con componenti separati. Precisata la distinzione dai circuiti integrati monolitici."
+    }
+  ],
+  "decisions": [
+    {
+      "target_id": "history-1963-assassination-of-john-f-kennedy",
+      "problem": "INPUT pone l’arresto circa settanta minuti dopo gli spari e rende ambiguo il riferimento delle due ore e otto minuti.",
+      "conclusion": "Arresto circa 13:50, ottanta minuti dopo l’attacco; giuramento 14:38, due ore e otto minuti dopo gli spari, non dopo la dichiarazione di morte. Ricostruzione di Oswald e Tippit attribuita alla commissione Warren; tutti i nomi e le circostanze originali conservati.",
+      "source_ids": [
+        "jfk_warren",
+        "jfk_report",
+        "jfk_museum"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1963-march-on-washington-for-jobs-and-freedom",
+      "problem": "King non fu l’ultima persona in assoluto a intervenire: il programma prevedeva ancora impegno e benedizione.",
+      "conclusion": "Reso ultimo discorso principale, conservando ruolo, richiesta e titolo I Have a Dream. Nessun brano musicale tradotto o aggiunto.",
+      "source_ids": [
+        "march_program"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1963-sketchpad",
+      "problem": "La formulazione attribuiva entrambi i premi esclusivamente al programma della tesi.",
+      "conclusion": "Precisato che i premi riconoscono il lavoro pionieristico di Sutherland, iniziato con Sketchpad e continuato successivamente. Conservati Robot Draftsman, CAD, HCI, GUI, programmazione a oggetti e applicazioni artistiche/tecniche.",
+      "source_ids": [
+        "sketchpad_thesis",
+        "sketchpad_turing",
+        "sketchpad_kyoto"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1964-civil-rights-act-of-1964",
+      "problem": "Un elenco unico dei motivi protetti può suggerire che valgano tutti nello stesso modo per voto, scuole, esercizi pubblici e lavoro.",
+      "conclusion": "Esplicitato che i motivi protetti variano fra disposizioni, mantenendo tutti i cinque motivi e gli ambiti originali. Promulgazione distinta dall’efficacia di ogni titolo; preservati citazione legislativa, articolo I sezione 8 ed emendamenti XIV e XV.",
+      "source_ids": [
+        "civil_act"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1964-ibm-system-360",
+      "problem": "L’anno 1964 è annuncio; SLT non va descritta come identica ai successivi circuiti integrati monolitici.",
+      "conclusion": "Prime consegne 1965, con proposta metadata separata. Specificati moduli ibridi e componenti separati, conservando microcodice, Model 44, byte a 8 bit, tre forme di calcolo e arco delle consegne 1965–1978. Il primato assoluto promozionale è espresso attraverso la concreta portata della famiglia compatibile.",
+      "source_ids": [
+        "ibm_company",
+        "ibm_delivery",
+        "ibm_slt_paper",
+        "ibm_slt_object"
+      ],
+      "text_applied": true
+    }
+  ],
+  "metadata_proposals": [
+    {
+      "target_id": "history-1963-assassination-of-john-f-kennedy",
+      "field": "timeline_date",
+      "original": {
+        "year": 1963,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1963,
+        "month": 11,
+        "day": 22,
+        "precision": "day",
+        "event_semantics": "Assassinio del presidente, evento esplicito della voce",
+        "region": "Stati Uniti"
+      },
+      "source_ids": [
+        "jfk_warren",
+        "jfk_museum"
+      ],
+      "reason": "Proposta separata non applicata al catalogo. Uscita delle opere distinta da produzione e annuncio; eventi espliciti conservati come eventi."
+    },
+    {
+      "target_id": "history-1963-march-on-washington-for-jobs-and-freedom",
+      "field": "timeline_date",
+      "original": {
+        "year": 1963,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1963,
+        "month": 8,
+        "day": 28,
+        "precision": "day",
+        "event_semantics": "Marcia su Washington",
+        "region": "Stati Uniti"
+      },
+      "source_ids": [
+        "march_program",
+        "march_king"
+      ],
+      "reason": "Proposta separata non applicata al catalogo. Uscita delle opere distinta da produzione e annuncio; eventi espliciti conservati come eventi."
+    },
+    {
+      "target_id": "history-1963-please-please-me",
+      "field": "timeline_date",
+      "original": {
+        "year": 1963,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1963,
+        "month": 3,
+        "day": 22,
+        "precision": "day",
+        "event_semantics": "Prima uscita dell’album",
+        "region": "Regno Unito"
+      },
+      "source_ids": [
+        "beatles"
+      ],
+      "reason": "Proposta separata non applicata al catalogo. Uscita delle opere distinta da produzione e annuncio; eventi espliciti conservati come eventi."
+    },
+    {
+      "target_id": "history-1964-civil-rights-act-of-1964",
+      "field": "timeline_date",
+      "original": {
+        "year": 1964,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1964,
+        "month": 7,
+        "day": 2,
+        "precision": "day",
+        "event_semantics": "Promulgazione del Civil Rights Act",
+        "region": "Stati Uniti"
+      },
+      "source_ids": [
+        "civil_act"
+      ],
+      "reason": "Proposta separata non applicata al catalogo. Uscita delle opere distinta da produzione e annuncio; eventi espliciti conservati come eventi."
+    },
+    {
+      "target_id": "history-1964-dr-strangelove",
+      "field": "timeline_date",
+      "original": {
+        "year": 1964,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1964,
+        "month": 1,
+        "day": 29,
+        "precision": "day",
+        "event_semantics": "Prime uscite cinematografiche a New York, Londra e Toronto",
+        "region": "Stati Uniti / Regno Unito / Canada"
+      },
+      "source_ids": [
+        "strangelove_afi"
+      ],
+      "reason": "Proposta separata non applicata al catalogo. Uscita delle opere distinta da produzione e annuncio; eventi espliciti conservati come eventi."
+    },
+    {
+      "target_id": "history-1964-ibm-system-360",
+      "field": "timeline_date",
+      "original": {
+        "year": 1964,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1965,
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "event_semantics": "Inizio consegne effettive della famiglia di computer",
+        "region": "Stati Uniti"
+      },
+      "source_ids": [
+        "ibm_delivery"
+      ],
+      "reason": "Proposta separata non applicata al catalogo. Uscita delle opere distinta da produzione e annuncio; eventi espliciti conservati come eventi."
+    }
+  ],
+  "editorial_review": {
+    "fidelity": "Confrontate tutte le dodici card con INPUT: conservati nomi e luoghi JFK, tre approfondimenti di 8½, composizione della marcia, quattordici brani e due sovraincisioni Beatles, acronimi e riconoscimenti Sketchpad, autori e macchine BASIC, tutti i riferimenti costituzionali, evoluzione del mouse, tre ruoli Sellers, coautori e fonte letteraria, quantità e dettagli tecnici S/360.",
+    "dates": "1963 di 8½ resta anno di uscita; il visto censura non è una release. Sketchpad resta opera descritta nella tesi 1963. BASIC resta linguaggio disponibile nel 1964, senza chiamare release generale la prima esecuzione sperimentale. Mouse resta evento esplicitamente dedicato al prototipo del 1964. Nessuna nascita personale dedotta dai riconoscimenti citati.",
+    "language_review": "EN salvato per primo, poi IT/FR/DE/ES. Riletti incipit, titoli, numeri e coesione; corretta una costruzione tedesca nel sommario JFK, un sottotitolo tedesco e il termine italiano relativo alla promulgazione. Titoli musicali e propri conservati.",
+    "rights": "Riferimenti, URL, attribuzioni e licenze originali restano in INPUT. Ogni nuova fonte è registrata con il reale perimetro di lettura; nessun accesso a documenti non disponibili dichiarato.",
+    "english_written_first": true,
+    "languages": [
+      "en",
+      "it",
+      "fr",
+      "de",
+      "es"
+    ],
+    "entry_count": 10,
+    "card_count_per_language": 12,
+    "reviewed_at": "2026-10-30T05:13:47.297430+00:00",
+    "english_summary_word_range": [
+      32,
+      38
+    ],
+    "structural_checks": "Schema, ID, ordine, numero di card e cinque lingue verificati dal validatore. Tutti i titoli presenti; nessun HTML o Markdown nei testi."
+  },
+  "status": "completed",
+  "validation": {
+    "valid": true,
+    "batch_id": "295-human-history",
+    "completed": true,
+    "entry_count": 10,
+    "card_count_per_language": 12,
+    "language_count": 5,
+    "translated_card_count": 60,
+    "entry_card_counts": {
+      "history-1963-assassination-of-john-f-kennedy": 1,
+      "history-1963-eight-and-a-half": 3,
+      "history-1963-march-on-washington-for-jobs-and-freedom": 1,
+      "history-1963-please-please-me": 1,
+      "history-1963-sketchpad": 1,
+      "history-1964-basic": 1,
+      "history-1964-civil-rights-act-of-1964": 1,
+      "history-1964-computer-mouse": 1,
+      "history-1964-dr-strangelove": 1,
+      "history-1964-ibm-system-360": 1
+    },
+    "issue_counts": {
+      "history-1963-assassination-of-john-f-kennedy": 0,
+      "history-1963-eight-and-a-half": 0,
+      "history-1963-march-on-washington-for-jobs-and-freedom": 0,
+      "history-1963-please-please-me": 0,
+      "history-1963-sketchpad": 0,
+      "history-1964-basic": 0,
+      "history-1964-civil-rights-act-of-1964": 0,
+      "history-1964-computer-mouse": 0,
+      "history-1964-dr-strangelove": 0,
+      "history-1964-ibm-system-360": 0
+    },
+    "summary_checks": [
+      {
+        "entry_id": "history-1963-assassination-of-john-f-kennedy",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "history-1963-eight-and-a-half",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "history-1963-march-on-washington-for-jobs-and-freedom",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "history-1963-please-please-me",
+        "feature_id": null,
+        "english_summary_words": 32
+      },
+      {
+        "entry_id": "history-1963-sketchpad",
+        "feature_id": null,
+        "english_summary_words": 32
+      },
+      {
+        "entry_id": "history-1964-basic",
+        "feature_id": null,
+        "english_summary_words": 34
+      },
+      {
+        "entry_id": "history-1964-civil-rights-act-of-1964",
+        "feature_id": null,
+        "english_summary_words": 34
+      },
+      {
+        "entry_id": "history-1964-computer-mouse",
+        "feature_id": null,
+        "english_summary_words": 32
+      },
+      {
+        "entry_id": "history-1964-dr-strangelove",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "history-1964-ibm-system-360",
+        "feature_id": null,
+        "english_summary_words": 38
+      }
+    ],
+    "editorial_review": [
+      "history-1963-assassination-of-john-f-kennedy/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1963-assassination-of-john-f-kennedy/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1963-assassination-of-john-f-kennedy/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1963-assassination-of-john-f-kennedy/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1963-march-on-washington-for-jobs-and-freedom/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1963-march-on-washington-for-jobs-and-freedom/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1963-march-on-washington-for-jobs-and-freedom/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1963-march-on-washington-for-jobs-and-freedom/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1964-computer-mouse/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1964-computer-mouse/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1964-computer-mouse/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1964-computer-mouse/main/es: main title changed; check that this is a descriptive title and not an altered official name"
+    ],
+    "failures": []
+  },
+  "output_sha256": "9133a937fe4298fd19d5e8df2918b68d7ed4b2f44cfb94407110aeede6ca7d3e",
+  "expansion_assessments": [
+    {
+      "target_id": "history-1963-assassination-of-john-f-kennedy",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1963-eight-and-a-half",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1963-march-on-washington-for-jobs-and-freedom",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1963-please-please-me",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1963-sketchpad",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1964-basic",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1964-civil-rights-act-of-1964",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1964-computer-mouse",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1964-dr-strangelove",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1964-ibm-system-360",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    }
+  ]
+}

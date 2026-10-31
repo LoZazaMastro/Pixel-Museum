@@ -1,0 +1,713 @@
+{
+  "batch_id": "095-catalog",
+  "status": "completed",
+  "sources": [
+    {
+      "source_id": "095-S01",
+      "url": "https://we-are-vanadiel.finalfantasyxi.com/history/?lang=en&year=2002",
+      "title": "WE ARE VANA’DIEL — cronologia 2002",
+      "publisher": "Square Enix",
+      "accessed_at": "2026-10-30",
+      "scope": "Cronologia ufficiale indicizzata consultata: avvio del servizio e uscita PS2 il 16 maggio 2002.",
+      "limitation": "Conferma della prima edizione giapponese, distinta dalle versioni Windows e dalle uscite internazionali. Non importate le nuove informazioni su job, missioni o aggiornamenti presenti nella cronologia."
+    },
+    {
+      "source_id": "095-S02",
+      "url": "https://we-are-vanadiel.finalfantasyxi.com/history/?lang=en&year=2016",
+      "title": "WE ARE VANA’DIEL — cronologia 2016",
+      "publisher": "Square Enix",
+      "accessed_at": "2026-10-30",
+      "scope": "Cronologia ufficiale indicizzata consultata: cessazione effettiva del servizio PS2 e Xbox 360 il 31 marzo 2016 e prosecuzione su Windows.",
+      "limitation": "Documento retrospettivo dell’avvenuta cessazione, non soltanto l’annuncio precedente. Non attesta che ogni altro servizio PS2 o server non ufficiale fosse già spento."
+    },
+    {
+      "source_id": "095-S03",
+      "url": "https://www.jp.square-enix.com/company/ja/news/2015/html/283f672756615fcf43bcc01c127d50321dff3f08.html",
+      "title": "Final Fantasy Grandmasters — servizio ufficiale avviato oggi, 1º ottobre 2015",
+      "publisher": "Square Enix",
+      "accessed_at": "2026-10-30",
+      "scope": "Comunicato originale indicizzato consultato: servizio iOS/Android effettivamente avviato il 1º ottobre 2015 in Giappone.",
+      "limitation": "Corregge il 30 settembre privo di regione dell’INPUT. Non si usa una conversione di fuso orario senza fonte né si importa materiale promozionale o il diverso conteggio dei contenuti di FFXI aggiornato solo al 2015."
+    },
+    {
+      "source_id": "095-S04",
+      "url": "https://pdf.irpocket.com/C3659/BbNL/Daer/lC4P.pdf",
+      "title": "FY2020 Q4 Earnings Conference Call — Q&A, 9 febbraio 2021",
+      "publisher": "Nexon / Owen Mahoney",
+      "accessed_at": "2026-10-30",
+      "scope": "PDF ufficiale letto, pagina 6: il CEO conferma la decisione congiunta di interrompere il progetto Final Fantasy XI R.",
+      "limitation": "Conferma diretta nel febbraio 2021; non data da solo la decisione alla fine del 2020. Non importata la motivazione come nuovo approfondimento."
+    },
+    {
+      "source_id": "095-S05",
+      "url": "https://www.rpgsite.net/news/10597-final-fantasy-xi-for-mobile-has-reportedly-stopped-production",
+      "title": "Final Fantasy XI for Mobile has reportedly stopped production — 15 dicembre 2020",
+      "publisher": "Adam Vitale / RPG Site",
+      "accessed_at": "2026-10-30",
+      "scope": "Resoconto contemporaneo indicizzato consultato: notizia della produzione interrotta, proveniente da MTN e presentata come tale.",
+      "limitation": "Fonte secondaria che riporta informatori: il 2020 è formulato come momento della notizia, non come data ufficiale autonoma. La conferma del produttore è S04."
+    },
+    {
+      "source_id": "095-S06",
+      "url": "https://www.playonline.com/pcd2/topics/ff11us/detail/22644/detail.html",
+      "title": "Regarding Congestion on the Asura World Server — 22 luglio 2025",
+      "publisher": "Square Enix / Yoji Fujito",
+      "accessed_at": "2026-10-30",
+      "scope": "Avviso ufficiale indicizzato consultato: misure previste dal 29 luglio e deroga per account con personaggi già presenti su Asura.",
+      "limitation": "L’attuazione del 29 luglio è confermata retrospettivamente da S07 e S08; questo avviso, da solo, è un piano."
+    },
+    {
+      "source_id": "095-S07",
+      "url": "https://www.playonline.com/pcd2/topics/ff11us/detail/22742/detail.html",
+      "title": "Regarding Congestion on the Bahamut World Server — 1º ottobre 2025",
+      "publisher": "Square Enix / Yoji Fujito",
+      "accessed_at": "2026-10-30",
+      "scope": "Avviso ufficiale letto: blocco Asura attuato il 29 luglio; nuove misure Bahamut dal 9 ottobre; eccezione per account già presenti.",
+      "limitation": "L’attuazione su Bahamut è confermata da S08. Si tratta di creazione e trasferimenti, non di chiusura dei server ai giocatori esistenti."
+    },
+    {
+      "source_id": "095-S08",
+      "url": "https://www.playonline.com/pcd2/topics/ff11eu/detail/40149/detail.html",
+      "title": "Regarding Congestion on the Odin World Server — 3 marzo 2026",
+      "publisher": "Square Enix / Yoji Fujito",
+      "accessed_at": "2026-10-30",
+      "scope": "Avviso ufficiale letto: conferma Asura 29 luglio 2025 e Bahamut 9 ottobre 2025, annuncia Odin dal 10 marzo 2026.",
+      "limitation": "Il blocco di Odin è poi attestato in S09. L’eccezione è formulata come esclusione dei personaggi esistenti; non si estende a intuito la formula esplicita sugli account di Asura e Bahamut."
+    },
+    {
+      "source_id": "095-S09",
+      "url": "https://www.playonline.com/pcd2/topics/ff11eu/detail/40288/detail.html",
+      "title": "Regarding Congestion on the Phoenix World Server — 5 giugno 2026",
+      "publisher": "Square Enix / Yoji Fujito",
+      "accessed_at": "2026-10-30",
+      "scope": "Avviso ufficiale indicizzato consultato: Asura, Bahamut e Odin già soggetti a restrizioni; provvedimenti annunciati per Phoenix dal 10 giugno. Le restrizioni dei tre mondi restano attive.",
+      "limitation": "Non reperita una prova successiva autonoma dell’attuazione Phoenix il 10 giugno: nel testo è presentata precisamente come decorrenza annunciata. Nessuna affermazione sullo stato attuale di ottobre 2026 e nessuna chiusura totale dei mondi."
+    },
+    {
+      "source_id": "095-S10",
+      "url": "https://www.konami.com/games/castlevania/jp/ja/page/history_2002_gba",
+      "title": "Castlevania: Harmony of Dissonance — cronologia ufficiale giapponese",
+      "publisher": "Konami",
+      "accessed_at": "2026-10-30",
+      "scope": "Pagina ufficiale indicizzata consultata: release Game Boy Advance il 6 giugno 2002 e combinazione di libri magici e armi secondarie.",
+      "limitation": "Catalogo giapponese. Non trasferisce il giorno alle altre regioni né aggiunge le funzioni o i nomi assenti dal materiale."
+    },
+    {
+      "source_id": "095-S11",
+      "url": "https://www.nintendo.co.jp/n08/before/n2005_b01.html",
+      "title": "Game Boy Advance — software Nintendo uscito prima di giugno 2004",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "Archivio ufficiale indicizzato consultato: Golden Sun: The Lost Age il 28 giugno 2002.",
+      "limitation": "Calendario giapponese. Non confondere l’uscita originale con quelle internazionali."
+    },
+    {
+      "source_id": "095-S12",
+      "url": "https://www.n-europe.com/news/news-eternal-darkness-fact-sheet/",
+      "title": "Eternal Darkness fact sheet — 27 maggio 2002",
+      "publisher": "Nintendo, scheda riprodotta da N-Europe",
+      "accessed_at": "2026-10-30",
+      "scope": "Scheda Nintendo indicizzata consultata: data di lancio pianificata al 24 giugno 2002 per il mercato nordamericano.",
+      "limitation": "Documento anteriore all’uscita: non prova da solo la disponibilità al consumatore quel giorno. Non importate nuove descrizioni narrative."
+    },
+    {
+      "source_id": "095-S13",
+      "url": "https://www.ign.com/articles/2002/06/24/now-shipping-4",
+      "title": "Now Shipping — 24 giugno 2002",
+      "publisher": "IGN",
+      "accessed_at": "2026-10-30",
+      "scope": "Riferimento contemporaneo associato alla data dell’INPUT. L’apertura diretta non è riuscita; una riproduzione contemporanea leggibile è registrata in S14.",
+      "limitation": "Non dichiarata lettura diretta dell’articolo IGN. Il testo riprodotto distingue esplicitamente date di spedizione e presenza nei negozi."
+    },
+    {
+      "source_id": "095-S14",
+      "url": "https://gathering.tweakers.net/forum/list_messages/534201",
+      "title": "Het Grote GameCube Topic — riproduzione di Now Shipping del 24 giugno 2002",
+      "publisher": "Forum Tweakers, citazione contemporanea di IGN",
+      "accessed_at": "2026-10-30",
+      "scope": "Riproduzione indicizzata consultata: Eternal Darkness risulta già spedito e l’articolo avverte che i prodotti di solito compaiono in negozio uno o due giorni dopo, senza garantire il giorno.",
+      "limitation": "Riproduzione in un forum, non originale IGN verificato direttamente. Non basta per fissare il 25 o il 26: proposta la precisione mensile, coerente con il calendario e il lancio documentato nel materiale."
+    },
+    {
+      "source_id": "095-S15",
+      "url": "https://worthplaying.com/article/2002/6/25/news/4442-infogrames-ships-stuntman-for-playstation2-screens/",
+      "title": "Infogrames Ships Stuntman for PlayStation 2 — 25 giugno 2002",
+      "publisher": "Infogrames, comunicato riprodotto da WorthPlaying",
+      "accessed_at": "2026-10-30",
+      "scope": "Comunicato letto: Stuntman PS2 spedito ai negozi e disponibile nella maggioranza delle catene durante quella settimana.",
+      "limitation": "Il 25 è il giorno del comunicato; la formula this week non prova la prima vendita in quella stessa giornata. Proposto giugno 2002 per l’edizione statunitense, senza attribuire la data alla distinta versione GBA."
+    },
+    {
+      "source_id": "095-S16",
+      "url": "https://blog.playstation.com/2026/06/02/stuntman-hollywood-announced-coming-soon-to-ps5/",
+      "title": "Stuntman: Hollywood announced, coming soon to PS5",
+      "publisher": "Russ Dawson / Saber Interactive, PlayStation Blog",
+      "accessed_at": "2026-10-30",
+      "scope": "Articolo del produttore letto, 2 giugno 2026: esistenza e annuncio di Stuntman: Hollywood.",
+      "limitation": "Annuncio di progetto, non prova di uscita. Non importati licenze, nuovi veicoli, modalità o sistemi non presenti nell’INPUT."
+    },
+    {
+      "source_id": "095-S17",
+      "url": "https://store.steampowered.com/app/2487330/Stuntman_Hollywood/",
+      "title": "Stuntman: Hollywood — scheda Steam",
+      "publisher": "Saber Interactive / Steam",
+      "accessed_at": "2026-10-30",
+      "scope": "Scheda ufficiale letta al controllo: gioco non ancora disponibile, data To be announced.",
+      "limitation": "Stato verificato al 30 ottobre 2026, non promessa sulla data futura. Nel testo si distingue dall’episodio Ignition del 2007."
+    },
+    {
+      "source_id": "095-S18",
+      "url": "https://www.gamefront.com/news/official-press-release",
+      "title": "Warcraft III: Reign of Chaos — comunicato del 3 luglio 2002",
+      "publisher": "Blizzard Entertainment, riprodotto da GameFront",
+      "accessed_at": "2026-10-30",
+      "scope": "Comunicato originale letto: gioco già disponibile presso i rivenditori e acquistabile il 3 luglio 2002; il portale lo ripubblica il 5.",
+      "limitation": "Usata la data interna del documento e la dichiarazione di disponibilità, non la data della ripubblicazione. Worldwide non viene esteso automaticamente a tutte le versioni localizzate."
+    },
+    {
+      "source_id": "095-S19",
+      "url": "https://worthplaying.com/article/2002/7/22/news/4813-warcraft-iii-roc-fastest-selling-pc-game-ever/",
+      "title": "Warcraft III: Reign of Chaos — vendite del 22 luglio 2002",
+      "publisher": "Blizzard Entertainment, comunicato riprodotto da WorthPlaying",
+      "accessed_at": "2026-10-30",
+      "scope": "Comunicato indicizzato consultato: oltre 4,4 milioni distribuiti ai negozi e oltre un milione venduto, con distinzione esplicita fra le misure.",
+      "limitation": "Non convertiti in vendite al pubblico i volumi distribuiti. Conservata la formulazione dell’INPUT entro il primo mese, senza aggiungere primati pubblicitari assoluti."
+    },
+    {
+      "source_id": "095-S20",
+      "url": "https://www.army.mil/article-amp/7065/army_games_medic_training_helps_save_two_lives",
+      "title": "Army Game’s Medic Training Helps Save Two Lives — 22 gennaio 2008",
+      "publisher": "Lori Mezoff / U.S. Army",
+      "accessed_at": "2026-10-30",
+      "scope": "Articolo originale letto: lancio America’s Army il 4 luglio 2002, corso necessario per la funzione di soccorritore e testimonianza di Paxton Galvanek, seconda segnalazione di un giocatore.",
+      "limitation": "Due giocatori non significa due vittime dello stesso incidente. Fonte dell’istituzione committente: i racconti sono presentati come testimonianze, non come validazione medica universale. Nessuna istruzione pratica di primo soccorso importata."
+    },
+    {
+      "source_id": "095-S21",
+      "url": "https://www.gamespace.nl/content/MAThesis_DBNieborg.pdf",
+      "title": "Changing the Rules of Engagement — tesi di laurea, 2005",
+      "publisher": "David B. Nieborg",
+      "accessed_at": "2026-10-30",
+      "scope": "PDF originale consultato nelle sezioni pertinenti: pagina stampata 1 identifica Recon il 4 luglio 2002; pagina 123 colloca Combat Medic/Combat Life Saver nella versione 1.9 dell’agosto 2003; appendice C distingue le versioni.",
+      "limitation": "Ricerca primaria basata anche sull’esperienza diretta del gioco, ma alcune date dell’appendice rinviano a Zyda e a Wikipedia. Non adottata una data precisa di rinomina Operations: basta distinguere la prima pubblicazione dal nome successivo. Non dichiarata lettura integrale delle 238 pagine."
+    },
+    {
+      "source_id": "095-S22",
+      "url": "https://www.sting.co.jp/games/index.htm",
+      "title": "STING — archivio della produzione",
+      "publisher": "Sting Entertainment",
+      "accessed_at": "2026-10-30",
+      "scope": "Archivio ufficiale indicizzato consultato: Riviera per WonderSwan il 12 luglio 2002.",
+      "limitation": "Il nuovo tentativo di apertura ha restituito 404; si documenta la consultazione dell’indice, non una lettura della pagina attualmente non disponibile. La voce giapponese identifica la release originale."
+    },
+    {
+      "source_id": "095-S23",
+      "url": "https://store.steampowered.com/app/2891280/Riviera/",
+      "title": "Riviera: The Promised Land — scheda Steam",
+      "publisher": "Sting Entertainment / Steam",
+      "accessed_at": "2026-10-30",
+      "scope": "Scheda ufficiale indicizzata consultata: edizione Windows rimasterizzata effettivamente pubblicata nel luglio 2024 e primo gioco Dept. Heaven.",
+      "limitation": "La scheda visualizza il 16 luglio; nel testo si mantiene il mese già fornito, senza uniformare i fusi orari o le uscite su altre piattaforme."
+    },
+    {
+      "source_id": "095-S24",
+      "url": "https://blog.playstation.com/2022/05/27/celebrating-final-fantasy-xi-online-a-20th-anniversary-retrospective-with-the-games-creators/",
+      "title": "Celebrating Final Fantasy XI Online — a 20th anniversary retrospective with the game’s creators",
+      "publisher": "PlayStation Blog / Akihiko Matsui e Yoji Fujito",
+      "accessed_at": "2026-10-30",
+      "scope": "Intervista diretta indicizzata consultata: lunga continuità del servizio PS2, mantenuto fino a Rhapsodies, con ragioni e ricordi degli sviluppatori.",
+      "limitation": "Non attesta che FFXI fosse letteralmente l’ultimo server di un servizio PS2 unificato. La riscrittura conserva la durata e la cessazione documentate senza sostenere quella formula tecnica impropria."
+    },
+    {
+      "source_id": "095-S25",
+      "url": "https://www.siliconera.com/ffxi-director-says-game-wont-be-shutting-down-anytime-soon/",
+      "title": "FFXI Director Says Game Won’t Be Shutting Down Anytime Soon — 18 maggio 2022",
+      "publisher": "Andrew Kiya / Siliconera, resoconto di Famitsu",
+      "accessed_at": "2026-10-30",
+      "scope": "Resoconto indicizzato consultato: intervento di Yoji Fujito sui timori di chiusura nel 2022.",
+      "limitation": "L’intervista cartacea di Famitsu non è stata letta direttamente. La riscrittura conserva l’informazione già fornita come dichiarazione del director in quel momento, senza trasformarla in garanzia indefinita."
+    }
+  ],
+  "decisions": [
+    {
+      "target_id": "wikipedia-419271",
+      "problem": "La data originale non ha regione; il testo unisce la conclusione di Rhapsodies, la chiusura console, il progetto mobile e un giorno dubbio per Grandmasters.",
+      "conclusion": "Confermato 16 maggio 2002 in Giappone. Grandmasters corretto al 1º ottobre 2015 giapponese. Distinti fine delle edizioni console il 31 marzo 2016, prosecuzione Windows e nuovo racconto del 2020. La cancellazione mobile è una notizia di fine 2020 confermata ufficialmente nel febbraio 2021.",
+      "source_ids": [
+        "095-S01",
+        "095-S02",
+        "095-S03",
+        "095-S04",
+        "095-S05"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-419271",
+      "problem": "L’INPUT descrive FFXI come ultimo server del servizio online PS2, formula che confonde gioco, server e piattaforma.",
+      "conclusion": "Sostituita la pretesa di primato non dimostrata dalle fonti primarie consultate con la durata concreta del servizio PS2 fino al 31 marzo 2016. Non affermata una verifica esaustiva di ogni altro server PS2 e non eliminata la distinzione fra supporto console e Windows.",
+      "source_ids": [
+        "095-S02",
+        "095-S24"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-419271",
+      "problem": "I blocchi ai nuovi arrivi possono sembrare chiusure complete e Phoenix è documentato da un avviso precedente alla decorrenza.",
+      "conclusion": "Asura, Bahamut e Odin sono restrizioni attestate anche da avvisi successivi. Phoenix è presentato come misura annunciata dal 10 giugno, conservando il limite della prova. Il riferimento temporale rimane il giugno 2026; le eccezioni per nuovi personaggi di account esistenti sono attribuite agli avvisi espliciti di Asura e Bahamut. Non inventato lo stato di ottobre.",
+      "source_ids": [
+        "095-S06",
+        "095-S07",
+        "095-S08",
+        "095-S09"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-419271",
+      "problem": "La frase originale attribuisce indistintamente a ogni espansione e ogni scenario tutte le tipologie di nuovi contenuti.",
+      "conclusion": "Conservati cinque pacchetti e otto scenari. Aree, missioni, eventi, ricompense e ampliamento della storia sono descritti come risultato complessivo delle aggiunte, evitando una proprietà universale non dimostrata per ciascuna uscita.",
+      "source_ids": [],
+      "text_applied": true
+    },
+    {
+      "target_id": "castlevania-harmony-of-dissonance-2002",
+      "problem": "Il giorno del debutto è privo di una regione effettiva, indicata solo genericamente come Original commercial release.",
+      "conclusion": "Konami conferma 6 giugno 2002 per l’edizione giapponese GBA. Proposta regionale separata; testo e meccaniche restano quelli del materiale.",
+      "source_ids": [
+        "095-S10"
+      ],
+      "text_applied": false
+    },
+    {
+      "target_id": "eternal-darkness-sanity-s-requiem-2002",
+      "problem": "La data del 24 giugno 2002 è ripetuta come release, ma il riferimento contemporaneo parla di spedizione.",
+      "conclusion": "La scheda Nintendo pianifica il 24; la notizia di spedizione distingue espressamente i negozi dai giorni riportati. Per la disponibilità al pubblico si propone giugno 2002 in Nord America, senza inventare il 25 o il 26. La prosa non contiene un giorno non provato.",
+      "source_ids": [
+        "095-S12",
+        "095-S13",
+        "095-S14"
+      ],
+      "text_applied": false
+    },
+    {
+      "target_id": "wikipedia-3009952",
+      "problem": "La voce riunisce due produzioni con lo stesso titolo; il 25 giugno della PS2 coincide con un comunicato di spedizione e Hollywood non è ancora uscito.",
+      "conclusion": "Conservati sviluppatori distinti e marchio Atari, senza dare alla GBA la data PS2. Il comunicato attesta disponibilità nella settimana: proposta giugno 2002 per PS2 statunitense. Hollywood è un annuncio del 2026 e resta esplicitamente senza release al controllo di ottobre.",
+      "source_ids": [
+        "095-S15",
+        "095-S16",
+        "095-S17"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "golden-sun-the-lost-age-2002",
+      "problem": "Il metadato della prima uscita usa una regione generica.",
+      "conclusion": "Confermato 28 giugno 2002 in Giappone dal catalogo Nintendo; proposta soltanto la regione corretta.",
+      "source_ids": [
+        "095-S11"
+      ],
+      "text_applied": false
+    },
+    {
+      "target_id": "wikipedia-61139",
+      "problem": "Occorre distinguere la release dalla ripubblicazione del comunicato e le copie distribuite da quelle vendute.",
+      "conclusion": "Il comunicato Blizzard datato 3 luglio dichiara il gioco già acquistabile. Il dato 4,4 milioni rimane distribuzione ai negozi, distinto da oltre un milione venduto entro il primo mese. Il racconto di Lord of the Clans conserva successione e cancellazione senza attribuire una motivazione esclusiva non dimostrata.",
+      "source_ids": [
+        "095-S18",
+        "095-S19"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "workbook-07-04-america-s-army-operations",
+      "problem": "Il titolo Operations e la formazione sanitaria sono presentati senza distinguere le versioni dal debutto del 2002.",
+      "conclusion": "Il 4 luglio 2002 è il lancio gratuito di America’s Army, inizialmente Recon e poi Operations; il titolo proprio della voce rimane intatto. Il combat lifesaver arriva nella 1.9, agosto 2003. Le emergenze restano testimonianze di due giocatori e non una validazione clinica del corso.",
+      "source_ids": [
+        "095-S20",
+        "095-S21"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-2212403",
+      "problem": "La prima release manca di regione e occorre distinguere l’annuncio della rimasterizzazione dalla disponibilità Windows.",
+      "conclusion": "Archivio Sting indicizzato conferma 12 luglio 2002 per WonderSwan in Giappone; Steam conferma l’effettiva uscita Windows nel luglio 2024. Conservate separatamente tutte le altre piattaforme, edizioni, mesi e attribuzioni Atlus già fornite.",
+      "source_ids": [
+        "095-S22",
+        "095-S23"
+      ],
+      "text_applied": false
+    }
+  ],
+  "metadata_proposals": [
+    {
+      "target_id": "wikipedia-419271",
+      "action": "specify_release_region",
+      "proposed_event_semantics": "release",
+      "proposed_date": {
+        "year": 2002,
+        "month": 5,
+        "day": 16,
+        "precision": "day",
+        "region": "Japan",
+        "version": "PlayStation 2"
+      },
+      "source_ids": [
+        "095-S01"
+      ],
+      "limitation": "Prima disponibilità del gioco e avvio servizio, non data delle versioni Windows o Xbox 360.",
+      "catalog_modified": false
+    },
+    {
+      "target_id": "castlevania-harmony-of-dissonance-2002",
+      "action": "specify_release_region",
+      "proposed_event_semantics": "release",
+      "proposed_date": {
+        "year": 2002,
+        "month": 6,
+        "day": 6,
+        "precision": "day",
+        "region": "Japan",
+        "version": "Game Boy Advance"
+      },
+      "source_ids": [
+        "095-S10"
+      ],
+      "limitation": "Data dichiarata dal catalogo ufficiale Konami; non applicata alle altre regioni.",
+      "catalog_modified": false
+    },
+    {
+      "target_id": "eternal-darkness-sanity-s-requiem-2002",
+      "action": "align_precision_with_release_evidence",
+      "proposed_event_semantics": "release",
+      "proposed_date": {
+        "year": 2002,
+        "month": 6,
+        "day": null,
+        "precision": "month",
+        "region": "North America",
+        "version": "GameCube"
+      },
+      "source_ids": [
+        "095-S12",
+        "095-S13",
+        "095-S14"
+      ],
+      "limitation": "Il 24 è documentato come giorno previsto e di spedizione, non prima disponibilità verificata in negozio. La precisione mensile evita di inventare il giorno; la consultazione della notizia contemporanea è indiretta, tramite riproduzione.",
+      "catalog_modified": false
+    },
+    {
+      "target_id": "wikipedia-3009952",
+      "action": "align_precision_with_release_evidence",
+      "proposed_event_semantics": "release",
+      "proposed_date": {
+        "year": 2002,
+        "month": 6,
+        "day": null,
+        "precision": "month",
+        "region": "United States",
+        "version": "PlayStation 2"
+      },
+      "source_ids": [
+        "095-S15"
+      ],
+      "limitation": "Disponibilità nella settimana del comunicato del 25 giugno; il giorno preciso della prima vendita non è provato dal documento. La GBA è una produzione distinta.",
+      "catalog_modified": false
+    },
+    {
+      "target_id": "golden-sun-the-lost-age-2002",
+      "action": "specify_release_region",
+      "proposed_event_semantics": "release",
+      "proposed_date": {
+        "year": 2002,
+        "month": 6,
+        "day": 28,
+        "precision": "day",
+        "region": "Japan",
+        "version": "Game Boy Advance"
+      },
+      "source_ids": [
+        "095-S11"
+      ],
+      "limitation": "Calendario ufficiale Nintendo giapponese.",
+      "catalog_modified": false
+    },
+    {
+      "target_id": "wikipedia-61139",
+      "action": "specify_release_region",
+      "proposed_event_semantics": "release",
+      "proposed_date": {
+        "year": 2002,
+        "month": 7,
+        "day": 3,
+        "precision": "day",
+        "region": "North America",
+        "version": "Edizione originale per computer"
+      },
+      "source_ids": [
+        "095-S18"
+      ],
+      "limitation": "Comunicato del 3 luglio dichiara disponibilità effettiva; il 5 è la data del portale che lo riproduce. Non estesa automaticamente a ogni localizzazione.",
+      "catalog_modified": false
+    },
+    {
+      "target_id": "workbook-07-04-america-s-army-operations",
+      "action": "clarify_original_release_version",
+      "proposed_event_semantics": "release",
+      "proposed_date": {
+        "year": 2002,
+        "month": 7,
+        "day": 4,
+        "precision": "day",
+        "region": "Online / distribuzione pubblica",
+        "version": "Windows, primo America’s Army con sottotitolo Recon"
+      },
+      "source_ids": [
+        "095-S20",
+        "095-S21"
+      ],
+      "limitation": "Release gratuita accessibile al pubblico, non forzata a una vendita. Titolo Operations conservato come identificatore della voce; nessun giorno preciso inventato per la rinomina.",
+      "catalog_modified": false
+    },
+    {
+      "target_id": "wikipedia-2212403",
+      "action": "specify_release_region",
+      "proposed_event_semantics": "release",
+      "proposed_date": {
+        "year": 2002,
+        "month": 7,
+        "day": 12,
+        "precision": "day",
+        "region": "Japan",
+        "version": "WonderSwan Color"
+      },
+      "source_ids": [
+        "095-S22"
+      ],
+      "limitation": "Data dell’archivio ufficiale indicizzato; apertura attuale 404 documentata, senza attribuire una nuova lettura diretta.",
+      "catalog_modified": false
+    }
+  ],
+  "expansion_assessments": [
+    {
+      "target_id": "wikipedia-419271",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 1,
+      "rationale": "Primo Final Fantasy online principale, con una storia e una comunità protratte per decenni."
+    },
+    {
+      "target_id": "castlevania-harmony-of-dissonance-2002",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Episodio rappresentativo dell’esplorazione Castlevania su Game Boy Advance, con castello doppio e combinazioni magiche."
+    },
+    {
+      "target_id": "phantom-crash-2002",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "required_main_cards": null,
+      "missing_cards": 0,
+      "rationale": "Il materiale presenta un’opera con caratteristiche proprie, ma non basta da solo a classificarla fra i giochi più importanti cui applicare automaticamente la quota di cinque card. Le card esistenti restano integre."
+    },
+    {
+      "target_id": "eternal-darkness-sanity-s-requiem-2002",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Opera importante per l’uso della sanità mentale e dell’interfaccia nel gioco horror su GameCube."
+    },
+    {
+      "target_id": "wikipedia-3009952",
+      "main_cards": 2,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "required_main_cards": null,
+      "missing_cards": 0,
+      "rationale": "Il materiale presenta un’opera con caratteristiche proprie, ma non basta da solo a classificarla fra i giochi più importanti cui applicare automaticamente la quota di cinque card. Le card esistenti restano integre."
+    },
+    {
+      "target_id": "golden-sun-the-lost-age-2002",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Seconda parte di un progetto rilevante del gioco di ruolo Game Boy Advance, con continuità dei dati fra le cartucce."
+    },
+    {
+      "target_id": "wikipedia-61139",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 1,
+      "rationale": "Titolo centrale della strategia in tempo reale, con successo commerciale e influenza documentata delle creazioni World Editor."
+    },
+    {
+      "target_id": "workbook-07-04-america-s-army-operations",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 1,
+      "rationale": "Progetto significativo del rapporto fra videogiochi, istituzioni e reclutamento, con sviluppo e ricezione già documentati."
+    },
+    {
+      "target_id": "suikoden-iii-2002",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Passaggio importante della serie Suikoden a PlayStation 2 e struttura narrativa a tre protagonisti."
+    },
+    {
+      "target_id": "wikipedia-2212403",
+      "main_cards": 2,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "required_main_cards": null,
+      "missing_cards": 0,
+      "rationale": "Il materiale presenta un’opera con caratteristiche proprie, ma non basta da solo a classificarla fra i giochi più importanti cui applicare automaticamente la quota di cinque card. Le card esistenti restano integre."
+    }
+  ],
+  "editorial_review": {
+    "languages": [
+      "en",
+      "it",
+      "fr",
+      "de",
+      "es"
+    ],
+    "english_written_first": true,
+    "reviewer": "/root/resume_remaining_a",
+    "checks": [
+      "Letto tutto INPUT: dieci voci, 31 card principali e nessuna feature. Inglese scritto e salvato per primo, poi adattamenti autonomi IT/FR/DE/ES. Rilette le 155 versioni delle card e i 50 sommari, confrontando informazioni e numeri, inclusi quelli scritti in lettere.",
+      "Final Fantasy XI: mantenuti undicesimo capitolo, nome Online, Square/Square Enix, Hiromichi Tanaka progettista e produttore, PS2 giapponese 16 maggio 2002, Windows novembre e Xbox 360 aprile 2006, interoperabilità e abbonamento mensile. Conservati Vana’diel, avatar, cooperazione e competizione, classi e abilità, gerarchia, ricompense, cinque espansioni e otto scenari. Distinti Rhapsodies 2015, fine console 31 marzo 2016, continuità PC, Nexon sudcoreana e Unreal Engine 4, notizia 2020 e conferma 2021, Grandmasters al giorno corretto, Voracious Resurgence 2020 e dichiarazione Fujito maggio 2022. Tutti e quattro i mondi e le date conservati, con distinzione fra attuazione e annuncio e fra nuovi arrivi e giocatori esistenti.",
+      "Harmony of Dissonance: secondo episodio di esplorazione GBA Konami, Juste nipote di Simon e amica d’infanzia rapita. Frusta, esperienza, equipaggiamento e magia; movimenti, ostacoli e due forme del castello. Conservate combinazioni libri/armi secondarie, valore nuovo degli oggetti posseduti e alternative della frusta; mappe correlate, accessi, crescita e sopravvivenza. Nessun nome di amica o numero di libri aggiunto.",
+      "Phantom Crash: Genki/Xbox/Giappone 20 giugno 2002, Old Tokyo abbandonata del 2031, Rumbling televisivo, sconosciuto e classifica, Scoot Vehicle, premi/pezzi/riparazioni e comunità. Braccia/spalle/gambe/corpo, peso delle gare, armi/manovra, camuffamento breve e salti a razzo, danni e costi. Quest Mode quotidiano con mappa, capitani di categoria, vernici e CHIPs, musica urbana, accoglienza attribuita e limiti arene/dialoghi, S.L.A.I. su PS2.",
+      "Eternal Darkness: Silicon Knights/GameCube, persone e luoghi diversi su due millenni, armi delle epoche, esplorazione/combattimento/rune e inaffidabilità percettiva. Sanità diminuisce quando si viene visti da certi nemici; stanze, voci, apparenti guasti, finire nemici e risorse. Parti del corpo, testa e inseguimento, magia per combattimento/recupero/passaggi, scelte e gestione delle risorse. Non introdotti protagonisti, nomi di divinità o procedure di cura assenti.",
+      "Stuntman: due giochi distinti, Reflections PS2 e Velez & Dubail GBA, Infogrames/marchio Atari, stuntman cinematografico e manovre richieste; accoglienza varia, originalità/fisica, linearità/difficoltà/ripetizione. Ignition 2007 distinto da Hollywood annunciato nel 2026 e ancora senza data di uscita.",
+      "Golden Sun: The Lost Age: Camelot/GBA, Felix e compagni dalla precedente fazione avversaria, alchimia/Weyard, storia incompiuta e nuova prospettiva; Psynergy per scontri/enigmi, maggiore libertà nell’ordine degli obiettivi. Ritorni e poteri che sbloccano ostacoli, memoria dei percorsi; password o cavo Game Link, dati del primo gruppo/scoperte, due cartucce, Djinn, battaglie a turni, preparazione e nuovi scopi.",
+      "Warcraft III: Blizzard, strategia fantasy in tempo reale per computer, luglio 2002 e terzo titolo dopo i due nominati, primo 3D, Frozen Throne luglio 2003. Burning Legion/Scourge/Arthas paladino decaduto, Azeroth e World Tree, Alliance/Horde/Night Elves. Risorse, basi, unità ed eroi, quattro fazioni con due nuove, campagna progressiva come StarCraft, computer/LAN/Battle.net. Beyond the Dark Portal 1996, avventura Lord of the Clans, cancellazione 1998, ECTS settembre 1999, evoluzione del progetto. Critica attribuita, 4,4 milioni distribuiti e oltre un milione venduto entro un mese, World Editor/Defense of the Ancients, Reforged 2020 comprende espansione.",
+      "America’s Army: debutto gratuito 4 luglio 2002/Independence Day, reclutamento e comunicazione, addestramento/procedure/gerarchia/cooperazione. Wardynski nel 1999, gradi e ruoli, USMA, Chambers/Wilson e OEMA, Zyda/Capps, MOVES/NPS/Monterey California, studio con professionisti e budget cinque milioni. Citazione riformulata mantenendo l’attribuzione. Realismo visivo/acustico rivendicato e critiche; corso facoltativo ma necessario al ruolo, versione successiva 1.9 agosto 2003, tutti gli ambiti sanitari conservati come descrizione del contenuto. Due giocatori e Galvanek restano testimonianze.",
+      "Suikoden III: Konami/PS2/Giappone 11 luglio 2002, Grasslands/Zexen/Harmonia e tre protagonisti con ruoli distinti; capitoli Trinity Sight, ordine dei punti di vista, Stars of Destiny e reclutamento, incontri e incarichi. Personaggi/ambienti 3D, entrambi i director e tutti e tre i musicisti nominati, due edizioni del 2002, differenza dal protagonista unico precedente. Non aggiunto il numero 108 assente da queste card.",
+      "Riviera: Sting Entertainment, WonderSwan Color 2002 e primo Dept. Heaven; GBA 2004/Atlus USA Nord America 2005, PSP novembre 2006/NA luglio 2007 ancora Atlus, annuncio HD luglio 2023 e quattro piattaforme, Windows luglio 2024. Ein/Grim Angel, demoni e Grim Angels nemici, quattro Accursed, Fia/Lina/Serene/Cierra/Rose, familiarità felina, relazioni e finali condizionati dalle scelte.",
+      "Controllati ID e ordine, numero delle card, titoli propri intatti, heading completi, sommari inglesi fra 25 e 45 parole e assenza di HTML/Markdown. Rilette sintassi e terminologia nelle quattro lingue: classi per i job, passaggi fra tre protagonisti, titoli Dept. Heaven conservati e contenuto del corso sanitario completo. Musica, URL, immagini, video, licenze e attribuzioni originali restano negli INPUT immutati."
+    ],
+    "scope_limit": "Verifiche mirate ai dubbi emersi, non controllo universale di ogni frase. Distinte fonti lette, risultati indicizzati e tentativi di accesso falliti. Per Eternal Darkness e Stuntman la precisione mensile evita di spacciare una spedizione per il primo acquisto. Phoenix resta una decorrenza annunciata, non un’attuazione verificata in seguito. Sette ampliamenti richiedono ancora testi separati nelle cinque lingue.",
+    "expansion_issues": 7,
+    "future_cards_requested": 11
+  },
+  "validation": {
+    "valid": true,
+    "batch_id": "095-catalog",
+    "completed": true,
+    "entry_count": 10,
+    "card_count_per_language": 31,
+    "language_count": 5,
+    "translated_card_count": 155,
+    "entry_card_counts": {
+      "wikipedia-419271": 4,
+      "castlevania-harmony-of-dissonance-2002": 3,
+      "phantom-crash-2002": 3,
+      "eternal-darkness-sanity-s-requiem-2002": 3,
+      "wikipedia-3009952": 2,
+      "golden-sun-the-lost-age-2002": 3,
+      "wikipedia-61139": 4,
+      "workbook-07-04-america-s-army-operations": 4,
+      "suikoden-iii-2002": 3,
+      "wikipedia-2212403": 2
+    },
+    "issue_counts": {
+      "wikipedia-419271": 1,
+      "castlevania-harmony-of-dissonance-2002": 1,
+      "phantom-crash-2002": 0,
+      "eternal-darkness-sanity-s-requiem-2002": 1,
+      "wikipedia-3009952": 0,
+      "golden-sun-the-lost-age-2002": 1,
+      "wikipedia-61139": 1,
+      "workbook-07-04-america-s-army-operations": 1,
+      "suikoden-iii-2002": 1,
+      "wikipedia-2212403": 0
+    },
+    "summary_checks": [
+      {
+        "entry_id": "wikipedia-419271",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "castlevania-harmony-of-dissonance-2002",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "phantom-crash-2002",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "eternal-darkness-sanity-s-requiem-2002",
+        "feature_id": null,
+        "english_summary_words": 39
+      },
+      {
+        "entry_id": "wikipedia-3009952",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "golden-sun-the-lost-age-2002",
+        "feature_id": null,
+        "english_summary_words": 39
+      },
+      {
+        "entry_id": "wikipedia-61139",
+        "feature_id": null,
+        "english_summary_words": 39
+      },
+      {
+        "entry_id": "workbook-07-04-america-s-army-operations",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "suikoden-iii-2002",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "wikipedia-2212403",
+        "feature_id": null,
+        "english_summary_words": 37
+      }
+    ],
+    "editorial_review": [],
+    "failures": []
+  },
+  "output_sha256": "2a20817517f713c4aba9854494fd92974c980b6525737b149e4c3fe57c06185a",
+  "root_review": {
+    "manual_fidelity_spot_checks": [
+      {
+        "entry_id": "wikipedia-61139",
+        "card_id": "main:1",
+        "scope": "Confronto manuale selettivo tra testo inglese riscritto e INPUT; non dichiarazione di rilettura indipendente integrale delle cinque lingue.",
+        "notes": "Confronto EN/INPUT: risorse, basi, unità ed eroi, obiettivi, quattro fazioni distinte, progressione delle campagne come in StarCraft, avversari computer/umani, LAN e Battle.net presenti."
+      }
+    ],
+    "last_recorded_at": "2026-10-30T06:44:13.318995+00:00"
+  }
+}

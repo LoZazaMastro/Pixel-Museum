@@ -1,0 +1,106 @@
+{
+  "status": "PASS",
+  "locale": "it",
+  "entries": [
+    {
+      "entry_id": "xbox-series-s",
+      "source_fields_sha256": "a66e67f8b98abe14974901d8326dfc8518156c892cab41fd2d42df4dc307a6b3",
+      "translation_sha256": "fde4f176b955245fb6142dae5e06d31852f794be5a166df549b1eb25c7f357e6",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch323/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "05fb82a79a7f1e6d2a92026df5ce14cb53a31e290f102153a5478baa372f72cf"
+    },
+    {
+      "entry_id": "wikipedia-64249122",
+      "source_fields_sha256": "1fe1ba93f1b4398c8f656247caa0f21af864b2e70600a656705b64ad9dfbb010",
+      "translation_sha256": "dd03da8e6be259bd5fd04c7482fbb6c87f22c7c11b7a84490791a1f534631b63",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch323/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "05fb82a79a7f1e6d2a92026df5ce14cb53a31e290f102153a5478baa372f72cf"
+    },
+    {
+      "entry_id": "wikipedia-64255520",
+      "source_fields_sha256": "44b9d9609c19bcf1ed56ba9e211787e2f71983e9f3e6f673a91bd1cc8f010560",
+      "translation_sha256": "172580659e57f70d733d8cfa56e33b875c023d6bf516b3e434a6566427290d00",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch323/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "05fb82a79a7f1e6d2a92026df5ce14cb53a31e290f102153a5478baa372f72cf"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "root independent peer of category_audit author",
+    "actual_receipt": "build/research/catalog-2020-chronological/november-second-three-private/independent-root-approval.json",
+    "actual_receipt_sha256": "7d30bdcb177ca1828924d78308fab7b70a335d77c636f847d969381210f91eed",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "root independent peer of category_audit author",
+      "index": "build/research/catalog-2020-chronological/november-second-three-private/three-private-index.json",
+      "index_sha256": "ece460dd3616a3231ce05c07475752aa72382af800e2f41888d81d41c298e307",
+      "owners": [
+        {
+          "entry_id": "xbox-series-s",
+          "slug": "series-s",
+          "source": "build/research/catalog-2020-chronological/november-second-three-private/series-s/complete-original-source-media-private-candidate.json",
+          "source_sha256": "031014cbb7fd913af1c72e2ae729cf01c5ff7f70bff8f68b377fe1deb721ac1d",
+          "target": "build/research/catalog-2020-chronological/november-second-three-private/series-s/complete-four-language-private-candidate.json",
+          "target_sha256": "65f4b38250873811c62ce695efe2116dafb12662ddd6d5b6d34b71c2397c1dd7",
+          "english_cards": 4,
+          "localized_cards": 16,
+          "images": 6,
+          "tracks": 0,
+          "contact": "build/research/catalog-2020-chronological/november-second-three-private/series-s/final-selected-media-contact.jpg",
+          "contact_sha256": "235a5ea37d41b7314f8d63dc772d855909d1ddcd98f8af65b37c0184488b4618",
+          "finite_errata": 0
+        },
+        {
+          "entry_id": "wikipedia-64249122",
+          "slug": "demons",
+          "source": "build/research/catalog-2020-chronological/november-second-three-private/demons/complete-original-source-media-private-candidate.json",
+          "source_sha256": "5aaccba675a3dce105032b5da4d819c29dae3c1858f58de0e65f82a60f318e0a",
+          "target": "build/research/catalog-2020-chronological/november-second-three-private/demons/complete-four-language-private-candidate.json",
+          "target_sha256": "cc22254333842ad6ed459b8560396e2364e6ed51cc820d2cafd6dab981e7bd8e",
+          "english_cards": 2,
+          "localized_cards": 8,
+          "images": 5,
+          "tracks": 3,
+          "contact": "build/research/catalog-2020-chronological/november-second-three-private/demons/final-selected-media-contact.jpg",
+          "contact_sha256": "232c159b182d97eb448f89378d5cc7723534302fe39d1f44567591fbc72531f5",
+          "finite_errata": 0
+        },
+        {
+          "entry_id": "wikipedia-64255520",
+          "slug": "astro",
+          "source": "build/research/catalog-2020-chronological/november-second-three-private/astro/complete-original-source-media-private-candidate.json",
+          "source_sha256": "05d62e9f0ef5e31ef195b9e1c9a1649f931847cfc9adf1d73c61a6268d5f9894",
+          "target": "build/research/catalog-2020-chronological/november-second-three-private/astro/complete-four-language-private-candidate.json",
+          "target_sha256": "bec785161c3cf6884759dad7c8b2890fd76f7f9925db2bc0337dc8bba9318a82",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 6,
+          "tracks": 4,
+          "contact": "build/research/catalog-2020-chronological/november-second-three-private/astro/final-selected-media-contact.jpg",
+          "contact_sha256": "4396a62a15fc3a2009b3cfd0b13db7c6857ae9f950e9ac14c3e3de1732949349",
+          "finite_errata": 1
+        }
+      ],
+      "reviewed_counts": {
+        "english_paragraphs": 9,
+        "localized_paragraphs": 36,
+        "personally_viewed_images": 17
+      },
+      "findings": [],
+      "resolved_findings": [
+        "Removed unsupported assertion that Team Asobi became a formally independent studio on the exact April1 reorganization date. Root read Sony June2,2021 Nicolas Doucet primary and requested the specific June introduction wording; exact EN and all four revised clauses re-read."
+      ],
+      "review_notes": [
+        "Root read all9EN and36IT/FR/DE/ES full paragraphs, summaries and headings. No omitted material or concrete translation error found.",
+        "Root viewed17 native media in three final contact sheets. SeriesS user-chosen PNG and storage/compact-body images correspond to chapters. Demon actual2020 remake artwork, gameplay and Nexus frame retained. Astro original3840x2160 gameplay covers platforming/launch/studio history. No modern boxback.",
+        "Read all five new public AAC metadata receipts. Demon three NexTone delivered SIE originals explicitly identify2020 remake album and ShunsukeKida/BillHemstapat. Astro two SonyClassical tracks identify March2021 release of the Playroom soundtrack, not2024AstroBot; official PlayroomRemix named honestly. Existing Astro2tracks exact; SeriesS no invented music.",
+        "All source/target/contact hashes checked; approval is private, no production writes or PS5 playback claim."
+      ],
+      "primary_sources_read": [
+        "https://blog.playstation.com/2021/06/02/introducing-team-asobi-creators-of-the-astro-bot-series/",
+        "https://blog.playstation.com/?p=343447"
+      ],
+      "production_writes": false
+    }
+  }
+}

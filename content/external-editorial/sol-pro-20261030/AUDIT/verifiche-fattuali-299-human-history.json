@@ -1,0 +1,636 @@
+{
+  "batch_id": "299-human-history",
+  "sources": [
+    {
+      "source_id": "ethernet_memo",
+      "title": "Robert Metcalfe's Ethernet memorandum, Computer History Museum",
+      "url": "https://www.computerhistory.org/tdih/may/22/",
+      "verification_scope": "Documento e ricostruzione archivistica: memorandum del 22 maggio 1973. Si tratta di una proposta esplicitamente identificata, non della disponibilità commerciale."
+    },
+    {
+      "source_id": "ethernet_ieee",
+      "title": "Ethernet 50th Anniversary, IEEE Standards Association",
+      "url": "https://standards.ieee.org/beyond-standards/ethernet-50th-anniversary/",
+      "verification_scope": "Estratto della fonte IEEE: adozione dello standard nel giugno 1983. Non confusa con la successiva pubblicazione del volume."
+    },
+    {
+      "source_id": "ethernet_market",
+      "title": "Ethernet's History Gets an IEEE Milestone, IEEE Spectrum",
+      "url": "https://spectrum.ieee.org/ethernet-ieee-milestone",
+      "verification_scope": "Fonte IEEE consultata negli estratti: commercializzazione nel 1980 e standardizzazione nel 1983."
+    },
+    {
+      "source_id": "darkside_owner",
+      "title": "The Dark Side of the Moon, Pink Floyd",
+      "url": "https://www.pinkfloyd.com/albums/the-dark-side-of-the-moon/",
+      "verification_scope": "Pagina della band: marzo 1973, sviluppo in concerto e lavorazione in studio."
+    },
+    {
+      "source_id": "darkside_timeline",
+      "title": "Pink Floyd, timeline 1973",
+      "url": "https://archive.pinkfloyd.com/history/timeline_1973",
+      "verification_scope": "La cronologia della band distingue 10 marzo negli Stati Uniti e 23 marzo nel Regno Unito. Altre fonti primarie riportano giorni diversi: mantenuta la precisione condivisa del mese."
+    },
+    {
+      "source_id": "darkside_studio",
+      "title": "The Dark Side of the Moon: Studio Documents, Abbey Road",
+      "url": "https://www.abbeyroad.com/news/the-dark-side-of-the-moon-studio-documents-3299?search=The+Dark+Side+of+the+Moon",
+      "verification_scope": "Documenti e ricostruzione dello studio, letti negli estratti: sessione Torry il 21 gennaio, completamento in febbraio. Il 1 marzo statunitense contrasta con la cronologia della band e non viene assunto come giorno certo."
+    },
+    {
+      "source_id": "exorcist_afi",
+      "title": "The Exorcist, AFI Catalog",
+      "url": "https://catalog.afi.com/Film/54970-THE-EXORCIST",
+      "verification_scope": "Scheda e note lette: uscita a New York e Los Angeles il 26 dicembre 1973, crediti, riprese, incendio, infortuni e morte di persone legate al film. Nessuna affermazione che i decessi siano tutti avvenuti sul set."
+    },
+    {
+      "source_id": "exorcist_donnelly",
+      "title": "Terence Donnelly interview, Captain Howdy",
+      "url": "https://captainhowdy.com/2013/03/interview-with-terence-donnelly-the-exorcist-first-assistant-director/",
+      "verification_scope": "Letta la sintesi scritta dell'intervista al primo aiuto regista; il video non è stato visionato. Oltre due volte il calendario previsto e circa tre volte il budget iniziale; non importati importi esatti o dettagli geografici discordanti."
+    },
+    {
+      "source_id": "alto_thacker",
+      "title": "Alto: A Personal Computer, Charles P. Thacker et al., Computer History Museum archive",
+      "url": "https://archive.computerhistory.org/resources/access/text/2024/06/102739347-05-0001-acc.pdf",
+      "verification_scope": "Estratto del documento degli autori: progetto avviato nel novembre 1972, primi due prototipi funzionanti nell'aprile 1973. Il testo adotta primavera 1973; nessuna falsa data di vendita al pubblico."
+    },
+    {
+      "source_id": "alto_software",
+      "title": "Mesa, Computer History Museum Software Preservation Group",
+      "url": "https://softwarepreservation.computerhistory.org/mesa/",
+      "verification_scope": "Documentazione tecnica: prototipo aprile 1973, sviluppo del software in fasi successive. Evitato di concentrare tutte le funzioni mature nel primo giorno di funzionamento."
+    },
+    {
+      "source_id": "autobahn_flur",
+      "title": "Autobahn: The Electronic Road Trip, Electronic Sound",
+      "url": "https://www.electronicsound.co.uk/features/long-reads/autobahn-the-electronic-road-trip/",
+      "verification_scope": "Estratti della testimonianza diretta di Wolfgang Flür: attrezzatura mobile di Conny Plank e collegamento allo studio. Non sostiene che tutto o principalmente il disco sia stato registrato nello studio personale di Plank."
+    },
+    {
+      "source_id": "autobahn_credits",
+      "title": "Autobahn, original recording credits transcribed by Musicbase",
+      "url": "https://musicbase.net/autobahn",
+      "verification_scope": "Trascrizione dei crediti originali: Conny's Studio & Mobile Equipment. Non dichiarata l'ispezione di una copia fisica o dell'immagine del disco."
+    },
+    {
+      "source_id": "autobahn_label",
+      "title": "Autobahn, Rhino Media",
+      "url": "https://media.rhino.com/press-release/autobahn",
+      "verification_scope": "Comunicato dell'etichetta: album del 1974. L'anniversario e la ristampa 2025 non diventano data dell'opera."
+    },
+    {
+      "source_id": "autobahn_store",
+      "title": "Autobahn, Apple Music licensed album metadata",
+      "url": "https://music.apple.com/us/album/autobahn-remastered/726154713",
+      "verification_scope": "Metadati licenziati: novembre 1974. Mantenuto il mese del materiale, senza assumere che un giorno 1 nei metadati provi da solo la prima vendita."
+    },
+    {
+      "source_id": "altair_chm",
+      "title": "The Altair Arrives, Computer History Museum",
+      "url": "https://www.computerhistory.org/revolution/story/312",
+      "verification_scope": "Oggetti e ricostruzione della comparsa dell'Altair e del BASIC; nessun giorno di consegna hardware ricavato dalla data della copertina."
+    },
+    {
+      "source_id": "altair_cover",
+      "title": "MITS launches the Altair 8800 on the cover of Popular Electronics, Centre for Computing History",
+      "url": "https://www.computinghistory.org.uk/det/572/MITS-launches-the-Altair-8800-on-the-cover-of-Popular-Electronics-magazine/",
+      "verification_scope": "Fascicolo datato gennaio 1975 già in edicola nel dicembre 1974. La data della rivista è distinta dalla disponibilità del computer."
+    },
+    {
+      "source_id": "altair_newsletter",
+      "title": "Computer Notes, MITS, 1975",
+      "url": "https://altairclone.com/downloads/computer_notes/1975_01_02.pdf",
+      "verification_scope": "Estratto del bollettino originale: clienti e computer ricevuti nel 1975. Conservata la precisione annuale per l'hardware; nessuna data esatta di vendita dedotta dalla pubblicità."
+    },
+    {
+      "source_id": "dolby_chronology",
+      "title": "Dolby Chronology, Dolby Laboratories, 1998",
+      "url": "https://www.film-tech.com/warehouse/manuals/dolbychronology.pdf",
+      "verification_scope": "Testo del documento aziendale letto: dimostrazioni nel 1974 distinte dai film 1975, Lisztomania, A Star Is Born, primi decoder domestici dicembre 1982 e Pro Logic gennaio 1987. La conclusione del film non equivale al giorno di uscita; non importata l'indicazione stagionale inesatta per A Star Is Born."
+    },
+    {
+      "source_id": "dolby_sec",
+      "title": "Dolby Laboratories, Form S-1, SEC",
+      "url": "https://www.sec.gov/Archives/edgar/data/1308547/000119312504200308/ds1.htm",
+      "verification_scope": "Documento aziendale: primi film e progressione del sistema ottico, canali e sviluppo domestico."
+    },
+    {
+      "source_id": "dolby_70mm",
+      "title": "Dolby Stereo in 70mm, original Dolby material republished by in70mm",
+      "url": "https://www.in70mm.com/presents/1976_dolby_stereo/70mm/index.htm",
+      "verification_scope": "Testo di origine Dolby ripubblicato: riduzione del rumore per sei piste magnetiche su 70mm, distinto dal sistema ottico 35mm."
+    },
+    {
+      "source_id": "homebrew_first",
+      "title": "The Homebrew Computer Club 2013 Reunion, Computer History Museum",
+      "url": "https://computerhistory.org/blog/the-homebrew-computer-club-2013-reunion/",
+      "verification_scope": "Ricostruzione dell'incontro con i partecipanti: prima riunione 5 marzo 1975. Non adottata la diversa data presente in un indice giornaliero del museo."
+    },
+    {
+      "source_id": "homebrew_newsletter",
+      "title": "Homebrew Computer Club Newsletter, volume 2 number 3",
+      "url": "https://www.bitsavers.org/pdf/homebrewCC/HCC_Newsletter_V2_N03.pdf",
+      "verification_scope": "Bollettino originale: calendario ogni due settimane, 14 e 28 aprile e 12 maggio 1976. Corretto il mensile nel testo di partenza."
+    },
+    {
+      "source_id": "jaws_afi",
+      "title": "Jaws, AFI Catalog",
+      "url": "https://catalog.afi.com/Catalog/moviedetails/55193",
+      "verification_scope": "Scheda consultata negli estratti: uscita statunitense 20 giugno 1975, crediti e lavorazione."
+    },
+    {
+      "source_id": "jaws_universal",
+      "title": "Jaws 50th Anniversary press release, Universal Pictures",
+      "url": "https://www.universalpicturesathome.com/press-release/jaws-50th-anniversary-press-release",
+      "verification_scope": "Comunicato del produttore: 20 giugno 1975, ruoli dei protagonisti e musica di John Williams."
+    },
+    {
+      "source_id": "microsoft_foundation",
+      "title": "Microsoft 50th Anniversary",
+      "url": "https://explore.microsoft.com/en-us/edge/microsoft-50th-anniversary?cs=3865671873&form=MT00YS",
+      "verification_scope": "Cronologia aziendale consultata: fondazione il 4 aprile 1975."
+    },
+    {
+      "source_id": "microsoft_nokia",
+      "title": "Microsoft officially welcomes the Nokia Devices and Services business, Microsoft, 25 April 2014",
+      "url": "https://news.microsoft.com/source/2014/04/25/microsoft-officially-welcomes-the-nokia-devices-and-services-business-2/",
+      "verification_scope": "Comunicato originale: acquisizione completata il 25 aprile 2014, Microsoft Mobile Oy e Nadella già amministratore delegato. Acquistate le attività Devices and Services, non l'intera Nokia."
+    }
+  ],
+  "decisions": [
+    {
+      "target_id": "history-1973-ethernet",
+      "problem": "Proposta del 1973, disponibilità del 1980 e standard del 1983 descrivono eventi distinti.",
+      "conclusion": "Titolo e testo qualificano la voce come proposta di rete. Conservati la successiva commercializzazione, l'adozione IEEE, l'evoluzione dei cavi e degli switch, distanze, numero di dispositivi, velocità e compatibilità.",
+      "source_ids": [
+        "ethernet_memo",
+        "ethernet_ieee",
+        "ethernet_market"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1973-the-dark-side-of-the-moon",
+      "problem": "Fonti primarie diverse indicano giorni di uscita differenti.",
+      "conclusion": "Marzo 1973 è la precisione condivisa e sufficiente. Conservati sviluppo dal vivo, pressioni personali, Syd Barrett, strumenti di studio, Alan Parsons, Clare Torry e il titolo originale The Great Gig in the Sky.",
+      "source_ids": [
+        "darkside_owner",
+        "darkside_timeline",
+        "darkside_studio"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1973-the-exorcist",
+      "problem": "Cast definito interamente sconosciuto e decessi indistinti possono rendere più convincente la leggenda della maledizione.",
+      "conclusion": "Lo studio desiderava interpreti più affermati; non si presenta Burstyn come sconosciuta. Distinti infortuni e incidenti dai decessi fra persone legate alla produzione. La maledizione è un racconto alimentato dagli eventi. Tempi oltre il doppio e costi circa tripli conservati con precisione appropriata.",
+      "source_ids": [
+        "exorcist_afi",
+        "exorcist_donnelly"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1973-xerox-alto",
+      "problem": "Il marzo iniziale contrasta con il resoconto tecnico degli autori, e il prototipo non ebbe un lancio commerciale al pubblico.",
+      "conclusion": "Prototipi funzionanti nella primavera 1973; conservato l'anno della voce senza inventare una release. Mouse, bitmap, documenti, rete e influenza sono descritti come ambiente di sperimentazione e software sviluppato sulla macchina.",
+      "source_ids": [
+        "alto_thacker",
+        "alto_software"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1974-autobahn-album",
+      "problem": "Registrazione principalmente nello studio di Plank non dimostrata dai crediti e dalle testimonianze.",
+      "conclusion": "Precisato il lavoro con Plank, il suo studio e l'attrezzatura mobile. Conservati novembre 1974, durata di 22 minuti, sintetizzatori, drum machine, quattro musicisti, testi e immagine con Schult.",
+      "source_ids": [
+        "autobahn_flur",
+        "autobahn_credits",
+        "autobahn_label",
+        "autobahn_store"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1975-altair-8800",
+      "problem": "Data del fascicolo confusa con il suo arrivo in edicola; terminale e interfaccia non sono dotazione del kit di base.",
+      "conclusion": "Distinti gennaio 1975 in copertina e dicembre 1974 in edicola. Interfaccia seriale e terminale sono aggiunte. Conservati 8080, kit per corrispondenza, domanda, mercato, S-100 e primo prodotto Microsoft. Resta l'anno 1975 per il computer.",
+      "source_ids": [
+        "altair_chm",
+        "altair_cover",
+        "altair_newsletter"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1975-dolby-stereo",
+      "problem": "Dimostrazione tecnica, completamento del film e uscita cinematografica richiedono date distinte.",
+      "conclusion": "Il 1975 indica l'arrivo del formato nelle sale con Lisztomania. Conservati Russell/Liszt, i quattro canali di A Star Is Born nel 1976, il diverso sistema magnetico 70mm e il passaggio domestico 1982/1987.",
+      "source_ids": [
+        "dolby_chronology",
+        "dolby_sec",
+        "dolby_70mm"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1975-homebrew-computer-club",
+      "problem": "Il testo indica riunioni mensili e usa un giudizio enfatico come citazione senza attribuzione.",
+      "conclusion": "Corretto il ritmo degli incontri: ogni due settimane a metà anni Settanta. Prima riunione 5 marzo 1975. Conservato il termine dicembre 1986 fornito dal materiale, senza dichiararlo verificato autonomamente. Il ruolo industriale è descritto senza citazione anonima.",
+      "source_ids": [
+        "homebrew_first",
+        "homebrew_newsletter"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1975-jaws-film",
+      "problem": "La data deve indicare l'uscita al pubblico.",
+      "conclusion": "Verificata l'uscita statunitense del 20 giugno 1975. Conservati tre protagonisti, romanzo di Benchley, Martha's Vineyard, guasti degli squali meccanici, costruzione della minaccia fuori campo e musica di Williams.",
+      "source_ids": [
+        "jaws_afi",
+        "jaws_universal"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1975-microsoft",
+      "problem": "La sequenza originale attribuisce la nascita di Microsoft Mobile alla gestione Ballmer e può implicare l'acquisto dell'intera Nokia.",
+      "conclusion": "Separata la gestione Ballmer, con Skype e Surface, dal completamento dell'acquisto Devices and Services nel 2014 dopo la sua uscita. Conservati BASIC, Gates/Allen, MS-DOS/Windows, nuove attività, IPO e ricchezza dei dipendenti.",
+      "source_ids": [
+        "microsoft_foundation",
+        "microsoft_nokia"
+      ],
+      "text_applied": true
+    }
+  ],
+  "metadata_proposals": [
+    {
+      "target_id": "history-1973-ethernet",
+      "field": "timeline_date",
+      "original": {
+        "year": 1973,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1973,
+        "month": 5,
+        "day": 22,
+        "precision": "day",
+        "event_semantics": "Proposta Ethernet nel memorandum di Robert Metcalfe",
+        "region": "Stati Uniti"
+      },
+      "source_ids": [
+        "ethernet_memo"
+      ],
+      "reason": "Proposta separata e documentata; nessuna modifica al catalogo né agli originali."
+    },
+    {
+      "target_id": "history-1973-the-dark-side-of-the-moon",
+      "field": "timeline_date",
+      "original": {
+        "year": 1973,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1973,
+        "month": 3,
+        "day": 0,
+        "precision": "month",
+        "event_semantics": "Uscita dell'album",
+        "region": "Stati Uniti e Regno Unito"
+      },
+      "source_ids": [
+        "darkside_owner",
+        "darkside_timeline",
+        "darkside_studio"
+      ],
+      "reason": "Proposta separata e documentata; nessuna modifica al catalogo né agli originali."
+    },
+    {
+      "target_id": "history-1973-the-exorcist",
+      "field": "timeline_date",
+      "original": {
+        "year": 1973,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1973,
+        "month": 12,
+        "day": 26,
+        "precision": "day",
+        "event_semantics": "Prima uscita cinematografica commerciale",
+        "region": "Stati Uniti, New York e Los Angeles"
+      },
+      "source_ids": [
+        "exorcist_afi"
+      ],
+      "reason": "Proposta separata e documentata; nessuna modifica al catalogo né agli originali."
+    },
+    {
+      "target_id": "history-1974-autobahn-album",
+      "field": "timeline_date",
+      "original": {
+        "year": 1974,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1974,
+        "month": 11,
+        "day": 0,
+        "precision": "month",
+        "event_semantics": "Uscita dell'album",
+        "region": "Germania Ovest"
+      },
+      "source_ids": [
+        "autobahn_flur",
+        "autobahn_label",
+        "autobahn_store"
+      ],
+      "reason": "Proposta separata e documentata; nessuna modifica al catalogo né agli originali."
+    },
+    {
+      "target_id": "history-1975-homebrew-computer-club",
+      "field": "timeline_date",
+      "original": {
+        "year": 1975,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1975,
+        "month": 3,
+        "day": 5,
+        "precision": "day",
+        "event_semantics": "Prima riunione del club",
+        "region": "Stati Uniti, Menlo Park"
+      },
+      "source_ids": [
+        "homebrew_first"
+      ],
+      "reason": "Proposta separata e documentata; nessuna modifica al catalogo né agli originali."
+    },
+    {
+      "target_id": "history-1975-jaws-film",
+      "field": "timeline_date",
+      "original": {
+        "year": 1975,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1975,
+        "month": 6,
+        "day": 20,
+        "precision": "day",
+        "event_semantics": "Uscita cinematografica commerciale",
+        "region": "Stati Uniti"
+      },
+      "source_ids": [
+        "jaws_afi",
+        "jaws_universal"
+      ],
+      "reason": "Proposta separata e documentata; nessuna modifica al catalogo né agli originali."
+    },
+    {
+      "target_id": "history-1975-microsoft",
+      "field": "timeline_date",
+      "original": {
+        "year": 1975,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1975,
+        "month": 4,
+        "day": 4,
+        "precision": "day",
+        "event_semantics": "Fondazione dell'azienda",
+        "region": "Stati Uniti"
+      },
+      "source_ids": [
+        "microsoft_foundation"
+      ],
+      "reason": "Proposta separata e documentata; nessuna modifica al catalogo né agli originali."
+    }
+  ],
+  "editorial_review": {
+    "fidelity": "Rilette le dieci card rispetto al materiale. Tutti i nomi, le relazioni e i sistemi descritti sono conservati; le rettifiche sono motivate nei riscontri.",
+    "language_review": "Inglese scritto prima di italiano, francese, tedesco e spagnolo. Titoli specifici, incipit identificativi e paragrafi brevi all'interno delle card più lunghe. Ricontrollate nelle cinque lingue le approssimazioni di tempi e costi dell'Esorcista.",
+    "dates": "Uscite commerciali per opere e prodotti; memorandum, prima riunione e fondazione conservati come eventi espliciti. Nessuna data di copertina trasformata nella disponibilità hardware. Precisione mensile quando le fonti divergono sul giorno.",
+    "rights": "Fonti, crediti e licenze originali rimangono in INPUT. Le fonti aggiuntive riportano il perimetro di lettura effettivo; nessuna dichiarazione di visione di video o originali fisici non esaminati.",
+    "english_written_first": true,
+    "languages": [
+      "en",
+      "it",
+      "fr",
+      "de",
+      "es"
+    ],
+    "entry_count": 10,
+    "card_count_per_language": 10,
+    "reviewed_at": "2026-10-30T06:04:10.316629+00:00",
+    "english_summary_word_range": [
+      32,
+      38
+    ],
+    "structural_checks": "Schema, ID, ordine, numero di card e cinque lingue verificati dal validatore. Tutti i titoli presenti; nessun HTML o Markdown nei testi."
+  },
+  "status": "completed",
+  "validation": {
+    "valid": true,
+    "batch_id": "299-human-history",
+    "completed": true,
+    "entry_count": 10,
+    "card_count_per_language": 10,
+    "language_count": 5,
+    "translated_card_count": 50,
+    "entry_card_counts": {
+      "history-1973-ethernet": 1,
+      "history-1973-the-dark-side-of-the-moon": 1,
+      "history-1973-the-exorcist": 1,
+      "history-1973-xerox-alto": 1,
+      "history-1974-autobahn-album": 1,
+      "history-1975-altair-8800": 1,
+      "history-1975-dolby-stereo": 1,
+      "history-1975-homebrew-computer-club": 1,
+      "history-1975-jaws-film": 1,
+      "history-1975-microsoft": 1
+    },
+    "issue_counts": {
+      "history-1973-ethernet": 0,
+      "history-1973-the-dark-side-of-the-moon": 0,
+      "history-1973-the-exorcist": 0,
+      "history-1973-xerox-alto": 0,
+      "history-1974-autobahn-album": 0,
+      "history-1975-altair-8800": 0,
+      "history-1975-dolby-stereo": 0,
+      "history-1975-homebrew-computer-club": 0,
+      "history-1975-jaws-film": 0,
+      "history-1975-microsoft": 0
+    },
+    "summary_checks": [
+      {
+        "entry_id": "history-1973-ethernet",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "history-1973-the-dark-side-of-the-moon",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "history-1973-the-exorcist",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "history-1973-xerox-alto",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "history-1974-autobahn-album",
+        "feature_id": null,
+        "english_summary_words": 34
+      },
+      {
+        "entry_id": "history-1975-altair-8800",
+        "feature_id": null,
+        "english_summary_words": 32
+      },
+      {
+        "entry_id": "history-1975-dolby-stereo",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "history-1975-homebrew-computer-club",
+        "feature_id": null,
+        "english_summary_words": 34
+      },
+      {
+        "entry_id": "history-1975-jaws-film",
+        "feature_id": null,
+        "english_summary_words": 34
+      },
+      {
+        "entry_id": "history-1975-microsoft",
+        "feature_id": null,
+        "english_summary_words": 37
+      }
+    ],
+    "editorial_review": [
+      "history-1973-ethernet/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1973-ethernet/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1973-ethernet/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1973-ethernet/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1975-dolby-stereo/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1975-dolby-stereo/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1975-dolby-stereo/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1975-dolby-stereo/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1975-microsoft/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1975-microsoft/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1975-microsoft/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1975-microsoft/main/es: main title changed; check that this is a descriptive title and not an altered official name"
+    ],
+    "failures": []
+  },
+  "output_sha256": "a9850bf0d16b2fe6b20d9bb7581ef90d6a6bcb1fa9846bdc4cc636b574db6c7d",
+  "expansion_assessments": [
+    {
+      "target_id": "history-1973-ethernet",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1973-the-dark-side-of-the-moon",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1973-the-exorcist",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1973-xerox-alto",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1974-autobahn-album",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1975-altair-8800",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1975-dolby-stereo",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1975-homebrew-computer-club",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1975-jaws-film",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1975-microsoft",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "status": "PASS",
+  "locale": "it",
+  "entries": [
+    {
+      "entry_id": "daily-05-02",
+      "source_fields_sha256": "71e2932e96598b34f4fb7d9b9f2aac62d3f0a465ac28ff4531de66b153634432",
+      "translation_sha256": "42e589b32f37334d2c56ddd84ab0174a9f003bfeb951677b2eb43a005bab2573",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch357/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "1ba4a54c535b6d27ed0284c4e8b01d6e74b4d7c6b92d54d616f7993d8d648970"
+    },
+    {
+      "entry_id": "wikipedia-47748826",
+      "source_fields_sha256": "46210df77c2837353a4c5a4f7fe7fd9f8e7658a8af26c1ecd8c9f8cada100996",
+      "translation_sha256": "4cde141899239a1d36a3638bc2ea3478ccfea74959edd001dbb7049174e1dd82",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch357/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "1ba4a54c535b6d27ed0284c4e8b01d6e74b4d7c6b92d54d616f7993d8d648970"
+    },
+    {
+      "entry_id": "wikipedia-72449135",
+      "source_fields_sha256": "6effb12dcd89c8ebc7c33f40645c4f53ad16bf8b0713ab226ebfbdc2142f7265",
+      "translation_sha256": "6c679c6b7014a9f38a5d4c2d197140d8c14e724e6a408c2521eac1e4d50b0d57",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch357/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "1ba4a54c535b6d27ed0284c4e8b01d6e74b4d7c6b92d54d616f7993d8d648970"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "editorial_continue",
+    "actual_receipt": "build/research/catalog-2023-chronological/july-three-private/independent-editorial-peer-approval.json",
+    "actual_receipt_sha256": "fae16a65a39e2a59e413d3a580f33bcbecca44fc2c4b337256c2be7b0fa1f265",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "editorial_continue",
+      "index": "build/research/catalog-2023-chronological/july-three-private/three-private-index.json",
+      "index_sha256": "b2167942573c94d0d6a538909176391d506720ad5f0daa50debf6e374e0dfbd1",
+      "scope": "Actually read all twelve English and forty-eight localized paragraphs and all five fields. Actually viewed all seventeen selected images in three final contacts. Read the four new audio metadata selections in their complete discovery receipts, including rejected alternatives, without repeating resolution of the fifty-two preserved selections. Checked source and recovery-byte bindings.",
+      "primary_sources_actually_read": [
+        {
+          "url": "https://store.steampowered.com/app/1868140/",
+          "finding": "Original June 28, 2023 Windows/macOS release and October 26, 2022 Early Access; fishing by day, restaurant at night."
+        },
+        {
+          "url": "https://en-americas-support.nintendo.com/app/answers/detail/a_id/62458/p/988/c/120",
+          "finding": "Story second player throws pebbles/items; Dandori supports P1 versus P2 and P1+P2 versus CPU with the assisting role."
+        },
+        {
+          "url": "https://www.nintendo.com/it-it/Giochi/Giochi-per-Nintendo-Switch/Pikmin-4-2267217.html",
+          "finding": "Original July 21, 2023 Switch release; localized Occin and Pikmin abilities."
+        },
+        {
+          "url": "https://music.apple.com/us/album/dave-the-diver-original-soundtrack/1739549076",
+          "finding": "Original game soundtrack distribution April 9, 2024, NECORD; distinguished from original game release."
+        },
+        {
+          "url": "https://thqnordic.com/news/remnant-ii-now-available-for-pc-playstation-5-and-xbox-series-x-s",
+          "finding": "Original July 25, 2023 release on PC/PS5/Xbox Series; expanded archetypes, dynamic worlds and three-person cooperative play."
+        }
+      ],
+      "music_notes": "Serve, Sushi, Serve! is the original NECORD recording; Remnant selections are original 2023 Gunfire/Ditto album cues. The extended main theme and later DLC cue found in discovery were not selected. Individual composer Rob Westwood and performance roles remain distinguished.",
+      "findings": [],
+      "owners": [
+        {
+          "entry_id": "daily-05-02",
+          "slug": "dave",
+          "source": "build/research/catalog-2023-chronological/july-three-private/dave-source-private-candidate.json",
+          "source_sha256": "435fdae7ba93bffd7187a8582707616e1a8208614c0a33a46ce3ddb0769cc2e1",
+          "target": "build/research/catalog-2023-chronological/july-three-private/dave-four-language-private-candidate.json",
+          "target_sha256": "e0dd0f3080606b5603c66b50a3e93050dc3ef292063b6eff44bd9edfbb092704",
+          "contact": "build/research/catalog-2023-chronological/july-three-private/dave-final-contact.jpg",
+          "contact_sha256": "b982503bc326792df14eac62d6cc39970cb6add1f51307f224a9c095e8aa72b8",
+          "english_cards": 4,
+          "localized_cards": 16,
+          "images": 6,
+          "tracks": 3
+        },
+        {
+          "entry_id": "wikipedia-47748826",
+          "slug": "pikmin",
+          "source": "build/research/catalog-2023-chronological/july-three-private/pikmin-source-private-candidate.json",
+          "source_sha256": "a1c54128d8e0000f698d77f2d0621f2e44e1a616564dd0ae8a984a75114b0047",
+          "target": "build/research/catalog-2023-chronological/july-three-private/pikmin-four-language-private-candidate.json",
+          "target_sha256": "ecb8d1b2182c17ad427dce075d4a3bb738e0bd3d315298f64eb56dfa703a4b07",
+          "contact": "build/research/catalog-2023-chronological/july-three-private/pikmin-final-contact.jpg",
+          "contact_sha256": "ae1a7e620b833b5525a51ef5317ec9bfa3c1f5ddc96bb4a467d53864fc704b0d",
+          "english_cards": 5,
+          "localized_cards": 20,
+          "images": 7,
+          "tracks": 50
+        },
+        {
+          "entry_id": "wikipedia-72449135",
+          "slug": "remnant",
+          "source": "build/research/catalog-2023-chronological/july-three-private/remnant-source-private-candidate.json",
+          "source_sha256": "7761432f4e252d35b967a8656afa35fc3a097867559a35090be1d1e41b3fb4e1",
+          "target": "build/research/catalog-2023-chronological/july-three-private/remnant-four-language-private-candidate.json",
+          "target_sha256": "ba57b2aa394b8e40b7bb12cc2bc8286e53d5d77e9e55c897b5218bcda17265f7",
+          "contact": "build/research/catalog-2023-chronological/july-three-private/remnant-final-contact.jpg",
+          "contact_sha256": "8cce1aee06974b5cb5ed410e4e45a207b55e6469f128fe14df581e0ff2ed0cd8",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 4,
+          "tracks": 3
+        }
+      ],
+      "production_writes": false
+    }
+  }
+}

@@ -1,0 +1,25 @@
+Pixel Museum local trophy-style notification backend
+SPDX-License-Identifier: GPL-3.0-or-later
+
+The PS5 notification API and rich-toast protocol were studied from Porpoise,
+Copyright (C) 2026 Ruben (Project Porpoise), licensed GPL-3.0-or-later:
+https://github.com/elripalda/Porpoise-Dolphin-Emulator-for-PS5
+Source revision: 61f38f6079a3011abba88e8f4f1cb0ddc0ed27a8
+Relevant files: src/porpoise_notify.cpp, src/porpoise_notify.hpp,
+tools/notify-relay/notify_relay.c, tools/build-porpoise.sh.
+The v2.1 release and its notification source were also checked.
+
+Porpoise attributes its notification findings to PS5SX2 by Spyros
+(GPL-3.0-or-later), including ps5/coreorbis/orbis-shims/ProsperoNotify.cpp,
+and the notification JSON layout to LightningMods' payload SDK sample.
+These upstream credits are preserved here.
+
+Pixel Museum uses a bounded asynchronous native-only transport, with no in-app
+trophy overlay or replacement sound. tools/notify-relay/museum_notify_relay.c
+is the unchanged attributed Porpoise relay source; the embedded payload is
+rebuilt locally with the public PS5 Payload SDK and libSceNotification stub.
+No downloaded Porpoise release binary, proprietary sound sample,
+RetroAchievements component, credentials, or remote badge download is included.
+The system sound identifiers are passed to the console's local library.
+The repository's GNU GPL version3 license text accompanies this work;
+the source files carry the GPL-3.0-or-later SPDX identifier.

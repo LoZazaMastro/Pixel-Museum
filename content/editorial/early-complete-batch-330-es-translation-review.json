@@ -1,0 +1,100 @@
+{
+  "status": "PASS",
+  "locale": "es",
+  "entries": [
+    {
+      "entry_id": "wikipedia-65341338",
+      "source_fields_sha256": "b1d1dbe456daf7886f261d5a3fdba672075c9ea0d4e2bd80d526a63e41bcbaef",
+      "translation_sha256": "22aa91e13d21b63652d96a21f5a32d7013b9c2076d0dd0ff0c43d6be6b3cff14",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch330/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "914525df7790125f49a5c8afb38ff05cbaa286dc55ae77fe8d7c525dd7cf6504"
+    },
+    {
+      "entry_id": "oddworld-soulstorm",
+      "source_fields_sha256": "3e43d24aeb353482d5ed711cb9b6dc2f3e05b27c1053f75cb213617686dd6bcf",
+      "translation_sha256": "5d8fce272f0c94a2030cd80ac520e3370764ed20ae6aa9c02ca29bd3a5d7bd07",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch330/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "914525df7790125f49a5c8afb38ff05cbaa286dc55ae77fe8d7c525dd7cf6504"
+    },
+    {
+      "entry_id": "workbook-04-22-nier-replicant-ver-1-22474487139",
+      "source_fields_sha256": "9738ea6ff75871e5d17b1dc839dcf086c022f59aea505227d08f79327f6a14c2",
+      "translation_sha256": "b8d5943b109e77886325eeb1344129bbf20ac3d6b95364d830318cc26cd1713e",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch330/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "914525df7790125f49a5c8afb38ff05cbaa286dc55ae77fe8d7c525dd7cf6504"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "editorial_continue",
+    "actual_receipt": "build/research/catalog-2021-chronological/root-march-april-three-private/independent-editorial-peer-approval.json",
+    "actual_receipt_sha256": "7de3c276b3e9ce8853e3f4d6b51a7102b24471f4af00cf5386b6912f49b0ec7f",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "editorial_continue",
+      "authors": [
+        "root",
+        "category_audit"
+      ],
+      "index_sha256": "0a363fe166f91a8f20b3dab541d34eeed15cae15bdcb559fd2b30198f81d2faa",
+      "owners": [
+        {
+          "entry_id": "wikipedia-65341338",
+          "slug": "rise",
+          "source": "build/research/catalog-2021-chronological/root-march-april-three-private/rise-source-private-candidate.json",
+          "source_sha256": "09f728d13cfcb4c5aeb4f0dab61bf94d001d800788bd660928724d58bce8f43b",
+          "target": "build/research/catalog-2021-chronological/root-march-april-three-private/rise-four-language-private-candidate.json",
+          "target_sha256": "0d52aeef92e89cdbfd8ae821a6b871d97ad30fb53a23e7ee06acdc87416dd52d",
+          "contact": "build/research/catalog-2021-chronological/root-march-april-three-private/rise-final-contact.jpg",
+          "contact_sha256": "d0a2ae98caada46cc88a2d9365e9d529afcc7727cbf839e15c8a75e66ff895dd",
+          "english_cards": 4,
+          "localized_cards": 16,
+          "images": 5,
+          "tracks": 109
+        },
+        {
+          "entry_id": "oddworld-soulstorm",
+          "slug": "oddworld",
+          "source": "build/research/catalog-2021-chronological/root-march-april-three-private/oddworld-source-private-candidate.json",
+          "source_sha256": "a7624ad535c6ba192a76af0eb5ec698b1763acf0efc0999dde58fdbd6dcd1123",
+          "target": "build/research/catalog-2021-chronological/root-march-april-three-private/oddworld-four-language-private-candidate.json",
+          "target_sha256": "28aa13003306076e46606f26fa0e24ee9cb4c133e83f91ee23f001e56a5975af",
+          "contact": "build/research/catalog-2021-chronological/root-march-april-three-private/oddworld-final-contact.jpg",
+          "contact_sha256": "b82b5e339e282e45c3e434430b76d6ecbbcf76fbf31092e725164deaa76551b5",
+          "english_cards": 5,
+          "localized_cards": 20,
+          "images": 7,
+          "tracks": 3
+        },
+        {
+          "entry_id": "workbook-04-22-nier-replicant-ver-1-22474487139",
+          "slug": "nier",
+          "source": "build/research/catalog-2021-chronological/root-march-april-three-private/nier-source-private-candidate.json",
+          "source_sha256": "d015985b47c4c512776d608b52a956868f2df199cc9e20118f48d2ec2b984c71",
+          "target": "build/research/catalog-2021-chronological/root-march-april-three-private/nier-four-language-private-candidate.json",
+          "target_sha256": "4ee0e7e93a6cf47e203d2aa24cba91a47f0ea2b10d7125ebcd30d902d112abd8",
+          "contact": "build/research/catalog-2021-chronological/root-march-april-three-private/nier-final-contact.jpg",
+          "contact_sha256": "7a400cc948dd867d57faff44d56946aa67586acc37e011e8109cf713754c1dd6",
+          "english_cards": 2,
+          "localized_cards": 8,
+          "images": 7,
+          "tracks": 45
+        }
+      ],
+      "read_english_paragraphs": 11,
+      "read_localized_paragraphs": 44,
+      "actual_final_contact_sheets_viewed": 3,
+      "actual_selected_images_viewed": 19,
+      "production_writes": false,
+      "source_review": "Directly read Capcom March26,2021 original Switch launch record; Square Enix international NieR April23,2021 release record; indexed Japanese Square Enix original announcement confirms April22 consoles and April24 Steam. Directly read Lorne Lanning original February25,2021 PlayStation Blog launch announcement and April2021 Quarma/badges explanation. Directly read Black Screen Records original soundtrack page: Josh Gabriel composer, original game themes, later vinyl remaster explicitly distinguished.",
+      "source_access_limitation": "The Japanese NieR blog currently redirects to emergency maintenance. Its indexed primary content was independently returned and read, and root confirms direct reading in the preceding author turn; this receipt does not claim a successful present direct HTTP retrieval of that Japanese endpoint.",
+      "music_review": "154 previously qualified Rise109 and NieR45 soundtrack objects preserved exactly; no repeated codec resolution. All three newly selected Oddworld metadata records read: Ali the Mudokon publications of April17,2021 explicitly recorded from PS5, Josh Gabriel, public AAC, original adaptive cue/intensity names. No archival upload misrepresented as official; no local audio downloaded or packaged.",
+      "media_review": "All19 final images actually viewed in three final contacts. Rise hunt/Wirebug/Palamute/group scenes match the four chapters. Oddworld five clean native side-view publisher scenes replace statistics overlay; Enhanced Edition cover/gallery are explicitly qualified as later, not original April captures. NieR 2021 artwork and gameplay explicitly accompany the distinction between original2010 and updated2021; no platform banners on covers.",
+      "resolved_findings": [
+        "German Oddworld P4 possession wording corrected from being possessed to the active ability to take control of enemies; every other localized clause unchanged.",
+        "New Oddworld launch URL returning404 replaced only with the directly readable first-person Lorne Lanning primary on PlayStation Blog."
+      ],
+      "preservation_review": "Rise sole English change is players selects → players select; all other11 English paragraph content preserved, all44 translations read including the complete long Oddworld P4. Oddworld summary remains identical to localized body0 in each language."
+    }
+  }
+}

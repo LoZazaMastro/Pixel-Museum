@@ -1,0 +1,112 @@
+{
+  "status": "PASS",
+  "locale": "de",
+  "entries": [
+    {
+      "entry_id": "wikipedia-70079987",
+      "source_fields_sha256": "4626555f0ae4d874bffc827fd0552cd6fa069f9684bade964393da842a4ce75c",
+      "translation_sha256": "0f9b0531e34e6b327033509689393ca73cf3ef46b4905482406ca284ace82791",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch347/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "04563ad029577ccf35a1e676ab56d60a6e463f54c7543686ebab82187ce398d6"
+    },
+    {
+      "entry_id": "wikipedia-70711554",
+      "source_fields_sha256": "62d920feba93a2e88e8cb5c51570117abd16a7053be0510b9e15ad7ecbde508a",
+      "translation_sha256": "2eb8934a14dd646605b99e1da7cbd8d18ed19f0e76edf58794fffcf9d51d9e22",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch347/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "04563ad029577ccf35a1e676ab56d60a6e463f54c7543686ebab82187ce398d6"
+    },
+    {
+      "entry_id": "wikipedia-60276496",
+      "source_fields_sha256": "fb62c492e9d18357cb242b5661cfc049fa37a1eea85f683e3764c2304f9b91f7",
+      "translation_sha256": "3c2bd294419b188df6889f1d65ee822bb3d8f58fbf2c8835295f96975b35168d",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch347/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "04563ad029577ccf35a1e676ab56d60a6e463f54c7543686ebab82187ce398d6"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "/root/category_audit",
+    "actual_receipt": "build/research/catalog-2022-chronological/october-november-three-private/independent-category-audit-approval.json",
+    "actual_receipt_sha256": "ed045445f2bfecbede8355e11af151df4dc2f99692004b0154efbf4c030ca07f",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "/root/category_audit",
+      "index": "build/research/catalog-2022-chronological/october-november-three-private/three-original-source-media-four-language-private-index.json",
+      "index_sha256": "e37980a9bbfe27071542b996043f3761c88cd338c0581eabfa6f2b2e3b83d5e0",
+      "owners": [
+        {
+          "entry_id": "wikipedia-70079987",
+          "slug": "bayonetta",
+          "source": "build/research/catalog-2022-chronological/october-november-three-private/bayonetta/complete-original-source-media-private-candidate.json",
+          "source_sha256": "9acd8fd0f0b935dbaccc4fa2dacc71aa9ddfc3c1543536d3545d92a504dbf6b2",
+          "target": "build/research/catalog-2022-chronological/october-november-three-private/bayonetta/complete-four-language-private-candidate.json",
+          "target_sha256": "c44f8e67300cb334d94647e18e39eb8e12f292e5e2f3bddfa606f98f10ed4a6a",
+          "contact": "build/research/catalog-2022-chronological/october-november-three-private/bayonetta/final-selected-media-contact.jpg",
+          "contact_sha256": "89317998172f44e0d948e0579f7f790203c9bcf1fbfac481bab9a16f640416f8",
+          "english_cards": 4,
+          "localized_cards": 16,
+          "images": 6,
+          "tracks": 259,
+          "finite_errata": 0
+        },
+        {
+          "entry_id": "wikipedia-70711554",
+          "slug": "mwii",
+          "source": "build/research/catalog-2022-chronological/october-november-three-private/mwii/complete-original-source-media-private-candidate.json",
+          "source_sha256": "2d463ba539beee17485cef2ef24a45a8ba883f54160b46c044a3b1f011f261ce",
+          "target": "build/research/catalog-2022-chronological/october-november-three-private/mwii/complete-four-language-private-candidate.json",
+          "target_sha256": "4948eb987d5cafcc7d578d562b31eed41002a504dae0267111f33395780dd1c5",
+          "contact": "build/research/catalog-2022-chronological/october-november-three-private/mwii/final-selected-media-contact.jpg",
+          "contact_sha256": "88d985a29d5f1433da98696517aedc1acde5dfcffae2ee0b0c14d0690a2c2708",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 5,
+          "tracks": 3,
+          "finite_errata": 1
+        },
+        {
+          "entry_id": "wikipedia-60276496",
+          "slug": "sonic",
+          "source": "build/research/catalog-2022-chronological/october-november-three-private/sonic/complete-original-source-media-private-candidate.json",
+          "source_sha256": "4b303074aee79e4f55a72740674cd963036e5f69ab71fd1744849638518e229a",
+          "target": "build/research/catalog-2022-chronological/october-november-three-private/sonic/complete-four-language-private-candidate.json",
+          "target_sha256": "54ec5dfafff94d51fe8c7af6efd8a67dd619c6a7805391d48ee96f00f14b8fa6",
+          "contact": "build/research/catalog-2022-chronological/october-november-three-private/sonic/final-selected-media-contact.jpg",
+          "contact_sha256": "1d41075d8d021a1192ae992fa99fd85faf197fced631b9faf1d4b4a209602f1d",
+          "english_cards": 4,
+          "localized_cards": 16,
+          "images": 5,
+          "tracks": 3,
+          "finite_errata": 1
+        }
+      ],
+      "scope": {
+        "english_paragraphs_read": 11,
+        "localized_paragraphs_read": 44,
+        "images_personally_viewed": 16,
+        "new_music_metadata_read": 5
+      },
+      "findings": [],
+      "notes": [
+        "Personally read all11English and44IT/FR/DE/ES paragraphs and five localized fields. Full long Sonic feature lists and explicit2023 additions preserved naturally, no generic replacement text.",
+        "Personally viewed all16images in the three final contact sheets: authentic clean cover artwork and original-game characters/gameplay, relevant complete chapter coverage. Bayonetta environment captures do not claim to document voice casting or benchmark performance.",
+        "Bayonetta Englishbody and259existing cues exact. Nintendo original release page directly confirms28October2022 and Homunculi; directorYusukeMiyata September24,2021 firsthand post directly read.",
+        "Activision original October28,2022 launch release directly read: Warzone2 separate free companion November16, not an included October launch mode. Finite English change accurately distinguishes it.",
+        "SEGA March23,2023 and June24,2023 update notes directly read: Jukebox/SoundMemories versus ActionChainChallenge/SpinDash/NewKoco correctly time-qualified. OriginalDecember7,2022 soundtrack150track announcement and Ohtani firsthand commentary directly read.",
+        "Read five new selected publicAAC metadata records: NextInLine175s officialSarahSchachner,141171s officialBandaMS/Activision, Kronos301s/Undefeatable265s/Ares313s officialSEGATopicNexTone2022. Label-distributed Qobuz tracklist directly confirms NextInLine2:55 and1412:51; originalCallofDuty music-video metadata independently identifies141. ExistingMWIIcue exact, not re-queried.",
+        "No audio downloads or audition claims; no production writes."
+      ],
+      "primary_sources_read": [
+        "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-games/Bayonetta-3-2045649.html",
+        "https://www.platinumgames.com/official-blog/article/11466",
+        "https://investor.activision.com/news-releases/news-release-details/call-dutyr-modern-warfarer-ii-available-now",
+        "https://asia.sega.com/SonicFrontiers/en/information/230323-01.html",
+        "https://asia.sega.com/SonicFrontiers/en/information/230624.html",
+        "https://sonic.sega.jp/SonicChannel/topics/sound/20221007_003026/",
+        "https://www.qobuz.com/us-en/album/call-of-duty-modern-warfare-ii-official-soundtrack-sarah-schachner/qwjty61obf07a"
+      ],
+      "production_writes": false
+    }
+  }
+}

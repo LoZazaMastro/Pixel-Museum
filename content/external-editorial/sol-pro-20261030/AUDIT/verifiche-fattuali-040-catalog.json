@@ -1,0 +1,789 @@
+{
+  "batch_id": "040-catalog",
+  "status": "completed",
+  "sources": [
+    {
+      "source_id": "040-gradius-collection",
+      "url": "https://www.ne.jp/asahi/krk/kct/misc/konami.htm",
+      "title": "Konami Collection Gallery",
+      "publisher": "Konami collection collector archive",
+      "accessed_at": "2026-10-30",
+      "scope": "Elenco delle raccolte: volume3 giapponese Game Boy con supporto Super Game Boy e contenuto GradiusII; volume4 europeo Game Boy Color corrispondente.",
+      "limitation": "Archivio di collezionista, non sito ufficiale Konami; corroborazione con la fonte Gradius Wiki già presente nell’INPUT. Non importate date nuove delle raccolte."
+    },
+    {
+      "source_id": "040-gradius-collection-wiki",
+      "url": "https://gradius.fandom.com/wiki/Konami_GB_Collection",
+      "title": "Konami GB Collection",
+      "publisher": "Gradius Wiki contributors",
+      "accessed_at": "2026-10-30",
+      "scope": "Distinzione fra supporto Super Game Boy nelle cartucce Game Boy giapponesi e versioni europee Game Boy Color, con diversa numerazione dei volumi.",
+      "limitation": "Fonte secondaria della stessa famiglia di fonti già fornita per il gioco; non usata per aggiungere nuovi retroscena."
+    },
+    {
+      "source_id": "040-golf-iwata",
+      "url": "https://shmuplations.com/iwata/",
+      "title": "Satoru Iwata — 1999 Developer Interview",
+      "publisher": "Used Games / Satoru Iwata; traduzione Shmuplations",
+      "accessed_at": "2026-10-30",
+      "scope": "Iwata elenca Golf, Japan Open, US Open e Mario Open come giochi realizzati per Nintendo; racconta il rapporto fra NES Open Tournament Golf e il successivo Mario Golf64.",
+      "limitation": "La testimonianza non risolve l’identità del golfista di ogni edizione di Golf. Il conteggio viene limitato a questa linea Famicom, senza primato universale delle apparizioni di Mario."
+    },
+    {
+      "source_id": "040-golf-date",
+      "url": "https://www.nintendo.com/jp/character/mario/en/history/golf_open/index.html",
+      "title": "NES Open Tournament Golf — Mario Portal",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "Il testo indicizzato del portale storico riporta la release giapponese del20 settembre1991.",
+      "limitation": "Pagina diretta dinamica con estrazione limitata; data letta nell’indice del motore, non in una schermata della pagina. Non applicata a Nord America o Europa."
+    },
+    {
+      "source_id": "040-hobby-september-2015",
+      "url": "https://www.hobbyconsolas.com/noticias/n-1-hobby-consolas-venta-madrid-games-week-2015-127380",
+      "title": "El nº1 de Hobby Consolas a la venta en Madrid Games Week2015",
+      "publisher": "HobbyConsolas / Javier Parrilla,28 settembre2015",
+      "accessed_at": "2026-10-30",
+      "scope": "Il comunicato della ristampa dice esplicitamente che il primo numero originale fu messo in vendita nel settembre1991.",
+      "limitation": "Ricostruzione del2015 in conflitto con altre retrospettive della stessa redazione; la data della ristampa non è usata come release della rivista."
+    },
+    {
+      "source_id": "040-hobby-september-2021",
+      "url": "https://www.hobbyconsolas.com/reportajes/donde-vas-ese-gato-historia-primera-portada-hobby-consolas-776679",
+      "title": "¿Dónde vas con ese gato? La historia de la primera portada de Hobby Consolas",
+      "publisher": "HobbyConsolas / David Martínez,1 gennaio2021",
+      "accessed_at": "2026-10-30",
+      "scope": "La storia della prima copertina colloca la prima uscita nel settembre1991.",
+      "limitation": "Non fornisce una prova contemporanea di distribuzione; gli altri retroscena presenti nell’articolo non sono stati importati nel testo."
+    },
+    {
+      "source_id": "040-hobby-october-2021",
+      "url": "https://www.hobbyconsolas.com/ultimo/consolegas-todos-bienvenidos-30-aniversario-hobby-consolas-778891_6834316_0.html",
+      "title": "Consolegas todos, bienvenidos al30 aniversario de Hobby Consolas",
+      "publisher": "HobbyConsolas / Sonia Herranz,1 gennaio2021",
+      "accessed_at": "2026-10-30",
+      "scope": "Indica invece ottobre1991 come mese di lancio e di messa in vendita.",
+      "limitation": "Contraddice le due ricostruzioni ufficiali che indicano settembre. Non scelta a maggioranza né usata per fingere una soluzione del conflitto."
+    },
+    {
+      "source_id": "040-hobby-number400",
+      "url": "https://www.hobbyconsolas.com/noticias/ya-venta-hobby-consolas-400-bart-simpson-otros-mitos-portada-poster-doble-33-anos-nostalgia-1413264",
+      "title": "Ya a la venta Hobby Consolas400",
+      "publisher": "HobbyConsolas / Rafael Aznar,25 ottobre2024",
+      "accessed_at": "2026-10-30",
+      "scope": "Numero400 già in vendita il25 ottobre2024:132pagine,33anni, copertina di Jesús Martínez del Vas con Bart che legge il primo numero, oltre50pagine celebrative e interviste a15redattori; NeoVatio e concorso.",
+      "limitation": "Letto il testo descrittivo; non dichiarata ispezione visiva della copertina. Altri dettagli dell’articolo non aggiunti."
+    },
+    {
+      "source_id": "040-hobby-issue-date",
+      "url": "https://storage.googleapis.com/warehouse-europe-west3-prod-assets/8fcd6b59-2d61-4c07-ac79-a178825aac62/kiosko-2342-20241025-hobbyconsolas/b9f614a9cbca7cebaf99be8c0f8e2f32_sample.pdf",
+      "title": "Hobby Consolas400 — anteprima,400 hitos en la historia de Hobby Consolas",
+      "publisher": "HobbyConsolas / anteprima ufficiale del fascicolo",
+      "accessed_at": "2026-10-30",
+      "scope": "La retrospettiva etichetta il primo fascicolo come numero1,ottobre1991.",
+      "limitation": "Letto contenuto indicizzato dell’anteprima. Data bibliografica distinta dal giorno o mese di vendita, che rimane controverso."
+    },
+    {
+      "source_id": "040-kidicarus-manual",
+      "url": "https://www.nintendo.co.jp/data/software/manual/man_rblj.pdf",
+      "title": "Kid Icarus: Of Myths and Monsters — manuale Virtual Console giapponese",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "Manuale della riedizione: il gioco Game Boy non era stato pubblicato in Giappone; tre tesori e vicenda di Pit confermati.",
+      "limitation": "Consultato testo indicizzato, senza nuova ispezione visiva del PDF."
+    },
+    {
+      "source_id": "040-kidicarus-japan",
+      "url": "https://game.watch.impress.co.jp/docs/series/dl/509179.html",
+      "title": "Catalogo settimanale dei download,seconda settimana di febbraio2012",
+      "publisher": "GAME Watch / Impress",
+      "accessed_at": "2026-10-30",
+      "scope": "Resoconto contemporaneo della distribuzione giapponese su Virtual Console dall’8 febbraio2012 di un titolo precedentemente uscito solo all’estero.",
+      "limitation": "Conservato nel testo il solo anno2012 già nell’INPUT; non sostituita la release originale nordamericana1991."
+    },
+    {
+      "source_id": "040-zelda-date",
+      "url": "https://www.nintendo.co.jp/clvs/soft/zelda.html",
+      "title": "The Legend of Zelda: A Link to the Past — Nintendo Classic Mini Super Famicom",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "Scheda ufficiale con data dell’edizione originale Super Famicom21 novembre1991.",
+      "limitation": "Data giapponese, non release mondiale."
+    },
+    {
+      "source_id": "040-iwatsuki-interview",
+      "url": "https://www.gamedeveloper.com/audio/interview-8-bit-to-i-omega-five-i-with-hiroyuki-iwatsuki",
+      "title": "Interview:8-Bit to Omega Five with Hiroyuki Iwatsuki",
+      "publisher": "Game Developer / Jeriaska,18 febbraio2009",
+      "accessed_at": "2026-10-30",
+      "scope": "Intervista al compositore; introduzione include Ninja Gaiden Shadow e distingue il lavoro in squadra dalle attribuzioni individuali.",
+      "limitation": "Non contiene una ripartizione completa delle tracce di Ninja Gaiden Shadow. Il testo conserva il contributo di Iwatsuki senza attribuirgli in esclusiva tutta la colonna sonora."
+    },
+    {
+      "source_id": "040-iwatsuki-credit-research",
+      "url": "https://quiteajolt.com/projects/vgmcomposers/hiroyukiiwatsuki.html",
+      "title": "Hiroyuki Iwatsuki — list of video game compositions",
+      "publisher": "Quite a Jolt / ricerca sui crediti e corrispondenza riferita con Jeriaska",
+      "accessed_at": "2026-10-30",
+      "scope": "Segnala che il credito sound a Don non prova la paternità esclusiva; riferisce contributi di Iku Mizutani.",
+      "limitation": "Corrispondenza riportata, non direttamente accessibile: non attribuite singole tracce né introdotto un elenco completo di autori nell’OUTPUT."
+    },
+    {
+      "source_id": "040-ffl3-manual",
+      "url": "https://www.digitpress.com/library/manuals/gameboy/final%20fantasy%20legend%20iii.pdf",
+      "title": "Final Fantasy LegendIII — manuale originale Game Boy,pp.51–54",
+      "publisher": "Square / Squaresoft; scansione Digital Press",
+      "accessed_at": "2026-10-30",
+      "scope": "Pagine51–52:carne e parti cambiano classe e capacità. Pagine53–54:crescita di umani e mutanti tramite punti esperienza e livelli; caratteristiche crescono col livello, altri tipi crescono con trasformazioni.",
+      "limitation": "PDF scaricato e pagine51–54 effettivamente renderizzate e lette. Non confusi questi sistemi con le meccaniche del remake DS."
+    },
+    {
+      "source_id": "040-saga-lineup",
+      "url": "https://www.jp.square-enix.com/saga_portal/lineup/index.html",
+      "title": "SaGa Series Portal — Line up",
+      "publisher": "Square Enix",
+      "accessed_at": "2026-10-30",
+      "scope": "SaGa3 Game Boy13 dicembre1991; remakeDS2011; raccoltaSwitch2020 eSteam/iOS/Android2021.",
+      "limitation": "Cronologia giapponese per il gioco originale. Non trasferite al testo tutte le nuove date precise delle riedizioni."
+    },
+    {
+      "source_id": "040-saga-chronicle",
+      "url": "https://www.jp.square-enix.com/saga_portal/chronicle/index.html",
+      "title": "SaGa Series Portal — Chronicle",
+      "publisher": "Square Enix",
+      "accessed_at": "2026-10-30",
+      "scope": "Descrizione di SaGa3:livelli attraverso esperienza e concetti diMP e livello della magia, a differenza dei precedenti.",
+      "limitation": "Il livello della magia non viene trasformato in una regola di miglioramento automatico delle abilità tramite uso."
+    },
+    {
+      "source_id": "040-yoshi-date",
+      "url": "https://www.nintendo.com/jp/famicom/software/fmc-yeg/index.html",
+      "title": "Yoshi no Tamago — Famicom software archive",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "Scheda ufficiale Famicom con release14 dicembre1991 e abbinamento delle creature che cadono.",
+      "limitation": "Fonte specifica per Famicom; simultaneità Game Boy già nel materiale fornito, non verificata autonomamente su questa pagina. La meccanica delle uova è segnalata come materiale da sviluppare, non aggiunta arbitrariamente alle card."
+    }
+  ],
+  "decisions": [
+    {
+      "target_id": "workbook-08-09-gradius-the-interstellar-assault",
+      "problem": "La raccolta giapponese era descritta come se Super Game Boy fosse una piattaforma autonoma.",
+      "conclusion": "Specificato Game Boy con supporto Super Game Boy in Giappone e Game Boy Color in Europa, mantenendo volumi3/4 e tutti i titoli regionali.",
+      "status": "resolved",
+      "source_ids": [
+        "040-gradius-collection",
+        "040-gradius-collection-wiki"
+      ],
+      "text_applied": {
+        "languages": [
+          "en",
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "cards": [
+          "main:3"
+        ]
+      }
+    },
+    {
+      "target_id": "wikipedia-3021662",
+      "problem": "Il conteggio universale di quarto gioco di golf con Mario dipende dall’identità del golfista delle edizioni precedenti e dall’inclusione di Game Boy; anche primo Mario Golf era espresso come classificazione assoluta.",
+      "conclusion": "Conservata la sequenza di quattro titoli nella linea Famicom realizzata per Nintendo, attestata da Iwata, e il rapporto storico con Mario Golf; evitato un primato universale delle apparizioni del personaggio.",
+      "status": "resolved",
+      "source_ids": [
+        "040-golf-iwata"
+      ],
+      "text_applied": {
+        "languages": [
+          "en",
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "cards": [
+          "main:0"
+        ]
+      }
+    },
+    {
+      "target_id": "wikipedia-3021662",
+      "problem": "La data di contesto20 settembre1991 mancava di regione.",
+      "conclusion": "Confermata come release giapponese, non data mondiale.",
+      "status": "resolved",
+      "source_ids": [
+        "040-golf-date"
+      ],
+      "text_applied": {
+        "languages": [
+          "en",
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "cards": []
+      }
+    },
+    {
+      "target_id": "hobbyconsolas-magazine",
+      "problem": "Settembre e ottobre1991 sono entrambi dichiarati come mese di vendita da fonti ufficiali della rivista.",
+      "conclusion": "La release viene limitata all’anno1991; ottobre è indicato soltanto come data del fascicolo. Il conflitto sul mese effettivo non è dichiarato risolto.",
+      "status": "precision_reduced_month_conflict_retained",
+      "source_ids": [
+        "040-hobby-september-2015",
+        "040-hobby-september-2021",
+        "040-hobby-october-2021",
+        "040-hobby-issue-date"
+      ],
+      "text_applied": {
+        "languages": [
+          "en",
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "cards": [
+          "summary",
+          "main:0"
+        ]
+      }
+    },
+    {
+      "target_id": "hobbyconsolas-magazine",
+      "problem": "Il25 ottobre2024 era indicato come annuncio del numero400.",
+      "conclusion": "Il comunicato dice che il fascicolo era già in vendita; corretta la formulazione in tutte le lingue. Conservati132pagine,33anni,oltre50pagine celebrative,quindici interviste e attribuzione della copertina.",
+      "status": "resolved",
+      "source_ids": [
+        "040-hobby-number400"
+      ],
+      "text_applied": {
+        "languages": [
+          "en",
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "cards": [
+          "main:2"
+        ]
+      }
+    },
+    {
+      "target_id": "kid-icarus-of-myths-and-monsters-1991",
+      "problem": "Il debutto giapponese molto successivo poteva essere confuso con il lancio originale; scarsa familiarità del pubblico era presentata come effetto certo.",
+      "conclusion": "Confermata l’assenza di uscita Game Boy in Giappone e la prima distribuzione locale nel2012; descritta l’assenza di edizione domestica, senza dedurre dati sulla familiarità dei giocatori.",
+      "status": "resolved",
+      "source_ids": [
+        "040-kidicarus-manual",
+        "040-kidicarus-japan"
+      ],
+      "text_applied": {
+        "languages": [
+          "en",
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "cards": [
+          "main:2"
+        ]
+      }
+    },
+    {
+      "target_id": "wikipedia-165820",
+      "problem": "Il21 novembre1991 del contesto non indicava la regione.",
+      "conclusion": "Data riferita alla versione giapponese Super Famicom.",
+      "status": "resolved",
+      "source_ids": [
+        "040-zelda-date"
+      ],
+      "text_applied": {
+        "languages": [
+          "en",
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "cards": [
+          "main:0"
+        ]
+      }
+    },
+    {
+      "target_id": "wikipedia-165820",
+      "problem": "Nintendo Classics poteva essere letto come nome del servizio al momento della prima riedizione Switch.",
+      "conclusion": "Precisato che Nintendo Classics è il nome attuale del servizio, conservando tutte le piattaforme di riedizione fornite.",
+      "status": "resolved",
+      "source_ids": [],
+      "text_applied": {
+        "languages": [
+          "en",
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "cards": [
+          "main:2"
+        ]
+      }
+    },
+    {
+      "target_id": "ninja-gaiden-shadow-1991",
+      "problem": "Hiroyuki Iwatsuki era presentato come autore dell’intera musica, mentre crediti e ricerca sui contributi distinguono lavoro collettivo e credito sound.",
+      "conclusion": "Conservato il contributo musicale di Iwatsuki senza attribuzione esclusiva; non inventato un elenco completo di autori o tracce.",
+      "status": "resolved",
+      "source_ids": [
+        "040-iwatsuki-interview",
+        "040-iwatsuki-credit-research"
+      ],
+      "text_applied": {
+        "languages": [
+          "en",
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "cards": [
+          "main:2"
+        ]
+      }
+    },
+    {
+      "target_id": "wikipedia-2063476",
+      "problem": "Skill leveling era una descrizione ambigua della crescita nel gioco Game Boy e poteva importare regole di altre edizioni.",
+      "conclusion": "Il manuale originale conferma che umani e mutanti salgono di livello con l’esperienza e migliorano gli attributi; carne e parti cambiano classi e capacità. Riscritta concretamente questa combinazione, senza crescita delle abilità tramite uso.",
+      "status": "resolved",
+      "source_ids": [
+        "040-ffl3-manual",
+        "040-saga-chronicle"
+      ],
+      "text_applied": {
+        "languages": [
+          "en",
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "cards": [
+          "summary",
+          "main:1"
+        ]
+      }
+    },
+    {
+      "target_id": "wikipedia-2063476",
+      "problem": "Il13 dicembre1991 del contesto mancava di regione e andava distinto dal remake.",
+      "conclusion": "Square Enix conferma la release originale giapponese Game Boy e distingue le riedizioni2011,2020,2021.",
+      "status": "resolved",
+      "source_ids": [
+        "040-saga-lineup"
+      ],
+      "text_applied": {
+        "languages": [
+          "en",
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "cards": [
+          "main:0"
+        ]
+      }
+    },
+    {
+      "target_id": "wikipedia-440578",
+      "problem": "La data precisa del1991 andava associata al mercato giapponese.",
+      "conclusion": "Nintendo conferma il14 dicembre1991 per Famicom; il testo mantiene separato il1992 degli altri territori.",
+      "status": "resolved",
+      "source_ids": [
+        "040-yoshi-date"
+      ],
+      "text_applied": {
+        "languages": [
+          "en",
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "cards": [
+          "main:0"
+        ]
+      }
+    },
+    {
+      "target_id": "alisia-dragoon",
+      "problem": "La conclusione dell’INPUT forzava un parallelismo fra combattimento e musica.",
+      "conclusion": "Conservate le regole dell’indicatore, la salute e i livelli delle quattro creature e la spiegazione attribuita a Kasatani sulla continuità musicale. Tolta soltanto la conclusione metaforica. Le verifiche preesistenti nell’INPUT su manuale e intervista restano riferimenti, non nuove consultazioni dichiarate.",
+      "status": "resolved",
+      "source_ids": [],
+      "text_applied": {
+        "languages": [
+          "en",
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "cards": [
+          "main:1"
+        ]
+      }
+    }
+  ],
+  "metadata_proposals": [
+    {
+      "target_id": "wikipedia-3021662",
+      "field": "release_region",
+      "proposed": {
+        "year": 1991,
+        "month": 9,
+        "day": 20,
+        "precision": "day",
+        "region": "JP",
+        "platform": "Famicom",
+        "regional_title": "Mario Open Golf"
+      },
+      "reason": "Data del portale storicoNintendo.",
+      "source_ids": [
+        "040-golf-date"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "hobbyconsolas-magazine",
+      "field": "release_date",
+      "proposed": {
+        "year": 1991,
+        "precision": "year",
+        "region": "Spain"
+      },
+      "reason": "Il mese di vendita è contraddittorio nelle retrospettive ufficiali; ottobre è certo come data bibliografica del fascicolo ma non va automaticamente equiparato alla release.",
+      "source_ids": [
+        "040-hobby-september-2015",
+        "040-hobby-september-2021",
+        "040-hobby-october-2021",
+        "040-hobby-issue-date"
+      ],
+      "applied_to_catalog": false,
+      "unresolved_precision": "month"
+    },
+    {
+      "target_id": "wikipedia-165820",
+      "field": "release_region",
+      "proposed": {
+        "year": 1991,
+        "month": 11,
+        "day": 21,
+        "precision": "day",
+        "region": "JP",
+        "platform": "Super Famicom"
+      },
+      "reason": "Scheda ufficialeNintendo.",
+      "source_ids": [
+        "040-zelda-date"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "wikipedia-2063476",
+      "field": "release_region",
+      "proposed": {
+        "year": 1991,
+        "month": 12,
+        "day": 13,
+        "precision": "day",
+        "region": "JP",
+        "platform": "Game Boy",
+        "regional_title": "SaGa3:Jikuu no Hasha"
+      },
+      "reason": "Cronologia ufficialeSquareEnix.",
+      "source_ids": [
+        "040-saga-lineup"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "wikipedia-440578",
+      "field": "release_region",
+      "proposed": {
+        "year": 1991,
+        "month": 12,
+        "day": 14,
+        "precision": "day",
+        "region": "JP",
+        "platform": "Famicom / Game Boy"
+      },
+      "reason": "Regione coerente con INPUT e data Famicom confermata daNintendo; simultaneitàGameBoy già fornita.",
+      "source_ids": [
+        "040-yoshi-date"
+      ],
+      "applied_to_catalog": false
+    }
+  ],
+  "expansion_assessments": [
+    {
+      "target_id": "workbook-08-09-gradius-the-interstellar-assault",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 1,
+      "rationale": "Episodio portatile rilevante di Gradius, con quattro card principali."
+    },
+    {
+      "target_id": "wikipedia-3021662",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Titolo significativo nell’origine di Mario Golf, con tre card principali."
+    },
+    {
+      "target_id": "hobbyconsolas-magazine",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "required_main_cards": null,
+      "missing_cards": 0,
+      "rationale": "Voce dedicata a una rivista: la soglia per giochi e console non si applica."
+    },
+    {
+      "target_id": "super-castlevania-iv",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Capitolo importante di Castlevania e della prima stagione del Super NES."
+    },
+    {
+      "target_id": "kid-icarus-of-myths-and-monsters-1991",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Secondo Kid Icarus e primo episodio portatile della serie."
+    },
+    {
+      "target_id": "wikipedia-165820",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Opera fondamentale della serie Zelda, descritta in tre card."
+    },
+    {
+      "target_id": "ninja-gaiden-shadow-1991",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Adattamento portatile significativo di Ninja Gaiden, con movimenti propri."
+    },
+    {
+      "target_id": "wikipedia-2063476",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Ultimo SaGa per Game Boy, rilevante per il diverso sistema di crescita."
+    },
+    {
+      "target_id": "wikipedia-440578",
+      "main_cards": 2,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 3,
+      "rationale": "Puzzle di Game Freak legato ai personaggi Nintendo, qui descritto in sole due card."
+    },
+    {
+      "target_id": "alisia-dragoon",
+      "main_cards": 2,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 3,
+      "rationale": "Titolo di rilievo del catalogo Mega Drive per il sistema di fulmini e creature."
+    }
+  ],
+  "editorial_review": {
+    "english_first": true,
+    "languages": [
+      "en",
+      "it",
+      "fr",
+      "de",
+      "es"
+    ],
+    "entry_count": 10,
+    "main_card_count_per_language": 29,
+    "feature_card_count_per_language": 0,
+    "card_count_per_language": 29,
+    "checks": [
+      "Inglese completo salvato prima dei quattro adattamenti; sommariEN33–39parole.",
+      "Rilette tutte le29card nelle cinque lingue; conservati nomi, titoli musicali, piattaforme, date e quantità salvo correzioni motivate nell’audit.",
+      "Controllati cinque livelliGradius,tre configurazioni per ciascuna categoria,volumi3/4,otto direzioniCastlevania,tre tesoriKidIcarus,6,5milioniZelda,650.000SaGa e quattro creatureAlisia.",
+      "Preservati tutti i dati del numero400:132pagine,33anni,oltre50pagine,quindici membri della redazione e attribuzione della copertina.",
+      "Distinti lanci originali,regioni,riedizioni e data bibliografica di una rivista. Nessuna biografia da riallineare a una nascita.",
+      "Preservata la precisione annuale1992 di AlisiaDragoon già motivata nell’INPUT: uscita nordamericana anteriore a quella giapponese. Non sovrascritta con il solo giorno giapponese.",
+      "Conservate le attribuzioni preesistenti aKonami eKasatani senza dichiarare nuove consultazioni delle fonti già verificate nell’INPUT.",
+      "Titoli principali e tutti gliID invariati; sottotitoli descrittivi adattati; nessunHTML oMarkdown nei campi.",
+      "INPUT,TEMPLATE,fonti,licenze,crediti,URL,categorie,immagini,musica evideo originali immutati."
+    ],
+    "limits": "Ricerca mirata, non verifica universale. Il conflitto sul mese di vendita del primoHobbyConsolas resta documentato con precisione annuale sicura. Nove richieste di ampliamento e una card sulla ricezione priva di dettagli richiedono materiale ulteriore. Completamento riferito alle card deltemplate in cinque lingue.",
+    "root_review": {
+      "reviewed_at": "2026-10-30T01:08:42.690675+00:00",
+      "scope": "Confronto mirato SOURCE/EN/IT di Castlevania, Final Fantasy Legend III e Yoshi, oltre al controllo delle segnalazioni numeriche. Ripristinato in cinque lingue il riferimento alla console Nintendo a 16 bit, presente nel materiale originale. Controllati i dati della card HobbyConsolas n. 400 e la distinzione fra anno del numero e data di vendita proposta nell’audit.",
+      "changes": [
+        {
+          "target_id": "super-castlevania-iv",
+          "language": "en",
+          "card_id": "main:0",
+          "field": "text",
+          "before": "Konami released Super Castlevania IV for the Japanese Super Famicom on October 31, 1991. Simon Belmont returns to confront Dracula, travelling through forests, ruins and caverns on his approach to the castle. This familiar vampire hunt gives the game a clear destination while leaving room to explore Simon’s movements and the spaces he must cross.",
+          "after": "Konami released Super Castlevania IV for Nintendo’s 16-bit Super Famicom in Japan on October 31, 1991. Simon Belmont returns to confront Dracula, travelling through forests, ruins and caverns on his approach to the castle. This familiar vampire hunt gives the game a clear destination while leaving room to explore Simon’s movements and the spaces he must cross."
+        },
+        {
+          "target_id": "super-castlevania-iv",
+          "language": "it",
+          "card_id": "main:0",
+          "field": "text",
+          "before": "Konami pubblicò Super Castlevania IV per Super Famicom in Giappone il 31 ottobre 1991. Simon Belmont torna ad affrontare Dracula e raggiunge il castello attraversando foreste, rovine e caverne. La consueta caccia al vampiro dà al viaggio una meta precisa, lasciando spazio alle possibilità di movimento di Simon e agli ambienti che deve attraversare.",
+          "after": "Konami pubblicò Super Castlevania IV in Giappone il 31 ottobre 1991 per Super Famicom, la console a 16 bit di Nintendo. Simon Belmont torna ad affrontare Dracula e raggiunge il castello attraversando foreste, rovine e caverne. La consueta caccia al vampiro dà al viaggio una meta precisa, lasciando spazio alle possibilità di movimento di Simon e agli ambienti che deve attraversare."
+        },
+        {
+          "target_id": "super-castlevania-iv",
+          "language": "fr",
+          "card_id": "main:0",
+          "field": "text",
+          "before": "Konami sort Super Castlevania IV au Japon sur Super Famicom le 31 octobre 1991. Simon Belmont revient affronter Dracula et traverse des forêts, des ruines et des cavernes avant d’atteindre le château. Cette chasse au vampire donne au voyage une destination familière, tout en laissant le jeu développer les mouvements de Simon et les espaces qu’il doit parcourir.",
+          "after": "Konami sort Super Castlevania IV au Japon le 31 octobre 1991 sur Super Famicom, la console 16 bits de Nintendo. Simon Belmont revient affronter Dracula et traverse des forêts, des ruines et des cavernes avant d’atteindre le château. Cette chasse au vampire donne au voyage une destination familière, tout en laissant le jeu développer les mouvements de Simon et les espaces qu’il doit parcourir."
+        },
+        {
+          "target_id": "super-castlevania-iv",
+          "language": "de",
+          "card_id": "main:0",
+          "field": "text",
+          "before": "Konami veröffentlichte Super Castlevania IV am 31. Oktober 1991 in Japan für das Super Famicom. Simon Belmont zieht erneut gegen Dracula und durchquert auf dem Weg zum Schloss Wälder, Ruinen und Höhlen. Die vertraute Vampirjagd gibt der Reise ein klares Ziel. Zugleich lässt sie Raum für Simons Bewegungsmöglichkeiten und die Gestaltung der Orte, die er überwinden muss.",
+          "after": "Konami veröffentlichte Super Castlevania IV am 31. Oktober 1991 in Japan für Nintendos 16-Bit-Konsole Super Famicom. Simon Belmont zieht erneut gegen Dracula und durchquert auf dem Weg zum Schloss Wälder, Ruinen und Höhlen. Die vertraute Vampirjagd gibt der Reise ein klares Ziel. Zugleich lässt sie Raum für Simons Bewegungsmöglichkeiten und die Gestaltung der Orte, die er überwinden muss."
+        },
+        {
+          "target_id": "super-castlevania-iv",
+          "language": "es",
+          "card_id": "main:0",
+          "field": "text",
+          "before": "Konami publicó Super Castlevania IV en Japón para Super Famicom el 31 de octubre de 1991. Simon Belmont vuelve a enfrentarse a Dracula y atraviesa bosques, ruinas y cavernas antes de alcanzar el castillo. La conocida caza del vampiro da al viaje un destino claro y deja espacio para explorar los movimientos de Simon y los lugares que debe recorrer.",
+          "after": "Konami publicó Super Castlevania IV en Japón el 31 de octubre de 1991 para Super Famicom, la consola de 16 bits de Nintendo. Simon Belmont vuelve a enfrentarse a Dracula y atraviesa bosques, ruinas y cavernas antes de alcanzar el castillo. La conocida caza del vampiro da al viaje un destino claro y deja espacio para explorar los movimientos de Simon y los lugares que debe recorrer."
+        }
+      ],
+      "limitation": "Confronto editoriale mirato con il materiale fornito; non è dichiarata una seconda verifica esterna universale."
+    }
+  },
+  "validation": {
+    "valid": true,
+    "batch_id": "040-catalog",
+    "completed": true,
+    "entry_count": 10,
+    "card_count_per_language": 29,
+    "language_count": 5,
+    "translated_card_count": 145,
+    "entry_card_counts": {
+      "workbook-08-09-gradius-the-interstellar-assault": 4,
+      "wikipedia-3021662": 3,
+      "hobbyconsolas-magazine": 3,
+      "super-castlevania-iv": 3,
+      "kid-icarus-of-myths-and-monsters-1991": 3,
+      "wikipedia-165820": 3,
+      "ninja-gaiden-shadow-1991": 3,
+      "wikipedia-2063476": 3,
+      "wikipedia-440578": 2,
+      "alisia-dragoon": 2
+    },
+    "issue_counts": {
+      "workbook-08-09-gradius-the-interstellar-assault": 1,
+      "wikipedia-3021662": 2,
+      "hobbyconsolas-magazine": 1,
+      "super-castlevania-iv": 1,
+      "kid-icarus-of-myths-and-monsters-1991": 1,
+      "wikipedia-165820": 1,
+      "ninja-gaiden-shadow-1991": 1,
+      "wikipedia-2063476": 1,
+      "wikipedia-440578": 1,
+      "alisia-dragoon": 1
+    },
+    "summary_checks": [
+      {
+        "entry_id": "workbook-08-09-gradius-the-interstellar-assault",
+        "feature_id": null,
+        "english_summary_words": 33
+      },
+      {
+        "entry_id": "wikipedia-3021662",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "hobbyconsolas-magazine",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "super-castlevania-iv",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "kid-icarus-of-myths-and-monsters-1991",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "wikipedia-165820",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "ninja-gaiden-shadow-1991",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "wikipedia-2063476",
+        "feature_id": null,
+        "english_summary_words": 39
+      },
+      {
+        "entry_id": "wikipedia-440578",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "alisia-dragoon",
+        "feature_id": null,
+        "english_summary_words": 36
+      }
+    ],
+    "editorial_review": [],
+    "failures": []
+  },
+  "output_sha256": "42d15af3041ceaf3a8a8f3467a3432ed66a1fcf9196cd62e05d1cf75899a0820"
+}

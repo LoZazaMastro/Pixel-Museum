@@ -1,0 +1,796 @@
+{
+  "schema": "pixel-museum-editorial-input-v1",
+  "batch_id": "031-catalog",
+  "source_file": "content/catalog.json",
+  "source_sha256": "0b077b3f8628f921ab84574d286f9d9943fb8ae6acb8f136ffadde6e01cae241",
+  "entries": [
+    {
+      "entry_id": "hardware-power-glove",
+      "kind": "hardware",
+      "year_context_only": 1989,
+      "date_context_only": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": "North America"
+      },
+      "event_semantics": "",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "Power Glove",
+        "subtitle": "A controller you could wear",
+        "summary": "Mattel brought hand tracking to the NES in 1989.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "The hand becomes an input",
+            "text": "Mattel's Power Glove combined finger sensors, hand tracking and a keypad on the wrist. Introduced in 1989 for the NES, it offered a striking alternative to holding a controller: movements and finger bends could become game inputs."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "A promise with limits",
+            "text": "The affordable consumer device was much simpler than the professional DataGlove that inspired it. Its futuristic appearance and publicity promised more natural play, but accuracy and usability limited that promise. It remains a memorable early experiment in wearable game control."
+          }
+        ],
+        "sources": [
+          "https://www.acmi.net.au/works/99483--power-glove-nes/",
+          "https://collection.powerhouse.com.au/object/166845",
+          "https://library.gamehistory.org/repositories/2/archival_objects/17456"
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "simcity",
+      "kind": "game",
+      "year_context_only": 1989,
+      "date_context_only": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "SimCity",
+        "subtitle": "The city is the toy",
+        "summary": "Will Wright's design made building and watching a system respond an activity worth doing for its own sake.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "A city made of connected systems",
+            "text": "Will Wright found that making maps could be as engaging as playing across them. SimCity grew from that discovery into an open-ended urban simulation. Roads, land use, services and money form a network of consequences rather than a fixed path to a final level."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "The assumptions inside the model",
+            "text": "SimCity links visible roads and buildings to less visible quantities such as pollution, crime and traffic. Changes to construction and services affect those layers, which in turn alter how the city develops. Understanding the model means watching those responses and learning which parts of urban life its rules represent."
+          }
+        ],
+        "sources": [
+          {
+            "title": "SimCity",
+            "url": "https://www.museumofplay.org/games/simcity/",
+            "publisher": "The Strong National Museum of Play"
+          }
+        ]
+      },
+      "features": [
+        {
+          "feature_id": "feature-will-wright-simulation",
+          "title": "People inside the model",
+          "subtitle": "",
+          "summary": "A simulation's makers shape its rules.",
+          "cards": [
+            {
+              "card_id": "feature:feature-will-wright-simulation:0",
+              "original_index": 0,
+              "heading": "Design begins with an activity",
+              "text": "Will Wright found a useful design question in Christopher Alexander's architecture: what are people trying to do inside this place? In a 2008 interview, he described learning from an approach that began with activities, groups and their needs rather than a building's outward form. A room could be understood through the interactions it encouraged. Transferred to a game, that question changes what construction means. The player is arranging conditions for simulated inhabitants, not simply selecting an attractive shape to place on an empty map."
+            },
+            {
+              "card_id": "feature:feature-will-wright-simulation:1",
+              "original_index": 1,
+              "heading": "The house answers through its residents",
+              "text": "Wright described The Sims as having begun with a house and people whose responses evaluated it. Their needs made the arrangement consequential. Yet he also recognised players who used cheats to build without the usual financial constraints, alongside those who preferred following the rules. These are different relationships with the same software. His comparison with a toy leaves room for both, rather than assuming everybody wants the designer's preferred challenge. Constructing something and testing it need not always be pursued in identical ways."
+            },
+            {
+              "card_id": "feature:feature-will-wright-simulation:2",
+              "original_index": 2,
+              "heading": "A test city isolates a problem",
+              "text": "Wright described SimCity as visible roads and buildings over data layers for pollution, crime and traffic. The team built test cities to isolate expected behaviours: a problem should grow in one place or spread in a particular direction. Once those responses worked as intended, they adjusted restrictions and the degree of influence available to the player."
+            },
+            {
+              "card_id": "feature:feature-will-wright-simulation:3",
+              "original_index": 3,
+              "heading": "The public face is not the team",
+              "text": "Wright described little involvement in SimCity 3000 and its successors beyond playing and commenting on them. He also highlighted Lucy Bradshaw's organisational work, which he felt received too little credit. Programming, testing and coordination remained essential as later teams developed the series beyond its original designer's direct work."
+            }
+          ],
+          "sources": [
+            {
+              "id": "wrighticon08",
+              "title": "Will Wright interview",
+              "url": "https://www.iconeye.com/back-issues/will-wright-interview-3",
+              "publisher": "William Wiles and Will Wright / ICON",
+              "source_type": "Primary designer interview; condensed February 2008 print edition, full transcript 13 May 2008",
+              "locator": "Christopher Alexander's interaction-oriented architecture; households as feedback; toy/rule choices",
+              "checked": "2026-10-21",
+              "rights": "Bibliographic reference only; underlying articles, art, images, game footage and recordings retain their respective rights.",
+              "story_paragraphs": [
+                0,
+                1
+              ],
+              "paragraph_locators": {
+                "0": "ICON questions inspiration and manifestation: Christopher Alexander, anthropology and designing for human interaction",
+                "1": "ICON manifestation and open-ended-game questions: residents as evaluation, cheats versus respecting rule structure"
+              }
+            },
+            {
+              "id": "wrightjuba12",
+              "title": "Reflecting On Maxis: A Will Wright Interview",
+              "url": "https://gameinformer.com/b/features/archive/2012/11/01/will-wright-interview.aspx",
+              "publisher": "Joe Juba and Will Wright / Game Informer",
+              "source_type": "Primary designer interview, 1 November 2012",
+              "locator": "Geographic data layers and test patterns; limited later SimCity role; Lucy Bradshaw and management credit",
+              "checked": "2026-10-21",
+              "rights": "Bibliographic reference only; underlying articles, art, images, game footage and recordings retain their respective rights.",
+              "story_paragraphs": [
+                2,
+                3
+              ],
+              "paragraph_locators": {
+                "2": "Game Informer simulation-complexity questions: geographic layers,10–20 test patterns and staged tuning",
+                "3": "Game Informer sequel and individual-creator questions: little SimCity3000 involvement and Lucy Bradshaw's organisation"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entry_id": "tectoy",
+      "kind": "technology",
+      "year_context_only": 1989,
+      "date_context_only": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "Tectoy and the Master System",
+        "subtitle": "A platform's history changes with its geography",
+        "summary": "Sega's Brazilian partner helped give familiar hardware a different cultural life.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Sega reaches Brazilian households",
+            "text": "Tectoy brought its first videogame console to Brazil in 1989, following an earlier partnership with Sega in electronic toys. Local manufacturing, distribution and communication shaped how Sega's machines reached Brazilian households."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Hardware has more than one timeline",
+            "text": "The Master System's Brazilian life continued beyond its period as Sega's leading console in other markets. Local manufacturing and distribution kept it available to new households. Its history therefore follows a different schedule in Brazil, where familiar hardware continued to support games and audiences after newer machines appeared elsewhere."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Tectoy — our history",
+            "url": "https://www.loja.tectoy.com.br/quem-somos/",
+            "publisher": "Tectoy"
+          }
+        ]
+      },
+      "features": [
+        {
+          "feature_id": "feature-tectoy-localization",
+          "title": "Making a game belong locally",
+          "subtitle": "",
+          "summary": "Localisation connects software, characters and players.",
+          "cards": [
+            {
+              "card_id": "feature:feature-tectoy-localization:0",
+              "original_index": 0,
+              "heading": "A public around the machine",
+              "text": "After its first Brazilian console launch in 1989, Tectoy adapted imported software for local players. Manufacturing and distribution brought the machines into shops, while translation and licensed characters helped make particular games familiar. This work required agreements with rights holders and changes that could still fit the original programs."
+            },
+            {
+              "card_id": "feature:feature-tectoy-localization:1",
+              "original_index": 1,
+              "heading": "A rabbit instead of a sword",
+              "text": "Stefano Arnhold's account of Mônica no Castelo do Dragão makes one negotiation concrete. Tectoy licensed the comic character from Mauricio de Sousa's studio to adapt Wonder Boy. But Mônica could not simply inherit the original protagonist's sword. Replacing it with her blue stuffed rabbit, Sansão, reconciled the game action with the character's identity. The adaptation had to remain playable and recognisable at once. Permission concerned the behaviour depicted on screen, not just a logo or a translated title attached to otherwise unchanged software."
+            },
+            {
+              "card_id": "feature:feature-tectoy-localization:2",
+              "original_index": 2,
+              "heading": "Drawing the change",
+              "text": "Alexandre Pagano recalled characters being drawn on squared paper and rebuilt frame by frame with tools made by Tectoy's engineers. Choosing a suitable game also meant deciding which story and characters could be adapted within the licence. Each replacement had to remain legible in motion and fit the space available in the original graphics."
+            },
+            {
+              "card_id": "feature:feature-tectoy-localization:3",
+              "original_index": 3,
+              "heading": "From answering to adapting",
+              "text": "Pagano began answering players' letters and telephone questions in 1990 before moving into specialist game work and development. He later recalled insisting that Phantasy Star needed translation to sell in Brazil. Helping players through a difficult game and making its text understandable became connected parts of his work."
+            }
+          ],
+          "sources": [
+            {
+              "id": "tectoy-history",
+              "title": "Quem somos",
+              "url": "https://www.loja.tectoy.com.br/quem-somos/",
+              "publisher": "Tectoy / specific corporate history and chronology page",
+              "source_type": "primary_corporate_history",
+              "locator": "Company history/timeline: founding, manufacture/distribution context and the 1989 first console launch. No current promotional quality claims adopted.",
+              "checked": "2026-10-21",
+              "rights": "Bibliographic reference only. The narrative is original and contains no direct quotations. Public access does not supply image, artwork, game-data or recording reproduction rights.",
+              "story_paragraphs": [
+                0
+              ]
+            },
+            {
+              "id": "arnhold15",
+              "title": "Interview: Stefano Arnhold (Tec Toy)",
+              "url": "https://www.sega-16.com/2015/11/interview-stefano-arnhold-tectoy/",
+              "publisher": "Stefano Arnhold interviewed by Sebastian Sponsel / Sega-16, 16 November 2015",
+              "source_type": "primary_participant_interview",
+              "locator": "Questions on the Sega partnership and Master System introduction: direct Japanese partnership, local Manaus manufacturing, distribution and support. Question on Wonder Boy/Mônica conversions: Mauricio de Sousa licensing and replacing the sword with Sansão.",
+              "checked": "2026-10-21",
+              "rights": "Bibliographic reference only. The narrative is original and contains no direct quotations. Public access does not supply image, artwork, game-data or recording reproduction rights.",
+              "story_paragraphs": [
+                0,
+                1
+              ],
+              "paragraph_locators": {
+                "0": "Questions on the Sega partnership and Master System introduction: direct Japanese partnership, local Manaus manufacturing, distribution and support.",
+                "1": "Question on Wonder Boy/Mônica conversions: Mauricio de Sousa licensing and replacing the sword with Sansão."
+              }
+            },
+            {
+              "id": "pagano16",
+              "title": "Entrevista: Alexandre Pagano da Tec Toy",
+              "url": "https://qgmaster.blogspot.com/2016/07/entrevista-alexandre-pagano-da-tectoy_31.html",
+              "publisher": "Alexandre Pagano interviewed by Rodrigo / QG Master, 31 July 2016",
+              "source_type": "primary_participant_interview",
+              "locator": "Questions on Mônica adaptations and O Resgate: squared-paper drawings, frame replacement, engineering tools and licensing constraints. Opening career questions: 1990 letters/Hot-Line and later specialisation; Phantasy Star translation question.",
+              "checked": "2026-10-21",
+              "rights": "Bibliographic reference only. The narrative is original and contains no direct quotations. Public access does not supply image, artwork, game-data or recording reproduction rights.",
+              "story_paragraphs": [
+                2,
+                3
+              ],
+              "paragraph_locators": {
+                "2": "Questions on Mônica adaptations and O Resgate: squared-paper drawings, frame replacement, engineering tools and licensing constraints.",
+                "3": "Opening career questions: 1990 letters/Hot-Line and later specialisation; Phantasy Star translation question."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entry_id": "wikipedia-10673574",
+      "kind": "game",
+      "year_context_only": 1989,
+      "date_context_only": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Regional and platform release dates may differ. Where shown, the exact day is taken only from the article release infobox.",
+      "main": {
+        "feature_id": null,
+        "title": "Golden Axe",
+        "subtitle": "",
+        "summary": "Golden Axe is Sega's 1989 arcade beat 'em up, set in a medieval fantasy world where three warriors oppose Death Adder.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Golden Axe",
+            "text": "Golden Axe is Sega's 1989 side-scrolling arcade beat 'em up, which began a series of fantasy action games. Three warriors fight through a medieval world to recover the legendary Golden Axe from Death Adder. Weapons and screen-clearing magic give each hero different ways to confront his forces."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "The design",
+            "text": "Golden Axe is a side-scrolling arcade beat 'em up game released in 1989 by Sega. Makoto Uchida was the primary developer of the game and was also responsible for the creation of Altered Beast. The game places the player in control of one of three warriors, each bent on revenge against the vile dictator Death Adder. Death Adder has taken over the once peaceful land of Yuria and murdered their friend and partner, Alex. Several ports of the game were created, most notably for the Mega Drive/Genesis and Master System. Several sequels followed."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Golden Axe",
+            "text": "The game focuses on three heroes. One of them is a battle-axe-wielding dwarf, Gilius Thunderhead, from the mines of Wolud, whose twin brother was killed by the soldiers of Death Adder. Another is a male barbarian, Ax Battler, wielding a two-handed broadsword, looking for revenge for the murder of his mother. The last is a longsword-wielding amazon, Tyris Flare, whose parents were killed by Death Adder."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "Golden Axe",
+            "text": "Progress is made through the game by hacking and slashing your way through Adder's forces. Aiding the characters in this quest is their ability to cast spells that hurt all enemies on the screen. The force of this magic depends on the number of \"bars\" of magic power currently available.  The bars are filled by collecting blue 'magic potions' found throughout the game. The male warrior Ax, limited to 4 bars, can cast Earth spells. The dwarf Gilius, limited to 3 bars, casts lightning spells. The female warrior Tyris can cast devastating fire magic, but her most powerful spell costs 6 bars."
+          },
+          {
+            "card_id": "main:4",
+            "original_index": 4,
+            "heading": "Golden Axe II and spell books",
+            "text": "Each of the heroes from the first game returns to battle the forces of evil villain Dark Guld in this sequel. While Golden Axe II was a Mega Drive/Genesis exclusive from a development point of view, it saw limited arcade exposure in the MegaPlay series of arcade machines. Released in 1991, the game featured new magic for each of the heroes, with the characteristic magic pots from the first game replaced by spell books this time around."
+          },
+          {
+            "card_id": "main:5",
+            "original_index": 5,
+            "heading": "A sequel under production pressure",
+            "text": "Many video game magazine editors of the time expressed that the game was very likely rushed into production to give Sega another popular title to enable the Mega Drive/Genesis to compete with its new rival, the Super NES. In most respects, this sequel was essentially the same as the original, though it had new sprites for enemy characters and new levels.  Many fans were disappointed with this title as they were expecting more than a rehash of the first title. However, the title had the virtue of not straying too far from a successful formula and was still quite popular upon its release."
+          },
+          {
+            "card_id": "main:6",
+            "original_index": 6,
+            "heading": "Golden Axe",
+            "text": "In 1992, Sega released Golden Axe: The Revenge of Death Adder in arcades. Despite its popularity, the game remained an arcade exclusive up until its appearance in 2020 on the Astro City Mini and Arcade1Up's smaller scale recreation of the original arcade cabinet."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Golden Axe - article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1375220637",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Article contributors and history",
+            "url": "https://en.wikipedia.org/wiki/Golden_Axe?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          },
+          {
+            "title": "Golden Axe: original game cover",
+            "url": "https://www.igdb.com/games/golden-axe",
+            "publisher": "Game imagery: respective publisher and rights holders."
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-1180594",
+      "kind": "game",
+      "year_context_only": 1989,
+      "date_context_only": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Reference article prose reproduced under its stated licence. Year comes from the article's release-year category; regional/port dates may differ.",
+      "main": {
+        "feature_id": null,
+        "title": "Stunt Car Racer",
+        "subtitle": "",
+        "summary": "Stunt Car Racer (published as Stunt Track Racer in the US) is a racing video game developed by Geoff Crammond.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "",
+            "text": "Stunt Car Racer (published as Stunt Track Racer in the US) is a racing video game developed by Geoff Crammond. Versions for the Amiga, Atari ST, Commodore 64, MS-DOS, and ZX Spectrum were published in 1989 by MicroProse, under their MicroStyle and MicroPlay labels in the UK and in the US, respectively. An Amstrad CPC port followed in 1990. Two players race each other on an elevated track, with ramps they must correctly drive off as the main obstacle."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "",
+            "text": "The game was released to critical acclaim. The Commodore 64 version's use of 3D vector graphics was met with critical enthusiasm, which was unusual for a game for that platform."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "",
+            "text": "The game differs from other racing games in that the races take place on an elevated race track, with nothing to stop the player from accidentally driving off the side. Most race tracks in the game have gaps in them, which players can fall into. If this occurs then the player's vehicle is hoisted back onto the track (by a nearby crane), costing valuable time. Turbo can be used to make a car go faster, but it can only be used for a limited amount of time in each race."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "",
+            "text": "The single-player game consists of a league table which is split into four divisions of three drivers each, making a total of twelve racers including the human player. There are two racing tracks in each division making it a total of eight tracks in the game. The tracks in division four (the first division) are easy, but the tracks get progressively more difficult and dangerous with each division. The player's objective is to reach, and subsequently win, division one. There are four races in a season, and each driver will race the other two drivers in both of the tracks in the division. Each race is run over three laps. Two points are awarded to the winner of each race and one point is awarded to the racer with the fastest lap time. At the end of each season, the top racer of each division is promoted to the next higher division while the driver in last place will be relegated."
+          },
+          {
+            "card_id": "main:4",
+            "original_index": 4,
+            "heading": "",
+            "text": "Damage to the player's car occurs when the player lands too hard on the track after driving over a crest too fast, crashes into a wall, falls into a gap in the track, or hits the opponent's car. If the damage, which is indicated by a crack in the frame at the top of the screen, reaches a certain level, the vehicle is deemed to be wrecked and the driver loses the race instantly. A particularly hard crash will also make holes representing structural damage appear in the frame above the windshield. Holes remain on the car for the rest of the season and increase the rate at which the crack in the frame advances."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Stunt Car Racer - article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1376683609",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/Stunt_Car_Racer?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          },
+          {
+            "title": "1989 video games - release-year category",
+            "url": "https://en.wikipedia.org/wiki/Category:1989_video_games",
+            "publisher": "English Wikipedia contributors"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-1545317",
+      "kind": "game",
+      "year_context_only": 1989,
+      "date_context_only": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Reference article prose reproduced under its stated licence. Year comes from the article's release-year category; regional/port dates may differ.",
+      "main": {
+        "feature_id": null,
+        "title": "It Came from the Desert",
+        "subtitle": "",
+        "summary": "It Came from the Desert is a 1989 action-adventure game by Cinemaware.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "",
+            "text": "It Came from the Desert is a 1989 action-adventure game by Cinemaware. It was originally released for the Amiga, but later ported to MS-DOS, as well as released in distinctly different forms to consoles. The TurboGrafx-16 release is different from the computer versions, in terms of gameplay and presentation. An expansion, Antheads: It Came from the Desert II, was released in 1990."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "",
+            "text": "The game is inspired by dozens of 1950s monster movies especially the 1954 mutant-ant classic Them!, with the title referencing the 1953 horror film, It Came from Outer Space. The game is a non-linear combination of dialogue boxes and several types of action scenes, typical of contemporary Cinemaware releases."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "",
+            "text": "It Came from the Desert combines point-and-click investigation with first-person and overhead action. Progress depends on exploring within a time limit and gathering evidence, with less emphasis on conventional puzzle solving."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "",
+            "text": "The player assumes the role of Dr. Greg Bradley who comes to remote Lizard Breath, California on June 1, 1951. As a geologist, he wants to study a meteor crash site somewhere in the desert south-west of the small town. Early in the game he learns that the radiation of the meteor has enlarged a local ant population to an enormous size, however few take his observations seriously. Worried that the ants will soon multiply and spread, he must work against a ticking clock and devise a plan to stop the ants from terrorizing the world. In order to succeed the player must visit many locations ranging from mines, farms, a pub, an airfield, a local radio station and others to find evidence of the ants, then convince townsfolk and authorities of impending doom. At the same time the player must contain the ant infestation."
+          },
+          {
+            "card_id": "main:4",
+            "original_index": 4,
+            "heading": "",
+            "text": "Only in using every resource available, from workers to the tanks and fighter jets of the National Guard, will the player be able to take the fight to the giant ants."
+          },
+          {
+            "card_id": "main:5",
+            "original_index": 5,
+            "heading": "",
+            "text": "Mechanically, It Came From the Desert can be considered real-time. Waiting, sleeping (at home or in a hospital bed) and driving around consume time. As it turns out, the player has a fixed amount of in-game days (15 days, ending with June 15) to succeed. If Bradley fails by this date, the ants will spread, which results in a gloomy ending. To reach a good ending, the player must locate the ant colony and kill the queen ant."
+          },
+          {
+            "card_id": "main:6",
+            "original_index": 6,
+            "heading": "",
+            "text": "It Came From the Desert was originally released for the Amiga in 1989 and then was ported to several other popular systems of the era. In early 1991, Cinemaware released a version for MS-DOS (ported by Level 9 Computing in a final attempt to stay in business before they ceased operations in June of that year). This version was, apart from minor palette differences, identical to the original."
+          }
+        ],
+        "sources": [
+          {
+            "title": "It Came from the Desert - article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1341538875",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/It_Came_from_the_Desert?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          },
+          {
+            "title": "1989 video games - release-year category",
+            "url": "https://en.wikipedia.org/wiki/Category:1989_video_games",
+            "publisher": "English Wikipedia contributors"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-2055888",
+      "kind": "game",
+      "year_context_only": 1989,
+      "date_context_only": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Reference article introduction reproduced under its stated licence. Year comes from the article's release-year category; regional/port dates may differ.",
+      "main": {
+        "feature_id": null,
+        "title": "Wonder Boy III: The Dragon's Trap",
+        "subtitle": "",
+        "summary": "Wonder Boy III: The Dragon's Trap is a platforming action-adventure video game developed by Westone as part of Sega's Wonder Boy series.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "",
+            "text": "Wonder Boy III: The Dragon's Trap is a platforming action-adventure video game developed by Westone as part of Sega's Wonder Boy series. It was published by Sega in 1989 for the Master System in the US and Europe. It did not reach Japan until its Game Gear port in 1992, localized as Monster World II: The Dragon's Trap. It was ported by Hudson Soft and released in 1991 for the TurboGrafx-16/PC Engine under the name Dragon's Curse. It was also ported in 1993 by Brazilian company Tec Toy under the title Turma da Mônica em o Resgate, with the game retooled to include characters from Brazilian comic book series Monica's Gang (Turma da Mônica). A remake developed by Lizardcube and published by DotEmu, titled Wonder Boy: The Dragon's Trap, was released in April 2017."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "",
+            "text": "The game takes place after the events of Wonder Boy in Monster Land, in which Wonder Boy has been cursed by the Mecha Dragon and must locate the Salamander Cross to lift it. The game is nonlinear and features varying landscapes in which players must navigate. Players find items and clues needed to access different parts of Monster Land, and they can transform into other forms and gain different abilities."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "",
+            "text": "Wonder Boy III: The Dragon's Trap received wide acclaim from gaming magazines upon its release. It was praised for its colorful and cartoon-like graphics, rich sound and diverse sound effects, and varied and addictive gameplay. Criticisms include sprite flickering in the Master System version as well as slippery controls. It won Electronic Gaming Monthly's \"Best Game of the Year\" award for the Master System in 1989. Reviews from gaming magazines have described the game as one of the best Master System and 8-bit titles of that era."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Wonder Boy III: The Dragon's Trap — article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1379658078",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "1989 in video games — annual context",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1375109782",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/Wonder_Boy_III:_The_Dragon%27s_Trap?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-2130020",
+      "kind": "game",
+      "year_context_only": 1989,
+      "date_context_only": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Reference article introduction reproduced under its stated licence. Year comes from the article's release-year category; regional/port dates may differ.",
+      "main": {
+        "feature_id": null,
+        "title": "Xenon 2: Megablast",
+        "subtitle": "",
+        "summary": "Xenon 2: Megablast is a 1989 shoot 'em up video game developed by The Bitmap Brothers and published by Image Works for the Amiga and Atari ST.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "",
+            "text": "Xenon 2: Megablast is a 1989 shoot 'em up video game developed by The Bitmap Brothers and published by Image Works for the Amiga and Atari ST. It was later converted to the Master System, PC-98, X68000, Mega Drive, Commodore CDTV, Game Boy, Acorn Archimedes and Atari Jaguar platforms. The game is a sequel to Xenon and takes place a millennium after the previous title. The goal of the game is to destroy a series of bombs planted throughout history by the Xenites, the vengeful antagonists of the first game."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "",
+            "text": "Xenon 2: Megablast is the third major video game release by The Bitmap Brothers. Its subtitle is derived from the Bomb the Bass track \"Megablast (Hip Hop on Precinct 13)\", which serves as the game's theme music. The original release of Xenon 2: Megablast was met with critical acclaim and commercial success, with reviewers praising the detailed visuals, addictive gameplay, variety of weapons and innovative soundtrack."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Xenon 2: Megablast — article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1376955499",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "1989 in video games — annual context",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1375109782",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/Xenon_2:_Megablast?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-3683525",
+      "kind": "game",
+      "year_context_only": 1989,
+      "date_context_only": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Reference article introduction reproduced under its stated licence. Year comes from the article's release-year category; regional/port dates may differ.",
+      "main": {
+        "feature_id": null,
+        "title": "Baby Boomer",
+        "subtitle": "",
+        "summary": "Baby Boomer is a 1989 light gun shooter developed by Color Dreams for the Nintendo Entertainment System (NES).",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "",
+            "text": "Baby Boomer is a 1989 light gun shooter developed by Color Dreams for the Nintendo Entertainment System (NES). As the first game released by Color Dreams, its cartridge is not approved or licensed by Nintendo. To bypass the console's 10NES lockout chip, the game uses a distinct baby blue cartridge casing with a voltage-spike circuit. The player uses the Zapper to protect a crawling infant from hazards across scrolling levels that range from suburban backyards to the pits of Hell."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "",
+            "text": "Retrospective reception has been heavily negative, citing broken hit detection, unfair difficulty, and polarized comparisons to Nintendo's early Zapper game, Gumshoe (1986). The A.V. Club ranked it as the worst Zapper game ever released. A sequel titled Baby Boomer 2: 35 Years Too Soon was released in 2024 for modern platforms."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Baby Boomer (video game) — article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1361930581",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "2024 in video games — annual context",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1367907116",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/Baby_Boomer_(video_game)?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-5067243",
+      "kind": "game",
+      "year_context_only": 1989,
+      "date_context_only": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Reference article prose reproduced under its stated licence. Year comes from the article's release-year category; regional/port dates may differ.",
+      "main": {
+        "feature_id": null,
+        "title": "Indianapolis 500: The Simulation",
+        "subtitle": "",
+        "summary": "Indianapolis 500: The Simulation is a racing video game developed by Papyrus Design Group and published in 1989 for MS-DOS.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Papyrus begins at Indianapolis",
+            "text": "Indianapolis 500: The Simulation is a racing video game developed by Papyrus Design Group and published in 1989 for MS-DOS. An Amiga version followed in 1990.  It was the first game developed by the organisation that would later become iRacing."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Simulating the 1989 starting grid",
+            "text": "The game attempts to be a full simulation of the Indianapolis 500 race. Races are from a first-person perspective. There is a replay mode which uses different camera angles. Indy 500 allows realistically setting-up the car, which affects how it handles. The field and qualifying order are true to the 1989 Indianapolis 500 starting grid, with one exception: the player's car, numbered 17, replaces Car #29 of Rich Vogler, who qualified in 33rd and last place."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Practice and four-lap qualifying",
+            "text": "There are also practice and qualifying settings. Practice enables car setups to be altered and tested in real time. Choosing not to participate in the qualifying session results in one starting at the back of the field. The qualifying session requires four laps to be completed, with the mean value of the four lap times determining the qualifying position.  No car damage can occur during a Practice session, although other cars may be present on the track and their wreckage remains on the track if the player's car collides with them at any point. Car damage can occur during qualifying sessions."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "Three cars and cockpit instruments",
+            "text": "The available cars are a yellow Penske-Chevrolet, a red Lola-Buick, or a blue March-Cosworth, with the Penske having the fastest default setup (but if one sets the car up well, any of the above racecars can compete effectively). Various settings can be changed during Practice from menus associated with Function keys F3–F10. One's own car is always numbered 17."
+          },
+          {
+            "card_id": "main:4",
+            "original_index": 4,
+            "heading": "Rob Hubbard at Electronic Arts",
+            "text": "Indy 500's theme music was produced by Rob Hubbard, who at the time was new to Electronic Arts as a music director."
+          },
+          {
+            "card_id": "main:5",
+            "original_index": 5,
+            "heading": "Testing the car setup",
+            "text": "A wide and realistic variety of car settings can be altered during Practice in order to change car performance. In Practice mode, changes take immediate effect, making comparisons between even the slightest changes straightforward, and any number of \"testing\" laps can be driven (all of which are timed, again helping comparisons to be made). During Qualifying and Race sessions, all settings except Turboboost and the anti-roll bars can only be altered during a pit stop, and some settings are unchangeable even then."
+          },
+          {
+            "card_id": "main:6",
+            "original_index": 6,
+            "heading": "Six cameras and twenty-second replays",
+            "text": "Six camera angles are available: In-Car, Behind, Track, TV, Sky and Leader/Crash. The replay mode offers the chance to review the previous 20 seconds of racing. If an accident occurs, the Leader/Crash camera shows the crashed car. Leader/Crash camera is not available during practice and qualifying."
+          },
+          {
+            "card_id": "main:7",
+            "original_index": 7,
+            "heading": "Crashes and yellow flags",
+            "text": "The 32 computer-controlled cars can crash at any point in the race, or retire with mechanical problems during pit stops. In a 10-lap race, a crash causes a yellow flag to flash briefly in the top left of the screen, but all cars continue racing at full speed as if still under \"green-flag\" conditions. In all other race distances, yellow flags flash, cars slow down and are forbidden from passing until the incident is cleared. A crashed car typically stays on the circuit for 2–3 laps before being cleared, after which green flags flash as the leader exits turn 4, signaling that cars may continue racing. No yellow flags are shown if one's own car crashes, unless other cars hit the wreckage. During a yellow flag period, speeds are restricted to approximately 90 mph (against a typical race pace of up to 230 mph)."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Indianapolis 500: The Simulation - article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1365120341",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/Indianapolis_500:_The_Simulation?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          },
+          {
+            "title": "1989 video games - release-year category",
+            "url": "https://en.wikipedia.org/wiki/Category:1989_video_games",
+            "publisher": "English Wikipedia contributors"
+          }
+        ]
+      },
+      "features": []
+    }
+  ]
+}

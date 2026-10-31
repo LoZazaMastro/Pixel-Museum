@@ -1,0 +1,741 @@
+{
+  "batch_id": "072-catalog",
+  "status": "completed",
+  "sources": [
+    {
+      "source_id": "dune-contemporary",
+      "url": "https://web.archive.org/web/20000412172836/http://pc.ign.com/news/4729.html",
+      "title": "Dune 2000 — notizia del 4 settembre 1998",
+      "publisher": "IGN; dichiarazione diretta di Westwood",
+      "accessed_at": "2026-10-30",
+      "scope": "Westwood informa IGN che il gioco dovrebbe essere disponibile nei negozi quel giorno.",
+      "limitation": "Articolo contemporaneo letto integralmente. La formulazione è una previsione di disponibilità comunicata dall’editore, non il resoconto di una vendita osservata. Non basta a certificare il primo giorno esatto."
+    },
+    {
+      "source_id": "dune-releases",
+      "url": "https://www.mobygames.com/game/331/dune-2000/releases/",
+      "title": "Dune 2000 — releases",
+      "publisher": "MobyGames",
+      "accessed_at": "2026-10-30",
+      "scope": "La scheda indicizzata colloca Windows negli Stati Uniti il 4 settembre 1998; separa altre regioni.",
+      "limitation": "Catalogo secondario. Usato insieme alla notizia contemporanea per il contesto regionale e mensile, senza trasformare il giorno riportato in una verifica primaria."
+    },
+    {
+      "source_id": "dune-newsletter",
+      "url": "https://groups.google.com/g/alt.games.tiberian-sun/c/9o0uSkH4N8k",
+      "title": "Westwood newsletter, 9 ottobre 1998",
+      "publisher": "Westwood; copia ripubblicata su Usenet",
+      "accessed_at": "2026-10-30",
+      "scope": "L’estratto indicizzato parla di Dune 2000 come già uscito in Nord America e dei primi giorni di vendita.",
+      "limitation": "Letto l’estratto indicizzato, non il messaggio integrale. Conferma uno stato di disponibilità successivo; non identifica da solo il primo giorno."
+    },
+    {
+      "source_id": "spyro-official",
+      "url": "https://blog.playstation.com/2023/09/13/spyro-at-25-insomniac-games-and-toys-for-bob-celebrate-25-years-of-spyro-the-dragon/",
+      "title": "Spyro at 25: Insomniac Games and Toys for Bob celebrate 25 years of Spyro the Dragon",
+      "publisher": "Kenny Lennon, Activision, PlayStation Blog, 13 settembre 2023",
+      "accessed_at": "2026-10-30",
+      "scope": "Indica 9 settembre 1998 e raccoglie testimonianze dirette di Ted Price e Brian Hastings su Disruptor, l’idea di Craig Stitt e il pubblico del nuovo gioco.",
+      "limitation": "Fonte ufficiale retrospettiva letta integralmente. Non viene usata come verifica universale di ogni voce del cast o del totale di vendite già fornito. La regione nordamericana è coerente con la confezione statunitense identificata nell’INPUT."
+    },
+    {
+      "source_id": "pokemon-original",
+      "url": "https://www.nintendo.co.jp/n02/dmg/apsj/index.html",
+      "title": "Pocket Monsters Pikachu — pagina originale",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "Indica 12 settembre 1998 in Giappone; Pikachu segue il giocatore, mostra espressioni e usa la voce dell’anime. Precisa l’incompatibilità di collegamento con le edizioni straniere.",
+      "limitation": "Pagina ufficiale letta. La compatibilità viene circoscritta alle edizioni giapponesi; nessuna nuova meccanica ricavata per analogia con le edizioni internazionali."
+    },
+    {
+      "source_id": "pokemon-interview",
+      "url": "https://www.nintendo.co.jp/ds/interview/ipkj/vol1/index2.html",
+      "title": "Iwata Asks — Pokémon HeartGold and SoulSilver, volume 1, sezione 2",
+      "publisher": "Nintendo; interviste allo staff",
+      "accessed_at": "2026-10-30",
+      "scope": "La discussione e le note editoriali collegano il valore del Pokémon al seguito a Yellow; le note datano anime giapponese al 1997 e film a luglio 1998.",
+      "limitation": "Letta la pagina. La nota esplicativa su Yellow non è trasformata in una citazione pronunciata da Iwata. Il primato del Pokémon al seguito resta interno alla serie."
+    },
+    {
+      "source_id": "dwm-square",
+      "url": "https://www.jp.square-enix.com/company/ja/news/2019/html/ed9cb6f40b2a58c6167712f4124b1494.html",
+      "title": "Dragon Quest Monsters Terry no Wonderland RETRO — uscita Nintendo Switch",
+      "publisher": "Square Enix, 17 settembre 2019",
+      "accessed_at": "2026-10-30",
+      "scope": "Annuncia la disponibilità quel giorno di RETRO; ricorda l’originale del 25 settembre 1998, il rifacimento 3D del 2012 e SP del 2018.",
+      "limitation": "Comunicato ufficiale letto. Sono distinte le edizioni, evitando di presentare RETRO come conversione del rifacimento tridimensionale."
+    },
+    {
+      "source_id": "dwm-nintendo-retro",
+      "url": "https://www.nintendo.com/jp/topics/article/1e53ea46-cdf8-11e9-b641-063b7ac45a6d",
+      "title": "Dragon Quest Monsters Terry no Wonderland RETRO arriva su Nintendo Switch",
+      "publisher": "Nintendo, 17 settembre 2019",
+      "accessed_at": "2026-10-30",
+      "scope": "Identifica RETRO come conversione dell’originale Game Boy.",
+      "limitation": "Pagina ufficiale letta. Non attesta l’uscita occidentale dell’edizione originale."
+    },
+    {
+      "source_id": "dwm-sp",
+      "url": "https://web.jp.square-enix.com/topics/archive/582/",
+      "title": "Dragon Quest Monsters Terry no Wonderland SP — disponibile dal 7 novembre 2018",
+      "publisher": "Square Enix",
+      "accessed_at": "2026-10-30",
+      "scope": "L’estratto indicizzato riporta la disponibilità per smartphone il 7 novembre 2018.",
+      "limitation": "La pagina aperta restituisce soltanto navigazione; è stato letto l’estratto indicizzato. Nel testo si conserva la precisione mensile già presente, senza aggiungere il giorno."
+    },
+    {
+      "source_id": "dwm-releases",
+      "url": "https://gamefaqs.gamespot.com/gbc/197155-dragon-warrior-monsters/data",
+      "title": "Dragon Warrior Monsters — release data",
+      "publisher": "GameFAQs",
+      "accessed_at": "2026-10-30",
+      "scope": "Distingue Giappone 25 settembre 1998, Stati Uniti gennaio 2000 ed Europa 28 gennaio 2000.",
+      "limitation": "Catalogo secondario indicizzato, coerente con gli anni regionali dell’INPUT e con MobyGames. Alcune ricostruzioni secondarie riportano invece 1999 per l’Europa: non dichiarata unanimità delle fonti né verifica primaria del giorno europeo."
+    },
+    {
+      "source_id": "tetris-nintendo",
+      "url": "https://www.nintendo.com/it-it/Giochi/Game-Boy/Tetris-DX-266230.html",
+      "title": "Tetris DX",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "Descrive Ultra con limite di tre minuti, 40 Lines, gioco contro il computer e collegamento fra due Game Boy.",
+      "limitation": "Pagina ufficiale letta. La sua data europea non viene trasferita alla collocazione giapponese del lotto."
+    },
+    {
+      "source_id": "tetris-manual",
+      "url": "https://www.thegameisafootarcade.com/wp-content/uploads/2017/06/Tetris-DX-Game-Manual.pdf",
+      "title": "Tetris DX — manuale originale",
+      "publisher": "Nintendo, 1998; scansione conservata da The Game Is Afoot Arcade",
+      "accessed_at": "2026-10-30",
+      "scope": "L’estratto indicizzato della sezione File Select precisa che le informazioni delle partite Guest non vengono salvate.",
+      "limitation": "Letto l’estratto testuale indicizzato. L’apertura del PDF non espone testo leggibile e non è stata verificata visivamente la scansione; non si dichiara lettura integrale del manuale."
+    },
+    {
+      "source_id": "tetris-box",
+      "url": "https://gamefaqs.gamespot.com/gbc/198943-tetris-dx/data",
+      "title": "Tetris DX — testo della confezione",
+      "publisher": "Nintendo; trascrizione su GameFAQs",
+      "accessed_at": "2026-10-30",
+      "scope": "Il testo originale della confezione, riportato nell’estratto indicizzato, indica tre file di gioco per statistiche e record.",
+      "limitation": "Trascrizione del testo originale ospitata da un sito secondario, corroborata dalla medesima trascrizione Gematsu. Non è stata vista direttamente l’immagine della confezione."
+    },
+    {
+      "source_id": "legaia-game-script",
+      "url": "https://gamefaqs.gamespot.com/ps/197766-legend-of-legaia/faqs/62504",
+      "title": "Legend of Legaia — Game Script, sezione About AP",
+      "publisher": "Testo del gioco; trascrizione di Sise_Neg su GameFAQs",
+      "accessed_at": "2026-10-30",
+      "scope": "Il tutorial elenca recupero automatico degli AP a ogni turno, comando Spirit e danni subiti.",
+      "limitation": "Letto il brano indicizzato; l’apertura integrale è bloccata. È una trascrizione del testo di gioco, non visione diretta del tutorial. Corregge la formulazione più limitante che attribuiva il recupero agli attacchi ordinari."
+    },
+    {
+      "source_id": "legaia-releases",
+      "url": "https://www.mobygames.com/game/5840/legend-of-legaia/releases/",
+      "title": "Legend of Legaia — releases",
+      "publisher": "MobyGames",
+      "accessed_at": "2026-10-30",
+      "scope": "Distingue uscita giapponese nel 1998, statunitense nel 1999 ed europea nel 2000.",
+      "limitation": "Catalogo secondario indicizzato; riscontro circoscritto agli anni già presenti. Nessun nuovo giorno regionale aggiunto alla prosa."
+    },
+    {
+      "source_id": "fallout-contemporary",
+      "url": "https://web.archive.org/web/20000610191645/http://headline.gamespot.com/news/98_10/26_fallout/index.html",
+      "title": "Fallout 2 Ships",
+      "publisher": "GameSpot, 26 ottobre 1998; comunicazione di Black Isle",
+      "accessed_at": "2026-10-30",
+      "scope": "Il pezzo riferisce spedizioni effettuate e prevede la presenza sugli scaffali nazionali giovedì 29 ottobre.",
+      "limitation": "Articolo contemporaneo letto integralmente. La data prevista di presenza in negozio non è una prova consuntiva del primo acquisto o della disponibilità in ogni regione."
+    },
+    {
+      "source_id": "fallout-avellone",
+      "url": "https://app2top.com/industry/evening-digest-lords-mobile-earnings-fallout-2-birthday-final-fantasy-15-analysis-130789.html",
+      "title": "Evening Digest — Fallout 2 birthday",
+      "publisher": "App2Top, 2018; riporta un ricordo di Chris Avellone",
+      "accessed_at": "2026-10-30",
+      "scope": "L’estratto indicizzato riporta un messaggio di Avellone sul ventesimo anniversario di Fallout 2 il 30 settembre 2018.",
+      "limitation": "Testimonianza retrospettiva dello sviluppatore riportata da una fonte secondaria; non è stato aperto il messaggio originale. La ricorrenza riguarda espressamente Fallout 2 e non viene confusa con l’anniversario del primo Fallout."
+    },
+    {
+      "source_id": "fallout-bethesda",
+      "url": "https://bethesda.net/en-US/news/fallout25-presents-the-fallout-timeline",
+      "title": "Fallout25 presents the Fallout timeline",
+      "publisher": "Bethesda",
+      "accessed_at": "2026-10-30",
+      "scope": "La cronologia del titolare attuale distingue Fallout 2 (1998, Interplay Entertainment).",
+      "limitation": "Fonte ufficiale controllata dal coordinatore del progetto; sostiene l’anno e non specifica mese o giorno. Il ricordo di Avellone e la previsione commerciale contemporanea restano discordanti sul giorno."
+    }
+  ],
+  "decisions": [
+    {
+      "target_id": "daily-09-04",
+      "problem": "Bibliografia ereditata di Tony Hawk e giorno 4 settembre ricavabile da una previsione di disponibilità, non da prova consuntiva.",
+      "conclusion": "La voce resta Dune 2000, come il contenuto fornito. Si propone settembre 1998 per Windows in Nord America. I due riferimenti Activision sono fuori tema; la loro sostituzione e la verifica delle associazioni media richiedono il passaggio separato di integrazione.",
+      "source_ids": [
+        "dune-contemporary",
+        "dune-releases",
+        "dune-newsletter"
+      ],
+      "text_applied": "Card main:0 nelle cinque lingue; proposta di metadati mensile e issue concreto per bibliografia/media. Nessuna modifica alle fonti e ai file originali."
+    },
+    {
+      "target_id": "wikipedia-1353538",
+      "problem": "La collocazione del 9 settembre 1998 non specifica regione.",
+      "conclusion": "La retrospettiva ufficiale conferma il giorno; indicare il contesto nordamericano dell’edizione originale identificata nell’INPUT, senza supporre contemporaneità europea.",
+      "source_ids": [
+        "spyro-official"
+      ],
+      "text_applied": "Proposta di regione; prosa con il 1998 già fornito. Conservati tutti i nomi e i crediti, distinguendo Alex Hastings, Craig Stitt, Stewart Copeland e i quattro interpreti."
+    },
+    {
+      "target_id": "workbook-09-12-pokemon-giallo",
+      "problem": "Gli scambi con Red, Green e Blue possono essere intesi come compatibilità indiscriminata fra lingue; la data giapponese manca di regione.",
+      "conclusion": "12 settembre 1998 in Giappone. Gli scambi descritti riguardano le edizioni giapponesi compatibili. Il Pokémon al seguito viene presentato nel contesto della serie.",
+      "source_ids": [
+        "pokemon-original",
+        "pokemon-interview"
+      ],
+      "text_applied": "Card main:0 e main:5 nelle cinque lingue; proposta di regione. Preservato il nesso con anime, film e successive discussioni HeartGold/SoulSilver senza citazioni inventate."
+    },
+    {
+      "target_id": "wikipedia-10550623",
+      "problem": "Le riedizioni smartphone 2018 e Switch 2019 rischiano di apparire conversioni indistinte del rifacimento 3DS.",
+      "conclusion": "Distinguere Terry no Wonderland 3D, uscito soltanto in Giappone nel maggio 2012; SP per smartphone nel novembre 2018; RETRO per Switch nel settembre 2019, conversione dell’originale Game Boy. Per l’originale il 25 settembre 1998 è giapponese.",
+      "source_ids": [
+        "dwm-square",
+        "dwm-nintendo-retro",
+        "dwm-sp",
+        "dwm-releases"
+      ],
+      "text_applied": "Card main:2 e sommari nelle cinque lingue; proposta di regione. Dragon Quest Monsters i resta un’edizione mobile del 2002, senza dedurne una conversione identica."
+    },
+    {
+      "target_id": "tetris-dx-1998",
+      "problem": "L’INPUT descrive Ultra con due minuti e quattro profili salvati.",
+      "conclusion": "Ultra dura tre minuti. Sono disponibili tre file salvati e una modalità Guest che non conserva i risultati.",
+      "source_ids": [
+        "tetris-nintendo",
+        "tetris-manual",
+        "tetris-box"
+      ],
+      "text_applied": "Card main:1 e main:2 nelle cinque lingue. Le due quantità errate sono corrette senza cambiare numero o ordine delle card."
+    },
+    {
+      "target_id": "legend-of-legaia-1998",
+      "problem": "La descrizione degli AP può restringere il recupero agli attacchi ordinari invece di includere il passare dei turni.",
+      "conclusion": "Il tutorial del gioco elenca recupero automatico a ogni turno, uso di Spirit e danni subiti. Questa risorsa resta distinta dagli MP spesi per le evocazioni.",
+      "source_ids": [
+        "legaia-game-script"
+      ],
+      "text_applied": "Card main:2 nelle cinque lingue, correzione registrata prima/dopo. Conservata la distinta uscita occidentale nel 1999 e 2000 sulla base del materiale e del riscontro regionale."
+    },
+    {
+      "target_id": "wikipedia-578709",
+      "problem": "Il 29 ottobre dell’INPUT deriva da una previsione di vendita dopo spedizioni; un ricordo di Avellone indica invece il 30 settembre.",
+      "conclusion": "Il primo giorno non è dimostrato in modo concorde. La precisione sostenuta in comune è il 1998, confermato anche dalla cronologia ufficiale Bethesda. Non proclamare risolto il conflitto, non trasformare le spedizioni in release e non usare la data corrente di Steam come prova della prima uscita.",
+      "source_ids": [
+        "fallout-contemporary",
+        "fallout-avellone",
+        "fallout-bethesda"
+      ],
+      "text_applied": "La prosa conserva soltanto il 1998 nelle cinque lingue; proposta di collocazione annuale per l’edizione Windows statunitense. Il giudizio di grandezza è attribuito a classifiche successive, come il materiale fornito, e non espresso come superlativo redazionale."
+    }
+  ],
+  "metadata_proposals": [
+    {
+      "target_id": "daily-09-04",
+      "field": "timeline_release",
+      "original": {
+        "year": 1998,
+        "month": 9,
+        "day": 4,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed": {
+        "year": 1998,
+        "month": 9,
+        "day": null,
+        "precision": "month",
+        "region": "North America",
+        "version": "Windows"
+      },
+      "source_ids": [
+        "dune-contemporary",
+        "dune-releases"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "wikipedia-1353538",
+      "field": "timeline_release",
+      "original": {
+        "year": 1998,
+        "month": 9,
+        "day": 9,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed": {
+        "year": 1998,
+        "month": 9,
+        "day": 9,
+        "precision": "day",
+        "region": "North America",
+        "version": "PlayStation"
+      },
+      "source_ids": [
+        "spyro-official"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "workbook-09-12-pokemon-giallo",
+      "field": "timeline_release",
+      "original": {
+        "year": 1998,
+        "month": 9,
+        "day": 12,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed": {
+        "year": 1998,
+        "month": 9,
+        "day": 12,
+        "precision": "day",
+        "region": "Japan",
+        "version": "Game Boy"
+      },
+      "source_ids": [
+        "pokemon-original"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "wikipedia-10550623",
+      "field": "timeline_release",
+      "original": {
+        "year": 1998,
+        "month": 9,
+        "day": 25,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed": {
+        "year": 1998,
+        "month": 9,
+        "day": 25,
+        "precision": "day",
+        "region": "Japan",
+        "version": "Game Boy / Game Boy Color compatible"
+      },
+      "source_ids": [
+        "dwm-square"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "wikipedia-578709",
+      "field": "timeline_release",
+      "original": {
+        "year": 1998,
+        "month": 10,
+        "day": 29,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed": {
+        "year": 1998,
+        "month": null,
+        "day": null,
+        "precision": "year",
+        "region": "United States",
+        "version": "Windows"
+      },
+      "source_ids": [
+        "fallout-contemporary",
+        "fallout-avellone",
+        "fallout-bethesda"
+      ],
+      "applied_to_catalog": false
+    }
+  ],
+  "expansion_assessments": [
+    {
+      "target_id": "daily-09-04",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 1,
+      "rationale": "Priorità editoriale per il ritorno a Dune II nella storia della strategia in tempo reale."
+    },
+    {
+      "target_id": "wikipedia-1353538",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Priorità editoriale per l’avvio di Spyro e la costruzione dei mondi tridimensionali su PlayStation."
+    },
+    {
+      "target_id": "workbook-09-12-pokemon-giallo",
+      "main_cards": 7,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 0,
+      "rationale": "Priorità editoriale per l’incontro fra Pokémon, animazione e gioco portatile."
+    },
+    {
+      "target_id": "wikipedia-10550623",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Priorità editoriale per l’avvio del ramo di Dragon Quest dedicato ai mostri."
+    },
+    {
+      "target_id": "medievil-1998",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Priorità editoriale per l’identità del primo MediEvil fra avventura e umorismo macabro."
+    },
+    {
+      "target_id": "body-harvest-1998",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Priorità editoriale per la sperimentazione di DMA Design con paesaggi aperti e veicoli."
+    },
+    {
+      "target_id": "tetris-dx-1998",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Priorità editoriale per l’adattamento di Tetris al Game Boy Color."
+    },
+    {
+      "target_id": "space-station-silicon-valley-1998",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Priorità editoriale per la sperimentazione di DMA Design con il controllo di corpi diversi."
+    },
+    {
+      "target_id": "legend-of-legaia-1998",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "required_main_cards": null,
+      "missing_cards": 0,
+      "rationale": "Voce specialistica di gioco di ruolo con tre nuclei autonomi; non selezionata qui fra le opere di massima priorità alle quali applicare automaticamente cinque card."
+    },
+    {
+      "target_id": "wikipedia-578709",
+      "main_cards": 2,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 3,
+      "rationale": "Priorità editoriale per lo sviluppo del gioco di ruolo postapocalittico e la continuità con Fallout."
+    }
+  ],
+  "editorial_review": {
+    "english_first": true,
+    "five_languages_reviewed": [
+      "en",
+      "it",
+      "fr",
+      "de",
+      "es"
+    ],
+    "checks": [
+      "10 voci, 34 card principali e nessuna feature per lingua: 170 versioni complete",
+      "Inglese salvato prima degli adattamenti; checkpoint separati per tutte le lingue e rilettura prima della pubblicazione",
+      "Sommari inglesi di 36–42 parole; titoli propri, ID e ordine invariati",
+      "Preservati tutti i nuclei informativi, i nomi del cast Spyro, le edizioni Dragon Warrior Monsters, le sette card Pokémon e i ruoli di sviluppo e musica",
+      "Verificati tre minuti Ultra, tre salvataggi più Guest, due diverse risorse in Legaia e separazione delle date di spedizione dalle release",
+      "Riletti italiano idiomatico, genere e terminologia tedesca, formulazioni francesi e spagnole; diciannove modifiche registrate nel riesame",
+      "Otto voci prioritarie richiedono sedici card principali aggiuntive; Pokémon Yellow raggiunge già la soglia con sette card",
+      "Un issue aggiuntivo riguarda esclusivamente l’integrazione bibliografica e media di Dune 2000"
+    ],
+    "external_verification_limit": "Ricerca mirata sui problemi emersi, non certificazione universale dei contenuti. Per MediEvil, Body Harvest e Space Station Silicon Valley il materiale è stato riscritto senza affermare nuove verifiche esterne. Per Dune 2000 è proposta precisione mensile; per Fallout 2 annuale, con discordanza del giorno ancora documentata. Le trascrizioni e gli estratti indicizzati sono distinti dalle pagine lette integralmente e dalle scansioni non viste. I metadati, le fonti, le attribuzioni, le licenze, i media e il catalogo originali non sono modificati.",
+    "book_style_references_consulted": false
+  },
+  "review_changes": [
+    {
+      "target_id": "workbook-09-12-pokemon-giallo",
+      "feature_id": null,
+      "card_id": null,
+      "language": "en",
+      "field": "subtitle",
+      "before": "Pikachu walks beside a familiar adventure",
+      "after": "Pikachu follows the player through Kanto"
+    },
+    {
+      "target_id": "wikipedia-10550623",
+      "feature_id": null,
+      "card_id": "main:2",
+      "language": "en",
+      "field": "text",
+      "before": "The remake Dragon Quest Monsters: Terry no Wonderland 3D appeared for Nintendo 3DS in Japan in May 2012. A smartphone version, Dragon Quest Monsters: Terry no Wonderland SP, followed in November 2018. Nintendo Switch received Dragon Quest Monsters: Terry no Wonderland RETRO in September 2019, returning to the original Game Boy game rather than adapting the 3D remake.",
+      "after": "The remake Dragon Quest Monsters: Terry no Wonderland 3D appeared for Nintendo 3DS exclusively in Japan in May 2012. A smartphone version, Dragon Quest Monsters: Terry no Wonderland SP, followed in November 2018. Nintendo Switch received Dragon Quest Monsters: Terry no Wonderland RETRO in September 2019, returning to the original Game Boy game rather than adapting the 3D remake."
+    },
+    {
+      "target_id": "wikipedia-10550623",
+      "feature_id": null,
+      "card_id": "main:2",
+      "language": "en",
+      "field": "text",
+      "before": "The remake Dragon Quest Monsters: Terry no Wonderland 3D appeared for Nintendo 3DS exclusively in Japan in May 2012. A smartphone version, Dragon Quest Monsters: Terry no Wonderland SP, followed in November 2018. Nintendo Switch received Dragon Quest Monsters: Terry no Wonderland RETRO in September 2019, returning to the original Game Boy game rather than adapting the 3D remake.",
+      "after": "The remake Dragon Quest Monsters: Terry no Wonderland 3D appeared for Nintendo 3DS exclusively in Japan in May 2012. A smartphone version, Dragon Quest Monsters: Terry no Wonderland SP, followed in November 2018. Nintendo Switch received Dragon Quest Monsters: Terry no Wonderland RETRO in September 2019, a port of the original Game Boy game."
+    },
+    {
+      "target_id": "wikipedia-10550623",
+      "feature_id": null,
+      "card_id": "main:2",
+      "language": "it",
+      "field": "text",
+      "before": "Il rifacimento Dragon Quest Monsters: Terry no Wonderland 3D esce in Giappone per Nintendo 3DS nel maggio 2012. Nel novembre 2018 segue la versione per smartphone Dragon Quest Monsters: Terry no Wonderland SP. Nel settembre 2019 Nintendo Switch riceve Dragon Quest Monsters: Terry no Wonderland RETRO, conversione del gioco originale per Game Boy.",
+      "after": "Il rifacimento Dragon Quest Monsters: Terry no Wonderland 3D esce soltanto in Giappone per Nintendo 3DS nel maggio 2012. Nel novembre 2018 segue la versione per smartphone Dragon Quest Monsters: Terry no Wonderland SP. Nel settembre 2019 Nintendo Switch riceve Dragon Quest Monsters: Terry no Wonderland RETRO, conversione del gioco originale per Game Boy."
+    },
+    {
+      "target_id": "wikipedia-10550623",
+      "feature_id": null,
+      "card_id": "main:2",
+      "language": "fr",
+      "field": "text",
+      "before": "Le remake Dragon Quest Monsters: Terry no Wonderland 3D paraît au Japon sur Nintendo 3DS en mai 2012. Une version pour smartphones, Dragon Quest Monsters: Terry no Wonderland SP, suit en novembre 2018. Nintendo Switch accueille Dragon Quest Monsters: Terry no Wonderland RETRO en septembre 2019 : il s'agit d'un portage du jeu Game Boy original.",
+      "after": "Le remake Dragon Quest Monsters: Terry no Wonderland 3D paraît uniquement au Japon sur Nintendo 3DS en mai 2012. Une version pour smartphones, Dragon Quest Monsters: Terry no Wonderland SP, suit en novembre 2018. Nintendo Switch accueille Dragon Quest Monsters: Terry no Wonderland RETRO en septembre 2019 : il s'agit d'un portage du jeu Game Boy original."
+    },
+    {
+      "target_id": "wikipedia-10550623",
+      "feature_id": null,
+      "card_id": null,
+      "language": "de",
+      "field": "summary",
+      "before": "Dragon Warrior Monsters eröffnet einen Zweig von Dragon Quest, der sich um Monster und ihre Zucht dreht. Terry und Milly erscheinen vor Dragon Quest VI als Kinder. Auf das ursprüngliche Handheld-Abenteuer folgen Neuauflagen und spätere Rückkehrten zur Game-Boy-Fassung.",
+      "after": "Dragon Warrior Monsters eröffnet einen Zweig von Dragon Quest, der sich um Monster und ihre Zucht dreht. Terry und Milly erscheinen vor Dragon Quest VI als Kinder. Auf das ursprüngliche Handheld-Abenteuer folgen Remakes und spätere Wiederveröffentlichungen der Game-Boy-Fassung."
+    },
+    {
+      "target_id": "wikipedia-1353538",
+      "feature_id": null,
+      "card_id": "main:0",
+      "language": "de",
+      "field": "text",
+      "before": "Spyro the Dragon ist Insomniac Games’ PlayStation-Plattformspiel von 1998, veröffentlicht von Sony Computer Entertainment und der erste Teil der Spyro-Reihe. Der junge violette Drache zieht mit seiner Libellenbegleiterin Sparx durch das Drachenreich, um Gnasty Gnorc zu besiegen. Dieser hat die fünf Heimatwelten der Drachen erobert, die übrigen Drachen in Kristall eingeschlossen und ihren Edelsteinschatz in eine Armee von Handlangern verwandelt.\n\nIn den großen, offenen 3D-Levels sucht man Edelsteine, kristallisierte Drachen und gestohlene Dracheneier. Spyro kann Feuer speien, mit gesenktem Kopf angreifen und im Gleitflug weite Entfernungen zurücklegen. Die passende Fähigkeit hilft ihm, Sammelgegenstände zu erreichen und Gegner zu besiegen.",
+      "after": "Spyro the Dragon ist Insomniac Games’ PlayStation-Plattformspiel von 1998, veröffentlicht von Sony Computer Entertainment und der erste Teil der Spyro-Reihe. Der junge violette Drache zieht gemeinsam mit der Libelle Sparx durch das Drachenreich, um Gnasty Gnorc zu besiegen. Dieser hat die fünf Heimatwelten der Drachen erobert, die übrigen Drachen in Kristall eingeschlossen und ihren Edelsteinschatz in eine Armee von Handlangern verwandelt.\n\nIn den großen, offenen 3D-Levels sucht man Edelsteine, kristallisierte Drachen und gestohlene Dracheneier. Spyro kann Feuer speien, mit gesenktem Kopf angreifen und im Gleitflug weite Entfernungen zurücklegen. Die passende Fähigkeit hilft ihm, Sammelgegenstände zu erreichen und Gegner zu besiegen."
+    },
+    {
+      "target_id": "workbook-09-12-pokemon-giallo",
+      "feature_id": null,
+      "card_id": "main:5",
+      "language": "de",
+      "field": "text",
+      "before": "Die japanische Ausgabe behält den Tausch über das Game Link Cable mit den japanischen Fassungen von Red, Green und Blue bei. Ihre Besitzer können deshalb mit der bestehenden Spielergemeinschaft der ersten Generation Pokémon austauschen. Dafür müssen weiterhin zwei Game Boys körperlich miteinander verbunden werden. Die persönliche Begegnung bleibt Teil des Erlebnisses, während Pokémon sich im Fernsehen, in Sammelkarten und weiteren Produkten ausbreitet.",
+      "after": "Die japanische Ausgabe behält den Tausch über das Game Link Cable mit den japanischen Fassungen von Red, Green und Blue bei. Ihre Besitzer können deshalb mit der bestehenden Spielergemeinschaft der ersten Generation Pokémon austauschen. Dafür müssen weiterhin zwei Game Boys direkt per Kabel miteinander verbunden werden. Die persönliche Begegnung bleibt Teil des Erlebnisses, während Pokémon sich im Fernsehen, in Sammelkarten und weiteren Produkten ausbreitet."
+    },
+    {
+      "target_id": "body-harvest-1998",
+      "feature_id": null,
+      "card_id": "main:0",
+      "language": "it",
+      "field": "text",
+      "before": "Body Harvest è l'avventura d'azione di DMA Design per Nintendo 64 con Adam Drake, un soldato che viaggia nel tempo per impedire agli alieni di raccogliere la popolazione terrestre. La campagna attraversa epoche e regioni diverse, fra cui Grecia, Giava e Stati Uniti. In ogni area ci sono persone da proteggere mentre la minaccia si sviluppa. Adam esplora a piedi e si impossessa di veicoli: ogni mezzo utile cambia la velocità di viaggio e le possibilità di affrontare una creatura all'attacco.",
+      "after": "Body Harvest è l'avventura d'azione di DMA Design per Nintendo 64 con Adam Drake, un soldato che viaggia nel tempo per impedire agli alieni di catturare la popolazione terrestre. La campagna attraversa epoche e regioni diverse, fra cui Grecia, Giava e Stati Uniti. In ogni area ci sono persone da proteggere mentre la minaccia si sviluppa. Adam esplora a piedi e si impossessa di veicoli: ogni mezzo utile cambia la velocità di viaggio e le possibilità di affrontare una creatura all'attacco."
+    },
+    {
+      "target_id": "body-harvest-1998",
+      "feature_id": null,
+      "card_id": "main:0",
+      "language": "de",
+      "field": "text",
+      "before": "Body Harvest ist DMA Designs Nintendo-64-Action-Adventure um Adam Drake, einen Soldaten, der durch die Zeit reist, um Außerirdische am Einsammeln der Erdbevölkerung zu hindern. Die Kampagne führt durch verschiedene Epochen und Regionen, darunter Griechenland, Java und die Vereinigten Staaten. In jedem Gebiet müssen Menschen geschützt werden, während sich die Bedrohung entwickelt. Adam erkundet die Umgebung zu Fuß und beschlagnahmt Fahrzeuge. Jede brauchbare Maschine verändert das Reisetempo und die Mittel, mit denen er eine angreifende Kreatur bekämpfen kann.",
+      "after": "Body Harvest ist DMA Designs Nintendo-64-Action-Adventure um Adam Drake, einen Soldaten, der durch die Zeit reist, um Außerirdische daran zu hindern, Menschen von der Erde zu verschleppen. Die Kampagne führt durch verschiedene Epochen und Regionen, darunter Griechenland, Java und die Vereinigten Staaten. In jedem Gebiet müssen Menschen geschützt werden, während sich die Bedrohung entwickelt. Adam erkundet die Umgebung zu Fuß und beschlagnahmt Fahrzeuge. Jede brauchbare Maschine verändert das Reisetempo und die Mittel, mit denen er eine angreifende Kreatur bekämpfen kann."
+    },
+    {
+      "target_id": "wikipedia-1353538",
+      "feature_id": null,
+      "card_id": "main:2",
+      "language": "fr",
+      "field": "text",
+      "before": "Aux côtés de Crash Bandicoot, Spyro aide Sony à toucher les plus jeunes avec un personnage coloré de jeu de plateformes. Les ventes progressent pendant les fêtes de 1998 et finissent par approcher les cinq millions d'exemplaires. Les critiques apprécient les graphismes, les déplacements et la musique, notamment les longues perspectives sur les paysages ; certaines trouvent la difficulté trop douce. Insomniac poursuit avec Ripto's Rage! en 1999 et Year of the Dragon en 2000. Les trois aventures sont refaites ensemble dans Spyro Reignited Trilogy, sorti en 2018.",
+      "after": "Aux côtés de Crash Bandicoot, Spyro aide Sony à toucher les plus jeunes avec un personnage coloré de jeu de plateformes. Les ventes progressent pendant les fêtes de 1998 et finissent par approcher les cinq millions d'exemplaires. Les critiques apprécient les graphismes, les déplacements et la musique, notamment les longues perspectives sur les paysages ; certaines trouvent la difficulté trop faible. Insomniac poursuit avec Ripto's Rage! en 1999 et Year of the Dragon en 2000. Les trois aventures sont refaites ensemble dans Spyro Reignited Trilogy, sorti en 2018."
+    },
+    {
+      "target_id": "wikipedia-1353538",
+      "feature_id": null,
+      "card_id": "main:2",
+      "language": "es",
+      "field": "text",
+      "before": "Junto con Crash Bandicoot, Spyro ayudó a Sony a llegar a jugadores más jóvenes mediante un colorido protagonista de plataformas. Las ventas crecieron durante las fiestas de 1998 y acabaron acercándose a los cinco millones de copias. La crítica elogió los gráficos, el movimiento y la música, en particular las vistas lejanas sobre los paisajes, aunque algunos encontraron la dificultad demasiado suave. Insomniac continuó con Ripto’s Rage! en 1999 y Year of the Dragon en 2000. Las tres aventuras se reconstruyeron juntas en Spyro Reignited Trilogy, publicado en 2018.",
+      "after": "Junto con Crash Bandicoot, Spyro ayudó a Sony a llegar a jugadores más jóvenes mediante un colorido protagonista de plataformas. Las ventas crecieron durante las fiestas de 1998 y acabaron acercándose a los cinco millones de copias. La crítica elogió los gráficos, el movimiento y la música, en particular las vistas lejanas sobre los paisajes, aunque algunos encontraron la dificultad demasiado baja. Insomniac continuó con Ripto’s Rage! en 1999 y Year of the Dragon en 2000. Las tres aventuras se reconstruyeron juntas en Spyro Reignited Trilogy, publicado en 2018."
+    },
+    {
+      "target_id": "legend-of-legaia-1998",
+      "feature_id": null,
+      "card_id": "main:1",
+      "language": "es",
+      "field": "text",
+      "before": "El Tactical Arts System permite componer un ataque a partir de una secuencia de direcciones. Al confirmarla, el personaje ejecuta los golpes; ciertas secuencias activan técnicas más fuertes llamadas Arts. Los órdenes compatibles pueden solaparse y unir técnicas en una combinación más larga. La orden Spirit reduce el daño recibido y prepara un ataque más extenso para el turno siguiente. Defenderse ahora puede crear una oportunidad mejor después. Los encuentros normales permiten aprender las combinaciones mientras se valoran el equipo, la salud y las fuerzas restantes del enemigo.",
+      "after": "El Tactical Arts System permite componer un ataque a partir de una secuencia de direcciones. Al confirmarla, el personaje ejecuta los golpes; ciertas secuencias activan técnicas más fuertes llamadas Arts. Las secuencias compatibles pueden solaparse y unir técnicas en una combinación más larga. La orden Spirit reduce el daño recibido y prepara un ataque más extenso para el turno siguiente. Defenderse ahora puede crear una oportunidad mejor después. Los encuentros normales permiten aprender las combinaciones mientras se valoran el equipo, la salud y las fuerzas restantes del enemigo."
+    },
+    {
+      "target_id": "legend-of-legaia-1998",
+      "feature_id": null,
+      "card_id": null,
+      "language": "it",
+      "field": "summary",
+      "before": "Legend of Legaia segue un gruppo che cerca di risvegliare alberi capaci di disperdere una nebbia distruttiva. Le sequenze di comandi direzionali costruiscono le tecniche di combattimento, mentre le creature compagne offrono un'altra risorsa con cui ricorrere alla magia.",
+      "after": "Legend of Legaia segue un gruppo che cerca di risvegliare alberi capaci di disperdere una nebbia distruttiva. Le sequenze di comandi direzionali costruiscono le tecniche di combattimento, mentre i Ra-Seru danno accesso a un aiuto magico che richiede risorse diverse."
+    },
+    {
+      "target_id": "legend-of-legaia-1998",
+      "feature_id": null,
+      "card_id": "main:2",
+      "language": "en",
+      "field": "text",
+      "before": "The Ra-Seru worn on the party's arms change their attacks and allow them to absorb the essence of certain defeated Seru. Those creatures can then be summoned at a magic-point cost. Arts draw on a separate resource, recovered through ordinary attacks, taking damage or using Spirit, so physical combinations and magical assistance need different preparation. Michiru Ōshima composed the score. North American and European releases followed in 1999 and 2000. Legaia 2: Duel Saga later introduced a separate cast on PlayStation 2, while Vahn's struggle against the Mist remained the centre of the original adventure.",
+      "after": "The Ra-Seru worn on the party's arms change their attacks and allow them to absorb the essence of certain defeated Seru. Those creatures can then be summoned at a magic-point cost. Arts draw on a separate resource, recovered as combat turns pass, when damage is taken and through Spirit, so physical combinations and magical assistance need different preparation. Michiru Ōshima composed the score. North American and European releases followed in 1999 and 2000. Legaia 2: Duel Saga later introduced a separate cast on PlayStation 2, while Vahn's struggle against the Mist remained the centre of the original adventure."
+    },
+    {
+      "target_id": "legend-of-legaia-1998",
+      "feature_id": null,
+      "card_id": "main:2",
+      "language": "it",
+      "field": "text",
+      "before": "I Ra-Seru portati sulle braccia modificano gli attacchi del gruppo e permettono di assorbire l'essenza di alcuni Seru sconfitti. Quelle creature possono poi essere evocate spendendo punti magia. Le Arts impiegano una risorsa diversa, recuperata con attacchi ordinari, danni subiti o il comando Spirit: combinazioni fisiche e aiuto magico richiedono quindi preparazioni distinte. Michiru Ōshima compone la musica. Le uscite nordamericana ed europea seguono nel 1999 e nel 2000. Legaia 2: Duel Saga introduce poi altri protagonisti su PlayStation 2, mentre la lotta di Vahn contro la nebbia resta al centro dell'avventura originale.",
+      "after": "I Ra-Seru portati sulle braccia modificano gli attacchi del gruppo e permettono di assorbire l'essenza di alcuni Seru sconfitti. Quelle creature possono poi essere evocate spendendo punti magia. Le Arts impiegano una risorsa diversa, recuperata con il passare dei turni, i danni subiti e il comando Spirit: combinazioni fisiche e aiuto magico richiedono quindi preparazioni distinte. Michiru Ōshima compone la musica. Le uscite nordamericana ed europea seguono nel 1999 e nel 2000. Legaia 2: Duel Saga introduce poi altri protagonisti su PlayStation 2, mentre la lotta di Vahn contro la nebbia resta al centro dell'avventura originale."
+    },
+    {
+      "target_id": "legend-of-legaia-1998",
+      "feature_id": null,
+      "card_id": "main:2",
+      "language": "fr",
+      "field": "text",
+      "before": "Les Ra-Seru portés sur les bras du groupe modifient ses attaques et permettent d'absorber l'essence de certains Seru vaincus. Ces créatures peuvent ensuite être invoquées en dépensant des points de magie. Les Arts utilisent une autre ressource, récupérée grâce aux attaques ordinaires, aux dégâts subis ou à Spirit. Combinaisons physiques et soutien magique demandent donc des préparations différentes. Michiru Ōshima compose la musique. Les versions nord-américaine et européenne suivent en 1999 et 2000. Legaia 2: Duel Saga introduit ensuite d'autres personnages sur PlayStation 2, tandis que la lutte de Vahn contre la Brume reste au centre de l'aventure originale.",
+      "after": "Les Ra-Seru portés sur les bras du groupe modifient ses attaques et permettent d'absorber l'essence de certains Seru vaincus. Ces créatures peuvent ensuite être invoquées en dépensant des points de magie. Les Arts utilisent une autre ressource, récupérée au fil des tours, en subissant des dégâts et grâce à Spirit. Combinaisons physiques et soutien magique demandent donc des préparations différentes. Michiru Ōshima compose la musique. Les versions nord-américaine et européenne suivent en 1999 et 2000. Legaia 2: Duel Saga introduit ensuite d'autres personnages sur PlayStation 2, tandis que la lutte de Vahn contre la Brume reste au centre de l'aventure originale."
+    },
+    {
+      "target_id": "legend-of-legaia-1998",
+      "feature_id": null,
+      "card_id": "main:2",
+      "language": "de",
+      "field": "text",
+      "before": "Die an den Armen getragenen Ra-Seru verändern die Angriffe der Gruppe und lassen sie die Essenz bestimmter besiegter Seru aufnehmen. Diese Kreaturen können anschließend gegen Magiepunkte herbeigerufen werden. Arts benötigen eine andere Ressource, die durch gewöhnliche Angriffe, erlittenen Schaden oder Spirit zurückgewonnen wird. Körperliche Kombinationen und magische Hilfe verlangen daher unterschiedliche Vorbereitung. Michiru Ōshima komponierte die Musik. Die nordamerikanische und europäische Veröffentlichung folgten 1999 und 2000. Legaia 2: Duel Saga führte später andere Figuren auf PlayStation 2 ein; das ursprüngliche Abenteuer blieb um Vahns Kampf gegen den Nebel aufgebaut.",
+      "after": "Die an den Armen getragenen Ra-Seru verändern die Angriffe der Gruppe und lassen sie die Essenz bestimmter besiegter Seru aufnehmen. Diese Kreaturen können anschließend gegen Magiepunkte herbeigerufen werden. Arts benötigen eine andere Ressource, die im Verlauf der Kampfrunden, durch erlittenen Schaden und mit Spirit zurückgewonnen wird. Körperliche Kombinationen und magische Hilfe verlangen daher unterschiedliche Vorbereitung. Michiru Ōshima komponierte die Musik. Die nordamerikanische und europäische Veröffentlichung folgten 1999 und 2000. Legaia 2: Duel Saga führte später andere Figuren auf PlayStation 2 ein; das ursprüngliche Abenteuer blieb um Vahns Kampf gegen den Nebel aufgebaut."
+    },
+    {
+      "target_id": "legend-of-legaia-1998",
+      "feature_id": null,
+      "card_id": "main:2",
+      "language": "es",
+      "field": "text",
+      "before": "Los Ra-Seru que el grupo lleva en los brazos modifican sus ataques y permiten absorber la esencia de ciertos Seru derrotados. Después se puede invocar a esas criaturas gastando puntos de magia. Las Arts usan otro recurso, recuperado mediante ataques normales, daño recibido o Spirit. Las combinaciones físicas y la ayuda mágica requieren por tanto preparaciones diferentes. Michiru Ōshima compuso la música. Las ediciones norteamericana y europea llegaron en 1999 y 2000. Legaia 2: Duel Saga introdujo después otro reparto en PlayStation 2, mientras la lucha de Vahn contra la Niebla siguió en el centro de la aventura original.",
+      "after": "Los Ra-Seru que el grupo lleva en los brazos modifican sus ataques y permiten absorber la esencia de ciertos Seru derrotados. Después se puede invocar a esas criaturas gastando puntos de magia. Las Arts usan otro recurso, recuperado al pasar los turnos, al recibir daño y mediante Spirit. Las combinaciones físicas y la ayuda mágica requieren por tanto preparaciones diferentes. Michiru Ōshima compuso la música. Las ediciones norteamericana y europea llegaron en 1999 y 2000. Legaia 2: Duel Saga introdujo después otro reparto en PlayStation 2, mientras la lucha de Vahn contra la Niebla siguió en el centro de la aventura original."
+    }
+  ],
+  "validation": {
+    "valid": true,
+    "batch_id": "072-catalog",
+    "completed": true,
+    "entry_count": 10,
+    "card_count_per_language": 34,
+    "language_count": 5,
+    "translated_card_count": 170,
+    "entry_card_counts": {
+      "daily-09-04": 4,
+      "wikipedia-1353538": 3,
+      "workbook-09-12-pokemon-giallo": 7,
+      "wikipedia-10550623": 3,
+      "medievil-1998": 3,
+      "body-harvest-1998": 3,
+      "tetris-dx-1998": 3,
+      "space-station-silicon-valley-1998": 3,
+      "legend-of-legaia-1998": 3,
+      "wikipedia-578709": 2
+    },
+    "issue_counts": {
+      "daily-09-04": 2,
+      "wikipedia-1353538": 1,
+      "workbook-09-12-pokemon-giallo": 0,
+      "wikipedia-10550623": 1,
+      "medievil-1998": 1,
+      "body-harvest-1998": 1,
+      "tetris-dx-1998": 1,
+      "space-station-silicon-valley-1998": 1,
+      "legend-of-legaia-1998": 0,
+      "wikipedia-578709": 1
+    },
+    "summary_checks": [
+      {
+        "entry_id": "daily-09-04",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "wikipedia-1353538",
+        "feature_id": null,
+        "english_summary_words": 39
+      },
+      {
+        "entry_id": "workbook-09-12-pokemon-giallo",
+        "feature_id": null,
+        "english_summary_words": 40
+      },
+      {
+        "entry_id": "wikipedia-10550623",
+        "feature_id": null,
+        "english_summary_words": 42
+      },
+      {
+        "entry_id": "medievil-1998",
+        "feature_id": null,
+        "english_summary_words": 39
+      },
+      {
+        "entry_id": "body-harvest-1998",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "tetris-dx-1998",
+        "feature_id": null,
+        "english_summary_words": 39
+      },
+      {
+        "entry_id": "space-station-silicon-valley-1998",
+        "feature_id": null,
+        "english_summary_words": 39
+      },
+      {
+        "entry_id": "legend-of-legaia-1998",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "wikipedia-578709",
+        "feature_id": null,
+        "english_summary_words": 39
+      }
+    ],
+    "editorial_review": [],
+    "failures": []
+  },
+  "output_sha256": "9325fe84cbe72e84f49d1b59aad7d667960149b0cfcf8603beda83fbc212228e",
+  "root_review": {
+    "automated_flag_review": "Fallout 2 mantiene ottant’anni scritti in lettere, 164 anni e 2241; i cambi di giorno sono documentati, non perdite accidentali. Dune e numeri tridimensionali usano formulazioni verbali."
+  }
+}

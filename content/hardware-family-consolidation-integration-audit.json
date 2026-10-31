@@ -1,0 +1,60 @@
+{
+  "status": "PASS",
+  "candidate_sha256": "cbee7d13a1ca3ce3b55b76e0485ae57bfa7a87d9251ded37a218b4d0b4ae50f8",
+  "aliases": {
+    "workbook-05-13-playstation-portable-psp": "psp",
+    "nes": "famicom"
+  },
+  "consolidations": [
+    {
+      "canonical_id": "psp",
+      "retired_id": "workbook-05-13-playstation-portable-psp",
+      "paragraphs": 6,
+      "feature_paragraphs": 0,
+      "images": 3,
+      "models": [
+        "models/psp.glb"
+      ]
+    },
+    {
+      "canonical_id": "famicom",
+      "retired_id": "nes",
+      "paragraphs": 13,
+      "feature_paragraphs": 4,
+      "images": 9,
+      "models": [
+        "models/famicom.glb",
+        "models/nes.glb"
+      ]
+    }
+  ],
+  "rewritten_references": [
+    {
+      "path": "/18/editorial_features/0/canonical_entry_id",
+      "old": "nes",
+      "value": "famicom"
+    },
+    {
+      "path": "/18/editorial_features/0/related_ids",
+      "old": [
+        "nes"
+      ],
+      "value": [
+        "famicom"
+      ]
+    },
+    {
+      "path": "/1008/related_ids",
+      "old": [
+        "atari-vcs",
+        "carol-shaw",
+        "nes"
+      ],
+      "value": [
+        "atari-vcs",
+        "carol-shaw",
+        "famicom"
+      ]
+    }
+  ]
+}

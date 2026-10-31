@@ -1,0 +1,569 @@
+{
+  "sample_rate": 48000,
+  "channels": 2,
+  "bits": 16,
+  "source": "music/compose_interface.py",
+  "interface_cue_count": 20,
+  "loaded_wav_count": 34,
+  "unchanged_legacy_restart": true,
+  "recommended_ui_bus_gain": 0.18,
+  "soundbank_pitch_jitter": 0,
+  "loudness_method": "Ungated K-weighted 32ms maximum RMS after actual bus gain and typical event gain. Longer signatures are 1.5dB below reference, typing/deletion 0.7dB below. No compressor, gating or limiter. Short key tails avoid overlap at keyboard repeat_interval0.09s.",
+  "clips": [
+    {
+      "file": "focus_01.wav",
+      "seconds": 0.06,
+      "channels": 2,
+      "peak_dbfs": -11.06,
+      "rms_dbfs": -26.16,
+      "sha256": "711dc95a39f013076bf99650f601885e106357a29bc69a23f1f0d78b78aa8b00",
+      "cue": "focus",
+      "variation": 1,
+      "design": "small felt contact with short damped wooden modes",
+      "calibration": {
+        "bus_gain": 0.18,
+        "reference_event_gain": 0.6,
+        "linear_calibration_gain": 1.0,
+        "post_route_k32_dbfs": -42.41
+      }
+    },
+    {
+      "file": "focus_02.wav",
+      "seconds": 0.06,
+      "channels": 2,
+      "peak_dbfs": -10.58,
+      "rms_dbfs": -26.16,
+      "sha256": "59ddf611d5a8e612e687ac613faa8f0f9084fc2fa64557b805f9cb75e6bd429f",
+      "cue": "focus",
+      "variation": 2,
+      "design": "small felt contact with short damped wooden modes",
+      "calibration": {
+        "bus_gain": 0.18,
+        "reference_event_gain": 0.6,
+        "linear_calibration_gain": 1.0569799982702603,
+        "post_route_k32_dbfs": -42.41
+      }
+    },
+    {
+      "file": "focus_03.wav",
+      "seconds": 0.06,
+      "channels": 2,
+      "peak_dbfs": -11.61,
+      "rms_dbfs": -26.21,
+      "sha256": "ca83c753d543e11c4cd2675389aadef9df15751d006f878a917149ba08d1b063",
+      "cue": "focus",
+      "variation": 3,
+      "design": "small felt contact with short damped wooden modes",
+      "calibration": {
+        "bus_gain": 0.18,
+        "reference_event_gain": 0.6,
+        "linear_calibration_gain": 0.9387821698625636,
+        "post_route_k32_dbfs": -42.41
+      }
+    },
+    {
+      "file": "select_01.wav",
+      "seconds": 0.19,
+      "channels": 2,
+      "peak_dbfs": -16.51,
+      "rms_dbfs": -34.81,
+      "sha256": "4233568a6e77a7dd392a359b9d9eae17c66366dd4ae5339e0a6b54c6c167b9af",
+      "cue": "select",
+      "variation": 1,
+      "design": "two tactile contacts and a quiet felt-key bloom",
+      "calibration": {
+        "bus_gain": 0.18,
+        "reference_event_gain": 1.0,
+        "linear_calibration_gain": 0.453041248668769,
+        "post_route_k32_dbfs": -42.41
+      }
+    },
+    {
+      "file": "select_02.wav",
+      "seconds": 0.19,
+      "channels": 2,
+      "peak_dbfs": -15.77,
+      "rms_dbfs": -34.81,
+      "sha256": "0c0951cc6911003519e04304d5aded58052b6d61dec082cc162526a73180521e",
+      "cue": "select",
+      "variation": 2,
+      "design": "two tactile contacts and a quiet felt-key bloom",
+      "calibration": {
+        "bus_gain": 0.18,
+        "reference_event_gain": 1.0,
+        "linear_calibration_gain": 0.49322740010951027,
+        "post_route_k32_dbfs": -42.41
+      }
+    },
+    {
+      "file": "back_01.wav",
+      "seconds": 0.15,
+      "channels": 2,
+      "peak_dbfs": -15.94,
+      "rms_dbfs": -34.34,
+      "sha256": "2e1016112eec9aa93e142a788e5e13175449a96f9bce6b56d41ba17ac952702a",
+      "cue": "back",
+      "variation": 1,
+      "design": "soft return contact followed by a disappearing cloth tail",
+      "calibration": {
+        "bus_gain": 0.18,
+        "reference_event_gain": 1.0,
+        "linear_calibration_gain": 0.4836343611915948,
+        "post_route_k32_dbfs": -42.41
+      }
+    },
+    {
+      "file": "back_02.wav",
+      "seconds": 0.15,
+      "channels": 2,
+      "peak_dbfs": -15.54,
+      "rms_dbfs": -34.31,
+      "sha256": "051a909d14fa1c0c2b7edd53a97cf1b883ac840751c1137af5327634ca9e2f82",
+      "cue": "back",
+      "variation": 2,
+      "design": "soft return contact followed by a disappearing cloth tail",
+      "calibration": {
+        "bus_gain": 0.18,
+        "reference_event_gain": 1.0,
+        "linear_calibration_gain": 0.5066593065111611,
+        "post_route_k32_dbfs": -42.41
+      }
+    },
+    {
+      "file": "tab_01.wav",
+      "seconds": 0.17,
+      "channels": 2,
+      "peak_dbfs": -18.79,
+      "rms_dbfs": -34.32,
+      "sha256": "a9e0e2d1b888f7ba16f8460bf3b3246694b9c2e68cd1e1f46576c463618f2235",
+      "cue": "tab",
+      "variation": 1,
+      "design": "sideways paper-like brush with a compact resonant landing",
+      "calibration": {
+        "bus_gain": 0.18,
+        "reference_event_gain": 1.0,
+        "linear_calibration_gain": 0.3483251511595947,
+        "post_route_k32_dbfs": -42.41
+      }
+    },
+    {
+      "file": "tab_02.wav",
+      "seconds": 0.17,
+      "channels": 2,
+      "peak_dbfs": -20.37,
+      "rms_dbfs": -34.06,
+      "sha256": "80ee1fddaf31b135c4d4caefac15ea27e16d03271446b4a53df07bed8dd8674c",
+      "cue": "tab",
+      "variation": 2,
+      "design": "sideways paper-like brush with a compact resonant landing",
+      "calibration": {
+        "bus_gain": 0.18,
+        "reference_event_gain": 1.0,
+        "linear_calibration_gain": 0.29053995510505504,
+        "post_route_k32_dbfs": -42.41
+      }
+    },
+    {
+      "file": "open_01.wav",
+      "seconds": 0.26,
+      "channels": 2,
+      "peak_dbfs": -19.54,
+      "rms_dbfs": -34.06,
+      "sha256": "4434f2b70c61cf07782f4c896273d667391e93ae54b417eb20c59b4ee06b2d01",
+      "cue": "open",
+      "variation": 1,
+      "design": "rising airy envelope and a warm three-part felt bloom",
+      "calibration": {
+        "bus_gain": 0.18,
+        "reference_event_gain": 1.0,
+        "linear_calibration_gain": 0.31947939910991063,
+        "post_route_k32_dbfs": -42.41
+      }
+    },
+    {
+      "file": "modal_open_01.wav",
+      "seconds": 0.21,
+      "channels": 2,
+      "peak_dbfs": -17.12,
+      "rms_dbfs": -35.59,
+      "sha256": "360c178aa2b8c0974b6fc4dcba00519235aea16900d006dc48a99ff099fa1705",
+      "cue": "modal_open",
+      "variation": 1,
+      "design": "cushioned latch followed by a sheltered interior resonance",
+      "calibration": {
+        "bus_gain": 0.18,
+        "reference_event_gain": 1.0,
+        "linear_calibration_gain": 0.4220705695444405,
+        "post_route_k32_dbfs": -42.41
+      }
+    },
+    {
+      "file": "modal_close_01.wav",
+      "seconds": 0.17,
+      "channels": 2,
+      "peak_dbfs": -19.11,
+      "rms_dbfs": -34.48,
+      "sha256": "654a385223670fe0b7bd0687d0dfe5cbd4b89fda6664b4fea024ac723533a2af",
+      "cue": "modal_close",
+      "variation": 1,
+      "design": "shorter closing contact with a low damping tail",
+      "calibration": {
+        "bus_gain": 0.18,
+        "reference_event_gain": 1.0,
+        "linear_calibration_gain": 0.33575898140231425,
+        "post_route_k32_dbfs": -42.41
+      }
+    },
+    {
+      "file": "toggle_01.wav",
+      "seconds": 0.095,
+      "channels": 2,
+      "peak_dbfs": -16.58,
+      "rms_dbfs": -32.72,
+      "sha256": "905fa70c19e28e222c30e0f497564c85b6a76cd985516718165b7d6e584026ba",
+      "cue": "toggle",
+      "variation": 1,
+      "design": "dry two-part latch with no sustained note",
+      "calibration": {
+        "bus_gain": 0.18,
+        "reference_event_gain": 1.0,
+        "linear_calibration_gain": 0.511149095850516,
+        "post_route_k32_dbfs": -42.41
+      }
+    },
+    {
+      "file": "toggle_02.wav",
+      "seconds": 0.095,
+      "channels": 2,
+      "peak_dbfs": -17.3,
+      "rms_dbfs": -32.66,
+      "sha256": "eb21e73c061fd4276aeacc472efe15b3652723901bef874aa4560f6d42a3e3a8",
+      "cue": "toggle",
+      "variation": 2,
+      "design": "dry two-part latch with no sustained note",
+      "calibration": {
+        "bus_gain": 0.18,
+        "reference_event_gain": 1.0,
+        "linear_calibration_gain": 0.4704928033689332,
+        "post_route_k32_dbfs": -42.41
+      }
+    },
+    {
+      "file": "slider_01.wav",
+      "seconds": 0.05,
+      "channels": 2,
+      "peak_dbfs": -12.4,
+      "rms_dbfs": -26.47,
+      "sha256": "1e340e151faa3add9c5294e139d2b70231363bdd6bc37cd008c26f802b11bd58",
+      "cue": "slider",
+      "variation": 1,
+      "design": "very short restrained granular detent",
+      "calibration": {
+        "bus_gain": 0.18,
+        "reference_event_gain": 0.6,
+        "linear_calibration_gain": 1.0425804808352337,
+        "post_route_k32_dbfs": -42.41
+      }
+    },
+    {
+      "file": "slider_02.wav",
+      "seconds": 0.05,
+      "channels": 2,
+      "peak_dbfs": -13.52,
+      "rms_dbfs": -26.66,
+      "sha256": "53648b128717eb0bd8a552a839a4b6fa97210f59176de69823088b6ffad944be",
+      "cue": "slider",
+      "variation": 2,
+      "design": "very short restrained granular detent",
+      "calibration": {
+        "bus_gain": 0.18,
+        "reference_event_gain": 0.6,
+        "linear_calibration_gain": 0.916524660571988,
+        "post_route_k32_dbfs": -42.41
+      }
+    },
+    {
+      "file": "slider_03.wav",
+      "seconds": 0.05,
+      "channels": 2,
+      "peak_dbfs": -11.72,
+      "rms_dbfs": -26.55,
+      "sha256": "6d966f4538fa23a6e68b7ebd141eabeda5c87bf0bc9bd6d5ff70172b7845b852",
+      "cue": "slider",
+      "variation": 3,
+      "design": "very short restrained granular detent",
+      "calibration": {
+        "bus_gain": 0.18,
+        "reference_event_gain": 0.6,
+        "linear_calibration_gain": 1.1275857553249704,
+        "post_route_k32_dbfs": -42.41
+      }
+    },
+    {
+      "file": "error_01.wav",
+      "seconds": 0.19,
+      "channels": 2,
+      "peak_dbfs": -17.42,
+      "rms_dbfs": -33.72,
+      "sha256": "f39deac7e151296016577ac228b37a49c5b8f0b6a810ad90cfe151dc2d9a980d",
+      "cue": "error",
+      "variation": 1,
+      "design": "low soft double knock, no alarm or abrasive buzzer",
+      "calibration": {
+        "bus_gain": 0.18,
+        "reference_event_gain": 1.0,
+        "linear_calibration_gain": 0.4984264914562481,
+        "post_route_k32_dbfs": -42.41
+      }
+    },
+    {
+      "file": "notify_01.wav",
+      "seconds": 0.54,
+      "channels": 2,
+      "peak_dbfs": -19.14,
+      "rms_dbfs": -35.07,
+      "sha256": "fe9146e86780bf49404e34e53418cca8202c10e2e928d5016c2315fa21815384",
+      "cue": "notify",
+      "variation": 1,
+      "design": "three warm score-aligned partials over a light brushed swell",
+      "calibration": {
+        "bus_gain": 0.18,
+        "reference_event_gain": 1.0,
+        "linear_calibration_gain": 0.3152737053679179,
+        "post_route_k32_dbfs": -43.91
+      }
+    },
+    {
+      "file": "launch_01.wav",
+      "seconds": 0.42,
+      "channels": 2,
+      "peak_dbfs": -20.88,
+      "rms_dbfs": -35.59,
+      "sha256": "e1c12d5d37aa5580eb46390351b600b887f8d50563ded9e25edec082c2e96b63",
+      "cue": "launch",
+      "variation": 1,
+      "design": "a widening air gesture settling into the original felt timbre",
+      "calibration": {
+        "bus_gain": 0.18,
+        "reference_event_gain": 1.0,
+        "linear_calibration_gain": 0.2510304817808543,
+        "post_route_k32_dbfs": -43.91
+      }
+    },
+    {
+      "file": "favorite_on_01.wav",
+      "seconds": 0.3,
+      "channels": 2,
+      "peak_dbfs": -15.02,
+      "rms_dbfs": -37.0,
+      "sha256": "11c688a3abe89270ab3c141d68b231604ef80332921b531c6b14272b16316f80",
+      "cue": "favorite_on",
+      "variation": 1,
+      "design": "a small bright fleck joining a warm contact",
+      "calibration": {
+        "bus_gain": 0.18,
+        "reference_event_gain": 1.0,
+        "linear_calibration_gain": 0.5376668780040538,
+        "post_route_k32_dbfs": -42.41
+      }
+    },
+    {
+      "file": "favorite_off_01.wav",
+      "seconds": 0.23,
+      "channels": 2,
+      "peak_dbfs": -14.98,
+      "rms_dbfs": -36.08,
+      "sha256": "d8e26f3e32d1c4c556bad56b570e93ae86158ff1ee8e4ecabfa77333ad717eca",
+      "cue": "favorite_off",
+      "variation": 1,
+      "design": "the same material with a shorter descending release",
+      "calibration": {
+        "bus_gain": 0.18,
+        "reference_event_gain": 1.0,
+        "linear_calibration_gain": 0.5401055005517996,
+        "post_route_k32_dbfs": -42.41
+      }
+    },
+    {
+      "file": "saved_01.wav",
+      "seconds": 0.31,
+      "channels": 2,
+      "peak_dbfs": -15.71,
+      "rms_dbfs": -36.2,
+      "sha256": "3153ca44a70fa252aa18c36afd76b775f523e5797aae60b752f184a724af5975",
+      "cue": "saved",
+      "variation": 1,
+      "design": "two settled contacts and a stable D/A resonance",
+      "calibration": {
+        "bus_gain": 0.18,
+        "reference_event_gain": 1.0,
+        "linear_calibration_gain": 0.49657724143666,
+        "post_route_k32_dbfs": -42.41
+      }
+    },
+    {
+      "file": "welcome_01.wav",
+      "seconds": 0.76,
+      "channels": 2,
+      "peak_dbfs": -21.39,
+      "rms_dbfs": -34.61,
+      "sha256": "1715bc64e846a2977c107b799bdd52e8280c8a3dfd8e9876630fd7bb19bc4fd5",
+      "cue": "welcome",
+      "variation": 1,
+      "design": "a brief open D-minor/add-nine felt signature",
+      "calibration": {
+        "bus_gain": 0.18,
+        "reference_event_gain": 1.0,
+        "linear_calibration_gain": 0.2435906761117988,
+        "post_route_k32_dbfs": -43.91
+      }
+    },
+    {
+      "file": "resume_01.wav",
+      "seconds": 0.24,
+      "channels": 2,
+      "peak_dbfs": -17.41,
+      "rms_dbfs": -32.48,
+      "sha256": "35cfa5e06401502b2b6c9f97620e6a78a74d66f8604db2129561200d1396a181",
+      "cue": "resume",
+      "variation": 1,
+      "design": "a cushioned forward contact with a small breath of air",
+      "calibration": {
+        "bus_gain": 0.18,
+        "reference_event_gain": 1.0,
+        "linear_calibration_gain": 0.40840998405302203,
+        "post_route_k32_dbfs": -42.41
+      }
+    },
+    {
+      "file": "type_01.wav",
+      "seconds": 0.048,
+      "channels": 2,
+      "peak_dbfs": -29.9,
+      "rms_dbfs": -45.83,
+      "sha256": "376481e742500a7765e941202b098660310e5ce52bb86d1c24c54ed01427f4ba",
+      "cue": "type",
+      "variation": 1,
+      "design": "small felt keycap contact, short enough to avoid stacking at fast typing rates",
+      "calibration": {
+        "bus_gain": 1.0,
+        "reference_event_gain": 1.0,
+        "linear_calibration_gain": 0.09696997714802742,
+        "post_route_k32_dbfs": -43.11
+      }
+    },
+    {
+      "file": "type_02.wav",
+      "seconds": 0.048,
+      "channels": 2,
+      "peak_dbfs": -31.59,
+      "rms_dbfs": -45.82,
+      "sha256": "841a72a336ba497546116c903ffeaf66da421a9c29eef24ac1443bad5eb9946b",
+      "cue": "type",
+      "variation": 2,
+      "design": "small felt keycap contact, short enough to avoid stacking at fast typing rates",
+      "calibration": {
+        "bus_gain": 1.0,
+        "reference_event_gain": 1.0,
+        "linear_calibration_gain": 0.07979031193367198,
+        "post_route_k32_dbfs": -43.11
+      }
+    },
+    {
+      "file": "type_03.wav",
+      "seconds": 0.048,
+      "channels": 2,
+      "peak_dbfs": -30.92,
+      "rms_dbfs": -45.96,
+      "sha256": "ff84c2877e7f1f62ad6c0cc4fbb72e11be862fdcd9cd6aa83a1c7e85226ca2e1",
+      "cue": "type",
+      "variation": 3,
+      "design": "small felt keycap contact, short enough to avoid stacking at fast typing rates",
+      "calibration": {
+        "bus_gain": 1.0,
+        "reference_event_gain": 1.0,
+        "linear_calibration_gain": 0.08621530253674041,
+        "post_route_k32_dbfs": -43.11
+      }
+    },
+    {
+      "file": "erase_01.wav",
+      "seconds": 0.065,
+      "channels": 2,
+      "peak_dbfs": -34.41,
+      "rms_dbfs": -47.5,
+      "sha256": "85786c2e5dda9069937c5a091a906c012a1a59731c6b0d0db31a1342d18227da",
+      "cue": "erase",
+      "variation": 1,
+      "design": "a short brushed release of a keycap",
+      "calibration": {
+        "bus_gain": 1.0,
+        "reference_event_gain": 1.0,
+        "linear_calibration_gain": 0.057690401755865185,
+        "post_route_k32_dbfs": -43.11
+      }
+    },
+    {
+      "file": "erase_02.wav",
+      "seconds": 0.065,
+      "channels": 2,
+      "peak_dbfs": -33.77,
+      "rms_dbfs": -47.41,
+      "sha256": "d36f7961455ebb561b8209b0e86ed6e11341a3c01ae98b7d8f1deb22f133afc3",
+      "cue": "erase",
+      "variation": 2,
+      "design": "a short brushed release of a keycap",
+      "calibration": {
+        "bus_gain": 1.0,
+        "reference_event_gain": 1.0,
+        "linear_calibration_gain": 0.06210221445901813,
+        "post_route_k32_dbfs": -43.11
+      }
+    },
+    {
+      "file": "tick_01.wav",
+      "seconds": 0.032,
+      "channels": 2,
+      "peak_dbfs": -23.96,
+      "rms_dbfs": -38.44,
+      "sha256": "d99f01931691cd247c1ec9d2ba55f88761a23ec3a458806c849a85d7469a3b73",
+      "cue": "tick",
+      "variation": 1,
+      "design": "a fine muted detent for small UI values",
+      "calibration": {
+        "bus_gain": 1.0,
+        "reference_event_gain": 0.6,
+        "linear_calibration_gain": 0.1920438140362103,
+        "post_route_k32_dbfs": -42.41
+      }
+    },
+    {
+      "file": "tick_02.wav",
+      "seconds": 0.032,
+      "channels": 2,
+      "peak_dbfs": -23.39,
+      "rms_dbfs": -38.56,
+      "sha256": "511f47822d40b32602d35a865de940e4e7e4816a489fc0d826988790b3c60806",
+      "cue": "tick",
+      "variation": 2,
+      "design": "a fine muted detent for small UI values",
+      "calibration": {
+        "bus_gain": 1.0,
+        "reference_event_gain": 0.6,
+        "linear_calibration_gain": 0.20515126429831818,
+        "post_route_k32_dbfs": -42.41
+      }
+    },
+    {
+      "file": "invader_shot_01.wav",
+      "seconds": 0.115,
+      "channels": 2,
+      "peak_dbfs": -7.13,
+      "rms_dbfs": -21.08,
+      "sha256": "6aa6d3a3f503d0f123801a15414b531e92f42473e62091ae66c8adc227d42d78",
+      "cue": "invader_shot",
+      "scope": "explicit gameplay exception, accepted player shots only"
+    }
+  ],
+  "total_wav_bytes": 1142552
+}

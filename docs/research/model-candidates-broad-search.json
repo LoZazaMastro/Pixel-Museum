@@ -1,0 +1,105 @@
+{
+  "checked_utc": "2026-10-20T15:28:50.598472+00:00",
+  "scope": "High-fidelity historical horizontal GBA and GameCube sources outside the exhausted Sketchfab download workflow. No asset promoted to production.",
+  "conclusion": "No fully qualified quality upgrade was found that can be bundled immediately. Strong GBA candidate needs normal download access and protected embedded-use packaging; laser scans are reference-only; open GameCube candidate is a technically accessible but visually basic fallback.",
+  "candidates": [
+    {
+      "hardware": "Game Boy Advance AGB-001",
+      "creator": "rafalstepien",
+      "source_url": "https://www.cgtrader.com/free-3d-models/electronics/computer/game-boy-advance-c3d85a31-b1b0-4e0a-8679-e069fee4ed48",
+      "license_label": "Editorial License (no AI)",
+      "license_terms_url": "https://www.cgtrader.com/pages/terms-and-conditions",
+      "license_relevant_sections": [
+        "21A.1-21A.3",
+        "22.1-22.2"
+      ],
+      "formats": [
+        "BLEND 34.5 MB",
+        "glTF 23.5 MB",
+        "FBX",
+        "OBJ",
+        "4K PBR textures"
+      ],
+      "publisher_geometry": {
+        "polygons": 17562,
+        "vertices": 17034,
+        "subdivision_ready": true
+      },
+      "quality_status": "Strongest newly located horizontal GBA prospect from publisher specification; no local geometry render yet. CGTrader technical checks are not proof of factory fidelity.",
+      "actual_download_status": "Normal logged-in Free Download workflow; no public redistributable raw URL verified.",
+      "blocking_condition": "Terms require incorporated use and reasonable protection against end-user access. Existing loose GLB app resource packaging is not automatically compatible. Do not bundle source asset or commit it to public repository without appropriate permission/protection.",
+      "bundle_selected": false
+    },
+    {
+      "hardware": "Game Boy Advance Indigo",
+      "creator": "zap productions",
+      "source_url": "https://blendswap.com/blend/27357",
+      "license_label": "CC-BY as displayed; version not established",
+      "format": "Blender 2.9x/Cycles,4.36MB",
+      "actual_download_status": "https://blendswap.com/blend/27357/download requires sign-in. No bypass attempted.",
+      "quality_status": "Author explicitly says unfinished: back features and side ports missing. Front shell may be a useful modelling study but cannot satisfy complete detailed hardware requirement unchanged.",
+      "bundle_selected": false
+    },
+    {
+      "hardware": "GameCube with controller",
+      "creator": "Zoda / ZodaSG",
+      "source_url": "https://blendswap.com/blend/17860",
+      "sketchfab_source_url": "https://sketchfab.com/3d-models/gamecube-with-controller-adfb4f6ce4ca4b97a7ef9c96fd10632d",
+      "license_label": "CC BY 4.0; live Sketchfab API verified",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "actual_download_url": "https://huggingface.co/datasets/allenai/objaverse/resolve/main/glbs/000-111/adfb4f6ce4ca4b97a7ef9c96fd10632d.glb",
+      "local_file": "build/research/model-validation/GameCube-Zoda-objaverse.glb",
+      "bytes": 53523252,
+      "sha256": "e31a2d002e571b897c0fdb5c27021364fc93e863f71238e80e2ed28e869f8ac2",
+      "triangles": 1093709,
+      "meshes": 38,
+      "images": 1,
+      "extensions_required": [
+        "KHR_materials_pbrSpecularGlossiness"
+      ],
+      "quality_status": "Author preview inspected: basic shell and controller, under-detailed lid/buttons/logo. Author says some parts missing. Not recommended as an improvement over the approved detailed model merely because triangle count is high.",
+      "bundle_selected": false
+    },
+    {
+      "hardware": "GBA AGB-001 shell scans",
+      "creator": "Wesk",
+      "source_url": "https://bitbuilt.net/forums/threads/gba-console-scan.3831/",
+      "actual_download_urls": [
+        "https://bitbuilt.net/wesk/3D%20Scans/GBA%20Console%20Scan.zip",
+        "https://drive.google.com/file/d/16TJNYJE_PWWR_khPUyDgj47Gqxhov0Za/view?usp=sharing"
+      ],
+      "format": "Original shell mesh scans; newer front STL (2024)",
+      "publisher_geometry": "~600,000 triangles per remeshed original shell; higher-quality rescan available",
+      "license_status": "Publisher explicitly says provided as reference only. No redistribution licence established.",
+      "quality_status": "Strong actual-hardware curvature/proportions reference for any later authorised modelling effort; not complete textured museum asset.",
+      "bundle_selected": false
+    },
+    {
+      "hardware": "GameCube shell scans",
+      "creator": "Wesk",
+      "source_url": "https://bitbuilt.net/forums/threads/gamecube-console-scan.4136/",
+      "actual_download_url": "https://bitbuilt.net/wesk/3D%20Scans/GC%20Console%20Full.rar",
+      "publisher_geometry": "~2,500,000 triangles per component",
+      "parts": [
+        "lid",
+        "top",
+        "bottom",
+        "buttons",
+        "front/back plates",
+        "handle",
+        "lid jewel",
+        "light guide",
+        "serial/BBA covers"
+      ],
+      "license_status": "Publisher explicitly says provided as reference only. No redistribution licence established.",
+      "quality_status": "Actual scanned shell components; missing GBA expansion cover and untextured. High-detail reference rather than immediately usable museum model.",
+      "bundle_selected": false
+    },
+    {
+      "hardware": "Game Boy Advance AGB-001 museum object",
+      "source_url": "https://collection.sciencemuseumgroup.org.uk/objects/co8184138/nintendo-game-boy-advance-model-agb-001",
+      "quality_status": "Real collection record, images/IIIF/catalogue metadata. No 3D asset download verified.",
+      "bundle_selected": false
+    }
+  ]
+}

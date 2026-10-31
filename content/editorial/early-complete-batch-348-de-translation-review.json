@@ -1,0 +1,96 @@
+{
+  "status": "PASS",
+  "locale": "de",
+  "entries": [
+    {
+      "entry_id": "wikipedia-65333536",
+      "source_fields_sha256": "b4785550136c387df26cddbfe322d4e21f5f7ec9b4c6178eeb01390fe01efef0",
+      "translation_sha256": "16a9c20c155e8b3ec24e9967af5738455aed80f5bbbe98ac7429b48bd04c4cb2",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch348/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "86215ae07e3b3f88ffe60bf1fd13d53307e0d244853a416eeea57bfbbf10b706"
+    },
+    {
+      "entry_id": "wikipedia-72677863",
+      "source_fields_sha256": "c17fa17ea9afec77d96cd159bf7cdd5728b595a12b39e701afb1022076782c7f",
+      "translation_sha256": "841af42a820889872fbc310577d24eaddfa7e425c781aa45584c3ae70b3412b5",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch348/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "86215ae07e3b3f88ffe60bf1fd13d53307e0d244853a416eeea57bfbbf10b706"
+    },
+    {
+      "entry_id": "daily-04-23",
+      "source_fields_sha256": "8c2282ac37237eb3232df1df0532ffcead08ae6fdac59938245983b37045c7f9",
+      "translation_sha256": "5f5a2001b73453c86e8a8ca820c743d5db6485b0e7b8b4caa98c60329a554e5c",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch348/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "86215ae07e3b3f88ffe60bf1fd13d53307e0d244853a416eeea57bfbbf10b706"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "editorial_continue",
+    "actual_receipt": "build/research/catalog-2022-chronological/november-three-private/independent-editorial-peer-approval.json",
+    "actual_receipt_sha256": "3a98f2ac9be55ffb7a13ca083b86d662c3b445fbc34b3195f4a40aec52c26ec6",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "editorial_continue",
+      "review_scope": "Independent actual reading of all 11 English and 44 localized paragraphs and five fields, actual viewing of all 18 selected images in the three final contacts, focused primary-source reading, and equality preservation of 68 existing soundtrack objects without repeating playback extraction.",
+      "index": "build/research/catalog-2022-chronological/november-three-private/three-private-index.json",
+      "index_sha256": "40f5e3402b74a937a2cb4bd1cc2d3d51662998b40024c92367e184a07109acc6",
+      "owners": [
+        {
+          "entry_id": "wikipedia-65333536",
+          "source_sha256": "77d797be1b6b2f7a36b2606e9cd5723cad3f57b158d5cdce403361bcfd1e8a60",
+          "target_sha256": "9f0acc23eeb267046e2f44b0933fa923736ff1f512595600403efa87cc901469",
+          "contact_sha256": "3db4c9dfc3529287e8c2cb80dd6409920c227b42cc9bd3bc3dcafe4ba5b4dcb2",
+          "english_cards_read": 4,
+          "localized_cards_read": 16,
+          "images_actually_viewed": 7,
+          "unchanged_music_tracks": 28
+        },
+        {
+          "entry_id": "wikipedia-72677863",
+          "source_sha256": "0b5a7dc53502085cc5ba85cae54f8b97e30b6fa649696f982fae23eb1bcd0e47",
+          "target_sha256": "0fbca68d9d09bab215705e6cd1300c0cdb1a15b70d4d7174a716a3ed91047266",
+          "contact_sha256": "56ee810225da92de50438234a90b5e0f5ec3884a3a463ebafbdad53f955cf091",
+          "english_cards_read": 3,
+          "localized_cards_read": 12,
+          "images_actually_viewed": 5,
+          "unchanged_music_tracks": 3
+        },
+        {
+          "entry_id": "daily-04-23",
+          "source_sha256": "829f5d2217c76e1e4bf05a7d1a79d29e16cc2df8aee7858ad35eb3a8d3e5f35c",
+          "target_sha256": "cb0a64a56802b75a206dee37acaba6bef0468bfae2110f8826080e578aa46bcb",
+          "contact_sha256": "87a4b57234897e977d0f4486fd47590d32148c9282b39438c835d371885b01d2",
+          "english_cards_read": 4,
+          "localized_cards_read": 16,
+          "images_actually_viewed": 6,
+          "unchanged_music_tracks": 37
+        }
+      ],
+      "primary_sources_actually_read": [
+        {
+          "url": "https://blog.playstation.com/?p=387187",
+          "findings": "Sony states December 12, 2023 for free Valhalla and November 19 sell-through above 15 million; the source image depicts the epilogue and is assigned to its paragraph."
+        },
+        {
+          "url": "https://www.digitaleclipse.com/games/atari50",
+          "findings": "Original five interactive timelines, six new games and historical documentary format; 2024 Expanded Edition additions explicitly separate."
+        },
+        {
+          "url": "https://lettermatic.com/custom/pentiment",
+          "findings": "Firsthand Riley Cran design case study confirms social and educational typefaces, historical manuscript research and November 15, 2022 release; image2 research and glyph sketches match selected assets."
+        },
+        {
+          "url": "https://news.xbox.com/en-us/2022/08/24/pentiment-releasing-on-november-15/amp/",
+          "findings": "Original Obsidian launch announcement confirms November 15 and historical manuscript/woodcut setting, time-limited investigation and consequences across generations."
+        }
+      ],
+      "resolved_findings": [
+        "Two missing spaces in Atari image titles repaired by the author. No image pixels, English body or music changed."
+      ],
+      "edition_boundary": "Ragnarok Steam PC screenshots are explicitly identified as PC-edition publisher images, not misrepresented as original PS5 captures. Valhalla is explicitly 2023. Original Atari compilation and later expansions are distinguished. Pentiment design documents are credited as production/historical research, not false gameplay.",
+      "production_writes": false,
+      "mechanical_addendum": "After semantic approval, the author bound verification SHA fields to the exact existing recovery bytes already viewed in all 18 contact-sheet images, retaining older differing source digests separately. No pixels, contact hashes, captions, body text or soundtrack objects changed. Updated hash pins only; no redundant semantic review."
+    }
+  }
+}

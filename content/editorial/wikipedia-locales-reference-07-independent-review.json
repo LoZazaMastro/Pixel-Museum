@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "reviewed_utc_date": "2026-10-21",
+  "reviewer_role": "Independent editorial reviewer; different agent from translation author",
+  "batch_file": "content/expansion/wikipedia-locales-reference-07.json",
+  "batch_sha256": "4157c2ac5e784a6d1454cb24b7ef8c344488691f21a5cbf640ea44d3caa1408f",
+  "result": "PASS for source fidelity and explicit admission; no text corrections required",
+  "review_scope": {
+    "source_entries": 4,
+    "english_source_paragraphs_read": 12,
+    "translation_pairs_read": 16,
+    "translated_paragraphs_read": 48,
+    "existing_headings": 0,
+    "languages": [
+      "it",
+      "es",
+      "fr",
+      "de"
+    ],
+    "english_source_words": 821
+  },
+  "checks": {
+    "exact_current_english_source_fields": true,
+    "all_source_hashes_recomputed": true,
+    "source_attribution_sources_revision_unchanged": true,
+    "target_revision_license_credit_complete": true,
+    "every_paragraph_compared_semantically": true,
+    "proper_names_compared_per_paragraph": true,
+    "numbers_decades_decimals_written_quantities_read": true,
+    "source_empty_heading_arrays_preserved": true,
+    "no_silent_english_fact_edit": true,
+    "utf8_no_transport_corruption": true,
+    "pure_overlay_join_pass": true,
+    "six_negative_tests_pass": true,
+    "all_preexisting_source_locale_entries_preserved": true,
+    "non_target_languages_unchanged": true
+  },
+  "entries": [
+    {
+      "entry_id": "wikipedia-785",
+      "title": "Asteroids",
+      "revision_id": 1381083620,
+      "revision_url": "https://en.wikipedia.org/w/index.php?oldid=1381083620",
+      "body_sha256": "117c541f51e02f912f8b92bb463f8217b17aea74a588b0d50e444ac162978594",
+      "languages_read": [
+        "it",
+        "es",
+        "fr",
+        "de"
+      ],
+      "paragraphs_read": 12,
+      "headings": 0,
+      "result": "PASS",
+      "quantity_checks": "1979; 47,840 upright and 8,725 cocktail cabinets (localized separators); 1980s/Ottanta; Atari2600; more than three million copies. Every value and qualifier preserved.",
+      "semantic_checks": "Shooting targets remains distinct from avoiding collisions and counterfire. Logg/Rains design and Allen hardware remain separate roles. Cosmos remains unfinished; iterative influences and both-axis wrapping retained. Former name remains attributed without changing the person.",
+      "limit": "Cabinet figures and universal historical context are inherited reference claims, not newly verified primary-source research."
+    },
+    {
+      "entry_id": "wikipedia-28420914",
+      "title": "Retro City Rampage",
+      "revision_id": 1378089841,
+      "revision_url": "https://en.wikipedia.org/w/index.php?oldid=1378089841",
+      "body_sha256": "b7521ed506907a39d268675407d1a1d0e8db1b06c2f1e1b4ef38639f3b3708d1",
+      "languages_read": [
+        "it",
+        "es",
+        "fr",
+        "de"
+      ],
+      "paragraphs_read": 12,
+      "headings": 0,
+      "result": "PASS",
+      "quantity_checks": "1980s/1990s including written Italian decades; first2012 release; DX2014; Nintendo3DS;486 title;29July2015 MS-DOS;2019 sequel. All preserved.",
+      "semantic_checks": "Pop-culture parody remains distinct from Grand Theft Auto parody. Paid purchase is not invented for the free DX updates. The limited floppy run and free digital entitlement remain separate distribution forms.",
+      "limit": "No new sales, development or licensing claims added."
+    },
+    {
+      "entry_id": "wikipedia-39645077",
+      "title": "Super Mario 3D World",
+      "revision_id": 1371362445,
+      "revision_url": "https://en.wikipedia.org/w/index.php?oldid=1371362445",
+      "body_sha256": "9bdf97471317c00a0e38e26069558791c40fc0330abfc67b61d9b3abdf1027b5",
+      "languages_read": [
+        "it",
+        "es",
+        "fr",
+        "de"
+      ],
+      "paragraphs_read": 12,
+      "headings": 0,
+      "result": "PASS",
+      "quantity_checks": "2013; sixth original3D platformer;2011 predecessor; February2021 Switch release; March2024 snapshot5.89M/13.47M/19.36M; second-best-selling WiiU; November2014 spinoff. Local decimal comma retains all values.",
+      "semantic_checks": "Sprixies, Sprixie Kingdom and Super Bell remain recognizable English proper names rather than invented official localized names. Cat transformation, climbing and scratch attack remain one power-up. Criticism stays specific to multiplayer camera; praise and dated sales kept distinct.",
+      "limit": "Sales remain a March2024 snapshot, not current totals. No new fact verification of the ranking."
+    },
+    {
+      "entry_id": "wikipedia-39646535",
+      "title": "Shovel Knight",
+      "revision_id": 1380452537,
+      "revision_url": "https://en.wikipedia.org/w/index.php?oldid=1380452537",
+      "body_sha256": "533808a4797c551aa878594818f30608b27c7ec780de03c50e539c8ae2394cdc",
+      "languages_read": [
+        "it",
+        "es",
+        "fr",
+        "de"
+      ],
+      "paragraphs_read": 12,
+      "headings": 0,
+      "result": "PASS",
+      "quantity_checks": "June2014; September2014; April2015; September2015; March2017; December2019; three additional campaigns;13December2021;23September2022. Source platform digits retained.",
+      "semantic_checks": "Crowdfunding, NES inspiration, retrospective Shovel of Hope naming, three extra campaigns and Showdown remain distinct. Pocket Dungeon retains Vine co-development and puzzle/dungeon combination; Dig retains Nitrome, prequel and roguelike. DX remains planned with no invented release date.",
+      "limit": "Future DX wording follows the exact October2026 source revision. This review does not independently verify whether release plans have changed."
+    }
+  ],
+  "blocking_findings": [],
+  "nonblocking_limits": [
+    "This is independent agent language and source-fidelity review, not a native-human linguistic signoff or a new historical primary-source fact-check.",
+    "Future and dated-sales statements remain tied to exact source revisions; no current-release or sales verification is claimed.",
+    "Image counts are source-snapshot inventory only; no new rights, image-quality or media signoff.",
+    "Scalar title/subtitle/summary hashes use SHA256 of compact JSON strings (including JSON quotes), unlike raw UTF8 paragraph hashes. Both encodings were independently recomputed; full source_fields_sha256 and exact current field equality additionally pass."
+  ],
+  "fixture_receipt": "build/research/wikipedia-locales-reference-07/independent-join-validation.json",
+  "fixture_receipt_sha256": "53000f42a42fc5436bd9e2f4a919a8b07d2b8d3f107671f538bbcf6ef8b31510",
+  "catalog_sha256_observed_snapshot": "017d8e22ece5e4ffab937501634fa0a7f9e3ebff4490c154e0c0a013d5395350",
+  "writes": "Only private review fixture and this review receipt; no authored batch, master, source locale, generated locale, hook, runtime or console writes.",
+  "new_translations_integrated_by_reviewer": 0,
+  "native_parser_test_by_reviewer": false
+}

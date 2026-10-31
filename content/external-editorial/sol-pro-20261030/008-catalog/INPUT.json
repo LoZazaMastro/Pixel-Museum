@@ -1,0 +1,923 @@
+{
+  "schema": "pixel-museum-editorial-input-v1",
+  "batch_id": "008-catalog",
+  "source_file": "content/catalog.json",
+  "source_sha256": "0b077b3f8628f921ab84574d286f9d9943fb8ae6acb8f136ffadde6e01cae241",
+  "entries": [
+    {
+      "entry_id": "wikipedia-261798",
+      "kind": "game",
+      "year_context_only": 1976,
+      "date_context_only": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Reference article introduction reproduced under its stated licence. Year comes from the article's release-year category; regional/port dates may differ.",
+      "main": {
+        "feature_id": null,
+        "title": "Colossal Cave Adventure",
+        "subtitle": "",
+        "summary": "Colossal Cave Adventure (also known as Adventure or ADVENT) is a text-based adventure game, released in 1976 by Will Crowther for the PDP-10 mainframe computer.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Exploring a cave by typing commands",
+            "text": "Colossal Cave Adventure (also known as Adventure or ADVENT) is a text-based adventure game, released in 1976 by Will Crowther for the PDP-10 mainframe computer. It was expanded upon in 1977 by Don Woods. In the game, the player explores a cave system rumored to be filled with treasure and gold. The game is composed of dozens of locations, and the player moves between these locations and interacts with objects in them by typing one- or two-word commands which are interpreted by the game's natural language input system. The program acts as a narrator, describing the player's location and the results of the player's attempted actions. It is the first well-known example of interactive fiction, as well as the first well-known adventure game, for which it was also the namesake."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Real cave maps meet a fantasy expansion",
+            "text": "The original game, written in 1975 and 1976, was based on Crowther's maps and experiences caving in Mammoth Cave in Kentucky, the longest cave system in the world; further, it was intended, in part, to be accessible to non-technical players, such as his two daughters. Woods's version expanded the game in size and increased the number of fantasy elements present in it, such as a dragon and magic spells. Both versions, typically played over teleprinters connected to mainframe computers, were spread around the nascent ARPANET, the precursor to the Internet, which Crowther was involved in developing."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "An adventure travels through the network",
+            "text": "Colossal Cave Adventure was one of the first teletype games and was massively popular in the computer community of the late 1970s, with numerous ports and modified versions being created based on Woods's source code. It directly inspired the creation of numerous games, including Zork (1977), Adventureland (1978), Mystery House (1980), Rogue (1980), and Adventure (1980), which went on to be the foundations of the interactive fiction, adventure, roguelike, and action-adventure genres. It also influenced the creation of the MUD and computer role-playing game genres. It has been noted as one of the most influential video games, and in 2019 was inducted into the World Video Game Hall of Fame by The Strong and the International Center for the History of Electronic Games."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Colossal Cave Adventure — article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1379748965",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "1976 in video games — annual context",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1377657866",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/Colossal_Cave_Adventure?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          },
+          {
+            "title": "The Rotunda in Mammoth Cave, photographed by the National Park Service in 2020",
+            "url": "https://npgallery.nps.gov/AssetDetail/2649cd25-059e-442a-a255-329df533ee5f",
+            "publisher": "National Park Service",
+            "rights": "Public domain: Full Granting Rights, explicitly stated by NPS asset record; collected image retained unchanged.",
+            "story_paragraphs": [
+              1
+            ]
+          },
+          {
+            "title": "Zork I, a later commercial text adventure, photographed on a Kaypro II in 2012",
+            "url": "https://commons.wikimedia.org/wiki/File:Zork_photo.jpg",
+            "publisher": "Marcin Wichary",
+            "rights": "CC BY 2.0; collected image retained unchanged.",
+            "story_paragraphs": [
+              2
+            ]
+          }
+        ]
+      },
+      "features": [
+        {
+          "feature_id": "feature-colossal-cave-language",
+          "title": "A cave made of decisions",
+          "subtitle": "",
+          "summary": "Geography and language shape Adventure.",
+          "cards": [
+            {
+              "card_id": "feature:feature-colossal-cave-language:0",
+              "original_index": 0,
+              "heading": "A route becomes a command",
+              "text": "Will Crowther translated a place he knew into a program people could explore through short commands. Dennis Jerz's research compared recovered source files with the Kentucky cave, showing both correspondence and deliberate adjustment. Routes became easier to describe; physical geography became a sequence of choices the program could recognise. A player encountered the cave through prose rather than a continuous visual field. Reading a room and choosing a direction were therefore practical navigation skills. The description supplied the information from which the next action had to be made."
+            },
+            {
+              "card_id": "feature:feature-colossal-cave-language:1",
+              "original_index": 1,
+              "heading": "More than a cave survey",
+              "text": "Dennis Jerz's research found magic, humour, combat and puzzles in Crowther's original Adventure, with Don Woods later expanding that mixture. Recovered files and interviews place Crowther's work in the 1975–1976 academic year and Woods's additions in 1977. Woods had recalled 1976 in a 2001 interview but later agreed with the 1977 date. The surviving versions help establish how the game developed as it circulated."
+            },
+            {
+              "card_id": "feature:feature-colossal-cave-language:2",
+              "original_index": 2,
+              "heading": "Finding the other author",
+              "text": "Woods recalled finding a copy on a Stanford Medical Center computer and transferring it to the artificial-intelligence laboratory's machine. Operating-system differences required repairs before he could play. Because the program named Crowther, Woods tried email addresses at network hosts until he reached him and obtained the source code. This contact allowed him to begin the work that expanded the adventure."
+            },
+            {
+              "card_id": "feature:feature-colossal-cave-language:3",
+              "original_index": 3,
+              "heading": "Puzzles without a single template",
+              "text": "Woods described puzzles as his particular strength and said he preferred games as a hobby. He also resisted a neat literary origin story: he had read Tolkien, but denied consciously modelling his volcano on Mount Doom. His recollection helps keep the game's influences from becoming a formula. Adventure combined its authors' interests without requiring every room to represent an outside text. He had never played Dungeons & Dragons before working on Adventure; people later introduced him to role-playing because they thought its author would enjoy it."
+            }
+          ],
+          "sources": [
+            {
+              "id": "jerz07",
+              "title": "Somewhere Nearby is Colossal Cave: Examining Will Crowther's Original Adventure in Code and in Kentucky",
+              "url": "https://dhq-static.digitalhumanities.org/pdf/000009.pdf",
+              "publisher": "Dennis G. Jerz / Digital Humanities Quarterly 1(2), 2007",
+              "source_type": "original_research_with_primary_interviews_and_source_code",
+              "locator": "Introduction, original-code analysis and cave comparison: prose navigation and changes to actual geography. Abstract, revised chronology and recovered-code analysis: original fantasy/game elements; Crowther 1975-1976; Woods 1977; the study records Woods accepting 1977 after his 2001 estimate of 1976.",
+              "checked": "2026-10-21",
+              "rights": "Bibliographic reference only. The narrative is original, contains no verbatim quotations and does not grant permission to reproduce source images or documents.",
+              "story_paragraphs": [
+                0,
+                1
+              ],
+              "paragraph_locators": {
+                "0": "Introduction, original-code analysis and cave comparison: prose navigation and changes to actual geography.",
+                "1": "Abstract, revised chronology and recovered-code analysis: original fantasy/game elements; Crowther 1975-1976; Woods 1977; the study records Woods accepting 1977 after his 2001 estimate of 1976."
+              }
+            },
+            {
+              "id": "woods01",
+              "title": "Interactive Fiction? I prefer Adventure",
+              "url": "https://www.avventuretestuali.com/interviste/woods-eng/",
+              "publisher": "Don Woods interview / L'avventura è l'avventura, June 2001",
+              "source_type": "primary_participant_interview",
+              "locator": "Opening development questions: Stanford Medical Center copy, SAIL operating-system fixes and correspondence with Crowther. Questions on a professional games career, puzzles, Tolkien/volcano and Dungeons & Dragons: Woods had not played D&D before working on Adventure; later introduction through the game.",
+              "checked": "2026-10-21",
+              "rights": "Bibliographic reference only. The narrative is original, contains no verbatim quotations and does not grant permission to reproduce source images or documents.",
+              "story_paragraphs": [
+                2,
+                3
+              ],
+              "paragraph_locators": {
+                "2": "Opening development questions: Stanford Medical Center copy, SAIL operating-system fixes and correspondence with Crowther.",
+                "3": "Questions on a professional games career, puzzles, Tolkien/volcano and Dungeons & Dragons: Woods had not played D&D before working on Adventure; later introduction through the game."
+              }
+            },
+            {
+              "title": "Adventure on a VT100 terminal connected to a PDP11/34, photographed in 2014",
+              "url": "https://commons.wikimedia.org/wiki/File:Colossal_Cave_Adventure_on_VT100_terminal.jpg",
+              "publisher": "Autopilot",
+              "rights": "CC BY-SA 3.0; collected image retained unchanged.",
+              "story_paragraphs": [
+                0,
+                1
+              ]
+            },
+            {
+              "title": "A preserved DEC PDP10 KI10 mainframe",
+              "url": "https://commons.wikimedia.org/wiki/File:DEC_PDP-10_%28from_ca._1970_named_decsystem-10%29_mainframe_computer_system%2C_1970s_%28edited%2C_white_background%29.jpg",
+              "publisher": "Gah4; background removed by Pittigrilli",
+              "rights": "CC BY-SA 4.0; collected image retained unchanged.",
+              "story_paragraphs": [
+                2,
+                3
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entry_id": "wikipedia-43440042",
+      "kind": "game",
+      "year_context_only": 1976,
+      "date_context_only": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Reference article introduction reproduced under its stated licence. Year comes from the article's release-year category; regional/port dates may differ.",
+      "main": {
+        "feature_id": null,
+        "title": "Death Race",
+        "subtitle": "",
+        "summary": "Death Race is an arcade driving video game developed and released by Exidy in the United States, first shipping to arcade distributors in April 1976.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "A driving game changes its targets",
+            "text": "Death Race is an arcade driving video game developed and released by Exidy in the United States, first shipping to arcade distributors in April 1976. The game was a modification of Exidy's 1975 game Destruction Derby in which players crashed into cars to accrue points. In Death Race, the objective became to run into \"gremlins\" to gain score. The game could be played with one or two players controlling different cars. The original working title for the game which appeared on some early advertisements was Death Race 98."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Controversy follows the figures on screen",
+            "text": "The game attracted a great deal of controversy over the content of the game which was centered around killing humanoid figures. In July 1976, newspapers and civic organizations began to attack the game for facilitating violence in virtual form."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Death Race (1976 video game) — article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1370280471",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "1976 in video games — annual context",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1377657866",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/Death_Race_(1976_video_game)?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-43958708",
+      "kind": "game",
+      "year_context_only": 1976,
+      "date_context_only": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Reference article introduction reproduced under its stated licence. Year comes from the article's release-year category; regional/port dates may differ.",
+      "main": {
+        "feature_id": null,
+        "title": "Fairchild Channel F Videocarts",
+        "subtitle": "",
+        "summary": "The Fairchild Channel F is a home video game console released by Fairchild Camera and Instrument in November 1976.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "A console with interchangeable ROM cartridges",
+            "text": "The Fairchild Channel F is a home video game console released by Fairchild Camera and Instrument in November 1976. It has the distinction of being the first programmable ROM cartridge-based video game console, and the first console to use a microprocessor. It was launched as the Fairchild Video Entertainment System, or Fairchild VES for short, but when Atari released their Atari Video Computer System, Atari VCS, later Atari 2600 the next year, Fairchild renamed its machine."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "The design and artwork of the Videocarts",
+            "text": "Twenty-seven cartridges, termed 'Videocarts', were officially released to consumers during the ownership of Fairchild and Zircon, the first twenty-one of which were released by Fairchild. Several of these cartridges were capable of playing more than one game. The Videocarts were yellow and approximately the size and overall texture of an 8 track cartridge. They usually featured colorful label artwork. Industrial designer Nicholas F. Talesforce was responsible for the overall design of the cartridges, while early artwork was created by artist Tom Kamifuji. The console contained two built-in games, Tennis and Hockey, which were both advanced Pong clones. In Hockey the reflecting bar could be changed to diagonals by twisting the controller, and could move all over the playing field. Tennis was much like the original Pong. These games were reviewed by Video magazine in 1978 and Hockey received a score of 7 out of 10 while Tennis received a 6 out of 10."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "A keyboard accessory in the brochure",
+            "text": "A sales brochure from 1978 listed 'Keyboard Videocarts' for sale. The three shown were  K-1 Casino Poker, K-2 Space Odyssey, and K-3 Pro-Football. These were intended to use the Keyboard accessory. All further brochures, released after Zircon took over Fairchild, never listed this accessory nor anything called a Keyboard Videocart."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "A demonstration cartridge with a brief appearance",
+            "text": "One additional cartridge was released numbered Videocart-51 and titled 'Demo 1'. This Videocart was shown in a single sales brochure released shortly after Zircon acquired the company. It was never listed for sale after this single brochure used for the winter of 1979."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Fairchild Channel F Videocarts — article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1378175443",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "1976 in video games — annual context",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1377657866",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/Fairchild_Channel_F_Videocarts?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          },
+          {
+            "title": "Fairchild and Zircon original complete sales brochures",
+            "url": "https://web.archive.org/web/20160907191046/http://fndcollectables.com/Fairchild/Brochures/cat2-outside-all.jpg",
+            "publisher": "Fairchild / Zircon; archived FND Collectables collection"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-57884008",
+      "kind": "game",
+      "year_context_only": 1976,
+      "date_context_only": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Reference article introduction reproduced under its stated licence. Year comes from the article's release-year category; regional/port dates may differ.",
+      "main": {
+        "feature_id": null,
+        "title": "Trek-80",
+        "subtitle": "",
+        "summary": "Trek-80 is a text-based video game written by Steve Dompier in 1976 and sold by Processor Technology for their Sol-20 computer and suitable S-100 bus machines.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Star Trek reaches the Sol-20",
+            "text": "Trek-80 is a text-based video game written by Steve Dompier in 1976 and sold by Processor Technology for their Sol-20 computer and suitable S-100 bus machines."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Leaving the teletype behind",
+            "text": "Trek-80 combines features of the seminal Star Trek game by Mike Mayfield with the unrelated Trek73. In contrast to the originals, which were designed to run on teletypes, Trek-80 used the VDM-1 video card to produce a character-based real-time display."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "A display card opens a route to other computers",
+            "text": "Compatible 3rd party versions of the VDM-1 became the de facto display for most early S-100 bus machines, as well as the TRS-80. A version known as Invasion Force was sold by Tandy for the TRS-80."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Trek-80 — article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1327334881",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "1976 in video games — annual context",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1377657866",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/Trek-80?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          },
+          {
+            "title": "Trek-80 original user manual",
+            "url": "https://deramp.com/sol20.org/manuals/trek80.pdf",
+            "publisher": "Processor Technology original documentation; Jim Battle2001archival OCR/reformat, preserved bySol20archive",
+            "locator": "Printed page1/PDF2: live action, real-time display, Sol8080 and VDM1 requirements; no publication year inferred.",
+            "rights": "Original manual rights retained; no open licence claimed.",
+            "story_paragraphs": [
+              0,
+              1
+            ]
+          },
+          {
+            "title": "ProcessorTechnology VDM-1 original hardware photograph",
+            "url": "https://commons.wikimedia.org/wiki/File:ProcessorTechnology-VDM-1_.jpg",
+            "publisher": "Gah4 / Wikimedia Commons",
+            "rights": "CC BY-SA4.0, existing unchanged published photograph variant.",
+            "story_paragraphs": [
+              2
+            ]
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-6150793",
+      "kind": "game",
+      "year_context_only": 1976,
+      "date_context_only": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Reference article introduction reproduced under its stated licence. Year comes from the article's release-year category; regional/port dates may differ.",
+      "main": {
+        "feature_id": null,
+        "title": "Mattel Auto Race",
+        "subtitle": "",
+        "summary": "Mattel Electronics Auto Race was released in 1976 by Mattel Electronics as the first handheld electronic game to use only solid-state electronics; it has no mechanical elements except the controls and on/off switch.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Calculator electronics become a pocket race",
+            "text": "Mattel Electronics Auto Race was released in 1976 by Mattel Electronics as the first handheld electronic game to use only solid-state electronics; it has no mechanical elements except the controls and on/off switch. Using hardware designed for calculators and powered by a nine-volt battery, the cars are represented by red LEDs on a playfield which covers only a small portion of the case. The audio consists of beeps. George J. Klose based the game on 1970s racing arcade video games and designed the hardware, with some hardware features added by Mark Lesser who also wrote the 512 bytes of program code."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Three lanes and four gears",
+            "text": "From a top-down perspective, the player controls a car on a three-lane track and moves between them with a switch. Opponent vehicles move toward the player, in an effect similar to vertical scrolling, and the player must avoid them. A second control shifts gears from 1–4, with the speed increasing for each."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "One handheld design leads to several others",
+            "text": "Auto Race was followed by other successful handheld sports games from Mattel, including Football and Baseball which were both programmed by Lesser. The Auto Race design was tweaked into multiple other handhelds, including Missile Attack (1976), which became Battlestar Galactica Space Alert (1978) as a tie-in with the Battlestar Galactica TV series, and Ski Slalom (1980). Auto Race was cloned in the Soviet Union as Elektronika IER-01."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Mattel Auto Race — article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1375609588",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "1976 in video games — annual context",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1377657866",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/Mattel_Auto_Race?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-7748212",
+      "kind": "game",
+      "year_context_only": 1976,
+      "date_context_only": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Reference article introduction reproduced under its stated licence. Year comes from the article's release-year category; regional/port dates may differ.",
+      "main": {
+        "feature_id": null,
+        "title": "Blockade",
+        "subtitle": "",
+        "summary": "Blockade is an arcade video game developed by Lane Hauck and Ago Kiss for Gremlin and released in November 1976.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "A trail becomes a wall",
+            "text": "Blockade is an arcade video game developed by Lane Hauck and Ago Kiss for Gremlin and released in November 1976. It is a two-player game where each player controls the direction of an arrow on the screen which creates a trail behind it. The object is to avoid any walls surrounding the playfield or trails created by each player for a select amount of turns. Blockade spawned many clones which came to be known as snake games."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "From a programming experiment to the arcade",
+            "text": "The game was designed by Lane Hauck. Prior to joining Gremlin, he had taught himself to code and met with the team at Gremlin before their entry into the arcade game market. After experimenting with a physics problem in assembly language, he created a game where a trail was left behind a player that disallowed them to return to a position they had already visited. After showing the concept to the staff at Gremlin, it was developed into a video game, test marketed and released to great acclaim at the 1976 Music Operators of America in Chicago. As Gremlin were new to developing arcade games, before they could release it publicly, several other companies such as Atari, Inc., Ramtek, and Meadows Games released their own variations of the game, leading to many pre-sales being cancelled for Gremlin."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Blockade (video game) — article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1358931665",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "1976 in video games — annual context",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1377657866",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/Blockade_(video_game)?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-8661812",
+      "kind": "game",
+      "year_context_only": 1976,
+      "date_context_only": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Reference article prose reproduced under its stated licence. Year comes from the article's release-year category; regional/port dates may differ.",
+      "main": {
+        "feature_id": null,
+        "title": "Heavyweight Champ",
+        "subtitle": "",
+        "summary": "Heavyweight Champ is Sega's 1976 arcade boxing game, using physical glove controls and a side-on view of the fight.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Two generations of arcade boxing",
+            "text": "Heavyweight Champ is an arcade boxing game released by Sega in 1976. Players use glove-shaped controls to deliver punches, watching the fighters from the side in large black-and-white graphics. It was Japan's third highest-grossing arcade video game that year. Critics have identified it as an early example of hand-to-hand fighting in games, although the original is now considered lost. Sega later returned to the name with a different arcade version."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Punching with the original glove controls",
+            "text": "The 1976 original features gameplay viewed from a side-view perspective. It employs two boxing glove controllers, one for each player, which move up and down for high and low punches, with an inward movement for striking. It uses large monochrome sprite visuals for the graphics."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "The original game in the Japanese charts",
+            "text": "The original 1976 game was a commercial success in Japan. On the first annual Game Machine arcade chart, Heavyweight Champ was the third highest-grossing arcade video game of 1976 in Japan, just below Taito's Ball Park and Speed Race DX."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "Representation in the original game",
+            "text": "Heavyweight Champ's 1976 version was the first video game to ever depict a Black person."
+          },
+          {
+            "card_id": "main:4",
+            "original_index": 4,
+            "heading": "The viewpoint moves behind the boxer",
+            "text": "Sega released a remake to arcades in 1987, changing the side perspective of the original game to a third-person viewpoint from behind the boxer. Both games feature unique controls that simulate throwing actual punches. The 1987 remake was Japan's fifth highest-grossing arcade video game of 1988 and received positive reviews from critics."
+          },
+          {
+            "card_id": "main:5",
+            "original_index": 5,
+            "heading": "Two controllers and a cabinet that swivels",
+            "text": "The 1987 game changed the perspective to behind the player's boxer. In addition, the player is given two punch controllers, one for each hand. Only a single-player mode is available, in which the player faces a series of opponents in one-round, three-minute bouts. Players can swivel the cabinet to move their boxer from side to side."
+          },
+          {
+            "card_id": "main:6",
+            "original_index": 6,
+            "heading": "The remake finds its own audience",
+            "text": "The 1987 remake was also a commercial success. In Japan, Game Machine listed the 1987 version on their November 15 issue as being the fourth most-successful upright arcade unit of the month. It went on to become Japan's fifth highest-grossing dedicated arcade game of 1988."
+          },
+          {
+            "card_id": "main:7",
+            "original_index": 7,
+            "heading": "Reviewers question the durability of the controls",
+            "text": "The 1987 remake was also critically well-received. Advanced Computer Entertainment and Commodore User praised the game's unique controls but raised concerns that they might decrease the lifespan of the cabinets. Commodore User also had positive impressions of the game's graphics and gave the game a 9 out of 10 overall."
+          },
+          {
+            "card_id": "main:8",
+            "original_index": 8,
+            "heading": "A familiar name on a different console game",
+            "text": "Sega reused the Heavyweight Champ name when they released the Sega Master System version of James \"Buster\" Douglas Knockout Boxing outside of North America. The game features a side perspective and is otherwise unrelated to the arcade games. It was not received well."
+          },
+          {
+            "card_id": "main:9",
+            "original_index": 9,
+            "heading": "Title Fight continues the physical approach",
+            "text": "The 1991 Sega arcade game Title Fight also featured controls for left and right punches and a similar behind-the-boxer perspective as the 1987 game, along with two-player gameplay through use of a dual-monitor cabinet."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Heavyweight Champ - article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1375765821",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/Heavyweight_Champ?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          },
+          {
+            "title": "1976 video games - release-year category",
+            "url": "https://en.wikipedia.org/wiki/Category:1976_video_games",
+            "publisher": "English Wikipedia contributors"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-453246",
+      "kind": "game",
+      "year_context_only": 1976,
+      "date_context_only": {
+        "month": 5,
+        "day": 13,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Reference article introduction reproduced under its stated licence. Year comes from the article's release-year category; regional/port dates may differ.",
+      "main": {
+        "feature_id": null,
+        "title": "Breakout",
+        "subtitle": "",
+        "summary": "Breakout is a 1976 action video game developed and published by Atari, Inc. for arcades; in Japan, it was released by Namco.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "A wall of bricks changes the paddle game",
+            "text": "Breakout is a 1976 action video game developed and published by Atari, Inc. for arcades; in Japan, it was released by Namco. The game was designed by Nolan Bushnell and Steve Bristow and prototyped via discrete logic chips by Steve Wozniak with assistance from Steve Jobs. In the game, eight rows of bricks line the top portion of the screen, and the player's goal is to destroy the bricks by repeatedly bouncing a ball off a paddle into them. The concept was predated by Ramtek's Clean Sweep (1974), but the game's designers were influenced by Atari's own Pong (1972). The arcade version of Breakout uses a monochrome display underneath a translucent colored overlay."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "From the arcade to home hardware",
+            "text": "The game was a commercial success. It was among the top five highest-grossing arcade video games of 1976 in the U.S. and Japan, and among the top three in both countries for 1977. A port of the game was published in 1978 for the Atari 2600 with color graphics. An arcade sequel was released in 1978, Super Breakout, which introduced multiple bouncing balls. Wozniak and Jobs subsequently founded the Apple Computer Company alongside Ronald Wayne. The company's Apple II computer, designed primarily by Wozniak, features hardware elements inspired by Breakout's logic design."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "A visual idea becomes a genre",
+            "text": "Atari was involved in the copyright lawsuit Atari Games Corp. v. Oman over its ability to register copyright protection for Breakout, ultimately prevailing in establishing that the game is copyrightable as an audiovisual work. The game spawned an entire genre of clone games. In Japan, the genre is known as block kuzushi (\"block breaker\") games. Breakout inspired Taito's Arkanoid (1986), which itself led to many imitators. It also influenced the game design of Taito's arcade shooter Space Invaders (1978)."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Breakout (video game) — article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1380424387",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "1976 in video games — annual context",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1377657866",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/Breakout_(video_game)?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          },
+          {
+            "title": "Breakout (video game) — original release infobox, Wikipedia revision 1380424387",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1380424387",
+            "publisher": "English Wikipedia contributors"
+          }
+        ]
+      },
+      "features": [
+        {
+          "feature_id": "feature-pong-operators",
+          "title": "Keeping the next game ready",
+          "subtitle": "",
+          "summary": "An operator helped shape the next paid game.",
+          "cards": [
+            {
+              "card_id": "feature:feature-pong-operators:0",
+              "original_index": 0,
+              "heading": "Choosing the paid attempt",
+              "text": "Breakout's operator manual treated the rules of a paid attempt as something its owner could arrange. The cabinet could offer one or two credits for a coin, three or five serves in a game, and an optional bonus credit at a chosen score. These settings changed what a customer received without changing the machine's name. Somebody preparing the cabinet therefore helped define the next encounter. A screen full of bricks belonged to a business whose practical decisions could alter the length and value of play."
+            },
+            {
+              "card_id": "feature:feature-pong-operators:1",
+              "original_index": 1,
+              "heading": "The journey to the location",
+              "text": "The same 1976 manual began installation with a different kind of attention. Before powering the cabinet, its receiver checked for shipping damage, loose connectors and components disturbed in transit. A game tested at the factory could arrive in another condition. The instructions placed this examination before the first functional check, making the journey between manufacturer and location part of the product's working life. Readiness was not only a matter of inserting a coin: somebody had to receive, inspect and prepare the object around the game."
+            },
+            {
+              "card_id": "feature:feature-pong-operators:2",
+              "original_index": 2,
+              "heading": "Adjusting a fair contest",
+              "text": "Atari's operator handbook gave maintenance a direct relationship with fairness. Its paddle-adjustment instructions warned that an incorrectly positioned paddle could discourage people from continuing to use a machine. The technician moved the player control to its limit, then adjusted the circuit so that the paddle reached the correct boundary. A player might experience that result simply as a responsive knob. Behind it was an alignment between the hand, a variable electrical component and the visible edge of the court on the screen."
+            },
+            {
+              "card_id": "feature:feature-pong-operators:3",
+              "original_index": 3,
+              "heading": "The work outside the screen",
+              "text": "The handbook covered cleaning, locks and the power cord alongside electronic adjustments. It warned against cleaners that left residue and distinguished ordinary cabinet care from monitor work requiring a qualified technician. Its play-time advice favoured giving customers slightly more time rather than too little. Preparing a working game therefore included access to the coin door, a correctly adjusted picture and the condition of the cabinet."
+            }
+          ],
+          "sources": [
+            {
+              "id": "breakout76",
+              "title": "Breakout: Operation, Maintenance, Service Manual, TM-058 first edition",
+              "url": "https://arcarc.xmission.com/PDF_Arcade_Atari_Kee/Breakout/Breakout_TM-058_1st_Edition.pdf",
+              "publisher": "Atari, Inc., copyright 1976; original manual preserved by Arcade Archive",
+              "source_type": "primary_contemporary_manufacturer_manual",
+              "locator": "Printed p.3: owner/operator options for structuring play; printed pp.13–14: receiving/shipping inspection and game structuring. PDF pages7/17/18 rendered and inspected directly.",
+              "checked": "2026-10-21",
+              "rights": "Citation only. Original prose contains no direct quotation. Reproduction of scans, diagrams and associated media requires separate review.",
+              "story_paragraphs": [
+                0,
+                1
+              ],
+              "paragraph_locators": {
+                "0": "Breakout TM-058 first edition, printed p.3 owner/operator options; p.14 game structuring: credits, serves and optional score bonus.",
+                "1": "Same manual printed p.13, installation4.1.1 shipping damage and4.1.2 mechanical inspection before power; original PDFp17."
+              }
+            },
+            {
+              "id": "ponghandbook",
+              "title": "Video Game Operator’s Handbook, TM-043",
+              "url": "https://arcarc.xmission.com/PDF_Misc/Atari_TM-043_Video_Game_Operators_Handbook.pdf",
+              "publisher": "Atari; original copyright1975 handbook, preserved by Arcade Archive",
+              "source_type": "primary_testimony_or_contemporary_original_document",
+              "locator": "Atari TM043 ChapterIII printedp25: paddle-position trim, discouraging players with misadjustment.; Atari TM043 ChapterIII printedpp25–26: cleaning, locks/cord,playtime,monitor qualifications.",
+              "checked": "2026-10-21",
+              "rights": "Citation only. Original prose contains no direct quotation; source documents, translations and media retain their separate rights.",
+              "story_paragraphs": [
+                2,
+                3
+              ],
+              "paragraph_locators": {
+                "2": "Atari TM043 ChapterIII printedp25: paddle-position trim, discouraging players with misadjustment.",
+                "3": "Atari TM043 ChapterIII printedpp25–26: cleaning, locks/cord,playtime,monitor qualifications."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entry_id": "wikipedia-6407873",
+      "kind": "game",
+      "year_context_only": 1976,
+      "date_context_only": {
+        "month": 12,
+        "day": 18,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Reference article introduction reproduced under its stated licence. Year comes from the article's release-year category; regional/port dates may differ.",
+      "main": {
+        "feature_id": null,
+        "title": "Microchess",
+        "subtitle": "",
+        "summary": "Microchess, sometimes written as MicroChess, is a chess program developed for the MOS Technology KIM-1 microcomputer by Peter R. Jennings in 1976, and published by his company Micro-Ware.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "A chess opponent for the microcomputer",
+            "text": "Microchess, sometimes written as MicroChess, is a chess program developed for the MOS Technology KIM-1 microcomputer by Peter R. Jennings in 1976, and published by his company Micro-Ware. The game plays chess against the human player at a beginner level, with the player entering moves via a keyboard and the computer responding, both in a custom chess notation. The game was ported to many other microcomputers such as the TRS-80, Apple II, Commodore PET, and Atari 8-bit computers by Micro-Ware and its successor company Personal Software (later VisiCorp) between 1976 and 1980, with later versions featuring graphics and more levels of play. A dedicated hardware version of the game called ChessMate was produced by Commodore International in 1978, and the game's engine was licensed to Novag for its dedicated Chess Champion Mk II chess computer in 1979."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Designing a product rather than a champion",
+            "text": "The game was created by Jennings over the course of around six months in 1976. He developed it with the aim of making a product that could be widely sold, rather than as the most advanced chess engine possible. It was possibly the first computer game to be sold commercially, and was the first commercial chess program for microcomputers and the first software package to sell 50,000 copies. Micro-Ware itself was possibly the first software publishing company. Microchess ultimately sold over a million copies across all of its versions by the mid-1980s, and variants were sold into the early 1990s. Despite being commercially successful, it has been largely regarded by critics as a poor chess game."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Microchess — article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1362440620",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "1976 in video games — annual context",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1377657866",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/Microchess?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          },
+          {
+            "title": "Microchess — original release infobox, Wikipedia revision 1362440620",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1362440620",
+            "publisher": "English Wikipedia contributors"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "atari-vcs",
+      "kind": "console",
+      "year_context_only": 1977,
+      "date_context_only": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "Atari Video Computer System",
+        "subtitle": "A library in cartridges",
+        "summary": "The console later called the Atari 2600 made a changing software collection part of home life.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "A machine with a changing library",
+            "text": "Atari released its Video Computer System in 1977. Its cartridge library eventually ranged from arcade conversions to original adventures and experiments. Distinctive controllers, a wood-grain front and game boxes turned computer entertainment into a recognisable household product."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Drawing within tight limits",
+            "text": "Creating for the machine demanded precise control of limited memory and display timing. Its constraints helped produce a visual vocabulary of strong silhouettes, flat colour and repeated patterns that remains readable decades later."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Atari 2600+ — original hardware heritage",
+            "url": "https://atari.com/products/atari-2600-plus",
+            "publisher": "Atari"
+          }
+        ]
+      },
+      "features": [
+        {
+          "feature_id": "feature-programmable-living-room",
+          "title": "Learning the new box",
+          "subtitle": "",
+          "summary": "Manuals teach a household to play.",
+          "cards": [
+            {
+              "card_id": "feature:feature-programmable-living-room:0",
+              "original_index": 0,
+              "heading": "Finding a place on the television",
+              "text": "The Atari VCS owner's booklet begins before any game can start. Its diagrams address different television antenna connections, explain the TV/Game switch box and show where the controllers belong. The household television was existing equipment with its own fittings and habits. Buying a console did not replace that arrangement; it added another use that had to be connected and later switched away. The drawings turn installation into a sequence a household can follow. Their prominence shows how much instruction belonged outside the game program itself."
+            },
+            {
+              "card_id": "feature:feature-programmable-living-room:1",
+              "original_index": 1,
+              "heading": "One panel, different rules",
+              "text": "Once a cartridge was inserted with the power off, more choices remained. Atari's booklet explains a numbered Game Select display, separate difficulty switches for the two players and a reset switch that starts the chosen game. It sends the owner back to the individual game's instructions for what those settings mean. The console supplied a common vocabulary of controls, while each cartridge interpreted it. A box that could host different games therefore needed a continuing partnership between its physical switches, the screen and the paper placed beside it."
+            },
+            {
+              "card_id": "feature:feature-programmable-living-room:2",
+              "original_index": 2,
+              "heading": "What programmable meant at home",
+              "text": "Fairchild's 1976 booklet described the console as programmable and showed owners how to configure its games. For built-in Hockey, numbered buttons answered prompts about the game, time limit and speed. Players could accept the defaults or choose other settings before beginning. The machine's flexibility therefore included decisions made at home about the kind of contest people wanted to play."
+            },
+            {
+              "card_id": "feature:feature-programmable-living-room:3",
+              "original_index": 3,
+              "heading": "The controller changes meaning",
+              "text": "The Fairchild controller also changes meaning with the activity. In Hockey, the booklet maps movement, twisting and vertical knob action to players and goalie, with diagrams explaining how these motions can combine. Optional Videocart software extends the system beyond its built-in Hockey and Tennis. The hand stays around the same object while the instructions change what that object does. Comparing the two manufacturers' booklets makes interchangeability tangible: a continuing household device, new rules arriving with software, and people learning how to connect the two."
+            }
+          ],
+          "sources": [
+            {
+              "id": "atari-vcs77",
+              "title": "Atari Video Computer System owner's manual, 1977 edition",
+              "url": "https://www.digitpress.com/library/manuals/atari2600/atari_vcs_77_v1.pdf",
+              "publisher": "Atari, Inc.; manufacturer booklet preserved by Digital Press",
+              "source_type": "primary_manufacturer_manual",
+              "locator": "PDF scan pp.2–4, setup sections 1–4: television connections, switch box, controller sockets and power-off cartridge insertion. PDF scan p.5, section 5 To Start Play: Game Select numbering, left/right difficulty, reset and reference to individual game instructions.",
+              "checked": "2026-10-21",
+              "rights": "Bibliographic reference only. The narrative is original, contains no verbatim quotations and does not grant permission to reproduce source images or documents.",
+              "story_paragraphs": [
+                0,
+                1
+              ],
+              "paragraph_locators": {
+                "0": "PDF scan pp.2–4, setup sections 1–4: television connections, switch box, controller sockets and power-off cartridge insertion.",
+                "1": "PDF scan p.5, section 5 To Start Play: Game Select numbering, left/right difficulty, reset and reference to individual game instructions."
+              }
+            },
+            {
+              "id": "fairchild76",
+              "title": "The Fairchild Video Entertainment System: The Best of the Video Games, Explained",
+              "url": "https://archive.computerhistory.org/resources/text/Fairchild/Fairchild.VideoEntertainmentSystem.1976.102646127.pdf",
+              "publisher": "Fairchild Camera and Instrument Corporation, 1976 / Computer History Museum object 102646127",
+              "source_type": "primary_manufacturer_manual",
+              "locator": "One-based PDF page 6 (printed p. 4), Playing Hockey; page 7 (printed p. 5), defaults and starting: built-in games, G?/S?/T?/M? prompts, numbered controls, speed/time options. One-based PDF page 7 (printed p. 5), How the Hand-Controllers work in Hockey; page 6 (printed p. 4), built-in games and optional Videocart programming.",
+              "checked": "2026-10-21",
+              "rights": "Bibliographic reference only. The narrative is original, contains no verbatim quotations and does not grant permission to reproduce source images or documents.",
+              "story_paragraphs": [
+                2,
+                3
+              ],
+              "paragraph_locators": {
+                "2": "One-based PDF page 6 (printed p. 4), Playing Hockey; page 7 (printed p. 5), defaults and starting: built-in games, G?/S?/T?/M? prompts, numbered controls, speed/time options.",
+                "3": "One-based PDF page 7 (printed p. 5), How the Hand-Controllers work in Hockey; page 6 (printed p. 4), built-in games and optional Videocart programming."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

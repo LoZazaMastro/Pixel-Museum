@@ -1,0 +1,695 @@
+{
+  "schema_version": 1,
+  "reviewed": "2026-10-21",
+  "review_type": "independent_declaration_preservation_partition_and_reference_prose_review",
+  "declaration_file": "content\\expansion\\calendar-identity-corrections-03.json",
+  "declaration_sha256": "7eedf0930c06601d5fe7fd9fbdc3f4d819539313f2c99befded1dd223de0ba76",
+  "status": "review_passed_with_explicit_integration_gates",
+  "counts": {
+    "new_conflict_editions": 24,
+    "whole_subject_cases": 22,
+    "mixed_cases": 2,
+    "original_sections_preserved": 105,
+    "languages_per_edition": 8,
+    "exact_locale_sections_archived": 840,
+    "proposed_original_partitions": 26,
+    "restored_reference_destinations": 24,
+    "original_media_automatically_transferred": 0,
+    "net_new_runtime_destinations_claimed": 0
+  },
+  "restored_reference_paragraphs_read": 44,
+  "structural_validation": {
+    "cases": 24,
+    "sections": 105,
+    "languages": 8,
+    "localized_sections": 840,
+    "exact_partitions": 26,
+    "restored_reference_selections": 24,
+    "source_preservation": "PASS",
+    "all_original_sections_accounted_once": "PASS",
+    "reference_revision_license_and_selection": "PASS",
+    "media_transfer": "NONE",
+    "assembly": "NOT PERFORMED"
+  },
+  "additional_independent_checks": [
+    "Source import and both complete365 audit receipt file hashes match declaration.",
+    "Each cached partition subject page ID/title/revision/extract hash independently checked, beyond restored reference selection checks.",
+    "All24 restored reference summaries and44 complete paragraphs/headings read for subject and heading alignment.",
+    "All restored metadata dates remain year-only; no scheduled day promoted to release evidence.",
+    "Exact mixed partitions, distinct existing editions and no inherited imagery retained."
+  ],
+  "resolved_findings": [
+    {
+      "id": "I03-01",
+      "severity": "medium",
+      "status": "resolved",
+      "detail": "NieR fragmentary summary replaced with exact complete source sentence."
+    },
+    {
+      "id": "I03-02",
+      "severity": "medium",
+      "status": "resolved",
+      "detail": "MadMax summary retains complete publisher name rather than splitting after Bros."
+    },
+    {
+      "id": "I03-03",
+      "severity": "medium",
+      "status": "resolved",
+      "detail": "TDU grammatical correction developed to developing is explicit in credit/changes and exact before/after body hashes; source text archived."
+    },
+    {
+      "id": "I03-04",
+      "severity": "high",
+      "status": "resolved_in_declaration_integration_must_preserve",
+      "detail": "Yakuza September5 original edition anchors2006 while canonical Japanese original remains2005. Separate explicit fields now prevent ambiguous year reuse."
+    }
+  ],
+  "integration_gates": [
+    "No implicit replacement of existing canonical stories: NeverAlone May21/Aug22, Yakuza December8/September5 and all other existing correct destinations retain separate complete editions/locales.",
+    "Two mixed days have multiple year anchors. Root must choose an explicit calendar representation rather than invent one common event year.",
+    "Hunicke and the separately flagged Boon/Meier/Baer inherited birthyear-template chronology require transparent archival status and separately sourced corrections; identity repair alone is not factual signoff.",
+    "Correct-subject media must be independently selected; original wrong-subject media/reference labels remain research archives, not automatic media additions.",
+    "All opaque existing destination IDs and all365 source editions/all1656 paragraphs in8languages must survive integration and its source-copy tests."
+  ],
+  "specific_current_checks": [
+    {
+      "source_url": "https://na.finalfantasyxiv.com/lodestone/topics/detail/28fedc0e2020548746afbe587f585ab18f5f9805",
+      "finding": "Actual official launch page read: NintendoSwitch2 August4,2026. Its inclusion in restored Shadowbringers reference is not rejected using older model knowledge.",
+      "scope": "Current platform availability only; not full primary verification of the copied introduction."
+    },
+    {
+      "source_url": "https://bigben-group.com/news/last-news/wrc-8-paranoia-happiness-is-mandatory-and-bee-simulator-will-make-their-debut-exclusively-on-the-epic-games-store/",
+      "finding": "Actual August26,2019 publisher announcement read: names BeeSimulator and planned November14 PC debut. This supports intended2019 edition/identity, not independent proof of every final regional release day."
+    }
+  ],
+  "entries": [
+    {
+      "edition_id": "daily-02-02",
+      "source_sections": 4,
+      "partitions": [
+        {
+          "target_id": "wikipedia-389975",
+          "title": "Frogger",
+          "source_body_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "canonical_year": 1981,
+          "calendar_edition_anchor_year": 1981,
+          "separate_existing_edition_required": false
+        }
+      ],
+      "restored_reference_id": "workbook-02-02-persona-3-reload",
+      "restored_reference_body_sha256": "38decfd33b9c09af75eef419231aed0d80fc00d3b5f1a2c82b9fdd159265cfe0",
+      "reference_headings_alignment": "read_pass",
+      "historical_factual_signoff": false,
+      "media_signoff": false
+    },
+    {
+      "edition_id": "daily-03-14",
+      "source_sections": 4,
+      "partitions": [
+        {
+          "target_id": "wikipedia-26401249",
+          "title": "The Witness",
+          "source_body_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "canonical_year": 2016,
+          "calendar_edition_anchor_year": 2016,
+          "separate_existing_edition_required": false
+        }
+      ],
+      "restored_reference_id": "workbook-03-14-dark-souls-ii",
+      "restored_reference_body_sha256": "7c0374e1094477d45c653c760894e69819ce6ed7b83f615d41f3513c1c789c76",
+      "reference_headings_alignment": "read_pass",
+      "historical_factual_signoff": false,
+      "media_signoff": false
+    },
+    {
+      "edition_id": "daily-03-15",
+      "source_sections": 7,
+      "partitions": [
+        {
+          "target_id": "wikipedia-22977011",
+          "title": "Homefront",
+          "source_body_indices": [
+            1,
+            2,
+            3
+          ],
+          "canonical_year": 2011,
+          "calendar_edition_anchor_year": 2011,
+          "separate_existing_edition_required": false
+        },
+        {
+          "target_id": "wikipedia-31175307",
+          "title": "Robin Hunicke",
+          "source_body_indices": [
+            0,
+            4,
+            5,
+            6
+          ],
+          "canonical_year": 1973,
+          "calendar_edition_anchor_year": 1973,
+          "separate_existing_edition_required": false
+        }
+      ],
+      "restored_reference_id": "wikipedia-56786234",
+      "restored_reference_body_sha256": "410a91991626968a81d0bfea402e588ec9f7be3a56445e28899da57055e84141",
+      "reference_headings_alignment": "read_pass",
+      "historical_factual_signoff": false,
+      "media_signoff": false
+    },
+    {
+      "edition_id": "daily-03-17",
+      "source_sections": 4,
+      "partitions": [
+        {
+          "target_id": "wikipedia-5070585",
+          "title": "Folklore",
+          "source_body_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "canonical_year": 2007,
+          "calendar_edition_anchor_year": 2007,
+          "separate_existing_edition_required": false
+        }
+      ],
+      "restored_reference_id": "workbook-03-17-grand-theft-auto-chinatown-wars",
+      "restored_reference_body_sha256": "bb037ec0cecbdb515767cff6e627d9172d96eb992f53d8ccfa48223adf0fd22e",
+      "reference_headings_alignment": "read_pass",
+      "historical_factual_signoff": false,
+      "media_signoff": false
+    },
+    {
+      "edition_id": "daily-03-18",
+      "source_sections": 4,
+      "partitions": [
+        {
+          "target_id": "wikipedia-68030360",
+          "title": "Terra Nil",
+          "source_body_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "canonical_year": 2023,
+          "calendar_edition_anchor_year": 2023,
+          "separate_existing_edition_required": false
+        }
+      ],
+      "restored_reference_id": "workbook-03-18-metal-gear-solid-v-ground-zeroes",
+      "restored_reference_body_sha256": "a978ba9db94230edcbd583ee21db157847351dba5e0340900bad485f1df62c40",
+      "reference_headings_alignment": "read_pass",
+      "historical_factual_signoff": false,
+      "media_signoff": false
+    },
+    {
+      "edition_id": "daily-04-06",
+      "source_sections": 10,
+      "partitions": [
+        {
+          "target_id": "wikipedia-501566",
+          "title": "Conker's Bad Fur Day",
+          "source_body_indices": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "canonical_year": 2001,
+          "calendar_edition_anchor_year": 2001,
+          "separate_existing_edition_required": false
+        },
+        {
+          "target_id": "wikipedia-5077457",
+          "title": "Wii Sports",
+          "source_body_indices": [
+            0,
+            7,
+            8,
+            9
+          ],
+          "canonical_year": 2006,
+          "calendar_edition_anchor_year": 2006,
+          "separate_existing_edition_required": true
+        }
+      ],
+      "restored_reference_id": "wikipedia-52259503",
+      "restored_reference_body_sha256": "fbf5e7d539d84a6bb773fc837d740ab9d6410ae37d9ef1930e2fbf247ed60d13",
+      "reference_headings_alignment": "read_pass",
+      "historical_factual_signoff": false,
+      "media_signoff": false
+    },
+    {
+      "edition_id": "daily-04-15",
+      "source_sections": 4,
+      "partitions": [
+        {
+          "target_id": "wikipedia-62003708",
+          "title": "Chicory: A Colorful Tale",
+          "source_body_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "canonical_year": 2021,
+          "calendar_edition_anchor_year": 2021,
+          "separate_existing_edition_required": false
+        }
+      ],
+      "restored_reference_id": "workbook-04-15-skate-3",
+      "restored_reference_body_sha256": "5085de4375fe3d669d30d895218a7b06e56fd0d5b9832f62f468364a7dac642c",
+      "reference_headings_alignment": "read_pass",
+      "historical_factual_signoff": false,
+      "media_signoff": false
+    },
+    {
+      "edition_id": "daily-04-17",
+      "source_sections": 4,
+      "partitions": [
+        {
+          "target_id": "wikipedia-32347007",
+          "title": "Tarn Adams",
+          "source_body_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "canonical_year": 1978,
+          "calendar_edition_anchor_year": 1978,
+          "separate_existing_edition_required": false
+        }
+      ],
+      "restored_reference_id": "workbook-04-17-yakuza-6-the-song-of-life",
+      "restored_reference_body_sha256": "e6fddb71ae189a0ca762bfba9cca73cedb30c782aad0584ff513f86484d5e7ff",
+      "reference_headings_alignment": "read_pass",
+      "historical_factual_signoff": false,
+      "media_signoff": false
+    },
+    {
+      "edition_id": "daily-04-18",
+      "source_sections": 4,
+      "partitions": [
+        {
+          "target_id": "wikipedia-22366161",
+          "title": "Assassin's Creed II",
+          "source_body_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "canonical_year": 2009,
+          "calendar_edition_anchor_year": 2009,
+          "separate_existing_edition_required": false
+        }
+      ],
+      "restored_reference_id": "workbook-04-18-minecraft-legends",
+      "restored_reference_body_sha256": "b67bc73d086c0a4b32e3e5bc5e54879f9e8cd661457596654ea5556d9246f3eb",
+      "reference_headings_alignment": "read_pass",
+      "historical_factual_signoff": false,
+      "media_signoff": false
+    },
+    {
+      "edition_id": "daily-04-22",
+      "source_sections": 4,
+      "partitions": [
+        {
+          "target_id": "wikipedia-167812",
+          "title": "SimCity 2000",
+          "source_body_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "canonical_year": 1993,
+          "calendar_edition_anchor_year": 1993,
+          "separate_existing_edition_required": false
+        }
+      ],
+      "restored_reference_id": "workbook-04-22-nier-replicant-ver-1-22474487139",
+      "restored_reference_body_sha256": "18df691148227ad6e74f63308da6b3ce21c52c8226f0cf45d5a756ec18123c06",
+      "reference_headings_alignment": "read_pass",
+      "historical_factual_signoff": false,
+      "media_signoff": false
+    },
+    {
+      "edition_id": "daily-04-23",
+      "source_sections": 4,
+      "partitions": [
+        {
+          "target_id": "wikipedia-70997952",
+          "title": "Pentiment",
+          "source_body_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "canonical_year": 2022,
+          "calendar_edition_anchor_year": 2022,
+          "separate_existing_edition_required": false
+        }
+      ],
+      "restored_reference_id": "workbook-04-23-don-t-starve",
+      "restored_reference_body_sha256": "4eb07a46635f0cd3e729b6f46a7697e98c87fbc940d35e7b8fa341a731b1abc0",
+      "reference_headings_alignment": "read_pass",
+      "historical_factual_signoff": false,
+      "media_signoff": false
+    },
+    {
+      "edition_id": "daily-05-02",
+      "source_sections": 4,
+      "partitions": [
+        {
+          "target_id": "wikipedia-74175518",
+          "title": "DAVE THE DIVER",
+          "source_body_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "canonical_year": 2023,
+          "calendar_edition_anchor_year": 2023,
+          "separate_existing_edition_required": false
+        }
+      ],
+      "restored_reference_id": "workbook-05-02-age-of-wonders-4",
+      "restored_reference_body_sha256": "62c98ff41c03045f70b349816f1a498892bcd8fa2cc2aaf47f6f615b581dece8",
+      "reference_headings_alignment": "read_pass",
+      "historical_factual_signoff": false,
+      "media_signoff": false
+    },
+    {
+      "edition_id": "daily-05-05",
+      "source_sections": 4,
+      "partitions": [
+        {
+          "target_id": "wikipedia-1678784",
+          "title": "Mystery House",
+          "source_body_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "canonical_year": 1980,
+          "calendar_edition_anchor_year": 1980,
+          "separate_existing_edition_required": false
+        }
+      ],
+      "restored_reference_id": "workbook-05-05-wolfenstein-3d",
+      "restored_reference_body_sha256": "248e0549aa9d4b0ea6ea5de4a85175df1b7381e3865d8f55fb8596ad4529840a",
+      "reference_headings_alignment": "read_pass",
+      "historical_factual_signoff": false,
+      "media_signoff": false
+    },
+    {
+      "edition_id": "daily-05-16",
+      "source_sections": 4,
+      "partitions": [
+        {
+          "target_id": "wikipedia-1895358",
+          "title": "Alan Wake",
+          "source_body_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "canonical_year": 2010,
+          "calendar_edition_anchor_year": 2010,
+          "separate_existing_edition_required": false
+        }
+      ],
+      "restored_reference_id": "workbook-05-16-terraria",
+      "restored_reference_body_sha256": "b7d002f0028866ebd2afce982498be2b1953163c06696869cea91da01629f59e",
+      "reference_headings_alignment": "read_pass",
+      "historical_factual_signoff": false,
+      "media_signoff": false
+    },
+    {
+      "edition_id": "daily-05-20",
+      "source_sections": 4,
+      "partitions": [
+        {
+          "target_id": "bee-simulator",
+          "title": "Bee Simulator",
+          "source_body_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "canonical_year": 2019,
+          "calendar_edition_anchor_year": 2019,
+          "separate_existing_edition_required": false
+        }
+      ],
+      "restored_reference_id": "workbook-05-20-transistor",
+      "restored_reference_body_sha256": "de963d10db9c17c9e0b6cc10f4be020b7f419c514b36163a69ec786b81cf31b3",
+      "reference_headings_alignment": "read_pass",
+      "historical_factual_signoff": false,
+      "media_signoff": false
+    },
+    {
+      "edition_id": "daily-06-05",
+      "source_sections": 4,
+      "partitions": [
+        {
+          "target_id": "wikipedia-59020828",
+          "title": "Eco",
+          "source_body_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "canonical_year": 2018,
+          "calendar_edition_anchor_year": 2018,
+          "separate_existing_edition_required": false
+        }
+      ],
+      "restored_reference_id": "workbook-06-05-tabletop-simulator",
+      "restored_reference_body_sha256": "a1e981200a21f5ee965c2246faf2bec601f256c4be4cea297ca455d4d39fb1e3",
+      "reference_headings_alignment": "read_pass",
+      "historical_factual_signoff": false,
+      "media_signoff": false
+    },
+    {
+      "edition_id": "daily-07-02",
+      "source_sections": 4,
+      "partitions": [
+        {
+          "target_id": "wikipedia-668164",
+          "title": "X-COM: UFO Defense",
+          "source_body_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "canonical_year": 1994,
+          "calendar_edition_anchor_year": 1994,
+          "separate_existing_edition_required": false
+        }
+      ],
+      "restored_reference_id": "workbook-07-02-final-fantasy-xiv-shadowbringers",
+      "restored_reference_body_sha256": "2f204474746d25ef0b25ec3560bf751447ea22f13513b1c2f92c7cd922b0d60b",
+      "reference_headings_alignment": "read_pass",
+      "historical_factual_signoff": false,
+      "media_signoff": false
+    },
+    {
+      "edition_id": "daily-08-22",
+      "source_sections": 4,
+      "partitions": [
+        {
+          "target_id": "never-alone",
+          "title": "Never Alone",
+          "source_body_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "canonical_year": 2014,
+          "calendar_edition_anchor_year": 2014,
+          "separate_existing_edition_required": true
+        }
+      ],
+      "restored_reference_id": "workbook-08-22-uncharted-the-lost-legacy",
+      "restored_reference_body_sha256": "4ceabb930085a9a08fbe1161853481fca884c94ad6244dde32d2c8577b162b85",
+      "reference_headings_alignment": "read_pass",
+      "historical_factual_signoff": false,
+      "media_signoff": false
+    },
+    {
+      "edition_id": "daily-08-25",
+      "source_sections": 4,
+      "partitions": [
+        {
+          "target_id": "wikipedia-198433",
+          "title": "GoldenEye 007",
+          "source_body_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "canonical_year": 1997,
+          "calendar_edition_anchor_year": 1997,
+          "separate_existing_edition_required": true
+        }
+      ],
+      "restored_reference_id": "workbook-08-25-psychonauts-2",
+      "restored_reference_body_sha256": "d427836cf3c81ffb692622e81354b8e8829db3db75727fd5e636b90ee5454379",
+      "reference_headings_alignment": "read_pass",
+      "historical_factual_signoff": false,
+      "media_signoff": false
+    },
+    {
+      "edition_id": "daily-08-26",
+      "source_sections": 4,
+      "partitions": [
+        {
+          "target_id": "wikipedia-1156995",
+          "title": "Nintendogs",
+          "source_body_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "canonical_year": 2005,
+          "calendar_edition_anchor_year": 2005,
+          "separate_existing_edition_required": false
+        }
+      ],
+      "restored_reference_id": "workbook-08-26-super-mario-sunshine",
+      "restored_reference_body_sha256": "2f2345dd0c80f121dd16e88da59bb4032134c299c5b3dbc5ddfba11bf00665fd",
+      "reference_headings_alignment": "read_pass",
+      "historical_factual_signoff": false,
+      "media_signoff": false
+    },
+    {
+      "edition_id": "daily-09-01",
+      "source_sections": 4,
+      "partitions": [
+        {
+          "target_id": "wikipedia-36874131",
+          "title": "Metal Gear Solid V: The Phantom Pain",
+          "source_body_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "canonical_year": 2015,
+          "calendar_edition_anchor_year": 2015,
+          "separate_existing_edition_required": true
+        }
+      ],
+      "restored_reference_id": "workbook-09-01-mad-max",
+      "restored_reference_body_sha256": "0838c1697ed1f22dbb2fc98a04e2be8701df82f533b96148eb1132e8bd1c338a",
+      "reference_headings_alignment": "read_pass",
+      "historical_factual_signoff": false,
+      "media_signoff": false
+    },
+    {
+      "edition_id": "daily-09-04",
+      "source_sections": 4,
+      "partitions": [
+        {
+          "target_id": "wikipedia-1451004",
+          "title": "Dune 2000",
+          "source_body_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "canonical_year": 1998,
+          "calendar_edition_anchor_year": 1998,
+          "separate_existing_edition_required": false
+        }
+      ],
+      "restored_reference_id": "workbook-09-04-tony-hawks-pro-skater-1-2",
+      "restored_reference_body_sha256": "e8e41a285dea71c731d7d6195f230d0e90229ff757b254f99fc1a3a426a5fede",
+      "reference_headings_alignment": "read_pass",
+      "historical_factual_signoff": false,
+      "media_signoff": false
+    },
+    {
+      "edition_id": "daily-09-05",
+      "source_sections": 4,
+      "partitions": [
+        {
+          "target_id": "workbook-12-08-yakuza",
+          "title": "Yakuza",
+          "source_body_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "canonical_year": 2005,
+          "calendar_edition_anchor_year": 2006,
+          "separate_existing_edition_required": true
+        }
+      ],
+      "restored_reference_id": "workbook-09-05-test-drive-unlimited",
+      "restored_reference_body_sha256": "f5dd87219082af3ea214c2256affa88adc8f92639a88f798ed0db6d4ea931fe1",
+      "reference_headings_alignment": "read_pass",
+      "historical_factual_signoff": false,
+      "media_signoff": false
+    },
+    {
+      "edition_id": "daily-09-06",
+      "source_sections": 4,
+      "partitions": [
+        {
+          "target_id": "wikipedia-1307467",
+          "title": "Shenmue II",
+          "source_body_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "canonical_year": 2001,
+          "calendar_edition_anchor_year": 2001,
+          "separate_existing_edition_required": false
+        }
+      ],
+      "restored_reference_id": "workbook-09-06-starfield",
+      "restored_reference_body_sha256": "cffd975c9715326a57501f06184c979b8c39a41a6258e3c50ab93ea11b481279",
+      "reference_headings_alignment": "read_pass",
+      "historical_factual_signoff": false,
+      "media_signoff": false
+    }
+  ],
+  "scope_limits": [
+    "Our215 edition semantic reading and native150 edition reading remain separately attributed in frozen receipts; this declaration check does not claim one reviewer re-read every original locale or primary source.",
+    "No global historical, human editorial, media or native-layout signoff. Wikipedia selection fidelity and licensing attribution do not establish every historical claim independently.",
+    "No master, assembler, runtime, locale, package or console writes."
+  ]
+}

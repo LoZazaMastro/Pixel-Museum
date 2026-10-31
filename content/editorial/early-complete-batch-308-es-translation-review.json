@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "locale": "es",
+  "entries": [
+    {
+      "entry_id": "workbook-07-02-final-fantasy-xiv-shadowbringers",
+      "source_fields_sha256": "a07aae3b82cbfca908a757015dfed859b67f37d69a3746bad2469da5bf438dd0",
+      "translation_sha256": "ed413481cb91e8dd5c282624a5673934ded238affb13764c20c62d609d9c7062",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch308/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "a9f08c403015f9e14962138aaa618ad3562757710664ac138883585752c3fa57"
+    },
+    {
+      "entry_id": "wikipedia-57665862",
+      "source_fields_sha256": "7c84404324060ca91f9c4182291c1219f806625b573707bd7b1c7728975a28b0",
+      "translation_sha256": "ae976fd06346867fb8bffa45479950ca03d11e4d5478e359cc421f06ab33a151",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch308/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "a9f08c403015f9e14962138aaa618ad3562757710664ac138883585752c3fa57"
+    },
+    {
+      "entry_id": "wikipedia-57661287",
+      "source_fields_sha256": "00e70dfc168457d5c532a5f32df3c2560e7ae102f6f1eaa20a3006b9e758dacb",
+      "translation_sha256": "552161559b5d546bea91338f3e8e5eed91b85dcbf52298f33ee9ebe421d98440",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch308/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "a9f08c403015f9e14962138aaa618ad3562757710664ac138883585752c3fa57"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "root",
+    "actual_receipt": "build/research/catalog-2019-chronological/july-august-three-private/independent-root-approval.json",
+    "actual_receipt_sha256": "14334bd91b524cc5031f87cdbb40fd327ac887317c54a9646602189114384fa0",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "root",
+      "index_sha256": "5b8cddbd8f3ad1434bccfc36e5e654ba99365654ab28718bb31fa23c4f723b83",
+      "owner_ids": [
+        "workbook-07-02-final-fantasy-xiv-shadowbringers",
+        "wikipedia-57665862",
+        "wikipedia-57661287"
+      ],
+      "english_cards_read": 9,
+      "localized_cards_read": 36,
+      "contacts_personally_viewed": 3,
+      "images_reviewed": 17,
+      "new_music_records_reviewed": 5,
+      "music_preserved": 124,
+      "review_notes": [
+        "All texts natural and faithful. No unresolved findings. OriginalFFXIValbum tracklist, Control label and new music metadata verified by exact selectedvideoID, excluding neighboring remixsearchresults.",
+        "Control six-million milestone personally read from PDFpage5. ByMay2026 is conservative reportdate, no unsupportedMarchcutoff.",
+        "Nintendo current FortuneWeave17September2026 and SquareEnix currentFFXIVSwitch2 outnow verified; no assumed anachronism.",
+        "Clean covers and original game media, NintendoThreeHouses screenshots replace modern box backs."
+      ],
+      "production_writes": false
+    }
+  }
+}

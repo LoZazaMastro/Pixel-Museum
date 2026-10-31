@@ -1,0 +1,504 @@
+{
+  "batch_id": "319-human-history",
+  "status": "completed",
+  "sources": [
+    {
+      "source_id": "319-dune-cnc",
+      "url": "https://www.cnc.fr/professionnels/visas-et-classification/155420",
+      "title": "Dune — visa 155420",
+      "publisher": "Centre national du cinéma et de l’image animée",
+      "accessed_at": "2026-10-30",
+      "scope": "Uscita francese in sala il 15 settembre 2021; visto del 2 settembre.",
+      "limitation": "Scheda ufficiale indicizzata. La regione è proposta separatamente; il visto non viene scambiato per release."
+    },
+    {
+      "source_id": "319-webb-nasa",
+      "url": "https://science.nasa.gov/mission/webb/webb-mission-timeline/",
+      "title": "Webb Mission Timeline",
+      "publisher": "NASA",
+      "accessed_at": "2026-10-30",
+      "scope": "Prima immagine l’11 luglio 2022 e raccolta completa il 12 luglio, con avvio delle operazioni scientifiche.",
+      "limitation": "Distingue presentazione delle immagini dal lancio del telescopio; non aggiunge nuovi contenuti astronomici assenti dall’INPUT."
+    },
+    {
+      "source_id": "319-ukraine-iom",
+      "url": "https://iom.sk/en/news-events/1563-needs-growing-for-over-eight-million-internally-displaced-in-ukraine-iom-report.html",
+      "title": "Needs Growing for Over Eight Million Internally Displaced in Ukraine — 10 May 2022",
+      "publisher": "International Organization for Migration",
+      "accessed_at": "2026-10-30",
+      "scope": "Oltre otto milioni di sfollati interni stimati tramite indagine tra il 17 aprile e il 3 maggio 2022.",
+      "limitation": "Dato storico con data di riferimento, non una stima della situazione nell’ottobre 2026; consultato l’estratto ufficiale indicizzato."
+    },
+    {
+      "source_id": "319-ukraine-unhcr",
+      "url": "https://www.unhcr.org/sites/default/files/2025-01/2024%20Response%20to%20New%20Emergencies%20and%20Ongoing%20Crises%20v3%201.pdf",
+      "title": "2024 Response to New Emergencies and Ongoing Crises",
+      "publisher": "UNHCR",
+      "accessed_at": "2026-10-30",
+      "scope": "Circa 6,8 milioni di rifugiati ucraini nel mondo alla fine del 2024.",
+      "limitation": "Consultato il testo pertinente indicizzato, senza dichiarare lettura visiva integrale del PDF. Non sommato agli otto milioni del 2022 come se fossero lo stesso rilevamento."
+    },
+    {
+      "source_id": "319-ukraine-ohchr",
+      "url": "https://dppa.un.org/en/node/99813",
+      "title": "Security Council briefing on Ukraine — civilian casualties through 31 December 2024",
+      "publisher": "United Nations, Department of Political and Peacebuilding Affairs",
+      "accessed_at": "2026-10-30",
+      "scope": "12.456 civili uccisi e 28.382 feriti verificati dalle Nazioni Unite, per un totale di 40.838 alla fine del 2024.",
+      "limitation": "Nel testo resta l’ordine di grandezza già presente nell’INPUT, precisando che casualties comprende morti e feriti. I conteggi ONU non equivalgono a una stima completa di tutte le vittime."
+    },
+    {
+      "source_id": "319-ukraine-military",
+      "url": "https://www.defense.gov/News/Trans/Tran/Article/3939030/pentagon-press-secretary-maj-gen-pat-ryder-holds-a-press-briefing/",
+      "title": "Press briefing by Major General Pat Ryder",
+      "publisher": "U.S. Department of Defense",
+      "accessed_at": "2026-10-30",
+      "scope": "Nel 2024 il portavoce stima oltre 600.000 militari russi morti o feriti.",
+      "limitation": "È una stima di un governo, non un conteggio indipendente e verificato di tutte le forze; nel testo è mantenuto il solo ordine di grandezza originario, come stima."
+    },
+    {
+      "source_id": "319-ukraine-occupation",
+      "url": "https://www.globalsecurity.org/wmd/library/news/ukraine/2022/06/ukraine-220602-ukraine-president08.htm",
+      "title": "Address by President Volodymyr Zelensky to the Chamber of Deputies of Luxembourg — 2 June 2022",
+      "publisher": "Presidency of Ukraine, reproduced by GlobalSecurity.org",
+      "accessed_at": "2026-10-30",
+      "scope": "Il presidente riferisce che circa il 20% del Paese è occupato, includendo territori occupati dal 2014.",
+      "limitation": "Discorso primario riprodotto su un archivio esterno. La cifra è attribuita a Zelensky e datata, non presentata come misurazione indipendente o dato attuale."
+    },
+    {
+      "source_id": "319-ukraine-scale",
+      "url": "https://www.norway.no/en/missions/un/statements/general-assembly-plenary/2026/ga-emergency-special-session-on-ukraine/",
+      "title": "General Assembly emergency special session on Ukraine — 24 February 2026",
+      "publisher": "Nordic countries / Permanent Mission of Norway to the United Nations",
+      "accessed_at": "2026-10-30",
+      "scope": "Definisce il conflitto il maggiore sul suolo europeo dalla Seconda guerra mondiale.",
+      "limitation": "Fonte diplomatica primaria per questo confronto; la qualificazione del sommario riprende quella già fornita nell’INPUT, senza aggiungere un nuovo calcolo delle perdite."
+    },
+    {
+      "source_id": "319-gaza-coi",
+      "url": "https://www.un.org/unispal/document/israel-has-committed-genocide-in-the-gaza-strip-un-commission-finds-16sep25/",
+      "title": "Israel has committed genocide in the Gaza Strip, UN Commission finds — 16 September 2025",
+      "publisher": "United Nations Independent International Commission of Inquiry / UNISPAL",
+      "accessed_at": "2026-10-30",
+      "scope": "Conclusione di genocidio, intento di distruzione in tutto o in parte, quattro categorie di atti e descrizione delle distruzioni, della fame, della violenza sessuale e degli attacchi alle condizioni di sopravvivenza.",
+      "limitation": "Consultato il contenuto ufficiale indicizzato; apertura della pagina e del PDF completo bloccata da HTTP403. La conclusione è attribuita alla commissione, non presentata come una sentenza della Corte internazionale di giustizia."
+    },
+    {
+      "source_id": "319-gaza-report",
+      "url": "https://www.un.org/unispal/document/commission-of-inquiry-report-genocide-in-gaza-a-hrc-60-crp-3/",
+      "title": "A/HRC/60/CRP.3 — Legal analysis of the conduct of Israel in Gaza pursuant to the Genocide Convention",
+      "publisher": "United Nations Independent International Commission of Inquiry",
+      "accessed_at": "2026-10-30",
+      "scope": "Conclusioni e raccomandazioni indicizzate, paragrafi 251–258; analisi delle condotte dal 7 ottobre 2023 al 31 luglio 2025.",
+      "limitation": "Non dichiarata una lettura integrale del documento di 72 pagine; il testo distingue la data del rapporto dal periodo trattato."
+    },
+    {
+      "source_id": "319-gaza-ocha",
+      "url": "https://www.ochaopt.org/content/humanitarian-situation-update-329-gaza-strip",
+      "title": "Humanitarian Situation Update 329 — Gaza Strip",
+      "publisher": "UN Office for the Coordination of Humanitarian Affairs",
+      "accessed_at": "2026-10-30",
+      "scope": "Dati del Ministero della salute di Gaza al 7 ottobre 2025: 67.173 morti, dei quali 20.179 bambini, circa il 30%.",
+      "limitation": "La fonte originaria del conteggio è esplicita. Il dato non è descritto come conteggio indipendente OCHA o come proporzione invariabile nel tempo."
+    },
+    {
+      "source_id": "319-gaza-committee",
+      "url": "https://www.un.org/unispal/document/un-special-committee-press-release-14nov24/",
+      "title": "UN Special Committee finds Israel’s warfare methods in Gaza consistent with genocide — 14 November 2024",
+      "publisher": "United Nations Special Committee / UNISPAL",
+      "accessed_at": "2026-10-30",
+      "scope": "Il comitato descrive i metodi di guerra come consistent with genocide, con particolare riferimento alla privazione deliberata delle condizioni di vita.",
+      "limitation": "Mantenuta questa formulazione specifica, distinta dalla conclusione esplicita di genocidio della commissione del settembre 2025."
+    },
+    {
+      "source_id": "319-gaza-iags",
+      "url": "https://genocidescholars.org/wp-content/uploads/2025/08/IAGS-Resolution-on-Gaza-FINAL.pdf",
+      "title": "IAGS Resolution on the Situation in Gaza",
+      "publisher": "International Association of Genocide Scholars",
+      "accessed_at": "2026-10-30",
+      "scope": "Risoluzione dell’agosto 2025 che qualifica la situazione come genocidio ai sensi del diritto internazionale.",
+      "limitation": "Consultato il testo indicizzato; non si afferma unanimità dei membri, né si equipara la risoluzione a un giudizio di tribunale."
+    },
+    {
+      "source_id": "319-gaza-icj",
+      "url": "https://www.justice.gov.za/m_statements/2024/20240126-Hague-ICJ-Order-192-20240126-ord-01-00-en.pdf",
+      "title": "Order of 26 January 2024 — South Africa v. Israel",
+      "publisher": "International Court of Justice, copy hosted by South Africa Department of Justice",
+      "accessed_at": "2026-10-30",
+      "scope": "Paragrafi 83–84 e dispositivo: misure provvisorie vincolanti, merito e competenza lasciati impregiudicati.",
+      "limitation": "Letto il testo pertinente del PDF ufficiale riprodotto. Non viene dedotto lo stato processuale nell’ottobre 2026 dalla sola ordinanza del 2024."
+    },
+    {
+      "source_id": "319-nobel2025",
+      "url": "https://www.nobelprize.org/uploads/2025/10/Enpress25.pdf",
+      "title": "The Nobel Prize in Literature 2025 — press release",
+      "publisher": "Swedish Academy / NobelPrize.org",
+      "accessed_at": "2026-10-30",
+      "scope": "Nome del premiato, annuncio del 9 ottobre 2025 e motivazione ufficiale.",
+      "limitation": "Testo ufficiale indicizzato, apertura del PDF bloccata da HTTP403. La citazione è già presente nell’INPUT; gli adattamenti sono traduzioni redazionali, non citazioni attribuite a comunicati ufficiali nelle quattro lingue."
+    },
+    {
+      "source_id": "319-nobel2025-bio",
+      "url": "https://www.nobelprize.org/uploads/2025/10/Enbio25.pdf",
+      "title": "Biobibliographical notes — László Krasznahorkai",
+      "publisher": "Swedish Academy / NobelPrize.org",
+      "accessed_at": "2026-10-30",
+      "scope": "Conferma nascita nel 1954.",
+      "limitation": "La voce riguarda il premio del 2025 e conserva la sua data di evento: non viene ricollocata al 1954."
+    },
+    {
+      "source_id": "319-nobel2026",
+      "url": "https://news.berkeley.edu/2026/10/08/anne-carson-wins-a-nobel-prize-in-literature-with-a-chapter-at-uc-berkeley/",
+      "title": "Anne Carson wins a Nobel Prize in Literature, with a chapter at UC Berkeley — 8 October 2026",
+      "publisher": "University of California, Berkeley",
+      "accessed_at": "2026-10-30",
+      "scope": "Notizia istituzionale contemporanea che conferma Anne Carson come vincitrice e il giorno dell’annuncio.",
+      "limitation": "Pagina letta. Le pagine ufficiali Nobel e quella di Queen’s University fornite non si aprono da questo ambiente; non se ne dichiara una consultazione integrale. Il testo non introduce dettagli biografici nuovi dalla notizia."
+    },
+    {
+      "source_id": "319-nobel2026-ap",
+      "url": "https://apnews.com/article/05a268ffc76827d273f9d986c5a5a65e",
+      "title": "Anne Carson wins 2026 Nobel Prize in Literature",
+      "publisher": "Associated Press",
+      "accessed_at": "2026-10-30",
+      "scope": "Riscontro giornalistico contemporaneo del premio assegnato alla poetessa canadese.",
+      "limitation": "Consultato il testo indicizzato. La motivazione citata era già nel materiale dell’utente; la cerimonia del 10 dicembre è presentata come futura rispetto alla lavorazione del 30 ottobre 2026."
+    }
+  ],
+  "decisions": [
+    {
+      "target_id": "history-2021-dune-2021-film",
+      "problem": "La data 15 settembre 2021 nel metadato è priva di regione.",
+      "conclusion": "Il CNC conferma la release francese in sala in tale giorno. Conservati il testo sul progetto in due film e tutti i crediti; regione proposta separatamente.",
+      "source_ids": [
+        "319-dune-cnc"
+      ],
+      "text_applied": false
+    },
+    {
+      "target_id": "history-2022-james-webb-space-telescope",
+      "problem": "L’anno della voce potrebbe confondersi con il lancio del telescopio; il materiale distingue due presentazioni.",
+      "conclusion": "Mantenuta l’anteprima dell’11 luglio e la pubblicazione completa del 12 luglio 2022, proponendo quest’ultima come evento della timeline.",
+      "source_ids": [
+        "319-webb-nasa"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-2022-russian-invasion-of-ukraine",
+      "problem": "Cifre di vittime, sfollati, rifugiati e occupazione prive di data, e casualties potenzialmente traducibile erroneamente come soli morti.",
+      "conclusion": "Precisati morti e feriti e attribuite le cifre ai rispettivi rilevamenti: sfollati IOM maggio 2022; rifugiati UNHCR fine 2024; circa un quinto occupato secondo Zelensky giugno 2022. Non si sommano dati di momenti diversi.",
+      "source_ids": [
+        "319-ukraine-iom",
+        "319-ukraine-unhcr",
+        "319-ukraine-ohchr",
+        "319-ukraine-military",
+        "319-ukraine-occupation",
+        "319-ukraine-scale"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-2023-genocide-in-gaza",
+      "problem": "Il testo iniziale riunisce conclusioni di organismi diversi, cifra dei bambini senza data e potenziale equivalenza fra indagini e verdetto della Corte.",
+      "conclusion": "Attribuita alla commissione ONU la conclusione del settembre 2025; conservate le condotte descritte. Il 30% è riferito ai dati ministeriali del 7 ottobre 2025 ripresi da OCHA. Distinti comitato speciale, commissione, IAGS e ordinanza cautelare ICJ del 2024, senza dedurre l’esito processuale successivo.",
+      "source_ids": [
+        "319-gaza-coi",
+        "319-gaza-report",
+        "319-gaza-ocha",
+        "319-gaza-committee",
+        "319-gaza-iags",
+        "319-gaza-icj"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-2025-nobel-literature",
+      "problem": "Premio a una persona vivente: occorre distinguere anno di nascita e data dell’evento.",
+      "conclusion": "Conservati nascita nel 1954 e annuncio del premio il 9 ottobre 2025, senza trasformare la voce in una biografia. Motivazione tradotta redazionalmente nelle quattro lingue, originale inglese conservato.",
+      "source_ids": [
+        "319-nobel2025",
+        "319-nobel2025-bio"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-2026-nobel-literature",
+      "problem": "Evento recente da verificare e consegna del premio ancora futura al momento della lavorazione.",
+      "conclusion": "La notizia istituzionale contemporanea conferma Anne Carson e l’annuncio dell’8 ottobre 2026. La consegna del 10 dicembre rimane prevista, non avvenuta. Non corretta la vincitrice sulla base di conoscenze precedenti al 2026.",
+      "source_ids": [
+        "319-nobel2026",
+        "319-nobel2026-ap"
+      ],
+      "text_applied": true
+    }
+  ],
+  "metadata_proposals": [
+    {
+      "target_id": "history-2021-dune-2021-film",
+      "field": "release_region",
+      "proposed": "France — theatrical release",
+      "reason": "Il 15 settembre 2021 già presente è documentato dal CNC come uscita in sala francese.",
+      "source_ids": [
+        "319-dune-cnc"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "history-2022-james-webb-space-telescope",
+      "field": "event_date",
+      "proposed": {
+        "year": 2022,
+        "month": 7,
+        "day": 12,
+        "precision": "day",
+        "event": "Publication of the first complete science image and spectra collection"
+      },
+      "reason": "Data dell’evento raccontato, distinta dal lancio del telescopio e dall’anteprima del giorno precedente.",
+      "source_ids": [
+        "319-webb-nasa"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "history-2022-the-batman",
+      "field": "release_region",
+      "proposed": "United States — theatrical release",
+      "reason": "La data del 4 marzo 2022 è esplicitamente statunitense nel materiale originale.",
+      "source_ids": [],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "history-2022-fantastic-beasts-the-secrets-of-dumbledore",
+      "field": "release_region",
+      "proposed": "Britain and Ireland — theatrical release",
+      "reason": "L’8 aprile 2022 è distinto nel materiale dalla release statunitense del 15 aprile.",
+      "source_ids": [],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "history-2024-2024-summer-olympics",
+      "field": "event_date",
+      "proposed": {
+        "year": 2024,
+        "month": 7,
+        "day": 26,
+        "precision": "day",
+        "event": "Opening of Paris 2024 Olympic Games"
+      },
+      "reason": "La voce indica già 26 luglio–11 agosto, precisando competizioni dal 24 luglio. La data proposta corrisponde all’apertura formale, non alla prima gara.",
+      "source_ids": [],
+      "applied_to_catalog": false
+    }
+  ],
+  "expansion_assessments": [
+    {
+      "target_id": "history-2021-dune-2021-film",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale, scientifica, politica o sportiva: non gioco né console cui applicare le quote richieste."
+    },
+    {
+      "target_id": "history-2022-james-webb-space-telescope",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale, scientifica, politica o sportiva: non gioco né console cui applicare le quote richieste."
+    },
+    {
+      "target_id": "history-2022-russian-invasion-of-ukraine",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale, scientifica, politica o sportiva: non gioco né console cui applicare le quote richieste."
+    },
+    {
+      "target_id": "history-2022-the-batman",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale, scientifica, politica o sportiva: non gioco né console cui applicare le quote richieste."
+    },
+    {
+      "target_id": "history-2022-fantastic-beasts-the-secrets-of-dumbledore",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale, scientifica, politica o sportiva: non gioco né console cui applicare le quote richieste."
+    },
+    {
+      "target_id": "history-2023-genocide-in-gaza",
+      "main_cards": 2,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale, scientifica, politica o sportiva: non gioco né console cui applicare le quote richieste."
+    },
+    {
+      "target_id": "history-2024-2024-summer-olympics",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale, scientifica, politica o sportiva: non gioco né console cui applicare le quote richieste."
+    },
+    {
+      "target_id": "history-2025-nobel-literature",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale, scientifica, politica o sportiva: non gioco né console cui applicare le quote richieste."
+    },
+    {
+      "target_id": "history-2026-nobel-literature",
+      "main_cards": 2,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale, scientifica, politica o sportiva: non gioco né console cui applicare le quote richieste."
+    }
+  ],
+  "editorial_review": {
+    "english_written_first": true,
+    "languages": [
+      "en",
+      "it",
+      "fr",
+      "de",
+      "es"
+    ],
+    "entry_count": 9,
+    "card_count_per_language": 15,
+    "reviewed_at": "2026-10-30T02:01:37.447602+00:00",
+    "checks": [
+      "Letto tutto il lotto originale. Inglese salvato e controllato prima di iniziare gli adattamenti nelle altre quattro lingue.",
+      "Sommari inglesi tra 32 e 38 parole. Tutte le quindici card hanno un titolo specifico in ciascuna lingua; le card lunghe sono articolate in capoversi senza cambiarne il numero.",
+      "Conservati registi, sceneggiatori, attori, direttore della fotografia, compositori, dettagli della trama e della produzione e titolo The Room We Require senza traduzione.",
+      "Preservati eventi distinti dalle biografie: premi Nobel legati agli annunci, Webb alla pubblicazione scientifica, Olimpiadi alla manifestazione. Date film sempre riferite alla distribuzione e al territorio documentato.",
+      "Le cinque versioni sono state rilette durante la redazione per coerenza di nomi, numeri, attribuzioni, date e tempi verbali. Citazioni Nobel rese con traduzione redazionale fedele nelle quattro lingue; originale inglese mantenuto.",
+      "Schema, ID, ordine e conteggio delle card verificati con il validatore. Nessun HTML o Markdown introdotto nei campi di testo."
+    ],
+    "scope_limit": "I riscontri nuovi riguardano i problemi descritti e riportano i limiti di accesso. Le informazioni non interessate da contraddizioni restano quelle dell’INPUT, con le attribuzioni originali conservate nel pacchetto. Non è dichiarata una nuova verifica esaustiva di ogni dettaglio cinematografico o di ogni soggetto citato genericamente nell’INPUT.",
+    "root_review": {
+      "reviewed_at": "2026-10-30T02:03:47.831643+00:00",
+      "checks": [
+        "Riesaminati i12 avvisi numerici: il12luglio Webb è espresso in spagnolo come giorno successivo all’11; 6,8 e 30% hanno convenzioni locali. Gli altri numeri derivano dalle precisazioni documentate."
+      ],
+      "scope": "Controllo mirato degli avvisi automatici e dei campi nominati, non attestazione universale di tutti i fatti."
+    }
+  },
+  "validation": {
+    "valid": true,
+    "batch_id": "319-human-history",
+    "completed": true,
+    "entry_count": 9,
+    "card_count_per_language": 15,
+    "language_count": 5,
+    "translated_card_count": 75,
+    "entry_card_counts": {
+      "history-2021-dune-2021-film": 1,
+      "history-2022-james-webb-space-telescope": 1,
+      "history-2022-russian-invasion-of-ukraine": 1,
+      "history-2022-the-batman": 3,
+      "history-2022-fantastic-beasts-the-secrets-of-dumbledore": 3,
+      "history-2023-genocide-in-gaza": 2,
+      "history-2024-2024-summer-olympics": 1,
+      "history-2025-nobel-literature": 1,
+      "history-2026-nobel-literature": 2
+    },
+    "issue_counts": {
+      "history-2021-dune-2021-film": 0,
+      "history-2022-james-webb-space-telescope": 0,
+      "history-2022-russian-invasion-of-ukraine": 0,
+      "history-2022-the-batman": 0,
+      "history-2022-fantastic-beasts-the-secrets-of-dumbledore": 0,
+      "history-2023-genocide-in-gaza": 0,
+      "history-2024-2024-summer-olympics": 0,
+      "history-2025-nobel-literature": 0,
+      "history-2026-nobel-literature": 0
+    },
+    "summary_checks": [
+      {
+        "entry_id": "history-2021-dune-2021-film",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "history-2022-james-webb-space-telescope",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "history-2022-russian-invasion-of-ukraine",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "history-2022-the-batman",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "history-2022-fantastic-beasts-the-secrets-of-dumbledore",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "history-2023-genocide-in-gaza",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "history-2024-2024-summer-olympics",
+        "feature_id": null,
+        "english_summary_words": 34
+      },
+      {
+        "entry_id": "history-2025-nobel-literature",
+        "feature_id": null,
+        "english_summary_words": 32
+      },
+      {
+        "entry_id": "history-2026-nobel-literature",
+        "feature_id": null,
+        "english_summary_words": 34
+      }
+    ],
+    "editorial_review": [
+      "history-2022-james-webb-space-telescope/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-2022-james-webb-space-telescope/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-2022-james-webb-space-telescope/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-2022-james-webb-space-telescope/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-2022-russian-invasion-of-ukraine/main/en: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-2022-russian-invasion-of-ukraine/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-2022-russian-invasion-of-ukraine/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-2022-russian-invasion-of-ukraine/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-2022-russian-invasion-of-ukraine/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-2023-genocide-in-gaza/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-2023-genocide-in-gaza/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-2023-genocide-in-gaza/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-2023-genocide-in-gaza/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-2024-2024-summer-olympics/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-2024-2024-summer-olympics/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-2024-2024-summer-olympics/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-2024-2024-summer-olympics/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-2025-nobel-literature/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-2025-nobel-literature/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-2025-nobel-literature/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-2025-nobel-literature/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-2026-nobel-literature/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-2026-nobel-literature/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-2026-nobel-literature/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-2026-nobel-literature/main/es: main title changed; check that this is a descriptive title and not an altered official name"
+    ],
+    "failures": []
+  },
+  "output_sha256": "974a612564abf9cd4e9471405801af248d4982572b410e36fed5148b82f91ec7"
+}

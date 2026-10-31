@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "locale": "it",
+  "review": "Binding of exact independently approved complete candidate members; no new linguistic review substituted. Every full candidate SHA and independent PASS receipt checked, all current English five fields and translation hashes validated.",
+  "entries": [
+    {
+      "entry_id": "wikipedia-1192787",
+      "source_fields_sha256": "34c3835c45116c868443dfb6ee4776a81ef9e16b142566f6fc4ad5bc981d39cc",
+      "translation_sha256": "4a361322389f4e2c4d625706c7e640426987c57fbb91a6b01c1f528471872054",
+      "independent_peer": "build/research/fear2005-four-language-completion/independent-all-fields-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "8df293a4dfbbe19cb095e1578fa5878f4f1e93cbaef66c265d23c5ba9a57079c",
+      "candidate_path": "build/research/fear2005-four-language-completion/fear-four-whole-paragraphs-four-language-candidate.json",
+      "candidate_sha256": "966b955df7234be2565adc1566564b8f903a5fd3e81a2c34b995c2ce3911ba1e"
+    },
+    {
+      "entry_id": "shadow-of-the-colossus",
+      "source_fields_sha256": "82150fb2f0c1097a70d97a2fce7a0391028e3bd71a0c22f96833d1d1fa994a3b",
+      "translation_sha256": "a76af74572e906cf15be9106ab72cacce8307f43a964c0f6fe9d79fa6125171f",
+      "independent_peer": "build/research/shadow-colossus2005-four-language-completion/independent-all-fields-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "1f9934fb16244d9f6cd4866d48a995899b20bd553eaea049111cd2bb9af87796",
+      "candidate_path": "build/research/shadow-colossus2005-four-language-completion/shadow-colossus-four-language-acclaimed-ico-and-remaster-developer-precise-candidate.json",
+      "candidate_sha256": "1ac783edcac94ad7399dd73ee5b8a8b1cf0b5b184538acf3c98730c0d67de257"
+    }
+  ]
+}

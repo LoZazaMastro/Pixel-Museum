@@ -1,0 +1,868 @@
+{
+  "schema": "pixel-museum-editorial-input-v1",
+  "batch_id": "019-catalog",
+  "source_file": "content/catalog.json",
+  "source_sha256": "0b077b3f8628f921ab84574d286f9d9943fb8ae6acb8f136ffadde6e01cae241",
+  "entries": [
+    {
+      "entry_id": "mule",
+      "kind": "person",
+      "year_context_only": 1983,
+      "date_context_only": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "Dani Bunten Berry and M.U.L.E.",
+        "subtitle": "Your rivals are also your neighbours",
+        "summary": "Dani Bunten Berry and Ozark Softscape made competition depend on a colony that everybody needed to keep alive.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "A colony everyone depends on",
+            "text": "You can have money and still need something another player controls. That is the useful complication at the heart of M.U.L.E. On a small colony, players develop land and produce resources. They can compete for wealth, but their choices also shape the settlement that supports them all."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Starting with the social experience",
+            "text": "Dani Bunten Berry and the Ozark Softscape team released the game in 1983. Its production was collaborative: Bill Bunten shared design work and testing, Jim Rushing handled substantial calculation code, and Alan Watson worked on graphics and animation. In a contemporary interview, the team described beginning with the experiences they wanted players to have, before settling the theme and working out the program."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "An auction between neighbours",
+            "text": "The auctions make that approach visible. A surplus is only valuable if someone will buy it; a shortage changes what a player is prepared to pay. Negotiation happens through movement and timing as well as calculation. People gathered around the same computer can watch a rival hesitate, hold out for a better deal or discover that their own plan depended on someone else's harvest."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "Making room for cooperation",
+            "text": "M.U.L.E. makes the social encounter part of the machinery of the game. Its rules do not have to script every betrayal or act of cooperation. They create circumstances in which those moments can happen between people. Bunten's later interest in connected play followed that enduring problem: how can a computer help people make an interesting situation together?"
+          }
+        ],
+        "sources": [
+          {
+            "title": "Dani Bunten Berry papers — Ozark Softscape materials",
+            "url": "https://archives.museumofplay.org/repositories/3/archival_objects/13766",
+            "publisher": "The Strong National Museum of Play"
+          },
+          {
+            "title": "Interviewing Dan Bunten",
+            "url": "https://www.atarimagazines.com/v3n9/profiles.php",
+            "publisher": "Antic / Arthur Leyenberger,January1985",
+            "type": "Primary: contemporary Bunten interview and team profile",
+            "supports": "Ozark team roles,experience-led planning,1983MULE,commodities/auctions/cooperative competitive colony. Title reflects the contemporary publication; museum uses Dani Bunten Berry."
+          }
+        ]
+      },
+      "features": [
+        {
+          "feature_id": "feature-dani-bunten-social",
+          "title": "Rules for people in the room",
+          "subtitle": "",
+          "summary": "Time and trust become playable.",
+          "cards": [
+            {
+              "card_id": "feature:feature-dani-bunten-social:0",
+              "original_index": 0,
+              "heading": "Finding a public for an idea",
+              "text": "Dani Bunten Berry described a real-time stock-market simulation on an Apple as an earlier form of the idea that became M.U.L.E. In a January 1985 interview, she credited Electronic Arts with helping the team shape and communicate its work. Finding a publisher was part of finding a public. The computer could perform calculations, but the design still needed to let people understand events soon enough to respond. Bunten spoke about those human decisions as readily as the technology behind them."
+            },
+            {
+              "card_id": "feature:feature-dani-bunten-social:1",
+              "original_index": 1,
+              "heading": "Food buys time",
+              "text": "The original M.U.L.E. manual gives food an unusual consequence: it determines how much time a player has to develop land. Energy supports production, and Smithore supplies the machinery needed for further development. A shortage therefore changes more than a number beside a resource. It can limit the next opportunity to act or alter what is available in the colony's store. The player across the room may possess exactly what another plan requires. Interdependence is written into the practical rules before anybody decides whether to behave generously."
+            },
+            {
+              "card_id": "feature:feature-dani-bunten-social:2",
+              "original_index": 2,
+              "heading": "Who is inside the deal",
+              "text": "The Tournament rules make private agreement an action. During a product auction, participants can coordinate button presses to enter a trading interval. Other buyers, sellers and the store recede while the selected players negotiate. The screen marks a change in who is allowed to make a deal. Cooperation can benefit two people and exclude another at the same moment. That ambiguity gives the social encounter texture: agreeing to help somebody is also a decision about everyone left outside the agreement, under the pressure of a running timer."
+            },
+            {
+              "card_id": "feature:feature-dani-bunten-social:3",
+              "original_index": 3,
+              "heading": "When discovery needs a prompt",
+              "text": "Bunten's later discussion of Seven Cities of Gold reveals the limits of discovery without guidance. The team gave testers a disk without explanation, then heard from people who could not work out how to leave their ship. A menu label that seemed natural to its makers did not communicate the action to everyone else. The lesson reaches back to the social design of M.U.L.E.: players need enough shared understanding to make meaningful choices together. Leaving room for surprise does not remove the designer's responsibility to make an action findable."
+            }
+          ],
+          "sources": [
+            {
+              "id": "bunten85",
+              "title": "Interviewing Dan Bunten",
+              "url": "https://www.atarimagazines.com/v3n9/profiles.php",
+              "publisher": "Arthur Leyenberger / Antic 3(9), January 1985",
+              "source_type": "primary_contemporary_participant_interview",
+              "locator": "Human-interface discussion near the end: earlier 16K Apple real-time stock-market design and Electronic Arts support. Seven Cities manual/playtesting questions: disk-only tests, getting off the ship and the transfer-menu wording.",
+              "checked": "2026-10-21",
+              "rights": "Bibliographic reference only. The narrative is original and contains no direct quotations. Public access does not supply image, artwork, game-data or recording reproduction rights.",
+              "story_paragraphs": [
+                0,
+                3
+              ],
+              "paragraph_locators": {
+                "0": "Human-interface discussion near the end: earlier 16K Apple real-time stock-market design and Electronic Arts support.",
+                "3": "Seven Cities manual/playtesting questions: disk-only tests, getting off the ship and the transfer-menu wording."
+              }
+            },
+            {
+              "id": "mule83",
+              "title": "M.U.L.E. instruction manual",
+              "url": "https://www.mocagh.org/ea/mule-manual.pdf",
+              "publisher": "Electronic Arts / Ozark Softscape, 1983; manual design Alta Graphix; preserved by Museum of Computer Adventure Game History",
+              "source_type": "primary_manufacturer_manual",
+              "locator": "Resource summary, PDF p.19: food/development time, energy production and Smithore/M.U.L.E. production. Edition-specific rules. Tournament Game, Collusion, printed p.13/PDF p.15: simultaneous input, private product auctions and limited timer.",
+              "checked": "2026-10-21",
+              "rights": "Bibliographic reference only. The narrative is original and contains no direct quotations. Public access does not supply image, artwork, game-data or recording reproduction rights.",
+              "story_paragraphs": [
+                1,
+                2
+              ],
+              "paragraph_locators": {
+                "1": "Resource summary, PDF p.19: food/development time, energy production and Smithore/M.U.L.E. production. Edition-specific rules.",
+                "2": "Tournament Game, Collusion, printed p.13/PDF p.15: simultaneous input, private product auctions and limited timer."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entry_id": "wikipedia-2383254",
+      "kind": "game",
+      "year_context_only": 1983,
+      "date_context_only": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Reference article introduction reproduced under its stated licence. Year comes from the article's release-year category; regional/port dates may differ.",
+      "main": {
+        "feature_id": null,
+        "title": "Atic Atac",
+        "subtitle": "",
+        "summary": "Atic Atac is an action-adventure video game developed and published by Ultimate Play the Game, released for the ZX Spectrum in 1983 and the BBC Micro in 1985.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "",
+            "text": "Atic Atac is an action-adventure video game developed and published by Ultimate Play the Game, released for the ZX Spectrum in 1983 and the BBC Micro in 1985. The game takes place within a castle in which the player must seek out the \"Golden Key of ACG\" by unlocking doors and avoiding enemies. It was Ultimate's second game to require 48K of RAM; most of their previous games for the Spectrum ran on unexpanded 16K models."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "",
+            "text": "The game was written by Tim Stamper and its graphics were designed by brother Chris Stamper. Atic Atac received praise from critics upon release, mostly for its graphics and gameplay. It was later included in the 2015 release by Rare on the Xbox One retrospective compilation, Rare Replay."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "",
+            "text": "The game served as inspiration for the critically acclaimed adventure game show Knightmare."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Atic Atac — article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1380992553",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "1984 in video games — annual context",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1360221888",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/Atic_Atac?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-2952297",
+      "kind": "game",
+      "year_context_only": 1983,
+      "date_context_only": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Reference article introduction reproduced under its stated licence. Year comes from the article's release-year category; regional/port dates may differ.",
+      "main": {
+        "feature_id": null,
+        "title": "Pole Position II",
+        "subtitle": "",
+        "summary": "Pole Position II is a 1983 racing video game developed and published by Namco for arcades.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "",
+            "text": "Pole Position II is a 1983 racing video game developed and published by Namco for arcades. It is the sequel to the 1982 game Pole Position. Atari, Inc. released the game in North America. Atari also released a port as the pack-in game for its Atari 7800 ProSystem in 1986. Pole Position arcade machines can be converted to Pole Position II by swapping several chips."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "",
+            "text": "The gameplay is the same as in the original Pole Position with three additional tracks to choose from. Like its predecessor, Pole Position II was a major commercial success in arcades, becoming the highest-grossing arcade game of 1984 in the United States, and remaining among the annual highest-grossing arcade games in Japan and the US through 1987."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Pole Position II — article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1378363416",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "1984 in video games — annual context",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1360221888",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/Pole_Position_II?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-652424",
+      "kind": "game",
+      "year_context_only": 1983,
+      "date_context_only": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Reference article introduction reproduced under its stated licence. Year comes from the article's release-year category; regional/port dates may differ.",
+      "main": {
+        "feature_id": null,
+        "title": "Jetpac",
+        "subtitle": "",
+        "summary": "Jetpac is a platform video game developed and published by Ultimate Play the Game and released for the ZX Spectrum and VIC-20 in 1983 and the BBC Micro in 1984.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "",
+            "text": "Jetpac is a platform video game developed and published by Ultimate Play the Game and released for the ZX Spectrum and VIC-20 in 1983 and the BBC Micro in 1984. It is the first game to be released by Ultimate Play the Game, the company which later became Rare. The game follows Jetman as he must rebuild his rocket using a jet pack in order to explore different planets, while simultaneously defending against hostile aliens. It was written by Ultimate co-founder Chris Stamper with graphics designed by his brother, Tim Stamper. Reviewers praised Jetpac's presentation and gameplay, and it won \"Game of the Year\" at the Golden Joystick Awards in 1983."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "",
+            "text": "Jetpac has since been included as an unlockable minigame in 1999's Donkey Kong 64 and as part of the 2015 compilation Rare Replay. It was later included in a game compilation on the ZX Spectrum Vega. It spawned two direct sequels and a 2007 remake, Jetpac Refuelled, which was released for the Xbox Live Arcade service."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Jetpac — article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1376470501",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "1984 in video games — annual context",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1360221888",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/Jetpac?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-746221",
+      "kind": "game",
+      "year_context_only": 1983,
+      "date_context_only": {
+        "month": 2,
+        "day": 0,
+        "precision": "month",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Reference article introduction reproduced under its stated licence. Year comes from the article's release-year category; regional/port dates may differ.",
+      "main": {
+        "feature_id": null,
+        "title": "Xevious",
+        "subtitle": "",
+        "summary": "Xevious is a 1983 vertically scrolling shooter video game developed and published by Namco for arcades.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Air and ground targets",
+            "text": "Xevious is a 1983 vertically scrolling shooter video game developed and published by Namco for arcades. It was released in Japan and in North America by Atari, Inc. in February 1983. Controlling the Solvalou starship, the player attacks Xevious forces before they destroy all of mankind. The Solvalou has two weapons at its disposal: a zapper to destroy flying craft, and a blaster to bomb ground installations and enemies. It runs on the Namco Galaga arcade system. An upgraded version, Super Xevious, was released in December 1984."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Building the world of Xevious",
+            "text": "The game was designed by Masanobu Endō and a small team. Created to rival the success of Scramble, it was originally themed around the Vietnam War and titled Cheyenne. Endō wanted the game to have a detailed, integral storyline and a comprehensive world, and to be welcoming for newer players. Several enemies and characters were made to pay homage to other popular science fiction works, including Star Wars, UFO, Alien and Battlestar Galactica."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "A vertical-shooter landmark",
+            "text": "Xevious was praised for its detailed graphics, challenge and originality. It became an unprecedented success for Namco in Japan, with record-breaking sales figures making it the biggest game since Space Invaders. The North American release paled in comparison, despite still selling 5,295 arcade units by the end of 1983. It has been listed among the most influential games in the shoot 'em up genre, establishing the template for vertically scrolling shooters and inspiring games such as TwinBee and RayForce. It was ported to home systems, followed by several sequels and spin-offs, and is included in many Namco compilations."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Xevious — article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1379586296",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "2004 in video games — annual context",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1379835777",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/Xevious?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          },
+          {
+            "title": "Xevious — original release infobox, Wikipedia revision 1379586296",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1379586296",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Soundtrack publication: Xevious - Full OST",
+            "url": "https://www.youtube.com/watch?v=4bwKOmC3Hak",
+            "publisher": "Great Game Music",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Yuriko Keino",
+            "url": "https://en.wikipedia.org/wiki/Xevious",
+            "publisher": "Yuriko Keino"
+          },
+          {
+            "title": "Arcade Archives Xevious - original arcade preservation and publisher screenshots",
+            "url": "https://www.arcadearchives.com/en/title/aca-175/",
+            "publisher": "HAMSTER Corporation",
+            "scope": "Primary 2021 reissue of the original arcade game; image capture is later preservation, not original-era recording."
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-81107",
+      "kind": "game",
+      "year_context_only": 1983,
+      "date_context_only": {
+        "month": 6,
+        "day": 21,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Reference article introduction reproduced under its stated licence. Year comes from the article's release-year category; regional/port dates may differ.",
+      "main": {
+        "feature_id": null,
+        "title": "Mario Bros.",
+        "subtitle": "",
+        "summary": "Mario Bros. is a 1983 platform game developed and published by Nintendo for arcades.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "",
+            "text": "Mario Bros. is a 1983 platform game developed and published by Nintendo for arcades. It was designed by Shigeru Miyamoto and Gunpei Yokoi, Nintendo's chief engineer. Players control Italian twin brother plumbers Mario and Luigi as they exterminate turtle-like creatures, giant flies, and crabs emerging from the sewers of New York City by knocking them upside-down and kicking them away. The Famicom/NES version was the first game to be developed by Intelligent Systems. It is part of the Mario franchise and the first spin-off of the Donkey Kong series."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "",
+            "text": "The arcade and Famicom/NES versions were received positively by critics. Elements introduced in Mario Bros., such as floating coins, enemy turtles, and Luigi, were carried over to Super Mario Bros. (1985) and became staples of the Mario series."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "",
+            "text": "An updated version, titled Mario Bros. Classic, is included as a minigame in all of the Super Mario Advance series and Mario & Luigi: Superstar Saga (2003). The NES version of Mario Bros. was re-released through the Wii and Wii U's Virtual Console, as well as the Nintendo Classics service for the Nintendo Switch. The original arcade version was released by Hamster Corporation as part of the Arcade Archives series for the Switch in 2017."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Mario Bros. — article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1376335209",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "2004 in video games — annual context",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1379835777",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/Mario_Bros.?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          },
+          {
+            "title": "Mario Bros. — original release infobox, Wikipedia revision 1376335209",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1376335209",
+            "publisher": "English Wikipedia contributors"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "famicom",
+      "kind": "console",
+      "year_context_only": 1983,
+      "date_context_only": {
+        "month": 7,
+        "day": 15,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "Famicom / NES",
+        "subtitle": "Nintendo's cartridge console and its later NES design",
+        "summary": "Nintendo's Family Computer brought arcade games to Japanese homes in 1983. Redesigned as the NES, the same platform introduced millions more players to Mario, Zelda and Metroid.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "The Family Computer",
+            "text": "On July 15, 1983 Nintendo launched the Family Computer, or Famicom, in Japan. The console arrived with Donkey Kong, Donkey Kong Jr. and Popeye, three conversions that made its promise immediately clear: bring part of the arcade experience to the home television. Its price, built-in controllers, interchangeable cartridges and later opening to outside publishers created an ecosystem that would expand rapidly. When the machine was redesigned for overseas markets as the Nintendo Entertainment System, that Japanese project became one of the central models for the modern console industry."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Donkey Kong, Donkey Kong Jr. and Popeye",
+            "text": "Nintendo chooses three games already familiar from arcades, making the console's promise immediately testable: recognizable characters and actions on the television at home. Each offers a different experience. Donkey Kong asks players to read platforms and obstacles; its sequel shifts the action to ropes and climbing; Popeye builds a collection challenge around Bluto's pursuit. The initial catalogue therefore demonstrates three ways to organize a game around a clearly readable screen. At home, another attempt no longer requires another coin, allowing familiarity with those routes to develop through repeated sessions."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "The red-and-white console and its controllers",
+            "text": "The red-and-white Famicom uses a top-loading cartridge slot and two controllers wired directly to the console. Recesses along its sides hold the pads, giving the system the proportions of a compact household object. A directional pad and the A and B buttons provide a consistent layout that very different games can share. The controllers are also deliberately unequal: the second includes a microphone instead of the first pad's Start and Select buttons. The design separates the machine's functions from the features individual programs can use. Changing the cartridge offers a new experience without requiring players to relearn the object in their hands."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "Making the controls more durable",
+            "text": "The earliest Famicom controllers had square A and B buttons, later replaced by more durable round ones. Nintendo's developers recalled that players pressed harder than their experience with Game & Watch had led them to expect. Repeated use exposed a weakness that drawings and prototypes had not settled. The revised buttons addressed a problem players could feel immediately: a press needed to produce a reliable response after thousands of attempts."
+          },
+          {
+            "card_id": "main:4",
+            "original_index": 4,
+            "heading": "The NES front-loading design",
+            "text": "Nintendo brought the Nintendo Entertainment System to North America in 1985. It followed the Japanese Family Computer, or Famicom, introduced in 1983, but presented that platform in a different physical form. The grey front-loading case, detachable controllers and long cartridges belong to the western NES story."
+          },
+          {
+            "card_id": "main:5",
+            "original_index": 5,
+            "heading": "Mario, Zelda and Metroid at home",
+            "text": "Its small controller concentrated play around a directional pad and two main action buttons. Across the growing library, those few inputs could mean running and jumping, exploring a maze or choosing when to fight. Super Mario Bros., The Legend of Zelda and Metroid helped give Nintendo's characters and worlds a place in everyday home life."
+          },
+          {
+            "card_id": "main:6",
+            "original_index": 6,
+            "heading": "The system reaches Europe",
+            "text": "The European rollout began in 1986, with national markets following different schedules. It is also the story of how the same games reached different households through different objects, packaging and local experiences."
+          },
+          {
+            "card_id": "main:7",
+            "original_index": 7,
+            "heading": "Bringing a console back into American shops",
+            "text": "Nintendo brings the NES to the New York test market at a time when many American retailers consider it risky to devote space to new consoles after the industry crash of the early 1980s. To enter stores, Nintendo of America therefore has to sell not only a machine, but a different idea of the product. The system is presented as family entertainment, with accessories, packaging, and language designed to distance it from the image of older home video games. The New York test thus becomes a commercial experiment as well as a technological one."
+          },
+          {
+            "card_id": "main:8",
+            "original_index": 8,
+            "heading": "A new case and a new name for the same platform",
+            "text": "For North America, Nintendo redesigned the Famicom with a grey shell, detachable controllers and a front-loading cartridge slot. Its appearance brought it closer to other living-room electronics than the red-and-white Japanese machine. Nintendo also called the cartridges Game Paks and the console an Entertainment System. These changes helped retailers present a new product after the collapse of the American console market, while the machine retained the Famicom's technical foundation."
+          },
+          {
+            "card_id": "main:9",
+            "original_index": 9,
+            "heading": "R.O.B. and the Zapper",
+            "text": "R.O.B. and the Zapper helped distinguish the North American NES launch in 1985. R.O.B., the Robotic Operating Buddy, brought a moving physical toy into games played on the television. The Zapper offered a more direct interaction: aim at the screen and fire. Shigeru Miyamoto later described Zapper as a broader, less literal name than gun. Both accessories gave Nintendo something immediately demonstrable to show shops and families, even though R.O.B. supported relatively few games."
+          },
+          {
+            "card_id": "main:10",
+            "original_index": 10,
+            "heading": "The directional pad and two action buttons",
+            "text": "The NES controller carried the Famicom's directional pad, A and B buttons, Start and Select into North America. Players used the same small set of controls to run, jump, shoot or navigate menus across very different games. A new cartridge could change the actions assigned to each button while preserving a familiar layout. Later 8-bit and 16-bit gamepads would adopt or adapt this arrangement."
+          },
+          {
+            "card_id": "main:11",
+            "original_index": 11,
+            "heading": "A library of different games",
+            "text": "The New York test market does not depend on a single title. Nintendo brings a catalog with the NES designed to show very different uses of the machine: sports, Zapper shooting, games tied to R.O.B., and platformers. Duck Hunt, Gyromite, Excitebike, and Super Mario Bros. nonetheless convey the platform's message: the NES is not a device with a single function, but a system whose identity changes through its Game Paks."
+          },
+          {
+            "card_id": "main:12",
+            "original_index": 12,
+            "heading": "Distribution, software and third-party publishers",
+            "text": "Nintendo expanded the NES beyond its New York test market, broadening North American distribution in 1986. First-party games, outside publishers, retail arrangements and a recognisable console all contributed to its growth. Nintendo's corporate history links the NES to the revival of the North American video game industry after the 1983 crash. The platform also made the relationship between a console manufacturer and its licensed catalogue an increasingly visible part of the business."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Nintendo History — 1983",
+            "url": "https://www.nintendo.com/en-gb/Hardware/Nintendo-History/Nintendo-History-625945.html",
+            "publisher": "Nintendo"
+          },
+          {
+            "title": "nintendo.co.jp",
+            "url": "https://www.nintendo.co.jp/corporate/release/2016/160930.html",
+            "publisher": "nintendo.co.jp"
+          },
+          {
+            "title": "computinghistory.org.uk",
+            "url": "https://www.computinghistory.org.uk/det/34797/",
+            "publisher": "computinghistory.org.uk"
+          },
+          {
+            "title": "Nintendo of America history - NES launch in 1985",
+            "url": "https://careers.nintendo.com/our-history/",
+            "publisher": "Nintendo of America"
+          },
+          {
+            "title": "Metroid creators - directional pad and two-button design",
+            "url": "https://iwataasks.nintendo.com/interviews/wii/metroid-other-m/0/1/",
+            "publisher": "Nintendo / Iwata Asks"
+          },
+          {
+            "title": "Nintendo Entertainment System",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1381188790",
+            "publisher": "English Wikipedia contributors",
+            "attribution": "Bibliographic identity and release-date reference; introduction confirms Family Computer, Japan, July15,1983."
+          },
+          {
+            "title": "Nintendo Famicom ControllerII ? original Evan-Amos public-domain photograph",
+            "url": "https://commons.wikimedia.org/wiki/File:Nintendo-Famicom-Controller-II-FL.jpg",
+            "publisher": "Evan-Amos / Wikimedia Commons"
+          }
+        ]
+      },
+      "features": [
+        {
+          "feature_id": "feature-nintendo-license-network",
+          "title": "The cartridge gate",
+          "subtitle": "",
+          "summary": "Access met commercial rules.",
+          "cards": [
+            {
+              "card_id": "feature:feature-nintendo-license-network:0",
+              "original_index": 0,
+              "heading": "A conversation between chips",
+              "text": "The 1992 appellate opinion in Atari Games v. Nintendo describes a brief exchange before an NES cartridge could run. A chip in the console checked a coded message from a chip in an authorised game. Without that message, the console would refuse the cartridge. The 10NES system therefore made a commercial distinction operate through hardware and software. A box could fit the slot without gaining access to the television. Compatibility involved permission as well as the physical shape of the object somebody had bought."
+            },
+            {
+              "card_id": "feature:feature-nintendo-license-network:1",
+              "original_index": 1,
+              "heading": "The terms of access",
+              "text": "Atari entered Nintendo's licensing system in December 1987. Nintendo manufactured cartridges carrying Atari's games and sold them back for Atari to market. The agreement limited new NES releases and restricted publication on rival home systems for two years. A finished game therefore still depended on manufacturing, supply and permission to reach customers. The later Atari Games v. Nintendo litigation examined how Atari obtained and used the console's lockout program."
+            },
+            {
+              "card_id": "feature:feature-nintendo-license-network:2",
+              "original_index": 2,
+              "heading": "A different commercial boundary",
+              "text": "Nintendo's relationship with shops raised a separate question: who controlled retail prices? In a May 1991 speech, FTC chair Janet Steiger discussed a proposed consent agreement addressing allegations of resale price fixing. It required Nintendo to refrain from controlling the prices at which dealers advertised or sold its products. Alongside the arrangements governing who could publish cartridges, this enforcement process addressed the freedom of retailers to set their own prices."
+            },
+            {
+              "card_id": "feature:feature-nintendo-license-network:3",
+              "original_index": 3,
+              "heading": "Rules across a market",
+              "text": "Steiger reported that thirty-nine states had accepted matching prospective relief, seeking consistent rules across the country. The retail agreement and the lockout litigation concerned different relationships in Nintendo's business. Publishers needed access to the platform and a supply of cartridges; shops needed stock and room to compete on price. These arrangements affected the route a game took from its makers to the household that bought it."
+            }
+          ],
+          "sources": [
+            {
+              "id": "atari92",
+              "title": "Atari Games and Tengen v Nintendo,975F2d832",
+              "url": "https://law.justia.com/cases/federal/appellate-courts/F2/975/832/163650/",
+              "publisher": "US Court of Appeals for the Federal Circuit,opinion10September1992; rehearing denied17November1992; mirrorJustia",
+              "source_type": "primary_testimony_or_contemporary_original_document",
+              "locator": "AtariNintendo975F2d832 BACKGROUND: lock/key chips,coded message,refusal ofunauthorised cartridge.; Same BACKGROUND: December1987licence,manufacturing/resale,fivegame annualcap,two-year restriction;court framing injunction/likelihood.",
+              "checked": "2026-10-21",
+              "rights": "Citation only. Original prose contains no direct quotation; source documents, translations and media retain their separate rights.",
+              "story_paragraphs": [
+                0,
+                1
+              ],
+              "paragraph_locators": {
+                "0": "AtariNintendo975F2d832 BACKGROUND: lock/key chips,coded message,refusal ofunauthorised cartridge.",
+                "1": "Same BACKGROUND: December1987licence,manufacturing/resale,fivegame annualcap,two-year restriction;court framing injunction/likelihood."
+              }
+            },
+            {
+              "id": "steiger91",
+              "title": "Remarks before the Mid-America Committee",
+              "url": "https://www.ftc.gov/system/files/documents/public_statements/694031/19910501_steiger_remarks_before_the_mid-american_committee.pdf",
+              "publisher": "Janet D. Steiger, FTC chair, Chicago, 1 May 1991; cited PDF page 7 (one-based)",
+              "source_type": "primary_testimony_or_contemporary_original_document",
+              "locator": "PDF page 7 (one-based; web-reader page 6), Nintendo consent and federal/state cooperation paragraphs, including footnote 5. Text read in official FTC PDF through web reader; printed page number not certified by a raster inspection.",
+              "checked": "2026-10-21",
+              "rights": "Citation only. Original prose contains no direct quotation; source documents, translations and media retain their separate rights.",
+              "story_paragraphs": [
+                2,
+                3
+              ],
+              "paragraph_locators": {
+                "2": "Steiger, 1 May 1991, PDF page 7 (one-based; web-reader page 6), Proposed consent, retail-price allegations and dealer prices.",
+                "3": "Steiger, 1 May 1991, PDF page 7 (one-based; web-reader page 6), Maryland/New York-led cooperation and matching prospective relief in 39 states."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entry_id": "wikipedia-619689",
+      "kind": "game",
+      "year_context_only": 1983,
+      "date_context_only": {
+        "month": 10,
+        "day": 17,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Reference article introduction reproduced under its stated licence. Year comes from the article's release-year category; regional/port dates may differ.",
+      "main": {
+        "feature_id": null,
+        "title": "Track & Field",
+        "subtitle": "",
+        "summary": "Track & Field (also known as Hyper Olympic in Japan and Europe) is a 1983 sports video game developed and published by Konami for arcades.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "",
+            "text": "Track & Field (also known as Hyper Olympic in Japan and Europe) is a 1983 sports video game developed and published by Konami for arcades. The Japanese release featured an official license for the 1984 Summer Olympics. In Europe, the game was initially released under the Japanese title Hyper Olympic in 1983, before being re-released under the US title Track & Field in early 1984. Centuri released the game in North America."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "",
+            "text": "Players compete in a series of events, most involving alternately pressing two buttons as quickly as possible to make the onscreen character run faster. The game uses a horizontal side-scrolling format, displaying one or two tracks at a time, a large scoreboard that shows world records and current attempts, and a packed audience in the background."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "",
+            "text": "The game was a worldwide commercial success in arcades, becoming one of the most successful arcade games of 1984. Konami and Centuri also organized a 1984 Track & Field video game competition that attracted more than a million players internationally, holding the record for the largest organized video game competition of all time as of 2016. It was followed by several sequels including Hyper Sports, as well as similar Olympic video games from other companies. The game's popularity led to a resurgence in arcade sports games, and also inspired Namco's side-scrolling platform game Pac-Land (1984)."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Track & Field (video game) — article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1377044185",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "1984 in video games — annual context",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1360221888",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/Track_%26_Field_(video_game)?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          },
+          {
+            "title": "Track & Field (video game) — original release infobox, Wikipedia revision 1377044185",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1377044185",
+            "publisher": "English Wikipedia contributors"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-638696",
+      "kind": "game",
+      "year_context_only": 1983,
+      "date_context_only": {
+        "month": 11,
+        "day": 0,
+        "precision": "month",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Reference article introduction reproduced under its stated licence. Year comes from the article's release-year category; regional/port dates may differ.",
+      "main": {
+        "feature_id": null,
+        "title": "Spy Hunter",
+        "subtitle": "",
+        "summary": "Spy Hunter is a 1983 vehicular combat video game developed and published by Bally Midway for arcades.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "",
+            "text": "Spy Hunter is a 1983 vehicular combat video game developed and published by Bally Midway for arcades. The game draws inspiration from the James Bond films and was originally supposed to carry the James Bond brand. The object of the game is to drive down roads in the technologically advanced \"Interceptor\" car and destroy various enemy vehicles with a variety of onboard weapons. The game was produced in both sit-down and standard upright versions, with the latter being more common. The controls consist of a steering wheel in the form of a futuristic aircraft-style yoke with several special-purpose buttons, a two-position stick shift (offering \"low\" and \"high\" gears), and a pedal used for acceleration."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "",
+            "text": "Spy Hunter was a commercial success in American arcades, where it was one of the top five highest-grossing arcade games of 1984 and 1985. It was ported to the Atari 2600, Atari 8-bit computers, Amstrad CPC, ZX Spectrum, Commodore 64, Apple II, ColecoVision, MS-DOS, Nintendo Entertainment System, and BBC Micro. Spy Hunter was followed by Spy Hunter II, which added a 3D view and two-player split-screen play, a pinball tie-in, and a successor series of games bearing the Spy Hunter name. In addition, the NES received a sequel titled Super Spy Hunter."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Spy Hunter — article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1376674465",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "1984 in video games — annual context",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1360221888",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/Spy_Hunter?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          },
+          {
+            "title": "Spy Hunter — original release infobox, Wikipedia revision 1376674465",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1376674465",
+            "publisher": "English Wikipedia contributors"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-2140666",
+      "kind": "game",
+      "year_context_only": 1983,
+      "date_context_only": {
+        "month": 12,
+        "day": 7,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Reference article introduction reproduced under its stated licence. Year comes from the article's release-year category; regional/port dates may differ.",
+      "main": {
+        "feature_id": null,
+        "title": "Baseball",
+        "subtitle": "",
+        "summary": "Baseball is a baseball video game developed and published by Nintendo for the Family Computer (Famicom).",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "",
+            "text": "Baseball is a baseball video game developed and published by Nintendo for the Family Computer (Famicom). It was originally released in Japan on December 7, 1983, a few months after the July 15 launch of the Famicom."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "",
+            "text": "An arcade version titled VS. Baseball released for the Nintendo VS. System in 1984, featuring enhanced graphics and speech, becoming a hit at Japanese and American arcades. The game was later released as launch title for the Nintendo Entertainment System in North America in 1985, and in Europe in 1986. It was also ported to the Game Boy in 1989 as one of the handheld's four launch titles."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "",
+            "text": "IGN noted that the universal appeal of baseball made the game instrumental in the NES's successful test market launch and regarded it as an important part of Nintendo's early history. At the time, it competed with Sega's arcade hit Champion Baseball, released earlier in 1983."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Baseball (1983 video game) — article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1377058353",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "1985 in video games — annual context",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1378730138",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/Baseball_(1983_video_game)?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          },
+          {
+            "title": "Baseball (1983 video game) — original release infobox, Wikipedia revision 1377058353",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1377058353",
+            "publisher": "English Wikipedia contributors"
+          }
+        ]
+      },
+      "features": []
+    }
+  ]
+}

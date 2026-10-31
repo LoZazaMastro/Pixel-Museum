@@ -1,0 +1,464 @@
+{
+  "schema": "pixel-museum-editorial-input-v1",
+  "batch_id": "208-catalog",
+  "source_file": "content/catalog.json",
+  "source_sha256": "0b077b3f8628f921ab84574d286f9d9943fb8ae6acb8f136ffadde6e01cae241",
+  "entries": [
+    {
+      "entry_id": "celeste",
+      "kind": "game",
+      "year_context_only": 2018,
+      "date_context_only": {
+        "month": 1,
+        "day": 25,
+        "precision": "day",
+        "region": "Original January25,2018 release; source Xbox Wire launch announcement."
+      },
+      "event_semantics": "",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "Celeste",
+        "subtitle": "Trying again is part of the story",
+        "summary": "Precise platforming and an intimate journey put difficulty, support and self-understanding in the same frame.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Learning through another attempt",
+            "text": "Celeste asks players to guide Madeline through tightly composed platforming rooms. Short retries make failure an immediate part of learning, while the mountain journey gives that repeated effort an emotional context."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Making access part of the design",
+            "text": "The work of Maddy Thorson, Noel Berry, the art team, composer Lena Raine and collaborators joins precision with warmth. Assist options let players change the challenge, making access to the story a considered part of the design."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Celeste official site and credits",
+            "url": "https://www.celestegame.com/?lang=en",
+            "publisher": "Extremely OK Games / Celeste team"
+          },
+          {
+            "title": "Celeste Is Now Available For Xbox One",
+            "url": "https://news.xbox.com/en-us/2018/01/25/celeste-is-now-available-for-xbox-one/",
+            "publisher": "Xbox Wire / Microsoft",
+            "type": "Primary: date verification",
+            "supports": "Platform holder published its now-available launch notice on January 25, 2018; this corroborates the original 2018 release rather than later platform ports."
+          },
+          {
+            "title": "Official soundtrack: First Steps",
+            "url": "https://radicaldreamland.bandcamp.com/album/celeste-original-soundtrack",
+            "publisher": "Lena Raine",
+            "attribution": "Music remains on its original official YouTube publication. No audio file is bundled or redistributed."
+          },
+          {
+            "title": "Official soundtrack publishing provenance",
+            "url": "https://www.youtube.com/watch?v=N8OHSXvneOE",
+            "publisher": "Lena Raine",
+            "attribution": "Music remains on its original official YouTube publication. No audio file is bundled or redistributed."
+          },
+          {
+            "title": "Official soundtrack publishing provenance",
+            "url": "https://www.youtube.com/watch?v=1rwAvUvvQzQ",
+            "publisher": "Lena Raine",
+            "attribution": "Music remains on its original official YouTube publication. No audio file is bundled or redistributed."
+          },
+          {
+            "title": "Official soundtrack publishing provenance",
+            "url": "https://www.youtube.com/watch?v=iDVM9KED46Q",
+            "publisher": "Lena Raine",
+            "attribution": "Music remains on its original official YouTube publication. No audio file is bundled or redistributed."
+          },
+          {
+            "title": "Official music publication: Reach for the Summit",
+            "url": "https://www.youtube.com/watch?v=qx1PcEgmFHY",
+            "publisher": "Lena Raine",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Lena Raine",
+            "url": "https://en.wikipedia.org/wiki/Celeste_%282018_video_game%29",
+            "publisher": "Lena Raine"
+          },
+          {
+            "title": "Official music publication: Prologue",
+            "url": "https://www.youtube.com/watch?v=Ctuo3ws3EKs",
+            "publisher": "Lena Raine",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Lena Raine",
+            "url": "https://www.materiacollective.com/music/celeste-original-soundtrack",
+            "publisher": "Lena Raine"
+          },
+          {
+            "title": "Music credit source: Lena Raine",
+            "url": "https://www.materiacollective.com/music/celeste-original-soundtrack",
+            "publisher": "Lena Raine"
+          },
+          {
+            "title": "Music credit source: Lena Raine",
+            "url": "https://www.materiacollective.com/music/celeste-original-soundtrack",
+            "publisher": "Lena Raine"
+          },
+          {
+            "title": "Official music publication: Awake",
+            "url": "https://www.youtube.com/watch?v=BFVyvGmwlmk",
+            "publisher": "Lena Raine",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Lena Raine",
+            "url": "https://www.materiacollective.com/music/celeste-original-soundtrack",
+            "publisher": "Lena Raine"
+          },
+          {
+            "title": "Official music publication: Postcard from Celeste Mountain",
+            "url": "https://www.youtube.com/watch?v=V8qOjmWIPKs",
+            "publisher": "Lena Raine",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Lena Raine",
+            "url": "https://www.materiacollective.com/music/celeste-original-soundtrack",
+            "publisher": "Lena Raine"
+          },
+          {
+            "title": "Official music publication: Checking In",
+            "url": "https://www.youtube.com/watch?v=fOzvP1I5tLU",
+            "publisher": "Lena Raine",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Lena Raine",
+            "url": "https://www.materiacollective.com/music/celeste-original-soundtrack",
+            "publisher": "Lena Raine"
+          },
+          {
+            "title": "Official music publication: Spirit of Hospitality",
+            "url": "https://www.youtube.com/watch?v=NRpcwd9MSSE",
+            "publisher": "Lena Raine",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Lena Raine",
+            "url": "https://www.materiacollective.com/music/celeste-original-soundtrack",
+            "publisher": "Lena Raine"
+          },
+          {
+            "title": "Official music publication: Scattered and Lost",
+            "url": "https://www.youtube.com/watch?v=0etenwnI1wo",
+            "publisher": "Lena Raine",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Lena Raine",
+            "url": "https://www.materiacollective.com/music/celeste-original-soundtrack",
+            "publisher": "Lena Raine"
+          },
+          {
+            "title": "Official music publication: Golden",
+            "url": "https://www.youtube.com/watch?v=mr-SWzqNpM0",
+            "publisher": "Lena Raine",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Lena Raine",
+            "url": "https://www.materiacollective.com/music/celeste-original-soundtrack",
+            "publisher": "Lena Raine"
+          },
+          {
+            "title": "Official music publication: Anxiety",
+            "url": "https://www.youtube.com/watch?v=FMuQ11tVJnk",
+            "publisher": "Lena Raine",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Lena Raine",
+            "url": "https://www.materiacollective.com/music/celeste-original-soundtrack",
+            "publisher": "Lena Raine"
+          },
+          {
+            "title": "Official music publication: Quiet and Falling",
+            "url": "https://www.youtube.com/watch?v=FjG0ivBT4lQ",
+            "publisher": "Lena Raine",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Lena Raine",
+            "url": "https://www.materiacollective.com/music/celeste-original-soundtrack",
+            "publisher": "Lena Raine"
+          },
+          {
+            "title": "Official music publication: In the Mirror",
+            "url": "https://www.youtube.com/watch?v=bXfHKEaDg4s",
+            "publisher": "Lena Raine",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Lena Raine",
+            "url": "https://www.materiacollective.com/music/celeste-original-soundtrack",
+            "publisher": "Lena Raine"
+          },
+          {
+            "title": "Official music publication: Madeline and Theo",
+            "url": "https://www.youtube.com/watch?v=__oZ-LYZ8pU",
+            "publisher": "Lena Raine",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Lena Raine",
+            "url": "https://www.materiacollective.com/music/celeste-original-soundtrack",
+            "publisher": "Lena Raine"
+          },
+          {
+            "title": "Official music publication: Starjump",
+            "url": "https://www.youtube.com/watch?v=dTIeaqNXseY",
+            "publisher": "Lena Raine",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Lena Raine",
+            "url": "https://www.materiacollective.com/music/celeste-original-soundtrack",
+            "publisher": "Lena Raine"
+          },
+          {
+            "title": "Official music publication: Reflection",
+            "url": "https://www.youtube.com/watch?v=QfhUSYq7jEs",
+            "publisher": "Lena Raine",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Lena Raine",
+            "url": "https://www.materiacollective.com/music/celeste-original-soundtrack",
+            "publisher": "Lena Raine"
+          },
+          {
+            "title": "Official music publication: Confronting Myself",
+            "url": "https://www.youtube.com/watch?v=b_oEDGONSc4",
+            "publisher": "Lena Raine",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Lena Raine",
+            "url": "https://www.materiacollective.com/music/celeste-original-soundtrack",
+            "publisher": "Lena Raine"
+          },
+          {
+            "title": "Official music publication: Little Goth",
+            "url": "https://www.youtube.com/watch?v=oHdSK43cIf8",
+            "publisher": "Lena Raine",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Lena Raine",
+            "url": "https://www.materiacollective.com/music/celeste-original-soundtrack",
+            "publisher": "Lena Raine"
+          },
+          {
+            "title": "Music credit source: Lena Raine",
+            "url": "https://www.materiacollective.com/music/celeste-original-soundtrack",
+            "publisher": "Lena Raine"
+          },
+          {
+            "title": "Official music publication: Exhale",
+            "url": "https://www.youtube.com/watch?v=q7QMTo-P6H0",
+            "publisher": "Lena Raine",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Lena Raine",
+            "url": "https://www.materiacollective.com/music/celeste-original-soundtrack",
+            "publisher": "Lena Raine"
+          },
+          {
+            "title": "Official music publication: Heart of the Mountain",
+            "url": "https://www.youtube.com/watch?v=DNOuancg5RY",
+            "publisher": "Lena Raine",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Lena Raine",
+            "url": "https://www.materiacollective.com/music/celeste-original-soundtrack",
+            "publisher": "Lena Raine"
+          },
+          {
+            "title": "Official music publication: My Dearest Friends",
+            "url": "https://www.youtube.com/watch?v=VHN63n9y1vg",
+            "publisher": "Lena Raine",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Lena Raine",
+            "url": "https://www.materiacollective.com/music/celeste-original-soundtrack",
+            "publisher": "Lena Raine"
+          },
+          {
+            "title": "Original developer changelog: Assist Mode and accessibility options",
+            "url": "https://www.celestegame.com/changelog.html",
+            "publisher": "Maddy Makes Games / Celeste team"
+          }
+        ]
+      },
+      "features": [
+        {
+          "feature_id": "feature-celeste-assistance",
+          "title": "The small allowances inside a difficult jump",
+          "subtitle": "",
+          "summary": "How can a demanding platform game make an imperfect input count?",
+          "cards": [
+            {
+              "card_id": "feature:feature-celeste-assistance:0",
+              "original_index": 0,
+              "heading": "The jump has a margin",
+              "text": "Maddy Thorson's account of Celeste describes several allowances around apparently exact movement. A jump can still count briefly after leaving an edge, and an early button press can be remembered until landing. These windows help an intended action reach the screen even when its timing is imperfect. Thorson explicitly places the techniques in a wider history rather than claiming to have invented them. The interesting distinction is between a precise result and an unforgiving input. A difficult route can demand practice while allowing the player a little room to express what they meant."
+            },
+            {
+              "card_id": "feature:feature-celeste-assistance:1",
+              "original_index": 1,
+              "heading": "Assistance has its own development history",
+              "text": "Celeste's changelog records Dash Assist as an addition in version 1.3.1.0. Version 1.4.0.0 expanded control bindings and offered different ways of operating the grab action. Those entries make assistance a history of specific revisions, rather than a single feature that never changed after launch. They also invite a practical comparison: adjusting the timing of a move is different from changing how a button is held. Both can affect whether a route is usable without requiring the museum to assume that all players need the same adjustment."
+            },
+            {
+              "card_id": "feature:feature-celeste-assistance:2",
+              "original_index": 2,
+              "heading": "The wording belongs to the design",
+              "text": "An earlier update changed the wording of Celeste's pause menus: returning to the map or restarting a chapter no longer appeared under a submenu called Give Up. The same changelog credits community feedback when revising the Assist Mode description. These are changes to language, not to the shape of a platform, but they alter the way a choice is presented. A menu can describe an action without passing judgement on the person choosing it. The record makes that editorial decision visible as part of the game's continuing design work."
+            },
+            {
+              "card_id": "feature:feature-celeste-assistance:3",
+              "original_index": 3,
+              "heading": "A way to study the implementation",
+              "text": "Noel Berry?s public Celeste repository includes selected source files as a learning resource. Readers can inspect some of the implementation behind the movement, connecting Thorson?s descriptions to the code that helps make a jump feel responsive."
+            }
+          ],
+          "sources": [
+            {
+              "id": "celeste-forgive",
+              "title": "Celeste & Forgiveness",
+              "url": "https://www.maddymakesgames.com/articles/celeste_and_forgiveness/index.html",
+              "publisher": "Maddy Thorson / Maddy Makes Games",
+              "source_type": "primary_creator_or_developer_statement",
+              "locator": "Sections 1–10: timing/position windows and stamina refund",
+              "checked": "2026-10-20",
+              "access_note": "Text inspected on 2026-10-20",
+              "story_paragraphs": [
+                0
+              ]
+            },
+            {
+              "id": "celeste-changes",
+              "title": "Celeste changelog",
+              "url": "https://www.celestegame.com/changelog.html",
+              "publisher": "Celeste development team",
+              "source_type": "primary_creator_or_developer_statement",
+              "locator": "Versions 1.3.0.0,1.3.1.0 and 1.4.0.0: assist wording, Dash Assist, bindings",
+              "checked": "2026-10-20",
+              "access_note": "Text inspected on 2026-10-20",
+              "story_paragraphs": [
+                1,
+                2
+              ]
+            },
+            {
+              "id": "celeste-code",
+              "title": "Celeste source and issue repository",
+              "url": "https://github.com/NoelFB/Celeste",
+              "publisher": "Noel Berry / Celeste team",
+              "source_type": "primary_developer_repository",
+              "locator": "README Source Code and licence boundary",
+              "checked": "2026-10-20",
+              "access_note": "Text inspected on 2026-10-20",
+              "story_paragraphs": [
+                3
+              ]
+            },
+            {
+              "id": "celeste-release",
+              "title": "Celeste Is Now Available For Xbox One",
+              "url": "https://news.xbox.com/en-us/2018/01/25/celeste-is-now-available-for-xbox-one/",
+              "publisher": "Xbox Wire",
+              "source_type": "primary_platform_release_notice",
+              "locator": "25 January 2018 platform release notice",
+              "checked": "2026-10-20",
+              "access_note": "Text inspected on 2026-10-20"
+            }
+          ]
+        },
+        {
+          "feature_id": "feature-lena-raine-movement",
+          "title": "Music finds its pace",
+          "subtitle": "",
+          "summary": "Lena Raine listens to the game.",
+          "cards": [
+            {
+              "card_id": "feature:feature-lena-raine-movement:0",
+              "original_index": 0,
+              "heading": "Slower than the first sketch",
+              "text": "Lena Raine's early music for Celeste moved too brightly for the climb. In a 2018 interview, she described sketches closer to Kirby before feedback from the team helped her find a slower groove. The music needed to accompany methodical movement rather than hurry the player through it. Joining during development let her discuss mechanics and pacing while they were still taking shape. A composition could answer the rhythm of trying a room, instead of treating the mountain as a race to finish."
+            },
+            {
+              "card_id": "feature:feature-lena-raine-movement:1",
+              "original_index": 1,
+              "heading": "A piano through changing moods",
+              "text": "The piano supplied a recurring presence while synthesis changed around it. Raine described using those different sounds to follow Celeste's emotional movement, with dynamic layers and fades developed alongside the PowerUp Audio team. What the player heard depended on more than a finished tune placed behind the action. The score also needed ways to alter its intensity and leave space. Composing for the climb meant working with the people connecting sound to the game, so a musical change could arrive with a change in experience."
+            },
+            {
+              "card_id": "feature:feature-lena-raine-movement:2",
+              "original_index": 2,
+              "heading": "Transforming the familiar",
+              "text": "For Minecraft's Nether music in 2020, Raine began with the portal's transformation of one thing into another. She applied that idea to the piano, a familiar sound in the existing game. Bowed strings, plucking and layers of effects could turn the instrument into something stranger, with other sounds added around it. The process gave her a common starting material without requiring every piece to sound alike. A recognisable musical world could become unsettling through changes inside the sound itself, before any new melody appeared."
+            },
+            {
+              "card_id": "feature:feature-lena-raine-movement:3",
+              "original_index": 3,
+              "heading": "Melody enters the landscape",
+              "text": "Raine remembered Minecraft music seeming to grow naturally from the surrounding ambience. Her new pieces pursued that entrance, while Mojang's team encouraged her to bring more of her own melodies into an initially restrained draft. The request made continuity a conversation rather than a rule against change. Audio director Samuel Åberg described a wider effort to give new places distinct identities while keeping them connected. Raine's contribution joined that collective work: a personal voice finding room inside a world already carrying other musicians' sounds."
+            }
+          ],
+          "sources": [
+            {
+              "id": "raine18",
+              "title": "Road to the IGF: Matt Makes Games, Celeste",
+              "url": "https://www.gamedeveloper.com/game-platforms/road-to-the-igf-matt-makes-games-i-celeste-i-",
+              "publisher": "Joel Couture / Game Developer, direct Noel Berry and Lena Raine interview",
+              "source_type": "Primary composer interview, contemporary development testimony",
+              "checked": "2026-10-21",
+              "rights": "Bibliographic citation only. Original commissioned prose contains no direct quotation. Source text, code, photographs, documents, recordings and game assets retain their own rights; availability is not reproduction permission.",
+              "publication_date": "2018-03-07",
+              "story_paragraphs": [
+                0,
+                1
+              ],
+              "paragraph_locators": {
+                "0": "Raine music answer in Road to the IGF: second half of 2016, early mechanics/pacing brainstorming, peppy Kirby-like sketches and lower BPM groove.",
+                "1": "Same complete Raine answer: piano/synth emotional roles, Kevin and PowerUp Audio collaboration, dynamic layering and fades."
+              }
+            },
+            {
+              "id": "raine20",
+              "title": "The Sound of Scary",
+              "url": "https://www.minecraft.net/en-us/article/the-sound-scary",
+              "publisher": "Thomas Wiborgh / Minecraft, direct Lena Raine interview and Samuel Åberg statements",
+              "source_type": "Primary official composer interview, contemporary upcoming-update discussion",
+              "checked": "2026-10-21",
+              "rights": "Bibliographic citation only. Original commissioned prose contains no direct quotation. Source text, code, photographs, documents, recordings and game assets retain their own rights; availability is not reproduction permission.",
+              "publication_date": "2020-04-09",
+              "story_paragraphs": [
+                2,
+                3
+              ],
+              "paragraph_locators": {
+                "2": "The Sound of Scary, How have you approached writing music for the Nether?: portal/alchemy, piano bowed/plucked/effected, other instruments.",
+                "3": "How is writing for Minecraft different? and favorite memories answers; preceding Samuel Åberg collective audio-identity statement."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

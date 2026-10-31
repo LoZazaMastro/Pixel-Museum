@@ -1,0 +1,104 @@
+{
+  "status": "PASS",
+  "locale": "es",
+  "entries": [
+    {
+      "entry_id": "wikipedia-78591075",
+      "source_fields_sha256": "0eca1d4145475d94ec03bdd7a28954c4f6ca87b28ade5fcceaf419fb2e5766f0",
+      "translation_sha256": "3fcd0bd96108a1e089484cbd988e2334d13c954997f7948011e8c35c18981166",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch377/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "ef397dc5138e9476957498422e2559a0c2db8a6cec41f608ac008a9c7cec2a72"
+    },
+    {
+      "entry_id": "wikipedia-76898238",
+      "source_fields_sha256": "c52d79b939651a8e2ebc5dcde601d3be2f2e8b59a5d8fed69d0eceb9614ca669",
+      "translation_sha256": "1dcb2cbdaf89e5f104e55cc44f785a02573dd06ee6ccd0ba89208868e3871ee6",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch377/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "ef397dc5138e9476957498422e2559a0c2db8a6cec41f608ac008a9c7cec2a72"
+    },
+    {
+      "entry_id": "wikipedia-79672334",
+      "source_fields_sha256": "b7626692b4ab7225cffbed9977dcfdef858174d8f0c49214e1da6a25cc3eec26",
+      "translation_sha256": "ebf307585cdeda96dcf4a4cd4334040fb67da1d8eac579984cba08be0dc804b0",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch377/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "ef397dc5138e9476957498422e2559a0c2db8a6cec41f608ac008a9c7cec2a72"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "category_audit",
+    "actual_receipt": "build/research/catalog-2025-chronological/march-april-three-private/independent-category-audit-approval.json",
+    "actual_receipt_sha256": "b15193cc81bc156a3936c647d0d69ccd9835ece3547a31cf4252a1d503ddc6e6",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "category_audit",
+      "index": "build/research/catalog-2025-chronological/march-april-three-private/three-private-index.json",
+      "index_sha256": "a6d45b05399f5102e7f036be66ee487bf2a4a13ba46b9e2d2691a157c447f08f",
+      "scope": "Personally read all 13 English and 52 localized paragraphs and all five fields; personally viewed all 20 images in three final contact sheets. Read all four new public AAC metadata records and author finite evidence. Checked source, target and contact hashes, complete localization counts, exact English preservation, image provenance and recovery hashes. 34 existing music objects exact plus one Shadows UI title-only cleanup. No audio download or console playback claimed.",
+      "primary_sources_actually_read": [
+        {
+          "url": "https://www.ea.com/de/games/split-fiction/split-fiction/news/spilt-fiction-official-soundtrack-out-now",
+          "finding": "Original April 2025 score and individual Gustaf Grefberg / Jonatan Jarpehag cue composition verified."
+        },
+        {
+          "url": "https://newsroom.ubisoft-press.com/assassins-creedr-shadows-original-soundtrack-veroffentlicht",
+          "finding": "The Flight original score and March 20, 2025 launch confirmed; later additional composer albums distinguished."
+        },
+        {
+          "url": "https://rawfury.com/blue-prince-out-now-on-switch-2/",
+          "finding": "Actual March 3, 2026 Switch 2 release retained."
+        },
+        {
+          "url": "https://www.interactive.org/awards/2026_dice_awards_winners.asp",
+          "finding": "Blue Prince won Independent Game and Game Design at the 29th annual DICE awards; valid later history retained."
+        }
+      ],
+      "findings": [],
+      "owners": [
+        {
+          "entry_id": "wikipedia-78591075",
+          "slug": "split",
+          "source": "build/research/catalog-2025-chronological/march-april-three-private/split-source-private-candidate.json",
+          "source_sha256": "1bb5ead5e4e06bdac5120fdf09d0a4ca4c3874890d368be14b309188085760e3",
+          "target": "build/research/catalog-2025-chronological/march-april-three-private/split-four-language-private-candidate.json",
+          "target_sha256": "ac1f985396da3fcd2901d445a5d3754c437362e350d7785a3b797b1b7da2b75d",
+          "contact": "build/research/catalog-2025-chronological/march-april-three-private/split-final-contact.jpg",
+          "contact_sha256": "9b6dc7aa48df490a65630b033a0ac7f2847e6a7f8207325af5eeb58587bac2ba",
+          "english_cards": 7,
+          "localized_cards": 28,
+          "images": 9,
+          "tracks": 3
+        },
+        {
+          "entry_id": "wikipedia-76898238",
+          "slug": "shadows",
+          "source": "build/research/catalog-2025-chronological/march-april-three-private/shadows-source-private-candidate.json",
+          "source_sha256": "aeccea33ccd64bdc4f53ef457a71795c3464e32b1709a05d4013b719ccefec5e",
+          "target": "build/research/catalog-2025-chronological/march-april-three-private/shadows-four-language-private-candidate.json",
+          "target_sha256": "2cc6c9881bb3d6604d6d4b53da850f65e378dd571a58afbb5cc99e6fbd451034",
+          "contact": "build/research/catalog-2025-chronological/march-april-three-private/shadows-final-contact.jpg",
+          "contact_sha256": "a3eab06e660dac5d170499379a412a4da075a7b16a308bac882a4b23fd3bfa70",
+          "english_cards": 2,
+          "localized_cards": 8,
+          "images": 5,
+          "tracks": 3
+        },
+        {
+          "entry_id": "wikipedia-79672334",
+          "slug": "blue",
+          "source": "build/research/catalog-2025-chronological/march-april-three-private/blue-source-private-candidate.json",
+          "source_sha256": "26c1eed1e229f67cbe484a0549f39cf284e7cbd2f0d727f4d28e7b3829288f55",
+          "target": "build/research/catalog-2025-chronological/march-april-three-private/blue-four-language-private-candidate.json",
+          "target_sha256": "95b5dc90ab1546612e30df2c07bd5117df2337de532d86cc11503fb1a5b96aed",
+          "contact": "build/research/catalog-2025-chronological/march-april-three-private/blue-final-contact.jpg",
+          "contact_sha256": "1abfb4133d836a204b218c9c3b85ed952d96a2d2aee31d19afe0609ccd55ee57",
+          "english_cards": 4,
+          "localized_cards": 16,
+          "images": 6,
+          "tracks": 33
+        }
+      ],
+      "production_writes": false
+    }
+  }
+}

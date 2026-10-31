@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "locale": "it",
+  "review": "Binding of exact independently approved complete candidate members; no new linguistic review substituted. Every full candidate SHA and independent PASS receipt checked, all current English five fields and translation hashes validated.",
+  "entries": [
+    {
+      "entry_id": "feature-ed-smith-apf",
+      "source_fields_sha256": "db1006d0ef684324035693148c7e29412f0e3d88fddef0796945288dcf002060",
+      "translation_sha256": "09efc30ca9bc46d89bf9addd4332e921f09108de8628bcb489eef5b9ab0e936a",
+      "independent_peer": "build/research/ed-smith-apf1978-four-language-completion/ed-smith-apf-four-language-complete-source-bound-candidate-root-independent-peer.json",
+      "independent_peer_sha256": "808074809afd8597f9d1b8f0adf9fbc3f45b8c5c8c25974633092f294785e747",
+      "candidate_path": "build/research/ed-smith-apf1978-four-language-completion/ed-smith-apf-four-language-complete-source-bound-candidate.json",
+      "candidate_sha256": "ed4a4e3041abf40f5284ef3cd0206305dfb4ce81c110fde752ae7a4289a00d17"
+    },
+    {
+      "entry_id": "daily-04-17",
+      "source_fields_sha256": "3848c72e50f3ae5ecda8bb06a11465b49432e214503a28273b3d7f435b423a2b",
+      "translation_sha256": "c32aa867e77f5e125b919b225065fc72301535f6c6309751dea5b8e550151192",
+      "independent_peer": "build/research/tarn-adams1978-four-language-completion/independent-four-whole-paragraphs-four-language-new-translations-full-clause-peer.json",
+      "independent_peer_sha256": "32bab3679ddad2ceb39da14918fe20ec8f6723b25b236fcdf7bb5ae1a2c0fabc",
+      "candidate_path": "build/research/tarn-adams1978-four-language-completion/tarn-adams-four-language-complete-source-bound-candidate.json",
+      "candidate_sha256": "042b2b2119adeca3eef0c4bff1929233d7b4056e1a0c5bfd404187219e332070"
+    },
+    {
+      "entry_id": "workbook-07-25-koei",
+      "source_fields_sha256": "69f30eb396b3b951cbc7d5cb5bea06781b0f70471ef47dd9a08c1760aee6f27f",
+      "translation_sha256": "c77c869572998189a8db7275583a29b8a1d0313583ea226998e41a78404cf224",
+      "independent_peer": "build/research/koei-neil1978-four-language-completion/independent-ten-whole-paragraphs-four-language-six-precision-deltas-peer.json",
+      "independent_peer_sha256": "2eacf134c98aeac98cb4183b8e72214bd1efb2d16fdfb8a32c3879b3f4d845e5",
+      "candidate_path": "build/research/koei-neil1978-four-language-completion/koei-neil-four-language-player-agency-natural-german-candidate.json",
+      "candidate_sha256": "3579f652242990b9aeff1930b995381da7fb60dbfd5ad1c0600ea44bfc4c61d1"
+    },
+    {
+      "entry_id": "daily-12-05",
+      "source_fields_sha256": "a9019724a96a1781dfb178256956953196ed458c4db47395b3c63ebe600001e8",
+      "translation_sha256": "0b714ac5f447595ba55467692abdc2dc8e9517aa8ea8d0c1a58bc30d33651630",
+      "independent_peer": "build/research/koei-neil1978-four-language-completion/independent-ten-whole-paragraphs-four-language-six-precision-deltas-peer.json",
+      "independent_peer_sha256": "2eacf134c98aeac98cb4183b8e72214bd1efb2d16fdfb8a32c3879b3f4d845e5",
+      "candidate_path": "build/research/koei-neil1978-four-language-completion/koei-neil-four-language-player-agency-natural-german-candidate.json",
+      "candidate_sha256": "3579f652242990b9aeff1930b995381da7fb60dbfd5ad1c0600ea44bfc4c61d1"
+    }
+  ]
+}

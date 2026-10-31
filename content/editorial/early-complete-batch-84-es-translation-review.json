@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "locale": "es",
+  "review": "Binding of exact independently approved complete candidate members; no new linguistic review substituted. Every full candidate SHA and independent PASS receipt checked, all current English five fields and translation hashes validated.",
+  "entries": [
+    {
+      "entry_id": "wikipedia-381963",
+      "source_fields_sha256": "acae8d2f982c3a5038a3062ab382ae19d0c72c78f5d9faa30d44e91b80ae7a47",
+      "translation_sha256": "e62715d06dc9af41324aa1999e6d808c191dcd7ca6bc1d7a8838d4851cae0e97",
+      "independent_peer": "build/research/warios-woods1994-four-language-completion/independent-all-fields-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "d039ce86001c2866f8c1125d60ec2a93141b8ab4eaf0db3a5bf4d4dc21813486",
+      "candidate_path": "build/research/warios-woods1994-four-language-completion/warios-woods-all-five-fields-four-language-full-reuse-fidelity-candidate.json",
+      "candidate_sha256": "e88e7e330a39a2ca85345d655a83601146e37f7ea56086a91122e7617f908212"
+    },
+    {
+      "entry_id": "wikipedia-899737",
+      "source_fields_sha256": "ecf25838f1d64cbf835efee54b3dce308ce3abc8d84fe5c9349c225b7598778c",
+      "translation_sha256": "e43f09b3b7dc10b8e722601f5c719551331697e36de9ebf9fef0d22b5cb9737f",
+      "independent_peer": "build/research/ssfii-turbo1994-four-language-completion/independent-all-fields-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "e7b7aa883949296e9633caa5e36a8293f9ee4060c152f2190731c5cb2e888372",
+      "candidate_path": "build/research/ssfii-turbo1994-four-language-completion/ssfii-turbo-all-five-fields-four-language-full-reuse-fidelity-candidate.json",
+      "candidate_sha256": "20189645f029491a891984fc2efe8ab17931d944840d1d84b0a4f29e7fffa4e8"
+    },
+    {
+      "entry_id": "daily-07-02",
+      "source_fields_sha256": "6c750b87fc5992ca6691059db11e3454e9a808956974f743e8ab7faee9ffc3bc",
+      "translation_sha256": "a944dbf6a93f73a23f7bf9358598201651f3d8a7d0bf681bb663b26d1c48a0a2",
+      "independent_peer": "build/research/xcom1994-four-language-completion/independent-all-fields-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "747a485aeeb606c68ed7b667010e0694428bd88cdbddc5f150c0d619d2e9a9b9",
+      "candidate_path": "build/research/xcom1994-four-language-completion/xcom-four-language-final-natural-german-preposition-candidate.json",
+      "candidate_sha256": "513b161e8f365be9ea3bf774579d91f98b57030660dfd75599b7f1131f6724ed"
+    }
+  ]
+}

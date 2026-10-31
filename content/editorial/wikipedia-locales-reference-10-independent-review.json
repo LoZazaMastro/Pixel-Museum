@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "reviewed_utc_date": "2026-10-21",
+  "reviewer_role": "Independent editorial reviewer; different agent from translation author",
+  "batch_file": "content/expansion/wikipedia-locales-reference-10.json",
+  "batch_sha256": "75c5e3ad18f7c89f77139120996e31c785eb2f10190ad5346fe971a8438f6ce6",
+  "result": "PASS for source fidelity and explicit admission; no additional text corrections required",
+  "review_scope": {
+    "source_entries": 4,
+    "english_source_paragraphs_read": 12,
+    "translation_pairs_read": 16,
+    "translated_paragraphs_read": 48,
+    "existing_headings": 0,
+    "languages": [
+      "it",
+      "es",
+      "fr",
+      "de"
+    ],
+    "english_source_words": 613
+  },
+  "checks": {
+    "exact_current_english_source_fields": true,
+    "all_source_hashes_recomputed": true,
+    "source_attribution_sources_revision_unchanged": true,
+    "target_revision_license_credit_complete": true,
+    "every_paragraph_compared_semantically": true,
+    "proper_names_compared_per_paragraph": true,
+    "numbers_decades_written_quantities_and_future_qualifiers_read": true,
+    "source_empty_heading_arrays_preserved": true,
+    "no_silent_english_fact_edit": true,
+    "utf8_no_transport_corruption": true,
+    "pure_overlay_join_pass": true,
+    "six_negative_tests_pass": true,
+    "all_preexisting_source_locale_entries_preserved": true,
+    "non_target_languages_unchanged": true
+  },
+  "entries": [
+    {
+      "entry_id": "wikipedia-77739989",
+      "title": "Cultic",
+      "revision_id": 1374879447,
+      "revision_url": "https://en.wikipedia.org/w/index.php?oldid=1374879447",
+      "body_sha256": "4f7a5e56b5206df2634fc30e77c66f56999023c6c94608014e87aafae0feed69",
+      "languages_read": [
+        "it",
+        "es",
+        "fr",
+        "de"
+      ],
+      "paragraphs_read": 12,
+      "headings": 0,
+      "result": "PASS",
+      "quantity_checks": "2022/2025 chapters, June23 2026 Complete Edition, Switch2 planned with no announced date, 1960s written decades retained.",
+      "semantic_checks": "Jasozz/3DRealms creation/publication separated from Atari/Infogrames Complete Edition. Cult plot, being left for dead, and source examples Blood/DukeNukem3D/Quake retained; no release-plan certainty added."
+    },
+    {
+      "entry_id": "wikipedia-66659306",
+      "title": "BROK the InvestiGator",
+      "revision_id": 1362540932,
+      "revision_url": "https://en.wikipedia.org/w/index.php?oldid=1362540932",
+      "body_sha256": "a6c6b299bdfa1b8e02a8d55da8beeb157ba39ff6f1d74c032aac29c0a9294fa3",
+      "languages_read": [
+        "it",
+        "es",
+        "fr",
+        "de"
+      ],
+      "paragraphs_read": 12,
+      "headings": 0,
+      "result": "PASS",
+      "quantity_checks": "August26 2022, October4, March1 2023, February21 2024, December13 2024, December1 2025; platforms and GameMakerStudio2 retained.",
+      "semantic_checks": "Independent French studio, self-publication and successful Kickstarter retained. Mobile first chapter free versus purchasable later chapters remains distinct from free spin-off; no character voiceovers in spin-off and later console ports retained."
+    },
+    {
+      "entry_id": "wikipedia-77070226",
+      "title": "Astro Bot",
+      "revision_id": 1380483939,
+      "revision_url": "https://en.wikipedia.org/w/index.php?oldid=1380483939",
+      "body_sha256": "f09bff78b7eb6291ea4653a62bc4e6564a3b33dd5bd43f9668ca714b43b8bab8",
+      "languages_read": [
+        "it",
+        "es",
+        "fr",
+        "de"
+      ],
+      "paragraphs_read": 12,
+      "headings": 0,
+      "result": "PASS",
+      "quantity_checks": "2024, PlayStation30th anniversary, fifth installment, 2020 predecessor, 21stBAFTA and28thDICE awards all retained.",
+      "semantic_checks": "TeamAsobi separation from JapanStudio, robots/PS5mothership/Nebulax quest, DualSense adaptive triggers/haptics, Metacritic rating and Nintendo comparison remain source-qualified. German summary remains a complete sentence across ordinal30. punctuation."
+    },
+    {
+      "entry_id": "wikipedia-83969309",
+      "title": "Book of Hours",
+      "revision_id": 1374870995,
+      "revision_url": "https://en.wikipedia.org/w/index.php?oldid=1374870995",
+      "body_sha256": "ba9b190e7e6a5dc23f25799d358a642c0c099a218befb408bb5e5ade9afdde1e",
+      "languages_read": [
+        "it",
+        "es",
+        "fr",
+        "de"
+      ],
+      "paragraphs_read": 12,
+      "headings": 0,
+      "result": "PASS",
+      "quantity_checks": "August17 2023; 1930s/anniTrenta/anosTreinta; more than180000 words at launch, not an exact total.",
+      "semantic_checks": "WeatherFactory developer/publisher, library off Cornwall coast, repair/books/tools/patrons and card-system comparison retained. SecretHistories shared setting, tabletop TheLadyAfterwards and upcoming computerRPG TravellingatNight remain distinct. FinalFrench grammar uses des Cornouailles."
+    }
+  ],
+  "blocking_findings": [],
+  "author_pre_freeze_correction_read": "BookofHours French paragraph1: au large des Cornouailles, grammatical correction only, included in reviewed final hash.",
+  "nonblocking_limits": [
+    "Independent agent language/source-fidelity review, not a native-human linguistic signoff or new historical primary-source fact-check.",
+    "2025/2026 releases and planned products remain tied to exact English source revisions; no live release verification performed.",
+    "Source scalar field hashes in this batch use raw UTF8; body/headings/full source-field hashes use compact JSON. Both independently recomputed.",
+    "No new image rights/quality/layout or physical PS5 signoff."
+  ],
+  "fixture_receipt": "build/research/wikipedia-locales-reference-10/independent-join-validation.json",
+  "fixture_receipt_sha256": "d4797fd7f97d0bd4272cf3ea7300b0f349a0e44b06e5909315540f0499a08741",
+  "catalog_sha256_observed_snapshot": "bfa6a9c1967d1b711150d2f8b5dc5d4c36d264b1e0aa9f66108ae6d232b4873c",
+  "writes": "Only private review fixture/script and this review receipt. No authored batch/master/locales/hook/runtime/console writes.",
+  "http_requests": 0,
+  "new_translations_integrated_by_reviewer": 0
+}

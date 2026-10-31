@@ -1,0 +1,107 @@
+{
+  "status": "PASS",
+  "locale": "de",
+  "entries": [
+    {
+      "entry_id": "wikipedia-60979422",
+      "source_fields_sha256": "931bdaa7bf0f8e723ee572773bd2c24f2cb1915793e3e3bacebce5c9b150d638",
+      "translation_sha256": "5853fb5a96372b7cd36a8ad03b748d9f97a60b2f49cb7e0528f6f8417cf0fe08",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch358/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "739880b59f669552986f4380e3caf5095bd41f131931a65e5c5a5c04fe93f9fa"
+    },
+    {
+      "entry_id": "wikipedia-83969309",
+      "source_fields_sha256": "11bd814069910666c708117b87a835cf734275404005dabe1aaafe0256b6ca35",
+      "translation_sha256": "44af4fd05b8bef5a16f2694319eae3dc5d8d0fe111d192093a698bba9b4939a4",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch358/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "739880b59f669552986f4380e3caf5095bd41f131931a65e5c5a5c04fe93f9fa"
+    },
+    {
+      "entry_id": "wikipedia-74653484",
+      "source_fields_sha256": "b869a0899989dc7a7646f91a311e16d2071862f0030533e4bc478cb912537f75",
+      "translation_sha256": "3d2bcf487de857aaddd219720116ce241fc04d05f4d0cf95ab12ac791017254a",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch358/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "739880b59f669552986f4380e3caf5095bd41f131931a65e5c5a5c04fe93f9fa"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "category_audit",
+    "actual_receipt": "build/research/catalog-2023-chronological/august-three-private/independent-category-audit-approval.json",
+    "actual_receipt_sha256": "eafa0c18c0a55d8b945d8441b623bc3665553d5ca23a153542a05b15c49b64fb",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "category_audit",
+      "index": "build/research/catalog-2023-chronological/august-three-private/three-original-source-media-four-language-private-index.json",
+      "index_sha256": "8a014b17fccda130400b9d438487e2c728a7a8f21bf99147dcb0d31d051b7334",
+      "scope": "Actually read all15English and60localized paragraphs plus all five fields. Actually viewed all23images in the three final contacts. Compared55existing soundtrack objects exactly; read all three new publicAAC metadata receipts, including2021 licensed2Mello,2023 artist extendedProux republication2026, and the explicitly independent original GETENUF archive. No recording download or audition claimed.",
+      "primary_sources_actually_read": [
+        {
+          "url": "https://baldursgate3.game/news/hotfix-30-now-live_139",
+          "finding": "April30,2025: Patch8 was final major patch, not final bugfix; continued hotfixes explicitly confirmed."
+        },
+        {
+          "url": "https://weatherfactory.biz/book-of-hours/",
+          "finding": "Firsthand HushHouse library restoration, occult books, nine wisdoms, visitors and SecretHistories setting."
+        },
+        {
+          "url": "https://team-reptile.com/",
+          "finding": "Original June20/27,2023 posts confirm August18 PC/Switch and other platforms later, and three movement styles."
+        },
+        {
+          "url": "https://2mello.net/blog/2022/3/3/creatingsttf-9",
+          "finding": "Firsthand composer explanation of I Wanna Kno from SoundsOfTokyoToFuture; not misrepresented as newly commissioned in2023."
+        }
+      ],
+      "findings": [],
+      "owners": [
+        {
+          "entry_id": "wikipedia-60979422",
+          "slug": "baldur",
+          "source": "build/research/catalog-2023-chronological/august-three-private/baldur/complete-original-source-media-private-candidate.json",
+          "source_sha256": "3554cd0102f1e3ec64a5ab4d023627b63ae72e6f861ebcc90965edd7385487b6",
+          "target": "build/research/catalog-2023-chronological/august-three-private/baldur/complete-four-language-private-candidate.json",
+          "target_sha256": "0e7e0502c77320f55a34112f1aa25cb54342fb55da385ecce2b91ae48498e883",
+          "contact": "build/research/catalog-2023-chronological/august-three-private/baldur/final-selected-media-contact.jpg",
+          "contact_sha256": "e15f5cd667a080f794c41b560addbbc59a09f33f373cc6d04feed4ee8afade9d",
+          "english_cards": 8,
+          "localized_cards": 32,
+          "images": 11,
+          "tracks": 52,
+          "finite_errata": 1
+        },
+        {
+          "entry_id": "wikipedia-83969309",
+          "slug": "hours",
+          "source": "build/research/catalog-2023-chronological/august-three-private/hours/complete-original-source-media-private-candidate.json",
+          "source_sha256": "c3af60fba909d5e7346f1bfd5651fef0af5fa5bbff71fd95f6fa1ffa5037fe90",
+          "target": "build/research/catalog-2023-chronological/august-three-private/hours/complete-four-language-private-candidate.json",
+          "target_sha256": "0904861a1c3b19756f730b757d1229b7f23b80db245ae90534cbff5c365397eb",
+          "contact": "build/research/catalog-2023-chronological/august-three-private/hours/final-selected-media-contact.jpg",
+          "contact_sha256": "f915290a59f0ad106166cd254aee83c5d46cf45ad33023763fb848928591bc72",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 6,
+          "tracks": 3,
+          "finite_errata": 0
+        },
+        {
+          "entry_id": "wikipedia-74653484",
+          "slug": "bomb",
+          "source": "build/research/catalog-2023-chronological/august-three-private/bomb/complete-original-source-media-private-candidate.json",
+          "source_sha256": "871e7aa64e86b6aa7d1bd524d6a4e1c6ea58ead87b406264bdf8ee2b2a3477f8",
+          "target": "build/research/catalog-2023-chronological/august-three-private/bomb/complete-four-language-private-candidate.json",
+          "target_sha256": "ca46aecff3623b51419c4043b83c574b587e841c8bc55018cf5c816efe2f8786",
+          "contact": "build/research/catalog-2023-chronological/august-three-private/bomb/final-selected-media-contact.jpg",
+          "contact_sha256": "3c22ba3974cf77052eeaa52ea4770cb96d647407bdaa530ed946f935975bf6a1",
+          "english_cards": 4,
+          "localized_cards": 16,
+          "images": 6,
+          "tracks": 3,
+          "finite_errata": 1
+        }
+      ],
+      "production_writes": false
+    }
+  }
+}

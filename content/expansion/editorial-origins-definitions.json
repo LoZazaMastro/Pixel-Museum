@@ -1,0 +1,195 @@
+{
+  "schema_version": 1,
+  "written": "2026-10-21",
+  "status": "independently_reviewed_text_pending_placement_media_and_layout",
+  "entries": [
+    {
+      "id": "feature-origins-definitions",
+      "title": "A beginning depends on what you count",
+      "subtitle": "Four records, four useful questions",
+      "summary": "A fairground demonstration, a laboratory program, an invitation to play and a shared software project offer different ways into the history of games.",
+      "year": 1950,
+      "date": {
+        "precision": "range",
+        "start_year": 1950,
+        "end_year": 1962
+      },
+      "event_semantics": "A comparative historical feature covering selected 1950-1962 cases; not a claim that videogames begin in 1950 or that one invention has universal priority.",
+      "kind": "feature",
+      "layout": "story",
+      "editorial_mode": "original_additive_feature",
+      "related_ids": [
+        "bertie-the-brain",
+        "oxo",
+        "tennis-for-two",
+        "spacewar"
+      ],
+      "body": [
+        "The Canada Science and Technology Museum places Bertie the Brain at the Canadian National Exhibition in 1950. Joseph Kates helped build the tic-tac-toe machine to publicise an experimental electronic component, the Additron. A visitor could take part in a contest while a manufacturer demonstrated its engineering. Beginning here gives weight to rules, response and the encounter between a person and a machine. It asks us to examine what that installation does, before deciding how comfortably a later category such as videogame fits it.",
+        "OXO makes a different case. The Computer History Museum dates Alexander Douglas's game for EDSAC to 1952. A rotary telephone dial lets the player enter moves; a cathode-ray tube displays the board. The player can also choose who moves first. Here a computer, a program, an input device and an electronic screen belong to the same encounter. Following that combination brings a different part of the history into focus. Access matters too: the museum notes that few people outside Cambridge played the game.",
+        "Tennis for Two puts the invitation to play at the centre. At Brookhaven's visitors' days in 1958, William Higinbotham, David Potter and Robert V. Dvorak Sr. joined an analog computer to an oscilloscope. Two people could return a ball whose movement followed simple physics. A definition built around digital computation draws its boundary differently from one built around screen-based interaction. The laboratory encounter gives us another useful question: what changes when a machine is arranged so that visitors can understand it by taking a turn?",
+        "Spacewar! adds a question about versions and shared work. The Computer History Museum credits Steve Russell with the first version, followed by improvements from Peter Samson, Dan Edwards and Martin Graetz in spring 1962. Players control spacecraft against a star field, with gravity and motion shaping their decisions. A first working program and an evolving collective project offer different things for a historian to date. We can follow a particular contribution without losing sight of the people and revisions that make the recognisable game."
+      ],
+      "story_headings": [
+        "A contest inside a demonstration",
+        "A screen and a stored program",
+        "An invitation to take a turn",
+        "A beginning with several authors"
+      ],
+      "cards": [
+        {
+          "body_index": 0,
+          "heading": "A contest inside a demonstration",
+          "citations": [
+            {
+              "source_id": "canada",
+              "url": "https://publications.gc.ca/collections/collection_2018/mstc-cstm/NM33-1-17-eng.pdf",
+              "locator": "Printed p. 16 (PDF page 34, one-based; page index 33, zero-based): Additron, 1950 CNE demonstration and Figure 6 credit chain."
+            }
+          ],
+          "source_ids": [
+            "canada"
+          ],
+          "media_brief": {
+            "description": "A documented photograph or production record of Bertie at the CNE; retain its actual Rogers Majestic provenance and investigate the specific file rights.",
+            "status": "specific_item_identity_and_rights_review_required"
+          },
+          "inference_note": "The comparison of historical definitions is the museum author's analysis, not a claim that any source crowns a single first videogame."
+        },
+        {
+          "body_index": 1,
+          "heading": "A screen and a stored program",
+          "citations": [
+            {
+              "source_id": "oxo",
+              "url": "https://www.computerhistory.org/timeline/1952/",
+              "locator": "Graphics & Games: Alexander Douglas writes OXO for EDSAC."
+            }
+          ],
+          "source_ids": [
+            "oxo"
+          ],
+          "media_brief": {
+            "description": "An identifiable EDSAC/OXO display or telephone control; label any modern simulator or reconstruction with its actual date.",
+            "status": "specific_item_identity_and_rights_review_required"
+          },
+          "inference_note": "The comparison of historical definitions is the museum author's analysis, not a claim that any source crowns a single first videogame."
+        },
+        {
+          "body_index": 2,
+          "heading": "An invitation to take a turn",
+          "citations": [
+            {
+              "source_id": "tennis",
+              "url": "https://www.computerhistory.org/timeline/1958/",
+              "locator": "Graphics & Games: laboratory visitors, Higinbotham/Potter, analog computer, oscilloscope and later history."
+            },
+            {
+              "source_id": "tennis-collaborators",
+              "url": "https://www.museumofplay.org/blog/following-the-bouncing-ball-tennis-for-two-at-the-strong/",
+              "locator": "Opening installation history: Higinbotham, David Potter and Robert V. Dvorak Sr.; later discussion of the corrected 1958 schematics."
+            }
+          ],
+          "source_ids": [
+            "tennis",
+            "tennis-collaborators"
+          ],
+          "media_brief": {
+            "description": "The credited later Tennis for Two demonstration already validated in the museum; caption its reconstruction status explicitly.",
+            "status": "specific_item_identity_and_rights_review_required"
+          },
+          "inference_note": "The comparison of historical definitions is the museum author's analysis, not a claim that any source crowns a single first videogame."
+        },
+        {
+          "body_index": 3,
+          "heading": "A beginning with several authors",
+          "citations": [
+            {
+              "source_id": "spacewar",
+              "url": "https://www.computerhistory.org/pdp-1/spacewar/",
+              "locator": "Conception in 1961; Russell first version; named spring 1962 contributors and controllers."
+            }
+          ],
+          "source_ids": [
+            "spacewar"
+          ],
+          "media_brief": {
+            "description": "The credited restored PDP-1/Spacewar photograph already validated in the museum; distinguish the photograph date from the 1962 program.",
+            "status": "specific_item_identity_and_rights_review_required"
+          },
+          "inference_note": "The comparison of historical definitions is the museum author's analysis, not a claim that any source crowns a single first videogame."
+        }
+      ],
+      "sources": [
+        {
+          "id": "canada",
+          "title": "Computing in Canada: Building a Digital Future",
+          "url": "https://publications.gc.ca/collections/collection_2018/mstc-cstm/NM33-1-17-eng.pdf",
+          "publisher": "Canada Science and Technology Museum",
+          "source_type": "institutional_research_monograph",
+          "locator": "Printed p. 16 (PDF page 34, one-based; page index 33, zero-based): Additron, 1950 CNE demonstration and Figure 6 credit chain.",
+          "checked": "2026-10-21"
+        },
+        {
+          "id": "oxo",
+          "title": "Alexander Douglas writes OXO for EDSAC",
+          "url": "https://www.computerhistory.org/timeline/1952/",
+          "publisher": "Computer History Museum",
+          "source_type": "institutional_history",
+          "locator": "Graphics & Games: Alexander Douglas writes OXO for EDSAC.",
+          "checked": "2026-10-21"
+        },
+        {
+          "id": "tennis",
+          "title": "Higinbotham develops Tennis-For-Two at Brookhaven National Labs",
+          "url": "https://www.computerhistory.org/timeline/1958/",
+          "publisher": "Computer History Museum",
+          "source_type": "institutional_history",
+          "locator": "Graphics & Games: laboratory visitors, Higinbotham/Potter, analog computer, oscilloscope and later history.",
+          "checked": "2026-10-21"
+        },
+        {
+          "id": "spacewar",
+          "title": "Spacewar! - PDP-1 Restoration Project",
+          "url": "https://www.computerhistory.org/pdp-1/spacewar/",
+          "publisher": "Computer History Museum",
+          "source_type": "holding_institution_history",
+          "locator": "Conception in 1961; Russell first version; named spring 1962 contributors and controllers.",
+          "checked": "2026-10-21"
+        },
+        {
+          "id": "tennis-collaborators",
+          "title": "Following The Bouncing Ball: Tennis for Two...at The Strong!",
+          "url": "https://www.museumofplay.org/blog/following-the-bouncing-ball-tennis-for-two-at-the-strong/",
+          "publisher": "The Strong National Museum of Play",
+          "source_type": "holding_institution_history",
+          "locator": "Opening installation history: Higinbotham, David Potter and Robert V. Dvorak Sr.; later discussion of the corrected 1958 schematics.",
+          "checked": "2026-10-21"
+        }
+      ],
+      "images": [],
+      "videos": [],
+      "models": [],
+      "editorial_credit": "Original English comparative feature for Pixel Museum. Each card identifies its institutional source.",
+      "placement_recommendation": {
+        "type": "distinct_connected_feature",
+        "reason": "Compares the criteria used to define beginnings, rather than duplicating a machine's chronological release or its full individual story."
+      }
+    }
+  ],
+  "audit": {
+    "features": 1,
+    "cards": 4,
+    "body_words": 335,
+    "per_source_including_title_summary_and_heading": {
+      "canada": 118,
+      "oxo": 119,
+      "tennis": 121,
+      "tennis-collaborators": 121,
+      "spacewar": 119
+    },
+    "verbatim_quote_words": 0,
+    "net_new_timeline_count_not_yet_approved": 0,
+    "independent_review": "2026-10-21; exact institutional sections inspected; metadata punctuation and Dvorak attribution corrected; all body indices/headings/citations aligned; no media readiness claimed."
+  }
+}

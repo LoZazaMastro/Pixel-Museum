@@ -1,0 +1,192 @@
+{
+  "schema_version": 1,
+  "reviewed_utc": "2026-10-21T02:21:35.363082+00:00",
+  "reviewer": "native_video_independent_media_association_review",
+  "batch_path": "content/expansion/priority-feature-context-media-12.json",
+  "before_sha256": "64dc1273beb6eade8dc32179c3a344cd8029617b6002c865535965e0b496a3c0",
+  "batch_sha256": "67cede6ded22d4c19745b271500b25bc3693e2068e847ad89016500c47dff79a",
+  "before_archive": "build/research/publishing/features-context/batch12/priority-feature-context-media-12-before-wright-review.json",
+  "metadata_correction": [
+    {
+      "feature_id": "feature-will-wright-simulation",
+      "field": "title",
+      "before": "Will Wright speaking at the 2010 Game Developers Conference.",
+      "after": "Will Wright at the 2010 Game Developers Choice Awards."
+    },
+    {
+      "feature_id": "feature-will-wright-simulation",
+      "field": "caption",
+      "before": "Will Wright speaking at the 2010 Game Developers Conference.",
+      "after": "Will Wright at the 2010 Game Developers Choice Awards."
+    },
+    {
+      "feature_id": "feature-will-wright-simulation",
+      "field": "context_review_note",
+      "before": "Actual lecture photograph identifies the designer. The photo is dated2010, not relabelled as the separately cited2008 interview or as a SimCity/Sims production meeting.",
+      "after": "A later public appearance at an awards event identifies the designer. The photograph dates from 2010; it does not depict the cited 2008 interview or a SimCity/The Sims production meeting."
+    }
+  ],
+  "comparison_catalog_sha256": "0167ec422f0b29a2957437030b9fc5e46a2e33f41145fbc77720ee2d5e3b6e21",
+  "primary_metadata_passages_actually_read": {
+    "iwatani": "Saved Commons imageinfo: Official GDC; CC BY2.0;2March2011; Iwatani at GDC2011.",
+    "carmack": "Saved Commons imageinfo: RoboSabs; own work;CC0;24February2025; portrait of John Carmack.",
+    "wright": "Saved Commons imageinfo: Official GDC;CC BY2.0;11March2010; expressly during Game Developers Choice Awards.",
+    "roberta": "Saved Commons imageinfo: Guywelch2000;CC BY4.0;28July2024; Adventure Game Fan Fair, Tacoma.",
+    "shaw": "Existing admitted image-quality source ledger and original native-dimension audit read: Carol B Shaw,CC BY-SA4.0; River Raid award portrait. No raw Commons date record claimed and no capture date invented."
+  },
+  "source_evidence_sha256": {
+    "content/expansion/image-quality-upgrades.json": "1b556e2f60e0ba479f04acd70c5ce3bb5bd8c694f717a1cf8fe39687bd15aeee",
+    "content/expansion/image-quality-upgrades-audit.json": "53dd8ed76e546459e72dbb12bf60272ce7ea122e7034895a77f2ff5e6377b464",
+    "content/expansion/illustration-additions-audit.json": "c333ff734bbcc6b8caa8902a4201ce9ff7634cef3bca53d6291b2f5940f7be7b",
+    "content/expansion/image-quality-replacements-sources.json": "781bd89aaf464dc7ada296679736df16900e6ad5551dfacd7a4a86ccd90c2d35",
+    "build/research/publishing/features-context/batch12/final-contact.jpg": "fab35486f87b0bf7aef1d1b9764a7ad570611f462d626ba477bc7a269aad0d20"
+  },
+  "rows": [
+    {
+      "feature_id": "feature-pac-man-audience",
+      "parent_id": "pac-man",
+      "paragraph_index": 0,
+      "heading": "An idea before a circuit",
+      "paragraph_sha256": "595a261996272d229b15bf8a14486e2bcf1eb4edf4ec6b51901c285e4e677160",
+      "feature_body_sha256": "171027c119839a5b1e68b63b8454749cfb6f54d309efeaaa7ba87f68d51b3464",
+      "source_body_hash_encoding": "SHA256 of json.dumps(body,ensure_ascii=False) with default separator spaces, matching the actual association generator.",
+      "decision": "approve_scoped_introductory_portrait_association",
+      "actual_card_read": true,
+      "reason": "Opening card names Iwatani and describes his retrospective design intentions. The2011 public presentation is labelled as later, not as the original design meeting or audience measurement.",
+      "date_caption_scope": "Toru Iwatani presenting at the 2011 Game Developers Conference.",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Toru_Iwatani,_creator_of_Pac-Man,_at_GDC_2011.jpg",
+      "creator": "Official GDC",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "prior_source_ledger_owner": "workbook-01-25-t-ru-iwatani",
+      "prior_source_attribution_fields_exact_match": true,
+      "local_proof": "build/research/image-quality/ea33c560e672075a.jpg",
+      "local_sha256": "fb151b95fd3d4fe2a4bd44ecd50c3d66e0f5bb422e46af858d28b627bfbc436b",
+      "decoded_dimensions": [
+        1720,
+        2669
+      ],
+      "exact_original_url_cache_key_match": true,
+      "utm_only_url_normalization_match": true,
+      "limits": "Portrait identity/association and preserved recorded rights metadata; not a new copyright grant, current remote availability check or evidence of the technical process."
+    },
+    {
+      "feature_id": "feature-john-carmack-engineering",
+      "parent_id": "workbook-08-20-john-carmack",
+      "paragraph_index": 0,
+      "heading": "Somebody has to make it build",
+      "paragraph_sha256": "0a8e86dd805f22c050ce8b899a6bce26820fbe06abe713a115da330e8bb7119e",
+      "feature_body_sha256": "f5535bc1ef7fab41dfd67c9e3109657a9c36e2a763c971e21a8888c1edcd59de",
+      "source_body_hash_encoding": "SHA256 of json.dumps(body,ensure_ascii=False) with default separator spaces, matching the actual association generator.",
+      "decision": "approve_scoped_introductory_portrait_association",
+      "actual_card_read": true,
+      "reason": "Opening card names Carmack and credits Kreimeier’s1997 cleanup and dependency constraints. A2025 Carmack portrait identifies the person; it does not purport to show Kreimeier, that release, its code or the original workplace.",
+      "date_caption_scope": "John Carmack photographed in 2025.",
+      "source_page": "https://commons.wikimedia.org/wiki/File:John_Carmack_2025.jpg",
+      "creator": "RoboSabs",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "prior_source_ledger_owner": "workbook-08-20-john-carmack",
+      "prior_source_attribution_fields_exact_match": true,
+      "local_proof": "build/research/image-quality/03d8f69c064a4d9c.jpg",
+      "local_sha256": "5aae32c09c8f47826f1f2d08e365af0fde306a2fc60c7027f48cd671b8a226ae",
+      "decoded_dimensions": [
+        1876,
+        3053
+      ],
+      "exact_original_url_cache_key_match": true,
+      "utm_only_url_normalization_match": true,
+      "limits": "Portrait identity/association and preserved recorded rights metadata; not a new copyright grant, current remote availability check or evidence of the technical process."
+    },
+    {
+      "feature_id": "feature-will-wright-simulation",
+      "parent_id": "simcity",
+      "paragraph_index": 0,
+      "heading": "Design begins with an activity",
+      "paragraph_sha256": "71022b2e0549adafd54a1ef2e26eb03a923c619770401941699978cff4b80f9b",
+      "feature_body_sha256": "1483015bf4bc5a1a983501c183f62a3b60f98e8078e3526f4ab0667ba384638e",
+      "source_body_hash_encoding": "SHA256 of json.dumps(body,ensure_ascii=False) with default separator spaces, matching the actual association generator.",
+      "decision": "approve_scoped_introductory_portrait_association",
+      "actual_card_read": true,
+      "reason": "Opening card names Wright and explains the2008 architecture/design interview. Source metadata identifies Game Developers Choice Awards2010, not a lecture. Corrected event wording avoids conflating the image with that interview.",
+      "date_caption_scope": "Will Wright at the 2010 Game Developers Choice Awards.",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Will_Wright_-_Game_Developers_Conference_2010_(2).jpg",
+      "creator": "Official GDC",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "prior_source_ledger_owner": "workbook-01-20-will-wright-game-designer",
+      "prior_source_attribution_fields_exact_match": true,
+      "local_proof": "build/research/image-quality/bf6221bd449122de.jpg",
+      "local_sha256": "0571b3cf78c03c575cca70ca1568b5802ed79bc6090b6a921f74af982a431686",
+      "decoded_dimensions": [
+        1920,
+        1908
+      ],
+      "exact_original_url_cache_key_match": true,
+      "utm_only_url_normalization_match": true,
+      "limits": "Portrait identity/association and preserved recorded rights metadata; not a new copyright grant, current remote availability check or evidence of the technical process."
+    },
+    {
+      "feature_id": "feature-roberta-williams-authorship",
+      "parent_id": "roberta-williams",
+      "paragraph_index": 0,
+      "heading": "The troublesome verb",
+      "paragraph_sha256": "45ba6e9ba23223ed8602dded370cb2be5daa3e7e225351f75ac30cf12174265a",
+      "feature_body_sha256": "5c5cd5a289f3e4dbcdd3886cd5df0ec409fd2cd1e0ea8b0905421be3f37fce13",
+      "source_body_hash_encoding": "SHA256 of json.dumps(body,ensure_ascii=False) with default separator spaces, matching the actual association generator.",
+      "decision": "approve_scoped_introductory_portrait_association",
+      "actual_card_read": true,
+      "reason": "Opening card discusses Roberta’s interface decisions through Ken’s retrospective account. The July2024 Fan Fair appearance identifies Roberta; it does not depict the older parser/interface production or the Anthology interview.",
+      "date_caption_scope": "Roberta Williams at Adventure Game Fan Fair in Tacoma, Washington, in July 2024.",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Roberta_Williams_Adventure_Game_Fan_Fair_Tacoma_Washington_July_2024.jpg",
+      "creator": "Guywelch2000",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "prior_source_ledger_owner": "roberta-williams",
+      "prior_source_attribution_fields_exact_match": true,
+      "local_proof": "build/research/image-quality/ccc35e82fd6b85c7.jpg",
+      "local_sha256": "d32f22fb10bae820299ed1b30f626d3a918a54a2f982e9b8036cbc0119135f6c",
+      "decoded_dimensions": [
+        1920,
+        1440
+      ],
+      "exact_original_url_cache_key_match": true,
+      "utm_only_url_normalization_match": true,
+      "limits": "Portrait identity/association and preserved recorded rights metadata; not a new copyright grant, current remote availability check or evidence of the technical process."
+    },
+    {
+      "feature_id": "feature-carol-shaw-river",
+      "parent_id": "carol-shaw",
+      "paragraph_index": 0,
+      "heading": "Generating a river",
+      "paragraph_sha256": "d2f770d816c9452df89b5c37f24bf42850f110aae1c065f1c6b1eca6578328c6",
+      "feature_body_sha256": "b4710bc82a253733b29bb2a5c1c36522d3e18722f4fe707854569e3a1ca056b4",
+      "source_body_hash_encoding": "SHA256 of json.dumps(body,ensure_ascii=False) with default separator spaces, matching the actual association generator.",
+      "decision": "approve_scoped_introductory_portrait_association",
+      "actual_card_read": true,
+      "reason": "Opening card names Shaw and describes River Raid terrain generation. The portrait and named River Raid award establish subject association, not visual evidence of the algorithm. No unverified capture year is added.",
+      "date_caption_scope": "Carol Shaw holding her River Raid award in the source photograph.",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Carol_Shaw_Holding_Gold_River_Raid_Cartridge.jpg",
+      "creator": "Carol B Shaw",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "prior_source_ledger_owner": "carol-shaw",
+      "prior_source_attribution_fields_exact_match": true,
+      "local_proof": "build/research/image-quality/d807d108e77912bc.jpg",
+      "local_sha256": "23be466a04a9fc841f2c91ecdea0bbe5c8528815d0e9431bfa8b9a78b4362595",
+      "decoded_dimensions": [
+        1920,
+        2103
+      ],
+      "exact_original_url_cache_key_match": true,
+      "utm_only_url_normalization_match": true,
+      "limits": "Portrait identity/association and preserved recorded rights metadata; not a new copyright grant, current remote availability check or evidence of the technical process."
+    }
+  ],
+  "approved_associations": 5,
+  "holds": [],
+  "new_http_requests": 0,
+  "master_written": false,
+  "feature_prose_changed": false,
+  "scope": "Five introductory cards and exact cached files checked. One awards-event versus lecture metadata correction only. Does not manufacture majority four-card illustration coverage or independent approval of feature prose."
+}

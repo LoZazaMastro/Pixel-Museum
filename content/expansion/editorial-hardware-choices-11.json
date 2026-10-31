@@ -1,0 +1,722 @@
+{
+  "schema_version": 1,
+  "written": "2026-10-21",
+  "status": "complete_prose_pending_independent_source_and_placement_review",
+  "entries": [
+    {
+      "id": "feature-playstation-industrial-design",
+      "title": "A shape becomes familiar",
+      "summary": "Design survives a change of machinery.",
+      "year": 1994,
+      "era_id": "dimensions",
+      "kind": "feature",
+      "layout": "story",
+      "language": "en",
+      "date": {
+        "precision": "year"
+      },
+      "body": [
+        "The original PlayStation placed a round disc lid inside a rectangular case. Sony's institutional history describes this simple arrangement as part of the machine's identity, alongside its technical capabilities. The circle gave the storage medium a visible place in the object. Opening that lid was also a small physical ritual before play. A console could introduce itself through an understandable shape, then ask the television to reveal the complicated moving spaces its electronics were capable of building from a game disc.",
+        "Teiyu Goto gave the controller shapes that could work as icons. Sony's account also draws attention to its grips, a departure from the flat controllers familiar at the time. The object presented two related invitations: somewhere to place the hands, and marks to learn through use. Those geometric signs could travel beyond a particular game's instructions. A player looking down at the controller encountered a small visual vocabulary that belonged to the platform, alongside the different rules each game asked them to remember.",
+        "In September 2024, Hideaki Nishino introduced anniversary products that carried the first PlayStation's colour treatment onto contemporary hardware. PS5 consoles and DualSense controllers became surfaces for a remembered appearance. The announcement explicitly connected them to the December 1994 beginning. This was a design history told through objects people could use: a newer machine could retain its own capabilities while borrowing a familiar visual setting. The relationship depended on recognition, allowing a colour scheme to connect products separated by three decades of technical change.",
+        "The anniversary console bundles also included a cable connector housing styled after the original PlayStation controller, with cable ties shaped like the platform's symbols. A detail usually noticed while connecting or tidying a machine became a collector's object. These accessories extended the visual connection beyond the console case itself. The announcement shows how an industrial identity can move between scales: from the main machine to something held in the fingers, then to a small mark repeated among the cables around it."
+      ],
+      "story_headings": [
+        "A circle in a rectangle",
+        "An identity held in the hands",
+        "The old palette meets new hardware",
+        "A connector becomes a keepsake"
+      ],
+      "related_ids": [
+        "playstation"
+      ],
+      "editorial_mode": "original_additive_feature",
+      "editorial_credit": "Original English feature written for Pixel Museum. Named designers, players and original publications are credited per card.",
+      "event_semantics": "The existing parent year anchors the subject. Later revisions and retrospective publications are explicitly distinguished in the narrative; no new exact launch day is inferred.",
+      "sources": [
+        {
+          "id": "sony-history",
+          "title": "Sony Group History, Volume2 Chapter9: The PlayStation",
+          "publisher": "Sony Group",
+          "url": "https://www.sony.com/en/SonyInfo/CorporateInfo/History/SonyHistory/2-09.html",
+          "publication_date": null,
+          "source_type": "Primary manufacturer publication or named participant interview",
+          "checked": "2026-10-21",
+          "locator": "Part3: round drive and rectangular body, hand grips, Goto simple iconic shapes.",
+          "rights": "Bibliographic citation only; text, photographs, industrial designs and trademarks retain their own rights.",
+          "snapshot": {
+            "path": "build/research/editorial-hardware-11/sony-history-web-reader.json",
+            "sha256": "442ebe0e6dc82a3b707cdcd95717e9ef6f249ed827e121e539e8534ab8748ba8",
+            "evidence_type": "original_publisher_text_recovered_by_web_reader_direct_HTTP403_retained"
+          }
+        },
+        {
+          "id": "sony-anniversary24",
+          "title": "Celebrating30years of PlayStation with a nostalgic look",
+          "publisher": "Hideaki Nishino / PlayStation Blog",
+          "url": "https://blog.playstation.com/2024/09/19/celebrating-30-years-of-playstation-with-a-nostalgic-look/",
+          "publication_date": "2024-09-19",
+          "source_type": "Primary manufacturer publication or named participant interview",
+          "checked": "2026-10-21",
+          "locator": "Original colour treatment across new hardware; included controller-style cable housing, shapes ties; November21 collection.",
+          "rights": "Bibliographic citation only; text, photographs, industrial designs and trademarks retain their own rights.",
+          "snapshot": {
+            "path": "build/research/editorial-hardware-11/sony-anniversary24.html",
+            "sha256": "ad8c575575533732db679230396d1ac783867cfffffbfa81732c0e6419e3ac0d",
+            "evidence_type": "actual_source_response"
+          }
+        }
+      ],
+      "source_ids": [
+        "sony-history",
+        "sony-anniversary24"
+      ],
+      "media_status": "Contextual artefacts require separate identity, rights, resolution and card-fit review.",
+      "integration": {
+        "mode": "proposed_attachment",
+        "proposed_parent_id": "playstation",
+        "overwrite_existing_body": false,
+        "requires_semantic_merge_review": true,
+        "net_new_destination_claim": false
+      },
+      "review_status": "complete_prose_pending_independent_source_and_placement_review",
+      "cards": [
+        {
+          "body_index": 0,
+          "heading": "A circle in a rectangle",
+          "source_ids": [
+            "sony-history"
+          ],
+          "citations": [
+            {
+              "source_id": "sony-history",
+              "url": "https://www.sony.com/en/SonyInfo/CorporateInfo/History/SonyHistory/2-09.html",
+              "locator": "Part3: round drive and rectangular body, hand grips, Goto simple iconic shapes."
+            }
+          ],
+          "media_brief": {
+            "description": "Original1994 console top and opened lid; distinguish the PSone redesign.",
+            "selected_asset": null,
+            "status": "research_brief_only"
+          }
+        },
+        {
+          "body_index": 1,
+          "heading": "An identity held in the hands",
+          "source_ids": [
+            "sony-history"
+          ],
+          "citations": [
+            {
+              "source_id": "sony-history",
+              "url": "https://www.sony.com/en/SonyInfo/CorporateInfo/History/SonyHistory/2-09.html",
+              "locator": "Part3: round drive and rectangular body, hand grips, Goto simple iconic shapes."
+            }
+          ],
+          "media_brief": {
+            "description": "Original digital PlayStation controller and its four marks; no invented symbol meanings.",
+            "selected_asset": null,
+            "status": "research_brief_only"
+          }
+        },
+        {
+          "body_index": 2,
+          "heading": "The old palette meets new hardware",
+          "source_ids": [
+            "sony-anniversary24"
+          ],
+          "citations": [
+            {
+              "source_id": "sony-anniversary24",
+              "url": "https://blog.playstation.com/2024/09/19/celebrating-30-years-of-playstation-with-a-nostalgic-look/",
+              "locator": "Original colour treatment across new hardware; included controller-style cable housing, shapes ties; November21 collection."
+            }
+          ],
+          "media_brief": {
+            "description": "Official2024 grey anniversary hardware, clearly labelled as PS5 rather than original1994.",
+            "selected_asset": null,
+            "status": "research_brief_only"
+          }
+        },
+        {
+          "body_index": 3,
+          "heading": "A connector becomes a keepsake",
+          "source_ids": [
+            "sony-anniversary24"
+          ],
+          "citations": [
+            {
+              "source_id": "sony-anniversary24",
+              "url": "https://blog.playstation.com/2024/09/19/celebrating-30-years-of-playstation-with-a-nostalgic-look/",
+              "locator": "Original colour treatment across new hardware; included controller-style cable housing, shapes ties; November21 collection."
+            }
+          ],
+          "media_brief": {
+            "description": "The actual2024 controller-style cable housing and shapes ties, not an original port.",
+            "selected_asset": null,
+            "status": "research_brief_only"
+          }
+        }
+      ],
+      "source_budget_audit": [
+        {
+          "source_budget_group": "sony-history",
+          "body_indices": [
+            0,
+            1
+          ],
+          "charged_words": 189,
+          "maximum_words": 200,
+          "verbatim_quoted_words": 0
+        },
+        {
+          "source_budget_group": "sony-anniversary24",
+          "body_indices": [
+            2,
+            3
+          ],
+          "charged_words": 188,
+          "maximum_words": 200,
+          "verbatim_quoted_words": 0
+        }
+      ]
+    },
+    {
+      "id": "feature-switch-hybrid-routine",
+      "title": "A console changes its setting",
+      "summary": "Moving the screen changes the arrangement.",
+      "year": 2017,
+      "era_id": "everywhere",
+      "kind": "feature",
+      "layout": "story",
+      "language": "en",
+      "date": {
+        "precision": "year"
+      },
+      "body": [
+        "Nintendo introduced Switch in October 2016 through a change of setting. At home, its dock connected the console to a television. Lifting the machine out carried the same game into handheld use. The announcement pictured that movement into places such as a train or a friend's apartment. The hardware proposal linked those situations through one object, with a screen that travelled and controls that could remain attached. Continuing play became a matter of rearranging the equipment around a moment in someone's day.",
+        "The detachable Joy-Con gave that rearrangement another social possibility. Nintendo's announcement described one player holding a controller in each hand, or two people taking one apiece. The same pieces could slide back onto the console or join a grip resembling a more conventional controller. A pair of small objects therefore carried several possible arrangements. Inviting another person to play could begin by handing over something already attached to the machine, turning the hardware's separable parts into a practical way to change the group around it.",
+        "The later OLED model made that portable screen larger without simply enlarging every part around it. In Nintendo's 2021 developer conversation, Ko Shiota describes fitting circuits and cables into a narrower border. Working with the display manufacturer, the team placed circuitry on a film that folded back into the bezel. The visible improvement depended on work hidden around the image. Screen size was a negotiation with packaging, strength and the other components, rather than an isolated choice of a more impressive display.",
+        "Toru Yamashita describes another negotiation behind the OLED model's adjustable stand. A thinner display, larger hinges and a metal support had to share the available space. The console grew only three millimetres wider while retaining its height and thickness. Keeping its fit with existing docks and Joy-Con limited the options. The resulting stand let someone change the screen's angle on a table. A small physical adjustment could improve a familiar way of playing, but depended on coordination across the parts inside the machine."
+      ],
+      "story_headings": [
+        "Lift the game away",
+        "Give another person a controller",
+        "A larger picture needs smaller parts",
+        "Make room for a different angle"
+      ],
+      "related_ids": [
+        "switch"
+      ],
+      "editorial_mode": "original_additive_feature",
+      "editorial_credit": "Original English feature written for Pixel Museum. Named designers, players and original publications are credited per card.",
+      "event_semantics": "The existing parent year anchors the subject. Later revisions and retrospective publications are explicitly distinguished in the narrative; no new exact launch day is inferred.",
+      "sources": [
+        {
+          "id": "switch-reveal16",
+          "title": "Nintendo Switch world premiere demonstrates new entertainment experiences",
+          "publisher": "Nintendo Europe",
+          "url": "https://www.nintendo.com/en-gb/News/2016/October/Nintendo-Switch-world-premiere-demonstrates-new-entertainment-experiences-from-a-home-gaming-system-1148687.html",
+          "publication_date": "2016-10-20",
+          "source_type": "Primary manufacturer publication or named participant interview",
+          "checked": "2026-10-21",
+          "locator": "Dock-to-handheld transition; detachable Joy-Con in separate hands, shared between two players or attached to grip.",
+          "rights": "Bibliographic citation only; text, photographs, industrial designs and trademarks retain their own rights.",
+          "snapshot": {
+            "path": "build/research/editorial-hardware-11/switch-reveal16.html",
+            "sha256": "43016efdc65eecfc6eedc9d33acf2a896f735f027b908faa922b466f393205d6",
+            "evidence_type": "actual_source_response"
+          }
+        },
+        {
+          "id": "switch-oled21",
+          "title": "Ask the Developer Vol2: Nintendo Switch OLED Model",
+          "publisher": "Nintendo / Toru Yamashita and Ko Shiota",
+          "url": "https://www.nintendo.com/au/news-and-articles/ask-the-developer-vol-2-nintendo-switch-oled-model",
+          "publication_date": "2021-10-12",
+          "source_type": "Primary manufacturer publication or named participant interview",
+          "checked": "2026-10-21",
+          "locator": "Visible changes: display circuits folded into bezel; adjustable metal stand, larger hinges, width3mm and existing dock/Joy-Con fit.",
+          "rights": "Bibliographic citation only; text, photographs, industrial designs and trademarks retain their own rights.",
+          "snapshot": {
+            "path": "build/research/editorial-hardware-11/switch-oled21.html",
+            "sha256": "540965e5629c5377a11765974637a5d3f34ce071800a57393eb1394f50da1f7a",
+            "evidence_type": "actual_source_response"
+          }
+        }
+      ],
+      "source_ids": [
+        "switch-reveal16",
+        "switch-oled21"
+      ],
+      "media_status": "Contextual artefacts require separate identity, rights, resolution and card-fit review.",
+      "integration": {
+        "mode": "proposed_attachment",
+        "proposed_parent_id": "switch",
+        "overwrite_existing_body": false,
+        "requires_semantic_merge_review": true,
+        "net_new_destination_claim": false
+      },
+      "review_status": "complete_prose_pending_independent_source_and_placement_review",
+      "cards": [
+        {
+          "body_index": 0,
+          "heading": "Lift the game away",
+          "source_ids": [
+            "switch-reveal16"
+          ],
+          "citations": [
+            {
+              "source_id": "switch-reveal16",
+              "url": "https://www.nintendo.com/en-gb/News/2016/October/Nintendo-Switch-world-premiere-demonstrates-new-entertainment-experiences-from-a-home-gaming-system-1148687.html",
+              "locator": "Dock-to-handheld transition; detachable Joy-Con in separate hands, shared between two players or attached to grip."
+            }
+          ],
+          "media_brief": {
+            "description": "Original Switch shown both docked and handheld; properly identify2017 hardware.",
+            "selected_asset": null,
+            "status": "research_brief_only"
+          }
+        },
+        {
+          "body_index": 1,
+          "heading": "Give another person a controller",
+          "source_ids": [
+            "switch-reveal16"
+          ],
+          "citations": [
+            {
+              "source_id": "switch-reveal16",
+              "url": "https://www.nintendo.com/en-gb/News/2016/October/Nintendo-Switch-world-premiere-demonstrates-new-entertainment-experiences-from-a-home-gaming-system-1148687.html",
+              "locator": "Dock-to-handheld transition; detachable Joy-Con in separate hands, shared between two players or attached to grip."
+            }
+          ],
+          "media_brief": {
+            "description": "Original detached Joy-Con and grip arranged for one or two players.",
+            "selected_asset": null,
+            "status": "research_brief_only"
+          }
+        },
+        {
+          "body_index": 2,
+          "heading": "A larger picture needs smaller parts",
+          "source_ids": [
+            "switch-oled21"
+          ],
+          "citations": [
+            {
+              "source_id": "switch-oled21",
+              "url": "https://www.nintendo.com/au/news-and-articles/ask-the-developer-vol-2-nintendo-switch-oled-model",
+              "locator": "Visible changes: display circuits folded into bezel; adjustable metal stand, larger hinges, width3mm and existing dock/Joy-Con fit."
+            }
+          ],
+          "media_brief": {
+            "description": "Actual OLED2021 front, bezel or manufacturer component illustration; not Switch2.",
+            "selected_asset": null,
+            "status": "research_brief_only"
+          }
+        },
+        {
+          "body_index": 3,
+          "heading": "Make room for a different angle",
+          "source_ids": [
+            "switch-oled21"
+          ],
+          "citations": [
+            {
+              "source_id": "switch-oled21",
+              "url": "https://www.nintendo.com/au/news-and-articles/ask-the-developer-vol-2-nintendo-switch-oled-model",
+              "locator": "Visible changes: display circuits folded into bezel; adjustable metal stand, larger hinges, width3mm and existing dock/Joy-Con fit."
+            }
+          ],
+          "media_brief": {
+            "description": "Actual OLED2021 wide metal stand and hinges, with its different angles.",
+            "selected_asset": null,
+            "status": "research_brief_only"
+          }
+        }
+      ],
+      "source_budget_audit": [
+        {
+          "source_budget_group": "switch-reveal16",
+          "body_indices": [
+            0,
+            1
+          ],
+          "charged_words": 192,
+          "maximum_words": 200,
+          "verbatim_quoted_words": 0
+        },
+        {
+          "source_budget_group": "switch-oled21",
+          "body_indices": [
+            2,
+            3
+          ],
+          "charged_words": 192,
+          "maximum_words": 200,
+          "verbatim_quoted_words": 0
+        }
+      ]
+    },
+    {
+      "id": "feature-handheld-two-screens",
+      "title": "Two windows onto play",
+      "summary": "A screen changes who can look.",
+      "year": 2004,
+      "era_id": "connected",
+      "kind": "feature",
+      "layout": "story",
+      "language": "en",
+      "date": {
+        "precision": "year"
+      },
+      "body": [
+        "Before the Nintendo DS launched, Satoru Iwata offered a simple example for its two displays. In an interview published in July/August 2004, he imagined a football game with an overview of the pitch on one screen and a character's view on the other. The example described an intention rather than naming a finished title. Two windows could let a player compare scales without replacing one image with another. The physical arrangement offered designers a way to make those different kinds of attention coexist.",
+        "Iwata placed that proposal inside a broader concern about games becoming too complicated. He wanted new experiences that people could understand without exhausting their time and energy. Asked about competing hardware, he resisted the idea that newer technology alone made entertainment better. The DS's extra display therefore belonged to an argument about what software might ask a player to do. In this contemporary interview, the president was setting out a design ambition, with the machine's eventual audience and uses still to be discovered.",
+        "For the later Nintendo DSi XL, the design conversation began with paper. Masato Kuwahara remembered cutting card to the proposed size and sketching screens on it. Yoneyama explained that panel cost depended on how efficiently individual displays could be cut from a larger sheet. The team found a workable size of 4.2 inches. A handheld's dimensions emerged from a meeting between a rough object someone could imagine holding and the economics of manufacturing its picture, well before a finished case reached a shop.",
+        "Larger screens also changed the machine's place in a room. In the DSi XL conversation, the team wanted an object people would leave on the table for another family member to pick up. Design research included visits to furniture shops. Wide-viewing-angle displays made the image clearer from the side, supporting a different kind of encounter with a handheld. The improvement was about more than one owner's private view: size, finish and visibility could help the machine remain inviting when it was resting between uses."
+      ],
+      "story_headings": [
+        "Two views of one situation",
+        "A proposal beyond the specification",
+        "Try the size on a piece of card",
+        "Leave it where somebody might look"
+      ],
+      "related_ids": [
+        "daily-12-02"
+      ],
+      "editorial_mode": "original_additive_feature",
+      "editorial_credit": "Original English feature written for Pixel Museum. Named designers, players and original publications are credited per card.",
+      "event_semantics": "The existing parent year anchors the subject. Later revisions and retrospective publications are explicitly distinguished in the narrative; no new exact launch day is inferred.",
+      "sources": [
+        {
+          "id": "iwata04",
+          "title": "Pursuing Simplicity is the Key for Game Software Development",
+          "publisher": "Otsuka Keiichiro interviewing Satoru Iwata / Japan Spotlight",
+          "url": "https://www.jef.or.jp/journal/pdf/business%20profiles%20II_0407.pdf",
+          "publication_date": "2004-07",
+          "source_type": "Primary manufacturer publication or named participant interview",
+          "checked": "2026-10-21",
+          "locator": "Printedpp23-25: complexity argument and final DS questions; soccer two-view example is a proposal, not a named shipped game.",
+          "rights": "Bibliographic citation only; text, photographs, industrial designs and trademarks retain their own rights.",
+          "snapshot": {
+            "path": "build/research/editorial-hardware-11/iwata04.pdf",
+            "sha256": "9b721c8d8dd5d915452ca459e0fd50023bdac33111d850fda6b00ca9788dbd22",
+            "evidence_type": "actual_source_response"
+          }
+        },
+        {
+          "id": "dsi-xl",
+          "title": "Iwata Asks Nintendo DSi XL: The Image of a Bowl Full of Water",
+          "publisher": "Nintendo / Iwata, Kuwahara, Yoneyama and Fujino",
+          "url": "https://www.nintendo.com/en-gb/Iwata-Asks/Iwata-Asks-Nintendo-DSi-XL/Iwata-Asks-Nintendo-DSi-XL/2-The-Image-of-a-Bowl-Full-of-Water/2-The-Image-of-a-Bowl-Full-of-Water-211837.html",
+          "publication_date": null,
+          "source_type": "Primary manufacturer publication or named participant interview",
+          "checked": "2026-10-21",
+          "locator": "Chapter2: cut-card screen mockups;4.2inch panel yields and unchanged resolution; wide viewing angles and furniture research.",
+          "rights": "Bibliographic citation only; text, photographs, industrial designs and trademarks retain their own rights.",
+          "snapshot": {
+            "path": "build/research/editorial-hardware-11/dsi-xl.html",
+            "sha256": "4bd8b0e0e535ab7b5aee414defcf35231e9441aa9f46297ba61c32088cc243dc",
+            "evidence_type": "actual_source_response"
+          }
+        }
+      ],
+      "source_ids": [
+        "iwata04",
+        "dsi-xl"
+      ],
+      "media_status": "Contextual artefacts require separate identity, rights, resolution and card-fit review.",
+      "integration": {
+        "mode": "proposed_attachment",
+        "proposed_parent_id": "daily-12-02",
+        "overwrite_existing_body": false,
+        "requires_semantic_merge_review": true,
+        "net_new_destination_claim": false
+      },
+      "review_status": "complete_prose_pending_independent_source_and_placement_review",
+      "cards": [
+        {
+          "body_index": 0,
+          "heading": "Two views of one situation",
+          "source_ids": [
+            "iwata04"
+          ],
+          "citations": [
+            {
+              "source_id": "iwata04",
+              "url": "https://www.jef.or.jp/journal/pdf/business%20profiles%20II_0407.pdf",
+              "locator": "Printedpp23-25: complexity argument and final DS questions; soccer two-view example is a proposal, not a named shipped game."
+            }
+          ],
+          "media_brief": {
+            "description": "Original NintendoDS two screens, clearly distinguished from DSiXL.",
+            "selected_asset": null,
+            "status": "research_brief_only"
+          }
+        },
+        {
+          "body_index": 1,
+          "heading": "A proposal beyond the specification",
+          "source_ids": [
+            "iwata04"
+          ],
+          "citations": [
+            {
+              "source_id": "iwata04",
+              "url": "https://www.jef.or.jp/journal/pdf/business%20profiles%20II_0407.pdf",
+              "locator": "Printedpp23-25: complexity argument and final DS questions; soccer two-view example is a proposal, not a named shipped game."
+            }
+          ],
+          "media_brief": {
+            "description": "Contemporary2004 DS demonstration or original labelled diagram; no claim a proposed football game shipped.",
+            "selected_asset": null,
+            "status": "research_brief_only"
+          }
+        },
+        {
+          "body_index": 2,
+          "heading": "Try the size on a piece of card",
+          "source_ids": [
+            "dsi-xl"
+          ],
+          "citations": [
+            {
+              "source_id": "dsi-xl",
+              "url": "https://www.nintendo.com/en-gb/Iwata-Asks/Iwata-Asks-Nintendo-DSi-XL/Iwata-Asks-Nintendo-DSi-XL/2-The-Image-of-a-Bowl-Full-of-Water/2-The-Image-of-a-Bowl-Full-of-Water-211837.html",
+              "locator": "Chapter2: cut-card screen mockups;4.2inch panel yields and unchanged resolution; wide viewing angles and furniture research."
+            }
+          ],
+          "media_brief": {
+            "description": "Actual DSiXL paper prototype or carefully labelled manufacturer photograph, distinct from originalDS.",
+            "selected_asset": null,
+            "status": "research_brief_only"
+          }
+        },
+        {
+          "body_index": 3,
+          "heading": "Leave it where somebody might look",
+          "source_ids": [
+            "dsi-xl"
+          ],
+          "citations": [
+            {
+              "source_id": "dsi-xl",
+              "url": "https://www.nintendo.com/en-gb/Iwata-Asks/Iwata-Asks-Nintendo-DSi-XL/Iwata-Asks-Nintendo-DSi-XL/2-The-Image-of-a-Bowl-Full-of-Water/2-The-Image-of-a-Bowl-Full-of-Water-211837.html",
+              "locator": "Chapter2: cut-card screen mockups;4.2inch panel yields and unchanged resolution; wide viewing angles and furniture research."
+            }
+          ],
+          "media_brief": {
+            "description": "Actual DSiXL viewed obliquely on a table; native original photo and readable image.",
+            "selected_asset": null,
+            "status": "research_brief_only"
+          }
+        }
+      ],
+      "source_budget_audit": [
+        {
+          "source_budget_group": "iwata04",
+          "body_indices": [
+            0,
+            1
+          ],
+          "charged_words": 190,
+          "maximum_words": 200,
+          "verbatim_quoted_words": 0
+        },
+        {
+          "source_budget_group": "dsi-xl",
+          "body_indices": [
+            2,
+            3
+          ],
+          "charged_words": 197,
+          "maximum_words": 200,
+          "verbatim_quoted_words": 0
+        }
+      ]
+    },
+    {
+      "id": "feature-accessibility-hardware",
+      "title": "Fit the player",
+      "summary": "The arrangement belongs to its user.",
+      "year": 2018,
+      "era_id": "everywhere",
+      "kind": "feature",
+      "layout": "story",
+      "language": "en",
+      "date": {
+        "precision": "year"
+      },
+      "body": [
+        "Microsoft's account traces the Xbox Adaptive Controller to an engineer seeing a custom device made by Warfighter Engaged in 2014. Conversations with its founder, Ken Jones, led into employee hackathon experiments. Another change came with Copilot, which allowed two controllers to work together. The adaptive device could become a separate unit rather than an attachment squeezed onto a standard pad. Its eventual form grew from existing players' arrangements and several rounds of work, joining a wider system of controls instead of demanding one grip.",
+        "The controller's details addressed practical acts around a gaming session. Nineteen sockets ran along its rear edge, with identifying marks embossed above them and grooves helping a user guide plugs into place. Threaded inserts offered ways to attach the device to a wheelchair, board or desk. Microsoft described these choices as responses to players' feedback. Setting up could be part of the design problem alongside pressing a button: a usable arrangement needed connections somebody could identify and a device that would stay where they needed it.",
+        "In a 2023 interview, Sony's Alvin Daniel remembered an early test that changed the Access controller team's approach. Two participants with cerebral palsy needed very different accommodations: one benefited from support for a conventional controller, while another could not operate it with their hands. Medical categories had not supplied a single useful layout. Working with players and expert organisations, the team turned towards the barriers presented by the controller itself. The question became how a particular person could reach and operate it, allowing arrangements to differ and change over time.",
+        "Access placed larger buttons in one plane and supplied interchangeable caps with different shapes and textures. Daniel also described using two Access controllers, or pairing one with a DualSense, so the sticks could sit at different distances, heights and orientations. AbleGamers, Stack Up and SpecialEffect helped the team consider existing mounts and switches around the player. The controller arrived as part of that adaptable environment. Its useful shape could continue to emerge after purchase, as someone arranged the pieces to suit the way they played."
+      ],
+      "story_headings": [
+        "A photograph starts a conversation",
+        "Read a port without turning it over",
+        "The same diagnosis, different needs",
+        "Let the sticks find their place"
+      ],
+      "related_ids": [
+        "daily-12-03"
+      ],
+      "editorial_mode": "original_additive_feature",
+      "editorial_credit": "Original English feature written for Pixel Museum. Named designers, players and original publications are credited per card.",
+      "event_semantics": "The existing parent year anchors the subject. Later revisions and retrospective publications are explicitly distinguished in the narrative; no new exact launch day is inferred.",
+      "sources": [
+        {
+          "id": "xbox-adaptive18",
+          "title": "Plugged In",
+          "publisher": "Microsoft Story Labs",
+          "url": "https://news.microsoft.com/stories/xbox-adaptive-controller/",
+          "publication_date": "2018-05-16",
+          "source_type": "Primary manufacturer publication or named participant interview",
+          "checked": "2026-10-21",
+          "locator": "2014 Warfighter Engaged photo and2015 hackathons; Copilot standalone change;19ports, tactile marks/grooves, mounting inserts.",
+          "rights": "Bibliographic citation only; text, photographs, industrial designs and trademarks retain their own rights.",
+          "snapshot": {
+            "path": "build/research/editorial-hardware-11/xbox-adaptive18.html",
+            "sha256": "8d55b9166eb369705bb381b848073243e7a908e69e4f5b56668aab424e731c87",
+            "evidence_type": "actual_source_response"
+          }
+        },
+        {
+          "id": "access23",
+          "title": "Access controller for PS5: how the customizable kit was created",
+          "publisher": "Sid Shuman interviewing Alvin Daniel / PlayStation Blog",
+          "url": "https://blog.playstation.com/2023/10/12/access-controller-for-ps5-interview-how-the-highly-customizable-kit-was-created/",
+          "publication_date": "2023-10-12",
+          "source_type": "Primary manufacturer publication or named participant interview",
+          "checked": "2026-10-21",
+          "locator": "Two early participants with same diagnosis needed different accommodations; planar buttons, interchangeable caps and freely positioned sticks; three named expert partners.",
+          "rights": "Bibliographic citation only; text, photographs, industrial designs and trademarks retain their own rights.",
+          "snapshot": {
+            "path": "build/research/editorial-hardware-11/access23.html",
+            "sha256": "66659b1c4a45cd2890f87f1b2e5764767b82e2131e770a2a6594cf317dd0901d",
+            "evidence_type": "actual_source_response"
+          }
+        }
+      ],
+      "source_ids": [
+        "xbox-adaptive18",
+        "access23"
+      ],
+      "media_status": "Contextual artefacts require separate identity, rights, resolution and card-fit review.",
+      "integration": {
+        "mode": "proposed_attachment",
+        "proposed_parent_id": "daily-12-03",
+        "overwrite_existing_body": false,
+        "requires_semantic_merge_review": true,
+        "net_new_destination_claim": false
+      },
+      "review_status": "complete_prose_pending_independent_source_and_placement_review",
+      "cards": [
+        {
+          "body_index": 0,
+          "heading": "A photograph starts a conversation",
+          "source_ids": [
+            "xbox-adaptive18"
+          ],
+          "citations": [
+            {
+              "source_id": "xbox-adaptive18",
+              "url": "https://news.microsoft.com/stories/xbox-adaptive-controller/",
+              "locator": "2014 Warfighter Engaged photo and2015 hackathons; Copilot standalone change;19ports, tactile marks/grooves, mounting inserts."
+            }
+          ],
+          "media_brief": {
+            "description": "Actual XboxAdaptive2018 and documented early prototype; distinguishWarfighterdevice from Microsoftfinishedunit.",
+            "selected_asset": null,
+            "status": "research_brief_only"
+          }
+        },
+        {
+          "body_index": 1,
+          "heading": "Read a port without turning it over",
+          "source_ids": [
+            "xbox-adaptive18"
+          ],
+          "citations": [
+            {
+              "source_id": "xbox-adaptive18",
+              "url": "https://news.microsoft.com/stories/xbox-adaptive-controller/",
+              "locator": "2014 Warfighter Engaged photo and2015 hackathons; Copilot standalone change;19ports, tactile marks/grooves, mounting inserts."
+            }
+          ],
+          "media_brief": {
+            "description": "Actual19rearports, embossed marks or three mounting inserts of XboxAdaptive.",
+            "selected_asset": null,
+            "status": "research_brief_only"
+          }
+        },
+        {
+          "body_index": 2,
+          "heading": "The same diagnosis, different needs",
+          "source_ids": [
+            "access23"
+          ],
+          "citations": [
+            {
+              "source_id": "access23",
+              "url": "https://blog.playstation.com/2023/10/12/access-controller-for-ps5-interview-how-the-highly-customizable-kit-was-created/",
+              "locator": "Two early participants with same diagnosis needed different accommodations; planar buttons, interchangeable caps and freely positioned sticks; three named expert partners."
+            }
+          ],
+          "media_brief": {
+            "description": "Actual Accesscontroller2023; participant photos only with accurate names and stated context.",
+            "selected_asset": null,
+            "status": "research_brief_only"
+          }
+        },
+        {
+          "body_index": 3,
+          "heading": "Let the sticks find their place",
+          "source_ids": [
+            "access23"
+          ],
+          "citations": [
+            {
+              "source_id": "access23",
+              "url": "https://blog.playstation.com/2023/10/12/access-controller-for-ps5-interview-how-the-highly-customizable-kit-was-created/",
+              "locator": "Two early participants with same diagnosis needed different accommodations; planar buttons, interchangeable caps and freely positioned sticks; three named expert partners."
+            }
+          ],
+          "media_brief": {
+            "description": "TwoAccessunits or AccessplusDualSense in documented supported arrangement; no universalaccess claim.",
+            "selected_asset": null,
+            "status": "research_brief_only"
+          }
+        }
+      ],
+      "source_budget_audit": [
+        {
+          "source_budget_group": "xbox-adaptive18",
+          "body_indices": [
+            0,
+            1
+          ],
+          "charged_words": 193,
+          "maximum_words": 200,
+          "verbatim_quoted_words": 0
+        },
+        {
+          "source_budget_group": "access23",
+          "body_indices": [
+            2,
+            3
+          ],
+          "charged_words": 197,
+          "maximum_words": 200,
+          "verbatim_quoted_words": 0
+        }
+      ]
+    }
+  ],
+  "entry_count": 4,
+  "card_count": 16,
+  "scope": "Four reserved hardware/design commissions; original parent writing remains intact. No assembly or media admission."
+}

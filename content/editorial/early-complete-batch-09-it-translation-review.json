@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "locale": "it",
+  "review": "Binding of exact independently approved complete candidate members; no new linguistic review substituted. Every full candidate SHA and independent PASS receipt checked, all current English five fields and translation hashes validated.",
+  "entries": [
+    {
+      "entry_id": "workbook-06-27-atari",
+      "source_fields_sha256": "e69fcfa98c1d491c7ed6f0a1f2a697d59673093cbbcb3f3eb754748475a92de7",
+      "translation_sha256": "04f5c84d2a4e5ecd868a1d443d676c67a00c5793c408315382a6e72112300890",
+      "independent_peer": "build/research/earliest-four-owners-translations/atari1972-four-language-full-clause-fidelity-candidate-root-independent-peer.json",
+      "independent_peer_sha256": "15a27b38dd637ef4e14dba4be57cb1e5438f1a7c23479f6aefe77062aea36e47",
+      "candidate_path": "build/research/earliest-four-owners-translations/atari1972-four-language-full-clause-fidelity-candidate.json",
+      "candidate_sha256": "296350c5a751649f5e54d9ea2ab12ad39347aeda7e8a764b8b38a6a68cac7dc3"
+    },
+    {
+      "entry_id": "pong",
+      "source_fields_sha256": "eb524b99e16ae546a7c3240abd4a1304973f72a725a1419a6e657192c14796b0",
+      "translation_sha256": "3c2f212bf92ffbf1cfa8387c34433c5d8d558f6c8f3c491688803996abd98f61",
+      "independent_peer": "build/research/pong1972-four-language-completion/independent-eleven-whole-main-feature-paragraphs-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "5bcab389c7af3adf8b9874e5d3fa0f35058c82ca01e45ba62c07271a83c729b6",
+      "candidate_path": "build/research/pong1972-four-language-completion/pong-main-and-location-test-four-language-complete-source-bound-candidate.json",
+      "candidate_sha256": "6d04793bce4e993a7d27051bf6f9ea65b5f6a443037c7ca549b14877eb4dcf45"
+    },
+    {
+      "entry_id": "feature-coin-op-location-test",
+      "source_fields_sha256": "028ad8c1db097c1f31157a49d4ad53506fe54cc938882e90255878f26f4e4d0d",
+      "translation_sha256": "11a2cd9aceb93e7b5d9c1b867e50d86dd87cf7d26b48a0e604965030078e05d7",
+      "independent_peer": "build/research/pong1972-four-language-completion/independent-eleven-whole-main-feature-paragraphs-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "5bcab389c7af3adf8b9874e5d3fa0f35058c82ca01e45ba62c07271a83c729b6",
+      "candidate_path": "build/research/pong1972-four-language-completion/pong-main-and-location-test-four-language-complete-source-bound-candidate.json",
+      "candidate_sha256": "6d04793bce4e993a7d27051bf6f9ea65b5f6a443037c7ca549b14877eb4dcf45"
+    },
+    {
+      "entry_id": "wikipedia-14323",
+      "source_fields_sha256": "01223bf49455f170247f61b08450b4254ab748da567e3cbf2517ce3df5be6db7",
+      "translation_sha256": "8f6434510c7620ee60f3bee3b749085b632b012ed175629c5a8f28524a3238fd",
+      "independent_peer": "build/research/hunt-wumpus1973-four-language-completion/hunt-wumpus1973-two-whole-paragraphs-four-language-source-bound-candidate-root-independent-peer.json",
+      "independent_peer_sha256": "a5914d8f763aaf251e4540973505d477b5fd6f306e8233f2de6a5347e1239dc6",
+      "candidate_path": "build/research/hunt-wumpus1973-four-language-completion/hunt-wumpus1973-two-whole-paragraphs-four-language-source-bound-candidate.json",
+      "candidate_sha256": "f958d4de423e7c0f61641b8ace3e87a4a56d9fcd887fb9a3a09c5da638616976"
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "locale": "de",
+  "source_language": "en",
+  "publication_status": "validated",
+  "translation_method": "Complete source-bound translations independently read clause-by-clause, including exact-source reused units; explicit semantic repairs retained.",
+  "independent_review": "content/editorial/early-complete-batch-56-de-translation-review.json",
+  "entries": [
+    {
+      "entry_id": "simcity",
+      "source": {
+        "title": "SimCity",
+        "subtitle": "The city is the toy",
+        "summary": "Will Wright's design made building and watching a system respond an activity worth doing for its own sake.",
+        "body": [
+          "Will Wright found that making maps could be as engaging as playing across them. SimCity grew from that discovery into an open-ended urban simulation. Roads, land use, services and money form a network of consequences rather than a fixed path to a final level.",
+          "Its city is an interpretation, not a neutral model of urban life. What a simulation counts becomes visible; what it omits can disappear. Playing with the system is also an opportunity to ask which assumptions hold it together."
+        ],
+        "story_headings": [
+          "A city made of connected systems",
+          "The assumptions inside the model"
+        ]
+      },
+      "source_fields_sha256": "bb668412b372d1646fd8e4379c667ef89a115fe8c1d70d56d5e8fe7f2845a35b",
+      "translation": {
+        "title": "SimCity",
+        "subtitle": "Die Stadt ist das Spielzeug",
+        "summary": "Will Wrights Spieldesign machte das Bauen und das Beobachten der Reaktionen eines Systems zu einer Tätigkeit, die sich um ihrer selbst willen lohnt.",
+        "body": [
+          "Will Wright stellte fest, dass das Erstellen von Karten genauso fesselnd sein konnte wie das Spielen auf ihnen. Aus dieser Entdeckung entwickelte sich SimCity zu einer offenen Stadtsimulation. Straßen, Flächennutzung, Dienstleistungen und Geld bilden ein Netz von Folgen statt eines festgelegten Wegs zu einem letzten Level.",
+          "Seine Stadt ist eine Interpretation und kein neutrales Modell des städtischen Lebens. Was eine Simulation berücksichtigt, wird sichtbar; was sie auslässt, kann verschwinden. Mit dem System zu spielen bietet auch die Gelegenheit, nach den Annahmen zu fragen, die es zusammenhalten."
+        ],
+        "story_headings": [
+          "Eine Stadt aus verbundenen Systemen",
+          "Die Annahmen innerhalb des Modells"
+        ]
+      },
+      "translation_sha256": "bbb12ce0d2f9d343724cde2040c0ca426eee6dce717c557fde5ef46d28c20e18"
+    },
+    {
+      "entry_id": "feature-will-wright-simulation",
+      "source": {
+        "title": "People inside the model",
+        "subtitle": "",
+        "summary": "A simulation's makers shape its rules.",
+        "body": [
+          "Will Wright found a useful design question in Christopher Alexander's architecture: what are people trying to do inside this place? In a 2008 interview, he described learning from an approach that began with activities, groups and their needs rather than a building's outward form. A room could be understood through the interactions it encouraged. Transferred to a game, that question changes what construction means. The player is arranging conditions for simulated inhabitants, not simply selecting an attractive shape to place on an empty map.",
+          "Wright described The Sims as having begun with a house and people whose responses evaluated it. Their needs made the arrangement consequential. Yet he also recognised players who used cheats to build without the usual financial constraints, alongside those who preferred following the rules. These are different relationships with the same software. His comparison with a toy leaves room for both, rather than assuming everybody wants the designer's preferred challenge. Constructing something and testing it need not always be pursued in identical ways.",
+          "Explaining SimCity's implementation later, Wright separated visible roads and buildings from data layers such as pollution, crime and traffic. The team designed test cities around expected behaviours: a problem should grow here, or spread in that direction. Only after making those dynamics plausible did they tune restrictions and the player's influence. That account supplies meaning for simulation testing. It also marks a limit: meeting the team's expectations within a constructed test does not establish that the model reproduces a real city.",
+          "Wright cautioned against making one creator stand for a whole studio. He described little involvement in SimCity 3000 and its successors beyond playing and commenting. In the same interview he singled out Lucy Bradshaw's organisational work as insufficiently credited. Those admissions matter alongside the design principles. A model needs people who implement, test and coordinate it, and later teams may carry its name without its original designer. The person presenting a project publicly is not a complete map of the labour behind it."
+        ],
+        "story_headings": [
+          "Design begins with an activity",
+          "The house answers through its residents",
+          "A test city isolates a problem",
+          "The public face is not the team"
+        ]
+      },
+      "source_fields_sha256": "d00b23bcc4e1d0bd3c2c0a0a9e2ef43cea2f357633b19633c247fcddd71c7eca",
+      "translation": {
+        "title": "Menschen im Modell",
+        "subtitle": "",
+        "summary": "Die Schöpfer einer Simulation gestalten ihre Regeln.",
+        "body": [
+          "Will Wright fand in Christopher Alexanders Architektur eine nützliche Gestaltungsfrage: Was versuchen die Menschen an diesem Ort zu tun? In einem Interview von 2008 beschrieb er, was er von einem Ansatz gelernt hatte, der bei Tätigkeiten, Gruppen und ihren Bedürfnissen ansetzte statt bei der äußeren Form eines Gebäudes. Ein Raum ließ sich anhand der Interaktionen verstehen, die er förderte. Auf ein Spiel übertragen verändert diese Frage die Bedeutung des Bauens. Der Spieler gestaltet Bedingungen für simulierte Bewohner, statt einfach eine ansprechende Form auszuwählen und auf eine leere Karte zu setzen.",
+          "Wright beschrieb, dass The Sims mit einem Haus und Menschen begonnen hatte, deren Reaktionen es bewerteten. Ihre Bedürfnisse sorgten dafür, dass die Anordnung Folgen hatte. Er erkannte aber auch jene Spieler an, die Cheats nutzten, um ohne die üblichen finanziellen Beschränkungen zu bauen, neben denen, die lieber den Regeln folgten. Das sind unterschiedliche Beziehungen zu derselben Software. Sein Vergleich mit einem Spielzeug lässt beiden Raum, statt anzunehmen, jeder wünsche sich die vom Designer bevorzugte Herausforderung. Etwas zu bauen und es zu testen muss nicht immer auf dieselbe Weise angegangen werden.",
+          "Als Wright später die Umsetzung von SimCity erläuterte, trennte er sichtbare Straßen und Gebäude von Datenebenen wie Umweltverschmutzung, Kriminalität und Verkehr. Das Team entwarf Teststädte anhand erwarteter Verhaltensweisen: Hier sollte ein Problem wachsen oder sich in jene Richtung ausbreiten. Erst nachdem diese Dynamiken plausibel wirkten, stimmte das Team die Beschränkungen und den Einfluss des Spielers ab. Diese Schilderung erklärt, wozu Simulationstests dienen. Sie zeigt auch eine Grenze: Wenn ein eigens angelegter Test die Erwartungen des Teams erfüllt, beweist das nicht, dass das Modell eine reale Stadt nachbildet.",
+          "Wright warnte davor, einen einzelnen Schöpfer stellvertretend für ein ganzes Studio zu sehen. Er beschrieb seine geringe Beteiligung an SimCity 3000 und dessen Nachfolgern, die kaum über Spielen und Kommentieren hinausging. Im selben Interview hob er hervor, dass Lucy Bradshaws organisatorische Arbeit zu wenig Anerkennung fand. Solche Eingeständnisse sind neben den Gestaltungsprinzipien wichtig. Ein Modell braucht Menschen, die es umsetzen, testen und koordinieren, und spätere Teams können seinen Namen ohne den ursprünglichen Designer weiterführen. Die Person, die ein Projekt öffentlich präsentiert, liefert kein vollständiges Bild der Arbeit dahinter."
+        ],
+        "story_headings": [
+          "Gestaltung beginnt mit einer Tätigkeit",
+          "Das Haus antwortet durch seine Bewohner",
+          "Eine Teststadt isoliert ein Problem",
+          "Das öffentliche Gesicht ist nicht das Team"
+        ]
+      },
+      "translation_sha256": "516b099eeb141408d9ab05b4c1bb990c88236c472577ff63b926adab92439cea"
+    },
+    {
+      "entry_id": "tectoy",
+      "source": {
+        "title": "Tectoy and the Master System",
+        "subtitle": "A platform's history changes with its geography",
+        "summary": "Sega's Brazilian partner helped give familiar hardware a different cultural life.",
+        "body": [
+          "Tectoy brought its first videogame console to Brazil in 1989, following an earlier partnership with Sega in electronic toys. Local manufacturing, distribution and communication shaped how Sega's machines reached Brazilian households.",
+          "Hardware generations do not begin and end everywhere at once. A console that had become an older product in one market could remain current somewhere else. Brazil's experience makes a single global succession of machines an inadequate way to tell the story."
+        ],
+        "story_headings": [
+          "Sega reaches Brazilian households",
+          "Hardware has more than one timeline"
+        ]
+      },
+      "source_fields_sha256": "f3f711fc5cbfb5b530dbce8354abeed0539b14aafa9765f47e18e1b7e419d461",
+      "translation": {
+        "title": "Tectoy und das Master System",
+        "subtitle": "Die Geschichte einer Plattform verändert sich mit ihrer Geografie",
+        "summary": "Segas brasilianischer Partner trug dazu bei, vertrauter Hardware ein anderes kulturelles Leben zu geben.",
+        "body": [
+          "Tectoy brachte seine erste Videospielkonsole 1989 nach Brasilien, nachdem es bereits bei elektronischem Spielzeug mit Sega zusammengearbeitet hatte. Lokale Fertigung, Vertrieb und Kommunikation prägten, wie Segas Geräte die brasilianischen Haushalte erreichten.",
+          "Hardwaregenerationen beginnen und enden nicht überall gleichzeitig. Eine Konsole, die in einem Markt bereits veraltet war, konnte anderswo aktuell bleiben. Brasiliens Erfahrung zeigt, dass sich diese Geschichte nicht angemessen als eine einzige weltweite Abfolge von Geräten erzählen lässt."
+        ],
+        "story_headings": [
+          "Sega erreicht brasilianische Haushalte",
+          "Hardware hat mehr als eine Zeitachse"
+        ]
+      },
+      "translation_sha256": "3008a88efd7977677c6193eacabe94b69e88c4267e9424d614da1f0d3f2c60b5"
+    },
+    {
+      "entry_id": "feature-tectoy-localization",
+      "source": {
+        "title": "Making a game belong locally",
+        "subtitle": "",
+        "summary": "Localisation connects software, characters and players.",
+        "body": [
+          "Tectoy's own history places its first Brazilian console launch in 1989. The work around that launch involved manufacturing and distribution as well as the machine itself. Its subsequent adaptations needed another kind of local knowledge: what a familiar character could do, what a reader could understand and where a player would seek help. The company became a place where imported software was reworked for a particular public. Those changes required practical labour and negotiations, rather than happening automatically when a foreign console acquired a Brazilian retail box.",
+          "Stefano Arnhold's account of Mônica no Castelo do Dragão makes one negotiation concrete. Tectoy licensed the comic character from Mauricio de Sousa's studio to adapt Wonder Boy. But Mônica could not simply inherit the original protagonist's sword. Replacing it with her blue stuffed rabbit, Sansão, reconciled the game action with the character's identity. The adaptation had to remain playable and recognisable at once. Permission concerned the behaviour depicted on screen, not just a logo or a translated title attached to otherwise unchanged software.",
+          "Alexandre Pagano remembered how that change became graphics. Characters were drawn on squared paper, then remade frame by frame with tools produced by Tectoy's engineers. His account describes finding a suitable adventure and working out which characters and story could be adapted within licensing constraints. A face was not a single replacement picture. It had to move, occupy the available space and remain legible across a sequence. The small marks on a television depended on people coordinating drawing, engineering and approval before players ever handled the cartridge.",
+          "Pagano also traced his own path from answering players' letters and telephone questions in 1990 to specialist game work and development. He recalled insisting that Phantasy Star would need translation to sell locally. The two activities met at the same problem: helping someone understand a game's possibilities. Support could reveal where players became stuck, while localisation could make a text-heavy adventure approachable in the first place. That connection gives the Brazilian story named work and practical decisions, beyond describing the region as a late stop for another market's hardware."
+        ],
+        "story_headings": [
+          "A public around the machine",
+          "A rabbit instead of a sword",
+          "Drawing the change",
+          "From answering to adapting"
+        ]
+      },
+      "source_fields_sha256": "95a8a9fa83174c5a0cbda77ba25a1fe3e860b6793d928b6483d84f2a1cfe0648",
+      "translation": {
+        "title": "Ein Spiel vor Ort verankern",
+        "subtitle": "",
+        "summary": "Lokalisierung verbindet Software, Figuren und Spieler.",
+        "body": [
+          "Tectoys eigene Geschichte datiert den Start ihrer ersten Konsole in Brasilien auf 1989. Die Arbeit rund um diesen Start betraf neben dem Gerät auch Fertigung und Vertrieb. Spätere Anpassungen brauchten eine andere Art lokalen Wissens: Was durfte eine vertraute Figur tun, was konnte ein Leser verstehen und wo würde ein Spieler Hilfe suchen? Das Unternehmen wurde zu einem Ort, an dem importierte Software für ein bestimmtes Publikum überarbeitet wurde. Solche Änderungen erforderten praktische Arbeit und Verhandlungen. Sie ergaben sich nicht automatisch daraus, dass eine ausländische Konsole eine brasilianische Verkaufsverpackung erhielt.",
+          "Stefano Arnholds Bericht über Mônica no Castelo do Dragão macht eine solche Verhandlung greifbar. Tectoy lizenzierte die Comicfigur bei Mauricio de Sousas Studio, um Wonder Boy anzupassen. Doch Mônica konnte nicht einfach das Schwert der ursprünglichen Hauptfigur übernehmen. Der Ersatz durch ihr blaues Stoffkaninchen Sansão brachte die Spielhandlung mit der Identität der Figur in Einklang. Die Anpassung musste zugleich spielbar und wiedererkennbar bleiben. Die Erlaubnis betraf das auf dem Bildschirm gezeigte Verhalten, nicht nur ein Logo oder einen übersetzten Titel auf einer ansonsten unveränderten Software.",
+          "Alexandre Pagano erinnerte sich daran, wie diese Veränderung zu Grafik wurde. Figuren wurden auf Karopapier gezeichnet und dann Bild für Bild mit Werkzeugen neu erstellt, die Tectoys Ingenieure gebaut hatten. Sein Bericht beschreibt die Suche nach einem geeigneten Abenteuer und die Überlegung, welche Figuren und welche Geschichte sich innerhalb der Lizenzvorgaben anpassen ließen. Ein Gesicht war kein einzelnes Ersatzbild: Es musste sich bewegen, den verfügbaren Raum einnehmen und über eine Bildfolge hinweg lesbar bleiben. Die kleinen Zeichen auf dem Fernseher beruhten darauf, dass Menschen Zeichnung, Technik und Freigabe koordinierten, lange bevor Spieler die Kassette in die Hand nahmen.",
+          "Pagano zeichnete auch seinen eigenen Weg nach: vom Beantworten von Spielerbriefen und telefonischen Fragen 1990 zur spezialisierten Arbeit an Spielen und zur Entwicklung. Er erinnerte sich daran, darauf bestanden zu haben, dass Phantasy Star für den lokalen Verkauf übersetzt werden müsse. Beide Tätigkeiten trafen auf dasselbe Problem: jemandem die Möglichkeiten eines Spiels verständlich zu machen. Der Kundendienst konnte zeigen, wo Spieler feststeckten; die Lokalisierung konnte ein textreiches Abenteuer überhaupt erst zugänglich machen. Diese Verbindung gibt der brasilianischen Geschichte konkrete Arbeit mit benennbaren Beteiligten und praktische Entscheidungen, statt die Region nur als späte Station für die Hardware eines anderen Marktes darzustellen."
+        ],
+        "story_headings": [
+          "Ein Publikum rund um das Gerät",
+          "Ein Kaninchen statt eines Schwerts",
+          "Die Veränderung zeichnen",
+          "Vom Antworten zum Anpassen"
+        ]
+      },
+      "translation_sha256": "3140c04f784fd1089e95288ff4ba61cb0b07e7ad76a09d50fe26515db609ad80"
+    }
+  ]
+}

@@ -1,0 +1,2468 @@
+{
+  "schema": "pixel_museum_factual_audit_consolidated_v1",
+  "audit_id": "verifiche-fattuali-016-018",
+  "status": "verified_and_text_corrections_applied",
+  "application_pending": false,
+  "compiled_on": "2026-10-29",
+  "scope": {
+    "batches_referenced": [
+      "016-catalog",
+      "017-catalog",
+      "018-catalog"
+    ],
+    "entries_in_this_register": 7,
+    "languages_for_text_application": [
+      "en",
+      "it",
+      "fr",
+      "de",
+      "es"
+    ],
+    "purpose": "Conclusioni fattuali verificate e correzioni applicate nelle cinque lingue; metadati e bibliografia pronti per l’integrazione.",
+    "catalog_wide_verification_completed": false,
+    "media_rights_verified": false,
+    "coverage_limit": "Il controllo riguarda esclusivamente le questioni elencate nelle sette voci. Non attesta la verifica dell’intero catalogo, di tutti i fatti delle voci o dei diritti di immagini, musica e video.",
+    "not_covered": [
+      "Permessi e diritti di utilizzo dei media.",
+      "Certificazione delle associazioni fra card e immagini o video.",
+      "Creazione di nuove card o verifica del raggiungimento delle quote richieste."
+    ],
+    "separate_audits": [
+      {
+        "entry_id": "carol-shaw",
+        "subject": "Nascita e collocazione biografica",
+        "register": "AUDIT/nascita-carol-shaw-017.json",
+        "relation": "Verifica gestita dal registro biografico separato; non duplicata o riconteggiata qui."
+      }
+    ]
+  },
+  "method": {
+    "basis": "Ricerche mirate su documenti primari, manuali, archivi ufficiali e interviste, seguite dalla revisione e dall’applicazione nelle cinque lingue.",
+    "precedence": "Questo registro sostituisce le segnalazioni generiche sui punti elencati, conservando fonti, decisioni e limiti di precisione.",
+    "date_precision": "Mese e giorno assenti sono rappresentati da null. Gli zeri usati come segnaposto in alcuni report di origine sono normalizzati a null e non indicano una data reale. La precisione dichiarata prevale: non inserire il primo giorno del mese o dell’anno per completare artificialmente una data.",
+    "application_state": "Correzioni testuali applicate. Le proposte di metadati e bibliografia sono separate perché INPUT e catalogo devono rimanere invariati.",
+    "source_policy": "URL, titoli, locatori e attribuzioni sono conservati senza incorporare testi integrali, PDF o immagini delle fonti. Non sono inclusi identificativi temporanei dei risultati di ricerca."
+  },
+  "records": [
+    {
+      "batch_id": "016-catalog",
+      "entry_id": "pac-man",
+      "title": "Pac-Man",
+      "status": "verified",
+      "application_pending": false,
+      "release": {
+        "year": 1980,
+        "month": 7,
+        "day": null,
+        "precision": "month",
+        "region": "JP",
+        "region_label": "Giappone",
+        "platform": "Arcade",
+        "event_semantics": "release"
+      },
+      "release_source_ids": [
+        "pacman_official_history"
+      ],
+      "release_reason": "La cronologia ufficiale distingue la prova pubblica di maggio dall’uscita commerciale giapponese di luglio 1980. La precisione corretta per quest’ultima è il mese.",
+      "resolved_points": [
+        {
+          "finding_id": "pacman_release",
+          "status": "verified",
+          "application_pending": false,
+          "targets": [
+            "metadata.date"
+          ],
+          "conclusion": "Uscita commerciale in Giappone nel luglio 1980.",
+          "proposed_action": "Riallineare la data della timeline; conservare il testo del lotto 016, che già distingue prova pubblica e uscita.",
+          "source_ids": [
+            "pacman_official_history"
+          ],
+          "resolution_status": "Conclusione verificata e registrata; testo corretto se necessario; integrazione dei metadati separata."
+        }
+      ],
+      "metadata_proposal": {
+        "application_pending": true,
+        "action": "Sostituire il riferimento del 22 maggio 1980 con luglio 1980, precisione mensile e regione JP.",
+        "values": {
+          "year": 1980,
+          "date": {
+            "month": 7,
+            "day": null,
+            "precision": "month",
+            "region": "JP"
+          },
+          "event_semantics": "release"
+        },
+        "status": "verified_ready_for_integration_originals_unchanged"
+      },
+      "bibliography_proposal": {
+        "application_pending": true,
+        "add_or_retain_source_ids": [
+          "pacman_official_history"
+        ],
+        "action": "Mantenere il collegamento alla cronologia ufficiale e associarlo alla data commerciale.",
+        "preserve_original_provenance": true,
+        "status": "verified_ready_for_integration_originals_unchanged"
+      },
+      "dates_not_used_as_release": [
+        {
+          "date": "1980-05-22",
+          "event": "Primo focus test pubblico",
+          "reason": "Evento distinto dalla distribuzione commerciale."
+        }
+      ],
+      "limits": [
+        "Non è documentato un giorno preciso di uscita in luglio. La stessa cronologia colloca l’arrivo negli Stati Uniti nell’ottobre 1980; tale dato non sostituisce la release giapponese scelta per la voce."
+      ],
+      "text_application_status": "already_consistent_no_change"
+    },
+    {
+      "batch_id": "016-catalog",
+      "entry_id": "daily-05-05",
+      "title": "Mystery House",
+      "status": "verified",
+      "application_pending": false,
+      "release": {
+        "year": 1980,
+        "month": 5,
+        "day": 5,
+        "precision": "day",
+        "region": "US",
+        "region_label": "Stati Uniti",
+        "platform": "Apple II",
+        "event_semantics": "release"
+      },
+      "release_source_ids": [
+        "mh_general_author_archive",
+        "mh_micro_ad"
+      ],
+      "release_reason": "La scheda generale dell’archivio Sierra Gamers riporta esplicitamente il 5 maggio 1980 come data di uscita. L’annuncio contemporaneo documenta l’offerta commerciale per Apple II nel maggio 1980 e il contesto statunitense.",
+      "resolved_points": [
+        {
+          "finding_id": "mystery_house_release",
+          "status": "verified",
+          "application_pending": false,
+          "targets": [
+            "main:0",
+            "metadata.date"
+          ],
+          "conclusion": "La data da usare è il 5 maggio 1980 per l’uscita originale di Mystery House su Apple II.",
+          "proposed_action": "Conservare la data e formulare direttamente l’incipit nelle cinque lingue, eliminando il rinvio dubitativo al resoconto originario.",
+          "source_ids": [
+            "mh_general_author_archive",
+            "mh_micro_ad"
+          ],
+          "limits": "Il giorno esatto deriva dal catalogo retrospettivo dell’archivio mantenuto da Ken Williams; la pubblicità contemporanea conferma il mese, non costituisce una seconda prova indipendente del giorno.",
+          "resolution_status": "Conclusione verificata e registrata; testo corretto se necessario; integrazione dei metadati separata."
+        },
+        {
+          "finding_id": "mystery_house_editions",
+          "status": "verified",
+          "application_pending": false,
+          "targets": [
+            "bibliography"
+          ],
+          "conclusion": "La data compare nella pagina generale del titolo; non va attribuita all’introduzione della confezione Black Box.",
+          "proposed_action": "Usare la scheda generale per la release. Conservare l’indice delle edizioni e la pagina Black Box come riscontro della distinzione.",
+          "source_ids": [
+            "mh_general_author_archive",
+            "mh_edition_index",
+            "mh_black_box_crosscheck",
+            "mh_archive_provenance"
+          ],
+          "resolution_status": "Conclusione verificata e registrata; testo corretto se necessario; integrazione dei metadati separata."
+        }
+      ],
+      "metadata_proposal": {
+        "application_pending": true,
+        "action": "Confermare il 5 maggio 1980, precisione giornaliera; associare US al contesto commerciale documentato.",
+        "values": {
+          "year": 1980,
+          "date": {
+            "month": 5,
+            "day": 5,
+            "precision": "day",
+            "region": "US"
+          },
+          "event_semantics": "release"
+        },
+        "status": "verified_ready_for_integration_originals_unchanged"
+      },
+      "bibliography_proposal": {
+        "application_pending": true,
+        "add_or_retain_source_ids": [
+          "mh_general_author_archive",
+          "mh_roberta_catalog",
+          "mh_micro_ad"
+        ],
+        "context_source_ids": [
+          "mh_archive_provenance",
+          "mh_edition_index",
+          "mh_black_box_crosscheck"
+        ],
+        "exclude_as_supporting_source_ids": [
+          "mh_wrong_wolf3d_repository",
+          "mh_wrong_wolf3d_page"
+        ],
+        "action": "Sostituire nella bibliografia operativa i due riferimenti a Wolfenstein 3D con le fonti pertinenti. Conservare nel registro di provenienza gli URL e le attribuzioni originari.",
+        "preserve_original_provenance": true,
+        "status": "verified_ready_for_integration_originals_unchanged"
+      },
+      "limits": [
+        "La regione US è una sintesi del contesto commerciale dell’annuncio, non un campo geografico della scheda Sierra Gamers. Il sito è mantenuto dal coautore con contributi della comunità: la data del catalogo non viene presentata come una dichiarazione personale firmata da Ken Williams.",
+        "Questo controllo riguarda l’incipit, la data e la bibliografia, non una nuova verifica completa delle altre card."
+      ],
+      "text_application_status": "applied_in_en_it_fr_de_es"
+    },
+    {
+      "batch_id": "017-catalog",
+      "entry_id": "workbook-07-09-donkey-kong",
+      "title": "Donkey Kong",
+      "status": "verified",
+      "application_pending": false,
+      "release": {
+        "year": 1981,
+        "month": 7,
+        "day": 9,
+        "precision": "day",
+        "region": "JP",
+        "region_label": "Giappone",
+        "platform": "Arcade",
+        "event_semantics": "release"
+      },
+      "release_source_ids": [
+        "dk_release_court"
+      ],
+      "release_reason": "La sentenza Nintendo of America contro Elcon Industries del 1982 attesta la prima pubblicazione giapponese del 9 luglio 1981 e distingue questo evento dalla successiva registrazione del copyright.",
+      "resolved_points": [
+        {
+          "finding_id": "donkey_kong_release",
+          "status": "verified",
+          "application_pending": false,
+          "targets": [
+            "main:0",
+            "metadata.date"
+          ],
+          "conclusion": "Prima pubblicazione in Giappone il 9 luglio 1981.",
+          "proposed_action": "Conservare il giorno e precisare la regione. Eliminare dal testo il qualificatore di distribuzione limitata, che il documento non dimostra.",
+          "source_ids": [
+            "dk_release_court"
+          ],
+          "resolution_status": "Conclusione verificata e registrata; testo corretto se necessario; integrazione dei metadati separata."
+        },
+        {
+          "finding_id": "donkey_kong_lady_pauline",
+          "status": "verified",
+          "application_pending": false,
+          "targets": [
+            "main:0"
+          ],
+          "conclusion": "Lady e Pauline indicano lo stesso personaggio, con un nome successivo.",
+          "proposed_action": "Chiarire il passaggio da Lady a Pauline alla prima menzione; mantenere Pauline nelle card seguenti.",
+          "source_ids": [
+            "dk_identity_nintendo"
+          ],
+          "resolution_status": "Conclusione verificata e registrata; testo corretto se necessario; integrazione dei metadati separata."
+        },
+        {
+          "finding_id": "donkey_kong_graphics_rom",
+          "status": "verified",
+          "application_pending": false,
+          "targets": [
+            "main:1"
+          ],
+          "conclusion": "Le ROM grafiche memorizzano 128 forme per sprite di 16 × 16 pixel e 256 forme per tasselli di sfondo di 8 × 8 pixel.",
+          "proposed_action": "Descrivere la capacità di memorizzare forme grafiche. Rimuovere l’equivoco con il numero di oggetti visibili contemporaneamente, mantenendo le quantità documentate.",
+          "source_ids": [
+            "dk_pattern_rom_testimony"
+          ],
+          "resolution_status": "Conclusione verificata e registrata; testo corretto se necessario; integrazione dei metadati separata."
+        },
+        {
+          "finding_id": "donkey_kong_barrels_oil_drum",
+          "status": "verified",
+          "application_pending": false,
+          "targets": [
+            "main:2"
+          ],
+          "conclusion": "I barili vengono lanciati da Donkey Kong; il fusto d’olio è collocato alla base della struttura.",
+          "proposed_action": "Separare i due elementi nelle cinque lingue ed eliminare la formulazione che presenta anche il fusto come oggetto lanciato.",
+          "source_ids": [
+            "dk_barrels_nintendo",
+            "dk_25m_official_image"
+          ],
+          "limits": "Il riscontro visivo documenta la posizione del fusto; non autorizza ulteriori dettagli sulla sua logica di gioco.",
+          "resolution_status": "Conclusione verificata e registrata; testo corretto se necessario; integrazione dei metadati separata."
+        }
+      ],
+      "metadata_proposal": {
+        "application_pending": true,
+        "action": "Confermare 9 luglio 1981, precisione giornaliera e regione JP.",
+        "values": {
+          "year": 1981,
+          "date": {
+            "month": 7,
+            "day": 9,
+            "precision": "day",
+            "region": "JP"
+          },
+          "event_semantics": "release"
+        },
+        "status": "verified_ready_for_integration_originals_unchanged"
+      },
+      "bibliography_proposal": {
+        "application_pending": true,
+        "add_or_retain_source_ids": [
+          "dk_release_court",
+          "dk_identity_nintendo",
+          "dk_pattern_rom_testimony",
+          "dk_barrels_nintendo",
+          "dk_25m_official_image"
+        ],
+        "action": "Collegare alle singole correzioni la sentenza, le fonti ufficiali Nintendo e la testimonianza tecnica di Hirohisa Komanome. Conservare autore, traduttore e attribuzioni della testimonianza.",
+        "preserve_original_provenance": true,
+        "status": "verified_ready_for_integration_originals_unchanged"
+      },
+      "dates_not_used_as_release": [
+        {
+          "date": "1982-07-30",
+          "event": "Data di efficacia della registrazione statunitense del copyright",
+          "reason": "La sentenza la distingue dalla prima pubblicazione giapponese."
+        }
+      ],
+      "limits": [
+        "Il documento giudiziario non misura la consistenza di una distribuzione limitata e non stabilisce qui un secondo giorno di distribuzione generale."
+      ],
+      "text_application_status": "applied_in_en_it_fr_de_es"
+    },
+    {
+      "batch_id": "017-catalog",
+      "entry_id": "daily-02-02",
+      "title": "Frogger",
+      "status": "verified",
+      "application_pending": false,
+      "release": {
+        "year": 1981,
+        "month": null,
+        "day": null,
+        "precision": "year",
+        "region": null,
+        "region_label": null,
+        "platform": "Arcade",
+        "event_semantics": "release"
+      },
+      "release_source_ids": [
+        "frogger_konami_release",
+        "frogger_sega_databus"
+      ],
+      "release_reason": "La scheda storica ufficiale di Konami documenta l’originale arcade nel 1981. La newsletter Sega/Gremlin conferma la disponibilità commerciale statunitense nel periodo settembre-ottobre dello stesso anno; il giorno iniziale non è fissato.",
+      "resolved_points": [
+        {
+          "finding_id": "frogger_release",
+          "status": "verified",
+          "application_pending": false,
+          "targets": [
+            "metadata.date"
+          ],
+          "conclusion": "La collocazione commerciale applicabile è il 1981, con precisione annuale.",
+          "proposed_action": "Riallineare la voce sulla release annuale; il testo già datato 1981 può restare. Non conservare la ricorrenza del 2 febbraio come data di uscita.",
+          "source_ids": [
+            "frogger_konami_release",
+            "frogger_sega_databus"
+          ],
+          "resolution_status": "Conclusione verificata e registrata; testo corretto se necessario; integrazione dei metadati separata."
+        },
+        {
+          "finding_id": "frogger_alligators",
+          "status": "verified",
+          "application_pending": false,
+          "targets": [
+            "main:0",
+            "main:1"
+          ],
+          "conclusion": "La rana può appoggiarsi sul dorso degli alligatori, deve evitare la bocca aperta e perde una vita se tocca un serpente.",
+          "proposed_action": "Esplicitare le condizioni nelle prime due card, risolvendo l’apparente contraddizione tra alligatori usati come appoggi e alligatori pericolosi.",
+          "source_ids": [
+            "frogger_original_manual"
+          ],
+          "resolution_status": "Conclusione verificata e registrata; testo corretto se necessario; integrazione dei metadati separata."
+        },
+        {
+          "finding_id": "frogger_hall_of_fame_2026",
+          "status": "verified",
+          "application_pending": false,
+          "targets": [
+            "main:3"
+          ],
+          "conclusion": "Frogger figura fra i finalisti del World Video Game Hall of Fame del 2026.",
+          "proposed_action": "Conservare la formulazione di finalista già presente e collegare il comunicato dell’istituzione.",
+          "source_ids": [
+            "frogger_finalist_2026"
+          ],
+          "resolution_status": "Conclusione verificata e registrata; testo corretto se necessario; integrazione dei metadati separata."
+        },
+        {
+          "finding_id": "frogger_bibliography",
+          "status": "verified",
+          "application_pending": false,
+          "targets": [
+            "bibliography"
+          ],
+          "conclusion": "Le pagine Atlus e SEGA ereditate trattano Persona 3 Reload.",
+          "proposed_action": "Escluderle come prove per Frogger e usare manuale originale, scheda Konami, newsletter Sega/Gremlin e comunicato The Strong. Conservare la provenienza dei riferimenti originari.",
+          "source_ids": [
+            "frogger_wrong_sega_url",
+            "frogger_wrong_atlus_url",
+            "frogger_original_manual",
+            "frogger_konami_release",
+            "frogger_sega_databus",
+            "frogger_finalist_2026"
+          ],
+          "resolution_status": "Conclusione verificata e registrata; testo corretto se necessario; integrazione dei metadati separata."
+        }
+      ],
+      "metadata_proposal": {
+        "application_pending": true,
+        "action": "Impostare anno 1981, precisione annuale e mese/giorno assenti. Lasciare la regione non specificata per l’uscita generale, senza ricavarla dalla lingua della pagina Konami.",
+        "values": {
+          "year": 1981,
+          "date": {
+            "month": null,
+            "day": null,
+            "precision": "year",
+            "region": null
+          },
+          "event_semantics": "release"
+        },
+        "status": "verified_ready_for_integration_originals_unchanged"
+      },
+      "bibliography_proposal": {
+        "application_pending": true,
+        "add_or_retain_source_ids": [
+          "frogger_original_manual",
+          "frogger_konami_release",
+          "frogger_sega_databus",
+          "frogger_finalist_2026"
+        ],
+        "context_source_ids": [
+          "frogger_contract_context"
+        ],
+        "exclude_as_supporting_source_ids": [
+          "frogger_wrong_sega_url",
+          "frogger_wrong_atlus_url"
+        ],
+        "action": "Aggiornare la bibliografia operativa con le fonti pertinenti e conservare separatamente gli URL ereditati fuori tema.",
+        "preserve_original_provenance": true,
+        "status": "verified_ready_for_integration_originals_unchanged"
+      },
+      "dates_not_used_as_release": [
+        {
+          "month": 2,
+          "day": 2,
+          "event": "Collocazione tematica per la Giornata mondiale delle zone umide",
+          "reason": "Ricorrenza estranea alla release del gioco."
+        },
+        {
+          "date": "1981-07-21",
+          "event": "Contratto Sega-Konami",
+          "reason": "Accordo commerciale, distinto dalla disponibilità del gioco."
+        },
+        {
+          "date": "1981-07-22",
+          "event": "Annuncio dell’accordo",
+          "reason": "Annuncio, non attestazione di uscita."
+        }
+      ],
+      "limits": [
+        "La regione della prima uscita generale non è esplicitata dalla frase storica di Konami; US è documentato separatamente dalla newsletter del produttore. Il mese di agosto ereditato nel metadato non viene trasferito alla data verificata: la conclusione usa l’anno documentato."
+      ],
+      "text_application_status": "applied_in_en_it_fr_de_es"
+    },
+    {
+      "batch_id": "018-catalog",
+      "entry_id": "workbook-02-03-ms-pac-man",
+      "title": "Ms. Pac-Man",
+      "status": "verified",
+      "application_pending": false,
+      "release": {
+        "year": 1982,
+        "month": null,
+        "day": null,
+        "precision": "year",
+        "region": "North America",
+        "region_label": "Nord America",
+        "platform": "Arcade",
+        "event_semantics": "release"
+      },
+      "release_source_ids": [
+        "lat_1982",
+        "playmeter_feb1982",
+        "playmeter_oct1982",
+        "golson_2024",
+        "edwards_oral_history"
+      ],
+      "release_reason": "Cronache contemporanee, documentazione di Midway riportata dalla stampa professionale e testimonianza di Steve Golson sostengono l’uscita commerciale nel 1982. La precisione annuale distingue questa conclusione dalle date di conferenza, produzione e catalogazione.",
+      "resolved_points": [
+        {
+          "finding_id": "mspacman_release",
+          "status": "verified",
+          "application_pending": false,
+          "targets": [
+            "main:0",
+            "summary",
+            "metadata.date"
+          ],
+          "conclusion": "Uscita arcade in Nord America nel 1982, con precisione annuale.",
+          "proposed_action": "Usare il 1982 nell’incipit e nella collocazione della voce. Eliminare il 3 febbraio dai testi in cui servirebbe a datare la release; applicare le formulazioni coerenti nelle cinque lingue.",
+          "source_ids": [
+            "lat_1982",
+            "playmeter_feb1982",
+            "playmeter_oct1982",
+            "golson_2024",
+            "edwards_oral_history"
+          ],
+          "limits": "L’anno è la conclusione operativa verificata. Mese e giorno non vengono dedotti dalla presentazione o dalla produzione.",
+          "resolution_status": "Conclusione verificata e registrata; testo corretto se necessario; integrazione dei metadati separata."
+        },
+        {
+          "finding_id": "mspacman_playmeter_locator",
+          "status": "verified",
+          "application_pending": false,
+          "targets": [
+            "bibliography"
+          ],
+          "conclusion": "La notizia con la dichiarazione di Larry Berke è a pagina 84 di Play Meter del 15 febbraio 1982.",
+          "proposed_action": "Correggere il rinvio bibliografico da pagina 83 a pagina 84; il foglio digitale corrispondente è n99.",
+          "source_ids": [
+            "playmeter_feb1982"
+          ],
+          "resolution_status": "Conclusione verificata e registrata; testo corretto se necessario; integrazione dei metadati separata."
+        }
+      ],
+      "metadata_proposal": {
+        "application_pending": true,
+        "action": "Sostituire 3 febbraio 1982 con anno 1982, precisione annuale, mese/giorno assenti e regione Nord America.",
+        "values": {
+          "year": 1982,
+          "date": {
+            "month": null,
+            "day": null,
+            "precision": "year",
+            "region": "North America"
+          },
+          "event_semantics": "release"
+        },
+        "status": "verified_ready_for_integration_originals_unchanged"
+      },
+      "bibliography_proposal": {
+        "application_pending": true,
+        "add_or_retain_source_ids": [
+          "lat_1982",
+          "playmeter_feb1982",
+          "playmeter_oct1982",
+          "golson_2024",
+          "golson_2015",
+          "edwards_oral_history"
+        ],
+        "context_source_ids": [
+          "edwards_2017",
+          "guinness"
+        ],
+        "action": "Associare le prove contemporanee alla conclusione annuale. Correggere il locator di Play Meter e conservare le fonti delle date concorrenti come storia della verifica, senza riproporre quei giorni come release.",
+        "preserve_original_provenance": true,
+        "status": "verified_ready_for_integration_originals_unchanged"
+      },
+      "dates_not_used_as_release": [
+        {
+          "date": "1982-02-03",
+          "event": "Conferenza stampa di presentazione",
+          "reason": "Il Los Angeles Times distingue la conferenza dalla successiva comparsa prevista nelle sale."
+        },
+        {
+          "date": "1982-02",
+          "event": "Produzione prevista e data nel catalogo commerciale",
+          "reason": "I documenti letti non identificano questa data come prima distribuzione."
+        },
+        {
+          "date": "1982-01-13",
+          "event": "Giorno riportato da Guinness e cataloghi retrospettivi",
+          "reason": "La documentazione esaminata non attesta una prima vendita o spedizione in quel giorno."
+        }
+      ],
+      "limits": [
+        "I riferimenti retrospettivi al 1981 non prevalgono sulla cronologia coeva del passaggio alla produzione e alla distribuzione nel 1982. Sviluppo, diritti, produzione e prima uscita restano eventi distinti. Le quantità di vendita riportate da Golson servono alla verifica dell’anno e non vengono aggiunte alle card."
+      ],
+      "text_application_status": "applied_in_en_it_fr_de_es"
+    },
+    {
+      "batch_id": "018-catalog",
+      "entry_id": "zx-spectrum",
+      "title": "ZX Spectrum",
+      "status": "verified",
+      "application_pending": false,
+      "release": {
+        "year": 1982,
+        "month": 6,
+        "day": null,
+        "precision": "month",
+        "region": "UK",
+        "region_label": "Regno Unito",
+        "platform": "Home computer",
+        "event_semantics": "release"
+      },
+      "release_source_ids": [
+        "sinclair_user_1982_08_p20"
+      ],
+      "release_reason": "Sinclair User dell’agosto 1982 documenta l’inizio delle consegne ai clienti in giugno e lo distingue dal lancio pubblico di aprile. La timeline richiesta dall’utente usa la disponibilità commerciale.",
+      "resolved_points": [
+        {
+          "finding_id": "zx_spectrum_deliveries",
+          "status": "verified",
+          "application_pending": false,
+          "targets": [
+            "main:0",
+            "metadata.date"
+          ],
+          "conclusion": "Le prime consegne documentate ai clienti britannici risalgono a giugno 1982.",
+          "proposed_action": "Usare giugno 1982, con precisione mensile, nella data e nell’incipit.",
+          "source_ids": [
+            "sinclair_user_1982_08_p20"
+          ],
+          "resolution_status": "Conclusione verificata e registrata; testo corretto se necessario; integrazione dei metadati separata."
+        },
+        {
+          "finding_id": "zx_spectrum_colour_attributes",
+          "status": "verified",
+          "application_pending": false,
+          "targets": [
+            "main:1"
+          ],
+          "conclusion": "Ogni cella di 8 × 8 pixel condivide un colore di primo piano e uno di sfondo.",
+          "proposed_action": "Spiegare questo funzionamento nella card esistente in tutte le lingue, mantenendo il legame già presente fra vincolo cromatico e aspetto della grafica.",
+          "source_ids": [
+            "zx_manual_1982_colours"
+          ],
+          "resolution_status": "Conclusione verificata e registrata; testo corretto se necessario; integrazione dei metadati separata."
+        },
+        {
+          "finding_id": "zx_spectrum_rtype_movement",
+          "status": "verified",
+          "application_pending": false,
+          "targets": [
+            "feature:feature-spectrum-bedroom-networks:3"
+          ],
+          "conclusion": "Pape descrive il movimento degli oggetti per celle di carattere e lo scorrimento dello sfondo per singoli pixel; collega la scelta a colore, velocità e impressione di fluidità.",
+          "proposed_action": "Correggere la lettura di characters come personaggi. Conservare l’ufficio di Fareham, Mark Jones per la grafica e Rob Hylands per il driver sonoro; riferirsi a un’altra versione, al singolare, come nell’intervista.",
+          "source_ids": [
+            "pape_1997",
+            "zx_manual_1982_colours"
+          ],
+          "limits": "Non introdurre frequenze, prestazioni misurate o dettagli sugli assi di movimento non presenti nel materiale verificato.",
+          "feature_id": "feature-spectrum-bedroom-networks",
+          "resolution_status": "Conclusione verificata e registrata; testo corretto se necessario; integrazione dei metadati separata."
+        },
+        {
+          "finding_id": "zx_spectrum_pape_interviewer",
+          "status": "verified",
+          "application_pending": false,
+          "targets": [
+            "bibliography"
+          ],
+          "conclusion": "L’intervista a Bob Pape del novembre 1997 è di Philip Bee.",
+          "proposed_action": "Integrare l’attribuzione a Philip Bee nel registro fonti e conservare i riferimenti di copyright a Philip Bee e Bob Pape.",
+          "source_ids": [
+            "pape_1997"
+          ],
+          "resolution_status": "Conclusione verificata e registrata; testo corretto se necessario; integrazione dei metadati separata."
+        }
+      ],
+      "metadata_proposal": {
+        "application_pending": true,
+        "action": "Sostituire 23 aprile 1982 con giugno 1982, precisione mensile, giorno assente e regione UK.",
+        "values": {
+          "year": 1982,
+          "date": {
+            "month": 6,
+            "day": null,
+            "precision": "month",
+            "region": "UK"
+          },
+          "event_semantics": "release"
+        },
+        "status": "verified_ready_for_integration_originals_unchanged"
+      },
+      "bibliography_proposal": {
+        "application_pending": true,
+        "add_or_retain_source_ids": [
+          "sinclair_user_1982_08_p20",
+          "zx_manual_1982_colours",
+          "pape_1997"
+        ],
+        "action": "Aggiungere la cronaca delle prime consegne e il manuale originale. Integrare autore, data e attribuzioni dell’intervista a Pape.",
+        "preserve_original_provenance": true,
+        "status": "verified_ready_for_integration_originals_unchanged"
+      },
+      "dates_not_used_as_release": [
+        {
+          "date": "1982-04-23",
+          "event": "Lancio pubblico e annuncio",
+          "reason": "La cronaca contemporanea colloca le consegne ai clienti in giugno."
+        }
+      ],
+      "limits": [
+        "La fonte non fornisce un giorno di prima consegna. Le spiegazioni tecniche vanno integrate nelle card esistenti, senza alterare ID, numero o ordine."
+      ],
+      "text_application_status": "applied_in_en_it_fr_de_es"
+    },
+    {
+      "batch_id": "018-catalog",
+      "entry_id": "wikipedia-106289",
+      "title": "E.T. the Extra-Terrestrial",
+      "status": "verified",
+      "application_pending": false,
+      "release": {
+        "year": 1982,
+        "month": 11,
+        "day": null,
+        "precision": "month",
+        "region": "US",
+        "region_label": "Stati Uniti",
+        "platform": "Atari 2600",
+        "event_semantics": "release"
+      },
+      "release_source_ids": [
+        "et_cincinnati_1982_11_20",
+        "et_video_game_update_1982_12"
+      ],
+      "release_reason": "Un’inserzione del 20 novembre documenta la cartuccia già disponibile in negozio; il prospetto contemporaneo di The Video Game Update registra una spedizione di novembre. Il riferimento applicabile è novembre 1982 negli Stati Uniti.",
+      "resolved_points": [
+        {
+          "finding_id": "et_release",
+          "status": "verified",
+          "application_pending": false,
+          "targets": [
+            "main:0",
+            "metadata.date"
+          ],
+          "conclusion": "Il gioco raggiunse i negozi statunitensi nel novembre 1982.",
+          "proposed_action": "Sostituire il riferimento a dicembre con novembre 1982, conservando precisione mensile e regione US. Separare nell’incipit lo sviluppo dalla distribuzione.",
+          "source_ids": [
+            "et_cincinnati_1982_11_20",
+            "et_video_game_update_1982_12"
+          ],
+          "resolution_status": "Conclusione verificata e registrata; testo corretto se necessario; integrazione dei metadati separata."
+        },
+        {
+          "finding_id": "et_company_net_sales",
+          "status": "verified",
+          "application_pending": false,
+          "targets": [
+            "main:1"
+          ],
+          "conclusion": "La tabella Atari riporta vendite nette aziendali di 2.637.985 cartucce per il 1982 e un saldo netto negativo di 669.733 per il 1983.",
+          "proposed_action": "Presentare i dati come valori netti aziendali e attribuire a Warshaw la spiegazione della delusione commerciale in termini di sovrapproduzione.",
+          "source_ids": [
+            "et_sales_table",
+            "warshaw_stilphen_interview"
+          ],
+          "limits": "Le cifre non sono acquisti finali dei giocatori, dollari o perdite monetarie. Il valore negativo non è il totale lordo dei resi. La tabella non dimostra quantità fabbricate, redditività complessiva o quota causale nel crash; non sommare due anni per ricavare un totale di vita.",
+          "resolution_status": "Conclusione verificata e registrata; testo corretto se necessario; integrazione dei metadati separata."
+        },
+        {
+          "finding_id": "et_crash_interpretation",
+          "status": "verified",
+          "application_pending": false,
+          "targets": [
+            "main:1"
+          ],
+          "conclusion": "Warshaw presenta E.T. come simbolo della crisi e sintomo delle scelte aziendali alla base del crash del 1983.",
+          "proposed_action": "Conservare l’attribuzione a Warshaw. Sostituire la graduatoria assoluta dei maggiori fallimenti e il ruolo causale maggiore non misurato con la spiegazione documentata.",
+          "source_ids": [
+            "warshaw_denofgeek_2015",
+            "warshaw_wired_2021",
+            "warshaw_stilphen_interview"
+          ],
+          "resolution_status": "Conclusione verificata e registrata; testo corretto se necessario; integrazione dei metadati separata."
+        }
+      ],
+      "metadata_proposal": {
+        "application_pending": true,
+        "action": "Sostituire dicembre 1982 con novembre 1982, precisione mensile, giorno assente e regione US.",
+        "values": {
+          "year": 1982,
+          "date": {
+            "month": 11,
+            "day": null,
+            "precision": "month",
+            "region": "US"
+          },
+          "event_semantics": "release"
+        },
+        "status": "verified_ready_for_integration_originals_unchanged"
+      },
+      "bibliography_proposal": {
+        "application_pending": true,
+        "add_or_retain_source_ids": [
+          "et_cincinnati_1982_11_20",
+          "et_video_game_update_1982_12",
+          "et_sales_table",
+          "warshaw_stilphen_interview",
+          "warshaw_denofgeek_2015",
+          "warshaw_wired_2021"
+        ],
+        "action": "Collegare la data alle prove commerciali contemporanee e distinguere la tabella aziendale dalle interpretazioni retrospettive attribuite a Warshaw.",
+        "preserve_original_provenance": true,
+        "status": "verified_ready_for_integration_originals_unchanged"
+      },
+      "dates_not_used_as_release": [
+        {
+          "date": "1982-11-20",
+          "event": "Pubblicazione di un annuncio di disponibilità in negozio",
+          "reason": "Termine entro cui la disponibilità è comprovata, non giorno accertato della prima vendita."
+        },
+        {
+          "date": "1982-11-19",
+          "event": "Disponibilità prevista in un’altra inserzione",
+          "reason": "Data annunciata, non assunta come giorno verificato di prima uscita."
+        }
+      ],
+      "limits": [
+        "La distribuzione nazionale poteva non essere uniforme alla chiusura del bollettino. Il totale retrospettivo di 1,5 milioni citato nell’intervista non sostituisce le cifre nette della tabella aziendale riprodotta nella stessa pagina."
+      ],
+      "text_application_status": "applied_in_en_it_fr_de_es"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "dk_release_court",
+      "title": "Nintendo of America, Inc. v. Elcon Industries, Inc., 564 F. Supp. 937",
+      "publisher": "United States District Court, Eastern District of Michigan; riproduzione Justia",
+      "url": "https://law.justia.com/cases/federal/district-courts/FSupp/564/937/1407344/",
+      "source_type": "decisione giudiziaria, fonte primaria",
+      "publication_date": "1982-10-04",
+      "locator": "Findings of Fact: passaggio sulla prima pubblicazione in Giappone e successivo paragrafo sulla registrazione del copyright.",
+      "finding": "Prima pubblicazione giapponese: 9 luglio 1981. La registrazione statunitense, trattata separatamente, ha efficacia 30 luglio 1982."
+    },
+    {
+      "source_id": "dk_identity_nintendo",
+      "title": "Nintendo: Donkey Kong Bananza, i livelli 2D, parte 2",
+      "publisher": "Nintendo",
+      "url": "https://www.nintendo.com/jp/topics/article/2a2ddaf1-0b44-4f12-9eb6-8677ed72ad75",
+      "source_type": "ricostruzione ufficiale del titolare dei personaggi",
+      "publication_date": "2026-01-23",
+      "locator": "Sezione Super Jumpman, paragrafo sulla protagonista chiamata prima Lady e poi Pauline",
+      "finding": "Nintendo identifica esplicitamente Lady e Pauline come lo stesso personaggio, spiegando il nome successivo."
+    },
+    {
+      "source_id": "dk_pattern_rom_testimony",
+      "title": "Donkey Kong: A Record of Struggle",
+      "publisher": "bit, 1997; traduzione inglese di Alex su Shmuplations",
+      "url": "https://shmuplations.com/donkeykong/",
+      "source_type": "testimonianza di un programmatore originale, in traduzione",
+      "author": "Hirohisa Komanome",
+      "locator": "Sezione sul pattern ROM, paragrafo immediatamente dopo la figura dei pattern",
+      "finding": "Si tratta di forme memorizzate nelle ROM, non di una quantità di oggetti contemporaneamente visibili."
+    },
+    {
+      "source_id": "dk_barrels_nintendo",
+      "title": "Donkey Kong Returns: What’s DK? — storia di Donkey Kong",
+      "publisher": "Nintendo",
+      "url": "https://www.nintendo.co.jp/wii/sf8j/history/index.html",
+      "source_type": "storia ufficiale Nintendo",
+      "locator": "Sezione 1981",
+      "finding": "La descrizione dell’arcade identifica i barili tra gli oggetti lanciati da Donkey Kong."
+    },
+    {
+      "source_id": "dk_25m_official_image",
+      "title": "Arcade Archives Donkey Kong: schermata ufficiale del quadro a 25 metri",
+      "publisher": "Nintendo",
+      "url": "https://www.nintendo.com/jp/topics/article/ce3a08cd-692b-11e8-b9c0-063b7ac45a6d",
+      "source_type": "immagine del gioco pubblicata ufficialmente, esaminata visivamente",
+      "publication_date": "2018-06-15",
+      "locator": "Seconda immagine di gioco sotto la sezione Donkey Kong",
+      "finding": "Il fusto acceso compare sul pavimento inferiore a sinistra, distinto dai barili che percorrono le travi. La proposta editoriale ne precisa soltanto la posizione.",
+      "additional_urls": [
+        {
+          "relation": "Immagine originale di riscontro",
+          "url": "https://assets.topics.apps-jp.nintendo.com/image/2019/08/15042555311998/400/00001142_02.jpg"
+        }
+      ]
+    },
+    {
+      "source_id": "frogger_original_manual",
+      "title": "Frogger Operating Instructions and Service Manual",
+      "publisher": "Sega/Gremlin",
+      "url": "https://www.arcade-museum.com/manuals-videogames/F/Frogger.pdf",
+      "source_type": "manuale originale del produttore",
+      "publication_date": "1981",
+      "locator": "Pagina stampata 4, Frogger Game Concept",
+      "finding": "Dorso utilizzabile; bocche aperte da evitare; contatto letale con i serpenti.",
+      "additional_urls": [
+        {
+          "relation": "Trascrizione",
+          "url": "https://device.report/m/f97dd1cbf416fea26336a298a8782974a05ea9a7a12ebc14718dbc87e2234086"
+        }
+      ]
+    },
+    {
+      "source_id": "frogger_konami_release",
+      "title": "FROGGER — scheda ufficiale KONAMI",
+      "publisher": "Konami",
+      "url": "https://www.konami.com/games/jp/ja/products/dl_frogger_arcade_c/",
+      "source_type": "scheda ufficiale del titolare",
+      "locator": "Game Overview: prima frase; il campo Release sottostante riguarda le riedizioni del 2019",
+      "finding": "L’originale arcade è datato 1981. Il testo storico non specifica mese o giorno."
+    },
+    {
+      "source_id": "frogger_sega_databus",
+      "title": "Data Bus, vol. 2 n. 4: New Game Takes The Field",
+      "publisher": "Sega/Gremlin",
+      "url": "https://arcarc.xmission.com/PDF_Misc/Gremlin%20Sega%20Data%20Bus%20Newsletters/Data%20Bus%202-4%201981%20Sep%2BOct.pdf",
+      "source_type": "newsletter contemporanea del produttore",
+      "publication_date": "1981-09/1981-10",
+      "locator": "Pagina 1",
+      "finding": "Documenta la disponibilità commerciale statunitense delle versioni upright e cocktail nel periodo settembre-ottobre 1981, senza fissare il giorno iniziale."
+    },
+    {
+      "source_id": "frogger_contract_context",
+      "title": "Game Machine n. 172: Sega of Japan got all rights of Frogger from Konami",
+      "publisher": "Amusement Press",
+      "url": "https://onitama.tv/gamemachine/pdf/19810901p.pdf",
+      "source_type": "notizia contemporanea che riporta un annuncio Sega",
+      "publication_date": "1981-09-01",
+      "locator": "Pagina stampata 20, pagina PDF 11; colonna destra, controllata anche sull’immagine",
+      "finding": "Distingue contratto del 21 luglio 1981 e annuncio del 22 luglio. Nessuna delle due date attesta l’uscita commerciale."
+    },
+    {
+      "source_id": "frogger_finalist_2026",
+      "title": "World Video Game Hall of Fame Reveals 12 Finalists for 2026 Induction",
+      "publisher": "The Strong National Museum of Play",
+      "url": "https://www.museumofplay.org/press-release/world-video-game-hall-of-fame-reveals-12-finalists-for-2026-induction/",
+      "source_type": "comunicato dell’istituzione che assegna il riconoscimento",
+      "publication_date": "2026-03-05",
+      "locator": "Elenco dei dodici finalisti",
+      "finding": "Frogger figura fra i finalisti del 2026; la formulazione già presente nelle cinque lingue è corretta."
+    },
+    {
+      "source_id": "frogger_wrong_sega_url",
+      "title": "OVERVIEW",
+      "publisher": "SEGA Support",
+      "url": "https://support.sega.com/hc/en-gb/articles/42764930940433-OVERVIEW",
+      "source_type": "pagina ufficiale fuori tema, controllata direttamente",
+      "locator": "Testo introduttivo, nome del gioco e data di uscita",
+      "finding": "La pagina riguarda Persona 3 Reload, non Frogger.",
+      "role": "Fonte verificata come estranea alla voce Frogger."
+    },
+    {
+      "source_id": "frogger_wrong_atlus_url",
+      "title": "Persona 3 Reload Official Streaming Guidelines",
+      "publisher": "Atlus West",
+      "url": "https://atlus.com/persona-3-reload-official-streaming-guidelines/",
+      "source_type": "pagina ufficiale fuori tema, controllata direttamente",
+      "locator": "Titolo e testo delle linee guida",
+      "finding": "La pagina riguarda Persona 3 Reload, non Frogger.",
+      "role": "Fonte verificata come estranea alla voce Frogger."
+    },
+    {
+      "source_id": "lat_1982",
+      "title": "Why Is Pac-Man Grinning? He’s Sharing His Quarters",
+      "publisher": "Los Angeles Times",
+      "url": "https://www.newspapers.com/image/389022596/",
+      "source_type": "cronaca giornalistica contemporanea, ritaglio originale letto visivamente",
+      "author": "Patrick Goldstein",
+      "publication_date": "1982-02-04",
+      "locator": "Pagina 109",
+      "finding": "Il debutto del mercoledì è esplicitamente una conferenza stampa. La data del giornale permette di identificarlo nel 3 febbraio 1982; la frase successiva riguarda una futura diffusione nelle sale, senza una data di prima vendita.",
+      "additional_urls": [
+        {
+          "relation": "Contesto della riproduzione",
+          "url": "https://www.vintagecomputing.com/index.php/archives/1226/ms-pac-man-turns-35"
+        },
+        {
+          "relation": "Riproduzione accessibile della fonte originale",
+          "url": "https://www.vintagecomputing.com/wp-content/images/mspacman/Ms%20Pac-Man%20Debut%20Info%20-%20LA%20Times%20Feb%204%201982.jpg"
+        }
+      ]
+    },
+    {
+      "source_id": "playmeter_feb1982",
+      "title": "News briefs, Volume 8, Number 4",
+      "publisher": "Play Meter",
+      "url": "https://archive.org/details/play-meter-volume-8-number-4-february-15th-1982/Play%20Meter%20-%20Volume%208%2C%20Number%204%20-%20February%2015th%201982/page/84/mode/1up",
+      "source_type": "stampa professionale contemporanea con dichiarazione attribuita al responsabile vendite Midway",
+      "publication_date": "1982-02-15",
+      "locator": "Pagina 84",
+      "finding": "Il notiziario attribuisce a Larry Berke, sales manager di Midway, la produzione prevista per febbraio. Il testo distingue inoltre i precedenti test con un nome diverso. La pagina è stata verificata sulla scansione originale, non solo nell’OCR.",
+      "bibliographic_correction": "Il rinvio secondario a pagina 83 non corrisponde alla notizia: la scansione originale e i metadati la collocano a pagina 84, foglio digitale n99."
+    },
+    {
+      "source_id": "playmeter_oct1982",
+      "title": "Buyers’ Guide, Volume 8, Number 19",
+      "publisher": "Play Meter",
+      "url": "https://archive.org/details/play-meter-volume-8-number-19-october-1st-1982/Play%20Meter%20-%20Volume%208%2C%20Number%2019%20-%20October%201st%201982/page/115/mode/1up",
+      "source_type": "guida commerciale contemporanea e annunci per operatori",
+      "publication_date": "1982-10-01",
+      "locator": "Pagine 12, 115",
+      "finding": "A pagina 115 il cabinato di Ms. Pac-Man è accompagnato da febbraio 1982. L’introduzione a pagina 12 descrive un catalogo di prodotti in produzione o già usciti dalla produzione, senza definire la data come prima vendita. L’OCR degli annunci dello stesso numero include Ms. Pac-Man fra i giochi commercializzati e pronti per gli operatori."
+    },
+    {
+      "source_id": "golson_2024",
+      "title": "Lawyers, Games and Money: General Computer Goes to Court",
+      "publisher": "Steve Golson",
+      "url": "https://trilobyte.com/pdf/golson_CAX_2024.slides.pdf",
+      "source_type": "testimonianza diretta di uno sviluppatore, presentazione pubblicata dal relatore",
+      "author": "Steve Golson",
+      "publication_date": "2024",
+      "locator": "Pagine 11, 74",
+      "finding": "Golson attribuisce esplicitamente al 1982 le vendite dei cabinati e mostra una versione di Ms. Pac-Man datata gennaio 1982. Il primo dato conferma l’attività commerciale nell’anno; il secondo riguarda la cronologia del prodotto e non identifica una prima vendita."
+    },
+    {
+      "source_id": "golson_2015",
+      "title": "From Crazy Otto to Ms. Pac-Man",
+      "publisher": "Steve Golson",
+      "url": "https://trilobyte.com/pdf/golson_ReplayFX_2015.pdf",
+      "source_type": "testimonianza diretta di uno sviluppatore, presentazione pubblicata dal relatore",
+      "author": "Steve Golson",
+      "publication_date": "2015",
+      "locator": "Pagina 105",
+      "finding": "La didascalia colloca la scheda di produzione a gennaio 1982. Le diapositive finali che recano gennaio 1982 introducono inoltre la copertina di Time del 18 gennaio: non vanno lette come una data autonoma di uscita del gioco."
+    },
+    {
+      "source_id": "edwards_oral_history",
+      "title": "The MIT Dropouts Who Created Ms. Pac-Man: A 35th-Anniversary Oral History",
+      "publisher": "Fast Company",
+      "url": "https://www.fastcompany.com/3067296/the-mit-dropouts-who-created-ms-pac-man-a-35th-anniversary-oral-history",
+      "source_type": "interviste dirette ai creatori con raccordo giornalistico retrospettivo",
+      "author": "Benj Edwards",
+      "publication_date": "2017-02-03",
+      "locator": "Passaggi sulle modifiche richieste da Midway tra dicembre e gennaio e sezione sul debutto pubblico.",
+      "finding": "Golson ricorda modifiche richieste da Midway nell’arco dicembre/gennaio. Il raccordo giornalistico distingue il debutto pubblico del 3 febbraio e colloca l’uscita all’inizio del 1982. La data della conferenza non viene usata per dedurre un primo giorno di vendita."
+    },
+    {
+      "source_id": "edwards_2017",
+      "title": "Ms. Pac-Man Turns 35",
+      "publisher": "Vintage Computing and Gaming",
+      "url": "https://www.vintagecomputing.com/index.php/archives/1226/ms-pac-man-turns-35",
+      "source_type": "resoconto della ricerca di un giornalista, con riproduzioni di fonti coeve",
+      "author": "Benj Edwards",
+      "publication_date": "2017-02-03",
+      "locator": "Passaggi dedicati all’origine delle date del 3 febbraio e del 13 gennaio e riproduzioni delle cronache del 1982.",
+      "finding": "Spiega l’origine del 3 febbraio nella cronaca della conferenza stampa. Riporta un annuncio anticipatorio del 31 gennaio e afferma di non avere identificato, insieme ai creatori, l’origine del 13 gennaio. L’annuncio anticipatorio non è una prova della prima distribuzione."
+    },
+    {
+      "source_id": "guinness",
+      "title": "First videogame family",
+      "publisher": "Guinness World Records",
+      "url": "https://www.guinnessworldrecords.com/world-records/117979-first-videogame-family",
+      "source_type": "catalogazione retrospettiva, non usata come prova primaria della prima distribuzione",
+      "locator": "Campo When e paragrafo su Ms. Pac-Man.",
+      "finding": "Riporta il 13 gennaio 1982 senza fornire nella pagina consultata un documento contemporaneo di vendita o spedizione. Questo livello di precisione non viene trasferito al catalogo."
+    },
+    {
+      "source_id": "zx_manual_1982_colours",
+      "title": "Sinclair ZX Spectrum BASIC Programming — Chapter 16: Colours",
+      "publisher": "Sinclair Research Limited; edizione originale 1982, trascrizione autorizzata per Amstrad del 1995 conservata da World of Spectrum",
+      "url": "https://worldofspectrum.org/ZXBasicManual/zxmanchap16.html",
+      "source_type": "Manuale originale del produttore",
+      "author": "Steven Vickers; editor Robin Bradbeer",
+      "locator": "Chapter 16, paragrafi che seguono la lista degli otto colori: 768 posizioni, caratteri di 8×8 punti, INK/PAPER e attributi comuni a tutta la posizione.",
+      "finding": "Ogni posizione di carattere comprende 8×8 pixel. La stessa posizione condivide un colore INK per i punti in primo piano e un colore PAPER per lo sfondo. La limitazione ordinaria è di due colori per ciascun blocco di 64 punti; luminosità e lampeggio sono anch’essi attributi della posizione.",
+      "limits": "Regola tecnica esplicita del manuale originale; non una deduzione da immagini dei giochi.",
+      "additional_urls": [
+        {
+          "relation": "Edizione e bibliografia",
+          "url": "https://worldofspectrum.org/ZXBasicManual/"
+        }
+      ]
+    },
+    {
+      "source_id": "pape_1997",
+      "title": "Interview with Bob Pape",
+      "publisher": "World of Spectrum",
+      "url": "https://worldofspectrum.net/interviews/PapeBob.htm",
+      "source_type": "Intervista diretta al programmatore",
+      "author": "Philip Bee, intervista a Bob Pape",
+      "publication_date": "1997-11",
+      "locator": "Domande sul gioco preferito e sui colori di R-Type; risposte alle domande sui grafici e sui programmatori preferiti. Firma e copyright in fondo alla pagina.",
+      "finding": "Il termine characters riguarda le celle di carattere usate per il movimento, mentre lo sfondo scorre per pixel. Pape collega tale scelta a colore e velocità, e lo scorrimento dello sfondo all’impressione complessiva di fluidità. Sono confermati il lavoro condiviso nell’ufficio di Fareham, Mark Jones per la grafica e Rob Hylands per il driver sonoro.",
+      "limits": "Non trasformare characters in personaggi. La dimensione delle celle è chiarita dal manuale; non introdurre frequenze, prestazioni misurate o una descrizione più dettagliata degli assi di movimento.",
+      "bibliographic_correction": "La pagina letta identifica Philip Bee come intervistatore e attribuisce il copyright a Philip Bee e Bob Pape. La vecchia nota del lotto che non identificava l’intervistatore può essere integrata nel registro fonti senza cambiare INPUT."
+    },
+    {
+      "source_id": "sinclair_user_1982_08_p20",
+      "title": "Spectrums six weeks late — Sinclair User, issue 5, August 1982, p. 20",
+      "publisher": "Sinclair User / ECC Publications Ltd; riproduzioni archivistiche Retro Isle e Manualzilla",
+      "url": "https://retroisle.com/sinclair/zxspectrum/Articles/sinclairuser_aug1982.php",
+      "source_type": "Cronaca contemporanea",
+      "publication_date": "1982-08",
+      "locator": "Pagina 20, titolo Spectrums six weeks late: apertura sulle consegne finalmente iniziate in giugno; interventi di Bill Nichols, portavoce Sinclair Research.",
+      "finding": "La cronaca contemporanea distingue il lancio pubblico di aprile dalle consegne ai clienti di giugno. Il testo tratta ritardi di produzione e distribuzione, con dichiarazioni del portavoce Sinclair.",
+      "limits": "Mese delle prime consegne: giugno 1982. La fonte non fornisce un giorno; 23 aprile identifica il lancio/annuncio e non viene adottato come disponibilità al cliente.",
+      "additional_urls": [
+        {
+          "relation": "Seconda riproduzione archivistica",
+          "url": "https://manualzilla.com/doc/5926964/sinclair-user---retro-computer-resource"
+        }
+      ]
+    },
+    {
+      "source_id": "et_sales_table",
+      "title": "ATARI CORP — Cartridge Sales Since 1980, reproduced from Once Upon Atari",
+      "publisher": "Documento Atari Corp riprodotto in Once Upon Atari e nell’intervista di Scott Stilphen a Howard Scott Warshaw su Atari Compendium",
+      "url": "https://www.ataricompendium.com/archives/interviews/howard_scott_warshaw/interview_howard_scott_warshaw_15.jpg",
+      "source_type": "Riproduzione di un documento aziendale originale",
+      "locator": "Riga 8, modello CX2674, descrizione E.T.; colonne 1982 NET e 1983 NET. La didascalia sul sito collega la tabella al segmento The Agony & The Ecstasy di Once Upon Atari.",
+      "finding": "Alla riga del modello CX2674, E.T., la tabella Atari riporta 2.637.985 nella colonna delle vendite nette del 1982 e −669.733 in quella del 1983. I valori descrivono saldi netti aziendali; il documento riprodotto non fornisce una definizione contabile completa dei canali.",
+      "limits": "Valori esatti delle colonne NET aziendali. L’immagine riprodotta non espone una definizione contabile completa, il dettaglio dei canali o una riconciliazione con acquisti dei consumatori.",
+      "interpretation_limits": [
+        "Non chiamare 2.637.985 il numero di giocatori o di acquisti finali al dettaglio.",
+        "Non chiamare −669.733 il numero lordo esatto delle cartucce restituite: è un saldo netto negativo.",
+        "Non leggere le cifre come dollari o perdite monetarie.",
+        "La tabella non prova quante cartucce siano state fabbricate, il costo della licenza, la redditività totale o il peso causale del titolo sul crash."
+      ],
+      "additional_urls": [
+        {
+          "relation": "Contesto della riproduzione",
+          "url": "https://www.ataricompendium.com/archives/interviews/howard_scott_warshaw/interview_howard_scott_warshaw.html"
+        }
+      ]
+    },
+    {
+      "source_id": "warshaw_stilphen_interview",
+      "title": "Howard Scott Warshaw interview",
+      "publisher": "Atari Compendium",
+      "url": "https://www.ataricompendium.com/archives/interviews/howard_scott_warshaw/interview_howard_scott_warshaw.html",
+      "source_type": "Intervista diretta all’autore",
+      "author": "Scott Stilphen, intervista a Howard Scott Warshaw",
+      "publication_date": "1997; pagina aggiornata anche nel 2023",
+      "locator": "Domanda sul perché E.T. fosse considerato un fallimento pur essendo un bestseller, immediatamente prima della tabella delle vendite.",
+      "finding": "Warshaw attribuisce la delusione commerciale alla sovrapproduzione e alle scorte immesse sul mercato.",
+      "limits": "Usare l’attribuzione a Warshaw per la spiegazione; non adottare come totale definitivo la sua stima retrospettiva di 1,5 milioni, contraddetta dalla tabella riprodotta nella stessa pagina."
+    },
+    {
+      "source_id": "et_cincinnati_1982_11_20",
+      "title": "Watson’s Video Department advertisement — The Cincinnati Post, 20 November 1982",
+      "publisher": "Inserzionista Watson’s, pubblicazione The Cincinnati Post; scansione conservata da Atari Archive",
+      "url": "https://www.atariarchive.org/wp-content/uploads/2026/10/The_Cincinnati_Post_1982_11_20_5-scaled.jpg",
+      "source_type": "Pubblicità commerciale contemporanea",
+      "publication_date": "1982-11-20",
+      "locator": "Riquadro centrale sinistro dell’inserzione: cartuccia E.T. indicata come già disponibile; negozio Watson’s a Evendale.",
+      "finding": "La cartuccia è pubblicizzata come disponibile in negozio entro il 20 novembre 1982 negli Stati Uniti.",
+      "limits": "Prova disponibilità commerciale nel mese di novembre; la data dell’inserzione non viene trasformata nel giorno esatto della prima vendita.",
+      "additional_urls": [
+        {
+          "relation": "Contesto bibliografico",
+          "url": "https://www.atariarchive.org/atari-vcs-game-release-dates/"
+        }
+      ]
+    },
+    {
+      "source_id": "et_video_game_update_1982_12",
+      "title": "The Video Game Update — December 1982, shipping-status table",
+      "publisher": "The Video Game Update / Video Take-Out; riproduzione Atari Archive",
+      "url": "https://www.atariarchive.org/wp-content/uploads/2026/10/vg-update-dec-82-shipping.png",
+      "source_type": "Bollettino professionale contemporaneo",
+      "publication_date": "1982-12",
+      "locator": "Tabella dei titoli compatibili con Atari 2600, sezione novembre, riga E.T.; legenda della marcatura X relativa alle spedizioni già effettuate.",
+      "finding": "E.T. è collocato tra le uscite/spedizioni di novembre e marcato come già spedito alla chiusura. La legenda precisa che la distribuzione nazionale può non essere ancora completa.",
+      "limits": "Corrobora novembre 1982 e distingue prima spedizione da disponibilità nazionale uniforme.",
+      "additional_urls": [
+        {
+          "relation": "Contesto bibliografico",
+          "url": "https://www.atariarchive.org/atari-vcs-game-release-dates/"
+        }
+      ]
+    },
+    {
+      "source_id": "warshaw_denofgeek_2015",
+      "title": "Howard Scott Warshaw on creating E.T. and Atari: Game Over",
+      "publisher": "Den of Geek",
+      "url": "https://www.denofgeek.com/movies/howard-scott-warshaw-on-creating-et-and-atari-game-over/",
+      "source_type": "Intervista diretta all’autore",
+      "author": "Ryan Lambie, intervista a Howard Scott Warshaw",
+      "publication_date": "2015-01-19",
+      "locator": "Prima domanda sul documentario e risposta che descrive la scelta di un volto riconoscibile per raccontare la complessa crisi del settore; paragrafi successivi sui limiti di una spiegazione centrata su un solo gioco.",
+      "finding": "Warshaw interpreta la centralità di E.T. nel racconto della crisi come una semplificazione narrativa che assegna un volto a dinamiche aziendali più complesse.",
+      "limits": "Interpretazione esplicitamente attribuita al protagonista; non una dimostrazione quantitativa di causalità."
+    },
+    {
+      "source_id": "warshaw_wired_2021",
+      "title": "Howard Scott Warshaw Pleads Not Guilty to Killing Video Games",
+      "publisher": "WIRED",
+      "url": "https://www.wired.com/story/howard-scott-warshaw-interview-atari-et-video-games/",
+      "source_type": "Intervista diretta all’autore",
+      "author": "Jerry Bonner, intervista a Howard Scott Warshaw",
+      "publication_date": "2021-03-25",
+      "locator": "Domanda che richiama il passaggio del libro in cui E.T. è descritto come sintomo delle scelte dietro il crash; risposta di Warshaw sulla gestione di Atari.",
+      "finding": "Warshaw presenta E.T. come espressione del modo di ragionare alla base della crisi.",
+      "limits": "Conservare l’attribuzione; nessuna graduatoria assoluta o causalità unica."
+    },
+    {
+      "source_id": "mh_general_author_archive",
+      "title": "Mystery House",
+      "publisher": "Sierra Gamers, archivio mantenuto da Ken Williams",
+      "url": "https://www.sierragamers.com/mystery-house/",
+      "source_type": "catalogo retrospettivo nell’archivio del coautore",
+      "locator": "Scheda principale, campi Game Title e Release Date",
+      "finding": "Il campo Release Date riporta 05-05-1980 anche nella pagina generale del gioco."
+    },
+    {
+      "source_id": "mh_archive_provenance",
+      "title": "About Us — Welcome Message From Ken Williams",
+      "publisher": "Sierra Gamers",
+      "url": "https://www.sierragamers.com/about-us/",
+      "source_type": "dichiarazione diretta del fondatore del sito",
+      "locator": "Lettera di Ken Williams datata 1 luglio 2013, apertura e spiegazione del progetto",
+      "finding": "Ken Williams dichiara di mantenere il sito. Descrive anche la collaborazione della comunità: la titolarità del sito non equivale a una testimonianza personale firmata per ogni campo del catalogo."
+    },
+    {
+      "source_id": "mh_edition_index",
+      "title": "Hi Res",
+      "publisher": "Sierra Gamers",
+      "url": "https://www.sierragamers.com/hi-res/",
+      "source_type": "indice delle edizioni nell’archivio del coautore",
+      "locator": "Hi Res Adventures, prime quattro righe dell’elenco",
+      "finding": "Mystery House è datato 1980; Blue Sheet, White Folder e Black Box sono elencate rispettivamente come prima, seconda e terza edizione."
+    },
+    {
+      "source_id": "mh_black_box_crosscheck",
+      "title": "MH (Black Box)",
+      "publisher": "Sierra Gamers",
+      "url": "https://www.sierragamers.com/mh-black-box/",
+      "source_type": "scheda di confezione con metadati generali ripetuti",
+      "locator": "Scheda del gioco sotto l’intestazione MH (Black Box)",
+      "finding": "Ripete la data e il blocco di metadati della scheda generale. Non viene usata per datare l’introduzione di quella confezione."
+    },
+    {
+      "source_id": "mh_roberta_catalog",
+      "title": "Her Games — Mystery House",
+      "publisher": "RobertaWilliams.com",
+      "url": "https://robertawilliams.com/her-games/",
+      "source_type": "catalogo ufficiale della coautrice",
+      "locator": "Mystery House, intestazione 1980 Hi-Res Adventure #1 e didascalia della confezione originale",
+      "finding": "Conferma il 1980 e identifica la confezione originale in busta di plastica."
+    },
+    {
+      "source_id": "mh_micro_ad",
+      "title": "Annuncio originale On-Line Systems — Hi-Res Adventure (Mystery House)",
+      "publisher": "On-Line Systems, pubblicato su MICRO: The 6502 Journal",
+      "url": "https://www.lainenooney.com/blog/originalmysteryhousead",
+      "source_type": "pubblicità commerciale originale, riprodotta e contestualizzata dalla storica Laine Nooney",
+      "publication_date": "1980-05",
+      "locator": "Riproduzione dell’annuncio; intestazione Apple II, titolo Mystery House, modulo degli ordini e indirizzo californiano",
+      "finding": "Il prodotto è offerto in vendita per Apple II; il modulo degli ordini riporta On-Line Systems a Simi, California. Nooney identifica il numero della rivista come maggio 1980. L’immagine non riporta il giorno 5.",
+      "additional_urls": [
+        {
+          "relation": "Immagine originale di riscontro",
+          "url": "https://www.lainenooney.com/uploads/6/3/6/8/6368912/3298891_orig.jpg"
+        }
+      ]
+    },
+    {
+      "source_id": "mh_wrong_wolf3d_repository",
+      "title": "id-Software/wolf3d",
+      "publisher": "id Software",
+      "url": "https://github.com/id-Software/wolf3d",
+      "source_type": "repository ufficiale fuori tema",
+      "locator": "About e README",
+      "finding": "Repository del codice di Wolfenstein 3D; non documenta Mystery House.",
+      "role": "Fonte verificata come estranea alla voce Mystery House."
+    },
+    {
+      "source_id": "mh_wrong_wolf3d_page",
+      "title": "3D Realms Site: Wolfenstein 3D",
+      "publisher": "3D Realms, copia su frag-net.com",
+      "url": "https://www.frag-net.com/past/www.3drealms.com/wolf3d/index.html",
+      "source_type": "pagina del publisher fuori tema, conservata in archivio",
+      "locator": "Titolo, descrizione e data di uscita del gioco trattato",
+      "finding": "Tratta Wolfenstein 3D e la sua uscita del 1992; non documenta Mystery House.",
+      "role": "Fonte verificata come estranea alla voce Mystery House."
+    },
+    {
+      "source_id": "pacman_official_history",
+      "title": "HISTORY — The Official Site for PAC-MAN",
+      "publisher": "Bandai Namco Entertainment",
+      "url": "https://www.pacman.com/en/history/",
+      "source_type": "Cronologia ufficiale del titolare della serie",
+      "locator": "1980, HAPPY BIRTHDAY! e US Release",
+      "finding": "Primo focus test il 22 maggio; uscita al pubblico giapponese in luglio; arrivo negli Stati Uniti in ottobre dello stesso anno. Non fornisce un giorno di uscita commerciale."
+    }
+  ],
+  "bibliographic_corrections": [
+    {
+      "entry_id": "daily-02-02",
+      "status": "verified_replacements_recorded",
+      "application_pending": true,
+      "problem": "Due riferimenti ereditati documentano Persona 3 Reload, non Frogger.",
+      "incorrect_as_supporting_source_ids": [
+        "frogger_wrong_atlus_url",
+        "frogger_wrong_sega_url"
+      ],
+      "replacement_source_ids": [
+        "frogger_original_manual",
+        "frogger_konami_release",
+        "frogger_sega_databus",
+        "frogger_finalist_2026"
+      ],
+      "action": "Usare le fonti pertinenti nella bibliografia operativa; conservare gli URL originari nel registro di provenienza.",
+      "pending_scope": "Solo integrazione della bibliografia nel catalogo; riferimenti corretti già conservati qui."
+    },
+    {
+      "entry_id": "daily-05-05",
+      "status": "verified_replacements_recorded",
+      "application_pending": true,
+      "problem": "Due riferimenti ereditati documentano Wolfenstein 3D, non Mystery House.",
+      "incorrect_as_supporting_source_ids": [
+        "mh_wrong_wolf3d_repository",
+        "mh_wrong_wolf3d_page"
+      ],
+      "replacement_source_ids": [
+        "mh_general_author_archive",
+        "mh_roberta_catalog",
+        "mh_micro_ad"
+      ],
+      "action": "Usare le fonti pertinenti nella bibliografia operativa; conservare gli URL originari nel registro di provenienza.",
+      "pending_scope": "Solo integrazione della bibliografia nel catalogo; riferimenti corretti già conservati qui."
+    },
+    {
+      "entry_id": "zx-spectrum",
+      "feature_id": "feature-spectrum-bedroom-networks",
+      "status": "verified_replacements_recorded",
+      "application_pending": true,
+      "problem": "La precedente attribuzione dell’intervista a Bob Pape non identificava l’intervistatore.",
+      "source_ids": [
+        "pape_1997"
+      ],
+      "action": "Indicare Philip Bee come intervistatore, novembre 1997 come data e mantenere l’attribuzione del copyright a Philip Bee e Bob Pape.",
+      "pending_scope": "Solo integrazione della bibliografia nel catalogo; riferimenti corretti già conservati qui."
+    },
+    {
+      "entry_id": "workbook-02-03-ms-pac-man",
+      "status": "verified_replacements_recorded",
+      "application_pending": true,
+      "problem": "Il rinvio secondario alla notizia di Play Meter indicava pagina 83.",
+      "source_ids": [
+        "playmeter_feb1982"
+      ],
+      "action": "Correggere il locator a pagina 84 del numero del 15 febbraio 1982; foglio digitale n99.",
+      "pending_scope": "Solo integrazione della bibliografia nel catalogo; riferimenti corretti già conservati qui."
+    }
+  ],
+  "application_protocol": [
+    "Correzioni applicate e controllate in en, it, fr, de, es; ID, numero e ordine delle card invariati.",
+    "Nove issues fattuali nei nuovi lotti e due di Mystery House 016 sono chiusi dopo verifica; le richieste di ampliamento sono separate.",
+    "Date e fonti pronte per l’integrazione; INPUT, TEMPLATE, catalogo e media invariati.",
+    "Il report contiene il task per proseguire il riesame degli issues storici fuori da questo ambito."
+  ],
+  "unresolved_factual_questions_in_listed_scope": [],
+  "changes_made_by_this_step": {
+    "input_modified": false,
+    "template_modified": false,
+    "catalog_modified": false,
+    "editorial_outputs_modified": true,
+    "new_batches": [
+      "017-catalog",
+      "018-catalog"
+    ],
+    "previous_output_revision": "016-catalog: solo main:0 di Mystery House nelle cinque lingue e due issues risolti."
+  },
+  "application_pending_definition": "Verifica e correzioni testuali concluse. Le proposte di metadati e bibliografia hanno un proprio stato di integrazione: INPUT e catalogo restano invariati.",
+  "applied_text_edits": [
+    {
+      "entry_id": "workbook-07-09-donkey-kong",
+      "feature_id": null,
+      "card_id": "main:0",
+      "lang": "en",
+      "field": "text",
+      "before": "Shigeru Miyamoto designed Donkey Kong, Nintendo’s 1981 arcade platform-action game. Its limited Japanese release began on 9 July. Jumpman, later known as Mario, climbs through four screens to rescue Lady from the gorilla. Ramps, barrels, conveyors and elevators change the movement required in each stage, while character animation connects the obstacles to the rescue story.",
+      "after": "Shigeru Miyamoto designed Donkey Kong, Nintendo’s 1981 arcade platform-action game. It was first published in Japan on 9 July. Jumpman, later known as Mario, climbs through four screens to rescue Lady, later named Pauline, from the gorilla. Ramps, barrels, conveyors and elevators change the movement required in each stage, while character animation connects the obstacles to the rescue story.",
+      "source_ids": [
+        "dk_release_court",
+        "dk_identity_nintendo"
+      ],
+      "reason": "Data e identità riscontrate; la fonte giudiziaria attesta la prima pubblicazione, senza quantificare o qualificare una distribuzione limitata.",
+      "output_file": "017-catalog/OUTPUT-017-catalog.json"
+    },
+    {
+      "entry_id": "workbook-07-09-donkey-kong",
+      "feature_id": null,
+      "card_id": "main:0",
+      "lang": "it",
+      "field": "text",
+      "before": "Shigeru Miyamoto progettò Donkey Kong, il gioco arcade d’azione e piattaforme di Nintendo del 1981. La distribuzione iniziale limitata in Giappone cominciò il 9 luglio. Jumpman, in seguito noto come Mario, risale quattro schermate per salvare Lady dal gorilla. Rampe, barili, nastri trasportatori e ascensori richiedono movimenti diversi in ogni quadro; le animazioni dei personaggi legano gli ostacoli alla storia del salvataggio.",
+      "after": "Shigeru Miyamoto progettò Donkey Kong, il gioco arcade d’azione e piattaforme di Nintendo del 1981. La prima pubblicazione in Giappone risale al 9 luglio. Jumpman, in seguito noto come Mario, risale quattro schermate per salvare dal gorilla Lady, il personaggio poi chiamato Pauline. Rampe, barili, nastri trasportatori e ascensori richiedono movimenti diversi in ogni quadro; le animazioni dei personaggi legano gli ostacoli alla storia del salvataggio.",
+      "source_ids": [
+        "dk_release_court",
+        "dk_identity_nintendo"
+      ],
+      "reason": "Data e identità riscontrate; la fonte giudiziaria attesta la prima pubblicazione, senza quantificare o qualificare una distribuzione limitata.",
+      "output_file": "017-catalog/OUTPUT-017-catalog.json"
+    },
+    {
+      "entry_id": "workbook-07-09-donkey-kong",
+      "feature_id": null,
+      "card_id": "main:0",
+      "lang": "fr",
+      "field": "text",
+      "before": "Shigeru Miyamoto conçut Donkey Kong, le jeu d’action et de plateformes de Nintendo sorti en arcade en 1981. Au Japon, une première diffusion limitée débuta le 9 juillet. Jumpman, connu par la suite sous le nom de Mario, gravit quatre écrans pour délivrer Lady du gorille. Rampes, tonneaux, tapis roulants et ascenseurs demandent des mouvements différents à chaque étape ; les animations des personnages relient ces obstacles à l’histoire du sauvetage.",
+      "after": "Shigeru Miyamoto conçut Donkey Kong, le jeu d’action et de plateformes de Nintendo sorti en arcade en 1981. Sa première publication au Japon date du 9 juillet. Jumpman, connu par la suite sous le nom de Mario, gravit quatre écrans pour délivrer du gorille Lady, le personnage qui prendra ensuite le nom de Pauline. Rampes, tonneaux, tapis roulants et ascenseurs demandent des mouvements différents à chaque étape ; les animations des personnages relient ces obstacles à l’histoire du sauvetage.",
+      "source_ids": [
+        "dk_release_court",
+        "dk_identity_nintendo"
+      ],
+      "reason": "Data e identità riscontrate; la fonte giudiziaria attesta la prima pubblicazione, senza quantificare o qualificare una distribuzione limitata.",
+      "output_file": "017-catalog/OUTPUT-017-catalog.json"
+    },
+    {
+      "entry_id": "workbook-07-09-donkey-kong",
+      "feature_id": null,
+      "card_id": "main:0",
+      "lang": "de",
+      "field": "text",
+      "before": "Shigeru Miyamoto entwarf Donkey Kong, Nintendos Arcade-Jump-’n’-Run von 1981. In Japan erschien es ab dem 9. Juli zunächst in begrenztem Umfang. Jumpman, später als Mario bekannt, klettert durch vier Bildschirme, um Lady aus der Gewalt des Gorillas zu befreien. Rampen, Fässer, Förderbänder und Aufzüge verlangen in jeder Stufe andere Bewegungen. Die Animationen der Figuren verbinden diese Hindernisse mit der Rettungsgeschichte.",
+      "after": "Shigeru Miyamoto entwarf Donkey Kong, Nintendos Arcade-Jump-’n’-Run von 1981. In Japan wurde es erstmals am 9. Juli veröffentlicht. Jumpman, später als Mario bekannt, klettert durch vier Bildschirme, um Lady, die später Pauline genannt wurde, aus der Gewalt des Gorillas zu befreien. Rampen, Fässer, Förderbänder und Aufzüge verlangen in jeder Stufe andere Bewegungen. Die Animationen der Figuren verbinden diese Hindernisse mit der Rettungsgeschichte.",
+      "source_ids": [
+        "dk_release_court",
+        "dk_identity_nintendo"
+      ],
+      "reason": "Data e identità riscontrate; la fonte giudiziaria attesta la prima pubblicazione, senza quantificare o qualificare una distribuzione limitata.",
+      "output_file": "017-catalog/OUTPUT-017-catalog.json"
+    },
+    {
+      "entry_id": "workbook-07-09-donkey-kong",
+      "feature_id": null,
+      "card_id": "main:0",
+      "lang": "es",
+      "field": "text",
+      "before": "Shigeru Miyamoto diseñó Donkey Kong, el juego de acción y plataformas que Nintendo lanzó en recreativas en 1981. Su distribución inicial limitada en Japón comenzó el 9 de julio. Jumpman, conocido más adelante como Mario, asciende por cuatro pantallas para rescatar a Lady del gorila. Rampas, barriles, cintas transportadoras y ascensores exigen movimientos distintos en cada fase; las animaciones de los personajes relacionan estos obstáculos con la historia del rescate.",
+      "after": "Shigeru Miyamoto diseñó Donkey Kong, el juego de acción y plataformas que Nintendo lanzó en recreativas en 1981. Se publicó por primera vez en Japón el 9 de julio. Jumpman, conocido más adelante como Mario, asciende por cuatro pantallas para rescatar del gorila a Lady, que después recibiría el nombre de Pauline. Rampas, barriles, cintas transportadoras y ascensores exigen movimientos distintos en cada fase; las animaciones de los personajes relacionan estos obstáculos con la historia del rescate.",
+      "source_ids": [
+        "dk_release_court",
+        "dk_identity_nintendo"
+      ],
+      "reason": "Data e identità riscontrate; la fonte giudiziaria attesta la prima pubblicazione, senza quantificare o qualificare una distribuzione limitata.",
+      "output_file": "017-catalog/OUTPUT-017-catalog.json"
+    },
+    {
+      "entry_id": "workbook-07-09-donkey-kong",
+      "feature_id": null,
+      "card_id": "main:1",
+      "lang": "en",
+      "field": "text",
+      "before": "The team restructured Radar Scope’s circuit board for Donkey Kong. Originally influenced by Namco’s Galaxian hardware, it had been designed to handle many fast-moving enemies. Donkey Kong had different requirements, so unnecessary functions were removed and the board reduced in size. Gameplay and graphics were reworked for updated ROM chips, while the existing CPU, sound hardware and monitor remained. The character set, scoreboard, upper HUD and font stayed almost identical to Radar Scope’s, with changes to the palette.\n\nThe supplied technical account gives the graphics memory capacity as 128 foreground sprites of 16 × 16 pixels and 256 background tiles of 8 × 8 pixels. Mario and each moving object use one sprite; the taller Pauline uses two, and the larger Donkey Kong uses six.",
+      "after": "The team restructured Radar Scope’s circuit board for Donkey Kong. Originally influenced by Namco’s Galaxian hardware, it had been designed to handle many fast-moving enemies. Donkey Kong had different requirements, so unnecessary functions were removed and the board reduced in size. Gameplay and graphics were reworked for updated ROM chips, while the existing CPU, sound hardware and monitor remained. The character set, scoreboard, upper HUD and font stayed almost identical to Radar Scope’s, with changes to the palette.\n\nThe graphics ROMs store 128 sprite patterns of 16 × 16 pixels and 256 background tile patterns of 8 × 8 pixels. Mario and each moving object use one sprite; the taller Pauline uses two, and the larger Donkey Kong uses six.",
+      "source_ids": [
+        "dk_pattern_rom_testimony"
+      ],
+      "reason": "Precisazione del tipo di dato memorizzato; eliminato il rinvio a una fonte dubbia dal testo museale.",
+      "output_file": "017-catalog/OUTPUT-017-catalog.json"
+    },
+    {
+      "entry_id": "workbook-07-09-donkey-kong",
+      "feature_id": null,
+      "card_id": "main:1",
+      "lang": "it",
+      "field": "text",
+      "before": "Il gruppo modificò la scheda di Radar Scope per usarla in Donkey Kong. Ispirato in origine all’hardware di Galaxian di Namco, quel sistema era stato progettato per gestire molti nemici veloci. Donkey Kong aveva esigenze diverse: furono eliminate le funzioni superflue e ridotte le dimensioni della scheda. Il gioco e la grafica vennero rielaborati per nuove ROM, mantenendo CPU, hardware sonoro e monitor esistenti. Il repertorio dei caratteri, il tabellone dei punteggi, le indicazioni nella parte alta dello schermo e il font restarono quasi identici a quelli di Radar Scope, con differenze nella palette.\n\nIl resoconto tecnico fornito indica una capacità di memoria grafica di 128 sprite in primo piano da 16 × 16 pixel e 256 tessere di sfondo da 8 × 8 pixel. Mario e ciascun oggetto mobile usano un solo sprite; Pauline, più alta, ne usa due, mentre il più grande Donkey Kong ne richiede sei.",
+      "after": "Il gruppo modificò la scheda di Radar Scope per usarla in Donkey Kong. Ispirato in origine all’hardware di Galaxian di Namco, quel sistema era stato progettato per gestire molti nemici veloci. Donkey Kong aveva esigenze diverse: furono eliminate le funzioni superflue e ridotte le dimensioni della scheda. Il gioco e la grafica vennero rielaborati per nuove ROM, mantenendo CPU, hardware sonoro e monitor esistenti. Il repertorio dei caratteri, il tabellone dei punteggi, le indicazioni nella parte alta dello schermo e il font restarono quasi identici a quelli di Radar Scope, con differenze nella palette.\n\nLe ROM grafiche contengono 128 modelli di sprite da 16 × 16 pixel e 256 modelli di tessere di sfondo da 8 × 8 pixel. Mario e ciascun oggetto mobile usano un solo sprite; Pauline, più alta, ne usa due, mentre il più grande Donkey Kong ne richiede sei.",
+      "source_ids": [
+        "dk_pattern_rom_testimony"
+      ],
+      "reason": "Precisazione del tipo di dato memorizzato; eliminato il rinvio a una fonte dubbia dal testo museale.",
+      "output_file": "017-catalog/OUTPUT-017-catalog.json"
+    },
+    {
+      "entry_id": "workbook-07-09-donkey-kong",
+      "feature_id": null,
+      "card_id": "main:1",
+      "lang": "fr",
+      "field": "text",
+      "before": "L’équipe remania la carte de Radar Scope pour Donkey Kong. Inspiré à l’origine du matériel de Galaxian de Namco, ce système avait été conçu pour gérer de nombreux ennemis rapides. Donkey Kong avait d’autres besoins : les fonctions inutiles furent retirées et la taille de la carte réduite. Le jeu et les graphismes furent retravaillés pour de nouvelles puces ROM, tandis que le processeur, le matériel sonore et le moniteur existants furent conservés. Le jeu de caractères, le tableau des scores, les indications en haut de l’écran et la police restèrent presque identiques à ceux de Radar Scope, avec des différences de palette.\n\nLe descriptif technique fourni indique une capacité de mémoire graphique de 128 sprites de premier plan de 16 × 16 pixels et de 256 tuiles de fond de 8 × 8 pixels. Mario et chaque objet mobile utilisent un sprite ; Pauline, plus grande, en utilise deux, et Donkey Kong, plus imposant, en demande six.",
+      "after": "L’équipe remania la carte de Radar Scope pour Donkey Kong. Inspiré à l’origine du matériel de Galaxian de Namco, ce système avait été conçu pour gérer de nombreux ennemis rapides. Donkey Kong avait d’autres besoins : les fonctions inutiles furent retirées et la taille de la carte réduite. Le jeu et les graphismes furent retravaillés pour de nouvelles puces ROM, tandis que le processeur, le matériel sonore et le moniteur existants furent conservés. Le jeu de caractères, le tableau des scores, les indications en haut de l’écran et la police restèrent presque identiques à ceux de Radar Scope, avec des différences de palette.\n\nLes ROM graphiques contiennent 128 motifs de sprites de 16 × 16 pixels et 256 motifs de tuiles de fond de 8 × 8 pixels. Mario et chaque objet mobile utilisent un sprite ; Pauline, plus grande, en utilise deux, et Donkey Kong, plus imposant, en demande six.",
+      "source_ids": [
+        "dk_pattern_rom_testimony"
+      ],
+      "reason": "Precisazione del tipo di dato memorizzato; eliminato il rinvio a una fonte dubbia dal testo museale.",
+      "output_file": "017-catalog/OUTPUT-017-catalog.json"
+    },
+    {
+      "entry_id": "workbook-07-09-donkey-kong",
+      "feature_id": null,
+      "card_id": "main:1",
+      "lang": "de",
+      "field": "text",
+      "before": "Das Team baute die Platine von Radar Scope für Donkey Kong um. Ihre ursprüngliche Gestaltung hatte sich an Namcos Galaxian-Hardware orientiert und war auf viele schnell bewegte Gegner ausgelegt. Donkey Kong stellte andere Anforderungen: Unnötige Funktionen wurden entfernt und die Platine verkleinert. Spielablauf und Grafik wurden für neue ROM-Chips überarbeitet; CPU, Soundhardware und Monitor blieben erhalten. Zeichensatz, Punkteanzeige, Anzeigen am oberen Bildschirmrand und Schriftbild blieben gegenüber Radar Scope nahezu unverändert; die Farbpalette wurde angepasst.\n\nDer vorliegende technische Bericht nennt eine Grafikspeicherkapazität für 128 Vordergrund-Sprites mit je 16 × 16 Pixeln und 256 Hintergrundkacheln mit je 8 × 8 Pixeln. Mario und jedes bewegte Objekt verwenden ein Sprite. Die größere Pauline verwendet zwei, Donkey Kong mit seiner größeren Gestalt sechs.",
+      "after": "Das Team baute die Platine von Radar Scope für Donkey Kong um. Ihre ursprüngliche Gestaltung hatte sich an Namcos Galaxian-Hardware orientiert und war auf viele schnell bewegte Gegner ausgelegt. Donkey Kong stellte andere Anforderungen: Unnötige Funktionen wurden entfernt und die Platine verkleinert. Spielablauf und Grafik wurden für neue ROM-Chips überarbeitet; CPU, Soundhardware und Monitor blieben erhalten. Zeichensatz, Punkteanzeige, Anzeigen am oberen Bildschirmrand und Schriftbild blieben gegenüber Radar Scope nahezu unverändert; die Farbpalette wurde angepasst.\n\nDie Grafik-ROMs speichern 128 Sprite-Muster mit je 16 × 16 Pixeln und 256 Muster für Hintergrundkacheln mit je 8 × 8 Pixeln. Mario und jedes bewegte Objekt verwenden ein Sprite. Die größere Pauline verwendet zwei, Donkey Kong mit seiner größeren Gestalt sechs.",
+      "source_ids": [
+        "dk_pattern_rom_testimony"
+      ],
+      "reason": "Precisazione del tipo di dato memorizzato; eliminato il rinvio a una fonte dubbia dal testo museale.",
+      "output_file": "017-catalog/OUTPUT-017-catalog.json"
+    },
+    {
+      "entry_id": "workbook-07-09-donkey-kong",
+      "feature_id": null,
+      "card_id": "main:1",
+      "lang": "es",
+      "field": "text",
+      "before": "El equipo modificó la placa de Radar Scope para Donkey Kong. Inspirada originalmente en el hardware de Galaxian de Namco, estaba diseñada para manejar muchos enemigos que se movían a gran velocidad. Donkey Kong tenía otras necesidades: se eliminaron funciones innecesarias y se redujo el tamaño de la placa. El juego y los gráficos se reelaboraron para nuevos chips ROM, conservando la CPU, el hardware de sonido y el monitor existentes. El conjunto de caracteres, el marcador, las indicaciones de la parte superior de la pantalla y la tipografía siguieron siendo casi idénticos a los de Radar Scope, con diferencias en la paleta.\n\nLa descripción técnica proporcionada indica una capacidad de memoria gráfica de 128 sprites en primer plano de 16 × 16 píxeles y 256 bloques gráficos de fondo de 8 × 8 píxeles. Mario y cada objeto móvil usan un sprite; Pauline, más alta, usa dos, y Donkey Kong, de mayor tamaño, necesita seis.",
+      "after": "El equipo modificó la placa de Radar Scope para Donkey Kong. Inspirada originalmente en el hardware de Galaxian de Namco, estaba diseñada para manejar muchos enemigos que se movían a gran velocidad. Donkey Kong tenía otras necesidades: se eliminaron funciones innecesarias y se redujo el tamaño de la placa. El juego y los gráficos se reelaboraron para nuevos chips ROM, conservando la CPU, el hardware de sonido y el monitor existentes. El conjunto de caracteres, el marcador, las indicaciones de la parte superior de la pantalla y la tipografía siguieron siendo casi idénticos a los de Radar Scope, con diferencias en la paleta.\n\nLas ROM gráficas almacenan 128 patrones de sprites de 16 × 16 píxeles y 256 patrones de bloques de fondo de 8 × 8 píxeles. Mario y cada objeto móvil usan un sprite; Pauline, más alta, usa dos, y Donkey Kong, de mayor tamaño, necesita seis.",
+      "source_ids": [
+        "dk_pattern_rom_testimony"
+      ],
+      "reason": "Precisazione del tipo di dato memorizzato; eliminato il rinvio a una fonte dubbia dal testo museale.",
+      "output_file": "017-catalog/OUTPUT-017-catalog.json"
+    },
+    {
+      "entry_id": "workbook-07-09-donkey-kong",
+      "feature_id": null,
+      "card_id": "main:2",
+      "lang": "en",
+      "field": "text",
+      "before": "The four single-screen stages mark heights of 25, 50, 75 and 100 metres in the structure Donkey Kong has climbed. In the first, Mario scales a construction site of crooked girders and ladders, jumping over or hammering the barrels and oil drums described in the source as objects thrown by Donkey Kong. The second stage is a five-storey structure of conveyor belts carrying cement pans.\n\nIn the third, the player rides elevators while avoiding bouncing springs. The final stage requires Mario to remove eight rivets from the platforms supporting Donkey Kong. The gorilla falls, and the hero is reunited with Pauline. Together, the four stages form one level.",
+      "after": "The four single-screen stages mark heights of 25, 50, 75 and 100 metres in the structure Donkey Kong has climbed. In the first, Mario scales a construction site of crooked girders and ladders, jumping over or hammering the barrels thrown by Donkey Kong. The oil drum stands at the base of the structure. The second stage is a five-storey structure of conveyor belts carrying cement pans.\n\nIn the third, the player rides elevators while avoiding bouncing springs. The final stage requires Mario to remove eight rivets from the platforms supporting Donkey Kong. The gorilla falls, and the hero is reunited with Pauline. Together, the four stages form one level.",
+      "source_ids": [
+        "dk_barrels_nintendo",
+        "dk_25m_official_image"
+      ],
+      "reason": "Distinti i barili lanciati e il fusto d’olio collocato in basso. Rimosso il commento sulla fonte dal testo per il lettore.",
+      "output_file": "017-catalog/OUTPUT-017-catalog.json"
+    },
+    {
+      "entry_id": "workbook-07-09-donkey-kong",
+      "feature_id": null,
+      "card_id": "main:2",
+      "lang": "it",
+      "field": "text",
+      "before": "I quattro quadri a schermata singola indicano le altezze di 25, 50, 75 e 100 metri della struttura risalita da Donkey Kong. Nel primo Mario si arrampica su un cantiere di travi inclinate e scale, saltando o colpendo con il martello barili e fusti d’olio, che la fonte descrive come oggetti lanciati dal gorilla. Il secondo quadro è una struttura di cinque piani con nastri trasportatori che spostano vasche di cemento.\n\nNel terzo si usano gli ascensori evitando molle che rimbalzano. Nell’ultimo Mario deve togliere otto rivetti dalle piattaforme che sostengono Donkey Kong: il gorilla cade e l’eroe si ricongiunge a Pauline. I quattro quadri, nel loro insieme, formano un livello.",
+      "after": "I quattro quadri a schermata singola indicano le altezze di 25, 50, 75 e 100 metri della struttura risalita da Donkey Kong. Nel primo Mario si arrampica su un cantiere di travi inclinate e scale, saltando i barili lanciati da Donkey Kong o colpendoli con il martello. Il fusto d’olio si trova alla base della struttura. Il secondo quadro è una struttura di cinque piani con nastri trasportatori che spostano vasche di cemento.\n\nNel terzo si usano gli ascensori evitando molle che rimbalzano. Nell’ultimo Mario deve togliere otto rivetti dalle piattaforme che sostengono Donkey Kong: il gorilla cade e l’eroe si ricongiunge a Pauline. I quattro quadri, nel loro insieme, formano un livello.",
+      "source_ids": [
+        "dk_barrels_nintendo",
+        "dk_25m_official_image"
+      ],
+      "reason": "Distinti i barili lanciati e il fusto d’olio collocato in basso. Rimosso il commento sulla fonte dal testo per il lettore.",
+      "output_file": "017-catalog/OUTPUT-017-catalog.json"
+    },
+    {
+      "entry_id": "workbook-07-09-donkey-kong",
+      "feature_id": null,
+      "card_id": "main:2",
+      "lang": "fr",
+      "field": "text",
+      "before": "Les quatre étapes à écran unique correspondent aux hauteurs de 25, 50, 75 et 100 mètres dans la structure gravie par Donkey Kong. Dans la première, Mario monte dans un chantier fait de poutres inclinées et d’échelles, en sautant par-dessus des tonneaux et des bidons d’huile ou en les frappant au marteau. La source décrit ces objets comme lancés par Donkey Kong. La deuxième étape comporte cinq étages de tapis roulants transportant des bacs de ciment.\n\nDans la troisième, le joueur emprunte des ascenseurs tout en évitant des ressorts qui rebondissent. La dernière demande à Mario de retirer huit rivets des plateformes soutenant Donkey Kong. Le gorille tombe et le héros retrouve Pauline. Ces quatre étapes constituent ensemble un niveau.",
+      "after": "Les quatre étapes à écran unique correspondent aux hauteurs de 25, 50, 75 et 100 mètres dans la structure gravie par Donkey Kong. Dans la première, Mario monte dans un chantier fait de poutres inclinées et d’échelles, en sautant par-dessus les tonneaux lancés par Donkey Kong ou en les frappant au marteau. Le bidon d’huile se trouve au pied de la structure. La deuxième étape comporte cinq étages de tapis roulants transportant des bacs de ciment.\n\nDans la troisième, le joueur emprunte des ascenseurs tout en évitant des ressorts qui rebondissent. La dernière demande à Mario de retirer huit rivets des plateformes soutenant Donkey Kong. Le gorille tombe et le héros retrouve Pauline. Ces quatre étapes constituent ensemble un niveau.",
+      "source_ids": [
+        "dk_barrels_nintendo",
+        "dk_25m_official_image"
+      ],
+      "reason": "Distinti i barili lanciati e il fusto d’olio collocato in basso. Rimosso il commento sulla fonte dal testo per il lettore.",
+      "output_file": "017-catalog/OUTPUT-017-catalog.json"
+    },
+    {
+      "entry_id": "workbook-07-09-donkey-kong",
+      "feature_id": null,
+      "card_id": "main:2",
+      "lang": "de",
+      "field": "text",
+      "before": "Die vier Stufen mit jeweils einem Bildschirm stehen für 25, 50, 75 und 100 Meter Höhe in dem Bauwerk, das Donkey Kong erklommen hat. In der ersten steigt Mario über schräge Träger und Leitern einer Baustelle nach oben. Dabei springt er über Fässer und Ölfässer oder schlägt sie mit einem Hammer. Der Vorlage zufolge wirft Donkey Kong diese Gegenstände. Die zweite Stufe besteht aus fünf Stockwerken mit Förderbändern, auf denen Zementwannen transportiert werden.\n\nIn der dritten fährt der Spieler mit Aufzügen und weicht hüpfenden Federn aus. In der letzten muss Mario acht Nieten aus den Plattformen entfernen, die Donkey Kong tragen. Der Gorilla fällt, und der Held findet wieder mit Pauline zusammen. Gemeinsam bilden die vier Stufen einen Level.",
+      "after": "Die vier Stufen mit jeweils einem Bildschirm stehen für 25, 50, 75 und 100 Meter Höhe in dem Bauwerk, das Donkey Kong erklommen hat. In der ersten steigt Mario über schräge Träger und Leitern einer Baustelle nach oben. Dabei springt er über die von Donkey Kong geworfenen Fässer oder zerschlägt sie mit einem Hammer. Das Ölfass steht am Fuß des Bauwerks. Die zweite Stufe besteht aus fünf Stockwerken mit Förderbändern, auf denen Zementwannen transportiert werden.\n\nIn der dritten fährt der Spieler mit Aufzügen und weicht hüpfenden Federn aus. In der letzten muss Mario acht Nieten aus den Plattformen entfernen, die Donkey Kong tragen. Der Gorilla fällt, und der Held findet wieder mit Pauline zusammen. Gemeinsam bilden die vier Stufen einen Level.",
+      "source_ids": [
+        "dk_barrels_nintendo",
+        "dk_25m_official_image"
+      ],
+      "reason": "Distinti i barili lanciati e il fusto d’olio collocato in basso. Rimosso il commento sulla fonte dal testo per il lettore.",
+      "output_file": "017-catalog/OUTPUT-017-catalog.json"
+    },
+    {
+      "entry_id": "workbook-07-09-donkey-kong",
+      "feature_id": null,
+      "card_id": "main:2",
+      "lang": "es",
+      "field": "text",
+      "before": "Las cuatro fases de una sola pantalla representan las alturas de 25, 50, 75 y 100 metros de la estructura a la que ha subido Donkey Kong. En la primera, Mario asciende por una obra de vigas inclinadas y escaleras, saltando sobre barriles y bidones de aceite o golpeándolos con un martillo. La fuente describe estos objetos como lanzados por Donkey Kong. La segunda fase es una estructura de cinco plantas con cintas transportadoras que llevan recipientes con cemento.\n\nEn la tercera se utilizan ascensores mientras se esquivan muelles que rebotan. La última exige que Mario retire ocho remaches de las plataformas que sostienen a Donkey Kong: el gorila cae y el héroe se reúne con Pauline. Las cuatro fases forman un nivel.",
+      "after": "Las cuatro fases de una sola pantalla representan las alturas de 25, 50, 75 y 100 metros de la estructura a la que ha subido Donkey Kong. En la primera, Mario asciende por una obra de vigas inclinadas y escaleras, saltando sobre los barriles que lanza Donkey Kong o golpeándolos con un martillo. El bidón de aceite se encuentra al pie de la estructura. La segunda fase es una estructura de cinco plantas con cintas transportadoras que llevan recipientes con cemento.\n\nEn la tercera se utilizan ascensores mientras se esquivan muelles que rebotan. La última exige que Mario retire ocho remaches de las plataformas que sostienen a Donkey Kong: el gorila cae y el héroe se reúne con Pauline. Las cuatro fases forman un nivel.",
+      "source_ids": [
+        "dk_barrels_nintendo",
+        "dk_25m_official_image"
+      ],
+      "reason": "Distinti i barili lanciati e il fusto d’olio collocato in basso. Rimosso il commento sulla fonte dal testo per il lettore.",
+      "output_file": "017-catalog/OUTPUT-017-catalog.json"
+    },
+    {
+      "entry_id": "daily-02-02",
+      "feature_id": null,
+      "card_id": "main:0",
+      "lang": "en",
+      "field": "text",
+      "before": "Konami developed Frogger for arcades in 1981, with Sega publishing it and Sega/Gremlin releasing it in North America. The player must guide five frogs to their homes, first dodging vehicles on a busy road, then crossing a river by hopping onto floating logs, turtles and alligators.",
+      "after": "Konami developed Frogger for arcades in 1981, with Sega publishing it and Sega/Gremlin releasing it in North America. The player must guide five frogs to their homes, first dodging vehicles on a busy road, then crossing a river by hopping onto floating logs and the backs of turtles and alligators.",
+      "source_ids": [
+        "frogger_original_manual"
+      ],
+      "reason": "Chiarito il punto di appoggio senza introdurre altre meccaniche.",
+      "output_file": "017-catalog/OUTPUT-017-catalog.json"
+    },
+    {
+      "entry_id": "daily-02-02",
+      "feature_id": null,
+      "card_id": "main:0",
+      "lang": "it",
+      "field": "text",
+      "before": "Konami sviluppò Frogger per le sale giochi nel 1981; Sega lo pubblicò e Sega/Gremlin lo distribuì in Nord America. Bisogna portare a casa cinque rane, prima schivando i veicoli su una strada trafficata, poi attraversando un fiume saltando su tronchi galleggianti, tartarughe e alligatori.",
+      "after": "Konami sviluppò Frogger per le sale giochi nel 1981; Sega lo pubblicò e Sega/Gremlin lo distribuì in Nord America. Bisogna portare a casa cinque rane, prima schivando i veicoli su una strada trafficata, poi attraversando un fiume saltando su tronchi galleggianti e sul dorso di tartarughe e alligatori.",
+      "source_ids": [
+        "frogger_original_manual"
+      ],
+      "reason": "Chiarito il punto di appoggio senza introdurre altre meccaniche.",
+      "output_file": "017-catalog/OUTPUT-017-catalog.json"
+    },
+    {
+      "entry_id": "daily-02-02",
+      "feature_id": null,
+      "card_id": "main:0",
+      "lang": "fr",
+      "field": "text",
+      "before": "Konami développa Frogger pour l’arcade en 1981 ; Sega le publia, et Sega/Gremlin assura sa sortie en Amérique du Nord. Le joueur doit ramener cinq grenouilles chez elles, en évitant d’abord les véhicules d’une route très fréquentée, puis en traversant une rivière par des sauts sur des troncs flottants, des tortues et des alligators.",
+      "after": "Konami développa Frogger pour l’arcade en 1981 ; Sega le publia, et Sega/Gremlin assura sa sortie en Amérique du Nord. Le joueur doit ramener cinq grenouilles chez elles, en évitant d’abord les véhicules d’une route très fréquentée, puis en traversant une rivière par des sauts sur des troncs flottants et sur le dos des tortues et des alligators.",
+      "source_ids": [
+        "frogger_original_manual"
+      ],
+      "reason": "Chiarito il punto di appoggio senza introdurre altre meccaniche.",
+      "output_file": "017-catalog/OUTPUT-017-catalog.json"
+    },
+    {
+      "entry_id": "daily-02-02",
+      "feature_id": null,
+      "card_id": "main:0",
+      "lang": "de",
+      "field": "text",
+      "before": "Konami entwickelte Frogger 1981 für Spielhallen. Sega veröffentlichte es, und Sega/Gremlin brachte es in Nordamerika heraus. Der Spieler soll fünf Frösche nach Hause bringen. Zuerst weichen sie dem Verkehr auf einer belebten Straße aus, anschließend überqueren sie einen Fluss mit Sprüngen auf schwimmende Baumstämme, Schildkröten und Alligatoren.",
+      "after": "Konami entwickelte Frogger 1981 für Spielhallen. Sega veröffentlichte es, und Sega/Gremlin brachte es in Nordamerika heraus. Der Spieler soll fünf Frösche nach Hause bringen. Zuerst weichen sie dem Verkehr auf einer belebten Straße aus, anschließend überqueren sie einen Fluss mit Sprüngen auf schwimmende Baumstämme und auf den Rücken von Schildkröten und Alligatoren.",
+      "source_ids": [
+        "frogger_original_manual"
+      ],
+      "reason": "Chiarito il punto di appoggio senza introdurre altre meccaniche.",
+      "output_file": "017-catalog/OUTPUT-017-catalog.json"
+    },
+    {
+      "entry_id": "daily-02-02",
+      "feature_id": null,
+      "card_id": "main:0",
+      "lang": "es",
+      "field": "text",
+      "before": "Konami desarrolló Frogger para recreativas en 1981; Sega lo publicó y Sega/Gremlin se encargó de su lanzamiento en Norteamérica. El jugador debe llevar a casa a cinco ranas: primero esquiva los vehículos de una carretera transitada y después cruza un río saltando sobre troncos flotantes, tortugas y caimanes.",
+      "after": "Konami desarrolló Frogger para recreativas en 1981; Sega lo publicó y Sega/Gremlin se encargó de su lanzamiento en Norteamérica. El jugador debe llevar a casa a cinco ranas: primero esquiva los vehículos de una carretera transitada y después cruza un río saltando sobre troncos flotantes y sobre el lomo de tortugas y caimanes.",
+      "source_ids": [
+        "frogger_original_manual"
+      ],
+      "reason": "Chiarito il punto di appoggio senza introdurre altre meccaniche.",
+      "output_file": "017-catalog/OUTPUT-017-catalog.json"
+    },
+    {
+      "entry_id": "daily-02-02",
+      "feature_id": null,
+      "card_id": "main:1",
+      "lang": "en",
+      "field": "text",
+      "before": "Each crossing has two different halves. On the road, the frog avoids vehicles moving along horizontal lanes. At the river, touching the water costs a life, so moving logs and turtles become landing places; alligators and snakes add hazards. The same hopping movement serves a different purpose in each half: the player first avoids objects travelling across the screen, then uses moving objects to reach the far bank.",
+      "after": "Each crossing has two different halves. On the road, the frog avoids vehicles moving along horizontal lanes. At the river, touching the water costs a life, so moving logs and turtles become landing places. The frog can ride on an alligator’s back but must avoid its open mouth; touching a snake also costs a life. The same hopping movement serves a different purpose in each half: the player first avoids objects travelling across the screen, then uses moving objects to reach the far bank.",
+      "source_ids": [
+        "frogger_original_manual"
+      ],
+      "reason": "Sostituita l’apparente contraddizione con la condizione concreta documentata dal manuale arcade.",
+      "output_file": "017-catalog/OUTPUT-017-catalog.json"
+    },
+    {
+      "entry_id": "daily-02-02",
+      "feature_id": null,
+      "card_id": "main:1",
+      "lang": "it",
+      "field": "text",
+      "before": "Ogni attraversamento ha due metà diverse. Sulla strada la rana deve evitare i veicoli che percorrono corsie orizzontali. Nel fiume il contatto con l’acqua costa una vita: tronchi e tartarughe in movimento diventano quindi appoggi, mentre alligatori e serpenti aggiungono pericoli. Lo stesso salto cambia funzione fra le due metà: prima si evitano gli oggetti che attraversano lo schermo, poi li si usa per raggiungere l’altra sponda.",
+      "after": "Ogni attraversamento ha due metà diverse. Sulla strada la rana deve evitare i veicoli che percorrono corsie orizzontali. Nel fiume il contatto con l’acqua costa una vita: tronchi e tartarughe in movimento diventano quindi appoggi. Si può salire anche sul dorso di un alligatore, ma bisogna evitarne la bocca aperta; anche toccare un serpente fa perdere una vita. Lo stesso salto cambia funzione fra le due metà: prima si evitano gli oggetti che attraversano lo schermo, poi li si usa per raggiungere l’altra sponda.",
+      "source_ids": [
+        "frogger_original_manual"
+      ],
+      "reason": "Sostituita l’apparente contraddizione con la condizione concreta documentata dal manuale arcade.",
+      "output_file": "017-catalog/OUTPUT-017-catalog.json"
+    },
+    {
+      "entry_id": "daily-02-02",
+      "feature_id": null,
+      "card_id": "main:1",
+      "lang": "fr",
+      "field": "text",
+      "before": "Chaque traversée comprend deux moitiés différentes. Sur la route, la grenouille évite les véhicules circulant sur des voies horizontales. Dans la rivière, toucher l’eau fait perdre une vie : les troncs et les tortues en mouvement deviennent donc des points d’appui, tandis que les alligators et les serpents ajoutent des dangers. Le même saut change de fonction : il faut d’abord éviter ce qui traverse l’écran, puis utiliser des objets mobiles pour atteindre l’autre rive.",
+      "after": "Chaque traversée comprend deux moitiés différentes. Sur la route, la grenouille évite les véhicules circulant sur des voies horizontales. Dans la rivière, toucher l’eau fait perdre une vie : les troncs et les tortues en mouvement deviennent donc des points d’appui. La grenouille peut aussi monter sur le dos d’un alligator, mais doit éviter sa gueule ouverte ; toucher un serpent fait également perdre une vie. Le même saut change de fonction : il faut d’abord éviter ce qui traverse l’écran, puis utiliser des objets mobiles pour atteindre l’autre rive.",
+      "source_ids": [
+        "frogger_original_manual"
+      ],
+      "reason": "Sostituita l’apparente contraddizione con la condizione concreta documentata dal manuale arcade.",
+      "output_file": "017-catalog/OUTPUT-017-catalog.json"
+    },
+    {
+      "entry_id": "daily-02-02",
+      "feature_id": null,
+      "card_id": "main:1",
+      "lang": "de",
+      "field": "text",
+      "before": "Jede Überquerung hat zwei unterschiedliche Hälften. Auf der Straße muss der Frosch den Fahrzeugen in horizontalen Spuren ausweichen. Im Fluss kostet eine Berührung mit dem Wasser ein Leben. Bewegte Baumstämme und Schildkröten werden deshalb zu Landeplätzen; Alligatoren und Schlangen bringen weitere Gefahren hinzu. Derselbe Sprung dient nun einem anderen Zweck: Zuerst meidet man quer über den Bildschirm laufende Objekte, danach nutzt man bewegte Objekte, um das andere Ufer zu erreichen.",
+      "after": "Jede Überquerung hat zwei unterschiedliche Hälften. Auf der Straße muss der Frosch den Fahrzeugen in horizontalen Spuren ausweichen. Im Fluss kostet eine Berührung mit dem Wasser ein Leben. Bewegte Baumstämme und Schildkröten werden deshalb zu Landeplätzen. Auch auf dem Rücken eines Alligators kann der Frosch mitfahren, muss aber dessen geöffnetes Maul meiden. Die Berührung einer Schlange kostet ebenfalls ein Leben. Derselbe Sprung dient nun einem anderen Zweck: Zuerst meidet man quer über den Bildschirm laufende Objekte, danach nutzt man bewegte Objekte, um das andere Ufer zu erreichen.",
+      "source_ids": [
+        "frogger_original_manual"
+      ],
+      "reason": "Sostituita l’apparente contraddizione con la condizione concreta documentata dal manuale arcade.",
+      "output_file": "017-catalog/OUTPUT-017-catalog.json"
+    },
+    {
+      "entry_id": "daily-02-02",
+      "feature_id": null,
+      "card_id": "main:1",
+      "lang": "es",
+      "field": "text",
+      "before": "Cada cruce tiene dos mitades distintas. En la carretera, la rana debe evitar los vehículos que recorren carriles horizontales. En el río, tocar el agua cuesta una vida, de modo que los troncos y las tortugas en movimiento se convierten en apoyos; los caimanes y las serpientes añaden peligros. El mismo salto cumple una función diferente en cada mitad: primero se evitan los objetos que cruzan la pantalla y después se utilizan los que se mueven para alcanzar la otra orilla.",
+      "after": "Cada cruce tiene dos mitades distintas. En la carretera, la rana debe evitar los vehículos que recorren carriles horizontales. En el río, tocar el agua cuesta una vida, de modo que los troncos y las tortugas en movimiento se convierten en apoyos. La rana también puede viajar sobre el lomo de un caimán, pero debe evitar sus fauces abiertas; tocar una serpiente también cuesta una vida. El mismo salto cumple una función diferente en cada mitad: primero se evitan los objetos que cruzan la pantalla y después se utilizan los que se mueven para alcanzar la otra orilla.",
+      "source_ids": [
+        "frogger_original_manual"
+      ],
+      "reason": "Sostituita l’apparente contraddizione con la condizione concreta documentata dal manuale arcade.",
+      "output_file": "017-catalog/OUTPUT-017-catalog.json"
+    },
+    {
+      "entry_id": "daily-05-05",
+      "feature_id": null,
+      "card_id": "main:0",
+      "lang": "en",
+      "field": "text",
+      "before": "Mystery House brought a graphical adventure to the Apple II in 1980; the original account gives 5 May as its release date. Roberta Williams devised the mystery and drew its images, while Ken Williams programmed the system. Players typed commands and read responses beside line drawings of the rooms. The game started On-Line Systems’ adventure-game business, which later continued under the Sierra name.",
+      "after": "Mystery House is a graphical adventure released for the Apple II on 5 May 1980. Roberta Williams devised the mystery and drew its images, while Ken Williams programmed the system. Players typed commands and read responses beside line drawings of the rooms. The game started On-Line Systems’ adventure-game business, which later continued under the Sierra name.",
+      "source_ids": [
+        "mh_general_author_archive"
+      ],
+      "reason": "La scheda generale dell’archivio mantenuto da Ken Williams dichiara esplicitamente il giorno nel campo Release Date. Il rinvio dubitativo al racconto originale può essere rimosso.",
+      "output_file": "016-catalog/OUTPUT-016-catalog.json"
+    },
+    {
+      "entry_id": "daily-05-05",
+      "feature_id": null,
+      "card_id": "main:0",
+      "lang": "it",
+      "field": "text",
+      "before": "Mystery House è un’avventura grafica per Apple II del 1980; il racconto originale ne indica l’uscita al 5 maggio. Roberta Williams ideò il mistero e ne disegnò le immagini, mentre Ken Williams programmò il sistema. Il giocatore digitava comandi e leggeva le risposte accanto ai disegni delle stanze. Con questo gioco iniziò l’attività di On-Line Systems nel campo delle avventure, poi proseguita con il nome Sierra.",
+      "after": "Mystery House è un’avventura grafica uscita per Apple II il 5 maggio 1980. Roberta Williams ideò il mistero e ne disegnò le immagini, mentre Ken Williams programmò il sistema. Il giocatore digitava comandi e leggeva le risposte accanto ai disegni delle stanze. Con questo gioco iniziò l’attività di On-Line Systems nel campo delle avventure, poi proseguita con il nome Sierra.",
+      "source_ids": [
+        "mh_general_author_archive"
+      ],
+      "reason": "La scheda generale dell’archivio mantenuto da Ken Williams dichiara esplicitamente il giorno nel campo Release Date. Il rinvio dubitativo al racconto originale può essere rimosso.",
+      "output_file": "016-catalog/OUTPUT-016-catalog.json"
+    },
+    {
+      "entry_id": "daily-05-05",
+      "feature_id": null,
+      "card_id": "main:0",
+      "lang": "fr",
+      "field": "text",
+      "before": "Mystery House est une aventure graphique parue sur Apple II en 1980 ; le récit d’origine donne le 5 mai comme date de sortie. Roberta Williams imagina le mystère et dessina les images, tandis que Ken Williams programmait le système. Les joueurs saisissaient des commandes et lisaient les réponses à côté des dessins au trait des pièces. Avec ce titre, On-Line Systems commença à produire des jeux d’aventure, une activité poursuivie ensuite sous le nom de Sierra.",
+      "after": "Mystery House est une aventure graphique parue sur Apple II le 5 mai 1980. Roberta Williams imagina le mystère et dessina les images, tandis que Ken Williams programmait le système. Les joueurs saisissaient des commandes et lisaient les réponses à côté des dessins au trait des pièces. Avec ce titre, On-Line Systems commença à produire des jeux d’aventure, une activité poursuivie ensuite sous le nom de Sierra.",
+      "source_ids": [
+        "mh_general_author_archive"
+      ],
+      "reason": "La scheda generale dell’archivio mantenuto da Ken Williams dichiara esplicitamente il giorno nel campo Release Date. Il rinvio dubitativo al racconto originale può essere rimosso.",
+      "output_file": "016-catalog/OUTPUT-016-catalog.json"
+    },
+    {
+      "entry_id": "daily-05-05",
+      "feature_id": null,
+      "card_id": "main:0",
+      "lang": "de",
+      "field": "text",
+      "before": "Mystery House brachte 1980 ein Grafikadventure auf den Apple II; die ursprüngliche Darstellung nennt den 5. Mai als Erscheinungstermin. Roberta Williams entwarf die Geschichte und zeichnete die Bilder, während Ken Williams das System programmierte. Die Spieler tippten Befehle ein und lasen die Antworten neben Strichzeichnungen der Räume. Mit dem Spiel begann On-Line Systems sein Geschäft mit Adventures, das später unter dem Namen Sierra fortgeführt wurde.",
+      "after": "Mystery House erschien am 5. Mai 1980 als Grafikadventure für den Apple II. Roberta Williams entwarf die Geschichte und zeichnete die Bilder, während Ken Williams das System programmierte. Die Spieler tippten Befehle ein und lasen die Antworten neben Strichzeichnungen der Räume. Mit dem Spiel begann On-Line Systems sein Geschäft mit Adventures, das später unter dem Namen Sierra fortgeführt wurde.",
+      "source_ids": [
+        "mh_general_author_archive"
+      ],
+      "reason": "La scheda generale dell’archivio mantenuto da Ken Williams dichiara esplicitamente il giorno nel campo Release Date. Il rinvio dubitativo al racconto originale può essere rimosso.",
+      "output_file": "016-catalog/OUTPUT-016-catalog.json"
+    },
+    {
+      "entry_id": "daily-05-05",
+      "feature_id": null,
+      "card_id": "main:0",
+      "lang": "es",
+      "field": "text",
+      "before": "Mystery House es una aventura gráfica publicada para Apple II en 1980; el relato original señala el 5 de mayo como fecha de lanzamiento. Roberta Williams ideó el misterio y dibujó sus imágenes, mientras Ken Williams programó el sistema. Los jugadores escribían órdenes y leían respuestas junto a los dibujos lineales de las habitaciones. El juego inició el negocio de aventuras de On-Line Systems, que más adelante continuó bajo el nombre de Sierra.",
+      "after": "Mystery House es una aventura gráfica publicada para Apple II el 5 de mayo de 1980. Roberta Williams ideó el misterio y dibujó sus imágenes, mientras Ken Williams programó el sistema. Los jugadores escribían órdenes y leían respuestas junto a los dibujos lineales de las habitaciones. El juego inició el negocio de aventuras de On-Line Systems, que más adelante continuó bajo el nombre de Sierra.",
+      "source_ids": [
+        "mh_general_author_archive"
+      ],
+      "reason": "La scheda generale dell’archivio mantenuto da Ken Williams dichiara esplicitamente il giorno nel campo Release Date. Il rinvio dubitativo al racconto originale può essere rimosso.",
+      "output_file": "016-catalog/OUTPUT-016-catalog.json"
+    },
+    {
+      "entry_id": "workbook-07-09-donkey-kong",
+      "feature_id": null,
+      "card_id": "main:0",
+      "lang": "it",
+      "field": "text",
+      "before": "Shigeru Miyamoto progettò Donkey Kong, il gioco arcade d’azione e piattaforme di Nintendo del 1981. La prima pubblicazione in Giappone risale al 9 luglio. Jumpman, in seguito noto come Mario, risale quattro schermate per salvare dal gorilla Lady, il personaggio poi chiamato Pauline. Rampe, barili, nastri trasportatori e ascensori richiedono movimenti diversi in ogni quadro; le animazioni dei personaggi legano gli ostacoli alla storia del salvataggio.",
+      "after": "Shigeru Miyamoto progettò Donkey Kong, il gioco arcade d’azione e piattaforme di Nintendo del 1981. Il gioco uscì in Giappone il 9 luglio. Jumpman, in seguito noto come Mario, risale quattro schermate per salvare dal gorilla Lady, il personaggio poi chiamato Pauline. Rampe, barili, nastri trasportatori e ascensori richiedono movimenti diversi in ogni quadro; le animazioni dei personaggi legano gli ostacoli alla storia del salvataggio.",
+      "reason": "Espressione idiomatica della release già verificata.",
+      "source_ids": [
+        "dk_release_court"
+      ],
+      "output_file": "017-catalog/OUTPUT-017-catalog.json"
+    },
+    {
+      "entry_id": "workbook-07-09-donkey-kong",
+      "feature_id": null,
+      "card_id": "main:0",
+      "lang": "fr",
+      "field": "text",
+      "before": "Shigeru Miyamoto conçut Donkey Kong, le jeu d’action et de plateformes de Nintendo sorti en arcade en 1981. Sa première publication au Japon date du 9 juillet. Jumpman, connu par la suite sous le nom de Mario, gravit quatre écrans pour délivrer du gorille Lady, le personnage qui prendra ensuite le nom de Pauline. Rampes, tonneaux, tapis roulants et ascenseurs demandent des mouvements différents à chaque étape ; les animations des personnages relient ces obstacles à l’histoire du sauvetage.",
+      "after": "Shigeru Miyamoto conçut Donkey Kong, le jeu d’action et de plateformes de Nintendo sorti en arcade en 1981. Il sortit au Japon le 9 juillet. Jumpman, connu par la suite sous le nom de Mario, gravit quatre écrans pour délivrer du gorille Lady, le personnage qui prendra ensuite le nom de Pauline. Rampes, tonneaux, tapis roulants et ascenseurs demandent des mouvements différents à chaque étape ; les animations des personnages relient ces obstacles à l’histoire du sauvetage.",
+      "reason": "Espressione idiomatica della release già verificata.",
+      "source_ids": [
+        "dk_release_court"
+      ],
+      "output_file": "017-catalog/OUTPUT-017-catalog.json"
+    },
+    {
+      "entry_id": "workbook-02-03-ms-pac-man",
+      "feature_id": null,
+      "card_id": "main:0",
+      "lang": "en",
+      "field": "text",
+      "before": "Ms. Pac-Man developed from General Computer Corporation’s Crazy Otto and was released by Midway in North America in 1982. Presented to the American public on 3 February, it added different mazes, moving fruit and less predictable ghost behaviour to Pac-Man’s rules. The project began as an enhancement kit for existing cabinets before Midway made it an official sequel.",
+      "after": "Ms. Pac-Man developed from General Computer Corporation’s Crazy Otto and was released by Midway in North America in 1982. It added different mazes, moving fruit and less predictable ghost behaviour to Pac-Man’s rules. The project began as an enhancement kit for existing cabinets before Midway made it an official sequel.",
+      "reason": "La conferenza del 3 febbraio non è la release: il testo conserva l’anno commerciale documentato, 1982.",
+      "source_ids": [
+        "lat_1982",
+        "playmeter_feb1982",
+        "playmeter_oct1982",
+        "golson_2024"
+      ],
+      "output_file": "018-catalog/OUTPUT-018-catalog.json"
+    },
+    {
+      "entry_id": "workbook-02-03-ms-pac-man",
+      "feature_id": null,
+      "card_id": "main:0",
+      "lang": "it",
+      "field": "text",
+      "before": "Ms. Pac-Man nacque da Crazy Otto di General Computer Corporation e fu pubblicato da Midway in Nord America nel 1982. Presentato al pubblico americano il 3 febbraio, aggiungeva alle regole di Pac-Man labirinti diversi, frutta in movimento e fantasmi meno prevedibili. Il progetto era partito come kit per migliorare i cabinati esistenti, prima che Midway ne facesse un seguito ufficiale.",
+      "after": "Ms. Pac-Man nacque da Crazy Otto di General Computer Corporation e fu pubblicato da Midway in Nord America nel 1982. Aggiungeva alle regole di Pac-Man labirinti diversi, frutta in movimento e fantasmi meno prevedibili. Il progetto era partito come kit per migliorare i cabinati esistenti, prima che Midway ne facesse un seguito ufficiale.",
+      "reason": "La conferenza del 3 febbraio non è la release: il testo conserva l’anno commerciale documentato, 1982.",
+      "source_ids": [
+        "lat_1982",
+        "playmeter_feb1982",
+        "playmeter_oct1982",
+        "golson_2024"
+      ],
+      "output_file": "018-catalog/OUTPUT-018-catalog.json"
+    },
+    {
+      "entry_id": "workbook-02-03-ms-pac-man",
+      "feature_id": null,
+      "card_id": "main:0",
+      "lang": "fr",
+      "field": "text",
+      "before": "Issu de Crazy Otto, un projet de General Computer Corporation, Ms. Pac-Man fut publié par Midway en Amérique du Nord en 1982. Présenté au public américain le 3 février, il ajoutait aux règles de Pac-Man de nouveaux labyrinthes, des fruits mobiles et des fantômes moins prévisibles. Le projet avait commencé comme un kit d’amélioration pour les bornes existantes, avant que Midway en fasse une suite officielle.",
+      "after": "Issu de Crazy Otto, un projet de General Computer Corporation, Ms. Pac-Man fut publié par Midway en Amérique du Nord en 1982. Il ajoutait aux règles de Pac-Man de nouveaux labyrinthes, des fruits mobiles et des fantômes moins prévisibles. Le projet avait commencé comme un kit d’amélioration pour les bornes existantes, avant que Midway en fasse une suite officielle.",
+      "reason": "La conferenza del 3 febbraio non è la release: il testo conserva l’anno commerciale documentato, 1982.",
+      "source_ids": [
+        "lat_1982",
+        "playmeter_feb1982",
+        "playmeter_oct1982",
+        "golson_2024"
+      ],
+      "output_file": "018-catalog/OUTPUT-018-catalog.json"
+    },
+    {
+      "entry_id": "workbook-02-03-ms-pac-man",
+      "feature_id": null,
+      "card_id": "main:0",
+      "lang": "de",
+      "field": "text",
+      "before": "Ms. Pac-Man entstand aus Crazy Otto von General Computer Corporation und wurde 1982 von Midway in Nordamerika veröffentlicht. Am 3. Februar dem amerikanischen Publikum vorgestellt, ergänzte es Pac-Mans Regeln um verschiedene Labyrinthe, bewegliche Früchte und weniger berechenbare Geister. Das Projekt hatte als Erweiterungssatz für vorhandene Automaten begonnen, bevor Midway daraus eine offizielle Fortsetzung machte.",
+      "after": "Ms. Pac-Man entstand aus Crazy Otto von General Computer Corporation und wurde 1982 von Midway in Nordamerika veröffentlicht. Es ergänzte Pac-Mans Regeln um verschiedene Labyrinthe, bewegliche Früchte und weniger berechenbare Geister. Das Projekt hatte als Erweiterungssatz für vorhandene Automaten begonnen, bevor Midway daraus eine offizielle Fortsetzung machte.",
+      "reason": "La conferenza del 3 febbraio non è la release: il testo conserva l’anno commerciale documentato, 1982.",
+      "source_ids": [
+        "lat_1982",
+        "playmeter_feb1982",
+        "playmeter_oct1982",
+        "golson_2024"
+      ],
+      "output_file": "018-catalog/OUTPUT-018-catalog.json"
+    },
+    {
+      "entry_id": "workbook-02-03-ms-pac-man",
+      "feature_id": null,
+      "card_id": "main:0",
+      "lang": "es",
+      "field": "text",
+      "before": "Ms. Pac-Man surgió de Crazy Otto, un proyecto de General Computer Corporation, y Midway lo publicó en Norteamérica en 1982. Presentado al público estadounidense el 3 de febrero, añadía a las reglas de Pac-Man distintos laberintos, fruta en movimiento y fantasmas menos previsibles. El proyecto había comenzado como un kit de mejora para máquinas existentes, antes de que Midway lo convirtiera en una secuela oficial.",
+      "after": "Ms. Pac-Man surgió de Crazy Otto, un proyecto de General Computer Corporation, y Midway lo publicó en Norteamérica en 1982. Añadía a las reglas de Pac-Man distintos laberintos, fruta en movimiento y fantasmas menos previsibles. El proyecto había comenzado como un kit de mejora para máquinas existentes, antes de que Midway lo convirtiera en una secuela oficial.",
+      "reason": "La conferenza del 3 febbraio non è la release: il testo conserva l’anno commerciale documentato, 1982.",
+      "source_ids": [
+        "lat_1982",
+        "playmeter_feb1982",
+        "playmeter_oct1982",
+        "golson_2024"
+      ],
+      "output_file": "018-catalog/OUTPUT-018-catalog.json"
+    },
+    {
+      "entry_id": "zx-spectrum",
+      "feature_id": "feature-spectrum-bedroom-networks",
+      "card_id": "feature:feature-spectrum-bedroom-networks:2",
+      "lang": "en",
+      "field": "text",
+      "before": "Bob Pape added text compression and scrolling to The Quill adventure system, but its makers were not interested. He included those experiments with other work on a demonstration tape sent to Catalyst Coders, which helped him secure the Rampage commission. Recalling the episode in 1997, Pape described a portfolio built from work he had already attempted: material rejected by one company showed another what he could do.",
+      "after": "Bob Pape added text compression and scrolling to The Quill adventure system, but its makers were not interested. He sent Catalyst Coders a demonstration tape containing those experiments and other work. The tape helped him secure the Rampage commission. Recalling the episode in 1997, Pape described a portfolio built from work he had already attempted: material rejected by one company showed another what he could do.",
+      "reason": "Rende esplicito che il provino contribuì all’incarico, eliminando l’ambiguità del pronome relativo.",
+      "source_ids": [
+        "pape_1997"
+      ],
+      "output_file": "018-catalog/OUTPUT-018-catalog.json"
+    },
+    {
+      "entry_id": "zx-spectrum",
+      "feature_id": null,
+      "card_id": "main:0",
+      "language": "en",
+      "field": "text",
+      "before": "Sinclair introduced the ZX Spectrum in 1982. With its compact keyboard and cassette-based software, the machine put a programmable computer within reach of many British households. Owners could find games in shops, type in listings from magazines or experiment with programs of their own.",
+      "after": "Sinclair began delivering the ZX Spectrum to British customers in June 1982. With its compact keyboard and cassette-based software, the machine put a programmable computer within reach of many British households. Owners could find games in shops, type in listings from magazines or experiment with programs of their own.",
+      "reason": "Colloca la voce sulle prime consegne commerciali documentate, mantenendo il resto del contenuto.",
+      "source_ids": [
+        "sinclair_user_1982_08_p20"
+      ],
+      "apply_to_all_five_languages": true,
+      "lang": "en",
+      "output_file": "018-catalog/OUTPUT-018-catalog.json"
+    },
+    {
+      "entry_id": "zx-spectrum",
+      "feature_id": null,
+      "card_id": "main:1",
+      "language": "en",
+      "field": "text",
+      "before": "The Spectrum’s characteristic colour attributes contributed to a recognisable graphic style. Around it, the wider home-computer scene supported small publishers and designers, giving them a way to begin making games outside the console manufacturers.",
+      "after": "The Spectrum assigned colour to cells of 8 × 8 pixels. Within each cell, the drawn pixels shared one foreground colour and the remaining pixels one background colour. This fixed grid shaped the way graphics used colour and contributed to the machine’s recognisable appearance.\n\nAround it, the wider home-computer scene supported small publishers and designers, giving them a way to begin making games outside the console manufacturers.",
+      "reason": "Spiega concretamente gli attributi di colore con il manuale originale e conserva il tema degli editori e degli autori indipendenti già presente. Il legame con lo stile grafico era già affermato in INPUT; il meccanismo ora è documentato.",
+      "source_ids": [
+        "zx_manual_1982_colours"
+      ],
+      "apply_to_all_five_languages": true,
+      "lang": "en",
+      "output_file": "018-catalog/OUTPUT-018-catalog.json"
+    },
+    {
+      "entry_id": "zx-spectrum",
+      "feature_id": "feature-spectrum-bedroom-networks",
+      "card_id": "feature:feature-spectrum-bedroom-networks:3",
+      "language": "en",
+      "field": "text",
+      "before": "Pape remembered developing Spectrum R-Type in a Fareham office alongside programmers working on other versions. Its use of colour depended partly on a technical choice: characters moved in steps while the background scrolled by pixels. Elsewhere in the interview, he credited Mark Jones’s graphics and Rob Hylands’s sound driver. The conversion combined their different skills with those of fellow developers, bringing an arcade game to a small home computer.",
+      "after": "Pape remembered developing Spectrum R-Type in a Fareham office alongside programmers working on another version. He moved the game’s objects in character-cell steps while scrolling the background pixel by pixel, combining colour and speed with an impression of smooth movement. Elsewhere in the interview, he credited Mark Jones’s graphics and Rob Hylands’s sound driver. The conversion combined their different skills with those of fellow developers, bringing an arcade game to a small home computer.",
+      "reason": "Corregge l’equivoco fra personaggi e celle di carattere e specifica il rapporto fra movimento degli oggetti, scorrimento dello sfondo, colore e velocità descritto da Pape. Tutte le attribuzioni restano presenti. La formulazione segue anche il singolare other version dell’intervista.",
+      "source_ids": [
+        "pape_1997",
+        "zx_manual_1982_colours"
+      ],
+      "apply_to_all_five_languages": true,
+      "lang": "en",
+      "output_file": "018-catalog/OUTPUT-018-catalog.json"
+    },
+    {
+      "entry_id": "wikipedia-106289",
+      "feature_id": null,
+      "card_id": "main:0",
+      "language": "en",
+      "field": "text",
+      "before": "Atari developed and published E.T. the Extra-Terrestrial for the Atari 2600 in 1982, adapting the film of the same name as an adventure game. Players guide E.T. through several screens to collect three pieces of an interplanetary telephone, which will let him contact his home planet.",
+      "after": "Atari developed and published E.T. the Extra-Terrestrial for the Atari 2600 as an adventure based on the film of the same name. The game reached U.S. shops in November 1982. Players guide E.T. through several screens to collect three pieces of an interplanetary telephone, which will let him contact his home planet.",
+      "reason": "Separa lo sviluppo dall’uscita commerciale e precisa il mese documentato per gli Stati Uniti, conservando obiettivo e crediti.",
+      "source_ids": [
+        "et_cincinnati_1982_11_20",
+        "et_video_game_update_1982_12"
+      ],
+      "apply_to_all_five_languages": true,
+      "lang": "en",
+      "output_file": "018-catalog/OUTPUT-018-catalog.json"
+    },
+    {
+      "entry_id": "wikipedia-106289",
+      "feature_id": null,
+      "card_id": "main:1",
+      "language": "en",
+      "field": "text",
+      "before": "Designer Howard Scott Warshaw wanted an innovative adaptation. The reference article describes Atari’s sales expectations, based on the film’s international box-office success, as unrealistic. Rights negotiations ended in late July 1982, leaving Warshaw just over five weeks to develop the game for the production schedule serving that year’s Christmas season.\n\nThe release received negative reviews and later became a frequent example in discussions of the worst games and largest commercial failures. The article also presents it as a major contributor to the video game crash of 1983. Popular culture repeatedly referenced and mocked it as a warning about rushed development and studio interference.",
+      "after": "Designer Howard Scott Warshaw wanted an innovative adaptation, while Atari expected the film’s international box-office success to produce large sales of the game. Rights negotiations ended in late July 1982, leaving Warshaw just over five weeks to develop it for the production schedule serving that year’s Christmas season.\n\nThe release received negative reviews and later became a frequent example in discussions of the worst games. Warshaw attributed the commercial disappointment to overproduction. An Atari company sales table lists 2,637,985 net cartridge sales for 1982, followed by a negative net figure of 669,733 for 1983.\n\nIn later interviews, Warshaw described E.T. as a symbol of the industry’s collapse and a symptom of the business thinking behind the 1983 crash. Popular culture repeatedly referenced and mocked it as a warning about rushed development and studio interference.",
+      "reason": "Sostituisce la classifica assoluta dei fallimenti e il ruolo causale maggiore non quantificato con dati aziendali esplicitamente netti e con l’interpretazione storica attribuita a Warshaw. Non chiama il saldo negativo totale dei resi, non lo converte in perdita monetaria e non identifica le vendite aziendali con acquisti finali.",
+      "source_ids": [
+        "et_sales_table",
+        "warshaw_stilphen_interview",
+        "warshaw_denofgeek_2015",
+        "warshaw_wired_2021"
+      ],
+      "apply_to_all_five_languages": true,
+      "lang": "en",
+      "output_file": "018-catalog/OUTPUT-018-catalog.json"
+    },
+    {
+      "entry_id": "zx-spectrum",
+      "feature_id": null,
+      "card_id": "main:0",
+      "language": "it",
+      "field": "text",
+      "before": "Sinclair presentò lo ZX Spectrum nel 1982. La tastiera compatta e i programmi su cassetta mettevano un computer programmabile alla portata di molte famiglie britanniche. Si potevano acquistare giochi in negozio, digitare i listati delle riviste o sperimentare con programmi propri.",
+      "after": "Sinclair cominciò a consegnare lo ZX Spectrum ai clienti britannici nel giugno 1982. La tastiera compatta e i programmi su cassetta mettevano un computer programmabile alla portata di molte famiglie. Si potevano acquistare giochi in negozio, digitare i listati delle riviste o sperimentare con programmi propri.",
+      "source_ids": [
+        "sinclair_user_1982_08_p20"
+      ],
+      "reason": "Adattamento editoriale della correzione inglese approvata, con fatti, attribuzioni e precisione dei dati conservati.",
+      "lang": "it",
+      "output_file": "018-catalog/OUTPUT-018-catalog.json"
+    },
+    {
+      "entry_id": "zx-spectrum",
+      "feature_id": null,
+      "card_id": "main:0",
+      "language": "fr",
+      "field": "text",
+      "before": "Sinclair lança le ZX Spectrum en 1982. Son clavier compact et ses logiciels sur cassette mettaient un ordinateur programmable à la portée de nombreux foyers britanniques. On pouvait acheter des jeux en boutique, saisir les listings des magazines ou expérimenter avec ses propres programmes.",
+      "after": "Sinclair commença à livrer le ZX Spectrum aux clients britanniques en juin 1982. Son clavier compact et ses logiciels sur cassette mettaient un ordinateur programmable à la portée de nombreux foyers. On pouvait acheter des jeux en boutique, saisir les listings des magazines ou expérimenter avec ses propres programmes.",
+      "source_ids": [
+        "sinclair_user_1982_08_p20"
+      ],
+      "reason": "Adattamento editoriale della correzione inglese approvata, con fatti, attribuzioni e precisione dei dati conservati.",
+      "lang": "fr",
+      "output_file": "018-catalog/OUTPUT-018-catalog.json"
+    },
+    {
+      "entry_id": "zx-spectrum",
+      "feature_id": null,
+      "card_id": "main:0",
+      "language": "de",
+      "field": "text",
+      "before": "Sinclair stellte den ZX Spectrum 1982 vor. Mit seiner kompakten Tastatur und Software auf Kassette machte er einen programmierbaren Computer für viele britische Haushalte erschwinglich. Besitzer konnten Spiele im Laden kaufen, Programmlistings aus Zeitschriften abtippen oder mit eigenen Programmen experimentieren.",
+      "after": "Im Juni 1982 begann Sinclair, den ZX Spectrum an Kunden in Großbritannien zu liefern. Mit seiner kompakten Tastatur und Software auf Kassette war der programmierbare Computer für viele Haushalte erschwinglich. Besitzer konnten Spiele im Laden kaufen, Programmlistings aus Zeitschriften abtippen oder mit eigenen Programmen experimentieren.",
+      "source_ids": [
+        "sinclair_user_1982_08_p20"
+      ],
+      "reason": "Adattamento editoriale della correzione inglese approvata, con fatti, attribuzioni e precisione dei dati conservati.",
+      "lang": "de",
+      "output_file": "018-catalog/OUTPUT-018-catalog.json"
+    },
+    {
+      "entry_id": "zx-spectrum",
+      "feature_id": null,
+      "card_id": "main:0",
+      "language": "es",
+      "field": "text",
+      "before": "Sinclair presentó el ZX Spectrum en 1982. Su teclado compacto y los programas en casete pusieron un ordenador programable al alcance de muchos hogares británicos. Sus usuarios podían comprar juegos, teclear los listados de las revistas o experimentar con sus propios programas.",
+      "after": "Sinclair comenzó a entregar el ZX Spectrum a sus clientes británicos en junio de 1982. Su teclado compacto y los programas en casete pusieron un ordenador programable al alcance de muchos hogares. Sus usuarios podían comprar juegos en las tiendas, teclear los listados de las revistas o experimentar con sus propios programas.",
+      "source_ids": [
+        "sinclair_user_1982_08_p20"
+      ],
+      "reason": "Adattamento editoriale della correzione inglese approvata, con fatti, attribuzioni e precisione dei dati conservati.",
+      "lang": "es",
+      "output_file": "018-catalog/OUTPUT-018-catalog.json"
+    },
+    {
+      "entry_id": "zx-spectrum",
+      "feature_id": null,
+      "card_id": "main:1",
+      "language": "it",
+      "field": "text",
+      "before": "Gli attributi di colore caratteristici dello Spectrum contribuirono a creare uno stile grafico riconoscibile. Il più ampio ambiente dei computer domestici sosteneva anche piccoli editori e progettisti, che potevano cominciare a realizzare giochi al di fuori dei produttori di console.",
+      "after": "Lo Spectrum assegnava i colori a celle di 8 × 8 pixel. All’interno di ogni cella, i pixel del disegno condividevano un colore di primo piano e quelli rimanenti un colore di sfondo. Questa griglia fissa condizionava l’uso dei colori nella grafica e contribuiva allo stile riconoscibile del computer.\n\nIl più ampio ambiente dei computer domestici sosteneva anche piccoli editori e progettisti, che potevano cominciare a realizzare giochi al di fuori dei produttori di console.",
+      "source_ids": [
+        "zx_manual_1982_colours"
+      ],
+      "reason": "Adattamento editoriale della correzione inglese approvata, con fatti, attribuzioni e precisione dei dati conservati.",
+      "lang": "it",
+      "output_file": "018-catalog/OUTPUT-018-catalog.json"
+    },
+    {
+      "entry_id": "zx-spectrum",
+      "feature_id": null,
+      "card_id": "main:1",
+      "language": "fr",
+      "field": "text",
+      "before": "Les attributs de couleur caractéristiques du Spectrum contribuèrent à un style graphique reconnaissable. Plus largement, le milieu de l’informatique domestique soutenait de petits éditeurs et créateurs, leur permettant de se lancer dans les jeux indépendamment des fabricants de consoles.",
+      "after": "Le Spectrum attribuait les couleurs par cellules de 8 × 8 pixels. Dans chaque cellule, les pixels du dessin partageaient une couleur de premier plan, tandis que les autres utilisaient une couleur de fond. Ce quadrillage influençait la répartition des couleurs et contribuait au style graphique reconnaissable du Spectrum.\n\nPlus largement, le milieu de l’informatique domestique offrait aussi à de petits éditeurs et créateurs la possibilité de se lancer dans le jeu vidéo indépendamment des fabricants de consoles.",
+      "source_ids": [
+        "zx_manual_1982_colours"
+      ],
+      "reason": "Adattamento editoriale della correzione inglese approvata, con fatti, attribuzioni e precisione dei dati conservati.",
+      "lang": "fr",
+      "output_file": "018-catalog/OUTPUT-018-catalog.json"
+    },
+    {
+      "entry_id": "zx-spectrum",
+      "feature_id": null,
+      "card_id": "main:1",
+      "language": "de",
+      "field": "text",
+      "before": "Die charakteristischen Farbattribute des Spectrum trugen zu einem wiedererkennbaren Grafikstil bei. Die breitere Heimcomputerszene ermöglichte es zudem kleinen Verlagen und Entwicklern, unabhängig von Konsolenherstellern mit der Spieleproduktion zu beginnen.",
+      "after": "Beim Spectrum galten die Farbeinstellungen jeweils für eine Zelle aus 8 × 8 Pixeln. Innerhalb einer solchen Zelle hatten die gezeichneten Pixel eine gemeinsame Vordergrundfarbe, alle übrigen Pixel eine gemeinsame Hintergrundfarbe. Dieses feste Raster prägte den Farbeinsatz und trug zum wiedererkennbaren Grafikstil des Spectrum bei.\n\nDie Heimcomputerszene bot zudem kleinen Verlagen und Entwicklern die Möglichkeit, unabhängig von Konsolenherstellern Spiele zu produzieren.",
+      "source_ids": [
+        "zx_manual_1982_colours"
+      ],
+      "reason": "Adattamento editoriale della correzione inglese approvata, con fatti, attribuzioni e precisione dei dati conservati.",
+      "lang": "de",
+      "output_file": "018-catalog/OUTPUT-018-catalog.json"
+    },
+    {
+      "entry_id": "zx-spectrum",
+      "feature_id": null,
+      "card_id": "main:1",
+      "language": "es",
+      "field": "text",
+      "before": "Los característicos atributos de color del Spectrum contribuyeron a un estilo gráfico reconocible. El entorno más amplio de los ordenadores domésticos también daba oportunidades a pequeños editores y diseñadores, que podían empezar a crear juegos de forma independiente de los fabricantes de consolas.",
+      "after": "El Spectrum asignaba los colores por celdas de 8 × 8 píxeles. Dentro de cada celda, los píxeles del dibujo compartían un color de primer plano y los restantes, un color de fondo. Esta cuadrícula fija condicionaba el uso del color y contribuía al estilo gráfico característico del ordenador.\n\nEl entorno de los ordenadores domésticos también ofrecía oportunidades a pequeños editores y diseñadores, que podían empezar a crear juegos al margen de los fabricantes de consolas.",
+      "source_ids": [
+        "zx_manual_1982_colours"
+      ],
+      "reason": "Adattamento editoriale della correzione inglese approvata, con fatti, attribuzioni e precisione dei dati conservati.",
+      "lang": "es",
+      "output_file": "018-catalog/OUTPUT-018-catalog.json"
+    },
+    {
+      "entry_id": "zx-spectrum",
+      "feature_id": "feature-spectrum-bedroom-networks",
+      "card_id": "feature:feature-spectrum-bedroom-networks:3",
+      "language": "it",
+      "field": "text",
+      "before": "Pape ricordava di aver sviluppato R-Type per Spectrum in un ufficio a Fareham, accanto ai programmatori delle altre versioni. L’uso del colore dipendeva anche da una scelta tecnica: i personaggi si muovevano per passi, mentre lo sfondo scorreva pixel per pixel. In altri passaggi dell’intervista attribuiva la grafica a Mark Jones e il driver sonoro a Rob Hylands. La conversione riuniva queste competenze e il lavoro degli altri sviluppatori per portare un gioco arcade su un piccolo computer domestico.",
+      "after": "Pape ricordava di aver sviluppato R-Type per Spectrum in un ufficio di Fareham, accanto ai programmatori impegnati in un’altra versione. Per combinare colore e velocità, faceva muovere gli oggetti di gioco a passi di una cella di carattere, cioè un riquadro dello schermo di 8 × 8 pixel. Lo sfondo scorreva pixel per pixel, dando all’insieme un’impressione di fluidità. In altri passaggi dell’intervista attribuiva la grafica a Mark Jones e il driver sonoro a Rob Hylands. La conversione portava il gioco arcade su un piccolo computer domestico grazie a queste competenze e al contributo degli altri sviluppatori.",
+      "source_ids": [
+        "pape_1997",
+        "zx_manual_1982_colours"
+      ],
+      "reason": "Adattamento editoriale della correzione inglese approvata; per R-Type la dimensione delle celle di carattere è esplicitata su richiesta del coordinatore.",
+      "lang": "it",
+      "output_file": "018-catalog/OUTPUT-018-catalog.json"
+    },
+    {
+      "entry_id": "zx-spectrum",
+      "feature_id": "feature-spectrum-bedroom-networks",
+      "card_id": "feature:feature-spectrum-bedroom-networks:3",
+      "language": "fr",
+      "field": "text",
+      "before": "Pape se souvenait d’avoir développé R-Type pour Spectrum dans un bureau de Fareham, aux côtés de programmeurs chargés d’autres versions. L’utilisation des couleurs reposait en partie sur un choix technique : les personnages avançaient par paliers tandis que le décor défilait pixel par pixel. Ailleurs dans l’entretien, il attribuait les graphismes à Mark Jones et le pilote sonore à Rob Hylands. La conversion associait leurs savoir-faire à ceux d’autres développeurs pour porter un jeu d’arcade sur un petit ordinateur domestique.",
+      "after": "Pape se souvenait d’avoir développé R-Type pour Spectrum dans un bureau de Fareham, aux côtés de programmeurs chargés d’une autre version. Pour associer couleur et rapidité, il faisait avancer les objets du jeu par pas d’une cellule de caractère, soit un carré de 8 × 8 pixels à l’écran. Le défilement du décor, pixel par pixel, donnait à l’ensemble une impression de fluidité. Ailleurs dans l’entretien, il attribuait les graphismes à Mark Jones et le pilote sonore à Rob Hylands. Ces savoir-faire, associés à ceux des autres développeurs, permettaient de porter un jeu d’arcade sur un petit ordinateur domestique.",
+      "source_ids": [
+        "pape_1997",
+        "zx_manual_1982_colours"
+      ],
+      "reason": "Adattamento editoriale della correzione inglese approvata; per R-Type la dimensione delle celle di carattere è esplicitata su richiesta del coordinatore.",
+      "lang": "fr",
+      "output_file": "018-catalog/OUTPUT-018-catalog.json"
+    },
+    {
+      "entry_id": "zx-spectrum",
+      "feature_id": "feature-spectrum-bedroom-networks",
+      "card_id": "feature:feature-spectrum-bedroom-networks:3",
+      "language": "de",
+      "field": "text",
+      "before": "Pape erinnerte sich daran, R-Type für den Spectrum in einem Büro in Fareham zu entwickeln, neben Programmierern anderer Fassungen. Die Farbdarstellung hing teilweise von einer technischen Entscheidung ab: Figuren bewegten sich in Schritten, während der Hintergrund pixelweise scrollte. An anderer Stelle des Interviews schrieb er die Grafik Mark Jones und den Soundtreiber Rob Hylands zu. Die Umsetzung verband ihre unterschiedlichen Kenntnisse mit der Arbeit weiterer Entwickler, um ein Arcade-Spiel auf einen kleinen Heimcomputer zu bringen.",
+      "after": "Pape erinnerte sich daran, R-Type für den Spectrum in einem Büro in Fareham entwickelt zu haben, zusammen mit Programmierern, die an einer anderen Fassung arbeiteten. Er bewegte die Spielobjekte in Schritten von jeweils einer Zeichenzelle, einem Rasterfeld aus 8 × 8 Pixeln, und ließ den Hintergrund Pixel für Pixel scrollen. So verband er Farbe und Geschwindigkeit mit dem Eindruck flüssiger Bewegung. An anderer Stelle des Interviews schrieb er die Grafik Mark Jones und den Soundtreiber Rob Hylands zu. Die Umsetzung des Arcade-Spiels auf einen kleinen Heimcomputer führte ihr Fachwissen mit dem der anderen Entwickler zusammen.",
+      "source_ids": [
+        "pape_1997",
+        "zx_manual_1982_colours"
+      ],
+      "reason": "Adattamento editoriale della correzione inglese approvata; per R-Type la dimensione delle celle di carattere è esplicitata su richiesta del coordinatore.",
+      "lang": "de",
+      "output_file": "018-catalog/OUTPUT-018-catalog.json"
+    },
+    {
+      "entry_id": "zx-spectrum",
+      "feature_id": "feature-spectrum-bedroom-networks",
+      "card_id": "feature:feature-spectrum-bedroom-networks:3",
+      "language": "es",
+      "field": "text",
+      "before": "Pape recordaba haber desarrollado R-Type para Spectrum en una oficina de Fareham, junto a programadores encargados de otras versiones. El uso del color dependía en parte de una decisión técnica: los personajes se movían por pasos, mientras el fondo se desplazaba píxel a píxel. En otros momentos de la entrevista atribuyó los gráficos a Mark Jones y el controlador de sonido a Rob Hylands. La conversión reunió esos conocimientos con el trabajo de otros desarrolladores para llevar un juego arcade a un pequeño ordenador doméstico.",
+      "after": "Pape recordaba haber desarrollado R-Type para Spectrum en una oficina de Fareham, junto a programadores que trabajaban en otra versión. Movía los objetos del juego en incrementos de una celda de carácter, un bloque de 8 × 8 píxeles, mientras el fondo se desplazaba píxel a píxel. Así combinaba color y velocidad con una sensación de movimiento fluido. En otros pasajes de la entrevista atribuía los gráficos a Mark Jones y el controlador de sonido a Rob Hylands. La conversión reunía sus conocimientos y los de los demás desarrolladores para llevar un juego arcade a un pequeño ordenador doméstico.",
+      "source_ids": [
+        "pape_1997",
+        "zx_manual_1982_colours"
+      ],
+      "reason": "Adattamento editoriale della correzione inglese approvata; per R-Type la dimensione delle celle di carattere è esplicitata su richiesta del coordinatore.",
+      "lang": "es",
+      "output_file": "018-catalog/OUTPUT-018-catalog.json"
+    },
+    {
+      "entry_id": "wikipedia-106289",
+      "feature_id": null,
+      "card_id": "main:0",
+      "language": "it",
+      "field": "text",
+      "before": "Atari sviluppò e pubblicò E.T. the Extra-Terrestrial per Atari 2600 nel 1982, adattando il film omonimo in un gioco d’avventura. Si guida E.T. attraverso diverse schermate per raccogliere tre pezzi di un telefono interplanetario, con cui potrà contattare il proprio pianeta.",
+      "after": "Atari sviluppò e pubblicò E.T. the Extra-Terrestrial per Atari 2600 come gioco d’avventura tratto dal film omonimo. Il gioco arrivò nei negozi statunitensi nel novembre 1982. Si guida E.T. attraverso diverse schermate per raccogliere tre pezzi di un telefono interplanetario, con cui potrà contattare il proprio pianeta.",
+      "source_ids": [
+        "et_cincinnati_1982_11_20",
+        "et_video_game_update_1982_12"
+      ],
+      "reason": "Adattamento editoriale della correzione inglese approvata, con fatti, attribuzioni e precisione dei dati conservati.",
+      "lang": "it",
+      "output_file": "018-catalog/OUTPUT-018-catalog.json"
+    },
+    {
+      "entry_id": "wikipedia-106289",
+      "feature_id": null,
+      "card_id": "main:0",
+      "language": "fr",
+      "field": "text",
+      "before": "Atari développa et publia E.T. the Extra-Terrestrial sur Atari 2600 en 1982, adaptant le film du même nom en jeu d’aventure. Le joueur guide E.T. à travers plusieurs écrans pour réunir trois pièces d’un téléphone interplanétaire qui lui permettra de contacter sa planète.",
+      "after": "Atari développa et publia le jeu d’aventure E.T. the Extra-Terrestrial pour l’Atari 2600, en adaptant le film du même nom. Il arriva dans les magasins américains en novembre 1982. Le joueur guide E.T. à travers plusieurs écrans pour réunir trois pièces d’un téléphone interplanétaire qui lui permettra de contacter sa planète d’origine.",
+      "source_ids": [
+        "et_cincinnati_1982_11_20",
+        "et_video_game_update_1982_12"
+      ],
+      "reason": "Adattamento editoriale della correzione inglese approvata, con fatti, attribuzioni e precisione dei dati conservati.",
+      "lang": "fr",
+      "output_file": "018-catalog/OUTPUT-018-catalog.json"
+    },
+    {
+      "entry_id": "wikipedia-106289",
+      "feature_id": null,
+      "card_id": "main:0",
+      "language": "de",
+      "field": "text",
+      "before": "Atari entwickelte und veröffentlichte E.T. the Extra-Terrestrial 1982 für das Atari 2600 als Adventure nach dem gleichnamigen Film. Die Spieler führen E.T. durch mehrere Bildschirme, um drei Teile eines interplanetaren Telefons zu sammeln, mit dem er seinen Heimatplaneten erreichen kann.",
+      "after": "Atari entwickelte und veröffentlichte E.T. the Extra-Terrestrial für das Atari 2600 als Adventure nach dem gleichnamigen Film. Im November 1982 kam das Spiel in den USA in den Handel. Die Spieler führen E.T. durch mehrere Bildschirme, um drei Teile eines interplanetaren Telefons zu sammeln, mit dem er seinen Heimatplaneten erreichen kann.",
+      "source_ids": [
+        "et_cincinnati_1982_11_20",
+        "et_video_game_update_1982_12"
+      ],
+      "reason": "Adattamento editoriale della correzione inglese approvata, con fatti, attribuzioni e precisione dei dati conservati.",
+      "lang": "de",
+      "output_file": "018-catalog/OUTPUT-018-catalog.json"
+    },
+    {
+      "entry_id": "wikipedia-106289",
+      "feature_id": null,
+      "card_id": "main:0",
+      "language": "es",
+      "field": "text",
+      "before": "Atari desarrolló y publicó E.T. the Extra-Terrestrial para Atari 2600 en 1982, adaptando la película del mismo nombre como una aventura. El jugador guía a E.T. por varias pantallas para recoger tres piezas de un teléfono interplanetario que le permitirá contactar con su planeta.",
+      "after": "Atari desarrolló y publicó E.T. the Extra-Terrestrial para Atari 2600 como una aventura basada en la película del mismo nombre. El juego llegó a las tiendas estadounidenses en noviembre de 1982. El jugador guía a E.T. por varias pantallas para recoger tres piezas de un teléfono interplanetario que le permitirá contactar con su planeta de origen.",
+      "source_ids": [
+        "et_cincinnati_1982_11_20",
+        "et_video_game_update_1982_12"
+      ],
+      "reason": "Adattamento editoriale della correzione inglese approvata, con fatti, attribuzioni e precisione dei dati conservati.",
+      "lang": "es",
+      "output_file": "018-catalog/OUTPUT-018-catalog.json"
+    },
+    {
+      "entry_id": "wikipedia-106289",
+      "feature_id": null,
+      "card_id": "main:1",
+      "language": "it",
+      "field": "text",
+      "before": "Il progettista Howard Scott Warshaw voleva realizzare un adattamento innovativo. L’articolo di riferimento giudica irrealistiche le aspettative di vendita di Atari, fondate sul successo internazionale del film al botteghino. Le trattative sui diritti si conclusero alla fine di luglio 1982, lasciando a Warshaw poco più di cinque settimane per sviluppare il gioco e rispettare il calendario di produzione per il Natale di quell’anno.\n\nAll’uscita ricevette recensioni negative e divenne in seguito un esempio ricorrente nelle discussioni sui peggiori giochi e sui maggiori insuccessi commerciali. L’articolo lo presenta anche come un contributo rilevante al crash videoludico del 1983. La cultura popolare lo citò e derise più volte come monito sui rischi dello sviluppo affrettato e delle interferenze degli studi.",
+      "after": "Il progettista Howard Scott Warshaw voleva creare un adattamento innovativo, mentre Atari contava sul successo internazionale del film al botteghino per vendere molte copie del gioco. Le trattative sui diritti si conclusero alla fine di luglio 1982, lasciando a Warshaw poco più di cinque settimane per svilupparlo entro la scadenza fissata per la produzione natalizia di quell’anno.\n\nAll’uscita il gioco ricevette recensioni negative e in seguito fu spesso citato nelle discussioni sui peggiori videogiochi. Warshaw attribuì la delusione commerciale alla sovrapproduzione. Una tabella aziendale di Atari registra vendite nette pari a 2.637.985 cartucce nel 1982 e un saldo netto negativo di 669.733 cartucce nel 1983.\n\nNelle interviste successive, Warshaw descrisse E.T. come un simbolo del crollo del settore e come un’espressione delle logiche aziendali alla base della crisi del 1983. Nella cultura popolare il gioco è stato più volte citato e deriso come esempio dei rischi dello sviluppo affrettato e delle interferenze aziendali.",
+      "source_ids": [
+        "et_sales_table",
+        "warshaw_stilphen_interview",
+        "warshaw_denofgeek_2015",
+        "warshaw_wired_2021"
+      ],
+      "reason": "Adattamento editoriale della correzione inglese approvata, con fatti, attribuzioni e precisione dei dati conservati.",
+      "lang": "it",
+      "output_file": "018-catalog/OUTPUT-018-catalog.json"
+    },
+    {
+      "entry_id": "wikipedia-106289",
+      "feature_id": null,
+      "card_id": "main:1",
+      "language": "fr",
+      "field": "text",
+      "before": "Le concepteur Howard Scott Warshaw souhaitait réaliser une adaptation novatrice. L’article de référence juge irréalistes les attentes commerciales d’Atari, fondées sur le succès international du film au cinéma. Les négociations sur les droits s’achevèrent fin juillet 1982, laissant à Warshaw un peu plus de cinq semaines pour développer le jeu dans les délais de production prévus pour Noël.\n\nÀ sa sortie, le jeu reçut des critiques négatives et devint ensuite un exemple fréquent dans les discussions sur les pires jeux et les plus grands échecs commerciaux. L’article le présente aussi comme un facteur majeur du krach du jeu vidéo de 1983. La culture populaire l’a souvent cité et tourné en dérision pour illustrer les risques du développement précipité et de l’ingérence des studios.",
+      "after": "Le concepteur Howard Scott Warshaw voulait réaliser une adaptation novatrice, tandis qu’Atari comptait sur le succès international du film au cinéma pour vendre beaucoup d’exemplaires du jeu. Les négociations sur les droits s’achevèrent fin juillet 1982, laissant à Warshaw un peu plus de cinq semaines pour développer le jeu et respecter le calendrier de production prévu pour Noël de la même année.\n\nÀ sa sortie, le jeu reçut des critiques négatives, puis devint un exemple fréquent dans les discussions sur les pires jeux vidéo. Warshaw attribua la déception commerciale à la surproduction. Un tableau interne d’Atari fait état de ventes nettes de 2 637 985 cartouches en 1982, puis d’un solde net négatif de 669 733 cartouches en 1983.\n\nDans des entretiens ultérieurs, Warshaw présenta E.T. comme un symbole de l’effondrement du secteur et un symptôme de la logique commerciale qui avait mené au krach de 1983. La culture populaire l’a cité et tourné en dérision à de nombreuses reprises pour illustrer les risques du développement précipité et de l’ingérence des studios.",
+      "source_ids": [
+        "et_sales_table",
+        "warshaw_stilphen_interview",
+        "warshaw_denofgeek_2015",
+        "warshaw_wired_2021"
+      ],
+      "reason": "Adattamento editoriale della correzione inglese approvata, con fatti, attribuzioni e precisione dei dati conservati.",
+      "lang": "fr",
+      "output_file": "018-catalog/OUTPUT-018-catalog.json"
+    },
+    {
+      "entry_id": "wikipedia-106289",
+      "feature_id": null,
+      "card_id": "main:1",
+      "language": "de",
+      "field": "text",
+      "before": "Designer Howard Scott Warshaw wollte eine innovative Filmumsetzung schaffen. Der Referenzartikel bezeichnet Ataris Verkaufserwartungen, die auf dem internationalen Kinoerfolg des Films beruhten, als unrealistisch. Die Verhandlungen über die Rechte endeten erst Ende Juli 1982. Damit blieben Warshaw etwas mehr als fünf Wochen zur Entwicklung, um den Produktionsplan für das Weihnachtsgeschäft desselben Jahres einzuhalten.\n\nDas fertige Spiel erhielt negative Kritiken und wurde später häufig in Diskussionen über die schlechtesten Spiele und größten kommerziellen Fehlschläge angeführt. Der Artikel stellt es außerdem als wesentlichen Mitverursacher des Videospielcrashs von 1983 dar. In der Popkultur wurde es wiederholt erwähnt und verspottet, um vor übereilter Entwicklung und Eingriffen der Studios zu warnen.",
+      "after": "Designer Howard Scott Warshaw wollte eine innovative Filmumsetzung schaffen. Atari setzte auf den internationalen Kinoerfolg des Films und erwartete entsprechend hohe Verkaufszahlen. Die Verhandlungen über die Rechte endeten Ende Juli 1982. Damit blieben Warshaw etwas mehr als fünf Wochen zur Entwicklung, um den Produktionsplan für das Weihnachtsgeschäft desselben Jahres einzuhalten.\n\nBei seiner Veröffentlichung erhielt das Spiel negative Kritiken und wurde später häufig in Diskussionen über die schlechtesten Videospiele genannt. Warshaw erklärte das enttäuschende Abschneiden am Markt mit Überproduktion. Eine interne Verkaufstabelle von Atari weist für 1982 einen Nettoabsatz von 2.637.985 Spielmodulen aus und für 1983 einen negativen Nettosaldo von 669.733 Spielmodulen.\n\nIn späteren Interviews beschrieb Warshaw E.T. als Symbol für den Zusammenbruch der Branche und als Symptom der unternehmerischen Denkweise, die zum Crash von 1983 geführt hatte. In der Popkultur wurde es wiederholt erwähnt und verspottet, um vor übereilter Entwicklung und Eingriffen der Studios zu warnen.",
+      "source_ids": [
+        "et_sales_table",
+        "warshaw_stilphen_interview",
+        "warshaw_denofgeek_2015",
+        "warshaw_wired_2021"
+      ],
+      "reason": "Adattamento editoriale della correzione inglese approvata, con fatti, attribuzioni e precisione dei dati conservati.",
+      "lang": "de",
+      "output_file": "018-catalog/OUTPUT-018-catalog.json"
+    },
+    {
+      "entry_id": "wikipedia-106289",
+      "feature_id": null,
+      "card_id": "main:1",
+      "language": "es",
+      "field": "text",
+      "before": "El diseñador Howard Scott Warshaw quería realizar una adaptación innovadora. El artículo de referencia considera poco realistas las expectativas de ventas de Atari, basadas en el éxito internacional de la película en taquilla. Las negociaciones de los derechos terminaron a finales de julio de 1982, dejando a Warshaw poco más de cinco semanas para desarrollar el juego y cumplir el calendario de producción de la campaña navideña de aquel año.\n\nEl lanzamiento recibió críticas negativas y después se convirtió en un ejemplo recurrente en discusiones sobre los peores juegos y los mayores fracasos comerciales. El artículo también lo presenta como un factor importante en la crisis del videojuego de 1983. La cultura popular lo ha citado y ridiculizado repetidamente como advertencia sobre el desarrollo apresurado y las interferencias de los estudios.",
+      "after": "El diseñador Howard Scott Warshaw quería crear una adaptación innovadora, mientras Atari confiaba en que el éxito internacional de la película en taquilla se tradujera en muchas ventas del juego. Las negociaciones sobre los derechos terminaron a finales de julio de 1982. Warshaw dispuso así de poco más de cinco semanas para desarrollar el juego y cumplir el calendario de producción de la campaña navideña de aquel año.\n\nEl juego recibió críticas negativas al salir al mercado y después se convirtió en una referencia habitual en los debates sobre los peores videojuegos. Para Warshaw, la sobreproducción explicaba que el resultado comercial hubiera sido decepcionante. Una tabla de ventas de la propia Atari registra ventas netas de 2.637.985 cartuchos en 1982, seguidas de un saldo neto negativo de 669.733 cartuchos en 1983.\n\nEn entrevistas posteriores, Warshaw describió E.T. como un símbolo del colapso del sector y un síntoma de la mentalidad empresarial que había conducido a la crisis de 1983. La cultura popular lo ha citado y ridiculizado repetidamente como advertencia sobre el desarrollo apresurado y las interferencias de los estudios.",
+      "source_ids": [
+        "et_sales_table",
+        "warshaw_stilphen_interview",
+        "warshaw_denofgeek_2015",
+        "warshaw_wired_2021"
+      ],
+      "reason": "Adattamento editoriale della correzione inglese approvata, con fatti, attribuzioni e precisione dei dati conservati.",
+      "lang": "es",
+      "output_file": "018-catalog/OUTPUT-018-catalog.json"
+    },
+    {
+      "entry_id": "zx-spectrum",
+      "feature_id": null,
+      "card_id": "main:1",
+      "lang": "it",
+      "field": "text",
+      "before": "Lo Spectrum assegnava i colori a celle di 8 × 8 pixel. All’interno di ogni cella, i pixel del disegno condividevano un colore di primo piano e quelli rimanenti un colore di sfondo. Questa griglia fissa condizionava l’uso dei colori nella grafica e contribuiva allo stile riconoscibile del computer.\n\nIl più ampio ambiente dei computer domestici sosteneva anche piccoli editori e progettisti, che potevano cominciare a realizzare giochi al di fuori dei produttori di console.",
+      "after": "Lo Spectrum assegnava i colori a celle di 8 × 8 pixel. All’interno di ogni cella, i pixel del disegno condividevano un colore di primo piano e quelli rimanenti un colore di sfondo. Questa griglia fissa condizionava l’uso dei colori nella grafica e contribuiva allo stile riconoscibile del computer.\n\nIl settore dei computer domestici offriva spazio anche a piccoli editori e progettisti, che potevano così cominciare a realizzare giochi al di fuori delle aziende produttrici di console.",
+      "reason": "Sintassi italiana più naturale, senza variazioni dei fatti.",
+      "source_ids": [
+        "zx_manual_1982_colours"
+      ],
+      "output_file": "018-catalog/OUTPUT-018-catalog.json"
+    }
+  ],
+  "closed_output_issues": [
+    {
+      "entry_id": "carol-shaw",
+      "original_issue": {
+        "target_id": "carol-shaw",
+        "problem": "La voce person è collocata nel 1982, anno di River Raid, con event_semantics vuoto. La ricerca mirata conferma la nascita di Carol Shaw nel 1955 sia nella sua dichiarazione diretta a Benj Edwards sia nella Biographical Note della guida archivistica ufficiale The Strong. Giorno e mese non sono verificati.",
+        "suggested_action": "Proporre per l’integrazione la collocazione biografica al 1955 con precisione year, distinguendola dall’uscita di River Raid nel 1982. L’anno di nascita è inserito nella prima card delle cinque lingue; conservare le fonti e la precisione nel report. Non inventare giorno o mese e non modificare direttamente INPUT, TEMPLATE o catalogo."
+      },
+      "resolution": "Nascita risolta al 1955 con precisione annuale; riallineamento pronto nel registro biografico.",
+      "output_file": "017-catalog/OUTPUT-017-catalog.json"
+    },
+    {
+      "entry_id": "workbook-07-09-donkey-kong",
+      "original_issue": {
+        "target_id": "main:1",
+        "problem": "La descrizione tecnica parla di capacità per 128 sprite in primo piano e 256 tessere di sfondo, senza distinguere chiaramente fra grafica conservabile in memoria e oggetti visualizzabili nello stesso momento.",
+        "suggested_action": "Verificare il significato dei valori su documentazione tecnica pertinente prima dell’integrazione. La riscrittura li mantiene attribuiti al resoconto fornito e non li trasforma in un limite di oggetti simultanei."
+      },
+      "resolution": "ROM, Lady/Pauline e comportamento dei barili verificati e corretti nelle cinque lingue.",
+      "output_file": "017-catalog/OUTPUT-017-catalog.json"
+    },
+    {
+      "entry_id": "workbook-07-09-donkey-kong",
+      "original_issue": {
+        "target_id": "workbook-07-09-donkey-kong",
+        "problem": "La voce usa Lady nella prima card e Pauline nelle successive, senza spiegare la cronologia o il rapporto fra le due denominazioni del personaggio da salvare.",
+        "suggested_action": "Documentare l’uso dei nomi nelle versioni e nei materiali pertinenti prima di uniformarli o aggiungere una spiegazione. Conservare le denominazioni fornite senza inventarne la cronologia."
+      },
+      "resolution": "ROM, Lady/Pauline e comportamento dei barili verificati e corretti nelle cinque lingue.",
+      "output_file": "017-catalog/OUTPUT-017-catalog.json"
+    },
+    {
+      "entry_id": "workbook-07-09-donkey-kong",
+      "original_issue": {
+        "target_id": "main:2",
+        "problem": "Il testo attribuisce a Donkey Kong il lancio sia dei barili sia dei fusti d’olio nel primo quadro, senza distinguere gli oggetti e il loro comportamento.",
+        "suggested_action": "Controllare la descrizione degli oggetti e delle azioni del primo quadro su materiale primario. La riscrittura attribuisce la formulazione al testo di partenza e non sostituisce una meccanica ricordata a quella fornita."
+      },
+      "resolution": "ROM, Lady/Pauline e comportamento dei barili verificati e corretti nelle cinque lingue.",
+      "output_file": "017-catalog/OUTPUT-017-catalog.json"
+    },
+    {
+      "entry_id": "daily-02-02",
+      "original_issue": {
+        "target_id": "daily-02-02",
+        "problem": "La bibliografia ereditata include le linee guida di streaming di Persona 3 Reload su Atlus, fuori tema per Frogger, e una pagina Sega intitolata soltanto OVERVIEW la cui pertinenza non è documentata nel lotto. Il factual_note segnala anche etichette media non verificate.",
+        "suggested_action": "Verificare bibliografia e abbinamenti media, includendo una fonte pertinente per la candidatura di Frogger del 2026 citata nella prosa. Conservare intanto gli URL originali nell’INPUT; non dichiarare risolti i collegamenti."
+      },
+      "resolution": "Regole degli alligatori, release annuale e bibliografia risolte; integrazione dei metadati e limite della verifica media registrati separatamente.",
+      "output_file": "017-catalog/OUTPUT-017-catalog.json"
+    },
+    {
+      "entry_id": "daily-02-02",
+      "original_issue": {
+        "target_id": "daily-02-02",
+        "problem": "La collocazione del 2 febbraio segue la Giornata mondiale delle zone umide; i metadati indicano agosto 1981 con precisione al mese. La più recente istruzione dell’utente richiede le date di uscita, quindi questa collocazione tematica deve essere riesaminata.",
+        "suggested_action": "Riallineare la voce alla release documentata, mantenendo soltanto la precisione e la regione effettivamente verificate. Registrare fonti ed eventuali divergenze nel report. Non trattare il 2 febbraio come uscita e non modificare direttamente INPUT, template o catalogo."
+      },
+      "resolution": "Regole degli alligatori, release annuale e bibliografia risolte; integrazione dei metadati e limite della verifica media registrati separatamente.",
+      "output_file": "017-catalog/OUTPUT-017-catalog.json"
+    },
+    {
+      "entry_id": "daily-02-02",
+      "original_issue": {
+        "target_id": "main:1",
+        "problem": "La prima card include gli alligatori fra gli appoggi per attraversare il fiume, mentre la seconda li presenta fra i pericoli. Il materiale non spiega in quali condizioni le due funzioni si distinguano.",
+        "suggested_action": "Chiarire il comportamento degli alligatori con informazioni documentate prima di dettagliare la regola. Conservare entrambe le indicazioni senza inventare condizioni, stati o punti sicuri assenti dal lotto."
+      },
+      "resolution": "Regole degli alligatori, release annuale e bibliografia risolte; integrazione dei metadati e limite della verifica media registrati separatamente.",
+      "output_file": "017-catalog/OUTPUT-017-catalog.json"
+    },
+    {
+      "entry_id": "daily-05-05",
+      "original_issue": {
+        "target_id": "main:0",
+        "problem": "Il racconto originale indica il 5 maggio 1980 come uscita di Mystery House, ma event_semantics e factual_note precisano che il giorno di vendita richiede una verifica primaria indipendente. La collocazione nel calendario non conferma la data esatta.",
+        "suggested_action": "Verificare il giorno di uscita commerciale su documentazione primaria prima dell’integrazione cronologica. La riscrittura conserva il 5 maggio come data indicata dal racconto originale, senza presentarla come verifica conclusa; non modificare i metadati a intuito."
+      },
+      "resolution": "Release del 5 maggio 1980 documentata; fonti pertinenti identificate per sostituire i rinvii a Wolfenstein 3D nel successivo import.",
+      "output_file": "016-catalog/OUTPUT-016-catalog.json"
+    },
+    {
+      "entry_id": "daily-05-05",
+      "original_issue": {
+        "target_id": "daily-05-05",
+        "problem": "Due riferimenti bibliografici ereditati rimandano a Wolfenstein 3D: la pagina archiviata di 3D Realms su frag-net.com e il repository id-Software/wolf3d. Non documentano la voce Mystery House; il factual_note segnala inoltre etichette bibliografiche e media non ancora verificati.",
+        "suggested_action": "Controllare separatamente la bibliografia e gli abbinamenti media di Mystery House, proponendo la sostituzione dei riferimenti fuori tema con fonti pertinenti nel passaggio di integrazione. I riferimenti e gli URL originali rimangono conservati nell’INPUT; nessuna associazione è dichiarata corretta senza verifica."
+      },
+      "resolution": "Release del 5 maggio 1980 documentata; fonti pertinenti identificate per sostituire i rinvii a Wolfenstein 3D nel successivo import.",
+      "output_file": "016-catalog/OUTPUT-016-catalog.json"
+    },
+    {
+      "entry_id": "zx-spectrum",
+      "original_issue": {
+        "target_id": "main:1",
+        "problem": "La card richiama gli attributi di colore del Spectrum senza spiegarne il funzionamento. La voce ha due card principali e quattro di feature, ma il materiale tecnico disponibile non permette di descrivere concretamente questo vincolo.",
+        "suggested_action": "Per un eventuale approfondimento dell’hardware, acquisire una spiegazione documentata degli attributi di colore e un esempio pertinente. Le sei card esistenti restano distinte; non applicare automaticamente al computer una quota pensata per le console né inventare dettagli tecnici."
+      },
+      "resolution": "Fatto verificato con fonti primarie pertinenti e corretto in en/it/fr/de/es; dettagli e fonti nel registro fattuale.",
+      "output_file": "018-catalog/OUTPUT-018-catalog.json"
+    },
+    {
+      "entry_id": "wikipedia-106289",
+      "original_issue": {
+        "target_id": "main:1",
+        "problem": "La fonte attribuisce a E.T. un ruolo rilevante nel crash del 1983 e lo colloca fra i maggiori fallimenti commerciali, ma il lotto non offre dati comparativi o una ricostruzione causale che verifichino questi giudizi.",
+        "suggested_action": "Conservare l’attribuzione alla ricostruzione di riferimento e verificare separatamente dimensione del fallimento e ruolo nel crash prima di trasformarli in conclusioni accertate. Non dedurre il rapporto causale dal racconto della discarica o dai numeri del recupero."
+      },
+      "resolution": "Fatto verificato con fonti primarie pertinenti e corretto in en/it/fr/de/es; dettagli e fonti nel registro fattuale.",
+      "output_file": "018-catalog/OUTPUT-018-catalog.json"
+    }
+  ],
+  "primary_visual_evidence_reviewed_by_coordinator": [
+    "Tabella Atari: E.T., vendite nette 1982 e 1983.",
+    "Watson’s, Cincinnati Post, 20 novembre 1982: E.T. disponibile.",
+    "The Video Game Update, dicembre 1982: E.T. spedito in novembre.",
+    "Los Angeles Times, 4 febbraio 1982: conferenza di Ms. Pac-Man.",
+    "Play Meter, 15 febbraio 1982, pagina 84: produzione prevista.",
+    "Schermata ufficiale Nintendo del primo quadro di Donkey Kong."
+  ]
+}

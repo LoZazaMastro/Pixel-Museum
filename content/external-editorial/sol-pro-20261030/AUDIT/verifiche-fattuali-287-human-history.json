@@ -1,0 +1,691 @@
+{
+  "batch_id": "287-human-history",
+  "sources": [
+    {
+      "source_id": "mickey",
+      "url": "https://www.waltdisney.org/blog/birth-mouse",
+      "title": "The Birth of a Mouse",
+      "publisher": "Walt Disney Family Museum",
+      "scope": "Debutto pubblico del 18 novembre 1928 al Colony Theatre; distinta la proiezione di prova di Plane Crazy.",
+      "limitation": "Passaggi pertinenti letti nel testo indicizzato; non dichiarata consultazione integrale di allegati o immagini.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "crash",
+      "url": "https://www.federalreservehistory.org/essays/stock-market-crash-of-1929",
+      "title": "Stock Market Crash of 1929",
+      "publisher": "Federal Reserve History",
+      "scope": "Crollo dell’ottobre 1929 e rapporto non esclusivo con la depressione.",
+      "limitation": "Passaggi pertinenti letti nel testo indicizzato; non dichiarata consultazione integrale di allegati o immagini.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "crash_volume",
+      "url": "https://www.pbs.org/wgbh/americanexperience/features/crash-selected-wall-street-chronology/",
+      "title": "A Selected Wall Street Chronology",
+      "publisher": "PBS / American Experience",
+      "scope": "24 ottobre: 12,9 milioni; 29 ottobre: oltre 16 milioni. La precisione circa 16,4 milioni resta quella dell’INPUT.",
+      "limitation": "Pagina aperta e passaggi pertinenti letti; non adottato il diverso dato percentuale del 28 ottobre riportato dalla pagina.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "ferrari",
+      "url": "https://www.museoalfaromeo.com/en-us/news/Pages/Scuderia-Ferrari.aspx",
+      "title": "Scuderia Ferrari",
+      "publisher": "Museo Storico Alfa Romeo",
+      "scope": "Fondazione il 16 novembre 1929, rapporto con Alfa Romeo.",
+      "limitation": "Passaggi pertinenti letti nel testo indicizzato; non dichiarata consultazione integrale di allegati o immagini.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "pluto",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/plutofact.html",
+      "title": "Pluto Fact Sheet",
+      "publisher": "NASA NSSDC",
+      "scope": "Scoperta di Tombaugh il 18 febbraio 1930.",
+      "limitation": "Passaggi pertinenti letti nel testo indicizzato; non dichiarata consultazione integrale di allegati o immagini.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "kuiper",
+      "url": "https://science.nasa.gov/solar-system/kuiper-belt/facts/",
+      "title": "Kuiper Belt Facts",
+      "publisher": "NASA",
+      "scope": "La relazione fra le orbite di Plutone e Nettuno impedisce incontri ravvicinati.",
+      "limitation": "Passaggi pertinenti letti nel testo indicizzato; non dichiarata consultazione integrale di allegati o immagini.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "esb",
+      "url": "https://www.skyscrapercenter.com/building/wd/261",
+      "title": "Empire State Building",
+      "publisher": "Council on Vertical Urbanism / The Skyscraper Center",
+      "scope": "Altezza architettonica 381 m, totale 443,2 m; 58º nel mondo nella rilevazione 2026.",
+      "limitation": "Pagina aperta; consultate tabella e definizioni delle altezze.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "esb_city",
+      "url": "https://www.skyscrapercenter.com/city/new-york-city",
+      "title": "New York City",
+      "publisher": "Council on Vertical Urbanism / The Skyscraper Center",
+      "scope": "Ottavo posto nella tabella cittadina degli edifici completati.",
+      "limitation": "Pagina e tabella lette; dato della rilevazione del 30 ottobre 2026, non ricostruzione della graduatoria 2025.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "esb_world",
+      "url": "https://www.skyscrapercenter.com/buildings",
+      "title": "The 100 Tallest Completed Buildings in the World in 2026",
+      "publisher": "Council on Vertical Urbanism / The Skyscraper Center",
+      "scope": "58º mondiale; posizione USA 10 ricavata contando i nove edifici USA più alti (sette a New York e due a Chicago).",
+      "limitation": "Tabella letta fino alla posizione 58; posizione USA calcolata, non presentata come campo letto direttamente.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "neutron",
+      "url": "https://www.nobelprize.org/laureate/41",
+      "title": "James Chadwick",
+      "publisher": "Nobel Prize",
+      "scope": "Scoperta del neutrone nel 1932.",
+      "limitation": "Passaggi pertinenti letti nel testo indicizzato; non dichiarata consultazione integrale di allegati o immagini.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "chadwick_paper",
+      "url": "https://www.nature.com/articles/129312a0",
+      "title": "Possible Existence of a Neutron",
+      "publisher": "James Chadwick / Nature",
+      "scope": "Pubblicazione 27 febbraio 1932 distinta dal momento della scoperta.",
+      "limitation": "Passaggi pertinenti letti nel testo indicizzato; non dichiarata consultazione integrale di allegati o immagini.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "cp1",
+      "url": "https://www.ne.anl.gov/About/reactors/early-reactors.shtml",
+      "title": "Early Reactors",
+      "publisher": "Argonne National Laboratory",
+      "scope": "Chicago Pile-1 e prima reazione a catena autosostenuta nel 1942.",
+      "limitation": "Passaggi pertinenti letti nel testo indicizzato; non dichiarata consultazione integrale di allegati o immagini.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "neutron_stars",
+      "url": "https://science.nasa.gov/universe/stories/quick-reads/neutron-stars-are-weird/",
+      "title": "Neutron Stars Are Weird",
+      "publisher": "NASA",
+      "scope": "Massa superiore a quella del Sole e composizione estrema, senza ridurla a una sfera di soli neutroni definitivamente conosciuta.",
+      "limitation": "Passaggi pertinenti letti nel testo indicizzato; non dichiarata consultazione integrale di allegati o immagini.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "idzerda",
+      "url": "https://artsandculture.google.com/story/pcgg-transmitter-the-netherlands-institute-for-sound-and-vision/rAUBRpRPErXSIA?hl=en",
+      "title": "PCGG transmitter",
+      "publisher": "Netherlands Institute for Sound and Vision",
+      "scope": "Emissioni dal 6 novembre 1919; prima forma di modulazione di frequenza nel sistema di Idzerda.",
+      "limitation": "Storia museale aperta e letta. Non assimilato il sistema del 1919 alla FM a banda larga di Armstrong.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "armstrong",
+      "url": "https://exhibitions.library.columbia.edu/exhibits/show/jewels/themes/science/171",
+      "title": "Edwin Howard Armstrong",
+      "publisher": "Columbia University Libraries",
+      "scope": "Sistema FM a banda larga presentato nel 1933; lavoro iniziato prima.",
+      "limitation": "Passaggi pertinenti letti nel testo indicizzato; non dichiarata consultazione integrale di allegati o immagini.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "armstrong_mit",
+      "url": "https://lemelson.mit.edu/resources/edwin-armstrong",
+      "title": "Edwin Armstrong",
+      "publisher": "Lemelson-MIT",
+      "scope": "Sviluppo dagli anni Venti, presentazione nel 1933.",
+      "limitation": "Passaggi pertinenti letti nel testo indicizzato; non dichiarata consultazione integrale di allegati o immagini.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "hre",
+      "url": "https://www.dhm.de/publikation/heiliges-roemisches-reich-deutscher-nation-962-1806/",
+      "title": "Heiliges Römisches Reich Deutscher Nation 962–1806",
+      "publisher": "Deutsches Historisches Museum",
+      "scope": "Datazione del Sacro Romano Impero 962–1806.",
+      "limitation": "Passaggi pertinenti letti nel testo indicizzato; non dichiarata consultazione integrale di allegati o immagini.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "hitler",
+      "url": "https://encyclopedia.ushmm.org/content/en/article/law-on-the-head-of-state-of-the-german-reich-1",
+      "title": "Law on the Head of State of the German Reich",
+      "publisher": "United States Holocaust Memorial Museum",
+      "scope": "Nomina a cancelliere 30 gennaio 1933 e accorpamento delle cariche nel 1934.",
+      "limitation": "Passaggi pertinenti letti nel testo indicizzato; non dichiarata consultazione integrale di allegati o immagini.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "referendum",
+      "url": "https://encyclopedia.ushmm.org/content/en/timeline-event/holocaust/1933-1938/referendum-confirms-hitlers-new-title-and-powers",
+      "title": "Referendum confirms Hitler’s new title and powers",
+      "publisher": "United States Holocaust Memorial Museum",
+      "scope": "Referendum 19 agosto 1934 privo di condizioni libere ed eque.",
+      "limitation": "Passaggi pertinenti letti nel testo indicizzato; non dichiarata consultazione integrale di allegati o immagini.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "olympic",
+      "url": "https://library.olympics.com/Default/basicfilesdownload.ashx?itemGuid=2ECE9BE9-EA5F-4F0F-97DF-84C75B6BC60A",
+      "title": "Berlin 1936 archival documentation",
+      "publisher": "International Olympic Committee",
+      "scope": "Trentesima sessione del CIO nel 1931 e risultato 43 a 16.",
+      "limitation": "Letti i passaggi indicizzati; apertura bloccata dalla pagina JavaScript. Non dichiarata lettura integrale del PDF.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "olympic_election",
+      "url": "https://library.olympics.com/digitalCollection/DigitalCollectionAttachmentDownloadHandler.ashx?documentId=3525924&parentDocumentId=3525922&skipCopyright=true&skipWatermark=true",
+      "title": "Olympic Host Election",
+      "publisher": "International Olympic Committee",
+      "scope": "Voti postali e comunicazione dell’esito il 13 maggio 1931.",
+      "limitation": "Letti i passaggi pertinenti indicizzati; non dichiarata lettura integrale del PDF.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "chaplin",
+      "url": "https://charliechaplin.com/en/films/9-Limelight/articles/6-Filming-Modern-Times",
+      "title": "Filming Modern Times",
+      "publisher": "Charlie Chaplin official website",
+      "scope": "Apertura a New York il 5 febbraio 1936, distinta dalle successive aperture in altre città.",
+      "limitation": "Passaggi pertinenti letti nel testo indicizzato; non dichiarata consultazione integrale di allegati o immagini.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "modern_afi",
+      "url": "https://catalog.afi.com/Film/4149-MODERN-TIMES?cxt=filmography",
+      "title": "Modern Times",
+      "publisher": "American Film Institute",
+      "scope": "Prima di New York il 5 febbraio 1936 e distribuzione successiva il 21 febbraio.",
+      "limitation": "Passaggi pertinenti letti nel testo indicizzato; non dichiarata consultazione integrale di allegati o immagini.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "modern_loc",
+      "url": "https://www.loc.gov/item/event-413061/modern-times-united-artists-1936/2024-07-26/",
+      "title": "Modern Times (United Artists, 1936)",
+      "publisher": "Library of Congress",
+      "scope": "Fra i primi 25 film scelti per il National Film Registry nel 1989.",
+      "limitation": "Passaggi pertinenti letti nel testo indicizzato; non dichiarata consultazione integrale di allegati o immagini.",
+      "accessed_at": "2026-10-30"
+    }
+  ],
+  "decisions": [
+    {
+      "target_id": "history-1928-steamboat-willie",
+      "problem": "Un esordio pubblico non coincide con il primo film realizzato o una proiezione di prova.",
+      "conclusion": "Conservata la distinzione fra Plane Crazy, The Gallopin’ Gaucho e Steamboat Willie; nessun primato assoluto di primo cartone sonoro.",
+      "source_ids": [
+        "mickey"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1929-wall-street-crash-of-1929",
+      "problem": "Il crollo non va presentato come unica causa della Grande depressione.",
+      "conclusion": "Espresso un contributo alla crisi più ampia; mantenuti entrambi i volumi di scambio dell’INPUT.",
+      "source_ids": [
+        "crash",
+        "crash_volume"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1929-scuderia-ferrari-founded",
+      "problem": "Fondazione di una squadra, non nascita di Enzo Ferrari né prima automobile Ferrari.",
+      "conclusion": "Evento del 16 novembre 1929 confermato e correttamente identificato.",
+      "source_ids": [
+        "ferrari"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1930-pluto",
+      "problem": "La voce è dedicata alla scoperta di Plutone, non alla nascita di Tombaugh.",
+      "conclusion": "Mantenuta scoperta 18 febbraio 1930; rapporto delle orbite distinto dalla mera sovrapposizione delle distanze dal Sole.",
+      "source_ids": [
+        "pluto",
+        "kuiper"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1931-empire-state-building",
+      "problem": "Altezza di 1.250 piedi arrotondata a 380 m e classifica datata 2025.",
+      "conclusion": "Usati 381 m di altezza architettonica e 443,2 m totali. La classifica è aggiornata esplicitamente alla rilevazione ottobre 2026: 8 città, 10 USA, 58 mondo. Il dato 59 del 2025 non viene dichiarato storicamente falso in base alla sola tabella 2026.",
+      "source_ids": [
+        "esb",
+        "esb_city",
+        "esb_world"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1932-neutron",
+      "problem": "Trinity denominata arma invece di test; stelle di neutroni descritte come composizione pura certa; fissione presentata genericamente come processo ordinario di sintesi stellare.",
+      "conclusion": "Trinity è il primo test; stelle ricche di neutroni senza assoluto compositivo. Distinti rilascio di neutroni nella fissione e in alcune fusioni e contributo della cattura neutronica alla formazione degli elementi. Conservati tutti gli eventi cronologici.",
+      "source_ids": [
+        "neutron",
+        "chadwick_paper",
+        "cp1",
+        "neutron_stars"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1933-fm-broadcasting",
+      "problem": "Il 1933 è presentato come inizio dello sviluppo FM a banda larga.",
+      "conclusion": "Corretto in presentazione dopo anni di sviluppo. Conservato l’antecedente Idzerda del novembre 1919, distinto dal sistema moderno.",
+      "source_ids": [
+        "idzerda",
+        "armstrong",
+        "armstrong_mit"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1933-nazi-germany",
+      "problem": "Datazione del Sacro Romano Impero e referendum nazista potenzialmente presentato come legittimazione democratica.",
+      "conclusion": "Usata datazione 962–1806 del DHM e chiarite le condizioni non libere del referendum; propaganda millenaria attribuita al regime. Presa di Berlino attribuita alle forze sovietiche.",
+      "source_ids": [
+        "hre",
+        "hitler",
+        "referendum"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1936-1936-summer-olympics",
+      "problem": "Sessione CIO 29 anziché 30; affermazione malformata sul voto delle città e sul primato di seconda e ultima occasione.",
+      "conclusion": "Corretta la sessione e sostituito il passaggio sul voto con la procedura documentata: membri assenti per posta, risultato 43–16, 13 maggio 1931. Non si dichiara verificato il primato seconda/ultima né una regola non corroborata.",
+      "source_ids": [
+        "olympic",
+        "olympic_election"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1936-modern-times-film",
+      "problem": "Prima di una città e successiva distribuzione devono restare distinte.",
+      "conclusion": "Prima pubblica New York 5 febbraio 1936 proposta separatamente. Confermata inclusione fra i 25 titoli iniziali del Registry nel 1989.",
+      "source_ids": [
+        "chaplin",
+        "modern_afi",
+        "modern_loc"
+      ],
+      "text_applied": true
+    }
+  ],
+  "metadata_proposals": [
+    {
+      "target_id": "history-1928-steamboat-willie",
+      "field": "timeline_date",
+      "original": {
+        "year": 1928,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1928,
+        "month": 11,
+        "day": 18,
+        "precision": "day",
+        "event_semantics": "Prima distribuzione pubblica di Steamboat Willie",
+        "region": "New York, Stati Uniti"
+      },
+      "source_ids": [
+        "mickey"
+      ],
+      "reason": "Proposta separata: date, INPUT, TEMPLATE e catalogo non modificati. Le voci dedicate a un evento restano associate all’evento."
+    },
+    {
+      "target_id": "history-1929-wall-street-crash-of-1929",
+      "field": "timeline_date",
+      "original": {
+        "year": 1929,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1929,
+        "month": 10,
+        "day": 0,
+        "precision": "month",
+        "event_semantics": "Crollo della Borsa di New York",
+        "region": "Stati Uniti"
+      },
+      "source_ids": [
+        "crash"
+      ],
+      "reason": "Proposta separata: date, INPUT, TEMPLATE e catalogo non modificati. Le voci dedicate a un evento restano associate all’evento."
+    },
+    {
+      "target_id": "history-1930-pluto",
+      "field": "timeline_date",
+      "original": {
+        "year": 1930,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1930,
+        "month": 2,
+        "day": 18,
+        "precision": "day",
+        "event_semantics": "Scoperta di Plutone",
+        "region": "Lowell Observatory, Stati Uniti"
+      },
+      "source_ids": [
+        "pluto"
+      ],
+      "reason": "Proposta separata: date, INPUT, TEMPLATE e catalogo non modificati. Le voci dedicate a un evento restano associate all’evento."
+    },
+    {
+      "target_id": "history-1933-nazi-germany",
+      "field": "timeline_date",
+      "original": {
+        "year": 1933,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1933,
+        "month": 1,
+        "day": 30,
+        "precision": "day",
+        "event_semantics": "Nomina di Hitler a cancelliere e avvio del regime nazista",
+        "region": "Germania"
+      },
+      "source_ids": [
+        "hitler"
+      ],
+      "reason": "Proposta separata: date, INPUT, TEMPLATE e catalogo non modificati. Le voci dedicate a un evento restano associate all’evento."
+    },
+    {
+      "target_id": "history-1936-1936-summer-olympics",
+      "field": "timeline_date",
+      "original": {
+        "year": 1936,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1936,
+        "month": 8,
+        "day": 1,
+        "precision": "day",
+        "event_semantics": "Apertura dei Giochi della XI Olimpiade",
+        "region": "Berlino, Germania"
+      },
+      "source_ids": [
+        "olympic"
+      ],
+      "reason": "Proposta separata: date, INPUT, TEMPLATE e catalogo non modificati. Le voci dedicate a un evento restano associate all’evento."
+    },
+    {
+      "target_id": "history-1936-modern-times-film",
+      "field": "timeline_date",
+      "original": {
+        "year": 1936,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1936,
+        "month": 2,
+        "day": 5,
+        "precision": "day",
+        "event_semantics": "Prima pubblica del film Modern Times",
+        "region": "New York, Stati Uniti"
+      },
+      "source_ids": [
+        "modern_afi"
+      ],
+      "reason": "Proposta separata: date, INPUT, TEMPLATE e catalogo non modificati. Le voci dedicate a un evento restano associate all’evento."
+    }
+  ],
+  "editorial_review": {
+    "fidelity": "Conservati nuclei informativi, crediti, titoli dei film, quantità, avvenimenti e articolazione delle dieci card. Le correzioni sono motivate singolarmente.",
+    "style": "EN salvato per primo; adattamenti autonomi IT/FR/DE/ES, titoli specifici e paragrafi brevi dove necessario.",
+    "attributions": "Fonti e licenze originali restano negli INPUT protetti. Nessuna consultazione di immagini o video dichiarata.",
+    "english_written_first": true,
+    "languages": [
+      "en",
+      "it",
+      "fr",
+      "de",
+      "es"
+    ],
+    "entry_count": 10,
+    "card_count_per_language": 10,
+    "reviewed_at": "2026-10-30T03:45:34.551905+00:00",
+    "english_summary_word_range": [
+      32,
+      37
+    ],
+    "structural_checks": "Schema, ID, ordine, numero di card e cinque lingue verificati dal validatore. Tutti i titoli presenti; nessun HTML o Markdown nei testi."
+  },
+  "status": "completed",
+  "validation": {
+    "valid": true,
+    "batch_id": "287-human-history",
+    "completed": true,
+    "entry_count": 10,
+    "card_count_per_language": 10,
+    "language_count": 5,
+    "translated_card_count": 50,
+    "entry_card_counts": {
+      "history-1928-steamboat-willie": 1,
+      "history-1929-wall-street-crash-of-1929": 1,
+      "history-1929-scuderia-ferrari-founded": 1,
+      "history-1930-pluto": 1,
+      "history-1931-empire-state-building": 1,
+      "history-1932-neutron": 1,
+      "history-1933-fm-broadcasting": 1,
+      "history-1933-nazi-germany": 1,
+      "history-1936-1936-summer-olympics": 1,
+      "history-1936-modern-times-film": 1
+    },
+    "issue_counts": {
+      "history-1928-steamboat-willie": 0,
+      "history-1929-wall-street-crash-of-1929": 0,
+      "history-1929-scuderia-ferrari-founded": 0,
+      "history-1930-pluto": 0,
+      "history-1931-empire-state-building": 0,
+      "history-1932-neutron": 0,
+      "history-1933-fm-broadcasting": 0,
+      "history-1933-nazi-germany": 0,
+      "history-1936-1936-summer-olympics": 0,
+      "history-1936-modern-times-film": 0
+    },
+    "summary_checks": [
+      {
+        "entry_id": "history-1928-steamboat-willie",
+        "feature_id": null,
+        "english_summary_words": 33
+      },
+      {
+        "entry_id": "history-1929-wall-street-crash-of-1929",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "history-1929-scuderia-ferrari-founded",
+        "feature_id": null,
+        "english_summary_words": 33
+      },
+      {
+        "entry_id": "history-1930-pluto",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "history-1931-empire-state-building",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "history-1932-neutron",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "history-1933-fm-broadcasting",
+        "feature_id": null,
+        "english_summary_words": 32
+      },
+      {
+        "entry_id": "history-1933-nazi-germany",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "history-1936-1936-summer-olympics",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "history-1936-modern-times-film",
+        "feature_id": null,
+        "english_summary_words": 32
+      }
+    ],
+    "editorial_review": [
+      "history-1928-steamboat-willie/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1928-steamboat-willie/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1928-steamboat-willie/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1928-steamboat-willie/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1929-wall-street-crash-of-1929/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1929-wall-street-crash-of-1929/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1929-wall-street-crash-of-1929/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1929-wall-street-crash-of-1929/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1929-scuderia-ferrari-founded/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1929-scuderia-ferrari-founded/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1929-scuderia-ferrari-founded/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1929-scuderia-ferrari-founded/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1930-pluto/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1930-pluto/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1930-pluto/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1930-pluto/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1932-neutron/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1932-neutron/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1932-neutron/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1932-neutron/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1933-fm-broadcasting/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1933-fm-broadcasting/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1933-fm-broadcasting/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1933-fm-broadcasting/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1933-nazi-germany/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1933-nazi-germany/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1933-nazi-germany/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1933-nazi-germany/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1936-1936-summer-olympics/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1936-1936-summer-olympics/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1936-1936-summer-olympics/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1936-1936-summer-olympics/main/es: main title changed; check that this is a descriptive title and not an altered official name"
+    ],
+    "failures": []
+  },
+  "output_sha256": "616c2c33297d61ae4d0d5f237f344ddc09eb4d8db67fc6aacde27654cf2ca340",
+  "expansion_assessments": [
+    {
+      "target_id": "history-1928-steamboat-willie",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1929-wall-street-crash-of-1929",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1929-scuderia-ferrari-founded",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1930-pluto",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1931-empire-state-building",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1932-neutron",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1933-fm-broadcasting",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1933-nazi-germany",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1936-1936-summer-olympics",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1936-modern-times-film",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    }
+  ],
+  "root_review": {
+    "date": "2026-10-30",
+    "scope": "Confronto mirato delle segnalazioni numeriche e della riduzione di lunghezza; rilettura di Beatmania e KOF 97, classifiche e date delle voci storiche. Non equivale a consultazione indipendente di ogni fonte dei lotti.",
+    "result": "Le differenze numeriche esaminate dipendono da cifre scritte in lettere, punteggiatura locale o correzioni documentate. KOF 97 conserva piattaforme, arco narrativo, crediti e riferimenti; nessuna omissione sostanziale rilevata nelle card segnalate."
+  }
+}

@@ -1,0 +1,1805 @@
+{
+  "schema_version": 1,
+  "written": "2026-10-21",
+  "written_utc": "2026-10-21T00:51:23.078814+00:00",
+  "status": "complete_prose_batch_pending_independent_source_and_placement_review",
+  "scope": "Eight previously unwritten plan commissions, 32 complete cards; three existing-parent attachment proposals and five distinct-subject proposals pending independent review/media. No editorial signoff or new destination count claimed.",
+  "audit_policy": "Two distinct primary publications per feature. Charge=max(whitespace words, Unicode lexical words), capped at 195 including full feature title/summary and relevant headings/body. Same interview chapters, mirrors and aliases count together. No direct quotations.",
+  "source_snapshot_receipt": "build/research/editorial-practices-10/source-download-receipt.json",
+  "source_snapshot_note": "Sixteen actual substantive response-byte snapshots. Original PDF raster pages inspected where material. Failed exploratory 403 sources are excluded and retained separately as candidate records. Availability does not license media reuse.",
+  "source_reuse_scan": {
+    "other_original_batch_same_url_matches": [],
+    "other_original_batch_same_id_matches": [],
+    "same_publication_grouping": "All Coktel interview participants/chapters form one publication group. Different Black Enterprise 1982 and 1985 articles are distinct publications. Entire IGDA guide/appendices form one group; existing Lawson/Strong and Tramis/Xbox/CNC sources are not reused."
+  },
+  "entries": [
+    {
+      "id": "feature-roberta-williams-authorship",
+      "title": "Drawing a way into the story",
+      "summary": "Roberta Williams connected paper plans, commands and performances.",
+      "year": 1980,
+      "body": [
+        "A player could see a chest and still fail to open it. Ken Williams recalled the problem in his introduction to The Roberta Williams Anthology: the program might recognise several commands while missing another perfectly reasonable phrase. Roberta wanted players to manipulate an object directly, without guessing the programmer's vocabulary. King's Quest V's interface answered that frustration. The picture became a place for action as well as description, changing the small negotiation between a player, an imagined object and the software interpreting an intention.",
+        "More elaborate storytelling also changed who made the adventure. Ken contrasted Mystery House's small partnership with the roughly fifty names credited on King's Quest VI. Recording its CD dialogue brought professional actors into a branching script that he remembered running beyond seven hundred pages. A character might die in one recorded passage and return unharmed in another. The performers had to understand possible paths rather than one continuous film. A story that seemed personal on screen required coordination among writers, artists, programmers and actors behind it.",
+        "When interviewed in 2022, Roberta described planning Mystery House on a large sheet of paper before asking Ken to program it. She mapped the house, added pictures and worked through what a player might discover. The paper let her organise a place without first learning to write the software that would display it. It also made the proposal shareable: the designer could show the programmer how rooms and events belonged together. Authorship began with arranging the experience, before commands became a working game.",
+        "That interview caught another project during development: a graphical, virtual reality interpretation of Colossal Cave. Roberta was returning to a text adventure whose spaces she had once imagined. She described having to understand its nuances again as a designer, rather than only as a player. Revisiting a familiar game revealed further layers in its design. The task was to make those relationships work in a different form, carrying an adventure understood through typed words into an experience built from graphics and virtual reality."
+      ],
+      "story_headings": [
+        "The troublesome verb",
+        "A script branches",
+        "A map before code",
+        "Returning to the cave"
+      ],
+      "related_ids": [
+        "roberta-williams"
+      ],
+      "era_id": "personal",
+      "kind": "feature",
+      "layout": "story",
+      "language": "en",
+      "date": {
+        "precision": "year"
+      },
+      "event_semantics": "1980 anchors the existing Mystery House biography, not every episode here. The interface and voice-production examples are later projects; the final interview concerns development in 2022, not a claimed 2022 release.",
+      "editorial_mode": "original_additive_feature",
+      "editorial_credit": "Original English feature written for Pixel Museum. Primary makers, players, practitioners and publications are credited per card; media rights require separate review.",
+      "cards": [
+        {
+          "body_index": 0,
+          "heading": "The troublesome verb",
+          "source_ids": [
+            "ken96"
+          ],
+          "citations": [
+            {
+              "source_id": "ken96",
+              "url": "https://sierrahelp.com/Misc/IntroductionToRWAnth.html",
+              "locator": "Anthology introduction: 1989 parser frustration, chest/trunk/box commands and King's Quest V's direct interface."
+            }
+          ],
+          "media_brief": {
+            "type": "photograph_primary_document_or_labelled_explanation",
+            "description": "Authentic King's Quest V interface screenshot, exact edition identified; show an actionable object rather than a generic portrait.",
+            "existing_context_ids": [
+              "roberta-williams"
+            ],
+            "selected_asset": null,
+            "status": "research_brief_only_identity_rights_resolution_and_card_fit_review_required"
+          },
+          "inference_note": "Original narrative and connections from cited primary testimony or authored publication. Research limits are in metadata/notes; no universal player-response or new photographic evidence claimed."
+        },
+        {
+          "body_index": 1,
+          "heading": "A script branches",
+          "source_ids": [
+            "ken96"
+          ],
+          "citations": [
+            {
+              "source_id": "ken96",
+              "url": "https://sierrahelp.com/Misc/IntroductionToRWAnth.html",
+              "locator": "Anthology introduction: Mystery House production compared with King's Quest VI credits and CD voice recording; branching script and actors' confusion."
+            }
+          ],
+          "media_brief": {
+            "type": "photograph_primary_document_or_labelled_explanation",
+            "description": "A cleared King's Quest VI voice/script or credits artefact, with exact edition and contributor attribution.",
+            "existing_context_ids": [
+              "roberta-williams"
+            ],
+            "selected_asset": null,
+            "status": "research_brief_only_identity_rights_resolution_and_card_fit_review_required"
+          },
+          "inference_note": "Original narrative and connections from cited primary testimony or authored publication. Research limits are in metadata/notes; no universal player-response or new photographic evidence claimed."
+        },
+        {
+          "body_index": 2,
+          "heading": "A map before code",
+          "source_ids": [
+            "roberta22"
+          ],
+          "citations": [
+            {
+              "source_id": "roberta22",
+              "url": "https://www.megavisions.net/interview-roberta-williams-details-her-love-for-colossal-cave/",
+              "locator": "2022 interview: Mystery House planning on a large sheet of paper, drawing/mapping and discussion with Ken."
+            }
+          ],
+          "media_brief": {
+            "type": "photograph_primary_document_or_labelled_explanation",
+            "description": "An authenticated Mystery House design sheet if obtainable; otherwise label a photographed original game map as a later document, never invent Roberta's paper.",
+            "existing_context_ids": [
+              "roberta-williams"
+            ],
+            "selected_asset": null,
+            "status": "research_brief_only_identity_rights_resolution_and_card_fit_review_required"
+          },
+          "inference_note": "Original narrative and connections from cited primary testimony or authored publication. Research limits are in metadata/notes; no universal player-response or new photographic evidence claimed."
+        },
+        {
+          "body_index": 3,
+          "heading": "Returning to the cave",
+          "source_ids": [
+            "roberta22"
+          ],
+          "citations": [
+            {
+              "source_id": "roberta22",
+              "url": "https://www.megavisions.net/interview-roberta-williams-details-her-love-for-colossal-cave/",
+              "locator": "2022 pre-release interview: reawakening her spirit for adventure, understanding nuances again as a designer translating to graphics and VR; angle means aspect, not a camera specification."
+            }
+          ],
+          "media_brief": {
+            "type": "photograph_primary_document_or_labelled_explanation",
+            "description": "Official Colossal Cave development comparison with edition/date stated; a 2023 release capture must not be labelled a 2022 build.",
+            "existing_context_ids": [
+              "roberta-williams"
+            ],
+            "selected_asset": null,
+            "status": "research_brief_only_identity_rights_resolution_and_card_fit_review_required"
+          },
+          "inference_note": "Original narrative and connections from cited primary testimony or authored publication. Research limits are in metadata/notes; no universal player-response or new photographic evidence claimed."
+        }
+      ],
+      "source_ids": [
+        "ken96",
+        "roberta22"
+      ],
+      "sources": [
+        {
+          "id": "ken96",
+          "title": "Introduction to The Roberta Williams Anthology",
+          "url": "https://sierrahelp.com/Misc/IntroductionToRWAnth.html",
+          "publisher": "Ken Williams / Sierra product preface, transcription archived by The Sierra Help Pages",
+          "publication_date": null,
+          "source_type": "Primary participant product preface, retrospective",
+          "checked": "2026-10-21",
+          "source_budget_group": "ken96",
+          "verification": "Author read cited primary passages; independent factual review pending.",
+          "limits": "Retrieved transcription has no reliable original publication date displayed. Anthology context is historical, not the website footer date. The account contains inaccurate broad early-computing/Adventure claims; exclude MIT origin, universal firsts, market superlatives and unsupported chronology. Use only identified interface/recording recollections, attributed to Ken.",
+          "rights": "Bibliographic citation only. New original prose contains no direct quotation. Source text, photographs, documents, recordings and game assets retain their own rights; availability is not reproduction permission.",
+          "snapshot": {
+            "path": "build/research/editorial-practices-10/ken96.html",
+            "sha256": "9a24f3c457599ab73f6bda839df9817ecdde0581762a6d5683f36cfb30475ed7",
+            "content_status": "actual_source_content"
+          }
+        },
+        {
+          "id": "roberta22",
+          "title": "Roberta Williams details her love for Colossal Cave",
+          "url": "https://www.megavisions.net/interview-roberta-williams-details-her-love-for-colossal-cave/",
+          "publisher": "Sam Fronsman / Mega Visions, direct interview with Ken and Roberta Williams",
+          "publication_date": "2022-08-29",
+          "source_type": "Primary participant interview, retrospective and contemporary development discussion",
+          "checked": "2026-10-21",
+          "source_budget_group": "roberta22",
+          "verification": "Author read cited primary passages; independent factual review pending.",
+          "limits": "The 2022 fall-launch forecast is not an actual release date. Exclude no-other-computer-games claim and conflicting recollected early chronology. Understand every nuance and angle means aspects of the work, not a camera specification. Paper layout and renewed designer reading are attributed memories.",
+          "rights": "Bibliographic citation only. New original prose contains no direct quotation. Source text, photographs, documents, recordings and game assets retain their own rights; availability is not reproduction permission.",
+          "snapshot": {
+            "path": "build/research/editorial-practices-10/roberta22.html",
+            "sha256": "ff3d9ea3faad5c57f60ccb9de0233d6498df11883df812693d2927f273821e2a",
+            "content_status": "actual_source_content"
+          }
+        }
+      ],
+      "source_budget_audit": [
+        {
+          "source_budget_group": "ken96",
+          "body_indices": [
+            0,
+            1
+          ],
+          "derived_words_including_full_title_summary_and_relevant_headings": 190,
+          "maximum_words": 195,
+          "whitespace_words": 190,
+          "unicode_lexical_words": 195,
+          "charged_words": 195,
+          "verbatim_quoted_words": 0
+        },
+        {
+          "source_budget_group": "roberta22",
+          "body_indices": [
+            2,
+            3
+          ],
+          "derived_words_including_full_title_summary_and_relevant_headings": 188,
+          "maximum_words": 195,
+          "whitespace_words": 188,
+          "unicode_lexical_words": 188,
+          "charged_words": 188,
+          "verbatim_quoted_words": 0
+        }
+      ],
+      "media_status": "No images or other assets selected. Four individual briefs remain open for identity, rights, resolution and contextual fit.",
+      "integration": {
+        "mode": "proposed_attachment",
+        "proposed_parent_id": "roberta-williams",
+        "recommendation": "Attach to the existing biography. The base already explains Mystery House's pictures and Ken's programming; new cards add parser vocabulary, branching voice production, paper planning and the dated return to Colossal Cave.",
+        "overwrite_existing_body": false,
+        "preserve_original_playhub_sections": true,
+        "requires_semantic_merge_review": true,
+        "net_new_destination_claim": false
+      },
+      "review_status": {
+        "narrative": "complete_draft",
+        "independent_factual_review": "pending",
+        "media_rights_and_card_fit": "pending",
+        "native_layout_review": "pending",
+        "assembly": "not_requested_in_this_batch"
+      },
+      "editorial_audit": {
+        "overlapping_existing_articles_read_in_full": [
+          {
+            "id": "roberta-williams",
+            "title": "Roberta Williams",
+            "section_count": 4,
+            "body_sha256": "04aab72eb161d07cd18f7a8e141012b47ff4a0ca40a46022dbedc146c944b379",
+            "read_in_full": true,
+            "existing_attached_features_read": []
+          }
+        ],
+        "overlap_snapshot_catalog_sha256": "09e11938d211443f9f5df7431807ca2ea8429de711a0830d8727b268dad6cf9a",
+        "snapshot_note": "Authoring comparison snapshot, not current-master claim after concurrent parent work.",
+        "hash_encoding": "SHA256 of UTF8 compact JSON body array, ensure_ascii=False, separators comma/colon",
+        "placement_status": "proposal_requires_independent_review_no_master_changes",
+        "body_sha256": "767993a702423abf153d809d6689fd98d8be049ecbd4efbf91a0889d2bf7c907"
+      }
+    },
+    {
+      "id": "feature-video-soft-business",
+      "title": "VideoSoft beyond the cartridge",
+      "summary": "Jerry Lawson negotiated room to build his own business.",
+      "year": 1982,
+      "body": [
+        "In December 1982, Black Enterprise found Jerry Lawson running VideoSoft with a practical concern: who would benefit from a good idea? He described starting the company with four designers and private funding sufficient to finish its first projects. Three games had already been completed for larger software firms, but contracts prevented him from naming them. Payment combined a fixed fee with royalties after release. The celebrated engineer was negotiating a less visible part of making games: financing the work and deciding how its proceeds would return.",
+        "Lawson's plans extended beyond writing another cartridge. The same interview described a Smart Cart system intended to let people compete from home over telephone lines. He was also considering a cheaper cartridge and wanted VideoSoft to manufacture and distribute games itself. These were ambitions described while the business was young. The difference between finishing a program for someone else and reaching customers directly involved more than technical invention. Distribution, production costs and a working connection between distant players all appeared in the company's proposed future.",
+        "By August 1985, Black Enterprise was asking what happened after the boom. Lawson described a changed VideoSoft, making more hardware designs and application software as the games market contracted. His experience organising Fairchild's game division had encouraged him to work independently, but independence meant adapting the product as customers changed. The follow-up catches an engineer making a business decision in the middle of uncertainty. The company that had sought game contracts was looking for other ways to put its technical skills to work.",
+        "Money remained a design constraint at the scale of the whole company. Lawson told the magazine that he had underestimated how difficult raising capital would be for a minority technology business. Investors had become wary after the industry's downturn, and a convincing idea did not automatically unlock funding. His proposed response was to make arrangements with larger companies while pursuing unfamiliar technical territory. The decision joined two needs: enough commercial support to continue working, and enough freedom to keep attempting something that other firms had not done."
+      ],
+      "story_headings": [
+        "Working under contract",
+        "Plans beyond one room",
+        "Changing the work",
+        "Finding the money"
+      ],
+      "related_ids": [
+        "channel-f"
+      ],
+      "era_id": "personal",
+      "kind": "feature",
+      "layout": "story",
+      "language": "en",
+      "date": {
+        "precision": "year"
+      },
+      "event_semantics": "1982 is the date of the first contemporary interview. Conflicting incorporation/start dates in the two magazines and later archives are not resolved by inventing one founding day. The later two cards are explicitly August 1985.",
+      "editorial_mode": "original_additive_feature",
+      "editorial_credit": "Original English feature written for Pixel Museum. Primary makers, players, practitioners and publications are credited per card; media rights require separate review.",
+      "cards": [
+        {
+          "body_index": 0,
+          "heading": "Working under contract",
+          "source_ids": [
+            "lawson82"
+          ],
+          "citations": [
+            {
+              "source_id": "lawson82",
+              "url": "https://www.digitpress.com/archives/black_enterprise/black_enterprise_12_82.pdf",
+              "locator": "December 1982, printed p44 / PDF p6: four designers, private funding, three completed contract games, confidentiality, fee and post-release royalties."
+            }
+          ],
+          "media_brief": {
+            "type": "photograph_primary_document_or_labelled_explanation",
+            "description": "Authenticated VideoSoft contract or company document, with confidential details and document reproduction rights reviewed separately.",
+            "existing_context_ids": [
+              "channel-f"
+            ],
+            "selected_asset": null,
+            "status": "research_brief_only_identity_rights_resolution_and_card_fit_review_required"
+          },
+          "inference_note": "Original narrative and connections from cited primary testimony or authored publication. Research limits are in metadata/notes; no universal player-response or new photographic evidence claimed."
+        },
+        {
+          "body_index": 1,
+          "heading": "Plans beyond one room",
+          "source_ids": [
+            "lawson82"
+          ],
+          "citations": [
+            {
+              "source_id": "lawson82",
+              "url": "https://www.digitpress.com/archives/black_enterprise/black_enterprise_12_82.pdf",
+              "locator": "December 1982, printed p44 / PDF p6: future distribution/manufacture plans, Smart Cart telephone competition and cheaper cartridge aspiration."
+            }
+          ],
+          "media_brief": {
+            "type": "photograph_primary_document_or_labelled_explanation",
+            "description": "A surviving identified Smart Cart proposal if held; do not substitute a modern modem or imply this announced system shipped.",
+            "existing_context_ids": [
+              "channel-f"
+            ],
+            "selected_asset": null,
+            "status": "research_brief_only_identity_rights_resolution_and_card_fit_review_required"
+          },
+          "inference_note": "Original narrative and connections from cited primary testimony or authored publication. Research limits are in metadata/notes; no universal player-response or new photographic evidence claimed."
+        },
+        {
+          "body_index": 2,
+          "heading": "Changing the work",
+          "source_ids": [
+            "lawson85"
+          ],
+          "citations": [
+            {
+              "source_id": "lawson85",
+              "url": "https://www.digitpress.com/archives/black_enterprise/black_enterprise_9_85.pdf",
+              "locator": "August 1985, printed pp109–110 / PDF pp1–2: Lawson on organising Fairchild's division, VideoSoft's move toward hardware designs and application software."
+            }
+          ],
+          "media_brief": {
+            "type": "photograph_primary_document_or_labelled_explanation",
+            "description": "Verified VideoSoft application/hardware document from the later business, or the dated 1985 interview page only if reproduction is cleared.",
+            "existing_context_ids": [
+              "channel-f"
+            ],
+            "selected_asset": null,
+            "status": "research_brief_only_identity_rights_resolution_and_card_fit_review_required"
+          },
+          "inference_note": "Original narrative and connections from cited primary testimony or authored publication. Research limits are in metadata/notes; no universal player-response or new photographic evidence claimed."
+        },
+        {
+          "body_index": 3,
+          "heading": "Finding the money",
+          "source_ids": [
+            "lawson85"
+          ],
+          "citations": [
+            {
+              "source_id": "lawson85",
+              "url": "https://www.digitpress.com/archives/black_enterprise/black_enterprise_9_85.pdf",
+              "locator": "August 1985, printed p110 / PDF p2: financing difficulties, minority firms, larger-company arrangements and future strategy."
+            }
+          ],
+          "media_brief": {
+            "type": "photograph_primary_document_or_labelled_explanation",
+            "description": "Lawson portrait with exact date and photographer, or a cleared contemporary company artefact; do not illustrate financing with invented office imagery.",
+            "existing_context_ids": [
+              "channel-f"
+            ],
+            "selected_asset": null,
+            "status": "research_brief_only_identity_rights_resolution_and_card_fit_review_required"
+          },
+          "inference_note": "Original narrative and connections from cited primary testimony or authored publication. Research limits are in metadata/notes; no universal player-response or new photographic evidence claimed."
+        }
+      ],
+      "source_ids": [
+        "lawson82",
+        "lawson85"
+      ],
+      "sources": [
+        {
+          "id": "lawson82",
+          "title": "Cash In On The Video Game Craze",
+          "url": "https://www.digitpress.com/archives/black_enterprise/black_enterprise_12_82.pdf",
+          "publisher": "S. Lee Hilliard / Black Enterprise; contemporary direct Lawson interview, scanned by Digital Press",
+          "publication_date": "1982-12",
+          "source_type": "Contemporary primary interview and reported business account",
+          "checked": "2026-10-21",
+          "source_budget_group": "lawson82",
+          "verification": "Author read cited primary passages; independent factual review pending.",
+          "limits": "Original printed pp41–44 and46 / PDF pp3–7 read as scanned pages. Four designers and contract terms are reported testimony. Smart Cart, cheaper cartridge and own distribution are proposals, not demonstrated releases. Exclude erroneous 1977 Fairchild/graphics-first chronology and market forecasts as facts. Start date differs from later incorporation records; no founding-day decision.",
+          "rights": "Bibliographic citation only. New original prose contains no direct quotation. Source text, photographs, documents, recordings and game assets retain their own rights; availability is not reproduction permission.",
+          "snapshot": {
+            "path": "build/research/editorial-practices-10/lawson82.pdf",
+            "sha256": "f8b7003c91ad2c91ed60acff4a308135e9eb9442094ea3ec687613993e7a9e4e",
+            "content_status": "actual_source_content"
+          }
+        },
+        {
+          "id": "lawson85",
+          "title": "The Mixed Signals in High Tech's Future",
+          "url": "https://www.digitpress.com/archives/black_enterprise/black_enterprise_9_85.pdf",
+          "publisher": "David Squires / Black Enterprise; contemporary direct Lawson interview, scanned by Digital Press",
+          "publication_date": "1985-08",
+          "source_type": "Contemporary primary founder interview, follow-up business report",
+          "checked": "2026-10-21",
+          "source_budget_group": "lawson85",
+          "verification": "Author read cited primary passages; independent factual review pending.",
+          "limits": "Original printed pp109–110 / PDF pp1–2 visually read; printed August 1985 is authoritative for issue, despite archive filename 9_85. Testimony about financing and business-community priorities is the founder’s perspective, not an independent funding audit. The stated 1981 founding date is not adopted.",
+          "rights": "Bibliographic citation only. New original prose contains no direct quotation. Source text, photographs, documents, recordings and game assets retain their own rights; availability is not reproduction permission.",
+          "snapshot": {
+            "path": "build/research/editorial-practices-10/lawson85.pdf",
+            "sha256": "37f6d0234fbc2f0504899c95e58d0f45d9317cf51e01642ddd14d120c9ed0a40",
+            "content_status": "actual_source_content"
+          }
+        }
+      ],
+      "source_budget_audit": [
+        {
+          "source_budget_group": "lawson82",
+          "body_indices": [
+            0,
+            1
+          ],
+          "derived_words_including_full_title_summary_and_relevant_headings": 191,
+          "maximum_words": 195,
+          "whitespace_words": 191,
+          "unicode_lexical_words": 193,
+          "charged_words": 193,
+          "verbatim_quoted_words": 0
+        },
+        {
+          "source_budget_group": "lawson85",
+          "body_indices": [
+            2,
+            3
+          ],
+          "derived_words_including_full_title_summary_and_relevant_headings": 189,
+          "maximum_words": 195,
+          "whitespace_words": 189,
+          "unicode_lexical_words": 192,
+          "charged_words": 192,
+          "verbatim_quoted_words": 0
+        }
+      ],
+      "media_status": "No images or other assets selected. Four individual briefs remain open for identity, rights, resolution and contextual fit.",
+      "integration": {
+        "mode": "proposed_attachment",
+        "proposed_parent_id": "channel-f",
+        "recommendation": "Attach to Lawson's existing destination. Existing base/nested text already covers founding and cancelled work; this narrower account adds contemporary contractual terms, announced networking plans, adaptation and the founder's financing testimony.",
+        "overwrite_existing_body": false,
+        "preserve_original_playhub_sections": true,
+        "requires_semantic_merge_review": true,
+        "net_new_destination_claim": false
+      },
+      "review_status": {
+        "narrative": "complete_draft",
+        "independent_factual_review": "pending",
+        "media_rights_and_card_fit": "pending",
+        "native_layout_review": "pending",
+        "assembly": "not_requested_in_this_batch"
+      },
+      "editorial_audit": {
+        "overlapping_existing_articles_read_in_full": [
+          {
+            "id": "channel-f",
+            "title": "Jerry Lawson and the Channel F team",
+            "section_count": 4,
+            "body_sha256": "165d56bb0f5b1a05799138e08bb04c3b9e3500f2f72b5d6913677a946c761f68",
+            "read_in_full": true,
+            "existing_attached_features_read": [
+              {
+                "id": "feature-lawson-cartridge-team",
+                "body_sha256": "95638e1e6ed132bdb0f62a26c29905fb6bcc9c3c3569d3fc0884d43383d60bed",
+                "sections": 4
+              }
+            ]
+          }
+        ],
+        "overlap_snapshot_catalog_sha256": "09e11938d211443f9f5df7431807ca2ea8429de711a0830d8727b268dad6cf9a",
+        "snapshot_note": "Authoring comparison snapshot, not current-master claim after concurrent parent work.",
+        "hash_encoding": "SHA256 of UTF8 compact JSON body array, ensure_ascii=False, separators comma/colon",
+        "placement_status": "proposal_requires_independent_review_no_master_changes",
+        "body_sha256": "9f055b5e460b322f968154d3c37769f93449ad30a2e9608ab7d1ec120bd4f581"
+      }
+    },
+    {
+      "id": "feature-french-graphic-adventures",
+      "title": "Drawing the rules of an adventure",
+      "summary": "French creators connected unusual pictures with different kinds of action.",
+      "year": 1991,
+      "body": [
+        "Pierre Gilhodes remembered an early Gobliiins proposal in which monsters climbed on one another to reach enemies. The action idea soon became an adventure, but his appetite for peculiar situations remained. In a 2022 interview, he recalled disagreements with writers who preferred knights rescuing a princess. His own proposed puzzles could involve ingredients for a cake that put an enemy to sleep. Those discarded ideas reveal the direction he wanted to explore: drawings that invited strange experiments, with comic invention shaping the actions a player might attempt.",
+        "Gilhodes's universe also depended on another author's work. In the same interview collection, Muriel Tramis described supervising projects at Coktel Vision and writing Gobliiins dialogue. There was little of it in the first game, more in the second, and considerably more in the third and Woodruff. An increasingly talkative world required another kind of writing alongside the visual situations. Her account separates the roles without separating the result: characters could look like Gilhodes's creations while speaking through words developed by a collaborator.",
+        "Éric Chahi approached Another World's images through a technical bargain. In a 2018 interview, he explained that a few polygon points could describe a large shape using less memory than a bitmap. He gave up fine detail and gained room for animation and immediate cuts. Black and white illustration helped him think about form, even though his game used colour. The economical shapes were therefore part of production and expression together: what the machine could store helped determine what the imagined world would look like.",
+        "Chahi also distinguished two ways to interrupt play. Heart of Darkness used longer cinematics to tell its story, sometimes moving smoothly from a playable view into a scene. In Another World, most cuts lasted seconds: the monster appearing, or a gun being taken in jail. He described them as punctuation around an action or event. Keeping these glimpses brief let them sit closely beside the player's movements. The camera could direct attention without turning each important moment into a lengthy departure from controlling the character."
+      ],
+      "story_headings": [
+        "Monsters change direction",
+        "Giving pictures a voice",
+        "Shapes save memory",
+        "A cut becomes punctuation"
+      ],
+      "related_ids": [],
+      "era_id": "dimensions",
+      "kind": "feature",
+      "layout": "story",
+      "language": "en",
+      "date": {
+        "precision": "year"
+      },
+      "event_semantics": "1991 anchors Gobliiins's arrival as identified in the 2022 publication's studio chronology; the craft testimony is retrospective, from 2022 and 2018. Unrealised concepts remain identified as proposals.",
+      "editorial_mode": "original_additive_feature",
+      "editorial_credit": "Original English feature written for Pixel Museum. Primary makers, players, practitioners and publications are credited per card; media rights require separate review.",
+      "cards": [
+        {
+          "body_index": 0,
+          "heading": "Monsters change direction",
+          "source_ids": [
+            "gilhodes22"
+          ],
+          "citations": [
+            {
+              "source_id": "gilhodes22",
+              "url": "https://www.superpouvoir.com/rest-in-play-retour-sur-le-studio-coktel-vision-et-entretien-avec-roland-oskian-fondateur-muriel-tramis-pierre-gilhodes-et-padg/",
+              "locator": "Pierre Gilhodes interview: origin proposal, stacked monsters, rejected knights/princess scenario and explicitly unrealised cake puzzle."
+            }
+          ],
+          "media_brief": {
+            "type": "photograph_primary_document_or_labelled_explanation",
+            "description": "Cleared Gobliiins concept drawing or exact game screenshot; never present a discarded cake/stacking proposal as a shipped puzzle.",
+            "existing_context_ids": [],
+            "selected_asset": null,
+            "status": "research_brief_only_identity_rights_resolution_and_card_fit_review_required"
+          },
+          "inference_note": "Original narrative and connections from cited primary testimony or authored publication. Research limits are in metadata/notes; no universal player-response or new photographic evidence claimed."
+        },
+        {
+          "body_index": 1,
+          "heading": "Giving pictures a voice",
+          "source_ids": [
+            "gilhodes22"
+          ],
+          "citations": [
+            {
+              "source_id": "gilhodes22",
+              "url": "https://www.superpouvoir.com/rest-in-play-retour-sur-le-studio-coktel-vision-et-entretien-avec-roland-oskian-fondateur-muriel-tramis-pierre-gilhodes-et-padg/",
+              "locator": "Muriel Tramis interview: Gobliiins question, Gilhodes's universe, her project-management/dialogue role and growth of dialogue across sequels and Woodruff."
+            }
+          ],
+          "media_brief": {
+            "type": "photograph_primary_document_or_labelled_explanation",
+            "description": "Edition-specific Gobliiins 2/3 dialogue screen with Gilhodes/Tramis and publisher credits, not Méwilo imagery already serving the separate Tramis biography.",
+            "existing_context_ids": [],
+            "selected_asset": null,
+            "status": "research_brief_only_identity_rights_resolution_and_card_fit_review_required"
+          },
+          "inference_note": "Original narrative and connections from cited primary testimony or authored publication. Research limits are in metadata/notes; no universal player-response or new photographic evidence claimed."
+        },
+        {
+          "body_index": 2,
+          "heading": "Shapes save memory",
+          "source_ids": [
+            "chahi18"
+          ],
+          "citations": [
+            {
+              "source_id": "chahi18",
+              "url": "https://www.nintendoworldreport.com/interview/47746/interview-with-eric-chahi-on-another-world-for-nintendo-switch",
+              "locator": "Chahi interview opening: 2D polygon memory choice, detail tradeoff, large animations, cuts and black-and-white illustration influences."
+            }
+          ],
+          "media_brief": {
+            "type": "photograph_primary_document_or_labelled_explanation",
+            "description": "Actual Another World polygon scene from an identified edition; a clearly labelled explanatory overlay could identify shapes without claiming original development artefacts.",
+            "existing_context_ids": [],
+            "selected_asset": null,
+            "status": "research_brief_only_identity_rights_resolution_and_card_fit_review_required"
+          },
+          "inference_note": "Original narrative and connections from cited primary testimony or authored publication. Research limits are in metadata/notes; no universal player-response or new photographic evidence claimed."
+        },
+        {
+          "body_index": 3,
+          "heading": "A cut becomes punctuation",
+          "source_ids": [
+            "chahi18"
+          ],
+          "citations": [
+            {
+              "source_id": "chahi18",
+              "url": "https://www.nintendoworldreport.com/interview/47746/interview-with-eric-chahi-on-another-world-for-nintendo-switch",
+              "locator": "Chahi interview cinematics question: Heart of Darkness transitions/long scenes versus Another World monster/jail short punctuations, except its introduction."
+            }
+          ],
+          "media_brief": {
+            "type": "photograph_primary_document_or_labelled_explanation",
+            "description": "A sourced sequence of Another World jail/monster frames, rights and spoilers considered; identify a later remaster if used.",
+            "existing_context_ids": [],
+            "selected_asset": null,
+            "status": "research_brief_only_identity_rights_resolution_and_card_fit_review_required"
+          },
+          "inference_note": "Original narrative and connections from cited primary testimony or authored publication. Research limits are in metadata/notes; no universal player-response or new photographic evidence claimed."
+        }
+      ],
+      "source_ids": [
+        "gilhodes22",
+        "chahi18"
+      ],
+      "sources": [
+        {
+          "id": "gilhodes22",
+          "title": "Rest in Play: Coktel Vision interviews",
+          "url": "https://www.superpouvoir.com/rest-in-play-retour-sur-le-studio-coktel-vision-et-entretien-avec-roland-oskian-fondateur-muriel-tramis-pierre-gilhodes-et-padg/",
+          "publisher": "Quentin Le Moal / Superpouvoir; direct interviews with Pierre Gilhodes, Muriel Tramis and colleagues",
+          "publication_date": "2022-08-01",
+          "source_type": "Primary participant oral-history interview collection",
+          "checked": "2026-10-21",
+          "source_budget_group": "gilhodes22",
+          "verification": "Author read cited primary passages; independent factual review pending.",
+          "limits": "All people, chapters and interview answers on this publication are one budget group. Discarded stacking/cake proposals remain discarded; do not pass them as shipped puzzles. Tramis dialogue and project roles are her own testimony. Existing Tramis feature uses different 2021/CNC publications and covers different work; 1991 Gobliiins date is explicitly in this publication’s chronology.",
+          "rights": "Bibliographic citation only. New original prose contains no direct quotation. Source text, photographs, documents, recordings and game assets retain their own rights; availability is not reproduction permission.",
+          "snapshot": {
+            "path": "build/research/editorial-practices-10/gilhodes22.html",
+            "sha256": "61903570457dd6de3aa42e3733014642f56f70ea7a3b2223ae38112c891b5a8f",
+            "content_status": "actual_source_content"
+          }
+        },
+        {
+          "id": "chahi18",
+          "title": "Interview with Eric Chahi on Another World for Nintendo Switch",
+          "url": "https://www.nintendoworldreport.com/interview/47746/interview-with-eric-chahi-on-another-world-for-nintendo-switch",
+          "publisher": "Carmine Red / Nintendo World Report, direct Éric Chahi interview",
+          "publication_date": "2018-07-16",
+          "source_type": "Primary creator interview, retrospective",
+          "checked": "2026-10-21",
+          "source_budget_group": "chahi18",
+          "verification": "Author read cited primary passages; independent factual review pending.",
+          "limits": "Read complete Q&A. Technical tradeoffs and intended pacing are creator testimony, not a runtime performance test or universal rule. Short cutscenes have the explicitly stated introduction exception. Heart of Darkness comparison does not imply identical production/animation technology.",
+          "rights": "Bibliographic citation only. New original prose contains no direct quotation. Source text, photographs, documents, recordings and game assets retain their own rights; availability is not reproduction permission.",
+          "snapshot": {
+            "path": "build/research/editorial-practices-10/chahi18.html",
+            "sha256": "6100d5d48aeff67938a9589698243cf282c0a666b16dbdf587676c37867a16e1",
+            "content_status": "actual_source_content"
+          }
+        }
+      ],
+      "source_budget_audit": [
+        {
+          "source_budget_group": "gilhodes22",
+          "body_indices": [
+            0,
+            1
+          ],
+          "derived_words_including_full_title_summary_and_relevant_headings": 192,
+          "maximum_words": 195,
+          "whitespace_words": 192,
+          "unicode_lexical_words": 195,
+          "charged_words": 195,
+          "verbatim_quoted_words": 0
+        },
+        {
+          "source_budget_group": "chahi18",
+          "body_indices": [
+            2,
+            3
+          ],
+          "derived_words_including_full_title_summary_and_relevant_headings": 193,
+          "maximum_words": 195,
+          "whitespace_words": 193,
+          "unicode_lexical_words": 195,
+          "charged_words": 195,
+          "verbatim_quoted_words": 0
+        }
+      ],
+      "media_status": "No images or other assets selected. Four individual briefs remain open for identity, rights, resolution and contextual fit.",
+      "integration": {
+        "mode": "proposed_distinct_subject_pending_review_and_media",
+        "proposed_parent_id": null,
+        "recommendation": "Distinct comparative craft proposal pending review and media. No exact Gobliiins/Another World destination exists in the authoring snapshot. Existing Tramis feature was read: it covers Méwilo/Freedom/Caribbean authorship, not these dialogue, drawing and polygon decisions. Do not attach this whole comparison to that biography or to an unrelated game.",
+        "overwrite_existing_body": false,
+        "preserve_original_playhub_sections": true,
+        "requires_semantic_merge_review": true,
+        "net_new_destination_claim": false
+      },
+      "review_status": {
+        "narrative": "complete_draft",
+        "independent_factual_review": "pending",
+        "media_rights_and_card_fit": "pending",
+        "native_layout_review": "pending",
+        "assembly": "not_requested_in_this_batch"
+      },
+      "editorial_audit": {
+        "overlapping_existing_articles_read_in_full": [
+          {
+            "id": "feature-muriel-tramis-history",
+            "title": "Whose history becomes playable?",
+            "section_count": 4,
+            "body_sha256": "52891c84065246b66e3befcab0a04ea85a39d82440f3ef0e88443dd68c102f91",
+            "read_in_full": true,
+            "comparison_source": "Existing authoring batch; no canonical parent inferred."
+          }
+        ],
+        "overlap_snapshot_catalog_sha256": "09e11938d211443f9f5df7431807ca2ea8429de711a0830d8727b268dad6cf9a",
+        "snapshot_note": "Authoring comparison snapshot, not current-master claim after concurrent parent work.",
+        "hash_encoding": "SHA256 of UTF8 compact JSON body array, ensure_ascii=False, separators comma/colon",
+        "placement_status": "proposal_requires_independent_review_no_master_changes",
+        "body_sha256": "8ce40687f38c573483d9513a92dce75cd877e1c408691f576874e2ff0163640f"
+      }
+    },
+    {
+      "id": "feature-mobile-before-appstores",
+      "title": "A little room for Snake",
+      "summary": "Taneli Armanto made play fit around a telephone.",
+      "year": 1997,
+      "body": [
+        "When Nokia divided up work on a new phone's interface, Taneli Armanto's colleagues took features such as the phonebook, calendar and calculator. He recalled getting the games partly because someone thought a relative of his worked in that field. He was happy with the assignment, although his enthusiasm had mainly been for board games. The brief placed entertainment beside ordinary telephone functions. Making something enjoyable meant working within a device whose screen, keys and limited program memory had other jobs to do as well.",
+        "Armanto remembered considering Tetris before a licensing discussion stalled over payment for every handset sold. Snake offered another direction, drawing on a game he had encountered on a Macintosh. Its movement also left room for a small kindness: just before a collision, he allowed a brief extra pause so the player could still turn. The delay was tiny, but the decision mattered on a fast, small display. A design shaped by severe limits could still give its player one more chance to recover from danger.",
+        "Asked about the old game in 2015, Armanto said the original Snake contained the features he had wanted to put into it. The limits were part of making a complete package, rather than a list of omissions waiting for a larger device. He described games as one required item in the Nokia 6110 specification. The familiar result came from treating that modest assignment seriously: a player needed something legible and satisfying inside the handset that was already going into a pocket for other reasons.",
+        "The 2015 interview also followed Snake Rewind, a new collaboration with Rumilus. Armanto described preserving the earlier game's feel while allowing additional depth, with another programmer handling the implementation. Rewinding a mistake turned the old moment before a crash into a more expansive possibility. He did not remember who first proposed that feature. The uncertainty leaves the collaboration visible: returning to a famous game involved other people's ideas and skills, rather than simply copying a lone creator's original program onto a newer kind of phone."
+      ],
+      "story_headings": [
+        "A task beside the phonebook",
+        "A moment to turn",
+        "Enough for the handset",
+        "Returning with other hands"
+      ],
+      "related_ids": [],
+      "era_id": "dimensions",
+      "kind": "feature",
+      "layout": "story",
+      "language": "en",
+      "date": {
+        "precision": "year"
+      },
+      "event_semantics": "1997 refers to the handset/Snake introduction era stated in the retrospective interviews, not a verified exact retail release day. The 2019 article internally alternates late-1997 introduction and early-1998 arrival; no day/month assertion is made. The final two cards discuss a separate 2015 interview and revival.",
+      "editorial_mode": "original_additive_feature",
+      "editorial_credit": "Original English feature written for Pixel Museum. Primary makers, players, practitioners and publications are credited per card; media rights require separate review.",
+      "cards": [
+        {
+          "body_index": 0,
+          "heading": "A task beside the phonebook",
+          "source_ids": [
+            "armanto19"
+          ],
+          "citations": [
+            {
+              "source_id": "armanto19",
+              "url": "https://melmagazine.com/en-us/story/snake-nokia-6110-oral-history-taneli-armanto",
+              "locator": "2019 Armanto direct interview: 1995 UI assignments, mistaken relative connection, board-game enthusiasm and handset memory/screen/buttons."
+            }
+          ],
+          "media_brief": {
+            "type": "photograph_primary_document_or_labelled_explanation",
+            "description": "Actual Nokia 6110 with verified original Snake screen and handset provenance; no modern Snake clone presented as the original.",
+            "existing_context_ids": [],
+            "selected_asset": null,
+            "status": "research_brief_only_identity_rights_resolution_and_card_fit_review_required"
+          },
+          "inference_note": "Original narrative and connections from cited primary testimony or authored publication. Research limits are in metadata/notes; no universal player-response or new photographic evidence claimed."
+        },
+        {
+          "body_index": 1,
+          "heading": "A moment to turn",
+          "source_ids": [
+            "armanto19"
+          ],
+          "citations": [
+            {
+              "source_id": "armanto19",
+              "url": "https://melmagazine.com/en-us/story/snake-nokia-6110-oral-history-taneli-armanto",
+              "locator": "2019 Armanto direct interview: Tetris per-phone royalty disagreement, earlier Macintosh Snake and extra collision-turn delay."
+            }
+          ],
+          "media_brief": {
+            "type": "photograph_primary_document_or_labelled_explanation",
+            "description": "Exact original game capture showing an approaching collision; a labelled diagram may explain the grace moment without claiming measured timings.",
+            "existing_context_ids": [],
+            "selected_asset": null,
+            "status": "research_brief_only_identity_rights_resolution_and_card_fit_review_required"
+          },
+          "inference_note": "Original narrative and connections from cited primary testimony or authored publication. Research limits are in metadata/notes; no universal player-response or new photographic evidence claimed."
+        },
+        {
+          "body_index": 2,
+          "heading": "Enough for the handset",
+          "source_ids": [
+            "armanto15"
+          ],
+          "citations": [
+            {
+              "source_id": "armanto15",
+              "url": "https://arkade.com.br/entrevistamos-taneli-armanto-criador-classico-jogo-celular/",
+              "locator": "2015 Portuguese interview: original feature completeness under limits and Nokia 6110 product specification requiring games."
+            }
+          ],
+          "media_brief": {
+            "type": "photograph_primary_document_or_labelled_explanation",
+            "description": "Contemporary 6110 user documentation naming games, with publisher/date and reproduction terms reviewed.",
+            "existing_context_ids": [],
+            "selected_asset": null,
+            "status": "research_brief_only_identity_rights_resolution_and_card_fit_review_required"
+          },
+          "inference_note": "Original narrative and connections from cited primary testimony or authored publication. Research limits are in metadata/notes; no universal player-response or new photographic evidence claimed."
+        },
+        {
+          "body_index": 3,
+          "heading": "Returning with other hands",
+          "source_ids": [
+            "armanto15"
+          ],
+          "citations": [
+            {
+              "source_id": "armanto15",
+              "url": "https://arkade.com.br/entrevistamos-taneli-armanto-criador-classico-jogo-celular/",
+              "locator": "2015 Portuguese interview: Rumilus collaboration/programmer, old feel and increased depth, rewind and uncertainty about who proposed it."
+            }
+          ],
+          "media_brief": {
+            "type": "photograph_primary_document_or_labelled_explanation",
+            "description": "Official Snake Rewind screenshot and correct Rumilus credits, clearly dated 2015 rather than mixed into the old handset view.",
+            "existing_context_ids": [],
+            "selected_asset": null,
+            "status": "research_brief_only_identity_rights_resolution_and_card_fit_review_required"
+          },
+          "inference_note": "Original narrative and connections from cited primary testimony or authored publication. Research limits are in metadata/notes; no universal player-response or new photographic evidence claimed."
+        }
+      ],
+      "source_ids": [
+        "armanto19",
+        "armanto15"
+      ],
+      "sources": [
+        {
+          "id": "armanto19",
+          "title": "The Oral History of Snake on Nokia Phones",
+          "url": "https://melmagazine.com/en-us/story/snake-nokia-6110-oral-history-taneli-armanto",
+          "publisher": "Quinn Myers / MEL Magazine, direct Taneli Armanto interview",
+          "publication_date": "2019-09-12",
+          "source_type": "Primary developer interview, retrospective",
+          "checked": "2026-10-21",
+          "source_budget_group": "armanto19",
+          "verification": "Author read cited primary passages; independent factual review pending.",
+          "limits": "Internal date variation late 1997 introduction/early 1998 arrival is recorded; no exact launch date adopted. Licensing negotiation is participant recollection, not current legal advice. No original invention-of-Snake claim. Delay is qualitative, not a fresh timing measurement. Smartphone-era interview is not a present employer statement.",
+          "rights": "Bibliographic citation only. New original prose contains no direct quotation. Source text, photographs, documents, recordings and game assets retain their own rights; availability is not reproduction permission.",
+          "snapshot": {
+            "path": "build/research/editorial-practices-10/armanto19.html",
+            "sha256": "b131b8b5fcf9be829fccfe1d17514eb8c2feb015933bf34afb095ad3fa30e3eb",
+            "content_status": "actual_source_content"
+          }
+        },
+        {
+          "id": "armanto15",
+          "title": "Entrevistamos Taneli Armanto, criador do clássico jogo de celular Snake",
+          "url": "https://arkade.com.br/entrevistamos-taneli-armanto-criador-classico-jogo-celular/",
+          "publisher": "Junior Candido / Arkade, direct Taneli Armanto interview in Portuguese",
+          "publication_date": "2015-05-14",
+          "source_type": "Primary developer interview, contemporary revival discussion",
+          "checked": "2026-10-21",
+          "source_budget_group": "armanto15",
+          "verification": "Author read cited primary passages; independent factual review pending.",
+          "limits": "Direct Portuguese source read. Classic completeness, Nokia requirement, Rumilus programmer Tom and rewind uncertainty are preserved. Do not turn the publisher’s 1976/1997 framing into a verified universal first or retail day. No claim Armanto wrote all new code or conceived rewind alone.",
+          "rights": "Bibliographic citation only. New original prose contains no direct quotation. Source text, photographs, documents, recordings and game assets retain their own rights; availability is not reproduction permission.",
+          "snapshot": {
+            "path": "build/research/editorial-practices-10/armanto15.html",
+            "sha256": "4bca1bb57e1e83bd6aca1173cb16b1ee4aba6f7bbf2d379821642ffac9e840b8",
+            "content_status": "actual_source_content"
+          }
+        }
+      ],
+      "source_budget_audit": [
+        {
+          "source_budget_group": "armanto19",
+          "body_indices": [
+            0,
+            1
+          ],
+          "derived_words_including_full_title_summary_and_relevant_headings": 191,
+          "maximum_words": 195,
+          "whitespace_words": 191,
+          "unicode_lexical_words": 193,
+          "charged_words": 193,
+          "verbatim_quoted_words": 0
+        },
+        {
+          "source_budget_group": "armanto15",
+          "body_indices": [
+            2,
+            3
+          ],
+          "derived_words_including_full_title_summary_and_relevant_headings": 190,
+          "maximum_words": 195,
+          "whitespace_words": 190,
+          "unicode_lexical_words": 193,
+          "charged_words": 193,
+          "verbatim_quoted_words": 0
+        }
+      ],
+      "media_status": "No images or other assets selected. Four individual briefs remain open for identity, rights, resolution and contextual fit.",
+      "integration": {
+        "mode": "proposed_distinct_subject_pending_review_and_media",
+        "proposed_parent_id": null,
+        "recommendation": "Distinct mobile design subject pending review/media; no matching Snake, Armanto or Nokia destination in the snapshot. Do not use an unrelated modern smartphone game as parent.",
+        "overwrite_existing_body": false,
+        "preserve_original_playhub_sections": true,
+        "requires_semantic_merge_review": true,
+        "net_new_destination_claim": false
+      },
+      "review_status": {
+        "narrative": "complete_draft",
+        "independent_factual_review": "pending",
+        "media_rights_and_card_fit": "pending",
+        "native_layout_review": "pending",
+        "assembly": "not_requested_in_this_batch"
+      },
+      "editorial_audit": {
+        "overlapping_existing_articles_read_in_full": [],
+        "overlap_snapshot_catalog_sha256": "09e11938d211443f9f5df7431807ca2ea8429de711a0830d8727b268dad6cf9a",
+        "snapshot_note": "Authoring comparison snapshot, not current-master claim after concurrent parent work.",
+        "hash_encoding": "SHA256 of UTF8 compact JSON body array, ensure_ascii=False, separators comma/colon",
+        "placement_status": "proposal_requires_independent_review_no_master_changes",
+        "body_sha256": "2e39b4cb480794a85f70cd0996dcf181515269425d632956013cd833d76bf811"
+      }
+    },
+    {
+      "id": "feature-twine-personal-stories",
+      "title": "Writing with links",
+      "summary": "Anna Anthropy and Porpentine made structure part of storytelling.",
+      "year": 2018,
+      "body": [
+        "For Anna Anthropy, a story's arrangement could carry as much meaning as its sentences. In a 2018 interview about Queers in Love at the End of the World, she connected its formal limits with living inside structures beyond one's control. A person still creates something meaningful within them. That relationship made the interaction part of the subject: the reader's room to act was shaped before any particular choice appeared. The work asked what could be shared in the space available, rather than promising unlimited freedom.",
+        "Anthropy taught interactive fiction by reading it aloud with students. She described Winter Lake's Rat Chaos as useful both narratively and structurally, alongside works by other writers. Looking at how a piece was assembled made its form available for discussion, rather than leaving the software as an opaque container for words. The classroom joined reading with making. In 2018 she was also preparing a children's book about building games with Twine, extending that invitation to a younger audience learning to make its own games.",
+        "Porpentine's 2024 account of writing begins before a dialogue answer is chosen. An offered option can already reveal what the world assumes about the person asking it. Discussing Pathologic and Disco Elysium, Porpentine valued questions that expose the player's own expectations and dialogue connected to resources or consequences. A list of possible replies becomes part of worldbuilding. Even a cautious attempt to stay neutral can say something about a character. Choosing words is therefore also an encounter with the rules and assumptions surrounding them.",
+        "Time gave that writing another pressure. Porpentine described food, sleep and other people as clocks that push a character forward. Ordinary needs connect an unfamiliar setting to recognisable experience: a fantastical person still has to decide what to eat. Writing that unfolds line by line can slow the reader's urge to categorise a strange situation immediately. These rhythms matter alongside branching paths. A story can make a world feel inhabited through repeated needs and interruptions, as well as through the destinations its links reveal."
+      ],
+      "story_headings": [
+        "Time inside a choice",
+        "Reading the structure",
+        "Options reveal a world",
+        "Ordinary needs keep time"
+      ],
+      "related_ids": [],
+      "era_id": "everywhere",
+      "kind": "feature",
+      "layout": "story",
+      "language": "en",
+      "date": {
+        "precision": "year"
+      },
+      "event_semantics": "2018 anchors Anthropy's interview and teaching testimony; Porpentine's statements are separately dated 2024. This is a comparative practice feature, not an assertion that these games or the Twine tool launched in 2018.",
+      "editorial_mode": "original_additive_feature",
+      "editorial_credit": "Original English feature written for Pixel Museum. Primary makers, players, practitioners and publications are credited per card; media rights require separate review.",
+      "cards": [
+        {
+          "body_index": 0,
+          "heading": "Time inside a choice",
+          "source_ids": [
+            "anthropy18"
+          ],
+          "citations": [
+            {
+              "source_id": "anthropy18",
+              "url": "https://sub-q.com/author-interview-anna-anthropy-2/",
+              "locator": "2018 email interview: Queers in Love question, temporality, structures beyond control and meaningful creation within them."
+            }
+          ],
+          "media_brief": {
+            "type": "photograph_primary_document_or_labelled_explanation",
+            "description": "Creator-authorised capture of Queers in Love, with exact version and text rights checked separately; no fabricated passage or unverified timer measurement.",
+            "existing_context_ids": [],
+            "selected_asset": null,
+            "status": "research_brief_only_identity_rights_resolution_and_card_fit_review_required"
+          },
+          "inference_note": "Original narrative and connections from cited primary testimony or authored publication. Research limits are in metadata/notes; no universal player-response or new photographic evidence claimed."
+        },
+        {
+          "body_index": 1,
+          "heading": "Reading the structure",
+          "source_ids": [
+            "anthropy18"
+          ],
+          "citations": [
+            {
+              "source_id": "anthropy18",
+              "url": "https://sub-q.com/author-interview-anna-anthropy-2/",
+              "locator": "2018 interview: teaching games, reading Rat Chaos in class, structural/narrative interest and other recommended authors. Closing question: forthcoming children's Twine book, not asserted published in 2018."
+            }
+          ],
+          "media_brief": {
+            "type": "photograph_primary_document_or_labelled_explanation",
+            "description": "Cleared Rat Chaos or classroom/document image tied to the work; don't invent a photograph of Anthropy's class.",
+            "existing_context_ids": [],
+            "selected_asset": null,
+            "status": "research_brief_only_identity_rights_resolution_and_card_fit_review_required"
+          },
+          "inference_note": "Original narrative and connections from cited primary testimony or authored publication. Research limits are in metadata/notes; no universal player-response or new photographic evidence claimed."
+        },
+        {
+          "body_index": 2,
+          "heading": "Options reveal a world",
+          "source_ids": [
+            "porpentine24"
+          ],
+          "citations": [
+            {
+              "source_id": "porpentine24",
+              "url": "https://isismagazine.org.uk/2024/04/i-will-only-accept-being-my-own-genre-an-interview-with-porpentine/",
+              "locator": "2024 interview first answer: dialogue options as worldbuilding, Pathologic/Disco Elysium, assumptions, resources and consequences."
+            }
+          ],
+          "media_brief": {
+            "type": "photograph_primary_document_or_labelled_explanation",
+            "description": "An exact authorised Porpentine interactive-fiction passage showing deliberate option language; third-party Pathologic/Disco examples require their own rights and precise contextual labels.",
+            "existing_context_ids": [],
+            "selected_asset": null,
+            "status": "research_brief_only_identity_rights_resolution_and_card_fit_review_required"
+          },
+          "inference_note": "Original narrative and connections from cited primary testimony or authored publication. Research limits are in metadata/notes; no universal player-response or new photographic evidence claimed."
+        },
+        {
+          "body_index": 3,
+          "heading": "Ordinary needs keep time",
+          "source_ids": [
+            "porpentine24"
+          ],
+          "citations": [
+            {
+              "source_id": "porpentine24",
+              "url": "https://isismagazine.org.uk/2024/04/i-will-only-accept-being-my-own-genre-an-interview-with-porpentine/",
+              "locator": "2024 interview time/pacing and mundane/estrangement answers: food/sleep/other people as clocks, ordinary needs and line-by-line writing."
+            }
+          ],
+          "media_brief": {
+            "type": "photograph_primary_document_or_labelled_explanation",
+            "description": "An authenticated passage from the creator's work with ordinary routines or paced text; avoid generic fantasy art or invented screenshots.",
+            "existing_context_ids": [],
+            "selected_asset": null,
+            "status": "research_brief_only_identity_rights_resolution_and_card_fit_review_required"
+          },
+          "inference_note": "Original narrative and connections from cited primary testimony or authored publication. Research limits are in metadata/notes; no universal player-response or new photographic evidence claimed."
+        }
+      ],
+      "source_ids": [
+        "anthropy18",
+        "porpentine24"
+      ],
+      "sources": [
+        {
+          "id": "anthropy18",
+          "title": "Author Interview: Anna Anthropy",
+          "url": "https://sub-q.com/author-interview-anna-anthropy-2/",
+          "publisher": "Natalia Theodoridou / sub-Q Magazine, email interview with Anna Anthropy",
+          "publication_date": "2018-10-23",
+          "source_type": "Primary writer and educator interview",
+          "checked": "2026-10-21",
+          "source_budget_group": "anthropy18",
+          "verification": "Author read cited primary passages; independent factual review pending.",
+          "limits": "Interview conducted October 2018. No timer duration is asserted: this source does not state one. Forthcoming children’s Twine book is a 2018 development plan, not proof of publication that year. Formal interpretation stays tied to her account, not claimed universal player response. Failed exploratory That Shelf source is excluded.",
+          "rights": "Bibliographic citation only. New original prose contains no direct quotation. Source text, photographs, documents, recordings and game assets retain their own rights; availability is not reproduction permission.",
+          "snapshot": {
+            "path": "build/research/editorial-practices-10/anthropy18.html",
+            "sha256": "b2ce5b0c15bf2619df4a6f0b8844053f5b22b6aa56e4b4b6cf895e83e96ad572",
+            "content_status": "actual_source_content"
+          }
+        },
+        {
+          "id": "porpentine24",
+          "title": "I will only accept being my own genre: an interview with Porpentine",
+          "url": "https://isismagazine.org.uk/2024/04/i-will-only-accept-being-my-own-genre-an-interview-with-porpentine/",
+          "publisher": "The Isis / questions Catherine Brewer; page byline Ari Quasney, art Seraph Lee; interview Porpentine Charity Heartscape",
+          "publication_date": "2024-04-22",
+          "source_type": "Primary writer interview about craft",
+          "checked": "2026-10-21",
+          "source_budget_group": "porpentine24",
+          "verification": "Author read cited primary passages; independent factual review pending.",
+          "limits": "Read full interview; use first craft answers about options, time and mundane needs, not provocative jokes as factual assertions. Pathologic and Disco Elysium are her examples, not games she is credited with designing. Do not claim all media here use Twine or that announced collaborations have shipped.",
+          "rights": "Bibliographic citation only. New original prose contains no direct quotation. Source text, photographs, documents, recordings and game assets retain their own rights; availability is not reproduction permission.",
+          "snapshot": {
+            "path": "build/research/editorial-practices-10/porpentine24.html",
+            "sha256": "f3aa4ee862fd6f9f2d358f54ff89502cf2daff3b47132f3354dd611a7b9b3340",
+            "content_status": "actual_source_content"
+          }
+        }
+      ],
+      "source_budget_audit": [
+        {
+          "source_budget_group": "anthropy18",
+          "body_indices": [
+            0,
+            1
+          ],
+          "derived_words_including_full_title_summary_and_relevant_headings": 188,
+          "maximum_words": 195,
+          "whitespace_words": 188,
+          "unicode_lexical_words": 193,
+          "charged_words": 193,
+          "verbatim_quoted_words": 0
+        },
+        {
+          "source_budget_group": "porpentine24",
+          "body_indices": [
+            2,
+            3
+          ],
+          "derived_words_including_full_title_summary_and_relevant_headings": 188,
+          "maximum_words": 195,
+          "whitespace_words": 188,
+          "unicode_lexical_words": 191,
+          "charged_words": 191,
+          "verbatim_quoted_words": 0
+        }
+      ],
+      "media_status": "No images or other assets selected. Four individual briefs remain open for identity, rights, resolution and contextual fit.",
+      "integration": {
+        "mode": "proposed_distinct_subject_pending_review_and_media",
+        "proposed_parent_id": null,
+        "recommendation": "Distinct authored-form proposal pending review/media. No existing Anthropy, Porpentine or Twine destination was found. Specific interviews ground two writers' methods rather than claiming a complete history of Twine.",
+        "overwrite_existing_body": false,
+        "preserve_original_playhub_sections": true,
+        "requires_semantic_merge_review": true,
+        "net_new_destination_claim": false
+      },
+      "review_status": {
+        "narrative": "complete_draft",
+        "independent_factual_review": "pending",
+        "media_rights_and_card_fit": "pending",
+        "native_layout_review": "pending",
+        "assembly": "not_requested_in_this_batch"
+      },
+      "editorial_audit": {
+        "overlapping_existing_articles_read_in_full": [],
+        "overlap_snapshot_catalog_sha256": "09e11938d211443f9f5df7431807ca2ea8429de711a0830d8727b268dad6cf9a",
+        "snapshot_note": "Authoring comparison snapshot, not current-master claim after concurrent parent work.",
+        "hash_encoding": "SHA256 of UTF8 compact JSON body array, ensure_ascii=False, separators comma/colon",
+        "placement_status": "proposal_requires_independent_review_no_master_changes",
+        "body_sha256": "bada44d0b3ba3c0871911273d7c64b99d3dd37ec030bb83531c5847e8dfac5d5"
+      }
+    },
+    {
+      "id": "feature-indigenous-self-representation",
+      "title": "Making a journey with its tellers",
+      "summary": "When Rivers Were Trails joined material craft with local knowledge.",
+      "year": 2019,
+      "body": [
+        "Elizabeth LaPensée began part of When Rivers Were Trails with a physical object. She described making a shaker from Minnesota rocks and wood, hide, and sand sent from California by artist Weshoyot Alvitre. The materials connected the journey's beginning and end before becoming a small element in its sound. Gathering and handling them helped her establish the feeling of the work. A digital game's atmosphere could begin with an object in a maker's hands, assembled through direct connections between collaborators.",
+        "The game's geography also occupied a real room. LaPensée recalled laying out numbered pieces of paper on the floor to make its maps. Paper prototyping let routes become arrangements she could physically work with before they appeared on a screen. That approach belonged to a wider practice of drawing, layering, scanning and listening. In her 2020 interview, she connected making with tangible experience. The resulting adventure came through a process of arranging materials and relationships, alongside the programming that eventually let someone travel through it.",
+        "Grand Ronde writer David Lewis contributed fourteen narratives to the game. In an April 2019 interview, he described writing greetings in Tribal languages and making each place appropriate to the story's 1890s period. Oregon's chronology could not simply be borrowed from the Midwest: he emphasised that colonisation had reached his region decades earlier. Places including Grand Ronde, Siletz and Willamette Falls required their own histories. His work made the westward journey a sequence of encounters, rather than one generic account of Indigenous experience.",
+        "Lewis entered the project after LaPensée contacted him about writing scenarios. She told his Tribal newspaper that the intention was to pay Native people for team roles in which they could determine their own representations. He brought historical knowledge and character writing, then planned to assign the game in his Native studies classes. Production and education connected through a contributor who knew these places. The journey's many voices came from giving people work inside its making, as well as a presence within its story."
+      ],
+      "story_headings": [
+        "A sound holds places",
+        "The map on the floor",
+        "Writing a particular place",
+        "A role in the team"
+      ],
+      "related_ids": [],
+      "era_id": "everywhere",
+      "kind": "feature",
+      "layout": "story",
+      "language": "en",
+      "date": {
+        "precision": "year"
+      },
+      "event_semantics": "2019 is the contemporary Lewis interview/game-publication period. The game's 1890s setting is separate; LaPensée's materials account was recorded in October 2020. No launch month is selected from conflicting publication/platform accounts.",
+      "editorial_mode": "original_additive_feature",
+      "editorial_credit": "Original English feature written for Pixel Museum. Primary makers, players, practitioners and publications are credited per card; media rights require separate review.",
+      "cards": [
+        {
+          "body_index": 0,
+          "heading": "A sound holds places",
+          "source_ids": [
+            "lapensee20"
+          ],
+          "citations": [
+            {
+              "source_id": "lapensee20",
+              "url": "https://www.killscreen.com/elizabeth-lapensee/",
+              "locator": "2020 interview, Real-world processes: shaker, Minnesota rocks/wood, Alvitre's California sand and hide; small audio presence and material feeling."
+            }
+          ],
+          "media_brief": {
+            "type": "photograph_primary_document_or_labelled_explanation",
+            "description": "Authenticated maker photograph of the actual shaker or documented materials with permission; never substitute unrelated ceremonial objects or generic Indigenous imagery.",
+            "existing_context_ids": [],
+            "selected_asset": null,
+            "status": "research_brief_only_identity_rights_resolution_and_card_fit_review_required"
+          },
+          "inference_note": "Original narrative and connections from cited primary testimony or authored publication. Research limits are in metadata/notes; no universal player-response or new photographic evidence claimed."
+        },
+        {
+          "body_index": 1,
+          "heading": "The map on the floor",
+          "source_ids": [
+            "lapensee20"
+          ],
+          "citations": [
+            {
+              "source_id": "lapensee20",
+              "url": "https://www.killscreen.com/elizabeth-lapensee/",
+              "locator": "2020 interview, Real-world processes: numbered map paper on floor and the maker's own layered paper/ink/scan practice; not attributed to Alvitre's final art."
+            }
+          ],
+          "media_brief": {
+            "type": "photograph_primary_document_or_labelled_explanation",
+            "description": "A cleared original paper map/design document or correctly identified game map; explain which is shown without fabricating a workshop photograph.",
+            "existing_context_ids": [],
+            "selected_asset": null,
+            "status": "research_brief_only_identity_rights_resolution_and_card_fit_review_required"
+          },
+          "inference_note": "Original narrative and connections from cited primary testimony or authored publication. Research limits are in metadata/notes; no universal player-response or new photographic evidence claimed."
+        },
+        {
+          "body_index": 2,
+          "heading": "Writing a particular place",
+          "source_ids": [
+            "lewis19"
+          ],
+          "citations": [
+            {
+              "source_id": "lewis19",
+              "url": "https://www.smokesignals.org/media/1732/04-15-2019-web.pdf",
+              "locator": "Smoke Signals 15 April 2019, printed/PDF pp1 and9: fourteen Lewis narratives, greetings, specific places and his Oregon-versus-Midwest chronology explanation."
+            }
+          ],
+          "media_brief": {
+            "type": "photograph_primary_document_or_labelled_explanation",
+            "description": "A permitted Lewis portrait or exact game scene connected to one named place; cultural authority and game rights reviewed separately.",
+            "existing_context_ids": [],
+            "selected_asset": null,
+            "status": "research_brief_only_identity_rights_resolution_and_card_fit_review_required"
+          },
+          "inference_note": "Original narrative and connections from cited primary testimony or authored publication. Research limits are in metadata/notes; no universal player-response or new photographic evidence claimed."
+        },
+        {
+          "body_index": 3,
+          "heading": "A role in the team",
+          "source_ids": [
+            "lewis19"
+          ],
+          "citations": [
+            {
+              "source_id": "lewis19",
+              "url": "https://www.smokesignals.org/media/1732/04-15-2019-web.pdf",
+              "locator": "Smoke Signals p9: online invitation, LaPensée's paid-team-role statement and Lewis's stated plan to assign the game in his classes."
+            }
+          ],
+          "media_brief": {
+            "type": "photograph_primary_document_or_labelled_explanation",
+            "description": "Official contributor credits with Lewis/LaPensée/Alvitre and the complete credited team; no invented class picture or single-author marketing label.",
+            "existing_context_ids": [],
+            "selected_asset": null,
+            "status": "research_brief_only_identity_rights_resolution_and_card_fit_review_required"
+          },
+          "inference_note": "Original narrative and connections from cited primary testimony or authored publication. Research limits are in metadata/notes; no universal player-response or new photographic evidence claimed."
+        }
+      ],
+      "source_ids": [
+        "lapensee20",
+        "lewis19"
+      ],
+      "sources": [
+        {
+          "id": "lapensee20",
+          "title": "Playing with Purpose: Elizabeth LaPensée’s Cultural Game Design",
+          "url": "https://www.killscreen.com/elizabeth-lapensee/",
+          "publisher": "Alex Westfall / Kill Screen, direct Elizabeth LaPensée interview",
+          "publication_date": "2020-10-22",
+          "source_type": "Primary creator interview, material-process testimony",
+          "checked": "2026-10-21",
+          "source_budget_group": "lapensee20",
+          "verification": "Author read cited primary passages; independent factual review pending.",
+          "limits": "Interview explicitly conducted October 2020; dynamic site recommendations/footer are 2026 and unrelated. Shaker sound is a small element, not the entire score. General paper/ink/scan process belongs to LaPensée, not an attribution of Alvitre’s final game paintings. Exclude unverified Guggenheim universal-first claims. Never Alone is a different work/community.",
+          "rights": "Bibliographic citation only. New original prose contains no direct quotation. Source text, photographs, documents, recordings and game assets retain their own rights; availability is not reproduction permission.",
+          "snapshot": {
+            "path": "build/research/editorial-practices-10/lapensee20.html",
+            "sha256": "2ece36317f31a29adeed265bffce44df6577d3fb8bbac6a65e33e74ec02853aa",
+            "content_status": "actual_source_content"
+          }
+        },
+        {
+          "id": "lewis19",
+          "title": "New video game features David Lewis’ narratives",
+          "url": "https://www.smokesignals.org/media/1732/04-15-2019-web.pdf",
+          "publisher": "Danielle Frost / Smoke Signals, Confederated Tribes of the Grand Ronde Community of Oregon",
+          "publication_date": "2019-04-15",
+          "source_type": "Contemporary primary contributor interview and project-maker statement",
+          "checked": "2026-10-21",
+          "source_budget_group": "lewis19",
+          "verification": "Author read cited primary passages; independent factual review pending.",
+          "limits": "Entire article read on original printed/PDF pp1 and9; Lewis and LaPensée directly quoted. Oregon/Midwest chronology is explicitly Lewis’s historical framing, not a claim colonisation began everywhere in the Midwest in 1890. Class assignment is his stated plan, not audited adoption. No game release month selected; source month/platform framing differs from other records. Newspaper reprint restrictions do not license the page/photo.",
+          "rights": "Bibliographic citation only. New original prose contains no direct quotation. Source text, photographs, documents, recordings and game assets retain their own rights; availability is not reproduction permission.",
+          "snapshot": {
+            "path": "build/research/editorial-practices-10/lewis19.pdf",
+            "sha256": "11b6b826e8a22498803902b0b683b862b12cdddc75fac64c28c7a6df8f69de75",
+            "content_status": "actual_source_content"
+          }
+        }
+      ],
+      "source_budget_audit": [
+        {
+          "source_budget_group": "lapensee20",
+          "body_indices": [
+            0,
+            1
+          ],
+          "derived_words_including_full_title_summary_and_relevant_headings": 190,
+          "maximum_words": 195,
+          "whitespace_words": 190,
+          "unicode_lexical_words": 194,
+          "charged_words": 194,
+          "verbatim_quoted_words": 0
+        },
+        {
+          "source_budget_group": "lewis19",
+          "body_indices": [
+            2,
+            3
+          ],
+          "derived_words_including_full_title_summary_and_relevant_headings": 192,
+          "maximum_words": 195,
+          "whitespace_words": 192,
+          "unicode_lexical_words": 195,
+          "charged_words": 195,
+          "verbatim_quoted_words": 0
+        }
+      ],
+      "media_status": "No images or other assets selected. Four individual briefs remain open for identity, rights, resolution and contextual fit.",
+      "integration": {
+        "mode": "proposed_distinct_subject_pending_review_and_media",
+        "proposed_parent_id": null,
+        "recommendation": "Distinct When Rivers Were Trails production subject pending review/media; no matching title or LaPensée/Lewis destination found. Existing Never Alone narratives concern another game and community, so they are cross-reference candidates only, never interchangeable parents.",
+        "overwrite_existing_body": false,
+        "preserve_original_playhub_sections": true,
+        "requires_semantic_merge_review": true,
+        "net_new_destination_claim": false
+      },
+      "review_status": {
+        "narrative": "complete_draft",
+        "independent_factual_review": "pending",
+        "media_rights_and_card_fit": "pending",
+        "native_layout_review": "pending",
+        "assembly": "not_requested_in_this_batch"
+      },
+      "editorial_audit": {
+        "overlapping_existing_articles_read_in_full": [],
+        "overlap_snapshot_catalog_sha256": "09e11938d211443f9f5df7431807ca2ea8429de711a0830d8727b268dad6cf9a",
+        "snapshot_note": "Authoring comparison snapshot, not current-master claim after concurrent parent work.",
+        "hash_encoding": "SHA256 of UTF8 compact JSON body array, ensure_ascii=False, separators comma/colon",
+        "placement_status": "proposal_requires_independent_review_no_master_changes",
+        "body_sha256": "8aea36af6f63c66fffde7f3e06184c3e03fd725c9ff52ec41885ff89d05f73fa"
+      }
+    },
+    {
+      "id": "feature-accessibility-player-knowledge",
+      "title": "The player knows the barrier",
+      "summary": "Lived experience became practical knowledge for making games.",
+      "year": 2020,
+      "body": [
+        "André J. Daughtry described a streaming schedule that had to accommodate pain, rather than the other way round. Talking to Alice Wong in 2020, he recalled finding arcade games while his family went bowling and later using Twitch to connect with people beyond his immediate surroundings. Games offered escape, but sharing them also offered community. The player brought knowledge about what participation required: when to stop, how to return, and how race and disability shaped the social spaces built around an apparently simple pastime.",
+        "In the same episode, accessibility specialist Cherry Thompson described visiting studios while scenes were still represented by rough drawings. Even before finished animation, a prototype's menus, subtitles, controls and mechanics could expose barriers. Thompson worked through them with the teams responsible for each discipline, turning a player's difficulty into a design problem people could address together. The early state of the game was useful. An unfinished scene left room for a solution to become part of its making, rather than a complaint arriving after release.",
+        "On Ubisoft's Game Makers podcast later in 2020, Thompson gave a small example with wide consequences. If friendly and hostile characters are identified only by different colours, changing a palette is one possible response. Giving them different icons creates another route to the information. A player can recognise the relationship without first distinguishing the colours. The proposal begins with what someone needs to understand during play, then changes how the game communicates it. A new setting is only one of the ways a design can become clearer.",
+        "Controls raised a related question: what action should require a button at all? Thompson explained that globally swapping buttons could still leave a necessary action difficult to reach. Contextual movement, such as automatically vaulting an obstacle when a character approaches it, could remove a press instead. Analysing the whole interaction opened possibilities beyond rearranging the controller. The work depended on understanding when an input was used and what it asked of a player, then collaborating on a system that could preserve the activity while changing its demands."
+      ],
+      "story_headings": [
+        "Making room to play",
+        "Before the pictures move",
+        "More than a colour",
+        "Changing the action"
+      ],
+      "related_ids": [],
+      "era_id": "living-history",
+      "kind": "feature",
+      "layout": "story",
+      "language": "en",
+      "date": {
+        "precision": "year"
+      },
+      "event_semantics": "2020 dates the two recorded conversations, not the invention of accessibility or a claim about current employers/policy. Player testimony and design examples are attributed rather than converted into universal medical claims.",
+      "editorial_mode": "original_additive_feature",
+      "editorial_credit": "Original English feature written for Pixel Museum. Primary makers, players, practitioners and publications are credited per card; media rights require separate review.",
+      "cards": [
+        {
+          "body_index": 0,
+          "heading": "Making room to play",
+          "source_ids": [
+            "thompson20dv"
+          ],
+          "citations": [
+            {
+              "source_id": "thompson20dv",
+              "url": "https://disabilityvisibilityproject.com/wp-content/uploads/2020/02/Games.pdf",
+              "locator": "Disability Visibility Podcast episode71, PDF pp1–3: Daughtry's schedule, bowling-alley memories, streaming/community and Black/disabled participation."
+            }
+          ],
+          "media_brief": {
+            "type": "photograph_primary_document_or_labelled_explanation",
+            "description": "Daughtry-authorised portrait/stream capture with exact identity/date and creator consent; no generic disability stock image.",
+            "existing_context_ids": [],
+            "selected_asset": null,
+            "status": "research_brief_only_identity_rights_resolution_and_card_fit_review_required"
+          },
+          "inference_note": "Original narrative and connections from cited primary testimony or authored publication. Research limits are in metadata/notes; no universal player-response or new photographic evidence claimed."
+        },
+        {
+          "body_index": 1,
+          "heading": "Before the pictures move",
+          "source_ids": [
+            "thompson20dv"
+          ],
+          "citations": [
+            {
+              "source_id": "thompson20dv",
+              "url": "https://disabilityvisibilityproject.com/wp-content/uploads/2020/02/Games.pdf",
+              "locator": "Episode71, PDF pp5–6: Thompson's early studio audits, hand-scribbled scenes, disciplines and collaborative problem solving."
+            }
+          ],
+          "media_brief": {
+            "type": "photograph_primary_document_or_labelled_explanation",
+            "description": "An approved real studio prototype or Thompson interview portrait; do not fabricate confidential hand-drawn scenes.",
+            "existing_context_ids": [],
+            "selected_asset": null,
+            "status": "research_brief_only_identity_rights_resolution_and_card_fit_review_required"
+          },
+          "inference_note": "Original narrative and connections from cited primary testimony or authored publication. Research limits are in metadata/notes; no universal player-response or new photographic evidence claimed."
+        },
+        {
+          "body_index": 2,
+          "heading": "More than a colour",
+          "source_ids": [
+            "thompson20ubi"
+          ],
+          "citations": [
+            {
+              "source_id": "thompson20ubi",
+              "url": "https://static-wordpress.akamaized.net/montreal.ubisoft.com/wp-content/uploads/2020/07/10162358/Game-Makers-Podcast-%E2%80%93-Accessibility-and-Video-Games.pdf",
+              "locator": "Ubisoft transcript PDF pp7–8: unintentional barriers and complementary distinct icons instead of colour alone."
+            }
+          ],
+          "media_brief": {
+            "type": "photograph_primary_document_or_labelled_explanation",
+            "description": "Clearly labelled explanatory diagram of distinct icons as well as colour, or an exact approved implementation; don't claim the diagram is a shipped Ubisoft screen.",
+            "existing_context_ids": [],
+            "selected_asset": null,
+            "status": "research_brief_only_identity_rights_resolution_and_card_fit_review_required"
+          },
+          "inference_note": "Original narrative and connections from cited primary testimony or authored publication. Research limits are in metadata/notes; no universal player-response or new photographic evidence claimed."
+        },
+        {
+          "body_index": 3,
+          "heading": "Changing the action",
+          "source_ids": [
+            "thompson20ubi"
+          ],
+          "citations": [
+            {
+              "source_id": "thompson20ubi",
+              "url": "https://static-wordpress.akamaized.net/montreal.ubisoft.com/wp-content/uploads/2020/07/10162358/Game-Makers-Podcast-%E2%80%93-Accessibility-and-Video-Games.pdf",
+              "locator": "Ubisoft transcript PDF p9: limitations of global button swapping, reach/use and contextual obstacle vaulting example."
+            }
+          ],
+          "media_brief": {
+            "type": "photograph_primary_document_or_labelled_explanation",
+            "description": "An identified game's contextual vaulting/settings capture with a verified implementation and rights; do not imply Thompson personally shipped every example mentioned.",
+            "existing_context_ids": [],
+            "selected_asset": null,
+            "status": "research_brief_only_identity_rights_resolution_and_card_fit_review_required"
+          },
+          "inference_note": "Original narrative and connections from cited primary testimony or authored publication. Research limits are in metadata/notes; no universal player-response or new photographic evidence claimed."
+        }
+      ],
+      "source_ids": [
+        "thompson20dv",
+        "thompson20ubi"
+      ],
+      "sources": [
+        {
+          "id": "thompson20dv",
+          "title": "Disability Visibility Podcast, Episode 71: Games",
+          "url": "https://disabilityvisibilityproject.com/wp-content/uploads/2020/02/Games.pdf",
+          "publisher": "Alice Wong / Disability Visibility Project; guests André J. Daughtry and Cherry Thompson; transcript Cheryl Green",
+          "publication_date": "2020-02-24",
+          "source_type": "Primary player and practitioner recorded interviews, transcript",
+          "checked": "2026-10-21",
+          "source_budget_group": "thompson20dv",
+          "verification": "Author read cited primary passages; independent factual review pending.",
+          "limits": "Read Daughtry participation testimony and Thompson full consultation section; PDF pp1–3 and5–6. Personal experience is not a medical prescription or universal response. Public story avoids diagnostic detail and harassment excerpts where not needed. Speaker roles and views are historical to the interview.",
+          "rights": "Bibliographic citation only. New original prose contains no direct quotation. Source text, photographs, documents, recordings and game assets retain their own rights; availability is not reproduction permission.",
+          "snapshot": {
+            "path": "build/research/editorial-practices-10/thompson20dv.pdf",
+            "sha256": "893bd49bd102fa3b7aee00264acd9887031d16041eebbe1aa27c7d5040ce550b",
+            "content_status": "actual_source_content"
+          },
+          "publication_metadata_evidence": "build/research/editorial-practices-10/date-metadata-verification.json"
+        },
+        {
+          "id": "thompson20ubi",
+          "title": "Game Makers Podcast: Accessibility and Video Games, transcript",
+          "url": "https://static-wordpress.akamaized.net/montreal.ubisoft.com/wp-content/uploads/2020/07/10162358/Game-Makers-Podcast-%E2%80%93-Accessibility-and-Video-Games.pdf",
+          "publisher": "Charles-Adam Foster-Simard / Ubisoft; interview Cherry Thompson",
+          "publication_date": "2020-07-09",
+          "source_type": "Primary practitioner interview, official publisher transcript",
+          "checked": "2026-10-21",
+          "source_budget_group": "thompson20ubi",
+          "verification": "Author read cited primary passages; independent factual review pending.",
+          "limits": "Read relevant full control, colour/icon, prototype and production sections, original PDF pages inspected. Official companion publication page confirms 9 July 2020; same podcast and source group. Examples are discussed design approaches, not proof of Thompson implementing every named game. No current employer/medical claim; no assertion a long list of settings is always better.",
+          "rights": "Bibliographic citation only. New original prose contains no direct quotation. Source text, photographs, documents, recordings and game assets retain their own rights; availability is not reproduction permission.",
+          "snapshot": {
+            "path": "build/research/editorial-practices-10/thompson20ubi.pdf",
+            "sha256": "2b0fbe4c32d3d89dad326bd414de6b63454da9225b6889d6a21b9bb04633f6ae",
+            "content_status": "actual_source_content"
+          },
+          "publication_metadata_evidence": "build/research/editorial-practices-10/date-metadata-verification.json"
+        }
+      ],
+      "source_budget_audit": [
+        {
+          "source_budget_group": "thompson20dv",
+          "body_indices": [
+            0,
+            1
+          ],
+          "derived_words_including_full_title_summary_and_relevant_headings": 190,
+          "maximum_words": 195,
+          "whitespace_words": 190,
+          "unicode_lexical_words": 192,
+          "charged_words": 192,
+          "verbatim_quoted_words": 0
+        },
+        {
+          "source_budget_group": "thompson20ubi",
+          "body_indices": [
+            2,
+            3
+          ],
+          "derived_words_including_full_title_summary_and_relevant_headings": 194,
+          "maximum_words": 195,
+          "whitespace_words": 194,
+          "unicode_lexical_words": 195,
+          "charged_words": 195,
+          "verbatim_quoted_words": 0
+        }
+      ],
+      "media_status": "No images or other assets selected. Four individual briefs remain open for identity, rights, resolution and contextual fit.",
+      "integration": {
+        "mode": "proposed_distinct_subject_pending_review_and_media",
+        "proposed_parent_id": null,
+        "recommendation": "Distinct player-knowledge/accessibility practice proposal pending review/media. Existing games with assists can link to it, but one game's launch is not a suitable parent for all these speakers and design practices.",
+        "overwrite_existing_body": false,
+        "preserve_original_playhub_sections": true,
+        "requires_semantic_merge_review": true,
+        "net_new_destination_claim": false
+      },
+      "review_status": {
+        "narrative": "complete_draft",
+        "independent_factual_review": "pending",
+        "media_rights_and_card_fit": "pending",
+        "native_layout_review": "pending",
+        "assembly": "not_requested_in_this_batch"
+      },
+      "editorial_audit": {
+        "overlapping_existing_articles_read_in_full": [],
+        "overlap_snapshot_catalog_sha256": "09e11938d211443f9f5df7431807ca2ea8429de711a0830d8727b268dad6cf9a",
+        "snapshot_note": "Authoring comparison snapshot, not current-master claim after concurrent parent work.",
+        "hash_encoding": "SHA256 of UTF8 compact JSON body array, ensure_ascii=False, separators comma/colon",
+        "placement_status": "proposal_requires_independent_review_no_master_changes",
+        "body_sha256": "c870cd591dad1f20d2340b5f6834e2ccf6cfadd1159f384f4d5104fa2333fa91"
+      }
+    },
+    {
+      "id": "feature-credits-as-historical-record",
+      "title": "Keeping the makers' names",
+      "summary": "A hidden signature and a shared list record human work.",
+      "year": 1979,
+      "body": [
+        "Warren Robinett called the name hidden in Adventure his signature. In a 2015 interview, he described keeping it secret because it could otherwise have been removed before the cartridges were manufactured. Once copies had travelled into homes, the name could no longer be removed from them. He remembered explaining the trick to former Atari colleagues over pizza after leaving the company. The concealed room carried an argument about recognition, but its survival also depended on timing, secrecy and the physical distribution of software.",
+        "Robinett's memories also name people around the work who rarely fit the image of a solitary programmer. Steve Harding, who wrote Atari manuals, played unfinished games and offered feedback. Later, Robinett founded The Learning Company with Ann McCormick Piestrup, Leslie Grimm and Teri Perl, who wanted to make learning games. He recalled initially having his name on that company's packaging and later losing it. A surviving credit could reveal one contribution while leaving others harder to recover. Remembering a production meant asking who tested, taught, wrote and collaborated.",
+        "The IGDA's March 2023 crediting guide moved the problem into the production schedule. Its committee proposed agreeing on rules early and treating the credits as a feature with work to complete. Contractors and outside vendors belonged in that conversation, with individual workers' names collected rather than only a company label. Team members should have time to review their proposed entries before release. Behind the familiar scrolling list was a process of gathering information, checking roles and making space for the people whose work had crossed organisational boundaries.",
+        "The same guide considered what happens when the team changes. It recommended informing departing contributors about their credits, maintaining records for ongoing games and correcting mistakes through the bug process. A missing name or wrong role could be a defect to fix in a later update. These proposals made recognition an activity that continued beyond a launch deadline. Someone had to keep the list, preserve changes and listen when contributors found errors. The historical record emerged through ordinary production decisions, one entry at a time."
+      ],
+      "story_headings": [
+        "A signature survives copying",
+        "People beside the programmer",
+        "Making the list early",
+        "A record that changes"
+      ],
+      "related_ids": [
+        "adventure"
+      ],
+      "era_id": "public-play",
+      "kind": "feature",
+      "layout": "story",
+      "language": "en",
+      "date": {
+        "precision": "year"
+      },
+      "event_semantics": "1979 is Robinett's stated signature/completion chronology, not an exact retail anniversary; the existing entry explicitly records 1979/1980 catalogue variation. Later evidence is a 2015 recollection and March 2023 professional-association proposal, not binding law or a universal industry practice.",
+      "editorial_mode": "original_additive_feature",
+      "editorial_credit": "Original English feature written for Pixel Museum. Primary makers, players, practitioners and publications are credited per card; media rights require separate review.",
+      "cards": [
+        {
+          "body_index": 0,
+          "heading": "A signature survives copying",
+          "source_ids": [
+            "robinett15"
+          ],
+          "citations": [
+            {
+              "source_id": "robinett15",
+              "url": "https://nodontdie.com/interviews/warren-robinett",
+              "locator": "2015 interview: opening signature explanation; later Easter egg question, secrecy before replication and return to Atari colleagues for pizza."
+            }
+          ],
+          "media_brief": {
+            "type": "photograph_primary_document_or_labelled_explanation",
+            "description": "An exact Adventure signature-room capture from a documented version, or a cleared Robinett talk image; do not label it the first Easter egg.",
+            "existing_context_ids": [
+              "adventure"
+            ],
+            "selected_asset": null,
+            "status": "research_brief_only_identity_rights_resolution_and_card_fit_review_required"
+          },
+          "inference_note": "Original narrative and connections from cited primary testimony or authored publication. Research limits are in metadata/notes; no universal player-response or new photographic evidence claimed."
+        },
+        {
+          "body_index": 1,
+          "heading": "People beside the programmer",
+          "source_ids": [
+            "robinett15"
+          ],
+          "citations": [
+            {
+              "source_id": "robinett15",
+              "url": "https://nodontdie.com/interviews/warren-robinett",
+              "locator": "2015 interview: feedback question naming manual writer Steve Harding; opening Learning Company cofounders and later packaging-name removal recollection."
+            }
+          ],
+          "media_brief": {
+            "type": "photograph_primary_document_or_labelled_explanation",
+            "description": "Authenticated Atari manual credits or Learning Company packaging, edition/date identified; verify named contributor against the actual object before captioning.",
+            "existing_context_ids": [
+              "adventure"
+            ],
+            "selected_asset": null,
+            "status": "research_brief_only_identity_rights_resolution_and_card_fit_review_required"
+          },
+          "inference_note": "Original narrative and connections from cited primary testimony or authored publication. Research limits are in metadata/notes; no universal player-response or new photographic evidence claimed."
+        },
+        {
+          "body_index": 2,
+          "heading": "Making the list early",
+          "source_ids": [
+            "igda23"
+          ],
+          "citations": [
+            {
+              "source_id": "igda23",
+              "url": "https://igda.org/wp-content/uploads/2021/11/IGDA-Game-Crediting-Guidelines-10.1-March-2023.pdf",
+              "locator": "IGDA guide10.1, PDF/printed pp13–14: METH.1 policy in pre-production, credits as feature, vendors/names and METH.2 contributor review."
+            }
+          ],
+          "media_brief": {
+            "type": "photograph_primary_document_or_labelled_explanation",
+            "description": "A permitted extract or labelled original explanatory diagram of the 2023 credits workflow, not a claim that all studios follow it.",
+            "existing_context_ids": [
+              "adventure"
+            ],
+            "selected_asset": null,
+            "status": "research_brief_only_identity_rights_resolution_and_card_fit_review_required"
+          },
+          "inference_note": "Original narrative and connections from cited primary testimony or authored publication. Research limits are in metadata/notes; no universal player-response or new photographic evidence claimed."
+        },
+        {
+          "body_index": 3,
+          "heading": "A record that changes",
+          "source_ids": [
+            "igda23"
+          ],
+          "citations": [
+            {
+              "source_id": "igda23",
+              "url": "https://igda.org/wp-content/uploads/2021/11/IGDA-Game-Crediting-Guidelines-10.1-March-2023.pdf",
+              "locator": "IGDA guide10.1 pp14–15: departing contributors, METH.4 live-game updates, METH.5 credit bug corrections, METH.6 record keeper/change logs."
+            }
+          ],
+          "media_brief": {
+            "type": "photograph_primary_document_or_labelled_explanation",
+            "description": "A real publicly documented correction or versioned credits list with contributor permission/rights; otherwise retain a research hold rather than inventing an example.",
+            "existing_context_ids": [
+              "adventure"
+            ],
+            "selected_asset": null,
+            "status": "research_brief_only_identity_rights_resolution_and_card_fit_review_required"
+          },
+          "inference_note": "Original narrative and connections from cited primary testimony or authored publication. Research limits are in metadata/notes; no universal player-response or new photographic evidence claimed."
+        }
+      ],
+      "source_ids": [
+        "robinett15",
+        "igda23"
+      ],
+      "sources": [
+        {
+          "id": "robinett15",
+          "title": "Warren Robinett",
+          "url": "https://nodontdie.com/interviews/warren-robinett",
+          "publisher": "David Wolinsky / Don’t Die, interview Warren Robinett",
+          "publication_date": "2015-12-15",
+          "source_type": "Primary developer interview, retrospective",
+          "checked": "2026-10-21",
+          "source_budget_group": "robinett15",
+          "verification": "Author read cited primary passages; independent factual review pending.",
+          "limits": "Read relevant whole answer sequences about signature, replication, packaging, colleagues and feedback. Do not repeat earliest-Easter-egg/first-console claims, speculative allegations about unrelated company figures, or convert remembered 1979 completion into a precise retail anniversary. Existing Adventure base already names the room; new evidence adds strategy and surrounding workers.",
+          "rights": "Bibliographic citation only. New original prose contains no direct quotation. Source text, photographs, documents, recordings and game assets retain their own rights; availability is not reproduction permission.",
+          "snapshot": {
+            "path": "build/research/editorial-practices-10/robinett15.html",
+            "sha256": "3b919e334b2887171b8a0b6bf21395cde22ff725abe6ef76a20e845923a857a0",
+            "content_status": "actual_source_content"
+          }
+        },
+        {
+          "id": "igda23",
+          "title": "IGDA Game Crediting Guide 10.1",
+          "url": "https://igda.org/wp-content/uploads/2021/11/IGDA-Game-Crediting-Guidelines-10.1-March-2023.pdf",
+          "publisher": "International Game Developers Association / Game Credits Special Interest Group",
+          "publication_date": "2023-03",
+          "source_type": "Primary association-authored proposed standards and production guidance",
+          "checked": "2026-10-21",
+          "source_budget_group": "igda23",
+          "verification": "Author read cited primary passages; independent factual review pending.",
+          "limits": "Historical March 2023 edition, not binding law or an audit of adoption. Read METH.1–6 pp13–15 and contributor/review context. All appendices, versions and mirrored URLs count as the same publication group if used. Proposed credit-maintenance procedure is not claimed standard practice across all studios.",
+          "rights": "Bibliographic citation only. New original prose contains no direct quotation. Source text, photographs, documents, recordings and game assets retain their own rights; availability is not reproduction permission.",
+          "snapshot": {
+            "path": "build/research/editorial-practices-10/igda23.pdf",
+            "sha256": "500de2a764ff0bf4f2f0f39266d7b27b6840456fcd2c90060c555487656f82f0",
+            "content_status": "actual_source_content"
+          }
+        }
+      ],
+      "source_budget_audit": [
+        {
+          "source_budget_group": "robinett15",
+          "body_indices": [
+            0,
+            1
+          ],
+          "derived_words_including_full_title_summary_and_relevant_headings": 193,
+          "maximum_words": 195,
+          "whitespace_words": 193,
+          "unicode_lexical_words": 195,
+          "charged_words": 195,
+          "verbatim_quoted_words": 0
+        },
+        {
+          "source_budget_group": "igda23",
+          "body_indices": [
+            2,
+            3
+          ],
+          "derived_words_including_full_title_summary_and_relevant_headings": 194,
+          "maximum_words": 195,
+          "whitespace_words": 194,
+          "unicode_lexical_words": 195,
+          "charged_words": 195,
+          "verbatim_quoted_words": 0
+        }
+      ],
+      "media_status": "No images or other assets selected. Four individual briefs remain open for identity, rights, resolution and contextual fit.",
+      "integration": {
+        "mode": "proposed_attachment",
+        "proposed_parent_id": "adventure",
+        "recommendation": "Attach to Adventure as a broader authored feature. The base's two short sections already mention the signature; new cards add its replication strategy, named collaborators and a separately dated collective crediting process, without replacing the game account.",
+        "overwrite_existing_body": false,
+        "preserve_original_playhub_sections": true,
+        "requires_semantic_merge_review": true,
+        "net_new_destination_claim": false
+      },
+      "review_status": {
+        "narrative": "complete_draft",
+        "independent_factual_review": "pending",
+        "media_rights_and_card_fit": "pending",
+        "native_layout_review": "pending",
+        "assembly": "not_requested_in_this_batch"
+      },
+      "editorial_audit": {
+        "overlapping_existing_articles_read_in_full": [
+          {
+            "id": "adventure",
+            "title": "Adventure",
+            "section_count": 2,
+            "body_sha256": "540f040879d03e65f0ed1a6546852f9ad8c8e58d5bf4d37bca54473fda228442",
+            "read_in_full": true,
+            "existing_attached_features_read": []
+          }
+        ],
+        "overlap_snapshot_catalog_sha256": "09e11938d211443f9f5df7431807ca2ea8429de711a0830d8727b268dad6cf9a",
+        "snapshot_note": "Authoring comparison snapshot, not current-master claim after concurrent parent work.",
+        "hash_encoding": "SHA256 of UTF8 compact JSON body array, ensure_ascii=False, separators comma/colon",
+        "placement_status": "proposal_requires_independent_review_no_master_changes",
+        "body_sha256": "c7f99c5f9e3f5f58dc9c78455c726ed3c8e8f8e31011d37c88120bc03cea049f"
+      }
+    }
+  ],
+  "entry_count": 8,
+  "card_count": 32
+}

@@ -1,0 +1,512 @@
+{
+  "batch_id": "053-catalog",
+  "status": "completed",
+  "sources": [
+    {
+      "source_id": "053-S01",
+      "url": "https://web.archive.org/web/20140611225644/http://www.nintendo.com/consumer/downloads/snes_games.pdf",
+      "title": "Super NES Games — elenco storico nordamericano",
+      "publisher": "Nintendo of America",
+      "accessed_at": "2026-10-30",
+      "scope": "PDF ufficiale già recuperato nel lotto 044, rilette le righe: Super Punch-Out!! October 1994; Donkey Kong Country November 1994.",
+      "limitation": "L’elenco fornisce mese e regione nordamericana. Non dimostra un giorno specifico né la prima uscita mondiale."
+    },
+    {
+      "source_id": "053-S02",
+      "url": "https://en.wikipedia.org/wiki/Super_Punch-Out!!",
+      "title": "Super Punch-Out!! — fonti della data di uscita",
+      "publisher": "Wikipedia contributors, CC BY-SA",
+      "accessed_at": "2026-10-30",
+      "scope": "La data 24 ottobre 1994 fornita dall’INPUT è riferita al Nord America. Le note riproducono due annunci contemporanei: Battle Creek Enquirer 23 ottobre e Argus Leader 24 ottobre, con disponibilità indicata per il 24.",
+      "limitation": "La scansione del giornale collegata non è risultata leggibile; letti i riferimenti e gli estratti citati dalla fonte fornita. Il mese è confermato autonomamente dall’elenco Nintendo; non dichiarata ispezione diretta delle pagine dei quotidiani."
+    },
+    {
+      "source_id": "053-S03",
+      "url": "https://www.blizzardarchive.com/pub/index.php?id=press941115",
+      "title": "Blizzard’s Warcraft: Orcs and Humans Now Available — comunicato 15 novembre 1994",
+      "publisher": "Blizzard Entertainment / PRNewswire, conservato da Hallfiry’s unofficial Blizzard Archive",
+      "accessed_at": "2026-10-30",
+      "scope": "Letto il comunicato contemporaneo: disponibilità immediata del gioco DOS su CD-ROM e floppy nei negozi statunitensi e direttamente da Blizzard il 15 novembre 1994.",
+      "limitation": "Annuncio di disponibilità effettiva, distinto dalla presentazione CES. Archivio non ufficiale di un documento primario; non importati nuovi dettagli di gioco."
+    },
+    {
+      "source_id": "053-S04",
+      "url": "https://www.nintendo.co.jp/clvs/manuals/common/pdf/CLV-P-SAALE.pdf",
+      "title": "Donkey Kong Country — Instruction Booklet",
+      "publisher": "Nintendo of America",
+      "accessed_at": "2026-10-30",
+      "scope": "Testo del manuale originale conservato da Nintendo, estratti indicizzati delle pagine narrative: Diddy è il little buddy di Donkey Kong.",
+      "limitation": "Il PDF completo supera il limite del lettore web; utilizzato il testo indicizzato pertinente, non dichiarata lettura integrale. La correzione non ricostruisce una genealogia a partire da edizioni successive."
+    },
+    {
+      "source_id": "053-S05",
+      "url": "https://play.nintendo.com/themes/friends/diddy-kong/",
+      "title": "Diddy Kong — Play Nintendo",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "Scheda ufficiale letta: rapporto di compagnia fra Diddy e Donkey Kong.",
+      "limitation": "Riferimento attuale circoscritto all’identità; nessuna meccanica dei giochi recenti importata nella voce del 1994."
+    },
+    {
+      "source_id": "053-S06",
+      "url": "https://www.timeextension.com/features/the-making-of-killer-instinct-nintendos-street-fighter-and-mortal-kombat-killer",
+      "title": "The Making Of Killer Instinct, Nintendo’s Street Fighter And Mortal Kombat Killer",
+      "publisher": "Damien McFerran / Time Extension",
+      "accessed_at": "2026-10-30",
+      "scope": "Letta la ricostruzione con dichiarazioni di Ken Lobb: idee maturate presso Namco; Melee proseguì verso WeaponLord; Lobb passò a Nintendo e contribuì al distinto progetto Rare.",
+      "limitation": "Resoconto secondario che riporta testimonianze dirette. Il documentario Hold Back To Block collegato non è stato accessibile e non è dichiarato visto. Nessuna citazione verbatim nuova inserita."
+    },
+    {
+      "source_id": "053-S07",
+      "url": "https://www.nintendo.com/en-gb/Games/Super-Nintendo/Donkey-Kong-Country-276896.html",
+      "title": "Donkey Kong Country — scheda ufficiale europea, sezione Super Nintendo",
+      "publisher": "Nintendo of Europe",
+      "accessed_at": "2026-10-30",
+      "scope": "La scheda assegna alla versione Super Nintendo il 24 novembre 1994; le date delle riedizioni sono mostrate separatamente.",
+      "limitation": "Il giorno contrasta con il 18 novembre attribuito all’Europa dai database. Non esteso a una release mondiale; adottato il mese documentato, con ambito nordamericano dall’elenco Nintendo."
+    },
+    {
+      "source_id": "053-S08",
+      "url": "https://gamefaqs.gamespot.com/gbc/370532-donkey-kong-country/data",
+      "title": "Donkey Kong Country — tabella delle versioni e release",
+      "publisher": "GameFAQs",
+      "accessed_at": "2026-10-30",
+      "scope": "La tabella include l’originale SNES: Europe 18 novembre, US 21 novembre e Japan 26 novembre 1994.",
+      "limitation": "Fonte secondaria usata soltanto per identificare l’origine e la portata del giorno 18; non preferita automaticamente alla fonte Nintendo europea discordante."
+    },
+    {
+      "source_id": "053-S09",
+      "url": "https://www.sega.jp/history/hard/segasaturn/index.html",
+      "title": "Sega Saturn — archivio hardware ufficiale",
+      "publisher": "Sega",
+      "accessed_at": "2026-10-30",
+      "scope": "Scheda ufficiale letta: 22 novembre 1994, due SH-2, relazione con ST-V. Precisa la regione giapponese del metadato originario.",
+      "limitation": "Non aggiunte specifiche, prezzi o nuovi modelli estranei alle card. Fonti e testimonianze già fornite per gli altri aspetti restano negli INPUT."
+    }
+  ],
+  "decisions": [
+    {
+      "target_id": "super-punch-out-1994",
+      "problem": "Il campo regione contiene Original commercial release anziché un territorio.",
+      "conclusion": "Circoscritta l’uscita al Nord America. Conservato il giorno 24 ottobre 1994 sulla documentazione contemporanea riprodotta dalla fonte fornita; Nintendo conferma direttamente il mese. La prosa principale indica soltanto 1994.",
+      "source_ids": [
+        "053-S01",
+        "053-S02"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-239277",
+      "problem": "Il testo può far intendere che Melee e Killer Instinct siano lo stesso progetto poi rinominato.",
+      "conclusion": "Distinte le idee di Ken Lobb, maturate presso Namco, e le identità dei progetti: Melee proseguì verso WeaponLord; le idee sulle combinazioni confluirono nel progetto Rare. Attribuzione a Lobb conservata.",
+      "source_ids": [
+        "053-S06"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-239277",
+      "problem": "Il nome attuale Nintendo Classics è retrodatato alla riedizione del febbraio 2024.",
+      "conclusion": "Specificata la raccolta SNES di Nintendo Switch Online e distinto il nome Nintendo Classics adottato in seguito. Data della riedizione conservata dal materiale fornito.",
+      "source_ids": [],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-67461",
+      "problem": "La data originale non specifica la regione e deve indicare disponibilità, non semplice presentazione.",
+      "conclusion": "Il comunicato del 15 novembre 1994 dichiara il gioco DOS immediatamente disponibile nei negozi statunitensi. Confermata la data e proposta regione North America; nel testo conservate tutte le versioni già fornite.",
+      "source_ids": [
+        "053-S03"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-153399",
+      "problem": "Diddy viene definito nipote di Donkey Kong, una parentela non coerente con la presentazione del gioco originale.",
+      "conclusion": "Usato amico/compagno di Donkey Kong nelle cinque lingue, sulla presentazione del manuale originale e sulla scheda ufficiale. Nessuna genealogia inventata.",
+      "source_ids": [
+        "053-S04",
+        "053-S05"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-153399",
+      "problem": "Il giorno 18 novembre 1994 senza regione deriva da una data europea che contrasta con la scheda Nintendo, mentre altri territori hanno giorni diversi.",
+      "conclusion": "Risolta la collocazione con precisione mensile: novembre 1994, versione SNES nordamericana, documentata dall’elenco ufficiale. Registrati i giorni discordanti senza sceglierne uno come universale. La prosa del lotto parla già del mese e non necessita di un giorno non dimostrato.",
+      "source_ids": [
+        "053-S01",
+        "053-S07",
+        "053-S08"
+      ],
+      "text_applied": false
+    },
+    {
+      "target_id": "sega-saturn",
+      "problem": "Il metadato non specifica la regione del 22 novembre 1994.",
+      "conclusion": "Confermata la release giapponese. Nel testo gli eventi E3 del maggio 1995 descrivono disponibilità effettiva nei negozi selezionati e restano distinti dal lancio giapponese.",
+      "source_ids": [
+        "053-S09"
+      ],
+      "text_applied": true
+    }
+  ],
+  "metadata_proposals": [
+    {
+      "target_id": "super-punch-out-1994",
+      "action": "specify_regional_scope",
+      "proposed_date": {
+        "year": 1994,
+        "month": 10,
+        "day": 24,
+        "precision": "day",
+        "region": "North America",
+        "version": "Super Nintendo"
+      },
+      "source_ids": [
+        "053-S01",
+        "053-S02"
+      ],
+      "catalog_modified": false
+    },
+    {
+      "target_id": "wikipedia-67461",
+      "action": "specify_regional_scope",
+      "proposed_date": {
+        "year": 1994,
+        "month": 11,
+        "day": 15,
+        "precision": "day",
+        "region": "North America",
+        "version": "MS-DOS"
+      },
+      "source_ids": [
+        "053-S03"
+      ],
+      "catalog_modified": false
+    },
+    {
+      "target_id": "wikipedia-153399",
+      "action": "use_documented_release_month_and_regional_scope",
+      "original_date": {
+        "year": 1994,
+        "month": 11,
+        "day": 18,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed_date": {
+        "year": 1994,
+        "month": 11,
+        "day": 0,
+        "precision": "month",
+        "region": "North America",
+        "version": "Super Nintendo"
+      },
+      "reason": "Mese attestato direttamente da Nintendo. Il giorno europeo 18 e il giorno europeo 24 delle fonti discordanti non diventano una data globale; nessun giorno convenzionale inventato.",
+      "source_ids": [
+        "053-S01",
+        "053-S07",
+        "053-S08"
+      ],
+      "catalog_modified": false
+    },
+    {
+      "target_id": "sega-saturn",
+      "action": "specify_regional_scope",
+      "proposed_date": {
+        "year": 1994,
+        "month": 11,
+        "day": 22,
+        "precision": "day",
+        "region": "Japan",
+        "version": "Sega Saturn"
+      },
+      "source_ids": [
+        "053-S09"
+      ],
+      "catalog_modified": false
+    }
+  ],
+  "expansion_assessments": [
+    {
+      "target_id": "console-gap-alien-vs-predator-atari-jaguar-game",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": 5,
+      "missing_cards": 2,
+      "rationale": "Titolo rappresentativo di Atari Jaguar, con tre prospettive giocabili distinte."
+    },
+    {
+      "target_id": "super-punch-out-1994",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": 5,
+      "missing_cards": 2,
+      "rationale": "Episodio importante della serie Punch-Out!! e della boxe Nintendo."
+    },
+    {
+      "target_id": "console-gap-samurai-shodown-ii",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": 5,
+      "missing_cards": 2,
+      "rationale": "Seguito fondamentale del combattimento armato SNK."
+    },
+    {
+      "target_id": "wikipedia-239277",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": 5,
+      "missing_cards": 1,
+      "rationale": "Esordio della serie Killer Instinct e sistema di combattimento importante nella storia di Rare."
+    },
+    {
+      "target_id": "console-gap-sonic-the-hedgehog-triple-trouble",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": 5,
+      "missing_cards": 2,
+      "rationale": "Episodio rilevante della serie Sonic portatile, con due protagonisti e debutto di Fang."
+    },
+    {
+      "target_id": "wikipedia-67461",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": 5,
+      "missing_cards": 2,
+      "rationale": "Primo Warcraft e titolo rilevante nella diffusione del multiplayer strategico."
+    },
+    {
+      "target_id": "hagane-the-final-conflict-1994",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": 5,
+      "missing_cards": 2,
+      "rationale": "Caso significativo dell’azione su Super Nintendo per movimenti e direzione visiva."
+    },
+    {
+      "target_id": "wikipedia-153399",
+      "main_cards": 4,
+      "feature_cards": 4,
+      "threshold_applicable": 5,
+      "missing_cards": 1,
+      "rationale": "Titolo centrale di Super Nintendo e della serie Donkey Kong; la feature Wise è distinta dal corpo principale."
+    },
+    {
+      "target_id": "sega-saturn",
+      "main_cards": 7,
+      "feature_cards": 4,
+      "threshold_applicable": 6,
+      "missing_cards": 0,
+      "rationale": "Console importante: sette card principali e quattro della feature soddisfano già la soglia di sei."
+    },
+    {
+      "target_id": "wikipedia-5602216",
+      "main_cards": 5,
+      "feature_cards": 0,
+      "threshold_applicable": 5,
+      "missing_cards": 0,
+      "rationale": "Primo episodio di Need for Speed: cinque card principali già coprono versioni, guida, veicoli e collaborazione editoriale."
+    }
+  ],
+  "editorial_review": {
+    "languages": [
+      "en",
+      "it",
+      "fr",
+      "de",
+      "es"
+    ],
+    "english_written_first": true,
+    "reviewer": "/root/resume_remaining_a",
+    "checks": [
+      "Letto l’INPUT integrale, comprese entrambe le feature; inglese scritto e salvato prima delle altre lingue.",
+      "Rilette le 230 versioni delle card: 38 principali e 8 nelle feature per lingua, titoli e incipit completi.",
+      "Conservati i tre scenari di Alien vs Predator, i tre minuti di Super Punch-Out!!, le difese e il POW di Samurai Shodown II, due barre di vita e formato dei round di Killer Instinct.",
+      "Conservati sei zone e abilità di Sonic/Tails, crediti CAProduction/Red Entertainment, armi e movimenti di Hagane, quaranta livelli e dati produttivi e commerciali di Donkey Kong Country.",
+      "Conservati importi, vendite, anni e piattaforme delle riedizioni, titolo Aquatic Ambience, cinque settimane di lavoro tecnico, editor Brief e cicli di assemblaggio della feature Wise.",
+      "Distinti il lancio e le testimonianze retrospettive Saturn; mantenuti tutti i modelli, port, circuiti, contenuti sbloccabili e date delle edizioni Nissan di The Need for Speed.",
+      "Nessuna feature trattata come biografia: Wise, Sato e Kalinske sono testimoni del progetto, non voci collocate alla nascita.",
+      "Verificati ordine e identità delle card, titoli propri, cinque lingue, sommari inglesi di 25–45 parole e assenza di HTML/Markdown. Nessun originale o media modificato."
+    ],
+    "scope_limit": "Ricerche mirate ai problemi effettivi, senza attestazione universale dei fatti forniti. Le fonti non accessibili sono dichiarate tali. Per Donkey Kong Country viene adottata la precisione mensile dimostrata; gli ampliamenti richiedono ancora lavoro separato e non sono dichiarati completati.",
+    "expansion_issues": 8,
+    "future_cards_requested": 14
+  },
+  "validation": {
+    "valid": true,
+    "batch_id": "053-catalog",
+    "completed": true,
+    "entry_count": 10,
+    "card_count_per_language": 46,
+    "language_count": 5,
+    "translated_card_count": 230,
+    "entry_card_counts": {
+      "console-gap-alien-vs-predator-atari-jaguar-game": 3,
+      "super-punch-out-1994": 3,
+      "console-gap-samurai-shodown-ii": 3,
+      "wikipedia-239277": 4,
+      "console-gap-sonic-the-hedgehog-triple-trouble": 3,
+      "wikipedia-67461": 3,
+      "hagane-the-final-conflict-1994": 3,
+      "wikipedia-153399": 8,
+      "sega-saturn": 11,
+      "wikipedia-5602216": 5
+    },
+    "issue_counts": {
+      "console-gap-alien-vs-predator-atari-jaguar-game": 1,
+      "super-punch-out-1994": 1,
+      "console-gap-samurai-shodown-ii": 1,
+      "wikipedia-239277": 1,
+      "console-gap-sonic-the-hedgehog-triple-trouble": 1,
+      "wikipedia-67461": 1,
+      "hagane-the-final-conflict-1994": 1,
+      "wikipedia-153399": 1,
+      "sega-saturn": 0,
+      "wikipedia-5602216": 0
+    },
+    "summary_checks": [
+      {
+        "entry_id": "console-gap-alien-vs-predator-atari-jaguar-game",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "super-punch-out-1994",
+        "feature_id": null,
+        "english_summary_words": 32
+      },
+      {
+        "entry_id": "console-gap-samurai-shodown-ii",
+        "feature_id": null,
+        "english_summary_words": 32
+      },
+      {
+        "entry_id": "wikipedia-239277",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "console-gap-sonic-the-hedgehog-triple-trouble",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "wikipedia-67461",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "hagane-the-final-conflict-1994",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "wikipedia-153399",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "wikipedia-153399",
+        "feature_id": "feature-david-wise-dkc",
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "sega-saturn",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "sega-saturn",
+        "feature_id": "feature-sega-saturn-multiple-markets",
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "wikipedia-5602216",
+        "feature_id": null,
+        "english_summary_words": 38
+      }
+    ],
+    "editorial_review": [],
+    "failures": []
+  },
+  "output_sha256": "3d3482f99e20f4d374925d09c3b2bac5f0fa1ae6c6d8ab0bf2dc2454f792ca4b",
+  "root_review": {
+    "reviewed_at": "2026-10-30T02:30:32.402565+00:00",
+    "scope": "Rilettura mirata delle segnalazioni numeriche e dei possibili tagli. Cifre in lettere, separatori locali e anni delle decadi non sono omissioni. Earthworm Jim conserva meccaniche, scorta e penalità; DKC conserva cifre, ruoli, vendite e modalità.",
+    "changes": [
+      {
+        "target_id": "wikipedia-153399",
+        "card_id": "main:0",
+        "language": "en",
+        "before": "Donkey Kong Country, called Super Donkey Kong in Japan, is Rare's 1994 platform game published by Nintendo for Super Nintendo. Donkey Kong and his friend Diddy set out to recover their banana hoard from King K. Rool and his crocodilian army, the Kremlings. Across forty side-scrolling levels, the player jumps between platforms, avoids obstacles and collects items. Minecarts and animal rides vary the journey, which also includes enemies, bosses and hidden bonus stages. Two players can cooperate or compete to make progress through the adventure.",
+        "after": "Donkey Kong Country, called Super Donkey Kong in Japan, is Rare's 1994 platform game published by Nintendo for Super Nintendo. The gorilla Donkey Kong and his friend Diddy set out to recover their banana hoard from King K. Rool and his crocodilian army, the Kremlings. Across forty side-scrolling levels, the player jumps between platforms, avoids obstacles and collects items. Minecarts and animal rides vary the journey, which also includes enemies, bosses and hidden bonus stages. Two players can cooperate or compete to make progress through the adventure."
+      },
+      {
+        "target_id": "wikipedia-153399",
+        "card_id": "main:0",
+        "language": "it",
+        "before": "Donkey Kong Country, intitolato Super Donkey Kong in Giappone, è il platform di Rare pubblicato da Nintendo per Super Nintendo nel 1994. Donkey Kong e il suo amico Diddy cercano di recuperare la propria scorta di banane da King K. Rool e dal suo esercito di coccodrilli, i Kremlings. In quaranta livelli a scorrimento laterale si salta fra piattaforme, si evitano ostacoli e si raccolgono oggetti. Carrelli da miniera e animali da cavalcare variano il percorso, che comprende nemici, boss e livelli bonus nascosti. Due giocatori possono collaborare oppure fare a gara per avanzare nell’avventura.",
+        "after": "Donkey Kong Country, intitolato Super Donkey Kong in Giappone, è il platform di Rare pubblicato da Nintendo per Super Nintendo nel 1994. Il gorilla Donkey Kong e il suo amico Diddy cercano di recuperare la propria scorta di banane da King K. Rool e dal suo esercito di coccodrilli, i Kremlings. In quaranta livelli a scorrimento laterale si salta fra piattaforme, si evitano ostacoli e si raccolgono oggetti. Carrelli da miniera e animali da cavalcare variano il percorso, che comprende nemici, boss e livelli bonus nascosti. Due giocatori possono collaborare oppure fare a gara per avanzare nell’avventura."
+      },
+      {
+        "target_id": "wikipedia-153399",
+        "card_id": "main:0",
+        "language": "fr",
+        "before": "Donkey Kong Country, appelé Super Donkey Kong au Japon, est le jeu de plateformes de Rare publié par Nintendo sur Super Nintendo en 1994. Donkey Kong et son ami Diddy cherchent à reprendre leur réserve de bananes à King K. Rool et à son armée de crocodiles, les Kremlings. Quarante niveaux à défilement horizontal demandent de sauter entre les plateformes, d’éviter les obstacles et de ramasser des objets. Les wagonnets et les animaux à chevaucher varient le parcours, qui comprend aussi ennemis, boss et niveaux bonus cachés. Deux joueurs peuvent coopérer ou se mesurer l’un à l’autre au fil de l’aventure.",
+        "after": "Donkey Kong Country, appelé Super Donkey Kong au Japon, est le jeu de plateformes de Rare publié par Nintendo sur Super Nintendo en 1994. Le gorille Donkey Kong et son ami Diddy cherchent à reprendre leur réserve de bananes à King K. Rool et à son armée de crocodiles, les Kremlings. Quarante niveaux à défilement horizontal demandent de sauter entre les plateformes, d’éviter les obstacles et de ramasser des objets. Les wagonnets et les animaux à chevaucher varient le parcours, qui comprend aussi ennemis, boss et niveaux bonus cachés. Deux joueurs peuvent coopérer ou se mesurer l’un à l’autre au fil de l’aventure."
+      },
+      {
+        "target_id": "wikipedia-153399",
+        "card_id": "main:0",
+        "language": "de",
+        "before": "Donkey Kong Country, in Japan Super Donkey Kong genannt, ist Rares Plattformspiel von 1994, das Nintendo für Super Nintendo veröffentlichte. Donkey Kong und sein Freund Diddy wollen ihren Bananenvorrat von King K. Rool und dessen Krokodilarmee, den Kremlings, zurückholen. In vierzig seitlich scrollenden Abschnitten springt man zwischen Plattformen, weicht Hindernissen aus und sammelt Gegenstände. Lorenfahrten und das Reiten auf Tieren sorgen für Abwechslung; hinzu kommen Gegner, Bosse und versteckte Bonusabschnitte. Zwei Spieler können zusammenarbeiten oder um den Fortschritt im Abenteuer konkurrieren.",
+        "after": "Donkey Kong Country, in Japan Super Donkey Kong genannt, ist Rares Plattformspiel von 1994, das Nintendo für Super Nintendo veröffentlichte. Der Gorilla Donkey Kong und sein Freund Diddy wollen ihren Bananenvorrat von King K. Rool und dessen Krokodilarmee, den Kremlings, zurückholen. In vierzig seitlich scrollenden Abschnitten springt man zwischen Plattformen, weicht Hindernissen aus und sammelt Gegenstände. Lorenfahrten und das Reiten auf Tieren sorgen für Abwechslung; hinzu kommen Gegner, Bosse und versteckte Bonusabschnitte. Zwei Spieler können zusammenarbeiten oder um den Fortschritt im Abenteuer konkurrieren."
+      },
+      {
+        "target_id": "wikipedia-153399",
+        "card_id": "main:0",
+        "language": "es",
+        "before": "Donkey Kong Country, llamado Super Donkey Kong en Japón, es el juego de plataformas de Rare que Nintendo publicó para Super Nintendo en 1994. Donkey Kong y su amigo Diddy buscan recuperar su reserva de plátanos de King K. Rool y su ejército de cocodrilos, los Kremlings. A través de cuarenta niveles de desplazamiento lateral, el jugador salta entre plataformas, evita obstáculos y recoge objetos. Las vagonetas y los animales que se pueden montar dan variedad al trayecto, que también incluye enemigos, jefes y fases de bonificación ocultas. Dos jugadores pueden colaborar o competir por avanzar en la aventura.",
+        "after": "Donkey Kong Country, llamado Super Donkey Kong en Japón, es el juego de plataformas de Rare que Nintendo publicó para Super Nintendo en 1994. El gorila Donkey Kong y su amigo Diddy buscan recuperar su reserva de plátanos de King K. Rool y su ejército de cocodrilos, los Kremlings. A través de cuarenta niveles de desplazamiento lateral, el jugador salta entre plataformas, evita obstáculos y recoge objetos. Las vagonetas y los animales que se pueden montar dan variedad al trayecto, que también incluye enemigos, jefes y fases de bonificación ocultas. Dos jugadores pueden colaborar o competir por avanzar en la aventura."
+      },
+      {
+        "target_id": "sega-saturn",
+        "card_id": "main:4",
+        "language": "en",
+        "before": "The announced United States launch had been set for September. Tom Kalinske's E3 keynote on 11 May instead revealed immediate availability through selected stores. Quantities were limited, the retail network was restricted and the software lineup was incomplete. Shops and development teams had prepared for the later schedule, leaving them with different levels of readiness to support the console's early arrival.",
+        "after": "The announced United States launch had been set for September. Tom Kalinske's E3 keynote on 11 May 1995 instead revealed immediate availability through selected stores. Quantities were limited, the retail network was restricted and the software lineup was incomplete. Shops and development teams had prepared for the later schedule, leaving them with different levels of readiness to support the console's early arrival."
+      },
+      {
+        "target_id": "sega-saturn",
+        "card_id": "main:4",
+        "language": "it",
+        "before": "Il lancio annunciato negli Stati Uniti era previsto per settembre. Nel discorso all’E3 dell’11 maggio, Tom Kalinske rivelò invece la disponibilità immediata presso alcuni punti vendita. Le quantità erano limitate, la rete commerciale ristretta e l’offerta di giochi incompleta. Negozi e gruppi di sviluppo si erano preparati per una data più tarda e si trovarono quindi pronti in misura diversa a sostenere l’arrivo anticipato della console.",
+        "after": "Il lancio annunciato negli Stati Uniti era previsto per settembre. Nel discorso all’E3 dell’11 maggio 1995, Tom Kalinske rivelò invece la disponibilità immediata presso alcuni punti vendita. Le quantità erano limitate, la rete commerciale ristretta e l’offerta di giochi incompleta. Negozi e gruppi di sviluppo si erano preparati per una data più tarda e si trovarono quindi pronti in misura diversa a sostenere l’arrivo anticipato della console."
+      },
+      {
+        "target_id": "sega-saturn",
+        "card_id": "main:4",
+        "language": "fr",
+        "before": "Le lancement américain annoncé était prévu pour septembre. Dans son discours à l’E3 du 11 mai, Tom Kalinske révéla à la place une disponibilité immédiate chez certains revendeurs. Les quantités étaient limitées, le réseau de magasins restreint et le catalogue incomplet. Boutiques et équipes de développement s’étaient préparées à une date plus tardive ; elles se trouvèrent donc à des degrés très différents de préparation pour soutenir cette arrivée anticipée.",
+        "after": "Le lancement américain annoncé était prévu pour septembre. Dans son discours à l’E3 du 11 mai 1995, Tom Kalinske révéla à la place une disponibilité immédiate chez certains revendeurs. Les quantités étaient limitées, le réseau de magasins restreint et le catalogue incomplet. Boutiques et équipes de développement s’étaient préparées à une date plus tardive ; elles se trouvèrent donc à des degrés très différents de préparation pour soutenir cette arrivée anticipée."
+      },
+      {
+        "target_id": "sega-saturn",
+        "card_id": "main:4",
+        "language": "de",
+        "before": "Für die USA war ursprünglich ein Start im September angekündigt. In seiner E3-Rede vom 11. Mai gab Tom Kalinske stattdessen die sofortige Verfügbarkeit bei ausgewählten Händlern bekannt. Die Stückzahlen waren begrenzt, das Verkaufsnetz eingeschränkt und das Spieleangebot unvollständig. Geschäfte und Entwicklerteams hatten sich auf den späteren Termin vorbereitet. Entsprechend unterschiedlich war ihre Bereitschaft, den vorgezogenen Start zu unterstützen.",
+        "after": "Für die USA war ursprünglich ein Start im September angekündigt. In seiner E3-Rede vom 11. Mai 1995 gab Tom Kalinske stattdessen die sofortige Verfügbarkeit bei ausgewählten Händlern bekannt. Die Stückzahlen waren begrenzt, das Verkaufsnetz eingeschränkt und das Spieleangebot unvollständig. Geschäfte und Entwicklerteams hatten sich auf den späteren Termin vorbereitet. Entsprechend unterschiedlich war ihre Bereitschaft, den vorgezogenen Start zu unterstützen."
+      },
+      {
+        "target_id": "sega-saturn",
+        "card_id": "main:4",
+        "language": "es",
+        "before": "El lanzamiento anunciado para Estados Unidos estaba previsto en septiembre. En su discurso del E3 del 11 de mayo, Tom Kalinske reveló en cambio la disponibilidad inmediata a través de determinadas tiendas. Las cantidades eran limitadas, la red comercial reducida y el catálogo incompleto. Comercios y equipos de desarrollo se habían preparado para una fecha posterior, por lo que llegaron con grados distintos de preparación al estreno adelantado.",
+        "after": "El lanzamiento anunciado para Estados Unidos estaba previsto en septiembre. En su discurso del E3 del 11 de mayo de 1995, Tom Kalinske reveló en cambio la disponibilidad inmediata a través de determinadas tiendas. Las cantidades eran limitadas, la red comercial reducida y el catálogo incompleto. Comercios y equipos de desarrollo se habían preparado para una fecha posterior, por lo que llegaron con grados distintos de preparación al estreno adelantado."
+      }
+    ],
+    "reason": "052: eliminato un avverbio aggiunto che poteva far sembrare EarthBound uscito soltanto in Giappone. 053: ripristinati la descrizione di Donkey Kong come gorilla e l’anno del lancio anticipato nella card dedicata, entrambi presenti nell’INPUT."
+  }
+}

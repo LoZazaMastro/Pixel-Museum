@@ -1,0 +1,560 @@
+{
+  "batch_id": "048-catalog",
+  "status": "completed",
+  "sources": [
+    {
+      "source_id": "ridge-original-namco",
+      "url": "https://www.bandainamcoent.co.jp/cs/list/ridgeracer/",
+      "title": "Ridge Racer — scheda ufficiale PlayStation",
+      "publisher": "Namco / Bandai Namco",
+      "accessed_at": "2026-10-30",
+      "scope": "L’introduzione storica indica l’uscita arcade giapponese nell’ottobre 1993.",
+      "limitation": "Il contenuto è disponibile nell’indicizzazione; l’apertura diretta restituisce 403. La fonte non fornisce un giorno e la proposta mantiene precisione mensile."
+    },
+    {
+      "source_id": "ridge-developers",
+      "url": "https://www.bandainamcoent.co.jp/asobimotto/page/carracinggames1.html",
+      "title": "Bandai Namco Chishin: storia dei giochi di corse, prima parte",
+      "publisher": "Bandai Namco, intervista a Akira Osugi, Shinichiro Okamoto e Tatsuro Okamoto, 25 aprile 2019",
+      "accessed_at": "2026-10-30",
+      "scope": "La sezione Ridge Racer conferma texture mapping, Gouraud shading e il rapporto fra le strade di montagna e la resa visiva del progetto.",
+      "limitation": "Testimonianze e note del titolare confermano tecniche e contesto. Non dimostrano il primato assoluto di ogni videogioco arcade con texture, che non viene ripetuto."
+    },
+    {
+      "source_id": "vf-sega-history",
+      "url": "https://www.sega.jp/history/arcade/product/9122/",
+      "title": "Virtua Fighter — storia arcade Sega",
+      "publisher": "Sega",
+      "accessed_at": "2026-10-30",
+      "scope": "La scheda indica dicembre 1993 e Model 1; descrive il primato del picchiaduro interamente poligonale.",
+      "limitation": "La data riguarda l’uscita arcade, non il test del prototipo. Il giorno 6 non è indicato e non viene ricostruito."
+    },
+    {
+      "source_id": "vf-series-history",
+      "url": "https://virtua-fighter.com/30th/en/history/",
+      "title": "Virtua Fighter 30th Anniversary — History",
+      "publisher": "Sega",
+      "accessed_at": "2026-10-30",
+      "scope": "La cronologia conferma dicembre 1993 e la sequenza Remix arcade nel 1995, poi Saturn nello stesso anno.",
+      "limitation": "La prosa non introduce nuovi giorni. La pagina riporta luglio per Saturn, mentre la testimonianza del collega distingue una distribuzione in bundle precedente: non si estende luglio a ogni forma di disponibilità."
+    },
+    {
+      "source_id": "vf-remix-colleague",
+      "url": "https://www.wizforest.com/diary/150716.html;p2",
+      "title": "Virtua Fighter Remix — diario del 16 luglio 2015",
+      "publisher": "Wizforest, testimonianza di un ex collega del reparto AM1",
+      "accessed_at": "2026-10-30",
+      "scope": "L’autore riferisce che AM1 assunse lo sviluppo di Remix e che lo stesso gruppo preparò la versione Saturn.",
+      "limitation": "Ricordo retrospettivo di un collega che dichiara di aver osservato il progetto da vicino, non di esserne l’autore principale. Le date di calendario sono riscontrate nella cronologia ufficiale Sega."
+    },
+    {
+      "source_id": "vf-colleague-background",
+      "url": "https://www.wizforest.com/diary/150217.html",
+      "title": "Diario del 17 febbraio 2015 — primo progetto Sega",
+      "publisher": "Wizforest",
+      "accessed_at": "2026-10-30",
+      "scope": "L’autore colloca il proprio ingresso come programmatore Sega nell’aprile 1994 e l’assegnazione al reparto AM1.",
+      "limitation": "Autodescrizione, utile per qualificare la testimonianza; non una verifica indipendente del rapporto di lavoro."
+    },
+    {
+      "source_id": "saga-original-battles",
+      "url": "https://www.nintendo.co.jp/wii/vc/vc_rs2/vc_rs2_08.html",
+      "title": "Romancing SaGa 2 — guida Virtual Console, combattimento",
+      "publisher": "Nintendo / Square Enix",
+      "accessed_at": "2026-10-30",
+      "scope": "La guida dell’originale descrive punti tecnica, livelli delle abilità e della magia, possibile aumento della salute massima.",
+      "limitation": "Il riscontro riguarda il gioco originale distribuito su Virtual Console, non soltanto il remake 2024. Non implica che ogni statistica aumenti dopo ogni combattimento."
+    },
+    {
+      "source_id": "saga-original-release",
+      "url": "https://www.nintendo.co.jp/wii/vc/vc_rs2/vc_rs2_01.html",
+      "title": "Romancing SaGa 2 — guida Virtual Console, introduzione",
+      "publisher": "Nintendo / Square Enix",
+      "accessed_at": "2026-10-30",
+      "scope": "Indica 10 dicembre 1993 e i sovrani dell’impero di Varennes, distinguendo il regno dal nome Avalon.",
+      "limitation": "La data storica nel paragrafo introduttivo non è la data della riedizione Wii. Il testo mantiene Avalon come sede dei sovrani senza ribattezzare l’intero paese."
+    },
+    {
+      "source_id": "saga-remake-platforms",
+      "url": "https://press.na.square-enix.com/Romancing-SaGa-2-Revenge-of-the-Seven/Focus/Logos-73097",
+      "title": "Romancing SaGa 2: Revenge of the Seven — product information",
+      "publisher": "Square Enix Press Hub",
+      "accessed_at": "2026-10-30",
+      "scope": "La scheda distingue 24 ottobre 2024 per PC/PS4/PS5/Switch, 31 luglio 2025 per Switch 2 e 25 settembre 2025 per Xbox Series X|S.",
+      "limitation": "Le date sono registrate per verificare gli anni del materiale. Non sono aggiunte come nuovi dettagli nella prosa né usate per spostare la voce dell’originale del 1993."
+    },
+    {
+      "source_id": "saga-switch2-available",
+      "url": "https://press.na.square-enix.com/SQUARE-ENIX-ANNOUNCES-NEW-GAMES-AND-TRAILERS-DURING-THE-LATEST-NINTEND",
+      "title": "Square Enix announces new games and trailers during the latest Nintendo Direct showcase",
+      "publisher": "Square Enix, 31 luglio 2025",
+      "accessed_at": "2026-10-30",
+      "scope": "Il comunicato dichiara l’edizione Switch 2 acquistabile dalla data del testo.",
+      "limitation": "Pur intitolato come annuncio, il passaggio pertinente attesta disponibilità, non soltanto un’uscita futura."
+    },
+    {
+      "source_id": "saga-xbox-available",
+      "url": "https://press.na.square-enix.com/ROMANCING-SAGA-2-REVENGE-OF-THE-SEVEN-NOW-AVAILABLE-ON-XBOX-AND-WINDOW",
+      "title": "Romancing SaGa 2: Revenge of the Seven now available on Xbox and Windows PC",
+      "publisher": "Square Enix, 25 settembre 2025",
+      "accessed_at": "2026-10-30",
+      "scope": "Conferma l’effettiva disponibilità digitale Xbox Series X|S nel 2025.",
+      "limitation": "Non viene confusa con la prima uscita Windows su Steam del 2024."
+    },
+    {
+      "source_id": "rondo-konami",
+      "url": "https://www.konami.com/games/castlevania/eu/en/page/history_1993_pce",
+      "title": "Castlevania: Rondo of Blood — history",
+      "publisher": "Konami",
+      "accessed_at": "2026-10-30",
+      "scope": "Conferma 29 ottobre 1993, PC Engine Super CD-ROM² e primo episodio della serie su CD-ROM.",
+      "limitation": "La versione inglese europea del sito riporta la data storica giapponese; non è prova di un’uscita europea nel 1993."
+    },
+    {
+      "source_id": "shining-sega",
+      "url": "https://vc.sega.jp/vc_shiningforce2/",
+      "title": "Shining Force II — Virtual Console Mega Drive",
+      "publisher": "Sega",
+      "accessed_at": "2026-10-30",
+      "scope": "La scheda indicizzata distingue l’originale Mega Drive e la data 1 ottobre 1993.",
+      "limitation": "Consultato il testo indicizzato; non confuso con la data della distribuzione Virtual Console."
+    },
+    {
+      "source_id": "actraiser-ancient",
+      "url": "https://www.ancient.co.jp/products.html",
+      "title": "Ancient — prodotti e lavori precedenti",
+      "publisher": "Ancient",
+      "accessed_at": "2026-10-30",
+      "scope": "La voce ActRaiser 2 indica il 29 ottobre 1993 per SFC/Enix e riconosce un contributo alla progettazione e allo sviluppo.",
+      "limitation": "Conservata la linea di crediti Quintet / Ancient del materiale; non attribuita l’intera produzione a un solo studio."
+    },
+    {
+      "source_id": "actraiser-square",
+      "url": "https://www.jp.square-enix.com/game/detail/actraiser2/",
+      "title": "ActRaiser 2 — scheda storica",
+      "publisher": "Square Enix",
+      "accessed_at": "2026-10-30",
+      "scope": "La scheda indicizzata concorda sul 29 ottobre 1993.",
+      "limitation": "L’apertura rende la navigazione, senza il contenuto dinamico del prodotto. La data trova anche conferma nella pagina Ancient integralmente leggibile."
+    },
+    {
+      "source_id": "gaia-square",
+      "url": "https://www.jp.square-enix.com/archive/gaia/",
+      "title": "Gaia Gensouki — archivio dei giochi",
+      "publisher": "Square Enix",
+      "accessed_at": "2026-10-30",
+      "scope": "La pagina indicizzata riporta 27 novembre 1993 per l’uscita Super Famicom.",
+      "limitation": "Consultazione dell’indicizzazione, non esame di documenti contemporanei. Non aggiunta una diversa data regionale al testo."
+    },
+    {
+      "source_id": "gaia-original-credits",
+      "url": "https://www.mobygames.com/game/7011/illusion-of-gaia/credits/snes/",
+      "title": "Illusion of Gaia — SNES original credits",
+      "publisher": "Crediti originali trascritti da MobyGames",
+      "accessed_at": "2026-10-30",
+      "scope": "Mariko Ohara è associata a Original Story; Moto Hagio a Character Designer.",
+      "limitation": "Trascrizione indicizzata dei crediti, non visione diretta della sequenza finale. Il contributo di Hagio è precisato come disegno dei personaggi."
+    },
+    {
+      "source_id": "myst-cyan-anniversary",
+      "url": "https://store.steampowered.com/bundle/37135/Myst_30th_Anniversary_Collection/",
+      "title": "Myst 30th Anniversary Collection",
+      "publisher": "Cyan, testo ufficiale del bundle su Steam",
+      "accessed_at": "2026-10-30",
+      "scope": "L’introduzione ricorda la pubblicazione di Myst il 24 settembre 1993.",
+      "limitation": "Il riscontro conferma la data già presente. Il passo consultato non precisa regione e piattaforma, che non sono aggiunte per deduzione."
+    }
+  ],
+  "decisions": [
+    {
+      "target_id": "wikipedia-5311222",
+      "problem": "La collocazione usa 30 novembre 1993 senza regione; il testo attribuisce un primato assoluto nella grafica con texture.",
+      "conclusion": "La scheda Namco colloca l’uscita arcade giapponese in ottobre: proposta precisione mensile. Conservati texture mapping, Gouraud e System 22, descrivendone il contributo concreto senza un primato non dimostrato.",
+      "source_ids": [
+        "ridge-original-namco",
+        "ridge-developers"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-32722",
+      "problem": "Il giorno 6 dicembre non è supportato dalle cronologie primarie; il corpo dice uscita mondiale in dicembre.",
+      "conclusion": "Conservato dicembre 1993, con proposta di precisione mensile per l’arcade giapponese. Il test di agosto resta un evento di sviluppo e viene distinto dalla release; omessa l’uniformità mondiale non dimostrata.",
+      "source_ids": [
+        "vf-sega-history",
+        "vf-series-history"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-32722",
+      "problem": "Da controllare l’attribuzione di Remix ad AM1 e la sequenza arcade/Saturn.",
+      "conclusion": "Attribuzione e sequenza conservate: la testimonianza del collega riscontra AM1, la cronologia Sega distingue arcade e Saturn nel 1995. Non importati altri ricordi o motivazioni aziendali.",
+      "source_ids": [
+        "vf-remix-colleague",
+        "vf-colleague-background",
+        "vf-series-history"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-2975597",
+      "problem": "Il testo afferma assenza assoluta di punti esperienza e crescita di attributi e abilità, ma il sistema assegna punti tecnica. Avalon è definita una nazione.",
+      "conclusion": "La crescita è spiegata attraverso azioni, punti tecnica, livelli di armi/magia e possibile incremento della salute. Evitato suggerire che tutte le statistiche crescano. Il racconto segue i sovrani di Avalon senza identificare la città con l’intero impero.",
+      "source_ids": [
+        "saga-original-battles",
+        "saga-original-release"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-2975597",
+      "problem": "Verificare che le conversioni del remake menzionate per il 2025 siano uscite, anziché soltanto annunciate.",
+      "conclusion": "Disponibilità attestata dai comunicati Square Enix e dalla scheda del prodotto. Conservati gli anni 2024 e 2025; la collocazione resta quella del gioco originale del 1993.",
+      "source_ids": [
+        "saga-remake-platforms",
+        "saga-switch2-available",
+        "saga-xbox-available"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "workbook-10-29-castlevania-rondo-of-blood",
+      "problem": "La nota del materiale richiede controllo della data editoriale; il contesto non indica la regione.",
+      "conclusion": "Konami conferma il 29 ottobre 1993 per PC Engine Super CD-ROM². Conservata la release giapponese già spiegata nel testo e proposta la regione nel metadato.",
+      "source_ids": [
+        "rondo-konami"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "illusion-of-gaia-1993",
+      "problem": "Il contributo di Moto Hagio è descritto genericamente come artwork.",
+      "conclusion": "Precisato il disegno dei personaggi secondo il ruolo nei crediti; conservata l’attribuzione della storia a Mariko Ōhara.",
+      "source_ids": [
+        "gaia-original-credits"
+      ],
+      "text_applied": true
+    }
+  ],
+  "metadata_proposals": [
+    {
+      "target_id": "wikipedia-5311222",
+      "field": "timeline_release",
+      "original": {
+        "year": 1993,
+        "month": 11,
+        "day": 30,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed": {
+        "year": 1993,
+        "month": 10,
+        "precision": "month",
+        "region": "Japan",
+        "version": "arcade / Namco System 22"
+      },
+      "source_ids": [
+        "ridge-original-namco"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "wikipedia-32722",
+      "field": "timeline_release",
+      "original": {
+        "year": 1993,
+        "month": 12,
+        "day": 6,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed": {
+        "year": 1993,
+        "month": 12,
+        "precision": "month",
+        "region": "Japan",
+        "version": "arcade / Sega Model 1"
+      },
+      "source_ids": [
+        "vf-sega-history",
+        "vf-series-history"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "wikipedia-2975597",
+      "field": "timeline_release",
+      "original": {
+        "year": 1993,
+        "month": 12,
+        "day": 10,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed": {
+        "year": 1993,
+        "month": 12,
+        "day": 10,
+        "precision": "day",
+        "region": "Japan",
+        "version": "Super Famicom"
+      },
+      "source_ids": [
+        "saga-original-release"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "workbook-10-29-castlevania-rondo-of-blood",
+      "field": "timeline_release",
+      "original": {
+        "year": 1993,
+        "month": 10,
+        "day": 29,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed": {
+        "year": 1993,
+        "month": 10,
+        "day": 29,
+        "precision": "day",
+        "region": "Japan",
+        "version": "PC Engine Super CD-ROM²"
+      },
+      "source_ids": [
+        "rondo-konami"
+      ],
+      "applied_to_catalog": false
+    }
+  ],
+  "expansion_assessments": [
+    {
+      "target_id": "myst",
+      "main_cards": 4,
+      "feature_cards": 4,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 1,
+      "rationale": "Gioco importante per il genere, la serie o la piattaforma. Le feature sono conteggiate separatamente e non sostituiscono le cinque card principali."
+    },
+    {
+      "target_id": "console-gap-shining-force-ii",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Gioco importante per il genere, la serie o la piattaforma. Le feature sono conteggiate separatamente e non sostituiscono le cinque card principali."
+    },
+    {
+      "target_id": "actraiser-2-1993",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Gioco importante per il genere, la serie o la piattaforma. Le feature sono conteggiate separatamente e non sostituiscono le cinque card principali."
+    },
+    {
+      "target_id": "workbook-10-29-castlevania-rondo-of-blood",
+      "main_cards": 5,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 0,
+      "rationale": "Gioco importante per il genere, la serie o la piattaforma. Le feature sono conteggiate separatamente e non sostituiscono le cinque card principali."
+    },
+    {
+      "target_id": "illusion-of-gaia-1993",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Gioco importante per il genere, la serie o la piattaforma. Le feature sono conteggiate separatamente e non sostituiscono le cinque card principali."
+    },
+    {
+      "target_id": "wikipedia-5311222",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Gioco importante per il genere, la serie o la piattaforma. Le feature sono conteggiate separatamente e non sostituiscono le cinque card principali."
+    },
+    {
+      "target_id": "console-gap-toejam-earl-in-panic-on-funkotron",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Gioco importante per il genere, la serie o la piattaforma. Le feature sono conteggiate separatamente e non sostituiscono le cinque card principali."
+    },
+    {
+      "target_id": "wikipedia-32722",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Gioco importante per il genere, la serie o la piattaforma. Le feature sono conteggiate separatamente e non sostituiscono le cinque card principali."
+    },
+    {
+      "target_id": "doom",
+      "main_cards": 7,
+      "feature_cards": 8,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 0,
+      "rationale": "Gioco importante per il genere, la serie o la piattaforma. Le feature sono conteggiate separatamente e non sostituiscono le cinque card principali."
+    },
+    {
+      "target_id": "wikipedia-2975597",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 1,
+      "rationale": "Gioco importante per il genere, la serie o la piattaforma. Le feature sono conteggiate separatamente e non sostituiscono le cinque card principali."
+    }
+  ],
+  "editorial_review": {
+    "english_first": true,
+    "five_languages_reviewed": [
+      "en",
+      "it",
+      "fr",
+      "de",
+      "es"
+    ],
+    "checks": [
+      "10 voci, 38 card principali e 12 card nelle tre feature: 50 card per lingua",
+      "Riletti incipit, titoli, prosa e corrispondenza dei dati nelle cinque lingue",
+      "Sommari inglesi fra 25 e 45 parole; feature adattate integralmente con gli stessi ID",
+      "Conservati nomi, attribuzioni, sistemi, cifre, luoghi, date pertinenti e titoli musicali",
+      "Precisato il dimezzamento della frequenza dei fotogrammi di Ridge Racer in tutte le lingue",
+      "Resi più diretti i due titoli generici delle feature DOOM; nomi propri dei giochi invariati",
+      "Nessuna biografia da spostare alla nascita: i ricordi di Miller, Romero e Halderman restano approfondimenti sulla produzione",
+      "Fonti e condizioni Cyan/VGHF, riferimenti delle interviste, documentazione DEU e licenze originali conservati integralmente negli INPUT",
+      "Otto voci sotto soglia: 14 nuove card principali da preparare nel passaggio separato di ampliamento"
+    ],
+    "external_verification_limit": "Riscontri mirati ai punti descritti, non controllo esterno di ogni fatto. Le fonti già fornite sulle feature restano attribuite e non sono dichiarate nuovamente esaminate per intero. Il PDF del manuale ActRaiser 2 è stato individuato ma le schermate restituite non erano leggibili: nessuna verifica visuale viene rivendicata. Nessuna modifica o verifica autonoma dei diritti dei media; la nota di provenienza di Rondo resta nell’INPUT.",
+    "book_style_references_consulted": false,
+    "root_review": {
+      "reviewed_at": "2026-10-30T02:03:47.765861+00:00",
+      "checks": [
+        "Letti i campi segnalati Ridge Racer e SaGa 2: 3D e tridimensionale sono equivalenti, come i separatori delle migliaia e i decimali locali.",
+        "La normalizzazione Doom Builder2 → Doom Builder 2 conserva il nome dello strumento. Le nuove date sono accompagnate da decisioni nell’audit.",
+        "La correzione dei punti tecnica di SaGa 2 deriva dal manuale e non costituisce una meccanica inventata."
+      ],
+      "scope": "Controllo mirato degli avvisi automatici e dei campi nominati, non attestazione universale di tutti i fatti."
+    }
+  },
+  "validation": {
+    "valid": true,
+    "batch_id": "048-catalog",
+    "completed": true,
+    "entry_count": 10,
+    "card_count_per_language": 50,
+    "language_count": 5,
+    "translated_card_count": 250,
+    "entry_card_counts": {
+      "myst": 8,
+      "console-gap-shining-force-ii": 3,
+      "actraiser-2-1993": 3,
+      "workbook-10-29-castlevania-rondo-of-blood": 5,
+      "illusion-of-gaia-1993": 3,
+      "wikipedia-5311222": 3,
+      "console-gap-toejam-earl-in-panic-on-funkotron": 3,
+      "wikipedia-32722": 3,
+      "doom": 15,
+      "wikipedia-2975597": 4
+    },
+    "issue_counts": {
+      "myst": 1,
+      "console-gap-shining-force-ii": 1,
+      "actraiser-2-1993": 1,
+      "workbook-10-29-castlevania-rondo-of-blood": 0,
+      "illusion-of-gaia-1993": 1,
+      "wikipedia-5311222": 1,
+      "console-gap-toejam-earl-in-panic-on-funkotron": 1,
+      "wikipedia-32722": 1,
+      "doom": 0,
+      "wikipedia-2975597": 1
+    },
+    "summary_checks": [
+      {
+        "entry_id": "myst",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "myst",
+        "feature_id": "feature-myst-handcrafted-world",
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "console-gap-shining-force-ii",
+        "feature_id": null,
+        "english_summary_words": 41
+      },
+      {
+        "entry_id": "actraiser-2-1993",
+        "feature_id": null,
+        "english_summary_words": 42
+      },
+      {
+        "entry_id": "workbook-10-29-castlevania-rondo-of-blood",
+        "feature_id": null,
+        "english_summary_words": 42
+      },
+      {
+        "entry_id": "illusion-of-gaia-1993",
+        "feature_id": null,
+        "english_summary_words": 39
+      },
+      {
+        "entry_id": "wikipedia-5311222",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "console-gap-toejam-earl-in-panic-on-funkotron",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "wikipedia-32722",
+        "feature_id": null,
+        "english_summary_words": 39
+      },
+      {
+        "entry_id": "doom",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "doom",
+        "feature_id": "feature-john-romero-levels",
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "doom",
+        "feature_id": "feature-doom-mod-authorship",
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "wikipedia-2975597",
+        "feature_id": null,
+        "english_summary_words": 35
+      }
+    ],
+    "editorial_review": [],
+    "failures": []
+  },
+  "output_sha256": "3dc25810d6bcc86195ec3c79b93272410b14031fbc25c03f12b82948ac2ce48f"
+}

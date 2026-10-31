@@ -1,0 +1,99 @@
+{
+  "status": "PASS",
+  "locale": "it",
+  "entries": [
+    {
+      "entry_id": "workbook-08-30-astral-chain",
+      "source_fields_sha256": "1707ed2c359ffbd24e31fa002414ab896393161c693ddc8a2f440e74635ebd71",
+      "translation_sha256": "88849aa8cd8352ed7c1781dca9028e81797f74aef49a4121a5a1014465ad117b",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch309/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "b7f0989f87b9d767fe395f659fb6ba157e5b6188823ec8fcb3d09dc7914e5c31"
+    },
+    {
+      "entry_id": "wikipedia-57651414",
+      "source_fields_sha256": "c556cee06ac65adab4d90dfacc13dd69069e4e2956bef830fcd23dbb84409c98",
+      "translation_sha256": "8f2bed1e7b3b91eaec38260d22bee4d24cc7a1a92997bbd678504acf93d7d499",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch309/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "b7f0989f87b9d767fe395f659fb6ba157e5b6188823ec8fcb3d09dc7914e5c31"
+    },
+    {
+      "entry_id": "workbook-09-19-sayonara-wild-hearts",
+      "source_fields_sha256": "6109e20aa23dde1c90082d7f8239cc25701000c8aaa4f6b51837c1780b69200b",
+      "translation_sha256": "68a101c03be36f171b13f41862cf3a3fcad65fd9559b171c277d5faf1cdc3ebc",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch309/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "b7f0989f87b9d767fe395f659fb6ba157e5b6188823ec8fcb3d09dc7914e5c31"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "package_audit",
+    "actual_receipt": "build/research/catalog-2019-chronological/root-august-september-three-private/independent-package-audit-approval.json",
+    "actual_receipt_sha256": "2ba6b66ed7b0ec4597bd0f44193bb13b1289e8df146bcad98974f868dbd7b743",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "package_audit",
+      "reviewed_index": "build/research/catalog-2019-chronological/root-august-september-three-private/three-private-index.json",
+      "reviewed_index_sha256": "69707e87085fa8df7763c4e6b5a287dd34bd23efce4a17b5aefb9c8c907e4d50",
+      "owners": [
+        {
+          "entry_id": "workbook-08-30-astral-chain",
+          "slug": "astral-chain",
+          "source": "build/research/catalog-2019-chronological/root-august-september-three-private/astral-chain-source-private-candidate.json",
+          "source_sha256": "11793677102bbc5b7c3bf7816da8753783eaeb109be3ba2f5632e184a559273b",
+          "target": "build/research/catalog-2019-chronological/root-august-september-three-private/astral-chain-four-language-private-candidate.json",
+          "target_sha256": "2784b9facb62716cb43c3e9c10df666826a7ad4f5f77e92b42500111e38d7b74",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 5,
+          "tracks": 97,
+          "contact": "build/research/catalog-2019-chronological/root-august-september-three-private/astral-chain-final-contact.jpg",
+          "contact_sha256": "924e1a23d65958b38ed67773d3d5b5544d0cb5c8c29fe8d9c359f4902e51d942"
+        },
+        {
+          "entry_id": "wikipedia-57651414",
+          "slug": "gears5",
+          "source": "build/research/catalog-2019-chronological/root-august-september-three-private/gears5-source-private-candidate.json",
+          "source_sha256": "0ebd6ce9eec1a2eeb2754ab87fe82c3555bc0493f52d2a8219ab3ba6273a46a7",
+          "target": "build/research/catalog-2019-chronological/root-august-september-three-private/gears5-four-language-private-candidate.json",
+          "target_sha256": "0c61704c5dfe78ea074314234aaf9696dc1a593e23718c81b0e3cc1beb965a17",
+          "english_cards": 2,
+          "localized_cards": 8,
+          "images": 4,
+          "tracks": 3,
+          "contact": "build/research/catalog-2019-chronological/root-august-september-three-private/gears5-final-contact.jpg",
+          "contact_sha256": "8b2edd18cc7ccc17d756efbdef43d64867707851eddcc29fc444aa7207e3d563"
+        },
+        {
+          "entry_id": "workbook-09-19-sayonara-wild-hearts",
+          "slug": "sayonara",
+          "source": "build/research/catalog-2019-chronological/root-august-september-three-private/sayonara-source-private-candidate.json",
+          "source_sha256": "aabcc2a7920c2603a8257bcf94d8ff6977987b06a1f4215db8a37e8b25a4fd14",
+          "target": "build/research/catalog-2019-chronological/root-august-september-three-private/sayonara-four-language-private-candidate.json",
+          "target_sha256": "26866f42e669bdce77000cf0ca269f612308047819d9159d5a9cae4b9987f1d5",
+          "english_cards": 4,
+          "localized_cards": 16,
+          "images": 7,
+          "tracks": 3,
+          "contact": "build/research/catalog-2019-chronological/root-august-september-three-private/sayonara-final-contact.jpg",
+          "contact_sha256": "24cf9bd5fdb1097f2ed33faa3fdb7e262461157191f77ad69b70b46657fd941b"
+        }
+      ],
+      "review_scope": {
+        "english_paragraphs_read": 9,
+        "localized_paragraphs_read": 36,
+        "final_media_images_viewed": 16,
+        "new_music_public_metadata_read": 2,
+        "preserved_music_objects_compared_exact": 100,
+        "primary_sources_read": [
+          "https://www.platinumgames.com/works/astral-chain",
+          "https://news.xbox.com/en-us/2019/06/09/gears-5-confirms-september-10-launch-date-tech-test-escape-mode/",
+          "https://simogo.com/2019/09/11/sayonara-wild-hearts-comes-to-nintendo-switch-playstation-4-and-apple-arcade-september-19-2019/"
+        ]
+      },
+      "resolved_findings": [
+        "Gears 5 English second heading now describes its release and reception; already correct localized headings preserved."
+      ],
+      "production_writes": false
+    }
+  }
+}

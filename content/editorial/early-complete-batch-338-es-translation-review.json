@@ -1,0 +1,98 @@
+{
+  "status": "PASS",
+  "locale": "es",
+  "entries": [
+    {
+      "entry_id": "wikipedia-67551622",
+      "source_fields_sha256": "00bf661764077b5712d84c3324a10663042ddca744e7c040b71dc2b62272f05d",
+      "translation_sha256": "3e20645ff5d246ce744566814836cf048188c641aff2860bb5239186abbcb2fb",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch338/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "39dcc8707eea97b067d1ed5a0c6c26034f1bd6b9f92f069dc973e79652536249"
+    },
+    {
+      "entry_id": "wikipedia-57650958",
+      "source_fields_sha256": "08c50d5832dafbf54f05cba0a707947b33cdf80c4d4beed5f072a68059a4a823",
+      "translation_sha256": "28ee442c37a95ca2bb9cbf6064c88edc4a4de911d68e8fb4d9950b84e0a2bf86",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch338/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "39dcc8707eea97b067d1ed5a0c6c26034f1bd6b9f92f069dc973e79652536249"
+    },
+    {
+      "entry_id": "wikipedia-67882486",
+      "source_fields_sha256": "84aaa146fa2ab0563183ae9e670ed3bb42bcdea1a44e77c68a92b40855f9ae7b",
+      "translation_sha256": "80cf6b5ca95232f1bf06a8c084cd6bb50878e7b69bc64d77b12ffe4a005a8ac0",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch338/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "39dcc8707eea97b067d1ed5a0c6c26034f1bd6b9f92f069dc973e79652536249"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "/root/category_audit",
+    "actual_receipt": "build/research/catalog-2021-chronological/december-three-private/independent-category-audit-approval.json",
+    "actual_receipt_sha256": "999de7f3c3ff0d0b70dbd75fde432ef8415f001e699f35d8fa09f2585c2a1216",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "/root/category_audit",
+      "index_sha256": "3349b576efc6e5d3b80ccc2f8989ea9a244ccc28229ebda4eaef0603b4b0c0ba",
+      "scope": {
+        "english_paragraphs_actually_read": 8,
+        "localized_paragraphs_actually_read": 32,
+        "languages": [
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "images_actually_viewed": 15,
+        "final_contact_sheets_actually_viewed": 3,
+        "endwalker_saved_metadata_records_checked": 63,
+        "new_vertigo_metadata_records_read": 3
+      },
+      "findings": [],
+      "primary_sources_read": [
+        {
+          "url": "https://www.jp.square-enix.com/music/sem/page/ff14/ENDWALKER_ost/en/tracklist/",
+          "finding": "Original62numberedalbumtracks independentlyread andmatched in order; officialplaylist addsbonusChiptuneVersion,63total. Saved individualreceipts verify composer/arranger separation,publicorunlisted officialchannel andAAC; not63redundantnetworkqueries."
+        },
+        {
+          "url": "https://www.jp.square-enix.com/topics/detail/2035/",
+          "finding": "Original2022publisheralbumrelease source opened; originalalbum context retained."
+        },
+        {
+          "url": "https://support.jp.square-enix.com/faqarticle.php?id=5381&kid=83491",
+          "finding": "SquareEnixcurrentprimary confirms August4,2026 NintendoSwitch2 platform, so laterplatformclaim not removed based on outdated knowledge."
+        },
+        {
+          "url": "https://www.microids.com/dive-into-the-world-of-the-master-of-suspense-with-alfred-hitchcock-vertigo-now-available-on-consoles/",
+          "finding": "Original2022publisher release confirms September27console/October4NorthAmerica,PCpreviouslyavailable,EdMillertherapy and JuanMiguelMartinMunozoriginalscore."
+        }
+      ],
+      "review_notes": [
+        "All8EN and32locale bodies fullyread. Allfivefields faithful andcomplete; soleVertigogrammaticalrepair doesnotchangereleasehistory.",
+        "All15images viewed: cleanEndwalker/Halo/Vertigo covers and actualgameplay. Halo later2022coop explicitlyqualified, notclaimed as2021launch feature.",
+        "Endwalker63orderedofficialrecordings=62album+1bonus andthreeVertigoofficialTopic2022recordings. No fanreview substituted, noaudiofilesdownloaded, noPS5auditionclaimed. ExistingHalo3objects preserved without repeatedqueries."
+      ],
+      "owners": [
+        {
+          "entry_id": "wikipedia-67551622",
+          "source_sha256": "45a96971e94d323ddf9a1a22d2cb21225cae8ba02adba1c55a50cdf3102f5e5c",
+          "target_sha256": "d136f026d47070be21f369a2c33ab10d48f6921cdd8be3526fc4fa470c4f45cd",
+          "contact_sha256": "453adbe11f3ce90a9663a6b90fb499d4360267cc27beef40826c8bff6fc48dfd"
+        },
+        {
+          "entry_id": "wikipedia-57650958",
+          "source_sha256": "ada1d088203104f6b7597ff422b83c633bc6adbe0e50b250971ba43b6ecdccf7",
+          "target_sha256": "df18de1ee2d30a95e920921551c06c26ea1a727480c85110e0a152fcc0ea2309",
+          "contact_sha256": "39e58581292f1431541a7e77852511807638b942da2ec7e1cf5d912b438a6739"
+        },
+        {
+          "entry_id": "wikipedia-67882486",
+          "source_sha256": "e1a74367243c32f97eed14f586a33660e439a1f3957c54bfd51e749033084f51",
+          "target_sha256": "e6be764bf4a85060b71b2fd76f4ead0254a64f5ebbf5e5f4532fa81b10e027b4",
+          "contact_sha256": "6b960db8b1ce4446d21f848848b6e9fa9761bfc1a983fe1978d39fa6a5d74938"
+        }
+      ],
+      "production_writes": false,
+      "authorization": "Root admission remains separate."
+    }
+  }
+}

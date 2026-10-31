@@ -1,0 +1,96 @@
+{
+  "status": "PASS",
+  "locale": "fr",
+  "entries": [
+    {
+      "entry_id": "wikipedia-64008282",
+      "source_fields_sha256": "e70c651335ca5e702d085dd9bb727b875309a7c01d6ba71797539603604a4b71",
+      "translation_sha256": "7e2c4e371a9f0e6525e1fddbf6de49551c5d742dc60cbbe703ceb9ab80f08a9c",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch333/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "c7a3e1857b538f2b2aab1d517696cbfa4880ff05965acb03f419bc238be19fc1"
+    },
+    {
+      "entry_id": "workbook-08-17-humankind",
+      "source_fields_sha256": "a466ff34344c1b5343317d568e07c51dadcef42ac7d825adc7460a463a22ca99",
+      "translation_sha256": "48ab619357b03d1eadef3c6999b0d057652b7b6cb423a4b705806a25b2d9c0ca",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch333/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "c7a3e1857b538f2b2aab1d517696cbfa4880ff05965acb03f419bc238be19fc1"
+    },
+    {
+      "entry_id": "workbook-08-25-psychonauts-2",
+      "source_fields_sha256": "2ce8102b83ef92edee6562414178db4c9853c153ef61a10e3b796092fc40493a",
+      "translation_sha256": "9446909aed9c3426893386b88125d4219d337b80ce63b59993b5771fcc23c486",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch333/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "c7a3e1857b538f2b2aab1d517696cbfa4880ff05965acb03f419bc238be19fc1"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "package_audit",
+    "actual_receipt": "build/research/catalog-2021-chronological/root-june-august-three-private/independent-package-audit-approval.json",
+    "actual_receipt_sha256": "774998b015506ff942cfddc9c3ad1e906652aeb5f475cf7c7476393e33ba2d2a",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "package_audit",
+      "independent_of_authors": [
+        "root",
+        "category_audit"
+      ],
+      "index_path": "build/research/catalog-2021-chronological/root-june-august-three-private/three-private-index.json",
+      "index_sha256": "b31611e9ef2aea86bfdcc64807ee07eea0fcb50d1bf3b7a22b54d81df2079e77",
+      "owners": [
+        {
+          "entry_id": "wikipedia-64008282",
+          "source_sha256": "46f876fd6b2fcda6d36265027c4de6a0f8c3e375ef86ba3b8b4cc6db519342e1",
+          "target_sha256": "3ec512f4cf6362dc43bb1eb16eac86cc2cbf6b1e273ab520e7f5e7cdbc6fc5ee",
+          "contact_sha256": "65cf0b69ce5bc9c8eb639aee85d35ee1712bad9ba9a83a4b5e25fca675a0c9ed",
+          "english_paragraphs_read": 3,
+          "localized_paragraphs_read": 12,
+          "images_personally_viewed": 4,
+          "existing_recordings_exact": 0
+        },
+        {
+          "entry_id": "workbook-08-17-humankind",
+          "source_sha256": "dca95aa49b72f51118839ca60e52ee102cc5f66647b2a6b601cb2b17c26ca63e",
+          "target_sha256": "5961fa12b91b016e861f37c221f8bdfa60068199cc3d4d4dc80969ba8f5599c4",
+          "contact_sha256": "610bf55a8843dc9a083a7a1a259710e7876e31f61d7b5c59a8d5300a9fafe551",
+          "english_paragraphs_read": 4,
+          "localized_paragraphs_read": 16,
+          "images_personally_viewed": 7,
+          "existing_recordings_exact": 1
+        },
+        {
+          "entry_id": "workbook-08-25-psychonauts-2",
+          "source_sha256": "2cec021e4c737abda8e56fdf5c99dd41c7a92d80ace89698e131d1b254a37228",
+          "target_sha256": "edd4593022572fbb8841edd051e78d8a8bac54e95c8439d9b03fb4053036a582",
+          "contact_sha256": "ee0ee8bed253d7c1409eb32a67730077a76af23d9e850b165f057601ecdcd797",
+          "english_paragraphs_read": 2,
+          "localized_paragraphs_read": 8,
+          "images_personally_viewed": 7,
+          "existing_recordings_exact": 2
+        }
+      ],
+      "scope": "Read all 9 EN and all 36 IT/FR/DE/ES paragraphs and five-field localized UI. Personally viewed all 18 selected images across three final contact sheets. Read four new recording metadata receipts (six UI tracks), no repeated acquisition of existing music.",
+      "findings": [],
+      "primary_checks": [
+        {
+          "url": "https://gamemusic.bn-ent.net/release/456/",
+          "finding": "SCARLET NEXUS Sound Team collective score credit; June24,2022 album differs from official November18,2021 OSF Radio selection. Exact0:00?3:50,7:35?9:48,38:15?41:10 chapters match publisher metadata."
+        },
+        {
+          "url": "https://www.g4f-records.com/soundtrack/humankind-soundtrack/",
+          "finding": "Arnaud Roy original score, G4F label, August17,2021 PC release; two public July2021 recordings distinct from DLC."
+        },
+        {
+          "url": "https://www.doublefine.com/games/psychonauts-2/extras",
+          "finding": "The Eye Shrine PeterMcConnell Vol1 track2 1:34; public label delivery95seconds consistent rounded duration."
+        },
+        {
+          "file": "build/research/catalog-2021-chronological/root-june-august-three-private/humankind-official-manual.pdf",
+          "finding": "Printed pp7/9/11, PDF8/10/12 actually read: separate influence/money stocks, money construction buyout, tactical turn/battle interface. Three finite EN corrections faithfully carried to all four languages."
+        }
+      ],
+      "production_writes": false
+    }
+  }
+}

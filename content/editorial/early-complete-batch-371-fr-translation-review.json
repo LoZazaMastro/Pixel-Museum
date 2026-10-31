@@ -1,0 +1,127 @@
+{
+  "status": "PASS",
+  "locale": "fr",
+  "entries": [
+    {
+      "entry_id": "wikipedia-77070226",
+      "source_fields_sha256": "43114706aa0960e424be2be4fcaaa2783840d9adfa1694ad3620be848f8ea7a4",
+      "translation_sha256": "3f720ccb66a0ad9d956bd1fe2821672e8c139a45d68afd0f6e117adc6b9666a9",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch371/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "65ba19f31737ef57e94db2e8ee7e2c794b5836acf7a97a2d10a5817c5d697b59"
+    },
+    {
+      "entry_id": "wikipedia-69513818",
+      "source_fields_sha256": "36c62d41fc144159d5bf73afeec3c3ce3b87bba7271c8aa53f9eb8d847b074b0",
+      "translation_sha256": "59e58445f3bc42cf19ff14a6ac7ea3adff9e0d0ee37998c5f0bb6e33342ab750",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch371/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "65ba19f31737ef57e94db2e8ee7e2c794b5836acf7a97a2d10a5817c5d697b59"
+    },
+    {
+      "entry_id": "wikipedia-60275778",
+      "source_fields_sha256": "b3631f4752b6bf6180a8e95da352e203508644d1e15bf48888ba39474c2375a4",
+      "translation_sha256": "0a063dc1f100a8f655190aae6aa9ef2ff1a8d8126a021fd6841d5d76f97da92b",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch371/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "65ba19f31737ef57e94db2e8ee7e2c794b5836acf7a97a2d10a5817c5d697b59"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "category_audit",
+    "actual_receipt": "build/research/catalog-2024-chronological/september-three-private/independent-category-audit-approval.json",
+    "actual_receipt_sha256": "016ce45f1a8a1702be6969a6aed4cc5bb7ee4083a4f559801b53057a57bad87a",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "category_audit",
+      "index": "build/research/catalog-2024-chronological/september-three-private/three-original-source-media-four-language-private-index.json",
+      "index_sha256": "401c8825330d75d2716b55ef69928799db964f0e294661d066691769cd3475c3",
+      "scope": "Personally read all 13 English and 52 localized paragraphs and all five fields. Personally viewed all 20 selected images in the three final contact sheets. Read the one new Ficsit Inc. public AAC metadata record, original publisher tracklist and composer credit. Verified 92 existing soundtrack objects exact without repeated stream requests. No audio download, audition or live PS5 verification claimed.",
+      "primary_sources_actually_read": [
+        {
+          "url": "https://community.focus-entmt.com/focus-entertainment/space-marine-2/votes/61-contested-health-recovery-rework",
+          "finding": "Game director explicitly confirms contested health recovery through damage and executions; finite correction supported."
+        },
+        {
+          "url": "https://community.focus-entmt.com/focus-entertainment/space-marine-2/blogs/355-february-community-update",
+          "finding": "February 27, 2026 publisher update confirms Techmarine patch released the previous day; later roster explicitly distinguished from launch."
+        },
+        {
+          "url": "https://store.steampowered.com/app/5276140/Satisfactory__Core_Values_Expansion/",
+          "finding": "Real publisher page confirms first paid expansion, underground factory setting, release date still unannounced."
+        },
+        {
+          "url": "https://steamcommunity.com/app/526870",
+          "finding": "Publisher September 29 announcement of Core Values and The Big Break directly visible in current official community news."
+        },
+        {
+          "url": "https://store.steampowered.com/app/2873550/",
+          "finding": "Original publisher soundtrack explicitly credits Jannik Reuterberg alias Dream Thing and Ficsit Inc. at 4:52; public recording 293-second encoding difference is not an invented alternate recording."
+        },
+        {
+          "url": "https://store.epicgames.com/news/warhammer-40000-space-marine-2-guide-campaign-operations?lang=hi",
+          "finding": "Original platform guide explicitly distinguishes Mortal Wound thresholds by difficulty and consequences by mode; universal second-down death removed in the single finite amendment."
+        }
+      ],
+      "resolved_findings": [
+        {
+          "field": "Space Marine 2 body1 last two sentences and corresponding four translations",
+          "finding": "Universal second-incapacitation death, fixed timer and universal respawn replaced with mode/difficulty qualification. No unrelated changes requested."
+        }
+      ],
+      "findings": [],
+      "owners": [
+        {
+          "entry_id": "wikipedia-77070226",
+          "slug": "astro",
+          "source": "build/research/catalog-2024-chronological/september-three-private/astro/complete-original-source-media-private-candidate.json",
+          "source_sha256": "33aec848a7051923be38acfb0938907a5ab474a507184ac65d4da331ca637684",
+          "target": "build/research/catalog-2024-chronological/september-three-private/astro/complete-four-language-private-candidate.json",
+          "target_sha256": "755aaa717df8a856414fc2343b7a7778d5a74ccf3249dde6d034c2e3bf7795d4",
+          "contact": "build/research/catalog-2024-chronological/september-three-private/astro/final-selected-media-contact.jpg",
+          "contact_sha256": "a62cb9de39b15af4b5497dc2152035d74251aaebc378fb56cb2e96014af93388",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 5,
+          "tracks": 87,
+          "finite_errata": 0
+        },
+        {
+          "entry_id": "wikipedia-69513818",
+          "slug": "marine",
+          "source": "build/research/catalog-2024-chronological/september-three-private/marine/complete-original-source-media-private-candidate.json",
+          "source_sha256": "ef97df4992d2a8fd3b1fd3dc56f0e7290ce727b120165e19461a17ccc439450f",
+          "target": "build/research/catalog-2024-chronological/september-three-private/marine/complete-four-language-private-candidate.json",
+          "target_sha256": "fd38e0e1f6615edf3dc814ecc7ac8097d5cb324759418dce397791a289831df4",
+          "contact": "build/research/catalog-2024-chronological/september-three-private/marine/final-selected-media-contact.jpg",
+          "contact_sha256": "59060b98feaf6b88b997165c468ef8ab99fca801182c508b22ae840b0c5a51bf",
+          "english_cards": 7,
+          "localized_cards": 28,
+          "images": 9,
+          "tracks": 3,
+          "finite_errata": 5
+        },
+        {
+          "entry_id": "wikipedia-60275778",
+          "slug": "satisfactory",
+          "source": "build/research/catalog-2024-chronological/september-three-private/satisfactory/complete-original-source-media-private-candidate.json",
+          "source_sha256": "e1044d1c1bfe6395745752b9520e38069fc95d1bc3f24cfd3da659a033d9b062",
+          "target": "build/research/catalog-2024-chronological/september-three-private/satisfactory/complete-four-language-private-candidate.json",
+          "target_sha256": "c44b626387f084001f581054415a3d147dcb3fcbf33660f68e049c93f7c87bd1",
+          "contact": "build/research/catalog-2024-chronological/september-three-private/satisfactory/final-selected-media-contact.jpg",
+          "contact_sha256": "5d4b55dff62f4df68e518559729ccd9a3709052147ddce458f3bba7c360b7dfa",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 6,
+          "tracks": 3,
+          "finite_errata": 0
+        }
+      ],
+      "production_writes": false,
+      "date_reference_explicitly_reviewed": {
+        "entry_id": "wikipedia-60275778",
+        "value": "Original Windows 1.0 release on September 10, 2024; Early Access began March 19, 2019, with console ports in November 2025.",
+        "owner_date_preserved": true,
+        "scope": "Same Windows 1.0 / Early Access / console dates already read in source and four translations; receipt clarification only, index and candidates unchanged."
+      }
+    }
+  }
+}

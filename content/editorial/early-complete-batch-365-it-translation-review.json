@@ -1,0 +1,110 @@
+{
+  "status": "PASS",
+  "locale": "it",
+  "entries": [
+    {
+      "entry_id": "wikipedia-73993555",
+      "source_fields_sha256": "b03f7f25300c31fee942c24eda1399e98c188cc8e86689c70291523c59a76e7f",
+      "translation_sha256": "3558393219bf6c9106a11d56d97ac24cd8ea34cf527c33570963c407597d79a1",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch365/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "8f9c80e471fffb6a720aab2d759dab56c8170a2e1a03e116e7a4544493bf87d5"
+    },
+    {
+      "entry_id": "wikipedia-72449855",
+      "source_fields_sha256": "44f5f716fe5321895fc21fbf70d8fe999c8c209bfca1b28d6beae7d133c149a6",
+      "translation_sha256": "435ecac24737b969a27b76dc3004186a8cecbb2e4f6909192cad78695abc7c10",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch365/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "8f9c80e471fffb6a720aab2d759dab56c8170a2e1a03e116e7a4544493bf87d5"
+    },
+    {
+      "entry_id": "wikipedia-74154986",
+      "source_fields_sha256": "7c25f3d6c48dcf9cc6372352d87a3ed2e5e59ae522fcefcef2242267a2e011c0",
+      "translation_sha256": "00c468d238d16f4c51535240704187db097bd234d770750b31ec81c2c7855e1d",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch365/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "8f9c80e471fffb6a720aab2d759dab56c8170a2e1a03e116e7a4544493bf87d5"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "category_audit",
+    "actual_receipt": "build/research/catalog-2024-chronological/first-three-private/independent-category-audit-approval.json",
+    "actual_receipt_sha256": "8e51c7e44325ccfe80edfc2ba9b66fc60aa52e6f15bfb6759a1921fea1f277c2",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "category_audit",
+      "index": "build/research/catalog-2024-chronological/first-three-private/three-private-index.json",
+      "index_sha256": "f344fed6d3ffddcb54ea232288f9a6e9728162ebf49142192f24447e9ae4d197",
+      "scope": "Personally read all9 English and36 localized paragraphs plus all five fields. Personally viewed all17 final images in three contact sheets. Read two selected original Ubisoft Music metadata records and the official album description. Verified45 existing music objects preserved except the already scoped MainTheme UI title trim. No audio download, audition or livePS5 verification claimed.",
+      "primary_sources_actually_read": [
+        {
+          "url": "https://en.bandainamcoent.eu/tekken/news/fist-meets-fate-tekken-8-launches-worldwide-consoles-and-pc",
+          "finding": "Publisher January26,2024 launch explicitly separates single-player ArcadeQuest from online matches and FightLounge; Heat and original platforms confirmed."
+        },
+        {
+          "url": "https://www.sega.co.jp/en/release/240126_1.html",
+          "finding": "Publisher January26,2024 launch and two protagonists crossing the Pacific toHawaii confirmed, with original game imagery distinguished from laterPirateYakuza."
+        },
+        {
+          "url": "https://news.ubisoft.com/en-us/article/1sGD0IGZhAOrFz20ObHskz/how-prince-of-persia-the-lost-crowns-soundtrack-found-its-voices",
+          "finding": "Firsthand original composer interview confirms separate Coker/Mentrix roles, orchestral action and Persian exploration palette; metadata assigns two selected cues individually."
+        },
+        {
+          "url": "https://www.ubisoft.com/en-us/game/Prince-of-Persia/The-Lost-Crown",
+          "finding": "Original January18,2024 release and UbisoftMontpellier identity confirmed."
+        }
+      ],
+      "resolved_findings": [
+        {
+          "field": "Tekken German body2",
+          "finding": "Only grammatical article changed to der gemeinsamen Tekken Fight Lounge; checked in final target. No other body or asset changes requested."
+        }
+      ],
+      "findings": [],
+      "owners": [
+        {
+          "entry_id": "wikipedia-73993555",
+          "slug": "pop",
+          "source": "build/research/catalog-2024-chronological/first-three-private/pop-source-private-candidate.json",
+          "source_sha256": "f71ff1b9dd44c7c70160d9fa5065f098dec4c31fc6bce05479d39b9f53cf4387",
+          "target": "build/research/catalog-2024-chronological/first-three-private/pop-four-language-private-candidate.json",
+          "target_sha256": "fb22e05e87f77397e0da6a6d85f8012b250934267210e0a7bf70153f7f4acdec",
+          "contact": "build/research/catalog-2024-chronological/first-three-private/pop-final-contact.jpg",
+          "contact_sha256": "8dc29117cc43bff1c1d5fcb0869a26b7c921b05295062d1e860eb86cd1ac3f7b",
+          "english_cards": 4,
+          "localized_cards": 16,
+          "images": 7,
+          "tracks": 3
+        },
+        {
+          "entry_id": "wikipedia-72449855",
+          "slug": "tekken",
+          "source": "build/research/catalog-2024-chronological/first-three-private/tekken-source-private-candidate.json",
+          "source_sha256": "f4720718ad0137c7c73ac6c49b92e89b68a0caa5d47ee974e0e1c569241e49bb",
+          "target": "build/research/catalog-2024-chronological/first-three-private/tekken-four-language-private-candidate.json",
+          "target_sha256": "a811148f69aeb12a25b8bd256a7eadd53814c8f52bb0cf50331034f786f354f6",
+          "contact": "build/research/catalog-2024-chronological/first-three-private/tekken-final-contact.jpg",
+          "contact_sha256": "68e2f4591fbcc27c85718a2c5725bb0f2fb059e26b21498c04f80d9f1c11f2cc",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 5,
+          "tracks": 42
+        },
+        {
+          "entry_id": "wikipedia-74154986",
+          "slug": "dragon",
+          "source": "build/research/catalog-2024-chronological/first-three-private/dragon-source-private-candidate.json",
+          "source_sha256": "800bf30c57cffff6a5075ba1f8e4ead0972f98a1e0e160a5c752fcb25bdbb157",
+          "target": "build/research/catalog-2024-chronological/first-three-private/dragon-four-language-private-candidate.json",
+          "target_sha256": "913c800f53b5b5fcd30506ad175327e94ddd8a07502c6d60f338182667b4e7a1",
+          "contact": "build/research/catalog-2024-chronological/first-three-private/dragon-final-contact.jpg",
+          "contact_sha256": "8009c6a19ac9cd4a1faa8c93e7a5f3aca003f454a2f00c57b88d112f69bc657e",
+          "english_cards": 2,
+          "localized_cards": 8,
+          "images": 5,
+          "tracks": 3
+        }
+      ],
+      "production_writes": false
+    }
+  }
+}

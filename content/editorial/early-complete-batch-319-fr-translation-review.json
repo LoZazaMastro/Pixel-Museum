@@ -1,0 +1,99 @@
+{
+  "status": "PASS",
+  "locale": "fr",
+  "entries": [
+    {
+      "entry_id": "wikipedia-61933429",
+      "source_fields_sha256": "693bfeec29a80a48187fb5e461ee7264a94d1cff276d0b4e43a08baf7ef160c9",
+      "translation_sha256": "4c91b3cdd408d67020350235792891b1a6e153168acd523d735244c48b0867c2",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch319/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "33425283967ebbe3b184151f99c118b8d92fef01763431a6fa2200a3d0feb27a"
+    },
+    {
+      "entry_id": "workbook-09-04-tony-hawks-pro-skater-1-2",
+      "source_fields_sha256": "962a03fa0cdcdbff1da225012e629096bd96ac3603c90d3fc5e18236b4e35469",
+      "translation_sha256": "e053dac27063477b9c966ce339a231df3f63cbbc22e9f47aa5ed6efb5116c686",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch319/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "33425283967ebbe3b184151f99c118b8d92fef01763431a6fa2200a3d0feb27a"
+    },
+    {
+      "entry_id": "wikipedia-59284486",
+      "source_fields_sha256": "8b46566b804123861e5c776204a1f6cb8bf30d592a572d043b87b98abfeb6cf2",
+      "translation_sha256": "6763efd9b1ec1466a56c8b24a803c05447bbc8f8ac4b46a05d113910f6cc7e57",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch319/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "33425283967ebbe3b184151f99c118b8d92fef01763431a6fa2200a3d0feb27a"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "root independent peer of package_audit author",
+    "actual_receipt": "build/research/catalog-2020-chronological/august-september-three-private/independent-root-approval.json",
+    "actual_receipt_sha256": "35c306906d86dad58834b965b2d2194d81412d3527ec5ea6f8d5a1df531981cd",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "root independent peer of package_audit author",
+      "index": "build/research/catalog-2020-chronological/august-september-three-private/three-original-source-media-four-language-private-index.json",
+      "index_sha256": "8b6e873738380fc308544e378b8eff113d8641f7716cce701b2bc515b052c41a",
+      "owners": [
+        {
+          "entry_id": "wikipedia-61933429",
+          "slug": "flight",
+          "source": "build/research/catalog-2020-chronological/august-september-three-private/flight/complete-original-source-media-private-candidate.json",
+          "source_sha256": "5f983f848693aa24bbbcb1fc65951d4dd9f6116d74d3986a25de1769a4c9d151",
+          "target": "build/research/catalog-2020-chronological/august-september-three-private/flight/complete-four-language-private-candidate.json",
+          "target_sha256": "a77f4f4e0e8a3a16638944c4c3f0701cfc7cf552a19d8c94ecfebedc94c57ded",
+          "contact": "build/research/catalog-2020-chronological/august-september-three-private/flight/final-selected-media-contact.jpg",
+          "contact_sha256": "d13dd0ee118bfd8081e35a1f55d729299ee69bd700940bd13f5545ad71caf11e",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 5,
+          "tracks": 2
+        },
+        {
+          "entry_id": "workbook-09-04-tony-hawks-pro-skater-1-2",
+          "slug": "thps",
+          "source": "build/research/catalog-2020-chronological/august-september-three-private/thps/complete-original-source-media-private-candidate.json",
+          "source_sha256": "d60b8e334ec94db9d610ba374214c4fd846ca0e25f4d3e20d7154851c69d79ea",
+          "target": "build/research/catalog-2020-chronological/august-september-three-private/thps/complete-four-language-private-candidate.json",
+          "target_sha256": "31667b53a01ad69b5b7f0d2b26b4f1afe06db962043737b66e324f301ffe3374",
+          "contact": "build/research/catalog-2020-chronological/august-september-three-private/thps/final-selected-media-contact.jpg",
+          "contact_sha256": "b22abbe1988eb746c8954efba0d33d12bb81a9b8c3c9064b151bafa6f720dd13",
+          "english_cards": 2,
+          "localized_cards": 8,
+          "images": 6,
+          "tracks": 3
+        },
+        {
+          "entry_id": "wikipedia-59284486",
+          "slug": "hades",
+          "source": "build/research/catalog-2020-chronological/august-september-three-private/hades/complete-original-source-media-private-candidate.json",
+          "source_sha256": "a367e5b9a43da76505aca3b7e40453bb4df36fb1835ec0100e9f8eec3d67e48b",
+          "target": "build/research/catalog-2020-chronological/august-september-three-private/hades/complete-four-language-private-candidate.json",
+          "target_sha256": "b9789fc1c0da378a9dceec3f348b507b1654759346afebe07e285450b99af573",
+          "contact": "build/research/catalog-2020-chronological/august-september-three-private/hades/final-selected-media-contact.jpg",
+          "contact_sha256": "1b5933c1ceaaafe3aea11354d78bcc1fc9211d9dadc5c91595c0c9d737c38723",
+          "english_cards": 4,
+          "localized_cards": 16,
+          "images": 7,
+          "tracks": 30
+        }
+      ],
+      "reviewed_counts": {
+        "english_paragraphs": 9,
+        "localized_paragraphs": 36,
+        "personally_viewed_images": 18
+      },
+      "findings": [],
+      "resolved_findings": [
+        "THPS January22,2021 is now explicitly the announcement of moving under Blizzard, not the completed merger. Root read exact EN and all four corrected clauses after requesting this finite correction."
+      ],
+      "review_notes": [
+        "Root personally read all9 English paragraphs and36 translated paragraphs with summaries and headings. Faithful natural translations, no omitted paragraphs.",
+        "Root viewed all18 images in three final contact sheets. Flight media explicitly belongs to later updates/40thAnniversary of the2020 simulator. THPS cleancover and genuine gameplay retained, Hades native gameplay/dialogue and publisher video poster correspond to assigned chapters. No modern box-back remains.",
+        "Flight2 and Hades30 soundtrack objects unchanged exactly. THPS3 actual public AAC metadata receipts personally read: Goldfinger original1997 Superman (2020 official audio upload), ATribeCalledQuest original CanIKickIt studio recording, Epitaph original You. No quarantine remake, later featuredartist version, video mix or wrongsong used.",
+        "THPS original release now September4,2020 rather than year-only; Hades full2020 release distinguished from2018 EarlyAccess. No audio downloaded or console playback verification asserted."
+      ],
+      "production_writes": false
+    }
+  }
+}

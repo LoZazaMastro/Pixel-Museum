@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "entries": [
+    {
+      "entry_id": "dance-dance-revolution",
+      "status": "verified_hd_candidate_held_for_context",
+      "reason": "WORLD photograph shows later hardware in2026, not the1998 launch machine. Add only to a clearly contextualized later-culture scene; do not silently turn it into1998 launch imagery.",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Dance_Dance_Revolution_World_-_Universal_Model_Cabinet_%28cropped%29.jpg/1920px-Dance_Dance_Revolution_World_-_Universal_Model_Cabinet_%28cropped%29.jpg",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Dance_Dance_Revolution_World_-_Universal_Model_Cabinet_(cropped).jpg",
+        "title": "DanceDanceRevolution WORLD cabinet in London,22February2026",
+        "creator": "Juwubeat",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "credit": "Juwubeat / Wikimedia Commons / CC BY-SA 4.0",
+        "width": 1920,
+        "height": 2876,
+        "native_long_edge": 3678,
+        "verification": {
+          "sha256": "8932a50ab5ac7a7faac5166835e2585ef5392370a488ed776830f6dd7c455cbf",
+          "source_original_dimensions": [
+            2455,
+            3678
+          ],
+          "server_thumbnail_upright": true
+        },
+        "quality_verified": "Fresh Commons derivative GET/full decode and visual inspection; source original is2455x3678. Correctly oriented published1920px derivative, no enlargement."
+      }
+    },
+    {
+      "entry_id": "wikipedia-453246",
+      "status": "hd_hero_still_missing",
+      "evidence": [
+        {
+          "url": "https://flyers.arcade-museum.com/flyers_video/atari/11018401.jpg",
+          "source_page": "https://atari.com/blogs/atari/new-insight-into-breakout-s-origins",
+          "width": 850,
+          "height": 1097,
+          "decoded": true,
+          "reason": "Actual original flyer linked by Atari, but below requiredHDhero detail. Not enlarged or promoted."
+        },
+        {
+          "source_page": "https://artsandculture.google.com/asset/breakout-arcade-cabinet-atari-inc/nAHuFDQctUpDnw",
+          "institution": "The Strong National Museum of Play",
+          "object_id": "109.17104",
+          "source_intrinsic_dimensions": [
+            2142,
+            3234
+          ],
+          "actual_public_response_dimensions": [
+            795,
+            1200
+          ],
+          "decoded": true,
+          "reason": "Correct original1976 Breakout cabinet photo, but all public endpoint sizes tested cap at1200px long edge. Not markedHD or promoted. Official Atari50 screenshots inspected; none depicts original Breakout, so modern variants were not substituted."
+        }
+      ]
+    }
+  ]
+}

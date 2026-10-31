@@ -1,0 +1,445 @@
+{
+  "batch_id": "038-catalog",
+  "status": "completed",
+  "sources": [
+    {
+      "source_id": "038-S01",
+      "url": "https://rome.ro/news/2015/12/13/happy-birthday-id-software",
+      "title": "Happy Birthday id Software",
+      "publisher": "John Romero / Rome.ro",
+      "accessed_at": "2026-10-30",
+      "scope": "Testimonianza diretta: John Carmack, John Romero e Adrian Carmack lasciano Softdisk il 1° febbraio 1991; Tom Hall resta alcuni mesi e collabora dopo il lavoro.",
+      "limitation": "La pagina celebra il diciannovesimo anniversario: la data nel percorso URL non è la data dell’evento ricordato. Non importate le affermazioni di primato su Wolfenstein."
+    },
+    {
+      "source_id": "038-S02",
+      "url": "https://www.gamedeveloper.com/business/battle-net-defines-its-success-interview-with-paul-sams",
+      "title": "Battle.net Defines Its Success: Interview With Paul Sams",
+      "publisher": "Paul Sams intervistato da Barbara Walter; Gamasutra, 28 novembre 1997",
+      "accessed_at": "2026-10-30",
+      "scope": "Sams colloca il lancio di Battle.net nel gennaio 1997 e parla di Diablo come gioco allora supportato.",
+      "limitation": "Testimonianza contemporanea che chiarisce il 1996 generico del materiale; non aggiunte previsioni del 1997 sui titoli futuri."
+    },
+    {
+      "source_id": "038-S03",
+      "url": "https://science.nasa.gov/learn/basics-of-space-flight/chapter5-1/",
+      "title": "Basics of Space Flight, Chapter 5: Planetary Orbits",
+      "publisher": "NASA Science",
+      "accessed_at": "2026-10-30",
+      "scope": "Definizione dei punti di Lagrange come posizioni relative costanti; L1, L2 e L3 sono instabili.",
+      "limitation": "Usato solo per correggere la definizione scientifica. Non dedotte ubicazioni più precise delle colonie immaginarie."
+    },
+    {
+      "source_id": "038-S04",
+      "url": "https://www.taisho.co.jp/company/newsletter/2025/20250307001888/",
+      "title": "Comunicato della collaborazione Lipovitan DX / Street Fighter II, 7 marzo 2025",
+      "publisher": "Taisho Pharmaceutical, partner della collaborazione Capcom",
+      "accessed_at": "2026-10-30",
+      "scope": "Il testo ufficiale indica il 7 marzo 1991 come avvio in sala dell’arcade, celebrato dalla campagna.",
+      "limitation": "Letto nel testo indicizzato della fonte primaria. Il comunicato non definisce una release mondiale; la pagina Capcom 35th citata altrove restituisce 403 e non è dichiarata letta."
+    },
+    {
+      "source_id": "038-S05",
+      "url": "https://www.capcom.co.jp/ir/company/history.html",
+      "title": "Storia di Capcom, 1991",
+      "publisher": "Capcom Investor Relations",
+      "accessed_at": "2026-10-30",
+      "scope": "La cronologia ufficiale colloca l’uscita arcade di Street Fighter II nel marzo 1991.",
+      "limitation": "Conferma il mese; il giorno è attestato dal comunicato 038-S04. Non usata una previsione di uscita come prova di disponibilità."
+    }
+  ],
+  "decisions": [
+    {
+      "target_id": "daily-02-01",
+      "problem": "La costituzione di id e il successivo distacco di Hall non sono un’uscita di gioco né una nascita personale.",
+      "conclusion": "Conservato il 1° febbraio 1991 come fondazione dello studio e distinto il contributo serale di Hall dal completamento del suo passaggio alcuni mesi dopo.",
+      "source_ids": [
+        "038-S01"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "workbook-02-08-blizzard-entertainment",
+      "problem": "L’INPUT associa Battle.net al 1996 di Diablo.",
+      "conclusion": "Corretto il lancio del servizio al gennaio 1997, sulla testimonianza contemporanea di Sams, mantenendo separata la fondazione dello studio nel 1991.",
+      "source_ids": [
+        "038-S02"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "lagrange-point-1991",
+      "problem": "La spiegazione originale attribuisce stabilità alla configurazione di tutti i punti di Lagrange.",
+      "conclusion": "Precisata la posizione relativa del corpo minore e segnalato che i punti non sono tutti stabili. Conservata l’ambientazione senza dedurre una meccanica orbitale del gioco.",
+      "source_ids": [
+        "038-S03"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "street-fighter-ii",
+      "problem": "Repertori e ricostruzioni riportano talvolta febbraio invece del 7 marzo 1991 fornito.",
+      "conclusion": "La cronologia Capcom sostiene marzo; il comunicato ufficiale Taisho conferma l’anniversario del 7 marzo 1991. Conservata la data originale senza trasformarla in una data mondiale o in quella di una conversione.",
+      "source_ids": [
+        "038-S04",
+        "038-S05"
+      ],
+      "text_applied": false
+    },
+    {
+      "target_id": "metal-storm-1991",
+      "problem": "Il metadato contiene day=1 ma precision=month, quindi rischia di mostrare un giorno non documentato.",
+      "conclusion": "Proposta separata: conservare febbraio 1991 con precisione mensile e nessun giorno; l’OUTPUT non introduce un 1° febbraio di release.",
+      "source_ids": [],
+      "text_applied": false
+    },
+    {
+      "target_id": "feature-yoko-shimomura-craft",
+      "problem": "Il nome di una compositrice nella feature può essere scambiato per una voce biografica.",
+      "conclusion": "La feature riguarda pratica compositiva, concerti e album: resta associata al gioco e conserva le attribuzioni alle interviste. Non inventata una data di nascita né cambiata la collocazione.",
+      "source_ids": [],
+      "text_applied": true
+    },
+    {
+      "target_id": "feature-fighting-game-communities",
+      "problem": "Il percorso comprende eventi del 1996, 2001, 2002 e 2016.",
+      "conclusion": "Conservati gli eventi e le attribuzioni di Evo e Velasco y Coll, senza trasformare un racconto organizzativo in una fondazione datata al 1991.",
+      "source_ids": [],
+      "text_applied": true
+    },
+    {
+      "target_id": "console-gap-the-g-g-shinobi",
+      "problem": "La prima bozza inglese aveva omesso la data regionale presente nella prima card.",
+      "conclusion": "Ripristinata la release giapponese del 26 aprile 1991 in tutte le lingue; preservata la distinzione fra prime quattro missioni e rete di stanze finale.",
+      "source_ids": [],
+      "text_applied": true
+    }
+  ],
+  "metadata_proposals": [
+    {
+      "target_id": "metal-storm-1991",
+      "action": "remove_unsupported_day_placeholder",
+      "original_date": {
+        "year": 1991,
+        "month": 2,
+        "day": 1,
+        "precision": "month",
+        "region": "Original commercial release"
+      },
+      "proposed_date": {
+        "year": 1991,
+        "month": 2,
+        "day": 0,
+        "precision": "month",
+        "region": ""
+      },
+      "reason": "La precisione fornita è mensile; day=1 non attesta un giorno. La stringa Original commercial release non identifica una regione.",
+      "source_ids": [],
+      "catalog_modified": false
+    },
+    {
+      "target_id": "daily-02-01",
+      "action": "clarify_event_semantics",
+      "proposed_event_semantics": "organization_founding",
+      "date": {
+        "year": 1991,
+        "month": 2,
+        "day": 1,
+        "precision": "day"
+      },
+      "reason": "Il contenuto e la testimonianza Romero riguardano la fondazione di id Software, non una nascita o una release.",
+      "source_ids": [
+        "038-S01"
+      ],
+      "catalog_modified": false
+    }
+  ],
+  "expansion_assessments": [
+    {
+      "target_id": "daily-02-01",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": null,
+      "missing_cards": 0,
+      "rationale": "Voce dedicata alla fondazione e al lavoro di uno studio; non si applica una soglia prevista per giochi o console."
+    },
+    {
+      "target_id": "metal-storm-1991",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": 5,
+      "missing_cards": 2,
+      "rationale": "Sistema di gravità e progettazione dei livelli rendono il gioco significativo fra i platform NES."
+    },
+    {
+      "target_id": "workbook-02-08-blizzard-entertainment",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": null,
+      "missing_cards": 0,
+      "rationale": "Voce dedicata alla fondazione e al lavoro di uno studio; non si applica una soglia prevista per giochi o console."
+    },
+    {
+      "target_id": "wikipedia-69179",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": 5,
+      "missing_cards": 2,
+      "rationale": "Lemmings è significativo per il sistema di abilità, la diffusione e le numerose conversioni."
+    },
+    {
+      "target_id": "power-blade-1991",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": 5,
+      "missing_cards": 2,
+      "rationale": "La rielaborazione di Power Blazer costituisce un caso significativo di adattamento per un mercato diverso."
+    },
+    {
+      "target_id": "street-fighter-ii",
+      "main_cards": 2,
+      "feature_cards": 8,
+      "threshold_applicable": 5,
+      "missing_cards": 3,
+      "rationale": "Opera centrale nella storia del picchiaduro e della competizione in sala."
+    },
+    {
+      "target_id": "console-gap-golden-axe-warrior",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": 5,
+      "missing_cards": 2,
+      "rationale": "La trasformazione di Golden Axe in avventura esplorativa ne giustifica l’ampliamento."
+    },
+    {
+      "target_id": "cave-noire-1991",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": 5,
+      "missing_cards": 2,
+      "rationale": "Adattamento significativo del roguelike al formato portatile."
+    },
+    {
+      "target_id": "console-gap-the-g-g-shinobi",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": 5,
+      "missing_cards": 2,
+      "rationale": "Il gruppo di cinque personaggi e la scelta dell’ordine rendono il gioco significativo per Game Gear."
+    },
+    {
+      "target_id": "lagrange-point-1991",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": 5,
+      "missing_cards": 2,
+      "rationale": "Il VRC7 e l’ambientazione fantascientifica ne fanno una voce rilevante del catalogo Famicom."
+    }
+  ],
+  "editorial_review": {
+    "languages": [
+      "en",
+      "it",
+      "fr",
+      "de",
+      "es"
+    ],
+    "english_written_first": true,
+    "reviewer": "Worker_a ripreso da /root/resume_remaining_a; inglese verificato prima degli adattamenti.",
+    "checks": [
+      "Letto l’INPUT completo e confrontato con l’inglese già salvato; corretti tre passaggi prima degli adattamenti.",
+      "Riletti i 39 testi e titoli nelle cinque lingue, compresi gli otto testi delle due feature.",
+      "Controllati i numeri e le differenze di notazione: 1er francese, anni Novanta e duecento scritto in lettere.",
+      "Conservati titoli, ID, ordine, nomi propri, attribuzioni e musica; nessun originale o media modificato.",
+      "Verificate le somme e l’identità delle card con il validatore; tutti i sommari inglesi restano fra 25 e 45 parole."
+    ],
+    "scope_limit": "Ricerca mirata ai dubbi indicati. Le altre informazioni del lotto sono conservate come materiale fornito, senza dichiarare una nuova verifica esterna universale.",
+    "expansion_issues": 8,
+    "future_cards_requested": 17,
+    "root_review": {
+      "reviewed_at": "2026-10-30T01:08:42.584998+00:00",
+      "scope": "Confronto SOURCE/EN/IT e controllo delle segnalazioni numeriche; rilettura nelle cinque lingue dei passaggi modificati di Lemmings e The G.G. Shinobi. Ripristinati equipaggiamento e movimento dei ninja; eliminata la motivazione aggiunta sulle aspettative del pubblico, tornando al confronto di ritmo presente nella fonte. Le informazioni concrete della terza card di Shinobi risultano conservate.",
+      "changes": [
+        {
+          "target_id": "wikipedia-69179",
+          "language": "en",
+          "card_id": "main:2",
+          "field": "text",
+          "before": "Lemmings received strong reviews in the early 1990s. It earned the second-highest score in Amstrad Action's history, and Next Generation placed it eighth in its 1996 ranking of games. Estimates put combined sales across its many versions at around 20 million. Sequels, remakes and spin-offs followed, and other games adopted similar ideas. The series' popularity declined towards the end of the decade; accounts of that decline have pointed in part to its measured pace and the changing expectations of newer players.",
+          "after": "Lemmings received strong reviews in the early 1990s. It earned the second-highest score in Amstrad Action's history, and Next Generation placed it eighth in its 1996 ranking of games. Estimates put combined sales across its many versions at around 20 million. Sequels, remakes and spin-offs followed, and other games adopted similar ideas. The series' popularity declined towards the end of the decade, a change attributed in part to its slower pace compared with games of later generations."
+        },
+        {
+          "target_id": "console-gap-the-g-g-shinobi",
+          "language": "en",
+          "card_id": "main:1",
+          "field": "text",
+          "before": "The first four stages can be tackled in any order. Rescuing a ninja early makes that character's abilities available for the remaining stages, so the sequence affects the options players have along the way. Joe's solitary mission develops into a team effort as each companion offers another way to approach a dangerous passage or an enemy.",
+          "after": "The first four stages can be tackled in any order. Rescuing a ninja early makes that character's abilities available for the remaining stages, so the sequence affects the options players have along the way. Each ninja's equipment and movement abilities change how players handle enemies and obstacles. Joe's solitary mission develops into a team effort as each companion offers another way to approach a dangerous passage or an enemy."
+        },
+        {
+          "target_id": "wikipedia-69179",
+          "language": "it",
+          "card_id": "main:2",
+          "field": "text",
+          "before": "Lemmings riceve ottime recensioni all'inizio degli anni Novanta. Ottiene il secondo voto più alto nella storia di Amstrad Action e, nel 1996, Next Generation lo colloca all'ottavo posto della propria classifica dei videogiochi. Le vendite complessive delle numerose versioni sono stimate intorno ai 20 milioni di copie. Seguono nuovi capitoli, rifacimenti e spin-off, mentre altri giochi ne riprendono le idee. Verso la fine del decennio la popolarità della serie diminuisce; fra le spiegazioni avanzate figurano il ritmo misurato e il mutare delle aspettative del pubblico.",
+          "after": "Lemmings riceve ottime recensioni all'inizio degli anni Novanta. Ottiene il secondo voto più alto nella storia di Amstrad Action e, nel 1996, Next Generation lo colloca all'ottavo posto della propria classifica dei videogiochi. Le vendite complessive delle numerose versioni sono stimate intorno ai 20 milioni di copie. Seguono nuovi capitoli, rifacimenti e spin-off, mentre altri giochi ne riprendono le idee. Verso la fine del decennio la popolarità della serie diminuisce, un calo attribuito in parte al ritmo più lento rispetto ai giochi delle generazioni successive."
+        },
+        {
+          "target_id": "console-gap-the-g-g-shinobi",
+          "language": "it",
+          "card_id": "main:1",
+          "field": "text",
+          "before": "Si possono affrontare i primi quattro livelli nell'ordine preferito. Liberare subito un ninja rende disponibili le sue abilità nei luoghi ancora da attraversare: la sequenza scelta cambia quindi le possibilità lungo il percorso. La missione solitaria di Joe diventa un lavoro di squadra, perché ogni compagno offre un modo diverso di affrontare un passaggio pericoloso o un nemico.",
+          "after": "Si possono affrontare i primi quattro livelli nell'ordine preferito. Liberare subito un ninja rende disponibili le sue abilità nei luoghi ancora da attraversare: la sequenza scelta cambia quindi le possibilità lungo il percorso. L'equipaggiamento e le possibilità di movimento di ciascun ninja cambiano il modo di affrontare nemici e ostacoli. La missione solitaria di Joe diventa un lavoro di squadra, perché ogni compagno offre un modo diverso di affrontare un passaggio pericoloso o un nemico."
+        },
+        {
+          "target_id": "wikipedia-69179",
+          "language": "fr",
+          "card_id": "main:2",
+          "field": "text",
+          "before": "Lemmings reçoit d'excellentes critiques au début des années 1990. Il obtient la deuxième meilleure note de l'histoire d'Amstrad Action et arrive huitième du classement publié par Next Generation en 1996. Ses ventes cumulées, toutes versions confondues, sont estimées à environ 20 millions d'exemplaires. Des suites, remakes et dérivés suivent, et d'autres jeux reprennent des idées semblables. La popularité de la série décline vers la fin de la décennie ; son rythme posé et l'évolution des attentes des nouveaux joueurs figurent parmi les explications avancées.",
+          "after": "Lemmings reçoit d'excellentes critiques au début des années 1990. Il obtient la deuxième meilleure note de l'histoire d'Amstrad Action et arrive huitième du classement publié par Next Generation en 1996. Ses ventes cumulées, toutes versions confondues, sont estimées à environ 20 millions d'exemplaires. Des suites, remakes et dérivés suivent, et d'autres jeux reprennent des idées semblables. La popularité de la série décline vers la fin de la décennie, un recul attribué en partie à son rythme plus lent que celui des jeux des générations suivantes."
+        },
+        {
+          "target_id": "console-gap-the-g-g-shinobi",
+          "language": "fr",
+          "card_id": "main:1",
+          "field": "text",
+          "before": "Les quatre premiers niveaux peuvent être abordés dans l'ordre souhaité. Libérer tôt un ninja donne accès à ses capacités pour les lieux restants : la séquence choisie modifie donc les possibilités disponibles en chemin. La mission solitaire de Joe devient un travail d'équipe, chaque compagnon offrant une autre manière d'aborder un passage dangereux ou un ennemi.",
+          "after": "Les quatre premiers niveaux peuvent être abordés dans l'ordre souhaité. Libérer tôt un ninja donne accès à ses capacités pour les lieux restants : la séquence choisie modifie donc les possibilités disponibles en chemin. L'équipement et les possibilités de déplacement de chaque ninja modifient la manière d'affronter les ennemis et les obstacles. La mission solitaire de Joe devient un travail d'équipe, chaque compagnon offrant une autre manière d'aborder un passage dangereux ou un ennemi."
+        },
+        {
+          "target_id": "wikipedia-69179",
+          "language": "de",
+          "card_id": "main:2",
+          "field": "text",
+          "before": "Lemmings erhält Anfang der 1990er-Jahre sehr gute Kritiken. Es erzielt die zweithöchste Wertung in der Geschichte von Amstrad Action und belegt 1996 Platz acht in einer Rangliste von Next Generation. Die Gesamtverkäufe der vielen Fassungen werden auf etwa 20 Millionen geschätzt. Fortsetzungen, Neuauflagen und Ableger folgen, während andere Spiele ähnliche Ideen aufgreifen. Gegen Ende des Jahrzehnts lässt die Beliebtheit der Reihe nach. Als Gründe werden unter anderem das gemächliche Tempo und veränderte Erwartungen neuer Spieler genannt.",
+          "after": "Lemmings erhält Anfang der 1990er-Jahre sehr gute Kritiken. Es erzielt die zweithöchste Wertung in der Geschichte von Amstrad Action und belegt 1996 Platz acht in einer Rangliste von Next Generation. Die Gesamtverkäufe der vielen Fassungen werden auf etwa 20 Millionen geschätzt. Fortsetzungen, Neuauflagen und Ableger folgen, während andere Spiele ähnliche Ideen aufgreifen. Gegen Ende des Jahrzehnts lässt die Beliebtheit der Reihe nach. Als ein Grund gilt ihr im Vergleich zu späteren Spielegenerationen langsameres Tempo."
+        },
+        {
+          "target_id": "console-gap-the-g-g-shinobi",
+          "language": "de",
+          "card_id": "main:1",
+          "field": "text",
+          "before": "Die ersten vier Level können in beliebiger Reihenfolge gespielt werden. Wird ein Ninja früh befreit, stehen seine Fähigkeiten für die übrigen Orte zur Verfügung. Die gewählte Reihenfolge verändert also die Möglichkeiten unterwegs. Joes zunächst allein begonnene Mission entwickelt sich zur Zusammenarbeit, weil jeder Gefährte einen anderen Umgang mit gefährlichen Passagen und Gegnern ermöglicht.",
+          "after": "Die ersten vier Level können in beliebiger Reihenfolge gespielt werden. Wird ein Ninja früh befreit, stehen seine Fähigkeiten für die übrigen Orte zur Verfügung. Die gewählte Reihenfolge verändert also die Möglichkeiten unterwegs. Ausrüstung und Bewegungsmöglichkeiten der einzelnen Ninjas verändern den Umgang mit Gegnern und Hindernissen. Joes zunächst allein begonnene Mission entwickelt sich zur Zusammenarbeit, weil jeder Gefährte einen anderen Umgang mit gefährlichen Passagen und Gegnern ermöglicht."
+        },
+        {
+          "target_id": "wikipedia-69179",
+          "language": "es",
+          "card_id": "main:2",
+          "field": "text",
+          "before": "Lemmings recibe críticas muy favorables a comienzos de los años noventa. Obtiene la segunda puntuación más alta en la historia de Amstrad Action y, en 1996, Next Generation lo sitúa octavo en su clasificación de videojuegos. Las ventas conjuntas de sus numerosas versiones se estiman en unos 20 millones de copias. Llegan secuelas, nuevas versiones y juegos derivados, mientras otros títulos adoptan ideas similares. La popularidad de la serie disminuye hacia finales de la década; entre las explicaciones se señalan su ritmo pausado y las nuevas expectativas del público.",
+          "after": "Lemmings recibe críticas muy favorables a comienzos de los años noventa. Obtiene la segunda puntuación más alta en la historia de Amstrad Action y, en 1996, Next Generation lo sitúa octavo en su clasificación de videojuegos. Las ventas conjuntas de sus numerosas versiones se estiman en unos 20 millones de copias. Llegan secuelas, nuevas versiones y juegos derivados, mientras otros títulos adoptan ideas similares. La popularidad de la serie disminuye hacia finales de la década, un descenso atribuido en parte a su ritmo más lento que el de los juegos de generaciones posteriores."
+        },
+        {
+          "target_id": "console-gap-the-g-g-shinobi",
+          "language": "es",
+          "card_id": "main:1",
+          "field": "text",
+          "before": "Las cuatro primeras fases pueden afrontarse en cualquier orden. Rescatar pronto a un ninja permite usar sus habilidades en los lugares restantes, de modo que la secuencia elegida cambia las opciones del recorrido. La misión solitaria de Joe se convierte en un trabajo de equipo: cada compañero ofrece otra forma de abordar un paso peligroso o un enemigo.",
+          "after": "Las cuatro primeras fases pueden afrontarse en cualquier orden. Rescatar pronto a un ninja permite usar sus habilidades en los lugares restantes, de modo que la secuencia elegida cambia las opciones del recorrido. El equipo y las posibilidades de movimiento de cada ninja cambian la forma de afrontar enemigos y obstáculos. La misión solitaria de Joe se convierte en un trabajo de equipo: cada compañero ofrece otra forma de abordar un paso peligroso o un enemigo."
+        }
+      ],
+      "limitation": "Confronto editoriale mirato con il materiale fornito; non è dichiarata una seconda verifica esterna universale."
+    }
+  },
+  "validation": {
+    "valid": true,
+    "batch_id": "038-catalog",
+    "completed": true,
+    "entry_count": 10,
+    "card_count_per_language": 39,
+    "language_count": 5,
+    "translated_card_count": 195,
+    "entry_card_counts": {
+      "daily-02-01": 4,
+      "metal-storm-1991": 3,
+      "workbook-02-08-blizzard-entertainment": 4,
+      "wikipedia-69179": 3,
+      "power-blade-1991": 3,
+      "street-fighter-ii": 10,
+      "console-gap-golden-axe-warrior": 3,
+      "cave-noire-1991": 3,
+      "console-gap-the-g-g-shinobi": 3,
+      "lagrange-point-1991": 3
+    },
+    "issue_counts": {
+      "daily-02-01": 0,
+      "metal-storm-1991": 1,
+      "workbook-02-08-blizzard-entertainment": 0,
+      "wikipedia-69179": 1,
+      "power-blade-1991": 1,
+      "street-fighter-ii": 1,
+      "console-gap-golden-axe-warrior": 1,
+      "cave-noire-1991": 1,
+      "console-gap-the-g-g-shinobi": 1,
+      "lagrange-point-1991": 1
+    },
+    "summary_checks": [
+      {
+        "entry_id": "daily-02-01",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "metal-storm-1991",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "workbook-02-08-blizzard-entertainment",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "wikipedia-69179",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "power-blade-1991",
+        "feature_id": null,
+        "english_summary_words": 33
+      },
+      {
+        "entry_id": "street-fighter-ii",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "street-fighter-ii",
+        "feature_id": "feature-yoko-shimomura-craft",
+        "english_summary_words": 39
+      },
+      {
+        "entry_id": "street-fighter-ii",
+        "feature_id": "feature-fighting-game-communities",
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "console-gap-golden-axe-warrior",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "cave-noire-1991",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "console-gap-the-g-g-shinobi",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "lagrange-point-1991",
+        "feature_id": null,
+        "english_summary_words": 36
+      }
+    ],
+    "editorial_review": [],
+    "failures": []
+  },
+  "output_sha256": "d64f549af04976b45e105ca8d0eedb1e56e54ee412799f6387676a6cefae6c18"
+}

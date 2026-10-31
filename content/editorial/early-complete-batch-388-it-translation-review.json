@@ -1,0 +1,117 @@
+{
+  "status": "PASS",
+  "locale": "it",
+  "entries": [
+    {
+      "entry_id": "miyamoto-order-of-culture-2026",
+      "source_fields_sha256": "3fa29caf3313ee2f6292e8386193f6124c18b4ca468ab0a8919bdead38bc8003",
+      "translation_sha256": "d094920bfba72ae4a6eb77d69958a8d42e8944f11a3b11c91160df62afc1d832",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch388/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "dc2372204c6dacd3cd382e61af17aa692aeffec5801d163fd63531e0e1cb6835"
+    },
+    {
+      "entry_id": "ocarina-of-time-switch-2",
+      "source_fields_sha256": "1a8d5a67dfbc26a90fdbe88d4a52ecb02c156912644c40ba0df518ea976b2de9",
+      "translation_sha256": "c8b0d732cdc6e641d4ab25f3b9e076f0099de10c609c4705d0de6538c75e809a",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch388/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "dc2372204c6dacd3cd382e61af17aa692aeffec5801d163fd63531e0e1cb6835"
+    },
+    {
+      "entry_id": "grand-theft-auto-vi",
+      "source_fields_sha256": "a25b9933243d99fb7c9f56bd1e5068a9c04c3d0c3558f07288f1e4e49895f5d5",
+      "translation_sha256": "15883c71a261af49186d2bc00a3f6ab315123e21d6e821193fa2838b8c4e71c8",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch388/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "dc2372204c6dacd3cd382e61af17aa692aeffec5801d163fd63531e0e1cb6835"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "editorial_continue",
+    "actual_receipt": "build/research/catalog-2026-chronological/final-three-private/independent-editorial-peer-approval.json",
+    "actual_receipt_sha256": "5d086ff5c84a286c7a41cc08ccc00fda1fdb75c9d22d309f44cbf385dc4643b4",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "editorial_continue",
+      "index_sha256": "6b5a394698b14eed4560ff7c2c27da0907c546bcec1290da4ed919a864b58675",
+      "scope": "Independent full semantic review; no production writes",
+      "english_paragraphs_actually_read": 19,
+      "localized_paragraphs_actually_read": 76,
+      "five_fields_all_locales_read": true,
+      "selected_images_actually_viewed": 25,
+      "owners": [
+        {
+          "entry_id": "miyamoto-order-of-culture-2026",
+          "slug": "miyamoto",
+          "source": "build/research/catalog-2026-chronological/final-three-private/miyamoto-source-private-candidate.json",
+          "source_sha256": "7459ddda0fce679b4954ccbcc3111f91910ef2367ed67c7ce72e66e05dc6937a",
+          "target": "build/research/catalog-2026-chronological/final-three-private/miyamoto-four-language-private-candidate.json",
+          "target_sha256": "01407fc0826f72c4951e075991e4fa37dd16549748bbe6e92754ea9908779d5c",
+          "contact": "build/research/catalog-2026-chronological/final-three-private/miyamoto-final-contact.jpg",
+          "contact_sha256": "3b30d20428b6796489fc643ca958b2c8d753a3e387547437250efae64183ab1e",
+          "english_cards": 13,
+          "localized_cards": 52,
+          "images": 16,
+          "tracks": 0
+        },
+        {
+          "entry_id": "ocarina-of-time-switch-2",
+          "slug": "ocarina",
+          "source": "build/research/catalog-2026-chronological/final-three-private/ocarina-source-private-candidate.json",
+          "source_sha256": "9428211ce25849d99e6b8fc0721b8dadacd11fcd75c47f2f27dfba46edf895bb",
+          "target": "build/research/catalog-2026-chronological/final-three-private/ocarina-four-language-private-candidate.json",
+          "target_sha256": "01ba9b814909df615166ca52234350c4b0db19562022beff756e797632fe9d08",
+          "contact": "build/research/catalog-2026-chronological/final-three-private/ocarina-final-contact.jpg",
+          "contact_sha256": "3aab6889604b49b2413c1fe82a43fa6aad3749cfba9fa7fbf789c6eee9e1cbf0",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 4,
+          "tracks": 0
+        },
+        {
+          "entry_id": "grand-theft-auto-vi",
+          "slug": "gta",
+          "source": "build/research/catalog-2026-chronological/final-three-private/gta-source-private-candidate.json",
+          "source_sha256": "2cc5728b2b08dbfa295012b813fda012d0d9948d52de9640109d93f78471c9d5",
+          "target": "build/research/catalog-2026-chronological/final-three-private/gta-four-language-private-candidate.json",
+          "target_sha256": "2b05374003a739e09a8baf19716c127d85a7811dee8138787b3970ce22d40571",
+          "contact": "build/research/catalog-2026-chronological/final-three-private/gta-final-contact.jpg",
+          "contact_sha256": "445fd5be1f48e75c8f9e016e3f724077092f065d893c1bb611c3e467ada4a392",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 5,
+          "tracks": 0
+        }
+      ],
+      "findings": [],
+      "source_observations": [
+        {
+          "url": "https://www.nintendo.com/us/store/products/the-legend-of-zelda-ocarina-of-time-switch-2/",
+          "observation": "Publisher page read directly: November 5, 2026 scheduled Switch 2 launch, rebuilt visuals, voice/orchestral presentation and button/microphone ocarina input match the three preserved English paragraphs."
+        },
+        {
+          "url": "https://www.rockstargames.com/VI",
+          "observation": "Publisher page read directly: Coming November 19, 2026, PS5 and Xbox Series. Scheduled date is not represented as observed release."
+        },
+        {
+          "url": "https://www.rockstargames.com/VI/only-in-leonida",
+          "observation": "Full relevant character sections read directly: Army/Keys, prison release, Cal listening, Boobie and DreQuan businesses. Jason/Lucia original image viewed full size to confirm both characters are present."
+        },
+        {
+          "url": "https://news.denfaminicogamer.jp/interview/261023n",
+          "observation": "Direct open timed out; indexed full firsthand interview actually read. October 23 announcement and October 22 Kyoto press conference confirmed. Miyamoto explicitly describes accepting on behalf of collaborators."
+        },
+        {
+          "url": "https://www.kanazawa-bidai.ac.jp/news/47108/",
+          "observation": "Primary alma-mater announcement indexed and read, dated October 23, 2026, confirms Miyamoto selection."
+        },
+        {
+          "url": "https://www8.cao.go.jp/shokun/seidogaiyo",
+          "observation": "Cabinet Office primary institutional description read: Order of Culture is conferred on Culture Day November 3. Candidate correctly preserves future ceremony status."
+        }
+      ],
+      "media_observation": "All three final contacts viewed, including historical contextual front packaging in the creator article. No modern back-cover stand-in, no unrelated edition, no artwork edit requested.",
+      "music_observation": "No soundtrack is fabricated for these owners; all three remain without invented unreleased cues.",
+      "production_writes": false
+    }
+  }
+}

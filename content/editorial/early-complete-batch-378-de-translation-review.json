@@ -1,0 +1,66 @@
+{
+  "status": "PASS",
+  "locale": "de",
+  "entries": [
+    {
+      "entry_id": "wikipedia-77750771",
+      "source_fields_sha256": "883ceefb74f155505c2631f4dd001e79b870e736fe3c8f6505783b221d57aa3a",
+      "translation_sha256": "7570ba63fb21d024ebe6f3a6d3d76e0d4b501063d146a212764f160c8c485559",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch378/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "5ae357e319d5763f263d2bb4e3f6ce7dc5be4833f5012b74f80f2e2b252588b4"
+    },
+    {
+      "entry_id": "wikipedia-77119050",
+      "source_fields_sha256": "8196981db827cdd07bf48049e8680b032af3d7ff5b3991644bbf84743a4bbd90",
+      "translation_sha256": "90ab3ada5752bbe3a287398135289af62b7ed8f6553679db16b03ee3d4ced373",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch378/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "5ae357e319d5763f263d2bb4e3f6ce7dc5be4833f5012b74f80f2e2b252588b4"
+    },
+    {
+      "entry_id": "switch-2",
+      "source_fields_sha256": "531c0dc310e1a24acecf1c35c0053212b6c1a1d261de5c77d489f4c96b9d594e",
+      "translation_sha256": "0428c1021c264f8b338b40bf24a733561b51ca3bb99959d654112e62275ab431",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch378/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "5ae357e319d5763f263d2bb4e3f6ce7dc5be4833f5012b74f80f2e2b252588b4"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "category_audit",
+    "actual_receipt": "build/research/catalog-2025-chronological/root-april-june-three-private/independent-category-audit-approval.json",
+    "actual_receipt_sha256": "04e85f5c36c1a528c8937bdd0149fc63f799dc22e55e63b53889ba08e4ea44f1",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "category_audit",
+      "index": "build/research/catalog-2025-chronological/root-april-june-three-private/three-private-index.json",
+      "index_sha256": "f951d002499ad173adcd18f4ad490d7870a793e6c6573fa343dd84e8478be8ed",
+      "owners": [
+        {
+          "entry_id": "wikipedia-77750771"
+        },
+        {
+          "entry_id": "wikipedia-77119050"
+        },
+        {
+          "entry_id": "switch-2"
+        }
+      ],
+      "scope": {
+        "english_paragraphs_read": 8,
+        "localized_paragraphs_read": 32,
+        "images_personally_viewed": 15,
+        "new_audio_metadata_receipts_read": 1,
+        "new_video_metadata_receipts_read": 1
+      },
+      "findings": [],
+      "review": [
+        "All eight English paragraphs and all thirty-two localized paragraphs with headings/subtitles/summaries read. All fifteen final images personally viewed in three contacts, including original hardware product photographs and genuine DOOM launch-film preview.",
+        "Clair existing173 complete soundtrack objects exactly preserved. Original8EN body paragraphs exactly preserved. DOOM two old cue identities retained, only UI titles shortened; new Unholy Siege public284s composer publication metadata read. New Bethesda UK launch trailer D4ZqHVfiA4M114s datedMay9,2025 with public AAC/AVC read. No console playback asserted.",
+        "Nintendo April2,2025 primary directly confirms June5 launch,7.9inch screen, magnetic JoyCon, mouse modes and GameChat. Bethesda June7,2026 primary directly confirms Revelations July7,2026; later real content retained.",
+        "Clair publisher first-anniversary announcement actually read from saved Steam API response:8million sold. Primary BAFTA/AIAS/GDCA2026 winners directly read and confirm respective GOTY prizes. TGA2025 nine/thirteen counts retained from attributed original source; official endpoint not freshly verified and no false direct-primary claim made.",
+        "Source/target/contact hash, source binding, all four locale cardinalities, decoded recovery dimensions and actual recovery SHA passed; all images have title/source_page/creator/credit/license. No global writes, no audio downloaded."
+      ],
+      "production_writes": false
+    }
+  }
+}

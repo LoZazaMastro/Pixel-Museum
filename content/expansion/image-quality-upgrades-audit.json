@@ -1,0 +1,3201 @@
+{
+  "checked_utc": "2026-10-20T16:02:58.504056+00:00",
+  "catalog_sha256": "dcb9802c9ba160f036f352184b9d615bd89f7e1ef7bf115bd009f371a5450693",
+  "policy": "No upscale; native original or source-derived standard thumbnail must decode at1600px or more on its long edge. Source licences and variant captions stay intact. Stop requests to each host after429.",
+  "processed": 139,
+  "total": 139,
+  "results": [
+    {
+      "entry_id": "tennis-for-two",
+      "title": "Tennis for Two",
+      "in_slice": true,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Tennis_For_Two_on_a_DuMont_Lab_Oscilloscope_Type_304-A.jpg/330px-Tennis_For_Two_on_a_DuMont_Lab_Oscilloscope_Type_304-A.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Tennis_For_Two_on_a_DuMont_Lab_Oscilloscope_Type_304-A.jpg",
+      "original_dimensions_metadata": [
+        705,
+        626
+      ],
+      "decision": "remove",
+      "reason": "Documented native source is below1600px long edge; no upscale or thumbnail enlargement is permitted."
+    },
+    {
+      "entry_id": "tennis-for-two",
+      "title": "Tennis for Two",
+      "in_slice": true,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Tennis_for_Two_Machine_at_CAX_2010.jpg/1280px-Tennis_for_Two_Machine_at_CAX_2010.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Tennis_for_Two_Machine_at_CAX_2010.jpg",
+      "original_dimensions_metadata": [
+        3072,
+        2304
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Tennis_for_Two_Machine_at_CAX_2010.jpg/1920px-Tennis_for_Two_Machine_at_CAX_2010.jpg",
+        "decoded_dimensions": [
+          1920,
+          1440
+        ],
+        "bytes": 483934,
+        "sha256": "f304c482d71fe417a399ac4bfb1abb2bc23e17c4cb222ae3145e89774e0f9d03",
+        "content_type": "image/jpeg",
+        "native_long_edge": 1920,
+        "research_only_file": "build\\research\\image-quality\\b278c3e0731da43f.jpg"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "brown-box",
+      "title": "Ralph Baer, Bill Harrison and Bill Rusch",
+      "in_slice": true,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/BrownBox.jpg/1280px-BrownBox.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:BrownBox.jpg",
+      "original_dimensions_metadata": [
+        1800,
+        1200
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/BrownBox.jpg",
+        "decoded_dimensions": [
+          1800,
+          1200
+        ],
+        "bytes": 443949,
+        "sha256": "c64c0f12f6f0041c450ae9c847f331a3605be4a60feb37a3e66873fbd7ab362f",
+        "content_type": "image/jpeg",
+        "native_long_edge": 1800,
+        "research_only_file": "build\\research\\image-quality\\351dd0a0f9676c7a.jpg"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "brown-box",
+      "title": "Ralph Baer, Bill Harrison and Bill Rusch",
+      "in_slice": true,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Ralph_H._Baer_-_%22Brown_Box%22_prototype.png/1280px-Ralph_H._Baer_-_%22Brown_Box%22_prototype.png",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Ralph_H._Baer_-_%22Brown_Box%22_prototype.png",
+      "original_dimensions_metadata": [
+        2350,
+        2600
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Ralph_H._Baer_-_%22Brown_Box%22_prototype.png/1920px-Ralph_H._Baer_-_%22Brown_Box%22_prototype.png",
+        "decoded_dimensions": [
+          1920,
+          2124
+        ],
+        "bytes": 2253635,
+        "sha256": "81bbbecb0451bc3883605feed4e0cb3650687a5e41b2cf47572cae46e0fbd931",
+        "content_type": "image/png",
+        "native_long_edge": 2124,
+        "research_only_file": "build\\research\\image-quality\\733a9d81be21e878.png"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "channel-f",
+      "title": "Jerry Lawson and the Channel F team",
+      "in_slice": true,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Fairchild-Channel-F.jpg/1280px-Fairchild-Channel-F.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Fairchild-Channel-F.jpg",
+      "original_dimensions_metadata": [
+        3800,
+        2500
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Fairchild-Channel-F.jpg/1920px-Fairchild-Channel-F.jpg",
+        "decoded_dimensions": [
+          1920,
+          1263
+        ],
+        "bytes": 270284,
+        "sha256": "f1c91cc4e4a709e0c0338e0b61e66b0147ebe242d6df691a998d26cded45dd62",
+        "content_type": "image/jpeg",
+        "native_long_edge": 1920,
+        "research_only_file": "build\\research\\image-quality\\b7a3386a27692fcc.jpg"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "channel-f",
+      "title": "Jerry Lawson and the Channel F team",
+      "in_slice": true,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Jerry_Lawson_at_KJZZ_%28cropped%29.png/330px-Jerry_Lawson_at_KJZZ_%28cropped%29.png",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Jerry_Lawson_at_KJZZ_(cropped).png",
+      "original_dimensions_metadata": [
+        608,
+        462
+      ],
+      "decision": "remove",
+      "reason": "Documented native source is below1600px long edge; no upscale or thumbnail enlargement is permitted."
+    },
+    {
+      "entry_id": "channel-f",
+      "title": "Jerry Lawson and the Channel F team",
+      "in_slice": true,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Cartridge_Fairchild_Channel_F.jpg/330px-Cartridge_Fairchild_Channel_F.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Cartridge_Fairchild_Channel_F.jpg",
+      "original_dimensions_metadata": [
+        1000,
+        1492
+      ],
+      "decision": "remove",
+      "reason": "Documented native source is below1600px long edge; no upscale or thumbnail enlargement is permitted."
+    },
+    {
+      "entry_id": "roberta-williams",
+      "title": "Roberta Williams",
+      "in_slice": true,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Roberta_Williams_Adventure_Game_Fan_Fair_Tacoma_Washington_July_2024_%28cropped%29.jpg/960px-Roberta_Williams_Adventure_Game_Fan_Fair_Tacoma_Washington_July_2024_%28cropped%29.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Roberta_Williams_Adventure_Game_Fan_Fair_Tacoma_Washington_July_2024_(cropped).jpg",
+      "original_dimensions_metadata": [
+        1198,
+        1513
+      ],
+      "decision": "remove",
+      "reason": "Documented native source is below1600px long edge; no upscale or thumbnail enlargement is permitted."
+    },
+    {
+      "entry_id": "roberta-williams",
+      "title": "Roberta Williams",
+      "in_slice": true,
+      "match_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/dtenqhpncx9pkahpery3.jpg",
+      "source_page": "https://www.igdb.com/games/mystery-house",
+      "original_dimensions_metadata": [
+        null,
+        null
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://images.igdb.com/igdb/image/upload/t_original/dtenqhpncx9pkahpery3.jpg",
+        "decoded_dimensions": [
+          1278,
+          1024
+        ],
+        "bytes": 139864,
+        "sha256": "92937235ba5af2fb1ac2ac53927567601dcaf58444c6fdaf64dc5f5b5f91b0c2",
+        "content_type": "image/jpeg",
+        "native_long_edge": 1278,
+        "research_only_file": "build\\research\\image-quality\\8d9fba4c5d525221.jpg"
+      },
+      "decision": "remove",
+      "reason": "Actual original/downloaded image is below1600px long edge."
+    },
+    {
+      "entry_id": "roberta-williams",
+      "title": "Roberta Williams",
+      "in_slice": true,
+      "match_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/sikxa1asllqzayb750qb.jpg",
+      "source_page": "https://www.igdb.com/games/mystery-house",
+      "original_dimensions_metadata": [
+        null,
+        null
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://images.igdb.com/igdb/image/upload/t_original/sikxa1asllqzayb750qb.jpg",
+        "decoded_dimensions": [
+          1276,
+          1024
+        ],
+        "bytes": 151034,
+        "sha256": "20ac032fcb45f0667474f99b6c9b5689ed4c8befa424625f4b82f0d275a9b98b",
+        "content_type": "image/jpeg",
+        "native_long_edge": 1276,
+        "research_only_file": "build\\research\\image-quality\\6dadaff4b3655de7.jpg"
+      },
+      "decision": "remove",
+      "reason": "Actual original/downloaded image is below1600px long edge."
+    },
+    {
+      "entry_id": "carol-shaw",
+      "title": "Carol Shaw and River Raid",
+      "in_slice": true,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Carol_Shaw_Holding_Gold_River_Raid_Cartridge.jpg/1280px-Carol_Shaw_Holding_Gold_River_Raid_Cartridge.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Carol_Shaw_Holding_Gold_River_Raid_Cartridge.jpg",
+      "original_dimensions_metadata": [
+        2449,
+        2683
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Carol_Shaw_Holding_Gold_River_Raid_Cartridge.jpg/1920px-Carol_Shaw_Holding_Gold_River_Raid_Cartridge.jpg",
+        "decoded_dimensions": [
+          1920,
+          2103
+        ],
+        "bytes": 1087913,
+        "sha256": "23be466a04a9fc841f2c91ecdea0bbe5c8528815d0e9431bfa8b9a78b4362595",
+        "content_type": "image/jpeg",
+        "native_long_edge": 2103,
+        "research_only_file": "build\\research\\image-quality\\d807d108e77912bc.jpg"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "carol-shaw",
+      "title": "Carol Shaw and River Raid",
+      "in_slice": true,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Carol_Shaw_photo.jpg/330px-Carol_Shaw_photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Carol_Shaw_photo.jpg",
+      "original_dimensions_metadata": [
+        1080,
+        1620
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Carol_Shaw_photo.jpg",
+        "decoded_dimensions": [
+          1080,
+          1620
+        ],
+        "bytes": 1269301,
+        "sha256": "4f481c8f81fd35b7a509a743a9efa0e90185b7d996e2f502d381b6c0e893546d",
+        "content_type": "image/jpeg",
+        "native_long_edge": 1620,
+        "research_only_file": "build\\research\\image-quality\\509b6d7ae30a1d49.jpg"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "karateka",
+      "title": "Karateka",
+      "in_slice": true,
+      "match_url": "https://cdn.prod.website-files.com/63fe9c9ccd6a191fcb553ba6/64ac770fd6acbd789f56676d_karateka_webhero..jpg",
+      "source_page": "https://www.digitaleclipse.com/games/karateka",
+      "original_dimensions_metadata": [
+        null,
+        null
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://cdn.prod.website-files.com/63fe9c9ccd6a191fcb553ba6/64ac770fd6acbd789f56676d_karateka_webhero..jpg",
+        "decoded_dimensions": [
+          1280,
+          1615
+        ],
+        "bytes": 928894,
+        "sha256": "cc3a8aa0ccce7ad29b84673a2d86512cae4d6cf7c9c91525f464f85a981a6338",
+        "content_type": "image/jpeg",
+        "native_long_edge": 1615,
+        "research_only_file": "build\\research\\image-quality\\ab4354f401f9f434.jpg"
+      },
+      "decision": "keep_verified",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "tetris",
+      "title": "Tetris",
+      "in_slice": true,
+      "match_url": "https://upload.wikimedia.org/wikipedia/commons/1/12/Alexey_Pajitnov_January_2008_cropped.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Alexey_Pajitnov_January_2008_cropped.jpg",
+      "original_dimensions_metadata": [
+        320,
+        432
+      ],
+      "decision": "remove",
+      "reason": "Documented native source is below1600px long edge; no upscale or thumbnail enlargement is permitted."
+    },
+    {
+      "entry_id": "game-boy",
+      "title": "Game Boy",
+      "in_slice": true,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Game-Boy-Original.jpg/1280px-Game-Boy-Original.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Game-Boy-Original.jpg",
+      "original_dimensions_metadata": [
+        1500,
+        2400
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Game-Boy-Original.jpg",
+        "decoded_dimensions": [
+          1500,
+          2400
+        ],
+        "bytes": 1087349,
+        "sha256": "3ece438c6963d6315f096f84132381c3bbc8b75a21462c136cc2332c9f3614e6",
+        "content_type": "image/jpeg",
+        "native_long_edge": 2400,
+        "research_only_file": "build\\research\\image-quality\\5e045043f236e235.jpg"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "game-boy",
+      "title": "Game Boy",
+      "in_slice": true,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Game-Boy-FL.jpg/1280px-Game-Boy-FL.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Game-Boy-FL.jpg",
+      "original_dimensions_metadata": [
+        2820,
+        3420
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Game-Boy-FL.jpg/1920px-Game-Boy-FL.jpg",
+        "decoded_dimensions": [
+          1920,
+          2329
+        ],
+        "bytes": 317424,
+        "sha256": "aa497c0e1f74fe104c903173e48e03f685c779c12a0636b6d71b8a02710ba145",
+        "content_type": "image/jpeg",
+        "native_long_edge": 2329,
+        "research_only_file": "build\\research\\image-quality\\1a361af5f2dd70d1.jpg"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "doom",
+      "title": "DOOM",
+      "in_slice": true,
+      "match_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/vv0zszxgvk4dklsz53ap.jpg",
+      "source_page": "https://www.igdb.com/games/doom",
+      "original_dimensions_metadata": [
+        null,
+        null
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://images.igdb.com/igdb/image/upload/t_original/vv0zszxgvk4dklsz53ap.jpg",
+        "decoded_dimensions": [
+          1600,
+          1200
+        ],
+        "bytes": 88739,
+        "sha256": "0f1e552b9e4241e08ab4b2da82b8f068730a6c3433e274a14d437bba81841787",
+        "content_type": "image/png",
+        "native_long_edge": 1600,
+        "research_only_file": "build\\research\\image-quality\\b269db300efc5625.png"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "doom",
+      "title": "DOOM",
+      "in_slice": true,
+      "match_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/uolg5ypiubgnc1rtqmjx.jpg",
+      "source_page": "https://www.igdb.com/games/doom",
+      "original_dimensions_metadata": [
+        null,
+        null
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://images.igdb.com/igdb/image/upload/t_original/uolg5ypiubgnc1rtqmjx.jpg",
+        "decoded_dimensions": [
+          1186,
+          863
+        ],
+        "bytes": 333617,
+        "sha256": "2bb905906fd2891ea5de6216593caac8abcd452751c4b9b3dae720f62ce5e163",
+        "content_type": "image/jpeg",
+        "native_long_edge": 1186,
+        "research_only_file": "build\\research\\image-quality\\19da7b8c73df1657.jpg"
+      },
+      "decision": "remove",
+      "reason": "Actual original/downloaded image is below1600px long edge."
+    },
+    {
+      "entry_id": "playstation-2",
+      "title": "PlayStation 2",
+      "in_slice": true,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/PS2-Versions.jpg/1280px-PS2-Versions.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:PS2-Versions.jpg",
+      "original_dimensions_metadata": [
+        2800,
+        2480
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/PS2-Versions.jpg/1920px-PS2-Versions.jpg",
+        "decoded_dimensions": [
+          1920,
+          1701
+        ],
+        "bytes": 239834,
+        "sha256": "c29cb8e8b92b0e656435fe86dfc756ced1fef233c31b54db1f4034950b770471",
+        "content_type": "image/jpeg",
+        "native_long_edge": 1920,
+        "research_only_file": "build\\research\\image-quality\\17092d8542e57464.jpg"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "nintendo-3ds",
+      "title": "Nintendo 3DS",
+      "in_slice": true,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Nintendo-3DS-AquaOpen.png/1920px-Nintendo-3DS-AquaOpen.png",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Nintendo-3DS-AquaOpen.png",
+      "original_dimensions_metadata": [
+        2300,
+        2080
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Nintendo-3DS-AquaOpen.png/1920px-Nintendo-3DS-AquaOpen.png",
+        "decoded_dimensions": [
+          1920,
+          1736
+        ],
+        "bytes": 2774587,
+        "sha256": "217bac0401b83e870c645efbe515724528b1f813d4f2e0484d0b0179992d49b1",
+        "content_type": "image/png",
+        "native_long_edge": 1920,
+        "research_only_file": "build\\research\\image-quality\\9a8ed53483de0535.png"
+      },
+      "decision": "keep_verified",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "journey",
+      "title": "Journey",
+      "in_slice": true,
+      "match_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/sc12s3h.jpg",
+      "source_page": "https://www.igdb.com/games/journey--1",
+      "original_dimensions_metadata": [
+        null,
+        null
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://images.igdb.com/igdb/image/upload/t_original/sc12s3h.jpg",
+        "decoded_dimensions": [
+          960,
+          1024
+        ],
+        "bytes": 264951,
+        "sha256": "f58ca7ae58308ee0800bfa4e815f8c4473eb2670ca1e62986e9c826248ce1b65",
+        "content_type": "image/png",
+        "native_long_edge": 1024,
+        "research_only_file": "build\\research\\image-quality\\c979917db72147ac.png"
+      },
+      "decision": "remove",
+      "reason": "Actual original/downloaded image is below1600px long edge."
+    },
+    {
+      "entry_id": "journey",
+      "title": "Journey",
+      "in_slice": true,
+      "match_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/sc12s3i.jpg",
+      "source_page": "https://www.igdb.com/games/journey--1",
+      "original_dimensions_metadata": [
+        null,
+        null
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://images.igdb.com/igdb/image/upload/t_original/sc12s3i.jpg",
+        "decoded_dimensions": [
+          960,
+          1024
+        ],
+        "bytes": 316478,
+        "sha256": "216c309d2cc3252fc9f71eef16d2beab739827fbdc3fe7773f5ff790b477ce2a",
+        "content_type": "image/png",
+        "native_long_edge": 1024,
+        "research_only_file": "build\\research\\image-quality\\c6f112690b08b72e.png"
+      },
+      "decision": "remove",
+      "reason": "Actual original/downloaded image is below1600px long edge."
+    },
+    {
+      "entry_id": "papers-please",
+      "title": "Papers, Please",
+      "in_slice": true,
+      "match_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/pqnoclnus8ut4jzkmrid.jpg",
+      "source_page": "https://www.igdb.com/games/papers-please",
+      "original_dimensions_metadata": [
+        null,
+        null
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://images.igdb.com/igdb/image/upload/t_original/pqnoclnus8ut4jzkmrid.jpg",
+        "decoded_dimensions": [
+          1280,
+          720
+        ],
+        "bytes": 141262,
+        "sha256": "51155b07bf576fc355b2d4e94edc62a599ff166912825274921ca5bd6a17b185",
+        "content_type": "image/jpeg",
+        "native_long_edge": 1280,
+        "research_only_file": "build\\research\\image-quality\\fa267b872e58e2d2.jpg"
+      },
+      "decision": "remove",
+      "reason": "Actual original/downloaded image is below1600px long edge."
+    },
+    {
+      "entry_id": "papers-please",
+      "title": "Papers, Please",
+      "in_slice": true,
+      "match_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/babxzbm0ejcxfvnotowf.jpg",
+      "source_page": "https://www.igdb.com/games/papers-please",
+      "original_dimensions_metadata": [
+        null,
+        null
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://images.igdb.com/igdb/image/upload/t_original/babxzbm0ejcxfvnotowf.jpg",
+        "decoded_dimensions": [
+          1280,
+          720
+        ],
+        "bytes": 173743,
+        "sha256": "588435c290251c9790b464ba8345d8a15978d675fdf20329037d9cc3f2ec8d25",
+        "content_type": "image/jpeg",
+        "native_long_edge": 1280,
+        "research_only_file": "build\\research\\image-quality\\33487922bb7b0d21.jpg"
+      },
+      "decision": "remove",
+      "reason": "Actual original/downloaded image is below1600px long edge."
+    },
+    {
+      "entry_id": "switch",
+      "title": "Nintendo Switch",
+      "in_slice": true,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Nintendo-Switch-Console-Docked-wJoyConRB.jpg/1280px-Nintendo-Switch-Console-Docked-wJoyConRB.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Nintendo-Switch-Console-Docked-wJoyConRB.jpg",
+      "original_dimensions_metadata": [
+        4900,
+        2800
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Nintendo-Switch-Console-Docked-wJoyConRB.jpg/1920px-Nintendo-Switch-Console-Docked-wJoyConRB.jpg",
+        "decoded_dimensions": [
+          1920,
+          1097
+        ],
+        "bytes": 168516,
+        "sha256": "2c74e9bededc10341caa466f449ed5766932dde51bfe04ae4a25f6f5ca9b5121",
+        "content_type": "image/jpeg",
+        "native_long_edge": 1920,
+        "research_only_file": "build\\research\\image-quality\\00c72cdb2f824f31.jpg"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "celeste",
+      "title": "Celeste",
+      "in_slice": true,
+      "match_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/fwjvpiu2ircdq5afkm1o.jpg",
+      "source_page": "https://www.igdb.com/games/celeste",
+      "original_dimensions_metadata": [
+        null,
+        null
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://images.igdb.com/igdb/image/upload/t_original/fwjvpiu2ircdq5afkm1o.jpg",
+        "decoded_dimensions": [
+          1920,
+          1080
+        ],
+        "bytes": 125777,
+        "sha256": "36836803d0a800a66f0ddfcda707d42d4b06ca4fd4c4b5eb000fb2f3ae6c3b5e",
+        "content_type": "image/png",
+        "native_long_edge": 1920,
+        "research_only_file": "build\\research\\image-quality\\26c60e23c5e456ea.png"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "celeste",
+      "title": "Celeste",
+      "in_slice": true,
+      "match_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/e9lk3alqutkrciksfque.jpg",
+      "source_page": "https://www.igdb.com/games/celeste",
+      "original_dimensions_metadata": [
+        null,
+        null
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://images.igdb.com/igdb/image/upload/t_original/e9lk3alqutkrciksfque.jpg",
+        "decoded_dimensions": [
+          1920,
+          1080
+        ],
+        "bytes": 44268,
+        "sha256": "33329864de104805271f3c7ca12cd6ecb1f4ea84761dbb58fefa76c8f2ac91dd",
+        "content_type": "image/png",
+        "native_long_edge": 1920,
+        "research_only_file": "build\\research\\image-quality\\3795cdd1287b6fc6.png"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "preserving-play",
+      "title": "Preserving play",
+      "in_slice": true,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Spacewar%21-PDP-1-20070512.jpg/1280px-Spacewar%21-PDP-1-20070512.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Spacewar!-PDP-1-20070512.jpg",
+      "original_dimensions_metadata": [
+        3916,
+        2634
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Spacewar%21-PDP-1-20070512.jpg/1920px-Spacewar%21-PDP-1-20070512.jpg",
+        "decoded_dimensions": [
+          1920,
+          1291
+        ],
+        "bytes": 615174,
+        "sha256": "5523e73ccb9ac21a4e92871e713832a5bbb79c1fb9acbba536c1c957f182e930",
+        "content_type": "image/jpeg",
+        "native_long_edge": 1920,
+        "research_only_file": "build\\research\\image-quality\\2b3feb93933e0585.jpg"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "nimrod",
+      "title": "Nimrod",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Nimrod_in_Computerspielemuseum.jpg/1280px-Nimrod_in_Computerspielemuseum.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Nimrod_in_Computerspielemuseum.jpg",
+      "original_dimensions_metadata": [
+        2592,
+        1936
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Nimrod_in_Computerspielemuseum.jpg/1920px-Nimrod_in_Computerspielemuseum.jpg",
+        "decoded_dimensions": [
+          1920,
+          1434
+        ],
+        "bytes": 668890,
+        "sha256": "fa31489ce28ba917100be9f2eec7969f851059120552c926d3314dc655671e48",
+        "content_type": "image/jpeg",
+        "native_long_edge": 1920,
+        "research_only_file": "build\\research\\image-quality\\2eeb41d3f75dd467.jpg"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "nimrod",
+      "title": "Nimrod",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Nimrod_display_figure.PNG/330px-Nimrod_display_figure.PNG",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Nimrod_display_figure.PNG",
+      "original_dimensions_metadata": [
+        384,
+        250
+      ],
+      "decision": "remove",
+      "reason": "Documented native source is below1600px long edge; no upscale or thumbnail enlargement is permitted."
+    },
+    {
+      "entry_id": "workbook-02-24-sid-meier",
+      "title": "Sid Meier",
+      "in_slice": false,
+      "match_url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Sid_Meier_-_Game_Developers_Conference_2017_-_01_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Sid_Meier_-_Game_Developers_Conference_2017_-_01_(cropped).jpg",
+      "original_dimensions_metadata": [
+        934,
+        1401
+      ],
+      "decision": "remove",
+      "reason": "Documented native source is below1600px long edge; no upscale or thumbnail enlargement is permitted."
+    },
+    {
+      "entry_id": "workbook-01-25-t-ru-iwatani",
+      "title": "Tōru Iwatani",
+      "in_slice": false,
+      "match_url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Toru_Iwatani%2C_creator_of_Pac-Man%2C_at_GDC_2011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Toru_Iwatani,_creator_of_Pac-Man,_at_GDC_2011.jpg",
+      "original_dimensions_metadata": [
+        1720,
+        2669
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Toru_Iwatani%2C_creator_of_Pac-Man%2C_at_GDC_2011.jpg",
+        "decoded_dimensions": [
+          1720,
+          2669
+        ],
+        "bytes": 2622984,
+        "sha256": "fb151b95fd3d4fe2a4bd44ecd50c3d66e0f5bb422e46af858d28b627bfbc436b",
+        "content_type": "image/jpeg",
+        "native_long_edge": 2669,
+        "research_only_file": "build\\research\\image-quality\\ea33c560e672075a.jpg"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "workbook-06-10-yu-suzuki",
+      "title": "Yu Suzuki",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Yu_Suzuki_-_Game_Developers_Conference_2011_-_Day_3.jpg/960px-Yu_Suzuki_-_Game_Developers_Conference_2011_-_Day_3.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Yu_Suzuki_-_Game_Developers_Conference_2011_-_Day_3.jpg",
+      "original_dimensions_metadata": [
+        1209,
+        1287
+      ],
+      "decision": "remove",
+      "reason": "Documented native source is below1600px long edge; no upscale or thumbnail enlargement is permitted."
+    },
+    {
+      "entry_id": "workbook-01-20-will-wright-game-designer",
+      "title": "Will Wright",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Will_Wright_-_Game_Developers_Conference_2010_%282%29_%28cropped%29.jpg/960px-Will_Wright_-_Game_Developers_Conference_2010_%282%29_%28cropped%29.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Will_Wright_-_Game_Developers_Conference_2010_(2)_(cropped).jpg",
+      "original_dimensions_metadata": [
+        1008,
+        1332
+      ],
+      "decision": "remove",
+      "reason": "Documented native source is below1600px long edge; no upscale or thumbnail enlargement is permitted."
+    },
+    {
+      "entry_id": "spacewar",
+      "title": "Spacewar!",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Spacewar%21-PDP-1-20070512.jpg/1280px-Spacewar%21-PDP-1-20070512.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Spacewar!-PDP-1-20070512.jpg",
+      "original_dimensions_metadata": [
+        3916,
+        2634
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Spacewar%21-PDP-1-20070512.jpg/1920px-Spacewar%21-PDP-1-20070512.jpg",
+        "decoded_dimensions": [
+          1920,
+          1291
+        ],
+        "bytes": 615174,
+        "sha256": "5523e73ccb9ac21a4e92871e713832a5bbb79c1fb9acbba536c1c957f182e930",
+        "content_type": "image/jpeg",
+        "native_long_edge": 1920,
+        "research_only_file": "build\\research\\image-quality\\2b3feb93933e0585.jpg"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "spacewar",
+      "title": "Spacewar!",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Spacewar_screenshot.jpg/330px-Spacewar_screenshot.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Spacewar_screenshot.jpg",
+      "original_dimensions_metadata": [
+        1024,
+        768
+      ],
+      "decision": "remove",
+      "reason": "Documented native source is below1600px long edge; no upscale or thumbnail enlargement is permitted."
+    },
+    {
+      "entry_id": "workbook-08-03-masahiro-sakurai",
+      "title": "Masahiro Sakurai",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Masahiro_Sakurai_2021.jpg/330px-Masahiro_Sakurai_2021.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Masahiro_Sakurai_2021.jpg",
+      "original_dimensions_metadata": [
+        580,
+        773
+      ],
+      "decision": "remove",
+      "reason": "Documented native source is below1600px long edge; no upscale or thumbnail enlargement is permitted."
+    },
+    {
+      "entry_id": "workbook-08-20-john-carmack",
+      "title": "John Carmack",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/John_Carmack_2025.jpg/1280px-John_Carmack_2025.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:John_Carmack_2025.jpg",
+      "original_dimensions_metadata": [
+        1876,
+        3053
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/John_Carmack_2025.jpg",
+        "decoded_dimensions": [
+          1876,
+          3053
+        ],
+        "bytes": 760932,
+        "sha256": "5aae32c09c8f47826f1f2d08e365af0fde306a2fc60c7027f48cd671b8a226ae",
+        "content_type": "image/jpeg",
+        "native_long_edge": 3053,
+        "research_only_file": "build\\research\\image-quality\\03d8f69c064a4d9c.jpg"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "oregon-trail",
+      "title": "The Oregon Trail",
+      "in_slice": false,
+      "match_url": "https://www.museumofplay.org/app/uploads/2021/09/Oregon-Trail.jpg",
+      "source_page": "https://www.museumofplay.org/games/the-oregon-trail/",
+      "original_dimensions_metadata": [
+        null,
+        null
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://www.museumofplay.org/app/uploads/2021/09/Oregon-Trail.jpg",
+        "decoded_dimensions": [
+          800,
+          800
+        ],
+        "bytes": 126061,
+        "sha256": "7a221255cdb5e1ad53907c9e1549e56cbf7f79093fdd7caecce5165c2ac0c454",
+        "content_type": "image/jpeg",
+        "native_long_edge": 800,
+        "research_only_file": "build\\research\\image-quality\\7078d79b4ce500ac.jpg"
+      },
+      "decision": "remove",
+      "reason": "Actual original/downloaded image is below1600px long edge."
+    },
+    {
+      "entry_id": "wikipedia-292879",
+      "title": "Computer Space",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Computer_Space_cabinet.jpg/1280px-Computer_Space_cabinet.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Computer_Space_cabinet.jpg",
+      "original_dimensions_metadata": [
+        1536,
+        2048
+      ],
+      "probe": {
+        "status": 429,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Computer_Space_cabinet.jpg"
+      },
+      "decision": "pending",
+      "reason": "Remote quality not verified; do not approve from a local cache or original-size metadata alone."
+    },
+    {
+      "entry_id": "wikipedia-292879",
+      "title": "Computer Space",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Computer_Space_Monitor.jpg/1280px-Computer_Space_Monitor.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Computer_Space_Monitor.jpg",
+      "original_dimensions_metadata": [
+        4032,
+        3024
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Computer_Space_Monitor.jpg/1920px-Computer_Space_Monitor.jpg",
+        "decoded_dimensions": [
+          1920,
+          1440
+        ],
+        "bytes": 706419,
+        "sha256": "08859ebc60bf5c61289c4f5a54724d26c20d240b61a841fbc8ec79ef0ba16425",
+        "content_type": "image/jpeg",
+        "native_long_edge": 1920,
+        "research_only_file": "build\\research\\image-quality\\90bfe396929e0fd0.jpg"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "wikipedia-6526451",
+      "title": "Galaxy Game",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Galaxy_Game_1971_first_arcade_game.jpg/1280px-Galaxy_Game_1971_first_arcade_game.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Galaxy_Game_1971_first_arcade_game.jpg",
+      "original_dimensions_metadata": [
+        1600,
+        1200
+      ],
+      "probe": {
+        "status": "pending_after_host_rate_limit",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Galaxy_Game_1971_first_arcade_game.jpg"
+      },
+      "decision": "pending",
+      "reason": "Remote quality not verified; do not approve from a local cache or original-size metadata alone."
+    },
+    {
+      "entry_id": "odyssey",
+      "title": "Magnavox Odyssey",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Magnavox-Odyssey-Console-Set.jpg/1280px-Magnavox-Odyssey-Console-Set.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Magnavox-Odyssey-Console-Set.jpg",
+      "original_dimensions_metadata": [
+        5800,
+        2940
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Magnavox-Odyssey-Console-Set.jpg/1920px-Magnavox-Odyssey-Console-Set.jpg",
+        "decoded_dimensions": [
+          1920,
+          973
+        ],
+        "bytes": 170893,
+        "sha256": "b48936f3cc738c43b1a7b66e05b85abc80f246e6fb4fe8309d2f3bbc8eaba98d",
+        "content_type": "image/jpeg",
+        "native_long_edge": 1920,
+        "research_only_file": "build\\research\\image-quality\\f1fe166b24760e8a.jpg"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "pong",
+      "title": "Pong",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Atari_Pong_arcade_game_cabinet.jpg/1280px-Atari_Pong_arcade_game_cabinet.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Atari_Pong_arcade_game_cabinet.jpg",
+      "original_dimensions_metadata": [
+        1461,
+        1998
+      ],
+      "probe": {
+        "status": "pending_after_host_rate_limit",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Atari_Pong_arcade_game_cabinet.jpg"
+      },
+      "decision": "pending",
+      "reason": "Remote quality not verified; do not approve from a local cache or original-size metadata alone."
+    },
+    {
+      "entry_id": "pong",
+      "title": "Pong",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Pong_cabinet_-_320846208_-_axeldeviaje.png/330px-Pong_cabinet_-_320846208_-_axeldeviaje.png",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Pong_cabinet_-_320846208_-_axeldeviaje.png",
+      "original_dimensions_metadata": [
+        791,
+        693
+      ],
+      "decision": "remove",
+      "reason": "Documented native source is below1600px long edge; no upscale or thumbnail enlargement is permitted."
+    },
+    {
+      "entry_id": "wikipedia-1120399",
+      "title": "Maze",
+      "in_slice": false,
+      "match_url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Maze_war.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Maze_war.jpg",
+      "original_dimensions_metadata": [
+        480,
+        360
+      ],
+      "decision": "remove",
+      "reason": "Documented native source is below1600px long edge; no upscale or thumbnail enlargement is permitted."
+    },
+    {
+      "entry_id": "wikipedia-13136650",
+      "title": "Trek73",
+      "in_slice": false,
+      "match_url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Trek73_video_game_screenshot.png",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Trek73_video_game_screenshot.png",
+      "original_dimensions_metadata": [
+        640,
+        400
+      ],
+      "decision": "remove",
+      "reason": "Documented native source is below1600px long edge; no upscale or thumbnail enlargement is permitted."
+    },
+    {
+      "entry_id": "wikipedia-1055604",
+      "title": "Gun Fight",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/December_1975_advertisement_for_Gun_Fight_by_Midway.jpg/1280px-December_1975_advertisement_for_Gun_Fight_by_Midway.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:December_1975_advertisement_for_Gun_Fight_by_Midway.jpg",
+      "original_dimensions_metadata": [
+        5046,
+        6512
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/December_1975_advertisement_for_Gun_Fight_by_Midway.jpg/1920px-December_1975_advertisement_for_Gun_Fight_by_Midway.jpg",
+        "decoded_dimensions": [
+          1920,
+          2478
+        ],
+        "bytes": 881172,
+        "sha256": "af6644bd5cf6ebdc3f08b7ff9fcc50555aac2c08af1167a1feac5e63628a2cb2",
+        "content_type": "image/jpeg",
+        "native_long_edge": 2478,
+        "research_only_file": "build\\research\\image-quality\\b02604ffe009409e.jpg"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "wikipedia-43958708",
+      "title": "Fairchild Channel F Videocarts",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Fairchild-Channel-F.jpg/1280px-Fairchild-Channel-F.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Fairchild-Channel-F.jpg",
+      "original_dimensions_metadata": [
+        3800,
+        2500
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Fairchild-Channel-F.jpg/1920px-Fairchild-Channel-F.jpg",
+        "decoded_dimensions": [
+          1920,
+          1263
+        ],
+        "bytes": 270284,
+        "sha256": "f1c91cc4e4a709e0c0338e0b61e66b0147ebe242d6df691a998d26cded45dd62",
+        "content_type": "image/jpeg",
+        "native_long_edge": 1920,
+        "research_only_file": "build\\research\\image-quality\\b7a3386a27692fcc.jpg"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "wikipedia-261798",
+      "title": "Colossal Cave Adventure",
+      "in_slice": false,
+      "match_url": "https://upload.wikimedia.org/wikipedia/commons/2/25/ADVENT_--_Crowther_Woods.png",
+      "source_page": "https://commons.wikimedia.org/wiki/File:ADVENT_--_Crowther_Woods.png",
+      "original_dimensions_metadata": [
+        668,
+        501
+      ],
+      "decision": "remove",
+      "reason": "Documented native source is below1600px long edge; no upscale or thumbnail enlargement is permitted."
+    },
+    {
+      "entry_id": "wikipedia-6150793",
+      "title": "Mattel Auto Race",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Mattel_Electronics_Auto_Race%2C_No._9879%2C_Red_LED%2C_Made_In_Hong_Kong%2C_Copyright_1976_%28LED_Handheld_Electronic_Game%29.jpg/1280px-Mattel_Electronics_Auto_Race%2C_No._9879%2C_Red_LED%2C_Made_In_Hong_Kong%2C_Copyright_1976_%28LED_Handheld_Electronic_Game%29.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Mattel_Electronics_Auto_Race,_No._9879,_Red_LED,_Made_In_Hong_Kong,_Copyright_1976_(LED_Handheld_Electronic_Game).jpg",
+      "original_dimensions_metadata": [
+        1946,
+        2471
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Mattel_Electronics_Auto_Race%2C_No._9879%2C_Red_LED%2C_Made_In_Hong_Kong%2C_Copyright_1976_%28LED_Handheld_Electronic_Game%29.jpg/1920px-Mattel_Electronics_Auto_Race%2C_No._9879%2C_Red_LED%2C_Made_In_Hong_Kong%2C_Copyright_1976_%28LED_Handheld_Electronic_Game%29.jpg",
+        "decoded_dimensions": [
+          1920,
+          2438
+        ],
+        "bytes": 720383,
+        "sha256": "70151c45d0e6dd1b5e60a9d8b0cd52e80035b76d91d833ed93eb6da851a63c51",
+        "content_type": "image/jpeg",
+        "native_long_edge": 2438,
+        "research_only_file": "build\\research\\image-quality\\5cdf0d0a62802107.jpg"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "atari-vcs",
+      "title": "Atari Video Computer System",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Atari-2600-Wood-4Sw-Set.jpg/1280px-Atari-2600-Wood-4Sw-Set.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Atari-2600-Wood-4Sw-Set.jpg",
+      "original_dimensions_metadata": [
+        3940,
+        2300
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Atari-2600-Wood-4Sw-Set.jpg/1920px-Atari-2600-Wood-4Sw-Set.jpg",
+        "decoded_dimensions": [
+          1920,
+          1121
+        ],
+        "bytes": 310628,
+        "sha256": "a62d761a35da3468ddaded602e971c3587f49bdfd0cbef3dfb717d39e4c7232b",
+        "content_type": "image/jpeg",
+        "native_long_edge": 1920,
+        "research_only_file": "build\\research\\image-quality\\fe9fbf1b79f86842.jpg"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "wikipedia-34419",
+      "title": "Zork",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Zork_photo.jpg/1280px-Zork_photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Zork_photo.jpg",
+      "original_dimensions_metadata": [
+        3168,
+        4752
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Zork_photo.jpg/1920px-Zork_photo.jpg",
+        "decoded_dimensions": [
+          1920,
+          2880
+        ],
+        "bytes": 836690,
+        "sha256": "b18afa47b47a849b48eb391ddabbe471156d6b802982267579af51400fadd810",
+        "content_type": "image/jpeg",
+        "native_long_edge": 2880,
+        "research_only_file": "build\\research\\image-quality\\2c187c2896eb7622.jpg"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "wikipedia-34419",
+      "title": "Zork",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Zork_on_CRT_display.jpg/1280px-Zork_on_CRT_display.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Zork_on_CRT_display.jpg",
+      "original_dimensions_metadata": [
+        3572,
+        3785
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Zork_on_CRT_display.jpg/1920px-Zork_on_CRT_display.jpg",
+        "decoded_dimensions": [
+          1920,
+          2034
+        ],
+        "bytes": 1277632,
+        "sha256": "fdf650f134f322ff903c8f4441361ff4360f2955a62544ee555297e9f5495042",
+        "content_type": "image/jpeg",
+        "native_long_edge": 2034,
+        "research_only_file": "build\\research\\image-quality\\c5b3720c4c865e90.jpg"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "space-invaders",
+      "title": "Space Invaders",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Space_Invader_Cabinet.jpg/330px-Space_Invader_Cabinet.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Space_Invader_Cabinet.jpg",
+      "original_dimensions_metadata": [
+        600,
+        800
+      ],
+      "decision": "remove",
+      "reason": "Documented native source is below1600px long edge; no upscale or thumbnail enlargement is permitted."
+    },
+    {
+      "entry_id": "adventure",
+      "title": "Adventure",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Warren_Robinett%2C_2015.jpg/330px-Warren_Robinett%2C_2015.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Warren_Robinett,_2015.jpg",
+      "original_dimensions_metadata": [
+        332,
+        442
+      ],
+      "decision": "remove",
+      "reason": "Documented native source is below1600px long edge; no upscale or thumbnail enlargement is permitted."
+    },
+    {
+      "entry_id": "adventure",
+      "title": "Adventure",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Classic_Game_Postmortem-_Adventure_%2816119757653%29.jpg/1280px-Classic_Game_Postmortem-_Adventure_%2816119757653%29.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Classic_Game_Postmortem-_Adventure_(16119757653).jpg",
+      "original_dimensions_metadata": [
+        2592,
+        1728
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Classic_Game_Postmortem-_Adventure_%2816119757653%29.jpg/1920px-Classic_Game_Postmortem-_Adventure_%2816119757653%29.jpg",
+        "decoded_dimensions": [
+          1920,
+          1280
+        ],
+        "bytes": 383677,
+        "sha256": "0ce666177d3a34da866475873cccf6dc7ea8fdfe4deee7a13e3ff2cf847d6c97",
+        "content_type": "image/jpeg",
+        "native_long_edge": 1920,
+        "research_only_file": "build\\research\\image-quality\\3581760dcb6d5ef2.jpg"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "wikipedia-785",
+      "title": "Asteroids",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Asteroids_cabinet.jpg/1280px-Asteroids_cabinet.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Asteroids_cabinet.jpg",
+      "original_dimensions_metadata": [
+        2448,
+        3264
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Asteroids_cabinet.jpg/1920px-Asteroids_cabinet.jpg",
+        "decoded_dimensions": [
+          1920,
+          2560
+        ],
+        "bytes": 586156,
+        "sha256": "46be648dfabc0582a379ecae72d384eed9e085a870cc8cc9b0ce7426fdd23e64",
+        "content_type": "image/jpeg",
+        "native_long_edge": 2560,
+        "research_only_file": "build\\research\\image-quality\\a9e1e0dede51029c.jpg"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "pac-man",
+      "title": "Pac-Man",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Pac-Man_arcade_machine%2C_De_Notaris_Schaijk.jpg/1280px-Pac-Man_arcade_machine%2C_De_Notaris_Schaijk.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Pac-Man_arcade_machine,_De_Notaris_Schaijk.jpg",
+      "original_dimensions_metadata": [
+        2811,
+        3748
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Pac-Man_arcade_machine%2C_De_Notaris_Schaijk.jpg/1920px-Pac-Man_arcade_machine%2C_De_Notaris_Schaijk.jpg",
+        "decoded_dimensions": [
+          1920,
+          2560
+        ],
+        "bytes": 1236811,
+        "sha256": "6a51f89cdb211104c8f679410f5770d6aa60f65fed3c2354a30b8668ced5d9e9",
+        "content_type": "image/jpeg",
+        "native_long_edge": 2560,
+        "research_only_file": "build\\research\\image-quality\\b1435045a1012ab6.jpg"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "wikipedia-244576",
+      "title": "Missile Command",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Missile_Command_Arcade_cabinet.jpg/1280px-Missile_Command_Arcade_cabinet.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Missile_Command_Arcade_cabinet.jpg",
+      "original_dimensions_metadata": [
+        2296,
+        3056
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Missile_Command_Arcade_cabinet.jpg/1920px-Missile_Command_Arcade_cabinet.jpg",
+        "decoded_dimensions": [
+          1920,
+          2556
+        ],
+        "bytes": 930748,
+        "sha256": "4a10a5cb99186f7e603578d4962ed86dd45a85c232f5156fd9000bd12d239243",
+        "content_type": "image/jpeg",
+        "native_long_edge": 2556,
+        "research_only_file": "build\\research\\image-quality\\464be7dc394d53f8.jpg"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "wikipedia-420457",
+      "title": "3D tic-tac-toe",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/3D_Tic_Tac_Toe.jpg/1280px-3D_Tic_Tac_Toe.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:3D_Tic_Tac_Toe.jpg",
+      "original_dimensions_metadata": [
+        1506,
+        1470
+      ],
+      "decision": "remove",
+      "reason": "Documented native source is below1600px long edge; no upscale or thumbnail enlargement is permitted."
+    },
+    {
+      "entry_id": "intellivision",
+      "title": "Intellivision",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Intellivision-Console-Set.png/1920px-Intellivision-Console-Set.png",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Intellivision-Console-Set.png",
+      "original_dimensions_metadata": [
+        4300,
+        2280
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Intellivision-Console-Set.png/1920px-Intellivision-Console-Set.png",
+        "decoded_dimensions": [
+          1920,
+          1018
+        ],
+        "bytes": 1564485,
+        "sha256": "87d9f7044513674fab4068c8ac277ba8f3179318d12b832ef7815c074f3c46f7",
+        "content_type": "image/png",
+        "native_long_edge": 1920,
+        "research_only_file": "build\\research\\image-quality\\9659eb4cd1ef3ff6.png"
+      },
+      "decision": "keep_verified",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "dona-bailey",
+      "title": "Dona Bailey and Centipede",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Dona_Bailey.jpg/330px-Dona_Bailey.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Dona_Bailey.jpg",
+      "original_dimensions_metadata": [
+        560,
+        441
+      ],
+      "decision": "remove",
+      "reason": "Documented native source is below1600px long edge; no upscale or thumbnail enlargement is permitted."
+    },
+    {
+      "entry_id": "wikipedia-622127",
+      "title": "Galaga",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Galaga_1.jpg/1280px-Galaga_1.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Galaga_1.jpg",
+      "original_dimensions_metadata": [
+        2048,
+        2635
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Galaga_1.jpg/1920px-Galaga_1.jpg",
+        "decoded_dimensions": [
+          1920,
+          2470
+        ],
+        "bytes": 545595,
+        "sha256": "331ba762b035df1f930c907932029d2bf1e80e58807c3290a3f81b67e6ce24e9",
+        "content_type": "image/jpeg",
+        "native_long_edge": 2470,
+        "research_only_file": "build\\research\\image-quality\\e99532d46a7f96f8.jpg"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "wikipedia-512076",
+      "title": "Defender",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Williams_Defender_Arcade_Video_Game.jpg/1280px-Williams_Defender_Arcade_Video_Game.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Williams_Defender_Arcade_Video_Game.jpg",
+      "original_dimensions_metadata": [
+        2652,
+        3753
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Williams_Defender_Arcade_Video_Game.jpg/1920px-Williams_Defender_Arcade_Video_Game.jpg",
+        "decoded_dimensions": [
+          1920,
+          2717
+        ],
+        "bytes": 1379226,
+        "sha256": "efe775638cbeca588b08de98db6c18831a4753a8502ab447839801561f09d179",
+        "content_type": "image/jpeg",
+        "native_long_edge": 2717,
+        "research_only_file": "build\\research\\image-quality\\f99a2cc50058c8dc.jpg"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "wikipedia-512076",
+      "title": "Defender",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Defender_control_panel_arcade.jpg/1280px-Defender_control_panel_arcade.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Defender_control_panel_arcade.jpg",
+      "original_dimensions_metadata": [
+        2048,
+        1536
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Defender_control_panel_arcade.jpg/1920px-Defender_control_panel_arcade.jpg",
+        "decoded_dimensions": [
+          1920,
+          1440
+        ],
+        "bytes": 522679,
+        "sha256": "82b01a4b0cacb533db87645cbcdfa0086ca6c241f1419e7903deadb17dc227fc",
+        "content_type": "image/jpeg",
+        "native_long_edge": 1920,
+        "research_only_file": "build\\research\\image-quality\\261f7015cf44123b.jpg"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "commodore-64",
+      "title": "Commodore 64",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Commodore-64-Computer-FL.jpg/1280px-Commodore-64-Computer-FL.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Commodore-64-Computer-FL.jpg",
+      "original_dimensions_metadata": [
+        4600,
+        2600
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Commodore-64-Computer-FL.jpg/1920px-Commodore-64-Computer-FL.jpg",
+        "decoded_dimensions": [
+          1920,
+          1085
+        ],
+        "bytes": 218151,
+        "sha256": "da76e08ab1c812869a7019e3542c85abd1a9be6c8590b1d8343c36eb92684116",
+        "content_type": "image/jpeg",
+        "native_long_edge": 1920,
+        "research_only_file": "build\\research\\image-quality\\be09b1ba87bb0ec3.jpg"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "commodore-64",
+      "title": "Commodore 64",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Commodore-64-Computer-BL.jpg/1280px-Commodore-64-Computer-BL.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Commodore-64-Computer-BL.jpg",
+      "original_dimensions_metadata": [
+        4600,
+        2600
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Commodore-64-Computer-BL.jpg/1920px-Commodore-64-Computer-BL.jpg",
+        "decoded_dimensions": [
+          1920,
+          1085
+        ],
+        "bytes": 189628,
+        "sha256": "e1fea150366d7fe3fcf98d22e3155019498cbbc49aff2da4cf7a014603cde4d0",
+        "content_type": "image/jpeg",
+        "native_long_edge": 1920,
+        "research_only_file": "build\\research\\image-quality\\42e386862b60486d.jpg"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "zx-spectrum",
+      "title": "ZX Spectrum",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/ZXSpectrum48k.jpg/1280px-ZXSpectrum48k.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:ZXSpectrum48k.jpg",
+      "original_dimensions_metadata": [
+        null,
+        null
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/ZXSpectrum48k.jpg/1280px-ZXSpectrum48k.jpg",
+        "decoded_dimensions": [
+          1280,
+          941
+        ],
+        "bytes": 152369,
+        "sha256": "ad396b02e97c302a61b944ace94ddf515a9b91c7b27f28b74e2fb0bd9a5e4525",
+        "content_type": "image/jpeg",
+        "native_long_edge": 1280,
+        "research_only_file": "build\\research\\image-quality\\8c039307bc482b3b.jpg"
+      },
+      "decision": "remove",
+      "reason": "Actual original/downloaded image is below1600px long edge."
+    },
+    {
+      "entry_id": "famicom",
+      "title": "Family Computer",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Nintendo-Famicom-Console-Set-FL.png/1280px-Nintendo-Famicom-Console-Set-FL.png",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Nintendo-Famicom-Console-Set-FL.png",
+      "original_dimensions_metadata": [
+        4830,
+        2580
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Nintendo-Famicom-Console-Set-FL.png/1920px-Nintendo-Famicom-Console-Set-FL.png",
+        "decoded_dimensions": [
+          1920,
+          1026
+        ],
+        "bytes": 1001069,
+        "sha256": "93d097f94ff118401c64f72dc643f53831eb59c9bb305ab2dba23cdebaf70111",
+        "content_type": "image/png",
+        "native_long_edge": 1920,
+        "research_only_file": "build\\research\\image-quality\\332713a2ac8f80b9.png"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "famicom",
+      "title": "Family Computer",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Nintendo-Famicom-Disk-System.jpg/1280px-Nintendo-Famicom-Disk-System.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Nintendo-Famicom-Disk-System.jpg",
+      "original_dimensions_metadata": [
+        3550,
+        3150
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Nintendo-Famicom-Disk-System.jpg/1920px-Nintendo-Famicom-Disk-System.jpg",
+        "decoded_dimensions": [
+          1920,
+          1704
+        ],
+        "bytes": 324907,
+        "sha256": "a009320b2ab8e77c6a55735abfed423eccc5bccc0c26519e6d52b213c9d3f843",
+        "content_type": "image/jpeg",
+        "native_long_edge": 1920,
+        "research_only_file": "build\\research\\image-quality\\b7bcd339fe1e1d27.jpg"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "mule",
+      "title": "Dani Bunten Berry and M.U.L.E.",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Danielle_Bunten_Berry.jpg/1280px-Danielle_Bunten_Berry.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Danielle_Bunten_Berry.jpg",
+      "original_dimensions_metadata": [
+        2048,
+        2048
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Danielle_Bunten_Berry.jpg/1920px-Danielle_Bunten_Berry.jpg",
+        "decoded_dimensions": [
+          1920,
+          1920
+        ],
+        "bytes": 147787,
+        "sha256": "7b648a489bfd367e9522ed09175e33001a371950916281849d8e51bf92420d36",
+        "content_type": "image/jpeg",
+        "native_long_edge": 1920,
+        "research_only_file": "build\\research\\image-quality\\d15726fd80b96ada.jpg"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "super-mario-bros",
+      "title": "Super Mario Bros.",
+      "in_slice": false,
+      "match_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/sc84hl.jpg",
+      "source_page": "https://www.igdb.com/games/super-mario-bros",
+      "original_dimensions_metadata": [
+        null,
+        null
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://images.igdb.com/igdb/image/upload/t_original/sc84hl.jpg",
+        "decoded_dimensions": [
+          256,
+          224
+        ],
+        "bytes": 2729,
+        "sha256": "377b2b28f18352976840cda0f82036a13531b7ab7e5ce8dbef50fcbff655d3d4",
+        "content_type": "image/png",
+        "native_long_edge": 256,
+        "research_only_file": "build\\research\\image-quality\\29e3a2e10066b8a8.png"
+      },
+      "decision": "remove",
+      "reason": "Actual original/downloaded image is below1600px long edge."
+    },
+    {
+      "entry_id": "nes",
+      "title": "Nintendo Entertainment System",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/NES-Console-Set.png/1280px-NES-Console-Set.png",
+      "source_page": "https://commons.wikimedia.org/wiki/File:NES-Console-Set.png",
+      "original_dimensions_metadata": [
+        5560,
+        3020
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/NES-Console-Set.png/1920px-NES-Console-Set.png",
+        "decoded_dimensions": [
+          1920,
+          1043
+        ],
+        "bytes": 968316,
+        "sha256": "04e64732afa37fdc3bb5757550e5bf5529d0cc517afdb6da0b4f8c2e690c4ebe",
+        "content_type": "image/png",
+        "native_long_edge": 1920,
+        "research_only_file": "build\\research\\image-quality\\76d23e0ea39bf1af.png"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "dragon-quest",
+      "title": "Dragon Quest",
+      "in_slice": false,
+      "match_url": "https://www.museumofplay.org/app/uploads/2023/05/WVGHOF-Nom-2026_Dragon-Quest-SQ.jpg",
+      "source_page": "https://www.museumofplay.org/games/dragon-quest/",
+      "original_dimensions_metadata": [
+        null,
+        null
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://www.museumofplay.org/app/uploads/2023/05/WVGHOF-Nom-2026_Dragon-Quest-SQ.jpg",
+        "decoded_dimensions": [
+          800,
+          800
+        ],
+        "bytes": 60898,
+        "sha256": "3ccb838b74eb6e88eef26b7990c056e3825829565741b0c028222fea5eb59c8b",
+        "content_type": "image/jpeg",
+        "native_long_edge": 800,
+        "research_only_file": "build\\research\\image-quality\\dce94f16f834979e.jpg"
+      },
+      "decision": "remove",
+      "reason": "Actual original/downloaded image is below1600px long edge."
+    },
+    {
+      "entry_id": "zelda",
+      "title": "The Legend of Zelda",
+      "in_slice": false,
+      "match_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/sckdxx.jpg",
+      "source_page": "https://www.igdb.com/games/the-legend-of-zelda",
+      "original_dimensions_metadata": [
+        null,
+        null
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://images.igdb.com/igdb/image/upload/t_original/sckdxx.jpg",
+        "decoded_dimensions": [
+          256,
+          240
+        ],
+        "bytes": 4943,
+        "sha256": "a96eaf395a776e1a0f1e56cebab4b12e1ed1fb780be4d4c7c45bb22d0339fbeb",
+        "content_type": "image/png",
+        "native_long_edge": 256,
+        "research_only_file": "build\\research\\image-quality\\40ef261afb9fcbb4.png"
+      },
+      "decision": "remove",
+      "reason": "Actual original/downloaded image is below1600px long edge."
+    },
+    {
+      "entry_id": "mega-drive",
+      "title": "Mega Drive / Genesis",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Sega-Mega-Drive-JP-Mk1-Console-Set.jpg/1920px-Sega-Mega-Drive-JP-Mk1-Console-Set.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Sega-Mega-Drive-JP-Mk1-Console-Set.jpg",
+      "original_dimensions_metadata": [
+        4240,
+        2120
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Sega-Mega-Drive-JP-Mk1-Console-Set.jpg/1920px-Sega-Mega-Drive-JP-Mk1-Console-Set.jpg",
+        "decoded_dimensions": [
+          1920,
+          960
+        ],
+        "bytes": 165783,
+        "sha256": "6eec815bba75270ff9b165ca407903a2bb1aeb74a89f62c82112ae2e6ab9d820",
+        "content_type": "image/jpeg",
+        "native_long_edge": 1920,
+        "research_only_file": "build\\research\\image-quality\\54b56302283322f7.jpg"
+      },
+      "decision": "keep_verified",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "simcity",
+      "title": "SimCity",
+      "in_slice": false,
+      "match_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/imf2nlr73vwqmw5btdeg.jpg",
+      "source_page": "https://www.igdb.com/games/simcity",
+      "original_dimensions_metadata": [
+        null,
+        null
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://images.igdb.com/igdb/image/upload/t_original/imf2nlr73vwqmw5btdeg.jpg",
+        "decoded_dimensions": [
+          640,
+          350
+        ],
+        "bytes": 55992,
+        "sha256": "c14cfe2fe59b4e0c5e07ae6a5b527cedd2aff7cf74438d7ca73d252a58328bbf",
+        "content_type": "image/jpeg",
+        "native_long_edge": 640,
+        "research_only_file": "build\\research\\image-quality\\c136b793e1300063.jpg"
+      },
+      "decision": "remove",
+      "reason": "Actual original/downloaded image is below1600px long edge."
+    },
+    {
+      "entry_id": "simcity",
+      "title": "SimCity",
+      "in_slice": false,
+      "match_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/ftnxqh4a5ojui8wnofkf.jpg",
+      "source_page": "https://www.igdb.com/games/simcity",
+      "original_dimensions_metadata": [
+        null,
+        null
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://images.igdb.com/igdb/image/upload/t_original/ftnxqh4a5ojui8wnofkf.jpg",
+        "decoded_dimensions": [
+          1919,
+          1079
+        ],
+        "bytes": 157964,
+        "sha256": "83faf2ef0b2086efa02e3846c4bc88b6dee2fe398bb069c5ca0c4f524fc8ac8c",
+        "content_type": "image/png",
+        "native_long_edge": 1919,
+        "research_only_file": "build\\research\\image-quality\\714544e8e5e17a8c.png"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "tectoy",
+      "title": "Tectoy and the Master System",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Sega-Master-System-Set.jpg/1280px-Sega-Master-System-Set.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Sega-Master-System-Set.jpg",
+      "original_dimensions_metadata": [
+        null,
+        null
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Sega-Master-System-Set.jpg/1280px-Sega-Master-System-Set.jpg",
+        "decoded_dimensions": [
+          1280,
+          704
+        ],
+        "bytes": 127923,
+        "sha256": "0c4c9f89e4bb91c7794f37bdb4bd32fcabb0c3cfae9bb9e0edeb51831f221c23",
+        "content_type": "image/jpeg",
+        "native_long_edge": 1280,
+        "research_only_file": "build\\research\\image-quality\\30dfa1f2df97cd66.jpg"
+      },
+      "decision": "remove",
+      "reason": "Actual original/downloaded image is below1600px long edge."
+    },
+    {
+      "entry_id": "atari-lynx",
+      "title": "Atari Lynx",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Atari-Lynx-I-Handheld.jpg/1920px-Atari-Lynx-I-Handheld.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Atari-Lynx-I-Handheld.jpg",
+      "original_dimensions_metadata": [
+        3900,
+        2310
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Atari-Lynx-I-Handheld.jpg/1920px-Atari-Lynx-I-Handheld.jpg",
+        "decoded_dimensions": [
+          1920,
+          1137
+        ],
+        "bytes": 256498,
+        "sha256": "6e3eb69df1aa73a5b03f7e8b9e676177ccfd6489361398d8789a9ac6900110f8",
+        "content_type": "image/jpeg",
+        "native_long_edge": 1920,
+        "research_only_file": "build\\research\\image-quality\\ae12783d42a41597.jpg"
+      },
+      "decision": "keep_verified",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "sonic",
+      "title": "Sonic the Hedgehog",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Sega-Mega-Drive-JP-Mk1-Console-Set.jpg/1280px-Sega-Mega-Drive-JP-Mk1-Console-Set.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Sega-Mega-Drive-JP-Mk1-Console-Set.jpg",
+      "original_dimensions_metadata": [
+        4240,
+        2120
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Sega-Mega-Drive-JP-Mk1-Console-Set.jpg/1920px-Sega-Mega-Drive-JP-Mk1-Console-Set.jpg",
+        "decoded_dimensions": [
+          1920,
+          960
+        ],
+        "bytes": 165783,
+        "sha256": "6eec815bba75270ff9b165ca407903a2bb1aeb74a89f62c82112ae2e6ab9d820",
+        "content_type": "image/jpeg",
+        "native_long_edge": 1920,
+        "research_only_file": "build\\research\\image-quality\\54b56302283322f7.jpg"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "sonic",
+      "title": "Sonic the Hedgehog",
+      "in_slice": false,
+      "match_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/eiucwjjjhuflg4clecim.jpg",
+      "source_page": "https://www.igdb.com/games/sonic-the-hedgehog",
+      "original_dimensions_metadata": [
+        null,
+        null
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://images.igdb.com/igdb/image/upload/t_original/eiucwjjjhuflg4clecim.jpg",
+        "decoded_dimensions": [
+          450,
+          338
+        ],
+        "bytes": 34053,
+        "sha256": "186e85eb22ff50b0516309eb167edc6313db78c673a731431e2fad233b8ae41c",
+        "content_type": "image/jpeg",
+        "native_long_edge": 450,
+        "research_only_file": "build\\research\\image-quality\\07e5bfbeb231dd9d.jpg"
+      },
+      "decision": "remove",
+      "reason": "Actual original/downloaded image is below1600px long edge."
+    },
+    {
+      "entry_id": "sonic",
+      "title": "Sonic the Hedgehog",
+      "in_slice": false,
+      "match_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/s7yp2hdjyqldynkoktkw.jpg",
+      "source_page": "https://www.igdb.com/games/sonic-the-hedgehog",
+      "original_dimensions_metadata": [
+        null,
+        null
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://images.igdb.com/igdb/image/upload/t_original/s7yp2hdjyqldynkoktkw.jpg",
+        "decoded_dimensions": [
+          450,
+          338
+        ],
+        "bytes": 42283,
+        "sha256": "ebe6efa0dd876068e25b96e4ca5ecea59ef54b8c8399f7cea8c42a5383bc3189",
+        "content_type": "image/jpeg",
+        "native_long_edge": 450,
+        "research_only_file": "build\\research\\image-quality\\746c5c86ea84e746.jpg"
+      },
+      "decision": "remove",
+      "reason": "Actual original/downloaded image is below1600px long edge."
+    },
+    {
+      "entry_id": "street-fighter-ii",
+      "title": "Street Fighter II",
+      "in_slice": false,
+      "match_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/pnrtjqwsjssgfpe83mjr.jpg",
+      "source_page": "https://www.igdb.com/games/street-fighter-ii",
+      "original_dimensions_metadata": [
+        null,
+        null
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://images.igdb.com/igdb/image/upload/t_original/pnrtjqwsjssgfpe83mjr.jpg",
+        "decoded_dimensions": [
+          604,
+          453
+        ],
+        "bytes": 92256,
+        "sha256": "af09d0f314412d5532f6d41d346cb7910865f0ecdabe4a7b0bb3a98f6be5bf16",
+        "content_type": "image/jpeg",
+        "native_long_edge": 604,
+        "research_only_file": "build\\research\\image-quality\\b44183d398c92996.jpg"
+      },
+      "decision": "remove",
+      "reason": "Actual original/downloaded image is below1600px long edge."
+    },
+    {
+      "entry_id": "street-fighter-ii",
+      "title": "Street Fighter II",
+      "in_slice": false,
+      "match_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/sc9e9u.jpg",
+      "source_page": "https://www.igdb.com/games/street-fighter-ii",
+      "original_dimensions_metadata": [
+        null,
+        null
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://images.igdb.com/igdb/image/upload/t_original/sc9e9u.jpg",
+        "decoded_dimensions": [
+          452,
+          309
+        ],
+        "bytes": 28048,
+        "sha256": "fadd8aa8f3d7ab26f044862e1f7faed52e9c6caa4ac3092afd27185496f79fed",
+        "content_type": "image/jpeg",
+        "native_long_edge": 452,
+        "research_only_file": "build\\research\\image-quality\\d07b0c5d8e47b12f.jpg"
+      },
+      "decision": "remove",
+      "reason": "Actual original/downloaded image is below1600px long edge."
+    },
+    {
+      "entry_id": "snes-pal",
+      "title": "Super Nintendo — PAL edition",
+      "in_slice": false,
+      "match_url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Wikipedia_SNES_PAL.png",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Wikipedia_SNES_PAL.png",
+      "original_dimensions_metadata": [
+        1200,
+        850
+      ],
+      "decision": "remove",
+      "reason": "Documented native source is below1600px long edge; no upscale or thumbnail enlargement is permitted."
+    },
+    {
+      "entry_id": "myst",
+      "title": "Myst",
+      "in_slice": false,
+      "match_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/zw3t9ta1dyumvqgsec7w.jpg",
+      "source_page": "https://www.igdb.com/games/myst",
+      "original_dimensions_metadata": [
+        null,
+        null
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://images.igdb.com/igdb/image/upload/t_original/zw3t9ta1dyumvqgsec7w.jpg",
+        "decoded_dimensions": [
+          600,
+          350
+        ],
+        "bytes": 82596,
+        "sha256": "9a7f387045b728a91c570561637a4ffe9cc262ee8cb333dda1b02aebc4e2476b",
+        "content_type": "image/jpeg",
+        "native_long_edge": 600,
+        "research_only_file": "build\\research\\image-quality\\4d2efe04c5302ebf.jpg"
+      },
+      "decision": "remove",
+      "reason": "Actual original/downloaded image is below1600px long edge."
+    },
+    {
+      "entry_id": "myst",
+      "title": "Myst",
+      "in_slice": false,
+      "match_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/ijc76zscdmy5xtonlbpr.jpg",
+      "source_page": "https://www.igdb.com/games/myst",
+      "original_dimensions_metadata": [
+        null,
+        null
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://images.igdb.com/igdb/image/upload/t_original/ijc76zscdmy5xtonlbpr.jpg",
+        "decoded_dimensions": [
+          544,
+          332
+        ],
+        "bytes": 113595,
+        "sha256": "c8ef8ae547c957299aaaa21087143fa56e35bb2d0f11222fad9e5bf97be93fb1",
+        "content_type": "image/png",
+        "native_long_edge": 544,
+        "research_only_file": "build\\research\\image-quality\\2373e8066d8c1eb9.png"
+      },
+      "decision": "remove",
+      "reason": "Actual original/downloaded image is below1600px long edge."
+    },
+    {
+      "entry_id": "playstation",
+      "title": "PlayStation",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/PSX-Console-wController.jpg/1280px-PSX-Console-wController.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:PSX-Console-wController.jpg",
+      "original_dimensions_metadata": [
+        4140,
+        1900
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/PSX-Console-wController.jpg/1920px-PSX-Console-wController.jpg",
+        "decoded_dimensions": [
+          1920,
+          881
+        ],
+        "bytes": 146769,
+        "sha256": "54683cd09f1c2c042f003a7f5b84a7bbb187808079f90b34e0077dcd925f8a1f",
+        "content_type": "image/jpeg",
+        "native_long_edge": 1920,
+        "research_only_file": "build\\research\\image-quality\\37fff3f2932cc445.jpg"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "playstation",
+      "title": "PlayStation",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/PSX-DualShock-Controller.jpg/1280px-PSX-DualShock-Controller.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:PSX-DualShock-Controller.jpg",
+      "original_dimensions_metadata": [
+        3060,
+        2400
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/PSX-DualShock-Controller.jpg/1920px-PSX-DualShock-Controller.jpg",
+        "decoded_dimensions": [
+          1920,
+          1506
+        ],
+        "bytes": 236483,
+        "sha256": "6b4adbc341f32fd62f3d9d894b1fdc97276845c13a1ef1333e4e20b2559d79db",
+        "content_type": "image/jpeg",
+        "native_long_edge": 1920,
+        "research_only_file": "build\\research\\image-quality\\7cdb6020983c4165.jpg"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "sega-saturn",
+      "title": "Sega Saturn",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Sega-Saturn-JP-Mk1-Console-Set.jpg/1280px-Sega-Saturn-JP-Mk1-Console-Set.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Sega-Saturn-JP-Mk1-Console-Set.jpg",
+      "original_dimensions_metadata": [
+        4080,
+        2300
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Sega-Saturn-JP-Mk1-Console-Set.jpg/1920px-Sega-Saturn-JP-Mk1-Console-Set.jpg",
+        "decoded_dimensions": [
+          1920,
+          1082
+        ],
+        "bytes": 193237,
+        "sha256": "e5068081fcb86e4307cd7561870f51ede236f26468c84153de04c47ece55d22d",
+        "content_type": "image/jpeg",
+        "native_long_edge": 1920,
+        "research_only_file": "build\\research\\image-quality\\f3c9e4b474a6a907.jpg"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "pokemon",
+      "title": "Pokémon Red and Green",
+      "in_slice": false,
+      "match_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/scapip.jpg",
+      "source_page": "https://www.igdb.com/games/pokemon-red-version",
+      "original_dimensions_metadata": [
+        null,
+        null
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://images.igdb.com/igdb/image/upload/t_original/scapip.jpg",
+        "decoded_dimensions": [
+          160,
+          144
+        ],
+        "bytes": 2331,
+        "sha256": "1f8b87616d2d12f1f9580337149aee7693798c7f1b443ef3205c7568550c684e",
+        "content_type": "image/png",
+        "native_long_edge": 160,
+        "research_only_file": "build\\research\\image-quality\\d065528f069423c6.png"
+      },
+      "decision": "remove",
+      "reason": "Actual original/downloaded image is below1600px long edge."
+    },
+    {
+      "entry_id": "pokemon",
+      "title": "Pokémon Red and Green",
+      "in_slice": false,
+      "match_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/scapiq.jpg",
+      "source_page": "https://www.igdb.com/games/pokemon-red-version",
+      "original_dimensions_metadata": [
+        null,
+        null
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://images.igdb.com/igdb/image/upload/t_original/scapiq.jpg",
+        "decoded_dimensions": [
+          160,
+          144
+        ],
+        "bytes": 2374,
+        "sha256": "44b9d215f56575a00d3d4598dd271dcbb14eac8dbf6024fab1ebd8a8a9e92d3f",
+        "content_type": "image/png",
+        "native_long_edge": 160,
+        "research_only_file": "build\\research\\image-quality\\0c85f0820f9d6759.png"
+      },
+      "decision": "remove",
+      "reason": "Actual original/downloaded image is below1600px long edge."
+    },
+    {
+      "entry_id": "super-mario-64",
+      "title": "Super Mario 64",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/N64-Console-Set.jpg/1280px-N64-Console-Set.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:N64-Console-Set.jpg",
+      "original_dimensions_metadata": [
+        3917,
+        2108
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/N64-Console-Set.jpg/1920px-N64-Console-Set.jpg",
+        "decoded_dimensions": [
+          1920,
+          1033
+        ],
+        "bytes": 172631,
+        "sha256": "9cf91862c43434e0fe276e842a56d44311674bcda655a6977742602136e92559",
+        "content_type": "image/jpeg",
+        "native_long_edge": 1920,
+        "research_only_file": "build\\research\\image-quality\\c49f12b07804da5f.jpg"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "super-mario-64",
+      "title": "Super Mario 64",
+      "in_slice": false,
+      "match_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/sc8e2k.jpg",
+      "source_page": "https://www.igdb.com/games/super-mario-64",
+      "original_dimensions_metadata": [
+        null,
+        null
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://images.igdb.com/igdb/image/upload/t_original/sc8e2k.jpg",
+        "decoded_dimensions": [
+          640,
+          448
+        ],
+        "bytes": 106335,
+        "sha256": "204bccf024e8ea3af7b7940699fb9ccb97206fccfcdd186e955b323e422e1a3e",
+        "content_type": "image/jpeg",
+        "native_long_edge": 640,
+        "research_only_file": "build\\research\\image-quality\\31fff470fe10b354.jpg"
+      },
+      "decision": "remove",
+      "reason": "Actual original/downloaded image is below1600px long edge."
+    },
+    {
+      "entry_id": "super-mario-64",
+      "title": "Super Mario 64",
+      "in_slice": false,
+      "match_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/sc8e2l.jpg",
+      "source_page": "https://www.igdb.com/games/super-mario-64",
+      "original_dimensions_metadata": [
+        null,
+        null
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://images.igdb.com/igdb/image/upload/t_original/sc8e2l.jpg",
+        "decoded_dimensions": [
+          640,
+          448
+        ],
+        "bytes": 80466,
+        "sha256": "2bc9153439a26c7c5ddc26e09ca20e762809ef14cc716ccb5f1dff689aa80772",
+        "content_type": "image/jpeg",
+        "native_long_edge": 640,
+        "research_only_file": "build\\research\\image-quality\\40777b2f442c534e.jpg"
+      },
+      "decision": "remove",
+      "reason": "Actual original/downloaded image is below1600px long edge."
+    },
+    {
+      "entry_id": "tomb-raider",
+      "title": "Tomb Raider",
+      "in_slice": false,
+      "match_url": "https://www.museumofplay.org/app/uploads/2021/08/Tomb-Raider-sq.jpg",
+      "source_page": "https://www.museumofplay.org/games/tomb-raider/",
+      "original_dimensions_metadata": [
+        null,
+        null
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://www.museumofplay.org/app/uploads/2021/08/Tomb-Raider-sq.jpg",
+        "decoded_dimensions": [
+          800,
+          800
+        ],
+        "bytes": 226243,
+        "sha256": "27314ccb55bd0c61047caad56bcad2bbeda75dd8ea55226c963188b77925b991",
+        "content_type": "image/jpeg",
+        "native_long_edge": 800,
+        "research_only_file": "build\\research\\image-quality\\ba23e8114c3a2ca9.jpg"
+      },
+      "decision": "remove",
+      "reason": "Actual original/downloaded image is below1600px long edge."
+    },
+    {
+      "entry_id": "nintendo-64",
+      "title": "Nintendo 64",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Nintendo-64-wController-L.jpg/1920px-Nintendo-64-wController-L.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Nintendo-64-wController-L.jpg",
+      "original_dimensions_metadata": [
+        5900,
+        2700
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Nintendo-64-wController-L.jpg/1920px-Nintendo-64-wController-L.jpg",
+        "decoded_dimensions": [
+          1920,
+          879
+        ],
+        "bytes": 153729,
+        "sha256": "d439c0c9c83ea31a309f68ed6f9e30d50dee99e7c6c90343b98b685208c58b3e",
+        "content_type": "image/jpeg",
+        "native_long_edge": 1920,
+        "research_only_file": "build\\research\\image-quality\\1825e6131c46875e.jpg"
+      },
+      "decision": "keep_verified",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "final-fantasy-vii",
+      "title": "Final Fantasy VII",
+      "in_slice": false,
+      "match_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/schmzc.jpg",
+      "source_page": "https://www.igdb.com/games/final-fantasy-vii",
+      "original_dimensions_metadata": [
+        null,
+        null
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://images.igdb.com/igdb/image/upload/t_original/schmzc.jpg",
+        "decoded_dimensions": [
+          320,
+          256
+        ],
+        "bytes": 126949,
+        "sha256": "0befc44943a86b6536e6dfc460d398b3e49332439ac2ed9edc23c0b69c9aa1ed",
+        "content_type": "image/png",
+        "native_long_edge": 320,
+        "research_only_file": "build\\research\\image-quality\\5b0ccd08d67ca6e1.png"
+      },
+      "decision": "remove",
+      "reason": "Actual original/downloaded image is below1600px long edge."
+    },
+    {
+      "entry_id": "final-fantasy-vii",
+      "title": "Final Fantasy VII",
+      "in_slice": false,
+      "match_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/schmzd.jpg",
+      "source_page": "https://www.igdb.com/games/final-fantasy-vii",
+      "original_dimensions_metadata": [
+        null,
+        null
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://images.igdb.com/igdb/image/upload/t_original/schmzd.jpg",
+        "decoded_dimensions": [
+          320,
+          256
+        ],
+        "bytes": 60775,
+        "sha256": "04bf7e0359b5b7be1515d2d39111bc3cf030998893175dc08203c7c526b0a507",
+        "content_type": "image/png",
+        "native_long_edge": 320,
+        "research_only_file": "build\\research\\image-quality\\d99404a22546d83f.png"
+      },
+      "decision": "remove",
+      "reason": "Actual original/downloaded image is below1600px long edge."
+    },
+    {
+      "entry_id": "wikipedia-1956221",
+      "title": "NFL Blitz",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Mus%C3%A9e_M%C3%A9canique_217.JPG/1280px-Mus%C3%A9e_M%C3%A9canique_217.JPG",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_M%C3%A9canique_217.JPG",
+      "original_dimensions_metadata": [
+        2448,
+        3264
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Mus%C3%A9e_M%C3%A9canique_217.JPG/1920px-Mus%C3%A9e_M%C3%A9canique_217.JPG",
+        "decoded_dimensions": [
+          1920,
+          2560
+        ],
+        "bytes": 954542,
+        "sha256": "d2d76c717c72be8c77283fc66dda379b73b4a6a98c6991b4d13198cf90b4bab2",
+        "content_type": "image/jpeg",
+        "native_long_edge": 2560,
+        "research_only_file": "build\\research\\image-quality\\ee0fa375939dff79.jpg"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "wikipedia-234683",
+      "title": "Beatmania",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Beatmania_completeMIX_2.jpg/1280px-Beatmania_completeMIX_2.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Beatmania_completeMIX_2.jpg",
+      "original_dimensions_metadata": [
+        2727,
+        3024
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Beatmania_completeMIX_2.jpg/1920px-Beatmania_completeMIX_2.jpg",
+        "decoded_dimensions": [
+          1920,
+          2129
+        ],
+        "bytes": 896187,
+        "sha256": "74dc1a7be8ff3374dde9719d719a97822b455695a7f5310a10130a0294c7b64f",
+        "content_type": "image/jpeg",
+        "native_long_edge": 2129,
+        "research_only_file": "build\\research\\image-quality\\3b6fdbeb1d35196d.jpg"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "dance-dance-revolution",
+      "title": "Dance Dance Revolution",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Dance_Dance_Revolution_earliest_generation_arcade_cabinet.png/330px-Dance_Dance_Revolution_earliest_generation_arcade_cabinet.png",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Dance_Dance_Revolution_earliest_generation_arcade_cabinet.png",
+      "original_dimensions_metadata": [
+        593,
+        757
+      ],
+      "decision": "remove",
+      "reason": "Documented native source is below1600px long edge; no upscale or thumbnail enlargement is permitted."
+    },
+    {
+      "entry_id": "dreamcast",
+      "title": "Dreamcast",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Sega-Dreamcast-Console-FL.jpg/1280px-Sega-Dreamcast-Console-FL.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Sega-Dreamcast-Console-FL.jpg",
+      "original_dimensions_metadata": [
+        3720,
+        2730
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Sega-Dreamcast-Console-FL.jpg/1920px-Sega-Dreamcast-Console-FL.jpg",
+        "decoded_dimensions": [
+          1920,
+          1409
+        ],
+        "bytes": 88221,
+        "sha256": "84449b3bc331fde2f1438e7cfe389b0aee8947ee05f6e2aafe2b4a9d7f10ba71",
+        "content_type": "image/jpeg",
+        "native_long_edge": 1920,
+        "research_only_file": "build\\research\\image-quality\\3852f629a057c7e5.jpg"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "dreamcast",
+      "title": "Dreamcast",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Sega-Dreamcast-Console-FR.jpg/1280px-Sega-Dreamcast-Console-FR.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Sega-Dreamcast-Console-FR.jpg",
+      "original_dimensions_metadata": [
+        3720,
+        2730
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Sega-Dreamcast-Console-FR.jpg/1920px-Sega-Dreamcast-Console-FR.jpg",
+        "decoded_dimensions": [
+          1920,
+          1409
+        ],
+        "bytes": 85891,
+        "sha256": "b23ed5618d60726c9fd550c03f79837c1a87132112e6ad69ff07c53fc0fc0446",
+        "content_type": "image/jpeg",
+        "native_long_edge": 1920,
+        "research_only_file": "build\\research\\image-quality\\eaf76032b67ebccf.jpg"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "starcraft",
+      "title": "StarCraft",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Boxer_fighting%21.jpg/1280px-Boxer_fighting%21.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Boxer_fighting!.jpg",
+      "original_dimensions_metadata": [
+        2176,
+        2848
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Boxer_fighting%21.jpg/1920px-Boxer_fighting%21.jpg",
+        "decoded_dimensions": [
+          1920,
+          2513
+        ],
+        "bytes": 968120,
+        "sha256": "d85d8f4556b18de67bba9a70ce116427f4ea88760a4b4e863e51bd08c4bc19f0",
+        "content_type": "image/jpeg",
+        "native_long_edge": 2513,
+        "research_only_file": "build\\research\\image-quality\\67caa256a8477410.jpg"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "starcraft",
+      "title": "StarCraft",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Boxer_in_2021.jpg/330px-Boxer_in_2021.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Boxer_in_2021.jpg",
+      "original_dimensions_metadata": [
+        475,
+        609
+      ],
+      "decision": "remove",
+      "reason": "Documented native source is below1600px long edge; no upscale or thumbnail enlargement is permitted."
+    },
+    {
+      "entry_id": "the-sims",
+      "title": "The Sims",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Will_Wright_-_Game_Developers_Conference_2010_%282%29.jpg/1280px-Will_Wright_-_Game_Developers_Conference_2010_%282%29.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Will_Wright_-_Game_Developers_Conference_2010_(2).jpg",
+      "original_dimensions_metadata": [
+        2092,
+        2079
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Will_Wright_-_Game_Developers_Conference_2010_%282%29.jpg/1920px-Will_Wright_-_Game_Developers_Conference_2010_%282%29.jpg",
+        "decoded_dimensions": [
+          1920,
+          1908
+        ],
+        "bytes": 627739,
+        "sha256": "0571b3cf78c03c575cca70ca1568b5802ed79bc6090b6a921f74af982a431686",
+        "content_type": "image/jpeg",
+        "native_long_edge": 1920,
+        "research_only_file": "build\\research\\image-quality\\f84fc70fb2151970.jpg"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "the-sims",
+      "title": "The Sims",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Will_Wright_%285189056674%29.jpg/1280px-Will_Wright_%285189056674%29.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Will_Wright_(5189056674).jpg",
+      "original_dimensions_metadata": [
+        1536,
+        1024
+      ],
+      "decision": "remove",
+      "reason": "Documented native source is below1600px long edge; no upscale or thumbnail enlargement is permitted."
+    },
+    {
+      "entry_id": "xbox-halo",
+      "title": "Xbox and Halo",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Xbox-console.jpg/1280px-Xbox-console.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Xbox-console.jpg",
+      "original_dimensions_metadata": [
+        5700,
+        2620
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Xbox-console.jpg/1920px-Xbox-console.jpg",
+        "decoded_dimensions": [
+          1920,
+          883
+        ],
+        "bytes": 180130,
+        "sha256": "74715a3e1ca372becaeb2087dfc276b6538c4a490820acd12ab1c31feeb6bbc4",
+        "content_type": "image/jpeg",
+        "native_long_edge": 1920,
+        "research_only_file": "build\\research\\image-quality\\92f7151135db21de.jpg"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "steam",
+      "title": "Steam",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Valve_Lobby_2016.jpg/1280px-Valve_Lobby_2016.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Valve_Lobby_2016.jpg",
+      "original_dimensions_metadata": [
+        5312,
+        2988
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Valve_Lobby_2016.jpg/1920px-Valve_Lobby_2016.jpg",
+        "decoded_dimensions": [
+          1920,
+          1080
+        ],
+        "bytes": 526828,
+        "sha256": "a5aa78969bb42641ce8dc3ab832f370d7d6cbc016cc10b10adb98ab479e0854c",
+        "content_type": "image/jpeg",
+        "native_long_edge": 1920,
+        "research_only_file": "build\\research\\image-quality\\3b4761a1bdee997f.jpg"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "world-of-warcraft",
+      "title": "World of Warcraft",
+      "in_slice": false,
+      "match_url": "https://blz-contentstack-images.akamaized.net/v3/assets/blt3452e3b114fab0cd/blta616581872eee85a/605e55b3c59b730cb4c7fba2/DDFL7D2NO05F1472165788051.jpg?auto=webp&quality=75",
+      "source_page": "https://worldofwarcraft.blizzard.com/en-gb/story/timeline/chapter-06",
+      "original_dimensions_metadata": [
+        null,
+        null
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://blz-contentstack-images.akamaized.net/v3/assets/blt3452e3b114fab0cd/blta616581872eee85a/605e55b3c59b730cb4c7fba2/DDFL7D2NO05F1472165788051.jpg?auto=webp&quality=75",
+        "decoded_dimensions": [
+          2400,
+          1400
+        ],
+        "bytes": 193772,
+        "sha256": "1bcc7d94dd8eb73ae1282945379892a0c0f05e85dd74fa5cb4a8691ce3b38d1c",
+        "content_type": "image/webp",
+        "native_long_edge": 2400,
+        "research_only_file": "build\\research\\image-quality\\d4be5cfa0979c418.jpg"
+      },
+      "decision": "keep_verified",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "psp",
+      "title": "PlayStation Portable",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/PSP-1000.png/1280px-PSP-1000.png",
+      "source_page": "https://commons.wikimedia.org/wiki/File:PSP-1000.png",
+      "original_dimensions_metadata": [
+        3840,
+        2180
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/PSP-1000.png/1920px-PSP-1000.png",
+        "decoded_dimensions": [
+          1920,
+          1090
+        ],
+        "bytes": 1271875,
+        "sha256": "803bc990a1caa5e7d8a2037e4744316e3712398578d6f88c5f7ec03027d69879",
+        "content_type": "image/png",
+        "native_long_edge": 1920,
+        "research_only_file": "build\\research\\image-quality\\85dc6820d589fa5e.png"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "wii",
+      "title": "Wii",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Wii-console.jpg/1280px-Wii-console.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Wii-console.jpg",
+      "original_dimensions_metadata": [
+        2500,
+        2500
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Wii-console.jpg/1920px-Wii-console.jpg",
+        "decoded_dimensions": [
+          1920,
+          1920
+        ],
+        "bytes": 312143,
+        "sha256": "8e232781ea3a48f8fe8f2dc17bd3c3540b217dbdc19648e0009c89bfd59b829d",
+        "content_type": "image/jpeg",
+        "native_long_edge": 1920,
+        "research_only_file": "build\\research\\image-quality\\bafb5ce5d8964fba.jpg"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "wii",
+      "title": "Wii",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Satoru_Iwata_-_Game_Developers_Conference_2011_-_Day_2_%281%29.jpg/1280px-Satoru_Iwata_-_Game_Developers_Conference_2011_-_Day_2_%281%29.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Satoru_Iwata_-_Game_Developers_Conference_2011_-_Day_2_(1).jpg",
+      "original_dimensions_metadata": [
+        1728,
+        2592
+      ],
+      "probe": {
+        "status": "pending_after_host_rate_limit",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Satoru_Iwata_-_Game_Developers_Conference_2011_-_Day_2_%281%29.jpg"
+      },
+      "decision": "pending",
+      "reason": "Remote quality not verified; do not approve from a local cache or original-size metadata alone."
+    },
+    {
+      "entry_id": "wikipedia-18622076",
+      "title": "Garry's Mod",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Garry%27s_Mod_logo.svg/1280px-Garry%27s_Mod_logo.svg.png",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Garry%27s_Mod_logo.svg",
+      "original_dimensions_metadata": [
+        512,
+        512
+      ],
+      "decision": "remove",
+      "reason": "Documented native source is below1600px long edge; no upscale or thumbnail enlargement is permitted."
+    },
+    {
+      "entry_id": "playstation-3",
+      "title": "PlayStation 3",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/PS3-Fat-Console-Set.jpg/1280px-PS3-Fat-Console-Set.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:PS3-Fat-Console-Set.jpg",
+      "original_dimensions_metadata": [
+        1625,
+        2450
+      ],
+      "probe": {
+        "status": "pending_after_host_rate_limit",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/PS3-Fat-Console-Set.jpg"
+      },
+      "decision": "pending",
+      "reason": "Remote quality not verified; do not approve from a local cache or original-size metadata alone."
+    },
+    {
+      "entry_id": "braid",
+      "title": "Braid",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Jonathan_Blow_-_GDC_2007.jpg/1280px-Jonathan_Blow_-_GDC_2007.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Jonathan_Blow_-_GDC_2007.jpg",
+      "original_dimensions_metadata": [
+        3399,
+        2266
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Jonathan_Blow_-_GDC_2007.jpg/1920px-Jonathan_Blow_-_GDC_2007.jpg",
+        "decoded_dimensions": [
+          1920,
+          1280
+        ],
+        "bytes": 348169,
+        "sha256": "ca65cb87246b87164f6cced996afb196de4352001da98072a49811e3eb10f992",
+        "content_type": "image/jpeg",
+        "native_long_edge": 1920,
+        "research_only_file": "build\\research\\image-quality\\ec6649c78bcd64aa.jpg"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "braid",
+      "title": "Braid",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Jonathan_Blow_-_Game_Developers_Conference_Europe_2011_%283%29.jpg/1280px-Jonathan_Blow_-_Game_Developers_Conference_Europe_2011_%283%29.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Jonathan_Blow_-_Game_Developers_Conference_Europe_2011_(3).jpg",
+      "original_dimensions_metadata": [
+        5616,
+        3744
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Jonathan_Blow_-_Game_Developers_Conference_Europe_2011_%283%29.jpg/1920px-Jonathan_Blow_-_Game_Developers_Conference_Europe_2011_%283%29.jpg",
+        "decoded_dimensions": [
+          1920,
+          1280
+        ],
+        "bytes": 314967,
+        "sha256": "cf8f8232368a942bc1a2d296addb163900fd626331c25aa70c6e9b7a2a93fd6a",
+        "content_type": "image/jpeg",
+        "native_long_edge": 1920,
+        "research_only_file": "build\\research\\image-quality\\247feec19e791453.jpg"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "wikipedia-15448272",
+      "title": "World of Goo",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/World_of_Goo_Logo.png/1280px-World_of_Goo_Logo.png",
+      "source_page": "https://commons.wikimedia.org/wiki/File:World_of_Goo_Logo.png",
+      "original_dimensions_metadata": [
+        2072,
+        1191
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/World_of_Goo_Logo.png/1920px-World_of_Goo_Logo.png",
+        "decoded_dimensions": [
+          1920,
+          1104
+        ],
+        "bytes": 237815,
+        "sha256": "dd2380ba01d89e1ffeb603f72f0cfd36fc661ce0f6b20da7e501dc86590378e6",
+        "content_type": "image/png",
+        "native_long_edge": 1920,
+        "research_only_file": "build\\research\\image-quality\\4cb8097d3cc69f4d.png"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "wikipedia-21838352",
+      "title": "League of Legends",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/League_of_Legends_2019_vector.svg/1280px-League_of_Legends_2019_vector.svg.png",
+      "source_page": "https://commons.wikimedia.org/wiki/File:League_of_Legends_2019_vector.svg",
+      "original_dimensions_metadata": [
+        600,
+        229
+      ],
+      "decision": "remove",
+      "reason": "Documented native source is below1600px long edge; no upscale or thumbnail enlargement is permitted."
+    },
+    {
+      "entry_id": "minecraft",
+      "title": "Minecraft",
+      "in_slice": false,
+      "match_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/sc8d2k.jpg",
+      "source_page": "https://www.igdb.com/games/minecraft--1",
+      "original_dimensions_metadata": [
+        null,
+        null
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://images.igdb.com/igdb/image/upload/t_original/sc8d2k.jpg",
+        "decoded_dimensions": [
+          700,
+          394
+        ],
+        "bytes": 76309,
+        "sha256": "64f5a06986e502ba1e73b218f07d974793db201177f7bdbb02edc90a9e2c8daf",
+        "content_type": "image/jpeg",
+        "native_long_edge": 700,
+        "research_only_file": "build\\research\\image-quality\\2dfb0da851d61a56.jpg"
+      },
+      "decision": "remove",
+      "reason": "Actual original/downloaded image is below1600px long edge."
+    },
+    {
+      "entry_id": "minecraft",
+      "title": "Minecraft",
+      "in_slice": false,
+      "match_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/sc8d2m.jpg",
+      "source_page": "https://www.igdb.com/games/minecraft--1",
+      "original_dimensions_metadata": [
+        null,
+        null
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://images.igdb.com/igdb/image/upload/t_original/sc8d2m.jpg",
+        "decoded_dimensions": [
+          700,
+          394
+        ],
+        "bytes": 70752,
+        "sha256": "79016c1e40d77aab0f8a3ed62bf78afb6caf0ef142a0e038dbe2bc25e3f7ba39",
+        "content_type": "image/jpeg",
+        "native_long_edge": 700,
+        "research_only_file": "build\\research\\image-quality\\c15620925dcfb4d8.jpg"
+      },
+      "decision": "remove",
+      "reason": "Actual original/downloaded image is below1600px long edge."
+    },
+    {
+      "entry_id": "wikipedia-18711188",
+      "title": "Fez",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Fez_%28video_game%29_cover_art.png/1280px-Fez_%28video_game%29_cover_art.png",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Fez_(video_game)_cover_art.png",
+      "original_dimensions_metadata": [
+        1800,
+        2399
+      ],
+      "probe": {
+        "status": "pending_after_host_rate_limit",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Fez_%28video_game%29_cover_art.png"
+      },
+      "decision": "pending",
+      "reason": "Remote quality not verified; do not approve from a local cache or original-size metadata alone."
+    },
+    {
+      "entry_id": "playstation-4",
+      "title": "PlayStation 4",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/PS4-Console-wDS4.jpg/1280px-PS4-Console-wDS4.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:PS4-Console-wDS4.jpg",
+      "original_dimensions_metadata": [
+        6000,
+        3000
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/PS4-Console-wDS4.jpg/1920px-PS4-Console-wDS4.jpg",
+        "decoded_dimensions": [
+          1920,
+          960
+        ],
+        "bytes": 152224,
+        "sha256": "5421c62e2854898f6f7e9a8de5cee2e08f25d9af99f96e7edcb8783fbd231f4c",
+        "content_type": "image/jpeg",
+        "native_long_edge": 1920,
+        "research_only_file": "build\\research\\image-quality\\413ca47b06ff2987.jpg"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "xbox-one",
+      "title": "Xbox One",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Microsoft-Xbox-One-Console-Set-wKinect.jpg/1280px-Microsoft-Xbox-One-Console-Set-wKinect.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Microsoft-Xbox-One-Console-Set-wKinect.jpg",
+      "original_dimensions_metadata": [
+        7680,
+        5040
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Microsoft-Xbox-One-Console-Set-wKinect.jpg/1920px-Microsoft-Xbox-One-Console-Set-wKinect.jpg",
+        "decoded_dimensions": [
+          1920,
+          1260
+        ],
+        "bytes": 203346,
+        "sha256": "869fd0f58d5fe8b30ad347ed668bc36aa694eb8044fb60d1954e70652029ca9d",
+        "content_type": "image/jpeg",
+        "native_long_edge": 1920,
+        "research_only_file": "build\\research\\image-quality\\e34b0a5a33749ad0.jpg"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "wikipedia-41950404",
+      "title": "Nuclear Throne",
+      "in_slice": false,
+      "match_url": "https://upload.wikimedia.org/wikipedia/commons/2/22/Nuclear_Throne_icon.png",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Nuclear_Throne_icon.png",
+      "original_dimensions_metadata": [
+        1024,
+        1024
+      ],
+      "decision": "remove",
+      "reason": "Documented native source is below1600px long edge; no upscale or thumbnail enlargement is permitted."
+    },
+    {
+      "entry_id": "wikipedia-40301836",
+      "title": "N++",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/N%2B%2B_logo.png/1280px-N%2B%2B_logo.png",
+      "source_page": "https://commons.wikimedia.org/wiki/File:N%2B%2B_logo.png",
+      "original_dimensions_metadata": [
+        1656,
+        648
+      ],
+      "probe": {
+        "status": "pending_after_host_rate_limit",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/N%2B%2B_logo.png"
+      },
+      "decision": "pending",
+      "reason": "Remote quality not verified; do not approve from a local cache or original-size metadata alone."
+    },
+    {
+      "entry_id": "pokemon-go",
+      "title": "Pokémon GO",
+      "in_slice": false,
+      "match_url": "https://lh3.googleusercontent.com/RyQzi0GT1DQpUc6X62nhd1R7pSRXfU4X4J3rA8qTakzh5yeYW9OPKIWEyyHo0wOmy3yHS5lVzYj0snN8ZRWYKX_oRgGXRqGW4Z8W",
+      "source_page": "https://pokemongo.com/",
+      "original_dimensions_metadata": [
+        null,
+        null
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://lh3.googleusercontent.com/RyQzi0GT1DQpUc6X62nhd1R7pSRXfU4X4J3rA8qTakzh5yeYW9OPKIWEyyHo0wOmy3yHS5lVzYj0snN8ZRWYKX_oRgGXRqGW4Z8W",
+        "decoded_dimensions": [
+          300,
+          189
+        ],
+        "bytes": 79464,
+        "sha256": "1b4bf8045a042a9aac43c438b36d0f7b23455ae27cf3ba7157b60e8c074f385e",
+        "content_type": "image/png",
+        "native_long_edge": 300,
+        "research_only_file": "build\\research\\image-quality\\0a016ec671cae8de.png"
+      },
+      "decision": "remove",
+      "reason": "Actual original/downloaded image is below1600px long edge."
+    },
+    {
+      "entry_id": "dandara",
+      "title": "Dandara",
+      "in_slice": false,
+      "match_url": "https://is1-ssl.mzstatic.com/image/thumb/Features124/v4/b3/d2/7d/b3d27d0e-5edb-f751-9dd3-0d396e2d9522/pr_source.png/1200x630SCS.ApDPCS01.jpg",
+      "source_page": "https://apps.apple.com/br/iphone/story/id1450220912",
+      "original_dimensions_metadata": [
+        null,
+        null
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Features124/v4/b3/d2/7d/b3d27d0e-5edb-f751-9dd3-0d396e2d9522/pr_source.png/1200x630SCS.ApDPCS01.jpg",
+        "decoded_dimensions": [
+          1200,
+          630
+        ],
+        "bytes": 176394,
+        "sha256": "cdf1747954d76c20f3fbe3c4116b78a55dc7d239c33d34bdf62d4955cb573e25",
+        "content_type": "image/jpeg",
+        "native_long_edge": 1200,
+        "research_only_file": "build\\research\\image-quality\\5348a18c20114313.jpg"
+      },
+      "decision": "remove",
+      "reason": "Actual original/downloaded image is below1600px long edge."
+    },
+    {
+      "entry_id": "wikipedia-53082295",
+      "title": "Dauntless",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Dauntless-square-07.jpg/1280px-Dauntless-square-07.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Dauntless-square-07.jpg",
+      "original_dimensions_metadata": [
+        2025,
+        2700
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Dauntless-square-07.jpg/1920px-Dauntless-square-07.jpg",
+        "decoded_dimensions": [
+          1920,
+          2560
+        ],
+        "bytes": 398332,
+        "sha256": "d736e28455d783ae597bf2d7a538bd43ce6968078d93b91ba3e4a783b2ed46c2",
+        "content_type": "image/jpeg",
+        "native_long_edge": 2560,
+        "research_only_file": "build\\research\\image-quality\\0c8dae9543d88380.jpg"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "animal-crossing",
+      "title": "Animal Crossing: New Horizons",
+      "in_slice": false,
+      "match_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/sc6lt7.jpg",
+      "source_page": "https://www.igdb.com/games/animal-crossing-new-horizons",
+      "original_dimensions_metadata": [
+        null,
+        null
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://images.igdb.com/igdb/image/upload/t_original/sc6lt7.jpg",
+        "decoded_dimensions": [
+          1920,
+          1080
+        ],
+        "bytes": 404935,
+        "sha256": "00acb09961963eee0062926d6711c02bf437a266fdbfbc6c2c3a1adc62ffd2f7",
+        "content_type": "image/jpeg",
+        "native_long_edge": 1920,
+        "research_only_file": "build\\research\\image-quality\\deda583e1ec5b5fe.jpg"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "animal-crossing",
+      "title": "Animal Crossing: New Horizons",
+      "in_slice": false,
+      "match_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/sc6lt8.jpg",
+      "source_page": "https://www.igdb.com/games/animal-crossing-new-horizons",
+      "original_dimensions_metadata": [
+        null,
+        null
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://images.igdb.com/igdb/image/upload/t_original/sc6lt8.jpg",
+        "decoded_dimensions": [
+          1920,
+          1080
+        ],
+        "bytes": 300886,
+        "sha256": "d0dafc2ebc3a57388a85513c360c5e0e825bb9115c55bce7c6dfc1d265475cd0",
+        "content_type": "image/jpeg",
+        "native_long_edge": 1920,
+        "research_only_file": "build\\research\\image-quality\\5680122b0163f78b.jpg"
+      },
+      "decision": "replace",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "raji",
+      "title": "Raji: An Ancient Epic",
+      "in_slice": false,
+      "match_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730390/ss_b9ed0b12005654bcc8868aa3ab255ebf8e99c392.1920x1080.jpg?t=1763663874",
+      "source_page": "https://store.steampowered.com/app/730390/",
+      "original_dimensions_metadata": [
+        null,
+        null
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730390/ss_b9ed0b12005654bcc8868aa3ab255ebf8e99c392.1920x1080.jpg?t=1763663874",
+        "decoded_dimensions": [
+          1920,
+          1080
+        ],
+        "bytes": 561511,
+        "sha256": "6daf704710f9a83ac8c083f552c36c563e0e33ac8b68328f6a39433110e46b0d",
+        "content_type": "image/jpeg",
+        "native_long_edge": 1920,
+        "research_only_file": "build\\research\\image-quality\\85a96321a2338620.jpg"
+      },
+      "decision": "keep_verified",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "raji",
+      "title": "Raji: An Ancient Epic",
+      "in_slice": false,
+      "match_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730390/ss_f486f542cc04bfbdf1933c08c66c667f2830e1b4.1920x1080.jpg?t=1763663874",
+      "source_page": "https://store.steampowered.com/app/730390/",
+      "original_dimensions_metadata": [
+        null,
+        null
+      ],
+      "probe": {
+        "status": 200,
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730390/ss_f486f542cc04bfbdf1933c08c66c667f2830e1b4.1920x1080.jpg?t=1763663874",
+        "decoded_dimensions": [
+          1920,
+          1080
+        ],
+        "bytes": 445784,
+        "sha256": "45f1a5a41b869f3e3b6a0f51eab12dfade0c8548e0ae86be2027862b6b3002de",
+        "content_type": "image/jpeg",
+        "native_long_edge": 1920,
+        "research_only_file": "build\\research\\image-quality\\a314bbec21c0aac9.jpg"
+      },
+      "decision": "keep_verified",
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "wikipedia-77278623",
+      "title": "Anthology of the Killer",
+      "in_slice": false,
+      "match_url": "https://upload.wikimedia.org/wikipedia/commons/0/05/Aotk_logo.png",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Aotk_logo.png",
+      "original_dimensions_metadata": [
+        1020,
+        537
+      ],
+      "decision": "remove",
+      "reason": "Documented native source is below1600px long edge; no upscale or thumbnail enlargement is permitted."
+    },
+    {
+      "entry_id": "steam-deck",
+      "title": "Steam Deck",
+      "in_slice": false,
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Steam_Deck_%28front%29.png/330px-Steam_Deck_%28front%29.png",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Steam_Deck_(front).png",
+      "original_dimensions_metadata": [
+        1244,
+        462
+      ],
+      "decision": "remove",
+      "reason": "Documented native source is below1600px long edge; no upscale or thumbnail enlargement is permitted."
+    },
+    {
+      "entry_id": "wikipedia-69689754",
+      "title": "Black Skylands",
+      "in_slice": false,
+      "match_url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Black_skylands_logo_black.png",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Black_skylands_logo_black.png",
+      "original_dimensions_metadata": [
+        894,
+        388
+      ],
+      "decision": "remove",
+      "reason": "Documented native source is below1600px long edge; no upscale or thumbnail enlargement is permitted."
+    }
+  ],
+  "blocked_hosts": [
+    "upload.wikimedia.org"
+  ],
+  "final_override_coverage": {
+    "original_image_records": 139,
+    "override_records": 139,
+    "qualified_original_or_replacement_records": 77,
+    "excluded_native_too_small_or_wrong_game_records": 55,
+    "temporarily_excluded_pending_verification_records": 7,
+    "additional_verified_images": 3
+  },
+  "replacement_evidence": "content/expansion/image-quality-replacements-sources.json",
+  "important_corrections": [
+    "The2 existing Journey IGDB IDs show the1983 Bally Midway arcade game. Both removed;2 correct1920?1080 publisher screenshots of thatgamecompany Journey are supplied.",
+    "Galaga caption identifies a later2021 LCD arcade setup, not an original1981 cabinet.",
+    "Papers Please publisher originals are1280?720. A1920 CDN transform is not treated as a native source upgrade.",
+    "Explicit AI-upscaled Pajitnov file was rejected; actual2024 GDC original was used."
+  ]
+}

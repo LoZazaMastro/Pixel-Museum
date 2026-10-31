@@ -1,0 +1,641 @@
+{
+  "batch_id": "298-human-history",
+  "sources": [
+    {
+      "source_id": "earth_history",
+      "title": "The History of Earth Day, EARTHDAY.ORG",
+      "url": "https://www.earthday.org/history/",
+      "verification_scope": "Storia dell’organizzazione consultata: Nelson, Hayes, mobilitazione del 22 aprile 1970 e sviluppo internazionale."
+    },
+    {
+      "source_id": "earth_name",
+      "title": "The Roots of the Name: Remembering Julian Koenig, EARTHDAY.ORG",
+      "url": "https://www.earthday.org/earth-day-the-roots-of-the-name-remembering-julian-koenig/",
+      "verification_scope": "Ricordo diretto di Denis Hayes sulla proposta del nome di Julian Koenig, letto nell’estratto indicizzato."
+    },
+    {
+      "source_id": "earth_equinox",
+      "title": "The Other Earth Day, Living on Earth, intervista a John McConnell",
+      "url": "https://www.loe.org/shows/segments.html?programID=98-P13-00016&segmentID=3",
+      "verification_scope": "Intervista diretta: distinta la ricorrenza dell’equinozio da quella di aprile; non si presenta il 22 aprile come prima manifestazione in assoluto con quel nome."
+    },
+    {
+      "source_id": "intel1103_intro",
+      "title": "The Intel 1103 DRAM, Intel historical timeline",
+      "url": "https://timeline.intel.com/1970/the-intel-1103-dram",
+      "verification_scope": "Fonte del produttore: introduzione nell’ottobre 1970. L’anno 1971 di alcuni oggetti museali non sostituisce la commercializzazione."
+    },
+    {
+      "source_id": "intel1103_chm",
+      "title": "Semiconductors Compete with Magnetic Cores, Computer History Museum",
+      "url": "https://www.computerhistory.org/storageengine/semiconductors-compete-with-magnetic-cores/",
+      "verification_scope": "Ricostruzione tecnica consultata: DRAM anteriori al 1103 e ruolo commerciale del prodotto Intel. Eliminato il primato assoluto di prima DRAM disponibile."
+    },
+    {
+      "source_id": "intel1103_reed",
+      "title": "Who Invented the Intel 1103 DRAM Chip?, testimonianza di John Reed raccolta da Mary Bellis",
+      "url": "https://www.thoughtco.com/who-invented-the-intel-1103-dram-chip-4078677",
+      "verification_scope": "Letta la testimonianza diretta riportata nell’articolo, in particolare bassa resa iniziale e maschere fino alla revisione E. Non adottate le generalizzazioni tecniche del testo redazionale circostante."
+    },
+    {
+      "source_id": "intel1103_milestone",
+      "title": "A Milestone for the 1103, Intel historical timeline",
+      "url": "https://timeline.intel.com/1974/a-milestone-for-the-1103",
+      "verification_scope": "Pagina letta, contenuto finale: giugno 1974, 250.000º chip. Conservato il dato originale con esplicita attribuzione alla cronologia Intel. Nessuna inferenza da annunci che contano bit anziché chip."
+    },
+    {
+      "source_id": "floppy_ibm",
+      "title": "The floppy disk, IBM History",
+      "url": "https://www.ibm.com/history/floppy-disk",
+      "verification_scope": "Storia del produttore consultata: commercializzazione nel 1971, disco flessibile protetto e riduzione dei formati. Non importate le digressioni su Apple II, anni e capacità estranee alla voce."
+    },
+    {
+      "source_id": "floppy_readonly",
+      "title": "A box full of floppies, IBM Support",
+      "url": "https://www.ibm.com/support/pages/box-full-floppies",
+      "verification_scope": "Ricordo tecnico del produttore: IBM scriveva i supporti originari, le unità presso i clienti erano di sola lettura. Le successive funzioni di scrittura sono distinte."
+    },
+    {
+      "source_id": "intel4004_intro",
+      "title": "The First Programmable Microprocessor: The 4004, Intel historical timeline",
+      "url": "https://timeline.intel.com/1971/the-first-programmable-microprocessor%3A-the-4004",
+      "verification_scope": "Il 15 novembre 1971 è l’annuncio della disponibilità commerciale generale, non il giorno di invenzione del microprocessore."
+    },
+    {
+      "source_id": "sgt_chm",
+      "title": "Silicon Gate Technology Developed for ICs, Computer History Museum",
+      "url": "https://www.computerhistory.org/siliconengine/silicon-gate-technology-developed-for-ics/",
+      "verification_scope": "Confronto tecnico con MOS a gate metallico: area circa dimezzata, velocità da tre a cinque volte superiore. Esempi commerciali SGT anteriori al 4004 impediscono di definirlo primo caso significativo assoluto di LSI."
+    },
+    {
+      "source_id": "munich_ioc",
+      "title": "The Olympic Movement, Olympic Studies Centre",
+      "url": "https://library.olympics.com/digitalCollection/DigitalCollectionAttachmentDownloadHandler.ashx?documentId=3703315&parentDocumentId=172552&skipCopyright=true&skipWatermark=true",
+      "verification_scope": "Estratto del documento IOC letto: 26 agosto–11 settembre 1972, emblema, Waldi e uccisione degli undici membri della squadra israeliana."
+    },
+    {
+      "source_id": "munich_design",
+      "title": "Olympia 1972, Deutsches Patent- und Markenamt",
+      "url": "https://www.dpma.eu/english/our_office/publications/background/sports-leisure-ip/olympia1972/index.html",
+      "verification_scope": "Fonte istituzionale sul programma grafico e sui suoi autori. Aicher dirige il progetto complessivo; Waldi è disegnato dalla collaboratrice Elena Winschermann. Non assegnata ad Aicher l’esecuzione personale di ogni elemento."
+    },
+    {
+      "source_id": "munich_museum",
+      "title": "Munich 1972, Waldi, the Games’ mascot, Olympic Museum",
+      "url": "https://olympic-museum-artefacts.zetcom.net/en/collection/item/163840/",
+      "verification_scope": "Scheda museale consultata nell’estratto: direzione del programma visivo di Aicher, palette e mascotte."
+    },
+    {
+      "source_id": "c_ritchie",
+      "title": "The Development of the C Language, Dennis M. Ritchie",
+      "url": "https://csapp.cs.cmu.edu/public/docs/chistory.html",
+      "verification_scope": "Testo originale dell’autore, ristampa elettronica presso Carnegie Mellon, letto: sviluppo 1969–1973 con periodo più creativo nel 1972, kernel riscritto nel 1973, portabilità maturata successivamente, manuale scritto con Brian Kernighan e diffusione negli anni Ottanta."
+    },
+    {
+      "source_id": "godfather_afi",
+      "title": "The Godfather, AFI Catalog",
+      "url": "https://catalog.afi.com/Catalog/moviedetails/54023",
+      "verification_scope": "Scheda e dati consultati: anteprima mondiale 14 marzo 1972, apertura a New York il 15, uscita più ampia il 24; lavorazione a New York e in Sicilia, cast, sceneggiatura e musica. La proposta usa l’apertura commerciale, non il copyright o la première."
+    },
+    {
+      "source_id": "watergate_nara",
+      "title": "Watergate: A Chronology, National Archives",
+      "url": "https://www.archives.gov/education/lessons/watergate-constitution/chronology.html",
+      "verification_scope": "Cronologia istituzionale letta: arresti 17 giugno 1972, processo, comitato del Senato, indagine e articoli della commissione della Camera, dimissioni 9 agosto 1974. Non si afferma che la Camera avesse già deliberato l’impeachment."
+    },
+    {
+      "source_id": "watergate_ford",
+      "title": "The Watergate Files, Gerald R. Ford Presidential Library and Museum",
+      "url": "https://www.fordlibrarymuseum.gov/exhibits/watergate-files",
+      "verification_scope": "Documentazione archivistica consultata negli estratti: ostruzione e copertura, discorso dell’8 agosto e dimissioni effettive il 9."
+    },
+    {
+      "source_id": "oil_state",
+      "title": "Oil Embargo, 1973–1974, Office of the Historian",
+      "url": "https://history.state.gov/milestones/1969-1976/oil-embargo",
+      "verification_scope": "Ricostruzione istituzionale letta: destinatari dell’embargo distinti dagli altri paesi colpiti dalla crisi e dalle restrizioni; effetti su Europa e Giappone."
+    },
+    {
+      "source_id": "oil_fed",
+      "title": "Oil Shock of 1973–74, Federal Reserve History",
+      "url": "https://www.federalreservehistory.org/essays/oil-shock-of-1973-74",
+      "verification_scope": "Confermati valori approssimati tre/dodici dollari, tagli alla produzione e cessazione dell’embargo contro gli Stati Uniti nel marzo 1974. La data di fine non viene estesa a ogni misura di ogni esportatore."
+    },
+    {
+      "source_id": "oil_japan",
+      "title": "Diplomatic Bluebook 1974, Ministry of Foreign Affairs of Japan",
+      "url": "https://www.mofa.go.jp/policy/other/bluebook/1974/1974-1.htm",
+      "verification_scope": "Documento governativo coevo consultato: restrizioni produttive e aumento dei prezzi, ripercussioni internazionali, fine dell’embargo statunitense nel marzo 1974. Non prova un embargo formale identico sul Giappone."
+    },
+    {
+      "source_id": "amarcord_museum",
+      "title": "Amarcord, Fellini Museum",
+      "url": "https://fellinimuseum.it/amarcord/",
+      "verification_scope": "Fonte fornita, pagina letta: anno, autori, interpreti, fotografia e ambientazione. Il 15 dicembre 1973 è visto di censura, non uscita; non importate la grafia tronca del nome di Rota e la data di premiazione fuori tema."
+    },
+    {
+      "source_id": "amarcord_cini",
+      "title": "Amarcord, Fondazione Giorgio Cini, Fondo Nino Rota",
+      "url": "https://archivi.cini.it/istitutomusica/detail/IT-MUS-ST0009-000419/amarcord-2.html",
+      "verification_scope": "Fonte fornita, scheda archivistica letta: musica di Nino Rota. L’oggetto è un disco Polydor francese del 1974; quel 1974 non sostituisce l’anno del film."
+    },
+    {
+      "source_id": "amarcord_cineteca",
+      "title": "Sul set di Amarcord, Cineteca di Bologna",
+      "url": "https://cinetecadibologna.it/distribuzione/approfondimento/sul-set-di-amarcord-amarcord/",
+      "verification_scope": "Estratto di Tullio Kezich pubblicato dalla cineteca: uscita italiana 18 dicembre 1973. Non adottato il 1974 indicato nello stesso testo per l’Oscar, estraneo al materiale e incompatibile con la cerimonia 1975."
+    }
+  ],
+  "decisions": [
+    {
+      "target_id": "history-1970-earth-day",
+      "problem": "La formula prima Earth Day in assoluto confonde la ricorrenza di aprile e la separata proposta di McConnell.",
+      "conclusion": "Precisato che il 22 aprile 1970 è la prima edizione della ricorrenza di aprile. Conservati Nelson, Hayes, Koenig, proposta di McConnell e diffusione internazionale.",
+      "source_ids": [
+        "earth_history",
+        "earth_name",
+        "earth_equinox"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1970-intel-1103",
+      "problem": "Primato assoluto DRAM, resa di produzione e quantità cumulativa richiedono perimetri distinti.",
+      "conclusion": "Sostituito primo disponibile con uno dei primi successi commerciali. Conservati ottobre 1970, quinta revisione nel 1971 e 250.000º pezzo nel giugno 1974, quest’ultimo attribuito espressamente alla cronologia Intel. Non trasformate le cifre in bit di una pubblicità in quantità di chip.",
+      "source_ids": [
+        "intel1103_intro",
+        "intel1103_chm",
+        "intel1103_reed",
+        "intel1103_milestone"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1971-floppy-disk",
+      "problem": "Il testo estende lettura e scrittura alle prime unità IBM del 1971.",
+      "conclusion": "Distinte le prime unità clienti di sola lettura dai formati successivi anche scrivibili. Conservati supporto protettivo, tre formati, coesistenza delle unità, anni Novanta, distribuzione e scambio.",
+      "source_ids": [
+        "floppy_ibm",
+        "floppy_readonly"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1971-intel-4004",
+      "problem": "Primato LSI e rapporto prestazioni senza tecnologia di confronto; disponibilità confusa con invenzione.",
+      "conclusion": "Precisata la disponibilità commerciale del 15 novembre 1971. Il 4004 diventa importante applicazione, non primo LSI in assoluto; confronto riferito ai MOS a gate metallico, velocità fino a cinque volte. Prezzo di 60 dollari e stima equivalente 477 dollari 2025 conservati come nel materiale, senza affermare un ricalcolo.",
+      "source_ids": [
+        "intel4004_intro",
+        "sgt_chm"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1972-1972-summer-olympics",
+      "problem": "Direzione grafica non equivale a esecuzione personale di mascotte, emblema e abiti.",
+      "conclusion": "Date e undici vittime della delegazione confermate. Aicher presentato come responsabile del programma visivo; mantenuti emblema blu, abiti azzurri, Waldi, contesto democratico e motto.",
+      "source_ids": [
+        "munich_ioc",
+        "munich_design",
+        "munich_museum"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1972-c-programming-language",
+      "problem": "C non nasce interamente in un unico anno e la portabilità non era il solo scopo iniziale.",
+      "conclusion": "1972 resta anno centrale documentato, entro uno sviluppo dei primi anni Settanta. Conservati B, Unix, kernel, strumenti, controllo, portabilità, campi applicativi e libro; nessuna data commerciale fittizia.",
+      "source_ids": [
+        "c_ritchie"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1972-the-godfather",
+      "problem": "Distinguere prima, apertura commerciale e uscita allargata del film.",
+      "conclusion": "La proposta di data usa New York 15 marzo 1972. Conservati svolta di Michael, Puzo/Coppola, Brando/Pacino, riprese New York/Sicilia, Rota e Carmine Coppola.",
+      "source_ids": [
+        "godfather_afi"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1972-watergate-scandal",
+      "problem": "L’avvio della procedura non implica un voto definitivo di impeachment prima delle dimissioni.",
+      "conclusion": "Resta l’evento esplicito del 17 giugno 1972, non una biografia di Nixon. Conservati giornalisti, fonte riservata, copertura, prove e Senato; formulazione limitata all’avvio del procedimento e dimissioni nell’agosto 1974.",
+      "source_ids": [
+        "watergate_nara",
+        "watergate_ford"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1973-1973-oil-crisis",
+      "problem": "Il Giappone non va equiparato senza prova ai destinatari dell’embargo formale; fine generale troppo ampia.",
+      "conclusion": "Distinti paesi destinatari dell’embargo e Giappone colpito da forniture e prezzi. La cessazione di marzo 1974 è riferita agli Stati Uniti. Conservati Arabia Saudita, guerra, mese iniziale, tre/dodici dollari e conseguenze internazionali.",
+      "source_ids": [
+        "oil_state",
+        "oil_fed",
+        "oil_japan"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1973-amarcord",
+      "problem": "Visto di censura, uscita del film e disco d’archivio hanno date e oggetti diversi.",
+      "conclusion": "Uscita italiana 18 dicembre 1973 documentata. Tutte e tre le card conservano contenuto e funzione: stagioni e provincia, incontri ricorrenti e sentimenti, coercizione fascista, fotografia e musica, natura del ricordo. Nessuna data del disco o della censura sostituisce la release.",
+      "source_ids": [
+        "amarcord_museum",
+        "amarcord_cini",
+        "amarcord_cineteca"
+      ],
+      "text_applied": true
+    }
+  ],
+  "metadata_proposals": [
+    {
+      "target_id": "history-1970-earth-day",
+      "field": "timeline_date",
+      "original": {
+        "year": 1970,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1970,
+        "month": 4,
+        "day": 22,
+        "precision": "day",
+        "event_semantics": "Prima edizione della ricorrenza Earth Day di aprile",
+        "region": "Stati Uniti"
+      },
+      "source_ids": [
+        "earth_history"
+      ],
+      "reason": "Proposta documentata separata; nessuna modifica al catalogo o ai file originali."
+    },
+    {
+      "target_id": "history-1970-intel-1103",
+      "field": "timeline_date",
+      "original": {
+        "year": 1970,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1970,
+        "month": 10,
+        "day": 0,
+        "precision": "month",
+        "event_semantics": "Introduzione commerciale del chip Intel 1103",
+        "region": "Stati Uniti"
+      },
+      "source_ids": [
+        "intel1103_intro"
+      ],
+      "reason": "Proposta documentata separata; nessuna modifica al catalogo o ai file originali."
+    },
+    {
+      "target_id": "history-1971-intel-4004",
+      "field": "timeline_date",
+      "original": {
+        "year": 1971,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1971,
+        "month": 11,
+        "day": 15,
+        "precision": "day",
+        "event_semantics": "Disponibilità commerciale generale del processore",
+        "region": "Stati Uniti"
+      },
+      "source_ids": [
+        "intel4004_intro"
+      ],
+      "reason": "Proposta documentata separata; nessuna modifica al catalogo o ai file originali."
+    },
+    {
+      "target_id": "history-1972-1972-summer-olympics",
+      "field": "timeline_date",
+      "original": {
+        "year": 1972,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1972,
+        "month": 8,
+        "day": 26,
+        "precision": "day",
+        "event_semantics": "Apertura dei Giochi della XX Olimpiade",
+        "region": "Germania Ovest, Monaco"
+      },
+      "source_ids": [
+        "munich_ioc"
+      ],
+      "reason": "Proposta documentata separata; nessuna modifica al catalogo o ai file originali."
+    },
+    {
+      "target_id": "history-1972-the-godfather",
+      "field": "timeline_date",
+      "original": {
+        "year": 1972,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1972,
+        "month": 3,
+        "day": 15,
+        "precision": "day",
+        "event_semantics": "Prima apertura cinematografica commerciale documentata",
+        "region": "Stati Uniti, New York"
+      },
+      "source_ids": [
+        "godfather_afi"
+      ],
+      "reason": "Proposta documentata separata; nessuna modifica al catalogo o ai file originali."
+    },
+    {
+      "target_id": "history-1972-watergate-scandal",
+      "field": "timeline_date",
+      "original": {
+        "year": 1972,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1972,
+        "month": 6,
+        "day": 17,
+        "precision": "day",
+        "event_semantics": "Arresto degli autori dell’irruzione al Watergate",
+        "region": "Stati Uniti, Washington"
+      },
+      "source_ids": [
+        "watergate_nara"
+      ],
+      "reason": "Proposta documentata separata; nessuna modifica al catalogo o ai file originali."
+    },
+    {
+      "target_id": "history-1973-1973-oil-crisis",
+      "field": "timeline_date",
+      "original": {
+        "year": 1973,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1973,
+        "month": 10,
+        "day": 0,
+        "precision": "month",
+        "event_semantics": "Avvio dell’embargo e della crisi petrolifera",
+        "region": "Internazionale"
+      },
+      "source_ids": [
+        "oil_state",
+        "oil_fed"
+      ],
+      "reason": "Proposta documentata separata; nessuna modifica al catalogo o ai file originali."
+    },
+    {
+      "target_id": "history-1973-amarcord",
+      "field": "timeline_date",
+      "original": {
+        "year": 1973,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1973,
+        "month": 12,
+        "day": 18,
+        "precision": "day",
+        "event_semantics": "Uscita cinematografica del film",
+        "region": "Italia"
+      },
+      "source_ids": [
+        "amarcord_cineteca"
+      ],
+      "reason": "Proposta documentata separata; nessuna modifica al catalogo o ai file originali."
+    }
+  ],
+  "editorial_review": {
+    "fidelity": "Rilette le dodici card rispetto all’INPUT, mantenendo quantità informative, nomi, dati e relazioni. Le modifiche fattuali sono motivate nei dieci riscontri; nessuna card aggiunta o soppressa.",
+    "language_review": "Inglese scritto prima di IT/FR/DE/ES. Incipit identificativi, titoli specifici, sintassi autonoma e paragrafi brevi nella card tecnica più lunga. Corretta una costruzione artificiosa nell’italiano di C.",
+    "dates": "Opere e dispositivi secondo uscita o disponibilità commerciale; ricorrenza, Olimpiadi, Watergate e crisi petrolifera restano eventi espliciti. C e floppy mantengono il solo anno quando la fonte non sostiene un giorno di prima disponibilità.",
+    "rights": "Riferimenti, attribuzioni e licenze originali conservati integralmente in INPUT. Nessuna citazione estesa; fonti di ricerca registrate con perimetro effettivo di lettura.",
+    "english_written_first": true,
+    "languages": [
+      "en",
+      "it",
+      "fr",
+      "de",
+      "es"
+    ],
+    "entry_count": 10,
+    "card_count_per_language": 12,
+    "reviewed_at": "2026-10-30T05:50:57.082633+00:00",
+    "english_summary_word_range": [
+      31,
+      38
+    ],
+    "structural_checks": "Schema, ID, ordine, numero di card e cinque lingue verificati dal validatore. Tutti i titoli presenti; nessun HTML o Markdown nei testi."
+  },
+  "status": "completed",
+  "validation": {
+    "valid": true,
+    "batch_id": "298-human-history",
+    "completed": true,
+    "entry_count": 10,
+    "card_count_per_language": 12,
+    "language_count": 5,
+    "translated_card_count": 60,
+    "entry_card_counts": {
+      "history-1970-earth-day": 1,
+      "history-1970-intel-1103": 1,
+      "history-1971-floppy-disk": 1,
+      "history-1971-intel-4004": 1,
+      "history-1972-1972-summer-olympics": 1,
+      "history-1972-c-programming-language": 1,
+      "history-1972-the-godfather": 1,
+      "history-1972-watergate-scandal": 1,
+      "history-1973-1973-oil-crisis": 1,
+      "history-1973-amarcord": 3
+    },
+    "issue_counts": {
+      "history-1970-earth-day": 0,
+      "history-1970-intel-1103": 0,
+      "history-1971-floppy-disk": 0,
+      "history-1971-intel-4004": 0,
+      "history-1972-1972-summer-olympics": 0,
+      "history-1972-c-programming-language": 0,
+      "history-1972-the-godfather": 0,
+      "history-1972-watergate-scandal": 0,
+      "history-1973-1973-oil-crisis": 0,
+      "history-1973-amarcord": 0
+    },
+    "summary_checks": [
+      {
+        "entry_id": "history-1970-earth-day",
+        "feature_id": null,
+        "english_summary_words": 31
+      },
+      {
+        "entry_id": "history-1970-intel-1103",
+        "feature_id": null,
+        "english_summary_words": 34
+      },
+      {
+        "entry_id": "history-1971-floppy-disk",
+        "feature_id": null,
+        "english_summary_words": 34
+      },
+      {
+        "entry_id": "history-1971-intel-4004",
+        "feature_id": null,
+        "english_summary_words": 34
+      },
+      {
+        "entry_id": "history-1972-1972-summer-olympics",
+        "feature_id": null,
+        "english_summary_words": 34
+      },
+      {
+        "entry_id": "history-1972-c-programming-language",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "history-1972-the-godfather",
+        "feature_id": null,
+        "english_summary_words": 34
+      },
+      {
+        "entry_id": "history-1972-watergate-scandal",
+        "feature_id": null,
+        "english_summary_words": 33
+      },
+      {
+        "entry_id": "history-1973-1973-oil-crisis",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "history-1973-amarcord",
+        "feature_id": null,
+        "english_summary_words": 34
+      }
+    ],
+    "editorial_review": [
+      "history-1971-floppy-disk/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1971-floppy-disk/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1971-floppy-disk/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1972-1972-summer-olympics/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1972-1972-summer-olympics/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1972-1972-summer-olympics/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1972-1972-summer-olympics/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1972-watergate-scandal/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1972-watergate-scandal/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1972-watergate-scandal/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1972-watergate-scandal/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1973-1973-oil-crisis/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1973-1973-oil-crisis/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1973-1973-oil-crisis/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1973-1973-oil-crisis/main/es: main title changed; check that this is a descriptive title and not an altered official name"
+    ],
+    "failures": []
+  },
+  "output_sha256": "36bfd7f51ac270b16967c71086c55b45be89f39c80d191111b093135aeed0e39",
+  "expansion_assessments": [
+    {
+      "target_id": "history-1970-earth-day",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1970-intel-1103",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1971-floppy-disk",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1971-intel-4004",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1972-1972-summer-olympics",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1972-c-programming-language",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1972-the-godfather",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1972-watergate-scandal",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1973-1973-oil-crisis",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1973-amarcord",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "schema_version": 1,
+  "locale": "de",
+  "source_language": "en",
+  "publication_status": "validated",
+  "translation_method": "Complete source-bound translations independently read clause-by-clause, including exact-source reused units; explicit semantic repairs retained.",
+  "independent_review": "content/editorial/early-complete-batch-104-de-translation-review.json",
+  "entries": [
+    {
+      "entry_id": "workbook-05-14-fire-emblem-genealogy-of-the-holy-war",
+      "source": {
+        "title": "Fire Emblem: Genealogy of the Holy War",
+        "subtitle": "Fire Emblem Turns a War into Inheritance",
+        "summary": "Nintendo released Fire Emblem: Genealogy of the Holy War for Super Famicom in Japan on May 14, 1996.",
+        "body": [
+          "Nintendo released Fire Emblem: Genealogy of the Holy War for Super Famicom in Japan on May 14, 1996. Intelligent Systems expanded map scale and built the campaign around two generations of characters. Relationships, marriages and inheritance are not only narrative elements. They determine who will fight in the second half and which abilities may be passed down. The game therefore connects genealogy and strategy, making the passage of time visible in the rules. A personal bond can become a military consequence many chapters later.",
+          "Genealogy of the Holy War uses maps much larger than many earlier entries in the series. Castles, roads and groups of units form fronts that can require long movement, and capturing a position changes the flow of battle. Scale creates a political feeling: the player is not clearing one room or isolated fortress but crossing entire regions. Cavalry, formation and movement planning therefore matter more. Terrain is not only a tactical obstacle; it becomes a visible measure of the war being told.",
+          "Relationships among first-generation characters can lead to the children who fight in the second half. Equipment, statistics and skills are influenced by parents, turning personal affinity into strategic planning. The system makes the future a constant presence. Choosing who fights near whom is not only about the current turn because it can alter a team that does not yet exist. Fire Emblem therefore joins melodrama and optimization without separating them: emotional attachment and calculation share the same mechanism.",
+          "The two-generation structure allows the game to make a narrative rupture unusual for the series at the time. After investing time, equipment and affection in the first army, the player must reinterpret the world through children and the consequences left by their parents. The rules remain recognizable, but their emotional meaning changes. An inherited weapon or transmitted trait functions as concrete memory. The genealogy system therefore makes the history of the war persist inside the numbers used to fight it."
+        ],
+        "story_headings": [
+          "Fire Emblem Turns a War into Inheritance",
+          "Maps Large Enough to Feel Like Campaigns",
+          "Love, Skills and Inheritance",
+          "Tragedy Changes the Meaning of the Rules"
+        ]
+      },
+      "source_fields_sha256": "67c33794619a1981d7ace7b7a7b0f7a1d024bfc43d2a175e9e07ab9217532a67",
+      "translation": {
+        "title": "Fire Emblem: Genealogy of the Holy War",
+        "subtitle": "Fire Emblem macht einen Krieg zum Erbe",
+        "summary": "Nintendo veröffentlichte Fire Emblem: Genealogy of the Holy War am 14. Mai 1996 in Japan für Super Famicom.",
+        "body": [
+          "Nintendo veröffentlichte Fire Emblem: Genealogy of the Holy War am 14. Mai 1996 in Japan für Super Famicom. Intelligent Systems vergrößerte die Karten und baute die Kampagne um zwei Generationen von Figuren auf. Beziehungen, Ehen und Vererbung sind nicht nur erzählerische Elemente. Sie bestimmen, wer in der zweiten Hälfte kämpft und welche Fähigkeiten weitergegeben werden können. Das Spiel verbindet damit Genealogie und Strategie und macht den Zeitverlauf in den Regeln sichtbar. Eine persönliche Bindung kann viele Kapitel später militärische Folgen haben.",
+          "Genealogy of the Holy War nutzt deutlich größere Karten als viele frühere Teile der Reihe. Burgen, Straßen und Einheitengruppen bilden Fronten, die lange Bewegungen erfordern können; die Einnahme einer Stellung verändert den Schlachtverlauf. Die Größenordnung erzeugt ein politisches Gefühl: Der Spieler räumt keinen einzelnen Raum oder eine isolierte Festung, sondern durchquert ganze Regionen. Kavallerie, Formation und Bewegungsplanung werden dadurch wichtiger. Gelände ist nicht nur ein taktisches Hindernis, sondern ein sichtbarer Maßstab des erzählten Krieges.",
+          "Aus Beziehungen zwischen Figuren der ersten Generation können die Kinder hervorgehen, die in der zweiten Hälfte kämpfen. Ausrüstung, Werte und Fähigkeiten werden von den Eltern beeinflusst, wodurch persönliche Zuneigung zur strategischen Planung wird. Das System macht die Zukunft zu einer ständigen Gegenwart. Wer neben wem kämpft, ist nicht nur für die aktuelle Runde wichtig, denn diese Entscheidung kann eine noch nicht existierende Gruppe verändern. Fire Emblem verbindet damit Melodram und Optimierung, statt sie zu trennen: Emotionale Bindung und Berechnung beruhen auf demselben Mechanismus.",
+          "Durch die Struktur mit zwei Generationen kann das Spiel einen erzählerischen Bruch vollziehen, der damals für die Reihe ungewöhnlich war. Nachdem der Spieler Zeit, Ausrüstung und Zuneigung in die erste Armee investiert hat, muss er die Welt durch die Kinder und die von ihren Eltern hinterlassenen Folgen neu deuten. Die Regeln bleiben erkennbar, doch ihre emotionale Bedeutung verändert sich. Eine geerbte Waffe oder ein weitergegebenes Merkmal dienen als greifbare Erinnerung. Das Genealogiesystem lässt so die Geschichte des Krieges in den Zahlen fortbestehen, mit denen er geführt wird."
+        ],
+        "story_headings": [
+          "Fire Emblem macht einen Krieg zum Erbe",
+          "Karten, die groß genug für ganze Feldzüge wirken",
+          "Liebe, Fähigkeiten und Vererbung",
+          "Tragödie verändert die Bedeutung der Regeln"
+        ]
+      },
+      "translation_sha256": "2b687f135a711bfae70289b0724e0371533a5162671bb255ffff3220f219aa0d"
+    },
+    {
+      "entry_id": "workbook-06-22-quake",
+      "source": {
+        "title": "Quake",
+        "subtitle": "Quake Makes 3D Space Fast Enough to Become a Language",
+        "summary": "The world was built before it ran.",
+        "body": [
+          "Quake's fully three-dimensional environments required more than replacing flat enemies with models. Programmer Michael Abrash describes a world divided into spatial regions, with tools calculating which regions might be visible from each other. During play, the engine could use that prepared information to avoid considering much of the hidden level. John Carmack's approach spent work before the game ran in order to save work during a frame. The resulting speed depended on how the level was organised as well as on the drawing code itself.",
+          "Abrash also records the cost of that decision for the people building maps. Calculating visibility could take long enough to interrupt a designer's iteration, even on powerful equipment. Near release, Carmack tried a different visibility method that promised tighter results. It improved some scenes but made the worst cases slower, so it did not replace the shipping approach. The account describes engineering as comparison rather than an inevitable breakthrough: the attractive alternative still had to survive the scenes in which performance was already most difficult.",
+          "A later source release made these systems available to study and modify. In id Software's README, Carmack explains that the engine code is released under the GNU General Public License, with source-sharing obligations for distributed modifications. He separately states that the original game data retains its existing copyright and licence. The distinction matters: opening the program did not turn every monster, texture and level into unrestricted material. The release also credits Dave Kirsh and Robert Duffy for preparing the code, making visible another stage of work behind its availability.",
+          "On June 22, 1996 id Software brought Quake to the public on PC. The leap is not only about polygons: levels, monsters, projectiles, viewpoint and movement finally share a continuous three-dimensional space. From that foundation come a new way of reading environments, physics that players can exploit, a multiplayer scene and a culture of mods and derived engines. Quake becomes infrastructure as much as a game.",
+          "In Quake's single-player mode, players explore levels, facing monsters and finding secret areas before reaching an exit. Switches or keys open doors, and reaching the exit takes the player to the next level. Before accessing an episode, there is a set of three pathways with easy, medium, and hard skill levels. The fourth skill level, \"Nightmare\", was described by the game manual to be \"so bad that the entry is hidden, so people won't wander in by accident\". The game has no dedicated \"use\" key; players instead physically push against objects to activate them.",
+          "The gameplay in Quake was considered unique for its time because of the different ways the player can maneuver through the game. The player can start and stop moving suddenly, jump unnaturally high, and change direction while mid-air. Bunnyhopping or strafe-jumping grant faster movement, while rocket jumping enables the player to reach otherwise-inaccessible areas at the cost of some health. Many of these non-realistic behaviors contribute to Quake's appeal. Multiplayer Quake was one of the first games singled out as a form of electronic sport. A notable participant was Dennis Fong, who won John Carmack's Ferrari 328 at the Microsoft-sponsored Red Annihilation tournament in 1997.",
+          "Quake's music and sound design was done by Trent Reznor and Nine Inch Nails, using ambient soundscapes and synthesized drones to create atmospheric tracks. In an interview, Reznor remarked that the Quake soundtrack \"is not music[;] it's textures and ambiences and whirling machine noises and stuff. We tried to make the most sinister, depressive, scary, frightening kind of thing... It's been fun.\" The game includes an homage to Reznor in the form of ammo boxes of nails for the Nailgun and Super Nailgun decorated with the Nine Inch Nails logo."
+        ],
+        "story_headings": [
+          "Deciding what the player might see",
+          "Speed moves work into the tools",
+          "The program becomes inspectable",
+          "Quake Makes 3D Space Fast Enough to Become a Language",
+          "Finding the exit through a three-dimensional level",
+          "Strafe-jumping and rocket-jumping",
+          "Trent Reznor and the sound of Quake"
+        ]
+      },
+      "source_fields_sha256": "871d20e1c0fb15841045423ab2975a51b743a867994222b196c7619f1a42ea18",
+      "translation": {
+        "title": "Quake",
+        "subtitle": "Quake macht den 3D-Raum schnell genug, um zur Sprache zu werden",
+        "summary": "Die Welt wurde gebaut, bevor sie lief.",
+        "body": [
+          "Quakes vollständig dreidimensionale Umgebungen erforderten mehr, als flache Gegner durch Modelle zu ersetzen. Programmierer Michael Abrash beschreibt eine Welt, die in räumliche Bereiche aufgeteilt ist. Werkzeuge berechneten, welche Bereiche voneinander aus sichtbar sein könnten. Während des Spiels konnte die Engine diese vorbereiteten Informationen nutzen, um große Teile des verdeckten Levels nicht berücksichtigen zu müssen. John Carmacks Ansatz erledigte Arbeit vor dem Spielstart, um sie während eines Einzelbilds einzusparen. Die erreichte Geschwindigkeit hing sowohl vom Aufbau des Levels als auch vom eigentlichen Zeichencode ab.",
+          "Abrash hält auch die Kosten dieser Entscheidung für die Ersteller von Karten fest. Die Sichtbarkeitsberechnung konnte selbst auf leistungsfähigen Geräten so lange dauern, dass sie den Überarbeitungszyklus eines Designers unterbrach. Kurz vor der Veröffentlichung erprobte Carmack eine andere Methode, die genauere Ergebnisse versprach. Sie verbesserte manche Szenen, verlangsamte aber die ungünstigsten Fälle und ersetzte deshalb nicht das Verfahren der ausgelieferten Fassung. Der Bericht beschreibt Ingenieursarbeit als Vergleich statt als zwangsläufigen Durchbruch: Auch die reizvolle Alternative musste sich in den Szenen bewähren, in denen die Leistung bereits die größten Schwierigkeiten bereitete.",
+          "Eine spätere Veröffentlichung des Quellcodes machte diese Systeme zugänglich für Untersuchung und Veränderung. In id Softwares README erklärt Carmack, dass der Enginecode unter der GNU General Public License veröffentlicht wird, die bei verbreiteten Änderungen die Weitergabe des Quellcodes verlangt. Davon getrennt hält er fest, dass die ursprünglichen Spieldaten ihr bestehendes Urheberrecht und ihre Lizenz behalten. Die Unterscheidung ist wichtig: Die Öffnung des Programms machte nicht jedes Monster, jede Textur und jeden Level zu uneingeschränkt nutzbarem Material. Die Veröffentlichung würdigt auch Dave Kirsh und Robert Duffy für die Vorbereitung des Codes und zeigt damit einen weiteren Arbeitsschritt hinter dessen Verfügbarkeit.",
+          "Am 22. Juni 1996 machte id Software Quake auf dem PC öffentlich zugänglich. Der Sprung betrifft nicht nur Polygone: Level, Monster, Geschosse, Blickpunkt und Bewegung teilen endlich einen durchgehenden dreidimensionalen Raum. Daraus entstehen ein neuer Umgang mit Umgebungen, von Spielern nutzbare Physik, eine Mehrspielerszene sowie eine Kultur von Mods und abgeleiteten Engines. Quake wird ebenso zur Infrastruktur wie zum Spiel.",
+          "Im Einzelspielermodus von Quake erkunden Spieler Level, bekämpfen Monster und finden geheime Bereiche, bevor sie einen Ausgang erreichen. Schalter oder Schlüssel öffnen Türen, und der Ausgang führt zum nächsten Level. Vor dem Zugang zu einer Episode stehen drei Wege für leichte, mittlere und schwere Schwierigkeit bereit. Die vierte Stufe «Nightmare» beschreibt das Handbuch als «so schlimm, dass ihr Eingang versteckt ist, damit niemand versehentlich hineinläuft». Das Spiel hat keine eigene Taste zum Benutzen von Gegenständen. Stattdessen steuern Spieler ihre Figur gegen die Gegenstände, um sie zu aktivieren.",
+          "Quakes Spielweise galt damals wegen der verschiedenen Bewegungsmöglichkeiten als einzigartig. Der Spieler kann plötzlich anlaufen und anhalten, unnatürlich hoch springen und mitten in der Luft die Richtung wechseln. Bunnyhopping oder Strafe-Jumping ermöglichen schnellere Bewegung, während Rocket-Jumping ansonsten unerreichbare Bereiche auf Kosten eines Teils der Gesundheit zugänglich macht. Viele dieser unrealistischen Verhaltensweisen tragen zu Quakes Reiz bei. Mehrspieler-Quake war eines der ersten Spiele, die ausdrücklich als elektronischer Sport wahrgenommen wurden. Ein bekannter Teilnehmer war Dennis Fong, der 1997 bei dem von Microsoft gesponserten Turnier Red Annihilation John Carmacks Ferrari 328 gewann.",
+          "Trent Reznor und Nine Inch Nails gestalteten Quakes Musik und Sounddesign. Mit atmosphärischen Klanglandschaften und synthetisierten Dauertönen schufen sie stimmungsvolle Stücke. In einem Interview sagte Reznor über den Soundtrack: «Das ist keine Musik, sondern Texturen und Atmosphären, wirbelnde Maschinengeräusche und so etwas. Wir versuchten, etwas möglichst Unheilvolles, Depressives, Gruseliges und Beängstigendes zu machen... Es hat Spaß gemacht.» Als Hommage an Reznor sind die Nagelmunitionskisten für Nailgun und Super Nailgun mit dem Logo von Nine Inch Nails versehen."
+        ],
+        "story_headings": [
+          "Entscheiden, was der Spieler sehen könnte",
+          "Geschwindigkeit verlagert Arbeit in die Werkzeuge",
+          "Das Programm wird untersuchbar",
+          "Quake macht den 3D-Raum schnell genug, um zur Sprache zu werden",
+          "Den Ausgang eines dreidimensionalen Levels finden",
+          "Strafe-Jumping und Rocket-Jumping",
+          "Trent Reznor und der Klang von Quake"
+        ]
+      },
+      "translation_sha256": "13b4180078a2c714f0e5f428bb7cba6fb56944966a9b5008f58d4dc4401cc1aa"
+    },
+    {
+      "entry_id": "super-mario-64",
+      "source": {
+        "title": "Super Mario 64",
+        "subtitle": "Learning how to move all over again",
+        "summary": "An analog stick and an adjustable viewpoint made running in three dimensions a subject of its own.",
+        "body": [
+          "Super Mario 64 accompanied the Nintendo 64's Japanese launch in 1996. Its spaces gave players room to practise movement, judge depth and discover different objectives within the same landscape.",
+          "A 3D world also created a new design problem: the camera. Positioning a viewpoint could help or obstruct a jump, so seeing became part of controlling. The game helped establish a widely influential vocabulary, while leaving a problem that later designers would continue to revisit."
+        ],
+        "story_headings": [
+          "Room to practise in three dimensions",
+          "The camera becomes part of control"
+        ]
+      },
+      "source_fields_sha256": "38f5c59a5fc7743bb5f22f741c7220887285af1c79aa2253c4d4160a3767d201",
+      "translation": {
+        "title": "Super Mario 64",
+        "subtitle": "Sich ganz neu bewegen lernen",
+        "summary": "Ein Analogstick und ein verstellbarer Blickwinkel machten das Laufen in drei Dimensionen zu einem eigenen Thema.",
+        "body": [
+          "Super Mario 64 begleitete 1996 den japanischen Verkaufsstart des Nintendo 64. Seine Räume gaben Spielern Gelegenheit, Bewegungen zu üben, Tiefe einzuschätzen und unterschiedliche Ziele in derselben Landschaft zu entdecken.",
+          "Eine 3D-Welt schuf auch ein neues Gestaltungsproblem: die Kamera. Die Position des Blickpunkts konnte einen Sprung erleichtern oder behindern; Sehen wurde damit Teil der Steuerung. Das Spiel prägte ein weithin einflussreiches Vokabular, ließ aber ein Problem bestehen, auf das spätere Designer immer wieder zurückkommen sollten."
+        ],
+        "story_headings": [
+          "Raum zum Üben in drei Dimensionen",
+          "Die Kamera wird Teil der Steuerung"
+        ]
+      },
+      "translation_sha256": "e44263236ff990731db077aed2ddc09be39e8c32b861d3c717a0d4b1eef14770"
+    },
+    {
+      "entry_id": "feature-polygon-camera-language",
+      "source": {
+        "title": "Choosing where to look",
+        "subtitle": "",
+        "summary": "Mario's camera keeps changing.",
+        "body": [
+          "Shigeru Miyamoto described a difficult change during Super Mario 64's development. Earlier games let designers measure a jump in pixels. In three dimensions, players struggled to judge distance, so the team adjusted the levels to accept jumps that were sufficiently close. He remembered making that change when development was already far along. More dimensions did not simply mean more precise simulation. The view through which players judged an action changed what the game could reasonably demand, and the designers altered the rules around that practical limit.",
+          "The development interviews also describe a prototype with Mario and Luigi moving around a room, using the analogue stick and changing the camera at a button press. Moving the character was meant to be enjoyable before courses and enemies supplied further goals. Programmers and designers then discussed terrain, depth calculations and what could appear in front of what. These were connected tasks rather than separate finishing touches. A useful camera required a world it could describe clearly, while the world had to accommodate a moving character and viewpoint.",
+          "In Nintendo's 2013 conversation about Super Mario 3D World, Yoshiaki Koizumi described a different starting point. The team had experience with a camera that maintained a set distance and direction, reducing the need to rotate around a course. Multiplayer narrowed the options further. They rejected split-screen and worked towards a shared view that could hold the players together. This was a response to that game's particular format, not a declaration that free cameras were obsolete. Deciding who must remain visible was part of designing the activity itself.",
+          "The discussion preserves another option. Kenta Motokura points out that single players could use a free-camera mode driven by the Wii U GamePad's gyro sensor. Koizumi describes it as a way for experienced players to seek immersion. Iwata distinguishes this extra control from what someone must master to finish a course. Camera operation could therefore be an optional layer rather than a constant admission test. Across these accounts, the useful question is specific: which decisions should this player need to make, in this room, with these controls?"
+        ],
+        "story_headings": [
+          "A jump needs room for error",
+          "Movement before the courses",
+          "Several players, one view",
+          "Camera control becomes optional"
+        ]
+      },
+      "source_fields_sha256": "b1c602fcf9169141672804c086add543be813956b5b4ac404146c3e37d45c7a6",
+      "translation": {
+        "title": "Entscheiden, wohin man blickt",
+        "subtitle": "",
+        "summary": "Marios Kamera verändert sich immer wieder.",
+        "body": [
+          "Shigeru Miyamoto beschrieb eine schwierige Änderung während der Entwicklung von Super Mario 64. In früheren Spielen konnten Designer einen Sprung in Pixeln messen. In drei Dimensionen fiel es Spielern schwer, Entfernungen einzuschätzen. Deshalb passte das Team die Level so an, dass hinreichend nahe Sprünge akzeptiert wurden. Er erinnerte sich, diese Änderung erst bei bereits weit fortgeschrittener Entwicklung vorgenommen zu haben. Mehr Dimensionen bedeuteten nicht einfach eine genauere Simulation. Der Blickwinkel, aus dem Spieler eine Aktion beurteilten, veränderte, was das Spiel vernünftigerweise verlangen konnte. Die Designer passten die Regeln an diese praktische Grenze an.",
+          "Die Entwicklungsinterviews beschreiben auch einen Prototyp, in dem sich Mario und Luigi mit dem Analogstick durch einen Raum bewegten und die Kamera per Tastendruck wechselten. Schon die Bewegung der Figur sollte Spaß machen, bevor Parcours und Gegner zusätzliche Ziele lieferten. Programmierer und Designer besprachen anschließend Gelände, Tiefenberechnungen und die Frage, was vor was erscheinen konnte. Diese Aufgaben waren miteinander verbunden und keine voneinander getrennten letzten Feinarbeiten. Eine nützliche Kamera brauchte eine Welt, die sie klar darstellen konnte, während die Welt eine bewegliche Figur und Perspektive aufnehmen musste.",
+          "In Nintendos Gespräch über Super Mario 3D World von 2013 beschrieb Yoshiaki Koizumi einen anderen Ausgangspunkt. Das Team hatte Erfahrung mit einer Kamera, die einen festen Abstand und eine feste Richtung beibehielt und damit weniger Drehungen um den Parcours erforderte. Mehrere Spieler schränkten die Möglichkeiten zusätzlich ein. Das Team verwarf einen geteilten Bildschirm und arbeitete an einer gemeinsamen Ansicht, die die Spieler zusammenhalten konnte. Das war eine Antwort auf das besondere Format dieses Spiels, keine Erklärung, freie Kameras seien überholt. Die Entscheidung, wer sichtbar bleiben musste, gehörte zur Gestaltung der Tätigkeit selbst.",
+          "Das Gespräch hält eine weitere Möglichkeit fest. Kenta Motokura weist darauf hin, dass Einzelspieler einen freien Kameramodus verwenden konnten, den der Gyrosensor des Wii U GamePad steuerte. Koizumi beschreibt dies als Möglichkeit für erfahrene Spieler, stärker einzutauchen. Iwata unterscheidet diese zusätzliche Kontrolle von dem, was man zum Abschluss eines Parcours beherrschen muss. Die Kamerabedienung konnte somit eine optionale Ebene sein statt einer dauernden Zugangshürde. In diesen Berichten lautet die nützliche Frage ganz konkret: Welche Entscheidungen sollte dieser Spieler in diesem Raum mit diesen Eingabemöglichkeiten treffen müssen?"
+        ],
+        "story_headings": [
+          "Ein Sprung braucht Fehlertoleranz",
+          "Bewegung vor den Parcours",
+          "Mehrere Spieler, eine Ansicht",
+          "Kamerasteuerung wird optional"
+        ]
+      },
+      "translation_sha256": "96071f87e4d48ccddfcf6770cdabccc326e441e05dd521276a4ab53bfa093f7e"
+    }
+  ]
+}

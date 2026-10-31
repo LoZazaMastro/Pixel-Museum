@@ -1,0 +1,181 @@
+{
+  "schema_version": 1,
+  "reviewed": "2026-10-21",
+  "review_type": "independent_agent_exact_source_structural_and_semantic_review",
+  "integration_decision": "admit_source_checked_reference_overlays",
+  "reviewed_batch_sha256": {
+    "wikipedia-locales-breakout-elite.json": "8822764e3a0ebebb08b890f95e283359b73bd7360d0dd0e86db85457aeabcac7",
+    "wikipedia-locales-rez-bastion.json": "9c1cfed3ae040c92e1e0c68ea07ead4a27d65fd12750abf202d496a96caeea69",
+    "wikipedia-locales-metroid-castlevania.json": "2f23869ab7176cc532ab92d28288672ac5d6b72d95cb2bec451aea99846f0f9f",
+    "wikipedia-locales-arcade-stealth-balatro.json": "87b53b78e18ca75c29c3e1f8df7987d6e1345030299533004656042b3b71793c",
+    "wikipedia-locales-reference-05.json": "0f8e8b12adc31700d94ed80982f0293af05466606c8a496559fb95093fcfd656",
+    "wikipedia-locales-reference-06.json": "6f6acf10ad367cd846fde2b038a83f5316c5aab5e317cfed00c44d8f48a530d8",
+    "wikipedia-locales-reference-08.json": "88409096939cbfef6b5f250b91371a38ed9dcf90767fd590a672246f4d5e3709",
+    "wikipedia-locales-reference-07.json": "4157c2ac5e784a6d1454cb24b7ef8c344488691f21a5cbf640ea44d3caa1408f",
+    "wikipedia-locales-reference-09.json": "99454647deb40325d3d7ad4b56c48ea1ff4494896c7510d9400fd55881a846ae",
+    "wikipedia-locales-reference-10.json": "75c5e3ad18f7c89f77139120996e31c785eb2f10190ad5346fe971a8438f6ce6",
+    "wikipedia-locales-reference-11.json": "dea74fa806a6120b194bef3096d5a6137d7d03169ee396b24e5a0583eee9ebdd",
+    "wikipedia-locales-reference-12.json": "3a5174482577bf56603edc794ffcd490cfe7a6d6af5734feb0550b270af66483"
+  },
+  "reference_ids": [
+    "wikipedia-453246",
+    "wikipedia-286774",
+    "wikipedia-101230",
+    "wikipedia-30602654",
+    "wikipedia-355914",
+    "wikipedia-756296",
+    "wikipedia-695473",
+    "wikipedia-15915369",
+    "wikipedia-36949806",
+    "wikipedia-76141126",
+    "wikipedia-18711188",
+    "wikipedia-43010284",
+    "wikipedia-52924170",
+    "wikipedia-54027590",
+    "wikipedia-54280556",
+    "wikipedia-72536576",
+    "wikipedia-1055604",
+    "wikipedia-595917",
+    "wikipedia-1159581",
+    "wikipedia-15448272",
+    "wikipedia-848794",
+    "wikipedia-1682727",
+    "wikipedia-24361200",
+    "wikipedia-57651025",
+    "wikipedia-785",
+    "wikipedia-28420914",
+    "wikipedia-39645077",
+    "wikipedia-39646535",
+    "wikipedia-70555372",
+    "wikipedia-68100842",
+    "wikipedia-77739989",
+    "wikipedia-66659306",
+    "wikipedia-77070226",
+    "wikipedia-83969309",
+    "wikipedia-1956221",
+    "wikipedia-6150793",
+    "wikipedia-66654",
+    "wikipedia-52727",
+    "wikipedia-292879",
+    "wikipedia-72385563"
+  ],
+  "languages": [
+    "it",
+    "es",
+    "fr",
+    "de"
+  ],
+  "coverage": {
+    "translation_pairs": 160,
+    "body_paragraphs": 492,
+    "existing_headings": 264
+  },
+  "findings": [
+    {
+      "id": "L01",
+      "status": "resolved",
+      "detail": "All translated title/subtitle/summary/body/headings bind to exact English fields and immutable revision. Generic subtitle source binding added to Breakout/Elite."
+    },
+    {
+      "id": "L02",
+      "status": "resolved",
+      "detail": "Localized active credits identify translations and CC BY-SA 4.0; unchanged English source credits remain separately preserved. Runtime restores English credit when language changes."
+    },
+    {
+      "id": "L03",
+      "status": "accepted_source_boundary",
+      "detail": "Bastion summary ends at Warner Bros. in the source and every translation; its first body paragraph preserves the full publisher. Elite source chronology/ownership statements are translated faithfully rather than silently revised."
+    },
+    {
+      "id": "L04",
+      "status": "pending_native_language_and_layout_signoff",
+      "detail": "Independent agent review is complete; no human native-language or console typography signoff is claimed. Empty Rez/Bastion/Elite headings remain empty."
+    },
+    {
+      "id": "L05",
+      "status": "independent_root_semantic_review_passed",
+      "detail": "All24Metroid/Castlevania translated paragraphs and24headings read against English snapshots. The shipped/distributed quantity remains distributed1.42million; the inherited ambiguous two-games phrase gains no invented referent. Review of exact source/revision/credit binding remains enforced by integration."
+    },
+    {
+      "id": "L06",
+      "status": "independent_root_semantic_review_passed",
+      "detail": "Read all48 translated paragraphs and48 headings against the12 English paragraphs in DigDug, SpaceInvadersExtreme, MarkOfTheNinja and Balatro; chronology, platform, contributor, quantities and reception qualifiers retained. Italian Balatro win wording clarified: premiato come, not ambiguous nominato. Source text unchanged. Nintendo UK independently confirms25February2026 Switch2 date.",
+      "batch_sha256_before_copyedit": "aa0357d09a46caa4f5f065a6f9907768b5ca4b9717656aa5cd83aa86822ee873",
+      "batch_sha256": "87b53b78e18ca75c29c3e1f8df7987d6e1345030299533004656042b3b71793c",
+      "primary_date_source": "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-2-games/Balatro-3037082.html",
+      "human_native_language_layout_signoff": false
+    },
+    {
+      "id": "L07",
+      "status": "independent_root_semantic_review_passed",
+      "detail": "Read all72 translated paragraphs and72 headings against18 English paragraphs for Fez, both Ori games, Edith Finch, Dead Cells and Golden Idol. Original source qualifiers, quantities, platforms, chronology and contributor names retained. Ori Definitive expansion terminology and Dead Cells loss/permanent-upgrade tension remain attributed source wording. Edith Finch Best Game2017 is the game-year designation, not a claim that the ceremony occurred in2017; actual BAFTA release confirms12April2018. No English source or original Playhub locale edited.",
+      "batch_sha256": "0f8e8b12adc31700d94ed80982f0293af05466606c8a496559fb95093fcfd656",
+      "primary_award_source": "https://www.bafta.org/media-centre/press-releases/winners-announced-for-the-british-academy-games-awards-in-2018/",
+      "human_native_language_layout_signoff": false
+    },
+    {
+      "id": "L08",
+      "status": "independent_root_semantic_review_passed",
+      "detail": "Read all48 translated paragraphs and48headings against12Englishparagraphs in GunFight,SpaceHarrier,UltimaIV andWorldofGoo. Names, quantities, platforms, technical distinctions, chronology, audience and reception qualifiers retained. Inherited GunFight first-claims and Kamiya affiliation are preserved reference wording rather than newly independently verified assertions. Atari source grammar normalized without inventing a release date. ExactEnglish/Playhub bodies remain untouched.",
+      "batch_sha256": "6f6acf10ad367cd846fde2b038a83f5316c5aab5e317cfed00c44d8f48a530d8",
+      "human_native_language_layout_signoff": false
+    },
+    {
+      "id": "L09",
+      "status": "independent_editorial_semantic_review_passed",
+      "detail": "Separate editorial-review agent read all48 translated paragraphs against12Englishparagraphs in Asteroids,RetroCityRampage,SuperMario3DWorld andShovelKnight, plus title/summary/credit fields. Source quantities, decades, dates, platform/edition differences, futureDX wording and contributor names retained; no corrections required. Root read and accepted hash-bound independent receipt and pure-join evidence. Empty English headings preserved without invented labels.",
+      "review_file": "content/editorial/wikipedia-locales-reference-07-independent-review.json",
+      "review_sha256": "dca64f69f5f0a3162b69216cf339eafc06f625eab1c973582a4507808b2a71d8",
+      "batch_sha256": "4157c2ac5e784a6d1454cb24b7ef8c344488691f21a5cbf640ea44d3caa1408f",
+      "human_native_language_layout_signoff": false
+    },
+    {
+      "id": "L10",
+      "status": "independent_root_semantic_review_passed",
+      "detail": "Read all48translated paragraphs, titles and summaries against12Englishparagraphs of DisgaeaHourOfDarkness,OddworldStrangersWrath,ShantaeRiskysRevenge andSekiro. Dates/platform chains, editions, contributor names, mechanics and reception qualifiers retained, including September2023sales scope. Disgaea source HD-remake terminology preserved as inherited reference wording. No invented headings, facts, source replacement or original Playhub locale edits.",
+      "batch_sha256": "88409096939cbfef6b5f250b91371a38ed9dcf90767fd590a672246f4d5e3709",
+      "human_native_language_layout_signoff": false
+    },
+    {
+      "id": "L11",
+      "status": "independent_root_semantic_review_passed",
+      "detail": "Read all24translated paragraphs and title/summary fields against6Englishparagraphs in FIFA23 and AITheSomniumFilesNirvanaInitiative. Exact platform lists, months/regions, years, contributor names, sequel relationship and edition qualifiers retained. FIFA source franchise Guinness sentence clarified without new statistics; inherited source server-shutdown claim preserved as source wording, not independently verified here. No English headings present, none invented. Original English text, Wikipedia revision/source credits and Playhub locales unchanged.",
+      "batch_sha256": "99454647deb40325d3d7ad4b56c48ea1ff4494896c7510d9400fd55881a846ae",
+      "human_native_language_layout_signoff": false
+    },
+    {
+      "id": "L12",
+      "status": "independent_editorial_semantic_review_passed",
+      "detail": "Separate reviewer read all48target paragraphs,12Englishparagraphs and full title/summary/credit fields of Cultic,BROK,AstroBot andBookOfHours. Root read12EN and accepted exact hash-bound independent semantic,revision,licence and negative-fixture receipt. Future/release qualifiers, ordinals, game/edition chronology and180000-plus quantity retained without silent factual edits.",
+      "review_file": "content/editorial/wikipedia-locales-reference-10-independent-review.json",
+      "review_sha256": "44b7a320b27e0a2bc5d33944e31b9402840f76525de33b78ccc5ce0120a8775f",
+      "batch_sha256": "75c5e3ad18f7c89f77139120996e31c785eb2f10190ad5346fe971a8438f6ce6",
+      "human_native_language_layout_signoff": false
+    },
+    {
+      "id": "L13",
+      "status": "independent_editorial_semantic_review_passed",
+      "detail": "Separate reviewer read all48target paragraphs and48headings against12Englishparagraphs/12existingheadings plus title/summary/credits for NFLBlitz,MattelAutoRace,Populous,RadiantSilvergun. Root read12EN and accepted exact hash-bound independent semantic/revision/attribution and negative-fixture receipt. First/considered-first, source commercial/reception qualifiers, nomination versus winning, dates/counts/platforms and successor differences preserved without silent factual edits.",
+      "review_file": "content/editorial/wikipedia-locales-reference-11-independent-review.json",
+      "review_sha256": "738d1841f919da9ee515d62d15a648cb238850983d52f0de06b2f200fed9e8a5",
+      "batch_sha256": "dea74fa806a6120b194bef3096d5a6137d7d03169ee396b24e5a0583eee9ebdd",
+      "human_native_language_layout_signoff": false
+    },
+    {
+      "id": "L14",
+      "status": "independent_editorial_semantic_review_passed",
+      "detail": "Separate reviewer read24target paragraphs and12headings against6Englishparagraphs/3headings, title/summary/credit fields of ComputerSpace andAtelierRyza3. Root read all6EN and accepted hash-bound independent receipt. Inherited first-commercial/possibly-first qualifiers, cabinet totals/ranges, regional release chronology, ordinal series/anniversary claims and DXplatform differences preserved without new fact verification.",
+      "review_file": "content/editorial/wikipedia-locales-reference-12-independent-review.json",
+      "review_sha256": "0fbe380f19d0f3a806f5e2594bb593fcd9231838c9bcb6a260bf3f94a1435866",
+      "batch_sha256": "3a5174482577bf56603edc794ffcd490cfe7a6d6af5734feb0550b270af66483",
+      "human_native_language_layout_signoff": false
+    }
+  ],
+  "preservation": {
+    "playhub_source_locales_byte_identical_required": true,
+    "original_english_and_attached_features_unmodified_required": true,
+    "source_and_attribution_drift_must_reject": true,
+    "human_language_signoff": false,
+    "device_layout_signoff": false
+  }
+}

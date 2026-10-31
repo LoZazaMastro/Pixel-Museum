@@ -1,0 +1,767 @@
+{
+  "schema": "pixel-museum-editorial-input-v1",
+  "batch_id": "233-catalog",
+  "source_file": "content/catalog.json",
+  "source_sha256": "0b077b3f8628f921ab84574d286f9d9943fb8ae6acb8f136ffadde6e01cae241",
+  "entries": [
+    {
+      "entry_id": "playstation-5",
+      "kind": "console",
+      "year_context_only": 2020,
+      "date_context_only": {
+        "month": 11,
+        "day": 12,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "PlayStation 5",
+        "subtitle": "Changing the pace and feel of play",
+        "summary": "Fast storage and a new controller shifted attention towards the time spent waiting and the sensations carried through the hands.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "PlayStation 5: storage, touch and sound",
+            "text": "A new console generation can change more than the picture. For PlayStation 5, Sony emphasised fast solid-state storage, 3D audio and the DualSense controller alongside its graphics hardware. The promise concerned the rhythm and feel of play: shorter loading waits, more detailed feedback and a stronger sense of being inside a space."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "The November 2020 launch",
+            "text": "The launch was staged. Seven markets, including Japan and the United States, received PS5 on 12 November 2020. Europe and further regions followed on 19 November. The tall white-and-black original body and DualSense became the recognisable objects of this transition."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Storage that changes loading",
+            "text": "PlayStation 5?s SSD works with dedicated input/output hardware and decompression to move assets into memory quickly. Sony presented shorter loading waits and fewer streaming bottlenecks as major benefits. Faster access also gives designers more freedom over when new areas appear."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "DualSense: touch and resistance",
+            "text": "DualSense introduces detailed haptic feedback and adaptive triggers. Developers can use them to distinguish surfaces or add resistance to actions such as drawing a bow. The controller also includes a microphone, touchpad and Create button."
+          },
+          {
+            "card_id": "main:4",
+            "original_index": 4,
+            "heading": "Tempest 3D AudioTech",
+            "text": "Tempest 3D AudioTech uses dedicated processing to convey the direction and distance of sounds around the listener. Sony demonstrated examples such as rain above the player and enemies audible from particular positions. Headphones were the initial focus, with other listening configurations developed later."
+          },
+          {
+            "card_id": "main:5",
+            "original_index": 5,
+            "heading": "Disc drive and Digital Edition",
+            "text": "The original PS5 launched with an Ultra HD Blu-ray drive or as a Digital Edition without one. Both share the same CPU, GPU and main capabilities. The difference determines whether players can use physical discs alongside their digital library."
+          },
+          {
+            "card_id": "main:6",
+            "original_index": 6,
+            "heading": "Bringing the PS4 library forward",
+            "text": "Most of the more than four thousand PlayStation 4 games run on PS5. Some benefit from Game Boost, which can improve stability or performance. Backward compatibility lets players keep using an existing library while moving to the new console."
+          },
+          {
+            "card_id": "main:7",
+            "original_index": 7,
+            "heading": "Astro's Playroom teaches through play",
+            "text": "Astro?s Playroom comes preinstalled and introduces DualSense through play. Its stages use haptics, trigger resistance, the touchpad, microphone and motion sensors. Hardware and characters from PlayStation?s history appear throughout the adventure."
+          }
+        ],
+        "sources": [
+          {
+            "title": "PS5 - launch markets, two editions and specifications, September 2020",
+            "url": "https://sonyinteractive.com/en/press-releases/2020/playstation-5-launches-this-november-at-399-for-ps5-digital-edition-and-499-for-ps5-with-ultra-hd-blu-ray-disc-drive/",
+            "publisher": "Sony Interactive Entertainment"
+          },
+          {
+            "title": "PlayStation 5 - hardware and DualSense history",
+            "url": "https://www.playstation.com/en-us/playstation-history/2020-ps5-ps-vr2/",
+            "publisher": "Sony Interactive Entertainment"
+          },
+          {
+            "title": "blog.playstation.com",
+            "url": "https://blog.playstation.com/2020/09/16/playstation-5-launches-in-november-starting-at-399-for-ps5-digital-edition-and-499-for-ps5-with-ultra-hd-blu-ray-disc-drive/",
+            "publisher": "blog.playstation.com"
+          },
+          {
+            "title": "blog.playstation.com",
+            "url": "https://blog.playstation.com/2020/11/09/ps5-the-ultimate-faq/",
+            "publisher": "blog.playstation.com"
+          },
+          {
+            "title": "blog.playstation.com",
+            "url": "https://blog.playstation.com/2020/03/18/unveiling-new-details-of-playstation-5-hardware-technical-specs/",
+            "publisher": "blog.playstation.com"
+          },
+          {
+            "title": "blog.playstation.com",
+            "url": "https://blog.playstation.com/2020/04/07/introducing-dualsense-the-new-wireless-game-controller-for-playstation-5/",
+            "publisher": "blog.playstation.com"
+          },
+          {
+            "title": "blog.playstation.com",
+            "url": "https://blog.playstation.com/2020/10/06/experience-ps5s-tempest-3d-audiotech-with-compatible-headsets-at-launch-tv-virtual-surround-sound-coming-after-launch/",
+            "publisher": "blog.playstation.com"
+          },
+          {
+            "title": "PS5 teardown: original 2020 console and storage controller",
+            "url": "https://blog.playstation.com/2020/10/07/ps5-teardown-an-inside-look-at-our-most-transformative-console-yet/",
+            "publisher": "Sony Interactive Entertainment"
+          },
+          {
+            "title": "PULSE 3D: original headset",
+            "url": "https://www.playstation.com/en-us/accessories/pulse-3d-wireless-headset/",
+            "publisher": "Sony Interactive Entertainment"
+          },
+          {
+            "title": "Astro's Playroom: original game screenshots",
+            "url": "https://www.playstation.com/en-us/games/astros-playroom/",
+            "publisher": "Sony Interactive Entertainment"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-64248753",
+      "kind": "game",
+      "year_context_only": 2020,
+      "date_context_only": {
+        "month": 11,
+        "day": 12,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Regional and platform release dates may differ. Where shown, the exact day is taken only from the article release infobox.",
+      "main": {
+        "feature_id": null,
+        "title": "Marvel’s Spider-Man: Miles Morales",
+        "subtitle": "",
+        "summary": "Marvel's Spider-Man: Miles Morales is a 2020 action-adventure game developed by Insomniac Games and published by Sony Interactive Entertainment.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Miles Morales and the battle for Harlem",
+            "text": "Marvel's Spider-Man: Miles Morales is a 2020 action-adventure game developed by Insomniac Games and published by Sony Interactive Entertainment. Based on the Marvel Comics character Miles Morales, it is inspired by both the character's decade-long comic book mythology and appearances in other media. The game is a spin-off and follow-up to Marvel's Spider-Man (2018), and the second installment in Insomniac's Spider-Man series. The narrative focuses on Miles' struggle to balance the duties of his civilian persona and his role as the second Spider-Man when his new home, Harlem, is threatened by a war between a high-tech criminal army called the Underground, led by the mysterious Tinkerer, and the Roxxon Energy Corporation."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Web-swinging, camouflage and bio-electric combat",
+            "text": "Gameplay is presented from the third-person perspective, with a primary focus on Miles' traversal and combat abilities. Miles can freely move around New York City, interacting with characters, undertaking missions, and unlocking new gadgets and suits by progressing through the main story or completing tasks. Outside the story, the player is able to complete side missions to unlock additional content and collectible items. Combat focuses on chaining attacks together and using the environment, webs, and Venom attacks to incapacitate numerous foes while avoiding damage."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "The PS4 and PS5 launch, followed by PC",
+            "text": "Marvel's Spider-Man: Miles Morales was officially revealed in June 2020 and launched that November for the PlayStation 4 and as a launch title for the PlayStation 5. A Windows version was later released in November 2022 and received generally favourable reviews from critics, with praise for its combat, narrative, content, and technical improvements of the PlayStation 5 version, though its short length received some criticism. Marvel's Spider-Man 2, which acts as a sequel to the first game and a direct continuation of Miles Morales, was released for the PlayStation 5 in October 2023."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Marvel's Spider-Man: Miles Morales - article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1381159880",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Article contributors and history",
+            "url": "https://en.wikipedia.org/wiki/Marvel's_Spider-Man:_Miles_Morales?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          },
+          {
+            "title": "Spider-Man: Miles Morales - box - front (Sony Playstation 4)",
+            "url": "https://gamesdb.launchbox-app.com/games/details/194445",
+            "publisher": "Sony Interactive Entertainment"
+          },
+          {
+            "title": "Official music publication: New York's Only Spider-Man",
+            "url": "https://www.youtube.com/watch?v=dEsj9polidg",
+            "publisher": "John Paesano",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: John Paesano",
+            "url": "https://blog.playstation.com/2023/10/30/marvels-spider-man-2-soundtrack-listening-party-streaming-nov-2/",
+            "publisher": "John Paesano"
+          },
+          {
+            "title": "Official music publication: Don't Give Up",
+            "url": "https://www.youtube.com/watch?v=ZMPh5aFuTp0",
+            "publisher": "John Paesano",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: John Paesano",
+            "url": "https://blog.playstation.com/2023/10/30/marvels-spider-man-2-soundtrack-listening-party-streaming-nov-2/",
+            "publisher": "John Paesano"
+          },
+          {
+            "title": "Official music publication: Be Yourself",
+            "url": "https://www.youtube.com/watch?v=BZspoNG1uPk",
+            "publisher": "John Paesano",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: John Paesano",
+            "url": "https://blog.playstation.com/2023/10/30/marvels-spider-man-2-soundtrack-listening-party-streaming-nov-2/",
+            "publisher": "John Paesano"
+          },
+          {
+            "title": "Official music publication: Won't Give Up",
+            "url": "https://www.youtube.com/watch?v=LN7RizUFY7E",
+            "publisher": "John Paesano",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: John Paesano",
+            "url": "https://blog.playstation.com/2023/10/30/marvels-spider-man-2-soundtrack-listening-party-streaming-nov-2/",
+            "publisher": "John Paesano"
+          },
+          {
+            "title": "Music credit source: John Paesano",
+            "url": "https://www.qobuz.com/au-en/album/marvels-spider-man-miles-morales-john-paesano/c3mpi3335y7ab",
+            "publisher": "John Paesano"
+          },
+          {
+            "title": "Official music publication: Rhino Rampage",
+            "url": "https://www.youtube.com/watch?v=dQZ3ueKo9uY",
+            "publisher": "John Paesano",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: John Paesano",
+            "url": "https://www.qobuz.com/au-en/album/marvels-spider-man-miles-morales-john-paesano/c3mpi3335y7ab",
+            "publisher": "John Paesano"
+          },
+          {
+            "title": "Music credit source: John Paesano",
+            "url": "https://www.qobuz.com/au-en/album/marvels-spider-man-miles-morales-john-paesano/c3mpi3335y7ab",
+            "publisher": "John Paesano"
+          },
+          {
+            "title": "Official music publication: Spider-Training",
+            "url": "https://www.youtube.com/watch?v=KV84RS7oyzU",
+            "publisher": "John Paesano",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: John Paesano",
+            "url": "https://www.qobuz.com/au-en/album/marvels-spider-man-miles-morales-john-paesano/c3mpi3335y7ab",
+            "publisher": "John Paesano"
+          },
+          {
+            "title": "Official music publication: Best Friends",
+            "url": "https://www.youtube.com/watch?v=4fjLTbbrKsw",
+            "publisher": "John Paesano",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: John Paesano",
+            "url": "https://www.qobuz.com/au-en/album/marvels-spider-man-miles-morales-john-paesano/c3mpi3335y7ab",
+            "publisher": "John Paesano"
+          },
+          {
+            "title": "Music credit source: John Paesano",
+            "url": "https://www.qobuz.com/au-en/album/marvels-spider-man-miles-morales-john-paesano/c3mpi3335y7ab",
+            "publisher": "John Paesano"
+          },
+          {
+            "title": "Official music publication: Confession",
+            "url": "https://www.youtube.com/watch?v=macFXm5RadA",
+            "publisher": "John Paesano",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: John Paesano",
+            "url": "https://www.qobuz.com/au-en/album/marvels-spider-man-miles-morales-john-paesano/c3mpi3335y7ab",
+            "publisher": "John Paesano"
+          },
+          {
+            "title": "Official music publication: The Underground",
+            "url": "https://www.youtube.com/watch?v=aIJI_7vFw9o",
+            "publisher": "John Paesano",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: John Paesano",
+            "url": "https://www.qobuz.com/au-en/album/marvels-spider-man-miles-morales-john-paesano/c3mpi3335y7ab",
+            "publisher": "John Paesano"
+          },
+          {
+            "title": "Official music publication: Thicker Than Water",
+            "url": "https://www.youtube.com/watch?v=q6g0AHfCyrk",
+            "publisher": "John Paesano",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: John Paesano",
+            "url": "https://www.qobuz.com/au-en/album/marvels-spider-man-miles-morales-john-paesano/c3mpi3335y7ab",
+            "publisher": "John Paesano"
+          },
+          {
+            "title": "Official music publication: On the Case",
+            "url": "https://www.youtube.com/watch?v=mqnUnEZVuJg",
+            "publisher": "John Paesano",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: John Paesano",
+            "url": "https://www.qobuz.com/au-en/album/marvels-spider-man-miles-morales-john-paesano/c3mpi3335y7ab",
+            "publisher": "John Paesano"
+          },
+          {
+            "title": "Official music publication: All In",
+            "url": "https://www.youtube.com/watch?v=fxCCEYZHfu8",
+            "publisher": "John Paesano",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: John Paesano",
+            "url": "https://www.qobuz.com/au-en/album/marvels-spider-man-miles-morales-john-paesano/c3mpi3335y7ab",
+            "publisher": "John Paesano"
+          },
+          {
+            "title": "Official music publication: Trying to Protect You",
+            "url": "https://www.youtube.com/watch?v=lbJ4bshzcKo",
+            "publisher": "John Paesano",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: John Paesano",
+            "url": "https://www.qobuz.com/au-en/album/marvels-spider-man-miles-morales-john-paesano/c3mpi3335y7ab",
+            "publisher": "John Paesano"
+          },
+          {
+            "title": "Official music publication: We're Here for You",
+            "url": "https://www.youtube.com/watch?v=AkhEUswVY14",
+            "publisher": "John Paesano",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: John Paesano",
+            "url": "https://www.qobuz.com/au-en/album/marvels-spider-man-miles-morales-john-paesano/c3mpi3335y7ab",
+            "publisher": "John Paesano"
+          },
+          {
+            "title": "Official music publication: Worst Enemies",
+            "url": "https://www.youtube.com/watch?v=bEk3EPJ6BAk",
+            "publisher": "John Paesano",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: John Paesano",
+            "url": "https://www.qobuz.com/au-en/album/marvels-spider-man-miles-morales-john-paesano/c3mpi3335y7ab",
+            "publisher": "John Paesano"
+          },
+          {
+            "title": "Official music publication: Make It Right",
+            "url": "https://www.youtube.com/watch?v=UZcRtk_J69Q",
+            "publisher": "John Paesano",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: John Paesano",
+            "url": "https://www.qobuz.com/au-en/album/marvels-spider-man-miles-morales-john-paesano/c3mpi3335y7ab",
+            "publisher": "John Paesano"
+          },
+          {
+            "title": "Music credit source: John Paesano",
+            "url": "https://www.qobuz.com/au-en/album/marvels-spider-man-miles-morales-john-paesano/c3mpi3335y7ab",
+            "publisher": "John Paesano"
+          },
+          {
+            "title": "Official music publication: I'm Ready",
+            "url": "https://www.youtube.com/watch?v=3pvSGwHgvhU",
+            "publisher": "Jaden",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Jaden",
+            "url": "https://www.qobuz.com/au-en/album/marvels-spider-man-miles-morales-john-paesano/c3mpi3335y7ab",
+            "publisher": "Jaden"
+          },
+          {
+            "title": "Official music publication: Where We Come From",
+            "url": "https://www.youtube.com/watch?v=OUSjNiAkx9o",
+            "publisher": "Lecrae",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Lecrae",
+            "url": "https://www.youtube.com/watch?v=OUSjNiAkx9o",
+            "publisher": "Lecrae"
+          },
+          {
+            "title": "Official music publication: This Is My Time",
+            "url": "https://www.youtube.com/watch?v=DTakCndtK4s",
+            "publisher": "Lecrae",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Lecrae",
+            "url": "https://www.youtube.com/watch?v=DTakCndtK4s",
+            "publisher": "Lecrae"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-64248811",
+      "kind": "game",
+      "year_context_only": 2020,
+      "date_context_only": {
+        "month": 11,
+        "day": 12,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "Sackboy: A Big Adventure",
+        "subtitle": "",
+        "summary": "Sackboy: A Big Adventure is a 2020 platform video game developed by Sumo Digital and published by Sony Interactive Entertainment for the PlayStation 4 and PlayStation 5.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Craftworld in three dimensions",
+            "text": "Sackboy: A Big Adventure is a 2020 platform video game developed by Sumo Digital and published by Sony Interactive Entertainment for the PlayStation 4 and PlayStation 5. A spin-off of the LittleBigPlanet series, it follows Sackboy, and features 3D platforming as opposed to a side-scrolling angle in previous entries."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "A path made of platforms",
+            "text": "Sackboy: A Big Adventure is a platformer. Unlike previous LittleBigPlanet entries with side-scrolling platforming, it features a range of perspectives and 3D movement. Players control Sackboy on world maps which give access to a multitude of platforming levels and bonus content. As Sackboy completes each stage new ones unlock allowing him to progress further. All levels contain collectable objects called Dreamer Orbs which must be collected to progress."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "A bigger set of moves",
+            "text": "Sackboy's move set is expanded from previous entries and players can slap at will, roll around, nosedive, pick-up objects and flutter jump. Moves can be chained together to create combos that allow players to travel greater distances. Each level employs a series of interactable objects that require at least one of Sackboy's moves to progress. Sackboy has access to multiple stages where he can use powerups. The Grappling Hook, now called the Clawstring, returns from LittleBigPlanet 2, allowing Sackboy to grab onto objects from afar, the Whirltool is a boomerang-like device that can be thrown to defeat enemies and break objects and the Plasma Pumps allow Sackboy to hover in the air and fire energy blasts."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "A journey to share",
+            "text": "The game is playable in both local and online multiplayer allowing up to four players to play together. There are stages in each world that require multiple players to enter and are specifically designed so players must work together to progress. The game originally did not ship with online functionality. The feature was added in a patch a month later on 17 December 2020."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Sackboy A Big Adventure article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1380862857",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Official game and launch date",
+            "url": "https://www.playstation.com/en-us/games/sackboy-a-big-adventure/",
+            "publisher": "Sony Interactive Entertainment"
+          },
+          {
+            "title": "An epic3Dplatformjourney: developer explanation",
+            "url": "https://blog.playstation.com/2020/09/29/embark-on-an-epic-3d-platform-journey-in-sackboy-a-big-adventure-coming-to-ps5/",
+            "publisher": "Sumo Digital / PlayStation Blog"
+          },
+          {
+            "title": "Original publisher screenshots",
+            "url": "https://store.steampowered.com/app/1599660/",
+            "publisher": "Sony Interactive Entertainment / Steam"
+          },
+          {
+            "title": "Composer account of the original soundtrack",
+            "url": "https://blog.playstation.com/2021/03/09/threading-together-the-sackboy-a-big-adventure-theme/",
+            "publisher": "Joe Thwaites / PlayStation Blog"
+          },
+          {
+            "title": "Online multiplayer added December17,2020",
+            "url": "https://blog.playstation.com/2020/12/17/sackboy-a-big-adventure-update-adds-online-multiplayer-today/",
+            "publisher": "Sumo Digital / PlayStation Blog"
+          },
+          {
+            "title": "Original soundtrack composition and performer credits",
+            "url": "https://www.qobuz.com/ca-en/album/sackboy-a-big-adventure-original-soundtrack-nick-foster-joe-thwaites-and-jay-waters/nilzzd7jj36yc",
+            "publisher": "Sony Classical / Qobuz"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-64249122",
+      "kind": "game",
+      "year_context_only": 2020,
+      "date_context_only": {
+        "month": 11,
+        "day": 12,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Reference article introduction reproduced under its stated licence. Year comes from the article's release-year category; regional/port dates may differ.",
+      "main": {
+        "feature_id": null,
+        "title": "Demon's Souls",
+        "subtitle": "",
+        "summary": "Demon's Souls is a 2020 action role-playing game developed by Japan Studio and Bluepoint Games and published by Sony Interactive Entertainment for the PlayStation 5.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Rebuilding Boletaria for PlayStation 5",
+            "text": "Demon's Souls is a 2020 action role-playing game developed by Japan Studio and Bluepoint Games and published by Sony Interactive Entertainment for the PlayStation 5. The game was released as a launch title for the PlayStation 5 on November 12th, 2020. It is a remake of Demon's Souls, originally developed by FromSoftware for the PlayStation 3 in 2009."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "The remake and its reception",
+            "text": "Japan Studio?s Internal Development Department worked with Bluepoint Games on the remake before Japan Studio?s later reorganisation. Reviews praised the gameplay, visuals and technical improvements. The remake had sold 1.857 million copies by 2022."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Demon's Souls (2020 video game) — article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1367242584",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "2020 in video games — annual context",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1380483411",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/Demon%27s_Souls_(2020_video_game)?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          },
+          {
+            "title": "Demon's Souls (2020 video game) — original release infobox, Wikipedia revision 1367242584",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1367242584",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Original PS5 launch and remake development",
+            "url": "https://blog.playstation.com/2020/11/11/demons-souls-awaits-you-slayer-of-demons/",
+            "publisher": "Gavin Moore / Sony Interactive Entertainment"
+          },
+          {
+            "title": "The arranger explains the 2020 PS5 score",
+            "url": "https://billhemstapat.com/demons-souls",
+            "publisher": "Bill Hemstapat"
+          },
+          {
+            "title": "Original remake soundtrack release,November2020",
+            "url": "https://blog.ja.playstation.com/?p=164824",
+            "publisher": "Sony Interactive Entertainment"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-64255520",
+      "kind": "game",
+      "year_context_only": 2020,
+      "date_context_only": {
+        "month": 11,
+        "day": 12,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Reference article introduction reproduced under its stated licence. Year comes from the article's release-year category; regional/port dates may differ.",
+      "main": {
+        "feature_id": null,
+        "title": "Astro's Playroom",
+        "subtitle": "",
+        "summary": "Astro's Playroom is a 2020 platform game developed and published by Sony Interactive Entertainment for the PlayStation 5.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "A free DualSense showcase inside every PS5",
+            "text": "Astro's Playroom is a 2020 platform game developed and published by Sony Interactive Entertainment for the PlayStation 5. A sequel to Astro Bot Rescue Mission, the game comes pre-installed on every console, serving additionally as a free tech demo for the DualSense controller."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "The PS5 reveal leads to a November launch",
+            "text": "Astro's Playroom was announced on June 11, 2020, at the PlayStation 5 reveal event. The game was released on November 12, 2020 to generally favorable reviews from critics."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Studio changes and a full-length Astro Bot sequel",
+            "text": "Astro's Playroom, alongside Demon's Souls, was the final game released by Japan Studio before their reorganization on April 1, 2021. Following the reorganization, Team Asobi became a standalone studio within PlayStation Studios, introduced by Sony in June 2021. A full-length sequel, Astro Bot, was announced on May 30, 2024, and was released for the PlayStation 5 on September 6, 2024."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Astro's Playroom — article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1380404209",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "2020 in video games — annual context",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1380483411",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/Astro%27s_Playroom?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          },
+          {
+            "title": "Astro's Playroom — original release infobox, Wikipedia revision 1380404209",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1380404209",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Official music publication: Goal (From \"Astro's Playroom\" Soundtrack)",
+            "url": "https://www.youtube.com/watch?v=22-sM9dgw2M",
+            "publisher": "Kenneth C M Young - Topic",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Kenneth C M Young",
+            "url": "https://en.wikipedia.org/wiki/Astro%27s_Playroom",
+            "publisher": "Kenneth C M Young"
+          },
+          {
+            "title": "Soundtrack publication: Good VGM 137 - Astro's Playroom - SSD",
+            "url": "https://www.youtube.com/watch?v=9QKONIyoWmA",
+            "publisher": "Good Video Game Music",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Kenneth C. M. Young",
+            "url": "https://en.wikipedia.org/wiki/Astro%27s_Playroom",
+            "publisher": "Kenneth C. M. Young"
+          },
+          {
+            "title": "Original score and March12,2021 album release",
+            "url": "https://www.kennyyoung.com/2021/03/10/astros-playroom-soundtrack/",
+            "publisher": "Kenneth C M Young"
+          },
+          {
+            "title": "How the composer made the GPU song",
+            "url": "https://blog.playstation.com/2021/03/10/im-your-gpu---crafting-the-digitally-infused-pop-of-astros-playroom/",
+            "publisher": "Kenneth C M Young / PlayStation Blog"
+          },
+          {
+            "title": "Team Asobi becomes a PlayStation studio",
+            "url": "https://blog.playstation.com/2021/06/02/introducing-team-asobi-creators-of-the-astro-bot-series/",
+            "publisher": "Nicolas Doucet / Team Asobi"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-64999857",
+      "kind": "game",
+      "year_context_only": 2020,
+      "date_context_only": {
+        "month": 11,
+        "day": 13,
+        "precision": "day",
+        "region": "Original November 13, 2020 launch; next-generation console availability depended on each regional hardware launch."
+      },
+      "event_semantics": "",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "Call of Duty: Black Ops Cold War",
+        "subtitle": "",
+        "summary": "Call of Duty: Black Ops Cold War is a 2020 first-person shooter game co-developed by Treyarch and Raven Software and published by Activision.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "A return to Black Ops",
+            "text": "Call of Duty: Black Ops Cold War is a 2020 first-person shooter game co-developed by Treyarch and Raven Software and published by Activision. It is the seventeenth main installment of the Call of Duty series and is the sixth entry in the Black Ops sub-series, following Call of Duty: Black Ops 4 (2018). Set in 1981, Black Ops Cold War's single-player story follows CIA operative Russell Adler and his team of agents as they hunt down a Soviet spy named Perseus. As with previous Call of Duty titles, the game also includes a multiplayer component and the cooperative Zombies mode."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "An operation shaped by choices",
+            "text": "As with previous Call of Duty games, Black Ops Cold War is a first-person shooter, featuring a single-player campaign, a multiplayer component, and the cooperative Zombies mode. The campaign gives players the ability to create their own custom character; players can choose their intelligence agency, skin tone, nationality, and gender, as well as different personality traits that provide in-game perks. Its missions feature a non-linear design, which gives players multiple ways to approach a mission's objectives. In-between missions, players are able to access a safe house, where they are able to review various pieces of evidence, interact with non-player characters (NPCs), and plan out subsequent missions via an evidence board. Black Ops Cold War also features multiple endings, which depend on several choices that the player has to make throughout the campaign."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Teams, objectives and vehicles",
+            "text": "The game's multiplayer component introduces three new game modes: \"VIP Escort\", \"Combined Arms\", and \"Fireteam: Dirty Bomb\", in addition to Call of Duty's standard modes, such as \"Team Deathmatch\", \"Domination\", and \"Hardpoint\". VIP Escort puts two teams of six against each other; one team is tasked with escorting their VIP—a randomly selected player from the team—to one of two exfiltration sites, while the other team must eliminate the VIP. After a round is completed, the teams switch sides; the first team to score four points will win the match. Combined Arms: Domination puts two teams of twelve on large-scale maps, which feature transport vehicles to aid players in navigating the maps, and tasks them with taking control of five to six capture zones; the first team to reach 400 points will win the match."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "Surviving another round",
+            "text": "In Zombies, one to four players—who are part of a CIA-backed response team named \"Requiem\"—fight off endless hordes of the undead, which increase in both number and difficulty with every completed round. Zombies features four main round-based maps: \"Die Maschine\", \"Firebase Z\", \"Mauer der Toten\", and \"Forsaken\". In order to unlock all parts of the maps, players must purchase several doors with \"Essence\" points. Essence can also be used to purchase various player upgrades, including perks, weapon damage upgrades—which are acquired from the \"Pack-a-Punch\" machine—and ammo modifications. Players can also earn \"salvage\" materials, which can be used to craft various pieces of equipment, obtain armor, and increase a weapon's level of rarity."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Black Ops Cold War article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1381411185",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Black Ops Cold War is now live",
+            "url": "https://www.treyarch.com/studio-culture/2020/11/Black_Ops_Cold_War_is_NOW_LIVE",
+            "publisher": "Treyarch"
+          },
+          {
+            "title": "Original game and release date",
+            "url": "https://www.activision.com/games/call-of-duty/call-of-duty-black-ops-cold-war",
+            "publisher": "Activision"
+          },
+          {
+            "title": "Original publisher game images",
+            "url": "https://store.steampowered.com/app/1985810/",
+            "publisher": "Activision / Steam"
+          },
+          {
+            "url": "https://www.activision.com/games/call-of-duty/call-of-duty-black-ops-cold-war",
+            "title": "Original game, platforms and November 13, 2020 release",
+            "publisher": "Activision"
+          },
+          {
+            "url": "https://www.callofduty.com/blog/2020/10/Call-of-Duty-Black-Ops-Cold-War-Beta-Mode-Recon",
+            "title": "Original VIP Escort and Combined Arms: Domination rules",
+            "publisher": "Activision / Call of Duty"
+          },
+          {
+            "url": "https://music.apple.com/us/song/1538244574",
+            "title": "Cold War, original Activision soundtrack album, November 13, 2020",
+            "publisher": "Apple Music / Activision Publishing"
+          }
+        ]
+      },
+      "features": []
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "status": "PASS",
+  "locale": "es",
+  "entries": [
+    {
+      "entry_id": "wikipedia-61002576",
+      "source_fields_sha256": "7ac2e623843d42296cecd422b77abc28665ee1fa96b90cce7f379bf1dc199e01",
+      "translation_sha256": "3c8210681908fc979c47d9b9b28042b54bedfdc0323a5f366032017824057b0a",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch334/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "25fe81c4b0d72d2ada218d1cd1d2db5e118248fd84e5ef6957f6879c56e5c221"
+    },
+    {
+      "entry_id": "workbook-09-10-life-is-strange-true-colors",
+      "source_fields_sha256": "978eb015c5af662cfdbd1b0fe5f89ebea5f0588089f90758f05b6445f5e23098",
+      "translation_sha256": "801c6fa2635d2194037f13ee6657b68137dfb52adaa85b0d927897ad1de373df",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch334/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "25fe81c4b0d72d2ada218d1cd1d2db5e118248fd84e5ef6957f6879c56e5c221"
+    },
+    {
+      "entry_id": "wikipedia-61004225",
+      "source_fields_sha256": "fd810816b95206e4f6cd2b83a87311ea1a4cf8e748fcd7bf8b3dfb2404d673c2",
+      "translation_sha256": "e8d81b34e4d8a34f40bafe10d0a4b986cf65be5e833725910a8b209e083a118f",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch334/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "25fe81c4b0d72d2ada218d1cd1d2db5e118248fd84e5ef6957f6879c56e5c221"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "package_audit",
+    "actual_receipt": "build/research/catalog-2021-chronological/root-september-three-private/independent-package-audit-approval.json",
+    "actual_receipt_sha256": "0e1b71d1557959d0c37d9bc4598e8203e1555edcff0535523d9e1584a0a09133",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "package_audit",
+      "independent_of_authors": [
+        "root",
+        "category_audit"
+      ],
+      "index_path": "build/research/catalog-2021-chronological/root-september-three-private/three-private-index.json",
+      "index_sha256": "5ccb188adc9d3a77331541fd0fbad6d667f838ef9991b3b1923b614035feb565",
+      "owners": [
+        {
+          "entry_id": "workbook-09-10-life-is-strange-true-colors",
+          "source_sha256": "1f0b56762df71612a344b8ba0352c398ce2d169b35b6a69abcc932ddf6cff503",
+          "target_sha256": "c7f7988203492b6f1d447a8bdc8c262671d255b0466ee509ec2d46443e0ccd2a",
+          "contact_sha256": "981f2c026a5caef96e157f1bc52d87bc2a9afdf492a32c1702a666956037bb93",
+          "english_paragraphs_read": 4,
+          "localized_paragraphs_read": 16,
+          "images_personally_viewed": 10,
+          "existing_music_objects_exact": 0
+        },
+        {
+          "entry_id": "wikipedia-61002576",
+          "source_sha256": "7f675c4adee4898e26583432da5a88001db417ad4c9b314f48699e1de6c9766f",
+          "target_sha256": "6cf2569f6a9ddb529e6a75a63beda8d950e23b778bebfd5ea8a5e5c078e6f7c7",
+          "contact_sha256": "d33bfad93cf2c2b83ee1e13c477cf5e973fa51017ba1b5e620340991140545b9",
+          "english_paragraphs_read": 4,
+          "localized_paragraphs_read": 16,
+          "images_personally_viewed": 5,
+          "existing_music_objects_exact": 0
+        },
+        {
+          "entry_id": "wikipedia-61004225",
+          "source_sha256": "2acfcec6a7190914152e29d8f5730a537fee0a1110ab961197285ef3338358ad",
+          "target_sha256": "1c8c9880d01e6ce75724527f761a6dc124a5b6a6cb6a0b38778b77762e6b30d9",
+          "contact_sha256": "f0520deafb89d864881c7c08dfa867e819e08c626eb13954439a3b8b2b83e0a9",
+          "english_paragraphs_read": 3,
+          "localized_paragraphs_read": 12,
+          "images_personally_viewed": 6,
+          "existing_music_objects_exact": 1
+        }
+      ],
+      "scope": "Read all11English and44localized paragraphs, headings/subtitle/summary. Viewed21actual final media slots across3contacts. Read8newofficial music receipts; preserved oldWelcomeToBlackreefobjectexact. No new music acquisitions or full audio checks repeated.",
+      "resolved_findings": [
+        {
+          "issue": "Tales first console release date was international September10 instead of JapanSeptember9.",
+          "resolution": "Root authorized finite metadata-only date correction applied to reproducible prepare, source, Englishprepared and target binding/index. Allfive Englishtextfields andfourlocalizedsets unchanged.",
+          "primary_sources": [
+            "https://tales-ch.jp/titles/toarise/",
+            "https://tales-ch.jp/blog/2021/002.html"
+          ]
+        },
+        {
+          "issue": "Deathloop third chapter had no bound illustration.",
+          "resolution": "Root authorized slot4 existing original gameplay rebindingP0toP2. Pixels unchanged, otherimages unchanged."
+        },
+        {
+          "issue": "Life French publishing phrase was cumbersome.",
+          "resolution": "Only summary and matchingbody0 changed sous edition de SquareEnix to edite par SquareEnix; factual meaning and allotherlocalizedtext unchanged."
+        }
+      ],
+      "primary_checks": [
+        {
+          "url": "https://press.na.square-enix.com/SQUARE-ENIX-REVEALS-FULL-TRACKLIST-FOR-LIFE-IS-STRANGE-TRUE-COLORS",
+          "finding": "OriginalAngusJuliaStone/mxmtoon/NovoAmor credited alongside licensed repertoire. All3selectedartistdescriptions explicitlyidentifygame/originalEP."
+        },
+        {
+          "url": "https://gamemusic.bn-ent.net/en/release/240/",
+          "finding": "Official basegamealbumMay25,2022, original2021game andMotoiSakuraba/collectivecredit qualified; all3selectedmetadata match Arise, no Zestiria cue."
+        },
+        {
+          "url": "https://twitter.com/deathloop/status/1628786764503519236",
+          "finding": "PublisherdatedpostFebruary23,2023 reproduced verbatim by contemporaneous report. Direct currenttweetunavailable, no claim otherwise. Rootfiniteplayercountdatecorrect."
+        },
+        {
+          "url": "https://www.gamedeveloper.com/business/-i-deathloop-i-has-looped-in-5-million-players",
+          "finding": "Actuallyread datedprimarytweetreproduction, February23,2023. MenuTomSalta andRevenantdistinctrecordingartists retainedperofficialBethesdaTuneCoremetadata."
+        }
+      ],
+      "production_writes": false
+    }
+  }
+}

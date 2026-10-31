@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "locale": "es",
+  "source_language": "en",
+  "publication_status": "validated",
+  "translation_method": "Direct complete current-English fields independently reviewed; proper names retained.",
+  "independent_review": "content/editorial/early-nimrod-es-translation-review.json",
+  "entries": [
+    {
+      "entry_id": "nimrod",
+      "source": {
+        "title": "Nimrod",
+        "subtitle": "A computer explains itself through a game",
+        "summary": "At the Festival of Britain, a wall of lights invited visitors to play Nim against a machine.",
+        "body": [
+          "Ferranti took a purpose-built Nim-playing machine to the 1951 Festival of Britain. John Bennett proposed the project, and engineer Raymond Stuart-Williams turned the proposal into working hardware. The familiar game gave visitors a way into an unfamiliar subject: automatic computation. A person could make a legal move, wait for the reply and understand the consequence without learning the machine’s circuitry first. Nimrod therefore belonged to an exhibition about technology as well as a history of play. Its public audience was part of the engineering brief, rather than an accidental discovery after construction.",
+          "Ferranti’s original guide explains how controls represented match heaps. Instead of moving counters by hand, the player pressed a numbered button on the control panel to leave a chosen amount in a heap, then asked the computer to respond. Lamps displayed the position. The arrangement translated a rule into an interface: a button expressed a choice in the game. The same written guide described input, storage and output, using the contest as a practical example of how those parts could work together.",
+          "Nimrod could display a sequence of instructions as it selected a move. Illuminated steps and arrows exposed part of the calculation instead of hiding everything behind the answer. This was a different ambition from giving a machine a mysterious personality. Ferranti’s booklet warned that describing computers as brains could make their operation seem unknowable. The game offered an inspectable problem. Visitors might enjoy winning or losing, but the demonstration also invited them to follow how a result was produced. A visible process was part of what Ferranti wanted to sell."
+        ],
+        "story_headings": [
+          "An exhibition challenge",
+          "Buttons become numbers",
+          "Showing the decision"
+        ]
+      },
+      "source_fields_sha256": "cbf6bd1cec1dee4de6d535282ea51d0b03bfc2e1976323f78631e0af7295a7b5",
+      "translation": {
+        "title": "Nimrod",
+        "subtitle": "Un ordenador se explica mediante un juego",
+        "summary": "En el Festival of Britain, un muro de luces invitaba a los visitantes a jugar al Nim contra una máquina.",
+        "body": [
+          "Ferranti llevó al Festival of Britain de 1951 una máquina construida expresamente para jugar al Nim. John Bennett propuso el proyecto y el ingeniero Raymond Stuart-Williams convirtió la propuesta en un equipo funcional. Aquel juego conocido ofrecía a los visitantes una vía de acceso a un tema desconocido: el cálculo automático. Una persona podía realizar una jugada válida, esperar la respuesta y entender sus consecuencias sin aprender primero cómo eran los circuitos de la máquina. Por tanto, Nimrod pertenecía tanto a una exposición sobre tecnología como a la historia del juego. Su público formaba parte de los objetivos del diseño, en lugar de ser un descubrimiento accidental posterior a la construcción.",
+          "La guía original de Ferranti explica cómo los controles representaban montones de cerillas. En vez de mover fichas a mano, el jugador pulsaba un botón numerado del panel de control para dejar una cantidad elegida en un montón y después pedía al ordenador que respondiera. Las luces mostraban la posición. Esta disposición traducía una regla en una interfaz: un botón expresaba una elección dentro del juego. La misma guía describía la entrada, el almacenamiento y la salida, utilizando la partida como ejemplo práctico de cómo podían funcionar juntas esas partes.",
+          "Nimrod podía mostrar una secuencia de instrucciones mientras elegía una jugada. Pasos iluminados y flechas revelaban parte del cálculo, en vez de ocultarlo todo tras la respuesta. Era una aspiración distinta de atribuir a la máquina una personalidad misteriosa. El folleto de Ferranti advertía que describir los ordenadores como cerebros podía hacer que su funcionamiento pareciera incomprensible. El juego ofrecía un problema que se podía examinar. Los visitantes podían disfrutar ganando o perdiendo, pero la demostración también los invitaba a seguir cómo se producía un resultado. Hacer visible el proceso formaba parte de lo que Ferranti quería vender."
+        ],
+        "story_headings": [
+          "Un desafío en una exposición",
+          "Los botones se convierten en números",
+          "Mostrar la decisión"
+        ]
+      },
+      "translation_sha256": "b36921b5a797e18537d54794887a5a4260217d79518bb541b82bc89a9f928573",
+      "exact_source_reuse": [],
+      "new_translation_units": [
+        "title:0",
+        "subtitle:0",
+        "summary:0",
+        "body:0",
+        "body:1",
+        "body:2",
+        "story_headings:0",
+        "story_headings:1",
+        "story_headings:2"
+      ]
+    }
+  ]
+}

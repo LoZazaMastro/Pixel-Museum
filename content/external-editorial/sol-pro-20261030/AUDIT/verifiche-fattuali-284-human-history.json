@@ -1,0 +1,518 @@
+{
+  "batch_id": "284-human-history",
+  "sources": [
+    {
+      "source_id": "ford_card",
+      "url": "https://www.thehenryford.org/collections/explore/artifact/312908",
+      "title": "First Ford Model T Production Card, September 27, 1908",
+      "publisher": "The Henry Ford",
+      "scope": "Documento originale della prima vettura di produzione, assemblata il 27 settembre 1908.",
+      "limitation": "Letto il passaggio pertinente indicizzato; non dichiarata lettura integrale del documento.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "ford_market",
+      "url": "https://www.thehenryford.org/collections/explore/articles/fords-model-t",
+      "title": "Ford’s Model T",
+      "publisher": "The Henry Ford / Bob Casey",
+      "scope": "Introduzione sul mercato il 1 ottobre 1908, distinta dalla costruzione.",
+      "limitation": "Letto il passaggio pertinente indicizzato; non dichiarata lettura integrale del documento.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "ford_autobiography",
+      "url": "https://www.gutenberg.org/cache/epub/7213/pg7213.html",
+      "title": "My Life and Work (1922)",
+      "publisher": "Henry Ford e Samuel Crowther; Project Gutenberg",
+      "scope": "Tabella originale: touring a 780 dollari per il 1910–1911.",
+      "limitation": "Letto il passaggio pertinente indicizzato; non dichiarata lettura integrale del documento.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "ford_1924",
+      "url": "https://www.museumofamericanspeed.org/sea-to-sea-in-a-model-t.html",
+      "title": "Sea to Sea in a Model T",
+      "publisher": "Museum of American Speed",
+      "scope": "Touring di base a 290 dollari dal 2 dicembre 1924; fine della produzione nel maggio 1927.",
+      "limitation": "Consultato il passaggio sul prezzo. La data iniziale di produzione della pagina non viene usata: prevale la scheda originale del 27 settembre.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "triode_museum",
+      "url": "https://collection.sciencemuseumgroup.org.uk/objects/co30819/de-forest-audion-1906-1915-thermionic-valve",
+      "title": "De Forest audion, 1906–1915",
+      "publisher": "Science Museum Group",
+      "scope": "Nel 1906 aggiunta della griglia alla valvola di Fleming, funzione amplificatrice.",
+      "limitation": "Letto il passaggio pertinente indicizzato; non dichiarata lettura integrale del documento.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "triode_harvard",
+      "url": "https://chsi.emuseum.com/objects/5445/audion-triode",
+      "title": "Audion triode",
+      "publisher": "Harvard Collection of Historical Scientific Instruments",
+      "scope": "La griglia controlla la corrente; descrizione del principio di amplificazione.",
+      "limitation": "Descrizione indicizzata letta; URL canonico dell’oggetto conservato senza identificatore di sessione.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "triode_industrial",
+      "url": "https://www.cpii.com/docs/datasheets/79/3CX2500H3.pdf",
+      "title": "3CX2500H3 data sheet",
+      "publisher": "CPI / EIMAC",
+      "scope": "Uso della triode in riscaldamento industriale a radiofrequenza.",
+      "limitation": "Letto il passaggio pertinente indicizzato; non dichiarata lettura integrale del documento.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "triode_audio",
+      "url": "https://www.westernelectric.com/300b",
+      "title": "300B electron tube",
+      "publisher": "Western Electric",
+      "scope": "Produzione contemporanea di triodi per applicazioni audio.",
+      "limitation": "Pagina di prodotto: usata per attestare la continuità della produzione, non per trasformare preferenze sonore promozionali in superiorità misurata.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "triode_audio_history",
+      "url": "https://www.westernelectric.com/company-history",
+      "title": "Company history",
+      "publisher": "Western Electric",
+      "scope": "Rinnovato interesse per l’audio a valvole e ripresa produttiva.",
+      "limitation": "Usato soltanto il dato generale di rinnovato interesse; nessuna stima di quota di mercato o domanda corrente aggiunta.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "earthquake_research",
+      "url": "https://www.usgs.gov/publications/1906-san-francisco-earthquake-a-century-later-introduction-special-section",
+      "title": "The 1906 San Francisco earthquake a century later",
+      "publisher": "US Geological Survey",
+      "scope": "Articolo del 2008: stima della magnitudo 7,9.",
+      "limitation": "Letto il passaggio pertinente indicizzato; non dichiarata lettura integrale del documento.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "earthquake_cgs",
+      "url": "https://conservation.ca.gov/cgs/earthquakes/san-francisco",
+      "title": "San Francisco earthquake",
+      "publisher": "California Geological Survey",
+      "scope": "Scheda aggiornata nel 2023: magnitudo 7,9.",
+      "limitation": "Il catalogo storico USGS riporta anche 7,8: mantenuto 7,9 come stima supportata, non misura esatta universale.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "earthquake_film",
+      "url": "https://www.loc.gov/static/programs/national-film-preservation-board/documents/san-francisco-earthquake-and-fire.pdf",
+      "title": "San Francisco Earthquake and Fire, April 18, 1906",
+      "publisher": "Daniel Eagan / Library of Congress",
+      "scope": "Titolo esatto del filmato e iscrizione al National Film Registry nel 2005.",
+      "limitation": "Letto il passaggio pertinente indicizzato; non dichiarata lettura integrale del documento.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "nobel_1903",
+      "url": "https://www.nobelprize.org/prizes/physics/1903/summary/?print=1",
+      "title": "The Nobel Prize in Physics 1903",
+      "publisher": "Nobel Prize",
+      "scope": "Becquerel metà del premio; Pierre e Marie Curie un quarto ciascuno, con distinte motivazioni.",
+      "limitation": "Passaggio ufficiale indicizzato letto; l’apertura del riepilogo principale restituiva 403.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "firebird_nac",
+      "url": "https://nac-cna.ca/en/event/notes/33719",
+      "title": "The Firebird: programme notes",
+      "publisher": "National Arts Centre",
+      "scope": "Distinzione armonica dei mondi e tecniche orchestrali: ponte, legno dell’arco, glissandi, flutter-tonguing.",
+      "limitation": "Letto il passaggio pertinente indicizzato; non dichiarata lettura integrale del documento.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "firebird_iso",
+      "url": "https://www.indianapolissymphony.org/backstage/program-notes/stravinsky-the-firebird/",
+      "title": "Stravinsky: The Firebird",
+      "publisher": "Indianapolis Symphony Orchestra",
+      "scope": "Tecniche strumentali e contesto del balletto.",
+      "limitation": "Letto il passaggio pertinente indicizzato; non dichiarata lettura integrale del documento.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "titanic_senate",
+      "url": "https://www.senate.gov/artandhistory/history/resources/pdf/TitanicReport.pdf",
+      "title": "Titanic disaster: Senate report, 28 May 1912",
+      "publisher": "United States Senate",
+      "scope": "Tabella originale: 2.223 persone, 706 superstiti, 1.517 vittime.",
+      "limitation": "Letta la tabella nel testo indicizzato. Il PDF aperto aveva 23 pagine ma zero righe estraibili; il tentativo di screenshot non ha restituito un’immagine ispezionabile. Nessuna ispezione visuale dichiarata.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "titanic_archives",
+      "url": "https://www.archives.gov/publications/prologue/2012/spring/titanic.html",
+      "title": "Titanic: a century of remembrance",
+      "publisher": "US National Archives",
+      "scope": "Ricostruzione archivistica con 2.223 persone, 1.517 morti e collisione alle 23:40.",
+      "limitation": "Letto il passaggio pertinente indicizzato; non dichiarata lettura integrale del documento.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "titanic_radio",
+      "url": "https://radioofficers.com/archives/rms-titanic/",
+      "title": "RMS Titanic",
+      "publisher": "Radio Officers’ Association",
+      "scope": "Sette avvisi sul ghiaccio ricevuti il 14 aprile 1912.",
+      "limitation": "Letto il passaggio pertinente indicizzato; non dichiarata lettura integrale del documento.",
+      "accessed_at": "2026-10-30"
+    }
+  ],
+  "decisions": [
+    {
+      "target_id": "history-1908-ford-model-t",
+      "problem": "L’INPUT confonde inizio della produzione e introduzione commerciale e semplifica l’anno del prezzo di 780 dollari.",
+      "conclusion": "Distinti 27 settembre 1908 costruzione e 1 ottobre commercializzazione. Prezzi riferiti alla touring: 780 dollari nel 1910–1911 e 290 nel dicembre 1924.",
+      "source_ids": [
+        "ford_card",
+        "ford_market",
+        "ford_autobiography",
+        "ford_1924"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1906-triode",
+      "problem": "Le affermazioni sull’uso odierno e la domanda potrebbero trasformarsi in dati di mercato non dimostrati.",
+      "conclusion": "Descritta continuità d’uso in trasmettitori, riscaldamento industriale e audio; la preferenza di ascolto resta attribuita agli appassionati. Conservati funzionamento, filiazione e contesto storico.",
+      "source_ids": [
+        "triode_museum",
+        "triode_harvard",
+        "triode_industrial",
+        "triode_audio",
+        "triode_audio_history"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1906-1906-san-francisco-earthquake",
+      "problem": "La magnitudo è presentata senza esplicitare che si tratta di una stima; titolo del filmato mancante.",
+      "conclusion": "Usata magnitudo stimata 7,9, supportata dalle fonti geologiche, senza dichiarare errati gli altri cataloghi. Identificato il filmato iscritto nel 2005.",
+      "source_ids": [
+        "earthquake_research",
+        "earthquake_cgs",
+        "earthquake_film"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1903-marie-curie",
+      "problem": "Occorre conservare le quote e le diverse motivazioni del Nobel.",
+      "conclusion": "Metà a Becquerel e metà condivisa dai Curie; nessuna deduzione sulla presenza alla cerimonia.",
+      "source_ids": [
+        "nobel_1903"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1910-the-firebird",
+      "problem": "I tecnicismi musicali isolati non chiariscono il suono.",
+      "conclusion": "Conservati ponticello, col legno, flautando, glissando e flutter-tonguing con brevi spiegazioni concrete, adattate al lessico musicale di ciascuna lingua.",
+      "source_ids": [
+        "firebird_nac",
+        "firebird_iso"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1912-sinking-of-the-titanic",
+      "problem": "Il limite di 1.635 morti dell’INPUT non è supportato dal resoconto ufficiale consultato.",
+      "conclusion": "Usato 1.517, esplicitamente attribuito all’inchiesta del Senato, senza presentarlo come conteggio universale incontestato. Sette avvisi verificati. L’approssimazione 05:18 GMT già fornita resta approssimativa: non dichiarata verifica primaria di questa conversione.",
+      "source_ids": [
+        "titanic_senate",
+        "titanic_archives",
+        "titanic_radio"
+      ],
+      "text_applied": true
+    }
+  ],
+  "metadata_proposals": [
+    {
+      "target_id": "history-1908-ford-model-t",
+      "field": "timeline_date",
+      "original": {
+        "year": 1908,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1908,
+        "month": 10,
+        "day": 1,
+        "precision": "day",
+        "event_semantics": "Introduzione commerciale del Model T"
+      },
+      "source_ids": [
+        "ford_market"
+      ],
+      "reason": "Proposta separata per l’evento descritto; originali e catalogo non modificati."
+    },
+    {
+      "target_id": "history-1910-the-firebird",
+      "field": "timeline_date",
+      "original": {
+        "year": 1910,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1910,
+        "month": 6,
+        "day": 25,
+        "precision": "day",
+        "event_semantics": "Prima rappresentazione pubblica di The Firebird"
+      },
+      "source_ids": [
+        "firebird_nac",
+        "firebird_iso"
+      ],
+      "reason": "Proposta separata per l’evento descritto; originali e catalogo non modificati."
+    },
+    {
+      "target_id": "history-1912-sinking-of-the-titanic",
+      "field": "timeline_date",
+      "original": {
+        "year": 1912,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1912,
+        "month": 4,
+        "day": 15,
+        "precision": "day",
+        "event_semantics": "Affondamento del Titanic"
+      },
+      "source_ids": [
+        "titanic_senate",
+        "titanic_archives"
+      ],
+      "reason": "Proposta separata per l’evento descritto; originali e catalogo non modificati."
+    }
+  ],
+  "editorial_review": {
+    "fidelity": "Conservate tutte le informazioni delle dieci card, compresi nomi, opere, tecniche, unità di misura e cronologie; corretti soltanto i punti documentati nell’audit. Le voci Marie Curie ed Einstein riguardano eventi espliciti, non la nascita.",
+    "style": "EN scritto e salvato prima; adattamenti IT, FR, DE, ES in prosa naturale, titoli specifici e paragrafi interni brevi per le card più lunghe. Nessuna nuova card.",
+    "attributions": "Fonti, licenze e cronologie originali restano negli INPUT protetti. Nuovi riscontri documentati qui.",
+    "english_written_first": true,
+    "languages": [
+      "en",
+      "it",
+      "fr",
+      "de",
+      "es"
+    ],
+    "entry_count": 10,
+    "card_count_per_language": 10,
+    "reviewed_at": "2026-10-30T03:16:55.080718+00:00",
+    "english_summary_word_range": [
+      35,
+      40
+    ],
+    "structural_checks": "Schema, ID, ordine, numero di card e cinque lingue verificati dal validatore. Tutti i titoli presenti; nessun HTML o Markdown nei testi."
+  },
+  "status": "completed",
+  "validation": {
+    "valid": true,
+    "batch_id": "284-human-history",
+    "completed": true,
+    "entry_count": 10,
+    "card_count_per_language": 10,
+    "language_count": 5,
+    "translated_card_count": 50,
+    "entry_card_counts": {
+      "history-1902-a-trip-to-the-moon": 1,
+      "history-1903-marie-curie": 1,
+      "history-1903-wright-flyer": 1,
+      "history-1905-special-relativity": 1,
+      "history-1906-triode": 1,
+      "history-1906-1906-san-francisco-earthquake": 1,
+      "history-1908-ford-model-t": 1,
+      "history-1910-the-firebird": 1,
+      "history-1912-sinking-of-the-titanic": 1,
+      "history-1913-assembly-line": 1
+    },
+    "issue_counts": {
+      "history-1902-a-trip-to-the-moon": 0,
+      "history-1903-marie-curie": 0,
+      "history-1903-wright-flyer": 0,
+      "history-1905-special-relativity": 0,
+      "history-1906-triode": 0,
+      "history-1906-1906-san-francisco-earthquake": 0,
+      "history-1908-ford-model-t": 0,
+      "history-1910-the-firebird": 0,
+      "history-1912-sinking-of-the-titanic": 0,
+      "history-1913-assembly-line": 0
+    },
+    "summary_checks": [
+      {
+        "entry_id": "history-1902-a-trip-to-the-moon",
+        "feature_id": null,
+        "english_summary_words": 40
+      },
+      {
+        "entry_id": "history-1903-marie-curie",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "history-1903-wright-flyer",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "history-1905-special-relativity",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "history-1906-triode",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "history-1906-1906-san-francisco-earthquake",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "history-1908-ford-model-t",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "history-1910-the-firebird",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "history-1912-sinking-of-the-titanic",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "history-1913-assembly-line",
+        "feature_id": null,
+        "english_summary_words": 35
+      }
+    ],
+    "editorial_review": [
+      "history-1902-a-trip-to-the-moon/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1903-marie-curie/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1903-marie-curie/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1903-marie-curie/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1903-marie-curie/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1905-special-relativity/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1905-special-relativity/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1905-special-relativity/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1905-special-relativity/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1906-triode/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1906-triode/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1906-1906-san-francisco-earthquake/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1906-1906-san-francisco-earthquake/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1906-1906-san-francisco-earthquake/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1906-1906-san-francisco-earthquake/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1912-sinking-of-the-titanic/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1912-sinking-of-the-titanic/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1912-sinking-of-the-titanic/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1912-sinking-of-the-titanic/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1913-assembly-line/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1913-assembly-line/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1913-assembly-line/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1913-assembly-line/main/es: main title changed; check that this is a descriptive title and not an altered official name"
+    ],
+    "failures": []
+  },
+  "output_sha256": "80bf9ef5200c06c9460af4b0db60a022f3699e92dac5ea9f24f7ff08c996f4b7",
+  "expansion_assessments": [
+    {
+      "target_id": "history-1902-a-trip-to-the-moon",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1903-marie-curie",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1903-wright-flyer",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1905-special-relativity",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1906-triode",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1906-1906-san-francisco-earthquake",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1908-ford-model-t",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1910-the-firebird",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1912-sinking-of-the-titanic",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1913-assembly-line",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    }
+  ],
+  "root_review": {
+    "reviewed_at": "2026-10-30T03:26:33.798592+00:00",
+    "scope": "Rilettura mirata degli avvisi quantitativi e dei punti fattuali segnalati, successiva alla revisione del redattore; non verifica universale indipendente di ogni fonte.",
+    "finding": "Controllati valori, unità e adattamenti: dodici cavalli/nove kW, quattro miglia/sei km, decennio Settanta, separatori e orari equivalenti. Ford e Titanic hanno correzioni documentate. Nessuna ulteriore modifica.",
+    "additional_text_edits": false
+  }
+}

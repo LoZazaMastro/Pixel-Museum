@@ -1,0 +1,1023 @@
+{
+  "schema_version": 1,
+  "checked_utc": "2026-10-20T21:41:56.467195+00:00",
+  "baseline_catalog_sha256": "0651bb2112edaa53b92f36368c5ee26bfed05bf6049e40fa9bd219492816b639",
+  "master_catalog_modified": false,
+  "inputs": [
+    {
+      "file": "steam-media-additions.json",
+      "sha256": "7538308283b2571e00669d0ebb398df00397ca389d4146255185c30993edb838",
+      "records": 213
+    },
+    {
+      "file": "publisher-media-additions.json",
+      "sha256": "eeb168326cf142c7154858908db6d806614513f209d08fb9dce39a5b3570f110",
+      "records": 10
+    },
+    {
+      "file": "media-wikidata-steam-additions.json",
+      "sha256": "bccaaaa126b43173a28053fcceee368602802efe7041b06f067179e5405dc9e1",
+      "records": 141
+    }
+  ],
+  "distinct_articles": 1064,
+  "before_hd_cover_articles": 255,
+  "after_additive_hd_cover_articles": 419,
+  "new_distinct_covered_articles": 164,
+  "newly_covered": [
+    {
+      "entry_id": "wikipedia-2975597",
+      "title": "Romancing SaGa 2",
+      "year": 1993,
+      "hd_images": 3
+    },
+    {
+      "entry_id": "dance-dance-revolution",
+      "title": "Dance Dance Revolution",
+      "year": 1998,
+      "hd_images": 1
+    },
+    {
+      "entry_id": "wikipedia-52727",
+      "title": "Radiant Silvergun",
+      "year": 1998,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-3561965",
+      "title": "Garou: Mark of the Wolves",
+      "year": 1999,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-165155",
+      "title": "Crazy Taxi",
+      "year": 1999,
+      "hd_images": 1
+    },
+    {
+      "entry_id": "wikipedia-1670456",
+      "title": "MDK2",
+      "year": 2000,
+      "hd_images": 1
+    },
+    {
+      "entry_id": "wikipedia-362641",
+      "title": "Grand Theft Auto III",
+      "year": 2001,
+      "hd_images": 1
+    },
+    {
+      "entry_id": "wikipedia-238677",
+      "title": "Grand Theft Auto: Vice City",
+      "year": 2002,
+      "hd_images": 1
+    },
+    {
+      "entry_id": "wikipedia-632845",
+      "title": "Mafia",
+      "year": 2002,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-723910",
+      "title": "Manhunt",
+      "year": 2003,
+      "hd_images": 1
+    },
+    {
+      "entry_id": "wikipedia-5459591",
+      "title": "Sudeki",
+      "year": 2004,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-304738",
+      "title": "Doom 3",
+      "year": 2004,
+      "hd_images": 1
+    },
+    {
+      "entry_id": "wikipedia-877420",
+      "title": "Psychonauts",
+      "year": 2005,
+      "hd_images": 3
+    },
+    {
+      "entry_id": "wikipedia-18622076",
+      "title": "Garry's Mod",
+      "year": 2006,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-15915369",
+      "title": "Space Invaders Extreme",
+      "year": 2008,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-6082373",
+      "title": "Castle Crashers",
+      "year": 2008,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-13362612",
+      "title": "Flower",
+      "year": 2009,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-23994263",
+      "title": "Metro 2033",
+      "year": 2010,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-27408002",
+      "title": "World of Tanks",
+      "year": 2010,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-33226668",
+      "title": "The Legend of Heroes: Trails from Zero",
+      "year": 2010,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-27309565",
+      "title": "Assassin's Creed: Brotherhood",
+      "year": 2010,
+      "hd_images": 1
+    },
+    {
+      "entry_id": "wikipedia-25771130",
+      "title": "VVVVVV",
+      "year": 2010,
+      "hd_images": 1
+    },
+    {
+      "entry_id": "wikipedia-26797617",
+      "title": "Monday Night Combat",
+      "year": 2010,
+      "hd_images": 3
+    },
+    {
+      "entry_id": "wikipedia-23047813",
+      "title": "Halo: Reach",
+      "year": 2010,
+      "hd_images": 3
+    },
+    {
+      "entry_id": "wikipedia-29240396",
+      "title": "Back to the Future: The Game",
+      "year": 2010,
+      "hd_images": 3
+    },
+    {
+      "entry_id": "wikipedia-30602654",
+      "title": "Bastion",
+      "year": 2011,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-38097022",
+      "title": "The Stanley Parable",
+      "year": 2011,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-12600716",
+      "title": "Rage",
+      "year": 2011,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-35640037",
+      "title": "Call of Duty: Black Ops II",
+      "year": 2012,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-31125095",
+      "title": "The Walking Dead",
+      "year": 2012,
+      "hd_images": 1
+    },
+    {
+      "entry_id": "wikipedia-36949806",
+      "title": "Mark of the Ninja",
+      "year": 2012,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-23799631",
+      "title": "Far Cry 3",
+      "year": 2012,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-34291637",
+      "title": "XCOM: Enemy Unknown",
+      "year": 2012,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-50539510",
+      "title": "The House in Fata Morgana",
+      "year": 2012,
+      "hd_images": 1
+    },
+    {
+      "entry_id": "wikipedia-31985739",
+      "title": "Blacklight: Retribution",
+      "year": 2012,
+      "hd_images": 1
+    },
+    {
+      "entry_id": "wikipedia-34697572",
+      "title": "Call of Duty: Ghosts",
+      "year": 2013,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-28344576",
+      "title": "BioShock Infinite",
+      "year": 2013,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-39548361",
+      "title": "The Swapper",
+      "year": 2013,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-29177750",
+      "title": "Dota 2",
+      "year": 2013,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-40978093",
+      "title": "XCOM: Enemy Within",
+      "year": 2013,
+      "hd_images": 1
+    },
+    {
+      "entry_id": "wikipedia-39469801",
+      "title": "Need for Speed Rivals",
+      "year": 2013,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-39535253",
+      "title": "The Binding of Isaac: Rebirth",
+      "year": 2014,
+      "hd_images": 2
+    },
+    {
+      "entry_id": "wikipedia-40498390",
+      "title": "Child of Light",
+      "year": 2014,
+      "hd_images": 3
+    },
+    {
+      "entry_id": "wikipedia-41301253",
+      "title": "Tales from the Borderlands",
+      "year": 2014,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-34668214",
+      "title": "Broken Age",
+      "year": 2014,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-53413258",
+      "title": "The Legend of Heroes: Trails of Cold Steel II",
+      "year": 2014,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "workbook-09-15-undertale",
+      "title": "Undertale",
+      "year": 2015,
+      "hd_images": 1
+    },
+    {
+      "entry_id": "wikipedia-46365176",
+      "title": "Call of Duty: Black Ops III",
+      "year": 2015,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-36874131",
+      "title": "Metal Gear Solid V: The Phantom Pain",
+      "year": 2015,
+      "hd_images": 1
+    },
+    {
+      "entry_id": "wikipedia-48825904",
+      "title": "SteamWorld Heist",
+      "year": 2015,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-43010284",
+      "title": "Ori and the Blind Forest",
+      "year": 2015,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-41950404",
+      "title": "Nuclear Throne",
+      "year": 2015,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-42398823",
+      "title": "Skyforge",
+      "year": 2015,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-46989674",
+      "title": "Dark Souls III",
+      "year": 2016,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-45430355",
+      "title": "NBA 2K17",
+      "year": 2016,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-53318656",
+      "title": "PUBG: Battlegrounds",
+      "year": 2017,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-43011121",
+      "title": "Cuphead",
+      "year": 2017,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-53842713",
+      "title": "Call of Duty: WWII",
+      "year": 2017,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-51141156",
+      "title": "Sonic Mania",
+      "year": 2017,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-53635543",
+      "title": "Star Wars Battlefront II",
+      "year": 2017,
+      "hd_images": 2
+    },
+    {
+      "entry_id": "wikipedia-53391134",
+      "title": "Hollow Knight",
+      "year": 2017,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-54289600",
+      "title": "Monster Hunter: World",
+      "year": 2018,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-57124876",
+      "title": "Forza Horizon 4",
+      "year": 2018,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-65260678",
+      "title": "Among Us",
+      "year": 2018,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-41358217",
+      "title": "Rust",
+      "year": 2018,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "workbook-04-16-anno-1800",
+      "title": "Anno 1800",
+      "year": 2019,
+      "hd_images": 5
+    },
+    {
+      "entry_id": "wikipedia-60883053",
+      "title": "Call of Duty: Modern Warfare",
+      "year": 2019,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-61158697",
+      "title": "Atelier Ryza: Ever Darkness & the Secret Hideout",
+      "year": 2019,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "workbook-10-06-baldur-s-gate-3",
+      "title": "Baldur's Gate 3",
+      "year": 2020,
+      "hd_images": 5
+    },
+    {
+      "entry_id": "wikipedia-59284486",
+      "title": "Hades",
+      "year": 2020,
+      "hd_images": 5
+    },
+    {
+      "entry_id": "wikipedia-36691288",
+      "title": "Cyberpunk 2077",
+      "year": 2020,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-63047099",
+      "title": "Fall Guys",
+      "year": 2020,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-64063961",
+      "title": "NBA 2K21",
+      "year": 2020,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-71824278",
+      "title": "Atri: My Dear Moments",
+      "year": 2020,
+      "hd_images": 3
+    },
+    {
+      "entry_id": "wikipedia-54280556",
+      "title": "Ori and the Will of the Wisps",
+      "year": 2020,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-63668523",
+      "title": "F1 2020",
+      "year": 2020,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-77278623",
+      "title": "Anthology of the Killer",
+      "year": 2020,
+      "hd_images": 1
+    },
+    {
+      "entry_id": "wikipedia-63729301",
+      "title": "Madden NFL 21",
+      "year": 2020,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-64677974",
+      "title": "5D Chess with Multiverse Time Travel",
+      "year": 2020,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-60831159",
+      "title": "9 Monkeys of Shaolin",
+      "year": 2020,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-76080352",
+      "title": "A Monster's Expedition",
+      "year": 2020,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-72197404",
+      "title": "Amazing Cultivation Simulator",
+      "year": 2020,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-70662101",
+      "title": "Art of Rally",
+      "year": 2020,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-63809881",
+      "title": "Assassin's Creed Valhalla",
+      "year": 2020,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-64771609",
+      "title": "Atelier Ryza 2: Lost Legends & the Secret Fairy",
+      "year": 2020,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-69396931",
+      "title": "Automobilista 2",
+      "year": 2020,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-61585058",
+      "title": "Beyond a Steel Sky",
+      "year": 2020,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "workbook-04-22-nier-replicant-ver-1-22474487139",
+      "title": "NieR Replicant ver.1.22474487139...",
+      "year": 2021,
+      "hd_images": 5
+    },
+    {
+      "entry_id": "workbook-04-30-returnal",
+      "title": "Returnal",
+      "year": 2021,
+      "hd_images": 5
+    },
+    {
+      "entry_id": "workbook-05-07-resident-evil-village",
+      "title": "Resident Evil Village",
+      "year": 2021,
+      "hd_images": 5
+    },
+    {
+      "entry_id": "workbook-05-25-biomutant",
+      "title": "Biomutant",
+      "year": 2021,
+      "hd_images": 5
+    },
+    {
+      "entry_id": "workbook-06-11-ratchet-clank-rift-apart",
+      "title": "Ratchet & Clank: Rift Apart",
+      "year": 2021,
+      "hd_images": 5
+    },
+    {
+      "entry_id": "workbook-08-17-humankind",
+      "title": "Humankind",
+      "year": 2021,
+      "hd_images": 5
+    },
+    {
+      "entry_id": "workbook-08-25-psychonauts-2",
+      "title": "Psychonauts 2",
+      "year": 2021,
+      "hd_images": 5
+    },
+    {
+      "entry_id": "workbook-09-10-life-is-strange-true-colors",
+      "title": "Life Is Strange: True Colors",
+      "year": 2021,
+      "hd_images": 5
+    },
+    {
+      "entry_id": "wikipedia-69387571",
+      "title": "Blue Archive",
+      "year": 2021,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-67971343",
+      "title": "Forza Horizon 5",
+      "year": 2021,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-67551622",
+      "title": "Final Fantasy XIV: Endwalker",
+      "year": 2021,
+      "hd_images": 3
+    },
+    {
+      "entry_id": "wikipedia-65786018",
+      "title": "Mass Effect Legendary Edition",
+      "year": 2021,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-69120012",
+      "title": "Poppy Playtime",
+      "year": 2021,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-67978072",
+      "title": "Madden NFL 22",
+      "year": 2021,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-67882486",
+      "title": "Alfred Hitchcock – Vertigo",
+      "year": 2021,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-78623212",
+      "title": "Antonball Deluxe",
+      "year": 2021,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-71212525",
+      "title": "Astria Ascending",
+      "year": 2021,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-64625832",
+      "title": "Balan Wonderworld",
+      "year": 2021,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "workbook-03-01-aperture-desk-job",
+      "title": "Aperture Desk Job",
+      "year": 2022,
+      "hd_images": 5
+    },
+    {
+      "entry_id": "workbook-04-05-lego-star-wars-the-skywalker-saga",
+      "title": "LEGO Star Wars: The Skywalker Saga",
+      "year": 2022,
+      "hd_images": 5
+    },
+    {
+      "entry_id": "workbook-12-13-crisis-core-final-fantasy-vii-reunion",
+      "title": "Crisis Core: Final Fantasy VII Reunion",
+      "year": 2022,
+      "hd_images": 5
+    },
+    {
+      "entry_id": "wikipedia-61002621",
+      "title": "Elden Ring",
+      "year": 2022,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-65333536",
+      "title": "God of War Ragnarök",
+      "year": 2022,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-73747834",
+      "title": "20 Minutes Till Dawn",
+      "year": 2022,
+      "hd_images": 3
+    },
+    {
+      "entry_id": "wikipedia-68100842",
+      "title": "AI: The Somnium Files – Nirvana Initiative",
+      "year": 2022,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-72677863",
+      "title": "Atari 50",
+      "year": 2022,
+      "hd_images": 3
+    },
+    {
+      "entry_id": "wikipedia-77739989",
+      "title": "Cultic",
+      "year": 2022,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-64398557",
+      "title": "Azure Striker Gunvolt 3",
+      "year": 2022,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-66659306",
+      "title": "BROK the InvestiGator",
+      "year": 2022,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-70711554",
+      "title": "Call of Duty: Modern Warfare II",
+      "year": 2022,
+      "hd_images": 3
+    },
+    {
+      "entry_id": "wikipedia-66086932",
+      "title": "The Callisto Protocol",
+      "year": 2022,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-72536576",
+      "title": "The Case of the Golden Idol",
+      "year": 2022,
+      "hd_images": 3
+    },
+    {
+      "entry_id": "daily-08-08",
+      "title": "Stray",
+      "year": 2022,
+      "hd_images": 5
+    },
+    {
+      "entry_id": "workbook-03-03-wo-long-fallen-dynasty",
+      "title": "Wo Long: Fallen Dynasty",
+      "year": 2023,
+      "hd_images": 5
+    },
+    {
+      "entry_id": "workbook-04-18-minecraft-legends",
+      "title": "Minecraft Legends",
+      "year": 2023,
+      "hd_images": 5
+    },
+    {
+      "entry_id": "workbook-05-02-age-of-wonders-4",
+      "title": "Age of Wonders 4",
+      "year": 2023,
+      "hd_images": 5
+    },
+    {
+      "entry_id": "workbook-09-06-starfield",
+      "title": "Starfield",
+      "year": 2023,
+      "hd_images": 5
+    },
+    {
+      "entry_id": "workbook-10-17-sonic-superstars",
+      "title": "Sonic Superstars",
+      "year": 2023,
+      "hd_images": 5
+    },
+    {
+      "entry_id": "wikipedia-70127936",
+      "title": "Street Fighter 6",
+      "year": 2023,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-68687157",
+      "title": "Marvel's Spider-Man 2",
+      "year": 2023,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-69591638",
+      "title": "30XX",
+      "year": 2023,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-70594238",
+      "title": "AEW Fight Forever",
+      "year": 2023,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-72449126",
+      "title": "Armored Core VI: Fires of Rubicon",
+      "year": 2023,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-71659721",
+      "title": "Assassin's Creed Mirage",
+      "year": 2023,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-75641238",
+      "title": "Astrea: Six-Sided Oracles",
+      "year": 2023,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-72385563",
+      "title": "Atelier Ryza 3: Alchemist of the End & the Secret Key",
+      "year": 2023,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-74376895",
+      "title": "BattleBit Remastered",
+      "year": 2023,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-69689754",
+      "title": "Black Skylands",
+      "year": 2023,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-68680281",
+      "title": "Blood Bowl 3",
+      "year": 2023,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-74653484",
+      "title": "Bomb Rush Cyberfunk",
+      "year": 2023,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-83969309",
+      "title": "Book of Hours",
+      "year": 2023,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-73953855",
+      "title": "Call of Duty: Modern Warfare III",
+      "year": 2023,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-73683044",
+      "title": "Cassette Beasts",
+      "year": 2023,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-74817120",
+      "title": "Chants of Sennaar",
+      "year": 2023,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "workbook-02-02-persona-3-reload",
+      "title": "Persona 3 Reload",
+      "year": 2024,
+      "hd_images": 5
+    },
+    {
+      "entry_id": "wikipedia-74017718",
+      "title": "Metaphor: ReFantazio",
+      "year": 2024,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-71040722",
+      "title": "Final Fantasy VII Rebirth",
+      "year": 2024,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-60275778",
+      "title": "Satisfactory",
+      "year": 2024,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-72707421",
+      "title": "Animal Well",
+      "year": 2024,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-76141126",
+      "title": "Balatro",
+      "year": 2024,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-72449855",
+      "title": "Tekken 8",
+      "year": 2024,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-69304869",
+      "title": "MultiVersus",
+      "year": 2024,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-78158850",
+      "title": "1000xResist",
+      "year": 2024,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-72100835",
+      "title": "Alone in the Dark",
+      "year": 2024,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-83100214",
+      "title": "An Alt Girl for Skoof",
+      "year": 2024,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-74143531",
+      "title": "Antonblast",
+      "year": 2024,
+      "hd_images": 1
+    },
+    {
+      "entry_id": "wikipedia-65063196",
+      "title": "Black Myth: Wukong",
+      "year": 2024,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-72448598",
+      "title": "Hades II",
+      "year": 2025,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-77750771",
+      "title": "Clair Obscur: Expedition 33",
+      "year": 2025,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-79672334",
+      "title": "Blue Prince",
+      "year": 2025,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-59961092",
+      "title": "Hollow Knight: Silksong",
+      "year": 2025,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-80588007",
+      "title": "Abiotic Factor",
+      "year": 2025,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-81666226",
+      "title": "And Roger",
+      "year": 2025,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-76898238",
+      "title": "Assassin's Creed Shadows",
+      "year": 2025,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-32795983",
+      "title": "Asylum",
+      "year": 2025,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-82034069",
+      "title": "Back to the Dawn",
+      "year": 2025,
+      "hd_images": 4
+    },
+    {
+      "entry_id": "wikipedia-67905295",
+      "title": "Battlefield 6",
+      "year": 2025,
+      "hd_images": 4
+    }
+  ],
+  "verified_image_records_checked": 1413,
+  "distinct_image_urls": 983,
+  "editorial_signoffs": 0,
+  "limitations": [
+    "This is an acquisition receipt, not editorial signoff or a rights clearance.",
+    "Publisher copyright and edition context remain explicit. Unmapped screenshots are gallery media, not invented paragraph illustrations.",
+    "Original Breakout HD cover remains unresolved; correct Strong photo public endpoint is capped at1200px. No enlargement or modern game substitution.",
+    "DDR photograph is dated2011 and illustrates continued arcade play, not1998 launch hardware."
+  ],
+  "unknown_ids": []
+}

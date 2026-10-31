@@ -1,0 +1,483 @@
+{
+  "batch_id": "283-human-history",
+  "sources": [
+    {
+      "source_id": "bie_chicago",
+      "url": "https://bie-expo.bie-paris.org/site/en/latest/blog/entry/illuminating-the-white-city-tesla-vs-edison-at-expo-1893-chicago",
+      "title": "Illuminating the White City: Tesla vs. Edison at Expo 1893 Chicago",
+      "publisher": "Bureau International des Expositions",
+      "scope": "Appalto Westinghouse, dimostrazione della corrente alternata, vantaggi economici/efficienza e persistenti discussioni sulla sicurezza.",
+      "limitation": "Passaggi pertinenti letti; non certifica il primato assoluto di prima esposizione interamente elettrica.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "smithsonian_lamps",
+      "url": "https://repository.si.edu/bitstream/handle/10088/18962/SSS_12_Abbot_1932.pdf",
+      "title": "Great Inventions, p. 36 (1932)",
+      "publisher": "Charles Greeley Abbot / Smithsonian Institution",
+      "scope": "Il resoconto riporta dodici alternatori e 250.000 lampade; compatibile con oltre 200.000 dell’INPUT.",
+      "limitation": "Letto il passaggio indicizzato del libro; apertura integrale del PDF bloccata dalla dimensione di 29 MB. Non dichiarata lettura integrale o ispezione delle immagini.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "lumiere_device",
+      "url": "https://www.institut-lumiere.org/le-cinematographe-lumiere",
+      "title": "Le Cinématographe Lumière",
+      "publisher": "Institut Lumière",
+      "scope": "22 marzo 1895 dimostrazione alla Société d’encouragement; 28 dicembre prima commerciale dei Lumière.",
+      "limitation": "Contenuto pertinente indicizzato letto; le formule celebrative di primato universale sono circoscritte nel testo.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "lumiere_museum",
+      "url": "https://www.institut-lumiere.org/musee-lumiere-fr",
+      "title": "Musée Lumière",
+      "publisher": "Institut Lumière",
+      "scope": "Trentatré spettatori alla prima del 28 dicembre 1895.",
+      "limitation": "Pagina indicizzata consultata; nessuna pretesa di prima proiezione animata in assoluto.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "lumiere_presskit",
+      "url": "https://medias.unifrance.org/medias/86/156/171094/presse/lumiere-presskit-french.pdf",
+      "title": "Lumière! Press kit",
+      "publisher": "Institut Lumière / Sorties d’Usine Productions, distribuito da UniFrance",
+      "scope": "Trentatré entrate paganti, oltre agli invitati; distinzione utile dal totale approssimativo di quaranta dell’INPUT.",
+      "limitation": "Letto il passaggio indicizzato pertinente, non tutto il fascicolo.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "nasa_ranges",
+      "url": "https://imagine.gsfc.nasa.gov/ask_astro/xrays.html",
+      "title": "Imagine the Universe: X-ray questions and answers",
+      "publisher": "NASA Goddard",
+      "scope": "Limiti convenzionali e sovrapposizione fra raggi X e gamma; gli intervalli non sono confini fisici rigidi.",
+      "limitation": "Passaggio pertinente letto; non sostituito arbitrariamente l’intervallo approssimativo fornito nell’INPUT.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "fda_xray",
+      "url": "https://www.fda.gov/radiation-emitting-products/medical-imaging/medical-x-ray-imaging",
+      "title": "Medical X-ray Imaging",
+      "publisher": "US Food and Drug Administration",
+      "scope": "Radiazione ionizzante, danno potenziale al DNA, rischio oncologico dipendente dalla dose, effetti tissutali ad alte esposizioni.",
+      "limitation": "Verifica del punto scientifico nella riscrittura; non consulenza clinica individuale né stime di rischio aggiunte.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "fda_dose",
+      "url": "https://www.fda.gov/radiation-emitting-products/medical-x-ray-imaging/questions-and-answers-physicians-about-medical-x-rays",
+      "title": "Questions and Answers for Physicians About Medical X-Rays",
+      "publisher": "US Food and Drug Administration",
+      "scope": "Dosi elevate e ustioni, distinzione da una conseguenza inevitabile di ogni radiografia.",
+      "limitation": "Passaggio pertinente indicizzato letto.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "olympic_connolly",
+      "url": "https://www.olympics.com/ioc/news/athens-1896-125-years-of-shared-olympic-values",
+      "title": "Athens 1896: 125 years of shared Olympic values",
+      "publisher": "International Olympic Committee",
+      "scope": "Quattordici paesi, maggioranza greca e Connolly primo campione dopo oltre 1.500 anni.",
+      "limitation": "Passaggio pertinente consultato; campione non equivale a un presunto antico medagliato.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "olympic_medals",
+      "url": "https://library.olympics.com/Default/digitalCollection/DigitalCollectionAttachmentDownloadHandler.ashx?documentId=173441&skipWatermark=true",
+      "title": "Olympic Medals",
+      "publisher": "Olympic Studies Centre / IOC",
+      "scope": "Argento al primo classificato, rame al secondo nel 1896.",
+      "limitation": "Testo pertinente indicizzato consultato; non dichiarata lettura integrale delle immagini.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "thomson_lecture",
+      "url": "https://web2.lemoyne.edu/~giunta/EA/THOMSONann.HTML",
+      "title": "Discovery of the Electron: J. J. Thomson; Nobel lecture transcription",
+      "publisher": "J. J. Thomson / Le Moyne College",
+      "scope": "Thomson distingue l’apporto di C. T. R. Wilson alla condensazione e quello di Townsend alla misura della carica.",
+      "limitation": "Letti i passaggi pertinenti della trascrizione primaria: il Charles Wilson dell’INPUT viene esplicitato come Charles Thomson Rees Wilson, senza confonderlo con H. A. Wilson.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "thomson_nobel",
+      "url": "https://www.nobelprize.org/prizes/physics/1906/thomson/biographical/",
+      "title": "J. J. Thomson: Biographical",
+      "publisher": "Nobel Prize",
+      "scope": "Identificazione dell’elettrone mediante raggi catodici nel 1897.",
+      "limitation": "Passaggi indicizzati consultati; non aggiunta una nuova data giornaliera al catalogo.",
+      "accessed_at": "2026-10-30"
+    },
+    {
+      "source_id": "marconi_oxford",
+      "url": "https://www.mhs.ox.ac.uk/marconi/exhibition/atlanticcrossing.html",
+      "title": "Wireless World: Atlantic Crossing",
+      "publisher": "Oxford History of Science Museum",
+      "scope": "12 dicembre 1901, Poldhu–St John’s, tre punti Morse e Kemp; segnale ascoltato, troppo debole per una registrazione su nastro.",
+      "limitation": "Pagina letta; conservato reported, senza trasformare una testimonianza di ascolto in una registrazione strumentale verificata.",
+      "accessed_at": "2026-10-30"
+    }
+  ],
+  "decisions": [
+    {
+      "target_id": "history-1893-world-s-columbian-exposition",
+      "problem": "L’INPUT combina prima esposizione interamente elettrica, vittoria definitiva e superiorità di sicurezza come primati assoluti.",
+      "conclusion": "Descritte l’ampiezza della dimostrazione e la vittoria nell’appalto, mantenendo distribuzione efficiente, trasmissione a distanza e oltre 200.000 lampade. Le fonti istituzionali riferiscono che il confronto sulla sicurezza proseguiva: eliminata la falsa equivalenza fra successo della fiera e prova di sicurezza superiore.",
+      "source_ids": [
+        "bie_chicago",
+        "smithsonian_lamps"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1895-auguste-and-louis-lumi-re",
+      "problem": "Il pubblico di dicembre è indicato approssimativamente in quaranta; la proiezione di marzo ha un primato globale non delimitato.",
+      "conclusion": "Usato il dato istituzionale di trentatré ingressi paganti, distinguendo gli invitati. Marzo è una dimostrazione precoce; dicembre è la prima proiezione commerciale dei Lumière e la data convenzionale della nascita del cinema. Nessuna rivendicazione di primato universale di tutte le immagini animate.",
+      "source_ids": [
+        "lumiere_device",
+        "lumiere_museum",
+        "lumiere_presskit"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1895-x-ray",
+      "problem": "La separazione X/gamma appare assoluta e i danni sanitari possono sembrare indipendenti dalla dose.",
+      "conclusion": "Intervalli indicati come approssimativi e confine non netto; danni gravi riferiti alle alte dosi. Conservati tutti gli ordini di grandezza, applicazioni e rischi forniti. Esponenti ripristinati in Unicode, senza HTML.",
+      "source_ids": [
+        "nasa_ranges",
+        "fda_xray",
+        "fda_dose"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1896-1896-summer-olympics",
+      "problem": "Connolly definito primo medagliato dopo quindici secoli: ciò suggerisce medaglie anche nell’antichità.",
+      "conclusion": "Corretto in primo campione olimpico dopo oltre quindici secoli, secondo il CIO. Conservati i premi effettivi in argento e rame e la riclassificazione successiva.",
+      "source_ids": [
+        "olympic_connolly",
+        "olympic_medals"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1897-electron",
+      "problem": "Il nome Charles Wilson rischia la confusione con H. A. Wilson; il testo non deve attribuire a tutti la medesima scoperta nello stesso esperimento.",
+      "conclusion": "Esplicitato Charles Thomson Rees Wilson e descritte ricerche collegate alla scoperta di Thomson, come documentate nella sua conferenza Nobel.",
+      "source_ids": [
+        "thomson_lecture",
+        "thomson_nobel"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1901-guglielmo-marconi",
+      "problem": "Occorre distinguere la ricezione riferita dai testimoni da un segnale registrato.",
+      "conclusion": "Conservata la forma reported/riferirono e confermata la data 12 dicembre 1901. Non aggiunta una certezza strumentale che la fonte non documenta.",
+      "source_ids": [
+        "marconi_oxford"
+      ],
+      "text_applied": true
+    }
+  ],
+  "metadata_proposals": [
+    {
+      "target_id": "history-1895-auguste-and-louis-lumi-re",
+      "field": "timeline_date",
+      "original": {
+        "year": 1895,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1895,
+        "month": 12,
+        "day": 28,
+        "precision": "day",
+        "event_semantics": "Prima proiezione pubblica commerciale dei Lumière"
+      },
+      "reason": "Data dell’evento esplicito, non nascita della persona. Proposta separata: originali e catalogo intatti.",
+      "source_ids": [
+        "lumiere_device",
+        "lumiere_museum"
+      ]
+    },
+    {
+      "target_id": "history-1896-1896-summer-olympics",
+      "field": "timeline_date",
+      "original": {
+        "year": 1896,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1896,
+        "month": 4,
+        "day": 6,
+        "precision": "day",
+        "event_semantics": "Apertura dei primi Giochi olimpici moderni"
+      },
+      "reason": "Data dell’evento esplicito, non nascita della persona. Proposta separata: originali e catalogo intatti.",
+      "source_ids": [
+        "olympic_connolly"
+      ]
+    },
+    {
+      "target_id": "history-1901-guglielmo-marconi",
+      "field": "timeline_date",
+      "original": {
+        "year": 1901,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1901,
+        "month": 12,
+        "day": 12,
+        "precision": "day",
+        "event_semantics": "Ricezione transatlantica riferita da Marconi e Kemp"
+      },
+      "reason": "Data dell’evento esplicito, non nascita della persona. Proposta separata: originali e catalogo intatti.",
+      "source_ids": [
+        "marconi_oxford"
+      ]
+    }
+  ],
+  "editorial_review": {
+    "fidelity": "Tutte le dieci card rilette nelle cinque lingue. Conservati nomi completi Lumière, estremi biografici, concetti fisici, ruoli e date. I personaggi compaiono in voci esplicitamente dedicate a un evento.",
+    "style": "Incipit identificativi, titoli specifici, paragrafi brevi e adattamento idiomatico. Le descrizioni di tubi a raggi catodici distinguono il dispositivo iniziale dalla spiegazione generale dei display successivi.",
+    "attributions": "Fonti, licenze e cronologie contributori restano negli INPUT protetti; fonti aggiuntive documentate in questo audit.",
+    "english_written_first": true,
+    "languages": [
+      "en",
+      "it",
+      "fr",
+      "de",
+      "es"
+    ],
+    "entry_count": 10,
+    "card_count_per_language": 10,
+    "reviewed_at": "2026-10-30T03:03:38.767039+00:00",
+    "english_summary_word_range": [
+      33,
+      38
+    ],
+    "structural_checks": "Schema, ID, ordine, numero di card e cinque lingue verificati dal validatore. Tutti i titoli presenti; nessun HTML o Markdown nei testi."
+  },
+  "status": "completed",
+  "validation": {
+    "valid": true,
+    "batch_id": "283-human-history",
+    "completed": true,
+    "entry_count": 10,
+    "card_count_per_language": 10,
+    "language_count": 5,
+    "translated_card_count": 50,
+    "entry_card_counts": {
+      "history-1893-world-s-columbian-exposition": 1,
+      "history-1895-auguste-and-louis-lumi-re": 1,
+      "history-1895-x-ray": 1,
+      "history-1896-1896-summer-olympics": 1,
+      "history-1896-radioactivity": 1,
+      "history-1897-cathode-ray-tube": 1,
+      "history-1897-electron": 1,
+      "history-1898-marie-curie": 1,
+      "history-1900-planck-s-law": 1,
+      "history-1901-guglielmo-marconi": 1
+    },
+    "issue_counts": {
+      "history-1893-world-s-columbian-exposition": 0,
+      "history-1895-auguste-and-louis-lumi-re": 0,
+      "history-1895-x-ray": 0,
+      "history-1896-1896-summer-olympics": 0,
+      "history-1896-radioactivity": 0,
+      "history-1897-cathode-ray-tube": 0,
+      "history-1897-electron": 0,
+      "history-1898-marie-curie": 0,
+      "history-1900-planck-s-law": 0,
+      "history-1901-guglielmo-marconi": 0
+    },
+    "summary_checks": [
+      {
+        "entry_id": "history-1893-world-s-columbian-exposition",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "history-1895-auguste-and-louis-lumi-re",
+        "feature_id": null,
+        "english_summary_words": 33
+      },
+      {
+        "entry_id": "history-1895-x-ray",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "history-1896-1896-summer-olympics",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "history-1896-radioactivity",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "history-1897-cathode-ray-tube",
+        "feature_id": null,
+        "english_summary_words": 33
+      },
+      {
+        "entry_id": "history-1897-electron",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "history-1898-marie-curie",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "history-1900-planck-s-law",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "history-1901-guglielmo-marconi",
+        "feature_id": null,
+        "english_summary_words": 37
+      }
+    ],
+    "editorial_review": [
+      "history-1893-world-s-columbian-exposition/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1893-world-s-columbian-exposition/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1893-world-s-columbian-exposition/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1895-auguste-and-louis-lumi-re/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1895-auguste-and-louis-lumi-re/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1895-auguste-and-louis-lumi-re/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1895-auguste-and-louis-lumi-re/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1895-x-ray/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1895-x-ray/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1895-x-ray/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1895-x-ray/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1896-1896-summer-olympics/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1896-1896-summer-olympics/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1896-1896-summer-olympics/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1896-1896-summer-olympics/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1896-radioactivity/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1896-radioactivity/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1896-radioactivity/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1896-radioactivity/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1897-cathode-ray-tube/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1897-cathode-ray-tube/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1897-cathode-ray-tube/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1897-cathode-ray-tube/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1897-electron/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1897-electron/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1897-electron/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1897-electron/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1898-marie-curie/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1898-marie-curie/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1898-marie-curie/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1898-marie-curie/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1900-planck-s-law/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1900-planck-s-law/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1900-planck-s-law/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1900-planck-s-law/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1901-guglielmo-marconi/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1901-guglielmo-marconi/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1901-guglielmo-marconi/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1901-guglielmo-marconi/main/es: main title changed; check that this is a descriptive title and not an altered official name"
+    ],
+    "failures": []
+  },
+  "output_sha256": "447df7efaa5f782bde6ce91165597a7eedc4a685c3b5bdd454111c7590f1ec19",
+  "expansion_assessments": [
+    {
+      "target_id": "history-1893-world-s-columbian-exposition",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1895-auguste-and-louis-lumi-re",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1895-x-ray",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1896-1896-summer-olympics",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1896-radioactivity",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1897-cathode-ray-tube",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1897-electron",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1898-marie-curie",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1900-planck-s-law",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1901-guglielmo-marconi",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    }
+  ],
+  "root_review": {
+    "reviewed_at": "2026-10-30T03:26:33.797619+00:00",
+    "scope": "Rilettura mirata degli avvisi quantitativi e dei punti fattuali segnalati, successiva alla revisione del redattore; non verifica universale indipendente di ogni fonte.",
+    "finding": "Riletti gli avvisi: quattrocentenario, circa duecento presenti e trentatré paganti espressi in lettere; esponenti X-ray in Unicode. Tutti i valori sono conservati o corretti con fonti nell’audit.",
+    "additional_text_edits": false
+  }
+}

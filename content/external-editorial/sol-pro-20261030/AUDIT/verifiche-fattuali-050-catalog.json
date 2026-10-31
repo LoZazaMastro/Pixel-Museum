@@ -1,0 +1,484 @@
+{
+  "batch_id": "050-catalog",
+  "status": "completed",
+  "sources": [
+    {
+      "source_id": "050-S01",
+      "url": "https://www.nintendo.com/jp/famicom/history/index.html",
+      "title": "Famicom — cronologia ufficiale",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "La cronologia distingue AV Famicom HVC-101, 1º dicembre 1993, e Wario no Mori, 19 febbraio 1994.",
+      "limitation": "Risolve l’errata coincidenza fra release hardware e software. Nessun annuncio è usato come uscita."
+    },
+    {
+      "source_id": "050-S02",
+      "url": "https://www.nintendo.com/jp/famicom/software/fmc-wf/index.html",
+      "title": "Wario no Mori — archivio Famicom",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "Data originale: 19 febbraio 1994 in Giappone. Titolo giapponese traslitterato in caratteri latini.",
+      "limitation": "La scheda riguarda la versione Famicom, non la successiva uscita nordamericana NES o la versione Super NES."
+    },
+    {
+      "source_id": "050-S03",
+      "url": "https://collection.rcgs.jp/page/PACKAGE0000471",
+      "title": "Zelda no Densetsu 1 — esemplare fisico PACKAGE0000471",
+      "publisher": "Ritsumeikan Center for Game Studies",
+      "accessed_at": "2026-10-30",
+      "scope": "Catalogo istituzionale: cartuccia Famicom Nintendo, data di pubblicazione 19 febbraio 1994. Conferma la contemporaneità con Wario’s Woods già fornita.",
+      "limitation": "Dato del catalogo dell’esemplare, non data dell’originale Disk System del 1986."
+    },
+    {
+      "source_id": "050-S04",
+      "url": "https://www.nintendo.com/jp/games/feature/nintendo-classics/clv-p-hacxj/index.html",
+      "title": "Wario no Mori — Nintendo Classics",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "Scheda ufficiale della presenza nel servizio Switch; distingue release originale 1994 e distribuzione del 2018.",
+      "limitation": "Il testo conserva la riedizione e distingue il nome successivo Nintendo Classics dalla distribuzione originaria su Switch Online."
+    },
+    {
+      "source_id": "050-S05",
+      "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/7760/manuals/x-com%20ufo%20defense%20manual.pdf?t=1571243544",
+      "title": "X-COM: UFO Defense — Player’s Handbook e Technical Supplement",
+      "publisher": "MicroProse / Mythos Games, copia distribuita dal publisher su Steam",
+      "accessed_at": "2026-10-30",
+      "scope": "Manuale letto alle sezioni Soldier Data, Reserve Time Units e Opportunity Fire: Time Units ed Energy distinte; reazioni e unità residue incidono sul tiro nel turno alieno.",
+      "limitation": "Ricerca limitata alla causalità errata nel testo. Nessuna formula di calcolo nuova né nuova meccanica estranea alla card aggiunta."
+    },
+    {
+      "source_id": "050-S06",
+      "url": "https://store.steampowered.com/app/1685750/Capcom_Fighting_Collection/",
+      "title": "Capcom Fighting Collection — elenco ufficiale dei giochi",
+      "publisher": "Capcom / Steam",
+      "accessed_at": "2026-10-30",
+      "scope": "La raccolta ufficiale include Hyper Street Fighter II: The Anniversary Edition, ulteriore opera della famiglia Street Fighter II.",
+      "limitation": "Usata per evitare la qualifica assoluta di Super Turbo come ultimo titolo della sottoserie; non introdotti dettagli o date della raccolta nel testo del gioco del 1994."
+    },
+    {
+      "source_id": "050-S07",
+      "url": "https://www.nintendo.co.jp/wii/vc/vc_sme/vc_sme_01.html",
+      "title": "Super Metroid — archivio Virtual Console",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "Scheda ufficiale: uscita giapponese dell’originale il 19 marzo 1994.",
+      "limitation": "Distingue la release Super Famicom dalla riedizione Virtual Console. Le cifre di distribuzione già fornite non sono dichiarate riverificate."
+    },
+    {
+      "source_id": "050-S08",
+      "url": "https://jp.finalfantasy.com/titles/finalfantasy6/",
+      "title": "Final Fantasy VI — archivio ufficiale dei titoli",
+      "publisher": "Square Enix",
+      "accessed_at": "2026-10-30",
+      "scope": "Tabella ufficiale: Super Famicom, 2 aprile 1994.",
+      "limitation": "Verifica della regione e della versione della data fornita; nessuna riedizione nuova importata nella voce."
+    },
+    {
+      "source_id": "050-S09",
+      "url": "https://game.watch.impress.co.jp/docs/kikaku/1579567.html",
+      "title": "Super Street Fighter II X, trentesimo anniversario",
+      "publisher": "Impress / GAME Watch",
+      "accessed_at": "2026-10-30",
+      "scope": "Articolo dedicato al trentennale: inizio dell’operatività arcade giapponese nel marzo 1994.",
+      "limitation": "Resoconto professionale retrospettivo, non documento commerciale contemporaneo; usato insieme a Famitsu per la precisione mensile. L’articolo contiene ricordi personali non importati."
+    },
+    {
+      "source_id": "050-S10",
+      "url": "https://www.famitsu.com/article/202603/67761?page=1",
+      "title": "Street Fighter II, trentacinquesimo anniversario e cronologia delle revisioni",
+      "publisher": "Famitsu",
+      "accessed_at": "2026-10-30",
+      "scope": "Cronologia esplicita: Super Street Fighter II X operativo l’8 marzo 1994. Concorda sul mese con GAME Watch; per Super Street Fighter II indica 14 settembre 1993.",
+      "limitation": "Riscontro professionale secondario. Adottata prudenzialmente la precisione mensile condivisa per Super Turbo; non dichiarata lettura della cronologia Capcom inaccessibile."
+    },
+    {
+      "source_id": "050-S11",
+      "url": "https://www.arcade-history.com/game/2766/super-street-fighter-ii-turbo-blue-board",
+      "title": "Super Street Fighter II Turbo — Blue Board revisions",
+      "publisher": "Arcade History",
+      "accessed_at": "2026-10-30",
+      "scope": "Distingue esplicitamente Build date 940223 e Build date 940323. Evidenzia il rischio di usare una revisione del programma come data pubblica.",
+      "limitation": "Archivio tecnico secondario. Le sue date generiche di distribuzione estera non sono adottate come prova del primo giorno mondiale; il riferimento serve a riconoscere la build."
+    },
+    {
+      "source_id": "050-S12",
+      "url": "https://en.wikipedia.org/wiki/Wario%27s_Woods",
+      "title": "Wario’s Woods — revisione e contesto delle versioni",
+      "publisher": "Wikipedia contributors, CC BY-SA",
+      "accessed_at": "2026-10-30",
+      "scope": "Contesto originale: ultima release ufficiale nordamericana NES e classificazione ESRB.",
+      "limitation": "La formula only NES game è circoscritta alle uscite originali per NES, evitando di estenderla alle successive riedizioni digitali. Non dichiarata una verifica primaria completa di tutti i titoli NES."
+    }
+  ],
+  "decisions": [
+    {
+      "target_id": "wikipedia-381963",
+      "problem": "Il testo fa coincidere Wario’s Woods con il lancio dell’AV Famicom.",
+      "conclusion": "Nintendo documenta due uscite distinte: hardware 1º dicembre 1993, gioco 19 febbraio 1994. Conservata la contemporanea riedizione di Zelda su cartuccia, attestata dal catalogo istituzionale.",
+      "source_ids": [
+        "050-S01",
+        "050-S02",
+        "050-S03"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-381963",
+      "problem": "Il nome Nintendo Classics può essere retrodatato alla distribuzione del 2018; only NES game può includere impropriamente le riedizioni.",
+      "conclusion": "Distinti il servizio Switch Online e il nome successivo Nintendo Classics. Circoscritta la classificazione ESRB alle uscite originali NES.",
+      "source_ids": [
+        "050-S04",
+        "050-S12"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-899737",
+      "problem": "La qualifica fifth and final può essere letta come ultima opera di Street Fighter II in assoluto.",
+      "conclusion": "Mantenuta quinta versione arcade; eliminato il primato finale assoluto, incompatibile con le successive opere della famiglia.",
+      "source_ids": [
+        "050-S06"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-899737",
+      "problem": "Il metadato 23 febbraio 1994 senza regione coincide con la build 940223 e non prova una release pubblica.",
+      "conclusion": "Il testo specifica l’operatività giapponese nel marzo 1994, documentata da GAME Watch e Famitsu. Proposta la medesima collocazione mensile, con regione e versione esplicite. Il giorno 8 riportato da Famitsu è registrato come ulteriore evidenza ma non elevato a verifica primaria.",
+      "source_ids": [
+        "050-S09",
+        "050-S10",
+        "050-S11"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "daily-07-02",
+      "problem": "La stamina viene presentata come determinante della quantità di Time Units.",
+      "conclusion": "Il manuale distingue Time Units ed Energy. Conservati carico, caratteristiche, sei azioni e tre modalità di tiro; chiarito che l’energia limita separatamente il movimento e che le reazioni concorrono al tiro di opportunità.",
+      "source_ids": [
+        "050-S05"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "daily-07-02",
+      "problem": "Il 1º gennaio 1999 è una data della campagna e non della pubblicazione.",
+      "conclusion": "La prosa distingue il gioco del 1994 dalla data iniziale del Geoscape. Nessuna conversione o data narrativa viene usata come release originale.",
+      "source_ids": [
+        "050-S05"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-355914",
+      "problem": "Il metadato non specifica la regione della data originale.",
+      "conclusion": "Confermata la release Super Famicom giapponese del 19 marzo 1994; proposta la regione senza cambiare la data.",
+      "source_ids": [
+        "050-S07"
+      ],
+      "text_applied": false
+    },
+    {
+      "target_id": "workbook-04-02-final-fantasy-vi",
+      "problem": "Il metadato non specifica la regione, mentre il testo descrive la versione Super Famicom.",
+      "conclusion": "Confermata la release giapponese del 2 aprile 1994. Feature Woolsey conservata come testimonianza sulla localizzazione, con interviste 1994 e 2007 distinte e piani per FFV descritti come piani.",
+      "source_ids": [
+        "050-S08"
+      ],
+      "text_applied": true
+    }
+  ],
+  "metadata_proposals": [
+    {
+      "target_id": "wikipedia-381963",
+      "action": "specify_regional_scope",
+      "proposed_date": {
+        "year": 1994,
+        "month": 2,
+        "day": 19,
+        "precision": "day",
+        "region": "Japan",
+        "version": "Famicom"
+      },
+      "source_ids": [
+        "050-S01",
+        "050-S02"
+      ],
+      "catalog_modified": false
+    },
+    {
+      "target_id": "wikipedia-899737",
+      "action": "replace_build_like_day_with_documented_public_operation_month",
+      "original_date": {
+        "year": 1994,
+        "month": 2,
+        "day": 23,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed_date": {
+        "year": 1994,
+        "month": 3,
+        "day": 0,
+        "precision": "month",
+        "region": "Japan",
+        "version": "Arcade, Super Street Fighter II X"
+      },
+      "additional_reported_date": {
+        "year": 1994,
+        "month": 3,
+        "day": 8,
+        "precision": "day",
+        "region": "Japan",
+        "reported_by": "Famitsu, retrospective chronology"
+      },
+      "reason": "La disponibilità pubblica non si ricava dalla stringa ROM 940223. Il mese di marzo è concorde nelle fonti professionali consultate; nessuna falsa simultaneità mondiale.",
+      "source_ids": [
+        "050-S09",
+        "050-S10",
+        "050-S11"
+      ],
+      "catalog_modified": false
+    },
+    {
+      "target_id": "wikipedia-355914",
+      "action": "specify_regional_scope",
+      "proposed_date": {
+        "year": 1994,
+        "month": 3,
+        "day": 19,
+        "precision": "day",
+        "region": "Japan",
+        "version": "Super Famicom"
+      },
+      "source_ids": [
+        "050-S07"
+      ],
+      "catalog_modified": false
+    },
+    {
+      "target_id": "workbook-04-02-final-fantasy-vi",
+      "action": "specify_regional_scope",
+      "proposed_date": {
+        "year": 1994,
+        "month": 4,
+        "day": 2,
+        "precision": "day",
+        "region": "Japan",
+        "version": "Super Famicom"
+      },
+      "source_ids": [
+        "050-S08"
+      ],
+      "catalog_modified": false
+    }
+  ],
+  "expansion_assessments": [
+    {
+      "target_id": "console-gap-windjammers-video-game",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": 5,
+      "missing_cards": 2,
+      "rationale": "Titolo rilevante dello sport arcade competitivo, basato sul passaggio immediato fra difesa e attacco."
+    },
+    {
+      "target_id": "wikipedia-381963",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": 5,
+      "missing_cards": 2,
+      "rationale": "Puzzle con Toad e ultima pubblicazione ufficiale NES in Nord America, con rilievo nella storia della console."
+    },
+    {
+      "target_id": "wikipedia-899737",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": 5,
+      "missing_cards": 1,
+      "rationale": "Revisione fondamentale di Street Fighter II per super combo, Akuma e comunità competitiva."
+    },
+    {
+      "target_id": "daily-07-02",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": 5,
+      "missing_cards": 1,
+      "rationale": "Titolo centrale per il rapporto fra strategia globale e tattica a turni."
+    },
+    {
+      "target_id": "console-gap-streets-of-rage-3",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": 5,
+      "missing_cards": 2,
+      "rationale": "Terzo episodio principale di Streets of Rage, con cambiamenti di movimento, risorse e distribuzione regionale."
+    },
+    {
+      "target_id": "wikipedia-355914",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": 5,
+      "missing_cards": 2,
+      "rationale": "Titolo centrale della storia dei giochi di esplorazione e della serie Metroid."
+    },
+    {
+      "target_id": "monster-world-iv-1994",
+      "main_cards": 2,
+      "feature_cards": 0,
+      "threshold_applicable": 5,
+      "missing_cards": 3,
+      "rationale": "Episodio rilevante di Monster World per protagonista e rapporto fra piattaforme e compagno."
+    },
+    {
+      "target_id": "workbook-04-02-final-fantasy-vi",
+      "main_cards": 4,
+      "feature_cards": 4,
+      "threshold_applicable": 5,
+      "missing_cards": 1,
+      "rationale": "Titolo principale di Final Fantasy. Le quattro card della feature Woolsey restano distinte e non sostituiscono una quinta card sul gioco."
+    },
+    {
+      "target_id": "console-gap-tempest-2000",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": 5,
+      "missing_cards": 2,
+      "rationale": "Titolo rappresentativo di Jaguar e dell’interpretazione dell’arcade da parte di Jeff Minter."
+    },
+    {
+      "target_id": "wikipedia-2452759",
+      "main_cards": 6,
+      "feature_cards": 0,
+      "threshold_applicable": 5,
+      "missing_cards": 0,
+      "rationale": "Sei card principali già coprono seguito, multiplayer collegato, realizzazione, classifiche e accoglienza."
+    }
+  ],
+  "editorial_review": {
+    "languages": [
+      "en",
+      "it",
+      "fr",
+      "de",
+      "es"
+    ],
+    "english_written_first": true,
+    "reviewer": "/root/resume_remaining_a",
+    "checks": [
+      "Letto l’INPUT completo, compresa la feature Woolsey; inglese scritto e salvato prima delle altre quattro lingue.",
+      "Riletti tutti i 195 testi: 35 card principali e 4 card della feature per lingua. Conservati crediti, ruoli, numeri, piattaforme e anni delle versioni.",
+      "Controllati Time Units ed Energy, distinzione fra data narrativa e release, piani di localizzazione e pubblicazioni effettive.",
+      "Mantenuti i tre piazzamenti di Ridge Racer 2, la valutazione Next Generation, l’attribuzione Time Extension e tutti i ruoli indicati per gli sviluppatori.",
+      "Titoli propri e dei brani invariati; titoli descrittivi della feature adattati. Nessun ID, ordine, card, fonte o media originale cambiato.",
+      "Sommari inglesi principali e della feature fra 25 e 45 parole; testi senza Markdown o HTML; validatore strutturale superato."
+    ],
+    "scope_limit": "Controlli mirati ai problemi reali. La data giapponese di Super Turbo è espressa con la precisione mensile sostenuta dalle fonti professionali; non dichiarata una conferma primaria del giorno. Nessuna attestazione universale delle informazioni fornite.",
+    "expansion_issues": 9,
+    "future_cards_requested": 16,
+    "root_review": {
+      "reviewed_at": "2026-10-30T02:03:47.829212+00:00",
+      "checks": [
+        "Confrontati i campi segnalati di Wario’s Woods, Super Turbo, Super Metroid, Tempest 2000 e Ridge Racer 2. Le nuove date sono motivate nell’audit.",
+        "Otto direzioni, trentasettesima posizione e quattro stelle sono conservati in parole; DE37 corrisponde a thirty-seventh.",
+        "Nessuna omissione sostanziale individuata nei campi segnalati; non dichiarata verifica universale di tutto il lotto con questo controllo."
+      ],
+      "scope": "Controllo mirato degli avvisi automatici e dei campi nominati, non attestazione universale di tutti i fatti."
+    }
+  },
+  "validation": {
+    "valid": true,
+    "batch_id": "050-catalog",
+    "completed": true,
+    "entry_count": 10,
+    "card_count_per_language": 39,
+    "language_count": 5,
+    "translated_card_count": 195,
+    "entry_card_counts": {
+      "console-gap-windjammers-video-game": 3,
+      "wikipedia-381963": 3,
+      "wikipedia-899737": 4,
+      "daily-07-02": 4,
+      "console-gap-streets-of-rage-3": 3,
+      "wikipedia-355914": 3,
+      "monster-world-iv-1994": 2,
+      "workbook-04-02-final-fantasy-vi": 8,
+      "console-gap-tempest-2000": 3,
+      "wikipedia-2452759": 6
+    },
+    "issue_counts": {
+      "console-gap-windjammers-video-game": 1,
+      "wikipedia-381963": 1,
+      "wikipedia-899737": 1,
+      "daily-07-02": 1,
+      "console-gap-streets-of-rage-3": 1,
+      "wikipedia-355914": 1,
+      "monster-world-iv-1994": 1,
+      "workbook-04-02-final-fantasy-vi": 1,
+      "console-gap-tempest-2000": 1,
+      "wikipedia-2452759": 0
+    },
+    "summary_checks": [
+      {
+        "entry_id": "console-gap-windjammers-video-game",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "wikipedia-381963",
+        "feature_id": null,
+        "english_summary_words": 40
+      },
+      {
+        "entry_id": "wikipedia-899737",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "daily-07-02",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "console-gap-streets-of-rage-3",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "wikipedia-355914",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "monster-world-iv-1994",
+        "feature_id": null,
+        "english_summary_words": 34
+      },
+      {
+        "entry_id": "workbook-04-02-final-fantasy-vi",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "workbook-04-02-final-fantasy-vi",
+        "feature_id": "feature-localization-authorship",
+        "english_summary_words": 40
+      },
+      {
+        "entry_id": "console-gap-tempest-2000",
+        "feature_id": null,
+        "english_summary_words": 39
+      },
+      {
+        "entry_id": "wikipedia-2452759",
+        "feature_id": null,
+        "english_summary_words": 34
+      }
+    ],
+    "editorial_review": [],
+    "failures": []
+  },
+  "output_sha256": "8906089786b6a5c4ec85772db1953f955c5830b2bde98e091a2a301af7caf4d2"
+}

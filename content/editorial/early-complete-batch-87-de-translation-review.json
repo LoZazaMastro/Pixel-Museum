@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "locale": "de",
+  "review": "Binding of exact independently approved complete candidate members; no new linguistic review substituted. Every full candidate SHA and independent PASS receipt checked, all current English five fields and translation hashes validated.",
+  "entries": [
+    {
+      "entry_id": "workbook-07-29-policenauts",
+      "source_fields_sha256": "73d6d3913f8cc695ff47e7c9e2eceef660098edeffdbc0567161abea7f486243",
+      "translation_sha256": "f63062385fc916eccad7156ec1ba95a4d8dd1d91ad4691b09bd9e7735359a9f3",
+      "independent_peer": "build/research/policenauts1994-four-language-completion/independent-final-fmv-agreement-full-clause-peer.json",
+      "independent_peer_sha256": "c00c81b46e9f6569162058a8e075b55d50854c4913a8089ae094e92f8ebbc36b",
+      "candidate_path": "build/research/policenauts1994-four-language-completion/policenauts-four-language-natural-fmv-final-agreement-candidate.json",
+      "candidate_sha256": "7ffe0ff433fd634015959ebbea7ce0e504e61702ded23e9aae88cc532af1f164"
+    },
+    {
+      "entry_id": "wikipedia-144231",
+      "source_fields_sha256": "4d1a66250bdc555c6a5e29a41985bab5f192e28de743e226cee66d4b358db3b2",
+      "translation_sha256": "c5559cc7a30788336396518a8d01a225ad437837f22a28224e21026983a60827",
+      "independent_peer": "build/research/earthbound1994-four-language-completion/independent-all-fields-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "24a1a96116f0e3ed128862265a4a89660137de26c5c5693cd6ab5886e2c3559d",
+      "candidate_path": "build/research/earthbound1994-four-language-completion/earthbound-four-language-spanish-walking-nooses-precise-candidate.json",
+      "candidate_sha256": "676a082f236fb67259563cd007ddd5f5c5a3c87d5b740144ce67cc587bc93b3e"
+    },
+    {
+      "entry_id": "live-a-live",
+      "source_fields_sha256": "b08dff531690ef231e196bad8aa6ec475cf3b09812e969cc650b1f078211c59c",
+      "translation_sha256": "57f4893ed6e79f8d773367916740d285ab6196b4a7cc26a44add4ffe8d451f51",
+      "independent_peer": "build/research/live-a-live1994-four-language-completion/independent-all-fields-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "4ca515af3f180084e93f794cbd3c87c73a710ec2d7cd22534a13b84b0ea5534d",
+      "candidate_path": "build/research/live-a-live1994-four-language-completion/live-a-live-four-whole-paragraphs-four-language-full-reuse-fidelity-candidate.json",
+      "candidate_sha256": "a20a5f350881c28a9cf42f9c26e8a1b478f0abd22067a408d7beb3b434142961"
+    },
+    {
+      "entry_id": "wikipedia-29180",
+      "source_fields_sha256": "eb81b135887920ae483f49541864a229067ab151e56db41d78127989cfa038d6",
+      "translation_sha256": "9c82aa0eaac8b675593bed5632efccdeec2efddfa71dde0d60167aa642905237",
+      "independent_peer": "build/research/system-shock1994-four-language-completion/independent-all-fields-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "82a3449c8eaac2a6adedb0debcb409eea9e3be3de3524faeb6b62de21794efc9",
+      "candidate_path": "build/research/system-shock1994-four-language-completion/system-shock-three-whole-paragraphs-four-language-source-bound-candidate.json",
+      "candidate_sha256": "b0c165918670e833c3f9750f8ae48e291bcc042b252d8f3e3ef9eae8974f7407"
+    }
+  ]
+}

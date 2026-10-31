@@ -1,0 +1,748 @@
+{
+  "schema": "pixel-museum-editorial-input-v1",
+  "batch_id": "013-catalog",
+  "source_file": "content/catalog.json",
+  "source_sha256": "0b077b3f8628f921ab84574d286f9d9943fb8ae6acb8f136ffadde6e01cae241",
+  "entries": [
+    {
+      "entry_id": "adventure",
+      "kind": "game",
+      "year_context_only": 1979,
+      "date_context_only": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "The designer dates completion/publication to 1979; some catalogues use 1980 for the retail release. Do not treat this entry as an exact anniversary.",
+      "main": {
+        "feature_id": null,
+        "title": "Adventure",
+        "subtitle": "A small kingdom and a hidden signature",
+        "summary": "Warren Robinett translated exploration into rooms, coloured shapes and a secret author credit.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Exploring beyond one screen",
+            "text": "Adventure is Warren Robinett's joystick-controlled exploration game for Atari. It adapts ideas from text adventures to a world of rooms and coloured shapes. The square protagonist can carry objects between locations, unlock passages and encounter dragons. Finding a route through the kingdom depends on remembering the connections between its screens and deciding where an object might be useful."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "The designer leaves a signature",
+            "text": "Robinett concealed a room bearing his name inside the game. The hidden signature gave its designer a credit within the program, even though his authorship was absent from the usual packaging and title screen. It became one of Adventure's best-known secrets."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Interview with Warren Robinett",
+            "url": "https://www.gooddealgames.com/interviews/int_Warren_Robinett.html",
+            "publisher": "Warren Robinett / Good Deal Games"
+          }
+        ]
+      },
+      "features": [
+        {
+          "feature_id": "feature-credits-as-historical-record",
+          "title": "Keeping the makers' names",
+          "subtitle": "",
+          "summary": "A hidden signature and a shared list record human work.",
+          "cards": [
+            {
+              "card_id": "feature:feature-credits-as-historical-record:0",
+              "original_index": 0,
+              "heading": "A signature survives copying",
+              "text": "Warren Robinett called the name hidden in Adventure his signature. In a 2015 interview, he described keeping it secret because it could otherwise have been removed before the cartridges were manufactured. Once copies had travelled into homes, the name could no longer be removed from them. He remembered explaining the trick to former Atari colleagues over pizza after leaving the company. The concealed room carried an argument about recognition, but its survival also depended on timing, secrecy and the physical distribution of software."
+            },
+            {
+              "card_id": "feature:feature-credits-as-historical-record:1",
+              "original_index": 1,
+              "heading": "People beside the programmer",
+              "text": "Robinett's memories also name people around the work who rarely fit the image of a solitary programmer. Steve Harding, who wrote Atari manuals, played unfinished games and offered feedback. Later, Robinett founded The Learning Company with Ann McCormick Piestrup, Leslie Grimm and Teri Perl, who wanted to make learning games. He recalled initially having his name on that company's packaging and later losing it. A surviving credit could reveal one contribution while leaving others harder to recover. Remembering a production meant asking who tested, taught, wrote and collaborated."
+            },
+            {
+              "card_id": "feature:feature-credits-as-historical-record:2",
+              "original_index": 2,
+              "heading": "Making the list early",
+              "text": "The IGDA's March 2023 crediting guide moved the problem into the production schedule. Its committee proposed agreeing on rules early and treating the credits as a feature with work to complete. Contractors and outside vendors belonged in that conversation, with individual workers' names collected rather than only a company label. Team members should have time to review their proposed entries before release. Behind the familiar scrolling list was a process of gathering information, checking roles and making space for the people whose work had crossed organisational boundaries."
+            },
+            {
+              "card_id": "feature:feature-credits-as-historical-record:3",
+              "original_index": 3,
+              "heading": "A record that changes",
+              "text": "The same guide considered what happens when the team changes. It recommended informing departing contributors about their credits, maintaining records for ongoing games and correcting mistakes through the bug process. A missing name or wrong role could be a defect to fix in a later update. These proposals made recognition an activity that continued beyond a launch deadline. Someone had to keep the list, preserve changes and listen when contributors found errors. The historical record emerged through ordinary production decisions, one entry at a time."
+            }
+          ],
+          "sources": [
+            {
+              "id": "robinett15",
+              "title": "Warren Robinett",
+              "url": "https://nodontdie.com/interviews/warren-robinett",
+              "publisher": "David Wolinsky / Don’t Die, interview Warren Robinett",
+              "source_type": "Primary developer interview, retrospective",
+              "checked": "2026-10-21",
+              "rights": "Bibliographic citation only. New original prose contains no direct quotation. Source text, photographs, documents, recordings and game assets retain their own rights; availability is not reproduction permission.",
+              "publication_date": "2015-12-15",
+              "story_paragraphs": [
+                0,
+                1
+              ],
+              "paragraph_locators": {
+                "0": "2015 interview: opening signature explanation; later Easter egg question, secrecy before replication and return to Atari colleagues for pizza.",
+                "1": "2015 interview: feedback question naming manual writer Steve Harding; opening Learning Company cofounders and later packaging-name removal recollection."
+              }
+            },
+            {
+              "id": "igda23",
+              "title": "IGDA Game Crediting Guide 10.1",
+              "url": "https://igda.org/wp-content/uploads/2021/11/IGDA-Game-Crediting-Guidelines-10.1-March-2023.pdf",
+              "publisher": "International Game Developers Association / Game Credits Special Interest Group",
+              "source_type": "Primary association-authored proposed standards and production guidance",
+              "checked": "2026-10-21",
+              "rights": "Bibliographic citation only. New original prose contains no direct quotation. Source text, photographs, documents, recordings and game assets retain their own rights; availability is not reproduction permission.",
+              "publication_date": "2023-03",
+              "story_paragraphs": [
+                2,
+                3
+              ],
+              "paragraph_locators": {
+                "2": "IGDA guide10.1, PDF/printed pp13–14: METH.1 policy in pre-production, credits as feature, vendors/names and METH.2 contributor review.",
+                "3": "IGDA guide10.1 pp14–15: departing contributors, METH.4 live-game updates, METH.5 credit bug corrections, METH.6 record keeper/change logs."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entry_id": "wikipedia-1022715",
+      "kind": "game",
+      "year_context_only": 1979,
+      "date_context_only": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Reference article prose reproduced under its stated licence. Year comes from the article's release-year category; regional/port dates may differ.",
+      "main": {
+        "feature_id": null,
+        "title": "Starhawk",
+        "subtitle": "",
+        "summary": "Starhawk is a 1979 vector arcade game designed and programmed by Tim Skelly and manufactured by Cinematronics.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "",
+            "text": "Starhawk is a 1979 vector arcade game designed and programmed by Tim Skelly and manufactured by Cinematronics. Starhawk is a shoot 'em up unofficially based on the Star Wars trench run, making it one of the first arcade games to blatantly use concepts from said film. The game was unique at the time for its pseudo-3D graphics. It was distributed in Japan by Sega, and was later ported to the Vectrex home system in 1982."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "",
+            "text": "The arcade cabinet had a cinder block placed inside of it, to prevent it from tipping onto the player."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "",
+            "text": "According to the Vectrex manual, the story involves \"protecting your comrades from alien ships trying to infiltrate your culture\" and \"defending the sovereignty of your planet\"."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "",
+            "text": "Various ships, reminiscent of TIE fighters, appear on the horizon of the trench and the player has to shoot them before they destroy the player's ship. The player is given initially sixty seconds, but additional twenty seconds is awarded for every 10,000 points scored. The player continues flying down the trench towards a target similar to the Star Wars Death Star target. The game gets progressively more difficult as the player advances. Similar to the flying saucer from Space Invaders, a command ship periodically appears and shoots at the player. If the command ship is not destroyed quickly, the player loses 800 points."
+          },
+          {
+            "card_id": "main:4",
+            "original_index": 4,
+            "heading": "",
+            "text": "Besides the firing button, there are three buttons that control the speed of the crosshairs."
+          },
+          {
+            "card_id": "main:5",
+            "original_index": 5,
+            "heading": "",
+            "text": "Starhawk was the fifth highest-earning arcade video game of 1979 in the United States, below Space Invaders, Football, Sprint 2 and Head On."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Starhawk (1979 video game) - article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1317566837",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/Starhawk_(1979_video_game)?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          },
+          {
+            "title": "1979 video games - release-year category",
+            "url": "https://en.wikipedia.org/wiki/Category:1979_video_games",
+            "publisher": "English Wikipedia contributors"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-12781319",
+      "kind": "game",
+      "year_context_only": 1979,
+      "date_context_only": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Reference article introduction reproduced under its stated licence. Year comes from the article's release-year category; regional/port dates may differ.",
+      "main": {
+        "feature_id": null,
+        "title": "Monaco GP",
+        "subtitle": "",
+        "summary": "Monaco GP is an arcade racing game released by Sega in November 1979 in Japan and the United States, and January 1980 worldwide.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "",
+            "text": "Monaco GP is an arcade racing game released by Sega in November 1979 in Japan and the United States, and January 1980 worldwide. An upgraded version, Pro Monaco GP, was released later in 1980. One of the last Sega games to use TTL chips instead of a microprocessor CPU, the game has players race against a clock and pass rival racers while attempting to earn points driving through five areas."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "",
+            "text": "The game was commercially successful in arcades. In Japan, it was among the top three highest-grossing games of 1979 and top five in 1980, while in the United States it was the top-grossing driving game of 1981. It continued to regularly appear on Japanese arcade charts through 1983, and made a record number of appearances on US arcade charts from 1980 through 1987. Monaco GP was ported to the SG-1000 in 1983. The series also had later releases Super Monaco GP and Ayrton Senna's Super Monaco GP II."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Monaco GP (video game) — article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1381007193",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "1979 in video games — annual context",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1342195243",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/Monaco_GP_(video_game)?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-13991276",
+      "kind": "game",
+      "year_context_only": 1979,
+      "date_context_only": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Reference article introduction reproduced under its stated licence. Year comes from the article's release-year category; regional/port dates may differ.",
+      "main": {
+        "feature_id": null,
+        "title": "Lunar Lander",
+        "subtitle": "",
+        "summary": "Lunar Lander is a 1979 space flight simulation video game developed and published by Atari for arcades.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "",
+            "text": "Lunar Lander is a 1979 space flight simulation video game developed and published by Atari for arcades. It was the most popular version of the \"Lunar Lander\" concept to date, surpassing the prior Moonlander (1973) and numerous text-based games; most later iterations of the concept are based on Atari's version."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "",
+            "text": "The player controls a lunar landing module, viewed from the side, and attempts to land safely on the Moon. The player can rotate the module and burn fuel to fire a thruster, attempting to gently land on marked areas. The scenario resets after every successful landing or crash, with new terrain, until no fuel remains. Coins can be inserted at any time to buy more fuel."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "",
+            "text": "Development of the game began with the creation of a vector graphics engine by Atari after the release of the 1978 Cinematronics game Space Wars. Engine co-designer Wendi Allen (credited as Howard Delman) proposed using it to create a Lunar Lander game, a genre which dates to 1969. Allen and Rich Moore developed the game. It was Atari's first vector-based game and the first multiple-perspective video game, changing views to zoom in as the module approached the Moon."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "",
+            "text": "Lunar Lander sold 4,830 units, a moderate success, but was soon overtaken by the November 1979 Asteroids, and 300 Asteroids units were shipped in Lunar Lander-branded cabinets. Lunar Lander was one of the first two games to be registered with the United States Copyright Office, though the prior games in the genre kept the gameplay from being patented. Lunar Lander was included in a 2012 art installation at the Dublin Science Gallery. Since 2000, it has been included in numerous compilation releases of Atari games."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Lunar Lander (1979 video game) — article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1353693961",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "1979 in video games — annual context",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1342195243",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/Lunar_Lander_(1979_video_game)?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-16743508",
+      "kind": "game",
+      "year_context_only": 1979,
+      "date_context_only": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Reference article introduction reproduced under its stated licence. Year comes from the article's release-year category; regional/port dates may differ.",
+      "main": {
+        "feature_id": null,
+        "title": "Tail Gunner",
+        "subtitle": "",
+        "summary": "Tail Gunner is a monochrome vector arcade game created by Vectorbeam in 1979.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "",
+            "text": "Tail Gunner is a monochrome vector arcade game created by Vectorbeam in 1979. The premise of the game is that the player is the tailgunner of a large space ship. Enemy spacecraft attack the vessel in groups of three, and the player must aim a set of crosshairs and shoot the enemies before they slip past the player's cannons. Because of the game's viewpoint, instead of appearing to fly into the starfield, the stars move toward the left and center of the screen."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "",
+            "text": "In addition to shooting down the enemy ships, the player is also given limited use of a shield that can block ships from passing. The game ends when ten ships slip past the player's cannon. The game was sold as Tail Gunner II in a sit down cabinet and its controls consisted of a single metal joystick with fire button integrated to the tip."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "",
+            "text": "Tail Gunner's sound card was more complicated than any Cinematronics/Vectorbeam game before it. The cabinet uses the monitor's DAC to translate input from the joystick, so other games cannot necessarily be mounted in a Tail Gunner cabinet."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Tail Gunner — article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1337135549",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "1979 in video games — annual context",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1342195243",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/Tail_Gunner?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-17216673",
+      "kind": "game",
+      "year_context_only": 1979,
+      "date_context_only": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Reference article introduction reproduced under its stated licence. Year comes from the article's release-year category; regional/port dates may differ.",
+      "main": {
+        "feature_id": null,
+        "title": "Superman",
+        "subtitle": "",
+        "summary": "Superman is an action-adventure video game programmed by John Dunn for the Atari Video Computer System and released in 1979 by Atari, Inc.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "A superhero in an open-ended world",
+            "text": "Superman is an action-adventure video game programmed by John Dunn for the Atari Video Computer System and released in 1979 by Atari, Inc. The player controls Superman, whose quest is to explore an open-ended environment to find three pieces of a bridge that was destroyed by Lex Luthor, capture Luthor and his criminal gang, and return to the Daily Planet building. The game world is populated by antagonists such as a helicopter that re-arranges the bridge pieces and roving kryptonite satellites that cause Superman to revert into Clark Kent."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Adventure code meets a film licence",
+            "text": "At the time of the game's release, Atari was owned by Warner Communications, which was also the parent company of Superman publisher DC Comics. Following the financial success of the film Superman (1978), Atari asked programmer Warren Robinett to adapt his prototype of Adventure (1980) into a Superman game. Robinett was not interested, but gave some of his code to Dunn, who agreed to do the game if he could have four kilobytes of space for the cartridge as opposed to the usual two kilobytes."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Praise at release and a divided retrospective",
+            "text": "Superman received positive reviews on its release from the publications Video and The Space Gamer, who proclaimed it as one of the best games from Atari while noting its high quality graphics and unique gameplay. Some retrospective reviews lamented that the game only used the character of Superman for his more action-oriented abilities, while others continued to praise the game's gameplay and graphics."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Superman (1979 video game) — article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1378057920",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "1979 in video games — annual context",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1342195243",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/Superman_(1979_video_game)?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-18668889",
+      "kind": "game",
+      "year_context_only": 1979,
+      "date_context_only": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Reference article introduction reproduced under its stated licence. Year comes from the article's release-year category; regional/port dates may differ.",
+      "main": {
+        "feature_id": null,
+        "title": "Heiankyo Alien",
+        "subtitle": "",
+        "summary": "Heiankyo Alien, known as Digger in North America, is a maze video game created by University of Tokyo's Theoretical Science Group (TSG) in 1979.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "",
+            "text": "Heiankyo Alien, known as Digger in North America, is a maze video game created by University of Tokyo's Theoretical Science Group (TSG) in 1979. The game was originally developed and released as a personal computer game in 1979, and was then published by Denki Onkyō Corporation as an arcade game in November 1979. In 1980, the arcade game was released in North America as Digger by Sega-Gremlin, with minor changes in appearance."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "",
+            "text": "The game was a commercial success in Japan, where it was among the top ten highest-grossing arcade games of 1979 and 1980. The game has been ported to several other gaming systems since its original release. It was an early example of a maze chase game, predating Namco's Pac-Man (1980). It also began a genre of games about digging holes and luring enemies into traps, variously called \"trap 'em up\" or \"digging\" games, which includes titles such as Space Panic (1980) and Lode Runner (1983)."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Heiankyo Alien — article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1370689006",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "1979 in video games — annual context",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1342195243",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/Heiankyo_Alien?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-19560129",
+      "kind": "game",
+      "year_context_only": 1979,
+      "date_context_only": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Paragraph 2 minimally corrected using John E. Laird's current recovery notice and Jason Dyer's 2018 recovered-game playthrough. The other four paragraphs are unchanged.",
+      "main": {
+        "feature_id": null,
+        "title": "HAUNT",
+        "subtitle": "",
+        "summary": "HAUNT is John E. Laird's 1979 text adventure for DEC mainframes, set in a haunted house filled with treasure, clues and comic hazards.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "",
+            "text": "HAUNT is a text adventure created by John E. Laird in 1979 using the OPS4 language. It ran on DEC-10 and DEC-20 mainframes under TOPS-10 or TOPS-20. Players explore a haunted house, look for treasure and try to escape alive, encountering comic creatures and clues along the way."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "",
+            "text": "Exploring the house brings the player into contact with clues such as the flight speed of an African swallow, creatures including a rampaging moose, and unpredictable events involving a bus. These obstacles sit alongside the search for treasure and a safe way out."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "",
+            "text": "The game ran on DEC-10 & DEC-20 mainframes running TOPS-10 or TOPS-20. Although Laird once believed HAUNT was lost, his website now credits Jason Dyer with its recovery and offers a PDP emulator that includes the game."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "",
+            "text": "In 1998 the source code of the partly ported version was given to the Interactive Fiction Archive for publication."
+          },
+          {
+            "card_id": "main:4",
+            "original_index": 4,
+            "heading": "",
+            "text": "Laird is now a professor at University of Michigan.  As he describes: \"It violated most, if not all, of the design guidelines for good interactive fiction in that you could get killed much too easily, the puzzles were way too obscure (many based on Saturday morning cartoons from my youth), but it had a certain charm.\""
+          }
+        ],
+        "sources": [
+          {
+            "title": "HAUNT — article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1349217763",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "1979 in video games — annual context",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1342195243",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/HAUNT?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          },
+          {
+            "title": "Computer Games Research: Haunt (It is Alive!)",
+            "url": "https://laird.engin.umich.edu/haunt/",
+            "publisher": "John E. Laird / University of Michigan"
+          },
+          {
+            "title": "HAUNT: The Big Empty",
+            "url": "https://bluerenga.blog/2018/07/26/haunt-the-big-empty/",
+            "publisher": "Jason Dyer / Renga in Blue"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-21018400",
+      "kind": "game",
+      "year_context_only": 1979,
+      "date_context_only": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Reference article prose reproduced under its stated licence. Year comes from the article's release-year category; regional/port dates may differ.",
+      "main": {
+        "feature_id": null,
+        "title": "Head On",
+        "subtitle": "",
+        "summary": "Head On is an arcade video game developed by Sega/Gremlin and released by Sega in 1979.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Collecting dots before Pac-Man",
+            "text": "Head On is an arcade video game developed by Sega/Gremlin and released by Sega in 1979. It was the first maze video game where the goal is to run over dots. Designed by Lane Hauck at Sega/Gremlin in the United States, it was the fourth highest-grossing arcade game of 1979 in both Japan and the US."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "A sequel in the same year",
+            "text": "Sega released a sequel, Head On Part II, later the same year. The original inspired a number of clones, as well as Namco's Rally-X (1980)."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Changing lanes to avoid a collision",
+            "text": "Two cars continuously drive forward through rectangular channels in a simple maze. At the four cardinal directions are gaps where a car can change lanes. The player goal is to collect all dots in the maze while avoiding collisions with the computer-controlled car that is travelling in the opposite direction."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "From a timer to a lives system",
+            "text": "The game was developed by Sega/Gremlin in the United States, designed by Lane Hauck. He brainstormed the concept in 1978, roughly around the time that Sega purchased Gremlin Industries. After the acquisition, veteran Sega engineer Shikanosuke Ochi had a look at a prototype of Head On and suggested a change. Originally, the rounds in Head On were dictated by a timer as most games of the 1970s were, but Taito's Space Invaders introduced the concept of lives. Ochi suggested to Hauck that he should get rid of the timer and replace it with a lives system, which Hauck implemented and later said was \"key to making the game big\"."
+          },
+          {
+            "card_id": "main:4",
+            "original_index": 4,
+            "heading": "Upright and cocktail displays",
+            "text": "The game has two different orientations for horizontal and vertical monitors. In Japan, the game was released with a vertical orientation to suit the cocktail table arcade cabinets popular in Japan. In the US, the game was displayed horizontally inside of a standard upright cabinet."
+          },
+          {
+            "card_id": "main:5",
+            "original_index": 5,
+            "heading": "A hit in Japan and the United States",
+            "text": "Head On was a commercial success in arcades. In Japan, it became Gremlin's most successful export and a highly influential game in the period after the Space Invaders boom. It was Japan's fourth highest-grossing arcade game of 1979, below Space Invaders, Galaxian and Sega's Monaco GP. Head On was also the fourth highest-earning arcade video game of 1979 in the United States, below Space Invaders, Football and Sprint 2."
+          },
+          {
+            "card_id": "main:6",
+            "original_index": 6,
+            "heading": "A place in maze-game history",
+            "text": "Head On's relation to Pac-Man (1980) as a game about collecting dots inside of a maze-like structure has been noted by commentators and historians. Though there has not been direct confirmation on its influence, the importance of Head On in Japan around the time of Pac-Man's development suggests a correlation between the two. Several evolutions on the Head On formula released in 1979 including Space Chaser (1979) and Car Hunt (1979) bear further resemblance to Pac-Man."
+          },
+          {
+            "card_id": "main:7",
+            "original_index": 7,
+            "heading": "Later computer and console releases",
+            "text": "Ports of Head On for the Commodore 64 and VIC-20 were released in 1982. In Japan, the game was released for the PC-8801 and Sharp MZ computers.  Head On later appeared in the Sega Saturn collection Sega Memorial Selection Vol.1 and in the PlayStation 2 collection Sega Ages Vol. 23."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Head On (video game) - article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1365260792",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/Head_On_(video_game)?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          },
+          {
+            "title": "1979 video games - release-year category",
+            "url": "https://en.wikipedia.org/wiki/Category:1979_video_games",
+            "publisher": "English Wikipedia contributors"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-24309673",
+      "kind": "game",
+      "year_context_only": 1979,
+      "date_context_only": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Reference article prose reproduced under its stated licence. Year comes from the article's release-year category; regional/port dates may differ.",
+      "main": {
+        "feature_id": null,
+        "title": "Deep Scan",
+        "subtitle": "",
+        "summary": "Deep Scan is a 1979 submarine simulator video game developed and published by Sega for Japanese arcades; in North America, it was distributed by Sega/Gremlin.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "",
+            "text": "Deep Scan is a 1979 submarine simulator video game developed and published by Sega for Japanese arcades; in North America, it was distributed by Sega/Gremlin. The player controls a battleship on the surface of the ocean attempting to destroy submarines below it,  similar to games such as Periscope (1965), Sea Wolf (1976) and Depthcharge (1977). Some arcade cabinets also include Invinco, a Space Invaders clone released by Sega in 1979."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "",
+            "text": "A port to the Atari 2600 was published in 1983 as Sub-Scan."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "",
+            "text": "Most of the screen is a side view of the water with enemy submarines patrolling in it. The goal is to destroy as many submarines as possible by dropping explosives from either the left or right side of the ship while avoiding mines launched from these submarines. A mini-map at the bottom of the screen shows submarines coming from the sides, before they are visible."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "",
+            "text": "Deep Scan is a bonus game in the Sega Saturn version of Die Hard Arcade. Every 200 points earned gives the player an extra credit for the disc's title game."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Deep Scan - article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1354683800",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/Deep_Scan?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          },
+          {
+            "title": "1979 video games - release-year category",
+            "url": "https://en.wikipedia.org/wiki/Category:1979_video_games",
+            "publisher": "English Wikipedia contributors"
+          }
+        ]
+      },
+      "features": []
+    }
+  ]
+}

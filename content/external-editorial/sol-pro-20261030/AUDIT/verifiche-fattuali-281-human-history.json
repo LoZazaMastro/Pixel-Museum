@@ -1,0 +1,358 @@
+{
+  "batch_id": "281-human-history",
+  "sources": [
+    {
+      "source_id": "281-bell",
+      "url": "https://www.loc.gov/everyday-mysteries/categories/technology/item/who-is-credited-with-inventing-the-telephone/",
+      "title": "Who is credited with inventing the telephone?",
+      "publisher": "Library of Congress",
+      "accessed_at": "2026-10-30",
+      "scope": "Primo brevetto telefonico statunitense Bell nel 1876; distinto dalla prima dimostrazione di parole comprensibili.",
+      "limitation": "Testo istituzionale indicizzato consultato; apertura diretta 403. Non aggiunti all’OUTPUT giorno o mese, né nuovi episodi biografici."
+    },
+    {
+      "source_id": "281-bell-object",
+      "url": "https://americanhistory.si.edu/collections/object/nmah_689864",
+      "title": "Alexander Graham Bell Experimental Telephone",
+      "publisher": "Smithsonian Institution, National Museum of American History",
+      "accessed_at": "2026-10-30",
+      "scope": "Apparecchio sperimentale 1876, brevetto 174465 e trasmissione per variazioni di corrente elettrica.",
+      "limitation": "Scheda primaria indicizzata; usata per correggere elettronici in elettrici nel contesto del dispositivo storico, senza aggiungere particolari costruttivi assenti dall’INPUT."
+    },
+    {
+      "source_id": "281-graphophone-smithsonian",
+      "url": "https://americanhistory.si.edu/collections/object/nmah_855751",
+      "title": "Experimental Graphophone and Recording",
+      "publisher": "Smithsonian Institution, National Museum of American History",
+      "accessed_at": "2026-10-30",
+      "scope": "Apparecchio sperimentale Volta Laboratory del settembre 1881 con registrazione verticale su cera; la profondità varia, non l’oscillazione laterale indicata nell’INPUT.",
+      "limitation": "Scheda oggetto indicizzata consultata. Apertura diretta reindirizzata alla pagina generale del museo, non scambiata per la lettura integrale della scheda."
+    },
+    {
+      "source_id": "281-graphophone-loc",
+      "url": "https://www.loc.gov/collections/emile-berliner/articles-and-essays/gramophone/",
+      "title": "The Gramophone",
+      "publisher": "Library of Congress",
+      "accessed_at": "2026-10-30",
+      "scope": "Phonograph e graphophone a cilindro con incisione verticale; gramofono distinto e successivo.",
+      "limitation": "Testo pertinente indicizzato consultato, apertura diretta 403. Non dichiarata una consultazione oltre il testo disponibile."
+    },
+    {
+      "source_id": "281-janssen",
+      "url": "https://www.rmg.co.uk/collections/objects/rmgc-object-11249",
+      "title": "Janssen photographic revolver plate used to observe the Transit of Venus, 1874, from Thebes, Egypt",
+      "publisher": "Royal Museums Greenwich",
+      "accessed_at": "2026-10-30",
+      "scope": "Oggetto del 1874 con sequenza di esposizioni del transito di Venere, precedente alle serie equine 1878.",
+      "limitation": "Scheda museale primaria indicizzata: prova sufficiente a non attribuire a Muybridge il primato assoluto della fotografia sequenziale. Nessuna digressione su Janssen aggiunta nella card."
+    },
+    {
+      "source_id": "281-horse-loc",
+      "url": "https://www.loc.gov/item/2005684184/",
+      "title": "The horse in motion, first successful photographs of an animal in motion, forerunner of the motion picture",
+      "publisher": "Library of Congress",
+      "accessed_at": "2026-10-30",
+      "scope": "Catalogo delle sequenze 1878 di cavalli con posizioni successive delle zampe; precursore delle immagini in movimento.",
+      "limitation": "Scheda archivistica consultata in forma indicizzata. Il primato è circoscritto all’ambito descritto dal museo, non esteso a tutta la cronofotografia."
+    },
+    {
+      "source_id": "281-horse-object",
+      "url": "https://art.nelson-atkins.org/objects/51112/the-horse-in-motion-sallie-gardner-owned-by-leland-stanf",
+      "title": "The Horse in Motion: Sallie Gardner",
+      "publisher": "Nelson-Atkins Museum of Art",
+      "accessed_at": "2026-10-30",
+      "scope": "Scheda del cartoncino originale con sequenza del giugno 1878; iscrizioni e titolo dell’opera.",
+      "limitation": "Scheda e trascrizione delle iscrizioni consultate in forma indicizzata; non trasferiti nel testo il racconto della scommessa o i dettagli delle fotocamere, estranei all’INPUT."
+    }
+  ],
+  "decisions": [
+    {
+      "target_id": "history-1876-telephone",
+      "problem": "Il lessico elettronico rischia di descrivere impropriamente il telefono storico; brevetto e trasmissione di parole comprensibili erano fusi in un solo evento.",
+      "conclusion": "Usati segnali elettrici. Confermato il primo brevetto USA Bell nel 1876 e descritta separatamente la riproduzione di parole intelligibili, senza inventare una data di vendita. Conservati funzionamento, etimologia e usi.",
+      "source_ids": [
+        "281-bell",
+        "281-bell-object"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1877-phonograph",
+      "problem": "La card presenta il gramofono come semplice rinomina del fonografo e attribuisce al graphophone un’incisione laterale.",
+      "conclusion": "Fonografo, gramofono e giradischi sono collocati nella famiglia dei dispositivi di riproduzione senza confonderli. Il graphophone a cilindro registra variazioni nella profondità del solco, come documentato dalle collezioni Smithsonian e LOC. Conservati cilindri di cartone cerati, membrana, tromba e auricolari.",
+      "source_ids": [
+        "281-graphophone-smithsonian",
+        "281-graphophone-loc"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1878-the-horse-in-motion",
+      "problem": "Primo esempio assoluto di cronofotografia e prima sequenza di cinema sono formulazioni più ampie di quanto consentano gli oggetti storici.",
+      "conclusion": "La serie è descritta come uno dei primi esempi e come passaggio influente verso il cinema. Il cartoncino Sallie Gardner resta identificato; preservata la distinzione fra fotografie originarie e immagini dipinte sui dischi dello zoopraxiscopio. L’esistenza del revolver fotografico Janssen 1874 impedisce di ribadire il primato universale.",
+      "source_ids": [
+        "281-janssen",
+        "281-horse-loc",
+        "281-horse-object"
+      ],
+      "text_applied": true
+    }
+  ],
+  "metadata_proposals": [
+    {
+      "target_id": "history-1876-telephone",
+      "field": "event_semantics",
+      "proposed": "Alexander Graham Bell’s US telephone patent and intelligible speech demonstrations, 1876",
+      "reason": "La voce è legata all’invenzione e al brevetto, non alla nascita di Bell; il materiale non fornisce una data di commercializzazione.",
+      "source_ids": [
+        "281-bell",
+        "281-bell-object"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "history-1878-the-horse-in-motion",
+      "field": "event_semantics",
+      "proposed": "The Horse in Motion photographic sequences, June 1878",
+      "reason": "Data dell’opera fotografica; la proiezione con zoopraxiscopio è un’attività successiva.",
+      "source_ids": [
+        "281-horse-loc",
+        "281-horse-object"
+      ],
+      "applied_to_catalog": false
+    }
+  ],
+  "editorial_review": {
+    "checks": [
+      "INPUT completo letto prima della scrittura inglese, salvata prima delle quattro versioni adattate.",
+      "Dieci voci complete; preservati nomi degli inventori, fasi costruttive, numeri, misure, date e contenuti. Cifre localizzate senza variazioni di valore.",
+      "Titoli propri delle opere conservati. Etimologia greca trascritta con caratteri originali e traslitterazione già forniti; nessun nome giapponese coinvolto.",
+      "Gli eventi di fondazione, invenzione, opera e avvio del servizio rimangono distinti dalle biografie. Nessuna data di nascita dedotta dalla collocazione."
+    ],
+    "scope_limit": "Ricerca mirata ai problemi documentati. Le altre informazioni derivano dall’INPUT; nessuna pretesa di verifica universale di tutti i primati.",
+    "english_written_first": true,
+    "languages": [
+      "en",
+      "it",
+      "fr",
+      "de",
+      "es"
+    ],
+    "entry_count": 10,
+    "card_count_per_language": 10,
+    "reviewed_at": "2026-10-30T02:38:16.586748+00:00",
+    "english_summary_word_range": [
+      34,
+      40
+    ],
+    "structural_checks": "Schema, ID, ordine, numero di card e cinque lingue verificati dal validatore. Tutti i titoli presenti; nessun HTML o Markdown nei testi."
+  },
+  "status": "completed",
+  "validation": {
+    "valid": true,
+    "batch_id": "281-human-history",
+    "completed": true,
+    "entry_count": 10,
+    "card_count_per_language": 10,
+    "language_count": 5,
+    "translated_card_count": 50,
+    "entry_card_counts": {
+      "history-1871-unification-of-germany": 1,
+      "history-1872-yellowstone-national-park": 1,
+      "history-1874-impressionism": 1,
+      "history-1875-montreal-indoor-ice-hockey": 1,
+      "history-1876-telephone": 1,
+      "history-1877-phonograph": 1,
+      "history-1877-praxinoscope": 1,
+      "history-1878-the-horse-in-motion": 1,
+      "history-1879-incandescent-light-bulb": 1,
+      "history-1882-pearl-street-station": 1
+    },
+    "issue_counts": {
+      "history-1871-unification-of-germany": 0,
+      "history-1872-yellowstone-national-park": 0,
+      "history-1874-impressionism": 0,
+      "history-1875-montreal-indoor-ice-hockey": 0,
+      "history-1876-telephone": 0,
+      "history-1877-phonograph": 0,
+      "history-1877-praxinoscope": 0,
+      "history-1878-the-horse-in-motion": 0,
+      "history-1879-incandescent-light-bulb": 0,
+      "history-1882-pearl-street-station": 0
+    },
+    "summary_checks": [
+      {
+        "entry_id": "history-1871-unification-of-germany",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "history-1872-yellowstone-national-park",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "history-1874-impressionism",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "history-1875-montreal-indoor-ice-hockey",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "history-1876-telephone",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "history-1877-phonograph",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "history-1877-praxinoscope",
+        "feature_id": null,
+        "english_summary_words": 34
+      },
+      {
+        "entry_id": "history-1878-the-horse-in-motion",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "history-1879-incandescent-light-bulb",
+        "feature_id": null,
+        "english_summary_words": 40
+      },
+      {
+        "entry_id": "history-1882-pearl-street-station",
+        "feature_id": null,
+        "english_summary_words": 37
+      }
+    ],
+    "editorial_review": [
+      "history-1871-unification-of-germany/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1871-unification-of-germany/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1871-unification-of-germany/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1871-unification-of-germany/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1874-impressionism/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1874-impressionism/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1874-impressionism/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1874-impressionism/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1875-montreal-indoor-ice-hockey/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1875-montreal-indoor-ice-hockey/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1875-montreal-indoor-ice-hockey/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1875-montreal-indoor-ice-hockey/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1876-telephone/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1876-telephone/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1876-telephone/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1876-telephone/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1877-phonograph/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1877-phonograph/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1877-phonograph/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1877-praxinoscope/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1877-praxinoscope/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1877-praxinoscope/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1879-incandescent-light-bulb/main/en: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1879-incandescent-light-bulb/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1879-incandescent-light-bulb/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1879-incandescent-light-bulb/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1879-incandescent-light-bulb/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1882-pearl-street-station/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1882-pearl-street-station/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1882-pearl-street-station/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1882-pearl-street-station/main/es: main title changed; check that this is a descriptive title and not an altered official name"
+    ],
+    "failures": []
+  },
+  "output_sha256": "ce596e351e1070569fd96023df78a73773148466a88f99da42fc0ae3a186076c",
+  "expansion_assessments": [
+    {
+      "target_id": "history-1871-unification-of-germany",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1872-yellowstone-national-park",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1874-impressionism",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1875-montreal-indoor-ice-hockey",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1876-telephone",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1877-phonograph",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1877-praxinoscope",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1878-the-horse-in-motion",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1879-incandescent-light-bulb",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1882-pearl-street-station",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    }
+  ],
+  "root_review": {
+    "reviewed_at": "2026-10-30T02:54:05.872427+00:00",
+    "scope": "Controllo mirato delle segnalazioni quantitative e dei rapporti di lunghezza; non nuova verifica universale. Differenze di separatore, numeri scritti in lettere e secoli non sono omissioni.",
+    "finding": "Le differenze riguardano secoli e decenni scritti in lettere e separatori locali: gli undicimila anni, le date di Yellowstone, i decenni impressionisti e la terminologia fonografica restano presenti."
+  }
+}

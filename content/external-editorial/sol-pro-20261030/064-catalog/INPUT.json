@@ -1,0 +1,684 @@
+{
+  "schema": "pixel-museum-editorial-input-v1",
+  "batch_id": "064-catalog",
+  "source_file": "content/catalog.json",
+  "source_sha256": "0b077b3f8628f921ab84574d286f9d9943fb8ae6acb8f136ffadde6e01cae241",
+  "entries": [
+    {
+      "entry_id": "disney-hercules-1997",
+      "kind": "game",
+      "year_context_only": 1997,
+      "date_context_only": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": "Original 1997 game release; a precise worldwide first day is not inferred from conflicting platform and regional records."
+      },
+      "event_semantics": "",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "Disney's Hercules",
+        "subtitle": "From Phil’s training ground to the underworld",
+        "summary": "Eurocom’s 1997 adaptation of Disney’s Hercules turns the film’s journey into an action platformer for PlayStation and Windows. Phil’s training ground gives way to the streets of Thebes, the Hydra and the confrontation with Hades. The animated characters move through environments that usually favour a side-on view, but paths also lead into and out of the background. The film supplies the setting and personalities; the game makes the aspiring hero’s strength something the player must learn to control.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Learning to be a hero",
+            "text": "Eurocom’s 1997 adaptation of Disney’s Hercules turns the film’s journey into an action platformer for PlayStation and Windows. Phil’s training ground gives way to the streets of Thebes, the Hydra and the confrontation with Hades. The animated characters move through environments that usually favour a side-on view, but paths also lead into and out of the background. The film supplies the setting and personalities; the game makes the aspiring hero’s strength something the player must learn to control."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Strength, secrets and picture passwords",
+            "text": "Hercules can strike with his sword, punch and charge a more powerful blow, while a downward slam helps uncover secrets. Herculade replenishes his health and temporary sword powers change how he attacks. Exploration matters alongside combat: in selected stages, four hidden Mystery Password Vases reveal the pictures needed to resume through the password system. The publisher describes ten stages, mixing training, battles and encounters with the film’s monsters. Its musical identity also crosses between media: Alan Menken’s film music is joined by Steve Duckworth’s credited sound work and additional compositions for the game."
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://store.steampowered.com/app/987400/Disneys_Hercules/",
+            "title": "Publisher description: ten stages, Thebes, Hydra, Hades, Herculade and passwords. Store date concerns Windows, not a universal first day.",
+            "publisher": "Disney / Steam"
+          },
+          {
+            "url": "https://store.steampowered.com/manual/987400",
+            "title": "Original English PC instruction manual: movement, power punch, secret areas and four Mystery Password Vases in selected levels.",
+            "publisher": "Disney / Eurocom"
+          },
+          {
+            "url": "https://www.mobygames.com/game/4284/disneys-hercules/credits/playstation/",
+            "title": "Original PlayStation credits transcription: Alan Menken film music and Steve Duckworth sound and additional compositions. Indexed credit text read; direct site returned 403.",
+            "publisher": "Original Disney / Eurocom game credits, archived by MobyGames"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "feature-berlin-game-museum",
+      "kind": "feature",
+      "year_context_only": 1997,
+      "date_context_only": {
+        "precision": "year",
+        "region": ""
+      },
+      "event_semantics": "1997 is the institution's own first-exhibition year, not the 2011 presentation or 2014 programme date. Inventory explicitly dated 2022. The March 31, 2014 press release documents announced offerings, not independently measured attendance or proof every event occurred.",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "Berlin puts games on display",
+        "subtitle": "",
+        "summary": "A collection becomes a public meeting place.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "A collection behind the exhibition",
+            "text": "Berlin's Computerspielemuseum opened its first permanent exhibition in 1997. A new permanent presentation, Computerspiele: Evolution eines Mediums, followed in 2011 and continued to change. Behind the visitor's route stood the collection of the Förderverein für Jugend und Sozialarbeit. By its 2022 inventory, that collection held more than 35,000 original software carriers alongside computers, consoles and magazines. The exhibition drew on more than a sequence of famous machines: the printed material around games also had a place in the institution's account of their culture."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Working beyond one machine",
+            "text": "The museum also worked on the problem behind a playable display: how software could remain accessible as its original equipment aged. Through the European KEEP research project, it investigated preservation independent of particular hardware together with three national libraries. It joined other archives and museums in EFGAMP. Such partnerships extended the museum's work beyond arranging objects in a room. A collection could retain the original carrier while collaborating on ways to study its contents through changing generations of computers and preservation tools."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "France and Poland enter the gallery",
+            "text": "A March 2014 programme shows another use for the Berlin museum: introducing neighbours through play. Let's Play! proposed twenty games from France and Poland, ranging from independent work to large productions and from action to education. Visitors would try the games themselves. The exhibition was prepared with French and Polish cultural institutions and offered in German and English. Curator Andreas Lange was scheduled to lead the opening tour. The invitation gave contemporary production a place beside the permanent historical collection."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "Players join the programme",
+            "text": "The same Gamefest programme made room for people who transformed games by playing them. A charity marathon invited speedrunners to pursue records before an audience, while a Mario Kart Wii tournament specified local multiplayer rounds and qualifying places. The invitations recognised different kinds of expertise: practiced routes, vehicle choices, timing and competition. The organisers offered visitors a programme in which games were objects to examine and occasions to gather, with living players contributing knowledge that a cabinet alone could not hold."
+          }
+        ],
+        "sources": [
+          {
+            "id": "berlincollection",
+            "title": "Über das Museum",
+            "url": "https://www.computerspielemuseum.de/Museum/27-Ueber-das-Museum.htm",
+            "publisher": "Computerspielemuseum Berlin",
+            "source_type": "Primary institutional collection/exhibition record",
+            "checked": "2026-10-21",
+            "rights": "Bibliographic citation only. Source text, documents, photographs, game assets and recordings retain their own rights; new original prose grants no reproduction permission.",
+            "publication_date": null,
+            "story_paragraphs": [
+              0,
+              1
+            ],
+            "paragraph_locators": {
+              "0": "Official Über das Museum:1997 and 2011 exhibitions, fjs collection; Bestand der Sammlung explicitly Stand 2022",
+              "1": "Official Über das Museum: KEEP partnership with three national libraries and EFGAMP cofounding/membership"
+            }
+          },
+          {
+            "id": "berlingamefest14",
+            "title": "Program offerings Gamefest 2014",
+            "url": "https://old.computerspielemuseum.de/mediabase/pdf/960.pdf",
+            "publisher": "Computerspielemuseum / Stiftung Digitale Spielekultur",
+            "source_type": "Contemporary primary institutional event programme",
+            "checked": "2026-10-21",
+            "rights": "Bibliographic citation only. Source text, documents, photographs, game assets and recordings retain their own rights; new original prose grants no reproduction permission.",
+            "publication_date": "2014-03-31",
+            "story_paragraphs": [
+              2,
+              3
+            ],
+            "paragraph_locators": {
+              "2": "Gamefest 2014 press release dated March 31, PDF p1: Let's Play! exhibition scope, partners, languages and scheduled Andreas Lange tour",
+              "3": "Gamefest 2014 PDF pp1–2: charity speedrun marathon and Mario Kart Wii tournament announced rules and participation"
+            }
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "hardware-guncon-ps1",
+      "kind": "hardware",
+      "year_context_only": 1997,
+      "date_context_only": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": "Japan"
+      },
+      "event_semantics": "",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "GunCon / G-Con45",
+        "subtitle": "Arcade aiming on PlayStation",
+        "summary": "Namco introduced its original PlayStation GunCon in 1997.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Time Crisis comes home",
+            "text": "Namco's GunCon, also known as G-Con45, brought a purpose-built light gun to the original PlayStation in 1997. Time Crisis was its showcase: the player aimed directly at the television, while an additional button could handle actions such as taking cover."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "A controller for compatible games",
+            "text": "Namco's controller required compatible software and a CRT television, with a connection to the video signal as well as the console's controller port. Later GunCon 2 and GunCon 3 models belong to different hardware generations."
+          }
+        ],
+        "sources": [
+          "https://www.bandainamcoent.co.jp/corporate/press/namco/1997.php",
+          "https://datassette.s3.us-west-004.backblazeb2.com/livros/ultimate_retro_hardware_guide_5ed.pdf",
+          "https://commons.wikimedia.org/wiki/File:Namco-GunCon-PS1.jpg"
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "kirbys-dream-land-3",
+      "kind": "game",
+      "year_context_only": 1997,
+      "date_context_only": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": "North America"
+      },
+      "event_semantics": "",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "Kirby's Dream Land 3",
+        "subtitle": "An adventure drawn in soft strokes",
+        "summary": "Developed by HAL Laboratory and published by Nintendo, Kirby’s Dream Land 3 first appeared on Super NES in North America in 1997; its Japanese Super Famicom release followed on March 27, 1998. Its soft, textured artwork gives the adventure the appearance of a picture book. An evil cloud has reached Pop Star, and Kirby sets out with Gooey to protect Dream Land. Beneath the gentle presentation is an action game built around observing enemies, borrowing their abilities and exploring each stage.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "A late Super NES journey",
+            "text": "Developed by HAL Laboratory and published by Nintendo, Kirby’s Dream Land 3 first appeared on Super NES in North America in 1997; its Japanese Super Famicom release followed on March 27, 1998. Its soft, textured artwork gives the adventure the appearance of a picture book. An evil cloud has reached Pop Star, and Kirby sets out with Gooey to protect Dream Land. Beneath the gentle presentation is an action game built around observing enemies, borrowing their abilities and exploring each stage."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Friends change the rules",
+            "text": "Kirby can inhale enemies and copy their powers, but his six animal friends give those familiar actions new possibilities. Combining a copied ability with a companion changes how it works, while different partners help with movement on land, in water or through the air. Gooey can accompany Kirby under computer control or be controlled by a second player. Cooperation and the choice of companion make the same stretch of scenery feel different, turning a small cast of friends into the central idea of the adventure."
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.nintendo.com/en-gb/Games/Super-Nintendo/Kirby-s-Dream-Land-3-786785.html",
+            "title": "Nintendo original game description and subsequent Virtual Console gallery; reissue dates explicitly distinguished"
+          },
+          {
+            "url": "https://www.nintendo.co.jp/wii/vc/vc_ka3/vc_ka3_01.html",
+            "title": "Nintendo original Japanese release date, game mechanics and original-game visual guides"
+          },
+          {
+            "url": "https://www.mobygames.com/game/6672/kirbys-dream-land-3/credits/snes/",
+            "title": "Original game staff-roll transcription; composition roles kept separate"
+          },
+          {
+            "url": "https://www.hallab.co.jp/works/detail/000740/",
+            "title": "HAL original work: Japanese March 27, 1998 release and copyright 1997"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-1956221",
+      "kind": "game",
+      "year_context_only": 1997,
+      "date_context_only": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Reference article introduction reproduced under its stated licence. Year comes from the article's release-year category; regional/port dates may differ.",
+      "main": {
+        "feature_id": null,
+        "title": "NFL Blitz",
+        "subtitle": "",
+        "summary": "NFL Blitz began as a 1997 Midway arcade game featuring National Football League teams.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Football turned into arcade spectacle",
+            "text": "NFL Blitz began as a 1997 Midway arcade game featuring National Football League teams. Home-console versions and sequels followed. Rather than being designed as a realistic interpretation of the sport of football, like Madden NFL or NFL 2K, the Blitz series was created as an over-the-top, exaggerated version of the sport, inspired by Midway's own NBA Jam basketball game."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "A fictional league replaces the NFL licence",
+            "text": "In 2005, after Electronic Arts acquired the then fully exclusive NFL video game license, Midway relaunched the Blitz series as Blitz: The League, depicting fictional players and teams in a fictional league with slightly more realistic (though still exaggerated) on-field play and a focus on the seedy behind-the-scenes lives of the players."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "The Blitz name returns under EA",
+            "text": "Following the dissolution of Midway, EA Sports acquired the rights to the Blitz name and relaunched the series on PlayStation Network and Xbox Live with a new entry in the series simply titled NFL Blitz. The game took the series back to the original style of Blitz, but removed the late hits due to input by the NFL. Late hits and some tackles were also removed in the Arcade1Up re-release of the first two games (and NFL Blitz 2000 Gold Edition), which was released in 2022."
+          }
+        ],
+        "sources": [
+          {
+            "title": "NFL Blitz — article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1369873142",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "1998 in video games — annual context",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1379985878",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/NFL_Blitz?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-234683",
+      "kind": "game",
+      "year_context_only": 1997,
+      "date_context_only": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Reference article introduction reproduced under its stated licence. Year comes from the article's release-year category; regional/port dates may differ.",
+      "main": {
+        "feature_id": null,
+        "title": "Beatmania",
+        "subtitle": "",
+        "summary": "Konami turns the arcade cabinet into a DJ performance. The first Beatmania introduces a rhythm-game format whose five keys and turntable help establish the Bemani family.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "A DJ simulation becomes a family of music games",
+            "text": "Konami released the first Beatmania in December 1997. Its DJ-style arcade cabinet combines five keys with a turntable, asking players to perform actions in time with the music. The series, also localized as Beatstage or Hiphopmania, helped drive the late-1990s music-game boom. Arcade sequels and home editions followed. Konami named its wider Bemani music-game line after Beatmania; the original series concluded with Beatmania The Final in 2002."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "A competing five-key design",
+            "text": "In the international market, the series competed with the South Korean-developed EZ2DJ, another 5-key DJ simulation game, which Konami sued for copyright infringement relating to its gameplay similarity to Beatmania."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Bringing the controller home",
+            "text": "In 1998, ASCII Corporation signed an exclusive agreement with Konami to make third-party controllers for the PlayStation Beatmania games. Its ASC-0515BM controller was often bundled with the software. Konami also offered its own DJ Station Pro as a premium option for playing at home."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "Seven keys, effects pedals and new branches",
+            "text": "Beatmania gave birth to several spinoffs, such as the Beatmania IIDX series (a more advanced version featuring 7 keys and higher difficulty levels, and to this day still receiving new version updates) and the other being Beatmania III, a remake of the 5-key series which featured a more modern hardware platform, a pedal for optional effects and a 3.5\" floppy disk drive to save play records."
+          },
+          {
+            "card_id": "main:4",
+            "original_index": 4,
+            "heading": "Players build their own ways to play",
+            "text": "While the series was never ported to home computers, there have been unlicensed hard-drive copies which made it playable on a computer's keyboard, or even with a modded PlayStation controller. Its popularity led to non-official simulators, with one of the most popular being BM98."
+          },
+          {
+            "card_id": "main:5",
+            "original_index": 5,
+            "heading": "Rankings connect a scattered audience",
+            "text": "Beatmania and its variants have a following in Japan and all around the world. The password-based Internet Ranking service allowed competition wherever a machine is available. Today in the United States, many of the original Beatmania cabinets are in the hands of arcade collectors and Bemani enthusiasts, and consequently, are a rare sight at many arcades."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Beatmania — article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1369188043",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "1998 in video games — annual context",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1379985878",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/Beatmania?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-4338343",
+      "kind": "game",
+      "year_context_only": 1997,
+      "date_context_only": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Reference article introduction reproduced under its stated licence. Year comes from the article's release-year category; regional/port dates may differ.",
+      "main": {
+        "feature_id": null,
+        "title": "Virtua Striker 2",
+        "subtitle": "",
+        "summary": "Virtua Striker 2 is a sports video game developed and published by Sega for arcades in 1997.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "",
+            "text": "Virtua Striker 2 is a sports video game developed and published by Sega for arcades in 1997. It is the sequel to the 1994 video game Virtua Striker, and the second game in the Virtua Striker series. A series of updates was released from 1998 to 1999, starting with Virtua Striker 2 ver. 1998 and ending with Virtua Striker 2 ver. 2000.1, that latest update being released for the Dreamcast in Japan in 1999, and then internationally in 2000, with the North American version re-titled to Virtua Striker 2. A sequel, Virtua Striker 3, was released in 2001."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "",
+            "text": "The arcade game was a major success in Japan, where it was the second highest-grossing arcade game of 1998 and the overall highest-grossing arcade game of 1999. The Dreamcast version, however, received mixed reviews from critics."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Virtua Striker 2 — article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1380256142",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "1999 in video games — annual context",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1381140220",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/Virtua_Striker_2?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-739181",
+      "kind": "game",
+      "year_context_only": 1997,
+      "date_context_only": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Reference article introduction reproduced under its stated licence. Year comes from the article's release-year category; regional/port dates may differ.",
+      "main": {
+        "feature_id": null,
+        "title": "Tekken 3",
+        "subtitle": "",
+        "summary": "Tekken 3 is a 1997 fighting game developed and published by Namco.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "A new cast and sidestepping",
+            "text": "Tekken 3 is a 1997 fighting game developed and published by Namco. It is the third installment in the Tekken series and the first game built on the Namco System 12 arcade hardware. The game takes place nineteen years after Tekken 2 (1995) and features a largely new cast of characters, including the debut of several staple characters such as Jin Kazama, Ling Xiaoyu and Bryan Fury, and adds a sidestepping ability to every character. Tekken 3 was ported to the PlayStation in 1998 with additional content, including a beat 'em up mode called Tekken Force."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "An arcade hit reaches home consoles",
+            "text": "The game was a major hit for both arcades and consoles, selling 35,000 arcade units and 8.36 million PlayStation copies worldwide, making Tekken 3 the fifth best-selling PlayStation game. Since its release, Tekken 3 has been cited as one of the greatest games of all time. It was followed by Tekken Tag Tournament (1999) and its direct sequel, Tekken 4 (2001). Later, Tekken 3's arcade version was included within Tekken 5 on PlayStation 2, while the console port was re-released as part of Sony's PlayStation Classic."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Tekken 3 — article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1378398233",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "1997 in video games — annual context",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1380159143",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/Tekken_3?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          },
+          {
+            "title": "Official music publication: Opening Movie (PlayStation2 Version)",
+            "url": "https://www.youtube.com/watch?v=rWm3icbxBIo",
+            "publisher": "TEKKEN Project - Topic",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Keiichi Okabe",
+            "url": "https://en.wikipedia.org/wiki/Tekken_3",
+            "publisher": "Keiichi Okabe"
+          },
+          {
+            "title": "Tekken3 - original Namco arcade images and promotional flyer",
+            "url": "https://gamesdb.launchbox-app.com/games/images/28732-tekken-3",
+            "publisher": "Namco / LaunchBox Games Database"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "workbook-01-03-diablo-video-game",
+      "kind": "game",
+      "year_context_only": 1997,
+      "date_context_only": {
+        "month": 1,
+        "day": 3,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "announcement",
+      "factual_note": "Imported dated English Playhub editorial. Adapt its calendar wording, review publisher dates and assign rights-cleared media before presenting as a finished museum stop.",
+      "main": {
+        "feature_id": null,
+        "title": "Diablo",
+        "subtitle": "A dungeon controlled through the mouse",
+        "summary": "Blizzard’s Diablo combines real-time dungeon exploration, variable rooms and equipment with cooperative play through Battle.net.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Descending beneath Tristram",
+            "text": "Diablo sends the player beneath Tristram into a dungeon of monsters, equipment and changing rooms. Mouse commands control movement, attacks and item collection, while Battle.net supplies cooperative play. Copies began circulating at the end of 1996; Blizzard issued its in-stores announcement on January 3, 1997. Its accessible controls and variable rewards helped establish a lasting model for action role-playing games."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "From a turn-based proposal",
+            "text": "David Brevik and Condor originally proposed a turn-based RPG drawing on roguelikes and randomly generated dungeons. Early plans imagined a DOS game with animation based on claymation. Blizzard later advocated real-time action. The developers initially worried that it would weaken the tactical decisions they wanted, then tested how their role-playing systems might work with a different pace."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Testing real-time combat",
+            "text": "Brevik recalled changing the prototype to allow real-time movement and attacks, then clicking on a skeleton to fight it. The immediate result persuaded him of the new approach. The mouse could handle movement, targeting, combat and collecting items, while equipment and character development remained central. Players now had to manage position, health and threats continuously during an encounter."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "Rooms and rewards change the journey",
+            "text": "Diablo arranges rooms, corridors, stairs, treasure and monsters in variable combinations. Another descent can therefore present a different route and different rewards. Equipment found during combat can change how a character develops, giving a fresh journey another source of uncertainty. These variations create reasons to return beneath Tristram after completing the story."
+          }
+        ],
+        "sources": [
+          {
+            "title": "news.blizzard.com",
+            "url": "https://news.blizzard.com/en-us/article/22887361/diablo-now-available-on-gog-com",
+            "publisher": "news.blizzard.com"
+          },
+          {
+            "title": "diablo.blizzplanet.com",
+            "url": "https://diablo.blizzplanet.com/blog/comments/diablo-will-celebrate-15th-anniversary-on-december-31-2011",
+            "publisher": "diablo.blizzplanet.com"
+          },
+          {
+            "title": "www.gamedeveloper.com",
+            "url": "https://www.gamedeveloper.com/business/here-s-a-look-at-the-original-design-pitch-document-for-i-diablo-i-",
+            "publisher": "www.gamedeveloper.com"
+          },
+          {
+            "title": "gdcvault.com",
+            "url": "https://gdcvault.com/play/1023469/Classic-Game-Postmortem",
+            "publisher": "gdcvault.com"
+          },
+          {
+            "title": "Soundtrack publication: Best VGM 197 - Diablo - Tristram",
+            "url": "https://www.youtube.com/watch?v=SPwRUz9df3s",
+            "publisher": "SD Archives Part 1",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Matt Uelmen",
+            "url": "https://en.wikipedia.org/wiki/Diablo_%28video_game%29",
+            "publisher": "Matt Uelmen"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "final-fantasy-vii",
+      "kind": "game",
+      "year_context_only": 1997,
+      "date_context_only": {
+        "month": 1,
+        "day": 31,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "Final Fantasy VII",
+        "subtitle": "Cloud leaves an industrial city",
+        "summary": "Square brought a long-form role-playing story to the optical-disc generation.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Square moves to PlayStation",
+            "text": "Square released Final Fantasy VII in Japan for PlayStation on January 31, 1997. Cloud's journey begins in Midgar, an industrial city powered by mako and dominated by Shinra. Polygonal characters move across pre-rendered backgrounds, with computer-generated scenes expanding the scale of the story. Nobuo Uematsu's music accompanies the party from the enclosed city into a much larger world. Its international success introduced millions of players to the series."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Film, backgrounds and disc access",
+            "text": "Moving to CD-ROM gave Square space for extensive computer-generated footage and pre-rendered scenery. Connecting those images with the playable sequences also required managing disc access. Yoshinori Kitase recalled work to hide waiting times when entering and leaving battles or movie scenes. Transitions between different kinds of images became both a technical and a directing task."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Moving through Midgar",
+            "text": "Midgar establishes the setting before the party reaches the world map. Pre-rendered backgrounds arrange stairs, lifts, tunnels and alleys around the city's plate structure. Corporate infrastructure rises above districts compressed beneath it, making Shinra's power visible in the places players cross. Computer-generated sequences widen the view before returning control to the characters within those scenes."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "Building abilities with Materia",
+            "text": "Coloured Materia orbs fit into weapon and armour slots to supply magic, summons, commands and modifiers. Moving an orb between characters can change a party member's abilities, while linked slots allow support effects to modify another ability. The system gives players room to experiment with combinations throughout the journey. Kitase identified Materia among the features developed to expand the game's role-playing systems."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Final Fantasy VII",
+            "url": "https://www.museumofplay.org/games/final-fantasy-vii/",
+            "publisher": "The Strong National Museum of Play"
+          },
+          {
+            "title": "jp.finalfantasy.com",
+            "url": "https://jp.finalfantasy.com/news/4378",
+            "publisher": "jp.finalfantasy.com"
+          },
+          {
+            "title": "jp.finalfantasy.com",
+            "url": "https://jp.finalfantasy.com/titles/finalfantasy7",
+            "publisher": "jp.finalfantasy.com"
+          },
+          {
+            "title": "Official soundtrack: Opening - Bombing Mission",
+            "url": "https://www.jp.square-enix.com/music/en/lineup/item/SQEX-20065.html",
+            "publisher": "Nobuo Uematsu",
+            "attribution": "Music remains on its original official YouTube publication. No audio file is bundled or redistributed."
+          },
+          {
+            "title": "Official soundtrack publishing provenance",
+            "url": "https://www.youtube.com/watch?v=NoWU28L_ZmQ",
+            "publisher": "Nobuo Uematsu",
+            "attribution": "Music remains on its original official YouTube publication. No audio file is bundled or redistributed."
+          },
+          {
+            "title": "Official soundtrack publishing provenance",
+            "url": "https://www.youtube.com/watch?v=ORpKwkq5z-4",
+            "publisher": "Nobuo Uematsu",
+            "attribution": "Music remains on its original official YouTube publication. No audio file is bundled or redistributed."
+          },
+          {
+            "title": "Official soundtrack publishing provenance",
+            "url": "https://www.youtube.com/watch?v=IYMTzLxGv3M",
+            "publisher": "Nobuo Uematsu",
+            "attribution": "Music remains on its original official YouTube publication. No audio file is bundled or redistributed."
+          },
+          {
+            "title": "Final Fantasy VII — original release infobox, Wikipedia revision 1381032554",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1381032554",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Soundtrack publication: Good VGM 255 - Final Fantasy VII - Shinra's Full-Scale Assault",
+            "url": "https://www.youtube.com/watch?v=jeVm8C1e17Q",
+            "publisher": "Good Video Game Music",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Nobuo Uematsu",
+            "url": "https://en.wikipedia.org/wiki/Final_Fantasy_VII",
+            "publisher": "Nobuo Uematsu"
+          }
+        ]
+      },
+      "features": []
+    }
+  ]
+}

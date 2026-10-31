@@ -1,0 +1,105 @@
+{
+  "status": "PASS",
+  "locale": "it",
+  "entries": [
+    {
+      "entry_id": "wikipedia-63890268",
+      "source_fields_sha256": "2122cbfd8f0405d23b5740e9f2a3f71755c90616e5763f695eda048c531f49f3",
+      "translation_sha256": "d255b4f70d236a179cfe4489a03178592a65f6e2bbba5c5738896d28437581b2",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch322/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "61c3667f768e49690072b8fc26f8359e8d621680cd268e421cdf8dd6f9f888c6"
+    },
+    {
+      "entry_id": "wikipedia-63809881",
+      "source_fields_sha256": "34889d9bf7b266e974445ce8d0715b3a82c2c467a42bbb2c3e37fb435fb9e098",
+      "translation_sha256": "6275617f6566db9707c45ddb43cc443cf3f7c6851fc46dd9e569334c0d1712e2",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch322/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "61c3667f768e49690072b8fc26f8359e8d621680cd268e421cdf8dd6f9f888c6"
+    },
+    {
+      "entry_id": "xbox-series-x",
+      "source_fields_sha256": "66936c796090438c1c0be360d02c33f789884abd62b179dfcc02cee727b2bb69",
+      "translation_sha256": "ec86a92126a08d4fd030d886a40c1c40bc1ce46f15118fc2416a2f2608bbf5d2",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch322/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "61c3667f768e49690072b8fc26f8359e8d621680cd268e421cdf8dd6f9f888c6"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "/root/package_audit",
+    "actual_receipt": "build/research/catalog-2020-chronological/november-first-three-private/independent-package-audit-approval.json",
+    "actual_receipt_sha256": "4d76c9fd38cd6426524705a10337a9c4142af75c169d08780499a0a8f271e9ab",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "/root/package_audit",
+      "index": "build/research/catalog-2020-chronological/november-first-three-private/three-original-source-media-four-language-private-index.json",
+      "index_sha256": "dab8522b4f3d688fe5efac8afe75c4ffea0093e71e5360dcf4c201e22a5a748f",
+      "owners": [
+        {
+          "entry_id": "wikipedia-63890268",
+          "slug": "dirt5",
+          "source": "build/research/catalog-2020-chronological/november-first-three-private/dirt5/complete-original-source-media-private-candidate.json",
+          "source_sha256": "88caa6175205b57124bdfc9ed64cf478b52d24e571d6846c4abc3a6a3f58e110",
+          "target": "build/research/catalog-2020-chronological/november-first-three-private/dirt5/complete-four-language-private-candidate.json",
+          "target_sha256": "0cc6252d185558629dfee5d4b704b7657988bcf2a23a59d0ede41dd8575ee7e6",
+          "contact": "build/research/catalog-2020-chronological/november-first-three-private/dirt5/final-selected-media-contact.jpg",
+          "contact_sha256": "0a8ffa2d332a29a5ca7e687132b709dafaf47673f25896120e5a6d3ba3aab5d3",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 4,
+          "tracks": 3,
+          "finite_errata": 0
+        },
+        {
+          "entry_id": "wikipedia-63809881",
+          "slug": "valhalla",
+          "source": "build/research/catalog-2020-chronological/november-first-three-private/valhalla/complete-original-source-media-private-candidate.json",
+          "source_sha256": "a75e629ed54d42738f9e0376a035e83b65ac67a66e0c1ff268df7948f0770694",
+          "target": "build/research/catalog-2020-chronological/november-first-three-private/valhalla/complete-four-language-private-candidate.json",
+          "target_sha256": "9fa17a0076d74c4f6f0641f4b2ad6b1b53f1ccce707c54d626a20fa0081577dd",
+          "contact": "build/research/catalog-2020-chronological/november-first-three-private/valhalla/final-selected-media-contact.jpg",
+          "contact_sha256": "957670af18bb6adec3c84e500f8fa21a4834585b47c7add4ae9ff17007f3545f",
+          "english_cards": 4,
+          "localized_cards": 16,
+          "images": 6,
+          "tracks": 67,
+          "finite_errata": 0
+        },
+        {
+          "entry_id": "xbox-series-x",
+          "slug": "xbox-series-x",
+          "source": "build/research/catalog-2020-chronological/november-first-three-private/xbox-series-x/complete-original-source-media-private-candidate.json",
+          "source_sha256": "7c4cc387149d009ce2ce47b6f38e256c23b4abbf0ec9a388df9f97c76a838bd4",
+          "target": "build/research/catalog-2020-chronological/november-first-three-private/xbox-series-x/complete-four-language-private-candidate.json",
+          "target_sha256": "2d7834bfd15e039c9524eb52773af9c77e7c986d5645c65c4a6d5c3422eb5d44",
+          "contact": "build/research/catalog-2020-chronological/november-first-three-private/xbox-series-x/final-selected-media-contact.jpg",
+          "contact_sha256": "f7c3b43ab65b37cdcd7732a322e757ef93ec7ff11a4c4b00fa3f58797830991e",
+          "english_cards": 4,
+          "localized_cards": 16,
+          "images": 6,
+          "tracks": 0,
+          "finite_errata": 0
+        }
+      ],
+      "scope": {
+        "english_paragraphs_read": 11,
+        "localized_paragraphs_read": 44,
+        "final_contact_images_seen": 16,
+        "new_dirt_recording_metadata_read": 3,
+        "existing_valhalla_tracks_preserved": 67
+      },
+      "findings_resolved": [
+        "Valhalla IT P0 now translates raider as razziatrice instead of predatrice. No other prose or media changes requested."
+      ],
+      "evidence": [
+        "All EN and IT/FR/DE/ES paragraphs, summaries and headings read. Three final selected contact sheets personally viewed, no modern box backs or platform-header covers.",
+        "Saved original Codemasters Steam announcement lists In Degrees, Caution and Timebomb Zone. Exact selected metadata identifies original Warner/artist/BMG recordings with public AAC; radio edit and remixes are excluded.",
+        "Microsoft March16,2020 Xbox Wire primary read: Zen2/RDNA2,16GB,1TB,UHD drive and Quick Resume demonstration agree; poster qualified as technical demonstration."
+      ],
+      "limits": [
+        "Editorial, visual and publication metadata review only; no PS5 playback or audio audition asserted. Untouched soundtrack recordings were not redundantly probed."
+      ],
+      "production_writes": false
+    }
+  }
+}

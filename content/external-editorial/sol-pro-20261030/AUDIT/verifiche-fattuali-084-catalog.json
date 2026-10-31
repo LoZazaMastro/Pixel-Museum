@@ -1,0 +1,952 @@
+{
+  "batch_id": "084-catalog",
+  "status": "completed",
+  "sources": [
+    {
+      "source_id": "majora-interview",
+      "url": "https://goodblood.games/mmdoubleheader64dream45",
+      "title": "Majora’s Mask double interview — The 64 Dream, giugno 2000",
+      "publisher": "Eiji Aonuma, Yoshiaki Koizumi, Shigeru Miyamoto; traduzione Good Blood Games",
+      "accessed_at": "2026-10-30",
+      "scope": "Intervista contemporanea, letta: ruoli creativi e impiego della memoria aggiuntiva.",
+      "limitation": "La memoria sostiene animazioni, espressioni, movimenti programmati, nemici e fondali. Non sostiene l’affermazione esclusiva secondo cui servirebbe soprattutto al ciclo o alle maschere. Traduzione della primaria, non intervista condotta da noi."
+    },
+    {
+      "source_id": "majora-manual",
+      "url": "https://www.nintendo.com/eu/media/downloads/games_8/emanuals/nintendo_8/Manual_Nintendo64_TheLegendOfZeldaMajorasMask_EN.pdf",
+      "title": "The Legend of Zelda: Majora’s Mask — manuale originale inglese",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "L’estratto indicizzato conferma il requisito Expansion Pak.",
+      "limitation": "Non presentata come nuova ispezione visiva integrale del manuale."
+    },
+    {
+      "source_id": "majora-date",
+      "url": "https://www.famitsu.com/game/title/673/page/1",
+      "title": "The Legend of Zelda: Majora’s Mask — scheda del gioco",
+      "publisher": "Famitsu",
+      "accessed_at": "2026-10-30",
+      "scope": "La scheda giapponese conferma 27 aprile 2000.",
+      "limitation": "Catalogo giornalistico, corroborato da scheda commerciale Suruga-ya 147000173. La pagina Nintendo originale è stata aperta ma risultava corrotta dalla codifica: non usata come lettura primaria del giorno."
+    },
+    {
+      "source_id": "ghost-prologue",
+      "url": "https://www.konami.com/mg/archive/ghostbabel/english/prologue.html",
+      "title": "Metal Gear: Ghost Babel — Prologue",
+      "publisher": "Konami",
+      "accessed_at": "2026-10-30",
+      "scope": "Il prologo ufficiale colloca gli eventi sette anni dopo Outer Heaven e identifica Galuade.",
+      "limitation": "Testo letto. Non autorizza a presentare il gioco come seguito canonico degli eventi di Metal Gear 2; l’intervallo di tre anni dell’INPUT era fuorviante in questo contesto."
+    },
+    {
+      "source_id": "ghost-reissue",
+      "url": "https://www.konami.com/games/us/en/topics/3378/",
+      "title": "Metal Gear Solid: Master Collection Vol. 2 — lancio del 27 agosto 2026",
+      "publisher": "Konami",
+      "accessed_at": "2026-10-30",
+      "scope": "Il comunicato dichiara il lancio avvenuto e include Ghost Babel.",
+      "limitation": "Letto il comunicato consuntivo, non soltanto l’annuncio di febbraio. Nel testo conservato il 2026 senza introdurre un giorno superfluo. Il primato come prima riedizione resta quello fornito nel lotto."
+    },
+    {
+      "source_id": "ghost-vr",
+      "url": "https://metalgear.konami.net/manual/mc2/mggb/ps5/en/page13.html",
+      "title": "Metal Gear: Ghost Babel — VR Training",
+      "publisher": "Konami",
+      "accessed_at": "2026-10-30",
+      "scope": "Manuale ufficiale: 180 esercitazioni e tre tipi di addestramento.",
+      "limitation": "Edizione della raccolta, letta tramite indice per il controllo di un sistema già descritto nell’INPUT; nessuna nuova funzione importata dalla riedizione."
+    },
+    {
+      "source_id": "ghost-date",
+      "url": "https://mgcvt.com/mggb/",
+      "title": "Metal Gear: Ghost Babel — scheda delle edizioni",
+      "publisher": "Metal Gear Convention",
+      "accessed_at": "2026-10-30",
+      "scope": "Elenca l’originale giapponese del 27 aprile 2000.",
+      "limitation": "Catalogo specialistico, non pagina Konami. Il giorno è concorde con INPUT e IMDb; non dichiarato un primo giorno mondiale, né una verifica primaria del giorno. Il titolo GameSpot del 27 aprile conserva un vecchio annuncio senza data e non è stato usato come prova della release."
+    },
+    {
+      "source_id": "perfecthead",
+      "url": "https://www.gamespot.com/articles/rare-cleans-up-perfect-dark/1100-2446534/",
+      "title": "Rare Cleans Up Perfect Dark",
+      "publisher": "GameSpot, 26 aprile 2000; dichiarazione Rare",
+      "accessed_at": "2026-10-30",
+      "scope": "Dichiarazione contemporanea: funzione fotografica operativa, rimossa prima dell’uscita per evitare controversie.",
+      "limitation": "Riscontro reperito dal coordinatore e letto nell’indice. La motivazione è attribuita a Rare; non introdotto Columbine né confusa con la precedente spiegazione tecnica attribuita a Ken Lobb."
+    },
+    {
+      "source_id": "perfect-bafta",
+      "url": "https://www.bafta.org/awards/interactive/moving-images/",
+      "title": "Interactive — Moving Images",
+      "publisher": "BAFTA",
+      "accessed_at": "2026-10-30",
+      "scope": "Archivio ufficiale: Perfect Dark / Rare, premio 2000.",
+      "limitation": "Categoria controllata nell’indice; non ricavata una categoria cinematografica diversa."
+    },
+    {
+      "source_id": "perfect-satellite",
+      "url": "https://www.imdb.com/title/tt0271111/awards/",
+      "title": "Perfect Dark — Awards",
+      "publisher": "IMDb",
+      "accessed_at": "2026-10-30",
+      "scope": "Corrobora il premio Golden Satellite del 2001 per il prodotto interattivo.",
+      "limitation": "Catalogo secondario; nessun archivio primario dell’International Press Academy recuperato. Non presentato come una verifica primaria universale."
+    },
+    {
+      "source_id": "perfect-date",
+      "url": "https://www.mobygames.com/game/4034/perfect-dark/releases/n64/",
+      "title": "Perfect Dark — Nintendo 64 releases",
+      "publisher": "MobyGames",
+      "accessed_at": "2026-10-30",
+      "scope": "La scheda statunitense riporta 22 maggio 2000, Rareware editore e Nintendo of America distributore.",
+      "limitation": "Concorde con i cataloghi e la recensione GameSpot del 22 maggio; la data della recensione da sola non sarebbe prova del primo giorno. Conservato il giorno fornito, precisandone l’ambito nordamericano."
+    },
+    {
+      "source_id": "deus-postmortem",
+      "url": "https://media.gdcvault.com/GD_Mag_Archives/GDM_November_2000.pdf",
+      "title": "Postmortem: Ion Storm’s Deus Ex",
+      "publisher": "Warren Spector, Game Developer, novembre 2000",
+      "accessed_at": "2026-10-30",
+      "scope": "Tabella Game Data a pagina stampata 50, PDF 33: release 23 giugno 2000, Windows.",
+      "limitation": "Letta l’estrazione del PDF. Il dato contemporaneo dello sviluppatore è distinto dal 22 giugno dei cataloghi retrospettivi e dalla scheda Steam GOTY; non dichiarata unanimità o lettura di un comunicato commerciale del giorno."
+    },
+    {
+      "source_id": "deus-mac",
+      "url": "https://www.insidemacgames.com/historical/news/story.php%3FArticleID%3D298.html",
+      "title": "Deus Ex shipping for Mac",
+      "publisher": "Inside Mac Games, 13 luglio 2000; notizia Aspyr",
+      "accessed_at": "2026-10-30",
+      "scope": "Il testo contemporaneo documenta la versione Mac nello stesso anno.",
+      "limitation": "Si parla di spedizione: usato soltanto per l’anno, senza introdurre un giorno di vendita al pubblico."
+    },
+    {
+      "source_id": "deus-remaster",
+      "url": "https://store.steampowered.com/app/3131640/Deus_Ex_Remastered/",
+      "title": "Deus Ex Remastered — pagina ufficiale",
+      "publisher": "Aspyr / Steam",
+      "accessed_at": "2026-10-30",
+      "scope": "Pagina ufficiale letta dal coordinatore il 30 ottobre 2026: To be announced, non disponibile.",
+      "limitation": "La comunicazione indicizzata dell’11 dicembre 2025 ritira il 5 febbraio 2026; il corpo della news presenta un content gate e non è stato aggirato. Nessun annuncio trasformato in uscita già avvenuta."
+    },
+    {
+      "source_id": "diablo2-shipping",
+      "url": "https://www.purediablo.com/diablo-2-ships-worldwide",
+      "title": "Diablo II Ships Worldwide",
+      "publisher": "Blizzard Entertainment, 28 giugno 2000; comunicato riprodotto da PureDiablo",
+      "accessed_at": "2026-10-30",
+      "scope": "Annuncia l’avvio delle spedizioni il 28 giugno e l’arrivo nei negozi entro fine settimana.",
+      "limitation": "Letto nell’indice. La distinzione shipping/disponibilità impedisce di trattare il 28 come primo giorno di vendita ovunque."
+    },
+    {
+      "source_id": "diablo2-postmortem",
+      "url": "https://www.gamedeveloper.com/design/postmortem-blizzard-s-i-diablo-ii-i-",
+      "title": "Postmortem: Blizzard’s Diablo II",
+      "publisher": "Erich Schaefer, Game Developer, ottobre 2000",
+      "accessed_at": "2026-10-30",
+      "scope": "Testimonianza diretta: Game Data indica 28 giugno; il racconto parla di dodici mesi di crunch e dell’originale Diablo già sugli scaffali entro il 30 dicembre 1996.",
+      "limitation": "Letto il testo. Dodici mesi è il ricordo di Schaefer, distinto dai diciotto di Brevik. Entro il 30 dicembre non prova un giorno uniforme per tutti i negozi. Il precedente lotto 064 è stato riesaminato con registro storico separato."
+    },
+    {
+      "source_id": "diablo2-brevik",
+      "url": "https://www.gamedeveloper.com/design/20-years-later-david-brevik-shares-the-story-of-making-i-diablo-i-",
+      "title": "20 years later, David Brevik shares the story of making Diablo",
+      "publisher": "Game Developer, resoconto diretto della conferenza GDC 2016 di David Brevik",
+      "accessed_at": "2026-10-30",
+      "scope": "Brevik ricorda circa un anno e mezzo continuativo di crunch per Diablo II.",
+      "limitation": "Resoconto di un giornalista presente, letto nell’indice. Conservata l’attribuzione del ricordo; non forzata una durata unica contro il postmortem di Schaefer."
+    },
+    {
+      "source_id": "diablo2-mac",
+      "url": "https://www.insidemacgames.com/historical/news/index.php%3Fdate%3D2000-07-17.html",
+      "title": "Diablo II — shipping Mac version",
+      "publisher": "Inside Mac Games, 17 luglio 2000; comunicazione Blizzard",
+      "accessed_at": "2026-10-30",
+      "scope": "Ripete la spedizione Windows del 28 giugno e annuncia quella Mac nella settimana di luglio.",
+      "limitation": "Documenta Classic Mac OS nel 2000, non OS X già disponibile nel 2000. Nel testo distinto il successivo supporto OS X senza introdurre una data non verificata."
+    },
+    {
+      "source_id": "diablo2-anniversary",
+      "url": "https://worldofwarcraft.blizzard.com/en-gb/news/23459856",
+      "title": "Diablo II — ventesimo anniversario",
+      "publisher": "Blizzard, 29 giugno 2020",
+      "accessed_at": "2026-10-30",
+      "scope": "Celebrazione ufficiale nel mese di giugno.",
+      "limitation": "Data della celebrazione, non prova autonoma del primo giorno nei negozi. Il corpo dell’altra pagina Blizzard /23460551 restituisce 403; non dichiarata lettura integrale."
+    },
+    {
+      "source_id": "lodoss-transform",
+      "url": "https://gamefaqs.gamespot.com/dreamcast/250617-record-of-lodoss-war/faqs/12493",
+      "title": "Record of Lodoss War — Guide and Walkthrough",
+      "publisher": "FColberg, guida di gioco, 2001, GameFAQs",
+      "accessed_at": "2026-10-30",
+      "scope": "Descrive la trasformazione che conserva gli effetti incisi permanentemente e usa il nome Kardis per la dea.",
+      "limitation": "Guida basata sul gioco, non manuale ufficiale né nostra prova del software. Il titolo proprio fornito, Advent of Cardice, resta invariato; la grafia Kardis è usata soltanto nel racconto."
+    },
+    {
+      "source_id": "lodoss-limits",
+      "url": "https://gamefaqs.gamespot.com/dreamcast/250617-record-of-lodoss-war/faqs/10615",
+      "title": "Record of Lodoss War — Guide and Walkthrough",
+      "publisher": "Gau_Boy, guida di gioco, 2001, GameFAQs",
+      "accessed_at": "2026-10-30",
+      "scope": "Le iscrizioni hanno limiti di ripetizione; la trasformazione mantiene gli effetti permanenti.",
+      "limitation": "Letti gli estratti pertinenti. La guida giapponese Saiyan-D /8741 descrive anche crescita di altri attributi con i livelli: eliminata l’esclusività non provata. Il PDF del manuale ha estrazione vuota e le immagini non risultano accessibili in questa sessione; non dichiarato visionato."
+    },
+    {
+      "source_id": "sega-dreamcast",
+      "url": "https://www.sega.jp/history/hard/dreamcast/software.html",
+      "title": "Dreamcast — software Sega",
+      "publisher": "Sega",
+      "accessed_at": "2026-10-30",
+      "scope": "Elenco ufficiale: Jet Set Radio, HDR-0078, 29 giugno 2000.",
+      "limitation": "Data riferita all’originale giapponese. Non estesa automaticamente ad altre regioni o alle riedizioni."
+    },
+    {
+      "source_id": "jet-manual",
+      "url": "https://www.digitpress.com/library/manuals/dreamcast/jet_grind_radio.pdf",
+      "title": "Jet Grind Radio — instruction manual",
+      "publisher": "Smilebit / Sega, manuale originale conservato da Digital Press",
+      "accessed_at": "2026-10-30",
+      "scope": "Tokyo-to è una città immaginaria asiatica simile a Tokyo.",
+      "limitation": "Letta l’estrazione testuale delle 17 pagine, non dichiarata ispezione visiva del PDF. Corretto il riferimento a Tokyo come città letterale dell’azione."
+    },
+    {
+      "source_id": "jet-creators",
+      "url": "https://www.4gamer.net/games/999/G999903/20240307087/",
+      "title": "Jet Set Radio — intervista ai creatori",
+      "publisher": "4Gamer, 25 marzo 2024",
+      "accessed_at": "2026-10-30",
+      "scope": "I creatori discutono il cel shading come modo di rendere le illustrazioni di Ueda in tempo reale.",
+      "limitation": "Letta l’intervista; testimonianza pertinente allo stile, non censimento che provi il primato assoluto di primo gioco con cel shading. Il testo conserva il carattere pionieristico senza quell’assoluto."
+    },
+    {
+      "source_id": "ffix-date",
+      "url": "https://jp.finalfantasy.com/ffix25th/",
+      "title": "Final Fantasy IX — 25th anniversary",
+      "publisher": "Square Enix",
+      "accessed_at": "2026-10-30",
+      "scope": "Pagina ufficiale: uscita giapponese il 7 luglio 2000.",
+      "limitation": "Pagina letta; data del gioco originale, distinta dalla commemorazione."
+    },
+    {
+      "source_id": "ffix-manual",
+      "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/377840/manuals/Manual_EN.pdf?t=1769661336",
+      "title": "Final Fantasy IX — manuale ufficiale inglese",
+      "publisher": "Square Enix, edizione PC",
+      "accessed_at": "2026-10-30",
+      "scope": "Pagina 8: apprendimento tramite AP; abilità d’azione generalmente a costo MP con eccezioni; supporti con costo variabile in Magic Stones.",
+      "limitation": "Letto il testo del PDF di 11 pagine. Il manuale PlayStation su eBay è indicizzato ma l’apertura fallisce: non dichiarato letto integralmente. La verifica riguarda i sistemi già presenti nel lotto, non nuove funzioni dell’edizione PC."
+    },
+    {
+      "source_id": "mario-date",
+      "url": "https://www.nintendo.co.jp/wii/vc/vc_mt64/vc_mt64_01.html",
+      "title": "Mario Tennis 64 — gioco originale",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "La scheda ufficiale indica l’originale giapponese del 21 luglio 2000 e l’esordio di Waluigi.",
+      "limitation": "Letta nell’indice; distinta la data dell’originale dalla Virtual Console."
+    },
+    {
+      "source_id": "mario-gbc-jp",
+      "url": "https://www.nintendo.com/jp/titles/50010000014752.html",
+      "title": "Mario Tennis GB — Nintendo 3DS",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "Pagina letta: originale 2000, download 26 giugno 2013 in Giappone.",
+      "limitation": "Corregge il 2014 presentato come unico anno della riedizione. Non aggiunte meccaniche del gioco portatile per colmare le lacune dell’originale Nintendo 64."
+    },
+    {
+      "source_id": "mario-gbc-eu",
+      "url": "https://www.nintendo.com/en-gb/Games/Game-Boy-Color/Mario-Tennis-265988.html",
+      "title": "Mario Tennis — Game Boy Color e Virtual Console",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "La sezione della Virtual Console europea indica 2 gennaio 2014.",
+      "limitation": "Testo indicizzato letto; non confusa con la data 2 ottobre 2001 dell’originale europeo. Il racconto conserva la precisione annuale."
+    },
+    {
+      "source_id": "warlocked-date",
+      "url": "https://gamefaqs.gamespot.com/gbc/258822-warlocked/data",
+      "title": "Warlocked — release data",
+      "publisher": "GameFAQs",
+      "accessed_at": "2026-10-30",
+      "scope": "Catalogo concorde con il 24 luglio 2000 in Nord America già specificato nell’INPUT.",
+      "limitation": "Fonte secondaria; nessuna nuova prova primaria del giorno o modifica proposta alla collocazione già regionalizzata."
+    }
+  ],
+  "decisions": [
+    {
+      "target_id": "wikipedia-165824",
+      "problem": "Motivazione dell’Expansion Pak attribuita soprattutto a ciclo temporale e maschere senza riscontro; data priva di regione.",
+      "conclusion": "Usare gli impieghi della memoria descritti nell’intervista contemporanea, evitando di inventare un requisito primario per quei due sistemi. Il 27 aprile 2000 riguarda il Giappone.",
+      "source_ids": [
+        "majora-interview",
+        "majora-manual",
+        "majora-date"
+      ],
+      "text_applied": "Ruoli e impiego della memoria corretti nelle cinque lingue, con tre card conservate e proposta di regione. Ricezione e classifiche restano giudizi attribuiti."
+    },
+    {
+      "target_id": "wikipedia-725215",
+      "problem": "Continuità alternativa descritta come successiva agli eventi di Metal Gear 2; riedizione 2026 da distinguere da un annuncio.",
+      "conclusion": "Il prologo collega la vicenda a Outer Heaven, sette anni prima. La raccolta del 2026 è effettivamente uscita secondo il comunicato consuntivo. Il 27 aprile originale è giapponese, senza primato mondiale.",
+      "source_ids": [
+        "ghost-prologue",
+        "ghost-reissue",
+        "ghost-vr",
+        "ghost-date"
+      ],
+      "text_applied": "Conservate tutte le sette card, tredici livelli, codenomi, Special/No.4, 180 VR, WISP e dettagli dei quattro Black Chamber. Rimossa soltanto la relazione narrativa fuorviante con Metal Gear 2."
+    },
+    {
+      "target_id": "wikipedia-198435",
+      "problem": "Motivo del taglio della funzione fotografica e ambito della pubblicazione; categorie dei premi.",
+      "conclusion": "Attribuire a Rare la motivazione di evitare controversie, senza introdurre un evento esterno come causa ufficiale. Distinguere archivio BAFTA primario e riscontro Satellite secondario. La data del 22 maggio è nordamericana.",
+      "source_ids": [
+        "perfecthead",
+        "perfect-bafta",
+        "perfect-satellite",
+        "perfect-date"
+      ],
+      "text_applied": "Tre card mantengono quattordici mesi, quasi tre anni, requisiti Expansion Pak, bot, cooperazione, premi, Transfer Pak e riedizioni."
+    },
+    {
+      "target_id": "wikipedia-8484",
+      "problem": "Data originale 23 giugno contro 22 dei cataloghi; remaster previsto nel febbraio 2026; vendite non circoscritte all’uscita.",
+      "conclusion": "La tabella contemporanea di Spector sostiene il 23 giugno per Windows. Il remaster è rinviato senza nuova data e non è disponibile nella scheda ufficiale consultata. Il milione è un risultato complessivo, non una vendita immediata al lancio.",
+      "source_ids": [
+        "deus-postmortem",
+        "deus-mac",
+        "deus-remaster"
+      ],
+      "text_applied": "Quattro card nelle cinque lingue, prosa storica sul rinvio senza riferimenti al processo editoriale. Conservati tutti i nomi creativi, 2052, Gray Death, fazioni, tagli produttivi e date della serie."
+    },
+    {
+      "target_id": "wikipedia-8556",
+      "problem": "28 giugno può indicare spedizioni; supporto OS X confuso con 2000; durata del crunch; primo Diablo datato soltanto 1997.",
+      "conclusion": "Precisione mensile giugno 2000 per la disponibilità iniziale Windows nordamericana, senza inventare il giorno. Distinguere Classic Mac OS e successivo OS X. Conservare i diciotto mesi come ricordo di Brevik e documentare i dodici di Schaefer. Il primo Diablo appartiene alla disponibilità fra fine 1996 e inizio 1997.",
+      "source_ids": [
+        "diablo2-shipping",
+        "diablo2-postmortem",
+        "diablo2-brevik",
+        "diablo2-mac",
+        "diablo2-anniversary"
+      ],
+      "text_applied": "Correzioni coerenti nelle cinque lingue e proposta mensile. Il riesame autorizzato del solo Diablo nel lotto 064 è registrato nel suo audit con storia delle decisioni; non attribuita certezza a un primo giorno globale."
+    },
+    {
+      "target_id": "console-gap-record-of-lodoss-war-advent-of-cardice",
+      "problem": "Ripetizione delle iscrizioni potenzialmente illimitata, conservazione indiscriminata dei bonus e grafia della dea.",
+      "conclusion": "Le iscrizioni rispettano limiti individuali; la trasformazione conserva i bonus incisi permanentemente. Le guide dirette usano Kardis. Non affermare che il livello aumenti esclusivamente la salute.",
+      "source_ids": [
+        "lodoss-transform",
+        "lodoss-limits"
+      ],
+      "text_applied": "Tre card mantengono Wart, Ryō Mizuno, data giapponese, mithrill, placche, tipo di equipaggiamento e continuità degli investimenti. Titolo proprio Advent of Cardice invariato."
+    },
+    {
+      "target_id": "wikipedia-1058067",
+      "problem": "Tokyo indicata come luogo letterale; primato assoluto del cel shading non dimostrato; data senza regione.",
+      "conclusion": "Il manuale identifica Tokyo-to, ispirata a Tokyo. Presentare l’uso pionieristico del cel shading senza primato universale. La data del 29 giugno è giapponese.",
+      "source_ids": [
+        "sega-dreamcast",
+        "jet-manual",
+        "jet-creators"
+      ],
+      "text_applied": "Tre card conservano tutti gli artisti, influenze, quartieri, piattaforme e anni. Il progetto del 2023 resta un annuncio, non una release già avvenuta."
+    },
+    {
+      "target_id": "workbook-07-07-final-fantasy-ix",
+      "problem": "Tutte le abilità d’azione descritte come necessariamente a costo MP; limite dei supporti assimilato a un numero fisso; data senza regione.",
+      "conclusion": "La maggior parte delle azioni costa MP, con eccezioni. I supporti consumano quantità variabili di Magic Stones: la riserva determina le combinazioni. Il 7 luglio 2000 riguarda il Giappone.",
+      "source_ids": [
+        "ffix-date",
+        "ffix-manual"
+      ],
+      "text_applied": "Correzioni della card main:2 in tutte le lingue; personaggi, sequenza narrativa, crediti artistici, tecnologie e motivi culturali conservati. La condizione dei maghi neri è descritta come apparente, senza una generalizzazione ontologica."
+    },
+    {
+      "target_id": "wikipedia-88560",
+      "problem": "La riedizione GBC del 2014 viene presentata senza ambito, ma quella giapponese è del 2013; data N64 senza regione.",
+      "conclusion": "Distinguere Giappone 2013 ed Europa 2014 per 3DS. Il gioco originale Nintendo 64 esce in Giappone il 21 luglio 2000.",
+      "source_ids": [
+        "mario-date",
+        "mario-gbc-jp",
+        "mario-gbc-eu"
+      ],
+      "text_applied": "Quattro card autonome: esordio Waluigi, gioco portatile, riedizioni, ricezione/seguiti. Nessuna meccanica nuova inventata per allungare i testi brevi."
+    },
+    {
+      "target_id": "warlocked-2000",
+      "problem": "Controllo della collocazione e conservazione dei sistemi nella riscrittura.",
+      "conclusion": "Il dato del 24 luglio 2000 Nord America è concorde nei cataloghi; nessun cambio necessario. Conservare campagne separate, economia, nebbia di guerra, magie, scambi e crediti.",
+      "source_ids": [
+        "warlocked-date"
+      ],
+      "text_applied": "Sommario ridotto alla funzione di timeline; tutte le informazioni pertinenti delle tre card restano disponibili nelle cinque lingue."
+    }
+  ],
+  "metadata_proposals": [
+    {
+      "target_id": "wikipedia-165824",
+      "field": "timeline_release",
+      "original": {
+        "year": 2000,
+        "month": 4,
+        "day": 27,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed": {
+        "year": 2000,
+        "month": 4,
+        "day": 27,
+        "precision": "day",
+        "region": "Japan",
+        "version": "Nintendo 64"
+      },
+      "source_ids": [
+        "majora-date"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "wikipedia-725215",
+      "field": "timeline_release",
+      "original": {
+        "year": 2000,
+        "month": 4,
+        "day": 27,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed": {
+        "year": 2000,
+        "month": 4,
+        "day": 27,
+        "precision": "day",
+        "region": "Japan",
+        "version": "Game Boy Color"
+      },
+      "source_ids": [
+        "ghost-date"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "wikipedia-198435",
+      "field": "timeline_release",
+      "original": {
+        "year": 2000,
+        "month": 5,
+        "day": 22,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed": {
+        "year": 2000,
+        "month": 5,
+        "day": 22,
+        "precision": "day",
+        "region": "North America",
+        "version": "Nintendo 64"
+      },
+      "source_ids": [
+        "perfect-date"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "wikipedia-8484",
+      "field": "timeline_release",
+      "original": {
+        "year": 2000,
+        "month": 6,
+        "day": 23,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed": {
+        "year": 2000,
+        "month": 6,
+        "day": 23,
+        "precision": "day",
+        "region": "North America",
+        "version": "Windows"
+      },
+      "source_ids": [
+        "deus-postmortem"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "wikipedia-8556",
+      "field": "timeline_release",
+      "original": {
+        "year": 2000,
+        "month": 6,
+        "day": 28,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed": {
+        "year": 2000,
+        "month": 6,
+        "day": null,
+        "precision": "month",
+        "region": "North America",
+        "version": "Windows"
+      },
+      "source_ids": [
+        "diablo2-shipping",
+        "diablo2-postmortem",
+        "diablo2-anniversary"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "wikipedia-1058067",
+      "field": "timeline_release",
+      "original": {
+        "year": 2000,
+        "month": 6,
+        "day": 29,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed": {
+        "year": 2000,
+        "month": 6,
+        "day": 29,
+        "precision": "day",
+        "region": "Japan",
+        "version": "Dreamcast"
+      },
+      "source_ids": [
+        "sega-dreamcast"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "workbook-07-07-final-fantasy-ix",
+      "field": "timeline_release",
+      "original": {
+        "year": 2000,
+        "month": 7,
+        "day": 7,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed": {
+        "year": 2000,
+        "month": 7,
+        "day": 7,
+        "precision": "day",
+        "region": "Japan",
+        "version": "PlayStation"
+      },
+      "source_ids": [
+        "ffix-date"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "wikipedia-88560",
+      "field": "timeline_release",
+      "original": {
+        "year": 2000,
+        "month": 7,
+        "day": 21,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed": {
+        "year": 2000,
+        "month": 7,
+        "day": 21,
+        "precision": "day",
+        "region": "Japan",
+        "version": "Nintendo 64"
+      },
+      "source_ids": [
+        "mario-date"
+      ],
+      "applied_to_catalog": false
+    }
+  ],
+  "expansion_assessments": [
+    {
+      "target_id": "wikipedia-165824",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Priorità editoriale per la struttura temporale e il ruolo dell’opera nella serie Zelda."
+    },
+    {
+      "target_id": "wikipedia-725215",
+      "main_cards": 7,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 0,
+      "rationale": "Opera prioritaria già articolata in sette card principali: soglia soddisfatta."
+    },
+    {
+      "target_id": "wikipedia-198435",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Priorità editoriale per l’evoluzione dello sparatutto e del multigiocatore su Nintendo 64."
+    },
+    {
+      "target_id": "wikipedia-8484",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 1,
+      "rationale": "Priorità editoriale per il ruolo di Deus Ex nella storia della libertà di scelta e delle simulazioni immersive."
+    },
+    {
+      "target_id": "wikipedia-8556",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 1,
+      "rationale": "Priorità editoriale per il ruolo di Diablo II nello sviluppo del gioco di ruolo d’azione e del gioco online."
+    },
+    {
+      "target_id": "console-gap-record-of-lodoss-war-advent-of-cardice",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "required_main_cards": null,
+      "missing_cards": 0,
+      "rationale": "Le tre card descrivono nuclei pertinenti e coerenti; la particolarità del gioco non comporta da sola l’applicazione della soglia riservata alle opere più importanti. Conservare la voce senza moltiplicarne i paragrafi per una quota."
+    },
+    {
+      "target_id": "wikipedia-1058067",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Priorità editoriale per l’incontro fra cultura urbana e stile visivo in Jet Set Radio."
+    },
+    {
+      "target_id": "workbook-07-07-final-fantasy-ix",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 1,
+      "rationale": "Priorità editoriale per il ritorno alla tradizione fantasy nella fase conclusiva di Final Fantasy su PlayStation."
+    },
+    {
+      "target_id": "wikipedia-88560",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 1,
+      "rationale": "Priorità editoriale per lo sviluppo della serie sportiva Mario Tennis fra console e portatile."
+    },
+    {
+      "target_id": "warlocked-2000",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "required_main_cards": null,
+      "missing_cards": 0,
+      "rationale": "Le tre card descrivono nuclei pertinenti e coerenti; la particolarità del gioco non comporta da sola l’applicazione della soglia riservata alle opere più importanti. Conservare la voce senza moltiplicarne i paragrafi per una quota."
+    }
+  ],
+  "editorial_review": {
+    "english_first": true,
+    "five_languages_reviewed": [
+      "en",
+      "it",
+      "fr",
+      "de",
+      "es"
+    ],
+    "checks": [
+      "10 voci, 38 card principali e nessuna feature; 190 versioni complete",
+      "Inglese scritto e salvato prima degli adattamenti, con checkpoint separati per ciascuna lingua",
+      "Sommari inglesi 35–40 parole, titoli propri e ordine degli ID invariati",
+      "Riletti numeri, date, attribuzioni, ruoli e distinzione fra ricezione e fatti; nessun annuncio trattato come gioco già disponibile",
+      "Le sette card di Ghost Babel conservano tutte le meccaniche, la trama, i nomi e le caratteristiche dei quattro membri di Black Chamber",
+      "Riletti i sistemi di memoria Zelda, la motivazione attribuita a Rare, le abilità di FFIX e le iscrizioni di Lodoss",
+      "Distinte la data Windows, le versioni Mac e la futura rimasterizzazione di Deus Ex; mantenute le testimonianze diverse sul crunch Diablo II",
+      "Rilette naturalezza italiana, francese, tedesca e spagnola; 17 interventi di revisione registrati",
+      "Nessuna card aggiunta, rimossa, divisa o riordinata; sette necessità di ampliamento per dieci card, con valutazione distinta per Ghost Babel, Lodoss e Warlocked"
+    ],
+    "external_verification_limit": "Ricerca mirata sui problemi emersi, non certificazione universale del lotto. Le testimonianze dirette, i comunicati riprodotti, i manuali estratti e i cataloghi secondari sono distinti nelle singole fonti. La ricerca non ha documentato un primo giorno uniforme per Diablo II: la proposta conserva precisione mensile. Il manuale Lodoss privo di estrazione non è stato visionato; il tentativo di download locale è stato bloccato dai permessi di rete. Nessun originale, template, catalogo o media modificato. Fonti, attribuzioni e licenze originali rimangono negli INPUT.",
+    "book_style_references_consulted": false
+  },
+  "review_changes": [
+    {
+      "target_id": "wikipedia-8484",
+      "language": "en",
+      "card_id": "main:0",
+      "before": "Deus Ex is Ion Storm’s action role-playing game, published by Eidos Interactive for Windows in 2000, Mac OS later that year and PlayStation 2 in 2002. Exploration and combat connect city-based environments, where missions can be approached through shooting, stealth and role-playing systems. Cybernetic enhancements develop the protagonist’s abilities, while dialogue responses and major decisions affect events. A later patch added deathmatch multiplayer.\n\nA remaster for modern platforms was initially scheduled for February 2026. That date was withdrawn, and no replacement release date had been announced at the time of this editorial review.",
+      "after": "Deus Ex is Ion Storm’s action role-playing game, published by Eidos Interactive for Windows in 2000, Mac OS later that year and PlayStation 2 in 2002. Exploration and combat connect city-based environments, where missions can be approached through shooting, stealth and role-playing systems. Cybernetic enhancements develop the protagonist’s abilities, while dialogue responses and major decisions affect events. A later patch added deathmatch multiplayer.\n\nA remaster for modern platforms was initially scheduled for February 2026, then postponed without a new release date.",
+      "reason": "Stato dell’annuncio espresso come sequenza storica, senza riferimenti al lavoro editoriale dentro il testo museale."
+    },
+    {
+      "target_id": "wikipedia-8484",
+      "language": "it",
+      "card_id": "main:0",
+      "before": "Deus Ex è il gioco di ruolo d’azione di Ion Storm, pubblicato da Eidos Interactive per Windows nel 2000, per Mac OS nello stesso anno e per PlayStation 2 nel 2002. Esplorazione e combattimento collegano ambienti urbani nei quali le missioni si possono affrontare con armi, furtività e sistemi di ruolo. I potenziamenti cibernetici sviluppano le capacità del protagonista; risposte nei dialoghi e decisioni cruciali influiscono sugli eventi. Una patch successiva aggiunge il multigiocatore deathmatch.\n\nLa rimasterizzazione per piattaforme moderne, inizialmente prevista per febbraio 2026, è stata rinviata. Al momento di questa revisione editoriale non era stata annunciata una nuova data di uscita.",
+      "after": "Deus Ex è il gioco di ruolo d’azione di Ion Storm, pubblicato da Eidos Interactive per Windows nel 2000, per Mac OS nello stesso anno e per PlayStation 2 nel 2002. Esplorazione e combattimento collegano ambienti urbani nei quali le missioni si possono affrontare con armi, furtività e sistemi di ruolo. I potenziamenti cibernetici sviluppano le capacità del protagonista; risposte nei dialoghi e decisioni cruciali influiscono sugli eventi. Una patch successiva aggiunge il multigiocatore deathmatch.\n\nLa rimasterizzazione per piattaforme moderne, inizialmente prevista per febbraio 2026, è stata rinviata senza una nuova data di uscita.",
+      "reason": "Stessa formulazione storica delle altre lingue."
+    },
+    {
+      "target_id": "wikipedia-8484",
+      "language": "fr",
+      "card_id": "main:0",
+      "before": "Deus Ex est le jeu de rôle et d’action d’Ion Storm, édité par Eidos Interactive sur Windows en 2000, sur Mac OS la même année et sur PlayStation 2 en 2002. Exploration et combats relient des environnements urbains où les missions se prêtent au tir, à l’infiltration et aux systèmes de jeu de rôle. Les augmentations cybernétiques développent les capacités du héros, tandis que les réponses dans les dialogues et les grandes décisions influencent les événements. Une mise à jour ultérieure ajoute le multijoueur en match à mort.\n\nUne version remastérisée pour les plateformes modernes était d’abord prévue pour février 2026. Cette date a été abandonnée, et aucune nouvelle sortie n’avait été annoncée au moment de cette révision éditoriale.",
+      "after": "Deus Ex est le jeu de rôle et d’action d’Ion Storm, édité par Eidos Interactive sur Windows en 2000, sur Mac OS la même année et sur PlayStation 2 en 2002. Exploration et combats relient des environnements urbains où les missions se prêtent au tir, à l’infiltration et aux systèmes de jeu de rôle. Les augmentations cybernétiques développent les capacités du héros, tandis que les réponses dans les dialogues et les grandes décisions influencent les événements. Une mise à jour ultérieure ajoute le multijoueur en match à mort.\n\nUne version remastérisée pour les plateformes modernes était d’abord prévue pour février 2026, avant d’être reportée sans nouvelle date de sortie.",
+      "reason": "Stessa formulazione storica delle altre lingue."
+    },
+    {
+      "target_id": "wikipedia-8484",
+      "language": "de",
+      "card_id": "main:0",
+      "before": "Deus Ex ist Ion Storms Action-Rollenspiel, das Eidos Interactive 2000 für Windows, im selben Jahr für Mac OS und 2002 für PlayStation 2 veröffentlichte. Erkundung und Kämpfe verbinden städtische Schauplätze. Missionen lassen sich mithilfe von Schusswaffen, Schleichen und Rollenspielsystemen auf unterschiedliche Weise lösen. Cybernetische Erweiterungen entwickeln die Fähigkeiten des Helden, während Gesprächsantworten und wichtige Entscheidungen Ereignisse beeinflussen. Ein späterer Patch ergänzte Deathmatch-Partien.\n\nEine überarbeitete Fassung für moderne Plattformen war zunächst für Februar 2026 vorgesehen. Dieser Termin wurde zurückgenommen; zum Zeitpunkt dieser redaktionellen Prüfung war kein neuer Veröffentlichungstermin angekündigt.",
+      "after": "Deus Ex ist Ion Storms Action-Rollenspiel, das Eidos Interactive 2000 für Windows, im selben Jahr für Mac OS und 2002 für PlayStation 2 veröffentlichte. Erkundung und Kämpfe verbinden städtische Schauplätze. Missionen lassen sich mithilfe von Schusswaffen, Schleichen und Rollenspielsystemen auf unterschiedliche Weise lösen. Cybernetische Erweiterungen entwickeln die Fähigkeiten des Helden, während Gesprächsantworten und wichtige Entscheidungen Ereignisse beeinflussen. Ein späterer Patch ergänzte Deathmatch-Partien.\n\nEine überarbeitete Fassung für moderne Plattformen war zunächst für Februar 2026 vorgesehen, wurde dann jedoch ohne neuen Veröffentlichungstermin verschoben.",
+      "reason": "Stessa formulazione storica delle altre lingue."
+    },
+    {
+      "target_id": "wikipedia-8484",
+      "language": "es",
+      "card_id": "main:0",
+      "before": "Deus Ex es el juego de rol y acción de Ion Storm, publicado por Eidos Interactive para Windows en 2000, para Mac OS ese mismo año y para PlayStation 2 en 2002. Exploración y combates enlazan escenarios urbanos cuyas misiones admiten disparos, sigilo y sistemas de rol. Las mejoras cibernéticas desarrollan las capacidades del protagonista, mientras que las respuestas en las conversaciones y las decisiones importantes afectan a los acontecimientos. Un parche posterior añadió combates a muerte multijugador.\n\nLa remasterización para plataformas modernas estaba prevista inicialmente para febrero de 2026. Esa fecha se retiró y, en el momento de esta revisión editorial, no se había anunciado otra para su publicación.",
+      "after": "Deus Ex es el juego de rol y acción de Ion Storm, publicado por Eidos Interactive para Windows en 2000, para Mac OS ese mismo año y para PlayStation 2 en 2002. Exploración y combates enlazan escenarios urbanos cuyas misiones admiten disparos, sigilo y sistemas de rol. Las mejoras cibernéticas desarrollan las capacidades del protagonista, mientras que las respuestas en las conversaciones y las decisiones importantes afectan a los acontecimientos. Un parche posterior añadió combates a muerte multijugador.\n\nLa remasterización para plataformas modernas estaba prevista inicialmente para febrero de 2026, pero se aplazó sin una nueva fecha de publicación.",
+      "reason": "Stessa formulazione storica delle altre lingue."
+    },
+    {
+      "target_id": "wikipedia-165824",
+      "language": "it",
+      "card_id": "main:2",
+      "before": "Majora’s Mask ottiene buoni risultati di critica e di vendita e ricorre nelle selezioni dei migliori videogiochi. Alcuni recensori giudicano certi aspetti alla pari o superiori a Ocarina of Time, apprezzando l’inventiva, la complessità della costruzione, la precisione dei comandi e l’atmosfera delle musiche. Le riserve riguardano alcuni limiti grafici e una portata innovativa ritenuta inferiore a quella del predecessore. Le successive letture del racconto, del suo tono cupo e della sua intensità emotiva alimentano un seguito di appassionati.\n\nIl gioco ritorna in The Legend of Zelda: Collector’s Edition per GameCube nel 2003, sulla Virtual Console di Wii e Wii U e attraverso Nintendo Classics. Grezzo ne realizza il rifacimento ampliato per Nintendo 3DS, The Legend of Zelda: Majora’s Mask 3D, uscito nel 2015.",
+      "after": "Majora’s Mask ottiene buoni risultati di critica e di vendita e ricorre nelle selezioni dei migliori videogiochi. Alcuni recensori giudicano certi aspetti alla pari o superiori a Ocarina of Time, apprezzando l’inventiva, la complessità della costruzione, la precisione dei comandi e l’atmosfera delle musiche. Le riserve riguardano alcuni limiti grafici e una portata innovativa ritenuta inferiore a quella del predecessore. Le successive letture del racconto, del suo tono cupo e della sua intensità emotiva alimentano un seguito di appassionati.\n\nIl gioco ritorna in The Legend of Zelda: Collector’s Edition per GameCube nel 2003, sulla Virtual Console di Wii e Wii U e attraverso Nintendo Classics. Grezzo ne realizza il rifacimento per Nintendo 3DS, The Legend of Zelda: Majora’s Mask 3D, uscito nel 2015.",
+      "reason": "Evitare che enhanced implichi contenuti aggiuntivi non descritti."
+    },
+    {
+      "target_id": "wikipedia-198435",
+      "language": "fr",
+      "card_id": "main:1",
+      "before": "Perfect Dark reprend de nombreuses idées de GoldenEye 007, réalisé par Rare en 1997, avec une version améliorée de son moteur. Martin Hollis, directeur de GoldenEye, dirige les quatorze premiers mois d’une production qui en dure près de trente-six, avant de quitter le studio. Les exigences techniques sont importantes pour la Nintendo 64 : la campagne et la plupart des fonctions multijoueurs nécessitent l’Expansion Pak.\n\nUne fonction prévue devait permettre d’appliquer la photographie de son choix sur le visage d’un personnage multijoueur. Rare a expliqué l’avoir retirée avant la sortie afin d’éviter une polémique sur la possibilité de s’attaquer à des représentations de personnes réelles.",
+      "after": "Perfect Dark reprend de nombreuses idées de GoldenEye 007, réalisé par Rare en 1997, avec une version améliorée de son moteur. Martin Hollis, directeur de GoldenEye, dirige les quatorze premiers mois d’une production de près de trois ans, avant de quitter le studio. Les exigences techniques sont importantes pour la Nintendo 64 : la campagne et la plupart des fonctions multijoueurs nécessitent l’Expansion Pak.\n\nUne fonction prévue devait permettre d’appliquer la photographie de son choix sur le visage d’un personnage multijoueur. Rare a expliqué l’avoir retirée avant la sortie afin d’éviter une polémique sur la possibilité de s’attaquer à des représentations de personnes réelles.",
+      "reason": "Conservata l’unità temporale del materiale, con costruzione più naturale."
+    },
+    {
+      "target_id": "wikipedia-8556",
+      "language": "en",
+      "card_id": "main:1",
+      "before": "The story begins shortly after the events of Diablo, with a new hero trying to stop the devastation caused by Diablo’s return. Four acts take the player through different places to explore and fight in. The sequel also increases both the choice of playable characters and the number of people encountered along the way.",
+      "after": "The story begins shortly after the events of Diablo, with a new hero trying to stop the devastation caused by Diablo’s return. Four acts take the player through different places to explore and fight in. The sequel also increases both the choice of playable characters and the number of characters encountered along the way.",
+      "reason": "Characters non implica che tutti i personaggi siano umani."
+    },
+    {
+      "target_id": "wikipedia-8556",
+      "language": "fr",
+      "card_id": "main:1",
+      "before": "L’histoire commence peu après les événements de Diablo. Un nouveau héros cherche à mettre fin à la destruction provoquée par le retour du démon, au cours de quatre actes offrant différents lieux à explorer et où combattre. La suite élargit aussi bien le choix de personnages jouables que le nombre de personnes rencontrées au fil du voyage.",
+      "after": "L’histoire commence peu après les événements de Diablo. Un nouveau héros cherche à mettre fin à la destruction provoquée par le retour du démon, au cours de quatre actes offrant différents lieux à explorer et où combattre. La suite élargit aussi bien le choix de personnages jouables que le nombre de personnages rencontrés au fil du voyage.",
+      "reason": "Characters non implica che tutti i personaggi siano umani."
+    },
+    {
+      "target_id": "wikipedia-8556",
+      "language": "de",
+      "card_id": "main:1",
+      "before": "Die Handlung setzt kurz nach den Ereignissen von Diablo ein. Ein neuer Held versucht, die Zerstörung durch Diablos Rückkehr aufzuhalten. Vier Akte bieten unterschiedliche Orte zum Erkunden und Kämpfen. Die Fortsetzung vergrößert sowohl die Auswahl spielbarer Figuren als auch die Zahl der Menschen, denen man unterwegs begegnet.",
+      "after": "Die Handlung setzt kurz nach den Ereignissen von Diablo ein. Ein neuer Held versucht, die Zerstörung durch Diablos Rückkehr aufzuhalten. Vier Akte bieten unterschiedliche Orte zum Erkunden und Kämpfen. Die Fortsetzung vergrößert sowohl die Auswahl spielbarer Figuren als auch die Zahl der Figuren, denen man unterwegs begegnet.",
+      "reason": "Characters non implica che tutti i personaggi siano umani."
+    },
+    {
+      "target_id": "wikipedia-8556",
+      "language": "es",
+      "card_id": "main:1",
+      "before": "La historia comienza poco después de los acontecimientos de Diablo. Un nuevo héroe intenta detener la destrucción causada por el regreso del demonio, a lo largo de cuatro actos con lugares distintos que explorar y donde combatir. La secuela amplía tanto la selección de personajes jugables como el número de personas que se encuentran durante el viaje.",
+      "after": "La historia comienza poco después de los acontecimientos de Diablo. Un nuevo héroe intenta detener la destrucción causada por el regreso del demonio, a lo largo de cuatro actos con lugares distintos que explorar y donde combatir. La secuela amplía tanto la selección de personajes jugables como el número de personajes que se encuentran durante el viaje.",
+      "reason": "Characters non implica che tutti i personaggi siano umani."
+    },
+    {
+      "target_id": "wikipedia-1058067",
+      "language": "it",
+      "card_id": "main:2",
+      "before": "La critica accoglie con favore la grafica, le musiche e il gioco. Jet Set Radio riceve premi e candidature e compare poi nelle selezioni dei migliori titoli degli anni Duemila e di sempre. Vicarious Visions realizza un’edizione per Game Boy Advance nel 2003; arrivano anche versioni per i telefoni cellulari giapponesi. La riedizione del 2012 raggiunge Xbox 360, PlayStation 3, iOS, Windows, PlayStation Vita e Android.\n\nJet Set Radio Future, uscito su Xbox nel 2002, prosegue la serie. Sega annuncia un altro progetto nel 2023.",
+      "after": "La critica accoglie con favore la grafica, le musiche e le dinamiche di gioco. Jet Set Radio riceve premi e candidature e compare poi nelle selezioni dei migliori titoli degli anni Duemila e di sempre. Vicarious Visions realizza un’edizione per Game Boy Advance nel 2003; arrivano anche versioni per i telefoni cellulari giapponesi. La riedizione del 2012 raggiunge Xbox 360, PlayStation 3, iOS, Windows, PlayStation Vita e Android.\n\nJet Set Radio Future, uscito su Xbox nel 2002, prosegue la serie. Sega annuncia un altro progetto nel 2023.",
+      "reason": "Espressione italiana più precisa per gameplay."
+    },
+    {
+      "target_id": "wikipedia-88560",
+      "language": "it",
+      "card_id": "main:3",
+      "before": "Mario Tennis riceve recensioni molto positive per il gioco, la profondità e la quantità di contenuti. Mario Power Tennis per GameCube prosegue il percorso dell’edizione Nintendo 64, mentre Mario Tennis: Power Tour per Game Boy Advance continua quello portatile.",
+      "after": "Mario Tennis riceve recensioni molto positive per la giocabilità, la profondità e la quantità di contenuti. Mario Power Tennis per GameCube prosegue il percorso dell’edizione Nintendo 64, mentre Mario Tennis: Power Tour per Game Boy Advance continua quello portatile.",
+      "reason": "Espressione italiana più precisa per gameplay."
+    },
+    {
+      "target_id": "wikipedia-1058067",
+      "language": "fr",
+      "card_id": "main:2",
+      "before": "La critique accueille très favorablement les graphismes, la musique et le jeu. Jet Set Radio obtient prix et nominations, puis figure dans des sélections des meilleurs titres des années 2000 et de tous les temps. Vicarious Visions réalise une version Game Boy Advance en 2003 ; des éditions paraissent également sur les téléphones mobiles japonais. La réédition de 2012 arrive sur Xbox 360, PlayStation 3, iOS, Windows, PlayStation Vita et Android.\n\nJet Set Radio Future, sorti sur Xbox en 2002, poursuit la série. Sega annonce un autre projet en 2023.",
+      "after": "La critique accueille très favorablement les graphismes, la musique et la jouabilité. Jet Set Radio obtient prix et nominations, puis figure dans des sélections des meilleurs titres des années 2000 et de tous les temps. Vicarious Visions réalise une version Game Boy Advance en 2003 ; des éditions paraissent également sur les téléphones mobiles japonais. La réédition de 2012 arrive sur Xbox 360, PlayStation 3, iOS, Windows, PlayStation Vita et Android.\n\nJet Set Radio Future, sorti sur Xbox en 2002, poursuit la série. Sega annonce un autre projet en 2023.",
+      "reason": "Espressione francese più precisa per gameplay."
+    },
+    {
+      "target_id": "wikipedia-88560",
+      "language": "fr",
+      "card_id": "main:3",
+      "before": "Mario Tennis reçoit un accueil très favorable pour son jeu, sa profondeur et la quantité de contenu. Mario Power Tennis sur GameCube prolonge l’édition Nintendo 64, tandis que Mario Tennis: Power Tour sur Game Boy Advance poursuit la branche portable.",
+      "after": "Mario Tennis reçoit un accueil très favorable pour sa jouabilité, sa profondeur et la quantité de contenu. Mario Power Tennis sur GameCube prolonge l’édition Nintendo 64, tandis que Mario Tennis: Power Tour sur Game Boy Advance poursuit la branche portable.",
+      "reason": "Espressione francese più precisa per gameplay."
+    },
+    {
+      "target_id": "wikipedia-1058067",
+      "language": "es",
+      "card_id": "main:2",
+      "before": "La crítica recibió con entusiasmo los gráficos, la música y el juego de Jet Set Radio. Obtuvo premios y nominaciones, y después apareció en selecciones de los mejores títulos de los años dos mil y de todos los tiempos. Vicarious Visions desarrolló una versión para Game Boy Advance en 2003; también hubo ediciones para teléfonos móviles japoneses. La reedición de 2012 llegó a Xbox 360, PlayStation 3, iOS, Windows, PlayStation Vita y Android.\n\nJet Set Radio Future continuó la serie en Xbox en 2002. Sega anunció otro proyecto en 2023.",
+      "after": "La crítica recibió con entusiasmo los gráficos, la música y la jugabilidad de Jet Set Radio. Obtuvo premios y nominaciones, y después apareció en selecciones de los mejores títulos de los años dos mil y de todos los tiempos. Vicarious Visions desarrolló una versión para Game Boy Advance en 2003; también hubo ediciones para teléfonos móviles japoneses. La reedición de 2012 llegó a Xbox 360, PlayStation 3, iOS, Windows, PlayStation Vita y Android.\n\nJet Set Radio Future continuó la serie en Xbox en 2002. Sega anunció otro proyecto en 2023.",
+      "reason": "Espressione spagnola più precisa per gameplay."
+    },
+    {
+      "target_id": "wikipedia-88560",
+      "language": "es",
+      "card_id": "main:3",
+      "before": "Mario Tennis recibió críticas muy favorables por su juego, su profundidad y la cantidad de contenido. Mario Power Tennis para GameCube continuó el camino de la edición de Nintendo 64, mientras Mario Tennis: Power Tour para Game Boy Advance siguió la rama portátil.",
+      "after": "Mario Tennis recibió críticas muy favorables por su jugabilidad, su profundidad y la cantidad de contenido. Mario Power Tennis para GameCube continuó el camino de la edición de Nintendo 64, mientras Mario Tennis: Power Tour para Game Boy Advance siguió la rama portátil.",
+      "reason": "Espressione spagnola più precisa per gameplay."
+    }
+  ],
+  "validation": {
+    "valid": true,
+    "batch_id": "084-catalog",
+    "completed": true,
+    "entry_count": 10,
+    "card_count_per_language": 38,
+    "language_count": 5,
+    "translated_card_count": 190,
+    "entry_card_counts": {
+      "wikipedia-165824": 3,
+      "wikipedia-725215": 7,
+      "wikipedia-198435": 3,
+      "wikipedia-8484": 4,
+      "wikipedia-8556": 4,
+      "console-gap-record-of-lodoss-war-advent-of-cardice": 3,
+      "wikipedia-1058067": 3,
+      "workbook-07-07-final-fantasy-ix": 4,
+      "wikipedia-88560": 4,
+      "warlocked-2000": 3
+    },
+    "issue_counts": {
+      "wikipedia-165824": 1,
+      "wikipedia-725215": 0,
+      "wikipedia-198435": 1,
+      "wikipedia-8484": 1,
+      "wikipedia-8556": 1,
+      "console-gap-record-of-lodoss-war-advent-of-cardice": 0,
+      "wikipedia-1058067": 1,
+      "workbook-07-07-final-fantasy-ix": 1,
+      "wikipedia-88560": 1,
+      "warlocked-2000": 0
+    },
+    "summary_checks": [
+      {
+        "entry_id": "wikipedia-165824",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "wikipedia-725215",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "wikipedia-198435",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "wikipedia-8484",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "wikipedia-8556",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "console-gap-record-of-lodoss-war-advent-of-cardice",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "wikipedia-1058067",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "workbook-07-07-final-fantasy-ix",
+        "feature_id": null,
+        "english_summary_words": 40
+      },
+      {
+        "entry_id": "wikipedia-88560",
+        "feature_id": null,
+        "english_summary_words": 39
+      },
+      {
+        "entry_id": "warlocked-2000",
+        "feature_id": null,
+        "english_summary_words": 35
+      }
+    ],
+    "editorial_review": [],
+    "failures": []
+  },
+  "output_sha256": "a0eabef123e2ddd6dd96e129d8581facb42aecd96ab1f8ed181815bafd292784",
+  "root_review": {
+    "manual_fidelity_spot_checks": [
+      {
+        "entry_id": "wikipedia-165824",
+        "card_id": "main:1",
+        "scope": "Confronto manuale selettivo tra testo inglese riscritto e INPUT; non dichiarazione di rilettura indipendente integrale delle cinque lingue.",
+        "notes": "Confronto EN/INPUT e audit: ciclo, maschere, ocarina e dungeon conservati. Il ruolo dell’Expansion Pak è ricondotto alla testimonianza tecnica, senza affermare arbitrariamente che fosse richiesto soprattutto dalle trasformazioni."
+      },
+      {
+        "entry_id": "wikipedia-725215",
+        "card_id": "main:1",
+        "scope": "Confronto manuale selettivo tra testo inglese riscritto e INPUT; non dichiarazione di rilettura indipendente integrale delle cinque lingue.",
+        "notes": "Confronto EN/INPUT: prospettiva 2D, legame MSX2, infiltrazione, equipaggiamento, guardie, telecamera e otto direzioni conservati."
+      },
+      {
+        "entry_id": "wikipedia-725215",
+        "card_id": "main:2",
+        "scope": "Confronto manuale selettivo tra testo inglese riscritto e INPUT; non dichiarazione di rilettura indipendente integrale delle cinque lingue.",
+        "notes": "Confronto EN/INPUT: pareti e passaggi stretti, inquadratura avanti, richiamo con colpi, difficoltà degli scontri, nemici svenuti, strisciare, inventario, Codec e salvataggio mantenuti."
+      },
+      {
+        "entry_id": "wikipedia-8484",
+        "card_id": "main:0",
+        "scope": "Confronto manuale selettivo tra testo inglese riscritto e INPUT; non dichiarazione di rilettura indipendente integrale delle cinque lingue.",
+        "notes": "Confronto EN/INPUT e audit: piattaforme, missioni, scelte, potenziamenti, dialoghi, modalità multiplayer aggiunta e remaster rinviata distinti; nessuna uscita futura presentata come avvenuta."
+      },
+      {
+        "entry_id": "workbook-07-07-final-fantasy-ix",
+        "card_id": "main:2",
+        "scope": "Confronto manuale selettivo tra testo inglese riscritto e INPUT; non dichiarazione di rilettura indipendente integrale delle cinque lingue.",
+        "notes": "Confronto EN/INPUT: livelli, statistiche, equipaggiamento, AP, apprendimento permanente e due categorie di abilità presenti. La maggior parte delle abilità attive consuma MP; non tutte indiscriminatamente."
+      }
+    ],
+    "last_recorded_at": "2026-10-30T06:44:13.312385+00:00"
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "status": "PASS",
+  "locale": "it",
+  "entries": [
+    {
+      "entry_id": "workbook-04-26-alienation",
+      "source_fields_sha256": "174c7c5f77415e4a9837600b6eb9f96a96870705c76a922227a3d8db2e6f1af8",
+      "translation_sha256": "c82235a23e9422e254805602182cc43deada3163bedcefe297e0509e82ad2d04",
+      "independent_peer": "build/research/catalog-2016-chronological/april-may-six-admission-private/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "d0331c55f11cbfdf09ec329f7c4a5a7afb8fe9ff9196be2b93b0a83c25abb1db"
+    },
+    {
+      "entry_id": "workbook-05-09-stellaris",
+      "source_fields_sha256": "695f3e3b131a21e6d5a5984e529a4b978ea15d128fa954bf397fea6122b7e45e",
+      "translation_sha256": "f42b19cc9398246fb0b6bfb2addbcba4cb14c3bd5bc8a2b26bb290716a6b8dbb",
+      "independent_peer": "build/research/catalog-2016-chronological/april-may-six-admission-private/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "d0331c55f11cbfdf09ec329f7c4a5a7afb8fe9ff9196be2b93b0a83c25abb1db"
+    },
+    {
+      "entry_id": "workbook-05-10-uncharted-4-a-thief-s-end",
+      "source_fields_sha256": "9e5bc4c58d3ab47944610eb9d5f4deb9d99e4c87c6cf284beb64c34290d38c49",
+      "translation_sha256": "3603cec48fc19c87e124703629885553b4287a5477980423e2257f94863313c2",
+      "independent_peer": "build/research/catalog-2016-chronological/april-may-six-admission-private/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "d0331c55f11cbfdf09ec329f7c4a5a7afb8fe9ff9196be2b93b0a83c25abb1db"
+    },
+    {
+      "entry_id": "wikipedia-12915762",
+      "source_fields_sha256": "49df9df6760ae33bb43452ab78a03315387efaa4648740eb37f735da827b5365",
+      "translation_sha256": "2b2341fbb24e0d1a9b21cff288d8d3c398c84a9a57c919623463b67d931214aa",
+      "independent_peer": "build/research/catalog-2016-chronological/april-may-six-admission-private/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "d0331c55f11cbfdf09ec329f7c4a5a7afb8fe9ff9196be2b93b0a83c25abb1db"
+    },
+    {
+      "entry_id": "workbook-05-24-overwatch",
+      "source_fields_sha256": "03df80701e3648284b3792c759ec386b5e885cf5d77ac412a4b9e3a12da2a524",
+      "translation_sha256": "d04a715e3ca237af87022bd67fd4609759dec7bf54ef8c46a9a42a84a177102a",
+      "independent_peer": "build/research/catalog-2016-chronological/april-may-six-admission-private/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "d0331c55f11cbfdf09ec329f7c4a5a7afb8fe9ff9196be2b93b0a83c25abb1db"
+    },
+    {
+      "entry_id": "wikipedia-50816870",
+      "source_fields_sha256": "567493de94f3e5d69abc28de80a01b446c3a750a7b005cfb32c74a1895e395dc",
+      "translation_sha256": "e7daa291ad071635489a13105dc9032da83a5cb83ce4ef34d68c1e50fc3be8cc",
+      "independent_peer": "build/research/catalog-2016-chronological/april-may-six-admission-private/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "d0331c55f11cbfdf09ec329f7c4a5a7afb8fe9ff9196be2b93b0a83c25abb1db"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "actual_independent_receipts": [
+      {
+        "path": "build/research/catalog-2015-chronological/april-may-three-private/independent-root-approval.json",
+        "sha256": "89c9ac09d9c404d215b27937fab3bde3bcca842e7760dff60c08974a7904ee92",
+        "actual_scope": null
+      },
+      {
+        "path": "build/research/catalog-2016-chronological/may-two-private/independent-editorial-peer-approval.json",
+        "sha256": "013c5e0c152fabddc7dc1e1e60246609d7a835fd1c42b74f787ff879760faf51",
+        "actual_scope": {
+          "english_body_paragraphs_read": 5,
+          "localized_body_paragraphs_read": 20,
+          "locales": [
+            "it",
+            "fr",
+            "de",
+            "es"
+          ],
+          "contacts_actually_viewed": 2,
+          "selected_media_count": 9,
+          "sources": "Read direct NPD analyst reporting: US physical retail May2016 monthly rank. Read CDPR2016 PlayStation Blog title and original release date. Distinguishes original expansion from later ports.",
+          "music": "DOOM31-track source object exactly preserved. BloodandWine three original2016 label-provided publications: actual public AAC receipts read, individual composer credits MarcinPrzybylowicz/PiotrMusial correct; extended fan versions excluded.",
+          "source_bindings": "Both source_sha256 target references match source bytes.",
+          "resolved_findings": []
+        }
+      },
+      {
+        "path": "build/research/catalog-2016-chronological/root-overwatch-private/independent-editorial-peer-approval.json",
+        "sha256": "1fdc5350be1203b40cf06fc45eb81a35bce637231242f9778e3d9b61a77d9e66",
+        "actual_scope": {
+          "english_body_paragraphs_read": 4,
+          "localized_body_paragraphs_read": 16,
+          "locales": [
+            "it",
+            "fr",
+            "de",
+            "es"
+          ],
+          "selected_contact_actually_viewed": true,
+          "media": "Clean original Tracer cover and original2016 game imagery; Mercy/Pharah, Roadhog/Reinhardt and objective scene captions visually agree. Video poster remains an original2016 trailer record. No Overwatch2 character redesign substituted.",
+          "music": "Read all4 public AAC native metadata receipts. Each describes the2016 CollectorsEdition soundtrack; label2025YouTube delivery not falsely claimed as game-release date. SamCardon/DerekDuke/NealAcree composer roles match actual label fields.",
+          "source_binding": "Target source_sha256 matches exact source bytes.",
+          "findings": []
+        }
+      }
+    ],
+    "root_authorization": "Parent/root explicitly authorizes chronological Alienation/Stellaris/Uncharted4/DOOM/Overwatch/BloodWine combined six batch291, source layer137to143, current fieldguards/backups/persistence/fontbinding; all3contact sets already rootviewed. No globalassembler/FTP.",
+    "scope": "Apply reviewed candidate fields only; retain unchanged brand title when omitted in author locale wrappers. No unrelated soundtrack policy or historic generator changes.",
+    "author_metadata_fields": "DOOM reviewed attribution/editorial_credit and Overwatch explicit reviewed publication_readiness are included as exact author-approved fields with current preimage guards.",
+    "root_authorized_mechanical_copy_hash_correction": {
+      "path": "build/research/catalog-2016-chronological/april-may-six-admission-private/admission291/mechanical-copy-metadata/mechanical-correction-receipt.json",
+      "sha256": "5d3078bb0783f1d5e98005d8c83332e09a521b6315ffb7969941c5b0b077a0a7",
+      "scope": "11 copied local image files now bind their actual reviewed JPEG bytes; old original approved source/target/index bytes backed up, historic digest retained only as a historical claim. No pixels, URLs, image story bindings, English/localized prose or cue changed. Root explicit authorization retains existing visual/semantic approval."
+    }
+  }
+}

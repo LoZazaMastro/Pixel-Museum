@@ -1,0 +1,90 @@
+{
+  "status": "PASS",
+  "locale": "fr",
+  "entries": [
+    {
+      "entry_id": "wikipedia-68100842",
+      "source_fields_sha256": "ae3051b6a7b27fbc6eb9c18fa7921d0990a1d6e514ab1c6aab0ca3d303a6c72c",
+      "translation_sha256": "56b9e733e0a111fe63acfb4bbc8eff0d7d49707ba66165e92564992b3acaf56a",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch344/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "daeafc0573e6083f7a7ce99ffcdf337cbad4825eddd5df29051433606bb7dc78"
+    },
+    {
+      "entry_id": "wikipedia-64260079",
+      "source_fields_sha256": "b6ce5a4b279e6398679397ea2b8583a1479528eb578ec859c9fc2a1e652fc688",
+      "translation_sha256": "6c73ed5575680b40e2358b929ac0a2c16e3ca100d7bf176355aa9a42f0c27447",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch344/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "daeafc0573e6083f7a7ce99ffcdf337cbad4825eddd5df29051433606bb7dc78"
+    },
+    {
+      "entry_id": "wikipedia-70031621",
+      "source_fields_sha256": "f5a01989f36c96ac0b270dce94fb40463082328b0a5bb3509137bf49d4bff4d0",
+      "translation_sha256": "678a8ae202762301ee222a007aea95f93d056f6b15357f006a8d8fd8caf0cc8f",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch344/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "daeafc0573e6083f7a7ce99ffcdf337cbad4825eddd5df29051433606bb7dc78"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "package_audit",
+    "actual_receipt": "build/research/catalog-2022-chronological/root-june-july-three-private/independent-package-audit-approval.json",
+    "actual_receipt_sha256": "58ccc2476e64912b98c061a06aa4c89d98a423d745fa814ec81904f1c51a512c",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "package_audit",
+      "independent_of_authors": true,
+      "index_sha256": "8c97af0616c91c1ad5ba9daaddb4853ec90d31b261e801a13e60409aad1fbccc",
+      "owners": [
+        {
+          "entry_id": "wikipedia-68100842",
+          "source_sha256": "23953ab601397741b0d538b32461d0eb559411050e9dde1ed131da5328585086",
+          "target_sha256": "348f16aa40f89bde6a6d15748fb86c355b3c8d1537b232e327eba66e88c48edb",
+          "contact_sha256": "90b169692a365c8cc575464c6eaf09da4334e20b0cc7ccc3a3b5ef3a78c3321f"
+        },
+        {
+          "entry_id": "wikipedia-64260079",
+          "source_sha256": "2d2e1c88df1cdf873e0656d534e5c38316cd9ac8fbe3dca28e494d78c5152838",
+          "target_sha256": "45127e5ba10c0f7e2963ba2bd388e345b506da4a8d9522c39f2917949d6a98df",
+          "contact_sha256": "d4b595208be4af49ed02def55dd64900d7f934b869c108da5c546e72942d2098"
+        },
+        {
+          "entry_id": "wikipedia-70031621",
+          "source_sha256": "4eb53264a04b806960ee78d9c0b744ac63267596eca5f3d4cbe30605b2c35474",
+          "target_sha256": "f32465a13e00b8a67d77470059c86f813bfebf34a5e60f3469706c0178f5b1d2",
+          "contact_sha256": "4827e3a2301cc28f2a0d2ae72f50833b6efe255c1bd1872141ae43b988aa6649"
+        }
+      ],
+      "scope": {
+        "english_paragraphs_read": 10,
+        "localized_paragraphs_read": 40,
+        "images_personally_viewed": 17,
+        "new_music_metadata_read": 3,
+        "old_music_objects_exact": 208
+      },
+      "findings": [],
+      "notes": [
+        "All English and all four complete localized versions read. Original regional release chronology and later-platform qualifiers preserved.",
+        "Viewed all three original final contacts and amended Xenoblade final contact. Two initial dark/small contextual assets replaced by clearer official Noah and actual FutureRedeemed artwork. Native dimensions retained without upscale.",
+        "Read all three official KeisukeIto Topic metadata receipts, NexTone2022album, individual author credit coherent with Noisycroak composition/arrangement primary.",
+        "Personally read primary Noisycroak June23date, SpikeChunsoft regional launch page, NintendoStrayMay28,2026 and NintendoXenobladeSwitch2product.208existingStray/Xenobladecue objects exact; not refetched."
+      ],
+      "primary_sources_read": [
+        "https://www.noisycroak.co.jp/works/product/ai_nirvana.html",
+        "https://www.spike-chunsoft.com/games/ai-the-somnium-files-nirvana-initiative/",
+        "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-2-games/Stray-3109651.html",
+        "https://www.nintendo.com/us/store/products/xenoblade-chronicles-3-nintendo-switch-2-edition-125685/"
+      ],
+      "production_writes": false,
+      "previous_index_sha256": "0ecce1b58bc67fcf371ba71602b728d0c04df5d559cc99bb5cdf615ef1fa6f10",
+      "previous_approval_receipt_sha256": "c4b7664d1fee4e55e25c5826df3b761a1a9f107078a4affbd0bed90aeaf49358",
+      "amendment": {
+        "scope": "Only two Nintendo Xenoblade images changed; previous text/audio review retained without rereading.",
+        "images_personally_viewed": [
+          "Noah playing flute, original Nintendo image688x380, chapter2",
+          "Actual FutureRedeemed2023 keyvisual2560x1674, chapter3"
+        ],
+        "decision": "APPROVED; both clearer and directly relevant. Finalcontact actually viewed, all other images and all English/locales/music unchanged per finite root edit."
+      }
+    }
+  }
+}

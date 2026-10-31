@@ -1,0 +1,789 @@
+{
+  "batch_id": "090-catalog",
+  "status": "completed",
+  "sources": [
+    {
+      "source_id": "dmc-release",
+      "url": "https://www.capcom.co.jp/ir/news/pdf/020228.pdf",
+      "title": "Devil May Cry supera due milioni di copie distribuite",
+      "publisher": "Capcom, 28 febbraio 2002",
+      "accessed_at": "2026-10-30",
+      "scope": "PDF contemporaneo: prima uscita giapponese 23 agosto 2001; tabella distinta per Giappone, Nord America ed Europa; dati esplicitamente di distribuzione.",
+      "limitation": "Letta l’estrazione del PDF di due pagine. Il totale del 2002 è 2,06 milioni, distinto dal successivo 2,16: non confondere date dei dati."
+    },
+    {
+      "source_id": "dmc-units",
+      "url": "https://www.capcom.co.jp/ir/english/business/million.html",
+      "title": "Platinum Titles — Devil May Cry",
+      "publisher": "Capcom",
+      "accessed_at": "2026-10-30",
+      "scope": "La riga del gioco originale PS2, agosto 2001, indica 2,16 milioni di unità.",
+      "limitation": "Pagina e riga lette. Tolto oltre, non sostenuto dalla cifra; il testo attribuisce il dato a Capcom senza presentarlo come un conteggio separatamente verificato degli acquisti finali."
+    },
+    {
+      "source_id": "dmc-kamiya",
+      "url": "https://www.siliconera.com/devil-may-cry-stylish-combat-was-the-result-of-an-onimusha-bug/",
+      "title": "Devil May Cry Stylish Combat Was the Result of an Onimusha Bug",
+      "publisher": "Kazuma Hashimoto, Siliconera, 23 agosto 2021; resoconto delle dichiarazioni di Hideki Kamiya",
+      "accessed_at": "2026-10-30",
+      "scope": "Riporta il ricordo di Kamiya: progetto derivato da Resident Evil 4 e bug Onimusha che lancia i nemici in aria.",
+      "limitation": "Letto il resoconto e il testo giapponese incorporato; il tweet originale https://twitter.com/PG_kamiya/status/1429678138070470657 restituisce 403. Non dichiarata lettura diretta dell’intera serie di tweet. Nessun nuovo credito o dettaglio tecnico importato."
+    },
+    {
+      "source_id": "dmc-script",
+      "url": "https://www.neoseeker.com/devilmaycry/faqs/139054-devil-may-cry-script.html",
+      "title": "Devil May Cry Game Script Final — Mission 17: Parted Memento",
+      "publisher": "RudolphXMcGree e collaboratori GameFAQs; 13 settembre 2006",
+      "accessed_at": "2026-10-30",
+      "scope": "La trascrizione della Mission 17 descrive Nelo Angelo senza elmo, amuleto, ricordo della madre e successivo dialogo di Mundus su Vergil. La rivelazione appartiene già al primo gioco.",
+      "limitation": "Letti i passaggi tramite ricerca indicizzata mirata; apertura diretta 403. Trascrizione amatoriale di scene e dialoghi, non visione del gioco né documento ufficiale Capcom. Il prologo citato da Wikiquote distingue perdita percepita del fratello e verità successiva."
+    },
+    {
+      "source_id": "dmc-prologue",
+      "url": "https://en.wikiquote.org/wiki/Devil_May_Cry",
+      "title": "Devil May Cry — dialoghi del prologo",
+      "publisher": "Capcom, 2001; trascrizione su Wikiquote",
+      "accessed_at": "2026-10-30",
+      "scope": "La frase di Trish presenta Dante come colui che ha perduto madre e fratello.",
+      "limitation": "Letto l’estratto indicizzato; nessuna citazione letterale nel catalogo. La riscrittura presenta questa premessa come convinzione di Dante, coerente con la rivelazione della Mission 17."
+    },
+    {
+      "source_id": "parappa-release",
+      "url": "https://gamefaqs.gamespot.com/ps2/466378-parappa-the-rapper-2/data",
+      "title": "PaRappa the Rapper 2 — Release Data",
+      "publisher": "GameFAQs / GameSpot",
+      "accessed_at": "2026-10-30",
+      "scope": "La scheda distingue 30 agosto 2001 Giappone e 23 gennaio 2002 Nord America, quest’ultima già descritta nel testo della voce.",
+      "limitation": "Fonte secondaria di catalogo fornita nell’INPUT e riletta. L’articolo IGN del 23 gennaio 2002 citato dalla bibliografia è stato individuato ma non aperto: non si afferma di aver letto un comunicato Sony contemporaneo."
+    },
+    {
+      "source_id": "parappa-japan",
+      "url": "https://web.archive.org/web/20210225202053/https://www.playstation.com/ja-jp/corporate/playstation-studios/japan-studio/history-2001-2002/",
+      "title": "JAPAN Studio — opere 2002–2001",
+      "publisher": "Sony Interactive Entertainment, pagina ufficiale archiviata",
+      "accessed_at": "2026-10-30",
+      "scope": "PaRappa 2 è elencato fra i giochi del 2001.",
+      "limitation": "Pagina letta; conferma l’anno giapponese, non il giorno nordamericano. La data di catalogo giapponese non sostituisce l’evento nordamericano esplicito della voce."
+    },
+    {
+      "source_id": "parappa-manual",
+      "url": "https://www.scribd.com/document/560642677/PaRappa-the-Rapper-2-Manual-PS2",
+      "title": "PaRappa the Rapper 2 — manuale nordamericano",
+      "publisher": "Sony Computer Entertainment America; copia su Scribd",
+      "accessed_at": "2026-10-30",
+      "scope": "Pagine stampate 4–5, 8–11 e 14–15: versus, risposta ritmica, Cool, Little Onions e bonus aggiunti al livello precedente.",
+      "limitation": "Letto il testo estratto delle pagine pertinenti, non visionata la scansione. Il manuale chiama gli allievi Little Onions; non certifica la sequenza dei cappelli né il preciso requisito del lettore musicale."
+    },
+    {
+      "source_id": "parappa-unlocks",
+      "url": "https://gamefaqs.gamespot.com/ps2/466378-parappa-the-rapper-2/cheats",
+      "title": "PaRappa the Rapper 2 — unlockables",
+      "publisher": "GameFAQs, contributori DrShotz, mypantsaresobaggy e a_person_aka_he",
+      "accessed_at": "2026-10-30",
+      "scope": "Le segnalazioni di gioco distinguono il completamento con cappello giallo per il lettore, Cool per i singoli brani e i successivi cappelli blu, rosa, giallo.",
+      "limitation": "Guide di giocatori, non manuale Sony. Corroborazione della distinzione già suggerita dal materiale; non importati codici o canzoni aggiuntive. La segnalazione anonima sui bonus in qualsiasi livello è discordante e non usata per inventare un requisito di punteggio."
+    },
+    {
+      "source_id": "wendy-bozon",
+      "url": "https://www.pocketgamer.com/mighty-flip-champs/interview-contra-4-developer-wayforward-talks-mighty-flip-champs-dsiware/",
+      "title": "Interview: WayForward talks Mighty Flip Champs DSiWare",
+      "publisher": "Damien McFerran, Pocket Gamer, 28 aprile 2009; intervista diretta a Matt e Mark Bozon",
+      "accessed_at": "2026-10-30",
+      "scope": "Matt Bozon conferma esplicitamente che Wendy per Game Boy Color era ispirato a Metal Storm.",
+      "limitation": "Intervista letta. Conservato soltanto il legame già fornito, senza trasferire a Wendy tempi di sviluppo o caratteristiche del diverso Mighty Flip Champs."
+    },
+    {
+      "source_id": "shenmue-sega",
+      "url": "https://www.sega.jp/game/find/?page=46",
+      "title": "Catalogo dei giochi — Shenmue II",
+      "publisher": "Sega",
+      "accessed_at": "2026-10-30",
+      "scope": "Il catalogo ufficiale riporta Dreamcast e 6 settembre 2001.",
+      "limitation": "Letto l’estratto indicizzato pertinente. La numerazione della pagina può cambiare; corroborazione contemporanea indipendente nella fonte successiva."
+    },
+    {
+      "source_id": "shenmue-launch",
+      "url": "https://game.watch.impress.co.jp/docs/20010906/shenmu2.htm",
+      "title": "SEGA-AM2 — evento di vendita di Shenmue II ad Akihabara",
+      "publisher": "GAME Watch, 6 settembre 2001",
+      "accessed_at": "2026-10-30",
+      "scope": "Cronaca dell’evento avvenuto nel giorno d’uscita; descrive acquisti nei negozi e partecipazione dei clienti.",
+      "limitation": "Letto l’estratto indicizzato. È prova consuntiva di vendita in Giappone, non soltanto previsione o data di recensione. Le fonti Starfield ereditate non sono usate."
+    },
+    {
+      "source_id": "advance-interview",
+      "url": "https://web.archive.org/web/20120426182037/http://www.edge-online.com/features/making-advance-wars?page=2",
+      "title": "The Making Of: Advance Wars — intervista a Nishimura e Shimojo",
+      "publisher": "Edge, n. 149, maggio 2005, pp. 89–92; ripubblicazione online 26 aprile 2010",
+      "accessed_at": "2026-10-30",
+      "scope": "Rimando bibliografico preciso per tutorial, assenza iniziale di un piano estero e giudizio di Nishimura sul successo occidentale e su Fire Emblem.",
+      "limitation": "Archivio non accessibile dal tool; il fascicolo non è stato letto. Il materiale è già fornito e attribuito nell’INPUT, con citazioni riprese da fonti secondarie. Non presentata come nuova intervista primaria letta integralmente."
+    },
+    {
+      "source_id": "advance-europe",
+      "url": "https://code198x.com/vault/games/advance-wars/",
+      "title": "Advance Wars — The Wars series leaves Japan",
+      "publisher": "Code Like It’s 198x, riepilogo con rimandi a Edge",
+      "accessed_at": "2026-10-30",
+      "scope": "Riporta la dichiarazione Nintendo of Europe sul rinvio dopo gli attentati e rinvia a Edge 104, dicembre 2001, p. 13; distingue l’arrivo europeo dal 2004 giapponese.",
+      "limitation": "Letto il resoconto e il rimando, non la scansione di Edge. La causa è limitata all’Europa; non verificata una dichiarazione equivalente per il Giappone. La pagina contiene anche una data statunitense divergente riferita a Edge149, non usata per modificare automaticamente il catalogo concordante sul 10 settembre."
+    },
+    {
+      "source_id": "advance-original",
+      "url": "https://www.mobygames.com/game/4990/advance-wars/",
+      "title": "Advance Wars — prima pubblicazione",
+      "publisher": "MobyGames",
+      "accessed_at": "2026-10-30",
+      "scope": "Conferma 10 settembre 2001 per Game Boy Advance.",
+      "limitation": "Catalogo secondario, non comunicato Nintendo. Conservato il giorno già fornito; recensione GameSpot del medesimo giorno consultata soltanto come contesto, non come prova autonoma di release."
+    },
+    {
+      "source_id": "advance-japan",
+      "url": "https://www.nintendo.co.jp/n08/bgwj/index.html",
+      "title": "Game Boy Wars Advance 1+2",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "Scheda originale: 25 novembre 2004 per la raccolta giapponese.",
+      "limitation": "Letto l’estratto ufficiale. Conservata nella prosa la precisione annuale già fornita. La scheda non spiega la causa di tutti i precedenti rinvii."
+    },
+    {
+      "source_id": "ooga-release",
+      "url": "https://www.gamespot.com/games/ooga-booga/",
+      "title": "Ooga Booga — scheda e notizia di distribuzione",
+      "publisher": "GameSpot / GameFAQs",
+      "accessed_at": "2026-10-30",
+      "scope": "Scheda: 11 settembre 2001; la notizia Ooga Booga ships riporta l’annuncio Sega di uscita e il contesto online.",
+      "limitation": "Il corpo della notizia https://www.gamespot.com/articles/ooga-booga-ships/1100-2812069/ è stato letto tramite indice. L’header moderno maggio 2006 è incoerente; GameFAQs data la notizia al 12 settembre 2001. Non spostato il giorno alla data della notizia né dichiarata una nuova prova primaria di acquisto l’11."
+    },
+    {
+      "source_id": "ace-history",
+      "url": "https://blog.ja.playstation.com/?p=267700",
+      "title": "Ace Combat — trentesimo anniversario e storia della serie",
+      "publisher": "PlayStation.Blog, 2025",
+      "accessed_at": "2026-10-30",
+      "scope": "La tabella ufficiale attribuisce ad Ace Combat 04 su PS2 il 13 settembre 2001.",
+      "limitation": "Letto il testo indicizzato pertinente. Non importati altri dettagli o interpretazioni tecniche della retrospettiva. La notizia contemporanea GAME Watch del 12 settembre conferma la previsione, ma da sola non proverebbe il rilascio avvenuto."
+    },
+    {
+      "source_id": "wave-release",
+      "url": "https://www.nintendo.co.jp/ngc/gwrj/index.html",
+      "title": "Wave Race: Blue Storm — sito originale",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "Scheda originale con data 14 settembre 2001; la lista storica Nintendo la conferma accanto a Luigi’s Mansion.",
+      "limitation": "Letto l’estratto ufficiale. Le meccaniche già fornite sono mantenute; la FAQ firsthand Dev su GameFAQs conferma perdita della carica quando si salta una boa, senza introdurre numeri di boe discordanti fra guide."
+    },
+    {
+      "source_id": "wave-buoys",
+      "url": "https://gamefaqs.gamespot.com/gamecube/515938-wave-race-blue-storm/faqs/14785",
+      "title": "Wave Race: Blue Storm — FAQ, Overview",
+      "publisher": "Dev, GameFAQs, 2001–2002",
+      "accessed_at": "2026-10-30",
+      "scope": "Conferma che saltare una boa azzera la potenza accumulata.",
+      "limitation": "Guida di un giocatore. Non adottato il suo conteggio di sei boe, in contrasto con altre descrizioni; il lotto non richiede un numero e ne conserva la formulazione corretta senza quota."
+    },
+    {
+      "source_id": "cube-history",
+      "url": "https://www.nintendo.com/en-gb/Hardware/Nintendo-History/Nintendo-History-625945.html",
+      "title": "Nintendo History — 2001",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "La cronologia ufficiale distingue lancio giapponese 14 settembre 2001 e americano 18 novembre 2001.",
+      "limitation": "Letta la sezione pertinente. Conservato l’evento giapponese esplicito; nessuna data americana aggiunta al testo."
+    },
+    {
+      "source_id": "cube-specs",
+      "url": "https://www.nintendo.co.jp/ngc/specific/index.html",
+      "title": "Nintendo GameCube — specifiche",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "485 MHz Gekko, Flipper, 1T-SRAM, framebuffer e texture cache; CAV, 128 ms, 8 cm e circa 1,5 GB; dimensioni 150 × 110 × 161 mm e quattro porte.",
+      "limitation": "Pagina ufficiale letta. I dati già presenti sono conservati; framebuffer e cache texture sono distinti, evitando di chiamarli entrambi cache. Non trasferite modifiche del modello 2004 al modello di lancio."
+    },
+    {
+      "source_id": "cube-controller",
+      "url": "https://www.nintendo.co.jp/ngc/control/index.html",
+      "title": "Nintendo GameCube — controller",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "Il testo descrive la posizione centrale di A, due impugnature, comandi analogici e vibrazione integrata.",
+      "limitation": "Pagina letta; non dichiarata ispezione fotografica. Le forme dei pulsanti sono già descritte nell’INPUT."
+    },
+    {
+      "source_id": "cube-disc",
+      "url": "https://www.nintendo.co.jp/ngc/disk/index.html",
+      "title": "Nintendo GameCube — disco",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "Formato da otto centimetri, circa 1,5 GB, CAV e accesso medio 128 millisecondi; confronto con la capacità delle cartucce Nintendo 64.",
+      "limitation": "Pagina letta. Non ripresi slogan del testo promozionale né l’aspettativa che il formato diventi uno standard universale."
+    },
+    {
+      "source_id": "cube-launch-games",
+      "url": "https://www.nintendo.co.jp/ngc/before/n2005_b.html",
+      "title": "Nintendo GameCube — software Nintendo precedente a dicembre 2005",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "Luigi’s Mansion e Wave Race: Blue Storm sono entrambi datati 14 settembre 2001.",
+      "limitation": "Lista ufficiale letta. La prosa dice fra i giochi di lancio, senza far credere che il catalogo iniziale fosse composto soltanto da questi due titoli."
+    },
+    {
+      "source_id": "cube-cable-date",
+      "url": "https://www.nintendo.co.jp/ngc/acce/index.html",
+      "title": "Nintendo GameCube — accessori",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "GBA Cable: 14 dicembre 2001; connessione alla porta controller e necessità di software compatibile.",
+      "limitation": "Letto l’estratto ufficiale. Il testo conserva dicembre, già fornito; il cavo non viene descritto come collegamento video diretto o Game Boy Player."
+    },
+    {
+      "source_id": "cube-cable-use",
+      "url": "https://www.nintendo.co.jp/ngc/tunagaru.html",
+      "title": "GameCube e Game Boy Advance — software collegabile",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "Gioco sui due schermi, scambio dei dati e trasferimenti temporanei di giochi tramite Joy Carry.",
+      "limitation": "Pagina ufficiale letta. I sommari sono stati precisati: il cavo collega le due console, mentre gli schermi possono mostrare informazioni differenti."
+    }
+  ],
+  "decisions": [
+    {
+      "target_id": "wikipedia-14314296",
+      "problem": "Fratello detto morto senza prospettiva; rivelazione di Nelo Angelo attribuita soltanto ai seguiti; oltre 2,16 milioni e data priva di regione.",
+      "conclusion": "Presentare la perdita come convinzione iniziale di Dante; la Mission 17 già rivela il legame Nelo Angelo/Vergil. Capcom registra 2,16 milioni, non oltre; 23 agosto 2001 è Giappone. Le allusioni letterarie non equivalgono a un adattamento del poema.",
+      "source_ids": [
+        "dmc-release",
+        "dmc-units",
+        "dmc-kamiya",
+        "dmc-script",
+        "dmc-prologue"
+      ],
+      "text_applied": "Quattro card complete in cinque lingue; conservati origine Resident Evil, bug Onimusha, riferimenti letterari, critica, quattro giochi successivi, prequel, reboot e due animazioni."
+    },
+    {
+      "target_id": "workbook-01-23-parappa-the-rapper-2",
+      "problem": "Collocazione giapponese 2001 ma testo esplicitamente nordamericano 23 gennaio 2002; piccoli allievi e condizioni dello sblocco musicale da precisare.",
+      "conclusion": "Mantenere la semantica dell’evento nordamericano e proporre il riallineamento del metadato. Il manuale chiama gli allievi Little Onions; distinguere lettore sbloccato completando con cappello giallo dai brani ottenuti con Cool.",
+      "source_ids": [
+        "parappa-release",
+        "parappa-japan",
+        "parappa-manual",
+        "parappa-unlocks"
+      ],
+      "text_applied": "Quattro card in cinque lingue; nuove frasi non fanno credere che basti completare una sola volta. Nomi delle valutazioni e modalità conservati."
+    },
+    {
+      "target_id": "wendy-every-witch-way-2001",
+      "problem": "L’ispirazione Metal Storm è presentata senza attribuzione primaria nel materiale.",
+      "conclusion": "Il ricordo diretto di Matt Bozon conferma il legame. Conservare settembre 2001 Nord America senza inventare un giorno.",
+      "source_ids": [
+        "wendy-bozon"
+      ],
+      "text_applied": "Tre card mantengono tutti gli ambienti, inversione, pianificazione, sezioni sulla scopa, credito di Bozon e mondo aggiuntivo Game Boy Advance."
+    },
+    {
+      "target_id": "daily-09-06",
+      "problem": "Bibliografia ereditata include due pagine di Starfield; data senza regione e nota che esige una verifica effettiva.",
+      "conclusion": "Il soggetto è Shenmue II. Sega conferma il 6 settembre 2001 e la cronaca contemporanea documenta acquisti quel giorno in Giappone. Le pagine Starfield sono estranee e vanno sostituite nella futura integrazione, conservando lo storico originale.",
+      "source_ids": [
+        "shenmue-sega",
+        "shenmue-launch"
+      ],
+      "text_applied": "Quattro card preservano Hong Kong, Kowloon, orari, indicazioni, lavoro, combattimenti, QTE e avanzamento dell’attesa; nessun URL o media modificato direttamente."
+    },
+    {
+      "target_id": "wikipedia-582439",
+      "problem": "Causa del rinvio attribuita indistintamente a Europa e Giappone; attribuzione a Nishimura da non rendere una causalità esclusiva dimostrata.",
+      "conclusion": "Separare il rinvio europeo dopo gli attentati dalla pubblicazione giapponese nella raccolta del 2004. Conservare Nishimura come ricordo attribuito e l’apporto al passaggio di Fire Emblem come valutazione storica. Il 10 settembre 2001 riguarda il Nord America.",
+      "source_ids": [
+        "advance-interview",
+        "advance-europe",
+        "advance-original",
+        "advance-japan"
+      ],
+      "text_applied": "Tre card mantengono contesto, settimo episodio, paesi e accuse, tutorial, tutte le riedizioni e la raccolta 2023; nessuna nuova meccanica inventata per colmare la lacuna del materiale."
+    },
+    {
+      "target_id": "console-gap-ooga-booga",
+      "problem": "Data di una notizia di distribuzione e header moderno non vanno scambiati per release; preservare crediti e funzionamento degli aiuti.",
+      "conclusion": "Conservare 11 settembre 2001 Nord America come dato di catalogo fornito, corroborato da GameSpot/GameFAQs, senza presentare il 12 della notizia o il 2006 dell’header come giorno d’uscita.",
+      "source_ids": [
+        "ooga-release"
+      ],
+      "text_applied": "Tre card conservano quattro Kahuna, tutte le categorie d’attacco, cavalcature, Tikis, sblocchi, multiplayer e i due compositori."
+    },
+    {
+      "target_id": "ace-combat-04-2001",
+      "problem": "Data e titolo regionale da circoscrivere; distinzione fra prospettive narrativa e di gioco.",
+      "conclusion": "Il 13 settembre 2001 è il lancio giapponese. Distant Thunder rimane il titolo europeo. Il bambino vive sotto occupazione; non è il protagonista pilotabile Mobius 1.",
+      "source_ids": [
+        "ace-history"
+      ],
+      "text_applied": "Tre card e sommario corretti; diciotto missioni, asteroidi, coalizione, arsenale, Yellow 13, intermezzi, coro, AC04 Project e eredità conservati."
+    },
+    {
+      "target_id": "wave-race-blue-storm-2001",
+      "problem": "Il turbo non va descritto come permanente né il meteo come sola scenografia.",
+      "conclusion": "Mantenere la perdita della carica alla boa mancata, la scelta dell’ordine dei circuiti in base alle previsioni e l’effetto delle onde. Il 14 settembre 2001 è giapponese, insieme a GameCube.",
+      "source_ids": [
+        "wave-release",
+        "wave-buoys"
+      ],
+      "text_applied": "Tre card conservano precedessore, differenze fra piloti, multiplayer, Lawrence Schwedler e James Phillipsen senza aggiungere numeri non necessari."
+    },
+    {
+      "target_id": "workbook-09-14-nintendo-gamecube",
+      "problem": "La connessione GBA potrebbe sembrare un cavo video; framebuffer distinto dalla cache; elenco iniziale non esaustivo.",
+      "conclusion": "Il cavo collega le console per software compatibile e dati diversi sui due schermi. I dati hardware corrispondono alle specifiche Nintendo. I due giochi citati sono fra i titoli di lancio; data giapponese 14 settembre 2001.",
+      "source_ids": [
+        "cube-history",
+        "cube-specs",
+        "cube-controller",
+        "cube-disc",
+        "cube-launch-games",
+        "cube-cable-date",
+        "cube-cable-use"
+      ],
+      "text_applied": "Sette card complete nelle cinque lingue, soglia hardware soddisfatta; conservati frequenza, capacità, tempi, misure, componenti, quattro porte e collegamento dicembre 2001."
+    }
+  ],
+  "metadata_proposals": [
+    {
+      "target_id": "wikipedia-14314296",
+      "field": "timeline_release",
+      "original": {
+        "year": 2001,
+        "month": 8,
+        "day": 23,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed": {
+        "year": 2001,
+        "month": 8,
+        "day": 23,
+        "precision": "day",
+        "region": "Japan",
+        "version": "PlayStation 2"
+      },
+      "source_ids": [
+        "dmc-release"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "workbook-01-23-parappa-the-rapper-2",
+      "field": "timeline_release",
+      "original": {
+        "year": 2001,
+        "month": 8,
+        "day": 30,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed": {
+        "year": 2002,
+        "month": 1,
+        "day": 23,
+        "precision": "day",
+        "region": "North America",
+        "version": "PlayStation 2"
+      },
+      "source_ids": [
+        "parappa-release"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "daily-09-06",
+      "field": "timeline_release",
+      "original": {
+        "year": 2001,
+        "month": 9,
+        "day": 6,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed": {
+        "year": 2001,
+        "month": 9,
+        "day": 6,
+        "precision": "day",
+        "region": "Japan",
+        "version": "Dreamcast"
+      },
+      "source_ids": [
+        "shenmue-sega",
+        "shenmue-launch"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "wikipedia-582439",
+      "field": "timeline_release",
+      "original": {
+        "year": 2001,
+        "month": 9,
+        "day": 10,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed": {
+        "year": 2001,
+        "month": 9,
+        "day": 10,
+        "precision": "day",
+        "region": "North America",
+        "version": "Game Boy Advance"
+      },
+      "source_ids": [
+        "advance-original"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "workbook-09-14-nintendo-gamecube",
+      "field": "timeline_release",
+      "original": {
+        "year": 2001,
+        "month": 9,
+        "day": 14,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed": {
+        "year": 2001,
+        "month": 9,
+        "day": 14,
+        "precision": "day",
+        "region": "Japan",
+        "version": "Nintendo GameCube"
+      },
+      "source_ids": [
+        "cube-history"
+      ],
+      "applied_to_catalog": false
+    }
+  ],
+  "bibliography_corrections": [
+    {
+      "target_id": "daily-09-06",
+      "problem": "Le prime due fonti ereditate sono pagine su Starfield e non documentano Shenmue II.",
+      "proposed_action": "Nel successivo import mantenere lo storico originale ma sostituire i due riferimenti come fonti attive di questa voce con il catalogo Sega e la cronaca GAME Watch del lancio.",
+      "unrelated_urls": [
+        "https://bethesda.net/en-US/news/starfield-launch-details-pc-specs-and-more",
+        "https://en.wikipedia.org/wiki/Starfield_(video_game)"
+      ],
+      "replacement_source_ids": [
+        "shenmue-sega",
+        "shenmue-launch"
+      ],
+      "applied_to_catalog": false,
+      "media_scope": "Questo lotto non espone gli asset delle card. Non dichiarata risolta o verificata l’identità di immagini/video non visionati; nessun asset modificato."
+    }
+  ],
+  "expansion_assessments": [
+    {
+      "target_id": "wikipedia-14314296",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 1,
+      "rationale": "Priorità editoriale per il ruolo di Devil May Cry nella definizione dell’azione basata su combinazioni e stile."
+    },
+    {
+      "target_id": "workbook-01-23-parappa-the-rapper-2",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 1,
+      "rationale": "Priorità editoriale per il passaggio delle lezioni musicali di PaRappa alla seconda PlayStation."
+    },
+    {
+      "target_id": "wendy-every-witch-way-2001",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "required_main_cards": null,
+      "missing_cards": 0,
+      "rationale": "La catalogazione non implica automaticamente la soglia riservata ai giochi più importanti. I tre nuclei disponibili sono pertinenti e non vengono suddivisi o ripetuti per raggiungere una quota."
+    },
+    {
+      "target_id": "daily-09-06",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 1,
+      "rationale": "Priorità editoriale per l’evoluzione della città e dei ritmi quotidiani in Shenmue II."
+    },
+    {
+      "target_id": "wikipedia-582439",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Priorità editoriale per la diffusione internazionale della strategia portatile Nintendo."
+    },
+    {
+      "target_id": "console-gap-ooga-booga",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "required_main_cards": null,
+      "missing_cards": 0,
+      "rationale": "La catalogazione non implica automaticamente la soglia riservata ai giochi più importanti. I tre nuclei disponibili sono pertinenti e non vengono suddivisi o ripetuti per raggiungere una quota."
+    },
+    {
+      "target_id": "ace-combat-04-2001",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Priorità editoriale per la nuova impostazione narrativa e visiva di Ace Combat su PlayStation 2."
+    },
+    {
+      "target_id": "wave-race-blue-storm-2001",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Priorità editoriale per il ruolo del moto ondoso e delle condizioni variabili nelle corse su GameCube."
+    },
+    {
+      "target_id": "workbook-09-14-nintendo-gamecube",
+      "main_cards": 7,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 6,
+      "missing_cards": 0,
+      "rationale": "Console importante: sette card principali distinte; soglia di sei già soddisfatta."
+    }
+  ],
+  "editorial_review": {
+    "english_first": true,
+    "five_languages_reviewed": [
+      "en",
+      "it",
+      "fr",
+      "de",
+      "es"
+    ],
+    "checks": [
+      "9 voci, 34 card principali, nessuna feature: 170 versioni complete",
+      "Inglese scritto e salvato prima degli adattamenti; checkpoint separati per tutte le lingue",
+      "Sommari inglesi fra 36 e 41 parole; titoli propri e tutti gli ID invariati",
+      "Riletti nomi, quantità, date, crediti, territori, meccaniche e struttura dei paragrafi",
+      "Tredici modifiche di rilettura registrate, inclusa precisazione delle connessioni GameCube, prospettiva del bambino Ace Combat e sblocchi PaRappa",
+      "Sei giochi richiedono nove nuove card principali complessive; Wendy e Ooga Booga non sono assoggettati automaticamente alla quota; GameCube ne ha già sette",
+      "Gli originali mantengono fonti, attribuzioni, licenze e riferimenti musicali; nessuna modifica al catalogo o ai media"
+    ],
+    "external_verification_limit": "Verifiche mirate ai problemi emersi. Fonti ufficiali e contemporanee sono distinte da cataloghi secondari, testimonianze riportate e trascrizioni amatoriali. Nessuna nuova lettura integrale dichiarata per Edge o per il tweet Kamiya. Il giorno nordamericano PaRappa e quello Ooga Booga restano riscontri di catalogo, non nuove prove primarie di acquisto. Le fonti di Starfield sono identificate e sostituibili in integrazione; gli asset non disponibili in questo lotto non sono stati ispezionati.",
+    "book_style_references_consulted": false
+  },
+  "review_changes": [
+    {
+      "target_id": "wikipedia-582439",
+      "language": "en",
+      "card_id": "main:2",
+      "field": "text",
+      "before": "Advance Wars arrived in North America on 10 September 2001. Its Japanese and European releases were delayed after the attacks of 11 September; Europe received it in January 2002. In Japan, it appeared in the 2004 compilation Game Boy Wars Advance 1+2 alongside Advance Wars 2: Black Hole Rising, whose separate Japanese release had also been cancelled. Strong reviews were followed by a lasting place in selections of the best games.\n\nThe original joined the Wii U Virtual Console in Europe and North America on 3 April 2014. Announced at E3 2021, WayForward’s Switch remake collection Advance Wars 1+2: Re-Boot Camp combined both campaigns and launched on 21 April 2023 in the Americas and Europe, without a Japanese release.",
+      "after": "Advance Wars arrived in North America on 10 September 2001. Its European launch was postponed after the attacks of 11 September, before a release in January 2002. In Japan, it appeared in the 2004 compilation Game Boy Wars Advance 1+2 alongside Advance Wars 2: Black Hole Rising, whose separate Japanese release had also been cancelled. Strong reviews were followed by a lasting place in selections of the best games.\n\nThe original joined the Wii U Virtual Console in Europe and North America on 3 April 2014. Announced at E3 2021, WayForward’s Switch remake collection Advance Wars 1+2: Re-Boot Camp combined both campaigns and launched on 21 April 2023 in the Americas and Europe, without a Japanese release.",
+      "reason": "Distinguere la causa documentata del rinvio europeo dalla successiva pubblicazione giapponese; allineamento agli altri quattro adattamenti."
+    },
+    {
+      "target_id": "ace-combat-04-2001",
+      "language": "en",
+      "card_id": null,
+      "field": "summary",
+      "before": "Ace Combat 04: Shattered Skies pairs large aerial battles with an occupied child’s encounters on the ground. Aircraft selection and special weapons shape each sortie, while illustrated interludes give the opposing pilots a place beyond the next target indicator.",
+      "after": "Ace Combat 04: Shattered Skies pairs large aerial battles with a child’s encounters under occupation. Aircraft selection and special weapons shape each sortie, while illustrated interludes give the opposing pilots a place beyond the next target indicator.",
+      "reason": "Chiarezza editoriale e fedeltà al materiale verificato"
+    },
+    {
+      "target_id": "workbook-09-14-nintendo-gamecube",
+      "language": "en",
+      "card_id": "main:0",
+      "field": "heading",
+      "before": "GameCube opens its Japanese generation",
+      "after": "GameCube launches in Japan",
+      "reason": "Chiarezza editoriale e fedeltà al materiale verificato"
+    },
+    {
+      "target_id": "workbook-09-14-nintendo-gamecube",
+      "language": "en",
+      "card_id": null,
+      "field": "summary",
+      "before": "Nintendo GameCube combines a small optical disc with a controller arranged around one prominent button. Its compact case, carrying handle and four controller ports suit shared play, while a later Game Boy Advance cable connects the television to a second screen.",
+      "after": "Nintendo GameCube combines a small optical disc with a controller arranged around one prominent button. Its compact case, carrying handle and four controller ports suit shared play, while a later cable connects a Game Boy Advance for play across two screens.",
+      "reason": "Il cavo collega le console, non direttamente il televisore alla seconda schermata."
+    },
+    {
+      "target_id": "workbook-09-14-nintendo-gamecube",
+      "language": "it",
+      "card_id": null,
+      "field": "summary",
+      "before": "Nintendo GameCube abbina un piccolo disco ottico a un controller organizzato attorno a un pulsante principale ben riconoscibile. Il corpo compatto, la maniglia e le quattro porte favoriscono le partite condivise; un successivo cavo per Game Boy Advance collega al televisore un secondo schermo.",
+      "after": "Nintendo GameCube abbina un piccolo disco ottico a un controller organizzato attorno a un pulsante principale ben riconoscibile. Il corpo compatto, la maniglia e le quattro porte favoriscono le partite condivise; un successivo cavo collega il Game Boy Advance per giocare su due schermi.",
+      "reason": "Il cavo collega le console, non direttamente il televisore alla seconda schermata."
+    },
+    {
+      "target_id": "workbook-09-14-nintendo-gamecube",
+      "language": "fr",
+      "card_id": null,
+      "field": "summary",
+      "before": "Nintendo GameCube associe un petit disque optique à une manette organisée autour d’un bouton bien visible. Son boîtier compact, sa poignée et ses quatre ports facilitent les parties partagées ; un câble Game Boy Advance relie ensuite un deuxième écran au téléviseur.",
+      "after": "Nintendo GameCube associe un petit disque optique à une manette organisée autour d’un bouton bien visible. Son boîtier compact, sa poignée et ses quatre ports facilitent les parties partagées ; un câble permet ensuite de connecter un Game Boy Advance pour jouer sur deux écrans.",
+      "reason": "Il cavo collega le console, non direttamente il televisore alla seconda schermata."
+    },
+    {
+      "target_id": "workbook-09-14-nintendo-gamecube",
+      "language": "de",
+      "card_id": null,
+      "field": "summary",
+      "before": "Nintendo GameCube verbindet eine kleine optische Disc mit einem Controller, dessen Tasten sich um einen auffälligen Hauptknopf anordnen. Kompaktes Gehäuse, Tragegriff und vier Anschlüsse erleichtern gemeinsame Partien; ein späteres Game-Boy-Advance-Kabel verbindet den Fernseher mit einem zweiten Bildschirm.",
+      "after": "Nintendo GameCube verbindet eine kleine optische Disc mit einem Controller, dessen Tasten sich um einen auffälligen Hauptknopf anordnen. Kompaktes Gehäuse, Tragegriff und vier Anschlüsse erleichtern gemeinsame Partien; ein späteres Kabel bindet einen Game Boy Advance für das Spiel auf zwei Bildschirmen ein.",
+      "reason": "Il cavo collega le console, non direttamente il televisore alla seconda schermata."
+    },
+    {
+      "target_id": "workbook-09-14-nintendo-gamecube",
+      "language": "es",
+      "card_id": null,
+      "field": "summary",
+      "before": "Nintendo GameCube combina un pequeño disco óptico con un mando organizado alrededor de un botón destacado. Su tamaño, el asa y los cuatro puertos facilitan las partidas compartidas; un posterior cable de Game Boy Advance conecta una segunda pantalla al televisor.",
+      "after": "Nintendo GameCube combina un pequeño disco óptico con un mando organizado alrededor de un botón destacado. Su tamaño, el asa y los cuatro puertos facilitan las partidas compartidas; un cable posterior conecta una Game Boy Advance para jugar en dos pantallas.",
+      "reason": "Il cavo collega le console, non direttamente il televisore alla seconda schermata."
+    },
+    {
+      "target_id": "workbook-01-23-parappa-the-rapper-2",
+      "language": "en",
+      "card_id": "main:3",
+      "field": "text",
+      "before": "After pairs of stages, bonus rounds ask PaRappa to break targets held up by Chop Chop Master Onion’s small students. The points earned are added to the preceding stage’s score. Finishing stages with a Cool rating also makes their music available in the player unlocked through completing the game.\n\nSuccessive playthroughs bring blue, pink and yellow hats and remixed lines for another attempt at the lessons. Alongside the solo campaign, a two-player Vs. Mode gives both players a phrase and asks them to outdo one another through freestyle performance.",
+      "after": "Bonus rounds between pairs of stages ask PaRappa to break targets held up by the Little Onions, Chop Chop Master Onion’s pupils. The points earned are added to the preceding stage’s score. Finishing stages with a Cool rating makes their music available in the player unlocked by completing the game with the yellow hat.\n\nSuccessive playthroughs bring blue, pink and yellow hats and remixed lines for another attempt at the lessons. Alongside the solo campaign, a two-player Vs. Mode gives both players a phrase and asks them to outdo one another through freestyle performance.",
+      "reason": "Nome dei piccoli allievi dal manuale SCEA; distinzione fra sblocco del lettore con cappello giallo e sblocco dei brani con Cool. Non implica che il primo completamento basti."
+    },
+    {
+      "target_id": "workbook-01-23-parappa-the-rapper-2",
+      "language": "it",
+      "card_id": "main:3",
+      "field": "text",
+      "before": "Dopo coppie di livelli, le prove bonus chiedono a PaRappa di rompere i bersagli sorretti dai piccoli allievi di Chop Chop Master Onion. I punti ottenuti si aggiungono a quelli del livello precedente. Concludere le lezioni con la valutazione Cool rende inoltre disponibili i relativi brani nel lettore musicale che si sblocca completando il gioco.\n\nLe partite successive introducono cappelli blu, rosa e gialli, insieme a frasi rielaborate con cui affrontare di nuovo le lezioni. Alla campagna in solitaria si affianca la modalità Vs. per due giocatori: entrambi ricevono una frase e cercano di superarsi a vicenda con il freestyle.",
+      "after": "Le prove bonus fra coppie di livelli chiedono a PaRappa di rompere i bersagli sorretti dai Little Onions, gli allievi di Chop Chop Master Onion. I punti ottenuti si aggiungono a quelli del livello precedente. Concludere le lezioni con la valutazione Cool rende disponibili i relativi brani nel lettore musicale che si sblocca completando il gioco con il cappello giallo.\n\nLe partite successive introducono cappelli blu, rosa e gialli, insieme a frasi rielaborate con cui affrontare di nuovo le lezioni. Alla campagna in solitaria si affianca la modalità Vs. per due giocatori: entrambi ricevono una frase e cercano di superarsi a vicenda con il freestyle.",
+      "reason": "Nome dei piccoli allievi dal manuale SCEA; distinzione fra sblocco del lettore con cappello giallo e sblocco dei brani con Cool. Non implica che il primo completamento basti."
+    },
+    {
+      "target_id": "workbook-01-23-parappa-the-rapper-2",
+      "language": "fr",
+      "card_id": "main:3",
+      "field": "text",
+      "before": "Après des paires de niveaux, des épreuves bonus demandent à PaRappa de briser les cibles que présentent les petits élèves de Chop Chop Master Onion. Les points gagnés s’ajoutent au score du niveau précédent. Terminer les leçons avec la note Cool rend également leurs morceaux accessibles dans le lecteur musical débloqué en achevant le jeu.\n\nLes parties successives apportent des bonnets bleus, roses puis jaunes, ainsi que des phrases remixées pour reprendre les leçons. À la campagne solo s’ajoute un mode Vs. à deux : chaque joueur reçoit une phrase et cherche à surpasser l’autre par son freestyle.",
+      "after": "Des épreuves bonus entre des paires de niveaux demandent à PaRappa de briser les cibles que présentent les Little Onions, élèves de Chop Chop Master Onion. Les points gagnés s’ajoutent au score du niveau précédent. Terminer les leçons avec la note Cool rend leurs morceaux accessibles dans le lecteur musical débloqué en achevant le jeu avec le bonnet jaune.\n\nLes parties successives apportent des bonnets bleus, roses puis jaunes, ainsi que des phrases remixées pour reprendre les leçons. À la campagne solo s’ajoute un mode Vs. à deux : chaque joueur reçoit une phrase et cherche à surpasser l’autre par son freestyle.",
+      "reason": "Nome dei piccoli allievi dal manuale SCEA; distinzione fra sblocco del lettore con cappello giallo e sblocco dei brani con Cool. Non implica che il primo completamento basti."
+    },
+    {
+      "target_id": "workbook-01-23-parappa-the-rapper-2",
+      "language": "de",
+      "card_id": "main:3",
+      "field": "text",
+      "before": "Nach jeweils zwei Abschnitten fordern Bonusrunden PaRappa dazu auf, Ziele zu zerschlagen, die kleine Schüler von Chop Chop Master Onion hochhalten. Die gewonnenen Punkte zählen zum vorherigen Abschnitt. Mit Cool abgeschlossene Lektionen stellen außerdem ihre Musik im später freigeschalteten Musikspieler bereit.\n\nWeitere Spieldurchgänge bringen blaue, rosa und gelbe Mützen sowie neu arrangierte Zeilen für einen weiteren Versuch. Neben der Solokampagne gibt es einen Vs.-Modus für zwei Personen. Beide erhalten eine Phrase und versuchen, sich mit ihrer Freestyle-Darbietung zu übertreffen.",
+      "after": "Bonusrunden zwischen Abschnittspaaren fordern PaRappa dazu auf, Ziele zu zerschlagen, die die Little Onions, Schüler von Chop Chop Master Onion, hochhalten. Die gewonnenen Punkte zählen zum vorherigen Abschnitt. Mit Cool abgeschlossene Lektionen stellen ihre Musik im Musikspieler bereit, der nach einem vollständigen Durchgang mit der gelben Mütze freigeschaltet wird.\n\nWeitere Spieldurchgänge bringen blaue, rosa und gelbe Mützen sowie neu arrangierte Zeilen für einen weiteren Versuch. Neben der Solokampagne gibt es einen Vs.-Modus für zwei Personen. Beide erhalten eine Phrase und versuchen, sich mit ihrer Freestyle-Darbietung zu übertreffen.",
+      "reason": "Nome dei piccoli allievi dal manuale SCEA; distinzione fra sblocco del lettore con cappello giallo e sblocco dei brani con Cool. Non implica che il primo completamento basti."
+    },
+    {
+      "target_id": "workbook-01-23-parappa-the-rapper-2",
+      "language": "es",
+      "card_id": "main:3",
+      "field": "text",
+      "before": "Después de parejas de niveles, las pruebas de bonificación piden a PaRappa que rompa los blancos sostenidos por los pequeños alumnos de Chop Chop Master Onion. Los puntos se añaden a la puntuación del nivel anterior. Terminar las lecciones con la valoración Cool también habilita sus canciones en el reproductor musical que se desbloquea al completar el juego.\n\nLas sucesivas partidas traen gorros azules, rosas y amarillos, junto con frases remezcladas para volver a intentar las lecciones. Además de la campaña individual, el modo Vs. para dos jugadores asigna una frase a ambos y les propone superarse mediante el freestyle.",
+      "after": "Las pruebas de bonificación entre parejas de niveles piden a PaRappa que rompa los blancos sostenidos por los Little Onions, alumnos de Chop Chop Master Onion. Los puntos se añaden a la puntuación del nivel anterior. Terminar las lecciones con la valoración Cool habilita sus canciones en el reproductor musical que se desbloquea al completar el juego con el gorro amarillo.\n\nLas sucesivas partidas traen gorros azules, rosas y amarillos, junto con frases remezcladas para volver a intentar las lecciones. Además de la campaña individual, el modo Vs. para dos jugadores asigna una frase a ambos y les propone superarse mediante el freestyle.",
+      "reason": "Nome dei piccoli allievi dal manuale SCEA; distinzione fra sblocco del lettore con cappello giallo e sblocco dei brani con Cool. Non implica che il primo completamento basti."
+    }
+  ],
+  "validation": {
+    "valid": true,
+    "batch_id": "090-catalog",
+    "completed": true,
+    "entry_count": 9,
+    "card_count_per_language": 34,
+    "language_count": 5,
+    "translated_card_count": 170,
+    "entry_card_counts": {
+      "wikipedia-14314296": 4,
+      "workbook-01-23-parappa-the-rapper-2": 4,
+      "wendy-every-witch-way-2001": 3,
+      "daily-09-06": 4,
+      "wikipedia-582439": 3,
+      "console-gap-ooga-booga": 3,
+      "ace-combat-04-2001": 3,
+      "wave-race-blue-storm-2001": 3,
+      "workbook-09-14-nintendo-gamecube": 7
+    },
+    "issue_counts": {
+      "wikipedia-14314296": 1,
+      "workbook-01-23-parappa-the-rapper-2": 1,
+      "wendy-every-witch-way-2001": 0,
+      "daily-09-06": 1,
+      "wikipedia-582439": 1,
+      "console-gap-ooga-booga": 0,
+      "ace-combat-04-2001": 1,
+      "wave-race-blue-storm-2001": 1,
+      "workbook-09-14-nintendo-gamecube": 0
+    },
+    "summary_checks": [
+      {
+        "entry_id": "wikipedia-14314296",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "workbook-01-23-parappa-the-rapper-2",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "wendy-every-witch-way-2001",
+        "feature_id": null,
+        "english_summary_words": 40
+      },
+      {
+        "entry_id": "daily-09-06",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "wikipedia-582439",
+        "feature_id": null,
+        "english_summary_words": 40
+      },
+      {
+        "entry_id": "console-gap-ooga-booga",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "ace-combat-04-2001",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "wave-race-blue-storm-2001",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "workbook-09-14-nintendo-gamecube",
+        "feature_id": null,
+        "english_summary_words": 41
+      }
+    ],
+    "editorial_review": [],
+    "failures": []
+  },
+  "output_sha256": "0005674dccedf7e92427c5e9db4681958d28ad942852465c64b3ea9f215f2614"
+}

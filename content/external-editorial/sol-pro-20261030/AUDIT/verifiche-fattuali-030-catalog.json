@@ -1,0 +1,610 @@
+{
+  "batch_id": "030-catalog",
+  "status": "completed",
+  "sources": [
+    {
+      "source_id": "pioneer-history",
+      "url": "https://global.pioneer/en/corp/info/history/chronology/archives/1990/",
+      "title": "History of Pioneer: 1990 to 1999",
+      "publisher": "Pioneer",
+      "accessed_at": "2026-10-30",
+      "scope": "La sezione agosto 1993 distingue il lettore LaserActive CLD-A100 dai moduli PAC-S1, PAC-N1 e PAC-K1.",
+      "limitation": "Usata per la natura del prodotto, non per sostenere risultati commerciali."
+    },
+    {
+      "source_id": "pioneer-press",
+      "url": "https://htp.cedmagic.com/tech-info/laseractive-press-release.html",
+      "title": "Pioneer LaserActive launch press release, September 13, 1993",
+      "publisher": "Pioneer Electronics; copia conservata da CED Magic",
+      "accessed_at": "2026-10-30",
+      "scope": "Il comunicato originale descrive unità autonoma e modulo Sega PAC-S10, compatibile con Mega LD, Genesis e Sega CD.",
+      "limitation": "Il comunicato annuncia disponibilità futura: la sua data non è usata come data di uscita del prodotto."
+    },
+    {
+      "source_id": "megadrive-sega",
+      "url": "https://www.sega.jp/history/hard/megadrive/index.html",
+      "title": "Mega Drive: hardware overview",
+      "publisher": "Sega",
+      "accessed_at": "2026-10-30",
+      "scope": "Uscita giapponese del 29 ottobre 1988, nome Genesis per il Nord America, processori 68000 e Z80.",
+      "limitation": "La pagina non è usata per verificare ogni affermazione commerciale e ogni modello di terzi del materiale."
+    },
+    {
+      "source_id": "mario3-release",
+      "url": "https://www.nintendo.com/jp/famicom/software/smb3/index.html",
+      "title": "Super Mario Bros. 3: Famicom retrospective",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "Release giapponese del 23 ottobre 1988 e distinzione fra mappa e livelli.",
+      "limitation": "Le altre informazioni sullo sviluppo provengono dal materiale fornito e dalle sue attribuzioni."
+    },
+    {
+      "source_id": "ninja-release",
+      "url": "https://www.nintendo.co.jp/wii/vc/vc_nin/vc_nin_01.html",
+      "title": "Ninja Ryukenden: original release and gameplay",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "Il testo indica esplicitamente la pubblicazione del 9 dicembre 1988.",
+      "limitation": "La data riguarda il gioco Famicom giapponese, non il diverso gioco arcade."
+    },
+    {
+      "source_id": "ff2-release",
+      "url": "https://na.finalfantasy.com/topics/331",
+      "title": "FF Weekly: December 16th Remember When...",
+      "publisher": "Square Enix",
+      "accessed_at": "2026-10-30",
+      "scope": "La retrospettiva indica la release giapponese di Final Fantasy II il 17 dicembre 1988.",
+      "limitation": "La data di pubblicazione dell’articolo, 16 dicembre 2021, non viene confusa con quella del gioco."
+    },
+    {
+      "source_id": "megaman2-release",
+      "url": "https://www.nintendo.co.jp/wii/vc/vc_rm2/vc_rm2_01.html",
+      "title": "Rockman 2 Dr. Wily no Nazo: Virtual Console presentation",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "Conferma l’uscita originale del 24 dicembre 1988 e gli otto boss.",
+      "limitation": "Non viene introdotta una nuova data di uscita occidentale."
+    },
+    {
+      "source_id": "mario-us-history",
+      "url": "https://mario.nintendo.com/history/?os=io.",
+      "title": "Mario through the years",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "Il risultato indicizzato della cronologia nordamericana colloca Super Mario Bros. 2 nel 1988.",
+      "limitation": "La pagina completa non è stata recuperata: il risultato consultabile documenta soltanto l’anno, non il 9 ottobre."
+    },
+    {
+      "source_id": "mario-europe-history",
+      "url": "https://www.nintendo.com/it-it/Giochi/Scopri-i-giochi/Universo-Nintendo/Portale-di-Super-Mario/Portale-di-Super-Mario-627604.html",
+      "title": "Portale di Super Mario: cronologia europea",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "La cronologia europea colloca Super Mario Bros. 2 nel 1989.",
+      "limitation": "Non documenta un unico giorno di uscita per Europa e Australia."
+    },
+    {
+      "source_id": "mario-date-conflict",
+      "url": "https://www.mariowiki.com/SMB2",
+      "title": "Super Mario Bros. 2: dates and source notes",
+      "publisher": "Super Mario Wiki contributors",
+      "accessed_at": "2026-10-30",
+      "scope": "La nota segnala il contrasto fra il 9 ottobre attribuito al sito Nintendo e settembre 1988 nel Nintendo Power Pak Source; l’Australia è elencata separatamente.",
+      "limitation": "Fonte secondaria usata come indice della discordanza, non come prova del giorno alternativo. Il facsimile di Nintendo Power non è stato consultato."
+    },
+    {
+      "source_id": "mario-usa",
+      "url": "https://www.nintendo.com/jp/famicom/software/usa/index.html",
+      "title": "Super Mario USA: Famicom retrospective",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "Conferma la release Famicom giapponese del 14 settembre 1992.",
+      "limitation": "Non è la data del primo Super Mario Bros. 2 nordamericano."
+    },
+    {
+      "source_id": "mario-allstars-region",
+      "url": "https://www.nintendo.com/it-it/Iwata-Chiede/Iwata-Chiede-Super-Mario-All-Stars/Parte-2-Gli-sviluppatori/1-Aggiornamento-della-grafica/1-Aggiornamento-della-grafica-209032.html",
+      "title": "Iwata Chiede: Super Mario All-Stars, aggiornamento della grafica",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "La nota distingue l’uscita giapponese nel luglio 1993 da quella europea nel dicembre 1993.",
+      "limitation": "Il giorno 14 luglio è mantenuto dal materiale; il controllo consultato conferma mese e regione."
+    },
+    {
+      "source_id": "mario-advance",
+      "url": "https://www.nintendo.co.jp/n08/before/n2005_b01.html",
+      "title": "Nintendo Game Boy Advance software released before June 2004",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "Il catalogo indica Super Mario Advance al 21 marzo 2001, sul mercato giapponese.",
+      "limitation": "Non è la data europea del 22 giugno 2001."
+    },
+    {
+      "source_id": "snatcher-physical",
+      "url": "https://junkerhq.net/Snatcher/PC88/info.html",
+      "title": "Snatcher PC-8801 SR Version Info",
+      "publisher": "Junker HQ / Artemio Urbina",
+      "accessed_at": "2026-10-30",
+      "scope": "Documentazione della prima edizione su cinque floppy e collegamento alle scansioni del materiale originale.",
+      "limitation": "La scheda testuale indica novembre 1988; il giorno 26 resta quello fornito nell’INPUT, non una nuova verifica primaria."
+    },
+    {
+      "source_id": "terada-sakaguchi",
+      "url": "https://shmuplations.com/kenjiterada/",
+      "title": "Final Fantasy II — 1988 Developer Interview",
+      "publisher": "Hironobu Sakaguchi e Kenji Terada; traduzione Shmuplations",
+      "accessed_at": "2026-10-30",
+      "scope": "Sezioni Development Challenges e Programming FFII: divisione fra sistemi e codice, scorrimento dell’aeronave e negoziazione della storia.",
+      "limitation": "Consultata la traduzione inglese, non il periodico giapponese originale."
+    },
+    {
+      "source_id": "tanaka-retrospective",
+      "url": "https://eu.finalfantasy.com/topics/171",
+      "title": "FINAL FANTASY III 30th Anniversary Special Interview Vol.1",
+      "publisher": "Square Enix / Hiromichi Tanaka",
+      "accessed_at": "2026-10-30",
+      "scope": "Intervista identificata nel materiale e confermata dall’indice pubblico; testimonianza retrospettiva del 2020 ripubblicata nel 2025.",
+      "limitation": "L’apertura integrale ha restituito 404; i contenuti della feature sono riscritti dal materiale fornito, già corredato dei localizzatori, senza dichiarare una nuova verifica integrale."
+    },
+    {
+      "source_id": "root-ninja-gaiden-authors",
+      "url": "https://talesfromthecollection.com/nintendo-worlds-of-power-novels/",
+      "title": "Reexamining Nintendo’s Worlds of Power Novels with Author Peter Lerangis, Seth Godin",
+      "publisher": "Tales From The Collection; interviste dirette a Peter Lerangis e Seth Godin",
+      "accessed_at": "2026-10-30",
+      "scope": "I due intervistati distinguono la scrittura dei romanzi dalla creazione e produzione editoriale della collana; Lerangis ricorda Ninja Gaiden fra i propri libri.",
+      "limitation": "Testo delle interviste recuperato nell’indice del motore di ricerca; apertura diretta bloccata da 403. Non è dichiarata lettura di una copia integrale del romanzo."
+    }
+  ],
+  "decisions": [
+    {
+      "target_id": "mega-drive",
+      "problem": "LaserActive è presentato nell’INPUT fra gli accessori Mega Drive pubblicati da Sega.",
+      "conclusion": "Corretto in lettore Pioneer autonomo con un modulo compatibile Sega. Conservate le funzioni Mega-LD e chiarito il rapporto con cartucce Genesis e Sega CD.",
+      "source_ids": [
+        "pioneer-history",
+        "pioneer-press"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-141869",
+      "problem": "Il materiale attribuisce lo stesso 28 aprile 1989 a Europa e Australia e usa il 9 ottobre 1988 per il Nord America, con indicazioni pubbliche discordanti.",
+      "conclusion": "Scelta una precisione annuale: Nord America 1988, Europa e Australia 1989. Non è introdotto un giorno alternativo non verificato. Le date del Giappone e dei rifacimenti restano distinte e riferite al rispettivo mercato.",
+      "source_ids": [
+        "mario-us-history",
+        "mario-europe-history",
+        "mario-date-conflict",
+        "mario-usa",
+        "mario-allstars-region",
+        "mario-advance"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-5930321",
+      "problem": "Evitare di confondere la versione NES con il gioco arcade e di attribuire con certezza un romanzo a due coautori dal riferimento generico alla collana.",
+      "conclusion": "Le versioni NES e arcade restano distinte. La successiva verifica delle interviste a Peter Lerangis e Seth Godin consente di attribuire il romanzo a Lerangis e la creazione e produzione editoriale della collana a Godin. La morte del padre rimane apparente nella motivazione iniziale di Ryu.",
+      "source_ids": [
+        "ninja-release",
+        "root-ninja-gaiden-authors"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "feature-nasir-gebelli-and-teams",
+      "problem": "Il riferimento al viaggio negli Stati Uniti riguarda la lavorazione di Final Fantasy III, pur essendo la feature allegata alla voce Final Fantasy II.",
+      "conclusion": "Mantenuti esplicitamente i diversi episodi: III per il visto e il trasferimento, primo Final Fantasy per aeronave e gioco nascosto. La feature è un approfondimento sul lavoro collettivo, non una voce biografica da collocare alla nascita.",
+      "source_ids": [
+        "terada-sakaguchi",
+        "tanaka-retrospective"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-52753",
+      "problem": "Il ritorno di Final Fantasy III è descritto come identico al sistema originale, una formula che può cancellare differenze fra episodi.",
+      "conclusion": "La riscrittura parla di ritorno a un sistema di combattimento e crescita più convenzionale, conservando il rapporto con i riscontri negativi senza affermare identità integrale fra i sistemi.",
+      "source_ids": [],
+      "text_applied": true
+    }
+  ],
+  "metadata_proposals": [
+    {
+      "target_id": "workbook-10-23-super-mario-bros-3",
+      "field": "timeline_release_region",
+      "original": {
+        "year": 1988,
+        "month": 10,
+        "day": 23,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed": {
+        "year": 1988,
+        "month": 10,
+        "day": 23,
+        "precision": "day",
+        "region": "Japan",
+        "version": "Famicom"
+      },
+      "source_ids": [
+        "mario3-release"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "mega-drive",
+      "field": "timeline_release_region",
+      "original": {
+        "year": 1988,
+        "month": 10,
+        "day": 29,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed": {
+        "year": 1988,
+        "month": 10,
+        "day": 29,
+        "precision": "day",
+        "region": "Japan",
+        "version": "Mega Drive"
+      },
+      "source_ids": [
+        "megadrive-sega"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "wikipedia-5930321",
+      "field": "timeline_release_region",
+      "original": {
+        "year": 1988,
+        "month": 12,
+        "day": 9,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed": {
+        "year": 1988,
+        "month": 12,
+        "day": 9,
+        "precision": "day",
+        "region": "Japan",
+        "version": "Famicom"
+      },
+      "source_ids": [
+        "ninja-release"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "wikipedia-52753",
+      "field": "timeline_release_region",
+      "original": {
+        "year": 1988,
+        "month": 12,
+        "day": 17,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed": {
+        "year": 1988,
+        "month": 12,
+        "day": 17,
+        "precision": "day",
+        "region": "Japan",
+        "version": "Famicom"
+      },
+      "source_ids": [
+        "ff2-release"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "workbook-12-24-mega-man-2",
+      "field": "timeline_release_region",
+      "original": {
+        "year": 1988,
+        "month": 12,
+        "day": 24,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed": {
+        "year": 1988,
+        "month": 12,
+        "day": 24,
+        "precision": "day",
+        "region": "Japan",
+        "version": "Famicom"
+      },
+      "source_ids": [
+        "megaman2-release"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "wikipedia-141869",
+      "field": "timeline_release_precision",
+      "original": {
+        "year": 1988,
+        "month": 10,
+        "day": 9,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed": {
+        "year": 1988,
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": "North America",
+        "version": "NES"
+      },
+      "source_ids": [
+        "mario-us-history",
+        "mario-date-conflict"
+      ],
+      "rationale": "Risoluzione editoriale alla precisione verificabile: la prosa conserva l’anno, senza scegliere per intuito fra indicazioni discordanti del giorno o del mese.",
+      "applied_to_catalog": false
+    }
+  ],
+  "expansion_assessments": [
+    {
+      "target_id": "wikipedia-141869",
+      "main_cards": 2,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 3,
+      "rationale": "Gioco di rilievo storico: soglia di cinque card principali; eventuali feature conteggiate separatamente."
+    },
+    {
+      "target_id": "workbook-10-23-super-mario-bros-3",
+      "main_cards": 7,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 0,
+      "rationale": "Gioco di rilievo storico: soglia di cinque card principali; eventuali feature conteggiate separatamente."
+    },
+    {
+      "target_id": "mega-drive",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 6,
+      "missing_cards": 3,
+      "rationale": "Console di rilievo: soglia di sei card principali."
+    },
+    {
+      "target_id": "workbook-11-26-snatcher",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 1,
+      "rationale": "Gioco di rilievo storico: soglia di cinque card principali; eventuali feature conteggiate separatamente."
+    },
+    {
+      "target_id": "wikipedia-5930321",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Gioco di rilievo storico: soglia di cinque card principali; eventuali feature conteggiate separatamente."
+    },
+    {
+      "target_id": "wikipedia-52753",
+      "main_cards": 3,
+      "feature_cards": 4,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Gioco di rilievo storico: soglia di cinque card principali; eventuali feature conteggiate separatamente."
+    },
+    {
+      "target_id": "workbook-12-24-mega-man-2",
+      "main_cards": 7,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 0,
+      "rationale": "Gioco di rilievo storico: soglia di cinque card principali; eventuali feature conteggiate separatamente."
+    },
+    {
+      "target_id": "atari-lynx",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 6,
+      "missing_cards": 3,
+      "rationale": "Console di rilievo: soglia di sei card principali."
+    },
+    {
+      "target_id": "ducktales-nes-1989",
+      "main_cards": 2,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 3,
+      "rationale": "Gioco di rilievo storico: soglia di cinque card principali; eventuali feature conteggiate separatamente."
+    },
+    {
+      "target_id": "golden-joystick-awards-1989",
+      "main_cards": 2,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "required_main_cards": null,
+      "missing_cards": 0,
+      "rationale": "Edizione di premi: nessuna soglia prevista per giochi o console."
+    }
+  ],
+  "editorial_review": {
+    "english_first": true,
+    "five_languages_reviewed": [
+      "en",
+      "it",
+      "fr",
+      "de",
+      "es"
+    ],
+    "checks": [
+      "Tutte le 10 voci e la feature con ID originali",
+      "40 card per lingua: 36 principali e 4 della feature",
+      "Sommari inglesi di 25–45 parole, distinti dalla prima card",
+      "Tutte le 13 coppie categoria/vincitore dei Golden Joystick conservate",
+      "Nomi ufficiali, crediti, fonti e titoli musicali conservati",
+      "Nessuna data biografica dedotta da una feature sullo sviluppo",
+      "Nessun ampliamento ottenuto spezzando card legate ai media",
+      "Revisione idiomatica delle cinque lingue e paragrafi brevi per le card lunghe",
+      "Controllo di cifre, piattaforme, continuità narrativa e attribuzioni"
+    ],
+    "external_verification_limit": "La ricerca riguarda le questioni elencate; vendite, ricezione e diversi dettagli del materiale non sono dichiarati tutti verificati indipendentemente.",
+    "book_style_references_consulted": false,
+    "root_review": {
+      "date": "2026-10-30",
+      "scope": "Riletti EN e IT della voce Mega Drive e tutte le cinque versioni della card main:2 di Ninja Gaiden. Risolta l’attribuzione generica del romanzo tramite interviste ai protagonisti. Controllati i numeri segnalati nelle altre card; le grafie ottocento, venti e i separatori decimali non sono omissioni.",
+      "output_before_sha256": "7e7e4c5055e7c7a5bbefa66ade79beb90a69e3e6dd8a848e6568d8ba13e461d1",
+      "output_after_sha256": "37c394f2f4d0a2a6e03f1bbad125eaf36385b49c2cda9399df5d574c69224c6d",
+      "field_revisions": [
+        {
+          "entry_id": "wikipedia-5930321",
+          "language": "en",
+          "card_id": "main:2",
+          "field": "text",
+          "before": "Anime-like cinematic scenes carry an unusually elaborate story. Ninja Gaiden received extensive magazine coverage and several awards, while its difficulty drew criticism, especially in the later levels. Director Hideo Yoshizawa called it his most commercially successful project, with more than 1.8 million cartridges sold worldwide. Later print and online publications continued to rank it among the greatest games.\n\nIt also received a novelisation in the Worlds of Power series associated with Seth Godin and Peter Lerangis. Two sequels followed: Ninja Gaiden II: The Dark Sword of Chaos in 1990 and Ninja Gaiden III: The Ancient Ship of Doom in 1991.",
+          "after": "Anime-like cinematic scenes carry an unusually elaborate story. Ninja Gaiden received extensive magazine coverage and several awards, while its difficulty drew criticism, especially in the later levels. Director Hideo Yoshizawa called it his most commercially successful project, with more than 1.8 million cartridges sold worldwide. Later print and online publications continued to rank it among the greatest games.\n\nPeter Lerangis also wrote a novelisation for Worlds of Power, the series created and produced by Seth Godin. Two sequels followed: Ninja Gaiden II: The Dark Sword of Chaos in 1990 and Ninja Gaiden III: The Ancient Ship of Doom in 1991."
+        },
+        {
+          "entry_id": "wikipedia-5930321",
+          "language": "it",
+          "card_id": "main:2",
+          "field": "text",
+          "before": "Sequenze cinematografiche vicine agli anime sviluppano una storia particolarmente articolata. Ninja Gaiden ricevette ampio spazio sulle riviste e diversi premi; le critiche si concentrarono sulla difficoltà, soprattutto negli ultimi livelli. Il direttore Hideo Yoshizawa lo definì il proprio progetto di maggior successo commerciale, con oltre 1,8 milioni di cartucce vendute nel mondo. Le pubblicazioni cartacee e online continuarono in seguito a inserirlo fra i migliori videogiochi.\n\nNe fu tratto anche un romanzo per la collana Worlds of Power, legata a Seth Godin e Peter Lerangis. Arrivarono poi due seguiti: Ninja Gaiden II: The Dark Sword of Chaos nel 1990 e Ninja Gaiden III: The Ancient Ship of Doom nel 1991.",
+          "after": "Sequenze cinematografiche vicine agli anime sviluppano una storia particolarmente articolata. Ninja Gaiden ricevette ampio spazio sulle riviste e diversi premi; le critiche si concentrarono sulla difficoltà, soprattutto negli ultimi livelli. Il direttore Hideo Yoshizawa lo definì il proprio progetto di maggior successo commerciale, con oltre 1,8 milioni di cartucce vendute nel mondo. Le pubblicazioni cartacee e online continuarono in seguito a inserirlo fra i migliori videogiochi.\n\nPeter Lerangis ne scrisse anche un adattamento in forma di romanzo per Worlds of Power, la collana ideata e realizzata da Seth Godin. Arrivarono poi due seguiti: Ninja Gaiden II: The Dark Sword of Chaos nel 1990 e Ninja Gaiden III: The Ancient Ship of Doom nel 1991."
+        },
+        {
+          "entry_id": "wikipedia-5930321",
+          "language": "fr",
+          "card_id": "main:2",
+          "field": "text",
+          "before": "Des séquences inspirées de l'animation japonaise développent une histoire particulièrement élaborée. Ninja Gaiden bénéficia d'une large couverture dans les magazines et reçut plusieurs récompenses. Les critiques portaient surtout sur sa difficulté, particulièrement dans les derniers niveaux. Le réalisateur Hideo Yoshizawa le désigna comme son plus grand succès commercial, avec plus de 1,8 million de cartouches vendues dans le monde. La presse écrite et les publications en ligne continuèrent ensuite à le classer parmi les meilleurs jeux.\n\nIl fut aussi adapté en roman dans la collection Worlds of Power, associée à Seth Godin et Peter Lerangis. Deux suites parurent : Ninja Gaiden II: The Dark Sword of Chaos en 1990 et Ninja Gaiden III: The Ancient Ship of Doom en 1991.",
+          "after": "Des séquences inspirées de l'animation japonaise développent une histoire particulièrement élaborée. Ninja Gaiden bénéficia d'une large couverture dans les magazines et reçut plusieurs récompenses. Les critiques portaient surtout sur sa difficulté, particulièrement dans les derniers niveaux. Le réalisateur Hideo Yoshizawa le désigna comme son plus grand succès commercial, avec plus de 1,8 million de cartouches vendues dans le monde. La presse écrite et les publications en ligne continuèrent ensuite à le classer parmi les meilleurs jeux.\n\nPeter Lerangis en écrivit également une adaptation romanesque pour Worlds of Power, la collection conçue et produite par Seth Godin. Deux suites parurent : Ninja Gaiden II: The Dark Sword of Chaos en 1990 et Ninja Gaiden III: The Ancient Ship of Doom en 1991."
+        },
+        {
+          "entry_id": "wikipedia-5930321",
+          "language": "de",
+          "card_id": "main:2",
+          "field": "text",
+          "before": "Animeartige Zwischensequenzen erzählen eine ungewöhnlich ausführliche Geschichte. Ninja Gaiden wurde in Spielezeitschriften breit behandelt und mehrfach ausgezeichnet. Kritik richtete sich vor allem gegen den hohen Schwierigkeitsgrad der späteren Levels. Regisseur Hideo Yoshizawa bezeichnete es mit mehr als 1,8 Millionen weltweit verkauften Modulen als sein wirtschaftlich erfolgreichstes Projekt. Auch spätere Print- und Onlinepublikationen zählten es weiterhin zu den besten Spielen.\n\nEin Roman zum Spiel erschien außerdem in der mit Seth Godin und Peter Lerangis verbundenen Reihe Worlds of Power. Zwei Fortsetzungen folgten: Ninja Gaiden II: The Dark Sword of Chaos im Jahr 1990 und Ninja Gaiden III: The Ancient Ship of Doom im Jahr 1991.",
+          "after": "Animeartige Zwischensequenzen erzählen eine ungewöhnlich ausführliche Geschichte. Ninja Gaiden wurde in Spielezeitschriften breit behandelt und mehrfach ausgezeichnet. Kritik richtete sich vor allem gegen den hohen Schwierigkeitsgrad der späteren Levels. Regisseur Hideo Yoshizawa bezeichnete es mit mehr als 1,8 Millionen weltweit verkauften Modulen als sein wirtschaftlich erfolgreichstes Projekt. Auch spätere Print- und Onlinepublikationen zählten es weiterhin zu den besten Spielen.\n\nPeter Lerangis schrieb außerdem einen Roman zum Spiel für Worlds of Power, die von Seth Godin konzipierte und produzierte Buchreihe. Zwei Fortsetzungen folgten: Ninja Gaiden II: The Dark Sword of Chaos im Jahr 1990 und Ninja Gaiden III: The Ancient Ship of Doom im Jahr 1991."
+        },
+        {
+          "entry_id": "wikipedia-5930321",
+          "language": "es",
+          "card_id": "main:2",
+          "field": "text",
+          "before": "Las secuencias de estilo anime desarrollan una historia especialmente elaborada. Ninja Gaiden recibió una amplia cobertura en revistas y varios premios, aunque su dificultad suscitó críticas, sobre todo en los últimos niveles. El director Hideo Yoshizawa lo describió como su proyecto de mayor éxito comercial, con más de 1,8 millones de cartuchos vendidos en todo el mundo. Las publicaciones impresas y digitales siguieron incluyéndolo después entre los mejores videojuegos.\n\nTambién tuvo una adaptación a novela en la colección Worlds of Power, vinculada a Seth Godin y Peter Lerangis. Le siguieron Ninja Gaiden II: The Dark Sword of Chaos en 1990 y Ninja Gaiden III: The Ancient Ship of Doom en 1991.",
+          "after": "Las secuencias de estilo anime desarrollan una historia especialmente elaborada. Ninja Gaiden recibió una amplia cobertura en revistas y varios premios, aunque su dificultad suscitó críticas, sobre todo en los últimos niveles. El director Hideo Yoshizawa lo describió como su proyecto de mayor éxito comercial, con más de 1,8 millones de cartuchos vendidos en todo el mundo. Las publicaciones impresas y digitales siguieron incluyéndolo después entre los mejores videojuegos.\n\nPeter Lerangis también escribió una adaptación a novela para Worlds of Power, la colección creada y producida por Seth Godin. Le siguieron Ninja Gaiden II: The Dark Sword of Chaos en 1990 y Ninja Gaiden III: The Ancient Ship of Doom en 1991."
+        }
+      ]
+    }
+  },
+  "validation": {
+    "valid": true,
+    "batch_id": "030-catalog",
+    "completed": true,
+    "entry_count": 10,
+    "card_count_per_language": 40,
+    "language_count": 5,
+    "translated_card_count": 200,
+    "entry_card_counts": {
+      "wikipedia-141869": 2,
+      "workbook-10-23-super-mario-bros-3": 7,
+      "mega-drive": 3,
+      "workbook-11-26-snatcher": 4,
+      "wikipedia-5930321": 3,
+      "wikipedia-52753": 7,
+      "workbook-12-24-mega-man-2": 7,
+      "atari-lynx": 3,
+      "ducktales-nes-1989": 2,
+      "golden-joystick-awards-1989": 2
+    },
+    "issue_counts": {
+      "wikipedia-141869": 1,
+      "workbook-10-23-super-mario-bros-3": 0,
+      "mega-drive": 1,
+      "workbook-11-26-snatcher": 1,
+      "wikipedia-5930321": 1,
+      "wikipedia-52753": 1,
+      "workbook-12-24-mega-man-2": 0,
+      "atari-lynx": 1,
+      "ducktales-nes-1989": 1,
+      "golden-joystick-awards-1989": 0
+    },
+    "summary_checks": [
+      {
+        "entry_id": "wikipedia-141869",
+        "feature_id": null,
+        "english_summary_words": 33
+      },
+      {
+        "entry_id": "workbook-10-23-super-mario-bros-3",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "mega-drive",
+        "feature_id": null,
+        "english_summary_words": 33
+      },
+      {
+        "entry_id": "workbook-11-26-snatcher",
+        "feature_id": null,
+        "english_summary_words": 34
+      },
+      {
+        "entry_id": "wikipedia-5930321",
+        "feature_id": null,
+        "english_summary_words": 33
+      },
+      {
+        "entry_id": "wikipedia-52753",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "wikipedia-52753",
+        "feature_id": "feature-nasir-gebelli-and-teams",
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "workbook-12-24-mega-man-2",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "atari-lynx",
+        "feature_id": null,
+        "english_summary_words": 33
+      },
+      {
+        "entry_id": "ducktales-nes-1989",
+        "feature_id": null,
+        "english_summary_words": 32
+      },
+      {
+        "entry_id": "golden-joystick-awards-1989",
+        "feature_id": null,
+        "english_summary_words": 31
+      }
+    ],
+    "editorial_review": [],
+    "failures": []
+  },
+  "output_sha256": "37c394f2f4d0a2a6e03f1bbad125eaf36385b49c2cda9399df5d574c69224c6d"
+}

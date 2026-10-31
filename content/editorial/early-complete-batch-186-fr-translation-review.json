@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "locale": "fr",
+  "review": "Binding of exact independently approved complete candidate members; no new linguistic review substituted. Every full candidate SHA and independent PASS receipt checked, all current English five fields and translation hashes validated.",
+  "entries": [
+    {
+      "entry_id": "playstation-3",
+      "source_fields_sha256": "e36a69f24d72f1f2c62eda07f255155703f1633e9494d2f8487ea15218b5ebf2",
+      "translation_sha256": "e8d8f20db160f6dfd212ad4d1f4dbcf117392e188ac6be888151f14328e54eed",
+      "independent_peer": "build/research/ps32006-four-language-completion/independent-all-fields-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "58f8679d1c38a9338a135e4b7ab04a6b98ca6eb945b575187af1b4053b3e1d36",
+      "candidate_path": "build/research/ps32006-four-language-completion/ps3-all-five-fields-four-language-full-reuse-fidelity-candidate.json",
+      "candidate_sha256": "8c111c90a31684cabc21f7669068baf39664e8aa7de1b167630ca5dfa5088574"
+    },
+    {
+      "entry_id": "wikipedia-4843030",
+      "source_fields_sha256": "f8a33751bb29263680e5de03aefc5e53f0ca2519312a5e61a9e2ffdc635718dc",
+      "translation_sha256": "b7080f211d36d409054b54861b5f2dfd2abb80369af54c2b402c97f56a97e254",
+      "independent_peer": "build/research/ridge72006-four-language-completion/independent-all-fields-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "8efc1cec7498d48ce1719669342d832a77851f1921cd780754200ac064199357",
+      "candidate_path": "build/research/ridge72006-four-language-completion/ridge7-four-language-final-explicit-launch-console-peer-units-candidate.json",
+      "candidate_sha256": "ae50de98b1cd8545263c0fc30fceaa2de63f78bee15292de7e472c11bc46a98b"
+    },
+    {
+      "entry_id": "wikipedia-1610197",
+      "source_fields_sha256": "69fe7d51897970c62e905d027404905d57c8b45b2744585ebd5acd77f5369dd5",
+      "translation_sha256": "d8eab0f7aa9440711a20b21a81d95ef2e87545e81e29d361978de32e3b84615a",
+      "independent_peer": "build/research/twilight2006-four-language-completion/independent-all-fields-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "101da993cdd8a1bc62bccf6b8824136ffdce4dba37073127fbb046c53429a234",
+      "candidate_path": "build/research/twilight2006-four-language-completion/twilight-four-language-final-explicit-imp-author-units-candidate.json",
+      "candidate_sha256": "88339d7033fbd7c100258b929cdbdd4efe2cb359d12c60083c2ac8da327ee6f6"
+    },
+    {
+      "entry_id": "wikipedia-5077457",
+      "source_fields_sha256": "db63b4b9661a48e65096ec44eb4d09bbd8d145a2b7a02b2aa2a4691db956064a",
+      "translation_sha256": "4f9402a1d226419e4c775dcb1d4f360f5a5f547dc36d3502601660b64dbe77c8",
+      "independent_peer": "build/research/wii-sports2006-four-language-completion/independent-all-fields-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "1d96937780cbd3b299f40932b9bf06ebbe0cb10d5be2d3b55f04e169d2838fcb",
+      "candidate_path": "build/research/wii-sports2006-four-language-completion/wii-sports-four-language-final-natural-german-launch-bundle-unit-candidate.json",
+      "candidate_sha256": "656e8d2af7d6dff719ab386fc81e1442289d33efe5c68a10aa6c5f9a50551582"
+    }
+  ]
+}

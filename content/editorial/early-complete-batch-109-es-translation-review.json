@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "locale": "es",
+  "review": "Binding of exact independently approved complete candidate members; no new linguistic review substituted. Every full candidate SHA and independent PASS receipt checked, all current English five fields and translation hashes validated.",
+  "entries": [
+    {
+      "entry_id": "feature-berlin-game-museum",
+      "source_fields_sha256": "0c25a7b192b4113a51b33247f30d1f9e27ff8ca42cd36ec9991f4736aa60e1e3",
+      "translation_sha256": "4b869495c6135f107044436249fba0f0aa1f6249cb7252851b6aba5b5edbf84b",
+      "independent_peer": "build/research/berlin-museum1997-four-language-completion/independent-all-fields-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "2ccff17bf01f9e8421510bd86591eea791a5720a260268848a195b3803868820",
+      "candidate_path": "build/research/berlin-museum1997-four-language-completion/berlin-museum-four-language-final-natural-precise-peer-units-candidate.json",
+      "candidate_sha256": "c07b0acfad86263d89341ce0e28ff533d27ba32ac4429f521cfe8bc07a9cf72e"
+    },
+    {
+      "entry_id": "workbook-01-03-diablo-video-game",
+      "source_fields_sha256": "40365c9455a8ab6bf4c28a54d544ad266f14f89b448ac290159078bf758d45f5",
+      "translation_sha256": "67206a3336ba0411ebb78a9ac77f28345cb580199926fa8d47ccf6d8c190d17b",
+      "independent_peer": "build/research/diablo1997-four-language-completion/independent-all-fields-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "b06f83ade009d97a39f449d4bb5c7b7c56e79b219a3fc0b4e27f69ecb56f5a1d",
+      "candidate_path": "build/research/diablo1997-four-language-completion/diablo-four-language-final-natural-precise-peer-units-candidate.json",
+      "candidate_sha256": "1e9e127ffb40343502914a7cb075fcf625373366de73dfe375ff0a582615a142"
+    },
+    {
+      "entry_id": "final-fantasy-vii",
+      "source_fields_sha256": "cbf87d9789ba383b7dcf860d20fce726db729d4721b0b1b5885a0fbeceab9159",
+      "translation_sha256": "d20c565f0b4862b8355acb6f901cefd86919c571ebd4bb0f6ee0b8913fcf2866",
+      "independent_peer": "build/research/ffvii1997-four-language-completion/independent-all-fields-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "a9cb420b7c01d3ad9d40f101f5439b18304a51744c3c973addaf8e1962155c1e",
+      "candidate_path": "build/research/ffvii1997-four-language-completion/ffvii-four-language-final-natural-precise-peer-units-candidate.json",
+      "candidate_sha256": "a511835e22a6d7ce12a3e5d8d7b76e367f8d20f3944293df4cee508509d670f6"
+    }
+  ]
+}

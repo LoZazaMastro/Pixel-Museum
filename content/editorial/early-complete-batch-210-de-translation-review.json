@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "locale": "de",
+  "review": "Binding of exact independently approved complete candidate members; no new linguistic review substituted. Every full candidate SHA and independent PASS receipt checked, all current English five fields and translation hashes validated.",
+  "entries": [
+    {
+      "entry_id": "daily-04-18",
+      "source_fields_sha256": "8c3eb81cf3a0f50a9a7c2703d7143b9eab55cf9d1ef1aeea6896e2ad5bdd9367",
+      "translation_sha256": "24505798a3034c9f01c708d97f890a0341edebc1ee4fa3bad3099ce0c25447b7",
+      "independent_peer": "build/research/acii2009-four-language-completion/independent-all-fields-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "b4928ef007401e9aefdaeed6889b54215c136d832313cbfd250bee7c15ab5904",
+      "candidate_path": "build/research/acii2009-four-language-completion/acii-all-five-fields-four-language-full-prior-read-source-bound-candidate.json",
+      "candidate_sha256": "a0b622caf412638145b22348e4899eea740e8e48ecf60e881b74082b239c76e9"
+    },
+    {
+      "entry_id": "wikipedia-23065843",
+      "source_fields_sha256": "c5bc4824c1edfc6812ec1d4b926d8c0aef1394bb429575852a4ced78767109be",
+      "translation_sha256": "28af684dd7a1bf33dc29e0e33cd0be6d99d5f4febc21fdb86ee81892d08b4c67",
+      "independent_peer": "build/research/mario-wii2009-four-language-completion/independent-all-fields-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "69b0e3b4ee876e8988f50331bbe4476685f8caf87b744171b3e9831396769836",
+      "candidate_path": "build/research/mario-wii2009-four-language-completion/mario-wii-all-five-fields-four-language-source-bound-candidate.json",
+      "candidate_sha256": "3c975aaa3ebd9bc8c061aebe9f3300d3ee2ee3a5403e3fd0373de95c5bd9f956"
+    }
+  ]
+}

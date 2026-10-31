@@ -1,0 +1,625 @@
+{
+  "schema_version": 1,
+  "reviewed_utc": "2026-10-20T23:46:02.280041+00:00",
+  "status": "independent_source_schema_budget_and_placement_review_complete_no_factual_blocker",
+  "draft_path": "content\\expansion\\editorial-systems-authors-06.json",
+  "draft_sha256_before_counter_fix": "6aa0236cfa48e9c4082a8a5626868ce5d18f8ddaa220bdcbe2b2a3b3e196265f",
+  "draft_sha256": "50466742783d9af3471b2e237892cb3882b779e0af6814b7c44f45d7fd672e61",
+  "only_approved_two_numeric_fields_changed": "PASS for prior85e5b75c counter-fix stage against original6aa0236c; root subsequently added the explicitly approved chapter_urls metadata, recorded below.",
+  "notes_path": "docs\\editorial\\systems-authors-batch-notes.md",
+  "notes_sha256": "30968565df7ff37ccc287ea0471e20de938d8354f4a7c8050d53eb6ed529d546",
+  "catalog_snapshot_sha256": "991da63d4de21182057fcbe076192659a71b4df66912b20a1997de6bf7762512",
+  "catalog_snapshot_note": "Read-only review snapshot, not an assertion of current hash after concurrent root work.",
+  "counts": {
+    "features": 8,
+    "cards": 32,
+    "body_words_whitespace": 2636,
+    "primary_publication_groups": 16,
+    "source_download_snapshots": 18,
+    "recommended_attachments": 8,
+    "recommended_new_destinations": 0,
+    "media_selected": 0
+  },
+  "schema_checks": "PASS distinct IDs; four nonempty bodies/headings/cards; exact indices0–3; heading equality;80–130words/card; valid source IDs, exact citation URLs and locators; every body index charged once; no selected empty media filler.",
+  "publication_budget_method": "Per publication group, charge the full feature title and summary plus every attributed heading and paragraph; max(whitespace split, Unicode re.findall(r\"\\b\\w+\\b\")); chapters/mirrors/translations grouped. No separate charge multiplication for duplicate runtime copies of one feature.",
+  "publication_budgets": [
+    {
+      "feature_id": "feature-shigeru-miyamoto-team",
+      "publication_group": "mario09team",
+      "body_indices": [
+        0,
+        1
+      ],
+      "whitespace_words": 188,
+      "unicode_lexical_words": 193,
+      "charged_words": 193,
+      "cap": 200,
+      "internal_cap": 195
+    },
+    {
+      "feature_id": "feature-shigeru-miyamoto-team",
+      "publication_group": "tezuka15sankei",
+      "body_indices": [
+        2,
+        3
+      ],
+      "whitespace_words": 185,
+      "unicode_lexical_words": 190,
+      "charged_words": 190,
+      "cap": 200,
+      "internal_cap": 195
+    },
+    {
+      "feature_id": "feature-shinji-mikami-team",
+      "publication_group": "mikamigm99",
+      "body_indices": [
+        0,
+        1
+      ],
+      "whitespace_words": 187,
+      "unicode_lexical_words": 190,
+      "charged_words": 190,
+      "cap": 200,
+      "internal_cap": 195
+    },
+    {
+      "feature_id": "feature-shinji-mikami-team",
+      "publication_group": "kobayashind05",
+      "body_indices": [
+        2,
+        3
+      ],
+      "whitespace_words": 186,
+      "unicode_lexical_words": 188,
+      "charged_words": 188,
+      "cap": 200,
+      "internal_cap": 195
+    },
+    {
+      "feature_id": "feature-hironobu-sakaguchi-production",
+      "publication_group": "nomura24vi",
+      "body_indices": [
+        0,
+        1
+      ],
+      "whitespace_words": 187,
+      "unicode_lexical_words": 194,
+      "charged_words": 194,
+      "cap": 200,
+      "internal_cap": 195
+    },
+    {
+      "feature_id": "feature-hironobu-sakaguchi-production",
+      "publication_group": "iwatasaka11",
+      "body_indices": [
+        2,
+        3
+      ],
+      "whitespace_words": 186,
+      "unicode_lexical_words": 189,
+      "charged_words": 189,
+      "cap": 200,
+      "internal_cap": 195
+    },
+    {
+      "feature_id": "feature-hideo-kojima-interface",
+      "publication_group": "mgsfam97",
+      "body_indices": [
+        0,
+        1
+      ],
+      "whitespace_words": 189,
+      "unicode_lexical_words": 191,
+      "charged_words": 191,
+      "cap": 200,
+      "internal_cap": 195
+    },
+    {
+      "feature_id": "feature-hideo-kojima-interface",
+      "publication_group": "mgstps98",
+      "body_indices": [
+        2,
+        3
+      ],
+      "whitespace_words": 190,
+      "unicode_lexical_words": 194,
+      "charged_words": 194,
+      "cap": 200,
+      "internal_cap": 195
+    },
+    {
+      "feature_id": "feature-sid-meier-systems",
+      "publication_group": "spector02meier",
+      "body_indices": [
+        0,
+        1
+      ],
+      "whitespace_words": 191,
+      "unicode_lexical_words": 194,
+      "charged_words": 194,
+      "cap": 200,
+      "internal_cap": 195
+    },
+    {
+      "feature_id": "feature-sid-meier-systems",
+      "publication_group": "shelley06chronicles",
+      "body_indices": [
+        2,
+        3
+      ],
+      "whitespace_words": 189,
+      "unicode_lexical_words": 192,
+      "charged_words": 192,
+      "cap": 200,
+      "internal_cap": 195
+    },
+    {
+      "feature_id": "feature-will-wright-simulation",
+      "publication_group": "wrighticon08",
+      "body_indices": [
+        0,
+        1
+      ],
+      "whitespace_words": 188,
+      "unicode_lexical_words": 192,
+      "charged_words": 192,
+      "cap": 200,
+      "internal_cap": 195
+    },
+    {
+      "feature_id": "feature-will-wright-simulation",
+      "publication_group": "wrightjuba12",
+      "body_indices": [
+        2,
+        3
+      ],
+      "whitespace_words": 187,
+      "unicode_lexical_words": 192,
+      "charged_words": 192,
+      "cap": 200,
+      "internal_cap": 195
+    },
+    {
+      "feature_id": "feature-john-carmack-engineering",
+      "publication_group": "carmackdoom97",
+      "body_indices": [
+        0,
+        1
+      ],
+      "whitespace_words": 189,
+      "unicode_lexical_words": 191,
+      "charged_words": 191,
+      "cap": 200,
+      "internal_cap": 195
+    },
+    {
+      "feature_id": "feature-john-carmack-engineering",
+      "publication_group": "carmackquake",
+      "body_indices": [
+        2,
+        3
+      ],
+      "whitespace_words": 191,
+      "unicode_lexical_words": 193,
+      "charged_words": 193,
+      "cap": 200,
+      "internal_cap": 195
+    },
+    {
+      "feature_id": "feature-john-romero-levels",
+      "publication_group": "romeroama20",
+      "body_indices": [
+        0,
+        1
+      ],
+      "whitespace_words": 188,
+      "unicode_lexical_words": 192,
+      "charged_words": 192,
+      "cap": 200,
+      "internal_cap": 195
+    },
+    {
+      "feature_id": "feature-john-romero-levels",
+      "publication_group": "romerosigil",
+      "body_indices": [
+        2,
+        3
+      ],
+      "whitespace_words": 191,
+      "unicode_lexical_words": 195,
+      "charged_words": 195,
+      "cap": 200,
+      "internal_cap": 195
+    }
+  ],
+  "publication_identity_review": "Sixteen distinct publications. Nintendo2009 chapter5/6 are one group; Nintendo2011 chapters2/3 are one group. Source links/mirrors in source records/cards refer to these same groups. Exact URL scan across other editorial-*.json original authoring batches found no reuse; related same-interview chapter scans found no additional reuse. Existing supplied Playhub source strings are not rewritten or newly charged as commissioned prose.",
+  "other_authoring_batch_exact_url_reuse": [],
+  "source_snapshot_receipt": "build\\research\\editorial06\\source-download-receipt.json",
+  "source_snapshot_receipt_sha256": "161bc92487481f94cd815d3b465b72525b92e123d069e155f5c5a00001dd2e05",
+  "source_snapshot_hashes_verified": true,
+  "source_access_limit": "Seventeen saved responses contain the relevant source material; the Reddit HTTP200 response is an access shell, not a preserved full thread. Its two relevant creator answers were independently read using the web reader. Japanese originals behind translated primary interviews were not independently retranslated.",
+  "findings": [
+    {
+      "id": "SYS06-01",
+      "severity": "minor",
+      "status": "resolved_authorized_metadata_only",
+      "feature_id": "feature-john-romero-levels",
+      "finding": "AMA group recorded191 Unicode lexical/charged words; actual lexical computation is192. Still below internal195 and cap200.",
+      "correction": "Only unicode_lexical_words and charged_words changed191→192; all source prose, body, headings, summary and citations unchanged. Parent explicitly approved."
+    },
+    {
+      "id": "SYS06-02",
+      "severity": "info",
+      "status": "snapshot_drift_recorded_not_factual_blocker",
+      "feature_id": "feature-sid-meier-systems",
+      "finding": "Author overlap audit/notes describe the old four-section Meier source snapshot. The current canonical has three restored Wikipedia paragraphs. Receipt records current count/hash and placement against actual text; old author hash is historical evidence rather than current state.",
+      "follow_up": "Root may add a historical-snapshot label to notes during admission; do not claim the current canonical still contains the old birth-year template."
+    },
+    {
+      "id": "SYS06-03",
+      "severity": "info",
+      "status": "explicit_admission_constraint",
+      "finding": "Several attachment parents carry birth years or original game release years unlike the feature work anchors. Sakaguchi spansVI/VII/LastStory, Meier1991, Carmack1997 and Romero2019 require their own feature year/event semantics retained; never relabel parent chronology.",
+      "follow_up": "Use proposed biography/game parent once and preserve the related exhibit links. No new destination is counted."
+    },
+    {
+      "id": "SYS06-04",
+      "severity": "info",
+      "status": "resolved_approved_root_metadata_only",
+      "finding": "Root added chapter_urls to mario09team and iwatasaka11 source records for the chapter-specific card citations already present. Both chapter pages independently read: Nintendo2009 /1/5/ vine/coin sequence and Nintendo2011 Empathy for the Staff chapter3 hands-on/delegation. These are chapters of their existing publication groups, not new publications.",
+      "guard": "Bodies, headings, citations and publication budget groups unchanged. Root owns admission and assembler."
+    }
+  ],
+  "features": [
+    {
+      "feature_id": "feature-shigeru-miyamoto-team",
+      "body_sha256_compact_json": "300d6713d64c5e90f3cad8c556078c932f9c089506d3f538a9c493f2c52448f5",
+      "factual_review": "pass_with_named_primary_account_limits",
+      "all_four_paragraphs_and_headings_read": true,
+      "source_passages_checked": [
+        "Nintendo 2009 roundtable parts5–6: Nakago graph-paper data entry, nightly ROM, following-morning changes; sky memory constraint, Tezuka vine, Miyamoto block and unnamed younger coin contributor.",
+        "Tezuka 2015 Sankei interview: unexpectedly acting test players, his own difficulty, Kondo late involvement and improvised jump noises."
+      ],
+      "placement": {
+        "mode": "attach_once",
+        "parent_id": "super-mario-bros",
+        "related_ids": [
+          "daily-11-16"
+        ],
+        "reason": "Attach once to the 1985 Super Mario Bros. destination; link the Miyamoto biography. Existing teaching/physics sections do not describe the graph-paper/ROM cycle, coin-descent collaboration or sound-work sequence. Do not create another Mario release or a second Miyamoto timeline stop.",
+        "new_destination_claim": false,
+        "preserve_parent_body_headings_locales": true,
+        "preserve_feature_year_separately_from_parent": true
+      },
+      "current_existing_articles_read": [
+        {
+          "id": "daily-11-16",
+          "title": "Shigeru Miyamoto",
+          "year": 1952,
+          "sections": 7,
+          "body_sha256_compact_json": "30fc0f981313be4db3a01d579090010b619bd44e8184b643d8d8f834b84ea76b",
+          "read_in_full": true
+        },
+        {
+          "id": "super-mario-bros",
+          "title": "Super Mario Bros.",
+          "year": 1985,
+          "sections": 7,
+          "body_sha256_compact_json": "8461616cb73a335f3443352e9ff8a9ac9fc6ede7893bbd880f188f9aafe98af4",
+          "read_in_full": true
+        }
+      ],
+      "media": "all_four_briefs_unselected_no_asset_or_rights_approval",
+      "production_admission": "root_manifest_and_media_decision_required"
+    },
+    {
+      "feature_id": "feature-shinji-mikami-team",
+      "body_sha256_compact_json": "1f76ff923f5196ec9c5092a71972303252a93ed9bbe9d0f57f9d6cd045d88b65",
+      "factual_review": "pass_with_named_primary_account_limits",
+      "all_four_paragraphs_and_headings_read": true,
+      "source_passages_checked": [
+        "Mikami gM1999: fear before impact, first-person-to-fixed-view recollection, Sweet Home starting system and bounded player agency.",
+        "Kobayashi Nintendo Dream2005: overhaul conflicts, Mikami direction, Ashley distance/friendly fire/warnings and programmer contribution."
+      ],
+      "placement": {
+        "mode": "attach_once",
+        "parent_id": "wikipedia-1789064",
+        "related_ids": [
+          "workbook-01-11-resident-evil-4"
+        ],
+        "reason": "Attach once to the 1996 Resident Evil reference, with an explicit 2005 RE4 comparison and related link. Existing reference surveys the game; original RE4 already discusses overhaul/camera but not the Ashley spacing and programmer negotiations. No standalone Mikami claim.",
+        "new_destination_claim": false,
+        "preserve_parent_body_headings_locales": true,
+        "preserve_feature_year_separately_from_parent": true
+      },
+      "current_existing_articles_read": [
+        {
+          "id": "wikipedia-1789064",
+          "title": "Resident Evil",
+          "year": 1996,
+          "sections": 4,
+          "body_sha256_compact_json": "6d51aecc998433d01c2ae0d50d168a320a4558dfbf6e0528e25153ed6793eff1",
+          "read_in_full": true
+        },
+        {
+          "id": "workbook-01-11-resident-evil-4",
+          "title": "Resident Evil 4",
+          "year": 2005,
+          "sections": 4,
+          "body_sha256_compact_json": "c8f01dc0b8b6a4e4271d8426e5583ff7fa3c7209d2ac724833c793be77067d3d",
+          "read_in_full": true
+        }
+      ],
+      "media": "all_four_briefs_unselected_no_asset_or_rights_approval",
+      "production_admission": "root_manifest_and_media_decision_required"
+    },
+    {
+      "feature_id": "feature-hironobu-sakaguchi-production",
+      "body_sha256_compact_json": "7efa6a58a59130ab434cfc377945bbd473cd741d8ab58220bb0dc080db306d43",
+      "factual_review": "pass_with_named_primary_account_limits",
+      "all_four_paragraphs_and_headings_read": true,
+      "source_passages_checked": [
+        "Square Enix Nomura2024: document coauthor, shared proposals/Sakaguchi selection, Shadow dog/inn and Kitase Floating Continent decision.",
+        "Nintendo2011 parts2–3 treated as one publication: Takahashi left the Final Fantasy team duringVII, sought full3D, later management concerns; Sakaguchi hands-on Last Story and limits of drawing/delegation."
+      ],
+      "placement": {
+        "mode": "attach_once",
+        "parent_id": "daily-11-25",
+        "related_ids": [
+          "final-fantasy-vii"
+        ],
+        "reason": "Attach to the independent Sakaguchi biography, not to the FFVII release exhibit: two cards concern FFVI and the others span management and The Last Story. Parent birth anchor1962 and feature work anchor1994 remain distinct; source accounts are2024 and2011 retrospectives. The seven existing career sections are broader and lack these specific exchanges.",
+        "new_destination_claim": false,
+        "preserve_parent_body_headings_locales": true,
+        "preserve_feature_year_separately_from_parent": true
+      },
+      "current_existing_articles_read": [
+        {
+          "id": "daily-11-25",
+          "title": "Hironobu Sakaguchi",
+          "year": 1962,
+          "sections": 7,
+          "body_sha256_compact_json": "ac0ff5ac2b3e23e9bac7fae4f80d4b953177aa395c9433027311d91dabf640b1",
+          "read_in_full": true
+        },
+        {
+          "id": "final-fantasy-vii",
+          "title": "Final Fantasy VII",
+          "year": 1997,
+          "sections": 4,
+          "body_sha256_compact_json": "aa816b21fa7a74c0a7ccfc70046247e7b921b64d296e136f8eef0a5e31d19945",
+          "read_in_full": true
+        }
+      ],
+      "media": "all_four_briefs_unselected_no_asset_or_rights_approval",
+      "production_admission": "root_manifest_and_media_decision_required"
+    },
+    {
+      "feature_id": "feature-hideo-kojima-interface",
+      "body_sha256_compact_json": "f5d5046b9a9bebb68c6ac7d0bbbd152567ffdc8353a235494065d5c0b1a53b14",
+      "factual_review": "pass_with_named_primary_account_limits",
+      "all_four_paragraphs_and_headings_read": true,
+      "source_passages_checked": [
+        "Famitsu1997: graph-paper column hiding a door, toy-block structures and miniature CCD; remembered sound of crushed leaves and intended uncertainty.",
+        "The Playstation1998: Shinkawa physical REX, operational dinosaur rather than outer-space robot, concurrent CG, ninja normal-enemy proposal becoming central."
+      ],
+      "placement": {
+        "mode": "attach_once",
+        "parent_id": "workbook-09-03-metal-gear-solid",
+        "related_ids": [
+          "daily-08-24"
+        ],
+        "reason": "Attach to MGS1998, linked from Kojima biography. Existing radar/codec/Mantis sections are substantively different from miniature-camera tests, physical REX/parallel CG and Shinkawa changing the cast. Prerelease intentions remain labelled; no new release destination.",
+        "new_destination_claim": false,
+        "preserve_parent_body_headings_locales": true,
+        "preserve_feature_year_separately_from_parent": true
+      },
+      "current_existing_articles_read": [
+        {
+          "id": "daily-08-24",
+          "title": "Hideo Kojima",
+          "year": 1963,
+          "sections": 4,
+          "body_sha256_compact_json": "a1530a507b059f250ebc2d2d3863dc0a31345745ec25c7cfc928a9e2286260f4",
+          "read_in_full": true
+        },
+        {
+          "id": "workbook-09-03-metal-gear-solid",
+          "title": "Metal Gear Solid",
+          "year": 1998,
+          "sections": 4,
+          "body_sha256_compact_json": "4fb822fff4558ad301fb8febd0c10ae01a3532114fb84682b2f4ff95c3196fe0",
+          "read_in_full": true
+        }
+      ],
+      "media": "all_four_briefs_unselected_no_asset_or_rights_approval",
+      "production_admission": "root_manifest_and_media_decision_required"
+    },
+    {
+      "feature_id": "feature-sid-meier-systems",
+      "body_sha256_compact_json": "3c4355b6cec1d87bc8d9138a51c426b491da946a2240a2660e764bcae75afe4c",
+      "factual_review": "pass_with_named_primary_account_limits",
+      "all_four_paragraphs_and_headings_read": true,
+      "source_passages_checked": [
+        "Spector/Meier Game Developer February2002, republished2013: topic before mechanics, real-time-to-turns, opening/end experience and research after playable core.",
+        "Goodfellow/Shelley Civilization Chronicles2006 via WorthPlaying: morning build on chair, notes and redesign, manual selection, technology blurbs and time-limited unnamed future research."
+      ],
+      "placement": {
+        "mode": "attach_once",
+        "parent_id": "workbook-02-24-sid-meier",
+        "related_ids": [],
+        "reason": "Attach to the currently restored three-paragraph Meier biography. Its birth anchor1954 remains distinct from the feature1991 Civilization work anchor. It covers childhood/company/game development broadly, while the new feature adds prototype iteration and Shelley authorship. Do not repeat the obsolete claim that current Meier prose is still the false template.",
+        "new_destination_claim": false,
+        "preserve_parent_body_headings_locales": true,
+        "preserve_feature_year_separately_from_parent": true
+      },
+      "current_existing_articles_read": [
+        {
+          "id": "workbook-02-24-sid-meier",
+          "title": "Sid Meier",
+          "year": 1954,
+          "sections": 3,
+          "body_sha256_compact_json": "c4c11f16f0e9eca38a8aefbf53fa2842c3f830f7f540ae8c8ff53a3a7665c92c",
+          "read_in_full": true
+        }
+      ],
+      "media": "all_four_briefs_unselected_no_asset_or_rights_approval",
+      "production_admission": "root_manifest_and_media_decision_required"
+    },
+    {
+      "feature_id": "feature-will-wright-simulation",
+      "body_sha256_compact_json": "7423d267349ef38ae44f079d0a523fda1a2c747777eaa3372883ede6e2c9ae23",
+      "factual_review": "pass_with_named_primary_account_limits",
+      "all_four_paragraphs_and_headings_read": true,
+      "source_passages_checked": [
+        "Wiles ICON2008: Alexander activity-based architecture, house/resident evaluation and toy/rules/cheat modes.",
+        "Juba Game Informer2012: geographic data layers/test cities, simulation plausibility versus fun restrictions; limited later SimCity participation and Bradshaw organisational credit."
+      ],
+      "placement": {
+        "mode": "attach_once",
+        "parent_id": "simcity",
+        "related_ids": [
+          "workbook-01-20-will-wright-game-designer"
+        ],
+        "reason": "Attach once to SimCity1989, linked from Wright biography. Existing two-paragraph exhibit already rejects neutral-model assumptions; new cards add Alexander, resident evaluation, test-city mechanics and Lucy Bradshaw credit. The Sims and later studios remain clearly comparative examples, not1989 events.",
+        "new_destination_claim": false,
+        "preserve_parent_body_headings_locales": true,
+        "preserve_feature_year_separately_from_parent": true
+      },
+      "current_existing_articles_read": [
+        {
+          "id": "simcity",
+          "title": "SimCity",
+          "year": 1989,
+          "sections": 2,
+          "body_sha256_compact_json": "acf6ff990cc2fc8ad1a7db38aca18c93ebd199ecc58968384dd8e25ba409b72a",
+          "read_in_full": true
+        },
+        {
+          "id": "workbook-01-20-will-wright-game-designer",
+          "title": "Will Wright",
+          "year": 1960,
+          "sections": 4,
+          "body_sha256_compact_json": "30fafa059813ec83b3352f504edbfa0e9acb0569d9365d35f999022e5d1cc3ac",
+          "read_in_full": true
+        }
+      ],
+      "media": "all_four_briefs_unselected_no_asset_or_rights_approval",
+      "production_admission": "root_manifest_and_media_decision_required"
+    },
+    {
+      "feature_id": "feature-john-carmack-engineering",
+      "body_sha256_compact_json": "a902aa97e4d61b61bc55468d4712fdacd39c0bd31f712f48d8373a108da22a36",
+      "factual_review": "pass_with_named_primary_account_limits",
+      "all_four_paragraphs_and_headings_read": true,
+      "source_passages_checked": [
+        "Signed DOOM README23December1997: Kreimeier cleanup, Linux/DOS sound dependency, rendering/BSP retrospective suggestions not implemented claims; later GPL footer distinguished.",
+        "Separate undated Quake README: closed-source losses/public CVS, data rights, VC++/MASM/C renderer cost and Kirsh/Duffy release work."
+      ],
+      "placement": {
+        "mode": "attach_once",
+        "parent_id": "workbook-08-20-john-carmack",
+        "related_ids": [
+          "doom",
+          "workbook-06-22-quake"
+        ],
+        "reason": "Attach once to the Carmack biography, linked to Doom and Quake. Parent1970 is birth, feature1997 is the dated source artifact. Doom already has a source-release overview; named cleanup labour, admitted implementation weaknesses, data/code distinction and tool dependencies provide substantive new material. Do not add another source-release stop.",
+        "new_destination_claim": false,
+        "preserve_parent_body_headings_locales": true,
+        "preserve_feature_year_separately_from_parent": true
+      },
+      "current_existing_articles_read": [
+        {
+          "id": "daily-12-10",
+          "title": "Doom",
+          "year": 1993,
+          "sections": 7,
+          "body_sha256_compact_json": "9b6c6d16f329f0618ea399dd5e2815d64030d5de702e91c6e5ed0edc7be2c419",
+          "read_in_full": true
+        },
+        {
+          "id": "doom",
+          "title": "DOOM",
+          "year": 1993,
+          "sections": 7,
+          "body_sha256_compact_json": "9b6c6d16f329f0618ea399dd5e2815d64030d5de702e91c6e5ed0edc7be2c419",
+          "read_in_full": true
+        },
+        {
+          "id": "workbook-06-22-quake",
+          "title": "Quake",
+          "year": 1996,
+          "sections": 4,
+          "body_sha256_compact_json": "2914cad741307c1feb3ee41b727b16c5175da749fe597cd5781dcf40e79acbf9",
+          "read_in_full": true
+        },
+        {
+          "id": "workbook-08-20-john-carmack",
+          "title": "John Carmack",
+          "year": 1970,
+          "sections": 4,
+          "body_sha256_compact_json": "5f394eee1954662f9be548dddf77568943fe372c533b876c4903cb3f757eddc1",
+          "read_in_full": true
+        }
+      ],
+      "media": "all_four_briefs_unselected_no_asset_or_rights_approval",
+      "production_admission": "root_manifest_and_media_decision_required"
+    },
+    {
+      "feature_id": "feature-john-romero-levels",
+      "body_sha256_compact_json": "6a62ac2adad927ea6d6eaf05c26b0e0a5c47eb003081fa6dcb41aebf40967510",
+      "factual_review": "pass_with_named_primary_account_limits",
+      "all_four_paragraphs_and_headings_read": true,
+      "source_passages_checked": [
+        "Netflix-hosted Reddit2020 actual answers read via web reader: question Do you play Sigil yourself, repeated UV pistol-start tests; favourite-engine answer diminished lighting.",
+        "Official Romero SIGIL interview: Pascal vd Heiden/other Doom Builder2 authors, hotkey GZDoom and nine distinct level files with deathmatch versus solo/co-op areas."
+      ],
+      "placement": {
+        "mode": "attach_once",
+        "parent_id": "doom",
+        "related_ids": [
+          "workbook-06-22-quake"
+        ],
+        "reason": "Attach once to canonical doom, not its daily alias. Parent1993 remains the original release; feature2019 is SIGIL and2020 is retrospective testimony. Existing WAD/source sections do not describe SIGIL UV pistol-start tests, Doom Builder2 community workflow or nine files with differing spawn spaces. No new Doom release.",
+        "new_destination_claim": false,
+        "preserve_parent_body_headings_locales": true,
+        "preserve_feature_year_separately_from_parent": true
+      },
+      "current_existing_articles_read": [
+        {
+          "id": "daily-12-10",
+          "title": "Doom",
+          "year": 1993,
+          "sections": 7,
+          "body_sha256_compact_json": "9b6c6d16f329f0618ea399dd5e2815d64030d5de702e91c6e5ed0edc7be2c419",
+          "read_in_full": true
+        },
+        {
+          "id": "doom",
+          "title": "DOOM",
+          "year": 1993,
+          "sections": 7,
+          "body_sha256_compact_json": "9b6c6d16f329f0618ea399dd5e2815d64030d5de702e91c6e5ed0edc7be2c419",
+          "read_in_full": true
+        },
+        {
+          "id": "workbook-06-22-quake",
+          "title": "Quake",
+          "year": 1996,
+          "sections": 4,
+          "body_sha256_compact_json": "2914cad741307c1feb3ee41b727b16c5175da749fe597cd5781dcf40e79acbf9",
+          "read_in_full": true
+        }
+      ],
+      "media": "all_four_briefs_unselected_no_asset_or_rights_approval",
+      "production_admission": "root_manifest_and_media_decision_required"
+    }
+  ],
+  "scope_limits": [
+    "Participant interviews support attributed recollections and intentions, not independent proof of universal player response or ideal workplace conditions.",
+    "Current official source pages/repositories contain later edits/footers; captured byte hashes identify the inspected copies.",
+    "No archival asset identity, permission, image decode/card fit, native layout, source-language retranslation or final editorial signoff is claimed.",
+    "No master, assembler, locale, runtime, package or console edits/execution were performed for this review. Only the approved two numeric source-budget fields and this receipt were written."
+  ],
+  "draft_sha256_after_counter_fix_before_chapter_urls": "85e5b75c59eb59adb0c5549b4c1c3404095f9053b5b3ced34530ffacc61e1c23"
+}

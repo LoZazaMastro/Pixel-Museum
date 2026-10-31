@@ -1,0 +1,139 @@
+{
+  "schema_version": 1,
+  "locale": "de",
+  "source_language": "en",
+  "publication_status": "validated",
+  "translation_method": "Complete source-bound translations independently read clause-by-clause, including exact-source reused units; explicit semantic repairs retained.",
+  "independent_review": "content/editorial/early-complete-batch-81-de-translation-review.json",
+  "entries": [
+    {
+      "entry_id": "doom",
+      "source": {
+        "title": "DOOM",
+        "subtitle": "Space becomes an opponent",
+        "summary": "id Software made a fast, forceful first-person game. Players gave it further lives by sharing it, competing in it and rebuilding its spaces.",
+        "body": [
+          "On December 10, 1993, id Software released DOOM for PC through the shareware model. It was not the first first-person shooter, but it made the genre visible on a new scale and showed how technology, distribution and community could reinforce one another. John Romero recalls a project built to move beyond the orthogonal corridors of Wolfenstein 3D: angled walls, height variation, lighting, platforms and environments that read more clearly as spaces. Its rhythm emerges from the combination of fast movement, a distinct arsenal and enemies with recognizable roles. Multiplayer introduces deathmatch as both a term and a practice, while the organization of game data encourages user-created levels and modifications. DOOM becomes important not because of a single invention, but because it organizes many innovations into a system that is open, repeatable and immediately understandable.",
+          "For DOOM, id Software wanted a world more articulated than Wolfenstein 3D's ninety-degree mazes. John Romero recalls the use of binary space partitioning as a decisive step in increasing rendering speed and enabling angled walls, stairs, platforms, variable lighting and rooms at different heights. The technology cannot be separated from level design: it makes available forms that would previously have been too expensive to display with the same fluidity. The player experiences this innovation not as a technical specification, but as freedom of movement and spatial surprise. Corridors, windows, elevators and overlooks create visual relationships between distant areas and help build maps that can be remembered as places. The engine therefore becomes a design grammar, a set of possibilities that designers turn into rhythm, orientation and danger.",
+          "DOOM's arsenal works because each weapon changes the way the player reads distance, enemy density and ammunition availability. The shotgun rewards a different rhythm from the chaingun, the rocket launcher turns tight spaces into a hazard, and the BFG introduces an exceptional resource that cannot replace everything else. Romero describes the game as a balance between weapons, enemies and level design, and its strength lies precisely in the clarity of those differences. Combat does not ask only for aiming, but for constantly choosing which tool will make a situation more manageable. Fast movement allows repositioning, while the absence of modern reload systems keeps attention on trajectories and priorities. This vocabulary became influential because the consequences of choices are immediate, visible and easy to learn through action.",
+          "DOOM creates pressure through enemies that are not interchangeable. Some threaten from a distance, others force repositioning, while still others become dangerous when space narrows. Silhouettes, sounds and projectiles make these roles recognizable within moments, an essential requirement for such a fast game. The combination matters more than the individual opponent: the same corridor changes meaning when it contains slow but resilient enemies, shooters placed at different heights or creatures able to close off an escape route. Level design can therefore compose situations like sentences, using the bestiary to alter the value of doors, stairs and arenas. This clarity helps explain the system's longevity. Even before polygon counts exist in the modern sense, combat communicates priorities through shapes and behaviors that remain readable under pressure.",
+          "DOOM includes cooperative play and competitive combat over local networks, and Romero credits that context with the term deathmatch. Its importance lies not only in multiplayer being present, but in the way the game turns levels designed for rapid movement into spaces of mutual prediction. Picking up a weapon, hearing a door or anticipating an opponent's route becomes strategic information. The same speed that lets the player evade demons in the campaign creates a game of pursuit, control and anticipation between people. Deathmatch also helps shift the PC from a predominantly individual experience toward a place of direct competition, feeding local networks, offices and technical communities. Many elements of modern multiplayer will change radically, but a simple ritual is consolidated here: enter the same map, learn its resources and turn mastery of space into an advantage.",
+          "A decisive part of DOOM's legacy comes from the way its game data is organized. Textures, sounds and levels are collected in WAD files that can be replaced without rewriting the entire executable. Romero has said that the team wanted to see what players would create and designed the game so its data could be modified. This openness reduces the distance between player and author: creating a map does not require owning the engine, only learning a documentable structure and using tools built by the community. Amateur levels, conversions and archives emerge, extending the game's life beyond the original product. Modding is not a late addition to the DOOM phenomenon, but a consequence of the way the software separates code and content, making outside creativity technically practical.",
+          "In 1997, id Software released DOOM's source code, a gesture made after launch but consistent with a culture of openness already encouraged by WADs. In the README for the released version, John Carmack explicitly invites people to port the game to other systems, add features and experiment with rendering. The code does not include the commercial data, but it allows the community to build ports, tools and variants while maintaining compatibility with the original content. This step helps explain why DOOM continues to live on hardware very different from that of 1993. The work is no longer tied to a single executable: it also becomes a technical foundation that can be studied. Its cultural history therefore extends from shareware distribution to the possibility of examining how the program works and transforming it without having to start again from zero."
+        ],
+        "story_headings": [
+          "Space becomes an opponent",
+          "The engine frees the level from right angles",
+          "Weapons build a vocabulary of distances",
+          "Every enemy occupies a different tactical space",
+          "Deathmatch gives a name to a new ritual",
+          "The WAD file separates the game from its content",
+          "Source code extends an already open culture"
+        ]
+      },
+      "source_fields_sha256": "388d54eb5d623628e113b71261f083947ddb1fb51751377b58a05c684ed100a5",
+      "translation": {
+        "title": "DOOM",
+        "subtitle": "Der Raum wird zum Gegner",
+        "summary": "id Software schuf ein schnelles, kraftvolles Spiel aus der Ich-Perspektive. Die Spieler schenkten ihm weitere Leben, indem sie es teilten, darin gegeneinander antraten und seine Räume neu gestalteten.",
+        "body": [
+          "Am 10. Dezember 1993 veröffentlicht id Software DOOM für PC im Shareware-Modell. Es ist nicht der erste Ego-Shooter, macht das Genre aber in einer neuen Größenordnung sichtbar und zeigt, wie sich Technologie, Distribution und Community gegenseitig verstärken können. John Romero erinnert sich an ein Projekt, das die rechtwinkligen Korridore von Wolfenstein 3D überwinden sollte: schräge Wände, Höhenunterschiede, Licht, Plattformen und Räume, die stärker als Orte lesbar werden. Der Rhythmus entsteht aus dem Zusammentreffen von schneller Bewegung, klar unterscheidbarem Arsenal und Gegnern mit erkennbaren Funktionen. Der Multiplayer prägt „Deathmatch“ als Begriff und Praxis, während die Datenarchitektur von Nutzern erstellte Level und Modifikationen begünstigt. DOOM wird damit nicht wegen einer einzelnen Erfindung wichtig, sondern weil es viele Innovationen zu einem offenen, reproduzierbaren und unmittelbar verständlichen System organisiert.",
+          "Für DOOM will id Software eine Welt, die stärker gegliedert ist als die rechtwinkligen Labyrinthe von Wolfenstein 3D. John Romero erinnert sich an Binary Space Partitioning als entscheidenden Schritt, um das Rendering zu beschleunigen und schräge Wände, Treppen, Plattformen, wechselndes Licht und Räume mit unterschiedlichen Höhen zu ermöglichen. Die Technologie ist nicht vom Leveldesign zu trennen: Sie ermöglicht Formen, die sich zuvor nur mit zu hohem Aufwand ebenso flüssig hätten darstellen lassen. Der Spieler erlebt diese Innovation nicht als technische Spezifikation, sondern als Bewegungsfreiheit und räumliche Überraschung. Korridore, Fenster, Aufzüge und Ausblicke erzeugen visuelle Beziehungen zwischen entfernten Bereichen und helfen, Karten als Orte zu erinnern. Die Engine wird damit zur Designgrammatik, zu einem Satz von Möglichkeiten, den Designer in Rhythmus, Orientierung und Gefahr übersetzen.",
+          "Das Arsenal von DOOM funktioniert, weil jede Waffe die Lesart von Entfernung, Gegnerdichte und verfügbarer Munition verändert. Die Schrotflinte belohnt einen anderen Rhythmus als das Maschinengewehr, der Raketenwerfer macht enge Räume zum Risiko, und die BFG führt eine außergewöhnliche Ressource ein, die nicht alle anderen Waffen ersetzen kann. Romero beschreibt das Spiel als Gleichgewicht zwischen Waffen, Gegnern und Leveldesign, und seine Stärke liegt gerade in der Klarheit dieser Unterschiede. Kampf verlangt nicht nur zu zielen, sondern ständig zu entscheiden, welches Werkzeug die Situation am besten beherrschbar macht. Die hohe Bewegungsgeschwindigkeit erlaubt Neupositionierung, während das Fehlen moderner Nachladevorgänge die Aufmerksamkeit auf Flugbahnen und Prioritäten hält. Dieses Vokabular wurde einflussreich, weil die Folgen der Entscheidungen unmittelbar, sichtbar und durch Handlung leicht zu lernen sind.",
+          "DOOM erzeugt Druck durch Gegner, die nicht austauschbar sind. Manche bedrohen aus der Distanz, andere erzwingen Positionswechsel, wieder andere werden gefährlich, wenn der Raum enger wird. Silhouetten, Klänge und Projektile machen diese Funktionen innerhalb weniger Augenblicke erkennbar, eine Grundvoraussetzung für ein so schnelles Spiel. Die Kombination zählt mehr als ein einzelner Gegner: Derselbe Korridor erhält eine andere Bedeutung, wenn er langsame, widerstandsfähige Kreaturen, Schützen auf unterschiedlichen Höhen oder Wesen enthält, die einen Fluchtweg schließen können. Das Leveldesign kann Situationen daher wie Sätze komponieren und das Bestiarium nutzen, um den Wert von Türen, Treppen und Arenen zu verändern. Diese Klarheit erklärt einen Teil der Langlebigkeit des Systems. Schon bevor es Polygonzahlen im modernen Sinn gibt, kommuniziert der Kampf unter Druck Prioritäten über lesbare Formen und Verhaltensweisen.",
+          "DOOM bietet kooperatives Spiel und Wettkämpfe im lokalen Netzwerk, und Romero verortet die Entstehung des Begriffs Deathmatch in diesem Zusammenhang. Die Bedeutung liegt nicht allein darin, dass es einen Mehrspielermodus gibt, sondern darin, wie das Spiel auf schnelle Bewegung ausgelegte Level in Räume verwandelt, in denen man einander vorauszudenken versucht. Eine Waffe aufzusammeln, eine Tür zu hören oder den Weg eines Gegners zu erahnen, liefert strategische Informationen. Dasselbe Tempo, das in der Kampagne dem Ausweichen vor Dämonen dient, erzeugt zwischen Menschen ein Spiel aus Verfolgung, Kontrolle und Voraussicht. Deathmatch trägt außerdem dazu bei, den PC von einer überwiegend individuellen Erfahrung zu einem Ort des direkten Wettbewerbs zu machen, und belebt lokale Netzwerke, Büros und technikbegeisterte Gemeinschaften. Viele Elemente des modernen Mehrspielers werden sich grundlegend verändern, doch hier festigt sich ein einfaches Ritual: dieselbe Karte betreten, ihre Ressourcen kennenlernen und räumliche Beherrschung in einen Vorteil verwandeln.",
+          "Ein entscheidender Teil von DOOMs Vermächtnis entsteht durch die Organisation seiner Spieldaten. Texturen, Geräusche und Level sind in WAD-Dateien zusammengefasst, die sich austauschen lassen, ohne die gesamte ausführbare Programmdatei neu zu schreiben. Romero berichtet, dass das Team sehen wollte, was die Spieler erschaffen würden, und das Spiel deshalb so gestaltete, dass sich seine Daten bearbeiten ließen. Diese Offenheit verringert die Distanz zwischen Spieler und Autor: Um eine Karte zu erstellen, muss man nicht Eigentümer der Engine sein, sondern lediglich eine dokumentierbare Struktur erlernen und von der Community entwickelte Werkzeuge nutzen. So entstehen selbst erstellte Level, Konversionen und Archive, die das Leben des Spiels über das ursprüngliche Produkt hinaus verlängern. Modding ist keine späte Ergänzung des Phänomens DOOM, sondern eine Folge davon, wie die Software Code und Inhalte trennt und damit Kreativität von außen technisch umsetzbar macht.",
+          "1997 veröffentlicht id Software den Quellcode von DOOM. Dieser Schritt erfolgt zwar nach der Veröffentlichung des Spiels, passt aber zu einer Kultur der Offenheit, die bereits durch die WAD-Dateien gefördert wird. In der README-Datei der veröffentlichten Version lädt John Carmack ausdrücklich dazu ein, das Spiel auf andere Systeme zu portieren, Funktionen hinzuzufügen und mit dem Rendering zu experimentieren. Der Code enthält nicht die kommerziellen Spieldaten, ermöglicht es der Community aber, Portierungen, Werkzeuge und Varianten zu entwickeln, die mit den Originalinhalten kompatibel bleiben. Dieser Schritt erklärt mit, warum DOOM auf Hardware weiterlebt, die sich stark von der des Jahres 1993 unterscheidet. Das Werk bleibt nicht an eine einzelne ausführbare Datei gebunden, sondern wird auch zu einer technischen Grundlage, die sich untersuchen lässt. Seine Kulturgeschichte reicht damit vom Shareware-Vertrieb bis zur Möglichkeit, die Funktionsweise des Programms nachzuvollziehen und es zu verändern, ohne ganz von vorn beginnen zu müssen."
+        ],
+        "story_headings": [
+          "Der Raum wird zum Gegner",
+          "Die Engine befreit den Level vom rechten Winkel",
+          "Die Waffen bauen ein Vokabular von Distanzen",
+          "Jeder Gegner besetzt einen anderen taktischen Raum",
+          "Deathmatch gibt einem neuen Ritual einen Namen",
+          "Die WAD-Datei trennt das Spiel von seinen Inhalten",
+          "Der Quellcode führt eine bereits offene Kultur fort"
+        ]
+      },
+      "translation_sha256": "47949533bd65cd338d01d8a831ee238236d948591753ea968a278a67749904e1"
+    },
+    {
+      "entry_id": "feature-john-romero-levels",
+      "source": {
+        "title": "A level is played again",
+        "subtitle": "",
+        "summary": "Romero's maps connect testing, tools and community.",
+        "body": [
+          "Asked whether he still played SIGIL, Romero described the repetition behind making a level. An edit meant another playthrough. He tested the route from a pistol start on Ultra-Violence, checking that victory remained possible. The detail identifies a starting condition rather than a promise of balance. A map can feel different when entered with accumulated weapons, so that test changes what its designer must supply. It establishes a route through the level, not a guarantee that everybody will find it easy.",
+          "Romero also singled out DOOM's diminished lighting when asked about the engine. Corridors darkened with distance, contributing atmosphere before a designer added every local detail. His answer puts level making in conversation with the software that displays it. A drawn space does not arrive on screen untouched: the renderer helps determine how its depth is perceived. The useful lesson is not that technology replaces the designer, but that an arrangement is tested through a particular engine's visual behaviour as well as its geometry.",
+          "For SIGIL, Romero used Doom Builder2, crediting Pascal vd Heiden and other contributors. A shortcut launched a test in GZDoom, making another revision quick to inspect. The original game's designer was now working with tools developed around the community that had continued making maps. That reversal is more revealing than a simple return of a famous name. His new episode depended on other people's editor and engine work, while the familiar game format gave their separate efforts a practical way to meet.",
+          "The creator page also explains an easily misunderstood count. SIGIL offered solo and deathmatch spaces within nine distinct level files, rather than eighteen separate files. Different starting locations sent players into the appropriate area; cooperative play began in the solo portion. This makes a level more than an image of architecture. The same stored space includes rules about where people enter and which situation they encounter. Reading those conditions alongside the geometry reveals another layer of the designer's work, before the first shot is fired."
+        ],
+        "story_headings": [
+          "A minor edit earns another playthrough",
+          "The engine contributes to the atmosphere",
+          "An original creator uses community tools",
+          "One file holds different starting situations"
+        ]
+      },
+      "source_fields_sha256": "91403fc468bd1d34781391d2cbf7ddad7e67daf8cf0a11f7ba35b57ba830e733",
+      "translation": {
+        "title": "Ein Level wird erneut gespielt",
+        "subtitle": "",
+        "summary": "Romeros Karten verbinden Tests, Werkzeuge und Community.",
+        "body": [
+          "Auf die Frage, ob er noch SIGIL spiele, beschrieb Romero die Wiederholungen, die hinter der Entwicklung eines Levels stehen. Eine Änderung bedeutete einen weiteren Durchlauf. Er testete den Weg auf Ultra-Violence, begann dabei nur mit der Pistole und prüfte, ob ein Sieg weiterhin möglich blieb. Das Detail bezeichnet eine Ausgangsbedingung und kein Versprechen von Ausgewogenheit. Eine Karte kann sich anders anfühlen, wenn man sie mit bereits gesammelten Waffen betritt. Dieser Test verändert daher, was ihr Designer bereitstellen muss. Er legt einen Weg durch den Level fest, garantiert aber nicht, dass ihn alle leicht finden.",
+          "Auf die Engine angesprochen, hob Romero auch DOOMs mit der Entfernung abnehmende Beleuchtung hervor. Korridore wurden in der Ferne dunkler und trugen so zur Atmosphäre bei, noch bevor ein Designer jedes örtliche Detail hinzufügte. Seine Antwort bringt die Levelgestaltung mit der Software ins Gespräch, die sie darstellt. Ein gezeichneter Raum gelangt nicht unverändert auf den Bildschirm: Der Renderer bestimmt mit, wie seine Tiefe wahrgenommen wird. Die nützliche Erkenntnis ist nicht, dass Technologie den Designer ersetzt, sondern dass eine Anordnung sowohl durch das visuelle Verhalten einer bestimmten Engine als auch durch ihre Geometrie erprobt wird.",
+          "Für SIGIL verwendete Romero Doom Builder2 und würdigte Pascal vd Heiden sowie weitere Mitwirkende. Ein Tastenkürzel startete einen Test in GZDoom, sodass sich eine weitere Überarbeitung rasch prüfen ließ. Der Designer des ursprünglichen Spiels arbeitete nun mit Werkzeugen, die im Umfeld der Community entstanden waren, die weiterhin Karten baute. Dieser Rollenwechsel ist aufschlussreicher als die bloße Rückkehr eines berühmten Namens. Seine neue Episode hing von der Arbeit anderer am Editor und an der Engine ab, während das vertraute Spielformat ihren getrennten Bemühungen eine praktische Möglichkeit bot, zusammenzukommen.",
+          "Die Seite des Schöpfers erläutert außerdem eine leicht missverständliche Zählung. SIGIL bot Solo- und Deathmatch-Bereiche innerhalb von neun unterschiedlichen Leveldateien, nicht in achtzehn getrennten Dateien. Unterschiedliche Startpositionen führten die Spieler in den passenden Bereich; kooperatives Spielen begann im Solo-Abschnitt. Dadurch ist ein Level mehr als ein Bild von Architektur. Derselbe gespeicherte Raum enthält Regeln darüber, wo Menschen eintreten und welche Situation sie vorfinden. Diese Bedingungen zusammen mit der Geometrie zu lesen, zeigt eine weitere Ebene der Arbeit des Designers, noch bevor der erste Schuss fällt."
+        ],
+        "story_headings": [
+          "Eine kleine Änderung verlangt einen weiteren Durchlauf",
+          "Die Engine trägt zur Atmosphäre bei",
+          "Ein ursprünglicher Schöpfer nutzt Werkzeuge der Community",
+          "Eine Datei enthält unterschiedliche Ausgangssituationen"
+        ]
+      },
+      "translation_sha256": "8937aa93a5518ac6c96b3fb3eab4af2fc5af7bec3c89cea1d9729bc53420c075"
+    },
+    {
+      "entry_id": "feature-doom-mod-authorship",
+      "source": {
+        "title": "Building the tools to build",
+        "subtitle": "",
+        "summary": "DOOM authorship spreads through editors and teams.",
+        "body": [
+          "The 1994 DEU package offered DOOM players a map they could alter. Brendon Wyber's early editor grew through Raphaël Quinet's work on the interface, geometry and automatic node building. A maker could move objects, reshape rooms and save a new level for the game to load. The editor translated an unfamiliar file structure into things a person could select and change. Its credits also named Matt Fell's unofficial specifications: understanding somebody else's format was part of making a usable tool for further authors.",
+          "DEU's documentation was itself a collaborative project. Steve Bareman rewrote the manual and supplied a tutorial, while the package asked readers to send corrections as clearly identified sections. Code contributions had their own instructions, including a preferred patch format and consistent style. Bug reporters were asked for enough detail to reproduce a failure. These small procedures made distant contributions easier to combine. The expanding credits recorded work on menus, textures, compatibility and explanation, revealing how much support a new level required before its first room existed.",
+          "Ty Halderman remembered TeamTNT growing from a DOOM editing mailing list around the end of 1994 and beginning of 1995. Members disagreed about the kind of project to make: one group wanted existing DOOM II sprites and rules, while another wanted more extensive changes. The latter project did not materialise; the former developed into the work associated with TeamTNT. A community's output emerged through choosing an achievable shared direction. The group formed around making the levels, before a settled identity could stand in for the work.",
+          "Halderman's 1998 account places a publishing offer close to Evilution's online release. John Romero contacted him in October 1995, and the project's leadership discussed the possibility on IRC. Preparing the work for id Software then involved replacing and revising levels over several months. A community project moving into a commercial box acquired another round of decisions about space and scale. Evilution's path into Final DOOM was therefore a negotiation among contributors and publisher, with work between the offer and the version sold."
+        ],
+        "story_headings": [
+          "The map becomes editable",
+          "A manual needs contributors",
+          "A group finds its project",
+          "From planned upload to shop"
+        ]
+      },
+      "source_fields_sha256": "9c052f0c41dcac17e037d59a4f7153aa7dfaf93730c3056e4aa6526904e547c8",
+      "translation": {
+        "title": "Werkzeuge zum Bauen entwickeln",
+        "subtitle": "",
+        "summary": "DOOMs Autorenschaft verbreitet sich über Editoren und Teams.",
+        "body": [
+          "Das DEU-Paket von 1994 bot DOOM-Spielern eine Karte, die sie verändern konnten. Brendon Wybers früher Editor wuchs durch Raphaël Quinets Arbeit an Oberfläche, Geometrie und automatischer Knotenerstellung. Ein Gestalter konnte Objekte verschieben, Räume umformen und einen neuen Level speichern, den das Spiel laden konnte. Der Editor übersetzte eine ungewohnte Dateistruktur in Dinge, die sich auswählen und verändern ließen. Seine Credits nannten auch Matt Fells inoffizielle Spezifikationen: Das Format anderer zu verstehen, gehörte dazu, ein brauchbares Werkzeug für weitere Autoren zu schaffen.",
+          "DEUs Dokumentation war selbst ein Gemeinschaftsprojekt. Steve Bareman schrieb das Handbuch neu und lieferte eine Anleitung. Zugleich bat das Paket die Leser, Korrekturen als klar gekennzeichnete Abschnitte einzusenden. Für Codebeiträge gab es eigene Vorgaben, darunter ein bevorzugtes Patch-Format und einen einheitlichen Stil. Wer Fehler meldete, sollte genügend Einzelheiten liefern, um das Problem nachstellen zu können. Diese kleinen Verfahren erleichterten es, Beiträge aus der Ferne zusammenzuführen. Die wachsenden Credits verzeichneten Arbeit an Menüs, Texturen, Kompatibilität und Erklärungen und zeigten, wie viel Unterstützung ein neuer Level benötigte, noch bevor sein erster Raum existierte.",
+          "Ty Halderman erinnerte sich daran, dass TeamTNT gegen Ende 1994 und Anfang 1995 aus einer Mailingliste zur Bearbeitung von DOOM hervorging. Die Mitglieder waren sich uneinig, welche Art von Projekt sie entwickeln sollten: Eine Gruppe wollte die vorhandenen Sprites und Regeln von DOOM II nutzen, eine andere strebte umfassendere Änderungen an. Letzteres Projekt kam nicht zustande; Ersteres entwickelte sich zu der mit TeamTNT verbundenen Arbeit. Das Ergebnis einer Community entstand durch die Wahl einer erreichbaren gemeinsamen Richtung. Die Gruppe formierte sich um die Gestaltung der Level, bevor eine gefestigte Identität für die Arbeit stehen konnte.",
+          "Haldermans Bericht von 1998 verortet ein Veröffentlichungsangebot zeitlich nahe an Evilutions Online-Veröffentlichung. John Romero kontaktierte ihn im Oktober 1995, und die Projektleitung besprach die Möglichkeit im IRC. Die Vorbereitung für id Software erforderte anschließend über mehrere Monate hinweg den Austausch und die Überarbeitung von Levels. Als aus dem Community-Projekt eine kommerzielle Ausgabe in einer Spieleschachtel wurde, kam eine weitere Runde von Entscheidungen über Raum und Maßstab hinzu. Evilutions Weg in Final DOOM war somit eine Verhandlung zwischen Mitwirkenden und Publisher; zwischen dem Angebot und der verkauften Fassung lag weitere Arbeit."
+        ],
+        "story_headings": [
+          "Die Karte wird bearbeitbar",
+          "Ein Handbuch braucht Mitwirkende",
+          "Eine Gruppe findet ihr Projekt",
+          "Vom geplanten Upload in den Laden"
+        ]
+      },
+      "translation_sha256": "de52d28fbd23b524e725f51a3902ef2a539dc809a3bda30f69a3e003a7d350b3"
+    }
+  ]
+}

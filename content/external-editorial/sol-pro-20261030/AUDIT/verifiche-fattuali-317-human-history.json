@@ -1,0 +1,453 @@
+{
+  "batch_id": "317-human-history",
+  "status": "completed",
+  "sources": [
+    {
+      "source_id": "317-ligo",
+      "url": "https://ligo.org/science-summaries/GW150914/",
+      "title": "GW150914 — first observation of gravitational waves",
+      "publisher": "LIGO Scientific Collaboration",
+      "accessed_at": "2026-10-30",
+      "scope": "Segnale del 14 settembre 2015 e interpretazione come fusione di buchi neri; masse stimate di circa 36, 29 e 62 masse solari.",
+      "limitation": "Le masse restano approssimate; nessuna precisione superiore a quella delle stime scientifiche."
+    },
+    {
+      "source_id": "317-ligo-announcement",
+      "url": "https://www.ligo.caltech.edu/LA/news/ligo20160211",
+      "title": "Gravitational Waves Detected 100 Years After Einstein’s Prediction — 11 February 2016",
+      "publisher": "LIGO / Caltech",
+      "accessed_at": "2026-10-30",
+      "scope": "Comunicato ufficiale che distingue la rilevazione del 14 settembre 2015 dall’annuncio dell’11 febbraio 2016.",
+      "limitation": "Utilizzato il testo indicizzato del comunicato; non dichiarata una lettura di materiali supplementari."
+    },
+    {
+      "source_id": "317-paris-legal-history",
+      "url": "https://legal.un.org/avl/ha/pa/pa.html",
+      "title": "Paris Agreement — introductory note",
+      "publisher": "United Nations Audiovisual Library of International Law",
+      "accessed_at": "2026-10-30",
+      "scope": "La ricostruzione indica 196 parti presenti alla COP21, adozione il 12 dicembre 2015 e apertura alla firma nel 2016.",
+      "limitation": "Il numero si riferisce ai partecipanti ai negoziati; non viene confuso con il numero attuale delle parti dell’accordo."
+    },
+    {
+      "source_id": "317-paris-treaty-status",
+      "url": "https://treaties.un.org/Pages/ViewDetails.aspx?chapter=27&clang=_en&mtdsg_no=XXVII-7-d&src=IND",
+      "title": "Paris Agreement — status of treaties",
+      "publisher": "United Nations Treaty Collection",
+      "accessed_at": "2026-10-30",
+      "scope": "Registro consultato con stato al 29 ottobre 2026: 194 parti; stato delle ratifiche, compresa la mancata ratifica dell’Iran, e ritiro statunitense effettivo dal 27 gennaio 2026.",
+      "limitation": "I dati di adesione sono datati, non presentati come immutabili. Firma e ratifica restano distinte."
+    },
+    {
+      "source_id": "317-paris-unfccc",
+      "url": "https://unfccc.int/process-and-meetings/the-paris-agreement",
+      "title": "The Paris Agreement",
+      "publisher": "UNFCCC",
+      "accessed_at": "2026-10-30",
+      "scope": "194 parti al 27 gennaio 2026; obiettivi di temperatura dell’accordo.",
+      "limitation": "La pagina corrente indica 195 per l’adozione, mentre la storia giuridica ONU documenta 196 partecipanti ai negoziati. Il testo conserva la formulazione relativa ai negoziati, senza trattare i due conteggi come identici."
+    },
+    {
+      "source_id": "317-ipcc-averages",
+      "url": "https://www.ipcc.ch/report/ar6/syr/longer-report/",
+      "title": "AR6 Synthesis Report — longer report",
+      "publisher": "Intergovernmental Panel on Climate Change",
+      "accessed_at": "2026-10-30",
+      "scope": "Il testo indicizzato delle note 28 e 111 chiarisce l’uso di medie ventennali per valutare il riscaldamento, rispetto al riferimento 1850–1900.",
+      "limitation": "L’apertura della pagina completa ha restituito 403. Il riferimento alle medie è attribuito alla valutazione IPCC 2023; non è presentato come una clausola che l’accordo stesso enuncia."
+    },
+    {
+      "source_id": "317-hobbit-cnc",
+      "url": "https://www.cnc.fr/professionnels/visas-et-classification/141007",
+      "title": "Le Hobbit : la bataille des cinq armées — visa 141007",
+      "publisher": "Centre national du cinéma et de l’image animée",
+      "accessed_at": "2026-10-30",
+      "scope": "La scheda distingue il visto del 3 dicembre 2014 dall’uscita in sala del 10 dicembre 2014.",
+      "limitation": "Documenta la distribuzione francese; non stabilisce da sola il primo giorno di distribuzione in ogni territorio del mondo."
+    },
+    {
+      "source_id": "317-beasts-cnc",
+      "url": "https://www.cnc.fr/professionnels/visas-et-classification?visa=145368",
+      "title": "Les animaux fantastiques — visa 145368",
+      "publisher": "Centre national du cinéma et de l’image animée",
+      "accessed_at": "2026-10-30",
+      "scope": "La scheda distingue il visto del 9 novembre 2016 dall’uscita in sala del 16 novembre 2016.",
+      "limitation": "Data riferita alla Francia; le uscite britannica e statunitense del 18 novembre fornite nell’INPUT sono conservate nel testo."
+    }
+  ],
+  "decisions": [
+    {
+      "target_id": "history-2014-the-hobbit-the-battle-of-the-five-armies",
+      "problem": "Il 17 dicembre 2014 è l’uscita nordamericana; una distribuzione commerciale francese è anteriore.",
+      "conclusion": "Conservata la data nordamericana e aggiunta quella francese del 10 dicembre, con proposta distinta per la collocazione nella timeline.",
+      "source_ids": [
+        "317-hobbit-cnc"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-2015-first-observation-of-gravitational-waves",
+      "problem": "La collocazione annuale può confondere osservazione e annuncio; le masse non sono valori esatti.",
+      "conclusion": "Distinti 14 settembre 2015 e 11 febbraio 2016, e mantenuto il carattere approssimativo delle stime. Proposta la data dell’osservazione per l’evento.",
+      "source_ids": [
+        "317-ligo",
+        "317-ligo-announcement"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-2015-paris-agreement",
+      "problem": "Conteggi storici e attuali delle parti, cronologia dei ritiri statunitensi e media ventennale richiedono attribuzione e datazione precise.",
+      "conclusion": "196 riferito ai partecipanti ai negoziati; 194 parti al 27 gennaio 2026, con nuovo ritiro statunitense effettivo quel giorno. Le medie ventennali sono attribuite all’IPCC 2023. Il testo non trasforma il metodo di valutazione in una disposizione letterale del trattato. Aggiunta la data di adozione verificata.",
+      "source_ids": [
+        "317-paris-legal-history",
+        "317-paris-treaty-status",
+        "317-paris-unfccc",
+        "317-ipcc-averages"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-2016-fantastic-beasts-and-where-to-find-them",
+      "problem": "La data del 18 novembre 2016 non specifica nel metadato i territori e segue l’uscita commerciale francese.",
+      "conclusion": "Conservate le date britannica e statunitense e aggiunta l’uscita francese del 16 novembre. Nessuna anteprima o data del visto è scambiata per release.",
+      "source_ids": [
+        "317-beasts-cnc"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-2014-malala-satyarthi-nobel",
+      "problem": "Applicabilità della preferenza per le date di nascita.",
+      "conclusion": "Voce dedicata esplicitamente al Nobel del 10 ottobre 2014: mantenuta la data del riconoscimento, senza trasformarla in una biografia.",
+      "source_ids": [],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-2016-ennio-morricone",
+      "problem": "Applicabilità della preferenza per le date di nascita.",
+      "conclusion": "La voce riguarda esplicitamente l’Oscar del 28 febbraio 2016, non la nascita del compositore.",
+      "source_ids": [],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-2016-bob-dylan-nobel-literature",
+      "problem": "Applicabilità della preferenza per le date di nascita.",
+      "conclusion": "La voce riguarda il Nobel del 13 ottobre 2016; resta datata al riconoscimento.",
+      "source_ids": [],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-2017-metoo-movement",
+      "problem": "L’anno della diffusione dell’hashtag non è l’origine dell’espressione usata da Tarana Burke.",
+      "conclusion": "Distinti l’uso intorno al 2006 e la diffusione nell’ottobre 2017. La proposta mensile della timeline si riferisce alla diffusione, non alla fondazione.",
+      "source_ids": [],
+      "text_applied": true
+    }
+  ],
+  "metadata_proposals": [
+    {
+      "target_id": "history-2014-the-hobbit-the-battle-of-the-five-armies",
+      "field": "release_date",
+      "proposed": {
+        "year": 2014,
+        "month": 12,
+        "day": 10,
+        "precision": "day",
+        "region": "France — theatrical release"
+      },
+      "reason": "Uscita commerciale documentata anteriore a quella nordamericana.",
+      "source_ids": [
+        "317-hobbit-cnc"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "history-2016-fantastic-beasts-and-where-to-find-them",
+      "field": "release_date",
+      "proposed": {
+        "year": 2016,
+        "month": 11,
+        "day": 16,
+        "precision": "day",
+        "region": "France — theatrical release"
+      },
+      "reason": "Uscita commerciale documentata anteriore a quelle britannica e statunitense.",
+      "source_ids": [
+        "317-beasts-cnc"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "history-2015-first-observation-of-gravitational-waves",
+      "field": "event_date",
+      "proposed": {
+        "year": 2015,
+        "month": 9,
+        "day": 14,
+        "precision": "day",
+        "region": null
+      },
+      "reason": "Data della rilevazione, distinta dall’annuncio nel 2016.",
+      "source_ids": [
+        "317-ligo"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "history-2015-paris-agreement",
+      "field": "event_date",
+      "proposed": {
+        "year": 2015,
+        "month": 12,
+        "day": 12,
+        "precision": "day",
+        "region": null
+      },
+      "reason": "Data di adozione, distinta da firma e successiva entrata in vigore.",
+      "source_ids": [
+        "317-paris-legal-history"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "history-2017-metoo-movement",
+      "field": "event_date",
+      "proposed": {
+        "year": 2017,
+        "month": 10,
+        "day": null,
+        "precision": "month",
+        "region": null
+      },
+      "reason": "Diffusione dell’hashtag descritta nell’INPUT; nessun giorno unico inventato per il movimento.",
+      "source_ids": [],
+      "applied_to_catalog": false
+    }
+  ],
+  "expansion_assessments": [
+    {
+      "target_id": "history-2014-malala-satyarthi-nobel",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Evento o opera di storia culturale; non gioco né console cui applicare automaticamente le soglie richieste."
+    },
+    {
+      "target_id": "history-2014-interstellar-film",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Evento o opera di storia culturale; non gioco né console cui applicare automaticamente le soglie richieste."
+    },
+    {
+      "target_id": "history-2014-the-hobbit-the-battle-of-the-five-armies",
+      "main_cards": 2,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Evento o opera di storia culturale; non gioco né console cui applicare automaticamente le soglie richieste."
+    },
+    {
+      "target_id": "history-2015-first-observation-of-gravitational-waves",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Evento o opera di storia culturale; non gioco né console cui applicare automaticamente le soglie richieste."
+    },
+    {
+      "target_id": "history-2015-paris-agreement",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Evento o opera di storia culturale; non gioco né console cui applicare automaticamente le soglie richieste."
+    },
+    {
+      "target_id": "history-2016-ennio-morricone",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Evento o opera di storia culturale; non gioco né console cui applicare automaticamente le soglie richieste."
+    },
+    {
+      "target_id": "history-2016-alphago-versus-lee-sedol",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Evento o opera di storia culturale; non gioco né console cui applicare automaticamente le soglie richieste."
+    },
+    {
+      "target_id": "history-2016-bob-dylan-nobel-literature",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Evento o opera di storia culturale; non gioco né console cui applicare automaticamente le soglie richieste."
+    },
+    {
+      "target_id": "history-2016-fantastic-beasts-and-where-to-find-them",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Evento o opera di storia culturale; non gioco né console cui applicare automaticamente le soglie richieste."
+    },
+    {
+      "target_id": "history-2017-metoo-movement",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Evento o opera di storia culturale; non gioco né console cui applicare automaticamente le soglie richieste."
+    }
+  ],
+  "editorial_review": {
+    "english_written_first": true,
+    "languages": [
+      "en",
+      "it",
+      "fr",
+      "de",
+      "es"
+    ],
+    "entry_count": 10,
+    "card_count_per_language": 13,
+    "reviewed_at": "2026-10-30T01:33:17.608985+00:00",
+    "checks": [
+      "INPUT letto integralmente prima della stesura inglese; quattro adattamenti successivi, riletti durante la stesura per coerenza di fatti, numeri e nomi.",
+      "Sommari inglesi da 32 a 37 parole; ogni card conserva un titolo specifico e un paragrafo coeso, con capoversi per i due testi più lunghi.",
+      "Conservati crediti, nomi dei collaboratori, dettagli tecnici e narrativi, importi e risultati. Corrette due costruzioni francesi con hashtag e resa più naturale la descrizione tedesca della fusione.",
+      "Nessuna card aggiunta, eliminata, riordinata o divisa. ID, schema e cinque lingue verificati con il validatore.",
+      "Date di rilevazione, annuncio, adozione, firma, riconoscimento e uscita commerciale distinte. Le proposte sui metadati non modificano il catalogo."
+    ],
+    "scope_limit": "Ricerca mirata ai punti indicati nelle decisioni. Le altre informazioni derivano dall’INPUT; le fonti e le attribuzioni originali sono conservate nel pacchetto. Non è dichiarata una nuova verifica esterna di ogni frase."
+  },
+  "validation": {
+    "valid": true,
+    "batch_id": "317-human-history",
+    "completed": true,
+    "entry_count": 10,
+    "card_count_per_language": 13,
+    "language_count": 5,
+    "translated_card_count": 65,
+    "entry_card_counts": {
+      "history-2014-malala-satyarthi-nobel": 1,
+      "history-2014-interstellar-film": 1,
+      "history-2014-the-hobbit-the-battle-of-the-five-armies": 2,
+      "history-2015-first-observation-of-gravitational-waves": 1,
+      "history-2015-paris-agreement": 1,
+      "history-2016-ennio-morricone": 1,
+      "history-2016-alphago-versus-lee-sedol": 1,
+      "history-2016-bob-dylan-nobel-literature": 1,
+      "history-2016-fantastic-beasts-and-where-to-find-them": 3,
+      "history-2017-metoo-movement": 1
+    },
+    "issue_counts": {
+      "history-2014-malala-satyarthi-nobel": 0,
+      "history-2014-interstellar-film": 0,
+      "history-2014-the-hobbit-the-battle-of-the-five-armies": 0,
+      "history-2015-first-observation-of-gravitational-waves": 0,
+      "history-2015-paris-agreement": 0,
+      "history-2016-ennio-morricone": 0,
+      "history-2016-alphago-versus-lee-sedol": 0,
+      "history-2016-bob-dylan-nobel-literature": 0,
+      "history-2016-fantastic-beasts-and-where-to-find-them": 0,
+      "history-2017-metoo-movement": 0
+    },
+    "summary_checks": [
+      {
+        "entry_id": "history-2014-malala-satyarthi-nobel",
+        "feature_id": null,
+        "english_summary_words": 33
+      },
+      {
+        "entry_id": "history-2014-interstellar-film",
+        "feature_id": null,
+        "english_summary_words": 32
+      },
+      {
+        "entry_id": "history-2014-the-hobbit-the-battle-of-the-five-armies",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "history-2015-first-observation-of-gravitational-waves",
+        "feature_id": null,
+        "english_summary_words": 34
+      },
+      {
+        "entry_id": "history-2015-paris-agreement",
+        "feature_id": null,
+        "english_summary_words": 32
+      },
+      {
+        "entry_id": "history-2016-ennio-morricone",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "history-2016-alphago-versus-lee-sedol",
+        "feature_id": null,
+        "english_summary_words": 34
+      },
+      {
+        "entry_id": "history-2016-bob-dylan-nobel-literature",
+        "feature_id": null,
+        "english_summary_words": 34
+      },
+      {
+        "entry_id": "history-2016-fantastic-beasts-and-where-to-find-them",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "history-2017-metoo-movement",
+        "feature_id": null,
+        "english_summary_words": 36
+      }
+    ],
+    "editorial_review": [
+      "history-2014-malala-satyarthi-nobel/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-2014-malala-satyarthi-nobel/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-2014-malala-satyarthi-nobel/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-2014-malala-satyarthi-nobel/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-2015-first-observation-of-gravitational-waves/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-2015-first-observation-of-gravitational-waves/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-2015-first-observation-of-gravitational-waves/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-2015-first-observation-of-gravitational-waves/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-2015-paris-agreement/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-2015-paris-agreement/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-2015-paris-agreement/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-2015-paris-agreement/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-2016-ennio-morricone/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-2016-ennio-morricone/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-2016-ennio-morricone/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-2016-ennio-morricone/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-2016-alphago-versus-lee-sedol/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-2016-alphago-versus-lee-sedol/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-2016-alphago-versus-lee-sedol/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-2016-alphago-versus-lee-sedol/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-2016-bob-dylan-nobel-literature/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-2016-bob-dylan-nobel-literature/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-2016-bob-dylan-nobel-literature/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-2016-bob-dylan-nobel-literature/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-2017-metoo-movement/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-2017-metoo-movement/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-2017-metoo-movement/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-2017-metoo-movement/main/es: main title changed; check that this is a descriptive title and not an altered official name"
+    ],
+    "failures": []
+  },
+  "output_sha256": "43596b716cefc8e123bfd9379a7ef317e1d0b9b9165497980164a83717d09962",
+  "root_numeric_review": {
+    "reviewed_at": "2026-10-30T01:36:18.673592+00:00",
+    "scope": "Controllate tutte le sette segnalazioni numeriche: due date di uscita francesi, data di adozione dell’accordo, data del ritiro statunitense e anno della valutazione IPCC sono documentati nelle fonti; 1.5/1,5 è localizzazione del separatore decimale. Nessuna omissione rilevata da queste segnalazioni.",
+    "changes": []
+  }
+}

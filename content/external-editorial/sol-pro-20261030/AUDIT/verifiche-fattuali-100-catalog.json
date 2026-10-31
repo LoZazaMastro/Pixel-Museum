@@ -1,0 +1,772 @@
+{
+  "batch_id": "100-catalog",
+  "status": "completed",
+  "entries": 10,
+  "main_cards_per_language": 28,
+  "feature_cards_per_language": 4,
+  "cards_per_language": 32,
+  "languages": [
+    "en",
+    "it",
+    "fr",
+    "de",
+    "es"
+  ],
+  "sources": [
+    {
+      "source_id": "100-orta-release",
+      "url": "https://www.sega.jp/game/xbox/",
+      "title": "Xbox — catalogo Sega",
+      "publisher": "Sega",
+      "accessed_at": "2026-10-30",
+      "scope": "La scheda del catalogo ufficiale riporta Panzer Dragoon Orta il 19 dicembre 2002.",
+      "limitation": "Data giapponese; non trasferita alle edizioni nordamericana ed europea del 2003."
+    },
+    {
+      "source_id": "100-orta-series",
+      "url": "https://www.sega.jp/topics/detail/180214_soft_4/",
+      "title": "Panzer Dragoon — pubblicazione delle quattro colonne sonore",
+      "publisher": "Sega, 14 febbraio 2018",
+      "accessed_at": "2026-10-30",
+      "scope": "La retrospettiva presenta la successione dei quattro capitoli principali fino a Orta.",
+      "limitation": "La riscrittura precisa quarto capitolo principale, evitando di escludere implicitamente gli spin-off dal conteggio complessivo. Nessun titolo di canzone aggiunto o modificato."
+    },
+    {
+      "source_id": "100-orta-context",
+      "url": "https://en.wikipedia.org/wiki/Panzer_Dragoon_Orta",
+      "title": "Panzer Dragoon Orta — sviluppo e riferimenti",
+      "publisher": "Wikipedia, fonte contestuale già rappresentata nell’INPUT",
+      "accessed_at": "2026-10-30",
+      "scope": "Rilette le sezioni produttive e i rimandi alle testimonianze: disaccordi iniziali sulla direzione artistica, ambizioni e composizione del gruppo.",
+      "limitation": "Conservata la sostanza della fonte fornita; non dichiarata una lettura indipendente di tutti i libri e articoli nei suoi riferimenti. Nessuna nuova meccanica o cifra di vendita importata."
+    },
+    {
+      "source_id": "100-eyetoy-history",
+      "url": "https://www.playstation.com/en-us/playstation-history/2000-ps2-psp/",
+      "title": "PlayStation history — PlayStation 2 and PSP",
+      "publisher": "Sony Interactive Entertainment",
+      "accessed_at": "2026-10-30",
+      "scope": "Il paragrafo EyeToy conferma giochi progettati per i movimenti e funzioni opzionali in The Sims e Tony Hawk.",
+      "limitation": "Non esteso il controllo del corpo a tutte le funzioni opzionali dei giochi citati. Nessuna data giornaliera aggiunta sulla base di calendari non verificati."
+    },
+    {
+      "source_id": "100-steam-release",
+      "url": "https://store.steampowered.com/oldnews/183",
+      "title": "Steam Client Released",
+      "publisher": "Valve, 12 settembre 2003",
+      "accessed_at": "2026-10-30",
+      "scope": "Annuncio originale che dichiara il client già pubblicato e rimanda ai download.",
+      "limitation": "È disponibilità effettiva del software, non presentazione del progetto. La data viene proposta come rilascio del servizio."
+    },
+    {
+      "source_id": "100-steam-ssa",
+      "url": "https://store.steampowered.com/subscriber_agreement/?l=english",
+      "title": "Steam Subscriber Agreement",
+      "publisher": "Valve, versione consultata nel 2026",
+      "accessed_at": "2026-10-30",
+      "scope": "Lette le sezioni 1 B–C e 2 A: account personale, restrizioni di trasferimento, sottoscrizioni e licenze d’uso.",
+      "limitation": "Descrizione delle condizioni consultate nel 2026, senza attribuirle al contratto del 2003 e senza trasformarle in una pronuncia giuridica generale sui diritti del consumatore."
+    },
+    {
+      "source_id": "100-steam-drm",
+      "url": "https://partner.steamgames.com/doc/features/drm?l=english",
+      "title": "Steam DRM",
+      "publisher": "Valve / Steamworks Documentation",
+      "accessed_at": "2026-10-30",
+      "scope": "La panoramica documenta verifica del possesso e avvio di Steam prima del gioco quando è usato il DRM wrapper.",
+      "limitation": "Il testo conserva la scelta dello sviluppatore; non afferma che ogni gioco Steam richieda questo wrapper o che ogni avvio richieda sempre una connessione."
+    },
+    {
+      "source_id": "100-steam-families",
+      "url": "https://store.steampowered.com/news/posts/?enddate=1726089886&feed=steam_community_announcements",
+      "title": "Steam Families is here",
+      "publisher": "Valve, comunicato del settembre 2024",
+      "accessed_at": "2026-10-30",
+      "scope": "La versione indicizzata del comunicato ufficiale dichiara disponibilità per tutti gli utenti, copie simultanee, salvataggi e obiettivi personali, esclusione a scelta degli sviluppatori.",
+      "limitation": "Gli URL individuali del comunicato forniti nell’INPUT restituivano soltanto un contenitore dinamico; letto il corpo nella pagina ufficiale di archivio. La descrizione riguarda il lancio del 2024, non un aggiornamento completo di tutte le regole correnti."
+    },
+    {
+      "source_id": "100-puyo-rights",
+      "url": "https://www.segasammy.co.jp/en/archives/ir/ar2014/pdf/IP_e.pdf",
+      "title": "Intellectual Properties — Annual Report 2014",
+      "publisher": "Sega Sammy Holdings",
+      "accessed_at": "2026-10-30",
+      "scope": "Il rapporto aziendale, pagina stampata 32–33, indica l’acquisizione dei diritti di proprietà intellettuale di Puyo Puyo nel 1998.",
+      "limitation": "Non sostiene la divisione fra diritti dei personaggi nel 1998 e acquisizione integrale nel 2001 contenuta nell’INPUT. La data 2001 viene rimossa da quella affermazione senza inventare un secondo contratto."
+    },
+    {
+      "source_id": "100-puyo-release",
+      "url": "https://puyo.sega.jp/portal/series/PuyopuyoFever.html",
+      "title": "Puyo Puyo Fever — series history",
+      "publisher": "Sega",
+      "accessed_at": "2026-10-30",
+      "scope": "La scheda ufficiale distingue l’avvio arcade il 26 novembre 2003 dalle successive edizioni domestiche del 2004; conferma la premessa del bastone volante e il rinnovamento della serie.",
+      "limitation": "Nessuna regola di Fever o nuovo personaggio importato nelle due card: il materiale serve a risolvere identità e anno, mentre gli ampliamenti restano separati."
+    },
+    {
+      "source_id": "100-compile-context",
+      "url": "https://www.msx.org/news/msx-related/en/end-compile",
+      "title": "The end of Compile",
+      "publisher": "MSX Resource Center, resoconto contemporaneo del 2003",
+      "accessed_at": "2026-10-30",
+      "scope": "Distingue crisi e ristrutturazione del 1998 dalla successiva fine dell’azienda.",
+      "limitation": "Resoconto giornalistico, non fascicolo fallimentare. Il testo usa difficoltà finanziarie e non colloca Puyo Pop immediatamente dopo la chiusura di Compile."
+    },
+    {
+      "source_id": "100-pgr-diary",
+      "url": "https://www.gamespot.com/articles/project-gotham-racing-2-designer-diary-1/1100-2910005/",
+      "title": "Project Gotham Racing 2 Designer Diary #1",
+      "publisher": "Peter Wallace, Bizarre Creations / GameSpot, 9 aprile 2003",
+      "accessed_at": "2026-10-30",
+      "scope": "Letto il diario in prima persona: lavoro cominciato dopo il primo gioco ed email di Bill Gates con suggerimenti.",
+      "limitation": "La prima apertura era fallita; la successiva lettura del riferimento indicizzato ha restituito il testo completo pertinente. Non dedotto che Gates abbia progettato il sistema Kudos."
+    },
+    {
+      "source_id": "100-dmc-itsuno",
+      "url": "https://www.famitsu.com/news/202111/03239135.html",
+      "title": "Devil May Cry — intervista del ventesimo anniversario a Hideaki Itsuno",
+      "publisher": "Famitsu, 3 novembre 2021",
+      "accessed_at": "2026-10-30",
+      "scope": "Letta l’intervista originale: Itsuno parla del tempo insufficiente in DMC2, dell’insoddisfazione e della richiesta di realizzare DMC3.",
+      "limitation": "La motivazione dell’INPUT diventa un ricordo attribuito a Itsuno. Nessun nuovo elenco di persone o aneddoto estraneo importato."
+    },
+    {
+      "source_id": "100-dmc-sales",
+      "url": "https://www.capcom.co.jp/ir/english/data/pdf/fy2004e1.pdf",
+      "title": "Million Titles & Sequel Titles",
+      "publisher": "Capcom Investor Relations",
+      "accessed_at": "2026-10-30",
+      "scope": "Il documento aziendale riporta Devil May Cry 2 fra i titoli milionari, con pubblicazione a gennaio 2003.",
+      "limitation": "Usato per sostenere il risultato commerciale già presente nell’INPUT; nessun nuovo totale di vendite aggiunto alla prosa."
+    },
+    {
+      "source_id": "100-dmc-release-press",
+      "url": "https://worthplaying.com/article/2003/1/28/news/8025-capcom-releases-devil-may-cry-2/",
+      "title": "Capcom Releases Devil May Cry 2",
+      "publisher": "Comunicato Capcom ripreso da WorthPlaying, 28 gennaio 2003",
+      "accessed_at": "2026-10-30",
+      "scope": "Il testo contemporaneo sul lancio è pubblicato il 28 gennaio; la scheda moderna aggregata nella stessa pagina riporta il 25 gennaio.",
+      "limitation": "Le due date appartengono a elementi diversi della pagina. Il comunicato non consente di risolvere da solo il primo giorno di disponibilità; proposta gennaio 2003."
+    },
+    {
+      "source_id": "100-dmc-release-catalog",
+      "url": "https://www.mobygames.com/game/8485/devil-may-cry-2/releases/",
+      "title": "Devil May Cry 2 — releases",
+      "publisher": "MobyGames",
+      "accessed_at": "2026-10-30",
+      "scope": "Il catalogo statunitense riporta il 25 gennaio 2003, in contrasto con il 28 dell’INPUT.",
+      "limitation": "Non scelto il giorno per maggioranza fra cataloghi; il testo del museo usa il solo anno e la proposta di metadati conserva il mese."
+    },
+    {
+      "source_id": "100-lifeline-releases",
+      "url": "https://gamefaqs.gamespot.com/ps2/589786-lifeline/data",
+      "title": "Lifeline / Operator’s Side — release data",
+      "publisher": "GameFAQs",
+      "accessed_at": "2026-10-30",
+      "scope": "Le schede distinguono Giappone 30 gennaio 2003, The Best 25 settembre 2003 e USA 2 marzo 2004; identificano Sony e Konami.",
+      "limitation": "Catalogo secondario con codici prodotto, coerente con MobyGames. Non dimostra una soglia commerciale specifica per l’ammissione a The Best."
+    },
+    {
+      "source_id": "100-lifeline-catalog",
+      "url": "https://www.mobygames.com/game/13912/lifeline/releases/",
+      "title": "Lifeline — releases",
+      "publisher": "MobyGames",
+      "accessed_at": "2026-10-30",
+      "scope": "Riscontrati i giorni giapponese e nordamericano e l’editore Konami per gli Stati Uniti.",
+      "limitation": "La pubblicazione in collana economica viene conservata come fatto, senza dedurre dalle sole date che un preciso obiettivo di vendita sia stato raggiunto."
+    },
+    {
+      "source_id": "100-lifeline-ship",
+      "url": "https://www.gamespot.com/articles/lifeline-heads-to-stores/1100-6090498/",
+      "title": "LifeLine heads to stores",
+      "publisher": "GameSpot, 3 marzo 2004",
+      "accessed_at": "2026-10-30",
+      "scope": "Il resoconto comunica che Konami aveva spedito il gioco ai negozi.",
+      "limitation": "Il 3 marzo è la data del resoconto di spedizione, non usata per sostituire automaticamente il 2 marzo dei cataloghi di uscita."
+    },
+    {
+      "source_id": "100-disgaea-history",
+      "url": "https://nippon1.jp/30th/history.html",
+      "title": "Nippon Ichi Software — thirty-year history",
+      "publisher": "Nippon Ichi Software",
+      "accessed_at": "2026-10-30",
+      "scope": "La cronologia ufficiale riporta Disgaea il 30 gennaio 2003, Phantom Brave nel 2004 e Disgaea 2 nel 2006.",
+      "limitation": "Date giapponesi; gli anni del materiale originario restano distinti da quelli delle conversioni. Il contesto annuale 2006 fra le fonti dell’INPUT non cambia la nascita del primo gioco nel 2003."
+    },
+    {
+      "source_id": "100-gba-release",
+      "url": "https://www.nintendo.co.jp/corporate/release/2004/040901.html",
+      "title": "Game Boy Advance SP — price revision notice",
+      "publisher": "Nintendo, 1 settembre 2004",
+      "accessed_at": "2026-10-30",
+      "scope": "Il comunicato successivo alla pubblicazione richiama esplicitamente il lancio del 14 febbraio 2003 e la luce frontale dell’SP.",
+      "limitation": "Conferma la disponibilità già avvenuta, non soltanto la previsione del comunicato iniziale. Non importati prezzi o cifre di vendita."
+    },
+    {
+      "source_id": "100-gba-product",
+      "url": "https://www.nintendo.com/it-it/Console-e-accessori/Storia-di-Nintendo/Game-Boy-Advance-SP/Game-Boy-Advance-SP-627141.html",
+      "title": "Game Boy Advance SP",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "La scheda ufficiale descrive schermo illuminato, chiusura e batteria ricaricabile integrata.",
+      "limitation": "Non importate autonomie o tempi di ricarica. La distinzione tecnica fra frontlight e backlight resta quella del materiale fornito; non dichiarata un’ispezione diretta dei due schermi."
+    },
+    {
+      "source_id": "100-gba-okada",
+      "url": "https://shmuplations.com/okada2022/",
+      "title": "Satoru Okada — 2022 Retrospective Interview",
+      "publisher": "4Gamer, intervista del 2022; traduzione Shmuplations pubblicata nel 2023",
+      "accessed_at": "2026-10-30",
+      "scope": "Letto il passaggio in cui Okada ricorda la reazione negativa alla proposta, il modello concettuale piccolo e sottile e il successivo cambio di opinione dello stesso gruppo.",
+      "limitation": "Il racconto è attribuito a Okada. I vincoli produttivi vennero accantonati per il modello concettuale, non per la fabbricazione commerciale; non dedotta la data di nascita dalla collocazione del progetto."
+    },
+    {
+      "source_id": "100-kungfu-release",
+      "url": "https://news.microsoft.com/source/2003/02/26/behold-kung-fu-chaos-brings-fun-and-good-fortune-to-xbox/",
+      "title": "Behold: Kung Fu Chaos Brings Fun and Good Fortune to Xbox",
+      "publisher": "Microsoft, 26 febbraio 2003",
+      "accessed_at": "2026-10-30",
+      "scope": "Il comunicato ufficiale dichiara il gioco pubblicato e disponibile nei negozi. Conferma set mobili, provocazioni e natura di party brawler.",
+      "limitation": "Prova la disponibilità entro il 26 febbraio, ma diverge dai giorni 24 e 25 dei cataloghi. Proposta mensile per evitare di imporre un primo giorno non dimostrato."
+    },
+    {
+      "source_id": "100-kungfu-date25",
+      "url": "https://www.mobygames.com/game/8730/kung-fu-chaos/releases/",
+      "title": "Kung Fu Chaos — releases",
+      "publisher": "MobyGames",
+      "accessed_at": "2026-10-30",
+      "scope": "La scheda statunitense riporta il 25 febbraio 2003, come l’INPUT.",
+      "limitation": "Dato in contrasto con GameFAQs e con la data del comunicato Microsoft; non selezionato automaticamente."
+    },
+    {
+      "source_id": "100-kungfu-date24",
+      "url": "https://gamefaqs.gamespot.com/xbox/557709-kung-fu-chaos/data",
+      "title": "Kung Fu Chaos — release details",
+      "publisher": "GameFAQs",
+      "accessed_at": "2026-10-30",
+      "scope": "La scheda USA, prodotto H77-00001, riporta il 24 febbraio 2003.",
+      "limitation": "Il codice prodotto non risolve autonomamente il contrasto sul giorno. Nessun nuovo personaggio o titolo musicale importato dal testo commerciale."
+    }
+  ],
+  "decisions": [
+    {
+      "target_id": "wikipedia-1715754",
+      "problem": "Il quarto gioco e l’ultima uscita fino al 2020 potevano escludere implicitamente spin-off e conversioni.",
+      "conclusion": "Precisato quarto capitolo principale e ultimo episodio originale prima del remake del 2020. Conservati 2001, scioglimento dopo Saga 1998, circa una dozzina di membri, tutti i nomi e le difficoltà produttive. La ricezione è attribuita a critica e pubblicazioni, mentre i dubbi sulla storia restano degli autori.",
+      "source_ids": [
+        "100-orta-release",
+        "100-orta-series",
+        "100-orta-context"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "hardware-eyetoy",
+      "problem": "La videocamera poteva sembrare un controllo universale per tutti i giochi PS2.",
+      "conclusion": "Distinti software progettati per il movimento e funzioni opzionali in The Sims e Tony Hawk; conservati USB, 2003 e EyeToy: Play.",
+      "source_ids": [
+        "100-eyetoy-history"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "steam",
+      "problem": "La collocazione annuale non indicava il rilascio effettivo del client.",
+      "conclusion": "Il comunicato del 12 settembre 2003 dichiara il software disponibile e fornisce indicazioni per scaricarlo. Proposto quel giorno come release, senza confonderlo con un annuncio preliminare.",
+      "source_ids": [
+        "100-steam-release"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "feature-steam-library-ownership",
+      "problem": "Le condizioni e il DRM potevano essere letti come regole valide fin dal 2003 o comuni a tutti i giochi.",
+      "conclusion": "Contratto esplicitamente consultato nel 2026; wrapper facoltativo per gli sviluppatori; funzioni familiari riferite al lancio del 2024. Conservati giochi per anno nell’anniversario, cultura popolare, account, licenze, copie, progressi e limiti tecnici.",
+      "source_ids": [
+        "100-steam-ssa",
+        "100-steam-drm",
+        "100-steam-families"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-1127169",
+      "problem": "L’INPUT distingueva diritti dei personaggi acquisiti nel 1998 e tutti i diritti nel 2001, e legava Puyo Pop a un fallimento senza distinguere crisi e chiusura.",
+      "conclusion": "Il rapporto Sega Sammy documenta acquisizione dei diritti nel 1998. Rimossa la seconda acquisizione del 2001 non sostenuta. Usate difficoltà finanziarie di Compile, senza collocare Puyo Pop immediatamente dopo la chiusura del 2003. Distinti arcade 2003 e successive versioni domestiche.",
+      "source_ids": [
+        "100-puyo-rights",
+        "100-puyo-release",
+        "100-compile-context"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-875392",
+      "problem": "Il ruolo di Bill Gates poteva apparire più esteso di un contributo di suggerimenti.",
+      "conclusion": "Il diario del produttore Peter Wallace conferma email con suggerimenti. Nessun contributo di progettazione specifica attribuito a Gates. Conservati agosto 2002 come annuncio produttivo, dieci città, Nürburgring, giro di 360 gradi, scia e due DLC.",
+      "source_ids": [
+        "100-pgr-diary"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-1707772",
+      "problem": "L’inesperienza del gruppo e il desiderio di migliorare erano generalizzazioni; il giorno nordamericano diverge fra fonti.",
+      "conclusion": "La nuova squadra viene descritta nel rapporto con la serie. Il desiderio di proseguire è reso concreto dal ricordo attribuito a Itsuno, che chiese di realizzare DMC3. Conservati minore difficoltà, Dante diverso, buon risultato commerciale e continuità del gruppo. Proposta gennaio 2003 per il giorno 25/28 non risolto; la cronologia della storia resta distinta dalle pubblicazioni.",
+      "source_ids": [
+        "100-dmc-itsuno",
+        "100-dmc-sales",
+        "100-dmc-release-press",
+        "100-dmc-release-catalog"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-5245758",
+      "problem": "Il ruolo Sony/Konami era ambiguo e la riedizione The Best veniva usata come prova automatica di vendite sufficienti.",
+      "conclusion": "Sony sviluppa e pubblica in Giappone; Konami pubblica in Nord America. Conservati 30 gennaio 2003, 2 marzo 2004 e 25 settembre 2003 con regioni ed edizioni corrette. La riedizione economica è un fatto documentato; eliminato il nesso commerciale non provato da una soglia verificabile. Conservati microfono, Rio, Naomi, ambientazione, critica al riconoscimento e seguito di appassionati.",
+      "source_ids": [
+        "100-lifeline-releases",
+        "100-lifeline-catalog",
+        "100-lifeline-ship"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-848794",
+      "problem": "La fonte annuale 2006 poteva essere confusa con l’anno del gioco e la pubblicazione Nippon Ichi poteva apparire mondiale.",
+      "conclusion": "Precisata prima pubblicazione Nippon Ichi in Giappone nel 2003, confermata dalla cronologia ufficiale. Conservati due anni di sonno, dodici episodi anime, tutti i titoli e tutte le piattaforme; distinti seguito spirituale e ritorno del cast in D2.",
+      "source_ids": [
+        "100-disgaea-history"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "workbook-01-07-game-boy-advance-sp",
+      "problem": "I primati della batteria e della luce richiedevano una formulazione precisa; il prototipo poteva sembrare un abbandono dei vincoli produttivi definitivo.",
+      "conclusion": "Batteria ricaricabile integrata e ampia distribuzione internazionale dell’illuminazione, senza cancellare i precedenti limitati a singoli mercati. Il racconto di Okada riguarda un modello concettuale. Conservati Special, Micro 2005, percorso della luce nei due schermi, presa da 3,5 mm e limite dell’adattatore Nintendo rispetto agli sdoppiatori.",
+      "source_ids": [
+        "100-gba-release",
+        "100-gba-product",
+        "100-gba-okada"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "kung-fu-chaos-2003",
+      "problem": "I cataloghi indicano 24 o 25 febbraio, mentre il comunicato ufficiale di disponibilità è del 26.",
+      "conclusion": "Il testo usa febbraio 2003 in Nord America e propone la precisione mensile. La disponibilità è certa entro il 26; il primo giorno non viene scelto per intuizione. Conservati quattro giocatori, pericoli, regista, provocazioni, valutazioni, prototipo autofinanziato, critiche agli stereotipi, seguito cancellato e Ninja Theory.",
+      "source_ids": [
+        "100-kungfu-release",
+        "100-kungfu-date25",
+        "100-kungfu-date24"
+      ],
+      "text_applied": true
+    }
+  ],
+  "metadata_proposals": [
+    {
+      "target_id": "wikipedia-1715754",
+      "original_year": 2002,
+      "original_date": {
+        "month": 12,
+        "day": 19,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed_date": {
+        "year": 2002,
+        "month": 12,
+        "day": 19,
+        "precision": "day",
+        "region": "JP"
+      },
+      "event_semantics": "release",
+      "source_ids": [
+        "100-orta-release"
+      ],
+      "reason": "Conservare il giorno e precisare la regione giapponese. Nessuna modifica applicata a INPUT, TEMPLATE o catalogo."
+    },
+    {
+      "target_id": "steam",
+      "original_year": 2003,
+      "original_date": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": ""
+      },
+      "proposed_date": {
+        "year": 2003,
+        "month": 9,
+        "day": 12,
+        "precision": "day",
+        "region": "Online"
+      },
+      "event_semantics": "release",
+      "source_ids": [
+        "100-steam-release"
+      ],
+      "reason": "Sostituire la sola precisione annuale con il rilascio pubblico del client documentato dal comunicato originale. Nessuna modifica applicata a INPUT, TEMPLATE o catalogo."
+    },
+    {
+      "target_id": "wikipedia-1127169",
+      "original_year": 2003,
+      "original_date": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": ""
+      },
+      "proposed_date": {
+        "year": 2003,
+        "month": 11,
+        "day": 26,
+        "precision": "day",
+        "region": "JP"
+      },
+      "event_semantics": "release",
+      "source_ids": [
+        "100-puyo-release"
+      ],
+      "reason": "Precisare l’uscita arcade giapponese, distinta dalle versioni domestiche del 2004. Nessuna modifica applicata a INPUT, TEMPLATE o catalogo."
+    },
+    {
+      "target_id": "wikipedia-1707772",
+      "original_year": 2003,
+      "original_date": {
+        "month": 1,
+        "day": 28,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed_date": {
+        "year": 2003,
+        "month": 1,
+        "day": null,
+        "precision": "month",
+        "region": "North America"
+      },
+      "event_semantics": "release",
+      "source_ids": [
+        "100-dmc-release-press",
+        "100-dmc-release-catalog"
+      ],
+      "reason": "Il conflitto fra 25 e 28 gennaio non consente di dichiarare risolto il primo giorno. Rappresentare il mese comune documentato. Nessuna modifica applicata a INPUT, TEMPLATE o catalogo."
+    },
+    {
+      "target_id": "wikipedia-5245758",
+      "original_year": 2003,
+      "original_date": {
+        "month": 1,
+        "day": 30,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed_date": {
+        "year": 2003,
+        "month": 1,
+        "day": 30,
+        "precision": "day",
+        "region": "JP"
+      },
+      "event_semantics": "release",
+      "source_ids": [
+        "100-lifeline-releases",
+        "100-lifeline-catalog"
+      ],
+      "reason": "Conservare il giorno dell’edizione originale e precisare la regione giapponese; la fonte è catalografica, non un nuovo comunicato Sony letto. Nessuna modifica applicata a INPUT, TEMPLATE o catalogo."
+    },
+    {
+      "target_id": "wikipedia-848794",
+      "original_year": 2003,
+      "original_date": {
+        "month": 1,
+        "day": 30,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed_date": {
+        "year": 2003,
+        "month": 1,
+        "day": 30,
+        "precision": "day",
+        "region": "JP"
+      },
+      "event_semantics": "release",
+      "source_ids": [
+        "100-disgaea-history"
+      ],
+      "reason": "Conservare il giorno e precisare la regione della prima edizione documentata da Nippon Ichi. Nessuna modifica applicata a INPUT, TEMPLATE o catalogo."
+    },
+    {
+      "target_id": "workbook-01-07-game-boy-advance-sp",
+      "original_year": 2003,
+      "original_date": {
+        "month": 2,
+        "day": 14,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed_date": {
+        "year": 2003,
+        "month": 2,
+        "day": 14,
+        "precision": "day",
+        "region": "JP"
+      },
+      "event_semantics": "release",
+      "source_ids": [
+        "100-gba-release"
+      ],
+      "reason": "Conservare il giorno e precisare la regione giapponese, confermata da Nintendo dopo il lancio. Nessuna modifica applicata a INPUT, TEMPLATE o catalogo."
+    },
+    {
+      "target_id": "kung-fu-chaos-2003",
+      "original_year": 2003,
+      "original_date": {
+        "month": 2,
+        "day": 25,
+        "precision": "day",
+        "region": "North America"
+      },
+      "proposed_date": {
+        "year": 2003,
+        "month": 2,
+        "day": null,
+        "precision": "month",
+        "region": "North America"
+      },
+      "event_semantics": "release",
+      "source_ids": [
+        "100-kungfu-release",
+        "100-kungfu-date25",
+        "100-kungfu-date24"
+      ],
+      "reason": "I giorni 24, 25 e 26 appartengono a fonti diverse. Disponibilità certa entro il 26, senza prova decisiva del primo giorno: precisione mensile. Nessuna modifica applicata a INPUT, TEMPLATE o catalogo."
+    }
+  ],
+  "expansion_assessments": [
+    {
+      "target_id": "wikipedia-1715754",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Quarto capitolo principale di Panzer Dragoon, importante nel passaggio a Xbox. Tre card, con funzionamento del volo ancora poco sviluppato."
+    },
+    {
+      "target_id": "hardware-eyetoy",
+      "main_cards": 2,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "required_main_cards": null,
+      "missing_cards": 0,
+      "rationale": "Accessorio importante per gli input basati sulla videocamera, distinto da una console autonoma. Le due card mantengono tutto il materiale fornito; non applicata automaticamente la soglia di sei prevista per le console."
+    },
+    {
+      "target_id": "steam",
+      "main_cards": 2,
+      "feature_cards": 4,
+      "threshold_applicable": false,
+      "required_main_cards": null,
+      "missing_cards": 0,
+      "rationale": "Servizio e piattaforma, non gioco o console. Due card principali e quattro card di feature, conteggiate separatamente; nessuna quota numerica automatica."
+    },
+    {
+      "target_id": "wikipedia-1127169",
+      "main_cards": 2,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 3,
+      "rationale": "Rinnovamento importante di Puyo Puyo sotto Sonic Team. Due card dedicate a premessa e distribuzione, prive di una spiegazione delle regole di Fever."
+    },
+    {
+      "target_id": "wikipedia-875392",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Episodio importante di Project Gotham Racing nella storia Xbox. Tre card su identità, ampliamento e ricezione; spazio per due approfondimenti autonomi."
+    },
+    {
+      "target_id": "wikipedia-1707772",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Secondo episodio principale di Devil May Cry, importante anche per la continuità del gruppo di sviluppo. Tre card prevalentemente narrative e produttive."
+    },
+    {
+      "target_id": "wikipedia-5245758",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Esperimento significativo di controllo vocale su PlayStation 2. Tre card generali; due approfondimenti possono mostrare concretamente l’interazione e la produzione."
+    },
+    {
+      "target_id": "wikipedia-848794",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Primo Disgaea, importante per la serie e per il gioco di ruolo tattico. Tre card prevalentemente dedicate a trama, adattamenti e seguiti, senza funzionamento tattico."
+    },
+    {
+      "target_id": "workbook-01-07-game-boy-advance-sp",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 6,
+      "missing_cards": 2,
+      "rationale": "Revisione importante di una console portatile Nintendo. Quattro card principali: applicata la soglia di sei, senza contare separatamente i paragrafi dentro una card."
+    },
+    {
+      "target_id": "kung-fu-chaos-2003",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "required_main_cards": null,
+      "missing_cards": 0,
+      "rationale": "Tre card autonome su set, combattimento e genesi dello studio. La sola importanza successiva di Ninja Theory non impone automaticamente cinque card a questa opera."
+    }
+  ],
+  "editorial_review": {
+    "english_first": true,
+    "english_checkpoint": "100-catalog/OUTPUT-100-catalog.json, ramo en; inglese salvato prima dei quattro adattamenti",
+    "summary_word_counts_en": [
+      39,
+      38,
+      40,
+      41,
+      43,
+      43,
+      42,
+      41,
+      43,
+      41
+    ],
+    "feature_summary_word_counts_en": [
+      40
+    ],
+    "fidelity": "Rilette tutte le 32 card nelle cinque lingue e confrontate con l’INPUT. Conservati autori, cronologia e problemi di Panzer Dragoon Orta; USB, movimenti e compatibilità EyeToy; aggiornamenti, dipendenze, conservazione e tutti i quattro argomenti della feature Steam; quinto episodio, Sonic Team, Compile, bastone e distribuzione di Puyo; numeri, Kudos e produzione di Gotham; trama, cronologia, ricezione e continuità di DMC2; nomi, date, riconoscimento vocale e seguito di Lifeline; tutti i titoli, anni e formati di Disgaea; dettagli tecnici e produttivi dello SP; set, sistemi e vicenda dello studio di Kung Fu Chaos. Nessuna card aggiunta, eliminata, divisa o riordinata.",
+    "naturalness": "Sommari inglesi fra 38 e 43 parole, con feature di 40 parole. Incipit rivisti per includere subito genere e tratto distintivo anche nelle card brevi di Gotham e DMC2. Le card lunghe dello SP mantengono paragrafi interni. Riletti i quattro adattamenti per sintassi, concordanze, lessico e quantità; descrittore camera e titolo della feature adattati, nomi propri e titoli ufficiali conservati.",
+    "expansions": "Sette voci selezionate richiedono quindici nuove card complessive in proposte separate nelle cinque lingue. EyeToy è un accessorio e Steam un servizio: non applicata loro automaticamente la quota delle console. Kung Fu Chaos non riceve automaticamente cinque card per la successiva rilevanza dello studio.",
+    "limits": "Ricerca circoscritta ai problemi, non verifica indipendente universale dell’INPUT. I giorni nordamericani di DMC2 e Kung Fu Chaos non sono dichiarati definitivamente risolti; le proposte usano il mese documentato. I giorni di Lifeline rimangono sorretti da cataloghi concordanti. Non dichiarata visione integrale di manuali, interviste video o filmati dei crediti. Il materiale sul ventesimo anniversario Steam resta quello fornito, senza dichiarare una nuova lettura completa della pagina dinamica. I nomi delle persone sono crediti o ricordi relativi ai prodotti, non nuove biografie da collocare alla nascita. Fonti, attribuzioni, diritti, musica, media e metadati originali conservati negli INPUT."
+  },
+  "validation": {
+    "valid": true,
+    "batch_id": "100-catalog",
+    "completed": true,
+    "entry_count": 10,
+    "card_count_per_language": 32,
+    "language_count": 5,
+    "translated_card_count": 160,
+    "entry_card_counts": {
+      "wikipedia-1715754": 3,
+      "hardware-eyetoy": 2,
+      "steam": 6,
+      "wikipedia-1127169": 2,
+      "wikipedia-875392": 3,
+      "wikipedia-1707772": 3,
+      "wikipedia-5245758": 3,
+      "wikipedia-848794": 3,
+      "workbook-01-07-game-boy-advance-sp": 4,
+      "kung-fu-chaos-2003": 3
+    },
+    "issue_counts": {
+      "wikipedia-1715754": 1,
+      "hardware-eyetoy": 0,
+      "steam": 0,
+      "wikipedia-1127169": 1,
+      "wikipedia-875392": 1,
+      "wikipedia-1707772": 1,
+      "wikipedia-5245758": 1,
+      "wikipedia-848794": 1,
+      "workbook-01-07-game-boy-advance-sp": 1,
+      "kung-fu-chaos-2003": 0
+    },
+    "summary_checks": [
+      {
+        "entry_id": "wikipedia-1715754",
+        "feature_id": null,
+        "english_summary_words": 39
+      },
+      {
+        "entry_id": "hardware-eyetoy",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "steam",
+        "feature_id": null,
+        "english_summary_words": 40
+      },
+      {
+        "entry_id": "steam",
+        "feature_id": "feature-steam-library-ownership",
+        "english_summary_words": 40
+      },
+      {
+        "entry_id": "wikipedia-1127169",
+        "feature_id": null,
+        "english_summary_words": 41
+      },
+      {
+        "entry_id": "wikipedia-875392",
+        "feature_id": null,
+        "english_summary_words": 43
+      },
+      {
+        "entry_id": "wikipedia-1707772",
+        "feature_id": null,
+        "english_summary_words": 43
+      },
+      {
+        "entry_id": "wikipedia-5245758",
+        "feature_id": null,
+        "english_summary_words": 42
+      },
+      {
+        "entry_id": "wikipedia-848794",
+        "feature_id": null,
+        "english_summary_words": 41
+      },
+      {
+        "entry_id": "workbook-01-07-game-boy-advance-sp",
+        "feature_id": null,
+        "english_summary_words": 43
+      },
+      {
+        "entry_id": "kung-fu-chaos-2003",
+        "feature_id": null,
+        "english_summary_words": 41
+      }
+    ],
+    "editorial_review": [
+      "hardware-eyetoy/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "hardware-eyetoy/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "hardware-eyetoy/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "hardware-eyetoy/main/es: main title changed; check that this is a descriptive title and not an altered official name"
+    ],
+    "failures": []
+  },
+  "output_sha256": "01e74238dce555ef08066c4ef6c0cda92c61317c0f2a104c2f3e2c0456aed81e",
+  "root_review": {
+    "manual_fidelity_spot_checks": [
+      {
+        "target_id": "workbook-01-07-game-boy-advance-sp",
+        "card_id": "main:3",
+        "scope": "INPUT e cinque lingue della sola card indicata",
+        "conclusion": "Confronto integrale INPUT e cinque lingue: nessuna perdita sostanziale nella riduzione 105→65 parole EN. Restano 3,5 mm, tutti i precedenti Game Boy, cuffie dedicate o adattatore opzionale, porta condivisa, limite adattatore Nintendo e alternativa di terze parti per uso simultaneo."
+      }
+    ]
+  }
+}

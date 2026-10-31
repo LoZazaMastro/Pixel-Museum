@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "batch": "priority-feature-context-media-03",
+  "created_utc": "2026-10-20T23:33:17.478737+00:00",
+  "status": "Frozen research checkpoint; no images admitted and no master changes.",
+  "entries": [],
+  "candidates": [
+    {
+      "feature_id": "feature-kondo-functional-music",
+      "story_paragraph": 3,
+      "image": {
+        "key": "kondo-loc",
+        "url": "https://blogs.loc.gov/now-see-hear/files/2023/07/kondo.jpg",
+        "source_page": "https://blogs.loc.gov/now-see-hear/2023/08/from-the-national-recording-registry-super-mario-1985/",
+        "width": 1449,
+        "height": 2173,
+        "sha256": "3df86c8503054c834bff2054971ad07621555e666da94433b9de3d5f63e0d998",
+        "verified_utc": "2026-10-20T23:30:58.401176+00:00",
+        "local_research_path": "F:\\Playhub\\PS5\\Pixel Museum\\build\\research\\publishing\\features-context\\batch03\\original-36.jpg"
+      },
+      "identity": "Koji Kondo, explicitly identified by the Library of Congress essay caption.",
+      "rights_review": "Photographer and independent image reuse grant are not supplied on the essay. Library publication does not establish public-domain status. Pending image-rights evidence; not admitted.",
+      "date_note": "The essay publication is2023. This does not establish the portrait capture date."
+    }
+  ],
+  "holds": [
+    {
+      "feature_id": "feature-kazuko-shibuya-pixel-art",
+      "reason": "The FFIII anniversary interview images are native640px or smaller. The1920x660 header is title/banner artwork, not a separate documentary image of the pixel-art process. No enlarged delivery is admitted."
+    },
+    {
+      "feature_id": "feature-ed-smith-design",
+      "reason": "Author-provided documentary photos on the inspected About page are mostly333-640px; the3900x500 ROMchip strip is a journal wordmark, not hardware or a portrait. No semantic or low-resolution substitute admitted."
+    },
+    {
+      "feature_id": "feature-mabel-addis-classroom",
+      "reason": "No new qualified contextual image verified in this pass; prior acquisition hold remains."
+    }
+  ],
+  "research_rejections": [
+    {
+      "url": "https://static.wixstatic.com/media/b5d3be_49dfb0f32061411e819fa8846978d321~mv2.jpg",
+      "width": 3900,
+      "height": 500,
+      "reason": "Title banner or game-art composite; not admitted as documentary evidence of the associated person or production process."
+    },
+    {
+      "url": "https://cache-eu.finalfantasy.com/uploads/content/file/2020/04/22/2898/bn_topics_ff3_200427.jpg",
+      "width": 1920,
+      "height": 660,
+      "reason": "Title banner or game-art composite; not admitted as documentary evidence of the associated person or production process."
+    },
+    {
+      "url": "https://blogs.loc.gov/now-see-hear/files/2023/07/mario.jpg",
+      "width": 2000,
+      "height": 1000,
+      "reason": "Title banner or game-art composite; not admitted as documentary evidence of the associated person or production process."
+    }
+  ],
+  "counts": {
+    "admitted_images": 0,
+    "features_newly_illustrated": 0,
+    "rights_pending_candidates": 1,
+    "editorial_signoffs": 0
+  }
+}

@@ -1,0 +1,294 @@
+{
+  "schema_version": 1,
+  "locale": "fr",
+  "source_language": "en",
+  "publication_status": "validated",
+  "translation_method": "Complete source-bound translations independently read clause-by-clause, including exact-source reused units; explicit semantic repairs retained.",
+  "independent_review": "content/editorial/early-complete-batch-33-fr-translation-review.json",
+  "entries": [
+    {
+      "entry_id": "commodore-64",
+      "source": {
+        "title": "Commodore 64",
+        "subtitle": "A computer with a voice",
+        "summary": "The SID sound chip helped turn a mass-market home computer into a musical instrument.",
+        "body": [
+          "Introduced in 1982, the Commodore 64 brought games, programming and music-making into the same beige case. Its SID audio chip gave composers control over distinctive waveforms and filters, producing a sound that musicians still explore.",
+          "The machine's history includes commercial games, copied magazine programs and the demoscene: communities building audiovisual works to test what the hardware could do. Creative use continued long after the computer ceased being new."
+        ],
+        "story_headings": [
+          "A computer with a distinctive voice",
+          "Making more from familiar hardware"
+        ]
+      },
+      "source_fields_sha256": "3634601e111e0e5be655cb1b2c29f755aea0a3ad8cfcc2420fd9bd1afcae73ba",
+      "translation": {
+        "title": "Commodore 64",
+        "subtitle": "Un ordinateur qui a une voix",
+        "summary": "La puce sonore SID a contribué à transformer un ordinateur domestique grand public en instrument de musique.",
+        "body": [
+          "Présenté en 1982, le Commodore 64 réunissait jeux, programmation et création musicale dans le même boîtier beige. Sa puce audio SID donnait aux compositeurs le contrôle de formes d'onde et de filtres caractéristiques, produisant un son que les musiciens continuent d'explorer.",
+          "L'histoire de la machine comprend jeux commerciaux, programmes recopiés à partir de magazines et demoscene : des communautés créant des œuvres audiovisuelles pour éprouver les possibilités du matériel. Les usages créatifs se sont poursuivis longtemps après que l'ordinateur eut cessé d'être une nouveauté."
+        ],
+        "story_headings": [
+          "Un ordinateur à la voix singulière",
+          "Tirer davantage d'un matériel familier"
+        ]
+      },
+      "translation_sha256": "da348584b25276e5cd334893294418311c4ce677963b98b798b9c5c0fa76f84d"
+    },
+    {
+      "entry_id": "feature-rob-hubbard-c64",
+      "source": {
+        "title": "Rob Hubbard: programming the performance",
+        "subtitle": "",
+        "summary": "Three channels can change their jobs.",
+        "body": [
+          "A bass part and a percussion part need not own separate channels throughout a piece. Explaining his Commodore 64 work in 1986, Hubbard described software switching patches between notes. A channel could serve the bass, then become percussion a little later. The arrangement was written around those handovers. What sounded like several continuing parts depended on their events fitting together without requiring more simultaneous notes than the machine supplied. Composition therefore included deciding when one apparent instrument could temporarily make room for another to be heard.",
+          "Hubbard's playback interpreter did more than read a list of pitches. It drove the chip through routines for changing the sound while a note continued. He described generating vibrato in software rather than sacrificing another channel as an oscillator, and switching rapidly from noise to another waveform. A sustained note could contain a sequence of programmed gestures. The performance was thus partly written in the replay code: changing a routine could change the character of an instrument without changing the melody that called for it.",
+          "Looking back in 2001, Hubbard resisted treating a game's release as the birth of every melody inside it. Some pieces had been written years earlier; sometimes a programmer gave specific direction, and sometimes the choice was his. Film and pop music also supplied starting points. This account complicates the idea of music arriving directly from a machine's limitations. A tune could carry an earlier life into a new commission, then be adapted to the practical and expressive demands of another person's game.",
+          "An orchestral arrangement could require subtraction too. For a new version of WAR, Hubbard said he left out its original second part because it did not suit that treatment. He described the result as one interpretation and imagined contrasting alternatives. The account separates a composition from any claim that one recording exhausts it. Chris Abbott's work on the Back In Time projects also enters the story. Moving music beyond the Commodore was a collaboration with its own decisions, not merely replacing electronic tones with supposedly better instruments."
+        ],
+        "story_headings": [
+          "A channel changes roles",
+          "The code bends a note",
+          "A melody has a past",
+          "An arrangement leaves something out"
+        ]
+      },
+      "source_fields_sha256": "8322ecccf051b05a6a0bb4d0815d8b8f72567d2daa96d2d46406c5a23ffccefe",
+      "translation": {
+        "title": "Rob Hubbard : programmer l'interprétation",
+        "subtitle": "",
+        "summary": "Trois canaux peuvent changer de rôle.",
+        "body": [
+          "Une partie de basse et une partie de percussion n'ont pas besoin d'occuper des canaux distincts tout au long d'un morceau. Expliquant son travail sur Commodore 64 en 1986, Hubbard décrivit un logiciel changeant de timbre entre les notes. Un canal pouvait servir à la basse, puis devenir une percussion un peu plus tard. L'arrangement était écrit autour de ces relais. L'impression de plusieurs parties continues dépendait de l'emboîtement de leurs événements sans exiger davantage de notes simultanées que la machine n'en offrait. Composer impliquait donc aussi de décider quand un instrument apparent pouvait temporairement laisser entendre un autre à sa place.",
+          "L'interpréteur de lecture d'Hubbard faisait plus que lire une liste de hauteurs musicales. Il pilotait la puce avec des routines modifiant le son pendant qu'une note se poursuivait. Hubbard décrivit comment il générait le vibrato par logiciel plutôt que de sacrifier un autre canal comme oscillateur, et passait rapidement du bruit à une autre forme d'onde. Une note tenue pouvait contenir une suite de gestes programmés. L'interprétation était ainsi en partie écrite dans le code de lecture : modifier une routine pouvait changer le caractère d'un instrument sans changer la mélodie qui le sollicitait.",
+          "En revenant sur son travail en 2001, Hubbard refusait de considérer la sortie d'un jeu comme la naissance de toutes ses mélodies. Certains morceaux avaient été écrits des années auparavant ; parfois un programmeur donnait des instructions précises, parfois le choix lui appartenait. Cinéma et musique pop fournissaient aussi des points de départ. Ce récit complique l'idée d'une musique naissant directement des limites d'une machine. Une mélodie pouvait apporter sa vie antérieure à une nouvelle commande, puis s'adapter aux exigences pratiques et expressives du jeu d'une autre personne.",
+          "Un arrangement orchestral pouvait lui aussi demander des retraits. Pour une nouvelle version de WAR, Hubbard expliqua avoir écarté la deuxième partie originale parce qu'elle ne convenait pas à ce traitement. Il décrivit le résultat comme une interprétation et imagina des alternatives contrastées. Ce récit distingue une composition de l'idée qu'un seul enregistrement l'épuise. Le travail de Chris Abbott sur les projets Back In Time entre également dans cette histoire. Transporter la musique au-delà du Commodore constituait une collaboration avec ses propres décisions, et non un simple remplacement des sons électroniques par des instruments supposés meilleurs."
+        ],
+        "story_headings": [
+          "Un canal change de rôle",
+          "Le code infléchit une note",
+          "Une mélodie a un passé",
+          "Un arrangement laisse quelque chose de côté"
+        ]
+      },
+      "translation_sha256": "eeffd721ba5f0ec3ea70b398b1841184fe2368802014ba4eb2ceadce0f96d213"
+    },
+    {
+      "entry_id": "feature-loading-screen-culture",
+      "source": {
+        "title": "Making something of the wait",
+        "subtitle": "",
+        "summary": "Artists and programmers fill loading time.",
+        "body": [
+          "Paul Docherty struggled with the complicated artwork behind his first paid loading screen, Leviathan. Rich Hare, who had helped him obtain the job, offered a useful correction: adapt the design to the Commodore instead of copying every detail. The computer's limited picture became a problem of interpretation. An artist had to decide what carried the image and what could change. Docherty later remembered that advice as a turning point, when knowing the machine became part of drawing well for it.",
+          "Druid II gave Docherty a chance to answer an artist he admired. Bob Stevenson's earlier Druid picture set a standard for economical drawing, and Docherty remembered taking particular pride in the sequel's loading screen. He described using enough dithering to blend colours, then varying the technique in later pictures. Deadlines remained tight, but each screen offered another experiment in how a few marks could suggest form. Before the game itself appeared, its illustrator was already giving the player something to look at.",
+          "Paul Hughes traced Freeload to his frustration with slow Commodore tapes. He changed the timing approach so that loading could continue while the main processor did other work. Keeping the screen visible grew into music, animation and scrolling during the wait. His account credits composers Martin Galway, Peter Clarke and Jonathan Dunn, alongside several loading-screen artists. The experience remembered as an Ocean loader joined their work to the code moving data from tape. A utilitarian interval became a small audiovisual production of its own.",
+          "Faster was not always cheaper. Hughes remembered that less expensive duplicating equipment used for Hit Squad budget releases struggled with Freeload's short pulses. He slowed the system down so the tapes could be manufactured reliably. That decision made the wait longer than the existing music, and Jonathan Dunn had to supply a piece lasting another minute. Price, factory equipment and composition met inside one loading sequence. The player heard the consequence of a manufacturing compromise before reaching the game they had bought."
+        ],
+        "story_headings": [
+          "Interpret the picture",
+          "Dithering with a purpose",
+          "The loader makes room",
+          "A cheaper tape needs music"
+        ]
+      },
+      "source_fields_sha256": "293f20aecee1fdc052aa399b7c7b31c7d8ec5e9836e22dca440af2798ef0bc0e",
+      "translation": {
+        "title": "Donner forme à l'attente",
+        "subtitle": "",
+        "summary": "Artistes et programmeurs remplissent le temps de chargement.",
+        "body": [
+          "Paul Docherty peinait sur l'illustration complexe de son premier écran de chargement rémunéré, Leviathan. Rich Hare, qui l'avait aidé à obtenir le travail, lui proposa une correction utile : adapter le dessin au Commodore au lieu d'en copier chaque détail. L'image limitée de l'ordinateur devenait un problème d'interprétation. L'artiste devait décider de ce qui portait l'image et de ce qui pouvait changer. Docherty se souvint ensuite de ce conseil comme d'un tournant, lorsque connaître la machine devint une composante du fait de bien dessiner pour elle.",
+          "Druid II offrit à Docherty l'occasion de répondre à un artiste qu'il admirait. L'image du précédent Druid, par Bob Stevenson, avait fixé une référence de dessin économe, et Docherty se rappelait sa fierté particulière pour l'écran de chargement de la suite. Il décrivit avoir employé assez de tramage pour fondre les couleurs, puis varié la technique dans des images ultérieures. Les délais restaient serrés, mais chaque écran permettait une autre expérience sur la façon dont quelques marques pouvaient suggérer une forme. Avant même que le jeu apparaisse, son illustrateur donnait déjà quelque chose à regarder au joueur.",
+          "Paul Hughes faisait remonter Freeload à sa frustration face à la lenteur des cassettes du Commodore. Il modifia la gestion des temps pour permettre au chargement de se poursuivre pendant que le processeur principal effectuait d'autres tâches. Garder l'écran visible déboucha sur de la musique, de l'animation et du défilement pendant l'attente. Son récit cite les compositeurs Martin Galway, Peter Clarke et Jonathan Dunn, ainsi que plusieurs artistes d'écrans de chargement. L'expérience connue comme un chargeur Ocean associait leur travail au code transférant les données depuis la bande. Un intervalle utilitaire devenait une petite production audiovisuelle à part entière.",
+          "Plus rapide ne signifiait pas toujours moins cher. Hughes se souvenait que les équipements de duplication moins coûteux des éditions à petit prix Hit Squad géraient difficilement les impulsions courtes de Freeload. Il ralentit le système pour que les cassettes puissent être fabriquées de façon fiable. Cette décision allongea l'attente au-delà de la musique existante, et Jonathan Dunn dut fournir un morceau durant une minute de plus. Prix, équipement d'usine et composition se rencontraient dans une même séquence de chargement. Le joueur entendait la conséquence d'un compromis de fabrication avant d'atteindre le jeu qu'il avait acheté."
+        ],
+        "story_headings": [
+          "Interpréter l'image",
+          "Tramer dans un but précis",
+          "Le chargeur fait de la place",
+          "Une cassette moins chère a besoin de musique"
+        ]
+      },
+      "translation_sha256": "930fd7f412ad70e47fb7e22afada9eb676db10167940ce073178d7054104411b"
+    },
+    {
+      "entry_id": "feature-c64-sid-instrument",
+      "source": {
+        "title": "Learning the chip by ear",
+        "subtitle": "",
+        "summary": "SID joins a designer's choices with a reader's experiments.",
+        "body": [
+          "Bob Yannes approached the SID chip as somebody interested in electronic music. In his 1996 interview, he described wanting to put a synthesizer onto one piece of silicon. Time and chip area shaped what survived that ambition. Three complete oscillators took space that might otherwise have supported further features, and a planned pitch table was left for software to supply. The Commodore's voice grew from those choices: music hardware made within a production schedule, with some jobs handed to its programmers.",
+          "The response of a note was chosen by listening. Yannes recalled comparing the envelope behaviour with a Sequential Circuits Pro-1 synthesizer, then selecting a limited set of useful rates. The chip could not offer every possible adjustment, so its designer had to decide which changes musicians would receive. This was an act of instrument making inside the electronics. A register value was also a choice about how a sound begins, holds and fades, turning a restricted control range into a particular set of expressive possibilities.",
+          "Commodore's Programmer's Reference Guide invited readers to begin without being expert musicians or programmers. Its first sound example supplied a short BASIC program and explained the lines individually. The melody became groups of numbers describing pitch and duration; the program read each group, started a note, waited and released it. A reader could type the sequence, save it and hear the result. The printed page connected the chip to a repeatable exercise, making an electronic instrument accessible through ordinary commands and a little patient transcription.",
+          "The guide then returned to that same melody to change its tone. Replacing two control values switched the sawtooth waveform to a triangle, leaving the note data in place. Readers were asked to run the program again and hear the difference. The exercise separated what was played from the character of the instrument playing it. Instead of requiring a new song for every experiment, the manual gave the learner something stable to compare, then made a small edit audible as a change in sound."
+        ],
+        "story_headings": [
+          "A synthesizer on a chip",
+          "Choosing the shape of a note",
+          "Type a melody",
+          "Change two numbers and listen"
+        ]
+      },
+      "source_fields_sha256": "cddb8d55364e7e2ed916f4c8497034e3fed985bfe5dd54b90501a8d5f678e8be",
+      "translation": {
+        "title": "Apprendre à connaître la puce à l'oreille",
+        "subtitle": "",
+        "summary": "Le SID relie les choix d'un concepteur aux expériences d'un lecteur.",
+        "body": [
+          "Bob Yannes aborda la puce SID en amateur de musique électronique. Dans son entretien de 1996, il décrivit son désir de placer un synthétiseur sur un seul morceau de silicium. Le temps et la surface de la puce déterminèrent ce qui subsista de cette ambition. Trois oscillateurs complets occupaient de la place qui aurait pu accueillir d'autres fonctions, et une table de hauteurs prévue fut laissée au logiciel. La voix du Commodore naquit de ces choix : un matériel musical réalisé dans un calendrier de production, avec certaines tâches confiées à ses programmeurs.",
+          "La réponse d'une note fut choisie à l'écoute. Yannes se rappela avoir comparé le comportement de l'enveloppe à celui d'un synthétiseur Sequential Circuits Pro-1, avant de sélectionner un ensemble limité de vitesses utiles. La puce ne pouvait proposer tous les réglages possibles ; son concepteur devait donc choisir les variations offertes aux musiciens. C'était un acte de lutherie au sein de l'électronique. Une valeur de registre constituait aussi un choix sur la manière dont un son commence, se maintient et s'estompe, transformant une plage de contrôle restreinte en possibilités expressives particulières.",
+          "Le Programmer's Reference Guide de Commodore invitait à commencer sans être musicien ou programmeur expert. Son premier exemple sonore proposait un court programme BASIC et expliquait les lignes une à une. La mélodie devenait des groupes de nombres décrivant hauteur et durée ; le programme lisait chaque groupe, déclenchait une note, attendait puis la relâchait. Le lecteur pouvait saisir la séquence, la sauvegarder et écouter le résultat. La page imprimée reliait la puce à un exercice reproductible, rendant un instrument électronique accessible par des commandes ordinaires et un peu de transcription patiente.",
+          "Le guide revenait ensuite à cette même mélodie pour en changer le timbre. Remplacer deux valeurs de contrôle faisait passer l'onde en dents de scie à une onde triangulaire, sans modifier les données des notes. Le lecteur était invité à relancer le programme et à écouter la différence. L'exercice distinguait ce qui était joué du caractère de l'instrument qui le jouait. Plutôt que d'exiger une nouvelle chanson pour chaque expérience, le manuel proposait un élément stable à comparer, puis rendait une petite modification audible sous la forme d'un changement de son."
+        ],
+        "story_headings": [
+          "Un synthétiseur sur une puce",
+          "Choisir la forme d'une note",
+          "Saisir une mélodie",
+          "Changer deux nombres et écouter"
+        ]
+      },
+      "translation_sha256": "1026da892e05b0da7fffa3b20ecb6668d8e71fab8f1ace66d16098fea79dc897"
+    },
+    {
+      "entry_id": "zx-spectrum",
+      "source": {
+        "title": "ZX Spectrum",
+        "subtitle": "A keyboard, a cassette and a new possibility",
+        "summary": "An affordable British microcomputer helped make playing and programming neighbours.",
+        "body": [
+          "Sinclair's ZX Spectrum arrived in 1982. Its compact keyboard and cassette-based software placed a programmable computer within reach of many British households. Games could come from a shop, a magazine listing or someone experimenting at home.",
+          "Its characteristic colour attributes became part of a recognisable graphic style. The wider home-computer scene also supported small publishers and designers whose work did not need to begin inside a console manufacturer."
+        ],
+        "story_headings": [
+          "Programming comes home",
+          "Constraints become a visual language"
+        ]
+      },
+      "source_fields_sha256": "5da212d98bf55e33246537bb4a63fc578ce98d55272e5f7fe050833b4d5f5440",
+      "translation": {
+        "title": "ZX Spectrum",
+        "subtitle": "Un clavier, une cassette et une nouvelle possibilité",
+        "summary": "Un micro-ordinateur britannique abordable contribua à rapprocher le jeu et la programmation.",
+        "body": [
+          "Le ZX Spectrum de Sinclair arriva en 1982. Son clavier compact et ses logiciels sur cassette mirent un ordinateur programmable à la portée de nombreux foyers britanniques. Les jeux pouvaient venir d'un magasin, d'un listing dans une revue ou de quelqu'un qui expérimentait chez lui.",
+          "Ses attributs de couleur caractéristiques participèrent à un style graphique reconnaissable. Plus largement, le milieu de la micro-informatique domestique soutenait aussi de petits éditeurs et des concepteurs dont le travail n'avait pas besoin de commencer chez un fabricant de consoles."
+        ],
+        "story_headings": [
+          "La programmation entre à la maison",
+          "Les contraintes deviennent un langage visuel"
+        ]
+      },
+      "translation_sha256": "2d3ff3c3605427e3dd79253fff00039d73727c98a9f3899f333e71f66e51da28"
+    },
+    {
+      "entry_id": "feature-spectrum-bedroom-networks",
+      "source": {
+        "title": "A cassette leaves the bedroom",
+        "subtitle": "",
+        "summary": "Home experiments become shared work.",
+        "body": [
+          "Steve Wetherill remembered learning to program in an unheated Barnsley bedroom. His mother had bought him a Spectrum and a small television; a cassette held the assembler he needed to write code. A crash could mean rewinding and loading it again. Borrowing the family's colour set meant competing with everyone else's viewing. In his account, the route into games passed through ordinary domestic arrangements: money found for a machine, space borrowed from a household and evenings spent waiting for a tape to finish.",
+          "A demonstration could travel where its maker had never worked. Wetherill recalled answering magazine advertisements by posting a cassette protected between pieces of cardboard. His scrolling platformer secured an interview at Software Projects in Liverpool in early 1984. Another candidate was Stoo Fotheringham, who later moved from programming into pixel art. Wetherill's account follows that meeting into shared accommodation and offices in a former hosiery factory. The bedroom was a starting place; a postal package opened the way to colleagues, employers and another city.",
+          "Bob Pape's demonstration tape carried a rejected idea as well as a job application. He had made additions to The Quill adventure system, including text compression and scrolling, but its makers were uninterested. He put those experiments alongside other work and sent them to Catalyst Coders. The tape helped him obtain the Rampage commission. Remembering it in 1997, Pape described a practical portfolio assembled from things he had already tried. An unsuccessful approach to one company became evidence of useful skills for another.",
+          "Pape remembered making Spectrum R-Type alongside programmers handling other versions in a Fareham office. Its colour also depended on a technical choice: characters moved in steps while the background scrolled by pixels. He credited Mark Jones's graphics and Rob Hylands's sound driver elsewhere in the interview. The conversion brought together distinct kinds of knowledge about the same small machine. Behind the image of the solitary bedroom programmer stood artists, specialists and fellow developers, sharing the work that turned an arcade game into a home version."
+        ],
+        "story_headings": [
+          "The household supplies a workshop",
+          "A demo travels by post",
+          "A rejected experiment finds work",
+          "The bedroom leads to colleagues"
+        ]
+      },
+      "source_fields_sha256": "8908995902d77d0957c0fea4c67ead08755bd68801cb66c8c93181bc6617555e",
+      "translation": {
+        "title": "Une cassette quitte la chambre",
+        "subtitle": "",
+        "summary": "Les expériences domestiques deviennent un travail partagé.",
+        "body": [
+          "Steve Wetherill se souvenait d'avoir appris à programmer dans une chambre non chauffée de Barnsley. Sa mère lui avait acheté un Spectrum et un petit téléviseur ; une cassette contenait l'assembleur dont il avait besoin pour écrire du code. Un plantage pouvait obliger à rembobiner puis à recharger le programme. Emprunter le téléviseur couleur familial supposait de disputer son usage aux autres téléspectateurs de la maison. Dans son récit, le chemin vers les jeux passait par des arrangements domestiques ordinaires : trouver l'argent pour une machine, prendre un peu de place dans le foyer et passer des soirées à attendre la fin d'un chargement sur bande.",
+          "Une démonstration pouvait voyager là où son auteur n'avait jamais travaillé. Wetherill se rappelait répondre aux annonces des magazines en envoyant une cassette protégée entre des morceaux de carton. Son jeu de plateformes à défilement lui valut un entretien chez Software Projects, à Liverpool, au début de 1984. Un autre candidat était Stoo Fotheringham, qui passa plus tard de la programmation au graphisme en pixels. Le récit de Wetherill suit cette rencontre jusqu'à un logement partagé et à des bureaux dans une ancienne usine de bonneterie. La chambre était un point de départ ; un colis postal ouvrit la voie à des collègues, à des employeurs et à une autre ville.",
+          "La cassette de démonstration de Bob Pape portait une idée refusée autant qu'une candidature. Il avait ajouté au système d'aventures The Quill des fonctions de compression du texte et de défilement, mais ses créateurs n'étaient pas intéressés. Il joignit ces expériences à d'autres travaux et les envoya à Catalyst Coders. La cassette l'aida à obtenir la commande de Rampage. En évoquant ce souvenir en 1997, Pape décrivait un portfolio concret, constitué de choses déjà essayées. Une démarche infructueuse auprès d'une entreprise devint la preuve de compétences utiles à une autre.",
+          "Pape se souvenait d'avoir réalisé R-Type sur Spectrum dans un bureau de Fareham, aux côtés de programmeurs chargés des autres versions. Ses couleurs dépendaient aussi d'un choix technique : les personnages avançaient par pas tandis que le décor défilait pixel par pixel. Ailleurs dans l'entretien, il attribuait les graphismes à Mark Jones et le pilote sonore à Rob Hylands. La conversion réunissait différentes connaissances d'une même petite machine. Derrière l'image du programmeur solitaire dans sa chambre se trouvaient des artistes, des spécialistes et d'autres développeurs, partageant le travail nécessaire pour transformer un jeu d'arcade en version domestique."
+        ],
+        "story_headings": [
+          "Le foyer fournit un atelier",
+          "Une démo voyage par la poste",
+          "Une expérience refusée trouve du travail",
+          "La chambre mène aux collègues"
+        ]
+      },
+      "translation_sha256": "5590080d47e4d76bdf0f5003e3a801b036259ad8edfdbdcda2b9bd7b8c6a4af2"
+    },
+    {
+      "entry_id": "workbook-05-28-oil-panic",
+      "source": {
+        "title": "Oil Panic",
+        "subtitle": "Oil Panic Folds Handheld Play into Two Screens",
+        "summary": "Nintendo released Oil Panic in Japan on May 28, 1982, the first Game & Watch title in the Multi Screen line.",
+        "body": [
+          "Nintendo released Oil Panic in Japan on May 28, 1982, the first Game & Watch title in the Multi Screen line. Its clamshell form divides action between two LCD displays and turns a physical limitation into game structure. On the upper screen the character catches drops of oil; on the lower one he must dump them without hitting people. It is not merely a new container. The movement of attention and action between the two screens shows how hardware form can become level design directly.",
+          "The Multi Screen hinge does more than protect the displays when the device is closed. It divides visual space into two planes and forces the player to shift attention quickly between them. Oil Panic uses this separation as part of the challenge: collecting above and dumping below are linked but not simultaneous actions. Hardware imposes a rhythm of attention. Nintendo discovers a relationship that will return decades later with DS: two screens can be more than extra surface; they can organize different functions and timing.",
+          "On the upper display, the character must move under falling drops and fill a container. When it is time to empty it, attention shifts to the lower screen, where a mistake can hit people instead of the correct target. The game creates a small working-memory problem: players must remember remaining capacity while anticipating the next movements. LCD segments are fixed and cannot draw free animation, yet combinations of predetermined positions still produce readable, increasing rhythm.",
+          "Multi Screen normalizes the idea that a handheld can close, protect its displays and distribute information across two surfaces. Nintendo would return to a similar logic with Nintendo DS, although using far more advanced technology and functions. There is no simple line reducing DS to Oil Panic, but the design continuity matters. Nintendo experimented early with physical form as part of the experience rather than mere packaging. Oil Panic therefore remains a small example of hardware design generating new possibilities for play."
+        ],
+        "story_headings": [
+          "Oil Panic Folds Handheld Play into Two Screens",
+          "The Hinge Becomes a Rule",
+          "The Character Lives Between Two Tasks",
+          "A Portable Form That Anticipates Later Generations"
+        ]
+      },
+      "source_fields_sha256": "106ae654474006591942e3d7c7f1b3efc3c9460e8ddd645b513bff12b1730378",
+      "translation": {
+        "title": "Oil Panic",
+        "subtitle": "Oil Panic déploie le jeu portable sur deux écrans",
+        "summary": "Nintendo publia Oil Panic au Japon le 28 mai 1982, premier Game & Watch de la gamme Multi Screen.",
+        "body": [
+          "Nintendo publia Oil Panic au Japon le 28 mai 1982, premier Game & Watch de la gamme Multi Screen. Son boîtier à clapet répartit l'action entre deux écrans LCD et transforme une limite physique en structure de jeu. Sur l'écran supérieur, le personnage recueille des gouttes d'huile ; sur l'écran inférieur, il doit les déverser sans toucher les gens. Ce n'est pas un simple nouvel écrin. Le déplacement de l'attention et de l'action entre les deux écrans montre comment la forme du matériel peut directement devenir conception des niveaux.",
+          "La charnière des Multi Screen ne sert pas seulement à protéger les écrans lorsque l'appareil est fermé. Elle divise l'espace visuel en deux plans et oblige le joueur à déplacer rapidement son attention de l'un à l'autre. Oil Panic intègre cette séparation au défi : recueillir en haut et déverser en bas sont des actions liées, mais non simultanées. Le matériel impose un rythme à l'attention. Nintendo découvre une relation qui reviendra des décennies plus tard avec la DS : deux écrans peuvent être davantage qu'une surface supplémentaire et organiser des fonctions et des rythmes différents.",
+          "Sur l'écran supérieur, le personnage doit se placer sous les gouttes qui tombent et remplir un récipient. Au moment de le vider, l'attention passe à l'écran inférieur, où une erreur peut toucher les gens au lieu de la bonne cible. Le jeu crée un petit problème de mémoire de travail : il faut retenir la capacité restante tout en anticipant les mouvements suivants. Les segments LCD sont fixes et ne permettent pas de dessiner librement des animations ; pourtant, les combinaisons de positions prédéfinies produisent un rythme lisible qui s'intensifie.",
+          "Multi Screen rend familière l'idée qu'un appareil portable puisse se fermer, protéger ses écrans et répartir l'information sur deux surfaces. Nintendo reviendra à une logique semblable avec la Nintendo DS, mais avec des technologies et des fonctions bien plus avancées. Aucune filiation simple ne permet de réduire la DS à Oil Panic, mais la continuité de conception compte. Nintendo expérimenta très tôt la forme physique comme partie de l'expérience plutôt que comme simple emballage. Oil Panic reste ainsi un petit exemple de conception matérielle engendrant de nouvelles possibilités de jeu."
+        ],
+        "story_headings": [
+          "Oil Panic déploie le jeu portable sur deux écrans",
+          "La charnière devient une règle",
+          "Le personnage vit entre deux tâches",
+          "Une forme portable qui annonce les générations suivantes"
+        ]
+      },
+      "translation_sha256": "406bd5bcb7aeeb24e6ca850ee2bc20e5e93022064994e8a9a0175349814b20c6"
+    },
+    {
+      "entry_id": "wikipedia-166791",
+      "source": {
+        "title": "Pole Position",
+        "subtitle": "",
+        "summary": "Pole Position is a 1982 racing video game developed and published by Namco for arcades.",
+        "body": [
+          "Pole Position is a 1982 racing video game developed and published by Namco for arcades. It was released by Atari, Inc. in North America. It was developed as a successor of Namco's earlier arcade racing electro-mechanical games, like F-1 (1976), whose designer Sho Osugi worked on Pole Position.",
+          "The game was a major commercial success in arcades. After becoming the highest-grossing arcade game of 1982 in Japan, it went on to become the most popular coin-operated arcade video game internationally in 1983. In North America, it was the highest-grossing arcade game for both 1983 and 1984 and still one of the top five in 1985.",
+          "Pole Position spawned ports, sequels, and a Saturday morning cartoon, although the cartoon has little in common with the game. The game established the conventions of the racing genre and its success inspired many imitators. Pole Position is regarded as one of the most influential video games of all time, and is considered to be the most influential racing game, as well as one of the most important titles from the golden age of arcade video games. A sequel, Pole Position II, was released in 1983 with four tracks instead of one."
+        ],
+        "story_headings": []
+      },
+      "source_fields_sha256": "1a3d50241a8f9cd22e67a3ae365f70c5f8cc351f97a9bde245e040cf07394e7c",
+      "translation": {
+        "title": "Pole Position",
+        "subtitle": "",
+        "summary": "Pole Position est un jeu vidéo de course de 1982, développé et publié par Namco pour les salles d'arcade.",
+        "body": [
+          "Pole Position est un jeu vidéo de course de 1982, développé et publié par Namco pour les salles d'arcade. Il fut publié par Atari, Inc. en Amérique du Nord. Il fut conçu comme successeur des anciens jeux de course électromécaniques de Namco pour les salles d'arcade, tels que F-1 de 1976, dont le concepteur Sho Osugi travailla sur Pole Position.",
+          "Le jeu connut un grand succès commercial en arcade. Après avoir été le jeu d'arcade ayant généré le plus de recettes au Japon en 1982, il devint le jeu vidéo d'arcade à monnayeur le plus populaire à l'échelle internationale en 1983. En Amérique du Nord, il fut le jeu d'arcade aux recettes les plus élevées en 1983 comme en 1984 et figurait encore parmi les cinq premiers en 1985.",
+          "Pole Position donna naissance à des adaptations, des suites et un dessin animé diffusé le samedi matin, bien que celui-ci ait peu en commun avec le jeu. Il établit les conventions du genre de la course, et son succès inspira de nombreux imitateurs. Pole Position est considéré comme l'un des jeux vidéo les plus influents de tous les temps, comme le jeu de course le plus influent et comme l'un des titres majeurs de l'âge d'or de l'arcade. Une suite, Pole Position II, sortit en 1983 avec quatre circuits au lieu d'un."
+        ],
+        "story_headings": []
+      },
+      "translation_sha256": "54e9dea4799b230b5956619c34837517742e369f5dbb4cc8f47d521b0c53b8db"
+    }
+  ]
+}

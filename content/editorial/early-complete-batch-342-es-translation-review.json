@@ -1,0 +1,101 @@
+{
+  "status": "PASS",
+  "locale": "es",
+  "entries": [
+    {
+      "entry_id": "workbook-03-01-aperture-desk-job",
+      "source_fields_sha256": "42cde19f76fad4ba2e6afae2a7bca24711fd5dd100af499b90c16d862746515e",
+      "translation_sha256": "137c676255e836c796250b9ea6766bb21a6bd6956961b9fd8b8792673d4569b2",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch342/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "758e327e8bd9d54706a353ef7174e31ca09c070b1dccd7b22603a913b9255274"
+    },
+    {
+      "entry_id": "wikipedia-44098635",
+      "source_fields_sha256": "85552f73e773622af8676f6622007f4e226f0704c39fea4589749513fd8f5e36",
+      "translation_sha256": "69d0dbd2ba3b6f554d7bc58613f7a2e780f79323ace94b2894ea5760a0584772",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch342/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "758e327e8bd9d54706a353ef7174e31ca09c070b1dccd7b22603a913b9255274"
+    },
+    {
+      "entry_id": "wikipedia-57651372",
+      "source_fields_sha256": "7734d27eb48e38002bebd94f03532f7a0093f3db361f6f7275636c752425f599",
+      "translation_sha256": "ba82ad9a2990c21aec5bad7fc25cb41540145f116131323d271266ba7436bbae",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch342/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "758e327e8bd9d54706a353ef7174e31ca09c070b1dccd7b22603a913b9255274"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "/root/category_audit",
+    "actual_receipt": "build/research/catalog-2022-chronological/march-three-private/independent-category-audit-approval.json",
+    "actual_receipt_sha256": "bca9339497e0ece149896f7fa5061b56a2d23c0ce6b97e9fb5553bf85194d20c",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "/root/category_audit",
+      "index_sha256": "0991ddc3ee84edaef8de688eec35cbe217cc010ff4c2deddca51ba2f13681e79",
+      "scope": {
+        "english_paragraphs_actually_read": 13,
+        "localized_paragraphs_actually_read": 52,
+        "languages": [
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "images_actually_viewed": 20,
+        "final_contact_sheets_actually_viewed": 3,
+        "new_cue_metadata_actually_read": 6
+      },
+      "findings": [],
+      "primary_sources_read": [
+        {
+          "url": "https://store.steampowered.com/app/1902490/",
+          "finding": "Valve originalMarch1,2022 freeplayableshort forSteamDeck andPortalworld; controls-teaching framing matches candidate."
+        },
+        {
+          "url": "https://www.gran-turismo.com/us/gt7/news/00_1852636.html",
+          "finding": "Actualupdate1.72 datedOctober15,2026 confirmed."
+        },
+        {
+          "url": "https://www.gran-turismo.com/gb/gt7/tracklist/",
+          "finding": "Primaryindexedpage explicitly42locations122layouts asofOctober2026; sourceHTMLJavaScriptinitialrender lacked data, not used to invent count."
+        },
+        {
+          "url": "https://www.gran-turismo.com/us/gt7/carlist/id/car1539",
+          "finding": "Officialprimaryinventory header explicitlyNo.ofCars580 asofOctober2026; exactcount supportscandidate despitegeneralproductcopy sayingmorethan580."
+        },
+        {
+          "url": "https://music.apple.com/us/album/gran-turismo-7-original-soundtrack-best-lap-vol-1/1721847632",
+          "finding": "Official2023BestLapVol1 album,80songs,December22,SIEownership; threeNexToneTopicmetadata correctlyqualify original2022game music on2023album."
+        }
+      ],
+      "review_notes": [
+        "All13EN and52locale bodies readfully;7GT7paragraphs fullytranslated. FiniteMetacriticuserratingcorrection andcurrentinventorydate correct. No unsupportedSonyrecordclaim retained.",
+        "All20images actuallyviewed. SevennewPS5Sony2560x1440 images showactual2022gameplay/Cafe/garage/licensecoach/worldcircuitUI relevant to allsevenchapters; cleancovers, ApertureValveoriginalscenes,Tunicoriginalgameplay.",
+        "SixnewpublicAACmetadata read:3shortMarch2022Aperturegames528archives honestlyindependent,3officialGT7NexTone2023album cues. Tunic61existingtracks not redundantlyqueried. Noaudiofilesdownloaded orconsoleplaybackclaim."
+      ],
+      "owners": [
+        {
+          "entry_id": "workbook-03-01-aperture-desk-job",
+          "source_sha256": "2ffb8e8bba8733dbf90ed27320df84f80bc73362217c30e2ed36f18a2fc200bf",
+          "target_sha256": "924e456aab2aedcd4f3e798f586ca513f38f613e4e9dba832b1ad27f9d39b63f",
+          "contact_sha256": "c427835d9090fabb6412ea64a6dc714c5c8013e603efb0422a918c5473ba5c12"
+        },
+        {
+          "entry_id": "wikipedia-44098635",
+          "source_sha256": "4de451bf83781e2e92b30137e17e197a92ce57e2bdeb05bed7751d4aa718150f",
+          "target_sha256": "38766a2220a12a49a1c15893074ffd83a49e8ae8007caa61ea0a15ddc6372604",
+          "contact_sha256": "e5dce0c5e9bab4367399a3dca85da02741d41d4eeb685232678b15db58bb92a8"
+        },
+        {
+          "entry_id": "wikipedia-57651372",
+          "source_sha256": "730ed43faccf8bc26dbb07a4e631c97ba940310484493be0b1fb3052cbcdc441",
+          "target_sha256": "45da877258a4f81ae6123f7dc5488d31fc9e37ff156dc367d257019c4cde8c27",
+          "contact_sha256": "b59c82662b1ab4a66c05f82daca93eaac1a2dbdaae52e4323bea90a65331bbfd"
+        }
+      ],
+      "production_writes": false,
+      "authorization": "Root admission remains separate."
+    }
+  }
+}

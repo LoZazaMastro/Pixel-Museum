@@ -1,0 +1,276 @@
+{
+  "schema_version": 1,
+  "reviewed": "2026-10-21",
+  "review_type": "independent_agent_source_schema_prose_and_semantic_placement_review",
+  "batch_sha256": "e95eab047b35a6469d5438c30cc64b8927bca957cc0fb02a588357f7fa144722",
+  "catalog_sha256_snapshot": "959060a6290ec1990226c4ca3ce5a240b7e1a4385fb380501839f10e19208d6e",
+  "status": "text_review_passed_with_explicit_placement_and_media_limits",
+  "features": 8,
+  "cards": 32,
+  "body_words": 2735,
+  "source_publications": 18,
+  "source_budget_maximum": 200,
+  "all_allocations_within_limit": true,
+  "verbatim_quoted_words": 0,
+  "findings": [
+    {
+      "id": "C01",
+      "severity": "high",
+      "status": "resolved",
+      "detail": "Woods card4 no longer assigns Jerz chronology to the Woods-only source budget; correction moved into Jerz card2, 197 charged words."
+    },
+    {
+      "id": "C02",
+      "severity": "medium",
+      "status": "resolved",
+      "detail": "Dabney route purchase no longer asserted to occur after leaving Nutting. Visible salesman name avoids silently normalising the transcript spelling."
+    },
+    {
+      "id": "C03",
+      "severity": "low",
+      "status": "resolved",
+      "detail": "Pitfall advice now says plan a route; original manual does not explicitly ask the reader to map terrain."
+    },
+    {
+      "id": "C04",
+      "severity": "low",
+      "status": "resolved",
+      "detail": "Fairchild locators now explicitly one-based PDF6/7 and printed4/5."
+    },
+    {
+      "id": "C05",
+      "severity": "production_gate",
+      "status": "pending",
+      "detail": "Three distinct proposals require explicit placement and contextual media review. All32 selected assets remain null; public source access grants no reproduction permission."
+    }
+  ],
+  "entries": [
+    {
+      "feature_id": "feature-education-timesharing",
+      "body_sha256": "15ba8c8206edf7fe7cb26e3334601d7d65eb10f916d8b1d4d5ee334c7768c10f",
+      "cards": 4,
+      "body_words": 334,
+      "content_decision": "text_admissible_after_resolved_corrections",
+      "placement_decision": "distinct_proposal_pending_media_and_explicit_admission",
+      "parent_id": null,
+      "semantic_reason": "DTSS infrastructure, shared access and student maintenance are distinct from the existing Minnesota Oregon Trail classroom account; related link cannot imply DTSS compatibility.",
+      "max_source_budget_words": 193,
+      "selected_media": 0,
+      "native_layout_signoff": false
+    },
+    {
+      "feature_id": "feature-plato-community",
+      "body_sha256": "c7e7bf9376b47b94ef7a4061d3c9fc322dccd4c3de7233cf40ebe05fd1003842",
+      "cards": 4,
+      "body_words": 335,
+      "content_decision": "text_admissible_after_resolved_corrections",
+      "placement_decision": "distinct_proposal_pending_media_and_explicit_admission",
+      "parent_id": null,
+      "semantic_reason": "PLATO terminal/channel/social resource rules have no current destination; existing games mentioning PLATO do not duplicate this institutional interface subject.",
+      "max_source_budget_words": 190,
+      "selected_media": 0,
+      "native_layout_signoff": false
+    },
+    {
+      "feature_id": "feature-colossal-cave-language",
+      "body_sha256": "ffa2704dfb5e0d090eac45bc6afaaf09be520c4c073bec10a081ec039c377aed",
+      "cards": 4,
+      "body_words": 344,
+      "content_decision": "text_admissible_after_resolved_corrections",
+      "placement_decision": "attach_one_parent",
+      "parent_id": "wikipedia-261798",
+      "semantic_reason": "Recovered original code and Woods testimony deepen existing three-paragraph reference; no second Adventure stop.",
+      "max_source_budget_words": 197,
+      "selected_media": 0,
+      "native_layout_signoff": false
+    },
+    {
+      "feature_id": "feature-mud-online-identity",
+      "body_sha256": "dacaf7eb9f76582c6df2c6eda6f3c278a79cba227cffae8a0e08c33fc6492595",
+      "cards": 4,
+      "body_words": 345,
+      "content_decision": "text_admissible_after_resolved_corrections",
+      "placement_decision": "attach_one_parent",
+      "parent_id": "mud",
+      "semantic_reason": "Concrete version, shared state and observation powers expand existing two-paragraph MUD original; preserve original wording.",
+      "max_source_budget_words": 197,
+      "selected_media": 0,
+      "native_layout_signoff": false
+    },
+    {
+      "feature_id": "feature-joyce-weisbecker-work",
+      "body_sha256": "a21fc111be4fdbd29b30cbf9be349026df5545084b9a141d5a3126494f979731",
+      "cards": 4,
+      "body_words": 345,
+      "content_decision": "text_admissible_after_resolved_corrections",
+      "placement_decision": "distinct_proposal_pending_media_and_explicit_admission",
+      "parent_id": null,
+      "semantic_reason": "Contracts/payment/archive afterlife are a distinct creator/work subject; full title/ID scan found no Joyce or Studio II destination. This is a proposal, not a universal priority or console-release claim.",
+      "max_source_budget_words": 199,
+      "selected_media": 0,
+      "native_layout_signoff": false
+    },
+    {
+      "feature_id": "feature-activision-credit",
+      "body_sha256": "157c9e73ac21190d07337ee9850f1250a9a9c31cfe07ec2684350cd1e68e8728",
+      "cards": 4,
+      "body_words": 345,
+      "content_decision": "text_admissible_after_resolved_corrections",
+      "placement_decision": "attach_one_parent",
+      "parent_id": "wikipedia-445630",
+      "semantic_reason": "Author-reader/manual/club relationship expands Pitfall reference beyond existing mechanics/production synopsis; VCS is a cross-link.",
+      "max_source_budget_words": 199,
+      "selected_media": 0,
+      "native_layout_signoff": false
+    },
+    {
+      "feature_id": "feature-coin-op-location-test",
+      "body_sha256": "b70f53308ae6ac0c32d578c6288e1192cb396ff198ab8010b416ea30f4f1faef",
+      "cards": 4,
+      "body_words": 342,
+      "content_decision": "text_admissible_after_resolved_corrections",
+      "placement_decision": "attach_one_parent",
+      "parent_id": "pong",
+      "semantic_reason": "Route ownership, component wear and operator maintenance add specifics beyond the seven-section Pong narrative. Attach once to Pong; Computer Space supplies context, not a duplicate feature copy.",
+      "max_source_budget_words": 199,
+      "selected_media": 0,
+      "native_layout_signoff": false
+    },
+    {
+      "feature_id": "feature-programmable-living-room",
+      "body_sha256": "2be37a4639dc3c7b9fcefe72269f0d6d31b7255fe560c587f84267fc5d81def7",
+      "cards": 4,
+      "body_words": 345,
+      "content_decision": "text_admissible_after_resolved_corrections",
+      "placement_decision": "attach_one_parent",
+      "parent_id": "atari-vcs",
+      "semantic_reason": "Manual-guided household operation differs from existing VCS hardware summary and Channel F engineering/team feature. Attach once to VCS; cross-link Channel F/Videocarts.",
+      "max_source_budget_words": 199,
+      "selected_media": 0,
+      "native_layout_signoff": false
+    }
+  ],
+  "local_pdf_evidence_sha256": {
+    "alcorn.pdf": "b7a73814326591ab3b824ee8ca0c4f43656285e02b7cbf0f5a13bd43117c0853",
+    "dabney.pdf": "a15196e32515b6be38c150ecb90cf32d640e970ed5b9402306d717daefb6c165",
+    "fairchild.pdf": "d7164a1d7cca331026d7a4255fedad2ff81ee6d14e6fc65e50006e3d5c1e16ae",
+    "pitfall.pdf": "7838fbb5b3c2e3a5d58592cfe0019c12a57a8578844e0c3165a1e8aadd13a922",
+    "vcs.pdf": "b82469f8eb72cee5aed095807b1f720933a7a306b7baee461be917c4fb209483"
+  },
+  "source_review_notes": [
+    "Specific Dartmouth/Illinois/Woolley/Bartle/Jerz/Woods/Essex sections independently inspected; no generic homepages substituted.",
+    "The Strong Joyce page fetched directly after web timeout; finding aid contents and rights restriction independently checked. Inventory does not assert the underlying document contents were read.",
+    "CHM originals downloaded unchanged; Dabney printed12/15 and Alcorn printed14-16 checked.",
+    "Original VCS raster PDF pages2-5, Pitfall pages2-6 and Fairchild PDF6-7 rendered and visually inspected. Source copies are research evidence, not admitted app media."
+  ],
+  "master_or_package_written": false,
+  "playhub_originals_written": false,
+  "human_editorial_signoff": false,
+  "native_layout_signoff": false,
+  "before_metadata_copyedit_batch_sha256": "a04a16c6a0a68c20c7857047c5b162a317239b8d823331433b189c9a45f25a9a",
+  "root_metadata_copyedit": {
+    "body_or_heading_changes": 0,
+    "source_or_citation_changes": 0,
+    "summary_ids": [
+      "feature-colossal-cave-language",
+      "feature-mud-online-identity",
+      "feature-joyce-weisbecker-work",
+      "feature-activision-credit",
+      "feature-programmable-living-room"
+    ],
+    "reason": "Tighten summaries while independently charging hyphenated/apostrophe forms under both counters.",
+    "prior_frozen_source": "build/research/editorial-summary-copyedit/editorial-computing-networks-02.json"
+  },
+  "source_budget_allocations": [
+    {
+      "feature_id": "feature-education-timesharing",
+      "publication": "dartmouth64",
+      "charged_words": 195
+    },
+    {
+      "feature_id": "feature-education-timesharing",
+      "publication": "dartmouth-timeline",
+      "charged_words": 106
+    },
+    {
+      "feature_id": "feature-education-timesharing",
+      "publication": "dartmouth-library",
+      "charged_words": 105
+    },
+    {
+      "feature_id": "feature-plato-community",
+      "publication": "illinois-plato",
+      "charged_words": 194
+    },
+    {
+      "feature_id": "feature-plato-community",
+      "publication": "woolley94",
+      "charged_words": 194
+    },
+    {
+      "feature_id": "feature-colossal-cave-language",
+      "publication": "jerz07",
+      "charged_words": 196
+    },
+    {
+      "feature_id": "feature-colossal-cave-language",
+      "publication": "woods01",
+      "charged_words": 193
+    },
+    {
+      "feature_id": "feature-mud-online-identity",
+      "publication": "bartle90",
+      "charged_words": 196
+    },
+    {
+      "feature_id": "feature-mud-online-identity",
+      "publication": "bartle85",
+      "charged_words": 102
+    },
+    {
+      "feature_id": "feature-mud-online-identity",
+      "publication": "essex17",
+      "charged_words": 100
+    },
+    {
+      "feature_id": "feature-joyce-weisbecker-work",
+      "publication": "strong-joyce",
+      "charged_words": 199
+    },
+    {
+      "feature_id": "feature-joyce-weisbecker-work",
+      "publication": "joyce-finding-aid",
+      "charged_words": 190
+    },
+    {
+      "feature_id": "feature-activision-credit",
+      "publication": "crane-gdg",
+      "charged_words": 197
+    },
+    {
+      "feature_id": "feature-activision-credit",
+      "publication": "pitfall-manual",
+      "charged_words": 198
+    },
+    {
+      "feature_id": "feature-coin-op-location-test",
+      "publication": "dabney12",
+      "charged_words": 196
+    },
+    {
+      "feature_id": "feature-coin-op-location-test",
+      "publication": "alcorn08",
+      "charged_words": 199
+    },
+    {
+      "feature_id": "feature-programmable-living-room",
+      "publication": "atari-vcs77",
+      "charged_words": 197
+    },
+    {
+      "feature_id": "feature-programmable-living-room",
+      "publication": "fairchild76",
+      "charged_words": 192
+    }
+  ]
+}

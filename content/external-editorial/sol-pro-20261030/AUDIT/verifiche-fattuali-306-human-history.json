@@ -1,0 +1,665 @@
+{
+  "batch_id": "306-human-history",
+  "sources": [
+    {
+      "source_id": "web_cern",
+      "title": "A short history of the Web — CERN",
+      "url": "https://home.cern/science/computing/the-birth-of-the-web/short-history-web/",
+      "verification_scope": "Cronologia istituzionale letta: proposta del 1989, server e browser operativi nel 1990, software distribuito ai colleghi nel marzo 1991 e diffuso su Internet in agosto, uso libero dal 30 aprile 1993."
+    },
+    {
+      "source_id": "web_w3c",
+      "title": "A Little History of the World Wide Web — W3C",
+      "url": "https://www.w3.org/History.html",
+      "verification_scope": "Cronologia del progetto consultata: rilascio limitato del browser a marzo 1991, file disponibili in rete via FTP ad agosto; i post del 6 agosto documentano una comunicazione, non autorizzano da soli a datare quel giorno la prima disponibilità."
+    },
+    {
+      "source_id": "web_html",
+      "title": "W3C — History",
+      "url": "https://www.w3.org/about/history/",
+      "verification_scope": "Contesto tecnico primario su HTML come formato di documenti e collegamenti. La capacità multimediale viene descritta come evoluzione del Web, senza retrodatare audio e video incorporati al progetto del 1989."
+    },
+    {
+      "source_id": "hubble_launch",
+      "title": "Hubble History Timeline — NASA",
+      "url": "https://science.nasa.gov/mission/hubble/overview/hubble-timeline/hubble-history-timeline-full-text/",
+      "verification_scope": "Cronologia ufficiale: lancio il 24 aprile 1990; osservazioni e missioni di manutenzione distinte dalla data di lancio."
+    },
+    {
+      "source_id": "hubble_mission",
+      "title": "Hubble Space Telescope — NASA",
+      "url": "https://science.nasa.gov/mission/hubble/",
+      "verification_scope": "Pagina ufficiale della missione consultata, con attività scientifiche del 2026. L’affermazione di operatività è controllata rispetto al materiale attuale, non soltanto alla sintesi storica."
+    },
+    {
+      "source_id": "hubble_instruments",
+      "title": "Hubble Instruments — NASA",
+      "url": "https://science.nasa.gov/mission/hubble/observatory/design/instruments/",
+      "verification_scope": "Spiegazione ufficiale delle camere, degli spettrografi e dei Fine Guidance Sensors; chiarita la funzione sia di guida sia scientifica dei sensori."
+    },
+    {
+      "source_id": "hubble_current",
+      "title": "About Hubble — NASA",
+      "url": "https://science.nasa.gov/mission/hubble/overview/about-hubble/",
+      "verification_scope": "Elenco ufficiale degli strumenti: ACS, COS, STIS, WFC3 e gruppo FGS; NICMOS è esplicitamente inattivo. Il conteggio editoriale di cinque riguarda i sistemi principali attivi, includendo FGS come gruppo."
+    },
+    {
+      "source_id": "hubble_optics",
+      "title": "Hubble overview — ESA",
+      "url": "https://www.esa.int/Science_Exploration/Space_Science/Hubble_overview",
+      "verification_scope": "Specchio di 2,4 metri e intervallo ultravioletto-visibile-infrarosso. La pagina conta quattro strumenti scientifici senza includere FGS: non confusa con il conteggio di cinque sistemi comprensivo dei sensori."
+    },
+    {
+      "source_id": "twin_release",
+      "title": "Twin Peaks premieres on ABC — HISTORY",
+      "url": "https://www.history.com/this-day-in-history/april-8/twin-peaks-premieres-on-abc",
+      "verification_scope": "Pagina consultata: prima trasmissione ABC l’8 aprile 1990, creatori e ciclo originale. Non ripresa la spiegazione causale della rivelazione dell’assassino presente nell’articolo, estranea al testo fornito."
+    },
+    {
+      "source_id": "dances_afi",
+      "title": "Dances with Wolves — AFI Catalog",
+      "url": "https://catalog.afi.com/Film/58466-DANCES-WITH-WOLVES?cxt=filmography",
+      "verification_scope": "Catalogo consultato: apertura limitata 9 novembre 1990, distribuzione nazionale 21 novembre. Controllati crediti di Costner, Blake e Semler e contesto narrativo; non scambiato il campo generale del 21 per la prima uscita."
+    },
+    {
+      "source_id": "gulf_navy",
+      "title": "The Gulf War 1990–1991 — Naval History and Heritage Command",
+      "url": "https://www.history.navy.mil/our-collections/art/exhibits/conflicts-and-operations/the-gulf-war-1990-1991--operation-desert-shield--desert-storm-.html",
+      "verification_scope": "Cronologia istituzionale: Desert Shield e Desert Storm; fase di combattimento 17 gennaio–28 febbraio 1991."
+    },
+    {
+      "source_id": "gulf_dod",
+      "title": "Gulf War — Defense Casualty Analysis System",
+      "url": "https://dcas.dmdc.osd.mil/dcas/conflictCasualties/gulf",
+      "verification_scope": "Fonte del Dipartimento della Difesa: inizio del conflitto il 2 agosto 1990, offensiva aerea il 17 gennaio 1991 e cessazione del 28 febbraio."
+    },
+    {
+      "source_id": "gulf_resolution",
+      "title": "United Nations Security Council Resolution 661 (1990)",
+      "url": "https://digitallibrary.un.org/record/94221",
+      "verification_scope": "Scheda ufficiale con testo della decisione: embargo commerciale e finanziario con eccezioni mediche e umanitarie. Eliminata la qualificazione assoluta total dell’INPUT; nessuna consulenza normativa."
+    },
+    {
+      "source_id": "gulf_42",
+      "title": "The Black Adder Goes Forth — Royal Logistic Corps Museum",
+      "url": "https://rlcmuseum.com/the-black-adder-goes-forth-british-army-logistics-in-the-gulf-war-1991/",
+      "verification_scope": "Ricostruzione del museo militare: quarantadue paesi e ampiezza della coalizione. Il numero non è presentato come conteggio di soli stati con truppe di combattimento."
+    },
+    {
+      "source_id": "gulf_henry",
+      "title": "I Support Our Troops Operation Desert Storm Ribbon — The Henry Ford",
+      "url": "https://www.thehenryford.org/collections/explore/artifact/539616",
+      "verification_scope": "Scheda museale dell’oggetto: coalizione di quarantadue paesi e fasi del conflitto; corroborazione del numero già nel materiale fornito."
+    },
+    {
+      "source_id": "gulf_hansard",
+      "title": "Gulf War — House of Commons, 12 February 1991",
+      "url": "https://hansard.parliament.uk/commons/1991-02-12/debates/eaf45158-6f22-4e4e-a73b-fbed73ebfd6a/GulfWar",
+      "verification_scope": "Risposta parlamentare contemporanea consultata: distingue forze, assistenza pratica, finanziamenti e basi. Impedisce di trattare i diversi conteggi di partecipanti come necessariamente equivalenti."
+    },
+    {
+      "source_id": "gulf_alliance",
+      "title": "Gulf War veteran reflects on pivotal war — US Army",
+      "url": "https://www.army.mil/article/237752/gulf_war_veteran_reflects_on_pivotal_war_that_changed_army_the_nation",
+      "verification_scope": "Ricostruzione ufficiale che identifica la più ampia coalizione di nazioni alleate dalla Seconda guerra mondiale."
+    },
+    {
+      "source_id": "mediterraneo_anica",
+      "title": "Mediterraneo — ANICA",
+      "url": "https://www.archiviodelcinemaitaliano.it/risultati/scheda?codice=DD9196",
+      "verification_scope": "Scheda consultata: otto soldati, nave affondata, radio guasta, convivenza sull’isola e crediti di Monteleone, Bigazzi e Falagiani. Il 16 gennaio è visto di censura, non uscita."
+    },
+    {
+      "source_id": "mediterraneo_date",
+      "title": "Il 31 gennaio 1991 usciva Mediterraneo — Sky TG24",
+      "url": "https://tg24.sky.it/spettacolo/cinema/2021/01/26/mediterraneo-salvatores-1991",
+      "verification_scope": "Ricostruzione giornalistica dell’anniversario: uscita italiana il 31 gennaio 1991. Usata per la data; non aggiunti al testo i nuovi dettagli sull’ispirazione letteraria."
+    },
+    {
+      "source_id": "mediterraneo_bisio",
+      "title": "Mediterraneo, rassegna stampa sul trentennale — sito di Claudio Bisio",
+      "url": "https://www.claudiobisio.it/FileProvider.aspx?ALLEGA_ID=2058&RenderOriginal=1",
+      "verification_scope": "Estratto indicizzato di un articolo conservato dal membro del cast: corrobora il 31 gennaio 1991. Non attribuito all’attore come dichiarazione autografa e non presentato come PDF letto integralmente."
+    },
+    {
+      "source_id": "mediterraneo_music",
+      "title": "Mediterraneo Original Motion Picture Soundtrack — AMS Records",
+      "url": "https://ams-music.it/wp/mediterraneo-original-motion-picture-soundtrack/",
+      "verification_scope": "Pagina dell’etichetta consultata: compositori e strumenti acustici, inclusi bouzouki e santur. Non copiate descrizioni promozionali o ampliata la lista oltre gli elementi utili all’INPUT."
+    },
+    {
+      "source_id": "nevermind_release",
+      "title": "Nirvana — official timeline",
+      "url": "https://www.nirvana.com/timelines/",
+      "verification_scope": "Cronologia ufficiale consultata: ingresso di Dave Grohl nel 1990, contratto DGC e pubblicazione di Nevermind il 24 settembre 1991."
+    },
+    {
+      "source_id": "nevermind_vig",
+      "title": "Butch Vig interview — Kerrang!, 12 November 2020",
+      "url": "https://www.kerrang.com/butch-vig-i-looked-at-bands-like-the-beatles-and-led-zeppelin-as-these-untouchable-rock-gods-but-when-punk-came-out-i-thought-i-could-do-that",
+      "verification_scope": "Intervista diretta al produttore: sessioni agli Smart Studios nell’aprile 1990, prima delle registrazioni Sound City del 1991. Distinte le annate che l’INPUT sovrappone."
+    },
+    {
+      "source_id": "nevermind_credits",
+      "title": "Nevermind — album liner notes transcription",
+      "url": "https://albumlinernotes.com/Nevermind.html",
+      "verification_scope": "Trascrizione consultata dei crediti dell’album: mastering a Howie Weinberg, Masterdisk, New York. Non dichiarata l’ispezione della confezione originale; non riprodotti i testi delle canzoni presenti nella pagina."
+    },
+    {
+      "source_id": "nevermind_weinberg",
+      "title": "Q&A With A Master: Howie Weinberg — Recording Magazine",
+      "url": "https://www.recordingmag.com/resources/recording-info/on-mastering/qa-with-a-master-howie-weinberg/",
+      "verification_scope": "Intervista diretta consultata: rapporto professionale con Masterdisk a New York. Non dimostra da sola il luogo fisico della sessione Nevermind; il testo parla dell’affiliazione professionale accreditata."
+    },
+    {
+      "source_id": "dolby_debut",
+      "title": "Batman Returns and Dolby Digital — Dolby Newsroom",
+      "url": "https://news.dolby.com/en-WW/252716-the-bat-is-back-in-dolby-as-tim-burton-s-batman-and-batman-returns-swoop-back-to-theaters-exclusively-at-dolby-cinema/",
+      "verification_scope": "Comunicato del produttore: debutto cinematografico commerciale nel 1992 con Batman Returns. I test precedenti non sono descritti come lancio commerciale."
+    },
+    {
+      "source_id": "dolby_ac3",
+      "title": "Introduction to Dolby Digital Plus — Dolby Laboratories, AES paper 6196",
+      "url": "https://professional.dolby.com/globalassets/dolby-digital-plus/aes-convention-paper-intro-to-dolby-digital-plus.pdf",
+      "verification_scope": "Consultati introduzione e passaggio tecnico sull’AC-3 basato su MDCT; PDF di 29 pagine non letto integralmente. Nessuna specifica E-AC-3 trasferita per errore all’AC-3 originale."
+    },
+    {
+      "source_id": "ahmed_dct",
+      "title": "Nasir Ahmed, How I Came Up with the Discrete Cosine Transform, 1991",
+      "url": "https://www.cse.iitd.ac.in/~pkalra/col783-2017/DCT-History.pdf",
+      "verification_scope": "Articolo autobiografico di due pagine consultato: proposta nel 1972, lavoro successivo con Natarajan e Rao, pubblicazione 1974. Conservata la distinzione fra proposta e pubblicazione."
+    },
+    {
+      "source_id": "mdct_paper",
+      "title": "Princen, Johnson and Bradley — ICASSP 1987",
+      "url": "https://doi.org/10.1109/ICASSP.1987.1169405",
+      "verification_scope": "Identificazione bibliografica del lavoro originale e autori controllati; accesso al testo completo IEEE impedito dalla verifica tecnica. Non si dichiara la lettura integrale dell’articolo."
+    },
+    {
+      "source_id": "mdct_docs",
+      "title": "MDCT — MathWorks documentation",
+      "url": "https://nl.mathworks.com/help/audio/ref/mdct.html",
+      "verification_scope": "Documentazione tecnica ufficiale che cita il lavoro Princen–Johnson–Bradley del 1987 e quello Princen–Bradley del 1986. L’affiliazione Surrey è mantenuta dal materiale fornito, senza inventare altri dettagli biografici."
+    },
+    {
+      "source_id": "disney_history",
+      "title": "Disneyland Paris — History",
+      "url": "https://news.disneylandparis.com/en/history/",
+      "verification_scope": "Cronologia ufficiale consultata: apertura 12 aprile 1992, accordo 1987, lavori 1988 e secondo parco 2002. Il nome Walt Disney Studios Park è descritto come nome all’apertura, senza affermare che sia tuttora il nome attuale."
+    },
+    {
+      "source_id": "disney_opening",
+      "title": "Disneyland Paris Officially Opens — D23",
+      "url": "https://d23.com/this-day/1992-disneyland-paris-officially-opens/",
+      "verification_scope": "Fonte Disney consultata: inaugurazione del 12 aprile dopo due giorni di presentazioni e celebrazioni. Non scambiata l’anteprima con l’apertura al pubblico."
+    },
+    {
+      "source_id": "jurassic_release",
+      "title": "Universal Celebrates 30 Years of Jurassic Park — NBCUniversal",
+      "url": "https://www.nbcuniversal.com/article/universal-celebrates-30-years-jurassic-park",
+      "verification_scope": "Comunicato del distributore: uscita nazionale USA l’11 giugno 1993."
+    },
+    {
+      "source_id": "jurassic_author",
+      "title": "Jurassic Park — Michael Crichton official website",
+      "url": "https://michaelcrichton.com/works/jurassic-park/",
+      "verification_scope": "Scheda dell’opera e adattamento: release del film l’11 giugno 1993. Nessun titolo o nome proprio del materiale originale tradotto arbitrariamente."
+    }
+  ],
+  "decisions": [
+    {
+      "target_id": "history-1989-world-wide-web",
+      "problem": "L’anno 1989 identifica l’ideazione, mentre l’utente richiede la disponibilità delle opere; non retrodatare le funzioni multimediali dell’HTML.",
+      "conclusion": "Il testo distingue proposta 1989, disponibilità CERN marzo 1991, diffusione Internet agosto 1991 e uso libero 1993. Proposta di collocazione nell’agosto 1991 per la diffusione pubblica, senza ricavare un giorno di release dalla data di un annuncio. Conservati hyperlink, HTTP, URL, HTML, browser e server.",
+      "source_ids": [
+        "web_cern",
+        "web_w3c",
+        "web_html"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1990-hubble-space-telescope",
+      "problem": "Il conteggio di cinque strumenti può includere i sensori di guida; non chiamare attivo lo strumento NICMOS né confondere sistemi e singoli sensori.",
+      "conclusion": "Precisati cinque sistemi strumentali principali attivi, compreso il gruppo FGS, secondo l’elenco NASA. Conservati specchio 2,4 metri, bande osservate, istituzioni responsabili, distorsioni atmosferiche e misure dell’espansione. Confermati lancio 24 aprile 1990 e operatività della missione.",
+      "source_ids": [
+        "hubble_launch",
+        "hubble_mission",
+        "hubble_instruments",
+        "hubble_current",
+        "hubble_optics"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1990-twin-peaks",
+      "problem": "Conservare tre card e il carattere dell’indagine senza introdurre rivelazioni o confondere stagioni originali e ritorni successivi.",
+      "conclusion": "Confermata la prima trasmissione dell’8 aprile 1990. Mantenuti Lynch, Frost, MacLachlan, Cooper, Laura, Badalamenti, sogni, quotidianità, sfruttamento, paura, melodramma e appuntamento settimanale. Nessuna trama successiva aggiunta.",
+      "source_ids": [
+        "twin_release"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1990-dances-with-wolves",
+      "problem": "La distribuzione nazionale del 21 novembre non è la prima uscita limitata; evitare nessi causali inesistenti fra release e forma narrativa.",
+      "conclusion": "Confermato 9 novembre 1990 come uscita limitata. Mantenuti i tre paragrafi originali con tutti i personaggi, Lakota sottotitolato, romanzo/sceneggiatura Blake, fotografia Semler, musica Barry, diario e ritorno dell’esercito. Separata la frase sulla data dalla descrizione del ritmo del film.",
+      "source_ids": [
+        "dances_afi"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1991-gulf-war",
+      "problem": "Il conflitto comincia nel 1990, Desert Storm nel 1991; il 28 febbraio è la sospensione dei combattimenti. L’embargo non è assoluto senza eccezioni.",
+      "conclusion": "Cronologia resa esplicita: invasione 2 agosto 1990, Desert Shield agosto–gennaio, attacchi aerei 17 gennaio 1991 e stop al combattimento 28 febbraio dopo l’espulsione delle forze irachene. Embargo definito commerciale. Conservati 42 paesi nel senso ampio di coalizione e i quattro maggiori contributori indicati. Proposta separata di data d’inizio del conflitto al 1990.",
+      "source_ids": [
+        "gulf_navy",
+        "gulf_dod",
+        "gulf_resolution",
+        "gulf_42",
+        "gulf_henry",
+        "gulf_hansard",
+        "gulf_alliance"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1991-mediterraneo",
+      "problem": "Non confondere visto di censura con uscita e non perdere i dettagli musicali o il numero dei soldati.",
+      "conclusion": "Uscita italiana 31 gennaio 1991. Tre card e otto soldati conservati, con nave, radio, progressiva convivenza, notizie esterne, Monteleone, Bigazzi, Falagiani, bouzouki, santur, fiati, percussioni e Oscar 1992.",
+      "source_ids": [
+        "mediterraneo_anica",
+        "mediterraneo_date",
+        "mediterraneo_bisio",
+        "mediterraneo_music"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1991-nevermind",
+      "problem": "L’INPUT colloca le sessioni Smart Studios nel 1991 insieme a Sound City e indica un luogo di mastering diverso dai crediti dell’album.",
+      "conclusion": "Corrette le sessioni Smart Studios ad aprile 1990; mantenute le registrazioni principali Sound City nel 1991 e il mastering in agosto. La prosa attribuisce quest’ultimo a Howie Weinberg della Masterdisk di New York secondo i crediti, senza certificare la stanza fisica della sessione. Conservati DGC, Vig, Grohl, Cobain, temi e tutti i generi.",
+      "source_ids": [
+        "nevermind_release",
+        "nevermind_vig",
+        "nevermind_credits",
+        "nevermind_weinberg"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1992-dolby-digital",
+      "problem": "Distinguere debutto commerciale, proposta DCT, pubblicazione della ricerca e successive famiglie di codec.",
+      "conclusion": "Mantenuto il 1992 come introduzione commerciale al cinema. Conservati tutti gli ambiti d’uso, AC-3, MDCT, proposta Ahmed 1972 e lavoro dei tre ricercatori nel 1987. Nessun parametro di Dolby Digital Plus attribuito al primo codec.",
+      "source_ids": [
+        "dolby_debut",
+        "dolby_ac3",
+        "ahmed_dct",
+        "mdct_paper",
+        "mdct_docs"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1992-disneyland-paris",
+      "problem": "Tenere distinta apertura pubblica e anteprime; il nome del secondo parco deve essere storicamente collocato.",
+      "conclusion": "Confermato 12 aprile 1992. Conservati accordo 1987, costruzione 1988, primo resort europeo, alberghi, Festival Disney e secondo parco 2002, chiamato Walt Disney Studios Park all’inaugurazione.",
+      "source_ids": [
+        "disney_history",
+        "disney_opening"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1993-jurassic-park-film",
+      "problem": "Usare l’uscita cinematografica commerciale, preservando la genesi della sceneggiatura e i luoghi di lavorazione.",
+      "conclusion": "Inserita uscita USA 11 giugno 1993. Conservati Crichton e Koepp con ruoli distinti, Neill, Dern, Goldblum, Hammond, Isla Nublar, fallimento delle protezioni, California/Hawaii 1992 e post-produzione durante Schindler’s List in Polonia.",
+      "source_ids": [
+        "jurassic_release",
+        "jurassic_author"
+      ],
+      "text_applied": true
+    }
+  ],
+  "metadata_proposals": [
+    {
+      "target_id": "history-1989-world-wide-web",
+      "field": "timeline_date",
+      "original": {
+        "year": 1989,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1991,
+        "month": 8,
+        "day": 0,
+        "precision": "month",
+        "event_semantics": "Disponibilità pubblica del software Web su Internet",
+        "region": "Rete Internet"
+      },
+      "source_ids": [
+        "web_cern",
+        "web_w3c"
+      ],
+      "reason": "Proposta documentata separata; nessuna modifica a INPUT, TEMPLATE, media o catalogo."
+    },
+    {
+      "target_id": "history-1990-hubble-space-telescope",
+      "field": "timeline_date",
+      "original": {
+        "year": 1990,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1990,
+        "month": 4,
+        "day": 24,
+        "precision": "day",
+        "event_semantics": "Lancio del telescopio spaziale",
+        "region": "Missione NASA/ESA"
+      },
+      "source_ids": [
+        "hubble_launch"
+      ],
+      "reason": "Proposta documentata separata; nessuna modifica a INPUT, TEMPLATE, media o catalogo."
+    },
+    {
+      "target_id": "history-1991-gulf-war",
+      "field": "timeline_date",
+      "original": {
+        "year": 1991,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1990,
+        "month": 8,
+        "day": 2,
+        "precision": "day",
+        "event_semantics": "Inizio del conflitto con l’invasione del Kuwait",
+        "region": "Iraq e Kuwait"
+      },
+      "source_ids": [
+        "gulf_dod"
+      ],
+      "reason": "Proposta documentata separata; nessuna modifica a INPUT, TEMPLATE, media o catalogo."
+    },
+    {
+      "target_id": "history-1991-mediterraneo",
+      "field": "timeline_date",
+      "original": {
+        "year": 1991,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1991,
+        "month": 1,
+        "day": 31,
+        "precision": "day",
+        "event_semantics": "Uscita cinematografica commerciale",
+        "region": "Italia"
+      },
+      "source_ids": [
+        "mediterraneo_date",
+        "mediterraneo_bisio"
+      ],
+      "reason": "Proposta documentata separata; nessuna modifica a INPUT, TEMPLATE, media o catalogo."
+    },
+    {
+      "target_id": "history-1991-nevermind",
+      "field": "timeline_date",
+      "original": {
+        "year": 1991,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1991,
+        "month": 9,
+        "day": 24,
+        "precision": "day",
+        "event_semantics": "Pubblicazione dell’album",
+        "region": "Uscita originale"
+      },
+      "source_ids": [
+        "nevermind_release"
+      ],
+      "reason": "Proposta documentata separata; nessuna modifica a INPUT, TEMPLATE, media o catalogo."
+    },
+    {
+      "target_id": "history-1993-jurassic-park-film",
+      "field": "timeline_date",
+      "original": {
+        "year": 1993,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1993,
+        "month": 6,
+        "day": 11,
+        "precision": "day",
+        "event_semantics": "Uscita cinematografica commerciale",
+        "region": "Stati Uniti"
+      },
+      "source_ids": [
+        "jurassic_release",
+        "jurassic_author"
+      ],
+      "reason": "Proposta documentata separata; nessuna modifica a INPUT, TEMPLATE, media o catalogo."
+    }
+  ],
+  "editorial_review": {
+    "fidelity": "Rilettura delle 10 voci e delle 16 card in tutte le lingue; conservati ordine, numero, titoli propri e crediti. Le tre card di Twin Peaks, Dances with Wolves e Mediterraneo restano distinte. Incipit identificativi e sommari inglesi fra 32 e 40 parole.",
+    "rights": "Mantenute nel materiale originale le attribuzioni, le licenze e le revisioni Wikipedia. Nessun testo di canzone, citazione critica estesa o filmato non visionato riprodotto. Le fonti nuove servono a verificare dati e sono registrate con l’effettivo ambito di consultazione.",
+    "review_changes": [
+      "Separato il lancio di Dances with Wolves dal ragionamento sul ritmo delle scene.",
+      "Italiano: tavole calde per diners e critica all’ordine costituito per anti-establishment.",
+      "Tedesco: resa più chiara la funzione dei sensori di guida e mantenuta l’idea della navigazione Web come pratica quotidiana."
+    ],
+    "english_written_first": true,
+    "languages": [
+      "en",
+      "it",
+      "fr",
+      "de",
+      "es"
+    ],
+    "entry_count": 10,
+    "card_count_per_language": 16,
+    "reviewed_at": "2026-10-30T07:46:34.540534+00:00",
+    "english_summary_word_range": [
+      32,
+      40
+    ],
+    "structural_checks": "Schema, ID, ordine, numero di card e cinque lingue verificati dal validatore. Tutti i titoli presenti; nessun HTML o Markdown nei testi."
+  },
+  "status": "completed",
+  "validation": {
+    "valid": true,
+    "batch_id": "306-human-history",
+    "completed": true,
+    "entry_count": 10,
+    "card_count_per_language": 16,
+    "language_count": 5,
+    "translated_card_count": 80,
+    "entry_card_counts": {
+      "history-1989-world-wide-web": 1,
+      "history-1990-hubble-space-telescope": 1,
+      "history-1990-twin-peaks": 3,
+      "history-1990-dances-with-wolves": 3,
+      "history-1991-gulf-war": 1,
+      "history-1991-mediterraneo": 3,
+      "history-1991-nevermind": 1,
+      "history-1992-dolby-digital": 1,
+      "history-1992-disneyland-paris": 1,
+      "history-1993-jurassic-park-film": 1
+    },
+    "issue_counts": {
+      "history-1989-world-wide-web": 0,
+      "history-1990-hubble-space-telescope": 0,
+      "history-1990-twin-peaks": 0,
+      "history-1990-dances-with-wolves": 0,
+      "history-1991-gulf-war": 0,
+      "history-1991-mediterraneo": 0,
+      "history-1991-nevermind": 0,
+      "history-1992-dolby-digital": 0,
+      "history-1992-disneyland-paris": 0,
+      "history-1993-jurassic-park-film": 0
+    },
+    "summary_checks": [
+      {
+        "entry_id": "history-1989-world-wide-web",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "history-1990-hubble-space-telescope",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "history-1990-twin-peaks",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "history-1990-dances-with-wolves",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "history-1991-gulf-war",
+        "feature_id": null,
+        "english_summary_words": 39
+      },
+      {
+        "entry_id": "history-1991-mediterraneo",
+        "feature_id": null,
+        "english_summary_words": 40
+      },
+      {
+        "entry_id": "history-1991-nevermind",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "history-1992-dolby-digital",
+        "feature_id": null,
+        "english_summary_words": 32
+      },
+      {
+        "entry_id": "history-1992-disneyland-paris",
+        "feature_id": null,
+        "english_summary_words": 33
+      },
+      {
+        "entry_id": "history-1993-jurassic-park-film",
+        "feature_id": null,
+        "english_summary_words": 39
+      }
+    ],
+    "editorial_review": [
+      "history-1991-gulf-war/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1991-gulf-war/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1991-gulf-war/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1991-gulf-war/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1992-disneyland-paris/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1992-disneyland-paris/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1992-disneyland-paris/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1992-disneyland-paris/main/es: main title changed; check that this is a descriptive title and not an altered official name"
+    ],
+    "failures": []
+  },
+  "output_sha256": "432a5278998cf8bff7478c8d8dab88532985dd96baf7dd3883b2fcf73a4fac4a",
+  "expansion_assessments": [
+    {
+      "target_id": "history-1989-world-wide-web",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1990-hubble-space-telescope",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1990-twin-peaks",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1990-dances-with-wolves",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1991-gulf-war",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1991-mediterraneo",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1991-nevermind",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1992-dolby-digital",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1992-disneyland-paris",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1993-jurassic-park-film",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "locale": "de",
+  "review": "Binding of exact independently approved complete candidate members; no new linguistic review substituted. Every full candidate SHA and independent PASS receipt checked, all current English five fields and translation hashes validated.",
+  "entries": [
+    {
+      "entry_id": "tomb-raider",
+      "source_fields_sha256": "6a1e2d730a32a0ecf3a5646f1b4056160d78ceb3b458d4178d7be85d32d16328",
+      "translation_sha256": "446cf03ae530ce82da90cfb1201392268d1de81fd553a8bee385efcf91d200ec",
+      "independent_peer": "build/research/tombraider1996-four-language-completion/independent-five-whole-paragraphs-all-fields-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "91e9c26c8b9c844b24608109728b2d72e7615ccf4237eb1c49897ed65fa058fa",
+      "candidate_path": "build/research/tombraider1996-four-language-completion/tombraider-five-whole-paragraphs-four-language-source-bound-candidate.json",
+      "candidate_sha256": "0d61421fc89865693eb5983fbd6635f2bc96f2143e2d7336a1f1089e20b1a26a"
+    },
+    {
+      "entry_id": "daily-05-31",
+      "source_fields_sha256": "fc963cdbbc876ca04bbf953f0cff02fae7d9ee0187c0a84abf425301633fea92",
+      "translation_sha256": "dd7174c871d10ab8e4ff2633fc6aa9fa6dc177a9e1c33171a17ea73c09f088bd",
+      "independent_peer": "build/research/eidos1996-four-language-completion/independent-all-fields-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "f10a8f10b035c62c135a1613a3542c851ac40dc526808d61d98292973fd92829",
+      "candidate_path": "build/research/eidos1996-four-language-completion/eidos-four-language-publishing-and-spatial-simulation-precise-candidate.json",
+      "candidate_sha256": "fb4e5fb0a5e903bec59a3b46436d1645ec32d7d984225f1879980a0bd082959c"
+    },
+    {
+      "entry_id": "wikipedia-223491",
+      "source_fields_sha256": "b7ed4a54f5cb36707deafbe16d5e0364fbf5fd358024e8f72c05cbfcbd62613b",
+      "translation_sha256": "b208b92259a5abdcc08592f80da17ee3369a668e636168be7aed7a2f508d2e33",
+      "independent_peer": "build/research/civilizationii1996-four-language-completion/independent-all-fields-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "dd8527dced8206c1368f30854f2fb6612d94a4d21a6f85b2ec5f659a4babe61f",
+      "candidate_path": "build/research/civilizationii1996-four-language-completion/civilizationii-four-language-french-cumulative-sales-precise-candidate.json",
+      "candidate_sha256": "7f021b5cc8da147e0979eecbd45f807b427fa40cfed77c392c45d6ff851fdb11"
+    }
+  ]
+}

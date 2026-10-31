@@ -1,0 +1,531 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-20",
+  "scope": "Research candidates for six console exhibits; catalog.json has not been modified.",
+  "summary": {
+    "verified_downloadable": 5,
+    "missing_licensed_download": 1
+  },
+  "candidates": [
+    {
+      "exhibit_id": "odyssey",
+      "status": "no_redistributable_download_verified",
+      "exact_hardware": "Magnavox Odyssey 1TL200 (1972)",
+      "creator": null,
+      "url": null,
+      "license": null,
+      "notes": "Do not substitute Odyssey 2, a later dedicated Pong unit, a screenshot billboard, or generic procedural geometry. Search found specific models but no verified reusable download licence for the museum.",
+      "candidates": [
+        {
+          "source_page": "https://sketchfab.com/3d-models/magnavox-odyssey-1442250a6bba4c70af4fc6b9807bcfdf",
+          "creator": "JesseJimison",
+          "triangles": 3200,
+          "status": "viewer_only_no_download_or_open_license_shown"
+        },
+        {
+          "source_page": "https://sketchfab.com/models/52a26d742099437dbb27625a86a9b385/embed",
+          "creator": "Vasco Silva",
+          "status": "viewer_only_license_and_download_not_verified"
+        },
+        {
+          "source_page": "https://embed-3dwarehouse-classic.sketchup.com/model/aafbbf78539372f34d54c88391b1fcc1/Magnavox-Odyssey",
+          "creator": "RetroFreak",
+          "status": "not_approved_for_aggregation",
+          "notes": "Public preview metadata exposes a GLB, but model downloads require sign-in and no creator-specific open licence was found. Official FAQ explicitly says research-project model aggregation needs developer approval. Do not use the public viewer resource as a substitute for permission.",
+          "terms_faq": "https://help.sketchup.com/en/3d-warehouse/3d-warehouse-terms-use-faq"
+        },
+        {
+          "source_page": "https://www.cgtrader.com/3d-models/electronics/other/magnavox-odyssey-1972",
+          "creator": "l3x56",
+          "status": "paid_download_not_acquired",
+          "formats": [
+            "FBX",
+            "MAX"
+          ],
+          "notes": "Detailed textured candidate, but a purchase and appropriate distribution permission would need separate review. No payment or contact was made."
+        },
+        {
+          "source_page": "https://github.com/TanvirS-07/Virtual-Museum",
+          "creator": "Macquarie University project team",
+          "status": "no_repository_license_found",
+          "notes": "Includes an Odyssey exhibit and model art but no model/repository reuse permission was found."
+        },
+        {
+          "source_page": "https://3dsky.org/3dmodels/show/magnavox_odyssey",
+          "creator": "helliocentrism",
+          "status": "free_download_license_incompatible_with_public_model_url",
+          "formats": [
+            "OBJ",
+            "3dsMax2016"
+          ],
+          "publisher_statistics": {
+            "polygons": 125312,
+            "vertices": 125501,
+            "archive_mb": 16
+          },
+          "license": "3Dsky Royalty Free Terms (not an open asset licence)",
+          "license_url": "https://3dsky.org/faq/category/10005/show",
+          "notes": "Promising detailed actual1972Odyssey, published1May2020. Terms10.2.2/10.2.6/10.2.7 prohibit publicly accessible original3D files/database catalogues;10.5.4requires closed/proprietary protected model formats for gameuse. No sign-in, download, contact or licenceagreement was completed. Obtain specific creator permission before adding a public GLB URL."
+        }
+      ],
+      "museum_checks": [
+        {
+          "source_page": "https://www.computerhistory.org/revolution/computer-games/16/190/782",
+          "finding": "Odyssey collection object102674784: photograph byMarkRichards and descriptive metadata; no3D asset linked."
+        },
+        {
+          "source_page": "https://americanhistory.si.edu/collections/object/nmah_1302004",
+          "finding": "Odyssey collection record presents an image/IIIF reference, not a verified downloadable3D scan. Smithsonian3D indexed searches produced no matching Odyssey model."
+        },
+        {
+          "source_page": "https://collection.sciencemuseumgroup.org.uk/objects/co8094422/magnavox-odyssey-video-games-console",
+          "finding": "Collection object2008-5014 provides images and catalogue JSON/IIIF, no3D asset."
+        }
+      ]
+    },
+    {
+      "exhibit_id": "atari-vcs",
+      "status": "verified_downloadable_candidate",
+      "exact_hardware": "CX2600 · Heavy Sixer (1977)",
+      "creator": "tiansongyu",
+      "title": "Atari 2600 ? Open Console CAD",
+      "source_page": "https://github.com/tiansongyu/open-console-cad/tree/main/devices/atari2600",
+      "interactive_preview": "https://tiansongyu.github.io/open-console-cad/?device=atari2600&view=assembled#viewer",
+      "url": "https://raw.githubusercontent.com/tiansongyu/open-console-cad/main/site/public/models/atari2600.glb",
+      "license": "MIT",
+      "license_url": "https://raw.githubusercontent.com/tiansongyu/open-console-cad/main/LICENSE",
+      "third_party_notice_url": "https://raw.githubusercontent.com/tiansongyu/open-console-cad/main/THIRD_PARTY_NOTICES.md",
+      "copyright": "Copyright (c) 2026 tiansongyu",
+      "license_scope": "Original CAD model geometry/code only; manufacturer names, logos and product designs retain third-party rights. Keep MIT notice and manufacturer notices. DejaVu Sans licence applies to geometric lettering.",
+      "metadata_url": "https://raw.githubusercontent.com/tiansongyu/open-console-cad/main/site/public/models/atari2600.json",
+      "preview_url": "https://raw.githubusercontent.com/tiansongyu/open-console-cad/main/devices/atari2600/output/previews/final_hero.png",
+      "visual_inspection": {
+        "inspected": true,
+        "reference_file": "docs/research/reference-images/console-cad/atari2600.png",
+        "assessment": "Recognizable device-specific CAD geometry with fine enclosure, controls, connectors and markings; colour materials, no photographic/PBR texture maps. A researched approximation, not a manufacturer CAD scan.",
+        "preview_caveat": "Publisher preview is a CAD render. Native museum lighting/material appearance still requires visual QA."
+      },
+      "verification": {
+        "device": "atari2600",
+        "url": "https://raw.githubusercontent.com/tiansongyu/open-console-cad/main/site/public/models/atari2600.glb",
+        "bytes": 82739120,
+        "sha256": "25d7b707df8e70a12600dd2ca766f3e23775c7b662a1ecd4ced996ac3cca46dc",
+        "magic": "glTF",
+        "version": 2,
+        "declared_bytes": 82739120,
+        "meshes": 684,
+        "primitives": 684,
+        "triangles": 2944342,
+        "nodes": 684,
+        "materials": 21,
+        "images": 0,
+        "extensionsRequired": [],
+        "asset": {
+          "version": "2.0",
+          "generator": "Open Console CAD / FreeCAD BRep tessellation",
+          "extras": {
+            "pose": {
+              "type": "fixed",
+              "group": "Lid",
+              "pivot_mm": [
+                0,
+                0,
+                0
+              ],
+              "axis": [
+                1,
+                0,
+                0
+              ],
+              "default_opening": 180,
+              "range": [
+                0,
+                180
+              ]
+            }
+          }
+        }
+      },
+      "runtime_recommendation": {
+        "keep_assembly_groups": [
+          "Body",
+          "Controls",
+          "Ports",
+          "Cables"
+        ],
+        "node_field": "extras.assembly",
+        "selected_nodes": 94,
+        "selected_triangles": 186396,
+        "notes": "Drop hidden internal assembly groups and unrelated accessories, retaining authored exterior geometry. Merge equal-material primitives or increase indexed primitive cap; do not replace geometry with boxes. Node positions are already part of the assembled scene. No Draco/meshopt/textures/extensions required.",
+        "orientation": [
+          -0.7,
+          -1.5,
+          1.3
+        ],
+        "camera_up": [
+          0,
+          0,
+          1
+        ]
+      },
+      "local_validation_file": "build/research/model-validation/atari2600.glb"
+    },
+    {
+      "exhibit_id": "famicom",
+      "status": "verified_downloadable_candidate",
+      "exact_hardware": "HVC-001 · 圆形按键",
+      "creator": "tiansongyu",
+      "title": "Nintendo Famicom ? Open Console CAD",
+      "source_page": "https://github.com/tiansongyu/open-console-cad/tree/main/devices/famicom",
+      "interactive_preview": "https://tiansongyu.github.io/open-console-cad/?device=famicom&view=assembled#viewer",
+      "url": "https://raw.githubusercontent.com/tiansongyu/open-console-cad/main/site/public/models/famicom.glb",
+      "license": "MIT",
+      "license_url": "https://raw.githubusercontent.com/tiansongyu/open-console-cad/main/LICENSE",
+      "third_party_notice_url": "https://raw.githubusercontent.com/tiansongyu/open-console-cad/main/THIRD_PARTY_NOTICES.md",
+      "copyright": "Copyright (c) 2026 tiansongyu",
+      "license_scope": "Original CAD model geometry/code only; manufacturer names, logos and product designs retain third-party rights. Keep MIT notice and manufacturer notices. DejaVu Sans licence applies to geometric lettering.",
+      "metadata_url": "https://raw.githubusercontent.com/tiansongyu/open-console-cad/main/site/public/models/famicom.json",
+      "preview_url": "https://raw.githubusercontent.com/tiansongyu/open-console-cad/main/devices/famicom/output/previews/final_hero.png",
+      "visual_inspection": {
+        "inspected": true,
+        "reference_file": "docs/research/reference-images/console-cad/famicom.png",
+        "assessment": "Recognizable device-specific CAD geometry with fine enclosure, controls, connectors and markings; colour materials, no photographic/PBR texture maps. A researched approximation, not a manufacturer CAD scan.",
+        "preview_caveat": "Publisher preview is a CAD render. Native museum lighting/material appearance still requires visual QA."
+      },
+      "verification": {
+        "device": "famicom",
+        "url": "https://raw.githubusercontent.com/tiansongyu/open-console-cad/main/site/public/models/famicom.glb",
+        "bytes": 80850500,
+        "sha256": "96b7c355cd73c7b87eb849e28129362c3f9903927ec6c8ddf8e7d7a09af5fada",
+        "magic": "glTF",
+        "version": 2,
+        "declared_bytes": 80850500,
+        "meshes": 634,
+        "primitives": 634,
+        "triangles": 2855502,
+        "nodes": 634,
+        "materials": 15,
+        "images": 0,
+        "extensionsRequired": [],
+        "asset": {
+          "version": "2.0",
+          "generator": "Open Console CAD / FreeCAD BRep tessellation",
+          "extras": {
+            "pose": {
+              "type": "fixed",
+              "group": "Lid",
+              "pivot_mm": [
+                0,
+                0,
+                0
+              ],
+              "axis": [
+                1,
+                0,
+                0
+              ],
+              "default_opening": 180,
+              "range": [
+                0,
+                180
+              ]
+            }
+          }
+        }
+      },
+      "runtime_recommendation": {
+        "keep_assembly_groups": [
+          "Body",
+          "CardReader",
+          "Controls",
+          "Ports",
+          "Cables",
+          "Controller1",
+          "Controller2"
+        ],
+        "node_field": "extras.assembly",
+        "selected_nodes": 262,
+        "selected_triangles": 653110,
+        "notes": "Drop hidden internal assembly groups and unrelated accessories, retaining authored exterior geometry. Merge equal-material primitives or increase indexed primitive cap; do not replace geometry with boxes. Node positions are already part of the assembled scene. No Draco/meshopt/textures/extensions required.",
+        "orientation": [
+          -0.8,
+          -1,
+          2.4
+        ],
+        "camera_up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "local_validation_file": "build/research/model-validation/famicom.glb"
+    },
+    {
+      "exhibit_id": "playstation",
+      "status": "verified_downloadable_candidate",
+      "exact_hardware": "SCPH-1000 · 初代日版灰色",
+      "creator": "tiansongyu",
+      "title": "Sony PlayStation ? Open Console CAD",
+      "source_page": "https://github.com/tiansongyu/open-console-cad/tree/main/devices/ps1",
+      "interactive_preview": "https://tiansongyu.github.io/open-console-cad/?device=ps1&view=assembled#viewer",
+      "url": "https://raw.githubusercontent.com/tiansongyu/open-console-cad/main/site/public/models/ps1.glb",
+      "license": "MIT",
+      "license_url": "https://raw.githubusercontent.com/tiansongyu/open-console-cad/main/LICENSE",
+      "third_party_notice_url": "https://raw.githubusercontent.com/tiansongyu/open-console-cad/main/THIRD_PARTY_NOTICES.md",
+      "copyright": "Copyright (c) 2026 tiansongyu",
+      "license_scope": "Original CAD model geometry/code only; manufacturer names, logos and product designs retain third-party rights. Keep MIT notice and manufacturer notices. DejaVu Sans licence applies to geometric lettering.",
+      "metadata_url": "https://raw.githubusercontent.com/tiansongyu/open-console-cad/main/site/public/models/ps1.json",
+      "preview_url": "https://raw.githubusercontent.com/tiansongyu/open-console-cad/main/devices/ps1/output/previews/final_hero.png",
+      "visual_inspection": {
+        "inspected": true,
+        "reference_file": "docs/research/reference-images/console-cad/ps1.png",
+        "assessment": "Recognizable device-specific CAD geometry with fine enclosure, controls, connectors and markings; colour materials, no photographic/PBR texture maps. A researched approximation, not a manufacturer CAD scan.",
+        "preview_caveat": "Publisher preview is a CAD render. Native museum lighting/material appearance still requires visual QA."
+      },
+      "verification": {
+        "device": "ps1",
+        "url": "https://raw.githubusercontent.com/tiansongyu/open-console-cad/main/site/public/models/ps1.glb",
+        "bytes": 41237316,
+        "sha256": "9daea66b84da97076e0f0b7c0400def8fb3289e030cdd728e76599047299b796",
+        "magic": "glTF",
+        "version": 2,
+        "declared_bytes": 41237316,
+        "meshes": 929,
+        "primitives": 929,
+        "triangles": 1266294,
+        "nodes": 929,
+        "materials": 26,
+        "images": 0,
+        "extensionsRequired": [],
+        "asset": {
+          "version": "2.0",
+          "generator": "Open Console CAD / FreeCAD BRep tessellation",
+          "extras": {
+            "pose": {
+              "type": "fixed",
+              "group": "Lid",
+              "pivot_mm": [
+                0,
+                0,
+                0
+              ],
+              "axis": [
+                1,
+                0,
+                0
+              ],
+              "default_opening": 180,
+              "range": [
+                0,
+                180
+              ]
+            }
+          }
+        }
+      },
+      "runtime_recommendation": {
+        "keep_assembly_groups": [
+          "Body",
+          "Controls",
+          "FrontIO",
+          "Ports",
+          "Controller",
+          "MemoryCard"
+        ],
+        "node_field": "extras.assembly",
+        "selected_nodes": 375,
+        "selected_triangles": 493674,
+        "notes": "Drop hidden internal assembly groups and unrelated accessories, retaining authored exterior geometry. Merge equal-material primitives or increase indexed primitive cap; do not replace geometry with boxes. Node positions are already part of the assembled scene. No Draco/meshopt/textures/extensions required.",
+        "orientation": [
+          0.3,
+          -0.7,
+          2.3
+        ],
+        "camera_up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "local_validation_file": "build/research/model-validation/ps1.glb"
+    },
+    {
+      "exhibit_id": "playstation-2",
+      "status": "verified_downloadable_candidate",
+      "exact_hardware": "SCPH-10000 · 初代日版黑色",
+      "creator": "tiansongyu",
+      "title": "Sony PlayStation 2 ? Open Console CAD",
+      "source_page": "https://github.com/tiansongyu/open-console-cad/tree/main/devices/ps2",
+      "interactive_preview": "https://tiansongyu.github.io/open-console-cad/?device=ps2&view=assembled#viewer",
+      "url": "https://raw.githubusercontent.com/tiansongyu/open-console-cad/main/site/public/models/ps2.glb",
+      "license": "MIT",
+      "license_url": "https://raw.githubusercontent.com/tiansongyu/open-console-cad/main/LICENSE",
+      "third_party_notice_url": "https://raw.githubusercontent.com/tiansongyu/open-console-cad/main/THIRD_PARTY_NOTICES.md",
+      "copyright": "Copyright (c) 2026 tiansongyu",
+      "license_scope": "Original CAD model geometry/code only; manufacturer names, logos and product designs retain third-party rights. Keep MIT notice and manufacturer notices. DejaVu Sans licence applies to geometric lettering.",
+      "metadata_url": "https://raw.githubusercontent.com/tiansongyu/open-console-cad/main/site/public/models/ps2.json",
+      "preview_url": "https://raw.githubusercontent.com/tiansongyu/open-console-cad/main/devices/ps2/output/previews/final_hero.png",
+      "visual_inspection": {
+        "inspected": true,
+        "reference_file": "docs/research/reference-images/console-cad/ps2.png",
+        "assessment": "Recognizable device-specific CAD geometry with fine enclosure, controls, connectors and markings; colour materials, no photographic/PBR texture maps. A researched approximation, not a manufacturer CAD scan.",
+        "preview_caveat": "Publisher preview is a CAD render. Native museum lighting/material appearance still requires visual QA."
+      },
+      "verification": {
+        "device": "ps2",
+        "url": "https://raw.githubusercontent.com/tiansongyu/open-console-cad/main/site/public/models/ps2.glb",
+        "bytes": 39213632,
+        "sha256": "57d1fe0fdcbb48da3ce425c168821a26cf212639bb951c875001357a67b96908",
+        "magic": "glTF",
+        "version": 2,
+        "declared_bytes": 39213632,
+        "meshes": 1352,
+        "primitives": 1352,
+        "triangles": 1214234,
+        "nodes": 1352,
+        "materials": 43,
+        "images": 0,
+        "extensionsRequired": [],
+        "asset": {
+          "version": "2.0",
+          "generator": "Open Console CAD / FreeCAD BRep tessellation",
+          "extras": {
+            "pose": {
+              "type": "fixed",
+              "group": "Lid",
+              "pivot_mm": [
+                0,
+                0,
+                0
+              ],
+              "axis": [
+                1,
+                0,
+                0
+              ],
+              "default_opening": 180,
+              "range": [
+                0,
+                180
+              ]
+            }
+          }
+        }
+      },
+      "runtime_recommendation": {
+        "keep_assembly_groups": [
+          "Body",
+          "FrontIO",
+          "Controls",
+          "Ports",
+          "Controller",
+          "MemoryCard"
+        ],
+        "node_field": "extras.assembly",
+        "selected_nodes": 477,
+        "selected_triangles": 240686,
+        "notes": "Drop hidden internal assembly groups and unrelated accessories, retaining authored exterior geometry. Merge equal-material primitives or increase indexed primitive cap; do not replace geometry with boxes. Node positions are already part of the assembled scene. No Draco/meshopt/textures/extensions required.",
+        "orientation": [
+          0.3,
+          -0.7,
+          2.3
+        ],
+        "camera_up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "local_validation_file": "build/research/model-validation/ps2.glb"
+    },
+    {
+      "exhibit_id": "wii",
+      "status": "verified_downloadable_candidate",
+      "exact_hardware": "RVL-001 · 初代白色",
+      "creator": "tiansongyu",
+      "title": "Nintendo Wii ? Open Console CAD",
+      "source_page": "https://github.com/tiansongyu/open-console-cad/tree/main/devices/wii",
+      "interactive_preview": "https://tiansongyu.github.io/open-console-cad/?device=wii&view=assembled#viewer",
+      "url": "https://raw.githubusercontent.com/tiansongyu/open-console-cad/main/site/public/models/wii.glb",
+      "license": "MIT",
+      "license_url": "https://raw.githubusercontent.com/tiansongyu/open-console-cad/main/LICENSE",
+      "third_party_notice_url": "https://raw.githubusercontent.com/tiansongyu/open-console-cad/main/THIRD_PARTY_NOTICES.md",
+      "copyright": "Copyright (c) 2026 tiansongyu",
+      "license_scope": "Original CAD model geometry/code only; manufacturer names, logos and product designs retain third-party rights. Keep MIT notice and manufacturer notices. DejaVu Sans licence applies to geometric lettering.",
+      "metadata_url": "https://raw.githubusercontent.com/tiansongyu/open-console-cad/main/site/public/models/wii.json",
+      "preview_url": "https://raw.githubusercontent.com/tiansongyu/open-console-cad/main/devices/wii/output/previews/final_hero.png",
+      "visual_inspection": {
+        "inspected": true,
+        "reference_file": "docs/research/reference-images/console-cad/wii.png",
+        "assessment": "Recognizable device-specific CAD geometry with fine enclosure, controls, connectors and markings; colour materials, no photographic/PBR texture maps. A researched approximation, not a manufacturer CAD scan.",
+        "preview_caveat": "Publisher preview is a CAD render. Native museum lighting/material appearance still requires visual QA."
+      },
+      "verification": {
+        "device": "wii",
+        "url": "https://raw.githubusercontent.com/tiansongyu/open-console-cad/main/site/public/models/wii.glb",
+        "bytes": 35164880,
+        "sha256": "71ff358edf15baa48f079678d4c874f362ece90ccd2a80c7341bb7683f6c6956",
+        "magic": "glTF",
+        "version": 2,
+        "declared_bytes": 35164880,
+        "meshes": 654,
+        "primitives": 654,
+        "triangles": 1261586,
+        "nodes": 654,
+        "materials": 17,
+        "images": 0,
+        "extensionsRequired": [],
+        "asset": {
+          "version": "2.0",
+          "generator": "Open Console CAD / FreeCAD BRep tessellation",
+          "extras": {
+            "pose": {
+              "type": "fixed",
+              "group": "Lid",
+              "pivot_mm": [
+                0,
+                0,
+                0
+              ],
+              "axis": [
+                1,
+                0,
+                0
+              ],
+              "default_opening": 180,
+              "range": [
+                0,
+                180
+              ]
+            }
+          }
+        }
+      },
+      "runtime_recommendation": {
+        "keep_assembly_groups": [
+          "Body",
+          "Controls",
+          "Ports",
+          "GameCube",
+          "Controller",
+          "Nunchuk"
+        ],
+        "node_field": "extras.assembly",
+        "selected_nodes": 282,
+        "selected_triangles": 415956,
+        "notes": "Drop hidden internal assembly groups and unrelated accessories, retaining authored exterior geometry. Merge equal-material primitives or increase indexed primitive cap; do not replace geometry with boxes. Node positions are already part of the assembled scene. No Draco/meshopt/textures/extensions required.",
+        "orientation": [
+          0.5,
+          -1.6,
+          1.4
+        ],
+        "camera_up": [
+          0,
+          1,
+          0
+        ]
+      },
+      "local_validation_file": "build/research/model-validation/wii.glb"
+    }
+  ]
+}

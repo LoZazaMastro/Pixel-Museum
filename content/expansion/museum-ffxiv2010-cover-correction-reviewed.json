@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "publication_status": "visual_validated",
+  "entries": {
+    "wikipedia-23068765": {
+      "image": {
+        "url": "https://www.gematsu.com/wp-content/uploads/2010/08/zp-151016_Final-Fantasy-XIV_2010_08-25-10_04.jpg",
+        "source_page": "https://www.gematsu.com/2010/08/final-fantasy-xiv-collectors-edition-trailered",
+        "recovery_local_source": "build/research/modern-game-cover-visual-qa/ffxiv2010-press-3.bin",
+        "width": 1523,
+        "height": 2151,
+        "title": "Final Fantasy XIV (2010): original Windows cover",
+        "creator": "Square Enix / original artwork contributors",
+        "credit": "Square Enix / original2010 Windows box artwork, publisher press image preserved by Gematsu",
+        "license": "Original publisher and artwork copyright retained; historical editorial illustration, not an open licence.",
+        "cover_art": true,
+        "visual_review": "Viewed full native1523x2151 original standard2010 Windows cover. MaleHyur artwork matches independently viewed original-game Wikipedia cover; PC DVDROM logo, no ARR title, no later expansion. Same contemporary publisher press gallery includes unreleasedPS3mockup; selected image is explicitly Windows PC box, not that mockup.",
+        "verification": {
+          "sha256": "dfb0db0ab3d365a6693dfc46ee16326b0aafe041d8ee9db1a0cf53e336ededbd",
+          "native_dimensions": [
+            1523,
+            2151
+          ],
+          "no_upscale": true
+        },
+        "identity_evidence": {
+          "original_game_source": "https://en.wikipedia.org/wiki/Final_Fantasy_XIV_(2010_video_game)",
+          "contemporary_press_context": "https://www.gematsu.com/2010/08/final-fantasy-xiv-collectors-edition-trailered",
+          "publication_year": 2010,
+          "platform": "Windows",
+          "unreleased_PS3_mockup_rejected": true
+        }
+      },
+      "supersedes_preferred_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/39210/library_600x900_2x.jpg"
+    }
+  },
+  "source_receipts": [
+    {
+      "local_path": "build\\research\\modern-game-cover-visual-qa\\ffxiv2010-contemporary-press.html",
+      "sha256": "bc777542565421e8e64a128ec74d11689f16c24e73a013e5bd6c87929962e3de"
+    },
+    {
+      "local_path": "build\\research\\modern-game-cover-visual-qa\\ffxiv2010-wikipedia.html",
+      "sha256": "221c553124849f235f7def6ed62040708065f6aef7380391858b21e7c08e06f0"
+    }
+  ],
+  "reviewed_candidate": {
+    "local_path": "build/research/modern-game-cover-visual-qa/ffxiv2010-original-windows-cover-role-corrected-candidate.json",
+    "sha256": "a64d293b432ad6eb990cef5c7c31b5dbb0aec1567a1f6475a488583928e0d0ef"
+  },
+  "independent_review_receipt": "build/research/modern-game-cover-visual-qa/ffxiv2010-original-cover-root-review.json"
+}

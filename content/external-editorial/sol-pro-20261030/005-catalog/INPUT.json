@@ -1,0 +1,731 @@
+{
+  "schema": "pixel-museum-editorial-input-v1",
+  "batch_id": "005-catalog",
+  "source_file": "content/catalog.json",
+  "source_sha256": "0b077b3f8628f921ab84574d286f9d9943fb8ae6acb8f136ffadde6e01cae241",
+  "entries": [
+    {
+      "entry_id": "workbook-06-27-atari",
+      "kind": "organization",
+      "year_context_only": 1972,
+      "date_context_only": {
+        "month": 6,
+        "day": 27,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "foundation",
+      "factual_note": "Imported dated English Playhub editorial. Adapt its calendar wording, review publisher dates and assign rights-cleared media before presenting as a finished museum stop.",
+      "main": {
+        "feature_id": null,
+        "title": "Atari",
+        "subtitle": "Atari Takes Video Games out of the Laboratory and into Mass Culture",
+        "summary": "On June 27, 1972 Nolan Bushnell and Ted Dabney formally incorporated Atari in California.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Atari Takes Video Games out of the Laboratory and into Mass Culture",
+            "text": "On June 27, 1972 Nolan Bushnell and Ted Dabney formally incorporated Atari in California. A few months later Pong turned an electronic experiment into a recognizable presence in public venues, and the Atari 2600 later brought interchangeable software into the living room. The company's history is full of turns and crises, but its first decade defined industrial practices, advertising language and commercial expectations through which video games entered the mass market."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "From Computer Space to a new company",
+            "text": "Bushnell and Dabney had already worked together on Computer Space when they founded Atari in 1972. Allan Alcorn joined as an engineer, and Pong became the new company's early success. Supplying it involved finding components, assembling cabinets and placing machines in venues. As demand grew, Atari had to turn the team's working design into equipment that could be built, distributed and maintained in larger numbers."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Pong and simplicity that conquers public venues",
+            "text": "Pong reduces competition to two paddles, a ball and a score. The vertical movement of one's paddle is quickly understood by watching the screen, while another person's presence makes every rally unpredictable. The simple representation supports a precise interaction: reach the ball, return it and make the opponent miss. In a public venue, that immediacy matters because the machine must make sense even to someone who has never played a video game. Pong needs no lengthy introduction to create attention and competition. Its success reveals a new commercial possibility for Atari: a basic set of rules can gather people around a screen and turn a few minutes of play into an experience worth repeating."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "The Atari 2600 separates hardware and software",
+            "text": "The Video Computer System of 1977, later known as the Atari 2600, changes the relationship between machine and game. People buy a console that can run different cartridge titles, rather than a device tied to a single program. The hardware's useful life thus also depends on the software that keeps arriving. Each new release offers a reason to return to the same machine and expand a personal collection. For the company, supporting the console means organising a catalogue, distributing cartridges and convincing people of their value. Home gaming takes on a different rhythm from the arcade: the initial investment stays in the living room while the experiences can change. Atari helps familiarise the public with a model that will shape the console market long after the 2600 itself."
+          }
+        ],
+        "sources": [
+          {
+            "title": "www.atariarchives.org",
+            "url": "https://www.atariarchives.org/cfn/12/03/0059.php",
+            "publisher": "www.atariarchives.org"
+          },
+          {
+            "title": "en.wikipedia.org",
+            "url": "https://en.wikipedia.org/wiki/Atari,_Inc.",
+            "publisher": "en.wikipedia.org"
+          },
+          {
+            "title": "www.ataricompendium.com",
+            "url": "https://www.ataricompendium.com/faq/faq.html",
+            "publisher": "www.ataricompendium.com"
+          },
+          {
+            "title": "atari.com",
+            "url": "https://atari.com/pages/history",
+            "publisher": "atari.com"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "pong",
+      "kind": "game",
+      "year_context_only": 1972,
+      "date_context_only": {
+        "month": 11,
+        "day": 29,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "Pong",
+        "subtitle": "Two People Are Enough to Fill a Screen",
+        "summary": "Two paddles and one moving square helped turn electronic play into a public business.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "An Atari arcade game",
+            "text": "Pong is a 1972 sports video game developed and published by Atari, Inc. for arcades. It was created by Allan Alcorn as a training exercise assigned to him by Atari co-founder Nolan Bushnell. Bushnell and Atari co-founder Ted Dabney were so surprised by the quality of Alcorn's work that they decided to manufacture the game. Bushnell based the game's concept on an electronic ping-pong game included on the Magnavox Odyssey, the first home video game console; in response, Magnavox later sued Atari for patent infringement."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Two paddles and eleven points",
+            "text": "Pong is a two-dimensional sports game that simulates table tennis. The player controls an in-game paddle by moving it vertically across the left or right side of the screen. They can compete against another player controlling a second paddle on the opposing side. Players use the paddles to hit a ball back and forth. The goal is for each player to reach eleven points before the opponent; points are earned when one fails to return the ball to the other."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Building the rules in circuitry",
+            "text": "Allan Alcorn built the first Pong with dedicated electronic circuits. The ball, paddles, score and video signal were produced by components and connections in the hardware. For the prototype's display, he used an inexpensive black-and-white television instead of a more costly dedicated monitor. These choices connected the rules of the game to practical questions of cost and reliability."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "The public fills the coin box",
+            "text": "Atari installed the prototype in Andy Capp's Tavern in Sunnyvale. Visitors could learn the contest by watching the ball and two paddles, then take turns at its knobs. In the account retold by the Computer History Museum, the machine appeared to stop working because its coin container had filled. The location test gave Atari a chance to see how people approached the game in an ordinary public venue."
+          },
+          {
+            "card_id": "main:4",
+            "original_index": 4,
+            "heading": "Reading the next return",
+            "text": "Each rally asks the players to judge the ball's trajectory and move a paddle in time to return it. The opponent's response changes the next shot, producing different exchanges from the same rules. Watching a rally makes the objective clear: return the ball and try to make the other player miss. That clarity helped people begin playing in venues where they had little time or instruction before taking the controls."
+          },
+          {
+            "card_id": "main:5",
+            "original_index": 5,
+            "heading": "An early commercial success",
+            "text": "Pong arrived during an early commercial period that also included the Magnavox Odyssey, released for the home in 1972. The Computer History Museum notes the Odyssey's influence on Bushnell. Atari's arcade game reached a highly visible audience in public venues and became profitable for the new company. Its rules were also easy for competing manufacturers to reproduce, helping spread the format."
+          },
+          {
+            "card_id": "main:6",
+            "original_index": 6,
+            "heading": "From the tavern to the living room",
+            "text": "After the arcade game succeeded, Alcorn led work to put Pong into a custom integrated circuit for a home version. Sears placed a large order for the 1975 holiday season. Atari now needed to manufacture in greater quantities and supply a product households could connect to a television. The same recognisable game moved from a prototype and coin-operated cabinet into national retail distribution."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Atari Announces Pong Game",
+            "url": "https://www.computerhistory.org/tdih/november/29/",
+            "publisher": "Computer History Museum"
+          },
+          {
+            "title": "From Computer Space to Pong: virtual guided tour",
+            "url": "https://old.computerspielemuseum.de/1291_From_Computer_Space_to_Pong.htm",
+            "publisher": "Computerspielemuseum, Berlin",
+            "attribution": "Copyright retained by the museum; bibliographic reference only."
+          },
+          {
+            "title": "Computer Games: Evolution of a Medium — permanent exhibition",
+            "url": "https://www.computerspielemuseum.de/en/Museum/45-Permanent-Exhibition.htm",
+            "publisher": "Computerspielemuseum, Berlin",
+            "attribution": "Copyright retained by the museum; link and original bibliographic summary only."
+          },
+          {
+            "title": "computerhistory.org",
+            "url": "https://computerhistory.org/blog/50-years-of-fun-with-pong/",
+            "publisher": "computerhistory.org"
+          },
+          {
+            "title": "Pong — original release infobox, Wikipedia revision 1378999487",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1378999487",
+            "publisher": "English Wikipedia contributors"
+          }
+        ]
+      },
+      "features": [
+        {
+          "feature_id": "feature-coin-op-location-test",
+          "title": "The machine meets its location",
+          "subtitle": "",
+          "summary": "A working game still had to survive players, operators and collection day.",
+          "cards": [
+            {
+              "card_id": "feature:feature-coin-op-location-test:0",
+              "original_index": 0,
+              "heading": "Before the new game arrives",
+              "text": "Dabney and Bushnell bought a route of pinball machines, pool tables and other amusements from a Nutting salesman. Collecting their takings helped support the pair after they left their previous salaries. Running the route meant placing equipment, collecting money and keeping machines usable. Their new electronic games would enter an existing business of venues and maintained amusement machines."
+            },
+            {
+              "card_id": "feature:feature-coin-op-location-test:1",
+              "original_index": 1,
+              "heading": "Out of the workshop",
+              "text": "Dabney recalled putting an early Pong prototype in a small cabinet and adapting a laundry-machine coin mechanism. Later machines could be installed in places on the pair's amusement route. A location test tried the whole object away from its workbench: the cabinet needed to survive use, the coin mechanism had to function and customers had to be able to operate the controls."
+            },
+            {
+              "card_id": "feature:feature-coin-op-location-test:2",
+              "original_index": 2,
+              "heading": "What a worn knob reveals",
+              "text": "Al Alcorn remembered another lesson in the paddle controls. An inexpensive potentiometer wore out after heavy use. Counting coins and estimating the many knob movements within each paid game revealed a much harsher duty cycle than a brief workshop demonstration suggested. The team sought a more durable component. This was feedback expressed through a damaged part rather than a written player survey. A successful attraction demanded more engineering because people kept touching it. The physical gesture that made the game accessible also became a recurring maintenance requirement."
+            },
+            {
+              "card_id": "feature:feature-coin-op-location-test:3",
+              "original_index": 3,
+              "heading": "Designing for the repair",
+              "text": "Service habits could cause trouble too. Alcorn recalled early machines with external power supplies returning after operators adjusted the visible voltage control while trying to improve sound or picture. Integrating the supply into the board reduced that opportunity for damage. His explanation connects circuit design with the people expected to maintain a cabinet. The lesson was specific and expensive: supplying a functioning prototype did not guarantee a dependable product. What happened after installation could change the hardware that eventually left the workshop for the next location."
+            }
+          ],
+          "sources": [
+            {
+              "id": "dabney12",
+              "title": "Oral History of Ted Dabney",
+              "url": "https://archive.computerhistory.org/resources/access/text/2012/10/102746459-05-01-acc.pdf",
+              "publisher": "Chris Garcia / Computer History Museum, interview 16 July 2012",
+              "source_type": "primary_oral_history",
+              "locator": "Printed p. 12: buying the machine route from a Nutting salesman (named Dave Rolston in this transcript); the collections supported them when they quit Nutting. No purchase-after-departure sequence is asserted. Printed p.15: distinguishing Andy Capp's early cabinet and laundromat coin mechanism from later prototypes; retrospective sequence correction.",
+              "checked": "2026-10-21",
+              "rights": "Bibliographic reference only. The narrative is original, contains no verbatim quotations and does not grant permission to reproduce source images or documents.",
+              "story_paragraphs": [
+                0,
+                1
+              ],
+              "paragraph_locators": {
+                "0": "Printed p. 12: buying the machine route from a Nutting salesman (named Dave Rolston in this transcript); the collections supported them when they quit Nutting. No purchase-after-departure sequence is asserted.",
+                "1": "Printed p.15: distinguishing Andy Capp's early cabinet and laundromat coin mechanism from later prototypes; retrospective sequence correction."
+              }
+            },
+            {
+              "id": "alcorn08",
+              "title": "Oral History of Allan (Al) Alcorn",
+              "url": "https://archive.computerhistory.org/resources/access/text/2012/09/102658257-05-01-acc.pdf",
+              "publisher": "Henry Lowood / Computer History Museum, interviews 26 April and 23 May 2008",
+              "source_type": "primary_oral_history",
+              "locator": "Printed p.16: early potentiometer failure, estimating rotations from collections and sourcing a higher-life component. Printed pp.14–15: external power-supply adjustments, returned early boards and integrated regulation.",
+              "checked": "2026-10-21",
+              "rights": "Bibliographic reference only. The narrative is original, contains no verbatim quotations and does not grant permission to reproduce source images or documents.",
+              "story_paragraphs": [
+                2,
+                3
+              ],
+              "paragraph_locators": {
+                "2": "Printed p.16: early potentiometer failure, estimating rotations from collections and sourcing a higher-life component.",
+                "3": "Printed pp.14–15: external power-supply adjustments, returned early boards and integrated regulation."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entry_id": "wikipedia-1120399",
+      "kind": "game",
+      "year_context_only": 1973,
+      "date_context_only": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Reference article introduction reproduced under its stated licence. Year comes from the article's release-year category; regional/port dates may differ.",
+      "main": {
+        "feature_id": null,
+        "title": "Maze",
+        "subtitle": "",
+        "summary": "Maze, also known as Mazewar, and Maze War, is a 3D multiplayer first-person shooter maze game originally developed in 1973 and expanded in 1974.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "From a school project to networked play",
+            "text": "Maze, also called Mazewar or Maze War, is an early multiplayer game in which players explore a three-dimensional maze from a first-person view and shoot one another. Steve Colley, Greg Thompson and Howard Palmer began it on an Imlac PDS-1 at NASA Ames in 1973. Two connected computers could share a game by the end of that year. Thompson brought it to MIT in 1974, where he and Dave Lebling expanded it to eight players with scoring, overhead maps and a level editor. Later improvements allowed players at different universities to meet over ARPANET."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "A first-person view in many forms",
+            "text": "Thompson and other programmers later developed several other versions of Maze, including a specialized hardware-based game by Thompson and other students as well as a version titled Mazewar by Jim Guyton, Mike Wahrman, and colleagues at Xerox for the Xerox Alto computer. The Xerox version went on to inspire many different takes on the first-person maze game concept in the 1980s and 1990s, released under many different names. Maze is believed to be the first 3D first-person game ever made. It is likely also the earliest example of what was later termed the first-person shooter genre and is considered along with the 1974 space flight simulation game Spasim to be one of the \"joint ancestors\" of the genre. It has additionally been credited with a variety of other firsts, such as the first level editor, first observer mode and radar, and first avatars, but due to its reliance on specific, expensive computer hardware its direct influence on video games and the first-person shooter genre was limited."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Maze (1973 video game) — article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1376695309",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "1973 in video games — annual context",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1342195176",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/Maze_(1973_video_game)?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          },
+          {
+            "title": "Maze on the Imlac at the 2004 retrospective",
+            "url": "https://digibarn.com/collections/games/maze-war/imlacs-pds1-maze/index.html",
+            "publisher": "DigiBarn Computer Museum"
+          },
+          {
+            "title": "Maze War retrospective: original Xerox Star printout and participant accounts",
+            "url": "https://digibarn.com/collections/games/xerox-maze-war/index.html",
+            "publisher": "DigiBarn Computer Museum"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-13136650",
+      "kind": "game",
+      "year_context_only": 1973,
+      "date_context_only": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Reference article introduction reproduced under its stated licence. Year comes from the article's release-year category; regional/port dates may differ.",
+      "main": {
+        "feature_id": null,
+        "title": "Trek73",
+        "subtitle": "",
+        "summary": "TREK73 is a video game based on the original Star Trek television series.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Starship combat over a teletype",
+            "text": "TREK73 is a starship-combat game based on the original Star Trek television series. William K. Char, Perry Lee and Dan Gee created it in 1973 for the Hewlett-Packard 2000 minicomputer using HP Time-Shared BASIC. Players used a teletype to conduct the battles. The program was large enough to require the CHAIN feature of HP2000 BASIC."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Tactics rather than a galaxy map",
+            "text": "Unlike many other Trek-themed games of the era, Trek73 is not derived from the well-known Star Trek by Mike Mayfield. Trek73 simulates multi-ship starship combat in a smaller play area and does not include the more strategic elements of the original, like starbases and the galactic map layout."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "New terminals, new versions",
+            "text": "There are many minor variations of the original. Dave Korns adapted the code to support smart terminals, using the cursor control characters on the Hazeltine 2000 to produce an in-place updating display. In the mid-1980s, Dave Pare and Chris Williams translated the original BASIC version into C. Jeff Okamoto, Peter Yee, and others corrected and enhanced the source code."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Trek73 — article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1374631889",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "1973 in video games — annual context",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1342195176",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/Trek73?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-14323",
+      "kind": "game",
+      "year_context_only": 1973,
+      "date_context_only": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Reference article introduction reproduced under its stated licence. Year comes from the article's release-year category; regional/port dates may differ.",
+      "main": {
+        "feature_id": null,
+        "title": "Hunt the Wumpus",
+        "subtitle": "",
+        "summary": "Hunt the Wumpus is a text-based adventure game developed by Gregory Yob in 1973.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "A cave system beyond the square grid",
+            "text": "Hunt the Wumpus is a text-based adventure game developed by Gregory Yob in 1973. In the game, the player moves through a series of connected caves, arranged as the vertices of a dodecahedron, as they hunt a monster named the Wumpus. The turn-based game has the player trying to avoid fatal bottomless pits and \"super bats\" that will move them around the cave system; the goal is to fire one of their \"crooked arrows\" through the caves to kill the Wumpus. Yob created the game in early 1973 due to his annoyance at the multiple hide-and-seek games set in caves in a grid pattern, and multiple variations of the game were sold via mail order by Yob and the People's Computer Company. The source code to the game was published in Creative Computing in 1975 and republished in The Best of Creative Computing the following year."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "The Wumpus travels to other machines",
+            "text": "The game sparked multiple variations and expanded versions and was ported to several systems, including the TI-99/4A home computer. It has been cited as an early example of the survival horror genre, and was listed in 2012 on Time's All-Time 100 greatest video games list. The Wumpus monster has appeared in several forms in media since 1973, including other video games, a novella, and Magic: The Gathering cards."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Hunt the Wumpus — article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1347670542",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "1973 in video games — annual context",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1342195176",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/Hunt_the_Wumpus?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-3989467",
+      "kind": "game",
+      "year_context_only": 1973,
+      "date_context_only": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Reference article introduction reproduced under its stated licence. Year comes from the article's release-year category; regional/port dates may differ.",
+      "main": {
+        "feature_id": null,
+        "title": "Lemonade Stand",
+        "subtitle": "",
+        "summary": "Lemonade Stand is a business simulation game created in 1973 by Bob Jamison of the Minnesota Educational Computing Consortium (MECC).",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Pricing a business in twelve rounds",
+            "text": "Lemonade Stand is a business simulation game created in 1973 by Bob Jamison of the Minnesota Educational Computing Consortium (MECC). In it, the player moves through several rounds of running a lemonade stand, beginning each round by making choices dependent on their current amount of money about their stock, prices, and advertising. In each round, the results are randomized based on the player's inputs, as well as affected by random events such as thunderstorms and street closures. Each round ends with a summary of the player's current status, and the game ends after 12 rounds."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "An Apple II lesson in decisions",
+            "text": "In 1979, the game was ported by Charlie Kellner to the Apple II; Apple subsequently included the game with their computers throughout the 1980s. MECC also offered the game for sale as a part of bundles of children's software for Apple computers and Atari 8-bit computers. Kellner's source code was released, and has since been ported to modern computers as a free, open-source game. Reviewers of the game, both contemporary and retroactive, viewed the game as a good primer for children with regard to business and decision-making processes."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Lemonade Stand — article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1370524574",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "1973 in video games — annual context",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1342195176",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/Lemonade_Stand?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-6336052",
+      "kind": "game",
+      "year_context_only": 1973,
+      "date_context_only": {
+        "month": 7,
+        "day": 16,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Reference article introduction reproduced under its stated licence. Year comes from the article's release-year category; regional/port dates may differ.",
+      "main": {
+        "feature_id": null,
+        "title": "Space Race",
+        "subtitle": "",
+        "summary": "Space Race is an arcade game developed by Atari, Inc. and released on July 16, 1973.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Crossing a field of moving obstacles",
+            "text": "Space Race is an arcade game developed by Atari, Inc. and released on July 16, 1973. It was the second game by the company, after Pong (1972), which marked the beginning of the commercial video game industry along with the Magnavox Odyssey. In the game, two players each control a rocket ship, with the goal of being the first to move their ship from the bottom of the screen to the top. Along the way are asteroids, which the players must avoid. Space Race was the first racing arcade video game and the first game with a goal of crossing the screen while avoiding obstacles."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Two publishers, closely related machines",
+            "text": "Development of Space Race began in Summer 1972 under the name Asteroid by Atari co-founder Nolan Bushnell, based on ideas by him and co-founder Ted Dabney. The final design was done by Dabney, possibly with assistance by Bushnell and Pong designer Allan Alcorn. The game was planned to be quick to create to fulfill an earlier contract with Midway Manufacturing. The engineering and prototyping was done by Alcorn; after it was completed and the design given to Midway to be released as Asteroid, Atari produced its own nearly identical version as Space Race. Fifty Space Race cabinets were produced using a fiberglass design by George Faraco before the rest of the production was switched to a cheaper standard cabinet."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "An unsuccessful follow-up to Pong",
+            "text": "Space Race was not commercially successful; Bushnell said that it was much less popular than Pong. Midway held that the release of Space Race violated Atari's contract with them for Asteroid, and the companies agreed for Atari to forfeit royalty payments for the game."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Space Race (video game) — article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1376339309",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "1973 in video games — annual context",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1342195176",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/Space_Race_(video_game)?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          },
+          {
+            "title": "Space Race (video game) — original release infobox, Wikipedia revision 1376339309",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1376339309",
+            "publisher": "English Wikipedia contributors"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-5143231",
+      "kind": "game",
+      "year_context_only": 1973,
+      "date_context_only": {
+        "month": 10,
+        "day": 11,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Reference article introduction reproduced under its stated licence. Year comes from the article's release-year category; regional/port dates may differ.",
+      "main": {
+        "feature_id": null,
+        "title": "Gotcha",
+        "subtitle": "",
+        "summary": "Gotcha is an arcade video game developed by Atari and released in October 1973.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "A maze that will not stand still",
+            "text": "Gotcha is an arcade video game developed by Atari and released in October 1973. It was the fourth game by the company, after the 1972 Pong, which marked the beginning of the commercial video game industry along with the Magnavox Odyssey, and the 1973 Space Race and Pong Doubles. In the game, two players move through a maze, which continually changes over time. One player, the Pursuer, attempts to catch the other, the Pursued; if they do, a point is scored, and the players reset positions. The game emits an electronic beeping sound, which increases in pace as the Pursuer gets closer to the Pursued, and each game lasts a set amount of time."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "A cabinet built to attract attention",
+            "text": "Gotcha was designed by Allan Alcorn, the designer of Pong, and a prototype was constructed by Cyan Engineering, Atari's semi-independent research and development subsidiary. Development began in July 1973 as part of Atari's strategy to develop multiple types of games to separate themselves from their competitors, who they saw as focused primarily on creating Pong clones. The cabinet was designed by George Faraco, initially with the joysticks encased in pink domes meant to represent breasts. Although this design inspired the advertising flyer on which it appears behind a man chasing a woman in a nightdress, it was changed to use regular joysticks soon after release."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Several approaches to arcade colour",
+            "text": "The game was not commercially successful; later sources have termed it as \"arousing little more than controversy\", though one source claims it sold 3,000 units. In addition to the main black-and-white game, limited runs were produced of a tinted color version and a true multi-color version of the game; the latter is believed to be the first color arcade game."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Gotcha (video game) — article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1363850053",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "1973 in video games — annual context",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1342195176",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/Gotcha_(video_game)?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          },
+          {
+            "title": "Gotcha (video game) — original release infobox, Wikipedia revision 1363850053",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1363850053",
+            "publisher": "English Wikipedia contributors"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-14924978",
+      "kind": "game",
+      "year_context_only": 1974,
+      "date_context_only": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Reference article introduction reproduced under its stated licence. Year comes from the article's release-year category; regional/port dates may differ.",
+      "main": {
+        "feature_id": null,
+        "title": "Qwak!",
+        "subtitle": "",
+        "summary": "Qwak! is a 1974 light gun shooter video game developed by Cyan Engineering and published by Atari for arcades.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Three shots and a duck that reacts",
+            "text": "Qwak! is a 1974 light gun shooter video game developed by Cyan Engineering and published by Atari for arcades. In the game, ducks fly one at a time across the screen, and the player shoots at them using a light gun attached to the game cabinet. The player gets three shots per duck; ducks change direction away from missed shots, and fall to the bottom of the screen when hit. A screen overlay adds images of reeds and a tree branch, and an image of a duck is added to a row at the top of the screen whenever a duck is hit. Games continue until a time limit, set by the machine operator, is reached."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "A light-gun idea with a limited run",
+            "text": "Development of Qwak! began in 1974, finishing in November. It was presented at the November 1974 Music Operators of America (MOA) Music & Amusement Machines Exposition for release that month. The game was not commercially successful; according to Ralph H. Baer, approximately 250 units were sold. A two-player electro-mechanical clone game by U.S. Billiards, Duck Shooting, was produced around the same time, and Qwak! has been suggested as a possible inspiration for the 1984 Nintendo Entertainment System light gun game Duck Hunt."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Qwak! — article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1353701591",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "1974 in video games — annual context",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1342195182",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/Qwak!?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-15050884",
+      "kind": "game",
+      "year_context_only": 1974,
+      "date_context_only": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Reference article introduction reproduced under its stated licence. Year comes from the article's release-year category; regional/port dates may differ.",
+      "main": {
+        "feature_id": null,
+        "title": "Rebound",
+        "subtitle": "",
+        "summary": "Rebound is a two-player sports arcade video game developed by Atari and released in February 1974.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Paddle position shapes the return",
+            "text": "Rebound is a two-player sports arcade video game developed by Atari and released in February 1974. In the game, two players each control paddles on either side of a volleyball net, with a ball dropped from the top of the screen. The players bounce the ball back and forth across the net with the goal of scoring points by having the ball reach the bottom or side of the other player's half of the screen, with the trajectory of the ball dependent on where it strikes the paddle. The winner is the first player to reach eleven or fifteen points, depending on the game settings."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Variations, conversion kits and a second brand",
+            "text": "Development of Rebound began in late 1973, as one of several variations they produced in 1974 on the gameplay of the successful Pong (1972), Atari's first game and the fourth-ever arcade video game. Around the same time, Atari launched Kee Games, a subsidiary meant to produce clone games of Atari's products and act as a competitor in order to expand into more distribution channels in the same region than the industry typically supported. Kee's first game, released in March 1974, was Spike, a clone of Rebound, which added a \"spike\" button to the game that made the paddle jump up and attempt to bounce the ball downwards instead of up. In addition to the base game, Atari sold a conversion kit to convert any Atari two-player Pong variant into Rebound, and in 1977 Rebound was included in Video Olympics for the Atari 2600, a collection of Pong variants."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Rebound (video game) — article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1353702035",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "1974 in video games — annual context",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1342195182",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/Rebound_(video_game)?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          },
+          {
+            "title": "Rebound: original collector-owned Atari conversion-kit flyer",
+            "url": "https://www.andysarcade.net/personal/bronzeage/details/rebound/index.htm",
+            "publisher": "Andy's Arcade / original Atari advertisement"
+          }
+        ]
+      },
+      "features": []
+    }
+  ]
+}

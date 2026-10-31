@@ -1,0 +1,527 @@
+{
+  "batch_id": "044-catalog",
+  "status": "completed",
+  "sources": [
+    {
+      "source_id": "044-S01",
+      "url": "https://web.archive.org/web/20140611225644/http://www.nintendo.com/consumer/downloads/snes_games.pdf",
+      "title": "Super NES Games — elenco storico nordamericano",
+      "publisher": "Nintendo of America",
+      "accessed_at": "2026-10-30",
+      "scope": "PDF ufficiale storico recuperato; riga Addams Family, The — Ocean — March 1992.",
+      "limitation": "L’elenco documenta il mese della versione SNES in Nord America. Non documenta una data PAL del 19 novembre; nessun giorno inventato."
+    },
+    {
+      "source_id": "044-S02",
+      "url": "https://web.archive.org/web/20160402145858/https://www.nintendo.com/consumer/downloads/dmg_games.pdf",
+      "title": "Original Game Boy Games — elenco storico nordamericano",
+      "publisher": "Nintendo of America",
+      "accessed_at": "2026-10-30",
+      "scope": "PDF ufficiale storico recuperato; riga Addams Family, The — Ocean — January 1992.",
+      "limitation": "Mese della versione Game Boy in Nord America; non è data simultanea per ogni piattaforma e regione."
+    },
+    {
+      "source_id": "044-S03",
+      "url": "https://en.wikipedia.org/wiki/The_Addams_Family_(video_game)",
+      "title": "The Addams Family — piattaforme e riferimenti delle release",
+      "publisher": "Wikipedia contributors, CC BY-SA",
+      "accessed_at": "2026-10-30",
+      "scope": "Consultato l’infobox e le note: 19 novembre 1992 è attribuito alla versione SNES PAL, ma la riga è priva di citazione; recuperati i due registri Nintendo collegati.",
+      "limitation": "Fonte secondaria usata per identificare il problema e raggiungere i documenti primari. Il giorno PAL non è propagato come release universale."
+    },
+    {
+      "source_id": "044-S04",
+      "url": "https://www.sega.jp/mdmini/soft/sonic-the-hedgehog-2.html",
+      "title": "Sonic the Hedgehog 2 — Mega Drive Mini",
+      "publisher": "Sega",
+      "accessed_at": "2026-10-30",
+      "scope": "Scheda ufficiale che indica 1992/11/21 come data della versione originale Mega Drive giapponese.",
+      "limitation": "La data non si estende al lancio occidentale del 24 novembre, che il lotto già distingue esplicitamente, né alle versioni a 8 bit."
+    },
+    {
+      "source_id": "044-S05",
+      "url": "https://support.jp.square-enix.com/faqarticle.php?id=199&kid=45702&la=0&pv=20&ret=main",
+      "title": "Final Fantasy V — release dates, FAQ45702",
+      "publisher": "Square Enix Support",
+      "accessed_at": "2026-10-30",
+      "scope": "FAQ ufficiale: Super Famicom 6 dicembre 1992; PlayStation giapponese 19 marzo 1998.",
+      "limitation": "Usata per assegnare la regione alla release SFC già fornita. La data PS1 non è necessaria al testo e non viene aggiunta."
+    },
+    {
+      "source_id": "044-S06",
+      "url": "https://web.archive.org/web/20070421003854/http://www.the-magicbox.com/Chart-USPlatinum.shtml",
+      "title": "US Platinum Videogame Chart",
+      "publisher": "The Magic Box",
+      "accessed_at": "2026-10-30",
+      "scope": "Tabella archiviata recuperata: Final Fantasy Anthology (FFV, FFVI), PlayStation,364000 copie. Chiarisce l’oggetto del dato oltre350000 presente nell’INPUT.",
+      "limitation": "Compilazione secondaria di dati di vendita, non bilancio Square. Conservato il valore arrotondato originale oltre350000; corretta soltanto l’attribuzione alla raccolta nordamericana."
+    },
+    {
+      "source_id": "044-S07",
+      "url": "https://iucat.iu.edu/catalog/15557061",
+      "title": "Final fantasy anthology — catalog15557061",
+      "publisher": "Indiana University Libraries",
+      "accessed_at": "2026-10-30",
+      "scope": "Descrizione bibliografica dell’esemplare fisico: contiene Final Fantasy V e VI; Greatest hits trascritto dalla confezione.",
+      "limitation": "Riscontro del contenuto della raccolta e della marcatura originale, non fonte delle vendite né data di prima uscita."
+    },
+    {
+      "source_id": "044-S08",
+      "url": "https://web.archive.org/web/20150101000000/http://www.square-enix.com/jp/archive/46okunen/",
+      "title": "46 Okunen Monogatari: Harukanaru Eden e — scheda prodotto originale",
+      "publisher": "Square Enix",
+      "accessed_at": "2026-10-30",
+      "scope": "Pagina storica recuperata e letta in Shift-JIS: Super Famicom, release21dicembre1992. Conferma il riferimento giapponese di E.V.O.",
+      "limitation": "L’URL Wayback richiesto reindirizza alla copia disponibile; la pagina moderna rinvia a una scheda senza dati leggibili. La data non è quella dell’edizione nordamericana."
+    },
+    {
+      "source_id": "044-S09",
+      "url": "https://www.natsumeatari.co.jp/wpnatsumeatari/wp-content/uploads/%E9%85%8D%E4%BF%A1%E8%A8%B1%E8%AB%BE%E3%82%BF%E3%82%A4%E3%83%88%E3%83%AB%E4%B8%80%E8%A6%A7%E3%80%80%E3%83%8A%E3%83%84%E3%83%A1%E3%82%A2%E3%82%BF%E3%83%AA-1.pdf",
+      "title": "Elenco dei titoli autorizzati alla distribuzione video",
+      "publisher": "Natsume Atari",
+      "accessed_at": "2026-10-30",
+      "scope": "Tabella ufficiale indicizzata: Kiki Kaikai: Nazo no Kuro Manto, Super Famicom,22dicembre1992.",
+      "limitation": "Lettura del contenuto indicizzato del documento; nessuna pretesa di verifica delle altre release o del remake."
+    },
+    {
+      "source_id": "044-S10",
+      "url": "https://archive.org/details/nms-22/page/10/mode/2up",
+      "title": "Nintendo rules! — Nintendo Magazine System n.22,luglio1994,p.10",
+      "publisher": "EMAP / Nintendo Magazine System",
+      "accessed_at": "2026-10-30",
+      "scope": "OCR della pagina contemporanea letto: Golden Joystick tenuti a Londra il16maggio; tre premi Nintendo: Super Mario All-Stars, Link’s Awakening handheld e pubblicità.",
+      "limitation": "Anno determinato dal numero1994 della rivista; non confuse stagione1993/1994 e cerimonia. Nessun premio aggiunto per analogia."
+    },
+    {
+      "source_id": "044-S11",
+      "url": "https://archive.org/details/theone-magazine-69/page/n11/mode/2up",
+      "title": "Joysticks triumph for Virgin — The One n.69,luglio1994,pp.12–13",
+      "publisher": "EMAP / The One",
+      "accessed_at": "2026-10-30",
+      "scope": "OCR del resoconto contemporaneo letto: Virgin bestsoftwarehouse,CannonFodder originalcomputer,TFX simulation,SensibleSoftware programmer,Acclaim services.",
+      "limitation": "Conferma gli altri cinque risultati già presenti. Non importati ulteriori dettagli della serata non necessari alla correzione."
+    },
+    {
+      "source_id": "044-S12",
+      "url": "https://en.wikipedia.org/wiki/Street_Fighter_II_Turbo",
+      "title": "Street Fighter II Turbo — release infobox",
+      "publisher": "Wikipedia contributors, CC BY-SA",
+      "accessed_at": "2026-10-30",
+      "scope": "L’infobox della fonte fornita attribuisce17dicembre1992 al Giappone e alla versione arcade. La nota rimanda alla cronologia Capcom35th.",
+      "limitation": "Cronologia Capcom diretta e copia archivistica restituivano403: non dichiarata una nuova verifica primaria della data esatta. Il testo mantiene1992 senza falsa data mondiale; il metadato viene circoscritto secondo l’attribuzione della fonte fornita."
+    }
+  ],
+  "decisions": [
+    {
+      "target_id": "wikipedia-5837893",
+      "problem": "Il metadato19novembre1992 senza regione sembra una release generale ma proviene da una riga PAL SNES non documentata.",
+      "conclusion": "Le fonti primarie Nintendo attestano GameBoy gennaio1992 e SNES marzo1992 in NordAmerica. Inserita la distinzione nel testo; proposta una collocazione mensile sulla versione GameBoy documentata, evitando il giorno PAL non verificato.",
+      "source_ids": [
+        "044-S01",
+        "044-S02",
+        "044-S03"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "workbook-11-24-sonic-the-hedgehog-2",
+      "problem": "ID e sommario originale richiamano24novembre mentre il metadato contiene21novembre senza regione.",
+      "conclusion": "Entrambe le date restano nel racconto: Giappone21novembre, NordAmerica ed Europa24novembre1992 per il16bit. Proposta regioneGiappone sul metadato esistente; ID immutato.",
+      "source_ids": [
+        "044-S04"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-52767",
+      "problem": "Oltre350000 copie e GreatestHits vengono attribuiti genericamente a FinalFantasyV perPlayStation; pronome nella cardversioni può far confondere OVA egioco suPSN.",
+      "conclusion": "La cifra e la marcatura riguardano la raccolta nordamericana FinalFantasyAnthology conV eVI. Chiarita l’attribuzione e separata la produzione animata1994 dalle riedizioni del videogioco, conservando tutte le date delle versioni.",
+      "source_ids": [
+        "044-S06",
+        "044-S07"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-52767",
+      "problem": "La data6dicembre1992 non ha regione nel metadato.",
+      "conclusion": "Confermata come release SuperFamicom giapponese dalla FAQdelpublisher; proposta regioneGiappone senza cambiare data originale.",
+      "source_ids": [
+        "044-S05"
+      ],
+      "text_applied": false
+    },
+    {
+      "target_id": "e-v-o-search-for-eden-1992",
+      "problem": "Originalcommercialrelease non identifica una regione e può fondere edizioni diverse.",
+      "conclusion": "La scheda storica SquareEnix attesta la release SuperFamicom giapponese del21dicembre1992. Proposta sostituzione della regione generica conGiappone.",
+      "source_ids": [
+        "044-S08"
+      ],
+      "text_applied": false
+    },
+    {
+      "target_id": "pocky-rocky-1992",
+      "problem": "La data del gioco originale va distinta da successivi rifacimenti con titolo simile.",
+      "conclusion": "Il documento ufficiale NatsumeAtari conferma22dicembre1992 per KikiKaikai:NazonoKuroManto suSuperFamicom. Conservate data e regione originali; il testo distingue1992Giappone da1993estero.",
+      "source_ids": [
+        "044-S09"
+      ],
+      "text_applied": false
+    },
+    {
+      "target_id": "golden-joystick-awards-1993",
+      "problem": "L’anno nominale1993 non è quello della cerimonia effettiva dell’edizione1993/1994.",
+      "conclusion": "I resoconti contemporanei confermano i vincitori e16maggio1994 aLondra. Conservato il titolo proprio1993; proposta collocazione alla cerimonia1994.",
+      "source_ids": [
+        "044-S10",
+        "044-S11"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-6574955",
+      "problem": "La data17dicembre1992 senza regione rischia di essere interpretata come release mondiale o conversioneSNES.",
+      "conclusion": "Circoscritta nell’audit al Giappone e alla versione arcade secondo la fonte fornita. Non trasformato il403della fonteCapcom in una verifica eseguita. Nessun cambiamento del giorno o del mese basato su memoria.",
+      "source_ids": [
+        "044-S12"
+      ],
+      "text_applied": false
+    },
+    {
+      "target_id": "doom-wad-modding-1993",
+      "problem": "Il1993 potrebbe essere letto come invenzione assoluta delmodding o data di pubblicazione delsorgente.",
+      "conclusion": "Conservata esplicitamente la successione: CastleSmurfenstein1983,DOOM/WAD1993,sorgente1997,CounterStrike mod1999 e retail2000. Non trasformata la voce culturale in biografia diCarmack.",
+      "source_ids": [],
+      "text_applied": true
+    }
+  ],
+  "metadata_proposals": [
+    {
+      "target_id": "wikipedia-5837893",
+      "action": "replace_unsupported_unscoped_day_with_documented_release",
+      "original_date": {
+        "year": 1992,
+        "month": 11,
+        "day": 19,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed_date": {
+        "year": 1992,
+        "month": 1,
+        "day": 0,
+        "precision": "month",
+        "region": "North America",
+        "version": "Game Boy"
+      },
+      "additional_documented_release": {
+        "year": 1992,
+        "month": 3,
+        "day": 0,
+        "precision": "month",
+        "region": "North America",
+        "version": "Super NES"
+      },
+      "reason": "La voce copre piùformati: collocazione proposta sulla piùprecoce disponibilità pubblica documentata dai registri consultati, senza pretendere simultaneità mondiale. Il19novembrePAL non è documentato.",
+      "source_ids": [
+        "044-S01",
+        "044-S02"
+      ],
+      "catalog_modified": false
+    },
+    {
+      "target_id": "workbook-11-24-sonic-the-hedgehog-2",
+      "action": "specify_regional_scope",
+      "proposed_date": {
+        "year": 1992,
+        "month": 11,
+        "day": 21,
+        "precision": "day",
+        "region": "Japan",
+        "version": "Mega Drive16-bit"
+      },
+      "reason": "Il24novembre nell’ID resta immutato e nel racconto identifica la successiva uscita occidentale.",
+      "source_ids": [
+        "044-S04"
+      ],
+      "catalog_modified": false
+    },
+    {
+      "target_id": "wikipedia-52767",
+      "action": "specify_regional_scope",
+      "proposed_date": {
+        "year": 1992,
+        "month": 12,
+        "day": 6,
+        "precision": "day",
+        "region": "Japan",
+        "version": "Super Famicom"
+      },
+      "reason": "FAQufficialeSquareEnix riferita alla versione originale giapponese.",
+      "source_ids": [
+        "044-S05"
+      ],
+      "catalog_modified": false
+    },
+    {
+      "target_id": "e-v-o-search-for-eden-1992",
+      "action": "replace_non_geographic_region",
+      "proposed_date": {
+        "year": 1992,
+        "month": 12,
+        "day": 21,
+        "precision": "day",
+        "region": "Japan",
+        "version": "Super Famicom"
+      },
+      "reason": "La scheda delpublisher identifica il titolo giapponese e la piattaforma.",
+      "source_ids": [
+        "044-S08"
+      ],
+      "catalog_modified": false
+    },
+    {
+      "target_id": "wikipedia-6574955",
+      "action": "specify_regional_scope_from_supplied_reference",
+      "proposed_date": {
+        "year": 1992,
+        "month": 12,
+        "day": 17,
+        "precision": "day",
+        "region": "Japan",
+        "version": "Arcade"
+      },
+      "reason": "Attribuzione territoriale della fonte fornita; nessuna nuova verifica primaria della cronologiaCapcom inaccessibile.",
+      "source_ids": [
+        "044-S12"
+      ],
+      "catalog_modified": false
+    },
+    {
+      "target_id": "golden-joystick-awards-1993",
+      "action": "align_explicit_event_to_ceremony",
+      "original_date": {
+        "year": 1993,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed_date": {
+        "year": 1994,
+        "month": 5,
+        "day": 16,
+        "precision": "day",
+        "region": "London, UK"
+      },
+      "reason": "Stagione delpremio e cerimonia distinti; titolo e ID conservati.",
+      "source_ids": [
+        "044-S10",
+        "044-S11"
+      ],
+      "catalog_modified": false
+    }
+  ],
+  "expansion_assessments": [
+    {
+      "target_id": "the-magical-quest-starring-mickey-mouse-1992",
+      "main_cards": 2,
+      "feature_cards": 0,
+      "threshold_applicable": 5,
+      "missing_cards": 3,
+      "rationale": "Capcom integra tre costumi con movimento, combattimento e risorse; voce significativa dell’adattamento Disney su SNES."
+    },
+    {
+      "target_id": "wikipedia-5837893",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": null,
+      "missing_cards": 0,
+      "rationale": "Le tre card coprono adattamento, esplorazione e produzione. Il materiale non determina una priorità di ampliamento alla soglia dei giochi più importanti; non applicata una quota automatica."
+    },
+    {
+      "target_id": "workbook-11-24-sonic-the-hedgehog-2",
+      "main_cards": 7,
+      "feature_cards": 0,
+      "threshold_applicable": 5,
+      "missing_cards": 0,
+      "rationale": "Titolo centrale della serie e del catalogo Mega Drive; sette card principali già coprono le innovazioni e la distribuzione."
+    },
+    {
+      "target_id": "wikipedia-52767",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": 5,
+      "missing_cards": 2,
+      "rationale": "Titolo principale di Final Fantasy e riferimento per il sistema delle classi."
+    },
+    {
+      "target_id": "console-gap-the-g-g-shinobi-ii-the-silent-fury",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": 5,
+      "missing_cards": 2,
+      "rationale": "Il rapporto fra squadra, abilità e ritorno nei livelli è significativo per l’azione portatile."
+    },
+    {
+      "target_id": "wikipedia-6574955",
+      "main_cards": 2,
+      "feature_cards": 0,
+      "threshold_applicable": 5,
+      "missing_cards": 3,
+      "rationale": "Revisione importante di Street Fighter II per velocità, equilibrio e aggiornamento delle macchine arcade."
+    },
+    {
+      "target_id": "e-v-o-search-for-eden-1992",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": 5,
+      "missing_cards": 2,
+      "rationale": "La personalizzazione corporea lega evoluzione, combattimento ed esplorazione in modo distintivo."
+    },
+    {
+      "target_id": "pocky-rocky-1992",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": 5,
+      "missing_cards": 2,
+      "rationale": "Caso rilevante di azione cooperativa e adattamento del mondo di Kiki Kaikai su console."
+    },
+    {
+      "target_id": "doom-wad-modding-1993",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": null,
+      "missing_cards": 0,
+      "rationale": "Voce dedicata a un evento o a una pratica culturale; le soglie per giochi e console non si applicano."
+    },
+    {
+      "target_id": "golden-joystick-awards-1993",
+      "main_cards": 2,
+      "feature_cards": 0,
+      "threshold_applicable": null,
+      "missing_cards": 0,
+      "rationale": "Voce dedicata a un evento o a una pratica culturale; le soglie per giochi e console non si applicano."
+    }
+  ],
+  "editorial_review": {
+    "languages": [
+      "en",
+      "it",
+      "fr",
+      "de",
+      "es"
+    ],
+    "english_written_first": true,
+    "reviewer": "/root/resume_remaining_a",
+    "checks": [
+      "Letto tutto l’INPUT; scritta e salvata la versione inglese prima dellequattro lingue successive.",
+      "Riletti e confrontati i155testi delle31card; conservate le date complete delle riedizioni FFV e tutti gliotto risultati GoldenJoystick.",
+      "Controllate le differenze di notazione: 350000 con separatori locali,1980s/anniOttanta e20thCenturyFox.",
+      "Preservati nomi propri,titoli musicali,crediti,ID,ordine e numero dellecard. Titolo descrittivo delmodding adattato; titoli propri conservati.",
+      "Distinte uscite regionali,versioni e date di contesto; nessun originale o media modificato.",
+      "Sommari inglesi fra25e45parole; validazione strutturale superata."
+    ],
+    "scope_limit": "Verifiche mirate, non attestazione universale. StreetFighterTurbo: fonteCapcom35th inaccessibile, attribuzione regionale conservata dalla fonte fornita e limite esplicito. Gli altri metadati non problematici non vengono dichiarati riverificati.",
+    "expansion_issues": 6,
+    "future_cards_requested": 14
+  },
+  "validation": {
+    "valid": true,
+    "batch_id": "044-catalog",
+    "completed": true,
+    "entry_count": 10,
+    "card_count_per_language": 31,
+    "language_count": 5,
+    "translated_card_count": 155,
+    "entry_card_counts": {
+      "the-magical-quest-starring-mickey-mouse-1992": 2,
+      "wikipedia-5837893": 3,
+      "workbook-11-24-sonic-the-hedgehog-2": 7,
+      "wikipedia-52767": 3,
+      "console-gap-the-g-g-shinobi-ii-the-silent-fury": 3,
+      "wikipedia-6574955": 2,
+      "e-v-o-search-for-eden-1992": 3,
+      "pocky-rocky-1992": 3,
+      "doom-wad-modding-1993": 3,
+      "golden-joystick-awards-1993": 2
+    },
+    "issue_counts": {
+      "the-magical-quest-starring-mickey-mouse-1992": 1,
+      "wikipedia-5837893": 0,
+      "workbook-11-24-sonic-the-hedgehog-2": 0,
+      "wikipedia-52767": 1,
+      "console-gap-the-g-g-shinobi-ii-the-silent-fury": 1,
+      "wikipedia-6574955": 1,
+      "e-v-o-search-for-eden-1992": 1,
+      "pocky-rocky-1992": 1,
+      "doom-wad-modding-1993": 0,
+      "golden-joystick-awards-1993": 0
+    },
+    "summary_checks": [
+      {
+        "entry_id": "the-magical-quest-starring-mickey-mouse-1992",
+        "feature_id": null,
+        "english_summary_words": 33
+      },
+      {
+        "entry_id": "wikipedia-5837893",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "workbook-11-24-sonic-the-hedgehog-2",
+        "feature_id": null,
+        "english_summary_words": 41
+      },
+      {
+        "entry_id": "wikipedia-52767",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "console-gap-the-g-g-shinobi-ii-the-silent-fury",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "wikipedia-6574955",
+        "feature_id": null,
+        "english_summary_words": 34
+      },
+      {
+        "entry_id": "e-v-o-search-for-eden-1992",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "pocky-rocky-1992",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "doom-wad-modding-1993",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "golden-joystick-awards-1993",
+        "feature_id": null,
+        "english_summary_words": 39
+      }
+    ],
+    "editorial_review": [
+      "doom-wad-modding-1993/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "doom-wad-modding-1993/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "doom-wad-modding-1993/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "doom-wad-modding-1993/main/es: main title changed; check that this is a descriptive title and not an altered official name"
+    ],
+    "failures": []
+  },
+  "output_sha256": "1d2256ffb9a1855ba1bdcd6307274b3c730a5f85a030b934879c4a5c9cb2ea16",
+  "root_numeric_review": {
+    "reviewed_at": "2026-10-30T01:36:18.672808+00:00",
+    "scope": "Letti INPUT, EN e IT di The Addams Family main:0 e main:2: il film del 1991 è conservato come film dell’anno precedente al gioco del 1992, e late 1980s diventa anni Ottanta. Le altre differenze numeriche segnalate riguardano separatori locali delle migliaia oppure date documentate nell’audit. Nessuna modifica dei testi.",
+    "changes": []
+  }
+}

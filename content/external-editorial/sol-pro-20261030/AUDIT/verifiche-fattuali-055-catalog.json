@@ -1,0 +1,862 @@
+{
+  "batch_id": "055-catalog",
+  "status": "completed",
+  "sources": [
+    {
+      "source_id": "055-rave-official",
+      "url": "https://www.arcadearchives.com/en/title/aca-401/",
+      "title": "Arcade Archives Rave Racer — descrizione dell’originale",
+      "publisher": "HAMSTER / Bandai Namco Entertainment",
+      "accessed_at": "2026-10-30",
+      "scope": "Conferma l’originale Namco del 1995, terzo episodio della serie, e il lavoro sulla guida in derapata.",
+      "limitation": "Le funzioni multigiocatore e le date del 2026 nella stessa pagina riguardano la riedizione: non trasferite alla macchina arcade del 1995."
+    },
+    {
+      "source_id": "055-rave-hardware",
+      "url": "https://funfare.bandainamcoent.co.jp/15378/",
+      "title": "Bandai Namco Chishin, episodio 8 — storia del suono Namco",
+      "publisher": "Bandai Namco Entertainment",
+      "accessed_at": "2026-10-30",
+      "scope": "L’intervista ufficiale e la nota tecnica collegano Rave Racer del 1995 alla famiglia System 22 e al relativo sistema sonoro.",
+      "limitation": "Usata soltanto per controllare l’hardware già indicato nell’INPUT; nessuna specifica nuova aggiunta alla voce."
+    },
+    {
+      "source_id": "055-rave-manual",
+      "url": "https://arcarc.xmission.com/PDF_Arcade_Manuals_and_Schematics/Namco_Rave_Racer_SD_Operators_Manual.pdf",
+      "title": "Rave Racer SD — Operator’s Manual",
+      "publisher": "Namco; archivio Arcade Archive",
+      "accessed_at": "2026-10-30",
+      "scope": "La sezione specifiche indicizzata elenca Feedback Steering per il modello SD.",
+      "limitation": "Il PDF integrale supera il limite di lettura dello strumento. Letta la sezione indicizzata, non dichiarata visione di tutte le pagine. La prosa circoscrive il ritorno di forza ai cabinati equipaggiati e i due posti ai cabinati doppi."
+    },
+    {
+      "source_id": "055-tekken-chronology",
+      "url": "https://www.tekken-official.jp/titles/",
+      "title": "Tekken Official — Titles",
+      "publisher": "Bandai Namco Entertainment",
+      "accessed_at": "2026-10-30",
+      "scope": "Cronologia ufficiale: Tekken 2 arcade agosto 1995, PlayStation marzo 1996.",
+      "limitation": "Usata la precisione mensile disponibile, senza inventare un giorno per l’arcade."
+    },
+    {
+      "source_id": "055-tekken-psp",
+      "url": "https://sony.mediaroom.com/2006-12-05-PlayStation-Network-Debuts-Playstation-Title-Download-Service",
+      "title": "PlayStation Network Debuts PlayStation Title Download Service",
+      "publisher": "Sony Computer Entertainment America, 5 dicembre 2006",
+      "accessed_at": "2026-10-30",
+      "scope": "Comunicato contemporaneo di disponibilità: Tekken 2 fra i cinque classici già acquistabili dal PS Store tramite PS3 e giocabili su PSP.",
+      "limitation": "Il documento distingue acquisto su PS3 e riproduzione su PSP. Non viene interpretato come disponibilità a giocare su PS3 nel 2006. Il testo usa l’anno, non scambia la data del comunicato per il primo giorno assoluto."
+    },
+    {
+      "source_id": "055-tekken-ps3",
+      "url": "https://www.siliconera.com/playing-on-your-ps3-tomorrow-tekken-2-and-other-downloadable-psone-games/",
+      "title": "Playing on your PS3 tomorrow: Tekken 2 and other downloadable PSOne games",
+      "publisher": "Siliconera, 25 aprile 2007",
+      "accessed_at": "2026-10-30",
+      "scope": "Resoconto contemporaneo del passaggio alla riproduzione su PS3 con firmware 1.7 e primo gruppo di classici, tra cui Tekken 2.",
+      "limitation": "Fonte secondaria contemporanea usata per distinguere compatibilità del 2007 e download PSP del 2006, coerentemente con il comunicato Sony. Nessun giorno 2007 aggiunto al racconto."
+    },
+    {
+      "source_id": "055-tekken-plus",
+      "url": "https://store.playstation.com/it-it/product/EP0700-PPSA07704_00-TEKKEN2000000000",
+      "title": "TEKKEN2 PS4 & PS5 — PlayStation Store Italia",
+      "publisher": "Bandai Namco Entertainment Europe / Sony",
+      "accessed_at": "2026-10-30",
+      "scope": "Scheda della versione PS4/PS5, data 22 giugno 2022.",
+      "limitation": "La data è regionale; nel corpo usato soltanto il 2022 per correggere il 2023 dell’INPUT."
+    },
+    {
+      "source_id": "055-tekken-plus-launch",
+      "url": "https://blog.it.playstation.com/2022/05/16/la-nuovissima-selezione-di-giochi-playstation-plus-assassins-creed-valhalla-demons-souls-ghost-of-tsushima-directors-cut-nba-2k22-e-molti-altri-si-aggiungono-al-servizio/",
+      "title": "Selezione iniziale del nuovo PlayStation Plus",
+      "publisher": "PlayStation Blog, maggio 2022",
+      "accessed_at": "2026-10-30",
+      "scope": "Elenca Tekken 2 fra i classici al debutto del nuovo servizio.",
+      "limitation": "È un annuncio di catalogo, corroborato dalla scheda di disponibilità del negozio; non usato da solo come release."
+    },
+    {
+      "source_id": "055-puzzle-date",
+      "url": "https://www.famitsu.com/schedule/all-platforms/199501",
+      "title": "Calendario uscite gennaio 1995",
+      "publisher": "Famitsu",
+      "accessed_at": "2026-10-30",
+      "scope": "Elenco Super Famicom: Puzzle Bobble il 13 gennaio 1995.",
+      "limitation": "Calendario giapponese della conversione, non data della prima arcade."
+    },
+    {
+      "source_id": "055-puzzle-taito",
+      "url": "https://www.taito.co.jp/en/mob/topics/15072",
+      "title": "Announcing Development of a New Puzzle Bobble Game!",
+      "publisher": "Taito",
+      "accessed_at": "2026-10-30",
+      "scope": "Il riepilogo storico dell’editore indica esordio arcade nel 1994, spin-off di Bubble Bobble, origine del genere bubble shooter e oltre venti titoli.",
+      "limitation": "La frase sul primato resta attribuita a Taito. L’annuncio di un nuovo gioco nella stessa pagina non è trattato come pubblicazione né importato nel testo."
+    },
+    {
+      "source_id": "055-ristar-date",
+      "url": "https://vc.sega.jp/vc_rister/",
+      "title": "Ristar — Virtual Console Mega Drive",
+      "publisher": "Sega",
+      "accessed_at": "2026-10-30",
+      "scope": "Data giapponese dell’originale: 17 febbraio 1995.",
+      "limitation": "Non estesa agli altri territori; i repertori occidentali indicano anche mesi precedenti. Il corpo resta al 1995 senza primato mondiale."
+    },
+    {
+      "source_id": "055-alien-date",
+      "url": "https://www.sega.jp/mdmini2/soft/alien-soldier.html",
+      "title": "Alien Soldier — Mega Drive Mini 2",
+      "publisher": "Sega",
+      "accessed_at": "2026-10-30",
+      "scope": "La scheda distingue la data dell’originale, 24 febbraio 1995, dalla console mini.",
+      "limitation": "Data giapponese, non data di distribuzione su Sega Channel."
+    },
+    {
+      "source_id": "055-alien-manual",
+      "url": "https://www.sega.jp/mdmini2/assets/manual/pdf/JP_Alien-Soldier.pdf",
+      "title": "Alien Soldier — manuale originale giapponese",
+      "publisher": "Treasure / Sega",
+      "accessed_at": "2026-10-30",
+      "scope": "La sezione Counter Force indicizzata conferma distruzione dei proiettili e comparsa di oggetti che restituiscono salute.",
+      "limitation": "Il PDF non offre testo completo leggibile nello strumento. Consultato il passaggio indicizzato; non dichiarata ispezione visiva integrale. Conservate le altre meccaniche già fornite."
+    },
+    {
+      "source_id": "055-lufia-taito",
+      "url": "https://www.taito.co.jp/mob/topics/47405",
+      "title": "Annuncio Estpolis I & II — riepilogo dei due originali",
+      "publisher": "Taito, settembre 2026",
+      "accessed_at": "2026-10-30",
+      "scope": "Il riepilogo distingue Estpolis del 1993 e Estpolis II del 1995 e conferma prequel, sistema di movimento a passi, enigmi e Capsule Monsters.",
+      "limitation": "L’annuncio riguarda una raccolta prevista per il 2027: non descritta come già uscita e non aggiunta al testo. Usata solo la sezione storica pertinente."
+    },
+    {
+      "source_id": "055-lufia-date",
+      "url": "https://www.famitsu.com/game/title/8944/page/1",
+      "title": "Estpolis Denki II — scheda Super Famicom",
+      "publisher": "Famitsu",
+      "accessed_at": "2026-10-30",
+      "scope": "Data giapponese 24 febbraio 1995, coerente con l’anno confermato da Taito.",
+      "limitation": "La data non riguarda l’edizione nordamericana intitolata Lufia II."
+    },
+    {
+      "source_id": "055-front-original",
+      "url": "https://www.famitsu.com/game/title/4153/reviews",
+      "title": "Front Mission — scheda Super Famicom",
+      "publisher": "Famitsu",
+      "accessed_at": "2026-10-30",
+      "scope": "Data originale giapponese 24 febbraio 1995.",
+      "limitation": "Repertorio editoriale giapponese; non trasferito alle riedizioni."
+    },
+    {
+      "source_id": "055-front-ds",
+      "url": "https://www.jp.square-enix.com/company/ja/news/2007/html/b53042233851c0a109b91c3c547fe0726f7e0cc8.html",
+      "title": "Square Enix — titoli E3 2007",
+      "publisher": "Square Enix",
+      "accessed_at": "2026-10-30",
+      "scope": "Documento ufficiale: DS giapponese già uscito il 22 marzo 2007; edizione nordamericana prevista per il 23 ottobre 2007.",
+      "limitation": "Per il Nord America è una previsione contemporanea, non da sola prova di disponibilità; la data coincide con l’INPUT. Nessuna modifica arbitraria delle date."
+    },
+    {
+      "source_id": "055-front-remake-site",
+      "url": "https://www.frontmissionremake.com/",
+      "title": "Front Mission 1st: Remake — sito ufficiale",
+      "publisher": "Forever Entertainment / Square Enix",
+      "accessed_at": "2026-10-30",
+      "scope": "Il credito ufficiale riporta Developed by Forever Entertainment S.A., coerente con Nintendo e Steam.",
+      "limitation": "Non sostituita questa attribuzione primaria con la diversa attribuzione MegaPixel presente in alcune fonti secondarie."
+    },
+    {
+      "source_id": "055-front-remake-switch",
+      "url": "https://forever-entertainment.com/front-mission-1st-remake-world-premiere-on-nintendo-switch%2C366%2Cen",
+      "title": "Front Mission 1st: Remake world premiere on Nintendo Switch",
+      "publisher": "Forever Entertainment, 30 novembre 2022",
+      "accessed_at": "2026-10-30",
+      "scope": "Comunicazione di disponibilità digitale su Switch il 30 novembre 2022.",
+      "limitation": "Le prenotazioni delle copie fisiche nella stessa pagina sono distinte dalla release digitale."
+    },
+    {
+      "source_id": "055-front-remake-other",
+      "url": "https://forever-entertainment.com/games/front-mission-1st-remake-is-live-on-pc-playstation-and-xbox%2C386%2Cen",
+      "title": "Front Mission 1st: Remake is live on PC, PlayStation and Xbox!",
+      "publisher": "Forever Entertainment, 30 giugno 2023",
+      "accessed_at": "2026-10-30",
+      "scope": "Comunicato di disponibilità su Steam, GOG, Epic, PS4, PS5, Xbox One e Xbox Series X/S il 30 giugno 2023.",
+      "limitation": "Nessuna sostituzione della data con quella di successive edizioni fisiche o giapponesi."
+    },
+    {
+      "source_id": "055-front-remake-steam",
+      "url": "https://store.steampowered.com/app/2399730/FRONT_MISSION_1st_Remake/?l=english",
+      "title": "Front Mission 1st: Remake — scheda Steam",
+      "publisher": "Forever Entertainment / Steam",
+      "accessed_at": "2026-10-30",
+      "scope": "Conferma data Windows del 30 giugno 2023 e crediti di sviluppo e pubblicazione Forever Entertainment.",
+      "limitation": "Usata per il remake recente, non per attribuire allo stesso studio il gioco del 1995."
+    },
+    {
+      "source_id": "055-front-old-credit-check",
+      "url": "https://gdri.smspower.org/wiki/index.php/TOSE",
+      "title": "Tose — elenco di partecipazioni allo sviluppo",
+      "publisher": "Game Developer Research Institute",
+      "accessed_at": "2026-10-30",
+      "scope": "L’elenco segnala programmazione e suono di Front Mission 1st PlayStation a Tose e grafica a Winds; il testo introduttivo avverte che i livelli di coinvolgimento variano.",
+      "limitation": "Fonte di confronto, non prova di sviluppo esclusivo. La prosa mantiene Square Enix come editore del rifacimento e non assegna a un singolo studio ogni aspetto produttivo. Non importati crediti nuovi non verificati in fonte primaria."
+    },
+    {
+      "source_id": "055-panzer-date",
+      "url": "https://www.sega.jp/history/hard/segasaturn/software.html",
+      "title": "Sega Saturn — software pubblicato da Sega",
+      "publisher": "Sega",
+      "accessed_at": "2026-10-30",
+      "scope": "Elenco ufficiale giapponese: Panzer Dragoon il 10 marzo 1995.",
+      "limitation": "Data della versione Saturn originale, distinta da remake e raccolte."
+    },
+    {
+      "source_id": "055-chrono-date",
+      "url": "https://www.nintendo.co.jp/wii/vc/vc_chr/vc_chr_01.html",
+      "title": "Chrono Trigger — Virtual Console",
+      "publisher": "Nintendo / Square Enix",
+      "accessed_at": "2026-10-30",
+      "scope": "La descrizione identifica l’originale Super Famicom del 11 marzo 1995 e le tecniche combinate.",
+      "limitation": "La data originale è distinta dalla pubblicazione Virtual Console. Non importati nuovi dettagli di trama."
+    },
+    {
+      "source_id": "055-chrono-credits",
+      "url": "https://www.jp.square-enix.com/chronotrigger/",
+      "title": "Chrono Trigger — sito ufficiale",
+      "publisher": "Square Enix",
+      "accessed_at": "2026-10-30",
+      "scope": "Il testo alternativo identifica Sakaguchi, Horii e Toriyama nel Dream Project, Mitsuda compositore e Toriyama character designer.",
+      "limitation": "Letto il testo alternativo, non dichiarata visione delle immagini o ascolto dei brani."
+    },
+    {
+      "source_id": "055-mitsuda-2003",
+      "url": "https://shmuplations.com/yasunorimitsuda/",
+      "title": "Yasunori Mitsuda — 2003 Composer Interview",
+      "publisher": "Yasunori Mitsuda / Game Hihyou; traduzione Shmuplations",
+      "accessed_at": "2026-10-30",
+      "scope": "Riletti i passaggi sui campionatori Akai S-3200 ed E-MU EIII, selezione dei CD, timbri del provino e comunicazione ai musicisti.",
+      "limitation": "Conservata la sostanza già fornita, senza importare altri aneddoti né copiare le frasi dell’intervista. Nessuna consultazione del periodico cartaceo dichiarata."
+    },
+    {
+      "source_id": "055-mitsuda-2005",
+      "url": "https://squareenixmusic.com/features/interviews/yasunorimitsuda.shtml",
+      "title": "Interview with Yasunori Mitsuda, October 2005",
+      "publisher": "Chris Greening, Harry Simons, David Greening / Yasunori Mitsuda; traduzione Procyon Studio",
+      "accessed_at": "2026-10-30",
+      "scope": "Riletti i passaggi su Sakaguchi, Hirota e incarichi per gli effetti; Akao, valore della programmazione audio e passaggio a produzione su Breath of Fire V per impegni di calendario.",
+      "limitation": "La trascrizione contiene un errore nel sottotitolo di Breath of Fire V: il testo usa il titolo principale già fornito. Non aggiunti brani o informazioni dai passaggi non pertinenti."
+    },
+    {
+      "source_id": "055-kirby-original-curation",
+      "url": "https://www.hallab.co.jp/eng/works/detail/002736/",
+      "title": "Kirby’s Dream Land 2 — archivio lavori HAL",
+      "publisher": "HAL Laboratory",
+      "accessed_at": "2026-10-30",
+      "scope": "Riutilizzata la verifica presente nell’INPUT: esordio Game Boy giapponese del 21 marzo 1995 e Nintendo editore.",
+      "limitation": "Non dichiarata una nuova visione dei crediti video. L’attribuzione musicale congiunta Ando/Ikegami resta quella documentata nell’INPUT."
+    }
+  ],
+  "decisions": [
+    {
+      "target_id": "wikipedia-2452768",
+      "problem": "La descrizione non distingueva i cabinati doppi e le varianti dotate di ritorno di forza.",
+      "conclusion": "Precisati due giocatori per cabinato doppio e massimo otto collegandone quattro. Il ritorno di forza è circoscritto alle macchine equipaggiate. System 22 e anno restano confermati; le caratteristiche della riedizione 2026 non vengono retrodatate.",
+      "status": "resolved_with_documented_scope",
+      "source_ids": [
+        "055-rave-official",
+        "055-rave-hardware",
+        "055-rave-manual"
+      ],
+      "text_applied": {
+        "languages": [
+          "en",
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "cards": [
+          "main:0",
+          "main:1"
+        ]
+      }
+    },
+    {
+      "target_id": "wikipedia-2452768",
+      "problem": "L’ultima frase poteva attribuire indistintamente a Namco lo sviluppo di tutti i giochi domestici elencati.",
+      "conclusion": "Conservati R4 (1998) e Ridge Racer 64 (2000) come esempi della presenza domestica della serie, senza assegnare loro nuovi crediti di sviluppo. Conservato il confronto con Ridge Racer V: Arcade Battle (2000).",
+      "status": "resolved_with_documented_scope",
+      "source_ids": [],
+      "text_applied": {
+        "languages": [
+          "en",
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "cards": [
+          "main:1"
+        ]
+      }
+    },
+    {
+      "target_id": "wikipedia-739179",
+      "problem": "La prima disponibilità digitale era posta nel 2007 per PSP e PS3 insieme.",
+      "conclusion": "Sony documenta Tekken 2 acquistabile e giocabile su PSP già nel 2006, con acquisto effettuato tramite PS3. Il testo distingue tale release dalla successiva compatibilità PS3 del 2007.",
+      "status": "resolved_with_documented_scope",
+      "source_ids": [
+        "055-tekken-psp",
+        "055-tekken-ps3"
+      ],
+      "text_applied": {
+        "languages": [
+          "en",
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "cards": [
+          "main:0"
+        ]
+      }
+    },
+    {
+      "target_id": "wikipedia-739179",
+      "problem": "La versione PlayStation Plus per PS4 e PS5 era datata 2023.",
+      "conclusion": "Corretta al 2022 sulla scheda ufficiale dello store e sul catalogo iniziale del servizio.",
+      "status": "resolved_with_documented_scope",
+      "source_ids": [
+        "055-tekken-plus",
+        "055-tekken-plus-launch"
+      ],
+      "text_applied": {
+        "languages": [
+          "en",
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "cards": [
+          "main:0"
+        ]
+      }
+    },
+    {
+      "target_id": "workbook-01-13-puzzle-bobble",
+      "problem": "Data senza regione e formulazione da anniversario; possibile confusione con l’originale arcade.",
+      "conclusion": "Il 13 gennaio 1995 identifica la conversione Super Famicom giapponese, successiva all’arcade del 1994. Mantenuta la voce su questa conversione e attribuito a Taito il primato del genere.",
+      "status": "resolved_with_documented_scope",
+      "source_ids": [
+        "055-puzzle-date",
+        "055-puzzle-taito"
+      ],
+      "text_applied": {
+        "languages": [
+          "en",
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "cards": [
+          "main:0",
+          "main:3"
+        ]
+      }
+    },
+    {
+      "target_id": "wikipedia-314495",
+      "problem": "Il 17 febbraio 1995 era privo di regione.",
+      "conclusion": "La scheda Sega lo riferisce all’originale giapponese. Proposta la regione JP; nessuna prima mondiale dedotta.",
+      "status": "resolved_with_documented_scope",
+      "source_ids": [
+        "055-ristar-date"
+      ],
+      "text_applied": {
+        "languages": [
+          "en",
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "cards": []
+      }
+    },
+    {
+      "target_id": "console-gap-alien-soldier",
+      "problem": "Controllo della release e della conversione dei proiettili in salute.",
+      "conclusion": "Sega conferma la release giapponese del 24 febbraio 1995; il manuale conferma che il contrattacco produce oggetti di salute dai proiettili distrutti. Descrizione resa esplicita senza introdurre comandi aggiuntivi.",
+      "status": "resolved_with_documented_scope",
+      "source_ids": [
+        "055-alien-date",
+        "055-alien-manual"
+      ],
+      "text_applied": {
+        "languages": [
+          "en",
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "cards": [
+          "main:2"
+        ]
+      }
+    },
+    {
+      "target_id": "lufia-ii-rise-of-the-sinistrals-1995",
+      "problem": "La regione era il testo generico Original commercial release.",
+      "conclusion": "Il 24 febbraio 1995 corrisponde a Estpolis Denki II per Super Famicom in Giappone. Il comunicato Taito del 2026 conferma soltanto l’anno dell’originale e i sistemi; la futura raccolta 2027 non è stata importata come opera già uscita.",
+      "status": "resolved_with_documented_scope",
+      "source_ids": [
+        "055-lufia-date",
+        "055-lufia-taito"
+      ],
+      "text_applied": {
+        "languages": [
+          "en",
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "cards": []
+      }
+    },
+    {
+      "target_id": "wikipedia-5177899",
+      "problem": "Diversi repertori attribuiscono Front Mission 1st: Remake a MegaPixel; era necessario controllare l’INPUT.",
+      "conclusion": "Sito ufficiale, Nintendo e Steam riportano Forever Entertainment per sviluppo e pubblicazione: conservata l’attribuzione dell’INPUT. Confermate le release digitali 30 novembre 2022 e 30 giugno 2023.",
+      "status": "resolved_with_documented_scope",
+      "source_ids": [
+        "055-front-remake-site",
+        "055-front-remake-switch",
+        "055-front-remake-other",
+        "055-front-remake-steam"
+      ],
+      "text_applied": {
+        "languages": [
+          "en",
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "cards": [
+          "main:2"
+        ]
+      }
+    },
+    {
+      "target_id": "wikipedia-5177899",
+      "problem": "Il remake PlayStation 2003 era attribuito genericamente allo sviluppo di Square Enix, mentre il lavoro tecnico coinvolge altre società nei repertori.",
+      "conclusion": "Mantenuto il ruolo certo di Square Enix quale editore di Front Mission 1st. Il testo non trasforma una descrizione societaria generica in credito esclusivo di programmazione o grafica. Conservati tutte le date, le piattaforme e lo scenario USN.",
+      "status": "scope_limited_no_exclusive_development_claim",
+      "source_ids": [
+        "055-front-old-credit-check",
+        "055-front-ds"
+      ],
+      "text_applied": {
+        "languages": [
+          "en",
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "cards": [
+          "main:1"
+        ]
+      }
+    },
+    {
+      "target_id": "console-gap-panzer-dragoon-video-game",
+      "problem": "Controllo della collocazione della prima edizione Saturn.",
+      "conclusion": "La lista ufficiale Sega conferma la release giapponese del 10 marzo 1995.",
+      "status": "resolved_with_documented_scope",
+      "source_ids": [
+        "055-panzer-date"
+      ],
+      "text_applied": {
+        "languages": [
+          "en",
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "cards": []
+      }
+    },
+    {
+      "target_id": "workbook-03-11-chrono-trigger",
+      "problem": "L’incipit iniziava dalla scena della fiera senza identificare il gioco e la data non aveva regione.",
+      "conclusion": "Aperto con gioco di ruolo di Square, Super Famicom, uscita giapponese del 11 marzo 1995; poi conservata la scena con Crono, Marle, Lucca, Telepod e ciondolo.",
+      "status": "resolved_with_documented_scope",
+      "source_ids": [
+        "055-chrono-date"
+      ],
+      "text_applied": {
+        "languages": [
+          "en",
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "cards": [
+          "main:0"
+        ]
+      }
+    }
+  ],
+  "metadata_proposals": [
+    {
+      "target_id": "wikipedia-739179",
+      "field": "release_precision",
+      "proposed": {
+        "year": 1995,
+        "month": 8,
+        "precision": "month",
+        "region": "JP",
+        "platform": "arcade"
+      },
+      "reason": "Cronologia ufficiale giapponese; non dedotto un giorno.",
+      "source_ids": [
+        "055-tekken-chronology"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "workbook-01-13-puzzle-bobble",
+      "field": "release_region_and_edition",
+      "proposed": {
+        "year": 1995,
+        "month": 1,
+        "day": 13,
+        "precision": "day",
+        "region": "JP",
+        "platform": "Super Famicom",
+        "edition": "console port of the 1994 arcade game"
+      },
+      "reason": "La voce è esplicitamente dedicata all’arrivo su Super Famicom, non all’esordio arcade del 1994.",
+      "source_ids": [
+        "055-puzzle-date",
+        "055-puzzle-taito"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "wikipedia-314495",
+      "field": "release_region",
+      "proposed": {
+        "year": 1995,
+        "month": 2,
+        "day": 17,
+        "precision": "day",
+        "region": "JP",
+        "platform": "Mega Drive"
+      },
+      "reason": "Data dell’originale giapponese nella scheda Sega.",
+      "source_ids": [
+        "055-ristar-date"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "lufia-ii-rise-of-the-sinistrals-1995",
+      "field": "release_region",
+      "proposed": {
+        "year": 1995,
+        "month": 2,
+        "day": 24,
+        "precision": "day",
+        "region": "JP",
+        "platform": "Super Famicom",
+        "edition": "Estpolis Denki II"
+      },
+      "reason": "Sostituire la descrizione generica con la regione dell’edizione documentata; il titolo principale richiesto Lufia II resta invariato.",
+      "source_ids": [
+        "055-lufia-date",
+        "055-lufia-taito"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "wikipedia-5177899",
+      "field": "release_region",
+      "proposed": {
+        "year": 1995,
+        "month": 2,
+        "day": 24,
+        "precision": "day",
+        "region": "JP",
+        "platform": "Super Famicom"
+      },
+      "reason": "Prima edizione giapponese, già identificata nel corpo originale.",
+      "source_ids": [
+        "055-front-original"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "workbook-03-11-chrono-trigger",
+      "field": "release_region",
+      "proposed": {
+        "year": 1995,
+        "month": 3,
+        "day": 11,
+        "precision": "day",
+        "region": "JP",
+        "platform": "Super Famicom"
+      },
+      "reason": "Nintendo identifica esplicitamente la data dell’originale.",
+      "source_ids": [
+        "055-chrono-date"
+      ],
+      "applied_to_catalog": false
+    }
+  ],
+  "expansion_assessments": [
+    {
+      "target_id": "wikipedia-2452768",
+      "main_cards": 2,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 3,
+      "rationale": "Capitolo arcade significativo della serie Ridge Racer."
+    },
+    {
+      "target_id": "wikipedia-739179",
+      "main_cards": 2,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 3,
+      "rationale": "Capitolo fondamentale della crescita di Tekken."
+    },
+    {
+      "target_id": "workbook-01-13-puzzle-bobble",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 1,
+      "rationale": "Opera fondativa del genere bubble shooter, qui trattata attraverso la conversione Super Famicom."
+    },
+    {
+      "target_id": "wikipedia-314495",
+      "main_cards": 2,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 3,
+      "rationale": "Titolo significativo del catalogo platform Sega."
+    },
+    {
+      "target_id": "console-gap-alien-soldier",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Titolo importante di Treasure e della fase finale del Mega Drive."
+    },
+    {
+      "target_id": "lufia-ii-rise-of-the-sinistrals-1995",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Capitolo centrale della serie Lufia e dei giochi di ruolo a 16 bit."
+    },
+    {
+      "target_id": "wikipedia-5177899",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Primo capitolo della serie Front Mission; il materiale attuale dedica due card soprattutto alle riedizioni."
+    },
+    {
+      "target_id": "console-gap-panzer-dragoon-video-game",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Esordio importante per la serie Panzer Dragoon e per Sega Saturn."
+    },
+    {
+      "target_id": "workbook-03-11-chrono-trigger",
+      "main_cards": 4,
+      "feature_cards": 4,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 1,
+      "rationale": "Gioco di ruolo importante con quattro card principali e una feature musicale separata di quattro card."
+    },
+    {
+      "target_id": "kirbys-dream-land-2",
+      "main_cards": 2,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 3,
+      "rationale": "Capitolo importante della serie Kirby su Game Boy."
+    }
+  ],
+  "editorial_review": {
+    "english_first": true,
+    "languages": [
+      "en",
+      "it",
+      "fr",
+      "de",
+      "es"
+    ],
+    "entry_count": 10,
+    "main_card_count_per_language": 28,
+    "feature_card_count_per_language": 4,
+    "card_count_per_language": 32,
+    "english_summary_word_counts": [
+      39,
+      35,
+      36,
+      38,
+      38,
+      40,
+      37,
+      38,
+      37,
+      37
+    ],
+    "feature_english_summary_word_counts": [
+      35
+    ],
+    "checks": [
+      "EN salvato completo prima di IT, FR, DE ed ES. Rilettura delle 32 card in tutte le lingue, compresa la feature Mitsuda. Sommari principali EN fra 35 e 40 parole; feature 35 parole.",
+      "Schema, ID di voci/feature/card, ordine e quantità invariati. Titoli propri conservati; sottotitoli e titolo descrittivo della feature adattati. Tutte le card prive di heading nell’INPUT ne ricevono uno specifico.",
+      "Rave Racer conserva Namco, terzo episodio, System 22, due/quattro/otto per i collegamenti, due nuove piste più due precedenti, guida, forza, grafica, ricezione e i tre titoli successivi con anni.",
+      "Tekken 2 conserva 1995/1996, finali video e modalità, riedizioni 2005 e 2007 precisate, 25/17/8 combattenti, Jun/Lei/Heihachi/Kazuya, 40.000 unità e 5,7 milioni, valutazioni della critica e Tekken 3 1997. Corretti solo i due passaggi documentati sulla disponibilità digitale.",
+      "Puzzle Bobble conserva data della conversione, Bub/Bob, tre bolle, soffitto, tiri e rimbalzi, distacco di gruppi, pianificazione, attribuzione Taito e oltre venti titoli. La riflessione sul tiro non è descritta come comando di pausa o assenza di pressione temporale.",
+      "Ristar mantiene braccia per movimento/lotta, ricezione, fine del ciclo Genesis, Saturn e quinta generazione, assenza di sequel nel percorso descritto, raccolte/Sega Forever/camei e distinzione della versione Game Gear.",
+      "Alien Soldier conserva nome Epsilon-Eagle, sei armi/quattro scelte, riserve separate, due stili, doppio salto e sospensione, boss/pattern, contrattacco/salute/Phoenix Force, Suganami/Treasure e distribuzione regionale Sega Channel/cartucce.",
+      "Lufia II mantiene Maxim/Sinistrals, novantanove anni, prequel, città/turni, nemici visibili mossi a passi, frecce/bombe/rampino, enigmi e blocco temporaneo, abilità IP alimentate dai danni, utilità del vecchio equipaggiamento e Capsule Monsters nutriti con oggetti.",
+      "Front Mission mantiene G-Craft/Square, wanzer e narrazione seriale, tutte le date e piattaforme dell’originale e delle conversioni, USN e differenza fra nome giapponese e nordamericano. I tre paragrafi non sono trasformati in nuovi approfondimenti di gioco assenti dalle fonti.",
+      "Panzer Dragoon mantiene Team Andromeda/Futatsugi, cacciatore/drago blu/inseguimento, rotta e movimenti, radar e quattro direzioni, pressione rapida/aggancio/rilascio, ambienti, Azuma, Giraud/Moebius e distinzione Zwei/Saga.",
+      "Chrono Trigger conserva Guardia/Fiera/Crono/Marle/Lucca/Telepod/ciondolo, epoche, barre e posizioni, Tech combinati, Dream Team e i ruoli di Sakaguchi/Horii/Toriyama/Tokita/Aoki/Kato.",
+      "Feature Mitsuda: conservati entrambi i modelli di campionatore, ascolto di CD, timbro/hardware, demo/musicians/specialisti, Sakaguchi/Hirota/amici di scuola, Akao/programmazione, conflitto di calendario Breath of Fire V e Sakimoto. Il racconto resta attribuito a Mitsuda.",
+      "La feature Mitsuda riguarda il processo musicale nel contesto del gioco, non una biografia autonoma con collocazione separata. Nessuna data di nascita dedotta dall’anno 1995.",
+      "Kirby’s Dream Land 2 conserva data/console/HAL/Nintendo, ponti e sette isole, Dedede/Dark Matter, tutti gli animali, movimento/poteri combinati e attribuzione musicale congiunta Ando/Ikegami.",
+      "Controllo di numeri, nomi, riduzioni e negazioni. Le card più brevi eliminano ripetizioni del soggetto mantenendo i fatti. Nessuna aggiunta di trama, meccaniche o nuovi approfondimenti per raggiungere le soglie.",
+      "Originali, fonti, diritti, musica, immagini, video e URL non alterati. Titoli dei brani conservati nelle fonti. Nessun HTML o Markdown nei campi di testo."
+    ],
+    "limits": "Ricerca mirata ai punti problematici; non dichiarata verifica autonoma universale. Per alcuni documenti tecnici sono disponibili soltanto passaggi indicizzati, indicati nelle fonti. Il ruolo tecnico esclusivo nel remake PlayStation 2003 non è attribuito senza prova primaria. Gli annunci di opere nuove presenti nelle fonti storiche non sono trasformati in uscite. Dieci ampliamenti richiedono 22 nuove card principali; le quattro card della feature Mitsuda restano separate. Due controlli media derivano dalle note esplicite degli INPUT e non attestano una revisione visiva o legale mai svolta."
+  },
+  "validation": {
+    "valid": true,
+    "batch_id": "055-catalog",
+    "completed": true,
+    "entry_count": 10,
+    "card_count_per_language": 32,
+    "language_count": 5,
+    "translated_card_count": 160,
+    "entry_card_counts": {
+      "wikipedia-2452768": 2,
+      "wikipedia-739179": 2,
+      "workbook-01-13-puzzle-bobble": 4,
+      "wikipedia-314495": 2,
+      "console-gap-alien-soldier": 3,
+      "lufia-ii-rise-of-the-sinistrals-1995": 3,
+      "wikipedia-5177899": 3,
+      "console-gap-panzer-dragoon-video-game": 3,
+      "workbook-03-11-chrono-trigger": 8,
+      "kirbys-dream-land-2": 2
+    },
+    "issue_counts": {
+      "wikipedia-2452768": 1,
+      "wikipedia-739179": 1,
+      "workbook-01-13-puzzle-bobble": 2,
+      "wikipedia-314495": 1,
+      "console-gap-alien-soldier": 1,
+      "lufia-ii-rise-of-the-sinistrals-1995": 1,
+      "wikipedia-5177899": 1,
+      "console-gap-panzer-dragoon-video-game": 1,
+      "workbook-03-11-chrono-trigger": 2,
+      "kirbys-dream-land-2": 1
+    },
+    "summary_checks": [
+      {
+        "entry_id": "wikipedia-2452768",
+        "feature_id": null,
+        "english_summary_words": 39
+      },
+      {
+        "entry_id": "wikipedia-739179",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "workbook-01-13-puzzle-bobble",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "wikipedia-314495",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "console-gap-alien-soldier",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "lufia-ii-rise-of-the-sinistrals-1995",
+        "feature_id": null,
+        "english_summary_words": 40
+      },
+      {
+        "entry_id": "wikipedia-5177899",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "console-gap-panzer-dragoon-video-game",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "workbook-03-11-chrono-trigger",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "workbook-03-11-chrono-trigger",
+        "feature_id": "feature-yasunori-mitsuda-rpg",
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "kirbys-dream-land-2",
+        "feature_id": null,
+        "english_summary_words": 37
+      }
+    ],
+    "editorial_review": [],
+    "failures": []
+  },
+  "output_sha256": "7f7dfa7219622e18d0fd95d718e2ebf4c7f272cdd1672777880b6eb15c5fdf2f",
+  "root_review": {
+    "reviewed_at": "2026-10-30T02:54:05.857914+00:00",
+    "scope": "Controllo mirato delle segnalazioni quantitative e dei rapporti di lunghezza; non nuova verifica universale. Differenze di separatore, numeri scritti in lettere e secoli non sono omissioni.",
+    "finding": "Lufia conserva novantanove anni in tutte le lingue; Front Mission mantiene ruolo di primo episodio, sviluppo/pubblicazione, wanzers e conversione WonderSwan con le date. Le rettifiche delle riedizioni Tekken sono motivate nell’audit."
+  }
+}

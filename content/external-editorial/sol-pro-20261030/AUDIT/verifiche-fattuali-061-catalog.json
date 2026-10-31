@@ -1,0 +1,577 @@
+{
+  "batch_id": "061-catalog",
+  "status": "completed",
+  "entries": 10,
+  "main_cards_per_language": 37,
+  "feature_cards_per_language": 4,
+  "cards_per_language": 41,
+  "languages": [
+    "en",
+    "it",
+    "fr",
+    "de",
+    "es"
+  ],
+  "sources": [
+    {
+      "source_id": "061-metal-current",
+      "url": "https://www.snk-corp.co.jp/press/2026/metal-slug-30th-project/",
+      "title": "Metal Slug 30th anniversary project — historical release statement",
+      "publisher": "SNK",
+      "accessed_at": "2026-10-30",
+      "scope": "Il comunicato ufficiale del 2026 identifica esplicitamente il debutto MVS come 19 aprile 1996, oltre a celebrare il trentennale.",
+      "limitation": "Usato il passaggio storico, non dedotta la release dalla sola data commemorativa. La nuova iniziativa annunciata non è importata nel catalogo."
+    },
+    {
+      "source_id": "061-metal-museum",
+      "url": "https://game.snk-corp.co.jp/official/nbc/museum/ms/index.html",
+      "title": "Neo Geo Battle Coliseum — Metal Slug museum",
+      "publisher": "SNK",
+      "accessed_at": "2026-10-30",
+      "scope": "La scheda storica ufficiale più antica riporta 18 aprile 1996.",
+      "limitation": "Contraddice di un giorno il comunicato SNK più recente e l’INPUT. Non è stata trovata una spiegazione documentata della discrepanza; la scelta del 19 segue la dichiarazione esplicita attuale del titolare e il dato fornito, senza fingere unanimità."
+    },
+    {
+      "source_id": "061-oasis-sega",
+      "url": "https://www.sega.jp/history/hard/segasaturn/software.html",
+      "title": "Sega Saturn — lista ufficiale del software",
+      "publisher": "Sega",
+      "accessed_at": "2026-10-30",
+      "scope": "La lista giapponese colloca The Story of Thor 2 al 26 aprile 1996.",
+      "limitation": "Conferma regionale del titolo chiamato The Legend of Oasis nell’INPUT; non estesa alle altre regioni."
+    },
+    {
+      "source_id": "061-oasis-manual",
+      "url": "https://www.scribd.com/document/778648790/Legend-of-Oasis-The-1996-Sega-US",
+      "title": "The Legend of Oasis — manuale statunitense",
+      "publisher": "Sega; copia del manuale su Scribd",
+      "accessed_at": "2026-10-30",
+      "scope": "Il testo indicizzato del manuale descrive Brass come master of sound. Conferma che “sound” nell’elenco degli spiriti è pertinente anche se l’evocazione usa oggetti metallici.",
+      "limitation": "Letto il passaggio indicizzato, non dichiarata ispezione visiva integrale del manuale. Il nome Brass e altri dettagli del manuale non sono aggiunti alla voce."
+    },
+    {
+      "source_id": "061-jumping-date",
+      "url": "https://en.wikipedia.org/wiki/Jumping_Flash%21_2",
+      "title": "Jumping Flash! 2 — cronologia",
+      "publisher": "Wikipedia contributors",
+      "accessed_at": "2026-10-30",
+      "scope": "Conferma secondaria della data giapponese del 26 aprile 1996 e delle successive uscite occidentali nello stesso anno già fornite.",
+      "limitation": "Non trovato un documento primario contemporaneo con il giorno; non presentata questa conferma come prova primaria. Le date di build di prototipi non sono usate come release."
+    },
+    {
+      "source_id": "061-inti",
+      "url": "https://inticreates.com/about/",
+      "title": "About Inti Creates",
+      "publisher": "Inti Creates",
+      "accessed_at": "2026-10-30",
+      "scope": "Pagina aziendale: costituzione l’8 maggio 1996 in Giappone.",
+      "limitation": "È la fondazione di uno studio, non la nascita di una persona. Nessun dirigente, dato corrente sul personale o ulteriore gioco è aggiunto."
+    },
+    {
+      "source_id": "061-fe",
+      "url": "https://www.nintendo.com/jp/fe/en/history/index.html",
+      "title": "Fire Emblem — History",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "La cronologia ufficiale identifica Genealogy of the Holy War e la release giapponese del 14 maggio 1996.",
+      "limitation": "La data riguarda Super Famicom in Giappone, non la disponibilità di un’edizione internazionale."
+    },
+    {
+      "source_id": "061-keio-context",
+      "url": "https://en.wikipedia.org/wiki/Keio_Flying_Squadron_2",
+      "title": "Keio Flying Squadron 2 — sviluppo e uscita",
+      "publisher": "Wikipedia contributors",
+      "accessed_at": "2026-10-30",
+      "scope": "Confronto con il contesto fornito: 17 maggio 1996 in Giappone, progetto avviato per Sega CD nel 1994 e successivo trasferimento su Saturn.",
+      "limitation": "Fonte secondaria già presente nell’INPUT. Non importate sezioni tagliate o altre informazioni nuove; non dichiarata consultazione delle riviste originali citate dalla voce."
+    },
+    {
+      "source_id": "061-quake-abrash",
+      "url": "https://tang1024.github.io/quake-book/#chapter-70-quake-a-post-mortem-and-a-glimpse-into-the-future",
+      "title": "Graphics Programming Black Book, capitolo 70 — The Potentially Visible Set e Passages",
+      "publisher": "Michael Abrash / Coriolis, 1997; trascrizione conservata da Tang1024",
+      "accessed_at": "2026-10-30",
+      "scope": "Trascrizione scaricata e passaggi pertinenti letti: visibilità precalcolata, costo per l’iterazione dei progettisti e metodo alternativo scartato perché peggiorava i casi più lenti.",
+      "limitation": "La copia di lavoro del libro completo resta nello scratch e non viene inserita nel pacchetto. Non aggiunti tempi di calcolo, nuove macchine o dettagli estranei all’INPUT. Nessuna ispezione visiva del volume dichiarata."
+    },
+    {
+      "source_id": "061-quake-readme",
+      "url": "https://github.com/id-Software/Quake/blob/master/readme.txt",
+      "title": "Quake source-release README",
+      "publisher": "John Carmack / id Software",
+      "accessed_at": "2026-10-30",
+      "scope": "Letto il documento ufficiale: programma sotto GPL, finalità di condivisione delle modifiche, diritti separati sui dati del gioco, ringraziamenti a Dave Kirsh e Robert Duffy.",
+      "limitation": "Il testo descrive la dichiarazione di Carmack, non offre un nuovo parere legale. Non dedotta una data esatta di pubblicazione del sorgente dal README."
+    },
+    {
+      "source_id": "061-quake-release",
+      "url": "https://store.steampowered.com/app/2310/Quake/",
+      "title": "Quake — scheda editore Steam",
+      "publisher": "id Software / Bethesda Softworks",
+      "accessed_at": "2026-10-30",
+      "scope": "La scheda indica 22 giugno 1996 per il gioco originale. Il corpo mantiene la disponibilità pubblica PC già fornita.",
+      "limitation": "Non confusa la disponibilità iniziale con una dimostrata prima vendita al dettaglio della versione completa; le funzioni della riedizione moderna non sono retrodatate."
+    },
+    {
+      "source_id": "061-quake-anniversary",
+      "url": "https://bethesda.net/en-US/news/celebrating-25-years-of-quake",
+      "title": "Celebrating 25 years of Quake",
+      "publisher": "Bethesda",
+      "accessed_at": "2026-10-30",
+      "scope": "La commemorazione del 22 giugno 2021 è coerente con la data originale della scheda editore.",
+      "limitation": "La ricorrenza è solo corroborazione; non viene usata da sola per dedurre un giorno di release."
+    },
+    {
+      "source_id": "061-nintendo-launch",
+      "url": "https://www.nintendo.co.jp/n01/n64/software/1996.html",
+      "title": "Nintendo 64 — software giapponese 1996",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "La lista ufficiale riporta Super Mario 64 e Pilotwings 64 il 23 giugno 1996, data di lancio giapponese fornita.",
+      "limitation": "Pagina in vecchia codifica: sequenze numeriche della data e collegamenti ai titoli leggibili. Il dato non è una release mondiale."
+    },
+    {
+      "source_id": "061-n64-controls",
+      "url": "https://www.nintendo.com/en-gb/Hardware/Nintendo-History/Nintendo-64/Nintendo-64-625959.html",
+      "title": "Nintendo 64 — Nintendo History",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "Descrive quattro porte, forma a tre impugnature e stick analogico del controller.",
+      "limitation": "Non importato il primato pubblicitario dell’analogico né nuove cifre di vendite. Le descrizioni di scheda e confezione restano dal materiale fornito; non dichiarata nuova visione delle immagini."
+    },
+    {
+      "source_id": "061-64dd-history",
+      "url": "https://www.ndw.jp/nintendo64-data/",
+      "title": "Nintendo 64 e periferiche — cronologia storica",
+      "publisher": "Nintendo Dream Web",
+      "accessed_at": "2026-10-30",
+      "scope": "Distingue il 64DD del dicembre 1999 dall’avvio successivo del servizio Randnet nel 2000 e documenta la distribuzione tramite RandnetDD.",
+      "limitation": "Fonte editoriale specialistica. Conservato nel testo il solo anno 1999 già dato per la periferica; nessuna data aggiunta alla rete. “Pochi dischi nei negozi” reso come catalogo ridotto senza imporre un canale di vendita inesatto."
+    },
+    {
+      "source_id": "061-64dd-explainer",
+      "url": "https://64dd.org/feature/2026-05-31-64DDExplainer.html",
+      "title": "64DD Explainer",
+      "publisher": "64DD.org",
+      "accessed_at": "2026-10-30",
+      "scope": "Riscontro specialistico dell’Expansion Pak incluso e della memoria da 4 a 8 MB, della scrittura su disco e del ruolo creativo del sistema.",
+      "limitation": "Non è una pubblicazione Nintendo. Nessun titolo ulteriore, totale numerico di dischi o giorno di release importato."
+    },
+    {
+      "source_id": "061-mario64-interviews",
+      "url": "https://shmuplations.com/mario64/",
+      "title": "Super Mario 64 — 1996 developer interviews",
+      "publisher": "Sviluppatori Nintendo, due guide ufficiali giapponesi; traduzione Shmuplations",
+      "accessed_at": "2026-10-30",
+      "scope": "Letti i passaggi di Miyamoto sui salti e quelli sul prototipo con Mario e Luigi, analogico e pulsante per la telecamera. Miyamoto colloca l’intervento quando il gioco era già molto completo.",
+      "limitation": "“Late” è reso come sviluppo già molto avanzato, senza inventare un numero di settimane prima della consegna. Interviste e traduzioni sono conservate come un unico gruppo bibliografico."
+    },
+    {
+      "source_id": "061-mario3dw-camera",
+      "url": "https://iwataasks.nintendo.com/interviews/wiiu/super-mario-3d-world/0/2/",
+      "title": "Iwata Asks: Super Mario 3D World — An Instinctively Good Feeling",
+      "publisher": "Nintendo / Satoru Iwata, Yoshiaki Koizumi, Kenta Motokura e gruppo di sviluppo",
+      "accessed_at": "2026-10-30",
+      "scope": "Passaggi indicizzati letti: distanza/direzione della telecamera, rinuncia allo schermo diviso, vista condivisa, Free Camera Mode e sensore giroscopico del GamePad.",
+      "limitation": "L’apertura diretta ha dato errore 502; letti i passaggi indicizzati e il corrispondente mirror ufficiale. Nessuna nascita dedotta per le persone citate in questa feature tecnica."
+    },
+    {
+      "source_id": "061-mario3dw-mirror",
+      "url": "https://www.nintendo.com/en-za/Iwata-Asks/Iwata-Asks-Super-Mario-3D-World/Super-Mario-3D-World/3-An-Instinctively-Good-Feeling-/3-An-Instinctively-Good-Feeling--829583.html",
+      "title": "Iwata Asks: Super Mario 3D World — mirror ufficiale",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "Controparte ufficiale dei medesimi passaggi sulla telecamera e sui controlli facoltativi.",
+      "limitation": "Stessa intervista della fonte precedente: non conteggiata come testimonianza indipendente."
+    }
+  ],
+  "decisions": [
+    {
+      "target_id": "console-gap-metal-slug-1996-video-game",
+      "problem": "Due fonti SNK danno giorni diversi per il debutto MVS.",
+      "conclusion": "Conservato il 19 aprile 1996, già nell’INPUT e ripetuto esplicitamente nella dichiarazione SNK corrente. Registrato il diverso 18 aprile del museo: la discrepanza non è spiegata dalla documentazione trovata e non è dichiarata risolta in senso storico assoluto.",
+      "source_ids": [
+        "061-metal-current",
+        "061-metal-museum"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "console-gap-the-legend-of-oasis",
+      "problem": "Rischio di confondere la data regionale e l’elemento “sound” con l’oggetto metallico usato per evocarlo.",
+      "conclusion": "Sega conferma il 26 aprile giapponese. Il manuale descrive lo spirito come maestro del suono: mantenuto “sound” e corrispondenti adattamenti, senza sostituirlo per intuizione con metallo.",
+      "source_ids": [
+        "061-oasis-sega",
+        "061-oasis-manual"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "workbook-05-08-inti-creates",
+      "problem": "La data appartiene alla fondazione; “original projects” potrebbe far credere che Blaster Master Zero sia una proprietà nuova.",
+      "conclusion": "La fondazione è esplicitamente l’8 maggio 1996. L’incipit identifica uno studio giapponese. Mantenuti tutti i titoli, usando “projects” senza attribuire originalità della proprietà intellettuale.",
+      "source_ids": [
+        "061-inti"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "workbook-05-14-fire-emblem-genealogy-of-the-holy-war",
+      "problem": "Il metadato non indica la regione, mentre il giorno appartiene all’edizione Super Famicom giapponese.",
+      "conclusion": "Confermato il 14 maggio 1996 in Giappone e preparata proposta regionale, lasciando intatti i metadati originali.",
+      "source_ids": [
+        "061-fe"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "workbook-06-22-quake",
+      "problem": "Distinguere release PC, spiegazione tecnica del 1997 e pubblicazione successiva del sorgente.",
+      "conclusion": "Conservata la disponibilità pubblica del 22 giugno 1996; Abrash è una testimonianza sullo sviluppo e il rilascio del codice resta esplicitamente successivo. Preservata la distinzione fra licenza del programma e dati del gioco, con entrambi i nomi dei curatori del sorgente.",
+      "source_ids": [
+        "061-quake-release",
+        "061-quake-anniversary",
+        "061-quake-abrash",
+        "061-quake-readme"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "nintendo-64",
+      "problem": "La data priva di regione rischia una lettura mondiale; il riferimento ai dischi 64DD nei negozi è troppo specifico per la distribuzione del sistema.",
+      "conclusion": "Il 23 giugno 1996 è collegato al Giappone. Il catalogo 64DD resta descritto come ridotto, senza inferire la vendita nei negozi. Conservati anno 1999 della periferica, Expansion Pak e capacità 4/8 MB.",
+      "source_ids": [
+        "061-nintendo-launch",
+        "061-n64-controls",
+        "061-64dd-history",
+        "061-64dd-explainer"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "super-mario-64",
+      "problem": "La data della voce deve restare il lancio giapponese del gioco, non gli anni delle interviste o una nascita dei progettisti.",
+      "conclusion": "Conservata la release 1996 e proposta la regione JP per il 23 giugno. La feature distingue la lavorazione di Super Mario 64 dalla discussione del 2013 su Super Mario 3D World.",
+      "source_ids": [
+        "061-nintendo-launch",
+        "061-mario64-interviews",
+        "061-mario3dw-camera",
+        "061-mario3dw-mirror"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "feature-polygon-camera-language",
+      "problem": "“Late in development” rischia di irrigidire il ricordo di Miyamoto.",
+      "conclusion": "Adottato “development already well advanced” e resa equivalente nelle quattro lingue: conserva il momento relativo senza inventare una fase finale datata. La modalità Free Camera resta un’opzione per il singolo giocatore.",
+      "source_ids": [
+        "061-mario64-interviews",
+        "061-mario3dw-camera",
+        "061-mario3dw-mirror"
+      ],
+      "text_applied": true
+    }
+  ],
+  "metadata_proposals": [
+    {
+      "target_id": "workbook-05-08-inti-creates",
+      "original_year": 1996,
+      "original_date": {
+        "month": 5,
+        "day": 8,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed_date": {
+        "year": 1996,
+        "month": 5,
+        "day": 8,
+        "precision": "day",
+        "region": "JP"
+      },
+      "event_semantics": "foundation",
+      "source_ids": [
+        "061-inti"
+      ],
+      "reason": "Esplicitare la regione giapponese già dichiarata nel testo, senza modificare il catalogo o i file originali."
+    },
+    {
+      "target_id": "workbook-05-14-fire-emblem-genealogy-of-the-holy-war",
+      "original_year": 1996,
+      "original_date": {
+        "month": 5,
+        "day": 14,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed_date": {
+        "year": 1996,
+        "month": 5,
+        "day": 14,
+        "precision": "day",
+        "region": "JP"
+      },
+      "event_semantics": "release",
+      "source_ids": [
+        "061-fe"
+      ],
+      "reason": "Esplicitare la regione giapponese già dichiarata nel testo, senza modificare il catalogo o i file originali."
+    },
+    {
+      "target_id": "nintendo-64",
+      "original_year": 1996,
+      "original_date": {
+        "month": 6,
+        "day": 23,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed_date": {
+        "year": 1996,
+        "month": 6,
+        "day": 23,
+        "precision": "day",
+        "region": "JP"
+      },
+      "event_semantics": "release",
+      "source_ids": [
+        "061-nintendo-launch",
+        "061-n64-controls"
+      ],
+      "reason": "Esplicitare la regione giapponese già dichiarata nel testo, senza modificare il catalogo o i file originali."
+    },
+    {
+      "target_id": "super-mario-64",
+      "original_year": 1996,
+      "original_date": {
+        "month": 6,
+        "day": 23,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed_date": {
+        "year": 1996,
+        "month": 6,
+        "day": 23,
+        "precision": "day",
+        "region": "JP"
+      },
+      "event_semantics": "release",
+      "source_ids": [
+        "061-nintendo-launch"
+      ],
+      "reason": "Esplicitare la regione giapponese già dichiarata nel testo, senza modificare il catalogo o i file originali."
+    }
+  ],
+  "expansion_assessments": [
+    {
+      "target_id": "console-gap-metal-slug-1996-video-game",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Capostipite importante del run and gun Neo Geo."
+    },
+    {
+      "target_id": "console-gap-the-legend-of-oasis",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Action RPG significativo del catalogo Saturn e della produzione Ancient."
+    },
+    {
+      "target_id": "jumping-flash-2-1996",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Primo piano sulla piattaforma in soggettiva nelle prime produzioni tridimensionali PlayStation."
+    },
+    {
+      "target_id": "workbook-05-08-inti-creates",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "required_main_cards": null,
+      "missing_cards": 0,
+      "rationale": "Voce di organizzazione: le soglie richieste per giochi e console non si applicano."
+    },
+    {
+      "target_id": "workbook-05-14-fire-emblem-genealogy-of-the-holy-war",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 1,
+      "rationale": "Capitolo importante del percorso di Fire Emblem e della strategia su Super Famicom."
+    },
+    {
+      "target_id": "console-gap-keio-flying-squadron-2",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Seguito significativo della produzione bidimensionale per Saturn."
+    },
+    {
+      "target_id": "workbook-06-22-quake",
+      "main_cards": 7,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 0,
+      "rationale": "Le sette card principali di Quake soddisfano già la soglia."
+    },
+    {
+      "target_id": "nintendo-64",
+      "main_cards": 5,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 6,
+      "missing_cards": 1,
+      "rationale": "Console importante: si applica la soglia di sei card principali."
+    },
+    {
+      "target_id": "pilotwings-64-1996",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Titolo di lancio importante del Nintendo 64."
+    },
+    {
+      "target_id": "super-mario-64",
+      "main_cards": 2,
+      "feature_cards": 4,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 3,
+      "rationale": "Platform fondamentale per la storia del gioco tridimensionale. Le quattro card della feature sulla telecamera sono conteggiate separatamente."
+    }
+  ],
+  "editorial_review": {
+    "english_first": true,
+    "english_checkpoint": "061-catalog/OUTPUT-061-catalog.json, ramo en; checkpoint di lavorazione separato nello scratch",
+    "summary_word_counts_en": [
+      36,
+      36,
+      36,
+      37,
+      37,
+      34,
+      37,
+      37,
+      37,
+      37,
+      37
+    ],
+    "fidelity": "Riletti tutti i testi originali e le 41 card in inglese, italiano, francese, tedesco e spagnolo; controllati incipit, nomi, sei missioni, sei spiriti, due generazioni, anni e date, attribuzioni di Quake e della feature, memoria 4/8 MB e sei piloti. Conservati ID, ordine, conteggi, titoli propri e riferimenti originali negli INPUT. Le citazioni del manuale e di Reznor sono parafrasate con attribuzione, senza inventare parole in discorso diretto.",
+    "naturalness": "Adattamenti scritti separatamente nelle quattro lingue; titoli specifici e paragrafi coesi. Rilette terminologia di volo, comandi, resa dei sistemi e collegamenti fra le frasi. Il controller tedesco usa Abzug per il grilletto inferiore.",
+    "limits": "La ricerca riguarda soltanto i punti indicati nelle fonti, non certifica ogni dettaglio del lotto. Registrata la discrepanza storica SNK 18/19 aprile; data adottata secondo la dichiarazione ufficiale corrente. Nessuna immagine originale dichiarata esaminata visivamente in questa verifica. Nessuna biografia autonoma nel lotto."
+  },
+  "validation": {
+    "valid": true,
+    "batch_id": "061-catalog",
+    "completed": true,
+    "entry_count": 10,
+    "card_count_per_language": 41,
+    "language_count": 5,
+    "translated_card_count": 205,
+    "entry_card_counts": {
+      "console-gap-metal-slug-1996-video-game": 3,
+      "console-gap-the-legend-of-oasis": 3,
+      "jumping-flash-2-1996": 3,
+      "workbook-05-08-inti-creates": 4,
+      "workbook-05-14-fire-emblem-genealogy-of-the-holy-war": 4,
+      "console-gap-keio-flying-squadron-2": 3,
+      "workbook-06-22-quake": 7,
+      "nintendo-64": 5,
+      "pilotwings-64-1996": 3,
+      "super-mario-64": 6
+    },
+    "issue_counts": {
+      "console-gap-metal-slug-1996-video-game": 1,
+      "console-gap-the-legend-of-oasis": 1,
+      "jumping-flash-2-1996": 1,
+      "workbook-05-08-inti-creates": 0,
+      "workbook-05-14-fire-emblem-genealogy-of-the-holy-war": 1,
+      "console-gap-keio-flying-squadron-2": 1,
+      "workbook-06-22-quake": 0,
+      "nintendo-64": 1,
+      "pilotwings-64-1996": 1,
+      "super-mario-64": 1
+    },
+    "summary_checks": [
+      {
+        "entry_id": "console-gap-metal-slug-1996-video-game",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "console-gap-the-legend-of-oasis",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "jumping-flash-2-1996",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "workbook-05-08-inti-creates",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "workbook-05-14-fire-emblem-genealogy-of-the-holy-war",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "console-gap-keio-flying-squadron-2",
+        "feature_id": null,
+        "english_summary_words": 34
+      },
+      {
+        "entry_id": "workbook-06-22-quake",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "nintendo-64",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "pilotwings-64-1996",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "super-mario-64",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "super-mario-64",
+        "feature_id": "feature-polygon-camera-language",
+        "english_summary_words": 37
+      }
+    ],
+    "editorial_review": [],
+    "failures": []
+  },
+  "output_sha256": "569f07b0ff8bc5c7b456740dfea423c198ec1f91aba9014296297620819deb23",
+  "root_review": {
+    "reviewed_at": "2026-10-30T03:26:33.794023+00:00",
+    "scope": "Rilettura mirata degli avvisi quantitativi e dei punti fattuali segnalati, successiva alla revisione del redattore; non verifica universale indipendente di ogni fonte.",
+    "finding": "I due avvisi numerici riguardano precisazioni documentate: data di Keio Flying Squadron 2 e anno identificativo di Quake. Nessun taglio segnalato dal controllo quantitativo.",
+    "additional_text_edits": false
+  }
+}

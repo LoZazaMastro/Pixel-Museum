@@ -1,0 +1,824 @@
+{
+  "schema_version": 1,
+  "title": "Pixel Museum - First Rooms",
+  "mode": "curated_installable_vertical_slice",
+  "language": "en",
+  "catalog_source": "content/catalog.json",
+  "catalog_sha256_at_audit": "3e8f70046e3ed43a2ba33f07be92d18a9887c11551b973291240e2c2003965a3",
+  "initial_id": "game-boy",
+  "entry_ids": [
+    "tennis-for-two",
+    "brown-box",
+    "channel-f",
+    "roberta-williams",
+    "carol-shaw",
+    "karateka",
+    "tetris",
+    "game-boy",
+    "doom",
+    "playstation-2",
+    "nintendo-3ds",
+    "journey",
+    "papers-please",
+    "switch",
+    "celeste",
+    "preserving-play"
+  ],
+  "excluded_heavy_model_ids": [
+    "playstation"
+  ],
+  "optional_after_native_merge": [
+    "atari-lynx"
+  ],
+  "order": "chronological",
+  "preserve_full_catalog": true,
+  "remote_media_policy": "Keep original URLs and credits. Live image health is listed below; a local cache success does not count as a remote-source success. Do not label rate-limited or untested media as available.",
+  "checked_utc": "2026-10-20T15:36:36.208303+00:00",
+  "probe_policy": "Direct uncached HTTP GET and actual image decode; stop retrying a host after429. YouTube oEmbed checks identity/availability, not native stream playback.",
+  "entries_audit": [
+    {
+      "id": "tennis-for-two",
+      "title": "Tennis for Two",
+      "year": 1958,
+      "kind": "game",
+      "paragraphs": 3,
+      "word_count": 109,
+      "source_count": 1,
+      "images": [
+        {
+          "image_index": 0,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Tennis_For_Two_on_a_DuMont_Lab_Oscilloscope_Type_304-A.jpg/330px-Tennis_For_Two_on_a_DuMont_Lab_Oscilloscope_Type_304-A.jpg",
+          "status": 200,
+          "content_type": "image/jpeg",
+          "bytes_read": 28214,
+          "live_verified": true,
+          "resolved_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Tennis_For_Two_on_a_DuMont_Lab_Oscilloscope_Type_304-A.jpg/330px-Tennis_For_Two_on_a_DuMont_Lab_Oscilloscope_Type_304-A.jpg",
+          "dimensions": [
+            330,
+            293
+          ],
+          "image_decoded": true
+        },
+        {
+          "image_index": 1,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Tennis_for_Two_Machine_at_CAX_2010.jpg/1280px-Tennis_for_Two_Machine_at_CAX_2010.jpg",
+          "status": 200,
+          "content_type": "image/jpeg",
+          "bytes_read": 239080,
+          "live_verified": true,
+          "resolved_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Tennis_for_Two_Machine_at_CAX_2010.jpg/1280px-Tennis_for_Two_Machine_at_CAX_2010.jpg",
+          "dimensions": [
+            1280,
+            960
+          ],
+          "image_decoded": true
+        }
+      ],
+      "videos": [
+        {
+          "youtube_id": "u6mu5B-YZU8",
+          "source_page": "https://www.bnl.gov/about/history/firstvideo.php",
+          "oembed": {
+            "url": "https://www.youtube.com/oembed?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Du6mu5B-YZU8&format=json",
+            "status": 200,
+            "content_type": "application/json",
+            "bytes_read": 770,
+            "live_verified": true,
+            "resolved_url": "https://www.youtube.com/oembed?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Du6mu5B-YZU8&format=json",
+            "title": "First Video Game?",
+            "author_name": "Brookhaven Lab",
+            "provider_name": "YouTube"
+          },
+          "thumbnail": {
+            "url": "https://i.ytimg.com/vi/u6mu5B-YZU8/hqdefault.jpg",
+            "status": 200,
+            "content_type": "image/jpeg",
+            "bytes_read": 16042,
+            "live_verified": true,
+            "resolved_url": "https://i.ytimg.com/vi/u6mu5B-YZU8/hqdefault.jpg",
+            "dimensions": [
+              480,
+              360
+            ],
+            "image_decoded": true
+          }
+        }
+      ],
+      "model_assets": []
+    },
+    {
+      "id": "brown-box",
+      "title": "Ralph Baer, Bill Harrison and Bill Rusch",
+      "year": 1968,
+      "kind": "person",
+      "paragraphs": 2,
+      "word_count": 77,
+      "source_count": 1,
+      "images": [
+        {
+          "image_index": 0,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/BrownBox.jpg/1280px-BrownBox.jpg",
+          "status": 200,
+          "content_type": "image/jpeg",
+          "bytes_read": 228122,
+          "live_verified": true,
+          "resolved_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/BrownBox.jpg/1280px-BrownBox.jpg",
+          "dimensions": [
+            1280,
+            853
+          ],
+          "image_decoded": true
+        },
+        {
+          "image_index": 1,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Ralph_H._Baer_-_%22Brown_Box%22_prototype.png/1280px-Ralph_H._Baer_-_%22Brown_Box%22_prototype.png",
+          "status": 200,
+          "content_type": "image/png",
+          "bytes_read": 1147356,
+          "live_verified": true,
+          "resolved_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Ralph_H._Baer_-_%22Brown_Box%22_prototype.png/1280px-Ralph_H._Baer_-_%22Brown_Box%22_prototype.png",
+          "dimensions": [
+            1280,
+            1416
+          ],
+          "image_decoded": true
+        }
+      ],
+      "videos": [],
+      "model_assets": []
+    },
+    {
+      "id": "channel-f",
+      "title": "Jerry Lawson and the Channel F team",
+      "year": 1976,
+      "kind": "person",
+      "paragraphs": 4,
+      "word_count": 224,
+      "source_count": 2,
+      "images": [
+        {
+          "image_index": 0,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Fairchild-Channel-F.jpg/1280px-Fairchild-Channel-F.jpg",
+          "status": 200,
+          "content_type": "image/jpeg",
+          "bytes_read": 133197,
+          "live_verified": true,
+          "resolved_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Fairchild-Channel-F.jpg/1280px-Fairchild-Channel-F.jpg",
+          "dimensions": [
+            1280,
+            842
+          ],
+          "image_decoded": true
+        },
+        {
+          "image_index": 1,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Jerry_Lawson_at_KJZZ_%28cropped%29.png/330px-Jerry_Lawson_at_KJZZ_%28cropped%29.png",
+          "status": 200,
+          "content_type": "image/png",
+          "bytes_read": 189391,
+          "live_verified": true,
+          "resolved_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Jerry_Lawson_at_KJZZ_%28cropped%29.png/330px-Jerry_Lawson_at_KJZZ_%28cropped%29.png",
+          "dimensions": [
+            330,
+            251
+          ],
+          "image_decoded": true
+        },
+        {
+          "image_index": 2,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Cartridge_Fairchild_Channel_F.jpg/330px-Cartridge_Fairchild_Channel_F.jpg",
+          "status": 200,
+          "content_type": "image/jpeg",
+          "bytes_read": 24513,
+          "live_verified": true,
+          "resolved_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Cartridge_Fairchild_Channel_F.jpg/330px-Cartridge_Fairchild_Channel_F.jpg",
+          "dimensions": [
+            330,
+            492
+          ],
+          "image_decoded": true
+        }
+      ],
+      "videos": [],
+      "model_assets": []
+    },
+    {
+      "id": "roberta-williams",
+      "title": "Roberta Williams",
+      "year": 1980,
+      "kind": "person",
+      "paragraphs": 4,
+      "word_count": 228,
+      "source_count": 1,
+      "images": [
+        {
+          "image_index": 0,
+          "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/dtenqhpncx9pkahpery3.jpg",
+          "status": 200,
+          "content_type": "image/jpeg",
+          "bytes_read": 44075,
+          "live_verified": true,
+          "resolved_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/dtenqhpncx9pkahpery3.jpg",
+          "dimensions": [
+            1110,
+            624
+          ],
+          "image_decoded": true
+        },
+        {
+          "image_index": 1,
+          "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/sikxa1asllqzayb750qb.jpg",
+          "status": 200,
+          "content_type": "image/jpeg",
+          "bytes_read": 50709,
+          "live_verified": true,
+          "resolved_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/sikxa1asllqzayb750qb.jpg",
+          "dimensions": [
+            1110,
+            624
+          ],
+          "image_decoded": true
+        }
+      ],
+      "videos": [],
+      "model_assets": []
+    },
+    {
+      "id": "carol-shaw",
+      "title": "Carol Shaw and River Raid",
+      "year": 1982,
+      "kind": "person",
+      "paragraphs": 4,
+      "word_count": 215,
+      "source_count": 2,
+      "images": [
+        {
+          "image_index": 0,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Carol_Shaw_Holding_Gold_River_Raid_Cartridge.jpg/1280px-Carol_Shaw_Holding_Gold_River_Raid_Cartridge.jpg",
+          "status": 200,
+          "content_type": "image/jpeg",
+          "bytes_read": 473225,
+          "live_verified": true,
+          "resolved_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Carol_Shaw_Holding_Gold_River_Raid_Cartridge.jpg/1280px-Carol_Shaw_Holding_Gold_River_Raid_Cartridge.jpg",
+          "dimensions": [
+            1280,
+            1402
+          ],
+          "image_decoded": true
+        },
+        {
+          "image_index": 1,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Carol_Shaw_photo.jpg/330px-Carol_Shaw_photo.jpg",
+          "status": 200,
+          "content_type": "image/jpeg",
+          "bytes_read": 38269,
+          "live_verified": true,
+          "resolved_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Carol_Shaw_photo.jpg/330px-Carol_Shaw_photo.jpg",
+          "dimensions": [
+            330,
+            495
+          ],
+          "image_decoded": true
+        }
+      ],
+      "videos": [],
+      "model_assets": []
+    },
+    {
+      "id": "karateka",
+      "title": "Karateka",
+      "year": 1984,
+      "kind": "game",
+      "paragraphs": 2,
+      "word_count": 66,
+      "source_count": 1,
+      "images": [
+        {
+          "image_index": 0,
+          "url": "https://cdn.prod.website-files.com/63fe9c9ccd6a191fcb553ba6/64ac770fd6acbd789f56676d_karateka_webhero..jpg",
+          "status": 200,
+          "content_type": "image/jpeg",
+          "bytes_read": 928894,
+          "live_verified": true,
+          "resolved_url": "https://cdn.prod.website-files.com/63fe9c9ccd6a191fcb553ba6/64ac770fd6acbd789f56676d_karateka_webhero..jpg",
+          "dimensions": [
+            1280,
+            1615
+          ],
+          "image_decoded": true
+        }
+      ],
+      "videos": [
+        {
+          "youtube_id": "IrS2pipZaH0",
+          "source_page": "https://www.digitaleclipse.com/games/karateka",
+          "oembed": {
+            "url": "https://www.youtube.com/oembed?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DIrS2pipZaH0&format=json",
+            "status": 200,
+            "content_type": "application/json",
+            "bytes_read": 882,
+            "live_verified": true,
+            "resolved_url": "https://www.youtube.com/oembed?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DIrS2pipZaH0&format=json",
+            "title": "The Making of Karateka - Trailer - Digital Eclipse Gold Master Series 01",
+            "author_name": "Digital Eclipse",
+            "provider_name": "YouTube"
+          },
+          "thumbnail": {
+            "url": "https://i.ytimg.com/vi/IrS2pipZaH0/hqdefault.jpg",
+            "status": 200,
+            "content_type": "image/jpeg",
+            "bytes_read": 22054,
+            "live_verified": true,
+            "resolved_url": "https://i.ytimg.com/vi/IrS2pipZaH0/hqdefault.jpg",
+            "dimensions": [
+              480,
+              360
+            ],
+            "image_decoded": true
+          }
+        }
+      ],
+      "model_assets": []
+    },
+    {
+      "id": "tetris",
+      "title": "Tetris",
+      "year": 1984,
+      "kind": "game",
+      "paragraphs": 4,
+      "word_count": 227,
+      "source_count": 1,
+      "images": [
+        {
+          "image_index": 0,
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/12/Alexey_Pajitnov_January_2008_cropped.jpg",
+          "status": 200,
+          "content_type": "image/jpeg",
+          "bytes_read": 35237,
+          "live_verified": true,
+          "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/1/12/Alexey_Pajitnov_January_2008_cropped.jpg",
+          "dimensions": [
+            320,
+            432
+          ],
+          "image_decoded": true
+        }
+      ],
+      "videos": [],
+      "model_assets": []
+    },
+    {
+      "id": "game-boy",
+      "title": "Game Boy",
+      "year": 1989,
+      "kind": "console",
+      "paragraphs": 4,
+      "word_count": 227,
+      "source_count": 4,
+      "images": [
+        {
+          "image_index": 0,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Game-Boy-Original.jpg/1280px-Game-Boy-Original.jpg",
+          "status": 200,
+          "content_type": "image/jpeg",
+          "bytes_read": 176192,
+          "live_verified": true,
+          "resolved_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Game-Boy-Original.jpg/1280px-Game-Boy-Original.jpg",
+          "dimensions": [
+            1280,
+            2048
+          ],
+          "image_decoded": true
+        },
+        {
+          "image_index": 1,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Game-Boy-FL.jpg/1280px-Game-Boy-FL.jpg",
+          "status": 200,
+          "content_type": "image/jpeg",
+          "bytes_read": 141173,
+          "live_verified": true,
+          "resolved_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Game-Boy-FL.jpg/1280px-Game-Boy-FL.jpg",
+          "dimensions": [
+            1280,
+            1552
+          ],
+          "image_decoded": true
+        }
+      ],
+      "videos": [],
+      "model_assets": [
+        {
+          "asset_file": "models/game-boy.glb",
+          "bytes": 134987820,
+          "sha256": "8d60dde415190d24216890b65032db7e8a87d724e63a68f9578ca1c538d2417e"
+        }
+      ]
+    },
+    {
+      "id": "doom",
+      "title": "DOOM",
+      "year": 1993,
+      "kind": "game",
+      "paragraphs": 4,
+      "word_count": 228,
+      "source_count": 1,
+      "images": [
+        {
+          "image_index": 0,
+          "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/vv0zszxgvk4dklsz53ap.jpg",
+          "status": 200,
+          "content_type": "image/jpeg",
+          "bytes_read": 72266,
+          "live_verified": true,
+          "resolved_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/vv0zszxgvk4dklsz53ap.jpg",
+          "dimensions": [
+            1110,
+            624
+          ],
+          "image_decoded": true
+        },
+        {
+          "image_index": 1,
+          "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/uolg5ypiubgnc1rtqmjx.jpg",
+          "status": 200,
+          "content_type": "image/jpeg",
+          "bytes_read": 87935,
+          "live_verified": true,
+          "resolved_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/uolg5ypiubgnc1rtqmjx.jpg",
+          "dimensions": [
+            1110,
+            624
+          ],
+          "image_decoded": true
+        }
+      ],
+      "videos": [
+        {
+          "youtube_id": "6y3sK4xKcVs",
+          "source_page": "https://www.museumofplay.org/games/doom/",
+          "oembed": {
+            "url": "https://www.youtube.com/oembed?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D6y3sK4xKcVs&format=json",
+            "status": 200,
+            "content_type": "application/json",
+            "bytes_read": 776,
+            "live_verified": true,
+            "resolved_url": "https://www.youtube.com/oembed?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D6y3sK4xKcVs&format=json",
+            "title": "DOOM by John Romero",
+            "author_name": "The Strong Museum",
+            "provider_name": "YouTube"
+          },
+          "thumbnail": {
+            "url": "https://i.ytimg.com/vi/6y3sK4xKcVs/hqdefault.jpg",
+            "status": 200,
+            "content_type": "image/jpeg",
+            "bytes_read": 9189,
+            "live_verified": true,
+            "resolved_url": "https://i.ytimg.com/vi/6y3sK4xKcVs/hqdefault.jpg",
+            "dimensions": [
+              480,
+              360
+            ],
+            "image_decoded": true
+          }
+        }
+      ],
+      "model_assets": []
+    },
+    {
+      "id": "playstation-2",
+      "title": "PlayStation 2",
+      "year": 2000,
+      "kind": "console",
+      "paragraphs": 2,
+      "word_count": 68,
+      "source_count": 1,
+      "images": [
+        {
+          "image_index": 0,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/PS2-Versions.jpg/1280px-PS2-Versions.jpg",
+          "status": 200,
+          "content_type": "image/jpeg",
+          "bytes_read": 112658,
+          "live_verified": true,
+          "resolved_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/PS2-Versions.jpg/1280px-PS2-Versions.jpg",
+          "dimensions": [
+            1280,
+            1134
+          ],
+          "image_decoded": true
+        }
+      ],
+      "videos": [],
+      "model_assets": [
+        {
+          "asset_file": "models/playstation-2.glb",
+          "bytes": 59619012,
+          "sha256": "99f159f8260fd9990ddf87ed77a8bbfd78e2e1bcaef365830cc8340a9f029fca"
+        }
+      ]
+    },
+    {
+      "id": "nintendo-3ds",
+      "title": "Nintendo 3DS",
+      "year": 2011,
+      "kind": "console",
+      "paragraphs": 3,
+      "word_count": 182,
+      "source_count": 2,
+      "images": [
+        {
+          "image_index": 0,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Nintendo-3DS-AquaOpen.png/1920px-Nintendo-3DS-AquaOpen.png",
+          "status": 200,
+          "content_type": "image/png",
+          "bytes_read": 2774587,
+          "live_verified": true,
+          "resolved_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Nintendo-3DS-AquaOpen.png/1920px-Nintendo-3DS-AquaOpen.png",
+          "dimensions": [
+            1920,
+            1736
+          ],
+          "image_decoded": true
+        }
+      ],
+      "videos": [],
+      "model_assets": [
+        {
+          "asset_file": "models/nintendo-3ds.glb",
+          "bytes": 4271404,
+          "sha256": "0d69a3665462d4221864e38604392037cf5fa71ba0b40726f0525b4ff0cd6717"
+        }
+      ]
+    },
+    {
+      "id": "journey",
+      "title": "Journey",
+      "year": 2012,
+      "kind": "game",
+      "paragraphs": 4,
+      "word_count": 231,
+      "source_count": 2,
+      "images": [
+        {
+          "image_index": 0,
+          "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/sc12s3h.jpg",
+          "status": 200,
+          "content_type": "image/jpeg",
+          "bytes_read": 74507,
+          "live_verified": true,
+          "resolved_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/sc12s3h.jpg",
+          "dimensions": [
+            1110,
+            624
+          ],
+          "image_decoded": true
+        },
+        {
+          "image_index": 1,
+          "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/sc12s3i.jpg",
+          "status": 200,
+          "content_type": "image/jpeg",
+          "bytes_read": 62344,
+          "live_verified": true,
+          "resolved_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/sc12s3i.jpg",
+          "dimensions": [
+            1110,
+            624
+          ],
+          "image_decoded": true
+        }
+      ],
+      "videos": [],
+      "model_assets": []
+    },
+    {
+      "id": "papers-please",
+      "title": "Papers, Please",
+      "year": 2013,
+      "kind": "game",
+      "paragraphs": 2,
+      "word_count": 64,
+      "source_count": 1,
+      "images": [
+        {
+          "image_index": 0,
+          "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/pqnoclnus8ut4jzkmrid.jpg",
+          "status": 200,
+          "content_type": "image/jpeg",
+          "bytes_read": 72946,
+          "live_verified": true,
+          "resolved_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/pqnoclnus8ut4jzkmrid.jpg",
+          "dimensions": [
+            1110,
+            624
+          ],
+          "image_decoded": true
+        },
+        {
+          "image_index": 1,
+          "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/babxzbm0ejcxfvnotowf.jpg",
+          "status": 200,
+          "content_type": "image/jpeg",
+          "bytes_read": 87122,
+          "live_verified": true,
+          "resolved_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/babxzbm0ejcxfvnotowf.jpg",
+          "dimensions": [
+            1110,
+            624
+          ],
+          "image_decoded": true
+        }
+      ],
+      "videos": [
+        {
+          "youtube_id": "_QP5X6fcukM",
+          "source_page": "https://papersplea.se/presskit/",
+          "oembed": {
+            "url": "https://www.youtube.com/oembed?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D_QP5X6fcukM&format=json",
+            "status": 200,
+            "content_type": "application/json",
+            "bytes_read": 774,
+            "live_verified": true,
+            "resolved_url": "https://www.youtube.com/oembed?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D_QP5X6fcukM&format=json",
+            "title": "Papers, Please - Trailer",
+            "author_name": "Lucas Pope",
+            "provider_name": "YouTube"
+          },
+          "thumbnail": {
+            "url": "https://i.ytimg.com/vi/_QP5X6fcukM/hqdefault.jpg",
+            "status": 200,
+            "content_type": "image/jpeg",
+            "bytes_read": 11557,
+            "live_verified": true,
+            "resolved_url": "https://i.ytimg.com/vi/_QP5X6fcukM/hqdefault.jpg",
+            "dimensions": [
+              480,
+              360
+            ],
+            "image_decoded": true
+          }
+        }
+      ],
+      "model_assets": []
+    },
+    {
+      "id": "switch",
+      "title": "Nintendo Switch",
+      "year": 2017,
+      "kind": "console",
+      "paragraphs": 2,
+      "word_count": 62,
+      "source_count": 1,
+      "images": [
+        {
+          "image_index": 0,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Nintendo-Switch-Console-Docked-wJoyConRB.jpg/1280px-Nintendo-Switch-Console-Docked-wJoyConRB.jpg",
+          "status": 200,
+          "content_type": "image/jpeg",
+          "bytes_read": 78794,
+          "live_verified": true,
+          "resolved_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Nintendo-Switch-Console-Docked-wJoyConRB.jpg/1280px-Nintendo-Switch-Console-Docked-wJoyConRB.jpg",
+          "dimensions": [
+            1280,
+            731
+          ],
+          "image_decoded": true
+        }
+      ],
+      "videos": [],
+      "model_assets": [
+        {
+          "asset_file": "models/switch.glb",
+          "bytes": 14114940,
+          "sha256": "58099076b8cdc1f421099321c978a6af53837e22ed436a607144eafff6056822"
+        }
+      ]
+    },
+    {
+      "id": "celeste",
+      "title": "Celeste",
+      "year": 2018,
+      "kind": "game",
+      "paragraphs": 2,
+      "word_count": 68,
+      "source_count": 1,
+      "images": [
+        {
+          "image_index": 0,
+          "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/fwjvpiu2ircdq5afkm1o.jpg",
+          "status": 200,
+          "content_type": "image/jpeg",
+          "bytes_read": 91257,
+          "live_verified": true,
+          "resolved_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/fwjvpiu2ircdq5afkm1o.jpg",
+          "dimensions": [
+            1110,
+            624
+          ],
+          "image_decoded": true
+        },
+        {
+          "image_index": 1,
+          "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/e9lk3alqutkrciksfque.jpg",
+          "status": 200,
+          "content_type": "image/jpeg",
+          "bytes_read": 70193,
+          "live_verified": true,
+          "resolved_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/e9lk3alqutkrciksfque.jpg",
+          "dimensions": [
+            1110,
+            624
+          ],
+          "image_decoded": true
+        }
+      ],
+      "videos": [
+        {
+          "youtube_id": "FqBj2IGg6Uw",
+          "source_page": "https://www.celestegame.com/?lang=en",
+          "oembed": {
+            "url": "https://www.youtube.com/oembed?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DFqBj2IGg6Uw&format=json",
+            "status": 200,
+            "content_type": "application/json",
+            "bytes_read": 778,
+            "live_verified": true,
+            "resolved_url": "https://www.youtube.com/oembed?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DFqBj2IGg6Uw&format=json",
+            "title": "Celeste Launch Trailer",
+            "author_name": "Maddy Thorson",
+            "provider_name": "YouTube"
+          },
+          "thumbnail": {
+            "url": "https://i.ytimg.com/vi/FqBj2IGg6Uw/hqdefault.jpg",
+            "status": 200,
+            "content_type": "image/jpeg",
+            "bytes_read": 21607,
+            "live_verified": true,
+            "resolved_url": "https://i.ytimg.com/vi/FqBj2IGg6Uw/hqdefault.jpg",
+            "dimensions": [
+              480,
+              360
+            ],
+            "image_decoded": true
+          }
+        }
+      ],
+      "model_assets": []
+    },
+    {
+      "id": "preserving-play",
+      "title": "Preserving play",
+      "year": 2023,
+      "kind": "feature",
+      "paragraphs": 4,
+      "word_count": 154,
+      "source_count": 1,
+      "images": [
+        {
+          "image_index": 0,
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Spacewar%21-PDP-1-20070512.jpg/1280px-Spacewar%21-PDP-1-20070512.jpg",
+          "status": 200,
+          "content_type": "image/jpeg",
+          "bytes_read": 238461,
+          "live_verified": true,
+          "resolved_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Spacewar%21-PDP-1-20070512.jpg/1280px-Spacewar%21-PDP-1-20070512.jpg",
+          "dimensions": [
+            1280,
+            861
+          ],
+          "image_decoded": true
+        }
+      ],
+      "videos": [
+        {
+          "youtube_id": "IrS2pipZaH0",
+          "source_page": "https://www.digitaleclipse.com/media/goldmasterseries",
+          "oembed": {
+            "url": "https://www.youtube.com/oembed?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DIrS2pipZaH0&format=json",
+            "status": 200,
+            "content_type": "application/json",
+            "bytes_read": 882,
+            "live_verified": true,
+            "resolved_url": "https://www.youtube.com/oembed?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DIrS2pipZaH0&format=json",
+            "title": "The Making of Karateka - Trailer - Digital Eclipse Gold Master Series 01",
+            "author_name": "Digital Eclipse",
+            "provider_name": "YouTube"
+          },
+          "thumbnail": {
+            "url": "https://i.ytimg.com/vi/IrS2pipZaH0/hqdefault.jpg",
+            "status": 200,
+            "content_type": "image/jpeg",
+            "bytes_read": 22054,
+            "live_verified": true,
+            "resolved_url": "https://i.ytimg.com/vi/IrS2pipZaH0/hqdefault.jpg",
+            "dimensions": [
+              480,
+              360
+            ],
+            "image_decoded": true
+          }
+        }
+      ],
+      "model_assets": []
+    }
+  ]
+}

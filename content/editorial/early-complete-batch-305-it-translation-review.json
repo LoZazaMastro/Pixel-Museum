@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "locale": "it",
+  "entries": [
+    {
+      "entry_id": "wikipedia-57661331",
+      "source_fields_sha256": "600a5d201d14d6a6672563e06a5f1f04ce55a80f240d44ce482e957338256b67",
+      "translation_sha256": "f81195793164e7fca811141884908f1723b9c234787f5817fd65b5613058993e",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch305/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "b4664ad498cdde81e26941af044ab2ca3e2303ce77d3c15166fa2b406d39e3af"
+    },
+    {
+      "entry_id": "wikipedia-10007933",
+      "source_fields_sha256": "f0fcb4a77b9c3bcb566d1b498c4a0701ff683f170652e6d7f0b347156f809aba",
+      "translation_sha256": "1c428c89dff00603105b8735eb85d79c5996ca55f78766a7bbc70bbcb903d242",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch305/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "b4664ad498cdde81e26941af044ab2ca3e2303ce77d3c15166fa2b406d39e3af"
+    },
+    {
+      "entry_id": "wikipedia-26297912",
+      "source_fields_sha256": "95366be8b2b26279773a85dc3e0699cc8859fc2ea71ca90144499892c518e0c4",
+      "translation_sha256": "5bb166266b9ee10a141730d7ad540569f1c30525d49ccf041b28bbb4a869668d",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch305/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "b4664ad498cdde81e26941af044ab2ca3e2303ce77d3c15166fa2b406d39e3af"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "root",
+    "actual_receipt": "build/research/catalog-2019-chronological/january-march-three-private/independent-root-approval.json",
+    "actual_receipt_sha256": "de0ca007c38d5df24b087d0a2cef249af5d93884218590d445c7c5ed8adc8925",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "root",
+      "index_sha256": "a139abd3abfab4699d9e14dc8848450c131b5774a2d66749f6e754a1b608c774",
+      "owner_ids": [
+        "wikipedia-57661331",
+        "wikipedia-10007933",
+        "wikipedia-26297912"
+      ],
+      "english_cards_read": 9,
+      "localized_cards_read": 36,
+      "contacts_personally_viewed": 3,
+      "finite_findings_resolved": [
+        "Correct KHIII original Nomura cover replaces wrongHD2.8 artwork; final contact personally re-viewed. Native632x704 publisher artwork retained without invented upscale.",
+        "KHIII five-million clause is shipments including digital downloads, in EN and fourlocales. Primary SquareEnix Feb5,2019 report read."
+      ],
+      "unchanged_music_records": 334,
+      "primary_RE2_checked": "Capcom September10,2026 release confirms20M milestone and October16Switch2release; not wrongly removed as anachronism.",
+      "previous_review_evidence": "root-peer-findings.json",
+      "production_writes": false
+    }
+  }
+}

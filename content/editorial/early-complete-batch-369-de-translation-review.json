@@ -1,0 +1,105 @@
+{
+  "status": "PASS",
+  "locale": "de",
+  "entries": [
+    {
+      "entry_id": "wikipedia-78158850",
+      "source_fields_sha256": "550593f3e5f3045df5653acc0feb8d1c3ee0b7b500c31476efbcb0c5d5866970",
+      "translation_sha256": "0a7965fa4215514a17f0004a282779b7867458bf3329a9c4e8f47a0138fc73f0",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch369/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "80c88ef9df78bd98c0027b66d5d2e6e5ffa48ff6236f713a91eedab315660414"
+    },
+    {
+      "entry_id": "workbook-05-21-senua-s-saga-hellblade-ii",
+      "source_fields_sha256": "22a02680c4ec55939af33e015322396f857ba255337047c73d5d780b082f35bc",
+      "translation_sha256": "972b8a23af41743373f1520e702c9fe8d344f32198d5372394125ae880183207",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch369/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "80c88ef9df78bd98c0027b66d5d2e6e5ffa48ff6236f713a91eedab315660414"
+    },
+    {
+      "entry_id": "wikipedia-69304869",
+      "source_fields_sha256": "c4d38904e9da04d75d8e341c039703c90e3e8225db3eafd6ef7cfce18a248fc1",
+      "translation_sha256": "6473cf55ff5d6650595bc3c830a6013142007f0c196c35f2135718a0d211b401",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch369/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "80c88ef9df78bd98c0027b66d5d2e6e5ffa48ff6236f713a91eedab315660414"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "/root/package_audit",
+    "actual_receipt": "build/research/catalog-2024-chronological/may-three-private/independent-package-audit-approval.json",
+    "actual_receipt_sha256": "4ccb63ecdac6eb4bb5d08a5690efbc90321a3740732d8e1f123cd43f1ae14a88",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "/root/package_audit",
+      "index": "build/research/catalog-2024-chronological/may-three-private/three-original-source-media-four-language-private-index.json",
+      "index_sha256": "925845268e922b5fbbdf509fa436b8f43dd905ed0bdcf3e0c75003a6bf361ec4",
+      "owners": [
+        {
+          "entry_id": "wikipedia-78158850",
+          "slug": "resist",
+          "source": "build/research/catalog-2024-chronological/may-three-private/resist/complete-original-source-media-private-candidate.json",
+          "source_sha256": "594a5bff2299d2ff4104688043446162d20e64e018ac470689c47ee434261bc9",
+          "target": "build/research/catalog-2024-chronological/may-three-private/resist/complete-four-language-private-candidate.json",
+          "target_sha256": "db6aac9769b33cf5abd3bf48c08ac7f21e0f553aff216809c9eaba544fb784bb",
+          "contact": "build/research/catalog-2024-chronological/may-three-private/resist/final-selected-media-contact.jpg",
+          "contact_sha256": "80b0cbe288ba1d0cf60c38c8dc947efda46bf6aed790fa035dd50a84c37a9cbb",
+          "english_cards": 2,
+          "localized_cards": 8,
+          "images": 6,
+          "tracks": 3,
+          "finite_errata": 1
+        },
+        {
+          "entry_id": "workbook-05-21-senua-s-saga-hellblade-ii",
+          "slug": "hellblade",
+          "source": "build/research/catalog-2024-chronological/may-three-private/hellblade/complete-original-source-media-private-candidate.json",
+          "source_sha256": "1460d26e9155a387f7273efeb662d85456332a4c4c2c90bbf43edaa55d5b8b6b",
+          "target": "build/research/catalog-2024-chronological/may-three-private/hellblade/complete-four-language-private-candidate.json",
+          "target_sha256": "bfaeca8e17b37bb2552c6ee88dc8bbb5bc99581888b96a996c59e6dfed307066",
+          "contact": "build/research/catalog-2024-chronological/may-three-private/hellblade/final-selected-media-contact.jpg",
+          "contact_sha256": "44c8e36f515497ca3669d7577d0d110f10bf99b8aea3f5aed20d8954b7a299dc",
+          "english_cards": 2,
+          "localized_cards": 8,
+          "images": 4,
+          "tracks": 3,
+          "finite_errata": 0
+        },
+        {
+          "entry_id": "wikipedia-69304869",
+          "slug": "multiversus",
+          "source": "build/research/catalog-2024-chronological/may-three-private/multiversus/complete-original-source-media-private-candidate.json",
+          "source_sha256": "08eb54f6197df6044e0f1c0caf96b414419156655d2f522633324b782c3106a4",
+          "target": "build/research/catalog-2024-chronological/may-three-private/multiversus/complete-four-language-private-candidate.json",
+          "target_sha256": "eb5af82c886d00eea2fa5fe2e5e6896799941c2e8bf9dd4a27a469a53609cbd2",
+          "contact": "build/research/catalog-2024-chronological/may-three-private/multiversus/final-selected-media-contact.jpg",
+          "contact_sha256": "0deb574670eed58663bd33423edabc8511f5f7c0d950a416fb5a341b9671f6b3",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 6,
+          "tracks": 3,
+          "finite_errata": 2
+        }
+      ],
+      "scope": {
+        "english_paragraphs_read": 7,
+        "localized_paragraphs_read": 28,
+        "selected_images_actually_viewed": 16,
+        "preserved_track_objects_exact": 3,
+        "new_public_metadata_read": 6
+      },
+      "resolved_findings": [
+        "MultiVersus English summary truncated at Warner Bros. period now contains complete first sentence ending Warner Bros. Games.; all four summaries synchronized and verified."
+      ],
+      "notes": [
+        "All three final contacts viewed: originals match game and contextual paragraphs, covers clean, video thumbnails identified as such.",
+        "IGF nominations distinguished from later Peabody award: publisher January11,2024 and award institution original profiles independently read.",
+        "Three1000xRESIST label recordings distributedJune30,2026 honestlyidentified as original2024game cues; Bandcampdeveloper originalalbum independently read, LineKatcho/DrewRedman composer attribution distinguished from mix roles.",
+        "Three originalMultiVersus officialWaterTower2022beta-era cues names/composer directly read; not misrepresented as firstpublished2024.",
+        "WBseason5FAQ independently read: February4start/May30end, requiredpriorlogin/localsave preservesoffline only for existingplayers, not newusers.",
+        "Hellblade three objects preserved exactly without redundant refetch. Public metadata verification is not actual PS5 playback verification."
+      ],
+      "production_writes": false
+    }
+  }
+}

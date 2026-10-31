@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "status": "original_English_exhibition_copy_with_sources_ready_for_editorial_review",
+  "entries": [
+    {
+      "id": "bertie-the-brain",
+      "year": 1950,
+      "date": {"month": 0, "day": 0, "precision": "year", "region": "Toronto, Canada"},
+      "kind": "game",
+      "title": "Bertie the Brain",
+      "subtitle": "An engineer gives the public an opponent",
+      "summary": "Josef Kates used a familiar game to introduce an unfamiliar machine at the Canadian National Exhibition.",
+      "body": [
+        "In Toronto in 1950, visitors could challenge a machine at tic-tac-toe. Josef Kates built Bertie the Brain for the Canadian National Exhibition, using a keypad for the player's moves and a large illuminated display to show the contest. Its adjustable difficulty let the same installation offer different levels of resistance.",
+        "Kates was also demonstrating his Additron tube, an electronic component he had developed. A game gave that engineering a public face: instead of asking visitors to understand a circuit, Bertie asked them to make a move. The component did not become a commercial successor to conventional vacuum tubes, but the demonstration remains an early example of a computer opponent presented to ordinary visitors.",
+        "Bertie used lamps rather than a video screen. That distinction matters when comparing it with later experiments. It belongs in the origins of electronic play without needing to win a single, universal contest for the title of first video game."
+      ],
+      "era_id": "origins",
+      "tags": ["Canada", "Josef Kates", "public demonstration", "electronic opponent"],
+      "related_ids": ["nimrod", "oxo", "tennis-for-two"],
+      "layout": "portrait",
+      "images": [], "videos": [], "models": [],
+      "sources": [
+        {"title": "Game on!", "url": "https://www.canadashistory.ca/explore/science-technology/game-on!", "publisher": "Canada's History; Brendan McShane"},
+        {"title": "Bertie the Brain exhibition flyer", "url": "https://ethw.org/w/images/b/b4/Bertie_the_Brain_Flyer.pdf", "publisher": "Rogers Majestic historical artifact, hosted by Engineering and Technology History Wiki"}
+      ],
+      "featured": false,
+      "factual_note": "The year and machine description are supported by Canada's History. The original flyer is linked as an artifact, not reproduced. No global first-video-game claim is made. Images still require a rights-cleared selection."
+    },
+    {
+      "id": "oxo",
+      "year": 1952,
+      "date": {"month": 0, "day": 0, "precision": "year", "region": "Cambridge, United Kingdom"},
+      "kind": "game",
+      "title": "OXO",
+      "subtitle": "A telephone dial becomes a game controller",
+      "summary": "Sandy Douglas put noughts and crosses on EDSAC, making a familiar contest part of life inside a computing laboratory.",
+      "body": [
+        "Alexander 'Sandy' Douglas was a Cambridge PhD student when he made a noughts-and-crosses program for EDSAC, usually dated to 1952. The player entered moves with a rotary telephone dial. A small cathode-ray display showed the board, and the player could choose whether to move first or let the machine begin.",
+        "The setting shaped the audience. EDSAC was a research computer, so this was not a product that people could buy and take home. Few people outside Cambridge encountered the program. Its significance lies partly in that small scale: a laboratory machine could become something a person played against, with an input device, a visible position and a response to each decision.",
+        "The surviving EDSAC simulator and its documentation make that interaction approachable today. They also remind us to distinguish an original program from a later reconstruction. OXO is an important early graphical computer game; its position among other beginnings depends on whether we mean a stored program, an electronic display, moving images or public access."
+      ],
+      "era_id": "origins",
+      "tags": ["United Kingdom", "Sandy Douglas", "EDSAC", "human-computer interaction"],
+      "related_ids": ["bertie-the-brain", "nimrod", "tennis-for-two", "spacewar"],
+      "layout": "technical",
+      "images": [], "videos": [], "models": [],
+      "sources": [
+        {"title": "Alexander Douglas writes OXO for EDSAC", "url": "https://www.computerhistory.org/timeline/1952/", "publisher": "Computer History Museum"},
+        {"title": "A Tutorial Guide to the EDSAC Simulator", "url": "https://www.dcs.warwick.ac.uk/~edsac/Software/EdsacTG.pdf", "publisher": "Martin Campbell-Kelly; EDSAC Replica Project, The National Museum of Computing"},
+        {"title": "EDSAC", "url": "https://www.tnmoc.org/edsac", "publisher": "The National Museum of Computing"}
+      ],
+      "featured": false,
+      "factual_note": "The simulator guide describes the program as developed about 1952; the year is conventional, not an exact day. Few outside Cambridge played it. Do not call Douglas's entire thesis a video-game thesis or imply a direct commercial lineage. Images still require a rights-cleared selection."
+    }
+  ]
+}

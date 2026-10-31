@@ -1,0 +1,101 @@
+{
+  "status": "PASS",
+  "locale": "de",
+  "entries": [
+    {
+      "entry_id": "workbook-10-17-sonic-superstars",
+      "source_fields_sha256": "fca12dce1e820a0b46be811efeeff0071a3204d72a27ff0bfba44ade81352acf",
+      "translation_sha256": "2d0f7a5f970fbb5d6678c86792f7e49bf0f5b283c8a47ce7014d7c50b771b546",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch361/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "12626b0c7dbab6e441e86cacde59986c8207a3f263905e9be117c423dbc9a50f"
+    },
+    {
+      "entry_id": "workbook-10-20-super-mario-bros-wonder",
+      "source_fields_sha256": "2f8b660e8e99cb373c48c689648d68601196ff4ba4ab93448937056277c6ea98",
+      "translation_sha256": "daed7b1bf37bb8c9bd5f554df86f9c70ef374e8ecf3125dabd782cb1375045c0",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch361/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "12626b0c7dbab6e441e86cacde59986c8207a3f263905e9be117c423dbc9a50f"
+    },
+    {
+      "entry_id": "wikipedia-68687157",
+      "source_fields_sha256": "ecdbf0758924a5446721b57876717cdd8674805f74271192302250c40412c64f",
+      "translation_sha256": "780d5dab38b7c8581e9a1195f1539d1e63b49003eb41af742042e013e27def3c",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch361/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "12626b0c7dbab6e441e86cacde59986c8207a3f263905e9be117c423dbc9a50f"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "/root/package_audit",
+    "actual_receipt": "build/research/catalog-2023-chronological/october-second-three-private/independent-package-audit-approval.json",
+    "actual_receipt_sha256": "293c72c17a79293fa64c3573a2438927577b67dd7ea68c119f88e159895540af",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "/root/package_audit",
+      "index": "build/research/catalog-2023-chronological/october-second-three-private/three-private-index.json",
+      "index_sha256": "c6938014845a04284321a0a96749f3d08bff591713909e1708c23fe997190c75",
+      "owners": [
+        {
+          "entry_id": "workbook-10-17-sonic-superstars",
+          "slug": "sonic",
+          "source": "build/research/catalog-2023-chronological/october-second-three-private/sonic-source-private-candidate.json",
+          "source_sha256": "55d22149d8ee6a08d900ff4ba7df62a186c4e1414d7e70bb3ae3214d5809acd7",
+          "target": "build/research/catalog-2023-chronological/october-second-three-private/sonic-four-language-private-candidate.json",
+          "target_sha256": "5386ef815762bc4a4305f28a302fc0df0ddee98432444890c573058418558bc8",
+          "contact": "build/research/catalog-2023-chronological/october-second-three-private/sonic-final-contact.jpg",
+          "contact_sha256": "6a608884b69c341dcd03cd7e3966ff4ce8e9ed3d8300d0d4d0d22f3781a64e18",
+          "english_cards": 4,
+          "localized_cards": 16,
+          "images": 6,
+          "tracks": 3
+        },
+        {
+          "entry_id": "workbook-10-20-super-mario-bros-wonder",
+          "slug": "wonder",
+          "source": "build/research/catalog-2023-chronological/october-second-three-private/wonder-source-private-candidate.json",
+          "source_sha256": "eff154823c564992cb467e1ca986007de84b2b9dd69e98ab0521ac88cbefd7da",
+          "target": "build/research/catalog-2023-chronological/october-second-three-private/wonder-four-language-private-candidate.json",
+          "target_sha256": "bd6257b098f3e621ae335367a5c4d51c3f2609b1dce862511734a2f1a1abf926",
+          "contact": "build/research/catalog-2023-chronological/october-second-three-private/wonder-final-contact.jpg",
+          "contact_sha256": "554bd01994b0e0409b3aec5c6549ef300956d2b82d4d61f8acd08eed3cb525b1",
+          "english_cards": 7,
+          "localized_cards": 28,
+          "images": 9,
+          "tracks": 164
+        },
+        {
+          "entry_id": "wikipedia-68687157",
+          "slug": "spider",
+          "source": "build/research/catalog-2023-chronological/october-second-three-private/spider-source-private-candidate.json",
+          "source_sha256": "091c509cf29aa1c1aa96b79e34ac90875024b92d794b9e3daa0b0beb0de50ff0",
+          "target": "build/research/catalog-2023-chronological/october-second-three-private/spider-four-language-private-candidate.json",
+          "target_sha256": "29dfcffa2ff753b3cfd6169133fafaa53c17507ab53fe3f72c0f880c381cabb0",
+          "contact": "build/research/catalog-2023-chronological/october-second-three-private/spider-final-contact.jpg",
+          "contact_sha256": "3e54e470409adc0216eef92e2b6158ed3b55bbdaef0fd2234800192ce1c6fbfe",
+          "english_cards": 4,
+          "localized_cards": 16,
+          "images": 7,
+          "tracks": 21
+        }
+      ],
+      "scope": {
+        "english_paragraphs_read": 15,
+        "localized_paragraphs_read": 60,
+        "selected_images_actually_viewed": 22,
+        "preserved_track_objects_exact": 186,
+        "new_metadata_read": 2
+      },
+      "resolved_findings": [
+        "Spider-Man DE P3 writing rendered naturally as erzählerische Ausarbeitung instead of literal Schreiben; final target verified."
+      ],
+      "notes": [
+        "All three final contacts personally viewed: clean cover art, full original-game chapters, no modern box reverses. Platform logos occur only on video posters, not covers.",
+        "Sonic Sega launch primary independently read; two original official 2024 album recordings match 2023 game, names and composers read from Space Shower FUGA metadata.",
+        "Sony primary record independently read: 2.5 million in first 24 hours is specifically PlayStation Studios fastest, not unrestricted PS5 best seller.",
+        "All 186 pre-existing track objects preserved exactly, without repeated stream verification. Added only two Sonic official recordings.",
+        "All 15 English and 60 localized paragraphs read; all five localized fields and headings complete."
+      ],
+      "production_writes": false
+    }
+  }
+}

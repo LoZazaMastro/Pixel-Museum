@@ -1,0 +1,477 @@
+{
+  "schema_version": 1,
+  "reviewed": "2026-10-21",
+  "status": "source_bound_review_declaration_pending_root_integration_no_master_write",
+  "scope": "Six separately reviewed event/date cases; three birthyear-template narration holds. Already-correct canonical semantics are explicitly distinguished from proposed updates.",
+  "source_import_sha256": "27673228e5e389f43ffb2cee7fb435f017e5551c4292824df4afac15e4f62f0e",
+  "catalog_sha256_snapshot": "4b3b29890c78136827e1adfe1c06dde31200d9e2080fb56f66719b44b447fc26",
+  "native_identity_receipt_sha256": "265d0fdc628d308e6a1a72065a0137782b331151ffddfe95a456f4bcba3d5e49",
+  "independent_identity_receipt_sha256": "92d09e44d4ad61295470bb1ee6bf9bce4e0011f71fdccfd50a158a29898ed77a",
+  "policy": [
+    "Source body/headings/all8publishedlocaleprose remain exact.",
+    "Changes apply only to explicitly enumerated fields after expected snapshot checks; do not change kind=game/hardware/person to an eventkind.",
+    "Canonical date precision is never expanded from year to day merely because a calendar slot exists.",
+    "Original source anniversary metadata remains archived provenance, not silently rewritten.",
+    "This declaration is not an assembler or approval to execute packaging/FTP."
+  ],
+  "cases": [
+    {
+      "edition_id": "daily-01-07",
+      "canonical_id": "workbook-01-07-game-boy-advance-sp",
+      "review_status": "already_correct_canonical_semantics_source_anniversary_still_archival_release",
+      "verified_event_kind": "announcement",
+      "source_original_body_sha256": "f07232159ee090fdc9feff8583f150ff2e22491e234db952631fe33b231fc2d6",
+      "source_original_headings_sha256": "c17fc7f9fa5ffb4f7eb522ec647718a7ef99ed5cfcc1bc71b6d3de849334c0d7",
+      "source_record_id": "workbook-01-07-game-boy-advance-sp",
+      "source_original_anniversary_metadata": {
+        "date": "01-07",
+        "year": 2003,
+        "kind": "release"
+      },
+      "expected_daily_snapshot": {
+        "entry_id": "daily-01-07",
+        "title": "Game Boy Advance SP",
+        "year": 2003,
+        "kind": "technology",
+        "date": {
+          "month": 0,
+          "day": 0,
+          "precision": "year",
+          "region": ""
+        },
+        "event_semantics": "Scheduled published Playhub edition. The calendar slot is not asserted as a historical anniversary; the year is the source's historical anchor.",
+        "body_sha256": "f07232159ee090fdc9feff8583f150ff2e22491e234db952631fe33b231fc2d6",
+        "headings_sha256": "c17fc7f9fa5ffb4f7eb522ec647718a7ef99ed5cfcc1bc71b6d3de849334c0d7"
+      },
+      "expected_canonical_snapshot": {
+        "entry_id": "workbook-01-07-game-boy-advance-sp",
+        "title": "Game Boy Advance SP",
+        "year": 2003,
+        "kind": "technology",
+        "date": {
+          "month": 1,
+          "day": 7,
+          "precision": "day",
+          "region": ""
+        },
+        "event_semantics": "announcement",
+        "body_sha256": "f07232159ee090fdc9feff8583f150ff2e22491e234db952631fe33b231fc2d6",
+        "headings_sha256": "c17fc7f9fa5ffb4f7eb522ec647718a7ef99ed5cfcc1bc71b6d3de849334c0d7"
+      },
+      "proposed_daily_updates": {},
+      "proposed_canonical_updates": {},
+      "evidence_ids": [
+        "gba-announcement",
+        "gba-retail"
+      ],
+      "source_prose_changes": 0,
+      "calendar_month_day_changes": 0,
+      "localized_prose_changes": 0,
+      "calendar_date_is_release_date": false
+    },
+    {
+      "edition_id": "daily-01-08",
+      "canonical_id": "workbook-01-08-pok-mon-x-and-y",
+      "review_status": "reviewed_metadata_correction_ready",
+      "verified_event_kind": "announcement",
+      "source_original_body_sha256": "7a3954c8ab32c1d959d1bb300d0438a0d16e385375ccbe9bdd0f4773a9e1fd25",
+      "source_original_headings_sha256": "2721ce807317f6d21f3c1ef32a2e97052b2a19aea033e92fa2880c089a5aad5c",
+      "source_record_id": "workbook-01-08-pok-mon-x-and-y",
+      "source_original_anniversary_metadata": {
+        "date": "01-08",
+        "year": 2013,
+        "kind": "release"
+      },
+      "expected_daily_snapshot": {
+        "entry_id": "daily-01-08",
+        "title": "Pokémon X e Pokémon Y",
+        "year": 2013,
+        "kind": "game",
+        "date": {
+          "month": 0,
+          "day": 0,
+          "precision": "year",
+          "region": ""
+        },
+        "event_semantics": "Scheduled published Playhub edition. The calendar slot is not asserted as a historical anniversary; the year is the source's historical anchor.",
+        "body_sha256": "7a3954c8ab32c1d959d1bb300d0438a0d16e385375ccbe9bdd0f4773a9e1fd25",
+        "headings_sha256": "2721ce807317f6d21f3c1ef32a2e97052b2a19aea033e92fa2880c089a5aad5c"
+      },
+      "expected_canonical_snapshot": {
+        "entry_id": "workbook-01-08-pok-mon-x-and-y",
+        "title": "Pokémon X e Pokémon Y",
+        "year": 2013,
+        "kind": "game",
+        "date": {
+          "month": 1,
+          "day": 8,
+          "precision": "day",
+          "region": ""
+        },
+        "event_semantics": "release",
+        "body_sha256": "7a3954c8ab32c1d959d1bb300d0438a0d16e385375ccbe9bdd0f4773a9e1fd25",
+        "headings_sha256": "2721ce807317f6d21f3c1ef32a2e97052b2a19aea033e92fa2880c089a5aad5c"
+      },
+      "proposed_daily_updates": {
+        "event_semantics": "announcement"
+      },
+      "proposed_canonical_updates": {
+        "event_semantics": "announcement",
+        "date": {
+          "month": 1,
+          "day": 8,
+          "precision": "day",
+          "region": "Worldwide: Pokemon Direct announcement"
+        }
+      },
+      "evidence_ids": [
+        "xy-direct"
+      ],
+      "source_prose_changes": 0,
+      "calendar_month_day_changes": 0,
+      "localized_prose_changes": 0,
+      "calendar_date_is_release_date": false
+    },
+    {
+      "edition_id": "daily-01-12",
+      "canonical_id": "daily-01-12",
+      "review_status": "already_correct_title_and_regional_date_clarification_ready",
+      "verified_event_kind": "presentation",
+      "source_original_body_sha256": "cfb3d479aee0fcd159e4024fe35597e50822fcbedb2968d398b0ba97788ea4a1",
+      "source_original_headings_sha256": "c6aeff56089e80e72f8fdbe62b6173bf273d342e39ea49ae4af530e7419d7212",
+      "source_record_id": "workbook-01-12-nintendo-switch",
+      "source_original_anniversary_metadata": {
+        "date": "01-12",
+        "year": 2017,
+        "kind": "release"
+      },
+      "expected_daily_snapshot": {
+        "entry_id": "daily-01-12",
+        "title": "Nintendo Switch presentation",
+        "year": 2017,
+        "kind": "console",
+        "date": {
+          "month": 1,
+          "day": 12,
+          "precision": "day",
+          "region": "North America"
+        },
+        "event_semantics": "Scheduled published Playhub edition. The calendar slot is not asserted as a historical anniversary; the year is the source's historical anchor.",
+        "body_sha256": "cfb3d479aee0fcd159e4024fe35597e50822fcbedb2968d398b0ba97788ea4a1",
+        "headings_sha256": "c6aeff56089e80e72f8fdbe62b6173bf273d342e39ea49ae4af530e7419d7212"
+      },
+      "expected_canonical_snapshot": {
+        "entry_id": "daily-01-12",
+        "title": "Nintendo Switch presentation",
+        "year": 2017,
+        "kind": "console",
+        "date": {
+          "month": 1,
+          "day": 12,
+          "precision": "day",
+          "region": "North America"
+        },
+        "event_semantics": "Scheduled published Playhub edition. The calendar slot is not asserted as a historical anniversary; the year is the source's historical anchor.",
+        "body_sha256": "cfb3d479aee0fcd159e4024fe35597e50822fcbedb2968d398b0ba97788ea4a1",
+        "headings_sha256": "c6aeff56089e80e72f8fdbe62b6173bf273d342e39ea49ae4af530e7419d7212"
+      },
+      "proposed_daily_updates": {
+        "event_semantics": "Nintendo Switch presentation livestream: January12,2017 in NorthAmerica; January13 in Tokyo and theUK. This is not the March retail launch."
+      },
+      "proposed_canonical_updates": {},
+      "evidence_ids": [
+        "switch-presentation"
+      ],
+      "source_prose_changes": 0,
+      "calendar_month_day_changes": 0,
+      "localized_prose_changes": 0,
+      "calendar_date_is_release_date": false
+    },
+    {
+      "edition_id": "daily-05-13",
+      "canonical_id": "workbook-05-13-playstation-portable-psp",
+      "review_status": "already_correct_canonical_semantics_source_anniversary_still_archival_release",
+      "verified_event_kind": "announcement",
+      "source_original_body_sha256": "75b621df7cb45f711ac04054d1955922ca8138df1b3c11fc5e96a88216a6bcf2",
+      "source_original_headings_sha256": "a5f4b3eb9a9d3c7d9cf2b0f05f9fa22b08a2c0d0afba6ca2639cda505f248910",
+      "source_record_id": "workbook-05-13-playstation-portable-psp",
+      "source_original_anniversary_metadata": {
+        "date": "05-13",
+        "year": 2003,
+        "kind": "release"
+      },
+      "expected_daily_snapshot": {
+        "entry_id": "daily-05-13",
+        "title": "PlayStation Portable (PSP)",
+        "year": 2003,
+        "kind": "technology",
+        "date": {
+          "month": 0,
+          "day": 0,
+          "precision": "year",
+          "region": ""
+        },
+        "event_semantics": "Scheduled published Playhub edition. The calendar slot is not asserted as a historical anniversary; the year is the source's historical anchor.",
+        "body_sha256": "75b621df7cb45f711ac04054d1955922ca8138df1b3c11fc5e96a88216a6bcf2",
+        "headings_sha256": "a5f4b3eb9a9d3c7d9cf2b0f05f9fa22b08a2c0d0afba6ca2639cda505f248910"
+      },
+      "expected_canonical_snapshot": {
+        "entry_id": "workbook-05-13-playstation-portable-psp",
+        "title": "PlayStation Portable (PSP)",
+        "year": 2003,
+        "kind": "technology",
+        "date": {
+          "month": 5,
+          "day": 13,
+          "precision": "day",
+          "region": ""
+        },
+        "event_semantics": "announcement",
+        "body_sha256": "75b621df7cb45f711ac04054d1955922ca8138df1b3c11fc5e96a88216a6bcf2",
+        "headings_sha256": "a5f4b3eb9a9d3c7d9cf2b0f05f9fa22b08a2c0d0afba6ca2639cda505f248910"
+      },
+      "proposed_daily_updates": {},
+      "proposed_canonical_updates": {},
+      "evidence_ids": [
+        "psp-announcement"
+      ],
+      "source_prose_changes": 0,
+      "calendar_month_day_changes": 0,
+      "localized_prose_changes": 0,
+      "calendar_date_is_release_date": false
+    },
+    {
+      "edition_id": "daily-05-22",
+      "canonical_id": "pac-man",
+      "review_status": "reviewed_daily_event_clarification_ready_canonical_year_precision_retained",
+      "verified_event_kind": "first_focus_test",
+      "source_original_body_sha256": "30abd71de24b67c84347266bfa2f77a968db834881b5077d852cf1ea684a83d1",
+      "source_original_headings_sha256": "045cf10df69d36e9370d514879e1d4bb01a6bf903065495e61f90f67e303dc1b",
+      "source_record_id": "workbook-05-22-pac-man",
+      "source_original_anniversary_metadata": {
+        "date": "05-22",
+        "year": 1980,
+        "kind": "release"
+      },
+      "expected_daily_snapshot": {
+        "entry_id": "daily-05-22",
+        "title": "PAC-MAN",
+        "year": 1980,
+        "kind": "game",
+        "date": {
+          "month": 0,
+          "day": 0,
+          "precision": "year",
+          "region": ""
+        },
+        "event_semantics": "Scheduled published Playhub edition. The calendar slot is not asserted as a historical anniversary; the year is the source's historical anchor.",
+        "body_sha256": "30abd71de24b67c84347266bfa2f77a968db834881b5077d852cf1ea684a83d1",
+        "headings_sha256": "045cf10df69d36e9370d514879e1d4bb01a6bf903065495e61f90f67e303dc1b"
+      },
+      "expected_canonical_snapshot": {
+        "entry_id": "pac-man",
+        "title": "Pac-Man",
+        "year": 1980,
+        "kind": "game",
+        "date": {
+          "month": 0,
+          "day": 0,
+          "precision": "year",
+          "region": ""
+        },
+        "event_semantics": null,
+        "body_sha256": "30abd71de24b67c84347266bfa2f77a968db834881b5077d852cf1ea684a83d1",
+        "headings_sha256": "045cf10df69d36e9370d514879e1d4bb01a6bf903065495e61f90f67e303dc1b"
+      },
+      "proposed_daily_updates": {
+        "event_semantics": "May22,1980 marks the first PAC-MAN focus test. Japanese commercial public release followed in July; no exact July day is assigned."
+      },
+      "proposed_canonical_updates": {},
+      "evidence_ids": [
+        "pacman-test"
+      ],
+      "source_prose_changes": 0,
+      "calendar_month_day_changes": 0,
+      "localized_prose_changes": 0,
+      "calendar_date_is_release_date": false
+    },
+    {
+      "edition_id": "daily-11-02",
+      "canonical_id": "workbook-11-02-alex-kidd-in-miracle-world",
+      "review_status": "reviewed_canonical_date_correction_ready_calendar_slot_preserved",
+      "verified_event_kind": "release",
+      "source_original_body_sha256": "bc227f54f9ac6235fe37b63e6d575b0cc7440f1f6a0cd92f718d80efdfedf00e",
+      "source_original_headings_sha256": "e702fe7983a924b9e8528e80fc242ee77d072c715c79502b540d2348416c0fef",
+      "source_record_id": "workbook-11-02-alex-kidd-in-miracle-world",
+      "source_original_anniversary_metadata": {
+        "date": "11-02",
+        "year": 1986,
+        "kind": "release"
+      },
+      "expected_daily_snapshot": {
+        "entry_id": "daily-11-02",
+        "title": "Alex Kidd in Miracle World",
+        "year": 1986,
+        "kind": "game",
+        "date": {
+          "month": 0,
+          "day": 0,
+          "precision": "year",
+          "region": ""
+        },
+        "event_semantics": "Scheduled published Playhub edition. The calendar slot is not asserted as a historical anniversary; the year is the source's historical anchor.",
+        "body_sha256": "bc227f54f9ac6235fe37b63e6d575b0cc7440f1f6a0cd92f718d80efdfedf00e",
+        "headings_sha256": "e702fe7983a924b9e8528e80fc242ee77d072c715c79502b540d2348416c0fef"
+      },
+      "expected_canonical_snapshot": {
+        "entry_id": "workbook-11-02-alex-kidd-in-miracle-world",
+        "title": "Alex Kidd in Miracle World",
+        "year": 1986,
+        "kind": "game",
+        "date": {
+          "month": 11,
+          "day": 2,
+          "precision": "day",
+          "region": ""
+        },
+        "event_semantics": "release",
+        "body_sha256": "bc227f54f9ac6235fe37b63e6d575b0cc7440f1f6a0cd92f718d80efdfedf00e",
+        "headings_sha256": "e702fe7983a924b9e8528e80fc242ee77d072c715c79502b540d2348416c0fef"
+      },
+      "proposed_daily_updates": {
+        "event_semantics": "Editorial November2slot for AlexKidd; verified Japanese commercial release was November1,1986."
+      },
+      "proposed_canonical_updates": {
+        "date": {
+          "month": 11,
+          "day": 1,
+          "precision": "day",
+          "region": "Japan: Sega MarkIII release"
+        },
+        "event_semantics": "release"
+      },
+      "evidence_ids": [
+        "alex-release"
+      ],
+      "source_prose_changes": 0,
+      "calendar_month_day_changes": 0,
+      "localized_prose_changes": 0,
+      "calendar_date_is_release_date": false
+    }
+  ],
+  "evidence": [
+    {
+      "id": "gba-announcement",
+      "url": "https://www.nintendoworldreport.com/pr/8149/game-boy-advance-sp-the-press-release",
+      "type": "primary_Nintendo_of_America_press_release_preserved_by_Nintendo_World_Report",
+      "finding": "The preserved release is datelined NewYorkJan7,2003 and announces the redesigned SP; NorthAmerican retail is explicitly scheduled forMarch23,2003.",
+      "local_snapshot": "build/research/calendar-event-semantics-04/gba-announcement.html",
+      "sha256": "165b46e84b7a645101557ecb9c6060990bcc59f1a08f1358092c19bc4646824a",
+      "bytes": 24314
+    },
+    {
+      "id": "gba-retail",
+      "url": "https://www.nintendo.co.jp/n08/hardware/gbasp/index.html",
+      "type": "primary_manufacturer_product_record",
+      "finding": "Japanese AGS001 product page independently dates sale2003-02-14; this is distinct from January7announcement.",
+      "local_snapshot": "build/research/calendar-event-semantics-04/gba-retail.html",
+      "sha256": "eb7fe8df2c6a825861340ea18466148555ea83ff4bcee5cd36673f424bc2431c",
+      "bytes": 12856
+    },
+    {
+      "id": "xy-direct",
+      "url": "https://www.nintendo.com/en-gb/News/Nintendo-Direct/2013/Pokemon-Direct-08-01-2013/Pokemon-Direct-January-8th-2013-699626.html",
+      "type": "primary_broadcast_record",
+      "finding": "Official January8,2013Direct page identifies XY trailer at07:12 and explicitly describes footage for software still in production.",
+      "local_snapshot": "build/research/calendar-event-semantics-04/xy-direct.html",
+      "sha256": "c972f4dd0dc4909bce21c524bb74797cbb591a4672e9e1b51609263e4ecd0774",
+      "bytes": 109103
+    },
+    {
+      "id": "switch-presentation",
+      "url": "https://www.nintendo.com/en-gb/News/2016/October/Nintendo-Switch-Presentation-2017-coming-January-13th-2017-1149971.html",
+      "type": "primary_manufacturer_broadcast_announcement",
+      "finding": "Nintendo explicitly schedules Tokyo livestream forJanuary13,2017 at04:00UKtime and says retail isMarch2017. January12NorthAmerica is the same broadcast inPST20:00/EST23:00, not a console launch.",
+      "local_snapshot": "build/research/calendar-event-semantics-04/switch-presentation.html",
+      "sha256": "8742c52f5b249864f071601650d44c9d25ff1271f79b9c5ee054c1079489d2dc",
+      "bytes": 160946
+    },
+    {
+      "id": "psp-announcement",
+      "url": "https://sonyinteractive.com/en/press-releases/2003/sony-computer-entertainment-readies-for-market-expansion-with-creation-of-a-new-handheld-entertainment-platform/",
+      "type": "primary_manufacturer_press_release",
+      "finding": "May13,2003LosAngeles release announces plans forPSP and schedules release forfourthquarter2004;2003 is announcement chronology.",
+      "local_snapshot": "build/research/calendar-event-semantics-04/psp-announcement.html",
+      "sha256": "f732b9373100a3792e3db306c0841d5a897c1fa881572686d2feaacb0905c237",
+      "bytes": 87978
+    },
+    {
+      "id": "pacman-test",
+      "url": "https://pacman.com/en/history/",
+      "type": "primary_rightsholder_history",
+      "finding": "1980timeline separates May22firstfocus test from Japanese public release inJuly; no specific Julyday is supplied.",
+      "local_snapshot": "build/research/calendar-event-semantics-04/pacman-test.html",
+      "sha256": "28e82cdb57f0396ce82ee07eae9980c364054b300e13cd388515102db4eb513f",
+      "bytes": 69917
+    },
+    {
+      "id": "alex-release",
+      "url": "https://www.sega.jp/fb/album/04_alex/",
+      "type": "primary_manufacturer_history_and_creator_interview",
+      "finding": "Original title record explicitly prints1986-11-01. The published edition itself already explainsNovember2is an editorial calendar exception.",
+      "local_snapshot": null,
+      "snapshot_error": "HTTP Error 403: Forbidden",
+      "independent_reading": "Primary page independently opened/read through web extraction; local snapshot retrieval failure does not invent a file hash."
+    }
+  ],
+  "narration_holds": [
+    {
+      "edition_id": "daily-02-22",
+      "subject": "Ed Boon",
+      "severity": "high",
+      "status": "unresolved_narration_not_fixable_by_changing_event_kind_alone",
+      "source_body_sha256": "f04bc70478ae5c687bbf78414acc18921dce64685c810010eb5133e1ee0cd8f5",
+      "source_headings_sha256": "4f4944aa25d5fb2401e5c1c2c073b77d420badd069526fcc51bcdb98f994a23a",
+      "evidence": "Original intro says In1964 about design choices; chapter0 context1964 names Midway/Mortal Kombat, chapter1 In1964 names John Tobias/Mortal Kombat, chapter2 describes Scorpion/Get Over Here as not unprecedented in1964. Person identity consistent, but birthyear is mechanically assigned to later professional work.",
+      "necessary_treatment": "Keep original publication and all translations as immutable archival source. Any active-exhibition factual annotation or replacement career narrative requires explicit source-bound review; never invent one substitute year for the whole body. Birth metadata alone cannot repair these production assertions."
+    },
+    {
+      "edition_id": "daily-02-24",
+      "subject": "Sid Meier",
+      "severity": "high",
+      "status": "unresolved_narration_not_fixable_by_changing_event_kind_alone",
+      "source_body_sha256": "7bf9b9870a2dabe6cb57d47f6491d5d49919ae57a98744218e9588be6462a09d",
+      "source_headings_sha256": "0f9fe7031eb6a44fe8ebff3d9ec788274f3e7cbf597ea5fd683e51305b46a807",
+      "evidence": "Intro In1954 names MicroProse/Civilization; chapter0 context1954 names Bill Stealey/F15StrikeEagle; chapter1 In1954 names Pirates/Railroad Tycoon; chapter2 not unprecedented in1954 names Civilization. Person matches but template incorrectly projects birthyear onto later career.",
+      "necessary_treatment": "Keep original publication and all translations as immutable archival source. Any active-exhibition factual annotation or replacement career narrative requires explicit source-bound review; never invent one substitute year for the whole body. Birth metadata alone cannot repair these production assertions."
+    },
+    {
+      "edition_id": "daily-03-08",
+      "subject": "Ralph Baer",
+      "severity": "high",
+      "status": "unresolved_narration_not_fixable_by_changing_event_kind_alone",
+      "source_body_sha256": "19b67c234ded8c1dcbb4161fc8fbb6809498334335ee67fb697c6a460f03b7c9",
+      "source_headings_sha256": "bae6538154d74342beac28d38c69ff3f7f63f64ac9a8d3f4a541e8f888443bd6",
+      "evidence": "Full intro+3chapters identify RalphBaer,BrownBox,MagnavoxOdyssey,BillHarrison/BillRusch. Intro In1922 and chapter1 In1922 apply birthyear to later design/collaboration; chapter2 not unprecedented in1922 describes Odyssey.",
+      "necessary_treatment": "Keep original publication and all translations as immutable archival source. Any active-exhibition factual annotation or replacement career narrative requires explicit source-bound review; never invent one substitute year for the whole body. Birth metadata alone cannot repair these production assertions."
+    }
+  ],
+  "additional_candidates_pending_primary_review": [
+    {
+      "edition_id": "daily-01-03",
+      "issue": "Published prose explicitly contrasts late1996Diablo circulation with January3,1997in-stores announcement; examine current canonical semantics before anydatechange."
+    },
+    {
+      "edition_id": "daily-01-04",
+      "issue": "Published RuneScape prose explicitly says publicbeta2001; distinguish beta from later commercial service, no guessed alternate date."
+    }
+  ],
+  "counts": {
+    "reviewed_metadata_cases": 6,
+    "cases_with_nonempty_proposed_updates": 4,
+    "already_correct_canonical_announcement_cases": 2,
+    "unresolved_narration_holds": 3,
+    "master_writes": 0,
+    "source_prose_changes": 0
+  }
+}

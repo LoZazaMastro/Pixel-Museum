@@ -1,0 +1,531 @@
+{
+  "batch_id": "054-catalog",
+  "status": "completed",
+  "sources": [
+    {
+      "source_id": "ps-timeline",
+      "url": "https://www.playstation.com/en-us/playstation-history/1994-ps-one/",
+      "title": "PlayStation 1994 — history timeline",
+      "publisher": "Sony Interactive Entertainment",
+      "accessed_at": "2026-10-30",
+      "scope": "Conferma 3 dicembre 1994 Giappone, 9 settembre 1995 Nord America, 29 settembre Europa; capacità CD, R3000, evoluzione dei controller e oltre cento milioni di console.",
+      "limitation": "Cronologia retrospettiva del titolare. Il testo mantiene la soglia originale di cento milioni senza aggiungere nuove cifre o date delle revisioni."
+    },
+    {
+      "source_id": "ps-corporate",
+      "url": "https://www.sony.com/en/SonyInfo/CorporateInfo/History/SonyHistory/2-09.html",
+      "title": "Sony History, Volume 2 Chapter 9 — The PlayStation",
+      "publisher": "Sony Group",
+      "accessed_at": "2026-10-30",
+      "scope": "Parti 1–3: collaborazione Nintendo, progetto indipendente di Kutaragi, dubbi interni, produzione e distribuzione dei CD, scocca rettangolare con coperchio circolare e simboli di Teiyu Goto.",
+      "limitation": "Storia aziendale, conservata come attribuzione; non una testimonianza indipendente di tutti gli effetti culturali della console."
+    },
+    {
+      "source_id": "ps-anniversary",
+      "url": "https://blog.playstation.com/2024/09/19/celebrating-30-years-of-playstation-with-a-nostalgic-look/",
+      "title": "Celebrating 30 years of PlayStation with a nostalgic look",
+      "publisher": "Hideaki Nishino / PlayStation Blog, 19 settembre 2024",
+      "accessed_at": "2026-10-30",
+      "scope": "Annuncio dei prodotti con colori originali, involucro per connettore ispirato al controller e fascette con i simboli.",
+      "limitation": "Settembre è l’annuncio, non la disponibilità dei prodotti. La feature lo dice esplicitamente. Nessuna nuova data di lancio inserita nella timeline del 1994."
+    },
+    {
+      "source_id": "thor-sega",
+      "url": "https://www.sega.jp/mdmini/soft/the-story-of-thor.html",
+      "title": "The Story of Thor — Mega Drive Mini",
+      "publisher": "Sega",
+      "accessed_at": "2026-10-30",
+      "scope": "La scheda storica indica 9 dicembre 1994 e conferma Ancient, quattro spiriti e Yuzo Koshiro.",
+      "limitation": "La pagina distingue i metadati dell’originale Mega Drive da quelli della riedizione Mini; il manuale collegato non viene dichiarato nuovamente letto."
+    },
+    {
+      "source_id": "tekken-titles",
+      "url": "https://www.tekken-official.jp/titles/",
+      "title": "Tekken — Titles",
+      "publisher": "Bandai Namco Entertainment",
+      "accessed_at": "2026-10-30",
+      "scope": "Cronologia ufficiale: arcade dicembre 1994, PlayStation marzo 1995, Tekken 2 arcade agosto 1995.",
+      "limitation": "Il titolare fornisce precisione mensile per questi prodotti. Non costituisce da solo conferma del 9 dicembre."
+    },
+    {
+      "source_id": "tekken-namco-1999",
+      "url": "https://www.bandainamcoent.co.jp/corporate/press/namco/1999/1999-july/press-03.html",
+      "title": "Namco pubblica Tekken Tag Tournament",
+      "publisher": "Namco, comunicato 6 luglio 1999",
+      "accessed_at": "2026-10-30",
+      "scope": "Il comunicato ricorda l’uscita del primo Tekken arcade nel dicembre 1994.",
+      "limitation": "Contenuto letto nell’indicizzazione; apertura diretta 403. Conferma il mese, non il giorno."
+    },
+    {
+      "source_id": "tekken-gamespot",
+      "url": "https://www.gamespot.com/games/tekken/",
+      "title": "Tekken — scheda del gioco",
+      "publisher": "GameSpot",
+      "accessed_at": "2026-10-30",
+      "scope": "Il catalogo indica prima uscita 9 dicembre 1994, in accordo con il giorno fornito nell’INPUT.",
+      "limitation": "Fonte editoriale secondaria letta nell’indicizzazione; apertura diretta non accessibile. Non spacciata per attestazione Namco contemporanea."
+    },
+    {
+      "source_id": "tekken-guinness",
+      "url": "https://www.guinnessworldrecords.com/news/2013/2/playstation-4-can-sonys-new-console-live-up-to-its-predecessors-record-breaking-legacy-52997",
+      "title": "PlayStation 4: Can Sony’s new console live up to its predecessor’s record-breaking legacy?",
+      "publisher": "Kevin Lynch / Guinness World Records, 20 febbraio 2013",
+      "accessed_at": "2026-10-30",
+      "scope": "La sezione First game to sell over one million units for the PlayStation assegna il primato al primo Tekken.",
+      "limitation": "Usato solo questo primato attribuito. La fonte non prova la rapidità del sorpasso di Virtua Fighter e Toshinden, che non viene ripetuta."
+    },
+    {
+      "source_id": "tekken-hamster",
+      "url": "https://www.hamster.co.jp/en/release/8129/",
+      "title": "Arcade Archives 2 TEKKEN now available",
+      "publisher": "Hamster, 25 giugno 2026",
+      "accessed_at": "2026-10-30",
+      "scope": "La pubblicazione conferma disponibilità il 25 giugno 2026 e la corrispondenza dei quattro pulsanti agli arti.",
+      "limitation": "Fonte dell’editore della riedizione; non si usa l’annuncio come nuova data del gioco originale."
+    },
+    {
+      "source_id": "mmx2-original",
+      "url": "https://www.nintendo.co.jp/wii/vc/vc_rmx2/vc_rmx2_01.html",
+      "title": "Rockman X2 — guida Virtual Console",
+      "publisher": "Nintendo / Capcom",
+      "accessed_at": "2026-10-30",
+      "scope": "L’introduzione identifica l’originale per Super Famicom uscito il 16 dicembre 1994.",
+      "limitation": "La data storica non viene confusa con la disponibilità su Wii."
+    },
+    {
+      "source_id": "mmx2-capcom",
+      "url": "https://news.capcomusa.com/lets/browse/mega-man-x2-dashes-its-way-into-the-nintendo-3ds-virtual-console-na",
+      "title": "Mega Man X2 dashes its way into the Nintendo 3DS Virtual Console (NA)",
+      "publisher": "Yuri Araujo / Capcom, 6 ottobre 2016",
+      "accessed_at": "2026-10-30",
+      "scope": "Conferma scatto iniziale, potenziamento aereo e conseguenze delle battaglie con Violen, Serges e Agile sul ritorno di Zero.",
+      "limitation": "Riletta la fonte originariamente fornita; nessun altro dettaglio, prezzo o contenuto della retrospettiva aggiunto."
+    },
+    {
+      "source_id": "comix-sega",
+      "url": "https://www.sega.jp/mdmini/soft/comix-zone.html",
+      "title": "Comix Zone — Mega Drive Mini",
+      "publisher": "Sega",
+      "accessed_at": "2026-10-30",
+      "scope": "Indica 1 settembre 1995 per l’originale giapponese Mega Drive e il passaggio fra vignette.",
+      "limitation": "Non prova che la data giapponese sia la prima mondiale. Rimane la precisione annuale del contesto originale."
+    },
+    {
+      "source_id": "vo-arcade-history",
+      "url": "https://www.sega.jp/history/arcade/product/9046/",
+      "title": "Cyber Troopers Virtual-On — storia arcade",
+      "publisher": "Sega",
+      "accessed_at": "2026-10-30",
+      "scope": "Indica attività dal gennaio 1996 e descrive leve, energie delle tre armi, aggancio e corpo a corpo.",
+      "limitation": "La data differisce dall’anno 1995 indicato in altre pagine ufficiali; va letta insieme alle testimonianze, senza eliminarla dall’audit."
+    },
+    {
+      "source_id": "vo-masterpiece",
+      "url": "https://www.sega.jp/game/detail/virtual-on-masterpiece/",
+      "title": "Virtual-On Masterpiece 1995–2001",
+      "publisher": "Sega",
+      "accessed_at": "2026-10-30",
+      "scope": "La sezione storica dichiara esplicitamente che il primo Virtual-On fu pubblicato nel 1995.",
+      "limitation": "Il rilascio della raccolta 2019 non viene usato come data del gioco originale. La fonte sostiene l’anno, non un giorno preciso."
+    },
+    {
+      "source_id": "vo-watari-2017",
+      "url": "https://virtual-on.sega.jp/topics/20171127_01.html",
+      "title": "Colonna del produttore — Virtual-On compie 22 anni",
+      "publisher": "Juro Watari / Sega, 27 novembre 2017",
+      "accessed_at": "2026-10-30",
+      "scope": "Distingue consegna della ROM il 27 novembre 1995 e distribuzione nazionale dei cabinati dall’inizio dell’anno nuovo.",
+      "limitation": "Testimonianza retrospettiva del produttore. Il 27 novembre non è dichiarato giorno di uscita al pubblico."
+    },
+    {
+      "source_id": "vo-watari-2025",
+      "url": "https://note.com/beep21/n/nd7bfc8cc1960",
+      "title": "Trentesimo anniversario di Virtual-On: trenta domande",
+      "publisher": "Juro Watari / Beep21, 27 novembre 2025",
+      "accessed_at": "2026-10-30",
+      "scope": "L’introduzione pubblica spiega che non esistono registrazioni certe di quale negozio ricevette per primo il prodotto e in quale giorno. Per questo l’anniversario usa la consegna ROM.",
+      "limitation": "Letta soltanto la parte pubblica; il resto a pagamento non è stato consultato. Non adottato un giorno preciso senza la prova mancante."
+    }
+  ],
+  "decisions": [
+    {
+      "target_id": "playstation",
+      "problem": "Regione assente nella collocazione e distinzione fra debutto giapponese e uscite occidentali.",
+      "conclusion": "3 dicembre 1994 è la release giapponese; confermate 9 e 29 settembre 1995 per Nord America ed Europa.",
+      "source_ids": [
+        "ps-timeline",
+        "ps-corporate"
+      ],
+      "text_applied": "Date nelle card principali e proposta di regione; nessuna modifica al catalogo."
+    },
+    {
+      "target_id": "feature-playstation-industrial-design",
+      "problem": "Settembre 2024 identifica l’annuncio dei prodotti celebrativi e non il loro rilascio.",
+      "conclusion": "La prosa parla esplicitamente di annuncio di Nishino, mantenendo il legame storico con dicembre 1994.",
+      "source_ids": [
+        "ps-anniversary"
+      ],
+      "text_applied": "Card feature:feature-playstation-industrial-design:2 in tutte le lingue; contenuti e ID delle quattro card conservati."
+    },
+    {
+      "target_id": "wikipedia-8207818",
+      "problem": "Il testo combina un ordinale assoluto sui picchiaduro 3D da console con un sorpasso commerciale rapido privo di mercato o periodo.",
+      "conclusion": "Conservato il contesto cronologico dopo Virtua Fighter e Battle Arena Toshinden, senza un conteggio assoluto dall’ambito non definito. Il successo è precisato con il primato commerciale attribuito a Guinness. La ricerca non consente di dichiarare falsa ogni possibile versione della graduatoria originaria.",
+      "source_ids": [
+        "tekken-titles",
+        "tekken-guinness"
+      ],
+      "text_applied": "Card main:1 nelle cinque lingue: primo titolo PlayStation oltre un milione di copie; non si estende il confronto a ogni capitolo o regione dei rivali."
+    },
+    {
+      "target_id": "wikipedia-8207818",
+      "problem": "Controllo della data recente della riedizione Arcade Archives 2 e della precisione della data arcade originale.",
+      "conclusion": "Hamster conferma disponibilità 25 giugno 2026. Per l’originale, Namco conferma dicembre 1994 e il catalogo GameSpot riporta il 9 dicembre già fornito.",
+      "source_ids": [
+        "tekken-hamster",
+        "tekken-titles",
+        "tekken-namco-1999",
+        "tekken-gamespot"
+      ],
+      "text_applied": "Mantenuto il 2026 nella prosa; la prima card usa 1994 senza introdurre un nuovo giorno. La proposta per la collocazione conserva il giorno originario, indicando esplicitamente l’ambito della prova."
+    },
+    {
+      "target_id": "workbook-12-16-mega-man-x2",
+      "problem": "La nota Playhub richiede un controllo della release; i metadati non riportano la regione.",
+      "conclusion": "16 dicembre 1994 per Rockman X2 giapponese Super Famicom è attestato dalla guida ufficiale Nintendo.",
+      "source_ids": [
+        "mmx2-original",
+        "mmx2-capcom"
+      ],
+      "text_applied": "Data conservata e regione proposta; scatto iniziale, scatto aereo e scelta relativa a Zero mantenuti nelle cinque lingue."
+    },
+    {
+      "target_id": "cyber-troopers-virtual-on-1995",
+      "problem": "L’INPUT colloca l’originale nel 1995, ma una fonte Sega riportata nell’INPUT indica gennaio 1996.",
+      "conclusion": "Conservato 1995 con precisione annuale, sostenuto dal testo storico Sega Masterpiece. Watari distingue ROM finale del 27 novembre 1995 dalla distribuzione nazionale dell’inizio 1996 e nel 2025 spiega che il primo giorno di disponibilità non è documentabile. Leggere il gennaio 1996 della scheda arcade come fase di distribuzione ampia è un’interpretazione congiunta coerente, non una spiegazione esplicita fornita dalla scheda Sega.",
+      "source_ids": [
+        "vo-arcade-history",
+        "vo-masterpiece",
+        "vo-watari-2017",
+        "vo-watari-2025"
+      ],
+      "text_applied": "Anno 1995 nella prima card in tutte le lingue; nessun giorno di ROM, annuncio o compleanno sostituito alla release. Il limite sulla precisione del giorno resta documentato qui."
+    },
+    {
+      "target_id": "comix-zone",
+      "problem": "La data giapponese non deve essere trasformata automaticamente nella prima uscita mondiale.",
+      "conclusion": "Conservato 1995 per l’originale e 1 settembre 1995 soltanto per la versione giapponese, come già richiesto dalla nota dell’INPUT.",
+      "source_ids": [
+        "comix-sega"
+      ],
+      "text_applied": "Prima card nelle cinque lingue, nessuna duplicazione della voce per le conversioni."
+    }
+  ],
+  "metadata_proposals": [
+    {
+      "target_id": "playstation",
+      "field": "timeline_release",
+      "original": {
+        "year": 1994,
+        "month": 12,
+        "day": 3,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed": {
+        "year": 1994,
+        "month": 12,
+        "day": 3,
+        "precision": "day",
+        "region": "Japan",
+        "version": "PlayStation, modello originale"
+      },
+      "source_ids": [
+        "ps-timeline"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "beyond-oasis-story-of-thor-1994",
+      "field": "timeline_release",
+      "original": {
+        "year": 1994,
+        "month": 12,
+        "day": 9,
+        "precision": "day"
+      },
+      "proposed": {
+        "year": 1994,
+        "month": 12,
+        "day": 9,
+        "precision": "day",
+        "region": "Japan",
+        "version": "Mega Drive"
+      },
+      "source_ids": [
+        "thor-sega"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "wikipedia-8207818",
+      "field": "timeline_release",
+      "original": {
+        "year": 1994,
+        "month": 12,
+        "day": 9,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed": {
+        "year": 1994,
+        "month": 12,
+        "day": 9,
+        "precision": "day",
+        "region": "Japan",
+        "version": "arcade / Namco System 11"
+      },
+      "source_ids": [
+        "tekken-titles",
+        "tekken-gamespot"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "workbook-12-16-mega-man-x2",
+      "field": "timeline_release",
+      "original": {
+        "year": 1994,
+        "month": 12,
+        "day": 16,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed": {
+        "year": 1994,
+        "month": 12,
+        "day": 16,
+        "precision": "day",
+        "region": "Japan",
+        "version": "Super Famicom"
+      },
+      "source_ids": [
+        "mmx2-original"
+      ],
+      "applied_to_catalog": false
+    }
+  ],
+  "expansion_assessments": [
+    {
+      "target_id": "playstation",
+      "main_cards": 11,
+      "feature_cards": 4,
+      "threshold_applicable": true,
+      "required_main_cards": 6,
+      "missing_cards": 0,
+      "rationale": "Console centrale nella storia delle piattaforme domestiche: soglia di sei card già superata; feature conteggiata separatamente."
+    },
+    {
+      "target_id": "uniracers-1994",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "required_main_cards": null,
+      "missing_cards": 0,
+      "rationale": "Voce pertinente al catalogo della piattaforma, non selezionata in questo lotto fra i giochi di massima priorità per la soglia minima. I nuclei forniti vengono conservati senza creare approfondimenti ridondanti."
+    },
+    {
+      "target_id": "beyond-oasis-story-of-thor-1994",
+      "main_cards": 2,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 3,
+      "rationale": "Priorità editoriale per azione e sistemi di evocazione nella produzione Ancient per Mega Drive."
+    },
+    {
+      "target_id": "console-gap-clockwork-knight",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Priorità editoriale per prima produzione Saturn e combinazione di immagini prerenderizzate e ambienti poligonali."
+    },
+    {
+      "target_id": "wikipedia-8207818",
+      "main_cards": 2,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 3,
+      "rationale": "Priorità editoriale per inizio di una serie centrale nei picchiaduro tridimensionali."
+    },
+    {
+      "target_id": "workbook-12-16-mega-man-x2",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 1,
+      "rationale": "Priorità editoriale per sviluppo dei sistemi della serie Mega Man X."
+    },
+    {
+      "target_id": "console-gap-lunar-eternal-blue",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Priorità editoriale per ruolo della serie Lunar nel racconto su Mega-CD."
+    },
+    {
+      "target_id": "comix-zone",
+      "main_cards": 2,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 3,
+      "rationale": "Priorità editoriale per integrazione della pagina a fumetti nell’azione del Mega Drive."
+    },
+    {
+      "target_id": "cyber-troopers-virtual-on-1995",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 1,
+      "rationale": "Priorità editoriale per controlli a due leve e combattimento tridimensionale nella produzione arcade Sega."
+    },
+    {
+      "target_id": "donald-in-maui-mallard-1995",
+      "main_cards": 2,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "required_main_cards": null,
+      "missing_cards": 0,
+      "rationale": "Voce pertinente al catalogo della piattaforma, non selezionata in questo lotto fra i giochi di massima priorità per la soglia minima. I nuclei forniti vengono conservati senza creare approfondimenti ridondanti."
+    }
+  ],
+  "editorial_review": {
+    "english_first": true,
+    "five_languages_reviewed": [
+      "en",
+      "it",
+      "fr",
+      "de",
+      "es"
+    ],
+    "checks": [
+      "10 voci, 36 card principali e quattro nella feature PlayStation: 40 card per lingua, 200 versioni",
+      "Inglese scritto e salvato prima delle quattro adattazioni; testi e dati riletti nelle cinque lingue",
+      "Sommari inglesi tra 25 e 45 parole; titoli specifici anche dove mancavano negli originali",
+      "Conservati ordine e ID, titoli propri, 45 piste e nove tour, quattro spiriti, tre X-Hunters, Cx4, mille anni di Lunar e tutti i crediti di produzione e musica forniti",
+      "Distinti annuncio anniversario PlayStation, release originale, versioni regionali e riedizione Tekken 2026",
+      "Conservati tutti gli undici nuclei principali PlayStation e le quattro card della feature senza unioni, tagli strutturali o nuove card",
+      "Eliminata soltanto la ripetizione letterale di corsa, salti e interazioni nella stessa card di Beyond Oasis; sostanza conservata",
+      "Riviste espressioni italiane, francesi, tedesche e spagnole per movimento, controlli, memorie e grafica a reticolo",
+      "PlayStation supera sei card principali; sette giochi richiedono quindici nuove card, da preparare nel passaggio separato di ampliamento"
+    ],
+    "external_verification_limit": "Riscontri mirati ai punti registrati, non verifica esterna universale. Fonti, licenze e attribuzioni originarie conservate negli INPUT; la riscrittura non ne elimina i diritti. I manuali citati e l’intervista Wade/Collins già fornita non sono dichiarati nuovamente esaminati. Nessuna verifica autonoma dei diritti dei media, nessuna modifica al catalogo. Il limite di precisione del primo giorno di Virtual-On è attestato dallo stesso produttore, non lasciato a una ricerca richiesta all’utente.",
+    "book_style_references_consulted": false
+  },
+  "validation": {
+    "valid": true,
+    "batch_id": "054-catalog",
+    "completed": true,
+    "entry_count": 10,
+    "card_count_per_language": 40,
+    "language_count": 5,
+    "translated_card_count": 200,
+    "entry_card_counts": {
+      "playstation": 15,
+      "uniracers-1994": 3,
+      "beyond-oasis-story-of-thor-1994": 2,
+      "console-gap-clockwork-knight": 3,
+      "wikipedia-8207818": 2,
+      "workbook-12-16-mega-man-x2": 4,
+      "console-gap-lunar-eternal-blue": 3,
+      "comix-zone": 2,
+      "cyber-troopers-virtual-on-1995": 4,
+      "donald-in-maui-mallard-1995": 2
+    },
+    "issue_counts": {
+      "playstation": 0,
+      "uniracers-1994": 0,
+      "beyond-oasis-story-of-thor-1994": 1,
+      "console-gap-clockwork-knight": 1,
+      "wikipedia-8207818": 1,
+      "workbook-12-16-mega-man-x2": 1,
+      "console-gap-lunar-eternal-blue": 1,
+      "comix-zone": 1,
+      "cyber-troopers-virtual-on-1995": 1,
+      "donald-in-maui-mallard-1995": 0
+    },
+    "summary_checks": [
+      {
+        "entry_id": "playstation",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "playstation",
+        "feature_id": "feature-playstation-industrial-design",
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "uniracers-1994",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "beyond-oasis-story-of-thor-1994",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "console-gap-clockwork-knight",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "wikipedia-8207818",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "workbook-12-16-mega-man-x2",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "console-gap-lunar-eternal-blue",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "comix-zone",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "cyber-troopers-virtual-on-1995",
+        "feature_id": null,
+        "english_summary_words": 34
+      },
+      {
+        "entry_id": "donald-in-maui-mallard-1995",
+        "feature_id": null,
+        "english_summary_words": 35
+      }
+    ],
+    "editorial_review": [],
+    "failures": []
+  },
+  "output_sha256": "39f2db3bab25e93bc23edd8f6e35faea5efa6eb9d766f8f691bdd08420cb7ef4",
+  "root_review": {
+    "reviewed_at": "2026-10-30T02:30:32.404284+00:00",
+    "scope": "Controllo delle segnalazioni automatiche e confronto mirato con l’INPUT. Nessuna omissione residua nei passaggi riletti: numeri resi in lettere, decadi e punteggi localizzati; le nuove date dei lotti storici sono documentate nelle decisioni.",
+    "changes": []
+  }
+}

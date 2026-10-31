@@ -1,0 +1,835 @@
+{
+  "schema": "pixel-museum-editorial-input-v1",
+  "batch_id": "102-catalog",
+  "source_file": "content/catalog.json",
+  "source_sha256": "0b077b3f8628f921ab84574d286f9d9943fb8ae6acb8f136ffadde6e01cae241",
+  "entries": [
+    {
+      "entry_id": "workbook-05-06-eve-online",
+      "kind": "game",
+      "year_context_only": 2003,
+      "date_context_only": {
+        "month": 5,
+        "day": 6,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "release",
+      "factual_note": "Imported dated English Playhub editorial. Adapt its calendar wording, review publisher dates and assign rights-cleared media before presenting as a finished museum stop.",
+      "main": {
+        "feature_id": null,
+        "title": "EVE Online",
+        "subtitle": "A Universe That Continues After You Log Out",
+        "summary": "CCP released EVE Online in North America and Europe on May 6, 2003.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "A Universe That Continues After You Log Out",
+            "text": "CCP released EVE Online in North America and Europe on May 6, 2003. Its technical promise was unusual: one persistent universe rather than many separate shards. From that choice emerged a virtual society in which industry, trade, war and propaganda depend largely on relationships among players. Its economic and political consequences can last for years. It is an MMO in which server time becomes a form of shared history."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "One Sky for Everyone",
+            "text": "In the release announcement, CCP stresses a universe able to host tens of thousands of people without splitting them into narratively separate shards. Tranquility therefore becomes more than infrastructure: it is the common place where prices, wars and reputations can be shared by distant communities. Persistence makes absence meaningful too. A corporation can change while a member is offline, a market can react to war and a safe route can suddenly become dangerous."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Economy as a Social Mechanic",
+            "text": "Minerals, modules, ships and ammunition circulate through an economy largely driven by players. Combat therefore creates industrial demand, and logistics can matter as much as aim. Specializing in production, transport, trade or intelligence is not a side activity; it is a way of participating in the world's structure. The market connects players who may never meet directly and turns losses into economic signals, making visible how heavily a war can weigh on the rest of the universe."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "Stories Emerge from Players",
+            "text": "EVE's large alliances build diplomacy, hierarchies and propaganda through game tools and external organizations. When a war destroys resources accumulated over months, the event matters because of the real work those resources represent. CCP provides rules and space, yet many of the best-known stories are not missions written in advance. They are consequences of collective decisions, betrayals, logistical mistakes and rivalries. In that sense EVE pushes one possibility of online games to an extreme: turning community behavior into the historical material of the world itself."
+          }
+        ],
+        "sources": [
+          {
+            "title": "community.eveonline.com",
+            "url": "https://community.eveonline.com/news/news-channels/press-releases/new-release-date-for-eve-online-the-second-genesis-announced-1/",
+            "publisher": "community.eveonline.com"
+          },
+          {
+            "title": "www.eveonline.com",
+            "url": "https://www.eveonline.com/news/view/happy-birthday-everyone",
+            "publisher": "www.eveonline.com"
+          },
+          {
+            "title": "community.eveonline.com",
+            "url": "https://community.eveonline.com/community/",
+            "publisher": "community.eveonline.com"
+          }
+        ]
+      },
+      "features": [
+        {
+          "feature_id": "feature-mmo-community-work",
+          "title": "The work between adventures",
+          "subtitle": "",
+          "summary": "EVE players organise help as well as conflict.",
+          "cards": [
+            {
+              "card_id": "feature:feature-mmo-community-work:0",
+              "original_index": 0,
+              "heading": "Someone has to organise the group",
+              "text": "EVE Online's corporations can bring together people with different jobs, schedules and priorities. In 2023, CCP described managing these organisations as demanding work and presented Corporation Projects as a way to make contributions clearer. A shared goal could specify what the group needed and recognise members who helped. The interesting activity was not confined to flying a ship. Deciding what should happen, explaining it to other people and recording their efforts could shape the experience of belonging to the corporation as much as a battle did."
+            },
+            {
+              "card_id": "feature:feature-mmo-community-work:1",
+              "original_index": 1,
+              "heading": "Make contribution visible",
+              "text": "For the Havoc expansion, CCP announced automatic payments for completed project contributions, a way to copy recurring projects, and a manager role that let leaders delegate the task. New contribution types included scanning signatures and manufacturing items. These tools put routine coordination inside the game: a group could explain what it needed and recognise work that was easy to overlook. The announcement is useful because it names the administrative problem. Supporting a community meant reducing the effort required to keep track of people, materials and shared plans."
+            },
+            {
+              "card_id": "feature:feature-mmo-community-work:2",
+              "original_index": 2,
+              "heading": "Help a stranger find the way home",
+              "text": "Other players organised around assistance rather than a corporation's production targets. In March 2024, Katia Sae reported that EvE-Scout's rescue division had helped its five-thousandth stranded pilot. The participant account describes both search-and-rescue operations and supply caches placed in wormhole space. The figure is the organisation's own reported milestone, but the practical arrangement is clear. Someone who cannot find a route home can depend on preparations made by people they may never have met. Exploration creates a reason for volunteers to maintain a public service."
+            },
+            {
+              "card_id": "feature:feature-mmo-community-work:3",
+              "original_index": 3,
+              "heading": "Keep a route open for others",
+              "text": "CCP's January 2025 community report recognised EvE-Scout's approaching tenth anniversary. Alongside rescues, it described a website tracking connections through Thera and Turnur and a public folder of bookmarks. Sharing navigational knowledge could shorten another pilot's journey. The publisher's account documents a form of community work: keeping information available, updating routes and making another person's passage possible. In this part of EVE, a lasting contribution can be a path someone else follows."
+            }
+          ],
+          "sources": [
+            {
+              "id": "eve-projects23",
+              "title": "Stronger Organizations",
+              "url": "https://www.eveonline.com/news/view/stronger-organizations",
+              "publisher": "EVE Online Team / CCP",
+              "source_type": "Primary publication by a developer, publisher, participating community or collecting institution",
+              "locator": "HARDER, BETTER, FASTER, STRONGER – CORPORATION PROJECTS: payouts, project cloning, manager role, scanning and manufacturing.",
+              "checked": "2026-10-21",
+              "rights": "Bibliographic citation. Original prose and media retain their respective copyrights; this record grants no reproduction rights.",
+              "publication_date": "2023-11-01",
+              "story_paragraphs": [
+                0,
+                1
+              ]
+            },
+            {
+              "id": "eve-rescue24",
+              "title": "EvE-Scout Rescues 5000 th stranded Capsuleer",
+              "url": "https://forums.eveonline.com/t/eve-scout-rescues-5000th-stranded-capsuleer/441477",
+              "publisher": "Katia Sae / EVE Online Forums",
+              "source_type": "Primary publication by a developer, publisher, participating community or collecting institution",
+              "locator": "Opening post by the participating community member: Search and Rescue, seeded caches and reported 5000 rescues.",
+              "checked": "2026-10-21",
+              "rights": "Bibliographic citation. Original prose and media retain their respective copyrights; this record grants no reproduction rights.",
+              "publication_date": "2024-03-02",
+              "story_paragraphs": [
+                2
+              ]
+            },
+            {
+              "id": "eve-community25",
+              "title": "Community Beat for 17 January",
+              "url": "https://www.eveonline.com/news/view/community-beat-for-17-january",
+              "publisher": "EVE Online Community Team / CCP",
+              "source_type": "Primary publication by a developer, publisher, participating community or collecting institution",
+              "locator": "EvE-Scout Enclave is turning 10: peaceful exploration, neutral assistance, Thera/Turnur connections and public bookmarks.",
+              "checked": "2026-10-21",
+              "rights": "Bibliographic citation. Original prose and media retain their respective copyrights; this record grants no reproduction rights.",
+              "publication_date": "2025-01-17",
+              "story_paragraphs": [
+                3
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entry_id": "wikipedia-232766",
+      "kind": "game",
+      "year_context_only": 2003,
+      "date_context_only": {
+        "month": 5,
+        "day": 15,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Regional and platform release dates may differ. Where shown, the exact day is taken only from the article release infobox.",
+      "main": {
+        "feature_id": null,
+        "title": "Enter the Matrix",
+        "subtitle": "",
+        "summary": "Enter the Matrix is a 2003 action-adventure video game developed by Shiny Entertainment and published by Infogrames under the Atari brand name.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "A game beside The Matrix Reloaded",
+            "text": "Enter the Matrix is a 2003 action-adventure video game developed by Shiny Entertainment and published by Infogrames under the Atari brand name. The first game based on The Matrix film series, its story is concurrent with that of the film The Matrix Reloaded and features over an hour of original footage, written and directed by the Wachowskis and starring the cast of the films, produced for the game."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "A simultaneous film and game release",
+            "text": "Released on May 15, 2003, around the same period as The Matrix Reloaded, Enter the Matrix was simultaneously produced with The Matrix Reloaded and The Matrix Revolutions. While it received mixed reviews from critics, the game sold 5 million copies as of May 2004."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Niobe and Ghost aboard the Logos",
+            "text": "Enter the Matrix gives players control of two of the supporting characters from Reloaded and Revolutions, Ghost (Anthony Wong) and Niobe (Jada Pinkett Smith), members of the same group of rebels as Morpheus, Trinity, and Neo, the protagonists of the series. Niobe is the Captain of the Logos, the fastest ship in the rebel fleet. Ghost is the ship's first mate, weapons guru, and a deep-thinking, philosophical assassin. The game takes place at roughly the same time as the events in Reloaded."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "Focus, fighting and vehicles",
+            "text": "Players play as either Niobe or Ghost, each of whom have slight variations during their story. Most levels involve controlling players in a third-person perspective, using guns and fighting skills to defeat opponents and complete level objectives. At any time, players can activate bullet time (called \"Focus\" in the game) which slows down time, giving players the ability to perform actions such as shooting in midair and dodging bullets. Some levels involve one-on-one martial arts fighting against single opponents. In levels involving vehicles, such as driving a car or piloting the Logos, the style of game play depends on the selected player, commonly with Niobe maneuvering the vehicles to avoid obstacles, whilst Ghost takes control of a gun to fight off incoming enemies. A hacking system allows players to enter codes, which can unlock special skills, weapons and secrets, such as a 2-player versus mode."
+          },
+          {
+            "card_id": "main:4",
+            "original_index": 4,
+            "heading": "The message from the Osiris",
+            "text": "The story begins with Niobe, captain of the Logos, and Ghost, her first mate, retrieving a package left in the Matrix by the crew of the recently destroyed rebel ship Osiris. After being pursued by Agents, Ghost and Niobe escape from the Matrix with the package, which turns out to be a message to the human city Zion, warning them that the machines are approaching with an army of at least 250,000 Sentinels. Niobe and Ghost are tasked with calling the rest of the ships back to Zion to coordinate a defense."
+          },
+          {
+            "card_id": "main:5",
+            "original_index": 5,
+            "heading": "The Keymaker and the stolen key",
+            "text": "With this in mind, the captains of the various ships hold a meeting in the Matrix to decide on how best to defend themselves. During the meeting, Agents attack the building they are in, although Niobe and Ghost are able to help their allies escape. They then encounter the Keymaker, a program capable of accessing any area in the Matrix, who leads them to safety through a door he created. The Keymaker gives the two a key that they are supposed to give to Neo. However, the key is stolen by henchmen of the Merovingian, a program created during the early days of the Matrix who now operates an illegal smuggling ring within the program. Ultimately, the Merovingian destroys the key, but Niobe and Ghost are able to escape, when the Keymaker realizes that it is too early for the key to be given to Neo."
+          },
+          {
+            "card_id": "main:6",
+            "original_index": 6,
+            "heading": "The Logos awaits rescue",
+            "text": "Niobe and Ghost's missions draw them into Neo's larger struggle. After helping the Nebuchadnezzar's crew escape, they destroy a power plant and visit the Oracle. Smith then turns a conversation into a pursuit, multiplying until escape from the Matrix becomes the immediate objective. Back aboard the Logos, a machine attack forces the crew to use an electromagnetic pulse. It defeats the attackers but disables their own ship, leaving Niobe and Ghost waiting for rescue. Their adventure ends in uncertainty alongside the events unfolding in the films."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Enter the Matrix - article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1373480062",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Article contributors and history",
+            "url": "https://en.wikipedia.org/wiki/Enter_the_Matrix?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          },
+          {
+            "title": "Enter the Matrix - box - front (Microsoft Xbox)",
+            "url": "https://gamesdb.launchbox-app.com/games/details/14161",
+            "publisher": "Atari"
+          },
+          {
+            "title": "Soundtrack publication: Action and Fighting — Original Game Score Suite",
+            "url": "https://www.youtube.com/watch?v=kvxrkK50GZo",
+            "publisher": "Kizu no Otoko",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Erik Lundborg",
+            "url": "https://www.matrixfans.net/enter-the-matrix-interview-with-composers-don-davis-and-erik-lundborg/",
+            "publisher": "Erik Lundborg"
+          },
+          {
+            "title": "Soundtrack publication: Suspense — Original Game Score Suite",
+            "url": "https://www.youtube.com/watch?v=yavc31xmLlI",
+            "publisher": "Kizu no Otoko",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Erik Lundborg",
+            "url": "https://www.matrixfans.net/enter-the-matrix-interview-with-composers-don-davis-and-erik-lundborg/",
+            "publisher": "Erik Lundborg"
+          },
+          {
+            "title": "Soundtrack publication: Cineractives — Original Game Score Suite",
+            "url": "https://www.youtube.com/watch?v=ER2bjG-2Tgs",
+            "publisher": "Kizu no Otoko",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Erik Lundborg",
+            "url": "https://www.matrixfans.net/enter-the-matrix-interview-with-composers-don-davis-and-erik-lundborg/",
+            "publisher": "Erik Lundborg"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "lost-kingdoms-ii-2003",
+      "kind": "game",
+      "year_context_only": 2003,
+      "date_context_only": {
+        "month": 5,
+        "day": 22,
+        "precision": "day",
+        "region": "North America"
+      },
+      "event_semantics": "",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "Lost Kingdoms II",
+        "subtitle": "FromSoftware · GameCube",
+        "summary": "Lost Kingdoms II is FromSoftware's GameCube action role-playing sequel, set generations after Katia's adventure. Tara, a member of a thieves' guild, carries a True Runestone that allows her to command magical cards. Her journey draws her into a struggle over the production and use of those stones, while the earlier heroine has become a figure of history. Real-time encounters again depend on the creatures and effects available in the deck. The player explores with a character whose immediate survival is tied to a collection prepared before the next danger appears.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Another Runestone, another generation",
+            "text": "Lost Kingdoms II is FromSoftware's GameCube action role-playing sequel, set generations after Katia's adventure. Tara, a member of a thieves' guild, carries a True Runestone that allows her to command magical cards. Her journey draws her into a struggle over the production and use of those stones, while the earlier heroine has become a figure of history. Real-time encounters again depend on the creatures and effects available in the deck. The player explores with a character whose immediate survival is tied to a collection prepared before the next danger appears."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Become the creature in the card",
+            "text": "New transformation cards allow Tara to take a creature's form, making the deck useful for movement and exploration as well as attacking an enemy. Returning cards receive revised effects, and enhanced uses can be purchased by spending more of the available resource. Particular combinations produce stronger results, encouraging the player to consider relationships between cards rather than evaluate each one alone. Areas can also be revisited after completion. A new card may change how a familiar route can be crossed or what can be accomplished during another visit."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "The collection remains active during exploration",
+            "text": "Encounters take place within the explored environments, making movement through the level and the use of cards feel more closely connected. The new mechanical element sits beside fire, water, wood, earth and neutral, broadening the categories around which a collection can be developed. Kota Hoshino returned to compose the score. Released in 2003, the sequel's most useful change is to let a card alter the controlled character directly. The deck becomes more than assistance summoned nearby: it can determine what Tara herself is capable of becoming."
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Lost_Kingdoms_II",
+            "title": "Lost Kingdoms II — gameplay, development and release",
+            "publisher": "Wikipedia contributors"
+          },
+          {
+            "title": "Lost Kingdoms II - LaunchBox media",
+            "url": "https://gamesdb.launchbox-app.com/games/details/11197-lost-kingdoms-ii",
+            "publisher": "LaunchBox Games Database",
+            "facts": "Complete cover and original console gameplay media."
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "midtown-madness-3-2003",
+      "kind": "game",
+      "year_context_only": 2003,
+      "date_context_only": {
+        "month": 6,
+        "day": 17,
+        "precision": "day",
+        "region": "North America"
+      },
+      "event_semantics": "",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "Midtown Madness 3",
+        "subtitle": "Two cities with room to get lost",
+        "summary": "Midtown Madness 3 is Digital Illusions CE's Xbox driving game, first released in North America on 17 June 2003. Paris and Washington, D.C. become open spaces for races, jobs and aimless driving. The cities are condensed interpretations rather than exact reproductions, arranged to make familiar streets and landmarks part of a playable road network. Choosing a vehicle and setting out can be an activity of its own. The game keeps the series' interest in urban freedom while moving its console debut to a new developer and a new machine.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Two cities with room to get lost",
+            "text": "Midtown Madness 3 is Digital Illusions CE's Xbox driving game, first released in North America on 17 June 2003. Paris and Washington, D.C. become open spaces for races, jobs and aimless driving. The cities are condensed interpretations rather than exact reproductions, arranged to make familiar streets and landmarks part of a playable road network. Choosing a vehicle and setting out can be an activity of its own. The game keeps the series' interest in urban freedom while moving its console debut to a new developer and a new machine."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "A route is something to discover",
+            "text": "Checkpoint races ask the player to reach a set of markers, making knowledge of the streets useful alongside speed. Blitz events add a time limit, while Cruise allows traffic, weather and time of day to be adjusted for a less directed journey. The Work Undercover campaign gives driving another context through jobs such as deliveries, taxi work and emergency services. A familiar road can therefore become part of several different problems. Learning a shortcut or recognising an approaching junction makes the city more useful every time the player returns."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "The city becomes a playground for others",
+            "text": "Split-screen play brings another driver into the same room, while Xbox Live originally opened the streets to online groups. Some modes revolve around chasing or touching another vehicle; others ask players to carry gold to a hideout or keep possession of a target. These rules turn the open map into a shared playground rather than only a racing circuit. Olof Gustafsson composed the music. The original Xbox Live service closed in 2010, but the game's mixture of free driving and structured events remains a distinctive part of the console's racing library."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Midtown Madness 3 - English Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Midtown_Madness_3",
+            "publisher": "Wikipedia contributors",
+            "facts": "Original release, gameplay and production context."
+          },
+          {
+            "title": "Midtown Madness 3 - LaunchBox media",
+            "url": "https://gamesdb.launchbox-app.com/games/details/7710-midtown-madness-3",
+            "publisher": "LaunchBox Games Database",
+            "facts": "Complete cover and original console gameplay media."
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wario-world-2003",
+      "kind": "game",
+      "year_context_only": 2003,
+      "date_context_only": {
+        "month": 6,
+        "day": 20,
+        "precision": "day",
+        "region": "Europe"
+      },
+      "event_semantics": "",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "Wario World",
+        "subtitle": "Treasure · GameCube",
+        "summary": "Wario World is Treasure's GameCube action platformer about recovering Wario's castle and fortune from the Black Jewel. The gem transforms his possessions into monsters and sends him through a succession of colourful worlds. Wario responds with punches, throws and the heavy movements expected of a hero whose main concern remains his own wealth. The adventure puts close physical combat beside platforming, allowing an enemy to become something that can be lifted and used rather than simply removed with a single jump.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Wario wants his treasure back",
+            "text": "Wario World is Treasure's GameCube action platformer about recovering Wario's castle and fortune from the Black Jewel. The gem transforms his possessions into monsters and sends him through a succession of colourful worlds. Wario responds with punches, throws and the heavy movements expected of a hero whose main concern remains his own wealth. The adventure puts close physical combat beside platforming, allowing an enemy to become something that can be lifted and used rather than simply removed with a single jump."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Pick up the enemy and change the fight",
+            "text": "Wario can grab opponents, spin them around, throw them or drive them into the ground. Those actions affect groups and nearby objects, making position part of deciding which move is useful next. Environmental items can also be handled as weapons. The character's weight becomes an advantage when a heavy landing or powerful throw opens the space around him. Fighting therefore contributes to the game's comic identity: the same greedy figure crossing the platforms can abruptly turn a small opponent into the tool needed to deal with several others."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Look beneath the main route",
+            "text": "Trapdoors lead to separate platforming and puzzle challenges containing treasure, giving exploration a role beside the more direct action. Rescuing Spritelings also affects Wario's reward at the end of the journey. Treasure developed the game for a 2003 release, bringing its experience in inventive action systems to Nintendo's unruly protagonist. The shorter campaign concentrates on a recognisable personality expressed through movement. Wario does not merely look heavy and impatient; the player repeatedly uses that weight and impatience to break through whatever has been placed in front of him."
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Wario_World",
+            "title": "Wario World — gameplay, development and release",
+            "publisher": "Wikipedia contributors"
+          },
+          {
+            "title": "Wario World - LaunchBox media",
+            "url": "https://gamesdb.launchbox-app.com/games/details/2206-wario-world",
+            "publisher": "LaunchBox Games Database",
+            "facts": "Complete cover and original console gameplay media."
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "advance-wars-2-black-hole-rising-2003",
+      "kind": "game",
+      "year_context_only": 2003,
+      "date_context_only": {
+        "month": 6,
+        "day": 23,
+        "precision": "day",
+        "region": "Original commercial release"
+      },
+      "event_semantics": "",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "Advance Wars 2: Black Hole Rising",
+        "subtitle": "The allied armies face another invasion",
+        "summary": "Advance Wars 2: Black Hole Rising is Intelligent Systems' Game Boy Advance strategy sequel following the Allied Nations against a renewed Black Hole invasion. Its battlefields retain the readable arrangement of towns, factories and military units, with each side taking turns to move and attack. New commanding officers and campaign situations expand the established rules. The conflict now spreads across several countries, giving the player different armies and responsibilities as the invasion develops. Winning still depends on understanding the local map, preserving useful units and turning captured resources into the force needed for the next objective.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "The allied armies face another invasion",
+            "text": "Advance Wars 2: Black Hole Rising is Intelligent Systems' Game Boy Advance strategy sequel following the Allied Nations against a renewed Black Hole invasion. Its battlefields retain the readable arrangement of towns, factories and military units, with each side taking turns to move and attack. New commanding officers and campaign situations expand the established rules. The conflict now spreads across several countries, giving the player different armies and responsibilities as the invasion develops. Winning still depends on understanding the local map, preserving useful units and turning captured resources into the force needed for the next objective."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "An officer can change the whole turn",
+            "text": "Commanding officers bring different strengths to an army, affecting how particular units perform and what can happen when their special powers become available. Black Hole Rising adds stronger Super CO Powers, giving a player another decision about whether to use the available charge immediately or save it for a larger effect. The choice is tied to the current battlefield. An ordinary advantage may be enough to keep a position, while waiting can prepare the turn that finally breaks a defensive line or makes a difficult attack practical for several units at once."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Choose the next part of the campaign",
+            "text": "The campaign allows a selection of missions within its different national theatres rather than following only one fixed sequence. Completing requirements opens further operations and moves the wider conflict forward. War Room maps offer separate tactical challenges, and Versus supports contests on existing or player-created battlefields. These arrangements give the same clear rules different purposes. The campaign develops its armies through an invasion story, while another mode can concentrate on a single difficult starting position or the challenge of reading a human opponent's intentions across the next contested section of the map."
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Advance_Wars_2%3A_Black_Hole_Rising",
+            "role": "Ordinary release and design facts; independently written prose."
+          },
+          {
+            "url": "https://gamesdb.launchbox-app.com/games/details/3138-advance-wars-2-black-hole-rising",
+            "role": "Original complete cover and immediate gameplay screenshots."
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "workbook-06-26-viewtiful-joe",
+      "kind": "game",
+      "year_context_only": 2003,
+      "date_context_only": {
+        "month": 6,
+        "day": 26,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "The existing2003 Japanese GameCube release remains the anchor. Inaba's2005 conference account and the2012 retrospective published2015 are distinct perspectives. No claim that Clover developed the original2003 GameCube release or that Okami-specific decisions happened on Joe.",
+      "factual_note": "Imported dated English Playhub editorial. Adapt its calendar wording, review publisher dates and assign rights-cleared media before presenting as a finished museum stop.",
+      "main": {
+        "feature_id": null,
+        "title": "Viewtiful Joe",
+        "subtitle": "Film effects become combat controls",
+        "summary": "The promising idea was a change of speed.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Finding the effect worth building around",
+            "text": "Viewtiful Joe lets players manipulate the pace of an action scene through VFX powers. Slowing or accelerating events changes attacks and opens solutions to puzzles. Producer Atsushi Inaba identified that system as the centre of a difficult production: one clear idea around which a small team could build its stages and superhero presentation."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "A small project grows longer",
+            "text": "Inaba also described Viewtiful Joe as a project intended to develop the skills of its staff, including director Hideki Kamiya. A proposed twelve-month production took twenty-one months. His conference account distinguishes such a project from one organised mainly around a product or a studio brand. In Joe's case, the small budget and the team's learning mattered alongside its commercial outcome. Keeping the VFX idea clear gave the producer a reason to support the work while other possible additions competed for the small team's time."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "A director still needs a producer",
+            "text": "A later conversation between Inaba and Kamiya adds another perspective. Inaba says he kept the team small and gave Kamiya responsibility for the initial design documents and overall direction. Kamiya contrasts that responsibility with entering an existing, experienced team earlier in his career. Their exchange also describes moments when the director struggled to make decisions and the producer had to help bring the project together. The resulting game may feel governed by one personality, but its development depended on a working relationship that could support and challenge that personality."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "A GameCube release in June 2003",
+            "text": "On June 26, 2003 Capcom released Viewtiful Joe for GameCube in Japan. Hideki Kamiya and the team turn action-cinema language into rules: slowing time increases force and reveals details, speeding it up changes attack rhythm, while zoom alters scale and impact. Cel-shaded graphics complete the illusion of a manipulable film. The result is a beat 'em up in which editing and combat become the same thing."
+          },
+          {
+            "card_id": "main:4",
+            "original_index": 4,
+            "heading": "Punching, dodging and platforming",
+            "text": "Joe moves along side-scrolling routes, jumping and double-jumping between platforms. Punches, kicks and dodges handle groups of enemies; a successful dodge temporarily dazes an opponent and opens a chance to attack. Life Marks show his remaining health, with hamburgers restoring it. The basic moves provide a foundation for the VFX powers that change the rhythm of each encounter."
+          },
+          {
+            "card_id": "main:5",
+            "original_index": 5,
+            "heading": "Slow, Mach Speed and Zoom In",
+            "text": "Slow strengthens attacks and gives more time to react; Mach Speed accelerates Joe and can produce a protective heat effect; Zoom In powers up his moves while increasing the damage he can receive. Two effects can be combined, but they drain the VFX Gauge. An empty gauge returns him to normal Joe until it recovers. Bottles of VFX Juice and stage collectibles help manage this resource."
+          },
+          {
+            "card_id": "main:6",
+            "original_index": 6,
+            "heading": "Combos earn upgrades between stages",
+            "text": "Combos and chained attacks build Viewtifuls, which convert into V-Points. Slow can multiply a chain across several enemies, rewarding careful setup. Between stages, points buy abilities, weapons and health upgrades, while completion grades measure points, time and damage taken. Clearing difficulties also unlocks characters, including Dante in the PlayStation 2 version."
+          }
+        ],
+        "sources": [
+          {
+            "title": "gamefaqs.gamespot.com",
+            "url": "https://gamefaqs.gamespot.com/gamecube/562548-viewtiful-joe/data",
+            "publisher": "gamefaqs.gamespot.com"
+          },
+          {
+            "title": "www.mobygames.com",
+            "url": "https://www.mobygames.com/game/10626/viewtiful-joe/releases/",
+            "publisher": "www.mobygames.com"
+          },
+          {
+            "id": "inaba05gdc",
+            "title": "Lessons from Viewtiful Joe:Making a Creatively and Financially Successful New Game",
+            "url": "https://www.gamedeveloper.com/business/postcard-from-gdc-2005-lessons-from-viewtiful-joe-making-a-creatively-and-financially-successful-new-game",
+            "publisher": "Brandon Sheffield / Gamasutra,11March2005; report of Atsushi Inaba's GDC lecture",
+            "source_type": "Primary contemporary firsthand conference report of Inaba's GDC lecture; no claim that the full archived lecture was viewed. Independent source review should distinguish reported statements from the producer's exact words.",
+            "locator": "Staff-focused project section, twelve/twenty-one-month schedule, VFX system as the seed and small-budget outcome",
+            "checked_on": "2026-10-21",
+            "rights": "Bibliographic reference; source publication, interview, translation, documents and any associated media remain with their respective rights holders.",
+            "source_budget_group": "inaba05gdc",
+            "research_snapshot": {
+              "snapshot": "build\\research\\canonical07\\viewtiful-inaba-gdc2005.html",
+              "sha256": "3b325a6ddc2adbf44a03faeb34cad8d9460be3cda89fe41a7994c23932801c24",
+              "bytes": 467357,
+              "resolved_url": "https://www.gamedeveloper.com/business/postcard-from-gdc-2005-lessons-from-viewtiful-joe-making-a-creatively-and-financially-successful-new-game"
+            }
+          },
+          {
+            "id": "inabakamiyapg12",
+            "title": "PG Inside:Atsushi Inaba and Hideki Kamiya,part2",
+            "url": "https://www.platinumgames.com/official-blog/article/7064",
+            "publisher": "PlatinumGames; interview by editorial studio MUESUM,6June2012,web publication6February2015",
+            "source_type": "Separate primary retrospective developer conversation; all parts/translations treated as one publication; Okami-specific anecdotes not reassigned to Joe",
+            "locator": "Opening Viewtiful Joe discussion: responsibility for design documents, small team, planning/direction and producer support",
+            "checked_on": "2026-10-21",
+            "rights": "Bibliographic reference; source publication, interview, translation, documents and any associated media remain with their respective rights holders.",
+            "source_budget_group": "inabakamiyapg12",
+            "research_snapshot": {
+              "snapshot": "F:\\Playhub\\PS5\\Pixel Museum\\build\\research\\canonical07\\viewtiful-pg2015.html",
+              "sha256": "ac114a05ad7d644cbfe6ebf83f8592bb64b6d614ecc93538eadda73da4adf845",
+              "bytes": 63027,
+              "resolved_url": "https://www.platinumgames.com/official-blog/article/7064"
+            }
+          },
+          {
+            "title": "Soundtrack publication: Joe the Hero",
+            "url": "https://www.youtube.com/watch?v=uoz_QiZQpsQ",
+            "publisher": "jimp1992",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Masakazu Sugimori",
+            "url": "https://en.wikipedia.org/wiki/Viewtiful_Joe_(video_game)",
+            "publisher": "Masakazu Sugimori"
+          },
+          {
+            "title": "Soundtrack publication: Some Like It Red Hot",
+            "url": "https://www.youtube.com/watch?v=erbcvbwrST8",
+            "publisher": "jimp1992",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Masakazu Sugimori",
+            "url": "https://en.wikipedia.org/wiki/Viewtiful_Joe_(video_game)",
+            "publisher": "Masakazu Sugimori"
+          },
+          {
+            "title": "Viewtiful Joe (video game)",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1377009963",
+            "publisher": "English Wikipedia contributors",
+            "license": "Creative Commons Attribution-ShareAlike 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "attribution": "Complete source paragraphs reproduced verbatim; card headings supplied editorially."
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "eyetoy-play-2003",
+      "kind": "game",
+      "year_context_only": 2003,
+      "date_context_only": {
+        "month": 7,
+        "day": 4,
+        "precision": "day",
+        "region": "Europe"
+      },
+      "event_semantics": "",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "EyeToy: Play",
+        "subtitle": "The player appears inside the game",
+        "summary": "EyeToy: Play is London Studio's PlayStation 2 party-game collection, first released in Europe on 4 July 2003. Bundled with the EyeToy USB camera, it places a live image of the player on the television and asks for movement instead of an ordinary controller input. Twelve short games turn waving, reaching and changing position into visible responses on screen. The person standing in the room becomes part of the playfield. The arrangement makes the basic instruction unusually direct: an object appears near the player's image, and moving towards it is the means of interacting with it.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "The player appears inside the game",
+            "text": "EyeToy: Play is London Studio's PlayStation 2 party-game collection, first released in Europe on 4 July 2003. Bundled with the EyeToy USB camera, it places a live image of the player on the television and asks for movement instead of an ordinary controller input. Twelve short games turn waving, reaching and changing position into visible responses on screen. The person standing in the room becomes part of the playfield. The arrangement makes the basic instruction unusually direct: an object appears near the player's image, and moving towards it is the means of interacting with it."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "A hand becomes the point of contact",
+            "text": "The camera detects changes in the picture and compares those movements with the objects displayed by the game. A familiar physical action can therefore become an input without requiring a button sequence to be learned first. Good lighting and a clear view matter because the system has to distinguish the player's movement from the background. The short activities make it easy for another person to take a turn, and high scores can be marked with a photograph. The collection connects play to the room around the television instead of asking the player to look entirely beyond it."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "A camera finds a clear introductory use",
+            "text": "Jamie MacDonald directed the project, with Ron Festejo producing and Pete Marshall leading programming. London Studio designed the collection as the first release built around Sony's new camera accessory. North America received it in November 2003 and Japan in February 2004. Later EyeToy games expanded the idea, but Play established its most immediate appeal: the player could recognise their own body inside the game before understanding any of its rules. That clear introduction helped motion-based interaction reach people for whom a conventional controller could otherwise have been the first obstacle."
+          }
+        ],
+        "sources": [
+          {
+            "title": "EyeToy: Play - English Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/EyeToy%3A_Play",
+            "publisher": "Wikipedia contributors",
+            "facts": "Original release, gameplay and production context."
+          },
+          {
+            "title": "EyeToy: Play - LaunchBox media",
+            "url": "https://gamesdb.launchbox-app.com/games/details/4667-eyetoy-play",
+            "publisher": "LaunchBox Games Database",
+            "facts": "Complete cover and original console gameplay media."
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "kirby-air-ride-2003",
+      "kind": "game",
+      "year_context_only": 2003,
+      "date_context_only": {
+        "month": 7,
+        "day": 11,
+        "precision": "day",
+        "region": "Japan"
+      },
+      "event_semantics": "",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "Kirby Air Ride",
+        "subtitle": "",
+        "summary": "Kirby's GameCube racer turns a single action button into braking, charging and copying, then takes those machines into races, a shared city and overhead contests.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "The game",
+            "text": "Kirby Air Ride is an action-racing game developed by HAL Laboratory for Nintendo GameCube and released in 2003. This Kirby spin-off offers three distinct modes: the courses of Air Ride, the overhead races of Top Ride and the machine-building competition of City Trial. Up to four players can take part on one console."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Slow down to go faster",
+            "text": "An Air Ride machine moves forward by itself. Holding the action button slows it down and stores a charge; releasing the button turns that stored energy into a boost. A corner therefore asks for more than steering: braking at the right moment can set up a faster exit. The same button lets Kirby inhale an enemy and take its ability when one is close enough. Ramps add flight to the course, with the angle of the machine affecting its glide and landing."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Build the machine before the contest",
+            "text": "City Trial gives the riders time to prepare before a Stadium event. They explore a shared city, break boxes and collect items that change speed, turning, flight and other properties. Machines found around the map can replace the one Kirby is riding while keeping the collected upgrades. Preparing a powerful vehicle involves choices: a heavy machine suited to a fight may behave very differently in a jumping or flying contest. Events and attacks from other players can upset the plan before the final competition begins."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "A smaller track, a different race",
+            "text": "Top Ride brings the whole course into view from above. Its short tracks put rivals, obstacles and items close together, making it easy to see a race turn around in a single lap. The compact layout gives four players little room to avoid one another, so positioning matters even when the controls are simple. Across the three modes, checklist objectives provide more specific tasks than finishing first, rewarding particular performances with new options and giving familiar courses another purpose."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Original publisher game information",
+            "url": "https://www.nintendo.co.jp/ngc/gkyj/index.html",
+            "publisher": "Nintendo"
+          },
+          {
+            "title": "Original instruction booklet",
+            "url": "https://manuals.plus/m/ed11addd49967fd1fd6ab3a3ce98668793484a36dcdb7d031b836c3021abb584",
+            "publisher": "Nintendo"
+          },
+          {
+            "title": "Original in-game music/sound credits",
+            "url": "https://www.mobygames.com/game/10654/kirby-air-ride/credits/gamecube/",
+            "publisher": "Original game credits transcribed by MobyGames"
+          },
+          {
+            "title": "Original Japanese release date",
+            "url": "https://www.nintendo.co.jp/ngc/gkyj/index.html",
+            "publisher": "Nintendo"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-563196",
+      "kind": "game",
+      "year_context_only": 2003,
+      "date_context_only": {
+        "month": 7,
+        "day": 16,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Regional and platform release dates may differ. Where shown, the exact day is taken only from the article release infobox.",
+      "main": {
+        "feature_id": null,
+        "title": "Star Wars: Knights of the Old Republic",
+        "subtitle": "",
+        "summary": "Star Wars: Knights of the Old Republic (often abbreviated KOTOR or KotOR) is a role-playing video game developed by BioWare and published by LucasArts.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Star Wars: Knights of the Old Republic",
+            "text": "Star Wars: Knights of the Old Republic (often abbreviated KOTOR or KotOR) is a role-playing video game developed by BioWare and published by LucasArts. The first installment of the Star Wars: Knights of the Old Republic series, it was released for the Xbox on July 16, 2003 and Windows on November 19, 2003, and it was ported to Mac OS X, iOS, and Android by Aspyr. The game is also playable on the Xbox 360, Xbox One, and Xbox Series X and Series S via backward compatibility. A Nintendo Switch version was released on November 11, 2021."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Decisions on either side of the Force",
+            "text": "The story takes place almost 4,000 years before the formation of the Galactic Empire, where Darth Malak, a Dark Lord of the Sith, has unleashed a Sith armada against the Galactic Republic. The player character, as a Jedi, must venture to different planets in the galaxy to defeat Malak. Players choose from three character classes (Scout, Soldier or Scoundrel) and customize their characters at the beginning of the game, and engage in round-based combat against enemies. Through interacting with other characters and making plot decisions, players earn Light Side and Dark Side Points, which determines whether their character aligns with the light or dark side of the Force; these choices affect which abilities are available to the character."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "BioWare chooses an earlier age",
+            "text": "Knights of the Old Republic was directed by Casey Hudson, designed by James Ohlen, and written by Drew Karpyshyn. LucasArts proposed a game tied to the film Star Wars: Episode II – Attack of the Clones, or a game set thousands of years before the prequels. The team chose the latter as they thought that they would have more creative freedom. Ed Asner, Ethan Phillips, and Jennifer Hale voiced the characters, while Jeremy Soule composed the soundtrack. Announced in 2000, the game was delayed several times before its release."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "Acclaim and a continuing Old Republic",
+            "text": "Knights of the Old Republic received critical acclaim for its characters, story, and sound. It was nominated for numerous awards and is often cited as one of the greatest video games ever made. A direct sequel, Star Wars Knights of the Old Republic II: The Sith Lords, developed by Obsidian Entertainment at BioWare's suggestion, was released in 2004. The series' story continued with the 2011 release of Star Wars: The Old Republic, a massively multiplayer online role-playing game developed by BioWare. In September 2021, a remake was announced to be in development by Aspyr for Windows and PlayStation 5; Aspyr would later be replaced by Saber Interactive in August 2022. In December 2025, Casey Hudson would separately be announced to be directing Star Wars: Fate of the Old Republic, an upcoming action role-playing game and spiritual successor to Knights of the Old Republic."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Star Wars: Knights of the Old Republic (video game) - article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1378937411",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Article contributors and history",
+            "url": "https://en.wikipedia.org/wiki/Star_Wars:_Knights_of_the_Old_Republic_(video_game)?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          },
+          {
+            "title": "STAR WARS™ Knights of the Old Republic™: official library cover",
+            "url": "https://store.steampowered.com/app/32370/",
+            "publisher": "LucasArts / Aspyr (Mac) / Disney / Lucasfilm"
+          },
+          {
+            "title": "Star Wars: Knights of the Old Republic (video game) — original release infobox, Wikipedia revision 1378937411",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1378937411",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Soundtrack publication: Good VGM 316 - Star Wars: Knights of the Old Republic - Ahto City",
+            "url": "https://www.youtube.com/watch?v=dL9e740KzHM",
+            "publisher": "Good Video Game Music",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Jeremy Soule",
+            "url": "https://en.wikipedia.org/wiki/Star_Wars%3A_Knights_of_the_Old_Republic_%28video_game%29",
+            "publisher": "Jeremy Soule"
+          },
+          {
+            "title": "Soundtrack publication: Good VGM 111 - Star Wars: Knights of the Old Republic - Kashyyk",
+            "url": "https://www.youtube.com/watch?v=scmN87zwJZY",
+            "publisher": "Good Video Game Music",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Jeremy Soule",
+            "url": "https://en.wikipedia.org/wiki/Star_Wars%3A_Knights_of_the_Old_Republic_%28video_game%29",
+            "publisher": "Jeremy Soule"
+          }
+        ]
+      },
+      "features": []
+    }
+  ]
+}

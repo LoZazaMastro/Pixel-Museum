@@ -1,0 +1,80 @@
+{
+  "status": "PASS",
+  "locale": "de",
+  "entries": [
+    {
+      "entry_id": "wikipedia-68689410",
+      "source_fields_sha256": "c9c53e656719c5dc89c14a2c2aab1b7e1b9fcf0a60597e44453687d95945fb5e",
+      "translation_sha256": "2eff2c9ec994b39719003bf0bcf2339e3b24a6691fa4a0566283205a4dd05b03",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch341/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "2f96a9a9e28d509120e5c048d590bf53df59bb7429b38b9b46e04a03e398cb70"
+    },
+    {
+      "entry_id": "workbook-02-18-horizon-forbidden-west",
+      "source_fields_sha256": "1fac86a6e7072b2e177615075675ecc361a84d4d159b349eb3ada169360d42ee",
+      "translation_sha256": "d8de2c111367b52b8b881ed9c096126558c86459e9616d53af803ebf0f790416",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch341/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "2f96a9a9e28d509120e5c048d590bf53df59bb7429b38b9b46e04a03e398cb70"
+    },
+    {
+      "entry_id": "wikipedia-61002621",
+      "source_fields_sha256": "985cf311251afd425a791bff5fe40d6106e513704ef685badb5851d0628a122e",
+      "translation_sha256": "daa97e44e06828c4295d69949c224dea248b1f5bbb687ed6017b8f17bc6c853e",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch341/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "2f96a9a9e28d509120e5c048d590bf53df59bb7429b38b9b46e04a03e398cb70"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "package_audit",
+    "actual_receipt": "build/research/catalog-2022-chronological/root-february-three-private/independent-package-audit-approval.json",
+    "actual_receipt_sha256": "8f88b1acda7c4dac65988451ca8aebcc91b60a14b8e99b6b716c66ad731a0739",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "package_audit",
+      "independent_of_authors": true,
+      "index_sha256": "c1f75a70d64c1a9b0397c0ebdee333111bb20a37b4b6b3d711fdb3e985f3ac39",
+      "owners": [
+        {
+          "entry_id": "wikipedia-68689410",
+          "source_sha256": "3ead33f2dafccecf415a0d3d83e1b8c5b982cda171587325eb67852c824416e2",
+          "target_sha256": "6a3c822cc2a7ddda836d4a85535e865ba7e2578f3f73dd73b94e96dfbb60fb73",
+          "contact_sha256": "d70da112018371f280d3e357ee924c89bea8e03081e58e03f7ff43e43b06cf9c"
+        },
+        {
+          "entry_id": "workbook-02-18-horizon-forbidden-west",
+          "source_sha256": "3c3b3635c7c0c42c2f1c4f02183a90ac96b4f6690ddcf75e0918bf4e01d900cf",
+          "target_sha256": "89c34087bf83cc14e402c390c348995f9ce6de3ce69a9667f32894c6ddaddb06",
+          "contact_sha256": "f2c7670a29f6df98a6e29f7841fd99519cca39dfe369f689b8aab7d6f8573ebd"
+        },
+        {
+          "entry_id": "wikipedia-61002621",
+          "source_sha256": "1339f9a5242d8508126d72248a95ba7cc249a62566a604c5c9a6e0926b58630d",
+          "target_sha256": "0297e01afcd63ce4652e447ae036fe403c0ea22a8b13724dd8fc7515bc23fc71",
+          "contact_sha256": "142ce20f11406824ece450ff9fbc8ca9d276d82ce8cf317abebf875938122f39"
+        }
+      ],
+      "scope": {
+        "english_paragraphs_read": 11,
+        "localized_paragraphs_read": 44,
+        "images_personally_viewed": 18,
+        "new_sifu_metadata_read": 3,
+        "old_music_objects_exact": 153
+      },
+      "findings": [],
+      "notes": [
+        "Read all English and four complete natural localized versions; completed Elden summary now includes George R. R. Martin.",
+        "Viewed all three final contacts. Clean covers, original game scenes, explicit laterDLC qualification, complete chapter coverage.",
+        "Three independent February2022 Sifu original-game archives honestly identified; composer Howie Lee confirmed in Sloclap primary behind-the-scenes. No claim of official uploader.",
+        "Actually read Sloclap developer aging/gameover primary and BandaiNamco official Tarnished August28,2026 / filmMarch3,2028 publications. No duplicate rechecks of153 preserved tracks."
+      ],
+      "primary_sources_read": [
+        "https://blog.playstation.com/2021/11/18/how-sifus-death-and-aging-system-functions/",
+        "https://www.sifugame.com/behind-the-scene",
+        "https://en.bandainamcoent.eu/elden-ring/elden-ring-tarnished-edition",
+        "https://www.bandainamcoent.com/news/elden-ring-live-action-adaptation-in-theaters-march-3-2028"
+      ],
+      "production_writes": false
+    }
+  }
+}

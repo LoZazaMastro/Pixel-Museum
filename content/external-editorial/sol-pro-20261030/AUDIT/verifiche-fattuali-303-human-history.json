@@ -1,0 +1,658 @@
+{
+  "batch_id": "303-human-history",
+  "sources": [
+    {
+      "source_id": "cd_sony",
+      "title": "Sony History: The CD is born",
+      "url": "https://www.sony.com/en/SonyInfo/CorporateInfo/History/SonyHistory/2-07.html",
+      "verification_scope": "Storia aziendale consultata: prima vendita di lettore e dischi in Giappone il 1º ottobre 1982. Distinta dalla produzione industriale di agosto."
+    },
+    {
+      "source_id": "cd_philips",
+      "title": "Philips, comunicato per il venticinquesimo anniversario del CD, riprodotto da Wired",
+      "url": "https://www.wired.com/2007/08/compact-disk-is/",
+      "verification_scope": "Testo del comunicato originale Philips: oltre 200 miliardi di dischi nel 2007. Fonte primaria ripubblicata; nessuna confusione tra prima pressatura del 17 agosto e vendita."
+    },
+    {
+      "source_id": "cd_tdk",
+      "title": "TDK CD-R80 announcement, 4 June 1999, riproduzione",
+      "url": "https://cdmediaworld.com/hardware/cdrom/news/9906/tdk_cd-r80.shtml",
+      "verification_scope": "Comunicato del produttore: 74/650 e 80/700 come capacità commerciali nominali, riduzione del passo delle tracce. Non aggiunte promesse di compatibilità universale."
+    },
+    {
+      "source_id": "cd_osta",
+      "title": "Understanding CD-R & CD-RW, Optical Storage Technology Association, gennaio 2003, copia",
+      "url": "https://abcdocz.com/doc/114531/understanding-cd-r-andamp%3B-cd-rw-revision-1.00-january-2003",
+      "verification_scope": "Consultati estratti del documento tecnico originale OSTA riprodotto dal sito: formati 74/650 e 80/700; supporti 99 minuti/870 MB fuori specifica Orange Book. Il sito originale OSTA non ha risposto; non dichiarata consultazione integrale di quel sito."
+    },
+    {
+      "source_id": "falklands_raf",
+      "title": "Royal Air Force remembers start of Falklands conflict",
+      "url": "https://www.raf.mod.uk/news/articles/royal-air-force-remembers-start-of-falklands-conflict/",
+      "verification_scope": "Fonte istituzionale: 74 giorni, termine 14 giugno, 649 militari argentini, 255 britannici e tre isolani morti."
+    },
+    {
+      "source_id": "falklands_nam",
+      "title": "The British Army and the Falklands War, National Army Museum",
+      "url": "https://www.nam.ac.uk/explore/british-army-and-falklands-war",
+      "verification_scope": "Ricostruzione museale consultata per cronologia del conflitto e vittime, mantenendo distinte le rivendicazioni politiche."
+    },
+    {
+      "source_id": "falklands_defense",
+      "title": "History of the Office of the Secretary of Defense, volume X",
+      "url": "https://history.defense.gov/Portals/70/Documents/secretaryofdefense/OSDSeries_Vol10.pdf",
+      "verification_scope": "Estratto della storia istituzionale: invasione 2 aprile 1982 e fine 14 giugno. Non letto integralmente il volume."
+    },
+    {
+      "source_id": "thriller_sony",
+      "title": "Michael Jackson's Thriller 25 Is Rocking the Planet, Sony",
+      "url": "https://sony.mediaroom.com/2008-02-06-Michael-Jacksons-Thriller-25-is-Rocking-the-Planet",
+      "verification_scope": "Comunicato ufficiale consultato: uscita statunitense 30 novembre 1982, sette singoli Top 10 e 37 settimane in testa. Il 29 novembre dell'INPUT non è conservato come data USA."
+    },
+    {
+      "source_id": "tron_disney",
+      "title": "Tron, Disney Movies",
+      "url": "https://movies.disney.com/tron",
+      "verification_scope": "Scheda ufficiale: uscita 9 luglio 1982 e identità dell'opera."
+    },
+    {
+      "source_id": "tron_afi",
+      "title": "Tron, AFI Catalog",
+      "url": "https://catalog.afi.com/Catalog/MovieDetails/56895?cxt=filmography",
+      "verification_scope": "Scheda consultata: prima a Los Angeles l'8 luglio, apertura commerciale a New York/Los Angeles il 9 luglio. Date distinte. Le note sulla lavorazione 1978 non sostituiscono la precedente origine dell'idea."
+    },
+    {
+      "source_id": "tron_lisberger",
+      "title": "Tron Trivia and Quotes, dichiarazioni di Steven Lisberger",
+      "url": "https://extratv.com/2010/12/14/the-extra-stuff-tron-trivia-and-quotes/",
+      "verification_scope": "Dichiarazione diretta consultata sull'ispirazione Pong/MAGI del 1976. Non adottata l'errata definizione giornalistica di Pong come primo videogioco."
+    },
+    {
+      "source_id": "spectrum_factsheet",
+      "title": "Sinclair Research Fact Sheet, ottobre 1982, copia del documento aziendale",
+      "url": "https://static1.squarespace.com/static/668031d72eeda76df26fd015/t/69f3690910528b12f9e20359/1777559819971/Sinclair%2BResearch%2BFact%2BSheet%2B-October%2B1982%2B%5Bproduced%2Bby%2BSinclair%2B-%2Bpages%2B1%2Bto%2B18%2Bof%2B23%5D.pdf",
+      "verification_scope": "Estratto del documento originale: lancio in aprile e vendite già effettuate entro ottobre 1982, dunque disponibilità entro l'anno. Non dedotto un giorno di consegna dalle previsioni."
+    },
+    {
+      "source_id": "spectrum_chm",
+      "title": "Sinclair ZX Spectrum launched, Centre for Computing History",
+      "url": "https://www.computinghistory.org.uk/det/43781/Sinclair%20ZX%20Spectrum%20Launched",
+      "verification_scope": "Scheda museale: presentazione 23 aprile 1982 e progettazione. Il giorno non viene automaticamente proposto come prima disponibilità commerciale."
+    },
+    {
+      "source_id": "midi_history",
+      "title": "MIDI History, chapter 7: MIDI Associations 1983–1985",
+      "url": "https://midi.org/midi-history-chapter-7-midi-associations-1983-1985",
+      "verification_scope": "Archivio dell'associazione consultato: prima specifica disponibile nell'agosto 1983. Il 5 agosto sul documento non basta a fissare il giorno di pubblicazione."
+    },
+    {
+      "source_id": "midi_avid",
+      "title": "MIDI channels, Pro Tools First documentation, Avid",
+      "url": "https://apps.avid.com/ProToolsFirstHelp/version2019.5/enu/concepts.5.9.html",
+      "verification_scope": "Documentazione del produttore: sedici canali utilizzabili per apparecchi diversi o parti di un unico strumento multitimbrico. Corretto l'obbligo implicito di sedici dispositivi fisici."
+    },
+    {
+      "source_id": "midi_usb",
+      "title": "What Musicians and Artists Need to Know About MIDI 2.0, MIDI Association",
+      "url": "https://midi.org/what-musicians-artists-need-to-know-about-midi-2-0",
+      "verification_scope": "Fonte dell'associazione: MIDI originale a sedici canali; USB introdotto successivamente, con possibilità di più porte. Non attribuito USB al 1983 né esteso il limite a ogni moderna connessione fisica."
+    },
+    {
+      "source_id": "dynatac_motorola",
+      "title": "Motorola Solutions celebrates its 85th anniversary",
+      "url": "https://www.motorolasolutions.com/newsroom/press-releases/motorola-solutions-celebrates-its-85th-anniversary.html",
+      "verification_scope": "Comunicato ufficiale: approvazione FCC il 21 settembre 1983 e vendita ai consumatori nel 1984. Sostituisce l'asserita uscita commerciale del 6 marzo 1983."
+    },
+    {
+      "source_id": "dynatac_timeline",
+      "title": "Motorola Solutions history timeline",
+      "url": "https://www.motorolasolutions.com/en_us/about/history/timeline.html",
+      "verification_scope": "Cronologia aziendale consultata: approvazione e mercato distinti; MicroTAC 1989 e StarTAC 1996."
+    },
+    {
+      "source_id": "dynatac_collection",
+      "title": "DynaTAC 8000X, Museumsstiftung Post und Telekommunikation",
+      "url": "https://onlinesammlung.museumsstiftung.de/detail/collection/bbfa7483-f8a1-4431-b90f-514197cc4c56",
+      "verification_scope": "Catalogazione museale di oggetto: 8000X nel 1984, 8000S nel 1985 e Classic II nel 1993."
+    },
+    {
+      "source_id": "dynatac_museum",
+      "title": "Motorola DynaTAC 8000X, Mobile Phone Museum",
+      "url": "https://www.mobilephonemuseum.com/phone-detail/dynatac-8000x?_page=4",
+      "verification_scope": "Scheda della collezione: commercializzazione 1984, prezzo 3.995 dollari, circa dieci ore di carica e trenta minuti di conversazione."
+    },
+    {
+      "source_id": "cpi_1984",
+      "title": "US CPI annual data, BLS via Federal Reserve Bank of St Louis",
+      "url": "https://fred.stlouisfed.org/data/USACPIBLS",
+      "verification_scope": "Serie storica: media annua CPI-U 1984 pari a 103,9."
+    },
+    {
+      "source_id": "cpi_2025",
+      "title": "Federal Register, 30 September 2026, CPI-U calculation",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-09-30/html/2026-20016.htm",
+      "verification_scope": "Estratto del documento federale che riporta il CPI-U BLS medio del 2025: 321,943. Utilizzato esclusivamente il dato statistico, senza importare il contenuto normativo."
+    },
+    {
+      "source_id": "cpi_crosscheck",
+      "title": "Consumer Price Index annual averages, Federal Reserve Bank of Minneapolis",
+      "url": "https://www.minneapolisfed.org/about-us/monetary-policy/inflation-calculator/consumer-price-index-1913-?lv=true",
+      "verification_scope": "Tabella consultata: 1984 103,9 e 2025 321,9 arrotondato. Il risultato arrotondato del confronto resta circa 12.380 dollari."
+    },
+    {
+      "source_id": "thx_history",
+      "title": "THX company history",
+      "url": "https://www.thx.com/about/",
+      "verification_scope": "Storia aziendale letta: progetto Lucasfilm e prime sale certificate per Return of the Jedi nel 1983. La data riguarda il programma, non prova di fondazione della società legale attuale."
+    },
+    {
+      "source_id": "thx_deepnote",
+      "title": "THX Deep Note",
+      "url": "https://www.thx.com/deepnote/",
+      "verification_scope": "Descrizione ufficiale del marchio sonoro e attribuzione a James A. Moorer. Nessuna nuova audizione dichiarata."
+    },
+    {
+      "source_id": "thx_moorer",
+      "title": "The THX Deep Note, intervista a James A. Moorer, Sound & Vision",
+      "url": "https://www.soundandvision.com/node/113843",
+      "verification_scope": "Letta l'intervista originale al compositore; intento di crescendo e debutto con Return of the Jedi. Non ripreso il numero di sale ricordato nell'intervista."
+    },
+    {
+      "source_id": "thx_name",
+      "title": "Peter Vasay: How THX Is Staying True to Its Mission, Sound & Vision",
+      "url": "https://www.soundandvision.com/content/peter-vasay-how-thx-staying-true-its-mission",
+      "verification_scope": "Letti intervista al dirigente e intervento di Holman: diverse spiegazioni storiche di X, crossover/experiment, e riferimento a Holman. Non presentata una sola etimologia come incontroversa."
+    },
+    {
+      "source_id": "tokyo_olc",
+      "title": "Opening of Tokyo Disneyland, Oriental Land",
+      "url": "https://www.olc.co.jp/en/company/history/history03.html",
+      "verification_scope": "Letta la storia ufficiale: due anni e quattro mesi di costruzione, fase finale di formazione/anteprime, pioggia il 15 aprile 1983 e Takahashi a World Bazaar. La formazione iniziata prima non viene ridotta alla sola fase finale."
+    },
+    {
+      "source_id": "dragonball_anniversary",
+      "title": "Dragon Ball 37th anniversary, Dragon Ball Official",
+      "url": "https://en.dragon-ball-official.com/news/01_672.html",
+      "verification_scope": "Fonte ufficiale: esordio sul numero 51 del 1984 di Weekly Shōnen Jump, in vendita il 20 novembre. Distinta data di vendita dalla data di copertina."
+    },
+    {
+      "source_id": "dragonball_check",
+      "title": "Dragon Ball 39th anniversary, Dragon Ball Official",
+      "url": "https://en.dragon-ball-official.com/news/01_2264.html",
+      "verification_scope": "Conferma ufficiale dell'anniversario il 20 novembre."
+    }
+  ],
+  "decisions": [
+    {
+      "target_id": "history-1982-compact-disc",
+      "problem": "Distinguere produzione e vendita; capacità commerciali e conversioni binarie non sono conteggi esatti dei settori.",
+      "conclusion": "Vendita al 1º ottobre 1982 in Giappone; mantenute tutte le quantità, incluso il totale vendite e tutte le equivalenze in byte. Qualificate come capacità nominali, con conversioni aritmetiche verificate: 650×1048576=681574400; 700×1048576=734003200; 870×1048576=912261120. Conservato il carattere fuori specifica dei 99 minuti.",
+      "source_ids": [
+        "cd_sony",
+        "cd_philips",
+        "cd_tdk",
+        "cd_osta"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1982-falklands-war",
+      "problem": "L'invio della forza navale del 5 aprile non è l'inizio della guerra.",
+      "conclusion": "Sequenza chiarita dal 2 aprile al 14 giugno; tutte le vittime e le posizioni di Argentina e Regno Unito mantenute, senza risolvere editorialmente il conflitto di sovranità.",
+      "source_ids": [
+        "falklands_raf",
+        "falklands_nam",
+        "falklands_defense"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1982-thriller-album",
+      "problem": "Il 29 novembre è improprio come data statunitense.",
+      "conclusion": "Uscita USA corretta al 30 novembre 1982; preservati Quincy Jones, Off the Wall, Westlake, tutti i generi e temi, due singoli al numero uno, altri cinque Top 10 e 37 settimane. Titoli musicali invariati nelle cinque lingue.",
+      "source_ids": [
+        "thriller_sony"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1982-tron",
+      "problem": "Distinguere prima e uscita; non confondere origine dell'idea e lavorazione successiva.",
+      "conclusion": "Uscita commerciale USA 9 luglio, non prima dell'8. Conservata ispirazione Pong 1976, attestata dal racconto di Lisberger, insieme a storia, interprete e tutte le tecniche produttive.",
+      "source_ids": [
+        "tron_disney",
+        "tron_afi",
+        "tron_lisberger"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1982-zx-spectrum",
+      "problem": "Il 23 aprile documenta l'annuncio; non prova la prima consegna.",
+      "conclusion": "Testo distingue annuncio da disponibilità nello stesso anno. Metadato annuale 1982 mantenuto, senza finta precisione. Conservati cinque milioni, squadra Cambridge, costi, Timex Dundee, Dickinson, tastiera, colore, TV e cassette.",
+      "source_ids": [
+        "spectrum_factsheet",
+        "spectrum_chm"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1983-midi",
+      "problem": "I sedici canali non richiedono sedici dispositivi; USB non appartiene alla configurazione del 1983.",
+      "conclusion": "Precisati sedici canali della connessione originale, instradabili anche a parti dello stesso sintetizzatore; USB successivo. Distinte istruzioni musicali e registrazione temporale nel sequencer. Pubblicazione prima specifica in agosto 1983.",
+      "source_ids": [
+        "midi_history",
+        "midi_avid",
+        "midi_usb"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1983-motorola-dynatac",
+      "problem": "L'INPUT confonde annuncio/approvazione 1983 e vendita 1984; il valore in dollari 2025 non corrisponde al CPI annuale.",
+      "conclusion": "Risolta timeline proponendo 1984 per la commercializzazione. Sostituita la data 6 marzo non sostenuta con approvazione ufficiale 21 settembre 1983. Ricalcolata equivalenza 3995×321,943/103,9=12378,8478, arrotondata a circa 12.380 dollari 2025. Conservati produzione 1983–1994, carica, autonomia, display, memoria e tutta la successione dei modelli.",
+      "source_ids": [
+        "dynatac_motorola",
+        "dynatac_timeline",
+        "dynatac_collection",
+        "dynatac_museum",
+        "cpi_1984",
+        "cpi_2025",
+        "cpi_crosscheck"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1983-thx",
+      "problem": "THX non si limita a standard digitali né certifica automaticamente ogni film preceduto dal trailer; il glissando non è solo una salita dal grave.",
+      "conclusion": "Descritti standard di riproduzione/certificazione e tutti gli ambiti originali; Deep Note reso come accordo crescente con altezze in movimento. Conservati Holman, Moorer, Lucasfilm, Return of the Jedi e THX 1138. Diverse spiegazioni della X attribuite ai racconti storici, senza inventare un verdetto. 1983 riferito al programma, non nascita di persona o fondazione giuridica.",
+      "source_ids": [
+        "thx_history",
+        "thx_deepnote",
+        "thx_moorer",
+        "thx_name"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1983-tokyo-disneyland",
+      "problem": "Preservare la durata del cantiere senza far iniziare tutta la formazione solo dopo i lavori.",
+      "conclusion": "Confermata data esistente 15 aprile 1983. Specificata la formazione finale, mantenuti pioggia, località, accordo, durata, presidente, World Bazaar e rilievo internazionale.",
+      "source_ids": [
+        "tokyo_olc"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1984-dragon-ball-manga",
+      "problem": "Collocare il manga sulla pubblicazione effettiva, non sulla copertina.",
+      "conclusion": "Proposta uscita del primo capitolo 20 novembre 1984. Conservati tutte le ispirazioni, le sette sfere, crescita, 519 capitoli, 42 volumi, termine 1995 e adattamenti Toei.",
+      "source_ids": [
+        "dragonball_anniversary",
+        "dragonball_check"
+      ],
+      "text_applied": true
+    }
+  ],
+  "metadata_proposals": [
+    {
+      "target_id": "history-1982-compact-disc",
+      "field": "timeline_date",
+      "original": {
+        "year": 1982,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1982,
+        "month": 10,
+        "day": 1,
+        "precision": "day",
+        "event_semantics": "Prima vendita del formato audio CD",
+        "region": "Giappone"
+      },
+      "source_ids": [
+        "cd_sony"
+      ],
+      "reason": "Proposta documentata separata; INPUT, TEMPLATE e catalogo non modificati."
+    },
+    {
+      "target_id": "history-1982-falklands-war",
+      "field": "timeline_date",
+      "original": {
+        "year": 1982,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1982,
+        "month": 4,
+        "day": 2,
+        "precision": "day",
+        "event_semantics": "Inizio del conflitto delle Falkland",
+        "region": "Atlantico meridionale"
+      },
+      "source_ids": [
+        "falklands_defense"
+      ],
+      "reason": "Proposta documentata separata; INPUT, TEMPLATE e catalogo non modificati."
+    },
+    {
+      "target_id": "history-1982-thriller-album",
+      "field": "timeline_date",
+      "original": {
+        "year": 1982,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1982,
+        "month": 11,
+        "day": 30,
+        "precision": "day",
+        "event_semantics": "Uscita commerciale dell'album",
+        "region": "Stati Uniti"
+      },
+      "source_ids": [
+        "thriller_sony"
+      ],
+      "reason": "Proposta documentata separata; INPUT, TEMPLATE e catalogo non modificati."
+    },
+    {
+      "target_id": "history-1982-tron",
+      "field": "timeline_date",
+      "original": {
+        "year": 1982,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1982,
+        "month": 7,
+        "day": 9,
+        "precision": "day",
+        "event_semantics": "Uscita cinematografica commerciale",
+        "region": "Stati Uniti"
+      },
+      "source_ids": [
+        "tron_disney",
+        "tron_afi"
+      ],
+      "reason": "Proposta documentata separata; INPUT, TEMPLATE e catalogo non modificati."
+    },
+    {
+      "target_id": "history-1983-midi",
+      "field": "timeline_date",
+      "original": {
+        "year": 1983,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1983,
+        "month": 8,
+        "day": 0,
+        "precision": "month",
+        "event_semantics": "Pubblicazione della prima specifica MIDI",
+        "region": "Standard internazionale"
+      },
+      "source_ids": [
+        "midi_history"
+      ],
+      "reason": "Proposta documentata separata; INPUT, TEMPLATE e catalogo non modificati."
+    },
+    {
+      "target_id": "history-1983-motorola-dynatac",
+      "field": "timeline_date",
+      "original": {
+        "year": 1983,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1984,
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "event_semantics": "Disponibilità commerciale di DynaTAC 8000X",
+        "region": "Stati Uniti"
+      },
+      "source_ids": [
+        "dynatac_motorola",
+        "dynatac_timeline"
+      ],
+      "reason": "Proposta documentata separata; INPUT, TEMPLATE e catalogo non modificati."
+    },
+    {
+      "target_id": "history-1984-dragon-ball-manga",
+      "field": "timeline_date",
+      "original": {
+        "year": 1984,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1984,
+        "month": 11,
+        "day": 20,
+        "precision": "day",
+        "event_semantics": "Vendita del primo capitolo nel numero 51 di Weekly Shōnen Jump",
+        "region": "Giappone"
+      },
+      "source_ids": [
+        "dragonball_anniversary",
+        "dragonball_check"
+      ],
+      "reason": "Proposta documentata separata; INPUT, TEMPLATE e catalogo non modificati."
+    }
+  ],
+  "editorial_review": {
+    "fidelity": "Confrontate tutte le dieci card con l'INPUT: dati tecnici e numeri conservati; rettifiche circoscritte documentate. CD mantiene anche tutte le conversioni in byte; DynaTAC mantiene la serie completa e l'equivalenza monetaria ricalcolata.",
+    "language_review": "Inglese scritto per primo; poi adattamenti IT, FR, DE, ES. Rilettura per corrispondenza e naturalezza: riviste formulazione italiana di Deep Note, intestazione francese DynaTAC, riferimento francese alla classifica anziché alle sole vendite e incipit tedesco del telefono.",
+    "dates": "Disponibilità commerciali separate da annunci, autorizzazioni, première e copertine. Eventi espliciti conservati; precisione annuale Spectrum e mensile MIDI quando non è documentato un giorno di vendita o pubblicazione.",
+    "rights": "Attribuzioni, revisioni e licenze dell'INPUT conservate nel pacchetto. Fonti nuove registrate con ambito reale della consultazione; non dichiarati lettura integrale di PDF, visione di film o ascolto di audio non effettuati.",
+    "english_written_first": true,
+    "languages": [
+      "en",
+      "it",
+      "fr",
+      "de",
+      "es"
+    ],
+    "entry_count": 10,
+    "card_count_per_language": 10,
+    "reviewed_at": "2026-10-30T06:58:36.617253+00:00",
+    "english_summary_word_range": [
+      32,
+      37
+    ],
+    "structural_checks": "Schema, ID, ordine, numero di card e cinque lingue verificati dal validatore. Tutti i titoli presenti; nessun HTML o Markdown nei testi."
+  },
+  "status": "completed",
+  "validation": {
+    "valid": true,
+    "batch_id": "303-human-history",
+    "completed": true,
+    "entry_count": 10,
+    "card_count_per_language": 10,
+    "language_count": 5,
+    "translated_card_count": 50,
+    "entry_card_counts": {
+      "history-1982-compact-disc": 1,
+      "history-1982-falklands-war": 1,
+      "history-1982-thriller-album": 1,
+      "history-1982-tron": 1,
+      "history-1982-zx-spectrum": 1,
+      "history-1983-midi": 1,
+      "history-1983-motorola-dynatac": 1,
+      "history-1983-thx": 1,
+      "history-1983-tokyo-disneyland": 1,
+      "history-1984-dragon-ball-manga": 1
+    },
+    "issue_counts": {
+      "history-1982-compact-disc": 0,
+      "history-1982-falklands-war": 0,
+      "history-1982-thriller-album": 0,
+      "history-1982-tron": 0,
+      "history-1982-zx-spectrum": 0,
+      "history-1983-midi": 0,
+      "history-1983-motorola-dynatac": 0,
+      "history-1983-thx": 0,
+      "history-1983-tokyo-disneyland": 0,
+      "history-1984-dragon-ball-manga": 0
+    },
+    "summary_checks": [
+      {
+        "entry_id": "history-1982-compact-disc",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "history-1982-falklands-war",
+        "feature_id": null,
+        "english_summary_words": 33
+      },
+      {
+        "entry_id": "history-1982-thriller-album",
+        "feature_id": null,
+        "english_summary_words": 33
+      },
+      {
+        "entry_id": "history-1982-tron",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "history-1982-zx-spectrum",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "history-1983-midi",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "history-1983-motorola-dynatac",
+        "feature_id": null,
+        "english_summary_words": 33
+      },
+      {
+        "entry_id": "history-1983-thx",
+        "feature_id": null,
+        "english_summary_words": 34
+      },
+      {
+        "entry_id": "history-1983-tokyo-disneyland",
+        "feature_id": null,
+        "english_summary_words": 32
+      },
+      {
+        "entry_id": "history-1984-dragon-ball-manga",
+        "feature_id": null,
+        "english_summary_words": 34
+      }
+    ],
+    "editorial_review": [
+      "history-1982-falklands-war/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1982-falklands-war/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1982-falklands-war/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1982-falklands-war/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1983-tokyo-disneyland/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1983-tokyo-disneyland/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1983-tokyo-disneyland/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1983-tokyo-disneyland/main/es: main title changed; check that this is a descriptive title and not an altered official name"
+    ],
+    "failures": []
+  },
+  "output_sha256": "63e18cb423b6b515c7df60c357bd0a62802d1aac7480b953a69089a544b8728e",
+  "expansion_assessments": [
+    {
+      "target_id": "history-1982-compact-disc",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1982-falklands-war",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1982-thriller-album",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1982-tron",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1982-zx-spectrum",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1983-midi",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1983-motorola-dynatac",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1983-thx",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1983-tokyo-disneyland",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1984-dragon-ball-manga",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    }
+  ]
+}

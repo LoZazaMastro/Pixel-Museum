@@ -1,0 +1,217 @@
+{
+  "schema_version": 1,
+  "status": "reviewed_reading_flow_repairs",
+  "policy": "Only named reference entries with exact original paragraph hashes; preserve all Playhub source bodies and headings. Remap image anchors and retain the original prose in this authoring record.",
+  "entries": [
+    {
+      "entry_id": "wikipedia-2669815",
+      "expected_body_sha256": [
+        "286dcb4bbc014489c6b40470bd3bda5a4c3973d3f8d663112feb0c403f157a60",
+        "acfb20d204df4272a204b37e0757d29f756235949a29b49500ea0b472d1db215",
+        "6b9fbdd4ac3e8121765731519d9ce92bff558d76734706f466cf2205d5903719"
+      ],
+      "body": [
+        "Star Fire is a first-person arcade coin-operated space combat video game created by Technical Magic for Midway-Bally and licensed for manufacture to Exidy in December 1978. It was distributed in Japan by Taito and Esco Trading in 1979. Designed by Ted Michon and David Rolfe and inspired by the film Star Wars, the game is not based on a licensed property.",
+        "Star Fire was a major success for Exidy, and became the first arcade video game to use an enclosed sit-down cockpit cabinet, the first to allow a highest scoring player to enter their initials in a high score table, and one of the first to be built on a reprogrammable microprocessor based game system with full screen color graphics. It was followed by an updated version, Star Fire II, with fixes. It was then ported by Epyx to Commodore 64 and Atari 8-bit computers in a bundle with Fire One, another Exidy game."
+      ],
+      "story_headings": [
+        "A space-combat game finds its manufacturer",
+        "The cockpit, score table and later versions"
+      ],
+      "paragraph_mapping": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "reason": "A source sentence was incorrectly split between two cards. Join the exact text without adding a historical claim.",
+      "original_body": [
+        "Star Fire is a first-person arcade coin-operated space combat video game created by Technical Magic for Midway-Bally and licensed for manufacture",
+        "to Exidy in December 1978. It was distributed in Japan by Taito and Esco Trading in 1979. Designed by Ted Michon and David Rolfe and inspired by the film Star Wars, the game is not based on a licensed property.",
+        "Star Fire was a major success for Exidy, and became the first arcade video game to use an enclosed sit-down cockpit cabinet, the first to allow a highest scoring player to enter their initials in a high score table, and one of the first to be built on a reprogrammable microprocessor based game system with full screen color graphics. It was followed by an updated version, Star Fire II, with fixes. It was then ported by Epyx to Commodore 64 and Atari 8-bit computers in a bundle with Fire One, another Exidy game."
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/w/index.php?oldid=1346065882",
+        "https://en.wikipedia.org/w/index.php?oldid=1376466831",
+        "https://en.wikipedia.org/wiki/Star_Fire?action=history",
+        "https://creativecommons.org/licenses/by-sa/4.0/"
+      ],
+      "fact_check": "Not a new factual sign-off; repair only duplicate/split reading flow."
+    },
+    {
+      "entry_id": "wikipedia-33547270",
+      "expected_body_sha256": [
+        "d8547f9d29bacbfe5355d990b37b79579b2d3032e9f02240527f5d7d1fc6babd",
+        "ed6e37af9deba275383348689c1992fdb37eca7ff023e8fefd2aad32686df7fb",
+        "a8a38b321a46a1b099051a70548431ad4a4e232abfa9ab490bb55d4734c00fa3",
+        "62e471cd50c07ed6aa6578de130055c4974d6b264af0e9e57123acb2285e8378"
+      ],
+      "body": [
+        "The Cottage (Swedish: Stugan) is an adventure video game that was initially made available in 1978 for the DEC-10 mainframe computer Oden in Stockholm, and later published by Scandinavian PC Systems for IBM PCs in 1986 in Swedish, Danish, Norwegian and English. It was the first publicly available Swedish adventure game and one of the first commercial Swedish video games.",
+        "The game is set in a cottage in Småland, Sweden; the player explores the cottage and its surroundings by typing simple commands to indicate what they want to do or where they want to go. They aim to find items and perform certain actions to raise their score and rank, while avoiding traps and enemy characters, with the ultimate goal of getting inducted into the cottage council.",
+        "The game was developed in the 1970s and 1980s by Viggo Kann, Kimmo Eriksson and Olle Johansson, three children who had played the game Adventure and wanted to create a similar game in Swedish. The Cottage began as a collection of smaller games the three had previously developed on their own, with the player moving through an amusement arcade to choose what to play; as they found it more fun to move through the arcade than to play the games, they ended up expanding the area to explore and removing most of the smaller games. Several thousand copies of the IBM PC release were sold; despite this, the developers did not receive much money from it outside of pre-paid royalties. The game had a cult-like status among Oden users at the time, and was commercially important to the computer center in Stockholm."
+      ],
+      "story_headings": [
+        "A Swedish adventure reaches several computers",
+        "Exploring the cottage and its surroundings",
+        "Three young authors find a world between games"
+      ],
+      "paragraph_mapping": {
+        "0": 0,
+        "1": 0,
+        "2": 1,
+        "3": 2
+      },
+      "reason": "The first paragraph exactly repeats the first sentence of the second. Retain the longer paragraph and all distinct source information.",
+      "original_body": [
+        "The Cottage (Swedish: Stugan) is an adventure video game that was initially made available in 1978 for the DEC-10 mainframe computer Oden in Stockholm, and later published by Scandinavian PC Systems for IBM PCs in 1986 in Swedish, Danish, Norwegian and English.",
+        "The Cottage (Swedish: Stugan) is an adventure video game that was initially made available in 1978 for the DEC-10 mainframe computer Oden in Stockholm, and later published by Scandinavian PC Systems for IBM PCs in 1986 in Swedish, Danish, Norwegian and English. It was the first publicly available Swedish adventure game and one of the first commercial Swedish video games.",
+        "The game is set in a cottage in Småland, Sweden; the player explores the cottage and its surroundings by typing simple commands to indicate what they want to do or where they want to go. They aim to find items and perform certain actions to raise their score and rank, while avoiding traps and enemy characters, with the ultimate goal of getting inducted into the cottage council.",
+        "The game was developed in the 1970s and 1980s by Viggo Kann, Kimmo Eriksson and Olle Johansson, three children who had played the game Adventure and wanted to create a similar game in Swedish. The Cottage began as a collection of smaller games the three had previously developed on their own, with the player moving through an amusement arcade to choose what to play; as they found it more fun to move through the arcade than to play the games, they ended up expanding the area to explore and removing most of the smaller games. Several thousand copies of the IBM PC release were sold; despite this, the developers did not receive much money from it outside of pre-paid royalties. The game had a cult-like status among Oden users at the time, and was commercially important to the computer center in Stockholm."
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/w/index.php?oldid=1334496729",
+        "https://en.wikipedia.org/w/index.php?oldid=1376466831",
+        "https://en.wikipedia.org/wiki/The_Cottage_(video_game)?action=history",
+        "https://creativecommons.org/licenses/by-sa/4.0/"
+      ],
+      "fact_check": "Not a new factual sign-off; repair only duplicate/split reading flow."
+    },
+    {
+      "entry_id": "wikipedia-15420996",
+      "expected_body_sha256": [
+        "1493a64b34fbdb0e6d7256fe969fe0fcf01744bf7fdb0f8641999b8fb7e4c545",
+        "7f01aa02d2c1e4b97c74b6e5495a1bcc48e6a7a70c9d4afebc6c04dca7bec5a2",
+        "ba828fce420835fc074e440ffdde77d88c4a7685266ebef04abcfc6a93077df9",
+        "2b692dc1bbed39508be52dd822d50e15c1ab57a97399294dbe8595b8a9c58cd2",
+        "18143adf1557d99359d175d1fefef53ad271380e375abf2c05baef79d9cfcdc0"
+      ],
+      "body": [
+        "Shark Jaws is an action video game by Atari, Inc. under the name of Horror Games, originally released for arcades in 1975. An unlicensed tie-in to the movie Jaws, and believed to be the first commercially released movie tie-in, it was created to be a game about sharks eating people. According to Bushnell, the game was successful enough to sell approximately two thousand units.",
+        "In the game, the player controls a deep-sea diver trying to catch small fish while avoiding a great white shark that is trying to eat him. Points are scored by running over the fish to catch them. The score appears at the top of the screen.",
+        "Atari head Nolan Bushnell originally tried to license the Jaws name, but was unable to secure a license from Universal Pictures. Deciding to go ahead with the game anyway, it was retitled Shark JAWS, with the word Shark in tiny print and JAWS in large all caps print to create greater prominence. Afraid of legal action from Universal, Atari released it under a fake name, Horror Games.",
+        "The game is housed in a custom cabinet that includes a single joystick and start button. The cabinet bezel uses blue and green colors, and portrays sharks swimming around along with a solitary swimmer. The game PCB is composed of discrete technology, and although the game was released under the name Horror Games, the PCB clearly states Atari."
+      ],
+      "story_headings": [
+        "An arcade game in the wake of Jaws",
+        "A diver, small fish and a larger threat",
+        "A prominent name without a film licence",
+        "A shark-filled cabinet around Atari circuitry"
+      ],
+      "paragraph_mapping": {
+        "0": 0,
+        "1": 1,
+        "2": 2,
+        "3": 1,
+        "4": 3
+      },
+      "reason": "Merge the repeated gameplay/score explanation into its existing paragraph, retaining the score-position detail. Historical licensing claims remain subject to source review.",
+      "original_body": [
+        "Shark Jaws is an action video game by Atari, Inc. under the name of Horror Games, originally released for arcades in 1975. An unlicensed tie-in to the movie Jaws, and believed to be the first commercially released movie tie-in, it was created to be a game about sharks eating people. According to Bushnell, the game was successful enough to sell approximately two thousand units.",
+        "In the game, the player controls a deep-sea diver trying to catch small fish while avoiding a great white shark that is trying to eat him. Points are scored by running over the fish to catch them.",
+        "Atari head Nolan Bushnell originally tried to license the Jaws name, but was unable to secure a license from Universal Pictures. Deciding to go ahead with the game anyway, it was retitled Shark JAWS, with the word Shark in tiny print and JAWS in large all caps print to create greater prominence. Afraid of legal action from Universal, Atari released it under a fake name, Horror Games.",
+        "Player has to dodge a shark while collecting fish for points, all while avoiding getting eaten by the shark.The number of fish collected is the score for the game and is shown on the top middle of the screen.",
+        "The game is housed in a custom cabinet that includes a single joystick and start button. The cabinet bezel uses blue and green colors, and portrays sharks swimming around along with a solitary swimmer. The game PCB is composed of discrete technology, and although the game was released under the name Horror Games, the PCB clearly states Atari."
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/w/index.php?oldid=1376633244",
+        "https://en.wikipedia.org/wiki/Shark_Jaws?action=history",
+        "https://creativecommons.org/licenses/by-sa/4.0/",
+        "https://en.wikipedia.org/wiki/Category:1975_video_games"
+      ],
+      "fact_check": "Not a new factual sign-off; repair only duplicate/split reading flow."
+    },
+    {
+      "entry_id": "wikipedia-234683",
+      "expected_body_sha256": [
+        "66e339d2b264bea921a35f84785a1c684ee8f6476ea2255f7367776b1fdd08d4",
+        "38e8b14493af178f8f763db414d8fd357f2c26c67264bc1962cea98d9b9aaf64",
+        "504bef119c8219da7d5703c2cf77da2c140f548ef8f9a0166b5d0936b12d92eb",
+        "ed5e32285556938f328268a84fbfb0fdf15601a3215676b48b0f715503366875",
+        "655e0899210abc79774b792b20587578bb1968079e0b6c80f79e6ea0222f77ad",
+        "531265178f494c06bbe4de9776c72db0d6e73184b0e792837df3020a4b68b786",
+        "254d6c7f91f9a7652b2530ac2ac5c05c2501a3365cf8dd24d66f82dc4279bed8"
+      ],
+      "body": [
+        "Beatmania (ビートマニア) (styled as beatmania), initially localized as Beatstage or Hiphopmania, is a discontinued series of Arcade DJ simulation music video games  developed and distributed by Japanese game developer Konami and first released in December 1997, With every Beatmania game having its own slogan (eg. beatmania IIDX 18 Resort Anthem: Blaze through the resort party!). It contributed largely to the boom of music games in 1998, and the series expanded not only with arcade sequels, but also moved to home consoles and other portable devices, achieving a million unit sales. The Bemani line of music games from Konami is named after the series, was first adopted in the arcade release of Beatmania 3rdMix and kept ever since. The series came to an end with the last game being Beatmania The Final, released in 2002.",
+        "In the international market, the series competed with the South Korean-developed EZ2DJ, another 5-key DJ simulation game, which Konami sued for copyright infringement relating to its gameplay similarity to Beatmania.",
+        "In 1998, ASCII Corporation, the former distributor of Microsoft in Japan, signed an exclusive agreement with Konami to produce third-party controllers for the PlayStation releases of Beatmania. The controllers, known as the ASC-0515BM were often bundled alongside the game. With Konami's official controller for the game, the DJ Station Pro positioned as a more premium option.",
+        "Beatmania gave birth to several spinoffs, such as the Beatmania IIDX series (a more advanced version featuring 7 keys and higher difficulty levels, and to this day still receiving new version updates) and the other being Beatmania III, a remake of the 5-key series which featured a more modern hardware platform, a pedal for optional effects and a 3.5\" floppy disk drive to save play records.",
+        "While the series was never ported to home computers, there have been unlicensed hard-drive copies which made it playable on a computer's keyboard, or even with a modded PlayStation controller. Its popularity led to non-official simulators, with one of the most popular being BM98.",
+        "Beatmania and its variants have a following in Japan and all around the world. The password-based Internet Ranking service allowed competition wherever a machine is available. Today in the United States, many of the original Beatmania cabinets are in the hands of arcade collectors and Bemani enthusiasts, and consequently, are a rare sight at many arcades."
+      ],
+      "story_headings": [
+        "A DJ simulation becomes a family of music games",
+        "A competing five-key design",
+        "Bringing the controller home",
+        "Seven keys, effects pedals and new branches",
+        "Players build their own ways to play",
+        "Rankings connect a scattered audience"
+      ],
+      "paragraph_mapping": {
+        "0": 0,
+        "1": 0,
+        "2": 1,
+        "3": 2,
+        "4": 3,
+        "5": 4,
+        "6": 5
+      },
+      "reason": "Remove the verbatim repeated opening paragraph; keep the full longer version and every later paragraph in order.",
+      "original_body": [
+        "Beatmania (ビートマニア) (styled as beatmania), initially localized as Beatstage or Hiphopmania, is a discontinued series of Arcade DJ simulation music video games  developed and distributed by Japanese game developer Konami and first released in December 1997, With every Beatmania game having its own slogan (eg. beatmania IIDX 18 Resort Anthem: Blaze through the resort party!).",
+        "Beatmania (ビートマニア) (styled as beatmania), initially localized as Beatstage or Hiphopmania, is a discontinued series of Arcade DJ simulation music video games  developed and distributed by Japanese game developer Konami and first released in December 1997, With every Beatmania game having its own slogan (eg. beatmania IIDX 18 Resort Anthem: Blaze through the resort party!). It contributed largely to the boom of music games in 1998, and the series expanded not only with arcade sequels, but also moved to home consoles and other portable devices, achieving a million unit sales. The Bemani line of music games from Konami is named after the series, was first adopted in the arcade release of Beatmania 3rdMix and kept ever since. The series came to an end with the last game being Beatmania The Final, released in 2002.",
+        "In the international market, the series competed with the South Korean-developed EZ2DJ, another 5-key DJ simulation game, which Konami sued for copyright infringement relating to its gameplay similarity to Beatmania.",
+        "In 1998, ASCII Corporation, the former distributor of Microsoft in Japan, signed an exclusive agreement with Konami to produce third-party controllers for the PlayStation releases of Beatmania. The controllers, known as the ASC-0515BM were often bundled alongside the game. With Konami's official controller for the game, the DJ Station Pro positioned as a more premium option.",
+        "Beatmania gave birth to several spinoffs, such as the Beatmania IIDX series (a more advanced version featuring 7 keys and higher difficulty levels, and to this day still receiving new version updates) and the other being Beatmania III, a remake of the 5-key series which featured a more modern hardware platform, a pedal for optional effects and a 3.5\" floppy disk drive to save play records.",
+        "While the series was never ported to home computers, there have been unlicensed hard-drive copies which made it playable on a computer's keyboard, or even with a modded PlayStation controller. Its popularity led to non-official simulators, with one of the most popular being BM98.",
+        "Beatmania and its variants have a following in Japan and all around the world. The password-based Internet Ranking service allowed competition wherever a machine is available. Today in the United States, many of the original Beatmania cabinets are in the hands of arcade collectors and Bemani enthusiasts, and consequently, are a rare sight at many arcades."
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/w/index.php?oldid=1369188043",
+        "https://en.wikipedia.org/w/index.php?oldid=1379985878",
+        "https://en.wikipedia.org/wiki/Beatmania?action=history",
+        "https://creativecommons.org/licenses/by-sa/4.0/"
+      ],
+      "fact_check": "Not a new factual sign-off; repair only duplicate/split reading flow."
+    },
+    {
+      "entry_id": "wikipedia-17216673",
+      "expected_body_sha256": [
+        "d4d7169e1d995e587943d34aeace7bd332bbac844202810d8b10ff6ccc546aa3",
+        "95eebe2d9574ff6028ff5174da362c1bc80c93ed838eb881ac6fc920303715e3",
+        "91eac9f883c8c2c3e534ed9358c9456a4e954b02e0fc66decf4f525cab8c8a87",
+        "4013b660e666d95a08f16df66956873166fc78588161be46cb4cb8f5f7b08b0b"
+      ],
+      "body": [
+        "Superman is an action-adventure video game programmed by John Dunn for the Atari Video Computer System and released in 1979 by Atari, Inc. The player controls Superman, whose quest is to explore an open-ended environment to find three pieces of a bridge that was destroyed by Lex Luthor, capture Luthor and his criminal gang, and return to the Daily Planet building. The game world is populated by antagonists such as a helicopter that re-arranges the bridge pieces and roving kryptonite satellites that cause Superman to revert into Clark Kent.",
+        "At the time of the game's release, Atari was owned by Warner Communications, which was also the parent company of Superman publisher DC Comics. Following the financial success of the film Superman (1978), Atari asked programmer Warren Robinett to adapt his prototype of Adventure (1980) into a Superman game. Robinett was not interested, but gave some of his code to Dunn, who agreed to do the game if he could have four kilobytes of space for the cartridge as opposed to the usual two kilobytes.",
+        "Superman received positive reviews on its release from the publications Video and The Space Gamer, who proclaimed it as one of the best games from Atari while noting its high quality graphics and unique gameplay. Some retrospective reviews lamented that the game only used the character of Superman for his more action-oriented abilities, while others continued to praise the game's gameplay and graphics."
+      ],
+      "story_headings": [
+        "A superhero in an open-ended world",
+        "Adventure code meets a film licence",
+        "Praise at release and a divided retrospective"
+      ],
+      "paragraph_mapping": {
+        "0": 0,
+        "1": 0,
+        "2": 1,
+        "3": 2
+      },
+      "reason": "Join a single introductory sentence split between cards; no text omitted and no factual changes.",
+      "original_body": [
+        "Superman is an action-adventure video game programmed by John Dunn for the Atari Video Computer System",
+        "and released in 1979 by Atari, Inc. The player controls Superman, whose quest is to explore an open-ended environment to find three pieces of a bridge that was destroyed by Lex Luthor, capture Luthor and his criminal gang, and return to the Daily Planet building. The game world is populated by antagonists such as a helicopter that re-arranges the bridge pieces and roving kryptonite satellites that cause Superman to revert into Clark Kent.",
+        "At the time of the game's release, Atari was owned by Warner Communications, which was also the parent company of Superman publisher DC Comics. Following the financial success of the film Superman (1978), Atari asked programmer Warren Robinett to adapt his prototype of Adventure (1980) into a Superman game. Robinett was not interested, but gave some of his code to Dunn, who agreed to do the game if he could have four kilobytes of space for the cartridge as opposed to the usual two kilobytes.",
+        "Superman received positive reviews on its release from the publications Video and The Space Gamer, who proclaimed it as one of the best games from Atari while noting its high quality graphics and unique gameplay. Some retrospective reviews lamented that the game only used the character of Superman for his more action-oriented abilities, while others continued to praise the game's gameplay and graphics."
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/w/index.php?oldid=1378057920",
+        "https://en.wikipedia.org/w/index.php?oldid=1342195243",
+        "https://en.wikipedia.org/wiki/Superman_(1979_video_game)?action=history",
+        "https://creativecommons.org/licenses/by-sa/4.0/"
+      ],
+      "fact_check": "Not a new factual sign-off; repair only duplicate/split reading flow."
+    }
+  ]
+}

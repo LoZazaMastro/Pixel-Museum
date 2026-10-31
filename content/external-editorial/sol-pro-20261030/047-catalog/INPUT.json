@@ -1,0 +1,663 @@
+{
+  "schema": "pixel-museum-editorial-input-v1",
+  "batch_id": "047-catalog",
+  "source_file": "content/catalog.json",
+  "source_sha256": "0b077b3f8628f921ab84574d286f9d9943fb8ae6acb8f136ffadde6e01cae241",
+  "entries": [
+    {
+      "entry_id": "workbook-07-23-shinobi-iii-return-of-the-ninja-master",
+      "kind": "game",
+      "year_context_only": 1993,
+      "date_context_only": {
+        "month": 7,
+        "day": 23,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "release",
+      "factual_note": "Imported dated English Playhub editorial. Adapt its calendar wording, review publisher dates and assign rights-cleared media before presenting as a finished museum stop.",
+      "main": {
+        "feature_id": null,
+        "title": "Shinobi III: Return of the Ninja Master",
+        "subtitle": "Shinobi III Turns Animation into Readable Speed",
+        "summary": "On July 23, 1993 Sega released The Super Shinobi II for Mega Drive in Japan, known in the West as Shinobi III: Return of the Ninja Master.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Shinobi III Turns Animation into Readable Speed",
+            "text": "On July 23, 1993 Sega released The Super Shinobi II for Mega Drive in Japan, known in the West as Shinobi III: Return of the Ninja Master. Joe Musashi runs, jumps, grabs and attacks with a fluidity that makes movement more expressive than in previous entries. The game alternates close combat, shuriken, horseback sequences and motorized surfing while preserving precise collision readability. It is an example of animation serving two functions at once: spectacle and information, creating a sense of speed without sacrificing control."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "The return of Neo Zeed",
+            "text": "Neo Zeed is threatening the world once more. The evil crime syndicate - thought to have been vanquished two years earlier - has returned, headed by a man known only as the Shadow Master. Joe Musashi has felt their presence and descends from the lonely mountaintops of Japan to face his nemesis once more."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "A game rebuilt before release",
+            "text": "Shinobi III was originally set to be released in 1992. Several gaming magazines (including GamePro, Mean Machines, and Computer and Video Games) gave previews and even reviews of the game, showing pictures of levels, enemies, artwork, and special moves which were not seen in the final version at all. Because of general dissatisfaction with the result up to that point, Sega delayed the game for a 1993 release date while the development team worked on improving gameplay and visuals. When Shinobi III was finally released, many game features seen earlier were missing, with new ones taking their place."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "Movement and visual depth",
+            "text": "Sega producer Yosuke Okunari said the Nintendo 3DS Shinobi paid homage to Shinobi III through its wider range of character actions. When Sega and M2 chose Shinobi III for Sega 3D Classics in 2013, M2 president Naoki Horii highlighted the programming techniques behind its sense of depth. Converting those effects into stereoscopic 3D required M2 to expand its Mega Drive emulation technology."
+          }
+        ],
+        "sources": [
+          {
+            "title": "gamefaqs.gamespot.com",
+            "url": "https://gamefaqs.gamespot.com/genesis/586455-shinobi-iii-return-of-the-ninja-master/data",
+            "publisher": "gamefaqs.gamespot.com"
+          },
+          {
+            "title": "vgmdb.net",
+            "url": "https://vgmdb.net/product/7901",
+            "publisher": "vgmdb.net"
+          },
+          {
+            "title": "www.mobygames.com",
+            "url": "https://www.mobygames.com/game/7559/shinobi-iii-return-of-the-ninja-master/",
+            "publisher": "www.mobygames.com"
+          },
+          {
+            "title": "Shinobi III: Return of the Ninja Master — original release infobox, Wikipedia revision 1379038194",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1379038194",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Official music publication: Idaten",
+            "url": "https://www.youtube.com/watch?v=qgdsW7bbG24",
+            "publisher": "Release - Topic",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Hirofumi Murasaki, Morihiko Akiyama, Masayuki Nagao",
+            "url": "https://data-discs.com/products/shinobi3",
+            "publisher": "Hirofumi Murasaki, Morihiko Akiyama, Masayuki Nagao"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "workbook-07-28-lua",
+      "kind": "game",
+      "year_context_only": 1993,
+      "date_context_only": {
+        "month": 7,
+        "day": 28,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "release",
+      "factual_note": "Imported dated English Playhub editorial. Adapt its calendar wording, review publisher dates and assign rights-cleared media before presenting as a finished museum stop.",
+      "main": {
+        "feature_id": null,
+        "title": "Lua",
+        "subtitle": "Lua Is Born Small Enough to Live Inside Other Programs",
+        "summary": "On July 28, 1993 Lua 1.0 was already running at PUC-Rio.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Lua: a language embedded in applications",
+            "text": "Lua is a lightweight, high-level, multi-paradigm programming language designed mainly for embedded use in applications. Lua is cross-platform software, since the interpreter of compiled bytecode is written in ANSI C, and Lua has a relatively simple C application programming interface (API) to embed it into applications.\n\nLua originated in 1993 as a language for extending software applications to meet the increasing demand for customization at the time. It provided the basic facilities of most procedural programming languages, but more complicated or domain-specific features were not included; rather, it included mechanisms for extending the language, allowing programmers to implement such features. As Lua was intended to be a general embeddable extension language, the designers of Lua focused on improving its speed, portability, extensibility and ease-of-use in development."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Lua begins with a Brazilian industrial problem",
+            "text": "Lua begins in 1993 at PUC-Rio's Tecgraf, through the work of Roberto Ierusalimschy, Luiz Henrique de Figueiredo and Waldemar Celes. Industrial applications need to let engineers and geologists describe and validate data and configure reports without rewriting the main program each time. Two earlier tools, DEL and Sol, had addressed parts of this task. Combining their capabilities calls for a small language able to express conditions, repetition and procedures. That practical requirement establishes an enduring quality: Lua must adapt to the application in which it runs."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Tables, keys and values",
+            "text": "Lua's compactness owes much to the work it gives to tables. A table associates keys with values: it can organize a sequence, store named properties or connect data with functions. Rather than providing a separate mechanism for every case, the language lets developers build different structures from a few basic elements. This flexibility is useful for describing game objects, parameters and behavior. Developers can organize those structures without adding a new language-level data type for every requirement of the project."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "Embeddability becomes the decisive quality for games",
+            "text": "Being embeddable means that Lua can operate inside a larger program. The engine retains its own responsibilities and exposes functions to scripts, allowing designers to change behavior and sequences without rebuilding the technical core each time. This separation supports quick experiments, but requires a clear boundary between what a script can request and what the engine can execute. In games, the language therefore becomes a production tool. Its importance often remains invisible to the audience: it lies in how easily a team can test, revise and organize the content."
+          }
+        ],
+        "sources": [
+          {
+            "title": "www.lua.org",
+            "url": "https://www.lua.org/news.html",
+            "publisher": "www.lua.org"
+          },
+          {
+            "title": "www.lua.org",
+            "url": "https://www.lua.org/versions.html",
+            "publisher": "www.lua.org"
+          },
+          {
+            "title": "www.lua.org",
+            "url": "https://www.lua.org/history.html",
+            "publisher": "www.lua.org"
+          },
+          {
+            "title": "www.lua.org",
+            "url": "https://www.lua.org/pil/2.5.html",
+            "publisher": "www.lua.org"
+          },
+          {
+            "title": "www.lua.org",
+            "url": "https://www.lua.org/about.html",
+            "publisher": "www.lua.org"
+          },
+          {
+            "title": "Lua",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1381355167",
+            "publisher": "English Wikipedia contributors",
+            "license": "Creative Commons Attribution-ShareAlike4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "attribution": "Complete source paragraphs reproduced verbatim; card heading supplied editorially."
+          },
+          {
+            "title": "The Evolution of an Extension Language: A History of Lua",
+            "url": "https://www.lua.org/history.html",
+            "publisher": "Roberto Ierusalimschy, Luiz Henrique de Figueiredo and Waldemar Celes / Lua.org",
+            "locator": "SBLP2001 invited paper; original linked PostScript,page7: table fallbacks, delegation,cross-language access and meta-mechanisms.",
+            "publication_year": 2001
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "console-gap-general-chaos",
+      "kind": "game",
+      "year_context_only": 1993,
+      "date_context_only": {
+        "month": 8,
+        "day": 0,
+        "precision": "month",
+        "region": "NA"
+      },
+      "event_semantics": "",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "General Chaos",
+        "subtitle": "A battlefield small enough to command",
+        "summary": "General Chaos is Game Refuge's comic real-time tactics game, published by Electronic Arts for Genesis in 1993.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "A battlefield small enough to command",
+            "text": "General Chaos is Game Refuge's comic real-time tactics game, published by Electronic Arts for Genesis in 1993. Rival generals send small teams of specialists into compact battlefields, trying to overcome the opposing force and eventually capture its capital. The soldiers act within the player's orders while the action continues around them. The scale makes individual positions easy to read: a few characters, the weapon each carries and the gap separating them from the enemy form the essential pieces of a battle."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Specialists in a cartoon war",
+            "text": "Before fighting, the player chooses a team from several compositions. Most contain five soldiers with different weapons, while a two-person commando team uses a control scheme that grants more direct handling. The selection changes which distances and positions suit the force. Moving one specialist forward can create an opportunity while exposing another part of the team. The animated presentation keeps the war comic, but successful orders still depend on noticing who can attack effectively and who needs to be moved out of trouble."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "A campaign decided by brief clashes",
+            "text": "Brian Colin and Jeff Nauman designed the game, with Colin creating the art and Nauman handling programming. Michael Bartlow composed the music. Battles can be played individually or as a campaign whose strategic map changes with the results. That larger contest gives each quick clash a place in the struggle between Generals Chaos and Havoc. General Chaos turns command into a console-sized activity, combining the immediacy of moving a cursor around a small field with the longer consequences of winning ground across successive encounters."
+          }
+        ],
+        "sources": [
+          {
+            "title": "General Chaos — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/General_Chaos"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "console-gap-rocket-knight-adventures",
+      "kind": "game",
+      "year_context_only": 1993,
+      "date_context_only": {
+        "month": 8,
+        "day": 6,
+        "precision": "day",
+        "region": "JP"
+      },
+      "event_semantics": "",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "Rocket Knight Adventures",
+        "subtitle": "A knight with a rocket pack",
+        "summary": "Rocket Knight Adventures is Konami's platform action game, first released for Mega Drive in Japan on 6 August 1993.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "A knight with a rocket pack",
+            "text": "Rocket Knight Adventures is Konami's platform action game, first released for Mega Drive in Japan on 6 August 1993. Sparkster, an armoured opossum with a sword and rocket pack, fights the invading Devotindos Empire. His journey moves through castles, machinery and airborne battles, repeatedly changing the setting and the task placed in front of him. Nobuya Nakazato directed the game after working on Contra. Its seven stages use Sparkster's unusual equipment to connect ordinary platforming with short bursts of flight and large, staged confrontations."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Charging the next move",
+            "text": "The sword supplies an immediate attack, while charging the rocket pack prepares a powerful dash. Choosing a direction before releasing that charge sends Sparkster through the air, making the same action useful for crossing a gap and striking an enemy. The pause required to charge gives movement a distinct rhythm: find a safe position, judge the route, then commit. Stage layouts place walls, platforms and threats around that ability, so learning where a burst will end matters as much as knowing when to begin it."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "An adventure that keeps changing",
+            "text": "The adventure repeatedly interrupts its platforming with another kind of encounter, including scrolling flight and battles against large machines. Those changes introduce fresh situations while keeping the sword and rocket pack at the centre of the action. Animated reactions and mechanical enemies give the conflict a comic energy, with Sparkster's small figure facing devices that fill much of the screen. The soundtrack includes work by Michiru Yamane and other Konami composers. Together, the varied staging and consistent movement system give the journey a strong sense of momentum from one set piece to the next."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Rocket Knight Adventures — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Rocket_Knight_Adventures"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-306470",
+      "kind": "game",
+      "year_context_only": 1993,
+      "date_context_only": {
+        "month": 8,
+        "day": 6,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Reference article introduction reproduced under its stated licence. Year comes from the article's release-year category; regional/port dates may differ.",
+      "main": {
+        "feature_id": null,
+        "title": "Secret of Mana",
+        "subtitle": "",
+        "summary": "Secret of Mana, originally released in Japan as Seiken Densetsu 2, is a 1993 action role-playing game developed and published by Square for the Super Nintendo Entertainment System.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Three heroes and the Mana sword",
+            "text": "Secret of Mana, originally released in Japan as Seiken Densetsu 2, is a 1993 action role-playing game developed and published by Square for the Super Nintendo Entertainment System. It is the sequel to the 1991 game Seiken Densetsu, released in North America as Final Fantasy Adventure and in Europe as Mystic Quest. Secret of Mana was the first Seiken Densetsu title to be marketed as part of the Mana series rather than the Final Fantasy series. Set in a high fantasy universe, the game follows three heroes as they attempt to prevent an empire from conquering the world with the power of an ancient flying fortress."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Real-time battles, shared adventures",
+            "text": "Rather than using a turn-based battle system like contemporaneous role-playing games, Secret of Mana features real-time battles with a power bar mechanic. The game has a unique Ring Command menu system, which pauses the action and allows the player to make decisions in the middle of battle. An innovative cooperative multiplayer system allows a second or third player to drop in and out of the game at any time. Secret of Mana was directed and designed by Koichi Ishii, programmed primarily by Nasir Gebelli, and produced by veteran Square designer Hiromichi Tanaka."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Reception and later versions",
+            "text": "The game received acclaim for its brightly colored graphics, expansive plot, Ring Command menu system, and innovative real-time battle system. Critics also praised Hiroki Kikuta's soundtrack and the customizable artificial intelligence settings for computer-controlled allies. Retrospectively, it has been considered one of the greatest games of all time by critics. It was re-released on Virtual Console on the Wii in 2008 and Wii U in 2013, as an enhanced version on multiple mobile platforms between 2009 and 2019, on Switch as part of Collection of Mana in 2017 and 2019, and was remade in 3D in 2018 for PlayStation 4, Vita and Windows. The remake saw mixed reviews, with many faulting its lack of gameplay improvements and reworked graphics."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Secret of Mana — article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1369321087",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "2010 in video games — annual context",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1379535187",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/Secret_of_Mana?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          },
+          {
+            "title": "Secret of Mana — original release infobox, Wikipedia revision 1369321087",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1369321087",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Soundtrack publication: Best VGM 10 - Secret of Mana - What the Forest Taught Me",
+            "url": "https://www.youtube.com/watch?v=yfcBbx9j5yM",
+            "publisher": "SD Archives 0",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Hiroki Kikuta",
+            "url": "https://en.wikipedia.org/wiki/Secret_of_Mana",
+            "publisher": "Hiroki Kikuta"
+          },
+          {
+            "title": "Soundtrack publication: Best VGM 85 - Secret of Mana - A Curious Tale (Gold City)",
+            "url": "https://www.youtube.com/watch?v=azffGg-0ujA",
+            "publisher": "SD Archives 0",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Hiroki Kikuta",
+            "url": "https://en.wikipedia.org/wiki/Secret_of_Mana",
+            "publisher": "Hiroki Kikuta"
+          },
+          {
+            "title": "Soundtrack publication: Best VGM 179 - Secret of Mana - The Color of the Summer Sky",
+            "url": "https://www.youtube.com/watch?v=WohqpIg2ULc",
+            "publisher": "SD Archives 0",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Hiroki Kikuta",
+            "url": "https://en.wikipedia.org/wiki/Secret_of_Mana",
+            "publisher": "Hiroki Kikuta"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "plok-1993",
+      "kind": "game",
+      "year_context_only": 1993,
+      "date_context_only": {
+        "month": 9,
+        "precision": "month",
+        "region": "North America"
+      },
+      "event_semantics": "",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "Plok!",
+        "subtitle": "Software Creations · Super Nintendo Entertainment System",
+        "summary": "Plok! is Software Creations' Super Nintendo platformer about the red-hooded ruler of Akrillic defending his island from invading fleas. Plok can launch his arms and legs at enemies, waiting for each limb to return before using it again. The premise gives a colourful mascot an immediately unusual action. His own body supplies the weapons, so a missed shot changes what is available for the next encounter. The player crosses a bright island whose enemies and obstacles repeatedly find another use for that detachable anatomy.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "A hero whose limbs are ammunition",
+            "text": "Plok! is Software Creations' Super Nintendo platformer about the red-hooded ruler of Akrillic defending his island from invading fleas. Plok can launch his arms and legs at enemies, waiting for each limb to return before using it again. The premise gives a colourful mascot an immediately unusual action. His own body supplies the weapons, so a missed shot changes what is available for the next encounter. The player crosses a bright island whose enemies and obstacles repeatedly find another use for that detachable anatomy."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "A switch can keep the limb",
+            "text": "Some targets require a limb to remain on a hanger after striking them, making activation a temporary sacrifice rather than a free action. Losing access to arms or legs changes how Plok can continue, with a limbless hero reduced to bouncing. A route has to be considered in relation to what will remain available after the switch is triggered. Presents and other power-ups add further variations, allowing the game to move between ordinary platforming and sections built around another temporary set of tools."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "A long route from the arcade",
+            "text": "Ste and John Pickford began the idea as Fleapit, an unrealised arcade project developed while they worked at Zippo Games. It later became a Software Creations production for the Super Nintendo, released in 1993. Tim and Geoff Follin's score gives the stages a particularly energetic musical identity. The finished game belongs to the crowded age of mascot platformers, but its central gesture remains specific: Plok attacks by sending away pieces of himself, and the interval before their return keeps changing the next available action."
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Plok",
+            "title": "Plok! — gameplay, development and release",
+            "publisher": "Wikipedia contributors"
+          },
+          {
+            "title": "Plok! - LaunchBox media",
+            "url": "https://gamesdb.launchbox-app.com/games/details/5514-plok",
+            "publisher": "LaunchBox Games Database",
+            "facts": "Complete cover and original console gameplay media."
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-1261600",
+      "kind": "game",
+      "year_context_only": 1993,
+      "date_context_only": {
+        "month": 9,
+        "day": 10,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Reference article introduction reproduced under its stated licence. Year comes from the article's release-year category; regional/port dates may differ.",
+      "main": {
+        "feature_id": null,
+        "title": "Gunstar Heroes",
+        "subtitle": "",
+        "summary": "Gunstar Heroes is a 1993 run and gun video game developed by Treasure and published by Sega for the Sega Genesis.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "",
+            "text": "Gunstar Heroes is a 1993 run and gun video game developed by Treasure and published by Sega for the Sega Genesis. It was Treasure's first developed video game. The premise is centered around a pair of characters, the Gunstars, in their efforts to stop an evil empire from recovering four powerful gems. The characters can fire guns and perform a series of acrobatic maneuvers to fight enemies across each stage. There are four weapons which can be combined with one another to create different shot types."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "",
+            "text": "Development on Gunstar Heroes began among a team of staff working at Konami in 1991. Following an unwillingness of Konami to embrace their original game ideas, the team quit in 1992 and formed Treasure to see their project through. The team wanted to develop their game for the Genesis because of the system's powerful Motorola 68000 microprocessor. Sega initially rejected their proposal, but later granted approval after they worked for Sega for several months on McDonald's Treasure Land Adventure (1993). Treasure worked on both games in parallel, and released Gunstar Heroes as their first game in 1993."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "",
+            "text": "Gunstar Heroes was a critical success, being praised for its frantic action and advanced graphics. It helped establish Treasure's place in the industry, and introduced numerous design conventions which would become characteristic of their later work such as large bosses and a unique sense of humor. It was re-released several times, including dedicated ports to the Game Gear and Nintendo 3DS, and received a sequel on the Game Boy Advance. In retrospect, it is considered one of the best action games of the 16-bit era, and one of the best video games of all time by several publications."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Gunstar Heroes — article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1378589461",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "2006 in video games — annual context",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1379620049",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/Gunstar_Heroes?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          },
+          {
+            "title": "Gunstar Heroes — original release infobox, Wikipedia revision 1378589461",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1378589461",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Soundtrack publication: Best VGM 1891 - Gunstar Heroes - Stage 1",
+            "url": "https://www.youtube.com/watch?v=PUyGCGMLiYE",
+            "publisher": "SD Archives Part 3",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Norio Hanzawa",
+            "url": "https://en.wikipedia.org/wiki/Gunstar_Heroes",
+            "publisher": "Norio Hanzawa"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-707510",
+      "kind": "game",
+      "year_context_only": 1993,
+      "date_context_only": {
+        "month": 9,
+        "day": 10,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Regional and platform release dates may differ. Where shown, the exact day is taken only from the article release infobox.",
+      "main": {
+        "feature_id": null,
+        "title": "Super Street Fighter II",
+        "subtitle": "",
+        "summary": "Super Street Fighter II: The New Challengers is a 1993 fighting game developed and published by Capcom for arcades.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Four new challengers on CPS II",
+            "text": "Super Street Fighter II: The New Challengers is a 1993 fighting game developed and published by Capcom for arcades. It is the fourth game in the Street Fighter II sub-series of Street Fighter games, following Street Fighter II Turbo (1992). It refines and balances the existing character roster from the previous versions, and introduces four new characters, including Fei Long, Cammy, T. Hawk, and Dee Jay. It is the first game on Capcom's CP System II hardware, with more sophisticated graphics and audio over the original CP System hardware used in previous versions of Street Fighter II."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Home versions and the Turbo sequel",
+            "text": "Super Street Fighter II was ported to the Super Nintendo and Sega Genesis home consoles in 1994, followed by a number of computer platforms later. Super Street Fighter II was followed in 1994 by Super Street Fighter II Turbo, a fifth version of Street Fighter II, which further balances the characters and adds features."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Super Street Fighter II - article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1379362984",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Article contributors and history",
+            "url": "https://en.wikipedia.org/wiki/Super_Street_Fighter_II?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          },
+          {
+            "title": "Super Street Fighter II — original-edition advertisement flyer - front (Arcade)",
+            "url": "https://gamesdb.launchbox-app.com/games/details/7879",
+            "publisher": "Capcom"
+          },
+          {
+            "title": "Super Street Fighter II — original release infobox, Wikipedia revision 1379362984",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1379362984",
+            "publisher": "English Wikipedia contributors"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "console-gap-fatal-fury-special",
+      "kind": "game",
+      "year_context_only": 1993,
+      "date_context_only": {
+        "month": 9,
+        "day": 16,
+        "precision": "day",
+        "region": "JP"
+      },
+      "event_semantics": "",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "Fatal Fury Special",
+        "subtitle": "A larger gathering in South Town",
+        "summary": "Fatal Fury Special is SNK's expanded revision of Fatal Fury 2, released in Japanese arcades on 16 September 1993.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "A larger gathering in South Town",
+            "text": "Fatal Fury Special is SNK's expanded revision of Fatal Fury 2, released in Japanese arcades on 16 September 1993. Returning fighters and newly playable bosses bring the roster to fifteen, giving players more ways into the series' contest. The fighting takes place across two lines, allowing movement into and out of an opponent's immediate plane. Familiar backgrounds and characters gain another life through the faster pace and revised systems, turning a refinement of an existing game into a substantial gathering of the cast."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Combos and movement between lines",
+            "text": "A new combo system lets successful attacks connect into further blows, increasing the value of recognizing an opening. Changes to line attacks provide more ways to strike an opponent positioned on the other plane. The movement of a fight therefore concerns both ordinary distance and the relationship between the two lines. Choosing a returning character or one of the former bosses gives those systems another set of strengths to work with. The revision adjusts the rhythm of individual exchanges while preserving the series' distinctive layered battlefield."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "A dream match beyond its own series",
+            "text": "Tung Fu Rue, Duck King and Geese Howard return from the first Fatal Fury, while Billy Kane, Axel Hawk, Laurence Blood and Wolfgang Krauser become playable. A hidden encounter brings Art of Fighting's Ryo Sakazaki into a Dream Match after an exceptional single-player run. That crossover helped inspire The King of Fighters. Fatal Fury Special reached AES in December 1993 before further ports followed. Its lasting importance lies partly in that expanded encounter: SNK's separate fighting worlds could share a contest without losing their recognizable characters."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Fatal Fury Special — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Fatal_Fury_Special"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "console-gap-sonic-cd",
+      "kind": "game",
+      "year_context_only": 1993,
+      "date_context_only": {
+        "month": 9,
+        "day": 23,
+        "precision": "day",
+        "region": "JP"
+      },
+      "event_semantics": "",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "Sonic CD",
+        "subtitle": "A different future at full speed",
+        "summary": "Sonic's Sega CD adventure turns speed into a way of travelling through time, with several versions of each stage to explore.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Little Planet",
+            "text": "Sonic CD is Sega’s side-scrolling platform adventure for the Sega CD, first released in Japan on 23 September 1993. Sonic travels to Little Planet, where Doctor Robotnik is seeking the Time Stones. Rings, rolling attacks and loops provide familiar ways to move and survive, while Amy Rose and Metal Sonic make their series debuts. Naoto Ohshima’s team built a separate adventure around the CD hardware, giving the journey animated opening and closing sequences and a world whose appearance changes with the period Sonic visits."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Running into another time",
+            "text": "A sign marked Past or Future begins the possibility of time travel. Sonic must then maintain enough speed to make the transition, so finding a suitable stretch of ground becomes part of exploring the stage. The same area can contain different platforms, machines and vegetation in another period. Travelling into the past also allows Sonic to destroy the machinery producing Robotnik’s enemies. That action changes the future of the zone, making a good outcome something the player can bring about inside the level."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Two sounds for one adventure",
+            "text": "The changes in time are audible as well as visible. Naofumi Hataya and Masafumi Ogata composed the original Japanese and European soundtrack, while the North American edition received music by Spencer Nilsen, David Young and Sterling Crew. Separate arrangements accompany different periods of a zone. Special stages offer another route to a good future: Sonic pursues UFOs across a timed, perspective-view course to earn Time Stones. Collecting all seven changes the outcome, giving exploration and these separate challenges a shared purpose in the adventure."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Sonic CD — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Sonic_CD"
+          },
+          {
+            "title": "Sonic CD — Steam publisher store",
+            "url": "https://store.steampowered.com/app/200940"
+          },
+          {
+            "title": "LaunchBox original-platform media",
+            "url": "https://gamesdb.launchbox-app.com/games/details/125-sonic-cd"
+          }
+        ]
+      },
+      "features": []
+    }
+  ]
+}

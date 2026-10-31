@@ -1,0 +1,74 @@
+{
+  "status": "PASS",
+  "locale": "fr",
+  "entries": [
+    {
+      "entry_id": "wikipedia-45583910",
+      "source_fields_sha256": "f7455185c9a30497f3f3513d72bda69a3523520658a7bb14330079c1a63b3bf2",
+      "translation_sha256": "2c7f62c405c85d4d1ef49158670fa7366afa624eec8a7da159f6616317ba5ba1",
+      "independent_peer": "build/research/catalog-2015-chronological/fifth-six-private/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "4449c3e0696723866c5bee1efe8782d3f41c65d8034a04a1c51c2267c8b2d387"
+    },
+    {
+      "entry_id": "wikipedia-46408645",
+      "source_fields_sha256": "6e33e6b629ea127039f5210fa0a5b2b6e548bf620209f216fc3b72a5ccbf4d72",
+      "translation_sha256": "8740fbb44a1b0c66b5b465cee7e44e6a95f97209df7a9469aa54654433ad3e40",
+      "independent_peer": "build/research/catalog-2015-chronological/fifth-six-private/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "4449c3e0696723866c5bee1efe8782d3f41c65d8034a04a1c51c2267c8b2d387"
+    },
+    {
+      "entry_id": "wikipedia-44461833",
+      "source_fields_sha256": "c6a0b9346c1c13aab8aba9ed767f81e84a4fade8da20cb49d6d72e95d8ef4884",
+      "translation_sha256": "09478811c862296298a49c53e013370301489b6f73322223830f344a0f5bf636",
+      "independent_peer": "build/research/catalog-2015-chronological/fifth-six-private/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "4449c3e0696723866c5bee1efe8782d3f41c65d8034a04a1c51c2267c8b2d387"
+    },
+    {
+      "entry_id": "wikipedia-46997453",
+      "source_fields_sha256": "cc4f1dc8ac02deb58f16845fd4e63194d1f9a62cd3b1ebaa7cc060699bdf7789",
+      "translation_sha256": "4ba2473fc86e3a27577b6dd7d78f977d9a637481cce8a2e13a10867fcbecae1b",
+      "independent_peer": "build/research/catalog-2015-chronological/fifth-six-private/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "4449c3e0696723866c5bee1efe8782d3f41c65d8034a04a1c51c2267c8b2d387"
+    },
+    {
+      "entry_id": "wikipedia-54473486",
+      "source_fields_sha256": "b7bfc9268ada4412f9bda4be8f58dcd558f1fca7670c62b3555cfea262876c87",
+      "translation_sha256": "70b884e10a18faebb1c107d90a0500fec392bd00a2195be2f6909a369b7e4abc",
+      "independent_peer": "build/research/catalog-2015-chronological/fifth-six-private/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "4449c3e0696723866c5bee1efe8782d3f41c65d8034a04a1c51c2267c8b2d387"
+    },
+    {
+      "entry_id": "wikipedia-39635834",
+      "source_fields_sha256": "269e5f4ea5d5a7bb75b07d316e70cb4ad333d0167d26db4b1f7fb244506500ad",
+      "translation_sha256": "f4730177606c55b8030cff582a54ffef6dd8f72b3d5389a84e817c516d39a783",
+      "independent_peer": "build/research/catalog-2015-chronological/fifth-six-private/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "4449c3e0696723866c5bee1efe8782d3f41c65d8034a04a1c51c2267c8b2d387"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "split_independent_english_paragraphs": 15,
+    "split_independent_localized_paragraphs": 60,
+    "media_contacts": "Both independent reviewers visually inspected their assigned authors media contacts.",
+    "actual_receipts": [
+      {
+        "path": "build/research/catalog-2015-chronological/fifth-six-private/first-three-independent-peer-approval.json",
+        "sha256": "5cb8318ffefc9a3ed37efb7b658afeb4672b369a2e353c90ea9741338a79e99b"
+      },
+      {
+        "path": "build/research/catalog-2015-chronological/fifth-six-private/peer-three-independent-package-audit-approval.json",
+        "sha256": "4bae029e63a10efb2c90b65a0f8f4bfff56d76b49ce3220bf1212b76c41f5c14"
+      },
+      {
+        "path": "build/research/catalog-2015-chronological/fifth-six-private/current-aware-plan-independent-approval.json",
+        "sha256": "56fabf25492e8469df347f5dca7f59a672114bec6121bdcfdb40ddab8e2c9026"
+      },
+      {
+        "path": "build/research/catalog-2015-chronological/fifth-six-private/ffbe-original-mobile-trailer-independent-followup.json",
+        "sha256": "a87d6d2513cc108d290d099f1877b4f413f37535b43cc9f96272772859919464"
+      }
+    ],
+    "final_ffbe_delta": "Parent /root reports the peer confirmed the original SQUARE ENIX16May2016 global pre-registration trailer j_9M-ctbxbA with publicAAC/AVC metadata and correct native poster, and parent independently viewed the new six-owner contact. This is a root-forwarded review confirmation, not an additional author independent review.",
+    "root_authorization": "Parent /root explicitly approved guarded batch287 admission after final FFBE delta. Plan5a6cad42bd5f8abdf6dbced2245584d8b7990568af21db35cc0ab948ba3d35b5; retain backups/persistence/font binding, move Honor28Oct after Halo27Oct; no fullassembler.",
+    "post_peer_provenance_only_completion": "Added identical credit/license aliases and source_sha256 (already recorded recovery hash) required by the existing staging API. No pixels, English/localized strings, media URL or binding changed."
+  }
+}

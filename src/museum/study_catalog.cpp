@@ -1,0 +1,68 @@
+// Pixel Museum - Playable studies of design, opened from the exhibit card.
+// SPDX-License-Identifier: GPL-3.0-or-later
+#include "museum/study_catalog.hpp"
+
+namespace museum {
+const std::vector<StudyInfo>& study_catalog(){
+    static const std::vector<StudyInfo> studies={
+        {"paddle","The angle of return","pong",
+         "Pong makes anticipation visible through a ball, a paddle and the space between them. Move this original paddle study to discover how the point of contact changes the next return.",
+         "","Game design","Arcade"},
+        {"bricks","A wall becomes a route","wikipedia-453246",
+         "Breakout turns each removed brick into a change in the ball's possible route. Steer this original paddle exercise and watch how a small opening can change the rhythm of an entire rally.",
+         "","Game design","Arcade"},
+        {"formation","Reading a moving pattern","space-invaders",
+         "Space Invaders organises pressure through an approaching formation and the timing of a shot. Move and fire in this original pattern study. A passing mothership offers a bonus above the formation: aiming for it means briefly leaving the nearer threat unattended.",
+         "","Game design","Arcade"},
+        {"maze","Decisions at the junction","pac-man",
+         "Pac-Man gives a junction meaning by placing routes, pursuit and a goal in the same small space. Queue turns while movement continues in this original looping board. Clear the dots, read three different pursuers and decide when a power light or temporary fruit is worth a detour.",
+         "","Game design","Arcade"},
+        {"gravity","Read the space before it fills","tetris",
+         "Tetris makes the shape of an empty space as important as the shape falling towards it. Move and rotate pieces in this original packing study, using the landing guide to compare a quick fit with a decision that leaves room for the next piece.",
+         "","Game design","Arcade"},
+        {"orbit","Steering a continuing motion","spacewar",
+         "Spacewar! makes inertia and a central gravitational pull part of steering a spacecraft. Turn, thrust and brake in this original navigation study to compare the direction you face with the route your movement actually follows.",
+         "","Game design","Arcade"},
+        {"wireframe","Drawing a place with edges","wikipedia-286774",
+         "Elite uses wireframe edges to make a three-dimensional world readable without painted surfaces. Follow 60 approaching openings in this original depth study: their growing edges pass around your flight line, while a quiet pointer identifies the next opening. Small corrections made early are easier than a late turn. Hold the controller still briefly, then tilt to steer; {left_stick} remains available. The route waits while the controller finds its neutral pose.",
+         "","Art direction","Arcade"},
+        {"jump","The shape of a jump","super-mario-bros",
+         "A platform game's jump is a designed curve, not just an upward movement. Follow coin rows across ground, pits, pipes and raised blocks. Hit question blocks from below: the first releases a moving mushroom that doubles your height and lets you break ordinary bricks; the others release coins. Land on walking obstacles to clear them. Hold or release {cross} to change the jump arc, and hold {square} to run. Hold Down to crouch, or combine Down and {cross} for a crouched jump. Hold Down on the second pipe to enter a separate coin room; its horizontal exit leads back up to the surface. Damage shrinks a grown character; another hit while small, or a fall, returns you to the beginning. Catch the final flag high for a larger score.",
+         "","Game design","Movement"},
+        {"dash","One clear burst","celeste",
+         "Celeste turns a jump and one short air dash into a sequence of commitments. Cross five original platforming rooms: clear a gap, touch a floating diamond to restore the dash in midair, then climb between safe ledges. Landing restores the dash too. A dotted arrow shows the direction you are aiming; the small diamond shows when another dash is available. Each lit doorway saves the next room, so a fall only repeats the current challenge.",
+         "","Game design","Movement"},
+        {"rhythm","A moment inside the beat","dance-dance-revolution",
+         "Dance Dance Revolution connects a repeated beat to a precise window for action. Tap through this original rhythm study to hear and see the difference between matching a pulse and reacting after it.",
+         "","Music","Movement"},
+        {"sequencer","Build the pattern you hear","lumines",
+         "Lumines makes a musical scanline decide when a matching visual pattern clears. Arrange two-by-two colour groups in this original grid study and listen to how a timed sweep joins a spatial choice to a musical event.",
+         "","Music","Movement"},
+        {"raycast","Distance becomes a wall","workbook-05-05-wolfenstein-3d",
+         "Wolfenstein 3D constructs a first-person view by measuring distances across a map. Find three survey marks in an original corridor map and compare the plan with the wall heights that make it appear deep. The same space is read from above and at eye level.",
+         "","Game design","Space"},
+        {"scale","The room changes when you grow","katamari-damacy",
+         "Katamari Damacy makes a growing body change the meaning of the same surroundings. Roll and gather smaller objects in this original scale study to see an object that first resists collection become something you can gather.",
+         "","Game design","Space"},
+        {"portals","A fall becomes a way forward","workbook-10-10-portal",
+         "Portal makes momentum part of a spatial puzzle. Connect marked surfaces in four original chambers: cross a wall, turn a fall into distance, carry a cube onto an upper pressure plate, then build speed in a floor-to-ceiling loop and redirect it toward a high exit. Speed survives each crossing while its direction follows the portal. A dotted arc previews the current route. Choose surfaces with {right_stick} or {touchpad}; carry and release the cube nearby. Pressure plates stay active only while supporting the cube.",
+         "","Game design","Space"},
+        {"pocket-budget","What does a pocket need?","game-boy",
+         "Gunpei Yokoi's approach to portable play makes constraints part of the design. Balance shades, motion, light and sound in an original prototype, then test three different briefs. The costs are illustrative design units, not measurements of historical hardware. With {touchpad}, a design changes beneath your finger.",
+         "","Game design","Workshops"},
+        {"adaptive-pulse","Let movement change the phrase","feature-kondo-functional-music",
+         "Koji Kondo treats music as part of how a game communicates action. Guide an original figure along a route and listen as rest, walking and running change the density of an original D-minor phrase. Its clock keeps moving instead of restarting at each change. Reach the flag.",
+         "","Music","Workshops"},
+        {"jump-lab","Keep the landing. Change the curve.","daily-11-16",
+         "Shigeru Miyamoto's platform games invite close attention to how a character moves. Tune gravity, lift and air control in this original jump laboratory, reach three flags and compare the pale trace of a previous landing with your next attempt. A short tap and a held jump produce different arcs.",
+         "","Game design","Workshops"},
+        {"city-system","A city is a system","simcity",
+         "SimCity invites a player to think in connected systems. In this original workshop, draw roads between homes, workplaces and a clinic, keep green space nearby, and follow the travelling dots. Change a route to see how journey length and congestion affect three construction briefs. These budgets and rules are illustrative, rather than a simulation of a real city.",
+         "","Game design","Workshops"},
+        {"pixels","A picture, one pixel at a time","famicom",
+         "Make an original pixel picture on a white 16-by-16 canvas inspired by NES artwork. Choose from 64 colours, with four visible at a time. Draw one pixel, erase it to white, or clear the canvas and start again.",
+         "","Art direction","Image"}
+    };
+    return studies;
+}
+}

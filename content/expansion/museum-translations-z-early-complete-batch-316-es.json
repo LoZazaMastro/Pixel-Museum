@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "locale": "es",
+  "source_language": "en",
+  "publication_status": "validated",
+  "independent_review": "content/editorial/early-complete-batch-316-es-translation-review.json",
+  "translation_method": "Complete natural translations. Actual independent review scopes are pinned by their original receipts; no additional full reread claimed. No additional reread is claimed.",
+  "entries": [
+    {
+      "entry_id": "workbook-06-02-valorant",
+      "source": {
+        "title": "VALORANT",
+        "subtitle": "VALORANT Puts Spectacular Abilities Inside the Discipline of a Tactical Shooter",
+        "summary": "A hidden opponent creates a technical problem.",
+        "body": [
+          "VALORANT's tactical battles depend on information that opponents should not possess. Anti-cheat engineer Paul Chamberlain describes a server system that withholds an enemy's position until the client needs it. A wallhack cannot display data that has not arrived. The idea drew on Riot's experience with League of Legends, but translating it into a three-dimensional shooter required new work. The server had to decide what each player could know without delaying a legitimate opponent's appearance or consuming too much of the time available for simulation.",
+          "Early tests showed enemies appearing late or remaining invisible because a simple line-of-sight check missed visible parts of their bodies. Chamberlain describes trying additional rays, enlarging bounds and eventually using a precomputed visibility approach. The system also had to restore the correct animation state when a hidden opponent became relevant. Concealing positions was only one part of the task. A player rounding a corner still needed to see an enemy performing the right action at the right moment, with the security machinery kept out of the way.",
+          "Another Riot engineering account explains why two players can see a corner encounter differently even without cheating. Inputs and position updates take time to cross the network, while local prediction keeps movement responsive. Buffering smooths uneven arrivals but adds delay. Matt deWet and David Straily describe reducing those costs as a design problem alongside gunplay itself. Their aim was to make planning and execution decide encounters, rather than conceal every limitation of the internet behind a promise that all players always see precisely the same moment.",
+          "Valorant is a team-based first-person tactical hero shooter set in the near future. Players play as one of a set of Agents, characters based on several countries and cultures around the world. In the main game mode, players are assigned to either the attacking or defending team with each team having five players on it. Agents have unique abilities, each requiring charges, as well as a unique ultimate ability that requires charging through kills or orbs. Every player starts each round with a \"classic\" pistol and one or more \"signature ability\" charges. Other weapons and ability charges can be purchased using an in-game economic system that awards money based on the outcome of the previous round, any kills the player is responsible for, and any objectives completed. The game has an assortment of weapons including secondary guns like sidearms and primary guns like submachine guns, shotguns, machine guns, assault rifles and sniper rifles. There are automatic and semi-automatic weapons that each have a unique shooting pattern that has to be controlled by the player to be able to shoot accurately.",
+          "In the standard non-ranked mode, the match is played as best of 25, with the first team to win 13 rounds winning the match. The attacking team has a bomb-type device called the Spike. They must deliver and activate the Spike on one of the multiple specified locations (bomb sites, with each map having two or three sites). If the attacking team successfully protects the activated Spike for 45 seconds it detonates, destroying everything in a specific area, and they receive a point. If the defending team can deactivate the Spike, or the 100-second round timer expires without the attacking team activating the spike, the defending team receives a point. If all the members of a team are eliminated before the Spike is activated, or if all members of the defending team are eliminated after the Spike is activated, the opposing team earns a point.",
+          "In the Spike Rush mode, the match is played as best of 7 rounds, with the first team to win 4 rounds winning the match. Players begin the round with all abilities fully charged except their ultimate, which charges twice as fast as in standard games. All players on the attacking team carry a spike, but only one spike may be activated per round. Guns are randomized in every round and every player begins with the same gun. Ultimate point orbs in the standard game are present, as well as multiple different power-up orbs.",
+          "The Deathmatch mode was introduced on August 5, 2020. Under the rules introduced in October 2020, 14 players enter a 9-minute free-for-all match and the first person to reach 40 kills or the player who has the most kills when time is up wins the match. The players will spawn with a random agent, equipped with a max shield and an infinite supply of credits to buy any weapons from the buy menu. All abilities are disabled during the match, which indulges pure gunplay. Green health packs drop on every kill, which reset the player to maximum health, armor, and replenish the ammunition in each of their guns."
+        ],
+        "story_headings": [
+          "Information the client should not receive",
+          "Making protection arrive in time",
+          "The corner looks different online",
+          "Agents, weapons and the round economy",
+          "Planting and defending the Spike",
+          "Short rounds in Spike Rush",
+          "Practising gunplay in Deathmatch"
+        ]
+      },
+      "source_fields_sha256": "f383e7e098dfbe64edad9a3c6402dbc668660054617a0e873f08628d722f5ed2",
+      "translation": {
+        "title": "VALORANT",
+        "subtitle": "Poderes espectaculares dentro de la disciplina de un shooter táctico",
+        "summary": "Un rival oculto plantea un problema técnico.",
+        "story_headings": [
+          "Información que el cliente no debe recibir",
+          "Proteger sin llegar tarde",
+          "La esquina se ve distinta en línea",
+          "Agentes, armas y economía de las rondas",
+          "Colocar y defender la Spike",
+          "Rondas breves en Fiebre de la Spike",
+          "Practicar la puntería en Combate a muerte"
+        ],
+        "body": [
+          "Los combates tácticos de VALORANT dependen de información que los rivales no deberían tener. Paul Chamberlain, ingeniero del sistema antitrampas, describe un servidor que retiene la posición de un enemigo hasta que el cliente la necesita. Un wallhack no puede mostrar datos que nunca han llegado. La idea parte de la experiencia de Riot con League of Legends, pero trasladarla a un shooter tridimensional exige nuevos desarrollos. El servidor debe decidir qué puede saber cada jugador sin retrasar la aparición legítima de un rival ni consumir demasiado tiempo de simulación.",
+          "Las primeras pruebas muestran enemigos que aparecen tarde o permanecen invisibles porque una comprobación sencilla de la línea de visión no detecta las partes visibles de sus cuerpos. Chamberlain describe pruebas con rayos adicionales, volúmenes delimitadores más amplios y, finalmente, un sistema de visibilidad precalculada. También hay que restaurar el estado correcto de la animación cuando un rival oculto vuelve a ser relevante. Esconder las posiciones solo es una parte del trabajo. Al doblar una esquina, el jugador debe seguir viendo al enemigo realizar la acción correcta en el momento preciso, sin que la seguridad interfiera.",
+          "Otro artículo técnico de Riot explica por qué dos jugadores pueden percibir de manera distinta un encuentro en una esquina incluso sin trampas. Las órdenes y las actualizaciones de posición tardan en cruzar la red, mientras que la predicción local mantiene la respuesta del movimiento. El almacenamiento en búfer suaviza la llegada irregular de datos, pero añade retraso. Matt deWet y David Straily describen la reducción de estos costes como un problema de diseño, al igual que los propios disparos. Su objetivo es que la planificación y la ejecución decidan los encuentros, en lugar de ocultar todas las limitaciones de Internet tras la promesa de que todos ven siempre exactamente el mismo instante.",
+          "Valorant es un shooter táctico en primera persona, por equipos y con héroes, ambientado en un futuro próximo. Se juega con agentes inspirados en distintos países y culturas. En el modo principal, cada jugador pertenece al equipo atacante o al defensor, ambos de cinco integrantes. Los agentes tienen habilidades únicas que requieren cargas, además de una habilidad definitiva que se carga mediante bajas u orbes. Cada ronda empieza con una pistola Classic y una o más cargas de la habilidad característica. Las demás armas y cargas se compran mediante una economía interna que concede dinero según el resultado de la ronda anterior, las bajas conseguidas y los objetivos cumplidos. El arsenal incluye armas secundarias, como pistolas, y principales, como subfusiles, escopetas, ametralladoras, fusiles de asalto y de francotirador. Las armas automáticas y semiautomáticas tienen patrones de disparo propios que hay que controlar para acertar.",
+          "En el modo estándar no competitivo, la partida se juega al mejor de veinticinco rondas: gana el primer equipo que consigue trece. Los atacantes disponen de un dispositivo explosivo llamado Spike. Deben llevarlo y activarlo en uno de los dos o tres emplazamientos designados de cada mapa. Si protegen la Spike activada durante cuarenta y cinco segundos, esta detona, destruye lo que hay en una zona determinada y les concede un punto. Los defensores puntúan si la desactivan o si transcurren los cien segundos de la ronda sin que los atacantes la activen. Si todos los miembros de un equipo son eliminados antes de la activación, o todos los defensores después, el equipo rival obtiene un punto.",
+          "En Fiebre de la Spike, la partida se disputa al mejor de siete rondas y gana el primer equipo que consigue cuatro. Los jugadores empiezan con todas las habilidades cargadas salvo la definitiva, que se carga al doble de velocidad que en las partidas normales. Todos los atacantes llevan una Spike, pero solo se puede activar una por ronda. Las armas cambian aleatoriamente en cada ronda y todos comienzan con la misma. Además de los orbes que conceden puntos de definitiva, presentes en el juego estándar, aparecen distintos orbes potenciadores.",
+          "Combate a muerte se introduce el 5 de agosto de 2020. Con las reglas incorporadas en octubre de 2020, catorce jugadores participan en una partida de todos contra todos de nueve minutos. Gana quien alcanza primero cuarenta bajas o quien suma más al terminar el tiempo. Los jugadores reaparecen con un agente aleatorio, el escudo al máximo y créditos ilimitados para comprar cualquier arma del menú. Todas las habilidades están desactivadas para centrarse en los disparos. Cada baja deja un paquete verde que restaura por completo salud y armadura y repone la munición de las armas."
+        ]
+      },
+      "translation_sha256": "bfa06a3baf59dc726678da519d72263bcf88e6b6ba60e856e1d54352b99cb7d4"
+    },
+    {
+      "entry_id": "workbook-06-16-desperados-iii",
+      "source": {
+        "title": "Desperados III",
+        "subtitle": "Stopping time to coordinate an ambush",
+        "summary": "A plan should fail for a readable reason.",
+        "body": [
+          "Desperados III makes repeated attempts part of planning an ambush. Creative director Dominik Abé explains that frequent saving reduces the punishment for failure and encourages experimentation. It also places a demand on the designers: recreating a moment should produce sufficiently consistent behaviour for the player to understand what happened. Most combat outcomes therefore avoid random hit chances. Visible guard information helps someone analyse a failed plan and change it. The challenge lies in arranging a better sequence, rather than repeatedly loading until the same decision becomes lucky.",
+          "Showdown Mode lets the player coordinate the team's abilities, pausing time except on the hardest difficulty. Abé describes a deliberate restriction: the system does not offer long chains of prepared main actions. A character might execute one planned move while the player handles another in real time. That boundary keeps the game from becoming an entirely different kind of command puzzle. The satisfying result is a short coordinated intervention inside an ongoing scene, leaving the player responsible for what happens before and after the prepared moment.",
+          "The five protagonists give that scene several possible readings. Cooper carries quiet and loud weapons; Hector brings strength and a trap; McCoy offers lures, gas and a long-range pistol. Kate's disguise changes how she can approach people, while Isabelle adds another set of possibilities. The publisher also presents non-lethal attacks as an alternative to killing. A route is therefore not only a gap between vision cones. It is a question about which person can get into position, what that person can do there, and how the others can support the attempt.",
+          "Enemies in each mission will react to seeing a character in their sight - represented by a view cone, divided between two zones: a dashed area in which characters can avoid detection if crouched; a full colour area, in which detection is unavoidable if entered, unless the character is hiding in a bush; and a dull faded area in which the enemy's view is obscured by an obstacle (such as a high rooftop). Some missions at night will reduce an enemy's ability to see, unless they use a lamp or view an area illuminated by a source of light. Once an enemy detects a character, their viewcone starts filling to yellow until it reaches the character, whereupon it turns red and causes the enemy to raise the alarm and begin attacking the character; until they are either dead or manage to lose sight of them. Players can view an enemy's viewcone, or plant a marker to see which enemies are able to see an area.",
+          "In some missions, the game features a neutral \"Civil Zone\" area, in which enemies will not detect characters unless they do something suspicious; civilians will also react negatively to a character's presence if they do something suspicious in their presence. Some buildings also house reserve enemies, who will be brought in if an alarm is raised and become active when the situation has calmed; a guardhouse will stop supplying reinforcements when no more guards remain within.",
+          "Players can either knock out and tie up enemies or eliminate them with lethal methods, including through environmental kills (dropping a boulder, or making an animal lash out on nearby enemies). Any enemy that is dead or incapacitated can be hidden inside bushes, wells, empty buildings, or into rivers or down cliffs; if any body is found by patrolling enemies, a dashed line appears, which fills up until it reaches the body, whereupon the enemy raises the alarm.",
+          "Each character in the game comes equipped with different abilities, and different strengths and weaknesses - for example some characters move faster than others, while others can climb up vines and ropes. Alongside lethal and non-lethal takedowns, each character's abilities include: ranged attacks; a distraction/lure method (which is less effective on certain enemies); and healing abilities. Abilities have a recharge time, meaning they can't be used in quick succession, while certain abilities and actions have a limit on the number of times they can be used - guns have limited ammo, which can be replenished through containers for specific characters."
+        ],
+        "story_headings": [
+          "Saving makes experimentation possible",
+          "A pause with a deliberate limit",
+          "Different people change the approach",
+          "Reading enemy vision cones",
+          "Civil zones and reinforcements",
+          "Hiding bodies and avoiding alarms",
+          "Different abilities for each specialist"
+        ]
+      },
+      "source_fields_sha256": "e5d4ceb9a58d9ff7261a1ea0d4419af99935b811dea51b892cdbe6e5e86853b4",
+      "translation": {
+        "title": "Desperados III",
+        "subtitle": "Detener el tiempo para coordinar una emboscada",
+        "summary": "Un plan debería fallar por una razón comprensible.",
+        "story_headings": [
+          "Guardar permite experimentar",
+          "Una pausa con un límite deliberado",
+          "Personajes distintos cambian el enfoque",
+          "Leer los conos de visión enemigos",
+          "Zonas civiles y refuerzos",
+          "Ocultar cuerpos y evitar alarmas",
+          "Habilidades diferentes para cada especialista"
+        ],
+        "body": [
+          "Desperados III convierte los intentos repetidos en parte de la planificación de una emboscada. El director creativo Dominik Abé explica que guardar a menudo reduce el castigo por fallar y anima a experimentar. Esto también impone una exigencia al diseño: repetir un momento debe generar comportamientos lo bastante consistentes como para entender qué ha sucedido. Por eso, la mayoría de los resultados del combate evita las probabilidades aleatorias de acierto. La información visible sobre los guardias ayuda a analizar un plan fallido y modificarlo. El reto consiste en organizar una secuencia mejor, no en cargar una y otra vez hasta que la misma decisión tenga suerte.",
+          "El modo Showdown permite coordinar las habilidades del equipo y detiene el tiempo, salvo en la dificultad más alta. Abé describe una restricción deliberada: el sistema no permite preparar largas cadenas de acciones principales. Un personaje puede ejecutar un movimiento planeado mientras el jugador maneja a otro en tiempo real. Ese límite evita que el juego se convierta en un rompecabezas de órdenes completamente distinto. La satisfacción nace de una intervención breve y coordinada en una escena que sigue en marcha, dejando al jugador la responsabilidad de lo que sucede antes y después de ese instante preparado.",
+          "Los cinco protagonistas ofrecen distintas formas de abordar una misma escena. Cooper lleva armas silenciosas y ruidosas; Hector aporta fuerza y una trampa; McCoy dispone de señuelos, gas y una pistola de largo alcance. El disfraz de Kate cambia cómo puede acercarse a la gente, mientras que Isabelle añade otras posibilidades. La editora también presenta ataques no letales como alternativa a matar. Una ruta no es, por tanto, solo un hueco entre conos de visión. Hay que preguntarse quién puede alcanzar una posición, qué puede hacer allí y cómo pueden ayudarle los demás.",
+          "En cada misión, los enemigos reaccionan al ver a un personaje dentro de su campo visual, representado por un cono. En la zona discontinua se puede evitar la detección al agacharse; en la zona de color uniforme, entrar implica ser descubierto salvo que el personaje esté oculto en un arbusto; una parte desvaída indica que un obstáculo, como un tejado alto, impide la visión. Algunas misiones nocturnas reducen la capacidad de ver de los enemigos, excepto si usan una lámpara o miran una zona iluminada. Cuando un enemigo detecta a un personaje, su cono empieza a llenarse de amarillo hasta alcanzarlo. Entonces pasa a rojo, el enemigo da la alarma y ataca hasta que el personaje muere o consigue salir de su vista. Se puede consultar el cono de un enemigo o colocar un marcador para saber quién ve una zona determinada.",
+          "Algunas misiones incluyen una «zona civil» neutral, donde los enemigos no detectan a los personajes mientras no hagan nada sospechoso. Los civiles también reaccionan negativamente si presencian un comportamiento sospechoso. Ciertos edificios albergan enemigos de reserva que acuden cuando se activa una alarma y permanecen activos una vez que la situación se calma. Un puesto de guardia deja de enviar refuerzos cuando ya no quedan guardias dentro.",
+          "Se puede dejar inconscientes a los enemigos y atarlos o eliminarlos por medios letales, incluido el uso del entorno: dejar caer una roca o provocar que un animal ataque a los enemigos cercanos. Los cuerpos muertos o incapacitados se pueden ocultar en arbustos, pozos y edificios vacíos, o arrojar a ríos y por precipicios. Si una patrulla descubre un cuerpo, aparece una línea discontinua que se llena hasta alcanzarlo; entonces el enemigo da la alarma.",
+          "Cada personaje tiene habilidades, puntos fuertes y debilidades diferentes: algunos se mueven más deprisa, mientras otros pueden trepar por lianas y cuerdas. Además de neutralizaciones letales y no letales, sus habilidades incluyen ataques a distancia, un método de distracción o atracción menos eficaz contra ciertos enemigos y capacidades curativas. Las habilidades necesitan recargarse y no pueden utilizarse repetidamente en rápida sucesión. Algunas habilidades y acciones también tienen un número limitado de usos: las armas de fuego disponen de munición limitada que se repone en contenedores destinados a personajes concretos."
+        ]
+      },
+      "translation_sha256": "e6fa6c02af050e4638b92790102f122ea562d4c0aff1bd9241859bf9a12c9b8f"
+    },
+    {
+      "entry_id": "wikipedia-52464953",
+      "source": {
+        "title": "The Last of Us Part II",
+        "subtitle": "",
+        "summary": "The Last of Us Part II is a 2020 action-adventure game developed by Naughty Dog and published by Sony Interactive Entertainment.",
+        "body": [
+          "The Last of Us Part II is a 2020 action-adventure game developed by Naughty Dog and published by Sony Interactive Entertainment. Set five years after The Last of Us (2013), the game focuses on two playable characters in a post-apocalyptic United States whose lives intertwine: Ellie, who sets out in revenge for Joel's murder, and Abby, a soldier who killed Joel and becomes involved in a conflict between her militia and a religious cult. The game uses a third-person perspective; the player must fight human enemies and zombie-like creatures with firearms, improvised weapons, and stealth.",
+          "The game's development began in 2014, after the release of The Last of Us Remastered. Neil Druckmann returned as creative director, co-writing the story with Halley Gross. The themes of revenge and retribution were inspired by Druckmann's experiences growing up in Israel. Ashley Johnson reprises her role as Ellie, while Laura Bailey was cast as Abby. Their performances included the simultaneous recording of motion and voice. Gustavo Santaolalla returned to compose and perform the score. The developers pushed the PlayStation 4's technical capabilities. Development reportedly included a crunch schedule of 12-hour workdays and cost around US$220 million, making it one of the most expensive video games to develop.",
+          "Following delays, partly due to the COVID-19 pandemic, The Last of Us Part II was released for the PlayStation 4 in June 2020. A remastered version was released for the PlayStation 5 in January 2024 and for Windows in April 2025. The game received acclaim for its gameplay, audio design, score, performances, characters, and visual fidelity, though its narrative and themes divided critics. Discourse became adversarial and the game was review bombed on Metacritic, with some players criticizing the story and characters. It is one of the best-selling PlayStation 4 games and the fastest-selling PlayStation 4 exclusive, with over four million units sold in its release weekend and ten million by 2022. It won multiple accolades from awards shows and gaming publications, including 326 Game of the Year awards, and is considered one of the most significant eighth-generation console games and among the best video games."
+        ],
+        "story_headings": [
+          "Two lives intertwined by revenge",
+          "Writing, performances and production",
+          "Release, responses and awards"
+        ]
+      },
+      "source_fields_sha256": "f6edc6a3b370182140f417610c6f7dbe9dba5d9fa52891902a6feef5866a071a",
+      "translation": {
+        "title": "The Last of Us Part II",
+        "subtitle": "",
+        "summary": "The Last of Us Part II es una aventura de acción de 2020, desarrollada por Naughty Dog y publicada por Sony Interactive Entertainment.",
+        "story_headings": [
+          "Dos vidas entrelazadas por la venganza",
+          "Guion, interpretaciones y producción",
+          "Lanzamiento, reacciones y premios"
+        ],
+        "body": [
+          "The Last of Us Part II es una aventura de acción de 2020, desarrollada por Naughty Dog y publicada por Sony Interactive Entertainment. Ambientado cinco años después de The Last of Us, de 2013, se centra en dos personajes jugables cuyas vidas se entrelazan en unos Estados Unidos posapocalípticos: Ellie, que busca vengar el asesinato de Joel, y Abby, la soldado que lo mató y que se ve envuelta en un conflicto entre su milicia y un culto religioso. El juego se desarrolla en tercera persona; para combatir a enemigos humanos y criaturas similares a zombis se utilizan armas de fuego, armas improvisadas y sigilo.",
+          "El desarrollo comienza en 2014, tras la publicación de The Last of Us Remastered. Neil Druckmann vuelve como director creativo y escribe la historia junto a Halley Gross. Los temas de la venganza y las represalias se inspiran en las experiencias de Druckmann durante su infancia en Israel. Ashley Johnson retoma el papel de Ellie, mientras que Laura Bailey es elegida para interpretar a Abby. Sus actuaciones incluyen la captura simultánea de movimientos y voz. Gustavo Santaolalla vuelve a componer e interpretar la música. Los desarrolladores llevan al límite las capacidades técnicas de PlayStation 4. Según las informaciones publicadas, la producción incluye periodos de trabajo intensivo con jornadas de doce horas y cuesta unos 220 millones de dólares, lo que la sitúa entre las más caras de la historia del videojuego.",
+          "Tras varios retrasos, debidos en parte a la pandemia de COVID-19, The Last of Us Part II sale para PlayStation 4 en junio de 2020. Una versión remasterizada llega a PlayStation 5 en enero de 2024 y a Windows en abril de 2025. El juego recibe elogios por su jugabilidad, diseño sonoro, música, interpretaciones, personajes y fidelidad visual, aunque su narrativa y sus temas dividen a la crítica. El debate se vuelve hostil y el juego sufre una avalancha concertada de valoraciones negativas en Metacritic; algunos jugadores critican la historia y los personajes. Es uno de los juegos más vendidos de PlayStation 4 y la exclusiva de la consola con ventas más rápidas, con más de cuatro millones de copias durante su primer fin de semana y diez millones hasta 2022. Recibe numerosos reconocimientos de premios y publicaciones especializadas, incluidos 326 galardones a Juego del año, y se considera uno de los títulos más importantes de la octava generación de consolas y uno de los mejores videojuegos."
+        ]
+      },
+      "translation_sha256": "dde266321ea25f18dfeb5bf2c0f1e84f2a57bf05f61bb4dd6658db4e68ae89be"
+    }
+  ]
+}

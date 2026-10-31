@@ -1,0 +1,680 @@
+{
+  "schema": "pixel-museum-editorial-input-v1",
+  "batch_id": "020-catalog",
+  "source_file": "content/catalog.json",
+  "source_sha256": "0b077b3f8628f921ab84574d286f9d9943fb8ae6acb8f136ffadde6e01cae241",
+  "entries": [
+    {
+      "entry_id": "golden-joystick-awards-1984",
+      "kind": "event",
+      "year_context_only": 1984,
+      "date_context_only": {
+        "precision": "year"
+      },
+      "event_semantics": "",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "Golden Joystick Awards 1984",
+        "subtitle": "",
+        "summary": "The Golden Joystick Awards, with every category winner of the 1984 edition.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "The players' awards",
+            "text": "The Golden Joystick Awards celebrate games through a public vote, bringing players into the choice of each year's winners. The awards began in Britain with the 1983 season and later reached an international audience through online voting. Their changing categories trace the growth of games: home computers and consoles, handhelds, online play, independent studios, performance and music. Alongside the public vote, special honours recognise individual contributions to the industry. Each edition preserves its own category names, so the results also show what players and the awards organisers considered worth celebrating at the time."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Winners — 1984",
+            "text": "Game of the Year\nKnight Lore\n\nSoftware House of the Year\nUltimate Play the Game\n\nBest Original Game of the Year\nElite\n\nBest Adventure Game of the Year\nClaymorgue Castle\n\nBest Strategy Game of the Year\nLords of Midnight\n\nBest Arcade-Style Game of the Year\nDaley Thompson's Decathlon\n\nBest Programmer of the Year\nUltimate Team"
+          }
+        ],
+        "sources": [
+          {
+            "title": "Golden Joystick Awards — 1984 category winners",
+            "url": "https://en.wikipedia.org/wiki/Golden_Joystick_Awards#1984",
+            "publisher": "Wikipedia contributors",
+            "license": "CC BY-SA 4.0",
+            "attribution": "Category and winner facts transcribed from the archived table. Original Pixel Museum introduction; no source prose reproduced."
+          },
+          {
+            "title": "Golden Joystick Awards",
+            "url": "https://www.gamesradar.com/goldenjoystickawards/",
+            "publisher": "Future Publishing Limited"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "karateka",
+      "kind": "game",
+      "year_context_only": 1984,
+      "date_context_only": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "Karateka",
+        "subtitle": "Learning to stage a moving body",
+        "summary": "Jordan Mechner used film reference and carefully paced scenes to give an Apple II game a cinematic rhythm.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Studying a moving body",
+            "text": "Karateka is Jordan Mechner's Apple II fighting adventure, built around a rescue story. Filmed movement helped him animate its fighters, while changes of viewpoint and pauses connected individual encounters into a staged journey. Timing and presentation gave the action a cinematic rhythm."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Following the experiments",
+            "text": "Mechner's journals, prototypes and filmed reference material preserve the stages behind Karateka's finished animation. Digital Eclipse later brought these materials together in an interactive documentary. Following them reveals how movement, scenes and timing changed during development, rather than presenting the released game as an idea that arrived fully formed."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "An original idea at Yale",
+            "text": "Karateka was developed by Jordan Mechner while he was a student at Yale University as a side project between classes. Having learned computer programming using the Apple II, he had written a clone of Asteroids and a modified version he titled Deathbounce. He submitted Deathbounce to Broderbund. The company declined but sent him a copy of Choplifter, then one of its top-selling games. He recognized from this game that he could pursue original game concepts instead of having to remake existing ones."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "Cinema meets fighting",
+            "text": "Mechner focused on a karate-themed game, influenced by the graphic features of Choplifter, his ongoing film studies and film clubs at Yale, and recent karate lessons. He drew inspiration from Japanese Ukiyo-e woodblock print art, and the cinematic works of Akira Kurosawa, early Disney animated films, and silent pictures—which he said \"convey such powerful emotion and atmosphere without a word being spoken\". Combining cinematic techniques with game elements, he programmed some of the screen wipes from the film Seven Samurai. Mechner reflected that he did not consider the game as a \"fighting game\", but instead that of \"a story-based game where the gameplay mechanic is fighting\"."
+          },
+          {
+            "card_id": "main:4",
+            "original_index": 4,
+            "heading": "Rotoscoping on the Apple II",
+            "text": "Mechner wanted to create fluid animations within the Apple II's eight-frame-per-second capacity, but this was hampered by the presence of additional on-screen elements, such as one of the palace gates. He found that the computer could not animate and play music (limited to one-note tones) at the same time, forcing him to adapt. To create the animations, he used rotoscoping, hand-drawing cartoons atop frames of film of his karate instructor demonstrating various moves. His father, Francis Mechner, created the soundtrack. Development took about two years, and he submitted the game to Broderbund late in his sophomore year at Yale."
+          }
+        ],
+        "sources": [
+          {
+            "title": "The Making of Karateka",
+            "url": "https://www.digitaleclipse.com/games/karateka",
+            "publisher": "Digital Eclipse"
+          },
+          {
+            "title": "Karateka (video game) - English Wikipedia revision 1376202964",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1376202964",
+            "publisher": "English Wikipedia contributors",
+            "attribution": "Additional narrative paragraphs reproduced verbatim under CC BY-SA 4.0. Prose reproduced verbatim; card headings supplied editorially. Existing exhibition text unchanged.",
+            "license": "CC BY-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+          },
+          {
+            "title": "Article contributors and history",
+            "url": "https://en.wikipedia.org/wiki/Karateka_(video_game)?action=history",
+            "publisher": "English Wikipedia contributors"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "tetris",
+      "kind": "game",
+      "year_context_only": 1984,
+      "date_context_only": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "1984 follows the current official chronology. June 6 is an official celebration date; it is not used here as a verified original release day.",
+      "main": {
+        "feature_id": null,
+        "title": "Tetris",
+        "subtitle": "The gap you leave comes back to meet you",
+        "summary": "Alexey Pajitnov gave a familiar kind of puzzle a moving deadline. The blocks kept falling, and a simple rule travelled around the world.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Every placement has consequences",
+            "text": "Tetris is Alexey Pajitnov's falling-block puzzle, first created in 1984. Complete a horizontal line and it clears; leave a hole and the pieces above it make the next placement harder. Each decision reshapes the same growing pile, with another piece already on the way."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Seven shapes and a growing pile",
+            "text": "Alexey Pajitnov developed the first version in Moscow on an Electronika 60. Inspired by the arrangement of pieces in a physical puzzle, he made a game of seven shapes, each built from four squares. The official chronology places its creation in 1984. What looks like a small set of possibilities becomes difficult because the player has to organise the pile while it is still growing."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Crossing borders and changing machines",
+            "text": "The game spread through computer versions and then through a complicated international business of ports and licences. Its journey was carried by people negotiating across companies and borders, as well as by the appeal of the rules themselves. On Game Boy, a puzzle without a large fictional world could fit naturally into a portable machine and short stretches of time."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "Reading the piece and the gap",
+            "text": "Watch the player's attention shift between the falling piece and the space waiting below it. That small movement contains much of the design: immediate action and longer planning happen together. Tetris travelled widely without needing every player to share a language, a character or an earlier gaming history. The problem was already there, visible in the gap."
+          }
+        ],
+        "sources": [
+          {
+            "title": "About Tetris",
+            "url": "https://www.tetris.com/about",
+            "publisher": "The Tetris Company"
+          }
+        ]
+      },
+      "features": [
+        {
+          "feature_id": "feature-tetris-travel",
+          "title": "A puzzle crosses the border",
+          "subtitle": "",
+          "summary": "The contracts travel less easily.",
+          "cards": [
+            {
+              "card_id": "feature:feature-tetris-travel:0",
+              "original_index": 0,
+              "heading": "A program passes between people",
+              "text": "Alexey Pajitnov made games alongside his work at the Soviet Academy of Sciences' computer centre. In a 1993 interview, he recalled Tetris spreading abroad through word of mouth and unauthorised copies. He associated its appeal with rhythm, randomness and decisions made in real time. The audience grew as people passed the program between computers, well before an orderly international release could bring its distribution under control."
+            },
+            {
+              "card_id": "feature:feature-tetris-travel:1",
+              "original_index": 1,
+              "heading": "The word computer matters",
+              "text": "The international licensing dispute turned on what each agreement allowed. In 1989, Pajitnov distinguished personal-computer rights from home-console rights when discussing Nintendo and Tengen. Permission to publish on one type of machine could not simply be assumed to cover another. Although the falling blocks remained familiar across versions, the authority to manufacture and sell them followed separate negotiations."
+            },
+            {
+              "card_id": "feature:feature-tetris-travel:2",
+              "original_index": 2,
+              "heading": "A cartridge arrives in Moscow",
+              "text": "Henk Rogers recalled taking a Japanese console cartridge into ELORG's Moscow offices and discovering that its rights were disputed. He already had cartridges in manufacture and had committed family property as collateral. At the same time, he pursued handheld rights after arguing that Nintendo should include Tetris with Game Boy in North America. Licensing categories had immediate consequences: manufacturing commitments and personal finances depended on resolving who could sell which version."
+            },
+            {
+              "card_id": "feature:feature-tetris-travel:3",
+              "original_index": 3,
+              "heading": "A film is another version",
+              "text": "The 2023 Tetris film turned these negotiations into a feature-length drama. Rogers praised its ability to communicate a complicated story while acknowledging its compression and invention. Interviews preserve a slower sequence of disputed permissions, business risks and changing expectations. The film gives that history a pace and characterisation of its own."
+            }
+          ],
+          "sources": [
+            {
+              "id": "pajitnov8993",
+              "title": "Tetris: 1989 and 1993 developer interviews",
+              "url": "https://shmuplations.com/tetris/",
+              "publisher": "Original Japanese interviews including Hippon! Super and GSLA archive; English translation by shmuplations",
+              "source_type": "Primary participant interviews in translation; all interviews/mirrors on this page conservatively grouped as one publication",
+              "locator": "1993 origins, word-of-mouth and rhythm answers; 1989 personal-computer versus home-video-game copyright comments",
+              "checked": "2026-10-21",
+              "rights": "Bibliographic reference only; original publication, interview, translation and any associated photographs remain with their respective rights holders.",
+              "story_paragraphs": [
+                0,
+                1
+              ]
+            },
+            {
+              "id": "rogers23yarwood",
+              "title": "Henk Rogers on Apple's Tetris movie",
+              "url": "https://www.timeextension.com/features/i-never-did-that-but-i-did-something-just-as-stupid-henk-rogers-on-apples-tetris-movie",
+              "publisher": "Jack Yarwood / Time Extension; Henk Rogers",
+              "source_type": "Primary retrospective interview, 29 March 2023; article also identifies reused 2016 interview material, grouped as one publication",
+              "locator": "The Tetris Story: ELORG visit, cartridges/collateral and handheld negotiations; final film interview about compression and invented incidents",
+              "checked": "2026-10-21",
+              "rights": "Bibliographic reference only; original publication, interview, translation and any associated photographs remain with their respective rights holders.",
+              "story_paragraphs": [
+                2,
+                3
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entry_id": "wikipedia-1884380",
+      "kind": "game",
+      "year_context_only": 1984,
+      "date_context_only": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Reference article prose reproduced under its stated licence. Year comes from the article's release-year category; regional/port dates may differ.",
+      "main": {
+        "feature_id": null,
+        "title": "Super Punch-Out!!",
+        "subtitle": "",
+        "summary": "Super Punch-Out!! is a 1984 boxing video game developed and published by Nintendo for arcades.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Ducking into the arcade sequel",
+            "text": "Super Punch-Out!! is a 1984 boxing video game developed and published by Nintendo for arcades. It is the sequel to Punch-Out!! (1984), and follows the same format while adding several new features and characters. Along with punching, blocking and dodging, players also have the ability to duck. The game also saves and displays the three fastest knockout times, while the game's difficulty is increased."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Five new challengers",
+            "text": "It introduces a number of new characters to the Punch-Out!! series, including Bear Hugger, Dragon Chan, Vodka Drunkenski (whose name was changed to Soda Popinski in later releases), Great Tiger, and Super Macho Man. Several of the new fighters use illegal moves from wrestling or martial arts."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Reading the opponent's next move",
+            "text": "As in the original Punch-Out!!, the player assumes the role of a green-haired boxer (later recast as Little Mac in the 1987 Nintendo Entertainment System version), known by three initials, who works through the ranks of the WVBA (World Video Boxing Association).  During matches, the player's boxer is viewed from the rear as a wireframe so the opponents are visible to the player. The player must precisely time punches, dodges, and blocks in order to defeat the opposing boxer. Hints are given as to the opponent's next move by subtle eye changes, but the player must ultimately predict what moves the opponent will make and react appropriately. Mostly, the opponent's eyes turn yellow before attacking, as well as winding up. Like in the previous arcade game, if the player loses, the opponent will glide up and laugh, with their stun animation and their neutral animation being reused."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "Defending the heavyweight title",
+            "text": "Once the player defeats the final opponent, the player will win the Heavyweight Belt, then defend it against the same characters that have already been beaten. Each successive time they are met, the opponents are harder and quicker. In order to win a bout, the player must knock out the opponent within one 3-minute round; failure to do so results in an automatic loss. A technical knockout is awarded if either fighter is knocked down three times, but the opponent will sometimes fail to rise after the first or second knockdown."
+          },
+          {
+            "card_id": "main:4",
+            "original_index": 4,
+            "heading": "Two monitors and a pull-up joystick",
+            "text": "The cabinet separates information from action across two stacked monitors: statistics appear above the fight. Two buttons throw left and right punches; a third delivers a powerful uppercut or hook once successful hits have filled the KO meter. Taking an unblocked blow drains that advantage. The joystick raises or lowers the guard and dodges sideways, while pulling it upward from the panel makes the boxer duck. Learning an opponent's attack therefore means choosing both a defensive movement and the right moment to spend the accumulated power."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Super Punch-Out!! (1984 video game) - article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1371706533",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/Super_Punch-Out!!_(1984_video_game)?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          },
+          {
+            "title": "1984 video games - release-year category",
+            "url": "https://en.wikipedia.org/wiki/Category:1984_video_games",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Nintendo1984 original arcade game, published rerelease gallery",
+            "url": "https://www.arcadearchives.com/en/title/aca-125/",
+            "publisher": "HAMSTER Corporation"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-470253",
+      "kind": "game",
+      "year_context_only": 1984,
+      "date_context_only": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Reference article introduction reproduced under its stated licence. Year comes from the article's release-year category; regional/port dates may differ.",
+      "main": {
+        "feature_id": null,
+        "title": "1942",
+        "subtitle": "",
+        "summary": "1942 is a 1984 vertically scrolling shooter video game developed and published by Capcom for arcades.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "",
+            "text": "1942 is a 1984 vertically scrolling shooter video game developed and published by Capcom for arcades. Designed by Yoshiki Okamoto, it was the first game in the 194X series, and was followed by 1943: The Battle of Midway."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "",
+            "text": "1942 is set in the Pacific Theater of World War II, and is loosely based on the Battle of Midway. Despite the game being created by Japanese developers, the goal is to reach Tokyo and destroy the Japanese air fleet. This was due to being the first Capcom game designed with Western markets in mind. It went on to be a commercial success in arcades, becoming Japan's fifth highest-grossing table arcade game of 1986 and one of top five highest-grossing arcade conversion kits that year in the United States. It was ported to the Nintendo Entertainment System, selling over one million copies worldwide, along with other home systems."
+          }
+        ],
+        "sources": [
+          {
+            "title": "1942 (video game) — article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1379585043",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "1986 in video games — annual context",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1374581285",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/1942_(video_game)?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          },
+          {
+            "title": "Soundtrack publication: 1942 08 Ayako BGM",
+            "url": "https://www.youtube.com/watch?v=HVg0gK-ERDY",
+            "publisher": "Arcade OST",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Ayako Mori",
+            "url": "https://en.wikipedia.org/wiki/1942_(video_game)",
+            "publisher": "Ayako Mori"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-652414",
+      "kind": "game",
+      "year_context_only": 1984,
+      "date_context_only": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Reference article introduction reproduced under its stated licence. Year comes from the article's release-year category; regional/port dates may differ.",
+      "main": {
+        "feature_id": null,
+        "title": "Sabre Wulf",
+        "subtitle": "",
+        "summary": "Sabre Wulf is an action-adventure game released by British video game developer Ultimate Play the Game for the ZX Spectrum home computer in 1984.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "A colourful jungle without instructions",
+            "text": "Sabre Wulf is an action-adventure game released by British video game developer Ultimate Play the Game for the ZX Spectrum home computer in 1984. The player navigates the pith-helmeted Sabreman through a 2D jungle maze while collecting amulet pieces to bypass the guardian at its exit. The player does not receive explicit guidance on how to play and is left to decipher the game's objectives through trial and error. Sabreman moves between the maze's 256 connected screens by touching the border where one screen ends and another begins. Each screen is filled with colourful flora, enemies that spawn at random, and occasional collectibles."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "A premium box and a lasting reputation",
+            "text": "Ultimate released the game for the ZX Spectrum at an above-average price to combat piracy. Its premium product packaging became a company standard. The developers had finished Sabre Wulf's sequels in advance of its release but—in keeping with their penchant for secrecy—chose to withhold them for marketing purposes. The sequels were released later that year. Ultimate hired outside developers to port Sabre Wulf to other computing platforms: the BBC Micro, Commodore 64, and Amstrad CPC. The game was later featured in compilations, including Rare Replay, a retrospective of games by Ultimate and its successor, Rare."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "A Spectrum favourite",
+            "text": "Many publications recommended the game, and Crash magazine readers named it the \"Best Maze Game\" of 1984. Sabre Wulf was a bestseller and a financial success. Though its labyrinthine gameplay was similar to that of Ultimate's previous release, reviewers preferred Sabre Wulf. They further noted its difficult gameplay and lauded its graphics. Game journalists remember Sabre Wulf among the Spectrum's best releases, and for starting the Sabreman series."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Sabre Wulf — article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1376514663",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "1984 in video games — annual context",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1360221888",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/Sabre_Wulf?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          },
+          {
+            "title": "Rare Replay - primary original Sabre Wulf gameplay publication",
+            "url": "https://www.rare.co.uk/games/rare-replay",
+            "publisher": "Rare / Centre for Computing History"
+          },
+          {
+            "title": "Sabre Wulf - original Spectrum physical package and museum catalogue",
+            "url": "https://www.computinghistory.org.uk/det/32548/Sabre-Wulf/",
+            "publisher": "Rare / Centre for Computing History"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-949894",
+      "kind": "game",
+      "year_context_only": 1984,
+      "date_context_only": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Reference article introduction reproduced under its stated licence. Year comes from the article's release-year category; regional/port dates may differ.",
+      "main": {
+        "feature_id": null,
+        "title": "Kung-Fu Master",
+        "subtitle": "",
+        "summary": "Kung-Fu Master, known as Spartan X in Japan, is a 1984 beat 'em up game developed and published by Irem for arcades.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "From martial arts films to the arcade",
+            "text": "Kung-Fu Master, known as Spartan X in Japan, is a 1984 beat 'em up game developed and published by Irem for arcades. It was distributed by Data East in North America. Designed by Takashi Nishiyama, the game was based on Hong Kong martial arts films. It is a loose adaptation of the Jackie Chan, Sammo Hung and Yuen Biao film Wheels on Meals (1984), called Spartan X in Japan. The protagonist Thomas is named after Jackie Chan's character in the film. It is also heavily inspired by the Bruce Lee film Game of Death (1972), which was the basis for the game's concept. Nishiyama, who had previously designed the side-scrolling shooter Moon Patrol (1982), combined fighting elements with a shoot 'em up gameplay rhythm. Irem and Data East exported the game to the West without the Spartan X license."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Nintendo brings the fights home",
+            "text": "The game was a major commercial success, topping the Japanese arcade charts and becoming America's second highest-grossing arcade game of 1985, while receiving critical acclaim for its fast-paced, side-scrolling gameplay and detailed, colorful graphics. A port for the Nintendo Entertainment System (known as the Famicom in Japan) was developed by Nintendo under the direction of Shigeru Miyamoto, released as Spartan X in Japan and Kung Fu in the West, selling 3.5 million copies worldwide. It was also one of the top five best-selling Commodore 64 games of 1986. It spawned the sequel Spartan X 2 (1991) and the spiritual successors Trojan (1986) and Vigilante (1988)."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "A template for later action games",
+            "text": "Kung-Fu Master was a highly influential game. It is regarded as the first beat 'em up video game, and an early example of the side-scrolling character action game genre, which became popular during the mid-to-late 1980s. Miyamoto's work on the NES port inspired his development of the side-scrolling platformer Super Mario Bros. (1985), while Nishiyama was hired by Capcom where he used the boss battles as the basis for the fighting game Street Fighter (1987). He later worked for SNK on fighting games such as Fatal Fury and The King of Fighters. Kung-Fu Master also influenced other media, such as the Red Ribbon Army saga (1985–1986) of the manga and anime series Dragon Ball, as well as the French film Kung Fu Master (1988)."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Kung-Fu Master (video game) — article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1377854181",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "1985 in video games — annual context",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1378730138",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/Kung-Fu_Master_(video_game)?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          },
+          {
+            "title": "Kung Fu - original Nintendo NES manual",
+            "url": "https://www.gamingalexandria.com/highquality/NES/Kung%20Fu/Kung%20Fu%20Manual%20-%20Original.pdf",
+            "publisher": "Nintendo of America / Irem; scan preserved by Gaming Alexandria",
+            "scope": "1985 NES port, copyright line on PDF page 3; complete scan PDF page 7 illustrates the adaptation and its boss mechanics."
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-1305143",
+      "kind": "game",
+      "year_context_only": 1984,
+      "date_context_only": {
+        "month": 1,
+        "day": 14,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Reference article introduction reproduced under its stated licence. Year comes from the article's release-year category; regional/port dates may differ.",
+      "main": {
+        "feature_id": null,
+        "title": "Tennis",
+        "subtitle": "",
+        "summary": "Tennis is a 1984 tennis video game developed and published by Nintendo for the Nintendo Entertainment System.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "The Japanese Famicom release",
+            "text": "Tennis is a 1984 tennis video game developed and published by Nintendo for the Nintendo Entertainment System. It was originally released in Japan for the Family Computer on January 14, 1984, a few months after the launch of the Famicom on July 15, 1983."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "From home consoles to other editions",
+            "text": "An arcade version titled VS. Tennis released for the Nintendo VS. System the same year, becoming a hit at Japanese and American arcades that year; it was the sixth top-performing arcade game of 1984 in the United States. Tennis is one of 17 launch games for the console in North America and Europe. It was also ported to the Game Boy in 1989, going on sale about a month after the launch of the handheld console in Japan, and becoming one of the five launch titles for North America."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Tennis (1984 video game) — article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1360803050",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "1985 in video games — annual context",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1378730138",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/Tennis_(1984_video_game)?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          },
+          {
+            "title": "Tennis (1984 video game) — original release infobox, Wikipedia revision 1360803050",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1360803050",
+            "publisher": "English Wikipedia contributors"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "console-gap-pitfall-ii-lost-caverns",
+      "kind": "game",
+      "year_context_only": 1984,
+      "date_context_only": {
+        "month": 2,
+        "day": 17,
+        "precision": "day",
+        "region": "NA"
+      },
+      "event_semantics": "",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "Pitfall II: Lost Caverns",
+        "subtitle": "Harry descends into the caverns",
+        "summary": "Pitfall II: Lost Caverns is David Crane's 1984 sequel to Pitfall!, published by Activision for the Atari 2600.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Harry descends into the caverns",
+            "text": "Pitfall II: Lost Caverns is David Crane's 1984 sequel to Pitfall!, published by Activision for the Atari 2600. Harry explores caverns in Peru to recover the Raj diamond and rescue Rhonda and Quickclaw. The adventure expands down through ladders, tunnels and water, with balloons offering another way to travel. Finding the next passage matters alongside avoiding its inhabitants. The player gradually learns how the underground spaces connect, turning a series of short movements into a longer expedition through one continuous environment."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "A mistake sends the explorer back",
+            "text": "Red crosses mark places to which Harry returns after an accident. A collision costs points and sends him back to the last checkpoint, making the score reflect the care taken along the route. Gold bars reward exploration, while swimming and balloon travel change how a passage must be approached. The structure encourages another attempt at a troublesome section: the player keeps the knowledge gained about the caverns and can apply it immediately. Progress depends on understanding where to go as much as executing an individual jump."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "More room inside the cartridge",
+            "text": "Crane designed a Display Processor Chip for the cartridge to extend the aging console's capabilities. It supported richer graphics and a dedicated music circuit, allowing a more elaborate expedition than the earlier game. The technological work serves a visible purpose in the adventure's larger spaces and continuing musical accompaniment. Rhonda and Quickclaw also carried characters from the Pitfall television cartoon into the game. Pitfall II brought hardware, exploration and familiar characters together around an increasingly ambitious journey for Atari's machine."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Pitfall II: Lost Caverns — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Pitfall_II%3A_Lost_Caverns"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "console-gap-h-e-r-o-video-game",
+      "kind": "game",
+      "year_context_only": 1984,
+      "date_context_only": {
+        "month": 3,
+        "day": 0,
+        "precision": "month",
+        "region": "NA"
+      },
+      "event_semantics": "",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "H.E.R.O.",
+        "subtitle": "A rescue beneath the surface",
+        "summary": "H.E.R.O.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "A rescue beneath the surface",
+            "text": "H.E.R.O. is John Van Ryzin's rescue adventure, published by Activision for the Atari 2600 in March 1984. Volcanic activity has trapped miners underground, and Roderick Hero descends through the shafts to reach them. His equipment defines the journey: a propeller backpack carries him through the air, a helmet laser deals with creatures, and dynamite opens blocked passages. Every rescue combines finding a route with controlling the small figure precisely enough to survive the mine's narrow spaces and dangerous walls."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Flying carefully through the mine",
+            "text": "Roderick can rise, move sideways and hover, making the passages navigable in several directions. His power supply steadily falls once movement begins, so a hesitant journey also consumes the time available for rescue. Six sticks of dynamite are supplied for each level. Their fuses briefly illuminate dark rooms before an explosion clears an obstacle. Touching a lantern can extinguish it, changing the visibility of a familiar space. Spiders, snakes and glowing magma walls make a controlled landing as important as the next burst of flight."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "A superhero assembled from equipment",
+            "text": "Van Ryzin developed the idea after early testing of his Cosmic Commuter project prompted a change of direction. Comic-book superheroes helped inspire the rescuer, but the game's powers are expressed through practical equipment and clear limitations. The backpack frees movement from a sequence of ladders and fixed jumps, while energy and explosives keep that freedom under pressure. The result traveled to several computers and consoles after its Atari debut, carrying a compact design in which a single rescued worker provides a complete objective for each descent."
+          }
+        ],
+        "sources": [
+          {
+            "title": "H.E.R.O. — Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/H.E.R.O._%28video_game%29"
+          }
+        ]
+      },
+      "features": []
+    }
+  ]
+}

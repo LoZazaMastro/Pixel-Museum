@@ -1,0 +1,62 @@
+{
+  "entry_id": "playstation",
+  "expected_preferred_image": 5,
+  "expected_image_count": 9,
+  "original_image": {
+    "url": "https://gmedia.playstation.com/is/image/SIEPDC/ps1-console-lid-open-image-block-01-en-02oct24?$1600px--t$",
+    "source_page": "https://www.playstation.com/en-us/playstation-history/1994-ps-one/",
+    "title": "Games on compact disc",
+    "caption": "A Sony-published historical product photograph with the lid open and an A-IV Evolution disc inside. A picture of CD-based play, not a photograph of Final Fantasy VII or a disc-manufacturing line.",
+    "creator": "Sony Interactive Entertainment / original game rights holders",
+    "credit": "Sony Interactive Entertainment; respective game publishers",
+    "license": "Original publisher imagery; respective rights retained",
+    "license_url": "",
+    "width": 1600,
+    "height": 1375,
+    "story_paragraph": -1,
+    "recovery_local_source": "build/research/playstation1994-existing-prose-original-disc-and-controller/official-disc.jpg",
+    "verification": {
+      "sha256": "76768a68256143319ac899582f41a01476880c3850da947a284f4e1a9021ce95",
+      "processing": "Unmodified image at the literal size published in Sony’s retrospective. No local enlargement, crop or generated detail."
+    },
+    "cover_art": true,
+    "cover_role": true
+  },
+  "image": {
+    "url": "https://gmedia.playstation.com/is/image/SIEPDC/ps1-console-image-block-01-en-02oct24?$1600px--t$",
+    "source_page": "https://www.playstation.com/en-us/playstation-history/1994-ps-one/",
+    "title": "Original PlayStation console",
+    "caption": "Sony’s historical product photograph of the original full-size PlayStation, with its lid closed and both controller ports empty.",
+    "creator": "Sony Interactive Entertainment",
+    "credit": "Sony Interactive Entertainment / official PlayStation history",
+    "license": "Original publisher product photograph; Sony Interactive Entertainment copyright retained. No open licence claimed.",
+    "recovery_local_source": "build/research/ps1-user-console-only-cover/sony-original-playstation-console-only.png",
+    "width": 1600,
+    "height": 654,
+    "native_long_edge": 1600,
+    "story_paragraph": -1,
+    "cover_art": true,
+    "cover_role": true,
+    "verification": {
+      "sha256": "54ea3f69420e70317910367d7d12b4f46c8ff7c9ba885dab00d8a18d8f631084",
+      "native_dimensions": [
+        1600,
+        654
+      ],
+      "format": "PNG RGBA",
+      "processing": "Unmodified publisher PNG response; no local crop, retouch, generated cutout or enlargement.",
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    "quality_verified": "Complete unmodified Sony PNG. Full proper alpha composites reviewed on dark and light backgrounds: console alone, no disc, controller, cable or rectangular background. Publisher photographic shadow retained."
+  },
+  "source_files": {
+    "build/research/ps1-user-console-only-cover/sony-original-playstation-console-only.png": "54ea3f69420e70317910367d7d12b4f46c8ff7c9ba885dab00d8a18d8f631084",
+    "build/research/ps1-user-console-only-cover/sony-original-console-only-acquisition.json": "b681cd76c4b2615d45552d8b2ba46638b6577d0523031ce14a869ca66b70a4fd",
+    "build/research/ps1-user-console-only-cover/full-source-alpha-dark-light-review.jpg": "87d84033d7f4122e4477ce84cd6966e01e4ea203901f2b40566b74c0c68ff358",
+    "build/research/playstation1994-existing-prose-original-disc-and-controller/official-sony-playstation-history.html": "34964e22f32b82b6ca15bc4e4db56ca3ada99cbdc36b5a3d5935757c2e50842b"
+  },
+  "scope": "Final image-only PS1 replacement after pre1995 full-owner joins; no prose or other metadata changes."
+}

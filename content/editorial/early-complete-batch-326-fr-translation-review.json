@@ -1,0 +1,105 @@
+{
+  "status": "PASS",
+  "locale": "fr",
+  "entries": [
+    {
+      "entry_id": "wikipedia-77278623",
+      "source_fields_sha256": "d0760d1f2fc16533e9f46abc494c75a39bed48bce5ce6acb97f79f81cdffb2e3",
+      "translation_sha256": "99337fae6e44cd312b0b4835e867d5661308aa2be3356ae20c2197e60ddfe467",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch326/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "06f4b996f980367a6339a4b33ddc3894ed4d1ef1483db22657bec78b6b8c14f1"
+    },
+    {
+      "entry_id": "wikipedia-36691288",
+      "source_fields_sha256": "c3c14052c75528ab2910da2da6cfdc5bc01d3241f8f6cd2f78dbf2eeda7de959",
+      "translation_sha256": "a8d36a26b3f33b404ff75818496e7889d65356e0deef8aeeef01e330a8be098a",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch326/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "06f4b996f980367a6339a4b33ddc3894ed4d1ef1483db22657bec78b6b8c14f1"
+    },
+    {
+      "entry_id": "the-game-awards-2020",
+      "source_fields_sha256": "ff69afc6aad2e29af24c981620e0e859760be485b40ac94503375616d474dd3a",
+      "translation_sha256": "9baf930a419065b27ae98e6bc589c93f46c6093c5d26aabf3a17257a21c0e301",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch326/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "06f4b996f980367a6339a4b33ddc3894ed4d1ef1483db22657bec78b6b8c14f1"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "/root/package_audit",
+    "actual_receipt": "build/research/catalog-2020-chronological/root-final-three-private/independent-package-audit-approval.json",
+    "actual_receipt_sha256": "a5ef3d80c4bbd40f0d16b2f58706bfede2c2168619098a891bd493b922eff321",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "/root/package_audit",
+      "index": "build/research/catalog-2020-chronological/root-final-three-private/three-private-index.json",
+      "index_sha256": "534762edf6bc1608673079e2de87712879c1b25df5b06062f9a07c88fa915a52",
+      "owners": [
+        {
+          "entry_id": "wikipedia-36691288",
+          "slug": "cyberpunk",
+          "source": "build/research/catalog-2020-chronological/root-final-three-private/cyberpunk-source-private-candidate.json",
+          "source_sha256": "9072767e8cd21cf7effc7456b7d08e65f4f6aeaedbe8ce97b06d11727dcb9175",
+          "target": "build/research/catalog-2020-chronological/root-final-three-private/cyberpunk-four-language-private-candidate.json",
+          "target_sha256": "73e082f8d06a1eba22e9becdef9412706cb824ec8f68a9ff3e165788f1cbc1c8",
+          "contact": "build/research/catalog-2020-chronological/root-final-three-private/cyberpunk-final-contact.jpg",
+          "contact_sha256": "83bf58073e257a09e6a6d13883621d7adbfc0e64da82dd3704acccbf156f9a92",
+          "english_cards": 4,
+          "localized_cards": 16,
+          "images": 7,
+          "tracks": 37
+        },
+        {
+          "entry_id": "the-game-awards-2020",
+          "slug": "tga",
+          "source": "build/research/catalog-2020-chronological/root-final-three-private/tga-source-private-candidate.json",
+          "source_sha256": "0b6c4952bdd6eb5b7ce29e3abd45bd7e5684997f8ed5d1b5e2cfbf41700cad39",
+          "target": "build/research/catalog-2020-chronological/root-final-three-private/tga-four-language-private-candidate.json",
+          "target_sha256": "437ac850140dcaa2a3f2fff49dc1352813985de3cd2a6bcececcdb2f84a25683",
+          "contact": "build/research/catalog-2020-chronological/root-final-three-private/tga-final-contact.jpg",
+          "contact_sha256": "0eebd0d55553f41d17cf6da6786a19039acf16fc262eec1d4d7d21c5f66711b8",
+          "english_cards": 14,
+          "localized_cards": 56,
+          "images": 14,
+          "tracks": 0
+        },
+        {
+          "entry_id": "wikipedia-77278623",
+          "slug": "anthology",
+          "source": "build/research/catalog-2020-chronological/root-final-three-private/anthology-source-private-candidate.json",
+          "source_sha256": "e49e5bebfd8ac40b7e3af89875ebda907b644fd4fb996ee6925d52759a864c2c",
+          "target": "build/research/catalog-2020-chronological/root-final-three-private/anthology-four-language-private-candidate.json",
+          "target_sha256": "b03a5ef4c499b1f584b8611e597e2a72b49e7ff2c947f8390fcf6f171718a140",
+          "contact": "build/research/catalog-2020-chronological/root-final-three-private/anthology-final-contact.jpg",
+          "contact_sha256": "362ff6245596147958ac45b51a5f0f44064be15571d2620b639fe822ddc92b55",
+          "english_cards": 2,
+          "localized_cards": 8,
+          "images": 4,
+          "tracks": 0
+        }
+      ],
+      "scope": {
+        "new_english_paragraphs_read": 6,
+        "new_localized_paragraphs_read": 24,
+        "final_contact_images_seen": 25,
+        "tga_english_records_compared_exact": 14,
+        "tga_localized_records_compared_exact": 56,
+        "cyberpunk_existing_tracks_compared_exact": 37
+      },
+      "findings_resolved": [
+        "Cyberpunk P1 now specifies full production afterBloodAndWine2016; earlier development evidenced by CDPR FY2013 primary, preserved restEN and four localized clauses."
+      ],
+      "evidence": [
+        "All6newEN24locales read and all3final contacts25images personally viewed. UpdatedPC Cyberpunk captures and later2024 Anthology collected-edition images explicitly qualified; original clean covers retained.",
+        "TGA five displayed EN fields, all14images,sources exactly match admitted2019; all five display fields in four locales exactly match admitted2019.2020ID/year/December10 retained.",
+        "Cyberpunk37track objects exactly match before. Developer originalscore page names all three composers; investor settlement independently verified company2023PDF page121: final approval November28,2023 and1,850thousandUSD.",
+        "Cyberpunk July2026 sales independently verified officialCyberpunk Bluesky datedJuly3 and CDPR H1 2026 announcement. No future-date claim guessed from memory.",
+        "Anthology creator paidcollectionMay2024 devlog independently opened; date metadata distinctly identifies firstfreeVoice episodeDecember3,2020 instead of conflating collection date."
+      ],
+      "limits": [
+        "No PS5 playback or audio audition asserted; unchanged music not redundantly probed. TGA reused by exact comparison to prior independently approved archive, not a new research of all annual facts."
+      ],
+      "production_writes": false
+    }
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "status": "PASS",
+  "locale": "de",
+  "entries": [
+    {
+      "entry_id": "wikipedia-69475062",
+      "source_fields_sha256": "6c94344f31a5ff4c36340f0f0d61423d5a50d0011eda3d6e25194ae024706ab3",
+      "translation_sha256": "4c0da3076b3a19d04535ff66840df249b410eed2904c9886c1fb27405b7e0bdf",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch362/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "762dc7a6b35eb42b00a57066133b6ac40b30652a2ba19301c48141fab81e78e4"
+    },
+    {
+      "entry_id": "wikipedia-73953855",
+      "source_fields_sha256": "cc753592cd2b2db5a3aeaf1902b0563960d88c99eda46ebf420fedc4b23b41fb",
+      "translation_sha256": "1a76032b076d8dbff095c76893c97c9887d1261baa3872a537a079e63ba162e6",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch362/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "762dc7a6b35eb42b00a57066133b6ac40b30652a2ba19301c48141fab81e78e4"
+    },
+    {
+      "entry_id": "wikipedia-67932578",
+      "source_fields_sha256": "73abf17f6aeb59a2ed0600e60e7916154908321e2468787e5d6ec4dbdda1f024",
+      "translation_sha256": "fbb9c720eca11badd310b90e8f5465cfd5e25e06ac76acf571998bf01ccf2195",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch362/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "762dc7a6b35eb42b00a57066133b6ac40b30652a2ba19301c48141fab81e78e4"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "/root/package_audit",
+    "actual_receipt": "build/research/catalog-2023-chronological/final-three-private/independent-package-audit-approval.json",
+    "actual_receipt_sha256": "c40461ced2483aa2161b87e92420cb28d13974ab32c84f9a31a5878e626fc978",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "/root/package_audit",
+      "index": "build/research/catalog-2023-chronological/final-three-private/three-original-source-media-four-language-private-index.json",
+      "index_sha256": "df488cf078e330b3dd86c731db7265bc12bebfc892e8533dd197c777feb0d458",
+      "owners": [
+        {
+          "entry_id": "wikipedia-69475062",
+          "slug": "alan",
+          "source": "build/research/catalog-2023-chronological/final-three-private/alan/complete-original-source-media-private-candidate.json",
+          "source_sha256": "23e88e03d0689194dc0338e44eb5465dfb8e14fbec65037883c11759abd84c2b",
+          "target": "build/research/catalog-2023-chronological/final-three-private/alan/complete-four-language-private-candidate.json",
+          "target_sha256": "1964a753feac662403c7bcc930b9eed816a760c1d8847ef6d9da3e2770594113",
+          "contact": "build/research/catalog-2023-chronological/final-three-private/alan/final-selected-media-contact.jpg",
+          "contact_sha256": "76576701dd8f62e03be646f9725b72e6c0d181503014ca5734078da3c49d493b",
+          "english_cards": 2,
+          "localized_cards": 8,
+          "images": 4,
+          "tracks": 3,
+          "finite_errata": 0
+        },
+        {
+          "entry_id": "wikipedia-73953855",
+          "slug": "mwiii",
+          "source": "build/research/catalog-2023-chronological/final-three-private/mwiii/complete-original-source-media-private-candidate.json",
+          "source_sha256": "df6417cd095ec41885a33ce13ed2f14ea9e6b68116b7317ee6f468769cb92773",
+          "target": "build/research/catalog-2023-chronological/final-three-private/mwiii/complete-four-language-private-candidate.json",
+          "target_sha256": "d7fb236ed352ce94f7de4a799e59a70eca5b900c1db72652eb76eee1e10e5754",
+          "contact": "build/research/catalog-2023-chronological/final-three-private/mwiii/final-selected-media-contact.jpg",
+          "contact_sha256": "1ab99be3cc3f33e6cceac2c628466c6cb8e0a28e9de87f5ef8443b16a1a21d6b",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 6,
+          "tracks": 3,
+          "finite_errata": 1
+        },
+        {
+          "entry_id": "wikipedia-67932578",
+          "slug": "avatar",
+          "source": "build/research/catalog-2023-chronological/final-three-private/avatar/complete-original-source-media-private-candidate.json",
+          "source_sha256": "39fa76125b294cc29b9036bd34e9016cac05e3c9bf30b647a70c051ca7744c3d",
+          "target": "build/research/catalog-2023-chronological/final-three-private/avatar/complete-four-language-private-candidate.json",
+          "target_sha256": "212b9b2f24ed9c1991ce3caf53602fd1ee8f0dfb1ae5ce4d6a6b76897227d30d",
+          "contact": "build/research/catalog-2023-chronological/final-three-private/avatar/final-selected-media-contact.jpg",
+          "contact_sha256": "eb1549d94d27ab615918ea78a30e2a3c079c7996ed4f33d9d5c040eaa38f73b1",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 4,
+          "tracks": 49,
+          "finite_errata": 0
+        }
+      ],
+      "scope": {
+        "english_paragraphs_read": 8,
+        "localized_paragraphs_read": 32,
+        "selected_images_actually_viewed": 14,
+        "old_track_objects_exact_preserved": 4,
+        "new_public_metadata_read": 3
+      },
+      "findings": [],
+      "notes": [
+        "All four localized fields and headings read in full; empty English subtitles faithfully preserved.",
+        "All three final contacts actually viewed. Covers are clean; platform-branded video thumbnail is a video poster, not a cover. Original campaign and gameplay images match their chapters.",
+        "Herald of Darkness full original Playground Music recording 815s; Operation 627 original Activision/Symphonic recording 147s, Walter Mair composer distinguished from arrangers.",
+        "Avatar official Ubisoft Music album 49 UI cues: 48 literal published chapters, with Going Home / Redemption split at 47:32 from label durations 2:07 and 4:18. One second difference honestly documented; all boundaries contiguous and 49 names unique. Bandcamp primary independently read.",
+        "Activision current first-party page independently read: October 23 2026 release date and October 16 campaign early access qualify the finite MW4 past-tense change.",
+        "No audio downloaded; public metadata is evidence, PS5 playback not asserted."
+      ],
+      "production_writes": false
+    }
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "reviewed": "2026-10-21",
+  "review_type": "independent_root_full_prose_and_specific_primary_source_review",
+  "batch_file": "content/expansion/calendar-template-revisions-native.json",
+  "batch_sha256": "56a403bad00a80b63dfa94719b91dac14732b5f7412065b13b50feaf5c3ebfeb",
+  "decision": "six_source_checked_canonical_alternatives",
+  "historical_total_signoff": false,
+  "media_signoff": false,
+  "entries": [
+    {
+      "edition_id": "daily-03-31",
+      "current_parent_id": "workbook-03-31-hyper-light-drifter",
+      "paragraphs_read": 3,
+      "body_sha256": "570cf64ae311622a2211a083a97d29e727540a2a95d80fe475022ab3ead605ec",
+      "decision": "admit_canonical_narrative_preserve_original_daily_and_locales",
+      "named_primary_sources_checked": [
+        "https://store.steampowered.com/app/257850/Hyper_Light_Drifter/",
+        "https://blog.playstation.com/2014/03/14/creating-the-world-of-hyper-light-drifter-on-ps4-and-ps-vita/"
+      ],
+      "note": "Primary fact assertions read against developer/licensor publications. Interpretive connections are editorial synthesis, not quotations. Runtime release dates remain separately reviewed.",
+      "supplemental_verified_sources": [
+        {
+          "title": "Disasterpeace official music credits",
+          "url": "https://disasterpeace.com/music",
+          "publisher": "Disasterpeace"
+        },
+        {
+          "title": "Rich Vreeland / Disasterpeace official biography archive",
+          "url": "https://disasterpeace.com/blog/tag.youth.feature",
+          "publisher": "Disasterpeace"
+        }
+      ]
+    },
+    {
+      "edition_id": "daily-04-01",
+      "current_parent_id": "workbook-04-01-goat-simulator",
+      "paragraphs_read": 3,
+      "body_sha256": "a767e9f0169fe4e5324b6dcd580d3d3bec321ef4134d0e0c5cbe821f54e55911",
+      "decision": "admit_canonical_narrative_preserve_original_daily_and_locales",
+      "named_primary_sources_checked": [
+        "https://store.steampowered.com/app/265930/Goat_Simulator/"
+      ],
+      "note": "Primary fact assertions read against developer/licensor publications. Interpretive connections are editorial synthesis, not quotations. Runtime release dates remain separately reviewed."
+    },
+    {
+      "edition_id": "daily-04-02",
+      "current_parent_id": "workbook-04-02-final-fantasy-vi",
+      "paragraphs_read": 3,
+      "body_sha256": "370a6f20c2084e3875fbb1c028e1ec3ec0fe4c83bafed879bf0f2fe779bfb98b",
+      "decision": "admit_canonical_narrative_preserve_original_daily_and_locales",
+      "named_primary_sources_checked": [
+        "https://jp.finalfantasy.com/titles/finalfantasy6"
+      ],
+      "note": "Primary fact assertions read against developer/licensor publications. Interpretive connections are editorial synthesis, not quotations. Runtime release dates remain separately reviewed."
+    },
+    {
+      "edition_id": "daily-04-03",
+      "current_parent_id": "workbook-04-03-monument-valley",
+      "paragraphs_read": 3,
+      "body_sha256": "af35553e8ba06877695a546206d41ea6eb0e93c157d777482dc4aba88bb4a972",
+      "decision": "admit_canonical_narrative_preserve_original_daily_and_locales",
+      "named_primary_sources_checked": [
+        "https://ustwo.com/blog/monument-valley-out-now/",
+        "https://ustwo.com/work/monument-valley/"
+      ],
+      "note": "Primary fact assertions read against developer/licensor publications. Interpretive connections are editorial synthesis, not quotations. Runtime release dates remain separately reviewed."
+    },
+    {
+      "edition_id": "daily-04-04",
+      "current_parent_id": "workbook-04-04-the-elder-scrolls-online",
+      "paragraphs_read": 3,
+      "body_sha256": "75cb50f38786165b3ef7c35085b8ac1000f6101099074538b3a13ed5e95d6bca",
+      "decision": "admit_canonical_narrative_preserve_original_daily_and_locales",
+      "named_primary_sources_checked": [
+        "https://www.prnewswire.com/news-releases/bethesda-softworks-launches-the-elder-scrolls-online-253889861.html"
+      ],
+      "note": "Primary fact assertions read against developer/licensor publications. Interpretive connections are editorial synthesis, not quotations. Runtime release dates remain separately reviewed."
+    },
+    {
+      "edition_id": "daily-04-05",
+      "current_parent_id": "workbook-04-05-lego-star-wars-the-skywalker-saga",
+      "paragraphs_read": 3,
+      "body_sha256": "9131f6da14795fb40adcd7ed2250ccb20053c6b48dbb6101910dd9fe1269e221",
+      "decision": "admit_canonical_narrative_preserve_original_daily_and_locales",
+      "named_primary_sources_checked": [
+        "https://www.lego.com/en-us/aboutus/news/2022/april/lego-star-wars-the-skywalker-saga"
+      ],
+      "note": "Primary fact assertions read against developer/licensor publications. Interpretive connections are editorial synthesis, not quotations. Runtime release dates remain separately reviewed."
+    }
+  ],
+  "source_access_notes": [
+    "HyperLightDrifter original permalink timed out; same publication read via https://blog.playstation.com/?p=126359.",
+    "MonumentValley launch article read fully; work/project endpoint failed and is not claimed rechecked.",
+    "FFVI full official Japanese story and character archive read, including Terra/Tina,Locke,Edgar,Kefka; no inference of English localization authorship.",
+    "ESO beta registration quantity is distinguished from sales and concurrency."
+  ]
+}

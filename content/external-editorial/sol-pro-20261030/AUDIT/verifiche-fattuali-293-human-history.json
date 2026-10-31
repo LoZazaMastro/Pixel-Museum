@@ -1,0 +1,595 @@
+{
+  "batch_id": "293-human-history",
+  "sources": [
+    {
+      "source_id": "dartmouth",
+      "title": "Dartmouth College, Artificial Intelligence Coined at Dartmouth",
+      "url": "https://home.dartmouth.edu/about/artificial-intelligence-ai-coined-dartmouth",
+      "verification_scope": "Pagina istituzionale fornita e consultata: evento del 1956 e ruolo storico."
+    },
+    {
+      "source_id": "proposal",
+      "title": "McCarthy, Minsky, Rochester e Shannon, proposta del 31 agosto 1955",
+      "url": "https://www-formal.stanford.edu/jmc/history/dartmouth/dartmouth.html",
+      "verification_scope": "Documento primario consultato: due mesi e dieci persone nella proposta del 1955; non confuso con la lista di undici previsti nel 1956 citata dall’INPUT."
+    },
+    {
+      "source_id": "solomonoff",
+      "title": "Grace Solomonoff, The Meeting of the Minds That Launched AI",
+      "url": "https://spectrum.ieee.org/dartmouth-ai-workshop",
+      "verification_scope": "Ricerca diretta dell’archivista familiare sulle carte di Ray Solomonoff, consultata: attività giugno–agosto e partecipanti. Non attribuita a questa fonte una verifica della lettera con gli undici invitati."
+    },
+    {
+      "source_id": "ramac_history",
+      "title": "Emerson W. Pugh, Creating Magnetic Disk Storage at IBM",
+      "url": "https://ethw.org/Creating_Magnetic_Disk_Storage_at_IBM",
+      "verification_scope": "Ricerca IEEE STARS dello storico e dirigente IBM, letta: prototipi presso clienti nel giugno 1956, annuncio settembre 1956, consegne dei modelli di serie da giugno 1957."
+    },
+    {
+      "source_id": "ramac_object",
+      "title": "Computer History Museum, First commercial hard disk drive shipped",
+      "url": "https://www.computerhistory.org/storageengine/first-commercial-hard-disk-drive-shipped/",
+      "verification_scope": "Scheda e fotografie della macchina di preproduzione: Zellerbach giugno 1956, distinzione dal prodotto di serie."
+    },
+    {
+      "source_id": "ramac_ibm",
+      "title": "IBM, RAMAC",
+      "url": "https://www.ibm.com/history/ramac",
+      "verification_scope": "Pagina aziendale consultata per sistema, scopo contabile e accesso casuale. Non usata come prova di giorno di consegna."
+    },
+    {
+      "source_id": "fairchild_on",
+      "title": "ON Semiconductor, acquisition announcement filed with SEC",
+      "url": "https://www.sec.gov/Archives/edgar/data/1097864/000119312516713488/d430568dex991.htm",
+      "verification_scope": "Comunicato originale con completamento 19 settembre 2016; il testo mantiene il mese già presente."
+    },
+    {
+      "source_id": "fairchild_brochure",
+      "title": "Fairchild Semiconductor, SPM Module Design Guide, 2015",
+      "url": "https://www.mouser.com/pdfdocs/SPM-Module-Design-Guide.pdf",
+      "verification_scope": "Estratto indicizzato della brochure originale: Silicon Valley Headquarters, San Jose. Non dichiarata lettura integrale del manuale."
+    },
+    {
+      "source_id": "fairchild_filing",
+      "title": "Fairchild, SEC Form 8-K, settembre 2016",
+      "url": "https://www.sec.gov/Archives/edgar/data/1036960/000119312516713492/d237186d8k.htm",
+      "verification_scope": "Atto societario contemporaneo con principal executive offices a Sunnyvale. San Jose collocata in una fase della storia, non dichiarata sede invariata fino alla fine."
+    },
+    {
+      "source_id": "fairchild_foundation",
+      "title": "onsemi, Company History",
+      "url": "https://www.onsemi.com/company/about-onsemi/company-history",
+      "verification_scope": "Storia aziendale: fondazione Fairchild nel 1957 e acquisizione 2016."
+    },
+    {
+      "source_id": "fortran_archive",
+      "title": "Paul McJones / Computer History Museum, History of FORTRAN and FORTRAN II",
+      "url": "https://www.mcjones.org/softwarepreservation/FORTRAN/",
+      "verification_scope": "Archivio di documenti e testimonianze: manuale ottobre 1956 e distribuzione aprile 1957. Link alla lettera Backus del 24 aprile restituisce 404; non affermata lettura della lettera."
+    },
+    {
+      "source_id": "fortran_manual",
+      "title": "IBM, FORTRAN Programmer’s Reference Manual, 15 ottobre 1956",
+      "url": "https://archive.computerhistory.org/resources/text/Fortran/102649787.05.01.acc.pdf",
+      "verification_scope": "Manuale originale consultato nel testo estratto: array a una, due e tre dimensioni già nel linguaggio iniziale; capitolo 2. Non aggiunti esempi o specifiche non necessarie."
+    },
+    {
+      "source_id": "fortran_ibm",
+      "title": "IBM, Fortran",
+      "url": "https://www.ibm.com/history/fortran",
+      "verification_scope": "Storia del produttore: rilascio commerciale nel 1957 e natura del linguaggio."
+    },
+    {
+      "source_id": "sputnik_nasa",
+      "title": "NASA, 65 Years Ago: Sputnik Ushers in the Space Age",
+      "url": "https://www.nasa.gov/history/65-years-ago-sputnik-ushers-in-the-space-age/",
+      "verification_scope": "Lancio 4 ottobre 1957; batterie esaurite 26 ottobre; rientro 4 gennaio 1958. La card conserva circa tre settimane."
+    },
+    {
+      "source_id": "sputnik_dimensions",
+      "title": "NASA, Sputnik and the Dawn of the Space Age",
+      "url": "https://www.nasa.gov/wp-content/uploads/static/history/sputnik.html",
+      "verification_scope": "Dimensione 58 cm e primato del primo satellite artificiale."
+    },
+    {
+      "source_id": "kilby",
+      "title": "Texas Instruments, From idea to invention",
+      "url": "https://www.ti.com/about-ti/behind-chip/articles/from-idea-to-invention-the-origin-story-of-the-tiny-chip-that-changed-the-world.html",
+      "verification_scope": "Storia del laboratorio: dimostrazione del 12 settembre 1958."
+    },
+    {
+      "source_id": "kilby_object",
+      "title": "Computer History Museum, The Integrated Circuit",
+      "url": "https://www.computerhistory.org/revolution/digital-revolution/12/276",
+      "verification_scope": "Scheda del circuito e del taccuino: germanio nel primo esperimento e collegamenti a filo. Evitata l’impressione che il primo prototipo avesse già tutte le caratteristiche delle successive integrazioni su silicio."
+    },
+    {
+      "source_id": "vertigo",
+      "title": "AFI Catalog, Vertigo",
+      "url": "https://catalog.afi.com/Film/52788-VERTIGO?cxt=topsearches",
+      "verification_scope": "Catalogo della cineteca basato sui documenti di produzione: prima di San Francisco 9 maggio 1958, New York e Los Angeles 28 maggio, romanzo e interpreti."
+    },
+    {
+      "source_id": "vertigo_bnf",
+      "title": "Bibliothèque nationale de France, Vertigo",
+      "url": "https://catalogue.bnf.fr/ark%3A/12148/cb137515175.public",
+      "verification_scope": "Scheda catalografica: prima uscita in sala negli Stati Uniti 9 maggio 1958, distinta dall’anno di copyright riportato nella scheda."
+    },
+    {
+      "source_id": "cobol_draft",
+      "title": "Smithsonian, First Draft of the Programming Language COBOL",
+      "url": "https://americanhistory.si.edu/collections/object/nmah_1389377",
+      "verification_scope": "Scheda del documento originale: riunioni 1959, primi programmi eseguiti estate 1960 e test su due costruttori nel dicembre 1960."
+    },
+    {
+      "source_id": "cobol_ibm",
+      "title": "IBM, What Is COBOL?",
+      "url": "https://www.ibm.com/think/topics/cobol/jcr%3Acontent",
+      "verification_scope": "Sezione storica: prima versione 1960, CODASYL, FLOW-MATIC e standard 1968. Non ripresi gli esempi anacronistici di sistemi operativi moderni applicati alla nascita del progetto."
+    },
+    {
+      "source_id": "mos_history",
+      "title": "Computer History Museum, Metal Oxide Semiconductor Transistor Demonstrated",
+      "url": "https://www.computerhistory.org/siliconengine/metal-oxide-semiconductor-mos-transistor-demonstrated/",
+      "verification_scope": "Ricerca museale con brevetto e memorandum di Kahng: dispositivo funzionante 1959, dimostrazione 1960 e mercato 1964 distinti. Voce dedicata al principio e all’invenzione, non a un modello commerciale."
+    },
+    {
+      "source_id": "lilienfeld_patent",
+      "title": "Julius Edgar Lilienfeld, CA272437A",
+      "url": "https://patents.google.com/patent/CA272437A/en",
+      "verification_scope": "Brevetto originale: deposito 22 ottobre 1925, pubblicazione 19 luglio 1927. Confermato 1925 per proposta senza confondere concessione del brevetto e dispositivo operativo."
+    },
+    {
+      "source_id": "twilight_archive",
+      "title": "The Rod Serling Archive, The Twilight Zone",
+      "url": "https://www.rodserlingarchive.com/twilghtzone",
+      "verification_scope": "Archivio dell’autore: 2 ottobre 1959–1964, cinque stagioni, 156 episodi di cui 92 scritti o coscritti da Serling."
+    },
+    {
+      "source_id": "twilight_object",
+      "title": "Paley Center, Where Is Everybody?",
+      "url": "https://www.paleycenter.org/collection/item?advanced=1&c=tv&f=people&item=T77%3A0339&p=1&q=Bernard+Herrmann",
+      "verification_scope": "Registrazione conservata della prima puntata: CBS, 2 ottobre 1959."
+    }
+  ],
+  "decisions": [
+    {
+      "target_id": "history-1956-dartmouth-workshop",
+      "problem": "Il piano del 1955 prevede dieci persone, mentre INPUT parla di undici previsti; i due momenti non sono equivalenti.",
+      "conclusion": "Conservati undici attesi dal materiale fornito senza chiamarli il piano originale del 1955. Conservati sei–otto settimane e visitatori. Nessuna falsa correzione da undici a dieci né data esatta imposta a un incontro con presenze variabili.",
+      "source_ids": [
+        "proposal",
+        "dartmouth",
+        "solomonoff"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1956-ibm-305-ramac",
+      "problem": "1956 è annuncio e sperimentazione, non inizio delle consegne di serie.",
+      "conclusion": "Conservati annuncio 14 settembre 1956 e installazioni di prova, aggiunta consegna di serie giugno 1957 verificata dalla ricerca IEEE; proposta metadata per questa disponibilità commerciale.",
+      "source_ids": [
+        "ramac_history",
+        "ramac_object"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1957-fairchild-semiconductor",
+      "problem": "San Jose come sede immutabile contrasta con il documento di acquisizione che riporta Sunnyvale.",
+      "conclusion": "San Jose descritta come sede in una fase della storia aziendale, confermata dalla brochure 2015; nessuna data di trasloco inventata. Tutte le località operative e i passaggi 1979/1987/1997/2016 conservati.",
+      "source_ids": [
+        "fairchild_brochure",
+        "fairchild_filing",
+        "fairchild_on"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1957-fortran",
+      "problem": "INPUT colloca l’aggiunta degli array nelle versioni successive, benché presenti nel manuale 1956.",
+      "conclusion": "Corretto in ampliamento del supporto agli array nelle versioni successive. Conservati moduli, programmazione strutturata, parallelismo e standard 1966.",
+      "source_ids": [
+        "fortran_manual",
+        "fortran_archive"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1958-integrated-circuit",
+      "problem": "La narrazione può far sembrare già monolitici in ogni collegamento e in silicio i primi esperimenti di Kilby.",
+      "conclusion": "Separato prototipo compatto 1958 dalla successiva integrazione più stretta dei componenti e collegamenti su chip comunemente in silicio. Non aggiunto un falso primato di tutte le tecnologie successive.",
+      "source_ids": [
+        "kilby",
+        "kilby_object"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1959-cobol",
+      "problem": "Anno di progetto 1959 può essere confuso con prima versione disponibile.",
+      "conclusion": "Distinti sviluppo 1959 e prima versione 1960; proposta 1960 per il linguaggio distribuito.",
+      "source_ids": [
+        "cobol_draft",
+        "cobol_ibm"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1959-mosfet",
+      "problem": "1925/1927 e 1959/1960 indicano fasi diverse, e MISFET/IGFET non sono sinonimi perfettamente intercambiabili.",
+      "conclusion": "1925 resta proposta, 1959 primo dispositivo funzionante; MISFET e IGFET presentati come termini affini. Non attribuito a 1959 un rilascio commerciale di massa.",
+      "source_ids": [
+        "lilienfeld_patent",
+        "mos_history"
+      ],
+      "text_applied": true
+    }
+  ],
+  "metadata_proposals": [
+    {
+      "target_id": "history-1956-ibm-305-ramac",
+      "field": "timeline_date",
+      "original": {
+        "year": 1956,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1957,
+        "month": 6,
+        "day": 0,
+        "precision": "month",
+        "event_semantics": "Inizio consegne dei modelli di serie, distinto dai prototipi 1956",
+        "region": "Stati Uniti"
+      },
+      "source_ids": [
+        "ramac_history"
+      ],
+      "reason": "Proposta separata, non applicata agli originali o al catalogo. Distinte disponibilità, esperimenti, annuncio, progetto e fondazione."
+    },
+    {
+      "target_id": "history-1957-fortran",
+      "field": "timeline_date",
+      "original": {
+        "year": 1957,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1957,
+        "month": 4,
+        "day": 0,
+        "precision": "month",
+        "event_semantics": "Distribuzione del primo compilatore Fortran",
+        "region": "Stati Uniti"
+      },
+      "source_ids": [
+        "fortran_archive",
+        "fortran_ibm"
+      ],
+      "reason": "Proposta separata, non applicata agli originali o al catalogo. Distinte disponibilità, esperimenti, annuncio, progetto e fondazione."
+    },
+    {
+      "target_id": "history-1957-sputnik-1",
+      "field": "timeline_date",
+      "original": {
+        "year": 1957,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1957,
+        "month": 10,
+        "day": 4,
+        "precision": "day",
+        "event_semantics": "Lancio del primo satellite artificiale",
+        "region": "Unione Sovietica"
+      },
+      "source_ids": [
+        "sputnik_nasa"
+      ],
+      "reason": "Proposta separata, non applicata agli originali o al catalogo. Distinte disponibilità, esperimenti, annuncio, progetto e fondazione."
+    },
+    {
+      "target_id": "history-1958-integrated-circuit",
+      "field": "timeline_date",
+      "original": {
+        "year": 1958,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1958,
+        "month": 9,
+        "day": 12,
+        "precision": "day",
+        "event_semantics": "Dimostrazione del circuito integrato, evento esplicito nel titolo",
+        "region": "Stati Uniti"
+      },
+      "source_ids": [
+        "kilby",
+        "kilby_object"
+      ],
+      "reason": "Proposta separata, non applicata agli originali o al catalogo. Distinte disponibilità, esperimenti, annuncio, progetto e fondazione."
+    },
+    {
+      "target_id": "history-1958-vertigo-film",
+      "field": "timeline_date",
+      "original": {
+        "year": 1958,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1958,
+        "month": 5,
+        "day": 9,
+        "precision": "day",
+        "event_semantics": "Prima uscita cinematografica documentata a San Francisco",
+        "region": "Stati Uniti"
+      },
+      "source_ids": [
+        "vertigo",
+        "vertigo_bnf"
+      ],
+      "reason": "Proposta separata, non applicata agli originali o al catalogo. Distinte disponibilità, esperimenti, annuncio, progetto e fondazione."
+    },
+    {
+      "target_id": "history-1959-cobol",
+      "field": "timeline_date",
+      "original": {
+        "year": 1959,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1960,
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "event_semantics": "Prima versione del linguaggio, distinta dall’inizio del progetto",
+        "region": "Stati Uniti"
+      },
+      "source_ids": [
+        "cobol_ibm",
+        "cobol_draft"
+      ],
+      "reason": "Proposta separata, non applicata agli originali o al catalogo. Distinte disponibilità, esperimenti, annuncio, progetto e fondazione."
+    },
+    {
+      "target_id": "history-1959-the-twilight-zone-1959-tv-series",
+      "field": "timeline_date",
+      "original": {
+        "year": 1959,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1959,
+        "month": 10,
+        "day": 2,
+        "precision": "day",
+        "event_semantics": "Prima trasmissione televisiva della serie su CBS",
+        "region": "Stati Uniti"
+      },
+      "source_ids": [
+        "twilight_archive",
+        "twilight_object"
+      ],
+      "reason": "Proposta separata, non applicata agli originali o al catalogo. Distinte disponibilità, esperimenti, annuncio, progetto e fondazione."
+    }
+  ],
+  "editorial_review": {
+    "fidelity": "Tutte le dieci card confrontate con INPUT: conservati organizzatori, durata e presenze del seminario, acronimi, cambi di proprietà, tutte le località Fairchild, applicazioni dei linguaggi, quantità e funzioni dei dispositivi, cast e fonte letteraria di Vertigo, cinque stagioni e 92/156 episodi. Correzioni motivate nelle decisioni.",
+    "dates": "1956 Dartmouth resta evento estivo con precisione annuale; 1957 Fairchild resta fondazione e 1959 MOSFET resta prima realizzazione funzionante, non date di nascita personale o rilasci di uno specifico modello. Le voci evento esplicito conservano tale significato.",
+    "languages": [
+      "en",
+      "it",
+      "fr",
+      "de",
+      "es"
+    ],
+    "sources": "Fonti originali e licenze conservate in INPUT; URL e perimetro delle nuove consultazioni registrati. Nessuna lettura integrale di documenti non aperti dichiarata.",
+    "english_written_first": true,
+    "entry_count": 10,
+    "card_count_per_language": 10,
+    "reviewed_at": "2026-10-30T04:50:50.682628+00:00",
+    "english_summary_word_range": [
+      33,
+      41
+    ],
+    "structural_checks": "Schema, ID, ordine, numero di card e cinque lingue verificati dal validatore. Tutti i titoli presenti; nessun HTML o Markdown nei testi."
+  },
+  "status": "completed",
+  "validation": {
+    "valid": true,
+    "batch_id": "293-human-history",
+    "completed": true,
+    "entry_count": 10,
+    "card_count_per_language": 10,
+    "language_count": 5,
+    "translated_card_count": 50,
+    "entry_card_counts": {
+      "history-1956-dartmouth-workshop": 1,
+      "history-1956-ibm-305-ramac": 1,
+      "history-1957-fairchild-semiconductor": 1,
+      "history-1957-fortran": 1,
+      "history-1957-sputnik-1": 1,
+      "history-1958-integrated-circuit": 1,
+      "history-1958-vertigo-film": 1,
+      "history-1959-cobol": 1,
+      "history-1959-mosfet": 1,
+      "history-1959-the-twilight-zone-1959-tv-series": 1
+    },
+    "issue_counts": {
+      "history-1956-dartmouth-workshop": 0,
+      "history-1956-ibm-305-ramac": 0,
+      "history-1957-fairchild-semiconductor": 0,
+      "history-1957-fortran": 0,
+      "history-1957-sputnik-1": 0,
+      "history-1958-integrated-circuit": 0,
+      "history-1958-vertigo-film": 0,
+      "history-1959-cobol": 0,
+      "history-1959-mosfet": 0,
+      "history-1959-the-twilight-zone-1959-tv-series": 0
+    },
+    "summary_checks": [
+      {
+        "entry_id": "history-1956-dartmouth-workshop",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "history-1956-ibm-305-ramac",
+        "feature_id": null,
+        "english_summary_words": 34
+      },
+      {
+        "entry_id": "history-1957-fairchild-semiconductor",
+        "feature_id": null,
+        "english_summary_words": 41
+      },
+      {
+        "entry_id": "history-1957-fortran",
+        "feature_id": null,
+        "english_summary_words": 33
+      },
+      {
+        "entry_id": "history-1957-sputnik-1",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "history-1958-integrated-circuit",
+        "feature_id": null,
+        "english_summary_words": 34
+      },
+      {
+        "entry_id": "history-1958-vertigo-film",
+        "feature_id": null,
+        "english_summary_words": 34
+      },
+      {
+        "entry_id": "history-1959-cobol",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "history-1959-mosfet",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "history-1959-the-twilight-zone-1959-tv-series",
+        "feature_id": null,
+        "english_summary_words": 34
+      }
+    ],
+    "editorial_review": [
+      "history-1956-dartmouth-workshop/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1956-dartmouth-workshop/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1956-dartmouth-workshop/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1956-dartmouth-workshop/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1957-fortran/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1957-fortran/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1957-fortran/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1957-fortran/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1958-integrated-circuit/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1958-integrated-circuit/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1958-integrated-circuit/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1958-integrated-circuit/main/es: main title changed; check that this is a descriptive title and not an altered official name"
+    ],
+    "failures": []
+  },
+  "output_sha256": "3d4b820f5a624617ade9567a801ca9814788d05974aeb66ca1c61f5d4323afbe",
+  "expansion_assessments": [
+    {
+      "target_id": "history-1956-dartmouth-workshop",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1956-ibm-305-ramac",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1957-fairchild-semiconductor",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1957-fortran",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1957-sputnik-1",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1958-integrated-circuit",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1958-vertigo-film",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1959-cobol",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1959-mosfet",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1959-the-twilight-zone-1959-tv-series",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    }
+  ]
+}

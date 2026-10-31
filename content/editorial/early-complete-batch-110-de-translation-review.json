@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "locale": "de",
+  "review": "Binding of exact independently approved complete candidate members; no new linguistic review substituted. Every full candidate SHA and independent PASS receipt checked, all current English five fields and translation hashes validated.",
+  "entries": [
+    {
+      "entry_id": "wikipedia-445075",
+      "source_fields_sha256": "90fbbbc95494b4df28aa4f3b17a000695863b869dc50f8330070d4ab76fafab2",
+      "translation_sha256": "3c510171d540e7f05557bb2dabfefafe1823227fedb3f66aae25691d09196877",
+      "independent_peer": "build/research/sfiii1997-four-language-completion/independent-all-fields-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "73eb204aed4f7f625a40481547b6b535f2ba30b68f4251ef8dbba959295d5aee",
+      "candidate_path": "build/research/sfiii1997-four-language-completion/sfiii-four-language-final-precise-peer-units-candidate.json",
+      "candidate_sha256": "1885dfd15fa5a87bc25b6b7f642940491bf3bbb42b75e6784f2d3e4508afdd41"
+    },
+    {
+      "entry_id": "wikipedia-756296",
+      "source_fields_sha256": "ecb45d3805fee2e6a9381be8d9204d7950ef98181cf431b7d89ee0b0520b8590",
+      "translation_sha256": "f05321c8668d4eb662653ab9899905898836856f10f7fe66454499dc3dd72221",
+      "independent_peer": "build/research/symphony1997-four-language-completion/independent-all-fields-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "2fc522d9044e39c1b8c0c9138c64cc2623dfc54ed05bcdb13d0f17ceddf09590",
+      "candidate_path": "build/research/symphony1997-four-language-completion/symphony-all-five-fields-four-language-full-reuse-fidelity-candidate.json",
+      "candidate_sha256": "c617aeb12559a342127dd4affa7f404562942245371bd5cab5c7e4436384edfb"
+    },
+    {
+      "entry_id": "wikipedia-876353",
+      "source_fields_sha256": "c1c32e85a130cc4270b4af4efa2f9e8635c3f419a8fca15c2a54d31eab83cc80",
+      "translation_sha256": "b91631ede9a820bd01f1bed673315a75980050ab64dcd5dd6c82e73924ca96cf",
+      "independent_peer": "build/research/theme-hospital1997-four-language-completion/independent-all-fields-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "2d2a39c0ca530d7bb702c878fe271ed4f479e71d444d142d01c8acb0df3eb61c",
+      "candidate_path": "build/research/theme-hospital1997-four-language-completion/theme-hospital-all-five-fields-four-language-full-reuse-fidelity-candidate.json",
+      "candidate_sha256": "87fca2ea2628f374b8c0235e9d941cc9347eb33170a04987bc2cc0d5f9a57453"
+    },
+    {
+      "entry_id": "workbook-05-23-atelier-marie-the-alchemist-of-salburg",
+      "source_fields_sha256": "c414fb3db8b9ed321a201fa2e8483f93406d2299d707cd1b7b7f9a8fbe7b533b",
+      "translation_sha256": "69a61ce2af170a7aa0b701332d61918c467f39602e4cac0d064080b54f97a107",
+      "independent_peer": "build/research/atelier-marie1997-four-language-completion/independent-all-fields-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "73f03193b4a8cf30ca1557f14fd44ce310c781bb64d7b9253a9f5e57e69b22b3",
+      "candidate_path": "build/research/atelier-marie1997-four-language-completion/atelier-marie-four-language-final-precise-peer-units-candidate.json",
+      "candidate_sha256": "1d6d537984d685315933c40b6d27851ef5a606768d059af92a483875cc1c1336"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "status": "PASS",
+  "locale": "it",
+  "entries": [
+    {
+      "entry_id": "wikipedia-52561690",
+      "source_fields_sha256": "a2a58f70829e19c449a3317bebcfb50748f4eb4abb05a46fe193c26ee06c4848",
+      "translation_sha256": "1cbcc7a756a9a22534075f45fc11c199293730524a29119923d9e23a66ce32a5",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch329/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "6f5f3037a4d6820848c8886cd190cab28586b5c848589b2481eb1886aeda9f7b"
+    },
+    {
+      "entry_id": "wikipedia-64625832",
+      "source_fields_sha256": "5f5d16bb808631ea99eb0e499d4b3e7059ba9080033c719d241c159ab7f20973",
+      "translation_sha256": "20e49b9159826eb4c47768fe001d64212d0f845ad7138adedb76179ff6a78a25",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch329/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "6f5f3037a4d6820848c8886cd190cab28586b5c848589b2481eb1886aeda9f7b"
+    },
+    {
+      "entry_id": "wikipedia-64315976",
+      "source_fields_sha256": "06b138b4aa982ea9cb7bdaa3a073c4aa62a2a2f82ee3557eaac4df96b8b2a291",
+      "translation_sha256": "4f6f358f308a916f4e2d6486d99b87760c4715a33331447198ed557a93b5cabc",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch329/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "6f5f3037a4d6820848c8886cd190cab28586b5c848589b2481eb1886aeda9f7b"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "/root/category_audit",
+    "actual_receipt": "build/research/catalog-2021-chronological/march-three-private/independent-category-audit-approval.json",
+    "actual_receipt_sha256": "777e73f9c67e7120b28b07362e492a8c91c5da787df9bade7e81b6b0c60f67fa",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "/root/category_audit",
+      "index_sha256": "85aa9153294e847d7386b78bb87bb928c583f6976a0797de7ec239428cac94ea",
+      "scope": {
+        "english_paragraphs_read": 10,
+        "localized_paragraphs_read": 40,
+        "languages": [
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "images_personally_viewed": 17,
+        "contact_sheets_personally_viewed": 3,
+        "new_music_metadata_read": 3
+      },
+      "findings": [],
+      "primary_sources_read": [
+        {
+          "url": "https://www.usj.co.jp/company/news/2021/0318/",
+          "finding": "March18,2021 original Osaka opening and Miyamoto ceremony photographs match the date and selected original images."
+        },
+        {
+          "url": "https://www.square-enix-games.com/en_US/home/balan-wonderworld-available-now",
+          "finding": "March26,2021 original platform release confirmed."
+        },
+        {
+          "url": "https://www.jp.square-enix.com/music/sem/page/bww/en/",
+          "finding": "Official English track names, March15mini-album distinct from March31fullalbum, arrangements explicitly separated."
+        },
+        {
+          "url": "https://news.xbox.com/en-us/2021/03/17/creating-musical-happiness-for-balan-wonderworld/",
+          "finding": "First-person RyoYamazaki musical theatre score context matches the article."
+        },
+        {
+          "url": "https://news.ea.com/press-releases/press-releases-details/2026/It-Takes-Two-Launches-on-Nintendo-Switch-2-with-Free-Upgrade-Available-for-Nintendo-Switch-Players-October-15/",
+          "finding": "Original2021 title and separate October15,2026 Switch2version confirmed, timezone16qualifier in source."
+        },
+        {
+          "url": "https://www.pushsquare.com/news/2026/04/it-takes-two-dev-hazelight-studios-celebrates-50-million-sales-across-all-its-ps5-ps4-co-op-games",
+          "finding": "Actual embedded first-party Hazelight April8,2026 sales statement identifies30million sales for ItTakesTwo, not aggregate50million or2024players."
+        }
+      ],
+      "boundaries": "No global writes. No new check or audition of unchanged ItTakesTwo3recordings. Three Balan official NexTone metadata/publicAAC read, no audio downloaded. All complete text and final contacts actually reviewed; root authorization remains separate.",
+      "owners": [
+        {
+          "entry_id": "wikipedia-52561690",
+          "source_sha256": "44a3de58c74260f7351dd13fd3d1b6181c3f41a4629cddf8eb77bab4d56b41a8",
+          "target_sha256": "1be7bb813b629944ced63d955257f049b2d121a8d8891848855ddf2b190e6862",
+          "contact_sha256": "6e5b868d79bfe14a5594ff960a6c04ee88254fb71f7fa5562948fa7c42341f44"
+        },
+        {
+          "entry_id": "wikipedia-64625832",
+          "source_sha256": "6df4bcbafb88a17bdd53f795a4a3cdf5ed265c590d54da9c50fe0cd0db150824",
+          "target_sha256": "25972c258bfb2a17647f5b437e86e27392c30e9a62587fae76aa181632732727",
+          "contact_sha256": "433f5798914b77a6c7985f6d75c493fb791ec8d1605e5bbe52504e0dd7edc5e3"
+        },
+        {
+          "entry_id": "wikipedia-64315976",
+          "source_sha256": "1c9f27bd34dca52b4b3e33a65033828fb1fb8e16acc37ab9e932cd8f943bfa18",
+          "target_sha256": "8d7a46d6fe83ea3bf751f436dad08debf76232b2850cc96105acd60caf145c9e",
+          "contact_sha256": "1f333a708ab6bd1fd3c19426914bdcca5388721897738443c6eec19bacf38263"
+        }
+      ],
+      "production_writes": false
+    }
+  }
+}

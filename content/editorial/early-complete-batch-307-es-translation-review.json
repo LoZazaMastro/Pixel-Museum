@@ -1,0 +1,126 @@
+{
+  "status": "PASS",
+  "locale": "es",
+  "entries": [
+    {
+      "entry_id": "workbook-04-16-anno-1800",
+      "source_fields_sha256": "18adb62c3d0a712e0b8414c4bd377ba9441379cfe4366b4db74b1e4e2ec11da5",
+      "translation_sha256": "6911f5a4be513d5ae169e206447435251e1dcbe7133f7439586801a8380989cd",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch307/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "b20bb9135606094cfa297f2d3b66bfe69511b70b2a35bf97b1b5ebb04efe1db4"
+    },
+    {
+      "entry_id": "wikipedia-45641123",
+      "source_fields_sha256": "dac2dfdb329d1edfa180b0b8b9a53a98acc54a831e3674d9c3f9d012626113cf",
+      "translation_sha256": "4cfb4aa67fcf2b88de87f2e495cf575914387d29aab0fc5dc979973af886d6a2",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch307/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "b20bb9135606094cfa297f2d3b66bfe69511b70b2a35bf97b1b5ebb04efe1db4"
+    },
+    {
+      "entry_id": "wikipedia-59947382",
+      "source_fields_sha256": "edb73593cde0a6afd283dbef0b72e0bc3192cdb8fdf0f2daeda32515bc70fa3c",
+      "translation_sha256": "93525661755b764df2fada04d8c8cc9ae72adbb851d3bf05d3a9e039b79e5780",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch307/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "b20bb9135606094cfa297f2d3b66bfe69511b70b2a35bf97b1b5ebb04efe1db4"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "editorial_continue",
+    "actual_receipt": "build/research/catalog-2019-chronological/root-april-june-three-private/independent-editorial-peer-approval.json",
+    "actual_receipt_sha256": "7e42f283f4d57cc68fd0d85eff22c8750fa08c611365e6c7b65ed4b408346f55",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "editorial_continue",
+      "scope": "Independent semantic, source, image and localization review of root-authored April–June 2019 private batch. No production admission.",
+      "index_sha256": "3cdb20e6b72c3f4c2a3e1fd0ab088c3f85fc496ea42ed8c171bd1dc9292655fd",
+      "owners": [
+        {
+          "entry_id": "workbook-04-16-anno-1800",
+          "slug": "anno",
+          "source": "build/research/catalog-2019-chronological/root-april-june-three-private/anno-source-private-candidate.json",
+          "source_sha256": "e30299c1678b710e42cf5f51ce8baa49b74696dd72cbf54fafd56a408f6513a8",
+          "target": "build/research/catalog-2019-chronological/root-april-june-three-private/anno-four-language-private-candidate.json",
+          "target_sha256": "726789fbff5df4c800f6c6a37607ea309001136f2cba49f51b57462cd3fdb9e2",
+          "english_cards": 4,
+          "localized_cards": 16,
+          "images": 7,
+          "tracks": 3,
+          "contact": "build/research/catalog-2019-chronological/root-april-june-three-private/anno-final-contact.jpg",
+          "contact_sha256": "f503cc4ff89b7d798d4c9e7dda0891b1e65e3d52dd7ca3dc8b11a811f14d0a64"
+        },
+        {
+          "entry_id": "wikipedia-45641123",
+          "slug": "outer-wilds",
+          "source": "build/research/catalog-2019-chronological/root-april-june-three-private/outer-wilds-source-private-candidate.json",
+          "source_sha256": "b9067516791eba60badc98c1df3fc0e2466f55f41d6307a73a68a791bf0c55cf",
+          "target": "build/research/catalog-2019-chronological/root-april-june-three-private/outer-wilds-four-language-private-candidate.json",
+          "target_sha256": "581d3cec1b8e31430947a7d7034bf46c951f6c3a64af6b1165b8a54aefe1f36a",
+          "english_cards": 5,
+          "localized_cards": 20,
+          "images": 7,
+          "tracks": 27,
+          "contact": "build/research/catalog-2019-chronological/root-april-june-three-private/outer-wilds-final-contact.jpg",
+          "contact_sha256": "6bbe1fedb0ce6c631f9d35f7b70ce8fc002e2277e311264d508849e75ef7db79"
+        },
+        {
+          "entry_id": "wikipedia-59947382",
+          "slug": "mario-maker2",
+          "source": "build/research/catalog-2019-chronological/root-april-june-three-private/mario-maker2-source-private-candidate.json",
+          "source_sha256": "fc0ee3edfbdab2ea8b5f56e9b23d6144bf5e76bbd40060bde77d61cceec00a92",
+          "target": "build/research/catalog-2019-chronological/root-april-june-three-private/mario-maker2-four-language-private-candidate.json",
+          "target_sha256": "dd8798c1eff70fa651082c6b01102bdd2bf1267340fd590695c5206efd3570d4",
+          "english_cards": 2,
+          "localized_cards": 8,
+          "images": 4,
+          "tracks": 281,
+          "contact": "build/research/catalog-2019-chronological/root-april-june-three-private/mario-maker2-final-contact.jpg",
+          "contact_sha256": "ca391e1b940427de4b87f78092b7d59ef1305db44e2e1edacb9a79966aef08b2"
+        }
+      ],
+      "read_english_paragraphs": 11,
+      "read_localized_paragraphs": 44,
+      "actual_contact_sheets_viewed": 3,
+      "actual_selected_images_viewed": 18,
+      "resolved_findings": [
+        {
+          "owner": "outer-wilds",
+          "field": "translations.de.body[1]",
+          "before": "Spielleiters Alex Beachum",
+          "after": "Regisseurs Alex Beachum",
+          "reason": "Director refers to the game director, not a role-playing game master. Final corrected candidate explicitly reread."
+        }
+      ],
+      "primary_review": [
+        {
+          "url": "https://news.ubisoft.com/en-us/article/4uQMuOziiPscsPqRmtCkFx/anno-1800-available-now-on-pc",
+          "finding": "Publisher launch date and production/trade systems agree with the finite text."
+        },
+        {
+          "url": "https://dynamedion.com/news/anno-1800/",
+          "finding": "Composer studio confirms score and named composition staff; the two new Ubisoft Music publications identify the same original game album."
+        },
+        {
+          "url": "https://www.mobiusdigitalgames.com/news/weve-achieved-liftoff",
+          "finding": "Developer announcement is May 30, 2019."
+        },
+        {
+          "url": "https://www.mobiusdigitalgames.com/press.html",
+          "finding": "Developer chronology puts Annapurna partnership in 2016 and later platform releases in 2022 and 2023."
+        },
+        {
+          "url": "https://www.mobiusdigitalgames.com/news/echoes-of-the-eye-is-here",
+          "finding": "Original September 2021 expansion announcement identifies PC, PS4 and Xbox One."
+        },
+        {
+          "url": "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-games/Super-Mario-Maker-2-1514009.html",
+          "finding": "Original Switch release date and original course-editor modes agree with selected screenshots."
+        }
+      ],
+      "music_review": "Existing 27 Outer Wilds and 281 Mario Maker 2 soundtrack records are exactly preserved. The existing Anno cue is preserved; metadata receipts for the two new Ubisoft Music original album publications were read and show public AAC formats. No redundant codec resolution or audio downloads.",
+      "media_review": "All three final sheets viewed. Anno chapter imagery covers city, social and maritime context. Outer Wilds base-game anglerfish is explicitly distinguished from expansion artwork; ship interior is honestly described as contextual, not a close-up of the log. Mario Maker 2 replaces case backs with original 784x448 Nintendo course editors without upscale.",
+      "remaining_findings": [],
+      "production_writes": false
+    }
+  }
+}

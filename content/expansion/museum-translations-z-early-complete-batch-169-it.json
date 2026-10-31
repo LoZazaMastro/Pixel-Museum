@@ -1,0 +1,201 @@
+{
+  "schema_version": 1,
+  "locale": "it",
+  "source_language": "en",
+  "publication_status": "validated",
+  "translation_method": "Complete source-bound translations independently read clause-by-clause, including exact-source reused units; explicit semantic repairs retained.",
+  "independent_review": "content/editorial/early-complete-batch-169-it-translation-review.json",
+  "entries": [
+    {
+      "entry_id": "wikipedia-575509",
+      "source": {
+        "title": "Half-Life 2",
+        "subtitle": "",
+        "summary": "Half-Life 2 is a 2004 first-person shooter (FPS) game developed and published by Valve Corporation.",
+        "body": [
+          "Half-Life 2 is a 2004 first-person shooter (FPS) game developed and published by Valve Corporation. It was published for Windows on Valve's digital distribution service, Steam. Like the original Half-Life (1998), Half-Life 2 combines combat, puzzles and storytelling, and adds features such as vehicles and physics-based gameplay. The player controls Gordon Freeman, who joins a resistance effort to liberate Earth from the alien Combine empire.",
+          "Half-Life 2 was created using Valve's Source game engine, which was developed simultaneously. Development lasted five years and cost US $40 million. Valve's president, Gabe Newell, set his team the goal of redefining the FPS genre. They integrated the Havok physics engine, which simulates real-world physics, to reinforce the sense of presence and create new gameplay. They also developed the characterization, with more detailed character models and animations.",
+          "Valve announced Half-Life 2 at E3 2003 with a release date of September of that year. They failed to meet the release date, leading to fan backlash. In October, the unfinished source code was published online, leading to more backlash and damage to the team's morale.",
+          "Half-Life 2 was released on Steam on November 16, 2004. It won 39 Game of the Year awards and, like its predecessor, has been cited as one of the most influential FPS games and among the greatest games ever made. It was ported to the Xbox, the Xbox 360, the PlayStation 3, macOS, and Linux. By 2011, it had sold 12 million copies. Half-Life 2 was followed by the free extra level Lost Coast (2005) and the episodic sequels Episode One (2006) and Episode Two (2007). In 2020, after canceling Episode Three and several further Half-Life projects, Valve released a prequel, Half-Life: Alyx."
+        ],
+        "story_headings": [
+          "Physics joins combat and storytelling",
+          "Building Source and a sense of presence",
+          "A missed deadline and a source-code leak",
+          "Steam release and a continuing influence"
+        ]
+      },
+      "source_fields_sha256": "7c7f55b07061db8ad7a738f3192b72bd76208e79547b567505fcdc93554564bf",
+      "translation": {
+        "title": "Half-Life 2",
+        "subtitle": "",
+        "summary": "Half-Life 2 è uno sparatutto in prima persona (FPS) del 2004 sviluppato e pubblicato da Valve Corporation.",
+        "body": [
+          "Half-Life 2 è uno sparatutto in prima persona (FPS) del 2004 sviluppato e pubblicato da Valve Corporation. Fu pubblicato per Windows attraverso Steam, il servizio di distribuzione digitale di Valve. Come l'originale Half-Life del 1998, combina combattimenti, enigmi e narrazione, aggiungendo elementi come i veicoli e meccaniche basate sulla fisica. Il giocatore controlla Gordon Freeman, che si unisce alla resistenza per liberare la Terra dall'impero alieno dei Combine.",
+          "Half-Life 2 fu realizzato con il motore Source di Valve, sviluppato contemporaneamente al gioco. La produzione durò cinque anni e costò 40 milioni di dollari. Gabe Newell, presidente di Valve, assegnò alla squadra l'obiettivo di ridefinire il genere degli sparatutto in prima persona. Gli sviluppatori integrarono il motore fisico Havok, che simula la fisica del mondo reale, per rafforzare il senso di presenza e creare nuove meccaniche. Lavorarono anche sulla caratterizzazione, con modelli e animazioni dei personaggi più dettagliati.",
+          "Valve annunciò Half-Life 2 all'E3 del 2003, indicandone l'uscita per settembre dello stesso anno. La scadenza non fu rispettata, provocando reazioni negative fra gli appassionati. In ottobre il codice sorgente incompleto fu pubblicato online, causando altre proteste e danneggiando il morale della squadra.",
+          "Half-Life 2 uscì su Steam il 16 novembre 2004. Vinse 39 premi come gioco dell'anno e, come il predecessore, è stato citato fra gli FPS più influenti e i migliori giochi mai realizzati. Fu convertito per Xbox, Xbox 360, PlayStation 3, macOS e Linux. Entro il 2011 aveva venduto 12 milioni di copie. Seguirono il livello aggiuntivo gratuito Lost Coast nel 2005 e i seguiti a episodi Episode One nel 2006 ed Episode Two nel 2007. Nel 2020, dopo aver cancellato Episode Three e diversi altri progetti Half-Life, Valve pubblicò il prequel Half-Life: Alyx."
+        ],
+        "story_headings": [
+          "La fisica si unisce al combattimento e alla narrazione",
+          "Costruire Source e un senso di presenza",
+          "Una scadenza mancata e la fuga del codice sorgente",
+          "L’uscita su Steam e un’influenza duratura"
+        ]
+      },
+      "translation_sha256": "93bc4c0656a52a6badd455ec363e6ef2b8778ef961a355dc30800b4f5384e0ff"
+    },
+    {
+      "entry_id": "feature-valve-team-tools",
+      "source": {
+        "title": "Build the tool beside its user",
+        "subtitle": "",
+        "summary": "A production method shapes the playable world.",
+        "body": [
+          "Ken Birdwell's 1999 account of Half-Life describes a prototype assembled from the promising parts of an unsatisfying game. A small group put working ideas into one level, kept the enjoyable variations and cut others. A new software feature had to become something practical enough to build quickly. Playing that shared result gave the wider team a direction it could recognize. The prototype was therefore more than a demonstration for someone outside the studio: it helped colleagues discover what they wanted the rest of the game to become.",
+          "Birdwell also advises programmers to work directly beside artists while introducing technology into a sample part of the game. Watching what someone attempts can reveal where an interface needs simplification, documentation or another capability. He then suggests letting that artist demonstrate the result to colleagues. The account treats adoption as part of building a useful tool. A feature can exist in code without yet becoming something a team understands, trusts and regularly uses to create the places a player will eventually encounter.",
+          "The later Half-Life 2 production account describes several small design groups rather than one central group. Each included programmers and level designers who depended on one another's work, including an engine programmer able to supply required technology. Sharing an office helped them decide which requests mattered most. The authors describe those relationships as a way to keep practical customers close to the people building a system. A proposed capability could be examined against the level that needed it instead of waiting for a distant handover.",
+          "Artists, acting specialists and sound production also had to meet those groups inside the levels. The 2005 account describes provisional sounds supporting prototypes before the final treatment followed a more stable design. Acting work supplied goals, rewards and animation, with some story heavy spaces receiving its own design attention. These stages did not make each craft independent. A changed encounter could affect a model, a line or a sound, so the playable level became the place where several kinds of work had to function together."
+        ],
+        "story_headings": [
+          "A small level changes the direction",
+          "A feature needs someone to use it",
+          "The group has a demanding customer",
+          "Several crafts meet in one level"
+        ]
+      },
+      "source_fields_sha256": "b819591320086aaf07e9c52d4ac559cc585ce75848c02ab2d792eed3ce3baf8d",
+      "translation": {
+        "title": "Costruire lo strumento accanto a chi lo usa",
+        "subtitle": "",
+        "summary": "Un metodo di produzione dà forma al mondo di gioco.",
+        "body": [
+          "Nel suo resoconto del 1999 su Half-Life, Ken Birdwell descrive un prototipo composto dalle parti promettenti di un gioco insoddisfacente. Un piccolo gruppo raccolse idee funzionanti in un livello, conservò le varianti divertenti e ne eliminò altre. Una nuova funzione software doveva diventare qualcosa di abbastanza pratico da poter essere costruito rapidamente. Giocare a quel risultato condiviso diede al resto della squadra una direzione riconoscibile. Il prototipo non era quindi soltanto una dimostrazione per chi si trovava fuori dallo studio: aiutava i colleghi a scoprire che cosa volevano far diventare il resto del gioco.",
+          "Birdwell consiglia inoltre ai programmatori di lavorare direttamente accanto agli artisti mentre introducono una tecnologia in una parte campione del gioco. Osservare i tentativi di una persona può rivelare dove un'interfaccia richiede semplificazioni, documentazione o nuove capacità. Suggerisce poi di lasciare che sia quell'artista a mostrare il risultato ai colleghi. Il resoconto considera l'adozione parte della costruzione di uno strumento utile. Una funzione può esistere nel codice senza essere ancora diventata qualcosa che la squadra comprende, ritiene affidabile e usa regolarmente per creare i luoghi che il giocatore incontrerà.",
+          "Il successivo resoconto sulla produzione di Half-Life 2 descrive diversi piccoli gruppi di progettazione, anziché un unico gruppo centrale. Ciascuno comprendeva programmatori e progettisti di livelli che dipendevano dal lavoro reciproco, fra cui un programmatore del motore capace di fornire la tecnologia necessaria. Condividere un ufficio li aiutava a decidere quali richieste contassero di più. Gli autori descrivono questi rapporti come un modo di tenere gli utilizzatori concreti vicino a chi costruisce un sistema. Una capacità proposta poteva essere valutata sul livello che ne aveva bisogno, senza attendere un passaggio di consegne a distanza.",
+          "Anche gli artisti, gli specialisti della recitazione e la produzione sonora dovevano incontrare quei gruppi all'interno dei livelli. Il resoconto del 2005 descrive suoni provvisori a sostegno dei prototipi, prima che il trattamento definitivo seguisse un progetto più stabile. Il lavoro sulla recitazione forniva obiettivi, ricompense e animazioni, mentre alcuni spazi con una forte componente narrativa ricevevano attenzione progettuale specifica. Queste fasi non rendevano indipendenti i diversi mestieri. Un incontro modificato poteva influire su un modello, una battuta o un suono: il livello giocabile diventava così il luogo dove diversi tipi di lavoro dovevano funzionare insieme."
+        ],
+        "story_headings": [
+          "Un piccolo livello cambia la direzione",
+          "Una funzione ha bisogno di qualcuno che la usi",
+          "Il gruppo ha un utilizzatore esigente",
+          "Diversi mestieri si incontrano in un livello"
+        ]
+      },
+      "translation_sha256": "6fe12ba77c7b9d7f855026ff05dcb8e40da4251bde5ad373b00f1d94a5fae69e"
+    },
+    {
+      "entry_id": "wikipedia-739184",
+      "source": {
+        "title": "Tekken 5",
+        "subtitle": "",
+        "summary": "Tekken 5 (鉄拳5) is a 2004 fighting game developed and published by Namco for arcades, before being ported to the PlayStation 2 in 2005.",
+        "body": [
+          "Tekken 5 (鉄拳5) is a 2004 fighting game developed and published by Namco for arcades, before being ported to the PlayStation 2 in 2005. It is the fifth main game in the Tekken series, marking the tenth anniversary of the series. The game is set shortly after the events of Tekken 4 featuring a new antagonist named Jinpachi Mishima taking over the Mishima Zaibatsu while a sidestory focuses on the protagonist Jin Kazama as he faces several enemies from the G Corporation. The home version also contains a collector's edition of sorts, as it includes the arcade versions of Tekken, Tekken 2, Tekken 3, and StarBlade.",
+          "The game reverts several major gameplay changes introduced in Tekken 4, such as uneven stage terrain, in favor of a more fluid gameplay akin to the older games in the series. It is also the first game in the series to feature the ability to customize characters with accessories, clothing, and other aesthetic items purchased with in-game currency. There are 32 fighters to choose from, including five new fighters as well as Jin's alter-ego Devil Jin.",
+          "The arcade version of the game was upgraded to Tekken 5.1 exclusively for the NAMCO 256 system on July 14, 2005, which had mostly balance changes to the gameplay including removing the infamous Double Stinger infinite combo of Steve Fox. It was then followed up with the final update Tekken 5: Dark Resurrection which was released in 2005 and later ported to the PlayStation Portable (as Tekken: Dark Resurrection) and the PlayStation 3. Tekken 5 was a critical and commercial success, selling over 9.43 million copies  . Critics praised the return of classic gameplay features and the large amount of replay value provided by the PlayStation 2 port though the final boss Jinpachi Mishima was criticized for being too powerful, while Jin's mini-game story mode Devil Within was perceived as \"boring\" in comparison to the fighting game main Story mode which was open to every character. The sequel entitled Tekken 6 was released in 2007."
+        ],
+        "story_headings": [
+          "Tekken 5",
+          "The design",
+          "The design"
+        ]
+      },
+      "source_fields_sha256": "c4e4ab7ab826fd106b467cff305336bfd925cf909c1ed0440d1e4c3b352cb951",
+      "translation": {
+        "title": "Tekken 5",
+        "subtitle": "",
+        "summary": "Tekken 5 (鉄拳5) è un picchiaduro del 2004 sviluppato e pubblicato da Namco per le sale giochi, prima di essere convertito per PlayStation 2 nel 2005.",
+        "body": [
+          "Tekken 5 (鉄拳5) è un picchiaduro del 2004 sviluppato e pubblicato da Namco per le sale giochi, prima di essere convertito per PlayStation 2 nel 2005. È il quinto capitolo principale della serie Tekken e ne celebra il decimo anniversario. Ambientato poco dopo Tekken 4, introduce l'antagonista Jinpachi Mishima, che prende il controllo della Mishima Zaibatsu, mentre una storia secondaria segue Jin Kazama contro diversi nemici della G Corporation. La versione domestica comprende anche una sorta di raccolta da collezione, con le edizioni arcade di Tekken, Tekken 2, Tekken 3 e StarBlade.",
+          "Il gioco annulla diversi cambiamenti importanti introdotti in Tekken 4, come il terreno irregolare delle arene, a favore di combattimenti più fluidi e vicini ai primi capitoli. È anche il primo della serie a consentire la personalizzazione dei personaggi con accessori, abiti e altri elementi estetici acquistati con la valuta di gioco. Si può scegliere fra 32 combattenti, inclusi cinque nuovi personaggi e l'alter ego di Jin, Devil Jin.",
+          "La versione arcade fu aggiornata a Tekken 5.1 esclusivamente per il sistema NAMCO 256 il 14 luglio 2005. L'aggiornamento riguardava soprattutto il bilanciamento e rimuoveva, fra l'altro, la famigerata combinazione infinita Double Stinger di Steve Fox. Seguì l'aggiornamento finale Tekken 5: Dark Resurrection, uscito nel 2005 e poi convertito per PlayStation Portable, come Tekken: Dark Resurrection, e PlayStation 3. Tekken 5 fu un successo critico e commerciale, con oltre 9,43 milioni di copie vendute. I critici lodarono il ritorno delle meccaniche classiche e la grande rigiocabilità della versione PlayStation 2, ma giudicarono troppo potente il boss finale Jinpachi Mishima. La modalità narrativa del minigioco Devil Within di Jin fu considerata «noiosa» rispetto alla modalità Storia principale del picchiaduro, disponibile per ogni personaggio. Il seguito Tekken 6 uscì nel 2007."
+        ],
+        "story_headings": [
+          "Tekken 5",
+          "Il design",
+          "Il design"
+        ]
+      },
+      "translation_sha256": "db25bd850ddb0bc9e4db01564aabf733c54403afa4135cde4acca08f4ae9169b"
+    },
+    {
+      "entry_id": "wikipedia-613343",
+      "source": {
+        "title": "Metal Gear Solid 3: Snake Eater",
+        "subtitle": "",
+        "summary": "Metal Gear Solid 3: Snake Eater is a 2004 action-adventure stealth game developed and published by Konami for the PlayStation 2.",
+        "body": [
+          "Metal Gear Solid 3: Snake Eater is a 2004 action-adventure stealth game developed and published by Konami for the PlayStation 2. Written, produced and directed by Hideo Kojima, the game is the fifth mainline installment in the Metal Gear series and the first chronologically, serving as a prequel to the entire series. Set in 1964, the story centers on the FOX operative codenamed Naked Snake as he attempts to rescue Russian rocket scientist Nikolai Sokolov, sabotage the experimental superweapon Shagohod, and assassinate his defected former mentor, the Boss. While previous games were set in a primarily urban environment, Metal Gear Solid 3 adopts a 1960s Soviet jungle setting. Multiple new gameplay elements are added to match the setting, most notably camouflage, a new CQC combat system, player stamina that can be replenished by eating scavenged food, and an injury and treatment system.",
+          "Initially supposed to be developed for the PlayStation 3, Kojima moved development to the PlayStation 2 due to the long wait for the console. The jungle setting was difficult to develop for the game, requiring a new collision engine and planned features to be cut. Harry Gregson-Williams and Norihiko Hibino returned from Metal Gear Solid 2: Sons of Liberty (2001) to compose the score, with the latter writing the game's opening theme, \"Snake Eater\". The game was released in late 2004 in North America and Japan, and in early 2005 in Europe and Australia. An expanded edition, titled Metal Gear Solid 3: Subsistence, was released in Japan in late 2005, then in North America, Europe and Australia in 2006; this version notably added a third-person camera to the main game and the online multiplayer component Metal Gear Online.",
+          "Metal Gear Solid 3 was met with critical acclaim, with many considering it an improvement over Sons of Liberty. Critics praised the narrative, characters, survival elements, and graphics, but some of the new gameplay mechanics and dated camera system were met with a more mixed reaction; the later Subsistence version would be praised for rectifying these issues. The game was also a commercial success, selling more than four million copies worldwide, and has since been considered one of the greatest video games of all time. A numbered sequel, Metal Gear Solid 4: Guns of the Patriots, was released in 2008, while a narrative sequel, Metal Gear Solid: Peace Walker, was released in 2010. A remaster was included in the Metal Gear Solid HD Collection (2011), which was rereleased in the Metal Gear Solid: Master Collection Vol. 1 (2023) compilation. A remake, Metal Gear Solid Delta: Snake Eater, was released in 2025."
+        ],
+        "story_headings": []
+      },
+      "source_fields_sha256": "145ebeff8cd6b92fac651694132f552b5f419e8f5f528eb520d8b2ac5b508e4a",
+      "translation": {
+        "title": "Metal Gear Solid 3: Snake Eater",
+        "subtitle": "",
+        "summary": "Metal Gear Solid 3: Snake Eater è un gioco d'azione, avventura e infiltrazione del 2004 sviluppato e pubblicato da Konami per PlayStation 2.",
+        "body": [
+          "Metal Gear Solid 3: Snake Eater è un gioco d'azione, avventura e infiltrazione del 2004 sviluppato e pubblicato da Konami per PlayStation 2. Scritto, prodotto e diretto da Hideo Kojima, è il quinto capitolo principale di Metal Gear e il primo in ordine cronologico, fungendo da prequel per l'intera serie. Ambientato nel 1964, segue l'agente FOX dal nome in codice Naked Snake, che deve salvare lo scienziato missilistico russo Nikolai Sokolov, sabotare la superarma sperimentale Shagohod e assassinare la sua ex mentore disertrice, The Boss. Rispetto agli ambienti prevalentemente urbani dei precedenti capitoli, adotta una giungla sovietica degli anni Sessanta. Introduce meccaniche adatte all'ambientazione, soprattutto mimetizzazione, il nuovo sistema di combattimento CQC, una resistenza recuperabile mangiando cibo trovato sul posto e un sistema di ferite e cure.",
+          "Inizialmente previsto per PlayStation 3, fu spostato da Kojima su PlayStation 2 a causa della lunga attesa per la nuova console. La giungla fu difficile da realizzare: richiese un nuovo motore delle collisioni e il taglio di funzioni previste. Harry Gregson-Williams e Norihiko Hibino tornarono da Metal Gear Solid 2: Sons of Liberty del 2001 per comporre la musica; Hibino scrisse il tema d'apertura «Snake Eater». Il gioco uscì alla fine del 2004 in Nord America e Giappone e all'inizio del 2005 in Europa e Australia. L'edizione ampliata Metal Gear Solid 3: Subsistence uscì in Giappone alla fine del 2005 e in Nord America, Europa e Australia nel 2006. Aggiungeva in particolare una telecamera in terza persona al gioco principale e la componente multigiocatore online Metal Gear Online.",
+          "Metal Gear Solid 3 fu acclamato dalla critica e molti lo considerarono un miglioramento rispetto a Sons of Liberty. Furono lodati storia, personaggi, sopravvivenza e grafica, mentre alcune nuove meccaniche e la telecamera ormai datata suscitarono reazioni più contrastanti; la successiva edizione Subsistence fu apprezzata per aver rimediato a questi problemi. Fu anche un successo commerciale, con oltre quattro milioni di copie vendute nel mondo, ed è stato poi considerato fra i migliori videogiochi di sempre. Il seguito numerato Metal Gear Solid 4: Guns of the Patriots uscì nel 2008, mentre il seguito narrativo Metal Gear Solid: Peace Walker arrivò nel 2010. Una versione rimasterizzata fu inclusa nella Metal Gear Solid HD Collection del 2011 e riproposta nella raccolta Metal Gear Solid: Master Collection Vol. 1 del 2023. Il remake Metal Gear Solid Delta: Snake Eater uscì nel 2025."
+        ],
+        "story_headings": []
+      },
+      "translation_sha256": "b10f23ec9176889ce37aa25d82af86ea73143a68abc282acd22516e526f21c69"
+    },
+    {
+      "entry_id": "underground",
+      "source": {
+        "title": "Need for Speed: Underground 2",
+        "subtitle": "Need for Speed: Underground 2: Choose the Road, Build the Car",
+        "summary": "On November 15, 2004, Electronic Arts announces that Need for Speed: Underground 2 has reached North American stores and brings the tuner culture of the first Underground into a freely explorable city.",
+        "body": [
+          "On November 15, 2004, Electronic Arts announces that Need for Speed: Underground 2 has reached North American stores and brings the tuner culture of the first Underground into a freely explorable city. Bayview connects five districts through streets, highways and points of interest that the player must physically reach, turning the traditional menu into geography. Customization expands to cover both appearance and performance with thousands of combinations, while the dyno, tuning settings and specialized parts make setup part of progression. Rivals encountered on the road, hidden shops and scattered races create a less linear rhythm. The soundtrack, led by the \"Riders on the Storm\" remix featuring Snoop Dogg, ties the game to the urban culture of the period. Underground 2 thus makes the car, the city and visual identity parts of the same system.",
+          "Need for Speed: Underground 2 turns Bayview into a navigation structure. Five districts, highways and connections do not merely serve as racing backdrops: the player must cross them to find events, shops, garages and rivals. Electronic Arts presents the free-roaming world as one of the main innovations over the first Underground. The change alters the series' rhythm. Between competitions there is now driving time without a stopwatch, useful for learning shortcuts, testing modifications and building a memory of the city. An event is no longer just an item selected from a list, but a place occupying a position in the landscape. Bayview therefore makes the interface more diegetic: choosing what to do also means deciding where to go. This structure anticipates a relationship between open worlds and arcade racing that would become increasingly common in later years.",
+          "Underground 2 expands customization until the bodywork becomes a form of progression parallel to performance. Bumpers, side skirts, wheels, paint, vinyls, neon, audio systems and many other components can be combined in enormous numbers; Electronic Arts speaks of billions of possible configurations. The choice is not purely cosmetic, because the game also evaluates the car's visual impact and ties part of progression to the reputation built through tuning. In the early-2000s imagination, modifying a car meant declaring belonging to a specific culture of imports, street racing and the aftermarket. Underground 2 translates that culture into menus and rewards, but leaves enough freedom to create personal results, even deliberately excessive ones. The automobile therefore stops being a vehicle chosen at the start of a race: it becomes an ongoing project, recognizable before the lap time is ever measured.",
+          "Underground 2's customization also reaches beneath the bodywork. In addition to buying components, the player can adjust gear ratios, suspension, aerodynamics, the ECU and other parameters to adapt the car to different race types. The dyno makes these modifications observable through graphs and tests, introducing an almost technical vocabulary into an arcade racer. Becoming an engineer is not required for progression, but players who want to go deeper can understand why one setup favors acceleration, stability or top speed. Electronic Arts presents performance tuning as one of the sequel's central expansions. The feature matters because it separates two ideas that are often merged: owning a better part and knowing how to configure it. Underground 2 therefore turns the garage into a place of experimentation. The next race becomes the practical test of decisions made away from the road, connecting preparation and driving.",
+          "Bayview is more than the route between predefined events. During free roaming, the player can meet other drivers and challenge them to Outrun, an improvised race whose goal is to create enough distance from the opponent. There is no fixed circuit to memorize: intersections, traffic and knowledge of the city become part of the strategy. The mode exploits precisely what the open world adds to racing, because a challenge can begin anywhere and develop along roads not designed as a closed track. Shops and useful locations must also be physically discovered, rewarding players who explore less familiar districts. Underground 2 therefore uses the city as a system of opportunities, not merely a container. Driving without an immediate objective retains value because it can generate a race, reveal a garage or teach a connection that becomes useful later.",
+          "Underground 2's soundtrack opens with a collaboration created specifically for the game: Snoop Dogg performs the Doors' \"Riders on the Storm\" in a remix that becomes associated with Bayview. It is a deliberate meeting between a rock classic and early-2000s hip-hop culture, consistent with a game that mixes car brands, tuning, urban fashion and club culture. The EA Trax system alternates genres across garage, exploration and races, using music to change energy without interrupting the continuity of the city. The soundtrack is therefore not simply a catalog of contemporary tracks: it contributes to the game's cultural positioning and to the memory players retain of menus and neon-lit nights. Underground 2 demonstrates how a licensed song can become part of an experience's identity when it is selected, edited and repeated within very precise gameplay rituals.",
+          "Underground 2 brings part of its customization culture into online multiplayer on PlayStation 2, Xbox and PC. Racing against people changes the meaning of the car built in career mode: appearance, setup and vehicle choice become elements of social comparison as well as tools for beating artificial intelligence. Electronic Arts includes online play among the key launch features, at a time when console connectivity is not yet a uniform presence across racing games. The value lies in more than adding human opponents. The entire tuner fantasy, building a recognizable machine and proving what it can do, finds a natural space on the network. Underground 2 therefore connects garage and competition, personality and performance. Although those services now belong to history, this integration anticipates the way many later racing games would treat automotive culture as a persistently social experience."
+        ],
+        "story_headings": [
+          "Need for Speed: Underground 2: Choose the Road, Build the Car",
+          "The City Replaces the Menu",
+          "The Car Is a Build Visible to Others",
+          "Performance Is Tuned Instead of Merely Buying Parts",
+          "A Rival Met on the Road Creates a Race Without a Menu",
+          "Riders on the Storm Becomes a Gateway to Bayview",
+          "The Same Car Built in the Garage Enters Online Competition"
+        ]
+      },
+      "source_fields_sha256": "80120ba9086b0238d42f0ffa041508a22581b54671f0bda2232919a604c03fb2",
+      "translation": {
+        "title": "Need for Speed: Underground 2",
+        "subtitle": "Need for Speed: Underground 2: scegliere la strada, costruire l’auto",
+        "summary": "Il 15 novembre 2004 Electronic Arts annuncia l’arrivo nei negozi nordamericani di Need for Speed: Underground 2 e porta la cultura tuner del primo Underground dentro una città liberamente percorribile.",
+        "body": [
+          "Il 15 novembre 2004 Electronic Arts annuncia l’arrivo nei negozi nordamericani di Need for Speed: Underground 2 e porta la cultura tuner del primo Underground dentro una città liberamente percorribile. Bayview collega cinque quartieri con strade, autostrade e punti di interesse che il giocatore deve raggiungere fisicamente, trasformando il menu tradizionale in geografia. La personalizzazione cresce fino a coinvolgere estetica e prestazioni con migliaia di combinazioni, mentre banco prova, regolazioni e parti specializzate rendono la messa a punto parte della progressione. Rivali incontrati in strada, negozi nascosti e gare sparse costruiscono un ritmo meno lineare. La colonna sonora, aperta dal remix di “Riders on the Storm” con Snoop Dogg, lega il gioco alla cultura urbana dell’epoca. Underground 2 rende così automobile, città e identità visiva parti dello stesso sistema.",
+          "Need for Speed: Underground 2 trasforma Bayview in una struttura di navigazione. Cinque quartieri, autostrade e collegamenti non servono soltanto come sfondo delle gare: il giocatore deve attraversarli per trovare eventi, negozi, officine e rivali. Electronic Arts presenta il mondo liberamente esplorabile come una delle novità principali rispetto al primo Underground. Il cambiamento modifica il ritmo della serie. Fra una competizione e l’altra esiste ora un tempo di guida senza cronometro, utile per conoscere scorciatoie, provare modifiche e costruire una memoria della città. Un evento non è più soltanto una voce selezionata da un elenco, ma un luogo che occupa una posizione nel paesaggio. Bayview rende quindi l’interfaccia più diegetica: scegliere cosa fare significa anche decidere dove andare. Questa struttura anticipa una relazione fra open world e racing arcade che diventerà sempre più comune negli anni successivi.",
+          "Underground 2 amplia la personalizzazione fino a rendere la carrozzeria una forma di progressione parallela alle prestazioni. Paraurti, minigonne, cerchi, vernici, vinili, neon, impianti audio e molti altri componenti possono essere combinati in quantità enormi; Electronic Arts parla di miliardi di configurazioni possibili. La scelta non è puramente cosmetica, perché il gioco valuta anche l’impatto visivo dell’auto e collega parte dell’avanzamento alla reputazione costruita attraverso il tuning. Nell’immaginario dei primi anni Duemila, modificare una vettura significa dichiarare appartenenza a una cultura precisa fatta di import, street racing e aftermarket. Underground 2 traduce quella cultura in menu e ricompense, ma lascia abbastanza libertà da produrre risultati personali, anche volutamente eccessivi. L’automobile smette così di essere un veicolo scelto all’inizio della gara: diventa un progetto continuo, riconoscibile prima ancora che venga misurato il tempo sul giro.",
+          "La personalizzazione di Underground 2 entra anche sotto la carrozzeria. Oltre ad acquistare componenti, il giocatore può regolare rapporti del cambio, sospensioni, aerodinamica, ECU e altri parametri per adattare l’auto a tipi di gara differenti. Il banco prova rende queste modifiche osservabili attraverso grafici e test, introducendo un linguaggio quasi tecnico dentro un racing arcade. Non è necessario diventare ingegneri per progredire, ma chi vuole approfondire può capire perché una configurazione favorisce accelerazione, stabilità o velocità massima. Electronic Arts presenta il tuning delle prestazioni come una delle espansioni centrali del seguito. La funzione è importante perché separa due idee spesso sovrapposte: possedere una parte migliore e saperla configurare. Underground 2 trasforma così il garage in un luogo di sperimentazione. La gara successiva diventa la verifica pratica di decisioni prese lontano dalla strada, collegando preparazione e guida.",
+          "Bayview non è soltanto il percorso fra eventi prestabiliti. Durante il free roaming il giocatore può incontrare altri piloti e sfidarli in Outrun, una gara improvvisata in cui l’obiettivo è creare abbastanza distanza dall’avversario. Non esiste un circuito fisso da memorizzare: incroci, traffico e conoscenza della città diventano parte della strategia. La modalità sfrutta proprio ciò che l’open world aggiunge al racing, perché una sfida può iniziare in un punto qualunque e svilupparsi lungo strade non progettate come tracciato chiuso. Anche negozi e punti utili vanno scoperti fisicamente, premiando chi esplora quartieri meno familiari. Underground 2 usa quindi la città come sistema di opportunità, non soltanto come contenitore. Guidare senza un obiettivo immediato conserva valore perché può generare una gara, rivelare un’officina o insegnare un collegamento che tornerà utile più avanti.",
+          "La colonna sonora di Underground 2 apre con una collaborazione costruita appositamente per il gioco: Snoop Dogg interpreta “Riders on the Storm” dei Doors in un remix che diventa associato a Bayview. È un incontro programmatico fra un classico rock e la cultura hip hop dei primi Duemila, coerente con un gioco che mescola marche automobilistiche, tuning, moda urbana e club culture. Il sistema EA Trax alterna generi fra garage, esplorazione e gare, usando la musica per cambiare energia senza interrompere la continuità della città. La soundtrack non è quindi un semplice catalogo di brani contemporanei: contribuisce al posizionamento culturale del gioco e alla memoria che il pubblico conserva di menu e notti al neon. Underground 2 dimostra quanto una canzone su licenza possa diventare parte dell’identità di un’esperienza quando viene scelta, montata e ripetuta dentro rituali di gioco molto precisi.",
+          "Underground 2 porta parte della propria cultura di personalizzazione anche nel multiplayer online su PlayStation 2, Xbox e PC. Gareggiare contro persone cambia il significato dell’auto costruita in carriera: estetica, assetto e scelta del veicolo diventano elementi di confronto sociale oltre che strumenti per battere l’intelligenza artificiale. Electronic Arts include il gioco online fra le caratteristiche principali del lancio, in un periodo in cui la connettività console non è ancora una presenza uniforme in tutti i racing. Il valore non sta soltanto nell’aggiungere avversari umani. L’intera fantasia del tuner, costruire un mezzo riconoscibile e dimostrare cosa sa fare, trova uno spazio naturale nella rete. Underground 2 collega così garage e competizione, personalità e performance. Anche se i servizi appartengono ormai alla storia, questa integrazione anticipa il modo in cui molti racing successivi tratteranno il mondo automobilistico come esperienza persistentemente sociale."
+        ],
+        "story_headings": [
+          "Need for Speed: Underground 2: scegliere la strada, costruire l’auto",
+          "La città sostituisce il menu",
+          "L’auto è un progetto visibile agli altri",
+          "Le prestazioni si regolano invece di comprare soltanto pezzi",
+          "Un rivale incontrato per strada crea una gara senza menu",
+          "Riders on the Storm diventa una porta d’ingresso a Bayview",
+          "La stessa auto costruita nel garage entra nella competizione online"
+        ]
+      },
+      "translation_sha256": "f704fdf58b8d578c73eb23465736e415fb98893865b287e9411e64afa324ca24"
+    }
+  ]
+}

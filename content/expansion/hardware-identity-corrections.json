@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "policy": "Known hardware subjects are classified honestly. Only approved bundled models from models/index.json may illustrate them, except the original Game Boy Advance explicitly requested as an authentic product photograph. Regional branding and rejected prototypes are never substituted.",
+  "overrides": [
+    {
+      "id": "workbook-08-23-nintendo-64",
+      "kind": "console",
+      "approved_model_id": "",
+      "representation_note": "This stop concerns the 23 August 1993 Nintendo-Silicon Graphics agreement known as Project Reality. Any photograph of the retail Nintendo 64 illustrates the later 1996 console, not a 1993 prototype. The user selected image-only presentation; no 3D model is loaded."
+    },
+    {
+      "id": "daily-08-23",
+      "kind": "console",
+      "approved_model_id": "",
+      "representation_note": "This stop concerns the 23 August 1993 Nintendo-Silicon Graphics agreement known as Project Reality. Any photograph of the retail Nintendo 64 illustrates the later 1996 console, not a 1993 prototype. The user selected image-only presentation; no 3D model is loaded."
+    },
+    {
+      "id": "workbook-05-11-sega-saturn",
+      "kind": "console",
+      "approved_model_id": "sega-saturn",
+      "representation_note": "This stop concerns the 1995 North American launch decision. The approved Saturn model illustrates the hardware family; no claim is made that the source mesh documents a particular North American launch-unit revision.",
+      "model_caption": "Sega Saturn / retail hardware"
+    },
+    {
+      "id": "daily-05-11",
+      "kind": "console",
+      "approved_model_id": "sega-saturn",
+      "representation_note": "The approved Saturn model illustrates the hardware family, not a certified North American launch-unit revision.",
+      "model_caption": "Sega Saturn / retail hardware"
+    },
+    {
+      "id": "workbook-03-21-game-boy-advance",
+      "kind": "console",
+      "approved_model_id": null,
+      "representation_note": "Original AGB-001 Game Boy Advance, shown using an authentic identified product photograph by explicit user preference. Do not attach the rejected procedural model or substitute Game Boy Advance SP or Nintendo DS.",
+      "presentation": "photograph",
+      "explicit_user_exception": true
+    },
+    {
+      "id": "daily-03-21",
+      "kind": "console",
+      "approved_model_id": null,
+      "representation_note": "Original AGB-001 Game Boy Advance, shown using an authentic identified product photograph by explicit user preference. Do not attach the rejected procedural model or substitute Game Boy Advance SP or Nintendo DS.",
+      "presentation": "photograph",
+      "explicit_user_exception": true
+    },
+    {
+      "id": "workbook-09-14-nintendo-gamecube",
+      "kind": "console",
+      "approved_model_id": null,
+      "representation_note": "Authentic Nintendo GameCube product photograph. 3D presentation withdrawn by explicit user request; source model and licence archived unchanged.",
+      "presentation": "photograph",
+      "explicit_user_exception": true
+    },
+    {
+      "id": "daily-09-14",
+      "kind": "console",
+      "approved_model_id": null,
+      "representation_note": "Authentic Nintendo GameCube product photograph. 3D presentation withdrawn by explicit user request; source model and licence archived unchanged.",
+      "presentation": "photograph",
+      "explicit_user_exception": true
+    },
+    {
+      "id": "workbook-11-12-playstation-5",
+      "kind": "console",
+      "approved_model_id": "playstation-5",
+      "representation_note": "Approved detailed PlayStation5 console and controller source. Separate packaging excluded from the selected runtime assembly; original licensed mesh and materials retained.",
+      "model_caption": "Sony PlayStation5 / console and DualSense controller"
+    },
+    {
+      "id": "daily-11-18",
+      "kind": "console",
+      "approved_model_id": "wii-u-gamepad",
+      "model_caption": "Wii U GamePad controller and stand / accessory only",
+      "representation_note": "The approved 3D object is the original Wii U GamePad controller and stand, the system input device discussed in this article. The Wii U console body is not included in the model; this is not a complete console set."
+    },
+    {
+      "id": "workbook-03-02-nintendo-ds-lite",
+      "kind": "console",
+      "approved_model_id": "nintendo-ds-lite",
+      "representation_note": "Approved detailed Nintendo DS Lite revision2006. Do not label this source as the original2004Nintendo DS.",
+      "model_caption": "Nintendo DS Lite /2006revision"
+    },
+    {
+      "id": "daily-11-21",
+      "kind": "console",
+      "approved_model_id": "super-famicom",
+      "representation_note": "Approved original Japanese Super Famicom design. The separate source display cartridges are excluded by selected runtime groups; do not substitute for the distinct PAL SNES object.",
+      "model_caption": "Nintendo Super Famicom /Japanese1990design"
+    }
+  ]
+}

@@ -1,0 +1,2380 @@
+{
+  "schema_version": 1,
+  "updated": "2026-10-20",
+  "minimum_native_long_edge": 1600,
+  "policy": "Native source pixels only; no upscaling, synthetic replacement or changed hardware variants. Keep remote media and creator/source credits.",
+  "overrides": [
+    {
+      "entry_id": "tennis-for-two",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Tennis_For_Two_on_a_DuMont_Lab_Oscilloscope_Type_304-A.jpg/330px-Tennis_For_Two_on_a_DuMont_Lab_Oscilloscope_Type_304-A.jpg",
+      "action": "remove",
+      "reason": "Documented native source is below 1600 px long edge; no upscale or thumbnail enlargement is permitted.",
+      "native_dimensions": [
+        705,
+        626
+      ]
+    },
+    {
+      "entry_id": "tennis-for-two",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Tennis_for_Two_Machine_at_CAX_2010.jpg/1280px-Tennis_for_Two_Machine_at_CAX_2010.jpg",
+      "action": "replace",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Tennis_for_Two_Machine_at_CAX_2010.jpg/1920px-Tennis_for_Two_Machine_at_CAX_2010.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Tennis_for_Two_Machine_at_CAX_2010.jpg",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Tennis_for_Two_Machine_at_CAX_2010.jpg",
+        "title": "Tennis for Two — later recreation",
+        "creator": "Marlith",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "credit": "Marlith / Wikimedia Commons / CC BY-SA 3.0",
+        "width": 1920,
+        "height": 1440,
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 1920
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "brown-box",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/BrownBox.jpg/1280px-BrownBox.jpg",
+      "action": "replace",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/BrownBox.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/BrownBox.jpg",
+        "source_page": "https://commons.wikimedia.org/wiki/File:BrownBox.jpg",
+        "title": "The Brown Box hardware",
+        "creator": "George Hotelling",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "credit": "George Hotelling / Wikimedia Commons / CC BY-SA 2.0",
+        "width": 1800,
+        "height": 1200,
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 1800
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "brown-box",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Ralph_H._Baer_-_%22Brown_Box%22_prototype.png/1280px-Ralph_H._Baer_-_%22Brown_Box%22_prototype.png",
+      "action": "replace",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Ralph_H._Baer_-_%22Brown_Box%22_prototype.png/1920px-Ralph_H._Baer_-_%22Brown_Box%22_prototype.png",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/08/Ralph_H._Baer_-_%22Brown_Box%22_prototype.png",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Ralph_H._Baer_-_%22Brown_Box%22_prototype.png",
+        "title": "The Brown Box prototype — archival image",
+        "creator": "WMrapids",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "credit": "WMrapids / Wikimedia Commons / CC0",
+        "width": 1920,
+        "height": 2124,
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 2124
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "channel-f",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Fairchild-Channel-F.jpg/1280px-Fairchild-Channel-F.jpg",
+      "action": "replace",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Fairchild-Channel-F.jpg/1920px-Fairchild-Channel-F.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/34/Fairchild-Channel-F.jpg",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Fairchild-Channel-F.jpg",
+        "title": "Fairchild Channel F console",
+        "creator": "Evan-Amos",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "credit": "Evan-Amos / Wikimedia Commons / CC BY-SA 3.0",
+        "width": 1920,
+        "height": 1263,
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 1920
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "channel-f",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Jerry_Lawson_at_KJZZ_%28cropped%29.png/330px-Jerry_Lawson_at_KJZZ_%28cropped%29.png",
+      "action": "remove",
+      "reason": "Documented native source is below 1600 px long edge; no upscale or thumbnail enlargement is permitted.",
+      "native_dimensions": [
+        608,
+        462
+      ]
+    },
+    {
+      "entry_id": "channel-f",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Cartridge_Fairchild_Channel_F.jpg/330px-Cartridge_Fairchild_Channel_F.jpg",
+      "action": "remove",
+      "reason": "Documented native source is below 1600 px long edge; no upscale or thumbnail enlargement is permitted.",
+      "native_dimensions": [
+        1000,
+        1492
+      ]
+    },
+    {
+      "entry_id": "roberta-williams",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Roberta_Williams_Adventure_Game_Fan_Fair_Tacoma_Washington_July_2024_%28cropped%29.jpg/960px-Roberta_Williams_Adventure_Game_Fan_Fair_Tacoma_Washington_July_2024_%28cropped%29.jpg",
+      "action": "replace",
+      "reason": "Replaced an undersized portrait crop with its larger authentic uncropped source photograph.",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Roberta_Williams_Adventure_Game_Fan_Fair_Tacoma_Washington_July_2024.jpg/1920px-Roberta_Williams_Adventure_Game_Fan_Fair_Tacoma_Washington_July_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Roberta_Williams_Adventure_Game_Fan_Fair_Tacoma_Washington_July_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Roberta_Williams_Adventure_Game_Fan_Fair_Tacoma_Washington_July_2024.jpg",
+        "title": "Roberta Williams at Adventure Game Fan Fair in 2024",
+        "creator": "Guywelch2000",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "credit": "Guywelch2000 / Wikimedia Commons / CC BY 4.0",
+        "width": 1920,
+        "height": 1440,
+        "original_width": 2819,
+        "original_height": 2114,
+        "quality_verified": "Native original or standard thumbnail of actual larger photograph; full remote decode on 2026-10-20. No AI/upscale.",
+        "focal": {
+          "x": 0.5,
+          "y": 0.4
+        }
+      }
+    },
+    {
+      "entry_id": "roberta-williams",
+      "match_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/dtenqhpncx9pkahpery3.jpg",
+      "action": "remove",
+      "reason": "Actual original/downloaded image is below 1600 px long edge.",
+      "native_dimensions": [
+        1278,
+        1024
+      ]
+    },
+    {
+      "entry_id": "roberta-williams",
+      "match_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/sikxa1asllqzayb750qb.jpg",
+      "action": "remove",
+      "reason": "Actual original/downloaded image is below 1600 px long edge.",
+      "native_dimensions": [
+        1276,
+        1024
+      ]
+    },
+    {
+      "entry_id": "carol-shaw",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Carol_Shaw_Holding_Gold_River_Raid_Cartridge.jpg/1280px-Carol_Shaw_Holding_Gold_River_Raid_Cartridge.jpg",
+      "action": "replace",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Carol_Shaw_Holding_Gold_River_Raid_Cartridge.jpg/1920px-Carol_Shaw_Holding_Gold_River_Raid_Cartridge.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/5/59/Carol_Shaw_Holding_Gold_River_Raid_Cartridge.jpg",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Carol_Shaw_Holding_Gold_River_Raid_Cartridge.jpg",
+        "title": "Carol Shaw with her River Raid award",
+        "creator": "Carol B Shaw",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "credit": "Carol B Shaw / Wikimedia Commons / CC BY-SA 4.0",
+        "width": 1920,
+        "height": 2103,
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 2103
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "carol-shaw",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Carol_Shaw_photo.jpg/330px-Carol_Shaw_photo.jpg",
+      "action": "replace",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Carol_Shaw_photo.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Carol_Shaw_photo.jpg",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Carol_Shaw_photo.jpg",
+        "title": "Carol Shaw",
+        "creator": "Kate Szatmari",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "credit": "Kate Szatmari / Wikimedia Commons / CC0",
+        "width": 1080,
+        "height": 1620,
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 1620
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "karateka",
+      "match_url": "https://cdn.prod.website-files.com/63fe9c9ccd6a191fcb553ba6/64ac770fd6acbd789f56676d_karateka_webhero..jpg",
+      "action": "replace",
+      "image": {
+        "url": "https://cdn.prod.website-files.com/63fe9c9ccd6a191fcb553ba6/64ac770fd6acbd789f56676d_karateka_webhero..jpg",
+        "source_page": "https://www.digitaleclipse.com/games/karateka",
+        "title": "The Making of Karateka ? documentary artwork",
+        "creator": "Digital Eclipse / Jordan Mechner",
+        "license": "Copyright retained by the respective rights holders; remote editorial reference",
+        "credit": "Digital Eclipse / Jordan Mechner. Published image linked from the cited primary collection or publisher page.",
+        "original_url": "https://cdn.prod.website-files.com/63fe9c9ccd6a191fcb553ba6/64ac770fd6acbd789f56676d_karateka_webhero..jpg",
+        "width": 1280,
+        "height": 1615,
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 1615
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "tetris",
+      "match_url": "https://upload.wikimedia.org/wikipedia/commons/1/12/Alexey_Pajitnov_January_2008_cropped.jpg",
+      "action": "replace",
+      "reason": "Replaced an undersized portrait crop with its larger authentic uncropped source photograph.",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Alexey_Pajitnov_GDC_2024.jpg/1920px-Alexey_Pajitnov_GDC_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Alexey_Pajitnov_GDC_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Alexey_Pajitnov_GDC_2024.jpg",
+        "title": "Alexey Pajitnov at the 2024 Game Developers Conference",
+        "creator": "Official GDC",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "credit": "Official GDC / Wikimedia Commons / CC BY 2.0",
+        "width": 1920,
+        "height": 2880,
+        "original_width": 2168,
+        "original_height": 3252,
+        "quality_verified": "Native original or standard thumbnail of actual larger photograph; full remote decode on 2026-10-20. No AI/upscale.",
+        "focal": {
+          "x": 0.5,
+          "y": 0.4
+        }
+      }
+    },
+    {
+      "entry_id": "game-boy",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Game-Boy-Original.jpg/1280px-Game-Boy-Original.jpg",
+      "action": "replace",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Game-Boy-Original.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Game-Boy-Original.jpg",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Game-Boy-Original.jpg",
+        "title": "Original Nintendo Game Boy",
+        "creator": "Evan-Amos",
+        "license": "Public domain",
+        "license_url": "",
+        "credit": "Evan-Amos / Wikimedia Commons / Public domain",
+        "width": 1500,
+        "height": 2400,
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 2400
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "game-boy",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Game-Boy-FL.jpg/1280px-Game-Boy-FL.jpg",
+      "action": "replace",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Game-Boy-FL.jpg/1920px-Game-Boy-FL.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Game-Boy-FL.jpg",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Game-Boy-FL.jpg",
+        "title": "Game Boy — front-left view",
+        "creator": "Evan-Amos",
+        "license": "Public domain",
+        "license_url": "",
+        "credit": "Evan-Amos / Wikimedia Commons / Public domain",
+        "width": 1920,
+        "height": 2329,
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 2329
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "doom",
+      "match_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/vv0zszxgvk4dklsz53ap.jpg",
+      "action": "replace",
+      "image": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_original/vv0zszxgvk4dklsz53ap.jpg",
+        "source_page": "https://www.igdb.com/games/doom",
+        "title": "Doom — game screenshot",
+        "creator": "id Software",
+        "license": "Copyright retained by the respective game rights holders; remote editorial reference",
+        "credit": "Game imagery: id Software. External image reference: IGDB.",
+        "provenance": "External reference selected in the user's Playhub history collection; URL rechecked for this catalog.",
+        "original_url": "https://images.igdb.com/igdb/image/upload/t_original/vv0zszxgvk4dklsz53ap.jpg",
+        "width": 1600,
+        "height": 1200,
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 1600
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "doom",
+      "match_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/uolg5ypiubgnc1rtqmjx.jpg",
+      "action": "remove",
+      "reason": "Actual original/downloaded image is below 1600 px long edge.",
+      "native_dimensions": [
+        1186,
+        863
+      ]
+    },
+    {
+      "entry_id": "playstation-2",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/PS2-Versions.jpg/1280px-PS2-Versions.jpg",
+      "action": "replace",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/PS2-Versions.jpg/1920px-PS2-Versions.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/PS2-Versions.jpg",
+        "source_page": "https://commons.wikimedia.org/wiki/File:PS2-Versions.jpg",
+        "title": "PlayStation 2 — hardware variants",
+        "creator": "Evan-Amos",
+        "license": "Public domain",
+        "license_url": "",
+        "credit": "Evan-Amos / Wikimedia Commons / Public domain",
+        "width": 1920,
+        "height": 1701,
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 1920
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "nintendo-3ds",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Nintendo-3DS-AquaOpen.png/1920px-Nintendo-3DS-AquaOpen.png",
+      "action": "replace",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Nintendo-3DS-AquaOpen.png/1920px-Nintendo-3DS-AquaOpen.png",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Nintendo-3DS-AquaOpen.png",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Nintendo-3DS-AquaOpen.png",
+        "title": "Original 2011 Nintendo 3DS in Aqua Blue",
+        "creator": "Evan-Amos",
+        "license": "Public domain",
+        "license_url": "",
+        "credit": "Evan-Amos / Wikimedia Commons / Public domain",
+        "width": 1920,
+        "height": 1736,
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 1920
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "journey",
+      "match_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/sc12s3h.jpg",
+      "action": "remove",
+      "reason": "Wrong game: these IGDB IDs show Bally Midway Journey1983, not thatgamecompany Journey2012. Remove regardless of resolution.",
+      "native_dimensions": [
+        960,
+        1024
+      ]
+    },
+    {
+      "entry_id": "journey",
+      "match_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/sc12s3i.jpg",
+      "action": "remove",
+      "reason": "Wrong game: these IGDB IDs show Bally Midway Journey1983, not thatgamecompany Journey2012. Remove regardless of resolution.",
+      "native_dimensions": [
+        960,
+        1024
+      ]
+    },
+    {
+      "entry_id": "papers-please",
+      "match_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/pqnoclnus8ut4jzkmrid.jpg",
+      "action": "remove",
+      "reason": "Actual original/downloaded image is below 1600 px long edge.",
+      "native_dimensions": [
+        1280,
+        720
+      ]
+    },
+    {
+      "entry_id": "papers-please",
+      "match_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/babxzbm0ejcxfvnotowf.jpg",
+      "action": "remove",
+      "reason": "Actual original/downloaded image is below 1600 px long edge.",
+      "native_dimensions": [
+        1280,
+        720
+      ]
+    },
+    {
+      "entry_id": "switch",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Nintendo-Switch-Console-Docked-wJoyConRB.jpg/1280px-Nintendo-Switch-Console-Docked-wJoyConRB.jpg",
+      "action": "replace",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Nintendo-Switch-Console-Docked-wJoyConRB.jpg/1920px-Nintendo-Switch-Console-Docked-wJoyConRB.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/7/76/Nintendo-Switch-Console-Docked-wJoyConRB.jpg",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Nintendo-Switch-Console-Docked-wJoyConRB.jpg",
+        "title": "Original Nintendo Switch docked with Joy-Con",
+        "creator": "Evan-Amos",
+        "license": "Public domain",
+        "license_url": "",
+        "credit": "Evan-Amos / Wikimedia Commons / Public domain",
+        "width": 1920,
+        "height": 1097,
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 1920
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "celeste",
+      "match_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/fwjvpiu2ircdq5afkm1o.jpg",
+      "action": "replace",
+      "image": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_original/fwjvpiu2ircdq5afkm1o.jpg",
+        "source_page": "https://www.igdb.com/games/celeste",
+        "title": "Celeste — game screenshot",
+        "creator": "Celeste development team",
+        "license": "Copyright retained by the respective game rights holders; remote editorial reference",
+        "credit": "Game imagery: Celeste development team. External image reference: IGDB.",
+        "provenance": "External reference selected in the user's Playhub history collection; URL rechecked for this catalog.",
+        "original_url": "https://images.igdb.com/igdb/image/upload/t_original/fwjvpiu2ircdq5afkm1o.jpg",
+        "width": 1920,
+        "height": 1080,
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 1920
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "celeste",
+      "match_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/e9lk3alqutkrciksfque.jpg",
+      "action": "replace",
+      "image": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_original/e9lk3alqutkrciksfque.jpg",
+        "source_page": "https://www.igdb.com/games/celeste",
+        "title": "Celeste — game screenshot",
+        "creator": "Celeste development team",
+        "license": "Copyright retained by the respective game rights holders; remote editorial reference",
+        "credit": "Game imagery: Celeste development team. External image reference: IGDB.",
+        "provenance": "External reference selected in the user's Playhub history collection; URL rechecked for this catalog.",
+        "original_url": "https://images.igdb.com/igdb/image/upload/t_original/e9lk3alqutkrciksfque.jpg",
+        "width": 1920,
+        "height": 1080,
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 1920
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "preserving-play",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Spacewar%21-PDP-1-20070512.jpg/1280px-Spacewar%21-PDP-1-20070512.jpg",
+      "action": "replace",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Spacewar%21-PDP-1-20070512.jpg/1920px-Spacewar%21-PDP-1-20070512.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/2/23/Spacewar%21-PDP-1-20070512.jpg",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Spacewar!-PDP-1-20070512.jpg",
+        "title": "The restored PDP-1 at the Computer History Museum",
+        "creator": "Joi Ito from Inbamura, Japan",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "credit": "Joi Ito from Inbamura, Japan / Wikimedia Commons / CC BY 2.0",
+        "width": 1920,
+        "height": 1291,
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 1920
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "nimrod",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Nimrod_in_Computerspielemuseum.jpg/1280px-Nimrod_in_Computerspielemuseum.jpg",
+      "action": "replace",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Nimrod_in_Computerspielemuseum.jpg/1920px-Nimrod_in_Computerspielemuseum.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Nimrod_in_Computerspielemuseum.jpg",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Nimrod_in_Computerspielemuseum.jpg",
+        "title": "Nimrod — modern museum reconstruction",
+        "creator": "Chuck SMITH",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "credit": "Chuck SMITH / Wikimedia Commons / CC BY-SA 3.0",
+        "width": 1920,
+        "height": 1434,
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 1920
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "nimrod",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Nimrod_display_figure.PNG/330px-Nimrod_display_figure.PNG",
+      "action": "remove",
+      "reason": "Documented native source is below 1600 px long edge; no upscale or thumbnail enlargement is permitted.",
+      "native_dimensions": [
+        384,
+        250
+      ]
+    },
+    {
+      "entry_id": "workbook-02-24-sid-meier",
+      "match_url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Sid_Meier_-_Game_Developers_Conference_2017_-_01_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "action": "replace",
+      "reason": "Replaced an undersized portrait crop with its larger authentic uncropped source photograph.",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Sid_Meier_-_Game_Developers_Conference_2017_-_01.jpg/1920px-Sid_Meier_-_Game_Developers_Conference_2017_-_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Sid_Meier_-_Game_Developers_Conference_2017_-_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Sid_Meier_-_Game_Developers_Conference_2017_-_01.jpg",
+        "title": "Sid Meier at the 2017 Game Developers Conference",
+        "creator": "Official GDC",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "credit": "Official GDC / Wikimedia Commons / CC BY 2.0",
+        "width": 1920,
+        "height": 1280,
+        "original_width": 2400,
+        "original_height": 1600,
+        "quality_verified": "Native original or standard thumbnail of actual larger photograph; full remote decode on 2026-10-20. No AI/upscale.",
+        "focal": {
+          "x": 0.5,
+          "y": 0.4
+        }
+      }
+    },
+    {
+      "entry_id": "workbook-01-25-t-ru-iwatani",
+      "match_url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Toru_Iwatani%2C_creator_of_Pac-Man%2C_at_GDC_2011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "action": "replace",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Toru_Iwatani%2C_creator_of_Pac-Man%2C_at_GDC_2011.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Toru_Iwatani%2C_creator_of_Pac-Man%2C_at_GDC_2011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Toru_Iwatani,_creator_of_Pac-Man,_at_GDC_2011.jpg",
+        "title": "T?ru Iwatani at the 2011 Game Developers Conference",
+        "creator": "Official GDC",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "credit": "Official GDC / Wikimedia Commons / CC BY 2.0",
+        "width": 1720,
+        "height": 2669,
+        "original_width": 1720,
+        "original_height": 2669,
+        "provenance": "Commons primary imageinfo/extmetadata, source and creator retained; fresh remote GET and full image decode on 2026-10-20.",
+        "focal": {
+          "x": 0.5,
+          "y": 0.35
+        },
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 2669
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "workbook-06-10-yu-suzuki",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Yu_Suzuki_-_Game_Developers_Conference_2011_-_Day_3.jpg/960px-Yu_Suzuki_-_Game_Developers_Conference_2011_-_Day_3.jpg",
+      "action": "replace",
+      "reason": "Replaced an undersized portrait crop with its larger authentic uncropped source photograph.",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Yu_Suzuki_-_Game_Developers_Conference_2011_-_Day_3_%282%29.jpg/1920px-Yu_Suzuki_-_Game_Developers_Conference_2011_-_Day_3_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Yu_Suzuki_-_Game_Developers_Conference_2011_-_Day_3_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Yu_Suzuki_-_Game_Developers_Conference_2011_-_Day_3_(2).jpg",
+        "title": "Yu Suzuki at the 2011 Game Developers Conference",
+        "creator": "Official GDC",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "credit": "Official GDC / Wikimedia Commons / CC BY 2.0",
+        "width": 1920,
+        "height": 1418,
+        "original_width": 3128,
+        "original_height": 2310,
+        "quality_verified": "Native original or standard thumbnail of actual larger photograph; full remote decode on 2026-10-20. No AI/upscale.",
+        "focal": {
+          "x": 0.5,
+          "y": 0.4
+        }
+      }
+    },
+    {
+      "entry_id": "workbook-01-20-will-wright-game-designer",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Will_Wright_-_Game_Developers_Conference_2010_%282%29_%28cropped%29.jpg/960px-Will_Wright_-_Game_Developers_Conference_2010_%282%29_%28cropped%29.jpg",
+      "action": "replace",
+      "reason": "Replaced an undersized portrait crop with its larger authentic uncropped source photograph.",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Will_Wright_-_Game_Developers_Conference_2010_%282%29.jpg/1920px-Will_Wright_-_Game_Developers_Conference_2010_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/db/Will_Wright_-_Game_Developers_Conference_2010_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Will_Wright_-_Game_Developers_Conference_2010_(2).jpg",
+        "title": "Will Wright at the 2010 Game Developers Conference",
+        "creator": "Official GDC",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "credit": "Official GDC / Wikimedia Commons / CC BY 2.0",
+        "width": 1920,
+        "height": 1908,
+        "original_width": 2092,
+        "original_height": 2079,
+        "quality_verified": "Native original or standard thumbnail of actual larger photograph; full remote decode on 2026-10-20. No AI/upscale.",
+        "focal": {
+          "x": 0.5,
+          "y": 0.4
+        }
+      }
+    },
+    {
+      "entry_id": "spacewar",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Spacewar%21-PDP-1-20070512.jpg/1280px-Spacewar%21-PDP-1-20070512.jpg",
+      "action": "replace",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Spacewar%21-PDP-1-20070512.jpg/1920px-Spacewar%21-PDP-1-20070512.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/2/23/Spacewar%21-PDP-1-20070512.jpg",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Spacewar!-PDP-1-20070512.jpg",
+        "title": "Spacewar! on the Computer History Museum's restored PDP-1",
+        "creator": "Joi Ito from Inbamura, Japan",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "credit": "Joi Ito from Inbamura, Japan / Wikimedia Commons / CC BY 2.0",
+        "width": 1920,
+        "height": 1291,
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 1920
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "spacewar",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Spacewar_screenshot.jpg/330px-Spacewar_screenshot.jpg",
+      "action": "remove",
+      "reason": "Documented native source is below 1600 px long edge; no upscale or thumbnail enlargement is permitted.",
+      "native_dimensions": [
+        1024,
+        768
+      ]
+    },
+    {
+      "entry_id": "workbook-08-03-masahiro-sakurai",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Masahiro_Sakurai_2021.jpg/330px-Masahiro_Sakurai_2021.jpg",
+      "action": "remove",
+      "reason": "Documented native source is below 1600 px long edge; no upscale or thumbnail enlargement is permitted.",
+      "native_dimensions": [
+        580,
+        773
+      ]
+    },
+    {
+      "entry_id": "workbook-08-20-john-carmack",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/John_Carmack_2025.jpg/1280px-John_Carmack_2025.jpg",
+      "action": "replace",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/John_Carmack_2025.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/John_Carmack_2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "source_page": "https://commons.wikimedia.org/wiki/File:John_Carmack_2025.jpg",
+        "title": "John Carmack in 2025",
+        "creator": "RoboSabs",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "credit": "RoboSabs / Wikimedia Commons / CC0",
+        "width": 1876,
+        "height": 3053,
+        "original_width": 1876,
+        "original_height": 3053,
+        "provenance": "Commons primary imageinfo/extmetadata; fresh remote GET and full decode on 2026-10-20.",
+        "focal": {
+          "x": 0.5,
+          "y": 0.35
+        },
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 3053
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "oregon-trail",
+      "match_url": "https://www.museumofplay.org/app/uploads/2021/09/Oregon-Trail.jpg",
+      "action": "remove",
+      "reason": "Actual original/downloaded image is below 1600 px long edge.",
+      "native_dimensions": [
+        800,
+        800
+      ]
+    },
+    {
+      "entry_id": "wikipedia-292879",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Computer_Space_Monitor.jpg/1280px-Computer_Space_Monitor.jpg",
+      "action": "replace",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Computer_Space_Monitor.jpg/1920px-Computer_Space_Monitor.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Computer_Space_Monitor.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Computer_Space_Monitor.jpg",
+        "title": "Computer Space ? monitor close-up",
+        "creator": "Mbrickn",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "credit": "Mbrickn / Wikimedia Commons / CC0",
+        "width": 1920,
+        "height": 1440,
+        "original_width": 4032,
+        "original_height": 3024,
+        "provenance": "Commons primary imageinfo/extmetadata; fresh remote GET and full decode on 2026-10-20.",
+        "focal": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 1920
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "odyssey",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Magnavox-Odyssey-Console-Set.jpg/1280px-Magnavox-Odyssey-Console-Set.jpg",
+      "action": "replace",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Magnavox-Odyssey-Console-Set.jpg/1920px-Magnavox-Odyssey-Console-Set.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/9/99/Magnavox-Odyssey-Console-Set.jpg",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Magnavox-Odyssey-Console-Set.jpg",
+        "title": "Magnavox Odyssey and its controllers",
+        "creator": "Evan-Amos",
+        "license": "Public domain",
+        "license_url": "",
+        "credit": "Evan-Amos / Wikimedia Commons / Public domain",
+        "width": 1920,
+        "height": 973,
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 1920
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "pong",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Pong_cabinet_-_320846208_-_axeldeviaje.png/330px-Pong_cabinet_-_320846208_-_axeldeviaje.png",
+      "action": "remove",
+      "reason": "Documented native source is below 1600 px long edge; no upscale or thumbnail enlargement is permitted.",
+      "native_dimensions": [
+        791,
+        693
+      ]
+    },
+    {
+      "entry_id": "wikipedia-1120399",
+      "match_url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Maze_war.jpg",
+      "action": "remove",
+      "reason": "Documented native source is below 1600 px long edge; no upscale or thumbnail enlargement is permitted.",
+      "native_dimensions": [
+        480,
+        360
+      ]
+    },
+    {
+      "entry_id": "wikipedia-13136650",
+      "match_url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Trek73_video_game_screenshot.png",
+      "action": "remove",
+      "reason": "Documented native source is below 1600 px long edge; no upscale or thumbnail enlargement is permitted.",
+      "native_dimensions": [
+        640,
+        400
+      ]
+    },
+    {
+      "entry_id": "wikipedia-1055604",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/December_1975_advertisement_for_Gun_Fight_by_Midway.jpg/1280px-December_1975_advertisement_for_Gun_Fight_by_Midway.jpg",
+      "action": "replace",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/December_1975_advertisement_for_Gun_Fight_by_Midway.jpg/1920px-December_1975_advertisement_for_Gun_Fight_by_Midway.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/December_1975_advertisement_for_Gun_Fight_by_Midway.jpg",
+        "source_page": "https://commons.wikimedia.org/wiki/File:December_1975_advertisement_for_Gun_Fight_by_Midway.jpg",
+        "title": "December 1975 advertisement for Gun Fight by Midway",
+        "creator": "Midway Manufacturing Co.",
+        "license": "Public domain",
+        "license_url": "",
+        "credit": "Midway Manufacturing Co. / Wikimedia Commons / Public domain",
+        "width": 1920,
+        "height": 2478,
+        "provenance": "English Wikipedia page image; creator and licence verified through Wikimedia imageinfo. Underlying game art and trademarks retain their respective rights.",
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 2478
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "wikipedia-43958708",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Fairchild-Channel-F.jpg/1280px-Fairchild-Channel-F.jpg",
+      "action": "replace",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Fairchild-Channel-F.jpg/1920px-Fairchild-Channel-F.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/34/Fairchild-Channel-F.jpg",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Fairchild-Channel-F.jpg",
+        "title": "Fairchild-Channel-F",
+        "creator": "Evan-Amos",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "credit": "Evan-Amos / Wikimedia Commons / CC BY-SA 3.0",
+        "width": 1920,
+        "height": 1263,
+        "provenance": "English Wikipedia page image; creator and licence verified through Wikimedia imageinfo. Underlying game art and trademarks retain their respective rights.",
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 1920
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "wikipedia-261798",
+      "match_url": "https://upload.wikimedia.org/wikipedia/commons/2/25/ADVENT_--_Crowther_Woods.png",
+      "action": "remove",
+      "reason": "Documented native source is below 1600 px long edge; no upscale or thumbnail enlargement is permitted.",
+      "native_dimensions": [
+        668,
+        501
+      ]
+    },
+    {
+      "entry_id": "wikipedia-6150793",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Mattel_Electronics_Auto_Race%2C_No._9879%2C_Red_LED%2C_Made_In_Hong_Kong%2C_Copyright_1976_%28LED_Handheld_Electronic_Game%29.jpg/1280px-Mattel_Electronics_Auto_Race%2C_No._9879%2C_Red_LED%2C_Made_In_Hong_Kong%2C_Copyright_1976_%28LED_Handheld_Electronic_Game%29.jpg",
+      "action": "replace",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Mattel_Electronics_Auto_Race%2C_No._9879%2C_Red_LED%2C_Made_In_Hong_Kong%2C_Copyright_1976_%28LED_Handheld_Electronic_Game%29.jpg/1920px-Mattel_Electronics_Auto_Race%2C_No._9879%2C_Red_LED%2C_Made_In_Hong_Kong%2C_Copyright_1976_%28LED_Handheld_Electronic_Game%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Mattel_Electronics_Auto_Race%2C_No._9879%2C_Red_LED%2C_Made_In_Hong_Kong%2C_Copyright_1976_%28LED_Handheld_Electronic_Game%29.jpg",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Mattel_Electronics_Auto_Race,_No._9879,_Red_LED,_Made_In_Hong_Kong,_Copyright_1976_(LED_Handheld_Electronic_Game).jpg",
+        "title": "Mattel Electronics Auto Race, No. 9879, Red LED, Made In Hong Kong, Copyright 1976 (LED Handheld Electronic Game)",
+        "creator": "Flickr : Joe Haupt from St. Paul, Minnesota",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "credit": "Flickr : Joe Haupt from St. Paul, Minnesota / Wikimedia Commons / CC BY-SA 2.0",
+        "width": 1920,
+        "height": 2438,
+        "provenance": "English Wikipedia page image; creator and licence verified through Wikimedia imageinfo. Underlying game art and trademarks retain their respective rights.",
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 2438
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "atari-vcs",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Atari-2600-Wood-4Sw-Set.jpg/1280px-Atari-2600-Wood-4Sw-Set.jpg",
+      "action": "replace",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Atari-2600-Wood-4Sw-Set.jpg/1920px-Atari-2600-Wood-4Sw-Set.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Atari-2600-Wood-4Sw-Set.jpg",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Atari-2600-Wood-4Sw-Set.jpg",
+        "title": "Atari 2600 — later four-switch hardware variant",
+        "creator": "Evan-Amos",
+        "license": "Public domain",
+        "license_url": "",
+        "credit": "Evan-Amos / Wikimedia Commons / Public domain",
+        "width": 1920,
+        "height": 1121,
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 1920
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "wikipedia-34419",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Zork_photo.jpg/1280px-Zork_photo.jpg",
+      "action": "replace",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Zork_photo.jpg/1920px-Zork_photo.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Zork_photo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Zork_photo.jpg",
+        "title": "Zork I ? the later commercial text adventure, photographed in 2012",
+        "creator": "Marcin Wichary",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "credit": "Marcin Wichary / Wikimedia Commons / CC BY 2.0",
+        "width": 1920,
+        "height": 2880,
+        "original_width": 3168,
+        "original_height": 4752,
+        "provenance": "Commons primary imageinfo/extmetadata; fresh remote GET and full decode on 2026-10-20.",
+        "focal": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 2880
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "wikipedia-34419",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Zork_on_CRT_display.jpg/1280px-Zork_on_CRT_display.jpg",
+      "action": "replace",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Zork_on_CRT_display.jpg/1920px-Zork_on_CRT_display.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Zork_on_CRT_display.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Zork_on_CRT_display.jpg",
+        "title": "Zork on a CRT display",
+        "creator": "Marcin Wichary from San Francisco, Calif.",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "credit": "Marcin Wichary from San Francisco, Calif. / Wikimedia Commons / CC BY 2.0",
+        "width": 1920,
+        "height": 2034,
+        "original_width": 3572,
+        "original_height": 3785,
+        "provenance": "Commons primary imageinfo/extmetadata; fresh remote GET and full decode on 2026-10-20.",
+        "focal": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 2034
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "space-invaders",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Space_Invader_Cabinet.jpg/330px-Space_Invader_Cabinet.jpg",
+      "action": "remove",
+      "reason": "Documented native source is below 1600 px long edge; no upscale or thumbnail enlargement is permitted.",
+      "native_dimensions": [
+        600,
+        800
+      ]
+    },
+    {
+      "entry_id": "adventure",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Warren_Robinett%2C_2015.jpg/330px-Warren_Robinett%2C_2015.jpg",
+      "action": "remove",
+      "reason": "Documented native source is below 1600 px long edge; no upscale or thumbnail enlargement is permitted.",
+      "native_dimensions": [
+        332,
+        442
+      ]
+    },
+    {
+      "entry_id": "adventure",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Classic_Game_Postmortem-_Adventure_%2816119757653%29.jpg/1280px-Classic_Game_Postmortem-_Adventure_%2816119757653%29.jpg",
+      "action": "replace",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Classic_Game_Postmortem-_Adventure_%2816119757653%29.jpg/1920px-Classic_Game_Postmortem-_Adventure_%2816119757653%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Classic_Game_Postmortem-_Adventure_%2816119757653%29.jpg",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Classic_Game_Postmortem-_Adventure_(16119757653).jpg",
+        "title": "Warren Robinett discussing Adventure",
+        "creator": "Official GDC",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "credit": "Official GDC / Wikimedia Commons / CC BY 2.0",
+        "width": 1920,
+        "height": 1280,
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 1920
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "wikipedia-785",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Asteroids_cabinet.jpg/1280px-Asteroids_cabinet.jpg",
+      "action": "replace",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Asteroids_cabinet.jpg/1920px-Asteroids_cabinet.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Asteroids_cabinet.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Asteroids_cabinet.jpg",
+        "title": "Asteroids arcade cabinet",
+        "creator": "Joho345",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "credit": "Joho345 / Wikimedia Commons / CC BY 4.0",
+        "width": 1920,
+        "height": 2560,
+        "original_width": 2448,
+        "original_height": 3264,
+        "provenance": "Commons primary imageinfo/extmetadata; fresh remote GET and full decode on 2026-10-20.",
+        "focal": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 2560
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "pac-man",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Pac-Man_arcade_machine%2C_De_Notaris_Schaijk.jpg/1280px-Pac-Man_arcade_machine%2C_De_Notaris_Schaijk.jpg",
+      "action": "replace",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Pac-Man_arcade_machine%2C_De_Notaris_Schaijk.jpg/1920px-Pac-Man_arcade_machine%2C_De_Notaris_Schaijk.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Pac-Man_arcade_machine%2C_De_Notaris_Schaijk.jpg",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Pac-Man_arcade_machine,_De_Notaris_Schaijk.jpg",
+        "title": "Pac-Man — arcade cabinet",
+        "creator": "YosemiteYamper",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "credit": "YosemiteYamper / Wikimedia Commons / CC BY-SA 4.0",
+        "width": 1920,
+        "height": 2560,
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 2560
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "wikipedia-244576",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Missile_Command_Arcade_cabinet.jpg/1280px-Missile_Command_Arcade_cabinet.jpg",
+      "action": "replace",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Missile_Command_Arcade_cabinet.jpg/1920px-Missile_Command_Arcade_cabinet.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Missile_Command_Arcade_cabinet.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Missile_Command_Arcade_cabinet.jpg",
+        "title": "Missile Command cabinet during restoration, without bezel or marquee",
+        "creator": "driph",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "credit": "driph / Wikimedia Commons / CC BY-SA 2.0",
+        "width": 1920,
+        "height": 2556,
+        "original_width": 2296,
+        "original_height": 3056,
+        "provenance": "Commons primary imageinfo/extmetadata; fresh remote GET and full decode on 2026-10-20.",
+        "focal": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 2556
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "wikipedia-420457",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/3D_Tic_Tac_Toe.jpg/1280px-3D_Tic_Tac_Toe.jpg",
+      "action": "remove",
+      "reason": "Documented native source is below 1600 px long edge; no upscale or thumbnail enlargement is permitted.",
+      "native_dimensions": [
+        1506,
+        1470
+      ]
+    },
+    {
+      "entry_id": "intellivision",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Intellivision-Console-Set.png/1920px-Intellivision-Console-Set.png",
+      "action": "replace",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Intellivision-Console-Set.png/1920px-Intellivision-Console-Set.png",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Intellivision-Console-Set.png",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Intellivision-Console-Set.png",
+        "title": "Original brown Intellivision and keypad controllers",
+        "creator": "Evan-Amos",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "credit": "Evan-Amos / Wikimedia Commons / CC BY-SA 3.0",
+        "width": 1920,
+        "height": 1018,
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 1920
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "dona-bailey",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Dona_Bailey.jpg/330px-Dona_Bailey.jpg",
+      "action": "remove",
+      "reason": "Documented native source is below 1600 px long edge; no upscale or thumbnail enlargement is permitted.",
+      "native_dimensions": [
+        560,
+        441
+      ]
+    },
+    {
+      "entry_id": "wikipedia-622127",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Galaga_1.jpg/1280px-Galaga_1.jpg",
+      "action": "replace",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Galaga_1.jpg/1920px-Galaga_1.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/1/12/Galaga_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Galaga_1.jpg",
+        "title": "Galaga running on a later arcade setup",
+        "creator": "Charalambos2002",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "credit": "Charalambos2002 / Wikimedia Commons / CC BY-SA 4.0",
+        "width": 1920,
+        "height": 2470,
+        "original_width": 2048,
+        "original_height": 2635,
+        "provenance": "Commons primary imageinfo/extmetadata; fresh remote GET and full decode on 2026-10-20.",
+        "focal": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 2470,
+        "factual_note": "Photographed in 2021 on an LCD/multi-button arcade setup, not an original 1981 cabinet."
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "wikipedia-512076",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Williams_Defender_Arcade_Video_Game.jpg/1280px-Williams_Defender_Arcade_Video_Game.jpg",
+      "action": "replace",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Williams_Defender_Arcade_Video_Game.jpg/1920px-Williams_Defender_Arcade_Video_Game.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/09/Williams_Defender_Arcade_Video_Game.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Williams_Defender_Arcade_Video_Game.jpg",
+        "title": "Restored Williams Defender arcade cabinet",
+        "creator": "VMzB",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "credit": "VMzB / Wikimedia Commons / CC BY-SA 4.0",
+        "width": 1920,
+        "height": 2717,
+        "original_width": 2652,
+        "original_height": 3753,
+        "provenance": "Commons primary imageinfo/extmetadata; fresh remote GET and full decode on 2026-10-20.",
+        "focal": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 2717
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "wikipedia-512076",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Defender_control_panel_arcade.jpg/1280px-Defender_control_panel_arcade.jpg",
+      "action": "replace",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Defender_control_panel_arcade.jpg/1920px-Defender_control_panel_arcade.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Defender_control_panel_arcade.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Defender_control_panel_arcade.jpg",
+        "title": "Defender ? its button-and-joystick control panel",
+        "creator": "MattGrommes",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "credit": "MattGrommes / Wikimedia Commons / CC BY-SA 2.0",
+        "width": 1920,
+        "height": 1440,
+        "original_width": 2048,
+        "original_height": 1536,
+        "provenance": "Commons primary imageinfo/extmetadata; fresh remote GET and full decode on 2026-10-20.",
+        "focal": {
+          "x": 0.5,
+          "y": 0.5
+        },
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 1920
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "commodore-64",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Commodore-64-Computer-FL.jpg/1280px-Commodore-64-Computer-FL.jpg",
+      "action": "replace",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Commodore-64-Computer-FL.jpg/1920px-Commodore-64-Computer-FL.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Commodore-64-Computer-FL.jpg",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Commodore-64-Computer-FL.jpg",
+        "title": "Commodore 64 — front view",
+        "creator": "Evan-Amos",
+        "license": "Public domain",
+        "license_url": "",
+        "credit": "Evan-Amos / Wikimedia Commons / Public domain",
+        "width": 1920,
+        "height": 1085,
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 1920
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "commodore-64",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Commodore-64-Computer-BL.jpg/1280px-Commodore-64-Computer-BL.jpg",
+      "action": "replace",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Commodore-64-Computer-BL.jpg/1920px-Commodore-64-Computer-BL.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Commodore-64-Computer-BL.jpg",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Commodore-64-Computer-BL.jpg",
+        "title": "Commodore 64 — rear view",
+        "creator": "Evan-Amos",
+        "license": "Public domain",
+        "license_url": "",
+        "credit": "Evan-Amos / Wikimedia Commons / Public domain",
+        "width": 1920,
+        "height": 1085,
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 1920
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "zx-spectrum",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/ZXSpectrum48k.jpg/1280px-ZXSpectrum48k.jpg",
+      "action": "remove",
+      "reason": "Actual original/downloaded image is below 1600 px long edge.",
+      "native_dimensions": [
+        1280,
+        941
+      ]
+    },
+    {
+      "entry_id": "famicom",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Nintendo-Famicom-Console-Set-FL.png/1280px-Nintendo-Famicom-Console-Set-FL.png",
+      "action": "replace",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Nintendo-Famicom-Console-Set-FL.png/1920px-Nintendo-Famicom-Console-Set-FL.png",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Nintendo-Famicom-Console-Set-FL.png",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Nintendo-Famicom-Console-Set-FL.png",
+        "title": "Nintendo Famicom console",
+        "creator": "Evan-Amos",
+        "license": "Public domain",
+        "license_url": "",
+        "credit": "Evan-Amos / Wikimedia Commons / Public domain",
+        "width": 1920,
+        "height": 1026,
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 1920
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "famicom",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Nintendo-Famicom-Disk-System.jpg/1280px-Nintendo-Famicom-Disk-System.jpg",
+      "action": "replace",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Nintendo-Famicom-Disk-System.jpg/1920px-Nintendo-Famicom-Disk-System.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Nintendo-Famicom-Disk-System.jpg",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Nintendo-Famicom-Disk-System.jpg",
+        "title": "Famicom with the later Disk System",
+        "creator": "Evan-Amos",
+        "license": "Public domain",
+        "license_url": "",
+        "credit": "Evan-Amos / Wikimedia Commons / Public domain",
+        "width": 1920,
+        "height": 1704,
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 1920
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "mule",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Danielle_Bunten_Berry.jpg/1280px-Danielle_Bunten_Berry.jpg",
+      "action": "replace",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Danielle_Bunten_Berry.jpg/1920px-Danielle_Bunten_Berry.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Danielle_Bunten_Berry.jpg",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Danielle_Bunten_Berry.jpg",
+        "title": "Dani Bunten Berry",
+        "creator": "ThePortraitLady",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "credit": "ThePortraitLady / Wikimedia Commons / CC0",
+        "width": 1920,
+        "height": 1920,
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 1920
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "super-mario-bros",
+      "match_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/sc84hl.jpg",
+      "action": "remove",
+      "reason": "Actual original/downloaded image is below 1600 px long edge.",
+      "native_dimensions": [
+        256,
+        224
+      ]
+    },
+    {
+      "entry_id": "nes",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/NES-Console-Set.png/1280px-NES-Console-Set.png",
+      "action": "replace",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/NES-Console-Set.png/1920px-NES-Console-Set.png",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/NES-Console-Set.png",
+        "source_page": "https://commons.wikimedia.org/wiki/File:NES-Console-Set.png",
+        "title": "Front-loading Nintendo Entertainment System and controller",
+        "creator": "Evan-Amos",
+        "license": "Public domain",
+        "license_url": "",
+        "credit": "Evan-Amos / Wikimedia Commons / Public domain",
+        "width": 1920,
+        "height": 1043,
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 1920
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "dragon-quest",
+      "match_url": "https://www.museumofplay.org/app/uploads/2023/05/WVGHOF-Nom-2026_Dragon-Quest-SQ.jpg",
+      "action": "remove",
+      "reason": "Actual original/downloaded image is below 1600 px long edge.",
+      "native_dimensions": [
+        800,
+        800
+      ]
+    },
+    {
+      "entry_id": "zelda",
+      "match_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/sckdxx.jpg",
+      "action": "remove",
+      "reason": "Actual original/downloaded image is below 1600 px long edge.",
+      "native_dimensions": [
+        256,
+        240
+      ]
+    },
+    {
+      "entry_id": "mega-drive",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Sega-Mega-Drive-JP-Mk1-Console-Set.jpg/1920px-Sega-Mega-Drive-JP-Mk1-Console-Set.jpg",
+      "action": "replace",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Sega-Mega-Drive-JP-Mk1-Console-Set.jpg/1920px-Sega-Mega-Drive-JP-Mk1-Console-Set.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Sega-Mega-Drive-JP-Mk1-Console-Set.jpg",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Sega-Mega-Drive-JP-Mk1-Console-Set.jpg",
+        "title": "Japanese first-model Mega Drive and controller",
+        "creator": "Evan-Amos",
+        "license": "Public domain",
+        "license_url": "",
+        "credit": "Evan-Amos / Wikimedia Commons / Public domain",
+        "width": 1920,
+        "height": 960,
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 1920
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "simcity",
+      "match_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/imf2nlr73vwqmw5btdeg.jpg",
+      "action": "remove",
+      "reason": "Actual original/downloaded image is below 1600 px long edge.",
+      "native_dimensions": [
+        640,
+        350
+      ]
+    },
+    {
+      "entry_id": "simcity",
+      "match_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/ftnxqh4a5ojui8wnofkf.jpg",
+      "action": "replace",
+      "image": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_original/ftnxqh4a5ojui8wnofkf.jpg",
+        "source_page": "https://www.igdb.com/games/simcity",
+        "title": "SimCity — game screenshot",
+        "creator": "Maxis / Electronic Arts",
+        "license": "Copyright retained by the respective game rights holders; remote editorial reference",
+        "credit": "Game imagery: Maxis / Electronic Arts. External image reference: IGDB.",
+        "provenance": "External reference selected in the user's Playhub history collection; URL rechecked for this catalog.",
+        "original_url": "https://images.igdb.com/igdb/image/upload/t_original/ftnxqh4a5ojui8wnofkf.jpg",
+        "width": 1919,
+        "height": 1079,
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 1919
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "tectoy",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Sega-Master-System-Set.jpg/1280px-Sega-Master-System-Set.jpg",
+      "action": "remove",
+      "reason": "Actual original/downloaded image is below 1600 px long edge.",
+      "native_dimensions": [
+        1280,
+        704
+      ]
+    },
+    {
+      "entry_id": "atari-lynx",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Atari-Lynx-I-Handheld.jpg/1920px-Atari-Lynx-I-Handheld.jpg",
+      "action": "replace",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Atari-Lynx-I-Handheld.jpg/1920px-Atari-Lynx-I-Handheld.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Atari-Lynx-I-Handheld.jpg",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Atari-Lynx-I-Handheld.jpg",
+        "title": "Original wide-body Atari Lynx",
+        "creator": "Evan-Amos",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "credit": "Evan-Amos / Wikimedia Commons / CC BY-SA 3.0",
+        "width": 1920,
+        "height": 1137,
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 1920
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "sonic",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Sega-Mega-Drive-JP-Mk1-Console-Set.jpg/1280px-Sega-Mega-Drive-JP-Mk1-Console-Set.jpg",
+      "action": "replace",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Sega-Mega-Drive-JP-Mk1-Console-Set.jpg/1920px-Sega-Mega-Drive-JP-Mk1-Console-Set.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Sega-Mega-Drive-JP-Mk1-Console-Set.jpg",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Sega-Mega-Drive-JP-Mk1-Console-Set.jpg",
+        "title": "The Japanese Sega Mega Drive video game console. This is the first design model of the system.",
+        "creator": "Evan-Amos",
+        "license": "Public domain",
+        "license_url": "",
+        "credit": "Evan-Amos / Wikimedia Commons / Public domain",
+        "width": 1920,
+        "height": 960,
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 1920
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "sonic",
+      "match_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/eiucwjjjhuflg4clecim.jpg",
+      "action": "remove",
+      "reason": "Actual original/downloaded image is below 1600 px long edge.",
+      "native_dimensions": [
+        450,
+        338
+      ]
+    },
+    {
+      "entry_id": "sonic",
+      "match_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/s7yp2hdjyqldynkoktkw.jpg",
+      "action": "remove",
+      "reason": "Actual original/downloaded image is below 1600 px long edge.",
+      "native_dimensions": [
+        450,
+        338
+      ]
+    },
+    {
+      "entry_id": "street-fighter-ii",
+      "match_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/pnrtjqwsjssgfpe83mjr.jpg",
+      "action": "remove",
+      "reason": "Actual original/downloaded image is below 1600 px long edge.",
+      "native_dimensions": [
+        604,
+        453
+      ]
+    },
+    {
+      "entry_id": "street-fighter-ii",
+      "match_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/sc9e9u.jpg",
+      "action": "remove",
+      "reason": "Actual original/downloaded image is below 1600 px long edge.",
+      "native_dimensions": [
+        452,
+        309
+      ]
+    },
+    {
+      "entry_id": "snes-pal",
+      "match_url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Wikipedia_SNES_PAL.png",
+      "action": "remove",
+      "reason": "Documented native source is below 1600 px long edge; no upscale or thumbnail enlargement is permitted.",
+      "native_dimensions": [
+        1200,
+        850
+      ]
+    },
+    {
+      "entry_id": "myst",
+      "match_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/zw3t9ta1dyumvqgsec7w.jpg",
+      "action": "remove",
+      "reason": "Actual original/downloaded image is below 1600 px long edge.",
+      "native_dimensions": [
+        600,
+        350
+      ]
+    },
+    {
+      "entry_id": "myst",
+      "match_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/ijc76zscdmy5xtonlbpr.jpg",
+      "action": "remove",
+      "reason": "Actual original/downloaded image is below 1600 px long edge.",
+      "native_dimensions": [
+        544,
+        332
+      ]
+    },
+    {
+      "entry_id": "playstation",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/PSX-Console-wController.jpg/1280px-PSX-Console-wController.jpg",
+      "action": "replace",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/PSX-Console-wController.jpg/1920px-PSX-Console-wController.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/39/PSX-Console-wController.jpg",
+        "source_page": "https://commons.wikimedia.org/wiki/File:PSX-Console-wController.jpg",
+        "title": "The original PlayStation console and controller",
+        "creator": "Evan-Amos",
+        "license": "Public domain",
+        "license_url": "",
+        "credit": "Evan-Amos / Wikimedia Commons / Public domain",
+        "width": 1920,
+        "height": 881,
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 1920
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "playstation",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/PSX-DualShock-Controller.jpg/1280px-PSX-DualShock-Controller.jpg",
+      "action": "replace",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/PSX-DualShock-Controller.jpg/1920px-PSX-DualShock-Controller.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/c/c7/PSX-DualShock-Controller.jpg",
+        "source_page": "https://commons.wikimedia.org/wiki/File:PSX-DualShock-Controller.jpg",
+        "title": "PlayStation DualShock controller",
+        "creator": "Evan-Amos",
+        "license": "Public domain",
+        "license_url": "",
+        "credit": "Evan-Amos / Wikimedia Commons / Public domain",
+        "width": 1920,
+        "height": 1506,
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 1920
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "sega-saturn",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Sega-Saturn-JP-Mk1-Console-Set.jpg/1280px-Sega-Saturn-JP-Mk1-Console-Set.jpg",
+      "action": "replace",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Sega-Saturn-JP-Mk1-Console-Set.jpg/1920px-Sega-Saturn-JP-Mk1-Console-Set.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/9/95/Sega-Saturn-JP-Mk1-Console-Set.jpg",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Sega-Saturn-JP-Mk1-Console-Set.jpg",
+        "title": "Original grey Japanese Sega Saturn and controller",
+        "creator": "Evan-Amos",
+        "license": "Public domain",
+        "license_url": "",
+        "credit": "Evan-Amos / Wikimedia Commons / Public domain",
+        "width": 1920,
+        "height": 1082,
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 1920
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "pokemon",
+      "match_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/scapip.jpg",
+      "action": "remove",
+      "reason": "Actual original/downloaded image is below 1600 px long edge.",
+      "native_dimensions": [
+        160,
+        144
+      ]
+    },
+    {
+      "entry_id": "pokemon",
+      "match_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/scapiq.jpg",
+      "action": "remove",
+      "reason": "Actual original/downloaded image is below 1600 px long edge.",
+      "native_dimensions": [
+        160,
+        144
+      ]
+    },
+    {
+      "entry_id": "super-mario-64",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/N64-Console-Set.jpg/1280px-N64-Console-Set.jpg",
+      "action": "replace",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/N64-Console-Set.jpg/1920px-N64-Console-Set.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/1/11/N64-Console-Set.jpg",
+        "source_page": "https://commons.wikimedia.org/wiki/File:N64-Console-Set.jpg",
+        "title": "Nintendo 64 console and controller",
+        "creator": "Evan-Amos",
+        "license": "Public domain",
+        "license_url": "",
+        "credit": "Evan-Amos / Wikimedia Commons / Public domain",
+        "width": 1920,
+        "height": 1033,
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 1920
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "super-mario-64",
+      "match_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/sc8e2k.jpg",
+      "action": "remove",
+      "reason": "Actual original/downloaded image is below 1600 px long edge.",
+      "native_dimensions": [
+        640,
+        448
+      ]
+    },
+    {
+      "entry_id": "super-mario-64",
+      "match_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/sc8e2l.jpg",
+      "action": "remove",
+      "reason": "Actual original/downloaded image is below 1600 px long edge.",
+      "native_dimensions": [
+        640,
+        448
+      ]
+    },
+    {
+      "entry_id": "tomb-raider",
+      "match_url": "https://www.museumofplay.org/app/uploads/2021/08/Tomb-Raider-sq.jpg",
+      "action": "remove",
+      "reason": "Actual original/downloaded image is below 1600 px long edge.",
+      "native_dimensions": [
+        800,
+        800
+      ]
+    },
+    {
+      "entry_id": "nintendo-64",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Nintendo-64-wController-L.jpg/1920px-Nintendo-64-wController-L.jpg",
+      "action": "replace",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Nintendo-64-wController-L.jpg/1920px-Nintendo-64-wController-L.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Nintendo-64-wController-L.jpg",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Nintendo-64-wController-L.jpg",
+        "title": "Nintendo 64 with its three-grip controller",
+        "creator": "Evan-Amos",
+        "license": "Public domain",
+        "license_url": "",
+        "credit": "Evan-Amos / Wikimedia Commons / Public domain",
+        "width": 1920,
+        "height": 879,
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 1920
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "final-fantasy-vii",
+      "match_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/schmzc.jpg",
+      "action": "remove",
+      "reason": "Actual original/downloaded image is below 1600 px long edge.",
+      "native_dimensions": [
+        320,
+        256
+      ]
+    },
+    {
+      "entry_id": "final-fantasy-vii",
+      "match_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/schmzd.jpg",
+      "action": "remove",
+      "reason": "Actual original/downloaded image is below 1600 px long edge.",
+      "native_dimensions": [
+        320,
+        256
+      ]
+    },
+    {
+      "entry_id": "wikipedia-1956221",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Mus%C3%A9e_M%C3%A9canique_217.JPG/1280px-Mus%C3%A9e_M%C3%A9canique_217.JPG",
+      "action": "replace",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Mus%C3%A9e_M%C3%A9canique_217.JPG/1920px-Mus%C3%A9e_M%C3%A9canique_217.JPG",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Mus%C3%A9e_M%C3%A9canique_217.JPG",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_M%C3%A9canique_217.JPG",
+        "title": "Musée Mécanique 217",
+        "creator": "User:Piotrus",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "credit": "User:Piotrus / Wikimedia Commons / CC BY-SA 3.0",
+        "width": 1920,
+        "height": 2560,
+        "provenance": "English Wikipedia page image; creator and licence verified through Wikimedia imageinfo. Underlying game art and trademarks retain their respective rights.",
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 2560
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "wikipedia-234683",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Beatmania_completeMIX_2.jpg/1280px-Beatmania_completeMIX_2.jpg",
+      "action": "replace",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Beatmania_completeMIX_2.jpg/1920px-Beatmania_completeMIX_2.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Beatmania_completeMIX_2.jpg",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Beatmania_completeMIX_2.jpg",
+        "title": "Beatmania completeMIX 2",
+        "creator": "Frame of Travel",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "credit": "Frame of Travel / Wikimedia Commons / CC BY 2.0",
+        "width": 1920,
+        "height": 2129,
+        "provenance": "English Wikipedia page image; creator and licence verified through Wikimedia imageinfo. Underlying game art and trademarks retain their respective rights.",
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 2129
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "dance-dance-revolution",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Dance_Dance_Revolution_earliest_generation_arcade_cabinet.png/330px-Dance_Dance_Revolution_earliest_generation_arcade_cabinet.png",
+      "action": "remove",
+      "reason": "Documented native source is below 1600 px long edge; no upscale or thumbnail enlargement is permitted.",
+      "native_dimensions": [
+        593,
+        757
+      ]
+    },
+    {
+      "entry_id": "dreamcast",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Sega-Dreamcast-Console-FL.jpg/1280px-Sega-Dreamcast-Console-FL.jpg",
+      "action": "replace",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Sega-Dreamcast-Console-FL.jpg/1920px-Sega-Dreamcast-Console-FL.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Sega-Dreamcast-Console-FL.jpg",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Sega-Dreamcast-Console-FL.jpg",
+        "title": "Sega Dreamcast — front-left view",
+        "creator": "Evan-Amos",
+        "license": "Public domain",
+        "license_url": "",
+        "credit": "Evan-Amos / Wikimedia Commons / Public domain",
+        "width": 1920,
+        "height": 1409,
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 1920
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "dreamcast",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Sega-Dreamcast-Console-FR.jpg/1280px-Sega-Dreamcast-Console-FR.jpg",
+      "action": "replace",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Sega-Dreamcast-Console-FR.jpg/1920px-Sega-Dreamcast-Console-FR.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Sega-Dreamcast-Console-FR.jpg",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Sega-Dreamcast-Console-FR.jpg",
+        "title": "Sega Dreamcast — front-right view",
+        "creator": "Evan-Amos",
+        "license": "Public domain",
+        "license_url": "",
+        "credit": "Evan-Amos / Wikimedia Commons / Public domain",
+        "width": 1920,
+        "height": 1409,
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 1920
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "starcraft",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Boxer_fighting%21.jpg/1280px-Boxer_fighting%21.jpg",
+      "action": "replace",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Boxer_fighting%21.jpg/1920px-Boxer_fighting%21.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Boxer_fighting%21.jpg",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Boxer_fighting!.jpg",
+        "title": "Lim Yo-hwan, known as BoxeR",
+        "creator": "thedz(a member of WellPlayed.org)",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "credit": "thedz(a member of WellPlayed.org) / Wikimedia Commons / CC BY 2.0",
+        "width": 1920,
+        "height": 2513,
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 2513
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "starcraft",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Boxer_in_2021.jpg/330px-Boxer_in_2021.jpg",
+      "action": "remove",
+      "reason": "Documented native source is below 1600 px long edge; no upscale or thumbnail enlargement is permitted.",
+      "native_dimensions": [
+        475,
+        609
+      ]
+    },
+    {
+      "entry_id": "the-sims",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Will_Wright_-_Game_Developers_Conference_2010_%282%29.jpg/1280px-Will_Wright_-_Game_Developers_Conference_2010_%282%29.jpg",
+      "action": "replace",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Will_Wright_-_Game_Developers_Conference_2010_%282%29.jpg/1920px-Will_Wright_-_Game_Developers_Conference_2010_%282%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/db/Will_Wright_-_Game_Developers_Conference_2010_%282%29.jpg",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Will_Wright_-_Game_Developers_Conference_2010_(2).jpg",
+        "title": "Will Wright at the Game Developers Conference",
+        "creator": "Official GDC",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "credit": "Official GDC / Wikimedia Commons / CC BY 2.0",
+        "width": 1920,
+        "height": 1908,
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 1920
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "the-sims",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Will_Wright_%285189056674%29.jpg/1280px-Will_Wright_%285189056674%29.jpg",
+      "action": "remove",
+      "reason": "Documented native source is below 1600 px long edge; no upscale or thumbnail enlargement is permitted.",
+      "native_dimensions": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "entry_id": "xbox-halo",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Xbox-console.jpg/1280px-Xbox-console.jpg",
+      "action": "replace",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Xbox-console.jpg/1920px-Xbox-console.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/43/Xbox-console.jpg",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Xbox-console.jpg",
+        "title": "The original Xbox console",
+        "creator": "Evan-Amos",
+        "license": "Public domain",
+        "license_url": "",
+        "credit": "Evan-Amos / Wikimedia Commons / Public domain",
+        "width": 1920,
+        "height": 883,
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 1920
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "steam",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Valve_Lobby_2016.jpg/1280px-Valve_Lobby_2016.jpg",
+      "action": "replace",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Valve_Lobby_2016.jpg/1920px-Valve_Lobby_2016.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/2/27/Valve_Lobby_2016.jpg",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Valve_Lobby_2016.jpg",
+        "title": "Valve's office lobby in 2016",
+        "creator": "Tim Eulitz",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "credit": "Tim Eulitz / Wikimedia Commons / CC BY 4.0",
+        "width": 1920,
+        "height": 1080,
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 1920
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "world-of-warcraft",
+      "match_url": "https://blz-contentstack-images.akamaized.net/v3/assets/blt3452e3b114fab0cd/blta616581872eee85a/605e55b3c59b730cb4c7fba2/DDFL7D2NO05F1472165788051.jpg?auto=webp&quality=75",
+      "action": "replace",
+      "image": {
+        "url": "https://blz-contentstack-images.akamaized.net/v3/assets/blt3452e3b114fab0cd/blta616581872eee85a/605e55b3c59b730cb4c7fba2/DDFL7D2NO05F1472165788051.jpg?auto=webp&quality=75",
+        "source_page": "https://worldofwarcraft.blizzard.com/en-gb/story/timeline/chapter-06",
+        "title": "World of Warcraft ? official historical timeline illustration",
+        "creator": "Blizzard Entertainment",
+        "license": "Copyright retained by the respective rights holders; remote editorial reference",
+        "credit": "Blizzard Entertainment. Published image linked from the cited primary collection or publisher page.",
+        "original_url": "https://blz-contentstack-images.akamaized.net/v3/assets/blt3452e3b114fab0cd/blta616581872eee85a/605e55b3c59b730cb4c7fba2/DDFL7D2NO05F1472165788051.jpg?auto=webp&quality=75",
+        "width": 2400,
+        "height": 1400,
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 2400
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "psp",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/PSP-1000.png/1280px-PSP-1000.png",
+      "action": "replace",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/PSP-1000.png/1920px-PSP-1000.png",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/9/9a/PSP-1000.png",
+        "source_page": "https://commons.wikimedia.org/wiki/File:PSP-1000.png",
+        "title": "Original PSP-1000",
+        "creator": "Evan-Amos; derivative image by Alphathon",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "credit": "Evan-Amos; derivative image by Alphathon / Wikimedia Commons / CC BY-SA 3.0",
+        "width": 1920,
+        "height": 1090,
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 1920
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "wii",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Wii-console.jpg/1280px-Wii-console.jpg",
+      "action": "replace",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Wii-console.jpg/1920px-Wii-console.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Wii-console.jpg",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Wii-console.jpg",
+        "title": "Nintendo Wii console",
+        "creator": "Evan-Amos",
+        "license": "Public domain",
+        "license_url": "",
+        "credit": "Evan-Amos / Wikimedia Commons / Public domain",
+        "width": 1920,
+        "height": 1920,
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 1920
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "wikipedia-18622076",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Garry%27s_Mod_logo.svg/1280px-Garry%27s_Mod_logo.svg.png",
+      "action": "remove",
+      "reason": "Documented native source is below 1600 px long edge; no upscale or thumbnail enlargement is permitted.",
+      "native_dimensions": [
+        512,
+        512
+      ]
+    },
+    {
+      "entry_id": "braid",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Jonathan_Blow_-_GDC_2007.jpg/1280px-Jonathan_Blow_-_GDC_2007.jpg",
+      "action": "replace",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Jonathan_Blow_-_GDC_2007.jpg/1920px-Jonathan_Blow_-_GDC_2007.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Jonathan_Blow_-_GDC_2007.jpg",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Jonathan_Blow_-_GDC_2007.jpg",
+        "title": "Jonathan Blow at the Game Developers Conference",
+        "creator": "Vincent Diamante",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "credit": "Vincent Diamante / Wikimedia Commons / CC BY-SA 2.0",
+        "width": 1920,
+        "height": 1280,
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 1920
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "braid",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Jonathan_Blow_-_Game_Developers_Conference_Europe_2011_%283%29.jpg/1280px-Jonathan_Blow_-_Game_Developers_Conference_Europe_2011_%283%29.jpg",
+      "action": "replace",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Jonathan_Blow_-_Game_Developers_Conference_Europe_2011_%283%29.jpg/1920px-Jonathan_Blow_-_Game_Developers_Conference_Europe_2011_%283%29.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Jonathan_Blow_-_Game_Developers_Conference_Europe_2011_%283%29.jpg",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Jonathan_Blow_-_Game_Developers_Conference_Europe_2011_(3).jpg",
+        "title": "Jonathan Blow",
+        "creator": "Official GDC",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "credit": "Official GDC / Wikimedia Commons / CC BY 2.0",
+        "width": 1920,
+        "height": 1280,
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 1920
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "wikipedia-15448272",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/World_of_Goo_Logo.png/1280px-World_of_Goo_Logo.png",
+      "action": "replace",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/World_of_Goo_Logo.png/1920px-World_of_Goo_Logo.png",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/World_of_Goo_Logo.png",
+        "source_page": "https://commons.wikimedia.org/wiki/File:World_of_Goo_Logo.png",
+        "title": "World of Goo Logo",
+        "creator": "2D Boy (original uploader was Nicosmos at fr.wikipedia )",
+        "license": "Public domain",
+        "license_url": "",
+        "credit": "2D Boy (original uploader was Nicosmos at fr.wikipedia ) / Wikimedia Commons / Public domain",
+        "width": 1920,
+        "height": 1104,
+        "provenance": "English Wikipedia page image; creator and licence verified through Wikimedia imageinfo. Underlying game art and trademarks retain their respective rights.",
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 1920
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "wikipedia-21838352",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/League_of_Legends_2019_vector.svg/1280px-League_of_Legends_2019_vector.svg.png",
+      "action": "remove",
+      "reason": "Documented native source is below 1600 px long edge; no upscale or thumbnail enlargement is permitted.",
+      "native_dimensions": [
+        600,
+        229
+      ]
+    },
+    {
+      "entry_id": "minecraft",
+      "match_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/sc8d2k.jpg",
+      "action": "remove",
+      "reason": "Actual original/downloaded image is below 1600 px long edge.",
+      "native_dimensions": [
+        700,
+        394
+      ]
+    },
+    {
+      "entry_id": "minecraft",
+      "match_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/sc8d2m.jpg",
+      "action": "remove",
+      "reason": "Actual original/downloaded image is below 1600 px long edge.",
+      "native_dimensions": [
+        700,
+        394
+      ]
+    },
+    {
+      "entry_id": "playstation-4",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/PS4-Console-wDS4.jpg/1280px-PS4-Console-wDS4.jpg",
+      "action": "replace",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/PS4-Console-wDS4.jpg/1920px-PS4-Console-wDS4.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/PS4-Console-wDS4.jpg",
+        "source_page": "https://commons.wikimedia.org/wiki/File:PS4-Console-wDS4.jpg",
+        "title": "Original PlayStation 4 with DualShock 4 controller",
+        "creator": "Evan-Amos",
+        "license": "Public domain",
+        "license_url": "",
+        "credit": "Evan-Amos / Wikimedia Commons / Public domain",
+        "width": 1920,
+        "height": 960,
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 1920
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "xbox-one",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Microsoft-Xbox-One-Console-Set-wKinect.jpg/1280px-Microsoft-Xbox-One-Console-Set-wKinect.jpg",
+      "action": "replace",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Microsoft-Xbox-One-Console-Set-wKinect.jpg/1920px-Microsoft-Xbox-One-Console-Set-wKinect.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/05/Microsoft-Xbox-One-Console-Set-wKinect.jpg",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Microsoft-Xbox-One-Console-Set-wKinect.jpg",
+        "title": "Original Xbox One with controller and Kinect",
+        "creator": "Evan-Amos",
+        "license": "Public domain",
+        "license_url": "",
+        "credit": "Evan-Amos / Wikimedia Commons / Public domain",
+        "width": 1920,
+        "height": 1260,
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 1920
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "wikipedia-41950404",
+      "match_url": "https://upload.wikimedia.org/wikipedia/commons/2/22/Nuclear_Throne_icon.png",
+      "action": "remove",
+      "reason": "Documented native source is below 1600 px long edge; no upscale or thumbnail enlargement is permitted.",
+      "native_dimensions": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "entry_id": "pokemon-go",
+      "match_url": "https://lh3.googleusercontent.com/RyQzi0GT1DQpUc6X62nhd1R7pSRXfU4X4J3rA8qTakzh5yeYW9OPKIWEyyHo0wOmy3yHS5lVzYj0snN8ZRWYKX_oRgGXRqGW4Z8W",
+      "action": "remove",
+      "reason": "Actual original/downloaded image is below 1600 px long edge.",
+      "native_dimensions": [
+        300,
+        189
+      ]
+    },
+    {
+      "entry_id": "dandara",
+      "match_url": "https://is1-ssl.mzstatic.com/image/thumb/Features124/v4/b3/d2/7d/b3d27d0e-5edb-f751-9dd3-0d396e2d9522/pr_source.png/1200x630SCS.ApDPCS01.jpg",
+      "action": "remove",
+      "reason": "Actual original/downloaded image is below 1600 px long edge.",
+      "native_dimensions": [
+        1200,
+        630
+      ]
+    },
+    {
+      "entry_id": "wikipedia-53082295",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Dauntless-square-07.jpg/1280px-Dauntless-square-07.jpg",
+      "action": "replace",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Dauntless-square-07.jpg/1920px-Dauntless-square-07.jpg",
+        "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Dauntless-square-07.jpg",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Dauntless-square-07.jpg",
+        "title": "Dauntless-square-07",
+        "creator": "Jpowpow",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "credit": "Jpowpow / Wikimedia Commons / CC BY 4.0",
+        "width": 1920,
+        "height": 2560,
+        "provenance": "English Wikipedia page image; creator and licence verified through Wikimedia imageinfo. Underlying game art and trademarks retain their respective rights.",
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 2560
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "animal-crossing",
+      "match_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/sc6lt7.jpg",
+      "action": "replace",
+      "image": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_original/sc6lt7.jpg",
+        "source_page": "https://www.igdb.com/games/animal-crossing-new-horizons",
+        "title": "Animal Crossing: New Horizons — game screenshot",
+        "creator": "Nintendo",
+        "license": "Copyright retained by the respective game rights holders; remote editorial reference",
+        "credit": "Game imagery: Nintendo. External image reference: IGDB.",
+        "provenance": "External reference selected in the user's Playhub history collection; URL rechecked for this catalog.",
+        "original_url": "https://images.igdb.com/igdb/image/upload/t_original/sc6lt7.jpg",
+        "width": 1920,
+        "height": 1080,
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 1920
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "animal-crossing",
+      "match_url": "https://images.igdb.com/igdb/image/upload/t_screenshot_med_2x/sc6lt8.jpg",
+      "action": "replace",
+      "image": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_original/sc6lt8.jpg",
+        "source_page": "https://www.igdb.com/games/animal-crossing-new-horizons",
+        "title": "Animal Crossing: New Horizons — game screenshot",
+        "creator": "Nintendo",
+        "license": "Copyright retained by the respective game rights holders; remote editorial reference",
+        "credit": "Game imagery: Nintendo. External image reference: IGDB.",
+        "provenance": "External reference selected in the user's Playhub history collection; URL rechecked for this catalog.",
+        "original_url": "https://images.igdb.com/igdb/image/upload/t_original/sc6lt8.jpg",
+        "width": 1920,
+        "height": 1080,
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 1920
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "raji",
+      "match_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730390/ss_b9ed0b12005654bcc8868aa3ab255ebf8e99c392.1920x1080.jpg?t=1763663874",
+      "action": "replace",
+      "image": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730390/ss_b9ed0b12005654bcc8868aa3ab255ebf8e99c392.1920x1080.jpg?t=1763663874",
+        "source_page": "https://store.steampowered.com/app/730390/",
+        "title": "Raji: An Ancient Epic ? official store screenshot",
+        "creator": "Nodding Heads Games",
+        "license": "Copyright Nodding Heads Games; publisher-provided remote editorial reference",
+        "credit": "Nodding Heads Games. Official game screenshot hosted by Steam.",
+        "original_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730390/ss_b9ed0b12005654bcc8868aa3ab255ebf8e99c392.1920x1080.jpg?t=1763663874",
+        "width": 1920,
+        "height": 1080,
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 1920
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "raji",
+      "match_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730390/ss_f486f542cc04bfbdf1933c08c66c667f2830e1b4.1920x1080.jpg?t=1763663874",
+      "action": "replace",
+      "image": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730390/ss_f486f542cc04bfbdf1933c08c66c667f2830e1b4.1920x1080.jpg?t=1763663874",
+        "source_page": "https://store.steampowered.com/app/730390/",
+        "title": "Raji: An Ancient Epic ? official store screenshot",
+        "creator": "Nodding Heads Games",
+        "license": "Copyright Nodding Heads Games; publisher-provided remote editorial reference",
+        "credit": "Nodding Heads Games. Official game screenshot hosted by Steam.",
+        "original_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730390/ss_f486f542cc04bfbdf1933c08c66c667f2830e1b4.1920x1080.jpg?t=1763663874",
+        "width": 1920,
+        "height": 1080,
+        "quality_verified": "Fresh remote GET/full decode on 2026-10-20; no generated upscale.",
+        "native_long_edge": 1920
+      },
+      "reason": "Decoded source meets native long-edge threshold."
+    },
+    {
+      "entry_id": "wikipedia-77278623",
+      "match_url": "https://upload.wikimedia.org/wikipedia/commons/0/05/Aotk_logo.png",
+      "action": "remove",
+      "reason": "Documented native source is below 1600 px long edge; no upscale or thumbnail enlargement is permitted.",
+      "native_dimensions": [
+        1020,
+        537
+      ]
+    },
+    {
+      "entry_id": "steam-deck",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Steam_Deck_%28front%29.png/330px-Steam_Deck_%28front%29.png",
+      "action": "remove",
+      "reason": "Documented native source is below 1600 px long edge; no upscale or thumbnail enlargement is permitted.",
+      "native_dimensions": [
+        1244,
+        462
+      ]
+    },
+    {
+      "entry_id": "wikipedia-69689754",
+      "match_url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Black_skylands_logo_black.png",
+      "action": "remove",
+      "reason": "Documented native source is below 1600 px long edge; no upscale or thumbnail enlargement is permitted.",
+      "native_dimensions": [
+        894,
+        388
+      ]
+    },
+    {
+      "entry_id": "wikipedia-292879",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Computer_Space_cabinet.jpg/1280px-Computer_Space_cabinet.jpg",
+      "action": "remove",
+      "temporary": true,
+      "reason": "Temporarily excluded from runtime pending remote native-quality verification. Host returned429; not a finding that the underlying source is low resolution. Original source and attribution remain in the authoring catalogue."
+    },
+    {
+      "entry_id": "wikipedia-6526451",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Galaxy_Game_1971_first_arcade_game.jpg/1280px-Galaxy_Game_1971_first_arcade_game.jpg",
+      "action": "remove",
+      "temporary": true,
+      "reason": "Temporarily excluded from runtime pending remote native-quality verification. Host returned429; not a finding that the underlying source is low resolution. Original source and attribution remain in the authoring catalogue."
+    },
+    {
+      "entry_id": "pong",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Atari_Pong_arcade_game_cabinet.jpg/1280px-Atari_Pong_arcade_game_cabinet.jpg",
+      "action": "remove",
+      "temporary": true,
+      "reason": "Temporarily excluded from runtime pending remote native-quality verification. Host returned429; not a finding that the underlying source is low resolution. Original source and attribution remain in the authoring catalogue."
+    },
+    {
+      "entry_id": "wii",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Satoru_Iwata_-_Game_Developers_Conference_2011_-_Day_2_%281%29.jpg/1280px-Satoru_Iwata_-_Game_Developers_Conference_2011_-_Day_2_%281%29.jpg",
+      "action": "remove",
+      "temporary": true,
+      "reason": "Temporarily excluded from runtime pending remote native-quality verification. Host returned429; not a finding that the underlying source is low resolution. Original source and attribution remain in the authoring catalogue."
+    },
+    {
+      "entry_id": "playstation-3",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/PS3-Fat-Console-Set.jpg/1280px-PS3-Fat-Console-Set.jpg",
+      "action": "remove",
+      "temporary": true,
+      "reason": "Temporarily excluded from runtime pending remote native-quality verification. Host returned429; not a finding that the underlying source is low resolution. Original source and attribution remain in the authoring catalogue."
+    },
+    {
+      "entry_id": "wikipedia-18711188",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Fez_%28video_game%29_cover_art.png/1280px-Fez_%28video_game%29_cover_art.png",
+      "action": "remove",
+      "temporary": true,
+      "reason": "Temporarily excluded from runtime pending remote native-quality verification. Host returned429; not a finding that the underlying source is low resolution. Original source and attribution remain in the authoring catalogue."
+    },
+    {
+      "entry_id": "wikipedia-40301836",
+      "match_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/N%2B%2B_logo.png/1280px-N%2B%2B_logo.png",
+      "action": "remove",
+      "temporary": true,
+      "reason": "Temporarily excluded from runtime pending remote native-quality verification. Host returned429; not a finding that the underlying source is low resolution. Original source and attribution remain in the authoring catalogue."
+    }
+  ],
+  "additions": [
+    {
+      "entry_id": "workbook-10-20-super-mario-bros-wonder",
+      "insert": "prepend",
+      "images": [
+        {
+          "url": "https://media.rawg.io/media/screenshots/611/6117e095de93147d33a32584d1eecf64.jpg",
+          "original_url": "https://media.rawg.io/media/screenshots/611/6117e095de93147d33a32584d1eecf64.jpg",
+          "source_page": "https://rawg.io/games/super-mario-bros-wonder/screenshots",
+          "title": "Super Mario Bros. Wonder: elephant forms in multiplayer",
+          "creator": "Nintendo",
+          "license": "Copyright retained by Nintendo; remote editorial reference",
+          "credit": "Super Mario Bros. Wonder imagery copyright Nintendo. External image reference: RAWG screenshot gallery.",
+          "width": 1917,
+          "height": 1078,
+          "provenance": "Exact game and remote URL matched against Playhub history_images.json workbook-10-20-super-mario-bros-wonder / jul-dec-review-10-20-rawg-1.jpg. Fresh HTTP 200 GET, full image decode and visual inspection on 2026-10-20.",
+          "focal": {
+            "x": 0.49,
+            "y": 0.52
+          },
+          "story_paragraph": 0
+        },
+        {
+          "url": "https://www.nintendo.com/eu/media/images/06_screenshots/games_5/nintendo_switch_6/nswitch_supermariobroswonder/NSwitch_SuperMarioBrosWonder_08.jpg",
+          "original_url": "https://www.nintendo.com/eu/media/images/06_screenshots/games_5/nintendo_switch_6/nswitch_supermariobroswonder/NSwitch_SuperMarioBrosWonder_08.jpg",
+          "source_page": "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-games/Super-Mario-Bros-Wonder-2404150.html",
+          "title": "Super Mario Bros. Wonder: a pipe bends and starts walking",
+          "creator": "Nintendo",
+          "license": "Copyright retained by Nintendo; remote editorial reference",
+          "credit": "Super Mario Bros. Wonder imagery copyright Nintendo. Official Nintendo Switch screenshot gallery.",
+          "width": 1920,
+          "height": 1080,
+          "provenance": "Observed in the original Nintendo Switch gallery of the cited Nintendo product page. Fresh HTTP 200 GET and full 1920 x 1080 decode on 2026-10-20. Actual pixels visually inspected; source file retained at publisher size with no resizing or upscaling.",
+          "focal": {
+            "x": 0.48,
+            "y": 0.62
+          },
+          "story_paragraph": 1
+        },
+        {
+          "url": "https://www.nintendo.com/eu/media/images/06_screenshots/games_5/nintendo_switch_6/nswitch_supermariobroswonder/NSwitch_SuperMarioBrosWonder_09.jpg",
+          "original_url": "https://www.nintendo.com/eu/media/images/06_screenshots/games_5/nintendo_switch_6/nswitch_supermariobroswonder/NSwitch_SuperMarioBrosWonder_09.jpg",
+          "source_page": "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-games/Super-Mario-Bros-Wonder-2404150.html",
+          "title": "Super Mario Bros. Wonder: stretched silhouettes",
+          "creator": "Nintendo",
+          "license": "Copyright retained by Nintendo; remote editorial reference",
+          "credit": "Super Mario Bros. Wonder imagery copyright Nintendo. Official Nintendo Switch screenshot gallery.",
+          "width": 1920,
+          "height": 1080,
+          "provenance": "Observed in the original Nintendo Switch gallery of the cited Nintendo product page. Fresh HTTP 200 GET and full 1920 x 1080 decode on 2026-10-20. Actual pixels visually inspected; source file retained at publisher size with no resizing or upscaling.",
+          "focal": {
+            "x": 0.51,
+            "y": 0.49
+          },
+          "story_paragraph": 6
+        },
+        {
+          "url": "https://www.nintendo.com/eu/media/images/06_screenshots/games_5/nintendo_switch_6/nswitch_supermariobroswonder/NSwitch_SuperMarioBrosWonder_16.jpg",
+          "original_url": "https://www.nintendo.com/eu/media/images/06_screenshots/games_5/nintendo_switch_6/nswitch_supermariobroswonder/NSwitch_SuperMarioBrosWonder_16.jpg",
+          "source_page": "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-games/Super-Mario-Bros-Wonder-2404150.html",
+          "title": "Super Mario Bros. Wonder: Elephant Mario",
+          "creator": "Nintendo",
+          "license": "Copyright retained by Nintendo; remote editorial reference",
+          "credit": "Super Mario Bros. Wonder imagery copyright Nintendo. Official Nintendo Switch screenshot gallery.",
+          "width": 1920,
+          "height": 1080,
+          "provenance": "Observed in the original Nintendo Switch gallery of the cited Nintendo product page. Fresh HTTP 200 GET and full 1920 x 1080 decode on 2026-10-20. Actual pixels visually inspected; source file retained at publisher size with no resizing or upscaling.",
+          "focal": {
+            "x": 0.52,
+            "y": 0.53
+          },
+          "story_paragraph": 3
+        },
+        {
+          "url": "https://www.nintendo.com/eu/media/images/06_screenshots/games_5/nintendo_switch_6/nswitch_supermariobroswonder/NSwitch_SuperMarioBrosWonder_13.jpg",
+          "original_url": "https://www.nintendo.com/eu/media/images/06_screenshots/games_5/nintendo_switch_6/nswitch_supermariobroswonder/NSwitch_SuperMarioBrosWonder_13.jpg",
+          "source_page": "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-games/Super-Mario-Bros-Wonder-2404150.html",
+          "title": "Super Mario Bros. Wonder: four players share a course",
+          "creator": "Nintendo",
+          "license": "Copyright retained by Nintendo; remote editorial reference",
+          "credit": "Super Mario Bros. Wonder imagery copyright Nintendo. Official Nintendo Switch screenshot gallery.",
+          "width": 1920,
+          "height": 1080,
+          "provenance": "Observed in the original Nintendo Switch gallery of the cited Nintendo product page. Fresh HTTP 200 GET and full 1920 x 1080 decode on 2026-10-20. Actual pixels visually inspected; source file retained at publisher size with no resizing or upscaling.",
+          "focal": {
+            "x": 0.5,
+            "y": 0.55
+          },
+          "story_paragraph": 5
+        }
+      ]
+    },
+    {
+      "entry_id": "journey",
+      "insert": "prepend",
+      "images": [
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/638230/ss_d4c7bfb15df749b78b6957320a4a23d71d531858.jpg?t=1729099361",
+          "original_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/638230/ss_d4c7bfb15df749b78b6957320a4a23d71d531858.jpg?t=1729099361",
+          "source_page": "https://store.steampowered.com/app/638230/Journey/",
+          "title": "Journey: PC edition screenshot",
+          "creator": "thatgamecompany / Sony Interactive Entertainment",
+          "license": "Copyright retained by respective rights holders; remote editorial reference",
+          "credit": "Journey copyright 2012-2020 Sony Interactive Entertainment. Developed by thatgamecompany; PC publisher Annapurna Interactive. Publisher-provided Steam gallery.",
+          "width": 1920,
+          "height": 1080,
+          "quality_verified": "Original publisher asset without Steam 1920 resize suffix returned HTTP 200 and decoded at 1920x1080 on 2026-10-20. Actual 2012 Journey, not the 1983 arcade game.",
+          "factual_note": "Screenshot published with the later PC edition; the article retains the original2012 release chronology."
+        },
+        {
+          "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/638230/ss_c7741b2d22bdd5e5765816c9ef1b1e675616ce81.jpg?t=1729099361",
+          "original_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/638230/ss_c7741b2d22bdd5e5765816c9ef1b1e675616ce81.jpg?t=1729099361",
+          "source_page": "https://store.steampowered.com/app/638230/Journey/",
+          "title": "Journey: PC edition screenshot",
+          "creator": "thatgamecompany / Sony Interactive Entertainment",
+          "license": "Copyright retained by respective rights holders; remote editorial reference",
+          "credit": "Journey copyright 2012-2020 Sony Interactive Entertainment. Developed by thatgamecompany; PC publisher Annapurna Interactive. Publisher-provided Steam gallery.",
+          "width": 1920,
+          "height": 1080,
+          "quality_verified": "Original publisher asset without Steam 1920 resize suffix returned HTTP 200 and decoded at 1920x1080 on 2026-10-20. Actual 2012 Journey, not the 1983 arcade game.",
+          "factual_note": "Screenshot published with the later PC edition; the article retains the original2012 release chronology."
+        }
+      ]
+    }
+  ],
+  "status": "All139 original records covered; unverified sources explicitly excluded from runtime while authoring evidence is preserved.",
+  "coverage": {
+    "original_image_records": 139,
+    "override_records": 139,
+    "qualified_original_or_replacement_records": 77,
+    "excluded_native_too_small_or_wrong_game_records": 55,
+    "temporarily_excluded_pending_verification_records": 7,
+    "additional_verified_images": 7
+  }
+}

@@ -1,0 +1,584 @@
+{
+  "batch_id": "024-catalog",
+  "status": "completed",
+  "sources": [
+    {
+      "source_id": "falcom-history",
+      "url": "https://www.falcom.co.jp/company/history-1980",
+      "title": "Company history, 1980–1989",
+      "publisher": "Nihon Falcom",
+      "accessed_at": "2026-10-30",
+      "scope": "La cronologia colloca Xanadu a ottobre 1985 e le 400.000 copie come cumulativo entro l’esercizio 1986.",
+      "limitation": "Non documenta un giorno di lancio; le fonti sulle singole versioni riportano anche date successive."
+    },
+    {
+      "source_id": "falcom-msx",
+      "url": "https://www.falcom.co.jp/games-data/egg_xanadu_msx",
+      "title": "Xanadu (MSX), Project EGG",
+      "publisher": "Nihon Falcom",
+      "accessed_at": "2026-10-30",
+      "scope": "Il testo distingue il gioco originale del 1985 dalla versione MSX del 1987.",
+      "limitation": "La data2013 nella scheda riguarda la riedizione Windows; non è il lancio MSX."
+    },
+    {
+      "source_id": "xanadu-ports",
+      "url": "https://game.watch.impress.co.jp/docs/kikaku/1543939.html",
+      "title": "Xanadu at38: versions and release chronology",
+      "publisher": "GAME Watch / Otonashi Ran",
+      "accessed_at": "2026-10-30",
+      "scope": "Ricostruzione che indica X1 3novembre1985, altreversioniPC21novembre, FM71986, MSX1987.",
+      "limitation": "Fonte secondaria letta per individuare il conflitto con la cronologia Falcom; non assunta come prova di un unico giorno per tutte le piattaforme."
+    },
+    {
+      "source_id": "sega-outrun",
+      "url": "https://www.sega.jp/history/arcade/product/9321/",
+      "title": "OutRun, Sega arcade history",
+      "publisher": "Sega",
+      "accessed_at": "2026-10-30",
+      "scope": "Data di operatività1986/09; cinque destinazioni e musica selezionabile.",
+      "limitation": "La scheda non fornisce giorno né una regione espressa per la data."
+    },
+    {
+      "source_id": "sega-outrun-manual",
+      "url": "https://www.manualslib.com/manual/4055845/Sega-Deluxe-Outrun.html?page=58",
+      "title": "OutRun Deluxe Type Owner’s Manual, printed page56 / viewer58",
+      "publisher": "Sega, copia Manualslib",
+      "accessed_at": "2026-10-30",
+      "scope": "Il gruppo ASSY MOTOR documenta motoreDC80V e puleggia; sostituito il riferimento non supportato a un sistema idraulico.",
+      "limitation": "Esaminata la pagina del gruppo motore; non eseguito un collaudo fisico del cabinato."
+    },
+    {
+      "source_id": "atlus-history",
+      "url": "https://www.atlus.co.jp/recruit/about/history/",
+      "title": "Atlus company history",
+      "publisher": "Atlus",
+      "accessed_at": "2026-10-30",
+      "scope": "Conferma fondazione1986 con sei persone e ShinMegamiTensei1992.",
+      "limitation": "Il giorno7aprile è conservato dall’INPUT; questa pagina non ne costituisce verifica indipendente."
+    },
+    {
+      "source_id": "persona-p3p-manual",
+      "url": "https://manualzz.com/doc/5116929/atlus-persona-3-portable-video-game-user-manual",
+      "title": "Shin Megami Tensei: Persona3Portable instruction manual, pp12and23",
+      "publisher": "Atlus, copia Manualzz",
+      "accessed_at": "2026-10-30",
+      "scope": "Il rango del SocialLink collegato all’Arcano aumenta l’esperienza bonus della Persona creata per fusione.",
+      "limitation": "Manuale originale ripubblicato, testo consultato. Il PDF Ghostlight indicizzato è stato trovato ma il recupero diretto è scaduto; non viene dichiarato integralmente letto."
+    },
+    {
+      "source_id": "persona-fes-manual",
+      "url": "https://www.scribd.com/document/905724327/Shin-Megami-Tensei-Persona-3-FES-USA-Unknown-2022-935eb56a3f6aed378f9151a54278319e-Anna-s-Archive",
+      "title": "Persona3FES manual: How to increase your number of Social Links",
+      "publisher": "Atlus, copia Scribd",
+      "accessed_at": "2026-10-30",
+      "scope": "Il manuale collega Academics,Charm e Courage all’accesso a ulteriori SocialLinks.",
+      "limitation": "Consultato il passaggio indicizzato, non l’intero documento."
+    },
+    {
+      "source_id": "root-tehkan-game-machine",
+      "url": "https://onitama.tv/gamemachine/pdf/19860215p.pdf",
+      "title": "Tecmo (Tehkan) Ship Table Type PCB “World Cup” — Game Machine no.278, 15 February 1986, p.22",
+      "publisher": "Amusement Press",
+      "accessed_at": "2026-10-30",
+      "scope": "Articolo contemporaneo: avvio delle spedizioni commerciali il16gennaio1986; rinomina diTehkan inTecmo dal1gennaio.",
+      "limitation": "Pagina22 letta nella scansione. Il giorno16documenta le spedizioni al mercato; per la timeline si propone il mese di disponibilità commerciale, senza dedurre un lancio simultaneo in ogni regione o il giorno di installazione nelle singole sale."
+    }
+  ],
+  "decisions": [
+    {
+      "target_id": "wikipedia-19234085",
+      "problem": "L’INPUT colloca tutti i port nel1985 e le vendite oltre400.000 tutte nello stesso anno.",
+      "conclusion": "Separato il debutto1985 dalla successione delle versioni; 400.000copie attribuite a Falcom entro l’esercizio1986.",
+      "source_ids": [
+        "falcom-history",
+        "falcom-msx"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-19234085",
+      "problem": "Il giorno27ottobre dei metadati non è sostenuto dai riscontri aperti, che distinguono più versioni e cronologie.",
+      "conclusion": "Usato il solo1985 nei testi e proposta precisione annuale; nessun giorno inventato, nessuna affermazione di verifica del27ottobre.",
+      "source_ids": [
+        "falcom-history",
+        "falcom-msx",
+        "xanadu-ports"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-449098",
+      "problem": "Il cabinato deluxe è descritto come idraulico.",
+      "conclusion": "Il manuale originale documenta il gruppo motore; descrizione corretta in tutte le lingue come meccanismo azionato da un motore.",
+      "source_ids": [
+        "sega-outrun-manual"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-449098",
+      "problem": "La collocazione contiene soltanto l’anno.",
+      "conclusion": "Sega documenta1986/09: disponibile una proposta di precisione mensile senza inventare un giorno o una regione.",
+      "source_ids": [
+        "sega-outrun"
+      ],
+      "text_applied": false
+    },
+    {
+      "target_id": "wikipedia-28631491",
+      "problem": "L’INPUT dice GridironFight uscito prima nello stesso anno, mentre TehkanWorldCup è collocato1986 e GridironFight1985.",
+      "conclusion": "Indicato esplicitamente GridironFight1985, riutilizzando il controllo già compiuto nel lotto022; la disponibilità domestica1990 segue l’assenza di una conversione immediata.",
+      "source_ids": [],
+      "prior_audit": "AUDIT/verifiche-fattuali-021-022.json",
+      "text_applied": true
+    },
+    {
+      "target_id": "workbook-04-07-atlus",
+      "problem": "Il paragrafoPersona descriveva in modo generico il rafforzamento delle evocazioni e il rapporto con le capacità sociali.",
+      "conclusion": "Precisato che il rango del SocialLink dà esperienza bonus nella fusione e che le capacità sociali aprono ulteriori relazioni; mantenuta l’origine del sistema inPersona3 e la rielaborazioneConfidants diPersona5.",
+      "source_ids": [
+        "persona-p3p-manual",
+        "persona-fes-manual"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-28631491",
+      "problem": "Distinguere il copyright e le prove1985 dalla distribuzione commerciale1986; verificare la cronologia della rinomina.",
+      "conclusion": "Confermato il1986 già fornito dal lotto; precisato gennaio1986 sul resoconto contemporaneo delle spedizioni commerciali. La prosa francese non colloca più la rinomina dopo l’uscita.",
+      "source_ids": [
+        "root-tehkan-game-machine"
+      ],
+      "text_applied": true
+    }
+  ],
+  "metadata_proposals": [
+    {
+      "target_id": "wikipedia-19234085",
+      "field": "timeline_release",
+      "original": {
+        "year": 1985,
+        "month": 10,
+        "day": 27,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed": {
+        "year": 1985,
+        "precision": "year",
+        "region": "Japan",
+        "version": "Original computer release; separate individual ports"
+      },
+      "source_ids": [
+        "falcom-history",
+        "falcom-msx",
+        "xanadu-ports"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "wikipedia-449098",
+      "field": "timeline_release",
+      "original": {
+        "year": 1986,
+        "precision": "year",
+        "region": ""
+      },
+      "proposed": {
+        "year": 1986,
+        "month": 9,
+        "precision": "month",
+        "region": "",
+        "version": "Arcade, as dated by Sega"
+      },
+      "source_ids": [
+        "sega-outrun"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "wikipedia-28631491",
+      "field": "timeline_release",
+      "original": {
+        "year": 1986,
+        "precision": "year",
+        "region": ""
+      },
+      "proposed": {
+        "year": 1986,
+        "month": 1,
+        "precision": "month",
+        "region": "",
+        "version": "Arcade; commercial distribution documented by Game Machine"
+      },
+      "source_ids": [
+        "root-tehkan-game-machine"
+      ],
+      "applied_to_catalog": false
+    }
+  ],
+  "expansion_assessments": [
+    {
+      "target_id": "wikipedia-801404",
+      "main_cards": 2,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "missing_cards": 3,
+      "rationale": "Gioco di rilievo storico: applicata la soglia di cinque card principali."
+    },
+    {
+      "target_id": "wikipedia-19234085",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "missing_cards": 2,
+      "rationale": "Gioco di rilievo storico: applicata la soglia di cinque card principali."
+    },
+    {
+      "target_id": "golden-joystick-awards-1986",
+      "main_cards": 2,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Evento o organizzazione: nessuna soglia automatica."
+    },
+    {
+      "target_id": "wikipedia-28631491",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "missing_cards": 2,
+      "rationale": "Gioco di rilievo storico: applicata la soglia di cinque card principali."
+    },
+    {
+      "target_id": "wikipedia-449098",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "missing_cards": 2,
+      "rationale": "Gioco di rilievo storico: applicata la soglia di cinque card principali."
+    },
+    {
+      "target_id": "wikipedia-697403",
+      "main_cards": 2,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "missing_cards": 3,
+      "rationale": "Gioco di rilievo storico: applicata la soglia di cinque card principali."
+    },
+    {
+      "target_id": "zelda",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "missing_cards": 1,
+      "rationale": "Gioco di rilievo storico: applicata la soglia di cinque card principali."
+    },
+    {
+      "target_id": "workbook-04-07-atlus",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Evento o organizzazione: nessuna soglia automatica."
+    },
+    {
+      "target_id": "wikipedia-11496692",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Gioco su licenza: quattro card autonome; non trattato automaticamente come uno dei giochi più importanti ai fini della quota."
+    },
+    {
+      "target_id": "dragon-quest",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "missing_cards": 1,
+      "rationale": "Gioco di rilievo storico: applicata la soglia di cinque card principali."
+    }
+  ],
+  "editorial_review": {
+    "english_first": true,
+    "five_languages_reviewed": [
+      "en",
+      "it",
+      "fr",
+      "de",
+      "es"
+    ],
+    "checks": [
+      "Fedeltà di numeri, versioni, persone e sequenza delle card",
+      "Incipit identificativi e titoli specifici",
+      "Sommari inglesi25–45parole,1–2frasi",
+      "Adattamenti idiomatici e revisione dei calchi",
+      "Otto coppie categoria/vincitore preservate",
+      "Nomi ufficiali e titoli musicali invariati",
+      "Fonti e diritti conservati negliINPUT originali"
+    ],
+    "external_verification_limit": "Controlli mirati sui punti elencati; non si dichiara una verifica indipendente di ogni fatto dell’INPUT.",
+    "book_style_references_consulted": false,
+    "field_revisions": [
+      {
+        "target_id": "workbook-04-07-atlus",
+        "card_id": "main:3",
+        "language": "en",
+        "field": "text",
+        "before": "In the Persona series, Personas are manifestations of a person's psyche and subconscious that take physical form for use in combat. Persona 3 introduced Social Links, connecting relationships outside battle with their growth. Each relationship has its own rank and belongs to a Persona family, or Arcanum. Spending time with the associated character raises that rank and strengthens the possibilities offered by Personas of the same Arcanum, including those obtained through fusion.\n\nThe protagonist's academic ability and social aptitude also contribute to this connection between everyday life and Persona development. Persona 5 reworked the system as Confidants.",
+        "after": "In the Persona series, Personas are manifestations of a person's psyche and subconscious that take physical form for use in combat. Persona 3 introduced Social Links, connecting relationships outside battle with their growth. Each relationship has its own rank and belongs to a Persona family, or Arcanum. Spending time with the associated character can raise that rank. Higher ranks give new Personas of that Arcanum extra experience when they are created through fusion.\n\nThe protagonist's academic ability and social aptitude can open further relationships, connecting everyday life to Persona development. Persona 5 reworked the system as Confidants.",
+        "reason": "Precisare il bonus di esperienza della fusione e il ruolo delle capacità sociali sulla base dei manuali originali."
+      },
+      {
+        "target_id": "workbook-04-07-atlus",
+        "card_id": "main:3",
+        "language": "it",
+        "field": "text",
+        "before": "Nella serie Persona, le Persona sono manifestazioni della psiche e del subconscio di una persona che assumono forma fisica e vengono impiegate in combattimento. Persona 3 introdusse i Social Links, collegando la loro crescita alle relazioni coltivate fuori dalle battaglie. Ogni rapporto ha un proprio rango ed è associato a una famiglia di Persona, o Arcano. Trascorrere tempo con il personaggio corrispondente fa salire quel rango e amplia le possibilità offerte dalle Persona dello stesso Arcano, comprese quelle ottenute per fusione.\n\nAnche il rendimento scolastico e le capacità sociali del protagonista contribuiscono a questo legame tra vita quotidiana e sviluppo delle Persona. Persona 5 rielaborò il sistema con i Confidants.",
+        "after": "Nella serie Persona, le Persona sono manifestazioni della psiche e del subconscio di una persona che assumono forma fisica e vengono impiegate in combattimento. Persona 3 introdusse i Social Links, collegando la loro crescita alle relazioni coltivate fuori dalle battaglie. Ogni rapporto ha un proprio rango ed è associato a una famiglia di Persona, o Arcano. Trascorrere tempo con il personaggio corrispondente può far salire quel rango. Un rango più alto dà esperienza aggiuntiva alle nuove Persona dello stesso Arcano ottenute per fusione.\n\nIl rendimento scolastico e le capacità sociali del protagonista possono rendere accessibili altri rapporti, collegando la vita quotidiana allo sviluppo delle Persona. Persona 5 rielaborò il sistema con i Confidants.",
+        "reason": "Precisare il bonus di esperienza della fusione e il ruolo delle capacità sociali sulla base dei manuali originali."
+      },
+      {
+        "target_id": "workbook-04-07-atlus",
+        "card_id": "main:3",
+        "language": "fr",
+        "field": "text",
+        "before": "Dans la série Persona, les Personas sont des manifestations de la psyché et du subconscient d'une personne, prenant une forme physique pour combattre. Persona 3 introduit les Social Links, qui associent leur développement aux relations entretenues en dehors des batailles. Chaque relation possède son propre rang et correspond à une famille de Personas, ou Arcane. Passer du temps avec le personnage concerné augmente ce rang et renforce les possibilités offertes par les Personas du même Arcane, notamment celles obtenues par fusion.\n\nLes aptitudes scolaires et sociales du protagoniste participent également à ce lien entre vie quotidienne et développement des Personas. Persona 5 remanie ce système sous le nom Confidants.",
+        "after": "Dans la série Persona, les Personas sont des manifestations de la psyché et du subconscient d'une personne, prenant une forme physique pour combattre. Persona 3 introduit les Social Links, qui associent leur développement aux relations entretenues en dehors des batailles. Chaque relation possède son propre rang et correspond à une famille de Personas, ou Arcane. Passer du temps avec le personnage concerné peut augmenter ce rang. Un rang plus élevé accorde davantage d'expérience aux nouvelles Personas du même Arcane créées par fusion.\n\nLes aptitudes scolaires et sociales du protagoniste peuvent ouvrir de nouvelles relations, reliant ainsi le quotidien au développement des Personas. Persona 5 remanie ce système sous le nom Confidants.",
+        "reason": "Precisare il bonus di esperienza della fusione e il ruolo delle capacità sociali sulla base dei manuali originali."
+      },
+      {
+        "target_id": "workbook-04-07-atlus",
+        "card_id": "main:3",
+        "language": "de",
+        "field": "text",
+        "before": "In der Persona-Reihe sind Personas Verkörperungen der Psyche und des Unterbewusstseins eines Menschen, die im Kampf eine körperliche Gestalt annehmen. Persona 3 führte die Social Links ein und verband damit ihre Entwicklung mit Beziehungen außerhalb der Kämpfe. Jede Beziehung besitzt einen eigenen Rang und ist einer Persona-Familie, einem Arkanum, zugeordnet. Wer Zeit mit der jeweiligen Figur verbringt, steigert diesen Rang und verbessert damit die Möglichkeiten der Personas desselben Arkanums, darunter auch durch Fusion erhaltene Personas.\n\nSchulische Leistungen und soziale Fähigkeiten des Protagonisten gehören ebenfalls zu dieser Verbindung zwischen Alltag und Persona-Entwicklung. Persona 5 überarbeitete das System unter dem Namen Confidants.",
+        "after": "In der Persona-Reihe sind Personas Verkörperungen der Psyche und des Unterbewusstseins eines Menschen, die im Kampf eine körperliche Gestalt annehmen. Persona 3 führte die Social Links ein und verband damit ihre Entwicklung mit Beziehungen außerhalb der Kämpfe. Jede Beziehung besitzt einen eigenen Rang und ist einer Persona-Familie, einem Arkanum, zugeordnet. Zeit mit der jeweiligen Figur zu verbringen, kann diesen Rang erhöhen. Höhere Ränge geben neuen Personas desselben Arkanums bei der Fusion zusätzliche Erfahrung.\n\nSchulische Leistungen und soziale Fähigkeiten des Protagonisten können weitere Beziehungen ermöglichen und verbinden so den Alltag mit der Entwicklung der Personas. Persona 5 überarbeitete das System unter dem Namen Confidants.",
+        "reason": "Precisare il bonus di esperienza della fusione e il ruolo delle capacità sociali sulla base dei manuali originali."
+      },
+      {
+        "target_id": "workbook-04-07-atlus",
+        "card_id": "main:3",
+        "language": "es",
+        "field": "text",
+        "before": "En la serie Persona, las Personas son manifestaciones de la psique y el subconsciente de una persona que adoptan una forma física para combatir. Persona 3 introdujo los Social Links, que relacionan su desarrollo con los vínculos cultivados fuera de las batallas. Cada relación tiene su propio rango y corresponde a una familia de Personas, o Arcano. Pasar tiempo con el personaje asociado eleva ese rango y mejora las posibilidades de las Personas del mismo Arcano, incluidas las obtenidas mediante fusión.\n\nLa capacidad académica y las aptitudes sociales del protagonista también forman parte de esta relación entre la vida cotidiana y el desarrollo de las Personas. Persona 5 reelaboró el sistema con los Confidants.",
+        "after": "En la serie Persona, las Personas son manifestaciones de la psique y el subconsciente de una persona que adoptan una forma física para combatir. Persona 3 introdujo los Social Links, que relacionan su desarrollo con los vínculos cultivados fuera de las batallas. Cada relación tiene su propio rango y corresponde a una familia de Personas, o Arcano. Pasar tiempo con el personaje asociado puede elevar ese rango. Los rangos más altos dan experiencia adicional a las nuevas Personas del mismo Arcano creadas mediante fusión.\n\nLa capacidad académica y las aptitudes sociales del protagonista pueden abrir nuevas relaciones, conectando la vida cotidiana con el desarrollo de las Personas. Persona 5 reelaboró el sistema con los Confidants.",
+        "reason": "Precisare il bonus di esperienza della fusione e il ruolo delle capacità sociali sulla base dei manuali originali."
+      },
+      {
+        "target_id": "wikipedia-28631491",
+        "card_id": null,
+        "language": "en",
+        "field": "summary",
+        "before": "Tehkan World Cup brought trackball control to arcade football in 1986. Players could vary the direction and speed of their shots, in a game whose approach later influenced home computer football.",
+        "after": "Tehkan World Cup is an arcade football game released in 1986, with trackball controls that let players vary the direction and speed of shots. Its approach later influenced football games on home computers.",
+        "reason": "Rilettura editoriale del revisore e precisazione della disponibilità commerciale documentata."
+      },
+      {
+        "target_id": "wikipedia-28631491",
+        "card_id": null,
+        "language": "it",
+        "field": "summary",
+        "before": "Tehkan World Cup portò il controllo con trackball nel calcio da sala giochi del 1986. Permetteva di dosare direzione e velocità dei tiri, con un'impostazione che avrebbe influenzato anche i giochi per computer domestici.",
+        "after": "Tehkan World Cup è un gioco di calcio per le sale giochi uscito nel 1986. La trackball permette di dosare direzione e velocità dei tiri, secondo un’impostazione che avrebbe influenzato anche i giochi per computer domestici.",
+        "reason": "Rilettura editoriale del revisore e precisazione della disponibilità commerciale documentata."
+      },
+      {
+        "target_id": "wikipedia-28631491",
+        "card_id": null,
+        "language": "fr",
+        "field": "summary",
+        "before": "Tehkan World Cup introduit le contrôle au trackball dans le football d'arcade en 1986. Le joueur dose la direction et la vitesse de ses tirs, selon une formule qui influencera aussi les jeux sur ordinateur.",
+        "after": "Sorti en 1986, Tehkan World Cup est un jeu de football d’arcade où le trackball permet de régler la direction et la vitesse des tirs. Cette formule influencera aussi les jeux de football sur ordinateur.",
+        "reason": "Rilettura editoriale del revisore e precisazione della disponibilità commerciale documentata."
+      },
+      {
+        "target_id": "wikipedia-28631491",
+        "card_id": null,
+        "language": "de",
+        "field": "summary",
+        "before": "Tehkan World Cup brachte 1986 die Trackball-Steuerung in den Arcade-Fußball. Damit ließen sich Richtung und Geschwindigkeit eines Schusses bestimmen; der Ansatz beeinflusste später auch Fußballspiele auf Heimcomputern.",
+        "after": "Tehkan World Cup ist ein Arcade-Fußballspiel von 1986, bei dem sich Richtung und Geschwindigkeit der Schüsse mit einem Trackball steuern lassen. Sein Ansatz beeinflusste später auch Fußballspiele auf Heimcomputern.",
+        "reason": "Rilettura editoriale del revisore e precisazione della disponibilità commerciale documentata."
+      },
+      {
+        "target_id": "wikipedia-28631491",
+        "card_id": null,
+        "language": "es",
+        "field": "summary",
+        "before": "Tehkan World Cup incorporó el control con trackball al fútbol de recreativas en 1986. Permitía ajustar la dirección y la velocidad de los disparos con una fórmula que después influiría en los juegos para ordenador.",
+        "after": "Tehkan World Cup es un juego de fútbol para recreativas publicado en 1986. El trackball permite ajustar la dirección y la velocidad de los disparos, con una fórmula que después influiría en los juegos para ordenador.",
+        "reason": "Rilettura editoriale del revisore e precisazione della disponibilità commerciale documentata."
+      },
+      {
+        "target_id": "wikipedia-28631491",
+        "card_id": "main:0",
+        "language": "en",
+        "field": "text",
+        "before": "Tehkan World Cup reached arcades in 1986 after location tests in late 1985. Developed by Tehkan, later known as Tecmo, it was originally called World Cup in Japan. Multiplayer matches used trackball controllers, most often on a cocktail-style table cabinet, although upright and other table versions also existed. Its arrival preceded the 1986 FIFA World Cup. The unnamed teams wore colours associated with leading national sides, including West Germany, Argentina and Brazil.",
+        "after": "Tehkan World Cup reached arcades in January 1986 after location tests in late 1985. Developed by Tehkan, later known as Tecmo, it was originally called World Cup in Japan. Multiplayer matches used trackball controllers, most often on a cocktail-style table cabinet, although upright and other table versions also existed. Its arrival preceded the 1986 FIFA World Cup. The unnamed teams wore colours associated with leading national sides, including West Germany, Argentina and Brazil.",
+        "reason": "Rilettura editoriale del revisore e precisazione della disponibilità commerciale documentata."
+      },
+      {
+        "target_id": "wikipedia-28631491",
+        "card_id": "main:0",
+        "language": "it",
+        "field": "text",
+        "before": "Tehkan World Cup arrivò nelle sale nel 1986, dopo alcune prove sul posto alla fine del 1985. Sviluppato da Tehkan, poi divenuta Tecmo, in Giappone si chiamava inizialmente World Cup. Le partite a più giocatori usavano trackball, soprattutto nei cabinati a tavolino di tipo cocktail, anche se esistevano modelli verticali e altre versioni da tavolo. Il lancio precedette i Mondiali di calcio del 1986. Le squadre non avevano nomi, ma indossavano i colori di alcune delle nazionali più note, tra cui Germania Ovest, Argentina e Brasile.",
+        "after": "Tehkan World Cup arrivò nelle sale nel gennaio 1986, dopo le prove in sala alla fine del 1985. Sviluppato da Tehkan, poi divenuta Tecmo, in Giappone si chiamava inizialmente World Cup. Le partite a più giocatori usavano trackball, soprattutto nei cabinati a tavolino di tipo cocktail, anche se esistevano modelli verticali e altre versioni da tavolo. Il lancio precedette i Mondiali di calcio del 1986. Le squadre non avevano nomi, ma indossavano i colori di alcune delle nazionali più note, tra cui Germania Ovest, Argentina e Brasile.",
+        "reason": "Rilettura editoriale del revisore e precisazione della disponibilità commerciale documentata."
+      },
+      {
+        "target_id": "wikipedia-28631491",
+        "card_id": "main:0",
+        "language": "fr",
+        "field": "text",
+        "before": "Tehkan World Cup arrive en arcade en 1986, après des essais en salle à la fin de 1985. Développé par Tehkan, qui prendra le nom de Tecmo, il s'appelle d'abord World Cup au Japon. Les parties à plusieurs se jouent au trackball, le plus souvent sur une borne-table de type cocktail, même s'il existe aussi des bornes verticales et d'autres modèles de table. Le jeu paraît à l'approche de la Coupe du monde de football de 1986. Les équipes ne portent aucun nom, mais leurs couleurs évoquent notamment l'Allemagne de l'Ouest, l'Argentine et le Brésil.",
+        "after": "Tehkan World Cup arrive en arcade en janvier 1986, après des essais en salle à la fin de 1985. Développé par Tehkan, rebaptisée Tecmo, il s'appelle d'abord World Cup au Japon. Les parties à plusieurs se jouent au trackball, le plus souvent sur une borne-table de type cocktail, même s'il existe aussi des bornes verticales et d'autres modèles de table. Le jeu paraît à l'approche de la Coupe du monde de football de 1986. Les équipes ne portent aucun nom, mais leurs couleurs évoquent notamment l'Allemagne de l'Ouest, l'Argentine et le Brésil.",
+        "reason": "Rilettura editoriale del revisore e precisazione della disponibilità commerciale documentata."
+      },
+      {
+        "target_id": "wikipedia-28631491",
+        "card_id": "main:0",
+        "language": "de",
+        "field": "text",
+        "before": "Tehkan World Cup erschien 1986 in den Spielhallen, nachdem Ende 1985 Tests vor Ort stattgefunden hatten. Entwickelt wurde es von Tehkan, dem späteren Tecmo; in Japan hieß es zunächst World Cup. Die Mehrspielerpartien wurden mit Trackballs gesteuert, meist an einem Cocktail-Tischautomaten, obwohl es auch aufrechte Geräte und andere Tischvarianten gab. Das Spiel erschien im Vorfeld der Fußball-Weltmeisterschaft 1986. Die Mannschaften trugen keine Namen, ihre Farben erinnerten jedoch an bekannte Nationalteams wie Westdeutschland, Argentinien und Brasilien.",
+        "after": "Tehkan World Cup erschien im Januar 1986 in den Spielhallen, nachdem es dort Ende 1985 getestet worden war. Entwickelt wurde es von Tehkan, dem späteren Tecmo; in Japan hieß es zunächst World Cup. Die Mehrspielerpartien wurden mit Trackballs gesteuert, meist an einem Cocktail-Tischautomaten, obwohl es auch aufrechte Geräte und andere Tischvarianten gab. Das Spiel erschien im Vorfeld der Fußball-Weltmeisterschaft 1986. Die Mannschaften trugen keine Namen, ihre Farben erinnerten jedoch an bekannte Nationalteams wie Westdeutschland, Argentinien und Brasilien.",
+        "reason": "Rilettura editoriale del revisore e precisazione della disponibilità commerciale documentata."
+      },
+      {
+        "target_id": "wikipedia-28631491",
+        "card_id": "main:0",
+        "language": "es",
+        "field": "text",
+        "before": "Tehkan World Cup llegó a los salones en 1986, después de las pruebas realizadas en locales a finales de 1985. Desarrollado por Tehkan, posteriormente conocida como Tecmo, se llamó originalmente World Cup en Japón. Las partidas multijugador empleaban trackballs, sobre todo en muebles de mesa tipo cóctel, aunque también hubo modelos verticales y otras variantes de mesa. Su lanzamiento precedió al Mundial de fútbol de 1986. Los equipos no tenían nombre, pero vestían colores asociados con selecciones destacadas como Alemania Occidental, Argentina y Brasil.",
+        "after": "Tehkan World Cup llegó a los salones en enero de 1986, después de las pruebas realizadas en locales a finales de 1985. Desarrollado por Tehkan, posteriormente conocida como Tecmo, se llamó originalmente World Cup en Japón. Las partidas multijugador empleaban trackballs, sobre todo en muebles de mesa tipo cóctel, aunque también hubo modelos verticales y otras variantes de mesa. Su lanzamiento precedió al Mundial de fútbol de 1986. Los equipos no tenían nombre, pero vestían colores asociados con selecciones destacadas como Alemania Occidental, Argentina y Brasil.",
+        "reason": "Rilettura editoriale del revisore e precisazione della disponibilità commerciale documentata."
+      },
+      {
+        "target_id": "wikipedia-28631491",
+        "card_id": "main:1",
+        "language": "en",
+        "field": "heading",
+        "before": "Direction and speed under the hand",
+        "after": "Controlling the direction and speed of a shot",
+        "reason": "Rilettura editoriale del revisore e precisazione della disponibilità commerciale documentata."
+      },
+      {
+        "target_id": "dragon-quest",
+        "card_id": "main:0",
+        "language": "fr",
+        "field": "heading",
+        "before": "Une aventure de rôle sur Famicom",
+        "after": "Un jeu de rôle pour la Famicom",
+        "reason": "Rilettura editoriale del revisore e precisazione della disponibilità commerciale documentata."
+      },
+      {
+        "target_id": "workbook-04-07-atlus",
+        "card_id": null,
+        "language": "fr",
+        "field": "summary",
+        "before": "Atlus naît en 1986 avec six personnes qui travaillent sur commande. Shin Megami Tensei et Persona lui donnent ensuite une identité propre dans le jeu de rôle, en reliant le groupe aux négociations, aux alliances et aux relations.",
+        "after": "Atlus naît en 1986 avec six personnes qui travaillent sur commande. Shin Megami Tensei et Persona lui donnent ensuite une identité propre dans le jeu de rôle, où l’évolution du groupe passe par la négociation, les alliances et les relations personnelles.",
+        "reason": "Rilettura editoriale del revisore e precisazione della disponibilità commerciale documentata."
+      }
+    ],
+    "root_review": {
+      "scope": "Lettura dei testiEN/IT e controllo mirato delle cinque lingue, con particolare attenzione alle segnalazioni numeriche, adAtlus eTehkanWorldCup; non dichiarata una seconda verifica universale di ogni fatto.",
+      "findings": [
+        "Le differenze nelle migliaia e nei nomi dei decenni sono adattamenti numerici corretti.",
+        "Le riduzioni diTehkanmain:1 eAtlusmain:3 conservano i concetti pertinenti; la seconda riflette la correzione documentata del sistemaSocialLinks.",
+        "Rivisti i sommariTehkan per evitare di suggerire un primato non verificato e corretti alcuni calchi."
+      ],
+      "before_sha256": "1911906d397c4e94f6d82e6de9b6044c0375ac1d83b775b8481e80411be8ee59"
+    }
+  },
+  "validation": {
+    "valid": true,
+    "batch_id": "024-catalog",
+    "completed": true,
+    "entry_count": 10,
+    "card_count_per_language": 31,
+    "language_count": 5,
+    "translated_card_count": 155,
+    "entry_card_counts": {
+      "wikipedia-801404": 2,
+      "wikipedia-19234085": 3,
+      "golden-joystick-awards-1986": 2,
+      "wikipedia-28631491": 3,
+      "wikipedia-449098": 3,
+      "wikipedia-697403": 2,
+      "zelda": 4,
+      "workbook-04-07-atlus": 4,
+      "wikipedia-11496692": 4,
+      "dragon-quest": 4
+    },
+    "issue_counts": {
+      "wikipedia-801404": 1,
+      "wikipedia-19234085": 1,
+      "golden-joystick-awards-1986": 0,
+      "wikipedia-28631491": 1,
+      "wikipedia-449098": 1,
+      "wikipedia-697403": 1,
+      "zelda": 1,
+      "workbook-04-07-atlus": 0,
+      "wikipedia-11496692": 0,
+      "dragon-quest": 1
+    },
+    "summary_checks": [
+      {
+        "entry_id": "wikipedia-801404",
+        "feature_id": null,
+        "english_summary_words": 27
+      },
+      {
+        "entry_id": "wikipedia-19234085",
+        "feature_id": null,
+        "english_summary_words": 30
+      },
+      {
+        "entry_id": "golden-joystick-awards-1986",
+        "feature_id": null,
+        "english_summary_words": 30
+      },
+      {
+        "entry_id": "wikipedia-28631491",
+        "feature_id": null,
+        "english_summary_words": 33
+      },
+      {
+        "entry_id": "wikipedia-449098",
+        "feature_id": null,
+        "english_summary_words": 32
+      },
+      {
+        "entry_id": "wikipedia-697403",
+        "feature_id": null,
+        "english_summary_words": 28
+      },
+      {
+        "entry_id": "zelda",
+        "feature_id": null,
+        "english_summary_words": 31
+      },
+      {
+        "entry_id": "workbook-04-07-atlus",
+        "feature_id": null,
+        "english_summary_words": 29
+      },
+      {
+        "entry_id": "wikipedia-11496692",
+        "feature_id": null,
+        "english_summary_words": 32
+      },
+      {
+        "entry_id": "dragon-quest",
+        "feature_id": null,
+        "english_summary_words": 32
+      }
+    ],
+    "editorial_review": [],
+    "failures": []
+  },
+  "output_sha256": "aad3092e919de1888cd19d677079475f85baaa3bb01538b4f0281fd7ea4766a3"
+}

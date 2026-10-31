@@ -1,0 +1,81 @@
+{
+  "status": "PASS",
+  "locale": "es",
+  "entries": [
+    {
+      "entry_id": "the-game-awards-2023",
+      "source_fields_sha256": "ff69afc6aad2e29af24c981620e0e859760be485b40ac94503375616d474dd3a",
+      "translation_sha256": "11aaa3bb047744ea4ce1710ffd72ab4752bcbefe16ec272acf43883b06ab9c4d",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch363/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "8ea0935f4db130c744947caddfabb2c5d35408f47173cb1e54cb30e933893af6"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "/root/package_audit",
+    "actual_receipt": "build/research/catalog-2023-chronological/tga-single-private/independent-package-audit-approval.json",
+    "actual_receipt_sha256": "669c1a7fcd87928d15c22c66c4af45800404c73cea63eb51bdb56f9f3a208a6a",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "/root/package_audit",
+      "author": "/root",
+      "independent": true,
+      "review_mode": "mechanical_exact_admitted_shared_archive_reuse",
+      "index_sha256": "1fd3ca93e1bc2e5199d1daec6d981c4805165dae0dc30c65ab85db93b3616414",
+      "owners": [
+        {
+          "entry_id": "the-game-awards-2023",
+          "slug": "tga",
+          "source": "build/research/catalog-2023-chronological/tga-single-private/tga-source-private-candidate.json",
+          "source_sha256": "bb74189de4eedc3167b22b10b74e4b4e7876a4da7728eff99244fb95d57b6fe9",
+          "target": "build/research/catalog-2023-chronological/tga-single-private/tga-four-language-private-candidate.json",
+          "target_sha256": "465d6f594300cbd7108ec04b82db0e3a0e45165a8d29e6bdf84ca91ecd0fa486",
+          "contact": "build/research/catalog-2023-chronological/tga-single-private/tga-final-contact.jpg",
+          "contact_sha256": "0eebd0d55553f41d17cf6da6786a19039acf16fc262eec1d4d7d21c5f66711b8",
+          "english_cards": 14,
+          "localized_cards": 56,
+          "images": 14,
+          "tracks": 0
+        }
+      ],
+      "shared_reference_owner": "the-game-awards-2022",
+      "reference_approval": "build/research/catalog-2022-chronological/tga-single-private/independent-category-audit-approval.json",
+      "reference_approval_sha256": "ea10abf1c2858cd08b75935bf6ee17c0e90715726e36aedc455be0fe35fa4b83",
+      "exact_shared_fields_verified": [
+        "body",
+        "story_headings",
+        "images",
+        "sources",
+        "subtitle",
+        "summary",
+        "preferred_image",
+        "publication_readiness"
+      ],
+      "localized_fields_verified": [
+        "subtitle",
+        "summary",
+        "body",
+        "story_headings"
+      ],
+      "scope": {
+        "shared_english_cards_exact": 14,
+        "shared_localized_cards_exact": 56,
+        "shared_images_exact": 14,
+        "new_annual_research_claimed": false,
+        "repeated_image_or_audio_checks": false
+      },
+      "preserved_own_identity": {
+        "id": "the-game-awards-2023",
+        "year": 2023,
+        "date": {
+          "month": 12,
+          "day": 7,
+          "precision": "day",
+          "region": ""
+        }
+      },
+      "findings": [],
+      "production_writes": false
+    }
+  }
+}

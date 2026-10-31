@@ -1,0 +1,46 @@
+{
+  "corpora": [
+    {
+      "file": "history_days.json",
+      "records": 335,
+      "unique_subjects": 335,
+      "English_intros": 335
+    },
+    {
+      "file": "history_editorial.json",
+      "records": 52,
+      "unique_subjects": 52,
+      "English_intros": 52
+    },
+    {
+      "file": "history_imported.json",
+      "records": 365,
+      "unique_subjects": 365,
+      "English_intros": 365
+    }
+  ],
+  "unique_subjects_across_all_three_after_normalizing": 686,
+  "imported_English_words": {
+    "min": 344,
+    "median": 454,
+    "max": 2423
+  },
+  "reviewable_new_museum_records": 318,
+  "by_decade": {
+    "1950": 4,
+    "1960": 5,
+    "1970": 5,
+    "1980": 30,
+    "1990": 74,
+    "2000": 69,
+    "2010": 99,
+    "2020": 32
+  },
+  "excluded": {
+    "commemoration_not_a_dated_release_or_life_event": 25,
+    "already_in_prototype_title_match": 16,
+    "outside_museum_year_range": 6
+  },
+  "ready_for_immediate_publication": false,
+  "reason": "Existing English essays and source links are real; adaptation, source recheck, media selection and narrative curation remain."
+}

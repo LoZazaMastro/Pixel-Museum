@@ -1,0 +1,687 @@
+{
+  "batch_id": "106-catalog",
+  "status": "completed",
+  "entries": 10,
+  "main_cards_per_language": 28,
+  "feature_cards_per_language": 0,
+  "cards_per_language": 28,
+  "languages": [
+    "en",
+    "it",
+    "fr",
+    "de",
+    "es"
+  ],
+  "sources": [
+    {
+      "source_id": "106-nintendo-ir",
+      "url": "https://www.nintendo.co.jp/ir/pdf/2004/040528.pdf",
+      "title": "Calendario regionale delle uscite nell’esercizio terminato a marzo 2004",
+      "publisher": "Nintendo, 28 maggio 2004",
+      "accessed_at": "2026-10-30",
+      "scope": "Riutilizzata la lettura già documentata nell’audit 103: la tabella delle pubblicazioni avvenute, pagina PDF 2, riporta F-Zero: GP Legend in Giappone il 28 novembre 2003 e Donkey Konga il 12 dicembre 2003.",
+      "limitation": "Tabella retrospettiva distinta dalle pagine successive di previsioni. Non documenta da sola altre date regionali, che non sono aggiunte."
+    },
+    {
+      "source_id": "106-joystick-history",
+      "url": "https://www.gamesradar.com/golden-joysticks-ultimate-list-ultimate-games-1983-2014/",
+      "title": "Golden Joysticks: the ultimate list of ultimate games",
+      "publisher": "GamesRadar / organizzatore dei Golden Joystick Awards",
+      "accessed_at": "2026-10-30",
+      "scope": "Riutilizzato il quadro storico verificato nei precedenti audit: la stagione iniziale è il 1983, distinta dalla data della cerimonia inaugurale.",
+      "limitation": "Non si afferma che tutte le categorie citate nell’introduzione esistessero già nel 2003. Voto pubblico distinto da premi della redazione e onorificenze."
+    },
+    {
+      "source_id": "106-joystick-results",
+      "url": "https://en.wikipedia.org/wiki/Golden_Joystick_Awards#2003",
+      "title": "Golden Joystick Awards — 2003",
+      "publisher": "Wikipedia, fonte già rappresentata nell’INPUT",
+      "accessed_at": "2026-10-30",
+      "scope": "Confrontata la tabella dei diciassette vincitori con l’elenco fornito. Tutti i premi e le attribuzioni sono conservati in paragrafi interni alla stessa card.",
+      "limitation": "Il riscontro è secondario e non equivale alla lettura di diciassette comunicati originali. Nessuna categoria importata da anni diversi."
+    },
+    {
+      "source_id": "106-joystick-press",
+      "url": "https://www.nintendoworldreport.com/news/9173/shigeru-miyamoto-is-personality-of-the-year",
+      "title": "Shigeru Miyamoto is Personality of the Year",
+      "publisher": "Karlie Yeung / Nintendo World Report, 28 novembre 2003; fonte dichiarata: comunicato stampa",
+      "accessed_at": "2026-10-30",
+      "scope": "Aperto e letto il testo contemporaneo: premi già assegnati, riconoscimento a Miyamoto, premi Nintendo e grafia Mario Kart: Double Dash!!.",
+      "limitation": "Il comunicato riepiloga i riconoscimenti Nintendo, non tutti i diciassette premi. La citazione di Miyamoto non è riprodotta. La voce resta l’evento del 2003 e non una biografia da spostare alla nascita."
+    },
+    {
+      "source_id": "106-outbreak-jp",
+      "url": "https://www.cri-mw.co.jp/product/adoption/archive/2003.html",
+      "title": "Archivio dei titoli che utilizzano CRI Middleware — 2003",
+      "publisher": "CRI Middleware",
+      "accessed_at": "2026-10-30",
+      "scope": "Letta la riga esplicitamente marcata Giappone per Biohazard Outbreak: 11 dicembre 2003.",
+      "limitation": "L’archivio contiene duplicazioni e altre etichette regionali troppo generiche: non usato per estendere questo giorno a mercati occidentali. Il dato giapponese concorda con la recensione contemporanea Game Watch del 26 gennaio 2004 e i cataloghi."
+    },
+    {
+      "source_id": "106-outbreak-na",
+      "url": "https://www.gamespot.com/articles/resident-evil-outbreak-unleashed/1100-6092506/",
+      "title": "Resident Evil Outbreak unleashed",
+      "publisher": "Justin Calvert e Tor Thorsen / GameSpot, 31 marzo 2004",
+      "accessed_at": "2026-10-30",
+      "scope": "Letto il testo completo indicizzato: Capcom annuncia la pubblicazione nordamericana e l’articolo parla esplicitamente del lancio di quel giorno, distinto dagli eventi promozionali previsti per aprile.",
+      "limitation": "L’apertura diretta è bloccata. Non usata la sola data della notizia: è il contenuto a collocare il lancio. Il riscontro contemporaneo e i cataloghi concordi correggono il 30 marzo dell’INPUT."
+    },
+    {
+      "source_id": "106-outbreak-catalog",
+      "url": "https://wiki.pcsx2.net/index.php?mobileaction=toggle_view_mobile&title=Resident_Evil%3A_Outbreak",
+      "title": "Resident Evil: Outbreak — edizioni e codici",
+      "publisher": "PCSX2 Wiki",
+      "accessed_at": "2026-10-30",
+      "scope": "Il contenuto indicizzato distingue SLPM-65428 Giappone 11 dicembre 2003, SLUS-20765 Nord America 31 marzo 2004 e SLES-51589 Europa 17 settembre 2004.",
+      "limitation": "Fonte catalografica secondaria. Le uscite PAL non sono tutte necessariamente contemporanee: il testo conserva il 17 settembre come esempio britannico e settembre come livello generale."
+    },
+    {
+      "source_id": "106-outbreak-pal",
+      "url": "https://www.gamespot.com/articles/resident-evil-outbreak-offline-in-europe/1100-6092360/",
+      "title": "Resident Evil Outbreak offline in Europe",
+      "publisher": "Justin Calvert / GameSpot, 26 marzo 2004",
+      "accessed_at": "2026-10-30",
+      "scope": "La dichiarazione di un rappresentante Capcom conferma l’assenza del gioco online nelle edizioni PAL.",
+      "limitation": "Non usata la precedente notizia del settembre 2003, che esprimeva ancora dubbi. Nessuna chiusura di server o riattivazione non presente nell’INPUT aggiunta al testo."
+    },
+    {
+      "source_id": "106-outbreak-pal-dates",
+      "url": "https://vgtimes.com/games/resident-evil-outbreak/release-dates/",
+      "title": "Resident Evil Outbreak — release dates",
+      "publisher": "VGTimes",
+      "accessed_at": "2026-10-30",
+      "scope": "Il catalogo distingue Regno Unito e altri mercati PAL al 17 settembre 2004 e Italia al 22 settembre.",
+      "limitation": "Fonte secondaria, impiegata per evitare l’estensione del medesimo giorno all’intera area PAL; non importato l’elenco completo dei giorni nel testo."
+    },
+    {
+      "source_id": "106-outbreak-file2",
+      "url": "https://www.bandai.co.jp/releases/images/3/17827.pdf",
+      "title": "Catalogo dei titoli per il Tokyo Game Show 2004",
+      "publisher": "Bandai, comunicato originale",
+      "accessed_at": "2026-10-30",
+      "scope": "Il documento indicizzato riporta Biohazard Outbreak File 2 per PlayStation 2 con data 9 settembre 2004; usato per precisare che il seguito del 2004 si riferisce al Giappone.",
+      "limitation": "Non trasportata la data del 2004 alle edizioni occidentali. Il nuovo giorno del seguito non è aggiunto alle card; nessuna data fittizia della vicenda è usata come release."
+    },
+    {
+      "source_id": "106-sims-gba",
+      "url": "https://www.nintendoworldreport.com/pr/9185/ea-ships-the-sims-bustin-out-for-gba",
+      "title": "EA Ships The Sims Bustin’ Out for GBA",
+      "publisher": "Electronic Arts, comunicato del 2 dicembre 2003 ripreso da Nintendo World Report",
+      "accessed_at": "2026-10-30",
+      "scope": "Il comunicato attribuisce lo sviluppo GBA a Maxis e Griptonite Games e annuncia la spedizione il 2 dicembre 2003.",
+      "limitation": "La spedizione non prova automaticamente il primo giorno al dettaglio. La proposta per la voce multipiattaforma usa dicembre 2003 in Nord America, senza imporre il 16 dicembre a tutte le versioni."
+    },
+    {
+      "source_id": "106-sims-ngage",
+      "url": "https://www.mobygames.com/game/11215/the-sims-bustin-out/credits/ngage/",
+      "title": "The Sims Bustin’ Out — N-Gage credits",
+      "publisher": "MobyGames, trascrizione dei crediti del gioco",
+      "accessed_at": "2026-10-30",
+      "scope": "Riscontrato il gruppo Ideaworks3D nei crediti dell’edizione N-Gage, distinta dalla GBA.",
+      "limitation": "La trascrizione non è presentata come visione integrale dei titoli di coda. Il credito è coerente con i cataloghi della versione e con la testimonianza contemporanea sul lavoro dello studio."
+    },
+    {
+      "source_id": "106-sims-engine",
+      "url": "https://www.gamespot.com/articles/designer-diary-1the-sims-bustin-out/1100-6074212/",
+      "title": "Designer Diary #1: The Sims Bustin’ Out",
+      "publisher": "Mike Perry, progettista del gioco / GameSpot, 28 agosto 2003",
+      "accessed_at": "2026-10-30",
+      "scope": "Letto il diario indicizzato: il progettista descrive il seguito della versione per console e un motore nuovo e migliorato.",
+      "limitation": "L’apertura diretta è bloccata. La correzione riguarda l’errata equivalenza con il motore del primo The Sims per PC; non vengono importate nuove specifiche tecniche."
+    },
+    {
+      "source_id": "106-sims-shutdown",
+      "url": "https://freeso.org/bustin-out-online-weekend-is-back/",
+      "title": "Bustin’ Out Online Weekend is Back!",
+      "publisher": "Rhys / FreeSO, 23 luglio 2018",
+      "accessed_at": "2026-10-30",
+      "scope": "Aperto e letto il testo dell’autore del ripristino del servizio: segnala che Wikipedia attribuisce la chiusura al 1 agosto 2008 insieme a The Sims Online, ma dichiara esplicitamente di non trovare fonti che lo confermino.",
+      "limitation": "Non prova il giorno della chiusura: la ricerca non lo dichiara risolto. La prosa conserva la chiusura del servizio ufficiale e omette giorno e simultaneità non dimostrati. Non si aggiunge al catalogo la vicenda del ripristino del 2018."
+    },
+    {
+      "source_id": "106-astro-date",
+      "url": "https://www.nintendo.co.jp/n08/before/0312_0401.html",
+      "title": "Game Boy Advance — uscite dicembre 2003 e gennaio 2004",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "Letto il calendario ufficiale dei titoli su licenza: Tetsuwan Atom: Atom Heart no Himitsu, Sega, 18 dicembre 2003.",
+      "limitation": "Identificata l’edizione giapponese di Astro Boy: Omega Factor. Il calendario non è usato per attribuire lo stesso giorno alle localizzazioni occidentali."
+    },
+    {
+      "source_id": "106-front-mission",
+      "url": "https://www.jp.square-enix.com/game/detail/fm4/",
+      "title": "Front Mission 4 — scheda del prodotto",
+      "publisher": "Square Enix",
+      "accessed_at": "2026-10-30",
+      "scope": "Il contenuto indicizzato distingue l’originale SLPM-65443 del 18 dicembre 2003 dalla riedizione del maggio 2006 e descrive anno narrativo 2096 e Link System.",
+      "limitation": "L’apertura diretta mostra soltanto la navigazione: non dichiarata una lettura completa della pagina resa. Conservati dal materiale fornito Tsuchida, Iwasaki, Yamazaki, flauto di Pan e uscita nordamericana nel giugno 2004; nessuna verifica universale dei crediti musicali dichiarata."
+    },
+    {
+      "source_id": "106-otogi-date",
+      "url": "https://www.fromsoftware.jp/ww/detail.html?csm=029",
+      "title": "Otogi 2 — portfolio e scheda originale",
+      "publisher": "FromSoftware",
+      "accessed_at": "2026-10-30",
+      "scope": "Il contenuto ufficiale indicizzato riporta 25 dicembre 2003 per l’originale e distingue la Platinum Collection del 2 settembre 2004; descrive compagni e scenari distruttibili.",
+      "limitation": "Apertura diretta in timeout. Il portfolio generale concorda. Non importato alcun conteggio aggiuntivo di personaggi: alcune descrizioni secondarie divergono dal testo primario."
+    },
+    {
+      "source_id": "106-otogi-regions",
+      "url": "https://gamefaqs.gamespot.com/xbox/917886-otogi-2-immortal-warriors/data",
+      "title": "Otogi 2: Immortal Warriors — release data",
+      "publisher": "GameFAQs",
+      "accessed_at": "2026-10-30",
+      "scope": "Letto il contenuto indicizzato: Nord America ottobre 2004 ed Europa febbraio 2005, coerenti con l’INPUT.",
+      "limitation": "I giorni specifici del catalogo non sono aggiunti alla prosa, che conserva la precisione mensile fornita. La fonte non documenta autonomamente numero di vendite o il credito musicale."
+    },
+    {
+      "source_id": "106-otogi-backcompat",
+      "url": "https://news.xbox.com/en-us/2021/11/15/70-new-backward-compatible-games/amp/",
+      "title": "Celebrate 20 Years of Play Together with 70+ New Backward Compatible Games",
+      "publisher": "Xbox Wire, 15 novembre 2021",
+      "accessed_at": "2026-10-30",
+      "scope": "Il comunicato ufficiale indicizzato dichiara disponibili i giochi Otogi attraverso la retrocompatibilità; l’elenco ufficiale tedesco nomina entrambi gli episodi.",
+      "limitation": "Verificata disponibilità, non solo previsione. Il testo conserva il riferimento generale già presente nell’INPUT, senza aggiungere nuovi dettagli commerciali."
+    },
+    {
+      "source_id": "106-sonic-release",
+      "url": "https://sonic.sega.jp/sonic_heroes/news.html",
+      "title": "Sonic Heroes — notizie originali",
+      "publisher": "Sega",
+      "accessed_at": "2026-10-30",
+      "scope": "Aperta e letta la notizia del 30 dicembre 2003: il gioco è uscito contemporaneamente in Giappone su GameCube, PlayStation 2 e Xbox.",
+      "limitation": "La stessa pagina contiene una successiva uscita Windows del dicembre 2004: non confusa con le tre versioni console del 2003."
+    },
+    {
+      "source_id": "106-sonic-formations",
+      "url": "https://sonic.sega.jp/sonic_heroes/fchg.html",
+      "title": "Sonic Heroes — Formation Change",
+      "publisher": "Sega",
+      "accessed_at": "2026-10-30",
+      "scope": "Aperta e letta la descrizione originale delle formazioni Speed, Fly e Power e del cambio immediato del leader.",
+      "limitation": "Non aggiunte nuove mosse, numeri di livelli o condizioni dei finali. Il sottotitolo Tre velocità è corretto in Tre formazioni perché Fly e Power non sono semplici velocità."
+    },
+    {
+      "source_id": "106-singstar",
+      "url": "https://www.playstation.com/en-us/playstation-history/2000-ps2-psp/",
+      "title": "PlayStation history — PS2 and PSP",
+      "publisher": "Sony Interactive Entertainment",
+      "accessed_at": "2026-10-30",
+      "scope": "Aperta e letta la sezione SingStar: debutto nel 2004, coppia di microfoni e modelli con cavo e senza fili; immagine descritta con i colori rosso e blu.",
+      "limitation": "La fonte sostiene l’anno, non un giorno di vendita specifico. Nessuna data convenzionale al 1 gennaio introdotta. Il nome del prodotto resta SingStar, mentre il descrittore microfoni viene adattato nelle altre lingue."
+    }
+  ],
+  "decisions": [
+    {
+      "target_id": "f-zero-gp-legend-2003",
+      "problem": "La regione generica non identificava l’edizione; il supporto e-Reader non doveva diventare universale.",
+      "conclusion": "28 novembre 2003 identificato come rilascio giapponese. Conservati Suzak, anime, prospettiva, superfici, atterraggio e aggiunte e-Reader esplicitamente giapponesi.",
+      "source_ids": [
+        "106-nintendo-ir"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "golden-joystick-awards-2003",
+      "problem": "L’introduzione poteva attribuire al 2003 tutte le categorie successive o tutti i premi al voto pubblico.",
+      "conclusion": "Distinte evoluzione storica, voto pubblico, riconoscimenti editoriali e individuali. Tutti i diciassette premi restano nella card originaria, con categorie inglesi e attribuzioni. Ripristinata la grafia ufficiale Double Dash!! documentata dal comunicato; il riconoscimento di Miyamoto resta evento.",
+      "source_ids": [
+        "106-joystick-history",
+        "106-joystick-results",
+        "106-joystick-press"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-2093486",
+      "problem": "L’INPUT riporta 30 marzo 2004 per il Nord America e un unico giorno per l’intera area PAL.",
+      "conclusion": "La cronaca contemporanea descrive il lancio del 31 marzo, coerente con i cataloghi: data corretta nelle cinque lingue. PAL resa a settembre 2004 con il 17 settembre riferito all’edizione britannica. Assenza dell’online confermata dalla dichiarazione Capcom.",
+      "source_ids": [
+        "106-outbreak-na",
+        "106-outbreak-catalog",
+        "106-outbreak-pal",
+        "106-outbreak-pal-dates"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-2093486",
+      "problem": "Otto personaggi poteva significare controllo simultaneo; gli anni 1998 e 1999 potevano sembrare date della finzione; il seguito del 2004 non è mondiale.",
+      "conclusion": "Precisata scelta fra otto personaggi. Gli anni sono attribuiti alle pubblicazioni di Resident Evil 2 e Resident Evil 3; File #2 del 2004 è esplicitamente giapponese.",
+      "source_ids": [
+        "106-outbreak-file2"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "donkey-konga-2003",
+      "problem": "La data originale non specificava la regione.",
+      "conclusion": "Identificata la pubblicazione giapponese del 12 dicembre 2003. Conservati Namco, GameCube, tamburi, microfono, normale controller, repertori regionali e tutti i passaggi della storia con Diddy, Cranky, King K. Rool e banane.",
+      "source_ids": [
+        "106-nintendo-ir"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-1370248",
+      "problem": "L’INPUT attribuiva tutte le versioni a Maxis e trattava in modo indistinto motori, storie e calendario.",
+      "conclusion": "Distinte console domestiche Maxis, GBA con Griptonite e N-Gage Ideaworks3D. La descrizione del motore riguarda l’evoluzione della versione console, non il primo gioco PC. Conservati tutti i quattro expansion pack, entrambi i luoghi, le due modalità e il seguito portatile Urbz del 2004. Proposta mensile per dicembre 2003, senza equiparare spedizione e prima vendita.",
+      "source_ids": [
+        "106-sims-gba",
+        "106-sims-ngage",
+        "106-sims-engine"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-1370248",
+      "problem": "Il 1 agosto 2008 e la simultaneità con The Sims Online non risultano dimostrati da una fonte indipendente pertinente.",
+      "conclusion": "Ricerca effettiva eseguita; la fonte dell’autore del ripristino dichiara il medesimo limite. Conservata la chiusura del servizio, eliminati giorno e associazione non comprovati. Il giorno esatto non è dichiarato risolto.",
+      "source_ids": [
+        "106-sims-shutdown"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "astro-boy-omega-factor-2003",
+      "problem": "La regione generica non individuava quale edizione uscisse il 18 dicembre.",
+      "conclusion": "Il calendario Nintendo identifica la versione giapponese. Conservati Treasure, Hitmaker, Tezuka, tutti gli attacchi, riempimento EX, volo e rapporto fra incontri e crescita, senza nuove statistiche o regole.",
+      "source_ids": [
+        "106-astro-date"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "front-mission-4-2003",
+      "problem": "Anno narrativo, uscita originale e riedizione potevano sovrapporsi.",
+      "conclusion": "2096 resta l’anno della vicenda; 18 dicembre 2003 la release giapponese. La riedizione del 2006 non sostituisce l’originale. Nessuna nascita dedotta dai crediti di regia e musica.",
+      "source_ids": [
+        "106-front-mission"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "otogi-2-immortal-warriors-2003",
+      "problem": "La disponibilità successiva doveva essere reale e distinta dall’annuncio; un confronto generico con altri mondi Xbox era poco informativo.",
+      "conclusion": "Verificata la retrocompatibilità disponibile e mantenute le due uscite occidentali con precisione mensile. Conservati Raikoh, capitale, compagni, distruzione, Yuki Ichiki, accoglienza e rapporto con il primo Otogi; tolto soltanto il confronto non necessario con giochi militari della console.",
+      "source_ids": [
+        "106-otogi-date",
+        "106-otogi-regions",
+        "106-otogi-backcompat"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "workbook-12-30-sonic-heroes",
+      "problem": "Regione vuota e sottotitolo tre velocità non descrivevano con precisione il contenuto.",
+      "conclusion": "Sega conferma uscita contemporanea giapponese sulle tre console. Il sottotitolo parla di formazioni. Conservati dodici personaggi, quattro squadre, ruoli, differenze delle campagne, Omega e Team Blast.",
+      "source_ids": [
+        "106-sonic-release",
+        "106-sonic-formations"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "hardware-singstar-microphones",
+      "problem": "Il contesto usa zero per mese e giorno, pur dichiarando precisione annuale.",
+      "conclusion": "Conservato l’anno 2004, senza inventare giorno o mese. La proposta normalizza i valori ignoti a null; accessorio distinto da una console. Conservati entrambi i colori, punteggio, software necessario e modelli successivi.",
+      "source_ids": [
+        "106-singstar"
+      ],
+      "text_applied": true
+    }
+  ],
+  "metadata_proposals": [
+    {
+      "target_id": "f-zero-gp-legend-2003",
+      "original_year": 2003,
+      "original_date": {
+        "month": 11,
+        "day": 28,
+        "precision": "day",
+        "region": "Original commercial release"
+      },
+      "proposed_date": {
+        "year": 2003,
+        "month": 11,
+        "day": 28,
+        "precision": "day",
+        "region": "JP"
+      },
+      "event_semantics": "release",
+      "source_ids": [
+        "106-nintendo-ir"
+      ],
+      "reason": "Precisare Giappone al posto della regione generica. Nessuna modifica applicata a INPUT, TEMPLATE o catalogo."
+    },
+    {
+      "target_id": "wikipedia-2093486",
+      "original_year": 2003,
+      "original_date": {
+        "month": 12,
+        "day": 11,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed_date": {
+        "year": 2003,
+        "month": 12,
+        "day": 11,
+        "precision": "day",
+        "region": "JP"
+      },
+      "event_semantics": "release",
+      "source_ids": [
+        "106-outbreak-jp",
+        "106-outbreak-catalog"
+      ],
+      "reason": "Precisare Giappone per la collocazione iniziale, distinta dalle uscite del 2004. Nessuna modifica applicata a INPUT, TEMPLATE o catalogo."
+    },
+    {
+      "target_id": "donkey-konga-2003",
+      "original_year": 2003,
+      "original_date": {
+        "month": 12,
+        "day": 12,
+        "precision": "day",
+        "region": "Original commercial release"
+      },
+      "proposed_date": {
+        "year": 2003,
+        "month": 12,
+        "day": 12,
+        "precision": "day",
+        "region": "JP"
+      },
+      "event_semantics": "release",
+      "source_ids": [
+        "106-nintendo-ir"
+      ],
+      "reason": "Precisare Giappone al posto della regione generica. Nessuna modifica applicata a INPUT, TEMPLATE o catalogo."
+    },
+    {
+      "target_id": "wikipedia-1370248",
+      "original_year": 2003,
+      "original_date": {
+        "month": 12,
+        "day": 16,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed_date": {
+        "year": 2003,
+        "month": 12,
+        "day": null,
+        "precision": "month",
+        "region": "North America"
+      },
+      "event_semantics": "release",
+      "source_ids": [
+        "106-sims-gba"
+      ],
+      "reason": "La voce riunisce edizioni diverse: il 16 dicembre non è comune alla GBA e alle console domestiche; il comunicato GBA del 2 dicembre parla di spedizione. Adottare precisione mensile senza inventare un giorno unico. Nessuna modifica applicata a INPUT, TEMPLATE o catalogo."
+    },
+    {
+      "target_id": "astro-boy-omega-factor-2003",
+      "original_year": 2003,
+      "original_date": {
+        "month": 12,
+        "day": 18,
+        "precision": "day",
+        "region": "Original commercial release"
+      },
+      "proposed_date": {
+        "year": 2003,
+        "month": 12,
+        "day": 18,
+        "precision": "day",
+        "region": "JP"
+      },
+      "event_semantics": "release",
+      "source_ids": [
+        "106-astro-date"
+      ],
+      "reason": "Precisare Giappone al posto della regione generica. Nessuna modifica applicata a INPUT, TEMPLATE o catalogo."
+    },
+    {
+      "target_id": "workbook-12-30-sonic-heroes",
+      "original_year": 2003,
+      "original_date": {
+        "month": 12,
+        "day": 30,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed_date": {
+        "year": 2003,
+        "month": 12,
+        "day": 30,
+        "precision": "day",
+        "region": "JP"
+      },
+      "event_semantics": "release",
+      "source_ids": [
+        "106-sonic-release"
+      ],
+      "reason": "Precisare il mercato giapponese delle tre versioni console. Nessuna modifica applicata a INPUT, TEMPLATE o catalogo."
+    },
+    {
+      "target_id": "hardware-singstar-microphones",
+      "original_year": 2004,
+      "original_date": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": ""
+      },
+      "proposed_date": {
+        "year": 2004,
+        "month": null,
+        "day": null,
+        "precision": "year",
+        "region": null
+      },
+      "event_semantics": "release",
+      "source_ids": [
+        "106-singstar"
+      ],
+      "reason": "Normalizzare mese e giorno sconosciuti a null, conservando la precisione annuale e senza dedurre un mercato non specificato. Nessuna modifica applicata a INPUT, TEMPLATE o catalogo."
+    }
+  ],
+  "expansion_assessments": [
+    {
+      "target_id": "f-zero-gp-legend-2003",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": null,
+      "missing_cards": 0,
+      "rationale": "Tre card autonome sul rapporto con l’anime, sulla guida e sulle modalità. La soglia non è applicata automaticamente a ogni adattamento della serie F-Zero."
+    },
+    {
+      "target_id": "golden-joystick-awards-2003",
+      "main_cards": 2,
+      "feature_cards": 0,
+      "threshold_applicable": null,
+      "missing_cards": 0,
+      "rationale": "Evento con un’introduzione e una card che conserva tutti i diciassette premi. Le soglie per giochi e console non si applicano."
+    },
+    {
+      "target_id": "wikipedia-2093486",
+      "main_cards": 2,
+      "feature_cards": 0,
+      "threshold_applicable": 5,
+      "missing_cards": 3,
+      "rationale": "Passaggio importante della serie Resident Evil alla cooperazione online. Due card soprattutto descrittive; servono tre approfondimenti autonomi sul funzionamento effettivo della sopravvivenza in gruppo."
+    },
+    {
+      "target_id": "donkey-konga-2003",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": 5,
+      "missing_cards": 2,
+      "rationale": "Esperimento significativo di gioco musicale e controller dedicato per GameCube. Tre card, una delle quali narrativa; due approfondimenti distinti possono documentare meglio gioco e produzione."
+    },
+    {
+      "target_id": "wikipedia-1370248",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": 5,
+      "missing_cards": 2,
+      "rationale": "Passaggio significativo dei Sims su console e portatili, con storie e sistemi diversi. Tre card da conservare, due ulteriori argomenti devono distinguere le versioni senza duplicare il quadro generale."
+    },
+    {
+      "target_id": "astro-boy-omega-factor-2003",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": 5,
+      "missing_cards": 2,
+      "rationale": "Adattamento importante dell’opera di Tezuka, con combattimento e crescita legata agli incontri. Tre card: due approfondimenti autonomi possono dare esempi concreti senza dividere la descrizione esistente."
+    },
+    {
+      "target_id": "front-mission-4-2003",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": null,
+      "missing_cards": 0,
+      "rationale": "Tre card autonome su contesto, Link e produzione. La soglia non è applicata per la sola appartenenza alla serie Front Mission; eventuali nuove card richiedono temi distinti e documentati."
+    },
+    {
+      "target_id": "otogi-2-immortal-warriors-2003",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": null,
+      "missing_cards": 0,
+      "rationale": "Tre card su mondo, personaggi e pubblicazione. La notorietà successiva di FromSoftware non basta da sola a classificare automaticamente questo seguito fra i giochi da portare a cinque card."
+    },
+    {
+      "target_id": "workbook-12-30-sonic-heroes",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": 5,
+      "missing_cards": 1,
+      "rationale": "Capitolo importante della serie Sonic sulle tre console, incentrato sui gruppi. Quattro card: manca un approfondimento autonomo, senza scorporare la descrizione delle formazioni."
+    },
+    {
+      "target_id": "hardware-singstar-microphones",
+      "main_cards": 2,
+      "feature_cards": 0,
+      "threshold_applicable": null,
+      "missing_cards": 0,
+      "rationale": "Accessorio, non console. Due card autonome su uso e valutazione del canto; non applicata la soglia di sei card riservata alle console importanti."
+    }
+  ],
+  "editorial_review": {
+    "english_first": true,
+    "english_checkpoint": "106-catalog/OUTPUT-106-catalog.json, ramo en; inglese salvato prima dei quattro adattamenti",
+    "summary_word_counts_en": [
+      40,
+      38,
+      37,
+      41,
+      40,
+      40,
+      41,
+      37,
+      41,
+      40
+    ],
+    "fidelity": "Rilette tutte le 28 card nelle cinque lingue confrontandole con l’INPUT. Preservati informazioni, nomi, numeri, attribuzioni e distinzioni fra versioni; le sole correzioni fattuali sono registrate nelle decisioni. Tutti i diciassette premi Golden Joystick conservati in paragrafi interni alla card. Nessuna card aggiunta, eliminata, divisa o riordinata.",
+    "naturalness": "Incipit con tipo di gioco o oggetto e carattere distintivo; sommari inglesi di 37–41 parole. Heading specifici presenti ovunque. Adattamenti riletti per sintassi e lessico; nomi propri e titoli ufficiali conservati, descrittore dei microfoni tradotto. Formazioni di Sonic distinte da semplici velocità.",
+    "expansions": "Cinque giochi selezionati richiedono dieci nuove card autonome in proposte separate nelle cinque lingue. L’elenco dei bisogni non viene presentato come ampliamento già scritto. Le soglie non sono estese automaticamente agli eventi, accessori o a ogni seguito di una serie.",
+    "limits": "Ricerca mirata, non verifica universale di ogni affermazione dell’INPUT. Il giorno esatto della chiusura del servizio PS2 di Bustin’ Out resta non dimostrato; la prosa non lo ripete. Contenuti indicizzati e pagine direttamente aperte sono distinti nell’audit. Nessun manuale o video dichiarato letto integralmente. Fonti, attribuzioni e diritti originali restano negli INPUT. Nessun media, URL, musica, data originale o catalogo modificato."
+  },
+  "validation": {
+    "valid": true,
+    "batch_id": "106-catalog",
+    "completed": true,
+    "entry_count": 10,
+    "card_count_per_language": 28,
+    "language_count": 5,
+    "translated_card_count": 140,
+    "entry_card_counts": {
+      "f-zero-gp-legend-2003": 3,
+      "golden-joystick-awards-2003": 2,
+      "wikipedia-2093486": 2,
+      "donkey-konga-2003": 3,
+      "wikipedia-1370248": 3,
+      "astro-boy-omega-factor-2003": 3,
+      "front-mission-4-2003": 3,
+      "otogi-2-immortal-warriors-2003": 3,
+      "workbook-12-30-sonic-heroes": 4,
+      "hardware-singstar-microphones": 2
+    },
+    "issue_counts": {
+      "f-zero-gp-legend-2003": 0,
+      "golden-joystick-awards-2003": 0,
+      "wikipedia-2093486": 1,
+      "donkey-konga-2003": 1,
+      "wikipedia-1370248": 1,
+      "astro-boy-omega-factor-2003": 1,
+      "front-mission-4-2003": 0,
+      "otogi-2-immortal-warriors-2003": 0,
+      "workbook-12-30-sonic-heroes": 1,
+      "hardware-singstar-microphones": 0
+    },
+    "summary_checks": [
+      {
+        "entry_id": "f-zero-gp-legend-2003",
+        "feature_id": null,
+        "english_summary_words": 40
+      },
+      {
+        "entry_id": "golden-joystick-awards-2003",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "wikipedia-2093486",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "donkey-konga-2003",
+        "feature_id": null,
+        "english_summary_words": 41
+      },
+      {
+        "entry_id": "wikipedia-1370248",
+        "feature_id": null,
+        "english_summary_words": 40
+      },
+      {
+        "entry_id": "astro-boy-omega-factor-2003",
+        "feature_id": null,
+        "english_summary_words": 40
+      },
+      {
+        "entry_id": "front-mission-4-2003",
+        "feature_id": null,
+        "english_summary_words": 41
+      },
+      {
+        "entry_id": "otogi-2-immortal-warriors-2003",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "workbook-12-30-sonic-heroes",
+        "feature_id": null,
+        "english_summary_words": 41
+      },
+      {
+        "entry_id": "hardware-singstar-microphones",
+        "feature_id": null,
+        "english_summary_words": 40
+      }
+    ],
+    "editorial_review": [
+      "hardware-singstar-microphones/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "hardware-singstar-microphones/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "hardware-singstar-microphones/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "hardware-singstar-microphones/main/es: main title changed; check that this is a descriptive title and not an altered official name"
+    ],
+    "failures": []
+  },
+  "output_sha256": "992cf8eeb4967e193193554ac080b709ae8817fbcc184727b74a2e519be835b0"
+}

@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "locale": "it",
+  "review": "Binding of exact independently approved complete candidate members; no new linguistic review substituted. Every full candidate SHA and independent PASS receipt checked, all current English five fields and translation hashes validated.",
+  "entries": [
+    {
+      "entry_id": "workbook-05-06-eve-online",
+      "source_fields_sha256": "a0b58f862b3e2e6303fc1d4b88a308d45610c26df3d23e11751976b83f8ceae9",
+      "translation_sha256": "f96e94ef5e9fb742fb22024944a2b91e1ab432af712f43e147d5e97088468dae",
+      "independent_peer": "build/research/eve2003-four-language-completion/independent-all-fields-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "e4b2b1b2af94083716829b85e81b4ad3ecb3464de7ab44fd4b4f04196c8d116b",
+      "candidate_path": "build/research/eve2003-four-language-completion/eve-four-language-final-shared-place-precision-candidate.json",
+      "candidate_sha256": "8de0b0b6860b436b5eccb10411cc38c161ced18848533b13d070bf5292a54cdb"
+    },
+    {
+      "entry_id": "feature-mmo-community-work",
+      "source_fields_sha256": "45ec906b3f5f524ad655b6a840b0b17f122566be2c0ad0c48a28fedc1dba90b6",
+      "translation_sha256": "403b11d14bdae440f287bde8278e8a5aaf732264e0a391bbb7ea09009a4aa2e0",
+      "independent_peer": "build/research/eve-community2003-four-language-completion/independent-all-fields-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "c3fefe783d7fbe75e211c13552fef4e819089c89639471d93f80df22c15860d9",
+      "candidate_path": "build/research/eve-community2003-four-language-completion/eve-community-all-five-fields-four-language-full-reuse-fidelity-candidate.json",
+      "candidate_sha256": "07d9e1a5dc7d6141bfc82ad59546fe46eb8eb31d568422d5333371b37d324182"
+    },
+    {
+      "entry_id": "wikipedia-232766",
+      "source_fields_sha256": "058f2971a0b5c768ad5e7cb7dbf09047b4ff7bc59c010f0b41bf4134f149466f",
+      "translation_sha256": "7aedc31cd05bddf4b2e9d763c9199d82d44152b585d21fefbf5ef10c69fb96ef",
+      "independent_peer": "build/research/enter-matrix2003-four-language-completion/independent-all-fields-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "ee59476a1abc11eea646793ace27813a24889dd3c9896b8eeda1301e4792f41b",
+      "candidate_path": "build/research/enter-matrix2003-four-language-completion/enter-matrix-all-five-fields-four-language-full-reuse-fidelity-candidate.json",
+      "candidate_sha256": "1bd8691a381aced22c12a2b1e2c7dac751fd0ddbc3e75301c08e54c943b70fad"
+    }
+  ]
+}

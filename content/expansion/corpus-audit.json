@@ -1,0 +1,48 @@
+{
+  "retrieved": "2026-10-20",
+  "playhub_corpus": {
+    "history_days.json": {
+      "records": 335,
+      "unique_subjects": 335,
+      "english_intros": 335,
+      "dated_year_fields": 0
+    },
+    "history_editorial.json": {
+      "records": 52,
+      "unique_subjects": 52,
+      "english_intros": 52,
+      "dated_year_fields": 0
+    },
+    "history_imported.json": {
+      "records": 365,
+      "unique_subjects": 365,
+      "english_intros": 365,
+      "dated_year_fields": 0
+    }
+  },
+  "playhub_seed_count": 359,
+  "playhub_chronology_safe": 334,
+  "wikidata_retrieved_by_decade": {},
+  "wikidata_failures": {
+    "1950": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
+    "1960": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
+    "1970": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
+    "1980": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
+    "1990": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
+    "2000": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
+    "2010": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
+    "2020": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
+  },
+  "seed_records_before_cross_corpus_deduplication": 359,
+  "raw_counts_by_decade": {
+    "1950": 6,
+    "1960": 9,
+    "1970": 7,
+    "1980": 37,
+    "1990": 81,
+    "2000": 81,
+    "2010": 104,
+    "2020": 34
+  },
+  "warning": "Seed counts are research capacity, not finished museum stops. No generated placeholder essays are included."
+}

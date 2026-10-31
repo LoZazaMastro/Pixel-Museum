@@ -1,0 +1,369 @@
+{
+  "schema_version": 1,
+  "reviewed": "2026-10-21",
+  "review_type": "independent_agent_source_schema_prose_and_semantic_placement_review",
+  "batch_sha256": "770ce57de92278c9a46ed63965098f16fc604fdd7693339efe9fd04522d53f32",
+  "catalog_sha256_snapshot": "4c938139b57935a1ed873733142120cf6f4df37d6fee1da1b83aa4e550f54669",
+  "status": "text_review_passed_with_explicit_placement_and_media_limits",
+  "features": 8,
+  "cards": 32,
+  "body_words": 2756,
+  "source_publications": 17,
+  "source_budget_maximum": 200,
+  "all_allocations_within_limit": true,
+  "verbatim_quoted_words": 0,
+  "findings": [
+    {
+      "id": "P03-01",
+      "severity": "production_gate",
+      "status": "pending",
+      "detail": "Three distinct proposals require explicit admission and contextual media. All32 selected_asset fields remain null; this review supplies no imagery/rights/native-layout signoff."
+    },
+    {
+      "id": "P03-02",
+      "severity": "informational",
+      "status": "accepted",
+      "detail": "Company and participant interviews are situated testimony, not independent proof of every retrospective detail. Bailey1981 recollection, Kano non-witness qualification, Tramis intent and Wii2006 anchor remain explicit."
+    },
+    {
+      "id": "P03-03",
+      "severity": "informational",
+      "status": "accepted",
+      "detail": "MULE original PDF one-based15/printed13 and one-based19 inspected as raster; Alta Graphix credit confirmed on PDF2. Blogspot web extraction blocked but direct original URL fetched and Portuguese interview read."
+    }
+  ],
+  "entries": [
+    {
+      "feature_id": "feature-dona-bailey-arcade",
+      "body_sha256": "cfb9641f415674af62fc8df8fdc1ee67590b93bb55ab79b1f9bfc6f077ff9a19",
+      "cards": 4,
+      "body_words": 349,
+      "content_decision": "independent_source_review_passed",
+      "placement_decision": "attach_one_parent",
+      "parent_id": "dona-bailey",
+      "semantic_reason": "Production infrastructure, player testing, programming language and later teaching extend the four existing biographical paragraphs; do not repeat the existing trackball/gender account as another stop.",
+      "max_source_budget_words": 199,
+      "selected_media": 0,
+      "native_layout_signoff": false
+    },
+    {
+      "feature_id": "feature-dani-bunten-social",
+      "body_sha256": "ed984e05fd8700f68220f5f2f1bde9418212e1f6b6a6558e8de7e421ccfc8e22",
+      "cards": 4,
+      "body_words": 342,
+      "content_decision": "independent_source_review_passed",
+      "placement_decision": "attach_one_parent",
+      "parent_id": "mule",
+      "semantic_reason": "Resource coupling, private Tournament deals and a separately labelled Seven Cities usability comparison extend the existing social-design account.",
+      "max_source_budget_words": 199,
+      "selected_media": 0,
+      "native_layout_signoff": false
+    },
+    {
+      "feature_id": "feature-muriel-tramis-history",
+      "body_sha256": "d679288b766d9959f1e9f4e0027c7d3a9bd67de8beddb3a191b74c0c06e387ef",
+      "cards": 4,
+      "body_words": 342,
+      "content_decision": "independent_source_review_passed",
+      "placement_decision": "distinct_proposal_pending_media_and_explicit_admission",
+      "parent_id": null,
+      "semantic_reason": "Creator intent and specific Caribbean historical representations have no existing matching Tramis/Mewilo/Freedom destination; Monster Hunter Freedom is unrelated.",
+      "max_source_budget_words": 198,
+      "selected_media": 0,
+      "native_layout_signoff": false
+    },
+    {
+      "feature_id": "feature-tectoy-localization",
+      "body_sha256": "07b781a43f0af539dec15a54b91928aa9d10613fc6bd06be28eff89b7da8b693",
+      "cards": 4,
+      "body_words": 346,
+      "content_decision": "independent_source_review_passed",
+      "placement_decision": "attach_one_parent",
+      "parent_id": "tectoy",
+      "semantic_reason": "Adaptation workflow and player-support practice give concrete evidence for the existing regional-production destination.",
+      "max_source_budget_words": 199,
+      "selected_media": 0,
+      "native_layout_signoff": false
+    },
+    {
+      "feature_id": "feature-rebecca-heineman-ports",
+      "body_sha256": "eaea9bdd22327d49dd156153553e05e9d1c962c8551fddbef953154a0bb0c99e",
+      "cards": 4,
+      "body_words": 342,
+      "content_decision": "independent_source_review_passed",
+      "placement_decision": "distinct_proposal_pending_media_and_explicit_admission",
+      "parent_id": null,
+      "semantic_reason": "A conversion and source-preservation feature has a different subject from the existing Doom synopsis; preserve the explicit Doom cross-link.",
+      "max_source_budget_words": 199,
+      "selected_media": 0,
+      "native_layout_signoff": false
+    },
+    {
+      "feature_id": "feature-jarra-steel-commission",
+      "body_sha256": "d83777efedc07bade0afe068da9c2a0b341e64022200d37d1fe671dcd05d6c19",
+      "cards": 4,
+      "body_words": 348,
+      "content_decision": "independent_source_review_passed",
+      "placement_decision": "distinct_proposal_pending_media_and_explicit_admission",
+      "parent_id": null,
+      "semantic_reason": "A specific commissioned artwork and artist statement are distinct from general museum/representation commissions; retain the final overlap gate when those commissions are written.",
+      "max_source_budget_words": 199,
+      "selected_media": 0,
+      "native_layout_signoff": false
+    },
+    {
+      "feature_id": "feature-gunpei-yokoi-engineering",
+      "body_sha256": "7aefbefebc7a8e4fbbefea4d0fdf192e6c1dfd391bc8a333fd4b65fe8cf4141a",
+      "cards": 4,
+      "body_words": 346,
+      "content_decision": "independent_source_review_passed",
+      "placement_decision": "attach_one_parent",
+      "parent_id": "game-boy",
+      "semantic_reason": "Use as a clearly dated 1980 predecessor and working-method feature. Ball and Balloon Fight evidence must not become claims about Game Boy components or sole authorship.",
+      "max_source_budget_words": 199,
+      "selected_media": 0,
+      "native_layout_signoff": false
+    },
+    {
+      "feature_id": "feature-satoru-iwata-listening",
+      "body_sha256": "78851e55dc22103ce96f3a1aa2c0f0929f84ce50ee78685ccadc75f30b6ad7f3",
+      "cards": 4,
+      "body_words": 341,
+      "content_decision": "independent_source_review_passed",
+      "placement_decision": "attach_one_parent",
+      "parent_id": "daily-12-06",
+      "semantic_reason": "The existing seven-section biography covers Iwata Asks generally. Concrete Wii interface/Balance Board conversations add evidence. daily-12-06 is an actual standalone calendar destination, not a deduplicated alias; 2006 belongs to the nested feature, not the parent birth anchor1959.",
+      "max_source_budget_words": 199,
+      "selected_media": 0,
+      "native_layout_signoff": false
+    }
+  ],
+  "source_snapshots": [
+    {
+      "source_id": "bailey-arcade",
+      "url": "https://www.arcadeattack.co.uk/dona-bailey/",
+      "local_snapshot": "tmp/pdfs/editorial-review-03/bailey-arcade.html",
+      "sha256": "32ad0a39cbe1453b2c06ca09143da8d41115ab7d770b3fc3d4698d93057704ff",
+      "bytes": 365579
+    },
+    {
+      "source_id": "bailey07",
+      "url": "https://www.gamedeveloper.com/game-platforms/the-original-gaming-bug-i-centipede-i-creator-dona-bailey",
+      "local_snapshot": "tmp/pdfs/editorial-review-03/bailey07.html",
+      "sha256": "e1d18735b8355390cd356a2bd832be2c6f764c48351e583ae31925a952825f73",
+      "bytes": 499488
+    },
+    {
+      "source_id": "bunten85",
+      "url": "https://www.atarimagazines.com/v3n9/profiles.php",
+      "local_snapshot": "tmp/pdfs/editorial-review-03/bunten85.html",
+      "sha256": "13b815f20b00588b1f52840c9a23dba23f4f13e9e35961a689531213be8ad80b",
+      "bytes": 17380
+    },
+    {
+      "source_id": "mule83",
+      "url": "https://www.mocagh.org/ea/mule-manual.pdf",
+      "local_snapshot": "tmp/pdfs/editorial-review-03/mule83.pdf",
+      "sha256": "5d605abc65de70888108fce70051e02a560c2017d1832f42d846095f37ef427c",
+      "bytes": 7419324
+    },
+    {
+      "source_id": "tramis21",
+      "url": "https://news.xbox.com/fr-fr/2021/03/10/les-portraits-du-jeu-video-muriel-tramis/",
+      "snapshot_error": "HTTP Error 403: Forbidden",
+      "independent_access": "Read directly through web source extraction; local urllib snapshot denied403. Specific Xbox interview paragraphs on resignation/Oskian, identity and active Black protagonists inspected."
+    },
+    {
+      "source_id": "tramis-cnc",
+      "url": "https://www.cnc.fr/jeu-video/actualites/muriel-tramis-pionniere-du-jeu-video---je-ne-me-suis-jamais-pose-la-question-de-la-legitimite_953398",
+      "local_snapshot": "tmp/pdfs/editorial-review-03/tramis-cnc.html",
+      "sha256": "1292d9a823e40d438d602e58ec4dd4dd9cdcd4a3b082cdf1ba47aa68cb033ba6",
+      "bytes": 164506
+    },
+    {
+      "source_id": "tectoy-history",
+      "url": "https://www.loja.tectoy.com.br/quem-somos/",
+      "local_snapshot": "tmp/pdfs/editorial-review-03/tectoy-history.html",
+      "sha256": "761c9a28fb9511be8a995ad13e7c24840da16a8cd7c04e11dbfd0c7cd2f2a494",
+      "bytes": 339217
+    },
+    {
+      "source_id": "arnhold15",
+      "url": "https://www.sega-16.com/2015/11/interview-stefano-arnhold-tectoy/",
+      "local_snapshot": "tmp/pdfs/editorial-review-03/arnhold15.html",
+      "sha256": "0dbe9c8a547bbd76fca198fe2ee99de3da00cf64c46cb9efff0f70f7a284610e",
+      "bytes": 144370
+    },
+    {
+      "source_id": "pagano16",
+      "url": "https://qgmaster.blogspot.com/2016/07/entrevista-alexandre-pagano-da-tectoy_31.html",
+      "local_snapshot": "tmp/pdfs/editorial-review-03/pagano16.html",
+      "sha256": "aaaa954e13dcdba52fc747636f269ba6a7832738c56ea8d585df61f0e46b9c35",
+      "bytes": 179441
+    },
+    {
+      "source_id": "heineman-doom",
+      "url": "https://github.com/Olde-Skuul/doom3do",
+      "local_snapshot": "tmp/pdfs/editorial-review-03/heineman-doom.html",
+      "sha256": "ebdb3c3eb17dcea3145a06c47ba5f834e751c013f5cbce3c82156ab00d99ab3b",
+      "bytes": 275560
+    },
+    {
+      "source_id": "heineman25",
+      "url": "https://www.videogamer.com/news/fallout-1-fallout-2-source-code-isnt-actually-not-lost-reveals-former-interplay-founder/",
+      "local_snapshot": "tmp/pdfs/editorial-review-03/heineman25.html",
+      "sha256": "4b29960fd8ddc2ad67f0e712a95542aade9e01f5f6a9414b35c2b761e1aa438e",
+      "bytes": 145249
+    },
+    {
+      "source_id": "acmi-how22",
+      "url": "https://acmi-website-media-prod.s3.amazonaws.com/media/documents/How_I_See_It_Media_Release.pdf",
+      "local_snapshot": "tmp/pdfs/editorial-review-03/acmi-how22.pdf",
+      "sha256": "58683c3ff1eb4804dda5512446bf954498dd9cab8e150e832ac6abcb86047e15",
+      "bytes": 168206
+    },
+    {
+      "source_id": "steel23",
+      "url": "https://www.acmi.net.au/stories-and-ideas/jarra-karalinar-steel-more-just-game/",
+      "local_snapshot": "tmp/pdfs/editorial-review-03/steel23.html",
+      "sha256": "77b081c513646f698acc5bc883604c8cbb2d630b1a12051af72254045c312321",
+      "bytes": 517036
+    },
+    {
+      "source_id": "gamewatch-asks",
+      "url": "https://www.nintendo.com/en-gb/Iwata-Asks/Iwata-Asks-Game-Watch/Iwata-Asks-Game-Watch/2-Using-a-Calculator-Chip/2-Using-a-Calculator-Chip-223003.html",
+      "local_snapshot": "tmp/pdfs/editorial-review-03/gamewatch-asks.html",
+      "sha256": "687514848bac4d591b674d2935e51575ac36e321f0e16e3645166fe885a54738",
+      "bytes": 90431
+    },
+    {
+      "source_id": "sakamoto16",
+      "url": "https://www.nintendo.com/en-za/News/2016/November/Nintendo-Classic-Mini-NES-special-interview-Volume-2-Balloon-Fight-1154453.html",
+      "local_snapshot": "tmp/pdfs/editorial-review-03/sakamoto16.html",
+      "sha256": "1d8870046826892a1ecb69a346687422a4e6c4af995eef0d0ece7490188dea31",
+      "bytes": 182793
+    },
+    {
+      "source_id": "wii-remote-asks",
+      "url": "https://www.nintendo.com/en-gb/Iwata-Asks/Iwata-Asks-Wii/Iwata-Asks-Wii-Remote/1-Taking-Control-Back-to-the-Drawing-Board/1-Taking-Control-Back-to-the-Drawing-Board-232376.html",
+      "local_snapshot": "tmp/pdfs/editorial-review-03/wii-remote-asks.html",
+      "sha256": "e97fd3432b383ff6def1ea78c27c57a519aebfc1a11284a1f1932e3f6b125014",
+      "bytes": 95012
+    },
+    {
+      "source_id": "wiifit-asks",
+      "url": "https://www.nintendo.com/en-gb/Iwata-Asks/Iwata-Asks-Wii-Fit/Volume-3-The-Wii-Fit-Software/2-The-Team-that-Almost-Broke-Up/2-The-Team-that-Almost-Broke-Up-208036.html",
+      "local_snapshot": "tmp/pdfs/editorial-review-03/wiifit-asks.html",
+      "sha256": "69b0aef6b2b40bca22175ef6ba072150f851fcd0c5949d1d3b7f4fb99dbfaef8",
+      "bytes": 86569
+    }
+  ],
+  "scope_limits": [
+    "Every body paragraph and heading read against its assigned specific source; no whole-history factual signoff inferred.",
+    "No original Playhub/reference text, master, package, runtime code or console altered.",
+    "No image asset admitted or source availability converted to permission."
+  ],
+  "before_metadata_copyedit_batch_sha256": "83716dc8f96d63c219baac332d67ca4084842ded43f44086bcb16fb0b0124e64",
+  "root_metadata_copyedit": {
+    "body_or_heading_changes": 0,
+    "source_or_citation_changes": 0,
+    "summary_ids": [
+      "feature-dona-bailey-arcade",
+      "feature-dani-bunten-social",
+      "feature-tectoy-localization",
+      "feature-rebecca-heineman-ports",
+      "feature-jarra-steel-commission",
+      "feature-gunpei-yokoi-engineering",
+      "feature-satoru-iwata-listening"
+    ],
+    "reason": "Tighten summaries while independently charging hyphenated/apostrophe forms under both counters.",
+    "prior_frozen_source": "build/research/editorial-summary-copyedit/editorial-people-regions-03.json"
+  },
+  "source_budget_allocations": [
+    {
+      "feature_id": "feature-dona-bailey-arcade",
+      "publication": "bailey-arcade",
+      "charged_words": 197
+    },
+    {
+      "feature_id": "feature-dona-bailey-arcade",
+      "publication": "bailey07",
+      "charged_words": 198
+    },
+    {
+      "feature_id": "feature-dani-bunten-social",
+      "publication": "bunten85",
+      "charged_words": 199
+    },
+    {
+      "feature_id": "feature-dani-bunten-social",
+      "publication": "mule83",
+      "charged_words": 196
+    },
+    {
+      "feature_id": "feature-muriel-tramis-history",
+      "publication": "tramis21",
+      "charged_words": 200
+    },
+    {
+      "feature_id": "feature-muriel-tramis-history",
+      "publication": "tramis-cnc",
+      "charged_words": 199
+    },
+    {
+      "feature_id": "feature-tectoy-localization",
+      "publication": "tectoy-history",
+      "charged_words": 104
+    },
+    {
+      "feature_id": "feature-tectoy-localization",
+      "publication": "arnhold15",
+      "charged_words": 197
+    },
+    {
+      "feature_id": "feature-tectoy-localization",
+      "publication": "pagano16",
+      "charged_words": 197
+    },
+    {
+      "feature_id": "feature-rebecca-heineman-ports",
+      "publication": "heineman-doom",
+      "charged_words": 195
+    },
+    {
+      "feature_id": "feature-rebecca-heineman-ports",
+      "publication": "heineman25",
+      "charged_words": 196
+    },
+    {
+      "feature_id": "feature-jarra-steel-commission",
+      "publication": "acmi-how22",
+      "charged_words": 199
+    },
+    {
+      "feature_id": "feature-jarra-steel-commission",
+      "publication": "steel23",
+      "charged_words": 194
+    },
+    {
+      "feature_id": "feature-gunpei-yokoi-engineering",
+      "publication": "gamewatch-asks",
+      "charged_words": 193
+    },
+    {
+      "feature_id": "feature-gunpei-yokoi-engineering",
+      "publication": "sakamoto16",
+      "charged_words": 196
+    },
+    {
+      "feature_id": "feature-satoru-iwata-listening",
+      "publication": "wii-remote-asks",
+      "charged_words": 195
+    },
+    {
+      "feature_id": "feature-satoru-iwata-listening",
+      "publication": "wiifit-asks",
+      "charged_words": 192
+    }
+  ]
+}

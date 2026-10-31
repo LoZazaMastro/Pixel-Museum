@@ -1,0 +1,733 @@
+{
+  "schema": "pixel-museum-editorial-input-v1",
+  "batch_id": "087-catalog",
+  "source_file": "content/catalog.json",
+  "source_sha256": "0b077b3f8628f921ab84574d286f9d9943fb8ae6acb8f136ffadde6e01cae241",
+  "entries": [
+    {
+      "entry_id": "workbook-12-21-phantasy-star-online",
+      "kind": "game",
+      "year_context_only": 2000,
+      "date_context_only": {
+        "month": 12,
+        "day": 21,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "release",
+      "factual_note": "Imported dated English Playhub editorial. Adapt its calendar wording, review publisher dates and assign rights-cleared media before presenting as a finished museum stop.",
+      "main": {
+        "feature_id": null,
+        "title": "Phantasy Star Online",
+        "subtitle": "A greeting can cross a continent",
+        "summary": "On December 21, 2000, SEGA released Phantasy Star Online in Japan for Dreamcast.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "A greeting can cross a continent",
+            "text": "SEGA released Phantasy Star Online for Dreamcast in Japan on December 21, 2000. Its action RPG could be played alone or online in groups of up to four, using the console's modem to bring other players into real-time battles. Customisable characters and small cooperative parties made the network part of the adventure. Word Select and Symbol Chat supplied ways for strangers using different languages to communicate."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Four players share the dungeon",
+            "text": "Groups of four share enemies, routes and items during the adventure. Different classes can support each other, and real-time combat makes positioning and quick coordination important. The small party also makes each person's contribution visible: players can see who needs assistance and who is covering another role. Loot and exploration become matters to settle with the people alongside them."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Phrases across languages",
+            "text": "Word Select offers predefined phrases in several languages. Players choose useful messages for greetings, requests, directions or thanks, allowing practical exchanges across language barriers. This limited vocabulary gives newcomers a way to cooperate without first finding a language everyone speaks. Communication becomes a feature to learn alongside combat and equipment."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "Messages made from symbols",
+            "text": "Symbol Chat lets players assemble visual messages from shapes, faces, graphic elements and short text. These can serve as greetings, jokes or reactions while playing with a controller. The editor also gives a message a recognisable personal style: a familiar symbol can announce a companion's presence as effectively as a written name. These tools helped give Dreamcast's online parties a shared social vocabulary."
+          }
+        ],
+        "sources": [
+          {
+            "title": "phantasystar.sega.jp",
+            "url": "https://phantasystar.sega.jp/20th/history/",
+            "publisher": "phantasystar.sega.jp"
+          },
+          {
+            "title": "www.sega.jp",
+            "url": "https://www.sega.jp/history/hard/column/column_06.html",
+            "publisher": "www.sega.jp"
+          },
+          {
+            "title": "Phantasy Star Online — original release infobox, Wikipedia revision 1374477494",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1374477494",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Soundtrack publication: Good VGM 286 - Phantasy Star Online - After the story 1",
+            "url": "https://www.youtube.com/watch?v=aNw_Klh2Nqg",
+            "publisher": "Good Video Game Music",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Hideaki Kobayashi",
+            "url": "https://en.wikipedia.org/wiki/Phantasy_Star_Online",
+            "publisher": "Hideaki Kobayashi"
+          }
+        ]
+      },
+      "features": [
+        {
+          "feature_id": "feature-online-console-ritual",
+          "title": "Finding someone again after a dungeon",
+          "subtitle": "",
+          "summary": "Routines make a world.",
+          "cards": [
+            {
+              "card_id": "feature:feature-online-console-ritual:0",
+              "original_index": 0,
+              "heading": "Test the network before the world",
+              "text": "In a Sega.com interview, Yuji Naka says the team experimented with an online game for Dreamcast's modem, then chose Phantasy Star's setting. ChuChu Rocket had also served as a practical step toward understanding online play. The order matters: technical experiments preceded the finished fictional frame. Bringing a console into that space required work below the game itself, including the different networking arrangements players encountered in different countries."
+            },
+            {
+              "card_id": "feature:feature-online-console-ritual:1",
+              "original_index": 1,
+              "heading": "A shared clock needs a server",
+              "text": "Even agreeing when to meet became a production question. PSO displayed Swatch's internet-time system, but Naka explains that the value came from the server rather than simply trusting the Dreamcast's own clock. Servers in different time zones had to agree, and a player's incorrectly set console time could not become the common reference. This modest display depended on coordination beyond the room. The online interface was carrying a practical promise: players entering through different local machines should still be able to refer to the same time."
+            },
+            {
+              "card_id": "feature:feature-online-console-ritual:2",
+              "original_index": 2,
+              "heading": "Keep a name after the meeting",
+              "text": "The original manual turns another social problem into a small object: the Guild Card. A player could send one to someone met online, keep received cards and search for that person's current location later. If the person was online, Simple Mail provided a message; a result in a visual lobby could offer a way to meet there. The dungeon group was therefore not the only unit of memory. The game supplied a route from a temporary encounter to the possibility of finding that particular player again."
+            },
+            {
+              "card_id": "feature:feature-online-console-ritual:3",
+              "original_index": 3,
+              "heading": "Leaving is also an action",
+              "text": "Ending the session also had explicit rules. The manual directs players to Quit Game to disconnect and save, rather than treating power-off as an equivalent departure. It distinguishes the main save from the Guild Card file and warns about lost items or money after an improper exit or disconnection. An optional inactivity timer could save and disconnect after a chosen interval. These procedures made character persistence understandable, but also exposed its limits. Saving and disconnecting became part of the session's routine."
+            }
+          ],
+          "sources": [
+            {
+              "id": "naka2001mirror",
+              "title": "Yuji Naka interview for Sega.com, 2001",
+              "url": "https://www.sonicstadium.org/timewarp/v7/interviews-v7/yuji7/",
+              "publisher": "Yuji Naka interviewed by Marc Cellucci / Sega.com; translation Osamu Shibamiya; credited mirror The Sonic Stadium",
+              "source_type": "Original publisher interview preserved with author/translator credits; not the separate GameSpot interview",
+              "locator": "Marc Cellucci/Sega.com2001 interview: starting point, technological experiments, ChuChu Rocket and different national networks; Same interview: Swatch BEAT implementation, server synchronization and incorrect local clocks",
+              "rights": "Reference only. Original publications, English translations, scans and associated media remain with their respective rights holders.",
+              "story_paragraphs": [
+                0,
+                1
+              ],
+              "paragraph_locators": {
+                "0": "Marc Cellucci/Sega.com2001 interview: starting point, technological experiments, ChuChu Rocket and different national networks",
+                "1": "Same interview: Swatch BEAT implementation, server synchronization and incorrect local clocks"
+              }
+            },
+            {
+              "id": "psomanual",
+              "title": "Phantasy Star Online: original Dreamcast instruction manual",
+              "url": "https://www.digitpress.com/library/manuals/dreamcast/phantasy_star_online.pdf",
+              "publisher": "Sega / Sonic Team; original Dreamcast English manual, archived by Digital Press",
+              "source_type": "Original printed manual scan; exact pages inspected visually",
+              "locator": "Original Dreamcast manual printed25–26, PDFpages13–14 one-based: Guild Card search, Meet in lobby and Simple Mail; Original manual printed4–5 and26, PDFpages3 and14: saving files/exit warning and Auto Disconnect",
+              "rights": "Reference only. Original publications, English translations, scans and associated media remain with their respective rights holders.",
+              "story_paragraphs": [
+                2,
+                3
+              ],
+              "paragraph_locators": {
+                "2": "Original Dreamcast manual printed25–26, PDFpages13–14 one-based: Guild Card search, Meet in lobby and Simple Mail",
+                "3": "Original manual printed4–5 and26, PDFpages3 and14: saving files/exit warning and Auto Disconnect"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entry_id": "amped-freestyle-snowboarding-2001",
+      "kind": "game",
+      "year_context_only": 2001,
+      "date_context_only": {
+        "precision": "year"
+      },
+      "event_semantics": "",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "Amped: Freestyle Snowboarding",
+        "subtitle": "A career on the mountain",
+        "summary": "Amped: Freestyle Snowboarding is Microsoft's 2001 Xbox snowboarding game about building a riding career. Real resorts provide open slopes where the player chooses a line, links tricks and tries to attract photographers and sponsors. Progress comes from finding a way down the mountain that is worth watching.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "A career on the mountain",
+            "text": "Amped: Freestyle Snowboarding is Microsoft's 2001 Xbox snowboarding game about building a riding career. Real resorts provide open slopes where the player chooses a line, links tricks and tries to attract photographers and sponsors. Progress comes from finding a way down the mountain that is worth watching."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Making a line work",
+            "text": "A jump begins before the board leaves the snow. Preparing a spin, choosing a grab and adjusting its shape gives the descent a sequence of small decisions, ending with a landing that keeps the run alive. Rails offer another route to points. Holding a slide and keeping balance can link parts of the terrain into a line that improves with practice."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Finding the camera",
+            "text": "A camera overlay shows when a photographer or filmmaker is watching. Performing a strong trick there earns the exposure that feeds the career, while sponsors judge the style of a try-out run. Professional riders offer another challenge: follow their line and attempt better tricks at the marked places. A familiar slope can therefore hold several different targets during the same descent."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "One more run",
+            "text": "Skill points improve abilities such as jumping, spinning and balancing, giving later attempts another advantage. Quick Start also lets the player return to an unlocked slope simply to ride and chase scores. The soundtrack draws on independent bands, with Xbox hard-drive music available for a personal selection. Choosing the next song becomes part of settling into another run."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Original Microsoft booklet, X08-40980; printed4–11,26",
+            "url": "https://db.hfsplay.fr/files/2020/06/02/Amped_2001_Microsoft_US_REUeMvl.pdf"
+          },
+          {
+            "title": "Contemporary Microsoft Gamestock demonstration",
+            "url": "https://www.gamespot.com/articles/gamestock-2001-first-look-amped-freestyle-snowboarding/1100-2695947/"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "looney-tunes-sheep-raider-2001",
+      "kind": "game",
+      "year_context_only": 2001,
+      "date_context_only": {
+        "precision": "year"
+      },
+      "event_semantics": "",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "Looney Tunes: Sheep Raider",
+        "subtitle": "A working day of impossible thefts",
+        "summary": "Ralph Wolf turns observation, mail-order gadgets and cartoon timing into an elaborate sheep-stealing plan.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "A wolf in a television contest",
+            "text": "Infogrames Lyon House’s 2001 adventure is known as Sheep, Dog ’n’ Wolf in Europe and Looney Tunes: Sheep Raider in North America. Ralph Wolf enters a television contest presented by Daffy Duck. Each challenge asks him to steal a sheep and bring it to the marked destination while Sam Sheepdog guards the flock. The familiar relationship between wolf and sheepdog supplies the rules for each puzzle."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "The joke is also the solution",
+            "text": "Ralph succeeds by watching patrols, planning a route and combining ACME equipment ordered through the game’s mailboxes. Disguises and distractions exploit the same absurd possibilities as the cartoons, but the player has to make the sequence work. The goal is to carry the sheep safely past Sam. Eric Caspar’s score accompanies this patient form of slapstick."
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://psxdatacenter.com/games/SLES-02895.html",
+            "title": "Original retail description and PlayStation gameplay documentation"
+          },
+          {
+            "url": "https://manuall.co.uk/pc-looney-tunes-sheep-raider/",
+            "title": "Original Infogrames PC manual index: ordering items, inventory, Sam Sheep-Dog and level completion; direct PDF not obtained"
+          },
+          {
+            "url": "https://www.mobygames.com/game/11906/looney-tunes-sheep-raider/credits/windows/",
+            "title": "Original game credits transcription: Eric Caspar musician"
+          },
+          {
+            "url": "https://gamefaqs.gamespot.com/pc/583122-looney-tunes-sheep-dog-and-wolf/data",
+            "title": "Regional release records; exact day varies against other preservation catalogs"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "luigis-mansion-2001",
+      "kind": "game",
+      "year_context_only": 2001,
+      "date_context_only": {
+        "precision": "year"
+      },
+      "event_semantics": "",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "Luigi's Mansion",
+        "subtitle": "A house of his own",
+        "summary": "Luigi's Mansion is Nintendo's 2001 GameCube adventure about Mario's nervous younger brother. A mysterious prize draws Luigi to a haunted house, where Mario has disappeared. Professor E. Gadd supplies a flashlight and the Poltergust 3000 vacuum cleaner, giving Luigi a way to search its rooms and capture their ghostly inhabitants.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "A house of his own",
+            "text": "Luigi's Mansion is Nintendo's 2001 GameCube adventure about Mario's nervous younger brother. A mysterious prize draws Luigi to a haunted house, where Mario has disappeared. Professor E. Gadd supplies a flashlight and the Poltergust 3000 vacuum cleaner, giving Luigi a way to search its rooms and capture their ghostly inhabitants."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Holding on to a ghost",
+            "text": "An ordinary ghost must be startled with the flashlight before the vacuum can catch it. Once the nozzle has a hold, Luigi pulls against its escape, trying to finish the capture while other spirits move around him. A room can make that simple sequence difficult by giving him several threats to watch. His frightened reactions keep the encounter comic even as the player concentrates on where to stand and when to turn the light."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Finding another door",
+            "text": "Clearing the ghosts brings light back to a room, while newly found keys open another part of the house. The Game Boy Horror supplies a map and a connection to the Professor's advice. Returning through a familiar corridor therefore has a purpose: an earlier locked door may now lead somewhere new. The mansion becomes a place learned through repeated journeys, with each cleared room offering a little more certainty inside it."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "More than a vacuum",
+            "text": "Fire, water and ice give the Poltergust another use. Absorb an elemental ghost and Luigi can release its energy at something in the room, such as an unlit candle. An object that seemed decorative can become part of a puzzle. Looking closely matters alongside catching spirits, encouraging the player to pause and examine the furnishings before deciding what the vacuum should do next."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Original publisher description",
+            "url": "https://www.nintendo.com/en-gb/Games/Nintendo-GameCube/Luigi-s-Mansion-268236.html",
+            "publisher": "Nintendo"
+          },
+          {
+            "title": "Original Japanese progression guide",
+            "url": "https://www.nintendo.co.jp/ngc/glmj/susume/index.html",
+            "publisher": "Nintendo"
+          },
+          {
+            "title": "Original Japanese equipment guide",
+            "url": "https://www.nintendo.co.jp/ngc/glmj/s_gh/index.html",
+            "publisher": "Nintendo"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "workbook-01-04-runescape",
+      "kind": "game",
+      "year_context_only": 2001,
+      "date_context_only": {
+        "month": 1,
+        "day": 4,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "release",
+      "factual_note": "Imported dated English Playhub editorial. Adapt its calendar wording, review publisher dates and assign rights-cleared media before presenting as a finished museum stop.",
+      "main": {
+        "feature_id": null,
+        "title": "RuneScape",
+        "subtitle": "An online world inside the browser",
+        "summary": "Andrew and Paul Gower opened RuneScape's public beta on January 4, 2001, bringing an online RPG into a browser window.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "An online world inside the browser",
+            "text": "Andrew and Paul Gower opened RuneScape's public beta on January 4, 2001. Entering through a browser made its online world easy to try, using a mixture of 3D graphics and 2D sprites. A character could develop many skills, and the world could grow through continued updates. The website offered a simple point of entry into an RPG that invited repeated visits."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "A small project with an accessible doorway",
+            "text": "The early game was developed and operated with limited resources. Browser access lowered the practical effort of trying it: players could start exploring before committing to a large client installation. Modest graphics supported a world whose activities and relationships could keep expanding after that first visit, helping a small project reach an online audience."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "One character, many skills",
+            "text": "The same avatar can develop combat, mining, fishing, cooking and crafting. Players can change their goals as they discover activities, pursuing quests, gathering resources or concentrating on a particular skill. This flexible progression supports different routines within the shared world, with an economic activity offering as much reason to return as another battle."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "Updates become a routine",
+            "text": "The early update archive records quests, fixes, new areas and interface changes arriving during the first weeks. Membership followed in February 2002, and RuneScape 2 replaced the original technology in 2004. Continued changes made maintenance and new content part of the game's regular life, with the community playing while the world developed around it."
+          }
+        ],
+        "sources": [
+          {
+            "title": "www.jagex.com",
+            "url": "https://www.jagex.com/news/runescape-launches-on-ios-and-android",
+            "publisher": "www.jagex.com"
+          },
+          {
+            "title": "runescape.wiki",
+            "url": "https://runescape.wiki/w/WWW.RUNESCAPE.COM",
+            "publisher": "runescape.wiki"
+          },
+          {
+            "title": "runescape.wiki",
+            "url": "https://runescape.wiki/w/Major_updates",
+            "publisher": "runescape.wiki"
+          },
+          {
+            "title": "RuneScape — original release infobox, Wikipedia revision 1380563069",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1380563069",
+            "publisher": "English Wikipedia contributors"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-5571442",
+      "kind": "game",
+      "year_context_only": 2001,
+      "date_context_only": {
+        "month": 1,
+        "day": 25,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Regional and platform release dates may differ. Where shown, the exact day is taken only from the article release infobox.",
+      "main": {
+        "feature_id": null,
+        "title": "Onimusha: Warlords",
+        "subtitle": "",
+        "summary": "Onimusha: Warlords, known in Japan as Onimusha, is a 2001 action-adventure game developed and published by Capcom for the PlayStation 2.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Onimusha: Warlords",
+            "text": "Onimusha: Warlords, known in Japan as Onimusha, is a 2001 action-adventure game developed and published by Capcom for the PlayStation 2. It is the first entry of the Onimusha series. An updated form as Genma Onimusha for the Xbox was released in 2002. The original Warlords version was ported to Microsoft Windows, although it was only available in China and Russia. A remaster for Nintendo Switch, PlayStation 4, and Xbox One was released in 2018, with a Windows version following in 2019."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Samanosuke and Kaede confront Nobunaga's demons",
+            "text": "The game's plot is set in the Sengoku period and focuses on the samurai Samanosuke Akechi who fights against the forces of Nobunaga Oda. After Nobunaga's death in battle, Samanosuke goes on a quest to save Princess Yuki from demons working alongside Nobunaga's forces. The player controls Samanosuke and his partner, a female ninja Kaede, in their fight against demons."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Fixed cameras and upgradeable weapons",
+            "text": "While the game borrows elements from Capcom's own Resident Evil survival horror series, such as solving puzzles and a fixed camera, the game is focused more on the action game genre with Samanosuke possessing multiple weapons that can be upgraded by defeating several enemies. Capcom originally wanted to release the game for the original PlayStation but the close release of its next generation version resulted in the project being scrapped."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "A million-selling milestone for PlayStation 2",
+            "text": "Following its release, Onimusha: Warlords achieved high popularity, becoming the first PlayStation 2 game to reach one million sales. Its sales eventually surpassed two million units worldwide. The game has been well-received by video game publications and has been recognized as one of the best titles on the system. It was followed by three direct sequels for the same console, and spawned spinoffs and a 2026 reboot."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Onimusha: Warlords - article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1381111253",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Article contributors and history",
+            "url": "https://en.wikipedia.org/wiki/Onimusha:_Warlords?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          },
+          {
+            "title": "Onimusha: Warlords - box - front (Sony Playstation 2)",
+            "url": "https://gamesdb.launchbox-app.com/games/details/8780",
+            "publisher": "Capcom"
+          },
+          {
+            "title": "Soundtrack publication: Hama no Hibiki — Complete 2018 Remaster Soundtrack Album",
+            "url": "https://www.youtube.com/watch?v=HpSkRSKRtAA",
+            "publisher": "William Faure",
+            "attribution": "Music remains on its original YouTube publication. Original rights retained by the recording owner."
+          },
+          {
+            "title": "Music credit source: Rei Kondoh, Sho Kobayashi, Keisuke Mochizuki",
+            "url": "https://reikondoh.blog.jp/archives/cat_10009843.html",
+            "publisher": "Rei Kondoh, Sho Kobayashi, Keisuke Mochizuki"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "workbook-02-05-paper-mario-video-game",
+      "kind": "game",
+      "year_context_only": 2001,
+      "date_context_only": {
+        "month": 2,
+        "day": 5,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "release",
+      "factual_note": "Imported dated English Playhub editorial. Adapt its calendar wording, review publisher dates and assign rights-cleared media before presenting as a finished museum stop.",
+      "main": {
+        "feature_id": null,
+        "title": "Paper Mario",
+        "subtitle": "An RPG in paper and dioramas",
+        "summary": "On February 5, 2001, Paper Mario reaches Nintendo 64 in North America with a visual solution that looks like a joke but becomes a language.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "An RPG in paper and dioramas",
+            "text": "Paper Mario reached Nintendo 64 in North America on February 5, 2001. Intelligent Systems places flat characters inside three-dimensional environments, giving its RPG the appearance of moving cutouts and dioramas. Turn-based battles, partners and badges organise the adventure, while dialogue fills the familiar Mushroom Kingdom with comic encounters. Its visual simplicity supports rules that are easy to follow and abilities with clear uses."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Flat figures, three-dimensional spaces",
+            "text": "Thin characters keep a clear silhouette within the small stages and controlled perspectives of the world. Intelligent Systems later recalled this two-dimensional graphic style as a defining idea of the first game. The contrast allows compact environments to accommodate exploration, visual jokes and information about battles while retaining a recognisable Mario identity."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Badges and partners",
+            "text": "Level gains offer choices about where to invest, while Badge Points limit the special abilities that can be equipped. Some badges change actions in the field or in battle, making the available points a reason to reconsider a setup. Partners contribute their own abilities to combat and exploration, so progression involves trying combinations as well as increasing statistics."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "Voices across the Mushroom Kingdom",
+            "text": "Bowser's theft of the Star Rod and imprisonment of the Star Spirits gives Mario a new journey through the Mushroom Kingdom. Its towns and villages contain people with favours, comments and small stories of their own. Familiar enemies and settings provide material for jokes, giving the writing room to develop supporting characters between the battles and platforming."
+          }
+        ],
+        "sources": [
+          {
+            "title": "www.gamespot.com",
+            "url": "https://www.gamespot.com/games/paper-mario/",
+            "publisher": "www.gamespot.com"
+          },
+          {
+            "title": "gamefaqs.gamespot.com",
+            "url": "https://gamefaqs.gamespot.com/n64/198849-paper-mario/data/1000",
+            "publisher": "gamefaqs.gamespot.com"
+          },
+          {
+            "title": "iwataasks.nintendo.com",
+            "url": "https://iwataasks.nintendo.com/interviews/3ds/papermario/0/0/",
+            "publisher": "iwataasks.nintendo.com"
+          },
+          {
+            "title": "www.nintendo.com",
+            "url": "https://www.nintendo.com/eu/media/downloads/games_8/emanuals/nintendo_8/Manual_Nintendo64_PaperMario_EN.pdf",
+            "publisher": "www.nintendo.com"
+          },
+          {
+            "title": "www.nintendo.com",
+            "url": "https://www.nintendo.com/en-gb/Games/Nintendo-64/Paper-Mario-269624.html",
+            "publisher": "www.nintendo.com"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "fear-effect-2-2001",
+      "kind": "game",
+      "year_context_only": 2001,
+      "date_context_only": {
+        "month": 2,
+        "day": 21,
+        "precision": "day",
+        "region": "North America"
+      },
+      "event_semantics": "",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "Fear Effect 2: Retro Helix",
+        "subtitle": "Before the mercenaries became a team",
+        "summary": "Fear Effect 2: Retro Helix is Kronos Digital Entertainment's PlayStation action-adventure, first released in North America on 21 February 2001. Set in 2048, it precedes the original game and follows the circumstances that bring Hana, Glas and Deke together with Rain Qin. A degenerative pandemic has reshaped their world, where freelance operations and personal motives lead the characters into a larger conspiracy. The prequel expands the relationships behind the original cast while retaining its mixture of cinematic scenes, action and puzzles. Familiar faces enter the story from different starting points.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Before the mercenaries became a team",
+            "text": "Fear Effect 2: Retro Helix is Kronos Digital Entertainment's PlayStation action-adventure, first released in North America on 21 February 2001. Set in 2048, it precedes the original game and follows the circumstances that bring Hana, Glas and Deke together with Rain Qin. A degenerative pandemic has reshaped their world, where freelance operations and personal motives lead the characters into a larger conspiracy. The prequel expands the relationships behind the original cast while retaining its mixture of cinematic scenes, action and puzzles. Familiar faces enter the story from different starting points."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Follow a conspiracy through changing places",
+            "text": "The journey moves from a futuristic Hong Kong to Xi'an, the tomb of China's first emperor and the mythical island of Penglai Shan. Each location gives the investigation another visual and narrative setting, connecting espionage to the series' supernatural interests. The player switches between characters as events bring their motives into contact. Exploration and puzzle solving interrupt the action, asking for attention to the situation instead of treating every scene as a fight. The campaign gradually turns separate operations into a shared problem whose scale extends beyond the mercenaries' original intentions."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "The same visual language, another history",
+            "text": "Stanley Liu directed and wrote the prequel, with David Rovin composing the music. Its illustrated characters and cinematic environments continue the original game's recognisable presentation, making the connection between the two adventures visible even as the chronology moves backwards. Rain's arrival gives Hana another important relationship and enlarges the group's history. Released during the PlayStation's later years, Retro Helix uses a sequel's opportunity to deepen an existing cast. Its central question is how people with incompatible backgrounds and immediate goals come to take part in the same dangerous undertaking."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Fear Effect 2: Retro Helix - English Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Fear_Effect_2%3A_Retro_Helix",
+            "publisher": "Wikipedia contributors",
+            "facts": "First release, gameplay and production context."
+          },
+          {
+            "title": "Fear Effect 2: Retro Helix - LaunchBox media",
+            "url": "https://gamesdb.launchbox-app.com/games/details/11275-fear-effect-2-retro-helix",
+            "publisher": "LaunchBox Games Database",
+            "facts": "Complete cover and original console gameplay media."
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "zelda-oracle-of-ages",
+      "kind": "game",
+      "year_context_only": 2001,
+      "date_context_only": {
+        "month": 2,
+        "day": 27,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Regional and platform release dates may differ. Where shown, the exact day is taken only from the article release infobox.",
+      "main": {
+        "feature_id": null,
+        "title": "The Legend of Zelda: Oracle of Ages",
+        "subtitle": "",
+        "summary": "Link travels through changing eras, carrying discoveries between the past and present. Oracle of Ages is a distinct 2001 Game Boy Color adventure that can exchange progress with its companion game.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "A journey between eras",
+            "text": "The Legend of Zelda: Oracle of Ages is a 2001 Game Boy Color adventure developed by Flagship and published by Nintendo. Released alongside Oracle of Seasons, it gives Link a separate journey built around travel between the past and present. The companion games can exchange progress, extending their stories through a linked conclusion."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Puzzles and the Harp of Ages",
+            "text": "The gameplay and graphics are similar to that of Link's Awakening (1993) for the Game Boy. The player controls Link from an overhead perspective. Oracle of Ages focuses on puzzles, while Oracle of Seasons focuses on action. The games can interact with one other via passwords or a Game Link Cable. In Seasons, Link uses the Rod of Seasons to control the seasons and change the environment. In Ages, he uses the Harp of Ages to travel between the past and the present."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Labrynna, Holodrum and the linked story",
+            "text": "In Seasons, the Triforce transports Link to the land of Holodrum, where he sees Onox kidnap Din, the Oracle of Seasons. In Ages, the Triforce transports Link to Labrynna, where Veran possesses Nayru. Before he can infiltrate Onox's castle and Veran's tower, Link must collect the eight Essences of Nature and the eight Essences of Time, which are hidden in dungeons and guarded by bosses. The main plot is revealed once the player finishes both games."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "Flagship builds two interconnected Zelda adventures",
+            "text": "After experimenting with porting the original Legend of Zelda (1986) to the Game Boy Color, Capcom's Flagship team, supervised by Yoshiki Okamoto, began developing interconnected Zelda games that could be played in any order. Seasons and Ages sold 3.99 million copies combined. Critics praised the gameplay, colorful designs and graphic quality, but criticized the inconsistent sound quality. Both games were rereleased on the Virtual Console of Nintendo 3DS in 2013 and the Nintendo Classics service in 2023."
+          }
+        ],
+        "sources": [
+          {
+            "title": "The Legend of Zelda: Oracle of Seasons and Oracle of Ages - article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1381031533",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Article contributors and history",
+            "url": "https://en.wikipedia.org/wiki/The_Legend_of_Zelda:_Oracle_of_Seasons_and_Oracle_of_Ages?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          },
+          {
+            "title": "The Legend of Zelda: Oracle of Ages — original-edition advertisement flyer - front (Nintendo Game Boy Color)",
+            "url": "https://gamesdb.launchbox-app.com/games/details/6122",
+            "publisher": "Nintendo"
+          },
+          {
+            "title": "The Legend of Zelda: Oracle of Seasons and Oracle of Ages — original release infobox, Wikipedia revision 1381031533",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1381031533",
+            "publisher": "English Wikipedia contributors"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "zelda-oracle-of-seasons",
+      "kind": "game",
+      "year_context_only": 2001,
+      "date_context_only": {
+        "month": 2,
+        "day": 27,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Regional and platform release dates may differ. Where shown, the exact day is taken only from the article release infobox.",
+      "main": {
+        "feature_id": null,
+        "title": "The Legend of Zelda: Oracle of Seasons",
+        "subtitle": "",
+        "summary": "Link travels through changing seasons to uncover new routes and solve environmental puzzles. Oracle of Seasons is a distinct 2001 Game Boy Color adventure that can exchange progress with its companion game.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "The seasons of Holodrum",
+            "text": "The Legend of Zelda: Oracle of Seasons is a 2001 Game Boy Color adventure developed by Flagship and published by Nintendo. Its companion, Oracle of Ages, shares the overhead approach of Link's Awakening, while Seasons gives Link a Rod that changes the environment through the time of year. Both adventures can be played in either order and linked through their progress."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "The Rod reshapes Holodrum's seasons",
+            "text": "The gameplay and graphics are similar to that of Link's Awakening (1993) for the Game Boy. The player controls Link from an overhead perspective. Oracle of Ages focuses on puzzles, while Oracle of Seasons focuses on action. The games can interact with one other via passwords or a Game Link Cable. In Seasons, Link uses the Rod of Seasons to control the seasons and change the environment. In Ages, he uses the Harp of Ages to travel between the past and the present."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Two oracles and a shared conclusion",
+            "text": "In Seasons, the Triforce transports Link to the land of Holodrum, where he sees Onox kidnap Din, the Oracle of Seasons. In Ages, the Triforce transports Link to Labrynna, where Veran possesses Nayru. Before he can infiltrate Onox's castle and Veran's tower, Link must collect the eight Essences of Nature and the eight Essences of Time, which are hidden in dungeons and guarded by bosses. The main plot is revealed once the player finishes both games."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "Capcom's linked Zelda worlds",
+            "text": "After experimenting with porting the original Legend of Zelda (1986) to the Game Boy Color, Capcom's Flagship team, supervised by Yoshiki Okamoto, began developing interconnected Zelda games that could be played in any order. Seasons and Ages sold 3.99 million copies combined. Critics praised the gameplay, colorful designs and graphic quality, but criticized the inconsistent sound quality. Both games were rereleased on the Virtual Console of Nintendo 3DS in 2013 and the Nintendo Classics service in 2023."
+          }
+        ],
+        "sources": [
+          {
+            "title": "The Legend of Zelda: Oracle of Seasons and Oracle of Ages - article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1381031533",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Article contributors and history",
+            "url": "https://en.wikipedia.org/wiki/The_Legend_of_Zelda:_Oracle_of_Seasons_and_Oracle_of_Ages?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          },
+          {
+            "title": "The Legend of Zelda: Oracle of Seasons — original-edition advertisement flyer - front (Nintendo Game Boy Color)",
+            "url": "https://gamesdb.launchbox-app.com/games/details/6123",
+            "publisher": "Nintendo"
+          },
+          {
+            "title": "The Legend of Zelda: Oracle of Seasons and Oracle of Ages — original release infobox, Wikipedia revision 1381031533",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1381031533",
+            "publisher": "English Wikipedia contributors"
+          }
+        ]
+      },
+      "features": []
+    }
+  ]
+}

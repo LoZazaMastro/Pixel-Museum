@@ -1,0 +1,96 @@
+{
+  "status": "PASS",
+  "locale": "es",
+  "entries": [
+    {
+      "entry_id": "wikipedia-65333994",
+      "source_fields_sha256": "74eb58c97106a089d5205d7fe7f5fcb792eb79e079831618671c360cff37a801",
+      "translation_sha256": "8130e1781d9170c292650d19d464d47d7804b6c8382238f101706eafe64e1e8f",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch353/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "c4d2a4a1ada7b04eac795cdbe10a9026d77e2d32cb0c84b1800687ad36b0cefa"
+    },
+    {
+      "entry_id": "wikipedia-62111221",
+      "source_fields_sha256": "079fedecd7d729ffc13fa31734a41ff14619a14132b9e80948a82b027e300c66",
+      "translation_sha256": "dfda28a4b6707b687b29c6ee85c1977b8352627922b101252468487a403ff4aa",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch353/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "c4d2a4a1ada7b04eac795cdbe10a9026d77e2d32cb0c84b1800687ad36b0cefa"
+    },
+    {
+      "entry_id": "wikipedia-68680281",
+      "source_fields_sha256": "3519137b89c4aff32db8efae96d0a7ba310cde5cf76e4c122cf38ad5c95f82dd",
+      "translation_sha256": "03ad5251dd7ac7475b1d481a99f79febbb018d6370c4b28b9e0482e0b1727cb8",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch353/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "c4d2a4a1ada7b04eac795cdbe10a9026d77e2d32cb0c84b1800687ad36b0cefa"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "editorial_continue",
+    "actual_receipt": "build/research/catalog-2023-chronological/february-three-private/independent-editorial-peer-approval.json",
+    "actual_receipt_sha256": "63085c59699f37bf60113e414231819ee4797ce868f3a2ecb650952cce68b3ca",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "editorial_continue",
+      "index": "build/research/catalog-2023-chronological/february-three-private/three-private-index.json",
+      "index_sha256": "550b6862a832af89f5559272021a6d5e945799ac9a95b91fa4458b64724da770",
+      "scope": "Actually read all ten English and forty localized paragraphs plus all five text fields; actually viewed all fourteen selected images in three final contacts. Read all six new public AAC music metadata receipts and individual creator credits. Preserved three Blood Bowl tracks exactly without repeated extraction.",
+      "primary_sources_actually_read": [
+        "https://mundfish.com/en/projects/atomic-heart",
+        "https://www.focus-entmt.com/en/news/atomic-heart-releases-february-21-and-opens-its-pre-orders-with-a-bang",
+        "https://www.gamespress.com/BLOOD-BOWL-3-PRE-ORDER-KICK-OFF",
+        "https://blog.playstation.com/2023/02/09/ps5-creators-how-hogwarts-legacy-harnesses-ps5s-power/?sf264126897=1",
+        "https://www.playstation.com/en-us/games/hogwarts-legacy/?smcid=mablog"
+      ],
+      "resolved_findings": [
+        "Hogwarts IT P2 Honeydukes corrected from pastry shop to sweet shop; exact final phrase verified."
+      ],
+      "owners": [
+        {
+          "entry_id": "wikipedia-65333994",
+          "slug": "hogwarts",
+          "source": "build/research/catalog-2023-chronological/february-three-private/hogwarts-source-private-candidate.json",
+          "source_sha256": "dcd48338fd299ccd75c216912e4e8db2685f95764ca958c683701f9e05f65ab4",
+          "target": "build/research/catalog-2023-chronological/february-three-private/hogwarts-four-language-private-candidate.json",
+          "target_sha256": "263b14b927986dd3173fe126c6d2c37f57c9e9da0284d1b8a8b3393a9bd09b5c",
+          "contact": "build/research/catalog-2023-chronological/february-three-private/hogwarts-final-contact.jpg",
+          "contact_sha256": "541e6a5dc22d2c564da93664fc10b38f7f8f3f883bb4d907e9ef4ad45589e80b",
+          "english_cards": 4,
+          "localized_cards": 16,
+          "images": 5,
+          "tracks": 3
+        },
+        {
+          "entry_id": "wikipedia-62111221",
+          "slug": "atomic",
+          "source": "build/research/catalog-2023-chronological/february-three-private/atomic-source-private-candidate.json",
+          "source_sha256": "8fec21f0133dbd922bf87c114e46ac0d120e888ea98a8e86417b017d70f80165",
+          "target": "build/research/catalog-2023-chronological/february-three-private/atomic-four-language-private-candidate.json",
+          "target_sha256": "cb56a48859db5261deb34179402ce62a87748504c1a0eb95f19d5ad437fcbcb2",
+          "contact": "build/research/catalog-2023-chronological/february-three-private/atomic-final-contact.jpg",
+          "contact_sha256": "dc1ee56cc66f53afa475515265c32a7c3e53380abd317f8ccacda74a867c7050",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 4,
+          "tracks": 3
+        },
+        {
+          "entry_id": "wikipedia-68680281",
+          "slug": "bloodbowl",
+          "source": "build/research/catalog-2023-chronological/february-three-private/bloodbowl-source-private-candidate.json",
+          "source_sha256": "cf58b7f76f10b830a4c7b5f36e880d640a21979dc1627b3353cbec0c4a8f2134",
+          "target": "build/research/catalog-2023-chronological/february-three-private/bloodbowl-four-language-private-candidate.json",
+          "target_sha256": "054abf92fd5b471e117e8f20bc6257402eb894ef1e1f1b4d0194ecaf908286e3",
+          "contact": "build/research/catalog-2023-chronological/february-three-private/bloodbowl-final-contact.jpg",
+          "contact_sha256": "2061ca9d4bc5a969ad639a4e056dc4a8486c8826dcc9c7c952680eb02ed37d16",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 5,
+          "tracks": 3
+        }
+      ],
+      "findings": [],
+      "production_writes": false
+    }
+  }
+}

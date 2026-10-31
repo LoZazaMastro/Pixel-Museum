@@ -1,0 +1,310 @@
+{
+  "schema_version": 1,
+  "reviewed_utc": "2026-10-21T01:02:47.023836+00:00",
+  "reviewer": "independent editorial_review agent",
+  "draft_path": "content/expansion/editorial-hardware-choices-11.json",
+  "draft_sha256": "c0c82b8021cf6f185462af74fc9e35d083a9e43210c0b0c4148ffa8c6933f35c",
+  "initial_reviewed_sha256": "e2d9f7c438e7461459df6ed9e1e39d5f23dc2199393cb904fe8aabf4e5e01b0b",
+  "status": "source_schema_budget_and_placement_pass_with_two_wording_fixes_resolved",
+  "review_scope": "Independent reading of all 16 new cards, cited primary answer sequences, all four parent bodies, source hashes, names/dates/semantics, per-publication full-visible budget and exact URL reuse across original authoring batches. No global fact audit or legal/media clearance claimed.",
+  "counts": {
+    "features": 4,
+    "cards": 16,
+    "primary_publication_groups": 8,
+    "raw_primary_response_snapshots": 7,
+    "web_reader_recoveries": 1
+  },
+  "checks": [
+    {
+      "id": "feature-playstation-industrial-design",
+      "body_sha256": "a3dccca9b00b50a271fb150fba4c8365b4fc81fdded772cbb0ff7372f22a98b4",
+      "card_words": [
+        81,
+        83,
+        83,
+        81
+      ],
+      "budgets": [
+        {
+          "source_id": "sony-history",
+          "whitespace_words": 185,
+          "unicode_lexical_words": 189,
+          "charged_words": 189
+        },
+        {
+          "source_id": "sony-anniversary24",
+          "whitespace_words": 185,
+          "unicode_lexical_words": 188,
+          "charged_words": 188
+        }
+      ],
+      "schema_and_indices": "PASS"
+    },
+    {
+      "id": "feature-switch-hybrid-routine",
+      "body_sha256": "9f7387f76b161bf03cb9bbc1ee318fe3b4e2b351e2ebbceca895d0725d0bd03b",
+      "card_words": [
+        82,
+        85,
+        82,
+        83
+      ],
+      "budgets": [
+        {
+          "source_id": "switch-reveal16",
+          "whitespace_words": 187,
+          "unicode_lexical_words": 192,
+          "charged_words": 192
+        },
+        {
+          "source_id": "switch-oled21",
+          "whitespace_words": 188,
+          "unicode_lexical_words": 192,
+          "charged_words": 192
+        }
+      ],
+      "schema_and_indices": "PASS"
+    },
+    {
+      "id": "feature-handheld-two-screens",
+      "body_sha256": "70e2446f06ed1eec86df7bb3583a88919dd53fbc5c2270a7f47bccf28e3f2485",
+      "card_words": [
+        83,
+        83,
+        83,
+        84
+      ],
+      "budgets": [
+        {
+          "source_id": "iwata04",
+          "whitespace_words": 186,
+          "unicode_lexical_words": 190,
+          "charged_words": 190
+        },
+        {
+          "source_id": "dsi-xl",
+          "whitespace_words": 191,
+          "unicode_lexical_words": 197,
+          "charged_words": 197
+        }
+      ],
+      "schema_and_indices": "PASS"
+    },
+    {
+      "id": "feature-accessibility-hardware",
+      "body_sha256": "da7e62ce6b4cef474515cbda906bde73533959a8230c4084874700e35ca68157",
+      "card_words": [
+        84,
+        86,
+        90,
+        85
+      ],
+      "budgets": [
+        {
+          "source_id": "xbox-adaptive18",
+          "whitespace_words": 191,
+          "unicode_lexical_words": 193,
+          "charged_words": 193
+        },
+        {
+          "source_id": "access23",
+          "whitespace_words": 195,
+          "unicode_lexical_words": 197,
+          "charged_words": 197
+        }
+      ],
+      "schema_and_indices": "PASS"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sony-history",
+      "url": "https://www.sony.com/en/SonyInfo/CorporateInfo/History/SonyHistory/2-09.html",
+      "evidence_path": "build/research/editorial-hardware-11/sony-history-web-reader.json",
+      "evidence_sha256": "442ebe0e6dc82a3b707cdcd95717e9ef6f249ed827e121e539e8534ab8748ba8",
+      "primary_passages_read": true,
+      "read_scope": "Specific cited full primary paragraphs/answer sequences, not full unrelated navigation, comments or sales text.",
+      "evidence_type": "original_publisher_text_recovered_by_web_reader_direct_HTTP403_retained"
+    },
+    {
+      "id": "sony-anniversary24",
+      "url": "https://blog.playstation.com/2024/09/19/celebrating-30-years-of-playstation-with-a-nostalgic-look/",
+      "evidence_path": "build/research/editorial-hardware-11/sony-anniversary24.html",
+      "evidence_sha256": "ad8c575575533732db679230396d1ac783867cfffffbfa81732c0e6419e3ac0d",
+      "primary_passages_read": true,
+      "read_scope": "Specific cited full primary paragraphs/answer sequences, not full unrelated navigation, comments or sales text.",
+      "evidence_type": "actual_source_response"
+    },
+    {
+      "id": "switch-reveal16",
+      "url": "https://www.nintendo.com/en-gb/News/2016/October/Nintendo-Switch-world-premiere-demonstrates-new-entertainment-experiences-from-a-home-gaming-system-1148687.html",
+      "evidence_path": "build/research/editorial-hardware-11/switch-reveal16.html",
+      "evidence_sha256": "43016efdc65eecfc6eedc9d33acf2a896f735f027b908faa922b466f393205d6",
+      "primary_passages_read": true,
+      "read_scope": "Specific cited full primary paragraphs/answer sequences, not full unrelated navigation, comments or sales text.",
+      "evidence_type": "actual_source_response"
+    },
+    {
+      "id": "switch-oled21",
+      "url": "https://www.nintendo.com/au/news-and-articles/ask-the-developer-vol-2-nintendo-switch-oled-model",
+      "evidence_path": "build/research/editorial-hardware-11/switch-oled21.html",
+      "evidence_sha256": "540965e5629c5377a11765974637a5d3f34ce071800a57393eb1394f50da1f7a",
+      "primary_passages_read": true,
+      "read_scope": "Specific cited full primary paragraphs/answer sequences, not full unrelated navigation, comments or sales text.",
+      "evidence_type": "actual_source_response"
+    },
+    {
+      "id": "iwata04",
+      "url": "https://www.jef.or.jp/journal/pdf/business%20profiles%20II_0407.pdf",
+      "evidence_path": "build/research/editorial-hardware-11/iwata04.pdf",
+      "evidence_sha256": "9b721c8d8dd5d915452ca459e0fd50023bdac33111d850fda6b00ca9788dbd22",
+      "primary_passages_read": true,
+      "read_scope": "Specific cited full primary paragraphs/answer sequences, not full unrelated navigation, comments or sales text.",
+      "evidence_type": "actual_source_response"
+    },
+    {
+      "id": "dsi-xl",
+      "url": "https://www.nintendo.com/en-gb/Iwata-Asks/Iwata-Asks-Nintendo-DSi-XL/Iwata-Asks-Nintendo-DSi-XL/2-The-Image-of-a-Bowl-Full-of-Water/2-The-Image-of-a-Bowl-Full-of-Water-211837.html",
+      "evidence_path": "build/research/editorial-hardware-11/dsi-xl.html",
+      "evidence_sha256": "4bd8b0e0e535ab7b5aee414defcf35231e9441aa9f46297ba61c32088cc243dc",
+      "primary_passages_read": true,
+      "read_scope": "Specific cited full primary paragraphs/answer sequences, not full unrelated navigation, comments or sales text.",
+      "evidence_type": "actual_source_response"
+    },
+    {
+      "id": "xbox-adaptive18",
+      "url": "https://news.microsoft.com/stories/xbox-adaptive-controller/",
+      "evidence_path": "build/research/editorial-hardware-11/xbox-adaptive18.html",
+      "evidence_sha256": "8d55b9166eb369705bb381b848073243e7a908e69e4f5b56668aab424e731c87",
+      "primary_passages_read": true,
+      "read_scope": "Specific cited full primary paragraphs/answer sequences, not full unrelated navigation, comments or sales text.",
+      "evidence_type": "actual_source_response"
+    },
+    {
+      "id": "access23",
+      "url": "https://blog.playstation.com/2023/10/12/access-controller-for-ps5-interview-how-the-highly-customizable-kit-was-created/",
+      "evidence_path": "build/research/editorial-hardware-11/access23.html",
+      "evidence_sha256": "66659b1c4a45cd2890f87f1b2e5764767b82e2131e770a2a6594cf317dd0901d",
+      "primary_passages_read": true,
+      "read_scope": "Specific cited full primary paragraphs/answer sequences, not full unrelated navigation, comments or sales text.",
+      "evidence_type": "actual_source_response"
+    }
+  ],
+  "findings": [
+    {
+      "id": "HW11-01",
+      "severity": "medium",
+      "status": "resolved",
+      "feature_id": "feature-accessibility-hardware",
+      "body_index": 2,
+      "finding": "Separate Sony Access example sits under the 2018 Xbox parent. The initial reviewed opening did not date the Sony interview in public prose, although its source is 12 October 2023.",
+      "requested_change": "Open with: In a 2023 interview, Sony’s Alvin Daniel remembered an early test... The four extra words retain the 200-word publication ceiling.",
+      "evidence": "https://blog.playstation.com/2023/10/12/access-controller-for-ps5-interview-how-the-highly-customizable-kit-was-created/",
+      "draft_currently_dates_the_comparator": true
+    },
+    {
+      "id": "HW11-02",
+      "severity": "low",
+      "status": "resolved",
+      "feature_id": "feature-handheld-two-screens",
+      "body_index": 0,
+      "finding": "One interview was printed in Japan Spotlight’s July/August 2004 issue. July and August interview could be read as a conversation spanning both months.",
+      "requested_change": "Use interview published in July/August 2004, or name the issue explicitly.",
+      "evidence": "Original PDF printed pp23–25; p25 independently rendered and inspected.",
+      "draft_currently_uses_issue_wording": true
+    }
+  ],
+  "placement": [
+    {
+      "feature_id": "feature-playstation-industrial-design",
+      "parent_id": "playstation",
+      "parent_title": "PlayStation",
+      "parent_year": 1994,
+      "original_body_sha256": "45da47679bafdabe3054c9094707f986d4460c6644bfd85d34774835357c519a",
+      "original_sections_read_in_full": 4,
+      "existing_attached_ids_at_review_snapshot": []
+    },
+    {
+      "feature_id": "feature-switch-hybrid-routine",
+      "parent_id": "switch",
+      "parent_title": "Nintendo Switch",
+      "parent_year": 2017,
+      "original_body_sha256": "3dec34a7951b88dd0d60f30aa4d7aeb052ec69cd99bbbcfc85c69672a8a14cc1",
+      "original_sections_read_in_full": 2,
+      "existing_attached_ids_at_review_snapshot": []
+    },
+    {
+      "feature_id": "feature-handheld-two-screens",
+      "parent_id": "daily-12-02",
+      "parent_title": "Nintendo DS",
+      "parent_year": 2004,
+      "original_body_sha256": "61e189db13b0920a1c1f625449ceee1c02bd75af9fbaf082163a7a0196de22d9",
+      "original_sections_read_in_full": 5,
+      "existing_attached_ids_at_review_snapshot": []
+    },
+    {
+      "feature_id": "feature-accessibility-hardware",
+      "parent_id": "daily-12-03",
+      "parent_title": "Xbox Adaptive Controller",
+      "parent_year": 2018,
+      "original_body_sha256": "f69c172529f31a75260a5a7a368f65990be5201b9dfddcdca6db47efb65a51c1",
+      "original_sections_read_in_full": 4,
+      "existing_attached_ids_at_review_snapshot": []
+    }
+  ],
+  "placement_findings": [
+    {
+      "feature_id": "feature-playstation-industrial-design",
+      "recommendation": "attach",
+      "reason": "Original parent covers CDs, production capacity and household objects. Goto’s controller shapes and the dated 2024 industrial-identity objects add concrete material. First lid image partly echoes the existing opener but does not duplicate four-card argument."
+    },
+    {
+      "feature_id": "feature-switch-hybrid-routine",
+      "recommendation": "attach",
+      "reason": "Original two-section parent introduces dock/Joy-Con. New early announcement detail and 2021 circuit/hinge/strength packaging decisions add substantial content, rather than another launch summary."
+    },
+    {
+      "feature_id": "feature-handheld-two-screens",
+      "recommendation": "attach",
+      "reason": "Original five-section DS source already covers split information, touch and social use. New primary 2004 imagined football example and later DSi XL paper/manufacturing/furniture decisions are additive. No touch claim is falsely sourced to the 2004 interview."
+    },
+    {
+      "feature_id": "feature-accessibility-hardware",
+      "recommendation": "attach",
+      "reason": "Original source already covers hub, co-design and packaging. New Copilot evolution, tactile port/mount details and Sony test-led comparison add specifics. Sony 2023 comparator date is explicitly required and checked; no condition-specific medical advice, universal access guarantee or original source overwrite."
+    }
+  ],
+  "factual_checks": [
+    "Sony Part 3 supports circular drive, rectangular body, grips and Goto icons; independently reopened current official text while direct HTTP 403 remains recorded honestly.",
+    "Nishino announcement dated 19 September 2024 supports old colour scheme and actual cable-connector housing/shapes ties. No announced November release is passed as newly verified shipment.",
+    "Switch 20 October 2016 announcement genuinely describes dock, train/apartment and Joy-Con hand/grip arrangements; not a 2016 retail launch.",
+    "Nintendo 12 October 2021 OLED interview supports Shiota film folding, Yamashita thin display/metal stand/large hinges, 3 mm width, unchanged height/thickness and dock/Joy-Con constraint.",
+    "Japan Spotlight July/August 2004 printed p25 states the football two-view example as future DS intention; p23 complexity and p25 advanced-technology remarks were read. PDF p3 rendered and visually inspected.",
+    "DSi XL chapter 2 supports cut card, 4.2-inch LCD panel yield, side viewing, furniture research and tabletop family use. Same interview chapter 1 was also opened for role/context checking.",
+    "Microsoft StoryLabs supports 2014 photo to 2015 hackathon chain, Copilot standalone decision, 19 ports, embossed symbols/grooves and three threaded mounting inserts. Source raw metadata says 16 May 2018.",
+    "Alvin Daniel 12 October 2023 account supports two participants with same diagnosis/different needs, coplanar larger buttons, cap variations, paired controllers/stick placement and all three named partner organisations."
+  ],
+  "same_publication_grouping": "All sections/participants of each interview count together. Eight distinct primary publications. Date/name cross-checking within DSi XL does not create a ninth group.",
+  "other_authoring_batch_exact_url_matches": [],
+  "limits": [
+    "Word charges are for these newly authored feature texts. This review does not recalculate derivation for every inherited parent paragraph or certify historical source text is copyright-cleared.",
+    "Manufacturer memories and intent are attributed; no hardware measurements or runtime benchmark was performed.",
+    "No media selected or rights cleared. A photograph or source URL is not an illustration-readiness test.",
+    "English source prose/locales, master, assembler, runtime, build and console were not modified by this review."
+  ],
+  "approved_revision_verification": {
+    "status": "PASS",
+    "method": "Reverse the two approved opening changes and compare all four complete body-array hashes against the initial review receipt. All original source snapshots still match; full-visible word charges independently recomputed.",
+    "changed_body_indices": {
+      "feature-accessibility-hardware": [
+        2
+      ],
+      "feature-handheld-two-screens": [
+        0
+      ]
+    },
+    "other_body_strings_unchanged": true
+  },
+  "catalog_comparison_snapshot_sha256": "09e11938d211443f9f5df7431807ca2ea8429de711a0830d8727b268dad6cf9a",
+  "snapshot_note": "Comparison snapshot only; root may change the master concurrently. Original parent body hashes above identify what was read."
+}

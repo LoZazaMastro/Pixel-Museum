@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "reviewed_utc_date": "2026-10-21",
+  "reviewer_role": "Independent editorial reviewer; different agent from translation author",
+  "batch_file": "content/expansion/wikipedia-locales-reference-12.json",
+  "batch_sha256": "3a5174482577bf56603edc794ffcd490cfe7a6d6af5734feb0550b270af66483",
+  "result": "PASS for source fidelity and explicit admission; no text corrections required",
+  "review_scope": {
+    "source_entries": 2,
+    "english_source_paragraphs_read": 6,
+    "english_source_headings_read": 3,
+    "translation_pairs_read": 8,
+    "translated_paragraphs_read": 24,
+    "translated_headings_read": 12,
+    "languages": [
+      "it",
+      "es",
+      "fr",
+      "de"
+    ],
+    "english_source_words": 536
+  },
+  "checks": {
+    "exact_current_english_source_fields": true,
+    "all_source_hashes_recomputed": true,
+    "source_attribution_sources_revision_unchanged": true,
+    "target_revision_license_credit_complete": true,
+    "every_paragraph_and_heading_compared_semantically": true,
+    "proper_names_compared_per_paragraph": true,
+    "numbers_written_quantities_first_claim_qualifiers_read": true,
+    "source_heading_indices_counts_preserved": true,
+    "no_silent_english_fact_edit": true,
+    "utf8_no_transport_corruption": true,
+    "pure_overlay_join_pass": true,
+    "six_negative_tests_pass": true,
+    "all_preexisting_source_locale_entries_preserved": true,
+    "non_target_languages_unchanged": true
+  },
+  "entries": [
+    {
+      "entry_id": "wikipedia-292879",
+      "title": "Computer Space",
+      "revision_id": 1376977170,
+      "revision_url": "https://en.wikipedia.org/w/index.php?oldid=1376977170",
+      "body_sha256": "229e529d7685acd8394b084ef38dd6538f6fddccb9ac89fddb0fe73c68337bd1",
+      "languages_read": [
+        "it",
+        "es",
+        "fr",
+        "de"
+      ],
+      "paragraphs_read": 12,
+      "headings_read": 12,
+      "result": "PASS",
+      "quantity_checks": "1971;1962;1970–71;August1971;October;initial1500;over1000mid1972;final1300–1500;1972clone;1973two-player;June1972/Pong1972 preserved with localized separators.",
+      "semantic_checks": "Possibly first spreading across multiple installations remains possibly. ComputerSpace first arcade/commercial statements remain inherited source claims. Bushnell/Dabney partnership, economical Nova failure, dedicated hardware, Nutting manufacture and mixed distributor response retained; modest success is not inflated into runaway hit. Three translated headings match paragraph sequence."
+    },
+    {
+      "entry_id": "wikipedia-72385563",
+      "title": "Atelier Ryza 3: Alchemist of the End & the Secret Key",
+      "revision_id": 1362467793,
+      "revision_url": "https://en.wikipedia.org/w/index.php?oldid=1362467793",
+      "body_sha256": "67a0497196277f106fd3aafdbef177599b84073ff0d69f25bdfafbbda89058d5",
+      "languages_read": [
+        "it",
+        "es",
+        "fr",
+        "de"
+      ],
+      "paragraphs_read": 12,
+      "headings_read": 0,
+      "result": "PASS",
+      "quantity_checks": "Twenty-fourth main game;third/final Secret installment;two previous games;25thanniversary;March23/24 2023;November13 2025;PlayStation4/5 and Switch2 all retained.",
+      "semantic_checks": "English subtitles are not changed into full English dubbing. Japan/Europe/NorthAmerica launch scope remains distinct from Windows all three regions. Updated DX characters/content and TrilogyDeluxePack membership retained. No invented headings; long title/proper names unchanged."
+    }
+  ],
+  "blocking_findings": [],
+  "nonblocking_limits": [
+    "Independent agent language/source-fidelity review, not native-human linguistic signoff or fresh historical primary-source verification.",
+    "First-commercial/first-arcade claims, quantities and current-release statements remain tied to exact English reference revisions.",
+    "No image rights/quality, screenshot/layout or physical PS5 signoff."
+  ],
+  "fixture_receipt": "build/research/wikipedia-locales-reference-12/independent-join-validation.json",
+  "fixture_receipt_sha256": "09bd228322946aea8f4b661b4f2070943b4aa82745d993ace3649942446badaf",
+  "catalog_sha256_observed_snapshot": "126201087d5180c8dfe4ca4c9ce99e24694c194f646a53b5847bbd29e73bd389",
+  "writes": "Only private review fixture/script and this receipt. No authored batch/master/locales/hook/runtime/console writes.",
+  "http_requests": 0,
+  "new_translations_integrated_by_reviewer": 0
+}

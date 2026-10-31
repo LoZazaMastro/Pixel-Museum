@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "publication_status": "visual_validated",
+  "entries": {
+    "daily-08-26": {
+      "image": {
+        "url": "https://images.launchbox-app.com/33c6f023-ffef-4235-be07-ba3acbfa4389.jpg",
+        "source_page": "https://gamesdb.launchbox-app.com/games/details/13761",
+        "recovery_local_source": "build/research/modern-game-cover-visual-qa/critical-options/33c6f023-ffef-4235-be07-ba3acbfa4389.jpg",
+        "width": 1000,
+        "height": 898,
+        "title": "Nintendogs: original game cover",
+        "creator": "Nintendo",
+        "credit": "Nintendo / original box artwork, catalogued by LaunchBox Games Database",
+        "license": "Original publisher copyright retained; historical editorial illustration, not an open licence.",
+        "cover_art": true,
+        "visual_review": "Correct original2005 Nintendogs NintendoDS DachshundAndFriends edition. Replaces unrelated SuperMarioSunshineGameCube box; named breed edition explicit.",
+        "identity_evidence": {
+          "Name": "Nintendogs: Dachshund & Friends",
+          "Platform": "Nintendo DS",
+          "ReleaseDate": "2005-04-21",
+          "WikipediaURL": "https://en.wikipedia.org/wiki/Nintendogs"
+        },
+        "verification": {
+          "sha256": "6a25d2f12f566127e16e60220e1531254727b66efe036b71499d7da1c1ee283f",
+          "native_dimensions": [
+            1000,
+            898
+          ],
+          "no_upscale": true
+        }
+      },
+      "supersedes_preferred_url": "https://images.launchbox-app.com/1d4df6c2-ac30-477f-81b8-4aaa4be90648.jpg"
+    }
+  },
+  "scope": "Nintendogs only: actual2005NintendoDS DachshundAndFriends box, different original URL and subject from rejected SuperMarioSunshine GameCube box. PeaceWalker was already correct and is excluded.",
+  "reviewed_candidate": {
+    "local_path": "build/research/modern-game-cover-visual-qa/nintendogs-original-cover-candidate.json",
+    "sha256": "3c905f74267eb4ced99ad6288913f96b22098a6ea9094c5bc5bc0f7948e766fd"
+  },
+  "independent_review_receipt": "build/research/modern-game-cover-visual-qa/nintendogs-original-cover-root-review.json"
+}

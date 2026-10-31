@@ -1,0 +1,63 @@
+{
+  "status": "PASS",
+  "locale": "fr",
+  "entries": [
+    {
+      "entry_id": "the-game-awards-2024",
+      "source_fields_sha256": "ff69afc6aad2e29af24c981620e0e859760be485b40ac94503375616d474dd3a",
+      "translation_sha256": "9baf930a419065b27ae98e6bc589c93f46c6093c5d26aabf3a17257a21c0e301",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch375/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "9aad1828c3c5b6ef1a58b265728d57f28f4d6dc62b502ee31414c0d73c5ef341"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "category_audit",
+    "actual_receipt": "build/research/catalog-2024-chronological/tga-single-private/independent-category-audit-approval.json",
+    "actual_receipt_sha256": "1baf86bc69f98cba0f5f47773399e1244d4b8fe097d184a4758ed5d1e197ac17",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "category_audit",
+      "index": "build/research/catalog-2024-chronological/tga-single-private/one-private-index.json",
+      "index_sha256": "f10fd76b8dc571ee02e6b9ff6e269ebfd66f66249c388fdee4346420ccb3de97",
+      "scope": "Mechanical identity and pin review only. Fourteen annual English records, fourteen images and all 56 translated records are exact reuse of the admitted 2023 archive. Semantic and visual review is delegated explicitly to the prior independent package approval; no redundant annual research or rereading claimed.",
+      "prior_independent_approval": "build/research/catalog-2023-chronological/tga-single-private/independent-package-audit-approval.json",
+      "prior_independent_approval_sha256": "669c1a7fcd87928d15c22c66c4af45800404c73cea63eb51bdb56f9f3a208a6a",
+      "exact_reused_fields": [
+        "body",
+        "story_headings",
+        "images",
+        "sources",
+        "subtitle",
+        "summary",
+        "preferred_image",
+        "publication_readiness"
+      ],
+      "owner_identity_preserved": true,
+      "owner_date": {
+        "month": 12,
+        "day": 12,
+        "precision": "day",
+        "region": ""
+      },
+      "findings": [],
+      "owners": [
+        {
+          "entry_id": "the-game-awards-2024",
+          "slug": "tga",
+          "source": "build/research/catalog-2024-chronological/tga-single-private/tga-source-private-candidate.json",
+          "source_sha256": "029dc1fd3bbd7d7901b5e0f645d4f758743d7e86c32bb71eafd37f950c8d8768",
+          "target": "build/research/catalog-2024-chronological/tga-single-private/tga-four-language-private-candidate.json",
+          "target_sha256": "d52ce53a1ff0c250c3813f542e2de56766f968c751b4f7f82ee2c08497aca9c3",
+          "contact": "build/research/catalog-2024-chronological/tga-single-private/tga-final-contact.jpg",
+          "contact_sha256": "0eebd0d55553f41d17cf6da6786a19039acf16fc262eec1d4d7d21c5f66711b8",
+          "english_cards": 14,
+          "localized_cards": 56,
+          "images": 14,
+          "tracks": 0
+        }
+      ],
+      "production_writes": false
+    }
+  }
+}

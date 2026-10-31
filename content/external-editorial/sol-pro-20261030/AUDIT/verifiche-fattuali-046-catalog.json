@@ -1,0 +1,785 @@
+{
+  "batch_id": "046-catalog",
+  "status": "completed",
+  "sources": [
+    {
+      "source_id": "046-kirby-date",
+      "url": "https://www.nintendo.com/jp/famicom/software/fmc-kir/index.html",
+      "title": "Kirby’s Adventure — archivio Famicom",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "Scheda ufficiale: uscita Famicom in Giappone il 23 marzo 1993; secondo Kirby e Copy Ability.",
+      "limitation": "Data giapponese, non mondiale. Nessuna nuova descrizione delle singole abilità importata."
+    },
+    {
+      "source_id": "046-kirby-interview",
+      "url": "https://shmuplations.com/kirbysadventure/",
+      "title": "Kirby’s Adventure — 1993 Developer Interview",
+      "publisher": "Intervista agli sviluppatori; traduzione Shmuplations",
+      "accessed_at": "2026-10-30",
+      "scope": "Sakurai spiega la Copy Ability come risposta alla semplicità del primo gioco e ricorda di aver sempre immaginato Kirby rosa; i colleghi avevano altre aspettative.",
+      "limitation": "Consultato il passaggio testuale dell’intervista. Colore riferito alla rappresentazione durante il gioco, non a un presunto primo disegno promozionale a colori."
+    },
+    {
+      "source_id": "046-simcity-maxis1996",
+      "url": "https://www.secinfo.com/drdbh.92Ne.c.htm",
+      "title": "Maxis Inc., annual report 1996, Form 10-K, Exhibit 13.1",
+      "publisher": "Maxis; documento societario riprodotto da SEC Info",
+      "accessed_at": "2026-10-30",
+      "scope": "Il rapporto indica l’uscita iniziale nell’ottobre 1993 e specifica Macintosh in ottobre 1993, DOS in dicembre 1993.",
+      "limitation": "Letto il testo indicizzato della riproduzione del documento; la pagina diretta non era accessibile. Non ricavato un giorno preciso né una regione non indicata dal passaggio."
+    },
+    {
+      "source_id": "046-simcity-maxis1997",
+      "url": "https://www.secinfo.com/dut49.815u.htm",
+      "title": "Maxis Inc., annual report 1997, Form 10-K",
+      "publisher": "Maxis; documento societario riprodotto da SEC Info",
+      "accessed_at": "2026-10-30",
+      "scope": "Conferma ottobre 1993 come uscita iniziale, ma attribuisce il mese al formato DOS.",
+      "limitation": "Il riferimento al DOS diverge dalla distinzione esplicita Macintosh/DOS nel rapporto 1996. Non trasferito questo dettaglio alla release Macintosh. Il resoconto più specifico del 1996 è la base della proposta."
+    },
+    {
+      "source_id": "046-simcity-museum",
+      "url": "https://www.computinghistory.org.uk/det/37882/SimCity-2000/",
+      "title": "SimCity 2000 — esemplare Macintosh nella collezione",
+      "publisher": "Centre for Computing History",
+      "accessed_at": "2026-10-30",
+      "scope": "Catalogazione di un esemplare Macintosh: Maxis, 1993, con identificazione della piattaforma.",
+      "limitation": "Fonte museale di corroborazione dell’anno e del formato; non prova del mese o del giorno."
+    },
+    {
+      "source_id": "046-simcity-ea",
+      "url": "https://careers.ea.com/it/games/simcity/simcity-2000",
+      "title": "SimCity 2000 — scheda Electronic Arts",
+      "publisher": "Electronic Arts",
+      "accessed_at": "2026-10-30",
+      "scope": "Descrizione pertinente della simulazione Maxis, di centrali, strade, ferrovie e servizi; sostituto bibliografico tematico delle fonti estranee.",
+      "limitation": "La scheda attuale indica una versione PC del 1995: questa data non viene scambiata per la prima uscita Macintosh del 1993."
+    },
+    {
+      "source_id": "046-wrong-nier-announcement",
+      "url": "https://www.jp.square-enix.com/company/ja/news/2020/html/fe0eb8bd27885ef6221b33835b7ca7676f528a85.html",
+      "title": "NieR Replicant ver.1.22474487139... — annuncio della data di uscita",
+      "publisher": "Square Enix, 25 settembre 2020",
+      "accessed_at": "2026-10-30",
+      "scope": "Conferma che la fonte ereditata riguarda NieR Replicant e annuncia la data del 22 aprile 2021, non una release di SimCity 2000.",
+      "limitation": "Non usata per riscrivere la storia di SimCity; nessuna deduzione sulle immagini effettivamente collegate alla voce."
+    },
+    {
+      "source_id": "046-wrong-nier-site",
+      "url": "https://www.jp.square-enix.com/nierreplicantv1p2/",
+      "title": "NieR Replicant ver.1.22474487139... — sito ufficiale",
+      "publisher": "Square Enix",
+      "accessed_at": "2026-10-30",
+      "scope": "Identifica anche il secondo URL ereditato come sito di NieR, non di SimCity.",
+      "limitation": "Originale conservato per provenienza. La sostituzione bibliografica è soltanto proposta per l’integrazione."
+    },
+    {
+      "source_id": "046-mutant-manual",
+      "url": "https://www.gamesdatabase.org/Media/SYSTEM/Sega_Genesis/manual/Formated/Mutant_League_Football_-_1993_-_Electronic_Arts.pdf",
+      "title": "Mutant League Football — manuale originale Genesis",
+      "publisher": "Electronic Arts; scansione Games Database",
+      "accessed_at": "2026-10-30",
+      "scope": "Pagine stampate 7 e 24: Single Game, Playoffs, Continue Playoffs e Practice, con esclusione esplicita di una stagione completa. Pagine 26 e 28: perdite nei playoff e forfait; 51–54: Nasty Audibles e palla esplosiva.",
+      "limitation": "PDF scaricato, pagine pertinenti renderizzate e realmente lette. Non confuse queste regole con quelle del successivo Mutant Football League."
+    },
+    {
+      "source_id": "046-ranger-manual",
+      "url": "https://www.sega.jp/genesismini2/assets/manual/pdf/US_Ranger-X.pdf",
+      "title": "Ranger X — manuale originale Genesis",
+      "publisher": "Sega / GAU Entertainment",
+      "accessed_at": "2026-10-30",
+      "scope": "Pagine 8–13: missioni e vedute wireframe, armatura pilotata, temperatura dei propulsori, energia da luce e cielo aperto, Indra a una ruota e scudo separato.",
+      "limitation": "PDF scaricato e pagine pertinenti effettivamente visualizzate. Non aggiunte altre armi o il secondo veicolo fuori dal materiale del lotto."
+    },
+    {
+      "source_id": "046-link-date",
+      "url": "https://www.nintendo.co.jp/n02/dmg/zlj/index.html",
+      "title": "Zelda no Densetsu: Yume o Miru Shima — scheda Game Boy",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "Pagina ufficiale con data numerica 6 giugno 1993.",
+      "limitation": "Il testo giapponese della vecchia pagina ha problemi di codifica nell’estrazione, ma la data numerica è leggibile. Non attribuita alla release mondiale."
+    },
+    {
+      "source_id": "046-link-manual",
+      "url": "https://zelda.pocitac.com/zgbmanual.shtml.htm",
+      "title": "The Legend of Zelda: Link’s Awakening — manuale originale Game Boy",
+      "publisher": "Nintendo, 1993; trascrizione archivistica",
+      "accessed_at": "2026-10-30",
+      "scope": "Riferimento già fornito e controllato nell’INPUT: assegnazione di strumenti ai pulsanti, Roc’s Feather e Power Bracelet, distinto dai remake.",
+      "limitation": "Riutilizzo della verifica documentata nell’INPUT, non nuova consultazione integrale. Qualificata l’assegnazione come equipaggiamento utilizzabile, senza sostenere che qualsiasi chiave o oggetto passivo si possa assegnare."
+    },
+    {
+      "source_id": "046-ultima-controls",
+      "url": "https://www.wiki.ultimacodex.com/wiki/Runes_of_Virtue_walkthrough",
+      "title": "Runes of Virtue walkthrough — controlli e inventario",
+      "publisher": "Codex of Ultima Wisdom contributors",
+      "accessed_at": "2026-10-30",
+      "scope": "Descrive l’assegnazione degli oggetti alle mani A e B, coerente con il confronto già fornito.",
+      "limitation": "Fonte secondaria di controllo del confronto, non prova di influenza diretta su Zelda. Non dichiarata identità di ogni regola fra i giochi."
+    },
+    {
+      "source_id": "046-samurai-date",
+      "url": "https://www.snk-corp.co.jp/official/samuraispirits-portal/samuraispirits/",
+      "title": "Samurai Spirits — scheda storica della serie",
+      "publisher": "SNK",
+      "accessed_at": "2026-10-30",
+      "scope": "Distingue la release arcade MVS del 7 luglio 1993 da quella Neo Geo domestica dell’11 agosto; descrive il peso dei singoli colpi e le armi.",
+      "limitation": "Nuove date delle conversioni non aggiunte alle card."
+    },
+    {
+      "source_id": "046-allstars-date",
+      "url": "https://www.nintendo.co.jp/n02/shvc/4m/index.html",
+      "title": "Super Mario Collection — scheda Super Famicom",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "Data originale giapponese 14 luglio 1993, incompatibile con una formulazione che collochi tutte le uscite nella parte finale dell’anno.",
+      "limitation": "Estrazione con codifica giapponese imperfetta; numeri della data leggibili e corroborati dalla catalogazione RCGS. Non dichiarata lettura di immagini non visualizzate."
+    },
+    {
+      "source_id": "046-allstars-collection",
+      "url": "https://collection.rcgs.jp/page/PACKAGE0001577",
+      "title": "Super Mario Collection — record PACKAGE0001577",
+      "publisher": "Ritsumeikan Center for Game Studies",
+      "accessed_at": "2026-10-30",
+      "scope": "Metadati del pacchetto fisico: data 14 luglio 1993, Super Famicom, codice SHVC-4M.",
+      "limitation": "Usati i metadati del catalogo, non la descrizione riutilizzata da Wikipedia per ricavare nuove date regionali."
+    },
+    {
+      "source_id": "046-allstars-switch",
+      "url": "https://www.nintendo.com/jp/topics/article/1aae2cbf-91ab-42ad-ad06-f68d84b894db",
+      "title": "Super Mario Collection e il trentacinquesimo anniversario",
+      "publisher": "Nintendo, 2020",
+      "accessed_at": "2026-10-30",
+      "scope": "La comunicazione conferma che la raccolta è già disponibile su Super Famicom Nintendo Switch Online, nome storico del servizio nel 2020.",
+      "limitation": "Articolo legato anche a un evento Tetris: la data dell’evento non viene usata come release della raccolta."
+    }
+  ],
+  "decisions": [
+    {
+      "target_id": "wikipedia-772871",
+      "problem": "Primo Kirby a colori poteva includere erroneamente anche confezioni e illustrazioni precedenti.",
+      "conclusion": "Precisata la prima rappresentazione a colori durante il gioco; mantenuto il ricordo di Sakurai sul rosa e la sorpresa dei colleghi.",
+      "status": "resolved",
+      "source_ids": [
+        "046-kirby-interview"
+      ],
+      "text_applied": {
+        "languages": [
+          "en",
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "cards": [
+          "main:1"
+        ]
+      }
+    },
+    {
+      "target_id": "wikipedia-772871",
+      "problem": "La data del 23 marzo 1993 mancava della regione.",
+      "conclusion": "Confermata come uscita giapponese Famicom, senza attribuirla al mondo intero.",
+      "status": "resolved",
+      "source_ids": [
+        "046-kirby-date"
+      ],
+      "text_applied": {
+        "languages": [
+          "en",
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "cards": []
+      }
+    },
+    {
+      "target_id": "daily-04-22",
+      "problem": "Il 22 aprile è una collocazione tematica Earth Day e non la release di SimCity 2000.",
+      "conclusion": "Adottata la prima uscita Macintosh nell’ottobre 1993 documentata dal rapporto Maxis 1996. Precisione mensile, nessun giorno inventato. Le differenze fra fonti riguardanti DOS non sono trasferite al Macintosh.",
+      "status": "resolved",
+      "source_ids": [
+        "046-simcity-maxis1996",
+        "046-simcity-maxis1997",
+        "046-simcity-museum"
+      ],
+      "text_applied": {
+        "languages": [
+          "en",
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "cards": [
+          "main:0"
+        ]
+      }
+    },
+    {
+      "target_id": "daily-04-22",
+      "problem": "Due fonti bibliografiche ereditate riguardano un altro gioco.",
+      "conclusion": "Confermata l’identità NieR Replicant dei due URL; proposti riferimenti pertinenti a SimCity 2000. Le associazioni media restano una verifica di integrazione poiché non sono esposte in questo INPUT.",
+      "status": "resolved",
+      "source_ids": [
+        "046-wrong-nier-announcement",
+        "046-wrong-nier-site",
+        "046-simcity-ea"
+      ],
+      "text_applied": {
+        "languages": [
+          "en",
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "cards": []
+      }
+    },
+    {
+      "target_id": "console-gap-mutant-league-football",
+      "problem": "L’INPUT attribuiva a Mutant League Football una modalità stagione.",
+      "conclusion": "Il manuale esclude una stagione completa e descrive partite singole e playoff. Corretto il testo nelle cinque lingue, preservando forfait e conseguenze delle perdite.",
+      "status": "resolved",
+      "source_ids": [
+        "046-mutant-manual"
+      ],
+      "text_applied": {
+        "languages": [
+          "en",
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "cards": [
+          "main:2"
+        ]
+      }
+    },
+    {
+      "target_id": "console-gap-ranger-x",
+      "problem": "Il testo descriveva genericamente una macchina volante e una motocicletta senza precisarne la forma.",
+      "conclusion": "Resi più precisi i due mezzi secondo il manuale: armatura volante e veicolo Indra a una ruota, con scudo separato quando occupato. Conservati calore, ricarica e fucile a impulsi.",
+      "status": "resolved",
+      "source_ids": [
+        "046-ranger-manual"
+      ],
+      "text_applied": {
+        "languages": [
+          "en",
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "cards": [
+          "summary",
+          "main:0",
+          "main:1",
+          "main:2"
+        ]
+      }
+    },
+    {
+      "target_id": "workbook-06-06-the-legend-of-zelda-link-s-awakening",
+      "problem": "Il 6 giugno 1993 non aveva una regione; qualsiasi oggetto assegnabile poteva includere anche elementi passivi.",
+      "conclusion": "Data riferita al Giappone e assegnazione riferita all’equipaggiamento utilizzabile. Confronto con Ultima limitato al principio dei due pulsanti, senza affermare influenza diretta o identità completa dei controlli.",
+      "status": "resolved",
+      "source_ids": [
+        "046-link-date",
+        "046-link-manual",
+        "046-ultima-controls"
+      ],
+      "text_applied": {
+        "languages": [
+          "en",
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "cards": [
+          "main:3",
+          "main:5"
+        ]
+      }
+    },
+    {
+      "target_id": "workbook-06-06-the-legend-of-zelda-link-s-awakening",
+      "problem": "Ocarina of Time era definito il successivo gioco Zelda pubblicato, formulazione troppo ampia rispetto alle uscite intermedie e ai rami della serie.",
+      "conclusion": "Conservato il ruolo centrale delle melodie in Ocarina of Time senza farne il successivo titolo di qualsiasi ramo. Il primato del salto è precisato come comando nei Zelda con visuale dall’alto, non come assenza di qualsiasi salto automatico nei precedenti.",
+      "status": "resolved",
+      "source_ids": [],
+      "text_applied": {
+        "languages": [
+          "en",
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "cards": [
+          "main:5",
+          "main:6"
+        ]
+      }
+    },
+    {
+      "target_id": "wikipedia-8090",
+      "problem": "La rinuncia alla selezione dei personaggi poteva essere letta come impossibilità di controllare il trio.",
+      "conclusion": "Precisato che i tre protagonisti sono prestabiliti, mentre in Maniac Mansion il gruppo poteva essere scelto. Conservati i tre nomi, i due responsabili, SCUMM e tutte le piattaforme delle riedizioni.",
+      "status": "resolved",
+      "source_ids": [],
+      "text_applied": {
+        "languages": [
+          "en",
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "cards": [
+          "main:1"
+        ]
+      }
+    },
+    {
+      "target_id": "console-gap-samurai-shodown-1993-video-game",
+      "problem": "Occorre distinguere arcade e cartuccia domestica nel 1993.",
+      "conclusion": "SNK conferma il 7 luglio per MVS; mantenuta la data arcade già correttamente presente.",
+      "status": "resolved",
+      "source_ids": [
+        "046-samurai-date"
+      ],
+      "text_applied": {
+        "languages": [
+          "en",
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "cards": [
+          "main:0"
+        ]
+      }
+    },
+    {
+      "target_id": "wikipedia-33564393",
+      "problem": "Uscita mondiale nella parte finale del 1993 non descrive correttamente la release giapponese di luglio.",
+      "conclusion": "Sostituita con arrivo nei tre mercati nel corso del 1993; la data giapponese è documentata nella proposta di metadati.",
+      "status": "resolved",
+      "source_ids": [
+        "046-allstars-date",
+        "046-allstars-collection"
+      ],
+      "text_applied": {
+        "languages": [
+          "en",
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "cards": [
+          "main:1"
+        ]
+      }
+    },
+    {
+      "target_id": "wikipedia-33564393",
+      "problem": "Nintendo Classics era usato come nome storico del servizio nel 2020.",
+      "conclusion": "Usato Nintendo Switch Online per la riedizione del trentacinquesimo anniversario. Per Kirby, privo di data del catalogo nella card, precisato che Nintendo Classics è il nome attuale.",
+      "status": "resolved",
+      "source_ids": [
+        "046-allstars-switch"
+      ],
+      "text_applied": {
+        "languages": [
+          "en",
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "cards": [
+          "main:2"
+        ]
+      }
+    }
+  ],
+  "metadata_proposals": [
+    {
+      "target_id": "wikipedia-772871",
+      "field": "release_region",
+      "proposed": {
+        "year": 1993,
+        "month": 3,
+        "day": 23,
+        "precision": "day",
+        "region": "JP",
+        "platform": "Famicom"
+      },
+      "reason": "Scheda ufficiale Nintendo.",
+      "source_ids": [
+        "046-kirby-date"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "daily-04-22",
+      "field": "release_date_and_semantics",
+      "proposed": {
+        "year": 1993,
+        "month": 10,
+        "precision": "month",
+        "region": "not specified in primary passage",
+        "platform": "Macintosh",
+        "event_semantics": "release"
+      },
+      "reason": "Sostituire la collocazione tematica Earth Day del 22 aprile con la disponibilità iniziale documentata da Maxis. Non inserire un giorno convenzionale.",
+      "source_ids": [
+        "046-simcity-maxis1996",
+        "046-simcity-maxis1997"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "daily-04-22",
+      "field": "bibliography",
+      "proposed": {
+        "retain_original_provenance": true,
+        "unrelated_source_ids": [
+          "046-wrong-nier-announcement",
+          "046-wrong-nier-site"
+        ],
+        "relevant_source_ids": [
+          "046-simcity-maxis1996",
+          "046-simcity-museum",
+          "046-simcity-ea"
+        ]
+      },
+      "reason": "I due URL Square Enix documentano NieR Replicant; mantenere la traccia storica ma usare fonti di SimCity 2000 nell’integrazione della voce.",
+      "source_ids": [
+        "046-wrong-nier-announcement",
+        "046-wrong-nier-site",
+        "046-simcity-ea"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "workbook-06-06-the-legend-of-zelda-link-s-awakening",
+      "field": "release_region",
+      "proposed": {
+        "year": 1993,
+        "month": 6,
+        "day": 6,
+        "precision": "day",
+        "region": "JP",
+        "platform": "Game Boy"
+      },
+      "reason": "Scheda Nintendo dell’originale monocromatico; distinta da DX e dal remake Switch.",
+      "source_ids": [
+        "046-link-date"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "wikipedia-33564393",
+      "field": "release_region",
+      "proposed": {
+        "year": 1993,
+        "month": 7,
+        "day": 14,
+        "precision": "day",
+        "region": "JP",
+        "platform": "Super Famicom",
+        "regional_title": "Super Mario Collection"
+      },
+      "reason": "Scheda Nintendo e catalogazione del pacchetto fisico.",
+      "source_ids": [
+        "046-allstars-date",
+        "046-allstars-collection"
+      ],
+      "applied_to_catalog": false
+    }
+  ],
+  "expansion_assessments": [
+    {
+      "target_id": "wikipedia-772871",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Secondo Kirby e introduzione della Copy Ability."
+    },
+    {
+      "target_id": "daily-04-22",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 1,
+      "rationale": "Simulazione urbana importante, descritta in quattro card."
+    },
+    {
+      "target_id": "console-gap-mutant-league-football",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Titolo significativo per l’incontro fra simulazione sportiva e parodia su Genesis."
+    },
+    {
+      "target_id": "console-gap-ranger-x",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Titolo di rilievo del catalogo Mega Drive per controlli e sistemi intrecciati."
+    },
+    {
+      "target_id": "console-gap-the-terminator-sega-cd-video-game",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Adattamento significativo per Sega CD, in particolare nell’uso della musica registrata."
+    },
+    {
+      "target_id": "workbook-06-06-the-legend-of-zelda-link-s-awakening",
+      "main_cards": 7,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 0,
+      "rationale": "Link’s Awakening dispone già di sette card principali, senza feature separate: soglia soddisfatta."
+    },
+    {
+      "target_id": "lufia-the-fortress-of-doom-1993",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Primo Lufia, importante per la struttura narrativa ripresa nel seguito."
+    },
+    {
+      "target_id": "wikipedia-8090",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Avventura importante di LucasArts, raccontata in tre card."
+    },
+    {
+      "target_id": "console-gap-samurai-shodown-1993-video-game",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Primo Samurai Shodown e fondazione dell’identità della serie."
+    },
+    {
+      "target_id": "wikipedia-33564393",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Raccolta importante per la storia dei remake Nintendo."
+    }
+  ],
+  "editorial_review": {
+    "english_first": true,
+    "languages": [
+      "en",
+      "it",
+      "fr",
+      "de",
+      "es"
+    ],
+    "entry_count": 10,
+    "main_card_count_per_language": 35,
+    "feature_card_count_per_language": 0,
+    "card_count_per_language": 35,
+    "english_summary_word_counts": [
+      41,
+      39,
+      38,
+      37,
+      41,
+      40,
+      41,
+      39,
+      36,
+      41
+    ],
+    "checks": [
+      "Inglese completo salvato prima degli adattamenti; rilette tutte le 35 card nelle cinque lingue. Sommari inglesi fra 36 e 41 parole.",
+      "Preservati ID, ordine, titoli propri, nomi, attribuzioni e tutti i contenuti autonomi. Titoli specifici per ciascuna card e paragrafi brevi nelle card più lunghe.",
+      "Controllati secondo Kirby, Game Boy 1992, remake 2002, multiplayer e tutte le riedizioni citate.",
+      "Controllate energia, acqua, traffico, valore del suolo e inquinamento in SimCity 2000, senza introdurre nuove regole della simulazione.",
+      "Verificate sui manuali le modalità di Mutant League Football e i sistemi di Ranger X; PDF effettivamente scaricati e pagine pertinenti visualizzate.",
+      "Conservati dieci livelli di The Terminator, primi quattro nel 2029, missione nel 1984, Sarah Connor, Skynet, Tallarico, Fiedel, QSound e contributi di altri musicisti.",
+      "Link’s Awakening mantiene sette card, attribuzioni a Iwata, Tezuka, Morita, Nakago e Aonuma, due kit, Koizumi e Tanabe, Twin Peaks, anno e mezzo, venti conchiglie, Ultima e THIEF.",
+      "Conservati quattro Sinistrals, Maxim, Lufia, Aguro, Jerin, Taito e le regole sui bersagli già sconfitti.",
+      "Day of the Tentacle mantiene tre protagonisti, due responsabili, Maniac Mansion 1987, ottavo SCUMM, uscite 2016 e 2020 e tutte le piattaforme.",
+      "Super Mario All-Stars mantiene quattro giochi e rispettivi anni, passaggio 8/16 bit, Super Mario World 1990 e 1994, 10,55 milioni, 2,24 milioni, 2015, 2011 e anniversari 25/35. Attribuzione a Famitsu conservata.",
+      "Nessuna biografia autonoma da collegare a una nascita. Date di release distinte da collocazioni tematiche, annunci e pubblicazioni dei documenti.",
+      "INPUT, TEMPLATE, fonti originali, licenze, URL, crediti, titoli musicali e associazioni media invariati. Nessun HTML o Markdown nei campi."
+    ],
+    "limits": "Ricerca mirata, non verifica indipendente di ogni fatto. Per SimCity 2000 il mese Macintosh è documentato da Maxis; il diverso riepilogo DOS del rapporto 1997 è conservato come limite di quella specifica attribuzione, senza alterare la proposta Macintosh. Le etichette media ereditate richiedono controllo di integrazione. Nove ampliamenti richiedono 17 card nuove con materiale ulteriore; non sono stati prodotti contenuti ripetitivi per raggiungere la quota.",
+    "root_review": {
+      "reviewed_at": "2026-10-30T02:03:47.693791+00:00",
+      "checks": [
+        "Ripristinata esplicitamente la natura di gioco di piattaforme nell’incipit Kirby, già nell’INPUT.",
+        "Link’s Awakening main:6 abbreviata senza perdita: venti conchiglie, spada a salute piena, sequenza di scambi, A/B, pesca, ocarina e rapporto con Ocarina of Time presenti.",
+        "Date SimCity documentate, XVIII secolo/18./Settecento equivalenti. Anniversari venticinquesimo e trentacinquesimo di All-Stars conservati in lettere; vendite hanno separatori locali."
+      ],
+      "scope": "Controllo mirato degli avvisi automatici e dei campi nominati, non attestazione universale di tutti i fatti.",
+      "field_changes": [
+        {
+          "target_id": "wikipedia-772871",
+          "card_id": "main:0",
+          "language": "en",
+          "field": "text",
+          "before": "HAL Laboratory developed Kirby's Adventure for the NES, with Nintendo publishing it in 1993. It follows the Game Boy's Kirby's Dream Land from 1992 and introduces the Copy Ability: swallowing certain enemies gives Kirby new powers. His journey takes him across Dream Land to rebuild the Star Rod, which King Dedede has broken into pieces and distributed among his followers.",
+          "after": "Kirby’s Adventure is HAL Laboratory’s NES platform game, published by Nintendo in 1993. It follows the Game Boy's Kirby's Dream Land from 1992 and introduces the Copy Ability: swallowing certain enemies gives Kirby new powers. His journey takes him across Dream Land to rebuild the Star Rod, which King Dedede has broken into pieces and distributed among his followers."
+        },
+        {
+          "target_id": "wikipedia-772871",
+          "card_id": "main:0",
+          "language": "it",
+          "field": "text",
+          "before": "HAL Laboratory sviluppò Kirby's Adventure per NES e Nintendo lo pubblicò nel 1993. Seguito di Kirby's Dream Land, uscito su Game Boy nel 1992, introduce la Copy Ability: inghiottendo determinati nemici, Kirby ne ottiene i poteri. Il viaggio lo porta attraverso Dream Land per ricomporre lo Star Rod, spezzato da King Dedede e distribuito ai suoi seguaci.",
+          "after": "Kirby’s Adventure è il gioco di piattaforme sviluppato da HAL Laboratory per NES e pubblicato da Nintendo nel 1993. Seguito di Kirby's Dream Land, uscito su Game Boy nel 1992, introduce la Copy Ability: inghiottendo determinati nemici, Kirby ne ottiene i poteri. Il viaggio lo porta attraverso Dream Land per ricomporre lo Star Rod, spezzato da King Dedede e distribuito ai suoi seguaci."
+        },
+        {
+          "target_id": "wikipedia-772871",
+          "card_id": "main:0",
+          "language": "fr",
+          "field": "text",
+          "before": "HAL Laboratory développe Kirby's Adventure sur NES et Nintendo le publie en 1993. Il fait suite à Kirby's Dream Land, sorti sur Game Boy en 1992, et introduit la Copy Ability : avaler certains ennemis donne de nouveaux pouvoirs à Kirby. Son voyage à travers Dream Land doit lui permettre de reconstituer le Star Rod, brisé par King Dedede, qui en a distribué les morceaux à ses fidèles.",
+          "after": "Kirby’s Adventure est un jeu de plates-formes développé par HAL Laboratory sur NES et publié par Nintendo en 1993. Il fait suite à Kirby's Dream Land, sorti sur Game Boy en 1992, et introduit la Copy Ability : avaler certains ennemis donne de nouveaux pouvoirs à Kirby. Son voyage à travers Dream Land doit lui permettre de reconstituer le Star Rod, brisé par King Dedede, qui en a distribué les morceaux à ses fidèles."
+        },
+        {
+          "target_id": "wikipedia-772871",
+          "card_id": "main:0",
+          "language": "de",
+          "field": "text",
+          "before": "HAL Laboratory entwickelte Kirby's Adventure für das NES; Nintendo veröffentlichte es 1993. Es folgt auf Kirby's Dream Land für den Game Boy von 1992 und führt die Copy Ability ein: Verschluckt Kirby bestimmte Gegner, erhält er neue Kräfte. Auf seiner Reise durch Dream Land soll er den Star Rod wieder zusammensetzen, den King Dedede zerbrochen und an seine Gefolgsleute verteilt hat.",
+          "after": "Kirby’s Adventure ist ein von HAL Laboratory entwickeltes Plattformspiel für das NES, das Nintendo 1993 veröffentlichte. Es folgt auf Kirby's Dream Land für den Game Boy von 1992 und führt die Copy Ability ein: Verschluckt Kirby bestimmte Gegner, erhält er neue Kräfte. Auf seiner Reise durch Dream Land soll er den Star Rod wieder zusammensetzen, den King Dedede zerbrochen und an seine Gefolgsleute verteilt hat."
+        },
+        {
+          "target_id": "wikipedia-772871",
+          "card_id": "main:0",
+          "language": "es",
+          "field": "text",
+          "before": "HAL Laboratory desarrolló Kirby's Adventure para NES y Nintendo lo publicó en 1993. Es la continuación de Kirby's Dream Land, aparecido en Game Boy en 1992, e introduce la Copy Ability: tragarse a determinados enemigos proporciona nuevos poderes a Kirby. Su viaje por Dream Land busca reconstruir el Star Rod, que King Dedede ha roto en pedazos y repartido entre sus seguidores.",
+          "after": "Kirby’s Adventure es el juego de plataformas que HAL Laboratory desarrolló para NES y Nintendo publicó en 1993. Es la continuación de Kirby's Dream Land, aparecido en Game Boy en 1992, e introduce la Copy Ability: tragarse a determinados enemigos proporciona nuevos poderes a Kirby. Su viaje por Dream Land busca reconstruir el Star Rod, que King Dedede ha roto en pedazos y repartido entre sus seguidores."
+        }
+      ]
+    }
+  },
+  "validation": {
+    "valid": true,
+    "batch_id": "046-catalog",
+    "completed": true,
+    "entry_count": 10,
+    "card_count_per_language": 35,
+    "language_count": 5,
+    "translated_card_count": 175,
+    "entry_card_counts": {
+      "wikipedia-772871": 3,
+      "daily-04-22": 4,
+      "console-gap-mutant-league-football": 3,
+      "console-gap-ranger-x": 3,
+      "console-gap-the-terminator-sega-cd-video-game": 3,
+      "workbook-06-06-the-legend-of-zelda-link-s-awakening": 7,
+      "lufia-the-fortress-of-doom-1993": 3,
+      "wikipedia-8090": 3,
+      "console-gap-samurai-shodown-1993-video-game": 3,
+      "wikipedia-33564393": 3
+    },
+    "issue_counts": {
+      "wikipedia-772871": 1,
+      "daily-04-22": 2,
+      "console-gap-mutant-league-football": 1,
+      "console-gap-ranger-x": 1,
+      "console-gap-the-terminator-sega-cd-video-game": 1,
+      "workbook-06-06-the-legend-of-zelda-link-s-awakening": 1,
+      "lufia-the-fortress-of-doom-1993": 1,
+      "wikipedia-8090": 1,
+      "console-gap-samurai-shodown-1993-video-game": 1,
+      "wikipedia-33564393": 1
+    },
+    "summary_checks": [
+      {
+        "entry_id": "wikipedia-772871",
+        "feature_id": null,
+        "english_summary_words": 41
+      },
+      {
+        "entry_id": "daily-04-22",
+        "feature_id": null,
+        "english_summary_words": 39
+      },
+      {
+        "entry_id": "console-gap-mutant-league-football",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "console-gap-ranger-x",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "console-gap-the-terminator-sega-cd-video-game",
+        "feature_id": null,
+        "english_summary_words": 41
+      },
+      {
+        "entry_id": "workbook-06-06-the-legend-of-zelda-link-s-awakening",
+        "feature_id": null,
+        "english_summary_words": 40
+      },
+      {
+        "entry_id": "lufia-the-fortress-of-doom-1993",
+        "feature_id": null,
+        "english_summary_words": 41
+      },
+      {
+        "entry_id": "wikipedia-8090",
+        "feature_id": null,
+        "english_summary_words": 39
+      },
+      {
+        "entry_id": "console-gap-samurai-shodown-1993-video-game",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "wikipedia-33564393",
+        "feature_id": null,
+        "english_summary_words": 41
+      }
+    ],
+    "editorial_review": [],
+    "failures": []
+  },
+  "output_sha256": "2cda906c63ca648a3c0c67bae24f3c35deeaa7151ca0da54a56202a129498867"
+}

@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "reviewed": "2026-10-21",
+  "status": "implementation_and_review_prepared_not_assembled",
+  "source_original_playhub_sha256_verified": "49d7f954896f415b062367393d297e851fd43056ae56618d3c8e0bc58d5e9a2c",
+  "catalog_sha256_snapshot": "959060a6290ec1990226c4ca3ce5a240b7e1a4385fb380501839f10e19208d6e",
+  "file_sha256": {
+    "expansion/calendar-identity-corrections-02.json": "18a3ddcc070b33d1c5c0b75411f99c9c81750c3449c5565e56ff635e54ff6d88",
+    "expansion/integrate_calendar_identities.py": "9761079a89a2352cee1fd4f55488fb9d2088efc3af98d8331b67ad2578e2f8ce",
+    "expansion/check_calendar_identities.py": "3f6f0c215954c34b70f5a5408231c145fe5f9b782b7d9860ae82fb110e9a6fdf",
+    "editorial/playhub-identity-review-queue.json": "81e370586504317ae2b7ba6059b2838d973d3e63b4f22c5fa92edf7091c69a57"
+  },
+  "tests": {
+    "groups_passed": 5,
+    "all365_exact_daily_prose_and_headings": true,
+    "all1656_source_sections_preserved": true,
+    "canonical_aliases333_and_standalone32": true,
+    "all8_existing_locale_body_and_heading_values_preserved": true,
+    "allowed_generated_locale_diffs": "Two daily titles and two canonical alias targets; all other original values unchanged. English has no original override for these two dates.",
+    "stale_or_unreviewed_change_rejected_atomically": true,
+    "media_existing_job_ids_preserved": true,
+    "media_new_jobs": 1,
+    "media_previous_sections_and_briefs_archived": true,
+    "media_work_units_no_duplicates": true,
+    "media_migration_idempotent": true
+  },
+  "decisions": {
+    "daily-05-21": "Never Alone2014 / never-alone; May21 commemoration scheduling, publisher PC launch November18 separate",
+    "daily-08-30": "Street Fighter1987 / wikipedia-2829113; metadata exact release day unverified and year-only",
+    "workbook-05-21-senua-s-saga-hellblade-ii": "Opaque ID retained for actual Hellblade II2024, two complete exact Wiki paragraphs; first paragraph omitted for century conflict",
+    "workbook-08-30-astral-chain": "Opaque ID retained for actual Astral Chain2019, three complete exact Wiki paragraphs"
+  },
+  "media_and_publication_signoff": false,
+  "assembly_executed_by_review_agent": false,
+  "package_or_console_written": false
+}

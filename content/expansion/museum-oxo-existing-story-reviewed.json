@@ -1,0 +1,357 @@
+{
+  "publication_status": "independently_reviewed",
+  "extra_sources": [
+    {
+      "path": "build/research/chronoblock-bertie-nimrod-oxo/edsac-cambridge-primary-gallery.html",
+      "sha256": "02561d391eba2bb9e55c6d83c4d4bc6ded09db79953df2dcb93f88171d6ffca0"
+    },
+    {
+      "path": "build/research/chronoblock-bertie-nimrod-oxo/edsac-original-operator-display.jpg",
+      "sha256": "435c31b58b4bd293734ac9456af5ec429403be90413b5114786aee232eaf7b6e"
+    },
+    {
+      "path": "build/research/oxo-original-edsac-research-photo/edsac-original-wilkes-renwick.jpg",
+      "sha256": "80e830626edeba2dcd6478a95539b2568b18dc655e73022293c2c65705dbc66b"
+    }
+  ],
+  "rows": [
+    {
+      "entry_id": "oxo",
+      "old_entry": {
+        "id": "oxo",
+        "year": 1952,
+        "date": {
+          "month": 0,
+          "day": 0,
+          "precision": "year",
+          "region": ""
+        },
+        "kind": "game",
+        "title": "OXO",
+        "subtitle": "A telephone dial becomes a game controller",
+        "summary": "Sandy Douglas put noughts and crosses on EDSAC, making a familiar contest part of life inside a computing laboratory.",
+        "body": [
+          "Alexander 'Sandy' Douglas was a Cambridge PhD student when he made a noughts-and-crosses program for EDSAC, usually dated to 1952. The player entered moves with a rotary telephone dial. A small cathode-ray display showed the board, and the player could choose whether to move first or let the machine begin.",
+          "The setting shaped the audience. EDSAC was a research computer, so this was not a product that people could buy and take home. Few people outside Cambridge encountered the program. Its significance lies partly in that small scale: a laboratory machine could become something a person played against, with an input device, a visible position and a response to each decision.",
+          "The surviving EDSAC simulator and its documentation make that interaction approachable today. They also remind us to distinguish an original program from a later reconstruction. OXO is an important early graphical computer game; its position among other beginnings depends on whether we mean a stored program, an electronic display, moving images or public access."
+        ],
+        "era_id": "origins",
+        "tags": [
+          "United Kingdom",
+          "Sandy Douglas",
+          "EDSAC",
+          "human-computer interaction"
+        ],
+        "related_ids": [
+          "bertie-the-brain",
+          "nimrod",
+          "tennis-for-two",
+          "spacewar"
+        ],
+        "layout": "technical",
+        "images": [
+          {
+            "url": "https://www.cl.cam.ac.uk/relics/jpegs/edsac99.33.jpg",
+            "title": "OXO - EDSAC I operator console (exhibit cover)",
+            "caption": "EDSAC I control desk with E. Page. Historical hardware context for OXO; the displayed signals are not the game.",
+            "source_page": "https://www.cl.cam.ac.uk/relics/archive_photos.html",
+            "creator": "Department of Computer Science and Technology, University of Cambridge",
+            "credit": "Copyright Department of Computer Science and Technology, University of Cambridge. Reproduced by permission.",
+            "license": "CC BY 2.0",
+            "license_url": "https://creativecommons.org/licenses/by/2.0/",
+            "width": 838,
+            "height": 633,
+            "recovery_local_source": "build/research/image-quality/final-covers/edsac-cambridge-control.jpg",
+            "supersedes_urls": [
+              "https://upload.wikimedia.org/wikipedia/commons/2/22/EDSAC_%2819%29.jpg"
+            ],
+            "verification": {
+              "sha256": "63ad39364b35b0960dc557ca3724e23a102e1465482f190a1c454b9b08b4382e",
+              "native_dimensions": [
+                838,
+                633
+              ],
+              "context_review": "Actual archive photograph visually reviewed against Cambridge caption: EDSAC I control desk, E.Page. No invented exposure year or claim of OXO running.",
+              "quality_limitation": "Native historical scan838x633, sharper original than previous640x450. No 4K-source claim or artificial enlargement."
+            }
+          },
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/EDSAC_%2812%29.jpg",
+            "source_page": "https://commons.wikimedia.org/wiki/File:EDSAC_(12).jpg",
+            "title": "EDSAC in the Cambridge laboratory",
+            "caption": "Maurice Wilkes and Bill Renwick with the original EDSAC. The research computer is shown as laboratory hardware; this photograph does not show OXO running.",
+            "creator": "Computer Laboratory, University of Cambridge",
+            "credit": "Computer Laboratory, University of Cambridge / Wikimedia Commons / CC BY 2.0",
+            "license": "CC BY 2.0",
+            "license_url": "https://creativecommons.org/licenses/by/2.0/",
+            "width": 1878,
+            "height": 1511,
+            "story_paragraph": 1,
+            "recovery_local_source": "build/research/oxo-original-edsac-research-photo/edsac-original-wilkes-renwick.jpg",
+            "verification": {
+              "sha256": "80e830626edeba2dcd6478a95539b2568b18dc655e73022293c2c65705dbc66b",
+              "native_dimensions": [
+                1878,
+                1511
+              ],
+              "visual_review": "Full actual original viewed; period laboratory installation with Wilkes/Renwick. Not EDSACII or modern replica. No invented exposuredate or game-running claim.",
+              "quality_limitation": "Actual1878x1511 historical photographic scan; no enlargement, not4Ksource."
+            }
+          }
+        ],
+        "videos": [],
+        "models": [],
+        "sources": [
+          {
+            "title": "Alexander Douglas writes OXO for EDSAC",
+            "url": "https://www.computerhistory.org/timeline/1952/",
+            "publisher": "Computer History Museum"
+          },
+          {
+            "title": "A Tutorial Guide to the EDSAC Simulator",
+            "url": "https://www.dcs.warwick.ac.uk/~edsac/Software/EdsacTG.pdf",
+            "publisher": "Martin Campbell-Kelly; EDSAC Replica Project, The National Museum of Computing"
+          },
+          {
+            "title": "EDSAC",
+            "url": "https://www.tnmoc.org/edsac",
+            "publisher": "The National Museum of Computing"
+          }
+        ],
+        "featured": false,
+        "factual_note": "The simulator guide describes the program as developed about 1952; the year is conventional, not an exact day. Few outside Cambridge played it. Do not call Douglas's entire thesis a video-game thesis or imply a direct commercial lineage. Images still require a rights-cleared selection.",
+        "editorial_mode": "curated_story",
+        "editorial_credit": "Original exhibition text for Pixel Museum.",
+        "story_headings": [
+          "A telephone dial meets a computer",
+          "A game inside a research laboratory",
+          "What a reconstruction can show us"
+        ],
+        "heading_provenance": {
+          "origin": "Pixel Museum editorial headings",
+          "source_paragraph_hashes": [
+            "f38992417577bfa9d61756ff130f0cbbf4ce7df58cc942795e10fbb25f939570",
+            "7f0337a2eca3602cc53382e54040c6dec5b1b7807cd0462f985d364671adeb46",
+            "2c4ef9f0312b29ad28958d6d30cfedbd86ab9a231c52ea7c91e2f8c2113c3ad8"
+          ],
+          "body_unchanged": true,
+          "historical_fact_check": "pending"
+        },
+        "editorial_features": [
+          {
+            "id": "feature-oxo-research",
+            "title": "A telephone dial becomes a game control",
+            "summary": "Douglas adapted EDSAC’s controls for a familiar exchange of moves.",
+            "body": [
+              "At Cambridge around 1952, Alexander Douglas used EDSAC to play noughts and crosses. A rotary telephone dial supplied the player’s choices, while a small cathode-ray display showed the board. The Computer History Museum describes a version that allowed either the person or the computer to make the opening move. There was no domestic console to unpack and no arcade cabinet waiting for a coin. The encounter took place around a research machine. A familiar paper game made the exchange between an instruction, a calculation and a visible answer easy to recognize.",
+              "EDSAC had been built to serve Cambridge researchers. Maurice Wilkes led the project, Bill Renwick directed construction, and David Wheeler contributed methods that helped people use it. The National Museum of Computing describes a practical service, rather than a machine reserved for specialists. Douglas’s game sat inside that larger undertaking. Before the screen could become a board, other people had designed an environment in which a program could be entered, run and tested. The apparently small interaction depended on that shared work.",
+              "The replica project’s simulator guide explains that EDSAC’s monitor tubes could reveal the contents of parts of its memory. They were working instruments, not screens originally built around entertainment. The same guide opens with Douglas’s game and tells a present-day user to select OXO and enter moves through the simulated dial. That pairing makes the adaptation tangible. What looks like a minimal board is also a different use for an existing display. The simulator preserves the awkwardness of the interface rather than replacing it with the controls of a modern game.",
+              "The museum’s reconstruction project aims to reproduce EDSAC as it stood in 1951, when it entered everyday service. The original computer has not survived intact. A working reconstruction can make timing, maintenance and operation understandable, but it also embodies later research and decisions. When we show Douglas’s game today, the caption needs to identify that setting. The historical program, its simulated or reconstructed machine and the player’s present encounter are related layers of evidence. Keeping them separate makes the demonstration more informative, rather than less impressive."
+            ],
+            "story_headings": [
+              "Choosing a square",
+              "A shared research machine",
+              "Repurposing the display",
+              "Dating a reconstruction"
+            ],
+            "images": [],
+            "sources": [
+              {
+                "id": "oxo52",
+                "title": "Alexander Douglas writes OXO for EDSAC",
+                "url": "https://www.computerhistory.org/timeline/1952/",
+                "publisher": "Computer History Museum",
+                "source_type": "institutional_object_history",
+                "locator": "OXO section; rotary dial, 35 × 15 dot CRT and limited Cambridge audience",
+                "checked": "2026-10-20",
+                "rights": "Bibliographic reference; source text and images retain their own rights. Card prose is original and contains no direct quotations. Image permissions require separate review.",
+                "story_paragraphs": [
+                  0
+                ]
+              },
+              {
+                "id": "edsacmuseum",
+                "title": "EDSAC Replica Project",
+                "url": "https://www.tnmoc.org/edsac",
+                "publisher": "The National Museum of Computing",
+                "source_type": "primary_restoration_project_history",
+                "locator": "History:Wilkes, Renwick, Wheeler; practical computing service; reconstruction objective",
+                "checked": "2026-10-20",
+                "rights": "Bibliographic reference; source text and images retain their own rights. Card prose is original and contains no direct quotations. Image permissions require separate review.",
+                "story_paragraphs": [
+                  1,
+                  3
+                ]
+              },
+              {
+                "id": "edsacguide",
+                "title": "Tutorial Guide to the EDSAC Simulator",
+                "url": "https://www.dcs.warwick.ac.uk/~edsac/Software/EdsacTG.pdf",
+                "publisher": "Martin Campbell-Kelly / EDSAC Replica Project, December 2021",
+                "source_type": "primary_restoration_and_software_documentation",
+                "locator": "printed pp.2–6; cover note identifies Sandy Douglas about 1952; distinguishes original computer and present simulator",
+                "checked": "2026-10-20",
+                "rights": "Bibliographic reference; source text and images retain their own rights. Card prose is original and contains no direct quotations. Image permissions require separate review.",
+                "story_paragraphs": [
+                  2
+                ],
+                "paragraph_locators": {
+                  "2": "EDSAC simulator tutorial, cover note p. 2 and monitor-tube discussion pp. 5–6."
+                }
+              }
+            ],
+            "editorial_credit": "Original English feature written for Pixel Museum; primary and institutional sources credited per card.",
+            "language": "en",
+            "year": 1952,
+            "date": {
+              "precision": "year",
+              "certainty": "circa"
+            },
+            "event_semantics": "Douglas’s EDSAC game, circa 1952; no exact completion day or unverified thesis-topic claim is asserted.",
+            "canonical_entry_id": "oxo",
+            "related_ids": [
+              "oxo"
+            ],
+            "source_batch": "reviewed_priority_features_2026_10",
+            "editorial_status": "authored_draft_media_localization_and_native_review_pending"
+          }
+        ],
+        "preferred_image": 0,
+        "provenance": {
+          "reviewed_thirteenth_context_images": {
+            "candidate_path": "build/research/oxo-original-edsac-research-photo/one-original-laboratory-photo-candidate.json",
+            "candidate_sha256": "eb059940aa1108632d8aa5c2ac7e70a9ef2593d8b2ed9c58a0e96e179346c4f8",
+            "independent_review_receipt": "build/research/oxo-original-edsac-research-photo/independent-one-original-laboratory-photo-review.json",
+            "scope": "Historical context photographs; no prose or complete-article claim."
+          }
+        },
+        "publication_readiness": {
+          "status": "requires_review",
+          "editorial_signoff": false,
+          "blockers": [
+            "verified_hd_cover_missing",
+            "majority_contextual_card_images_unreviewed"
+          ],
+          "hd_images": 0,
+          "contextual_sections": []
+        }
+      },
+      "changes": {
+        "body": [
+          "Alexander 'Sandy' Douglas was a Cambridge PhD student when he made a noughts-and-crosses program for EDSAC, usually dated to 1952. The player entered moves with a rotary telephone dial. A small cathode-ray display showed the board, and the player could choose whether to move first or let the machine begin.",
+          "The replica project’s simulator guide explains that EDSAC’s monitor tubes could reveal the contents of parts of its memory. They were working instruments, not screens originally built around entertainment. The same guide opens with Douglas’s game and tells a present-day user to select OXO and enter moves through the simulated dial. That pairing makes the adaptation tangible. What looks like a minimal board is also a different use for an existing display. The simulator preserves the awkwardness of the interface rather than replacing it with the controls of a modern game.",
+          "The setting shaped the audience. EDSAC was a research computer, so this was not a product that people could buy and take home. Few people outside Cambridge encountered the program. Its significance lies partly in that small scale: a laboratory machine could become something a person played against, with an input device, a visible position and a response to each decision.",
+          "EDSAC had been built to serve Cambridge researchers. Maurice Wilkes led the project, Bill Renwick directed construction, and David Wheeler contributed methods that helped people use it. The National Museum of Computing describes a practical service, rather than a machine reserved for specialists. Douglas’s game sat inside that larger undertaking. Before the screen could become a board, other people had designed an environment in which a program could be entered, run and tested. The apparently small interaction depended on that shared work."
+        ],
+        "story_headings": [
+          "A telephone dial meets a computer",
+          "Repurposing the display",
+          "A game inside a research laboratory",
+          "A shared research machine"
+        ],
+        "images": [
+          {
+            "url": "https://www.cl.cam.ac.uk/relics/jpegs/edsac99.33.jpg",
+            "title": "OXO - EDSAC I operator console (exhibit cover)",
+            "caption": "EDSAC I control desk with E. Page. Historical hardware context for OXO; the displayed signals are not the game.",
+            "source_page": "https://www.cl.cam.ac.uk/relics/archive_photos.html",
+            "creator": "Department of Computer Science and Technology, University of Cambridge",
+            "credit": "Copyright Department of Computer Science and Technology, University of Cambridge. Reproduced by permission.",
+            "license": "CC BY 2.0",
+            "license_url": "https://creativecommons.org/licenses/by/2.0/",
+            "width": 838,
+            "height": 633,
+            "recovery_local_source": "build/research/image-quality/final-covers/edsac-cambridge-control.jpg",
+            "supersedes_urls": [
+              "https://upload.wikimedia.org/wikipedia/commons/2/22/EDSAC_%2819%29.jpg"
+            ],
+            "verification": {
+              "sha256": "63ad39364b35b0960dc557ca3724e23a102e1465482f190a1c454b9b08b4382e",
+              "native_dimensions": [
+                838,
+                633
+              ],
+              "context_review": "Actual archive photograph visually reviewed against Cambridge caption: EDSAC I control desk, E.Page. No invented exposure year or claim of OXO running.",
+              "quality_limitation": "Native historical scan838x633, sharper original than previous640x450. No 4K-source claim or artificial enlargement."
+            }
+          },
+          {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/EDSAC_%2812%29.jpg",
+            "source_page": "https://commons.wikimedia.org/wiki/File:EDSAC_(12).jpg",
+            "title": "EDSAC in the Cambridge laboratory",
+            "caption": "Maurice Wilkes and Bill Renwick with the original EDSAC. The research computer is shown as laboratory hardware; this photograph does not show OXO running.",
+            "creator": "Computer Laboratory, University of Cambridge",
+            "credit": "Computer Laboratory, University of Cambridge / Wikimedia Commons / CC BY 2.0",
+            "license": "CC BY 2.0",
+            "license_url": "https://creativecommons.org/licenses/by/2.0/",
+            "width": 1878,
+            "height": 1511,
+            "story_paragraph": 2,
+            "recovery_local_source": "build/research/oxo-original-edsac-research-photo/edsac-original-wilkes-renwick.jpg",
+            "verification": {
+              "sha256": "80e830626edeba2dcd6478a95539b2568b18dc655e73022293c2c65705dbc66b",
+              "native_dimensions": [
+                1878,
+                1511
+              ],
+              "visual_review": "Full actual original viewed; period laboratory installation with Wilkes/Renwick. Not EDSACII or modern replica. No invented exposuredate or game-running claim.",
+              "quality_limitation": "Actual1878x1511 historical photographic scan; no enlargement, not4Ksource."
+            }
+          },
+          {
+            "url": "https://www.cl.cam.ac.uk/relics/jpegs/edsac99.35.jpg",
+            "title": "EDSAC I: S. A. Barton with the operator display",
+            "caption": "Original EDSAC I operator display, identified by the Cambridge archive. It shows working monitor signals, not OXO running; no invented exposure year.",
+            "source_page": "https://www.cl.cam.ac.uk/relics/archive_photos.html",
+            "creator": "Department of Computer Science and Technology, University of Cambridge",
+            "credit": "Copyright Department of Computer Science and Technology, University of Cambridge. Reproduced by permission.",
+            "license": "CC BY 2.0 UK",
+            "license_url": "https://creativecommons.org/licenses/by/2.0/uk/",
+            "width": 1036,
+            "height": 825,
+            "story_paragraph": 0,
+            "recovery_local_source": "build/research/chronoblock-bertie-nimrod-oxo/edsac-original-operator-display.jpg",
+            "verification": {
+              "sha256": "435c31b58b4bd293734ac9456af5ec429403be90413b5114786aee232eaf7b6e",
+              "native_dimensions": [
+                1036,
+                825
+              ],
+              "visual_review": "Full original viewed. Counter/Memory/SequenceControl CRT rack and S.A.Barton match exact primaryarchivecaption. No localcrop/upscale/generated restoration; sourceoriginal historical scan."
+            }
+          }
+        ],
+        "editorial_features": [],
+        "explicit_story_media_only": true,
+        "sources": [
+          {
+            "title": "Alexander Douglas writes OXO for EDSAC",
+            "url": "https://www.computerhistory.org/timeline/1952/",
+            "publisher": "Computer History Museum"
+          },
+          {
+            "title": "A Tutorial Guide to the EDSAC Simulator",
+            "url": "https://www.dcs.warwick.ac.uk/~edsac/Software/EdsacTG.pdf",
+            "publisher": "Martin Campbell-Kelly; EDSAC Replica Project, The National Museum of Computing"
+          },
+          {
+            "title": "EDSAC",
+            "url": "https://www.tnmoc.org/edsac",
+            "publisher": "The National Museum of Computing"
+          },
+          {
+            "title": "EDSAC I photographic archive: S.A.Barton with operator display",
+            "url": "https://www.cl.cam.ac.uk/relics/archive_photos.html",
+            "publisher": "Department of Computer Science and Technology, University of Cambridge",
+            "source_type": "primary_institutional_photographic_archive",
+            "locator": "edsac99.35; Copyrightlicencing section explicitlylinks CC BY2.0UK and requests exact retainedcopyright credit."
+          }
+        ]
+      },
+      "candidate_path": "build/research/chronoblock-bertie-nimrod-oxo/oxo-four-existing-blocks-two-illustrated-chapters-candidate.json",
+      "candidate_sha256": "ed0d969bbd30a4e4953627aa546d3a877f769d9648e455ef7c961ba0ce221a63",
+      "peer_path": "build/research/chronoblock-bertie-nimrod-oxo/independent-oxo-four-existing-blocks-two-chapters-peer-review.json",
+      "peer_sha256": "0113ea611150837e254515d294ff09cc78affe3375e6582a40fcf0010509a497"
+    }
+  ]
+}

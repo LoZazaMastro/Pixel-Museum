@@ -1,0 +1,715 @@
+{
+  "checked_date": "2026-10-20",
+  "purpose": "Evidence for faithful model creation and repair, not a claim that existing models already match these references.",
+  "constraints": [
+    "A photo-based reconstruction can be carefully referenced but cannot honestly guarantee absolute or scan-level accuracy without measured geometry, calibrated materials and complete views.",
+    "Reuse wordmark vector shapes when their metadata permits it, then match the particular physical placement, colour and embossed/printed construction. Public-domain copyright status does not remove brand identity.",
+    "Do not use broad product imagery as evidence for an unshown revision. Keep a single declared specimen/colour/region throughout the model and label any reconstruction changes in its attribution.",
+    "Photo references stay online. Cached reference photographs are research-only and are not newly authorised distribution assets merely because they were viewed."
+  ],
+  "entries": [
+    {
+      "id": "game-boy-advance",
+      "priority": 1,
+      "exact_variant": "Original AGB-001, opaque Indigo; AGB-JPN physical specimen AJ10005957 is the reference, not SP/Micro or a modern reshell.",
+      "dimensions": {
+        "width_mm": 144.5,
+        "height_mm": 82,
+        "thickness_mm": 24.5,
+        "screen_width_mm": 61.2,
+        "screen_height_mm": 40.8,
+        "status": "Nintendo nominal exterior and active-screen dimensions"
+      },
+      "references": [
+        {
+          "title": "Game Boy Advance technical data",
+          "url": "https://www.nintendo.com/en-gb/Support/Legacy-system/Technical-data-619479.html",
+          "publisher": "Nintendo",
+          "purpose": "Nominal dimensions, 240x160 display, batteries and connectors"
+        },
+        {
+          "title": "Actual Indigo AGB-JPN specimen AJ10005957",
+          "url": "https://gbhwdb.gekkio.fi/consoles/agb/AJ10005957.html",
+          "publisher": "Joonas Javanainen / Game Boy hardware database",
+          "purpose": "Original specimen provenance, assembly week6/2001, board and front/rear photographs"
+        },
+        {
+          "title": "Original Japanese GBA hardware page",
+          "url": "https://www.nintendo.co.jp/n08/hardware/gba/index.html",
+          "publisher": "Nintendo",
+          "purpose": "Original reflective display and original horizontal-body product imagery"
+        }
+      ],
+      "photos": [
+        {
+          "title": "Game Boy Advance front.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Game_Boy_Advance_front.jpg",
+          "source_page": "https://commons.wikimedia.org/wiki/File:Game_Boy_Advance_front.jpg",
+          "creator": "gekkio (Joonas Javanainen)",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0",
+          "description": "Game Boy Advance (front)\n\nAGB: AJ10005957 [gekkio]\nColor: Indigo\nRelease code: AGB-JPN\nAssembly date: Week 6/2001",
+          "width": 2136,
+          "height": 1144
+        },
+        {
+          "title": "Game Boy Advance back.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Game_Boy_Advance_back.jpg",
+          "source_page": "https://commons.wikimedia.org/wiki/File:Game_Boy_Advance_back.jpg",
+          "creator": "gekkio (Joonas Javanainen)",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0",
+          "description": "Game Boy Advance (back)\n\nAGB: AJ10005957 [gekkio]\nColor: Indigo\nRelease code: AGB-JPN\nAssembly date: Week 6/2001",
+          "width": 2388,
+          "height": 1464
+        }
+      ],
+      "wordmarks": [
+        {
+          "title": "Game Boy Advance logo.svg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Game_Boy_Advance_logo.svg",
+          "source_page": "https://commons.wikimedia.org/wiki/File:Game_Boy_Advance_logo.svg",
+          "creator": "Nuno Nogueira (Nmnogueira)",
+          "license": "Public domain",
+          "license_url": "",
+          "description": "Game Boy Advance logo",
+          "width": 512,
+          "height": 60
+        },
+        {
+          "title": "Nintendo logo.svg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Nintendo_logo.svg",
+          "source_page": "https://commons.wikimedia.org/wiki/File:Nintendo_logo.svg",
+          "creator": "Nintendo",
+          "license": "Public domain",
+          "license_url": "",
+          "description": "Nintendo's logo since 1979",
+          "width": 1000,
+          "height": 246
+        }
+      ],
+      "visually_verified_details": [
+        "The shell is opaque, finely textured indigo plastic. Lighting/age shift the photographed colour; no calibrated factory colour value is established.",
+        "The Nintendo oval above the lens is moulded into the same indigo plastic, not white printed text. Use the actual oval/vector geometry as a shallow relief, with reference-matched placement.",
+        "The white GAME BOY ADVANCE wordmark sits on the lower charcoal lens. Its custom letter shapes are not reproduced by typing a generic italic font. Compare the vector with the real lens, including its spacing and proportions.",
+        "A/B buttons and the cross-shaped directional control are light grey with recessed symbols. START/SELECT are small rounded rubber buttons below the directional control; their labels and POWER are moulded on the shell.",
+        "Five slanted speaker openings sit below A/B. The power indicator is a small circular lens at upper right, not a large emissive button.",
+        "The rear battery cover has a recessed GAME BOY mark. Above it is the contoured regulatory label with AGB-001, AGB-JPN and the actual specimen's serial. Regional labels differ: do not mix the Japanese front/back with an invented US serial label.",
+        "The original off-state LCD is a reflective pale grey/green surface, with glass/lens reflections. It is not a black OLED. An illuminated IPS screen would represent a later modification."
+      ],
+      "remaining_gaps": [
+        "No orthographic side scan or measured radii supplied. Overall dimensions alone do not establish every curve, button height, screw position or surface roughness."
+      ]
+    },
+    {
+      "id": "nintendo-dsi",
+      "priority": 1,
+      "exact_variant": "Original small Nintendo DSi TWL-001, matte black; not DS Lite and not DSi XL/LL.",
+      "dimensions": {
+        "closed_width_mm": 137.0,
+        "closed_depth_mm": 74.9,
+        "closed_thickness_mm": 18.9,
+        "status": "Nintendo original DSi operations manual"
+      },
+      "references": [
+        {
+          "title": "DSi main unit diagram",
+          "url": "https://en-americas-support.nintendo.com/app/answers/detail/p/696/c/188/a_id/6796",
+          "publisher": "Nintendo",
+          "purpose": "Authoritative identity and placement of both cameras, buttons, slots and indicators"
+        },
+        {
+          "title": "DSi operations manual",
+          "url": "https://assets.nintendo.eu/image/upload/v1635390257/NAL/Support/DSiOperationsManual.pdf",
+          "publisher": "Nintendo",
+          "purpose": "Exterior diagrams, specifications and dimensions; original small DSi only"
+        }
+      ],
+      "photos": [
+        {
+          "title": "Nintendo-DSi-Bl-Open.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/85/Nintendo-DSi-Bl-Open.jpg",
+          "source_page": "https://commons.wikimedia.org/wiki/File:Nintendo-DSi-Bl-Open.jpg",
+          "creator": "Evan-Amos",
+          "license": "CC BY-SA 3.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+          "description": "The Nintendo DSi.  This is a redesign of the Nintendo DS that adds larger screens, cameras, and the addition of downloadable games through the DSi shop.",
+          "width": 3300,
+          "height": 2720
+        },
+        {
+          "title": "DS Inside Open Comparison.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/DS_Inside_Open_Comparison.jpg",
+          "source_page": "https://commons.wikimedia.org/wiki/File:DS_Inside_Open_Comparison.jpg",
+          "creator": "daveynin",
+          "license": "CC BY 2.0",
+          "license_url": "https://creativecommons.org/licenses/by/2.0",
+          "description": "Comparison of the Nintendo DS, DS Lite, and DSi",
+          "width": 2272,
+          "height": 1704
+        },
+        {
+          "title": "DS - Top Side Comparison.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/62/DS_-_Top_Side_Comparison.jpg",
+          "source_page": "https://commons.wikimedia.org/wiki/File:DS_-_Top_Side_Comparison.jpg",
+          "creator": "daveynin",
+          "license": "CC BY 2.0",
+          "license_url": "https://creativecommons.org/licenses/by/2.0",
+          "description": "Comparison of 3 Nintendo DS consoles stacked vertically",
+          "width": 2272,
+          "height": 1704
+        },
+        {
+          "title": "DS Bottom Side Comparison.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/DS_Bottom_Side_Comparison.jpg",
+          "source_page": "https://commons.wikimedia.org/wiki/File:DS_Bottom_Side_Comparison.jpg",
+          "creator": "daveynin",
+          "license": "CC BY 2.0",
+          "license_url": "https://creativecommons.org/licenses/by/2.0",
+          "description": "Comparison of the Nintendo DS, DS Lite, and DSi",
+          "width": 2272,
+          "height": 1704
+        }
+      ],
+      "wordmarks": [
+        {
+          "title": "Nintendo DSi logo.svg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Nintendo_DSi_logo.svg",
+          "source_page": "https://commons.wikimedia.org/wiki/File:Nintendo_DSi_logo.svg",
+          "creator": "Nintendo",
+          "license": "Public domain",
+          "license_url": "",
+          "description": "Logo of the Nintendo DSi handheld video game system.",
+          "width": 600,
+          "height": 97
+        }
+      ],
+      "visually_verified_details": [
+        "A real black DSi photo shows the inner camera centred on the hinge with a small microphone opening alongside, two narrow speaker apertures, and a separate pale Power/Reset button at lower left.",
+        "ABXY form the right-hand diamond: X top, A right, B bottom, Y left. START and SELECT are two small round buttons below them, vertically arranged and correctly labelled.",
+        "The outer lid has a second camera and its indicator. The right side has an SD-card cover; the left has volume/brightness buttons. Match the official diagram before placing rear game-card, stylus, shoulder and power connectors.",
+        "There is no Game Boy Advance cartridge slot. The DSi front edge must not inherit the broad GBA slot from DS Lite or original DS.",
+        "Selected artist source934fdde060874d5c99b40cdf1dbb37f2 mixes revision cues in its authored thumbnail: absent inner camera and lower-left Power button, six-hole speakers, right-hinge indicator and a broad front slot. These are observed thumbnail defects, not a native geometry inspection. Repair the whole hardware identity rather than adding only a camera dot."
+      ],
+      "remaining_gaps": [
+        "DS comparison photographs include three revisions. Identify the DSi from the cameras/Power button/no-GBA-slot combination before using a view; do not trace a neighbouring DS Lite."
+      ]
+    },
+    {
+      "id": "odyssey",
+      "priority": 2,
+      "exact_variant": "Original1972 Magnavox Odyssey, white-and-brown console with separate controllers; not Odyssey200, Odyssey2 or Hanimex7771.",
+      "dimensions": {
+        "museum_record_mm_sequence": [
+          100,
+          370,
+          227
+        ],
+        "controller_record_mm_sequence": [
+          90,
+          160,
+          84
+        ],
+        "status": "ACMI gives100x370x227mm without naming axes; SMG gives controller90x160x84mm separately. Do not substitute controller dimensions for the console or claim measured CAD tolerances."
+      },
+      "references": [
+        {
+          "title": "Magnavox Odyssey console, object100297 / GF000148",
+          "url": "https://www.acmi.net.au/works/100297--magnavox-odyssey-video-game-console/",
+          "publisher": "ACMI",
+          "purpose": "Physical museum object and recorded100x370x227mm measurements"
+        },
+        {
+          "title": "Magnavox Odyssey Player Control Unit,2008-5014/3",
+          "url": "https://collection.sciencemuseumgroup.org.uk/objects/co8244669/magnavox-odyssey-player-control-unit",
+          "publisher": "Science Museum Group",
+          "purpose": "Separate controller dimensions and materials; catalogue data CC0, other text CC BY4.0"
+        },
+        {
+          "title": "Original Magnavox Odyssey manual scan",
+          "url": "https://www.videogameconsolelibrary.com/images/Manuals/72_Magnavox_Odyssey-Manual.pdf",
+          "publisher": "Magnavox; scan hosted by Video Game Console Library",
+          "purpose": "Original control layout and manufacturer lettering; scan not openly licensed merely because accessible"
+        }
+      ],
+      "photos": [
+        {
+          "title": "Magnavox-Odyssey-FL.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Magnavox-Odyssey-FL.jpg",
+          "source_page": "https://commons.wikimedia.org/wiki/File:Magnavox-Odyssey-FL.jpg",
+          "creator": "Evan-Amos",
+          "license": "Public domain",
+          "license_url": "",
+          "description": "The Magnavox Odyssey, the very first video game console.  Released in 1972, the Odyssey was a simple and crude device that generated shapes on the television that could be controlled and interacted with.  It only produced black and white graphics and had no sound, but was limited to only using discreet components like diodes and transistors.  It was replaced in 1975 with the Magnavox Odyssey series, a line of dedicated Pong consoles.",
+          "width": 5760,
+          "height": 3090
+        },
+        {
+          "title": "Magnavox-Odyssey-FR.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Magnavox-Odyssey-FR.jpg",
+          "source_page": "https://commons.wikimedia.org/wiki/File:Magnavox-Odyssey-FR.jpg",
+          "creator": "Evan-Amos",
+          "license": "Public domain",
+          "license_url": "",
+          "description": "The Magnavox Odyssey, the very first video game console.  Released in 1972, the Odyssey was a simple and crude device that generated shapes on the television that could be controlled and interacted with.  It only produced black and white graphics and had no sound, but was limited to only using discreet components like diodes and transistors.  It was replaced in 1975 with the Magnavox Odyssey series, a line of dedicated Pong consoles.",
+          "width": 5730,
+          "height": 3060
+        },
+        {
+          "title": "Magnavox-Odyssey-BL.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/52/Magnavox-Odyssey-BL.jpg",
+          "source_page": "https://commons.wikimedia.org/wiki/File:Magnavox-Odyssey-BL.jpg",
+          "creator": "Evan-Amos",
+          "license": "Public domain",
+          "license_url": "",
+          "description": "The Magnavox Odyssey, the very first video game console.  Released in 1972, the Odyssey was a simple and crude device that generated shapes on the television that could be controlled and interacted with.  It only produced black and white graphics and had no sound, but was limited to only using discreet components like diodes and transistors.  It was replaced in 1975 with the Magnavox Odyssey series, a line of dedicated Pong consoles.",
+          "width": 5760,
+          "height": 3120
+        },
+        {
+          "title": "Magnavox-Odyssey-BR.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/30/Magnavox-Odyssey-BR.jpg",
+          "source_page": "https://commons.wikimedia.org/wiki/File:Magnavox-Odyssey-BR.jpg",
+          "creator": "Evan-Amos",
+          "license": "Public domain",
+          "license_url": "",
+          "description": "The Magnavox Odyssey, the very first video game console.  Released in 1972, the Odyssey was a simple and crude device that generated shapes on the television that could be controlled and interacted with.  It only produced black and white graphics and had no sound, but was limited to only using discreet components like diodes and transistors.  It was replaced in 1975 with the Magnavox Odyssey series, a line of dedicated Pong consoles.",
+          "width": 5700,
+          "height": 3060
+        },
+        {
+          "title": "Magnavox-Odyssey-Bottom-FL.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/de/Magnavox-Odyssey-Bottom-FL.jpg",
+          "source_page": "https://commons.wikimedia.org/wiki/File:Magnavox-Odyssey-Bottom-FL.jpg",
+          "creator": "Evan-Amos",
+          "license": "Public domain",
+          "license_url": "",
+          "description": "The Magnavox Odyssey, the very first video game console.  Released in 1972, the Odyssey was a simple and crude device that generated shapes on the television that could be controlled and interacted with.  It only produced black and white graphics and had no sound, but was limited to only using discreet components like diodes and transistors.  It was replaced in 1975 with the Magnavox Odyssey series, a line of dedicated Pong consoles.",
+          "width": 5700,
+          "height": 3120
+        }
+      ],
+      "wordmarks": [
+        {
+          "title": "Magnavox Odyssey Logo.svg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Magnavox_Odyssey_Logo.svg",
+          "source_page": "https://commons.wikimedia.org/wiki/File:Magnavox_Odyssey_Logo.svg",
+          "creator": "MagnavoxOriginal uploader was DimaLeon2000 at en.wikipedia.",
+          "license": "Public domain",
+          "license_url": "",
+          "description": "Logo of the Magnavox Odyssey, an early 1970s gaming console.",
+          "width": 600,
+          "height": 129
+        }
+      ],
+      "variant_checks": [
+        "White upper shell, brown lower case and inset front panel must follow the multi-angle object photos rather than a generic white box.",
+        "Controller dial arrangement and cabling are part of this specific original system. Later integrated-knob Odyssey consoles are different designs.",
+        "Check each physical label against the original manual/photo; do not combine modern product logos with 1972 placement."
+      ],
+      "remaining_gaps": [
+        "Photo series metadata verified; all photographs have not been individually visually inspected in this pass. The museum measurement sequence is not an engineering drawing."
+      ]
+    },
+    {
+      "id": "nintendo-ds",
+      "priority": 2,
+      "exact_variant": "Original2004 NTR-001 Nintendo DS, broad angular body; not DS Lite/DSi/DSi XL.",
+      "dimensions": {
+        "closed_width_mm": 148.7,
+        "closed_depth_mm": 84.7,
+        "closed_thickness_mm": 28.9,
+        "status": "Original Nintendo DS specification"
+      },
+      "references": [
+        {
+          "title": "Nintendo DS original specifications",
+          "url": "https://www.nintendo.co.jp/ds/series/ds/spec/index.html",
+          "publisher": "Nintendo",
+          "purpose": "NTR-era dimensions and original physical specification"
+        },
+        {
+          "title": "Nintendo DS technical specification",
+          "url": "https://www.nintendo.com/fr-fr/Assistance/Nintendo-DS/Informations-produit/Specificites-techniques/Informations-produit-619794.html",
+          "publisher": "Nintendo",
+          "purpose": "Original dual slot and headphone/microphone/power connectors"
+        }
+      ],
+      "photos": [
+        {
+          "title": "Nintendo-DS-Fat-Blue.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/42/Nintendo-DS-Fat-Blue.jpg",
+          "source_page": "https://commons.wikimedia.org/wiki/File:Nintendo-DS-Fat-Blue.jpg",
+          "creator": "Evan-Amos",
+          "license": "Public domain",
+          "license_url": "",
+          "description": "An original Nintendo DS \"Fat\" in blue.",
+          "width": 2660,
+          "height": 2420
+        },
+        {
+          "title": "Nintendo DS (parte traseira).jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Nintendo_DS_%28parte_traseira%29.jpg",
+          "source_page": "https://commons.wikimedia.org/wiki/File:Nintendo_DS_(parte_traseira).jpg",
+          "creator": "Mark Gasoline",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+          "description": "Parte traseira dunha Nintendo DS.",
+          "width": 4467,
+          "height": 2592
+        },
+        {
+          "title": "Nintendo DS - Parte de abaixo.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/59/Nintendo_DS_-_Parte_de_abaixo.jpg",
+          "source_page": "https://commons.wikimedia.org/wiki/File:Nintendo_DS_-_Parte_de_abaixo.jpg",
+          "creator": "Mark Gasoline",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+          "description": "Unha Nintendo DS vista por abaixo.",
+          "width": 4608,
+          "height": 2592
+        },
+        {
+          "title": "Nintendo DS azul (pechada).jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Nintendo_DS_azul_%28pechada%29.jpg",
+          "source_page": "https://commons.wikimedia.org/wiki/File:Nintendo_DS_azul_(pechada).jpg",
+          "creator": "Mark Gasoline",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+          "description": "Unha Nintendo DS de cor azul.",
+          "width": 4608,
+          "height": 2592
+        },
+        {
+          "title": "DS Inside Open Comparison.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/DS_Inside_Open_Comparison.jpg",
+          "source_page": "https://commons.wikimedia.org/wiki/File:DS_Inside_Open_Comparison.jpg",
+          "creator": "daveynin",
+          "license": "CC BY 2.0",
+          "license_url": "https://creativecommons.org/licenses/by/2.0",
+          "description": "Comparison of the Nintendo DS, DS Lite, and DSi",
+          "width": 2272,
+          "height": 1704
+        }
+      ],
+      "variant_checks": [
+        "Original broad faceted clamshell and thick hinge are not the rounded thin DS Lite body.",
+        "The original DS has DS and Game Boy Advance cartridge slots and no cameras. A repaired DSi asset cannot serve as this console merely by changing its timeline date.",
+        "Use a consistent blue or silver specimen across all views; these reference photographs include colour variants. Port/control positions are useful across colours, surface colour is not."
+      ],
+      "remaining_gaps": [
+        "No engineering drawings for hinge angles or key height. Additional physical side measurements are needed before claiming dimensional reconstruction accuracy."
+      ]
+    },
+    {
+      "id": "xbox-series-x",
+      "priority": 2,
+      "exact_variant": "Retail2020 black1TB Series X with optical drive; not2019 artist mockup,2024 white digital edition or Galaxy Black2TB.",
+      "dimensions": {
+        "width_mm": 151,
+        "depth_mm": 151,
+        "height_mm": 301,
+        "status": "Xbox's prelaunch setup guidance lists5.94x5.94x11.85in, consistent with151x151x301mm nominal figures"
+      },
+      "references": [
+        {
+          "title": "Designing the next generation of consoles",
+          "url": "https://news.xbox.com/en-us/2020/09/23/designing-the-next-generation-of-consoles-xbox-series-x-and-xbox-series-s/",
+          "publisher": "Xbox industrial-design team",
+          "purpose": "Original black/white surface finish, green layer under venting, retail design photographs and rear details"
+        },
+        {
+          "title": "Ten ways to get ready for Xbox Series X|S",
+          "url": "https://news.xbox.com/en-us/2020/11/06/ten-ways-to-get-ready-for-xbox-series-x-and-xbox-series-s/",
+          "publisher": "Xbox",
+          "purpose": "Launch-period exterior dimensions"
+        }
+      ],
+      "photos": [
+        {
+          "title": "Xbox Series X 2.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/12/Xbox_Series_X_2.jpg",
+          "source_page": "https://commons.wikimedia.org/wiki/File:Xbox_Series_X_2.jpg",
+          "creator": "Der. Bellemer",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+          "description": "Zu sehen ist die Xbox Series X mit Gamepad.",
+          "width": 4200,
+          "height": 4928
+        },
+        {
+          "title": "Xbox series X (50648118708).jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Xbox_series_X_%2850648118708%29.jpg",
+          "source_page": "https://commons.wikimedia.org/wiki/File:Xbox_series_X_(50648118708).jpg",
+          "creator": "Ian Hughes",
+          "license": "CC BY 2.0",
+          "license_url": "https://creativecommons.org/licenses/by/2.0",
+          "description": "Xbox series X",
+          "width": 3024,
+          "height": 4032
+        },
+        {
+          "title": "Xbox series X (50648958937).jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Xbox_series_X_%2850648958937%29.jpg",
+          "source_page": "https://commons.wikimedia.org/wiki/File:Xbox_series_X_(50648958937).jpg",
+          "creator": "Ian Hughes",
+          "license": "CC BY 2.0",
+          "license_url": "https://creativecommons.org/licenses/by/2.0",
+          "description": "Xbox series X",
+          "width": 3024,
+          "height": 4032
+        },
+        {
+          "title": "Xbox series X (50648958962).jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Xbox_series_X_%2850648958962%29.jpg",
+          "source_page": "https://commons.wikimedia.org/wiki/File:Xbox_series_X_(50648958962).jpg",
+          "creator": "Ian Hughes",
+          "license": "CC BY 2.0",
+          "license_url": "https://creativecommons.org/licenses/by/2.0",
+          "description": "Xbox series X",
+          "width": 3024,
+          "height": 4032
+        }
+      ],
+      "variant_checks": [
+        "The green seen through the top vent is a physical subsurface colour layer; it is not an emitted green light.",
+        "The retail original includes the front optical-disc slit and eject control, front USB/pairing control, separate round base and rear labelled I/O.",
+        "Xbox's designers describe a low-gloss etched plastic finish. Do not make the tower shiny metal or add speculative prototype ports.",
+        "A current2019 mockup must remain identified as pre-release until actual retail geometry/materials and ports are corrected."
+      ],
+      "remaining_gaps": [
+        "Official press images retain publisher rights. Commons photos have their own explicit reusable licences. No claim of scan accuracy or per-hole measured vent geometry."
+      ]
+    },
+    {
+      "id": "xbox-series-s",
+      "priority": 2,
+      "exact_variant": "Original2020 Robot White512GB Series S with black circular vent; not Carbon Black1TB, white1TB later revision or Xbox One S.",
+      "dimensions": {
+        "short_mm": 65,
+        "depth_mm": 151,
+        "long_mm": 275,
+        "status": "Nintendo-style width/height labels are orientation dependent; these are Xbox's nominal three exterior dimensions"
+      },
+      "references": [
+        {
+          "title": "Series S original/updated hardware specifications",
+          "url": "https://www.xbox.com/en-AU/consoles/xbox-series-s/",
+          "publisher": "Xbox",
+          "purpose": "65x151x275mm dimensions; distinguish storage/colour variants"
+        },
+        {
+          "title": "Xbox industrial design account",
+          "url": "https://news.xbox.com/en-us/2020/09/23/designing-the-next-generation-of-consoles-xbox-series-x-and-xbox-series-s/",
+          "publisher": "Xbox",
+          "purpose": "Black circular exhaust set into low-gloss white shell; authored product views"
+        }
+      ],
+      "photos": [
+        {
+          "title": "Xbox Series S with controller.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/54/Xbox_Series_S_with_controller.jpg",
+          "source_page": "https://commons.wikimedia.org/wiki/File:Xbox_Series_S_with_controller.jpg",
+          "creator": "AsmodeanUnderscore",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+          "description": "A photo of the Xbox Series S standing upright. It stands on the cardboard box it was purchased in. Leaning against the console is the white wireless Xbox controller included in the box.",
+          "width": 2101,
+          "height": 2101
+        }
+      ],
+      "variant_checks": [
+        "Large black circular exhaust is a grille with physical depth, not a flat black disc sticker.",
+        "No optical drive or eject button. Preserve the small front USB/pair button/power icon arrangement, rear I/O, side perforations and orientation feet.",
+        "Match launch Robot White shell and black vent, not newer Carbon Black materials. Use official rotating/product views for sides and back before building."
+      ],
+      "remaining_gaps": [
+        "Only one reusable Commons viewpoint verified in this pass. The official source provides supplementary reference views but no blanket CC licence for its images."
+      ]
+    },
+    {
+      "id": "playstation-vita",
+      "priority": 2,
+      "exact_variant": "Original OLED PCH-1000 family; chosen multi-angle physical specimen PCH-1004 EUR Wi-Fi, distinct from PCH-1101 US3G and PCH-2000 slim.",
+      "dimensions": {
+        "width_mm": 182,
+        "height_mm": 83.5,
+        "thickness_mm": 18.6,
+        "status": "Sony original PCH-1000-series specification; excludes maximum protrusions"
+      },
+      "references": [
+        {
+          "title": "Sony original Japanese Vita launch specification,2011, table near end",
+          "url": "https://www.sony.com/ja/SonyInfo/IR/news/110914_01.pdf",
+          "publisher": "Sony Computer Entertainment",
+          "purpose": "Original182x83.5x18.6mm body,5inch OLED and front/rear cameras"
+        },
+        {
+          "title": "Sony PCH-2000 redesign announcement",
+          "url": "https://sonyinteractive.com/jp/press-releases/2013/130909b/",
+          "publisher": "Sony Computer Entertainment",
+          "purpose": "Explicitly different slimmer2013 hardware; do not import slim details into the original"
+        }
+      ],
+      "photos": [
+        {
+          "title": "Sony PlayStation Vita PCH-1004 (EUR) - front view.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Sony_PlayStation_Vita_PCH-1004_%28EUR%29_-_front_view.jpg",
+          "source_page": "https://commons.wikimedia.org/wiki/File:Sony_PlayStation_Vita_PCH-1004_(EUR)_-_front_view.jpg",
+          "creator": "ITEagle Europe - Sebastiaan Broekhoven",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+          "description": "Front view of a Sony PlayStation Vita PCH-1004 (EUR).",
+          "width": 2812,
+          "height": 2812
+        },
+        {
+          "title": "Sony PlayStation Vita PCH-1004 (EUR) - rear view.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/72/Sony_PlayStation_Vita_PCH-1004_%28EUR%29_-_rear_view.jpg",
+          "source_page": "https://commons.wikimedia.org/wiki/File:Sony_PlayStation_Vita_PCH-1004_(EUR)_-_rear_view.jpg",
+          "creator": "ITEagle Europe - Sebastiaan Broekhoven",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+          "description": "Rear view of a Sony PlayStation Vita PCH-1004 (EUR).",
+          "width": 2933,
+          "height": 2933
+        },
+        {
+          "title": "Sony PlayStation Vita PCH-1004 (EUR) - top view.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Sony_PlayStation_Vita_PCH-1004_%28EUR%29_-_top_view.jpg",
+          "source_page": "https://commons.wikimedia.org/wiki/File:Sony_PlayStation_Vita_PCH-1004_(EUR)_-_top_view.jpg",
+          "creator": "ITEagle Europe - Sebastiaan Broekhoven",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+          "description": "Top view of a Sony PlayStation Vita PCH-1004 (EUR).",
+          "width": 3000,
+          "height": 2998
+        },
+        {
+          "title": "PlayStation-Vita-1101-FL.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/PlayStation-Vita-1101-FL.jpg",
+          "source_page": "https://commons.wikimedia.org/wiki/File:PlayStation-Vita-1101-FL.jpg",
+          "creator": "Evan-Amos",
+          "license": "Public domain",
+          "license_url": "",
+          "description": "The PlayStation Vita, a handheld gaming console by Sony released in 2012.  The successor to the PlayStation Portable (PSP), the Vita has numerous improvements over the previous system. It has rear and front touchscreens,  dual analog sticks and a higher resolution OLED screen.  This model, the PCH-1101 also has built-in 3G wireless service support, but also comes in a Wi-Fi (PCH-1001) model.",
+          "width": 5310,
+          "height": 3240
+        }
+      ],
+      "variant_checks": [
+        "Original glossy black OLED front and curved body have two analogue sticks, PlayStation-shape face buttons, front camera, rear camera and separate rear capacitive touchpad.",
+        "The rear is a touchpad, not a second display. Existing photo description calling it a rear touchscreen is inaccurate and must not become geometry.",
+        "The PCH-1004 photo sequence is one consistent EUR Wi-Fi specimen. PCH-1101 adds3G identity; avoid mixing its labels/connectors with a fabricated Wi-Fi rear.",
+        "Do not replace Sony/PS/Vita custom logos with typed approximate fonts or copy PCH-2000's different controls/charging port."
+      ],
+      "remaining_gaps": [
+        "Sony dimensions exclude maximum protrusions. Exact lens contours, glossy layers and button travel are not determined by those dimensions alone."
+      ]
+    },
+    {
+      "id": "atari-jaguar",
+      "priority": 3,
+      "exact_variant": "Original1993 black Jaguar base console and standard three-fire-button controller; no Jaguar CD add-on or six-button Pro Controller.",
+      "dimensions": {
+        "width_in_reported": 9.5,
+        "depth_in_reported": 10,
+        "height_in_reported": 2.5,
+        "status": "Provisional historical FAQ figures only; no manufacturer or museum measurement located in this bounded pass. Not accepted as primary engineering evidence."
+      },
+      "references": [
+        {
+          "title": "Jaguar contemporary developer documentation - controllers",
+          "url": "https://asterick.github.io/jag-docs/controllers/controllers.html",
+          "publisher": "Atari technical manual, modern cross-linked transcription",
+          "purpose": "Two front controller ports and controller electrical identity; primary manual excerpts explicitly labelled"
+        },
+        {
+          "title": "Historical Jaguar FAQ, technical specification section",
+          "url": "https://static.atariage.com/Jaguar/faq/index.html?SystemID=JAGUAR",
+          "publisher": "Robert Jung, archived by AtariAge",
+          "purpose": "Provisional dimensions only; author explicitly independent of Atari"
+        }
+      ],
+      "photos": [
+        {
+          "title": "Atari-Jaguar-Bare-HL.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Atari-Jaguar-Bare-HL.jpg",
+          "source_page": "https://commons.wikimedia.org/wiki/File:Atari-Jaguar-Bare-HL.jpg",
+          "creator": "Evan-Amos",
+          "license": "Public domain",
+          "license_url": "",
+          "description": "The Atari Jaguar, a home gaming console released by Atari Corp in 1993.  Shown is the base console with no controllers or hook-ups.",
+          "width": 5250,
+          "height": 3630
+        },
+        {
+          "title": "Atari-Jaguar-Bare-LL.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Atari-Jaguar-Bare-LL.jpg",
+          "source_page": "https://commons.wikimedia.org/wiki/File:Atari-Jaguar-Bare-LL.jpg",
+          "creator": "Evan-Amos",
+          "license": "Public domain",
+          "license_url": "",
+          "description": "The Atari Jaguar, a home gaming console released by Atari Corp in 1993.",
+          "width": 4620,
+          "height": 2340
+        },
+        {
+          "title": "Atari-Jaguar-Bare-LR.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Atari-Jaguar-Bare-LR.jpg",
+          "source_page": "https://commons.wikimedia.org/wiki/File:Atari-Jaguar-Bare-LR.jpg",
+          "creator": "Evan-Amos",
+          "license": "Public domain",
+          "license_url": "",
+          "description": "The Atari Jaguar, a home gaming console released by Atari Corp in 1993.",
+          "width": 4680,
+          "height": 2340
+        },
+        {
+          "title": "Atari-Jaguar-Back.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Atari-Jaguar-Back.jpg",
+          "source_page": "https://commons.wikimedia.org/wiki/File:Atari-Jaguar-Back.jpg",
+          "creator": "Evan-Amos",
+          "license": "Public domain",
+          "license_url": "",
+          "description": "The back of the an Atari Jaguar, showing the various inputs and outputs of the system.  Ports from left to right: DC power supply in, DSP port, extended AV port (composite, s-video), L/H (RF channel select for RF output) and an RF port.  For L//H: L = low channel (channel 2), H = high channel (channel 3).",
+          "width": 3420,
+          "height": 1110
+        },
+        {
+          "title": "Atari-Jaguar-Console-Set.png",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Atari-Jaguar-Console-Set.png",
+          "source_page": "https://commons.wikimedia.org/wiki/File:Atari-Jaguar-Console-Set.png",
+          "creator": "Evan-Amos",
+          "license": "CC BY-SA 3.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+          "description": "The Atari Jaguar and controller, a fifth generation video game console released by Atari in 1993.",
+          "width": 3860,
+          "height": 1660
+        }
+      ],
+      "wordmarks": [
+        {
+          "title": "Atari Jaguar logo.svg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Atari_Jaguar_logo.svg",
+          "source_page": "https://commons.wikimedia.org/wiki/File:Atari_Jaguar_logo.svg",
+          "creator": "JustDanPatrick",
+          "license": "Public domain",
+          "license_url": "",
+          "description": "This is the official Atari Jaguar logo that was used for official packaging. I did center the characters in \"64 bit\" to their respective circles as they were noticeably off imo. Left the rest as is.\nThe template files were uploaded by 'djpubba' on atariage.com.",
+          "width": 512,
+          "height": 181
+        }
+      ],
+      "variant_checks": [
+        "Use the unstacked base console photo series; the CD add-on changes the silhouette substantially.",
+        "Preserve the domed cartridge housing, central slot, red power control, two front controller sockets and actual rear connectors.",
+        "The standard controller has a12-key number pad plus A/B/C, Pause and Option. Six-fire-button Pro Controller and custom rotary controllers are different objects.",
+        "Red custom Jaguar lettering/Atari emblem is a logo, not ordinary font text. Verify against the actual photographed console before applying the vector."
+      ],
+      "remaining_gaps": [
+        "No primary exterior measurements verified. All selected photo licences verified, but this pass did not visually inspect every Jaguar angle. Do not present a reconstruction as a scan or assert manufacturing-level fidelity."
+      ]
+    }
+  ]
+}

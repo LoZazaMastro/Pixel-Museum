@@ -1,0 +1,104 @@
+{
+  "status": "PASS",
+  "locale": "fr",
+  "entries": [
+    {
+      "entry_id": "wikipedia-71040722",
+      "source_fields_sha256": "499b8f1c5e870e27cdf3ad8534f1ab5ccc79352d2312c5f05911fcd54b955bc5",
+      "translation_sha256": "2cc1e312505adc16e5d2e9c41b99f768cc7fe3c867040c39c164e6c851ffb7e8",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch367/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "05eb88b0734d1c8ab7b78728ed87c28e131e628eeb7c2dfe64ac13a857f8fec9"
+    },
+    {
+      "entry_id": "wikipedia-72100835",
+      "source_fields_sha256": "326ecb97eebb7b97c6864659e278e377bfc881461789661c98727d18b58af0a4",
+      "translation_sha256": "6b59fcf8da2dc817ce16c92e0032ddafd8ec90dd9a4d29ab7932d71d0b582790",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch367/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "05eb88b0734d1c8ab7b78728ed87c28e131e628eeb7c2dfe64ac13a857f8fec9"
+    },
+    {
+      "entry_id": "wikipedia-72728836",
+      "source_fields_sha256": "f678f62087024960b93a49f3f59d1e1d2521131442d3ce5814870d3a8bc92c8b",
+      "translation_sha256": "2cc2df97a41b8f695e28a6c61de3869cb38dd8ff9df434dc0bb575b47d31d41b",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch367/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "05eb88b0734d1c8ab7b78728ed87c28e131e628eeb7c2dfe64ac13a857f8fec9"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "/root/package_audit",
+    "actual_receipt": "build/research/catalog-2024-chronological/february-march-three-private/independent-package-audit-approval.json",
+    "actual_receipt_sha256": "ad8b23692638b92d1d32958784b79b3d0e818fb4e7d1eea77c5fa4bb98a9b800",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "/root/package_audit",
+      "index": "build/research/catalog-2024-chronological/february-march-three-private/three-original-source-media-four-language-private-index.json",
+      "index_sha256": "307eabe1f0dee7c6e656db5e897c396a41d4213a31f9de08c116026f290a847e",
+      "owners": [
+        {
+          "entry_id": "wikipedia-71040722",
+          "slug": "rebirth",
+          "source": "build/research/catalog-2024-chronological/february-march-three-private/rebirth/complete-original-source-media-private-candidate.json",
+          "source_sha256": "013dd35e3b8903cc2e12e5811e02b62f590dd39b44fbc03c99506bd0496313db",
+          "target": "build/research/catalog-2024-chronological/february-march-three-private/rebirth/complete-four-language-private-candidate.json",
+          "target_sha256": "e96b215c67d2da182e232520c37bd0a2181d4370f26e64872ce2504486794fb3",
+          "contact": "build/research/catalog-2024-chronological/february-march-three-private/rebirth/final-selected-media-contact.jpg",
+          "contact_sha256": "96b6ac668c90387f3bf636fe3f713dd1c3452cecfc83b58ebbb5f73d6248f6ff",
+          "english_cards": 4,
+          "localized_cards": 16,
+          "images": 6,
+          "tracks": 150,
+          "finite_errata": 1
+        },
+        {
+          "entry_id": "wikipedia-72100835",
+          "slug": "alone",
+          "source": "build/research/catalog-2024-chronological/february-march-three-private/alone/complete-original-source-media-private-candidate.json",
+          "source_sha256": "a110e2b7657078a2910b4886ab950ae34592519ba8133dc1957f695b30dba92e",
+          "target": "build/research/catalog-2024-chronological/february-march-three-private/alone/complete-four-language-private-candidate.json",
+          "target_sha256": "cefda9aa3605096e3c1fdc6c45af7e4f693247f4f136276bc7e1fb2cb711bbf6",
+          "contact": "build/research/catalog-2024-chronological/february-march-three-private/alone/final-selected-media-contact.jpg",
+          "contact_sha256": "fc950568f12987a902438548022b5a1664386ba7b9856b22b4783df09236f359",
+          "english_cards": 2,
+          "localized_cards": 8,
+          "images": 6,
+          "tracks": 3,
+          "finite_errata": 0
+        },
+        {
+          "entry_id": "wikipedia-72728836",
+          "slug": "ronin",
+          "source": "build/research/catalog-2024-chronological/february-march-three-private/ronin/complete-original-source-media-private-candidate.json",
+          "source_sha256": "7e711e88c3353db5e3207777a40268d154a409f85fc5156b3e3025bafa9c8937",
+          "target": "build/research/catalog-2024-chronological/february-march-three-private/ronin/complete-four-language-private-candidate.json",
+          "target_sha256": "9f579926e770951d1835584cd37c4e6540851259724a0e7e40ef91ad0f246567",
+          "contact": "build/research/catalog-2024-chronological/february-march-three-private/ronin/final-selected-media-contact.jpg",
+          "contact_sha256": "7dcb765cce237413198a288cead898d818e5d381a0a6d14c001cb845576510c9",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 4,
+          "tracks": 3,
+          "finite_errata": 0
+        }
+      ],
+      "scope": {
+        "english_paragraphs_read": 9,
+        "localized_paragraphs_read": 36,
+        "selected_images_actually_viewed": 16,
+        "preserved_track_objects_exact": 151,
+        "new_public_metadata_read": 5
+      },
+      "findings": [],
+      "notes": [
+        "All three final contacts personally viewed. Original game contextual scenes, clean covers, no modern box reverses; platform branding only on a video thumbnail.",
+        "All nine English and 36 localized paragraphs read, complete five-field locale bindings. No finding.",
+        "Rebirth entire original English word sequence preserved: one erroneous sentence boundary joined into a single card. All150 soundtrack objects exact, no redundant stream fetch.",
+        "Two new Alone recordings from 2025 label distribution of original2024 score distinguish Arni Bergur Zoega and Jason Kohnen. THQ primary April15,2025 independently read.",
+        "Three original Ronin recordings from Milan Records March22,2024: Inon Zur composer, listed ensembles/soloists not misassigned as composers. Composer firsthand page independently read.",
+        "Revelation2027 publisher primary independently read, not discarded as unfamiliar future claim.",
+        "Metadata verification is not PS5 playback verification; no audio downloaded or packaged."
+      ],
+      "production_writes": false
+    }
+  }
+}

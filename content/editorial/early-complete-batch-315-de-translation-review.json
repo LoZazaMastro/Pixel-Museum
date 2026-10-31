@@ -1,0 +1,107 @@
+{
+  "status": "PASS",
+  "locale": "de",
+  "entries": [
+    {
+      "entry_id": "wikipedia-46994455",
+      "source_fields_sha256": "6264327f150198840270f5d09f4ba6e827cef10db1ae3d0ff8c687c9560d15fa",
+      "translation_sha256": "a3f395e4fbffaa79b210a984df734f13aaeb8f061ed5dc23ed32b39fa58e8cf8",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch315/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "16a665c262a22a52f90ee92bb660c371dc1e61af11622b663ab22f6aa6c1c45d"
+    },
+    {
+      "entry_id": "wikipedia-57651411",
+      "source_fields_sha256": "c32dbc3584a416d90246f4ce34a22e858e4721e87dbe679fadc82aec54980dee",
+      "translation_sha256": "4c762a31ed4c116b308499feda0059cd27cf8d55307ee6a252e2d7fde2a348ee",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch315/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "16a665c262a22a52f90ee92bb660c371dc1e61af11622b663ab22f6aa6c1c45d"
+    },
+    {
+      "entry_id": "feature-umurangi-looking",
+      "source_fields_sha256": "e27b5ea9a8a37ba51438bcda03d6af2393d9284bfad1db6c2d83d547482eafa7",
+      "translation_sha256": "5885c8411d82f8846d57b9666172bdd8eba664084a5a6c47799c1a18b383538e",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch315/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "16a665c262a22a52f90ee92bb660c371dc1e61af11622b663ab22f6aa6c1c45d"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "package_audit",
+    "actual_receipt": "build/research/catalog-2020-chronological/april-may-three-private/independent-package-audit-approval.json",
+    "actual_receipt_sha256": "c113e824ca56493647d59b106434e09da04c14079334bebf6fea0346ccbae54e",
+    "actual_review_scope": {
+      "status": "APPROVED_INDEPENDENT_PEER",
+      "reviewer": "package_audit",
+      "author": "editorial_continue",
+      "reviewed_at": "2026-10-27T03:56:59.366932",
+      "index": "build/research/catalog-2020-chronological/april-may-three-private/three-original-source-media-four-language-private-index.json",
+      "index_sha256": "cddb5edf77642fc3f5a4385f0fd2ae9399d1b372142d4418a3caf49f68c0de32",
+      "owners": [
+        {
+          "entry_id": "wikipedia-46994455",
+          "slug": "ff7-remake",
+          "source": "build/research/catalog-2020-chronological/april-may-three-private/ff7-remake/complete-original-source-media-private-candidate.json",
+          "source_sha256": "a25e96c84d3fb34fbac54fc004d1db2fc6fd0b4c23d241e8a00f46dc25de9abd",
+          "target": "build/research/catalog-2020-chronological/april-may-three-private/ff7-remake/complete-four-language-private-candidate.json",
+          "target_sha256": "1eea00c4ca636f545e673b1053750d92843f50aa57189be81ffd2f1244a86d5d",
+          "contact": "build/research/catalog-2020-chronological/april-may-three-private/ff7-remake/final-selected-media-contact.jpg",
+          "contact_sha256": "e8400a492d1861d732c30795a78ac0c7426d775434602a6e732390e0a07c8959",
+          "english_cards": 4,
+          "localized_cards": 16,
+          "images": 6,
+          "tracks": 4,
+          "finite_errata": 0
+        },
+        {
+          "entry_id": "wikipedia-57651411",
+          "slug": "gears-tactics",
+          "source": "build/research/catalog-2020-chronological/april-may-three-private/gears-tactics/complete-original-source-media-private-candidate.json",
+          "source_sha256": "95d6ae741810111f9ae15155ede472c378a8450d4ae0924e174162d402c3c2b0",
+          "target": "build/research/catalog-2020-chronological/april-may-three-private/gears-tactics/complete-four-language-private-candidate.json",
+          "target_sha256": "313e1727f08eb1a038d964621157cd68c0f21d601449d040c25dff21ac721886",
+          "contact": "build/research/catalog-2020-chronological/april-may-three-private/gears-tactics/final-selected-media-contact.jpg",
+          "contact_sha256": "95fa89cd6d0dfc5b7d73a86cd9152c39b0c86fcf686bcbc2d96175d46608f947",
+          "english_cards": 7,
+          "localized_cards": 28,
+          "images": 9,
+          "tracks": 3,
+          "finite_errata": 2
+        },
+        {
+          "entry_id": "feature-umurangi-looking",
+          "slug": "umurangi",
+          "source": "build/research/catalog-2020-chronological/april-may-three-private/umurangi/complete-original-source-media-private-candidate.json",
+          "source_sha256": "06c0e9116c555d2262d08d651db6f1e666de419e39d2771d5465abed7973650f",
+          "target": "build/research/catalog-2020-chronological/april-may-three-private/umurangi/complete-four-language-private-candidate.json",
+          "target_sha256": "7798956f50df156c0d94fe26908b4c1bae95ba2695e40522b0fd2b0acfc022a0",
+          "contact": "build/research/catalog-2020-chronological/april-may-three-private/umurangi/final-selected-media-contact.jpg",
+          "contact_sha256": "dddac7c0b3e91496af2ab5ccd96123c5bc3785a7b03c5cc1963080e9a3a52428",
+          "english_cards": 4,
+          "localized_cards": 16,
+          "images": 4,
+          "tracks": 2,
+          "finite_errata": 0
+        }
+      ],
+      "scope": {
+        "english_paragraphs_read": 15,
+        "localized_paragraphs_read": 60,
+        "contacts_personally_viewed": 3,
+        "images_in_contacts": 19,
+        "media": "Original unbranded game cover art; contextual original/qualified later base-game publisher screenshots. Actual ACMI 2019 damaged-home photo distinguished from 2020 fiction. No modern back-box pictures.",
+        "finite_errata": "Gears execution action point excludes executioner, consistent with primary developer blog. Alpha Squad typo corrected only. Other English paragraphs preserved, including original current future-release information.",
+        "music": "Four new public AAC metadata receipts read: Square Enix official Airbuster and Aerith Home Again (original 2020 recording, 2025 uploads, not concert medleys); two official Ditto Adolf Nomura original 2020 soundtrack cues. Primary Steam album explicitly links Adolf Nomura and ThorHighHeels, lists both titles and matching lengths. All inherited five cue objects retained exactly; no redundant playback or acquisition performed.",
+        "primary_references_read": [
+          "https://press.na.square-enix.com/en-US/FINAL-FANTASY-VII-REVELATION-ANNOUNCED-EXPERIENCE-THE-JOURNEYS-END-IN-",
+          "https://www.gearsofwar.com/en-us/news/dev-blog-gameplay/",
+          "https://www.acmi.net.au/works/120413--naphtali-faulkners-family-home-after-the-black-summer-fires-hit-lismore/",
+          "https://store.steampowered.com/app/1320820"
+        ],
+        "primary_reference_limits": "ACMI game-object page returned web timeout; no claim of fresh complete page retrieval. Actual separate photograph record retrieved successfully.",
+        "hashes": "All nine candidate/target/contact digests match actual bytes."
+      },
+      "findings": [],
+      "production_writes": false
+    }
+  }
+}

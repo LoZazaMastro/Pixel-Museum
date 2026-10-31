@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "batch": "priority-feature-context-media-13",
+  "created_utc": "2026-10-21T02:31:00.103779+00:00",
+  "status": "Frozen single exact-object card association after complete reading of two unillustrated features. Independent admission pending.",
+  "source_catalog_sha256": "bfa6a9c1967d1b711150d2f8b5dc5d4c36d264b1e0aa9f66108ae6d232b4873c",
+  "entries": [
+    {
+      "feature_id": "feature-programmable-living-room",
+      "feature_body_sha256": "d2ae8c10ad052014ece187341affa50902b6cafea88dbf8ec954280c86f50c6f",
+      "images": [
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Fairchild-Channel-F.jpg/1920px-Fairchild-Channel-F.jpg",
+          "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/34/Fairchild-Channel-F.jpg",
+          "source_page": "https://commons.wikimedia.org/wiki/File:Fairchild-Channel-F.jpg",
+          "title": "The original Fairchild Video Entertainment System, with numbered game and time buttons and its hand controllers.",
+          "creator": "Evan-Amos",
+          "license": "CC BY-SA 3.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+          "credit": "Evan-Amos / Wikimedia Commons / CC BY-SA 3.0",
+          "width": 1920,
+          "height": 1263,
+          "quality_verified": "Previously complete remote GET/native decode in the image-quality audit. Exact URL-derived cached original fully decoded and visually reviewed again for this association; SHA-256 recorded. No new HTTP, retouch or enlargement.",
+          "native_long_edge": 1920,
+          "caption": "The original Fairchild Video Entertainment System, with numbered game and time buttons and its hand controllers.",
+          "story_paragraph": 2,
+          "context_heading": "What programmable meant at home",
+          "context_review_note": "The actual first-model hardware visibly labels RESET, buttons1–4, HOCKEY/TENNIS/GAME3/GAME4, TIME2/5/10/20MIN and MODE/HOLD/START. This directly illustrates the numbered selection controls discussed in the1976 booklet. It is not a photograph of an on-screen prompt, a 1976 family or a prototype. Original-model case/attached controllers distinguish it from the later ChannelFSystemII.",
+          "verification": {
+            "sha256": "f1c91cc4e4a709e0c0338e0b61e66b0147ebe242d6df691a998d26cded45dd62",
+            "checked_utc": "2026-10-21T02:31:00.103779+00:00",
+            "local_proof": "F:/Playhub/PS5/Pixel Museum/build/research/image-quality/b7a3386a27692fcc.jpg",
+            "verification_scope": "Existing exact remote-source bytes; no fresh remote availability claim"
+          },
+          "association_provenance": {
+            "source": "content/expansion/image-quality-upgrades.json",
+            "source_entry_id": "channel-f",
+            "exact_requested_url_sha1_prefix": "b7a3386a27692fcc",
+            "no_new_remote_requests": true
+          },
+          "rights_review": "Retain Evan-Amos attribution and source-declared CC BY-SA3.0 photograph licence. Hardware design and marks retain their underlying rights. No new licence grant is invented."
+        }
+      ]
+    }
+  ],
+  "holds": [
+    {
+      "feature_id": "feature-odyssey-overlays",
+      "feature_body_sha256": "9b71273cf32143ea917582a6c4f5f383285e50dc2fb92b395fac26a019f9da76",
+      "body_read_in_full": true,
+      "status": "hold_no_matching_verified_hd_object_image",
+      "card_findings": [
+        {
+          "story_paragraph": 0,
+          "needed": "An actual Odyssey television overlay and its attachment/fit.",
+          "available": "Verified console/controllers photograph does not show an overlay, television attachment or trimming."
+        },
+        {
+          "story_paragraph": 1,
+          "needed": "Actual SimonSays overlay/deck or a documented play/referee setup.",
+          "available": "No such HD photograph among the reviewed admitted assets; console-only photo does not illustrate the paper rules."
+        },
+        {
+          "story_paragraph": 2,
+          "needed": "Actual service diagram or circuitry corresponding to player/ball/wall generation.",
+          "available": "Research manual/page renders are evidence, but no already-admitted externally hosted HD image with separate media reuse basis."
+        },
+        {
+          "story_paragraph": 3,
+          "needed": "Actual accessory spread, SimonSays cards, States folder or Football board.",
+          "available": "Verified console/controllers image contains none of the specific printed parts."
+        }
+      ]
+    }
+  ],
+  "other_rejected_association": {
+    "feature_id": "feature-programmable-living-room",
+    "story_paragraph": 1,
+    "reason": "The locally admitted Atari photograph is explicitly a later four-switch variant, not the1977 six-switch panel described by the cited manual. Do not force it into this exact historical-panel card."
+  },
+  "counts": {
+    "features_read_fully": 2,
+    "proposed_images": 1,
+    "new_remote_images": 0,
+    "previously_verified_image_reassociations": 1,
+    "illustrated_cards": 1,
+    "features_with_majority_of_four_cards": 0,
+    "independent_editorial_signoffs": 0
+  },
+  "scope": "No new network requests, title/prose/factual changes, duplicated URL within a feature, master/assembler/package changes or photograph of invented process."
+}

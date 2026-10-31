@@ -1,0 +1,10 @@
+# A beginning depends on what you count
+
+Four complete cards compare rules/response, screen/software, public interaction and changing collaborative versions. This is an authored comparative argument; it makes no single-inventor or universal-priority claim. The 1950-1962 range describes the examples, not an asserted birth of the medium. Existing individual-machine prose remains untouched.
+
+Primary/holding-institution pages and exact locators are in the JSON. The Canadian monograph's actual Figure 6 credit chain remains a rights research task. Two Brookhaven direct pages timed out; the Tennis card cites the successfully inspected CHM 1958 record and now The Strong's specific collection history. No source is credited as read merely because its homepage exists. No historical image has been fabricated, upscaled or falsely approved.
+
+Placement recommendation after independent text review: a distinct linked comparison. Four actual media briefs and the placement decision remain pending; this review does not assemble the feature or assert publication readiness.
+
+
+Independent review (2026-10-21): the comparative definition question merits a distinct connected feature linked to all four subjects. CHM supports David Potter; [The Strong collection history](https://www.museumofplay.org/blog/following-the-bouncing-ball-tennis-for-two-at-the-strong/) additionally identifies Robert V. Dvorak Sr., now included with its own citation. No sole-inventor claim is made. The CSTM locator explicitly distinguishes one-based PDF page 34 from zero-based page index 33. All four card indices, headings and source IDs align; metadata punctuation is repaired. Body: 335 whitespace-delimited words. Conservative source allocations including title, summary and associated heading: canada 118, oxo 119, tennis 121, tennis-collaborators 121, spacewar 119 words (each below 200). The comparison is original analysis marked in each card. Media remains an explicit acquisition task; no images or publication signoff are asserted. Placement is recommended, not assembled.

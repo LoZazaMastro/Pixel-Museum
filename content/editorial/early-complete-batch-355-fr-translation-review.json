@@ -1,0 +1,112 @@
+{
+  "status": "PASS",
+  "locale": "fr",
+  "entries": [
+    {
+      "entry_id": "wikipedia-68026802",
+      "source_fields_sha256": "8f34d32e27b65757bd5a6fe79df8268fe93c4b755c87b4ac36d7ac4d664ee8f6",
+      "translation_sha256": "2659caa797dfe8d0dc481cf6658e029317d01a00fa4787337e56161069615afa",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch355/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "032909d92999ef9bb29f4e4e76c8a1edc002e76dd0d424ed2018d06ef4dad958"
+    },
+    {
+      "entry_id": "wikipedia-39190240",
+      "source_fields_sha256": "401213be5dfd159c45dd36254aebf381077666c3bd254732f3d6e2c3994e2479",
+      "translation_sha256": "f72c407dbe39b08d8fb8f68aa1560ecd418ee92a94c2bd8eabb2c34063dd954e",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch355/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "032909d92999ef9bb29f4e4e76c8a1edc002e76dd0d424ed2018d06ef4dad958"
+    },
+    {
+      "entry_id": "wikipedia-73683044",
+      "source_fields_sha256": "e0ac1f9c00990d6ae12329f37f2b42c9225eb868d768abdc80b68f64d2f18e8e",
+      "translation_sha256": "663cf04f8cb7e0ef28fbaf91fb140cfb8be04adad6bc816a3a93582696474c78",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch355/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "032909d92999ef9bb29f4e4e76c8a1edc002e76dd0d424ed2018d06ef4dad958"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "editorial_continue",
+    "actual_receipt": "build/research/catalog-2023-chronological/april-three-private/independent-editorial-peer-approval.json",
+    "actual_receipt_sha256": "cf2c6c3d9ad7f6f70708429b8c2c502dfa7e6d6778ae514a722b612d39fc5698",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "editorial_continue",
+      "index": "build/research/catalog-2023-chronological/april-three-private/three-private-index.json",
+      "index_sha256": "9b35b33454e719ae1c6c0efd654e2a611282343935fc9485765bac64b6fc8a2a",
+      "scope": "Actually read all eight English and thirty-two localized paragraphs plus all five fields; actually viewed all twelve final images in three contacts. Read all nine new public AAC metadata receipts and individual creator/arranger/performer credits; archives are identified as archives rather than official uploads.",
+      "primary_sources_actually_read": [
+        {
+          "url": "https://www.nintendo.com/au/games/nintendo-switch/advance-wars-1-plus-2-re-boot-camp/",
+          "finding": "Original April 21, 2023 release and local four-player versus online two-player distinction."
+        },
+        {
+          "url": "https://tommy.la/",
+          "finding": "Firsthand credit identifies Pedrini as arranger, composer and music production team member, without attributing every original theme solely to him."
+        },
+        {
+          "url": "https://news.xbox.com/en-us/2023/04/21/dead-island-2-out-now/",
+          "finding": "Original Dambuster launch account confirms Los Angeles, weapon customization, FLESH and three-player co-op."
+        },
+        {
+          "url": "https://skilltreerecords.bandcamp.com/track/living-room",
+          "finding": "Original May 22, 2023 album credit identifies Ryan Leo Williams."
+        },
+        {
+          "url": "https://www.cassettebeasts.com/2026/06/07/announcing-cassette-beasts-2002/",
+          "access_scope": "Direct endpoint returned 404, but indexed web search returned actual developer article with June 7, 2026 date and complete platform factsheet; this primary text was actually read."
+        },
+        {
+          "url": "https://www.cassettebeasts.com/blog/",
+          "finding": "Indexed developer Mobile Version FAQ dated January 15, 2025 confirms both mobile platforms."
+        }
+      ],
+      "findings": [],
+      "owners": [
+        {
+          "entry_id": "wikipedia-68026802",
+          "slug": "advance",
+          "source": "build/research/catalog-2023-chronological/april-three-private/advance-source-private-candidate.json",
+          "source_sha256": "6ea07deb51faf47e4b2f70bcba9cd5669f4de97519044226193618519d342938",
+          "target": "build/research/catalog-2023-chronological/april-three-private/advance-four-language-private-candidate.json",
+          "target_sha256": "302236a784849bfd07810a778b03edad89b295f567a67e4f4d3ee2374da99f78",
+          "contact": "build/research/catalog-2023-chronological/april-three-private/advance-final-contact.jpg",
+          "contact_sha256": "8b15447a25f949df73d5cd48e21297e9edeaa6ea7bececcbe9176ad387e75f8d",
+          "english_cards": 2,
+          "localized_cards": 8,
+          "images": 3,
+          "tracks": 3
+        },
+        {
+          "entry_id": "wikipedia-39190240",
+          "slug": "dead",
+          "source": "build/research/catalog-2023-chronological/april-three-private/dead-source-private-candidate.json",
+          "source_sha256": "f8378920a003682e4f058c37aeac4a694fbebd0cb57962cdb133238e7ef75646",
+          "target": "build/research/catalog-2023-chronological/april-three-private/dead-four-language-private-candidate.json",
+          "target_sha256": "675d233300a74632a3e0c3a837b2d4010b30f675ded47eeacfb0df919caf2027",
+          "contact": "build/research/catalog-2023-chronological/april-three-private/dead-final-contact.jpg",
+          "contact_sha256": "5f1ddc010f91132b50bf29ac7b9b7c496b75adff6f190e159206ae6f59d1e89f",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 4,
+          "tracks": 3
+        },
+        {
+          "entry_id": "wikipedia-73683044",
+          "slug": "cassette",
+          "source": "build/research/catalog-2023-chronological/april-three-private/cassette-source-private-candidate.json",
+          "source_sha256": "1eaa9bdda7f69e04dd3fe42b95e8f5e8c4d3b956856cd3cd7bedf9a9efb61282",
+          "target": "build/research/catalog-2023-chronological/april-three-private/cassette-four-language-private-candidate.json",
+          "target_sha256": "a6398d9eaa904bde7f2702fd1a6c324b38f4cc9e295b09b703271abd3d3667ec",
+          "contact": "build/research/catalog-2023-chronological/april-three-private/cassette-final-contact.jpg",
+          "contact_sha256": "70cb1c0da76dfa357c3006253926d9ddd5aaac57f7e7bd9108c22f3547b5e389",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 5,
+          "tracks": 3
+        }
+      ],
+      "production_writes": false
+    }
+  }
+}

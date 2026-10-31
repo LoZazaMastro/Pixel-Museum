@@ -1,0 +1,834 @@
+{
+  "schema": "pixel-museum-editorial-input-v1",
+  "batch_id": "002-catalog",
+  "source_file": "content/catalog.json",
+  "source_sha256": "0b077b3f8628f921ab84574d286f9d9943fb8ae6acb8f136ffadde6e01cae241",
+  "entries": [
+    {
+      "entry_id": "workbook-02-24-sid-meier",
+      "kind": "person",
+      "year_context_only": 1954,
+      "date_context_only": {
+        "month": 2,
+        "day": 24,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "Birthdate anchor 1954-02-24. Later career dates belong to the specifically dated reference paragraphs, not to the birth year.",
+      "factual_note": "Selected source-bound biography replaces inherited false birthyear-as-production narration in the canonical presentation only. Source editions and their eight-language prose remain archived unchanged. This reference is not a global primary-source historical signoff.",
+      "main": {
+        "feature_id": null,
+        "title": "Sid Meier",
+        "subtitle": "A life in games",
+        "summary": "Sid Meier co-founded MicroProse and Firaxis Games.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Two companies and a strategy-game career",
+            "text": "Sid Meier is an American programmer, designer and producer born on 24 February 1954. His strategy and simulation games include the first Civilization. He co-founded MicroProse with Bill Stealey in 1982, then Firaxis Games with Jeff Briggs and Brian Reynolds in 1996, where he became Director of Creative Development. The Academy of Interactive Arts and Sciences inducted him into its Hall of Fame for his contributions to games."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "From cash registers to an Atari 800",
+            "text": "After college, Meier developed cash-register systems for department stores. Buying an Atari 800 around 1981 gave him a computer on which to explore making games. He shared his programs with co-worker Bill Stealey, who had a similar interest. The two founded MicroProse in 1982, turning their shared enthusiasm into a business during the growth of personal computing."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Turning towards strategy",
+            "text": "After the release of F-19 Stealth Fighter, Meier focused on strategy games, later saying \"Everything I thought was cool about a flight simulator had gone into that game.\" Inspired by SimCity and Empire, he created Sid Meier's Railroad Tycoon and later the game series for which he is most widely recognized, Sid Meier's Civilization, although he designed only the first installment."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Sid Meier - immutable reference revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1373713756",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/Sid_Meier?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          },
+          {
+            "title": "Sid Meier: Hall of Fame biography",
+            "url": "https://www.interactive.org/special_awards/details.asp?idSpecialAwards=8",
+            "publisher": "Academy of Interactive Arts & Sciences"
+          },
+          {
+            "title": "Firaxis studio history",
+            "url": "https://firaxis.com/about/",
+            "publisher": "Firaxis Games"
+          }
+        ]
+      },
+      "features": [
+        {
+          "feature_id": "feature-sid-meier-systems",
+          "title": "A new build on the chair",
+          "subtitle": "",
+          "summary": "Civilization took shape through repeated play and revision.",
+          "cards": [
+            {
+              "card_id": "feature:feature-sid-meier-systems:0",
+              "original_index": 0,
+              "heading": "From real time to turns",
+              "text": "Sid Meier told Warren Spector that he began with a game's subject before deciding its mechanics. Civilization first ran in real time, then became turn-based. Changing that structure altered how often the player had to make decisions while keeping the same broad historical subject. The team could try different arrangements, play them and decide which worked best."
+            },
+            {
+              "card_id": "feature:feature-sid-meier-systems:1",
+              "original_index": 1,
+              "heading": "An opening and an ending",
+              "text": "Meier described starting with two moments: an opening that draws the player in and an ending that makes the journey worthwhile. Between those points, he concentrated on building a playable game. Further research and detail could then enrich a structure the team had already tried. This left room to revise the design as they discovered how it felt to play."
+            },
+            {
+              "card_id": "feature:feature-sid-meier-systems:2",
+              "original_index": 2,
+              "heading": "A new build each morning",
+              "text": "Bruce Shelley recalled finding a new Civilization build waiting on his chair. He played through the morning, made notes and discussed them with Meier when he arrived. Meier then revised the program and prepared another version. This repeated exchange gave the project a regular cycle of testing, conversation and changes, with Shelley's observations feeding directly into the next build."
+            },
+            {
+              "card_id": "feature:feature-sid-meier-systems:3",
+              "original_index": 3,
+              "heading": "Writing the Civilopedia",
+              "text": "Shelley also wrote the manual and much of the Civilopedia's technology text. Each named discovery required information to be selected, written and checked alongside work on the game. He recalled running out of time to devise and evaluate further technologies. The system continued with unnamed future research, allowing play to progress beyond the list of historical discoveries the team had completed."
+            }
+          ],
+          "sources": [
+            {
+              "id": "spector02meier",
+              "title": "In2002, Warren Spector interviewed Sid Meier",
+              "url": "https://www.gamedeveloper.com/design/in-2002-warren-spector-interviewed-sid-meier",
+              "publisher": "Warren Spector and Sid Meier / Game Developer",
+              "source_type": "Primary designer interview, February 2002; web republication 9 October 2013",
+              "locator": "Topic before mechanics; real-time Civilization prototype; opening and concluding experience",
+              "checked": "2026-10-21",
+              "rights": "Bibliographic reference only; underlying articles, art, images, game footage and recordings retain their respective rights.",
+              "story_paragraphs": [
+                0,
+                1
+              ],
+              "paragraph_locators": {
+                "0": "Meier response to genre/mechanics: topic chosen first, Civilization changed from real time to turns",
+                "1": "Meier response to design start: initial engagement, satisfying conclusion and desire to replay"
+              }
+            },
+            {
+              "id": "shelley06chronicles",
+              "title": "Sid Meier's Civilization Chronicles: Developer Q&A 2",
+              "url": "https://worthplaying.com/article/2006/10/25/interviews/37273-sid-meiers-civilization-chronicles-developer-qa-2/",
+              "publisher": "Troy Goodfellow and Bruce Shelley / Civilization Chronicles; reproduced by WorthPlaying",
+              "source_type": "Primary assistant-designer interview, 25 October 2006",
+              "locator": "Daily prototype/playtest cycle; manual and Civilopedia writing and future-technology limit",
+              "checked": "2026-10-21",
+              "rights": "Bibliographic reference only; underlying articles, art, images, game footage and recordings retain their respective rights.",
+              "story_paragraphs": [
+                2,
+                3
+              ],
+              "paragraph_locators": {
+                "2": "Shelley response most important lesson and anecdote1: early prototype, morning notes and redesign",
+                "3": "Shelley anecdotes4–6: manual historical selection, Civilopedia blurbs and unnamed future research"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entry_id": "workbook-01-25-t-ru-iwatani",
+      "kind": "person",
+      "year_context_only": 1955,
+      "date_context_only": {
+        "month": 1,
+        "day": 25,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "birth",
+      "factual_note": "Imported dated English Playhub editorial. Adapt its calendar wording, review publisher dates and assign rights-cleared media before presenting as a finished museum stop.",
+      "main": {
+        "feature_id": null,
+        "title": "Tōru Iwatani",
+        "subtitle": "The Designer Who Turned a Maze into a Universal Language",
+        "summary": "Tōru Iwatani was born in Tokyo on January 25, 1955.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "The Designer Who Turned a Maze into a Universal Language",
+            "text": "Tōru Iwatani was born in Tokyo on 25 January 1955 and joined Namco in 1977. He designed Pac-Man around eating, a theme intended to attract women, couples and groups of friends to arcades. The maze, colourful ghosts and Power Pellets gave this familiar activity a clear set of risks and rewards. Iwatani's later career included production, supervision and teaching, following early design work that also included Gee Bee."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Entering Games Before the Language Was Settled",
+            "text": "Namco's small development teams worked across rules, graphics, sound and the arcade cabinet itself. Iwatani had a technical education and an interest in images and manga. Gee Bee combined ideas from Breakout and digital pinball, asking the player to read the ball's movement and keep it in play. Working with these machines meant considering how the controls and display communicated an action quickly enough for someone to begin playing in an arcade."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Designing an Arcade Where More People Could Enter",
+            "text": "Iwatani remembered late-1970s Japanese arcades as dark, noisy places dominated by men and games about shooting. He wanted Pac-Man to interest a broader audience. Eating provided an everyday theme, while colourful, likeable ghosts gave the pursuit a different tone. These choices affected how the game worked as well as how it looked: the player collected food, avoided pursuers and briefly gained the power to chase them in return."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "One Simple Verb Organizes the Entire Maze",
+            "text": "Eating connects Pac-Man's main actions. Dots must be collected to finish the maze, fruit offers extra points and Power Pellets make the ghosts temporarily vulnerable. Iwatani described a pizza with a missing slice as one origin of the character's shape. Moving to collect food repeatedly exposes Pac-Man to danger; taking a Power Pellet reverses the chase. Because that advantage expires, pursuing a ghost also means deciding when to turn back towards safety."
+          }
+        ],
+        "sources": [
+          {
+            "title": "www.ithistory.org",
+            "url": "https://www.ithistory.org/honor-roll/mr-t%C5%8Dru-iwatani",
+            "publisher": "www.ithistory.org"
+          },
+          {
+            "title": "www.moma.org",
+            "url": "https://www.moma.org/artists/42596-toru-iwatani",
+            "publisher": "www.moma.org"
+          },
+          {
+            "title": "www.wired.com",
+            "url": "https://www.wired.com/2010/05/pac-man-30-years/",
+            "publisher": "www.wired.com"
+          },
+          {
+            "title": "www.moma.org",
+            "url": "https://www.moma.org/collection/works/164917",
+            "publisher": "www.moma.org"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "workbook-01-17-shinichi-nakamoto",
+      "kind": "person",
+      "year_context_only": 1958,
+      "date_context_only": {
+        "month": 1,
+        "day": 17,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "birth",
+      "factual_note": "Imported dated English Playhub editorial. Adapt its calendar wording, review publisher dates and assign rights-cleared media before presenting as a finished museum stop.",
+      "main": {
+        "feature_id": null,
+        "title": "Shinichi Nakamoto",
+        "subtitle": "The Programmer Behind Bomberman's Fuse",
+        "summary": "Shinichi Nakamoto was born on January 17, 1958, and would become a central programmer and game designer at Hudson Soft.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "The Programmer Behind Bomberman's Fuse",
+            "text": "Shinichi Nakamoto was born on 17 January 1958 and became a programmer and game designer at Hudson Soft. His work included the Famicom versions of Lode Runner and Bomberman. These projects involved adapting ideas from home computers to Nintendo's console, with graphics and controls suited to a different machine. Bomberman became a major Hudson series, while Nakamoto later took on executive responsibilities at the company."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "From Part-Time Student to Hudson Key Figure",
+            "text": "Nakamoto joined Hudson Soft part-time in 1978 and left university to work there full-time in 1980. His early work involved programming, conversions and learning the hardware those games would run on. He later joined the board in 1986 and became vice president in 1999. His path through Hudson connected hands-on software development with responsibility for the wider business."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "A Port Teaches How to Speak to the Console",
+            "text": "Before Bomberman, Nakamoto worked on Hudson's Famicom conversion of Lode Runner. The port adapted its graphics, scrolling and presentation for Nintendo's console. The enemy robots provided the visual basis for the protagonist of the Famicom Bomberman. A character used as an opponent in one game became the figure players controlled in another, giving the new version a recognisable appearance."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "Three Days of Code Fix a Form Built to Last",
+            "text": "Accounts of Bomberman's Famicom development credit Nakamoto with programming it in roughly three sleepless days. The game's central action is easy to read: place a bomb, move clear and use its cross-shaped explosion to destroy enemies and blocks. Power-ups change the reach of an explosion and the routes available through the maze. The Famicom version sold more than a million copies and established the form around which the series developed."
+          }
+        ],
+        "sources": [
+          {
+            "title": "www.mobygames.com",
+            "url": "https://www.mobygames.com/person/125947/shinichi-nakamoto/",
+            "publisher": "www.mobygames.com"
+          },
+          {
+            "title": "straw-wara.net",
+            "url": "https://straw-wara.net/today01/year/birth_1958.html",
+            "publisher": "straw-wara.net"
+          },
+          {
+            "title": "randomhoohaas.flyingomelette.com",
+            "url": "https://randomhoohaas.flyingomelette.com/bomb/nes-1/ref.html",
+            "publisher": "randomhoohaas.flyingomelette.com"
+          },
+          {
+            "title": "www.mobygames.com",
+            "url": "https://www.mobygames.com/game/10806/bomberman/",
+            "publisher": "www.mobygames.com"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "workbook-06-10-yu-suzuki",
+      "kind": "person",
+      "year_context_only": 1958,
+      "date_context_only": {
+        "month": 6,
+        "day": 10,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "birth",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "Yu Suzuki",
+        "subtitle": "Yu Suzuki Uses Technology to Make Speed, Space and Everyday Life Physical",
+        "summary": "Yu Suzuki was born in 1958. His career would connect Sega’s arcade machines, Virtua Fighter and the everyday rhythms of Shenmue.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "1983 / From programmer to arcade designer",
+            "text": "Born in 1958, Yu Suzuki joined Sega in 1983 after studying electronic science at Okayama University of Science. Hang-On and Space Harrier followed in 1985. Their machines mattered as much as their screens: motorcycle controls, moving cabinets and rapidly scaled scenery made movement something a player could feel. Space Harrier carried that speed into a strange fantasy landscape."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "1986 / A driving game with a holiday in mind",
+            "text": "Out Run offered a different kind of journey. Suzuki researched European roads, and the game turned driving into a succession of changing landscapes and branching routes. The player raced a clock rather than a championship table. Hiroshi Kawaguchi's music was part of that identity: choosing a radio track before setting off helped give the drive its relaxed, aspirational character. The route and the soundtrack made the same car feel like a personal escape."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "1993 / From a pit crew to two fighters",
+            "text": "In Sega's twentieth-anniversary interview, Suzuki traced Virtua Fighter back to the pit crew in Virtua Racing. After rendering cars, he wanted to animate a human body with many connected joints. The hardware could not handle a whole football or rugby team, so he narrowed the problem to two people. That technical constraint met the arcade market's interest in fighting games. Virtua Fighter emerged from both questions, rather than simply putting polygons over an existing formula."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "1999 / Giving everyday life a timetable",
+            "text": "Shenmue moved Suzuki's work from the short arcade session into a neighbourhood the player could inhabit. Ryo Hazuki investigated his father's murder in Yokosuka, but progress also involved waiting for a shop to open, asking residents for directions or earning money at the harbour. Daily schedules and changing weather helped the setting feel independent of the investigation. Martial-arts fights and timed action sequences shared space with ordinary routines."
+          },
+          {
+            "card_id": "main:4",
+            "original_index": 4,
+            "heading": "2001 / The journey reaches Hong Kong",
+            "text": "Shenmue II continued Ryo's search in Hong Kong before taking him to Kowloon and Guilin. The move widened the first game's scale: crowded streets, unfamiliar districts and new companions replaced the familiarity of his home neighbourhood. The story still depended on conversations, work, exploration and martial arts. Its larger setting also made navigation part of the experience; learning how to find someone was a task in its own right."
+          },
+          {
+            "card_id": "main:5",
+            "original_index": 5,
+            "heading": "2008–2019 / Building YS Net and returning to Shenmue",
+            "text": "Suzuki founded YS Net in 2008. In 2015, a Kickstarter campaign gave Shenmue III a route back into production after the long gap since the second game. It was released in 2019, continuing Ryo and Shenhua's story in rural China. The circumstances were different from Sega's Dreamcast era: a new studio and a community of backers helped carry the continuation. Suzuki also received the Golden Joystick Lifetime Achievement award that year."
+          }
+        ],
+        "sources": [
+          {
+            "id": "ysnet",
+            "title": "Yu Suzuki — official YS Net biography",
+            "url": "https://www.ysnet.games/en/yu-suzuki",
+            "publisher": "YS Net"
+          },
+          {
+            "id": "sega-interview",
+            "title": "Virtua Fighter twentieth anniversary — Yu Suzuki interview, 11 December 2013",
+            "url": "https://vf20th.sega.jp/interview131211.html",
+            "publisher": "Sega"
+          },
+          {
+            "id": "suzuki-reference",
+            "title": "Yu Suzuki",
+            "url": "https://en.wikipedia.org/wiki/Yu_Suzuki",
+            "publisher": "Wikipedia contributors",
+            "license": "CC BY-SA 4.0"
+          },
+          {
+            "id": "outrun-reference",
+            "title": "Out Run — development and soundtrack",
+            "url": "https://en.wikipedia.org/wiki/Out_Run",
+            "publisher": "Wikipedia contributors",
+            "license": "CC BY-SA 4.0"
+          },
+          {
+            "id": "shenmue-reference",
+            "title": "Shenmue — setting and gameplay",
+            "url": "https://en.wikipedia.org/wiki/Shenmue_(video_game)",
+            "publisher": "Wikipedia contributors",
+            "license": "CC BY-SA 4.0"
+          },
+          {
+            "id": "shenmue2-reference",
+            "title": "Shenmue II — plot and gameplay",
+            "url": "https://en.wikipedia.org/wiki/Shenmue_II",
+            "publisher": "Wikipedia contributors",
+            "license": "CC BY-SA 4.0"
+          },
+          {
+            "id": "shenmue3-store",
+            "title": "Shenmue III — developer-published game description and screenshots",
+            "url": "https://store.steampowered.com/app/878670/Shenmue_III/",
+            "publisher": "YS Net / ININ",
+            "note": "Steam-specific 2020 availability is not used as the original 2019 release date."
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "tennis-for-two",
+      "kind": "game",
+      "year_context_only": 1958,
+      "date_context_only": {
+        "month": 10,
+        "day": 18,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "Tennis for Two",
+        "subtitle": "A laboratory becomes a playground",
+        "summary": "William Higinbotham and Robert Dvorak turned an oscilloscope into a shared tennis court.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "An experiment for visitors",
+            "text": "On 18 October 1958, visitors to Brookhaven National Laboratory could try an electronic tennis game. Physicist William Higinbotham designed it, and technician Robert Dvorak built the circuitry. An analog computer calculated the ball's path while an oscilloscope displayed the court from the side."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Two people at the controls",
+            "text": "Two hand controllers let visitors send the ball over a net. The important feature was a simple social one: people could participate together instead of watching another static scientific display."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "One beginning among many",
+            "text": "Tennis for Two gave Brookhaven's public visitors a chance to use an electronic display for play. They could take turns at the controls, watch the ball's trajectory and respond to another person's shot. The 1958 demonstration is a documented early example of a screen-based electronic game created to entertain a public audience."
+          }
+        ],
+        "sources": [
+          {
+            "title": "The First Video Game?",
+            "url": "https://www.bnl.gov/about/history/firstvideo.php",
+            "publisher": "Brookhaven National Laboratory"
+          },
+          {
+            "title": "Tennis for Two — original release infobox, Wikipedia revision 1369467010",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1369467010",
+            "publisher": "English Wikipedia contributors"
+          }
+        ]
+      },
+      "features": [
+        {
+          "feature_id": "feature-tennis-open-house",
+          "title": "Two controls at a laboratory open day",
+          "subtitle": "",
+          "summary": "Two laboratory colleagues turned visitors into players using available equipment.",
+          "cards": [
+            {
+              "card_id": "feature:feature-tennis-open-house:0",
+              "original_index": 0,
+              "heading": "Visitors take control",
+              "text": "For Brookhaven's visitors' day on 18 October 1958, William Higinbotham wanted an exhibit people could participate in. He designed an electronic tennis game, and technician Robert Dvorak built the circuitry with him. An analog computer calculated the ball's movement and an oscilloscope displayed the court. Two visitors could take the controls and see their decisions change what happened on screen."
+            },
+            {
+              "card_id": "feature:feature-tennis-open-house:1",
+              "original_index": 1,
+              "heading": "Two players, one display",
+              "text": "Each player held a separate controller. Turning its dial changed the angle, and pressing a button returned the ball. The oscilloscope showed the court from the side, with a net between the opponents. Switching circuitry combined the court, ball and other elements into a single image. This made the available laboratory equipment readable as a small tennis match."
+            },
+            {
+              "card_id": "feature:feature-tennis-open-house:2",
+              "original_index": 2,
+              "heading": "Reconstruction requires choices",
+              "text": "For the game's 2008 anniversary, Peter Takacs, Gene Von Achen, Paul O'Connor and Scott Coburn reconstructed it at Brookhaven. They worked from Higinbotham's plans and sought period components, including relays and germanium transistors. Modern integrated circuits simulated the original vacuum-tube analog computer. These choices allowed visitors to try the interaction again while preserving the display and controls of the earlier design."
+            },
+            {
+              "card_id": "feature:feature-tennis-open-house:3",
+              "original_index": 3,
+              "heading": "Repairing the missing court",
+              "text": "After roughly two hours of the anniversary demonstration, the court line disappeared from the screen. Takacs consulted the plans, O'Connor found the oscillator chip needed for the repair, and Von Achen replaced the damaged component. Within 25 minutes the game was working again. Diagnosing the missing line required the team to understand the circuitry as well as the visible game."
+            }
+          ],
+          "sources": [
+            {
+              "id": "bnl58",
+              "title": "The First Video Game?",
+              "url": "https://www.bnl.gov/about/history/firstvideo.php",
+              "publisher": "Brookhaven National Laboratory",
+              "source_type": "primary_institutional_history",
+              "locator": "Visitors’ day, 18 October 1958; Higinbotham, Dvorak, controllers and analog apparatus. Direct fetch timed out; primary indexed page text inspected.",
+              "checked": "2026-10-20",
+              "rights": "Bibliographic reference; source text and images retain their own rights. Card prose is original and contains no direct quotations. Image permissions require separate review.",
+              "story_paragraphs": [
+                0,
+                1
+              ]
+            },
+            {
+              "id": "bnl08",
+              "title": "Tennis for Two anniversary report, The Bulletin 62(38)",
+              "url": "https://www.bnl.gov/bnlweb/pubaf/bulletin/files/2008/20081031.pdf",
+              "publisher": "Diane Greenberg / Brookhaven National Laboratory, 31 October 2008",
+              "source_type": "primary_institutional_event_report",
+              "locator": "PDF p. 1:reconstruction team, substituted analog computer, failed oscillator and repair",
+              "checked": "2026-10-20",
+              "rights": "Bibliographic reference; source text and images retain their own rights. Card prose is original and contains no direct quotations. Image permissions require separate review.",
+              "story_paragraphs": [
+                2,
+                3
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entry_id": "daily-12-06",
+      "kind": "person",
+      "year_context_only": 1959,
+      "date_context_only": {
+        "month": 12,
+        "day": 6,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "Scheduled published Playhub edition. The calendar slot is not asserted as a historical anniversary; the year is the source's historical anchor.",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "Satoru Iwata",
+        "subtitle": "Understanding a Problem Begins with Listening",
+        "summary": "Born in Sapporo on 6 December 1959, Satoru Iwata worked as a programmer and led HAL Laboratory before becoming Nintendo's president from 2002 to 2015.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Understanding a Problem Begins with Listening",
+            "text": "Satoru Iwata was born in Sapporo on 6 December 1959. He worked as a programmer at HAL Laboratory, later leading the studio before becoming Nintendo's president from 2002 to 2015. During his presidency, Nintendo DS and Wii introduced touchscreens, motion controls and other ways to reach new players. His Iwata Asks interviews gave developers room to explain how their games and hardware had been made, including the prototypes and difficulties behind the finished products."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Before He Was President, He Was a Programmer",
+            "text": "Iwata's early work at HAL Laboratory involved programming within tight limits on memory and performance. Nintendo's accounts of Balloon Fight identify him as the programmer of its NES version. This background gave him direct experience of development tools and the practical effects of design choices. When he later worked with teams as an executive, he could discuss their problems using knowledge gained from building games himself."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Solving a Problem Can Mean Reading Someone Else's Code",
+            "text": "While Game Freak was developing Pokémon Gold and Silver, Iwata helped address the work of localising the earlier Pokémon games for Western audiences. In Iwata Asks, he described obtaining and studying the source code before suggesting how to organise the task. Understanding the existing program let him discuss the work with its developers and help plan changes while the team was occupied with another project."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "HAL Laboratory Also Teaches Him How to Manage a Crisis",
+            "text": "Before joining Nintendo's leadership, Iwata led HAL Laboratory. The role involved people, deadlines and company finances alongside the software he knew as a programmer. Later conversations with Kirby developers returned to that experience, covering cancelled projects, unsuccessful attempts and decisions about how the studio worked. Speaking with former colleagues allowed him to ask about the practical difficulties of bringing a game to completion."
+          },
+          {
+            "card_id": "main:4",
+            "original_index": 4,
+            "heading": "Nintendo DS and Wii Change the Question, Not Only the Answer",
+            "text": "Nintendo DS and Wii sought players through familiar actions. A stylus could point or draw on the DS touchscreen; the Wii Remote could be aimed or swung. Under Iwata's leadership, these interfaces became central to Nintendo's hardware strategy. They gave developers new ways to explain an action and helped people with little experience of conventional gamepads begin playing. Each still required careful software design to make its movements clear and dependable."
+          },
+          {
+            "card_id": "main:5",
+            "original_index": 5,
+            "heading": "Iwata Asks Turns Development into an Archive",
+            "text": "Iwata Asks recorded conversations about prototypes, abandoned versions, tools and collaboration between departments. Iwata asked developers who had proposed a feature, why an approach changed and how a hardware limitation affected the game. The answers preserve contributions from programmers, designers, artists and engineers. They also show how a released product developed through experiments and revisions by several people."
+          },
+          {
+            "card_id": "main:6",
+            "original_index": 6,
+            "heading": "Speaking to the Public Without Stopping Speaking as a Developer",
+            "text": "Iwata's presentations and interviews often explained a problem by describing its context and the people involved in solving it. This gave the public a view of technical and organisational decisions inside Nintendo. After his death in 2015, the company documented his career, while the development conversations he had hosted remained available. Those accounts preserve working experiences that would otherwise have been difficult for players to see."
+          }
+        ],
+        "sources": [
+          {
+            "title": "nintendo.co.jp",
+            "url": "https://www.nintendo.co.jp/ir/pdf/2015/150713e.pdf",
+            "publisher": "nintendo.co.jp"
+          },
+          {
+            "title": "nintendo.com",
+            "url": "https://www.nintendo.com/en-gb/News/2016/November/Nintendo-Classic-Mini-NES-special-interview-Volume-2-Balloon-Fight-1154453.html",
+            "publisher": "nintendo.com"
+          }
+        ]
+      },
+      "features": [
+        {
+          "feature_id": "feature-satoru-iwata-listening",
+          "title": "Ask where the decision came from",
+          "subtitle": "",
+          "summary": "Hardware choices emerge through conversation.",
+          "cards": [
+            {
+              "card_id": "feature:feature-satoru-iwata-listening:0",
+              "original_index": 0,
+              "heading": "The experiments before the object",
+              "text": "In the Wii Remote interview, Iwata asked Genyo Takeda about work preceding the finished controller. Takeda described small teams pairing GameCube software with dedicated interfaces, including the Donkey Konga bongos and a dance mat. Ikeda traced his experience with sensors through Pocket Pikachu and Kirby Tilt 'n' Tumble. The conversation follows several experiments that contributed to the team's knowledge of alternative controls."
+            },
+            {
+              "card_id": "feature:feature-satoru-iwata-listening:1",
+              "original_index": 1,
+              "heading": "A designer's own difficulty",
+              "text": "Industrial designer Kenichiro Ashida described his experience as a parent with less time to play demanding games. Adding functions to another two-handed controller no longer answered the difficulty he felt. Iwata asked how this changed his thinking about the device. Ashida's account connects the eventual remote-shaped controller with a practical question: how could someone begin using it comfortably after spending less time with games?"
+            },
+            {
+              "card_id": "feature:feature-satoru-iwata-listening:2",
+              "original_index": 2,
+              "heading": "Two routes to the same experiment",
+              "text": "The Wii Fit conversation describes two routes towards measuring balance. Hardware planners considered sumo wrestlers using two scales, while a software developer encountered a posture method using a similar arrangement. The teams arrived at related prototypes through different experiences. They also discussed rejected ideas and a stage when they came close to abandoning the project."
+            },
+            {
+              "card_id": "feature:feature-satoru-iwata-listening:3",
+              "original_index": 3,
+              "heading": "What a wider stance changes",
+              "text": "The Balance Board's width became a practical problem. Developers had tried to keep it compact and inexpensive, using bathroom scales as a reference. Watching exercise footage made them reconsider the space needed for a shoulder-width stance. Iwata's questions let the team explain the resulting change, including their frustration over conflicting instructions. The final dimensions had to accommodate the user's body as well as the cost of the device."
+            }
+          ],
+          "sources": [
+            {
+              "id": "wii-remote-asks",
+              "title": "Iwata Asks: Wii Remote, Taking Control Back to the Drawing Board",
+              "url": "https://www.nintendo.com/en-gb/Iwata-Asks/Iwata-Asks-Wii/Iwata-Asks-Wii-Remote/1-Taking-Control-Back-to-the-Drawing-Board/1-Taking-Control-Back-to-the-Drawing-Board-232376.html",
+              "publisher": "Satoru Iwata and Nintendo hardware/design colleagues / Nintendo, Wii-era interview",
+              "source_type": "primary_participant_group_interview",
+              "locator": "Taking Control Back to the Drawing Board: Takeda's interface teams; Ikeda's peripherals/sensor work. Taking Control Back to the Drawing Board: Ashida's creator/player difference, parenthood and reconsidering two-handed play.",
+              "checked": "2026-10-21",
+              "rights": "Bibliographic reference only. The narrative is original and contains no direct quotations. Public access does not supply image, artwork, game-data or recording reproduction rights.",
+              "story_paragraphs": [
+                0,
+                1
+              ],
+              "paragraph_locators": {
+                "0": "Taking Control Back to the Drawing Board: Takeda's interface teams; Ikeda's peripherals/sensor work.",
+                "1": "Taking Control Back to the Drawing Board: Ashida's creator/player difference, parenthood and reconsidering two-handed play."
+              }
+            },
+            {
+              "id": "wiifit-asks",
+              "title": "Iwata Asks: Wii Fit, The Team that Almost Broke Up",
+              "url": "https://www.nintendo.com/en-gb/Iwata-Asks/Iwata-Asks-Wii-Fit/Volume-3-The-Wii-Fit-Software/2-The-Team-that-Almost-Broke-Up/2-The-Team-that-Almost-Broke-Up-208036.html",
+              "publisher": "Satoru Iwata with Nintendo Wii Fit developers / Nintendo",
+              "source_type": "primary_participant_group_interview",
+              "locator": "The Team that Almost Broke Up: hardware/sumo and software/Seitai routes, rejected ideas and threatened breakup. The Team that Almost Broke Up: training footage, shoulder-width stance, compactness/cost constraint and Miyamoto's presence during the interview.",
+              "checked": "2026-10-21",
+              "rights": "Bibliographic reference only. The narrative is original and contains no direct quotations. Public access does not supply image, artwork, game-data or recording reproduction rights.",
+              "story_paragraphs": [
+                2,
+                3
+              ],
+              "paragraph_locators": {
+                "2": "The Team that Almost Broke Up: hardware/sumo and software/Seitai routes, rejected ideas and threatened breakup.",
+                "3": "The Team that Almost Broke Up: training footage, shoulder-width stance, compactness/cost constraint and Miyamoto's presence during the interview."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entry_id": "workbook-01-20-will-wright-game-designer",
+      "kind": "person",
+      "year_context_only": 1960,
+      "date_context_only": {
+        "month": 1,
+        "day": 20,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "birth",
+      "factual_note": "Imported dated English Playhub editorial. Adapt its calendar wording, review publisher dates and assign rights-cleared media before presenting as a finished museum stop.",
+      "main": {
+        "feature_id": null,
+        "title": "Will Wright",
+        "subtitle": "The Designer Who Turned Systems into Toys",
+        "summary": "Will Wright was born on January 20, 1960, and became one of the designers who most strongly shifted video games from winning toward experimentation.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "The Designer Who Turned Systems into Toys",
+            "text": "Will Wright was born on 20 January 1960 and co-founded Maxis with Jeff Braun in 1987. His games let players build and observe systems at different scales. SimCity follows roads, population and services; The Sims moves into homes and relationships; Spore extends towards evolution and space. The idea behind SimCity began while Wright was making tools for Raid on Bungeling Bay and found that constructing its world interested him more than destroying it."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "The Game Begins When the Editor Becomes More Fun",
+            "text": "While developing the helicopter game Raid on Bungeling Bay, Wright built Wedit, a tool for scrolling around its map and placing elements. He found himself enjoying this work as much as the game it supported. The editor began developing into a separate project. Research into urban dynamics, traffic and Jay Forrester's models helped Wright turn a map the player could modify into a city whose behaviour could also be observed."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "The City Has No Ending, Only Consequences",
+            "text": "In SimCity, roads, land use, taxes, population and services affect one another. Changing one part of the city can create consequences elsewhere, so building also means watching what happens next. A city can grow, encounter difficulties or be rebuilt. Without a single final victory, the player can keep testing different approaches, interpreting problems such as congestion and deciding which part of the system to change."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "Maxis Builds Toys That React",
+            "text": "Wright and Jeff Braun founded Maxis in 1987, two years before SimCity's release. Wright described his games as toys that encourage curiosity and self-directed learning. Their subjects changed across SimCity, The Sims and Spore, while construction and observation remained important. A congested district or unhappy household gives the player a problem to investigate, with the simulation responding to the next decision."
+          }
+        ],
+        "sources": [
+          {
+            "title": "ithistory.org",
+            "url": "https://ithistory.org/honoree/william-will-ralph-wright",
+            "publisher": "ithistory.org"
+          },
+          {
+            "title": "www.imdb.com",
+            "url": "https://www.imdb.com/name/nm0942928/",
+            "publisher": "www.imdb.com"
+          },
+          {
+            "title": "www.gamedeveloper.com",
+            "url": "https://www.gamedeveloper.com/game-platforms/gdc-2011-wright-talks-i-raid-on-bungeling-bay-i-origins",
+            "publisher": "www.gamedeveloper.com"
+          },
+          {
+            "title": "www.gamedeveloper.com",
+            "url": "https://www.gamedeveloper.com/business/the-replay-interviews-will-wright",
+            "publisher": "www.gamedeveloper.com"
+          },
+          {
+            "title": "www.ea.com",
+            "url": "https://www.ea.com/ea-studios/maxis/about",
+            "publisher": "www.ea.com"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "spacewar",
+      "kind": "game",
+      "year_context_only": 1962,
+      "date_context_only": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "Spacewar!",
+        "subtitle": "Two ships share the PDP-1 screen",
+        "summary": "A community around MIT's PDP-1 made spacecraft, gravity and competition fit on one luminous screen.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "A game built by collaborators",
+            "text": "Spacewar! is a two-player space-combat game developed around MIT's PDP-1 in 1962. Steve Russell wrote its first version after discussions with Martin Graetz and Wayne Wiitanen, with Peter Samson, Dan Edwards and others contributing improvements. Players steer two ships around a gravitational hazard, trying to line up a shot while keeping their own craft clear of danger."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Making movement responsive",
+            "text": "Its movement depended on a computer continually updating a world and responding to two people. Custom controllers made the exchange more comfortable than reaching for the computer's own switches."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Shared code and surviving hardware",
+            "text": "Spacewar! spread through a small network of institutions with compatible computers. People adapted the program and shared changes before a mass market for game software existed. Decades later, restoring a PDP-1 made demonstrations possible again. Running the game on that equipment also depended on recovering its display, controls and timing."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Spacewar! — PDP-1 Restoration Project",
+            "url": "https://www.computerhistory.org/pdp-1/spacewar/",
+            "publisher": "Computer History Museum"
+          }
+        ]
+      },
+      "features": [
+        {
+          "feature_id": "feature-spacewar-sharing",
+          "title": "A game improved by the next pair of hands",
+          "subtitle": "",
+          "summary": "A collaborative program depended on another collective effort to return.",
+          "cards": [
+            {
+              "card_id": "feature:feature-spacewar-sharing:0",
+              "original_index": 0,
+              "heading": "A shared experiment",
+              "text": "Steve Russell, Martin Graetz and Wayne Wiitanen conceived Spacewar! while considering what the PDP-1 display could do. MIT professor Jack Dennis helped provide access to the machine. Russell wrote the first version, then Peter Samson, Dan Edwards, Graetz and others improved it in spring 1962. Several people could try the program, discuss what happened and make changes of their own."
+            },
+            {
+              "card_id": "feature:feature-spacewar-sharing:1",
+              "original_index": 1,
+              "heading": "Steering under gravity",
+              "text": "Two ships fight around a central star whose gravity changes their trajectories. A moving ship keeps travelling, so steering requires the player to anticipate where it will go. Samson's star field and the other contributors' changes developed the scene around that action. Dedicated controls made it easier to direct the ships through the PDP-1's input facilities."
+            },
+            {
+              "card_id": "feature:feature-spacewar-sharing:2",
+              "original_index": 2,
+              "heading": "Restoring the power",
+              "text": "The Computer History Museum later restored a PDP-1 built in 1963. Volunteers began by repairing and testing its power supplies to protect the circuitry when it was switched on. The machine returned to life on 19 May 2004. The team sought repairs that preserved evidence of the original construction. Its CPU worked well, while the surrounding equipment required further attention."
+            },
+            {
+              "card_id": "feature:feature-spacewar-sharing:3",
+              "original_index": 3,
+              "heading": "Recovering the whole system",
+              "text": "The restoration also covered the paper-tape reader and punch, the typewriter, and the display with its light pen. These devices allowed programs to be loaded and people to interact with the computer. On 1 March 2005, the restored machine ran Spacewar! Software from the museum's collection could work again once the necessary hardware had been repaired and tested together. Maintenance continued to keep the system available for demonstrations."
+            }
+          ],
+          "sources": [
+            {
+              "id": "space62",
+              "title": "Spacewar! — PDP-1 Restoration Project",
+              "url": "https://www.computerhistory.org/pdp-1/spacewar/",
+              "publisher": "Computer History Museum",
+              "source_type": "institutional_history_of_held_software",
+              "locator": "Russell, Graetz, Wiitanen; Samson, Edwards; Jack Dennis; controllers and gravitational play",
+              "checked": "2026-10-20",
+              "rights": "Bibliographic reference; source text and images retain their own rights. Card prose is original and contains no direct quotations. Image permissions require separate review.",
+              "story_paragraphs": [
+                0,
+                1
+              ]
+            },
+            {
+              "id": "space_restore",
+              "title": "PDP-1 Restoration",
+              "url": "https://www.computerhistory.org/pdp-1/restoration/",
+              "publisher": "Computer History Museum",
+              "source_type": "primary_restoration_project_report",
+              "locator": "19 May 2004 power-up; reversible work; power supplies/peripherals; 1 March 2005 Spacewar run",
+              "checked": "2026-10-20",
+              "rights": "Bibliographic reference; source text and images retain their own rights. Card prose is original and contains no direct quotations. Image permissions require separate review.",
+              "story_paragraphs": [
+                2,
+                3
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "status": "PASS",
+  "locale": "es",
+  "entries": [
+    {
+      "entry_id": "wikipedia-64999857",
+      "source_fields_sha256": "814ace70332f973373fc29ebd17f08d8d27fb5c179ea57e157ca6e0e24b708bc",
+      "translation_sha256": "05b332bab7f31bc2e3118017e5346df07977db4467a722cdacd46c448ce94c17",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch325/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "05cb16499860d677d326ecdf6b1ac71b75bc48086db0b4b03b625074818b9e51"
+    },
+    {
+      "entry_id": "wikipedia-65259792",
+      "source_fields_sha256": "4668e35f029d4b34110c6ac202d72f146ebd5b867422443fe1525a474be3d342",
+      "translation_sha256": "aa1977cdca7d07f9088f87ba19ed51d2f24b68d29ad5e9aee0d12c49362c8822",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch325/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "05cb16499860d677d326ecdf6b1ac71b75bc48086db0b4b03b625074818b9e51"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "/root/package_audit",
+    "actual_receipt": "build/research/catalog-2020-chronological/november-final-two-private/independent-package-audit-approval.json",
+    "actual_receipt_sha256": "0eee592631d779f7c3b3d623ff6eb338d3cab65970d242c893f80db51a7cc6dc",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "/root/package_audit",
+      "index": "build/research/catalog-2020-chronological/november-final-two-private/two-original-source-media-four-language-private-index.json",
+      "index_sha256": "8e8a4fb3e04ce6bfed75076803b86b0aee9de929e3fec87891b11f1e35e69fde",
+      "owners": [
+        {
+          "entry_id": "wikipedia-64999857",
+          "slug": "cold-war",
+          "source": "build/research/catalog-2020-chronological/november-final-two-private/cold-war/complete-original-source-media-private-candidate.json",
+          "source_sha256": "cec18c5024aff0dc1143c3a783faaea0ad29f5e782eded7405622591bb2498dd",
+          "target": "build/research/catalog-2020-chronological/november-final-two-private/cold-war/complete-four-language-private-candidate.json",
+          "target_sha256": "d12d0e13de8a4da3f0ea1c673a40ce261de153e6d14dda72df92495d1946be64",
+          "contact": "build/research/catalog-2020-chronological/november-final-two-private/cold-war/final-selected-media-contact.jpg",
+          "contact_sha256": "dcf84ea92a441045c2c7c76b96cb77989ba7d13a5c4b7713340316369cfa30b1",
+          "english_cards": 4,
+          "localized_cards": 16,
+          "images": 5,
+          "tracks": 3,
+          "finite_errata": 1
+        },
+        {
+          "entry_id": "wikipedia-65259792",
+          "slug": "age-calamity",
+          "source": "build/research/catalog-2020-chronological/november-final-two-private/age-calamity/complete-original-source-media-private-candidate.json",
+          "source_sha256": "4f3f5e26c54da59e3b46db3e6a71654a15e782b70a83c85ae060957c37592d9d",
+          "target": "build/research/catalog-2020-chronological/november-final-two-private/age-calamity/complete-four-language-private-candidate.json",
+          "target_sha256": "5a71a708e1136ecb35269bb6c2b4304e38b1aab6fb41899b566957ad8db5b5f8",
+          "contact": "build/research/catalog-2020-chronological/november-final-two-private/age-calamity/final-selected-media-contact.jpg",
+          "contact_sha256": "4f2729497d6d4f426bca2d9ef8ebb865f4f7ca4055f1f061eca38644bdf9f96c",
+          "english_cards": 5,
+          "localized_cards": 20,
+          "images": 6,
+          "tracks": 111,
+          "finite_errata": 1
+        }
+      ],
+      "scope": {
+        "english_paragraphs_read": 9,
+        "localized_paragraphs_read": 36,
+        "final_contact_images_seen": 11,
+        "new_coldwar_recording_metadata_read": 3,
+        "age_calamity_tracks_preserved": 111
+      },
+      "findings_resolved": [
+        "ColdWar P2 final subject now specifically Combined Arms: Domination and four localized equivalents; initial umbrella mode list unchanged. Activision primary distinguishes Assault and Domination."
+      ],
+      "evidence": [
+        "All EN/IT/FR/DE/ES summaries,headings and paragraphs read; both final contacts personally viewed. Original clean covers and contextual game imagery, no box backs.",
+        "Activision original October2020 Mode Recon independently opened and read: VIP six players/four rounds, CombinedArms Domination12v12/400points; qualified final sentence matches.",
+        "Selected ColdWar/BellsTheme/1981 metadata read: original2020 Activision/Symphonic delivery, JackWall composer and CindyShapiro co-composer only ColdWar, publicAAC. AppleMusic soundtrack release independently read.",
+        "AgeCalamity sole EN edit removes dangling grammatical fragment, preserves five paragraphs and111 existing recordings."
+      ],
+      "limits": [
+        "Metadata/editorial/visual review only, no PS5 playback or audio audition asserted;111 untouched recordings not redundantly probed."
+      ],
+      "production_writes": false
+    }
+  }
+}

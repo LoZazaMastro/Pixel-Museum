@@ -1,0 +1,167 @@
+{
+  "title": "Before the First Gallery",
+  "source": "Original Pixel Museum synthesis",
+  "generator": "compose_onboarding.py",
+  "shared_voice_and_space": "compose.py",
+  "sample_rate": 24000,
+  "seconds": 64,
+  "chord_midi_notes": [
+    [
+      50,
+      57,
+      60,
+      64,
+      69
+    ],
+    [
+      53,
+      60,
+      64,
+      67,
+      74
+    ],
+    [
+      46,
+      53,
+      57,
+      60,
+      65
+    ],
+    [
+      45,
+      52,
+      55,
+      62,
+      64
+    ]
+  ],
+  "events": [
+    {
+      "start": -0.8,
+      "duration": 19.0,
+      "kind": "pad",
+      "midi": 57
+    },
+    {
+      "start": -0.7000000000000001,
+      "duration": 19.0,
+      "kind": "pad",
+      "midi": 60
+    },
+    {
+      "start": -0.6000000000000001,
+      "duration": 19.0,
+      "kind": "pad",
+      "midi": 64
+    },
+    {
+      "start": -0.5,
+      "duration": 19.0,
+      "kind": "pad",
+      "midi": 69
+    },
+    {
+      "start": 15.2,
+      "duration": 19.0,
+      "kind": "pad",
+      "midi": 60
+    },
+    {
+      "start": 15.299999999999999,
+      "duration": 19.0,
+      "kind": "pad",
+      "midi": 64
+    },
+    {
+      "start": 15.399999999999999,
+      "duration": 19.0,
+      "kind": "pad",
+      "midi": 67
+    },
+    {
+      "start": 15.5,
+      "duration": 19.0,
+      "kind": "pad",
+      "midi": 74
+    },
+    {
+      "start": 31.2,
+      "duration": 19.0,
+      "kind": "pad",
+      "midi": 53
+    },
+    {
+      "start": 31.3,
+      "duration": 19.0,
+      "kind": "pad",
+      "midi": 57
+    },
+    {
+      "start": 31.4,
+      "duration": 19.0,
+      "kind": "pad",
+      "midi": 60
+    },
+    {
+      "start": 31.5,
+      "duration": 19.0,
+      "kind": "pad",
+      "midi": 65
+    },
+    {
+      "start": 47.2,
+      "duration": 19.0,
+      "kind": "pad",
+      "midi": 52
+    },
+    {
+      "start": 47.300000000000004,
+      "duration": 19.0,
+      "kind": "pad",
+      "midi": 55
+    },
+    {
+      "start": 47.400000000000006,
+      "duration": 19.0,
+      "kind": "pad",
+      "midi": 62
+    },
+    {
+      "start": 47.5,
+      "duration": 19.0,
+      "kind": "pad",
+      "midi": 64
+    }
+  ],
+  "excluded_voices": [
+    "keys",
+    "bell",
+    "bass",
+    "percussion",
+    "arpeggio",
+    "melody"
+  ],
+  "rms": 0.04500000178813934,
+  "peak": 0.16144567728042603,
+  "loop_step_peak": 0.005687028169631958,
+  "path": "eras\\onboarding\\intro.ogg",
+  "sha256": "dc1d4e474021fda0137a3ad2455f1ff81591b16c4451fb004bbf3eca5f155f11",
+  "existing_game_and_culture_sha256": {
+    "eras\\1950.ogg": "4778c4982d8885ec01918e740327a9073ae204136bd6ec8fb54a22341ce60d8e",
+    "eras\\1960.ogg": "3c3fce11ed9bac74e3a813f93b963e7436ec416c867ef449a23e9a5389da12c4",
+    "eras\\1970.ogg": "23e6591c5d72aea9aa25fbc7a00021ab535c2783e33e422b7410b7a80fb08231",
+    "eras\\1980.ogg": "8196ae03a9136c474279387672ceb359cc1c2e789e4e2ceef50e972d21f614d3",
+    "eras\\1990.ogg": "0d88038d6dc37cff4bd1a05a181400ec4682307aed5d65dc67f18096a88dd8f2",
+    "eras\\2000.ogg": "0a41a67dc6294cff7bea2c707445200d8916252c2c16a6dcc6eeafd68bc39dc5",
+    "eras\\2010.ogg": "d5018b9adfa05fd9e35ab9e4f18670dedaf163f2185031e43702143eb605cf11",
+    "eras\\2020.ogg": "d6b037c9a947a0ccf1b0c8da20ddf0688745fcefe03ab17303745b4a1aeb74cb",
+    "eras\\culture\\1950.ogg": "3fe763ab4542251bb59ee14296f7a719de1b68dbdf009eff2462cb2d1f39ec67",
+    "eras\\culture\\1960.ogg": "bed2effee4ac7565907166862e181f7bf7d28f2f77b211cbca48c4a221823220",
+    "eras\\culture\\1970.ogg": "0ecbe675b586ec31dcce7a2dadd4af4ef4d2dd03d80f26f8d73944df5a4c600b",
+    "eras\\culture\\1980.ogg": "1310341f0105fd5523e61da5e1c06ff2805f6f95fc5ab98a09e6d16616f88603",
+    "eras\\culture\\1990.ogg": "4da2b03322c50a9ba1398a4fe53f0840362f2c3e1f45887b91f5d88c3391afa6",
+    "eras\\culture\\2000.ogg": "c63c4192c6bfc252a1937ad736785eeefefea8c0fdf663903d29d6a5c182765e",
+    "eras\\culture\\2010.ogg": "2f4d2563f75a0352fb160a8fb5eb061e3aa72da8bb1009d91d42048c73d8b984",
+    "eras\\culture\\2020.ogg": "82c58487c626713a38f64ffe9911ba573c7fd6d43fc18cb18e20e66527f30199"
+  }
+}

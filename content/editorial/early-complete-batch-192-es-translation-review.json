@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "locale": "es",
+  "review": "Binding of exact independently approved complete candidate members; no new linguistic review substituted. Every full candidate SHA and independent PASS receipt checked, all current English five fields and translation hashes validated.",
+  "entries": [
+    {
+      "entry_id": "workbook-10-10-portal",
+      "source_fields_sha256": "f4b7277c9a38d9301668b1ff64adfb552f4e3f1cf372fe5a9ffb4c734d5cf425",
+      "translation_sha256": "1a11d8b97513770000c8bba7c95f76034a1c3901396e5eef22958855b6c7515b",
+      "independent_peer": "build/research/portal2007-four-language-completion/independent-all-fields-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "a874e8f02cb98b70c6af8a6780bf9cdc7f3d208755a0c0461f4339eab2036a1d",
+      "candidate_path": "build/research/portal2007-four-language-completion/portal-seven-whole-paragraphs-four-language-full-prior-read-candidate.json",
+      "candidate_sha256": "15ee5d4bad3381da9b7bd020b0cc1630aa5ea4567c38c492f68bc2c2f1659338"
+    },
+    {
+      "entry_id": "feature-kim-swift-spatial-puzzles",
+      "source_fields_sha256": "097fa1293be0f0598be75831f319bf54ca9aa4984146f6bb2df234cfd75f1196",
+      "translation_sha256": "e20bb7b7945d399143db2bb7b93d3849028883c1a722dcbd7b764b622333b585",
+      "independent_peer": "build/research/swift2007-four-language-completion/independent-all-fields-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "89daab5343fb5d2c8250d97cfe32861689f6b6f9aad59a76f445d97dd6fa40bc",
+      "candidate_path": "build/research/swift2007-four-language-completion/swift-four-language-natural-italian-portal-through-door-candidate.json",
+      "candidate_sha256": "6f8c019d9cad200a42842c7b901fe34c62a4d71976cb85e76931a3669edb275b"
+    },
+    {
+      "entry_id": "wikipedia-1847427",
+      "source_fields_sha256": "a1043914d7969e534ae8f469277d640ba43dfac8380778e3ad31e2ce3bf23e4b",
+      "translation_sha256": "19d793befeea5aa74602f95d11d08576cca811e17e71a15d49d73ec6871aa384",
+      "independent_peer": "build/research/tf2007-four-language-completion/independent-all-fields-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "514b5e8d0853c7b5dd9f886bd3e87a6a8d3638f9fb517d1b05dbdec8b089d01b",
+      "candidate_path": "build/research/tf2007-four-language-completion/tf-four-language-natural-free-to-play-users-and-french-casual-experience-candidate.json",
+      "candidate_sha256": "b29e35ef93cce8da8c4e87149cde5809d6333409b6243b8d07520b1767ba42eb"
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "status": "PASS",
+  "locale": "es",
+  "entries": [
+    {
+      "entry_id": "wikipedia-81061939",
+      "source_fields_sha256": "7a607073a895494942bcfef897dab3d5d5cb6fa4e19704ec5616bd38ed9d0176",
+      "translation_sha256": "b301c083ad8aa698cfe58eaedd49121c77f471507e408224f30ab8cebc3d17c3",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch387/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "cbb0d28f4581997c8d5317bd4eeb355fc1ce5bdc691a5a72e666144e0ca57688"
+    },
+    {
+      "entry_id": "wikipedia-73307133",
+      "source_fields_sha256": "c9fc4cb75a1acb6aaf66f25ef169af072aa2ca9bd8581f0a163aba8c856e917f",
+      "translation_sha256": "71d89fa3bb12ac1387f96abbec1c6d8442dcb16c3335c2bd4858645394fec170",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch387/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "cbb0d28f4581997c8d5317bd4eeb355fc1ce5bdc691a5a72e666144e0ca57688"
+    },
+    {
+      "entry_id": "wikipedia-68686424",
+      "source_fields_sha256": "8f5cc25a2501d13651bc3aa0e4d9128efd6c3a7da18b224c48e51e53b21cea4c",
+      "translation_sha256": "dcea7cbc29ba3882e5792539280fcc703406dee765dbeff03507c2c98da401b1",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch387/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "cbb0d28f4581997c8d5317bd4eeb355fc1ce5bdc691a5a72e666144e0ca57688"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "category_audit",
+    "actual_receipt": "build/research/catalog-2026-chronological/root-may-september-three-private/independent-category-audit-approval.json",
+    "actual_receipt_sha256": "fc25fc35f23d46499ce7e95e36605abd41a993f50f13c7f99ad5cb2f7bb74877",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "category_audit",
+      "independent_of_author_and_translator": true,
+      "index": "build/research/catalog-2026-chronological/root-may-september-three-private/three-private-index.json",
+      "index_sha256": "1ab4871d4fe36bf80652a0b125e20b024ca488a0b77e4bcb12096bab2807b40c",
+      "owners": [
+        {
+          "entry_id": "wikipedia-81061939",
+          "slug": "yoshi",
+          "source": "build/research/catalog-2026-chronological/root-may-september-three-private/yoshi-source-private-candidate.json",
+          "source_sha256": "6e662c44df83b1108ef216cec937c913c948475e0153213931eb1ab1ccad1c06",
+          "target": "build/research/catalog-2026-chronological/root-may-september-three-private/yoshi-four-language-private-candidate.json",
+          "target_sha256": "7fce17b81b7f3b3bb8c5948b7893bed860910d4f35c6fe2144b1f9ededaec9ba",
+          "contact": "build/research/catalog-2026-chronological/root-may-september-three-private/yoshi-final-contact.jpg",
+          "contact_sha256": "76124c1cc2af69b21b8eb1c81dcd286189f3396e121174902a9b10d0509d4b59",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 4,
+          "tracks": 3
+        },
+        {
+          "entry_id": "wikipedia-73307133",
+          "slug": "bond",
+          "source": "build/research/catalog-2026-chronological/root-may-september-three-private/bond-source-private-candidate.json",
+          "source_sha256": "38d1047cafa47ddc5146c0a3a0398cd17b627070390d0cd562da5b8c5376fcfb",
+          "target": "build/research/catalog-2026-chronological/root-may-september-three-private/bond-four-language-private-candidate.json",
+          "target_sha256": "758107106e7c9d504e76977a7093769f95770941a7ad991241fbf13b869c5618",
+          "contact": "build/research/catalog-2026-chronological/root-may-september-three-private/bond-final-contact.jpg",
+          "contact_sha256": "179ebf7c1e70e6a0e464efbbca5552bc509401ea8e06d03fe329ec84d114abb1",
+          "english_cards": 6,
+          "localized_cards": 24,
+          "images": 8,
+          "tracks": 3
+        },
+        {
+          "entry_id": "wikipedia-68686424",
+          "slug": "wolverine",
+          "source": "build/research/catalog-2026-chronological/root-may-september-three-private/wolverine-source-private-candidate.json",
+          "source_sha256": "a54646d90b2c2095d62e144cce04981b0378dc492324c0a220cf24dc53bdfa9e",
+          "target": "build/research/catalog-2026-chronological/root-may-september-three-private/wolverine-four-language-private-candidate.json",
+          "target_sha256": "c6a4005cd9d223f96f598e35f99dcddbc5c9f5536ecb1af08a64a93880c62e00",
+          "contact": "build/research/catalog-2026-chronological/root-may-september-three-private/wolverine-final-contact.jpg",
+          "contact_sha256": "1c6e0d0e357380135811473499f98c05d3b61a8aaa85cf5550db9b15e6ce9097",
+          "english_cards": 5,
+          "localized_cards": 20,
+          "images": 5,
+          "tracks": 3
+        }
+      ],
+      "scope": {
+        "english_paragraphs_read": 14,
+        "localized_paragraphs_read": 56,
+        "images_personally_viewed": 17,
+        "public_music_metadata_receipts_read": 9
+      },
+      "checks": [
+        "All fourteen English paragraphs and all four complete localized versions read; no concrete semantic or linguistic finding.",
+        "Three final contacts personally viewed. Original Nintendo cover and captures, original IOI climbing/boat captures, and Sony artwork/captures match their contexts. Rejected advertising/demo images are absent.",
+        "Source, target, contact and recovery SHA bindings checked; all seventeen actual image dimensions and all five provenance/rights fields checked.",
+        "Nine saved metadata receipts actually read: public, AAC observed, matching IDs/durations/channels, no audio downloaded or PS5 playback claimed. Yoshi independent OST/SFX archive explicitly qualified; Crazee Dayzee habitat label supported by recording description. Bond score credited to The Flight, original title song jointly to Lana Del Rey and David Arnold. Wolverine original MarvelMusicVEVO recordings credited to David Fleming.",
+        "Direct primary Nintendo product page and Good-Feel/Nintendo firsthand Famitsu interview read; IOI May2026 launch announcement, composer site and IOI title-song announcement read; Insomniac July2026 PlayStation Blog story/composer/costume article read. Original English retained."
+      ],
+      "sources_read": [
+        "https://www.nintendo.com/us/store/products/yoshi-and-the-mysterious-book-switch-2/",
+        "https://www.famitsu.com/article/202608/81890",
+        "https://ioi.dk/007firstlightgame/news/2026/launch-trailer-for-007-first-light-out-now",
+        "https://www.theflightmusicofficial.com/",
+        "https://io-interactive.prezly.com/io-interactive-et-amazon-mgm-studios-devoilent-le-theme-principal-de-007-first-light-compose-par-lana-del-rey-et-david-arnold",
+        "https://blog.playstation.com/2026/07/23/marvels-wolverine-story-trailer-new-art-composer-details-and-more/"
+      ],
+      "findings": [],
+      "production_writes": false
+    }
+  }
+}

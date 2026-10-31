@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "locale": "it",
+  "review": "Binding of exact independently approved complete candidate members; no new linguistic review substituted. Every full candidate SHA and independent PASS receipt checked, all current English five fields and translation hashes validated.",
+  "entries": [
+    {
+      "entry_id": "workbook-10-29-castlevania-rondo-of-blood",
+      "source_fields_sha256": "42cba78f397fdbca45f1f89f598ebcdee2853e7d3279d87dc860d50117768faa",
+      "translation_sha256": "3936dc29b5fec879417dbd35c4fd0298c5d02f4b32596d4c5f6faf1c91aac84e",
+      "independent_peer": "build/research/rondo1993-four-language-completion/independent-all-fields-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "d0cf33c0baffa94ed30502177d6bb735e69ebb97e07f07e4f5b1403da6043c4d",
+      "candidate_path": "build/research/rondo1993-four-language-completion/rondo-four-language-final-natural-french-completion-candidate.json",
+      "candidate_sha256": "32956ae4cb3bc394bebf086d64b27a5354e5cbeca55aa3f34c4d7794367159b4"
+    },
+    {
+      "entry_id": "wikipedia-5311222",
+      "source_fields_sha256": "51fc9dfddbbd489df7021596024b231aa32c414b17127038c3e43f887ad58878",
+      "translation_sha256": "e0ae27ed4b6f46d71bec711c34c919279425f37ca52b8201f812bc340c4ee3a1",
+      "independent_peer": "build/research/ridge-racer1993-four-language-completion/independent-all-fields-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "aa0b57c10d3a9b7f4b4bb8e8cff607eb1657f790663ed4d480dd51ae184b9d2c",
+      "candidate_path": "build/research/ridge-racer1993-four-language-completion/ridge-racer-all-five-fields-four-language-full-reuse-fidelity-candidate.json",
+      "candidate_sha256": "cad41444b1cf7ac154fdd436a435ae08bfb862c3f2a702add42df3e107071911"
+    },
+    {
+      "entry_id": "wikipedia-32722",
+      "source_fields_sha256": "6438102e8876f6f85fb99f19cb71addb97befbfa55a70fd8fcbccfb0299b2792",
+      "translation_sha256": "50d0ccd0ca2be393bf80091f6ef775a07f6a2c41efb0a0f2143c0bf522830f7a",
+      "independent_peer": "build/research/virtua-fighter1993-four-language-completion/independent-all-fields-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "c0c8ba22c4426316bf71f7618c73439ff938e8d1ee1282fe06dfc928633a7729",
+      "candidate_path": "build/research/virtua-fighter1993-four-language-completion/virtua-fighter-all-five-fields-four-language-full-reuse-fidelity-candidate.json",
+      "candidate_sha256": "4fa0250b85c8f44e13edd4c8d00e4db5a800374492c41ba03dee581c3a7282aa"
+    }
+  ]
+}

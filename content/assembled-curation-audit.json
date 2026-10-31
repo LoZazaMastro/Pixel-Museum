@@ -1,0 +1,214 @@
+{
+  "checked_date": "2026-10-20",
+  "scope": "Read-only audit of current assembled catalogue and bundled model index. No runtime or catalogue edits performed.",
+  "catalogue": {
+    "entries": 1022,
+    "unique_ids": 1022,
+    "decades": {
+      "1950": 8,
+      "1960": 7,
+      "1970": 113,
+      "1980": 146,
+      "1990": 196,
+      "2000": 187,
+      "2010": 218,
+      "2020": 147
+    },
+    "images": 115,
+    "videos": 16,
+    "models": 14
+  },
+  "checks": {
+    "duplicate_ids": 0,
+    "entries_without_sources": [],
+    "images_missing_creator_license_or_source_page": [],
+    "reference_records": 640,
+    "reference_records_missing_revision_history_or_license": [],
+    "model_files": [
+      {
+        "exhibit_id": "game-boy",
+        "uid": "ad2f6be906e948f793fe722bbae5d29c",
+        "file_exists": true,
+        "size_matches": true,
+        "sha256_matches": true,
+        "credit_manifest_present": true
+      },
+      {
+        "exhibit_id": "playstation",
+        "uid": "5f80311f1a4646ef9673f20ee6dc6245",
+        "file_exists": true,
+        "size_matches": true,
+        "sha256_matches": true,
+        "credit_manifest_present": true
+      },
+      {
+        "exhibit_id": "playstation-2",
+        "uid": "8c992e9f5c86496ca7bd7dfe109d3cc2",
+        "file_exists": true,
+        "size_matches": true,
+        "sha256_matches": true,
+        "credit_manifest_present": true
+      },
+      {
+        "exhibit_id": "playstation-3",
+        "uid": "d3eb52c6cf144601a52c99f9be78dfec",
+        "file_exists": true,
+        "size_matches": true,
+        "sha256_matches": true,
+        "credit_manifest_present": true
+      },
+      {
+        "exhibit_id": "playstation-4",
+        "uid": "d4d72667ee8244a194b2416ff6de84b7",
+        "file_exists": true,
+        "size_matches": true,
+        "sha256_matches": true,
+        "credit_manifest_present": true
+      },
+      {
+        "exhibit_id": "commodore-64",
+        "uid": "1f43612fa2d54041bbe2bdff8164c2cd",
+        "file_exists": true,
+        "size_matches": true,
+        "sha256_matches": true,
+        "credit_manifest_present": true
+      },
+      {
+        "exhibit_id": "zx-spectrum",
+        "uid": "a657d72420c44e0b8402179e6d061182",
+        "file_exists": true,
+        "size_matches": true,
+        "sha256_matches": true,
+        "credit_manifest_present": true
+      },
+      {
+        "exhibit_id": "xbox-halo",
+        "uid": "c586f9956989480fb14f11447fb1d42c",
+        "file_exists": true,
+        "size_matches": true,
+        "sha256_matches": true,
+        "credit_manifest_present": true
+      },
+      {
+        "exhibit_id": "steam-deck",
+        "uid": "502407f2dab048728e1b63699bf99d45",
+        "file_exists": true,
+        "size_matches": true,
+        "sha256_matches": true,
+        "credit_manifest_present": true
+      },
+      {
+        "exhibit_id": "switch",
+        "uid": "78009be398d142abb0b758238c209d01",
+        "file_exists": true,
+        "size_matches": true,
+        "sha256_matches": true,
+        "credit_manifest_present": true
+      },
+      {
+        "exhibit_id": "atari-vcs",
+        "uid": "f9ec8aa8e4fa454cbbe821a23ca6e83d",
+        "file_exists": true,
+        "size_matches": true,
+        "sha256_matches": true,
+        "credit_manifest_present": true
+      },
+      {
+        "exhibit_id": "xbox-one",
+        "uid": "8866e33768e84b27b69e07abcde8a593",
+        "file_exists": true,
+        "size_matches": true,
+        "sha256_matches": true,
+        "credit_manifest_present": true
+      },
+      {
+        "exhibit_id": "xbox-series-x",
+        "uid": "e983b0e9ef984aa6934176e310b7f0f2",
+        "file_exists": true,
+        "size_matches": true,
+        "sha256_matches": true,
+        "credit_manifest_present": true
+      },
+      {
+        "exhibit_id": "dreamcast",
+        "uid": "f82d99e4739e42f4abfc37cb97918cfc",
+        "file_exists": true,
+        "size_matches": true,
+        "sha256_matches": true,
+        "credit_manifest_present": true
+      }
+    ]
+  },
+  "integration_issues": [
+    {
+      "severity": "fix before handoff",
+      "finding": "Related links target hardware entries intentionally excluded while no usable model exists.",
+      "links": [
+        {
+          "from": "xbox-one",
+          "to": "xbox-series-s"
+        },
+        {
+          "from": "xbox-series-x",
+          "to": "xbox-series-s"
+        },
+        {
+          "from": "xbox-series-x",
+          "to": "playstation-5"
+        }
+      ],
+      "recommendation": "Filter related_ids after the final entry set is assembled."
+    },
+    {
+      "severity": "disclose visually",
+      "finding": "Xbox Series X uses a model published in December 2019, explicitly called a quick mock-up by its creator. Factual note is correct, but generic object title hides the distinction if notes are not shown.",
+      "exhibit_id": "xbox-series-x",
+      "recommended_object_caption": "Pre-release artist reconstruction, 2019"
+    },
+    {
+      "severity": "do not overstate completion",
+      "finding": "Three currently assembled hardware stops still have no model. Parent is resolving Famicom and Wii; Odyssey exact selected source is view-only.",
+      "hardware_ids": [
+        "odyssey",
+        "famicom",
+        "wii"
+      ],
+      "recommendation": "Do not claim all hardware is in 3D before these are attached or explicitly reported missing."
+    },
+    {
+      "severity": "credit spelling",
+      "finding": "Original Xbox model creator credit contains a literal question mark in Hern?ndez. Verify current author spelling against official source and preserve original embedded credit separately.",
+      "exhibit_id": "xbox-halo"
+    },
+    {
+      "severity": "precise object variant",
+      "finding": "Atari thumbnail supports six-switch VCS identification but not a verified heavy-sixer versus light-sixer production subtype.",
+      "exhibit_id": "atari-vcs",
+      "recommendation": "Keep chronology at the 1977 platform level; do not describe this artist model as an authenticated 1977 launch specimen."
+    }
+  ],
+  "portable_model_proposals": {
+    "manifest": "content/downloadable-portable-alternatives.json",
+    "nintendo_3ds_recommended_uid": "ccda52e911194834a9b4002c91de815f",
+    "game_boy_advance_available_uid": "f4b105f73108496b9c2b578a819ea541",
+    "gba_quality_note": "Available original horizontal GBA has useful detailed worn surface textures but lacks several printed labels. Not as faithful as the user-selected unavailable Skribbl source. User selection required; no silent substitution."
+  },
+  "factual_date_policy": [
+    "Nintendo DSi must use its 2008 Japanese launch, not original DS 2004.",
+    "Original GBA 2001 and Advance SP 2003 are different revisions.",
+    "Original 3DS Japanese launch is February 2011; Zelda 25th Anniversary European edition is November 2011. XL and New 3DS models are distinct revisions.",
+    "NES initial North American year 1985 is not Famicom Japanese year 1983.",
+    "PAL SNES year 1992 is not Japanese Super Famicom 1990 or North American SNES 1991.",
+    "Saturn first platform release 1994 Japan should not silently imply the selected black western case was the grey Japanese launch specimen.",
+    "Year-only records deliberately retain month/day zero when a precise regional day is not established."
+  ],
+  "rights_policy": [
+    "Public viewing is not a download or redistribution grant.",
+    "All bundled model files presently match their indexed SHA-256 and size.",
+    "All current image/model records have creator, licence and source metadata; full image rights were checked by upstream Commons imageinfo rather than inferred from Wikipedia.",
+    "640 Wikipedia reference records retain article revision, contributors history and CC BY-SA licence links.",
+    "Creative Commons rights in a model do not automatically cover separately embedded commercial soundtrack recordings; do not extract and redistribute their audio."
+  ],
+  "pending_content_file": "content/expansion/hardware-additions.json",
+  "pending_content_entries": 15
+}

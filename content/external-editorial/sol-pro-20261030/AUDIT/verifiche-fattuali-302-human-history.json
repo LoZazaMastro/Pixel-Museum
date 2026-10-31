@@ -1,0 +1,629 @@
+{
+  "batch_id": "302-human-history",
+  "sources": [
+    {
+      "source_id": "maria_filmportal",
+      "title": "Die Ehe der Maria Braun, filmportal / DFF",
+      "url": "https://www.filmportal.de/film/die-ehe-der-maria-braun_19aa119b33664e1aae41e7fdeea89998",
+      "verification_scope": "Scheda archivistica letta: riprese 1978, anteprima interna Cannes distinta dalla prima pubblica Berlino 20 febbraio 1979; Ballhaus, Raben e premio Schygulla. I commenti degli utenti non sono trattati come dati ufficiali."
+    },
+    {
+      "source_id": "maria_bpb",
+      "title": "Die Ehe der Maria Braun, Bundeszentrale für politische Bildung",
+      "url": "https://www.bpb.de/lernen/filmbildung/filmkanon/157190/die-ehe-der-maria-braun/",
+      "verification_scope": "Scheda e contenuto letti: sceneggiatura Märthesheimer/Fröhlich, cast e rapporto con la ricostruzione. Nessuna nuova lettura critica aggiunta rispetto al materiale fornito."
+    },
+    {
+      "source_id": "maria_release",
+      "title": "Die Ehe der Maria Braun, FILMSTARTS",
+      "url": "https://www.filmstarts.de/kritiken/233.html",
+      "verification_scope": "Scheda di distribuzione consultata: uscita tedesca 23 marzo 1979. Distinta dalla première di febbraio."
+    },
+    {
+      "source_id": "maria_release_crosscheck",
+      "title": "Die Ehe der Maria Braun, fernsehserien.de",
+      "url": "https://www.fernsehserien.de/filme/die-ehe-der-maria-braun",
+      "verification_scope": "Dati di programmazione e testi attribuiti ad ARTE/3sat; conferma del Kinostart 23 marzo 1979."
+    },
+    {
+      "source_id": "elektra_gcd",
+      "title": "Daredevil 168, Grand Comics Database",
+      "url": "https://www.comics.org/issue/35035/",
+      "verification_scope": "Pagina diretta bloccata 403; letti estratti indicizzati e scheda collegata del personaggio: vendita 7 ottobre 1980, copertina gennaio 1981, Miller sceneggiatore e disegnatore. Non dichiarata lettura della pagina completa."
+    },
+    {
+      "source_id": "elektra_marvel",
+      "title": "The Best Stories from Daredevil's First-Ever Series, Marvel",
+      "url": "https://www.marvel.com/amp/articles/comics/daredevil-1964-first-series-now-complete-on-marvel-unlimited",
+      "verification_scope": "Fonte dell'editore consultata: debutto di Elektra nel n.168, Miller ai testi e ai disegni. Non aggiunte nel testo altre vicende del personaggio."
+    },
+    {
+      "source_id": "zx80_launch",
+      "title": "Sinclair launches the ZX80, Centre for Computing History",
+      "url": "https://www.computinghistory.org.uk/det/5445/Sinclair-ZX80-Launched/",
+      "verification_scope": "Scheda museale con riferimento alla notizia coeva del Cambridge Evening News del 29 gennaio 1980. Giorno trattato come annuncio, non prima consegna dimostrata. Prezzi 79,95 e 99,95 sterline."
+    },
+    {
+      "source_id": "zx80_byte",
+      "title": "The Sinclair Research ZX80, John C. McCallum, BYTE January 1981",
+      "url": "https://www.timexsinclair.com/article/the-sinclair-research-zx80/index.html",
+      "verification_scope": "Estratto della recensione originale: caratteristiche e disponibilità americana dall'autunno 1980 distinta dall'annuncio di febbraio. Non trasferita la data americana al mercato britannico."
+    },
+    {
+      "source_id": "zx80_ad",
+      "title": "Sinclair ZX80 advertisement, Personal Computer World October 1980, riproduzione",
+      "url": "https://nosher.net/archives/computers/adve_007?idx=Practical+Computing",
+      "verification_scope": "Pagina del documento pubblicitario originale consultata per offerta e prezzi. Il primato sotto cento sterline resta una rivendicazione pubblicitaria, non un'affermazione assoluta del museo."
+    },
+    {
+      "source_id": "shining_afi",
+      "title": "The Shining, AFI Catalog",
+      "url": "https://catalog.afi.com/Catalog/moviedetails/67203",
+      "verification_scope": "Scheda catalografica consultata negli estratti: uscita statunitense 23 maggio 1980. Trama e produzione mantenute dal materiale, senza aggiungere numeri di ciak o attribuzioni non presenti."
+    },
+    {
+      "source_id": "bbc_history",
+      "title": "Computer Literacy Project history, BBC Rewind",
+      "url": "https://clp.bbcrewind.co.uk/history",
+      "verification_scope": "Archivio del progetto: finalità, impiego del computer nelle trasmissioni e distinzione fra speciali e serie regolare Micro Live."
+    },
+    {
+      "source_id": "bbc_programmes",
+      "title": "Computer Literacy Project programmes, BBC Rewind",
+      "url": "https://clp.bbcrewind.co.uk/programmes",
+      "verification_scope": "Metadati delle trasmissioni originali: The Computer Programme 1982, Making the Most of the Micro 1983, Computers in Control e Micro Live 1984. Non dichiarata visione integrale degli episodi."
+    },
+    {
+      "source_id": "bbc_control",
+      "title": "Computers in Control, BBC Rewind",
+      "url": "https://clp.bbcrewind.co.uk/4d70db67f1bb222cf3d2a515636c19be",
+      "verification_scope": "Archivio della serie: prima trasmissione 2 marzo 1984, non 1983."
+    },
+    {
+      "source_id": "bbc_live",
+      "title": "Micro Live, BBC Rewind",
+      "url": "https://clp.bbcrewind.co.uk/757dc7395d1b569dbe57a9848dcd6585",
+      "verification_scope": "Archivio della serie regolare: prima trasmissione 5 ottobre 1984, non 1985. Gli speciali precedenti non vengono confusi con la serie."
+    },
+    {
+      "source_id": "bbc_primary_report",
+      "title": "Towards Computer Literacy, John Radcliffe, BBC report",
+      "url": "https://clp.bbcrewind.co.uk/media/Towards%20Computer%20Literacy.pdf",
+      "verification_scope": "Estratto del rapporto originale del responsabile del progetto: problemi produttivi e poche centinaia di computer consegnati all'avvio delle trasmissioni nel gennaio 1982. Non affermato che nessuna macchina fosse arrivata prima."
+    },
+    {
+      "source_id": "bbc_delivery_research",
+      "title": "Educating the Nation, Sytze Van Herck, doctoral dissertation",
+      "url": "https://orbilu.uni.lu/bitstream/10993/50375/1/2022-02-22_Sytze_Van_Herck_Dissertation_Post-defence.pdf",
+      "verification_scope": "Estratto della ricerca archivistica originale: 69 Model A consegnati alle scuole entro Natale 1981; altri ordini ritardati. Mantiene la precisione annuale 1981 senza imporre un giorno universale."
+    },
+    {
+      "source_id": "nhk_smpte",
+      "title": "The NHK High-Resolution Wide-Screen Television System, Takashi Fujio, SMPTE",
+      "url": "https://journal.smpte.org/conferences/Television%20Technology%20in%20the%2080s%3A%2015th%20Annual%20SMPTE%20Television%20Conference/19/",
+      "verification_scope": "Letti abstract e metadati del contributo originale alla conferenza di San Francisco, febbraio 1981, DOI 10.5594/M00661. Testo integrale richiede accesso; non dichiarato letto. La voce rimane evento dimostrativo esplicito."
+    },
+    {
+      "source_id": "ibm_history",
+      "title": "The IBM PC, IBM",
+      "url": "https://www.ibm.com/history/personal-computer",
+      "verification_scope": "Storia aziendale: presentazione 12 agosto 1981, Boca Raton, architettura aperta, componenti esterni e mercato compatibili. Il giorno di presentazione non è trattato come prima vendita."
+    },
+    {
+      "source_id": "ibm_announcement",
+      "title": "IBM Product Announcement: Personal Computer 5150, riproduzione",
+      "url": "https://minuszerodegrees.net/5150/doco/IBM%20Product%20Announcement%20-%20IBM%20PC%205150.pdf",
+      "verification_scope": "Comunicato originale: prime spedizioni previste per ottobre 1981. La previsione è distinta dalla prova di vendita fornita dalla testimonianza commerciale."
+    },
+    {
+      "source_id": "ibm_purchase",
+      "title": "Scientific Solutions company history",
+      "url": "https://scientific-solutions.com/archives/ssi_history.html",
+      "verification_scope": "Storia aziendale con testimonianza diretta: due IBM PC acquistati dai tecnici presso Sears a Chicago il 7 ottobre 1981. Usata per disponibilità in ottobre, senza certificare autonomamente il primato mondiale rivendicato dall'azienda."
+    },
+    {
+      "source_id": "raiders_afi",
+      "title": "Raiders of the Lost Ark, AFI Catalog",
+      "url": "https://catalog.afi.com/Film/67250-RAIDERS-OFTHELOSTARK",
+      "verification_scope": "Scheda consultata: uscita 12 giugno 1981, regia e crediti. Trama e genesi mantenute dal materiale."
+    },
+    {
+      "source_id": "raiders_lucasfilm",
+      "title": "Indiana Jones and the Raiders of the Lost Ark, Lucasfilm",
+      "url": "https://www.lucasfilm.com/productions/raiders-of-the-lost-ark/",
+      "verification_scope": "Scheda del produttore: identità dell'opera, Spielberg, Lucas, Ford e avventura anni Trenta; nessun giudizio promozionale ripreso."
+    },
+    {
+      "source_id": "blade_afi",
+      "title": "Blade Runner, AFI Catalog",
+      "url": "https://catalog.afi.com/Catalog/moviedetails/68260",
+      "verification_scope": "Scheda e note consultate: aperture New York e Los Angeles 25 giugno 1982; romanzo di Dick, replicanti e ambientazione. Nessuna nuova interpretazione critica imposta al testo."
+    },
+    {
+      "source_id": "c64_chm",
+      "title": "Impact of the Commodore 64: A 25th Anniversary Celebration, Computer History Museum",
+      "url": "https://computerhistory.org/events/impact-commodore-64-25th-anniversary/",
+      "verification_scope": "Pagina dell'incontro con protagonisti del progetto: presentazione CES gennaio 1982, mercato agosto e prezzo 595 dollari. Letta la pagina, non visionato l'intero evento."
+    },
+    {
+      "source_id": "c64_guinness",
+      "title": "Best-selling desktop computer, Guinness World Records",
+      "url": "https://www.guinnessworldrecords.com/world-records/72695-most-computer-sales",
+      "verification_scope": "Scheda consultata: stime 12,5 e 17 milioni. Il testo le attribuisce alla fonte, senza presentarle come conteggio certificato né chiamarle entrambe indipendenti."
+    },
+    {
+      "source_id": "c64_records",
+      "title": "How Many Commodore 64 Computers Were Sold?, Dave McMurtrie, Commodore International Historical Society",
+      "url": "https://commodore.international/2021/07/05/how-many-c64-and-c128-were-actually-sold/",
+      "verification_scope": "Letti articolo e tabelle: ricostruzione da documenti aziendali, con parte stimata. Video e bilanci completi non visionati. Numero presentato come stima."
+    }
+  ],
+  "decisions": [
+    {
+      "target_id": "history-1979-the-marriage-of-maria-braun",
+      "problem": "La data della Berlinale non è l'uscita commerciale richiesta.",
+      "conclusion": "Mantenuta in card la prima pubblica del 20 febbraio; proposta timeline sul 23 marzo 1979, uscita tedesca. Conservate tre card e tutti gli elementi della ricostruzione storica e artistica.",
+      "source_ids": [
+        "maria_filmportal",
+        "maria_bpb",
+        "maria_release",
+        "maria_release_crosscheck"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1980-frank-miller",
+      "problem": "Anno di copertina diverso dalla vendita; voce già esplicitamente legata a un'opera.",
+      "conclusion": "Nessuno spostamento alla nascita di Miller. La voce riguarda il debutto di Elektra; testo e proposta distinguono ottobre 1980 da gennaio 1981. La brevità dell'originale non viene compensata con nuovi approfondimenti inventati.",
+      "source_ids": [
+        "elektra_gcd",
+        "elektra_marvel"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1980-sinclair-zx80",
+      "problem": "Il 29 gennaio documenta la presentazione, non una consegna provata.",
+      "conclusion": "Precisata la semantica dell'annuncio e mantenuta la release al 1980. Conservati kit, saldatura, prezzi, pubblicità, elogi, limiti di RAM/tastiera/schermo e attese.",
+      "source_ids": [
+        "zx80_launch",
+        "zx80_byte",
+        "zx80_ad"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1980-the-shining-film",
+      "problem": "Evitare superlativi automatici e mantenere l'effetto concreto del sistema di ripresa.",
+      "conclusion": "Tutti i crediti, la vicenda familiare, il romanzo 1977, le riprese inglesi, la troupe ridotta e le numerose ripetizioni restano presenti. Steadicam descritta attraverso i movimenti fluidi nel set, senza aggiungere primati o quantità.",
+      "source_ids": [
+        "shining_afi"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1981-bbc-micro",
+      "problem": "Due anni televisivi errati e disponibilità iniziale da distinguere dall'annuncio.",
+      "conclusion": "Computers in Control e serie regolare Micro Live corretti al 1984 tramite archivio BBC. Conservati tutti i titoli, progetto di alfabetizzazione, bando, Proton, Acorn, scuole e ritardi; non cancellate le poche consegne entro il 1981.",
+      "source_ids": [
+        "bbc_history",
+        "bbc_programmes",
+        "bbc_control",
+        "bbc_live",
+        "bbc_primary_report",
+        "bbc_delivery_research"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1981-high-definition-television",
+      "problem": "Voce relativa a una dimostrazione, non a un apparecchio in vendita.",
+      "conclusion": "Resta l'evento NHK/SMPTE del 1981. Conservati dettaglio dell'immagine, pubblico industriale, capacità di trasmissione e standard senza inventare specifiche numeriche.",
+      "source_ids": [
+        "nhk_smpte"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1981-ibm-personal-computer",
+      "problem": "Il 12 agosto è l'annuncio, non la prima disponibilità commerciale.",
+      "conclusion": "Distinto annuncio di agosto da vendite in ottobre 1981. Conservati 5150, Boca Raton, Intel 8088, fornitori, espansioni e conseguenze dell'architettura compatibile.",
+      "source_ids": [
+        "ibm_history",
+        "ibm_announcement",
+        "ibm_purchase"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1981-raiders-of-the-lost-ark",
+      "problem": "Mantenere insieme racconto e sviluppo del progetto senza serie di crediti nel sommario.",
+      "conclusion": "Conservati regia, sceneggiatura, soggetto, tutti i personaggi/interpreti, 1936, obiettivo dell'Arca, serial, Kaufman, pausa per Star Wars e ripresa 1977. Uscita proposta 12 giugno 1981 USA.",
+      "source_ids": [
+        "raiders_afi",
+        "raiders_lucasfilm"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1982-blade-runner",
+      "problem": "Distinguere accoglienza iniziale e fortuna successiva senza inventare interpretazioni.",
+      "conclusion": "Mantenuti romanzo, Deckard, replicanti, colonie, Roy Batty, Vangelis, risultati iniziali e critiche al ritmo, poi seguito di culto. Data USA 25 giugno 1982.",
+      "source_ids": [
+        "blade_afi"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "history-1982-commodore-64",
+      "problem": "Le quantità riportate non sono un totale certo né due stime indipendenti.",
+      "conclusion": "Attribuite le cifre alle fonti e qualificata la ricostruzione più bassa come stima. Gennaio resta presentazione, agosto commercializzazione; tutti i dati hardware e il prezzo sono conservati.",
+      "source_ids": [
+        "c64_chm",
+        "c64_guinness",
+        "c64_records"
+      ],
+      "text_applied": true
+    }
+  ],
+  "metadata_proposals": [
+    {
+      "target_id": "history-1979-the-marriage-of-maria-braun",
+      "field": "timeline_date",
+      "original": {
+        "year": 1979,
+        "month": 2,
+        "day": 20,
+        "precision": "day"
+      },
+      "proposed": {
+        "year": 1979,
+        "month": 3,
+        "day": 23,
+        "precision": "day",
+        "event_semantics": "Uscita cinematografica commerciale",
+        "region": "Germania Ovest"
+      },
+      "source_ids": [
+        "maria_release",
+        "maria_release_crosscheck"
+      ],
+      "reason": "Proposta documentata separata; nessuna modifica agli originali o al catalogo."
+    },
+    {
+      "target_id": "history-1980-frank-miller",
+      "field": "timeline_date",
+      "original": {
+        "year": 1980,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1980,
+        "month": 10,
+        "day": 7,
+        "precision": "day",
+        "event_semantics": "Vendita di Daredevil n.168, debutto di Elektra",
+        "region": "Stati Uniti"
+      },
+      "source_ids": [
+        "elektra_gcd"
+      ],
+      "reason": "Proposta documentata separata; nessuna modifica agli originali o al catalogo."
+    },
+    {
+      "target_id": "history-1980-the-shining-film",
+      "field": "timeline_date",
+      "original": {
+        "year": 1980,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1980,
+        "month": 5,
+        "day": 23,
+        "precision": "day",
+        "event_semantics": "Uscita cinematografica commerciale",
+        "region": "Stati Uniti"
+      },
+      "source_ids": [
+        "shining_afi"
+      ],
+      "reason": "Proposta documentata separata; nessuna modifica agli originali o al catalogo."
+    },
+    {
+      "target_id": "history-1981-ibm-personal-computer",
+      "field": "timeline_date",
+      "original": {
+        "year": 1981,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1981,
+        "month": 10,
+        "day": 0,
+        "precision": "month",
+        "event_semantics": "Disponibilità commerciale del modello 5150",
+        "region": "Stati Uniti"
+      },
+      "source_ids": [
+        "ibm_announcement",
+        "ibm_purchase"
+      ],
+      "reason": "Proposta documentata separata; nessuna modifica agli originali o al catalogo."
+    },
+    {
+      "target_id": "history-1981-raiders-of-the-lost-ark",
+      "field": "timeline_date",
+      "original": {
+        "year": 1981,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1981,
+        "month": 6,
+        "day": 12,
+        "precision": "day",
+        "event_semantics": "Uscita cinematografica commerciale",
+        "region": "Stati Uniti"
+      },
+      "source_ids": [
+        "raiders_afi"
+      ],
+      "reason": "Proposta documentata separata; nessuna modifica agli originali o al catalogo."
+    },
+    {
+      "target_id": "history-1982-blade-runner",
+      "field": "timeline_date",
+      "original": {
+        "year": 1982,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1982,
+        "month": 6,
+        "day": 25,
+        "precision": "day",
+        "event_semantics": "Apertura cinematografica commerciale",
+        "region": "Stati Uniti, New York e Los Angeles"
+      },
+      "source_ids": [
+        "blade_afi"
+      ],
+      "reason": "Proposta documentata separata; nessuna modifica agli originali o al catalogo."
+    },
+    {
+      "target_id": "history-1982-commodore-64",
+      "field": "timeline_date",
+      "original": {
+        "year": 1982,
+        "month": 0,
+        "day": 0,
+        "precision": "year"
+      },
+      "proposed": {
+        "year": 1982,
+        "month": 8,
+        "day": 0,
+        "precision": "month",
+        "event_semantics": "Commercializzazione del computer",
+        "region": "Stati Uniti"
+      },
+      "source_ids": [
+        "c64_chm"
+      ],
+      "reason": "Proposta documentata separata; nessuna modifica agli originali o al catalogo."
+    }
+  ],
+  "editorial_review": {
+    "fidelity": "Confrontate tutte le dodici card con l'INPUT: mantenuti soggetti, sviluppo, crediti e dati tecnici. Rettifiche limitate e documentate. La voce brevissima su Elektra conserva il suo perimetro.",
+    "language_review": "EN scritto per primo, seguito da IT/FR/DE/ES. Riletti i testi per naturalezza e corrispondenza; corrette una concordanza tedesca e formulazioni poco idiomatiche nei sommari italiano, francese, tedesco e spagnolo.",
+    "dates": "Release commerciali distinte da annunci, première, date di copertina e spedizioni. Eventi espliciti NHK ed Elektra conservati come tali.",
+    "rights": "INPUT, fonti, revisioni e licenze originali mantenuti. Ambito effettivo delle verifiche descritto per ogni fonte; nessuna visione integrale di film, episodi, video o PDF non effettuata dichiarata.",
+    "english_written_first": true,
+    "languages": [
+      "en",
+      "it",
+      "fr",
+      "de",
+      "es"
+    ],
+    "entry_count": 10,
+    "card_count_per_language": 12,
+    "reviewed_at": "2026-10-30T06:40:21.641776+00:00",
+    "english_summary_word_range": [
+      31,
+      40
+    ],
+    "structural_checks": "Schema, ID, ordine, numero di card e cinque lingue verificati dal validatore. Tutti i titoli presenti; nessun HTML o Markdown nei testi."
+  },
+  "status": "completed",
+  "validation": {
+    "valid": true,
+    "batch_id": "302-human-history",
+    "completed": true,
+    "entry_count": 10,
+    "card_count_per_language": 12,
+    "language_count": 5,
+    "translated_card_count": 60,
+    "entry_card_counts": {
+      "history-1979-the-marriage-of-maria-braun": 3,
+      "history-1980-frank-miller": 1,
+      "history-1980-sinclair-zx80": 1,
+      "history-1980-the-shining-film": 1,
+      "history-1981-bbc-micro": 1,
+      "history-1981-high-definition-television": 1,
+      "history-1981-ibm-personal-computer": 1,
+      "history-1981-raiders-of-the-lost-ark": 1,
+      "history-1982-blade-runner": 1,
+      "history-1982-commodore-64": 1
+    },
+    "issue_counts": {
+      "history-1979-the-marriage-of-maria-braun": 0,
+      "history-1980-frank-miller": 0,
+      "history-1980-sinclair-zx80": 0,
+      "history-1980-the-shining-film": 0,
+      "history-1981-bbc-micro": 0,
+      "history-1981-high-definition-television": 0,
+      "history-1981-ibm-personal-computer": 0,
+      "history-1981-raiders-of-the-lost-ark": 0,
+      "history-1982-blade-runner": 0,
+      "history-1982-commodore-64": 0
+    },
+    "summary_checks": [
+      {
+        "entry_id": "history-1979-the-marriage-of-maria-braun",
+        "feature_id": null,
+        "english_summary_words": 34
+      },
+      {
+        "entry_id": "history-1980-frank-miller",
+        "feature_id": null,
+        "english_summary_words": 31
+      },
+      {
+        "entry_id": "history-1980-sinclair-zx80",
+        "feature_id": null,
+        "english_summary_words": 40
+      },
+      {
+        "entry_id": "history-1980-the-shining-film",
+        "feature_id": null,
+        "english_summary_words": 39
+      },
+      {
+        "entry_id": "history-1981-bbc-micro",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "history-1981-high-definition-television",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "history-1981-ibm-personal-computer",
+        "feature_id": null,
+        "english_summary_words": 40
+      },
+      {
+        "entry_id": "history-1981-raiders-of-the-lost-ark",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "history-1982-blade-runner",
+        "feature_id": null,
+        "english_summary_words": 39
+      },
+      {
+        "entry_id": "history-1982-commodore-64",
+        "feature_id": null,
+        "english_summary_words": 37
+      }
+    ],
+    "editorial_review": [
+      "history-1980-frank-miller/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1980-frank-miller/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1980-frank-miller/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1980-frank-miller/main/es: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1981-high-definition-television/main/it: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1981-high-definition-television/main/fr: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1981-high-definition-television/main/de: main title changed; check that this is a descriptive title and not an altered official name",
+      "history-1981-high-definition-television/main/es: main title changed; check that this is a descriptive title and not an altered official name"
+    ],
+    "failures": []
+  },
+  "output_sha256": "ae2dba7223d46cf3563a6695c9326a73ee4a2394cd38d9856cfe648ebc15f283",
+  "expansion_assessments": [
+    {
+      "target_id": "history-1979-the-marriage-of-maria-braun",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1980-frank-miller",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1980-sinclair-zx80",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1980-the-shining-film",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1981-bbc-micro",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1981-high-definition-television",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1981-ibm-personal-computer",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1981-raiders-of-the-lost-ark",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1982-blade-runner",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    },
+    {
+      "target_id": "history-1982-commodore-64",
+      "main_cards": 1,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "missing_cards": 0,
+      "rationale": "Voce di storia culturale o tecnologica: non videogioco né console soggetti alle quote di ampliamento."
+    }
+  ]
+}

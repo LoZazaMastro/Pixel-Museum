@@ -1,0 +1,565 @@
+{
+  "schema_version": 1,
+  "reviewed_utc": "2026-10-20T21:50:07.740982+00:00",
+  "status": "draft_integration_checks_pass_after_corrections; no_release_signoff",
+  "input_file_sha256": {
+    "content/expansion/editorial-priority-music-design.json": "11b04f9f4b831d8526a93d7337123632e6b60340742ee6a1a6cc818c4aec028c",
+    "content/expansion/editorial-priority-people.json": "307c4fea55dd88dd3c1918a283eebf7ff27b2c795ba8a57fbab401364f30aada",
+    "docs/editorial/music-design-batch-notes.md": "95319866551d92a155b5c43864dbd476e77e07b3381046bbe61f4f062886160d",
+    "docs/editorial/people-batch-notes.md": "f381b85e67fb374f882e1123dda5a01c9aff6ce841e1bdad6bf5849acda23a7f"
+  },
+  "catalog_observed_sha256": "7a9e77806668c88a1d9d0b01e37a47295c20089e5ead31915bbf1f87c1ac1415",
+  "catalog_modified_by_reviewer": false,
+  "master_assembly_by_reviewer": false,
+  "counts": {
+    "batches": 2,
+    "drafts": 20,
+    "cards": 80,
+    "body_words": 7097,
+    "card_word_range": [
+      80,
+      95
+    ],
+    "approved_net_new_articles": 0
+  },
+  "original_playhub_fidelity": {
+    "published_editions": 365,
+    "english_sections": 1656,
+    "complete_source_locales": 8,
+    "bodies_and_headings_match_actual_source": true
+  },
+  "schema_checks": "Pass: four complete bodies/headings/cards; sequential index or body_index; matching duplicate card prose where supplied; resolvable citation IDs, URLs and locators; valid related IDs; no batch/master ID collision; no whitespace-corrupted URL strings.",
+  "source_budget_method": "Unicode words retaining apostrophes and hyphenated compounds. Full card body and heading charged to every cited original publication; title and summary charged once per used publication. Nimrod parts count as one booklet, deduplicated per card.",
+  "source_budgets": {
+    "content/expansion/editorial-priority-music-design.json": {
+      "body_words": 3590,
+      "maximum_source_body_allocation": 182,
+      "maximum_source_with_headings_title_summary": 200,
+      "source_allocations_with_all_reader_prose": {
+        "kondo-function": 99,
+        "kondo-loc": 193,
+        "kondo-registry": 104,
+        "riven-tape": 103,
+        "riven-series": 99,
+        "riven-item": 99,
+        "riven-reimagined": 102,
+        "journey-musical": 101,
+        "journey-release": 103,
+        "journey-album": 199,
+        "umurangi-game": 199,
+        "umurangi-acmi": 103,
+        "umurangi-photo": 99,
+        "monument-game": 198,
+        "monument-ten": 200,
+        "monument-date": 107,
+        "celeste-forgive": 105,
+        "celeste-changes": 200,
+        "celeste-code": 104,
+        "papers-feb": 197,
+        "papers-apr": 200,
+        "shibuya-voice": 198,
+        "shibuya-ishii": 99,
+        "shibuya-faq": 103,
+        "rez-freeland": 199,
+        "rez-area": 103,
+        "rez-collaboration": 104,
+        "bastion-album": 200,
+        "bastion-game": 104,
+        "bastion-sheet": 101
+      }
+    },
+    "content/expansion/editorial-priority-people.json": {
+      "body_words": 3507,
+      "maximum_source_body_allocation": 176,
+      "maximum_source_with_headings_title_summary": 200,
+      "source_allocations_with_all_reader_prose": {
+        "kates92": 196,
+        "cstm09": 196,
+        "nim51": 110,
+        "nimbook": 193,
+        "nimmanual": 112,
+        "oxo52": 111,
+        "edsacmuseum": 192,
+        "edsacguide": 111,
+        "bnl58": 198,
+        "bnl08": 200,
+        "space62": 200,
+        "space_restore": 196,
+        "baer_spotlight": 111,
+        "baer_podcast": 115,
+        "baer_papers": 194,
+        "wing67": 194,
+        "sumer_aid": 194,
+        "lawson09": 199,
+        "channel_held": 111,
+        "videosoft": 115,
+        "smith_chm": 197,
+        "smith_vcg": 117,
+        "smith_self": 111,
+        "shaw11": 195,
+        "shaw_aid": 195
+      }
+    }
+  },
+  "corrections": [
+    {
+      "id": "B01",
+      "severity": "high",
+      "status": "resolved_verified",
+      "finding": "Shibuya prologue art was falsely described as cut/unseen. Corrected to released silhouettes and later printout-supported recreation.",
+      "source": "https://www.uniqlo.com/jp/en/contents/feature/ut-magazine/s134/"
+    },
+    {
+      "id": "B02",
+      "severity": "medium",
+      "status": "resolved_verified",
+      "finding": "Restored Riven digital-object identifier 593b3b00824ad5052ac701ff87dac77b.",
+      "source": "https://library.gamehistory.org/repositories/2/digital_objects/909"
+    },
+    {
+      "id": "B03",
+      "severity": "medium",
+      "status": "resolved_verified",
+      "finding": "Restored six whitespace-corrupted music media source URLs; recursive URL-string check passes."
+    },
+    {
+      "id": "B04",
+      "severity": "medium",
+      "status": "resolved_verified",
+      "finding": "Bertie reader prose now states both Kates 1951 recollection and museum 1950 chronology; author and independent source-budget checks pass."
+    },
+    {
+      "id": "B05",
+      "severity": "low",
+      "status": "resolved_verified",
+      "finding": "Tennis card zero equipment fragment corrected."
+    },
+    {
+      "id": "B06",
+      "severity": "medium",
+      "status": "resolved_verified",
+      "finding": "Music body-only allocation omitted headings/title. Lightly trimmed prose and added the stricter all-reader-prose audit; maximum is 200 words."
+    }
+  ],
+  "entries": [
+    {
+      "entry_id": "feature-kondo-functional-music",
+      "body_words": 358,
+      "date": {
+        "year": 1985,
+        "precision": "year",
+        "month": 0,
+        "day": 0
+      },
+      "event_semantics": "Year anchors the work discussed; this is not a birth, publication-calendar slot or assumed worldwide release date.",
+      "related_ids": [
+        "super-mario-bros"
+      ],
+      "structure_and_citation_resolution": "pass",
+      "semantic_recommendation": {
+        "action": "distinct connected feature candidate",
+        "existing_owner_id": "super-mario-bros",
+        "reason": "Music functions, rhythm and registry history address a composer question absent from the level-teaching article. Link the game without inventing another 1985 release."
+      }
+    },
+    {
+      "entry_id": "feature-riven-performance-audio",
+      "body_words": 356,
+      "date": {
+        "year": 1997,
+        "precision": "day",
+        "month": 5,
+        "day": 29,
+        "region": "Cyan production session"
+      },
+      "event_semantics": "29 May 1997 is the dated recording session in the archival record, not Riven’s release.",
+      "related_ids": [],
+      "structure_and_citation_resolution": "pass",
+      "semantic_recommendation": {
+        "action": "new production feature candidate",
+        "existing_owner_id": null,
+        "reason": "No Riven exhibit exists. A specifically dated ADR object, archival overlap and later reimagining support a distinct production story."
+      }
+    },
+    {
+      "entry_id": "feature-journey-music-companionship",
+      "body_words": 360,
+      "date": {
+        "year": 2012,
+        "precision": "year",
+        "month": 0,
+        "day": 0
+      },
+      "event_semantics": "Year anchors the work discussed; this is not a birth, publication-calendar slot or assumed worldwide release date.",
+      "related_ids": [
+        "journey"
+      ],
+      "structure_and_citation_resolution": "pass",
+      "semantic_recommendation": {
+        "action": "expand or attach to existing",
+        "existing_owner_id": "journey",
+        "reason": "The anonymous-companion premise repeats existing text; performers, album publication and musical scale supply useful expansion."
+      }
+    },
+    {
+      "entry_id": "feature-umurangi-looking",
+      "body_words": 358,
+      "date": {
+        "year": 2020,
+        "precision": "year",
+        "month": 0,
+        "day": 0
+      },
+      "event_semantics": "Year anchors the work discussed; this is not a birth, publication-calendar slot or assumed worldwide release date.",
+      "related_ids": [],
+      "structure_and_citation_resolution": "pass",
+      "semantic_recommendation": {
+        "action": "new subject feature candidate",
+        "existing_owner_id": null,
+        "reason": "No Umurangi exhibit exists. Keep the game, real photograph and particular Maori/Aotearoa context separately identified."
+      }
+    },
+    {
+      "entry_id": "feature-monument-valley-art",
+      "body_words": 361,
+      "date": {
+        "year": 2014,
+        "precision": "year",
+        "month": 0,
+        "day": 0
+      },
+      "event_semantics": "Year anchors the work discussed; this is not a birth, publication-calendar slot or assumed worldwide release date.",
+      "related_ids": [
+        "workbook-04-03-monument-valley"
+      ],
+      "structure_and_citation_resolution": "pass",
+      "semantic_recommendation": {
+        "action": "authored companion preserving source",
+        "existing_owner_id": "workbook-04-03-monument-valley",
+        "reason": "The design question overlaps the imported article. Preserve its full source prose and attach this specific architecture, edition and team analysis."
+      }
+    },
+    {
+      "entry_id": "feature-celeste-assistance",
+      "body_words": 365,
+      "date": {
+        "year": 2018,
+        "precision": "year",
+        "month": 0,
+        "day": 0
+      },
+      "event_semantics": "Year anchors the work discussed; this is not a birth, publication-calendar slot or assumed worldwide release date.",
+      "related_ids": [
+        "celeste"
+      ],
+      "structure_and_citation_resolution": "pass",
+      "semantic_recommendation": {
+        "action": "expand or attach to existing",
+        "existing_owner_id": "celeste",
+        "reason": "Existing prose already names assistance. Input allowances and versioned changes deepen that exhibit rather than establish another launch."
+      }
+    },
+    {
+      "entry_id": "feature-paperwork-ethical-systems",
+      "body_words": 354,
+      "date": {
+        "year": 2013,
+        "precision": "year",
+        "month": 0,
+        "day": 0
+      },
+      "event_semantics": "Year anchors the work discussed; this is not a birth, publication-calendar slot or assumed worldwide release date.",
+      "related_ids": [
+        "papers-please"
+      ],
+      "structure_and_citation_resolution": "pass",
+      "semantic_recommendation": {
+        "action": "expand or attach to existing",
+        "existing_owner_id": "papers-please",
+        "reason": "The short existing exhibit already covers documentary pressure. Pope production decisions supply missing researched depth."
+      }
+    },
+    {
+      "entry_id": "feature-kazuko-shibuya-pixel-art",
+      "body_words": 352,
+      "date": {
+        "year": 2021,
+        "precision": "year",
+        "month": 0,
+        "day": 0
+      },
+      "event_semantics": "Year anchors the work discussed; this is not a birth, publication-calendar slot or assumed worldwide release date.",
+      "related_ids": [
+        "workbook-12-18-final-fantasy",
+        "wikipedia-66495",
+        "workbook-04-02-final-fantasy-vi"
+      ],
+      "structure_and_citation_resolution": "pass",
+      "semantic_recommendation": {
+        "action": "distinct artist feature candidate",
+        "existing_owner_id": "workbook-12-18-final-fantasy",
+        "reason": "A cross-work artist question differs from the game articles. Link first, third and sixth Final Fantasy; do not misattach it to VII."
+      }
+    },
+    {
+      "entry_id": "feature-tetsuya-mizuguchi-synesthesia",
+      "body_words": 360,
+      "date": {
+        "year": 2016,
+        "precision": "year",
+        "month": 0,
+        "day": 0
+      },
+      "event_semantics": "Year anchors the work discussed; this is not a birth, publication-calendar slot or assumed worldwide release date.",
+      "related_ids": [
+        "wikipedia-101230"
+      ],
+      "structure_and_citation_resolution": "pass",
+      "semantic_recommendation": {
+        "action": "production companion to existing",
+        "existing_owner_id": "wikipedia-101230",
+        "reason": "Rez already introduces synchronized audiovisual play. Freeland layering and the 2016 collaborators support a production companion."
+      }
+    },
+    {
+      "entry_id": "feature-darren-korb-ashley-barrett",
+      "body_words": 366,
+      "date": {
+        "year": 2011,
+        "precision": "year",
+        "month": 0,
+        "day": 0
+      },
+      "event_semantics": "Year anchors the work discussed; this is not a birth, publication-calendar slot or assumed worldwide release date.",
+      "related_ids": [
+        "wikipedia-30602654"
+      ],
+      "structure_and_citation_resolution": "pass",
+      "semantic_recommendation": {
+        "action": "production companion to existing",
+        "existing_owner_id": "wikipedia-30602654",
+        "reason": "Bastion already has a game entry. Singers, lyrics, narration and arrangements add credited depth without another game-release stop."
+      }
+    },
+    {
+      "entry_id": "feature-bertie-fair",
+      "body_words": 345,
+      "date": {
+        "year": 1950,
+        "precision": "year"
+      },
+      "event_semantics": "Public demonstration at the 1950 Canadian National Exhibition. Kates’s retrospective recollection differs by a year; institutional chronology is retained and the discrepancy is explicit.",
+      "related_ids": [
+        "bertie-the-brain"
+      ],
+      "structure_and_citation_resolution": "pass",
+      "semantic_recommendation": {
+        "action": "expand or attach to existing",
+        "existing_owner_id": "bertie-the-brain",
+        "reason": "Same exhibition/Additron question. Add recollection, visible date disagreement and photograph provenance."
+      }
+    },
+    {
+      "entry_id": "feature-nimrod-demonstration",
+      "body_words": 358,
+      "date": {
+        "year": 1951,
+        "precision": "year"
+      },
+      "event_semantics": "Festival of Britain demonstration in 1951. Exact opening-day claims are not adopted pending chronology reconciliation.",
+      "related_ids": [
+        "nimrod"
+      ],
+      "structure_and_citation_resolution": "pass",
+      "semantic_recommendation": {
+        "action": "expand or attach to existing",
+        "existing_owner_id": "nimrod",
+        "reason": "Same public-computation story. The booklet, interface and instruction display deepen its existing exhibit."
+      }
+    },
+    {
+      "entry_id": "feature-oxo-research",
+      "body_words": 350,
+      "date": {
+        "year": 1952,
+        "precision": "year",
+        "certainty": "circa"
+      },
+      "event_semantics": "Douglas’s EDSAC game, circa 1952; no exact completion day or unverified thesis-topic claim is asserted.",
+      "related_ids": [
+        "oxo"
+      ],
+      "structure_and_citation_resolution": "pass",
+      "semantic_recommendation": {
+        "action": "expand or attach to existing",
+        "existing_owner_id": "oxo",
+        "reason": "The same telephone-dial, laboratory and reconstruction sequence already exists. Add collaborators and simulator evidence there."
+      }
+    },
+    {
+      "entry_id": "feature-tennis-open-house",
+      "body_words": 350,
+      "date": {
+        "year": 1958,
+        "precision": "day",
+        "month": 10,
+        "day": 18
+      },
+      "event_semantics": "Brookhaven visitors’ day demonstration on 18 October 1958; the feature also distinguishes the later 2008 reconstruction.",
+      "related_ids": [
+        "tennis-for-two"
+      ],
+      "structure_and_citation_resolution": "pass",
+      "semantic_recommendation": {
+        "action": "expand or attach to existing",
+        "existing_owner_id": "tennis-for-two",
+        "reason": "The first two cards revisit the same demonstration. The 2008 repair/reconstruction provides substantive attached depth."
+      }
+    },
+    {
+      "entry_id": "feature-spacewar-sharing",
+      "body_words": 345,
+      "date": {
+        "year": 1962,
+        "precision": "year"
+      },
+      "event_semantics": "Collaborative PDP-1 game development in 1962, followed separately by the museum’s 2004–2005 restoration.",
+      "related_ids": [
+        "spacewar"
+      ],
+      "structure_and_citation_resolution": "pass",
+      "semantic_recommendation": {
+        "action": "expand or attach to existing",
+        "existing_owner_id": "spacewar",
+        "reason": "Existing text already joins collaboration, controls and preservation. Named restoration events make a stronger full version."
+      }
+    },
+    {
+      "entry_id": "feature-brown-box-team",
+      "body_words": 356,
+      "date": {
+        "year": 1968,
+        "precision": "year"
+      },
+      "event_semantics": "Brown Box prototype period, 1968, within documented development from 1966 onward; the 1972 Odyssey is a later commercial outcome.",
+      "related_ids": [
+        "brown-box"
+      ],
+      "structure_and_citation_resolution": "pass",
+      "semantic_recommendation": {
+        "action": "expand or attach to existing",
+        "existing_owner_id": "brown-box",
+        "reason": "The team/prototype/archive question already defines the exhibit. Add switch cards, document series and replica distinctions."
+      }
+    },
+    {
+      "entry_id": "feature-mabel-addis-classroom",
+      "body_words": 340,
+      "date": {
+        "year": 1964,
+        "precision": "range",
+        "start_year": 1964,
+        "end_year": 1966
+      },
+      "event_semantics": "Educational development and classroom revision, 1964–1966; primary final report published June 1967. No commercial release date asserted.",
+      "related_ids": [],
+      "structure_and_citation_resolution": "pass",
+      "semantic_recommendation": {
+        "action": "new subject feature candidate",
+        "existing_owner_id": null,
+        "reason": "No Addis/Sumerian Game exhibit exists. Contemporary classroom revisions and surviving printouts support a new subject."
+      }
+    },
+    {
+      "entry_id": "feature-lawson-cartridge-team",
+      "body_words": 358,
+      "date": {
+        "year": 1976,
+        "precision": "year"
+      },
+      "event_semantics": "Engineering of the Fairchild Channel F for its 1976 commercial introduction; later Video Soft activity is dated separately.",
+      "related_ids": [
+        "channel-f"
+      ],
+      "structure_and_citation_resolution": "pass",
+      "semantic_recommendation": {
+        "action": "expand or attach to existing",
+        "existing_owner_id": "channel-f",
+        "reason": "The existing exhibit already covers Alpex, the team and Video Soft. Add housing, regulatory work and exact company chronology."
+      }
+    },
+    {
+      "entry_id": "feature-ed-smith-apf",
+      "body_words": 358,
+      "date": {
+        "year": 1978,
+        "precision": "year"
+      },
+      "event_semantics": "APF MP 1000 console period, 1978, and the subsequent Imagination Machine expansion; no exact development or retail day asserted.",
+      "related_ids": [],
+      "structure_and_citation_resolution": "pass",
+      "semantic_recommendation": {
+        "action": "new subject feature candidate",
+        "existing_owner_id": null,
+        "reason": "No Ed Smith/APF exhibit exists. Repair learning and console-to-computer expansion offer a distinct creator/technology story."
+      }
+    },
+    {
+      "entry_id": "feature-carol-shaw-river",
+      "body_words": 347,
+      "date": {
+        "year": 1982,
+        "precision": "year"
+      },
+      "event_semantics": "Development of River Raid for its 1982 publication; the feature concerns Shaw’s design process, not a birth anniversary.",
+      "related_ids": [
+        "carol-shaw"
+      ],
+      "structure_and_citation_resolution": "pass",
+      "semantic_recommendation": {
+        "action": "expand or attach to existing",
+        "existing_owner_id": "carol-shaw",
+        "reason": "Existing argument already follows storage, generation, challenge and records. Add the production conversation and paper evidence without duplicating that sequence."
+      }
+    }
+  ],
+  "remaining_integration_gates": [
+    "Make the semantic placement/count decision per feature; eight people drafts substantially expand existing subjects.",
+    "Preserve original Playhub bodies/translations and keep new authored prose separately credited.",
+    "Retain card citations and event semantics when adapting the two card metadata conventions.",
+    "The Sumerian Game date range is valid research metadata; current date labels display its anchor year, so retain the full range and semantics in accompanying content.",
+    "Approve media identity, captions, rights, localization and actual native presentation separately."
+  ],
+  "limits": "All 80 cards read. Selected primary pages independently fetched, including Shibuya source that exposed factual error. This is not a second full verification of every document/claim. Some primary routes timed out. No media permission, native layout or PS5 behavior is approved.",
+  "later_integration_decision": {
+    "standalone_ids": [
+      "feature-ed-smith-apf",
+      "feature-kazuko-shibuya-pixel-art",
+      "feature-kondo-functional-music",
+      "feature-mabel-addis-classroom",
+      "feature-riven-performance-audio",
+      "feature-umurangi-looking"
+    ],
+    "attached_parent_ids": {
+      "feature-journey-music-companionship": "journey",
+      "feature-monument-valley-art": "workbook-04-03-monument-valley",
+      "feature-celeste-assistance": "celeste",
+      "feature-paperwork-ethical-systems": "papers-please",
+      "feature-tetsuya-mizuguchi-synesthesia": "wikipedia-101230",
+      "feature-darren-korb-ashley-barrett": "wikipedia-30602654",
+      "feature-bertie-fair": "bertie-the-brain",
+      "feature-nimrod-demonstration": "nimrod",
+      "feature-oxo-research": "oxo",
+      "feature-tennis-open-house": "tennis-for-two",
+      "feature-spacewar-sharing": "spacewar",
+      "feature-brown-box-team": "brown-box",
+      "feature-lawson-cartridge-team": "channel-f",
+      "feature-carol-shaw-river": "carol-shaw"
+    },
+    "new_timeline_destinations": 6,
+    "no_editorial_release_signoff_implied": true,
+    "integration_source": "content/expansion/integrate_priority_features.py",
+    "preassembly_validation": "build/priority-feature-integration-dry-run.json",
+    "canonical_assembly_performed_by_reviewer": false
+  }
+}

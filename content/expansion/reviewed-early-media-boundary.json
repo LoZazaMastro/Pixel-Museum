@@ -1,0 +1,660 @@
+{
+  "schema_version": 1,
+  "status": "FROZEN_NINE_SLOT_PREPARATORY_BATCH_PENDING_INDEPENDENT_CAUSAL_REVIEW_AND_ROOT_WRITER",
+  "frozen": true,
+  "row_count": 9,
+  "planned_row_count": 9,
+  "expected_catalog_sha256": "b06f600a0b6b136f7c59c469fe2bbdfae96f8dba12eafc73c37cbc56272c8552",
+  "strict_2001_gate": {
+    "path": "build/research/chronological-early-four-language-translations/through2001-current-text-coverage.json",
+    "sha256": "9ab64ec14736c5f424475f61cfc56fc1fd677aacc65c2cb71187d357c8882fd2"
+  },
+  "scope": "Exactly nine image slots, including the original Midway controls manual for MK paragraph2. All rows preflighted before any in-memory mutation. No writer or hook installed. ROOT owns admission after independent review. English/date/selection/other images/locales/audio unchanged. Earlier Pesina capture excluded.",
+  "rows": [
+    {
+      "owner_id": "workbook-06-19-treasure",
+      "index": 0,
+      "expected_image_count": 3,
+      "expected_old_url": "https://images.launchbox-app.com/dce3611a-3072-4f24-b8f4-c7dad2c5996d.jpg",
+      "before_image": {
+        "url": "https://images.launchbox-app.com/dce3611a-3072-4f24-b8f4-c7dad2c5996d.jpg",
+        "title": "Gunstar Heroes box artwork: an early Treasure game, rather than a company portrait",
+        "caption": "Gunstar Heroes box artwork: an early Treasure game, rather than a company portrait",
+        "width": 1625,
+        "height": 2280,
+        "source_page": "https://gamesdb.launchbox-app.com/games/details/138",
+        "creator": "Sega / Treasure; box scan preserved by LaunchBox Games Database",
+        "credit": "Sega / Treasure; box scan preserved by LaunchBox Games Database / Copyright Sega / Treasure; historical package artwork",
+        "license": "Copyright Sega / Treasure; historical package artwork",
+        "license_url": "",
+        "quality_verified": "Actual GET/full native image decode 2026-10-21; no upscale. Identified contextual work/artifact, not a substitute portrait.",
+        "recovery_local_source": "build/research/cover-people/workbook-06-19-treasure.jpg"
+      },
+      "after_image": {
+        "url": "https://www.treasure-inc.co.jp/logo/b01_tr.png",
+        "title": "Treasure company logo",
+        "caption": "Treasure company logo, as published on the studio's official company page. This is a company identity image, not a photograph of the founding team or a dated 1992 artifact.",
+        "source_page": "https://www.treasure-inc.co.jp/company.html",
+        "creator": "Treasure Co., Ltd.",
+        "credit": "Treasure Co., Ltd. / official company identity",
+        "license": "Treasure company trademark/logo; original rights retained. Official publication does not imply an open image licence.",
+        "license_url": "",
+        "width": 430,
+        "height": 192,
+        "kind": "company-logo",
+        "recovery_local_source": "build/research/1992-two-cover-identity-readonly/treasure-official-logo.png",
+        "quality_verified": "Complete gold/orange TREASURE wordmark with its original white background and grey/red underline. Company identity clear. Modest 430 x 192 native raster; no invented HD or 1992 historical-logo dating. Preserve whole asset without enlargement or added packaging.",
+        "verification": {
+          "sha256": "49cd3c90ee769fd44388553abda085af4cf3145ab31ce5a18d52f0ddd03ea034",
+          "native_dimensions": [
+            430,
+            192
+          ],
+          "no_upscale": true
+        }
+      },
+      "expected_english_five_fields_sha256": "c2f8b2b892ffea833d9b29e4eec72f5bc7f185d9ccbc31abb8bc468b032d6a17",
+      "source": {
+        "recovery_local_source": "build/research/1992-two-cover-identity-readonly/treasure-official-logo.png",
+        "sha256": "49cd3c90ee769fd44388553abda085af4cf3145ab31ce5a18d52f0ddd03ea034",
+        "native_dimensions": [
+          430,
+          192
+        ],
+        "bundle_policy": "preserve_original_png_bytes"
+      },
+      "source_files": {
+        "build/research/1992-two-cover-identity-readonly/two-finite-cover-identity-final-observed-arcade-flyer-readonly-plans.json": "ceca5f51106c9f069fdf727a39f849be855a91f1af4cf7a3c710d73bdec4b15f"
+      }
+    },
+    {
+      "owner_id": "wikipedia-6574955",
+      "index": 0,
+      "expected_image_count": 3,
+      "expected_old_url": "https://images.launchbox-app.com/4838ac6d-dfc0-4903-8402-205ed74988d1.jpg",
+      "before_image": {
+        "url": "https://images.launchbox-app.com/4838ac6d-dfc0-4903-8402-205ed74988d1.jpg",
+        "title": "Street Fighter II Turbo: later Super Nintendo cover",
+        "width": 2100,
+        "height": 1534,
+        "source_page": "https://gamesdb.launchbox-app.com/games/details/2538",
+        "creator": "Capcom",
+        "credit": "Capcom; image catalogued by LaunchBox Games Database",
+        "license": "Original game packaging and imagery; original publisher rights retained",
+        "license_url": "",
+        "recovery_local_source": "build/research/launchbox/scans/4838ac6d-dfc0-4903-8402-205ed74988d1.jpg",
+        "identity_evidence": {
+          "database_id": "2538",
+          "name": "Street Fighter II Turbo",
+          "year": "1993-07-10",
+          "platform": "Super Nintendo Entertainment System",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Street_Fighter_II_Turbo",
+          "image_type": "Box - Front"
+        },
+        "cover_art": true,
+        "story_paragraph": -1,
+        "caption": "Packaging of the later Super Nintendo home version. This is not an arcade enhancement-kit package from 1992."
+      },
+      "after_image": {
+        "url": "https://images.launchbox-app.com/a9ca9e42-9b46-44d7-af03-6a625ab3d6b8.jpg",
+        "title": "Street Fighter II Dash Turbo: original Japanese arcade flyer",
+        "caption": "Japanese arcade flyer for Street Fighter II Dash Turbo: Hyper Fighting (1992), featuring Ryu. Original Capcom promotional artwork, preserved by LaunchBox Games Database.",
+        "source_page": "https://gamesdb.launchbox-app.com/games/images/78289-street-fighter-ii-hyper-fighting",
+        "creator": "Capcom; original promotional-art contributors",
+        "credit": "Capcom / Japanese arcade flyer preserved by LaunchBox Games Database",
+        "license": "Capcom original promotional artwork; printed copyright CAPCOM1991,1992 ALL RIGHTS RESERVED. Scan preserved by LaunchBox Games Database. No open image licence asserted and no artist name inferred.",
+        "license_url": "",
+        "width": 1280,
+        "height": 1805,
+        "kind": "archive-flyer",
+        "cover_art": true,
+        "story_paragraph": -1,
+        "recovery_local_source": "build/research/1992-two-cover-identity-readonly/arcade-flyer-367924.jpg",
+        "quality_verified": "1280 x 1805 native delivered JPEG, full flyer including border/copyright and Hyper Fighting title. Strong single-subject vertical composition; no crop, text removal, upscale or reconstruction.",
+        "verification": {
+          "sha256": "3139b1d184c0c043faf06956d7be083cc456bea72db027c799ffad9734bac48c",
+          "native_dimensions": [
+            1280,
+            1805
+          ],
+          "no_upscale": true
+        }
+      },
+      "expected_english_five_fields_sha256": "68f8c91cd17b0a194d3791c84a71b0a3879e0224e6673803246f8d8769fad872",
+      "source": {
+        "recovery_local_source": "build/research/1992-two-cover-identity-readonly/arcade-flyer-367924.jpg",
+        "sha256": "3139b1d184c0c043faf06956d7be083cc456bea72db027c799ffad9734bac48c",
+        "native_dimensions": [
+          1280,
+          1805
+        ],
+        "bundle_policy": "preserve_original_source_bytes"
+      },
+      "source_files": {
+        "build/research/1992-two-cover-identity-readonly/two-finite-cover-identity-final-observed-arcade-flyer-readonly-plans.json": "ceca5f51106c9f069fdf727a39f849be855a91f1af4cf7a3c710d73bdec4b15f"
+      }
+    },
+    {
+      "owner_id": "wikipedia-8090",
+      "index": 1,
+      "expected_image_count": 4,
+      "expected_old_url": "https://images.launchbox-app.com/02bf7044-b173-4487-acb1-25679e7cfe50.jpg",
+      "before_image": {
+        "url": "https://images.launchbox-app.com/02bf7044-b173-4487-acb1-25679e7cfe50.jpg",
+        "source_page": "https://gamesdb.launchbox-app.com/games/details/3779",
+        "title": "Maniac Mansion: Day of the Tentacle: original box - back",
+        "creator": "LucasArts Entertainment Company",
+        "credit": "LucasArts Entertainment Company / scan catalogued by LaunchBox Games Database",
+        "license": "Original packaging and advertisement artwork; original rights retained.",
+        "width": 800,
+        "height": 1011,
+        "native_long_edge": 1011,
+        "kind": "archive-artwork",
+        "story_paragraph": 1,
+        "quality_verified": "Original archival image decoded at native dimensions; not enlarged.",
+        "verification": {
+          "sha256": "a8279cdc02e5cfbb6f612aa6caf638766658dc02e4118e3bb026b2b7780bd36c",
+          "checked_utc": "2026-10-21T12:08:28.144731+00:00"
+        }
+      },
+      "after_image": {
+        "url": "https://dosdays.co.uk/media/games/dott/maniac2-manual.pdf#museum-artifact=original-manual-interface-spread.jpeg",
+        "source_page": "https://dosdays.co.uk/topics/Games/game_dott.php",
+        "title": "Original-game manual: Bernard's verb-and-inventory interface (printed pages 2 and 3)",
+        "creator": "LucasArts Entertainment Company; manual credits retained in the complete source PDF",
+        "credit": "LucasArts Entertainment Company / original manual scan archived by DOS Days",
+        "license": "Original manual and pictured game artwork copyright LucasArts Entertainment Company; all rights retained. The manual expressly reserves reproduction rights. No open licence or permission grant claimed.",
+        "width": 2550,
+        "height": 2623,
+        "native_long_edge": 2623,
+        "kind": "archive-manual",
+        "story_paragraph": 1,
+        "recovery_local_source": "build/research/day-tentacle1993-distinct-original-media-preparation/original-manual-spread-2-embedded.jpeg",
+        "quality_verified": "Exact complete embedded DCT/JPEG scan stream from source PDF page index2, printed pages2-3; no rasterization, cropping, enlargement, retouching or remastered imagery.",
+        "verification": {
+          "sha256": "2f355f6765146e9fd0f7c0a98ea8c16f30e6127141f38988da33e4f85e806d89",
+          "pdf_sha256": "579e50ddd64a2b60d47e121b427dbff07add23fcedc01837d2294b5be6d128e6",
+          "pdf_page_index": 2,
+          "pdf_image_xref": 207,
+          "pdf_raw_dct_stream_byte_exact": true,
+          "native_dimensions": [
+            2550,
+            2623
+          ]
+        }
+      },
+      "expected_english_five_fields_sha256": "11fa3edaa1374f81cbe7366a7ec128b6caad3b695d69b2a9227cbfb2ee82017d",
+      "source": {
+        "recovery_local_source": "build/research/day-tentacle1993-distinct-original-media-preparation/original-manual-spread-2-embedded.jpeg",
+        "sha256": "2f355f6765146e9fd0f7c0a98ea8c16f30e6127141f38988da33e4f85e806d89",
+        "native_dimensions": [
+          2550,
+          2623
+        ],
+        "bundle_policy": "preserve_original_source_bytes"
+      },
+      "source_files": {
+        "build/research/day-tentacle1993-distinct-original-media-preparation/one-image-only-original-manual-interface-preparatory-plan.json": "c5c7e943596f01ca65cc265c133704cad6a8c72483b3effcbd049e8da972ea6a",
+        "build/research/1993-local-media-independent-audit/root-two-prepared-original-media-visual-acceptance.json": "519f5593ea4e2985659deff61189b4a92cd454a746eb484c067b93b61821077b",
+        "build/research/day-tentacle1993-distinct-original-media-preparation/original-manual.pdf": "579e50ddd64a2b60d47e121b427dbff07add23fcedc01837d2294b5be6d128e6"
+      }
+    },
+    {
+      "owner_id": "wikipedia-2975597",
+      "index": 1,
+      "expected_image_count": 5,
+      "expected_old_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/606370/library_hero_2x.jpg",
+      "before_image": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/606370/library_hero_2x.jpg",
+        "source_page": "https://store.steampowered.com/app/606370/",
+        "title": "Romancing SaGa 2™: 2017 PC remaster library artwork",
+        "creator": "Square Enix",
+        "credit": "Square Enix / official Steam publisher media",
+        "license": "Publisher copyright; historical editorial illustration. Not an open-licensed asset.",
+        "rights_review": "Publisher copyright retained; editorial-use decision still requires review.",
+        "width": 3840,
+        "height": 1240,
+        "native_long_edge": 3840,
+        "quality_verified": "Fresh publisher CDN GET and full native image decode; no artificial enlargement.",
+        "verification": {
+          "sha256": "ef8ff6bf82b88a353ca52a721f27eabbe1ac4926077b3c501fa87d3d6dc4305b",
+          "checked_utc": "2026-10-20T21:30:54.798153+00:00",
+          "source_api": "https://store.steampowered.com/api/appdetails?appids=606370&l=english",
+          "appid": 606370,
+          "published_title": "Romancing SaGa 2™",
+          "published_pc_store_release_date": {
+            "coming_soon": false,
+            "date": "15 Dec, 2017"
+          }
+        },
+        "provenance": {
+          "identity_discovery": {
+            "qid": "Q863419",
+            "appids": [
+              "606370"
+            ],
+            "article_title": "Romancing SaGa 2",
+            "source_api": "https://www.wikidata.org/w/api.php?action=wbgetentities&sites=enwiki&titles=Retro+City+Rampage%7CRez+%28video+game%29%7CRidge+Racer+%282004+video+game%29%7CRidge+Racer+Revolution%7CRistar%7CRiviera%3A+The+Promised+Land%7CRoblox%7CRoboCop+%281988+video+game%29%7CRock+Band+3%7CRomancing+SaGa+2%7CRust+%28video+game%29%7CRygar%3A+The+Legendary+Adventure%7CS.T.U.N.+Runner%7CSabre+Wulf%7CSanta+Paravia+en+Fiumaccio%7CSatisfactory%7CSea+Wolf+%28video+game%29%7CSecret+of+Mana%7CSega+Rally+Championship%7CSekiro%3A+Shadows+Die+Twice%7CShantae%3A+Risky%27s+Revenge%7CShark+Jaws%7CSheriff+%28video+game%29%7CShin+Megami+Tensei+%28video+game%29%7CShin+Megami+Tensei%3A+Digital+Devil+Saga%7CShoot+Away%7CShovel+Knight%7CSkyforge%7CSlot+Racers%7CSoccer+%281985+video+game%29%7CSonic+Advance%7CSonic+Adventure%7CSonic+Mania%7CSonic+the+Hedgehog+3%7CSoul+Edge&props=claims%7Clabels%7Csitelinks&languages=en&sitefilter=enwiki&format=json",
+            "entity_url": "https://www.wikidata.org/wiki/Q863419"
+          },
+          "edition_note": "2017 PC remaster. Later edition shown, not claimed to depict the original launch build.",
+          "edition_primary_source": "https://blog.playstation.com/2017/12/08/romancing-saga-2-coming-to-ps4-ps-vita-on-december-15/"
+        },
+        "story_paragraph": 0
+      },
+      "after_image": {
+        "url": "https://images.launchbox-app.com/dec7a1d5-fe26-409d-be4b-e5d8d2c88766.png",
+        "title": "Romancing SaGa 2: original Super Famicom battle graphics",
+        "caption": "Romancing SaGa 2: battle graphics from the original Super Famicom game, with a five-character party arranged against an enemy group. Preserved capture; capture hardware and language build are not identified by the source.",
+        "source_page": "https://gamesdb.launchbox-app.com/games/images/26368-romancing-saga-2",
+        "creator": "Square; original game-art contributors",
+        "credit": "Square / original game graphics preserved by LaunchBox Games Database",
+        "license": "Original Square/Square Enix game copyright retained; preservation source does not grant an open licence. No artwork authorship or capture hardware inferred.",
+        "license_url": "",
+        "width": 256,
+        "height": 224,
+        "kind": "gameplay",
+        "story_paragraph": 0,
+        "recovery_local_source": "build/research/romancing-saga2-1993-primary-internal-readonly/native-original-gameplay-1405455.png",
+        "quality_verified": "Original downloaded 256 x 224 PNG, crisp pixel graphics. No crop, resampling, AI enhancement, or fabricated screenshot.",
+        "verification": {
+          "sha256": "d9b2dbc68d1924f10bb952f1ba654b9c13df2cc5e8014a8b9e269c6b5cfa34ff",
+          "native_dimensions": [
+            256,
+            224
+          ],
+          "capture_build_limit": "Community preservation gallery identifies the original Super Famicom game. Capture date, hardware, emulator, and language/patch build are not identified. Another image in the same gallery has Latin text; therefore do not claim this is a verified unmodified Japanese retail capture or a capture made in 1993.",
+          "no_upscale": true,
+          "lossless_png_preserve": true
+        }
+      },
+      "expected_english_five_fields_sha256": "aa3ae01304f447dc07607e2809581413fc3485f479b4bc904bd0948780218ab0",
+      "source": {
+        "recovery_local_source": "build/research/romancing-saga2-1993-primary-internal-readonly/native-original-gameplay-1405455.png",
+        "sha256": "d9b2dbc68d1924f10bb952f1ba654b9c13df2cc5e8014a8b9e269c6b5cfa34ff",
+        "native_dimensions": [
+          256,
+          224
+        ],
+        "bundle_policy": "preserve_original_png_bytes_no_jpeg_reencode"
+      },
+      "source_files": {
+        "build/research/romancing-saga2-1993-primary-internal-readonly/bounded-distinct-original-battle-image-readonly-plan.json": "47f13a47aa4c294a51bda216ee5fb7d1cad60ffaf583aaa239ffb8fe226076ce",
+        "build/research/1993-local-media-independent-audit/root-two-prepared-original-media-visual-acceptance.json": "519f5593ea4e2985659deff61189b4a92cd454a746eb484c067b93b61821077b"
+      }
+    },
+    {
+      "owner_id": "workbook-05-05-wolfenstein-3d",
+      "index": 1,
+      "expected_image_count": 5,
+      "expected_old_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2270/library_hero_2x.jpg",
+      "before_image": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2270/library_hero_2x.jpg",
+        "width": 3840,
+        "height": 1240,
+        "source_page": "https://store.steampowered.com/app/2270/",
+        "title": "Wolfenstein 3D: official library artwork",
+        "creator": "id Software / Bethesda",
+        "license": "Copyright id Software / Bethesda. Publisher-supplied editorial artwork.",
+        "credit": "id Software / Bethesda / official Steam library artwork",
+        "quality_verified": "Fresh remote GET and full decode of the native publisher CDN artwork. No resizing or generated enlargement by Pixel Museum.",
+        "native_long_edge": 3840,
+        "story_paragraph": 0,
+        "verification": {
+          "sha256": "7e24ce15e39a6328200bec51f466e18f58ba6c3709c4b4be0ea60ed3ad36cb57"
+        }
+      },
+      "after_image": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2270/0000002417.1920x1080.jpg?t=1750784646",
+        "title": "Wolfenstein 3D: a guard in the prison corridors",
+        "caption": "An original Wolfenstein 3D gameplay scene supplied in the official publisher gallery. The prison corridor, guard and first-person weapon illustrate the escape described here. Original 320-by-200 screenshot retained without enlargement; this is not a remake or Spear of Destiny scene.",
+        "source_page": "https://store.steampowered.com/app/2270/",
+        "creator": "id Software / Bethesda Softworks",
+        "credit": "id Software / Bethesda Softworks / original publication; rights retained",
+        "license": "Original game, performance, footage and publisher rights retained by their respective owners. No open licence or blanket redistribution permission asserted.",
+        "license_url": "",
+        "width": 320,
+        "height": 200,
+        "story_paragraph": 0,
+        "recovery_local_source": "build/research/1992-internal-two-image-boundary-preparation/wolf-original-first-game-scene.jpg",
+        "verification": {
+          "sha256": "c9b21084c665b45abae7c9cac7c4cc799bdb56fbe6bd7fdc9d1ddee040ca58fb",
+          "native_dimensions": [
+            320,
+            200
+          ],
+          "actual_visual_review": "Actually viewed full screenshot and official five-image contact sheet: LEVEL 1, score 1200, lives 2, health 50%, ammo 8, gray corridor, brown guard and pistol. Distinct scene from existing image3 (multiple enemies/blue room) and image4 (green-uniform guard/red wall). Gallery screenshots1/2 show FLOOR HUD and were rejected as Spear of Destiny context. Old hero artwork was also viewed and visibly repeats the cover composition.",
+          "quality_limit": "Actual 320x200 publisher file, pixel-era native image. Suitable as a compact historical gameplay illustration, not HD evidence; no artificial enlargement. The gallery also contains Spear of Destiny shots, which were excluded.",
+          "bundle_lossless_pixel_requirement": "decode_native_original_jpeg_once_to_lossless_png_no_second_jpeg_encode"
+        }
+      },
+      "expected_english_five_fields_sha256": "5f3d43d984fe0e68df76181fa4da5c435247c6b3e8d40c0f070d6401b2b29190",
+      "source": {
+        "recovery_local_source": "build/research/1992-internal-two-image-boundary-preparation/wolf-original-first-game-scene.jpg",
+        "sha256": "c9b21084c665b45abae7c9cac7c4cc799bdb56fbe6bd7fdc9d1ddee040ca58fb",
+        "native_dimensions": [
+          320,
+          200
+        ],
+        "bundle_policy": "decode_native_original_jpeg_once_to_lossless_png_no_second_jpeg_encode"
+      },
+      "source_files": {
+        "build/research/1992-internal-two-image-boundary-preparation/wolfenstein-original-scene-single-slot-candidate.json": "b6bff1ce8753fefc4cc7b4ecc7bed63b9d949c4546bd2ca672d3bed3b398cd35"
+      }
+    },
+    {
+      "owner_id": "wikipedia-5837893",
+      "index": 0,
+      "expected_image_count": 4,
+      "expected_old_url": "https://archive.org/download/snes-manual-archive/Addams%20Family%2C%20The%20%28%20USA%20%29.pdf#museum-artifact=original-snes-manual-front.png",
+      "before_image": {
+        "url": "https://archive.org/download/snes-manual-archive/Addams%20Family%2C%20The%20%28%20USA%20%29.pdf#museum-artifact=original-snes-manual-front.png",
+        "source_page": "https://archive.org/details/snes-manual-archive",
+        "title": "The Addams Family: original SNES manual cover",
+        "caption": "Ocean of America’s original Super Nintendo instruction manual, code SNS-AF-USA. The printed cover artwork replaces a generic Ocean publisher advertisement.",
+        "creator": "Ocean of America / Paramount Pictures",
+        "credit": "Ocean of America / Paramount Pictures",
+        "license": "Original game, manual and photographic rights retained by their respective owners.",
+        "width": 825,
+        "height": 1198,
+        "story_paragraph": -1,
+        "cover_art": true,
+        "recovery_local_source": "build/research/addams1992-original-version-identity/original-snes-manual-front.png",
+        "verification": {
+          "sha256": "dc42b706a0b2eafb8f17c12820fd76175adc4a224fab1f0945c193009e8bf900",
+          "source_pdf_sha256": "7fc359ebaa4438321a7a40372d010eaaccf570eb542b1683026ae1a77256e410",
+          "native_dimensions": [
+            825,
+            1198
+          ],
+          "artifact_extraction": {
+            "page_index": 0,
+            "clip_points": [
+              396,
+              0,
+              792,
+              575
+            ],
+            "scale": 2.0833333333333335,
+            "file": "original-snes-manual-front.png",
+            "dimensions": [
+              825,
+              1198
+            ],
+            "sha256": "dc42b706a0b2eafb8f17c12820fd76175adc4a224fab1f0945c193009e8bf900"
+          }
+        }
+      },
+      "after_image": {
+        "url": "https://images.launchbox-app.com/9b1982cc-4922-4698-878c-06d923efaf57.jpg",
+        "source_page": "https://gamesdb.launchbox-app.com/games/images/3494-the-addams-family",
+        "title": "The Addams Family: original North American SNES game box front",
+        "caption": "The North American Super Nintendo game box published by Ocean of America, with the film cast and original licensed packaging.",
+        "creator": "Ocean of America / Paramount Pictures",
+        "credit": "Ocean of America / Paramount Pictures; packaging image catalogued by LaunchBox Games Database",
+        "license": "Original game packaging, film, artwork and photographic rights remain with their respective owners. Not an open-licensed image. No reproduction permission is inferred from public availability.",
+        "width": 2100,
+        "height": 1534,
+        "native_long_edge": 2100,
+        "kind": "cover",
+        "story_paragraph": -1,
+        "quality_verified": "Full original file decoded and visually reviewed; no resizing, crop, retouch or upscaling performed.",
+        "recovery_local_source": "build/research/addams-dune1992-original-gamebox-cover-preparation/addams-original-snes-us-box.jpg",
+        "verification": {
+          "sha256": "382c707479962d06bef24fd6eff5322142dd8818f80ceabf8151bb4491fbc3a6",
+          "width": 2100,
+          "height": 1534,
+          "full_original_visually_reviewed": true
+        },
+        "cover_role": true,
+        "cover_art": true
+      },
+      "expected_english_five_fields_sha256": "de30deba9f0eeba934e06a0f90515e42ddacaf255c638236f0280c56d54e14f4",
+      "source": {
+        "recovery_local_source": "build/research/addams-dune1992-original-gamebox-cover-preparation/addams-original-snes-us-box.jpg",
+        "sha256": "382c707479962d06bef24fd6eff5322142dd8818f80ceabf8151bb4491fbc3a6",
+        "native_dimensions": [
+          2100,
+          1534
+        ],
+        "bundle_policy": "preserve_original_source_bytes"
+      },
+      "source_files": {
+        "build/research/addams-dune1992-original-gamebox-cover-preparation/three-bounded-image-slot-final-ascii-caption-preparatory-plan.json": "f9dc878f99f38b0d3de973b023d8f749bf556fea1a184d229aaed62689b96dda",
+        "build/research/addams-dune1992-original-gamebox-cover-preparation/addams-current-gallery.html": "98bf095b458dc6fd710e3c5c7e4944350b43e3b8af7715b655073cf18e8fb193",
+        "build/research/addams-dune1992-original-gamebox-cover-preparation/dune-current-gallery.html": "f40833be45074d7f4aa14f5d5a54fed02ab999f882d8d79aadaf0ddf662db687",
+        "build/research/addams-dune1992-original-gamebox-cover-preparation/ordinary-public-browser-context-acquisition.json": "8d24f578fde1b3770956f54ca3ea4b2303f87cf1040637452199210a86e6431a",
+        "build/research/addams-dune1992-original-gamebox-cover-preparation/two-current-gallery-original-assets-acquisition.json": "7129bac5aec1e33e2a40676a3378b06e0752b7fb6a719a6228b74d27bc8334ae",
+        "build/research/addams-dune1992-original-gamebox-cover-preparation/addams-original-snes-us-box.jpg": "382c707479962d06bef24fd6eff5322142dd8818f80ceabf8151bb4491fbc3a6",
+        "build/research/addams-dune1992-original-gamebox-cover-preparation/dune2-original-dos-us-box-native.jpg": "db7d0e12c6700b9b59b4305af0e571fadc6e82a4f180927aa67a8abf232814dc",
+        "build/research/addams-dune1992-original-gamebox-cover-preparation/addams-original-snes-us-back.jpg": "c7ee775b186dad8339e037d6f41df5dec2064dae3a7d2df11785646e9c8abc11"
+      }
+    },
+    {
+      "owner_id": "wikipedia-2239721",
+      "index": 0,
+      "expected_image_count": 3,
+      "expected_old_url": "https://images.launchbox-app.com/c00b0e01-f0ba-40d5-b307-4500b4387225.jpg",
+      "before_image": {
+        "url": "https://images.launchbox-app.com/c00b0e01-f0ba-40d5-b307-4500b4387225.jpg",
+        "title": "Dune II: original game cover",
+        "width": 675,
+        "height": 800,
+        "source_page": "https://gamesdb.launchbox-app.com/games/details/14134",
+        "creator": "Virgin Games",
+        "credit": "Virgin Games; scan catalogued by LaunchBox Games Database",
+        "license": "Original game packaging; original publisher and artwork rights retained. Not an open-licensed image.",
+        "kind": "cover",
+        "cover_role": true,
+        "story_paragraph": -1,
+        "native_long_edge": 800,
+        "quality_verified": "Original archival scan decoded at native dimensions; no enlargement.",
+        "verification": {
+          "sha256": "f577fd78863016b0ba6c81c4648c36ab79677c6a1783d1deb48272b075ef8b3a",
+          "checked_utc": "2026-10-21T11:50:01.899628+00:00"
+        },
+        "recovery_local_source": "build/research/launchbox/scans/c00b0e01-f0ba-40d5-b307-4500b4387225.jpg",
+        "identity_evidence": {
+          "database_id": "14134",
+          "name": "Dune II: The Building of a Dynasty",
+          "year": "1992-12-01",
+          "platform": "MS-DOS",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/Dune_II",
+          "image_type": "Box - Front"
+        }
+      },
+      "after_image": {
+        "url": "https://images.launchbox-app.com/bc6e1780-5e99-4dce-b1ee-b929a0c12f92.jpg",
+        "source_page": "https://gamesdb.launchbox-app.com/games/images/13667-dune-ii-the-building-of-a-dynasty",
+        "title": "Dune II: The Building of a Dynasty, original North American DOS box front",
+        "caption": "The North American Dune II: The Building of a Dynasty box front, bearing the Westwood Studios and Virgin Games marks.",
+        "creator": "Westwood Studios / Virgin Games",
+        "credit": "Westwood Studios / Virgin Games; packaging image catalogued by LaunchBox Games Database",
+        "license": "Original game packaging, film, artwork and photographic rights remain with their respective owners. Not an open-licensed image. No reproduction permission is inferred from public availability.",
+        "width": 4700,
+        "height": 5275,
+        "native_long_edge": 5275,
+        "kind": "cover",
+        "story_paragraph": -1,
+        "quality_verified": "Full original file decoded and visually reviewed; no resizing, crop, retouch or upscaling performed.",
+        "recovery_local_source": "build/research/addams-dune1992-original-gamebox-cover-preparation/dune2-original-dos-us-box-native.jpg",
+        "verification": {
+          "sha256": "db7d0e12c6700b9b59b4305af0e571fadc6e82a4f180927aa67a8abf232814dc",
+          "width": 4700,
+          "height": 5275,
+          "full_original_visually_reviewed": true
+        },
+        "cover_role": true,
+        "cover_art": true
+      },
+      "expected_english_five_fields_sha256": "ba06196353dc43f96e46ef4b22e4f0f7b4fd61b8918d6c1897e006839be3b9b2",
+      "source": {
+        "recovery_local_source": "build/research/addams-dune1992-original-gamebox-cover-preparation/dune2-original-dos-us-box-native.jpg",
+        "sha256": "db7d0e12c6700b9b59b4305af0e571fadc6e82a4f180927aa67a8abf232814dc",
+        "native_dimensions": [
+          4700,
+          5275
+        ],
+        "bundle_policy": "standard_runtime_max4096_master_original_preserved"
+      },
+      "source_files": {
+        "build/research/addams-dune1992-original-gamebox-cover-preparation/three-bounded-image-slot-final-ascii-caption-preparatory-plan.json": "f9dc878f99f38b0d3de973b023d8f749bf556fea1a184d229aaed62689b96dda",
+        "build/research/addams-dune1992-original-gamebox-cover-preparation/addams-current-gallery.html": "98bf095b458dc6fd710e3c5c7e4944350b43e3b8af7715b655073cf18e8fb193",
+        "build/research/addams-dune1992-original-gamebox-cover-preparation/dune-current-gallery.html": "f40833be45074d7f4aa14f5d5a54fed02ab999f882d8d79aadaf0ddf662db687",
+        "build/research/addams-dune1992-original-gamebox-cover-preparation/ordinary-public-browser-context-acquisition.json": "8d24f578fde1b3770956f54ca3ea4b2303f87cf1040637452199210a86e6431a",
+        "build/research/addams-dune1992-original-gamebox-cover-preparation/two-current-gallery-original-assets-acquisition.json": "7129bac5aec1e33e2a40676a3378b06e0752b7fb6a719a6228b74d27bc8334ae",
+        "build/research/addams-dune1992-original-gamebox-cover-preparation/addams-original-snes-us-box.jpg": "382c707479962d06bef24fd6eff5322142dd8818f80ceabf8151bb4491fbc3a6",
+        "build/research/addams-dune1992-original-gamebox-cover-preparation/dune2-original-dos-us-box-native.jpg": "db7d0e12c6700b9b59b4305af0e571fadc6e82a4f180927aa67a8abf232814dc",
+        "build/research/addams-dune1992-original-gamebox-cover-preparation/addams-original-snes-us-back.jpg": "c7ee775b186dad8339e037d6f41df5dec2064dae3a7d2df11785646e9c8abc11"
+      }
+    },
+    {
+      "owner_id": "wikipedia-5837893",
+      "index": 3,
+      "expected_image_count": 4,
+      "expected_old_url": "https://images.launchbox-app.com/1d856424-9e43-4c7a-bd72-c34aac52e247.jpg",
+      "before_image": {
+        "url": "https://images.launchbox-app.com/1d856424-9e43-4c7a-bd72-c34aac52e247.jpg",
+        "title": "Ocean promotes its Super Nintendo experience",
+        "width": 850,
+        "height": 1099,
+        "source_page": "https://gamesdb.launchbox-app.com/games/details/40017",
+        "creator": "Nintendo",
+        "credit": "Nintendo / LaunchBox scan archive",
+        "license": "Original publisher and illustration rights retained; historical arcade advertisement",
+        "license_url": "",
+        "recovery_local_source": "build/research/launchbox/scans/1d856424-9e43-4c7a-bd72-c34aac52e247.jpg",
+        "cover_art": false,
+        "identity_evidence": {
+          "database_id": "40017",
+          "name": "The Addams Family",
+          "year": "1992",
+          "platform": "Arcade",
+          "wikipedia_url": "https://en.wikipedia.org/wiki/The_Addams_Family_(video_game)",
+          "image_type": "Advertisement Flyer - Front"
+        },
+        "caption": "A generic Ocean Super Nintendo trade advertisement. It illustrates Ocean’s role as a console publisher, not the Addams Family game’s cover or an arcade release.",
+        "story_paragraph": 2
+      },
+      "after_image": {
+        "url": "https://images.launchbox-app.com/d58c4449-92e8-4339-be05-adbaea055626.jpg",
+        "source_page": "https://gamesdb.launchbox-app.com/games/images/3494-the-addams-family",
+        "title": "The Addams Family: original North American SNES game box back",
+        "caption": "Ocean of America's Super Nintendo box back presents the licensed film adaptation through its rescue premise and four gameplay screenshots.",
+        "creator": "Ocean of America / Paramount Pictures",
+        "credit": "Ocean of America / Paramount Pictures; packaging image catalogued by LaunchBox Games Database",
+        "license": "Original game packaging, film, artwork and photographic rights remain with their respective owners. Not an open-licensed image. No reproduction permission is inferred from public availability.",
+        "width": 2100,
+        "height": 1534,
+        "native_long_edge": 2100,
+        "kind": "archive-artwork",
+        "story_paragraph": 2,
+        "quality_verified": "Full original file decoded and visually reviewed; no resizing, crop, retouch or upscaling performed.",
+        "recovery_local_source": "build/research/addams-dune1992-original-gamebox-cover-preparation/addams-original-snes-us-back.jpg",
+        "verification": {
+          "sha256": "c7ee775b186dad8339e037d6f41df5dec2064dae3a7d2df11785646e9c8abc11",
+          "width": 2100,
+          "height": 1534,
+          "full_original_visually_reviewed": true
+        }
+      },
+      "expected_english_five_fields_sha256": "de30deba9f0eeba934e06a0f90515e42ddacaf255c638236f0280c56d54e14f4",
+      "source": {
+        "recovery_local_source": "build/research/addams-dune1992-original-gamebox-cover-preparation/addams-original-snes-us-back.jpg",
+        "sha256": "c7ee775b186dad8339e037d6f41df5dec2064dae3a7d2df11785646e9c8abc11",
+        "native_dimensions": [
+          2100,
+          1534
+        ],
+        "bundle_policy": "preserve_original_source_bytes"
+      },
+      "source_files": {
+        "build/research/addams-dune1992-original-gamebox-cover-preparation/three-bounded-image-slot-final-ascii-caption-preparatory-plan.json": "f9dc878f99f38b0d3de973b023d8f749bf556fea1a184d229aaed62689b96dda",
+        "build/research/addams-dune1992-original-gamebox-cover-preparation/addams-current-gallery.html": "98bf095b458dc6fd710e3c5c7e4944350b43e3b8af7715b655073cf18e8fb193",
+        "build/research/addams-dune1992-original-gamebox-cover-preparation/dune-current-gallery.html": "f40833be45074d7f4aa14f5d5a54fed02ab999f882d8d79aadaf0ddf662db687",
+        "build/research/addams-dune1992-original-gamebox-cover-preparation/ordinary-public-browser-context-acquisition.json": "8d24f578fde1b3770956f54ca3ea4b2303f87cf1040637452199210a86e6431a",
+        "build/research/addams-dune1992-original-gamebox-cover-preparation/two-current-gallery-original-assets-acquisition.json": "7129bac5aec1e33e2a40676a3378b06e0752b7fb6a719a6228b74d27bc8334ae",
+        "build/research/addams-dune1992-original-gamebox-cover-preparation/addams-original-snes-us-box.jpg": "382c707479962d06bef24fd6eff5322142dd8818f80ceabf8151bb4491fbc3a6",
+        "build/research/addams-dune1992-original-gamebox-cover-preparation/dune2-original-dos-us-box-native.jpg": "db7d0e12c6700b9b59b4305af0e571fadc6e82a4f180927aa67a8abf232814dc",
+        "build/research/addams-dune1992-original-gamebox-cover-preparation/addams-original-snes-us-back.jpg": "c7ee775b186dad8339e037d6f41df5dec2064dae3a7d2df11785646e9c8abc11"
+      }
+    },
+    {
+      "owner_id": "workbook-10-08-mortal-kombat",
+      "index": 4,
+      "expected_image_count": 7,
+      "expected_old_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3454980/8da3983e4a697fec1b9ab00b46ee81dc5d592d08/ss_8da3983e4a697fec1b9ab00b46ee81dc5d592d08.1920x1080.jpg?t=1782336113",
+      "before_image": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3454980/8da3983e4a697fec1b9ab00b46ee81dc5d592d08/ss_8da3983e4a697fec1b9ab00b46ee81dc5d592d08.1920x1080.jpg?t=1782336113",
+        "source_page": "https://store.steampowered.com/app/3454980/",
+        "title": "A captured gesture becomes a special move",
+        "caption": "The later Legacy Kollection timeline presents archival Scorpion performance capture and the creation of the spear move. Its modern interface and controller labels are retained. This is context for turning gestures into commands, not a diagram of the original five-button control panel.",
+        "story_paragraph": 2,
+        "creator": "Warner Bros. Entertainment / Digital Eclipse / Atari",
+        "credit": "Warner Bros. Entertainment / Digital Eclipse / Atari",
+        "license": "Original documentary, game imagery and publisher rights retained.",
+        "width": 1920,
+        "height": 1080,
+        "recovery_local_source": "build/research/mortal-kombat-esrb-existing-feature/legacy-03.jpg",
+        "verification": {
+          "sha256": "3866ee650fd8d8ff395c6be57dddf117ae6870cdc8d8f9e16e2ad82ba8433dd1",
+          "native_dimensions": [
+            1920,
+            1080
+          ],
+          "no_upscale": true
+        },
+        "quality_verified": true
+      },
+      "after_image": {
+        "url": "https://tamdb.net/download/5289/pdf/5289.pdf#museum-artifact=original-midway-player-controls-page1-8.jpeg",
+        "title": "Mortal Kombat: the original arcade control panel",
+        "caption": "Player-controls page 1-8 from Midway's July 1992 Mortal Kombat operations manual, showing each player's joystick and five action buttons: high and low punches, high and low kicks, and a separate Block button. The complete original scanned page is retained, including its diagram, paper wear and source-edge clipping; this is an operator document, not a modern collection menu.",
+        "source_page": "https://tamdb.net/download/5289/pdf/5289.pdf",
+        "creator": "Midway Manufacturing Company",
+        "credit": "Midway Manufacturing Company / July 1992 operations manual 16-40025-101, preserved by The Arcade Manual Database",
+        "license": "Original Midway manual, diagram and game rights retained by their respective rights holders. Preservation-host availability is not an open licence or independent permission grant.",
+        "license_url": "",
+        "width": 1410,
+        "height": 2005,
+        "story_paragraph": 2,
+        "recovery_local_source": "build/research/1992-internal-two-image-boundary-preparation/midway-1992-manual-page1-8-native.jpeg",
+        "verification": {
+          "sha256": "d5683b49af6febf8a27b95230ed9919375b737bc68439dd1a5ea5392f5afa5c5",
+          "native_dimensions": [
+            1410,
+            2005
+          ],
+          "actual_visual_review": "Actually viewed full native embedded1410x2005JPEG and rendered page, plus frontcover with MIDWAY/July1992/16-40025-101 and page1-8. Two-player diagram clearly shows each joystick with directions and five separately labeled action buttons; High Punch/High Kick/Low Punch/Low Kick/Block all readable. Start is separately placed above each panel, not counted among five action buttons. Full original page kept; scan slightly clips some right-edge prose, but the control diagram is complete and readable.",
+          "quality_limit": "Original embedded grayscale1410x2005JPEG bytes extracted directly from PDF xref50, zero recompression/retouch/crop/upscale. Writer should decode once to PNG if needed to avoid a second lossy JPEG generation.",
+          "pdf_extraction": {
+            "source_pdf_url": "https://tamdb.net/download/5289/pdf/5289.pdf",
+            "source_pdf_local": "build/research/1992-internal-two-image-boundary-preparation/midway-mortal-kombat-july1992-operations-manual.pdf",
+            "source_pdf_sha256": "791a91510562c8784c74aa5d42eec4448b5d8c32f70c556a2b1689f64c494e2a",
+            "pdf_pages": 69,
+            "pdf_page_index": 11,
+            "printed_page": "1-8",
+            "embedded_image_xref": 50,
+            "method": "PyMuPDF Document.extract_image(50), exact embedded JPEG bytes",
+            "bundle_requirement": "Use recovery_local_source image bytes; URL identifies PDF page and embedded scan, not a directly downloadable JPEG."
+          }
+        }
+      },
+      "expected_english_five_fields_sha256": "4b730ec0e7dbd59053897877a5f7a4420c008c1f4ad6685794c78a4ad2162d09",
+      "source": {
+        "recovery_local_source": "build/research/1992-internal-two-image-boundary-preparation/midway-1992-manual-page1-8-native.jpeg",
+        "sha256": "d5683b49af6febf8a27b95230ed9919375b737bc68439dd1a5ea5392f5afa5c5",
+        "native_dimensions": [
+          1410,
+          2005
+        ],
+        "bundle_policy": "preserve_original_embedded_jpeg_bytes_no_second_lossy_encode"
+      },
+      "source_files": {
+        "build/research/1992-internal-two-image-boundary-preparation/mortal-kombat-original-five-button-manual-single-slot-candidate.json": "08412f4b272fadca0a56f018e4882ef8ec26afd85b98b559a49e0ac2c9328c3f",
+        "build/research/1992-internal-two-image-boundary-preparation/midway-mortal-kombat-july1992-operations-manual.pdf": "791a91510562c8784c74aa5d42eec4448b5d8c32f70c556a2b1689f64c494e2a"
+      }
+    }
+  ],
+  "supersedes_rejected_nine_row_batch_sha256": "9013d38493c05f4c20b0ce3903c450500a70479e544ec71a7481df5951ef8514"
+}

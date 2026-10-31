@@ -1,0 +1,102 @@
+{
+  "status": "PASS",
+  "locale": "it",
+  "entries": [
+    {
+      "entry_id": "workbook-10-01-super-mario-bros-35",
+      "source_fields_sha256": "eccb96509c23766fa15a98edb3c5713d95ab48a55bb0c1be8e723cc70d6266ef",
+      "translation_sha256": "1052556b7149f3bea9a297c72ca2fdd118a41791fb38be0ad2a13ff0c3dedaaa",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch321/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "edc8b01cd52a156758249d22fb79bf036ef5f7914f3b696e64cbb25a354cf8df"
+    },
+    {
+      "entry_id": "wikipedia-64348639",
+      "source_fields_sha256": "537e4ab894145dfbffeee3accb922d00e97ac9df60b9d55024fd9a95821a6069",
+      "translation_sha256": "c3a2ae7fd8f399efde2043a6356196c5eb03fac4e98269db7e73d79193deb37f",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch321/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "edc8b01cd52a156758249d22fb79bf036ef5f7914f3b696e64cbb25a354cf8df"
+    },
+    {
+      "entry_id": "wikipedia-60961511",
+      "source_fields_sha256": "81ad4db532a141cccd534126275989d69e2a1198343b41c77eb69d73e80dc5f7",
+      "translation_sha256": "89a50f06d8930e275fb8bb7a093b7b48bc55ea46c8cf308b862ea2059df45ebf",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch321/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "edc8b01cd52a156758249d22fb79bf036ef5f7914f3b696e64cbb25a354cf8df"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "independent category_audit peer",
+    "actual_receipt": "build/research/catalog-2020-chronological/root-october-three-private/independent-category-audit-approval.json",
+    "actual_receipt_sha256": "85dd8119b8e72c112543fa597557f935681d7f67c9bceb02de351bc588e61bdc",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "independent category_audit peer",
+      "index": "build/research/catalog-2020-chronological/root-october-three-private/three-private-index.json",
+      "index_sha256": "751632b1bf1679c42222f2db4f4f7f62bc64a9b458245cff86d4e1f562c84824",
+      "owners": [
+        {
+          "entry_id": "workbook-10-01-super-mario-bros-35",
+          "slug": "mario35",
+          "source": "build/research/catalog-2020-chronological/root-october-three-private/mario35-source-private-candidate.json",
+          "source_sha256": "ac40484a6bb9d79dfc07e78e978df4c48705bd514c9f8f5c99b735ab8338869f",
+          "target": "build/research/catalog-2020-chronological/root-october-three-private/mario35-four-language-private-candidate.json",
+          "target_sha256": "5628d2260307dfa410345c0bf2c90d64ef4c917ad9acb02f26f397fbe21ca979",
+          "english_cards": 4,
+          "localized_cards": 16,
+          "images": 6,
+          "tracks": 3,
+          "contact": "build/research/catalog-2020-chronological/root-october-three-private/mario35-final-contact.jpg",
+          "contact_sha256": "98b7ed9cbd8ef92f353816018211d12e30f3811ca0bc2e783568202f89e7b752"
+        },
+        {
+          "entry_id": "wikipedia-64348639",
+          "slug": "crash4",
+          "source": "build/research/catalog-2020-chronological/root-october-three-private/crash4-source-private-candidate.json",
+          "source_sha256": "8a88cdd1be5f45c90ef513d92c7112ef5373e7d0bcec5e257575d9d775f6907e",
+          "target": "build/research/catalog-2020-chronological/root-october-three-private/crash4-four-language-private-candidate.json",
+          "target_sha256": "6bb16776d42388b2bb0ddb1932a27b8983918506abc6d71c9efb70c4e23ab9a9",
+          "english_cards": 4,
+          "localized_cards": 16,
+          "images": 5,
+          "tracks": 43,
+          "contact": "build/research/catalog-2020-chronological/root-october-three-private/crash4-final-contact.jpg",
+          "contact_sha256": "ca64d48b1aa79e37103539fa5bb170669e44dae4af4981ebec4bf05688372769"
+        },
+        {
+          "entry_id": "wikipedia-60961511",
+          "slug": "legion",
+          "source": "build/research/catalog-2020-chronological/root-october-three-private/legion-source-private-candidate.json",
+          "source_sha256": "ded903e6a0f9bfb3a453ad1fcb9933b502fe1b013da97245cb9cb573fa0085e2",
+          "target": "build/research/catalog-2020-chronological/root-october-three-private/legion-four-language-private-candidate.json",
+          "target_sha256": "feb29305fc059203c1cc7c36e62a957e793e601a93e28af1ea35d1787aea952c",
+          "english_cards": 4,
+          "localized_cards": 16,
+          "images": 5,
+          "tracks": 3,
+          "contact": "build/research/catalog-2020-chronological/root-october-three-private/legion-final-contact.jpg",
+          "contact_sha256": "c0a3b4d4da5e219ea9d6819e24607814c3dfa04793b8279cab6b11f4f71a187b"
+        }
+      ],
+      "reviewed_counts": {
+        "english_paragraphs": 12,
+        "localized_paragraphs": 48,
+        "personally_viewed_images": 16
+      },
+      "findings": [],
+      "review_notes": [
+        "Read all twelve English and all forty-eight localized paragraphs, complete summaries and headings. No concrete meaning or continuity defect found.",
+        "Viewed all sixteen images in the three final contacts: Mario35 simultaneous courses, sent enemies, underground play and result; Crash4 original game, masks and Cortex; Legion residents, recruiting, London and close combat. No unrelated box-back or wrong-title picture.",
+        "Read prepare.py: all twelve English bodies preserved exactly; all forty-three existing Crash4 tracks and five images preserved exactly. Only precise headings, appropriate new media, music and publication metadata added elsewhere.",
+        "Read Nintendo product primary: October1,2020 release,35-player competition, enemy transfer, time replenishment, coins/roulette and March31,2021 service end support the full Mario35 account.",
+        "Read Mario35 archive metadata with all timestamps. UI segments0–224/231–416/555–612 agree with Main Menu/Ground/Results1 chapter boundaries. Collective Nintendo/ARIKA credits retained for new cues; Koji Kondo limited to original theme. No unsupported arranger or official-uploader claim.",
+        "Read all three successful Ubisoft Music native AAC receipts; title, publisher, Stephen Barton credit and2020 base-game recording agree. Read original October29,2020 Ubisoft Music album page, distinct from Bloodline. Failed KcGtbp9NFE0 receipt is not selected. No console audition claimed."
+      ],
+      "primary_sources_read": [
+        "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-download-software/Super-Mario-Bros-35-1832227.html",
+        "https://music.apple.com/us/album/watch-dogs-legion-original-game-soundtrack/1597478791"
+      ],
+      "production_writes": false
+    }
+  }
+}

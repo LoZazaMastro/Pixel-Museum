@@ -1,0 +1,130 @@
+{
+  "status": "PASS",
+  "locale": "it",
+  "entries": [
+    {
+      "entry_id": "wikipedia-73758978",
+      "source_fields_sha256": "36a96f4a668be6f68598e4fc27a69f934cccaa06325cf1c16cab3acb674e15eb",
+      "translation_sha256": "9bda8085b0b6a8d5f226e6097886d558888099fd0c5ca954362275a61ae18f32",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch380/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "014d496515cdcca0d492e54523ef7fd1cb55eea108f7e36d91922b0d3cdee247"
+    },
+    {
+      "entry_id": "wikipedia-59961092",
+      "source_fields_sha256": "e6b510949da73a724ca9e3a37cb26b1feefce94d23d9054bb111f7e8d28e4fdf",
+      "translation_sha256": "2d5f87f5f79cdde4f906eff6cc1cf4814266e1ea3e16a62a8db9e245ae329598",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch380/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "014d496515cdcca0d492e54523ef7fd1cb55eea108f7e36d91922b0d3cdee247"
+    },
+    {
+      "entry_id": "wikipedia-78090426",
+      "source_fields_sha256": "cb8583d8fe93eb1c91215119b7214943dbb75833c4961fd51b3315a16e292525",
+      "translation_sha256": "bf2da297c1e1647313ee5ae0dae11edfd248193fc7cd1c6746676a921b19cffe",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch380/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "014d496515cdcca0d492e54523ef7fd1cb55eea108f7e36d91922b0d3cdee247"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "/root/package_audit",
+    "actual_receipt": "build/research/catalog-2025-chronological/august-september-three-private/independent-package-audit-approval.json",
+    "actual_receipt_sha256": "e57234553bbfe7c541c1a0379501e106c9e89accf35977bd28f3831270764130",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "/root/package_audit",
+      "independent_of_author": true,
+      "index": "build/research/catalog-2025-chronological/august-september-three-private/three-original-source-media-four-language-private-index.json",
+      "index_sha256": "96f00754ba780adae86cd414dab82f95733235052d98ae50e5ebf82e6870d20b",
+      "owners": [
+        {
+          "entry_id": "wikipedia-73758978",
+          "slug": "delta",
+          "source": "build/research/catalog-2025-chronological/august-september-three-private/delta/complete-original-source-media-private-candidate.json",
+          "source_sha256": "3e17e6434d06fb2ad62eeb368ebb8e3d5302394c635a6aaf3dc65646e4ac32c2",
+          "target": "build/research/catalog-2025-chronological/august-september-three-private/delta/complete-four-language-private-candidate.json",
+          "target_sha256": "6fabad88c89fa0ad290e0a070b8caacc8ce0e9ed33269731c9923ea2a86cd338",
+          "contact": "build/research/catalog-2025-chronological/august-september-three-private/delta/final-selected-media-contact.jpg",
+          "contact_sha256": "a9e51079a6106777f2787515ba0d446f161a9714b4590afa5390c592c6017433",
+          "english_cards": 4,
+          "localized_cards": 16,
+          "images": 5,
+          "tracks": 3,
+          "finite_errata": 0
+        },
+        {
+          "entry_id": "wikipedia-59961092",
+          "slug": "silksong",
+          "source": "build/research/catalog-2025-chronological/august-september-three-private/silksong/complete-original-source-media-private-candidate.json",
+          "source_sha256": "12856dd605fd260ef059498255697c3a1fdfd586488ac8e976eb3e052463e67c",
+          "target": "build/research/catalog-2025-chronological/august-september-three-private/silksong/complete-four-language-private-candidate.json",
+          "target_sha256": "65c26089c861e6b94f3360d6fe4ab018866794f7de7d70af584b5848d5f8b294",
+          "contact": "build/research/catalog-2025-chronological/august-september-three-private/silksong/final-selected-media-contact.jpg",
+          "contact_sha256": "1491e3cc88d7ab375b48f61aff1c28fd6911b1000bfd1294d488641ef580107d",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 5,
+          "tracks": 53,
+          "finite_errata": 1
+        },
+        {
+          "entry_id": "wikipedia-78090426",
+          "slug": "hell",
+          "source": "build/research/catalog-2025-chronological/august-september-three-private/hell/complete-original-source-media-private-candidate.json",
+          "source_sha256": "13da57a14f92d18bedeebb969a8e6932d9f365fe1587ed2012dd757215a5f6a9",
+          "target": "build/research/catalog-2025-chronological/august-september-three-private/hell/complete-four-language-private-candidate.json",
+          "target_sha256": "8485cd79150e9c449f334c43be57148225e4196cc45fe3c43d2ca8063c9cbddb",
+          "contact": "build/research/catalog-2025-chronological/august-september-three-private/hell/final-selected-media-contact.jpg",
+          "contact_sha256": "d80a98cad60666be60ec8d2d18c9c520c7cd4d1756fe1801953eccc5b017c673",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 4,
+          "tracks": 3,
+          "finite_errata": 0
+        }
+      ],
+      "actually_reviewed": {
+        "english_paragraphs": 10,
+        "localized_paragraphs": 40,
+        "languages": [
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "final_contact_images": 14,
+        "new_public_music_metadata": 6,
+        "unchanged_silksong_tracks_exact_whole_object_comparison": 53
+      },
+      "findings_resolved": [
+        "Removed four added respectively adverbs in Delta P1 translations; the English lists features across MGS4 and Peace Walker without claiming an exclusive one-to-one chronology.",
+        "Removed duplicated final full stops in the four Hell Is Us localized summaries."
+      ],
+      "media_review": "All three final contacts actually viewed. Original remake/game imagery, clean portrait covers and contextual per-paragraph assignments accepted. All 14 recovery copies match candidate SHA256 and numeric native image dimensions; provenance fields present.",
+      "music_review": [
+        "Delta: six-role distinction checked in three saved public metadata records. Norihiko Hibino is Snake Eater composer/lyricist; Cynthia Harrell is vocalist. Naoki Nakashima composed both suites; John R. Graham is orchestrator. Official Virgin Music Group/Konami December 17, 2025 remake album, not substituted 2004 recordings.",
+        "Hell Is Us: three Soundtracks of Time records are explicitly independent archives, not official uploads. Titles and durations 299/192/241 seconds correspond to publisher Steam list 299/191/240 seconds. Stephane Primeau composer confirmed by publisher credits; minor duration differences are stated, not a fingerprint claim.",
+        "All six saved metadata records explicitly public with AAC observed. No audio downloaded or packaged. No claim of PS5 playback verification. Silksong soundtrack exact whole-object equal to existing-owner preimage; no repeated 53-track network verification."
+      ],
+      "primary_sources_actually_read": [
+        {
+          "url": "https://www.teamcherry.com.au/blog/holiday2025",
+          "scope": "Over seven million purchases distinct from additional Game Pass players; free Sea of Sorrow expansion planned for 2026."
+        },
+        {
+          "url": "https://www.konami.com/mg/news/jp/ja/",
+          "scope": "December 17, 2025 official Delta soundtrack announcement: new vocal recording and two remake suites."
+        },
+        {
+          "url": "https://store.steampowered.com/app/3494380/",
+          "scope": "Official four-disc Hell Is Us track list, three selected durations, Primeau composer and additional music roles."
+        },
+        {
+          "url": "https://metalgear.konami.net/manual/mc2/mgs4/ps5/en/page04.html",
+          "scope": "Official MGS4 controls: over-shoulder weapon aiming exists in MGS4, so a translation must not imply it first appeared in Peace Walker."
+        }
+      ],
+      "production_writes": false,
+      "global_catalog_or_locale_changes": false
+    }
+  }
+}

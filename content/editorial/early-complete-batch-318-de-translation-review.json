@@ -1,0 +1,102 @@
+{
+  "status": "PASS",
+  "locale": "de",
+  "entries": [
+    {
+      "entry_id": "wikipedia-55667140",
+      "source_fields_sha256": "693fc1e2c82bc3248745376ae0abb566aba06b0afd69cf6190ef544af368da0b",
+      "translation_sha256": "1e69f605e79105dfcc592249872e25f4aaf2f5731a900a8d56c063024d2ce3d1",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch318/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "e8f39124edc5eb45a67b1977d1ba8d7d20110e4df41f643f62e9c151e301afb2"
+    },
+    {
+      "entry_id": "wikipedia-63047099",
+      "source_fields_sha256": "f1bad95d4196efc7d77e3949714a19924401abeb95229319d1911ce06dd3bbf8",
+      "translation_sha256": "1d84cb61f66398780adc0f333954dd783b1fe54d26357be51047d188c4b1bbed",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch318/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "e8f39124edc5eb45a67b1977d1ba8d7d20110e4df41f643f62e9c151e301afb2"
+    },
+    {
+      "entry_id": "raji",
+      "source_fields_sha256": "c5aec4e6d4b14e6e9005f4596eea4496447471732d312c528e0665f7656a64a3",
+      "translation_sha256": "9973b4c71cbc7a83cfebd1b6f1a751c95a657ec0e3f7403b15d4f82eee35a5a2",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch318/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "e8f39124edc5eb45a67b1977d1ba8d7d20110e4df41f643f62e9c151e301afb2"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "independent category_audit peer",
+    "actual_receipt": "build/research/catalog-2020-chronological/root-july-august-three-private/independent-category-audit-approval.json",
+    "actual_receipt_sha256": "0972826bfc712c96bd64c0168899f170e9dab8547d6281c201bd7f82a639ea7b",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "independent category_audit peer",
+      "index": "build/research/catalog-2020-chronological/root-july-august-three-private/three-private-index.json",
+      "index_sha256": "5a9a7268cf4e45da78197e75f2b0f5adcd57425e8ebf004f4f9337618b2b43ea",
+      "owners": [
+        {
+          "entry_id": "wikipedia-55667140",
+          "slug": "ghost",
+          "source": "build/research/catalog-2020-chronological/root-july-august-three-private/ghost-source-private-candidate.json",
+          "source_sha256": "4c9ab5a6eea8e209834920b80526fec10d819bfa6f9889726e3da0b2fad5f5c7",
+          "target": "build/research/catalog-2020-chronological/root-july-august-three-private/ghost-four-language-private-candidate.json",
+          "target_sha256": "325e3833edf37dbe8a0e0c0e268478b4df25d25981a70edb91b126b48b8e2417",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 5,
+          "tracks": 22,
+          "contact": "build/research/catalog-2020-chronological/root-july-august-three-private/ghost-final-contact.jpg",
+          "contact_sha256": "585c57a37b567308859dfa0af38de7386da66cbac5360996133f1a72c912b72e"
+        },
+        {
+          "entry_id": "wikipedia-63047099",
+          "slug": "fall",
+          "source": "build/research/catalog-2020-chronological/root-july-august-three-private/fall-source-private-candidate.json",
+          "source_sha256": "5d99c16941e2bd02ac2b164a4ff71e15ee69198ab783bf73d95a36e477e8bd03",
+          "target": "build/research/catalog-2020-chronological/root-july-august-three-private/fall-four-language-private-candidate.json",
+          "target_sha256": "49bcc31636f97810036ebbbb74f8867ba79422395eef85ca0c59a12306c2a437",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 6,
+          "tracks": 3,
+          "contact": "build/research/catalog-2020-chronological/root-july-august-three-private/fall-final-contact.jpg",
+          "contact_sha256": "b575895a6689dea86c40061ced1f79092764bb2cf9646f008cf6a386f414f1bc"
+        },
+        {
+          "entry_id": "raji",
+          "slug": "raji",
+          "source": "build/research/catalog-2020-chronological/root-july-august-three-private/raji-source-private-candidate.json",
+          "source_sha256": "8c679fcbbf66ad1fcae08a6d86d28b1a007a6f25464a084e0d6a7a41fef3db21",
+          "target": "build/research/catalog-2020-chronological/root-july-august-three-private/raji-four-language-private-candidate.json",
+          "target_sha256": "ebd74446ffe359c5b4ef619de034d79cc00f9683250c33b5df0ee0b0fda35304",
+          "english_cards": 4,
+          "localized_cards": 16,
+          "images": 6,
+          "tracks": 3,
+          "contact": "build/research/catalog-2020-chronological/root-july-august-three-private/raji-final-contact.jpg",
+          "contact_sha256": "10600233c82ba444e3fbcb26e69afbd4588178babcfe4e1276db4a7ff0c497e8"
+        }
+      ],
+      "reviewed_counts": {
+        "english_paragraphs": 10,
+        "localized_paragraphs": 40,
+        "personally_viewed_images": 17
+      },
+      "findings": [],
+      "review_notes": [
+        "Read all ten English paragraphs and all forty Italian/French/German/Spanish paragraphs, headings and summaries; no missing material or concrete semantic error found.",
+        "Viewed all three final contact sheets: Ghost original setting/Jin clearly qualified as PC Director’s Cut 2024; Fall Guys actual obstacle-course contestants rather than an editor; Raji architecture and combat all belong to the original game. No wrong-title or back-box media remains.",
+        "Read prepare.py finite changes. Ghost and Raji English bodies exact; Ghost22 and Fall3 soundtrack objects exact. Fall paid2020/PSPlus launch, free2022 transition and 60 launch versus32 later participants are explicitly distinguished.",
+        "Read Sony July27,2020 PSPlus launch primary and Fall Guys June21,2022 Free for All primary; both support the revised launch history.",
+        "Read original publisher Steam Raji soundtrack: Linos Tzelos credit, October15,2020 album and The End/Lament/Enter Rajasthan titles and durations agree. Read all three public AAC receipts; early December2017 developer Lament is expressly qualified and archive2021 uploads are not misrepresented as official. No console playback or audio fingerprint test claimed."
+      ],
+      "primary_sources_read": [
+        "https://blog.playstation.com/2020/07/27/ps-plus-games-for-august-announced/",
+        "https://www.fallguys.com/news/fall-guys-is-now-free-for-all?lang=en-US",
+        "https://store.steampowered.com/app/1439060/"
+      ],
+      "production_writes": false
+    }
+  }
+}

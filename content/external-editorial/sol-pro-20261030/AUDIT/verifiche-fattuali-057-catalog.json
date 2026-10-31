@@ -1,0 +1,665 @@
+{
+  "batch_id": "057-catalog",
+  "status": "completed",
+  "sources": [
+    {
+      "source_id": "yoshi-jp",
+      "url": "https://www.nintendo.co.jp/ngc/sms/history/syi/index.html",
+      "title": "Super Mario Yoshi Island — Mario History",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "Conferma la release giapponese del 5 agosto 1995 e descrive lancio delle uova, salto, attacco a terra e perdita temporanea di Mario.",
+      "limitation": "Cronologia ufficiale retrospettiva; il giorno si riferisce al Giappone."
+    },
+    {
+      "source_id": "yoshi-manual",
+      "url": "https://www.nintendo.com/es-es/games/oms/snes-classic/manuals/yoshis-island/manual.pdf",
+      "title": "Super Mario World 2: Yoshi’s Island — manuale digitale",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "Letto il testo estratto: conto alla rovescia, aiutanti di Kamek, stelle, sei uova, trasformazioni e Bonus Challenge come minigiochi.",
+      "limitation": "Questo manuale digitale è stato letto testualmente. I PDF scansionati originali giapponese e americano non hanno restituito immagini effettivamente visibili e non vengono dichiarati esaminati visivamente."
+    },
+    {
+      "source_id": "yoshi-unlocks",
+      "url": "https://www.mariowiki.com/Super_Mario_World_2:_Yoshi%27s_Island",
+      "title": "Super Mario World 2: Yoshi’s Island — struttura dei livelli e bonus",
+      "publisher": "Super Mario Wiki contributors",
+      "accessed_at": "2026-10-30",
+      "scope": "Il punteggio pieno negli otto livelli apre un livello extra e un Bonus Challenge, non due nuovi livelli di piattaforme.",
+      "limitation": "Fonte comunitaria specialistica confrontata con la natura dei Bonus Challenge nel manuale Nintendo. Nessun altro contenuto nuovo ricavato dalla pagina."
+    },
+    {
+      "source_id": "yoshi-regions",
+      "url": "https://gamefaqs.gamespot.com/snes/588740-super-mario-world-2-yoshis-island/data",
+      "title": "Super Mario World 2: Yoshi’s Island — release data",
+      "publisher": "GameFAQs",
+      "accessed_at": "2026-10-30",
+      "scope": "La tabella distingue Giappone agosto e Nord America/Europa ottobre 1995.",
+      "limitation": "Catalogo secondario; la prosa mantiene il mese per le uscite occidentali, senza aggiungere i giorni."
+    },
+    {
+      "source_id": "shining-sega",
+      "url": "https://shining-world.jp/portal/game/retro.shtml",
+      "title": "Shining World — giochi storici",
+      "publisher": "Sega",
+      "accessed_at": "2026-10-30",
+      "scope": "La sezione Shining Wisdom indica 11 agosto 1995, Saturn, e conferma combinazioni di oggetti.",
+      "limitation": "Contenuto letto nell’indicizzazione; apertura diretta in timeout. Non dichiarata lettura di manuali o crediti originali."
+    },
+    {
+      "source_id": "rayearth-kodama",
+      "url": "https://www.crystaldynamics.com/content/uploads/2024/05/Women-in-Gaming-100-Professionals-of-Play-2024.pdf",
+      "title": "Women in Gaming: 100 Professionals of Play — edizione 2024",
+      "publisher": "Meagan Marie / Crystal Dynamics",
+      "accessed_at": "2026-10-30",
+      "scope": "La sezione su Kodama contiene una sua testimonianza sulla direzione di Magic Knight Rayearth. L’attribuzione di direttrice nell’INPUT è confermata, non corretta per intuizione.",
+      "limitation": "Passaggio leggibile nell’indicizzazione; la richiesta diretta rinvia a una pagina temporaneamente indisponibile. Non dichiarata lettura integrale del libro."
+    },
+    {
+      "source_id": "rayearth-ships",
+      "url": "https://web.archive.org/web/20010423031424/http://www.workingdesigns.com/news/1998/12-11-1998-01.htm",
+      "title": "Magic Knight Rayearth Ships!",
+      "publisher": "Working Designs, 11 dicembre 1998; copia Internet Archive",
+      "accessed_at": "2026-10-30",
+      "scope": "Comunicato originale letto: spedizioni l’11 dicembre; arrivi nei negozi previsti dal 12 e soprattutto dal 14 dicembre. Identifica il titolo come ultima uscita Saturn negli Stati Uniti.",
+      "limitation": "Spedizione e arrivo in negozio distinti. La prosa conserva dicembre, senza convertire l’11 in giorno universale di vendita. I database che riportano 30 novembre non prevalgono su questo annuncio contemporaneo."
+    },
+    {
+      "source_id": "pulstar-snk",
+      "url": "https://game.snk-corp.co.jp/event/virtual-console/pulstar/index_pulstar_j.html",
+      "title": "Pulstar — guida Virtual Console",
+      "publisher": "SNK",
+      "accessed_at": "2026-10-30",
+      "scope": "Distingue pressione continua per il lato blu della carica e pressioni ripetute per il lato rosso che allarga i colpi; conferma drone protettivo sacrificabile e anno originale 1995.",
+      "limitation": "La release Virtual Console 2012 è separata dal gioco del 1995. Usate soltanto le precisazioni necessarie alla meccanica già descritta."
+    },
+    {
+      "source_id": "pulstar-rendering",
+      "url": "https://www.nintendolife.com/news/2017/12/pulstar_is_your_next_neo_geo_aca_release_on_switch",
+      "title": "Pulstar Is Your Next Neo Geo ACA Release On Switch",
+      "publisher": "Gonçalo Lopes / Nintendo Life, 13 dicembre 2017",
+      "accessed_at": "2026-10-30",
+      "scope": "La retrospettiva attribuisce a Pulstar il primato Neo Geo per la grafica prerenderizzata.",
+      "limitation": "Il primato rimane esplicitamente attribuito alla testata in tutte le lingue, non presentato come attestazione tecnica ufficiale SNK o verifica esaustiva di tutti i predecessori."
+    },
+    {
+      "source_id": "pulstar-date",
+      "url": "https://www.arcade-history.com/game/2067/pulstar",
+      "title": "Pulstar — SNK Neo-Geo MVS",
+      "publisher": "Arcade History",
+      "accessed_at": "2026-10-30",
+      "scope": "Riporta la release arcade giapponese del 28 agosto 1995 già presente nell’INPUT.",
+      "limitation": "Scheda specialistica secondaria letta nell’indicizzazione. La pagina SNK conferma l’anno, non autonomamente il giorno."
+    },
+    {
+      "source_id": "rayman-development",
+      "url": "https://gameinformer.com/b/features/archive/2011/12/06/ubi-uncensored",
+      "title": "Ubi Uncensored: The History of Ubisoft by the People Who Wrote It",
+      "publisher": "Matt Bertz / Game Informer, 6 dicembre 2011",
+      "accessed_at": "2026-10-30",
+      "scope": "Testimonianze dirette di Michel Ancel e Yves Guillemot confermano il progetto per Super Nintendo CD, il passaggio Jaguar/PlayStation e l’ampliamento della squadra.",
+      "limitation": "Intervista retrospettiva; nessun nuovo dettaglio creativo estraneo all’INPUT aggiunto."
+    },
+    {
+      "source_id": "rayman-date",
+      "url": "https://www.game-rave.com/?p=981",
+      "title": "Rayman — PlayStation Long Box",
+      "publisher": "Game-Rave",
+      "accessed_at": "2026-10-30",
+      "scope": "Scheda della versione americana SLUS-00005: 7 settembre 1995.",
+      "limitation": "Catalogo specialistico secondario. Il riferimento contemporaneo PlayStation WWW citato da Wikipedia è stato identificato ma non letto direttamente; non si finge conferma primaria. Prosa e metadati circoscrivono il giorno alla versione nordamericana."
+    },
+    {
+      "source_id": "rayman-2026",
+      "url": "https://newsroom.ubisoft-press.com/rayman-30th-anniversary-edition-ab-heute-erhaltlich",
+      "title": "Rayman: 30th Anniversary Edition ab heute erhältlich",
+      "publisher": "Ubisoft, 13 febbraio 2026",
+      "accessed_at": "2026-10-30",
+      "scope": "Comunicato di disponibilità dell’edizione Digital Eclipse: versioni raccolte, contenuti aggiuntivi e prototipo Super NES.",
+      "limitation": "Conferma l’effettiva pubblicazione, non soltanto un annuncio futuro. La prosa mantiene febbraio 2026 senza aggiungere altri dettagli."
+    },
+    {
+      "source_id": "tails-sega",
+      "url": "https://sonic.sega.jp/gems/games_gg_tails.html",
+      "title": "Tails Adventure — Sonic Gems Collection",
+      "publisher": "Sega",
+      "accessed_at": "2026-10-30",
+      "scope": "Scheda storica: 22 settembre 1995 e selezione di quattro oggetti prima della partenza.",
+      "limitation": "La data storica del Game Gear è distinta da quella della raccolta successiva. Nessuna nuova meccanica tratta dalla pagina aggiunta."
+    },
+    {
+      "source_id": "cnc-gamespot",
+      "url": "https://www.gamespot.com/games/command-and-conquer/",
+      "title": "Command & Conquer — scheda del gioco",
+      "publisher": "GameSpot",
+      "accessed_at": "2026-10-30",
+      "scope": "Indica prima release 26 settembre 1995.",
+      "limitation": "Dato secondario letto nell’indicizzazione, confrontato con il record regionale MobyGames e la ricostruzione documentaria."
+    },
+    {
+      "source_id": "cnc-moby-regional",
+      "url": "https://www.mobygames.com/this-day-in-gaming/9/26/",
+      "title": "On This Day in Game History — September 26",
+      "publisher": "MobyGames",
+      "accessed_at": "2026-10-30",
+      "scope": "Il record del 1995 identifica Command & Conquer per DOS negli Stati Uniti.",
+      "limitation": "Pagina secondaria letta nell’indicizzazione. Serve a circoscrivere piattaforma e regione del giorno già fornito."
+    },
+    {
+      "source_id": "cnc-release-record",
+      "url": "https://cnc-comm.com/news/a-tale-of-a-release-date",
+      "title": "The tale of a release date",
+      "publisher": "Tore / Command & Conquer Communications Center, 29 gennaio 2018",
+      "accessed_at": "2026-10-30",
+      "scope": "Descrive un comunicato Westwood del 26 settembre 1995 che annuncia il gioco già uscito e copie spedite; lo confronta con testimonianze contemporanee.",
+      "limitation": "Archivio non ufficiale, documento ricevuto da un ex dipendente anonimo. Il file DOC collegato non è stato leggibile con gli strumenti disponibili: non si dichiara lettura integrale né autenticazione autonoma."
+    },
+    {
+      "source_id": "cnc-ea-anniversary",
+      "url": "https://news.ea.com/press-releases/press-releases-details/2012/EA-Celebrates-17-Years-of-Strategy-Gaming-With-Command--Conquer-the-Ultimate-Collection/default.aspx",
+      "title": "EA Celebrates 17 Years of Strategy Gaming With Command & Conquer the Ultimate Collection",
+      "publisher": "Electronic Arts, 31 agosto 2012",
+      "accessed_at": "2026-10-30",
+      "scope": "Dimostra l’uso ufficiale del 31 agosto per l’anniversario della serie.",
+      "limitation": "Commemorazione retrospettiva distinta dalla data regionale di distribuzione del DOS. Non prova da sola il primo giorno mondiale di disponibilità nel 1995."
+    },
+    {
+      "source_id": "demo-one-editions",
+      "url": "https://www.crimson-ceremony.net/demopals/demo1/index.php?img=ver1-eur1",
+      "title": "Demo One — edizioni europee e contenuti",
+      "publisher": "Crimson Ceremony / Demo Pals",
+      "accessed_at": "2026-10-30",
+      "scope": "Conferma codice SCES-00048, prima custodia pieghevole e tasca registrazione, giochi provabili, telecamera Total NBA, video e sezioni Dino/Manta/V-CD.",
+      "limitation": "Catalogo di collezionismo già fornito nell’INPUT, letto testualmente. Non dichiarata ispezione fisica del disco o delle sue immagini."
+    },
+    {
+      "source_id": "wipeout-launch",
+      "url": "https://blog.playstation.com/archive/2010/09/29/15-years-of-playstation-memories/",
+      "title": "15 Years of PlayStation Memories",
+      "publisher": "James Gallagher / Sony Computer Entertainment Europe, 29 settembre 2010",
+      "accessed_at": "2026-10-30",
+      "scope": "Conferma 29 settembre 1995 come lancio europeo di PlayStation con WipEout.",
+      "limitation": "Testimonianza istituzionale retrospettiva. La data è circoscritta all’Europa."
+    },
+    {
+      "source_id": "wipeout-development",
+      "url": "https://blog.playstation.com/archive/2017/06/07/extended-play-the-inside-story-of-how-iconic-playstation-series-wipeout-was-born/",
+      "title": "Extended Play: The inside story of how iconic PlayStation series WipEout was born",
+      "publisher": "Gillen McAllister / PlayStation Blog, 7 giugno 2017",
+      "accessed_at": "2026-10-30",
+      "scope": "Testimonianza del coautore Nick Burcombe sul progetto con Jim Bowers e sull’integrazione della musica.",
+      "limitation": "Fonte già fornita, riletta per verificare contesto e attribuzioni; non aggiunti aneddoti, canzoni o crediti nuovi."
+    },
+    {
+      "source_id": "tactics-original",
+      "url": "https://www.nintendo.co.jp/wii/vc/vc_to/vc_to_01.html",
+      "title": "Tactics Ogre — introduzione Virtual Console",
+      "publisher": "Nintendo / Square Enix",
+      "accessed_at": "2026-10-30",
+      "scope": "Conferma uscita originale il 6 ottobre 1995, Valeria e Denim.",
+      "limitation": "Il giorno identifica l’originale giapponese, non la riedizione Wii. Non aggiunti sistemi ulteriori descritti nella pagina."
+    },
+    {
+      "source_id": "quest-transfer-news",
+      "url": "https://game.watch.impress.co.jp/docs/20020619/quest.htm",
+      "title": "Quest trasferisce il settore software a Square",
+      "publisher": "Minoru Funatsu / GAME Watch, 19 giugno 2002",
+      "accessed_at": "2026-10-30",
+      "scope": "Cronaca contemporanea dell’annuncio Quest: cessione dell’attività di sviluppo di videogiochi a Square.",
+      "limitation": "Il 19 giugno è il giorno dell’annuncio. La prosa usa soltanto l’anno e non afferma l’assorbimento di ogni attività della società."
+    },
+    {
+      "source_id": "quest-transfer-report",
+      "url": "https://www.hd.square-enix.com/eng/ir/library/pdf/ar_2004en.pdf",
+      "title": "Square Enix Annual Report 2004 — Note to Consolidated Statements of Cash Flows",
+      "publisher": "Square Enix",
+      "accessed_at": "2026-10-30",
+      "scope": "Pagina stampata 34, pagina PDF 35: trasferimento di attività da Quest registrato nell’esercizio 1 aprile 2002–31 marzo 2003.",
+      "limitation": "Letto il testo estratto della sezione finanziaria. Il documento sostiene il trasferimento nell’esercizio indicato; la collocazione nel 2002 deriva dal confronto con la cronaca contemporanea, non dall’equivalenza automatica fra anno fiscale e calendario."
+    }
+  ],
+  "decisions": [
+    {
+      "target_id": "wikipedia-83554",
+      "problem": "Il completamento perfetto viene descritto come sblocco di due livelli nascosti, senza distinguere la sfida bonus.",
+      "conclusion": "Un livello extra e un minigioco bonus per mondo dopo i punteggi pieni negli otto livelli; inoltre i rapitori di Mario sono gli aiutanti di Kamek.",
+      "source_ids": [
+        "yoshi-manual",
+        "yoshi-unlocks"
+      ],
+      "text_applied": "Card main:4 nelle cinque lingue, senza aggiungere nuovi numeri ai collezionabili."
+    },
+    {
+      "target_id": "wikipedia-83554",
+      "problem": "Regione assente per il 5 agosto e formula mondiale troppo ampia per le uscite di ottobre.",
+      "conclusion": "5 agosto 1995 è l’uscita giapponese; la prosa di ottobre specifica Nord America ed Europa.",
+      "source_ids": [
+        "yoshi-jp",
+        "yoshi-regions"
+      ],
+      "text_applied": "Card main:5 e proposta di metadati; il ritorno a nuovi episodi 2D è riferito alla serie principale Super Mario, evitando di negare le avventure intermedie di Yoshi."
+    },
+    {
+      "target_id": "console-gap-magic-knight-rayearth-video-game",
+      "problem": "Controllo mirato della direzione attribuita a Kodama e del mese americano, in conflitto con database che riportano novembre.",
+      "conclusion": "La direzione di Kodama è confermata dalla sua testimonianza. Working Designs annunciò spedizioni l’11 dicembre 1998 e arrivi nei negozi nei giorni successivi: dicembre dell’INPUT è corretto.",
+      "source_ids": [
+        "rayearth-kodama",
+        "rayearth-ships"
+      ],
+      "text_applied": "Conservati direttrice e dicembre nelle cinque lingue, senza introdurre un falso giorno unico di disponibilità."
+    },
+    {
+      "target_id": "console-gap-pulstar-video-game",
+      "problem": "L’INPUT fa sembrare che entrambi i lati dell’indicatore derivino dalla pressione continua del pulsante.",
+      "conclusion": "SNK distingue tenere premuto per caricare e premere ripetutamente per allargare la raffica.",
+      "source_ids": [
+        "pulstar-snk"
+      ],
+      "text_applied": "Card main:1, chiarita la diversa azione sul comando in tutte le lingue; conservata la scelta di sacrificare il drone."
+    },
+    {
+      "target_id": "console-gap-pulstar-video-game",
+      "problem": "Primato assoluto Neo Geo per immagini prerenderizzate privo di attribuzione nel testo.",
+      "conclusion": "Mantenuto come affermazione esplicitamente attribuita a Nintendo Life, che la pubblicò nel 2017. Non trasformato in certificazione ufficiale o in verifica universale del primato.",
+      "source_ids": [
+        "pulstar-rendering"
+      ],
+      "text_applied": "Card main:2 nelle cinque lingue; la tecnica e il rapporto con Blazing Star restano descritti concretamente."
+    },
+    {
+      "target_id": "wikipedia-1507039",
+      "problem": "La data del 7 settembre è priva di regione e la riedizione 2026 richiede distinzione fra annuncio e disponibilità.",
+      "conclusion": "Il 7 settembre 1995 è mantenuto per la versione PlayStation nordamericana sulla base del catalogo specifico. Ubisoft conferma l’uscita effettiva della raccolta nel febbraio 2026.",
+      "source_ids": [
+        "rayman-date",
+        "rayman-development",
+        "rayman-2026"
+      ],
+      "text_applied": "Card main:1 e main:2; nessuna affermazione di primato mondiale del giorno né nuova data per Jaguar, Saturn o DOS."
+    },
+    {
+      "target_id": "wikipedia-2053053",
+      "problem": "26 settembre 1995 nell’INPUT e 31 agosto negli anniversari EA hanno significati diversi.",
+      "conclusion": "Per la collocazione conservato 26 settembre 1995 come release DOS negli Stati Uniti, sostenuta dai cataloghi e dalla ricostruzione del comunicato contemporaneo. Il 31 agosto rimane data della commemorazione ufficiale e del download 2007, senza imporlo come primo giorno mondiale del 1995.",
+      "source_ids": [
+        "cnc-gamespot",
+        "cnc-moby-regional",
+        "cnc-release-record",
+        "cnc-ea-anniversary"
+      ],
+      "text_applied": "Proposta regionale per i metadati; testo del gioco originale al 1995 e card separate su Gold 2007 intatte."
+    },
+    {
+      "target_id": "playstation-demo-one-1995",
+      "problem": "Occorre mantenere distinta l’edizione originale dalle revisioni e dalle prove video.",
+      "conclusion": "Contenuti e codice del primo disco riscontrati; Total NBA consente la telecamera, mentre Tekken/Ridge Racer/Warhawk sono anteprime video.",
+      "source_ids": [
+        "demo-one-editions",
+        "wipeout-launch"
+      ],
+      "text_applied": "Tutte e tre le card nelle cinque lingue; nessuna fusione con la voce PlayStation o riordino."
+    },
+    {
+      "target_id": "wikipedia-447357",
+      "problem": "L’INPUT parla di assorbimento di Quest da parte di Square nel 2003.",
+      "conclusion": "Precisato trasferimento del settore di sviluppo videogiochi nel 2002, documentato dalla cronaca dell’annuncio e dal bilancio 2004 che registra gli asset nell’esercizio 2002–03.",
+      "source_ids": [
+        "quest-transfer-news",
+        "quest-transfer-report"
+      ],
+      "text_applied": "Card main:2 in tutte le lingue. Non viene affermata una fusione dell’intera azienda né usato il 19 giugno come data del gioco."
+    }
+  ],
+  "metadata_proposals": [
+    {
+      "target_id": "wikipedia-83554",
+      "field": "timeline_release",
+      "original": {
+        "year": 1995,
+        "month": 8,
+        "day": 5,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed": {
+        "year": 1995,
+        "month": 8,
+        "day": 5,
+        "precision": "day",
+        "region": "Japan",
+        "version": "Super Famicom"
+      },
+      "source_ids": [
+        "yoshi-jp"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "wikipedia-1507039",
+      "field": "timeline_release",
+      "original": {
+        "year": 1995,
+        "month": 9,
+        "day": 7,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed": {
+        "year": 1995,
+        "month": 9,
+        "day": 7,
+        "precision": "day",
+        "region": "North America",
+        "version": "PlayStation, SLUS-00005"
+      },
+      "source_ids": [
+        "rayman-date"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "wikipedia-2053053",
+      "field": "timeline_release",
+      "original": {
+        "year": 1995,
+        "month": 9,
+        "day": 26,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed": {
+        "year": 1995,
+        "month": 9,
+        "day": 26,
+        "precision": "day",
+        "region": "United States",
+        "version": "DOS"
+      },
+      "source_ids": [
+        "cnc-gamespot",
+        "cnc-moby-regional",
+        "cnc-release-record"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "playstation-demo-one-1995",
+      "field": "timeline_release",
+      "original": {
+        "year": 1995,
+        "month": 9,
+        "day": 29,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed": {
+        "year": 1995,
+        "month": 9,
+        "day": 29,
+        "precision": "day",
+        "region": "Europe",
+        "version": "Demo One SCES-00048, in dotazione a PlayStation SCPH-1002"
+      },
+      "source_ids": [
+        "demo-one-editions",
+        "wipeout-launch"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "workbook-09-29-wipeout",
+      "field": "timeline_release",
+      "original": {
+        "year": 1995,
+        "month": 9,
+        "day": 29,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed": {
+        "year": 1995,
+        "month": 9,
+        "day": 29,
+        "precision": "day",
+        "region": "Europe",
+        "version": "PlayStation"
+      },
+      "source_ids": [
+        "wipeout-launch"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "wikipedia-447357",
+      "field": "timeline_release",
+      "original": {
+        "year": 1995,
+        "month": 10,
+        "day": 6,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed": {
+        "year": 1995,
+        "month": 10,
+        "day": 6,
+        "precision": "day",
+        "region": "Japan",
+        "version": "Super Famicom"
+      },
+      "source_ids": [
+        "tactics-original"
+      ],
+      "applied_to_catalog": false
+    }
+  ],
+  "expansion_assessments": [
+    {
+      "target_id": "wikipedia-83554",
+      "main_cards": 7,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 0,
+      "rationale": "Gioco centrale della piattaforma e della rispettiva serie: soglia di cinque card già raggiunta."
+    },
+    {
+      "target_id": "console-gap-shining-wisdom",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Priorità editoriale per passaggio della serie Shining all’avventura d’azione su Saturn."
+    },
+    {
+      "target_id": "console-gap-magic-knight-rayearth-video-game",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Priorità editoriale per adattamento Sega di CLAMP e ultima uscita Saturn nordamericana."
+    },
+    {
+      "target_id": "console-gap-pulstar-video-game",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Priorità editoriale per sviluppo dello sparatutto Neo Geo e rapporto con Blazing Star."
+    },
+    {
+      "target_id": "wikipedia-1507039",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Priorità editoriale per esordio della serie Rayman e ruolo nel catalogo PlayStation."
+    },
+    {
+      "target_id": "console-gap-tails-adventure",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "required_main_cards": null,
+      "missing_cards": 0,
+      "rationale": "Avventura portatile pertinente al catalogo, non selezionata in questo lotto fra i giochi di massima priorità per la soglia minima; i tre nuclei forniti vengono conservati senza ripetizioni o suddivisioni artificiali."
+    },
+    {
+      "target_id": "wikipedia-2053053",
+      "main_cards": 7,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 0,
+      "rationale": "Gioco centrale della piattaforma e della rispettiva serie: soglia di cinque card già raggiunta."
+    },
+    {
+      "target_id": "playstation-demo-one-1995",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "required_main_cards": null,
+      "missing_cards": 0,
+      "rationale": "Demo One è una voce di tipo feature dedicata a un disco dimostrativo: non si applica la soglia dei giochi importanti."
+    },
+    {
+      "target_id": "workbook-09-29-wipeout",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 1,
+      "rationale": "Priorità editoriale per identità iniziale di PlayStation e rapporto fra corse, grafica e club culture."
+    },
+    {
+      "target_id": "wikipedia-447357",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Priorità editoriale per ruolo di Tactics Ogre nel gioco di ruolo tattico."
+    }
+  ],
+  "editorial_review": {
+    "english_first": true,
+    "five_languages_reviewed": [
+      "en",
+      "it",
+      "fr",
+      "de",
+      "es"
+    ],
+    "checks": [
+      "10 voci, 39 card per lingua, 195 versioni; nessuna feature separata",
+      "Inglese scritto e salvato prima delle quattro adattazioni, con checkpoint per ciascuna lingua",
+      "Sommari inglesi di 34–37 parole, incipit e titoli specifici in tutte le card",
+      "Conservati ID, ordine, nomi dei giochi e dei personaggi, crediti e numeri presenti, incluse 48 fasi in sei mondi, otto fasi Pulstar, quattro strumenti Tails e vendite storiche",
+      "Riletti tutti i testi nelle cinque lingue; precisato il colpo ricevuto in tedesco per WipEout e mantenuta esplicita la realizzazione e pubblicazione di Tactics Ogre da Quest",
+      "Conservate le sette card Command & Conquer, compresa la breve card sul remaster e le distinte card su Gold, senza fonderle o inventare approfondimenti",
+      "Precisazioni fattuali registrate nelle decisioni e nei metadati; nessuna modifica al catalogo originale",
+      "Sei giochi prioritari necessitano di undici card nuove nel passaggio separato di ampliamento; soglia non applicata automaticamente a ogni titolo o alla voce Demo One"
+    ],
+    "external_verification_limit": "Ricerca mirata ai punti riportati, non verifica esterna universale. Fonti, licenze e attribuzioni originali restano negli INPUT. Nessuna dichiarazione di lettura visiva dei manuali scansionati, del libro completo di Meagan Marie o del DOC Westwood non accessibile. L’archivio EA del download 2007 non si è riaperto: i dettagli già forniti rimangono senza simulare una nuova lettura. Nessuna verifica autonoma dei diritti dei media.",
+    "book_style_references_consulted": false
+  },
+  "validation": {
+    "valid": true,
+    "batch_id": "057-catalog",
+    "completed": true,
+    "entry_count": 10,
+    "card_count_per_language": 39,
+    "language_count": 5,
+    "translated_card_count": 195,
+    "entry_card_counts": {
+      "wikipedia-83554": 7,
+      "console-gap-shining-wisdom": 3,
+      "console-gap-magic-knight-rayearth-video-game": 3,
+      "console-gap-pulstar-video-game": 3,
+      "wikipedia-1507039": 3,
+      "console-gap-tails-adventure": 3,
+      "wikipedia-2053053": 7,
+      "playstation-demo-one-1995": 3,
+      "workbook-09-29-wipeout": 4,
+      "wikipedia-447357": 3
+    },
+    "issue_counts": {
+      "wikipedia-83554": 0,
+      "console-gap-shining-wisdom": 1,
+      "console-gap-magic-knight-rayearth-video-game": 1,
+      "console-gap-pulstar-video-game": 1,
+      "wikipedia-1507039": 1,
+      "console-gap-tails-adventure": 0,
+      "wikipedia-2053053": 0,
+      "playstation-demo-one-1995": 0,
+      "workbook-09-29-wipeout": 1,
+      "wikipedia-447357": 1
+    },
+    "summary_checks": [
+      {
+        "entry_id": "wikipedia-83554",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "console-gap-shining-wisdom",
+        "feature_id": null,
+        "english_summary_words": 34
+      },
+      {
+        "entry_id": "console-gap-magic-knight-rayearth-video-game",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "console-gap-pulstar-video-game",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "wikipedia-1507039",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "console-gap-tails-adventure",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "wikipedia-2053053",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "playstation-demo-one-1995",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "workbook-09-29-wipeout",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "wikipedia-447357",
+        "feature_id": null,
+        "english_summary_words": 36
+      }
+    ],
+    "editorial_review": [],
+    "failures": []
+  },
+  "output_sha256": "9af3270626c0c0b0f30aa90d0fe0d9034ea53fb7874c7335931c0ef436f276d6",
+  "root_review": {
+    "reviewed_at": "2026-10-30T02:54:05.864433+00:00",
+    "scope": "Controllo mirato delle segnalazioni quantitative e dei rapporti di lunghezza; non nuova verifica universale. Differenze di separatore, numeri scritti in lettere e secoli non sono omissioni.",
+    "finding": "Tails conserva dodici aree e ventisei oggetti; C&C conserva il dodicesimo anniversario e le vendite; Quest 2002 è rettifica documentata."
+  }
+}

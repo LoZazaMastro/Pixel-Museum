@@ -1,0 +1,597 @@
+{
+  "batch_id": "034-catalog",
+  "status": "completed",
+  "sources": [
+    {
+      "source_id": "034-capcom-chronology",
+      "url": "https://www.capcom.co.jp/ir/company/history.html",
+      "title": "Capcom corporate history, 1989",
+      "publisher": "Capcom",
+      "accessed_at": "2026-10-30",
+      "scope": "Cronologia ufficiale: uscita arcade di Final Fight nel dicembre 1989; il dicembre 1990 riguarda la versione Super Famicom.",
+      "limitation": "La fonte sostiene mese e anno, non un giorno esatto."
+    },
+    {
+      "source_id": "034-capcom-interview",
+      "url": "https://game.capcom.com/cfn/sfv/column/132589",
+      "title": "FF developer interview",
+      "publisher": "Capcom CFN",
+      "accessed_at": "2026-10-30",
+      "scope": "L’introduzione dell’intervista colloca l’uscita di Final Fight nel dicembre 1989, coerente con la cronologia aziendale.",
+      "limitation": "Usato soltanto per risolvere il contrasto con il 25 novembre nei metadati del lotto; non importate nuove informazioni di sviluppo."
+    },
+    {
+      "source_id": "034-sega-shinobi",
+      "url": "https://www.sega.jp/mdmini/soft/the-revenge-of-shinobi.html",
+      "title": "The Super Shinobi — Mega Drive Mini",
+      "publisher": "Sega",
+      "accessed_at": "2026-10-30",
+      "scope": "Data originale Mega Drive indicata espressamente: 2 dicembre 1989; musica attribuita a Yuzo Koshiro.",
+      "limitation": "La scheda è giapponese e la data viene riferita alla release giapponese."
+    },
+    {
+      "source_id": "034-saga-anniversary",
+      "url": "https://www.jp.square-enix.com/company/ja/news/pdf/73593757870baa18cd868443a24f7d3f.pdf",
+      "title": "SaGa 25th anniversary announcement, 15 December 2014",
+      "publisher": "Square Enix",
+      "accessed_at": "2026-10-30",
+      "scope": "Il riepilogo storico conferma Makai Toushi SaGa, 15 dicembre 1989, primo RPG Game Boy e risultato superiore al milione.",
+      "limitation": "Il 2014 è la data del documento, non della release del primo gioco. Il dato preciso di 1,37 milioni resta quello fornito nell’INPUT."
+    },
+    {
+      "source_id": "034-ys-walkthrough",
+      "url": "https://gamefaqs.gamespot.com/turbocd/918280-ys-book-i-and-ii/faqs/7622",
+      "title": "Ys Book I & II — Ys II Walkthrough, 5 July 2000",
+      "publisher": "Tarkaan / GameFAQs",
+      "accessed_at": "2026-10-30",
+      "scope": "Guida di gioco in prima persona per Turbo CD: all’inizio di Book II il protagonista non ha spada, scudo o armatura e deve ricomprarli.",
+      "limitation": "Testo recuperato dall’indice di ricerca; l’apertura diretta del sito non era disponibile. La guida riguarda Turbo CD, non Chronicles o le versioni DS."
+    },
+    {
+      "source_id": "034-ys-playthrough",
+      "url": "https://americanluchalibre.com/ys-book-iii-tg-16/",
+      "title": "Ys: Book I&II (TG-16), 7 March 2024",
+      "publisher": "Georg Mack / American Lucha Libre",
+      "accessed_at": "2026-10-30",
+      "scope": "Resoconto di una partita: esperienza conservata nel passaggio a Book II, equipaggiamento assente. Corrobora la guida del 2000.",
+      "limitation": "Testimonianza di gioco, non manuale ufficiale. La data di release precisa riportata dal blog non viene adottata."
+    },
+    {
+      "source_id": "034-shinobi-switch",
+      "url": "https://www.gematsu.com/2023/06/sega-genesis-nintendo-switch-online-adds-crusader-of-centy-ghouls-n-ghosts-landstalker-and-the-revenge-of-shinobi",
+      "title": "SEGA Genesis — Nintendo Switch Online adds four games",
+      "publisher": "Sal Romano / Gematsu, annuncio Nintendo riprodotto",
+      "accessed_at": "2026-10-30",
+      "scope": "Articolo contemporaneo del 27 giugno 2023 con annuncio e descrizione Nintendo: il gioco è già disponibile nel catalogo Nintendo Switch Online.",
+      "limitation": "Usato per la denominazione del servizio nel 2023 e per distinguere disponibilità da semplice annuncio futuro; nessun giorno aggiunto alla prosa."
+    },
+    {
+      "source_id": "034-pce-mini",
+      "url": "https://www.konami.com/games/pcemini/lineup/jp/ja/",
+      "title": "PC Engine mini — Japanese lineup",
+      "publisher": "Konami",
+      "accessed_at": "2026-10-30",
+      "scope": "Schede di Neutopia e PC Genjin: anno 1989, otto medaglioni e bussola, attacchi di testa e invulnerabilità con carne grande.",
+      "limitation": "Riepilogo ufficiale di riedizione; non documenta i giorni esatti. I nomi occidentali Jazeta, Aurora e Dirth rimangono quelli del materiale fornito."
+    },
+    {
+      "source_id": "034-psychofox-sms",
+      "url": "https://www.smspower.org/Games/PsychoFox-SMS",
+      "title": "Psycho Fox — Master System",
+      "publisher": "SMS Power!",
+      "accessed_at": "2026-10-30",
+      "scope": "Catalogo specialistico con uscita 1989 ed esemplari europei.",
+      "limitation": "Non attribuisce un mese né dimostra quale regione abbia pubblicato per prima."
+    },
+    {
+      "source_id": "034-psychofox-releases",
+      "url": "https://www.mobygames.com/game/9002/psycho-fox/releases/",
+      "title": "Psycho Fox — releases",
+      "publisher": "MobyGames",
+      "accessed_at": "2026-10-30",
+      "scope": "Archivia la distribuzione europea nel 1989.",
+      "limitation": "La tabella americana indica anch’essa 1989, mentre altre fonti propongono maggio 1990. Nessun primato mondiale o data nordamericana è introdotto nel testo."
+    },
+    {
+      "source_id": "034-psychofox-source",
+      "url": "https://en.wikipedia.org/wiki/Psycho_Fox",
+      "title": "Psycho Fox — original source and references",
+      "publisher": "English Wikipedia contributors",
+      "accessed_at": "2026-10-30",
+      "scope": "Il dicembre 1989 europeo è rinviato a una preview di Computer and Video Games n.97, p.157.",
+      "limitation": "Una preview non basta da sola a confermare il mese di effettiva disponibilità; il testo viene limitato all’anno corroborato dai cataloghi di release."
+    },
+    {
+      "source_id": "034-psychofox-gamefaqs",
+      "url": "https://gamefaqs.gamespot.com/sms/588123-psycho-fox/data",
+      "title": "Psycho Fox — release data",
+      "publisher": "GameFAQs",
+      "accessed_at": "2026-10-30",
+      "scope": "La scheda specifica del titolo distingue Europa 1989 e Stati Uniti maggio 1990.",
+      "limitation": "La precedente pagina riepilogativa del produttore aveva un diverso abbinamento regione/mese; per l’Europa si usa soltanto l’anno su cui convergono le schede."
+    },
+    {
+      "source_id": "034-neutopia-date",
+      "url": "https://www.netoff.co.jp/detail/0013980778/",
+      "title": "Neutopia — PC Engine HC89022",
+      "publisher": "NetOff",
+      "accessed_at": "2026-10-30",
+      "scope": "Catalogo della versione giapponese: 17 novembre 1989, coerente con l’INPUT.",
+      "limitation": "Fonte commerciale secondaria, non documento di lancio; nessuna pretesa di verifica primaria del giorno."
+    },
+    {
+      "source_id": "034-bonk-date",
+      "url": "https://www.suruga-ya.jp/product/detail/161000096",
+      "title": "PC Genjin — PC Engine HC89024",
+      "publisher": "Suruga-ya",
+      "accessed_at": "2026-10-30",
+      "scope": "Scheda della versione giapponese: 15 dicembre 1989, coerente con l’INPUT.",
+      "limitation": "Fonte commerciale secondaria; non utilizzata per introdurre nuovi fatti."
+    },
+    {
+      "source_id": "034-batman-date",
+      "url": "https://www.suruga-ya.jp/product/detail/174000473",
+      "title": "Batman — Famicom",
+      "publisher": "Suruga-ya",
+      "accessed_at": "2026-10-30",
+      "scope": "Il 22 dicembre 1989 del contesto corrisponde alla versione Famicom giapponese.",
+      "limitation": "Non è una data di lancio mondiale NES e non viene trasformata in tale; nel testo si mantiene il riferimento al film del 1989."
+    },
+    {
+      "source_id": "034-pang-source",
+      "url": "https://en.wikipedia.org/wiki/Buster_Bros.",
+      "title": "Buster Bros. — supplied source",
+      "publisher": "English Wikipedia contributors",
+      "accessed_at": "2026-10-30",
+      "scope": "Il 29 novembre 1989 è etichettato come Giappone nella fonte, mentre il resto del mondo è dicembre 1989.",
+      "limitation": "Rilettura della fonte originaria, non conferma primaria indipendente; il giorno non è aggiunto alla prosa e i metadati originali restano immutati."
+    }
+  ],
+  "decisions": [
+    {
+      "target_id": "console-gap-neutopia",
+      "problem": "La chiusa chiamava PC Engine/TurboGrafx-16 la console di Hudson, con attribuzione hardware imprecisa.",
+      "conclusion": "La prosa si riferisce alla piattaforma, mantenendo Hudson come autore dell’avventura e tutti i contenuti di esplorazione.",
+      "source_ids": [
+        "034-pce-mini"
+      ],
+      "text_applied": {
+        "languages": [
+          "en",
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "cards": [
+          "main:2"
+        ]
+      }
+    },
+    {
+      "target_id": "wikipedia-302111",
+      "problem": "Il contesto proponeva 25 novembre 1989 per Final Fight; la cronologia ufficiale indica dicembre.",
+      "conclusion": "Adottato dicembre 1989 per la release arcade. Nessun giorno ricavato a intuito.",
+      "source_ids": [
+        "034-capcom-chronology",
+        "034-capcom-interview"
+      ],
+      "text_applied": {
+        "languages": [
+          "en",
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "cards": [
+          "main:0"
+        ]
+      }
+    },
+    {
+      "target_id": "wikipedia-302111",
+      "problem": "Il giudizio fra i migliori giochi di tutti i tempi era formulato come valore assoluto.",
+      "conclusion": "Conservata la reputazione storica come giudizio critico successivo, separata da vendite e incassi; tutti i dati quantitativi dell’INPUT restano presenti.",
+      "source_ids": [],
+      "text_applied": {
+        "languages": [
+          "en",
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "cards": [
+          "main:2"
+        ]
+      }
+    },
+    {
+      "target_id": "console-gap-psycho-fox",
+      "problem": "La frase affermava un primo lancio europeo nel dicembre 1989; il mese rinvia a una preview e gli archivi non concordano sulla cronologia americana.",
+      "conclusion": "Risolto l’ambito della formulazione: uscita europea nel 1989, senza mese non corroborato e senza primato mondiale. Non occorre scegliere una data americana per questa voce.",
+      "source_ids": [
+        "034-psychofox-sms",
+        "034-psychofox-releases",
+        "034-psychofox-source",
+        "034-psychofox-gamefaqs"
+      ],
+      "text_applied": {
+        "languages": [
+          "en",
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "cards": [
+          "main:0"
+        ]
+      }
+    },
+    {
+      "target_id": "wikipedia-1353218",
+      "problem": "Data originale senza regione e uso retroattivo del nome Nintendo Classics per il servizio del 2023.",
+      "conclusion": "Il 2 dicembre 1989 è riferito al Giappone; la riedizione 2023 è descritta nel catalogo classici di Nintendo Switch Online. Tutte le altre piattaforme e annate dell’INPUT restano presenti.",
+      "source_ids": [
+        "034-sega-shinobi",
+        "034-shinobi-switch"
+      ],
+      "text_applied": {
+        "languages": [
+          "en",
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "cards": [
+          "main:0",
+          "main:1"
+        ]
+      }
+    },
+    {
+      "target_id": "wikipedia-52763",
+      "problem": "La formulazione worldwide release poteva far intendere un’uscita inglese simultanea in ogni territorio.",
+      "conclusion": "Descritta la versione inglese e la release nordamericana del settembre 1990 senza introdurre un’uscita europea; il debutto giapponese del 15 dicembre 1989 è confermato da Square Enix.",
+      "source_ids": [
+        "034-saga-anniversary"
+      ],
+      "text_applied": {
+        "languages": [
+          "en",
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "cards": [
+          "main:0"
+        ]
+      }
+    },
+    {
+      "target_id": "wikipedia-13309426",
+      "problem": "L’INPUT affermava che esperienza, equipaggiamento e altri progressi passassero integralmente da Ys I a Ys II.",
+      "conclusion": "Confermata la continuità dell’esperienza, corretto l’equipaggiamento: all’inizio della seconda parte servono di nuovo armi e armature. Non sono applicate regole delle versioni Chronicles o DS.",
+      "source_ids": [
+        "034-ys-walkthrough",
+        "034-ys-playthrough"
+      ],
+      "text_applied": {
+        "languages": [
+          "en",
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "cards": [
+          "main:1"
+        ]
+      }
+    },
+    {
+      "target_id": "batman-the-video-game-1989",
+      "problem": "La data del contesto usa una regione generica Original commercial release.",
+      "conclusion": "Riconosciuta come data Famicom giapponese, senza presentarla come lancio mondiale NES. La prosa non aggiunge un giorno universale.",
+      "source_ids": [
+        "034-batman-date"
+      ],
+      "text_applied": {
+        "languages": [
+          "en",
+          "it",
+          "fr",
+          "de",
+          "es"
+        ],
+        "cards": [
+          "main:0"
+        ]
+      }
+    }
+  ],
+  "metadata_proposals": [
+    {
+      "target_id": "wikipedia-302111",
+      "field": "release_date",
+      "proposed": {
+        "year": 1989,
+        "month": 12,
+        "precision": "month",
+        "region": "JP",
+        "platform": "Arcade / CP System"
+      },
+      "reason": "Cronologia Capcom e intervista ufficiale concordano sul dicembre 1989, non sul 25 novembre.",
+      "source_ids": [
+        "034-capcom-chronology",
+        "034-capcom-interview"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "console-gap-psycho-fox",
+      "field": "release_date",
+      "proposed": {
+        "year": 1989,
+        "precision": "year",
+        "region": "EU",
+        "platform": "Master System"
+      },
+      "reason": "Anno di release europeo corroborato; il mese proviene da una preview e non viene trattato come disponibilità verificata.",
+      "source_ids": [
+        "034-psychofox-sms",
+        "034-psychofox-releases",
+        "034-psychofox-gamefaqs"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "wikipedia-1353218",
+      "field": "release_region",
+      "proposed": {
+        "year": 1989,
+        "month": 12,
+        "day": 2,
+        "precision": "day",
+        "region": "JP",
+        "platform": "Mega Drive"
+      },
+      "reason": "La data originale conservata è quella della versione giapponese secondo Sega.",
+      "source_ids": [
+        "034-sega-shinobi"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "wikipedia-52763",
+      "field": "release_region",
+      "proposed": {
+        "year": 1989,
+        "month": 12,
+        "day": 15,
+        "precision": "day",
+        "region": "JP",
+        "platform": "Game Boy"
+      },
+      "reason": "Square Enix conferma il debutto giapponese; il nome inglese identifica la successiva edizione nordamericana.",
+      "source_ids": [
+        "034-saga-anniversary"
+      ],
+      "applied_to_catalog": false
+    }
+  ],
+  "expansion_assessments": [
+    {
+      "target_id": "console-gap-neutopia",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Avventura di riferimento nel catalogo PC Engine, con un corpo principale di tre card."
+    },
+    {
+      "target_id": "wikipedia-302111",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Titolo importante per il picchiaduro a scorrimento; il corpo principale contiene tre card."
+    },
+    {
+      "target_id": "wikipedia-3316392",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Classico arcade diffuso con tre nomi regionali, descritto qui in sole tre card."
+    },
+    {
+      "target_id": "console-gap-psycho-fox",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Titolo rappresentativo del platform su Master System, con tre card principali."
+    },
+    {
+      "target_id": "wikipedia-1353218",
+      "main_cards": 2,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 3,
+      "rationale": "Primo Shinobi per Mega Drive, con appena due card, di cui una dominata dalle riedizioni."
+    },
+    {
+      "target_id": "console-gap-bonk-s-adventure",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Il gioco introduce una mascotte importante di PC Engine e TurboGrafx-16, ma ha tre card."
+    },
+    {
+      "target_id": "sweet-home-1989",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Riferimento importante per lo sviluppo del survival horror, con tre card principali."
+    },
+    {
+      "target_id": "wikipedia-52763",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Esordio della serie SaGa e primo RPG per Game Boy, con tre card principali."
+    },
+    {
+      "target_id": "wikipedia-13309426",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 1,
+      "rationale": "Opera importante per gli RPG su CD, con quattro card principali."
+    },
+    {
+      "target_id": "batman-the-video-game-1989",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Adattamento Sunsoft di rilievo nel catalogo NES, con tre card principali."
+    }
+  ],
+  "editorial_review": {
+    "english_first": true,
+    "languages": [
+      "en",
+      "it",
+      "fr",
+      "de",
+      "es"
+    ],
+    "entry_count": 10,
+    "main_card_count_per_language": 30,
+    "feature_card_count_per_language": 0,
+    "card_count_per_language": 30,
+    "checks": [
+      "Inglese salvato prima degli adattamenti; controllati tutti i trenta paragrafi e i dieci sommari nelle cinque lingue.",
+      "Sommari inglesi di 29–40 parole; incipit concreti e titoli specifici per ogni card.",
+      "Conservati tutti i nomi, i dati numerici, i crediti e le piattaforme elencate; nessuna espansione simulata mediante divisioni delle card.",
+      "Riletti in particolare le forme di Psycho Fox, gli stati di Bonk, gli strumenti e la morte permanente di Sweet Home, i titoli delle ristampe e la continuità di Ys.",
+      "Corretto un possibile equivoco italiano sul passaggio fra gruppi di Sweet Home: scelta del gruppo, non movimento a turni.",
+      "Conservati i titoli propri principali; tradotti i sottotitoli editoriali. Nessun titolo di canzone modificato.",
+      "INPUT, TEMPLATE, fonti, licenze, crediti e media originali restano intatti. Nessun riferimento stilistico non visto viene dichiarato consultato."
+    ],
+    "limits": "Controllo fattuale mirato sui dubbi emersi, non nuova verifica indipendente di ogni dato originale. Le dieci richieste di ampliamento riguardano materiale aggiuntivo e nuove associazioni media; il template esistente è completo.",
+    "root_review": {
+      "date": "2026-10-30",
+      "scope": "Confrontate SOURCE/EN/IT per Buster Bros. main:2, The Revenge of Shinobi main:0 e The Final Fantasy Legend main:0. I numeri aggiunti corrispondono alle classificazioni e alle date documentate nell’audit; le differenze di separatore decimale non sono variazioni quantitative. Non dichiarata una rilettura integrale indipendente delle cinque lingue.",
+      "output_sha256": "5c8288bbc0120df4b72c58ce452e878dc71dd19282a32bb120599ef0b7ac9444",
+      "field_revisions": []
+    }
+  },
+  "validation": {
+    "valid": true,
+    "batch_id": "034-catalog",
+    "completed": true,
+    "entry_count": 10,
+    "card_count_per_language": 30,
+    "language_count": 5,
+    "translated_card_count": 150,
+    "entry_card_counts": {
+      "console-gap-neutopia": 3,
+      "wikipedia-302111": 3,
+      "wikipedia-3316392": 3,
+      "console-gap-psycho-fox": 3,
+      "wikipedia-1353218": 2,
+      "console-gap-bonk-s-adventure": 3,
+      "sweet-home-1989": 3,
+      "wikipedia-52763": 3,
+      "wikipedia-13309426": 4,
+      "batman-the-video-game-1989": 3
+    },
+    "issue_counts": {
+      "console-gap-neutopia": 1,
+      "wikipedia-302111": 1,
+      "wikipedia-3316392": 1,
+      "console-gap-psycho-fox": 1,
+      "wikipedia-1353218": 1,
+      "console-gap-bonk-s-adventure": 1,
+      "sweet-home-1989": 1,
+      "wikipedia-52763": 1,
+      "wikipedia-13309426": 1,
+      "batman-the-video-game-1989": 1
+    },
+    "summary_checks": [
+      {
+        "entry_id": "console-gap-neutopia",
+        "feature_id": null,
+        "english_summary_words": 29
+      },
+      {
+        "entry_id": "wikipedia-302111",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "wikipedia-3316392",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "console-gap-psycho-fox",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "wikipedia-1353218",
+        "feature_id": null,
+        "english_summary_words": 34
+      },
+      {
+        "entry_id": "console-gap-bonk-s-adventure",
+        "feature_id": null,
+        "english_summary_words": 34
+      },
+      {
+        "entry_id": "sweet-home-1989",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "wikipedia-52763",
+        "feature_id": null,
+        "english_summary_words": 32
+      },
+      {
+        "entry_id": "wikipedia-13309426",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "batman-the-video-game-1989",
+        "feature_id": null,
+        "english_summary_words": 40
+      }
+    ],
+    "editorial_review": [],
+    "failures": []
+  },
+  "output_sha256": "5c8288bbc0120df4b72c58ce452e878dc71dd19282a32bb120599ef0b7ac9444"
+}

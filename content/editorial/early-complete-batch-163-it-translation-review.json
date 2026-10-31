@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "locale": "it",
+  "review": "Binding of exact independently approved complete candidate members; no new linguistic review substituted. Every full candidate SHA and independent PASS receipt checked, all current English five fields and translation hashes validated.",
+  "entries": [
+    {
+      "entry_id": "steam",
+      "source_fields_sha256": "49dadf62b1ce1829d057228dbfa7a5c5d636800b74b782deaa93c3c3d7f2b27c",
+      "translation_sha256": "e7c3127cb0bdafd2d32cdf8c98a0cddafbbf8fea8267ecb3e15ff73b94ee4c49",
+      "independent_peer": "build/research/steam2003-four-language-completion/independent-all-fields-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "1f79c1240eb2c529ef96e6d795d88eba68841a93ba8a0766a819daa68d5b9e72",
+      "candidate_path": "build/research/steam2003-four-language-completion/steam-all-five-fields-four-language-full-reuse-fidelity-candidate.json",
+      "candidate_sha256": "d81e7913a3e64da54c547861bdc693d46f4a04d71c3ab6b46f54acb8675dbf24"
+    },
+    {
+      "entry_id": "feature-steam-library-ownership",
+      "source_fields_sha256": "15e465170299d238122d89d41bc3bf0f4ef04abffca452afaa7dcdba7c9020f0",
+      "translation_sha256": "be4bbe408273ba590734ba20f6f66a604553ea273e485bdb8024d73a1567bb21",
+      "independent_peer": "build/research/steam-library2003-four-language-completion/independent-all-fields-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "ce8f4fc59004603e61583e4224290e5092866c96656fff66e596ec7694b14d0f",
+      "candidate_path": "build/research/steam-library2003-four-language-completion/steam-library-all-five-fields-four-language-full-reuse-fidelity-candidate.json",
+      "candidate_sha256": "ac9adb774023bce4bf6abc47cff685e55f944786e210d5372693c3357b6ec048"
+    },
+    {
+      "entry_id": "wikipedia-1127169",
+      "source_fields_sha256": "69f42650b9f4b5e6c603b997cff198b48b3e41ea359ea65a57bd756192379af4",
+      "translation_sha256": "edb2df9f0533477ff90cae0f65158e86b7aafd246051166dd228d46daeafa470",
+      "independent_peer": "build/research/puyo-fever2003-four-language-completion/independent-all-fields-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "83d6dec8a90fb76b304a7cddba53698a8657c77ac6ac08066a3d356e2879bdae",
+      "candidate_path": "build/research/puyo-fever2003-four-language-completion/puyo-fever-four-language-final-explicit-reboot-antecedent-candidate.json",
+      "candidate_sha256": "ccd61f8c588f8921ffeedfc1cf68e0a1584b83334c631d8918c28c28f3a6e293"
+    },
+    {
+      "entry_id": "wikipedia-875392",
+      "source_fields_sha256": "c52d57be6f8139504ea2a80398bb36c5f98e9dc3d0ef6b1835ff64814a856d19",
+      "translation_sha256": "89b5301786be6969d8ca16f6364a603f6e005df0eb9ffd9bde517633eb483f0a",
+      "independent_peer": "build/research/pgr2-2003-four-language-completion/independent-all-fields-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "02ea2c65479c336d7fa3179cb48c5fb5cbdd0ae45e7fc6e0c65f835f9cfa1e9d",
+      "candidate_path": "build/research/pgr2-2003-four-language-completion/pgr2-all-five-fields-four-language-full-reuse-fidelity-candidate.json",
+      "candidate_sha256": "697db5c5ef695fbf313f64fb17a3edfcba008d4c08fda6698d10362737262779"
+    }
+  ]
+}

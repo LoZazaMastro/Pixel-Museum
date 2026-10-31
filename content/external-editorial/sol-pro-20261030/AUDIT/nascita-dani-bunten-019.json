@@ -1,0 +1,220 @@
+{
+  "schema": "pixel-museum.birth-audit.v1",
+  "delivery": "consegna-020",
+  "checked_at": "2026-10-29",
+  "scope": {
+    "batch_id": "019-catalog",
+    "entry_id": "mule",
+    "kind": "person",
+    "person_name": "Dani Bunten Berry",
+    "title_context": "Dani Bunten Berry and M.U.L.E.",
+    "main_feature_id": null,
+    "feature_ids": [
+      "feature-dani-bunten-social"
+    ],
+    "counts": {
+      "entries": 1,
+      "main_cards": 4,
+      "feature_cards": 4,
+      "cards_per_language": 8,
+      "languages": [
+        "en",
+        "it",
+        "fr",
+        "de",
+        "es"
+      ],
+      "language_card_versions": 40
+    },
+    "record_counts": {
+      "decisions": 3,
+      "sources": 4,
+      "metadata_proposals": 1
+    },
+    "document_role": "Riscontro della nascita della persona e distinzione dall’anno dell’opera M.U.L.E.; nessun aggiornamento diretto del catalogo."
+  },
+  "decisions": [
+    {
+      "decision_id": "D019-01",
+      "batch_id": "019-catalog",
+      "entry_id": "mule",
+      "target_id": "mule",
+      "question": "Quale data completa è attestata per la nascita di Dani Bunten Berry?",
+      "status": "documented_full_birth_date",
+      "conclusion": "CALS indica il 19 febbraio 1949. La data completa può essere riportata nell’incipit biografico e proposta come ancoraggio della persona.",
+      "precision": "day",
+      "source_ids": [
+        "src-cals-bunten"
+      ],
+      "limitations": "La data completa poggia sulla biografia istituzionale; nessun certificato di nascita è dichiarato consultato.",
+      "editorial_action": "Nascita riportata nella prima card nelle cinque lingue; importazione dei metadati proposta separatamente."
+    },
+    {
+      "decision_id": "D019-02",
+      "batch_id": "019-catalog",
+      "entry_id": "mule",
+      "target_id": "mule",
+      "question": "Quale parte della data di nascita è corroborata dall’archivio The Strong?",
+      "status": "birth_year_independently_corroborated",
+      "conclusion": "La nota biografica conferma il 1949 e l’identità professionale. Non corrobora giorno e mese.",
+      "precision": "year",
+      "source_ids": [
+        "src-strong-bunten-papers"
+      ],
+      "limitations": "L’inventario di un certificato e l’intervallo 1949–2012 della raccolta non equivalgono alla lettura del certificato."
+    },
+    {
+      "decision_id": "D019-03",
+      "batch_id": "019-catalog",
+      "entry_id": "mule",
+      "target_id": "main:1",
+      "question": "Che cosa rappresenta il 1983 nella voce biografica?",
+      "status": "work_year_distinguished_from_birth",
+      "conclusion": "Il 1983 è l’anno di M.U.L.E., non la nascita di Dani né una fondazione dedotta. Rimane nel racconto del gioco.",
+      "precision": "year",
+      "source_ids": [
+        "src-input-019",
+        "src-antic-bunten-1985"
+      ],
+      "platform_or_version": "M.U.L.E."
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "src-input-019",
+      "title": "Materiale fornito — lotto 019-catalog",
+      "publisher": "Pixel Museum; attribuzioni originali nei record del lotto",
+      "source_type": "supplied_catalog_batch",
+      "status": "consulted",
+      "locator": "Voci, card, metadati e record di fonte del lotto 019-catalog.",
+      "evidence_scope": "Base della riscrittura e dei valori originali riportati nelle proposte di importazione.",
+      "limitations": "Il materiale contiene le incongruenze qui esaminate; la sua inclusione non certifica globalmente ogni affermazione.",
+      "batch_id": "019-catalog",
+      "decision_ids": [
+        "D019-03"
+      ],
+      "metadata_proposal_ids": []
+    },
+    {
+      "source_id": "src-cals-bunten",
+      "title": "Danielle Bunten Berry (1949–1998)",
+      "publisher": "Central Arkansas Library System / Encyclopedia of Arkansas",
+      "source_type": "institutional_secondary_biography",
+      "status": "consulted",
+      "locator": "Paragrafo biografico iniziale dedicato alla nascita.",
+      "evidence_scope": "Attesta esplicitamente il 19 febbraio 1949.",
+      "url": "https://encyclopediaofarkansas.net/entries/Danielle-Bunten-Berry-4524/",
+      "limitations": "La data completa deriva da questa biografia istituzionale; non è presentata come verifica di un certificato anagrafico.",
+      "authors": [
+        "Greg Costikyan",
+        "Staff of the CALS Encyclopedia of Arkansas"
+      ],
+      "updated": "2025-12-29",
+      "decision_ids": [
+        "D019-01"
+      ],
+      "metadata_proposal_ids": [
+        "P019-01"
+      ]
+    },
+    {
+      "source_id": "src-strong-bunten-papers",
+      "title": "Finding Aid to the Dan Bunten (Dani Bunten Berry) Papers, 1949–2012",
+      "publisher": "Brian Sutton-Smith Library and Archives of Play at The Strong",
+      "source_type": "official_archival_finding_aid",
+      "status": "consulted",
+      "locator": "Biographical Note, pagina 2; inventario della raccolta, pagina 4.",
+      "evidence_scope": "Corrobora identità, attività di game designer e programmatrice e anno di nascita 1949.",
+      "url": "https://www.museumofplay.org/app/uploads/2021/09/Finding-Aid-to-the-Dan-Bunten-Dani-Bunten-Berry-papers_091018.pdf",
+      "limitations": "Non conferma giorno e mese. La presenza di un certificato nell’inventario non equivale alla sua consultazione; l’intervallo cronologico della raccolta non è usato come prova della nascita.",
+      "publication_date": "2013-09",
+      "decision_ids": [
+        "D019-02"
+      ],
+      "metadata_proposal_ids": [
+        "P019-01"
+      ]
+    },
+    {
+      "source_id": "src-antic-bunten-1985",
+      "title": "Interviewing Dan Bunten",
+      "publisher": "Antic, volume 3, numero 9, gennaio 1985",
+      "source_type": "primary_contemporary_participant_interview",
+      "status": "consulted",
+      "locator": "Profilo iniziale e contributi del gruppo; paragrafi sui test di Seven Cities of Gold; passaggi sulla simulazione borsistica Apple e su Electronic Arts.",
+      "evidence_scope": "Anno 1983 di M.U.L.E., ruoli di Bill Bunten, Jim Rushing e Alan Watson, progettazione a partire dall’esperienza dei giocatori, precedente Apple, aiuto dell’editore e problemi dei test senza spiegazioni.",
+      "url": "https://www.atarimagazines.com/v3n9/profiles.php",
+      "limitations": "Le interpretazioni progettuali restano attribuite alla testimonianza. Il titolo storico della fonte è conservato; la narrazione usa Dani Bunten Berry.",
+      "author": "Arthur Leyenberger",
+      "publication_date": "1985-01",
+      "decision_ids": [
+        "D019-03"
+      ],
+      "metadata_proposal_ids": []
+    }
+  ],
+  "metadata_proposals": [
+    {
+      "proposal_id": "P019-01",
+      "batch_id": "019-catalog",
+      "entry_id": "mule",
+      "target_id": "mule",
+      "proposal_type": "timeline_metadata",
+      "status": "documented_proposal_not_applied",
+      "before": {
+        "year_context_only": 1983,
+        "date_context_only": {
+          "month": 0,
+          "day": 0,
+          "precision": "year",
+          "region": ""
+        },
+        "event_semantics": ""
+      },
+      "proposed": {
+        "year_context_only": 1949,
+        "date_context_only": {
+          "month": 2,
+          "day": 19,
+          "precision": "day",
+          "region": ""
+        },
+        "event_semantics": "birth"
+      },
+      "platform_or_version": "Persona: Dani Bunten Berry",
+      "reason": "La voce è una persona: l’ancoraggio diventa la nascita. Il 1983 resta l’anno di M.U.L.E. nel testo.",
+      "decision_ids": [
+        "D019-01",
+        "D019-02",
+        "D019-03"
+      ],
+      "source_ids": [
+        "src-cals-bunten",
+        "src-strong-bunten-papers"
+      ],
+      "preserve_ids": true,
+      "scope_limit": "CALS attesta la data completa; The Strong corrobora solo l’anno. Nessun giorno e mese ricavati dall’inventario archivistico."
+    }
+  ],
+  "limitations": [
+    "CALS attesta giorno, mese e anno: 19 febbraio 1949. The Strong corrobora soltanto il 1949 e l’identità professionale. Non sono due attestazioni indipendenti della data completa.",
+    "Il certificato di nascita elencato nell’inventario archivistico non è stato consultato; neppure il necrologio citato dalla biografia CALS viene presentato come letto direttamente. L’intervallo cronologico 1949–2012 della raccolta non è utilizzato come prova anagrafica.",
+    "Il 1983 resta l’anno di M.U.L.E. nel racconto. Non è usato come nascita di Dani, né come data di fondazione dedotta per uno studio.",
+    "La proposta modifica soltanto l’ancoraggio temporale e la semantica dell’evento in sede di importazione. Identità della voce, ID delle card e della feature, titoli, ordine, media, fonti e licenze restano invariati.",
+    "Il titolo storico della fonte Antic è mantenuto come pubblicato; la nuova narrazione usa il nome Dani Bunten Berry e i pronomi femminili.",
+    "L’audit riguarda questa persona nel lotto 019; non dichiara controllate tutte le date biografiche del catalogo. I riferimenti PDF sono bibliografici: nessuna scansione è incorporata."
+  ],
+  "expansion_review": {
+    "main_cards": 4,
+    "feature_cards": 4,
+    "expansion_issue_required": false,
+    "reason": "La voce è biografica: non le viene applicata automaticamente la quota di cinque card principali prevista per i giochi importanti."
+  },
+  "birth_date": "1949-02-19",
+  "birth_year": 1949,
+  "precision": "day",
+  "status": "documented_birth_date_applied_in_prose_metadata_proposed_separately",
+  "output_file": "019-catalog/OUTPUT-019-catalog.json",
+  "output_sha256": "cddc2f724924e12fd3b14560e2f9a854dc25e5a3f25862738c145485ad6c833d",
+  "text_applied_in_all_five_languages": true
+}

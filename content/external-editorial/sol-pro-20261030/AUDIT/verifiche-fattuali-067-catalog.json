@@ -1,0 +1,718 @@
+{
+  "batch_id": "067-catalog",
+  "status": "completed",
+  "entries": 10,
+  "main_cards_per_language": 33,
+  "feature_cards_per_language": 0,
+  "cards_per_language": 33,
+  "languages": [
+    "en",
+    "it",
+    "fr",
+    "de",
+    "es"
+  ],
+  "sources": [
+    {
+      "source_id": "067-golden-jp",
+      "url": "https://www.nintendo.co.jp/n01/n64/software/1997.html",
+      "title": "Nintendo 64 — software giapponese 1997",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "La lista ufficiale riporta GoldenEye 007 il 23 agosto 1997.",
+      "limitation": "La pagina ha una vecchia codifica: data e collegamento del titolo risultano riconoscibili. Non è una data mondiale."
+    },
+    {
+      "source_id": "067-golden-museum",
+      "url": "https://www.computinghistory.org.uk/det/68312/GoldenEye-007-%28Martin-Hollis%29/",
+      "title": "GoldenEye 007 — copia di Martin Hollis",
+      "publisher": "Centre for Computing History",
+      "accessed_at": "2026-10-30",
+      "scope": "La scheda dell’esemplare del direttore del gioco riporta il 25 agosto 1997, coerente con il giorno nordamericano fornito.",
+      "limitation": "Scheda museale, non documento di vendita contemporaneo; nessuna nuova data britannica ricavata da essa."
+    },
+    {
+      "source_id": "067-golden-edge",
+      "url": "https://www.raregamer.co.uk/games/the-golden-touch-edge-interviews-the-goldeneye-007-team/",
+      "title": "The Golden Touch — Edge interviews the GoldenEye 007 team",
+      "publisher": "Edge 53, Natale 1997; trascrizione Rare Gamer",
+      "accessed_at": "2026-10-30",
+      "scope": "Intervista primaria a Martin Hollis, Dave Doak e Karl Hilton: gennaio 1995, gruppo in gran parte esordiente, influenza di Doom e Virtua Cop.",
+      "limitation": "Letta la trascrizione, non dichiarata visione della rivista originale. Nessun dettaglio ulteriore sulle macchine di sviluppo è importato."
+    },
+    {
+      "source_id": "067-golden-hollis",
+      "url": "https://www.gamespot.com/articles/the-goldeneye-007-that-never-was/1100-6391465/",
+      "title": "The GoldenEye 007 that never was",
+      "publisher": "Shaun McInnis / GameSpot, 14 agosto 2012",
+      "accessed_at": "2026-10-30",
+      "scope": "Resoconto della conferenza di Hollis: cambiamenti del progetto e aggiunta tardiva del multigiocatore.",
+      "limitation": "Letti i passaggi indicizzati; apertura diretta non riuscita. Non dichiarata visione della conferenza."
+    },
+    {
+      "source_id": "067-golden-2023",
+      "url": "https://www.nintendo.com/au/news-and-articles/countdown-to-007-goldeneye-007-shakes-up-the-action-for-nintendo-switch/",
+      "title": "GoldenEye 007 Shakes Up the Action for Nintendo Switch Online + Expansion Pack",
+      "publisher": "Nintendo, 27 gennaio 2023",
+      "accessed_at": "2026-10-30",
+      "scope": "Comunicato di effettiva disponibilità che identifica il servizio Nintendo Switch Online + Expansion Pack.",
+      "limitation": "Usato il nome del servizio alla release 2023. La denominazione successiva Nintendo Classics non viene retrodatata; la nuova modalità online non è attribuita al gioco originale."
+    },
+    {
+      "source_id": "067-ta-press",
+      "url": "https://web.archive.org/web/20031005015153/http://www.cavedog.com/release.html",
+      "title": "Cavedog Entertainment’s Sept. 27 Debut of Total Annihilation",
+      "publisher": "Cavedog Entertainment, 23 settembre 1997; Internet Archive",
+      "accessed_at": "2026-10-30",
+      "scope": "Letto il comunicato originale che prevede l’arrivo nei negozi nordamericani il 27 settembre.",
+      "limitation": "È una previsione del 23 settembre, non una ricevuta del primo giorno di vendita. Non sostituisce il 25 settembre britannico senza confronto regionale."
+    },
+    {
+      "source_id": "067-ta-dates",
+      "url": "https://en.wikipedia.org/wiki/Total_Annihilation",
+      "title": "Total Annihilation — date e riferimenti",
+      "publisher": "Wikipedia contributors",
+      "accessed_at": "2026-10-30",
+      "scope": "L’articolo distingue 25 settembre 1997 britannico e 27 settembre nordamericano. Per il 25 rinvia a una pubblicità PC World del quotidiano The Independent intitolata The Latest Games Now Available.",
+      "limitation": "La scansione del quotidiano non è stata accessibile. La proposta regionale UK riprende l’ambito della fonte originale e non equivale a nuova ispezione visiva della prova."
+    },
+    {
+      "source_id": "067-ta-mac",
+      "url": "https://www.insidemacgames.com/historical/reviews/view.php%3FID%3D54.html",
+      "title": "Total Annihilation — recensione Mac del 15 dicembre 1999",
+      "publisher": "Michael Eilers / Inside Mac Games",
+      "accessed_at": "2026-10-30",
+      "scope": "La recensione contemporanea della versione MacSoft la presenta come conversione arrivata quasi due anni dopo l’edizione PC.",
+      "limitation": "Letto il testo indicizzato. Corregge la simultaneità Windows/Mac del 1997; nessun giorno Mac aggiunto."
+    },
+    {
+      "source_id": "067-ta-mac-patch",
+      "url": "https://www.insidemacgames.com/historical/news/index.php%3Fdate%3D2001-02-09.html",
+      "title": "Total Annihilation Beta Patch Released",
+      "publisher": "Inside Mac Games, 9 febbraio 2001",
+      "accessed_at": "2026-10-30",
+      "scope": "Identifica esplicitamente la conversione Westlake per MacSoft come lavoro del 1999 e riporta le note della patch.",
+      "limitation": "Le caratteristiche della patch e nuovi requisiti tecnici non vengono importati."
+    },
+    {
+      "source_id": "067-ta-sec",
+      "url": "https://www.sec.gov/Archives/edgar/data/1002607/000095012308010046/y64708p2sctovc.htm",
+      "title": "Atari — documento societario depositato presso SEC",
+      "publisher": "Atari / Infogrames, documento SEC del 2008",
+      "accessed_at": "2026-10-30",
+      "scope": "Il documento ricostruisce l’acquisizione del controllo di GT Interactive da parte di Infogrames nel dicembre 1999.",
+      "limitation": "Non sostiene la chiusura di Humongous nel 1999. Usato soltanto il passaggio storico pertinente."
+    },
+    {
+      "source_id": "067-ta-closure",
+      "url": "https://www.gamespot.com/articles/cavedog-caves-in/1100-2446540/",
+      "title": "Cavedog Caves In",
+      "publisher": "Amer Ajami / GameSpot, 24 febbraio 2000",
+      "accessed_at": "2026-10-30",
+      "scope": "Il resoconto contemporaneo cita il rapporto finanziario GT e l’annuncio della chiusura del gruppo interno Cavedog.",
+      "limitation": "La prosa dice che la chiusura fu annunciata nel 2000; non pretende di fissare il giorno operativo finale. Un successivo elenco societario usa 1999 per il marchio: non confondere marchio, annuncio e cessazione materiale."
+    },
+    {
+      "source_id": "067-ta-label",
+      "url": "https://www.sec.gov/Archives/edgar/data/1002607/000095012308010676/e60672a3exv99wcw6.htm",
+      "title": "Elenco di società e marchi Atari",
+      "publisher": "Documento depositato presso SEC",
+      "accessed_at": "2026-10-30",
+      "scope": "L’elenco definisce Cave Dog come etichetta usata da Humongous e indica Closed 1999.",
+      "limitation": "La voce sintetica sul marchio non dimostra che Humongous sia stata chiusa nel 1999; distinta dall’annuncio operativo Cavedog del febbraio 2000."
+    },
+    {
+      "source_id": "067-ta-wargaming",
+      "url": "https://www.gamespot.com/articles/world-of-tanks-dev-acquires-total-annihilation-master-of-orion-franchises/1100-6412446/",
+      "title": "World of Tanks dev acquires Total Annihilation, Master of Orion franchises",
+      "publisher": "Eddie Makuch / GameSpot, 2 agosto 2013",
+      "accessed_at": "2026-10-30",
+      "scope": "Riporta la conferma Wargaming dell’acquisizione e colloca l’asta nel mese precedente.",
+      "limitation": "La conferma del 2 agosto è distinta dall’asta di luglio; non aggiunti prezzi o progetti successivi."
+    },
+    {
+      "source_id": "067-ta-expansions",
+      "url": "https://gamefaqs.gamespot.com/pc/58995-total-annihilation-the-core-contingency/data",
+      "title": "Total Annihilation: The Core Contingency — release data",
+      "publisher": "GameFAQs",
+      "accessed_at": "2026-10-30",
+      "scope": "Riscontro del 29 aprile 1998 per l’espansione statunitense.",
+      "limitation": "Scheda secondaria; giorno già nell’INPUT, non dichiarato riscontro primario."
+    },
+    {
+      "source_id": "067-ta-battle",
+      "url": "https://www.mobygames.com/game/2748/total-annihilation-battle-tactics/",
+      "title": "Total Annihilation: Battle Tactics",
+      "publisher": "MobyGames",
+      "accessed_at": "2026-10-30",
+      "scope": "Riscontro del 20 luglio 1998 già fornito.",
+      "limitation": "La ricostruzione secondaria di alcune pagine riporta giugno; non individuata una prova di disponibilità precedente. Conservato il giorno concordante fra INPUT e cataloghi di release."
+    },
+    {
+      "source_id": "067-ta3d",
+      "url": "https://www.ta3d.org/home-en.php",
+      "title": "TA3D — sito del progetto",
+      "publisher": "TA3D contributors",
+      "accessed_at": "2026-10-30",
+      "scope": "La pagina ufficiale documenta il progetto distinto e la distribuzione dell’engine.",
+      "limitation": "L’anno di avvio 2006 resta dal materiale originale; la homepage consultata mostra notizie successive. La pagina Spring About ha negato l’accesso e non è dichiarata letta."
+    },
+    {
+      "source_id": "067-fallout-bethesda",
+      "url": "https://fallout.bethesda.net/en-US/news/fallout-25-years-kickoff",
+      "title": "Celebrate 25 years of Fallout all month long",
+      "publisher": "Bethesda, 3 ottobre 2022",
+      "accessed_at": "2026-10-30",
+      "scope": "La dichiarazione storica afferma esplicitamente che il pubblico incontrò Fallout nell’ottobre 1997.",
+      "limitation": "Si usa il mese dichiarato della release, non si deduce il giorno 3 dalla pubblicazione dell’anniversario."
+    },
+    {
+      "source_id": "067-fallout-steam",
+      "url": "https://store.steampowered.com/app/38400/",
+      "title": "Fallout: A Post Nuclear Role Playing Game",
+      "publisher": "Bethesda Softworks / Steam",
+      "accessed_at": "2026-10-30",
+      "scope": "La scheda continua a riportare 30 settembre 1997.",
+      "limitation": "È il metadato che ha prodotto la data originale; differisce dalla ricostruzione storica Bethesda. La ricerca non ne ha dimostrato l’origine né prova una vendita quel giorno."
+    },
+    {
+      "source_id": "067-fallout-release-trace",
+      "url": "https://en.wikipedia.org/wiki/Fallout_(video_game)",
+      "title": "Fallout — riferimenti sulla release",
+      "publisher": "Wikipedia contributors",
+      "accessed_at": "2026-10-30",
+      "scope": "Il giorno 10 ottobre rinvia alla notizia PC Gamer Now Shipping; l’articolo distingue anche i port successivi.",
+      "limitation": "Gli archivi del notiziario e del diario Interplay non sono stati accessibili. Non trasformato un titolo bibliografico su spedizioni in prova autonoma del primo acquisto. Adottato ottobre con precisione mensile."
+    },
+    {
+      "source_id": "067-aoe-release",
+      "url": "https://www.ageofempires.com/news/age-empires-20th-anniversary/",
+      "title": "Age of Empires 20th Anniversary",
+      "publisher": "Jennifer Godwin / Microsoft, 15 ottobre 2017",
+      "accessed_at": "2026-10-30",
+      "scope": "Dichiarazione storica ufficiale esplicita: prima release il 15 ottobre 1997.",
+      "limitation": "Non è un calcolo ricavato dalla sola ricorrenza. L’INPUT e l’infobox riportano 13 ottobre sulla base di Now Shipping: registrata la distinzione dalla data ufficiale adottata."
+    },
+    {
+      "source_id": "067-aoe-us",
+      "url": "https://www.mobygames.com/game/384/age-of-empires/releases/windows/",
+      "title": "Age of Empires — release Windows",
+      "publisher": "MobyGames",
+      "accessed_at": "2026-10-30",
+      "scope": "La scheda regionale associa il 15 ottobre 1997 agli Stati Uniti.",
+      "limitation": "Corroborazione secondaria dell’ambito, non fonte principale del giorno."
+    },
+    {
+      "source_id": "067-riven-cyan",
+      "url": "https://cyan.com/games/riven/",
+      "title": "Riven — original and remake",
+      "publisher": "Cyan",
+      "accessed_at": "2026-10-30",
+      "scope": "La sezione sull’originale identifica esplicitamente il 31 ottobre 1997; quella sul remake distingue l’esplorazione libera in 3D.",
+      "limitation": "La descrizione corrente del remake non è attribuita all’originale."
+    },
+    {
+      "source_id": "067-riven-context",
+      "url": "https://en.wikipedia.org/wiki/Riven",
+      "title": "Riven — release, classifiche e riferimenti",
+      "publisher": "Wikipedia contributors",
+      "accessed_at": "2026-10-30",
+      "scope": "Il dettaglio della classifica riguarda i giochi per computer negli Stati Uniti secondo PC Data, non tutti i giochi del mondo. Conservato il totale di 1,5 milioni entro un anno.",
+      "limitation": "La tabella originale PC Data non è stata ispezionata; la delimitazione è tratta dalla ricostruzione citata nell’INPUT e confrontata con i resoconti del periodo."
+    },
+    {
+      "source_id": "067-riven-contemporary",
+      "url": "https://www.gamespot.com/articles/riven-sells-a-million/1100-2462870/",
+      "title": "Riven Sells a Million",
+      "publisher": "Alan Dunkin / GameSpot",
+      "accessed_at": "2026-10-30",
+      "scope": "Riporta PC Data e il primato annuale fra i titoli su CD-ROM.",
+      "limitation": "La data di migrazione dell’articolo sul sito è incoerente con il racconto contemporaneo: non usata per datare gli eventi o dedurre nuove vendite."
+    },
+    {
+      "source_id": "067-joystick",
+      "url": "https://en.wikipedia.org/wiki/Golden_Joystick_Awards#1996/1997",
+      "title": "Golden Joystick Awards — edizione 1996/1997",
+      "publisher": "Wikipedia contributors",
+      "accessed_at": "2026-10-30",
+      "scope": "Confrontate tutte le quindici categorie e i vincitori. Il mese di novembre 1997 rinvia a Sega Saturn Magazine 28 e CVG 195.",
+      "limitation": "Le due scansioni non sono state ispezionate. Conservati nomi inglesi delle categorie e la distinzione fra stagione 1983 e cronologia successiva."
+    },
+    {
+      "source_id": "067-colony-release",
+      "url": "https://gamefaqs.gamespot.com/ps/196950-colony-wars/data",
+      "title": "Colony Wars — release details",
+      "publisher": "GameFAQs",
+      "accessed_at": "2026-10-30",
+      "scope": "Conferma secondaria del 4 novembre 1997 nordamericano già fornito.",
+      "limitation": "Nessun manuale originale letto in questa verifica; armi, diramazioni e crediti conservati dall’INPUT."
+    },
+    {
+      "source_id": "067-crash-release",
+      "url": "https://en.wikipedia.org/wiki/Crash_Bandicoot_2:_Cortex_Strikes_Back",
+      "title": "Crash Bandicoot 2 — release e accoglienza",
+      "publisher": "Wikipedia contributors",
+      "accessed_at": "2026-10-30",
+      "scope": "Il giorno 6 novembre 1997 è associato al Nord America; conferma dell’ambito della data fornita.",
+      "limitation": "Non trovato un documento primario con il giorno. Non dichiarata nuova verifica autonoma delle 800.000 copie, già nel testo e mantenute con il limite aprile 1998."
+    },
+    {
+      "source_id": "067-einhander-music",
+      "url": "https://www.jp.square-enix.com/music/lineup/item/SQEX-10099.html",
+      "title": "EINHANDER ORIGINAL SOUNDTRACK",
+      "publisher": "Square Enix Music",
+      "accessed_at": "2026-10-30",
+      "scope": "La pagina ufficiale conferma il gioco PlayStation del 1997 e il compositore Kenichiro Fukui.",
+      "limitation": "Il 18 luglio 2007 riguarda questa edizione del disco, non la release del videogioco. Nessun titolo delle tracce viene aggiunto o tradotto."
+    },
+    {
+      "source_id": "067-einhander-date",
+      "url": "https://www.suruga-ya.jp/product/detail/140006635",
+      "title": "Einhänder — prodotto SLPS-01008",
+      "publisher": "Suruga-ya",
+      "accessed_at": "2026-10-30",
+      "scope": "Il catalogo riporta 20 novembre 1997 per il prodotto PlayStation giapponese.",
+      "limitation": "Riscontro commerciale secondario del giorno già dato; non è un annuncio originale Square."
+    },
+    {
+      "source_id": "067-tomb-cd",
+      "url": "https://www.crystaldynamics.com/projects/tomb-raider-ii/",
+      "title": "Tomb Raider II — progetto",
+      "publisher": "Crystal Dynamics",
+      "accessed_at": "2026-10-30",
+      "scope": "La scheda ufficiale indica 21 novembre 1997, come l’INPUT.",
+      "limitation": "Una seconda pagina ufficiale riporta 24 novembre. Mantenuto il 21 sostenuto dalla scheda Crystal Dynamics e dalla ricostruzione regionale; non dichiarata spiegata la discrepanza fra i due siti."
+    },
+    {
+      "source_id": "067-tomb-site",
+      "url": "https://www.tombraider.com/products/games/tomb-raider-ii",
+      "title": "Tomb Raider II — scheda della serie",
+      "publisher": "Crystal Dynamics / Tomb Raider",
+      "accessed_at": "2026-10-30",
+      "scope": "La pagina corrente mostra 24 novembre 1997.",
+      "limitation": "Contraddice l’altra scheda ufficiale; il corpo resta al 1997, il giorno originale non è corretto arbitrariamente."
+    },
+    {
+      "source_id": "067-tomb-gold",
+      "url": "https://www.tombraiders.net/stella/goldenmask.html",
+      "title": "Tomb Raider Golden Mask — overview",
+      "publisher": "Stella’s Tomb Raider Site",
+      "accessed_at": "2026-10-30",
+      "scope": "La guida distingue l’uscita di The Golden Mask nel 1999 dal seguito Tomb Raider III del 1998.",
+      "limitation": "Fonte specialistica secondaria. Non aggiunti il mese, il numero dei livelli o nuovi elementi narrativi."
+    }
+  ],
+  "decisions": [
+    {
+      "target_id": "wikipedia-198433",
+      "problem": "Data senza regione, primati troppo assoluti e nome del servizio 2023 retrodatato.",
+      "conclusion": "Esplicitate le release regionali e proposta JP per il 23 agosto. L’influenza sul genere è raccontata senza attribuire primati assoluti alle singole funzioni. Per il 2023 usato Nintendo Switch Online + Expansion Pack e i nomi ufficiali locali.",
+      "source_ids": [
+        "067-golden-jp",
+        "067-golden-museum",
+        "067-golden-edge",
+        "067-golden-hollis",
+        "067-golden-2023"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-305596",
+      "problem": "L’INPUT assimila il port Mac alla release Windows e confonde acquisizione e chiusure societarie.",
+      "conclusion": "Distinto Windows settembre 1997 da Mac 1999. Infogrames acquisisce il controllo di GT nel 1999; la chiusura Cavedog viene annunciata nel 2000. Eliminata la falsa chiusura di Humongous nel 1999. Specificata la fine del supporto dello studio originale, evitando di dichiarare non supportata ogni riedizione corrente.",
+      "source_ids": [
+        "067-ta-mac",
+        "067-ta-mac-patch",
+        "067-ta-sec",
+        "067-ta-closure",
+        "067-ta-label"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "workbook-09-30-fallout",
+      "problem": "Conflitto fra 30 settembre in Steam, ottobre nella storia ufficiale e 10 ottobre collegato a Now Shipping.",
+      "conclusion": "Adottato ottobre 1997 con precisione mensile secondo la dichiarazione storica Bethesda. Il confronto tra fonti resta nell’audit, mentre il corpo parla della release. Non inventato un giorno né dichiarata chiarita l’origine del metadato Steam.",
+      "source_ids": [
+        "067-fallout-bethesda",
+        "067-fallout-steam",
+        "067-fallout-release-trace"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-21395883",
+      "problem": "Il 13 ottobre originale rimanda a una notizia di spedizione e differisce dalla release esplicitamente dichiarata da Microsoft.",
+      "conclusion": "Proposto il 15 ottobre 1997 per gli Stati Uniti sulla base della dichiarazione storica ufficiale e della corroborazione regionale. Il corpo conserva il solo anno già dato.",
+      "source_ids": [
+        "067-aoe-release",
+        "067-aoe-us"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-334532",
+      "problem": "Il primato commerciale 1997 manca dell’ambito geografico e del tipo di mercato.",
+      "conclusion": "Limitato ai giochi per computer negli Stati Uniti nella rilevazione PC Data. Conservate cifre, attribuzioni delle recensioni e differenza fra originale e remake.",
+      "source_ids": [
+        "067-riven-cyan",
+        "067-riven-context",
+        "067-riven-contemporary"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "golden-joystick-awards-1997",
+      "problem": "La card dei risultati è un elenco da rendere leggibile senza perdere categorie o vincitori.",
+      "conclusion": "Riscritta in tre paragrafi nelle cinque lingue. Tutte le quindici coppie sono conservate; i nomi inglesi delle categorie restano identici e PaRappa usa la grafia del titolo. Nessuna persona citata fra i vincitori diventa una voce biografica.",
+      "source_ids": [
+        "067-joystick"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "einhander-1997",
+      "problem": "Il giorno di una riedizione discografica potrebbe essere confuso con la release del gioco.",
+      "conclusion": "Mantenuto 20 novembre 1997 giapponese già fornito; il disco 2007 serve soltanto come riscontro del credito a Kenichiro Fukui.",
+      "source_ids": [
+        "067-einhander-music",
+        "067-einhander-date"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-30863017",
+      "problem": "Due pagine ufficiali discordano sul giorno; “the following year” può rendere ambigua la cronologia delle espansioni.",
+      "conclusion": "Conservato il 21 novembre originale secondo Crystal Dynamics, registrando il 24 dell’altro sito senza dichiarare risolta l’origine del conflitto. Esplicitati 1998 per Tomb Raider III e 1999 per The Golden Mask.",
+      "source_ids": [
+        "067-tomb-cd",
+        "067-tomb-site",
+        "067-tomb-gold"
+      ],
+      "text_applied": true
+    }
+  ],
+  "metadata_proposals": [
+    {
+      "target_id": "wikipedia-198433",
+      "original_year": 1997,
+      "original_date": {
+        "month": 8,
+        "day": 23,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed_date": {
+        "year": 1997,
+        "month": 8,
+        "day": 23,
+        "precision": "day",
+        "region": "JP"
+      },
+      "event_semantics": "release",
+      "source_ids": [
+        "067-golden-jp"
+      ],
+      "reason": "Specificare la regione della prima data già presente."
+    },
+    {
+      "target_id": "wikipedia-305596",
+      "original_year": 1997,
+      "original_date": {
+        "month": 9,
+        "day": 25,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed_date": {
+        "year": 1997,
+        "month": 9,
+        "day": 25,
+        "precision": "day",
+        "region": "UK"
+      },
+      "event_semantics": "release",
+      "source_ids": [
+        "067-ta-dates"
+      ],
+      "reason": "Specificare il contesto britannico del giorno originale; la prova pubblicitaria primaria citata non è stata ispezionata direttamente."
+    },
+    {
+      "target_id": "workbook-09-30-fallout",
+      "original_year": 1997,
+      "original_date": {
+        "month": 9,
+        "day": 30,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed_date": {
+        "year": 1997,
+        "month": 10,
+        "day": 0,
+        "precision": "month",
+        "region": "North America"
+      },
+      "event_semantics": "release",
+      "source_ids": [
+        "067-fallout-bethesda",
+        "067-fallout-release-trace"
+      ],
+      "reason": "Adottare il mese di disponibilità pubblica esplicitamente indicato dalla storia ufficiale, senza trasformare spedizione o metadato di negozio in un giorno non verificato."
+    },
+    {
+      "target_id": "wikipedia-21395883",
+      "original_year": 1997,
+      "original_date": {
+        "month": 10,
+        "day": 13,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed_date": {
+        "year": 1997,
+        "month": 10,
+        "day": 15,
+        "precision": "day",
+        "region": "US"
+      },
+      "event_semantics": "release",
+      "source_ids": [
+        "067-aoe-release",
+        "067-aoe-us"
+      ],
+      "reason": "Allineare la collocazione alla release storica dichiarata da Microsoft."
+    },
+    {
+      "target_id": "wikipedia-1305157",
+      "original_year": 1997,
+      "original_date": {
+        "month": 11,
+        "day": 6,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed_date": {
+        "year": 1997,
+        "month": 11,
+        "day": 6,
+        "precision": "day",
+        "region": "North America"
+      },
+      "event_semantics": "release",
+      "source_ids": [
+        "067-crash-release"
+      ],
+      "reason": "Esplicitare la regione del giorno già fornito; riscontro secondario, non nuova prova primaria."
+    }
+  ],
+  "expansion_assessments": [
+    {
+      "target_id": "wikipedia-198433",
+      "main_cards": 8,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 0,
+      "rationale": "Gioco importante per la piattaforma, il genere o la serie."
+    },
+    {
+      "target_id": "wikipedia-305596",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Gioco importante per la piattaforma, il genere o la serie."
+    },
+    {
+      "target_id": "workbook-09-30-fallout",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 1,
+      "rationale": "Gioco importante per la piattaforma, il genere o la serie."
+    },
+    {
+      "target_id": "wikipedia-21395883",
+      "main_cards": 2,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 3,
+      "rationale": "Gioco importante per la piattaforma, il genere o la serie."
+    },
+    {
+      "target_id": "wikipedia-334532",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Gioco importante per la piattaforma, il genere o la serie."
+    },
+    {
+      "target_id": "golden-joystick-awards-1997",
+      "main_cards": 2,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "required_main_cards": null,
+      "missing_cards": 0,
+      "rationale": "Voce dedicata a un evento e ai risultati dei premi: la soglia dei giochi non si applica."
+    },
+    {
+      "target_id": "colony-wars-1997",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Gioco importante per la piattaforma, il genere o la serie."
+    },
+    {
+      "target_id": "wikipedia-1305157",
+      "main_cards": 2,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 3,
+      "rationale": "Gioco importante per la piattaforma, il genere o la serie."
+    },
+    {
+      "target_id": "einhander-1997",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Gioco importante per la piattaforma, il genere o la serie."
+    },
+    {
+      "target_id": "wikipedia-30863017",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Gioco importante per la piattaforma, il genere o la serie."
+    }
+  ],
+  "source_association_notes": [
+    {
+      "target_id": "wikipedia-198433",
+      "problem": "Fra le fonti originali compaiono due URL Double Fine dedicati a Psychonauts 2, estranei alla voce GoldenEye 007.",
+      "conclusion": "Gli URL originali restano intatti come richiesto. L’audit raccoglie fonti pertinenti Nintendo, museali e interviste per una successiva revisione delle associazioni in fase di importazione. Nessun fatto è stato tratto dalle due pagine Double Fine."
+    }
+  ],
+  "editorial_review": {
+    "english_first": true,
+    "english_checkpoint": "067-catalog/OUTPUT-067-catalog.json, ramo en; bozza separata nello scratch",
+    "summary_word_counts_en": [
+      36,
+      37,
+      37,
+      39,
+      39,
+      35,
+      38,
+      43,
+      37,
+      37
+    ],
+    "fidelity": "Confrontate tutte le 33 card e i relativi adattamenti; conservati numeri, date narrative, personaggi, luoghi, sistemi, nomi di motori, attribuzioni e versioni. I titoli principali restano invariati. Tutti i quindici premi rimangono abbinati ai rispettivi vincitori. Registrate separatamente le correzioni documentate e le ripetizioni già presenti in GoldenEye. Nessuna card aggiunta, divisa o riordinata.",
+    "naturalness": "Riletti gli adattamenti IT/FR/DE/ES, con particolare attenzione a parentesi di parentela in Riven, terminologia dei mezzi spaziali, fluidità delle frasi, nomi dei servizi Nintendo e raggruppamento discorsivo dei premi. Controllati incipit e titoli specifici; sommari inglesi di una o due frasi fra 35 e 43 parole.",
+    "limits": "Nessuna biografia autonoma. La ricerca è mirata e non certifica ogni dettaglio dell’INPUT; i limiti dei riscontri sono descritti per fonte. Le divergenze di metadati Fallout e Tomb Raider II non vengono dichiarate unanimemente spiegate. Nessuna immagine o scansione originale dichiarata esaminata visivamente."
+  },
+  "validation": {
+    "valid": true,
+    "batch_id": "067-catalog",
+    "completed": true,
+    "entry_count": 10,
+    "card_count_per_language": 33,
+    "language_count": 5,
+    "translated_card_count": 165,
+    "entry_card_counts": {
+      "wikipedia-198433": 8,
+      "wikipedia-305596": 3,
+      "workbook-09-30-fallout": 4,
+      "wikipedia-21395883": 2,
+      "wikipedia-334532": 3,
+      "golden-joystick-awards-1997": 2,
+      "colony-wars-1997": 3,
+      "wikipedia-1305157": 2,
+      "einhander-1997": 3,
+      "wikipedia-30863017": 3
+    },
+    "issue_counts": {
+      "wikipedia-198433": 1,
+      "wikipedia-305596": 1,
+      "workbook-09-30-fallout": 1,
+      "wikipedia-21395883": 1,
+      "wikipedia-334532": 1,
+      "golden-joystick-awards-1997": 0,
+      "colony-wars-1997": 1,
+      "wikipedia-1305157": 1,
+      "einhander-1997": 1,
+      "wikipedia-30863017": 1
+    },
+    "summary_checks": [
+      {
+        "entry_id": "wikipedia-198433",
+        "feature_id": null,
+        "english_summary_words": 36
+      },
+      {
+        "entry_id": "wikipedia-305596",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "workbook-09-30-fallout",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "wikipedia-21395883",
+        "feature_id": null,
+        "english_summary_words": 39
+      },
+      {
+        "entry_id": "wikipedia-334532",
+        "feature_id": null,
+        "english_summary_words": 39
+      },
+      {
+        "entry_id": "golden-joystick-awards-1997",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "colony-wars-1997",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "wikipedia-1305157",
+        "feature_id": null,
+        "english_summary_words": 43
+      },
+      {
+        "entry_id": "einhander-1997",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "wikipedia-30863017",
+        "feature_id": null,
+        "english_summary_words": 37
+      }
+    ],
+    "editorial_review": [],
+    "failures": []
+  },
+  "output_sha256": "91f93071481b8654eff8da4b30b303e65788ac5da0634115680ea7b4c61d8d02",
+  "root_review": {
+    "automated_flag_review": "Controllati i cambi numerici segnalati: GoldenEye mantiene due anni e mezzo, i titoli sono abbreviati senza perdere il soggetto; Tomb Raider II distingue Golden Mask 1999 da progetto annullato, e le date corrette sono documentate nell’audit."
+  }
+}

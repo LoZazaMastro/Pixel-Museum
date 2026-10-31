@@ -1,0 +1,369 @@
+{
+  "batch_id": "042-catalog",
+  "status": "completed",
+  "sources": [
+    {
+      "source_id": "contra-konami",
+      "url": "https://www.konami.com/games/jp/ja/products/dl_wii_contra_spirits_vc/",
+      "title": "Contra Spirits: original game description within the Wii Virtual Console page",
+      "publisher": "Konami",
+      "accessed_at": "2026-10-30",
+      "scope": "Il paragrafo storico riporta il 28 febbraio 1992 per l’originale Super Famicom e distingue visuali laterale e dall’alto.",
+      "limitation": "La data di release 16 gennaio 2007 nella scheda riguarda la riedizione Wii. Non viene usata come data del gioco originale né si estende il 28 febbraio alle versioni PAL e nordamericana."
+    },
+    {
+      "source_id": "soldier-designer",
+      "url": "https://shmuplations.com/soldierblade/",
+      "title": "Soldier Blade — 2012 Developer Interview",
+      "publisher": "Ukiuki Uribo; traduzione Shmuplations dell’e-book curato da Hideki Yamaguchi",
+      "accessed_at": "2026-10-30",
+      "scope": "La testimonianza identifica il designer come Ukiuki Uribo e descrive i tempi stretti del progetto nato per i Caravan.",
+      "limitation": "È una traduzione della testimonianza, non il testo giapponese originale. Usata per correggere Uriko Uribo e riscontrare il contesto già presente; nessun nuovo episodio di sviluppo aggiunto alle card."
+    },
+    {
+      "source_id": "gate-original-credits",
+      "url": "https://www.mobygames.com/game/33910/gate-of-thunder/credits/turbografx-cd/",
+      "title": "Gate of Thunder original credits, TurboGrafx CD",
+      "publisher": "Crediti originali Red Company / Hudson trascritti da MobyGames",
+      "accessed_at": "2026-10-30",
+      "scope": "La tabella indicizzata associa Nick Wood al ruolo Sound Design e altri nomi a direzione, programmazione e produzione musicale.",
+      "limitation": "La pagina aperta restituisce 403: consultata soltanto la tabella indicizzata. Sound Design è qui un’intestazione di ruolo; non usata come prova dell’affiliazione a una società con quel nome."
+    },
+    {
+      "source_id": "ultima-ea-date",
+      "url": "https://www.ea.com/it/games/ultima/ultima-7",
+      "title": "Ultima VII: The Complete Edition — scheda ufficiale",
+      "publisher": "Electronic Arts",
+      "accessed_at": "2026-10-30",
+      "scope": "La scheda attuale riporta data di uscita16aprile 1992. Il dato permette una proposta di normalizzazione del giorno 17 presente nel lotto.",
+      "limitation": "Metadata retrospettivo della Complete Edition, non comunicato Origin del 1992. Non prova una disponibilità uniforme in tutte le regioni e non rende concordi le testimonianze contemporanee."
+    },
+    {
+      "source_id": "ultima-contemporary-interview",
+      "url": "https://groups.google.com/g/comp.sys.mac.games/c/1dcbwsginO8",
+      "title": "Interview with Richard Garriott — 4/23/92",
+      "publisher": "David Taylor, intervista e introduzione contemporanee, Usenet / archivio Google Groups",
+      "accessed_at": "2026-10-30",
+      "scope": "Nell’introduzione all’intervista del 23 aprile 1992, Taylor scrive che il gioco è uscito sabato 18 aprile. Il messaggio conservato è datato 27 aprile.",
+      "limitation": "Il 18 è una dichiarazione dell’intervistatore, non una risposta di Garriott sul giorno di release. Può riflettere una disponibilità osservata; non è dimostrato che 16 e 18 indichino eventi distinti. La differenza è conservata nell’audit."
+    },
+    {
+      "source_id": "treasure-foundation",
+      "url": "https://treasure-inc.co.jp/company.html",
+      "title": "Treasure company profile",
+      "publisher": "Treasure Co., Ltd.",
+      "accessed_at": "2026-10-30",
+      "scope": "Il campo di fondazione indica 19 giugno 1992.",
+      "limitation": "Riscontro della fondazione dello studio; non del compleanno di Maegawa né della data dei singoli giochi menzionati."
+    }
+  ],
+  "decisions": [
+    {
+      "target_id": "wikipedia-30871248",
+      "problem": "Il giorno 28 febbraio 1992 è presente nel contesto senza regione; il corpo originale indica solo 1992.",
+      "conclusion": "Precisata la prima uscita giapponese nel testo e proposta regione Japan / Super Famicom nei metadati, sulla base del paragrafo storico Konami.",
+      "source_ids": [
+        "contra-konami"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "console-gap-soldier-blade",
+      "problem": "Il materiale identifica il designer come Uriko Uribo, mentre la testimonianza personale lo presenta come Ukiuki Uribo.",
+      "conclusion": "Usato Ukiuki Uribo nelle cinque lingue. Conservati i crediti musicali e dell’illustrazione di copertina forniti.",
+      "source_ids": [
+        "soldier-designer"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "console-gap-gate-of-thunder",
+      "problem": "La formulazione Nick Wood of Sound Design può trasformare un’intestazione dei crediti in un’affiliazione aziendale.",
+      "conclusion": "Conservati nome e contributo musicale di Nick Wood, evitando di attribuirgli una società chiamata Sound Design sulla sola base del ruolo nei crediti.",
+      "source_ids": [
+        "gate-original-credits"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-1159587",
+      "problem": "Il contesto assegna 17 aprile 1992; la scheda ufficiale EA riporta 16, mentre una testimonianza contemporanea riferisce 18.",
+      "conclusion": "La prosa mantiene aprile 1992, già presente nel corpo originale. Proposto 16 aprile per il metadato secondo la scheda EA, con natura retrospettiva e divergenza della testimonianza esplicitate. Non dichiarata una prova unanime del primo giorno di vendita.",
+      "source_ids": [
+        "ultima-ea-date",
+        "ultima-contemporary-interview"
+      ],
+      "text_applied": true,
+      "verification_status": "month_supported_day_normalization_based_on_publisher_metadata"
+    },
+    {
+      "target_id": "workbook-06-19-treasure",
+      "problem": "Mantenere distinta la fondazione dello studio dalle nascite delle persone e dalle date delle opere citate.",
+      "conclusion": "Il 19 giugno 1992 è presentato come fondazione di Treasure, confermata dalla scheda ufficiale.",
+      "source_ids": [
+        "treasure-foundation"
+      ],
+      "text_applied": true
+    }
+  ],
+  "metadata_proposals": [
+    {
+      "target_id": "wikipedia-30871248",
+      "field": "timeline_release_region",
+      "original": {
+        "year": 1992,
+        "month": 2,
+        "day": 28,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed": {
+        "year": 1992,
+        "month": 2,
+        "day": 28,
+        "precision": "day",
+        "region": "Japan",
+        "version": "Super Famicom"
+      },
+      "source_ids": [
+        "contra-konami"
+      ],
+      "applied_to_catalog": false
+    },
+    {
+      "target_id": "wikipedia-1159587",
+      "field": "release_day_normalization",
+      "original": {
+        "year": 1992,
+        "month": 4,
+        "day": 17,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed": {
+        "year": 1992,
+        "month": 4,
+        "day": 16,
+        "precision": "day",
+        "region": "not specified by publisher metadata",
+        "version": "MS-DOS"
+      },
+      "source_ids": [
+        "ultima-ea-date"
+      ],
+      "rationale": "Scelto il dato del titolare/editore per normalizzare il 17 privo di riscontro; la scheda è retrospettiva. La testimonianza contemporanea 18 aprile resta documentata e il testo mantiene precisione al mese.",
+      "contrasting_source_ids": [
+        "ultima-contemporary-interview"
+      ],
+      "applied_to_catalog": false
+    }
+  ],
+  "expansion_assessments": [
+    {
+      "target_id": "console-gap-gate-of-thunder",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Gioco importante per la serie, il genere o la piattaforma: richiesta una base di cinque card principali."
+    },
+    {
+      "target_id": "wikipedia-30871248",
+      "main_cards": 2,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 3,
+      "rationale": "Gioco importante per la serie, il genere o la piattaforma: richiesta una base di cinque card principali."
+    },
+    {
+      "target_id": "shining-force",
+      "main_cards": 2,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 3,
+      "rationale": "Gioco importante per la serie, il genere o la piattaforma: richiesta una base di cinque card principali."
+    },
+    {
+      "target_id": "wikipedia-1159587",
+      "main_cards": 2,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 3,
+      "rationale": "Gioco importante per la serie, il genere o la piattaforma: richiesta una base di cinque card principali."
+    },
+    {
+      "target_id": "panic-restaurant-1992",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "required_main_cards": null,
+      "missing_cards": 0,
+      "rationale": "Titolo presente per un’idea figurativa specifica e per il percorso di Kenji Eno; non applicata automaticamente la quota riservata ai giochi più importanti."
+    },
+    {
+      "target_id": "kirbys-dream-land",
+      "main_cards": 2,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 3,
+      "rationale": "Gioco importante per la serie, il genere o la piattaforma: richiesta una base di cinque card principali."
+    },
+    {
+      "target_id": "workbook-06-19-treasure",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "required_main_cards": null,
+      "missing_cards": 0,
+      "rationale": "Studio, non gioco o console: soglia non applicabile."
+    },
+    {
+      "target_id": "console-gap-lunar-the-silver-star",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Gioco importante per la serie, il genere o la piattaforma: richiesta una base di cinque card principali."
+    },
+    {
+      "target_id": "console-gap-soldier-blade",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Gioco importante per la serie, il genere o la piattaforma: richiesta una base di cinque card principali."
+    },
+    {
+      "target_id": "workbook-07-14-mario-paint",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 1,
+      "rationale": "Gioco importante per la serie, il genere o la piattaforma: richiesta una base di cinque card principali."
+    }
+  ],
+  "editorial_review": {
+    "english_first": true,
+    "five_languages_reviewed": [
+      "en",
+      "it",
+      "fr",
+      "de",
+      "es"
+    ],
+    "checks": [
+      "10 voci complete e 28 card per lingua; nessuna feature",
+      "Riletti incipit, titoli e paragrafi nelle cinque lingue",
+      "Sommari inglesi 25–45 parole; nessuna copia del lungo incipit nelle sintesi",
+      "Conservati quantità, prospettive, controlli, attributi, differenze regionali e crediti",
+      "Giudizi critici presentati come ricezione e ricordi attribuiti ai loro autori",
+      "Attribuzioni Wikipedia, licenza CC BY-SA e riferimenti originali conservati negli INPUT senza modificarli",
+      "Nessuna biografia da spostare alla nascita; Treasure resta fondazione",
+      "Otto giochi richiedono 19 card nuove nel passaggio di ampliamento separato"
+    ],
+    "external_verification_limit": "Controllo mirato ai punti registrati, non revisione esterna di ogni fatto. Per Ultima VII è esplicitata la divergenza fra metadato EA e testimonianza contemporanea; non è stata eseguita una prova dei giochi.",
+    "book_style_references_consulted": false
+  },
+  "validation": {
+    "valid": true,
+    "batch_id": "042-catalog",
+    "completed": true,
+    "entry_count": 10,
+    "card_count_per_language": 28,
+    "language_count": 5,
+    "translated_card_count": 140,
+    "entry_card_counts": {
+      "console-gap-gate-of-thunder": 3,
+      "wikipedia-30871248": 2,
+      "shining-force": 2,
+      "wikipedia-1159587": 2,
+      "panic-restaurant-1992": 3,
+      "kirbys-dream-land": 2,
+      "workbook-06-19-treasure": 4,
+      "console-gap-lunar-the-silver-star": 3,
+      "console-gap-soldier-blade": 3,
+      "workbook-07-14-mario-paint": 4
+    },
+    "issue_counts": {
+      "console-gap-gate-of-thunder": 1,
+      "wikipedia-30871248": 1,
+      "shining-force": 1,
+      "wikipedia-1159587": 1,
+      "panic-restaurant-1992": 0,
+      "kirbys-dream-land": 1,
+      "workbook-06-19-treasure": 0,
+      "console-gap-lunar-the-silver-star": 1,
+      "console-gap-soldier-blade": 1,
+      "workbook-07-14-mario-paint": 1
+    },
+    "summary_checks": [
+      {
+        "entry_id": "console-gap-gate-of-thunder",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "wikipedia-30871248",
+        "feature_id": null,
+        "english_summary_words": 41
+      },
+      {
+        "entry_id": "shining-force",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "wikipedia-1159587",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "panic-restaurant-1992",
+        "feature_id": null,
+        "english_summary_words": 35
+      },
+      {
+        "entry_id": "kirbys-dream-land",
+        "feature_id": null,
+        "english_summary_words": 37
+      },
+      {
+        "entry_id": "workbook-06-19-treasure",
+        "feature_id": null,
+        "english_summary_words": 41
+      },
+      {
+        "entry_id": "console-gap-lunar-the-silver-star",
+        "feature_id": null,
+        "english_summary_words": 41
+      },
+      {
+        "entry_id": "console-gap-soldier-blade",
+        "feature_id": null,
+        "english_summary_words": 40
+      },
+      {
+        "entry_id": "workbook-07-14-mario-paint",
+        "feature_id": null,
+        "english_summary_words": 40
+      }
+    ],
+    "editorial_review": [],
+    "failures": []
+  },
+  "output_sha256": "250d821c97bbfc9702383ed142f11e21739779a658b80f796294b4a7679ac98d",
+  "root_review": {
+    "reviewed_at": "2026-10-30T01:33:40.209032+00:00",
+    "scope": "Confronto INPUT/EN/IT delle quattro card di Treasure e delle tre card di Soldier Blade. Controllati nomi, ruoli, struttura delle meccaniche e sequenza dello sviluppo. Nessuna modifica risultata necessaria.",
+    "changes": [],
+    "limitation": "Questo controllo aggiuntivo riguarda soltanto le voci indicate, non dichiara una seconda revisione indipendente di ogni card del lotto."
+  }
+}

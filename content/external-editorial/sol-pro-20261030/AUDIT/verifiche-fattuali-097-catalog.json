@@ -1,0 +1,777 @@
+{
+  "batch_id": "097-catalog",
+  "status": "completed",
+  "entries": 10,
+  "main_cards_per_language": 29,
+  "feature_cards_per_language": 0,
+  "cards_per_language": 29,
+  "languages": [
+    "en",
+    "it",
+    "fr",
+    "de",
+    "es"
+  ],
+  "sources": [
+    {
+      "source_id": "097-sega-date3",
+      "url": "https://www.mobygames.com/game/8719/sega-gt-2002/releases/",
+      "title": "Sega GT 2002 — release dates",
+      "publisher": "MobyGames",
+      "accessed_at": "2026-10-30",
+      "scope": "La scheda riporta il 3 settembre 2002 per gli Stati Uniti.",
+      "limitation": "Catalogo secondario in conflitto con GameFAQs; il giorno non è scelto per maggioranza."
+    },
+    {
+      "source_id": "097-sega-date2",
+      "url": "https://gamefaqs.gamespot.com/xbox/533807-sega-gt-2002/data",
+      "title": "Sega GT 2002 — release information",
+      "publisher": "GameFAQs / GameSpot",
+      "accessed_at": "2026-10-30",
+      "scope": "La scheda Xbox riporta il 2 settembre 2002, con codice prodotto 64010.",
+      "limitation": "Non è una prova contemporanea di disponibilità al dettaglio; rimane distinto dal 3 settembre dell’INPUT."
+    },
+    {
+      "source_id": "097-sega-review",
+      "url": "https://www.gamespot.com/reviews/sega-gt-2002-review/1900-2879131/",
+      "title": "Sega GT 2002 Review",
+      "publisher": "Amer Ajami / GameSpot, settembre 2002",
+      "accessed_at": "2026-10-30",
+      "scope": "Recensione contemporanea: danni da collisione sottratti al premio, usura di gomme, sospensioni, freni e motore nel tempo.",
+      "limitation": "L’usura è distinta dal comportamento durante la singola gara. La data della recensione non è usata per fissare il giorno di uscita."
+    },
+    {
+      "source_id": "097-sega-gr",
+      "url": "https://www.gamerevolution.com/review/34381-sega-gt-2002-review",
+      "title": "Sega GT 2002 Review",
+      "publisher": "Brian Gee / GameRevolution, settembre 2002",
+      "accessed_at": "2026-10-30",
+      "scope": "La prova distingue indicatore dei danni, conseguenze economiche, premio per una gara pulita ed effetti delle parti usurate.",
+      "limitation": "Non aggiunti al testo elenchi di componenti o valori assenti nell’INPUT."
+    },
+    {
+      "source_id": "097-bf-mac-dice",
+      "url": "https://news.cision.com/se/digital-illusions/r/spelserien-battlefield-passerar-4-miljonersstrecket,c109389",
+      "title": "Spelserien Battlefield passerar 4-miljonersstrecket",
+      "publisher": "Digital Illusions, comunicato del 5 luglio 2004 conservato da Cision",
+      "accessed_at": "2026-10-30",
+      "scope": "La fonte aziendale conferma l’uscita Mac statunitense venerdì 2 luglio 2004 e distingue il totale della serie.",
+      "limitation": "Il dato di quattro milioni riguarda il franchise a giugno 2004 e non viene usato per sostituire quello del solo Battlefield 1942."
+    },
+    {
+      "source_id": "097-bf-mac-report",
+      "url": "https://www.macworld.com/article/171341/bf1942.html",
+      "title": "Battlefield 1942 for Mac shipping in June",
+      "publisher": "Peter Cohen / Macworld, 17 giugno 2004",
+      "accessed_at": "2026-10-30",
+      "scope": "Distingue spedizione Aspyr il 28 giugno e disponibilità prevista il 2 luglio; descrive l’inclusione di The Road to Rome e del fronte italiano.",
+      "limitation": "La previsione viene confermata dal comunicato DICE successivo. Il testo editoriale usa soltanto l’anno 2004 per Mac."
+    },
+    {
+      "source_id": "097-bf-mac-announcement",
+      "url": "https://www.insidemacgames.com/historical/news/story.php%3FArticleID%3D9335.html",
+      "title": "Battlefield 1942 announced for Mac",
+      "publisher": "Inside Mac Games, 25 marzo 2004",
+      "accessed_at": "2026-10-30",
+      "scope": "Resoconto con dichiarazioni di DICE e Aspyr sulla conversione Mac e sul ruolo editoriale di Aspyr.",
+      "limitation": "È un annuncio, non una prova del giorno di pubblicazione."
+    },
+    {
+      "source_id": "097-bf-sales-lat",
+      "url": "https://www.latimes.com/archives/la-xpm-2004-jul-11-ca-weingarten11-story.html",
+      "title": "War’s new fronts",
+      "publisher": "Marc Weingarten / Los Angeles Times, 11 luglio 2004",
+      "accessed_at": "2026-10-30",
+      "scope": "Letto l’articolo originale: riferisce oltre tre milioni di copie vendute di Battlefield 1942 dal 2002.",
+      "limitation": "Conservata attribuzione giornalistica; non presentato come bilancio certificato e non confuso con vendite complessive della serie. Usata soltanto la breve informazione necessaria."
+    },
+    {
+      "source_id": "097-bf-ship",
+      "url": "https://www.gamespot.com/articles/battlefield-1942-ship-date-confirmed/1100-2878592/",
+      "title": "Battlefield 1942 ship date confirmed",
+      "publisher": "GameSpot, 28 agosto 2002",
+      "accessed_at": "2026-10-30",
+      "scope": "Il 10 settembre indicato dalla fonte è una data annunciata di spedizione nordamericana.",
+      "limitation": "Non dimostra autonomamente il primo giorno di vendita. La proposta conserva settembre 2002 e riduce la precisione al mese."
+    },
+    {
+      "source_id": "097-steel-controls",
+      "url": "https://www.manualslib.com/manual/379213/Capcom-Steel-Battallion.html?page=9",
+      "title": "Steel Battalion — technical manual, controls",
+      "publisher": "Capcom, manuale originale; trascrizione ManualsLib",
+      "accessed_at": "2026-10-30",
+      "scope": "Letto il testo delle pagine stampate 14–15: leva del cambio, acceleratore a pedale e rischio di ribaltamento nelle curve brusche ad alta velocità.",
+      "limitation": "Consultata la trascrizione delle pagine pertinenti, non dichiarata visione completa del manuale."
+    },
+    {
+      "source_id": "097-steel-emergency",
+      "url": "https://www.manualslib.com/manual/379213/Capcom-Steel-Battallion.html?page=11",
+      "title": "Steel Battalion — technical manual, emergency procedures",
+      "publisher": "Capcom, manuale originale; trascrizione ManualsLib",
+      "accessed_at": "2026-10-30",
+      "scope": "Letto il testo delle pagine stampate 18–19, sezione 4-22: incendio nello scafo e pulsante dell’estintore.",
+      "limitation": "Il riferimento dell’INPUT al surriscaldamento non è stato verificato. Il testo usa l’emergenza documentata, senza inventare un sistema di gestione della temperatura."
+    },
+    {
+      "source_id": "097-steel-review",
+      "url": "https://www.gamespot.com/reviews/steel-battalion-review/1900-2898457/",
+      "title": "Steel Battalion Review",
+      "publisher": "GameSpot, recensione contemporanea",
+      "accessed_at": "2026-10-30",
+      "scope": "La descrizione del controller distingue due joystick e leva della trasmissione; riscontra le conseguenze della mancata espulsione.",
+      "limitation": "La terminologia informale throttle della recensione viene precisata con il manuale. Non importati comandi dal seguito Line of Contact."
+    },
+    {
+      "source_id": "097-steel-credits",
+      "url": "https://www.mobygames.com/game/7805/steel-battalion/credits/xbox/?autoplatform=true",
+      "title": "Steel Battalion — Xbox credits",
+      "publisher": "MobyGames, trascrizione dei crediti",
+      "accessed_at": "2026-10-30",
+      "scope": "Riscontrata l’attribuzione della musica a Naru Shirai.",
+      "limitation": "Letta una trascrizione: nessun filmato dei crediti dichiarato visionato e nessun compositore aggiunto."
+    },
+    {
+      "source_id": "097-quantum-manual",
+      "url": "https://device.report/m/7b9167fb53bc70e3a83f7871404ecb887dca723fe589dc6d3db9b5415eed3da3.pdf",
+      "title": "Quantum Redshift — instruction manual X08-96006",
+      "publisher": "Microsoft, manuale originale conservato da Device.report",
+      "accessed_at": "2026-10-30",
+      "scope": "Lette le sezioni dei punteggi, delle armi, dei tornei, del fantasma e dei crediti. Nemesis Challenge nei tornei successivi a Novice; quattro giocatori; Satoshi Ueda ai modelli dei personaggi, Nick Burcombe al design e Junkie XL alla musica.",
+      "limitation": "Consultato il testo del PDF di 16 pagine; non dichiarata una lettura visiva integrale. Il testo evita di attribuire la sfida Nemesis anche al torneo introduttivo."
+    },
+    {
+      "source_id": "097-quantum-interview",
+      "url": "https://www.gamespot.com/articles/quantum-redshift-qanda/1100-2874651/",
+      "title": "Quantum Redshift Q&A",
+      "publisher": "GameSpot, intervista ad Andy Satterthwaite",
+      "accessed_at": "2026-10-30",
+      "scope": "Intervista precedente alla pubblicazione, con dichiarazioni dirette su ex membri di Psygnosis, Junkie XL e multiplayer locale.",
+      "limitation": "Il timestamp della pagina migrata indica il 2006, incompatibile con il contenuto preuscita: non viene usato per datare l’intervista originaria."
+    },
+    {
+      "source_id": "097-quantum-review",
+      "url": "https://www.gamingtarget.com/article.php?artid=1966",
+      "title": "Quantum Redshift Review",
+      "publisher": "Gaming Target",
+      "accessed_at": "2026-10-30",
+      "scope": "La recensione descrive otto tracciati con varianti percorse al contrario.",
+      "limitation": "Il testo conserva otto ambientazioni, evitando di inventare sedici scenari interamente distinti."
+    },
+    {
+      "source_id": "097-quantum-date16",
+      "url": "https://www.mobygames.com/game/8060/quantum-redshift/releases/xbox/",
+      "title": "Quantum Redshift — Xbox releases",
+      "publisher": "MobyGames",
+      "accessed_at": "2026-10-30",
+      "scope": "Il catalogo indica il 16 settembre 2002 negli Stati Uniti, diversamente dal 17 settembre nell’INPUT.",
+      "limitation": "Il conflitto non è risolto scegliendo il catalogo più frequente; proposta settembre 2002 con precisione mensile."
+    },
+    {
+      "source_id": "097-quantum-date17",
+      "url": "https://en.wikipedia.org/wiki/Quantum_Redshift",
+      "title": "Quantum Redshift",
+      "publisher": "Wikipedia, fonte originaria",
+      "accessed_at": "2026-10-30",
+      "scope": "Usata per individuare il contrasto sul giorno e il resoconto delle dichiarazioni di Satterthwaite sul risultato commerciale e sulla cancellazione del seguito.",
+      "limitation": "Per la cancellazione consultato il resoconto secondario già pertinente all’INPUT; non dichiarata una nuova intervista primaria."
+    },
+    {
+      "source_id": "097-starfox-wise",
+      "url": "https://www.squareenixmusic.com/features/interviews/davidwise.shtml",
+      "title": "Interview with David Wise",
+      "publisher": "Chris Greening / Square Enix Music Online, dicembre 2010",
+      "accessed_at": "2026-10-30",
+      "scope": "Intervista primaria letta sul passaggio Nintendo 64–GameCube e sul successivo inserimento di Star Fox e dei suoi riferimenti musicali.",
+      "limitation": "Conservata l’attribuzione personale a Wise; nessuna motivazione aziendale aggiunta."
+    },
+    {
+      "source_id": "097-starfox-jp",
+      "url": "https://www.nintendo.co.jp/ngc/gsaj/index.html",
+      "title": "Star Fox Adventures — sito giapponese originale",
+      "publisher": "Nintendo",
+      "accessed_at": "2026-10-30",
+      "scope": "Il sito originale riporta il 27 settembre 2002, il genere action-adventure e i riferimenti a bastone, Tricky e Arwing.",
+      "limitation": "Il sito presenta immagini di sviluppo. Il giorno rimane quello già fornito nell’INPUT e non viene esteso ad altre regioni."
+    },
+    {
+      "source_id": "097-starfox-eu",
+      "url": "https://www.nintendo.com/en-gb/Games/Nintendo-GameCube/Star-Fox-Adventures-268863.html",
+      "title": "Star Fox Adventures — Nintendo GameCube",
+      "publisher": "Nintendo Europe",
+      "accessed_at": "2026-10-30",
+      "scope": "La scheda ufficiale europea riporta il 22 novembre 2002.",
+      "limitation": "Non importati dettagli promozionali, trama, comandi o effetti grafici assenti nell’INPUT."
+    },
+    {
+      "source_id": "097-sly-ps3",
+      "url": "https://blog.playstation.com/2010/11/09/triple-threat-sly-collection-the-fight-lights-out-singstar-dance-hit-ps3-today/comment-page-2/",
+      "title": "Triple Threat: Sly Collection, The Fight: Lights Out, SingStar Dance Hit PS3 Today",
+      "publisher": "Jennifer Hallett / PlayStation Blog, 9 novembre 2010",
+      "accessed_at": "2026-10-30",
+      "scope": "Comunicazione ufficiale di disponibilità nei negozi di The Sly Collection per PS3.",
+      "limitation": "Conferma l’anno 2010 in Nord America, senza trasferire il giorno alla versione Vita."
+    },
+    {
+      "source_id": "097-sly-vita",
+      "url": "https://blog.playstation.com/archive/2014/04/16/sly-trilogy-arrives-ps-vita-today/",
+      "title": "The Sly Trilogy arrives on PS Vita today",
+      "publisher": "Glen Egan, Sanzaru / PlayStation Blog Europe, 16 aprile 2014",
+      "accessed_at": "2026-10-30",
+      "scope": "L’autore conferma il lancio europeo Vita nel giorno dell’articolo.",
+      "limitation": "Il 16 aprile 2014 dell’INPUT è conservato con la piattaforma e la regione corrette."
+    },
+    {
+      "source_id": "097-sly-store",
+      "url": "https://store.playstation.com/en-us/concept/10010296/",
+      "title": "Sly Cooper and the Thievius Raccoonus — PS4 and PS5",
+      "publisher": "Sony Interactive Entertainment / PlayStation Store US",
+      "accessed_at": "2026-10-30",
+      "scope": "La scheda del prodotto già disponibile indica 11 giugno 2024 e le piattaforme PS4 e PS5.",
+      "limitation": "Usata la data del prodotto effettivamente pubblicato, oltre al precedente annuncio di campagna. Non importati nuovi contenuti di emulazione."
+    },
+    {
+      "source_id": "097-sly-shipment",
+      "url": "https://blog.playstation.com/?p=370046",
+      "title": "Sly Cooper celebrates 20 years today",
+      "publisher": "Andrew Goldfarb, Sucker Punch / PlayStation Blog, 23 settembre 2022",
+      "accessed_at": "2026-10-30",
+      "scope": "Il testo inglese dice che il gioco originale fu spedito il 23 settembre 2002.",
+      "limitation": "La traduzione italiana usa uscito: non basta per trasformare una spedizione in disponibilità al pubblico."
+    },
+    {
+      "source_id": "097-sly-press",
+      "url": "https://sony.mediaroom.com/2002-09-26-Sly-Cooper-and-the-Thievius-Raccoonus-Broadens-the-Action-Platform-Gaming-Experience-While-Stealing-Gamers-Hearts",
+      "title": "Sly Cooper and the Thievius Raccoonus broadens the action platform gaming experience",
+      "publisher": "Sony Computer Entertainment America, comunicato del 26 settembre 2002",
+      "accessed_at": "2026-10-30",
+      "scope": "Il comunicato annuncia la pubblicazione del gioco e ne descrive l’impostazione.",
+      "limitation": "Il giorno del comunicato non è prova del primo giorno di disponibilità. Non sostituisce automaticamente né il 23 né il 24 settembre."
+    },
+    {
+      "source_id": "097-sly-schedule",
+      "url": "https://www.gamespot.com/articles/sony-gamers-day-sony-delivers-updated-release-calendar/1100-2877332/",
+      "title": "Sony Gamers Day: Sony delivers updated release calendar",
+      "publisher": "GameSpot, 14 agosto 2002",
+      "accessed_at": "2026-10-30",
+      "scope": "Calendario Sony che prevedeva il 24 settembre per Sly Cooper.",
+      "limitation": "È una previsione precedente al lancio, distinta dalla disponibilità effettiva."
+    },
+    {
+      "source_id": "097-sly-catalog",
+      "url": "https://www.mobygames.com/game/7647/sly-cooper-and-the-thievius-raccoonus/",
+      "title": "Sly Cooper and the Thievius Raccoonus — releases",
+      "publisher": "MobyGames",
+      "accessed_at": "2026-10-30",
+      "scope": "La scheda riporta il 24 settembre 2002 per la versione PS2.",
+      "limitation": "Catalogo secondario coerente con il programma precedente, ma senza una prova contemporanea del giorno di disponibilità. Proposta mensile."
+    },
+    {
+      "source_id": "097-nfs-award",
+      "url": "https://www.interactive.org/awards/award_category_details.asp?idAward=2003&idGameAwardType=52",
+      "title": "2003 — Console Racing Game of the Year",
+      "publisher": "Academy of Interactive Arts & Sciences",
+      "accessed_at": "2026-10-30",
+      "scope": "La pagina ufficiale della categoria indica Need for Speed: Hot Pursuit 2 come vincitore nel 2003.",
+      "limitation": "Corretto l’anno della cerimonia, lasciando distinto l’anno 2002 del gioco."
+    },
+    {
+      "source_id": "097-nfs-award-game",
+      "url": "https://www.interactive.org/games/video_game_details.asp?idAward=2003&idGame=454",
+      "title": "Need for Speed: Hot Pursuit 2 — 2003 award details",
+      "publisher": "Academy of Interactive Arts & Sciences",
+      "accessed_at": "2026-10-30",
+      "scope": "La scheda ufficiale del premio accredita EA Black Box.",
+      "limitation": "L’accredito dello sviluppatore non viene trasformato in una dichiarazione che il premio riguardasse esclusivamente PS2."
+    },
+    {
+      "source_id": "097-blinx-manual",
+      "url": "https://db.hfsplay.fr/files/2020/06/02/Blinx_The_Time_Sweeper_2002_Microsoft_US_cL1IULK.pdf",
+      "title": "Blinx: The Time Sweeper — instruction manual X08-84893",
+      "publisher": "Microsoft, manuale originale conservato da HFSPlay",
+      "accessed_at": "2026-10-30",
+      "scope": "Lette le sezioni delle pagine stampate 3, 6–7 e 10–13 e il riepilogo: dieci minuti, ordine inverso dei proiettili, peso, gruppi di cristalli, oro, capacità e strumenti migliori.",
+      "limitation": "Confermati tre cristalli uguali più uno diverso per un uso e quattro uguali per due usi. Non dichiarata lettura visiva integrale del PDF."
+    },
+    {
+      "source_id": "097-ts2-store",
+      "url": "https://store.playstation.com/it-it/product/EP4062-PPSA23801_00-TIMESPLITTERSTWO",
+      "title": "TimeSplitters 2 — PlayStation 4 and PlayStation 5",
+      "publisher": "PlayStation Store",
+      "accessed_at": "2026-10-30",
+      "scope": "La scheda ufficiale registra la riedizione il 20 agosto 2024.",
+      "limitation": "Usato l’anno già presente nell’INPUT. Non importate affermazioni promozionali sulla quantità di avventure, non pertinenti al controllo."
+    },
+    {
+      "source_id": "097-ts2-trophies",
+      "url": "https://www.truetrophies.com/news/timesplitters-ps2-platinum-trophies-revealed",
+      "title": "TimeSplitters PS2 platinum trophies revealed",
+      "publisher": "TrueTrophies, settembre 2024",
+      "accessed_at": "2026-10-30",
+      "scope": "L’osservazione diretta degli elenchi dei trofei documenta il loro arrivo con l’aggiornamento del 16 settembre, successivo alla pubblicazione di agosto.",
+      "limitation": "Il testo dice aggiornamento successivo nello stesso anno; non attribuisce i trofei al giorno del lancio."
+    },
+    {
+      "source_id": "097-ts2-player-loading",
+      "url": "https://www.reddit.com/r/timesplitters/comments/1ffav5u",
+      "title": "Discussione sulle riedizioni della trilogia TimeSplitters",
+      "publisher": "Testimonianze di giocatori su Reddit, 12 settembre 2024",
+      "accessed_at": "2026-10-30",
+      "scope": "Alcuni utenti riferiscono caricamenti più brevi per le riedizioni della trilogia.",
+      "limitation": "Testimonianze non quantificate, riferite collettivamente alla trilogia: il testo attribuisce esplicitamente la segnalazione ai giocatori. Nessun benchmark, misurazione propria o garanzia su tutte le configurazioni."
+    },
+    {
+      "source_id": "097-kof-official",
+      "url": "https://www.snk-corp.co.jp/official/kof-portal/series/2002/",
+      "title": "The King of Fighters 2002 — series history",
+      "publisher": "SNK",
+      "accessed_at": "2026-10-30",
+      "scope": "La cronologia ufficiale distingue Neo Geo MVS arcade, 10 ottobre 2002, e ROM domestica, 19 dicembre 2002; conferma il ritorno ai tre contro tre.",
+      "limitation": "La data originaria viene riferita esplicitamente all’arcade giapponese, senza attribuirla all’edizione domestica."
+    },
+    {
+      "source_id": "097-kof-ps2-manual",
+      "url": "https://manuals.plus/teen-esrb/2003-the-king-of-fighters-pc-video-game-manual",
+      "title": "The King of Fighters 2002 / 2003 — manual",
+      "publisher": "SNK, manuale PS2 trascritto da Manuals.plus",
+      "accessed_at": "2026-10-30",
+      "scope": "Consultate le descrizioni del tempo MAX e del consumo di risorse delle tecniche speciali.",
+      "limitation": "Il titolo automatico della pagina dice PC, ma il documento riprodotto è per PS2. Non presentato come manuale Neo Geo originale, né come verifica integrale dei requisiti nascosti MAX2; nessuna nuova soglia numerica aggiunta."
+    }
+  ],
+  "decisions": [
+    {
+      "target_id": "sega-gt-2002",
+      "problem": "Il giorno nordamericano diverge nei cataloghi e la frase sui danni poteva escludere anche l’usura nel tempo.",
+      "conclusion": "Nel testo settembre 2002; proposta mensile per la collocazione. Distinti danni da urto, che incidono sul premio della gara, e usura dei componenti nel tempo. Nessun giorno scelto per intuizione.",
+      "source_ids": [
+        "097-sega-date3",
+        "097-sega-date2",
+        "097-sega-review",
+        "097-sega-gr"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-307976",
+      "problem": "Windows e Mac erano attribuiti entrambi a EA nel 2002; il fronte italiano sembrava appartenere al gioco base. Il giorno 10 settembre proveniva da un annuncio di spedizione.",
+      "conclusion": "Windows 2002 EA e Mac 2004 Aspyr. Fronte italiano attribuito a The Road to Rome. Oltre tre milioni di copie conservato come dato riferito dal Los Angeles Times nel luglio 2004. Proposta mensile per la prima uscita nordamericana; il 2 luglio 2004 Mac è provato da DICE ma non sostituisce l’evento Windows.",
+      "source_ids": [
+        "097-bf-mac-dice",
+        "097-bf-mac-report",
+        "097-bf-mac-announcement",
+        "097-bf-sales-lat",
+        "097-bf-ship"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "steel-battalion-2002",
+      "problem": "La leva era indicata come acceleratore e la card delle emergenze menzionava un surriscaldamento non riscontrato.",
+      "conclusion": "Leva del cambio distinta dall’acceleratore a pedale. La card descrive l’incendio nello scafo e l’estintore, documentati dal manuale. Il surriscaldamento non viene dichiarato verificato. Conservati espulsione, cancellazione del salvataggio, generazioni del mezzo e crediti.",
+      "source_ids": [
+        "097-steel-controls",
+        "097-steel-emergency",
+        "097-steel-review",
+        "097-steel-credits"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "quantum-redshift-2002",
+      "problem": "Giorno nordamericano 16 o 17 settembre; otto percorsi e Nemesis Challenge in ogni torneo erano formulazioni ambigue.",
+      "conclusion": "Testo e proposta usano settembre 2002. Otto ambientazioni distinguono i luoghi dalle varianti inverse; la sfida Nemesis è esclusa dal torneo introduttivo Novice. Punti anche dagli attacchi riusciti, senza richiedere sempre la distruzione del rivale. Satoshi Ueda precisato ai modelli dei personaggi.",
+      "source_ids": [
+        "097-quantum-manual",
+        "097-quantum-interview",
+        "097-quantum-review",
+        "097-quantum-date16",
+        "097-quantum-date17"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "star-fox-adventures-2002",
+      "problem": "La cronologia produttiva e i tre giorni regionali dovevano restare distinti.",
+      "conclusion": "Conservati Nintendo 64, GameCube e successivo inserimento di Star Fox come ricordo attribuito a David Wise. Confermati dai siti Nintendo 27 settembre Giappone e 22 novembre Europa. Il 23 settembre nordamericano rimane quello fornito nell’INPUT; non dichiarata una nuova verifica primaria indipendente di questo giorno.",
+      "source_ids": [
+        "097-starfox-wise",
+        "097-starfox-jp",
+        "097-starfox-eu"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-1025498",
+      "problem": "The Sly Collection per PS3 era collocata nel 2014 insieme alla versione Vita. Il giorno del primo gioco oscilla fra spedizione e calendari.",
+      "conclusion": "PS3 Nord America 2010; Vita Europa 16 aprile 2014 come The Sly Trilogy; PS4 e PS5 11 giugno 2024 confermati dal negozio ufficiale. Per il primo gioco proposta settembre 2002, senza trasformare il 23 settembre di spedizione o il 26 settembre del comunicato nel primo giorno di vendita.",
+      "source_ids": [
+        "097-sly-ps3",
+        "097-sly-vita",
+        "097-sly-store",
+        "097-sly-shipment",
+        "097-sly-press",
+        "097-sly-schedule",
+        "097-sly-catalog"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-1274214",
+      "problem": "Il premio della sesta edizione degli Interactive Achievement Awards era datato 2002.",
+      "conclusion": "La cerimonia e il riconoscimento sono del 2003, per il gioco del 2002. Nessuna esclusività del premio alla versione PS2 dedotta dall’accredito a EA Black Box. Conservati sviluppatori, differenze fra piattaforme, musicisti e recensioni.",
+      "source_ids": [
+        "097-nfs-award",
+        "097-nfs-award-game"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "blinx-time-sweeper-2002",
+      "problem": "Le regole di raccolta e del timer richiedevano conferma per conservarne i numeri esatti.",
+      "conclusion": "Confermati ordine inverso dei proiettili, dieci minuti, tre cristalli uguali più uno diverso per un uso e quattro uguali per due usi. Conservati peso, acquisti, capacità e ritorno nelle aree precedenti.",
+      "source_ids": [
+        "097-blinx-manual"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "wikipedia-824786",
+      "problem": "La riedizione sembrava includere i trofei fin dal lancio e presentava il miglioramento dei caricamenti come un risultato universalmente misurato.",
+      "conclusion": "I trofei arrivano con un aggiornamento successivo del 2024. I caricamenti più brevi sono una segnalazione attribuita ai giocatori, priva di misure proprie o percentuali. Conservati riavvolgimento e ritorno dell’intera trilogia.",
+      "source_ids": [
+        "097-ts2-store",
+        "097-ts2-trophies",
+        "097-ts2-player-loading"
+      ],
+      "text_applied": true
+    },
+    {
+      "target_id": "console-gap-the-king-of-fighters-2002",
+      "problem": "La data Neo Geo non distingueva arcade e console domestica; i requisiti delle mosse MAX erano eccessivamente generici.",
+      "conclusion": "Il 10 ottobre 2002 identifica Neo Geo MVS nelle sale giapponesi. Le risorse aggiuntive per tecniche MAX e le ulteriori mosse rese disponibili dalla salute bassa sono formulate separatamente, senza soglie o costi numerici non forniti. Unlimited Match resta distinto.",
+      "source_ids": [
+        "097-kof-official",
+        "097-kof-ps2-manual"
+      ],
+      "text_applied": true
+    }
+  ],
+  "metadata_proposals": [
+    {
+      "target_id": "sega-gt-2002",
+      "original_year": 2002,
+      "original_date": {
+        "month": 9,
+        "day": 3,
+        "precision": "day",
+        "region": "North America"
+      },
+      "proposed_date": {
+        "year": 2002,
+        "month": 9,
+        "day": null,
+        "precision": "month",
+        "region": "North America"
+      },
+      "event_semantics": "release",
+      "source_ids": [
+        "097-sega-date3",
+        "097-sega-date2"
+      ],
+      "reason": "Cataloghi divergenti fra 2 e 3 settembre; nessuna prova primaria contemporanea del giorno al dettaglio reperita. INPUT, TEMPLATE e catalogo non modificati. Il giorno esatto non viene dichiarato risolto."
+    },
+    {
+      "target_id": "wikipedia-307976",
+      "original_year": 2002,
+      "original_date": {
+        "month": 9,
+        "day": 10,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed_date": {
+        "year": 2002,
+        "month": 9,
+        "day": null,
+        "precision": "month",
+        "region": "North America"
+      },
+      "event_semantics": "release",
+      "source_ids": [
+        "097-bf-ship"
+      ],
+      "reason": "Il 10 settembre documentato dalla fonte è una spedizione annunciata. Non trasformarla in primo giorno di disponibilità. INPUT, TEMPLATE e catalogo non modificati. Il giorno esatto non viene dichiarato risolto."
+    },
+    {
+      "target_id": "quantum-redshift-2002",
+      "original_year": 2002,
+      "original_date": {
+        "month": 9,
+        "day": 17,
+        "precision": "day",
+        "region": "North America"
+      },
+      "proposed_date": {
+        "year": 2002,
+        "month": 9,
+        "day": null,
+        "precision": "month",
+        "region": "North America"
+      },
+      "event_semantics": "release",
+      "source_ids": [
+        "097-quantum-date16",
+        "097-quantum-date17"
+      ],
+      "reason": "Cataloghi divergenti fra 16 e 17 settembre; nessuna prova primaria contemporanea decisiva reperita. INPUT, TEMPLATE e catalogo non modificati. Il giorno esatto non viene dichiarato risolto."
+    },
+    {
+      "target_id": "wikipedia-1025498",
+      "original_year": 2002,
+      "original_date": {
+        "month": 9,
+        "day": 24,
+        "precision": "day",
+        "region": ""
+      },
+      "proposed_date": {
+        "year": 2002,
+        "month": 9,
+        "day": null,
+        "precision": "month",
+        "region": "North America"
+      },
+      "event_semantics": "release",
+      "source_ids": [
+        "097-sly-shipment",
+        "097-sly-press",
+        "097-sly-schedule",
+        "097-sly-catalog"
+      ],
+      "reason": "Il 23 settembre è spedizione; il 24 compare in calendari e cataloghi; il 26 è il giorno del comunicato. La precisione mensile rappresenta il dato sostenibile senza inventare il primo giorno di vendita. INPUT, TEMPLATE e catalogo non modificati. Il giorno esatto non viene dichiarato risolto."
+    },
+    {
+      "target_id": "console-gap-the-king-of-fighters-2002",
+      "original_year": 2002,
+      "original_date": {
+        "month": 10,
+        "day": 10,
+        "precision": "day",
+        "region": "JP"
+      },
+      "proposed_date": {
+        "year": 2002,
+        "month": 10,
+        "day": 10,
+        "precision": "day",
+        "region": "JP"
+      },
+      "event_semantics": "release",
+      "platform_scope": "Neo Geo MVS arcade",
+      "source_ids": [
+        "097-kof-official"
+      ],
+      "reason": "Conservare il giorno e la regione precisando l’edizione arcade; non confonderli con il 19 dicembre dell’edizione domestica. Nessuna modifica al catalogo."
+    }
+  ],
+  "expansion_assessments": [
+    {
+      "target_id": "sega-gt-2002",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "required_main_cards": null,
+      "missing_cards": 0,
+      "rationale": "Tre card autonome descrivono carriera, costi, collezione e contesto Xbox. Non applicata automaticamente la quota a ogni gioco di guida presente."
+    },
+    {
+      "target_id": "wikipedia-307976",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 1,
+      "rationale": "Primo Battlefield, importante per lo sviluppo del combattimento multiplayer con mezzi diversi e per la comunità di mod. Quattro card, ma gli obiettivi concreti di una partita sono poco sviluppati."
+    },
+    {
+      "target_id": "steel-battalion-2002",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Simulazione importante per il rapporto fra software e controller dedicato. Le tre card coprono comandi, emergenze e produzione; la quota riguarda il gioco, non una console."
+    },
+    {
+      "target_id": "quantum-redshift-2002",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": false,
+      "required_main_cards": null,
+      "missing_cards": 0,
+      "rationale": "Tre card autonome su gare, rivali e produzione. La presenza nel catalogo Xbox e del personale proveniente da Wipeout non basta da sola ad applicare la quota."
+    },
+    {
+      "target_id": "star-fox-adventures-2002",
+      "main_cards": 2,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 3,
+      "rationale": "Passaggio importante di Star Fox verso l’avventura e trasformazione di Dinosaur Planet. Due card raccolgono esplorazione e genesi, lasciando spazio a tre approfondimenti distinti."
+    },
+    {
+      "target_id": "wikipedia-1025498",
+      "main_cards": 2,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 3,
+      "rationale": "Primo Sly Cooper, importante per l’inizio della serie e per l’unione di piattaforme, furtività e animazione. Due card concentrano trama, ricezione e riedizioni."
+    },
+    {
+      "target_id": "wikipedia-1274214",
+      "main_cards": 2,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 3,
+      "rationale": "Episodio importante di Need for Speed e ritorno di Hot Pursuit. Le due card non sviluppano ancora le decisioni concrete delle gare e degli inseguimenti."
+    },
+    {
+      "target_id": "blinx-time-sweeper-2002",
+      "main_cards": 4,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 1,
+      "rationale": "Platform significativo nella prima identità Xbox, con meccaniche temporali collegate alla raccolta. Quattro card già autonome sui principali sistemi."
+    },
+    {
+      "target_id": "wikipedia-824786",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Episodio importante di TimeSplitters, con storia cooperativa, multiplayer ed editor. Tre card, una delle quali dedicata alla riedizione."
+    },
+    {
+      "target_id": "console-gap-the-king-of-fighters-2002",
+      "main_cards": 3,
+      "feature_cards": 0,
+      "threshold_applicable": true,
+      "required_main_cards": 5,
+      "missing_cards": 2,
+      "rationale": "Episodio importante di The King of Fighters, con ritorno ai tre contro tre e sistema MAX. Tre card già concentrate su squadra e risorse."
+    }
+  ],
+  "editorial_review": {
+    "english_first": true,
+    "english_checkpoint": "097-catalog/OUTPUT-097-catalog.json, ramo en; inglese salvato prima degli adattamenti",
+    "summary_word_counts_en": [
+      40,
+      38,
+      40,
+      41,
+      40,
+      39,
+      40,
+      40,
+      40,
+      42
+    ],
+    "fidelity": "Rilette tutte le 29 card nelle cinque lingue e confrontate con l’INPUT. Conservati modalità, costi e progressione di Sega GT; tutte e cinque le classi e tutti i tipi di mezzi di Battlefield; controller, pericoli, espulsione e crediti di Steel Battalion; otto luoghi, rivalità, punteggi, quattro giocatori e crediti di Quantum Redshift; Tricky, bastone, voli, tre date e ricordo di Wise in Star Fox; personaggi, libro, tre seguiti e riedizioni di Sly; entrambe le versioni, musicisti, accoglienza e premio di Need for Speed; tutte le regole numeriche e di raccolta di Blinx; periodi storici, film, cooperativa, editor e riedizioni di TimeSplitters; tre contro tre, Omega Rugal, ordine della squadra e gestione MAX di The King of Fighters. Nessuna card aggiunta, eliminata, divisa o riordinata.",
+    "naturalness": "Titoli specifici in tutte le lingue e sommari inglesi fra 38 e 42 parole. La card lunga di Sly usa due paragrafi nella stessa card. Riletti gli adattamenti per sintassi, lessico e coerenza delle quantità; riviste alcune formulazioni italiane su aspiratore e comandi e una formulazione francese sul cockpit.",
+    "expansions": "Otto opere selezionate richiedono complessivamente diciassette nuove card in proposte separate nelle cinque lingue. Sega GT 2002 e Quantum Redshift non ricevono una quota automatica. Le proposte effettive devono essere sviluppate dopo la riscrittura, senza alterare gli ID originali.",
+    "limits": "Ricerca mirata ai problemi rilevati, non una nuova verifica indipendente di ogni dato dell’INPUT. Nessuna biografia autonoma: i nomi delle persone sono crediti dei giochi. Quattro giorni di uscita non risultano comprovati: proposte con precisione mensile, senza dichiarare verificato un giorno alternativo. Non dichiarata verifica primaria nuova dei giorni originali di Need for Speed, Blinx e TimeSplitters. I caricamenti di TimeSplitters sono testimonianze di giocatori, non misurazioni. Fonti, attribuzioni, diritti, crediti, media e metadati originali restano negli INPUT; nessun filmato dichiarato visionato."
+  },
+  "validation": {
+    "valid": true,
+    "batch_id": "097-catalog",
+    "completed": true,
+    "entry_count": 10,
+    "card_count_per_language": 29,
+    "language_count": 5,
+    "translated_card_count": 145,
+    "entry_card_counts": {
+      "sega-gt-2002": 3,
+      "wikipedia-307976": 4,
+      "steel-battalion-2002": 3,
+      "quantum-redshift-2002": 3,
+      "star-fox-adventures-2002": 2,
+      "wikipedia-1025498": 2,
+      "wikipedia-1274214": 2,
+      "blinx-time-sweeper-2002": 4,
+      "wikipedia-824786": 3,
+      "console-gap-the-king-of-fighters-2002": 3
+    },
+    "issue_counts": {
+      "sega-gt-2002": 0,
+      "wikipedia-307976": 1,
+      "steel-battalion-2002": 1,
+      "quantum-redshift-2002": 0,
+      "star-fox-adventures-2002": 1,
+      "wikipedia-1025498": 1,
+      "wikipedia-1274214": 1,
+      "blinx-time-sweeper-2002": 1,
+      "wikipedia-824786": 1,
+      "console-gap-the-king-of-fighters-2002": 1
+    },
+    "summary_checks": [
+      {
+        "entry_id": "sega-gt-2002",
+        "feature_id": null,
+        "english_summary_words": 40
+      },
+      {
+        "entry_id": "wikipedia-307976",
+        "feature_id": null,
+        "english_summary_words": 38
+      },
+      {
+        "entry_id": "steel-battalion-2002",
+        "feature_id": null,
+        "english_summary_words": 40
+      },
+      {
+        "entry_id": "quantum-redshift-2002",
+        "feature_id": null,
+        "english_summary_words": 41
+      },
+      {
+        "entry_id": "star-fox-adventures-2002",
+        "feature_id": null,
+        "english_summary_words": 40
+      },
+      {
+        "entry_id": "wikipedia-1025498",
+        "feature_id": null,
+        "english_summary_words": 39
+      },
+      {
+        "entry_id": "wikipedia-1274214",
+        "feature_id": null,
+        "english_summary_words": 40
+      },
+      {
+        "entry_id": "blinx-time-sweeper-2002",
+        "feature_id": null,
+        "english_summary_words": 40
+      },
+      {
+        "entry_id": "wikipedia-824786",
+        "feature_id": null,
+        "english_summary_words": 40
+      },
+      {
+        "entry_id": "console-gap-the-king-of-fighters-2002",
+        "feature_id": null,
+        "english_summary_words": 42
+      }
+    ],
+    "editorial_review": [],
+    "failures": []
+  },
+  "output_sha256": "9cf78db4c539df592ca81ae908b0b38e46710fb27df671142a03ca149c3a5df2"
+}

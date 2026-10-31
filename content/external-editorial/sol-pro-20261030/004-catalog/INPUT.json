@@ -1,0 +1,882 @@
+{
+  "schema": "pixel-museum-editorial-input-v1",
+  "batch_id": "004-catalog",
+  "source_file": "content/catalog.json",
+  "source_sha256": "0b077b3f8628f921ab84574d286f9d9943fb8ae6acb8f136ffadde6e01cae241",
+  "entries": [
+    {
+      "entry_id": "brown-box",
+      "kind": "person",
+      "year_context_only": 1968,
+      "date_context_only": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "The Brown Box was developed during 1967–1968; 1968 is used as an exhibition anchor, not an exact release date.",
+      "main": {
+        "feature_id": null,
+        "title": "Brown Box: Baer, Harrison and Rusch",
+        "subtitle": "Making television answer back",
+        "summary": "By 1968, Ralph Baer, Bill Harrison and Bill Rusch had developed the Brown Box into a demonstration system for playing games on a television.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Prototypes for the home television",
+            "text": "Working at Sanders Associates, Ralph Baer and colleagues Bill Harrison and Bill Rusch developed a sequence of television-game prototypes. The wood-grain-covered Brown Box could support several games rather than one fixed activity. A light gun was among the team's experimental accessories."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Following the work behind the object",
+            "text": "Magnavox licensed the team's technology and released the Odyssey in 1972. Baer's surviving notebooks, prototypes and workshop document how the design developed. They preserve working decisions, unsuccessful approaches and the collaboration between the people building and testing the television-game equipment."
+          }
+        ],
+        "sources": [
+          {
+            "title": "The Ralph Baer Prototypes and Electronic Games",
+            "url": "https://www.si.edu/spotlight/the-father-of-the-video-game-the-ralph-baer-prototypes-and-electronic-games",
+            "publisher": "Smithsonian Institution"
+          }
+        ]
+      },
+      "features": [
+        {
+          "feature_id": "feature-brown-box-team",
+          "title": "A game takes shape on the workbench",
+          "subtitle": "",
+          "summary": "Three colleagues tested what a television could become through play.",
+          "cards": [
+            {
+              "card_id": "feature:feature-brown-box-team:0",
+              "original_index": 0,
+              "heading": "A television experiment",
+              "text": "Ralph Baer began exploring television games at Sanders Associates in 1966. Bill Harrison and Bill Rusch joined the development of successive test units over the following years. The team tried more than one form of interaction as it developed equipment that could demonstrate the idea. The wood-grain-covered Brown Box emerged from this sequence of prototypes."
+            },
+            {
+              "card_id": "feature:feature-brown-box-team:1",
+              "original_index": 1,
+              "heading": "Rules beside the switches",
+              "text": "Switches configured the Brown Box for different games, with printed cards showing the required positions. Earlier test units had established how to move a spot on a television. The team developed further activities and experimented with a light gun. The switch cards also helped someone try a game without needing to understand or adjust the circuitry behind it."
+            },
+            {
+              "card_id": "feature:feature-brown-box-team:2",
+              "original_index": 2,
+              "heading": "Between the objects",
+              "text": "Baer's papers at the Smithsonian include working notes, technical drawings, correspondence and audiovisual records. They document stages of development around the surviving prototypes, including alternative arrangements and licensing discussions. Read alongside the equipment, they help follow how a television-game experiment reached a form that could be demonstrated and offered commercially."
+            },
+            {
+              "card_id": "feature:feature-brown-box-team:3",
+              "original_index": 3,
+              "heading": "Identifying the box",
+              "text": "The surviving material includes original prototypes, later replicas and recordings of demonstrations. Replicas can provide a working example of the controls, while the original hardware retains evidence of the team's construction. The documented licensing process connects the experimental equipment to Magnavox's Odyssey, released in 1972."
+            }
+          ],
+          "sources": [
+            {
+              "id": "baer_spotlight",
+              "title": "The Ralph Baer Prototypes and Electronic Games",
+              "url": "https://www.si.edu/spotlight/the-father-of-the-video-game-the-ralph-baer-prototypes-and-electronic-games",
+              "publisher": "Smithsonian National Museum of American History",
+              "source_type": "primary_collection_exhibition",
+              "locator": "1966 idea, 1967–1969 prototype team, 1972 Odyssey; holdings of test units and program cards. Primary indexed text inspected despite direct fetch 404.",
+              "checked": "2026-10-20",
+              "rights": "Bibliographic reference; source text and images retain their own rights. Card prose is original and contains no direct quotations. Image permissions require separate review.",
+              "story_paragraphs": [
+                0
+              ]
+            },
+            {
+              "id": "baer_podcast",
+              "title": "Meet Our Museum: The First Video Game — transcript",
+              "url": "https://amhistory.si.edu/thinkfinity/podcast/transcripts/Podcast_VideoGames_Transcript.pdf",
+              "publisher": "Smithsonian National Museum of American History",
+              "source_type": "primary_curatorial_object_interpretation",
+              "locator": "TV Game Unit 1, team and Brown Box switch/program cards; prose corrects source transcript Rausch to established Rusch spelling",
+              "checked": "2026-10-20",
+              "rights": "Bibliographic reference; source text and images retain their own rights. Card prose is original and contains no direct quotations. Image permissions require separate review.",
+              "story_paragraphs": [
+                1
+              ]
+            },
+            {
+              "id": "baer_papers",
+              "title": "Ralph H. Baer Papers, NMAH.AC.0854",
+              "url": "https://sirismm.si.edu/EADpdfs/NMAH.AC.0854.pdf",
+              "publisher": "Smithsonian Archives Center",
+              "source_type": "primary_archive_finding_aid",
+              "locator": "Collection arrangement and related repositories; explicit separation of original documents, reenactments and replicas",
+              "checked": "2026-10-20",
+              "rights": "Bibliographic reference; source text and images retain their own rights. Card prose is original and contains no direct quotations. Image permissions require separate review.",
+              "story_paragraphs": [
+                2,
+                3
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entry_id": "workbook-01-19-nobuyoshi-sano",
+      "kind": "person",
+      "year_context_only": 1969,
+      "date_context_only": {
+        "month": 1,
+        "day": 19,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "birth",
+      "factual_note": "Imported dated English Playhub editorial. Adapt its calendar wording, review publisher dates and assign rights-cleared media before presenting as a finished museum stop.",
+      "main": {
+        "feature_id": null,
+        "title": "Nobuyoshi Sano",
+        "subtitle": "From Namco Sound to a Console Turned into a Synthesizer",
+        "summary": "Nobuyoshi Sano was born on January 19, 1969.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "From Namco Sound to a Console Turned into a Synthesizer",
+            "text": "Nobuyoshi Sano was born on 19 January 1969. As a composer and sound designer at Namco, he contributed to Ridge Racer and Tekken, drawing on electronic and club music. He later designed and produced KORG DS-10, turning Nintendo DS into a synthesizer and sequencer. His career spans making soundtracks for games and developing software through which other people can create and perform music."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "From Zombie Castle to Rare Hero",
+            "text": "After graduating in 1992, Sano considered jobs at Korg and Namco and chose Namco as a sound designer. He made sound effects for Zombie Castle, then composed techno-influenced music for Numan Athletics and 'Rare Hero' for Ridge Racer. His collaborators included Shinji Hosoe, Ayako Saso, Takayuki Aihara and Hiroto Sasaki. Sano also contributed to Hosoe's Troubadour Record label and joined Oriental Magnetic Yellow, a Yellow Magic Orchestra parody group in which he used the name Ryuichi Sanomoto."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Tekken 3 and the big beat direction",
+            "text": "Following the transfer of Hosoe, Saso, and Aihara to Arika, Sano composed for Tekken 3 in 1996 with Keiichi Okabe. Serving as the sound director, he took a big beat approach to the music with a slower tempo than the music found in previous games. Some staff, including game director Katsuhiro Harada initially did not understand the big beat direction, but Sano convinced him that it would fit well. Both Sano and Okabe later worked on the PS1 version along with other colleagues, as well as both the arcade and PS2 versions of Tekken Tag Tournament. In 2000, Sano composed two tracks for Ridge Racer V under the direction of Kohta Takahashi, along with colleague Yuu Miyake and various others. This was the first Ridge Racer game he composed for since Rave Racer in 1995. His final in-house work at Namco was sound design for the unreleased game Starblade: Operation Blue Planet."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "Turning the Nintendo DS into a synthesizer",
+            "text": "Sano designed and produced KORG DS-10 for Nintendo DS. He formed a trio of the same name consisting of himself, Yasunori Mitsuda and Michio Okamiya in order to promote the program. The three had spoken about their interest in creating a synthesizer for the DS, to Korg's approval. He chose to model the synth on the Korg MS-10 as he bought this synth during his teenage years, and also felt that the DS vaguely resembled the synth."
+          }
+        ],
+        "sources": [
+          {
+            "title": "detune.co.jp",
+            "url": "https://detune.co.jp/",
+            "publisher": "detune.co.jp"
+          },
+          {
+            "title": "music.apple.com",
+            "url": "https://music.apple.com/us/artist/nobuyoshi-sano/431227044",
+            "publisher": "music.apple.com"
+          },
+          {
+            "title": "www.matrixsynth.com",
+            "url": "https://www.matrixsynth.com/2012_05_10_archive.html",
+            "publisher": "www.matrixsynth.com"
+          },
+          {
+            "title": "www.famitsu.com",
+            "url": "https://www.famitsu.com/article/202603/69854?page=1",
+            "publisher": "www.famitsu.com"
+          },
+          {
+            "title": "www.4gamer.net",
+            "url": "https://www.4gamer.net/games/120/G012084/20111123001/",
+            "publisher": "www.4gamer.net"
+          },
+          {
+            "title": "Nobuyoshi Sano",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1364711277",
+            "publisher": "English Wikipedia contributors",
+            "license": "Creative Commons Attribution-ShareAlike 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "attribution": "Complete source paragraph reproduced verbatim; card heading supplied editorially."
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "workbook-08-03-masahiro-sakurai",
+      "kind": "person",
+      "year_context_only": 1970,
+      "date_context_only": {
+        "month": 8,
+        "day": 3,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "birth",
+      "factual_note": "Imported dated English Playhub editorial. Adapt its calendar wording, review publisher dates and assign rights-cleared media before presenting as a finished museum stop.",
+      "main": {
+        "feature_id": null,
+        "title": "Masahiro Sakurai",
+        "subtitle": "Masahiro Sakurai Designs Games to Be Readable Without Making Them Simple",
+        "summary": "Masahiro Sakurai was born on August 3, 1970.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Masahiro Sakurai Designs Games to Be Readable Without Making Them Simple",
+            "text": "Masahiro Sakurai was born on 3 August 1970. His work includes Kirby, Super Smash Bros., Meteos and Kid Icarus: Uprising. These games approach movement, combat and puzzles through rules that can be understood at first contact while leaving room for further practice. Kirby's flight helps a beginner recover from a missed jump, while Smash Bros. builds its fighting around damage, launching opponents and returning to the platform."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Kirby begins with the idea that a beginner should be able to enter immediately",
+            "text": "Kirby's Dream Land begins with a specific question: how can a beginner enter an action game without being stopped immediately by its jumps? Kirby can inflate and fly, regaining height when the ground falls away. Inhaling an enemy and spitting it out provides a readable attack, before the series introduces its famous copy abilities. The character's simplicity therefore also helps explain what he can do. Sakurai retains obstacles and opponents, but supplies tools that make a movement mistake less final. Accessibility concerns the way players enter the game: learning to move becomes part of the pleasure rather than merely a test to pass."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Super Smash Bros. dismantles the fighting game before rebuilding it",
+            "text": "Super Smash Bros. changes what damage means. A character's percentage rises when hit, making them easier to launch; the objective is to knock opponents beyond the fighting area. Position consequently matters as much as attack. Near an edge, a blow can decide the match, while jumps and recovery moves make returning to the platform a struggle of its own. Sakurai shifts attention from memorizing long combinations to reading distance, direction and risk. A simple initial rule creates varied situations because fighters share platforms, changes in height and opportunities to escape."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "Disassembly and reassembly become an explicit method",
+            "text": "In the discussions about Kid Icarus: Uprising, Sakurai describes his method as taking a genre apart and rebuilding it. The game alternates flight along a guided route with ground combat: movement and spatial decisions change, while aiming and attacking remain central. This demands more than adding a new setting to an existing formula. It means deciding which choices should engage the player in each phase and which controls can support them. The example makes his method tangible: identify the interesting core of an action, then build controls, situations and pacing around it, even when that requires changing a genre's conventions."
+          }
+        ],
+        "sources": [
+          {
+            "title": "www.mobygames.com",
+            "url": "https://www.mobygames.com/person/36619/masahiro-sakurai/",
+            "publisher": "www.mobygames.com"
+          },
+          {
+            "title": "www.nintendo.com",
+            "url": "https://www.nintendo.com/en-gb/Iwata-Asks/Iwata-Asks-Kid-Icarus-Uprising/Iwata-Asks-Kid-Icarus-Uprising/1-My-Style/1-My-Style-207580.html",
+            "publisher": "www.nintendo.com"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "workbook-08-20-john-carmack",
+      "kind": "person",
+      "year_context_only": 1970,
+      "date_context_only": {
+        "month": 8,
+        "day": 20,
+        "precision": "day",
+        "region": ""
+      },
+      "event_semantics": "birth",
+      "factual_note": "Imported dated English Playhub editorial. Adapt its calendar wording, review publisher dates and assign rights-cleared media before presenting as a finished museum stop.",
+      "main": {
+        "feature_id": null,
+        "title": "John Carmack",
+        "subtitle": "John Carmack Treats Technical Limits as Problems That Can Be Measured",
+        "summary": "John Carmack was born on August 20, 1970.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "John Carmack Treats Technical Limits as Problems That Can Be Measured",
+            "text": "John Carmack was born on 20 August 1970. His programming work on Commander Keen, DOOM and Quake helped develop smooth PC scrolling, fast rendering, three-dimensional environments and networking. These technical systems shaped the games their teams could build. Later releases of the engines' source code allowed other programmers to inspect, adapt and extend the software."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Smooth PC scrolling through adaptive tile refresh",
+            "text": "Commander Keen: Invasion of the Vorticons used Carmack's adaptive tile refresh technique to produce smooth scrolling on IBM-compatible computers. It allowed the PC to move through a platform game's scenery in a way associated with consoles such as the Nintendo Entertainment System. The game was developed by Ideas from the Deep around that technical work."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "Drawing only the part of Doom the player can see",
+            "text": "For DOOM, John Romero developed uses for Carmack's lighting engine, including strobe effects, and programmed switches, stairs and moving platforms. As the levels became more complex, Carmack used binary space partitioning to select the smaller portion of the environment visible to the player. Dave Taylor contributed programming work and cheat codes initially used during development, which remained available in the released game."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "Building Quake’s 3D engine and network model together",
+            "text": "Before gameplay could be worked on in earnest, Carmack would need to build the game engine, which was a significant undertaking, and took much longer than anticipated. Carmack was not only developing a fully 3D engine, but also a TCP/IP networking model. Carmack later said that he should have done two separate projects which developed those things – the networking model first, used for a game which was otherwise in the Doom II engine, and then the 3D overhaul for a second title. The Quake engine popularized several major advances in the genre: polygonal models instead of prerendered sprites; full 3D level design instead of a 2.5D map; prerendered lightmaps; and allowing end users to partially program the game (in this case with QuakeC), which popularized fan-created modifications (mods) in both gaming in general and Quake itself."
+          }
+        ],
+        "sources": [
+          {
+            "title": "ithistory.org",
+            "url": "https://ithistory.org/honoree/john-d-carmack",
+            "publisher": "ithistory.org"
+          },
+          {
+            "title": "www.imdb.com",
+            "url": "https://www.imdb.com/name/nm0138316/bio/",
+            "publisher": "www.imdb.com"
+          },
+          {
+            "title": "archive.computerhistory.org",
+            "url": "https://archive.computerhistory.org/resources/access/text/2014/05/102746834-05-01-acc.pdf",
+            "publisher": "archive.computerhistory.org"
+          },
+          {
+            "title": "Commander Keen",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1379183825",
+            "publisher": "English Wikipedia contributors",
+            "license": "Creative Commons Attribution-ShareAlike 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "attribution": "Consecutive complete source sentences reproduced verbatim; remaining text omitted and card heading supplied editorially."
+          },
+          {
+            "title": "Doom (1993 video game)",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1379548107",
+            "publisher": "English Wikipedia contributors",
+            "license": "Creative Commons Attribution-ShareAlike 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "attribution": "Complete source paragraphs reproduced verbatim; card heading supplied editorially."
+          },
+          {
+            "title": "Quake (video game)",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1380642577",
+            "publisher": "English Wikipedia contributors",
+            "license": "Creative Commons Attribution-ShareAlike 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "attribution": "Complete source paragraphs reproduced verbatim; card heading supplied editorially."
+          }
+        ]
+      },
+      "features": [
+        {
+          "feature_id": "feature-john-carmack-engineering",
+          "title": "What an engine leaves behind",
+          "subtitle": "",
+          "summary": "Opening code meant confronting its dependencies.",
+          "cards": [
+            {
+              "card_id": "feature:feature-john-carmack-engineering:0",
+              "original_index": 0,
+              "heading": "Somebody has to make it build",
+              "text": "Carmack thanked Bernd Kreimeier when DOOM's source code was released. Kreimeier had cleaned up the old project and made it workable again. The published version built on Linux; a third-party sound library prevented including the DOS version. Preparing the source for release therefore involved both technical work on the files and the limits imposed by a dependency."
+            },
+            {
+              "card_id": "feature:feature-john-carmack-engineering:1",
+              "original_index": 1,
+              "heading": "The programmer reviews his own choices",
+              "text": "Carmack's accompanying note reviewed decisions in his own renderer. He questioned parts of the implementation and described an opportunity he had missed to reuse its spatial tree for environmental checks. These retrospective suggestions gave other programmers specific areas to examine. Readers could compare the released solution with the alternatives its author later considered."
+            },
+            {
+              "card_id": "feature:feature-john-carmack-engineering:2",
+              "original_index": 2,
+              "heading": "Code and content leave different trails",
+              "text": "The Quake source release separated the engine's code from the original game data. Programmers could develop the code under its stated licence, while the data retained separate terms. Carmack also encouraged public development repositories alongside release archives, concerned that changes could disappear when modification authors withheld their source. Sharing the working files made those contributions easier to retain and continue."
+            },
+            {
+              "card_id": "feature:feature-john-carmack-engineering:3",
+              "original_index": 3,
+              "heading": "A release still depends on tools",
+              "text": "Building the released Quake code still required particular compilers and an assembler. Omitting the assembly routines slowed the software renderer, with a different effect on the OpenGL versions. The instructions and acknowledgements, including thanks to Dave Kirsh and Robert Duffy, document work needed to prepare the release and the tools on which it depended."
+            }
+          ],
+          "sources": [
+            {
+              "id": "carmackdoom97",
+              "title": "DOOM source-release README",
+              "url": "https://github.com/id-Software/DOOM/blob/master/README.TXT",
+              "publisher": "John Carmack / id Software",
+              "source_type": "Primary signed technical release note, 23 December 1997; official repository copy with later GPL footer",
+              "locator": "Bernd Kreimeier cleanup, Linux/sound-library limitation and retrospective BSP criticism",
+              "checked": "2026-10-21",
+              "rights": "Bibliographic reference only; underlying articles, art, images, game footage and recordings retain their respective rights.",
+              "story_paragraphs": [
+                0,
+                1
+              ],
+              "paragraph_locators": {
+                "0": "DOOM README opening paragraphs: Kreimeier cleanup, Linux-only build and third-party DOS sound-library obstacle",
+                "1": "DOOM README rendering/environment-testing discussion: BSP reuse opportunity described retrospectively rather than claimed implemented"
+              }
+            },
+            {
+              "id": "carmackquake",
+              "title": "Quake source-release readme",
+              "url": "https://github.com/id-Software/Quake/blob/master/readme.txt",
+              "publisher": "John Carmack / id Software",
+              "source_type": "Primary signed technical release note; official repository copy",
+              "locator": "Closed-source loss, public CVS suggestion, separate data rights, build tools and Kirsh/Duffy credit",
+              "checked": "2026-10-21",
+              "rights": "Bibliographic reference only; underlying articles, art, images, game footage and recordings retain their respective rights.",
+              "story_paragraphs": [
+                2,
+                3
+              ],
+              "paragraph_locators": {
+                "2": "Quake readme licensing/community section: lost closed-source modifications, public CVS and separate data rights",
+                "3": "Quake readme opening build instructions and closing acknowledgments: Visual C++, assembler, C/software-renderer tradeoff, Dave Kirsh and Robert Duffy"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entry_id": "oregon-trail",
+      "kind": "game",
+      "year_context_only": 1971,
+      "date_context_only": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "The Oregon Trail",
+        "subtitle": "The classroom as a game space",
+        "summary": "A teaching experiment made decisions, resources and consequences part of a history lesson.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "A game for the classroom",
+            "text": "The Oregon Trail began as a text-based strategy game created by Don Rawitsch, Bill Heinemann and Paul Dillenberger for a Minnesota classroom in 1971. It ran on the school district's mainframe computer. Players managed a wagon train's journey, deciding how to use supplies while responding to travel, illness and other events. Later versions distributed by the Minnesota Educational Computing Consortium reached generations of pupils through shared computers."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Supplies and a settler's viewpoint",
+            "text": "Food, money, travel and illness are linked through the wagon train's decisions. Spending or consuming supplies changes what remains for later stages, while delays expose the party to further risks. The journey follows a settler's viewpoint, which shapes the experiences and encounters represented in its version of the historical trail."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "A classroom experiment",
+            "text": "The first version of the game was developed over the course of two weeks for use by Rawitsch in a history unit at Jordan Junior High School in Minneapolis. Despite its popularity with the students, it was deleted from the school district's mainframe computer at the end of the school semester. Rawitsch recreated the game in 1974 for the MECC, which distributed educational software for free in Minnesota and for sale elsewhere, and recalibrated the probabilities of events based on historical journals and diaries for the game's release the following year. After the rise of microcomputers in the 1970s, the MECC released several versions of the game over the next decade for the Apple II, Atari 8-bit computers, and Commodore 64 computers, before redesigning it as a graphical commercial game for the Apple II under the same name in 1985."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "An evolving educational series",
+            "text": "The game is the first entry in The Oregon Trail series; games in the series have since been released in many editions by various developers and publishers, many titled The Oregon Trail. The multiple games in the series are often considered to be iterations on the same title, and have collectively sold over 65 million copies and have been inducted into the World Video Game Hall of Fame. The series has also inspired a number of spinoffs such as The Yukon Trail and The Amazon Trail."
+          },
+          {
+            "card_id": "main:4",
+            "original_index": 4,
+            "heading": "Survival through decisions",
+            "text": "The Oregon Trail is a text-based strategy video game in which the player, as the leader of a wagon train, controls a group journeying down the Oregon Trail from Independence, Missouri, to Oregon City, Oregon, in 1847. The player purchases supplies, then plays through about 12 rounds of decision-making, each representing two weeks on the trail. Each round begins with the player being told their current distance along the trail and the date, along with their current supplies. Supplies consist of food, bullets, clothing, miscellaneous supplies, and cash, each given as a number. Players are given the option to hunt for food, and in some rounds to stop at a fort to purchase supplies, and then choose how much food to consume that round. The game closes the round by randomly selecting one or two events and weather conditions. The events include storms damaging supplies, wagons breaking down, and attacks by wild animals or \"hostile riders\"; weather conditions can slow travel, which can increase the rounds needed to reach Oregon."
+          }
+        ],
+        "sources": [
+          {
+            "title": "The Oregon Trail",
+            "url": "https://www.museumofplay.org/games/the-oregon-trail/",
+            "publisher": "The Strong National Museum of Play"
+          },
+          {
+            "title": "The Oregon Trail (1971 video game) - English Wikipedia revision 1375099977",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1375099977",
+            "publisher": "English Wikipedia contributors",
+            "attribution": "Additional narrative paragraphs reproduced verbatim under CC BY-SA 4.0. Prose reproduced verbatim; card headings supplied editorially. Existing exhibition text unchanged.",
+            "license": "CC BY-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+          },
+          {
+            "title": "Article contributors and history",
+            "url": "https://en.wikipedia.org/wiki/The_Oregon_Trail_(1971_video_game)?action=history",
+            "publisher": "English Wikipedia contributors"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-292879",
+      "kind": "game",
+      "year_context_only": 1971,
+      "date_context_only": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Reference article introduction reproduced under its stated licence. Year comes from the article's release-year category; regional/port dates may differ.",
+      "main": {
+        "feature_id": null,
+        "title": "Computer Space",
+        "subtitle": "",
+        "summary": "Computer Space is a 1971 space combat arcade video game.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Spacewar becomes a cabinet",
+            "text": "Computer Space is a 1971 space combat arcade video game. Created by Nolan Bushnell and Ted Dabney in partnership as Syzygy Engineering, it was the first arcade video game as well as the first commercially available video game. Computer Space is a derivative of the 1962 computer game Spacewar!, which is possibly the first video game to spread to multiple computer installations. It features a rocket controlled by the player engaged in a missile battle with a pair of hardware-controlled flying saucers set against a starfield background. The goal is to score more hits than the enemy spaceships within a set time period, which awards a free round of gameplay. The game is enclosed in a custom fiberglass cabinet, which Bushnell designed to look futuristic."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Replacing the minicomputer",
+            "text": "Bushnell and Dabney designed the game in 1970–71 to be a coin-operated version of Spacewar!. After the pair were unable to find a way to economically run the game on a minicomputer such as the Data General Nova, they hit upon the idea of instead replacing the central computer with custom-designed hardware created to run just that game. While they were working on an early proof of concept, Bushnell found a manufacturer for the game in Nutting Associates. Working in partnership with Nutting, the pair completed the game and ran their first location test in August 1971, a few months prior to the display of a similar prototype called Galaxy Game, also based on Spacewar!. It was first shown to industry press and distributors at the annual Music Operators of America (MOA) Expo in October. With encouraging initial interest, though mixed responses from distributors, Nutting ordered an initial production run of 1,500 units, anticipating a hit game."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "A market begins to take shape",
+            "text": "While the game was successful and validated Syzygy's belief in the future of arcade video games, selling over 1,000 cabinets by mid-1972 and ultimately 1,300–1,500 units, it was not the runaway success that Nutting had hoped for. The game spawned one clone game, Star Trek (1972), and Nutting produced a two-player version of Computer Space in 1973 without involvement from Bushnell and Dabney. The pair left Nutting in June 1972 and incorporated Syzygy as Atari, launching the successful Pong (1972) as their next arcade game. Computer Space's release marked the ending of the early history of video games and the start of the commercial video game industry."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Computer Space — article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1376977170",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "1971 in video games — annual context",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1364547763",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/Computer_Space?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          },
+          {
+            "title": "From Computer Space to Pong: virtual guided tour",
+            "url": "https://old.computerspielemuseum.de/1291_From_Computer_Space_to_Pong.htm",
+            "publisher": "Computerspielemuseum, Berlin",
+            "attribution": "Copyright retained by the museum; bibliographic reference only."
+          },
+          {
+            "title": "Computer Games: Evolution of a Medium — permanent exhibition",
+            "url": "https://www.computerspielemuseum.de/en/Museum/45-Permanent-Exhibition.htm",
+            "publisher": "Computerspielemuseum, Berlin",
+            "attribution": "Copyright retained by the museum; link and original bibliographic summary only."
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-6526451",
+      "kind": "game",
+      "year_context_only": 1971,
+      "date_context_only": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Reference article introduction reproduced under its stated licence. Year comes from the article's release-year category; regional/port dates may differ.",
+      "main": {
+        "feature_id": null,
+        "title": "Galaxy Game",
+        "subtitle": "",
+        "summary": "Galaxy Game is a space combat arcade game developed in 1971 during the early era of video games.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Two ships and a shared star",
+            "text": "Galaxy Game is a two-player space-combat arcade game created by Bill Pitts and Hugh Tuck in 1971. Built around a PDP-11 minicomputer, it expanded on Spacewar! with two human-controlled ships, the needle and the wedge. Each player tries to shoot the other while manoeuvring through the gravity of a central star. The project brought this computer-game contest to a coin-operated installation."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "A computer behind the coin slot",
+            "text": "Created by Bill Pitts and Hugh Tuck, the initial prototype cost US$20,000 (equivalent to about $159,000 in 2025) to build. It consisted of a Digital Equipment Corporation PDP-11 minicomputer attached by a cable to a wooden console with a monitor, controls, and seats. It charged players 10 cents per game or 25 cents for three, and drew crowds \"ten-deep\". This was one of the first coin-operated video games; the prototype was installed in November 1971 at the Tresidder student union building at Stanford University, only a few months after a similar display of a prototype of Computer Space, making it the second known video game to charge money to play."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "The cost of adding more players",
+            "text": "The pair built a second prototype, replacing the first in Tresidder in June 1972. It featured the capability to play multiple games simultaneously on four monitors, though due to space restrictions only two consoles with monitors were actually installed. These consoles had a blue fiberglass casing, and the PDP-11 was housed inside one of the consoles. By the time of its installation, the pair had spent US$65,000 (equivalent to about $500,000 in 2025) on the project, but were unable to make the game commercially viable."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "Restoring the student-union machine",
+            "text": "The second prototype remained in the student union building until 1979, when the display processor became faulty. It was restored and placed in the Stanford computer science department in 1997, then moved to the Computer History Museum in 2000, where it remains as of 2017."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Galaxy Game — article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1357567264",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "1971 in video games — annual context",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1364547763",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/Galaxy_Game?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          },
+          {
+            "title": "Galaxy Game in Tresidder Memorial Union at Stanford University (1972)",
+            "url": "https://artsandculture.google.com/asset/galaxy-game-in-tresidder-memorial-union-at-stanford-university-unknown/_gFZLX28S6ck5Q",
+            "publisher": "The Strong National Museum of Play / Google Arts & Culture"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "wikipedia-878616",
+      "kind": "game",
+      "year_context_only": 1971,
+      "date_context_only": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Reference article introduction reproduced under its stated licence. Year comes from the article's release-year category; regional/port dates may differ.",
+      "main": {
+        "feature_id": null,
+        "title": "Star Trek",
+        "subtitle": "",
+        "summary": "Star Trek is a text-based strategy video game based on the Star Trek television series (1966–69) and originally released in 1971.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Commanding the Enterprise in text",
+            "text": "Star Trek is a text-based strategy game written by Mike Mayfield for the SDS Sigma 7 mainframe in 1971, based on the television series. The player commands the USS Enterprise through 64 quadrants while hunting an invading Klingon fleet. Turn-based battles use phasers and photon torpedoes, and starbases provide places to refuel. The goal is to destroy the enemy ships before a randomly determined deadline."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "BASIC carries the game between machines",
+            "text": "Mike Mayfield wrote the game in the BASIC programming language for the SDS Sigma 7 mainframe computer with the goal of creating a game like Spacewar! (1962) that could be played with a teleprinter instead of a graphical display. He then rewrote it for the HP 2000C minicomputer in 1972, and it was included in Hewlett-Packard's public domain software catalog the following year. It was picked up from there by David H. Ahl, who ported it with Mary Cole to BASIC-PLUS and published the source code in the Digital Equipment Corporation Edu newsletter. It was republished with other computer games in his best-selling 101 BASIC Computer Games book. Bob Leedom then expanded the game in 1974 into Super Star Trek."
+          },
+          {
+            "card_id": "main:2",
+            "original_index": 2,
+            "heading": "A second route through time-sharing",
+            "text": "Independently, it was copied from a system at HP in Avondale, PA by high school students in Delaware.  To save long-distance dial-up costs, Aron Insinga rewrote it in July, 1973 in BASIC-PLUS for RSTS-11.  (They had no idea who originally wrote it or where it came from.)  It became the DECUS library submission RSTS-11-20 in October, 1974."
+          },
+          {
+            "card_id": "main:3",
+            "original_index": 3,
+            "heading": "From printed listings to home computers",
+            "text": "Ahl left DEC and started Creative Computing magazine in 1974. He began porting the games from 101 to Microsoft BASIC, with the exception of Star Trek, where he ported Leedom's version rather than Mayfield's original. The result was released in 1978 under the new name BASIC Computer Games, just as the first microcomputers able to run the game were coming to market. BASIC Computer Games went on to become the first million-selling computer book, and versions of the game were available for almost all personal computers of the era. Additionally, dozens of variants and expansions were made for a variety of other systems, based either on Leedom's or the original Mayfield versions."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Star Trek (1971 video game) — article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1381079010",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "1971 in video games — annual context",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1364547763",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/Star_Trek_(1971_video_game)?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          }
+        ]
+      },
+      "features": []
+    },
+    {
+      "entry_id": "odyssey",
+      "kind": "console",
+      "year_context_only": 1972,
+      "date_context_only": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "",
+      "main": {
+        "feature_id": null,
+        "title": "Magnavox Odyssey",
+        "subtitle": "The living room becomes interactive",
+        "summary": "A home television, translucent overlays and physical pieces shared the work of making a game.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "Electronics meet physical play",
+            "text": "Magnavox brought the Odyssey to the US market in 1972, building on the Sanders team's prototypes. Its austere electronic shapes were only part of the experience. Plastic screen overlays, cards and other physical accessories supplied colour, settings and rules."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Before the familiar game computer",
+            "text": "Odyssey's moving shapes worked alongside the physical pieces in its box. Overlays supplied scenery on the television, while cards and other accessories helped establish the rules. Playing therefore involved preparing those materials as well as operating the console. The complete system combined electronic interaction with familiar activities from toys and board games."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Games on Your TV?",
+            "url": "https://www.computerhistory.org/revolution/computer-games/16/190",
+            "publisher": "Computer History Museum"
+          },
+          {
+            "title": "Hardwareklassik: From Odyssey to Xbox",
+            "url": "https://old.computerspielemuseum.de/1223_Spielmaschinensammlung.htm",
+            "publisher": "Computerspielemuseum, Berlin",
+            "attribution": "Copyright retained by the museum; link and original bibliographic summary only. Individual old database detail links currently return a database connection error, so they are not advertised as working object pages."
+          }
+        ]
+      },
+      "features": [
+        {
+          "feature_id": "feature-odyssey-overlays",
+          "title": "Odyssey beyond the circuit",
+          "subtitle": "",
+          "summary": "Plastic and paper complete the picture.",
+          "cards": [
+            {
+              "card_id": "feature:feature-odyssey-overlays:0",
+              "original_index": 0,
+              "heading": "Dressing the television",
+              "text": "Before an Odyssey game began, somebody had to dress the television. Magnavox's 1972 instructions supplied two sizes of transparent overlay for different screens. Static electricity normally held the sheet in place; holes allowed tape to help when it failed. Owners could even trim the edges to fit their set. This scenery belonged to the room as much as to the electronics. Preparing a game meant matching a flexible printed object to a particular household television, then keeping that fragile sheet free of creases."
+            },
+            {
+              "card_id": "feature:feature-odyssey-overlays:1",
+              "original_index": 1,
+              "heading": "Simon sits outside the screen",
+              "text": "Simon Says gave a third player a job outside the screen. Two people moved their lights over a printed boy or girl while Simon turned over cards and called out a body part. Whoever reached it first won the card; Simon decided ties. Moving without the proper spoken command cost a card. The printed figures, deck and human referee all carried rules that the moving lights alone could never explain. A family member supplied the judgment that completed the electronic contest."
+            },
+            {
+              "card_id": "feature:feature-odyssey-overlays:2",
+              "original_index": 2,
+              "heading": "A vocabulary of moving marks",
+              "text": "Magnavox's service department drew a different portrait of the same machine. Its May 1975 manual broke the display into generators for the two players, ball and wall. These shapes travelled through circuitry that produced the television signal. The familiar court therefore began as a small vocabulary of electronic marks, ready to acquire a setting from the objects around it. The service drawing lets us follow the division of work: circuits supplied motion and collision signals, while the household supplied much of the scene."
+            },
+            {
+              "card_id": "feature:feature-odyssey-overlays:3",
+              "original_index": 3,
+              "heading": "Paper has a part number",
+              "text": "Even the replacement list reached beyond electronic parts. Beside controller knobs and boards, the service manual catalogued Simon Says cards, overlays in two sizes, football's board and score card, and the States game's map and answer folder. Magnavox treated these printed pieces as components of the product. Looking after an Odyssey meant keeping track of a boxful of different materials. Losing a deck or folding a sheet could remove part of a game while the console continued to produce its bright moving marks."
+            }
+          ],
+          "sources": [
+            {
+              "id": "odyssey72",
+              "title": "Odyssey: Installation and Game Rules",
+              "url": "https://archive.org/download/Odyssey_Installation_and_Game_Rules_1972_Magnavox_US/Odyssey_Installation_and_Game_Rules_1972_Magnavox_US.pdf",
+              "publisher": "The Magnavox Company; original 1972 manual, archival scan at Internet Archive",
+              "source_type": "Contemporary primary manufacturer instruction manual",
+              "checked": "2026-10-21",
+              "rights": "Bibliographic citation only. Source text, documents, photographs, game assets and recordings retain their own rights; new original prose grants no reproduction permission.",
+              "publication_date": "1972",
+              "story_paragraphs": [
+                0,
+                1
+              ],
+              "paragraph_locators": {
+                "0": "1972 instruction manual printed p9/PDF p9: The Overlays, two sizes, static attachment, tape holes, trimming and care",
+                "1": "1972 instruction manual printed p 34/PDF p 34: Simon Says three-player rules, cards, spoken condition, tie judgment and winner"
+              }
+            },
+            {
+              "id": "odyssey75service",
+              "title": "Odyssey 1TL200 BLAK & BK12 Service Manual 6500, second issue",
+              "url": "https://schematicsforfree.com/files/Video/Video%20Games/Magnavox%20Odyssey%201TL200%20BLAK%20%26%20BK12%20Game%20Simulator%20Service%20Manual.pdf",
+              "publisher": "The Magnavox Company, Service Department; scan by Sly DC 2018, hosted Schematics for Free",
+              "source_type": "Separate contemporary primary manufacturer service publication",
+              "checked": "2026-10-21",
+              "rights": "Bibliographic citation only. Source text, documents, photographs, game assets and recordings retain their own rights; new original prose grants no reproduction permission.",
+              "publication_date": "1975-05",
+              "story_paragraphs": [
+                2,
+                3
+              ],
+              "paragraph_locators": {
+                "2": "Service manual 6500, second issue May 1975, PDF p1 Figure1 and General Description: player/ball/wall generators and TV signal",
+                "3": "Service manual 6500 PDF p4 Game Box replacement-parts list: Simon Says, Football, States and medium/large overlays"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entry_id": "wikipedia-6896436",
+      "kind": "game",
+      "year_context_only": 1972,
+      "date_context_only": {
+        "month": 0,
+        "day": 0,
+        "precision": "year",
+        "region": ""
+      },
+      "event_semantics": "",
+      "factual_note": "Reference article introduction reproduced under its stated licence. Year comes from the article's release-year category; regional/port dates may differ.",
+      "main": {
+        "feature_id": null,
+        "title": "Empire",
+        "subtitle": "",
+        "summary": "Empire is a 4X computer wargame created in 1972 by Peter Langston, taking its name from a Reed College board game of the same name.",
+        "cards": [
+          {
+            "card_id": "main:0",
+            "original_index": 0,
+            "heading": "One name, several independent games",
+            "text": "Empire is a 4X computer wargame created in 1972 by Peter Langston, taking its name from a Reed College board game of the same name. It was initially created by Langston in BASIC on an HP2000 minicomputer at Evergreen State College. When the host computer was retired, the source code to the game was lost. Subsequently, two other authors each independently wrote a new version of the game, both named Empire. In the decades since, numerous other versions of Empire have been developed for a wide variety of platforms."
+          },
+          {
+            "card_id": "main:1",
+            "original_index": 1,
+            "heading": "Orders that wait for other players",
+            "text": "The game is turn-based, with players giving orders at their convenience, and in some versions then executed simultaneously by the game server at set intervals ranging from a few hours to once per day. The game world consists of \"sectors\", which may be designated as agricultural, industrial, etc. There are dozens of unit types requiring a variety of raw and manufactured materials for their creation. \"Blitz\" games may last a few hours, typical games a few months, and some larger games up to a year."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Empire (1972 video game) — article revision",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1376635242",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "1972 in video games — annual context",
+            "url": "https://en.wikipedia.org/w/index.php?oldid=1364818743",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Contributors and article history",
+            "url": "https://en.wikipedia.org/wiki/Empire_(1972_video_game)?action=history",
+            "publisher": "English Wikipedia contributors"
+          },
+          {
+            "title": "Text licence: Creative Commons Attribution-ShareAlike 4.0",
+            "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "publisher": "Creative Commons"
+          }
+        ]
+      },
+      "features": []
+    }
+  ]
+}

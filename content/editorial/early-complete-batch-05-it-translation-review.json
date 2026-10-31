@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "locale": "it",
+  "review": "Binding of exact independently approved complete candidate members; no new linguistic review substituted. Every full candidate SHA and independent PASS receipt checked, all current English five fields and translation hashes validated.",
+  "entries": [
+    {
+      "entry_id": "feature-mabel-addis-classroom",
+      "source_fields_sha256": "107652f637d3e4e169e53ffdbb35a31870818f1d56bafc8d7a5202908c1e0925",
+      "translation_sha256": "81646e50d74a63ce3f337ae89e2e60573a0879056fd0c57d6c61a55038f1737e",
+      "independent_peer": "build/research/mabel-addis1964-four-language-completion/mabel-addis1964-four-language-german-idiom-corrected-candidate-root-independent-peer.json",
+      "independent_peer_sha256": "45ae731f4bec01c32c0a3f3b77db04f64abb7efde9bcc70300cc35365cdd17bb",
+      "candidate_path": "build/research/mabel-addis1964-four-language-completion/mabel-addis1964-four-language-german-idiom-corrected-candidate.json",
+      "candidate_sha256": "9af1370e3deab0ed688c9837da4ae91b4bf383654871dfe407cfd4e126b2c072"
+    },
+    {
+      "entry_id": "daily-09-17",
+      "source_fields_sha256": "a3bda1f64d71940e226691d31e4861e254dbb251422349be380381acc94d287a",
+      "translation_sha256": "dc381d4284b5270f5e1b500ee8e93f63f831c97f9bb8b565e704c1e43a1461e7",
+      "independent_peer": "build/research/naka1965-four-language-completion/independent-seven-whole-paragraphs-four-language-full-clause-peer.json",
+      "independent_peer_sha256": "d3511447db75dbb569aa218a053eb49caa5f4972747366f30c6620abbf0ff2c0",
+      "candidate_path": "build/research/naka1965-four-language-completion/naka1965-seven-whole-paragraphs-four-language-reuse-fidelity-candidate.json",
+      "candidate_sha256": "ead3b34ef7b23432abca3a68e8e343de51b858bb5c3df11a614c6c03aa021964"
+    }
+  ]
+}

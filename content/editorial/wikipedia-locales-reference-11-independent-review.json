@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "reviewed_utc_date": "2026-10-21",
+  "reviewer_role": "Independent editorial reviewer; different agent from translation author",
+  "batch_file": "content/expansion/wikipedia-locales-reference-11.json",
+  "batch_sha256": "dea74fa806a6120b194bef3096d5a6137d7d03169ee396b24e5a0583eee9ebdd",
+  "result": "PASS for source fidelity and explicit admission; no text corrections required",
+  "review_scope": {
+    "source_entries": 4,
+    "english_source_paragraphs_read": 12,
+    "english_source_headings_read": 12,
+    "translation_pairs_read": 16,
+    "translated_paragraphs_read": 48,
+    "translated_headings_read": 48,
+    "languages": [
+      "it",
+      "es",
+      "fr",
+      "de"
+    ],
+    "english_source_words": 1033
+  },
+  "checks": {
+    "exact_current_english_source_fields": true,
+    "all_source_hashes_recomputed": true,
+    "source_attribution_sources_revision_unchanged": true,
+    "target_revision_license_credit_complete": true,
+    "every_paragraph_and_heading_compared_semantically": true,
+    "proper_names_compared_per_paragraph": true,
+    "numbers_decades_written_quantities_and_first_claim_qualifiers_read": true,
+    "source_heading_indices_counts_preserved": true,
+    "no_silent_english_fact_edit": true,
+    "utf8_no_transport_corruption": true,
+    "pure_overlay_join_pass": true,
+    "six_negative_tests_pass": true,
+    "all_preexisting_source_locale_entries_preserved": true,
+    "non_target_languages_unchanged": true
+  },
+  "entries": [
+    {
+      "entry_id": "wikipedia-1956221",
+      "title": "NFL Blitz",
+      "revision_id": 1369873142,
+      "revision_url": "https://en.wikipedia.org/w/index.php?oldid=1369873142",
+      "body_sha256": "a1d3d89406d1c0c81540bd6b396e60f69d0185470d368a15d9f901048352d8b3",
+      "languages_read": [
+        "it",
+        "es",
+        "fr",
+        "de"
+      ],
+      "paragraphs_read": 12,
+      "headings_read": 12,
+      "result": "PASS",
+      "quantity_checks": "1997 debut,2005 relaunch,2022 Arcade1Up; first two games plus2000GoldEdition preserved.",
+      "semantic_checks": "Real NFL teams versus fictional League teams remain distinct; exaggerated gameplay versus realism, then exclusive license scope, EA naming rights and NFL input removing late hits retained. Headings accurately follow arcade style/license/relaunch."
+    },
+    {
+      "entry_id": "wikipedia-6150793",
+      "title": "Mattel Auto Race",
+      "revision_id": 1375609588,
+      "revision_url": "https://en.wikipedia.org/w/index.php?oldid=1375609588",
+      "body_sha256": "40be192011fbcefef760e9fe58fcd5e92afa379549c067e1a377138672068b5d",
+      "languages_read": [
+        "it",
+        "es",
+        "fr",
+        "de"
+      ],
+      "paragraphs_read": 12,
+      "headings_read": 12,
+      "result": "PASS",
+      "quantity_checks": "1976; nine volts;1970s written decades;512bytes;three lanes;gears1–4;1976/1978/1980 successors;IER-01 retained.",
+      "semantic_checks": "First claim remains restricted to handheld electronic games using only solid-state electronics, not first videogame. Physical switches remain exceptions; Klose hardware and Lesser additions/code roles distinct. Football/Baseball both Lesser, licensed TV tie-in and Soviet clone preserved. All three headings align with paragraph subjects."
+    },
+    {
+      "entry_id": "wikipedia-66654",
+      "title": "Populous",
+      "revision_id": 1374658145,
+      "revision_url": "https://en.wikipedia.org/w/index.php?oldid=1374658145",
+      "body_sha256": "69a2ffc99eff836f9e1e2f87875f460564ee2285a8e1659782cbdced960c00ce",
+      "languages_read": [
+        "it",
+        "es",
+        "fr",
+        "de"
+      ],
+      "paragraphs_read": 12,
+      "headings_read": 12,
+      "result": "PASS",
+      "quantity_checks": "March1989,over four million copies,more than500 levels preserved as qualified quantities.",
+      "semantic_checks": "Considered first god game retained as considered, not independently asserted definitive origin. Divine powers and enemy followers, isometric viewpoint, PeterMolyneux design and Lego board prototype preserved. Award nominations are not translated as wins; retrospective acclaim remains qualified. Headings match computers/land/series."
+    },
+    {
+      "entry_id": "wikipedia-52727",
+      "title": "Radiant Silvergun",
+      "revision_id": 1380917669,
+      "revision_url": "https://en.wikipedia.org/w/index.php?oldid=1380917669",
+      "body_sha256": "5df1eb1a451126e4c850405508bf56dfa6d8fa7de93dab1b7966aa794502e6e7",
+      "languages_read": [
+        "it",
+        "es",
+        "fr",
+        "de"
+      ],
+      "paragraphs_read": 12,
+      "headings_read": 12,
+      "result": "PASS",
+      "quantity_checks": "1998; six shot types;ten-person team;May1998;two months;1990s;Ikaruga2001;Xbox360/2011,Switch2022,Windows2023 retained.",
+      "semantic_checks": "Treasure developer/publisher, arcade viability concerns, Gonzo outsourced animation and ST-V/Saturn architectural similarity all retained. Professional highscore playtests and Maegawa arcade visits stay distinct. Journalists genre-revival judgement remains attributed, retrospective praise qualified, Ikaruga spiritual successor preserved. Headings match weapons/risk/ports."
+    }
+  ],
+  "blocking_findings": [],
+  "nonblocking_limits": [
+    "Independent agent language/source-fidelity review, not native-human linguistic signoff or fresh historical primary-source fact-check.",
+    "First/considered-first claims, commercial totals, rankings and quoted judgements remain tied to exact English reference revisions.",
+    "Scalar source-field hashes use raw UTF8; body/headings/full source-field hashes use compact JSON. All independently recomputed.",
+    "No new image-rights/quality/layout or physical PS5 signoff."
+  ],
+  "fixture_receipt": "build/research/wikipedia-locales-reference-11/independent-join-validation.json",
+  "fixture_receipt_sha256": "f0621a36b2b9f14af6be86071108d6294d2f2c9569350d68b865e90a56c949e7",
+  "catalog_sha256_observed_snapshot": "280a4e335f8bbeb6230e4e1b24a12894a7adec36d073b44689b01dee928eba36",
+  "writes": "Only private review fixture/script and this review receipt. No authored batch/master/locales/hook/runtime/console writes.",
+  "http_requests": 0,
+  "new_translations_integrated_by_reviewer": 0
+}

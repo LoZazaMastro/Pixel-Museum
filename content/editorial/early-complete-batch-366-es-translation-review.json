@@ -1,0 +1,110 @@
+{
+  "status": "PASS",
+  "locale": "es",
+  "entries": [
+    {
+      "entry_id": "workbook-02-02-persona-3-reload",
+      "source_fields_sha256": "4814644b50fc935734a72d59343cd43c43ef01e0ade20cba394a229f68c28c40",
+      "translation_sha256": "3b9b4819edf9c10fcc80a0fd86c593da522544fb424ba119fe8cd0352d6a0240",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch366/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "616cc36a850b73c172ac20b6816a369403578366f26d77a554d9ffbced214f18"
+    },
+    {
+      "entry_id": "wikipedia-75025557",
+      "source_fields_sha256": "83ca184f712a2d8d3a7115ea56be934482e86914272c95be342c4c9e258a6cf8",
+      "translation_sha256": "45b8cc05f1b4bdd0c518bfa39b0dcc26e749a0ae5c9ba76251485ef78b54cef0",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch366/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "616cc36a850b73c172ac20b6816a369403578366f26d77a554d9ffbced214f18"
+    },
+    {
+      "entry_id": "wikipedia-76141126",
+      "source_fields_sha256": "ac41c1a4a5a85463f6dcf1653871a99d795487d2da3ed8851630ae7b450021f4",
+      "translation_sha256": "fbf4f12a30193ea631a05a45322ef03d989bdbab18f85e4d320eea70e19fe9b3",
+      "independent_peer": "build/research/catalog-2019-chronological/first-nine-admission-private/batch366/independent-editorial-peer-approval.json",
+      "independent_peer_sha256": "616cc36a850b73c172ac20b6816a369403578366f26d77a554d9ffbced214f18"
+    }
+  ],
+  "actual_independent_review_scope": {
+    "mode": "Delegate the actual independent reviewer’s approved semantic, localization and media review. Executor does not claim an additional full reread.",
+    "reviewer": "editorial_continue",
+    "actual_receipt": "build/research/catalog-2024-chronological/root-february-three-private/independent-editorial-peer-approval.json",
+    "actual_receipt_sha256": "6868eeaeebf03d83141a005ed1d4c21bd534bcfb153ade8f13949288a2c50dad",
+    "actual_review_scope": {
+      "status": "APPROVED",
+      "reviewer": "editorial_continue",
+      "index": "build/research/catalog-2024-chronological/root-february-three-private/three-private-index.json",
+      "index_sha256": "36475a0b560b56385458bdcca81a25b32f3e3e3574224181e288c3e1e4f8e7f8",
+      "scope": "Actually read all seven English and twenty-eight localized paragraphs, including the twelve retained Balatro localized paragraphs, and all five fields. Viewed all seventeen final images in three contacts. Read the single new Shop Theme metadata receipt. Preserved seventy-five existing cues without redundant stream resolution. Verified source, target, contact and recovery-byte bindings.",
+      "primary_sources_actually_read": [
+        {
+          "url": "https://www.famitsu.com/news/202308/23313878.html",
+          "finding": "Direct ATLUS developer interview: Kitajoh describes reworking the original Meguro music, writing new songs, and Azumi Takahashi/Lotus Juice vocals. No claim of newly commissioned Meguro arrangements."
+        },
+        {
+          "url": "https://alineaanalytics.substack.com/p/helldivers-2-sells-20m-copies",
+          "finding": "January 29, 2026 author estimates exceed twenty million copies and $700 million gross game-sale revenue; candidate explicitly attributes estimates rather than representing Sony audited totals."
+        },
+        {
+          "url": "https://www.nintendo.com/en-gb/Games/Nintendo-Switch-2-games/Balatro-3037082.html",
+          "finding": "Dedicated Switch 2 version released February 25, 2026."
+        },
+        {
+          "url": "https://louisfmusic.com/balatro",
+          "finding": "Composer site identifies the Balatro soundtrack and five-track album links; lists 2025 GDC Game of the Year recognition."
+        },
+        {
+          "url": "https://www.qobuz.com/us-en/album/balatro-original-game-soundtrack-louisf/m1308ra3tjiba",
+          "access": "Direct fetch timed out; indexed primary catalog text actually read.",
+          "finding": "Five 4:01 cues, Shop Theme included; individual composer Luis Fernandez Clemente and artist LouisF. Distribution date June 16, 2023 distinguished from original game release."
+        }
+      ],
+      "music_notes": "Shop Theme RJpc1iVNdgs is public, 241 seconds, Routenote auto-generated original LouisF album recording. No audio file downloaded.",
+      "findings": [],
+      "owners": [
+        {
+          "entry_id": "workbook-02-02-persona-3-reload",
+          "slug": "persona",
+          "source": "build/research/catalog-2024-chronological/root-february-three-private/persona-source-private-candidate.json",
+          "source_sha256": "028c24ddc71165b7a3c21455e6fd11ff156b5ee566d3970c19cc6230f16db1b0",
+          "target": "build/research/catalog-2024-chronological/root-february-three-private/persona-four-language-private-candidate.json",
+          "target_sha256": "22dbb6cb43a546f1234216ee3718145afce84730a2f05fe5f3549ee3c62e6890",
+          "contact": "build/research/catalog-2024-chronological/root-february-three-private/persona-final-contact.jpg",
+          "contact_sha256": "06ae64805636929d405def02c40e0f18e6736ab9992956b918e5893e0eab7b19",
+          "english_cards": 2,
+          "localized_cards": 8,
+          "images": 7,
+          "tracks": 60
+        },
+        {
+          "entry_id": "wikipedia-75025557",
+          "slug": "helldivers",
+          "source": "build/research/catalog-2024-chronological/root-february-three-private/helldivers-source-private-candidate.json",
+          "source_sha256": "551602caac91fc31cf64f3fe125422192d9c6ff7ecc882fea8e6da99074b931d",
+          "target": "build/research/catalog-2024-chronological/root-february-three-private/helldivers-four-language-private-candidate.json",
+          "target_sha256": "d3e27e800ee7b16d8ef74eed3ed0f74d9906355f386b109b8bead18e7fefd158",
+          "contact": "build/research/catalog-2024-chronological/root-february-three-private/helldivers-final-contact.jpg",
+          "contact_sha256": "e0dc37aee300e5e3769407f7410ed536d874e83a98b438b2ff18abc2faa3debf",
+          "english_cards": 2,
+          "localized_cards": 8,
+          "images": 4,
+          "tracks": 13
+        },
+        {
+          "entry_id": "wikipedia-76141126",
+          "slug": "balatro",
+          "source": "build/research/catalog-2024-chronological/root-february-three-private/balatro-source-private-candidate.json",
+          "source_sha256": "982472efdb3f788021b70d86e7334bef75d37903fbb448e3a572da8d6596bf16",
+          "target": "build/research/catalog-2024-chronological/root-february-three-private/balatro-four-language-private-candidate.json",
+          "target_sha256": "a21ed9faecc086d424a1064da63a7dc021d942b545bd384c48070449d58fb30a",
+          "contact": "build/research/catalog-2024-chronological/root-february-three-private/balatro-final-contact.jpg",
+          "contact_sha256": "bd061f6525ea53579c9fc80fa21d436eb6719858d86d86647493e9e92e284ae3",
+          "english_cards": 3,
+          "localized_cards": 12,
+          "images": 6,
+          "tracks": 3
+        }
+      ],
+      "production_writes": false
+    }
+  }
+}
