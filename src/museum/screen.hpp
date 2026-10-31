@@ -15,6 +15,8 @@
 #include "museum/narrative_layout.hpp"
 #include "museum/timeline_motion.hpp"
 #include "museum/volume_preferences.hpp"
+#include "museum/collection_installer.hpp"
+#include "museum/collection_install_view.hpp"
 #include "platform/media.hpp"
 #include "gfx/renderer.hpp"
 #include "ui/components/image_viewer.hpp"
@@ -31,6 +33,7 @@
 namespace museum {
 class Screen {
     friend struct ScreenInspection;
+    friend struct CollectionStartupInspection;
 public:
     ~Screen();
     bool init(const std::string& root,const std::string& data);
@@ -45,6 +48,7 @@ public:
     void mix_experience(float*out,unsigned frames,float*controller_speaker=nullptr){experience_audio_.render(out,frames,controller_speaker);}
     bool take_trophy_sound(){const bool sound=trophy_fallback_sound_;trophy_fallback_sound_=false;return sound;}
     bool onboarding_active()const{return onboarding_||language_choice_||theme_choice_||theme_confirming_;}
+    bool collection_pending()const{return collection_pending_;}
     bool experience_active()const{return experience_active_;}
     bool secondary_controller_active()const{return experience_active_&&study_&&study_->local_multiplayer();}
     bool culture_timeline_active()const{return history_focus_;}
@@ -71,6 +75,14 @@ public:
     void set_trophy_curator_preview(bool value){trophy_curator_preview_=value;}
     bool trophy_curator_preview()const{return trophy_curator_preview_;}
 private:
+    CollectionInstaller collection_installer_;
+    bool collection_pending_=false,collection_started_=false,collection_media_started_=false,collection_media_error_=false;
+    float collection_elapsed_=0,collection_ready_elapsed_=0;
+    int collection_phase_log_=-1,collection_progress_log_=-1;
+    bool start_collection_media();
+    void update_collection_startup(float);
+    void handle_collection_startup(const hui::InputFrame&,hui::ui::Feedback&);
+    CollectionInstallViewState collection_install_view_state()const;
     hui::gfx::Renderer renderer_;
     hui::gfx::Font regular_,bold_,display_,mono_,cjk_,unicode_;
     hui::ui::FontRef cjk_ref_,unicode_ref_;

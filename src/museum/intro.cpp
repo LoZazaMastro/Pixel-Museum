@@ -11,7 +11,7 @@ constexpr std::uint32_t pixel_colours[13]={0xa5c8c0,0xd4b9d5,0xe2b994,0xa8bdce,0
 }
 int Screen::take_startup_note(int* pixel_ordinal){
     if(pixel_ordinal)*pixel_ordinal=-1;
-    if(onboarding_)return -1;
+    if(collection_pending_||onboarding_)return -1;
     if(experience_active_&&!experience_introduction_&&study_){
         const int note=study_->take_note();return experience_input_paused_?-1:note;
     }

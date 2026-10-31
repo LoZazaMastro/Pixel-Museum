@@ -14,7 +14,10 @@
 #pragma clang diagnostic ignored "-Wmissing-field-initializers"
 #define STB_IMAGE_WRITE_IMPLEMENTATION
 #include "third_party/stb/stb_image_write.h"
+#undef STB_IMAGE_WRITE_IMPLEMENTATION
 #pragma clang diagnostic pop
+#include "host/collection_install_preview.hpp"
+#include "host/collection_startup_checks.hpp"
 #include <filesystem>
 #include <thread>
 #include <chrono>
@@ -31,13 +34,38 @@ int main(int argc,char**argv){
     EGLContext gl=eglCreateContext(display,EGL_NO_CONFIG_KHR,EGL_NO_CONTEXT,attrs);if(!eglMakeCurrent(display,EGL_NO_SURFACE,EGL_NO_SURFACE,gl))return 3;
     hui::gfx::set_glsl_prefix("#version 450 core\n");
     const char*preview_root=std::getenv("MUSEUM_PREVIEW_ROOT");
+    if(argc>1&&std::string(argv[1])=="collection-install"){
+        hui::gfx::Renderer renderer;if(!renderer.init())return 4;
+        hui::gfx::Font regular,bold,mono;hui::ui::Fonts fonts;
+        const std::string fonts_root=std::string(preview_root?preview_root:".")+"/assets/fonts/";
+        const auto load=[&](const char*name,hui::gfx::Font&font,hui::ui::FontRef&ref){
+            std::ifstream input(fonts_root+name,std::ios::binary);
+            const std::string bytes((std::istreambuf_iterator<char>(input)),{});
+            if(bytes.empty()||!font.load(bytes))return false;
+            ref={&font,renderer.batch().create_font_texture(font)};return true;
+        };
+        if(!load("inter-regular.huifont",regular,fonts.regular)||!load("inter-semibold.huifont",bold,fonts.semibold)||!load("dejavu-sans-mono.huifont",mono,fonts.mono))return 4;
+        fonts.display=fonts.semibold;fonts.hand=fonts.regular;fonts.pixel=fonts.mono;
+        const bool passed=museum::capture_collection_install_previews(renderer,fonts);
+        renderer.release();eglMakeCurrent(display,EGL_NO_SURFACE,EGL_NO_SURFACE,EGL_NO_CONTEXT);eglDestroyContext(display,gl);eglTerminate(display);
+        return passed?0:66;
+    }
     const bool onboarding_pong=argc>1&&std::string(argv[1])=="onboarding-pong";
     const bool onboarding_structure=onboarding_pong||(argc>1&&std::string(argv[1])=="onboarding-structure");
     const bool intro_saved=std::getenv("MUSEUM_HOST_SAVED_ACCESS")!=nullptr;
-    const std::string preview_data=onboarding_structure?(intro_saved?"build/onboarding-offline-saved-data":"build/onboarding-offline-fresh-data"):"build/preview-data";
+    const bool collection_e2e=argc>3&&std::string(argv[1])=="collection-end-to-end";
+    const std::string preview_data=collection_e2e?argv[3]:onboarding_structure?(intro_saved?"build/onboarding-offline-saved-data":"build/onboarding-offline-fresh-data"):"build/preview-data";
     std::filesystem::create_directories(preview_data);
     if(onboarding_structure){const auto auth=preview_data+"/youtube-auth.json";if(intro_saved){std::ofstream fixture(auth);fixture<<"{\"offline_metadata_fixture_only\":true}";}else std::filesystem::remove(auth);}
     museum::Screen screen;if(!screen.init(preview_root?preview_root:".",preview_data))return 4;
+    if(argc>1&&(std::string(argv[1])=="collection-existing"||collection_e2e)){
+        const bool passed=collection_e2e?museum::CollectionStartupInspection::download(screen,argv[2],preview_data):museum::CollectionStartupInspection::existing(screen);
+        screen.shutdown();eglMakeCurrent(display,EGL_NO_SURFACE,EGL_NO_SURFACE,EGL_NO_CONTEXT);eglDestroyContext(display,gl);eglTerminate(display);return passed?0:68;
+    }
+    if(argc>1&&std::string(argv[1])=="collection-startup"){
+        const bool passed=museum::CollectionStartupInspection::check(screen);
+        screen.shutdown();eglMakeCurrent(display,EGL_NO_SURFACE,EGL_NO_SURFACE,EGL_NO_CONTEXT);eglDestroyContext(display,gl);eglTerminate(display);return passed?0:67;
+    }
     if(argc>1&&std::string(argv[1])=="culture-filters"){
         const bool passed=museum::ScreenInspection::verify_culture_filters(screen);
         screen.shutdown();eglMakeCurrent(display,EGL_NO_SURFACE,EGL_NO_SURFACE,EGL_NO_CONTEXT);eglDestroyContext(display,gl);eglTerminate(display);return passed?0:61;

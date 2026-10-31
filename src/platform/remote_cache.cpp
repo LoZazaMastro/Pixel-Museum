@@ -331,15 +331,49 @@ struct RemoteCache::Impl {
 };
 RemoteCache::RemoteCache() : impl_(std::make_unique<Impl>()) {}
 RemoteCache::~RemoteCache() { stop(); }
-bool RemoteCache::images_from_package(const std::string&root){
+bool packaged_images_complete(const std::string&root){
+    const auto safe=[](const std::string&path){return path.rfind("assets/images/",0)==0&&path.find("..") == std::string::npos&&path.find('\\')==std::string::npos&&path.find(':')==std::string::npos;};
+    std::string bytes;
+    if(!hui::save::read_file(root+"/assets/images/manifest.json",&bytes,16u<<20))return false;
+    const auto manifest=nlohmann::json::parse(bytes,nullptr,false);
+    if(!manifest.is_object()||!manifest.contains("images")||!manifest["images"].is_object()||manifest["images"].empty())return false;
+    std::map<std::string,std::uint64_t> sizes;
+    std::string index_bytes;
+    if(hui::save::read_file(root+"/content/collection-files.json",&index_bytes,16u<<20)){
+        const auto index=nlohmann::json::parse(index_bytes,nullptr,false);
+        if(!index.is_object()||index.value("schema_version",0)!=1||!index.contains("files")||!index["files"].is_array()||index["files"].empty())return false;
+        for(const auto&file:index["files"]){
+            if(!file.is_object()||!file.contains("path")||!file["path"].is_string()||!file.contains("bytes")||!file["bytes"].is_number_unsigned())return false;
+            const auto path=file["path"].get<std::string>();const auto expected=file["bytes"].get<std::uint64_t>();
+            if(!safe(path)||expected==0||!sizes.emplace(path,expected).second)return false;
+            struct stat st{};if(stat((root+"/"+path).c_str(),&st)!=0||!S_ISREG(st.st_mode)||st.st_size<=0||static_cast<std::uint64_t>(st.st_size)!=expected)return false;
+        }
+    }
+    for(const char*key:{"images","previews"}){
+        if(!manifest.contains(key)){if(std::string(key)=="images")return false;continue;}
+        if(!manifest[key].is_object())return false;
+        for(auto it=manifest[key].begin();it!=manifest[key].end();++it){
+            if(!it.value().is_string())return false;const auto path=it.value().get<std::string>();if(!safe(path))return false;
+            if(!sizes.empty()){if(!sizes.count(path))return false;}
+            else{struct stat st{};if(stat((root+"/"+path).c_str(),&st)!=0||!S_ISREG(st.st_mode)||st.st_size<=0)return false;}
+        }
+    }
+    return true;
+}
+bool RemoteCache::images_from_package(const std::string&root,const std::string&collection_root){
     if(impl_->running)return false;
     impl_->packaged_only=true;std::string bytes;
-    if(!hui::save::read_file(root+"/assets/images/manifest.json",&bytes,16u<<20))return false;
+    const auto& image_root=collection_root.empty()?root:collection_root;
+    if(!hui::save::read_file(image_root+"/assets/images/manifest.json",&bytes,16u<<20))return false;
     const auto manifest=nlohmann::json::parse(bytes,nullptr,false);if(!manifest.is_object())return false;
+    impl_->packaged.clear();impl_->previews.clear();impl_->image_hashes.clear();
+    // A collection may be installed after an initial failed request. Registration
+    // happens with the worker stopped; allow those images to load on restart.
+    for(auto&[url,e]:impl_->entries){(void)url;if(e.image&&e.asset.state==State::failed&&!e.asset.texture&&!e.uploading){e.asset=Asset{};e.retry.reset();e.preview_failed=false;e.preview=false;e.deferred=false;}}
     const auto read=[&](const char*key,std::map<std::string,std::string>&out){
         if(!manifest.contains(key)||!manifest[key].is_object())return;
         for(auto it=manifest[key].begin();it!=manifest[key].end();++it){if(!it.value().is_string())continue;const auto path=it.value().get<std::string>();
-            if(path.rfind("assets/images/",0)==0&&path.find("..") == std::string::npos&&path.find('\\')==std::string::npos&&path.find(':')==std::string::npos)out[it.key()]=root+"/"+path;}
+            if(path.rfind("assets/images/",0)==0&&path.find("..") == std::string::npos&&path.find('\\')==std::string::npos&&path.find(':')==std::string::npos)out[it.key()]=image_root+"/"+path;}
     };read("images",impl_->packaged);read("previews",impl_->previews);
     if(manifest.contains("metadata")&&manifest["metadata"].is_object())for(auto it=manifest["metadata"].begin();it!=manifest["metadata"].end();++it){
         const auto&value=it.value();if(!value.is_object()||!value.contains("sha256")||!value["sha256"].is_string())continue;

@@ -9,6 +9,9 @@
 #include <vector>
 namespace hui::gfx { class Renderer; }
 namespace museum::media {
+// Background filesystem-only completeness check. New packages carry an exact
+// byte-size index; legacy packages check every registered master and preview.
+bool packaged_images_complete(const std::string& install_root);
 enum class State : unsigned char { idle, loading, ready, failed };
 struct Asset {
     State state = State::idle;
@@ -48,7 +51,10 @@ class RemoteCache {
     RemoteCache();
     ~RemoteCache();
     bool start(const std::string &cache_directory);
-    bool images_from_package(const std::string& install_root);
+    // Register before start(). Downloaded collections preserve the same manifest
+    // paths under a persistent root; pin fronts always belong to install_root.
+    bool images_from_package(const std::string& install_root,
+                             const std::string& collection_root = {});
     std::string image_identity(const std::string& url) const; // Manifest content SHA256, then packaged path, then URL; no image IO.
     void stop();
     Asset request(const std::string &https_url, bool image = true);
