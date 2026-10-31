@@ -2,7 +2,7 @@
 
 **You remember the feeling.**
 
-The games we played. The world we grew up in. An independent, interactive museum for PS5, created by Andrea Sgarro / LoZazaMastro.
+The games we played. The world we grew up in. An independent, interactive museum for PS5.
 
 This private repository is being prepared for publication. No public release is available yet, and GitHub Pages has not been enabled.
 
