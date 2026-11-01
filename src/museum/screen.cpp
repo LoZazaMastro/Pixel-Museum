@@ -564,7 +564,17 @@ void Screen::handle(const InputFrame&i,ui::Feedback&f){
             if(setting_==1){dark_theme_=!dark_theme_;theme_chosen_=true;}
             if(setting_==2){volumes_open_=true;volume_focus_=0;f.play(audio::Cue::select);return;}
             if(setting_==3)connection_panel_=true;
-            if(setting_==4){settings_=false;onboarding_=true;language_choice_=true;theme_choice_=true;onboarding_step_=0;onboarding_position_.snap(0);onboarding_fade_.snap(0);onboarding_leaving_=false;collection_presentation_.replay();if(collection_installer_.is_ready()){collection_pending_=true;collection_started_=true;collection_elapsed_=collection_ready_elapsed_=0;} }
+            if(setting_==4){
+                settings_=false;onboarding_=true;language_choice_=true;theme_choice_=true;
+                theme_confirming_=false;theme_confirm_progress_=0;
+                onboarding_step_=0;onboarding_position_.snap(0);onboarding_fade_.snap(0);onboarding_leaving_=false;
+                collection_presentation_.replay();
+                // Reuse the already validated collection and running workers.
+                // This is presentation-only; no configure/start/cache reset.
+                if(collection_installer_.is_ready()){
+                    collection_pending_=true;collection_started_=true;collection_elapsed_=collection_ready_elapsed_=0;
+                }
+            }
             if(setting_==general_credits_setting){settings_=false;credits_=true;credits_scroll_.snap(0);}
             if(setting_==reset_trophies_setting){
                 if(trophies_&&trophies_->reset()){trophy_notifications_.clearPending();trophy_fallback_queue_.clear();trophy_fallback_time_=0;trophy_fallback_sound_=false;trophy_expanded_=false;trophy_pin_open_=false;if(trophy_pin_renderer_)trophy_pin_renderer_(TrophyView{},0,0,0,0,0,0);trophy_focus_=0;trophy_position_.snap(0);trophy_media_session_.clear();trophy_media_played_=0;notice_=std::string(i18n::tr("Trophy progress reset."));notice_time_=3.5f;f.play(audio::Cue::saved);}
@@ -983,7 +993,7 @@ void Screen::draw_preferences(){
         if(row==3)ui::paragraph(overlay_,fonts_.regular,"An optional connection for films with transcripts.",x+65,y+26,18,640,25,muted,2);
         if(row>=2)ui::text(overlay_,fonts_.regular,">",x+706,y,30,ink);
     }
-    ui::text(overlay_,fonts_.mono,"PIXEL MUSEUM / 0.1.1",x+65,959,18,muted,Align::left,1.5f);
+    ui::text(overlay_,fonts_.mono,"PIXEL MUSEUM / 0.1.2",x+65,959,18,muted,Align::left,1.5f);
 }
 
 void Screen::draw_connection(){

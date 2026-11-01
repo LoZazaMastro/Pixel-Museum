@@ -57,12 +57,20 @@ def main():
             if not (args.eboot and rel.as_posix() == 'eboot.bin'):
                 copy_changed(source, destination)
             expected.add(rel.as_posix())
-    for folder in ('content/ui-locales', 'assets/fonts'):
+    for folder in ('content/ui-locales', 'assets/fonts', 'assets/image-supplements'):
         for source in (ROOT / folder).rglob('*'):
             if source.is_file():
                 rel = source.relative_to(ROOT)
                 copy_changed(source, base / rel)
                 expected.add(rel.as_posix())
+    # Optional hotfix image bindings and their original raster assets overlay
+    # the base only. The existing collection manifest and installed TARs stay
+    # byte-identical, preserving their SHA-derived installation identity.
+    supplements = ROOT / 'content/collection-image-supplements.json'
+    if supplements.is_file():
+        rel = supplements.relative_to(ROOT)
+        copy_changed(supplements, base / rel)
+        expected.add(rel.as_posix())
     manifest = Path('assets/images/manifest.json')
     (base / manifest).parent.mkdir(parents=True, exist_ok=True)
     copy_changed(args.source / manifest, base / manifest)
@@ -76,7 +84,9 @@ def main():
         else:
             pending.append(name)
     # Optional trusted range index generated from the pinned, local USTAR packs.
-    archive_index = ROOT / 'content/collection-archive-index.json'
+    archive_index = args.delivery / 'packs/collection-archive-index.json'
+    if not archive_index.is_file():
+        archive_index = ROOT / 'content/collection-archive-index.json'
     if archive_index.is_file():
         index = json.loads(archive_index.read_text(encoding='utf-8'))
         pinned = json.loads((args.delivery / 'packs/collection-packs.json').read_text(encoding='utf-8'))
@@ -91,7 +101,7 @@ def main():
         copy_changed(args.eboot, base / 'eboot.bin')
     parameter_path = base / 'sce_sys/param.json'
     parameters = json.loads(parameter_path.read_text(encoding='utf-8'))
-    parameters['contentVersion'] = '00.001.001'
+    parameters['contentVersion'] = '00.001.002'
     # Only preferences and small state use the title container. The collection
     # and large caches live in /data/pixelmuseum; do not reserve their size twice.
     # Metadata does not resize existing containers. Stable dist stays untouched.
@@ -106,8 +116,9 @@ def main():
               'source_dist_unchanged': True, 'base_root': str(base), 'pending': pending,
               'new_eboot_supplied': bool(args.eboot), 'eboot_sha256': digest(base / 'eboot.bin'),
               'copied_files_this_run': copied,
-              'updated_resources': ['content/ui-locales from current source', 'assets/fonts from current source'],
-              'contentVersion': '00.001.001',
+              'updated_resources': ['content/ui-locales from current source', 'assets/fonts from current source',
+                                    'optional assets/image-supplements and content/collection-image-supplements.json from current source'],
+              'contentVersion': '00.001.002',
               'downloadDataSize': 256,
               'parameter_override': 'Only staged sce_sys/param.json; published stable dist untouched',
               'files': files, 'bytes': sum(row['bytes'] for row in files),

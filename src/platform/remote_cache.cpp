@@ -14,13 +14,16 @@
 #include <algorithm>
 #include <chrono>
 #include <condition_variable>
+#include <cerrno>
 #include <cstdio>
 #include <deque>
 #include <dirent.h>
+#include <fcntl.h>
 #include <map>
 #include <mutex>
 #include <pthread.h>
 #include <sys/stat.h>
+#include <unistd.h>
 #include <vector>
 namespace museum::media {
 namespace {
@@ -395,6 +398,62 @@ bool RemoteCache::images_from_package(const std::string&root,const std::string&c
             if(path.rfind("assets/trophies/fronts/",0)==0&&path.find("..") == std::string::npos&&
                path.find('\\')==std::string::npos&&path.find(':')==std::string::npos)
                 impl_->packaged[it.key()]=root+"/"+path;
+        }
+    }
+    // Small, bundled additions can improve an existing collection without
+    // replacing its immutable multi-gigabyte archives. Missing is compatible;
+    // a present invalid registry must never silently select different artwork.
+    const auto supplements_path=root+"/content/collection-image-supplements.json";
+    errno=0;
+    FILE* supplements_file=std::fopen(supplements_path.c_str(),"rb");
+    if(!supplements_file){if(errno!=ENOENT)return false;}
+    else{
+        struct stat info{};
+        if(fstat(fileno(supplements_file),&info)!=0||!S_ISREG(info.st_mode)||info.st_size<=0||
+           std::uint64_t(info.st_size)>(4u<<20)){std::fclose(supplements_file);return false;}
+        std::string text(std::size_t(info.st_size),'\0');
+        const bool read_ok=std::fread(text.data(),1,text.size(),supplements_file)==text.size();
+        std::fclose(supplements_file);if(!read_ok)return false;
+        const auto extra=nlohmann::json::parse(text,nullptr,false);
+        if(!extra.is_object()||!extra.contains("schema_version")||extra["schema_version"]!=1||
+           !extra.contains("images")||!extra["images"].is_object()||extra["images"].size()>4096||
+           (extra.contains("metadata")&&!extra["metadata"].is_object()))return false;
+        std::map<std::string,std::string> paths,hashes;
+        for(auto it=extra["images"].begin();it!=extra["images"].end();++it){
+            const auto&url=it.key();
+            if(url.rfind("https://",0)!=0||url.size()>4096||url.find('\0')!=std::string::npos||!it.value().is_string())return false;
+            const auto path=it.value().get<std::string>();
+            if(path.rfind("assets/image-supplements/",0)!=0||path.back()=='/'||
+               path.find('\\')!=std::string::npos||path.find(':')!=std::string::npos||path.find('\0')!=std::string::npos)return false;
+            std::size_t begin=0;
+            while(begin<path.size()){
+                const auto end=path.find('/',begin);const auto part=path.substr(begin,end==std::string::npos?end:end-begin);
+                if(part.empty()||part=="."||part=="..")return false;
+                if(end==std::string::npos)break;begin=end+1;
+            }
+            const auto full=root+"/"+path;
+            const int fd=::open(full.c_str(),O_RDONLY|O_NOFOLLOW);if(fd<0)return false;
+            struct stat file_info{};
+            const bool valid=fstat(fd,&file_info)==0&&S_ISREG(file_info.st_mode)&&file_info.st_size>0&&
+                std::uint64_t(file_info.st_size)<=detail::kPhotoLocalBytes;
+            ::close(fd);if(!valid)return false;
+            paths[url]=full;
+            if(extra.contains("metadata")&&extra["metadata"].contains(url)){
+                const auto&value=extra["metadata"][url];
+                if(!value.is_object())return false;
+                if(value.contains("sha256")){
+                    if(!value["sha256"].is_string())return false;
+                    auto hash=value["sha256"].get<std::string>();
+                    if(hash.size()!=64||!std::all_of(hash.begin(),hash.end(),[](unsigned char c){return
+                        (c>='0'&&c<='9')||(c>='a'&&c<='f')||(c>='A'&&c<='F');}))return false;
+                    for(auto&c:hash)if(c>='A'&&c<='F')c=char(c-'A'+'a');
+                    hashes[url]=std::move(hash);
+                }
+            }
+        }
+        for(const auto&[url,path]:paths){
+            impl_->packaged[url]=path;impl_->previews.erase(url);impl_->image_hashes.erase(url);
+            if(const auto hash=hashes.find(url);hash!=hashes.end())impl_->image_hashes[url]=hash->second;
         }
     }
     return !impl_->packaged.empty();

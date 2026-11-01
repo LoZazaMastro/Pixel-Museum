@@ -101,7 +101,13 @@ void Screen::handle_collection_startup(const hui::InputFrame& input,hui::ui::Fee
 void Screen::update_collection_startup(float delta){
     const float elapsed=std::isfinite(delta)?std::clamp(delta,0.f,.1f):0.f;
     dt_=elapsed;
-    if(language_choice_){language_selection_.target=float(language_focus_);language_selection_.update(dt_,reduced_?60.f:16.f);return;}
+    if(language_choice_){
+        // Replay enters this gate with the introduction faded out. The normal
+        // Screen update is suspended here, so advance its appearance locally;
+        // otherwise input works behind a permanently transparent language page.
+        onboarding_fade_.target=1.f;onboarding_fade_.update(dt_,10);
+        language_selection_.target=float(language_focus_);language_selection_.update(dt_,reduced_?60.f:16.f);return;
+    }
     collection_elapsed_+=elapsed;
     if(quit_)return;
     if(!collection_started_){

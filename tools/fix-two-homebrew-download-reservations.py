@@ -9,7 +9,7 @@ import argparse,io,json,hashlib,datetime
 
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/'build/research/storage-size-urgent-2026-10-23'
-TITLES={'PPSA98427':256,'PPSA70421':16384}
+TITLES={'PPSA98427':256,'PPSA70421':256}
 EXPECTED_OLD_BYTES=18763546624
 parser=argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--apply',action='store_true')
@@ -38,7 +38,7 @@ try:
       ('registered','/user/app/'+title+'/sce_sys/param.json'),('appmeta','/user/appmeta/'+title+'/param.json')]:
     old_bytes=get(f,path);old=json.loads(old_bytes)
     assert old['titleId']==title
-    assert old['downloadDataSize']in(16384,quota)
+    assert old['downloadDataSize']in(16384,64,quota)
     backup=OUT/(title+'-'+label+'-param-before-storage-fix.json')
     if backup.exists():assert backup.read_bytes()==old_bytes or old['downloadDataSize']==quota
     else:backup.write_bytes(old_bytes)
