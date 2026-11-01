@@ -101,7 +101,7 @@ def main():
         copy_changed(args.eboot, base / 'eboot.bin')
     parameter_path = base / 'sce_sys/param.json'
     parameters = json.loads(parameter_path.read_text(encoding='utf-8'))
-    parameters['contentVersion'] = '00.001.002'
+    parameters['contentVersion'] = '00.001.003'
     # Only preferences and small state use the title container. The collection
     # and large caches live in /data/pixelmuseum; do not reserve their size twice.
     # Metadata does not resize existing containers. Stable dist stays untouched.
@@ -118,7 +118,7 @@ def main():
               'copied_files_this_run': copied,
               'updated_resources': ['content/ui-locales from current source', 'assets/fonts from current source',
                                     'optional assets/image-supplements and content/collection-image-supplements.json from current source'],
-              'contentVersion': '00.001.002',
+              'contentVersion': '00.001.003',
               'downloadDataSize': 256,
               'parameter_override': 'Only staged sce_sys/param.json; published stable dist untouched',
               'files': files, 'bytes': sum(row['bytes'] for row in files),

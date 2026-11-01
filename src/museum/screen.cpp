@@ -993,7 +993,7 @@ void Screen::draw_preferences(){
         if(row==3)ui::paragraph(overlay_,fonts_.regular,"An optional connection for films with transcripts.",x+65,y+26,18,640,25,muted,2);
         if(row>=2)ui::text(overlay_,fonts_.regular,">",x+706,y,30,ink);
     }
-    ui::text(overlay_,fonts_.mono,"PIXEL MUSEUM / 0.1.2",x+65,959,18,muted,Align::left,1.5f);
+    ui::text(overlay_,fonts_.mono,"PIXEL MUSEUM / 0.1.3",x+65,959,18,muted,Align::left,1.5f);
 }
 
 void Screen::draw_connection(){

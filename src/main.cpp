@@ -59,7 +59,7 @@ int main(){
     // Preferences remain in the title's persistent download0 directory.
     if(FILE*probe=std::fopen("/data/homebrew/PPSA70421/session.log","a")){std::fclose(probe);diagnostic_path="/data/homebrew/PPSA70421/session.log";}
     FILE* log=std::freopen(diagnostic_path.c_str(),"w",stdout);if(log)std::setvbuf(log,nullptr,_IOLBF,8192);
-    hui::sys::log("[Museum] Pixel Museum 0.1.2 / PPSA70421 / %s",root.c_str());
+    hui::sys::log("[Museum] Pixel Museum 0.1.3 / PPSA70421 / %s",root.c_str());
     hui::sys::log("[Museum] diagnostics %s / GPU composition trial 3",diagnostic_path.c_str());
     phase("diagnostics ready");
     size_t direct_pool=0,direct_available=0;const int direct_query=museum_direct_memory_info(&direct_pool,&direct_available);
