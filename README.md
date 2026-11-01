@@ -26,7 +26,11 @@ Pixel Museum brings the history of video games together with the world around th
 
 On first launch, choose your language and let the app download the image collection. An internet connection and about **10.05 GiB** of free space are needed for this one-time download. Progress is shown in the app, and interrupted downloads can be resumed.
 
-The application ZIP is about **372 MB**; the extracted app is about **730 MB**. Collection data are stored separately, without reserving another 16 GB for them. YouTube videos and streamed soundtracks require an internet connection.
+The application ZIP is about **529 MB**; the extracted app is about **889 MB**. Collection data are stored separately, without reserving another 16 GB for them. YouTube videos and streamed soundtracks require an internet connection.
+
+## Updating
+
+Updating from 0.1.1 or 0.1.2? Update through ProsperoStore, or close the app and replace the PPSA70421 folder via FTP. Keep your downloaded collection; it does not need to be downloaded again.
 
 ## Support the project
 
