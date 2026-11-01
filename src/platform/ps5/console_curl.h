@@ -37,6 +37,11 @@ extern "C"
      * An app that needs its own CURLOPT_SOCKOPTFUNCTION calls console_curl_nonblocking() in it. */
     void console_curl_setup(CURL *easy);
 
+    /* Collection installer only: same TLS/non-blocking setup, with an optional
+     * 1 MiB receive-window request and before/after diagnostics. Failure to
+     * adjust the window never rejects a socket or changes other curl handles. */
+    void console_curl_setup_bulk(CURL *easy);
+
     /* For the network test: the address our DNS lookup and the console's resolver
      * each give for `name`, as one line ("DNS own 1.2.3.4 (1.1.1.1), PS5 5.6.7.8"). */
     void console_curl_describe_lookup(const char *name, char *out, size_t size);

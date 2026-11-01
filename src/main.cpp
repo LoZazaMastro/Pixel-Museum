@@ -72,8 +72,8 @@ int main(){
     museum::Screen screen;screen.set_trophy_curator_preview(true);if(!screen.init(root,data)){hui::sys::log("[Museum] startup failed");hui::sys::quit();}
     phase("interface ready");
     museum::Music music;if(!music.init(root+"/music/eras"))hui::sys::log("[Museum] soundtrack unavailable: %s",music.error().c_str());
-    music.onboarding_active(screen.onboarding_active());
-    music.volume(screen.music_volume());music.muted(screen.music_muted()||screen.collection_pending());
+    music.onboarding_active(screen.onboarding_active()||screen.collection_pending());
+    music.volume(screen.music_volume());music.muted(screen.music_muted());
     phase("music ready");
     hui::audio::Mixer mixer;hui::audio::SoundBank sounds;
     auto sound_stats=sounds.load(root+"/assets/audio/museum-navigation");
@@ -157,7 +157,7 @@ int main(){
         }
         pad.tick(dt,usable);if(usable&&!haptic_mode&&feedback.rumble_seconds>0)pad.rumble(feedback.rumble_strength,feedback.rumble_seconds);
         const int64_t update_start=hui::sys::monotonic_us();
-        screen.update(dt);music.onboarding_active(screen.onboarding_active());music.select_year(screen.selected_year());music.select_timeline(screen.culture_timeline_active());music.archival_ambient_gain(screen.archival_ambient_gain());music.volume(screen.music_volume());music.muted(screen.music_muted()||screen.experience_active()||screen.collection_pending());music.video_active(screen.video_active());music.listening_room(screen.music_player_active());
+        screen.update(dt);music.onboarding_active(screen.onboarding_active()||screen.collection_pending());music.select_year(screen.selected_year());music.select_timeline(screen.culture_timeline_active());music.archival_ambient_gain(screen.archival_ambient_gain());music.volume(screen.music_volume());music.muted(screen.music_muted()||screen.experience_active());music.video_active(screen.video_active());music.listening_room(screen.music_player_active());
         if(screen.take_trophy_sound())sounds.play(mixer,hui::audio::SoundSet::glass,{hui::audio::Cue::notify,1.f,0.f,hui::audio::museum_original::interface_gain(hui::audio::Cue::notify,1.f)});
         const int64_t update_end=hui::sys::monotonic_us();update_time.add(update_end-update_start);
         screen.draw(display.width(),display.height());

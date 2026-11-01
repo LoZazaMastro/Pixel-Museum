@@ -16,6 +16,7 @@
 #include "museum/timeline_motion.hpp"
 #include "museum/volume_preferences.hpp"
 #include "museum/collection_installer.hpp"
+#include "museum/screen_collection_policy.hpp"
 #include "museum/collection_install_view.hpp"
 #include "platform/media.hpp"
 #include "gfx/renderer.hpp"
@@ -76,6 +77,7 @@ public:
     bool trophy_curator_preview()const{return trophy_curator_preview_;}
 private:
     CollectionInstaller collection_installer_;
+    CollectionStartupPresentation collection_presentation_;
     bool collection_pending_=false,collection_started_=false,collection_media_started_=false,collection_media_error_=false;
     float collection_elapsed_=0,collection_ready_elapsed_=0;
     int collection_phase_log_=-1,collection_progress_log_=-1;

@@ -4,7 +4,7 @@
 #include <algorithm>
 #include <cmath>
 namespace museum {
-// Held browsing keeps surrounding stops still; only the central label is live.
+// Accelerated held browsing shows only the live central stop.
 struct TimelineMotion {
     int direction=0,anchor=0;
     float age=0;
@@ -24,6 +24,7 @@ struct TimelineMotion {
         age+=std::isfinite(dt)?std::clamp(dt,0.f,.05f):0.f;
         if(!locked&&age>=.65f&&i.nav_repeat){locked=true;anchor=focus;position.snap(float(focus));}
     }
+    bool stop_visible(int slot)const{return !locked||slot==anchor;}
     int rail_focus(int focus)const{return locked?anchor:focus;}
     float rail_position(float position)const{return locked?float(anchor):position;}
     int content_index(int slot,int focus)const{return locked&&slot==anchor?focus:slot;}

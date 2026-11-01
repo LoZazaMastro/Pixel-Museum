@@ -2,7 +2,7 @@ The games we played. The world we grew up in. An independent, interactive museum
 
 ![Pixel Museum](website/assets/social-preview.png)
 
-**[Visit the website](https://lozazamastro.github.io/Pixel-Museum/) · [Download Pixel Museum](https://github.com/LoZazaMastro/Pixel-Museum/releases/latest)**
+**[Visit the website](https://lozazamastro.github.io/Pixel-Museum/) · [Download Pixel Museum](https://github.com/LoZazaMastro/Pixel-Museum/releases/latest/download/PPSA70421.zip)**
 
 Pixel Museum brings the history of video games together with the world around them. One timeline follows games, consoles, computers, creators and studios; the other explores films, music, art and historical events from the same years. Open an exhibit to read its story, look through photographs and artwork, or watch a related film.
 
@@ -22,15 +22,11 @@ Pixel Museum brings the history of video games together with the world around th
 
 ## Installation
 
-You need a homebrew-enabled PS5 and a compatible homebrew launcher. The extracted application takes approximately **11.49 GB**. YouTube videos and streamed soundtracks require an internet connection.
+[Download the ZIP](https://github.com/LoZazaMastro/Pixel-Museum/releases/latest/download/PPSA70421.zip), extract it and transfer the `PPSA70421` folder to `/data/homebrew/` on your PS5 via FTP. Then launch Pixel Museum from your homebrew launcher.
 
-1. Open the [latest release](https://github.com/LoZazaMastro/Pixel-Museum/releases/latest) and download **all six numbered archive parts** into the same folder. Keep their names unchanged.
-2. Open `Pixel-Museum-PPSA70421-20261031.7z.001` with **7-Zip** and extract it. The remaining parts are read automatically; do not extract them separately.
-3. Close Pixel Museum on the PS5 if you are updating an existing installation.
-4. Using FTP, copy the extracted `PPSA70421` folder into `/data/homebrew/`, preserving its contents and subfolders. The resulting path is `/data/homebrew/PPSA70421/`.
-5. Open your homebrew launcher and launch Pixel Museum.
+On first launch, choose your language and let the app download the image collection. An internet connection and about **10.05 GiB** of free space are needed for this one-time download. Progress is shown in the app, and interrupted downloads can be resumed.
 
-This release is a complete homebrew folder, rather than a retail PKG installer. `INSTALL.txt` and `SHA256SUMS.txt` are included with the release for installation guidance and download verification.
+The application ZIP is about **372 MB**; the extracted app is about **730 MB**. Collection data are stored separately, without reserving another 16 GB for them. YouTube videos and streamed soundtracks require an internet connection.
 
 ## Support the project
 

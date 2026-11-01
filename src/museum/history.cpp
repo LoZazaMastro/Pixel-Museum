@@ -108,6 +108,7 @@ void Screen::draw_history_rail(float opened){
     page_.push_clip({0,142,1920,130});
     const int rail_focus=timeline_motion_.rail_focus(history_focus_index_);
     for(int n=std::max(0,rail_focus-4);n<std::min(int(history_catalog_.entries.size()),rail_focus+5);++n){
+        if(!timeline_motion_.stop_visible(n))continue;
         const auto&e=history_catalog_.entries[size_t(timeline_motion_.content_index(n,history_focus_index_))];const float distance=float(n)-timeline_motion_.rail_position(history_position_.value);
         const float hover=std::clamp(1-std::abs(distance),0.f,1.f);
         const float extra=170*tween::smoothstep(std::min(1.f,std::abs(distance)));

@@ -9,6 +9,7 @@ static void exercise(int hz,bool culture,bool stick){
     if(stick)frame.stick_x=.9f;else frame.held=action_bit(Action::right);
     const float dt=1.f/hz;motion.input(frame,dt,focus,true,position);++focus;position.target=float(focus);position.update(dt,17);
     assert(!motion.locked&&position.value>float(focus-1)&&position.value<float(focus));
+    for(int slot=focus-4;slot<=focus+4;++slot)assert(motion.stop_visible(slot));
     float age=dt,last_repeat=0;int anchor=-1;bool saw_lock=false;
     for(int n=1;n<hz*2;++n){
         age+=dt;frame.nav=Direction::none;frame.nav_repeat=false;
@@ -21,10 +22,12 @@ static void exercise(int hz,bool culture,bool stick){
             assert(motion.anchor==anchor&&motion.rail_position(position.value)==float(anchor));
             assert(motion.content_index(anchor,focus)==focus);
             assert(motion.content_index(anchor-1,focus)==anchor-1);
+            int shown=0;for(int slot=anchor-4;slot<=anchor+4;++slot){shown+=motion.stop_visible(slot);assert(motion.stop_visible(slot)==(slot==anchor));}assert(shown==1);
         }
     }
     assert(saw_lock);frame={};frame.connected=true;motion.input(frame,dt,focus,true,position);
     assert(!motion.locked&&position.value==float(focus)&&position.velocity==0);
+    for(int slot=focus-4;slot<=focus+4;++slot)assert(motion.stop_visible(slot));
     // Reversal, loss of focus, other surfaces, and both finite boundaries.
     for(int boundary:{0,40}){
         focus=boundary;motion.locked=true;motion.anchor=20;motion.direction=1;position.snap(20);
@@ -34,4 +37,4 @@ static void exercise(int hz,bool culture,bool stick){
         frame.focus_lost=false;motion.locked=true;motion.input(frame,dt,focus,false,position);assert(!motion.locked);
     }
 }
-int main(){for(int hz:{30,60,120})for(bool culture:{false,true})for(bool stick:{false,true})exercise(hz,culture,stick);std::puts("PASS timeline motion:30/60/120Hz;game+culture;Dpad+stick;tap/hold/release/reversal/focus/boundary");}
+int main(){for(int hz:{30,60,120})for(bool culture:{false,true})for(bool stick:{false,true})exercise(hz,culture,stick);std::puts("PASS timeline motion:30/60/120Hz;game+culture;Dpad+stick;tap/hold(centeronly)/release(allstops)/reversal/focus/boundary");}

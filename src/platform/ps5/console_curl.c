@@ -93,6 +93,41 @@ static int console_curl_on_socket(void *user, curl_socket_t socket, curlsocktype
     return CURL_SOCKOPT_OK;
 }
 
+/* Collection downloads are large sequential transfers. Keep the proven
+ * non-blocking path, and request a bounded receive window before connect so
+ * the kernel can negotiate TCP window scaling. Unsupported tuning is harmless:
+ * keep the ordinary socket and record the actual accepted size, not a promise. */
+static int console_curl_on_bulk_socket(void *user, curl_socket_t socket, curlsocktype purpose)
+{
+    (void)user;
+    const int saved_errno = errno;
+    const int nonblocking = console_curl_nonblocking(socket);
+    const int nonblocking_errno = nonblocking < 0 ? errno : 0;
+    if (purpose == CURLSOCKTYPE_IPCXN)
+    {
+        int before = 0, after = 0;
+        socklen_t length = sizeof(before);
+        const int before_result = getsockopt(socket, SOL_SOCKET, SO_RCVBUF, &before, &length);
+        const int before_errno = before_result < 0 ? errno : 0;
+        const int requested = 1 << 20;
+        const int attempted = before_result < 0 || before < requested;
+        int request_result = 0, request_errno = 0;
+        if (attempted)
+        {
+            request_result = setsockopt(socket, SOL_SOCKET, SO_RCVBUF, &requested, sizeof(requested));
+            request_errno = request_result < 0 ? errno : 0;
+        }
+        length = sizeof(after);
+        const int after_result = getsockopt(socket, SOL_SOCKET, SO_RCVBUF, &after, &length);
+        const int after_errno = after_result < 0 ? errno : 0;
+        printf("[Museum] collection bulk socket nonblocking=%d errno=%d / receive before=%d rc=%d errno=%d requested=%d attempted=%d rc=%d errno=%d after=%d rc=%d errno=%d\n",
+               nonblocking, nonblocking_errno, before, before_result, before_errno,
+               requested, attempted, request_result, request_errno, after, after_result, after_errno);
+    }
+    errno = saved_errno;
+    return CURL_SOCKOPT_OK;
+}
+
 /* The Mozilla root store, compiled in (ca_bundle.c). The console's own list at
  * /system/common/cert/CA_LIST.cer is not readable from every firmware's sandbox
  * (13.60: every request failed, the home feed stayed empty), and curl refuses
@@ -114,6 +149,12 @@ void console_curl_setup(CURL *easy)
                            console_curl_readable(system_file) ? system_file : NULL);
     (void)curl_easy_setopt(easy, CURLOPT_CAPATH, NULL);
     (void)curl_easy_setopt(easy, CURLOPT_SOCKOPTFUNCTION, console_curl_on_socket);
+}
+
+void console_curl_setup_bulk(CURL *easy)
+{
+    console_curl_setup(easy);
+    (void)curl_easy_setopt(easy, CURLOPT_SOCKOPTFUNCTION, console_curl_on_bulk_socket);
 }
 
 /* ---- fcntl on sockets ---------------------------------------------------------------------- */

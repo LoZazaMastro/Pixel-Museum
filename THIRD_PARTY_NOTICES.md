@@ -9,3 +9,5 @@ Individual photographs, films and 3D models retain the creators, source pages an
 Optional DualSense state decoding is adapted from **PSSwanStation by Press5elect**, whose local reference traces the controller layout to PSFlyCast. The adapted source retains its copyright notice. PSSwanStation's GPL-3.0-or-later [additional attribution terms](licenses/psswanstation-additional-terms.txt) are preserved with the application. [Controller implementation notes](docs/research/controller-sensors.md) distinguish verified byte-layout tests from physical sensor behaviour that still requires console testing.
 
 The museum's original ambient score and its reproducible composition source are described in [music/README.md](music/README.md).
+
+The restricted collection writer and descriptor-relative syscall normalization adapt the user-supplied Stremio Plus download writer, under GPL-3.0-or-later. Its source licence identifiers are retained; the adapted writer is included under `tools/collection-writer/`.

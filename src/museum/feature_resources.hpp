@@ -2,7 +2,7 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
 #pragma once
 namespace museum {
-// content/catalog.json SHA256 aa8b90b6bcba4f28a2b94cb244cc57c0556d203af0931849c8429d8b296c0eaa
+// content/catalog.json SHA256 925b14a1f0d5ae96a4a8b8b20f274bb11f0e2ff113d5b06f533890f917cd5ebc
 // content/human-history.json SHA256 da55fab217ee9e1064bb4eae1990397dc7bba0a519cf93643d14101c69b343bd
 // content/credits.json SHA256 32af7b8aae1ccf3ff705204bd3abec463a9a8c11d18245aab09855bc41212dd9
 // content/culture-memories.json SHA256 f86c4548bb8e3da12d89715f736ca6813766b7f22287325f8008eff5569000b2

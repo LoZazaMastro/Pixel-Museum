@@ -10,6 +10,7 @@
 #include "core/save_file.hpp"
 #define JSON_NOEXCEPTION 1
 #include "third_party/nlohmann/json.hpp"
+#include "platform/collection_archive.hpp"
 #include <algorithm>
 #include <chrono>
 #include <condition_variable>
@@ -80,6 +81,7 @@ struct RemoteCache::Impl {
     std::string root; pthread_t thread{}; bool running = false, stopping = false;
     std::uint64_t tick = 0;
     bool model_pressure=false;
+    detail::CollectionArchive archives;
     bool packaged_only=false;std::map<std::string,std::string> packaged,previews,image_hashes;
     std::vector<std::string> warm;
     std::deque<std::string> prefetch,bulk;
@@ -260,7 +262,8 @@ struct RemoteCache::Impl {
             std::string body;
             long failed_http_status=0;
             struct stat info{};
-            if (stat(result.path.c_str(), &info) == 0 && info.st_size > 0 && static_cast<std::size_t>(info.st_size) < local_byte_limit) {
+            if(image&&packaged_only&&archives.contains(result.path)){archives.read(result.path,body,local_byte_limit);}
+            else if (stat(result.path.c_str(), &info) == 0 && info.st_size > 0 && static_cast<std::size_t>(info.st_size) < local_byte_limit) {
                 FILE *file=std::fopen(result.path.c_str(),"rb");
                 if (file) {
                     body.resize(static_cast<std::size_t>(info.st_size));
@@ -362,8 +365,9 @@ bool packaged_images_complete(const std::string&root){
 }
 bool RemoteCache::images_from_package(const std::string&root,const std::string&collection_root){
     if(impl_->running)return false;
-    impl_->packaged_only=true;std::string bytes;
+    impl_->packaged_only=true;impl_->packaged.clear();impl_->previews.clear();impl_->image_hashes.clear();impl_->archives.slices.clear();std::string bytes;
     const auto& image_root=collection_root.empty()?root:collection_root;
+    if(!impl_->archives.load(root+"/content/collection-archive-index.json",image_root))return false;
     if(!hui::save::read_file(image_root+"/assets/images/manifest.json",&bytes,16u<<20))return false;
     const auto manifest=nlohmann::json::parse(bytes,nullptr,false);if(!manifest.is_object())return false;
     impl_->packaged.clear();impl_->previews.clear();impl_->image_hashes.clear();

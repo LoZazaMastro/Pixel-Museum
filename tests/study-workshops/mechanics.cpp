@@ -6,14 +6,32 @@ struct WorkshopInspection {
  static void run(){
   hui::InputFrame i;i.connected=true;hui::ui::Feedback f;
   PixelDrawing pixels;assert(pixels.cells_.size()==256&&pixels.changes()==0);for(auto c:pixels.cells_)assert(c==0);
-  std::set<unsigned> colours(PixelDrawing::palette_.begin(),PixelDrawing::palette_.end());assert(colours.size()==64&&!colours.count(0xffffff));
+  std::set<unsigned> colours(PixelDrawing::palette_.begin(),PixelDrawing::palette_.end());assert(colours.size()==PixelDrawing::palette_.size()&&!colours.count(0xffffff));
+  const int palette_count=int(PixelDrawing::palette_.size());
+  std::set<unsigned> supplied(pixel_palette::provided.begin(),pixel_palette::provided.end());supplied.erase(0xffffff);
+  assert(pixel_palette::provided.size()==64&&colours==supplied&&colours.size()>=16);
   i.pressed=hui::action_bit(hui::Action::confirm);pixels.handle(i,f);assert(pixels.cells_[0]==1&&pixels.changes()==1);
   i={};i.connected=true;i.touch.available=true;i.touch.count=1;i.touch.points[0]={1,1,0};i.pressed=hui::action_bit(hui::Action::touch);pixels.handle(i,f);assert(pixels.x_==0&&pixels.y_==0&&pixels.changes()==1);
-  for(int n=0;n<64;++n){pixels.x_=n%16;pixels.y_=n/16;i={};i.connected=true;i.pressed=hui::action_bit(hui::Action::confirm);pixels.handle(i,f);assert(pixels.cells_[n]==n+1);i.pressed=hui::action_bit(hui::Action::page_next);pixels.handle(i,f);}assert(pixels.brush_==0);
-  i.pressed=hui::action_bit(hui::Action::page_prev);pixels.handle(i,f);assert(pixels.brush_==63);i.pressed=hui::action_bit(hui::Action::page_next);pixels.handle(i,f);assert(pixels.brush_==0);
-  pixels.x_=pixels.y_=0;i.pressed=hui::action_bit(hui::Action::back);pixels.handle(i,f);assert(pixels.cells_[0]==0&&pixels.cells_[1]==2&&pixels.changes()==63);
+  // Drive the real input path through every unique colour from the original64.
+  for(int n=0;n<palette_count;++n){pixels.x_=0;pixels.y_=0;i={};i.connected=true;i.pressed=hui::action_bit(hui::Action::confirm);pixels.handle(i,f);assert(pixels.cells_[0]==n+1);i.pressed=hui::action_bit(hui::Action::page_next);pixels.handle(i,f);}assert(pixels.brush_==0);
+  i.pressed=hui::action_bit(hui::Action::page_prev);pixels.handle(i,f);assert(pixels.brush_==palette_count-1);i.pressed=hui::action_bit(hui::Action::page_next);pixels.handle(i,f);assert(pixels.brush_==0);
+  pixels.brush_=palette_count-1;
+  i.pressed=hui::action_bit(hui::Action::confirm);pixels.handle(i,f);assert(pixels.cells_[0]==pixels.brush_+1&&pixels.changes()==1);
+  i.pressed=hui::action_bit(hui::Action::back);pixels.handle(i,f);assert(pixels.cells_[0]==0&&pixels.changes()==0);
+  pixels.brush_=1;pixels.x_=1;i.pressed=hui::action_bit(hui::Action::confirm);pixels.handle(i,f);assert(pixels.cells_[1]==2);
+  // Shoulder hold repeats at the same elapsed rate and stops immediately on release.
+  for(int hz:{30,60,120}){
+   PixelDrawing held;hui::InputFrame shoulder;shoulder.connected=true;shoulder.pressed=shoulder.held=hui::action_bit(hui::Action::page_next);
+   held.handle(shoulder,f);assert(held.brush_==1);shoulder.pressed=0;
+   for(int tick=0;tick<hz;++tick){held.update(1.f/hz);held.handle(shoulder,f);}
+   assert(held.brush_>=10&&held.brush_<=12);const int stopped=held.brush_;shoulder.held=0;held.handle(shoulder,f);
+   for(int tick=0;tick<hz;++tick){held.update(1.f/hz);held.handle(shoulder,f);}assert(held.brush_==stopped);
+   shoulder.pressed=shoulder.held=hui::action_bit(hui::Action::page_prev);held.handle(shoulder,f);assert(held.brush_==stopped-1);shoulder.pressed=0;
+   for(int tick=0;tick<hz;++tick){held.update(1.f/hz);held.handle(shoulder,f);}assert(held.brush_!=stopped-1);
+   shoulder.focus_lost=true;held.handle(shoulder,f);const int unfocused=held.brush_;held.update(.05f);assert(held.brush_==unfocused&&held.brush_hold_==0);
+  }
   i.pressed=hui::action_bit(hui::Action::west);pixels.handle(i,f);assert(!pixels.grid_&&pixels.cells_[1]==2);
-  i.focus_lost=true;i.pressed=hui::action_bit(hui::Action::north);pixels.handle(i,f);assert(pixels.changes()==63);
+  i.focus_lost=true;i.pressed=hui::action_bit(hui::Action::north);pixels.handle(i,f);assert(pixels.changes()==1);
   i.focus_lost=false;pixels.handle(i,f);assert(pixels.grid_&&pixels.changes()==0);for(auto c:pixels.cells_)assert(c==0);
   i.pressed=0;i.nav=hui::Direction::right;for(int n=0;n<40;++n)pixels.handle(i,f);i.nav=hui::Direction::down;for(int n=0;n<40;++n)pixels.handle(i,f);assert(pixels.x_==15&&pixels.y_==15);
   i={};i.connected=true;

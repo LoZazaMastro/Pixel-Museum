@@ -32,6 +32,7 @@ python3 "$root/tools/build-feature-resources.py"
 bash "$root/tools/setup-native-dependencies.sh" >/dev/null
 # Embed the tiny native OS notification relay before compiling its transport.
 bash "$root/tools/build-trophy-notification-relay.sh"
+bash "$root/tools/build-collection-writer.sh"
 
 param="$root/sce_sys/param.json"
 title_id=$(python3 - "$param" <<'PY'
@@ -57,8 +58,8 @@ if not re.fullmatch(r"\d{2}\.\d{2}", value.get("masterVersion", "")):
 size = value.get("downloadDataSize")
 if isinstance(size, bool) or not isinstance(size, int) or size < 0:
     raise SystemExit("param.json downloadDataSize must be a non-negative integer")
-if size != 16384:
-    raise SystemExit("Pixel Museum downloadDataSize must be 16384 MiB for the collection, one temporary pack and caches in /download0")
+if size != 256:
+    raise SystemExit("Pixel Museum downloadDataSize must be 256 MiB for the small title container; collection archives and large caches belong in /data/pixelmuseum")
 
 category = value.get("applicationCategoryType")
 badge = value.get("contentBadgeType")

@@ -75,15 +75,27 @@ def main():
             expected.add('content/' + name)
         else:
             pending.append(name)
+    # Optional trusted range index generated from the pinned, local USTAR packs.
+    archive_index = ROOT / 'content/collection-archive-index.json'
+    if archive_index.is_file():
+        index = json.loads(archive_index.read_text(encoding='utf-8'))
+        pinned = json.loads((args.delivery / 'packs/collection-packs.json').read_text(encoding='utf-8'))
+        assert index.get('schema_version') == 1
+        assert index.get('collection_id') == pinned['collection_id']
+        assert index.get('image_manifest_sha256') == pinned['image_manifest_sha256']
+        assert [(p['id'], p['sha256'], p['bytes']) for p in index['packs']] == [(p['id'], p['sha256'], p['bytes']) for p in pinned['packs']]
+        copy_changed(archive_index, base / 'content/collection-archive-index.json')
+        expected.add('content/collection-archive-index.json')
     if args.eboot:
         assert args.eboot.is_file()
         copy_changed(args.eboot, base / 'eboot.bin')
     parameter_path = base / 'sce_sys/param.json'
     parameters = json.loads(parameter_path.read_text(encoding='utf-8'))
     parameters['contentVersion'] = '00.001.001'
-    # /download0 holds the full persistent image collection plus one verified
-    # temporary pack and bounded caches. The stable source dist stays untouched.
-    parameters['downloadDataSize'] = 16384
+    # Only preferences and small state use the title container. The collection
+    # and large caches live in /data/pixelmuseum; do not reserve their size twice.
+    # Metadata does not resize existing containers. Stable dist stays untouched.
+    parameters['downloadDataSize'] = 256
     parameter_text = json.dumps(parameters, ensure_ascii=False, indent=2) + '\n'
     if parameter_path.read_text(encoding='utf-8') != parameter_text:
         parameter_path.write_text(parameter_text, encoding='utf-8')
@@ -96,7 +108,7 @@ def main():
               'copied_files_this_run': copied,
               'updated_resources': ['content/ui-locales from current source', 'assets/fonts from current source'],
               'contentVersion': '00.001.001',
-              'downloadDataSize': 16384,
+              'downloadDataSize': 256,
               'parameter_override': 'Only staged sce_sys/param.json; published stable dist untouched',
               'files': files, 'bytes': sum(row['bytes'] for row in files),
               'installation_note': 'An internet connection is required for the initial image collection download. Original-quality images are stored persistently for later use. The full preloaded-image package is also available.'}

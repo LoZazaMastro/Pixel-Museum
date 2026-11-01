@@ -1,6 +1,7 @@
 // Pixel Museum - the collection is installed before the first museum visit.
 // SPDX-License-Identifier: GPL-3.0-or-later
 #include "museum/screen.hpp"
+#include "core/save_file.hpp"
 #include "platform/ps5/system.hpp"
 #include <algorithm>
 #include <cmath>
@@ -24,11 +25,23 @@ void Screen::handle_language_choice(const hui::InputFrame& input,hui::ui::Feedba
 
 bool Screen::start_collection_media(){
     if(collection_media_started_)return true;
-    if(!cache_.images_from_package(root_,collection_installer_.cache_root())||!cache_.start(data_+"/cache")){
+    std::string media_data=data_;
+#if defined(__FreeBSD__)
+    // Keep the title's small preferences container separate from bulk caches.
+    // This subtree remains within the collection reset helper's exact allowlist.
+    media_data="/data/pixelmuseum/collection/media-cache";
+    if(!hui::save::ensure_directory("/data/pixelmuseum")||
+       !hui::save::ensure_directory("/data/pixelmuseum/collection")||
+       !hui::save::ensure_directory(media_data)){
+        hui::sys::log("[Museum] external media cache directory unavailable");
+        collection_media_error_=true;return false;
+    }
+#endif
+    if(!cache_.images_from_package(root_,collection_installer_.cache_root())||!cache_.start(media_data+"/cache")){
         hui::sys::log("[Museum] collection image worker could not start");
         collection_media_error_=true;return false;
     }
-    if(!video_.start(data_,root_))hui::sys::log("[Museum] video worker unavailable");
+    if(!video_.start(media_data,root_))hui::sys::log("[Museum] video worker unavailable");
     initialize_object_programs();
     changed();initialize_trophies();
     collection_media_started_=true;collection_media_error_=false;
@@ -41,11 +54,14 @@ CollectionInstallViewState Screen::collection_install_view_state()const{
     view.downloaded_bytes=state.downloaded_bytes;view.total_bytes=state.total_bytes;
     view.pack_index=state.pack_index;view.pack_count=state.pack_count;
     view.bytes_per_second=state.bytes_per_second;
+    view.installed_bytes=state.installed_bytes;view.total_expanded_bytes=state.total_expanded_bytes;
+    view.installed_files=state.installed_files;view.total_files=state.total_files;
     using Phase=CollectionInstaller::Phase;
     switch(state.phase){
     case Phase::unconfigured:case Phase::idle:view.phase=CollectionInstallPhase::checking;break;
     case Phase::downloading:view.phase=CollectionInstallPhase::downloading;break;
-    case Phase::verifying:case Phase::extracting:view.phase=CollectionInstallPhase::preparing;break;
+    case Phase::verifying:view.phase=state.stage.find("Checking installed")!=std::string::npos?CollectionInstallPhase::checking:CollectionInstallPhase::preparing;break;
+    case Phase::extracting:view.phase=state.stage.find("Migrat")!=std::string::npos||state.stage.find("Import")!=std::string::npos?CollectionInstallPhase::migrating:CollectionInstallPhase::installing;break;
     case Phase::paused:case Phase::cancelled:view.phase=CollectionInstallPhase::paused;break;
     case Phase::ready:view.phase=CollectionInstallPhase::complete;break;
     case Phase::failed:{
@@ -56,6 +72,7 @@ CollectionInstallViewState Screen::collection_install_view_state()const{
             error.find("checksum")!=std::string::npos||error.find("sha256")!=std::string::npos||error.find("archive")!=std::string::npos||error.find("manifest")!=std::string::npos||error.find("tar")!=std::string::npos?CollectionInstallError::invalid_files:CollectionInstallError::network;
         break;
     }}
+    view.progress=collection_install_work_progress(view);
     if(collection_media_error_){view.phase=CollectionInstallPhase::error;view.error=CollectionInstallError::invalid_files;}
     return view;
 }
@@ -66,6 +83,7 @@ void Screen::handle_collection_startup(const hui::InputFrame& input,hui::ui::Fee
     if(input.is_pressed(Action::back)){
         collection_installer_.pause();quit_=true;feedback.play(Cue::back);return;
     }
+    if(collection_presentation_.quiet_validation)return;
     if(!input.is_pressed(Action::confirm))return;
     const auto phase=collection_installer_.snapshot().phase;
     if(collection_media_error_){
@@ -90,6 +108,7 @@ void Screen::update_collection_startup(float delta){
         collection_started_=true;collection_installer_.start();
     }
     const auto state=collection_installer_.snapshot();
+    collection_presentation_.observe(state,collection_media_error_);
     const int phase=int(state.phase),progress=state.total_bytes?int(std::min(10.,double(state.downloaded_bytes)*10./double(state.total_bytes))):-1;
     if(phase!=collection_phase_log_||progress>collection_progress_log_){
         hui::sys::log("[Museum] collection %s / pack %zu of %zu / %llu of %llu bytes / %s",state.stage.c_str(),state.pack_count?state.pack_index+1:0,state.pack_count,static_cast<unsigned long long>(state.downloaded_bytes),static_cast<unsigned long long>(state.total_bytes),state.error.empty()?"OK":state.error.c_str());
@@ -98,9 +117,10 @@ void Screen::update_collection_startup(float delta){
     }
     if(collection_installer_.is_ready()&&!collection_media_error_){
         collection_ready_elapsed_+=elapsed;
-        // A completed download gets a short, clear conclusion before onboarding.
+        // Completed downloads/replayed introductions get a short conclusion.
+        // Ordinary reopen validation goes directly to the unchanged startup animation.
         // No onboarding clock, entry animation or startup note advances meanwhile.
-        if(collection_ready_elapsed_>=.6f&&start_collection_media())collection_pending_=false;
+        if(collection_ready_elapsed_>=collection_presentation_.completion_delay()&&start_collection_media())collection_pending_=false;
     }else collection_ready_elapsed_=0;
 }
 }

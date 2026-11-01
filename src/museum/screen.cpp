@@ -88,8 +88,18 @@ bool Screen::init(const std::string&root,const std::string&data){
     initial_exhibit_=catalog_.initial_id;
     refresh_today_date();
     load_settings();apply_language();language_selection_.snap(float(language_focus_));theme_selection_.snap(dark_theme_?0.f:1.f);theme_mix_.snap(dark_theme_?1.f:0.f);video_.volume(media_volume_);onboarding_fade_.snap(1);startup_phase("preferences");
+#if defined(__FreeBSD__)
+    // Keep preferences in the title container, but put the large downloaded
+    // collection on ordinary storage. The worker imports validated legacy
+    // checkpoints without deleting the previous installation.
+    const std::string collection_data="/data/pixelmuseum";
+    sys::log("[Museum] collection storage %s / legacy %s",collection_data.c_str(),data.c_str());
+    const bool configured=collection_installer_.configure(root+"/content/collection-packs.json",collection_data,root,false,data);
+#else
     const bool configured=collection_installer_.configure(root+"/content/collection-packs.json",data,root);
+#endif
     collection_pending_=configured||collection_installer_.snapshot().phase!=CollectionInstaller::Phase::unconfigured;
+    collection_presentation_.begin(onboarding_complete_);
     collection_started_=false;collection_media_started_=false;collection_elapsed_=0;collection_ready_elapsed_=0;
     auto theme=ui::default_theme();theme.page=paper;theme.text=ink;theme.text_muted=muted;theme.primary=ink;theme.focus=orange;theme.accent=orange;theme.surface=Color::rgb(0xe5e2d7);theme.surface_high=paper;
     viewer_.style.theme=theme;viewer_.style.radius=0;viewer_.style.frame=false;viewer_.style.focus_ring=false;viewer_.style.caption=false;viewer_.style.filmstrip=false;viewer_.style.counter=false;viewer_.style.readout=false;viewer_.style.arrows=false;viewer_.style.readout_size=22;viewer_.set_bounds({0,0,1920,1080});
@@ -554,7 +564,7 @@ void Screen::handle(const InputFrame&i,ui::Feedback&f){
             if(setting_==1){dark_theme_=!dark_theme_;theme_chosen_=true;}
             if(setting_==2){volumes_open_=true;volume_focus_=0;f.play(audio::Cue::select);return;}
             if(setting_==3)connection_panel_=true;
-            if(setting_==4){settings_=false;onboarding_=true;language_choice_=true;theme_choice_=true;onboarding_step_=0;onboarding_position_.snap(0);onboarding_fade_.snap(0);onboarding_leaving_=false;}
+            if(setting_==4){settings_=false;onboarding_=true;language_choice_=true;theme_choice_=true;onboarding_step_=0;onboarding_position_.snap(0);onboarding_fade_.snap(0);onboarding_leaving_=false;collection_presentation_.replay();if(collection_installer_.is_ready()){collection_pending_=true;collection_started_=true;collection_elapsed_=collection_ready_elapsed_=0;} }
             if(setting_==general_credits_setting){settings_=false;credits_=true;credits_scroll_.snap(0);}
             if(setting_==reset_trophies_setting){
                 if(trophies_&&trophies_->reset()){trophy_notifications_.clearPending();trophy_fallback_queue_.clear();trophy_fallback_time_=0;trophy_fallback_sound_=false;trophy_expanded_=false;trophy_pin_open_=false;if(trophy_pin_renderer_)trophy_pin_renderer_(TrophyView{},0,0,0,0,0,0);trophy_focus_=0;trophy_position_.snap(0);trophy_media_session_.clear();trophy_media_played_=0;notice_=std::string(i18n::tr("Trophy progress reset."));notice_time_=3.5f;f.play(audio::Cue::saved);}
@@ -1046,6 +1056,7 @@ void Screen::draw(int width,int height,unsigned framebuffer){
     output_width_=width;output_height_=height;viewer_.style.pixel_scale=1920.f/std::max(1,width);
     if(collection_pending_){
         if(language_choice_){welcome_.clear();draw_onboarding();mark(0);renderer_.begin();renderer_.draw(welcome_);}
+        else if(collection_presentation_.quiet_validation){draw_boot();mark(0);renderer_.begin();renderer_.draw(boot_);}
         else{boot_.clear();draw_collection_install_view(boot_,fonts_,collection_install_view_state(),theme_mix_.value,collection_elapsed_,reduced_);mark(0);renderer_.begin();renderer_.draw(boot_);}
         renderer_.present(framebuffer,width,height);mark(2);return;
     }

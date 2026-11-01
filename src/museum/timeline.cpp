@@ -66,6 +66,7 @@ void Screen::draw_timeline(){
     page_.push_clip({0,744-lift,1920,223});
     const int rail_focus=timeline_motion_.rail_focus(focus_);
     for(int n=std::max(0,rail_focus-4);n<std::min(int(visible_.size()),rail_focus+5);++n){
+        if(!timeline_motion_.stop_visible(n))continue;
         const int content=timeline_motion_.content_index(n,focus_);
         const auto& item=catalog_.entries[size_t(visible_[size_t(content)])];
         const float distance=float(n)-timeline_motion_.rail_position(timeline_.value);

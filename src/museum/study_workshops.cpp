@@ -2,10 +2,12 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
 #include "museum/study_workshops.hpp"
 #include "museum/haptic_interactions.hpp"
+#include "museum/pixel_palette.hpp"
 #include <algorithm>
 #include <array>
 #include <cmath>
 #include <cstdio>
+#include <cstdint>
 namespace museum {
 struct WorkshopInspection;
 namespace {
@@ -176,22 +178,19 @@ public:
 // grid and the uninterrupted preview show how a single shade changes an edge.
 class PixelDrawing final:public Workshop {
  friend struct museum::WorkshopInspection;
- // A curated NES-inspired colour vocabulary, not a claim of one exact PPU.
- // White belongs only to the blank canvas/eraser, never the64-colour palette.
- static constexpr std::array<unsigned,64>palette_={
-  0x626262,0x001fb2,0x2404c8,0x5200b2,0x730076,0x800024,0x730b00,0x522800,0x244400,0x005700,0x005c00,0x005324,0x003c76,0x000000,0x111111,0x202020,
-  0xababab,0x0d57ff,0x4b30ff,0x8a13ec,0xbc08b0,0xd21253,0xc72e00,0x9d5400,0x607b00,0x209800,0x00a300,0x009942,0x007db4,0x3a3a3a,0x4b4b4b,0x585858,
-  0xd6d6d6,0x53aeff,0x9085ff,0xd365ff,0xff57ff,0xff5dcf,0xff7757,0xfa9e00,0xbdc700,0x7ae700,0x43f611,0x26ef7e,0x2cd5f6,0x747474,0x868686,0x989898,
-  0xe4d1ac,0xb6e1ff,0xced1ff,0xe9c3ff,0xffbcff,0xffbdf4,0xffc6c3,0xffd59a,0xe9e681,0xcef481,0xb6fb9a,0xa9fac3,0xa9f0f4,0xb8b8b8,0xc7c1b8,0xd3c1c7};
- std::array<unsigned char,256>cells_{};int x_=0,y_=0,brush_=0;bool grid_=true;float cursor_x_=0,cursor_y_=0;
- void paint(int index,int colour){if(cells_[size_t(index)]==colour)return;cells_[size_t(index)]=static_cast<unsigned char>(colour);event(60+brush_%12,.025f);}
+ // The supplied 64-entry NES palette, deduplicated and ordered by hue/lightness.
+ // White is reserved for the canvas and eraser, never a selectable brush.
+ static constexpr auto palette_=museum::pixel_palette::colours;
+ std::array<std::uint16_t,256>cells_{};int x_=0,y_=0,brush_=0;bool grid_=true;float cursor_x_=0,cursor_y_=0;
+ int brush_hold_=0;float brush_repeat_=0;
+ void paint(int index,int colour){if(cells_[size_t(index)]==colour)return;cells_[size_t(index)]=static_cast<std::uint16_t>(colour);event(60+brush_%12,.025f);}
  int changes()const{int n=0;for(auto c:cells_)n+=c!=0;return n;}
 public:
  PixelDrawing(){reset();}
- void reset()override{clean();cells_.fill(0);x_=y_=brush_=0;grid_=true;cursor_x_=cursor_y_=0;}
- const char*help()const override{return "Start with a white 16-by-16 canvas. Choose a pixel, draw with the selected colour, or erase it to white. Browse 64 NES-inspired colours with L1/R1; four are visible at once. Triangle clears the canvas. The touchpad is not used.";}
+ void reset()override{clean();cells_.fill(0);x_=y_=brush_=0;grid_=true;cursor_x_=cursor_y_=0;brush_hold_=0;brush_repeat_=0;}
+ const char*help()const override{return "Start with a white 16-by-16 canvas. Choose a pixel, draw with the selected colour, or erase it to white. Hold L1/R1 to browse the NES-inspired palette; sixteen colours are visible at once. White is available only through the eraser. Triangle clears the canvas. The touchpad is not used.";}
  void handle(const InputFrame&i,Feedback&f)override{
-  paused_=i.focus_lost||!i.connected;if(paused_){movement_.reset();rumble_=0;return;}
+  paused_=i.focus_lost||!i.connected;if(paused_){movement_.reset();rumble_=0;brush_hold_=0;brush_repeat_=0;return;}
   movement_.drain(f,rumble_>0);
   if(rumble_>0){f.feel(hui::audio::Tactile::touch,rumble_,.035f);rumble_=0;}
   if(i.is_pressed(Action::north)){const bool changed=changes()!=0||!grid_||x_||y_||brush_;reset();if(changed)f.feel(hui::audio::Tactile::back,.07f,.025f);return;}
@@ -199,14 +198,19 @@ public:
   const int previous_x=x_,previous_y=y_,previous_brush=brush_;
   if(i.nav==Direction::left)x_=std::max(0,x_-1);if(i.nav==Direction::right)x_=std::min(15,x_+1);
   if(i.nav==Direction::up)y_=std::max(0,y_-1);if(i.nav==Direction::down)y_=std::min(15,y_+1);
-  if(i.is_pressed(Action::page_prev))brush_=(brush_+63)%64;
-  if(i.is_pressed(Action::page_next))brush_=(brush_+1)%64;
+  const bool previous=i.is_held(Action::page_prev)||i.is_pressed(Action::page_prev);
+  const bool next=i.is_held(Action::page_next)||i.is_pressed(Action::page_next);
+  const int direction=int(next)-int(previous);
+  if(!direction){brush_hold_=0;brush_repeat_=0;}
+  else if(direction!=brush_hold_||i.is_pressed(direction>0?Action::page_next:Action::page_prev)){
+   brush_=(brush_+direction+int(palette_.size()))%int(palette_.size());brush_hold_=direction;brush_repeat_=.28f;
+  }else if(brush_repeat_<=0){brush_=(brush_+direction+int(palette_.size()))%int(palette_.size());brush_repeat_+=.075f;}
   if(previous_brush!=brush_)f.feel(hui::audio::Tactile::focus,.055f,.025f);
   if(i.is_pressed(Action::confirm))paint(y_*16+x_,brush_+1);
   if(i.is_pressed(Action::back))paint(y_*16+x_,0);
   if(x_!=previous_x||y_!=previous_y){movement_.step(float(x_-previous_x),float(y_-previous_y));movement_.drain(f,rumble_>0);}
  }
- void update(float dt)override{dt=clock(dt);cursor_x_+=(float(x_)-cursor_x_)*std::min(1.f,dt*18);cursor_y_+=(float(y_)-cursor_y_)*std::min(1.f,dt*18);}
+ void update(float dt)override{dt=clock(dt);if(brush_hold_)brush_repeat_-=dt;cursor_x_+=(float(x_)-cursor_x_)*std::min(1.f,dt*18);cursor_y_+=(float(y_)-cursor_y_)*std::min(1.f,dt*18);}
  void draw(DrawList&l,Fonts&f,Rect r,Color a)override{
   if(!begin(l,f,r,a,"PIXEL ART / NES-INSPIRED COLOURS","Make one square matter."))return;
   constexpr float preview_centre=524,large_top=148,large_side=160,small_top=354,small_side=64,label_gap=24;
@@ -222,13 +226,12 @@ public:
   l.bordered_rect({73+cursor_x_*19,143+cursor_y_*19,19,19},0,Color{0,0,0,0},2,a);
   hui::ui::text(l,f.mono,"WITHOUT THE GRID",preview_centre,large_top+large_side+label_gap,10,muted,Align::center,.7f);
   hui::ui::text(l,f.mono,"AT A GLANCE",preview_centre,small_top+small_side+label_gap,10,muted,Align::center,.7f);
-  char value[24];hui::ui::format(value,"%02d / 64",brush_+1);
+  char value[24];hui::ui::format(value,"%d / %d",brush_+1,int(palette_.size()));
   hui::ui::text(l,f.mono,"COLOUR",732,157,12,muted,Align::left,.8f);
   hui::ui::text(l,f.display,value,728,209,38,a);
-  const int first=(brush_/4)*4;
-  for(int n=0;n<4;++n){l.rounded_rect({735+n*52.f,240,40,40},1,Color::rgb(palette_[size_t(first+n)]));if(brush_==first+n)l.bordered_rect({732+n*52.f,237,46,46},2,Color{0,0,0,0},2,a);}
-  hui::ui::paragraph(l,f.regular,"Choose a colour, then draw one pixel at a time. Erase to return a square to white. The small previews show how the whole picture reads.",732,322,13.6f,220,20,ink,99);
-  footer(l,f,"A white 16-by-16 canvas and 64 NES-inspired colours. Four colours are visible at a time; white is reserved for erasing.");end(l);
+  const int first=std::min((brush_/16)*16,std::max(0,int(palette_.size())-16));
+  for(int n=0;n<16&&first+n<int(palette_.size());++n){const float px=735+(n%4)*52.f,py=240+(n/4)*52.f;l.rounded_rect({px,py,40,40},1,Color::rgb(palette_[size_t(first+n)]));if(brush_==first+n)l.bordered_rect({px-3,py-3,46,46},2,Color{0,0,0,0},2,a);}
+  end(l);
  }
 };
 
