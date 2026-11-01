@@ -112,3 +112,6 @@ footer .preservation h2{font-size:clamp(27px,2.4vw,36px)}
 .support-art path{transform-box:fill-box;transform-origin:center;animation:museum-heartbeat 2.8s ease-in-out infinite}
 @keyframes museum-heartbeat{0%,28%,100%{transform:scale(1)}8%{transform:scale(1.1)}16%{transform:scale(1)}22%{transform:scale(1.06)}}
 @media(prefers-reduced-motion:reduce){.support-art path{animation:none}}
+
+/* Compact repository link beside the theme control. */
+.masthead nav>a.github-link{display:grid;place-items:center;flex:none;width:40px;height:40px;padding:10px;color:var(--ink);transition:background-color .2s,color .2s}.github-link svg{display:block}.github-link:hover{background:var(--surface);color:var(--ink)}@media(max-width:480px){.masthead nav>a.github-link{width:36px;height:36px;padding:8px}}
