@@ -90,7 +90,7 @@ bool CollectionWriter::ack(std::uint64_t&offset,std::string&error,int seconds){
   return failure("Invalid collection writer response",EPROTO,&error);
  }
  const auto response_pid=pmcw_get64(bytes+16);if(!response_pid||(pid_&&response_pid!=pid_))return failure("Collection writer identity changed",EPROTO,&error);
- const auto code=pmcw_get32(bytes+4);if(!pid_){std::printf("[Museum] collection writer HELLO ACK status=%u offset=%llu pid=%llu\n",unsigned(code),static_cast<unsigned long long>(pmcw_get64(bytes+8)),static_cast<unsigned long long>(response_pid));std::fflush(stdout);}if(code)return failure("Collection writer storage",int(code),&error);pid_=response_pid;offset=pmcw_get64(bytes+8);return true;
+ const auto code=pmcw_get32(bytes+4);if(!pid_){std::printf("[Museum] collection writer HELLO ACK status=%u offset=%llu pid=%llu\n",unsigned(code),static_cast<unsigned long long>(pmcw_get64(bytes+8)),static_cast<unsigned long long>(response_pid));std::fflush(stdout);}if(code){const auto diagnostic=pmcw_get64(bytes+8);std::printf("[Museum] collection writer storage errno=%u stage=%u detail=%u\n",unsigned(code),unsigned(diagnostic>>32),unsigned(diagnostic&0xffffffffu));std::fflush(stdout);return failure("Collection writer storage",int(code),&error);}pid_=response_pid;offset=pmcw_get64(bytes+8);return true;
 }
 bool CollectionWriter::connect_session(unsigned port,const std::array<unsigned char,32>&nonce,const std::string&marker,std::string&error){
  if(port){const auto deadline=Clock::now()+std::chrono::seconds(15);do{fd_=connect_loopback(port);if(fd_>=0)break;poll(nullptr,0,100);}while(Clock::now()<deadline);}
@@ -124,6 +124,11 @@ std::ptrdiff_t CollectionWriter::write(const void*data,std::size_t bytes){
  if(!transfer(fd_,header,sizeof(header),true,5)||!transfer(fd_,const_cast<void*>(data),bytes,true,120)){failure("Collection writer transfer",errno);return -1;}if(!ack(offset,error)||offset!=offset_+bytes){if(error.empty())failure("Invalid collection writer write offset",EPROTO);return -1;}offset_=offset;return std::ptrdiff_t(bytes);
 }
 bool CollectionWriter::finish(std::string&error){if(!opened_)return failure("No collection writer pack is open",EINVAL,&error);std::uint64_t offset=0;if(!request(PMCW_FINISH,0,offset,error))return false;opened_=false;if(offset!=offset_)return failure("Invalid collection writer durable offset",EPROTO,&error);return true;}
+bool CollectionWriter::remove_downloaded(std::string&error){
+ if(opened_)return failure("A collection pack is still open",EBUSY,&error);
+ std::uint64_t removed=0;if(!request(PMCW_REMOVE,0,removed,error))return false;
+ if(removed)return failure("Invalid collection removal acknowledgement",EPROTO,&error);return true;
+}
 void CollectionWriter::stop(){if(fd_>=0){if(authenticated_){unsigned char bytes[PMCW_REQUEST_BYTES]{};std::memcpy(bytes,PMCW_REQUEST_MAGIC,4);pmcw_put32(bytes+4,PMCW_QUIT);(void)transfer(fd_,bytes,sizeof(bytes),true,2);}shutdown(fd_,SHUT_RDWR);close(fd_);}fd_=-1;authenticated_=opened_=false;pid_=offset_=expected_=0;packs_.clear();}
 CollectionWriter::~CollectionWriter(){stop();}
 #ifdef MUSEUM_COLLECTION_WRITER_TEST
@@ -134,6 +139,6 @@ bool CollectionWriter::patch_for_test(std::vector<unsigned char>&elf,unsigned po
 }
 #else
 namespace museum {
-CollectionWriter::~CollectionWriter()=default;bool CollectionWriter::start(const std::vector<Pack>&,std::string&error){error_=error="Native collection writer is unavailable";errno=ENOSYS;return false;}bool CollectionWriter::open(std::size_t,std::uint64_t&,std::string&error){return start({},error);}std::ptrdiff_t CollectionWriter::write(const void*,std::size_t){errno=ENOSYS;return -1;}bool CollectionWriter::finish(std::string&error){return start({},error);}void CollectionWriter::stop(){}
+CollectionWriter::~CollectionWriter()=default;bool CollectionWriter::start(const std::vector<Pack>&,std::string&error){error_=error="Native collection writer is unavailable";errno=ENOSYS;return false;}bool CollectionWriter::open(std::size_t,std::uint64_t&,std::string&error){return start({},error);}std::ptrdiff_t CollectionWriter::write(const void*,std::size_t){errno=ENOSYS;return -1;}bool CollectionWriter::finish(std::string&error){return start({},error);}bool CollectionWriter::remove_downloaded(std::string&error){return start({},error);}void CollectionWriter::stop(){}
 }
 #endif

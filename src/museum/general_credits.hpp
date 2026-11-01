@@ -4,11 +4,11 @@
 #include "museum/localization.hpp"
 
 namespace museum {
-inline constexpr std::array<const char*,7> preference_labels={
+inline constexpr std::array<const char*,8> preference_labels={
     "Language", "Appearance", "Volumes", "YouTube connection",
-    "Replay introduction", "Reset trophies", "Credits"
+    "Replay introduction", "Remove downloaded data", "Reset trophies", "Credits"
 };
-inline constexpr int general_credits_setting=6,reset_trophies_setting=5;
+inline constexpr int remove_collection_setting=5,general_credits_setting=7,reset_trophies_setting=6;
 inline constexpr const char* general_credits_text=R"(Thanks to my father for passing on his passion for technology. Thanks to my mother for giving me the sensitivity to appreciate art and look at the world with wonder. Thanks to my friends Jacopo and Renoy for sharing with me an important and lasting passion, the pleasure of discovery and the magic of wonder. Thanks to the Spartans (Alessandro, Elia, Federico, Giacomo) for sharing thoughts and opinions about the world every day and supporting me. Special thanks to the owner of Play Point, the former game shop on Via Padova in Milan, for introducing me to an incredible world and recommending wonderful games.
 
 Editorial curation, Development, Graphic design, Music: Andrea Sgarro

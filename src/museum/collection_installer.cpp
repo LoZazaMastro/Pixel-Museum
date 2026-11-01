@@ -25,6 +25,7 @@
 #include <cstdlib>
 #include <cerrno>
 #include <cctype>
+#include <climits>
 #include <fcntl.h>
 #include <dirent.h>
 #include <mutex>
@@ -129,6 +130,31 @@ bool octal(const char* p,std::size_t length,std::uint64_t& value){
     value=0;std::size_t n=0;while(n<length&&p[n]==' ')++n;bool ended=false;for(;n<length;++n){const unsigned char c=p[n];if(c==0||c==' '){ended=true;continue;}if(ended||c<'0'||c>'7'||value>(UINT64_MAX-7)/8)return false;value=value*8+c-'0';}return true;
 }
 std::string field(const char* p,std::size_t n){const auto end=static_cast<const char*>(std::memchr(p,0,n));return std::string(p,end?std::size_t(end-p):n);}
+
+// Descriptor-relative host fixtures use POSIX directly. Native destructive
+// operations run only in the already proven restricted writer payload.
+#if !defined(__FreeBSD__)
+int removal_openat(int directory,const char*name,int flags){
+    return openat(directory,name,flags);
+}
+int removal_unlinkat(int directory,const char*name,int flags){
+    return unlinkat(directory,name,flags);
+}
+#endif
+bool normal_absolute(const std::string&input,std::string&output){
+    output.clear();if(input.empty()||input.front()!='/'||input.find('\\')!=std::string::npos||input.find('\0')!=std::string::npos)return false;
+    std::size_t begin=1;
+    while(begin<input.size()){
+        auto end=input.find('/',begin);if(end==std::string::npos)end=input.size();
+        const auto name=input.substr(begin,end-begin);
+        if(name=="."||name=="..")return false;
+        if(!name.empty())output+="/"+name;
+        begin=end+1;
+    }
+    if(output.empty())output="/";
+    return true;
+}
+bool overlaps_tree(const std::string&a,const std::string&b){return a==b||(a.size()<b.size()&&b.compare(0,a.size(),a)==0&&b[a.size()]=='/')||(b.size()<a.size()&&a.compare(0,b.size(),b)==0&&a[b.size()]=='/');}
 }
 struct CollectionInstaller::Impl {
     struct Pack {std::string id,url,sha;std::uint64_t bytes=0,file_count=0,expanded_bytes=0;};
@@ -159,6 +185,132 @@ struct CollectionInstaller::Impl {
     void storage_failure(const char*operation,const std::string&path,int code){update(Phase::failed,"Installation storage unavailable",storage_error(operation,code),code,std::string(operation)+" ["+path+"] errno="+std::to_string(code)+" ("+std::strerror(code)+")");}
     bool interrupted()const{return command.load(std::memory_order_acquire)!=0;}
     void interrupted_status(){const auto c=command.load();update(c==1?Phase::paused:Phase::cancelled,c==1?"Paused":"Stopped");}
+#if !defined(__FreeBSD__)
+    bool remove_tree_at(int parent_fd,const std::string&name,unsigned depth,std::uint64_t&entries,std::string&path){
+        if(interrupted()){errno=ECANCELED;return false;}
+        if(depth>64||++entries>1000000){errno=EOVERFLOW;return false;}
+        const int fd=removal_openat(parent_fd,name.c_str(),O_RDONLY|O_DIRECTORY|O_NOFOLLOW|O_NONBLOCK);
+        if(fd<0){
+            const int code=errno;
+            if(code==ENOENT)return true;
+            // An entry that is not an opened directory is unlinked by name.
+            // This removes symlinks themselves and never opens their targets.
+            if(code!=ENOTDIR&&code!=ELOOP)return false;
+            return removal_unlinkat(parent_fd,name.c_str(),0)==0||errno==ENOENT;
+        }
+        DIR*dir=fdopendir(fd);if(!dir){const int code=errno?errno:EIO;close(fd);errno=code;return false;}
+        bool ok=true;int code=0;
+        for(;;){
+            errno=0;auto*entry=readdir(dir);
+            if(!entry){if(errno){ok=false;code=errno;}break;}
+            const std::string child=entry->d_name;
+            if(child=="."||child=="..")continue;
+            if(child.empty()||child.find('/')!=std::string::npos){ok=false;code=EINVAL;break;}
+            const auto previous=path;path+="/"+child;
+            if(!remove_tree_at(fd,child,depth+1,entries,path)){ok=false;code=errno;break;}
+            path=previous;
+        }
+        if(closedir(dir)&&ok){ok=false;code=errno;}
+        if(!ok){errno=code;return false;}
+        if(interrupted()){errno=ECANCELED;return false;}
+        return removal_unlinkat(parent_fd,name.c_str(),AT_REMOVEDIR)==0||errno==ENOENT;
+    }
+#endif
+    bool removal_path(const std::string&target,std::string&normalized,std::string&diagnostic)const{
+        std::string bundle;
+        if(!normal_absolute(target,normalized)||normalized=="/collection"||normalized.size()<11||normalized.compare(normalized.size()-11,11,"/collection")){
+            errno=EINVAL;diagnostic="Refused collection reset path: "+target;return false;
+        }
+        if(!bundled.empty()&&(!normal_absolute(bundled,bundle)||bundle=="/"||overlaps_tree(normalized,bundle))){
+            errno=EPERM;diagnostic="Refused collection reset overlapping application bundle: "+target;return false;
+        }
+#if defined(__FreeBSD__)
+        if(normalized!="/data/pixelmuseum/collection"&&normalized!="/download0/pixelmuseum/collection"){
+            errno=EPERM;diagnostic="Refused collection reset outside native allowlist: "+target;return false;
+        }
+#endif
+        return true;
+    }
+#if !defined(__FreeBSD__)
+    bool remove_collection_tree(const std::string&target,std::string&diagnostic){
+        std::string normalized;if(!removal_path(target,normalized,diagnostic))return false;
+        int fd=open("/",O_RDONLY|O_DIRECTORY|O_NOFOLLOW);
+        if(fd<0){diagnostic="Cannot open collection reset root";return false;}
+        std::size_t begin=1;
+        const std::string parents=parent(normalized);
+        while(begin<parents.size()){
+            auto end=parents.find('/',begin);if(end==std::string::npos)end=parents.size();
+            const auto name=parents.substr(begin,end-begin);
+            const int next=removal_openat(fd,name.c_str(),O_RDONLY|O_DIRECTORY|O_NOFOLLOW|O_NONBLOCK);
+            if(next<0){const int code=errno;close(fd);errno=code;if(code==ENOENT)return true;diagnostic="Cannot open collection reset parent: "+parents.substr(0,end);return false;}
+            close(fd);fd=next;begin=end+1;
+        }
+        // Reject a redirected root rather than claiming an outside collection
+        // has been erased. Symlinks *inside* the owned root are removed safely.
+        const int root_fd=removal_openat(fd,"collection",O_RDONLY|O_DIRECTORY|O_NOFOLLOW|O_NONBLOCK);
+        if(root_fd<0){const int code=errno;close(fd);errno=code;if(code==ENOENT)return true;diagnostic="Cannot open collection reset directory: "+normalized;return false;}
+        close(root_fd);
+        std::uint64_t entries=0;std::string path=normalized;
+        const bool ok=remove_tree_at(fd,"collection",0,entries,path);
+        const int code=errno;
+        if(ok&&fsync(fd)){const int saved=errno;close(fd);errno=saved;diagnostic="Cannot synchronize removed collection: "+parents;return false;}
+        close(fd);errno=code;
+        if(!ok)diagnostic="Cannot remove downloaded collection: "+path;
+        return ok;
+    }
+#else
+    bool removal_absent(const std::string&target,std::string&diagnostic){
+        const int fd=open(target.c_str(),O_RDONLY|O_DIRECTORY|O_NOFOLLOW|O_NONBLOCK);
+        if(fd<0){if(errno==ENOENT)return true;diagnostic="Cannot verify removed collection: "+target;return false;}
+        close(fd);errno=EBUSY;diagnostic="Downloaded collection remains visible: "+target;return false;
+    }
+#endif
+    void run_removal(){
+        struct Finish {Impl*p;~Finish(){p->running.store(false,std::memory_order_release);}}finish{this};
+        std::printf("[Museum] collection removal worker entered\n");std::fflush(stdout);
+        update(Phase::removing,"Removing downloaded data");
+        // Clear both known locations so the installer cannot import a legacy
+        // copy immediately after the user has explicitly removed the data.
+        std::vector<std::string> targets{base};if(!legacy_base.empty()&&legacy_base!=base)targets.push_back(legacy_base);
+        // Validate every configured target before the first destructive step.
+        for(const auto&target:targets){
+            std::string normalized,diagnostic;
+            if(!removal_path(target,normalized,diagnostic)){
+                const int code=errno;update(Phase::failed,"Could not remove downloaded data",storage_error("Cannot remove downloaded data",code),code,diagnostic+" errno="+std::to_string(code));return;
+            }
+        }
+#if defined(__FreeBSD__)
+        if(writer){writer->stop();writer.reset();}
+        std::string service_error;
+        std::printf("[Museum] collection removal launching restricted writer\n");std::fflush(stdout);
+        if(!ensure_writer(service_error)||!writer->remove_downloaded(service_error)){
+            const int code=errno?errno:EIO;
+            if(writer){writer->stop();writer.reset();}
+            update(Phase::failed,"Could not remove downloaded data",service_error.empty()?storage_error("Cannot remove downloaded data",code):service_error,code,"Restricted collection writer removal failed errno="+std::to_string(code));return;
+        }
+        writer->stop();writer.reset();
+        std::printf("[Museum] collection removal writer acknowledged; checking app-visible roots\n");std::fflush(stdout);
+        for(const auto&target:targets){
+            std::string diagnostic;
+            if(!removal_absent(target,diagnostic)){
+                const int code=errno?errno:EIO;update(Phase::failed,"Could not remove downloaded data",storage_error("Cannot remove downloaded data",code),code,diagnostic+" errno="+std::to_string(code));return;
+            }
+        }
+#else
+        for(const auto&target:targets){
+            std::string diagnostic;
+            if(!remove_collection_tree(target,diagnostic)){
+                const int code=errno;
+                if(code==ECANCELED||interrupted()){interrupted_status();return;}
+                update(Phase::failed,"Could not remove downloaded data",storage_error("Cannot remove downloaded data",code),code,diagnostic+" errno="+std::to_string(code));return;
+            }
+        }
+#endif
+        if(interrupted()){interrupted_status();return;}
+        std::printf("[Museum] collection removal complete\n");std::fflush(stdout);
+        std::fill(installed_pack_bytes.begin(),installed_pack_bytes.end(),0);std::fill(installed_pack_files.begin(),installed_pack_files.end(),0);completed=0;
+        std::lock_guard<std::mutex>lock(mutex);active_root.clear();status.phase=Phase::removed;status.stage="Downloaded data removed";status.error.clear();status.diagnostic.clear();status.filesystem_errno=0;status.downloaded_bytes=0;status.installed_bytes=0;status.installed_files=0;status.pack_index=0;status.bytes_per_second=0;
+    }
     std::string marker(std::size_t n,const std::string&root={})const{return(root.empty()?stage_root:root)+"/.pack-"+std::to_string(n)+".json";}
     void installed_work(std::size_t index,std::uint64_t bytes,std::uint64_t files){
         installed_pack_bytes[index]=bytes;installed_pack_files[index]=files;std::uint64_t all_bytes=0,all_files=0;for(auto n:installed_pack_bytes)all_bytes+=n;for(auto n:installed_pack_files)all_files+=n;
@@ -532,6 +684,19 @@ bool CollectionInstaller::start(){
     p.worker_joinable=true;return true;
 }
 bool CollectionInstaller::retry(){return start();}
+bool CollectionInstaller::remove_downloaded(){
+    auto&p=*impl_;std::lock_guard<std::mutex>control(p.lifecycle);
+    if(!p.configured||p.running.load(std::memory_order_acquire))return false;
+    if(p.worker_joinable){pthread_join(p.worker,nullptr);p.worker_joinable=false;}
+    {
+        std::lock_guard<std::mutex>lock(p.mutex);p.active_root.clear();p.status.phase=Phase::removing;p.status.stage="Removing downloaded data";
+        p.status.error.clear();p.status.diagnostic.clear();p.status.filesystem_errno=0;p.status.bytes_per_second=0;
+    }
+    pthread_attr_t attributes;int code=pthread_attr_init(&attributes);
+    if(!code){code=pthread_attr_setstacksize(&attributes,worker_stack_bytes);if(!code){p.command.store(0);p.running.store(true);code=pthread_create(&p.worker,&attributes,[](void*owner)->void*{static_cast<Impl*>(owner)->run_removal();return nullptr;},&p);}pthread_attr_destroy(&attributes);}
+    if(code){p.running.store(false);p.update(Phase::failed,"Could not remove downloaded data","Cannot start the collection removal worker",0,"pthread worker initialization error="+std::to_string(code)+" ("+std::strerror(code)+")");return false;}
+    p.worker_joinable=true;return true;
+}
 void CollectionInstaller::pause(){impl_->command.store(1,std::memory_order_release);}
 void CollectionInstaller::cancel(){impl_->command.store(2,std::memory_order_release);}
 void CollectionInstaller::shutdown(){if(!impl_)return;auto&p=*impl_;std::lock_guard<std::mutex>control(p.lifecycle);p.command.store(3,std::memory_order_release);if(p.worker_joinable){pthread_join(p.worker,nullptr);p.worker_joinable=false;}}

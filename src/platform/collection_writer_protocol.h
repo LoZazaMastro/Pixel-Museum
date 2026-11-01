@@ -15,7 +15,7 @@
 #define PMCW_ACK_BYTES 24u
 #define PMCW_ACK_MAGIC "PMA1"
 #define PMCW_REQUEST_MAGIC "PMC1"
-enum { PMCW_OPEN=1, PMCW_DATA=2, PMCW_FINISH=3, PMCW_QUIT=4 };
+enum { PMCW_OPEN=1, PMCW_DATA=2, PMCW_FINISH=3, PMCW_QUIT=4, PMCW_REMOVE=5 };
 static inline uint32_t pmcw_get32(const unsigned char*p){return ((uint32_t)p[0]<<24)|((uint32_t)p[1]<<16)|((uint32_t)p[2]<<8)|p[3];}
 static inline uint64_t pmcw_get64(const unsigned char*p){return ((uint64_t)pmcw_get32(p)<<32)|pmcw_get32(p+4);}
 static inline void pmcw_put32(unsigned char*p,uint32_t v){p[0]=(unsigned char)(v>>24);p[1]=(unsigned char)(v>>16);p[2]=(unsigned char)(v>>8);p[3]=(unsigned char)v;}

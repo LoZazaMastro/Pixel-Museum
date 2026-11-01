@@ -15,6 +15,7 @@ public:
  bool open(std::size_t index,std::uint64_t&offset,std::string&error);
  std::ptrdiff_t write(const void*data,std::size_t bytes);
  bool finish(std::string&error);
+ bool remove_downloaded(std::string&error);
  void stop();
  const std::string&last_error()const{return error_;}
 #ifdef MUSEUM_COLLECTION_WRITER_TEST

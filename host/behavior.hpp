@@ -360,7 +360,7 @@ struct ScreenInspection {
         s.onboarding_=true;s.onboarding_complete_=false;s.load_settings();
         if(!require(!s.onboarding_&&s.onboarding_complete_&&s.theme_chosen_&&s.language_chosen_&&!s.dark_theme_,"a subsequent preferences load restores language and appearance and skips the completed tour"))return finish(false);
         s.boot_time_=5;s.boot_note_=13;press(hui::Action::menu);
-        const std::array<const char*,7> expected_options={"Language","Appearance","Volumes","YouTube connection","Replay introduction","Reset trophies","Credits"};
+        const std::array<const char*,8> expected_options={"Language","Appearance","Volumes","YouTube connection","Replay introduction","Remove downloaded data","Reset trophies","Credits"};
         if(!require(preference_labels==expected_options,"requested exact option order"))return finish(false);
         s.setting_=0;const auto previous_language=s.language_;press(hui::Action::confirm);
         if(!require(s.language_!=previous_language,"row0 changes language"))return finish(false);
@@ -374,7 +374,7 @@ struct ScreenInspection {
         s.setting_=3;press(hui::Action::confirm);
         if(!require(s.connection_panel_,"row3 opens existing YouTube connection"))return finish(false);press(hui::Action::back);
         s.setting_=general_credits_setting;press(hui::Action::confirm);
-        if(!require(s.credits_&&!s.settings_,"row6 opens general credits"))return finish(false);press(hui::Action::back);
+        if(!require(s.credits_&&!s.settings_,"last row opens general credits"))return finish(false);press(hui::Action::back);
         s.setting_=4;press(hui::Action::confirm);
         if(!require(s.onboarding_&&s.onboarding_step_==0&&s.onboarding_complete_&&s.onboarding_fade_.value==0,"Replay introduction begins a fade without forgetting completion"))return finish(false);
         for(unsigned n=0;n<5;++n)s.update(1.f/60);

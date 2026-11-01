@@ -8,7 +8,7 @@
 namespace museum {
 class CollectionInstaller {
 public:
-    enum class Phase {unconfigured,idle,downloading,verifying,extracting,paused,ready,failed,cancelled};
+    enum class Phase {unconfigured,idle,downloading,verifying,extracting,paused,ready,failed,cancelled,removing,removed};
     struct Status {
         Phase phase=Phase::unconfigured;
         std::uint64_t downloaded_bytes=0,total_bytes=0;
@@ -30,6 +30,9 @@ public:
                    const std::string& legacy_data_directory={});
     bool start();
     bool retry();
+    // Explicitly requested reset only. Callers must first stop all media readers.
+    // Removes current/legacy downloaded collection trees, retaining configuration.
+    bool remove_downloaded();
     void pause();
     void cancel(); // Stops work, retaining private partial downloads for retry.
     void shutdown(); // Joins the worker; never deletes an active collection.

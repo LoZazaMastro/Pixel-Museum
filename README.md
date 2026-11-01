@@ -30,7 +30,9 @@ The application ZIP is about **529 MB**; the extracted app is about **889 MB**. 
 
 ## Updating
 
-Updating from 0.1.1 or 0.1.2? Update through ProsperoStore, or close the app and replace the PPSA70421 folder via FTP. Keep your downloaded collection; it does not need to be downloaded again.
+Updating from an earlier version? Update through ProsperoStore, or close the app and replace the PPSA70421 folder via FTP. Keep your downloaded collection; it does not need to be downloaded again.
+
+To download a fresh image collection, choose **Options → Remove downloaded data** and confirm. Pixel Museum returns to language selection. Your trophies are kept.
 
 ## Support the project
 

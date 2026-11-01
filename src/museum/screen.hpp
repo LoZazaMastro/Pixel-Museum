@@ -31,10 +31,13 @@
 #include <map>
 #include <array>
 #include <functional>
+#include <atomic>
+#include <pthread.h>
 namespace museum {
 class Screen {
     friend struct ScreenInspection;
     friend struct CollectionStartupInspection;
+    friend struct CollectionRemovalInspection;
 public:
     ~Screen();
     bool init(const std::string& root,const std::string& data);
@@ -81,6 +84,21 @@ private:
     bool collection_pending_=false,collection_started_=false,collection_media_started_=false,collection_media_error_=false;
     float collection_elapsed_=0,collection_ready_elapsed_=0;
     int collection_phase_log_=-1,collection_progress_log_=-1;
+    enum class CollectionRemovalState {idle,stopping_media,removing,failed};
+    CollectionRemovalState collection_removal_state_=CollectionRemovalState::idle;
+    bool collection_remove_dialog_=false;
+    int collection_remove_focus_=0;
+    float collection_removal_elapsed_=0;
+    hui::tween::Spring collection_remove_open_;
+    pthread_t collection_media_stop_thread_{};
+    bool collection_media_stop_joinable_=false;
+    std::atomic<bool> collection_media_stop_done_{false};
+    bool collection_removal_active()const{return collection_removal_state_!=CollectionRemovalState::idle;}
+    bool begin_collection_removal();
+    void join_collection_media_stop();
+    void handle_collection_removal(const hui::InputFrame&,hui::ui::Feedback&);
+    void update_collection_removal(float);
+    void draw_collection_removal();
     bool start_collection_media();
     void update_collection_startup(float);
     void handle_collection_startup(const hui::InputFrame&,hui::ui::Feedback&);

@@ -18,6 +18,7 @@
 #pragma clang diagnostic pop
 #include "host/collection_install_preview.hpp"
 #include "host/collection_startup_checks.hpp"
+#include "host/collection_removal_checks.hpp"
 #include <filesystem>
 #include <thread>
 #include <chrono>
@@ -54,10 +55,17 @@ int main(int argc,char**argv){
     const bool onboarding_structure=onboarding_pong||(argc>1&&std::string(argv[1])=="onboarding-structure");
     const bool intro_saved=std::getenv("MUSEUM_HOST_SAVED_ACCESS")!=nullptr;
     const bool collection_e2e=argc>3&&std::string(argv[1])=="collection-end-to-end";
-    const std::string preview_data=std::filesystem::absolute(collection_e2e?argv[3]:onboarding_structure?(intro_saved?"build/onboarding-offline-saved-data":"build/onboarding-offline-fresh-data"):"build/preview-data").lexically_normal().string();
+    const bool collection_removal=argc>1&&std::string(argv[1])=="collection-removal";
+    const char*removal_data=collection_removal?std::getenv("MUSEUM_TEST_REMOVAL_DATA"):nullptr;
+    if(collection_removal&&(!removal_data||std::string(removal_data).rfind("/tmp/pm-screen-collection-removal-",0)!=0))return 69;
+    const std::string preview_data=std::filesystem::absolute(collection_removal?removal_data:collection_e2e?argv[3]:onboarding_structure?(intro_saved?"build/onboarding-offline-saved-data":"build/onboarding-offline-fresh-data"):"build/preview-data").lexically_normal().string();
     std::filesystem::create_directories(preview_data);
     if(onboarding_structure){const auto auth=preview_data+"/youtube-auth.json";if(intro_saved){std::ofstream fixture(auth);fixture<<"{\"offline_metadata_fixture_only\":true}";}else std::filesystem::remove(auth);}
     museum::Screen screen;if(!screen.init(preview_root?preview_root:".",preview_data))return 4;
+    if(collection_removal){
+        const bool passed=museum::CollectionRemovalInspection::check(screen);
+        screen.shutdown();eglMakeCurrent(display,EGL_NO_SURFACE,EGL_NO_SURFACE,EGL_NO_CONTEXT);eglDestroyContext(display,gl);eglTerminate(display);return passed?0:69;
+    }
     if(argc>1&&(std::string(argv[1])=="collection-existing"||collection_e2e)){
         const bool passed=collection_e2e?museum::CollectionStartupInspection::download(screen,argv[2],preview_data):museum::CollectionStartupInspection::existing(screen);
         screen.shutdown();eglMakeCurrent(display,EGL_NO_SURFACE,EGL_NO_SURFACE,EGL_NO_CONTEXT);eglDestroyContext(display,gl);eglTerminate(display);return passed?0:68;

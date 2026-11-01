@@ -113,7 +113,7 @@ bool Screen::init(const std::string&root,const std::string&data){
     timeline_.snap(float(focus_));
     ready_=true;if(!collection_pending_)start_collection_media();startup_phase("initial exhibit");sys::log("[Museum] composition GPU texture draws / display and entry snapshots / no framebuffer blit");return true;
 }
-void Screen::shutdown(){collection_installer_.shutdown();if(!ready_)return;trophy_notifications_.stop();if(trophy_pin_renderer_)trophy_pin_renderer_(TrophyView{},0,0,0,0,0,0);trophy_pin_open_=false;save_settings();video_.stop();cache_.stop();object_.release();for(auto&prepared:prepared_objects_)prepared.release();if(connection_qr_)glDeleteTextures(1,&connection_qr_);connection_qr_=0;video_.release_texture();cache_.release_textures();composed_.destroy();previous_entry_.destroy();wall_.destroy();renderer_.release();ready_=false;collection_media_started_=false;}
+void Screen::shutdown(){join_collection_media_stop();collection_installer_.shutdown();if(!ready_)return;trophy_notifications_.stop();if(trophy_pin_renderer_)trophy_pin_renderer_(TrophyView{},0,0,0,0,0,0);trophy_pin_open_=false;save_settings();video_.stop();cache_.stop();object_.release();for(auto&prepared:prepared_objects_)prepared.release();if(connection_qr_)glDeleteTextures(1,&connection_qr_);connection_qr_=0;video_.release_texture();cache_.release_textures();composed_.destroy();previous_entry_.destroy();wall_.destroy();renderer_.release();ready_=false;collection_media_started_=false;}
 const Entry* Screen::current()const{if(history_focus_&&!history_catalog_.entries.empty())return &history_catalog_.entries[size_t(std::clamp(history_focus_index_,0,int(history_catalog_.entries.size())-1))];if(visible_.empty())return nullptr;return &catalog_.entries[size_t(visible_[size_t(std::clamp(focus_,0,int(visible_.size())-1))])];}
 float Screen::selected_year()const{if(year_guide_&&!guide_experiences_&&!guide_trophies_&&year_focus_>=0&&year_focus_<int(years_.size()))return float(years_[size_t(year_focus_)]);if(chapters_&&chapter_focus_>=0&&chapter_focus_<int(catalog_.eras.size()))return float(catalog_.eras[size_t(chapter_focus_)].start_year);const auto*e=current();return e?float(e->year):1980;}
 bool Screen::video_active()const{return media::suspend_ambient(playlist_active_,screening_,video_.state()==media::State::ready,video_.paused(),video_.ended());}
@@ -309,6 +309,7 @@ void Screen::preview(int mode){
 }
 void Screen::prepare_gallery(bool reset){const auto*e=current();if(!e)return;std::vector<ui::ViewerImage> images;for(size_t n=0;n<e->images.size();++n){const auto&i=e->images[n];const auto a=int(n)==image_index_?cache_.request(image_url(i)):cache_.get(image_url(i));ui::ViewerImage v;v.title=i.title;v.caption.clear();v.texture=a.texture;v.aspect=a.width&&a.height?float(a.width)/a.height:1.f;v.pixel_width=float(a.width);images.push_back(v);}if(reset){viewer_.set_images(std::move(images));viewer_.set_index(image_index_);}else viewer_.refresh_images(std::move(images));}
 void Screen::handle(const InputFrame&i,ui::Feedback&f){
+    if(collection_remove_dialog_||collection_removal_active()){handle_collection_removal(i,f);return;}
     if(collection_pending_){if(language_choice_)handle_language_choice(i,f);else handle_collection_startup(i,f);return;}
     const bool rail_input=!onboarding_&&!settings_&&!credits_&&!year_guide_&&!chapters_&&!detail_&&!gallery_&&!screening_&&!object_inspect_&&!experience_active_&&!workshop_active_&&!image_dialog_&&!connection_panel_&&!(history_transition_&&fade_<1)&&!(i.pressed&~(action_bit(Action::left)|action_bit(Action::right)));
     auto&rail_position=history_focus_?history_position_:timeline_;
@@ -575,6 +576,7 @@ void Screen::handle(const InputFrame&i,ui::Feedback&f){
                     collection_pending_=true;collection_started_=true;collection_elapsed_=collection_ready_elapsed_=0;
                 }
             }
+            if(setting_==remove_collection_setting){collection_remove_dialog_=true;collection_remove_focus_=0;collection_remove_open_.snap(0);f.play(audio::Cue::modal_open);return;}
             if(setting_==general_credits_setting){settings_=false;credits_=true;credits_scroll_.snap(0);}
             if(setting_==reset_trophies_setting){
                 if(trophies_&&trophies_->reset()){trophy_notifications_.clearPending();trophy_fallback_queue_.clear();trophy_fallback_time_=0;trophy_fallback_sound_=false;trophy_expanded_=false;trophy_pin_open_=false;if(trophy_pin_renderer_)trophy_pin_renderer_(TrophyView{},0,0,0,0,0,0);trophy_focus_=0;trophy_position_.snap(0);trophy_media_session_.clear();trophy_media_played_=0;notice_=std::string(i18n::tr("Trophy progress reset."));notice_time_=3.5f;f.play(audio::Cue::saved);}
@@ -699,6 +701,7 @@ void Screen::handle(const InputFrame&i,ui::Feedback&f){
     if(i.is_pressed(Action::confirm)&&current()){detail_=true;scroll_.snap(0);f.play(audio::Cue::select);}
 }
 void Screen::update(float delta){
+    if(collection_removal_active()){update_collection_removal(delta);return;}
     if(collection_pending_){update_collection_startup(delta);return;}
     refresh_today_date();
     tactile_repeat_=std::max(0.f,tactile_repeat_-(std::isfinite(delta)?std::clamp(delta,0.f,.05f):0.f));
@@ -778,6 +781,7 @@ notice_time_=std::max(0.f,notice_time_-dt_);if(!experience_active_||!experience_
     video_frame_alpha_=std::clamp(video_frame_alpha_+dt_*(video_.texture()?3.f:-5.f),0.f,1.f);
     credits_open_.target=credits_?1.f:0.f;credits_open_.update(dt_,14);credits_scroll_.update(dt_,17);
     settings_scroll_.target=std::max(0.f,float(setting_-8)*68);settings_scroll_.update(dt_,reduced_?60:18);
+    collection_remove_open_.target=collection_remove_dialog_?1.f:0.f;collection_remove_open_.update(dt_,reduced_?60.f:16.f);
     image_dialog_open_.target=image_dialog_?1.f:0.f;image_dialog_open_.update(dt_,reduced_?60:16);
     focus_line_.target=volumes_open_?230+volume_focus_*118:240+setting_*68;focus_line_.update(dt_,reduced_?60:18);
     chapter_marker_.target=float(chapter_focus_);chapter_marker_.update(dt_,reduced_?60:17);
@@ -993,7 +997,7 @@ void Screen::draw_preferences(){
         if(row==3)ui::paragraph(overlay_,fonts_.regular,"An optional connection for films with transcripts.",x+65,y+26,18,640,25,muted,2);
         if(row>=2)ui::text(overlay_,fonts_.regular,">",x+706,y,30,ink);
     }
-    ui::text(overlay_,fonts_.mono,"PIXEL MUSEUM / 0.1.3",x+65,959,18,muted,Align::left,1.5f);
+    ui::text(overlay_,fonts_.mono,"PIXEL MUSEUM / 0.1.4",x+65,959,18,muted,Align::left,1.5f);
 }
 
 void Screen::draw_connection(){
@@ -1064,6 +1068,9 @@ void Screen::draw(int width,int height,unsigned framebuffer){
     interface_stage_ms_.fill(0);
     const auto palette=colours();[[maybe_unused]] const auto paper=palette.paper,ink=palette.ink,muted=palette.muted,rule=palette.rule;
     output_width_=width;output_height_=height;viewer_.style.pixel_scale=1920.f/std::max(1,width);
+    if(collection_removal_active()){
+        overlay_.clear();draw_collection_removal();mark(0);renderer_.begin();renderer_.draw(overlay_);renderer_.present(framebuffer,width,height);mark(2);return;
+    }
     if(collection_pending_){
         if(language_choice_){welcome_.clear();draw_onboarding();mark(0);renderer_.begin();renderer_.draw(welcome_);}
         else if(collection_presentation_.quiet_validation){draw_boot();mark(0);renderer_.begin();renderer_.draw(boot_);}
@@ -1109,6 +1116,7 @@ void Screen::draw(int width,int height,unsigned framebuffer){
     if(!onboarding_&&boot_time_<4.8f){draw_boot();renderer_.draw(boot_);}
     if(trophy_fallback_time_>0){overlay_.clear();draw_trophy_fallback();renderer_.draw(overlay_);}
     if(filter_notice_time_>0||year_notice_time_>0){overlay_.clear();draw_filter_notice();renderer_.draw(overlay_);}
+    if(collection_remove_dialog_||collection_remove_open_.value>.001f){overlay_.clear();draw_collection_removal();renderer_.draw(overlay_);}
     if(composed_.width()!=width||composed_.height()!=height){entry_snapshot_=false;composed_.create(width,height,1);}
     if(!composed_.texture()){renderer_.present(framebuffer,width,height);return;}
     mark(0);renderer_.present(composed_.framebuffer(),width,height);composed_.resolve();mark(1);
