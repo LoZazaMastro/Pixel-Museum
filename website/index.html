@@ -27,6 +27,8 @@
   <link rel="stylesheet" href="footer-refinement.css">
   <script>try{document.documentElement.dataset.theme=localStorage.getItem("museum-theme")||"light"}catch{}</script>
   <script src="site.js" defer></script>
+  <link rel="stylesheet" href="download.css">
+  <script src="download.js" defer></script>
 </head>
 <body id="top">
   <a class="skip" href="#main">Skip to content</a>
@@ -54,7 +56,7 @@
   <main id="main">
     <section class="visit" id="visit" aria-labelledby="visit-title"><div class="wrap visit-inner"><div class="welcome-shadows" aria-hidden="true"><img src="assets/museum-shadow-pacman.svg" alt=""><img src="assets/museum-shadow-space-invader.svg" alt=""></div><h1 id="visit-title">Welcome to the<br>Pixel Museum<span class="pixel-stop" aria-hidden="true"></span></h1><a class="button download-button" href="https://github.com/LoZazaMastro/Pixel-Museum/releases/latest/download/PPSA70421.zip" aria-label="Download Pixel Museum ZIP"><span>Download</span><span class="button-pixels" aria-hidden="true"><i style="--col:0;--row:0"></i><i style="--col:1;--row:0"></i><i style="--col:2;--row:0"></i><i style="--col:3;--row:0"></i><i style="--col:4;--row:0"></i><i style="--col:0;--row:1"></i><i style="--col:1;--row:1"></i><i style="--col:2;--row:1"></i><i style="--col:3;--row:1"></i><i style="--col:4;--row:1"></i><i style="--col:0;--row:2"></i><i style="--col:1;--row:2"></i><i style="--col:2;--row:2"></i><i style="--col:3;--row:2"></i><i style="--col:4;--row:2"></i><i style="--col:0;--row:3"></i><i style="--col:1;--row:3"></i><i style="--col:2;--row:3"></i><i style="--col:3;--row:3"></i><i style="--col:4;--row:3"></i><i style="--col:0;--row:4"></i><i style="--col:1;--row:4"></i><i style="--col:2;--row:4"></i><i style="--col:3;--row:4"></i><i style="--col:4;--row:4"></i></span></a><details class="download-help"><summary>How to install</summary><p>Extract the ZIP and transfer the <code>PPSA70421</code> folder to <code>/data/homebrew/</code> on your PS5 via FTP.</p><p>Updating? Replace the app folder and keep your downloaded collection.</p><p>For a fresh download, choose <strong>Options &rarr; Remove downloaded data</strong> in the app.</p></details></div></section>
     <section class="hero wrap" aria-labelledby="hero-title">
-      
+
       <h2 id="hero-title" class="intro-in">You remember<br>the <span class="feeling">feeling<span class="pixel-stop" aria-hidden="true"></span></span></h2>
       <div class="hero-bottom intro-in"><p>The games we played.<br>The world we grew up in.</p></div><figure class="trailer-window" aria-label="Pixel Museum teaser trailer">
         <video id="museum-teaser" class="trailer-video" autoplay muted loop playsinline preload="metadata" poster="assets/trailer-poster.jpg" aria-label="Pixel Museum teaser trailer"><source src="assets/pixel-museum-teaser-silent.mp4" type="video/mp4"></video>
@@ -79,8 +81,18 @@
     <div class="legal"><p>Design, editorial direction, development, graphics and original music: Andrea Sgarro / LoZazaMastro.</p><p>Pixel Museum is an unofficial, independent project. It is not endorsed by Nintendo, Sony, Microsoft, SEGA or the other companies represented. Games, films, recordings, artwork and trademarks belong to their respective owners. Linked preservation organizations are independent of this project.</p><p>Soundtracks and songs are streamed from YouTube. Their recordings are not distributed with the app.</p></div>
   <div class="footer-bottom"><a class="back-to-top" href="#top">Back to top <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M7 14V5L3 9 2 8l6-6 6 6-1 1-4-4v9z"/></svg></a><p class="copyright">&copy; <span id="year">2026</span> Andrea Sgarro / LoZazaMastro</p></div>
   </footer>
+  <dialog id="download-platform-dialog" class="download-dialog" aria-labelledby="download-title" aria-describedby="download-intro">
+    <div class="download-dialog-heading"><svg class="download-mark" viewBox="0 0 5 5" aria-hidden="true"><path d="M0 0h1v1h1v1h1V1h1V0h1v5H4V3H3V2H2v1H1v2H0z"/></svg><button type="button" class="download-close" aria-label="Close download choices"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M6 18 18 6"/></svg></button></div>
+    <h2 id="download-title">A museum.<br>Your way in.</h2>
+    <p id="download-intro">Choose your platform.</p>
+    <div class="download-platforms">
+      <a class="platform-choice platform-windows" aria-disabled="true" tabindex="-1"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M2 2h13v13H2zm15 0h13v13H17zM2 17h13v13H2zm15 0h13v13H17z"/></svg><span class="platform-name">Windows</span><span class="platform-detail">In development</span></a>
+      <a class="platform-choice platform-ps5" href="https://github.com/LoZazaMastro/Pixel-Museum/releases/latest/download/PPSA70421.zip"><svg viewBox="0 0 40 32" aria-hidden="true"><path d="M13 8h14c5 0 8 5 9 12 1 5-3 7-6 3l-3-4H13l-3 4c-3 4-7 2-6-3 1-7 4-12 9-12Z"/><path d="M13 10v8m-4-4h8m10-2h.01m4 4h.01"/></svg><span class="platform-name">PlayStation 5</span><span class="platform-detail">Download ZIP</span></a>
+    </div>
+    <p class="platform-install-note">For PlayStation 5, transfer the <strong>PPSA70421</strong> folder to <strong>/data/homebrew/</strong> via FTP.</p>
+  </dialog>
   <dialog class="image-viewer" aria-label="Pixel Museum screenshot"><button class="viewer-close" type="button" aria-label="Close fullscreen screenshot">×</button><img alt=""></dialog>
   <div class="reading-progress" aria-hidden="true"></div>
-  
+
 </body>
 </html>

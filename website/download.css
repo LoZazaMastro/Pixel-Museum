@@ -1,0 +1,33 @@
+/* Pixel Museum platform chooser, sharing the museum's existing light/dark palette. */
+.download-dialog{box-sizing:border-box;width:min(620px,calc(100% - 32px));max-height:calc(100dvh - 40px);margin:auto;padding:36px;border:1px solid var(--line,#ccd1c6);background:#f4f2eb;color:#202521;overflow-y:auto;box-shadow:0 24px 100px #0003}
+.download-dialog::backdrop{background:#10181599;backdrop-filter:blur(8px)}
+.download-dialog[open]{animation:download-enter .32s cubic-bezier(.2,.8,.2,1)}
+.download-dialog-heading{display:flex;align-items:center;justify-content:space-between;margin-bottom:32px}
+.download-mark{width:34px;height:34px;fill:currentColor;shape-rendering:crispEdges}
+.download-close{display:grid;place-items:center;width:40px;height:40px;border:1px solid #20252130;background:transparent;color:inherit;transition:background .2s}
+.download-close:hover{background:#20252112}
+.download-close svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.5}
+.download-dialog h2{margin:0;font-size:clamp(34px,5vw,48px);line-height:1.08;letter-spacing:-.055em;font-weight:500}
+.download-dialog #download-intro{margin:18px 0 28px;font-size:16px;color:#656a63}
+.download-platforms{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.platform-choice{box-sizing:border-box;display:flex;flex-direction:column;align-items:flex-start;gap:12px;min-height:174px;padding:24px;border:1px solid #20252136;text-decoration:none;color:inherit;background:#e8eee2;transition:background .2s,transform .2s,border-color .2s}
+.platform-choice:hover:not([aria-disabled=true]){background:#c4d7c1;border-color:currentColor;transform:translateY(-3px)}
+.platform-choice:focus-visible,.download-close:focus-visible{outline:2px solid currentColor;outline-offset:4px}
+.platform-choice>svg{width:32px;height:32px;fill:currentColor;margin-bottom:8px}
+.platform-ps5>svg{width:40px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.platform-name{font-size:22px;letter-spacing:-.035em;line-height:1.15}
+.platform-detail{font-size:13px;line-height:1.4;color:#656a63}
+.platform-choice[aria-disabled=true]{background:transparent;opacity:.6}
+.platform-install-note{margin:24px 0 0;font-size:13px;line-height:1.65;color:#656a63;overflow-wrap:anywhere}
+.platform-install-note strong{font-weight:500;color:#202521}
+html[data-theme=dark] .download-dialog{background:#101815;color:#f4f2eb;border-color:#33443a}
+html[data-theme=dark] .download-close{border-color:#f4f2eb40}
+html[data-theme=dark] .download-close:hover{background:#f4f2eb10}
+html[data-theme=dark] .platform-choice{background:#1c3027;border-color:#506355}
+html[data-theme=dark] .platform-choice:hover:not([aria-disabled=true]){background:#29473a}
+html[data-theme=dark] .platform-choice[aria-disabled=true]{background:transparent}
+html[data-theme=dark] .download-dialog #download-intro,html[data-theme=dark] .platform-detail,html[data-theme=dark] .platform-install-note{color:#bcc7bc}
+html[data-theme=dark] .platform-install-note strong{color:#f4f2eb}
+@keyframes download-enter{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:420px){.download-dialog{padding:24px}.download-platforms{gap:10px}.platform-choice{padding:18px;min-height:164px}.platform-name{font-size:20px}}
+@media(prefers-reduced-motion:reduce){.download-dialog[open]{animation:none}.platform-choice{transition:none}}
