@@ -117,3 +117,17 @@ footer .preservation h2{font-size:clamp(27px,2.4vw,36px)}
 .masthead nav>a.github-link{display:grid;place-items:center;flex:none;width:40px;height:40px;padding:10px;color:var(--ink);transition:background-color .2s,color .2s}.github-link svg{display:block}.github-link:hover{background:var(--surface);color:var(--ink)}@media(max-width:480px){.masthead nav>a.github-link{width:36px;height:36px;padding:8px}}
 
 .trailer-sound:disabled{opacity:.55}.trailer-sound:disabled:hover{transform:none}
+
+/* Paired video controls: fullscreen immediately before sound. */
+.trailer-fullscreen{position:absolute;right:64px;bottom:14px;display:grid;place-items:center;width:42px;height:42px;padding:9px;border:1px solid #ffffff60;border-radius:0;color:#fff;background:#101815cc;cursor:pointer;transition:background .2s,transform .2s}
+.trailer-fullscreen[hidden]{display:none}
+.trailer-fullscreen svg{display:block;width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:square;stroke-linejoin:miter}
+.trailer-fullscreen .fullscreen-exit{display:none}
+.trailer-fullscreen[aria-pressed=true] .fullscreen-enter{display:none}
+.trailer-fullscreen[aria-pressed=true] .fullscreen-exit{display:block}
+.trailer-fullscreen:hover{background:#101815;transform:translateY(-2px)}
+.trailer-fullscreen:focus-visible{outline:2px solid var(--accent);outline-offset:-4px}
+.trailer-window:fullscreen{width:100vw;height:100dvh;max-width:none;min-height:0;margin:0;border:0;aspect-ratio:auto;background:#000;transform:none}
+.trailer-window:fullscreen .trailer-video{width:100%;height:100%;aspect-ratio:auto}
+.trailer-video{pointer-events:none}
+@media(prefers-reduced-motion:reduce){.trailer-fullscreen{transition:none}}

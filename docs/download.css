@@ -14,7 +14,7 @@
 .platform-choice:hover:not([aria-disabled=true]){background:#c4d7c1;border-color:currentColor;transform:translateY(-3px)}
 .platform-choice:focus-visible,.download-close:focus-visible{outline:2px solid currentColor;outline-offset:4px}
 .platform-choice>svg{width:32px;height:32px;fill:currentColor;margin-bottom:8px}
-.platform-ps5>svg{width:40px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.platform-ps5>svg{width:41px;height:32px;fill:currentColor;stroke:none}
 .platform-name{font-size:22px;letter-spacing:-.035em;line-height:1.15}
 .platform-detail{font-size:13px;line-height:1.4;color:#656a63}
 .platform-choice[aria-disabled=true]{background:transparent;opacity:.6}

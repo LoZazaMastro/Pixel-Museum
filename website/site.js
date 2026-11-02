@@ -116,7 +116,8 @@ if(matchMedia('(hover:hover) and (pointer:fine)').matches){
  let pointerX=0,pointerY=0;
  // A body child cannot paint above a native modal's top layer. Keep the same
  // viewport-fixed pixel inside the active dialog, including over its backdrop.
- const syncCursorLayer=()=>{const layer=document.querySelector('dialog[open]')||document.body;if(cursor.parentElement!==layer)layer.append(cursor);cursor.classList.toggle('clickable',!!document.elementFromPoint(pointerX,pointerY)?.closest(clickable))};
+ const syncCursorLayer=()=>{const layer=document.querySelector('dialog[open]')||document.fullscreenElement||document.body;if(cursor.parentElement!==layer)layer.append(cursor);cursor.classList.toggle('clickable',!!document.elementFromPoint(pointerX,pointerY)?.closest(clickable))};
+ document.addEventListener('fullscreenchange',syncCursorLayer);
  new MutationObserver(syncCursorLayer).observe(document.body,{subtree:true,attributes:true,attributeFilter:['open']});
  document.addEventListener('pointermove',e=>{if(e.pointerType==='touch')return;pointerX=e.clientX;pointerY=e.clientY;cursor.style.left=pointerX+'px';cursor.style.top=pointerY+'px';syncCursorLayer();cursor.classList.add('visible');document.documentElement.classList.add('pixel-pointer-active')},{passive:true,capture:true});
  document.addEventListener('pointerout',e=>{if(!e.relatedTarget){cursor.classList.remove('visible');document.documentElement.classList.remove('pixel-pointer-active')}});
@@ -188,4 +189,16 @@ if(flightPreview){let visible=false;const syncFlight=()=>{if(visible&&!document.
     if(!ready)return;
     if(document.hidden)player.pauseVideo();else player.playVideo();
   });
+})();
+
+// Fullscreen stays on the whole trailer, keeping mute and pointer controls usable.
+(() => {
+ const trailer=document.querySelector('.trailer-window');
+ const button=trailer?.querySelector('.trailer-fullscreen');
+ if(!button)return;
+ if(!document.fullscreenEnabled){button.hidden=true;return;}
+ const sync=()=>{const active=document.fullscreenElement===trailer;button.setAttribute('aria-pressed',String(active));button.setAttribute('aria-label',active?'Exit fullscreen':'Enter fullscreen');};
+ button.addEventListener('click',async()=>{try{if(document.fullscreenElement===trailer)await document.exitFullscreen();else await trailer.requestFullscreen();}catch{sync();}});
+ document.addEventListener('fullscreenchange',sync);
+ sync();
 })();
