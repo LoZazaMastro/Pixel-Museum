@@ -159,7 +159,7 @@ public:
   v_=vy_=spin_=best_=jump_=immune_=charge_=camera_=finish_time_=spring_cooldown_=loop_retry_=0;view_height_=400;camera_y_=std::clamp(y_-230,0.f,1648.f);
   coyote_=.1f;grounded_=true;finished_=checkpoint_=brake_=false;rings_=banked_=falls_=0;taken_.fill(false);banked_taken_.fill(false);enemy_down_.fill(false);post_taken_.fill(false);platform_fall_.fill(0);standing_platform_=-1;loop_=-1;loop_speed_=0;tube_distance_=-1;tube_speed_=0;tube_number_=0;loop_done_=brake_feedback_=rolling_=air_spin_=false;for(auto&r:loose_)r.life=0;
  }
- const char*help()const override{return "D-pad / left stick: lean and build speed. Cross jumps. Hold Down while moving to roll; steer against your movement to brake. At rest, hold Down and tap Cross to store a rolling start; release Down to launch. Carry momentum across gaps; the higher route holds extra rings. A starpost saves your return position. Square restarts.";}
+ const char*help()const override{return "{dpad} / {left_stick}: lean and build speed. {cross} jumps. Hold Down while moving to roll; steer against your movement to brake. At rest, hold Down and tap {cross} to store a rolling start; release Down to launch. Carry momentum across gaps; the higher route holds extra rings. A starpost saves your return position. {square} restarts.";}
  void handle(const hui::InputFrame&i,hui::ui::Feedback&f)override{
   const bool braking=brake_;brake_=false;if(common(i,f)){charge_=0;return;}brake_=input_y_>.35f;
   if(brake_&&grounded_&&std::abs(v_)>150&&!rolling_){rolling_=true;pulse(hui::audio::Tactile::touch,.15f,.04f);}
@@ -560,7 +560,7 @@ public:
     void reset()override{clear();tiles_.fill(0);cx_=1;cy_=2;scan_=cleared_=0;phase_=0;playing_=true;
         tiles_[index(1,2)]=tiles_[index(2,2)]=tiles_[index(1,3)]=1;
         tiles_[index(5,1)]=tiles_[index(5,2)]=tiles_[index(6,1)]=2;}
-    const char*help()const override{return "D-pad: select a tile   Cross: change colour / erase   Triangle: pause scanner   Square: clear and restart";}
+    const char*help()const override{return "{dpad}: select a tile   {cross}: change colour / erase   {triangle}: pause scanner   {square}: clear and restart";}
     void handle(const hui::InputFrame&i,hui::ui::Feedback&f)override{
         if(common(i,f))return;
         const int old_x=cx_,old_y=cy_;
@@ -599,7 +599,7 @@ public:
     Wind(){reset();}
     void reset()override{clear();p_={115,370};vy_=0;breath_=1;gathered_=0;finished_=lift_feedback_=false;collected_.fill(false);}
     StudyCompletion completion()const override{return finished_?StudyCompletion::experience_complete:StudyCompletion::playing;}
-    const char*help()const override{return "Left stick / D-pad: guide the ribbon   Hold Cross: rise   Rest in an updraft to refill   Square: restart";}
+    const char*help()const override{return "{left_stick} / {dpad}: guide the ribbon   Hold {cross}: rise   Rest in an updraft to refill   {square}: restart";}
     void handle(const hui::InputFrame&i,hui::ui::Feedback&f)override{if(common(i,f))lift_feedback_=false;}
     void update(float dt)override{
         if(!active_input_)return;dt=bounded_dt(dt);tick(dt);if(finished_)return;const Point before=p_;

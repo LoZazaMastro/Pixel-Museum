@@ -35,6 +35,11 @@
 #include <vector>
 #include <sys/stat.h>
 #include <unistd.h>
+#if defined(MUSEUM_WINDOWS)
+#include <filesystem>
+#include <windows.h>
+#include "platform/windows/curl_windows.hpp"
+#endif
 #if !defined(__FreeBSD__) && __has_include(<sys/statvfs.h>)
 #include <sys/statvfs.h>
 #pragma weak statvfs
@@ -73,22 +78,52 @@ std::string storage_error(const char*operation,int code=errno){return(code==ENOS
 // Inspect an already opened descriptor instead: O_NOFOLLOW remains enforced
 // by the kernel, and O_NONBLOCK prevents an unexpected FIFO from blocking us.
 bool nofollow_info(const std::string&path,struct stat&info){
+#if defined(MUSEUM_WINDOWS)
+    std::error_code error;
+    const auto status=std::filesystem::symlink_status(std::filesystem::u8path(path),error);
+    if(error||std::filesystem::is_symlink(status)){errno=error?error.value():EACCES;return false;}
+    return stat(path.c_str(),&info)==0;
+#else
     int fd=open(path.c_str(),O_RDONLY|O_NOFOLLOW|O_NONBLOCK);if(fd<0)return false;
     const int result=fstat(fd,&info);const int saved=errno;close(fd);errno=saved;return result==0;
+#endif
 }
 bool regular(const std::string& path,std::uint64_t* bytes=nullptr){struct stat st{};if(!nofollow_info(path,st))return false;if(!S_ISREG(st.st_mode)||st.st_size<0){errno=EINVAL;return false;}if(bytes)*bytes=st.st_size;return true;}
-bool directory(const std::string& path){const int fd=open(path.c_str(),O_RDONLY|O_DIRECTORY|O_NOFOLLOW);if(fd<0)return false;const int saved=errno;close(fd);errno=saved;return true;}
+bool directory(const std::string& path){
+#if defined(MUSEUM_WINDOWS)
+    struct stat st{};return nofollow_info(path,st)&&S_ISDIR(st.st_mode);
+#else
+    const int fd=open(path.c_str(),O_RDONLY|O_DIRECTORY|O_NOFOLLOW);if(fd<0)return false;const int saved=errno;close(fd);errno=saved;return true;
+#endif
+}
 bool mkdirs(const std::string& path){
+#if defined(MUSEUM_WINDOWS)
+    std::error_code error;const auto p=std::filesystem::u8path(path);
+    if(!p.is_absolute()){errno=EINVAL;return false;}
+    std::filesystem::create_directories(p,error);if(error){errno=error.value();return false;}return directory(path);
+#else
     if(path.empty()||path.front()!='/')return false;
     std::size_t at=1;for(;;){at=path.find('/',at);const auto part=at==std::string::npos?path:path.substr(0,at);if(!part.empty()&&!directory(part)){if(mkdir(part.c_str(),0700)||!directory(part))return false;}if(at==std::string::npos)break;++at;}return true;
+#endif
 }
-bool sync_directory(const std::string& path){int fd=open(path.c_str(),O_RDONLY|O_DIRECTORY);if(fd<0)return false;const bool ok=fsync(fd)==0;close(fd);return ok;}
+bool sync_directory(const std::string& path){
+#if defined(MUSEUM_WINDOWS)
+    // Windows commits the individual files before rename. A CRT descriptor
+    // cannot open a directory for fsync; never treat that as a failed install.
+    return directory(path);
+#else
+    int fd=open(path.c_str(),O_RDONLY|O_DIRECTORY);if(fd<0)return false;const bool ok=fsync(fd)==0;close(fd);return ok;
+#endif
+}
 std::uint64_t staged_bytes(const std::string&path){
     if(!directory(path))return 0;DIR*dir=opendir(path.c_str());if(!dir)return 0;std::uint64_t bytes=0;
     while(auto*entry=readdir(dir)){const std::string name=entry->d_name;if(name=="."||name=="..")continue;const auto file=path+"/"+name;struct stat st{};if(!nofollow_info(file,st))continue;if(S_ISREG(st.st_mode))bytes+=st.st_size;else if(S_ISDIR(st.st_mode))bytes+=staged_bytes(file);}closedir(dir);return bytes;
 }
 bool available_bytes(const std::string&path,std::uint64_t&bytes){
-#if defined(__FreeBSD__)
+#if defined(MUSEUM_WINDOWS)
+    std::error_code error;const auto space=std::filesystem::space(std::filesystem::u8path(path),error);
+    if(error)return false;bytes=space.available;return true;
+#elif defined(__FreeBSD__)
     // Both volume-stat paths are unsafe in the actual PS5 application sandbox:
     // the console log stops inside statfs despite the SDK providing its wrapper.
     // This preflight is optional; the reserved 16 GiB container remains in force,
@@ -105,7 +140,11 @@ struct SmallRead {bool ok=false;std::string bytes,operation;int code=0;};
 SmallRead read_bounded(const std::string&path,std::size_t maximum,bool trusted_bundle=false){
     // Match hui::save::read_file's working open/read path for the bundled
     // read-only manifest. Private worker JSON keeps the no-follow protection.
-    SmallRead result;const int fd=open(path.c_str(),O_RDONLY|(trusted_bundle?0:O_NOFOLLOW|O_NONBLOCK));
+    SmallRead result;const int fd=open(path.c_str(),O_RDONLY|(trusted_bundle?0:O_NOFOLLOW|O_NONBLOCK)
+#if defined(MUSEUM_WINDOWS)
+        |O_BINARY
+#endif
+    );
     if(fd<0){result.code=errno;result.operation="open";return result;}
     std::array<char,4096>buffer{};
     for(;;){const auto n=::read(fd,buffer.data(),buffer.size());if(n<0){if(errno==EINTR)continue;result.code=errno;result.operation="read";break;}if(!n){result.ok=true;break;}if(std::size_t(n)>maximum-result.bytes.size()){result.code=EFBIG;result.operation="bounded read";break;}result.bytes.append(buffer.data(),std::size_t(n));}
@@ -133,7 +172,7 @@ std::string field(const char* p,std::size_t n){const auto end=static_cast<const 
 
 // Descriptor-relative host fixtures use POSIX directly. Native destructive
 // operations run only in the already proven restricted writer payload.
-#if !defined(__FreeBSD__)
+#if !defined(__FreeBSD__) && !defined(MUSEUM_WINDOWS)
 int removal_openat(int directory,const char*name,int flags){
     return openat(directory,name,flags);
 }
@@ -142,6 +181,21 @@ int removal_unlinkat(int directory,const char*name,int flags){
 }
 #endif
 bool normal_absolute(const std::string&input,std::string&output){
+#if defined(MUSEUM_WINDOWS)
+    output.clear();
+    if(input.empty()||input.find('\0')!=std::string::npos)return false;
+    const auto path=std::filesystem::u8path(input);
+    const auto drive=path.root_name().native();
+    if(!path.is_absolute()||drive.size()!=2||drive[1]!=L':'||!((drive[0]>=L'A'&&drive[0]<=L'Z')||(drive[0]>=L'a'&&drive[0]<=L'z')))return false;
+    for(const auto&part:path.relative_path()){
+        const auto name=part.native();
+        if(name==L"."||name==L".."||name.find(L':')!=std::wstring::npos||(!name.empty()&&(name.back()==L'.'||name.back()==L' ')))return false;
+    }
+    const auto bytes=path.lexically_normal().generic_u8string();
+    output.assign(bytes.begin(),bytes.end());
+    while(output.size()>3&&output.back()=='/')output.pop_back();
+    return true;
+#else
     output.clear();if(input.empty()||input.front()!='/'||input.find('\\')!=std::string::npos||input.find('\0')!=std::string::npos)return false;
     std::size_t begin=1;
     while(begin<input.size()){
@@ -153,8 +207,52 @@ bool normal_absolute(const std::string&input,std::string&output){
     }
     if(output.empty())output="/";
     return true;
+#endif
 }
 bool overlaps_tree(const std::string&a,const std::string&b){return a==b||(a.size()<b.size()&&b.compare(0,a.size(),a)==0&&b[a.size()]=='/')||(b.size()<a.size()&&a.compare(0,b.size(),b)==0&&a[b.size()]=='/');}
+#if defined(MUSEUM_WINDOWS)
+bool windows_equal_path(const std::filesystem::path&a,const std::filesystem::path&b){
+    const auto left=a.lexically_normal().make_preferred().native();const auto right=b.lexically_normal().make_preferred().native();
+    return CompareStringOrdinal(left.data(),int(left.size()),right.data(),int(right.size()),TRUE)==CSTR_EQUAL;
+}
+bool windows_below_path(const std::filesystem::path&candidate,const std::filesystem::path&root){
+    const auto child=candidate.lexically_normal().make_preferred().native();const auto parent=root.lexically_normal().make_preferred().native();
+    return child.size()>parent.size()&&CompareStringOrdinal(child.data(),int(parent.size()),parent.data(),int(parent.size()),TRUE)==CSTR_EQUAL&&(parent.back()==L'\\'||child[parent.size()]==L'\\');
+}
+void windows_filesystem_error(DWORD error){
+    switch(error){
+    case ERROR_FILE_NOT_FOUND:case ERROR_PATH_NOT_FOUND:errno=ENOENT;break;
+    case ERROR_ACCESS_DENIED:errno=EACCES;break;
+    case ERROR_SHARING_VIOLATION:case ERROR_LOCK_VIOLATION:errno=EBUSY;break;
+    case ERROR_DIRECTORY:errno=ENOTDIR;break;
+    case ERROR_NOT_ENOUGH_MEMORY:case ERROR_OUTOFMEMORY:errno=ENOMEM;break;
+    case ERROR_FILENAME_EXCED_RANGE:errno=ENAMETOOLONG;break;
+    default:errno=EIO;break;
+    }
+}
+std::string windows_path_text(const std::filesystem::path&path){const auto bytes=path.generic_u8string();return {bytes.begin(),bytes.end()};}
+// A directory cannot be renamed or replaced while it is being enumerated.
+// OPEN_REPARSE_POINT opens the link itself; inspect its attributes before any
+// descendant path can be used. Parent handles remain held during recursion.
+struct WindowsDirectoryPin {
+    HANDLE handle=INVALID_HANDLE_VALUE;
+    WindowsDirectoryPin()=default;
+    WindowsDirectoryPin(const WindowsDirectoryPin&)=delete;
+    WindowsDirectoryPin&operator=(const WindowsDirectoryPin&)=delete;
+    WindowsDirectoryPin(WindowsDirectoryPin&&other)noexcept:handle(other.handle){other.handle=INVALID_HANDLE_VALUE;}
+    ~WindowsDirectoryPin(){close();}
+    void close(){if(handle!=INVALID_HANDLE_VALUE){const int saved=errno;CloseHandle(handle);handle=INVALID_HANDLE_VALUE;errno=saved;}}
+    bool open(const std::filesystem::path&path){
+        handle=CreateFileW(path.c_str(),FILE_READ_ATTRIBUTES,FILE_SHARE_READ|FILE_SHARE_WRITE,nullptr,OPEN_EXISTING,FILE_FLAG_BACKUP_SEMANTICS|FILE_FLAG_OPEN_REPARSE_POINT,nullptr);
+        if(handle==INVALID_HANDLE_VALUE){windows_filesystem_error(GetLastError());return false;}
+        BY_HANDLE_FILE_INFORMATION info{};
+        if(!GetFileInformationByHandle(handle,&info)){const auto error=GetLastError();close();windows_filesystem_error(error);return false;}
+        if(info.dwFileAttributes&FILE_ATTRIBUTE_REPARSE_POINT){close();errno=EPERM;return false;}
+        if(!(info.dwFileAttributes&FILE_ATTRIBUTE_DIRECTORY)){close();errno=ENOTDIR;return false;}
+        return true;
+    }
+};
+#endif
 }
 struct CollectionInstaller::Impl {
     struct Pack {std::string id,url,sha;std::uint64_t bytes=0,file_count=0,expanded_bytes=0;};
@@ -185,7 +283,7 @@ struct CollectionInstaller::Impl {
     void storage_failure(const char*operation,const std::string&path,int code){update(Phase::failed,"Installation storage unavailable",storage_error(operation,code),code,std::string(operation)+" ["+path+"] errno="+std::to_string(code)+" ("+std::strerror(code)+")");}
     bool interrupted()const{return command.load(std::memory_order_acquire)!=0;}
     void interrupted_status(){const auto c=command.load();update(c==1?Phase::paused:Phase::cancelled,c==1?"Paused":"Stopped");}
-#if !defined(__FreeBSD__)
+#if !defined(__FreeBSD__) && !defined(MUSEUM_WINDOWS)
     bool remove_tree_at(int parent_fd,const std::string&name,unsigned depth,std::uint64_t&entries,std::string&path){
         if(interrupted()){errno=ECANCELED;return false;}
         if(depth>64||++entries>1000000){errno=EOVERFLOW;return false;}
@@ -217,6 +315,28 @@ struct CollectionInstaller::Impl {
     }
 #endif
     bool removal_path(const std::string&target,std::string&normalized,std::string&diagnostic)const{
+#if defined(MUSEUM_WINDOWS)
+        std::string owned,bundle;
+        if(!normal_absolute(target,normalized)||!normal_absolute(base,owned)){
+            errno=EINVAL;diagnostic="Refused collection reset path: "+target;return false;
+        }
+        const auto path=std::filesystem::u8path(normalized);
+        if(!windows_equal_path(path,std::filesystem::u8path(owned))||path.filename()!=L"collection"||path.parent_path()==path.root_path()){
+            errno=EPERM;diagnostic="Refused collection reset outside configured Windows collection: "+target;return false;
+        }
+        // Portable Windows installs keep downloaded data in app/collection.
+        // It may be below the bundle, but it may never contain the bundle.
+        if(!bundled.empty()){
+            if(!normal_absolute(bundled,bundle)){
+                errno=EPERM;diagnostic="Invalid Windows application bundle path";return false;
+            }
+            const auto app=std::filesystem::u8path(bundle);
+            if(windows_equal_path(app,path)||windows_below_path(app,path)){
+                errno=EPERM;diagnostic="Refused collection reset containing application bundle: "+target;return false;
+            }
+        }
+        return true;
+#else
         std::string bundle;
         if(!normal_absolute(target,normalized)||normalized=="/collection"||normalized.size()<11||normalized.compare(normalized.size()-11,11,"/collection")){
             errno=EINVAL;diagnostic="Refused collection reset path: "+target;return false;
@@ -230,8 +350,62 @@ struct CollectionInstaller::Impl {
         }
 #endif
         return true;
+#endif
     }
-#if !defined(__FreeBSD__)
+#if defined(MUSEUM_WINDOWS)
+    int windows_collection_tree(const std::filesystem::path&path,bool erase,unsigned depth,std::uint64_t&entries,std::string&diagnostic){
+        // Return the error by value: destroying a filesystem iterator may
+        // update CRT errno while unwinding through a rejected nested link.
+        if(interrupted())return ECANCELED;
+        if(depth>64||++entries>1000000){diagnostic="Collection reset exceeded directory limits";return EOVERFLOW;}
+        const DWORD attributes=GetFileAttributesW(path.c_str());
+        if(attributes==INVALID_FILE_ATTRIBUTES){windows_filesystem_error(GetLastError());if(errno==ENOENT)return 0;diagnostic="Cannot inspect downloaded collection: "+windows_path_text(path);return errno;}
+        if(attributes&FILE_ATTRIBUTE_REPARSE_POINT){diagnostic="Refused collection reset through reparse point: "+windows_path_text(path);return EPERM;}
+        WindowsDirectoryPin directory;
+        if(attributes&FILE_ATTRIBUTE_DIRECTORY){
+            if(!directory.open(path)){diagnostic="Cannot pin collection reset directory: "+windows_path_text(path);return errno;}
+            std::error_code error;
+            std::filesystem::directory_iterator iterator(path,std::filesystem::directory_options::none,error),end;
+            if(error){windows_filesystem_error(DWORD(error.value()));diagnostic="Cannot enumerate downloaded collection: "+windows_path_text(path);return errno;}
+            while(iterator!=end){
+                const auto child=iterator->path();
+                // Check a second time when opening each child. The current
+                // directory stays pinned until every child has been handled.
+                const int result=windows_collection_tree(child,erase,depth+1,entries,diagnostic);
+                if(result)return result;
+                iterator.increment(error);
+                if(error){windows_filesystem_error(DWORD(error.value()));diagnostic="Cannot enumerate downloaded collection: "+windows_path_text(path);return errno;}
+            }
+        }
+        if(!erase)return 0;
+        if(interrupted())return ECANCELED;
+        directory.close();
+        std::error_code error;
+        if(!std::filesystem::remove(path,error)&&error){windows_filesystem_error(DWORD(error.value()));diagnostic="Cannot remove downloaded collection: "+windows_path_text(path);return errno;}
+        return 0;
+    }
+    bool remove_collection_tree(const std::string&target,std::string&diagnostic){
+        std::string normalized;if(!removal_path(target,normalized,diagnostic))return false;
+        const auto path=std::filesystem::u8path(normalized);
+        // Validate and pin the full absolute parent chain before deletion.
+        // This also rejects directory junctions, mount points and symlinks in
+        // an otherwise innocent-looking configured data path.
+        std::vector<WindowsDirectoryPin>parents;
+        auto current=path.root_path();
+        const auto pin=[&](const std::filesystem::path&directory){WindowsDirectoryPin held;if(!held.open(directory)){diagnostic="Cannot pin collection reset parent: "+windows_path_text(directory);return false;}parents.push_back(std::move(held));return true;};
+        if(!pin(current))return false;
+        for(const auto&part:path.parent_path().relative_path()){
+            current/=part;
+            if(!pin(current))return errno==ENOENT;
+        }
+        // Refuse an unsafe tree before removing the first owned file. Repeat
+        // every attribute check in the removal pass while ancestors are pinned.
+        std::uint64_t entries=0;
+        int result=windows_collection_tree(path,false,0,entries,diagnostic);
+        if(!result){entries=0;result=windows_collection_tree(path,true,0,entries,diagnostic);}
+        errno=result;return result==0;
+    }
+#elif !defined(__FreeBSD__)
     bool remove_collection_tree(const std::string&target,std::string&diagnostic){
         std::string normalized;if(!removal_path(target,normalized,diagnostic))return false;
         int fd=open("/",O_RDONLY|O_DIRECTORY|O_NOFOLLOW);
@@ -271,7 +445,10 @@ struct CollectionInstaller::Impl {
         update(Phase::removing,"Removing downloaded data");
         // Clear both known locations so the installer cannot import a legacy
         // copy immediately after the user has explicitly removed the data.
-        std::vector<std::string> targets{base};if(!legacy_base.empty()&&legacy_base!=base)targets.push_back(legacy_base);
+        std::vector<std::string> targets{base};
+#if !defined(MUSEUM_WINDOWS)
+        if(!legacy_base.empty()&&legacy_base!=base)targets.push_back(legacy_base);
+#endif
         // Validate every configured target before the first destructive step.
         for(const auto&target:targets){
             std::string normalized,diagnostic;
@@ -354,6 +531,49 @@ struct CollectionInstaller::Impl {
         const auto expected=j["image_manifest_sha256"].get<std::string>();if(!hex_sha(expected)||(!image_manifest_sha.empty()&&expected!=image_manifest_sha)||digest_text(read_small(tree+"/assets/images/manifest.json",16u<<20))!=expected)return false;
         update(Phase::verifying,"Checking downloaded collection");for(std::size_t n=0;n<packs.size();++n)if(!pack_done(n,tree))return false;return true;
     }
+#if defined(MUSEUM_WINDOWS)
+    void windows_setup_failure(const std::string&reason,int code=EINVAL){
+        update(Phase::failed,"Setup repair required",
+            "Pixel Museum's installed resources are missing or damaged. Run Pixel Museum Setup to repair this installation.",
+            code,reason);
+    }
+    void run_windows_validation(){
+        // The Windows setup owns installation, downloads, hashing and repair.
+        // A launch only reads its small receipts/index and the twelve TAR sizes;
+        // it never creates staging directories or scans gigabytes of payloads.
+        update(Phase::verifying,"Checking installed resources");
+        if(!archive_mode||bundled.empty()){
+            windows_setup_failure("The setup archive index or application root is unavailable");return;
+        }
+        const auto complete=Json::parse(read_small(ready_root+"/.complete.json",64u<<10),nullptr,false);
+        if(!complete.is_object()||!complete.contains("schema_version")||!complete["schema_version"].is_number_integer()||complete["schema_version"]!=1||
+           !complete.contains("pack_count")||!complete["pack_count"].is_number_unsigned()||complete["pack_count"].get<std::uint64_t>()!=packs.size()){
+            windows_setup_failure("Missing or invalid setup completion receipt: "+ready_root);return;
+        }
+        for(std::size_t n=0;n<packs.size();++n){
+            if(interrupted()){interrupted_status();return;}
+            const auto receipt=Json::parse(read_small(marker(n,ready_root),64u<<10),nullptr,false);
+            if(!receipt.is_object()||!receipt.contains("storage")||!receipt["storage"].is_string()||receipt["storage"].get<std::string>()!="archive"){
+                windows_setup_failure("Missing or invalid setup archive receipt: "+marker(n,ready_root));return;
+            }
+        }
+        // Uses the pinned manifest/image-registry hashes, each exact archive
+        // name and byte length, and the per-pack receipts. Setup has already
+        // checked complete TAR SHA256 values before committing this directory.
+        if(!ready_on_disk()){
+            windows_setup_failure("Installed archive receipts, registry or TAR sizes do not match the bundled manifest: "+ready_root);return;
+        }
+        if(digest_text(read_small(bundled+"/assets/images/manifest.json",16u<<20))!=image_manifest_sha){
+            windows_setup_failure("The bundled image registry does not match the setup archive index");return;
+        }
+        if(interrupted()){interrupted_status();return;}
+        std::lock_guard<std::mutex>lock(mutex);
+        active_root=ready_root;status.phase=Phase::ready;status.stage="Installed resources ready";
+        status.error.clear();status.diagnostic.clear();status.filesystem_errno=0;
+        status.downloaded_bytes=status.total_bytes;status.installed_bytes=status.total_expanded_bytes;
+        status.installed_files=status.total_files;status.bytes_per_second=0;
+    }
+#endif
     bool storage_benchmark(){
         const auto receipt=base+"/.write-probe-"+manifest_sha.substr(0,24)+".json";
         const auto previous=Json::parse(read_small(receipt),nullptr,false);if(previous.is_object()&&previous.contains("manifest_sha256")&&previous["manifest_sha256"].is_string()&&previous["manifest_sha256"].get<std::string>()==manifest_sha&&previous.contains("complete")&&previous["complete"].is_boolean()&&previous["complete"].get<bool>())return true;
@@ -463,6 +683,11 @@ struct CollectionInstaller::Impl {
     }
     static int progress_callback(void*data,curl_off_t,curl_off_t,curl_off_t,curl_off_t){return static_cast<Transfer*>(data)->owner->interrupted()?1:0;}
     bool download(const Pack&pack,const std::string&path,std::string&error){
+#if defined(MUSEUM_WINDOWS)
+        (void)pack;(void)path;
+        error="Collection resources are installed by Pixel Museum Setup. Run Setup to repair this installation.";
+        return false;
+#else
         for(unsigned attempt=0;attempt<2&&!interrupted();++attempt){
             const auto begin=WorkerClock::now();
             std::uint64_t offset=0;const bool exists=regular(path,&offset);if(exists&&offset>pack.bytes){std::remove(path.c_str());offset=0;}
@@ -487,6 +712,8 @@ struct CollectionInstaller::Impl {
                 error="Cannot initialize collection download";return false;}
 #if defined(__FreeBSD__)
             console_curl_setup_bulk(curl);
+#elif defined(MUSEUM_WINDOWS)
+            hui::windows::configure_curl(curl);
 #endif
             Transfer transfer{this,fd,&pack,offset,0,0,false,false,false,std::chrono::steady_clock::now()};transfer.rate.reset();update(Phase::downloading,"Downloading "+pack.id);progress(transfer);
             curl_easy_setopt(curl,CURLOPT_URL,pack.url.c_str());curl_easy_setopt(curl,CURLOPT_NOSIGNAL,1L);curl_easy_setopt(curl,CURLOPT_FOLLOWLOCATION,1L);curl_easy_setopt(curl,CURLOPT_MAXREDIRS,5L);
@@ -524,6 +751,7 @@ struct CollectionInstaller::Impl {
             return true;
         }
         if(!interrupted())error="Server does not provide a usable complete pack";return false;
+#endif
     }
     bool extract(const Pack&pack,const std::string&path,std::size_t index,std::string&error){
         const auto begin=WorkerClock::now();double file_flush_seconds=0,read_seconds=0,write_seconds=0,metadata_seconds=0,close_seconds=0,rename_seconds=0,status_seconds=0,last_report=0;std::uint64_t read_calls=0,write_calls=0;
@@ -593,6 +821,10 @@ struct CollectionInstaller::Impl {
             p->running.store(false,std::memory_order_release);}}finish{this};
         std::fill(installed_pack_bytes.begin(),installed_pack_bytes.end(),0);std::fill(installed_pack_files.begin(),installed_pack_files.end(),0);
         worker_trace("entry (explicit 2 MiB stack)");
+#if defined(MUSEUM_WINDOWS)
+        {std::string error;if(!load_archive_index(error)){windows_setup_failure(error);return;}}
+        run_windows_validation();return;
+#else
         {std::string error;update(Phase::verifying,"Checking collection archive index");if(!load_archive_index(error)){update(Phase::failed,"Invalid collection archive index",error);return;}}
         if(!bundled.empty()){update(Phase::verifying,"Checking installed collection");worker_trace("bundled inventory begin");const bool complete=media::packaged_images_complete(bundled);worker_trace(complete?"bundled inventory complete":"bundled inventory incomplete");if(complete){if(interrupted()){interrupted_status();return;}std::lock_guard<std::mutex>lock(mutex);active_root.clear();status.phase=Phase::ready;status.stage="Bundled collection ready";status.downloaded_bytes=status.total_bytes;status.installed_bytes=status.total_expanded_bytes;status.installed_files=status.total_files;return;}}
         if(interrupted()){interrupted_status();return;}
@@ -642,6 +874,7 @@ struct CollectionInstaller::Impl {
         const auto index_sha=digest_text(read_small(stage_root+"/assets/images/manifest.json",16u<<20));
         if(!atomic_text(stage_root+"/.complete.json",Json({{"schema_version",1},{"manifest_sha256",manifest_sha},{"image_manifest_sha256",index_sha},{"pack_count",packs.size()}}).dump())||std::rename(stage_root.c_str(),ready_root.c_str())||!sync_directory(base)){update(Phase::failed,"Installation failed",storage_error("Cannot activate completed collection"));return;}
         std::lock_guard<std::mutex>lock(mutex);active_root=ready_root;status.phase=Phase::ready;status.stage="Collection ready";status.downloaded_bytes=status.total_bytes;status.installed_bytes=status.total_expanded_bytes;status.installed_files=status.total_files;status.bytes_per_second=0;
+#endif
     }
 };
 CollectionInstaller::CollectionInstaller():impl_(new Impl){}
@@ -650,12 +883,18 @@ bool CollectionInstaller::configure(const std::string& manifest_path,const std::
     shutdown();auto&p=*impl_;std::lock_guard<std::mutex>control(p.lifecycle);std::lock_guard<std::mutex>lock(p.mutex);p.status={};p.configured=false;p.active_root.clear();p.packs.clear();
     const auto source=read_bounded(manifest_path,1u<<20,true);
     if(!source.ok){
+#if !defined(MUSEUM_WINDOWS)
         if(source.operation=="open"&&verified_missing_bundle(manifest_path,source.code)){p.status.diagnostic="Legacy bundled manifest confirmed absent: "+manifest_path;return false;}
+#endif
         p.status.phase=Phase::failed;p.status.stage="Cannot read collection manifest";p.status.filesystem_errno=source.code;p.status.error="The bundled collection manifest could not be read";p.status.diagnostic=source.operation+" ["+manifest_path+"] errno="+std::to_string(source.code)+" ("+std::strerror(source.code)+"); legacy bypass refused";return false;
     }
     const auto&raw=source.bytes;auto j=Json::parse(raw,nullptr,false);
     const auto reject=[&](const char*why){p.status.phase=Phase::failed;p.status.error=why;p.status.stage="Invalid collection manifest";p.status.diagnostic=std::string(why)+" ["+manifest_path+"]";return false;};
+#if defined(MUSEUM_WINDOWS)
+    if(data_directory.empty()||!std::filesystem::u8path(data_directory).is_absolute()||data_directory.find("..")!=std::string::npos||data_directory.find('\\')!=std::string::npos)return reject("Persistent writable collection directory required");
+#else
     if(data_directory.empty()||data_directory.front()!='/'||data_directory=="/app0"||data_directory.rfind("/app0/",0)==0||data_directory.find("..")!=std::string::npos||data_directory.find('\\')!=std::string::npos)return reject("Persistent writable collection directory required");
+#endif
     if(!legacy_data_directory.empty()&&(legacy_data_directory.front()!='/'||legacy_data_directory=="/app0"||legacy_data_directory.rfind("/app0/",0)==0||legacy_data_directory.find("..")!=std::string::npos||legacy_data_directory.find('\\')!=std::string::npos))return reject("Invalid legacy collection directory");
     if(!j.is_object()||!j.contains("schema_version")||!j["schema_version"].is_number_integer()||j["schema_version"].get<int>()!=1||!j.contains("collection_id")||!j["collection_id"].is_string()||!component(j["collection_id"].get<std::string>())||!j.contains("packs")||!j["packs"].is_array()||j["packs"].empty()||j["packs"].size()>256)return reject("Invalid collection manifest schema");
     std::set<std::string>ids;p.maximum_pack=0;p.expanded_bytes=0;

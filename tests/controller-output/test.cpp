@@ -46,9 +46,9 @@ int main(){
    assert(std::any_of(speaker.begin(),speaker.end(),[](float v){return v!=0;}));
    std::array<std::int16_t,512>television{};tv.render(television.data(),256);
    assert(std::any_of(television.begin(),television.end(),[](auto v){return v!=0;}));
-   hui::audio::Mixer reference;museum::play_startup_note(reference,notes[ordinal]);
+   hui::audio::Mixer reference;museum::play_original_pixel(reference,notes[ordinal]);
    std::array<std::int16_t,512>expected{};reference.render(expected.data(),256);
-   assert(television==expected); // Every pixel keeps its unchanged TV voice alongside the pad voice.
+   assert(television==expected); // Every pixel keeps its original FM voice alongside the pad voice.
   }
   hui::audio::Mixer tv;ControllerFeedback pad;pad.enabled(true);
   assert(museum::route_startup_note(tv,pad,60,-1,true)==museum::StartupRoute::television);
@@ -83,9 +83,9 @@ int main(){
   puts("PASS: authored impact has useful PCM drive, shot stays lighter; sustained passage and airflow differ, bounded mixed output. Physical intensity remains unverified.");
  }
  ControllerFeedback c;c.enabled(true);for(int n=0;n<64;++n)assert(c.post({}));assert(!c.post({})&&c.dropped()==1);c.enabled(false);c.enabled(true);c.render_haptics(one.data(),2048);assert(std::all_of(one.begin(),one.end(),[](float x){return x==0;}));assert(!c.post({Tactile::error,std::numeric_limits<float>::quiet_NaN(),.04f,0}));assert(c.post({Tactile::back,.2f,.03f,0}));c.enabled(false);c.enabled(true);assert(c.post({Tactile::confirm,.2f,.03f,0}));c.render_haptics(one.data(),2048);assert(std::any_of(one.begin(),one.end(),[](float x){return std::abs(x)>.001f;}));
- std::array<float,256>music;music.fill(.5f);std::array<float,256>mono{};c.render_speaker(mono.data(),256);c.submit_speaker(music.data(),256);c.render_speaker(mono.data(),256);for(float v:mono)assert(v==.22f);
+ std::array<float,256>music;music.fill(.5f);std::array<float,256>mono{};c.render_speaker(mono.data(),256);c.submit_speaker(music.data(),256);c.render_speaker(mono.data(),256);for(float v:mono)assert(std::abs(v-.3f)<1e-6f);
  c.submit_speaker(music.data(),256);c.enabled(false);c.enabled(true);c.render_speaker(mono.data(),256);for(float v:mono)assert(v==0);
- for(int n=0;n<10;++n)c.submit_speaker(music.data(),256);c.render_speaker(mono.data(),256);for(float v:mono)assert(v==0);music.fill(.1f);c.submit_speaker(music.data(),256);c.render_speaker(mono.data(),256);for(float v:mono)assert(v==.1f);
+ for(int n=0;n<10;++n)c.submit_speaker(music.data(),256);c.render_speaker(mono.data(),256);for(float v:mono)assert(v==0);music.fill(.1f);c.submit_speaker(music.data(),256);c.render_speaker(mono.data(),256);for(float v:mono)assert(v>0&&v<=.1f); // The linear speaker limiter recovers smoothly after overload.
  std::atomic<bool>done=false;std::thread consumer([&]{std::array<float,256>out{};while(!done.load()){c.render_speaker(out.data(),256);finite(out.data(),256,.22f);}});for(int n=0;n<10000;++n){music.fill(n%2?.12f:-.12f);c.submit_speaker(music.data(),256);}done=true;consumer.join();
  {ControllerFeedback mixed;mixed.enabled(true);std::atomic<bool>finished=false;
   std::thread speaker([&]{std::array<float,256>out{};while(!finished.load()){mixed.render_speaker(out.data(),256);finite(out.data(),256,.3f);}});

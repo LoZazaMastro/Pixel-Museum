@@ -161,6 +161,9 @@ void Screen::draw_history_page(){
         page_.line(880,top,880,bottom,1,quiet.with_alpha(.12f));
         const float y=top+(viewport-height)*std::clamp(scroll_.value/scroll_max_,0.f,1.f);
         page_.line(880,y,880,y+height,2,tone_);
+#if defined(MUSEUM_DESKTOP)
+        desktop_add_scroll_area(DesktopScrollTarget::content,{98,top-25,774,viewport+25},{879,top,2,viewport},scroll_max_,scroll_.value,18);
+#endif
     }
     if(!e->images.empty()){
         const auto&photo=e->images[e->preferred_image];

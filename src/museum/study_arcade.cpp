@@ -58,13 +58,16 @@ class Paddle final:public Scene {
  friend struct PongMultiplayerInspection;
  float player_=195,opponent_=195,control_=0,opponent_control_=0;V ball_{340,195},velocity_{235,80};bool running_=false,two_players_=false;int returns_=0,best_returns_=0,player_score_=0,opponent_score_=0;float previous_x_=340,previous_y_=195;
  static float rally_multiplier(int returns){return returns>=23?3.f:std::min(3.f,std::pow(1.05f,float(std::max(0,returns))));}
- float opponent_speed()const{return 175.f*std::clamp(norm(velocity_)/std::hypot(235.f,80.f),1.f,3.f);}
+ // The ball gains pace during a rally; the opponent only gains a little
+ // ground. A three-times-faster paddle could outrun the player and erase
+ // every useful angled return. Keep its maximum below the player's 310.
+ float opponent_speed()const{return 175.f+35.f*std::clamp((norm(velocity_)/std::hypot(235.f,80.f)-1.f)*.5f,0.f,1.f);}
 public:
  std::map<std::string,std::uint64_t> trophy_stats()const override{return {{"consecutive_returns",std::uint64_t(best_returns_)}};}
  Paddle(){reset();}
  bool local_multiplayer()const override{return true;}
  void reset()override{clean();player_=opponent_=195;control_=opponent_control_=0;ball_={340,195};velocity_={235,80};previous_x_=340;previous_y_=195;running_=two_players_=false;returns_=best_returns_=player_score_=opponent_score_=0;}
- const char*help()const override{return "Move the left stick up or down to meet the ball. X or a touchpad click serves. Aim with the edge of the paddle to change the return. Square restarts.";}
+ const char*help()const override{return "Move the {left_stick} up or down to meet the ball. {cross} or a {touchpad} click serves. Aim with the edge of the paddle to change the return. {square} restarts.";}
  void handle(const InputFrame&i,Feedback&f)override{
   control_=opponent_control_=0;two_players_=false;if(!input(i,f))return;
   control_=axis(i,false);
@@ -116,7 +119,7 @@ public:
  std::map<std::string,std::uint64_t> trophy_stats()const override{return {{"bricks_broken",std::uint64_t(broken_)}};}
  StudyCompletion completion()const override{return broken_==32?StudyCompletion::experience_complete:StudyCompletion::playing;}
  Bricks(){reset();}void reset()override{clean();bricks_.fill(true);paddle_=340;control_=0;ball_={340,345};velocity_={160,-230};running_=false;broken_=0;}
- const char*help()const override{return "Move left or right to catch the ball. X or a touchpad click launches it. Break the wall by choosing the angle of each return. Square rebuilds the wall.";}
+ const char*help()const override{return "Move left or right to catch the ball. {cross} or a {touchpad} click launches it. Break the wall by choosing the angle of each return. {square} rebuilds the wall.";}
  void handle(const InputFrame&i,Feedback&f)override{control_=0;if(!input(i,f))return;control_=axis(i,true);if(i.touch.available&&i.touch.count&&std::isfinite(i.touch.points[0].x)){const float previous=paddle_;paddle_=std::clamp(51.f+i.touch.points[0].x*578.f,51.f,629.f);touch_feedback(previous,paddle_,f);control_=0;}if((i.is_pressed(Action::confirm)||i.is_pressed(Action::touch))&&!running_&&broken_<32){running_=true;sound(60);f.feel(hui::audio::Tactile::confirm,.24f,.055f);}}
  void update(float dt)override{dt=bounded_dt(dt);animate(dt);const float before_paddle=paddle_;paddle_=std::clamp(paddle_+control_*360*dt,51.f,629.f);motion_haptics_.record(paddle_-before_paddle,0,active_input_&&std::abs(control_)>.2f);if(!running_){ball_={paddle_,345};return;}for(int k=0;k<4;++k){V before=ball_;ball_=ball_+velocity_*(dt/4);if(ball_.x<8){ball_.x=8;velocity_.x=std::abs(velocity_.x);pulse(hui::audio::Tactile::touch,.22f,.055f,std::clamp((ball_.x-340)/340.f,-1.f,1.f));}if(ball_.x>672){ball_.x=672;velocity_.x=-std::abs(velocity_.x);pulse(hui::audio::Tactile::touch,.22f,.055f,std::clamp((ball_.x-340)/340.f,-1.f,1.f));}if(ball_.y<8){ball_.y=8;velocity_.y=std::abs(velocity_.y);pulse(hui::audio::Tactile::touch,.22f,.055f,std::clamp((ball_.x-340)/340.f,-1.f,1.f));}if(velocity_.y>0&&before.y<=348&&ball_.y>=348&&std::abs(ball_.x-paddle_)<57){ball_.y=348;velocity_.y=-std::abs(velocity_.y);velocity_.x=(ball_.x-paddle_)*4.8f;event(ball_,67,.38f,hui::audio::Tactile::confirm,std::clamp((ball_.x-paddle_)/57.f,-1.f,1.f));}for(unsigned n=0;n<bricks_.size();++n)if(bricks_[n]){const float x=20+float(n%8)*81,y=30+float(n/8)*32;if(ball_.x>x-7&&ball_.x<x+74+7&&ball_.y>y-7&&ball_.y<y+22+7){bricks_[n]=false;++broken_;if(before.y<=y-7||before.y>=y+29)velocity_.y=-velocity_.y;else velocity_.x=-velocity_.x;event(ball_,72+int(n/8)*2,.44f,hui::audio::Tactile::impact,std::clamp((ball_.x-340)/340.f,-1.f,1.f));break;}}if(broken_==32){running_=false;break;}if(ball_.y>399){running_=false;velocity_={160,-230};sound(48);pulse(hui::audio::Tactile::error,.50f,.10f);break;}}}
  void draw(DrawList&l,Fonts&f,Rect r,Color a)override{if(!begin(l,f,r,a,"A wall becomes a field of choices","One ball, a movable surface, and a structure that changes."))return;l.bordered_rect({30,119,680,390},0,Color{0,0,0,0},.8f,Color::rgb(0x7b807c,.65f));for(unsigned n=0;n<bricks_.size();++n)if(bricks_[n])l.rounded_rect({50+float(n%8)*81,149+float(n/8)*32,74,22},2,hui::gfx::mix(a,ink,float(n/8)*.13f).with_alpha(.58f+float(n/8)*.11f));l.shadow({30+paddle_-48,476,96,9},3,7,a.with_alpha(.16f));l.rounded_rect({30+paddle_-48,474,96,9},4,a);l.circle(30+ball_.x,119+ball_.y,6.5f,ink);panel(l,f,"SCORE",broken_*100,"A return from the edge sends the ball along a different path.",broken_==32?"COMPLETE":running_?"":"READY");finish(l);}
@@ -136,7 +139,7 @@ public:
  StudyCompletion completion()const override{return hits_==21?StudyCompletion::experience_complete:StudyCompletion::playing;}
  Formation(){reset();}
  void reset()override{clean();shots_={};hostile_={};alive_.fill(true);player_=340;control_=0;origin_=90;depth_=62;direction_=1;fire_wait_=0;enemy_wait_=1.1f;invincible_=0;firing_=ended_=false;hits_=points_=bonus_hits_=0;pending_shots_=0;shield_=3;seed_=712;bonus_x_=-60;bonus_wait_=3;bonus_flash_=0;bonus_active_=false;}
- const char*help()const override{return "D-pad / left stick: move. Hold Cross to fire. Avoid falling pulses. A mothership occasionally crosses above the formation for bonus points. Square restarts.";}
+ const char*help()const override{return "{dpad} / {left_stick}: move. Hold {cross} to fire. Avoid falling pulses. A mothership occasionally crosses above the formation for bonus points. {square} restarts.";}
  void handle(const InputFrame&i,Feedback&f)override{control_=0;firing_=false;if(!input(i,f)){pending_shots_=0;return;}for(unsigned n=0;n<pending_shots_;++n){f.cues.push_back({hui::audio::Cue::invader_shot,1.f,0.f,.20f,hui::audio::SoundSet::count});f.speak(hui::audio::SpeakerCue::invader_shot,1.f,.18f);}pending_shots_=0;control_=axis(i,true);firing_=i.is_held(Action::confirm)||i.is_pressed(Action::confirm);}
  void update(float dt)override{
   dt=bounded_dt(dt);animate(dt);if(ended_)return;const float before_player=player_;player_=std::clamp(player_+control_*290*dt,20.f,660.f);motion_haptics_.record(player_-before_player,0,active_input_&&std::abs(control_)>.2f);invincible_=std::max(0.f,invincible_-dt);
@@ -313,7 +316,7 @@ public:
    dots_[cell]=mark=='.';powers_[cell]=mark=='o';if(dots_[cell]||powers_[cell])++remaining_;}
   points_=eaten_=fruit_round_=chain_=0;lives_=3;power_=fruit_=0;immune_=1.5f;over_=won_=false;place_actors();build_walls();
  }
- const char*help()const override{return "D-pad / left stick: choose your next turn. Clear 240 dots and four power pellets. Chase frightened ghosts for 200, 400, 800 and 1600 points. Cherries appear after 70 and 170 pellets. Square restarts this single-board experience.";}
+ const char*help()const override{return "{dpad} / {left_stick}: choose your next turn. Clear 240 dots and four power pellets. Chase frightened ghosts for 200, 400, 800 and 1600 points. Cherries appear after 70 and 170 pellets. {square} restarts this single-board experience.";}
  void handle(const InputFrame&i,Feedback&f)override{if(!input(i,f)||over_)return;int wanted=-1;
   if(i.nav==Direction::up)wanted=0;if(i.nav==Direction::right)wanted=1;if(i.nav==Direction::down)wanted=2;if(i.nav==Direction::left)wanted=3;
   const float x=axis(i,true),y=axis(i,false);if(std::max(std::abs(x),std::abs(y))>.35f)wanted=std::abs(x)>std::abs(y)?(x>0?1:3):(y>0?2:0);
@@ -371,7 +374,7 @@ class Gravity final:public Scene {
 public:
  std::map<std::string,std::uint64_t> trophy_stats()const override{return {{"max_lines_single_piece",std::uint64_t(max_lines_single_piece_)}};}
  Gravity(){reset();}void reset()override{clean();board_={};seed_=491;lines_=max_lines_single_piece_=0;soft_=0;over_=false;spawn();}
- const char*help()const override{return "D-pad left and right move the falling shape. X turns it. Down lowers it faster. Up drops it into place. Complete a row to make room. Square restarts.";}
+ const char*help()const override{return "{dpad} left and right move the falling shape. {cross} turns it. Down lowers it faster. Up drops it into place. Complete a row to make room. {square} restarts.";}
  void handle(const InputFrame&i,Feedback&f)override{soft_=0;if(!input(i,f)||over_)return;soft_=std::max(0.f,axis(i,false));int dx=0;if(i.nav==Direction::left)dx=-1;if(i.nav==Direction::right)dx=1;if(dx&&fits(x_+dx,y_,shape_)){x_+=dx;motion_haptics_.step(float(dx),0);motion_haptics_.drain(f,!f.tactile.empty());}if(i.is_pressed(Action::confirm)&&type_!=1){auto rotated=shape_;for(auto&p:rotated){float x=p.x;p.x=-p.y;p.y=x;}for(int kick:{0,-1,1,-2,2})if(fits(x_+kick,y_,rotated)){shape_=rotated;x_+=kick;sound(64);f.feel(hui::audio::Tactile::touch,.07f,.025f);break;}}if(i.is_pressed(Action::up)||(i.nav==Direction::up&&!i.nav_repeat))drop();}
  void update(float dt)override{dt=bounded_dt(dt);animate(dt);if(over_)return;fall_+=dt;const float interval=soft_>.3f?std::min(gravity_interval(),2.f/60.f):gravity_interval();while(fall_>=interval&&!over_){fall_-=interval;if(fits(x_,y_+1,shape_)){++y_;if(soft_>.3f)pulse(hui::audio::Tactile::focus,.04f,.015f);}else lock();}}
  void draw(DrawList&l,Fonts&f,Rect r,Color a)override{
@@ -402,7 +405,7 @@ class Orbit final:public Scene {
  V ship_{500,195},velocity_{0,100};float heading_=pi/2,turn_=0,thrust_=0;bool brake_=false,lost_=false;std::array<V,160>trail_{};unsigned trail_at_=0,trail_count_=0;float trail_wait_=0;std::array<bool,4>beacons_{};int passes_=0;
 public:
  Orbit(){reset();}void reset()override{clean();ship_={500,195};velocity_={0,100};heading_=pi/2;turn_=thrust_=0;brake_=lost_=false;trail_at_=trail_count_=0;trail_wait_=0;beacons_={};passes_=0;}
- const char*help()const override{return "The centre pulls your craft into an orbit. Move the left stick sideways to turn, and up to thrust. Hold X to brake. Pass the four markers. Square restarts.";}
+ const char*help()const override{return "The centre pulls your craft into an orbit. Move the {left_stick} sideways to turn, and up to thrust. Hold {cross} to brake. Pass the four markers. {square} restarts.";}
  void handle(const InputFrame&i,Feedback&f)override{const bool previous_brake=brake_;turn_=thrust_=0;brake_=false;if(!input(i,f)||lost_)return;turn_=axis(i,true);thrust_=std::max(0.f,-axis(i,false));brake_=i.is_held(Action::confirm);if(i.is_pressed(Action::confirm)&&!lost_)f.feel(hui::audio::Tactile::touch,.075f,.025f);else if(previous_brake&&!brake_)f.feel(hui::audio::Tactile::touch,.05f,.02f);}
  void update(float dt)override{dt=bounded_dt(dt);animate(dt);if(lost_)return;const float old_heading=heading_;heading_+=turn_*2.4f*dt;motion_haptics_.record(heading_-old_heading,thrust_*dt,active_input_&&(std::abs(turn_)>.2f||thrust_>.2f));for(int k=0;k<4;++k){const float step=dt/4;V d=V{340,195}-ship_;const float radius=std::max(30.f,norm(d));const V gravity=d*(1600000.f/(radius*radius*radius));V force{std::cos(heading_)*thrust_*85,std::sin(heading_)*thrust_*85};velocity_=velocity_+(gravity+force)*step;if(brake_)velocity_=velocity_*std::exp(-.7f*step);ship_=ship_+velocity_*step;ship_.x=std::fmod(std::fmod(ship_.x,680.f)+680.f,680.f);ship_.y=std::fmod(std::fmod(ship_.y,390.f)+390.f,390.f);if(norm(ship_-V{340,195})<37){lost_=true;event({std::clamp(ship_.x,0.f,680.f),std::clamp(ship_.y,0.f,390.f)},48,.16f);break;}}trail_wait_+=dt;if(trail_wait_>.03f){trail_wait_=0;trail_[trail_at_++%trail_.size()]=ship_;trail_count_=std::min(unsigned(trail_.size()),trail_count_+1);}for(unsigned n=0;n<4;++n){const float theta=float(n)*pi/2;const V p{340+std::cos(theta)*160,195+std::sin(theta)*160};if(!beacons_[n]&&norm(ship_-p)<22){beacons_[n]=true;++passes_;event(ship_,65+int(n)*3,.07f);}}}
  void draw(DrawList&l,Fonts&f,Rect r,Color a)override{

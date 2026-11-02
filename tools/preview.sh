@@ -18,7 +18,7 @@ while IFS= read -r -d '' source; do
   -ffunction-sections -fdata-sections -DGL_GLEXT_PROTOTYPES=1 -Isrc -I. -I"$sysroot/usr/include" \
   -I"$sysroot/usr/include/x86_64-linux-gnu" -Ibuild/host-include -MD -MF "$object.d" -c "$source" -o "$object"
  objects+=("$object")
-done < <(find src host -name '*.cpp' ! -path 'src/platform/ps5/*' ! -path 'src/runtime/*' ! -path 'src/third_party/*' ! -name main.cpp -print0)
+done < <(find src host -name '*.cpp' ! -path 'src/platform/ps5/*' ! -path 'src/platform/windows/*' ! -path 'src/runtime/*' ! -path 'src/third_party/*' ! -name main.cpp -print0)
 while IFS= read -r -d '' source; do
  object="build/preview-obj/${source//\//_}.o"
  mkdir -p "$(dirname "$object")"

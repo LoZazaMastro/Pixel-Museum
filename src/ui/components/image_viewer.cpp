@@ -437,6 +437,16 @@ Event ImageViewer::handle(const InputFrame &input, Feedback &feedback)
     return Event::none;
 }
 
+void ImageViewer::pan_pixels(float dx,float dy)
+{
+    if(images_.empty()||!std::isfinite(dx)||!std::isfinite(dy))return;
+    const Rect visible=picture_rect();
+    const auto horizontal=range(true,zoom_.value),vertical=range(false,zoom_.value);
+    if(visible.w>0)pan_x_.snap(std::clamp(pan_x_.value-dx/visible.w,horizontal.lo,horizontal.hi));
+    if(visible.h>0)pan_y_.snap(std::clamp(pan_y_.value-dy/visible.h,vertical.lo,vertical.hi));
+    stick_x_=stick_y_=0;
+}
+
 void ImageViewer::pan_axis(tween::Spring &axis, const Range &limits, float stick, float span,
                            float dt)
 {

@@ -7,6 +7,9 @@
 #include <cstdint>
 #include <span>
 #include <array>
+#if defined(MUSEUM_DESKTOP)
+#include <string>
+#endif
 
 namespace hui
 {
@@ -118,6 +121,19 @@ struct SecondaryInput
     bool is_held(Action action)const{return (held&action_bit(action))!=0;}
 };
 
+#if defined(MUSEUM_DESKTOP)
+// Desktop backends express pointer positions in the UI's 1920 x 1080 canvas.
+// Wheel values use the OS convention: positive is up, negative is down.
+enum class DesktopControllerStyle : std::uint8_t { keyboard_mouse, generic, dualsense };
+struct PointerInput
+{
+    bool available=false,moved=false;
+    float x=0,y=0,delta_x=0,delta_y=0,wheel_y=0;
+    bool primary_pressed=false,primary_held=false,primary_released=false;
+    bool secondary_pressed=false,secondary_held=false;
+};
+#endif
+
 struct InputFrame
 {
     std::uint32_t pressed = 0;  // went down during the frame (taps are kept)
@@ -145,6 +161,18 @@ struct InputFrame
     MotionData motion{};
     TouchData touch{};
     SecondaryInput secondary{};
+#if defined(MUSEUM_DESKTOP)
+    PointerInput pointer{};
+    // UTF-8 produced by native text input, including IMEs and clipboard paste.
+    std::string text_utf8;
+    bool text_backspace=false,text_delete=false,text_submit=false;
+    bool text_home=false,text_end=false,text_left=false,text_right=false,text_select_all=false;
+    bool keyboard_active=false;
+    bool desktop_escape_pressed=false; // context-aware Options / Back on PC
+    bool search_pressed=false; // dedicated desktop shortcut, independent of Guide
+    float desktop_scroll=0; // Page Up/Down text scrolling, in virtual pixels
+    DesktopControllerStyle controller_style=DesktopControllerStyle::keyboard_mouse;
+#endif
 
     bool is_pressed(Action action) const
     {

@@ -17,6 +17,11 @@
 #include "museum/volume_preferences.hpp"
 #include "museum/collection_installer.hpp"
 #include "museum/screen_collection_policy.hpp"
+#include "museum/desktop_settings.hpp"
+#include "museum/database_updater.hpp"
+#if defined(MUSEUM_DESKTOP)
+#include "museum/application_updater.hpp"
+#endif
 #include "museum/collection_install_view.hpp"
 #include "platform/media.hpp"
 #include "gfx/renderer.hpp"
@@ -38,6 +43,10 @@ class Screen {
     friend struct ScreenInspection;
     friend struct CollectionStartupInspection;
     friend struct CollectionRemovalInspection;
+#if defined(MUSEUM_DESKTOP)
+    friend struct DesktopInputInspection;
+    friend struct DesktopNavigationInspection;
+#endif
 public:
     ~Screen();
     bool init(const std::string& root,const std::string& data);
@@ -69,7 +78,13 @@ public:
     float pad_volume()const{return pad_volume_;}
     bool culture_audio_on_pad()const{return culture_audio_on_pad_;}
     bool music_muted()const{return volume_<=0.f;}
-    void set_refresh_hz(float hz) { target_refresh_hz_ = hz == 120.f ? 120.f : 60.f; }
+    void set_refresh_hz(float hz) {
+#if defined(MUSEUM_DESKTOP)
+        target_refresh_hz_ = hz>=30.f&&hz<=360.f ? hz : 60.f;
+#else
+        target_refresh_hz_ = hz == 120.f ? 120.f : 60.f;
+#endif
+    }
     bool motion_controls()const{return experience_active_&&!experience_paused_&&!experience_introduction_&&study_&&study_->motion_controls();}
     bool wants_quit()const{return quit_;}
     int take_startup_note(int* pixel_ordinal=nullptr);
@@ -78,7 +93,112 @@ public:
     void set_trophy_pin_renderer(TrophyPinRenderer render){trophy_pin_renderer_=std::move(render);}
     void set_trophy_curator_preview(bool value){trophy_curator_preview_=value;}
     bool trophy_curator_preview()const{return trophy_curator_preview_;}
+#if defined(MUSEUM_DESKTOP)
+    void set_desktop_video_modes(std::vector<DesktopDisplayMode>,const DesktopVideoSettings& current);
+    const DesktopVideoSettings& desktop_video_settings()const{return desktop_video_;}
+    bool take_desktop_video_request(DesktopVideoSettings&);
+    void set_desktop_video_settings_applied(const DesktopVideoSettings&);
+    void desktop_video_apply_failed(const std::string& reason);
+    bool wants_text_input()const{return search_prompt_.is_open();}
+    bool desktop_dark_theme()const{return theme_mix_.value>=.5f;}
+    bool desktop_pointer_interactive()const;
+    unsigned desktop_navigation_feedback_state()const;
+    bool take_desktop_url_request(std::string&);
+    std::string desktop_resources_error()const;
+    bool take_application_restart_request();
+    bool begin_application_restart();
+#endif
 private:
+    bool support_dialog_=false;
+    int support_focus_=0;
+    unsigned support_qr_=0;
+    hui::tween::Spring support_open_;
+    void open_support(hui::ui::Feedback&);
+    bool handle_support(const hui::InputFrame&,hui::ui::Feedback&);
+    void draw_support();
+    int support_action_count()const;
+    const char* support_action_label(int)const;
+    hui::gfx::Rect support_action_bounds(int)const;
+    DatabaseUpdater database_updater_;
+    DatabaseUpdater::Snapshot database_state_;
+    bool database_auto_checked_=false,database_dialog_=false;
+    std::uint64_t database_notified_revision_=0,database_ready_notified_revision_=0;
+    int database_focus_=0;
+    hui::tween::Spring database_open_;
+    void open_database_update(hui::ui::Feedback&);
+    bool handle_database_update(const hui::InputFrame&,hui::ui::Feedback&);
+    void update_database(float);
+    void observe_database_update(const DatabaseUpdater::Snapshot&);
+    bool database_notification_ready()const;
+    void draw_database_update();
+    int database_action_count()const;
+    const char* database_action_label(int)const;
+    hui::gfx::Rect database_action_bounds(int)const;
+#if defined(MUSEUM_DESKTOP)
+    ApplicationUpdater application_updater_;
+    ApplicationUpdater::Snapshot application_state_;
+    bool application_auto_checked_=false,application_dialog_=false,application_restart_request_=false,application_restart_failed_=false;
+    bool application_combined_check_=false;
+    std::string application_notified_version_,application_ready_notified_version_,application_restart_error_;
+    int application_focus_=0;
+    hui::tween::Spring application_open_;
+    void open_application_update(hui::ui::Feedback&);
+    void open_update_check(hui::ui::Feedback&);
+    bool handle_application_update(const hui::InputFrame&,hui::ui::Feedback&);
+    void update_application(float);
+    void observe_application_update(const ApplicationUpdater::Snapshot&);
+    bool application_notification_ready()const;
+    void draw_application_update();
+    int application_action_count()const;
+    const char* application_action_label(int)const;
+    hui::gfx::Rect application_action_bounds(int)const;
+    std::vector<DesktopDisplayMode> desktop_modes_;
+    DesktopVideoSettings desktop_video_,desktop_video_draft_,desktop_video_request_;
+    bool desktop_video_open_=false,desktop_video_pending_=false,desktop_video_applying_=false;
+    int desktop_video_focus_=0;
+    hui::DesktopControllerStyle desktop_controller_style_=hui::DesktopControllerStyle::keyboard_mouse;
+    hui::PointerInput desktop_pointer_{};
+    hui::gfx::DrawList desktop_layer_;
+    hui::gfx::DrawList desktop_cursor_layer_;
+    float desktop_wheel_remainder_=0;
+    float desktop_cursor_alpha_=0,desktop_cursor_glow_=0;
+    struct DesktopLink { hui::gfx::Rect bounds;std::string url; };
+    std::vector<DesktopLink> desktop_links_;
+    enum class DesktopScrollTarget { content,credits,description };
+    struct DesktopScrollArea { DesktopScrollTarget target;hui::gfx::Rect viewport,track;float maximum=0,position=0,minimum_thumb=32; };
+    std::vector<DesktopScrollArea> desktop_scroll_areas_;
+    bool desktop_scroll_dragging_=false;
+    DesktopScrollTarget desktop_scroll_drag_target_=DesktopScrollTarget::content;
+    float desktop_scroll_drag_offset_=0;
+    void desktop_add_scroll_area(DesktopScrollTarget,hui::gfx::Rect viewport,hui::gfx::Rect track,float maximum,float position,float minimum_thumb=32);
+    bool desktop_scroll_enabled(DesktopScrollTarget)const;
+    bool handle_desktop_scrolling(hui::InputFrame&,hui::ui::Feedback&);
+    std::string desktop_url_request_;
+    std::size_t desktop_search_caret_=0;
+    bool desktop_search_selection_=false;
+    std::string desktop_search_observed_;
+    struct DesktopControl { hui::gfx::Rect bounds;std::string label,key;int command=0;hui::ui::Button glyph=hui::ui::Button::cross,second=hui::ui::Button::none; };
+    std::vector<DesktopControl> desktop_controls()const;
+    bool handle_desktop_input(hui::InputFrame&,hui::ui::Feedback&);
+    bool handle_desktop_video(const hui::InputFrame&,hui::ui::Feedback&);
+    bool handle_desktop_search(hui::InputFrame&,hui::ui::Feedback&);
+    void draw_desktop_video(float x);
+    void draw_desktop_startup();
+    hui::gfx::Rect desktop_search_button_bounds(int)const;
+    void draw_desktop_chrome(hui::gfx::DrawList&);
+    void render_desktop_chrome();
+    void render_desktop_cursor();
+    bool desktop_pointer_target(float x,float y)const;
+    bool desktop_can_open_sign_in_browser(const media::Connection&)const;
+    bool desktop_open_sign_in_browser(const media::Connection&);
+    void draw_desktop_sign_in_browser(const media::Connection&,float x);
+    void desktop_add_link(hui::gfx::Rect,const std::string&);
+    void desktop_add_text_links(const std::string&,float x,float baseline,float size,hui::gfx::Rect clip,bool site_names=false);
+    bool desktop_footer_input(hui::InputFrame&,hui::ui::Feedback&);
+    int desktop_preference_count()const;
+    int desktop_preference_setting(int row)const;
+    const char* desktop_preference_label(int row)const;
+#endif
     CollectionInstaller collection_installer_;
     CollectionStartupPresentation collection_presentation_;
     bool collection_pending_=false,collection_started_=false,collection_media_started_=false,collection_media_error_=false;
@@ -175,6 +295,7 @@ private:
     int filter_notice_observed_=0;
     float filter_notice_time_=0;
     float year_notice_time_=0;
+    float year_notice_age_=0;
     int year_notice_from_=0,year_notice_to_=0;
     int year_notice_displayed_=0;
     bool year_notice_tick_=false;

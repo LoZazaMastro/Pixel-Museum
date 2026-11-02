@@ -2,6 +2,8 @@
 #include "museum/screen.hpp"
 #include "museum/general_credits.hpp"
 #include "museum/feature_resources.hpp"
+#include "museum/menu_row.hpp"
+#include "museum/preferences_layout.hpp"
 #include "museum/trophy_definitions.hpp"
 #include "platform/playback_window.hpp"
 #include "core/save_file.hpp"
@@ -71,6 +73,10 @@ bool Screen::init(const std::string&root,const std::string&data){
     auto checkpoint=std::chrono::steady_clock::now();
     const auto startup_phase=[&](const char*name){const auto now=std::chrono::steady_clock::now();sys::log("[Museum] interface init %s %.2fms",name,std::chrono::duration<double,std::milli>(now-checkpoint).count());checkpoint=now;};
     root_=root;data_=data;save::ensure_directory(data_);
+#if defined(MUSEUM_DESKTOP)
+    if(!application_updater_.configure(root,data))sys::log("[Museum] application updates unavailable; current app retained");
+#endif
+    if(!database_updater_.configure(root,data))sys::log("[Museum] database update overlay unavailable; bundled content retained");
     if(!renderer_.init())return false;
     startup_phase("renderer");
     const std::string f=root+"/assets/fonts/";
@@ -113,7 +119,12 @@ bool Screen::init(const std::string&root,const std::string&data){
     timeline_.snap(float(focus_));
     ready_=true;if(!collection_pending_)start_collection_media();startup_phase("initial exhibit");sys::log("[Museum] composition GPU texture draws / display and entry snapshots / no framebuffer blit");return true;
 }
-void Screen::shutdown(){join_collection_media_stop();collection_installer_.shutdown();if(!ready_)return;trophy_notifications_.stop();if(trophy_pin_renderer_)trophy_pin_renderer_(TrophyView{},0,0,0,0,0,0);trophy_pin_open_=false;save_settings();video_.stop();cache_.stop();object_.release();for(auto&prepared:prepared_objects_)prepared.release();if(connection_qr_)glDeleteTextures(1,&connection_qr_);connection_qr_=0;video_.release_texture();cache_.release_textures();composed_.destroy();previous_entry_.destroy();wall_.destroy();renderer_.release();ready_=false;collection_media_started_=false;}
+void Screen::shutdown(){
+#if defined(MUSEUM_DESKTOP)
+    application_updater_.shutdown();
+#endif
+    database_updater_.shutdown();join_collection_media_stop();collection_installer_.shutdown();if(!ready_)return;trophy_notifications_.stop();if(trophy_pin_renderer_)trophy_pin_renderer_(TrophyView{},0,0,0,0,0,0);trophy_pin_open_=false;save_settings();video_.stop();cache_.stop();object_.release();for(auto&prepared:prepared_objects_)prepared.release();if(connection_qr_)glDeleteTextures(1,&connection_qr_);connection_qr_=0;if(support_qr_)glDeleteTextures(1,&support_qr_);support_qr_=0;video_.release_texture();cache_.release_textures();composed_.destroy();previous_entry_.destroy();wall_.destroy();renderer_.release();ready_=false;collection_media_started_=false;
+}
 const Entry* Screen::current()const{if(history_focus_&&!history_catalog_.entries.empty())return &history_catalog_.entries[size_t(std::clamp(history_focus_index_,0,int(history_catalog_.entries.size())-1))];if(visible_.empty())return nullptr;return &catalog_.entries[size_t(visible_[size_t(std::clamp(focus_,0,int(visible_.size())-1))])];}
 float Screen::selected_year()const{if(year_guide_&&!guide_experiences_&&!guide_trophies_&&year_focus_>=0&&year_focus_<int(years_.size()))return float(years_[size_t(year_focus_)]);if(chapters_&&chapter_focus_>=0&&chapter_focus_<int(catalog_.eras.size()))return float(catalog_.eras[size_t(chapter_focus_)].start_year);const auto*e=current();return e?float(e->year):1980;}
 bool Screen::video_active()const{return media::suspend_ambient(playlist_active_,screening_,video_.state()==media::State::ready,video_.paused(),video_.ended());}
@@ -196,6 +207,7 @@ void Screen::jump_today(ui::Feedback&f){
     f.play(audio::Cue::tab);
 }
 void Screen::open_year_guide(){
+    year_notice_time_=year_notice_age_=0;year_notice_tick_=false;
     years_.clear();
     if(history_focus_){for(const auto&e:history_catalog_.entries)if(years_.empty()||years_.back()!=e.year)years_.push_back(e.year);}
     else{for(int id:visible_){const int year=catalog_.entries[size_t(id)].year;if(years_.empty()||years_.back()!=year)years_.push_back(year);}}
@@ -308,23 +320,36 @@ void Screen::preview(int mode){
     panel_.snap(settings_||credits_?1.f:0.f);if(gallery_){prepare_gallery();viewer_.set_mode(ui::ZoomMode::fit,true);}
 }
 void Screen::prepare_gallery(bool reset){const auto*e=current();if(!e)return;std::vector<ui::ViewerImage> images;for(size_t n=0;n<e->images.size();++n){const auto&i=e->images[n];const auto a=int(n)==image_index_?cache_.request(image_url(i)):cache_.get(image_url(i));ui::ViewerImage v;v.title=i.title;v.caption.clear();v.texture=a.texture;v.aspect=a.width&&a.height?float(a.width)/a.height:1.f;v.pixel_width=float(a.width);images.push_back(v);}if(reset){viewer_.set_images(std::move(images));viewer_.set_index(image_index_);}else viewer_.refresh_images(std::move(images));}
-void Screen::handle(const InputFrame&i,ui::Feedback&f){
+void Screen::handle(const InputFrame&raw,ui::Feedback&f){
+#if defined(MUSEUM_DESKTOP)
+    auto i=raw;
+    if(handle_desktop_input(i,f))return;
+#else
+    const auto&i=raw;
+#endif
+#if defined(MUSEUM_DESKTOP)
+    if(handle_application_update(i,f))return;
+#endif
+    if(handle_support(i,f))return;
+    if(handle_database_update(i,f))return;
     if(collection_remove_dialog_||collection_removal_active()){handle_collection_removal(i,f);return;}
+#if defined(MUSEUM_DESKTOP)
+    if(collection_pending_&&!onboarding_){if(i.is_pressed(Action::back)||i.is_pressed(Action::menu))quit_=true;return;}
+#else
     if(collection_pending_){if(language_choice_)handle_language_choice(i,f);else handle_collection_startup(i,f);return;}
+#endif
     const bool rail_input=!onboarding_&&!settings_&&!credits_&&!year_guide_&&!chapters_&&!detail_&&!gallery_&&!screening_&&!object_inspect_&&!experience_active_&&!workshop_active_&&!image_dialog_&&!connection_panel_&&!(history_transition_&&fade_<1)&&!(i.pressed&~(action_bit(Action::left)|action_bit(Action::right)));
     auto&rail_position=history_focus_?history_position_:timeline_;
     timeline_motion_.input(i,dt_,history_focus_?history_focus_index_:focus_,rail_input,rail_position);
     std::array<bool,2> filter_press{};
     for(size_t n=0;n<2;++n){
-        const auto action=n?Action::jump_next:Action::jump_prev;
-        const float value=n?i.trigger_r:i.trigger_l;
+        const auto action=n?Action::page_next:Action::page_prev;
         auto&down=filter_trigger_down_[n];
         culture_input_active_=!i.focus_lost&&i.connected;
     if(i.focus_lost||!i.connected){down=true;continue;}
-        // Physical buttons and analogue travel share one hysteresis latch.
-        const bool digital=i.is_pressed(action)&&value<=.001f;
-        if(!down&&(value>=.55f||digital)){filter_press[n]=true;down=true;}
-        else if(value<=.20f&&!i.is_held(action)&&!i.is_pressed(action))down=false;
+        // One filter step per shoulder press, including keyboard shortcuts.
+        if(!down&&i.is_pressed(action)){filter_press[n]=true;down=true;}
+        else if(!i.is_held(action)&&!i.is_pressed(action))down=false;
     }
     const bool previous_history=history_focus_,previous_gallery=gallery_,previous_experience=experience_active_;
     const bool previous_onboarding=onboarding_;
@@ -438,7 +463,15 @@ void Screen::handle(const InputFrame&i,ui::Feedback&f){
     if(boot_time_<4.8f){if(i.is_pressed(Action::confirm)){boot_time_=4.8f;boot_note_=13;}return;}
     const bool active=i.pressed||i.nav!=Direction::none||std::abs(i.stick_x)>.1f||std::abs(i.stick_y)>.1f||std::abs(i.stick2_x)>.1f||std::abs(i.stick2_y)>.1f||i.trigger_l>.04f||i.trigger_r>.04f; if(active)idle_=0;
     if(!experience_active_&&i.is_held(Action::menu)&&i.is_pressed(Action::back)){quit_=true;return;}
-    if(connection_panel_){if(i.is_pressed(Action::back)){connection_panel_=false;video_.cancel_sign_in();f.play(audio::Cue::back);return;}const auto c=video_.connection();if(i.is_pressed(Action::confirm)&&!c.signed_in){if(c.saved)video_.restore_connection();else if(c.user_code.empty())video_.request_sign_in();}if(i.is_pressed(Action::west)&&c.signed_in)video_.sign_out();return;}
+    if(connection_panel_){
+        if(i.is_pressed(Action::back)){connection_panel_=false;video_.cancel_sign_in();f.play(audio::Cue::back);return;}
+        const auto c=video_.connection();
+#if defined(MUSEUM_DESKTOP)
+        if(i.is_pressed(Action::confirm)&&desktop_open_sign_in_browser(c)){f.play(audio::Cue::select);return;}
+#endif
+        if(i.is_pressed(Action::confirm)&&!c.signed_in){if(c.saved)video_.restore_connection();else if(c.user_code.empty())video_.request_sign_in();}
+        if(i.is_pressed(Action::west)&&c.signed_in)video_.sign_out();return;
+    }
     if(handle_experience(i,f))return;
     if(handle_search(i,f))return;
     if(year_guide_){
@@ -509,13 +542,11 @@ void Screen::handle(const InputFrame&i,ui::Feedback&f){
         if(i.is_pressed(Action::back)||i.is_pressed(Action::touch)){year_guide_=false;f.play(audio::Cue::back);return;}
         if(years_.empty())return;
         const int before=year_focus_;
-        if(i.nav==Direction::down||i.nav==Direction::right)year_focus_=std::min(int(years_.size())-1,year_focus_+1);
-        if(i.nav==Direction::up||i.nav==Direction::left)year_focus_=std::max(0,year_focus_-1);
-        if(i.is_pressed(Action::page_next)||i.is_pressed(Action::page_prev)){
-            const int from=years_[size_t(year_focus_)];
-            const int direction=i.is_pressed(Action::page_next)?1:-1,decade=from/10;
+        if(i.nav==Direction::down||i.nav==Direction::right)year_focus_=(year_focus_+1)%int(years_.size());
+        if(i.nav==Direction::up||i.nav==Direction::left)year_focus_=(year_focus_+int(years_.size())-1)%int(years_.size());
+        if(i.is_pressed(Action::page_next)||i.is_pressed(Action::page_prev)||i.is_pressed(Action::jump_next)||i.is_pressed(Action::jump_prev)){
+            const int direction=(i.is_pressed(Action::page_next)||i.is_pressed(Action::jump_next))?1:-1,decade=years_[size_t(year_focus_)]/10;
             for(int n=year_focus_+direction;n>=0&&n<int(years_.size());n+=direction){year_focus_=n;if(years_[size_t(n)]/10!=decade)break;}
-            show_year_notice(from,years_[size_t(year_focus_)]);
         }
         if(year_focus_!=before)f.play(audio::Cue::focus,1,0,.4f);
         if(i.is_pressed(Action::confirm)){
@@ -531,9 +562,15 @@ void Screen::handle(const InputFrame&i,ui::Feedback&f){
     if(credits_){if(i.is_pressed(Action::back)){credits_=false;settings_=true;f.play(audio::Cue::back);}else if(std::abs(i.stick2_y)>.08f)credits_scroll_.target=std::clamp(credits_scroll_.target+i.stick2_y*dt_*720,0.f,credits_scroll_max_);return;}
 
     if(settings_){
+#if defined(MUSEUM_DESKTOP)
+        if(desktop_video_open_){handle_desktop_video(i,f);return;}
+#endif
         if(volumes_open_){
             if(i.is_pressed(Action::back)||i.is_pressed(Action::menu)){
                 volumes_open_=false;setting_=2;
+#if defined(MUSEUM_DESKTOP)
+                ++setting_;
+#endif
                 if(i.is_pressed(Action::menu))settings_=false;
                 if(dirty_)save_settings();f.play(audio::Cue::back);return;
             }
@@ -558,27 +595,48 @@ void Screen::handle(const InputFrame&i,ui::Feedback&f){
             return;
         }
         if(i.is_pressed(Action::back)||i.is_pressed(Action::menu)){settings_=false;f.play(audio::Cue::back);return;}
-        if(i.nav==Direction::down)setting_=std::min(int(preference_labels.size())-1,setting_+1);if(i.nav==Direction::up)setting_=std::max(0,setting_-1);
+        int preference_count=int(preference_labels.size());
+#if defined(MUSEUM_DESKTOP)
+        preference_count=desktop_preference_count();
+#endif
+        if(i.nav==Direction::down)setting_=(setting_+1)%preference_count;if(i.nav==Direction::up)setting_=(setting_+preference_count-1)%preference_count;
         bool edit=i.is_pressed(Action::confirm);
         if(edit){
-            if(setting_==0){language_focus_=(language_focus_+(i.nav==Direction::left?4:1))%5;static constexpr const char*locales[]={"en","it","es","fr","de"};language_=locales[language_focus_];apply_language();}
-            if(setting_==1){dark_theme_=!dark_theme_;theme_chosen_=true;}
-            if(setting_==2){volumes_open_=true;volume_focus_=0;f.play(audio::Cue::select);return;}
-            if(setting_==3)connection_panel_=true;
-            if(setting_==4){
+            int selected_setting=setting_;
+#if defined(MUSEUM_DESKTOP)
+            if(setting_==0){desktop_video_draft_=desktop_video_;desktop_video_open_=true;desktop_video_focus_=0;f.play(audio::Cue::select);return;}
+            if(setting_==preference_count-1){quit_=true;f.play(audio::Cue::back);return;}
+            selected_setting=desktop_preference_setting(setting_);
+#endif
+            if(selected_setting==0){language_focus_=(language_focus_+(i.nav==Direction::left?4:1))%5;static constexpr const char*locales[]={"en","it","es","fr","de"};language_=locales[language_focus_];apply_language();}
+            if(selected_setting==1){dark_theme_=!dark_theme_;theme_chosen_=true;}
+            if(selected_setting==2){volumes_open_=true;volume_focus_=0;f.play(audio::Cue::select);return;}
+            if(selected_setting==3)connection_panel_=true;
+            if(selected_setting==4){
                 settings_=false;onboarding_=true;language_choice_=true;theme_choice_=true;
                 theme_confirming_=false;theme_confirm_progress_=0;
                 onboarding_step_=0;onboarding_position_.snap(0);onboarding_fade_.snap(0);onboarding_leaving_=false;
                 collection_presentation_.replay();
                 // Reuse the already validated collection and running workers.
                 // This is presentation-only; no configure/start/cache reset.
+#if !defined(MUSEUM_DESKTOP)
                 if(collection_installer_.is_ready()){
                     collection_pending_=true;collection_started_=true;collection_elapsed_=collection_ready_elapsed_=0;
                 }
+#endif
             }
-            if(setting_==remove_collection_setting){collection_remove_dialog_=true;collection_remove_focus_=0;collection_remove_open_.snap(0);f.play(audio::Cue::modal_open);return;}
-            if(setting_==general_credits_setting){settings_=false;credits_=true;credits_scroll_.snap(0);}
-            if(setting_==reset_trophies_setting){
+            if(selected_setting==database_update_setting){
+#if defined(MUSEUM_DESKTOP)
+                open_update_check(f);
+#else
+                open_database_update(f);
+#endif
+                return;
+            }
+            if(selected_setting==remove_collection_setting){collection_remove_dialog_=true;collection_remove_focus_=0;collection_remove_open_.snap(0);f.play(audio::Cue::modal_open);return;}
+            if(selected_setting==general_credits_setting){settings_=false;credits_=true;credits_scroll_.snap(0);}
+            if(selected_setting==museum_support_setting){open_support(f);return;}
+            if(selected_setting==reset_trophies_setting){
                 if(trophies_&&trophies_->reset()){trophy_notifications_.clearPending();trophy_fallback_queue_.clear();trophy_fallback_time_=0;trophy_fallback_sound_=false;trophy_expanded_=false;trophy_pin_open_=false;if(trophy_pin_renderer_)trophy_pin_renderer_(TrophyView{},0,0,0,0,0,0);trophy_focus_=0;trophy_position_.snap(0);trophy_media_session_.clear();trophy_media_played_=0;notice_=std::string(i18n::tr("Trophy progress reset."));notice_time_=3.5f;f.play(audio::Cue::saved);}
                 else{notice_=std::string(i18n::tr("Trophy progress could not be reset."));notice_time_=3.5f;f.play(audio::Cue::error);}return;
             }
@@ -677,8 +735,8 @@ void Screen::handle(const InputFrame&i,ui::Feedback&f){
         if(i.nav==Direction::down||i.is_pressed(Action::back)){focus_history(false);f.play(audio::Cue::tab);return;}
         if(i.nav==Direction::left)move_history(-1,f);
         if(i.nav==Direction::right)move_history(1,f);
-        if(i.is_pressed(Action::page_prev)||i.is_pressed(Action::page_next)){
-            const int direction=i.is_pressed(Action::page_prev)?-1:1;
+        if(i.is_pressed(Action::jump_prev)||i.is_pressed(Action::jump_next)){
+            const int direction=i.is_pressed(Action::jump_prev)?-1:1;
             const int from=current()->year,decade=from/10;int next=history_focus_index_;
             for(int n=next+direction;n>=0&&n<int(history_catalog_.entries.size());n+=direction){next=n;if(history_catalog_.entries[size_t(n)].year/10!=decade)break;}
             move_history(next-history_focus_index_,f);
@@ -697,17 +755,22 @@ void Screen::handle(const InputFrame&i,ui::Feedback&f){
     if(i.is_pressed(Action::r3)&&object_texture_){object_origin_={0,-9,1920,960};object_inspect_=true;idle_=0;f.play(audio::Cue::select);return;}
     if(i.is_pressed(Action::north)){if(active_filter())change_filter(-active_filter(),f);else jump_today(f);return;}
     if(i.nav==Direction::right)move(1,f);if(i.nav==Direction::left)move(-1,f);
-    if(i.is_pressed(Action::page_next))chapter(1,f);if(i.is_pressed(Action::page_prev))chapter(-1,f);
+    if(i.is_pressed(Action::jump_next))chapter(1,f);if(i.is_pressed(Action::jump_prev))chapter(-1,f);
     if(i.is_pressed(Action::confirm)&&current()){detail_=true;scroll_.snap(0);f.play(audio::Cue::select);}
 }
 void Screen::update(float delta){
     if(collection_removal_active()){update_collection_removal(delta);return;}
+#if defined(MUSEUM_DESKTOP)
+    if(collection_pending_&&!language_choice_){update_collection_startup(delta);if(collection_pending_&&!onboarding_)return;}
+#else
     if(collection_pending_){update_collection_startup(delta);return;}
+#endif
     refresh_today_date();
     tactile_repeat_=std::max(0.f,tactile_repeat_-(std::isfinite(delta)?std::clamp(delta,0.f,.05f):0.f));
     dt_=std::clamp(delta,0.f,.05f);
     filter_notice_time_=std::max(0.f,filter_notice_time_-dt_);
     year_notice_time_=std::max(0.f,year_notice_time_-dt_);
+    if(year_notice_time_>0)year_notice_age_+=dt_;else year_notice_age_=0;
     if(year_notice_time_>0){
         const float progress=reduced_?1.f:tween::smoothstep(std::clamp((1.35f-year_notice_time_)/.60f,0.f,1.f));
         const int displayed=int(std::lround(year_notice_from_+(year_notice_to_-year_notice_from_)*progress));
@@ -757,6 +820,11 @@ notice_time_=std::max(0.f,notice_time_-dt_);if(!experience_active_||!experience_
         onboarding_fade_.target=onboarding_leaving_?0.f:1.f;onboarding_fade_.update(dt_,10);
         if(onboarding_leaving_&&onboarding_fade_.value<.001f){onboarding_=false;onboarding_leaving_=false;onboarding_complete_=true;dirty_=true;save_delay_=0;boot_time_=0;boot_note_=0;}
     }else boot_time_=std::min(5.f,boot_time_+dt_);
+#if defined(MUSEUM_DESKTOP)
+    update_application(dt_);
+#endif
+    update_database(dt_);
+    support_open_.target=support_dialog_?1.f:0.f;support_open_.update(dt_,reduced_?60.f:16.f);
     constexpr std::uint32_t decade_colours[]={0xdc9b79,0xc2b179,0xd78a64,0x83b8b0,0xb6a2cf,0x82acc8,0xc8919b,0xb1c098};
     const int decade=std::clamp((int(selected_year())-1950)/10,0,7);
     tone_=gfx::mix(tone_,Color::rgb(decade_colours[decade]),1.f-std::exp(-dt_*2.8f));
@@ -780,10 +848,10 @@ notice_time_=std::max(0.f,notice_time_-dt_);if(!experience_active_||!experience_
     if(screening_open_.value<.001f&&!screening_)playlist_closing_=false;
     video_frame_alpha_=std::clamp(video_frame_alpha_+dt_*(video_.texture()?3.f:-5.f),0.f,1.f);
     credits_open_.target=credits_?1.f:0.f;credits_open_.update(dt_,14);credits_scroll_.update(dt_,17);
-    settings_scroll_.target=std::max(0.f,float(setting_-8)*68);settings_scroll_.update(dt_,reduced_?60:18);
+    settings_scroll_.target=std::max(0.f,float(setting_-8)*preference_row_pitch);settings_scroll_.update(dt_,reduced_?60:18);
     collection_remove_open_.target=collection_remove_dialog_?1.f:0.f;collection_remove_open_.update(dt_,reduced_?60.f:16.f);
     image_dialog_open_.target=image_dialog_?1.f:0.f;image_dialog_open_.update(dt_,reduced_?60:16);
-    focus_line_.target=volumes_open_?230+volume_focus_*118:240+setting_*68;focus_line_.update(dt_,reduced_?60:18);
+    focus_line_.target=volumes_open_?230+volume_focus_*118:preference_row_baseline(setting_);focus_line_.update(dt_,reduced_?60:18);
     chapter_marker_.target=float(chapter_focus_);chapter_marker_.update(dt_,reduced_?60:17);
     if(chapters_){const auto*e=chapter_object();if(e&&!e->images.empty())cache_.request(image_url(e->images[e->preferred_image]));}
     if(connection_panel_||(onboarding_&&!language_choice_&&!theme_choice_&&onboarding_step_==onboarding_cards_-1)){const auto c=video_.connection();if(!c.qr_url.empty()&&c.qr_url!=connection_qr_value_){yt::QrImage qr;if(yt::make_qr(c.qr_url,8,&qr)&&qr.valid()){if(connection_qr_)glDeleteTextures(1,&connection_qr_);connection_qr_=renderer_.batch().create_texture(qr.width,qr.height,qr.rgba.data());connection_qr_value_=c.qr_url;}}}
@@ -928,7 +996,6 @@ void Screen::draw_header(){
             page_.pop_clip();
         }
     }
-    if(notice_time_>0){const float a=std::min({1.f,(3.5f-notice_time_)*4,notice_time_*2});ui::text(page_,fonts_.regular,notice_,960,92,20,c.with_alpha(a),Align::center);}
 }
 const Entry* Screen::chapter_object()const{
     if(chapter_focus_<0||chapter_focus_>=int(catalog_.eras.size()))return nullptr;
@@ -962,11 +1029,17 @@ void Screen::draw_preferences(){
     const auto palette=colours();[[maybe_unused]] const auto paper=palette.paper,ink=palette.ink,muted=palette.muted,rule=palette.rule;
     const float x=1110+(1-panel_.value)*810;overlay_.rounded_rect({0,0,1920,1080},0,Color::rgb(0,.25f*panel_.value));overlay_.glass(renderer_.glass_texture(),{x,0,810,1080},0,paper.with_alpha(.98f));
     overlay_.rounded_rect({x,0,810,1080},0,paper.with_alpha(.96f));
+#if defined(MUSEUM_DESKTOP)
+    if(desktop_video_open_){draw_desktop_video(x);return;}
+#endif
     ui::text(overlay_,fonts_.semibold,volumes_open_?"Volumes":"Options",x+62,134,44,ink);
     if(volumes_open_){
         static constexpr std::array<const char*,5> labels={"Master volume","Sound effects","Ambient music","Cultural timeline audio","Controller audio"};
         const std::array<float,5> values={master_volume_,sfx_volume_,volume_,culture_volume_,pad_volume_};
-        overlay_.rounded_rect({x+37,focus_line_.value-32,5,volume_focus_==5?64.f:94.f},0,tone_);
+        const float marker_height=volume_focus_==5?64.f:94.f;
+        const auto marker_label=volume_focus_==5?"Cultural audio on controller":labels[size_t(volume_focus_)];
+        const float marker_center=menu_text_center(fonts_.semibold,marker_label,focus_line_.value,25);
+        overlay_.rounded_rect({x+37,marker_center-marker_height*.5f,5,marker_height},0,tone_);
         for(int row=0;row<5;++row){
             const float y=230+row*118,value=std::clamp(values[size_t(row)],0.f,1.f);
             const auto colour=row==volume_focus_?ink:muted;
@@ -989,15 +1062,29 @@ void Screen::draw_preferences(){
     }
     const auto& names=preference_labels;
     const char* language_name=language_=="it"?"Italiano":language_=="es"?"Espa\u00f1ol":language_=="fr"?"Fran\u00e7ais":language_=="de"?"Deutsch":"English";
-    overlay_.rounded_rect({x+37,focus_line_.value-28,5,56},0,tone_);
-    for(int row=0;row<int(names.size());++row){
-        const float y=240+row*68;ui::text(overlay_,fonts_.semibold,names[size_t(row)],x+65,y,25,ink);
-        if(row==0)ui::text(overlay_,fonts_.regular,language_name,x+716,y,23,muted,Align::right);
-        if(row==1)ui::text(overlay_,fonts_.regular,dark_theme_?"Dark":"Light",x+716,y,23,muted,Align::right);
-        if(row==3)ui::paragraph(overlay_,fonts_.regular,"An optional connection for films with transcripts.",x+65,y+26,18,640,25,muted,2);
-        if(row>=2)ui::text(overlay_,fonts_.regular,">",x+706,y,30,ink);
+    int row_count=int(names.size());
+#if defined(MUSEUM_DESKTOP)
+    row_count=desktop_preference_count();
+#endif
+    for(int row=0;row<row_count;++row){
+        int semantic_row=row;const char*label=names[size_t(std::min(row,int(names.size())-1))];
+#if defined(MUSEUM_DESKTOP)
+        semantic_row=desktop_preference_setting(row);label=desktop_preference_label(row);
+#endif
+        const float y=preference_row_baseline(row);
+        const float center=menu_text_center(fonts_.semibold,label,y,25);
+        if(row==setting_)overlay_.rounded_rect({x+37,menu_text_center(fonts_.semibold,label,focus_line_.value,25)-28,5,56},0,tone_);
+        ui::text(overlay_,fonts_.semibold,label,x+65,y,25,ink);
+        if(semantic_row==0)ui::text(overlay_,fonts_.regular,language_name,x+716,y,23,muted,Align::right);
+        if(semantic_row==1)ui::text(overlay_,fonts_.regular,dark_theme_?"Dark":"Light",x+716,y,23,muted,Align::right);
+        if(semantic_row>=2||semantic_row<0)ui::text(overlay_,fonts_.regular,">",x+706,menu_text_baseline(fonts_.regular,">",center,30),30,ink);
     }
-    ui::text(overlay_,fonts_.mono,"PIXEL MUSEUM / 0.1.4",x+65,959,18,muted,Align::left,1.5f);
+    if(notice_time_>0){ui::paragraph(overlay_,fonts_.regular,notice_,x+65,934,18,680,24,muted,2);return;}
+#if defined(MUSEUM_DESKTOP)
+    ui::text(overlay_,fonts_.mono,std::string("PIXEL MUSEUM / ")+ApplicationUpdater::bundled_version,x+65,959,18,muted,Align::left,1.5f);
+#else
+    ui::text(overlay_,fonts_.mono,"PIXEL MUSEUM / 0.1.5",x+65,959,18,muted,Align::left,1.5f);
+#endif
 }
 
 void Screen::draw_connection(){
@@ -1005,10 +1092,18 @@ void Screen::draw_connection(){
     const float x=1110;overlay_.rounded_rect({x,0,810,1080},0,paper);
     const auto c=video_.connection();ui::text(overlay_,fonts_.semibold,"YouTube connection",x+62,134,42,ink);
     const char*message=c.signed_in?"The museum is connected.":!c.user_code.empty()?"Scan the code on your phone and follow YouTube's instructions.":"Some films require a YouTube connection. You can choose to connect an account here.";
+#if defined(MUSEUM_DESKTOP)
+    if(desktop_can_open_sign_in_browser(c))message="Open the link in your browser, or scan the QR code on your phone.";
+#endif
     ui::paragraph(overlay_,fonts_.regular,message,x+64,205,27,670,39,muted,5);
-    if(!c.user_code.empty()&&!c.signed_in){if(connection_qr_)overlay_.image(connection_qr_,{x+225,350,360,360},gfx::kFullUv,Color::rgb(0xffffff));ui::text(overlay_,fonts_.mono,c.user_code,x+405,768,40,ink,Align::center);ui::paragraph(overlay_,fonts_.regular,c.verification_url,x+64,831,25,670,36,muted,3);}
+    if(!c.user_code.empty()&&!c.signed_in){if(connection_qr_)overlay_.image(connection_qr_,{x+225,350,360,360},gfx::kFullUv,Color::rgb(0xffffff));ui::text(overlay_,fonts_.mono,c.user_code,x+405,768,40,ink,Align::center);ui::paragraph(overlay_,fonts_.regular,c.verification_url,x+64,831,25,670,36,muted,3);
+#if defined(MUSEUM_DESKTOP)
+        const auto lines=ui::paragraph_lines(fonts_.regular,c.verification_url,25,670,3);for(size_t n=0;n<lines.lines.size();++n)desktop_add_link({x+64,806+float(n)*36,std::min(670.f,fonts_.regular.font->measure(lines.lines[n],25)),36},c.verification_url);
+        draw_desktop_sign_in_browser(c,x);
+#endif
+    }
     else if(c.state==media::State::loading)ui::text(overlay_,fonts_.regular,"Contacting YouTube…",x+64,414,28,muted);
-    else if(c.state==media::State::failed)ui::paragraph(overlay_,fonts_.regular,c.error,x+64,414,27,670,39,ink,8);
+    else if(c.state==media::State::failed)ui::paragraph(overlay_,fonts_.regular,"Could not connect to YouTube. Please try again.",x+64,414,27,670,39,ink,8);
     ui::Hint h[]={{ui::Button::circle,"Back"},{c.signed_in?ui::Button::square:ui::Button::cross,c.signed_in?"Disconnect":c.saved?"Reconnect":"Connect"}};
     ui::HintLayout l;l.cy=1015;l.size=28;l.text_size=22;ui::draw_hints(overlay_,fonts_,ui::GlyphStyle::mono(ink,Color::rgb(0,0)),h,2,x+65,false,l);
 }
@@ -1025,26 +1120,36 @@ void Screen::draw_credits(){
     if(feature_resources_lines_.empty())feature_resources_lines_=ui::paragraph_lines(fonts_.regular,feature_resources_sites,21,665,std::numeric_limits<int>::max()).lines;
     const int first=std::max(0,int(std::floor((230+credits_scroll_.value-y)/30))-1);
     const int end=std::min(int(feature_resources_lines_.size()),int(std::ceil((930+credits_scroll_.value-y)/30))+1);
-    for(int n=first;n<end;++n)ui::text(overlay_,fonts_.regular,feature_resources_lines_[size_t(n)],x+64,y+float(n)*30,21,muted);
+    for(int n=first;n<end;++n){ui::text(overlay_,fonts_.regular,feature_resources_lines_[size_t(n)],x+64,y+float(n)*30,21,muted);
+#if defined(MUSEUM_DESKTOP)
+        desktop_add_text_links(feature_resources_lines_[size_t(n)],x+64,y+float(n)*30-credits_scroll_.value,21,{x+62,230,685,700},true);
+#endif
+    }
     y+=float(feature_resources_lines_.size())*30+34;
     y=ui::paragraph(overlay_,fonts_.semibold,"Sources and licences",x+64,y,26,665,35,ink)+24;
     const char* paragraphs[]={"Interface foundation — ps5-homebrew-ui by BlackBearReloaded. Its OpenGL renderer, type system, springs, controller components and image viewer form the museum interface.","Optional controller state layout - Based on PSSwanStation by Press5elect. The local reference traces this layout to PSFlyCast.","Native YouTube playback — ytps5-sponsorblock by animatian112, with FFmpeg and its contributors. YouTube films remain hosted by their original publishers. Availability can vary by region and service changes.","Collection photography — the individual creators and archives credited in every exhibit. Hardware photography includes public-domain work by Evan-Amos. Each image retains its source and licence.","Editorial references — Computer History Museum, The Strong, Brookhaven National Laboratory, Smithsonian, the Video Game History Foundation, original developers and publishers. Source records are preserved in the collection metadata.","An original ambient score accompanies the collection. Typography uses Inter, Montserrat, DejaVu Sans Mono and a Noto Sans CJK fallback by Adobe and Noto font contributors, under their respective open font licences.","Wikipedia reference introductions retain article revision, contributor and CC BY-SA links. Historical texts retain their original sources. Minimal ambient silhouettes refer to Pac-Man, Mario and Space Invaders; their characters belong to their respective rights holders.","The museum is an independent historical project. Product names identify the objects being discussed; their owners are not affiliated with this project. External films, photographs and models retain their respective rights."};
     for(const char*p:paragraphs)y=ui::paragraph(overlay_,fonts_.regular,p,x+64,y,24,665,35,ink)+34;
     credits_scroll_max_=std::max(0.f,y-900);overlay_.pop_transform();overlay_.pop_clip();
+#if defined(MUSEUM_DESKTOP)
+    desktop_add_scroll_area(DesktopScrollTarget::credits,{x+62,230,685,700},{x+767,230,3,700},credits_scroll_max_,credits_scroll_.value);
+#endif
     if(credits_scroll_max_>0){const float height=700,thumb=std::max(32.f,height*height/(height+credits_scroll_max_)),offset=(height-thumb)*credits_scroll_.value/credits_scroll_max_;overlay_.line(x+768,230,x+768,930,2,muted.with_alpha(.2f));overlay_.line(x+768,230+offset,x+768,230+offset+thumb,3,ink.with_alpha(.65f));}
     ui::Hint h[]={{ui::Button::circle,"Options"},{ui::Button::right_stick,"Read"}};ui::HintLayout l;l.cy=1014;l.size=28;l.text_size=22;ui::draw_hints(overlay_,fonts_,ui::GlyphStyle::mono(ink,Color::rgb(0,0)),h,2,x+64,false,l);
 }
 
 void Screen::show_year_notice(int from,int to){
     if(from==to)return;
-    year_notice_from_=from;year_notice_to_=to;year_notice_displayed_=from;year_notice_tick_=false;year_notice_time_=1.35f;filter_notice_time_=0;
+    const bool visible=year_notice_time_>0;
+    year_notice_from_=visible?year_notice_displayed_:from;year_notice_to_=to;
+    if(!visible){year_notice_displayed_=from;year_notice_age_=0;}
+    year_notice_tick_=false;year_notice_time_=1.35f;filter_notice_time_=0;
 }
 void Screen::draw_filter_notice(){
     const bool year=year_notice_time_>0;
-    if((!year&&filter_notice_time_<=0)||onboarding_||experience_active_)return;
+    if((!year&&filter_notice_time_<=0)||onboarding_||experience_active_||year_guide_)return;
     const auto palette=colours();
     const float remaining=year?year_notice_time_:filter_notice_time_;
-    const float elapsed=1.35f-remaining;
+    const float elapsed=year?year_notice_age_:1.35f-remaining;
     const float alpha=std::min(std::clamp(elapsed/.10f,0.f,1.f),std::clamp(remaining/.22f,0.f,1.f));
     const std::string label=year?std::to_string(year_notice_displayed_):std::string(i18n::tr(active_filter_label()));
     float size=year?176.f:80.f;while(size>30&&fonts_.display.measure(label,size)>1720)size-=1;
@@ -1068,20 +1173,49 @@ void Screen::draw(int width,int height,unsigned framebuffer){
     interface_stage_ms_.fill(0);
     const auto palette=colours();[[maybe_unused]] const auto paper=palette.paper,ink=palette.ink,muted=palette.muted,rule=palette.rule;
     output_width_=width;output_height_=height;viewer_.style.pixel_scale=1920.f/std::max(1,width);
+#if defined(MUSEUM_DESKTOP)
+    desktop_links_.clear();
+    desktop_scroll_areas_.clear();
+#endif
     if(collection_removal_active()){
-        overlay_.clear();draw_collection_removal();mark(0);renderer_.begin();renderer_.draw(overlay_);renderer_.present(framebuffer,width,height);mark(2);return;
+        overlay_.clear();draw_collection_removal();mark(0);renderer_.begin();renderer_.draw(overlay_);
+#if defined(MUSEUM_DESKTOP)
+        render_desktop_chrome();
+        render_desktop_cursor();
+#endif
+        renderer_.present(framebuffer,width,height);mark(2);return;
     }
+#if defined(MUSEUM_DESKTOP)
+    if(collection_pending_&&!onboarding_){
+        draw_desktop_startup();mark(0);renderer_.begin();renderer_.draw(boot_);render_desktop_chrome();render_desktop_cursor();renderer_.present(framebuffer,width,height);mark(2);return;
+    }
+#else
     if(collection_pending_){
         if(language_choice_){welcome_.clear();draw_onboarding();mark(0);renderer_.begin();renderer_.draw(welcome_);}
         else if(collection_presentation_.quiet_validation){draw_boot();mark(0);renderer_.begin();renderer_.draw(boot_);}
         else{boot_.clear();draw_collection_install_view(boot_,fonts_,collection_install_view_state(),theme_mix_.value,collection_elapsed_,reduced_);mark(0);renderer_.begin();renderer_.draw(boot_);}
+#if defined(MUSEUM_DESKTOP)
+        render_desktop_chrome();
+        render_desktop_cursor();
+#endif
         renderer_.present(framebuffer,width,height);mark(2);return;
     }
+#endif
     if(onboarding_&&onboarding_fade_.value>.999f&&!onboarding_leaving_){
-        welcome_.clear();draw_onboarding();mark(0);renderer_.begin();renderer_.draw(welcome_);renderer_.present(framebuffer,width,height);mark(2);return;
+        welcome_.clear();draw_onboarding();mark(0);renderer_.begin();renderer_.draw(welcome_);
+#if defined(MUSEUM_DESKTOP)
+        render_desktop_chrome();
+        render_desktop_cursor();
+#endif
+        renderer_.present(framebuffer,width,height);mark(2);return;
     }
     if(experience_active_&&experience_open_.value>.999f){
-        experience_layer_.clear();draw_experience();mark(0);renderer_.begin();renderer_.draw(experience_layer_);renderer_.present(framebuffer,width,height);mark(2);return;
+        experience_layer_.clear();draw_experience();mark(0);renderer_.begin();renderer_.draw(experience_layer_);
+#if defined(MUSEUM_DESKTOP)
+        render_desktop_chrome();
+        render_desktop_cursor();
+#endif
+        renderer_.present(framebuffer,width,height);mark(2);return;
     }
     background_.clear();page_.clear();overlay_.clear();media_layer_.clear();
     background_.rounded_rect({0,0,1920,1080},0,paper);draw_header();
@@ -1108,7 +1242,9 @@ void Screen::draw(int width,int height,unsigned framebuffer){
     else if(panel_.value>.001f){renderer_.glass();if(connection_panel_)draw_connection();else{overlay_.push_opacity(1-std::clamp(credits_open_.value,0.f,1.f));draw_preferences();overlay_.pop_opacity();if(credits_open_.value>.001f){overlay_.push_opacity(std::clamp(credits_open_.value,0.f,1.f));draw_credits();overlay_.pop_opacity();}}renderer_.draw(overlay_);}
     if(search_open_.value>.001f||search_prompt_.visible()){
         overlay_.clear();if(search_open_.value>.001f)draw_search();
-        if(search_prompt_.visible()){renderer_.glass();ui::Canvas canvas{overlay_,fonts_,renderer_.glass_texture(),time_};search_prompt_.draw(canvas);}
+        if(search_prompt_.visible()){
+            {renderer_.glass();ui::Canvas canvas{overlay_,fonts_,renderer_.glass_texture(),time_};search_prompt_.draw(canvas);}
+        }
         renderer_.draw(overlay_);
     }
     if(experience_open_.value>.001f){experience_layer_.clear();draw_experience();renderer_.draw(experience_layer_);}
@@ -1117,8 +1253,19 @@ void Screen::draw(int width,int height,unsigned framebuffer){
     if(trophy_fallback_time_>0){overlay_.clear();draw_trophy_fallback();renderer_.draw(overlay_);}
     if(filter_notice_time_>0||year_notice_time_>0){overlay_.clear();draw_filter_notice();renderer_.draw(overlay_);}
     if(collection_remove_dialog_||collection_remove_open_.value>.001f){overlay_.clear();draw_collection_removal();renderer_.draw(overlay_);}
+    if(database_open_.value>.001f){overlay_.clear();draw_database_update();renderer_.draw(overlay_);}
+    if(support_open_.value>.001f){overlay_.clear();draw_support();renderer_.draw(overlay_);}
+#if defined(MUSEUM_DESKTOP)
+    if(application_open_.value>.001f){overlay_.clear();draw_application_update();renderer_.draw(overlay_);}
+    render_desktop_chrome();
+#endif
     if(composed_.width()!=width||composed_.height()!=height){entry_snapshot_=false;composed_.create(width,height,1);}
-    if(!composed_.texture()){renderer_.present(framebuffer,width,height);return;}
+    if(!composed_.texture()){
+#if defined(MUSEUM_DESKTOP)
+        render_desktop_cursor();
+#endif
+        renderer_.present(framebuffer,width,height);return;
+    }
     mark(0);renderer_.present(composed_.framebuffer(),width,height);composed_.resolve();mark(1);
     // The PS5 backend resolves glBlitFramebuffer through a CPU readback here
     // (~508ms for3840x2160 in the console trace). Sample the complete scene
@@ -1152,6 +1299,10 @@ void Screen::draw(int width,int height,unsigned framebuffer){
         if(entry_snapshot_&&previous_entry_.texture()&&fade_<1)composition_.image(previous_entry_.texture(),{0,0,1920,1080},gfx::kCanvasUv,Color::rgb(0xffffff,1-tween::smoothstep(fade_)));
         else entry_snapshot_=false;
     }
-    renderer_.begin();renderer_.draw(composition_);renderer_.present(framebuffer,width,height);mark(2);
+    renderer_.begin();renderer_.draw(composition_);
+#if defined(MUSEUM_DESKTOP)
+    render_desktop_cursor();
+#endif
+    renderer_.present(framebuffer,width,height);mark(2);
 }
 }

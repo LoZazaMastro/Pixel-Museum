@@ -14,7 +14,11 @@ std::int64_t monotonic_us();
 
 // Writes one line to the app log (stdout, redirected by runtime_shims.c) and
 // mirrors it to klog so hardware runs can observe lifecycle markers live.
+#if defined(__MINGW32__)
+void log(const char *format, ...) __attribute__((format(gnu_printf, 1, 2)));
+#else
 void log(const char *format, ...) __attribute__((format(printf, 1, 2)));
+#endif
 
 // Hides the system splash screen. Call once the first frame has been presented.
 bool hide_splash_screen();

@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "tools": [
+    {
+      "project": "deno",
+      "version": "v2.9.8",
+      "release": "https://github.com/denoland/deno/releases/tag/v2.9.8",
+      "download_url": "https://github.com/denoland/deno/releases/download/v2.9.8/deno-x86_64-pc-windows-msvc.zip",
+      "download_sha256": "cba84b26e0df5ae7f74fc66b86a95b866872a86292ebd84fa1e959927edd93bf",
+      "executable_sha256": "924397800533d3eb0ed0c889b20ad70e18b970d93acd8135bc043f425e528266",
+      "executable_bytes": 98081568,
+      "executable_path": "tools/windows-media/deno-2.9.8/deno.exe",
+      "source_url": "https://github.com/denoland/deno/archive/refs/tags/v2.9.8.tar.gz",
+      "license_url": "https://github.com/denoland/deno/blob/v2.9.8/LICENSE.md"
+    },
+    {
+      "project": "yt-dlp-ejs",
+      "version": "0.8.0",
+      "release": "https://github.com/yt-dlp/ejs/releases/tag/0.8.0",
+      "download_url": "https://github.com/yt-dlp/ejs/releases/download/0.8.0/yt.solver.core.min.js",
+      "download_sha256": "18da6ce0758b416e7ae645084f4f8801f9f9d59d6c477c05eaa0ff94ebd8cc00",
+      "path": "tools/windows-media/ejs-0.8.0/yt.solver.core.min.js",
+      "bytes": 6945,
+      "source_url": "https://github.com/yt-dlp/ejs/archive/refs/tags/0.8.0.tar.gz",
+      "license_url": "https://github.com/yt-dlp/ejs/blob/0.8.0/LICENSE"
+    },
+    {
+      "project": "yt-dlp-ejs",
+      "version": "0.8.0",
+      "release": "https://github.com/yt-dlp/ejs/releases/tag/0.8.0",
+      "download_url": "https://github.com/yt-dlp/ejs/releases/download/0.8.0/yt.solver.lib.min.js",
+      "download_sha256": "c55987fe697e5b9ee18830163f7af85327e9bb5c3e674b969d38c8d205eaa577",
+      "path": "tools/windows-media/ejs-0.8.0/yt.solver.lib.min.js",
+      "bytes": 151561,
+      "source_url": "https://github.com/yt-dlp/ejs/archive/refs/tags/0.8.0.tar.gz",
+      "license_url": "https://github.com/yt-dlp/ejs/blob/0.8.0/LICENSE"
+    }
+  ]
+}

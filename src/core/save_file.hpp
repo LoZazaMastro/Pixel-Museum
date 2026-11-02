@@ -8,6 +8,7 @@
 #include <string>
 #include <string_view>
 #include <vector>
+#include <map>
 
 namespace hui::save
 {
@@ -46,6 +47,11 @@ std::string write_atomic(const std::string &path, std::string_view data);
 // Reads a whole file of at most max_bytes. Returns false if it is missing or
 // unreadable.
 bool read_file(const std::string &path, std::string *data, std::size_t max_bytes = 4u << 20);
+
+// Verified, immutable data overlays. Only registered exact read paths change;
+// saves, preferences and writes always keep their original destination.
+void set_read_overlay(std::map<std::string, std::string> files);
+std::string resolve_read_path(const std::string& path);
 
 // Names of the files in a directory. Reads the build-generated index.txt
 // (one name per line) when present, because directory listing returns

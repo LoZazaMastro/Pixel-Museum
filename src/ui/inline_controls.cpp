@@ -23,7 +23,7 @@ template<class Text,class Icon>void spans(std::string_view text,Text ordinary,Ic
  if(start<text.size())ordinary(text.substr(start));
 }
 float symbol_width(const FontRef&face,const Symbol&s,float size,float tracking){
- return button_width(s.button,size*1.1f)+8+(s.name.empty()?0:face.font->measure(resolve_text(s.name),size,tracking));
+ return button_width(s.button,size*1.1f)+8+(s.name.empty()||control_device()!=ControlDevice::playstation?0:face.font->measure(resolve_text(s.name),size,tracking));
 }
 float measure(const FontRef&face,std::string_view value,float size,float tracking){
  float width=0;spans(value,[&](std::string_view text){width+=face.font->measure(text,size,tracking);},[&](const Symbol&s){width+=symbol_width(face,s,size,tracking);});return width;
@@ -34,7 +34,7 @@ float draw(gfx::DrawList&list,const FontRef&face,std::string_view value,float x,
  const auto style=GlyphStyle::mono(color,gfx::Color::rgb(0,0));
  spans(value,[&](std::string_view text){pen+=list.text(*face.font,face.texture,text,pen,y,size,color,gfx::Align::left,tracking);},[&](const Symbol&s){
   draw_button(list,fonts,style,s.button,pen+4,y-size*.35f,size*1.1f);pen+=button_width(s.button,size*1.1f)+8;
-  if(!s.name.empty())pen+=list.text(*face.font,face.texture,resolve_text(s.name),pen,y,size,color,gfx::Align::left,tracking);
+  if(!s.name.empty()&&control_device()==ControlDevice::playstation)pen+=list.text(*face.font,face.texture,resolve_text(s.name),pen,y,size,color,gfx::Align::left,tracking);
  });return width;
 }
 std::vector<std::string> wrap(const FontRef&face,std::string_view text,float size,float width){

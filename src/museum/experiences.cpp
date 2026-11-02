@@ -115,7 +115,7 @@ void Screen::draw_study_preview(gfx::DrawList&list,int index,Rect bounds){
     else{list.rounded_rect(bounds,0,palette.paper);workshop_.draw(list,fonts_,bounds,tone_,false);}
     list.pop_clip();
 }
-void Screen::draw_experience_library(float){
+void Screen::draw_experience_library(float x){
     const auto palette=colours();const Color ink=palette.ink,quiet=palette.muted;
     const auto&all=study_catalog();
     ui::text(overlay_,fonts_.mono,"EXPERIENCES",64,92,19,quiet,Align::left,2);
@@ -148,6 +148,9 @@ void Screen::draw_experience_library(float){
         overlay_.push_clip({64,830,612,140});
         ui::paragraph(overlay_,fonts_.regular,lines,64,850-experience_description_scroll_,21,30,quiet);
         overlay_.pop_clip();
+#if defined(MUSEUM_DESKTOP)
+        desktop_add_scroll_area(DesktopScrollTarget::description,{64+x,830,612,140},{689+x,830,2,140},experience_description_max_,experience_description_scroll_,16);
+#endif
         if(experience_description_max_>0){overlay_.line(690,830,690,970,1,quiet.with_alpha(.2f));const float thumb=std::max(16.f,140.f*140.f/(experience_description_max_+140));const float y=830+(140-thumb)*experience_description_scroll_/experience_description_max_;overlay_.line(690,y,690,y+thumb,2,tone_);}
     }
     const ui::Hint buttons[]={{ui::Button::square,"Years"},{ui::Button::triangle,"Exhibit"},{ui::Button::right_stick,"Read"}};

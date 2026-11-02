@@ -53,7 +53,7 @@ class CartridgeRules final:public Workshop {
 public:
  CartridgeRules(){reset();}
  void reset()override{clean();tiles_={};player_=320;control_=spawn_=blend_=0;mode_=serial_=0;correct_={};mistakes_={};}
- const char*help()const override{return "Move to catch a light in Collect. In Avoid, let the same light pass. Cross swaps programs; test eight correct decisions in each. Touchpad also moves the catcher. Square restarts.";}
+ const char*help()const override{return "Move to catch a light in Collect. In Avoid, let the same light pass. {cross} swaps programs; test eight correct decisions in each. {touchpad} also moves the catcher. {square} restarts.";}
  void handle(const InputFrame&i,Feedback&f)override{control_=0;if(!input(i,f))return;control_=axis(i);
   if(i.touch.available&&i.touch.count){player_=std::clamp(finite(i.touch.points[0].x)*640,22.f,618.f);control_=0;}
   if(i.is_pressed(Action::confirm)){mode_=1-mode_;event(62+mode_*5,.08f);}}
@@ -85,7 +85,7 @@ public:
  int level_number()const override{return brief_+1;}
  int level_count()const override{return 3;}
  void continue_level()override{if(!brief_complete_)return;if(brief_==2)reset();else{++brief_;brief_complete_=false;message_.clear();}}
- const char*help()const override{return "Choose a design decision with Up/Down and change it with Left/Right. Cross tests the current brief. The touchpad selects a row and tunes its value. Complete three briefs inside their budgets. Costs use an illustrative design budget.";}
+ const char*help()const override{return "Choose a design decision with Up/Down and change it with Left/Right. {cross} tests the current brief. The {touchpad} selects a row and tunes its value. Complete three briefs inside their budgets. Costs use an illustrative design budget.";}
  void handle(const InputFrame&i,Feedback&f)override{if(!input(i,f))return;
   const int before_selection=selected_;
   if(i.nav==Direction::up)selected_=std::max(0,selected_-1);if(i.nav==Direction::down)selected_=std::min(3,selected_+1);if(i.nav==Direction::left)change(-1);if(i.nav==Direction::right)change(1);
@@ -115,7 +115,7 @@ class AdaptivePulse final:public Workshop {
 public:
  AdaptivePulse(){reset();}void reset()override{clean();x_=75;y_=270;vy_=move_=run_=camera_=jump_age_=jump_buffer_=coyote_=0;grounded_=true;jump_=held_=false;tick_=-1;pace_=0;}
  StudyCompletion completion()const override{return x_>=2110?StudyCompletion::experience_complete:StudyCompletion::playing;}
- const char*help()const override{return "Move along the route and hear the original phrase adapt to rest, walking and running. R2 increases your pace; Cross jumps, and holding it extends the arc. Every gap is reachable at walking speed. Touchpad position can set the pace. Reach the flag. Square restarts.";}
+ const char*help()const override{return "Move along the route and hear the original phrase adapt to rest, walking and running. {r2} increases your pace; {cross} jumps, and holding it extends the arc. Every gap is reachable at walking speed. {touchpad} position can set the pace. Reach the flag. {square} restarts.";}
  void handle(const InputFrame&i,Feedback&f)override{move_=run_=0;jump_=held_=false;if(!input(i,f))return;move_=axis(i);run_=std::clamp(finite(i.trigger_r),0.f,1.f);jump_=i.is_pressed(Action::confirm);held_=i.is_held(Action::confirm);
   if(i.touch.available&&i.touch.count)move_=std::clamp((finite(i.touch.points[0].x)-.5f)*2,-1.f,1.f);}
  void update(float dt)override{dt=clock(dt);if(dt<=0)return;const int beat=int(time_/.1875f);if(beat!=tick_){tick_=beat;if(beat%density()==0){constexpr int roots[]={50,58,53,48},notes[]={62,65,69,72,69,65,64,69};sound(beat%4==0?roots[(beat/16)%4]:notes[beat%8]+(density()==1?12:0));}}
@@ -152,7 +152,7 @@ public:
  int level_number()const override{return std::max(1,checkpoint_);}
  int level_count()const override{return 3;}
  void continue_level()override{if(!landing_complete_)return;if(checkpoint_==3)reset();else{landing_complete_=false;move_=vx_=0;jump_=held_=false;}}
- const char*help()const override{return "Use the left stick to move and Cross to jump; release Cross for a shorter arc. L1/R1 choose a parameter; D-pad Left/Right tunes it. The touchpad tunes the selected parameter. The first ledge is above the default jump: increase lift or reduce gravity. Reach three flags and compare trajectories. Square resets.";}
+ const char*help()const override{return "Use the {left_stick} to move and {cross} to jump; release {cross} for a shorter arc. {l1}/{r1} choose a parameter; {dpad} Left/Right tunes it. The {touchpad} tunes the selected parameter. The first ledge is above the default jump: increase lift or reduce gravity. Reach three flags and compare trajectories. {square} resets.";}
  void handle(const InputFrame&i,Feedback&f)override{move_=0;jump_=held_=false;if(!input(i,f))return;move_=std::clamp(finite(i.stick_x),-1.f,1.f);jump_=i.is_pressed(Action::confirm);held_=i.is_held(Action::confirm);
   if(i.is_pressed(Action::page_prev)){selected_=(selected_+2)%3;f.feel(hui::audio::Tactile::focus,.07f,.025f,-.5f);}if(i.is_pressed(Action::page_next)){selected_=(selected_+1)%3;f.feel(hui::audio::Tactile::focus,.07f,.025f,.5f);}
   if(!i.nav_from_stick&&i.nav==Direction::left)alter(-.05f);if(!i.nav_from_stick&&i.nav==Direction::right)alter(.05f);
@@ -183,12 +183,15 @@ class PixelDrawing final:public Workshop {
  static constexpr auto palette_=museum::pixel_palette::colours;
  std::array<std::uint16_t,256>cells_{};int x_=0,y_=0,brush_=0;bool grid_=true;float cursor_x_=0,cursor_y_=0;
  int brush_hold_=0;float brush_repeat_=0;
+#if defined(MUSEUM_DESKTOP)
+ hui::gfx::Rect desktop_bounds_{0,0,1920,960};int desktop_palette_hover_=-1;
+#endif
  void paint(int index,int colour){if(cells_[size_t(index)]==colour)return;cells_[size_t(index)]=static_cast<std::uint16_t>(colour);event(60+brush_%12,.025f);}
  int changes()const{int n=0;for(auto c:cells_)n+=c!=0;return n;}
 public:
  PixelDrawing(){reset();}
  void reset()override{clean();cells_.fill(0);x_=y_=brush_=0;grid_=true;cursor_x_=cursor_y_=0;brush_hold_=0;brush_repeat_=0;}
- const char*help()const override{return "Start with a white 16-by-16 canvas. Choose a pixel, draw with the selected colour, or erase it to white. Hold L1/R1 to browse the NES-inspired palette; sixteen colours are visible at once. White is available only through the eraser. Triangle clears the canvas. The touchpad is not used.";}
+ const char*help()const override{return "Start with a white 16-by-16 canvas. Choose a pixel, draw with the selected colour, or erase it to white. Hold {l1}/{r1} to browse the NES-inspired palette; sixteen colours are visible at once. White is available only through the eraser. {triangle} clears the canvas. The {touchpad} is not used.";}
  void handle(const InputFrame&i,Feedback&f)override{
   paused_=i.focus_lost||!i.connected;if(paused_){movement_.reset();rumble_=0;brush_hold_=0;brush_repeat_=0;return;}
   movement_.drain(f,rumble_>0);
@@ -210,8 +213,52 @@ public:
   if(i.is_pressed(Action::back))paint(y_*16+x_,0);
   if(x_!=previous_x||y_!=previous_y){movement_.step(float(x_-previous_x),float(y_-previous_y));movement_.drain(f,rumble_>0);}
  }
+#if defined(MUSEUM_DESKTOP)
+ bool desktop_pointer_interactive(float x,float y)const override{
+  if(desktop_bounds_.w<1||desktop_bounds_.h<1)return false;
+  const float scale=std::min(desktop_bounds_.w/1000.f,desktop_bounds_.h/540.f);
+  const float px=(x-desktop_bounds_.x-(desktop_bounds_.w-1000*scale)*.5f)/scale;
+  const float py=(y-desktop_bounds_.y-(desktop_bounds_.h-540*scale)*.5f)/scale;
+  const auto hit=[&](float left,float top,float width,float height){return px>=left&&px<left+width&&py>=top&&py<top+height;};
+  if(hit(73,143,304,304)||hit(735,449,94,29)||hit(850,449,94,29))return true;
+  for(int n=0;n<16;++n)if(hit(735+(n%4)*52.f,240+(n/4)*52.f,40,40))return true;
+  return false;
+ }
+ bool desktop_pointer(const hui::PointerInput&p,Feedback&f)override{
+  desktop_palette_hover_=-1;
+  if(!p.available||desktop_bounds_.w<1||desktop_bounds_.h<1)return false;
+  const float scale=std::min(desktop_bounds_.w/1000.f,desktop_bounds_.h/540.f);
+  const float px=(p.x-desktop_bounds_.x-(desktop_bounds_.w-1000*scale)*.5f)/scale;
+  const float py=(p.y-desktop_bounds_.y-(desktop_bounds_.h-540*scale)*.5f)/scale;
+  const auto hit=[&](float x,float y,float w,float h){return px>=x&&px<x+w&&py>=y&&py<y+h;};
+  if(hit(73,143,304,304)){
+   if(p.moved||p.primary_pressed||p.primary_held||p.secondary_pressed||p.secondary_held){
+    const int before_x=x_,before_y=y_;x_=std::clamp(int((px-73)/19),0,15);y_=std::clamp(int((py-143)/19),0,15);
+    if(before_x!=x_||before_y!=y_){movement_.step(float(x_-before_x),float(y_-before_y));movement_.drain(f,rumble_>0);}
+    if(p.secondary_pressed||p.secondary_held)paint(y_*16+x_,0);
+    else if(p.primary_pressed||p.primary_held)paint(y_*16+x_,brush_+1);
+   }
+   return true;
+  }
+  const int first=std::min((brush_/16)*16,std::max(0,int(palette_.size())-16));
+  for(int n=0;n<16&&first+n<int(palette_.size());++n){
+   if(!hit(735+(n%4)*52.f,240+(n/4)*52.f,40,40))continue;
+   desktop_palette_hover_=first+n;
+   if(p.primary_pressed&&brush_!=first+n){brush_=first+n;brush_hold_=0;brush_repeat_=0;f.play(hui::audio::Cue::focus);}
+   return true;
+  }
+  for(int direction:{-1,1})if(hit(direction<0?735.f:850.f,449,94,29)){
+   if(p.primary_pressed){brush_=(brush_+direction*16+int(palette_.size()))%int(palette_.size());brush_hold_=0;brush_repeat_=0;f.play(hui::audio::Cue::focus);}
+   return true;
+  }
+  return false;
+ }
+#endif
  void update(float dt)override{dt=clock(dt);if(brush_hold_)brush_repeat_-=dt;cursor_x_+=(float(x_)-cursor_x_)*std::min(1.f,dt*18);cursor_y_+=(float(y_)-cursor_y_)*std::min(1.f,dt*18);}
  void draw(DrawList&l,Fonts&f,Rect r,Color a)override{
+#if defined(MUSEUM_DESKTOP)
+  desktop_bounds_=r;
+#endif
   if(!begin(l,f,r,a,"PIXEL ART / NES-INSPIRED COLOURS","Make one square matter."))return;
   constexpr float preview_centre=524,large_top=148,large_side=160,small_top=354,small_side=64,label_gap=24;
   for(int n=0;n<256;++n){const int colour=cells_[size_t(n)];const Color c=Color::rgb(colour?palette_[size_t(colour-1)]:0xffffff);
@@ -230,7 +277,15 @@ public:
   hui::ui::text(l,f.mono,"COLOUR",732,157,12,muted,Align::left,.8f);
   hui::ui::text(l,f.display,value,728,209,38,a);
   const int first=std::min((brush_/16)*16,std::max(0,int(palette_.size())-16));
-  for(int n=0;n<16&&first+n<int(palette_.size());++n){const float px=735+(n%4)*52.f,py=240+(n/4)*52.f;l.rounded_rect({px,py,40,40},1,Color::rgb(palette_[size_t(first+n)]));if(brush_==first+n)l.bordered_rect({px-3,py-3,46,46},2,Color{0,0,0,0},2,a);}
+  for(int n=0;n<16&&first+n<int(palette_.size());++n){const float px=735+(n%4)*52.f,py=240+(n/4)*52.f;l.rounded_rect({px,py,40,40},1,Color::rgb(palette_[size_t(first+n)]));if(brush_==first+n)l.bordered_rect({px-3,py-3,46,46},2,Color{0,0,0,0},2,a);
+#if defined(MUSEUM_DESKTOP)
+   else if(desktop_palette_hover_==first+n)l.bordered_rect({px-3,py-3,46,46},2,Color{0,0,0,0},1,a.with_alpha(.6f));
+#endif
+  }
+#if defined(MUSEUM_DESKTOP)
+  for(int direction:{-1,1}){const Rect button{direction<0?735.f:850.f,449,94,29};l.bordered_rect(button,3,paper,1,ink.with_alpha(.2f));hui::ui::text(l,f.regular,direction<0?"Previous":"Next",button.cx(),button.y+19,11,ink,Align::center);}
+  hui::ui::text(l,f.regular,"Left click to draw. Right click to erase.",73,495,14,muted);
+#endif
   end(l);
  }
 };

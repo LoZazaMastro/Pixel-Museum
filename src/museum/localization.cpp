@@ -4,6 +4,8 @@
 #define JSON_NOEXCEPTION 1
 #include "third_party/nlohmann/json.hpp"
 #include <map>
+#include <set>
+#include <cstdio>
 #include <vector>
 namespace museum::i18n {
 namespace {
@@ -40,12 +42,14 @@ bool load(const std::string&root,std::string_view requested){
         failure="Interface translation is invalid; English is retained.";return false;}
     const auto own=j.find("locale");if(own!=j.end()&&(!own->is_string()||own->get<std::string>()!=requested)){
         failure="Interface translation language mismatch; English is retained.";return false;}
+    std::set<std::string,std::less<>> incompatible,incompatible_music;
+    const auto warn=[&](const std::string& key,const char*reason){std::fprintf(stderr,"[Museum i18n] %.*s: skipped incompatible %s translation: %.160s\n",int(requested.size()),requested.data(),reason,key.c_str());};
     for(auto i=j["strings"].begin();i!=j["strings"].end();++i){
         if(i.key().size()>2048||!i.value().is_string()){failure="Invalid interface string; English is retained.";return false;}
         auto v=i.value().get<std::string>();if(v.size()>8192||v.find('\0')!=std::string::npos){failure="Invalid interface string; English is retained.";return false;}
         const auto fields=format_fields(i.key());
-        if(!fields.empty()&&format_fields(v)!=fields){failure="Interface translation has incompatible format fields; English is retained.";return false;}
-        if(controls(i.key())!=controls(v)){failure="Interface translation has incompatible controller symbols; English is retained.";return false;}
+        if(!fields.empty()&&format_fields(v)!=fields){incompatible.insert(i.key());warn(i.key(),"format");continue;}
+        if(controls(i.key())!=controls(v)){incompatible.insert(i.key());warn(i.key(),"controller-symbol");}
     }
     const auto musical=j.find("music_strings");
     if(musical!=j.end()){
@@ -54,13 +58,13 @@ bool load(const std::string&root,std::string_view requested){
             if(i.key().size()>2048||i.key().find('\0')!=std::string::npos||!i.value().is_string()){failure="Invalid music presentation string; English is retained.";return false;}
             const auto v=i.value().get<std::string>();
             if(v.size()>8192||v.find('\0')!=std::string::npos){failure="Invalid music presentation string; English is retained.";return false;}
-            if(format_fields(i.key())!=format_fields(v)){failure="Music presentation has incompatible format fields; English is retained.";return false;}
-            if(controls(i.key())!=controls(v)){failure="Music presentation has incompatible controller symbols; English is retained.";return false;}
+            if(format_fields(i.key())!=format_fields(v)){incompatible_music.insert(i.key());warn(i.key(),"music format");continue;}
+            if(controls(i.key())!=controls(v)){incompatible_music.insert(i.key());warn(i.key(),"music controller-symbol");}
         }
     }
     // English interface strings retain literal semantics, including legacy nonidentity entries.
-    if(requested!="en")for(auto i=j["strings"].begin();i!=j["strings"].end();++i)values.emplace(i.key(),i.value().get<std::string>());
-    if(musical!=j.end())for(auto i=musical->begin();i!=musical->end();++i)music_values.emplace(i.key(),i.value().get<std::string>());
+    if(requested!="en")for(auto i=j["strings"].begin();i!=j["strings"].end();++i)if(!incompatible.contains(i.key()))values.emplace(i.key(),i.value().get<std::string>());
+    if(musical!=j.end())for(auto i=musical->begin();i!=musical->end();++i)if(!incompatible_music.contains(i.key()))music_values.emplace(i.key(),i.value().get<std::string>());
     language=requested;return true;
 }
 std::string_view tr(std::string_view s){const auto i=values.find(s);return i==values.end()?s:std::string_view(i->second);}

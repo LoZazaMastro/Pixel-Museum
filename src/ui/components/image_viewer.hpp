@@ -145,6 +145,9 @@ class ImageViewer
     Event cycle_zoom(Feedback &feedback); // zoom_in(), and back to fit from the limit
     void set_mode(ZoomMode mode, bool snap = false);
     void set_zoom(float scale, bool snap = false); // 1 is fit
+    // Moves the visible image by canvas pixels, immediately, within its crop.
+    // Pointer deltas are already in the viewer's logical coordinate system.
+    void pan_pixels(float dx,float dy);
     ZoomMode mode() const
     {
         return mode_;

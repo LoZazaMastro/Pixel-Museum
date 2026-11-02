@@ -103,6 +103,7 @@ target_compiler=$(command -v "${PS5_CLANG:-clang-18}")
 
 mapfile -d '' -t source_paths < <(
     find "$root/src" -type f \( -name '*.c' -o -name '*.cc' -o -name '*.cpp' \) \
+        ! -path "$root/src/platform/windows/*" \
         -print0 | sort -z
 )
 sources=()

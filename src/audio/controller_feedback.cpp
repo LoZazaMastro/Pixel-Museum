@@ -73,10 +73,10 @@ bool ControllerFeedback::post(TactileEvent event){
     // A low-frequency collision needs several actuator cycles; the old
     // 18–35ms authored gestures could decay before a useful impact developed.
     if(event.pattern==Tactile::impact)event.seconds=std::max(event.seconds,.055f);
-    if(event.strength==0||!enabled_.load(std::memory_order_acquire))return false;
+    if(event.strength==0||!enabled_.load(std::memory_order_acquire)||!tactile_enabled_.load(std::memory_order_acquire))return false;
     const unsigned head=head_.load(std::memory_order_relaxed),tail=tail_.load(std::memory_order_acquire);
     if(head-tail>=queue_size){dropped_.fetch_add(1,std::memory_order_relaxed);return false;}
-    events_[head%queue_size]={event,generation_.load(std::memory_order_acquire)};head_.store(head+1,std::memory_order_release);return true;
+    events_[head%queue_size]={event,tactile_generation_.load(std::memory_order_acquire)};head_.store(head+1,std::memory_order_release);return true;
 }
 bool ControllerFeedback::post_speaker(SpeakerEvent event){
     if(speaker_seconds(event.cue)==0.f||!enabled_.load(std::memory_order_acquire))return false;
@@ -92,8 +92,8 @@ bool ControllerFeedback::post_speaker(SpeakerEvent event){
 void ControllerFeedback::render_haptics(float*out,unsigned frames){
     if(!out)return;std::fill_n(out,frames*2,0.f);
     const unsigned head=head_.load(std::memory_order_acquire);unsigned tail=tail_.load(std::memory_order_relaxed);
-    const bool active=enabled_.load(std::memory_order_acquire);
-    const unsigned generation=generation_.load(std::memory_order_acquire);
+    const bool active=enabled_.load(std::memory_order_acquire)&&tactile_enabled_.load(std::memory_order_acquire);
+    const unsigned generation=tactile_generation_.load(std::memory_order_acquire);
     if(generation!=rendered_generation_){for(auto&v:voices_)v.length=0;rendered_generation_=generation;}
     if(!active){for(auto&v:voices_)v.length=0;tail_.store(head,std::memory_order_release);return;}
     while(tail!=head){const auto&q=events_[tail%queue_size];if(q.generation==generation){

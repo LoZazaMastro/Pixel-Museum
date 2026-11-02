@@ -25,7 +25,13 @@ public:
     void speaker_pcm_volume(float value);
     void enabled(bool value){
         const bool before=enabled_.exchange(value,std::memory_order_acq_rel);
-        if(before&&!value){generation_.fetch_add(1,std::memory_order_release);speaker_flush_.store(true,std::memory_order_release);}
+        if(before&&!value){generation_.fetch_add(1,std::memory_order_release);tactile_generation_.fetch_add(1,std::memory_order_release);speaker_flush_.store(true,std::memory_order_release);}
+    }
+    // Input-device changes silence actuators without muting cultural audio
+    // deliberately routed to the controller speaker.
+    void tactile_enabled(bool value){
+        const bool before=tactile_enabled_.exchange(value,std::memory_order_acq_rel);
+        if(before&&!value)tactile_generation_.fetch_add(1,std::memory_order_release);
     }
     void render_haptics(float*stereo,unsigned frames);
     void submit_speaker(const float*mono,unsigned frames);
@@ -39,6 +45,8 @@ private:
     struct SpeakerVoice {SpeakerEvent event{};unsigned position=0,length=0;};
     std::array<Queued,queue_size> events_{};
     std::atomic<unsigned> generation_{0};
+    std::atomic<unsigned> tactile_generation_{0};
+    std::atomic<bool> tactile_enabled_{true};
     unsigned rendered_generation_=0;
     unsigned speaker_generation_=0;
     std::atomic<bool> speaker_flush_{false};

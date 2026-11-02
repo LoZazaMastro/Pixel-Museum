@@ -86,10 +86,10 @@ void Screen::draw_trophy_badge(gfx::DrawList& out,const std::string& badge,float
 }
 void Screen::draw_trophy_fallback(){
     if(trophy_fallback_time_<=0)return;
-    const auto palette=colours();const float alpha=std::min(1.f,trophy_fallback_time_*3.f);
+    const auto palette=colours();const float alpha=std::min({1.f,trophy_fallback_time_*4.f,(5.f-trophy_fallback_time_)*5.f});
     overlay_.push_opacity(alpha);
-    overlay_.rounded_rect({1160,54,680,138},12,palette.paper);
-    overlay_.rounded_rect({1160,54,680,138},12,palette.ink.with_alpha(.045f));
+    overlay_.bordered_rect({1160,54,680,138},0,palette.paper,1,palette.ink.with_alpha(.2f));
+    overlay_.rounded_rect({1160,54,142,138},0,palette.ink.with_alpha(.045f));
     draw_trophy_badge(overlay_,trophy_fallback_current_.badge,1234,123,106,true);
     ui::text(overlay_,fonts_.mono,"Trophy unlocked",1310,91,16,palette.muted);
     ui::paragraph(overlay_,fonts_.semibold,i18n::tr(trophy_fallback_current_.title),1310,128,27,490,33,palette.ink,2);
@@ -190,16 +190,18 @@ void Screen::draw_trophy_pin_viewer(){
         const auto title=i18n::tr(item.title);float size=30;while(size>20&&fonts_.semibold.measure(title,size)>1690)--size;
         overlay_.push_clip({96,52,1728,52});ui::text(overlay_,fonts_.semibold,title,96,89,size,ink);overlay_.pop_clip();
     }
+#if !defined(MUSEUM_DESKTOP)
     const ui::Hint commands[]={{ui::Button::left_stick,"Move",ui::Button::none,false},{ui::Button::right_stick,"Rotate",ui::Button::none,false},{ui::Button::l2,"Zoom out"},{ui::Button::r2,"Zoom in"},{ui::Button::circle,"Back"}};
     ui::HintLayout layout;layout.cy=1014;layout.size=28;layout.text_size=19;layout.item_gap=32;
     ui::draw_hints(overlay_,fonts_,ui::GlyphStyle::mono(ink,Color::rgb(0,0)),commands,5,96,false,layout);
+#endif
 }
 void Screen::draw_year_guide(){
     if(guide_trophies_&&trophy_pin_open_){draw_trophy_pin_viewer();return;}
-    const float amount=std::clamp(year_panel_.value,0.f,1.f),x=-680*(1-amount);
+    const float amount=std::clamp(year_panel_.value,0.f,1.f),x=-736*(1-amount);
     const auto palette=colours();const Color ink=palette.ink,paper=palette.paper,quiet=palette.muted;
     overlay_.rounded_rect({0,0,1920,1080},0,ink.with_alpha(.22f*amount));
-    const float sidebar=(guide_experiences_||guide_trophies_)?736.f:680.f;
+    const float sidebar=736.f;
     overlay_.glass(renderer_.glass_texture(),{x,0,sidebar,1080},0,gfx::mix(paper,tone_,.12f).with_alpha(.97f));
     overlay_.rounded_rect({x,0,sidebar,1080},0,gfx::mix(paper,tone_,.08f).with_alpha(.96f));
     overlay_.line(x+sidebar,0,x+sidebar,1080,1,ink.with_alpha(.12f*amount));
@@ -222,11 +224,8 @@ void Screen::draw_year_guide(){
     }
     overlay_.push_opacity(1-library);
     ui::text(overlay_,fonts_.mono,"THE YEAR ATLAS",64,92,19,quiet,Align::left,2);
-    ui::paragraph(overlay_,fonts_.semibold,"Find your place\nin the story.",60,167,42,548,51,ink);
-    const char*active_filter=active_filter_label();
-    ui::text(overlay_,fonts_.mono,"FILTER",64,250,15,quiet,Align::left,1.2f);
-    ui::text(overlay_,fonts_.semibold,active_filter,154,255,23,ink);
-    overlay_.push_clip({32,292,616,500});
+    ui::paragraph(overlay_,fonts_.semibold,"Find your place\nin the story.",60,167,42,612,51,ink);
+    overlay_.push_clip({32,292,680,500});
     const float centre=524;
     // A continuous measuring line bends gently around its selected year.
     float last_x=94,last_y=292;
@@ -247,24 +246,25 @@ void Screen::draw_year_guide(){
     }
     overlay_.pop_clip();
     if(!years_.empty()){
-        overlay_.line(64,815,612,815,1,ink.with_alpha(.15f));
+        overlay_.line(64,815,676,815,1,ink.with_alpha(.15f));
         ui::text(overlay_,fonts_.mono,"FIRST IN THIS YEAR",64,852,16,quiet,Align::left,1.2f);
         for(int n=std::max(0,int(std::floor(year_position_.value)));n<=std::min(int(years_.size())-1,int(std::ceil(year_position_.value)));++n){
             const float alpha=std::max(0.f,1-std::abs(float(n)-year_position_.value));
             const Entry*first=nullptr;if(history_focus_){for(const auto&e:history_catalog_.entries)if(e.year==years_[size_t(n)]){first=&e;break;}}else for(int id:visible_)if(catalog_.entries[size_t(id)].year==years_[size_t(n)]){first=&catalog_.entries[size_t(id)];break;}
-            if(first){overlay_.push_opacity(alpha);ui::paragraph(overlay_,fonts_.semibold,first->title,64,893+(1-alpha)*12,28,548,36,ink);overlay_.pop_opacity();}
+            if(first){overlay_.push_opacity(alpha);ui::paragraph(overlay_,fonts_.semibold,first->title,64,893+(1-alpha)*12,28,612,36,ink);overlay_.pop_opacity();}
         }
     }
     std::vector<ui::Hint> buttons={{ui::Button::square,"Experiences"},{ui::Button::touchpad,"Search"}};
     if(!history_focus_)buttons.push_back({ui::Button::triangle,"Filter"});
+    buttons.push_back({ui::Button::l2,"Decade",ui::Button::r2});
     ui::HintLayout l;l.cy=1014;l.size=25;l.text_size=16;l.item_gap=15;
     ui::draw_hints(overlay_,fonts_,ui::GlyphStyle::mono(ink,Color::rgb(0,0)),buttons.data(),int(buttons.size()),64,false,l);
     overlay_.pop_opacity();overlay_.pop_transform();overlay_.pop_clip();
     if(library>.001f){
         overlay_.push_opacity(library*amount);
-        overlay_.rounded_rect({768,180,1080,782},8,gfx::mix(paper,tone_,.06f));
-        draw_study_preview(overlay_,experience_focus_,{796,210,1024,518});
-        if(!study_catalog().empty()){const auto&selected=study_catalog()[size_t(std::clamp(experience_focus_,0,int(study_catalog().size())-1))];draw_study_controls(overlay_,fonts_,selected.id,{800,770,1000,170},ink,paper,true);}
+        overlay_.rounded_rect({792,142,1072,796},8,gfx::mix(paper,tone_,.06f));
+        draw_study_preview(overlay_,experience_focus_,{820,170,1016,566});
+        if(!study_catalog().empty()){const auto&selected=study_catalog()[size_t(std::clamp(experience_focus_,0,int(study_catalog().size())-1))];draw_study_controls(overlay_,fonts_,selected.id,{824,774,1008,140},ink,paper,true);}
         overlay_.pop_opacity();
     }
 }
@@ -436,7 +436,7 @@ void Screen::draw_onboarding(){
             }else{
                 connection_motion(cy);
                 if(c.state==media::State::loading)ui::text(welcome_,fonts_.regular,"Contacting YouTube…",cx,730,27,quiet,Align::center);
-                if(c.state==media::State::failed)ui::paragraph(welcome_,fonts_.regular,c.error,cx-320,710,23,640,33,quiet,4);
+                if(c.state==media::State::failed)ui::paragraph(welcome_,fonts_.regular,"Could not connect to YouTube. Please try again.",cx-320,710,23,640,33,quiet,4);
             }
         }
         std::vector<ui::Hint> commands;

@@ -10,6 +10,47 @@ namespace hui::ui
 
 namespace
 {
+ControlDevice active_device=ControlDevice::playstation;
+
+const char* keyboard_key(Button button){
+    switch(button){
+    case Button::cross:return "Enter";
+    case Button::circle:case Button::options:return "Esc";
+    case Button::square:return "Space";
+    case Button::triangle:return "R";
+    case Button::l1:return "Q";case Button::r1:return "E";
+    case Button::l2:return "Z";case Button::r2:return "C";
+    case Button::touchpad:return "Tab";
+    case Button::left_stick:return "WASD";
+    case Button::right_stick:return "IJKL";
+    default:return "";
+    }
+}
+
+float keyboard_width(Button button,float size){
+    if(button==Button::none)return 0;
+    if(button==Button::dpad)return size*1.8f;
+    const auto length=std::char_traits<char>::length(keyboard_key(button));
+    return size*(length>=5?2.3f:length>=4?2.f:length>=3?1.65f:1.f);
+}
+
+void keyboard_button(gfx::DrawList&list,const Fonts&fonts,const GlyphStyle&style,Button button,float x,float cy,float size){
+    const float width=keyboard_width(button,size),height=size*.82f;
+    if(button==Button::dpad){
+        // Four discrete arrow key caps, with vector arrows instead of words.
+        const float key=size*.43f,gap=size*.05f,left=x+(width-key*3-gap*2)*.5f;
+        for(int n=0;n<4;++n){
+            const float kx=left+(n==0?1:n==1?0:n==2?1:2)*(key+gap),ky=cy+(n==0?-.24f:.24f)*size;
+            list.bordered_rect({kx,ky-key*.5f,key,key},1,style.body,1,style.edge);
+            const float ax=kx+key*.5f,ay=ky,arm=key*.21f,stroke=std::max(1.f,size*.035f);
+            if(n==0||n==2){const float sign=n==0?-1.f:1.f;list.line(ax,ay-sign*arm,ax,ay+sign*arm,stroke,style.ink);list.line(ax-arm,ay,ax,ay+sign*arm,stroke,style.ink);list.line(ax+arm,ay,ax,ay+sign*arm,stroke,style.ink);}
+            else{const float sign=n==1?-1.f:1.f;list.line(ax-sign*arm,ay,ax+sign*arm,ay,stroke,style.ink);list.line(ax,ay-arm,ax+sign*arm,ay,stroke,style.ink);list.line(ax,ay+arm,ax+sign*arm,ay,stroke,style.ink);}
+        }
+        return;
+    }
+    list.bordered_rect({x,cy-height*.5f,width,height},2,style.body,1.2f,style.edge);
+    text(list,fonts.mono,keyboard_key(button),x+width*.5f,cy+size*.15f,size*.42f,style.ink,gfx::Align::center);
+}
 
 // DualSense face-button colours.
 const gfx::Color kCross = gfx::Color::rgb(0x7fa7ff);
@@ -86,6 +127,9 @@ void stick(gfx::DrawList &list, const Fonts &fonts, const GlyphStyle &style, con
 
 } // namespace
 
+void set_control_device(ControlDevice device){active_device=device;}
+ControlDevice control_device(){return active_device;}
+
 GlyphStyle GlyphStyle::dark()
 {
     return {gfx::Color::rgb(0x11131f, 0.92f), gfx::Color::rgb(0x6c7196, 0.9f),
@@ -105,6 +149,8 @@ GlyphStyle GlyphStyle::mono(gfx::Color ink, gfx::Color body)
 
 float button_width(Button button, float size)
 {
+    if(active_device==ControlDevice::keyboard_mouse)return keyboard_width(button,size);
+    if(active_device==ControlDevice::xbox&&(button==Button::touchpad||button==Button::options))return size;
     switch (button)
     {
     case Button::l1:
@@ -127,8 +173,32 @@ float button_width(Button button, float size)
 void draw_button(gfx::DrawList &list, const Fonts &fonts, const GlyphStyle &style, Button button,
                  float x, float cy, float size)
 {
+    if(button==Button::none)return;
+    if(active_device==ControlDevice::keyboard_mouse){keyboard_button(list,fonts,style,button,x,cy,size);return;}
     const float w = button_width(button, size);
     const float cx = x + w * 0.5f;
+    if(active_device==ControlDevice::xbox){
+        if(button==Button::cross||button==Button::circle||button==Button::square||button==Button::triangle){
+            list.circle(cx,cy,size*.5f,style.body);list.ring(cx,cy,size*.47f,1.4f,style.edge);
+            const char*letter=button==Button::cross?"A":button==Button::circle?"B":button==Button::square?"X":"Y";
+            label(list,fonts,style,letter,cx,cy,size*.57f);return;
+        }
+        if(button==Button::l1||button==Button::r1||button==Button::l2||button==Button::r2){
+            const bool bumper=button==Button::l1||button==Button::r1;const float h=size*(bumper?.72f:.94f);
+            list.bordered_rect({x,cy-h*.5f,w,h},size*.16f,style.body,1.4f,style.edge);
+            label(list,fonts,style,button==Button::l1?"LB":button==Button::r1?"RB":button==Button::l2?"LT":"RT",cx,cy,size*.40f);return;
+        }
+        if(button==Button::touchpad||button==Button::options){
+            list.circle(cx,cy,size*.5f,style.body);list.ring(cx,cy,size*.47f,1.3f,style.edge);
+            if(button==Button::options){for(int n=-1;n<=1;++n)list.line(cx-size*.22f,cy+n*size*.15f,cx+size*.22f,cy+n*size*.15f,size*.06f,style.ink);}
+            else{
+                list.bordered_rect({cx-size*.23f,cy-size*.18f,size*.33f,size*.26f},0,style.body,size*.055f,style.ink);
+                list.bordered_rect({cx-size*.06f,cy-size*.02f,size*.33f,size*.26f},0,style.body,size*.055f,style.ink);
+            }
+            return;
+        }
+        // Stick and directional-pad icons already depict the physical input.
+    }
     switch (button)
     {
     case Button::none:
@@ -215,8 +285,10 @@ namespace {
 std::string hint_label(const Hint&hint){
     const std::string_view source=hint.label?hint.label:"";
     std::string label(resolve_text(source));
-    if(hint.button==Button::dpad&&source.find("(D-pad")==std::string::npos)label+=resolve_text(" (D-pad)");
-    if(hint.name_control&&hint.button==Button::right_stick&&source.find("(Right stick)")==std::string::npos)label+=resolve_text(" (Right stick)");
+    if(active_device==ControlDevice::playstation){
+        if(hint.button==Button::dpad&&source.find("(D-pad")==std::string::npos)label+=resolve_text(" (D-pad)");
+        if(hint.name_control&&hint.button==Button::right_stick&&source.find("(Right stick)")==std::string::npos)label+=resolve_text(" (Right stick)");
+    }
     return label;
 }
 }

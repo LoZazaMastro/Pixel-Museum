@@ -52,6 +52,9 @@ struct Request
     // Streaming: each piece of the body as it arrives (a long poll), instead
     // of collecting it; returning false ends the transfer.
     std::function<bool(std::string_view)> on_body;
+    // Optional cooperative cancellation, also polled before response headers.
+    // The callback runs on the request worker and must not throw.
+    std::function<bool()> cancelled;
 };
 
 // Defined by the platform backend. Sets CURLOPT_NOSIGNAL / CAINFO / SO_NBIO

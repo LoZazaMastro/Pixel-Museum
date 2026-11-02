@@ -100,9 +100,9 @@ void Screen::draw_timeline(){
     std::vector<ui::Hint> controls;
     if(!history_focus_&&!e->models.empty())controls.push_back({ui::Button::square,"Inspect 3D"});
     else if(!e->images.empty())controls.push_back({ui::Button::square,"View image"});
-    controls.push_back({ui::Button::l1,"Decade",ui::Button::r1});
+    controls.push_back({ui::Button::l2,"Decade",ui::Button::r2});
     controls.push_back({ui::Button::triangle,active_filter()?"All":"Today"});
-    if(!history_focus_)controls.push_back({ui::Button::l2,"Filter",ui::Button::r2});
+    if(!history_focus_)controls.push_back({ui::Button::l1,"Filter",ui::Button::r1});
     controls.push_back({ui::Button::touchpad,"Guide"});
     if(history_focus_&&scroll_max_>0)controls.push_back({ui::Button::right_stick,"Read"});
     controls.push_back({ui::Button::options,"Options"});

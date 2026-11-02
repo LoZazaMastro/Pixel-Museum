@@ -31,6 +31,11 @@ enum class Button : std::uint8_t
     dpad,
     touchpad,
 };
+// Semantic controls retain one meaning while their pictograms follow the
+// actual input device. PS5 keeps the original PlayStation default.
+enum class ControlDevice : std::uint8_t { playstation, keyboard_mouse, xbox };
+void set_control_device(ControlDevice device);
+ControlDevice control_device();
 // Semantic tokens in complete localized sentences use these same vector glyphs.
 void install_inline_controls();
 

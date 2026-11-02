@@ -10,12 +10,43 @@
 #include <fcntl.h>
 #include <sys/stat.h>
 #include <unistd.h>
+#include <mutex>
+#include <algorithm>
+#if defined(_WIN32)
+#include <cstdio>
+#ifndef NOMINMAX
+#define NOMINMAX
+#endif
+#include <windows.h>
+#endif
 
 namespace hui::save
 {
 
 namespace
 {
+
+std::mutex overlay_mutex;
+std::map<std::string, std::string> read_overlay;
+std::string normalized_read_path(std::string value) {
+    std::replace(value.begin(), value.end(), '\\', '/');
+    std::string normalized;
+    normalized.reserve(value.size());
+    std::size_t at = 0;
+#if defined(_WIN32)
+    // Keep the UNC prefix distinct from a local rooted path.
+    if (value.size() > 1 && value[0] == '/' && value[1] == '/') {
+        normalized = "//";
+        at = 2;
+    }
+#endif
+    for (; at < value.size(); ++at) {
+        const char ch = value[at];
+        if (ch != '/' || normalized.empty() || normalized.back() != '/')
+            normalized.push_back(ch);
+    }
+    return normalized;
+}
 
 constexpr char kMagic[4] = {'H', 'U', 'I', 'L'};
 constexpr std::size_t kHeader = 12;
@@ -111,7 +142,11 @@ Decoded decode(Kind kind, std::string_view data)
 std::string write_atomic(const std::string &path, std::string_view data)
 {
     const std::string temporary = path + ".tmp";
-    const int fd = ::open(temporary.c_str(), O_WRONLY | O_CREAT | O_TRUNC, 0644);
+    int flags = O_WRONLY | O_CREAT | O_TRUNC;
+#if defined(_WIN32)
+    flags |= O_BINARY;
+#endif
+    const int fd = ::open(temporary.c_str(), flags, 0644);
     if (fd < 0)
         return errno_text("open");
     std::size_t written = 0;
@@ -141,6 +176,20 @@ std::string write_atomic(const std::string &path, std::string_view data)
         ::unlink(temporary.c_str());
         return errno_text("close");
     }
+#if defined(_WIN32)
+    const auto utf16=[](const std::string& value){
+        const int n=MultiByteToWideChar(CP_UTF8,MB_ERR_INVALID_CHARS,value.data(),int(value.size()),nullptr,0);
+        if(n<=0)return std::wstring();
+        std::wstring text(std::size_t(n),L'\0');
+        MultiByteToWideChar(CP_UTF8,MB_ERR_INVALID_CHARS,value.data(),int(value.size()),text.data(),n);
+        return text;
+    };
+    const auto from=utf16(temporary),to=utf16(path);
+    if(from.empty()||to.empty()||!MoveFileExW(from.c_str(),to.c_str(),MOVEFILE_REPLACE_EXISTING|MOVEFILE_WRITE_THROUGH)){
+        const auto code=GetLastError();::unlink(temporary.c_str());
+        return "atomic replacement: Windows error "+std::to_string(code);
+    }
+#else
     if (::rename(temporary.c_str(), path.c_str()) != 0)
     {
         // Some filesystems refuse to replace an existing file.
@@ -152,11 +201,56 @@ std::string write_atomic(const std::string &path, std::string_view data)
             return error;
         }
     }
+#endif
     return {};
 }
 
-bool read_file(const std::string &path, std::string *data, std::size_t max_bytes)
+void set_read_overlay(std::map<std::string, std::string> files) {
+    std::map<std::string, std::string> normalized;
+    for (auto& file : files)
+        normalized.emplace(normalized_read_path(file.first), std::move(file.second));
+    std::lock_guard<std::mutex> lock(overlay_mutex);
+    read_overlay = std::move(normalized);
+}
+
+std::string resolve_read_path(const std::string& path) {
+    std::lock_guard<std::mutex> lock(overlay_mutex);
+    const auto it = read_overlay.find(normalized_read_path(path));
+    return it == read_overlay.end() ? path : it->second;
+}
+
+bool read_file(const std::string &requested_path, std::string *data, std::size_t max_bytes)
 {
+    const std::string path = resolve_read_path(requested_path);
+#if defined(_WIN32)
+    // Explicit binary mode preserves asset bytes independently of the CRT's
+    // process default. Buffered reads avoid thousands of small descriptor
+    // reads for baked fonts and the catalogue on Windows file systems.
+    std::FILE *file = std::fopen(path.c_str(), "rb");
+    if (file == nullptr)
+        return false;
+    std::string buffer;
+    char chunk[64u << 10];
+    for (;;)
+    {
+        const std::size_t count = std::fread(chunk, 1, sizeof(chunk), file);
+        if (count > max_bytes - buffer.size())
+        {
+            std::fclose(file);
+            return false;
+        }
+        buffer.append(chunk, count);
+        if (count < sizeof(chunk))
+        {
+            const bool complete = std::feof(file) != 0 && std::ferror(file) == 0;
+            const int closed = std::fclose(file);
+            if (!complete || closed != 0)
+                return false;
+            *data = std::move(buffer);
+            return true;
+        }
+    }
+#else
     const int fd = ::open(path.c_str(), O_RDONLY);
     if (fd < 0)
         return false;
@@ -184,6 +278,7 @@ bool read_file(const std::string &path, std::string *data, std::size_t max_bytes
     ::close(fd);
     *data = std::move(buffer);
     return true;
+#endif
 }
 
 bool ensure_directory(const std::string &path)

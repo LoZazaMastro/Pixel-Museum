@@ -263,7 +263,7 @@ public:
         trace_time_+=dt;
         if(!grounded_&&trace_time_>=1.f/30){trace_time_=0;trail_[trace_head_]={p_,crossings_>0};trace_head_=(trace_head_+1)%unsigned(trail_.size());trace_count_=std::min(unsigned(trail_.size()),trace_count_+1);}
     }
-    const char*help()const override{return "Move, choose a marked surface with the right stick or touchpad, and place the two portals. Jump from solid ground. The dotted arc predicts the current route. Carry cubes with Triangle and leave them resting on pressure plates. In the final room connect the floor to the ceiling, fall once, then move the exit portal to the far floor and steer left onto the high ledge. Restart this chamber at any time.";}
+    const char*help()const override{return "Move, choose a marked surface with the {right_stick} or {touchpad}, and place the two portals. Jump from solid ground. The dotted arc predicts the current route. Carry cubes with {triangle} and leave them resting on pressure plates. In the final room connect the floor to the ceiling, fall once, then move the exit portal to the far floor and steer left onto the high ledge. Restart this chamber at any time.";}
     void draw(gfx::DrawList&d,ui::Fonts&f,Rect b,Color)override{
         const float scale=std::min(b.w/1000,b.h/600),ox=b.x+(b.w-1000*scale)/2,oy=b.y+(b.h-600*scale)/2;
         const Color paper=Color::rgb(0xf1efe7),quiet=Color::rgb(0x8a938c),base=Color::rgb(0x0d1310),blue=Color::rgb(0x7caeb8),orange=Color::rgb(0xc99370);
@@ -406,13 +406,13 @@ public:
     }
     const char*help()const override{
         static constexpr const char*text[]={
-            "Left / right: change angle. Up / down: change depth. X: test the joined silhouette. Square: reset.",
-            "Left / right: turn. Up / down: move. Find the three marks on the plan and compare the map with the corridor. Square: return to the entrance.",
-            "Left / right: orbit the camera. Up / down: change its height. X: frame the three markers. Square: reset.",
-            "D-pad: select a tile. X: change its height. Right stick: turn the composition. Square: reset.",
-            "Left stick / D-pad: roll. Collect objects smaller than you to change the scale. Square: reset.",
+            "Left / right: change angle. Up / down: change depth. {cross}: test the joined silhouette. {square}: reset.",
+            "Left / right: turn. Up / down: move. Find the three marks on the plan and compare the map with the corridor. {square}: return to the entrance.",
+            "Left / right: orbit the camera. Up / down: change its height. {cross}: frame the three markers. {square}: reset.",
+            "{dpad}: select a tile. {cross}: change its height. {right_stick}: turn the composition. {square}: reset.",
+            "{left_stick} / {dpad}: roll. Collect objects smaller than you to change the scale. {square}: reset.",
             "", // Portal has its own gravity simulation above.
-            "Left / right: move the light. X: change its height and shadow length. Square: reset."};return text[mode_];
+            "Left / right: move the light. {cross}: change its height and shadow length. {square}: reset."};return text[mode_];
     }
     void draw(gfx::DrawList&d,ui::Fonts&f,Rect b,Color accent)override{
         const float scale=std::min(b.w/1000,b.h/600),ox=b.x+(b.w-1000*scale)/2,oy=b.y+(b.h-600*scale)/2;

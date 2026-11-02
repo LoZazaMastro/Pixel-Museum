@@ -50,13 +50,17 @@ void Screen::draw_gallery(){
     const float labels=amount*std::clamp(gallery_labels_.value,0.f,1.f);
     media_layer_.push_opacity(labels);
     media_layer_.gradient_rect({0,0,1920,180},0,Color::rgb(0,.7f),Color::rgb(0,0));
+#if !defined(MUSEUM_DESKTOP)
     media_layer_.gradient_rect({0,860,1920,220},0,Color::rgb(0,0),Color::rgb(0,.8f));
+#endif
     if(const auto*e=current();e&&image_index_>=0&&image_index_<int(e->images.size())){
         ui::paragraph(media_layer_,fonts_.semibold,e->title,96,86,30,1600,38,paper);
     }
+#if !defined(MUSEUM_DESKTOP)
     ui::Hint h[]={{ui::Button::circle,"Back"},{ui::Button::l2,"Zoom",ui::Button::r2},{ui::Button::left_stick,"Pan"},{ui::Button::dpad,"Images"},{ui::Button::cross,"Fit / fill"}};
     ui::HintLayout l;l.cy=1014;l.size=30;l.text_size=22;l.item_gap=28;
     ui::draw_hints(media_layer_,fonts_,ui::GlyphStyle::mono(paper,Color::rgb(0,0)),h,5,96,false,l);
+#endif
     media_layer_.pop_opacity();
 }
 void Screen::draw_screening(){
@@ -157,6 +161,9 @@ void Screen::draw_screening(){
         fitted(screen,float(video_.width())/std::max(1,video_.height())),labels);
     media_layer_.push_opacity(labels);
     if(full>.001f){media_layer_.gradient_rect({0,0,1920,180},0,Color::rgb(0,.65f*full),Color::rgb(0,0));media_layer_.push_opacity(full);ui::paragraph(media_layer_,fonts_.semibold,v.title,96,90,32,1700,40,paper);media_layer_.pop_opacity();}
+#if defined(MUSEUM_DESKTOP)
+    if(full<.999f){
+#endif
     const float x=screen.x+30,y=screen.y+screen.h-48,w=screen.w-60;
     media_layer_.rounded_rect({x-15,y-34,w+30,70},0,Color::rgb(0,.5f));
     media_layer_.rounded_rect({x,y,w,2},0,paper.with_alpha(.25f));
@@ -166,14 +173,20 @@ void Screen::draw_screening(){
     ui::text(media_layer_,fonts_.mono,timer(ready?video_.time():-1)+" / "+timer(ready&&video_.duration()>0?video_.duration():-1),x,y+28,18,paper);
     char volume_status[128];ui::format(volume_status,video_.paused()?"Paused / Volume %d %%":"Volume %d %%",int(std::round(media_volume_*100)));
     ui::text(media_layer_,fonts_.regular,volume_status,x+w,y+28,18,paper,Align::right);
+#if defined(MUSEUM_DESKTOP)
+    }
+#endif
     media_layer_.pop_opacity();
+#if !defined(MUSEUM_DESKTOP)
     ui::Hint h[]={{ui::Button::cross,video_.paused()?"Play":"Pause"},{ui::Button::square,fullscreen_?"Return to frame":"Fullscreen"},{ui::Button::triangle,film_captions_enabled_?"Hide subtitles":"Show subtitles"},{ui::Button::dpad,"Seek 10 seconds"},{ui::Button::l2,"Volume",ui::Button::r2},{ui::Button::circle,"Back"}};
     ui::HintLayout l;l.cy=1014;l.size=28;l.text_size=20;l.item_gap=24;
     while(ui::measure_hints(fonts_,h,6,l)>1728.f&&l.text_size>14.f){l.size*=.97f;l.text_size*=.97f;l.item_gap*=.97f;}
     media_layer_.push_opacity(labels);
     media_layer_.push_opacity(1-full);ui::draw_hints(media_layer_,fonts_,ui::GlyphStyle::mono(colours().ink,Color::rgb(0,0)),h,6,96,false,l);media_layer_.pop_opacity();
     media_layer_.push_opacity(full);ui::draw_hints(media_layer_,fonts_,ui::GlyphStyle::mono(paper,Color::rgb(0,0)),h,6,96,false,l);media_layer_.pop_opacity();
-    media_layer_.pop_opacity();media_layer_.pop_opacity();
+    media_layer_.pop_opacity();
+#endif
+    media_layer_.pop_opacity();
 }
 void Screen::draw_object(){
     const float amount=std::clamp(object_open_.value,0.f,1.f);

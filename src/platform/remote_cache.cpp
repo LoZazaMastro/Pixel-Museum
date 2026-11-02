@@ -403,7 +403,7 @@ bool RemoteCache::images_from_package(const std::string&root,const std::string&c
     // Small, bundled additions can improve an existing collection without
     // replacing its immutable multi-gigabyte archives. Missing is compatible;
     // a present invalid registry must never silently select different artwork.
-    const auto supplements_path=root+"/content/collection-image-supplements.json";
+    const auto supplements_path=hui::save::resolve_read_path(root+"/content/collection-image-supplements.json");
     errno=0;
     FILE* supplements_file=std::fopen(supplements_path.c_str(),"rb");
     if(!supplements_file){if(errno!=ENOENT)return false;}
@@ -431,7 +431,7 @@ bool RemoteCache::images_from_package(const std::string&root,const std::string&c
                 if(part.empty()||part=="."||part=="..")return false;
                 if(end==std::string::npos)break;begin=end+1;
             }
-            const auto full=root+"/"+path;
+            const auto full=hui::save::resolve_read_path(root+"/"+path);
             const int fd=::open(full.c_str(),O_RDONLY|O_NOFOLLOW);if(fd<0)return false;
             struct stat file_info{};
             const bool valid=fstat(fd,&file_info)==0&&S_ISREG(file_info.st_mode)&&file_info.st_size>0&&

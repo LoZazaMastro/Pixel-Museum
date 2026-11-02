@@ -18,6 +18,9 @@
 #include "yt/watch.hpp"
 #include "yt/http.hpp"
 #include "yt/caption_metadata.hpp"
+#if defined(MUSEUM_WINDOWS)
+#include "platform/windows/youtube_resolver.hpp"
+#endif
 
 #include <pthread.h>
 
@@ -1504,17 +1507,32 @@ struct Service::Impl
                     (audio_format != nullptr && (audio_format->ciphered || audio_n)))
                 {
                     std::string cipher_error;
+                    bool external_transform = false;
                     if (!ensure_descrambler(info, &cipher_error) ||
                         ((video_n || audio_n) && !descrambler.can_transform_n()))
                     {
+#if defined(MUSEUM_WINDOWS)
+                        set_stage(generation, "Player compatibility");
+                        external_transform = hui::windows::transform_youtube_streams(
+                            install_root, info.player_js_url, *video_format, audio_format,
+                            [this, generation]() {
+                                std::lock_guard<std::mutex> lock(mutex);
+                                return quit || generation != video_generation;
+                            }, &video_url, &audio_url, &cipher_error);
+                        if (!external_transform)
+                        {
+#endif
                         if (cipher_error.empty()) cipher_error = "unsupported player n transform";
                         log::line("video: try %s player transform: %s", info.client.c_str(),
                                   cipher_error.c_str());
                         add_attempt(generation, info.client + ": " + cipher_error);
                         if (first_error.empty()) first_error = "player_transform: " + cipher_error;
                         break;
+#if defined(MUSEUM_WINDOWS)
+                        }
+#endif
                     }
-                    if (video_format->ciphered || video_n)
+                    if (!external_transform && (video_format->ciphered || video_n))
                     {
                         video_url = descrambler.descramble(video_format->url, video_format->cipher_s,
                                                          video_format->cipher_sp, &cipher_error);
@@ -1525,7 +1543,7 @@ struct Service::Impl
                             break;
                         }
                     }
-                    if (audio_format != nullptr && (audio_format->ciphered || audio_n))
+                    if (!external_transform && audio_format != nullptr && (audio_format->ciphered || audio_n))
                     {
                         audio_url = descrambler.descramble(audio_format->url, audio_format->cipher_s,
                                                          audio_format->cipher_sp, &cipher_error);

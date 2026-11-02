@@ -11,6 +11,7 @@
 // Callers own the worker thread, never the frame.
 
 #include "yt/http.hpp"
+#include "yt/http_curl_cancel.hpp"
 
 #include "console_curl.h"
 
@@ -96,9 +97,17 @@ const char *describe(CURLcode code)
         return "redirect";
     case CURLE_OUT_OF_MEMORY:
         return "memory";
+    case CURLE_ABORTED_BY_CALLBACK:
+        return "cancelled";
     default:
         return curl_easy_strerror(code);
     }
+}
+
+int on_progress(void *opaque, curl_off_t, curl_off_t, curl_off_t, curl_off_t)
+{
+    const auto &request = *static_cast<const Request *>(opaque);
+    return request.cancelled && request.cancelled() ? 1 : 0;
 }
 
 // Idle handles, with their connection caches. At most kPoolSize are kept;
@@ -200,6 +209,12 @@ Response perform(const Request &request)
     (void)curl_easy_setopt(handle, CURLOPT_ACCEPT_ENCODING, "");
     (void)curl_easy_setopt(handle, CURLOPT_WRITEFUNCTION, on_write);
     (void)curl_easy_setopt(handle, CURLOPT_WRITEDATA, &sink);
+    if (request.cancelled)
+    {
+        (void)curl_easy_setopt(handle, CURLOPT_XFERINFOFUNCTION, &on_progress);
+        (void)curl_easy_setopt(handle, CURLOPT_XFERINFODATA, &request);
+        (void)curl_easy_setopt(handle, CURLOPT_NOPROGRESS, 0L);
+    }
     if (headers != nullptr)
         (void)curl_easy_setopt(handle, CURLOPT_HTTPHEADER, headers);
 
@@ -211,7 +226,7 @@ Response perform(const Request &request)
                                static_cast<curl_off_t>(request.body.size()));
     }
 
-    const CURLcode code = curl_easy_perform(handle);
+    const CURLcode code = detail::perform_with_cancellation(handle, request);
 
     long status = 0;
     (void)curl_easy_getinfo(handle, CURLINFO_RESPONSE_CODE, &status);

@@ -17,6 +17,12 @@ public:
     virtual ~Study()=default;
     virtual void reset()=0;
     virtual void handle(const hui::InputFrame&,hui::ui::Feedback&)=0;
+#if defined(MUSEUM_DESKTOP)
+    // True identifies an actual pointer target so the screen can retain the
+    // study's right-click operation instead of interpreting it as Back.
+    virtual bool desktop_pointer(const hui::PointerInput&,hui::ui::Feedback&){return false;}
+    virtual bool desktop_pointer_interactive(float,float)const{return false;}
+#endif
     virtual void update(float dt)=0;
     // Draw within the supplied rectangle. Native vectors/original procedural
     // geometry only: these are illustrations, not emulated commercial games.

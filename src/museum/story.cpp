@@ -344,6 +344,13 @@ void Screen::draw_detail(){
             draw_study_preview(page_,c.study_index,{930,365,810,465});
             ui::text(page_,fonts_.regular,"Enter the experience",148,873,22,experience_palette.ink);
             if(active)scroll_max_=std::max(0.f,end-813);
+#if defined(MUSEUM_DESKTOP)
+            if(active&&scroll_max_>0){
+                const Rect track{878,body_top-27,6,860-body_top};const float thumb=std::min(track.h,std::max(32.f,track.h*track.h/(track.h+scroll_max_)));
+                page_.rounded_rect(track,3,experience_palette.muted.with_alpha(.22f));page_.rounded_rect({track.x,track.y+(track.h-thumb)*std::clamp(scroll/scroll_max_,0.f,1.f),track.w,thumb},3,experience_palette.ink.with_alpha(.65f));
+                desktop_add_scroll_area(DesktopScrollTarget::content,{144+x,body_top-27+rise,720,860-body_top},{track.x+x,track.y+rise,track.w,track.h},scroll_max_,scroll);
+            }
+#endif
         }else if(e->id.rfind("the-game-awards-",0)==0&&c.kind==StoryCard::narrative&&c.title.size()>=4&&c.title[0]=='2'&&std::isdigit(static_cast<unsigned char>(c.title[1]))&&std::isdigit(static_cast<unsigned char>(c.title[2]))&&std::isdigit(static_cast<unsigned char>(c.title[3]))){
             const std::string year=c.title.substr(0,4);
             char winners_heading[128];ui::format(winners_heading,"%s Winners",year.c_str());ui::text(page_,fonts_.display,winners_heading,144,418,62,ink);
@@ -355,6 +362,13 @@ void Screen::draw_detail(){
                 y=ui::paragraph(page_,fonts_.semibold,winner,148,category_end+15,27,720,39,ink)+38;
             }
             page_.pop_transform();page_.pop_clip();if(active)scroll_max_=std::max(0.f,y-830);
+#if defined(MUSEUM_DESKTOP)
+            if(active&&scroll_max_>0){
+                const Rect track{916,448,6,420};const float thumb=std::max(32.f,420.f*420.f/(420+scroll_max_));
+                page_.rounded_rect(track,3,quiet.with_alpha(.22f));page_.rounded_rect({track.x,track.y+(track.h-thumb)*std::clamp(scroll/scroll_max_,0.f,1.f),track.w,thumb},3,ink.with_alpha(.65f));
+                desktop_add_scroll_area(DesktopScrollTarget::content,{140+x,448+rise,760,420},{track.x+x,track.y+rise,track.w,track.h},scroll_max_,scroll);
+            }
+#endif
             int film=-1;for(size_t v=0;v<e->videos.size();++v)if(e->videos[v].title.rfind(year,0)==0){film=int(v);break;}
             const Rect frame{958,376,810,456};
             if(c.image>=0){const auto&i=e->images[size_t(c.image)];cache_.request(image_url(i));image(page_,i,frame,true);}
@@ -407,6 +421,9 @@ void Screen::draw_detail(){
                 const Rect track{tx+tw+14,top-28,6,height};
                 page_.rounded_rect(track,3,quiet.with_alpha(.22f));
                 page_.rounded_rect({track.x,track.y+(height-thumb)*position,track.w,thumb},3,ink.with_alpha(.65f));
+#if defined(MUSEUM_DESKTOP)
+                if(active)desktop_add_scroll_area(DesktopScrollTarget::content,{tx+x,top-28+rise,tw,height},{track.x+x,track.y+rise,track.w,track.h},extent,scroll);
+#endif
             }
             if(c.kind==StoryCard::film){
                 const Rect frame{media_box.x+30,media_box.y,974,548};

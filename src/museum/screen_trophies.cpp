@@ -19,7 +19,9 @@ void Screen::initialize_trophies(){
     trophies_->setEligibleCatalogSnapshot({unique.begin(),unique.end()});
     // The shell reads badges in its own namespace: /download0 belongs only
     // to this title and cannot be used as a system-notification image URL.
+#if !defined(MUSEUM_DESKTOP)
     trophy_notifications_.start("/data/homebrew/PPSA70421/assets/trophies/fronts");
+#endif
     trophy_pin_scene_.set_root(root_);
     set_trophy_pin_renderer([this](const TrophyView&v,int width,int height,float yaw,float pitch,float zoom,float pan_y){
         return trophy_pin_scene_.render(v.badge,v.unlocked||trophy_curator_preview_,width,height,yaw,pitch,zoom,pan_y);
@@ -28,9 +30,12 @@ void Screen::initialize_trophies(){
 
 void Screen::update_trophies(){
     if(!trophies_)return;
-    // User-requested system notifications only: never synthesize an in-app
-    // trophy toast or sound, including when the OS transport reports failure.
+#if !defined(MUSEUM_DESKTOP)
+    // PS5 uses its native system notification, without a duplicate app toast.
     trophy_fallback_queue_.clear();trophy_fallback_time_=0;trophy_fallback_sound_=false;
+#else
+    trophy_fallback_time_=std::max(0.f,trophy_fallback_time_-std::max(0.f,dt_));
+#endif
     const auto*entry=current();
     const bool browsing=!onboarding_&&!language_choice_&&!theme_choice_;
     if(browsing&&history_focus_&&entry)trophies_->cultureVisit(entry->id);
@@ -59,16 +64,28 @@ void Screen::update_trophies(){
     if(music)trophies_->musicProgress(session,trophy_media_played_,natural_short_end);
     else if(screening_)trophies_->videoProgress(session,trophy_media_played_,natural_short_end);
     for(const auto&unlock:trophies_->drainUnlocks()){
+#if defined(MUSEUM_DESKTOP)
+        trophy_fallback_queue_.push_back(unlock);
+#else
         // Request only the PS5 system toast for each persisted unlock.
         // API acceptance cannot prove actual shell display or sound.
         constexpr bool submit_optional_native_trophy=true;
         const std::string directory="/data/homebrew/PPSA70421/assets/trophies/fronts";
         const std::string icon=directory+"/"+unlock.badge+".png";
         if(submit_optional_native_trophy)trophy_notifications_.submit(unlock,icon);
+#endif
     }
+#if defined(MUSEUM_DESKTOP)
+    if(trophy_fallback_time_<=0&&!trophy_fallback_queue_.empty()){
+        trophy_fallback_current_=std::move(trophy_fallback_queue_.front());
+        trophy_fallback_queue_.erase(trophy_fallback_queue_.begin());
+        trophy_fallback_time_=5.f;trophy_fallback_sound_=true;
+    }
+#else
     for(const auto&fallback:trophy_notifications_.pollFallback()){
         hui::sys::log("[Museum] trophy %s: %s",fallback.unlock.id.c_str(),fallback.reason.c_str());
         // Failure is diagnostic only; no replacement overlay or app sound.
     }
+#endif
 }
 }

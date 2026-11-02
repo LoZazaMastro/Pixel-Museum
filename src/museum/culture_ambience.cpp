@@ -70,7 +70,7 @@ bool CultureAmbience::load(const std::string&path){
     // Local PCM is valid for both archival speech and music. A bad record
     // never disables unrelated recordings, including streamed cues.
     if(loaded.size()>=4)return "more than four local recordings";
-    pcm=read_pcm(app_root+"/"+c.local_audio_path);if(!pcm)return "local WAV missing, invalid or exceeds 20 MiB (48 kHz stereo PCM16 required)";
+    pcm=read_pcm(hui::save::resolve_read_path(app_root+"/"+c.local_audio_path));if(!pcm)return "local WAV missing, invalid or exceeds 20 MiB (48 kHz stereo PCM16 required)";
     const double duration=double(pcm->samples.size()/2)/48000.;
     if(c.start!=0||std::abs(c.end-duration)>.002)return "local range does not match WAV duration";
     if(retained+pcm->samples.size()*2>(80u<<20))return "retained PCM exceeds 80 MiB";
