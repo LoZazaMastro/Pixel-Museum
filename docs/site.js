@@ -112,8 +112,13 @@ selectWay(2);
 // One crisp pixel follows fine pointers; clickable controls light it up.
 if(matchMedia('(hover:hover) and (pointer:fine)').matches){
  const cursor=document.createElement('div');cursor.className='pixel-pointer';cursor.setAttribute('aria-hidden','true');document.body.append(cursor);
- const clickable='a[href],button,summary,[role="button"],input,select,textarea';
- document.addEventListener('pointermove',e=>{if(e.pointerType==='touch')return;cursor.style.left=e.clientX+'px';cursor.style.top=e.clientY+'px';cursor.classList.add('visible');cursor.classList.toggle('clickable',!!document.elementFromPoint(e.clientX,e.clientY)?.closest(clickable));document.documentElement.classList.add('pixel-pointer-active')},{passive:true,capture:true});
+ const clickable='a[href]:not([aria-disabled="true"]),button:not(:disabled),summary,[role="button"]:not([aria-disabled="true"]),input:not(:disabled),select:not(:disabled),textarea:not(:disabled)';
+ let pointerX=0,pointerY=0;
+ // A body child cannot paint above a native modal's top layer. Keep the same
+ // viewport-fixed pixel inside the active dialog, including over its backdrop.
+ const syncCursorLayer=()=>{const layer=document.querySelector('dialog[open]')||document.body;if(cursor.parentElement!==layer)layer.append(cursor);cursor.classList.toggle('clickable',!!document.elementFromPoint(pointerX,pointerY)?.closest(clickable))};
+ new MutationObserver(syncCursorLayer).observe(document.body,{subtree:true,attributes:true,attributeFilter:['open']});
+ document.addEventListener('pointermove',e=>{if(e.pointerType==='touch')return;pointerX=e.clientX;pointerY=e.clientY;cursor.style.left=pointerX+'px';cursor.style.top=pointerY+'px';syncCursorLayer();cursor.classList.add('visible');document.documentElement.classList.add('pixel-pointer-active')},{passive:true,capture:true});
  document.addEventListener('pointerout',e=>{if(!e.relatedTarget){cursor.classList.remove('visible');document.documentElement.classList.remove('pixel-pointer-active')}});
  window.addEventListener('blur',()=>{cursor.classList.remove('visible');document.documentElement.classList.remove('pixel-pointer-active')});
 }
@@ -144,21 +149,43 @@ setInterval(()=>{if(document.hidden||motion.matches)return;shadows[shadowIndex]?
 const flightPreview=document.querySelector('.flight-preview');
 if(flightPreview){let visible=false;const syncFlight=()=>{if(visible&&!document.hidden&&!motion.matches)flightPreview.play().catch(()=>{});else flightPreview.pause()};new IntersectionObserver(entries=>{visible=entries[0].isIntersecting;syncFlight()},{threshold:.15}).observe(flightPreview);document.addEventListener('visibilitychange',syncFlight);motion.addEventListener('change',syncFlight)}
 
-// Start quietly; play only while the teaser is visible and the page is active.
+// The official YouTube player starts silently and loops the selected trailer.
 (() => {
-  const video = document.querySelector('#museum-teaser');
-  if (!video) return;
-  let inView = false;
-  video.defaultMuted = true;
-  video.muted = true;
-  const updatePlayback = () => {
-    if (inView && !document.hidden) video.play().catch(() => {});
-    else video.pause();
+  const frame = document.querySelector('#museum-teaser');
+  const sound = document.querySelector('.trailer-sound');
+  if (!frame || !sound) return;
+  const source = new URL(frame.src);
+  if (source.searchParams.get('origin') !== location.origin) {
+    source.searchParams.set('origin', location.origin);
+    frame.src = source.href;
+  }
+  let player,ready=false,soundOn=false;
+  const updateSound=()=>{
+    sound.setAttribute('aria-pressed',String(soundOn));
+    sound.setAttribute('aria-label',soundOn?'Turn sound off':'Turn sound on');
   };
-  const observer = new IntersectionObserver(([entry]) => {
-    inView = entry.isIntersecting;
-    updatePlayback();
-  }, { threshold: 0 });
-  observer.observe(video);
-  document.addEventListener('visibilitychange', updatePlayback);
+  sound.addEventListener('click',()=>{
+    if(!ready)return;
+    soundOn=!soundOn;
+    if(soundOn)player.unMute();else player.mute();
+    updateSound();
+  });
+  const createPlayer=()=>{
+    if(player||!window.YT?.Player)return;
+    player=new YT.Player(frame,{events:{onReady:event=>{
+      player=event.target;ready=true;player.mute();soundOn=false;
+      sound.disabled=false;updateSound();
+      if(document.hidden)player.pauseVideo();else player.playVideo();
+    }}});
+  };
+  const previousReady=window.onYouTubeIframeAPIReady;
+  window.onYouTubeIframeAPIReady=()=>{if(typeof previousReady==='function')previousReady();createPlayer()};
+  if(window.YT?.Player)createPlayer();
+  else if(!document.querySelector('script[src="https://www.youtube.com/iframe_api"]')){
+    const api=document.createElement('script');api.src='https://www.youtube.com/iframe_api';api.async=true;document.head.append(api);
+  }
+  document.addEventListener('visibilitychange',()=>{
+    if(!ready)return;
+    if(document.hidden)player.pauseVideo();else player.playVideo();
+  });
 })();

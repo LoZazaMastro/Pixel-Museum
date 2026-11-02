@@ -1,7 +1,7 @@
 /* Pixel Museum platform chooser, sharing the museum's existing light/dark palette. */
 .download-dialog{box-sizing:border-box;width:min(620px,calc(100% - 32px));max-height:calc(100dvh - 40px);margin:auto;padding:36px;border:1px solid var(--line,#ccd1c6);background:#f4f2eb;color:#202521;overflow-y:auto;box-shadow:0 24px 100px #0003}
 .download-dialog::backdrop{background:#10181599;backdrop-filter:blur(8px)}
-.download-dialog[open]{animation:download-enter .32s cubic-bezier(.2,.8,.2,1)}
+.download-dialog[open]>:not(.pixel-pointer){animation:download-enter .32s cubic-bezier(.2,.8,.2,1)}
 .download-dialog-heading{display:flex;align-items:center;justify-content:space-between;margin-bottom:32px}
 .download-mark{width:34px;height:34px;fill:currentColor;shape-rendering:crispEdges}
 .download-close{display:grid;place-items:center;width:40px;height:40px;border:1px solid #20252130;background:transparent;color:inherit;transition:background .2s}
@@ -30,4 +30,4 @@ html[data-theme=dark] .download-dialog #download-intro,html[data-theme=dark] .pl
 html[data-theme=dark] .platform-install-note strong{color:#f4f2eb}
 @keyframes download-enter{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
 @media(max-width:420px){.download-dialog{padding:24px}.download-platforms{gap:10px}.platform-choice{padding:18px;min-height:164px}.platform-name{font-size:20px}}
-@media(prefers-reduced-motion:reduce){.download-dialog[open]{animation:none}.platform-choice{transition:none}}
+@media(prefers-reduced-motion:reduce){.download-dialog[open]>:not(.pixel-pointer){animation:none}.platform-choice{transition:none}}
