@@ -2,8 +2,81 @@
   "schema_version": 1,
   "database_id": "pixel-museum",
   "minimum_reader": 1,
-  "revision": 1,
-  "version": "2026.11.02",
-  "notes": {},
-  "files": []
+  "revision": 2,
+  "version": "2026.11.02.2",
+  "notes": {
+    "en": "Discover Google Stadia in six illustrated chapters, from its 2019 launch to the service's closure in 2023, with original narratives in five languages. GTA VI's duplicate soundtrack grouping has been removed while preserving every distinct recording already available.",
+    "it": "Scopri Google Stadia in sei capitoli illustrati, dal lancio del 2019 alla chiusura del servizio nel 2023, con testi originali in cinque lingue. Eliminato il raggruppamento duplicato nella colonna sonora di GTA VI, conservando tutte le registrazioni distinte già disponibili.",
+    "es": "Descubre Google Stadia en seis capítulos ilustrados, desde su lanzamiento en 2019 hasta el cierre del servicio en 2023, con textos originales en cinco idiomas. Se ha eliminado la agrupación duplicada de la banda sonora de GTA VI, conservando todas las grabaciones distintas que ya estaban disponibles.",
+    "fr": "Découvrez Google Stadia en six chapitres illustrés, de son lancement en 2019 à la fermeture du service en 2023, avec des textes originaux en cinq langues. Le regroupement en double de la bande originale de GTA VI a été supprimé, en conservant tous les enregistrements distincts déjà disponibles.",
+    "de": "Entdecke Google Stadia in sechs bebilderten Kapiteln, vom Start 2019 bis zur Einstellung des Dienstes 2023, mit Originaltexten in fünf Sprachen. Die doppelte Soundtrack-Gruppierung von GTA VI wurde entfernt; alle bisher verfügbaren unterschiedlichen Aufnahmen bleiben erhalten."
+  },
+  "files": [
+    {
+      "path": "content/catalog.json",
+      "url": "https://github.com/LoZazaMastro/Pixel-Museum/releases/download/database-2026.11.02-r2/database-2-14723db1f5c9d4b25d8fbae2f2f328da521c8ebf0fb218bd48bbde508e82f2cc.json",
+      "sha256": "14723db1f5c9d4b25d8fbae2f2f328da521c8ebf0fb218bd48bbde508e82f2cc",
+      "bytes": 39468908
+    },
+    {
+      "path": "content/collection-image-supplements.json",
+      "url": "https://github.com/LoZazaMastro/Pixel-Museum/releases/download/database-2026.11.02-r2/database-2-b268c669d549982c7e719d079b02831e76b4162e9bb520bfd9092ece9c5be40a.json",
+      "sha256": "b268c669d549982c7e719d079b02831e76b4162e9bb520bfd9092ece9c5be40a",
+      "bytes": 118767
+    },
+    {
+      "path": "content/locales/en.json",
+      "url": "https://github.com/LoZazaMastro/Pixel-Museum/releases/download/database-2026.11.02-r2/database-2-4475fda8667f52dcd6ad83f64842c347d492ff4dc542de503f63a2ea0dd11531.json",
+      "sha256": "4475fda8667f52dcd6ad83f64842c347d492ff4dc542de503f63a2ea0dd11531",
+      "bytes": 4802
+    },
+    {
+      "path": "content/locales/it.json",
+      "url": "https://github.com/LoZazaMastro/Pixel-Museum/releases/download/database-2026.11.02-r2/database-2-652ecc58c9e16e1c1b9f46c1380ae1b34b81c160552211d57a531f378dbbe669.json",
+      "sha256": "652ecc58c9e16e1c1b9f46c1380ae1b34b81c160552211d57a531f378dbbe669",
+      "bytes": 6842740
+    },
+    {
+      "path": "content/locales/es.json",
+      "url": "https://github.com/LoZazaMastro/Pixel-Museum/releases/download/database-2026.11.02-r2/database-2-8fec7511c8e88f5a9cb5f26dd25c1d48df5398d5fd26fb38105babcbd87ec75e.json",
+      "sha256": "8fec7511c8e88f5a9cb5f26dd25c1d48df5398d5fd26fb38105babcbd87ec75e",
+      "bytes": 6791108
+    },
+    {
+      "path": "content/locales/fr.json",
+      "url": "https://github.com/LoZazaMastro/Pixel-Museum/releases/download/database-2026.11.02-r2/database-2-c0144ed01ac3dcc79a53150772e89c565557d5a76c3e997f7a10529fa4ec2d47.json",
+      "sha256": "c0144ed01ac3dcc79a53150772e89c565557d5a76c3e997f7a10529fa4ec2d47",
+      "bytes": 6999655
+    },
+    {
+      "path": "content/locales/de.json",
+      "url": "https://github.com/LoZazaMastro/Pixel-Museum/releases/download/database-2026.11.02-r2/database-2-2d78f6636b517933bc9b9c8c58a00d481a6cebf23aafdd729057a941ad65d606.json",
+      "sha256": "2d78f6636b517933bc9b9c8c58a00d481a6cebf23aafdd729057a941ad65d606",
+      "bytes": 6967001
+    },
+    {
+      "path": "assets/image-supplements/2628f1eef40434ecf42022d73dc644684ad21778293fb80ebc1b638aafdf2bae.png",
+      "url": "https://github.com/LoZazaMastro/Pixel-Museum/releases/download/database-2026.11.02-r2/database-2-2628f1eef40434ecf42022d73dc644684ad21778293fb80ebc1b638aafdf2bae.png",
+      "sha256": "2628f1eef40434ecf42022d73dc644684ad21778293fb80ebc1b638aafdf2bae",
+      "bytes": 2131573
+    },
+    {
+      "path": "assets/image-supplements/b57af34b9fee13fc7ac49d26b3810281e808d372e7fdd362325454ba709d8d1f.png",
+      "url": "https://github.com/LoZazaMastro/Pixel-Museum/releases/download/database-2026.11.02-r2/database-2-b57af34b9fee13fc7ac49d26b3810281e808d372e7fdd362325454ba709d8d1f.png",
+      "sha256": "b57af34b9fee13fc7ac49d26b3810281e808d372e7fdd362325454ba709d8d1f",
+      "bytes": 255593
+    },
+    {
+      "path": "assets/image-supplements/b9e6a4623e9ef7ad5379b213f9ccba6a057d6281b0d8e6986d93e754317ce8a0.png",
+      "url": "https://github.com/LoZazaMastro/Pixel-Museum/releases/download/database-2026.11.02-r2/database-2-b9e6a4623e9ef7ad5379b213f9ccba6a057d6281b0d8e6986d93e754317ce8a0.png",
+      "sha256": "b9e6a4623e9ef7ad5379b213f9ccba6a057d6281b0d8e6986d93e754317ce8a0",
+      "bytes": 494493
+    },
+    {
+      "path": "assets/image-supplements/e5bf3fd39e589f1a18d4cb53ab071ccaf760314083c745c6de359f5f1f244b2d.png",
+      "url": "https://github.com/LoZazaMastro/Pixel-Museum/releases/download/database-2026.11.02-r2/database-2-e5bf3fd39e589f1a18d4cb53ab071ccaf760314083c745c6de359f5f1f244b2d.png",
+      "sha256": "e5bf3fd39e589f1a18d4cb53ab071ccaf760314083c745c6de359f5f1f244b2d",
+      "bytes": 1750629
+    }
+  ]
 }
