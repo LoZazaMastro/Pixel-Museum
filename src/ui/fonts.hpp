@@ -20,7 +20,20 @@ namespace hui::ui
 
 using TextResolver = std::string_view (*)(std::string_view);
 inline TextResolver text_resolver=nullptr;
-inline std::string_view resolve_text(std::string_view value){return text_resolver?text_resolver(value):value;}
+// User-entered values and external titles are data, even when they happen to
+// equal an interface key such as "Play". Keep their measurement and drawing
+// literal without changing the resolver used by the rest of the interface.
+inline thread_local unsigned literal_text_depth=0;
+class LiteralTextScope {
+  public:
+    explicit LiteralTextScope(bool enabled=true):enabled_(enabled){if(enabled_)++literal_text_depth;}
+    ~LiteralTextScope(){if(enabled_)--literal_text_depth;}
+    LiteralTextScope(const LiteralTextScope&)=delete;
+    LiteralTextScope& operator=(const LiteralTextScope&)=delete;
+  private:
+    bool enabled_;
+};
+inline std::string_view resolve_text(std::string_view value){return !literal_text_depth&&text_resolver?text_resolver(value):value;}
 struct FontRef;
 struct InlineTextRenderer{
     float (*measure)(const FontRef&,std::string_view,float,float)=nullptr;
@@ -47,7 +60,7 @@ struct FontRef
     float measure(std::string_view text, float size, float tracking = 0.0f) const
     {
         const auto translated=resolve_text(text);
-        return inline_text_renderer.measure&&translated.find('{')!=std::string_view::npos?inline_text_renderer.measure(*this,translated,size,tracking):font->measure(translated,size,tracking);
+        return !literal_text_depth&&inline_text_renderer.measure&&translated.find('{')!=std::string_view::npos?inline_text_renderer.measure(*this,translated,size,tracking):font->measure(translated,size,tracking);
     }
 };
 
@@ -68,7 +81,7 @@ inline float text(gfx::DrawList &list, const FontRef &font, std::string_view val
                   float tracking = 0.0f)
 {
     const auto translated=resolve_text(value);
-    if(inline_text_renderer.draw&&translated.find('{')!=std::string_view::npos)return inline_text_renderer.draw(list,font,translated,x,baseline,size,color,align,tracking);
+    if(!literal_text_depth&&inline_text_renderer.draw&&translated.find('{')!=std::string_view::npos)return inline_text_renderer.draw(list,font,translated,x,baseline,size,color,align,tracking);
     return list.text(*font.font, font.texture, translated, x, baseline, size, color, align, tracking);
 }
 
@@ -99,7 +112,7 @@ inline ParagraphLines paragraph_lines(const FontRef &font, std::string_view valu
 {
     ParagraphLines result;
     const auto translated=resolve_text(value);
-    result.lines = inline_text_renderer.wrap&&translated.find('{')!=std::string_view::npos?inline_text_renderer.wrap(font,translated,size,width):font.font->wrap(translated,size,width);
+    result.lines = !literal_text_depth&&inline_text_renderer.wrap&&translated.find('{')!=std::string_view::npos?inline_text_renderer.wrap(font,translated,size,width):font.font->wrap(translated,size,width);
     const std::size_t cap = static_cast<std::size_t>(std::max(max_lines, 1));
     if (result.lines.size() > cap)
     {

@@ -44,14 +44,6 @@ void drop_last(std::string &text)
         text.pop_back();
 }
 
-void drop_first(std::string &text)
-{
-    std::size_t next = 1;
-    while (next < text.size() && continuation(text[next]))
-        ++next;
-    text.erase(0, next);
-}
-
 // The first code point of a UTF-8 string (0 when it is empty or malformed).
 std::uint32_t first_codepoint(std::string_view text)
 {
@@ -103,14 +95,24 @@ void TextField::set_error(std::string error)
 
 void TextField::set_text(std::string_view text)
 {
+    // The caller may pass a view into the field itself.
+    const std::string value(text);
     text_.clear();
-    insert(text);
+    insert(value);
+    caret_ = text_.size();
     blink_ = 0.0f;
 }
 
 int TextField::length() const
 {
     return characters(text_);
+}
+
+void TextField::set_caret(std::size_t byte_offset)
+{
+    const auto next=text_entry::boundary(text_,byte_offset);
+    if(next!=caret_)blink_=0.0f;
+    caret_=next;
 }
 
 bool TextField::insert(char c)
@@ -120,6 +122,7 @@ bool TextField::insert(char c)
     if (c < 0x20 || c == 0x7f || full())
         return false;
     text_.push_back(c);
+    caret_ = text_.size();
     blink_ = 0.0f;
     return true;
 }
@@ -141,7 +144,10 @@ bool TextField::insert(std::string_view utf8)
         at = next;
     }
     if (changed)
+    {
+        caret_ = text_.size();
         blink_ = 0.0f;
+    }
     return changed;
 }
 
@@ -150,6 +156,7 @@ bool TextField::backspace()
     if (text_.empty())
         return false;
     drop_last(text_);
+    caret_ = text_.size();
     blink_ = 0.0f;
     return true;
 }
@@ -157,6 +164,7 @@ bool TextField::backspace()
 void TextField::clear()
 {
     text_.clear();
+    caret_ = visible_begin_ = 0;
     blink_ = 0.0f;
 }
 
@@ -236,20 +244,22 @@ void TextField::update(float dt)
     press_.update(dt, 10.0f);
 }
 
-// The text as the field shows it: masked when it is a password, and cut from
-// the front when it is longer than the field, so the caret stays in sight.
-std::string TextField::shown(const Painter &paint, float room, std::string_view mask) const
+// Preserve a stable visible window, scrolling only to keep the caret in sight.
+text_entry::Layout TextField::shown(const Painter &paint, float room, std::string_view mask) const
 {
-    std::string display = text_;
-    if (style.password)
-    {
-        display.clear();
-        for (int i = 0, count = length(); i < count; ++i)
-            display += mask;
-    }
-    while (!display.empty() && paint.body_width(display, kTextSize) > room)
-        drop_first(display);
+    const auto display=text_entry::layout(text_,caret_,visible_begin_,room,style.password?mask:std::string_view{},
+        [&](std::string_view value){return paint.body_width(value,kTextSize);});
+    visible_begin_=display.begin;
     return display;
+}
+
+std::size_t TextField::caret_from_x(const Painter &paint,float screen_x) const
+{
+    LiteralTextScope literal(style.literal_value);
+    const auto field=field_rect();const bool line=style.theme.underline_fields;
+    const auto visible=shown(paint,field.w-(line?14.f:46.f),displayed_mask_);
+    return text_entry::pick(text_,visible,screen_x-field.x-(line?5.f:23.f),style.password?std::string_view(displayed_mask_):std::string_view{},
+        [&](std::string_view value){return paint.body_width(value,kTextSize);});
 }
 
 void TextField::draw(Canvas &canvas) const
@@ -289,7 +299,6 @@ void TextField::draw(Canvas &canvas) const
     // The mask falls back to an asterisk in faces that have no bullet.
     const gfx::Font *face = body_face(canvas.fonts, theme);
     const bool has_mask = face != nullptr && face->has_glyph(first_codepoint(style.mask));
-    const std::string value = shown(paint, room, has_mask ? std::string_view(style.mask) : "*");
     const bool lit = style.caret_period <= 0.0f || style.reduced_motion ||
                      std::fmod(blink_, style.caret_period) < style.caret_period * 0.5f;
     Look look;
@@ -301,7 +310,12 @@ void TextField::draw(Canvas &canvas) const
         focus_frame(canvas, theme, field, std::min(theme.radius, 12.0f), focus, true);
         look.focus = 0.0f;
     }
-    paint.field(field, value, active_ && !disabled_ && lit, look);
+    {
+        LiteralTextScope literal(style.literal_value);
+        displayed_mask_ = has_mask ? style.mask : "*";
+        const auto visible=shown(paint,room,displayed_mask_);
+        paint.field(field,visible.value,active_&&!disabled_&&lit,look,visible.caret_offset);
+    }
 
     if (text_.empty() && !placeholder_.empty())
     {

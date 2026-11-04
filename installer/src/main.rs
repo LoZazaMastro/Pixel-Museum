@@ -147,6 +147,22 @@ fn run() -> Result<()> {
             .as_ref()
             .context("--headless requires --install-dir")?;
         if !opts.portable {
+            // Match the graphical wizard: an existing managed installation is
+            // updated transactionally, without reinstalling the collection.
+            if destination.join("application-files.json").is_file() {
+                return engine::upgrade_registered(
+                    &release,
+                    destination,
+                    opts.language.as_deref().unwrap_or("en"),
+                    &engine::InstallControl::default(),
+                    |event| {
+                        println!(
+                            "{:?} {} {}/{}",
+                            event.phase, event.package, event.done, event.total
+                        )
+                    },
+                );
+            }
             return engine::install_registered(
                 &release,
                 destination,

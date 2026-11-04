@@ -385,6 +385,12 @@ void Screen::handle(const InputFrame&raw,ui::Feedback&f){
         }
         using audio::Tactile;
         if(previous_history!=history_focus_){f.timeline_route(history_focus_);return;}
+#if defined(MUSEUM_DESKTOP)
+        // Loading a new entry can reset its reading position or object pose.
+        // That state reset must not replace an accepted PC navigation detent
+        // with a weaker scroll/rotation texture on alternating entries.
+        if(std::any_of(f.tactile.begin(),f.tactile.end(),[](const auto&event){return event.pattern==Tactile::timeline_step;}))return;
+#endif
         // Moving to a new card resets the reading position. That reset is
         // not a scroll gesture and must not replace its directional detent.
         if(detail_&&previous_story_focus!=story_focus_)return;
@@ -1119,7 +1125,7 @@ void Screen::draw_preferences(){
 #if defined(MUSEUM_DESKTOP)
     ui::text(overlay_,fonts_.mono,std::string("PIXEL MUSEUM / ")+ApplicationUpdater::bundled_version,x+65,959,18,muted,Align::left,1.5f);
 #else
-    ui::text(overlay_,fonts_.mono,"PIXEL MUSEUM / 0.1.7",x+65,959,18,muted,Align::left,1.5f);
+    ui::text(overlay_,fonts_.mono,"PIXEL MUSEUM / 0.1.8",x+65,959,18,muted,Align::left,1.5f);
 #endif
 }
 

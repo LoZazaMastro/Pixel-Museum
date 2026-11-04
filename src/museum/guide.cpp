@@ -24,6 +24,11 @@ void Screen::open_search(ui::Feedback&feedback){
     search_prompt_.set_title("Search the museum");search_prompt_.field.set_placeholder("A game, a person, an invention...");
     search_prompt_.keyboard.style.bindings=ui::KeyboardBindings::standard();search_prompt_.keyboard.style.bindings.done=Action::menu;
     search_prompt_.open(feedback,search_query_);
+#if defined(MUSEUM_DESKTOP)
+    desktop_search_observed_=search_prompt_.text();
+    desktop_search_caret_=desktop_search_observed_.size();desktop_search_selection_=false;
+    search_prompt_.field.set_caret(desktop_search_caret_);
+#endif
 }
 bool Screen::handle_search(const InputFrame&i,ui::Feedback&feedback){
     if(search_prompt_.is_open()){
@@ -57,19 +62,19 @@ void Screen::draw_search(){
     logo(overlay_,96,66,34,palette.ink);ui::text(overlay_,fonts_.semibold,"PIXEL MUSEUM",150,93,22,palette.ink,Align::left,2);
     ui::text(overlay_,fonts_.mono,"SEARCH",100,180,18,palette.muted,Align::left,2);
     float size=56;while(size>28&&fonts_.display.font->measure(search_query_,size)>1660)size-=1;
-    ui::text(overlay_,fonts_.display,search_query_,96,252,size,palette.ink);
+    {const ui::LiteralTextScope literal;ui::text(overlay_,fonts_.display,search_query_,96,252,size,palette.ink);}
     overlay_.line(96,292,1824,292,1,palette.ink.with_alpha(.15f));
     const float first=std::max(0.f,search_position_.value-3.f);
     overlay_.push_clip({96,312,1728,625});
     for(int n=std::max(0,int(first)-1);n<std::min(int(search_results_.size()),int(first)+9);++n){
-        const auto&r=search_results_[size_t(n)];const auto&e=(r.culture?history_catalog_:catalog_).entries[size_t(r.index)];
+        const auto&r=search_results_[size_t(n)];const auto&e=(r.culture?history_catalog_all_:catalog_).entries[size_t(r.index)];
         const float y=322+(float(n)-first)*86,focus=std::max(0.f,1-std::abs(float(n)-search_position_.value));
         const auto accent=Color::rgb(r.culture?0x91c9e8:0xefaa7d);
         overlay_.rounded_rect({96,y,1728,78},5,palette.ink.with_alpha(.055f*focus));
         overlay_.rounded_rect({116,y+17,5,44},1,accent.with_alpha(.75f+.25f*focus));
         ui::text(overlay_,fonts_.mono,std::to_string(e.year),152,y+49,27,palette.muted);
         float title_size=29;while(title_size>18&&fonts_.semibold.font->measure(e.title,title_size)>1220)title_size-=1;
-        ui::text(overlay_,fonts_.semibold,e.title,268,y+49,title_size,palette.ink.with_alpha(.58f+.42f*focus));
+        {const ui::LiteralTextScope literal;ui::text(overlay_,fonts_.semibold,e.title,268,y+49,title_size,palette.ink.with_alpha(.58f+.42f*focus));}
         ui::text(overlay_,fonts_.mono,date_label(e,false),1798,y+47,17,palette.muted,Align::right);
         overlay_.line(152,y+78,1824,y+78,1,palette.ink.with_alpha(.07f));
     }

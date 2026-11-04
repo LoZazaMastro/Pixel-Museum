@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
 #include "platform/windows/dualsense_bluetooth.hpp"
 #include "audio/controller_feedback.hpp"
+#include "platform/windows/dualsense_haptic_pcm.hpp"
 #include "platform/ps5/system.hpp"
 #include <SDL3/SDL_timer.h>
 #include <windows.h>
@@ -17,9 +18,8 @@ namespace museum::desktop {
 namespace {
 constexpr DWORD write_bytes=547;
 constexpr unsigned report_bytes=142;
-constexpr unsigned haptic_frames=512;
-constexpr unsigned haptic_group=16;
-constexpr unsigned haptic_payload_bytes=haptic_frames/haptic_group*2;
+constexpr unsigned haptic_frames=dualsense_haptic_frames;
+constexpr unsigned haptic_payload_bytes=dualsense_haptic_payload_bytes;
 constexpr Uint64 tick_ns=SDL_NS_PER_SECOND*haptic_frames/48'000;
 
 struct Write {
@@ -87,15 +87,7 @@ public:
         report[10]=packet++;
         report[11]=0x92;
         report[12]=haptic_payload_bytes;
-        for(unsigned sample=0;sample<haptic_frames/haptic_group;++sample){
-            for(unsigned channel=0;channel<2;++channel){
-                float average=0;
-                for(unsigned i=0;i<haptic_group;++i)
-                    average+=haptic[(sample*haptic_group+i)*2+channel];
-                const auto value=std::lround(std::clamp(average/float(haptic_group),-1.f,1.f)*127.f);
-                report[13+sample*2+channel]=std::uint8_t(value);
-            }
-        }
+        encode_dualsense_haptic_pcm(haptic,report.data()+13);
 
         // HIDCLASS requires the descriptor's largest report size for writes.
         // The Bluetooth CRC still belongs at the end of this report's own payload.
@@ -140,26 +132,27 @@ bool DualSenseBluetooth::start(SDL_Gamepad*pad,hui::audio::ControllerFeedback&si
     if(Transport::driver_stalled.load(std::memory_order_acquire))return false;
     auto transport=std::make_unique<Transport>();
     if(!transport->open(pad))return false;
+    // Reset audio-mode motor attenuation inherited from another host/client.
+    // The verified 0x31 configuration is the same one used by the Windows
+    // Bluetooth proof in AnyPS5#2056/#9154. SDL applies its own report framing
+    // and CRC; valid_flag0 stays clear so conventional rumble cannot take over.
+    const auto effect=dualsense_pcm_effect();
+    if(!SDL_SendGamepadEffect(pad,effect.data(),int(effect.size()))){
+        hui::sys::log("[Windows] DualSense Bluetooth PCM configuration: %s",SDL_GetError());
+        return false;
+    }
     ready_.store(true,std::memory_order_release);
     try{
         worker_=std::jthread([this,&signals,transport=std::move(transport)](std::stop_token stop){
             std::array<float,haptic_frames*2> haptic{};
             auto due=SDL_GetTicksNS();
-            // Prime the controller once, then flush a short tail after active
-            // cues. Continue consuming mixer samples while the radio is idle.
-            unsigned tail_ticks=4;
+            // Keep the 3 kHz actuator sample clock alive between actions, as
+            // with the continuously running USB audio endpoint. Fixed-rate
+            // silence avoids dropping short cues on a new Bluetooth burst.
             while(!stop.stop_requested()){
-                signals.render_haptics(haptic.data(),haptic_frames);
-                const bool active=std::any_of(haptic.begin(),haptic.end(),[](float sample){
-                    return std::abs(sample)>0.00001f;
-                });
-                if(active)tail_ticks=4;
-                if(tail_ticks){
-                    --tail_ticks;
-                    if(!transport->send(haptic.data())){
-                        hui::sys::log("[Windows] DualSense Bluetooth PCM transport stopped");
-                        break;
-                    }
+                if(!stream_dualsense_haptic_tick(signals,haptic,[&](const float*pcm){return transport->send(pcm);})){
+                    hui::sys::log("[Windows] DualSense Bluetooth PCM transport stopped, Win32 error=%lu",GetLastError());
+                    break;
                 }
                 due+=tick_ns;
                 const auto now=SDL_GetTicksNS();

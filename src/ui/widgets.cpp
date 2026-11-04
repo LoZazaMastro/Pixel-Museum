@@ -858,7 +858,8 @@ void Painter::tabs(const gfx::Rect &r, std::span<const char *const> labels, floa
     focus_ring(r, boxed ? 0.0f : radius, look.focus);
 }
 
-void Painter::field(const gfx::Rect &r, std::string_view value, bool caret, const Look &look)
+void Painter::field(const gfx::Rect &r, std::string_view value, bool caret, const Look &look,
+                    float caret_offset)
 {
     const float radius = std::min(theme_.radius, 12.0f);
     const float baseline = baseline_for(r.cy(), 24);
@@ -870,7 +871,7 @@ void Painter::field(const gfx::Rect &r, std::string_view value, bool caret, cons
                            gfx::mix(theme_.text_muted, theme_.primary, look.focus));
         const float end = body(value, r.x + 2.0f, baseline, 24, theme_.text);
         if (caret)
-            list_.rounded_rect({r.x + 5.0f + end, r.cy() - 15.0f, 2.5f, 30.0f}, 0, theme_.primary);
+            list_.rounded_rect({r.x + 5.0f + (caret_offset < 0.0f ? end : caret_offset), r.cy() - 15.0f, 2.5f, 30.0f}, 0, theme_.primary);
         return;
     }
     const bool white = theme_.style == SurfaceStyle::bevel || theme_.style == SurfaceStyle::hard;
@@ -879,7 +880,7 @@ void Painter::field(const gfx::Rect &r, std::string_view value, bool caret, cons
     const Color ink = white ? on(face) : theme_.text;
     const float end = body(value, r.x + 20.0f, baseline, 24, ink);
     if (caret)
-        list_.rounded_rect({r.x + 23.0f + end, r.cy() - 15.0f, 2.5f, 30.0f}, 0,
+        list_.rounded_rect({r.x + 23.0f + (caret_offset < 0.0f ? end : caret_offset), r.cy() - 15.0f, 2.5f, 30.0f}, 0,
                            white || theme_.style == SurfaceStyle::pixel ? ink : theme_.accent);
     focus_ring(r, radius, look.focus);
 }

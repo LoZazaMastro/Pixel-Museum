@@ -36,12 +36,10 @@ bool browser_url(const std::string& url){
     return std::none_of(url.begin(),url.end(),[](unsigned char c){return c<=32||c==127;});
 }
 std::size_t previous_character(const std::string&s,std::size_t at){
-    if(!at)return 0;
-    --at;while(at&&(static_cast<unsigned char>(s[at])&0xc0)==0x80)--at;return at;
+    return ui::text_entry::previous(s,at);
 }
 std::size_t next_character(const std::string&s,std::size_t at){
-    if(at>=s.size())return s.size();
-    ++at;while(at<s.size()&&(static_cast<unsigned char>(s[at])&0xc0)==0x80)++at;return at;
+    return ui::text_entry::next(s,at);
 }
 std::string resolution(int width,int height){
     const auto aspect=desktop_aspect(width,height);
@@ -384,18 +382,21 @@ bool Screen::handle_desktop_search(InputFrame&i,ui::Feedback&f){
     if(!search_prompt_.is_open()||desktop_controller_style_!=DesktopControllerStyle::keyboard_mouse)return false;
     auto text=search_prompt_.text();
     if(text!=desktop_search_observed_){desktop_search_caret_=text.size();desktop_search_selection_=false;}
-    desktop_search_caret_=std::min(desktop_search_caret_,text.size());
+    desktop_search_caret_=ui::text_entry::boundary(text,desktop_search_caret_);
     const bool cancel=i.is_pressed(Action::back)||(i.pointer.primary_pressed&&inside(desktop_search_button_bounds(0),i.pointer.x,i.pointer.y));
     if(cancel){search_prompt_.dismiss();desktop_search_observed_.clear();f.play(audio::Cue::back);return true;}
     if(i.text_select_all){desktop_search_selection_=true;desktop_search_caret_=text.size();}
     const auto clear_selection=[&]{if(desktop_search_selection_){text.clear();desktop_search_caret_=0;desktop_search_selection_=false;return true;}return false;};
     bool edited=false;
-    if(!i.text_utf8.empty()){
-        clear_selection();std::string printable;for(unsigned char c:i.text_utf8)if(c>=32&&c!=127)printable+=char(c);
-        text.insert(desktop_search_caret_,printable);desktop_search_caret_+=printable.size();edited=!printable.empty();
-    }
-    if(i.text_backspace){if(clear_selection())edited=true;else if(desktop_search_caret_){const auto before=previous_character(text,desktop_search_caret_);text.erase(before,desktop_search_caret_-before);desktop_search_caret_=before;edited=true;}}
-    if(i.text_delete){if(clear_selection())edited=true;else if(desktop_search_caret_<text.size()){text.erase(desktop_search_caret_,next_character(text,desktop_search_caret_)-desktop_search_caret_);edited=true;}}
+    const auto insert_text=[&](std::string_view typed){
+        const auto printable=ui::text_entry::printable(typed);
+        if(printable.empty())return;
+        edited=clear_selection()||edited;
+        edited=ui::text_entry::insert_bounded(text,desktop_search_caret_,printable,96)||edited;
+    };
+    insert_text(i.text_utf8);
+    if(i.text_backspace)edited=clear_selection()||ui::text_entry::erase_previous(text,desktop_search_caret_)||edited;
+    if(i.text_delete)edited=clear_selection()||ui::text_entry::erase_next(text,desktop_search_caret_)||edited;
     if(i.text_home){desktop_search_caret_=0;desktop_search_selection_=false;}
     if(i.text_end){desktop_search_caret_=text.size();desktop_search_selection_=false;}
     if(i.text_left||(i.keyboard_active&&i.nav==Direction::left)){desktop_search_caret_=desktop_search_selection_?0:previous_character(text,desktop_search_caret_);desktop_search_selection_=false;}
@@ -411,13 +412,15 @@ bool Screen::handle_desktop_search(InputFrame&i,ui::Feedback&f){
             if(i.pointer.primary_pressed){
                 keyboard.set_length(search_prompt_.field.length());InputFrame tap;tap.connected=true;tap.pressed=action_bit(Action::confirm);
                 const auto event=keyboard.handle(tap,f);virtual_submit=event==ui::Event::activated;
-                for(int n=0;n<keyboard.erased();++n){if(clear_selection())edited=true;else if(desktop_search_caret_){const auto before=previous_character(text,desktop_search_caret_);text.erase(before,desktop_search_caret_-before);desktop_search_caret_=before;edited=true;}}
-                if(!keyboard.typed().empty()){clear_selection();text.insert(desktop_search_caret_,keyboard.typed());desktop_search_caret_+=keyboard.typed().size();edited=true;}
+                for(int n=0;n<keyboard.erased();++n)edited=clear_selection()||ui::text_entry::erase_previous(text,desktop_search_caret_)||edited;
+                insert_text(keyboard.typed());
             }
             break;
         }
     }
-    search_prompt_.field.style.max_length=96;search_prompt_.field.set_text(text);text=search_prompt_.text();desktop_search_caret_=std::min(desktop_search_caret_,text.size());desktop_search_observed_=text;
+    auto&field=search_prompt_.field;field.style.max_length=96;
+    if(field.text()!=text)field.set_text(text);
+    text=search_prompt_.text();field.set_caret(desktop_search_caret_);desktop_search_caret_=field.caret();desktop_search_observed_=text;
     if(edited)f.play(audio::Cue::type,1,0,.25f);
     const bool submit=virtual_submit||i.text_submit||i.is_pressed(Action::confirm)||(i.pointer.primary_pressed&&inside(desktop_search_button_bounds(1),i.pointer.x,i.pointer.y));
     if(submit){
@@ -428,10 +431,10 @@ bool Screen::handle_desktop_search(InputFrame&i,ui::Feedback&f){
         desktop_search_submit_rearm_=i.text_submit;
         search_prompt_.dismiss();f.play(audio::Cue::select);return true;
     }
-    const auto field=search_prompt_.field.bounds();
-    if(i.pointer.primary_pressed&&inside(field,i.pointer.x,i.pointer.y)){
-        desktop_search_selection_=false;desktop_search_caret_=text.size();
-        const float x=i.pointer.x-field.x-24;for(size_t at=0;at<text.size();at=next_character(text,at))if(fonts_.regular.font->measure(text.substr(0,next_character(text,at)),30)>x){desktop_search_caret_=at;break;}
+    if(i.pointer.primary_pressed&&inside(field.field_rect(),i.pointer.x,i.pointer.y)){
+        ui::Painter measurement(overlay_,fonts_,field.style.theme);
+        desktop_search_selection_=false;desktop_search_caret_=field.caret_from_x(measurement,i.pointer.x);
+        field.set_caret(desktop_search_caret_);
     }
     return true;
 }
@@ -778,7 +781,7 @@ bool Screen::desktop_pointer_target(float x,float y)const{
     if(onboarding_){return theme_choice_&&!theme_confirming_&&(inside({300,420,610,240},x,y)||inside({1010,420,610,240},x,y));}
     if(boot_time_<4.8f)return false;
     if(search_prompt_.is_open()){
-        if(inside(search_prompt_.field.bounds(),x,y)||inside(desktop_search_button_bounds(0),x,y)||inside(desktop_search_button_bounds(1),x,y))return true;
+        if(inside(search_prompt_.field.field_rect(),x,y)||inside(desktop_search_button_bounds(0),x,y)||inside(desktop_search_button_bounds(1),x,y))return true;
         const auto&keyboard=search_prompt_.keyboard;
         if(!keyboard.layouts().empty()){const auto&rows=keyboard.layouts()[size_t(keyboard.layout())].rows;for(size_t row=0;row<rows.size();++row)for(size_t key=0;key<rows[row].size();++key)if(inside(keyboard.key_rect(int(row),int(key)),x,y))return true;}
         return false;

@@ -101,7 +101,8 @@ class Painter
     // active: the selected tab's index, animated (1.4 is between tabs 1 and 2).
     void tabs(const gfx::Rect &r, std::span<const char *const> labels, float active,
               const Look &look);
-    void field(const gfx::Rect &r, std::string_view text, bool caret, const Look &look);
+    void field(const gfx::Rect &r, std::string_view text, bool caret, const Look &look,
+               float caret_offset = -1.0f);
     void chip(const gfx::Rect &r, std::string_view text, float selected, const Look &look);
     void row(const gfx::Rect &r, std::string_view text, std::string_view value, float selected,
              const Look &look);

@@ -5,6 +5,7 @@
 #pragma once
 
 #include "ui/components/component.hpp"
+#include "ui/components/text_field_layout.hpp"
 
 #include <string>
 #include <string_view>
@@ -26,6 +27,7 @@ struct TextFieldStyle : ComponentStyle
     bool counter = true;               // "5 / 12" at the end of the label line (max_length > 0)
     bool on_page = false;              // label and helper sit on the page, not on a panel
     bool password = false;             // show one mask per character instead of the text
+    bool literal_value = true;         // entered text is data, never a translated UI label
     std::string mask = "\xE2\x80\xA2"; // the bullet; "*" where the face has no such glyph
     // ---- behaviour ----
     int max_length = 0;                   // characters; 0 for no limit
@@ -92,6 +94,11 @@ class TextField
     }
     // Characters, not bytes.
     int length() const;
+    // UTF-8 byte offsets, always snapped to a complete code point. Existing
+    // append/backspace keyboard operations continue to finish at the end.
+    void set_caret(std::size_t byte_offset);
+    std::size_t caret() const { return caret_; }
+    std::size_t caret_from_x(const Painter &paint, float screen_x) const;
     bool full() const
     {
         return style.max_length > 0 && length() >= style.max_length;
@@ -130,9 +137,12 @@ class TextField
     void draw(Canvas &canvas) const;
 
   private:
-    std::string shown(const Painter &paint, float room, std::string_view mask) const;
+    text_entry::Layout shown(const Painter &paint, float room, std::string_view mask) const;
 
     std::string text_;
+    std::size_t caret_ = 0;
+    mutable std::size_t visible_begin_ = 0;
+    mutable std::string displayed_mask_ = "*";
     std::string label_;
     std::string placeholder_;
     std::string helper_;
