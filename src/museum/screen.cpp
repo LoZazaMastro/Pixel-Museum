@@ -1113,7 +1113,7 @@ void Screen::draw_preferences(){
 #if defined(MUSEUM_DESKTOP)
     ui::text(overlay_,fonts_.mono,std::string("PIXEL MUSEUM / ")+ApplicationUpdater::bundled_version,x+65,959,18,muted,Align::left,1.5f);
 #else
-    ui::text(overlay_,fonts_.mono,"PIXEL MUSEUM / 0.1.5",x+65,959,18,muted,Align::left,1.5f);
+    ui::text(overlay_,fonts_.mono,"PIXEL MUSEUM / 0.1.6",x+65,959,18,muted,Align::left,1.5f);
 #endif
 }
 

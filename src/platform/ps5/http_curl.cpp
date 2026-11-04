@@ -114,49 +114,56 @@ int on_progress(void *opaque, curl_off_t, curl_off_t, curl_off_t, curl_off_t)
 // a burst beyond that gets fresh handles that are cleaned up afterwards.
 constexpr std::size_t kPoolSize = 8;
 
+struct TransferHandle
+{
+    CURL *easy = nullptr;
+    CURLM *multi = nullptr;
+};
+
 std::mutex &pool_mutex()
 {
     static std::mutex instance;
     return instance;
 }
 
-std::vector<CURL *> &pool()
+std::vector<TransferHandle> &pool()
 {
-    static std::vector<CURL *> instance;
+    static std::vector<TransferHandle> instance;
     return instance;
 }
 
-CURL *take_handle()
+TransferHandle take_handle()
 {
     {
         std::lock_guard<std::mutex> lock(pool_mutex());
-        std::vector<CURL *> &idle = pool();
+        auto &idle = pool();
         if (!idle.empty())
         {
-            CURL *handle = idle.back();
+            const auto handle = idle.back();
             idle.pop_back();
             // Options go back to their defaults; the connections stay.
-            curl_easy_reset(handle);
+            curl_easy_reset(handle.easy);
             return handle;
         }
     }
-    return curl_easy_init();
+    return {curl_easy_init(), nullptr};
 }
 
-void give_back(CURL *handle, CURLcode code)
+void give_back(TransferHandle handle, CURLcode code)
 {
     // A handle whose transfer failed may hold a broken connection: drop it.
     if (code == CURLE_OK)
     {
         std::lock_guard<std::mutex> lock(pool_mutex());
-        std::vector<CURL *> &idle = pool();
+        auto &idle = pool();
         if (idle.size() < kPoolSize)
         {
             idle.push_back(handle);
             return;
         }
     }
-    curl_easy_cleanup(handle);
+    if (handle.multi != nullptr) curl_multi_cleanup(handle.multi);
+    curl_easy_cleanup(handle.easy);
 }
 
 } // namespace
@@ -173,7 +180,8 @@ Response perform(const Request &request)
     Response response;
     ensure_global();
 
-    CURL *handle = take_handle();
+    auto transfer = take_handle();
+    CURL *handle = transfer.easy;
     if (handle == nullptr)
     {
         response.error = "init";
@@ -226,7 +234,11 @@ Response perform(const Request &request)
                                static_cast<curl_off_t>(request.body.size()));
     }
 
-    const CURLcode code = detail::perform_with_cancellation(handle, request);
+    // In multi mode libcurl stores connections on the multi handle. Keep it
+    // with the easy handle so cancellable batches can reuse their TLS sessions.
+    if (request.cancelled && transfer.multi == nullptr)
+        transfer.multi = curl_multi_init();
+    const CURLcode code = detail::perform_with_cancellation(handle, request, transfer.multi);
 
     long status = 0;
     (void)curl_easy_getinfo(handle, CURLINFO_RESPONSE_CODE, &status);
@@ -237,7 +249,7 @@ Response perform(const Request &request)
     // The handle goes back to the pool: unhook the header list before freeing it.
     (void)curl_easy_setopt(handle, CURLOPT_HTTPHEADER, nullptr);
     curl_slist_free_all(headers);
-    give_back(handle, code);
+    give_back(transfer, code);
     return response;
 }
 
