@@ -13,6 +13,9 @@ inline constexpr int database_update_setting=5;
 inline constexpr const char* museum_support_url="https://ko-fi.com/lozazamastro";
 inline constexpr const char* general_credits_text=R"(Thanks to my father for passing on his passion for technology. Thanks to my mother for giving me the sensitivity to appreciate art and look at the world with wonder. Thanks to my friends Jacopo and Renoy for sharing with me an important and lasting passion, the pleasure of discovery and the magic of wonder. Thanks to the Spartans (Alessandro, Elia, Federico, Giacomo) for sharing thoughts and opinions about the world every day and supporting me. Special thanks to the owner of Play Point, the former game shop on Via Padova in Milan, for introducing me to an incredible world and recommending wonderful games.
 
+Special thanks to the YouTube channel The Pixel Playback for its documentaries on the history of videogames, consoles and the people who created them.
+https://www.youtube.com/@ThePixelPlayback
+
 Editorial curation, Development, Graphic design, Music: Andrea Sgarro
 
 Content was originally written in English and subsequently translated into the supported languages using AI.

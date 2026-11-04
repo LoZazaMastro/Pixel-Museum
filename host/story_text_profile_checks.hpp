@@ -8,7 +8,14 @@ inline bool ScreenInspection::profile_story_text(Screen&s){
  const char*override_catalog=std::getenv("MUSEUM_TEXT_PROFILE_CATALOG");
  const char*scoped_ids=std::getenv("MUSEUM_TEXT_PROFILE_PROBE_ENTRIES");const std::string scope=scoped_ids?std::string(",")+scoped_ids+",":"";
  const char*composition_path=std::getenv("MUSEUM_COMPOSITION_SNAPSHOT");
+ const bool snapshot_only=composition_path&&std::getenv("MUSEUM_COMPOSITION_SNAPSHOT_ONLY");
  const char*profile_output=std::getenv("MUSEUM_PROFILE_OUTPUT");
+ if(const char*collection=std::getenv("MUSEUM_COMPOSITION_COLLECTION_ROOT")){
+  s.cache_.stop();
+  if(!s.cache_.images_from_package(s.root_,collection)){
+   std::fprintf(stderr,"Cannot register the read-only installed collection for composition inspection\n");return false;
+  }
+ }
  const std::string frozen=override_catalog?override_catalog:"build/research/story-text-profile/catalog.json";
  if(!s.catalog_.load(frozen)){std::fprintf(stderr,"Cannot read frozen text profile catalogue: %s\n",s.catalog_.error.c_str());return false;}
  std::printf("Profiling loaded catalogue %s: %zu entries / explicit override %s\n",frozen.c_str(),s.catalog_.entries.size(),override_catalog?"yes":"no (historical benchmark)");
@@ -24,7 +31,7 @@ inline bool ScreenInspection::profile_story_text(Screen&s){
    }
    compositions.push_back({{"entry_id",e.id},{"preferred_image",e.preferred_image},{"explicit_story_media_only",e.explicit_story_media_only},{"cards",std::move(cards)}});
   }
-  if(override_catalog&&(e.id=="wikipedia-1120399"||e.id=="wikipedia-2364191"||e.id=="workbook-11-04-kinect-per-xbox-360")){
+  if(override_catalog&&!snapshot_only&&(e.id=="wikipedia-1120399"||e.id=="wikipedia-2364191"||e.id=="workbook-11-04-kinect-per-xbox-360")){
    const int expected=e.id=="wikipedia-1120399"?2:e.id=="wikipedia-2364191"?7:4;std::set<int>matched;std::set<std::string>identities;
    for(size_t n=0;n<s.story_cards_.size();++n){const auto&c=s.story_cards_[n];if(c.feature>=0||c.paragraph<0||(c.kind!=Screen::StoryCard::narrative&&c.kind!=Screen::StoryCard::film))continue;
     const bool valid=c.image>=0&&c.image!=e.preferred_image&&size_t(c.image)<e.images.size()&&e.images[size_t(c.image)].story_paragraph==c.paragraph&&c.continuation.empty();
@@ -47,7 +54,7 @@ inline bool ScreenInspection::profile_story_text(Screen&s){
     std::printf("PASS actual composed cover SHA alias: both equal-pixel cover URLs skipped before matching p0; distinct paragraph illustration retained.\n");
    }
   }
-  if(override_catalog&&e.id=="wikipedia-3467400"&&e.images.size()==1&&e.videos.empty()&&e.models.empty()&&e.editorial_features.empty()){
+  if(override_catalog&&!snapshot_only&&e.id=="wikipedia-3467400"&&e.images.size()==1&&e.videos.empty()&&e.models.empty()&&e.editorial_features.empty()){
    std::vector<int>paragraphs;bool clean=e.images.size()==1&&e.videos.empty()&&e.models.empty()&&e.editorial_features.empty();
    for(const auto&c:s.story_cards_){if(c.kind==Screen::StoryCard::photograph||c.image>=0)clean=false;if(c.kind==Screen::StoryCard::narrative&&c.paragraph>=0){paragraphs.push_back(c.paragraph);paragraphs.insert(paragraphs.end(),c.continuation.begin(),c.continuation.end());}}
    clean=clean&&paragraphs.size()==e.body.size();for(size_t p=0;p<paragraphs.size();++p)if(paragraphs[p]!=int(p))clean=false;

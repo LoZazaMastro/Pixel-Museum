@@ -2,7 +2,7 @@ The games we played. The world we grew up in. An independent, interactive museum
 
 ![Pixel Museum](website/assets/social-preview.png)
 
-**[Visit the website](https://lozazamastro.github.io/Pixel-Museum/) · [Download for Windows](https://github.com/LoZazaMastro/Pixel-Museum/releases/download/windows-v0.2.0/Pixel-Museum-Setup.exe) ? [Download for PS5](https://github.com/LoZazaMastro/Pixel-Museum/releases/latest/download/PPSA70421.zip)**
+**[Visit the website](https://lozazamastro.github.io/Pixel-Museum/) · [Download for Windows](https://github.com/LoZazaMastro/Pixel-Museum/releases/download/windows-v0.2.0/Pixel-Museum-Setup.exe) · [Download for PS5](https://github.com/LoZazaMastro/Pixel-Museum/releases/latest/download/PPSA70421.zip)**
 
 Pixel Museum brings the history of video games together with the world around them. One timeline follows games, consoles, computers, creators and studios; the other explores films, music, art and historical events from the same years. Open an exhibit to read its story, look through photographs and artwork, or watch a related film.
 
@@ -36,7 +36,7 @@ The application ZIP is about **529 MB**; the extracted app is about **889 MB**. 
 
 ## Updating
 
-On Windows, choose **Options ? Check for updates** to check for application and database updates. On PS5, update the application through ProsperoStore or close it and replace the PPSA70421 folder via FTP. Your downloaded collection stays in place.
+On Windows, choose **Options > Check for updates** to check for application and database updates. On PS5, update the application through ProsperoStore or close it and replace the PPSA70421 folder via FTP. Your downloaded collection stays in place.
 
 Choose **Options → Check for updates** inside Pixel Museum to download new database content. Application updates are distributed through ProsperoStore and GitHub Releases.
 
@@ -59,6 +59,8 @@ The ready-to-run binaries and packaged media are supplied separately through [Re
 ## Credits and licences
 
 Design, editorial direction, development, graphics and original music: **Andrea Sgarro / LoZazaMastro**.
+
+Special thanks to [The Pixel Playback](https://www.youtube.com/@ThePixelPlayback) for its documentaries on gaming history.
 
 The interface builds on **ps5-homebrew-ui by BlackBearReloaded**. Native YouTube playback adapts [ytps5-sponsorblock by animatian112](https://github.com/animatian112/ytps5-sponsorblock). Their existing copyright and licence notices are preserved.
 

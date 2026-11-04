@@ -12,7 +12,17 @@ inline constexpr std::size_t kSoundtrackTrackLimit=2048;
 inline constexpr std::size_t kEntryAliasLimit=4096,kEntryAliasIdBytes=192,kEntryAliasHops=32;
 struct Image { std::string url,source_page,title,creator,license,credit;int story_paragraph=-1;std::string caption;std::string dark_url{}; };
 struct VideoRecord { std::string youtube_id,url,title,caption,creator,source_page;std::string poster_url{};double start_seconds=0,end_seconds=0;int story_paragraph=-1; };
-struct Soundtrack { std::string title,composer,curator_note;std::vector<VideoRecord> tracks; };
+struct Soundtrack { std::string title,composer,curator_note;std::vector<VideoRecord> tracks;std::string music_kind; };
+inline const std::string& soundtrack_artist(const Soundtrack& room,int selected){
+    if(selected>=0&&selected<int(room.tracks.size())&&!room.tracks[size_t(selected)].creator.empty())return room.tracks[size_t(selected)].creator;
+    return room.composer;
+}
+inline const char* soundtrack_label(const Soundtrack& room){
+    if(room.music_kind=="licensed_playlist")return "Licensed songs";
+    if(room.music_kind=="original_score")return "Original music";
+    if(room.music_kind=="mixed")return "Original music and licensed songs";
+    return "Music collection";
+}
 struct Source { std::string title,url,publisher,license,attribution; };
 struct Model { std::string url,asset_file,source_page,title,creator,license,credit;std::vector<std::string> include_groups;float initial_tilt=.13f,initial_angle=0.f,initial_zoom=1.f;bool source_z_up=false;std::string display_caption; };
 struct EditorialFeature {

@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.24)
-project(PixelMuseum VERSION 0.2.0 LANGUAGES C CXX)
-set(PIXEL_MUSEUM_APP_VERSION "0.2.0-preview" CACHE STRING "Published Windows application version")
+project(PixelMuseum VERSION 0.2.1 LANGUAGES C CXX)
+set(PIXEL_MUSEUM_APP_VERSION "0.2.1" CACHE STRING "Published Windows application version")
 if(NOT PIXEL_MUSEUM_APP_VERSION MATCHES "^[0-9]+\\.[0-9]+\\.[0-9]+([-+][A-Za-z0-9.+-]+)?$")
   message(FATAL_ERROR "PIXEL_MUSEUM_APP_VERSION must be a semantic version")
 endif()

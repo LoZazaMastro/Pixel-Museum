@@ -149,7 +149,11 @@ def prepare(args):
     if not version_file.is_file() or json.loads(version_file.read_text(encoding='utf8')).get('version')!=args.version:
         raise RuntimeError('The package version must match the version compiled by CMake (PIXEL_MUSEUM_APP_VERSION)')
     copy(exe,app/exe.name)
-    copy(ROOT/'content/database-version.json',app/'content/database-version.json')
+    # The content snapshot and its revision are one unit. Never label a tested
+    # newer runtime with an older authoring-tree database version.
+    database_version=base/'content/database-version.json'
+    if not database_version.is_file():raise RuntimeError('The runtime must identify its bundled database revision')
+    copy(database_version,app/'content/database-version.json')
     dependencies=dlls(exe,args.prefix,app)
     license_file=ROOT/'LICENSE'
     if not license_file.exists():license_file=ROOT/'build/publication-20261031/repository/LICENSE'
@@ -207,7 +211,7 @@ def prepare(args):
     packages=[{'id':'app','kind':'app','filename':archive.name,'format':'zip','url':args.app_url,'sha256':digest(archive),'bytes':archive.stat().st_size,'unpacked_bytes':expanded,'target':'.'}]
     for pack in manifest['packs']:
         packages.append({'id':pack['id'],'kind':'collection','filename':pack['id']+'.tar','format':'tar','url':pack['url'],'sha256':pack['sha256'],'bytes':pack['bytes'],'unpacked_bytes':pack['bytes'],'target':relative+'/archives'})
-    release={'schema_version':1,'version':args.version,'executable':exe.name,'packages':packages}
+    release={'schema_version':1,'version':args.version,'executable':exe.name,'packages':packages,'install_current_database':True}
     updates=build_deltas(app,output,release,args.update_from)
     destination=output/'windows-manifest.json';destination.write_text(json.dumps(release,indent=2),encoding='utf8')
     if setup.exists():copy(setup,output/setup.name)

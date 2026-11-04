@@ -10,6 +10,20 @@
 namespace museum {
 using namespace hui;
 bool Screen::story_soundtrack()const{return detail_&&story_focus_>=0&&story_focus_<int(story_cards_.size())&&story_cards_[size_t(story_focus_)].kind==StoryCard::soundtrack;}
+Screen::PlaylistLayout Screen::playlist_layout(const Entry& entry,const Soundtrack& room)const{
+    PlaylistLayout layout;
+    // Reserve two artist lines so hovering a duet or collaboration cannot move
+    // the recording rows underneath the pointer.
+    const auto bottom=[&]{return 200.f+float(fonts_.display.font->wrap(entry.title,layout.title_size,1000).size())*layout.title_size*1.18f+8.f+2.f*layout.artist_size*1.4f;};
+    while(bottom()>480&&(layout.title_size>34||layout.artist_size>20)){
+        if(layout.title_size>34)--layout.title_size;
+        if(layout.artist_size>20)layout.artist_size-=.25f;
+    }
+    layout.rows_y=std::max(360.f,bottom()+44.f);
+    layout.visible=std::clamp(1+int(std::floor((780.f-layout.rows_y)/56.f)),1,7);
+    layout.first=std::clamp(playlist_selection_-layout.visible/2,0,std::max(0,int(room.tracks.size())-layout.visible));
+    return layout;
+}
 gfx::Rect Screen::playlist_frame()const{
     // Same reference geometry as draw_soundtrack_card within its story slot.
     constexpr gfx::Rect slot{132,310,1656,575};const float scale=std::min(slot.w/1040.f,slot.h/552.f);
@@ -18,7 +32,7 @@ gfx::Rect Screen::playlist_frame()const{
 }
 void Screen::stop_playlist(){
     if(playlist_active_)video_.close();
-    playlist_active_=false;playlist_completed_=false;playlist_selection_=0;playlist_playing_=-1;playlist_music_room_=-1;
+    playlist_active_=false;playlist_completed_=false;playlist_selection_=0;playlist_playing_=-1;playlist_music_room_=-1;playlist_hover_=-1;
 }
 void Screen::play_playlist(int index){
     const auto*e=current();const auto*list=current_soundtrack();if(!e||!list||index<0||index>=int(list->tracks.size()))return;
@@ -27,6 +41,7 @@ void Screen::play_playlist(int index){
     const bool reuse=playlist_active_&&playlist_playing_>=0&&playlist_playing_<int(list->tracks.size())&&list->tracks[size_t(playlist_playing_)].youtube_id==track.youtube_id&&video_.state()==media::State::ready;
     if(!playlist_active_)playlist_music_room_=story_focus_>=0&&story_focus_<int(story_cards_.size())?story_cards_[size_t(story_focus_)].music_room:-1;
     playlist_active_=true;playlist_closing_=false;playlist_completed_=false;playlist_selection_=playlist_playing_=index;
+    playlist_hover_=-1;
     screening_=true;fullscreen_=true;screening_origin_=playlist_frame();
     video_frame_alpha_=0;idle_=0;
     if(reuse)video_.play_range(track.start_seconds,track.end_seconds);
@@ -48,6 +63,7 @@ bool Screen::handle_playlist(const InputFrame&i,ui::Feedback&f){
     const bool expanded=playlist_active_&&screening_;
     if(!expanded&&(!story_soundtrack()||std::abs(story_position_.value-float(story_focus_))>.08f))return false;
     if(i.focus_lost)return expanded;
+    if(i.nav!=Direction::none||i.is_pressed(Action::confirm))playlist_hover_=-1;
     const auto play_selected=[&]{
         if(playlist_active_&&playlist_playing_==playlist_selection_&&video_.state()==media::State::ready&&!video_.ended())video_.pause(!video_.paused());
         else if(!playlist_active_||playlist_playing_!=playlist_selection_||video_.state()!=media::State::loading)play_playlist(playlist_selection_);
@@ -90,7 +106,7 @@ void Screen::draw_playlist(gfx::Rect bounds,bool active,int room_index){
     const auto height=[&]{return float(fonts_.semibold.font->wrap(list.composer,author_size,width).size())*author_size*1.22f+float(fonts_.display.font->wrap(e->title,title_size,width).size())*title_size*1.18f;};
     while(height()>330&&(title_size>34||author_size>28)){if(title_size>34)title_size-=1;if(author_size>28)author_size-=.35f;}
     const float top=bounds.cy()-height()*.5f;
-    ui::text(page_,fonts_.mono,"LISTEN TO THE MUSIC OF",left,top-42,18,palette.muted,gfx::Align::left,1.3f);
+    ui::text(page_,fonts_.mono,soundtrack_label(list),left,top-42,18,palette.muted,gfx::Align::left,1.3f);
     const float after=ui::paragraph(page_,fonts_.semibold,list.composer,left,top+author_size,author_size,width,author_size*1.22f,palette.muted);
     ui::paragraph(page_,fonts_.display,e->title,left,after+title_size*.7f,title_size,width,title_size*1.18f,palette.ink);
     page_.pop_clip();

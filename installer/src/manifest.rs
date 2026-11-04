@@ -12,6 +12,10 @@ pub struct Manifest {
     pub version: String,
     pub executable: String,
     pub packages: Vec<Package>,
+    /// Production setup installs the current trusted editorial snapshot before
+    /// its first launch. Older/offline fixture manifests remain self-contained.
+    #[serde(default)]
+    pub install_current_database: bool,
     #[serde(default, skip_serializing_if = "Vec::is_empty")]
     pub updates: Vec<UpdatePackage>,
 }

@@ -77,6 +77,7 @@ bool Screen::init(const std::string&root,const std::string&data){
     if(!application_updater_.configure(root,data))sys::log("[Museum] application updates unavailable; current app retained");
 #endif
     if(!database_updater_.configure(root,data))sys::log("[Museum] database update overlay unavailable; bundled content retained");
+    load_runtime_credits();
     if(!renderer_.init())return false;
     startup_phase("renderer");
     const std::string f=root+"/assets/fonts/";
@@ -94,6 +95,11 @@ bool Screen::init(const std::string&root,const std::string&data){
     initial_exhibit_=catalog_.initial_id;
     refresh_today_date();
     load_settings();apply_language();language_selection_.snap(float(language_focus_));theme_selection_.snap(dark_theme_?0.f:1.f);theme_mix_.snap(dark_theme_?1.f:0.f);video_.volume(media_volume_);onboarding_fade_.snap(1);startup_phase("preferences");
+#if defined(__FreeBSD__)
+    // The console installs current editorial data inside the first collection
+    // download. Windows performs this work in its setup, before launching us.
+    initial_database_sync_=!onboarding_complete_;
+#endif
 #if defined(__FreeBSD__)
     // Keep preferences in the title container, but put the large downloaded
     // collection on ordinary storage. The worker imports validated legacy
@@ -1113,7 +1119,7 @@ void Screen::draw_preferences(){
 #if defined(MUSEUM_DESKTOP)
     ui::text(overlay_,fonts_.mono,std::string("PIXEL MUSEUM / ")+ApplicationUpdater::bundled_version,x+65,959,18,muted,Align::left,1.5f);
 #else
-    ui::text(overlay_,fonts_.mono,"PIXEL MUSEUM / 0.1.6",x+65,959,18,muted,Align::left,1.5f);
+    ui::text(overlay_,fonts_.mono,"PIXEL MUSEUM / 0.1.7",x+65,959,18,muted,Align::left,1.5f);
 #endif
 }
 
@@ -1139,6 +1145,22 @@ void Screen::draw_connection(){
     ui::Hint h[]={{ui::Button::circle,"Back"},{c.signed_in?ui::Button::square:ui::Button::cross,c.signed_in?"Disconnect":c.saved?"Reconnect":"Connect"}};
     ui::HintLayout l;l.cy=1015;l.size=28;l.text_size=22;ui::draw_hints(overlay_,fonts_,ui::GlyphStyle::mono(ink,Color::rgb(0,0)),h,2,x+65,false,l);
 }
+void Screen::load_runtime_credits(){
+    feature_resources_text_=feature_resources_sites;
+    feature_resources_lines_.clear();
+    std::string bytes;
+    if(!save::read_file(root_+"/content/credits.json",&bytes,8u<<20))return;
+    const auto credits=nlohmann::json::parse(bytes,nullptr,false);
+    if(!credits.is_object()||!credits.contains("display_resources")||!credits["display_resources"].is_array())return;
+    std::set<std::string> seen;
+    for(const auto& resource:credits["display_resources"]){
+        if(!resource.is_string())continue;
+        const auto line=resource.get<std::string>();
+        if(line.empty()||line.size()>4096||!seen.insert(line).second)continue;
+        if(feature_resources_text_.size()+line.size()>512u<<10)break;
+        feature_resources_text_+="\n\n"+line;
+    }
+}
 void Screen::draw_credits(){
     const auto palette=colours();[[maybe_unused]] const auto paper=palette.paper,ink=palette.ink,muted=palette.muted,rule=palette.rule;
     const float x=options_panel_x();
@@ -1150,7 +1172,7 @@ void Screen::draw_credits(){
     overlay_.push_clip({x+62,230,685,700});overlay_.push_transform(1,0,0,0,-credits_scroll_.value);float y=265;
     y=ui::paragraph(overlay_,fonts_.regular,general_credits_body(),x+64,y,24,665,35,ink,999)+34;
     y=ui::paragraph(overlay_,fonts_.semibold,"Feature resources",x+64,y,26,665,35,ink,999)+24;
-    if(feature_resources_lines_.empty())feature_resources_lines_=ui::paragraph_lines(fonts_.regular,feature_resources_sites,21,665,std::numeric_limits<int>::max()).lines;
+    if(feature_resources_lines_.empty())feature_resources_lines_=ui::paragraph_lines(fonts_.regular,feature_resources_text_,21,665,std::numeric_limits<int>::max()).lines;
     const int first=std::max(0,int(std::floor((230+credits_scroll_.value-y)/30))-1);
     const int end=std::min(int(feature_resources_lines_.size()),int(std::ceil((930+credits_scroll_.value-y)/30))+1);
     for(int n=first;n<end;++n){ui::text(overlay_,fonts_.regular,feature_resources_lines_[size_t(n)],x+64,y+float(n)*30,21,muted);

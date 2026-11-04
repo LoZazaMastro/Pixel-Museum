@@ -360,7 +360,7 @@ struct ScreenInspection {
         s.onboarding_=true;s.onboarding_complete_=false;s.load_settings();
         if(!require(!s.onboarding_&&s.onboarding_complete_&&s.theme_chosen_&&s.language_chosen_&&!s.dark_theme_,"a subsequent preferences load restores language and appearance and skips the completed tour"))return finish(false);
         s.boot_time_=5;s.boot_note_=13;press(hui::Action::menu);
-        const std::array<const char*,8> expected_options={"Language","Appearance","Volumes","YouTube connection","Replay introduction","Remove downloaded data","Reset trophies","Credits"};
+        const std::array<const char*,10> expected_options={"Language","Appearance","Volumes","YouTube connection","Replay introduction","Check for updates","Remove downloaded data","Reset trophies","Credits","Support the museum"};
         if(!require(preference_labels==expected_options,"requested exact option order"))return finish(false);
         s.setting_=0;const auto previous_language=s.language_;press(hui::Action::confirm);
         if(!require(s.language_!=previous_language,"row0 changes language"))return finish(false);

@@ -123,6 +123,8 @@ private:
     const char* support_action_label(int)const;
     hui::gfx::Rect support_action_bounds(int)const;
     DatabaseUpdater database_updater_;
+    bool initial_database_sync_=false,initial_database_started_=false,initial_database_complete_=false;
+    std::string initial_database_error_;
     DatabaseUpdater::Snapshot database_state_;
     bool database_auto_checked_=false,database_dialog_=false;
     std::uint64_t database_notified_revision_=0,database_ready_notified_revision_=0;
@@ -456,9 +458,12 @@ private:
     bool playlist_active_=false,playlist_completed_=false,playlist_closing_=false;
     int playlist_display_index_=0,playlist_display_music_room_=-1;
     int playlist_selection_=0,playlist_playing_=-1;
+    int playlist_hover_=-1;
     int playlist_music_room_=-1;
     bool story_soundtrack()const;
     const Soundtrack* current_soundtrack()const;
+    struct PlaylistLayout { float title_size=54,artist_size=25,rows_y=360;int visible=7,first=0; };
+    PlaylistLayout playlist_layout(const Entry&,const Soundtrack&)const;
     void play_playlist(int index);
     void stop_playlist();
     void update_playlist();
@@ -470,6 +475,8 @@ private:
     hui::tween::Spring sources_open_,media_hints_,credits_open_,credits_scroll_;
     float credits_scroll_max_=0;
     std::vector<std::string> feature_resources_lines_;
+    std::string feature_resources_text_;
+    void load_runtime_credits();
     int date_year_=0,date_month_=0,date_day_=0;
     std::array<int,2> today_cursor_{{-1,-1}};
     std::array<bool,2> filter_trigger_down_{{false,false}};

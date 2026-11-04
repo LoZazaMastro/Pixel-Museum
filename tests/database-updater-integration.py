@@ -161,6 +161,20 @@ def run(executable, output):
             assert driver.call("read")["content"] == driver.bundled
         success("current manifest keeps the bundled database")
 
+        with driver_case("fresh-setup-bundled-snapshot") as driver:
+            (driver.root / "content/catalog.json").write_bytes(new)
+            server.set("/feed", body=good)
+            hits=server.hits["/payload"]
+            assert_phase(driver.call("check"), "available")
+            result=driver.call("install")
+            assert_phase(result, "ready")
+            assert result["state"]["total_bytes"] == result["state"]["downloaded_bytes"] == 0
+            assert server.hits["/payload"] == hits
+            driver.call("configure")
+            assert driver.call("read")["content"] == new.decode()
+            assert_phase(driver.call("check"), "current")
+        success("a fresh installation mounts its verified bundled snapshot without downloading it again or offering the same update")
+
         server.set("/feed", body=good)
         with driver_case("activate-reuse-offline") as driver:
             available = driver.call("check")

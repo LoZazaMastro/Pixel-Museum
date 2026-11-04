@@ -38,6 +38,14 @@ pub struct Release {
     pub payload_dir: Option<PathBuf>,
 }
 
+impl Release {
+    fn needs_current_database(&self) -> bool {
+        // A payload folder is only a source preference, including the automatic
+        // folder beside setup. It must not disable production content updates.
+        self.manifest.install_current_database
+    }
+}
+
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum Phase {
     Download,
@@ -770,6 +778,12 @@ fn install_with_commit(
     } else {
         None
     };
+    // A newly installed museum is usable with the current database immediately.
+    // Keep these immutable data files outside the application inventory, just
+    // like subsequent in-app database snapshots; no restart is needed here.
+    if release.needs_current_database() {
+        crate::database::install_current(stage.path(), cancel, &mut report)?;
+    }
     write_install_metadata(stage.path(), release, language)?;
     if let Some(windows) = &windows {
         let receipt = stage.path().join(crate::integration::RECEIPT);
@@ -969,7 +983,7 @@ fn cached_path(cache: &Path, p: &Package) -> PathBuf {
     ))
 }
 
-fn download(
+pub(crate) fn download(
     client: &Client,
     package: &Package,
     target: &Path,
@@ -1281,6 +1295,39 @@ mod tests {
     }
 
     #[test]
+    fn production_database_refresh_survives_local_payload_fallback() {
+        let folder = tempfile::tempdir().unwrap();
+        let path = folder.path().join("windows-manifest.json");
+        let mut value = serde_json::json!({
+            "schema_version":1, "version":"0.2.1", "executable":"Pixel Museum.exe",
+            "packages":[
+                {"id":"app","kind":"app","filename":"app.zip","sha256":"a".repeat(64),"bytes":1,"unpacked_bytes":1,"target":"."},
+                {"id":"images","kind":"collection","filename":"images.tar","format":"tar","sha256":"b".repeat(64),"bytes":1,"unpacked_bytes":1,"target":"collection/fixture/archives"}
+            ]
+        });
+        let opts = Options { manifest:Some(path.to_string_lossy().into_owned()), ..Options::default() };
+        let cancel=AtomicBool::new(false);
+        fs::write(&path,serde_json::to_vec(&value).unwrap()).unwrap();
+        let offline=load_release(&opts,&cancel).unwrap();
+        assert_eq!(offline.payload_dir,Some(folder.path().to_path_buf()));
+        assert!(!offline.needs_current_database());
+        value["install_current_database"]=true.into();
+        fs::write(&path,serde_json::to_vec(&value).unwrap()).unwrap();
+        let production=load_release(&opts,&cancel).unwrap();
+        assert_eq!(production.payload_dir,Some(folder.path().to_path_buf()));
+        assert!(production.needs_current_database());
+    }
+
+    #[test]
+    fn embedded_manifest_preserves_production_database_refresh() {
+        if EMBEDDED_MANIFEST.is_empty() { return; }
+        let expected=Manifest::parse(EMBEDDED_MANIFEST).unwrap().install_current_database;
+        let release=load_release(&Options::default(),&AtomicBool::new(false)).unwrap();
+        assert!(release.payload_dir.is_some());
+        assert_eq!(release.needs_current_database(),expected);
+    }
+
+    #[test]
     fn installs_verified_local_payload_and_keeps_everything_together() {
         let folder = tempfile::tempdir().unwrap();
         let app = zip_bytes(&[
@@ -1293,6 +1340,7 @@ mod tests {
         fs::write(folder.path().join("images.zip"), &data).unwrap();
         let release = Release {
             manifest: Manifest {
+                install_current_database: false,
                 updates: Vec::new(),
                 schema_version: 1,
                 version: "test".into(),
@@ -1382,6 +1430,7 @@ mod tests {
         fs::write(folder.path().join("images.zip"), &data).unwrap();
         let release = Release {
             manifest: Manifest {
+                install_current_database: false,
                 updates: Vec::new(),
                 schema_version: 1,
                 version: "0.2.0".into(),
@@ -1657,6 +1706,7 @@ mod tests {
         retained.target = "collection/test-ready/archives".into();
         let release = Release {
             manifest: Manifest {
+                install_current_database: false,
                 updates: Vec::new(),
                 schema_version: 1,
                 version: "test".into(),
@@ -1792,6 +1842,7 @@ mod tests {
         fs::write(&source, &tar).unwrap();
         let release = Release {
             manifest: Manifest {
+                install_current_database: false,
                 updates: Vec::new(),
                 schema_version: 1,
                 version: "fixture".into(),

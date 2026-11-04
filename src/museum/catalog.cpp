@@ -89,6 +89,7 @@ bool Catalog::parse(const std::string& bytes){
         const auto parse_soundtrack=[&](const Json& list){
             Soundtrack soundtrack;
             soundtrack.title=str(list,"title");soundtrack.composer=str(list,"composer");soundtrack.curator_note=str(list,"curator_note");
+            soundtrack.music_kind=str(list,"music_kind");
             if(list.contains("tracks")&&list["tracks"].is_array())for(const auto&a:list["tracks"]){
                 VideoRecord v;v.youtube_id=str(a,"youtube_id");v.url=str(a,"url");v.title=str(a,"title");v.caption=str(a,"caption");v.creator=str(a,"creator");v.source_page=str(a,"source_page");
                 if(a.contains("start_seconds")||a.contains("end_seconds")){

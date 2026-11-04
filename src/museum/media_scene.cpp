@@ -94,27 +94,17 @@ void Screen::draw_screening(){
         media_layer_.rounded_rect(between(screening_origin_,canvas,full),0,palette.paper);
         const float scale=std::min(screen.w/1920.f,screen.h/1080.f);
         media_layer_.push_clip(screen);media_layer_.push_transform(scale,0,0,screen.x,screen.y);
-        ui::text(media_layer_,fonts_.mono,"LISTENING ROOM",96,104,19,palette.muted,Align::left,2);
+        ui::text(media_layer_,fonts_.mono,list?soundtrack_label(*list):"LISTENING ROOM",96,104,19,palette.muted,Align::left,2);
         const float energy=video_.audio_level();
         for(int n=0;n<16;++n)media_layer_.ring(1410,480,65+float(n)*18+energy*(18+float(n)*3),1+energy*.8f,palette.ink.with_alpha(.025f+float(n)*.003f+energy*.05f));
         media_layer_.circle(1410,480,40+energy*32,tone_);media_layer_.circle(1410,480,8+energy*4,palette.paper);
-        const std::string artist=list?list->composer:std::string{};
-        float title_size=54,artist_size=25;
-        const auto heading_bottom=[&]{
-            return 200.f+float(fonts_.display.font->wrap(e->title,title_size,1000).size())*title_size*1.18f
-                +8.f+float(fonts_.regular.font->wrap(artist,artist_size,1020).size())*artist_size*1.4f;
-        };
-        // Long album identities use more lines rather than losing their names.
-        // The recording list gives up a row only when that extra space is needed.
-        while(heading_bottom()>480&&(title_size>34||artist_size>20)){
-            if(title_size>34)title_size-=1;
-            if(artist_size>20)artist_size-=.25f;
-        }
+        const std::string artist=list?soundtrack_artist(*list,playlist_hover_>=0?playlist_hover_:playlist_selection_):std::string{};
+        const auto layout=playlist_layout(*e,*list);
+        const float title_size=layout.title_size,artist_size=layout.artist_size;
         const float artist_y=ui::paragraph(media_layer_,fonts_.display,e->title,94,200,title_size,1000,title_size*1.18f,palette.ink)+8;
-        const float artist_bottom=artist.empty()?artist_y:ui::paragraph(media_layer_,fonts_.regular,artist,100,artist_y,artist_size,1020,artist_size*1.4f,palette.muted);
-        const float recordings_y=std::max(360.f,artist_bottom+44.f);
-        const int visible=std::clamp(1+int(std::floor((780.f-recordings_y)/56.f)),1,7);
-        const int first=std::clamp(playlist_selection_-visible/2,0,std::max(0,int(records.size())-visible));
+        if(!artist.empty())ui::paragraph(media_layer_,fonts_.regular,artist,100,artist_y,artist_size,1020,artist_size*1.4f,palette.muted,2);
+        const float recordings_y=layout.rows_y;
+        const int visible=layout.visible,first=layout.first;
         for(int row=0;row<visible&&first+row<int(records.size());++row){const int index=first+row;const auto&track=records[size_t(index)];const float y=recordings_y+row*56.f;
             const auto title=ui::paragraph_lines(fonts_.regular,track.title,23,970,1);
             if(index==playlist_selection_){
@@ -166,14 +156,18 @@ void Screen::draw_screening(){
     media_layer_.pop_clip();
     // Inline control hints stay visible independently of the seek bar.
     const float labels=full<.999f?1.f:std::clamp(media_hints_.value,0.f,1.f);
+    const float inline_progress_alpha=std::clamp(1.f-(film_progress_age_-2.f)*5.f,0.f,1.f);
+    // Inline hints remain visible, but captions reserve space only for the
+    // actual transport bar. Fullscreen keeps its existing hint-driven layout.
+    const float caption_controls=full*labels+(1-full)*inline_progress_alpha;
     if(film_captions_enabled_&&video_.texture())draw_film_captions(media_layer_,fonts_.regular,video_.caption_text(),
-        fitted(screen,float(video_.width())/std::max(1,video_.height())),labels);
+        fitted(screen,float(video_.width())/std::max(1,video_.height())),caption_controls);
     media_layer_.push_opacity(labels);
     if(full>.001f){media_layer_.gradient_rect({canvas.x,0,canvas.w,180},0,Color::rgb(0,.65f*full),Color::rgb(0,0));media_layer_.push_opacity(full);ui::paragraph(media_layer_,fonts_.semibold,v.title,96,90,32,1700,40,paper);media_layer_.pop_opacity();}
 #if defined(MUSEUM_DESKTOP)
     if(full<.999f){
 #endif
-    const float progress_alpha=full+(1-full)*std::clamp(1.f-(film_progress_age_-2.f)*5.f,0.f,1.f);
+    const float progress_alpha=full+(1-full)*inline_progress_alpha;
     media_layer_.push_opacity(progress_alpha);
     const float x=screen.x+30,y=screen.y+screen.h-48,w=screen.w-60;
     media_layer_.rounded_rect({x-15,y-34,w+30,70},0,Color::rgb(0,.5f));

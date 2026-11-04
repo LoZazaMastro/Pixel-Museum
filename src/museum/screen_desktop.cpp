@@ -568,13 +568,22 @@ bool Screen::handle_desktop_input(InputFrame&i,ui::Feedback&f){
     if(object_inspect_){if(wheel)object_zoom_=std::clamp(object_zoom_+wheel*.16f,.5f,4.f);if(p.primary_held){object_angle_+=p.delta_x*.009f;object_tilt_offset_=std::clamp(object_tilt_offset_+p.delta_y*.008f,-1.25f,1.25f);object_manual_=true;}return false;}
     if(screening_||playlist_active_){
         if(wheel){media_volume_=std::clamp(media_volume_+wheel*.05f,0.f,1.f);video_.volume(media_volume_);dirty_=true;save_delay_=1;}
+        if(playlist_active_){
+            playlist_hover_=-1;
+            const auto*list=current_soundtrack();const auto*entry=current();
+            if(list&&entry&&p.available){
+                const auto rows=playlist_layout(*entry,*list);
+                if(inside({100,rows.rows_y-29,1020,rows.visible*56.f},p.x,p.y)){
+                    const int row=int((p.y-rows.rows_y+29)/56);
+                    if(rows.first+row<int(list->tracks.size()))playlist_hover_=rows.first+row;
+                }
+            }
+        }
         if(!click)return false;
         if(playlist_active_){
             const auto*list=current_soundtrack();if(!list)return false;
-            float title_size=54,artist_size=25;const auto*entry=current();if(!entry)return false;
-            const auto bottom=[&]{return 200.f+fonts_.display.font->wrap(entry->title,title_size,1000).size()*title_size*1.18f+8.f+fonts_.regular.font->wrap(list->composer,artist_size,1020).size()*artist_size*1.4f;};
-            while(bottom()>480&&(title_size>34||artist_size>20)){if(title_size>34)--title_size;if(artist_size>20)artist_size-=.25f;}
-            const float top=std::max(360.f,bottom()+44.f);const int count=std::clamp(1+int(std::floor((780-top)/56)),1,7);const int first=std::clamp(playlist_selection_-count/2,0,std::max(0,int(list->tracks.size())-count));
+            const auto*entry=current();if(!entry)return false;const auto rows=playlist_layout(*entry,*list);
+            const float top=rows.rows_y;const int count=rows.visible,first=rows.first;
             if(inside({100,top-29,1020,count*56.f},p.x,p.y)){const int row=int((p.y-top+29)/56);playlist_selection_=std::clamp(first+row,0,int(list->tracks.size())-1);i.pressed|=action_bit(Action::confirm);}
             else if(inside({100,881,1720,33},p.x,p.y)&&video_.state()==media::State::ready){const auto&track=list->tracks[size_t(std::clamp(playlist_playing_,0,int(list->tracks.size())-1))];const media::PlaybackWindow window{track.start_seconds,track.end_seconds};video_.seek(window.seek((p.x-100)/1720*window.duration(video_.duration()),video_.duration()));playlist_completed_=false;return true;}
         }else{
@@ -807,9 +816,7 @@ bool Screen::desktop_pointer_target(float x,float y)const{
     if(screening_||playlist_active_){
         if(playlist_active_){
             const auto*list=current_soundtrack();const auto*entry=current();if(!list||!entry)return false;
-            float title_size=54,artist_size=25;const auto bottom=[&]{return 200.f+fonts_.display.font->wrap(entry->title,title_size,1000).size()*title_size*1.18f+8.f+fonts_.regular.font->wrap(list->composer,artist_size,1020).size()*artist_size*1.4f;};
-            while(bottom()>480&&(title_size>34||artist_size>20)){if(title_size>34)--title_size;if(artist_size>20)artist_size-=.25f;}
-            const float top=std::max(360.f,bottom()+44.f);const int count=std::clamp(1+int(std::floor((780-top)/56)),1,7);
+            const auto rows=playlist_layout(*entry,*list);const float top=rows.rows_y;const int count=rows.visible;
             return inside({100,top-29,1020,count*56.f},x,y)||(video_.state()==media::State::ready&&inside({100,881,1720,33},x,y));
         }
         const float full=std::clamp(video_full_.value,0.f,1.f);const Rect screen{screening_origin_.x*(1-full),screening_origin_.y*(1-full),screening_origin_.w+(1920-screening_origin_.w)*full,screening_origin_.h+(1080-screening_origin_.h)*full};

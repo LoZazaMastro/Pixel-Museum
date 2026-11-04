@@ -83,6 +83,16 @@ CollectionInstallViewState Screen::collection_install_view_state()const{
         break;
     }}
     view.progress=collection_install_work_progress(view);
+    if(initial_database_sync_&&!initial_database_complete_){
+        const auto database=database_updater_.snapshot();
+        view.downloaded_bytes+=database.downloaded_bytes;view.total_bytes+=database.total_bytes;
+        if(database.phase==DatabaseUpdater::Phase::failed||!initial_database_error_.empty()){
+            view.phase=CollectionInstallPhase::error;view.error=CollectionInstallError::network;
+        }else if(state.phase==CollectionInstaller::Phase::ready){
+            view.phase=database.phase==DatabaseUpdater::Phase::downloading?CollectionInstallPhase::downloading:CollectionInstallPhase::preparing;
+        }
+        view.progress=std::min(.99f,collection_install_work_progress(view));
+    }
     if(collection_media_error_){view.phase=CollectionInstallPhase::error;view.error=CollectionInstallError::invalid_files;}
     return view;
 }
@@ -95,6 +105,12 @@ void Screen::handle_collection_startup(const hui::InputFrame& input,hui::ui::Fee
     }
     if(collection_presentation_.quiet_validation)return;
     if(!input.is_pressed(Action::confirm))return;
+    if(initial_database_sync_&&!initial_database_complete_&&
+       (database_updater_.snapshot().phase==DatabaseUpdater::Phase::failed||!initial_database_error_.empty())){
+        initial_database_error_.clear();
+        const bool started=database_updater_.check();
+        feedback.play(started?Cue::select:Cue::error);return;
+    }
     const auto phase=collection_installer_.snapshot().phase;
     if(collection_media_error_){
         if(start_collection_media())collection_pending_=false;
@@ -123,6 +139,38 @@ void Screen::update_collection_startup(float delta){
     if(!collection_started_){
         collection_started_=true;collection_installer_.start();
     }
+    if(initial_database_sync_&&!initial_database_started_){
+        initial_database_started_=database_updater_.check();
+    }
+    if(initial_database_sync_&&!initial_database_complete_&&initial_database_error_.empty()){
+        auto database=database_updater_.snapshot();
+        if(database.phase==DatabaseUpdater::Phase::available)database_updater_.install();
+        if(collection_installer_.is_ready()&&(database.phase==DatabaseUpdater::Phase::current||database.phase==DatabaseUpdater::Phase::ready)){
+            // No media readers are running yet. Mount and load the verified
+            // snapshot now, so the first visit never needs an update/restart.
+            const auto* selected=current();const std::string selected_id=selected?selected->id:initial_exhibit_;
+            bool loaded=true;
+            if(database.phase==DatabaseUpdater::Phase::ready||database.current_revision>1){
+                loaded=database_updater_.configure(root_,data_)&&catalog_.load(root_+"/content/catalog.json")&&history_catalog_all_.load(root_+"/content/human-history.json");
+                if(loaded){
+                    load_runtime_credits();
+                    culture_ambience_.load(root_+"/content/culture-memories.json");
+                    apply_language();rebuild();
+                    for(size_t n=0;n<visible_.size();++n)if(catalog_.entries[size_t(visible_[n])].id==selected_id){focus_=int(n);break;}
+                    timeline_.snap(float(focus_));
+                }
+            }
+            if(loaded){
+                initial_database_complete_=true;database_auto_checked_=true;
+                database_notified_revision_=database_ready_notified_revision_=database.revision;
+                database_completion_notice_=0;
+                hui::sys::log("[Museum] initial database ready / revision %llu",static_cast<unsigned long long>(database.revision));
+            }else{
+                initial_database_error_="Cannot load the verified initial database.";
+                hui::sys::log("[Museum] initial database activation failed / %s",catalog_.error.c_str());
+            }
+        }
+    }
     const auto state=collection_installer_.snapshot();
     collection_presentation_.observe(state,collection_media_error_);
     const int phase=int(state.phase),progress=state.total_bytes?int(std::min(10.,double(state.downloaded_bytes)*10./double(state.total_bytes))):-1;
@@ -131,7 +179,7 @@ void Screen::update_collection_startup(float delta){
         if(!state.diagnostic.empty())hui::sys::log("[Museum] collection filesystem errno %d / %s",state.filesystem_errno,state.diagnostic.c_str());
         collection_phase_log_=phase;collection_progress_log_=std::max(collection_progress_log_,progress);
     }
-    if(collection_installer_.is_ready()&&!collection_media_error_){
+    if(collection_installer_.is_ready()&&!collection_media_error_&&(!initial_database_sync_||initial_database_complete_)){
         collection_ready_elapsed_+=elapsed;
         // Completed downloads/replayed introductions get a short conclusion.
         // Ordinary reopen validation goes directly to the unchanged startup animation.
@@ -263,6 +311,10 @@ void Screen::update_collection_removal(float delta){
     if(!configured){collection_removal_state_=CollectionRemovalState::failed;return;}
     removal_trace("installer configured; showing language selection");
     collection_pending_=true;collection_started_=false;
+#if defined(__FreeBSD__)
+    initial_database_sync_=true;
+#endif
+    initial_database_started_=initial_database_complete_=false;initial_database_error_.clear();
     collection_media_started_=false;collection_media_error_=false;
     collection_elapsed_=collection_ready_elapsed_=0;
     collection_phase_log_=collection_progress_log_=-1;collection_presentation_.replay();

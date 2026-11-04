@@ -301,6 +301,11 @@ struct DatabaseUpdater::Impl {
             if(missing.contains(f.sha)){aliases.push_back(&f);continue;}
             const auto path=blob(f);
             if(digest_file(path,f,stopping)&&json_file(path,f))continue;
+            // A fresh bootstrap can already contain most of this cumulative
+            // snapshot. Reuse its verified immutable file instead of fetching
+            // and storing the same image again.
+            const auto bundled=root+"/"+f.path;
+            if(digest_file(bundled,f,stopping)&&json_file(bundled,f))continue;
             missing.insert(f.sha);pending.push_back(&f);total+=f.bytes;
         }
         {std::lock_guard<std::mutex> lock(mutex);state.total_bytes=total;}
@@ -361,7 +366,14 @@ bool DatabaseUpdater::configure(const std::string& application_root,const std::s
     Manifest m;if(!parse_manifest(Json::parse(bytes,nullptr,false),m,p.local)||m.files.empty()||m.revision<=p.state.current_revision)return true;
     std::map<std::string,std::string> overlay;
     p.stopping.store(false);
-    for(const auto& f:m.files){const auto path=p.blob(f);if(!digest_file(path,f,p.stopping)||!json_file(path,f))return true;overlay[p.root+"/"+f.path]=path;}
+    for(const auto& f:m.files){
+        auto path=p.blob(f);
+        if(!digest_file(path,f,p.stopping)||!json_file(path,f)){
+            path=p.root+"/"+f.path;
+            if(!digest_file(path,f,p.stopping)||!json_file(path,f))return true;
+        }
+        overlay[p.root+"/"+f.path]=path;
+    }
     hui::save::set_read_overlay(std::move(overlay));p.state.current_revision=m.revision;p.state.revision=m.revision;p.state.version=m.version;
     return true;
 }

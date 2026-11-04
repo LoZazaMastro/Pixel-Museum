@@ -32,11 +32,12 @@ void draw_soundtrack_card(hui::gfx::DrawList&list,hui::ui::Fonts&fonts,Rect boun
  const int count=int(playlist.tracks.size());selection=count?std::clamp(selection,0,count-1):-1;
  const bool current=playing_index>=0&&playing_index<count;
  list.push_clip(bounds);list.push_transform(scale,0,0,left,top);
- hui::ui::text(list,fonts.mono,"LISTENING ROOM / SOUNDTRACK",36,31,13,quiet,Align::left,1.1f);
+ hui::ui::text(list,fonts.mono,soundtrack_label(playlist),36,31,13,quiet,Align::left,1.1f);
  const std::string title=i18n::music_room_title(playlist.title.empty()?std::string_view("Music from the collection"):std::string_view(playlist.title));
  const float title_size=fitted(fonts.display,title,31,964,21);
  hui::ui::text(list,fonts.display,fonts.display.font->fit(hui::ui::resolve_text(title),title_size,964),34,77,title_size,ink);
- if(!playlist.composer.empty())list.text(*fonts.regular.font,fonts.regular.texture,fonts.regular.font->fit(i18n::music(playlist.composer),19,964),36,107,19,quiet);
+ const auto& artist=soundtrack_artist(playlist,selection);
+ if(!artist.empty())list.text(*fonts.regular.font,fonts.regular.texture,fonts.regular.font->fit(i18n::music(artist),19,964),36,107,19,quiet);
  constexpr Rect frame{36,145,480,270};
  list.shadow(frame,0,17,ink.with_alpha(.11f));list.rounded_rect(frame,0,Color::rgb(0x19251f));
  // A soundtrack is an audio presentation. No decoded film or thumbnail is displayed.

@@ -11,3 +11,5 @@ Optional DualSense state decoding is adapted from **PSSwanStation by Press5elect
 The museum's original ambient score and its reproducible composition source are described in [music/README.md](music/README.md).
 
 The restricted collection writer and descriptor-relative syscall normalization adapt the user-supplied Stremio Plus download writer, under GPL-3.0-or-later. Its source licence identifiers are retained; the adapted writer is included under `tools/collection-writer/`.
+
+The Windows player includes [Deno 2.9.8](https://github.com/denoland/deno/releases/tag/v2.9.8), under MIT, and the unchanged official [yt-dlp EJS 0.8.0 solver](https://github.com/yt-dlp/ejs/releases/tag/0.8.0), under Unlicense. EJS bundles the [Meriyah](https://github.com/meriyah/meriyah) parser (ISC) and [Astring](https://github.com/davidbonnet/astring) generator (MIT). Their licence texts accompany the runtime under `tools/windows-media/`; [pinned release and source provenance](tools/windows-media/versions.json) records the exact distributed versions and checksums.

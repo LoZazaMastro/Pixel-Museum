@@ -47,7 +47,7 @@ UNUSED_ENTRY_METADATA = frozenset((
 ))
 UNUSED_SOUNDTRACK_METADATA = frozenset((
     "album_completeness", "recording_collection_scope", "independent_review_receipt",
-    "completeness", "coverage_status", "full_album_collection", "music_kind",
+    "completeness", "coverage_status", "full_album_collection",
     "expected_album_tracks", "id",
 ))
 SOUNDTRACK_TRACK_FIELDS = VIDEO_FIELDS - {"channel_url", "official_uploader_verified"}
