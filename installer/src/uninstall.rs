@@ -16,12 +16,19 @@ const EXE: &str = "Pixel Museum.exe";
 pub struct Installation {
     pub language: String,
     pub registration: Option<integration::Registration>,
-    inventory: Inventory,
-    receipt: serde_json::Value,
+    pub(crate) inventory: Inventory,
+    pub(crate) receipt: serde_json::Value,
     receipt_bytes: Vec<u8>,
 }
 
 pub fn inspect(root: &Path) -> Result<Installation> {
+    inspect_with_hash(root, |path, _| update::hash_file(path))
+}
+
+pub(crate) fn inspect_with_hash(
+    root: &Path,
+    hash: impl FnOnce(&Path, u64) -> Result<String>,
+) -> Result<Installation> {
     update::ordinary_absolute(root)?;
     ensure!(root.is_dir(), "Installation folder does not exist");
     let receipt_bytes = update::read_limited(&root.join(integration::RECEIPT), 1024 * 1024)?;
@@ -43,7 +50,7 @@ pub fn inspect(root: &Path) -> Result<Installation> {
     process::executable_header(&root.join(EXE))?;
     ensure!(
         fs::metadata(root.join(EXE))?.len() == executable.bytes
-            && update::hash_file(&root.join(EXE))? == executable.sha256,
+            && hash(&root.join(EXE), executable.bytes)? == executable.sha256,
         "The installed application does not match its inventory. Finish any application update before uninstalling."
     );
     let registration = receipt
@@ -73,10 +80,154 @@ pub fn inspect(root: &Path) -> Result<Installation> {
 pub struct Outcome {
     pub schema_version: u32,
     pub removed_files: usize,
+    pub removed_collection_archives: usize,
     pub retained_modified_files: Vec<String>,
     pub personal_data_preserved: bool,
     pub retained_maintenance_helper: Option<String>,
     pub cleanup_warning: Option<String>,
+}
+
+fn collection_record(name: &str) -> bool {
+    let name = name.to_ascii_lowercase();
+    if !name.starts_with("collection/") {
+        return false;
+    }
+    let leaf = name.rsplit('/').next().unwrap_or("");
+    leaf == ".complete.json"
+        || (leaf.starts_with(".pack-") && leaf.ends_with(".json"))
+        || name.ends_with("/assets/images/manifest.json")
+}
+
+fn receipt_archives(receipt: &serde_json::Value) -> Result<Vec<update::OwnedFile>> {
+    let Some(packages) = receipt.get("packages") else {
+        return Ok(Vec::new());
+    };
+    let packages: Vec<crate::manifest::Package> = serde_json::from_value(packages.clone())?;
+    let mut result = Vec::new();
+    let mut seen = std::collections::BTreeSet::new();
+    for p in packages {
+        if p.kind != crate::manifest::PackageKind::Collection
+            || p.format != crate::manifest::PackageFormat::Tar
+        {
+            continue;
+        }
+        crate::manifest::safe_relative_path(&p.target)?;
+        ensure!(
+            p.target.starts_with("collection/")
+                && p.target.ends_with("/archives")
+                && p.target.split('/').count() >= 3
+                && crate::manifest::valid_sha256(&p.sha256)
+                && p.bytes > 0
+                && p.bytes == p.unpacked_bytes,
+            "Unrecognized owned collection receipt"
+        );
+        let path = format!("{}/{}.tar", p.target, p.sha256.to_ascii_lowercase());
+        ensure!(
+            seen.insert(path.to_ascii_lowercase()),
+            "Duplicate collection archive receipt"
+        );
+        result.push(update::OwnedFile {
+            path,
+            bytes: p.bytes,
+            sha256: p.sha256.to_ascii_lowercase(),
+        });
+    }
+    Ok(result)
+}
+
+pub fn remove_with_policy(root: &Path, remove_personal_data: bool) -> Result<Outcome> {
+    if !remove_personal_data {
+        let outcome = remove(root)?;
+        ensure!(
+            outcome.cleanup_warning.is_none(),
+            "{}",
+            outcome.cleanup_warning.as_deref().unwrap_or("")
+        );
+        return Ok(outcome);
+    }
+    let installation = inspect(root)?;
+    let environment = installation
+        .registration
+        .as_ref()
+        .map(|_| integration::Environment::current_user())
+        .transpose()?;
+    let outcome = remove_files_with_policy(
+        root,
+        environment.as_ref(),
+        None,
+        &std::env::current_exe()?,
+        true,
+    )?;
+    ensure!(
+        outcome.cleanup_warning.is_none(),
+        "{}",
+        outcome.cleanup_warning.as_deref().unwrap_or("")
+    );
+    Ok(outcome)
+}
+
+fn full_cleanup_paths(root: &Path, retained: Option<&str>) -> Result<Vec<String>> {
+    fn collect(
+        root: &Path,
+        folder: &Path,
+        retained: Option<&str>,
+        out: &mut Vec<String>,
+    ) -> Result<()> {
+        for entry in fs::read_dir(folder)? {
+            let path = entry?.path();
+            let relative = path
+                .strip_prefix(root)?
+                .to_string_lossy()
+                .replace('\\', "/");
+            let folded = relative.to_ascii_lowercase();
+            if folded == integration::RECEIPT
+                || folded == INVENTORY
+                || folded == "application-updates/apply.lock"
+                || retained.is_some_and(|p| p.eq_ignore_ascii_case(&relative))
+            {
+                continue;
+            }
+            if folded == "application-updates"
+                || retained.is_some_and(|p| p.to_ascii_lowercase().starts_with(&(folded + "/")))
+            {
+                crate::manifest::ensure_no_links(&path)?;
+                ensure!(
+                    path.is_dir(),
+                    "Maintenance helper ancestor is not a directory"
+                );
+                collect(root, &path, retained, out)?;
+            } else {
+                out.push(relative);
+            }
+        }
+        Ok(())
+    }
+    let mut result = Vec::new();
+    collect(root, root, retained, &mut result)?;
+    Ok(result)
+}
+
+fn remove_quarantine_no_follow(path: &Path, boundary: &Path) -> Result<()> {
+    ensure!(path.starts_with(boundary), "Cleanup escaped quarantine");
+    let metadata = fs::symlink_metadata(path)?;
+    use std::os::windows::fs::MetadataExt;
+    if metadata.file_attributes() & 0x400 != 0 {
+        // A directory reparse node is not FileType::is_dir(). Use the Win32
+        // DIRECTORY attribute so RemoveDirectory unlinks the junction itself.
+        if metadata.file_attributes() & 0x10 != 0 {
+            fs::remove_dir(path)?;
+        } else {
+            fs::remove_file(path)?;
+        }
+    } else if metadata.is_dir() {
+        for entry in fs::read_dir(path)? {
+            remove_quarantine_no_follow(&entry?.path(), boundary)?;
+        }
+        fs::remove_dir(path)?;
+    } else {
+        fs::remove_file(path)?;
+    }
+    Ok(())
 }
 
 pub fn remove(root: &Path) -> Result<Outcome> {
@@ -109,6 +260,16 @@ fn remove_files(
     fail_after: Option<usize>,
     executing: &Path,
 ) -> Result<Outcome> {
+    remove_files_with_policy(root, environment, fail_after, executing, false)
+}
+
+fn remove_files_with_policy(
+    root: &Path,
+    environment: Option<&integration::Environment>,
+    fail_after: Option<usize>,
+    executing: &Path,
+    remove_personal_data: bool,
+) -> Result<Outcome> {
     let _ = inspect(root)?;
     let cache = root.join("application-updates");
     crate::manifest::ensure_no_links(&cache)?;
@@ -140,31 +301,78 @@ fn remove_files(
         } else {
             None
         };
-    for entry in &installation.inventory.files {
-        // Never derive removal authority from protected or unknown inventory paths.
-        if !update::allowed(&entry.path) {
-            continue;
-        }
-        let path = root.join(crate::manifest::safe_relative_path(&entry.path)?);
-        crate::manifest::ensure_no_links(&path)?;
-        if !path.exists() {
-            continue;
-        }
-        let file = process::open_regular(&path)?;
-        if file.metadata()?.len() != entry.bytes || update::hash_file(&path)? != entry.sha256 {
-            modified.push(entry.path.clone());
-            continue;
-        }
-        // Keep our mapped maintenance image beside the retained personal data.
-        // Do not copy, relaunch, schedule or unlink our running executable.
-        if retained_helper
-            .as_deref()
-            .is_some_and(|p| p.eq_ignore_ascii_case(&entry.path))
-        {
-            continue;
-        }
-        paths.push(entry.path.clone());
+    let retained_helper_sha256 = retained_helper
+        .as_ref()
+        .map(|path| {
+            installation
+                .inventory
+                .files
+                .iter()
+                .find(|entry| entry.path.eq_ignore_ascii_case(path))
+                .map(|entry| entry.sha256.clone())
+                .context("Mapped maintenance helper is not inventoried")
+        })
+        .transpose()?;
+    if let Some(expected) = &retained_helper_sha256 {
+        ensure!(
+            update::hash_file(&root.join(integration::HELPER))? == *expected,
+            "Mapped maintenance helper changed"
+        );
     }
+    if !remove_personal_data {
+        for entry in &installation.inventory.files {
+            // Never derive removal authority from protected or unknown inventory paths.
+            if !(update::allowed(&entry.path)
+                || collection_record(&entry.path)
+                || (entry.path.starts_with("assets/") && entry.path.ends_with(".log")))
+            {
+                continue;
+            }
+            let path = root.join(crate::manifest::safe_relative_path(&entry.path)?);
+            crate::manifest::ensure_no_links(&path)?;
+            if !path.exists() {
+                continue;
+            }
+            let file = process::open_regular(&path)?;
+            if file.metadata()?.len() != entry.bytes || update::hash_file(&path)? != entry.sha256 {
+                modified.push(entry.path.clone());
+                continue;
+            }
+            // Keep our mapped maintenance image beside the retained personal data.
+            // Do not copy, relaunch, schedule or unlink our running executable.
+            if retained_helper
+                .as_deref()
+                .is_some_and(|p| p.eq_ignore_ascii_case(&entry.path))
+            {
+                continue;
+            }
+            paths.push(entry.path.clone());
+        }
+        for archive in receipt_archives(&installation.receipt)? {
+            if paths.iter().any(|p| p.eq_ignore_ascii_case(&archive.path)) {
+                continue;
+            }
+            let path = root.join(crate::manifest::safe_relative_path(&archive.path)?);
+            crate::manifest::ensure_no_links(&path)?;
+            if !path.exists() {
+                continue;
+            }
+            let file = process::open_regular(&path)?;
+            if file.metadata()?.len() != archive.bytes
+                || update::hash_file(&path)? != archive.sha256
+            {
+                modified.push(archive.path);
+                continue;
+            }
+            paths.push(archive.path);
+        }
+    } else {
+        paths = full_cleanup_paths(root, retained_helper.as_deref())?;
+    }
+    let removed_collection_archives = paths
+        .iter()
+        .filter(|p| p.starts_with("collection/") && p.ends_with(".tar"))
+        .count();
     paths.push(INVENTORY.into());
     paths.sort_by_key(|p| (p != EXE, p.clone()));
     let quarantine = tempfile::Builder::new()
@@ -177,9 +385,20 @@ fn remove_files(
                 bail!("Injected uninstall failure");
             }
             let source = root.join(path);
-            let target = quarantine.path().join(path);
-            crate::manifest::ensure_no_links(&source)?;
+            let target = quarantine.path().join("files").join(path);
+            if remove_personal_data {
+                crate::manifest::ensure_no_links(
+                    source.parent().context("Missing uninstall entry parent")?,
+                )?;
+            } else {
+                crate::manifest::ensure_no_links(&source)?;
+            }
             fs::create_dir_all(target.parent().unwrap())?;
+            ensure!(
+                matches!(fs::symlink_metadata(&target),Err(ref e) if e.kind()==std::io::ErrorKind::NotFound),
+                "Quarantine payload destination already exists: {}",
+                target.display()
+            );
             fs::rename(&source, &target).with_context(|| {
                 format!(
                     "Cannot remove {}. Close Pixel Museum and try again.",
@@ -195,8 +414,12 @@ fn remove_files(
         let mut receipt = installation.receipt.clone();
         receipt["uninstalled"] = true.into();
         receipt["windows_registered"] = false.into();
-        receipt["personal_data_preserved"] = true.into();
+        receipt["personal_data_preserved"] = (!remove_personal_data).into();
+        receipt["full_folder_cleanup_requested"] = remove_personal_data.into();
+        receipt["removed_collection_archives"] = removed_collection_archives.into();
         receipt["retained_maintenance_helper"] = serde_json::to_value(&retained_helper)?;
+        receipt["retained_maintenance_helper_sha256"] =
+            serde_json::to_value(&retained_helper_sha256)?;
         update::atomic_json(&root.join(integration::RECEIPT), &receipt)?;
         if let (Some(registration), Some(environment)) = (&installation.registration, environment) {
             integration::unregister(root, registration, environment)?;
@@ -212,7 +435,7 @@ fn remove_files(
             errors.push(format!("Restore installation receipt: {e:#}"));
         }
         for path in moved.iter().rev() {
-            let source = quarantine.path().join(path);
+            let source = quarantine.path().join("files").join(path);
             let destination = root.join(path);
             if destination.exists() {
                 errors.push(format!(
@@ -235,10 +458,25 @@ fn remove_files(
         }
         return Err(error.context("Uninstall cancelled; application files restored"));
     }
-    let cleanup_warning = quarantine
-        .close()
-        .err()
-        .map(|e| format!("Application removed; temporary owned-file cleanup failed: {e}"));
+    drop(lock);
+    if remove_personal_data {
+        fs::remove_file(root.join("application-updates/apply.lock"))?;
+        let _ = fs::remove_dir(root.join("application-updates"));
+    }
+    let cleanup_warning = if remove_personal_data {
+        let path = quarantine.keep();
+        remove_quarantine_no_follow(&path, &path).err().map(|e| {
+            format!(
+                "Application removed; cleanup needs attention at {}: {e:#}",
+                path.display()
+            )
+        })
+    } else {
+        quarantine
+            .close()
+            .err()
+            .map(|e| format!("Application removed; temporary owned-file cleanup failed: {e}"))
+    };
     let mut directories = std::collections::BTreeSet::new();
     for path in &moved {
         let mut parent = Path::new(path).parent();
@@ -261,8 +499,9 @@ fn remove_files(
     Ok(Outcome {
         schema_version: 1,
         removed_files: moved.len(),
+        removed_collection_archives,
         retained_modified_files: modified,
-        personal_data_preserved: true,
+        personal_data_preserved: !remove_personal_data,
         retained_maintenance_helper: retained_helper,
         cleanup_warning,
     })
@@ -436,6 +675,179 @@ mod tests {
             serde_json::from_slice(&fs::read(root.join(integration::RECEIPT)).unwrap()).unwrap();
         assert_eq!(receipt["retained_maintenance_helper"], integration::HELPER);
         assert_eq!(receipt["uninstalled"], true);
+        environment.cleanup_fixture();
+    }
+    #[test]
+    fn receipt_owned_collection_is_removed_but_modified_and_unrelated_tars_remain() {
+        let (_temp, root, environment) = fixture();
+        let target = "collection/owned-ready/archives";
+        fs::create_dir_all(root.join(target)).unwrap();
+        let mut packages = Vec::new();
+        let mut archive_paths = Vec::new();
+        for (id, original, actual) in [
+            (
+                "one",
+                b"original one".as_slice(),
+                b"original one".as_slice(),
+            ),
+            (
+                "two",
+                b"original two".as_slice(),
+                b"modified two".as_slice(),
+            ),
+        ] {
+            let hash = format!("{:x}", Sha256::digest(original));
+            let path = format!("{target}/{hash}.tar");
+            fs::write(root.join(&path), actual).unwrap();
+            archive_paths.push(path);
+            packages.push(serde_json::json!({"id":id,"kind":"collection","format":"tar","filename":format!("{id}.tar"),"url":null,"target":target,"sha256":hash,"bytes":original.len(),"unpacked_bytes":original.len()}));
+        }
+        fs::write(root.join(format!("{target}/personal.tar")), b"unrelated").unwrap();
+        let mut receipt: serde_json::Value =
+            serde_json::from_slice(&fs::read(root.join(integration::RECEIPT)).unwrap()).unwrap();
+        receipt["packages"] = packages.into();
+        update::atomic_json(&root.join(integration::RECEIPT), &receipt).unwrap();
+        let outcome = remove_with_environment(&root, Some(&environment), None).unwrap();
+        assert_eq!(outcome.removed_collection_archives, 1);
+        assert!(!root.join(&archive_paths[0]).exists());
+        assert_eq!(
+            fs::read(root.join(&archive_paths[1])).unwrap(),
+            b"modified two"
+        );
+        assert_eq!(
+            fs::read(root.join(format!("{target}/personal.tar"))).unwrap(),
+            b"unrelated"
+        );
+        assert!(root.join("preferences.json").is_file());
+        assert!(outcome.retained_modified_files.contains(&archive_paths[1]));
+        environment.cleanup_fixture();
+    }
+    #[test]
+    fn collection_uninstall_receipt_cannot_target_personal_or_outside_paths() {
+        for target in [
+            "../outside/archives",
+            "database/private/archives",
+            "preferences.json",
+            "collection/../outside/archives",
+        ] {
+            let receipt = serde_json::json!({"packages":[{"id":"bad","kind":"collection","format":"tar","filename":"one.tar","url":null,"target":target,"sha256":"a".repeat(64),"bytes":1024,"unpacked_bytes":1024}]});
+            assert!(receipt_archives(&receipt).is_err(), "Accepted {target}");
+        }
+    }
+    #[test]
+    fn opt_in_full_cleanup_removes_unknown_progress_without_following_junctions() {
+        use std::os::windows::process::CommandExt;
+        let (temp, root, environment) = fixture();
+        let outside = temp.path().join("outside-not-owned");
+        fs::create_dir(&outside).unwrap();
+        fs::write(outside.join("private.txt"), b"outside survives").unwrap();
+        let junction = root.join("user-junction");
+        let status = std::process::Command::new("cmd.exe")
+            .args(["/C", "mklink", "/J"])
+            .arg(&junction)
+            .arg(&outside)
+            .creation_flags(0x0800_0000)
+            .status()
+            .unwrap();
+        assert!(status.success());
+        let outcome = remove_files_with_policy(
+            &root,
+            Some(&environment),
+            None,
+            &root.join(integration::HELPER),
+            true,
+        )
+        .unwrap();
+        assert!(!outcome.personal_data_preserved);
+        assert!(
+            outcome.cleanup_warning.is_none(),
+            "{:?}",
+            outcome.cleanup_warning
+        );
+        assert!(!root.join("notes.txt").exists());
+        assert!(!root.join("preferences.json").exists());
+        assert!(!root.join("video-settings.json").exists());
+        assert!(!root.join("trophies-v1.dat").exists());
+        assert!(!junction.exists());
+        assert_eq!(
+            fs::read(outside.join("private.txt")).unwrap(),
+            b"outside survives"
+        );
+        assert!(root.join(integration::HELPER).is_file());
+        let receipt: serde_json::Value =
+            serde_json::from_slice(&fs::read(root.join(integration::RECEIPT)).unwrap()).unwrap();
+        assert_eq!(receipt["personal_data_preserved"], false);
+        assert_eq!(receipt["full_folder_cleanup_requested"], true);
+        assert!(!fs::read_dir(root.parent().unwrap()).unwrap().any(|e| {
+            e.unwrap()
+                .file_name()
+                .to_string_lossy()
+                .starts_with(".pixel-museum-uninstall-")
+        }));
+        environment.cleanup_fixture();
+    }
+    #[test]
+    fn failure_after_collection_archive_move_rolls_it_back_with_app_and_receipt() {
+        let (_temp, root, environment) = fixture();
+        let tar = b"owned archive";
+        let hash = format!("{:x}", Sha256::digest(tar));
+        let target = "collection/zz-ready/archives";
+        let path = format!("{target}/{hash}.tar");
+        fs::create_dir_all(root.join(target)).unwrap();
+        fs::write(root.join(&path), tar).unwrap();
+        let mut receipt: serde_json::Value =
+            serde_json::from_slice(&fs::read(root.join(integration::RECEIPT)).unwrap()).unwrap();
+        receipt["packages"] = serde_json::json!([{"id":"one","kind":"collection","format":"tar","filename":"one.tar","url":null,"target":target,"sha256":hash,"bytes":tar.len(),"unpacked_bytes":tar.len()}]);
+        update::atomic_json(&root.join(integration::RECEIPT), &receipt).unwrap();
+        let original = fs::read(root.join(integration::RECEIPT)).unwrap();
+        assert!(remove_with_environment(&root, Some(&environment), Some(5)).is_err());
+        assert_eq!(fs::read(root.join(&path)).unwrap(), tar);
+        assert_eq!(fs::read(root.join(integration::RECEIPT)).unwrap(), original);
+        assert!(root.join(EXE).is_file());
+        assert!(environment.program_link().is_file());
+        remove_with_environment(&root, Some(&environment), None).unwrap();
+        environment.cleanup_fixture();
+    }
+    #[test]
+    fn full_cleanup_rollback_keeps_user_journal_separate_from_transaction_journal() {
+        let (_temp, root, environment) = fixture();
+        let user_bytes = b"unrelated user journal must survive rollback";
+        fs::write(root.join("uninstall-journal.json"), user_bytes).unwrap();
+        let original_receipt = fs::read(root.join(integration::RECEIPT)).unwrap();
+        let mut planned = full_cleanup_paths(&root, Some(integration::HELPER)).unwrap();
+        planned.push(INVENTORY.into());
+        planned.sort_by_key(|p| (p != EXE, p.clone()));
+        let fail = planned
+            .iter()
+            .position(|p| p == "uninstall-journal.json")
+            .unwrap()
+            + 1;
+        assert!(fail < planned.len());
+        assert!(
+            remove_files_with_policy(
+                &root,
+                Some(&environment),
+                Some(fail),
+                &root.join(integration::HELPER),
+                true
+            )
+            .is_err()
+        );
+        assert_eq!(
+            fs::read(root.join("uninstall-journal.json")).unwrap(),
+            user_bytes
+        );
+        assert_eq!(
+            fs::read(root.join(integration::RECEIPT)).unwrap(),
+            original_receipt
+        );
+        assert!(root.join(EXE).is_file());
+        assert!(environment.program_link().is_file());
+        remove_with_environment(&root, Some(&environment), None).unwrap();
+        assert_eq!(
+            fs::read(root.join("uninstall-journal.json")).unwrap(),
+            user_bytes
+        );
         environment.cleanup_fixture();
     }
 }

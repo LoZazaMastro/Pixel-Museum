@@ -18,7 +18,10 @@ use std::{
     fs::{self, File, OpenOptions},
     io::{Read, Seek, SeekFrom, Write},
     path::{Path, PathBuf},
-    sync::atomic::{AtomicBool, Ordering},
+    sync::{
+        Mutex,
+        atomic::{AtomicBool, Ordering},
+    },
     time::{Duration, Instant},
 };
 
@@ -38,7 +41,10 @@ pub struct Release {
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum Phase {
     Download,
+    Check,
     Verify,
+    Extract,
+    Prepare,
     Install,
     Finish,
 }
@@ -54,6 +60,35 @@ pub struct Progress {
 pub fn check_cancel(cancel: &AtomicBool) -> Result<()> {
     ensure!(!cancel.load(Ordering::Relaxed), "Installation cancelled");
     Ok(())
+}
+
+#[derive(Default)]
+pub struct InstallControl {
+    cancelled: AtomicBool,
+    committing: Mutex<bool>,
+}
+
+impl InstallControl {
+    pub fn cancel_token(&self) -> &AtomicBool {
+        &self.cancelled
+    }
+
+    pub fn request_cancel(&self) {
+        if !*self.committing.lock().unwrap() {
+            self.cancelled.store(true, Ordering::Relaxed);
+        }
+    }
+
+    pub fn is_committing(&self) -> bool {
+        *self.committing.lock().unwrap()
+    }
+
+    pub fn begin_commit(&self) -> Result<()> {
+        let mut committing = self.committing.lock().unwrap();
+        check_cancel(self.cancel_token())?;
+        *committing = true;
+        Ok(())
+    }
 }
 
 pub fn client() -> Result<Client> {
@@ -187,11 +222,227 @@ pub fn validate_destination(destination: &Path) -> Result<PathBuf> {
     );
     if destination.exists() {
         ensure!(
-            destination.is_dir() && fs::read_dir(destination)?.next().is_none(),
+            destination.is_dir(),
             "The destination already contains files. Choose a new, empty Pixel Museum folder."
         );
+        if fs::read_dir(destination)?.next().is_some() {
+            uninstalled_folder(destination, destination)?;
+        }
     }
     Ok(parent.to_path_buf())
+}
+
+const PERSONAL_FILES: [&str; 3] = ["preferences.json", "video-settings.json", "trophies-v1.dat"];
+
+#[derive(Debug, PartialEq, Eq)]
+struct ReinstallFile {
+    path: PathBuf,
+    bytes: u64,
+    sha256: String,
+}
+
+#[derive(Debug, PartialEq, Eq)]
+struct ReinstallFolder {
+    files: Vec<ReinstallFile>,
+    directories: Vec<PathBuf>,
+}
+
+// A completed V3 uninstall is the only nonempty destination accepted. The
+// receipt establishes root ownership; it never authorizes deleting unknown data.
+fn uninstalled_folder(root: &Path, identity: &Path) -> Result<ReinstallFolder> {
+    use crate::{integration, update};
+    ensure_no_links(root)?;
+    let receipt: serde_json::Value = serde_json::from_slice(&update::read_limited(
+        &root.join(integration::RECEIPT),
+        1024 * 1024,
+    )?)
+    .context("Nonempty destination is not a completed Pixel Museum uninstall")?;
+    let full_cleanup = receipt["personal_data_preserved"] == false
+        && receipt["full_folder_cleanup_requested"] == true;
+    ensure!(
+        receipt["schema_version"] == 1
+            && receipt["executable"] == "Pixel Museum.exe"
+            && receipt["uninstalled"] == true
+            && receipt["windows_registered"] == false
+            && (receipt["personal_data_preserved"] == true || full_cleanup),
+        "Nonempty destination is not a completed Pixel Museum uninstall"
+    );
+    let registration: integration::Registration = serde_json::from_value(
+        receipt
+            .get("windows_integration")
+            .context("Missing previous installation ownership")?
+            .clone(),
+    )?;
+    integration::validate(identity, &registration)?;
+    let helper_sha = match (
+        receipt.get("retained_maintenance_helper"),
+        receipt.get("retained_maintenance_helper_sha256"),
+    ) {
+        (Some(serde_json::Value::Null), Some(serde_json::Value::Null)) => None,
+        (Some(serde_json::Value::String(path)), Some(serde_json::Value::String(sha)))
+            if path == integration::HELPER && valid_sha256(sha) =>
+        {
+            Some(sha)
+        }
+        _ => bail!("Invalid retained maintenance helper ownership"),
+    };
+    let mut result = ReinstallFolder {
+        files: Vec::new(),
+        directories: Vec::new(),
+    };
+    let mut pending = vec![PathBuf::new()];
+    let mut seen = HashSet::new();
+    while let Some(relative) = pending.pop() {
+        for entry in fs::read_dir(root.join(&relative))? {
+            let entry = entry?;
+            let relative = relative.join(entry.file_name());
+            let text = relative
+                .to_str()
+                .context("Invalid retained filename")?
+                .replace('\\', "/");
+            ensure!(
+                seen.insert(text.to_ascii_lowercase()) && seen.len() <= 512,
+                "Ambiguous or excessive files in uninstalled folder"
+            );
+            let path = root.join(&relative);
+            ensure_no_links(&path)?;
+            let metadata = fs::symlink_metadata(&path)?;
+            if metadata.is_dir() {
+                // Empty framework directories can remain after an owned uninstall.
+                ensure!(
+                    matches!(
+                        text.split('/').next().unwrap_or(""),
+                        "assets"
+                            | "content"
+                            | "music"
+                            | "licenses"
+                            | "models"
+                            | "tools"
+                            | "collection"
+                            | "application-updates"
+                    ),
+                    "Unrelated directory prevents reinstall: {text}"
+                );
+                result.directories.push(relative.clone());
+                pending.push(relative);
+                continue;
+            }
+            let personal = PERSONAL_FILES.contains(&text.as_str());
+            ensure!(
+                !full_cleanup || !personal,
+                "Full-cleanup receipt still contains personal progress"
+            );
+            let receipt_file = text == integration::RECEIPT;
+            let helper = text == integration::HELPER && helper_sha.is_some();
+            let lock = text == "application-updates/apply.lock";
+            ensure!(
+                personal || receipt_file || helper || lock,
+                "Unrelated or modified file prevents reinstall: {text}"
+            );
+            // This also rejects reparse points, nonregular files and hardlinks.
+            let file = update::process::open_regular(&path)?;
+            let bytes = file.metadata()?.len();
+            let limit = if helper {
+                64 * 1024 * 1024
+            } else if receipt_file {
+                1024 * 1024
+            } else if lock {
+                0
+            } else {
+                16 * 1024 * 1024
+            };
+            ensure!(bytes <= limit, "Invalid retained file size: {text}");
+            let sha256 = update::hash_file(&path)?;
+            if helper {
+                ensure!(
+                    helper_sha.is_some_and(|sha| sha.eq_ignore_ascii_case(&sha256)),
+                    "Retained maintenance helper was changed"
+                );
+            }
+            result.files.push(ReinstallFile {
+                path: relative,
+                bytes,
+                sha256,
+            });
+        }
+    }
+    if helper_sha.is_some() {
+        ensure!(
+            result
+                .files
+                .iter()
+                .any(|file| file.path == Path::new(integration::HELPER)),
+            "Retained maintenance helper is missing"
+        );
+    }
+    result.files.sort_by(|a, b| a.path.cmp(&b.path));
+    result.directories.sort();
+    Ok(result)
+}
+
+fn preserve_personal_files(
+    previous: &ReinstallFolder,
+    root: &Path,
+    stage: &Path,
+    cancel: &AtomicBool,
+) -> Result<()> {
+    for retained in &previous.files {
+        if !PERSONAL_FILES
+            .iter()
+            .any(|name| retained.path == Path::new(name))
+        {
+            continue;
+        }
+        let target = stage.join(&retained.path);
+        ensure!(
+            !target.exists(),
+            "App package collides with personal progress"
+        );
+        let mut source = crate::update::process::open_regular(&root.join(&retained.path))?;
+        ensure!(
+            source.metadata()?.len() == retained.bytes,
+            "Personal progress changed during reinstall"
+        );
+        copy_cancellable(&mut source, &target, cancel)?;
+        ensure!(
+            fs::metadata(&target)?.len() == retained.bytes
+                && crate::update::hash_file(&target)? == retained.sha256,
+            "Personal progress changed during reinstall; original files were preserved"
+        );
+    }
+    Ok(())
+}
+
+fn clean_retired_folder(root: &Path, identity: &Path, expected: &ReinstallFolder) -> Result<()> {
+    ensure!(
+        uninstalled_folder(root, identity)? == *expected,
+        "Retired folder changed; it has been preserved"
+    );
+    // Remove only the exact verified residue. Never recursively remove a folder
+    // which could have acquired an unrelated file during installation.
+    for file in &expected.files {
+        fs::remove_file(root.join(&file.path))?;
+    }
+    let mut directories = expected.directories.clone();
+    directories.sort_by_key(|path| std::cmp::Reverse(path.components().count()));
+    for directory in directories {
+        fs::remove_dir(root.join(directory))?;
+    }
+    fs::remove_dir(root)?;
+    Ok(())
+}
+
+fn restore_reinstall(backup: &Option<PathBuf>, destination: &Path) -> Result<()> {
+    if let Some(backup) = backup {
+        fs::rename(backup.join("previous"), destination).with_context(|| {
+            format!(
+                "Cannot restore previous personal data; it remains safe at {}",
+                backup.display()
+            )
+        })?;
+        let _ = fs::remove_dir(backup);
+    }
+    Ok(())
 }
 
 pub fn install(
@@ -209,25 +460,98 @@ pub struct InstallRegistration {
     pub desktop_shortcut: bool,
 }
 
+pub fn upgrade_registered(
+    release: &Release,
+    destination: &Path,
+    language: &str,
+    control: &InstallControl,
+    mut report: impl FnMut(Progress),
+) -> Result<()> {
+    release.manifest.validate()?;
+    let cancel = control.cancel_token();
+    check_cancel(cancel)?;
+    let mut report_check = |phase, done, total| {
+        report(Progress {
+            phase,
+            package: String::new(),
+            done,
+            total,
+        })
+    };
+    let installed = crate::update::inspect_for_setup(destination, cancel, &mut report_check)?;
+    ensure!(
+        crate::update::version_is_newer(&installed.inventory.version, &release.manifest.version),
+        "Setup can only upgrade to a newer version"
+    );
+    crate::update::process::assert_not_running(&destination.join("Pixel Museum.exe"))?;
+    let app = release
+        .manifest
+        .packages
+        .iter()
+        .find(|p| p.kind == PackageKind::App)
+        .context("Release has no application package")?;
+    let available_locally = |p: &Package| {
+        release.payload_dir.as_ref().map(|dir| dir.join(&p.filename))
+            .filter(|path| path.is_file())
+    };
+    let inventory_sha = crate::update::inventory_sha256(destination)?;
+    let delta = release.manifest.updates.iter().find(|update| {
+        update.from_version == installed.inventory.version
+            && update.base_inventory_sha256.eq_ignore_ascii_case(&inventory_sha)
+            && (available_locally(&update.package).is_some() || update.package.url.is_some())
+    });
+    let environment = crate::integration::Environment::current_user()?;
+    let mut apply = |package: &Package, delta| {
+        let mut progress = |phase, done, total| {
+            report(Progress { phase, package: package.id.clone(), done, total })
+        };
+        let temporary;
+        let archive = if let Some(local) = available_locally(package) {
+            local
+        } else {
+            temporary = tempfile::Builder::new()
+                .prefix(".pixel-museum-upgrade-")
+                .tempdir_in(destination.parent().context("Installation parent missing")?)?;
+            let path = temporary.path().join(&package.filename);
+            download(&client()?, package, &path, cancel, |done| {
+                progress(Phase::Download, done, package.bytes)
+            })?;
+            path
+        };
+        crate::update::apply_from_setup(
+            destination, &release.manifest.version, package, &archive, language,
+            &environment, control, delta, progress,
+        )
+    };
+    if let Some(delta) = delta {
+        match apply(&delta.package, Some(delta)) {
+            Err(error) if error.is::<crate::update::DeltaBaseUnavailable>() => {}
+            result => return result,
+        }
+    }
+    apply(app, None)
+}
+
 pub fn install_registered(
     release: &Release,
     destination: &Path,
     language: &str,
     desktop_shortcut: bool,
-    cancel: &AtomicBool,
+    control: &InstallControl,
     report: impl FnMut(Progress),
 ) -> Result<()> {
     let integration = InstallRegistration {
         environment: crate::integration::Environment::current_user()?,
         desktop_shortcut,
     };
-    install_with_registration(
+    install_with_commit(
         release,
         destination,
         language,
-        cancel,
+        control.cancel_token(),
         report,
         Some(&integration),
+        || control.begin_commit(),
     )
 }
 
@@ -236,8 +560,28 @@ pub fn install_with_registration(
     destination: &Path,
     language: &str,
     cancel: &AtomicBool,
+    report: impl FnMut(Progress),
+    registration: Option<&InstallRegistration>,
+) -> Result<()> {
+    install_with_commit(
+        release,
+        destination,
+        language,
+        cancel,
+        report,
+        registration,
+        || check_cancel(cancel),
+    )
+}
+
+fn install_with_commit(
+    release: &Release,
+    destination: &Path,
+    language: &str,
+    cancel: &AtomicBool,
     mut report: impl FnMut(Progress),
     registration: Option<&InstallRegistration>,
+    begin_commit: impl FnOnce() -> Result<()>,
 ) -> Result<()> {
     release.manifest.validate()?;
     check_cancel(cancel)?;
@@ -295,38 +639,52 @@ pub fn install_with_registration(
     let mut processed = 0;
     let mut seen_paths = HashSet::new();
     let net = client()?;
-    for p in &release.manifest.packages {
+    let sources: Vec<_> = release
+        .manifest
+        .packages
+        .iter()
+        .map(|package| InstallSource {
+            package,
+            local: release
+                .payload_dir
+                .as_ref()
+                .map(|directory| directory.join(&package.filename))
+                .filter(|path| path.is_file()),
+            cached: cached_path(&cache, package),
+        })
+        .collect();
+    let mut downloaded = 0;
+    for (index, item) in sources.iter().enumerate() {
         check_cancel(cancel)?;
-        let local = release
-            .payload_dir
-            .as_ref()
-            .map(|d| d.join(&p.filename))
-            .filter(|p| p.is_file());
-        let cached = cached_path(&cache, p);
-        let source = if let Some(local) = &local {
-            local
-        } else {
-            download(&net, p, &cached, cancel, |n| {
+        let InstallSource {
+            package: p,
+            local,
+            cached,
+        } = item;
+        if index % 2 == 0 {
+            let batch = &sources[index..(index + 2).min(sources.len())];
+            download_install_batch(&net, batch, cancel, |package, bytes| {
                 report(Progress {
                     phase: Phase::Download,
-                    package: p.id.clone(),
-                    done: processed + n,
+                    package: package.to_owned(),
+                    done: processed + bytes,
                     total,
                 })
             })?;
-            &cached
-        };
+            downloaded = processed + batch.iter().map(|item| item.package.bytes).sum::<u64>();
+        }
+        let source = local.as_ref().unwrap_or(cached);
         report(Progress {
             phase: Phase::Verify,
             package: p.id.clone(),
-            done: processed + p.bytes,
+            done: downloaded,
             total,
         });
         let mut verified = match verify_package(source, p, cancel) {
             Ok(file) => file,
             Err(error) => {
                 if local.is_none() && !cancel.load(Ordering::Relaxed) {
-                    let _ = fs::remove_file(&cached);
+                    let _ = fs::remove_file(cached);
                 }
                 return Err(error);
             }
@@ -334,7 +692,7 @@ pub fn install_with_registration(
         report(Progress {
             phase: Phase::Install,
             package: p.id.clone(),
-            done: processed + p.bytes,
+            done: downloaded,
             total,
         });
         if p.format == PackageFormat::Tar {
@@ -384,7 +742,7 @@ pub fn install_with_registration(
         report(Progress {
             phase: Phase::Install,
             package: p.id.clone(),
-            done: processed,
+            done: downloaded,
             total,
         });
     }
@@ -419,20 +777,62 @@ pub fn install_with_registration(
         value["windows_integration"] = serde_json::to_value(windows)?;
         fs::write(receipt, serde_json::to_vec_pretty(&value)?)?;
     }
+    validate_destination(destination)?;
+    let previous = if destination.exists() && fs::read_dir(destination)?.next().is_some() {
+        let previous = uninstalled_folder(destination, destination)?;
+        preserve_personal_files(&previous, destination, stage.path(), cancel)?;
+        ensure!(
+            uninstalled_folder(destination, destination)? == previous,
+            "Uninstalled folder changed during reinstall; original files were preserved"
+        );
+        Some(previous)
+    } else {
+        None
+    };
     // This short final operation cannot be interrupted after the commit begins.
+    begin_commit()?;
     report(Progress {
         phase: Phase::Finish,
         package: String::new(),
         done: total,
         total,
     });
-    validate_destination(destination)?;
+    // Never give TempDir automatic recursive ownership of the original data.
+    // A failed rollback must leave its recovery folder intact.
+    let backup = if let Some(previous) = &previous {
+        let backup = tempfile::Builder::new()
+            .prefix(".pixel-museum-reinstall-")
+            .tempdir_in(&parent)?
+            .keep();
+        if let Err(error) = fs::rename(destination, backup.join("previous")) {
+            let _ = fs::remove_dir(&backup);
+            return Err(error).context("Cannot retain the old installation for safe reinstall");
+        }
+        let backup = Some(backup);
+        let checked = uninstalled_folder(&backup.as_ref().unwrap().join("previous"), destination)
+            .and_then(|actual| {
+                ensure!(
+                    actual == *previous,
+                    "Uninstalled folder changed during commit"
+                );
+                Ok(())
+            });
+        if let Err(error) = checked {
+            restore_reinstall(&backup, destination)?;
+            return Err(error);
+        }
+        backup
+    } else {
+        None
+    };
     if destination.exists() {
         fs::remove_dir(destination).context("Cannot replace the empty destination folder")?;
     }
     let staging_path = stage.path().to_path_buf();
-    fs::rename(&staging_path, destination)
-        .context("Cannot finish installation; no existing application files have been replaced")?;
+    if let Err(error) = fs::rename(&staging_path, destination) {
+        restore_reinstall(&backup, destination)?;
+        return Err(error).context("Cannot finish installation; previous files were preserved");
+    }
     if let (Some(options), Some(windows)) = (registration, &windows) {
         if let Err(error) = crate::integration::register(
             destination,
@@ -442,12 +842,26 @@ pub fn install_with_registration(
             &options.environment,
         ) {
             match fs::rename(destination, &staging_path) {
-                Ok(()) => return Err(error),
+                Ok(()) => {
+                    restore_reinstall(&backup, destination)?;
+                    return Err(error);
+                }
                 Err(rollback) => bail!(
-                    "Application files are installed at {}, but Windows registration failed: {error:#}. Rollback could not move the folder: {rollback}",
-                    destination.display()
+                    "Application files are installed at {}, but Windows registration failed: {error:#}. Rollback could not move the folder: {rollback}. Previous data recovery folder: {:?}",
+                    destination.display(),
+                    backup
                 ),
             }
+        }
+    }
+    if let (Some(backup), Some(previous)) = (&backup, &previous) {
+        if let Err(error) = clean_retired_folder(&backup.join("previous"), destination, previous) {
+            eprintln!(
+                "Installation succeeded; previous data retained at {}: {error:#}",
+                backup.display()
+            );
+        } else {
+            let _ = fs::remove_dir(backup);
         }
     }
     // TempDir no longer owns a directory after rename. Its normal drop is harmless.
@@ -459,6 +873,88 @@ pub fn install_with_registration(
     let _ = fs::remove_file(cache.join("setup.lock"));
     let _ = fs::remove_dir(&cache);
     Ok(())
+}
+
+struct InstallSource<'a> {
+    package: &'a Package,
+    local: Option<PathBuf>,
+    cached: PathBuf,
+}
+
+fn download_install_batch(
+    client: &Client,
+    sources: &[InstallSource<'_>],
+    cancel: &AtomicBool,
+    mut report: impl FnMut(&str, u64),
+) -> Result<()> {
+    // A shared SHA produces a shared resume file. Only one writer may use that path.
+    let mut remote = sources.iter().filter(|item| item.local.is_none());
+    let Some(first) = remote.next() else {
+        return Ok(());
+    };
+    let second = remote.next();
+    let mut report_serial = |item: &InstallSource<'_>, prefix| {
+        let mut peak = 0;
+        download(client, item.package, &item.cached, cancel, |bytes| {
+            peak = peak.max(bytes);
+            report(&item.package.id, prefix + peak)
+        })
+    };
+    let Some(second) = second else {
+        return report_serial(first, 0);
+    };
+    if first.cached == second.cached {
+        report_serial(first, 0)?;
+        return report_serial(second, first.package.bytes);
+    }
+
+    enum DownloadEvent {
+        Progress { index: usize, bytes: u64 },
+        Finished(Result<()>),
+    }
+
+    let stop = AtomicBool::new(false);
+    std::thread::scope(|scope| {
+        let (sender, events) = std::sync::mpsc::channel();
+        let pair = [first, second];
+        for (index, item) in pair.iter().copied().enumerate() {
+            let sender = sender.clone();
+            let stop = &stop;
+            scope.spawn(move || {
+                let result = download_with_check(
+                    client,
+                    item.package,
+                    &item.cached,
+                    || {
+                        check_cancel(cancel)?;
+                        check_cancel(stop)
+                    },
+                    |bytes| {
+                        let _ = sender.send(DownloadEvent::Progress { index, bytes });
+                    },
+                );
+                let failed = result.is_err();
+                let _ = sender.send(DownloadEvent::Finished(result));
+                if failed {
+                    stop.store(true, Ordering::Relaxed);
+                }
+            });
+        }
+        drop(sender);
+        let mut progress = [0, 0];
+        let mut outcome = Ok(());
+        for event in events {
+            match event {
+                DownloadEvent::Progress { index, bytes } => {
+                    progress[index] = progress[index].max(bytes);
+                    report(&pair[index].package.id, progress.iter().sum());
+                }
+                DownloadEvent::Finished(Err(error)) if outcome.is_ok() => outcome = Err(error),
+                DownloadEvent::Finished(_) => {}
+            }
+        }
+        outcome
+    })
 }
 
 fn cached_path(cache: &Path, p: &Package) -> PathBuf {
@@ -478,8 +974,19 @@ fn download(
     package: &Package,
     target: &Path,
     cancel: &AtomicBool,
+    progress: impl FnMut(u64),
+) -> Result<()> {
+    download_with_check(client, package, target, || check_cancel(cancel), progress)
+}
+
+fn download_with_check(
+    client: &Client,
+    package: &Package,
+    target: &Path,
+    check: impl Fn() -> Result<()>,
     mut progress: impl FnMut(u64),
 ) -> Result<()> {
+    check()?;
     ensure_no_links(target)?;
     let mut out = writable_cache(target)?;
     let mut offset = out.metadata()?.len();
@@ -498,7 +1005,7 @@ fn download(
         )
     })?;
     validate_release_url(url)?;
-    check_cancel(cancel)?;
+    check()?;
     let mut request = client.get(url).header(ACCEPT_ENCODING, "identity");
     if offset > 0 {
         request = request.header(RANGE, format!("bytes={offset}-"));
@@ -531,6 +1038,7 @@ fn download(
             "Download size differs from the trusted manifest"
         );
     }
+    check()?;
     if append {
         out.seek(SeekFrom::End(0))?;
     } else {
@@ -541,7 +1049,7 @@ fn download(
     let mut count = offset;
     let mut tick = Instant::now();
     loop {
-        check_cancel(cancel)?;
+        check()?;
         let n = response.read(&mut buffer).with_context(|| {
             format!("Download interrupted for {}. Retry to resume.", package.id)
         })?;
@@ -653,6 +1161,7 @@ fn extract_zip(
         "Archive contains too many entries"
     );
     let mut unpacked = 0u64;
+    let mut buffer = vec![0u8; 256 * 1024];
     for index in 0..archive.len() {
         check_cancel(cancel)?;
         let mut item = archive.by_index(index)?;
@@ -694,7 +1203,6 @@ fn extract_zip(
             .create_new(true)
             .open(&target)
             .with_context(|| format!("Cannot create {}", target.display()))?;
-        let mut buffer = vec![0u8; 256 * 1024];
         let expected_file_size = item.size();
         let mut copied = 0u64;
         loop {
@@ -785,6 +1293,7 @@ mod tests {
         fs::write(folder.path().join("images.zip"), &data).unwrap();
         let release = Release {
             manifest: Manifest {
+                updates: Vec::new(),
                 schema_version: 1,
                 version: "test".into(),
                 executable: "Pixel Museum.exe".into(),
@@ -873,6 +1382,7 @@ mod tests {
         fs::write(folder.path().join("images.zip"), &data).unwrap();
         let release = Release {
             manifest: Manifest {
+                updates: Vec::new(),
                 schema_version: 1,
                 version: "0.2.0".into(),
                 executable: "Pixel Museum.exe".into(),
@@ -934,12 +1444,189 @@ mod tests {
             payload_helper,
             "Setup must never replace the payload helper with its own image"
         );
-        let receipt: serde_json::Value =
+        let mut receipt: serde_json::Value =
             serde_json::from_slice(&fs::read(root.join(crate::integration::RECEIPT)).unwrap())
                 .unwrap();
         let registration: crate::integration::Registration =
             serde_json::from_value(receipt["windows_integration"].clone()).unwrap();
         assert!(!registration.desktop_shortcut);
+        crate::integration::unregister(&root, &registration, &environment).unwrap();
+
+        // Model only the exact V3 residue, with an older owned helper, all three
+        // kinds of personal progress, and an empty framework lock.
+        for name in [
+            "Pixel Museum.exe",
+            "LICENSE",
+            "THIRD_PARTY_NOTICES.md",
+            "application-files.json",
+        ] {
+            fs::remove_file(root.join(name)).unwrap();
+        }
+        fs::remove_file(root.join("collection/fixture.json")).unwrap();
+        let old_helper = [payload_helper.as_slice(), b"previous owned version"].concat();
+        fs::write(root.join(crate::integration::HELPER), &old_helper).unwrap();
+        receipt["uninstalled"] = json!(true);
+        receipt["windows_registered"] = json!(false);
+        receipt["personal_data_preserved"] = json!(true);
+        receipt["retained_maintenance_helper"] = json!(crate::integration::HELPER);
+        receipt["retained_maintenance_helper_sha256"] =
+            json!(format!("{:x}", Sha256::digest(&old_helper)));
+        let receipt_bytes = serde_json::to_vec_pretty(&receipt).unwrap();
+        fs::write(root.join(crate::integration::RECEIPT), &receipt_bytes).unwrap();
+        for name in PERSONAL_FILES {
+            fs::write(root.join(name), format!("original {name}\r\n\u{1a}")).unwrap();
+        }
+        fs::create_dir(root.join("application-updates")).unwrap();
+        fs::write(root.join("application-updates/apply.lock"), []).unwrap();
+        let original = uninstalled_folder(&root, &root).unwrap();
+        assert!(validate_destination(&root).is_ok());
+
+        fs::write(root.join("notes.txt"), b"unrelated").unwrap();
+        assert!(validate_destination(&root).is_err());
+        assert_eq!(fs::read(root.join("notes.txt")).unwrap(), b"unrelated");
+        fs::remove_file(root.join("notes.txt")).unwrap();
+        fs::write(root.join("application-updates/apply.lock"), b"busy").unwrap();
+        assert!(validate_destination(&root).is_err());
+        fs::write(root.join("application-updates/apply.lock"), []).unwrap();
+        let alias = folder.path().join("progress-alias");
+        fs::hard_link(root.join("preferences.json"), &alias).unwrap();
+        assert!(validate_destination(&root).is_err());
+        fs::remove_file(alias).unwrap();
+        receipt["windows_integration"]["installation_id"] = json!("different-root");
+        fs::write(
+            root.join(crate::integration::RECEIPT),
+            serde_json::to_vec(&receipt).unwrap(),
+        )
+        .unwrap();
+        assert!(validate_destination(&root).is_err());
+        fs::write(root.join(crate::integration::RECEIPT), &receipt_bytes).unwrap();
+        fs::write(root.join(crate::integration::HELPER), b"changed").unwrap();
+        assert!(validate_destination(&root).is_err());
+        fs::write(root.join(crate::integration::HELPER), &old_helper).unwrap();
+
+        let collision = tempfile::tempdir_in(folder.path()).unwrap();
+        fs::write(
+            collision.path().join("preferences.json"),
+            b"package collision",
+        )
+        .unwrap();
+        assert!(
+            preserve_personal_files(&original, &root, collision.path(), &AtomicBool::new(false))
+                .is_err()
+        );
+        assert_eq!(uninstalled_folder(&root, &root).unwrap(), original);
+
+        // A foreign shortcut makes registration fail after the folder commit.
+        // Both the old receipt/helper and every personal file must be restored.
+        fs::create_dir_all(environment.program_link().parent().unwrap()).unwrap();
+        fs::write(environment.program_link(), b"foreign shortcut").unwrap();
+        assert!(
+            install_with_registration(
+                &release,
+                &root,
+                "it",
+                &AtomicBool::new(false),
+                |_| {},
+                Some(&context)
+            )
+            .is_err()
+        );
+        assert_eq!(uninstalled_folder(&root, &root).unwrap(), original);
+        assert_eq!(
+            fs::read(environment.program_link()).unwrap(),
+            b"foreign shortcut"
+        );
+        fs::remove_file(environment.program_link()).unwrap();
+
+        install_with_registration(
+            &release,
+            &root,
+            "it",
+            &AtomicBool::new(false),
+            |_| {},
+            Some(&context),
+        )
+        .unwrap();
+        for name in PERSONAL_FILES {
+            assert_eq!(
+                fs::read(root.join(name)).unwrap(),
+                format!("original {name}\r\n\u{1a}").as_bytes()
+            );
+        }
+        assert_eq!(
+            fs::read(root.join(crate::integration::HELPER)).unwrap(),
+            payload_helper
+        );
+        assert!(!root.join("application-updates/apply.lock").exists());
+        assert!(root.join("Pixel Museum.exe").is_file());
+        let fresh: serde_json::Value =
+            serde_json::from_slice(&fs::read(root.join(crate::integration::RECEIPT)).unwrap())
+                .unwrap();
+        assert_ne!(fresh["uninstalled"], true);
+        assert!(
+            validate_destination(&root).is_err(),
+            "An active installation cannot be merged"
+        );
+        assert!(!fs::read_dir(folder.path()).unwrap().any(|entry| {
+            entry
+                .unwrap()
+                .file_name()
+                .to_string_lossy()
+                .starts_with(".pixel-museum-reinstall-")
+        }));
+        crate::integration::unregister(&root, &registration, &environment).unwrap();
+        // Explicit full cleanup can leave only its mapped owned helper/receipt.
+        let mut full = fresh;
+        full["uninstalled"] = json!(true);
+        full["windows_registered"] = json!(false);
+        full["personal_data_preserved"] = json!(false);
+        full["retained_maintenance_helper"] = json!(crate::integration::HELPER);
+        full["retained_maintenance_helper_sha256"] =
+            json!(format!("{:x}", Sha256::digest(&payload_helper)));
+        for name in [
+            "Pixel Museum.exe",
+            "LICENSE",
+            "THIRD_PARTY_NOTICES.md",
+            "application-files.json",
+        ] {
+            fs::remove_file(root.join(name)).unwrap();
+        }
+        fs::remove_file(root.join("collection/fixture.json")).unwrap();
+        fs::write(
+            root.join(crate::integration::RECEIPT),
+            serde_json::to_vec(&full).unwrap(),
+        )
+        .unwrap();
+        assert!(
+            validate_destination(&root).is_err(),
+            "Full cleanup must be explicit"
+        );
+        full["full_folder_cleanup_requested"] = json!(true);
+        fs::write(
+            root.join(crate::integration::RECEIPT),
+            serde_json::to_vec(&full).unwrap(),
+        )
+        .unwrap();
+        assert!(
+            validate_destination(&root).is_err(),
+            "Full cleanup must contain zero progress files"
+        );
+        for name in PERSONAL_FILES {
+            fs::remove_file(root.join(name)).unwrap();
+        }
+        assert!(validate_destination(&root).is_ok());
+        install_with_registration(
+            &release,
+            &root,
+            "it",
+            &AtomicBool::new(false),
+            |_| {},
+            Some(&context),
+        )
+        .unwrap();
+        for name in PERSONAL_FILES {
+            assert!(!root.join(name).exists());
+        }
         crate::integration::unregister(&root, &registration, &environment).unwrap();
         environment.cleanup_fixture();
     }
@@ -970,6 +1657,7 @@ mod tests {
         retained.target = "collection/test-ready/archives".into();
         let release = Release {
             manifest: Manifest {
+                updates: Vec::new(),
                 schema_version: 1,
                 version: "test".into(),
                 executable: "Pixel Museum.exe".into(),
@@ -1004,14 +1692,20 @@ mod tests {
         assert!(!destination.exists());
         assert_eq!(fs::read(cached_path(&cache, &retained)).unwrap(), tar);
         fs::write(tail_path, &tail).unwrap();
+        let mut progress = Vec::new();
         install(
             &release,
             &destination,
             "en",
             &AtomicBool::new(false),
-            |_| {},
+            |event| progress.push((event.phase, event.done)),
         )
         .unwrap();
+        assert!(progress.windows(2).all(|pair| pair[0].1 <= pair[1].1));
+        assert_eq!(
+            progress.iter().find(|(phase, _)| *phase == Phase::Verify),
+            Some(&(Phase::Verify, (app.len() + tar.len()) as u64))
+        );
         assert_eq!(
             fs::read(
                 destination
@@ -1098,6 +1792,7 @@ mod tests {
         fs::write(&source, &tar).unwrap();
         let release = Release {
             manifest: Manifest {
+                updates: Vec::new(),
                 schema_version: 1,
                 version: "fixture".into(),
                 executable: "Pixel Museum.exe".into(),

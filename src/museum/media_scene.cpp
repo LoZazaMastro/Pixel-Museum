@@ -17,12 +17,13 @@ std::string timer(double t){if(!std::isfinite(t)||t<0)return "--:--";char s[32];
 }
 void Screen::snapshot_current(){
     if(!composed_.texture())return;
+    const auto canvas=canvas_bounds();
     GLint read=0,draw=0,viewport[4];glGetIntegerv(GL_READ_FRAMEBUFFER_BINDING,&read);glGetIntegerv(GL_DRAW_FRAMEBUFFER_BINDING,&draw);glGetIntegerv(GL_VIEWPORT,viewport);
     const bool scissor=glIsEnabled(GL_SCISSOR_TEST);glDisable(GL_SCISSOR_TEST);
     // A quick second step snapshots the frame the visitor actually saw,
     // including the previous dissolve, rather than its unfinished new layer.
     if(entry_snapshot_&&previous_entry_.texture()&&fade_<1){
-        gfx::DrawList blend;blend.image(previous_entry_.texture(),{0,0,1920,1080},gfx::kCanvasUv,Color::rgb(0xffffff,1-tween::smoothstep(fade_)));
+        gfx::DrawList blend;blend.image(previous_entry_.texture(),canvas,gfx::kCanvasUv,Color::rgb(0xffffff,1-tween::smoothstep(fade_)));
         renderer_.begin();renderer_.draw(blend);renderer_.present(composed_.framebuffer(),composed_.width(),composed_.height());
     }
     if(previous_entry_.width()!=composed_.width()||previous_entry_.height()!=composed_.height()){
@@ -30,14 +31,15 @@ void Screen::snapshot_current(){
     }
     // Keep the transition snapshot on the GPU too. A framebuffer blit enters
     // the same CPU fallback as the former per-frame display copy on PS5.
-    gfx::DrawList copy;copy.image(composed_.texture(),{0,0,1920,1080},gfx::kCanvasUv,Color::rgb(0xffffff));
+    gfx::DrawList copy;copy.image(composed_.texture(),canvas,gfx::kCanvasUv,Color::rgb(0xffffff));
     renderer_.begin();renderer_.draw(copy);renderer_.present(previous_entry_.framebuffer(),previous_entry_.width(),previous_entry_.height());
     glBindFramebuffer(GL_READ_FRAMEBUFFER,read);glBindFramebuffer(GL_DRAW_FRAMEBUFFER,draw);glViewport(viewport[0],viewport[1],viewport[2],viewport[3]);if(scissor)glEnable(GL_SCISSOR_TEST);
     entry_snapshot_=true;
 }
 void Screen::draw_gallery(){
     const float raw=std::clamp(gallery_open_.value,0.f,1.f),amount=raw>.999f?1.f:raw;
-    media_layer_.rounded_rect({0,0,1920,1080},0,Color::rgb(0x080b09,amount));
+    const Rect canvas_bounds_rect=canvas_bounds();
+    media_layer_.rounded_rect(canvas_bounds_rect,0,Color::rgb(0x080b09,amount));
     const Rect bounds=between(gallery_origin_,{0,0,1920,1080},amount),old=viewer_.bounds();
     if(std::abs(old.x-bounds.x)+std::abs(old.y-bounds.y)+std::abs(old.w-bounds.w)+std::abs(old.h-bounds.h)>.001f)viewer_.set_bounds(bounds);
     media_layer_.push_opacity(amount>.001f?std::min(1.f,amount*5):0);
@@ -49,9 +51,9 @@ void Screen::draw_gallery(){
     media_layer_.pop_opacity();
     const float labels=amount*std::clamp(gallery_labels_.value,0.f,1.f);
     media_layer_.push_opacity(labels);
-    media_layer_.gradient_rect({0,0,1920,180},0,Color::rgb(0,.7f),Color::rgb(0,0));
+    media_layer_.gradient_rect({canvas_bounds_rect.x,0,canvas_bounds_rect.w,180},0,Color::rgb(0,.7f),Color::rgb(0,0));
 #if !defined(MUSEUM_DESKTOP)
-    media_layer_.gradient_rect({0,860,1920,220},0,Color::rgb(0,0),Color::rgb(0,.8f));
+    media_layer_.gradient_rect({canvas_bounds_rect.x,860,canvas_bounds_rect.w,220},0,Color::rgb(0,0),Color::rgb(0,.8f));
 #endif
     if(const auto*e=current();e&&image_index_>=0&&image_index_<int(e->images.size())){
         ui::paragraph(media_layer_,fonts_.semibold,e->title,96,86,30,1600,38,paper);
@@ -63,6 +65,13 @@ void Screen::draw_gallery(){
 #endif
     media_layer_.pop_opacity();
 }
+const char* Screen::film_audio_hint()const{
+    switch(video_.audio_track_switch(language_)){
+    case media::AudioTrackSwitch::localized:return "Dubbed audio";
+    case media::AudioTrackSwitch::original:return "Original audio";
+    default:return nullptr;
+    }
+}
 void Screen::draw_screening(){
     const auto*e=current();if(!e)return;
     const bool listening=playlist_active_||playlist_closing_;
@@ -73,15 +82,16 @@ void Screen::draw_screening(){
     if(index<0||index>=int(records.size()))return;
     const auto&v=records[size_t(index)];
     const float amount=std::clamp(screening_open_.value,0.f,1.f),full=std::clamp(video_full_.value,0.f,1.f);
+    const Rect canvas=canvas_bounds();
     const Rect screen=between(screening_origin_,{0,0,1920,1080},full);
-    media_layer_.rounded_rect({0,0,1920,1080},0,Color::rgb(0x080b09,amount*full));
+    media_layer_.rounded_rect(canvas,0,Color::rgb(0x080b09,amount*full));
     media_layer_.push_opacity(amount);
     if(listening||video_.texture()||video_.state()==media::State::failed)
         media_layer_.rounded_rect(screen,0,Color::rgb(0x141b17,listening||video_.state()==media::State::failed?1.f:video_frame_alpha_));
     if(listening){
         // Audio-only listening: the media backend never opens a video decoder.
         const auto palette=colours();
-        media_layer_.rounded_rect(screen,0,palette.paper);
+        media_layer_.rounded_rect(between(screening_origin_,canvas,full),0,palette.paper);
         const float scale=std::min(screen.w/1920.f,screen.h/1080.f);
         media_layer_.push_clip(screen);media_layer_.push_transform(scale,0,0,screen.x,screen.y);
         ui::text(media_layer_,fonts_.mono,"LISTENING ROOM",96,104,19,palette.muted,Align::left,2);
@@ -154,16 +164,17 @@ void Screen::draw_screening(){
         media_layer_.arc(screen.cx(),screen.cy(),radius,2.f,time_*2.6f,2.4f,paper.with_alpha(.88f));
     }
     media_layer_.pop_clip();
-    // Embedded playback keeps its controls visible, including while loading.
-    // Only a fullscreen film can use the existing idle fade.
+    // Inline control hints stay visible independently of the seek bar.
     const float labels=full<.999f?1.f:std::clamp(media_hints_.value,0.f,1.f);
     if(film_captions_enabled_&&video_.texture())draw_film_captions(media_layer_,fonts_.regular,video_.caption_text(),
         fitted(screen,float(video_.width())/std::max(1,video_.height())),labels);
     media_layer_.push_opacity(labels);
-    if(full>.001f){media_layer_.gradient_rect({0,0,1920,180},0,Color::rgb(0,.65f*full),Color::rgb(0,0));media_layer_.push_opacity(full);ui::paragraph(media_layer_,fonts_.semibold,v.title,96,90,32,1700,40,paper);media_layer_.pop_opacity();}
+    if(full>.001f){media_layer_.gradient_rect({canvas.x,0,canvas.w,180},0,Color::rgb(0,.65f*full),Color::rgb(0,0));media_layer_.push_opacity(full);ui::paragraph(media_layer_,fonts_.semibold,v.title,96,90,32,1700,40,paper);media_layer_.pop_opacity();}
 #if defined(MUSEUM_DESKTOP)
     if(full<.999f){
 #endif
+    const float progress_alpha=full+(1-full)*std::clamp(1.f-(film_progress_age_-2.f)*5.f,0.f,1.f);
+    media_layer_.push_opacity(progress_alpha);
     const float x=screen.x+30,y=screen.y+screen.h-48,w=screen.w-60;
     media_layer_.rounded_rect({x-15,y-34,w+30,70},0,Color::rgb(0,.5f));
     media_layer_.rounded_rect({x,y,w,2},0,paper.with_alpha(.25f));
@@ -173,24 +184,27 @@ void Screen::draw_screening(){
     ui::text(media_layer_,fonts_.mono,timer(ready?video_.time():-1)+" / "+timer(ready&&video_.duration()>0?video_.duration():-1),x,y+28,18,paper);
     char volume_status[128];ui::format(volume_status,video_.paused()?"Paused / Volume %d %%":"Volume %d %%",int(std::round(media_volume_*100)));
     ui::text(media_layer_,fonts_.regular,volume_status,x+w,y+28,18,paper,Align::right);
+    media_layer_.pop_opacity();
 #if defined(MUSEUM_DESKTOP)
     }
 #endif
     media_layer_.pop_opacity();
 #if !defined(MUSEUM_DESKTOP)
-    ui::Hint h[]={{ui::Button::cross,video_.paused()?"Play":"Pause"},{ui::Button::square,fullscreen_?"Return to frame":"Fullscreen"},{ui::Button::triangle,film_captions_enabled_?"Hide subtitles":"Show subtitles"},{ui::Button::dpad,"Seek 10 seconds"},{ui::Button::l2,"Volume",ui::Button::r2},{ui::Button::circle,"Back"}};
+    ui::Hint h[]={{ui::Button::cross,video_.paused()?"Play":"Pause"},{ui::Button::square,fullscreen_?"Return to frame":"Fullscreen"},{ui::Button::triangle,film_captions_enabled_?"Hide subtitles":"Show subtitles"},{ui::Button::dpad,"Seek 10 seconds"},{ui::Button::l2,"Volume",ui::Button::r2},{ui::Button::circle,"Back"},{}};
+    int count=6;
+    if(const auto* audio=film_audio_hint()){h[6]=h[5];h[5]={ui::Button::touchpad,audio};++count;}
     ui::HintLayout l;l.cy=1014;l.size=28;l.text_size=20;l.item_gap=24;
-    while(ui::measure_hints(fonts_,h,6,l)>1728.f&&l.text_size>14.f){l.size*=.97f;l.text_size*=.97f;l.item_gap*=.97f;}
+    while(ui::measure_hints(fonts_,h,count,l)>1728.f&&l.text_size>14.f){l.size*=.97f;l.text_size*=.97f;l.item_gap*=.97f;}
     media_layer_.push_opacity(labels);
-    media_layer_.push_opacity(1-full);ui::draw_hints(media_layer_,fonts_,ui::GlyphStyle::mono(colours().ink,Color::rgb(0,0)),h,6,96,false,l);media_layer_.pop_opacity();
-    media_layer_.push_opacity(full);ui::draw_hints(media_layer_,fonts_,ui::GlyphStyle::mono(paper,Color::rgb(0,0)),h,6,96,false,l);media_layer_.pop_opacity();
+    media_layer_.push_opacity(1-full);ui::draw_hints(media_layer_,fonts_,ui::GlyphStyle::mono(colours().ink,Color::rgb(0,0)),h,count,96,false,l);media_layer_.pop_opacity();
+    media_layer_.push_opacity(full);ui::draw_hints(media_layer_,fonts_,ui::GlyphStyle::mono(paper,Color::rgb(0,0)),h,count,96,false,l);media_layer_.pop_opacity();
     media_layer_.pop_opacity();
 #endif
     media_layer_.pop_opacity();
 }
 void Screen::draw_object(){
     const float amount=std::clamp(object_open_.value,0.f,1.f);
-    media_layer_.rounded_rect({0,0,1920,1080},0,Color::rgb(0x101916,amount));
+    media_layer_.rounded_rect(canvas_bounds(),0,Color::rgb(0x101916,amount));
     // Both rectangles are 3:2, as is the native object render target.
     if(object_texture_)media_layer_.image(object_texture_,between(object_origin_,{0,42,1920,960},amount),gfx::kCanvasUv,Color::rgb(0xffffff,object_alpha_));
     media_layer_.push_opacity(amount*std::clamp(media_hints_.value,0.f,1.f));

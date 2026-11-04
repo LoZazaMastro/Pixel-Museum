@@ -3,6 +3,9 @@
 #include "museum/screen.hpp"
 #include "museum/experience_mark.hpp"
 #include "museum/study_controls.hpp"
+#if defined(MUSEUM_DESKTOP)
+#include "museum/desktop_trophy_notification.hpp"
+#endif
 #include <algorithm>
 #include <cmath>
 #include <cstdio>
@@ -86,6 +89,24 @@ void Screen::draw_trophy_badge(gfx::DrawList& out,const std::string& badge,float
 }
 void Screen::draw_trophy_fallback(){
     if(trophy_fallback_time_<=0)return;
+#if defined(MUSEUM_DESKTOP)
+    const auto palette=colours();const float alpha=desktop_trophy::opacity(trophy_fallback_time_);
+    overlay_.push_opacity(alpha);
+    overlay_.bordered_rect({1160,54,680,154},0,palette.paper,1,palette.ink.with_alpha(.2f));
+    overlay_.rounded_rect({1160,54,142,154},0,palette.ink.with_alpha(.045f));
+    draw_trophy_badge(overlay_,trophy_fallback_current_.badge,1234,131,106,true);
+    ui::text(overlay_,fonts_.mono,i18n::tr("Trophy unlocked"),1310,88,16,palette.muted);
+    const auto row=[&](const auto&face,std::string_view value,float baseline,float size,gfx::Color colour){
+        const std::string text(value);constexpr float room=494;
+        const float offset=desktop_trophy::text_offset(face.measure(text,size),room,trophy_fallback_time_,reduced_);
+        overlay_.push_clip({1310,baseline-size,room,size+10});
+        ui::text(overlay_,face,text,1310-offset,baseline,size,colour);
+        overlay_.pop_clip();
+    };
+    row(fonts_.semibold,i18n::tr(trophy_fallback_current_.title),124,26,palette.ink);
+    row(fonts_.regular,i18n::tr(trophy_fallback_current_.description),164,20,palette.muted);
+    overlay_.pop_opacity();
+#else
     const auto palette=colours();const float alpha=std::min({1.f,trophy_fallback_time_*4.f,(5.f-trophy_fallback_time_)*5.f});
     overlay_.push_opacity(alpha);
     overlay_.bordered_rect({1160,54,680,138},0,palette.paper,1,palette.ink.with_alpha(.2f));
@@ -94,6 +115,7 @@ void Screen::draw_trophy_fallback(){
     ui::text(overlay_,fonts_.mono,"Trophy unlocked",1310,91,16,palette.muted);
     ui::paragraph(overlay_,fonts_.semibold,i18n::tr(trophy_fallback_current_.title),1310,128,27,490,33,palette.ink,2);
     overlay_.pop_opacity();
+#endif
 }
 void Screen::draw_trophy_library(){
     const auto palette=colours();const auto ink=palette.ink,quiet=palette.muted;
@@ -142,10 +164,9 @@ void Screen::draw_trophy_detail(){
     constexpr unsigned colours[]={0xe0b379,0x85c8b0,0x93b9e0,0xd99fb7,0xb6a5df};
     const auto accent=Color::rgb(colours[colour_key%5]);
     overlay_.push_opacity(std::clamp(year_panel_.value,0.f,1.f));
-    constexpr float sidebar=736.f,margin=56.f,panel_x=sidebar+margin;
-    constexpr float panel_w=1920.f-sidebar-2.f*margin,center=sidebar+(1920.f-sidebar)*.5f;
-    constexpr float text_x=panel_x+80.f,text_w=panel_w-160.f,text_right=text_x+text_w;
-    overlay_.rounded_rect({panel_x,142,panel_w,796},12,gfx::mix(paper,ink,.035f));
+    const auto panel=guide_preview_bounds();
+    const float center=panel.cx(),text_x=panel.x+80.f,text_w=panel.w-160.f,text_right=text_x+text_w;
+    overlay_.rounded_rect(panel,12,gfx::mix(paper,ink,.035f));
     draw_trophy_badge(overlay_,item.badge,center,(!item.secret||item.unlocked||trophy_expanded_)?337.f:402.f,(!item.secret||item.unlocked||trophy_expanded_)?212.f:282.f,item.unlocked);
     const bool show_requirement=!item.secret||item.unlocked||trophy_expanded_;
     const std::string title(i18n::tr(concealed&&!trophy_curator_preview_&&!trophy_expanded_?"Secret trophy":item.title));float size=46;
@@ -178,13 +199,14 @@ void Screen::draw_trophy_pin_viewer(){
     const auto all=trophies_?trophies_->views(true):std::vector<TrophyView>{};if(all.empty())return;
     const auto&item=all[size_t(std::clamp(trophy_focus_,0,int(all.size())-1))];
     const auto palette=colours();const auto ink=palette.ink,paper=palette.paper;
-    overlay_.rounded_rect({0,0,1920,1080},0,paper);
+    const Rect canvas=canvas_bounds();
+    overlay_.rounded_rect(canvas,0,paper);
     if(!item.unlocked){trophy_pin_open_=false;if(trophy_pin_renderer_)trophy_pin_renderer_(TrophyView{},0,0,0,0,0,0);return;}
     // Only a real mesh renderer supplies this FBO. No rotated flat sprite,
     // invented reverse or 2D lighting trick stands in for the physical pin.
     if(trophy_pin_renderer_){
         const unsigned texture=trophy_pin_renderer_(item,output_width_,output_height_,trophy_pin_yaw_,trophy_pin_pitch_,trophy_pin_zoom_,trophy_pin_pan_y_);
-        if(texture)overlay_.image(texture,{0,0,1920,1080},gfx::kCanvasUv,Color::rgb(0xffffff),0,item.unlocked||trophy_curator_preview_?1.f:0.f);
+        if(texture)overlay_.image(texture,canvas,gfx::kCanvasUv,Color::rgb(0xffffff),0,item.unlocked||trophy_curator_preview_?1.f:0.f);
     }
     if(trophy_curator_preview_||trophy_expanded_||!(item.secret&&!item.unlocked)){
         const auto title=i18n::tr(item.title);float size=30;while(size>20&&fonts_.semibold.measure(title,size)>1690)--size;
@@ -198,14 +220,15 @@ void Screen::draw_trophy_pin_viewer(){
 }
 void Screen::draw_year_guide(){
     if(guide_trophies_&&trophy_pin_open_){draw_trophy_pin_viewer();return;}
-    const float amount=std::clamp(year_panel_.value,0.f,1.f),x=-736*(1-amount);
+    const float amount=std::clamp(year_panel_.value,0.f,1.f),x=guide_sidebar_x();
     const auto palette=colours();const Color ink=palette.ink,paper=palette.paper,quiet=palette.muted;
-    overlay_.rounded_rect({0,0,1920,1080},0,ink.with_alpha(.22f*amount));
-    const float sidebar=736.f;
+    const auto canvas=canvas_bounds();
+    overlay_.rounded_rect(canvas,0,ink.with_alpha(.22f*amount));
+    const float sidebar=guide_sidebar_width_;
     overlay_.glass(renderer_.glass_texture(),{x,0,sidebar,1080},0,gfx::mix(paper,tone_,.12f).with_alpha(.97f));
     overlay_.rounded_rect({x,0,sidebar,1080},0,gfx::mix(paper,tone_,.08f).with_alpha(.96f));
     overlay_.line(x+sidebar,0,x+sidebar,1080,1,ink.with_alpha(.12f*amount));
-    overlay_.push_clip({0,0,sidebar*amount,1080});overlay_.push_transform(1,0,0,x,0);
+    overlay_.push_clip({canvas.x,0,sidebar*amount,1080});overlay_.push_transform(1,0,0,x,0);
     if(guide_trophies_){
         draw_trophy_library();
         overlay_.pop_transform();overlay_.pop_clip();
@@ -262,15 +285,17 @@ void Screen::draw_year_guide(){
     overlay_.pop_opacity();overlay_.pop_transform();overlay_.pop_clip();
     if(library>.001f){
         overlay_.push_opacity(library*amount);
-        overlay_.rounded_rect({792,142,1072,796},8,gfx::mix(paper,tone_,.06f));
-        draw_study_preview(overlay_,experience_focus_,{820,170,1016,566});
-        if(!study_catalog().empty()){const auto&selected=study_catalog()[size_t(std::clamp(experience_focus_,0,int(study_catalog().size())-1))];draw_study_controls(overlay_,fonts_,selected.id,{824,774,1008,140},ink,paper,true);}
+        const auto panel=guide_preview_bounds();
+        overlay_.rounded_rect(panel,8,gfx::mix(paper,tone_,.06f));
+        draw_study_preview(overlay_,experience_focus_,{panel.x+28,panel.y+28,panel.w-56,566});
+        if(!study_catalog().empty()){const auto&selected=study_catalog()[size_t(std::clamp(experience_focus_,0,int(study_catalog().size())-1))];draw_study_controls(overlay_,fonts_,selected.id,{panel.x+32,panel.y+632,panel.w-64,140},ink,paper,true);}
         overlay_.pop_opacity();
     }
 }
 void Screen::draw_onboarding(){
     const auto palette=colours();const Color paper=palette.paper,ink=palette.ink,quiet=palette.muted;
-    welcome_.rounded_rect({0,0,1920,1080},0,paper.with_alpha(onboarding_leaving_?1.f:std::clamp(onboarding_fade_.value,0.f,1.f)));
+    const auto canvas=canvas_bounds();
+    welcome_.rounded_rect(canvas,0,paper.with_alpha(onboarding_leaving_?1.f:std::clamp(onboarding_fade_.value,0.f,1.f)));
     welcome_.push_opacity(std::clamp(onboarding_fade_.value,0.f,1.f));
     if(language_choice_){
         // Already in the focused language: do not resolve it again through
@@ -296,7 +321,7 @@ void Screen::draw_onboarding(){
         }
         if(theme_confirming_){
             const float t=tween::smoothstep(theme_confirm_progress_);const auto choice=museum_palette(dark_theme_?1.f:0.f);const float x=dark_theme_?300.f:1010.f;
-            const Rect expanded{x*(1-t),420*(1-t),610+(1920-610)*t,240+(1080-240)*t};
+            const Rect expanded{x+(canvas.x-x)*t,420*(1-t),610+(canvas.w-610)*t,240+(canvas.h-240)*t};
             welcome_.rounded_rect(expanded,16*(1-t),choice.paper);
             ui::text(welcome_,fonts_.semibold,dark_theme_?"Dark mode":"Light mode",expanded.cx(),expanded.cy()+15,42,choice.ink.with_alpha(1-t),Align::center);
         }else{

@@ -1437,6 +1437,9 @@ struct Service::Impl
                     return;
                 video.info = info;
             }
+            const Format *audio_format=select_audio_format(info.formats,choice.audio_track);
+            if(!choice.audio_track.empty()&&(!audio_format||audio_format->audio_track_id!=choice.audio_track))
+                continue;
 
             // The format that cannot be opened is skipped and the next-best
             // format from the same answer is tried before the next client: a
@@ -1481,7 +1484,6 @@ struct Service::Impl
                 }
                 selected_any = true;
                 any_format = true;
-                const Format *audio_format = select_audio_format(info.formats, choice.audio_track);
                 if(audio_format)log::line("audio: selected itag=%d codec=%s bitrate=%lld sample_rate=%d drc=%d track=%s",
                     audio_format->itag,codec_label(audio_format->codec),audio_format->bitrate,audio_format->sample_rate,int(audio_format->drc),audio_format->audio_track_id.c_str());
                 const bool has_n = video_format->url.find("&n=") != std::string::npos ||

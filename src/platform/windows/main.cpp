@@ -10,6 +10,7 @@
 #include "museum/screen.hpp"
 #include "museum/music.hpp"
 #include "museum/intro_audio.hpp"
+#include "museum/desktop_trophy_notification.hpp"
 #include "museum/localization.hpp"
 #include "audio/cues.hpp"
 #include "audio/museum_interface_mix.hpp"
@@ -48,6 +49,7 @@ void screenshot(const std::string&path,int w,int h){
 int main(int argc,char**argv){
     _set_fmode(_O_BINARY);_setmode(_fileno(stdin),_O_BINARY);
     SDL_SetHint(SDL_HINT_JOYSTICK_HIDAPI_PS5,"1");
+    SDL_SetHint(SDL_HINT_JOYSTICK_ENHANCED_REPORTS,"auto");
     SDL_SetHint(SDL_HINT_AUDIO_DEVICE_SAMPLE_FRAMES,"512");
     if(!SDL_Init(SDL_INIT_VIDEO|SDL_INIT_AUDIO|SDL_INIT_GAMEPAD|SDL_INIT_SENSOR))return 1;
     int result=0;bool noninteractive=false;
@@ -71,18 +73,20 @@ int main(int argc,char**argv){
         if(!std::filesystem::exists(std::filesystem::u8path(root+"/content/catalog.json")))
             throw std::runtime_error("Pixel Museum's resources were not found. Please run the setup and choose the Pixel Museum installation folder.");
         std::freopen((data+"/session-windows.log").c_str(),"w",stdout);std::setvbuf(stdout,nullptr,_IOLBF,8192);
-        hui::sys::log("[Windows] Pixel Museum 0.2.0 development / root=%s / data=%s",root.c_str(),data.c_str());
+        hui::sys::log("[Windows] Pixel Museum %s / root=%s / data=%s",MUSEUM_APP_VERSION,root.c_str(),data.c_str());
         auto video=museum::desktop::load_video_settings(data+"/video-settings.json");
         if(smoke){video.width=1280;video.height=720;video.fullscreen=false;video.borderless=false;video.vsync=false;video.frame_limit=60;}
         museum::desktop::Display display;
-        if(!display.open(video,hidden))throw std::runtime_error(display.error());
+        if(!display.open(video,true))throw std::runtime_error(display.error());
         hui::ui::set_control_device(hui::ui::ControlDevice::keyboard_mouse);
         museum::Screen screen;
         // Curator access is confined to explicit render previews. A normal
         // launch must retain locked pins and deliver earned trophy notices.
         screen.set_trophy_curator_preview(preview>=0);
         if(!screen.init(root,data))throw std::runtime_error("The museum could not initialize. See session-windows.log in the installation folder.");
-        screen.set_desktop_video_modes(display.modes(),video);
+        auto video_display=SDL_GetDisplayForWindow(display.window());
+        screen.set_desktop_video_modes(display.modes());
+        screen.init_desktop_video_settings(video);
         if(ui_checks){const bool good=museum::DesktopInputInspection::run(screen);screen.shutdown();if(!good)result=1;}
         else {
         if(!select.empty())screen.select(select);
@@ -104,13 +108,34 @@ int main(int argc,char**argv){
             if(j.is_array())for(const auto&entry:j)if(entry.is_object()&&entry.contains("frame"))script.emplace_back(entry["frame"].get<int>(),entry);
         }
         hui::PointerInput preview_pointer{};bool preview_pointer_active=false;
+        museum::DesktopFramePacer frame_pacer;
+        bool show_window=!hidden;
         bool quit=false,cursor_hidden=false,last_borderless_fullscreen=video.fullscreen&&video.borderless;auto last=SDL_GetTicksNS();std::uint64_t frame_number=0,next_controller_probe=0;float applied_sfx=-1;
+        SDL_JoystickID routed_pad=0,last_dualsense=0,logged_motion_pad=0;
+        bool reported_motion=false;
         while(!quit){
             const auto frame_start=SDL_GetTicksNS();const float dt=std::clamp(float(frame_start-last)*1e-9f,.0001f,.1f);last=frame_start;
-            bool fullscreen=false;auto frame=input.poll(display.window(),screen.wants_text_input(),quit,fullscreen);
+            const bool motion_controls=screen.motion_controls();
+            bool fullscreen=false;auto frame=input.poll(display.window(),screen.wants_text_input(),quit,fullscreen,
+                screen.secondary_controller_active(),motion_controls);
+            const auto current_display=SDL_GetDisplayForWindow(display.window());
+            if(current_display&&current_display!=video_display){
+                video_display=current_display;
+                screen.set_desktop_video_modes(display.modes());
+            }
             if(smoke){frame.focus_lost=false;frame.connected=true;}
-            const bool pixel_cursor=frame.pointer.available&&frame.pointer.x>=0&&frame.pointer.x<1920&&frame.pointer.y>=0&&frame.pointer.y<1080;
-            if(pixel_cursor!=cursor_hidden){if(pixel_cursor)SDL_HideCursor();else SDL_ShowCursor();cursor_hidden=pixel_cursor;}
+            // The setup already installed the resources. Validate them before
+            // exposing a normal launch window, while first-run language stays immediate.
+            if(screen.collection_pending()&&!screen.onboarding_active()){
+                if(quit)break;
+                screen.update(dt);
+                if(const auto error=screen.desktop_resources_error();!error.empty())
+                    throw std::runtime_error(error);
+                if(screen.collection_pending())SDL_Delay(8);
+                continue;
+            }
+            const bool hide_cursor=input.hide_system_cursor(SDL_GetMouseFocus()==display.window(),frame.pointer);
+            if(hide_cursor!=cursor_hidden){if(hide_cursor)SDL_HideCursor();else SDL_ShowCursor();cursor_hidden=hide_cursor;}
             for(const auto&[at,event]:script)if(at==int(frame_number)){
                 const auto action=[&](const char*name,hui::Action a){if(event.value("action",std::string())==name){frame.pressed|=hui::action_bit(a);frame.held|=hui::action_bit(a);}};
                 action("confirm",hui::Action::confirm);action("back",hui::Action::back);action("menu",hui::Action::menu);action("touch",hui::Action::touch);action("west",hui::Action::west);action("north",hui::Action::north);
@@ -122,16 +147,47 @@ int main(int argc,char**argv){
                 if(event.contains("capture"))screenshot(event["capture"].get<std::string>(),display.width(),display.height());
             }
             if(preview_pointer_active){frame.pointer.available=true;frame.pointer.x=preview_pointer.x;frame.pointer.y=preview_pointer.y;}
-            if(fullscreen){auto requested=video;if(video.fullscreen){last_borderless_fullscreen=video.borderless;requested.fullscreen=false;requested.borderless=false;}else{requested.fullscreen=true;requested.borderless=last_borderless_fullscreen;}
+            if(fullscreen){auto requested=video;if(video.fullscreen){last_borderless_fullscreen=video.borderless;requested.fullscreen=false;requested.borderless=false;}else{
+                    requested.fullscreen=true;
+                    const auto modes=display.modes();
+                    const auto exact=std::find(modes.exclusive.begin(),modes.exclusive.end(),museum::DesktopDisplayMode{video.width,video.height});
+                    requested.borderless=last_borderless_fullscreen||exact==modes.exclusive.end();
+                }
                 if(display.apply(requested)){video=requested;if(video.fullscreen)last_borderless_fullscreen=video.borderless;screen.set_desktop_video_settings_applied(video);museum::desktop::save_video_settings(data+"/video-settings.json",video);}
                 else display.apply(video);}
-            if(frame_start>=next_controller_probe){
-                audio.refresh_controller(input.gamepad()&&SDL_GetGamepadType(input.gamepad())==SDL_GAMEPAD_TYPE_PS5);
-                if(audio.controller_audio()&&input.gamepad()){
-                    SDL_RumbleGamepad(input.gamepad(),0,0,0);
-                    std::array<std::uint8_t,47>effect{};effect[0]=0xA0;effect[5]=100;effect[7]=0x30;
-                    if(!SDL_SendGamepadEffect(input.gamepad(),effect.data(),int(effect.size())))hui::sys::log("[Windows] DualSense speaker routing: %s",SDL_GetError());
+            auto*pad=input.gamepad();
+            const SDL_JoystickID dualsense=museum::desktop::Input::is_dualsense(pad)?SDL_GetGamepadID(pad):0;
+            if(motion_controls&&dualsense){
+                if(logged_motion_pad!=dualsense||reported_motion!=frame.motion.available){
+                    hui::sys::log("[Windows] DualSense gyro in flight: %s",frame.motion.available?"receiving samples":"waiting for samples");
+                    logged_motion_pad=dualsense;
+                    reported_motion=frame.motion.available;
                 }
+            }else logged_motion_pad=0;
+            const SDL_JoystickID wired_pad=dualsense&&
+                SDL_GetGamepadConnectionState(pad)==SDL_JOYSTICK_CONNECTION_WIRED?dualsense:0;
+            if(dualsense!=last_dualsense||frame_start>=next_controller_probe){
+                if(dualsense!=last_dualsense)input.stop_rumble();
+                audio.refresh_controller(dualsense?pad:nullptr);
+                if(!wired_pad||!audio.controller_haptics()){
+                    if(wired_pad&&dualsense!=last_dualsense)
+                        hui::sys::log("[Windows] DualSense USB haptics endpoint unavailable");
+                    routed_pad=0;
+                }
+                else if(routed_pad!=wired_pad){
+                    input.stop_rumble();
+                    // Leave the two PCM actuators in audio mode without changing speaker routing.
+                    std::array<std::uint8_t,47>effect{};
+                    if(SDL_SendGamepadEffect(pad,effect.data(),int(effect.size()))){
+                        routed_pad=wired_pad;
+                        hui::sys::log("[Windows] DualSense USB PCM haptics active");
+                    }
+                    else {
+                        hui::sys::log("[Windows] DualSense USB haptics mode: %s",SDL_GetError());
+                        audio.refresh_controller(nullptr);
+                    }
+                }
+                last_dualsense=dualsense;
                 next_controller_probe=frame_start+2000000000ull;
             }
             hui::ui::set_control_device(frame.controller_style==hui::DesktopControllerStyle::keyboard_mouse?hui::ui::ControlDevice::keyboard_mouse:
@@ -140,16 +196,16 @@ int main(int argc,char**argv){
             hui::ui::Feedback feedback;screen.handle(frame,feedback);
             const bool controller_input=input.controller_active();
             const bool xbox=frame.controller_style==hui::DesktopControllerStyle::generic;
-            const bool pad_audio=audio.controller_audio();
-            const bool tactile_audio=pad_audio&&controller_input&&frame.controller_style==hui::DesktopControllerStyle::dualsense;
+            const bool tactile_audio=audio.controller_haptics()&&controller_input&&dualsense!=0;
             audio.master.store(screen.master_volume(),std::memory_order_relaxed);
-            audio.culture_pad.store(screen.culture_audio_on_pad()&&pad_audio,std::memory_order_relaxed);
             if(applied_sfx!=screen.sfx_volume()){applied_sfx=screen.sfx_volume();mixer.set_bus_gain(hui::audio::Bus::ui,.18f*applied_sfx);mixer.set_bus_gain(hui::audio::Bus::sfx,applied_sfx);}
-            signals.speaker_volume(screen.sfx_volume()*screen.pad_volume()*(pad_audio?screen.master_volume():1.f));
-            signals.speaker_pcm_volume(screen.master_volume()*screen.pad_volume());
+            signals.speaker_volume(screen.sfx_volume());
             signals.tactile_enabled(tactile_audio);
             for(auto cue:feedback.cues){cue.gain=hui::audio::museum_original::interface_gain(cue.cue,cue.gain);sounds.play(mixer,hui::audio::SoundSet::glass,cue);}
-            for(const auto&cue:feedback.speaker_cues)signals.post_speaker(cue);
+            if(screen.experience_active())for(const auto&cue:feedback.speaker_cues){
+                // The recorded shot is already present on the main SFX bus.
+                if(cue.cue!=hui::audio::SpeakerCue::invader_shot)signals.post_speaker(cue);
+            }
             if(tactile_audio)for(const auto&effect:feedback.tactile)signals.post(effect);
             auto conventional=hui::windows::desktop_feedback(feedback,controller_input,xbox,screen.experience_active(),navigation_before!=screen.desktop_navigation_feedback_state());
             // Conventional motors cannot express subtle PCM textures. Keep
@@ -157,7 +213,7 @@ int main(int argc,char**argv){
             // only accepted panel/exhibit/timeline transitions get a tiny tap.
             if(controller_input&&screen.secondary_controller_active()&&conventional.seconds>0)input.rumble(conventional.strength,conventional.seconds,1);
             int ordinal=-1;const int note=screen.take_startup_note(&ordinal);
-            museum::route_startup_note(mixer,signals,note,ordinal,tactile_audio);
+            museum::route_startup_note(mixer,signals,note,ordinal,false);
             if(!tactile_audio&&controller_input){
                 if(!xbox){const auto startup=hui::windows::conventional_startup_note(note,ordinal);conventional.strength=std::max(conventional.strength,startup.strength);conventional.seconds=std::max(conventional.seconds,startup.seconds);}
                 if(conventional.seconds>0)input.rumble(conventional.strength,conventional.seconds);
@@ -173,13 +229,20 @@ int main(int argc,char**argv){
             }
             music.onboarding_active(screen.onboarding_active()||screen.collection_pending());music.select_year(screen.selected_year());music.select_timeline(screen.culture_timeline_active());
             music.archival_ambient_gain(screen.archival_ambient_gain());music.volume(screen.music_volume());music.muted(screen.music_muted()||screen.experience_active());music.video_active(screen.video_active());music.listening_room(screen.music_player_active());
-            if(screen.take_trophy_sound())sounds.play(mixer,hui::audio::SoundSet::glass,{hui::audio::Cue::notify,1.f,0.f,hui::audio::museum_original::interface_gain(hui::audio::Cue::notify,1.f)});
-            const float refresh=display.refresh_hz();screen.set_refresh_hz(video.frame_limit>0?std::min(refresh,float(video.frame_limit)):refresh);
+            if(screen.take_trophy_sound())museum::desktop_trophy::play_sound(mixer,screen.master_volume(),screen.sfx_volume());
+            const double refresh=display.refresh_hz();
+            screen.set_refresh_hz(float(video.frame_limit>0?std::min(refresh,double(video.frame_limit)):refresh));
             screen.draw(display.width(),display.height());
             ++frame_number;const bool done=screen.wants_quit()||(limit>0&&frame_number>=std::uint64_t(limit));
             if(done&&!capture.empty())screenshot(capture,display.width(),display.height());
-            display.swap();if(done)break;
-            if(video.frame_limit>0){const auto budget=std::uint64_t(1e9/double(video.frame_limit));const auto spent=SDL_GetTicksNS()-frame_start;if(spent<budget)SDL_DelayNS(budget-spent);}
+            display.swap();
+            if(show_window){
+                if(!SDL_ShowWindow(display.window()))throw std::runtime_error(SDL_GetError());
+                show_window=false;
+            }
+            if(done)break;
+            if(const auto delay=frame_pacer.delay_ns(video,refresh,SDL_GetTicksNS());delay)
+                SDL_DelayPrecise(delay);
             if(SDL_GetWindowFlags(display.window())&SDL_WINDOW_MINIMIZED)SDL_Delay(50);
         }
         SDL_ShowCursor();audio.stop();screen.shutdown();

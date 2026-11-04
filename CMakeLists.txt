@@ -30,6 +30,7 @@ file(GLOB_RECURSE VENDORED CONFIGURE_DEPENDS src/third_party/*.c)
 add_executable(pixelmuseum WIN32 ${COMMON} ${VENDORED}
   src/platform/windows/main.cpp src/platform/windows/desktop_input.cpp
   src/platform/windows/desktop_audio.cpp src/platform/windows/desktop_display.cpp
+  src/platform/windows/dualsense_bluetooth.cpp
   src/platform/windows/player_ffmpeg.cpp src/platform/windows/range_stream.cpp
   src/platform/windows/http_windows.cpp src/platform/windows/system_windows.cpp
   src/platform/windows/youtube_resolver.cpp
@@ -38,7 +39,7 @@ set_target_properties(pixelmuseum PROPERTIES OUTPUT_NAME "Pixel Museum")
 target_include_directories(pixelmuseum BEFORE PRIVATE src/platform/windows/include src .)
 target_compile_definitions(pixelmuseum PRIVATE MUSEUM_DESKTOP=1 MUSEUM_WINDOWS=1 MUSEUM_APP_VERSION="${PIXEL_MUSEUM_APP_VERSION}" NOMINMAX WIN32_LEAN_AND_MEAN JSON_NOEXCEPTION=1 __USE_MINGW_ANSI_STDIO=1)
 target_compile_options(pixelmuseum PRIVATE $<$<COMPILE_LANGUAGE:CXX>:-include${CMAKE_CURRENT_SOURCE_DIR}/src/platform/windows/compat.hpp> -Wall -Wextra -Wno-misleading-indentation)
-target_link_libraries(pixelmuseum PRIVATE SDL3::SDL3 GLEW::GLEW OpenGL::GL CURL::libcurl OpenSSL::SSL OpenSSL::Crypto ZLIB::ZLIB PkgConfig::FFMPEG PkgConfig::ZSTD Threads::Threads ws2_32)
+target_link_libraries(pixelmuseum PRIVATE SDL3::SDL3 GLEW::GLEW OpenGL::GL CURL::libcurl OpenSSL::SSL OpenSSL::Crypto ZLIB::ZLIB PkgConfig::FFMPEG PkgConfig::ZSTD Threads::Threads hid ws2_32)
 if(MINGW)
   target_link_options(pixelmuseum PRIVATE -static-libgcc -static-libstdc++)
 endif()

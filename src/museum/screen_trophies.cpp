@@ -2,6 +2,9 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
 #include "museum/screen.hpp"
 #include "museum/trophy_definitions.hpp"
+#if defined(MUSEUM_DESKTOP)
+#include "museum/desktop_trophy_notification.hpp"
+#endif
 #include "core/save_file.hpp"
 #include "platform/ps5/system.hpp"
 #include <algorithm>
@@ -79,7 +82,7 @@ void Screen::update_trophies(){
     if(trophy_fallback_time_<=0&&!trophy_fallback_queue_.empty()){
         trophy_fallback_current_=std::move(trophy_fallback_queue_.front());
         trophy_fallback_queue_.erase(trophy_fallback_queue_.begin());
-        trophy_fallback_time_=5.f;trophy_fallback_sound_=true;
+        trophy_fallback_time_=desktop_trophy::duration;trophy_fallback_sound_=true;
     }
 #else
     for(const auto&fallback:trophy_notifications_.pollFallback()){

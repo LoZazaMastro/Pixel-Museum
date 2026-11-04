@@ -5,6 +5,7 @@
 #include "yt/codec.hpp"
 
 #include "yt/log.hpp"
+#include <algorithm>
 
 namespace yt
 {
@@ -228,10 +229,10 @@ const Format *select_audio_format(const std::vector<Format> &formats, const std:
     {
         if (asked_offered)
             return format.audio_track_id == track;
-        if (any_default)
-            return format.audio_default;
         if (any_original)
             return names_original(format.audio_track_name);
+        if (any_default)
+            return format.audio_default;
         return true;
     };
     // An uncompressed *different language* cannot suppress the requested
@@ -267,7 +268,7 @@ std::vector<AudioTrack> audio_tracks(const std::vector<Format> &formats)
     std::vector<AudioTrack> out;
     for (const Format &format : formats)
     {
-        if (!is_audio_codec(format.codec) || format.audio_track_id.empty())
+        if (!is_audio_codec(format.codec) || format.url.empty() || format.audio_track_id.empty())
             continue;
         bool known = false;
         for (AudioTrack &track : out)
@@ -285,6 +286,17 @@ std::vector<AudioTrack> audio_tracks(const std::vector<Format> &formats)
                  format.audio_default});
     }
     return out;
+}
+
+std::string audio_track_for_locale(const std::vector<AudioTrack>& tracks,
+                                   std::string_view original,std::string_view locale)
+{
+    const auto language=[](std::string_view tag){return tag.substr(0,tag.find_first_of(".-_"));};
+    if(original.empty()||locale.empty()||language(original)==language(locale))return {};
+    const auto matching=std::find_if(tracks.begin(),tracks.end(),[&](const AudioTrack& track){
+        return track.id!=original&&language(track.id)==language(locale);
+    });
+    return matching==tracks.end()?std::string{}:matching->id;
 }
 
 } // namespace yt

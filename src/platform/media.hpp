@@ -6,6 +6,7 @@
 #include <cstdint>
 #include <memory>
 #include <string>
+#include <string_view>
 #include <vector>
 namespace hui::gfx { class Renderer; }
 namespace museum::media {
@@ -13,6 +14,7 @@ namespace museum::media {
 // byte-size index; legacy packages check every registered master and preview.
 bool packaged_images_complete(const std::string& install_root);
 enum class State : unsigned char { idle, loading, ready, failed };
+enum class AudioTrackSwitch : unsigned char { none, localized, original };
 struct Asset {
     State state = State::idle;
     std::string path;
@@ -90,6 +92,8 @@ class Video {
     void close();
     void pause(bool paused);
     void seek(double seconds);
+    AudioTrackSwitch audio_track_switch(std::string_view locale)const;
+    bool toggle_audio_track(std::string_view locale);
     void update(float dt);
     std::size_t set_model_pressure(bool enabled); // Main GL thread: trim only nonvisible GPU photos; disk masters remain.
     void upload_pending(hui::gfx::Renderer &renderer);

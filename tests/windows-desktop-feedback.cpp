@@ -18,9 +18,11 @@ void log(const char*,...){}
 namespace museum::desktop {
 struct InputInspection {
     static void focus(Input&i,bool value){i.focused_=value;}
-    static void isolate(Input&i,SDL_JoystickID virtual_id){
+    static bool pointer_available(const Input&i,bool inside=true){return i.pointer_available(inside);}
+    static void isolate(Input&i,SDL_JoystickID virtual_id,SDL_JoystickID secondary=0){
         for(auto&p:i.pads_){if(p)SDL_CloseGamepad(p);p=nullptr;}
         i.pads_[0]=SDL_OpenGamepad(virtual_id);assert(i.pads_[0]);
+        if(secondary){i.pads_[1]=SDL_OpenGamepad(secondary);assert(i.pads_[1]);}
     }
 };
 }
@@ -42,11 +44,22 @@ int main(){
         input.poll(window,false,quit,toggle);assert(input.gamepad());
         museum::desktop::InputInspection::isolate(input,id);
         assert(SDL_GetGamepadID(input.gamepad())==id);
+        museum::desktop::InputInspection::focus(input,true);
+        assert(museum::desktop::InputInspection::pointer_available(input)); // connected, unused
+        PointerInput cursor;cursor.available=true;cursor.x=960;cursor.y=540;
+        assert(input.hide_system_cursor(true,cursor)); // pixel cursor replaces Windows arrow
+        cursor.x=-1;assert(!input.hide_system_cursor(true,cursor)); // mouse over letterbox
+        cursor.x=960;assert(!input.hide_system_cursor(false,cursor)); // outside the app
         SDL_Event event{};event.type=SDL_EVENT_GAMEPAD_BUTTON_DOWN;event.gbutton.which=id;event.gbutton.button=SDL_GAMEPAD_BUTTON_SOUTH;event.gbutton.down=true;assert(SDL_PushEvent(&event));
         auto frame=input.poll(window,false,quit,toggle);assert(frame.controller_style==DesktopControllerStyle::generic);
         // A hidden test window has no OS focus; isolate the focus gate from the
         // actual SDL rumble transport after exercising native event routing.
         museum::desktop::InputInspection::focus(input,true);assert(input.controller_active());
+        assert(!museum::desktop::InputInspection::pointer_available(input)&&!frame.pointer.available);
+        assert(input.hide_system_cursor(true,cursor));
+        cursor.x=-1;assert(input.hide_system_cursor(true,cursor)); // pad hides arrow in letterbox too
+        cursor.x=960;
+        assert(SDL_HideCursor()&&!SDL_CursorVisible());
         input.rumble(1,.1f);assert(motors.low>0&&motors.low<=22938&&motors.high<motors.low);
         const auto before=motors.calls;
         event={};event.type=SDL_EVENT_KEY_DOWN;event.key.scancode=SDL_SCANCODE_ESCAPE;event.key.down=true;assert(SDL_PushEvent(&event));
@@ -54,13 +67,50 @@ int main(){
         assert(frame.desktop_escape_pressed&&frame.is_pressed(Action::back));
         assert(frame.controller_style==DesktopControllerStyle::keyboard_mouse&&motors.calls>before&&motors.low==0&&motors.high==0);
         museum::desktop::InputInspection::focus(input,true);const auto stopped=motors.calls;
+        assert(!museum::desktop::InputInspection::pointer_available(input)); // keyboard does not restore pointer
+        assert(input.hide_system_cursor(true,cursor));
         input.rumble(1,1);assert(motors.calls==stopped); // connected but not in use
         frame=input.poll(window,false,quit,toggle);assert(!frame.desktop_escape_pressed);
+        event={};event.type=SDL_EVENT_KEY_DOWN;event.key.scancode=SDL_SCANCODE_O;event.key.down=true;assert(SDL_PushEvent(&event));
+        frame=input.poll(window,false,quit,toggle);assert(!frame.is_pressed(Action::menu)&&!frame.desktop_escape_pressed);
+        event.key.scancode=SDL_SCANCODE_F10;assert(SDL_PushEvent(&event));
+        frame=input.poll(window,false,quit,toggle);assert(frame.is_pressed(Action::menu)&&!frame.desktop_escape_pressed);
         event={};event.type=SDL_EVENT_GAMEPAD_BUTTON_DOWN;event.gbutton.which=id;event.gbutton.button=SDL_GAMEPAD_BUTTON_SOUTH;event.gbutton.down=true;assert(SDL_PushEvent(&event));
         input.poll(window,false,quit,toggle);museum::desktop::InputInspection::focus(input,true);
         input.rumble(.4f,.2f);assert(motors.low>0);
         event={};event.type=SDL_EVENT_MOUSE_MOTION;event.motion.xrel=6;assert(SDL_PushEvent(&event));
         frame=input.poll(window,false,quit,toggle);assert(frame.controller_style==DesktopControllerStyle::keyboard_mouse&&motors.low==0);
+        museum::desktop::InputInspection::focus(input,true);assert(museum::desktop::InputInspection::pointer_available(input));
+
+        const auto dispatch=[&](SDL_Event value){assert(SDL_PushEvent(&value));auto result=input.poll(window,false,quit,toggle);museum::desktop::InputInspection::focus(input,true);return result;};
+        const auto pad_event=[&]{SDL_Event e{};e.type=SDL_EVENT_GAMEPAD_BUTTON_DOWN;e.gbutton.which=id;e.gbutton.button=SDL_GAMEPAD_BUTTON_SOUTH;e.gbutton.down=true;return e;};
+        const auto move_event=[](float dx){SDL_Event e{};e.type=SDL_EVENT_MOUSE_MOTION;e.motion.xrel=dx;return e;};
+        const auto pointer_active=[&]{return museum::desktop::InputInspection::pointer_available(input);};
+        dispatch(pad_event());assert(!pointer_active());
+        frame=dispatch(move_event(0));assert(!frame.pointer.moved&&!pointer_active());
+        for(int n=0;n<3;++n){input.poll(window,false,quit,toggle);museum::desktop::InputInspection::focus(input,true);assert(!pointer_active());}
+        museum::desktop::InputInspection::focus(input,false);assert(!input.hide_system_cursor(true,cursor));
+        museum::desktop::InputInspection::focus(input,true);assert(input.hide_system_cursor(true,cursor));
+        dispatch(move_event(1));assert(pointer_active());
+        event={};event.type=SDL_EVENT_GAMEPAD_AXIS_MOTION;event.gaxis.which=id;event.gaxis.axis=SDL_GAMEPAD_AXIS_LEFTX;event.gaxis.value=1000;
+        dispatch(event);assert(pointer_active()); // below the real input deadzone
+        event.gaxis.value=6000;dispatch(event);assert(!pointer_active()); // usable light stick input
+        dispatch(move_event(1));assert(pointer_active());
+        event.gaxis.axis=SDL_GAMEPAD_AXIS_LEFT_TRIGGER;event.gaxis.value=2000;dispatch(event);assert(!pointer_active());
+        for(const auto type:{SDL_EVENT_MOUSE_BUTTON_DOWN,SDL_EVENT_MOUSE_BUTTON_UP}){
+            dispatch(pad_event());event={};event.type=type;event.button.button=SDL_BUTTON_LEFT;
+            dispatch(event);assert(pointer_active());
+        }
+        dispatch(pad_event());event={};event.type=SDL_EVENT_MOUSE_WHEEL;
+        dispatch(event);assert(!pointer_active());
+        event.wheel.y=1;dispatch(event);assert(pointer_active());
+        dispatch(pad_event());event.wheel.y=0;event.wheel.x=1;dispatch(event);assert(pointer_active());
+        event=pad_event();assert(SDL_PushEvent(&event));frame=dispatch(move_event(1));assert(pointer_active());
+        event=move_event(1);assert(SDL_PushEvent(&event));frame=dispatch(pad_event());assert(!pointer_active());
+        assert(input.hide_system_cursor(true,cursor));
+        dispatch(move_event(1));cursor.x=-1;assert(!input.hide_system_cursor(true,cursor));
+        assert(SDL_ShowCursor()&&SDL_CursorVisible());cursor.x=960;
+        std::puts("PASS: controller input hides pixel and system cursors; idle/keyboard/zero-motion preserve hiding; real mouse motion/buttons/wheel restore it, with focus/letterbox and event-order gates.");
         for(const auto dimensions:{std::pair{1920,1080},std::pair{3840,2160}}){
             assert(SDL_SetWindowSize(window,dimensions.first,dimensions.second));
             input.poll(window,false,quit,toggle);
@@ -71,7 +121,41 @@ int main(){
             assert(std::abs(frame.pointer.delta_x-22)<.01f&&std::abs(frame.pointer.delta_y+11)<.01f);
         }
         std::puts("PASS: native SDL mouse displacement remains22x11logical pixels at1080p and4K.");
-        std::puts("PASS: real SDL events select Xbox/keyboard/mouse, Escape is contextual, Xbox motors reduced and cancelled immediately on mouse/keyboard.");
+        std::puts("PASS: real SDL events select Xbox/keyboard/mouse; Escape is contextual, O is unbound, F10 is optional; Xbox motors reduced and cancelled immediately on mouse/keyboard.");
+    }
+    {
+        auto sony=desc;
+        sony.vendor_id=0x054c;sony.product_id=0x0ce6;
+        sony.name="Pixel Museum isolated DualSense test";
+        const auto ds=SDL_AttachVirtualJoystick(&sony);assert(ds);
+        museum::desktop::Input input;bool quit=false,toggle=false;
+        input.poll(window,false,quit,toggle);
+        museum::desktop::InputInspection::isolate(input,id,ds);
+        assert(input.is_dualsense(input.gamepad(1)));
+        const auto press=[](SDL_JoystickID pad){
+            SDL_Event e{};e.type=SDL_EVENT_GAMEPAD_BUTTON_DOWN;e.gbutton.which=pad;
+            e.gbutton.button=SDL_GAMEPAD_BUTTON_SOUTH;e.gbutton.down=true;assert(SDL_PushEvent(&e));
+        };
+        press(ds);
+        input.poll(window,false,quit,toggle,true);
+        assert(SDL_GetGamepadID(input.gamepad())==id);
+        const auto tilt=[&](float roll){
+            SDL_Event event{};event.type=SDL_EVENT_GAMEPAD_SENSOR_UPDATE;
+            event.gsensor.which=ds;event.gsensor.sensor=SDL_SENSOR_GYRO;event.gsensor.data[2]=roll;
+            assert(SDL_PushEvent(&event));
+        };
+        tilt(.4f);input.poll(window,false,quit,toggle);
+        assert(SDL_GetGamepadID(input.gamepad())==id);
+        tilt(.05f);input.poll(window,false,quit,toggle,false,true);
+        assert(SDL_GetGamepadID(input.gamepad())==id);
+        tilt(.4f);const auto flight=input.poll(window,false,quit,toggle,false,true);
+        assert(SDL_GetGamepadID(input.gamepad())==ds&&flight.controller_style==DesktopControllerStyle::dualsense);
+        museum::desktop::InputInspection::isolate(input,id,ds);
+        press(ds);press(id);
+        const auto frame=input.poll(window,false,quit,toggle);
+        assert(SDL_GetGamepadID(input.gamepad())==ds&&frame.controller_style==DesktopControllerStyle::dualsense);
+        assert(SDL_DetachVirtualJoystick(ds));
+        std::puts("PASS: native DualSense wins mirrored events, deliberate gyro takes control only during flight, and local multiplayer keeps player order.");
     }
     SDL_DetachVirtualJoystick(id);SDL_DestroyWindow(window);SDL_Quit();
 
@@ -93,6 +177,8 @@ int main(){
     gfx::Font regular,mono;assert(regular.load(read("assets/fonts/inter-regular.huifont")));assert(mono.load(read("assets/fonts/dejavu-sans-mono.huifont")));
     ui::Fonts fonts;fonts.regular=fonts.semibold=fonts.display=fonts.pixel=fonts.hand={&regular,1};fonts.mono={&mono,2};
     ui::install_inline_controls();std::array<std::size_t,3>counts{};
+    ui::set_control_device(ui::ControlDevice::keyboard_mouse);
+    assert(ui::button_width(ui::Button::options,32)==ui::button_width(ui::Button::circle,32)); // both show Esc
     for(unsigned n=0;n<3;++n){ui::set_control_device(ui::ControlDevice(n));gfx::DrawList out;
         ui::draw_button(out,fonts,ui::GlyphStyle::mono(gfx::Color::rgb(0),gfx::Color::rgb(0,0)),ui::Button::cross,0,50,32);counts[n]=out.instances().size();
         const auto width=ui::text(out,fonts.regular,"Press {cross} then {touchpad} or {dpad}.",0,110,24,gfx::Color::rgb(0));

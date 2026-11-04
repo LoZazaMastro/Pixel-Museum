@@ -172,15 +172,20 @@ void Screen::draw_experience(){
     const float a=tween::smoothstep(std::clamp(experience_open_.value,0.f,1.f));
     const Rect from=experience_origin_,full{0,0,1920,1080};
     const Rect box{from.x*(1-a),from.y*(1-a),from.w+(full.w-from.w)*a,from.h+(full.h-from.h)*a};
-    experience_layer_.push_clip(box);experience_layer_.push_opacity(a);
+    const float margin=-canvas_bounds().x*a;
+    const Rect backdrop{box.x-margin,box.y,box.w+2*margin,box.h};
+    experience_layer_.push_clip(backdrop);experience_layer_.push_opacity(a);
     // Extend each study's own canvas into its aspect-ratio margins. The play
     // geometry stays undistorted; no unrelated black bars surround the scene.
-    experience_layer_.rounded_rect(box,0,canvas);
-    const float scale=box.w/1920;experience_layer_.push_transform(scale,0,0,box.x,box.y);
+    experience_layer_.rounded_rect(backdrop,0,canvas);
+    const float scale=box.w/1920,padding=margin/scale;
+    experience_layer_.push_transform(scale,0,0,box.x,box.y);
     // The game uses the screen; only the persistent control strip is reserved.
+    experience_layer_.push_clip({0,0,1920,box.h/scale});
     if(study_)study_->draw(experience_layer_,fonts_,{0,0,1920,960},tone_);
     else workshop_.draw(experience_layer_,fonts_,{0,0,1920,960},tone_,true);
-    experience_layer_.gradient_rect({0,960,1920,120},0,canvas,gfx::mix(canvas,tone_,.055f));
+    experience_layer_.pop_clip();
+    experience_layer_.gradient_rect({-padding,960,1920+2*padding,120},0,canvas,gfx::mix(canvas,tone_,.055f));
     const float pause=experience_pause_open_.value;
     if(!completed&&pause<.999f){
         experience_layer_.push_opacity(1-pause);
@@ -189,7 +194,7 @@ void Screen::draw_experience(){
     }
     if(pause>.001f){
         experience_layer_.push_opacity(pause);
-        experience_layer_.rounded_rect({0,0,1920,1080},0,background.with_alpha(.88f));
+        experience_layer_.rounded_rect({-padding,0,1920+2*padding,1080},0,background.with_alpha(.88f));
         experience_layer_.push_transform(1,0,0,0,(1-pause)*18);
         const bool flight=!completed&&study_&&study_->flight_settings();
         ui::text(experience_layer_,fonts_.display,completed?(final?"Experience complete":"Level complete"):"Paused",960,completed?310.f:flight?330.f:420.f,56,ink,Align::center);

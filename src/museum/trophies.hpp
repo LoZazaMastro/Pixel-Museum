@@ -1,9 +1,15 @@
 // Pixel Museum - local, persistent museum achievements.
 // SPDX-License-Identifier: GPL-3.0-or-later
 #pragma once
+#include <atomic>
 #include <cstdint>
 #include <map>
 #include <string>
+#if defined(__cpp_exceptions)
+#include <thread>
+#else
+#include <pthread.h>
+#endif
 #include <vector>
 
 namespace museum {
@@ -34,6 +40,7 @@ struct TrophyUnlock {
 class Trophies {
 public:
     explicit Trophies(std::string state_path);
+    ~Trophies();
     bool reset(); // Atomically clear progress while retaining the eligible catalogue snapshot.
     bool load(); // Missing file is a valid first run. Corrupt data is never overwritten.
     void setDefinitions(std::vector<TrophyDefinition> definitions);
@@ -47,8 +54,13 @@ public:
     bool todayVisit(const std::string& canonical_owner); // Only after a real matched jump succeeds.
     bool experienceResult(const std::string& experience_id,
                           const std::map<std::string,std::uint64_t>& real_statistics);
+    void recordExperienceProgress(const std::string& experience_id,
+                                  const std::map<std::string,std::uint64_t>& real_statistics);
+    void checkpointExperienceProgress();
+    void pollExperienceProgress();
+    bool flushExperienceProgress();
     std::vector<TrophyView> views(bool reveal_secrets=false) const;
-    std::vector<TrophyUnlock> drainUnlocks(); // One delivery per newly persisted unlock.
+    std::vector<TrophyUnlock> drainUnlocks(); // One delivery per newly earned unlock.
     const std::vector<TrophyDefinition>& definitions() const { return definitions_; }
     const std::string& lastError() const { return error_; }
     std::size_t visitedCount() const;
@@ -65,7 +77,20 @@ private:
     bool writable_=true;
     std::vector<TrophyDefinition> definitions_;
     std::vector<TrophyUnlock> pending_;
+    bool experience_dirty_=false,experience_checkpoint_requested_=false;
+#if defined(__cpp_exceptions)
+    std::thread experience_writer_;
+#else
+    pthread_t experience_writer_{};
+    bool experience_writer_running_=false;
+    State experience_write_snapshot_;
+#endif
+    std::atomic<bool> experience_write_done_{false};
+    std::string experience_write_error_;
+    bool joinExperienceWriter(bool wait);
     bool commit(State next);
+    void collectUnlocks(State&,std::vector<TrophyUnlock>&)const;
+    std::string persist(const State&)const;
     std::uint64_t progress(const TrophyDefinition&,const State&) const;
     static std::string encode(const State&);
     static bool decode(const std::string&,State&);

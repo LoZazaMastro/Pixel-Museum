@@ -10,8 +10,8 @@ public:
     ~Display();
     bool open(const DesktopVideoSettings&,bool hidden);
     bool apply(const DesktopVideoSettings&);
-    std::vector<DesktopDisplayMode> modes()const;
-    float refresh_hz()const;
+    DesktopDisplayModes modes()const;
+    double refresh_hz()const;
     int width()const;int height()const;
     SDL_Window* window()const{return window_;}
     void swap(){SDL_GL_SwapWindow(window_);}

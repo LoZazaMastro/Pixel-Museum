@@ -29,6 +29,7 @@ pub struct Options {
     pub portable: bool,
     pub uninstall_root: Option<PathBuf>,
     pub quiet: bool,
+    pub remove_personal_data: bool,
 }
 
 fn options() -> Result<Options> {
@@ -71,6 +72,7 @@ fn options() -> Result<Options> {
                 )
             }
             "--quiet" => opts.quiet = true,
+            "--remove-personal-data" => opts.remove_personal_data = true,
             "--help" | "-h" => {
                 println!(
                     "Pixel Museum Setup\n\n--manifest <file.json|https://github.com/.../releases/download/.../manifest.json>\n--manifest-sha256 <digest>  Required for remote manifests\n--payload-dir <folder>     Prefer locally supplied packages\n--install-dir <folder>     Application and collection destination\n--language <en|it|fr|de|es>  Installer language only\n--desktop-shortcut        Also create a desktop shortcut\n--headless --accept-license  Install without the graphical wizard\n--portable                Headless installation without Windows registration\n--validate-manifest        Validate without installing\n--uninstall <folder>      Remove the installed application; keep personal data\n\nLicence: GPL-3.0-or-later for code. External media retain their own terms."
@@ -102,6 +104,10 @@ fn options() -> Result<Options> {
     } else {
         ensure!(!opts.quiet, "Uninstall options require --uninstall");
     }
+    ensure!(
+        !opts.remove_personal_data || opts.uninstall_root.is_some(),
+        "--remove-personal-data requires --uninstall"
+    );
     Ok(opts)
 }
 
@@ -114,7 +120,7 @@ fn run() -> Result<()> {
             opts.language = Some(installation.language);
         }
         if opts.quiet {
-            uninstall::remove(root)?;
+            uninstall::remove_with_policy(root, opts.remove_personal_data)?;
             return Ok(());
         }
     }
@@ -145,7 +151,7 @@ fn run() -> Result<()> {
                 destination,
                 opts.language.as_deref().unwrap_or("en"),
                 opts.desktop_shortcut,
-                &cancelled,
+                &engine::InstallControl::default(),
                 |event| {
                     println!(
                         "{:?} {} {}/{}",

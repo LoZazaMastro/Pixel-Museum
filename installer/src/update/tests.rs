@@ -450,3 +450,249 @@ fn junction_destination_cannot_redirect_update_outside_root() {
         b"outside stays"
     );
 }
+
+#[test]
+fn setup_compares_prereleases_and_rejects_downgrades() {
+    for (old, new) in [
+        ("0.2.0-preview", "0.2.0-preview.9"),
+        ("0.2.0-preview.9", "0.2.0-preview.10"),
+        ("0.2.0-preview.10", "0.2.0"),
+        ("0.2.9", "0.2.10"),
+    ] {
+        assert!(version_is_newer(old, new));
+        assert!(!version_is_newer(new, old));
+    }
+    assert!(!version_is_newer("0.2.0+one", "0.2.0+two"));
+    assert!(!version_is_newer("0.2.0", "unrecognized"));
+}
+
+#[test]
+fn setup_upgrade_reuses_transaction_and_preserves_existing_progress() {
+    let mut f = Fixture::new();
+    f.new
+        .iter_mut()
+        .find(|(p, _)| p == crate::integration::HELPER)
+        .unwrap()
+        .1
+        .extend_from_slice(crate::integration::HELPER_CAPABILITY);
+    f.repack();
+    let base = f._temp.path();
+    let environment = crate::integration::Environment {
+        programs: base.join("Programs"),
+        desktop: base.join("Desktop"),
+        registry_base: format!(
+            r"Software\PixelMuseum\InstallerTests\{}",
+            base.file_name().unwrap().to_string_lossy()
+        ),
+    };
+    fs::create_dir_all(&environment.desktop).unwrap();
+    let registration = crate::integration::registration(&f.root, "it", true).unwrap();
+    let receipt_path = f.root.join(crate::integration::RECEIPT);
+    let mut receipt: serde_json::Value =
+        serde_json::from_slice(&fs::read(&receipt_path).unwrap()).unwrap();
+    receipt["windows_integration"] = serde_json::to_value(&registration).unwrap();
+    let saved_receipt = serde_json::to_vec(&receipt).unwrap();
+    write(&receipt_path, &saved_receipt);
+    crate::integration::register(&f.root, "0.1.0", 8192, &registration, &environment).unwrap();
+    let d = &f.descriptor;
+    let package = crate::manifest::Package {
+        id: "app".into(),
+        kind: crate::manifest::PackageKind::App,
+        format: crate::manifest::PackageFormat::Zip,
+        filename: "app.zip".into(),
+        url: None,
+        sha256: d.archive_sha256.clone(),
+        bytes: d.archive_bytes,
+        unpacked_bytes: d.unpacked_bytes,
+        target: ".".into(),
+    };
+    for phase in [Phase::Check, Phase::Verify, Phase::Extract, Phase::Prepare] {
+        let control = InstallControl::default();
+        let result = apply_from_setup(
+            &f.root,
+            &d.version,
+            &package,
+            &d.archive,
+            "fr",
+            &environment,
+            &control,
+            None,
+            |current, _, _| {
+                assert_ne!(current, Phase::Finish);
+                if current == phase {
+                    control.request_cancel();
+                }
+            },
+        );
+        assert!(
+            format!("{:#}", result.unwrap_err()).contains("Installation cancelled"),
+            "{phase:?}"
+        );
+        assert_eq!(fs::read(f.root.join(EXE)).unwrap(), pe(1));
+        assert_eq!(fs::read(&receipt_path).unwrap(), saved_receipt);
+        let staging = f.root.join("application-updates/transactions");
+        assert!(!staging.exists() || fs::read_dir(staging).unwrap().next().is_none());
+    }
+
+    let control = InstallControl::default();
+    let mut progress = Vec::new();
+    apply_from_setup(
+        &f.root,
+        &d.version,
+        &package,
+        &d.archive,
+        "fr",
+        &environment,
+        &control,
+        None,
+        |phase, done, total| {
+            progress.push((phase, done, total));
+            if phase == Phase::Finish {
+                assert!(control.is_committing());
+                control.request_cancel();
+                assert!(check_cancel(control.cancel_token()).is_ok());
+            }
+        },
+    )
+    .unwrap();
+    for (phase, size) in [
+        (Phase::Verify, package.bytes),
+        (Phase::Extract, package.unpacked_bytes),
+    ] {
+        assert!(progress.contains(&(phase, 0, size)));
+        assert!(progress.contains(&(phase, size, size)));
+    }
+    assert!(
+        progress.iter().any(|(phase, done, total)| {
+            *phase == Phase::Prepare && *total > 0 && done == total
+        })
+    );
+    assert_eq!(fs::read(f.root.join(EXE)).unwrap(), pe(2));
+    for path in [
+        "preferences.json",
+        "video-settings.json",
+        "trophies/custom.bin",
+        "database/current/catalog.json",
+        "collection/ready/archives/pack.tar",
+    ] {
+        assert_eq!(
+            fs::read(f.root.join(path)).unwrap(),
+            b"keep user data",
+            "{path}"
+        );
+    }
+    assert_eq!(fs::read(&receipt_path).unwrap(), saved_receipt);
+    assert!(environment.desktop_link().is_file());
+    crate::integration::verify_registered(&f.root, &d.version, &registration, &environment)
+        .unwrap();
+    assert!(
+        apply_from_setup(
+            &f.root,
+            &d.version,
+            &package,
+            &d.archive,
+            "fr",
+            &environment,
+            &InstallControl::default(),
+            None,
+            |phase, _, _| assert_ne!(phase, Phase::Finish, "same version attempted to commit")
+        )
+        .is_err()
+    );
+    crate::integration::unregister(&f.root, &registration, &environment).unwrap();
+}
+
+#[test]
+#[ignore = "requires a local release ZIP and a disposable, unregistered installation clone"]
+fn setup_upgrade_real_release_in_sandbox() -> Result<()> {
+    let root = PathBuf::from(
+        std::env::var_os("PIXEL_MUSEUM_TEST_UPGRADE_ROOT").context("Missing clone path")?,
+    );
+    let local = PathBuf::from(std::env::var_os("LOCALAPPDATA").context("Missing LOCALAPPDATA")?);
+    let sandbox = local.join("PixelMuseumBuild");
+    ensure!(
+        root.starts_with(&sandbox) && root != sandbox,
+        "Clone must be inside PixelMuseumBuild"
+    );
+    ensure_no_links(&root)?;
+    ensure!(
+        crate::uninstall::inspect(&root)?.registration.is_none(),
+        "Use an unregistered clone"
+    );
+    let manifest_path = PathBuf::from(
+        std::env::var_os("PIXEL_MUSEUM_TEST_UPGRADE_MANIFEST").context("Missing manifest path")?,
+    );
+    let manifest: crate::manifest::Manifest = serde_json::from_slice(&fs::read(&manifest_path)?)?;
+    manifest.validate()?;
+    let full = manifest
+        .packages
+        .iter()
+        .find(|package| package.kind == crate::manifest::PackageKind::App)
+        .context("Missing application package")?;
+    let inventory_sha = inventory_sha256(&root)?;
+    let delta = manifest.updates.iter().find(|update| {
+        update.base_inventory_sha256.eq_ignore_ascii_case(&inventory_sha)
+    });
+    let package = delta.map_or(full, |update| &update.package);
+    let archive = manifest_path
+        .parent()
+        .context("Missing package folder")?
+        .join(&package.filename);
+    let temp = tempfile::tempdir()?;
+    let environment = crate::integration::Environment {
+        programs: temp.path().join("Programs"),
+        desktop: temp.path().join("Desktop"),
+        registry_base: format!(
+            r"Software\PixelMuseum\InstallerTests\{}",
+            temp.path().file_name().unwrap().to_string_lossy()
+        ),
+    };
+    let before = hash_file(&root.join(EXE))?;
+    let start = std::time::Instant::now();
+    let control = InstallControl::default();
+    let cancel_phase = std::env::var("PIXEL_MUSEUM_TEST_CANCEL_PHASE").ok();
+    let outcome = apply_from_setup(
+        &root,
+        &manifest.version,
+        package,
+        &archive,
+        "it",
+        &environment,
+        &control,
+        delta,
+        |phase, done, total| {
+            println!(
+                "{:.2}s {phase:?} {done}/{total}",
+                start.elapsed().as_secs_f64()
+            );
+            if cancel_phase.as_deref() == Some(&format!("{phase:?}")) {
+                control.request_cancel();
+            }
+        },
+    );
+    if cancel_phase.is_some() {
+        ensure!(
+            format!("{:#}", outcome.unwrap_err()).contains("Installation cancelled"),
+            "Setup did not cancel safely"
+        );
+        ensure!(
+            hash_file(&root.join(EXE))? == before,
+            "Installed executable changed on cancellation"
+        );
+    } else {
+        outcome?;
+        let installed = crate::uninstall::inspect(&root)?;
+        let registration = installed
+            .registration
+            .context("Missing test registration")?;
+        let result = crate::integration::verify_registered(
+            &root,
+            &manifest.version,
+            &registration,
+            &environment,
+        );
+        crate::integration::unregister(&root, &registration, &environment)?;
+        result?;
+    }
+    Ok(())
+}

@@ -1,6 +1,7 @@
 // Pixel Museum - a collection explored as a sequence of living exhibit cards.
 // SPDX-License-Identifier: GPL-3.0-or-later
 #include "museum/screen.hpp"
+#include "museum/story_card_layout.hpp"
 #include "museum/study_controls.hpp"
 #include <algorithm>
 #include <cmath>
@@ -296,12 +297,14 @@ void Screen::draw_detail(){
     const float rise=(1-opened)*780;
     story_actions_.clear();story_action_=-1;story_video_anchor_=0;sources_anchor_=0;
     if(seek_first_video_){for(size_t n=0;n<story_cards_.size();++n)if(story_cards_[n].kind==StoryCard::film){story_focus_=int(n);break;}seek_first_video_=false;}
-    page_.push_clip({0,266,1920,672});page_.push_opacity(opened*fade_);
-    const int first=std::max(0,int(std::floor(story_position_.value))-1),last=std::min(int(story_cards_.size())-1,int(std::ceil(story_position_.value))+1);
+    const auto canvas=canvas_bounds();
+    page_.push_clip({canvas.x,266,canvas.w,672});page_.push_opacity(opened*fade_);
+    const float reach=std::max(1840.f,(canvas.w+story_card.w)*.5f)/story_card_pitch;
+    const int first=std::max(0,int(std::ceil(story_position_.value-reach)));
+    const int last=std::min(int(story_cards_.size())-1,int(std::floor(story_position_.value+reach)));
     for(int n=first;n<=last;++n){
         const auto&c=story_cards_[size_t(n)];const bool active=n==story_focus_;
-        const float x=(float(n)-story_position_.value)*1792;
-        if(std::abs(x)>1840)continue;
+        const float x=(float(n)-story_position_.value)*story_card_pitch;
         const float scroll=active?scroll_.value:0;
         page_.push_transform(1,0,0,x,rise);
         const bool is_experience=c.kind==StoryCard::experience||c.kind==StoryCard::interactive;
@@ -313,7 +316,7 @@ void Screen::draw_detail(){
             page_.glow({108,302,740,580},32,84,lavender);
             page_.glow({1068,302,740,580},32,84,mint);
         }
-        page_.rounded_rect({96,286,1728,620},0,is_experience?experience_palette.paper:card);
+        page_.rounded_rect(story_card,0,is_experience?experience_palette.paper:card);
         page_.line(96,286,1824,286,1,(is_experience?experience_palette.ink:ink).with_alpha(.14f));
         const auto action=[&](Rect box,int image,int video){if(active)story_actions_.push_back({{box.x+x,box.y+rise,box.w,box.h},image,video});};
         const bool media=c.image>=0||c.kind==StoryCard::film||c.kind==StoryCard::object;

@@ -49,7 +49,12 @@ void keyboard_button(gfx::DrawList&list,const Fonts&fonts,const GlyphStyle&style
         return;
     }
     list.bordered_rect({x,cy-height*.5f,width,height},2,style.body,1.2f,style.edge);
+#if defined(MUSEUM_DESKTOP)
+    // Physical key names are literal labels, not localized UI verbs ("Enter").
+    list.text(*fonts.mono.font,fonts.mono.texture,keyboard_key(button),x+width*.5f,cy+size*.15f,size*.42f,style.ink,gfx::Align::center);
+#else
     text(list,fonts.mono,keyboard_key(button),x+width*.5f,cy+size*.15f,size*.42f,style.ink,gfx::Align::center);
+#endif
 }
 
 // DualSense face-button colours.
@@ -62,6 +67,55 @@ void label(gfx::DrawList &list, const Fonts &fonts, const GlyphStyle &style, con
            float cx, float cy, float size)
 {
     text(list, fonts.semibold, value, cx, cy + size * 0.36f, size, style.ink, gfx::Align::center);
+}
+
+gfx::Color xbox_outline(const GlyphStyle& style){
+    return style.edge.a > 0.0f ? style.edge : style.ink;
+}
+void xbox_shoulder(gfx::DrawList& list,const Fonts& fonts,const GlyphStyle& style,Button button,float x,float cy,float size,float width){
+    constexpr float bumper[]={
+        .00f,.90f,.012f,.42f,.025f,.35f,.065f,.30f,.135f,.23f,.215f,.16f,
+        .305f,.10f,.415f,.055f,.535f,.019f,.645f,.003f,.765f,0.f,.804f,.012f,
+        .975f,.228f,.996f,.265f,1.f,.317f,.925f,.920f,.908f,.966f,.871f,1.f,
+        .06f,1.f,.028f,.983f,.007f,.950f};
+    constexpr float trigger[]={
+        .184f,0.f,.926f,0.f,.959f,.009f,.982f,.035f,.990f,.068f,1.f,.274f,
+        .990f,.459f,.970f,.570f,.929f,.675f,.871f,.770f,.791f,.851f,.690f,.919f,
+        .581f,.965f,.445f,.992f,.272f,1.f,.138f,.989f,.050f,.975f,.021f,.963f,
+        .004f,.940f,0.f,.909f,.015f,.875f,.055f,.797f,.095f,.698f,.131f,.578f,
+        .151f,.459f,.156f,.339f,.149f,.229f,.133f,.145f,.112f,.070f,.119f,.034f,.142f,.011f};
+    const bool upper=button==Button::l1||button==Button::r1;
+    const bool mirror=button==Button::r1||button==Button::r2;
+    const float height=size*(upper?.71f:.94f);
+    const float shape_width=upper?width:width*.90f;
+    const auto* outline=upper?bumper:trigger;
+    const int count=upper?sizeof(bumper)/sizeof(float)/2:sizeof(trigger)/sizeof(float)/2;
+    float points[sizeof(trigger)/sizeof(float)];
+    for(int n=0;n<count;++n){
+        const float fraction=outline[2*n];
+        points[2*n]=x+(width-shape_width)*.5f+(mirror?1-fraction:fraction)*shape_width;
+        points[2*n+1]=cy+(outline[2*n+1]-.5f)*height;
+    }
+    const float stroke=size*.06f;
+    const auto edge=xbox_outline(style);
+    for(int n=0;n<count;++n){
+        const int next=(n+1)%count;
+        list.line(points[2*n],points[2*n+1],points[2*next],points[2*next+1],stroke,edge);
+    }
+    const float offset=(mirror?-1.f:1.f)*width*(upper?.077f:.070f);
+    label(list,fonts,style,button==Button::l1?"LB":button==Button::r1?"RB":button==Button::l2?"LT":"RT",
+        x+width*.5f+offset,cy+size*(upper?.032f:-.10f),size*(upper?.57f:.62f));
+}
+void xbox_view(gfx::DrawList& list,const GlyphStyle& style,float cx,float cy,float size){
+    const float stroke=size*.06f;
+    list.ring(cx,cy,size*.49f,stroke,xbox_outline(style));
+    const float left=cx-size*.265f,top=cy-size*.21f,right=cx+size*.08f,bottom=cy+size*.057f;
+    list.line(left,top,right,top,stroke,style.ink);
+    list.line(left,top,left,bottom,stroke,style.ink);
+    list.line(left,bottom,cx-size*.158f,bottom,stroke,style.ink);
+    list.line(right,top,right,cy-size*.095f,stroke,style.ink);
+    list.bordered_rect({cx-size*.09f,cy-size*.065f,size*.365f,size*.307f},
+        size*.02f,style.ink.with_alpha(0.0f),stroke,style.ink);
 }
 
 void face(gfx::DrawList &list, const GlyphStyle &style, Button button, float cx, float cy,
@@ -179,25 +233,26 @@ void draw_button(gfx::DrawList &list, const Fonts &fonts, const GlyphStyle &styl
     const float cx = x + w * 0.5f;
     if(active_device==ControlDevice::xbox){
         if(button==Button::cross||button==Button::circle||button==Button::square||button==Button::triangle){
-            list.circle(cx,cy,size*.5f,style.body);list.ring(cx,cy,size*.47f,1.4f,style.edge);
+            list.ring(cx,cy,size*.49f,size*.06f,xbox_outline(style));
             const char*letter=button==Button::cross?"A":button==Button::circle?"B":button==Button::square?"X":"Y";
             label(list,fonts,style,letter,cx,cy,size*.57f);return;
         }
         if(button==Button::l1||button==Button::r1||button==Button::l2||button==Button::r2){
-            const bool bumper=button==Button::l1||button==Button::r1;const float h=size*(bumper?.72f:.94f);
-            list.bordered_rect({x,cy-h*.5f,w,h},size*.16f,style.body,1.4f,style.edge);
-            label(list,fonts,style,button==Button::l1?"LB":button==Button::r1?"RB":button==Button::l2?"LT":"RT",cx,cy,size*.40f);return;
+            xbox_shoulder(list,fonts,style,button,x,cy,size,w);return;
         }
-        if(button==Button::touchpad||button==Button::options){
-            list.circle(cx,cy,size*.5f,style.body);list.ring(cx,cy,size*.47f,1.3f,style.edge);
-            if(button==Button::options){for(int n=-1;n<=1;++n)list.line(cx-size*.22f,cy+n*size*.15f,cx+size*.22f,cy+n*size*.15f,size*.06f,style.ink);}
-            else{
-                list.bordered_rect({cx-size*.23f,cy-size*.18f,size*.33f,size*.26f},0,style.body,size*.055f,style.ink);
-                list.bordered_rect({cx-size*.06f,cy-size*.02f,size*.33f,size*.26f},0,style.body,size*.055f,style.ink);
-            }
+        if(button==Button::touchpad){xbox_view(list,style,cx,cy,size);return;}
+        if(button==Button::options){
+            list.ring(cx,cy,size*.49f,size*.06f,xbox_outline(style));
+            for(int n=-1;n<=1;++n)list.line(cx-size*.22f,cy+n*size*.15f,cx+size*.22f,cy+n*size*.15f,size*.06f,style.ink);
             return;
         }
-        // Stick and directional-pad icons already depict the physical input.
+        if(button==Button::left_stick||button==Button::right_stick){
+            auto outlined=style;
+            outlined.body=outlined.body.with_alpha(0.0f);
+            outlined.edge=xbox_outline(style);
+            stick(list,fonts,outlined,button==Button::left_stick?"L":"R",cx,cy,size);
+            return;
+        }
     }
     switch (button)
     {
@@ -256,13 +311,14 @@ void draw_button(gfx::DrawList &list, const Fonts &fonts, const GlyphStyle &styl
     case Button::dpad:
     {
         const float half = size * 0.5f;
-        list.circle(cx, cy, half, style.body);
-        list.ring(cx, cy, half - 1.0f, 1.5f, style.edge);
+        const bool xbox=active_device==ControlDevice::xbox;
+        if (!xbox) list.circle(cx, cy, half, style.body);
+        list.ring(cx, cy, half - 1.0f, 1.5f, xbox?xbox_outline(style):style.edge);
         const float arm = size * 0.3f;
         const float thick = size * 0.2f;
         list.rounded_rect({cx - thick * 0.5f, cy - arm, thick, arm * 2}, thick * 0.3f, style.ink);
         list.rounded_rect({cx - arm, cy - thick * 0.5f, arm * 2, thick}, thick * 0.3f, style.ink);
-        list.circle(cx, cy, thick * 0.22f, style.body);
+        if (!xbox) list.circle(cx, cy, thick * 0.22f, style.body);
         return;
     }
     case Button::touchpad:

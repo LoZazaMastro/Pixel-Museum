@@ -7,6 +7,7 @@
 #include "yt/types.hpp"
 
 #include <string>
+#include <string_view>
 #include <vector>
 
 namespace yt
@@ -66,5 +67,7 @@ const Format *select_audio_format(const std::vector<Format> &formats,
 // The distinct sound tracks of an answer, in the order offered (empty for a
 // video with a single unnamed track).
 std::vector<AudioTrack> audio_tracks(const std::vector<Format> &formats);
+std::string audio_track_for_locale(const std::vector<AudioTrack>& tracks,
+                                   std::string_view original,std::string_view locale);
 
 } // namespace yt

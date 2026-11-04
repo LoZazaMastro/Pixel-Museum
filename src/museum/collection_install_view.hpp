@@ -5,8 +5,10 @@
 #include "ui/fonts.hpp"
 #include <cstddef>
 #include <cstdint>
+#include <string>
 
 namespace museum {
+std::string format_collection_bytes(std::uint64_t bytes);
 enum class CollectionInstallPhase { checking, preparing, downloading, paused, error, complete, installing, migrating };
 enum class CollectionInstallError { none, network, storage, invalid_files, unknown };
 struct CollectionInstallViewState {

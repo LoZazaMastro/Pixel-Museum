@@ -10,6 +10,7 @@
 #include "yt/auth.hpp"
 #include "yt/captions.hpp"
 #include "yt/caption_metadata.hpp"
+#include "yt/codec.hpp"
 #include "yt/service.hpp"
 #include <algorithm>
 #include <array>
@@ -34,7 +35,12 @@ struct Video::Impl {
     } sink;
     mutable std::mutex mutex;
     std::unique_ptr<yt::Service> service;
-    std::string open_id, failure, progress;
+    std::string open_id, media_id, failure, progress;
+    std::string requested_audio_track, selected_audio_track, original_audio_track;
+    std::vector<yt::AudioTrack> audio_tracks;
+    bool switching_audio=false;
+    double audio_resume_time=0;
+    bool audio_resume_paused=false;
     yt::captions::Loader captions;
     std::string caption_locale="en", caption_stage="off";
     bool captions_dirty=false;
@@ -64,7 +70,16 @@ struct Video::Impl {
         yt::VideoInfo caption_info;
         std::uint64_t caption_revision=0;
         std::string caption_request_url,caption_request_locale;
+        std::string active_id,active_audio_track;
+        bool resume_audio=false,resume_paused=false;
+        double resume_time=0;
         std::uint64_t active_generation=0;
+        const auto request_stream=[&] (bool audio_only_request){
+            yt::CodecChoice choice;choice.avc=true;choice.vp9=true;choice.av1=false;
+            choice.audio_only=audio_only_request;choice.max_height=720;choice.decode=yt::DecodeMode::software;
+            choice.audio_track=active_audio_track;
+            service->request_video(active_id,choice);
+        };
         auto last_tick=std::chrono::steady_clock::now();
         while (!stopping.load(std::memory_order_acquire)) {
             std::string id,locale; bool close = false, change_pause = false, paused = false, audio_only_request=false, refresh_captions=false,range_changed=false; double seek = -1;
@@ -72,6 +87,10 @@ struct Video::Impl {
             { std::lock_guard<std::mutex> lock(mutex);
               id.swap(open_id);audio_only_request=audio_only; close = close_requested; close_requested = false;
               if (close || !id.empty()) active_generation=generation;
+              if(!id.empty()){
+                  active_id=id;active_audio_track=requested_audio_track;
+                  resume_audio=switching_audio;resume_time=audio_resume_time;resume_paused=audio_resume_paused;
+              }
               change_pause = pause_requested; pause_requested = false; paused = want_pause;
               seek = seek_requested; seek_requested = -1;
               window=playback_window;range_changed=range_requested;range_requested=false;tick_range_revision=range_revision; }
@@ -81,26 +100,26 @@ struct Video::Impl {
                 caption_request_url.clear();caption_request_locale.clear();
                 if (player) { player->close(); player.reset(); }
                 service->request_close_video(); sink.ring.drain(); sink.ring.set_paused(true);
-                std::lock_guard<std::mutex> lock(mutex); pixels.clear(); position=length=0;
+                std::lock_guard<std::mutex> lock(mutex); pixels.clear();
+                if(!resume_audio||id.empty())position=length=0;
             }
-            if (!id.empty()) {
-                yt::CodecChoice choice; choice.avc = true; choice.vp9 = true; choice.av1 = false;
-                choice.audio_only=audio_only_request;choice.max_height = 720; choice.decode = yt::DecodeMode::software;
-                service->request_video(id, choice);
-            }
+            if (!id.empty())request_stream(audio_only_request);
             const auto now=std::chrono::steady_clock::now();
             const float elapsed=std::chrono::duration<float>(now-last_tick).count();
             last_tick=now;
             service->video_watchdog(std::clamp(elapsed,0.0f,1.0f));
-            bool timed_out=false;
+            bool timed_out=false,retry_original=false;
             {
                 std::lock_guard<std::mutex> lock(mutex);
                 // The upstream watchdog excludes a known preroll wait. Bound the
                 // entire request too, using wall time rather than the loop rate.
                 if (load==State::loading && now-loading_started>std::chrono::seconds(60)) {
-                    load=State::failed; failure="YouTube took too long to respond. Go back and try this film again";
-                    progress.clear(); pixels.clear(); clear_texture=true;
-                    timed_out=true;
+                    retry_original=resume_audio&&!active_audio_track.empty();
+                    if(!retry_original){
+                        load=State::failed; failure="YouTube took too long to respond. Go back and try this film again";
+                        progress.clear();pixels.clear();clear_texture=true;switching_audio=false;
+                        timed_out=true;
+                    }
                 }
             }
             if (timed_out) {
@@ -121,9 +140,19 @@ struct Video::Impl {
                         // Seek before the first update can feed the sink, avoiding an
                         // audible burst from the album opening while resolving a cue.
                         sink.frames.reset(window.bounded()?window.duration(total):-1.);
-                        if(window.start>0)player->seek(window.start);
+                        const double start=resume_audio?window.seek(resume_time-window.start,total):window.start;
+                        if(start>0)player->seek(start);
+                        if(resume_audio&&resume_paused)player->set_paused(true);
                         const auto metadata=service->video();
                         caption_info=metadata.info;caption_revision=metadata.revision;refresh_captions=true;
+                        const auto* original=yt::select_audio_format(metadata.info.formats);
+                        const auto* selected=yt::select_audio_format(metadata.info.formats,active_audio_track);
+                        std::lock_guard<std::mutex> lock(mutex);
+                        if(active_generation==generation){
+                            original_audio_track=original?original->audio_track_id:std::string{};
+                            selected_audio_track=selected?selected->audio_track_id:std::string{};
+                            audio_tracks=audio_only_request?std::vector<yt::AudioTrack>{}:yt::audio_tracks(metadata.info.formats);
+                        }
                     }
                 }
                 else if (next) { next->close(); sink.ring.set_paused(true); sink.ring.drain(); }
@@ -131,8 +160,10 @@ struct Video::Impl {
                 std::lock_guard<std::mutex> lock(mutex);
                 if (load == State::loading) {
                     progress = "Resolving the video and preparing playback";
-                    if (view.state == yt::Load::failed) {
+                    if(view.state==yt::Load::failed&&resume_audio&&!active_audio_track.empty())retry_original=true;
+                    else if (view.state == yt::Load::failed) {
                         load = State::failed;
+                        switching_audio=false;
                         yt::log::line("museum: video unavailable: %s",view.error.c_str());
                         const bool refused=view.error.find("403")!=std::string::npos || view.error.find("Forbidden")!=std::string::npos;
                         if (view.error=="timeout") failure="YouTube took too long to respond. Go back and try this film again";
@@ -142,6 +173,13 @@ struct Video::Impl {
                         else failure="YouTube could not open this film. Go back and try another exhibit";
                         progress.clear(); sink.ring.set_paused(true); sink.ring.drain();
                     }
+                }
+            }
+            if(retry_original&&!player){
+                std::lock_guard<std::mutex> lock(mutex);
+                if(active_generation==generation&&load==State::loading){
+                    active_audio_track.clear();requested_audio_track.clear();loading_started=now;
+                    request_stream(false);
                 }
             }
             // Playback can now become ready before optional client metadata.
@@ -204,6 +242,7 @@ struct Video::Impl {
                 // the newly selected cue and make the playlist skip it.
                 if (active_generation!=generation || tick_range_revision!=range_revision || load==State::idle || load==State::failed) continue;
                 load = fatal ? State::failed : State::ready;
+                switching_audio=false;
                 failure = player->error(); length = player->duration_s();position=passage_ended?window.finish(length):player->clock_s();
                 is_paused = player->paused(); is_ended = passage_ended||player->ended();
                 if (!audio_only_request && frame.fresh && frame.rgba && frame.width > 0 && frame.height > 0 && frame.width <= 1920 && frame.height <= 1080) {
@@ -257,6 +296,8 @@ void Video::open(const std::string &id,bool audio_only,double start_seconds,doub
     std::lock_guard<std::mutex> lock(impl_->mutex);
     impl_->pause_requested=false;impl_->seek_requested=-1;impl_->want_pause=false;
     impl_->playback_window={start_seconds,end_seconds};impl_->range_requested=false;
+    impl_->media_id.clear();impl_->requested_audio_track.clear();impl_->selected_audio_track.clear();impl_->original_audio_track.clear();
+    impl_->audio_tracks.clear();impl_->switching_audio=false;
     ++impl_->generation; impl_->clear_texture=true; impl_->pixels.clear();impl_->audio_only=audio_only;
     impl_->captions.clear();impl_->captions_dirty=true;
     impl_->caption_stage=audio_only?"off":"waiting";
@@ -270,7 +311,7 @@ void Video::open(const std::string &id,bool audio_only,double start_seconds,doub
     if (id.size()!=11 || id.find_first_not_of("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_-") != std::string::npos) {
         impl_->load=State::failed; impl_->failure="This exhibit has no valid YouTube video ID"; return;
     }
-    impl_->open_id=id; impl_->load=State::loading; impl_->failure.clear(); impl_->progress="Contacting YouTube"; impl_->loading_started=std::chrono::steady_clock::now();
+    impl_->open_id=impl_->media_id=id; impl_->load=State::loading; impl_->failure.clear(); impl_->progress="Contacting YouTube"; impl_->loading_started=std::chrono::steady_clock::now();
     impl_->is_ended=false; impl_->is_paused=false;
 }
 void Video::play_range(double start_seconds,double end_seconds){
@@ -288,6 +329,7 @@ void Video::close() {
     std::lock_guard<std::mutex> lock(impl_->mutex); impl_->open_id.clear(); impl_->close_requested=true;
     impl_->pause_requested=false;impl_->seek_requested=-1;impl_->want_pause=false;impl_->range_requested=false;
     impl_->playback_window={};
+    impl_->media_id.clear();impl_->audio_tracks.clear();impl_->switching_audio=false;
     ++impl_->generation; impl_->clear_texture=true; impl_->pixels.clear();
     impl_->captions.clear();impl_->caption_stage="off";impl_->captions_dirty=false;
     impl_->sink.command_pending.store(true,std::memory_order_release);
@@ -295,6 +337,28 @@ void Video::close() {
 }
 void Video::pause(bool value) { std::lock_guard<std::mutex> lock(impl_->mutex); impl_->pause_requested=true; impl_->want_pause=value; }
 void Video::seek(double seconds) { if(!std::isfinite(seconds))return;std::lock_guard<std::mutex> lock(impl_->mutex); impl_->seek_requested=std::max(0.0,seconds); }
+AudioTrackSwitch Video::audio_track_switch(std::string_view locale)const {
+    std::lock_guard<std::mutex> lock(impl_->mutex);
+    if(impl_->load!=State::ready||impl_->audio_only)return AudioTrackSwitch::none;
+    const auto target=yt::audio_track_for_locale(impl_->audio_tracks,impl_->original_audio_track,locale);
+    if(target.empty())return AudioTrackSwitch::none;
+    return impl_->selected_audio_track==target?AudioTrackSwitch::original:AudioTrackSwitch::localized;
+}
+bool Video::toggle_audio_track(std::string_view locale) {
+    std::lock_guard<std::mutex> lock(impl_->mutex);
+    if(impl_->load!=State::ready||impl_->audio_only||impl_->media_id.empty())return false;
+    const auto target=yt::audio_track_for_locale(impl_->audio_tracks,impl_->original_audio_track,locale);
+    if(target.empty())return false;
+    impl_->requested_audio_track=impl_->selected_audio_track==target?std::string{}:target;
+    impl_->audio_resume_time=impl_->position;impl_->audio_resume_paused=impl_->is_paused;
+    impl_->switching_audio=true;impl_->open_id=impl_->media_id;impl_->close_requested=true;
+    impl_->load=State::loading;impl_->loading_started=std::chrono::steady_clock::now();
+    impl_->pause_requested=false;impl_->seek_requested=-1;impl_->is_ended=false;
+    ++impl_->generation;
+    impl_->sink.command_pending.store(true,std::memory_order_release);
+    impl_->sink.ring.set_paused(true);impl_->sink.ring.drain();
+    return true;
+}
 void Video::update(float dt) { (void)dt; }
 void Video::upload_pending(hui::gfx::Renderer &renderer) {
     std::lock_guard<std::mutex> lock(impl_->mutex);
@@ -335,7 +399,7 @@ float Video::audio_level()const{return impl_->level.load(std::memory_order_relax
 State Video::state() const { std::lock_guard<std::mutex> lock(impl_->mutex); return impl_->load; }
 std::string Video::error() const { std::lock_guard<std::mutex> lock(impl_->mutex); return impl_->failure; }
 std::string Video::stage() const { std::lock_guard<std::mutex> lock(impl_->mutex); return impl_->progress; }
-std::uint32_t Video::texture() const { std::lock_guard<std::mutex> lock(impl_->mutex); return impl_->load==State::ready?impl_->texture:0; }
+std::uint32_t Video::texture() const { std::lock_guard<std::mutex> lock(impl_->mutex); return impl_->load==State::ready||impl_->switching_audio?impl_->texture:0; }
 int Video::width() const { return impl_->texture_w; }
 int Video::height() const { return impl_->texture_h; }
 double Video::time() const { std::lock_guard<std::mutex> lock(impl_->mutex); return impl_->position; }

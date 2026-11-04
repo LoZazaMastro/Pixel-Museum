@@ -64,29 +64,28 @@ void Screen::open_application_update(ui::Feedback& feedback){open_update_check(f
 void Screen::observe_application_update(const ApplicationUpdater::Snapshot& snapshot){
     application_state_=snapshot;
     if(application_restart_failed_){application_state_.phase=ApplicationPhase::failed;application_state_.error=application_restart_error_;}
+    if(application_state_.phase==ApplicationPhase::ready&&!application_state_.version.empty()&&application_state_.version!=application_ready_notified_version_){
+        application_ready_notified_version_=application_state_.version;
+        if(!application_dialog_)application_completion_notice_=6.f;
+    }
     if(application_dialog_){
-        if(application_combined_check_){
-            if(database_state_.phase==DatabaseUpdater::Phase::available)database_notified_revision_=database_state_.revision;
-            if(database_state_.phase==DatabaseUpdater::Phase::ready)database_ready_notified_revision_=database_state_.revision;
-        }
+        if(application_combined_check_&&database_state_.phase==DatabaseUpdater::Phase::available)
+            database_notified_revision_=database_state_.revision;
         application_focus_=std::clamp(application_focus_,0,application_action_count()-1);
         if(application_state_.phase==ApplicationPhase::available)application_notified_version_=application_state_.version;
-        if(application_state_.phase==ApplicationPhase::ready)application_ready_notified_version_=application_state_.version;
         return;
     }
     if(!application_notification_ready())return;
     const auto& version=application_state_.version;
     const bool available=application_state_.phase==ApplicationPhase::available&&!version.empty()&&version!=application_notified_version_;
-    const bool ready=application_state_.phase==ApplicationPhase::ready&&!version.empty()&&version!=application_ready_notified_version_;
     const bool database_available=application_combined_check_&&database_state_.phase==DatabaseUpdater::Phase::available&&database_state_.revision!=database_notified_revision_;
-    const bool database_ready=application_combined_check_&&database_state_.phase==DatabaseUpdater::Phase::ready&&database_state_.revision!=database_ready_notified_revision_;
-    if(!available&&!ready&&!database_available&&!database_ready)return;
+    if(!available&&!database_available)return;
     if(database_available)database_notified_revision_=database_state_.revision;
-    if(database_ready)database_ready_notified_revision_=database_state_.revision;
     application_dialog_=true;application_focus_=0;application_open_.snap(0);
-    if(available)application_notified_version_=version;else if(ready)application_ready_notified_version_=version;
+    if(available)application_notified_version_=version;
 }
 void Screen::update_application(float dt){
+    application_completion_notice_=std::max(0.f,application_completion_notice_-dt);
     if(!application_auto_checked_&&application_notification_ready()){
         application_combined_check_=true;application_auto_checked_=database_auto_checked_=true;
         application_updater_.check();database_updater_.check();
@@ -157,7 +156,7 @@ bool Screen::begin_application_restart(){
 void Screen::draw_application_update(){
     const float alpha=std::clamp(application_open_.value,0.f,1.f);if(alpha<=0)return;
     const auto p=colours();const float rise=(1-alpha)*18;
-    overlay_.push_opacity(alpha);overlay_.rounded_rect({0,0,1920,1080},0,Color::rgb(0,.44f));overlay_.bordered_rect({410,255+rise,1100,560},0,p.paper,1,p.rule);
+    overlay_.push_opacity(alpha);overlay_.rounded_rect(canvas_bounds(),0,Color::rgb(0,.44f));overlay_.bordered_rect({410,255+rise,1100,560},0,p.paper,1,p.rule);
     if(application_combined_check_){
         const auto state=combined_check(application_state_.phase,database_state_.phase);
         ui::text(overlay_,fonts_.mono,"Check for updates",470,320+rise,18,p.muted,Align::left,1.8f);
@@ -173,7 +172,11 @@ void Screen::draw_application_update(){
             overlay_.rounded_rect({470,627+rise,980,4},0,p.rule);
             const auto total=application_state_.total_bytes+database_state_.total_bytes;
             const auto done=application_state_.downloaded_bytes+database_state_.downloaded_bytes;
-            if(state.downloading&&total){const float q=std::clamp(float(double(done)/double(total)),0.f,1.f);overlay_.rounded_rect({470,627+rise,980*q,4},0,tone_);}
+            if(state.downloading&&total){
+                const float q=std::clamp(float(double(done)/double(total)),0.f,1.f);
+                overlay_.rounded_rect({470,627+rise,980*q,4},0,tone_);
+                ui::text(overlay_,fonts_.mono,update_download_amount(done,total),470,654+rise,18,p.muted);
+            }
             else{const float x=470+(980-140)*(.5f+.5f*std::sin(time_*2));overlay_.rounded_rect({x,627+rise,140,4},0,tone_);}
         }
     }else{
@@ -198,7 +201,7 @@ void Screen::draw_application_update(){
         overlay_.rounded_rect({470,617+rise,980,4},0,p.rule);
         if(downloading&&application_state_.total_bytes){
             const float progress=std::clamp(float(double(application_state_.downloaded_bytes)/double(application_state_.total_bytes)),0.f,1.f);overlay_.rounded_rect({470,617+rise,980*progress,4},0,tone_);
-            char amount[96];std::snprintf(amount,sizeof(amount),"%.1f / %.1f MiB  ·  %.0f %%",application_state_.downloaded_bytes/(1024.*1024.),application_state_.total_bytes/(1024.*1024.),progress*100);ui::text(overlay_,fonts_.mono,amount,470,652+rise,18,p.muted);
+            ui::text(overlay_,fonts_.mono,update_download_amount(application_state_.downloaded_bytes,application_state_.total_bytes),470,652+rise,18,p.muted);
         }else{const float x=470+(980-140)*(.5f+.5f*std::sin(time_*2));overlay_.rounded_rect({x,617+rise,140,4},0,tone_);}
     }
     }

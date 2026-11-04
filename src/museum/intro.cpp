@@ -25,10 +25,12 @@ int Screen::take_startup_note(int* pixel_ordinal){
 void Screen::draw_boot(){
     using namespace hui;using gfx::Color;
     boot_.clear();const auto palette=colours();
+    const auto canvas=canvas_bounds();
+    const float edge_x=canvas.x+canvas.w,edge_y=canvas.y+canvas.h;
     // Background masks share edges. SDF rectangles soften each edge separately,
     // exposing the page below as thin seams beside the M during the passage.
     // Flat quads tile the background with exact raster edges instead.
-    const auto background=[&](gfx::Rect r,Color colour){
+    const auto flat_rect=[&](gfx::Rect r,Color colour){
         if(r.w<=0||r.h<=0)return;
         const float xy[]={r.x,r.y,r.x+r.w,r.y,r.x+r.w,r.y+r.h,r.x,r.y+r.h};
         boot_.polygon(xy,4,colour);
@@ -36,10 +38,10 @@ void Screen::draw_boot(){
     const float flight=tween::clamp01((boot_time_-3.f)/1.8f);
     if(reduced_){
         const float opacity=1-tween::smoothstep(flight);
-        background({0,0,1920,1080},palette.paper.with_alpha(opacity));
+        flat_rect(canvas,palette.paper.with_alpha(opacity));
         for(int i=0;i<13;++i){
             const float lit=tween::smoothstep((boot_time_-.12f-float(i)*.185f)/.26f);
-            boot_.rounded_rect({835+float(order[i][0])*50,415+float(order[i][1])*50,50,50},0,Color::rgb(pixel_colours[i],lit*opacity));
+            flat_rect({835+float(order[i][0])*50,415+float(order[i][1])*50,50,50},Color::rgb(pixel_colours[i],lit*opacity));
         }
         const float word=tween::smoothstep((boot_time_-2.45f)/.45f)*opacity;
         if(word>0)ui::text(boot_,fonts_.regular,"PIXEL MUSEUM",960,742,24,palette.ink.with_alpha(word*.8f),gfx::Align::center,5);
@@ -48,22 +50,22 @@ void Screen::draw_boot(){
     const float eased=tween::cubic_in_out(flight);
     const float zoom=std::exp(std::log(72.f)*eased);
     // Aim through the real negative space below the M's central diagonal.
-    // The four black masks open a window onto the already-rendered museum.
+    // Four paper masks frame the opening onto the museum.
     const float cell=50*zoom;
     const float origin_x=960-2.5f*cell;
     const float aim_y=615+(540-615)*tween::smoothstep(flight*3);
     const float origin_y=aim_y-4.f*cell;
-    if(flight<=0){background({0,0,1920,1080},palette.paper);}
+    if(flight<=0){flat_rect(canvas,palette.paper);}
     else{
-        const float left=std::clamp(origin_x+cell,0.f,1920.f);
-        const float right=std::clamp(origin_x+4*cell,0.f,1920.f);
-        const float top=std::clamp(origin_y+3*cell,0.f,1080.f);
-        const float bottom=std::clamp(origin_y+5*cell,0.f,1080.f);
-        background({0,0,1920,top},palette.paper);
-        background({0,bottom,1920,1080-bottom},palette.paper);
-        background({0,top,left,bottom-top},palette.paper);
-        background({right,top,1920-right,bottom-top},palette.paper);
-        background({left,top,right-left,bottom-top},palette.paper.with_alpha(1-tween::smoothstep(flight*7)));
+        const float left=std::clamp(origin_x+cell,canvas.x,edge_x);
+        const float right=std::clamp(origin_x+4*cell,canvas.x,edge_x);
+        const float top=std::clamp(origin_y+3*cell,canvas.y,edge_y);
+        const float bottom=std::clamp(origin_y+5*cell,canvas.y,edge_y);
+        flat_rect({canvas.x,canvas.y,canvas.w,top-canvas.y},palette.paper);
+        flat_rect({canvas.x,bottom,canvas.w,edge_y-bottom},palette.paper);
+        flat_rect({canvas.x,top,left-canvas.x,bottom-top},palette.paper);
+        flat_rect({right,top,edge_x-right,bottom-top},palette.paper);
+        flat_rect({left,top,right-left,bottom-top},palette.paper.with_alpha(1-tween::smoothstep(flight*7)));
     }
     for(int i=0;i<13;++i){
         const float lit=tween::smoothstep((boot_time_-.12f-float(i)*.185f)/.26f);
@@ -71,11 +73,7 @@ void Screen::draw_boot(){
         const auto c=gfx::mix(Color::rgb(pixel_colours[i]),palette.paper,eased*.7f).with_alpha(lit);
         const float x=origin_x+float(order[i][0])*cell,y=origin_y+float(order[i][1])*cell;
         const float inset=(1-lit)*cell*.12f;
-        if(flight>0){
-            const float d=cell*.07f*flight;
-            boot_.rounded_rect({x+d,y+d,cell,cell},0,Color::rgb(0x252b29,lit));
-        }
-        boot_.rounded_rect({x+inset,y+inset,cell-inset*2,cell-inset*2},0,c);
+        flat_rect({x+inset,y+inset,cell-inset*2,cell-inset*2},c);
     }
     const float word=tween::smoothstep((boot_time_-2.45f)/.45f)*(1-tween::smoothstep(flight*4));
     if(word>0)ui::text(boot_,fonts_.regular,"PIXEL MUSEUM",960,742,24,palette.ink.with_alpha(word*.8f),gfx::Align::center,5);

@@ -16,12 +16,14 @@ void logo(gfx::DrawList& d,float x,float y,float cell,gfx::Color ink){
     for(int row=0;row<5;++row)for(int col=0;col<5;++col)
         if(mark[row][col])d.rounded_rect({x+col*cell,y+row*cell,cell,cell},0,ink);
 }
-std::string bytes(std::uint64_t n){
+}
+std::string format_collection_bytes(std::uint64_t n){
     char out[48];const double gib=double(n)/(1024.*1024.*1024.);
     if(gib>=1.)std::snprintf(out,sizeof(out),"%.2f GiB",gib);
     else std::snprintf(out,sizeof(out),"%.1f MiB",double(n)/(1024.*1024.));
     return out;
 }
+namespace {
 const char* title(CollectionInstallPhase phase){
     switch(phase){
     case CollectionInstallPhase::checking:case CollectionInstallPhase::preparing:return "Installing the collection";
@@ -78,7 +80,7 @@ void draw_collection_install_view(hui::gfx::DrawList& d,const hui::ui::Fonts& fo
 
     const auto shown_total=installing?s.total_expanded_bytes:s.total_bytes;
     const auto shown_done=installing?s.installed_bytes:s.downloaded_bytes;
-    if(shown_total>0&&s.phase!=CollectionInstallPhase::checking){const auto amount=bytes(complete?shown_total:shown_done)+" / "+bytes(shown_total);ui::text(d,fonts.mono,amount,x,718,20,p.muted);}
+    if(shown_total>0&&s.phase!=CollectionInstallPhase::checking){const auto amount=format_collection_bytes(complete?shown_total:shown_done)+" / "+format_collection_bytes(shown_total);ui::text(d,fonts.mono,amount,x,718,20,p.muted);}
     if(active&&std::isfinite(s.bytes_per_second)&&s.bytes_per_second>0){
         char speed[64];std::snprintf(speed,sizeof(speed),"%.1f MiB/s",s.bytes_per_second/(1024.*1024.));
         ui::text(d,fonts.mono,speed,right,718,20,p.muted,Align::right);

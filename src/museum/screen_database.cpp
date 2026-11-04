@@ -20,30 +20,33 @@ void Screen::open_database_update(ui::Feedback&feedback){
     if(state.phase!=DatabasePhase::available&&state.phase!=DatabasePhase::downloading&&state.phase!=DatabasePhase::ready){database_updater_.check();state=database_updater_.snapshot();}
     database_state_=state;database_dialog_=true;database_focus_=0;database_open_.snap(0);
     if(state.phase==DatabasePhase::available)database_notified_revision_=state.revision;
-    if(state.phase==DatabasePhase::ready)database_ready_notified_revision_=state.revision;
     feedback.play(audio::Cue::modal_open);
 }
 void Screen::observe_database_update(const DatabaseUpdater::Snapshot&state){
     database_state_=state;
+    if(state.phase==DatabasePhase::ready&&state.revision!=database_ready_notified_revision_){
+        database_ready_notified_revision_=state.revision;
+        if(!database_dialog_
+#if defined(MUSEUM_DESKTOP)
+           &&!application_dialog_
+#endif
+        )database_completion_notice_=6.f;
+    }
     if(database_dialog_){
         database_focus_=std::clamp(database_focus_,0,database_action_count()-1);
         if(state.phase==DatabasePhase::available)database_notified_revision_=state.revision;
-        if(state.phase==DatabasePhase::ready)database_ready_notified_revision_=state.revision;
         return;
     }
     if(!database_notification_ready())return;
-    const bool available=state.phase==DatabasePhase::available&&state.revision!=database_notified_revision_;
-    const bool completed=state.phase==DatabasePhase::ready&&state.revision!=database_ready_notified_revision_;
-    if(!available&&!completed)return;
+#if defined(MUSEUM_DESKTOP)
+    if(application_combined_check_)return;
+#endif
+    if(state.phase!=DatabasePhase::available||state.revision==database_notified_revision_)return;
     database_dialog_=true;database_focus_=0;database_open_.snap(0);
-    if(available)database_notified_revision_=state.revision;else database_ready_notified_revision_=state.revision;
+    database_notified_revision_=state.revision;
 }
 void Screen::update_database(float dt){
-#if defined(MUSEUM_DESKTOP)
-    if(application_combined_check_&&!database_dialog_){
-        database_state_=database_updater_.snapshot();database_open_.target=0;database_open_.update(dt,reduced_?60.f:16.f);return;
-    }
-#endif
+    database_completion_notice_=std::max(0.f,database_completion_notice_-dt);
     if(!database_auto_checked_&&database_notification_ready()){database_auto_checked_=true;database_updater_.check();}
     observe_database_update(database_updater_.snapshot());
     database_open_.target=database_dialog_?1.f:0.f;database_open_.update(dt,reduced_?60.f:16.f);
@@ -73,10 +76,58 @@ bool Screen::handle_database_update(const InputFrame&input,ui::Feedback&feedback
     database_state_=database_updater_.snapshot();database_focus_=0;
     feedback.play(started?audio::Cue::select:audio::Cue::error);return true;
 }
+std::string Screen::update_download_amount(std::uint64_t downloaded,std::uint64_t total){
+    return format_collection_bytes(std::min(downloaded,total))+" / "+format_collection_bytes(total);
+}
+void Screen::draw_update_progress(){
+    const bool downloading=database_state_.phase==DatabasePhase::downloading;
+    std::uint64_t done=database_state_.downloaded_bytes,total=database_state_.total_bytes;
+    const char* title="Updating the database";
+#if defined(MUSEUM_DESKTOP)
+    if(!downloading&&application_state_.phase==ApplicationUpdater::Phase::downloading){
+        done=application_state_.downloaded_bytes;total=application_state_.total_bytes;title="Updating Pixel Museum";
+    }else
+#endif
+    if(!downloading)return;
+    std::string label(i18n::tr(title));
+    if(total)label+="  "+update_download_amount(done,total);
+    const auto palette=colours();
+    ui::paragraph(page_,fonts_.regular,label,960,90,19,760,25,palette.muted,1,Align::center);
+}
+void Screen::render_notifications(){
+    if(trophy_fallback_time_<=0&&database_completion_notice_<=0
+#if defined(MUSEUM_DESKTOP)
+       &&application_completion_notice_<=0
+#endif
+    )return;
+    overlay_.clear();
+    const auto canvas=canvas_bounds();
+    overlay_.push_transform(1,0,0,canvas.x+canvas.w-1920.f,0);
+    float y=54;
+    if(trophy_fallback_time_>0){draw_trophy_fallback();y+=170;}
+    const auto palette=colours();
+    const auto completed=[&](float remaining,const char* title){
+        if(remaining<=0)return;
+        const float alpha=std::min({1.f,remaining*4.f,(6.f-remaining)*5.f});
+        overlay_.push_opacity(alpha);
+        overlay_.bordered_rect({1160,y,680,114},0,palette.paper,1,palette.ink.with_alpha(.2f));
+        overlay_.rounded_rect({1185,y+31,8,8},0,tone_);
+        ui::text(overlay_,fonts_.semibold,title,1210,y+42,24,palette.ink);
+        ui::paragraph(overlay_,fonts_.regular,"Please restart the application.",1210,y+78,20,602,24,palette.muted,1);
+        overlay_.pop_opacity();
+        y+=130;
+    };
+    completed(database_completion_notice_,"Database update complete");
+#if defined(MUSEUM_DESKTOP)
+    completed(application_completion_notice_,"Application update complete");
+#endif
+    overlay_.pop_transform();
+    if(y>54)renderer_.draw(overlay_);
+}
 void Screen::draw_database_update(){
     const float alpha=std::clamp(database_open_.value,0.f,1.f);if(alpha<=0)return;
     const auto p=colours();const float rise=(1-alpha)*18;const Rect card{410,255+rise,1100,560};
-    overlay_.push_opacity(alpha);overlay_.rounded_rect({0,0,1920,1080},0,Color::rgb(0,.44f));overlay_.bordered_rect(card,0,p.paper,1,p.rule);
+    overlay_.push_opacity(alpha);overlay_.rounded_rect(canvas_bounds(),0,Color::rgb(0,.44f));overlay_.bordered_rect(card,0,p.paper,1,p.rule);
     ui::text(overlay_,fonts_.mono,"DATABASE",470,320+rise,18,p.muted,Align::left,1.8f);
     const auto phase=database_state_.phase;const bool checking=phase==DatabasePhase::idle||phase==DatabasePhase::checking,downloading=phase==DatabasePhase::downloading;
     const char*title=checking?"Checking for updates…":phase==DatabasePhase::current?"Your museum is up to date.":phase==DatabasePhase::available?"New stories are available.":downloading?"Updating the database":phase==DatabasePhase::ready?"Your database is ready.":"The update was interrupted.";
@@ -94,7 +145,7 @@ void Screen::draw_database_update(){
         overlay_.rounded_rect({470,617+rise,980,4},0,p.rule);
         if(downloading&&database_state_.total_bytes){
             const float progress=std::clamp(float(double(database_state_.downloaded_bytes)/double(database_state_.total_bytes)),0.f,1.f);overlay_.rounded_rect({470,617+rise,980*progress,4},0,tone_);
-            char amount[96];std::snprintf(amount,sizeof(amount),"%.1f / %.1f MiB  ·  %.0f %%",database_state_.downloaded_bytes/(1024.*1024.),database_state_.total_bytes/(1024.*1024.),progress*100);ui::text(overlay_,fonts_.mono,amount,470,652+rise,18,p.muted);
+            ui::text(overlay_,fonts_.mono,update_download_amount(database_state_.downloaded_bytes,database_state_.total_bytes),470,652+rise,18,p.muted);
         }else{const float x=470+(980-140)*(.5f+.5f*std::sin(time_*2));overlay_.rounded_rect({x,617+rise,140,4},0,tone_);}
     }
     for(int action=0;action<database_action_count();++action){const auto button=database_action_bounds(action);const bool selected=action==database_focus_;overlay_.bordered_rect(button,0,selected?p.ink:p.paper,1,selected?p.ink:p.rule);ui::text(overlay_,fonts_.semibold,database_action_label(action),button.cx(),button.y+48,25,selected?p.paper:p.ink,Align::center);}

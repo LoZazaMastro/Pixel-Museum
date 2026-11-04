@@ -1,6 +1,6 @@
 use crate::{
     Options,
-    engine::{self, Phase, Progress, Release},
+    engine::{self, InstallControl, Phase, Progress, Release},
     locale::{Language, Text},
     settings::InitialSettings,
 };
@@ -9,11 +9,7 @@ use eframe::egui::{
 };
 use std::{
     path::PathBuf,
-    sync::{
-        Arc,
-        atomic::{AtomicBool, Ordering},
-        mpsc,
-    },
+    sync::{Arc, atomic::Ordering, mpsc},
     time::Duration,
 };
 
@@ -101,19 +97,20 @@ struct Setup {
     installer_dark: bool,
     manual_theme: bool,
     destination: String,
+    installed_version: Option<String>,
+    upgrading: bool,
     release: Option<Release>,
     loading: bool,
     error: Option<String>,
     progress: Option<Progress>,
-    cancel: Arc<AtomicBool>,
+    control: Arc<InstallControl>,
     tx: mpsc::Sender<Message>,
     rx: mpsc::Receiver<Message>,
     closing: bool,
     was_cancelled: bool,
+    remove_personal_data: bool,
     #[cfg(feature = "preview")]
     preview_captured: bool,
-    #[cfg(feature = "preview")]
-    preview_hover_pad: Option<egui::Pos2>,
 }
 
 pub fn run(opts: Options) -> eframe::Result {
@@ -207,12 +204,21 @@ impl Setup {
             .uninstall_root
             .clone()
             .or_else(|| opts.install_dir.clone())
+            .or_else(crate::integration::installed_destination)
             .unwrap_or_else(engine::default_destination)
             .to_string_lossy()
             .into_owned();
         let (tx, rx) = mpsc::channel();
         let uninstall = opts.uninstall_root.is_some();
+        let installed_version = if uninstall {
+            None
+        } else {
+            crate::uninstall::inspect(std::path::Path::new(&destination))
+                .ok()
+                .map(|installation| installation.inventory.version)
+        };
         let desktop_shortcut = opts.desktop_shortcut;
+        let remove_personal_data = opts.remove_personal_data;
         let mut result = Self {
             opts,
             language,
@@ -230,19 +236,20 @@ impl Setup {
             installer_dark: cc.egui_ctx.system_theme() == Some(egui::Theme::Dark),
             manual_theme: false,
             destination,
+            installed_version,
+            upgrading: false,
             release: None,
             loading: false,
             error: None,
             progress: None,
-            cancel: Arc::new(AtomicBool::new(false)),
+            control: Arc::new(InstallControl::default()),
             tx,
             rx,
             closing: false,
             was_cancelled: false,
+            remove_personal_data,
             #[cfg(feature = "preview")]
             preview_captured: false,
-            #[cfg(feature = "preview")]
-            preview_hover_pad: None,
         };
         #[cfg(feature = "preview")]
         if let Ok(page) = std::env::var("PIXEL_MUSEUM_SETUP_PREVIEW_PAGE") {
@@ -303,12 +310,29 @@ impl Setup {
         self.release = None;
         let opts = self.opts.clone();
         let tx = self.tx.clone();
-        let cancel = self.cancel.clone();
+        let control = self.control.clone();
         std::thread::spawn(move || {
-            let result = engine::load_release(&opts, &cancel).map_err(|e| format!("{e:#}"));
+            let result =
+                engine::load_release(&opts, control.cancel_token()).map_err(|e| format!("{e:#}"));
             let _ = tx.send(Message::Loaded(result));
             ctx.request_repaint();
         });
+    }
+
+    fn refresh_installed_version(&mut self) {
+        self.installed_version =
+            crate::uninstall::inspect(std::path::Path::new(self.destination.trim()))
+                .ok()
+                .map(|installation| installation.inventory.version);
+    }
+
+    fn can_upgrade(&self) -> bool {
+        self.installed_version
+            .as_deref()
+            .zip(self.release.as_ref())
+            .is_some_and(|(old, release)| {
+                crate::update::version_is_newer(old, &release.manifest.version)
+            })
     }
 
     fn start(&mut self, ctx: egui::Context) {
@@ -322,32 +346,51 @@ impl Setup {
             return;
         };
         let path = PathBuf::from(self.destination.trim());
-        if let Err(error) = engine::validate_destination(&path) {
-            self.error = Some(format!("{error:#}"));
+        let upgrade = self.can_upgrade();
+        if self.installed_version.is_some() && !upgrade {
             return;
         }
-        self.cancel = Arc::new(AtomicBool::new(false));
+        if !upgrade {
+            if let Err(error) = engine::validate_destination(&path) {
+                self.error = Some(format!("{error:#}"));
+                return;
+            }
+        }
+        self.upgrading = upgrade;
+        self.control = Arc::new(InstallControl::default());
         self.page = Page::Installing;
         self.error = None;
         self.progress = None;
         self.was_cancelled = false;
-        let cancel = self.cancel.clone();
+        let control = self.control.clone();
         let tx = self.tx.clone();
         let language = self.language.code();
         let desktop_shortcut = self.desktop_shortcut;
         std::thread::spawn(move || {
-            let result = engine::install_registered(
-                &release,
-                &path,
-                language,
-                desktop_shortcut,
-                &cancel,
-                |progress| {
-                    let _ = tx.send(Message::Progress(progress));
-                    ctx.request_repaint();
-                },
-            )
-            .map_err(|e| format!("{e:#}"));
+            let progress = |progress| {
+                let _ = tx.send(Message::Progress(progress));
+                ctx.request_repaint();
+            };
+            let result = std::panic::catch_unwind(std::panic::AssertUnwindSafe(|| {
+                if upgrade {
+                    engine::upgrade_registered(&release, &path, language, &control, progress)
+                } else {
+                    engine::install_registered(
+                        &release,
+                        &path,
+                        language,
+                        desktop_shortcut,
+                        &control,
+                        progress,
+                    )
+                }
+                .map_err(|e| format!("{e:#}"))
+            }))
+            .unwrap_or_else(|_| {
+                Err(Language::from_code(language)
+                    .text(Text::WorkerFailed)
+                    .into())
+            });
             let _ = tx.send(Message::Done(result));
             ctx.request_repaint();
         });
@@ -367,19 +410,28 @@ impl Setup {
                     }
                 }
                 Message::Progress(progress) => self.progress = Some(progress),
-                Message::Done(result) => {
+                Message::Done(mut result) => {
+                    if result.is_ok() {
+                        result = crate::integration::verify_completed_install(
+                            std::path::Path::new(self.destination.trim()),
+                        )
+                        .map_err(|e| format!("{}\n\n{e:#}", self.text(Text::RegistrationFailed)));
+                    }
                     match result {
                         Ok(()) => {
                             self.page = Page::Finished;
-                            match InitialSettings::load(std::path::Path::new(
-                                self.destination.trim(),
-                            )) {
-                                Ok(settings) => self.initial_settings = settings,
-                                Err(error) => self.error = Some(format!("{error:#}")),
+                            if !self.upgrading {
+                                match InitialSettings::load(std::path::Path::new(
+                                    self.destination.trim(),
+                                )) {
+                                    Ok(settings) => self.initial_settings = settings,
+                                    Err(error) => self.error = Some(format!("{error:#}")),
+                                }
                             }
                         }
                         Err(error) => {
-                            self.was_cancelled = self.cancel.load(Ordering::Relaxed);
+                            self.was_cancelled =
+                                self.control.cancel_token().load(Ordering::Relaxed);
                             self.error = Some(error);
                             self.page = Page::Failed;
                         }
@@ -430,8 +482,10 @@ impl Setup {
         self.page = Page::Uninstalling;
         self.error = None;
         let tx = self.tx.clone();
+        let remove_personal_data = self.remove_personal_data;
         std::thread::spawn(move || {
-            let result = crate::uninstall::remove(&root).map_err(|e| format!("{e:#}"));
+            let result = crate::uninstall::remove_with_policy(&root, remove_personal_data)
+                .map_err(|e| format!("{e:#}"));
             let _ = tx.send(Message::Uninstalled(result));
             ctx.request_repaint();
         });
@@ -569,7 +623,7 @@ impl Setup {
                     }
                     if response.clicked() {
                         if n == 2 && self.page == Page::Installing {
-                            self.cancel.store(true, Ordering::Relaxed);
+                            self.control.request_cancel();
                             self.closing = true;
                         } else {
                             ctx.send_viewport_cmd(match n {
@@ -688,13 +742,10 @@ impl Setup {
                         };
                     }
                     if self.page == Page::Installing {
-                        let finishing = self
-                            .progress
-                            .as_ref()
-                            .is_some_and(|p| p.phase == Phase::Finish);
                         if ui
                             .add_enabled(
-                                !self.cancel.load(Ordering::Relaxed) && !finishing,
+                                !self.control.cancel_token().load(Ordering::Relaxed)
+                                    && !self.control.is_committing(),
                                 egui::Button::new(self.text(Text::Cancel))
                                     .fill(surface())
                                     .stroke(Stroke::new(1.0, rule()))
@@ -703,7 +754,7 @@ impl Setup {
                             )
                             .clicked()
                         {
-                            self.cancel.store(true, Ordering::Relaxed);
+                            self.control.request_cancel();
                         }
                     }
                     if matches!(self.page, Page::Uninstall | Page::UninstallFailed)
@@ -727,8 +778,15 @@ impl Setup {
                             Page::Destination => {
                                 if primary(
                                     ui,
-                                    self.text(Text::Install),
-                                    self.accepted && self.release.is_some() && !self.loading,
+                                    self.text(if self.installed_version.is_some() {
+                                        Text::Upgrade
+                                    } else {
+                                        Text::Install
+                                    }),
+                                    self.accepted
+                                        && self.release.is_some()
+                                        && !self.loading
+                                        && (self.installed_version.is_none() || self.can_upgrade()),
                                 )
                                 .clicked()
                                 {
@@ -749,7 +807,6 @@ impl Setup {
                             Page::Failed => {
                                 if primary(ui, self.text(Text::Retry), true).clicked() {
                                     self.page = Page::Destination;
-                                    self.cancel.store(false, Ordering::Relaxed);
                                     self.closing = false;
                                 }
                                 if secondary(ui, self.text(Text::Close)).clicked() {
@@ -896,15 +953,21 @@ impl Setup {
         );
         let button =
             egui::Rect::from_min_max(egui::pos2(row.right() - button_width, row.top()), row.max);
-        ui.put(
-            field,
-            egui::TextEdit::singleline(&mut self.destination)
-                .font(FontId::proportional(13.0))
-                .margin(egui::vec2(12.0, 0.0))
-                .align(egui::Align2::LEFT_CENTER)
-                .min_size(egui::vec2(field.width(), 44.0))
-                .desired_width(field.width()),
-        );
+        if ui
+            .put(
+                field,
+                egui::TextEdit::singleline(&mut self.destination)
+                    .font(FontId::proportional(13.0))
+                    .margin(egui::vec2(12.0, 0.0))
+                    .align(egui::Align2::LEFT_CENTER)
+                    .min_size(egui::vec2(field.width(), 44.0))
+                    .desired_width(field.width()),
+            )
+            .changed()
+        {
+            self.refresh_installed_version();
+            self.error = None;
+        }
         if ui
             .put(
                 button,
@@ -930,21 +993,38 @@ impl Setup {
                     folder.join("Pixel Museum")
                 };
                 self.destination = folder.to_string_lossy().into_owned();
+                self.refresh_installed_version();
                 self.error = None;
             }
         }
         ui.add_space(12.0);
-        ui.label(
-            RichText::new(self.text(Text::FolderHint))
-                .size(12.0)
-                .color(muted()),
-        );
-        ui.add_space(18.0);
-        square_checkbox(
-            ui,
-            &mut self.desktop_shortcut,
-            self.language.text(Text::DesktopShortcut),
-        );
+        let hint = match (self.installed_version.as_deref(), self.release.as_ref()) {
+            (Some(installed), Some(release)) if self.can_upgrade() => {
+                format!(
+                    "{installed} → {}
+{}",
+                    release.manifest.version,
+                    self.text(Text::UpgradeKeepsData)
+                )
+            }
+            (Some(installed), Some(release))
+                if crate::update::version_is_newer(&release.manifest.version, installed) =>
+            {
+                self.text(Text::NewerVersionInstalled).to_owned()
+            }
+            (Some(_), Some(_)) => self.text(Text::CurrentVersion).to_owned(),
+            (Some(_), None) => self.text(Text::UpgradeKeepsData).to_owned(),
+            _ => self.text(Text::FolderHint).to_owned(),
+        };
+        ui.label(RichText::new(hint).size(12.0).color(muted()));
+        if self.installed_version.is_none() {
+            ui.add_space(18.0);
+            square_checkbox(
+                ui,
+                &mut self.desktop_shortcut,
+                self.language.text(Text::DesktopShortcut),
+            );
+        }
         ui.add_space(12.0);
         if self.loading {
             ui.horizontal(|ui| {
@@ -987,18 +1067,32 @@ impl Setup {
             .progress
             .as_ref()
             .map(|p| (p.phase, p.done, p.total))
-            .unwrap_or((Phase::Download, 0, total));
+            .unwrap_or(if self.upgrading {
+                (Phase::Check, 0, 0)
+            } else {
+                (Phase::Download, 0, total)
+            });
         let fraction = if total > 0 {
             (done as f32 / total as f32).clamp(0.0, 1.0)
         } else {
             0.0
         };
-        let waiting = matches!(phase, Phase::Verify | Phase::Install | Phase::Finish);
-        let key = match phase {
-            Phase::Download => Text::Downloading,
-            Phase::Verify => Text::Verifying,
-            Phase::Install => Text::Installing,
-            Phase::Finish => Text::Finishing,
+        let cancelling = self.control.cancel_token().load(Ordering::Relaxed);
+        let waiting = total == 0 || cancelling || (!self.upgrading && phase != Phase::Download);
+        let key = if cancelling {
+            Text::Cancelling
+        } else {
+            match phase {
+                Phase::Download => Text::Downloading,
+                Phase::Check => Text::CheckingExisting,
+                Phase::Verify if self.upgrading => Text::VerifyingUpdate,
+                Phase::Verify => Text::Verifying,
+                Phase::Extract => Text::ExtractingUpdate,
+                Phase::Prepare => Text::PreparingUpdate,
+                Phase::Install => Text::Installing,
+                Phase::Finish if self.upgrading => Text::ApplyingUpdate,
+                Phase::Finish => Text::Finishing,
+            }
         };
         let width = ui
             .available_width()
@@ -1047,19 +1141,21 @@ impl Setup {
                 ink().linear_multiply(if n == ordinal { 0.85 } else { 0.17 }),
             );
         }
-        let percent = ui.painter().layout_no_wrap(
-            format!("{:.0}%", fraction * 100.0),
-            FontId::monospace(40.0 * scale),
-            ink(),
-        );
-        ui.painter().galley(
-            egui::pos2(
-                rect.right() - percent.size().x,
-                rect.top() + 311.0 * scale - percent.size().y,
-            ),
-            percent,
-            ink(),
-        );
+        if total != 0 && !cancelling {
+            let percent = ui.painter().layout_no_wrap(
+                format!("{:.0}%", fraction * 100.0),
+                FontId::monospace(40.0 * scale),
+                ink(),
+            );
+            ui.painter().galley(
+                egui::pos2(
+                    rect.right() - percent.size().x,
+                    rect.top() + 311.0 * scale - percent.size().y,
+                ),
+                percent,
+                ink(),
+            );
+        }
         let moving = (time * 10.0) as usize % 78;
         let step = rect.width() / 78.0;
         let side = step * 12.0 / 18.0;
@@ -1083,27 +1179,34 @@ impl Setup {
                 ink().linear_multiply(alpha),
             );
         }
-        ui.painter().text(
-            rect.min + egui::vec2(0.0, 403.0 * scale),
-            egui::Align2::LEFT_BOTTOM,
-            format!("{} / {}", bytes(done), bytes(total)),
-            FontId::monospace(20.0 * scale),
-            muted(),
-        );
+        if total != 0 && !cancelling {
+            let detail = if phase == Phase::Prepare {
+                format!("{done} / {total}")
+            } else {
+                format!("{} / {}", bytes(done), bytes(total))
+            };
+            ui.painter().text(
+                rect.min + egui::vec2(0.0, 403.0 * scale),
+                egui::Align2::LEFT_BOTTOM,
+                detail,
+                FontId::monospace(20.0 * scale),
+                muted(),
+            );
+        }
     }
 
     fn finished(&mut self, ui: &mut egui::Ui) {
+        if self.upgrading {
+            title(ui, self.text(Text::UpgradeComplete), "");
+            self.error_view(ui);
+            return;
+        }
         let language = self.language;
         #[cfg(feature = "preview")]
         let preview_audio_open =
             std::env::var_os("PIXEL_MUSEUM_SETUP_PREVIEW_AUDIO_OPEN").is_some();
         #[cfg(not(feature = "preview"))]
         let preview_audio_open = false;
-        #[cfg(feature = "preview")]
-        {
-            self.preview_hover_pad = None;
-        }
-        let mut controller_hovered = false;
         title(
             ui,
             language.text(Text::CompleteTitle),
@@ -1130,18 +1233,6 @@ impl Setup {
                 2
             };
             let mut size = (self.initial_settings.width, self.initial_settings.height);
-            let preferred = crate::settings::preferred_window_size();
-            let mut sizes = vec![
-                preferred,
-                (1280, 720),
-                (1600, 900),
-                (1920, 1080),
-                (2560, 1440),
-                (3840, 2160),
-            ];
-            if !sizes.contains(&size) {
-                sizes.push(size);
-            }
             egui::Grid::new("video-preferences")
                 .num_columns(2)
                 .spacing([20.0, 8.0])
@@ -1160,18 +1251,23 @@ impl Setup {
                     self.initial_settings.borderless = display_mode == 1;
                     ui.end_row();
                     ui.label(language.text(Text::Resolution));
+                    let sizes = crate::settings::resolution_choices(size, display_mode == 0);
+                    if display_mode == 0 && !sizes.contains(&size) {
+                        size = (1920, 1080);
+                    }
                     let resolution_text = if self.initial_settings.borderless {
                         crate::settings::desktop_size().map_or_else(
                             || language.text(Text::Desktop).to_owned(),
-                            |(w, h)| {
+                            |mode| {
                                 format!(
-                                    "{} \u{00b7} {w} \u{00d7} {h}",
-                                    language.text(Text::Desktop)
+                                    "{} \u{00b7} {}",
+                                    language.text(Text::Desktop),
+                                    crate::settings::resolution_label(mode)
                                 )
                             },
                         )
                     } else {
-                        format!("{} \u{00d7} {}", size.0, size.1)
+                        crate::settings::resolution_label(size)
                     };
                     ui.add_enabled_ui(!self.initial_settings.borderless, |ui| {
                         egui::ComboBox::from_id_salt("initial-resolution")
@@ -1182,7 +1278,7 @@ impl Setup {
                                     ui.selectable_value(
                                         &mut size,
                                         mode,
-                                        format!("{} \u{00d7} {}", mode.0, mode.1),
+                                        crate::settings::resolution_label(mode),
                                     );
                                 }
                             });
@@ -1242,46 +1338,32 @@ impl Setup {
                         (Text::Sfx, &mut self.initial_settings.sfx),
                         (Text::Ambient, &mut self.initial_settings.ambient),
                         (Text::Culture, &mut self.initial_settings.culture),
-                        (Text::Pad, &mut self.initial_settings.pad),
                     ] {
-                        let label = ui.label(language.text(key));
-                        let control = ui.add(
+                        ui.label(language.text(key));
+                        ui.add(
                             egui::Slider::new(level, 0.0..=1.0)
                                 .step_by(0.01)
                                 .custom_formatter(|v, _| format!("{:.0}%", v * 100.0)),
                         );
-                        if matches!(key, Text::Pad) {
-                            controller_hovered |= label.hovered() || control.hovered();
-                            #[cfg(feature = "preview")]
-                            match std::env::var("PIXEL_MUSEUM_SETUP_PREVIEW_HOVER_PAD").as_deref() {
-                                Ok("volume-label") => {
-                                    self.preview_hover_pad = Some(label.rect.center())
-                                }
-                                Ok("volume") => {
-                                    self.preview_hover_pad = Some(control.rect.center())
-                                }
-                                _ => {}
-                            }
-                        }
                         ui.end_row();
                     }
                 });
-            ui.add_space(8.0);
-            let control = square_checkbox(
-                ui,
-                &mut self.initial_settings.culture_on_pad,
-                language.text(Text::CultureToPad),
-            );
-            controller_hovered |= control.hovered();
-            #[cfg(feature = "preview")]
-            if std::env::var("PIXEL_MUSEUM_SETUP_PREVIEW_HOVER_PAD").as_deref() == Ok("culture") {
-                self.preview_hover_pad = Some(control.rect.left_center() + egui::vec2(8.0, 0.0));
-            }
         });
-        if controller_hovered {
-            mouse_tooltip(ui, language.text(Text::DualSenseRequired));
-        }
         ui.add_space(12.0);
+        ui.horizontal_wrapped(|ui| {
+            ui.label(
+                RichText::new(language.text(Text::DualSenseFirmwareAdvice))
+                    .small()
+                    .color(muted()),
+            );
+            ui.hyperlink_to(
+                RichText::new(language.text(Text::DownloadPlayStationAccessories)).small(),
+                format!(
+                    "https://controller.dl.playstation.net/controller/lang/{}/2100004.html",
+                    language.code()
+                ),
+            );
+        });
         self.error_view(ui);
     }
 
@@ -1293,9 +1375,11 @@ impl Setup {
             return;
         }
         let root = PathBuf::from(self.destination.trim());
-        if let Err(error) = self.initial_settings.save(&root) {
-            self.error = Some(format!("{error:#}"));
-            return;
+        if !self.upgrading {
+            if let Err(error) = self.initial_settings.save(&root) {
+                self.error = Some(format!("{error:#}"));
+                return;
+            }
         }
         if launch {
             let executable = self
@@ -1332,14 +1416,26 @@ impl Setup {
         self.error_view(ui);
     }
 
-    fn uninstall_page(&self, ui: &mut egui::Ui) {
+    fn uninstall_page(&mut self, ui: &mut egui::Ui) {
         let (heading, body) = match self.page {
-            Page::Uninstalled => (Text::UninstalledTitle, Text::UninstalledBody),
+            Page::Uninstalled => (
+                Text::UninstalledTitle,
+                if self.remove_personal_data {
+                    Text::UninstalledFullBody
+                } else {
+                    Text::UninstalledBody
+                },
+            ),
             Page::UninstallFailed => (Text::UninstallFailed, Text::UninstallBody),
             Page::Uninstalling => (Text::Uninstalling, Text::UninstallBody),
             _ => (Text::UninstallTitle, Text::UninstallBody),
         };
         title(ui, self.text(heading), self.text(body));
+        if matches!(self.page, Page::Uninstall | Page::UninstallFailed) {
+            ui.add_space(16.0);
+            let label = self.text(Text::RemovePersonalData);
+            square_checkbox(ui, &mut self.remove_personal_data, label);
+        }
         if self
             .opts
             .uninstall_root
@@ -1393,9 +1489,6 @@ impl Setup {
 impl eframe::App for Setup {
     #[cfg(feature = "preview")]
     fn raw_input_hook(&mut self, ctx: &egui::Context, raw: &mut egui::RawInput) {
-        if let Some(position) = self.preview_hover_pad {
-            raw.events.push(egui::Event::PointerMoved(position));
-        }
         if std::env::var_os("PIXEL_MUSEUM_SETUP_PREVIEW_HOVER_THEME").is_some() {
             let width = raw
                 .viewports
@@ -1421,7 +1514,7 @@ impl eframe::App for Setup {
         }
         self.read_messages(ctx);
         if ctx.input(|i| i.viewport().close_requested()) && self.page == Page::Installing {
-            self.cancel.store(true, Ordering::Relaxed);
+            self.control.request_cancel();
             self.closing = true;
             ctx.send_viewport_cmd(egui::ViewportCommand::CancelClose);
         }
@@ -1528,32 +1621,6 @@ fn title(ui: &mut egui::Ui, heading: &str, description: &str) {
         ui.add_space(15.0);
         ui.label(RichText::new(description).size(15.0).color(muted()));
     }
-}
-
-fn mouse_tooltip(ui: &egui::Ui, text: &str) {
-    let Some(pointer) = ui.ctx().pointer_hover_pos() else {
-        return;
-    };
-    let bounds = ui.ctx().viewport_rect().shrink(6.0);
-    let painter = ui.ctx().layer_painter(egui::LayerId::new(
-        egui::Order::Tooltip,
-        egui::Id::unique("dualsense-tooltip"),
-    ));
-    let galley = painter.layout(
-        text.to_owned(),
-        FontId::proportional(12.0),
-        ink(),
-        (bounds.width() - 20.0).clamp(1.0, 360.0),
-    );
-    let size = galley.size() + egui::vec2(20.0, 14.0);
-    let position = egui::pos2(
-        (pointer.x + 14.0).clamp(bounds.left(), (bounds.right() - size.x).max(bounds.left())),
-        (pointer.y + 18.0).clamp(bounds.top(), (bounds.bottom() - size.y).max(bounds.top())),
-    );
-    let rect = egui::Rect::from_min_size(position, size);
-    painter.rect_filled(rect, 0, paper());
-    painter.rect_stroke(rect, 0, Stroke::new(1.0, rule()), egui::StrokeKind::Inside);
-    painter.galley(position + egui::vec2(10.0, 7.0), galley, ink());
 }
 
 fn paint_brand(ui: &egui::Ui, anchor: egui::Pos2) {

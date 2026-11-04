@@ -225,10 +225,16 @@ void SoundBank::set_pitch_jitter(float amount)
 
 void SoundBank::play(Mixer &mixer, SoundSet set, const CueEvent &event)
 {
-    if (event.cue >= Cue::count || set >= SoundSet::count)
+    if(event.cue>=Cue::count)return;
+    play(mixer,set,event,cue_bus(event.cue));
+}
+
+void SoundBank::play(Mixer &mixer, SoundSet set, const CueEvent &event, Bus bus)
+{
+    if (event.cue >= Cue::count || set >= SoundSet::count || bus >= Bus::count)
         return;
     PlayParams params;
-    params.bus = cue_bus(event.cue);
+    params.bus = bus;
     params.pan = std::clamp(event.pan, -1.0f, 1.0f);
     Variations *variations = find(event.cue, set);
     if (variations != nullptr)

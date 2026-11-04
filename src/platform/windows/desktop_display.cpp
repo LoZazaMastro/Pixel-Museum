@@ -32,22 +32,38 @@ bool Display::apply(const DesktopVideoSettings&s){
     if(s.fullscreen&&s.borderless){
         if(!SDL_SetWindowFullscreenMode(window_,nullptr)||!SDL_SetWindowFullscreen(window_,true)){error_=SDL_GetError();return false;}
     }else if(s.fullscreen){SDL_DisplayMode mode{};
-        if(!SDL_GetClosestFullscreenDisplayMode(SDL_GetDisplayForWindow(window_),s.width,s.height,0,true,&mode)||
-            !SDL_SetWindowFullscreenMode(window_,&mode)||!SDL_SetWindowFullscreen(window_,true)){error_=SDL_GetError();return false;}
+        if(!SDL_GetClosestFullscreenDisplayMode(SDL_GetDisplayForWindow(window_),s.width,s.height,0,true,&mode)){error_=SDL_GetError();return false;}
+        if(desktop_aspect(s.width,s.height)!="16:9"&&(mode.w!=s.width||mode.h!=s.height)){error_="Unsupported resolution";return false;}
+        if(!SDL_SetWindowFullscreenMode(window_,&mode)||!SDL_SetWindowFullscreen(window_,true)){error_=SDL_GetError();return false;}
     }else{
         if(!SDL_SetWindowFullscreen(window_,false)||!SDL_SetWindowSize(window_,s.width,s.height)){error_=SDL_GetError();return false;}
     }
     if(!SDL_GL_SetSwapInterval(s.vsync?1:0)){error_=SDL_GetError();return false;}
     return true;
 }
-std::vector<DesktopDisplayMode> Display::modes()const{
-    std::vector<DesktopDisplayMode> result;int count=0;auto**m=SDL_GetFullscreenDisplayModes(SDL_GetDisplayForWindow(window_),&count);
-    for(int i=0;i<count;++i)if(m[i]->w>=960&&m[i]->h>=540&&std::int64_t(m[i]->w)*9==std::int64_t(m[i]->h)*16)result.push_back({m[i]->w,m[i]->h});SDL_free(m);
-    for(auto mode:{DesktopDisplayMode{1280,720},{1600,900},{1920,1080},{2560,1440},{3840,2160}})result.push_back(mode);
-    std::sort(result.begin(),result.end(),[](auto a,auto b){return a.width!=b.width?a.width<b.width:a.height<b.height;});
-    result.erase(std::unique(result.begin(),result.end()),result.end());return result;
+DesktopDisplayModes Display::modes()const{
+    DesktopDisplayModes result;
+    int count=0;
+    auto** modes=SDL_GetFullscreenDisplayModes(SDL_GetDisplayForWindow(window_),&count);
+    for(int i=0;i<count;++i){
+        const DesktopDisplayMode mode{modes[i]->w,modes[i]->h};
+        if(desktop_resolution_listed(mode))result.exclusive.push_back(mode);
+    }
+    SDL_free(modes);
+    result.windowed=result.exclusive;
+    result.windowed.insert(result.windowed.end(),std::begin(desktop_window_presets),std::end(desktop_window_presets));
+    for(auto* list:{&result.exclusive,&result.windowed}){
+        std::sort(list->begin(),list->end(),[](auto a,auto b){return a.width!=b.width?a.width<b.width:a.height<b.height;});
+        list->erase(std::unique(list->begin(),list->end()),list->end());
+    }
+    return result;
 }
-float Display::refresh_hz()const{const auto*m=SDL_GetCurrentDisplayMode(SDL_GetDisplayForWindow(window_));return m&&m->refresh_rate>0?m->refresh_rate:60.f;}
+double Display::refresh_hz()const{
+    const auto* mode=SDL_GetCurrentDisplayMode(SDL_GetDisplayForWindow(window_));
+    if(mode&&mode->refresh_rate_numerator>0&&mode->refresh_rate_denominator>0)
+        return double(mode->refresh_rate_numerator)/mode->refresh_rate_denominator;
+    return mode&&mode->refresh_rate>0?mode->refresh_rate:60.;
+}
 int Display::width()const{int w=0;SDL_GetWindowSizeInPixels(window_,&w,nullptr);return w;}
 int Display::height()const{int h=0;SDL_GetWindowSizeInPixels(window_,nullptr,&h);return h;}
 DesktopVideoSettings load_video_settings(const std::string&path){

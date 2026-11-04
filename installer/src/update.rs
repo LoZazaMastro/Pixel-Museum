@@ -119,6 +119,53 @@ fn strict_semver(value: &str) -> bool {
         && pre.is_none_or(|p| identifiers(p, true))
 }
 
+pub(crate) fn version_is_newer(current: &str, candidate: &str) -> bool {
+    use std::cmp::Ordering;
+    if !strict_semver(current) || !strict_semver(candidate) {
+        return false;
+    }
+    fn parts(version: &str) -> (&str, Option<&str>) {
+        let version = version.split('+').next().unwrap();
+        version
+            .split_once('-')
+            .map_or((version, None), |(core, pre)| (core, Some(pre)))
+    }
+    fn numeric(a: &str, b: &str) -> Ordering {
+        a.len().cmp(&b.len()).then_with(|| a.cmp(b))
+    }
+    let (old_core, old_pre) = parts(current);
+    let (new_core, new_pre) = parts(candidate);
+    for (new, old) in new_core.split('.').zip(old_core.split('.')) {
+        let order = numeric(new, old);
+        if order != Ordering::Equal {
+            return order == Ordering::Greater;
+        }
+    }
+    match (new_pre, old_pre) {
+        (None, Some(_)) => true,
+        (Some(new), Some(old)) => {
+            let mut old = old.split('.');
+            for new in new.split('.') {
+                let Some(old) = old.next() else { return true };
+                let order = match (
+                    new.bytes().all(|c| c.is_ascii_digit()),
+                    old.bytes().all(|c| c.is_ascii_digit()),
+                ) {
+                    (true, true) => numeric(new, old),
+                    (true, false) => Ordering::Less,
+                    (false, true) => Ordering::Greater,
+                    (false, false) => new.cmp(old),
+                };
+                if order != Ordering::Equal {
+                    return order == Ordering::Greater;
+                }
+            }
+            false
+        }
+        _ => false,
+    }
+}
+
 pub(crate) fn ordinary_absolute(path: &Path) -> Result<()> {
     ensure!(path.is_absolute(), "An absolute ordinary path is required");
     #[cfg(windows)]
@@ -302,14 +349,25 @@ pub(crate) fn read_limited(path: &Path, limit: u64) -> Result<Vec<u8>> {
     Ok(bytes)
 }
 fn hash_reader(reader: &mut impl Read) -> Result<String> {
+    hash_reader_progress(reader, |_| Ok(()))
+}
+
+fn hash_reader_progress(
+    reader: &mut impl Read,
+    mut progress: impl FnMut(u64) -> Result<()>,
+) -> Result<String> {
     let mut hash = Sha256::new();
     let mut buffer = vec![0u8; 256 * 1024];
+    let mut done = 0;
+    progress(done)?;
     loop {
         let n = reader.read(&mut buffer)?;
         if n == 0 {
             break;
         }
         hash.update(&buffer[..n]);
+        done += n as u64;
+        progress(done)?;
     }
     Ok(format!("{:x}", hash.finalize()))
 }
@@ -353,19 +411,130 @@ struct Prepared {
     directory: tempfile::TempDir,
     inventory: Inventory,
     files: BTreeMap<String, OwnedFile>,
+    reused: BTreeSet<String>,
 }
+
+use crate::engine::{InstallControl, Phase, check_cancel};
+use std::sync::atomic::AtomicBool;
+
+#[derive(Debug)]
+pub(crate) struct DeltaBaseUnavailable;
+
+impl std::fmt::Display for DeltaBaseUnavailable {
+    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+        f.write_str("Installed files do not match the incremental update base")
+    }
+}
+
+impl std::error::Error for DeltaBaseUnavailable {}
+
+pub(crate) fn inventory_sha256(root: &Path) -> Result<String> {
+    Ok(format!(
+        "{:x}",
+        Sha256::digest(read_limited(&root.join(INVENTORY), MAX_INVENTORY)?)
+    ))
+}
+
+struct UpdateWork<'a> {
+    cancel: &'a AtomicBool,
+    report: &'a mut dyn FnMut(Phase, u64, u64),
+    last: Option<(Phase, std::time::Instant)>,
+}
+
+impl<'a> UpdateWork<'a> {
+    fn new(cancel: &'a AtomicBool, report: &'a mut dyn FnMut(Phase, u64, u64)) -> Self {
+        Self {
+            cancel,
+            report,
+            last: None,
+        }
+    }
+
+    fn check(&self) -> Result<()> {
+        check_cancel(self.cancel)
+    }
+
+    fn advance(&mut self, phase: Phase, done: u64, total: u64) -> Result<()> {
+        self.check()?;
+        let now = std::time::Instant::now();
+        if done == total
+            || self.last.is_none_or(|(previous, instant)| {
+                phase != previous || now.duration_since(instant).as_millis() >= 100
+            })
+        {
+            (self.report)(phase, done, total);
+            self.last = Some((phase, now));
+        }
+        Ok(())
+    }
+
+    fn hash_file(&self, path: &Path) -> Result<String> {
+        hash_reader_progress(&mut process::open_regular(path)?, |_| self.check())
+    }
+}
+
+pub(crate) fn inspect_for_setup(
+    root: &Path,
+    cancel: &AtomicBool,
+    report: &mut dyn FnMut(Phase, u64, u64),
+) -> Result<crate::uninstall::Installation> {
+    let mut work = UpdateWork::new(cancel, report);
+    work.advance(Phase::Check, 0, 0)?;
+    crate::uninstall::inspect_with_hash(root, |path, total| {
+        hash_reader_progress(&mut process::open_regular(path)?, |done| {
+            work.advance(Phase::Check, done, total)
+        })
+    })
+}
+
 fn prepare(d: &Descriptor) -> Result<Prepared> {
-    let mut file = process::open_regular(&d.archive)?;
+    prepare_archive(
+        &d.application_root,
+        &d.version,
+        &d.archive,
+        &d.archive_sha256,
+        d.archive_bytes,
+        d.unpacked_bytes,
+        None,
+        &mut UpdateWork::new(&AtomicBool::new(false), &mut |_, _, _| {}),
+    )
+}
+
+fn prepare_archive(
+    root: &Path,
+    version: &str,
+    archive_path: &Path,
+    archive_sha256: &str,
+    archive_bytes: u64,
+    unpacked_bytes: u64,
+    delta_base: Option<&BTreeMap<String, OwnedFile>>,
+    work: &mut UpdateWork<'_>,
+) -> Result<Prepared> {
+    work.check()?;
     ensure!(
-        file.metadata()?.len() == d.archive_bytes,
+        strict_semver(version)
+            && lower_sha(archive_sha256)
+            && (1..=MAX_ARCHIVE).contains(&archive_bytes)
+            && (1..=MAX_EXPANDED).contains(&unpacked_bytes),
+        "Invalid application update version, hash or size"
+    );
+    let mut file = process::open_regular(archive_path)?;
+    ensure!(
+        file.metadata()?.len() == archive_bytes,
         "Archive length differs from the descriptor"
     );
     ensure!(
-        hash_reader(&mut file)? == d.archive_sha256,
+        hash_reader_progress(&mut file, |done| work.advance(
+            Phase::Verify,
+            done,
+            archive_bytes
+        ))? == archive_sha256,
         "Archive SHA-256 differs from the descriptor"
     );
     file.seek(SeekFrom::Start(0))?;
-    let mut archive = zip::ZipArchive::new(file).context("Cannot read update ZIP")?;
+    let mut archive =
+        zip::ZipArchive::new(std::io::BufReader::with_capacity(256 * 1024, file))
+            .context("Cannot read update ZIP")?;
     ensure!(
         (1..=100_001).contains(&archive.len()),
         "Too many ZIP members"
@@ -374,6 +543,7 @@ fn prepare(d: &Descriptor) -> Result<Prepared> {
     let mut all = BTreeSet::new();
     let mut expanded = 0u64;
     for i in 0..archive.len() {
+        work.check()?;
         let mut item = archive.by_index(i)?;
         let name = item.name()?.to_string();
         safe_relative_path(&name)?;
@@ -412,16 +582,17 @@ fn prepare(d: &Descriptor) -> Result<Prepared> {
             .checked_add(item.size())
             .context("ZIP expansion overflow")?;
         ensure!(
-            expanded <= d.unpacked_bytes && expanded <= MAX_EXPANDED,
+            expanded <= unpacked_bytes && expanded <= MAX_EXPANDED,
             "ZIP exceeds its trusted expansion limit"
         );
         headers.insert(key(&name), (name, item.size()));
     }
     ensure!(
-        expanded == d.unpacked_bytes,
+        expanded == unpacked_bytes,
         "ZIP expanded size does not match descriptor"
     );
     for name in headers.keys() {
+        work.check()?;
         let parts: Vec<_> = name.split('/').collect();
         ensure!(
             (1..parts.len()).all(|i| !headers.contains_key(&parts[..i].join("/"))),
@@ -445,10 +616,8 @@ fn prepare(d: &Descriptor) -> Result<Prepared> {
     let inventory: Inventory =
         serde_json::from_slice(&inventory_bytes).context("Invalid new inventory")?;
     let files = inventory.validate()?;
-    ensure!(
-        inventory.version == d.version && headers.len() == files.len() + 1,
-        "ZIP and inventory disagree on version or file count"
-    );
+    ensure!(inventory.version == version, "ZIP inventory version does not match");
+    ensure!(headers.contains_key("pixel museum.exe"), "ZIP lacks Pixel Museum.exe");
     for required in [
         "pixel museum.exe",
         "license",
@@ -463,20 +632,47 @@ fn prepare(d: &Descriptor) -> Result<Prepared> {
             "Update inventory lacks required application file: {required}"
         );
     }
-    for (k, entry) in &files {
-        let (name, bytes) = headers
-            .get(k)
-            .context("Inventory entry is absent from ZIP")?;
+    for (k, (name, bytes)) in &headers {
+        work.check()?;
+        if k == INVENTORY {
+            continue;
+        }
+        let entry = files.get(k).context("ZIP entry is absent from inventory")?;
         ensure!(
             name == &entry.path && *bytes == entry.bytes,
             "ZIP entry does not match inventory"
         );
     }
+    let mut reused = BTreeSet::new();
+    let missing = files.iter().filter(|(k, _)| !headers.contains_key(*k));
+    let mut checked = 0;
+    let reusable_bytes: u64 = missing.clone().map(|(_, entry)| entry.bytes).sum();
+    if reusable_bytes > 0 {
+        work.advance(Phase::Check, 0, reusable_bytes)?;
+    }
+    for (k, entry) in missing {
+        work.check()?;
+        let base = delta_base.context("Inventory entry is absent from ZIP")?;
+        ensure!(base.get(k) == Some(entry), "ZIP omits a changed inventory entry");
+        let path = root.join(safe_relative_path(&entry.path)?);
+        let mut existing = process::open_regular(&path).map_err(|_| DeltaBaseUnavailable)?;
+        if existing.metadata()?.len() != entry.bytes {
+            return Err(DeltaBaseUnavailable.into());
+        }
+        let digest = hash_reader_progress(&mut existing, |done| {
+            work.advance(Phase::Check, checked + done, reusable_bytes)
+        })?;
+        if digest != entry.sha256 {
+            return Err(DeltaBaseUnavailable.into());
+        }
+        checked += entry.bytes;
+        reused.insert(k.clone());
+    }
     ensure!(
-        fs2::available_space(&d.application_root)? >= d.unpacked_bytes + 64 * 1024 * 1024,
+        fs2::available_space(root)? >= unpacked_bytes + 64 * 1024 * 1024,
         "Insufficient free space to stage the application update"
     );
-    let transactions = d.application_root.join("application-updates/transactions");
+    let transactions = root.join("application-updates/transactions");
     ensure_no_links(&transactions)?;
     fs::create_dir_all(&transactions)?;
     ensure_no_links(&transactions)?;
@@ -485,7 +681,11 @@ fn prepare(d: &Descriptor) -> Result<Prepared> {
         .tempdir_in(&transactions)?;
     let stage = directory.path().join("new");
     fs::create_dir(&stage)?;
+    let mut extracted = 0;
+    work.advance(Phase::Extract, extracted, unpacked_bytes)?;
+    let mut buffer = vec![0u8; 256 * 1024];
     for i in 0..archive.len() {
+        work.check()?;
         let mut item = archive.by_index(i)?;
         if item.is_dir() {
             continue;
@@ -507,8 +707,8 @@ fn prepare(d: &Descriptor) -> Result<Prepared> {
         };
         let mut hash = Sha256::new();
         let mut copied = 0u64;
-        let mut buffer = vec![0u8; 256 * 1024];
         loop {
+            work.check()?;
             let n = item
                 .read(&mut buffer)
                 .context("ZIP CRC or decompression failure")?;
@@ -524,6 +724,8 @@ fn prepare(d: &Descriptor) -> Result<Prepared> {
             if let Some(output) = &mut output {
                 output.write_all(&buffer[..n])?;
             }
+            extracted += n as u64;
+            work.advance(Phase::Extract, extracted, unpacked_bytes)?;
         }
         ensure!(copied == item.size(), "ZIP member ended early");
         if let Some(expected) = expected {
@@ -537,13 +739,15 @@ fn prepare(d: &Descriptor) -> Result<Prepared> {
         }
     }
     process::executable_header(&stage.join(EXE))?;
-    process::executable_header(&stage.join("tools/windows-updater/Pixel-Museum-Updater.exe"))?;
+    let helper = "tools/windows-updater/Pixel-Museum-Updater.exe";
+    let helper_root = if reused.contains(&key(helper)) { root } else { &stage };
+    process::executable_header(&helper_root.join(helper))?;
     for name in [
         "content/collection-packs.json",
         "assets/images/manifest.json",
     ] {
         ensure!(
-            hash_file(&d.application_root.join(name))? == hash_file(&stage.join(name))?,
+            reused.contains(name) || work.hash_file(&root.join(name))? == files[name].sha256,
             "Update changes installed collection resources: {name}"
         );
     }
@@ -551,7 +755,131 @@ fn prepare(d: &Descriptor) -> Result<Prepared> {
         directory,
         inventory,
         files,
+        reused,
     })
+}
+
+pub(crate) fn apply_from_setup(
+    root: &Path,
+    version: &str,
+    package: &crate::manifest::Package,
+    archive: &Path,
+    language: &str,
+    environment: &crate::integration::Environment,
+    control: &InstallControl,
+    delta: Option<&crate::manifest::UpdatePackage>,
+    mut report: impl FnMut(Phase, u64, u64),
+) -> Result<()> {
+    let cancel = control.cancel_token();
+    check_cancel(cancel)?;
+    ordinary_absolute(root)?;
+    let cache = root.join("application-updates");
+    ensure_no_links(&cache)?;
+    fs::create_dir_all(&cache)?;
+    let lock_path = cache.join("apply.lock");
+    ensure_no_links(&lock_path)?;
+    if lock_path.exists() {
+        let _ = process::open_regular(&lock_path)?;
+    }
+    let lock = OpenOptions::new()
+        .create(true)
+        .truncate(false)
+        .read(true)
+        .write(true)
+        .open(lock_path)?;
+    fs2::FileExt::try_lock_exclusive(&lock)
+        .context("Another application update or uninstall is active")?;
+    let installed = inspect_for_setup(root, cancel, &mut report)?;
+    ensure!(
+        version_is_newer(&installed.inventory.version, version),
+        "Setup can only upgrade to a newer version"
+    );
+    process::assert_not_running(&root.join(EXE))?;
+    let old_files = installed.inventory.validate()?;
+    if let Some(delta) = delta {
+        if installed.inventory.version != delta.from_version
+            || !inventory_sha256(root)?.eq_ignore_ascii_case(&delta.base_inventory_sha256)
+        {
+            return Err(DeltaBaseUnavailable.into());
+        }
+    }
+    let archive_sha256 = package.sha256.to_ascii_lowercase();
+    let mut work = UpdateWork::new(cancel, &mut report);
+    let prepared = prepare_archive(
+        root,
+        version,
+        archive,
+        &archive_sha256,
+        package.bytes,
+        package.unpacked_bytes,
+        delta.map(|_| &old_files),
+        &mut work,
+    )?;
+    let stage = prepared.directory.path().join("new");
+    let app_bytes = prepared.files.values().map(|file| file.bytes).sum::<u64>()
+        + fs::metadata(stage.join(INVENTORY))?.len();
+    let helper_root = if prepared.reused.contains(&key(crate::integration::HELPER)) {
+        root
+    } else {
+        &stage
+    };
+    crate::integration::validate_helper_at(&stage, &helper_root.join(crate::integration::HELPER))?;
+    let previous_receipt = installed.receipt;
+    let registration = installed.registration;
+    let needs_registration = registration.is_none();
+    let registration = match registration {
+        Some(registration) => registration,
+        None => crate::integration::registration(root, language, false)?,
+    };
+    let mut transaction = transaction::Transaction::for_installation(
+        root,
+        version,
+        &archive_sha256,
+        &old_files,
+        prepared,
+        &mut work,
+    )?;
+    process::assert_not_running(&root.join(EXE))?;
+    control.begin_commit()?;
+    report(Phase::Finish, 0, 0);
+    let receipt_path = root.join(crate::integration::RECEIPT);
+    let mut receipt_changed = false;
+    let result = (|| -> Result<()> {
+        transaction.apply(None)?;
+        if needs_registration {
+            let mut receipt = previous_receipt.clone();
+            receipt["windows_integration"] = serde_json::to_value(&registration)?;
+            atomic_json(&receipt_path, &receipt)?;
+            receipt_changed = true;
+        }
+        // Use registration's own rollback for shortcuts and registry on failure.
+        let installed_bytes = previous_receipt["packages"]
+            .as_array()
+            .into_iter()
+            .flatten()
+            .filter(|p| p["kind"] == "collection")
+            .filter_map(|p| p["unpacked_bytes"].as_u64())
+            .fold(app_bytes, u64::saturating_add);
+        crate::integration::register(root, version, installed_bytes, &registration, environment)
+    })();
+    if let Err(error) = result {
+        let binary_rollback = transaction.rollback();
+        let receipt_rollback = if receipt_changed {
+            atomic_json(&receipt_path, &previous_receipt)
+        } else {
+            Ok(())
+        };
+        binary_rollback.with_context(|| format!("{error:#}. Application rollback failed"))?;
+        receipt_rollback
+            .with_context(|| format!("{error:#}. Installation record rollback failed"))?;
+        return Err(
+            error.context("Pixel Museum upgrade did not complete; previous installation restored")
+        );
+    }
+    if let Err(error) = transaction.finish() {
+        eprintln!("Pixel Museum was upgraded, but its backup could not be retired: {error:#}");
+    }
+    Ok(())
 }
 
 fn localized(language: &str, success: bool, rolled_back: bool) -> String {

@@ -34,11 +34,12 @@ struct DesktopInputInspection {
         s.timeline_.snap(float(s.focus_));click(1490,850);check(s.focus_==initial+1,"clicking a visible timeline stop selects that stop");
         s.timeline_.snap(float(s.focus_));click(300,400);check(s.detail_,"clicking the exhibit title opens its story");
         s.detail_=false;s.story_open_.snap(0);s.timeline_.snap(float(s.focus_));
-        check(std::string(s.desktop_preference_label(0))=="Video"&&std::string(s.desktop_preference_label(s.desktop_preference_count()-1))=="Exit","Video is first and Exit is last in Options");
+        check(std::string(s.desktop_preference_label(0))=="Video"&&std::string(s.desktop_preference_label(1))=="Audio"&&std::string(s.desktop_preference_label(s.desktop_preference_count()-1))=="Exit","Video and Audio are first, with Exit last in Options");
         {bool removed=true;for(int n=0;n<s.desktop_preference_count();++n)if(std::string(s.desktop_preference_label(n))=="Remove downloaded data")removed=false;check(removed,"PC Options excludes the PS5 downloaded-data removal action");}
         check(std::string(preference_labels[size_t(database_update_setting)])=="Check for updates"&&s.desktop_preference_setting(6)==database_update_setting,"the shared update action is present in PC and PS5 Options");
         DesktopVideoSettings initial_video;initial_video.width=1280;initial_video.height=720;
-        s.set_desktop_video_modes({{1280,720},{1920,1080}},initial_video);
+        s.set_desktop_video_modes({{{1280,720},{1920,1080}},{{1280,720},{1920,1080}}});
+        s.init_desktop_video_settings(initial_video);
         press(hui::Action::menu);s.panel_.snap(1);click(1500,240);check(s.desktop_video_open_,"the first Options row opens Video");
         click(1800,292);click(1800,396);click(1800,500);click(1800,604);click(1500,708);
         DesktopVideoSettings requested;
@@ -52,9 +53,10 @@ struct DesktopInputInspection {
         click(1800,396);check(s.desktop_video_draft_.fullscreen&&!s.desktop_video_draft_.borderless,"display mode wraps from Windowed to Fullscreen");
         {auto i=input();i.nav=hui::Direction::left;send(i);send(i);}check(s.desktop_video_draft_.fullscreen&&s.desktop_video_draft_.borderless,"left navigation reverses the same ordered display modes");
         press(hui::Action::back);check(!s.desktop_video_open_&&s.settings_,"Back returns from Video to Options");
-        click(1500,preference_row_baseline(3));check(s.volumes_open_,"the shifted Volumes row keeps its original action");
+        click(1500,preference_row_baseline(1));check(s.volumes_open_,"the second Options row opens Audio");
         click(1175+650*.37f,263);check(std::abs(s.master_volume_-.37f)<.001f,"clicking the volume track sets its actual value");
-        press(hui::Action::back);press(hui::Action::back);s.panel_.snap(0);
+        press(hui::Action::back);check(s.settings_&&!s.volumes_open_&&s.setting_==1,"Back returns from Audio to its Options row");
+        press(hui::Action::back);s.panel_.snap(0);
         {auto i=input();i.search_pressed=true;send(i);}check(s.wants_text_input(),"the desktop search shortcut focuses native text input");
         {auto i=input();i.text_utf8="café";send(i);}
         {auto i=input();i.text_left=true;send(i);}
@@ -134,8 +136,15 @@ struct DesktopInputInspection {
             auto progress=available;progress.phase=DatabaseUpdater::Phase::downloading;progress.downloaded_bytes=5;progress.total_bytes=10;s.observe_database_update(progress);s.database_open_.snap(1);s.overlay_.clear();s.draw_database_update();
             bool half=false;for(const auto&shape:s.overlay_.instances())if(std::abs(shape.rect[0]-470)<.01f&&std::abs(shape.rect[1]-617)<.01f&&std::abs(shape.rect[2]-490)<.01f&&std::abs(shape.rect[3]-4)<.01f)half=true;
             check(half&&s.database_action_count()==1,"database progress reflects the actual downloaded byte ratio");
-            progress.phase=DatabaseUpdater::Phase::ready;s.observe_database_update(progress);check(s.database_dialog_&&std::string(s.database_action_label(0))=="Done","a completed database keeps a restart-on-next-launch confirmation");
-            press(hui::Action::back);s.database_open_.snap(0);progress.phase=DatabaseUpdater::Phase::failed;progress.error="Offline";s.observe_database_update(progress);check(!s.database_dialog_,"an automatic offline check never opens an error popup");
+            progress.phase=DatabaseUpdater::Phase::ready;s.observe_database_update(progress);
+            check(s.database_dialog_&&std::string(s.database_action_label(0))=="Done"&&s.database_completion_notice_==0,"a database completed in an open sheet keeps the Done action");
+            press(hui::Action::back);s.database_open_.snap(0);
+            progress.revision=4;s.observe_database_update(progress);
+            check(!s.database_dialog_&&s.database_completion_notice_==6.f,"a database completed in the background starts a six-second notice without opening a sheet");
+            s.database_completion_notice_=4.f;s.observe_database_update(progress);
+            check(!s.database_dialog_&&s.database_completion_notice_==4.f,"observing the same ready database revision does not extend its notice");
+            s.database_completion_notice_=0;progress.phase=DatabaseUpdater::Phase::failed;progress.error="Offline";
+            s.observe_database_update(progress);check(!s.database_dialog_,"an automatic offline check never opens an error popup");
         }
         {
             check(s.desktop_preference_setting(6)==database_update_setting&&s.desktop_preference_count()==11,"one unified update action keeps eleven PC Options entries");
@@ -155,8 +164,12 @@ struct DesktopInputInspection {
             bool half=false;for(const auto&shape:s.overlay_.instances())if(std::abs(shape.rect[0]-470)<.01f&&std::abs(shape.rect[1]-617)<.01f&&std::abs(shape.rect[2]-490)<.01f&&std::abs(shape.rect[3]-4)<.01f)half=true;
             check(half&&std::string(s.application_action_label(0))=="Continue exploring","app-update progress uses actual bytes and lets the visitor continue exploring");
             progress.phase=ApplicationUpdater::Phase::current;s.observe_application_update(progress);press(hui::Action::confirm);s.application_open_.snap(0);check(!s.application_dialog_&&!s.take_application_restart_request(),"closing an up-to-date app result never requests a restart");
-            progress.phase=ApplicationUpdater::Phase::ready;s.idle_=2;s.observe_application_update(progress);s.application_open_.snap(1);
-            check(s.application_dialog_&&std::string(s.application_action_label(1))=="Restart now","a prepared app update offers Later / Restart now");
+            progress.phase=ApplicationUpdater::Phase::ready;s.idle_=2;s.observe_application_update(progress);
+            check(!s.application_dialog_&&s.application_completion_notice_==6.f&&!s.take_application_restart_request()&&!s.wants_quit(),"an app update completed in the background starts a notice without interrupting or restarting");
+            s.application_completion_notice_=4.f;s.observe_application_update(progress);
+            check(!s.application_dialog_&&s.application_completion_notice_==4.f,"observing the same ready app version does not extend its notice");
+            s.application_completion_notice_=0;s.application_dialog_=true;s.application_open_.snap(1);s.observe_application_update(progress);
+            check(s.application_action_count()==2&&std::string(s.application_action_label(0))=="Later"&&std::string(s.application_action_label(1))=="Restart now","the opened update sheet offers Later and Restart now for the prepared app");
             press(hui::Action::confirm);s.application_open_.snap(0);check(!s.application_dialog_&&!s.take_application_restart_request()&&!s.wants_quit(),"Later leaves a prepared app update without exiting");
             s.application_dialog_=true;s.application_open_.snap(1);s.observe_application_update(progress);
             {const auto action=s.application_action_bounds(1);click(action.cx(),action.cy());}

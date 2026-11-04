@@ -9,7 +9,7 @@ use std::{
 };
 use windows::{
     Win32::{
-        Foundation::{ERROR_FILE_NOT_FOUND, ERROR_PATH_NOT_FOUND},
+        Foundation::{ERROR_FILE_NOT_FOUND, ERROR_PATH_NOT_FOUND, LPARAM, WPARAM},
         System::{
             Com::{
                 CLSCTX_INPROC_SERVER, COINIT_APARTMENTTHREADED, CoCreateInstance, CoInitializeEx,
@@ -19,17 +19,22 @@ use windows::{
         },
         UI::{
             Shell::{
-                FOLDERID_Desktop, FOLDERID_Programs, IShellLinkW, KF_FLAG_DEFAULT,
+                FOLDERID_Desktop, FOLDERID_Programs, IShellLinkW, KF_FLAG_DEFAULT, SHCNE_CREATE,
+                SHCNE_DELETE, SHCNE_UPDATEDIR, SHCNF_FLUSH, SHCNF_PATHW, SHChangeNotify,
                 SHGetKnownFolderPath, ShellLink,
             },
-            WindowsAndMessaging::SW_SHOWNORMAL,
+            WindowsAndMessaging::{
+                HWND_BROADCAST, SMTO_ABORTIFHUNG, SW_SHOWNORMAL, SendMessageTimeoutW,
+                WM_SETTINGCHANGE,
+            },
         },
     },
     core::{Interface, PCWSTR},
 };
 
 pub const HELPER: &str = "tools/windows-updater/Pixel-Museum-Updater.exe";
-pub const HELPER_CAPABILITY: &[u8] = b"PIXEL_MUSEUM_HELPER_V2_UNINSTALL_PRESERVE_DATA_NO_BOOTSTRAP";
+pub const HELPER_CAPABILITY: &[u8] =
+    b"PIXEL_MUSEUM_HELPER_V3_OWNED_COLLECTION_UNINSTALL_NO_BOOTSTRAP";
 pub const RECEIPT: &str = "pixel-museum-install.json";
 const UNINSTALL_BASE: &str = r"Software\Microsoft\Windows\CurrentVersion\Uninstall";
 
@@ -54,6 +59,13 @@ fn wide(value: impl AsRef<std::ffi::OsStr>) -> Vec<u16> {
 }
 fn key(path: &Path) -> String {
     crate::update::path_key(path).trim_end_matches('/').into()
+}
+fn native(path: &Path) -> PathBuf {
+    PathBuf::from(
+        path.to_string_lossy()
+            .trim_start_matches(r"\\?\")
+            .replace('/', r"\"),
+    )
 }
 pub fn installation_id(root: &Path) -> Result<String> {
     let normalized = if root.exists() {
@@ -140,12 +152,11 @@ fn save_shortcut(path: &Path, target: &Path, root: &Path, arguments: &str) -> Re
     if path.exists() {
         let _ = crate::update::process::open_regular(path)?;
     }
-    let temporary = tempfile::NamedTempFile::new_in(path.parent().unwrap())?.into_temp_path();
     let _apartment = Apartment::enter()?;
     unsafe {
         let link: IShellLinkW = CoCreateInstance(&ShellLink, None, CLSCTX_INPROC_SERVER)?;
-        let target = wide(target);
-        let working = wide(root);
+        let target = wide(native(target));
+        let working = wide(native(root));
         let args = wide(arguments);
         let description = wide("Pixel Museum");
         link.SetPath(PCWSTR(target.as_ptr()))
@@ -156,18 +167,70 @@ fn save_shortcut(path: &Path, target: &Path, root: &Path, arguments: &str) -> Re
         link.SetIconLocation(PCWSTR(target.as_ptr()), 0)?;
         link.SetShowCmd(SW_SHOWNORMAL)?;
         let persist: IPersistFile = link.cast()?;
-        let output = wide(temporary.as_os_str());
+        // Save directly to the real .lnk, as documented by the Windows Shell.
+        // The enclosing registration transaction snapshots/restores prior links.
+        let output = wide(native(path));
         persist
             .Save(PCWSTR(output.as_ptr()), true)
             .context("Cannot write Windows shortcut")?;
     }
-    temporary
-        .persist(path)
-        .context("Cannot save Windows shortcut")?;
+    verify_shortcut(path, root)?;
     Ok(())
 }
+
+fn verify_shortcut(path: &Path, root: &Path) -> Result<()> {
+    let (target, args) = shortcut_target_impl(path, 0)?;
+    ensure!(
+        fs::metadata(path)?.len() >= 76
+            && key(&target) == key(&root.join("Pixel Museum.exe"))
+            && args.is_empty(),
+        "Windows shortcut did not persist with the correct application target: {}",
+        path.display()
+    );
+    ensure!(
+        fs::canonicalize(&target)? == fs::canonicalize(root.join("Pixel Museum.exe"))?,
+        "Windows shortcut resolves to another executable"
+    );
+    Ok(())
+}
+
+fn notify_shell(paths: &[PathBuf], created: bool) {
+    for path in paths {
+        let path_w = wide(native(path));
+        let parent_w = wide(native(path.parent().unwrap()));
+        unsafe {
+            SHChangeNotify(
+                if created { SHCNE_CREATE } else { SHCNE_DELETE },
+                SHCNF_PATHW | SHCNF_FLUSH,
+                Some(path_w.as_ptr().cast()),
+                None,
+            );
+            SHChangeNotify(
+                SHCNE_UPDATEDIR,
+                SHCNF_PATHW | SHCNF_FLUSH,
+                Some(parent_w.as_ptr().cast()),
+                None,
+            );
+        }
+    }
+    let section = wide(r"Software\Microsoft\Windows\CurrentVersion\Uninstall");
+    unsafe {
+        let _ = SendMessageTimeoutW(
+            HWND_BROADCAST,
+            WM_SETTINGCHANGE,
+            WPARAM(0),
+            LPARAM(section.as_ptr() as isize),
+            SMTO_ABORTIFHUNG,
+            2000,
+            None,
+        );
+    }
+}
 pub fn shortcut_target(path: &Path) -> Result<(PathBuf, String)> {
-    let _ = crate::update::process::open_regular(path)?;
+    shortcut_target_impl(path, 4)
+}
+fn shortcut_target_impl(path: &Path, flags: u32) -> Result<(PathBuf, String)> {
+    let _guard = crate::update::process::open_regular(path)?;
     let _apartment = Apartment::enter()?;
     unsafe {
         let link: IShellLinkW = CoCreateInstance(&ShellLink, None, CLSCTX_INPROC_SERVER)?;
@@ -176,7 +239,7 @@ pub fn shortcut_target(path: &Path) -> Result<(PathBuf, String)> {
         persist.Load(PCWSTR(path.as_ptr()), STGM_READ)?;
         let mut target = vec![0u16; 32768];
         let mut args = vec![0u16; 32768];
-        link.GetPath(&mut target, std::ptr::null_mut(), 4)?;
+        link.GetPath(&mut target, std::ptr::null_mut(), flags)?;
         link.GetArguments(&mut args)?;
         let decode = |text: &[u16]| {
             String::from_utf16(&text[..text.iter().position(|c| *c == 0).unwrap_or(text.len())])
@@ -309,8 +372,8 @@ fn command(root: &Path, quiet: bool) -> String {
     let trailing = text.chars().rev().take_while(|c| *c == '\\').count();
     format!(
         "\"{}\" --uninstall \"{}{}\"{}",
-        root.join(HELPER).display(),
-        root.display(),
+        native(&root.join(HELPER)).display(),
+        native(root).display(),
         "\\".repeat(trailing),
         if quiet { " --quiet" } else { "" }
     )
@@ -327,6 +390,79 @@ const MANAGED: &[&str] = &[
     "NoModify",
     "NoRepair",
 ];
+
+pub fn verify_registered(
+    root: &Path,
+    version: &str,
+    r: &Registration,
+    environment: &Environment,
+) -> Result<()> {
+    validate(root, r)?;
+    verify_shortcut(&environment.program_link(), root)?;
+    if r.desktop_shortcut {
+        verify_shortcut(&environment.desktop_link(), root)?;
+    }
+    let registry = RegistryKey::open(&environment.registry_key(r), false)?
+        .context("Windows uninstall registration is missing")?;
+    for (name, expected) in [
+        ("DisplayName", "Pixel Museum".to_owned()),
+        ("DisplayVersion", version.to_owned()),
+        ("UninstallString", command(root, false)),
+    ] {
+        ensure!(
+            registry.string(name)?.as_deref() == Some(expected.as_str()),
+            "Windows registration readback failed: {name}"
+        );
+    }
+    ensure!(
+        registry
+            .string("InstallLocation")?
+            .is_some_and(|p| key(Path::new(&p)) == key(root)),
+        "Windows uninstall registration points to another folder"
+    );
+    for hidden in ["SystemComponent", "NoDisplay", "NoRemove"] {
+        ensure!(
+            !registry
+                .raw(hidden)?
+                .is_some_and(|(kind, data)| kind == REG_DWORD && data == 1u32.to_le_bytes()),
+            "Windows registration unexpectedly hides the application: {hidden}"
+        );
+    }
+    ensure!(
+        root.join(HELPER).is_file(),
+        "Registered uninstaller is missing"
+    );
+    Ok(())
+}
+
+pub fn installed_destination() -> Option<PathBuf> {
+    let environment = Environment::current_user().ok()?;
+    let (target, args) = shortcut_target_impl(&environment.program_link(), 0).ok()?;
+    if !args.is_empty() || !target.file_name()?.eq_ignore_ascii_case("Pixel Museum.exe") {
+        return None;
+    }
+    let root = target.parent()?;
+    crate::uninstall::inspect(root).ok()?;
+    Some(root.to_path_buf())
+}
+
+pub fn verify_completed_install(root: &Path) -> Result<()> {
+    let receipt: serde_json::Value = serde_json::from_slice(&crate::update::read_limited(
+        &root.join(RECEIPT),
+        1024 * 1024,
+    )?)?;
+    let r: Registration = serde_json::from_value(
+        receipt
+            .get("windows_integration")
+            .context("Completed setup has no Windows registration record")?
+            .clone(),
+    )?;
+    let inventory: crate::update::Inventory = serde_json::from_slice(
+        &crate::update::read_limited(&root.join("application-files.json"), 16 * 1024 * 1024)?,
+    )?;
+    inventory.validate()?;
+    verify_registered(root, &inventory.version, &r, &Environment::current_user()?)
+}
 
 pub fn register(
     root: &Path,
@@ -411,29 +547,55 @@ pub fn register(
         )?;
         registry.set_dword("NoModify", 1)?;
         registry.set_dword("NoRepair", 1)?;
+        drop(registry);
+        verify_registered(root, version, r, environment)?;
+        if environment.registry_base == UNINSTALL_BASE {
+            notify_shell(&paths, true);
+        }
+        verify_registered(root, version, r, environment)?;
         Ok(())
     })();
     if let Err(error) = operation {
+        let mut rollback_errors = Vec::new();
         for (path, old) in old_links {
-            if let Some(bytes) = old {
-                let _ = fs::write(path, bytes);
+            let restored = if let Some(bytes) = old {
+                fs::write(&path, bytes)
+            } else if path.exists() {
+                fs::remove_file(&path)
             } else {
-                let _ = fs::remove_file(path);
+                Ok(())
+            };
+            if let Err(e) = restored {
+                rollback_errors.push(format!("Restore {}: {e}", path.display()));
             }
         }
-        if let Some(values) = old_registry {
-            if let Ok(registry) = RegistryKey::create(&registry_path) {
+        let restored_registry = (|| -> Result<()> {
+            if let Some(values) = old_registry {
+                let registry = RegistryKey::create(&registry_path)?;
                 for (name, value) in values {
                     if let Some((kind, data)) = value {
-                        let _ = registry.set(&name, kind, &data);
+                        registry.set(&name, kind, &data)?;
                     } else {
                         let name = wide(name);
-                        let _ = unsafe { RegDeleteValueW(registry.0, PCWSTR(name.as_ptr())) };
+                        let code = unsafe { RegDeleteValueW(registry.0, PCWSTR(name.as_ptr())) };
+                        if code != ERROR_FILE_NOT_FOUND {
+                            code.ok()?;
+                        }
                     }
                 }
+            } else {
+                remove_key(&registry_path)?;
             }
-        } else {
-            let _ = remove_key(&registry_path);
+            Ok(())
+        })();
+        if let Err(e) = restored_registry {
+            rollback_errors.push(format!("Restore Windows registry: {e:#}"));
+        }
+        if !rollback_errors.is_empty() {
+            anyhow::bail!(
+                "Cannot register Pixel Museum: {error:#}. Windows registration rollback needs attention: {}",
+                rollback_errors.join("; ")
+            );
         }
         return Err(error.context("Cannot register Pixel Museum in Windows"));
     }
@@ -510,6 +672,12 @@ pub fn unregister(root: &Path, r: &Registration, environment: &Environment) -> R
     {
         let _ = fs::remove_dir(environment.program_link().parent().unwrap());
     }
+    if environment.registry_base == UNINSTALL_BASE {
+        notify_shell(
+            &owned_links.into_iter().map(|(p, _)| p).collect::<Vec<_>>(),
+            false,
+        );
+    }
     Ok(())
 }
 pub fn refresh_version(root: &Path, version: &str) -> Result<()> {
@@ -540,8 +708,11 @@ fn refresh_version_with(
 }
 
 pub fn validate_helper(stage: &Path) -> Result<()> {
-    let helper = stage.join(HELPER);
-    crate::update::process::executable_header(&helper)?;
+    validate_helper_at(stage, &stage.join(HELPER))
+}
+
+pub(crate) fn validate_helper_at(stage: &Path, helper: &Path) -> Result<()> {
+    crate::update::process::executable_header(helper)?;
     let inventory_path = stage.join("application-files.json");
     let inventory: crate::update::Inventory = serde_json::from_slice(
         &fs::read(&inventory_path).context("App package must contain application-files.json")?,
@@ -552,7 +723,7 @@ pub fn validate_helper(stage: &Path) -> Result<()> {
         .iter()
         .find(|f| f.path.eq_ignore_ascii_case(HELPER))
         .context("The app payload does not inventory its maintenance helper")?;
-    let bytes = crate::update::read_limited(&helper, 64 * 1024 * 1024)?;
+    let bytes = crate::update::read_limited(helper, 64 * 1024 * 1024)?;
     ensure!(
         bytes.len() as u64 == entry.bytes
             && format!("{:x}", Sha256::digest(&bytes)) == entry.sha256,
@@ -562,7 +733,7 @@ pub fn validate_helper(stage: &Path) -> Result<()> {
         bytes
             .windows(HELPER_CAPABILITY.len())
             .any(|part| part == HELPER_CAPABILITY),
-        "This app payload needs the current r5 maintenance helper. Older r4 packages cannot be installed by this setup."
+        "This app payload needs the current V3 maintenance helper with owned-collection uninstall support."
     );
     Ok(())
 }
@@ -570,12 +741,88 @@ pub fn validate_helper(stage: &Path) -> Result<()> {
 #[cfg(test)]
 mod tests {
     use super::*;
+    fn helper_fixture(root: &Path) {
+        fs::create_dir_all(root.join(HELPER).parent().unwrap()).unwrap();
+        fs::write(root.join(HELPER), b"private uninstaller fixture").unwrap();
+    }
+    fn private_environment(temp: &Path) -> Environment {
+        Environment {
+            programs: temp.join("Programs"),
+            desktop: temp.join("Desktop"),
+            registry_base: format!(
+                r"Software\PixelMuseum\InstallerTests\{}",
+                temp.file_name().unwrap().to_string_lossy()
+            ),
+        }
+    }
+    #[test]
+    #[ignore = "Only invoked by the isolated process-lifetime fixture"]
+    fn registration_worker_process() {
+        let temp = PathBuf::from(
+            std::env::var_os("PIXEL_MUSEUM_PRIVATE_REGISTRATION_TEST")
+                .expect("Private fixture root"),
+        );
+        let root = temp.join("Pixel Museum");
+        let environment = private_environment(&temp);
+        register(
+            &root,
+            "0.2.0-preview",
+            123456,
+            &registration(&root, "it", true).unwrap(),
+            &environment,
+        )
+        .unwrap();
+    }
+    #[test]
+    fn registration_survives_worker_process_exit_and_delayed_readback() {
+        use std::os::windows::process::CommandExt;
+        let temp = tempfile::tempdir().unwrap();
+        let root = temp.path().join("Pixel Museum");
+        fs::create_dir(&root).unwrap();
+        let native = Path::new(env!("CARGO_MANIFEST_DIR"))
+            .parent()
+            .unwrap()
+            .join("build/windows-native/Pixel Museum.exe");
+        let source = if native.is_file() {
+            native
+        } else {
+            PathBuf::from(std::env::var_os("SystemRoot").unwrap()).join("System32/whoami.exe")
+        };
+        fs::write(root.join("Pixel Museum.exe"), fs::read(source).unwrap()).unwrap();
+        helper_fixture(&root);
+        let environment = private_environment(temp.path());
+        fs::create_dir_all(&environment.desktop).unwrap();
+        let status = std::process::Command::new(std::env::current_exe().unwrap())
+            .args([
+                "--exact",
+                "integration::tests::registration_worker_process",
+                "--ignored",
+                "--nocapture",
+            ])
+            .env("PIXEL_MUSEUM_PRIVATE_REGISTRATION_TEST", temp.path())
+            .creation_flags(0x0800_0000)
+            .status()
+            .unwrap();
+        assert!(status.success());
+        let r = registration(&root, "it", true).unwrap();
+        verify_registered(&root, "0.2.0-preview", &r, &environment).unwrap();
+        std::thread::sleep(std::time::Duration::from_millis(500));
+        verify_registered(&root, "0.2.0-preview", &r, &environment).unwrap();
+        fs::remove_file(environment.program_link()).unwrap();
+        assert!(
+            verify_registered(&root, "0.2.0-preview", &r, &environment).is_err(),
+            "Missing shortcut must never be reported as completed"
+        );
+        unregister(&root, &r, &environment).unwrap();
+        environment.cleanup_fixture();
+    }
     #[test]
     fn private_user_registration_roundtrip_and_version_refresh() {
         let temp = tempfile::tempdir().unwrap();
         let root = temp.path().join("Pixel Museum");
         fs::create_dir(&root).unwrap();
         fs::write(root.join("Pixel Museum.exe"), b"fixture target").unwrap();
+        helper_fixture(&root);
         let environment = Environment {
             programs: temp.path().join("Programs"),
             desktop: temp.path().join("Desktop"),
@@ -638,6 +885,8 @@ mod tests {
         fs::create_dir(&second).unwrap();
         fs::write(first.join("Pixel Museum.exe"), b"fixture one").unwrap();
         fs::write(second.join("Pixel Museum.exe"), b"fixture two").unwrap();
+        helper_fixture(&first);
+        helper_fixture(&second);
         let environment = Environment {
             programs: temp.path().join("Programs"),
             desktop: temp.path().join("Desktop"),
@@ -664,6 +913,7 @@ mod tests {
         let root = temp.path().join("Pixel Museum");
         fs::create_dir(&root).unwrap();
         fs::write(root.join("Pixel Museum.exe"), b"fixture").unwrap();
+        helper_fixture(&root);
         let environment = Environment {
             programs: temp.path().join("Programs"),
             desktop: temp.path().join("Desktop"),

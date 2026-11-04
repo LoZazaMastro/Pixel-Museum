@@ -4,36 +4,28 @@ The Windows edition builds the same C++ museum, renderer, catalogues, languages,
 workshops and playable experiences as the PS5 edition. SDL3 owns the native
 window, keyboard, mouse, gamepads and audio; FFmpeg handles actual streamed media.
 
-## Install and run the local preview
+## Install and run
 
-Open **Pixel-Museum-Setup.exe** next to **windows-manifest.json** and
-the application ZIP named by that manifest. Choose English, Italian, French, German or Spanish,
-accept the software/collection notices, and choose an empty Pixel Museum folder.
-Setup verifies the app ZIP and downloads the pinned collection packs from GitHub.
-The program and every collection archive remain inside that folder. Launch
-**Pixel Museum.exe** after installation. The PC introduction does not download
-resources. An Internet connection is required for
-streamed YouTube videos and soundtracks.
+Download [Pixel-Museum-Setup.exe](https://github.com/LoZazaMastro/Pixel-Museum/releases/download/windows-v0.2.0/Pixel-Museum-Setup.exe) and open it. Choose the setup language, accept the licence, and choose where to install the museum. Setup downloads the application and the collection to the same folder. Pixel Museum appears in the Windows Start menu and Installed apps. Setup can also create a desktop shortcut.
 
-This is a local development preview. The website's Windows download remains
-unavailable until an actual Windows setup release has been uploaded and verified.
+The museum asks you to choose its language on first launch. An internet connection is required for streamed YouTube videos and soundtracks.
 
 ## Controls
 
 | Action | Keyboard / mouse |
 | --- | --- |
 | Move | Arrow keys or W/A/S/D |
-| Right stick in experiences / long text | I / J / K / L |
-| Timeline forward / back | Wheel down / up |
+| Right stick in supported experiences | I / J / K / L |
+| Timeline forward / back | Wheel down / up over the timeline |
 | Select / confirm | Click or Enter |
 | Back | Escape or right click |
-| Options | O or F10 |
-| Search | F or Ctrl+F; type normally in the search field |
+| Options | Escape on the timeline |
+| Search | S on the timeline. Type with the physical or on-screen keyboard, then press Enter for the results list. |
 | Guide | Tab |
 | Inspect image | Space |
 | Read more | V |
-| Previous / next exhibit or decade | Q / E |
-| Filter | Z / C |
+| Previous / next decade | Z / C |
+| Next filter | F |
 | Today | R |
 | Scroll long text | Page Up / Page Down |
 | Zoom / playback volume | − / +; context-dependent wheel |
@@ -41,20 +33,16 @@ unavailable until an actual Windows setup release has been uploaded and verified
 
 The first Options row opens Video (resolution, Fullscreen, Borderless fullscreen,
 Windowed, VSync and frame limit). Borderless fullscreen uses the desktop resolution.
-The final row is Exit. **Update database** checks for reviewed content updates;
-verified updates become active on the next launch. Windows also checks for new
-application versions and offers **Update application** in Options. It downloads
-and verifies an update, closes the app, replaces only owned program files and
-restarts it, preserving the collection, settings and trophies. See
-[Windows application updates](windows-application-updates.md) for the release flow.
+The next row, Audio, adjusts overall volume, sound effects, ambience and cultural timeline audio.
+The final row is Exit. **Check for updates** looks for both collection and Windows application updates. A collection update takes effect after restarting the museum. Application updates replace the program files and preserve the collection, settings and trophies. See [Windows application updates](windows-application-updates.md) for the release flow.
 PS5 application updates continue through ProsperoStore. The mouse uses the website's
 black/white pixel cursor with an interactive glow. Gamepads use their normal buttons; generic pads receive
 standard rumble. The native player includes the official Deno/EJS resolver for
 current YouTube player scripts; no separate Python or browser sign-in is required.
 Optional YouTube account connection offers both a QR code and an Open in browser
 button, which opens the verification page in the user's usual browser.
-A supported USB DualSense four-channel endpoint can carry speaker
-and PCM haptics; other connections use normal rumble and the PC audio output.
+All sound plays through the PC audio output. DualSense uses dedicated PCM haptics
+over USB or Bluetooth when available, and conventional rumble otherwise.
 Physical controller validation is still required on the user's actual devices.
 
 ## Build

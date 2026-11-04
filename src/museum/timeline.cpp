@@ -15,13 +15,14 @@ void Screen::draw_timeline(){
     const auto* e=current();if(!e)return;
     const auto palette=colours();const Color paper=palette.paper,ink=palette.ink,quiet=palette.muted;
     const Color surface=gfx::mix(paper,tone_,.18f);
+    const auto canvas=canvas_bounds();
     
     const float opened=std::clamp(story_open_.value,0.f,1.f),lift=714*opened;
     // Fully opened stories hide the hero completely. Avoid re-fitting its
     // potentially long title/summary every frame; the visible chronology rail
     // below still draws, and all transition frames retain their original path.
     if(opened<1.f){
-    background_.rounded_rect({0,142,1920,624},0,surface.with_alpha(1-opened));
+    background_.rounded_rect({canvas.x,142,canvas.w,624},0,surface.with_alpha(1-opened));
     const float shift=(timeline_.target-timeline_.value)*42;
     page_.push_clip({0,142,1920,624});
     page_.push_transform(1,0,0,0,-lift);
@@ -59,11 +60,11 @@ void Screen::draw_timeline(){
     }
 
     // One continuous route. Its geometry never changes with item type.
-    const float rail_y=944-lift,step=340;
+    const float rail_y=944-lift;
     page_.push_opacity(1);
-    page_.line(0,rail_y,1920,rail_y,1,ink.with_alpha(.19f));
+    page_.line(canvas.x,rail_y,canvas.x+canvas.w,rail_y,1,ink.with_alpha(.19f));
     page_.line(904,rail_y,1016,rail_y,4,gfx::mix(ink,tone_,.68f));
-    page_.push_clip({0,744-lift,1920,223});
+    page_.push_clip({canvas.x,744-lift,canvas.w,223});
     const int rail_focus=timeline_motion_.rail_focus(focus_);
     for(int n=std::max(0,rail_focus-4);n<std::min(int(visible_.size()),rail_focus+5);++n){
         if(!timeline_motion_.stop_visible(n))continue;
@@ -73,8 +74,7 @@ void Screen::draw_timeline(){
         const float hover=std::clamp(1.f-std::abs(distance),0.f,1.f);
         // The focused stop has its own generous reading space. The extra
         // distance eases in continuously as its neighbours move away.
-        const float extra=190*tween::smoothstep(std::min(1.f,std::abs(distance)));
-        const float x=960+distance*step+(distance<0?-extra:extra);
+        const float x=timeline_stop_x(distance,false);
         const auto text_colour=gfx::mix(quiet.with_alpha(.6f),ink,hover);
         bool playable=false;for(const auto&study:study_catalog())if(study.entry_id==item.id){playable=true;break;}
         const bool music=!item.soundtrack.tracks.empty()||std::any_of(item.soundtrack_rooms.begin(),item.soundtrack_rooms.end(),[](const Soundtrack&room){return !room.tracks.empty();});

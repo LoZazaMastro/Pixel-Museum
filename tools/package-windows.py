@@ -7,6 +7,9 @@ import argparse, hashlib, json, os, re, shutil, subprocess, zipfile
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
+INVENTORY = 'application-files.json'
+COLLECTION_MANIFESTS = {'content/collection-packs.json', 'assets/images/manifest.json'}
+STORED_MEDIA = {'.png', '.jpg', '.jpeg', '.ogg', '.zst', '.mp4', '.bin'}
 
 def digest(path: Path) -> str:
     h=hashlib.sha256()
@@ -17,6 +20,95 @@ def digest(path: Path) -> str:
 def copy(source:Path,target:Path):
     target.parent.mkdir(parents=True,exist_ok=True)
     shutil.copy2(source,target)
+
+
+def semver_order(version):
+    identifiers = r'[0-9A-Za-z-]+(?:\.[0-9A-Za-z-]+)*'
+    match = re.fullmatch(rf'(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)(?:-({identifiers}))?(?:\+{identifiers})?', version)
+    if not match or len(version) > 100:
+        raise ValueError(f'Invalid update version: {version}')
+    prerelease = match.group(4).split('.') if match.group(4) else []
+    if any(len(part) > 1 and part.isdigit() and part.startswith('0') for part in prerelease):
+        raise ValueError(f'Invalid numeric prerelease: {version}')
+    return tuple(map(int, match.groups()[:3])), not prerelease, tuple(
+        (0, int(part)) if part.isdigit() else (1, part) for part in prerelease)
+
+
+def read_inventory(path):
+    raw = path.read_bytes()
+    data = json.loads(raw)
+    if (data['schema_version'], data['application_id'], data['platform']) != (1, 'pixel-museum', 'windows-x64'):
+        raise ValueError(f'Unrecognized Windows inventory: {path}')
+    version = data['version']
+    semver_order(version)
+    rows = {}
+    for row in data['files']:
+        name = row['path']
+        key = name.casefold()
+        if (not name or any(part in ('', '.', '..') or part.endswith(('.', ' ')) for part in name.split('/'))
+                or any(char in name for char in '\\:<>"|?*') or any(ord(char) < 32 for char in name)
+                or key == INVENTORY or key in rows):
+            raise ValueError(f'Unsafe or repeated inventory path: {name}')
+        if type(row['bytes']) is not int or row['bytes'] < 0 or not re.fullmatch(r'[0-9a-f]{64}', row['sha256']):
+            raise ValueError(f'Invalid inventory size or SHA-256: {name}')
+        rows[key] = row
+    if 'pixel museum.exe' not in rows:
+        raise ValueError(f'Inventory is missing Pixel Museum.exe: {path}')
+    return version, raw, rows
+
+
+def write_zip(archive, app, files):
+    expanded = 0
+    with zipfile.ZipFile(archive, 'w', compression=zipfile.ZIP_DEFLATED, compresslevel=3, allowZip64=True) as output:
+        for file in files:
+            expanded += file.stat().st_size
+            compression = zipfile.ZIP_STORED if file.suffix.lower() in STORED_MEDIA else zipfile.ZIP_DEFLATED
+            output.write(file, file.relative_to(app).as_posix(), compress_type=compression)
+    return expanded
+
+
+def build_deltas(app, output, release, base_paths):
+    if not base_paths:
+        return []
+    version, raw, target = read_inventory(app / INVENTORY)
+    if version != release['version']:
+        raise ValueError('The staged inventory and release manifest disagree on version')
+    full = next(package for package in release['packages'] if package['kind'] == 'app')
+    with zipfile.ZipFile(output / full['filename']) as archive:
+        if archive.read(INVENTORY) != raw:
+            raise ValueError('The staged inventory must match the full application ZIP byte for byte')
+    updates = []
+    seen = set()
+    for base_path in base_paths:
+        previous, base_raw, base = read_inventory(base_path)
+        if semver_order(previous) >= semver_order(version):
+            raise ValueError(f'An update base must be older than the target: {previous} -> {version}')
+        if any(name not in base or target.get(name) != base[name] for name in COLLECTION_MANIFESTS):
+            raise ValueError(f'Application updates cannot migrate the installed collection: {previous} -> {version}')
+        base_hash = hashlib.sha256(base_raw).hexdigest()
+        if base_hash in seen:
+            continue
+        seen.add(base_hash)
+        # Always ship the executable so the helper can move it out first and
+        # restore it last, including updates limited to companion files.
+        changed = [row for name, row in target.items() if name == 'pixel museum.exe' or base.get(name) != row]
+        payload = []
+        for row in changed:
+            path = app / row['path']
+            if (path.is_symlink() or not path.resolve().is_relative_to(app) or not path.is_file()
+                    or path.stat().st_size != row['bytes'] or digest(path) != row['sha256']):
+                raise ValueError(f"Staged file disagrees with the target inventory: {row['path']}")
+            payload.append(path)
+        filename = f'Pixel-Museum-Windows-Update-{base_hash[:16]}-to-{version.replace("+", "_")}.zip'
+        archive = output / filename
+        expanded = write_zip(archive, app, [*payload, app / INVENTORY])
+        url = full['url'].rsplit('/', 1)[0] + '/' + filename if full.get('url') else None
+        package = {'id': f'app-delta-{base_hash[:16]}', 'kind': 'app', 'filename': filename,
+                   'format': 'zip', 'url': url, 'sha256': digest(archive),
+                   'bytes': archive.stat().st_size, 'unpacked_bytes': expanded, 'target': '.'}
+        updates.append({'from_version': previous, 'base_inventory_sha256': base_hash, 'package': package})
+    release['updates'] = updates
+    return updates
 
 def dlls(exe:Path,prefix:Path,destination:Path):
     queue=[exe];seen=set();resolved=[]
@@ -85,12 +177,12 @@ def prepare(args):
         source=helpers/name
         if source.exists():copy(source,app/'tools/windows-media'/name)
     # Redistribute each native library's supplied licence, not unrelated SDK files.
-    for package in ['SDL3','sdl3','glew','ffmpeg','curl','openssl','zstd','zlib','gcc-libs']:
+    for package in ['SDL3','sdl3','glew','ffmpeg','curl','openssl','zstd','zlib','gcc-libs','opus']:
         source=args.prefix/'share/licenses'/package
         if source.exists():shutil.copytree(source,app/'licenses/windows'/package,dirs_exist_ok=True)
     (app/'licenses/windows-native-dependencies.json').write_text(json.dumps({'libraries':dependencies,'prefix':'MSYS2 MinGW-w64','source':'https://packages.msys2.org/'} ,indent=2),encoding='utf8')
     # The apply helper runs from a private temporary copy after the app exits.
-    setup=ROOT/'dist/windows-installer/Pixel-Museum-Setup.exe'
+    setup=args.setup.resolve()
     if not setup.is_file():raise RuntimeError('Build the Windows setup/update helper before packaging')
     copy(setup,app/'tools/windows-updater/Pixel-Museum-Updater.exe')
     inventory=app/'application-files.json'
@@ -110,28 +202,41 @@ def prepare(args):
     if any(file.is_symlink() or not file.resolve().is_relative_to(app.resolve()) for file in payload_files):raise RuntimeError('External/symlink files cannot enter the Windows payload')
     owned=[{'path':file.relative_to(app).as_posix(),'bytes':file.stat().st_size,'sha256':digest(file)} for file in payload_files]
     inventory.write_text(json.dumps({'schema_version':1,'application_id':'pixel-museum','platform':'windows-x64','version':args.version,'files':owned},ensure_ascii=False,indent=2),encoding='utf8')
-    archive=output/args.archive_name;expanded=0
-    with zipfile.ZipFile(archive,'w',compression=zipfile.ZIP_DEFLATED,compresslevel=3,allowZip64=True) as z:
-        for file in [*payload_files,inventory]:
-            if file.is_file():
-                expanded+=file.stat().st_size
-                z.write(file,file.relative_to(app).as_posix(),compress_type=zipfile.ZIP_STORED if file.suffix.lower() in ['.png','.jpg','.jpeg','.ogg','.zst','.mp4','.bin'] else zipfile.ZIP_DEFLATED)
+    archive=output/args.archive_name
+    expanded=write_zip(archive,app,[*payload_files,inventory])
     packages=[{'id':'app','kind':'app','filename':archive.name,'format':'zip','url':args.app_url,'sha256':digest(archive),'bytes':archive.stat().st_size,'unpacked_bytes':expanded,'target':'.'}]
     for pack in manifest['packs']:
         packages.append({'id':pack['id'],'kind':'collection','filename':pack['id']+'.tar','format':'tar','url':pack['url'],'sha256':pack['sha256'],'bytes':pack['bytes'],'unpacked_bytes':pack['bytes'],'target':relative+'/archives'})
     release={'schema_version':1,'version':args.version,'executable':exe.name,'packages':packages}
+    updates=build_deltas(app,output,release,args.update_from)
     destination=output/'windows-manifest.json';destination.write_text(json.dumps(release,indent=2),encoding='utf8')
     if setup.exists():copy(setup,output/setup.name)
     report={'app_zip':str(archive),'bytes':archive.stat().st_size,'expanded_bytes':expanded,'collection_bytes':sum(p['bytes'] for p in manifest['packs']),'collection_root':relative,'dependency_count':len(dependencies),'manifest':str(destination)}
+    if updates:report['updates']=updates
     (output/'package-report.json').write_text(json.dumps(report,indent=2),encoding='utf8');print(json.dumps(report,indent=2))
 
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__)
-    p.add_argument('--runtime',type=Path,required=True,help='Tested PPSA content root; console executable excluded')
+    p.add_argument('--runtime',type=Path,help='Tested PPSA content root; console executable excluded')
     p.add_argument('--output',type=Path,default=ROOT/'dist/windows-preview')
     p.add_argument('--prefix',type=Path,default=Path(r'C:\msys64\mingw64'))
     p.add_argument('--version',default='0.2.0-preview')
     p.add_argument('--app-url',default=None,help='Set only after this exact ZIP is uploaded and verified; absent uses local ZIP')
+    p.add_argument('--setup', type=Path, default=ROOT/'dist/windows-installer/Pixel-Museum-Setup.exe', help='Verified standalone setup and update helper to include with the Windows preview')
     p.add_argument('--refresh',action='store_true',help='Refresh native binary, desktop labels, notices and ZIP in the existing local staging folder')
     p.add_argument('--archive-name',default='Pixel-Museum-Windows-App.zip')
-    prepare(p.parse_args())
+    p.add_argument('--update-from',type=Path,action='append',default=[],metavar='INVENTORY',
+                   help='Write an application delta for this exact previous application-files.json (repeatable)')
+    p.add_argument('--delta-only',action='store_true',help='Reuse the full application ZIP and staged application under --output')
+    args=p.parse_args()
+    if args.delta_only:
+        if not args.update_from:p.error('--delta-only requires --update-from')
+        output=args.output.resolve()
+        destination=output/'windows-manifest.json'
+        release=json.loads(destination.read_bytes())
+        updates=build_deltas(output/'application',output,release,args.update_from)
+        destination.write_text(json.dumps(release,indent=2)+'\n',encoding='utf8')
+        print(json.dumps({'manifest':str(destination),'updates':updates},indent=2))
+    else:
+        if not args.runtime:p.error('--runtime is required unless using --delta-only')
+        prepare(args)

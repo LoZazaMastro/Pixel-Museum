@@ -28,6 +28,8 @@ class Fixtures:
     def __init__(self):
         self.routes = {}
         self.hits = collections.Counter()
+        self.parallel_active = 0
+        self.parallel_peak = 0
         self.lock = threading.Lock()
         owner = self
 
@@ -42,6 +44,16 @@ class Fixtures:
                 body = route.get("body", b"")
                 if isinstance(body, dict):
                     body = json.dumps(body, ensure_ascii=False).encode("utf-8")
+                delay = route.get("delay", 0)
+                if delay:
+                    with owner.lock:
+                        owner.parallel_active += 1
+                        owner.parallel_peak = max(owner.parallel_peak, owner.parallel_active)
+                    try:
+                        time.sleep(delay)
+                    finally:
+                        with owner.lock:
+                            owner.parallel_active -= 1
                 self.send_response(route.get("status", 200))
                 self.send_header("Content-Length", str(route.get("length", len(body))))
                 self.send_header("Connection", "close")
@@ -165,7 +177,9 @@ def run(executable, output):
             hits = server.hits["/payload"]
             server.set("/feed", body=manifest(server, new, revision=3))
             assert_phase(driver.call("check"), "available")
-            assert_phase(driver.call("install"), "ready")
+            reused = driver.call("install")
+            assert_phase(reused, "ready")
+            assert reused["state"]["total_bytes"] == reused["state"]["downloaded_bytes"] == 0
             assert server.hits["/payload"] == hits
             driver.call("configure")
             assert driver.call("snapshot")["state"]["current_revision"] == 3
@@ -193,6 +207,75 @@ def run(executable, output):
             driver.call("configure")
             assert driver.call("read")["content"] == driver.bundled
             success("same-size corruption is rejected before any saved overlay is mounted")
+
+        with driver_case("cumulative") as driver:
+            server.set("/feed", body=good)
+            assert_phase(driver.call("check"), "available")
+            assert_phase(driver.call("install"), "ready")
+            driver.call("configure")
+            prior_hits = server.hits["/payload"]
+            artwork = b"fixture bytes for an image"
+            server.set("/new-art", body=artwork)
+            merged = manifest(server, artwork, revision=8, path="assets/image-supplements/a.png", url="/new-art")
+            merged["files"].append(good["files"][0])
+            merged["files"].append(dict(merged["files"][0], path="assets/image-supplements/b.png"))
+            server.set("/feed", body=merged)
+            assert_phase(driver.call("check"), "available")
+            assert driver.call("install_async")["ok"]
+            limit = time.monotonic() + 10
+            while (state := driver.call("snapshot")["state"])["phase"] == "downloading":
+                assert state["total_bytes"] in (0, len(artwork)) and state["downloaded_bytes"] <= len(artwork)
+                assert time.monotonic() < limit
+                time.sleep(.01)
+            assert state["phase"] == "ready" and state["revision"] == 8, state
+            assert state["total_bytes"] == state["downloaded_bytes"] == len(artwork), state
+            assert server.hits["/payload"] == prior_hits and server.hits["/new-art"] == 1
+            driver.call("configure")
+            assert driver.call("snapshot")["state"]["current_revision"] == 8
+            assert driver.call("read", path="assets/image-supplements/a.png")["content"] == artwork.decode()
+            assert driver.call("read", path="assets/image-supplements/b.png")["content"] == artwork.decode()
+        success("a skipped revision uses one cumulative download total with cached and aliased blobs counted correctly")
+
+        batch = {**good, "files": []}
+        for index in range(12):
+            payload = f"asset {index}".encode()
+            url = f"/parallel-{index}"
+            path = f"assets/image-supplements/parallel-{index}.png"
+            batch["files"].extend(manifest(server, payload, path=path, url=url)["files"])
+            server.set(url, body=payload, delay=.15)
+        server.set("/feed", body=batch)
+        with driver_case("parallel") as driver:
+            assert_phase(driver.call("check"), "available")
+            assert driver.call("install_async")["ok"]
+            total = sum(row["bytes"] for row in batch["files"])
+            downloaded = 0
+            limit = time.monotonic() + 10
+            while (state := driver.call("snapshot")["state"])["phase"] == "downloading":
+                assert state["total_bytes"] in (0, total)
+                assert downloaded <= state["downloaded_bytes"] <= total
+                downloaded = state["downloaded_bytes"]
+                assert time.monotonic() < limit
+                time.sleep(.01)
+            assert state["phase"] == "ready" and state["downloaded_bytes"] == total, state
+            assert 1 < server.parallel_peak <= 4, server.parallel_peak
+            driver.call("configure")
+            for index in range(12):
+                assert driver.call("read", path=batch["files"][index]["path"])["content"] == f"asset {index}"
+        success("bounded parallel transfers report one monotonic byte count and mount all verified files")
+
+        bad_batch = copy.deepcopy(batch)
+        bad_batch["files"][0]["sha256"] = "0" * 64
+        server.set("/feed", body=bad_batch)
+        with driver_case("parallel-failure") as driver:
+            assert_phase(driver.call("check"), "available")
+            assert_phase(driver.call("install"), "failed")
+            assert not (driver.data / "database/active.json").exists()
+            assert not list((driver.data / "database/blobs").glob("*.part"))
+            assert driver.call("read")["content"] == driver.bundled
+            server.set("/feed", body=batch)
+            assert_phase(driver.call("check"), "available")
+            assert_phase(driver.call("install"), "ready")
+        success("a parallel verification failure leaves the old database active and allows a clean retry")
 
         malformed = []
         for path in ("../escaped.json", "content/../escaped.json", "Pixel Museum.exe", "assets/image-supplements/code.exe", "/content/catalog.json", "C:/content/catalog.json", "content\\catalog.json"):

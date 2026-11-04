@@ -170,6 +170,7 @@ struct InputFrame
     bool keyboard_active=false;
     bool desktop_escape_pressed=false; // context-aware Options / Back on PC
     bool search_pressed=false; // dedicated desktop shortcut, independent of Guide
+    bool desktop_filter_pressed=false; // advance the timeline filter
     float desktop_scroll=0; // Page Up/Down text scrolling, in virtual pixels
     DesktopControllerStyle controller_style=DesktopControllerStyle::keyboard_mouse;
 #endif

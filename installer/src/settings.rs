@@ -185,25 +185,111 @@ pub fn preferred_window_size() -> (u32, u32) {
     (1600, 900)
 }
 
+const STANDARD_RESOLUTIONS: [(u32, u32); 5] = [
+    (1280, 720),
+    (1600, 900),
+    (1920, 1080),
+    (2560, 1440),
+    (3840, 2160),
+];
+
+const ULTRAWIDE_RESOLUTIONS: [(u32, u32); 4] =
+    [(2560, 1080), (3440, 1440), (3840, 1600), (5120, 2160)];
+
+pub fn resolution_label((width, height): (u32, u32)) -> String {
+    let ratio = if width * 9 == height * 16 {
+        "16:9"
+    } else if width * 9 == height * 32 {
+        "32:9"
+    } else if width * 10 == height * 32 {
+        "32:10"
+    } else if width * 4 >= height * 9 && width * 2 <= height * 5 {
+        "21:9"
+    } else {
+        return format!("{width} \u{00d7} {height}");
+    };
+    format!("{width} \u{00d7} {height} ({ratio})")
+}
+
+pub fn resolution_choices(current: (u32, u32), exclusive: bool) -> Vec<(u32, u32)> {
+    let mut choices = STANDARD_RESOLUTIONS.to_vec();
+    if exclusive {
+        // The Windows app requires an exact match for exclusive ultrawide modes.
+        let supported = exclusive_modes();
+        choices.extend(
+            ULTRAWIDE_RESOLUTIONS
+                .into_iter()
+                .filter(|mode| supported.contains(mode)),
+        );
+        if supported.contains(&current) {
+            choices.push(current);
+        }
+    } else {
+        choices.extend(ULTRAWIDE_RESOLUTIONS);
+        choices.extend([preferred_window_size(), current]);
+    }
+    choices.sort_unstable();
+    choices.dedup();
+    choices
+}
+
+fn exclusive_modes() -> &'static [(u32, u32)] {
+    #[cfg(windows)]
+    {
+        use std::sync::OnceLock;
+        static MODES: OnceLock<Vec<(u32, u32)>> = OnceLock::new();
+        MODES.get_or_init(|| (0..).map_while(display_mode_size).collect())
+    }
+    #[cfg(not(windows))]
+    {
+        &[]
+    }
+}
+
+#[cfg(windows)]
+fn display_mode_size(index: u32) -> Option<(u32, u32)> {
+    use windows::{
+        Win32::Graphics::Gdi::{DEVMODEW, ENUM_DISPLAY_SETTINGS_MODE, EnumDisplaySettingsW},
+        core::PCWSTR,
+    };
+    let mut mode = DEVMODEW {
+        dmSize: std::mem::size_of::<DEVMODEW>() as u16,
+        ..Default::default()
+    };
+    unsafe { EnumDisplaySettingsW(PCWSTR::null(), ENUM_DISPLAY_SETTINGS_MODE(index), &mut mode) }
+        .as_bool()
+        .then_some((mode.dmPelsWidth, mode.dmPelsHeight))
+}
+
 pub fn desktop_size() -> Option<(u32, u32)> {
     #[cfg(windows)]
     {
-        #[link(name = "user32")]
-        unsafe extern "system" {
-            fn GetSystemMetrics(index: i32) -> i32;
-        }
-        let width = unsafe { GetSystemMetrics(0) };
-        let height = unsafe { GetSystemMetrics(1) };
-        if width > 0 && height > 0 {
-            return Some((width as u32, height as u32));
-        }
+        use windows::Win32::Graphics::Gdi::ENUM_CURRENT_SETTINGS;
+        display_mode_size(ENUM_CURRENT_SETTINGS.0)
     }
-    None
+    #[cfg(not(windows))]
+    {
+        None
+    }
 }
 
 #[cfg(test)]
 mod tests {
     use super::*;
+    #[test]
+    fn windowed_resolutions_include_all_ultrawide_presets() {
+        let choices = resolution_choices((1920, 1080), false);
+        for mode in [(2560, 1080), (3440, 1440), (3840, 1600), (5120, 2160)] {
+            assert!(choices.contains(&mode));
+            assert!(resolution_label(mode).ends_with(" (21:9)"));
+            assert_eq!(
+                resolution_choices((1920, 1080), true).contains(&mode),
+                exclusive_modes().contains(&mode)
+            );
+        }
+        assert_eq!(resolution_label((1920, 1080)), "1920 \u{00d7} 1080 (16:9)");
+    }
+
     #[test]
     fn finish_writes_real_settings_and_preserves_language_appearance_and_onboarding() {
         let root = tempfile::tempdir().unwrap();

@@ -6,20 +6,29 @@
 
 namespace yt::http::detail
 {
-inline CURLcode perform_with_cancellation(CURL *handle, const Request &request)
+inline CURLcode perform_with_cancellation(CURL *handle, const Request &request,
+                                          CURLM *connection_cache = nullptr)
 {
     if (!request.cancelled) return curl_easy_perform(handle);
     if (request.cancelled()) return CURLE_ABORTED_BY_CALLBACK;
-    CURLM *multi = curl_multi_init();
+    CURLM *multi = connection_cache ? connection_cache : curl_multi_init();
     if (!multi) return CURLE_OUT_OF_MEMORY;
     if (curl_multi_add_handle(multi, handle) != CURLM_OK)
-    { curl_multi_cleanup(multi); return CURLE_FAILED_INIT; }
+    {
+        if (!connection_cache) curl_multi_cleanup(multi);
+        return CURLE_FAILED_INIT;
+    }
     struct Cleanup
     {
         CURLM *multi;
         CURL *easy;
-        ~Cleanup() { curl_multi_remove_handle(multi, easy); curl_multi_cleanup(multi); }
-    } cleanup{multi, handle};
+        bool owned;
+        ~Cleanup()
+        {
+            curl_multi_remove_handle(multi, easy);
+            if (owned) curl_multi_cleanup(multi);
+        }
+    } cleanup{multi, handle, !connection_cache};
     for (;;)
     {
         if (request.cancelled()) return CURLE_ABORTED_BY_CALLBACK;

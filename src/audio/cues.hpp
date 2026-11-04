@@ -121,6 +121,9 @@ class SoundBank
 
     // Posts the cue to the mixer, preferring the recordings of `set`.
     void play(Mixer &mixer, SoundSet set, const CueEvent &event);
+    // Explicit routing for application events such as a desktop trophy. The
+    // ordinary three-argument API retains each cue's original bus.
+    void play(Mixer &mixer, SoundSet set, const CueEvent &event, Bus bus);
 
     // Whether `set` itself records the cue (no fallback).
     bool has_recording(Cue cue, SoundSet set) const;

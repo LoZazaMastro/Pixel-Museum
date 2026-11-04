@@ -101,18 +101,18 @@ void Screen::open_photo(gfx::Rect origin){
 void Screen::draw_history_rail(float opened){
     if(history_catalog_.entries.empty())return;
     const auto palette=colours();const float emphasis=std::clamp(history_emphasis_.value,0.f,1.f);
+    const auto canvas=canvas_bounds();
     page_.push_opacity(1-opened);
     const float rail_y=260;
-    page_.line(0,rail_y,1920,rail_y,1,palette.ink.with_alpha(.11f+.12f*emphasis));
+    page_.line(canvas.x,rail_y,canvas.x+canvas.w,rail_y,1,palette.ink.with_alpha(.11f+.12f*emphasis));
     page_.line(920,rail_y,1000,rail_y,2+emphasis*2,gfx::mix(palette.muted,tone_,.6f).with_alpha(.5f+.5f*emphasis));
-    page_.push_clip({0,142,1920,130});
+    page_.push_clip({canvas.x,142,canvas.w,130});
     const int rail_focus=timeline_motion_.rail_focus(history_focus_index_);
     for(int n=std::max(0,rail_focus-4);n<std::min(int(history_catalog_.entries.size()),rail_focus+5);++n){
         if(!timeline_motion_.stop_visible(n))continue;
         const auto&e=history_catalog_.entries[size_t(timeline_motion_.content_index(n,history_focus_index_))];const float distance=float(n)-timeline_motion_.rail_position(history_position_.value);
         const float hover=std::clamp(1-std::abs(distance),0.f,1.f);
-        const float extra=170*tween::smoothstep(std::min(1.f,std::abs(distance)));
-        const float x=960+distance*340+(distance<0?-extra:extra);
+        const float x=timeline_stop_x(distance,true);
         const auto colour=gfx::mix(palette.muted.with_alpha(.65f),palette.ink.with_alpha(.65f+.35f*emphasis),hover);
         // Wrap at the focused dimensions once; focus only scales the same lines.
         float reference_size=26;
@@ -132,7 +132,8 @@ hui::gfx::Rect Screen::history_image_bounds()const{
 void Screen::draw_history_page(){
     const auto*e=current();if(!e)return;
     const auto palette=colours();const auto ink=palette.ink,quiet=palette.muted;
-    background_.rounded_rect({0,282,1920,688},0,gfx::mix(palette.paper,tone_,.14f));
+    const auto canvas=canvas_bounds();
+    background_.rounded_rect({canvas.x,282,canvas.w,688},0,gfx::mix(palette.paper,tone_,.14f));
     draw_history_rail(0);
     page_.push_opacity(history_transition_?1.f:fade_);
     page_.push_transform(1,0,0,0,history_transition_?0.f:(1-fade_)*14);

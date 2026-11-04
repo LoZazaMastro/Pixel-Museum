@@ -33,6 +33,8 @@
 #include "platform/ps5/trophy_notification.hpp"
 #include "ui/glyphs.hpp"
 #include <string>
+#include <algorithm>
+#include <cmath>
 #include <map>
 #include <array>
 #include <functional>
@@ -94,7 +96,8 @@ public:
     void set_trophy_curator_preview(bool value){trophy_curator_preview_=value;}
     bool trophy_curator_preview()const{return trophy_curator_preview_;}
 #if defined(MUSEUM_DESKTOP)
-    void set_desktop_video_modes(std::vector<DesktopDisplayMode>,const DesktopVideoSettings& current);
+    void set_desktop_video_modes(DesktopDisplayModes);
+    void init_desktop_video_settings(const DesktopVideoSettings& current);
     const DesktopVideoSettings& desktop_video_settings()const{return desktop_video_;}
     bool take_desktop_video_request(DesktopVideoSettings&);
     void set_desktop_video_settings_applied(const DesktopVideoSettings&);
@@ -124,6 +127,10 @@ private:
     bool database_auto_checked_=false,database_dialog_=false;
     std::uint64_t database_notified_revision_=0,database_ready_notified_revision_=0;
     int database_focus_=0;
+    float database_completion_notice_=0;
+    static std::string update_download_amount(std::uint64_t downloaded,std::uint64_t total);
+    void draw_update_progress();
+    void render_notifications();
     hui::tween::Spring database_open_;
     void open_database_update(hui::ui::Feedback&);
     bool handle_database_update(const hui::InputFrame&,hui::ui::Feedback&);
@@ -141,6 +148,7 @@ private:
     bool application_combined_check_=false;
     std::string application_notified_version_,application_ready_notified_version_,application_restart_error_;
     int application_focus_=0;
+    float application_completion_notice_=0;
     hui::tween::Spring application_open_;
     void open_application_update(hui::ui::Feedback&);
     void open_update_check(hui::ui::Feedback&);
@@ -152,8 +160,9 @@ private:
     int application_action_count()const;
     const char* application_action_label(int)const;
     hui::gfx::Rect application_action_bounds(int)const;
-    std::vector<DesktopDisplayMode> desktop_modes_;
+    DesktopDisplayModes desktop_modes_;
     DesktopVideoSettings desktop_video_,desktop_video_draft_,desktop_video_request_;
+    void select_desktop_resolution(int direction);
     bool desktop_video_open_=false,desktop_video_pending_=false,desktop_video_applying_=false;
     int desktop_video_focus_=0;
     hui::DesktopControllerStyle desktop_controller_style_=hui::DesktopControllerStyle::keyboard_mouse;
@@ -176,14 +185,14 @@ private:
     std::string desktop_url_request_;
     std::size_t desktop_search_caret_=0;
     bool desktop_search_selection_=false;
+    bool desktop_search_submit_rearm_=false;
     std::string desktop_search_observed_;
-    struct DesktopControl { hui::gfx::Rect bounds;std::string label,key;int command=0;hui::ui::Button glyph=hui::ui::Button::cross,second=hui::ui::Button::none; };
+    struct DesktopControl { hui::gfx::Rect bounds;std::string label,key;int command=0;hui::ui::Button glyph=hui::ui::Button::cross,second=hui::ui::Button::none; std::string second_key{}; float scale=1; };
     std::vector<DesktopControl> desktop_controls()const;
     bool handle_desktop_input(hui::InputFrame&,hui::ui::Feedback&);
     bool handle_desktop_video(const hui::InputFrame&,hui::ui::Feedback&);
     bool handle_desktop_search(hui::InputFrame&,hui::ui::Feedback&);
     void draw_desktop_video(float x);
-    void draw_desktop_startup();
     hui::gfx::Rect desktop_search_button_bounds(int)const;
     void draw_desktop_chrome(hui::gfx::DrawList&);
     void render_desktop_chrome();
@@ -335,6 +344,7 @@ private:
     float experience_description_scroll_=0,experience_description_max_=0,experience_description_clock_=0;
     hui::tween::Spring experience_position_,experience_open_,experience_intro_;
     bool experience_active_=false,experience_introduction_=true;
+    float experience_progress_checkpoint_=0;
     bool experience_paused_=false;
     bool experience_completion_seen_=false;
     int experience_pause_selection_=0;
@@ -357,10 +367,44 @@ private:
     void open_year_guide();
     void jump_today(hui::ui::Feedback&);
     void draw_year_guide();
+    static constexpr float guide_sidebar_width_=736.f;
+    float guide_sidebar_x()const{
+        return canvas_bounds().x-guide_sidebar_width_*(1-std::clamp(year_panel_.value,0.f,1.f));
+    }
+    hui::gfx::Rect guide_preview_bounds()const{
+        constexpr float width=1072.f;
+        const auto canvas=canvas_bounds();
+        const float left=canvas.x+guide_sidebar_width_;
+        const float remaining=canvas.w-guide_sidebar_width_;
+        return {left+(remaining-width)*.5f,142,width,796};
+    }
     bool object_inspect_=false,connection_panel_=false;
     float object_zoom_=2,object_tilt_offset_=0;
     bool object_manual_=false;
     int output_width_=3840,output_height_=2160;
+    hui::gfx::Rect canvas_bounds()const{
+#if defined(MUSEUM_DESKTOP)
+        const float left=desktop_canvas_left(output_width_,output_height_);
+        return {left,0,1920-2*left,1080};
+#else
+        return {0,0,1920,1080};
+#endif
+    }
+    float timeline_stop_x(float distance,bool culture)const{
+        const float extra=(culture?170.f:190.f)*hui::tween::smoothstep(std::min(1.f,std::abs(distance)));
+        float step=340.f;
+#if defined(MUSEUM_DESKTOP)
+        const float extension=-canvas_bounds().x;
+        const float compact=std::clamp((960.f+extension-190.f-160.f)/3.f,280.f,340.f);
+        step+=(compact-step)*std::min(1.f,extension/180.f);
+#endif
+        return 960.f+distance*step+(distance<0?-extra:extra);
+    }
+    static constexpr float options_panel_width(){return 810.f;}
+    float options_panel_x()const{
+        const auto canvas=canvas_bounds();
+        return canvas.x+canvas.w-panel_.value*options_panel_width();
+    }
     unsigned connection_qr_=0;
     std::string connection_qr_value_;
     int chapter_focus_=0;
@@ -405,6 +449,8 @@ private:
     void move_story(int delta,hui::ui::Feedback&);
     bool story_object()const;
     float video_frame_alpha_=0;
+    float film_progress_age_=0;
+    const char* film_audio_hint()const;
     float gallery_overlay_age_=0;int gallery_overlay_image_=-1;hui::tween::Spring gallery_labels_;
     std::array<double,3> interface_stage_ms_{}; // CPU submission timings, not GPU completion.
     bool playlist_active_=false,playlist_completed_=false,playlist_closing_=false;

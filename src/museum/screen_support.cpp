@@ -47,7 +47,7 @@ void Screen::draw_support(){
     const float alpha=std::clamp(support_open_.value,0.f,1.f);if(alpha<=0)return;
     const auto p=colours();const float rise=(1-alpha)*18;
     overlay_.push_opacity(alpha);
-    overlay_.rounded_rect({0,0,1920,1080},0,Color::rgb(0,.44f));
+    overlay_.rounded_rect(canvas_bounds(),0,Color::rgb(0,.44f));
     overlay_.bordered_rect({410,225+rise,1100,630},0,p.paper,1,p.rule);
     ui::text(overlay_,fonts_.mono,"PIXEL MUSEUM",470,282+rise,18,p.muted,Align::left,1.8f);
     ui::text(overlay_,fonts_.semibold,"Support the museum",470,343+rise,38,p.ink);

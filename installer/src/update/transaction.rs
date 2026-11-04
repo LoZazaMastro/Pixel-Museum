@@ -53,6 +53,25 @@ impl Transaction {
         old: &BTreeMap<String, OwnedFile>,
         prepared: Prepared,
     ) -> Result<Self> {
+        Self::for_installation(
+            &d.application_root,
+            &d.version,
+            &d.archive_sha256,
+            old,
+            prepared,
+            &mut UpdateWork::new(&AtomicBool::new(false), &mut |_, _, _| {}),
+        )
+    }
+
+    pub(super) fn for_installation(
+        root: &Path,
+        version: &str,
+        archive_sha256: &str,
+        old: &BTreeMap<String, OwnedFile>,
+        prepared: Prepared,
+        work: &mut UpdateWork<'_>,
+    ) -> Result<Self> {
+        work.check()?;
         let stage = prepared.directory.path().join("new");
         let mut files = prepared.files;
         let inventory_path = stage.join(INVENTORY);
@@ -61,15 +80,17 @@ impl Transaction {
             OwnedFile {
                 path: INVENTORY.into(),
                 bytes: fs::metadata(&inventory_path)?.len(),
-                sha256: hash_file(&inventory_path)?,
+                sha256: work.hash_file(&inventory_path)?,
             },
         );
         let mut entries = Vec::new();
-        for (k, file) in &files {
-            if protected(&file.path) {
+        let total = (files.len() + old.len()) as u64;
+        for (i, (k, file)) in files.iter().enumerate() {
+            work.advance(Phase::Prepare, i as u64, total)?;
+            if protected(&file.path) || prepared.reused.contains(k) {
                 continue;
             }
-            let path = target(&d.application_root, &file.path)?;
+            let path = target(root, &file.path)?;
             let original = path.exists();
             ensure!(
                 !original || old.contains_key(k) || k == INVENTORY,
@@ -77,7 +98,7 @@ impl Transaction {
                 file.path
             );
             let original_sha256 = if original {
-                Some(hash_file(&path)?)
+                Some(work.hash_file(&path)?)
             } else {
                 None
             };
@@ -98,16 +119,17 @@ impl Transaction {
                 installed: false,
             });
         }
-        for (k, file) in old {
+        for (i, (k, file)) in old.iter().enumerate() {
+            work.advance(Phase::Prepare, (files.len() + i) as u64, total)?;
             if files.contains_key(k) || protected(&file.path) {
                 continue;
             }
-            let path = target(&d.application_root, &file.path)?;
+            let path = target(root, &file.path)?;
             if !path.exists() {
                 continue;
             }
             ensure!(
-                fs::metadata(&path)?.len() == file.bytes && hash_file(&path)? == file.sha256,
+                fs::metadata(&path)?.len() == file.bytes && work.hash_file(&path)? == file.sha256,
                 "Obsolete owned file has changed; it was preserved: {}",
                 file.path
             );
@@ -121,17 +143,17 @@ impl Transaction {
             });
         }
         ensure!(
-            prepared.inventory.version == d.version,
+            prepared.inventory.version == version,
             "Prepared inventory version changed"
         );
         let transaction = Self {
-            root: d.application_root.clone(),
+            root: root.to_path_buf(),
             directory: Some(prepared.directory),
             journal: Journal {
                 schema_version: 1,
                 application_id: "pixel-museum".into(),
-                version: d.version.clone(),
-                archive_sha256: d.archive_sha256.clone(),
+                version: version.to_owned(),
+                archive_sha256: archive_sha256.to_owned(),
                 phase: "prepared".into(),
                 entries,
             },
@@ -139,6 +161,7 @@ impl Transaction {
             finalized: false,
         };
         transaction.save()?;
+        work.advance(Phase::Prepare, total, total)?;
         Ok(transaction)
     }
     pub(super) fn path(&self) -> &Path {

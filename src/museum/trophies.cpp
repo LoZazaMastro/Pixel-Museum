@@ -6,6 +6,7 @@
 #include <cstdio>
 #include <ctime>
 #include <cerrno>
+#include <cstring>
 #include <set>
 #include <unordered_set>
 #include <sys/stat.h>
@@ -58,6 +59,9 @@ bool atomic(const std::string& path,const std::string& bytes) {
     for(std::size_t i=1;i<path.size();++i)if(path[i]=='/'||path[i]=='\\'){
         const auto part=path.substr(0,i);
 #ifdef _WIN32
+        // The drive prefix is not a directory to create. On another
+        // volume the CRT may return EACCES rather than EEXIST for it.
+        if(i==2&&path[1]==':')continue;
         const int rc=_mkdir(part.c_str());
 #else
         const int rc=mkdir(part.c_str(),0700);
@@ -78,6 +82,7 @@ bool atomic(const std::string& path,const std::string& bytes) {
 }
 }
 Trophies::Trophies(std::string state_path):path_(std::move(state_path)){}
+Trophies::~Trophies(){flushExperienceProgress();}
 std::vector<std::uint64_t> Trophies::visitMilestones(){std::vector<std::uint64_t> v={20,50,100,150,200};for(std::uint64_t n=300;n<=1500;n+=100)v.push_back(n);return v;}
 std::string Trophies::encode(const State& s) {
     std::string out="PIXEL_MUSEUM_TROPHIES\t1\n";
@@ -106,6 +111,7 @@ bool Trophies::decode(const std::string& bytes,State& result) {
     if(!flags)return false;result=std::move(s);return true;
 }
 bool Trophies::load() {
+    if(!flushExperienceProgress())return false;
     State loaded;std::string raw;struct stat st{};const bool exists=stat(path_.c_str(),&st)==0;const int stat_error=errno;
     if(read(path_,raw)){
         const std::string prefix="PIXEL_MUSEUM_TROPHIES\t";const auto end=raw.find('\n');std::uint64_t version=0;
@@ -137,9 +143,8 @@ std::uint64_t Trophies::progress(const TrophyDefinition& d,const State& s)const 
     case TrophyTrigger::ExperienceStat:{auto i=s.stats.find(d.stat_key);return i==s.stats.end()?0:i->second;}
     }return 0;
 }
-bool Trophies::commit(State next) {
-    if(!writable_){error_="Trophy state remains protected after load failure";return false;}
-    std::vector<TrophyUnlock> events;const auto now=std::uint64_t(std::max<std::time_t>(0,std::time(nullptr)));
+void Trophies::collectUnlocks(State& next,std::vector<TrophyUnlock>& events)const{
+    const auto now=std::uint64_t(std::max<std::time_t>(0,std::time(nullptr)));
     // Evaluate ordinary requirements first, then the single ultimate. A definition
     // reorder must never delay the ultimate or award it before the final unlock.
     for(unsigned pass=0;pass<2;++pass)for(const auto& d:definitions_)if(!next.unlocked.count(d.id)&&
@@ -148,18 +153,36 @@ bool Trophies::commit(State next) {
             d.trigger==TrophyTrigger::AllOtherTrophies?definitions_.size()-1:d.target;
         if(target&&progress(d,next)>=target){next.unlocked[d.id]=now;events.push_back({d.id,d.title,d.description,d.badge,d.rank,now});}
     }
-    auto encoded=encode(next);if(encoded==encode(state_))return false;
-    State validated;if(!decode(encoded,validated)){error_="Trophy state exceeds its bounded version1 format";return false;}
+}
+std::string Trophies::persist(const State& state)const{
+    const auto encoded=encode(state);
+    State validated;
+    if(!decode(encoded,validated))return "Trophy state exceeds its bounded version1 format";
     std::string old;State checked;
-    if(read(path_,old)&&decode(old,checked)&&!atomic(path_+".bak",old)){error_="Could not preserve trophy backup";return false;}
-    if(!atomic(path_,encoded)){error_="Could not persist trophy progress";return false;}
-    state_=std::move(next);pending_.insert(pending_.end(),events.begin(),events.end());error_.clear();return true;
+    if(read(path_,old)&&decode(old,checked)&&!atomic(path_+".bak",old))
+        return "Could not preserve trophy backup";
+    if(!atomic(path_,encoded))return "Could not persist trophy progress";
+    return {};
+}
+bool Trophies::commit(State next) {
+    if(!writable_){error_="Trophy state remains protected after load failure";return false;}
+    joinExperienceWriter(true);
+    std::vector<TrophyUnlock> events;
+    collectUnlocks(next,events);
+    if(!experience_dirty_&&encode(next)==encode(state_))return false;
+    error_=persist(next);
+    if(!error_.empty())return false;
+    state_=std::move(next);
+    pending_.insert(pending_.end(),events.begin(),events.end());
+    experience_dirty_=experience_checkpoint_requested_=false;
+    return true;
 }
 bool Trophies::reset(){
     if(!writable_){error_="Trophy state remains protected after load failure";return false;}
     State fresh;fresh.snapshot=state_.snapshot;
-    if(encode(fresh)!=encode(state_)&&!commit(std::move(fresh)))return false;
-    pending_.clear();error_.clear();return true;
+    joinExperienceWriter(true);
+    if((experience_dirty_||encode(fresh)!=encode(state_))&&!commit(std::move(fresh)))return false;
+    pending_.clear();experience_checkpoint_requested_=false;error_.clear();return true;
 }
 bool Trophies::setEligibleCatalogSnapshot(const std::vector<std::string>& ids){if(!state_.snapshot.empty())return false;State n=state_;for(const auto& id:ids)add(n.snapshot,id);return n.snapshot.empty()?false:commit(std::move(n));}
 bool Trophies::visit(const std::string& id){if(id.empty()||contains(state_.visited,id))return false;State n=state_;if(!add(n.visited,id))return false;return commit(std::move(n));}
@@ -180,6 +203,115 @@ bool Trophies::experienceResult(const std::string& id,const std::map<std::string
     State n=state_;
     for(const auto& p:stats)if(!p.first.empty()&&p.second)n.stats[id+":"+p.first]=std::max(n.stats[id+":"+p.first],p.second);
     return commit(std::move(n));
+}
+void Trophies::recordExperienceProgress(const std::string& id,
+                                        const std::map<std::string,std::uint64_t>& stats){
+    if(!writable_||id.empty())return;
+    bool unlock=false;
+    for(const auto& [stat,value]:stats){
+        if(stat.empty()||value==0)continue;
+        const auto key=id+":"+stat;
+        auto& previous=state_.stats[key];
+        if(value<=previous)continue;
+        previous=value;
+        experience_dirty_=true;
+        for(const auto& definition:definitions_){
+            if(definition.trigger==TrophyTrigger::ExperienceStat&&definition.stat_key==key&&
+               value>=definition.target&&!state_.unlocked.count(definition.id)){
+                unlock=true;
+                break;
+            }
+        }
+    }
+    if(unlock){
+        collectUnlocks(state_,pending_);
+        checkpointExperienceProgress();
+    }
+}
+bool Trophies::joinExperienceWriter(bool wait){
+#if defined(__cpp_exceptions)
+    if(!experience_writer_.joinable())return true;
+    if(!wait&&!experience_write_done_.load(std::memory_order_acquire))return false;
+    experience_writer_.join();
+#else
+    if(!experience_writer_running_)return true;
+    if(!wait&&!experience_write_done_.load(std::memory_order_acquire))return false;
+    pthread_join(experience_writer_,nullptr);
+    experience_writer_running_=false;
+#endif
+    if(!experience_write_error_.empty()){
+        error_=std::move(experience_write_error_);
+        experience_write_error_.clear();
+        experience_dirty_=true;
+    }else error_.clear();
+    return true;
+}
+void Trophies::checkpointExperienceProgress(){
+    experience_checkpoint_requested_=true;
+}
+void Trophies::pollExperienceProgress(){
+    if(!joinExperienceWriter(false)||!experience_checkpoint_requested_)return;
+    experience_checkpoint_requested_=false;
+    if(!writable_||!experience_dirty_)return;
+#if defined(__cpp_exceptions)
+    try{
+        experience_write_done_.store(false,std::memory_order_relaxed);
+        experience_writer_=std::thread([this,snapshot=state_]{
+            try{
+                experience_write_error_=persist(snapshot);
+            }catch(const std::exception& error){
+                experience_write_error_=error.what();
+            }
+            experience_write_done_.store(true,std::memory_order_release);
+        });
+        experience_dirty_=false;
+    }catch(const std::exception& error){
+        error_=error.what();
+    }
+#else
+    pthread_attr_t attr;
+    int code=pthread_attr_init(&attr);
+    if(!code){
+        code=pthread_attr_setstacksize(&attr,3u<<20);
+        if(!code){
+            experience_write_snapshot_=state_;
+            experience_write_done_.store(false,std::memory_order_relaxed);
+            code=pthread_create(&experience_writer_,&attr,[](void* owner)->void*{
+                auto& trophies=*static_cast<Trophies*>(owner);
+                {
+                    const auto snapshot=std::move(trophies.experience_write_snapshot_);
+                    trophies.experience_write_error_=trophies.persist(snapshot);
+                }
+                trophies.experience_write_done_.store(true,std::memory_order_release);
+                return nullptr;
+            },this);
+        }
+        pthread_attr_destroy(&attr);
+    }
+    if(code){
+        experience_write_snapshot_={};
+        error_=std::strerror(code);
+        return;
+    }
+    experience_writer_running_=true;
+    experience_dirty_=false;
+#endif
+}
+bool Trophies::flushExperienceProgress(){
+    joinExperienceWriter(true);
+    if(!experience_dirty_)return true;
+#if defined(__cpp_exceptions)
+    try{
+#endif
+        error_=persist(state_);
+#if defined(__cpp_exceptions)
+    }catch(const std::exception& error){
+        error_=error.what();
+    }
+#endif
+    if(!error_.empty())return false;
+    experience_dirty_=experience_checkpoint_requested_=false;
+    return true;
 }
 std::vector<TrophyView> Trophies::views(bool reveal_secrets)const {
     std::vector<TrophyView> out;for(const auto& d:definitions_){TrophyView v;v.id=d.id;v.badge=d.badge;v.rank=d.rank;v.secret=d.secret;auto u=state_.unlocked.find(d.id);v.unlocked=u!=state_.unlocked.end();if(v.unlocked)v.unlocked_at=u->second;if(reveal_secrets||!d.secret||v.unlocked){v.title=d.title;v.description=d.description;v.hint=d.hint;v.target=d.trigger==TrophyTrigger::AllCatalogSnapshot?state_.snapshot.size():d.trigger==TrophyTrigger::AllOtherTrophies?definitions_.size()-1:d.target;v.current=std::min(progress(d,state_),v.target);}out.push_back(std::move(v));}return out;

@@ -12,6 +12,16 @@ pub struct Manifest {
     pub version: String,
     pub executable: String,
     pub packages: Vec<Package>,
+    #[serde(default, skip_serializing_if = "Vec::is_empty")]
+    pub updates: Vec<UpdatePackage>,
+}
+
+#[derive(Clone, Debug, Deserialize, Serialize)]
+#[serde(deny_unknown_fields)]
+pub struct UpdatePackage {
+    pub from_version: String,
+    pub base_inventory_sha256: String,
+    pub package: Package,
 }
 
 #[derive(Clone, Debug, Deserialize, Serialize)]
@@ -82,7 +92,20 @@ impl Manifest {
         let mut filenames = HashSet::new();
         let mut app_count = 0;
         let mut collection_count = 0;
-        for p in &self.packages {
+        ensure!(self.updates.len() <= 32, "Too many incremental updates");
+        let mut bases = HashSet::new();
+        for update in &self.updates {
+            ensure!(
+                crate::update::version_is_newer(&update.from_version, &self.version)
+                    && valid_sha256(&update.base_inventory_sha256)
+                    && bases.insert(update.base_inventory_sha256.to_ascii_lowercase())
+                    && update.package.kind == PackageKind::App,
+                "Invalid incremental update base"
+            );
+        }
+        for (p, is_update) in self.packages.iter().map(|p| (p, false)).chain(
+            self.updates.iter().map(|update| (&update.package, true)),
+        ) {
             ensure!(
                 !p.id.is_empty()
                     && p.id.len() <= 100
@@ -119,7 +142,7 @@ impl Manifest {
             );
             match p.kind {
                 PackageKind::App => {
-                    app_count += 1;
+                    app_count += usize::from(!is_update);
                     ensure!(
                         p.target == "." && p.format == PackageFormat::Zip,
                         "App packages must be ZIPs targeting the installation root"
