@@ -2,6 +2,14 @@
   "schema_version": 1,
   "application_id": "pixel-museum",
   "platforms": {
-    "windows-x64": { "version": "0.2.0-preview", "available": false }
+    "windows-x64": {
+      "version": "0.2.0",
+      "available": true,
+      "url": "https://github.com/LoZazaMastro/Pixel-Museum/releases/download/windows-v0.2.0/Pixel-Museum-Windows-App-0.2.0.zip",
+      "sha256": "1531be915795ac77b2d890b01b963a392d45bcb69458e8fd9ef463745763b05e",
+      "bytes": 632746330,
+      "unpacked_bytes": 1127290044,
+      "notes": {}
+    }
   }
 }

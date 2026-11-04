@@ -1,8 +1,8 @@
-The games we played. The world we grew up in. An independent, interactive museum for PS5.
+The games we played. The world we grew up in. An independent, interactive museum for Windows and PlayStation 5.
 
 ![Pixel Museum](website/assets/social-preview.png)
 
-**[Visit the website](https://lozazamastro.github.io/Pixel-Museum/) · [Download Pixel Museum](https://github.com/LoZazaMastro/Pixel-Museum/releases/latest/download/PPSA70421.zip)**
+**[Visit the website](https://lozazamastro.github.io/Pixel-Museum/) · [Download for Windows](https://github.com/LoZazaMastro/Pixel-Museum/releases/download/windows-v0.2.0/Pixel-Museum-Setup.exe) ? [Download for PS5](https://github.com/LoZazaMastro/Pixel-Museum/releases/latest/download/PPSA70421.zip)**
 
 Pixel Museum brings the history of video games together with the world around them. One timeline follows games, consoles, computers, creators and studios; the other explores films, music, art and historical events from the same years. Open an exhibit to read its story, look through photographs and artwork, or watch a related film.
 
@@ -12,7 +12,7 @@ Pixel Museum brings the history of video games together with the world around th
 - **Build your own collection.** Discover collectible pins and inspect them in 3D, rotating and zooming in to see their details.
 - **Try the ideas yourself.** Play short interactive experiences and explore workshops about pixels, sound and the ways games work.
 - **Choose your setting.** Browse in light or dark mode, with English, Italian, French, German and Spanish available.
-- **Adjust the sound.** Set separate levels for master volume, sound effects, ambient music, cultural recordings and the controller speaker. Cultural audio can also play through the DualSense speaker.
+- **Adjust the sound.** Set separate levels for master volume, sound effects, ambient music, cultural recordings and, on PS5, the DualSense speaker. On PS5 you can also route cultural audio to the controller.
 
 ![The video game timeline: Game Boy](website/assets/timeline-1989-game-light.webp)
 
@@ -22,6 +22,12 @@ Pixel Museum brings the history of video games together with the world around th
 
 ## Installation
 
+### Windows
+
+[Download and run the Windows setup](https://github.com/LoZazaMastro/Pixel-Museum/releases/download/windows-v0.2.0/Pixel-Museum-Setup.exe). Choose where to install Pixel Museum and Setup will download the collection to that folder.
+
+### PlayStation 5
+
 [Download the ZIP](https://github.com/LoZazaMastro/Pixel-Museum/releases/latest/download/PPSA70421.zip), extract it and transfer the `PPSA70421` folder to `/data/homebrew/` on your PS5 via FTP. Then launch Pixel Museum from your homebrew launcher.
 
 On first launch, choose your language and let the app download the image collection. An internet connection and about **10.05 GiB** of free space are needed for this one-time download. Progress is shown in the app, and interrupted downloads can be resumed.
@@ -30,11 +36,11 @@ The application ZIP is about **529 MB**; the extracted app is about **889 MB**. 
 
 ## Updating
 
-Updating from an earlier version? Update through ProsperoStore, or close the app and replace the PPSA70421 folder via FTP. Keep your downloaded collection; it does not need to be downloaded again.
+On Windows, choose **Options ? Check for updates** to check for application and database updates. On PS5, update the application through ProsperoStore or close it and replace the PPSA70421 folder via FTP. Your downloaded collection stays in place.
 
 Choose **Options → Check for updates** inside Pixel Museum to download new database content. Application updates are distributed through ProsperoStore and GitHub Releases.
 
-To download a fresh image collection, choose **Options → Remove downloaded data** and confirm. Pixel Museum returns to language selection. Your trophies are kept.
+On PS5, to download a fresh image collection, choose **Options → Remove downloaded data** and confirm. Pixel Museum returns to language selection. Your trophies are kept.
 
 ## Support the project
 
@@ -48,7 +54,7 @@ This repository contains the application source, tooling and editorial datasets.
 python tools/restore-source-data.py
 ```
 
-The ready-to-run binaries and packaged media are supplied separately through [Releases](https://github.com/LoZazaMastro/Pixel-Museum/releases/latest). Machine-specific SDK/toolchain installations, personal settings and local development caches are not included.
+The ready-to-run binaries and packaged media are supplied separately through [Releases](https://github.com/LoZazaMastro/Pixel-Museum/releases). Machine-specific SDK/toolchain installations, personal settings and local development caches are not included.
 
 ## Credits and licences
 
