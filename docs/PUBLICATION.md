@@ -2,22 +2,29 @@
 
 The website source is in `website/`. Its published copy is in `docs/`, served by GitHub Pages from the `main` branch.
 
-- Website: https://lozazamastro.github.io/Pixel-Museum/
-- Source repository: https://github.com/LoZazaMastro/Pixel-Museum
-- Download: https://github.com/LoZazaMastro/Pixel-Museum/releases/latest
+- [Website](https://lozazamastro.github.io/Pixel-Museum/)
+- [Source repository](https://github.com/LoZazaMastro/Pixel-Museum)
+- [Windows setup](https://github.com/LoZazaMastro/Pixel-Museum/releases/download/windows-v0.2.2/Pixel-Museum-Setup.exe)
+- [PS5 application ZIP](https://github.com/LoZazaMastro/Pixel-Museum/releases/latest/download/PPSA70421.zip)
 
-Keep the website and its published copy synchronized when making changes. The current English screenshots are captured from the application renderer in both themes; their local production records are retained in the development workspace. The approved silent teaser is unchanged.
+Keep the website and its published copy synchronized. Screenshots and the approved teaser are unchanged in this release.
 
 ## Installation
 
-Download all six archive parts from the release into the same folder. Open `.001` with 7-Zip and extract it. Copy the entire `PPSA70421` folder to `/data/homebrew/` on the PS5 via FTP, refresh the homebrew launcher, and open Pixel Museum. The extracted app uses approximately 11.49 GB.
+On Windows, run the setup and choose an installation folder. Setup installs the application, downloads the image collection and current database, and registers Pixel Museum in the Start menu and Installed apps. It offers an update when it detects an existing installation.
 
-The first public release is `v1.0.0`. Its binary and content are the same verified build delivered to the console. Release assets include SHA-256 checksums and installation instructions. GitHub's source archives contain developer source, not an installable app.
+On PS5, extract `PPSA70421.zip` and transfer the `PPSA70421` folder to `/data/homebrew/` via FTP. The application downloads the image collection and current database during the introduction. The v0.1.8 ZIP is 531,786,523 bytes; its extracted application is 741,543,504 bytes. Downloaded resources are stored separately.
+
+GitHub's source archives contain developer source, not an installable application.
 
 ## Updating
 
-Prepare and verify the next complete app folder, increment its content version, update sources and screenshots if needed, and use a new immutable release tag and new asset names. Upload all assets to a draft release before publishing it. The Download link follows the latest published release automatically.
+Use immutable platform tags for application releases. Windows uses `windows-v0.2.2`; PS5 uses `v0.1.8`. Mark the PS5 release as the latest application release so its direct ZIP fallback continues to work.
 
-Never commit `.env`, authentication tokens, cookies, personal settings, local dependency installations or build caches. Existing GPL source notices and individual third-party media licenses remain applicable.
+Upload and verify every asset before publishing its release or activating a feed. `windows-release.json` supplies the website's direct setup link. `application-update.json` supplies the Windows app ZIP URL, SHA-256, compressed size and unpacked size. Its hash describes the app ZIP, not the setup executable or setup manifest.
 
-The social image is `assets/social-preview.png`, with the museum mark and horizontal wordmark on white. It is configured in website metadata; GitHub's separate repository social-preview setting uses the same PNG.
+`database-update.json` remains a separate shared content feed for both platforms. New installations receive its current database during setup on Windows or the introduction on PS5. Existing installations use **Options > Check for updates**. Database updates take effect after restarting the museum. Windows application updates preserve the downloaded collection, database, settings and trophies. PS5 application updates are distributed through ProsperoStore and GitHub Releases.
+
+Never commit authentication tokens, cookies, personal settings, local dependency installations or build caches. Existing source notices and individual third-party media licences remain applicable.
+
+The social image is `assets/social-preview.png`, with the horizontal museum mark and wordmark on white. Website metadata uses it; GitHub's repository social-preview setting is managed separately.

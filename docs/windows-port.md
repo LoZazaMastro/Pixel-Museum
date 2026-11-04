@@ -6,7 +6,7 @@ window, keyboard, mouse, gamepads and audio; FFmpeg handles actual streamed medi
 
 ## Install and run
 
-Download [Pixel-Museum-Setup.exe](https://github.com/LoZazaMastro/Pixel-Museum/releases/download/windows-v0.2.0/Pixel-Museum-Setup.exe) and open it. Choose the setup language, accept the licence, and choose where to install the museum. Setup downloads the application and the collection to the same folder. Pixel Museum appears in the Windows Start menu and Installed apps. Setup can also create a desktop shortcut.
+Download [Pixel-Museum-Setup.exe](https://github.com/LoZazaMastro/Pixel-Museum/releases/download/windows-v0.2.2/Pixel-Museum-Setup.exe) and open it. Choose the setup language, accept the licence, and choose where to install the museum. Setup downloads the application, the collection and the current database to the same folder. Pixel Museum appears in the Windows Start menu and Installed apps. Setup can also create a desktop shortcut. When an older version is installed, Setup offers a smaller application update and keeps the collection, settings and trophies.
 
 The museum asks you to choose its language on first launch. An internet connection is required for streamed YouTube videos and soundtracks.
 

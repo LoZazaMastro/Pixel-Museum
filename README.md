@@ -2,7 +2,7 @@ The games we played. The world we grew up in. An independent, interactive museum
 
 ![Pixel Museum](website/assets/social-preview.png)
 
-**[Visit the website](https://lozazamastro.github.io/Pixel-Museum/) · [Download for Windows](https://github.com/LoZazaMastro/Pixel-Museum/releases/download/windows-v0.2.0/Pixel-Museum-Setup.exe) · [Download for PS5](https://github.com/LoZazaMastro/Pixel-Museum/releases/latest/download/PPSA70421.zip)**
+**[Visit the website](https://lozazamastro.github.io/Pixel-Museum/) · [Download for Windows](https://github.com/LoZazaMastro/Pixel-Museum/releases/download/windows-v0.2.2/Pixel-Museum-Setup.exe) · [Download for PS5](https://github.com/LoZazaMastro/Pixel-Museum/releases/latest/download/PPSA70421.zip)**
 
 Pixel Museum brings the history of video games together with the world around them. One timeline follows games, consoles, computers, creators and studios; the other explores films, music, art and historical events from the same years. Open an exhibit to read its story, look through photographs and artwork, or watch a related film.
 
@@ -24,15 +24,15 @@ Pixel Museum brings the history of video games together with the world around th
 
 ### Windows
 
-[Download and run the Windows setup](https://github.com/LoZazaMastro/Pixel-Museum/releases/download/windows-v0.2.0/Pixel-Museum-Setup.exe). Choose where to install Pixel Museum and Setup will download the collection to that folder.
+[Download and run the Windows setup](https://github.com/LoZazaMastro/Pixel-Museum/releases/download/windows-v0.2.2/Pixel-Museum-Setup.exe). Choose where to install Pixel Museum and Setup will download the collection and current database to that folder. If an older version is installed, Setup offers to update it while keeping your collection, settings and trophies.
 
 ### PlayStation 5
 
 [Download the ZIP](https://github.com/LoZazaMastro/Pixel-Museum/releases/latest/download/PPSA70421.zip), extract it and transfer the `PPSA70421` folder to `/data/homebrew/` on your PS5 via FTP. Then launch Pixel Museum from your homebrew launcher.
 
-On first launch, choose your language and let the app download the image collection. An internet connection and about **10.05 GiB** of free space are needed for this one-time download. Progress is shown in the app, and interrupted downloads can be resumed.
+On first launch, choose your language and let the app download the image collection and current database. An internet connection and about **13 GB** of free space are needed for these resources. Progress is shown in the app, and interrupted downloads can be resumed.
 
-The application ZIP is about **529 MB**; the extracted app is about **889 MB**. Collection data are stored separately, without reserving another 16 GB for them. YouTube videos and streamed soundtracks require an internet connection.
+The PS5 application ZIP is about **532 MB**; the extracted app is about **742 MB**. Collection data are stored separately. YouTube videos and streamed soundtracks require an internet connection.
 
 ## Updating
 
